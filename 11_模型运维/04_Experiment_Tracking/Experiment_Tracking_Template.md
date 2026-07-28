@@ -10,9 +10,12 @@ aliases:
   - "Experiment Tracking Template"
   - "ML Experiment Log"
 sources: []
+name_zh: "实验跟踪记录模板"
 ---
 
 # 实验跟踪记录模板 (Experiment Tracking Template)
+
+> 中文简称：实验跟踪记录模板
 
 > 标准化的 ML 实验记录模板——确保每次实验可追溯、可复现，是实验管理和知识积累的基础。
 

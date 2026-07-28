@@ -15,7 +15,10 @@ aliases:
   - GenAI_L09_Building_Image_Applications
 sources: []
 
+name_zh: "构建图像生成应用程序"
 ---
+> 中文简称：构建图像生成应用程序
+
 ## 学习目标
 
 完成本课后，你将能够：

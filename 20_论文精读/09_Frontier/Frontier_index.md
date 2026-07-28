@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "前沿论文专题"
 ---
 
 # Frontier
+
+> 中文简称：前沿论文专题
 
 前沿论文精读（Frontier Papers）— 最新大模型技术报告（technical report）与前沿研究。
 

@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Jie Tang 2026 Update", "唐杰 2026 动态", "智谱 AI 2026", "GLM 2026"]
 sources: []
+name_zh: "唐杰 2026 动态"
 ---
 
 # 唐杰 2026 动态 (Jie Tang 2026 Update)
+
+> 中文简称：唐杰 2026 动态
 
 ## 一句话概括
 

@@ -12,8 +12,11 @@ aliases:
   - Materials_Science_and_Energy_2026
 sources: []
 
+name_zh: "材料科学与能源"
 ---
 # AI for Science: Materials Science and Energy 2026
+
+> 中文简称：材料科学与能源
 
 > **一句话理解**: AI 正在加速寻找“奇迹材料”——从续航更久的电池到室温超导体，AI 通过模拟和预测，将数千年的试错过程压缩到了几天。
 

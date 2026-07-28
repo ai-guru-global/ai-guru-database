@@ -12,8 +12,11 @@ aliases:
   - Data_Curation_and_Mixture_2026
 sources: []
 
+name_zh: "数据筛选与配比"
 ---
 # Data Curation and Mixture for LLM Pretraining 2026
+
+> 中文简称：数据筛选与配比
 
 > **一句话理解**: 数据配比就像大厨调配食材——光有好原料不够，还得精确控制每道菜的比例和烹饪顺序，否则再贵的松露也会做成黑暗料理。
 

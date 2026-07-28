@@ -31,9 +31,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "多模态 RAG"
 ---
 
 # 多模态 RAG
+
+> 中文简称：多模态 RAG
 
 > **一句话理解**:多模态 RAG 把"文档"从文本扩展到图像/PDF/截图/手写——ColPali 用 VLM 直接把整页当图编码,跳过 OCR,准确率 90%+(比传统 OCR+RAG 高 25%)。是金融财报/法律合同/医学影像/UI 截图检索的核心方案。
 

@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "08 AI 伦理、安全与对齐"
 ---
 # 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment)
+
+> 中文简称：08 AI 伦理、安全与对齐
 
 本章探讨 AI 系统的可信度与责任性，涵盖价值对齐技术（RLHF/DPO）、AI 安全与红队测试（对抗攻击/提示词注入）。随着 AI 能力增强，确保系统安全、公平、可控变得至关重要。
 

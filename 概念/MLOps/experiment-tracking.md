@@ -12,8 +12,11 @@ aliases:
   - "实验管理"
 sources: []
 
+name_zh: "实验追踪"
 ---
 # Experiment Tracking (实验追踪)
+
+> 中文简称：实验追踪
 
 > **一句话定义**: Experiment Tracking 自动记录 ML 实验中的一切（超参数、指标曲线、模型产物、数据集版本、代码 commit），让"上次效果好的那个参数是什么"不再需要人脑记忆。
 

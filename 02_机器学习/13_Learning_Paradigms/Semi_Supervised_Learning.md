@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "半监督学习"
 ---
 # 半监督学习 (Semi-Supervised Learning)
+
+> 中文简称：半监督学习
 
 ## 1. 为什么需要半监督学习？
 
@@ -302,4 +305,4 @@ def llm_pseudo_labeling(texts, model="gpt-4o", few_shot_examples=None):
 - [[02_机器学习/03_Unsupervised_Learning/Unsupervised_Learning|无监督学习]]
 - [[03_深度学习/06_Self_Supervised_Learning/|自监督学习]]
 - [[05_大模型/07_Fine_tuning_Techniques/|微调技术]] — 少样本学习
-- [[08_模型评估/Evaluation_Datasets/|评估数据集]] — 标注质量
+- [[08_模型评估/02_Benchmarks/index|评估数据集]] — 标注质量

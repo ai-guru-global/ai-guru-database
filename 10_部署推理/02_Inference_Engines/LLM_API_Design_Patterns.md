@@ -4,9 +4,12 @@ tags: [deployment, api, llm, rest, streaming, production]
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "LLM API 设计模式"
 ---
 
 # LLM API Design Patterns
+
+> 中文简称：LLM API 设计模式
 
 ## Overview
 

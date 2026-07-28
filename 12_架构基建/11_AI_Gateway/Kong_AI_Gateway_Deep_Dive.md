@@ -12,8 +12,11 @@ aliases:
   - Kong_AI_Gateway_Deep_Dive
 sources: []
 
+name_zh: "Kong AI Gateway 深度解析"
 ---
 # Kong AI Gateway 深度解析
+
+> 中文简称：Kong AI Gateway 深度解析
 
 > **一句话秒懂**: Kong AI Gateway 是建立在 Kong 网关之上的 AI 专属代理层，为 LLM API 提供限流、缓存、安全、可观测等企业级能力。
 

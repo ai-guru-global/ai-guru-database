@@ -12,9 +12,13 @@ aliases:
 sources:
   - "https://blogs.microsoft.com/"
   - "https://www.microsoft.com/en-us/ai"
+name_zh: "Satya Nadella 人物索引"
+name_en: "Satya Nadella"
 ---
 
 # Satya Nadella 人物索引
+
+> 中文简称：Satya Nadella 人物索引 ｜ English Name: Satya Nadella
 
 > **一句话概括**: 微软第三任 CEO——以"云为先、AI 先行"战略完成微软复兴，通过与 OpenAI 的历史性合作将 GPT 能力注入全球企业基础设施，重新定义了"AI 作为操作系统"的愿景。
 
@@ -160,6 +164,7 @@ Nadella 的独特之处是**通过合作而非自研占据 AI 战略高地**—�
 - [[19_业界观点/Sam_Altman/about\|Sam Altman]] · [[19_业界观点/Bill_Gates/about\|Bill Gates]]
 - [[19_业界观点/Mustafa_Suleyman/about\|Mustafa Suleyman]] · [[19_业界观点/Sundar_Pichai/about\|Sundar Pichai]]
 - [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
+- [[19_业界观点/Satya_Nadella/Satya_Nadella_2026_Update\|2026 动态更新]]
 - [[19_业界观点/index\|业界观点首页]]
 
 ---

@@ -20,9 +20,12 @@ lifecycle_changed: 2026-07-21
 created: 2026-07-21
 updated: 2026-07-21
 tier: supporting
+name_zh: "AI 治理"
 ---
 
 # AI 治理
+
+> 中文简称：AI 治理
 
 > 一句话理解：确保 AI 系统负责任开发、部署和使用的政策、流程和标准体系。
 

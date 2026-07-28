@@ -23,8 +23,11 @@ aliases:
   - "inference autoscaling"
   - "推理扩缩容"
 
+name_zh: "推理弹性扩缩容"
 ---
 # Inference Autoscaling and Load Balancing（推理扩缩容与负载均衡）
+
+> 中文简称：推理弹性扩缩容
 
 > 推理扩缩容不是简单 HPA，要综合考虑冷启动、KV Cache 状态、延迟 SLO 和成本。
 

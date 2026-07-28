@@ -5,8 +5,11 @@ aliases:
   - Index
 sources: []
 
+name_zh: "全库总索引"
 ---
 # Wiki Index
+
+> 中文简称：全库总索引
 
 *This index is automatically maintained. Last updated: 2026-07-11*
 
@@ -226,7 +229,7 @@ graph LR
 - [[16_编程/05_Tools/AI_Coding_Assistants_2026|AI 编程助手全景]] — Cursor/Claude Code/Hermes/Windsurf/Copilot/Devin 选型 ( #ai-coding #tooling)
 - [[01_数学基础/08_Python_Toolkit/|Python 工具链]] — AI 开发的 Python 工具与库 ( #python #tooling)
 - [[01_数学基础/11_Java_Ecosystem_AI/|Java 生态 AI]] — Java 在 AI 工程中的应用 ( #java #enterprise)
-- [[01_数学基础/GPU_Programming/|GPU 编程]] — CUDA / ROCm / Triton GPU 编程技能 ( #cuda #gpu #programming)
+- [[01_数学基础/10_AI_Hardware/GPU_Programming_CUDA_Basics|GPU 编程]] — CUDA / ROCm / Triton GPU 编程技能 ( #cuda #gpu #programming)
 
 ### 训练技能 (Model Training)
 - [[07_模型训练/README|模型训练 (Model Training)]] — 分布式计算、优化算法、工程技巧的锻造车间 ( #model-training #distributed-training)

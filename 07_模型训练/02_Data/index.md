@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-25
 sources: []
+name_zh: "训练数据"
+name_en: "Data"
 ---
 
 # Training Data
+
+> 中文简称：训练数据 ｜ English Name: Data
 
 训练数据 — 大模型预训练与微调的数据准备，涵盖数据增强、数据配比、合成数据和分词器设计。
 

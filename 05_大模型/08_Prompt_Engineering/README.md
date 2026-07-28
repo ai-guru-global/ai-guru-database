@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "提示词工程与结构化输出"
 ---
 # 提示词工程与结构化输出 (Prompt Engineering & Structured Output)
+
+> 中文简称：提示词工程与结构化输出
 
 > 提示词工程是优化 LLM 输入以获得更好输出的技术，结构化输出框架确保 LLM 返回格式正确的 JSON/类型数据。
 

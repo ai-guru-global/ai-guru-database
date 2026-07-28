@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "约束生成"
+name_en: "Constrained Generation"
 ---
 
 # Constrained Generation
+
+> 中文简称：约束生成 ｜ English Name: Constrained Generation
 
 ## 文件导航
 

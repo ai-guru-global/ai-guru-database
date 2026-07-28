@@ -12,8 +12,11 @@ aliases:
   - HF_Inference_Endpoints_Guide
 sources: []
 
+name_zh: "Hugging Face Inference Endpoints：一键 Serv"
 ---
 # Hugging Face Inference Endpoints：一键 Serverless 部署开源大模型
+
+> 中文简称：Hugging Face Inference Endpoints：一键 Serv
 
 > **一句话理解**: Hugging Face Inference Endpoints 是专为大模型设计的托管服务（PaaS）。它让你只需点几下鼠标，就能把 Hub 上几百 GB 的开源模型变成高可用、可自动扩缩容的生产级 API，按秒计费，免去团队自建和运维 GPU 集群的折磨。
 

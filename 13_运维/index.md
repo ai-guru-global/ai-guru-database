@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "运维"
+name_en: "AI Ops"
 ---
 
 # 运维
+
+> 中文简称：运维 ｜ English Name: AI Ops
 
 AI 运维知识体系（Ops Knowledge Base）— 涵盖可观测性、事件响应、混沌工程、容量规划、成本管理与 SRE 实践。
 

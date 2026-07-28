@@ -12,8 +12,11 @@ aliases:
   - AI_Technology_Landscape
 sources: []
 
+name_zh: "AI技术全景概览"
 ---
 # AI 技术全景概览
+
+> 中文简称：AI技术全景概览
 
 > **一句话理解**: AI 技术生态像一座冰山——你看到的 ChatGPT 只是水面上的尖端，水面下是数十年积累的数学理论、算法创新、工程实践和基础设施。
 

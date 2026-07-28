@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "混沌工程专题"
 ---
 
 # Chaos Engineering
+
+> 中文简称：混沌工程专题
 
 混沌工程（Chaos Engineering）— 通过故障注入（fault injection）验证 AI 系统的弹性（resilience）和容错能力。
 

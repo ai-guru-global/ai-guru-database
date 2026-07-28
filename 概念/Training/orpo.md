@@ -26,9 +26,12 @@ provenance:
 base_confidence: 0.85
 created: 2026-06-24
 updated: 2026-06-24
+name_zh: "比值比偏好优化"
 ---
 
 # ORPO（Odds Ratio Preference Optimization）
+
+> 中文简称：比值比偏好优化
 
 ## 核心要点
 

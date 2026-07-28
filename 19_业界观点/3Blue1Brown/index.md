@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "3Blue1Brown 频道"
+name_en: "3Blue1Brown"
 ---
 
 # 3Blue1Brown
+
+> 中文简称：3Blue1Brown 频道 ｜ English Name: 3Blue1Brown
 
 Grant Sanderson 是 3Blue1Brown 创始人，用 Manim 动画引擎创造了全球最受欢迎的数学可视化教程，线性代数和神经网络系列是 AI 学习者的必修课。
 
@@ -207,3 +211,7 @@ Grant Sanderson 是 3Blue1Brown 创始人，用 Manim 动画引擎创造了全�
 
 ---
 *Last updated: 2026-07-21*
+
+## 关联导航
+
+- [[19_业界观点/3Blue1Brown/3Blue1Brown_2026_Update\|2026 动态更新]]

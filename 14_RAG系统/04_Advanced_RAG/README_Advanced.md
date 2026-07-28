@@ -12,8 +12,11 @@ aliases:
   - README_Advanced
 sources: []
 
+name_zh: "RAG高级实践 2026"
 ---
 # RAG 高级实践 2026
+
+> 中文简称：RAG高级实践 2026
 
 ## 文档导航
 

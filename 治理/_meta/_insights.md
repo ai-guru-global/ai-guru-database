@@ -1,4 +1,9 @@
+---
+name_zh: "知识图谱洞察"
+---
 # Wiki Insights — 2026-07-02
+
+> 中文简称：知识图谱洞察
 
 > Auto-generated knowledge graph analysis of the AI Guru Database wiki vault.
 > **1,711 pages** (excluding structural) · **8,439 directed edges** · **2,439 unique tags** · **214 orphan pages**

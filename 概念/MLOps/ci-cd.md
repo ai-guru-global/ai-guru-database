@@ -27,9 +27,12 @@ provenance:
 base_confidence: 0.92
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "持续集成 / 持续部署"
 ---
 
 # CI/CD（持续集成 / 持续部署）
+
+> 中文简称：持续集成 / 持续部署
 
 ## 核心要点
 

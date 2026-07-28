@@ -18,8 +18,11 @@ aliases:
   - "Rag Vector Database"
   - "rag vector database"
 
+name_zh: "RAG 系统 × 向量数据库"
 ---
 # RAG 系统 × 向量数据库
+
+> 中文简称：RAG 系统 × 向量数据库
 
 ## The Connection
 

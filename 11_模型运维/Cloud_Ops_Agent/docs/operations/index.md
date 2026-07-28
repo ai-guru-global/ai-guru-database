@@ -7,6 +7,8 @@ created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
 sources: []
+name_zh: "云产品运维 Agent 运维指南"
+name_en: "operations"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -14,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # 云产品运维 Agent 运维指南 (Operations)
+
+> 中文简称：云产品运维 Agent 运维指南 ｜ English Name: operations
 
 > 🎯 **目标**: 为运维工程师提供 Cloud Ops Agent 的日常运维、监控告警、故障处理、性能调优、安全运维的完整实操指南，确保系统稳定高效运行。
 

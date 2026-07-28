@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "代码生成专题"
 ---
 
 # Code Generation
+
+> 中文简称：代码生成专题
 
 代码生成（Code Generation）— AI 辅助编程（AI-assisted coding）、Copilot、代码补全（code completion）与自动化测试生成的行业应用。
 

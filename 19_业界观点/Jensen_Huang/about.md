@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Jensen Huang 简介"
 ---
 # Jensen Huang 简介 (Jensen Huang)
+
+> 中文简称：Jensen Huang 简介
 
 ## 一句话概括
 

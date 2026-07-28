@@ -11,8 +11,11 @@ aliases:
   - "llm engineer"
 sources: []
 
+name_zh: "LLM 工程师路径"
 ---
 # LLM 工程师路径
+
+> 中文简称：LLM 工程师路径
 
 > **面向：想专注大模型应用与 Agent 开发的工程师 | 前置要求：Python + 基础 ML | 预计时间：40-60 小时**
 

@@ -22,9 +22,12 @@ aliases:
   - "Chinese Chips Inference"
   - "chinese chips inference"
 
+name_zh: "国产 AI 芯片 × 推理引擎: 硬件约束下的推理软件栈适配"
 ---
 
 # 国产 AI 芯片 × 推理引擎: 硬件约束下的推理软件栈适配
+
+> 中文简称：国产 AI 芯片 × 推理引擎: 硬件约束下的推理软件栈适配
 
 ## The Connection
 

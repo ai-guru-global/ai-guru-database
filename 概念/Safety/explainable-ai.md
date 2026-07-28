@@ -20,9 +20,12 @@ lifecycle_changed: 2026-07-21
 created: 2026-07-21
 updated: 2026-07-21
 tier: supporting
+name_zh: "可解释 AI"
 ---
 
 # 可解释 AI
+
+> 中文简称：可解释 AI
 
 > 一句话理解：让 AI 系统的决策过程对人类可理解、可解释、可审计的技术和方法。
 

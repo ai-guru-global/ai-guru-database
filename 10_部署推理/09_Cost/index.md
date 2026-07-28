@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "推理成本"
+name_en: "Cost"
 ---
 
 # Cost
+
+> 中文简称：推理成本 ｜ English Name: Cost
 
 ## 文件导航
 

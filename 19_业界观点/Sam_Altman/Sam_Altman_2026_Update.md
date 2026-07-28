@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Sam Altman 2026 Update", "山姆·奥特曼 2026 动态"]
 sources: []
+name_zh: "山姆·奥特曼 2026 动态"
 ---
 
 # 山姆·奥特曼 2026 动态 (Sam Altman 2026 Update)
+
+> 中文简称：山姆·奥特曼 2026 动态
 
 ## 一句话概括
 
@@ -430,8 +433,8 @@ Altman 在 2026 年的政治操作引发"科技寡头"担忧：
 ### 技术与基础设施
 
 - [[05_大模型/OpenAI]] -- OpenAI 模型技术全景
-- [[05_大模型/GPT]] -- GPT 系列演进
-- [[10_部署推理/Stargate]] -- Stargate 算力基础设施
+- [[05_大模型/14_Global_LLM_Ecosystem/OpenAI_Deep_Dive|GPT]] -- GPT 系列演进
+- Stargate -- Stargate 算力基础设施
 - [[05_大模型/09_Reasoning_Models]] -- 推理模型路线
 - [[00_入门/AI_Future_Trends]] -- AGI 时间线讨论
 - [[17_伦理安全/README]] -- AI 治理与对齐

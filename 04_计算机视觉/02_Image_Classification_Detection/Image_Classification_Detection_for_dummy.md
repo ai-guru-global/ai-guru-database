@@ -12,8 +12,11 @@ aliases:
   - Image_Classification_Detection_for_dummy
 sources: []
 
+name_zh: "图像分类与检测 - 小白版 👀"
 ---
 # 图像分类与检测 - 小白版 👀
+
+> 中文简称：图像分类与检测 - 小白版 👀
 
 > **一句话秒懂**: 图像分类就像玩"你画我猜"——让电脑看图猜是猫还是狗;而目标检测更厉害,不仅要猜对,还要指出"猫在左上角,狗在右下角"!
 
@@ -361,9 +364,9 @@ YOLO: 只能识别物体("这是一个人")
 
 - [[../../05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 图像分类与语言理解的融合
 - [[../../概念/Vision/object-detection|目标检测概念卡]] — 检测算法的概念定义
-- [[../../03_深度学习/02_Neural_Network_Core|神经网络核心]] — CNN 底层原理
-- [[../../10_部署推理/01_Deployment_Fundamentals|部署基础]] — CV 模型边缘部署
-- [[../../14_RAG系统/01_RAG_Fundamentals|视觉 RAG]] — 图像特征检索
+- [[03_深度学习/02_Neural_Network_Core|神经网络核心]] — CNN 底层原理
+- [[10_部署推理/01_Deployment_Fundamentals|部署基础]] — CV 模型边缘部署
+- [[14_RAG系统/01_RAG_Fundamentals|视觉 RAG]] — 图像特征检索
 
 ---
 

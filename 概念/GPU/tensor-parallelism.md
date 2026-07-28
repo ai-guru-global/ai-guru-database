@@ -16,9 +16,12 @@ relationships:
   - target: "概念/vllm"
     type: used_by
 sources: []
+name_zh: "张量并行"
 ---
 
 # Tensor Parallelism
+
+> 中文简称：张量并行
 
 > **一句话理解**: 张量并行就是把模型的一层计算拆开，让多张 GPU 同时算，这样单张 GPU 装不下的模型也能跑。
 

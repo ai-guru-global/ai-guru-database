@@ -19,8 +19,11 @@ aliases:
 sources:
   - "https://github.com/microsoft/AI-For-Beginners"
 
+name_zh: "Stage 0: AI 觉醒"
 ---
 # Stage 0: AI 觉醒
+
+> 中文简称：Stage 0: AI 觉醒
 
 > **"在你学习如何建造之前，先理解你在建造什么。"**
 >

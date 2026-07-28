@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "闫俊杰 — MiniMax 创始人"
 ---
 # 闫俊杰 (Junjie Yan) — MiniMax 创始人
+
+> 中文简称：闫俊杰 — MiniMax 创始人
 
 ## 一句话概括
 

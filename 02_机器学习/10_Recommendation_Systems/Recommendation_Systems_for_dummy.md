@@ -12,8 +12,11 @@ aliases:
   - Recommendation_Systems_for_dummy
 sources: []
 
+name_zh: "推荐系统 - 小白版"
 ---
 # 推荐系统 - 小白版
+
+> 中文简称：推荐系统 - 小白版
 
 > **一句话秒懂**: 推荐系统就像"一个超聪明的导购员"——它观察你看了什么、买了什么，然后猜出你可能还想要什么，并且猜得特别准。
 
@@ -503,8 +506,8 @@ for item_id in range(ratings.shape[1]):
 
 ## Related
 
-- [[../../01_数学基础/02_Linear_Algebra|线性代数]] — 矩阵分解推荐算法的数学基础
-- [[../../03_深度学习/02_Neural_Network_Core|神经网络核心]] — 深度推荐模型
+- [[01_数学基础/02_Linear_Algebra|线性代数]] — 矩阵分解推荐算法的数学基础
+- [[03_深度学习/02_Neural_Network_Core|神经网络核心]] — 深度推荐模型
 - [[../../08_模型评估/Online_Evaluation|在线评估]] — A/B 测试推荐效果
 - [[../../概念/General/ab-testing-framework|A/B 测试概念卡]] — 推荐系统评估方法论
-- [[../../14_RAG系统/01_RAG_Fundamentals|RAG 基础]] — 推荐系统与检索增强的关联
+- [[14_RAG系统/01_RAG_Fundamentals|RAG 基础]] — 推荐系统与检索增强的关联

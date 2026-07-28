@@ -12,8 +12,11 @@ aliases:
   - API_Integration_Guide
 sources: []
 
+name_zh: "API 集成指南"
 ---
 # API 集成指南
+
+> 中文简称：API 集成指南
 
 > 各云产品智能体 API 调用方式与集成规范
 

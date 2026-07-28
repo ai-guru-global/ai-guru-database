@@ -12,8 +12,11 @@ aliases:
   - Embedding_Representation
 sources: []
 
+name_zh: "嵌入与表示学习"
 ---
 # 嵌入与表示学习 (Embedding & Representation Learning)
+
+> 中文简称：嵌入与表示学习
 
 > 从离散符号到连续向量，系统解析表示学习的理论基础、位置编码设计与多模态嵌入对齐。
 

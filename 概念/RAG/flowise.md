@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.82
 lifecycle: reviewed
 tier: supporting
+name_zh: "Flowise 可视化 LLM 编排"
 ---
 
 # Flowise 可视化 LLM 编排
+
+> 中文简称：Flowise 可视化 LLM 编排
 
 > **一句话理解**: Flowise 是"拖拽搭积木建 AI 应用"——可视化界面拖拽 LangChain 组件，零代码构建 LLM 工作流，Node.js 驱动。
 

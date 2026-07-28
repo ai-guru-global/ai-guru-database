@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "AI 评估工程师"
+name_en: "AI Evaluation Engineer"
 ---
 
 # AI Evaluation Engineer
+
+> 中文简称：AI 评估工程师 ｜ English Name: AI Evaluation Engineer
 
 AI 评估工程师 — 设计与执行模型评估方案，涵盖离线指标（offline metrics）、在线 A/B 测试与红队对抗测试（red team）。
 

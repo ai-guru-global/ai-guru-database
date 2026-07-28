@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Mira Murati 2026 Update", "米拉·穆拉蒂 2026 动态"]
 sources: []
+name_zh: "米拉·穆拉蒂 2026 动态"
 ---
 
 # 米拉·穆拉蒂 2026 动态 (Mira Murati 2026 Update)
+
+> 中文简称：米拉·穆拉蒂 2026 动态
 
 ## 一句话概括
 

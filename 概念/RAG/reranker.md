@@ -20,9 +20,12 @@ base_confidence: 0.85
 lifecycle: reviewed
 tier: core
 updated: 2026-07-21
+name_zh: "重排序模型 Reranker"
 ---
 
 # 重排序模型 Reranker
+
+> 中文简称：重排序模型 Reranker
 
 > **一句话理解**: Reranker 是 RAG 的"质量守门员"——检索模型粗筛 100 个候选，Reranker 精排 Top-10，准确率直接提升 10-30%。
 

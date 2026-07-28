@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "训练优化"
+name_en: "Optimization"
 ---
 
 # Optimization
+
+> 中文简称：训练优化 ｜ English Name: Optimization
 
 This page indexes the contents of `07_模型训练/03_Optimization`.
 
@@ -226,3 +230,7 @@ This page indexes the contents of `07_模型训练/03_Optimization`.
 - [ ] 能将知识应用到实际项目中
 - [ ] 具备论文阅读和复现能力
 - [ ] 持续跟踪领域最新进展
+
+## 相关文档
+
+- [[07_模型训练/03_Optimization/Mixed_Precision_Training_Guide|混合精度训练指南]]

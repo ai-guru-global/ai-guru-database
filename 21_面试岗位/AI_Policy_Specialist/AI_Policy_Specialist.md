@@ -13,9 +13,12 @@ aliases:
   - "AI Policy Analyst"
   - "Responsible AI Specialist"
 sources: []
+name_zh: "AI Policy Specialist 面试指南"
 ---
 
 # AI Policy Specialist 面试指南
+
+> 中文简称：AI Policy Specialist 面试指南
 
 > **一句话理解**: AI Policy Specialist 是连接 AI 技术与法律法规的翻译官——既要理解 AI 系统的技术原理与风险边界，又要掌握全球 AI 法规框架，帮助企业在合规前提下安全地部署 AI 产品。
 
@@ -470,7 +473,7 @@ AI Policy Specialist 的工作不同于传统的法律顾问或合规专员，�
 ## Related
 
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 - [[21_面试岗位/AI_Security_Engineer/AI_Security_Engineer|AI Security Engineer 面试指南]]
 - [[21_面试岗位/AI_Product_Manager/AI_Product_Manager|AI Product Manager 面试指南]]
 - [[21_面试岗位/AI_Evaluation_Engineer/AI_Evaluation_Engineer|AI Evaluation Engineer 面试指南]]

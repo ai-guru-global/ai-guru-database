@@ -11,8 +11,11 @@ aliases:
   - Agentic_Coding_Tools_Overview
 sources: []
 
+name_zh: "AI Agent 全景图 2026"
 ---
 # AI Agent 全景图 2026
+
+> 中文简称：AI Agent 全景图 2026
 
 > **一句话理解**: 从代码补全到完全自主执行，AI Agent 工具正在重塑软件开发的每个环节——本指南覆盖 20+ 主流工具，按能力层级和使用场景系统整理。
 

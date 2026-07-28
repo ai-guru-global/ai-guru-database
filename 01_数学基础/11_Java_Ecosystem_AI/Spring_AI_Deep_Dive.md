@@ -12,8 +12,11 @@ aliases:
   - Spring_AI_Deep_Dive
 sources: []
 
+name_zh: "Spring AI 深度解析"
 ---
 # Spring AI 深度解析
+
+> 中文简称：Spring AI 深度解析
 
 > **一句话理解**: Spring AI 是 Spring 官方的 AI 应用框架 —— 用 Spring 的方式统一接入 LLM、构建 RAG、编排 Agent，让 Java 开发者用熟悉的编程模型构建企业级 AI 应用。
 

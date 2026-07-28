@@ -9,9 +9,12 @@ lifecycle: reviewed
 aliases:
   - "Docker"
 sources: []
+name_zh: "Docker 容器平台"
 ---
 
 # Docker
+
+> 中文简称：Docker 容器平台
 
 > 把应用连同它的运行环境一起「打包成盒」，让开发、测试、生产环境拥有一致的交付体验。
 

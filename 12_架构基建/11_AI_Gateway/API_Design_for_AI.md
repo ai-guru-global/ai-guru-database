@@ -12,8 +12,11 @@ aliases:
   - API_Design_for_AI
 sources: []
 
+name_zh: "AI API 设计指南"
 ---
 # AI API 设计指南
+
+> 中文简称：AI API 设计指南
 
 > **一句话秒懂**: AI API 设计就是定义"客户端如何优雅地调用 AI 服务"的接口规范，核心挑战在于处理流式响应、高延迟和成本控制。
 

@@ -7,9 +7,12 @@ created: 2026-07-23
 updated: 2026-07-23
 tier: supporting
 sources: []
+name_zh: "AI Research Engineer 面试题实例答案"
 ---
 
 # AI Research Engineer 面试题实例答案
+
+> 中文简称：AI Research Engineer 面试题实例答案
 
 > 每个答案采用 **结论 → 展开 → 代码/推导 → 追问预判** 结构。
 
@@ -339,4 +342,4 @@ R:
 - [[03_深度学习/index|深度学习]]
 - [[05_大模型/index|大模型]]
 - [[21_面试岗位/AI_Research_Scientist/index|AI Research Scientist]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]

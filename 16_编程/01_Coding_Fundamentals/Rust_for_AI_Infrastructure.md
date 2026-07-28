@@ -11,8 +11,11 @@ aliases:
   - Rust_for_AI_Infrastructure
 sources: []
 
+name_zh: "Rust for AI 基础设施"
 ---
 # Rust for AI 基础设施
+
+> 中文简称：Rust for AI 基础设施
 
 > **一句话理解**: Rust 正在成为 AI 基础设施的核心系统语言——从 HuggingFace 的 tokenizers/safetensors 到推理引擎 TGI，Rust 提供了 C++ 级性能 + 内存安全 + 无畏并发。
 

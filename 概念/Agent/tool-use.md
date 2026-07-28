@@ -26,9 +26,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "大模型 Tool Use"
 ---
 
 # 大模型 Tool Use（工具使用）
+
+> 中文简称：大模型 Tool Use
 
 ## 一句话总结
 

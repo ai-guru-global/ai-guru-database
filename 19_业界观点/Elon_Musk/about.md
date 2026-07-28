@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Elon Musk 简介"
 ---
 # Elon Musk 简介 (Elon Musk)
+
+> 中文简称：Elon Musk 简介
 
 ## 一句话概括
 

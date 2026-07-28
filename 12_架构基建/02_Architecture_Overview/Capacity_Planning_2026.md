@@ -11,8 +11,11 @@ aliases:
   - Capacity_Planning_2026
 sources: []
 
+name_zh: "AI 系统容量规划指南"
 ---
 # AI 系统容量规划指南 (Capacity Planning 2026)
+
+> 中文简称：AI 系统容量规划指南
 
 > **一句话理解**: 容量规划是 AI 系统的"预算管理"——预测未来负载、评估资源需求、制定扩缩容策略，确保系统在满足 SLA 的同时控制成本。
 

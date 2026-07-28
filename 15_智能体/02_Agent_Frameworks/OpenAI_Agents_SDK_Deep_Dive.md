@@ -15,9 +15,12 @@ sources:
   - "https://github.com/openai/openai-agents-python"
   - "https://platform.openai.com/docs/guides/agents"
 
+name_zh: "OpenAI Agents SDK 深度解读"
 ---
 
 # OpenAI Agents SDK 深度解读（2025）
+
+> 中文简称：OpenAI Agents SDK 深度解读
 
 > **一句话理解**: OpenAI Agents SDK 是"Swarm 的生产版"——用 Agent、Handoff、Guardrails 三个原语构建多 Agent 系统，原生集成 MCP 和 Responses API，是 OpenAI 生态的官方 Agent 框架。
 

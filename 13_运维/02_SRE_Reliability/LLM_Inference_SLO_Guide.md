@@ -8,9 +8,12 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "LLM 推理 SLO 实践指南"
 ---
 
 # LLM 推理 SLO 实践指南
+
+> 中文简称：LLM 推理 SLO 实践指南
 
 > **一句话理解**: LLM 推理 SLO 就是给用户一个可量化的承诺——比如「99.9% 可用、95% 请求 TTFT < 1s」，并用错误预算来决定能不能发版。
 

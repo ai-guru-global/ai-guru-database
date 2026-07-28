@@ -18,9 +18,12 @@ relationships:
   - target: "概念/limit-range"
     type: "related_to"
 sources: []
+name_zh: "K8s 资源配额"
 ---
 
 # Resource Quota
+
+> 中文简称：K8s 资源配额
 
 > **一句话理解**: Resource Quota 是 Kubernetes 给 Namespace 设置的「资源预算」，防止某个业务/租户把集群 CPU、内存、Pod 数等核心资源用光。
 

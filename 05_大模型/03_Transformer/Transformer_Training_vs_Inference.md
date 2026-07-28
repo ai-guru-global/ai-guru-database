@@ -18,9 +18,12 @@ tags:
 created: 2026-06-25
 updated: 2026-06-25
 sources: []
+name_zh: "Transformer 在大模型训练与推理中的应用"
 ---
 
 # Transformer 在大模型训练与推理中的应用
+
+> 中文简称：Transformer 在大模型训练与推理中的应用
 
 ## 一句话结论
 

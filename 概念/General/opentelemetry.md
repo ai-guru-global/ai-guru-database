@@ -17,9 +17,12 @@ relationships:
   - target: "概念/kubernetes"
     type: related_to
 sources: []
+name_zh: "统一可观测性标准"
 ---
 
 # OpenTelemetry
+
+> 中文简称：统一可观测性标准
 
 > **一句话理解**: OpenTelemetry 是云原生可观测性的「通用语言」，一次埋点即可同时产出指标、链路、日志，并发送到 Prometheus/Jaeger/Loki 等后端。
 

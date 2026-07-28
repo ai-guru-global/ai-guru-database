@@ -27,8 +27,11 @@ aliases:
   - "Microsoft AI Agents L09 Metacognition"
   - Microsoft_AI_Agents_L09_Metacognition
 
+name_zh: "L09 AI Agent 元认知：自我反思、Corrective RAG 与代码"
 ---
 # L09 AI Agent 元认知：自我反思、Corrective RAG 与代码生成
+
+> 中文简称：L09 AI Agent 元认知：自我反思、Corrective RAG 与代码
 
 > 来源：[Microsoft AI Agents for Beginners / 09-metacognition](https://github.com/microsoft/ai-agents-for-beginners/tree/main/09-metacognition)（本课是全课程最长的一章，1434 行）
 

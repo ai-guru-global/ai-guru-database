@@ -11,8 +11,11 @@ aliases:
   - Trae_Guide
 sources: []
 
+name_zh: "Trae 使用指南"
 ---
 # Trae 使用指南
+
+> 中文简称：Trae 使用指南
 
 > **一句话**: Trae 是字节跳动推出的 AI IDE，支持 Pro+ 订阅，适合全栈项目开发。
 

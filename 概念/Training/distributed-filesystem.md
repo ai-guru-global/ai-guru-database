@@ -19,9 +19,12 @@ relationships:
     type: enables
 sources:
   - "https://www.lustre.org/"
+name_zh: "分布式文件系统"
 ---
 
 # Distributed Filesystem
+
+> 中文简称：分布式文件系统
 
 > **一句话理解**: 分布式文件系统就是把很多台机器的硬盘连成一片「大硬盘」，让多台 GPU 节点能同时高速读写训练数据。
 

@@ -28,8 +28,11 @@ aliases:
   - "Data Cleaning Pipeline"
   - "data cleaning pipeline"
 
+name_zh: "数据清洗 Pipeline"
 ---
 # 数据清洗 Pipeline
+
+> 中文简称：数据清洗 Pipeline
 
 ## 核心要点
 

@@ -25,9 +25,12 @@ lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-07-11T00:00:00Z
 updated: 2026-07-21
+name_zh: "分割一切模型"
 ---
 
 # Segment Anything Model (SAM)
+
+> 中文简称：分割一切模型
 
 > **一句话理解**: SAM 是视觉领域的 "GPT 时刻"——一个在 10 亿级掩码上训练的分割基础模型，你只需给一个点或画一个框，它就能分割出任何物体，无需额外训练。
 

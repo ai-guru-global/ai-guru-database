@@ -17,8 +17,11 @@ base_confidence: 0.75
 sources:
   - 06_强化学习/05_Robotics_Embodied_AI/VLA_Embodied_AI_2026.md
   - 06_强化学习/05_Robotics_Embodied_AI/Humanoid_Robot_2026.md
+name_zh: "遥操作"
 ---
 # 遥操作 (Teleoperation)
+
+> 中文简称：遥操作
 
 > 遥操作是具身智能数据采集的核心手段——人类远程控制机器人执行任务，记录操作轨迹用于模仿学习。
 
@@ -110,9 +113,9 @@ sources:
 
 ## 相关概念
 
-- [[概念/imitation-learning|Imitation Learning]] — 模仿学习
-- [[概念/vla|VLA]] — 视觉-语言-动作模型
-- [[概念/embodied-ai|Embodied AI]] — 具身智能
+- [[概念/General/imitation-learning|Imitation Learning]] — 模仿学习
+- [[概念/General/vla|VLA]] — 视觉-语言-动作模型
+- [[概念/General/embodied-ai|Embodied AI]] — 具身智能
 
 > 💡 遥操作是具身智能的“数据引擎”——没有高质量的演示数据，VLA 模型就无法学会复杂的操作技能。
 
@@ -197,6 +200,6 @@ with h5py.File("episode_001.hdf5", "w") as f:
 
 ## 相关概念
 
-- [[概念/imitation-learning|Imitation Learning]] — 模仿学习
-- [[概念/vla|VLA]] — 视觉-语言-动作模型
-- [[概念/embodied-ai|Embodied AI]] — 具身智能
+- [[概念/General/imitation-learning|Imitation Learning]] — 模仿学习
+- [[概念/General/vla|VLA]] — 视觉-语言-动作模型
+- [[概念/General/embodied-ai|Embodied AI]] — 具身智能

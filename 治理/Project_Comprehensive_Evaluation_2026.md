@@ -6,9 +6,12 @@ summary: "> **评估日期**: 2026-04-13"
 created: 2026-05-31
 updated: 2026-05-31
 sources: []
+name_zh: "AI Guru 知识库项目全面评估报告"
 ---
 
 # AI Guru 知识库项目全面评估报告
+
+> 中文简称：AI Guru 知识库项目全面评估报告
 
 > **评估日期**: 2026-04-13 
 > **评估维度**: Agent 工程师 | 大模型工程师 | 架构师 | 集成测试 | 工单管理 
@@ -422,4 +425,4 @@ sources: []
 
 - [[治理/plan/Content_Evaluation_2026]] — AI Guru Database - 内容全面评估 2026 (共享: goals, model-evaluation, planning, roadmap, strategy)
 - [[治理/plan/Project_Structure_Evaluation_2026]] — AI Guru 知识库 — 全项目结构评估与改进建议 (共享: goals, model-evaluation, planning, roadmap, strategy)
-- [[治理/plan/Implementation_Plan_2026]] — AI Guru 知识库整改执行计划 (共享: goals, planning, roadmap, strategy)
+- [[治理/plan/index|Implementation_Plan_2026]] — AI Guru 知识库整改执行计划 (共享: goals, planning, roadmap, strategy)

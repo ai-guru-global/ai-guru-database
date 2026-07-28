@@ -11,8 +11,11 @@ aliases:
   - Mixed_Precision_Training
 sources: []
 
+name_zh: "混合精度训练"
 ---
 # 混合精度训练 (Mixed Precision Training)
+
+> 中文简称：混合精度训练
 
 > **一句话理解**: 混合精度训练是在保持模型精度的前提下，用 FP16/BF16/FP8 等低精度格式存储和计算大部分张量，从而显著降低显存占用、提升计算吞吐量的工程艺术。
 

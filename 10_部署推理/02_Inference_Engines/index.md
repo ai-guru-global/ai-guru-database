@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "推理引擎"
+name_en: "Inference Engines"
 ---
 
 # Inference Engines
+
+> 中文简称：推理引擎 ｜ English Name: Inference Engines
 
 This page indexes the contents of `10_部署推理/02_Inference_Engines`.
 

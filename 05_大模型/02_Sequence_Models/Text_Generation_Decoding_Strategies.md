@@ -4,9 +4,12 @@ tags: [nlp, llm, text-generation, decoding, sampling, production]
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "文本生成解码策略"
 ---
 
 # Text Generation & Decoding Strategies
+
+> 中文简称：文本生成解码策略
 
 ## Overview
 

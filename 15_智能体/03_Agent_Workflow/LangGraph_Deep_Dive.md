@@ -12,8 +12,11 @@ aliases:
   - LangGraph_Deep_Dive
 sources: []
 
+name_zh: "LangGraph 深度解读"
 ---
 # LangGraph 深度解读
+
+> 中文简称：LangGraph 深度解读
 
 > **一句话理解**: LangGraph 把 Agent 工作流从"面条式调用"变成"有状态的图"——每个节点是一个步骤，边定义了流转逻辑，状态在节点间传递和更新，就像工厂的流水线。
 

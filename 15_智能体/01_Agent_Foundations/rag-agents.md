@@ -11,8 +11,11 @@ aliases:
   - "rag agents"
 sources: []
 
+name_zh: "RAG 与 Agent 的融合"
 ---
 # RAG 与 Agent 的融合 (RAG-Agents Synthesis)
+
+> 中文简称：RAG 与 Agent 的融合
 
 > RAG 系统正在从被动检索工具演化为 Agent 的核心知识引擎——Agentic RAG 将检索、推理、行动统一在一个自主循环中。
 

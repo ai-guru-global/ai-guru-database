@@ -12,8 +12,11 @@ aliases:
   - Neuro_Symbolic_and_Formal_Verification_2026
 sources: []
 
+name_zh: "神经符号与形式验证"
 ---
 # Neuro-symbolic AI & Formal Verification 2026
+
+> 中文简称：神经符号与形式验证
 
 > **一句话理解**: 神经符号 AI 是将 LLM 的“直觉”与形式逻辑的“严谨”相结合——让模型不仅能猜出答案，还能给出数学上绝对正确的证明。
 
@@ -177,7 +180,7 @@ theorem pythagorean_theorem (a b c : ℝ)
 - [[05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis]] — 强化学习如何提升推理
 - [[05_大模型/09_Reasoning_Models/Process_Reward_Models]] — 步骤级奖励与逻辑验证
 - [[概念/formal-logic]] — 符号逻辑基础
-- [[05_大模型/09_Reasoning_Models/Reasoning_Models|推理模型总览]]
+- [[概念/LLM/reasoning-models|推理模型总览]]
 
 ## 总结
 

@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "评估插件"
+name_en: "plugins"
 ---
 
 # Plugins
+
+> 中文简称：评估插件 ｜ English Name: plugins
 
 评估插件（evaluation plugins）— 对接阿里云、OpenAI 等外部模型 API 的适配器（adapters），支持多模型对比评估。
 

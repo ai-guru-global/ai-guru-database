@@ -21,9 +21,12 @@ lifecycle: reviewed
 tier: supporting
 created: 2026-06-12
 updated: 2026-07-21
+name_zh: "ExLlamaV2 量化推理引擎"
 ---
 
 # ExLlamaV2 量化推理引擎
+
+> 中文简称：ExLlamaV2 量化推理引擎
 
 > **一句话理解**: ExLlamaV2 是"量化 LLM 的速度之王"——EXL2 格式 + 自定义 CUDA 内核，让 4-bit 量化模型在消费级 GPU 上跑出惊人速度。
 
@@ -200,4 +203,4 @@ convert_model(
 - [[概念/LLM/vllm|vLLM]]
 - [[概念/LLM/llm-quantization|LLM 量化]]
 - [[概念/LLM/gptq|GPTQ]]
-- [[10_部署推理/05_Quantization/ExLlamaV2_Deep_Dive|ExLlamaV2 深度解析]]
+- [[概念/LLM/exllama|ExLlamaV2 深度解析]]

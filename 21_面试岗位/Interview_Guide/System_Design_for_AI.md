@@ -4,9 +4,12 @@ tags: [interviews, system-design, ai, ml, architecture]
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "AI 系统设计面试"
 ---
 
 # System Design for AI Interviews
+
+> 中文简称：AI 系统设计面试
 
 ## Overview
 

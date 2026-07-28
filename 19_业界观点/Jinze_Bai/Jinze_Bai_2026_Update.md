@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Jinze Bai 2026 Update", "白辰甲 2026 动态", "阶跃星辰 2026", "StepFun 2026"]
 sources: []
+name_zh: "白辰甲 2026 动态"
 ---
 
 # 白辰甲 2026 动态 (Jinze Bai 2026 Update)
+
+> 中文简称：白辰甲 2026 动态
 
 ## 一句话概括
 

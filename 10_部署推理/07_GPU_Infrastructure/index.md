@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "GPU 基础设施"
+name_en: "GPU Infrastructure"
 ---
 
 # GPU Infrastructure
+
+> 中文简称：GPU 基础设施 ｜ English Name: GPU Infrastructure
 
 GPU 基础设施（GPU Infrastructure）— GPU 集群管理（cluster management）、GPUStack 与推理服务部署。
 

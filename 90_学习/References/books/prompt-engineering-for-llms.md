@@ -21,8 +21,11 @@ aliases:
   - "Prompt Engineering For Llms"
   - "prompt engineering for llms"
 
+name_zh: "LLM 提示工程"
 ---
 # Prompt Engineering for LLMs
+
+> 中文简称：LLM 提示工程
 
 > **一句话理解**: O'Reilly 出品的提示工程系统指南，从基础提示模式到 ReAct、思维链、工具调用全覆盖，并讲解提示的自动化测试与评估，是 Prompt 工程师的标准参考。
 

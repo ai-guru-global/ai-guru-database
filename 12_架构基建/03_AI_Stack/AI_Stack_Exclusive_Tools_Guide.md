@@ -12,12 +12,15 @@ aliases:
   - AI_Stack_Exclusive_Tools_Guide
 sources: []
 
+name_zh: "AI Stack 专属运维工具指南"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # AI Stack 专属运维工具指南
+
+> 中文简称：AI Stack 专属运维工具指南
 
 > **一句话理解**: `stackops` 是 AI Stack 内置运维工具集，用于镜像 hash、版本查询等操作；`aioController` 是 AI Stack 控制引擎核心服务，通过 `systemctl` 管理其生命周期。
 

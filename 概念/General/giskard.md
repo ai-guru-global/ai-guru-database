@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.80
 lifecycle: reviewed
 tier: supporting
+name_zh: "AI 模型测试与评估平台"
 ---
 
 # Giskard
+
+> 中文简称：AI 模型测试与评估平台
 
 [Giskard](https://github.com/Giskard-AI/giskard) 是一个开源的 **AI 模型测试与评估平台**，专注于为 ML 模型和 LLM 应用提供系统化的质量保障。它的核心特色是**自动化漏洞扫描**——像安全扫描器检测代码漏洞一样，自动检测 AI 模型中的偏见、幻觉、注入漏洞、鲁棒性问题等。同时提供 **LLM-as-a-Judge** 评估模式，用大模型来评判大模型的输出质量。
 

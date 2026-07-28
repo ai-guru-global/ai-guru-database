@@ -31,9 +31,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "VLM 2.0 / 视觉语言模型 2.0"
 ---
 
 # VLM 2.0 / 视觉语言模型 2.0
+
+> 中文简称：VLM 2.0 / 视觉语言模型 2.0
 
 > **一句话理解**:VLM 2.0 是 2024-2026 突破"图文 SOTA"的关键——Qwen2.5-VL(72B SOTA)、InternVL 3(78B SOTA)、LLaVA-OneVision(字节 + UW,76B SOTA)、Molmo(AI2,72B 数据透明)、Janus(DeepSeek 解耦视觉编码)。中文 / OCR / 视频 / Agent 全部 SOTA。
 

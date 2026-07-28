@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "知识蒸馏"
 ---
 # 知识蒸馏 (Knowledge Distillation)
+
+> 中文简称：知识蒸馏
 
 ## 内容索引
 
@@ -29,7 +32,7 @@ sources: []
 ## 相关文档
 
 - [[03_深度学习/README|深度学习总览]]
-- [[10_部署推理/Model_Compression/|模型压缩]]
+- [[10_部署推理/03_Inference_Optimization/Model_Compression|模型压缩]]
 - [[05_大模型/09_Reasoning_Models/|推理模型]]
 
 ## 进阶知识拓展

@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "多智能体"
+name_en: "Multi Agent"
 ---
 
 # Multi Agent
+
+> 中文简称：多智能体 ｜ English Name: Multi Agent
 
 ## 文件导航
 

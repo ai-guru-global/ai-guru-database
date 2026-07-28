@@ -10,8 +10,11 @@ aliases:
   - "ai industry applications"
 sources: []
 
+name_zh: "AI 行业应用与产业变革"
 ---
 # AI 行业应用与产业变革
+
+> 中文简称：AI 行业应用与产业变革
 
 ## The Connection
 

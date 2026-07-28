@@ -16,9 +16,12 @@ sources:
   - "ARES: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems (Sun et al., 2024)"
   - "TruLens documentation"
   - "DeepEval documentation"
+name_zh: "RAG 评估框架完全指南"
 ---
 
 # RAG 评估框架完全指南 (RAG Evaluation Framework)
+
+> 中文简称：RAG 评估框架完全指南
 
 > **一句话理解**: RAG 评估的核心在于把检索和生成拆开测量——用 RAGAS 的四大指标量化两个环节的表现，再通过 ARES、TruLens、DeepEval 等框架构建从离线评估到线上监控的完整闭环。
 

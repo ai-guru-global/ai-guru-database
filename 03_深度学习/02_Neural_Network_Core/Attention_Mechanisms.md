@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: core
 sources: []
 
+name_zh: "注意力机制全景"
 ---
 # 注意力机制全景 (Attention Mechanisms)
+
+> 中文简称：注意力机制全景
 
 ## 1. 注意力机制演进
 
@@ -288,6 +291,6 @@ def linear_attention(Q, K, V):
 
 - [[05_大模型/Transformer_Deep_Dive|Transformer 深度解析]]
 - [[05_大模型/05_LLM_Architectures/LLM_Internals_Architecture|大模型架构内幕]]
-- [[03_深度学习/State_Space_Models/|状态空间模型]] — Mamba/RWKV
+- [[概念/LLM/state-space-models|状态空间模型]] — Mamba/RWKV
 - [[10_部署推理/02_Inference_Engines/|推理引擎]] — KV Cache 优化
 - [[01_数学基础/05_Numerical_Methods/Numerical_Stability|数值稳定性]] — Softmax 溢出

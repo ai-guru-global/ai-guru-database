@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.78
 lifecycle: reviewed
 tier: supporting
+name_zh: "分层重要性采样微调"
 ---
 
 # LISA (Layerwise Importance Sampled Adam)
+
+> 中文简称：分层重要性采样微调
 
 [LISA](https://arxiv.org/abs/2403.17919)（Layerwise Importance Sampled Adam）是一种创新的 LLM 微调方法，通过**随机采样模型的少数层级**进行梯度更新，在保持全参数微调效果的同时，将显存消耗降低到与 LoRA 相当的水平。与 LoRA/QLoRA 等方法不同，LISA **不引入任何额外参数**，直接对原始模型权重进行选择性更新。
 

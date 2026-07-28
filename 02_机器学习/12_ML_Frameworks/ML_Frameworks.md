@@ -12,8 +12,11 @@ aliases:
   - ML_Frameworks
 sources: []
 
+name_zh: "ML 框架概览"
 ---
 # ML 框架概览 (ML Frameworks)
+
+> 中文简称：ML 框架概览
 
 > 经典机器学习框架的对比与选型——scikit-learn 是通用首选，XGBoost/LightGBM 统治表格数据竞赛。
 

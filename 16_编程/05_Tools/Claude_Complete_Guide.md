@@ -9,8 +9,11 @@ aliases:
   - Claude_Complete_Guide
 sources: []
 
+name_zh: "Claude 完整指南：模型、提示工程、工具与协议"
 ---
 # Claude 完整指南：模型、提示工程、工具与协议
+
+> 中文简称：Claude 完整指南：模型、提示工程、工具与协议
 
 > 本页面从《Claude 技术指南》13 章内容中提炼核心知识，覆盖模型家族、选型框架、提示工程、Tool Use、MCP 协议、Computer Use 和 Skills 系统。
 

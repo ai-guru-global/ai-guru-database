@@ -11,9 +11,12 @@ aliases:
   - "Applied Scientist 面试指南"
   - "Applied_Scientist Interview Guide"
 sources: []
+name_zh: "Applied Scientist 面试指南"
 ---
 
 # Applied Scientist 面试指南
+
+> 中文简称：Applied Scientist 面试指南
 
 > **一句话理解**: Applied Scientist 是连接前沿研究与商业价值的桥梁——既要具备 Research Scientist 的理论深度，又要有 ML Engineer 的工程落地能力，核心使命是将算法创新转化为可衡量的业务成果。
 
@@ -690,7 +693,7 @@ class SimpleRAG:
 ## Related
 
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 - [[21_面试岗位/Research_Scientist/Research_Scientist|Research Scientist 面试指南]]
 - [[21_面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist 面试指南]]
 - [[21_面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer 面试指南]]

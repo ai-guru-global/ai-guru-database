@@ -10,9 +10,12 @@ aliases:
   - "Diffusion Model Training 2026"
   - Diffusion_Model_Training_2026
 sources: []
+name_zh: "扩散模型训练实战 2026"
 ---
 
 # 扩散模型训练实战 2026 (Diffusion Model Training 2026)
+
+> 中文简称：扩散模型训练实战 2026
 
 > **一句话理解**: 扩散模型训练不是简单地把噪声拟合掉，而是在高维数据分布与可采样潜在空间之间，用去噪目标学习一条稳定、可控、可扩展的生成动力学。
 

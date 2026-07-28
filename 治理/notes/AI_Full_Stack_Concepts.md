@@ -12,8 +12,11 @@ aliases:
   - AI_Full_Stack_Concepts
 sources: []
 
+name_zh: "AI 全链路 Concept 清单"
 ---
 # AI 全链路 Concept 清单
+
+> 中文简称：AI 全链路 Concept 清单
 
 > 从数学原理到 AI Infra 到 AI Agent 的完整概念体系
 > 

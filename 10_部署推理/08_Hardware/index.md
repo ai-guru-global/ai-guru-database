@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "推理硬件"
+name_en: "Hardware"
 ---
 
 # Hardware
+
+> 中文简称：推理硬件 ｜ English Name: Hardware
 
 推理硬件（Inference Hardware）— GPU、NPU、ASIC 等 AI 推理硬件的选型、性能基准与国产芯片适配。
 

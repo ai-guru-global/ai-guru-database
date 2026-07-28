@@ -11,8 +11,11 @@ aliases:
   - Long_Context_Inference_2026
 sources: []
 
+name_zh: "长上下文推理 2026"
 ---
 # 长上下文推理 2026
+
+> 中文简称：长上下文推理 2026
 
 > 上下文从 4K 拉到 1M，最大的变化不是模型能看多少字，而是 KV Cache 把显存吃光了。
 

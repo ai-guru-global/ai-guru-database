@@ -14,9 +14,12 @@ relationships:
   - target: "概念/supply-chain-security"
     type: related_to
 sources: []
+name_zh: "容器安全"
 ---
 
 # Container Security
+
+> 中文简称：容器安全
 
 > **一句话理解**: 容器安全就是确保你的 Docker/K8s 镜像没漏洞、运行时跑在非 root、网络只开放必要的端口。
 

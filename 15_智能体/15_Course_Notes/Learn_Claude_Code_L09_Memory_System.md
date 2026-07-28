@@ -25,8 +25,11 @@ aliases:
   - "Learn Claude Code L09 Memory System"
   - Learn_Claude_Code_L09_Memory_System
 
+name_zh: "Learn Claude Code L09：Memory — 压缩会丢细节，要有"
 ---
 # Learn Claude Code L09：Memory — 压缩会丢细节，要有一层不丢的
+
+> 中文简称：Learn Claude Code L09：Memory — 压缩会丢细节，要有
 
 > **一句话理解**: LLM 没有持久状态，上下文压缩又会丢细节。记忆层用文件系统保存稳定偏好和项目知识，跨压缩、跨会话保留。
 

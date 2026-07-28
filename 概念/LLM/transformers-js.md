@@ -21,9 +21,12 @@ lifecycle: reviewed
 tier: supporting
 created: 2026-06-12
 updated: 2026-07-21
+name_zh: "浏览器端 AI 推理库"
 ---
 
 # Transformers.js
+
+> 中文简称：浏览器端 AI 推理库
 
 [Transformers.js](https://github.com/huggingface/transformers.js) 是 Hugging Face 推出的**浏览器端 AI 推理库**，是 Python 版 `transformers` 库的 JavaScript/TypeScript 等价物。它基于 **ONNX Runtime Web**，让开发者能在浏览器、Node.js、Cloudflare Workers、Deno 等 JavaScript 运行时中**直接运行 Transformer 模型**，无需后端服务器——真正实现"AI 到边缘"。
 

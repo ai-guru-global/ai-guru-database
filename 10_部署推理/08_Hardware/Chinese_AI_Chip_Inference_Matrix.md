@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "国产 AI 芯片推理矩阵"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # 国产 AI 芯片推理矩阵
+
+> 中文简称：国产 AI 芯片推理矩阵
 
 > **一句话理解**: 不同国产芯片有各自的强项——昇腾生态最完整、寒武纪推理卡密度高、海光兼容 CUDA、摩尔线程图形+AI 兼顾；选型要看模型、框架和运维成本。
 

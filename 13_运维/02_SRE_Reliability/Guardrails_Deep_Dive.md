@@ -11,12 +11,15 @@ aliases:
   - Guardrails_Deep_Dive
 sources: []
 
+name_zh: "Guardrails AI: LLM 安全护栏"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Guardrails AI: LLM 安全护栏
+
+> 中文简称：Guardrails AI: LLM 安全护栏
 
 > **一句话理解**: Guardrails AI 是 LLM 安全护栏框架——输入验证、输出过滤、有害内容检测、数据隐私保护，确保 AI 应用安全合规。
 

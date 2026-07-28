@@ -34,9 +34,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "Agent 长期记忆 2.0"
 ---
 
 # Agent 长期记忆 2.0
+
+> 中文简称：Agent 长期记忆 2.0
 
 > **一句话理解**:Agent 长期记忆 2.0 是 2024-2026 突破"上下文窗口 + 单次会话"限制的关键架构——MemGPT 用虚拟分页管理 10M+ token,Zep 用时序知识图谱追踪事实变化,Mem0 用自学习机制从交互中提炼,Letta 把 MemGPT 开源。是 Anthropic Claude Projects / OpenAI Memory / Google NotebookLM 后台的基础设施。
 
@@ -350,7 +353,7 @@ print(related)
 - [[概念/agent-loop|Agent Loop]]
 - [[概念/rag|Rag]]
 - [[概念/vector-database|Vector Database]]
-- [[概念/knowledge-graph|Knowledge Graph]]
+- [[概念/RAG/knowledge-graph|Knowledge Graph]]
 - [[概念/agent-framework|Agent Framework]]
 - [[概念/zep|Zep]]
 - [[概念/mem0|Mem0]]

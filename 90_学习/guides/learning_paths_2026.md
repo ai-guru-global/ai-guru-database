@@ -12,8 +12,11 @@ aliases:
   - learning_paths_2026
 sources: []
 
+name_zh: "AI Guru 学习路径指南"
 ---
 # AI Guru 学习路径指南 (Learning Paths Guide 2026)
+
+> 中文简称：AI Guru 学习路径指南
 
 > **一句话理解**: 学习路径就像 RPG 游戏中的"职业天赋树"——不同角色有不同的技能加点路线，但某些"通用天赋点"（如数学基础、模型评估）是多个职业共享的。选对路线，事半功倍；盲目加点，事倍功半。
 

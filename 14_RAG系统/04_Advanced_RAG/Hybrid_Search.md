@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "混合检索"
 ---
 # 混合检索 (Hybrid Search)
+
+> 中文简称：混合检索
 
 ## 1. 为什么需要混合检索？
 

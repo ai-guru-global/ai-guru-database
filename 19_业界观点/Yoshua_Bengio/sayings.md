@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Yoshua Bengio 关于 AI 的观点"
 ---
 # Yoshua Bengio 关于 AI 的观点 (Yoshua Bengio on AI)
+
+> 中文简称：Yoshua Bengio 关于 AI 的观点
 
 ## 1. AI 风险与治理 (AI Risk & Governance)
 

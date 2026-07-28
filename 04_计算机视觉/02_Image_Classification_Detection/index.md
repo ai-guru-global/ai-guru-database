@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "图像分类与检测"
+name_en: "Image Classification Detection"
 ---
 
 # Image Classification & Detection
+
+> 中文简称：图像分类与检测 ｜ English Name: Image Classification Detection
 
 图像分类与目标检测 — 计算机视觉基础任务，涵盖图像分类、目标检测和定位方法。
 

@@ -6,9 +6,12 @@ summary: ApacheCN 中文 TensorFlow 2.x 学习路线索引，覆盖 Keras 高层
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "ApacheCN TensorFlow 2.x 学习路径"
 ---
 
 # ApacheCN TensorFlow 2.x 学习路径
+
+> 中文简称：ApacheCN TensorFlow 2.x 学习路径
 
 > **一句话理解**: 这是 ApacheCN 中文社区整理的 TensorFlow 2.x 学习路线，强调 eager execution、Keras 与端到端部署。
 

@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "架构基建"
+name_en: "Architecture & Infrastructure"
 ---
 
 # Architecture Infrastructure
+
+> 中文简称：架构基建 ｜ English Name: Architecture & Infrastructure
 
 This page indexes the contents of `架构基建`.
 
@@ -216,3 +220,7 @@ This page indexes the contents of `架构基建`.
 | 故障案例库 | 经验总结 | 问题排查参考 |
 | 技术会议演讲 | 前沿分享 | 趋势了解 |
 | 开源项目 | 代码实现 | 深入学习参考 |
+
+## 相关文档
+
+- [[12_架构基建/04_Kubernetes_Core/kubernetes-pod-orchestration|K8s Pod 编排]]

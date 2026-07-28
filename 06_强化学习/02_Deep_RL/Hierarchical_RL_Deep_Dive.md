@@ -13,8 +13,11 @@ aliases:
   - Hierarchical_RL_Deep_Dive
 sources: []
 
+name_zh: "层次化强化学习深度解析"
 ---
 # 层次化强化学习深度解析 (Hierarchical RL Deep Dive)
+
+> 中文简称：层次化强化学习深度解析
 
 > **一句话理解**: 层次化RL是"分层管理"——高层策略制定子目标（做什么），低层策略执行具体动作（怎么做），通过时间抽象将长horizon任务分解为可管理的子任务，是解决复杂长序列决策的关键架构。
 

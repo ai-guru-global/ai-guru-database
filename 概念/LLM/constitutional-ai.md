@@ -34,9 +34,12 @@ sources:
   - Claude Opus 4.5 发布博客
   - RLAIF 论文
   - Self-Critique 论文
+name_zh: "宪法式 AI / RLAIF"
 ---
 
 # Constitutional AI(宪法式 AI / RLAIF)
+
+> 中文简称：宪法式 AI / RLAIF
 
 ## 一句话总结
 

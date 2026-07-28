@@ -13,9 +13,12 @@ aliases:
   - "AI PM"
   - "ML Product Manager"
 sources: []
+name_zh: "AI Product Manager 面试指南"
 ---
 
 # AI Product Manager 面试指南
+
+> 中文简称：AI Product Manager 面试指南
 
 > **一句话理解**: AI Product Manager 是 AI 技术与用户价值之间的桥梁——既要理解 LLM 和 ML 的能力边界，又能将技术可能性转化为解决真实用户问题的产品体验，同时在不确定性中做出有理有据的产品决策。
 
@@ -472,7 +475,7 @@ AI PM 必须深入理解 LLM 的能力和局限，这是做产品决策的基础
 ## Related
 
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 - [[21_面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist 面试指南]]
 - [[21_面试岗位/AI_Evaluation_Engineer/AI_Evaluation_Engineer|AI Evaluation Engineer 面试指南]]
 - [[21_面试岗位/Prompt_Engineer/Prompt_Engineer|Prompt Engineer 面试指南]]

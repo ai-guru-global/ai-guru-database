@@ -28,8 +28,11 @@ updated: 2026-07-21
 aliases:
   - Qdrant
 
+name_zh: "Rust 向量数据库"
 ---
 # Qdrant
+
+> 中文简称：Rust 向量数据库
 
 > Rust 写的「高性能向量数据库」——部署简单、延迟低，RAG 中型场景的热门选择。
 
@@ -94,7 +97,7 @@ aliases:
 - [[14_RAG系统/03_Vector_Databases/Qdrant_Deep_Dive]] — Qdrant 深度解析
 - [[概念/vector-database]] — 向量数据库
 - [[概念/rag-patterns]] — RAG
-- [[概念/embedding]] — Embedding
+- [[概念/RAG/embedding-models|embedding]] — Embedding
 - [[概念/milvus]] — Milvus
 - [[概念/weaviate]] — Weaviate
 - [[概念/rag-production-architecture|RAG 生产架构]] — 向量库在生产 RAG 中的定位

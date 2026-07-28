@@ -12,9 +12,12 @@ aliases:
   - "AI产品经理2026"
   - "AI PM 2026"
 sources: []
+name_zh: "AI Product Manager 面试指南"
 ---
 
 # AI Product Manager 面试指南 (2026)
+
+> 中文简称：AI Product Manager 面试指南
 
 > **一句话理解**: AI Product Manager 是 AI 技术可能性与用户真实需求之间的翻译官——在模型能力快速迭代的时代，精准判断"AI 能做什么、该做什么、如何让用户受益"，将不确定性转化为可落地的产品策略和商业价值。
 
@@ -866,23 +869,23 @@ Associate PM / APM (0-2年)
 
 - [[AI_Safety_Engineer_2026]] — AI 安全工程师（安全需求协作方）
 - [[Prompt_Engineer_2026]] — 提示工程师（技术执行方）
-- [[AI_Product_Design]] — AI 产品设计方法论
-- [[Data_Flywheel]] — 数据飞轮
-- [[LLM_Evaluation]] — 大模型评估
-- [[AI_Ethics]] — AI 伦理
-- [[EU_AI_Act]] — 欧盟 AI 法案
-- [[Agent_Product_Design]] — Agent 产品设计
-- [[AI_Commercialization]] — AI 商业化
-- [[Product_Metrics]] — 产品指标体系
-- [[A/B_Testing]] — A/B 测试
-- [[Human_AI_Collaboration]] — 人机协作
-- [[AI_Native_Product]] — AI 原生产品
-- [[Model_Capability_Boundary]] — 模型能力边界
-- [[Responsible_AI]] — 负责任 AI
-- [[AI_Governance]] — AI 治理
-- [[Product_Strategy]] — 产品战略
-- [[User_Research]] — 用户研究
-- [[RAG]] — 检索增强生成
-- [[Fine_tuning]] — 模型微调
-- [[AI_Pricing]] — AI 产品定价
-- [[Competitive_Moat]] — 竞争壁垒
+- AI_Product_Design — AI 产品设计方法论
+- Data_Flywheel — 数据飞轮
+- [[08_模型评估/03_LLM_Evaluation/index|LLM_Evaluation]] — 大模型评估
+- [[概念/Safety/ai-ethics|AI_Ethics]] — AI 伦理
+- [[概念/Safety/eu-ai-act|EU_AI_Act]] — 欧盟 AI 法案
+- Agent_Product_Design — Agent 产品设计
+- AI_Commercialization — AI 商业化
+- Product_Metrics — 产品指标体系
+- [[概念/MLOps/ab-testing|A/B 测试]] — A/B 测试
+- Human_AI_Collaboration — 人机协作
+- AI_Native_Product — AI 原生产品
+- Model_Capability_Boundary — 模型能力边界
+- Responsible_AI — 负责任 AI
+- [[概念/Safety/ai-governance|AI_Governance]] — AI 治理
+- Product_Strategy — 产品战略
+- User_Research — 用户研究
+- [[概念/RAG|RAG]] — 检索增强生成
+- [[概念/Training/fine-tuning-techniques|Fine_tuning]] — 模型微调
+- AI_Pricing — AI 产品定价
+- Competitive_Moat — 竞争壁垒

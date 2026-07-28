@@ -15,7 +15,10 @@ aliases:
   - GenAI_L10_Building_Low_Code_AI_Applications
 sources: []
 
+name_zh: "构建低代码 AI 应用程序"
 ---
+> 中文简称：构建低代码 AI 应用程序
+
 ## 学习目标
 
 完成本课后，你将能够：

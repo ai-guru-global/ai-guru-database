@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-21
 sources: []
 tags: [auto-index]
+name_zh: "语音音频 AI"
+name_en: "Speech Audio AI"
 ---
 
 # Speech & Audio AI
+
+> 中文简称：语音音频 AI ｜ English Name: Speech Audio AI
 
 语音与音频 AI（Speech & Audio AI）— ASR、TTS、语音克隆（voice cloning）与音频生成的核心技术。
 
@@ -60,7 +64,7 @@ tags: [auto-index]
 
 - [[05_大模型/index|大模型首页]]
 - [[05_大模型/02_Sequence_Models/index|Sequence Models]]
-- [[概念/speech-recognition|语音识别]]
+- [[概念/General/speech-audio-ai|语音识别]]
 
 ## 统计
 

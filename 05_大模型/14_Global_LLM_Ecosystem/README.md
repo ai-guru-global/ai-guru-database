@@ -8,8 +8,11 @@ updated: 2026-06-02
 tier: supporting
 sources: []
 
+name_zh: "国际大模型生态全景"
 ---
 # 国际大模型生态全景 (Global LLM Ecosystem)
+
+> 中文简称：国际大模型生态全景
 
 > **一句话理解**: 国际五大 AI 巨头就像五大学派——OpenAI 靠 RLHF 开创了 ChatGPT 时代，Google 用原生多模态和百万 Token 上下文构筑 Gemini 帝国，Anthropic 以安全为信仰打造 Constitutional AI，Meta 用开源 LLaMA 点燃社区革命，Mistral 用欧洲工匠精神以小博大——它们共同定义了全球大模型的技术天花板。
 

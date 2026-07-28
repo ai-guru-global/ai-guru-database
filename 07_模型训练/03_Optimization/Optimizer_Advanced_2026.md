@@ -11,8 +11,11 @@ aliases:
   - Optimizer_Advanced_2026
 sources: []
 
+name_zh: "高级优化器"
 ---
 # Advanced Optimizers for LLM Training 2026
+
+> 中文简称：高级优化器
 
 > **一句话理解**: 优化器是训练过程中的"导航仪"——它决定每一步往哪个方向走、走多远，选对优化器就像给登山队配了一位经验丰富的向导，能用最少的步数登顶。
 

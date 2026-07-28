@@ -11,9 +11,12 @@ aliases:
   - "vLLM PagedAttention 架构"
 sources: []
 
+name_zh: "vLLM + PagedAttention 架构链路图"
 ---
 
 # vLLM + PagedAttention 架构链路图
+
+> 中文简称：vLLM + PagedAttention 架构链路图
 
 > **一句话秒懂**: 一张图看懂 vLLM 怎么用 PagedAttention 把 GPU 显存榨干，从而同时服务更多请求、生成更快。
 

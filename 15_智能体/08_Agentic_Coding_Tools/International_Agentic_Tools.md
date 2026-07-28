@@ -11,8 +11,11 @@ aliases:
   - International_Agentic_Tools
 sources: []
 
+name_zh: "国际顶级 Agentic Coding 工具"
 ---
 # 国际顶级 Agentic Coding 工具
+
+> 中文简称：国际顶级 Agentic Coding 工具
 
 > **一句话理解**: 除了 Claude Code 和 Cursor，国际上还有 Aider、Continue、CodeRabbit、Cody 等众多优秀的开源 Agentic Coding 工具，它们各有特色——Aider 以终端为中心、Continue 以 VS Code 扩展见长、CodeRabbit 专注代码审查、Cody 来自 Sourcegraph。
 

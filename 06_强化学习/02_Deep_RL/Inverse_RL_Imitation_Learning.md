@@ -13,8 +13,11 @@ aliases:
   - Inverse_RL_Imitation_Learning
 sources: []
 
+name_zh: "逆强化学习与模仿学习深度解析"
 ---
 # 逆强化学习与模仿学习深度解析 (Inverse RL & Imitation Learning Deep Dive)
+
+> 中文简称：逆强化学习与模仿学习深度解析
 
 > **一句话理解**: 逆强化学习是"看行为猜奖励"——从专家演示中推断奖励函数；模仿学习是"照葫芦画瓢"——直接学习专家策略。两者结合让AI无需手动设计奖励就能从人类演示中学习复杂技能。
 

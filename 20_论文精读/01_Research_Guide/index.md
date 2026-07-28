@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "研究指南"
+name_en: "Research Guide"
 ---
 
 # Research Guide
+
+> 中文简称：研究指南 ｜ English Name: Research Guide
 
 ## 文件导航
 

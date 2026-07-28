@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Yoshua Bengio 2026 Update", "约书亚·本吉奥 2026 动态"]
 sources: []
+name_zh: "约书亚·本吉奥 2026 动态"
 ---
 
 # 约书亚·本吉奥 2026 动态 (Yoshua Bengio 2026 Update)
+
+> 中文简称：约书亚·本吉奥 2026 动态
 
 ## 一句话概括
 

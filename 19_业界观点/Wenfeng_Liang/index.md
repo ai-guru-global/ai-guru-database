@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "梁文锋"
+name_en: "Wenfeng Liang"
 ---
 
 # Wenfeng Liang
+
+> 中文简称：梁文锋 ｜ English Name: Wenfeng Liang
 
 梁文锋是幻方量化联合创始人、DeepSeek 创始人，用 $5.6M 训练出媲美 GPT-4 的模型，以开源和效率震惊全球 AI 界，代表了中国 AI 在芯片受限下的极致创新。
 

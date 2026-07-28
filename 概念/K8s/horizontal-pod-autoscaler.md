@@ -19,9 +19,12 @@ relationships:
   - target: "概念/prometheus"
     type: related_to
 sources: []
+name_zh: "Pod 水平自动扩缩容"
 ---
 
 # Horizontal Pod Autoscaler（HPA）
+
+> 中文简称：Pod 水平自动扩缩容
 
 > **一句话理解**: HPA 是 K8s 的「自动加减副本」机制——负载高了扩 Pod，负载低了缩 Pod，让应用容量随流量弹性变化。
 

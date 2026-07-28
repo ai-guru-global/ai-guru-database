@@ -12,8 +12,11 @@ aliases:
   - LLMOps_2026
 sources: []
 
+name_zh: "LLMOps 2026：大模型时代的 MLOps 升级"
 ---
 # LLMOps 2026：大模型时代的 MLOps 升级
+
+> 中文简称：LLMOps 2026：大模型时代的 MLOps 升级
 
 > **一句话理解**: LLMOps 是 MLOps 在大模型时代的升级版——当模型从「固定权重的预测器」变成「由 Prompt + 模型 + RAG 三层动态组合的系统」，运维对象、评估方式、成本结构都发生了根本性变化。
 

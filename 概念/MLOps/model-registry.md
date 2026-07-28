@@ -21,9 +21,12 @@ lifecycle: reviewed
 tier: core
 created: 2026-06-16
 updated: 2026-07-21
+name_zh: "模型仓库"
 ---
 
 # 模型仓库 (Model Registry)
+
+> 中文简称：模型仓库
 
 > 模型的"应用商店"——版本管理、元数据追踪、一键部署的中心枢纽。
 

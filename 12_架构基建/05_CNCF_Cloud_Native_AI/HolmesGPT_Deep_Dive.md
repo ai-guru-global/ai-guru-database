@@ -12,8 +12,11 @@ aliases:
   - HolmesGPT_Deep_Dive
 sources: []
 
+name_zh: "HolmesGPT: AI 事故调查员"
 ---
 # HolmesGPT: AI 事故调查员
+
+> 中文简称：HolmesGPT: AI 事故调查员
 
 > **一句话理解**: HolmesGPT 是 CNCF 沙箱级的「AI 事故调查员」——被告警触发后，它会主动去拉日志/指标、执行 kubectl 命令和 Runbook、关联多源可观测数据，产出根因+证据+修复建议，和 K8sGPT 的「扫集群」互补。
 

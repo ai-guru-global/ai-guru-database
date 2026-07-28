@@ -21,8 +21,11 @@ aliases:
 sources:
   - "https://www.oreilly.com/library/view/ai-engineering/9781098166298/"
 
+name_zh: "Stage 5: 职业化"
 ---
 # Stage 5: 职业化
+
+> 中文简称：Stage 5: 职业化
 
 > **"技术能力让你入门，职业素养让你走远——真正的影响力来自把技术转化为团队和业务价值。"**
 >

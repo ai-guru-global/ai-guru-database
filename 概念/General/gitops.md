@@ -17,9 +17,12 @@ relationships:
   - target: "概念/flux"
     type: implemented_by
 sources: []
+name_zh: "GitOps 持续交付"
 ---
 
 # GitOps
+
+> 中文简称：GitOps 持续交付
 
 > **一句话理解**: GitOps 就是「Git 里有什么，集群里就应该有什么」，所有变更走 PR，所有回滚用 `git revert`。`
 

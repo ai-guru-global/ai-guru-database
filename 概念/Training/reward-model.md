@@ -6,9 +6,12 @@ aliases:
   - "奖励模型 Reward Model (RLHF/GRPO 中的偏好评估器)"
 summary: "此页面已合并至主卡片。"
 sources: []
+name_zh: "奖励模型 Reward Model"
 ---
 
 # 奖励模型 Reward Model
+
+> 中文简称：奖励模型 Reward Model
 
 > 此页面已合并至 [[概念/Training/reward-modeling|奖励模型（Reward Modeling）]] 主卡片。请前往查看完整内容。
 

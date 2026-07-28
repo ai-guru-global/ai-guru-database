@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "AI 数据分析师"
+name_en: "AI Data Analyst"
 ---
 
 # AI Data Analyst
+
+> 中文简称：AI 数据分析师 ｜ English Name: AI Data Analyst
 
 AI 数据分析师 — 利用 AI 工具与统计学方法进行数据分析、可视化和商业洞察输出。
 

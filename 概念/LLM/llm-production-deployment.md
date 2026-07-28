@@ -12,9 +12,12 @@ aliases:
   - "LLM 上线"
   - "大模型推理服务化"
 sources: []
+name_zh: "LLM 生产部署"
 ---
 
 # LLM 生产部署（LLM Production Deployment）
+
+> 中文简称：LLM 生产部署
 
 ## 一句话定义
 
@@ -29,7 +32,7 @@ sources: []
 把模型封装为高可用推理服务是生产部署的第一步。关键决策包括：
 
 - **推理引擎选型**：使用专用引擎替代裸 HuggingFace Transformers，可获得 10-30 倍吞吐提升。常见选择有 [[概念/vllm|vLLM]]、TGI、TensorRT-LLM、SGLang 等。
-- **并行与解码优化**：张量 / 流水线 / 数据并行按模型大小组合；连续批处理、[[概念/pagedattention|PagedAttention]]、KV Cache 管理、推测解码是提升 GPU 利用率的核心手段。
+- **并行与解码优化**：张量 / 流水线 / 数据并行按模型大小组合；连续批处理、[[概念/LLM/paged-attention|PagedAttention]]、KV Cache 管理、推测解码是提升 GPU 利用率的核心手段。
 
 ### 2. 网关与流量治理（LLM Gateway）
 
@@ -112,11 +115,11 @@ LLM 应用的可观测性远超传统 APM，需覆盖成本（$/请求、缓存�
 
 - [[概念/llm-inference-engine|LLM 推理引擎]]
 - [[概念/observability|AI 可观测性]]
-- [[概念/llm-gateway|LLM 网关]]
+- [[概念/Inference/model-gateway|LLM 网关]]
 - [[概念/guardrails|护栏（Guardrails）]]
 - [[概念/finops|FinOps]]
 - [[概念/model-serving|模型服务化]]
-- [[概念/canary-deployment|灰度发布]]
+- [[概念/MLOps/argo-rollouts|灰度发布]]
 
 ---
 

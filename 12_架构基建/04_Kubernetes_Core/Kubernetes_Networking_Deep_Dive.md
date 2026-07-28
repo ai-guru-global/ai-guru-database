@@ -11,9 +11,12 @@ aliases:
   - "K8s Networking Deep Dive"
   - "Kubernetes_Networking_Deep_Dive"
 sources: []
+name_zh: "Kubernetes 网络深度解析"
 ---
 
 # Kubernetes 网络深度解析
+
+> 中文简称：Kubernetes 网络深度解析
 
 > **一句话理解**: Kubernetes 网络是一套「每个 Pod 都有独立 IP、全集群扁平可达、Service 提供稳定访问入口、CNI 负责底层连通」的容器网络体系，是 K8s 工单中「连不上、解析不了、访问超时」问题的核心排查域。
 

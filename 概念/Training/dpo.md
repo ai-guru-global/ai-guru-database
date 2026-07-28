@@ -23,7 +23,7 @@ sources:
 summary: "DPO（Direct Preference Optimization）是 Rafailov et al. 2023 提出的简化对齐方法，将 PPO 的两阶段（SFT + RM + PPO）合并为单阶段，直接用偏好数据训练，无需训练 Reward Model 和 Critic。"
 lifecycle: reviewed
 tier: core
-updated: 2026-07-21
+updated: 2026-07-25
 provenance:
   extracted: 0.92
   inferred: 0.06
@@ -31,9 +31,12 @@ provenance:
 base_confidence: 0.95
 created: 2026-06-24
 updated: 2026-06-24
+name_zh: "直接偏好优化"
 ---
 
 # DPO（Direct Preference Optimization）
+
+> 中文简称：直接偏好优化
 
 ## 核心要点
 
@@ -170,6 +173,16 @@ llamafactory-cli train \
 - **LLaMA-Factory**：中文友好
 - **OpenRLHF**：大规模分布式
 - **Llama-3** 官方训练脚本：使用 DPO
+
+## 源码级洞察（基于 trl v1.9.0 归档源码）
+
+归档位置：`code/llm-frameworks/trl-v1.9.0/`（PyPI sdist）。
+
+- **DPOTrainer 是核心六 Trainer 之一**：`trainer/dpo_trainer.py` L410 `DPOTrainer`，而 PPO 已退入 experimental——DPO 在工程上已取代 PPO 成为偏好对齐默认选择。
+- **多 loss 加权组合**：L762-763 支持 `loss_type` 传入列表 + `loss_weights` 加权（如 sigmoid/IPO/hinge 混合），DPO 变种在同一个 Trainer 内部统一实现而非各自建类。
+- **参考模型的三种省显存策略**：① `precompute_ref_log_probs`（L1178 `compute_ref_log_probs`）预算 ref logprobs 后释放 ref 模型；② LoRA 训练时直接 disable adapter 当作 ref（L1256 附近注释），无需第二份权重；③ Liger fused kernel（L1221 `_compute_loss_liger`）融合计算降峰值显存。
+
+详见 [[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide]] 第 6 节。
 
 ## Related
 

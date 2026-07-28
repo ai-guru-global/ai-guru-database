@@ -16,8 +16,11 @@ aliases:
   - "LLM Gateway Comparison 2026"
   - LLM_Gateway_Comparison_2026
 
+name_zh: "LLM 网关对比 2026"
 ---
 # LLM 网关对比 2026: LiteLLM vs Portkey vs Kong
+
+> 中文简称：LLM 网关对比 2026
 
 > **一句话理解**: LLM 网关是统一管理多 LLM 供应商的关键基础设施,本文对比 LiteLLM、Portkey、Kong 等主流方案的架构与适用场景。
 

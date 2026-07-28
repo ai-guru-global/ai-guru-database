@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "Agent Harness 工程"
 ---
 # Agent Harness 工程
+
+> 中文简称：Agent Harness 工程
 
 > **核心公式**: Agent = Model + Harness。Harness 是围绕模型智能构建的一切工程系统——包括 System Prompt、工具、沙箱、编排逻辑、状态管理、验证回路。
 

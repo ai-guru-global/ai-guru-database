@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "智能体评估测试"
+name_en: "Agent Evaluation"
 ---
 
 # Agent Evaluation
+
+> 中文简称：智能体评估测试 ｜ English Name: Agent Evaluation
 
 ## 文件导航
 

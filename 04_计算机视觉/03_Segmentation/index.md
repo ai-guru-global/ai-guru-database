@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "图像分割"
+name_en: "Segmentation"
 ---
 
 # Segmentation
+
+> 中文简称：图像分割 ｜ English Name: Segmentation
 
 图像分割（Image Segmentation）— 语义分割（semantic segmentation）、实例分割（instance segmentation）与全景分割（panoptic segmentation）。
 

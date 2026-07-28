@@ -21,8 +21,11 @@ aliases:
   - "Why Machines Learn"
   - "why machines learn"
 
+name_zh: "机器为何学习"
 ---
 # Why Machines Learn
+
+> 中文简称：机器为何学习
 
 > **一句话理解**: 前沿科技作家 Anil Ananthaswamy 的新作，用历史叙事与直觉讲解 ML 数学之美（从最小二乘法到深度学习与生成模型），是培养数学直觉的绝佳科普读物。
 

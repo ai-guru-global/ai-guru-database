@@ -9,8 +9,11 @@ aliases:
   - Context_Engineering_Patterns
 sources: []
 
+name_zh: "上下文工程技术模式与深度实践"
 ---
 # 上下文工程技术模式与深度实践
+
+> 中文简称：上下文工程技术模式与深度实践
 
 > 本页是 [[Context_Engineering_Guide]] 的技术深度补充，聚焦具体实现模式、架构决策和反模式治理。
 

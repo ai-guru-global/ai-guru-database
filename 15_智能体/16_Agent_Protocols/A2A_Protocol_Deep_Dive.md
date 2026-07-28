@@ -14,8 +14,11 @@ aliases:
   - "A2A Protocol Deep Dive"
   - A2A_Protocol_Deep_Dive
 
+name_zh: "Agent-to-Agent 协议 深度解读"
 ---
 # Agent-to-Agent 协议 (A2A) 深度解读
+
+> 中文简称：Agent-to-Agent 协议 深度解读
 
 > **一句话理解**: Google 提出的 Agent-to-Agent (A2A) 协议,定义了 AI Agent 之间互操作的开放标准,是多 Agent 系统的通信基石。
 

@@ -14,7 +14,10 @@ aliases:
   - ModelScope_Model_Index_Qwen
 sources: []
 
+name_zh: "ModelScope 模型索引 · 通义千问"
 ---
+> 中文简称：ModelScope 模型索引 · 通义千问
+
 ## 阿里 · 通义千问 (Qwen)
 
 Namespace: `qwen` · 组织主页: [https://modelscope.cn/organization/qwen](https://modelscope.cn/organization/qwen) · 模型数: **437**

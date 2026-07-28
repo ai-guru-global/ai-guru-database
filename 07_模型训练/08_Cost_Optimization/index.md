@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "成本优化"
+name_en: "Cost Optimization"
 ---
 
 # Cost Optimization
+
+> 中文简称：成本优化 ｜ English Name: Cost Optimization
 
 ## 文件导航
 

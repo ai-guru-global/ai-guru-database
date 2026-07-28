@@ -42,8 +42,11 @@ aliases:
   - "Model Evaluation"
   - "model evaluation"
 
+name_zh: "模型评估"
 ---
 # 模型评估
+
+> 中文简称：模型评估
 
 ## 核心要点
 

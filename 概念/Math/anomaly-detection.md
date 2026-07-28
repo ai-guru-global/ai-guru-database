@@ -22,9 +22,12 @@ lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-07-21T00:00:00Z
+name_zh: "异常检测"
 ---
 
 # 异常检测
+
+> 中文简称：异常检测
 
 异常检测（Anomaly Detection）也称离群点检测，目标是从数据中识别与大多数数据显著不同的样本。通常无标签或极少标签，属于无监督学习范畴。核心挑战包括：定义"异常"、标注缺失、极度不平衡（异常样本极少）、异常模式演化、误报与漏报成本权衡。
 
@@ -199,6 +202,6 @@ scores = lof.negative_outlier_factor_
 - [[概念/Math/unsupervised-learning|无监督学习]] — 无监督基础
 - [[概念/Math/time-series-analysis|时序分析]] — 时序异常
 - [[概念/Math/feature-engineering|特征工程]] — 特征设计
-- [[概念/MLOps/monitoring|监控]] — 生产监控
+- [[概念/MLOps/observability|监控]] — 生产监控
 
 > ℹ️ 异常检测是数据质量和安全的关键，无监督方法最常用。

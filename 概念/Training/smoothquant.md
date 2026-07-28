@@ -23,15 +23,18 @@ provenance:
 base_confidence: 0.8
 lifecycle: reviewed
 lifecycle_changed: 2026-06-16
-updated: 2026-07-21
+updated: 2026-07-25
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
 aliases:
   - Smoothquant
 
+name_zh: "平滑量化"
 ---
 # SmoothQuant
+
+> 中文简称：平滑量化
 
 ## 核心要点
 
@@ -93,6 +96,16 @@ Y = (X / s) · (W × s)
 - SmoothQuant 与 FP8、INT4 更低精度量化的结合。
 - 在长上下文、MoE 模型上的效果稳定性。
 - 与 TensorRT-LLM、vLLM、SGLang 等推理引擎的深度集成。
+
+## 源码级洞察（基于 llm-compressor v0.12.0 归档源码）
+
+归档位置：`code/llm-frameworks/llm-compressor-v0.12.0/`（PyPI sdist）。
+
+- **SmoothQuantModifier**：`src/llmcompressor/modifiers/transform/smoothquant/base.py` L61 `SmoothQuantModifier(Modifier)`——与 AWQ 同居 `modifiers/transform/` 目录，工程分类上同属"变换型"方法：先把激活离群值难度迁移到权重，再交给后续 `QuantizationModifier`（`modifiers/quantization/quantization/base.py` L16）做 W8A8 量化。
+- **与量化解耦**：SmoothQuant 本身不量化，只做尺度迁移——这解释了为什么它总是以"SmoothQuant + 某量化方法"的配方组合出现（两个 Modifier 写进同一份 Recipe，`recipe/recipe.py` L27）。
+- **逐层校准**：由 `SequentialPipeline`（`pipelines/sequential/pipeline.py` L52）逐层捕获激活峰值，单卡可校准大模型。
+
+详见 [[10_部署推理/05_Quantization/Quantization_Techniques_2026]] 第 8 节。
 
 ## Related
 
@@ -156,7 +169,7 @@ Y = (X / s) · (W × s)
 - [[概念/Training/awq|AWQ]] — 激活感知量化
 - [[概念/Training/nf4|NF4]] — 4-bit 量化
 - [[概念/Training/mixed-precision|Mixed Precision]] — 混合精度
-- [[概念/Inference/model-quantization|Model Quantization]] — 模型量化总览
+- [[概念/Inference/quantization|Model Quantization]] — 模型量化总览
 - [[概念/Training/pruning|Pruning]] — 剪枝
 
 > ℹ️ SmoothQuant 是 2026 年 INT8 推理的主流方案，平滑激活分布后量化精度损失 < 1% ，配合 TensorRT-LLM 可获最佳性能。

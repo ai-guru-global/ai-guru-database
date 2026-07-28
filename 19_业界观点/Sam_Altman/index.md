@@ -13,9 +13,13 @@ sources:
   - "https://openai.com/blog/planning-for-agi-and-beyond"
   - "https://www.commerce.senate.gov/2023/5/sam-altman-testimony-artificial-intelligence"
   - "https://blog.samaltman.com/posts/what-i-wish-someone-had-told-me"
+name_zh: "Sam Altman 人物索引"
+name_en: "Sam Altman"
 ---
 
 # Sam Altman 人物索引
+
+> 中文简称：Sam Altman 人物索引 ｜ English Name: Sam Altman
 
 > **一句话概括**: OpenAI CEO、前 Y Combinator 总裁——将生成式 AI 从实验室推向全球亿万用户，坚定信仰 Scaling Laws 与 AGI 愿景，同时主动呼吁政府监管的科技企业家。
 

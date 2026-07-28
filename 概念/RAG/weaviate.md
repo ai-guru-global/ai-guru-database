@@ -28,8 +28,11 @@ updated: 2026-07-21
 aliases:
   - Weaviate
 
+name_zh: "AI 原生向量数据库"
 ---
 # Weaviate
+
+> 中文简称：AI 原生向量数据库
 
 > 内置 AI 能力的「AI 原生向量数据库」——不只是存向量，还能自动做向量化。
 
@@ -95,7 +98,7 @@ aliases:
 - [[14_RAG系统/03_Vector_Databases/Weaviate_Deep_Dive]] — Weaviate 深度解析
 - [[概念/vector-database]] — 向量数据库
 - [[概念/rag-patterns]] — RAG
-- [[概念/embedding]] — Embedding
+- [[概念/RAG/embedding-models|embedding]] — Embedding
 - [[概念/milvus]] — Milvus
 - [[概念/qdrant]] — Qdrant
 - [[概念/rag-production-architecture|RAG 生产架构]] — 向量库在生产 RAG 管线中的定位

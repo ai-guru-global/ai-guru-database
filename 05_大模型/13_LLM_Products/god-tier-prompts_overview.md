@@ -14,8 +14,11 @@ aliases:
   - "god tier prompts overview"
   - god-tier-prompts_overview
 
+name_zh: "God Tier Prompts 概览"
 ---
 # God Tier Prompts 概览
+
+> 中文简称：God Tier Prompts 概览
 
 > **一句话理解**: 高质量提示词集合与社区平台，提供经过社区验证的高效提示词模板，是提示词工程实践灵感的参考来源。
 

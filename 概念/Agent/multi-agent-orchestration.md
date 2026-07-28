@@ -30,8 +30,11 @@ aliases:
   - "multi agent orchestration"
   - "多智能体编排"
 
+name_zh: "多 Agent 编排"
 ---
 # 多 Agent 编排（Multi-Agent Orchestration）
+
+> 中文简称：多 Agent 编排
 
 > 单 Agent 像“一人公司”什么都干但都不精；多 Agent 编排像“专业团队”——有产品经理、工程师、QA，分工协作完成大项目。
 

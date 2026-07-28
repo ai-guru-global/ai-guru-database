@@ -10,9 +10,12 @@ aliases:
   - "Evaluation Visualization"
   - "Metrics Visualization"
 sources: []
+name_zh: "评估结果可视化"
 ---
 
 # 评估结果可视化 (Evaluation Result Visualization)
+
+> 中文简称：评估结果可视化
 
 > 模型评估结果的可视化最佳实践——从混淆矩阵到 ROC 曲线、从性能对比到错误分析，让评估结果一目了然。
 
@@ -324,7 +327,7 @@ plot_llm_benchmark_radar(benchmark_results)
 - [[Unified_Benchmark_Comparison]]: 基准测试对比
 - [[AI_System_Dashboard]]: 系统仪表盘
 - [[../../08_模型评估/02_Benchmarks/LLM_Benchmark_Suite_2026|LLM 基准套件]] — 评估可视化数据来源
-- [[../../08_模型评估/03_LLM_Evaluation|LLM 评估]] — 评估方法论
+- [[08_模型评估/03_LLM_Evaluation|LLM 评估]] — 评估方法论
 - [[../../11_模型运维/08_Observability/ML_Observability_SLO|ML 可观测性 SLO]] — 运维指标可视化
 - [[../../04_计算机视觉/README_for_dummy|CV 入门]] — CV 评估可视化场景
 

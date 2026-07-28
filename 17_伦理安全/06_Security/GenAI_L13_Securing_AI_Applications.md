@@ -15,7 +15,10 @@ aliases:
   - GenAI_L13_Securing_AI_Applications
 sources: []
 
+name_zh: "保护生成式AI应用程序"
 ---
+> 中文简称：保护生成式AI应用程序
+
 ## 学习目标
 
 完成本课后，你将了解：

@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "评估引擎"
+name_en: "evaluator"
 ---
 
 # Evaluator
+
+> 中文简称：评估引擎 ｜ English Name: evaluator
 
 评估器核心代码 — 实现 LLM-as-Judge、安全检查（safety check）、多维度打分等 Agent 输出质量评估逻辑。
 

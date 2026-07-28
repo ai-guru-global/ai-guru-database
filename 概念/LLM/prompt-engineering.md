@@ -25,8 +25,11 @@ aliases:
   - "Prompt Engineering"
   - "prompt engineering"
 
+name_zh: "提示工程"
 ---
 # 提示工程
+
+> 中文简称：提示工程
 
 ## 概述
 
@@ -185,7 +188,7 @@ Prefix Caching缓存共享的System Prompt前缀；LLMLingua等工具压缩长Pr
 - [[概念/LLM/context-engineering|上下文工程]]
 - [[概念/LLM/promptfoo|Promptfoo 测试]]
 - [[概念/Agent/react-agent|ReAct Agent]]
-- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering_Guide_2026|Prompt 工程指南 2026]]
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering_Complete_Guide|Prompt 工程指南 2026]]
 
 ## Prompt 模板示例
 

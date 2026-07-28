@@ -33,9 +33,12 @@ tier: core
 created: 2026-07-23
 updated: 2026-07-23
 sources: []
+name_zh: "Yi / 零一万物模型系列"
 ---
 
 # Yi / 零一万物模型系列
+
+> 中文简称：Yi / 零一万物模型系列
 
 > **一句话理解**:李开复带着 Google/微软/Sinovation 班底,在 2023 年中"千模大战"中以"中文底座 SOTA"姿态杀出的开源系列——Yi-34B 曾登顶 Hugging Face 全球榜,Yi-Lightning 至今仍是中文企业级落地的"高性价比"代表。
 

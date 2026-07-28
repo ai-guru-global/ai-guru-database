@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "国内智能体生态"
+name_en: "Agent Ecosystem CN"
 ---
 
 # Agent Ecosystem CN
+
+> 中文简称：国内智能体生态 ｜ English Name: Agent Ecosystem CN
 
 中国智能体生态 — 国内主流 AI 智能体产品、开源项目与行业格局分析。
 

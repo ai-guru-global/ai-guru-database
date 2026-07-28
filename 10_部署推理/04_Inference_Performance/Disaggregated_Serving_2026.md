@@ -16,9 +16,12 @@ sources:
   - "Splitwise: Efficient Generative LLM Inference Using Phase Splitting (ISCA 2024)"
   - "SARATHI: Efficient LLM Inference by Piggybacking Decodes with Chunked Prefills (2024)"
   - "vLLM V1 / SGLang Disaggregated Serving 2025-2026"
+name_zh: "2026 推理服务前沿架构"
 ---
 
 # 2026 推理服务前沿架构 (Disaggregated Serving 2026)
+
+> 中文简称：2026 推理服务前沿架构
 
 > **一句话概括**：2026 年 LLM 推理服务从前缀共享 / 连续批处理演进到 **Prefill-Decode 分离、Chunked Prefill、Decode 池化** 的 disaggregated 架构——用一个基座模型拆出两个物理资源池，靠 KV Cache 跨节点迁移把"算力"和"带宽"两类瓶颈彻底解耦。
 

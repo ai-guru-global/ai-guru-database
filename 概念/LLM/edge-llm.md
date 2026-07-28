@@ -28,8 +28,11 @@ aliases:
   - "端侧大模型"
   - "On-device LLM"
 
+name_zh: "端侧 LLM"
 ---
 # 端侧 LLM (Edge LLM)
+
+> 中文简称：端侧 LLM
 
 > 让 LLM 跑在手机/PC/嵌入式设备上——离线可用、隐私安全、低延迟。
 

@@ -10,8 +10,11 @@ aliases:
   - LLM_Internals_Architecture
 sources: []
 
+name_zh: "大模型架构核心：从注意力到完整 Transformer"
 ---
 # 大模型架构核心：从注意力到完整 Transformer
+
+> 中文简称：大模型架构核心：从注意力到完整 Transformer
 
 > **核心命题**：Transformer 为何用纯注意力取代 RNN/CNN？注意力、位置编码、残差、归一化等组件各自解决了什么根本问题？
 

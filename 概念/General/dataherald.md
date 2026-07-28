@@ -19,9 +19,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "自然语言转 SQL 引擎"
 ---
 
 # DataHerald
+
+> 中文简称：自然语言转 SQL 引擎
 
 [DataHerald](https://github.com/Dataherald/dataherald) 是一个开源的 **自然语言转 SQL (NL2SQL) 引擎**，让非技术人员能够通过自然语言直接查询数据库，无需编写 SQL。它通过 LLM 理解用户的自然语言问题，结合数据库 Schema 理解，自动生成准确的 SQL 查询并返回结果。
 

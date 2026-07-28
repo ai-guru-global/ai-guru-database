@@ -12,9 +12,13 @@ aliases:
 sources:
   - "https://www.gatesnotes.com/The-Age-of-AI-Has-Begun"
   - "https://www.gatesfoundation.org/"
+name_zh: "Bill Gates 人物索引"
+name_en: "Bill Gates"
 ---
 
 # Bill Gates 人物索引
+
+> 中文简称：Bill Gates 人物索引 ｜ English Name: Bill Gates
 
 > **一句话概括**: 微软联合创始人（1975）、前 CEO（1975-2000）和董事长（1981-2014）、Bill & Melinda Gates 基金会联合主席——将 AI 称为"自图形用户界面 (GUI) 以来最重要的技术进步"，认为 AI 的革命性堪比手机和互联网。他特别关注 AI 如何减少而非扩大全球不平等，推动 AI 在医疗、教育和气候变化领域的应用。
 
@@ -158,6 +162,7 @@ Gates 的独特之处是**关注 AI 的全球公益应用而非商业竞争**。
 - [[19_业界观点/Jensen_Huang/about\|Jensen Huang]]
 - [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views\|中美 AI 竞赛]]
 - [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[19_业界观点/Bill_Gates/Bill_Gates_2026_Update\|2026 动态更新]]
 - [[19_业界观点/index\|业界观点首页]]
 
 ---

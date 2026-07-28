@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "治理合规"
+name_en: "Governance"
 ---
 
 # Governance
+
+> 中文简称：治理合规 ｜ English Name: Governance
 
 ## 文件导航
 

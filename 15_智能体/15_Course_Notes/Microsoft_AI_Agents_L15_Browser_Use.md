@@ -28,8 +28,11 @@ aliases:
   - "Microsoft AI Agents L15 Browser Use"
   - Microsoft_AI_Agents_L15_Browser_Use
 
+name_zh: "L15 浏览器使用 Agent ：Browser-Use + Playwrigh"
 ---
 # L15 浏览器使用 Agent (CUA)
+
+> 中文简称：L15 浏览器使用 Agent ：Browser-Use + Playwrigh
 
 > 来源：[Microsoft AI Agents for Beginners / 15-browser-use](https://github.com/microsoft/ai-agents-for-beginners/tree/main/15-browser-use)
 

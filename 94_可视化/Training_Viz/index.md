@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-23
 sources: []
 tags: [training-visualization, index, navigation]
+name_zh: "训练可视化"
+name_en: "Training Viz"
 ---
 
 # 训练可视化（Training Visualization）
+
+> 中文简称：训练可视化 ｜ English Name: Training Viz
 
 > **一句话理解**: 训练可视化让你"看见"模型学习的过程——从 Loss 曲线、梯度范数到学习率调度，把黑盒训练变成可监控、可诊断、可对比的工程。
 

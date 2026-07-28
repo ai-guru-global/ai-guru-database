@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-10
 sources: []
+name_zh: "概念图谱"
+name_en: "Concept Graph"
 ---
 
 # Concepts
+
+> 中文简称：概念图谱 ｜ English Name: Concept Graph
 
 This page indexes the contents of `概念`. Total: 584 files across 12 subdomains.
 
@@ -14,7 +18,7 @@ This page indexes the contents of `概念`. Total: 584 files across 12 subdomain
 
 | 子域 | 文件数 | 说明 |
 |------|------|------|
-| [[概念/General/]] | 2 | 顶层索引(index + README),各子域分目录组织 |
+| [[概念/General/index|概念/General 域索引]] | 151 | 已建 12 个逻辑语义子域导航 (2026-07) |
 | [[概念/LLM/]] | 116 | 大语言模型架构、训练、对齐 |
 | [[概念/K8s/]] | 70 | Kubernetes 与云原生 AI 基础设施 |
 | [[概念/Training/]] | 49 | 模型训练、分布式训练、优化 |
@@ -581,3 +585,31 @@ This page indexes the contents of `概念`. Total: 584 files across 12 subdomain
 - [[概念/yi-series|Yi Series]]
 - [[概念/zep|Zep]]
 - [[概念/zhipu-glm|Zhipu Glm]]
+
+## 新增概念卡登记 (2026-07)
+
+- [[概念/Agent/agent-protocols|agent-protocols]]
+- [[概念/Agent/browser-agent|browser-agent]]
+- [[概念/Agent/multi-agent-orchestration-2|multi-agent-orchestration-2]]
+- [[概念/GPU/edge-ai-chips|edge-ai-chips]]
+- [[概念/GPU/infiniband-roce-2|infiniband-roce-2]]
+- [[概念/General/ai-future-trends|ai-future-trends]]
+- [[概念/General/ai-technology-landscape|ai-technology-landscape]]
+- [[概念/General/model-evaluation|model-evaluation]]
+- [[概念/General/online-evaluation|online-evaluation]]
+- [[概念/General/synthetic-data|synthetic-data]]
+- [[概念/General/test-time-compute|test-time-compute]]
+- [[概念/Inference/prefill-decode-disaggregation|prefill-decode-disaggregation]]
+- [[概念/Inference/prompt-cache-2|prompt-cache-2]]
+- [[概念/K8s/k8s-ai-llm-workload|k8s-ai-llm-workload]]
+- [[概念/K8s/k8s-policy-ai|k8s-policy-ai]]
+- [[概念/MLOps/data-pipeline-2|data-pipeline-2]]
+- [[概念/Math/online-learning|online-learning]]
+- [[概念/RAG/multimodal-rag|multimodal-rag]]
+- [[概念/RAG/reranker-2|reranker-2]]
+- [[概念/Safety/ai-audit-traceability|ai-audit-traceability]]
+- [[概念/Training/curriculum-learning|curriculum-learning]]
+- [[概念/Vision/autonomous-driving-vision|autonomous-driving-vision]]
+- [[概念/Vision/face-recognition|face-recognition]]
+- [[概念/Vision/medical-imaging-ai|medical-imaging-ai]]
+- [[概念/Vision/optical-flow|optical-flow]]

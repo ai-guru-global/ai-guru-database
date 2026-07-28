@@ -38,8 +38,11 @@ updated: 2026-06-25 00:00:00+00:00
 aliases:
   - Gpustack
 
+name_zh: "GPU 集群管理平台"
 ---
 # GPUStack
+
+> 中文简称：GPU 集群管理平台
 
 ## 核心要点
 

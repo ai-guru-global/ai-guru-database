@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "课程学习"
 ---
 # 课程学习 (Curriculum Learning)
+
+> 中文简称：课程学习
 
 ## 1. 核心思想
 
@@ -253,6 +256,6 @@ FINETUNE_CURRICULUM = {
 
 - [[07_模型训练/03_Optimization/|优化器]]
 - [[07_模型训练/04_Distributed_Training/|分布式训练]]
-- [[07_模型训练/Pretraining_Playbook/|预训练手册]]
+- [[07_模型训练/01_Training_Fundamentals/Pretraining_Playbook|预训练手册]]
 - [[06_强化学习/04_RL_Applications/RL_for_LLM_Reasoning|推理 RL]]
 - [[05_大模型/09_Reasoning_Models/Reasoning_RL_Training_Pipeline|推理训练流水线]]

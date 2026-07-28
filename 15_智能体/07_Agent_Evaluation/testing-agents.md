@@ -22,9 +22,12 @@ aliases:
   - "Testing Agents"
   - "testing agents"
 
+name_zh: "测试 × Agent: 非确定性系统的测试方法论冲突"
 ---
 
 # 测试 × Agent: 非确定性系统的测试方法论冲突
+
+> 中文简称：测试 × Agent: 非确定性系统的测试方法论冲突
 
 ## The Connection
 

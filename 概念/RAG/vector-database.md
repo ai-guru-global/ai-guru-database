@@ -39,8 +39,11 @@ aliases:
   - "Vector Database"
   - "vector database"
 
+name_zh: "向量数据库"
 ---
 # 向量数据库
+
+> 中文简称：向量数据库
 
 ## 核心要点
 
@@ -130,7 +133,7 @@ IVF（Inverted File Index）将向量空间划分为聚类中心，查询时只�
 - [[概念/qdrant]] — Qdrant 高性能向量库
 - [[概念/weaviate]] — Weaviate AI 原生向量库
 - [[概念/chroma]] — Chroma 嵌入式向量库
-- [[概念/embedding]] — Embedding 模型
+- [[概念/RAG/embedding-models|embedding]] — Embedding 模型
 - [[概念/rag-production-architecture|RAG 生产架构]] — 向量库选型指南
 - [[治理/rag-vector-database]] — RAG 系统 × 向量数据库 (共享: milvus, qdrant, vector-database)
 
@@ -189,7 +192,7 @@ IVF（Inverted File Index）将向量空间划分为聚类中心，查询时只�
 - [[概念/RAG/ivf|IVF]] — 倒排索引算法
 - [[概念/RAG/embedding-models|Embedding Models]] — 嵌入模型选型
 - [[概念/RAG/hybrid-search|Hybrid Search]] — 混合检索
-- [[14_RAG系统/03_Vector_Databases/Vector_Databases|向量数据库专题]]
+- [[14_RAG系统/03_Vector_Databases/rag-vector-database|向量数据库专题]]
 
 > ℹ️ 向量数据库选型核心原则：小规模用 Chroma/pgvector，中规模用 Qdrant/Weaviate，大规模用 Milvus/Pinecone，始终结合量化和混合检索优化成本与效果。
 

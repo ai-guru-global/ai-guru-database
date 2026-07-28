@@ -22,9 +22,12 @@ lifecycle_changed: 2026-05-31
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-05-31T00:00:00Z
+name_zh: "数据结构与算法"
 ---
 
 # 数据结构与算法
+
+> 中文简称：数据结构与算法
 
 高效的算法是实现大规模AI模型训练与推理的基础。从计算图的构建到向量检索，数据结构与算法无处不在。核心挑战包括：transformer-architecture注意力机制的O(n²)复杂度、大模型的存储效率、以及GPU友好的并行算法设计。
 

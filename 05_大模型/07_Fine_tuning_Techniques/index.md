@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-21
 sources: []
+name_zh: "微调技术"
+name_en: "Fine tuning Techniques"
 ---
 
 # Fine Tuning Techniques
+
+> 中文简称：微调技术 ｜ English Name: Fine tuning Techniques
 
 微调技术索引，覆盖 LoRA/QLoRA、SFT、RLHF、DPO 等参数高效微调方法。
 
@@ -16,7 +20,7 @@ sources: []
 
 - **PEFT**: 参数高效微调 (LoRA, QLoRA, DoRA)
 - **对齐技术**: SFT, RLHF, DPO
-- **工具**: Axolotl, Unsloth, ms-swift
+- **工具**: LLaMA-Factory, Axolotl, Unsloth, ms-swift
 - **高级**: 模型合并、Agent 微调
 
 ## Files
@@ -26,6 +30,7 @@ sources: []
 - [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques|Fine Tuning Techniques]]
 - [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy|Fine Tuning Techniques For Dummy]]
 - [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs|Genai L18 Fine Tuning Llms]]
+- [[05_大模型/07_Fine_tuning_Techniques/LLaMA_Factory_Deep_Dive|LLaMA-Factory Deep Dive]]
 - [[05_大模型/07_Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail|Lora Qlora SFT RLHF DPO In Detail]]
 - [[05_大模型/07_Fine_tuning_Techniques/Model_Merging_2026|Model Merging 2026]]
 - [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026|PEFT 2026]]

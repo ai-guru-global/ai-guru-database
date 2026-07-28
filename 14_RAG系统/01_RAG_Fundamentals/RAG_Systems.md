@@ -12,8 +12,11 @@ aliases:
   - RAG_Systems
 sources: []
 
+name_zh: "RAG 系统"
 ---
 # RAG 系统 (RAG Systems)
+
+> 中文简称：RAG 系统
 
 > **一句话理解**: 就像开卷考试,LLM 可以先翻书查资料再回答问题,而不是只靠记忆硬答。
 

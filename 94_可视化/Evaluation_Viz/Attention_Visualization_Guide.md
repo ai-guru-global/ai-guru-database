@@ -11,8 +11,11 @@ aliases:
   - Attention_Visualization_Guide
 sources: []
 
+name_zh: "注意力可视化"
 ---
 # 注意力可视化 (Attention Visualization Guide)
+
+> 中文简称：注意力可视化
 
 > **一句话理解**: 注意力可视化是打开 Transformer "黑箱"的窗口——将抽象的注意力权重矩阵转化为直观的热力图、流向图和连接图，揭示模型"在看哪里"。
 

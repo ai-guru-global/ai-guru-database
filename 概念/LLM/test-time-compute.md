@@ -35,9 +35,12 @@ sources:
   - HuggingFace open DVTS
   - Lightman Let's Verify Step by Step
   - Wei et al. 2022 CoT
+name_zh: "测试时计算扩展"
 ---
 
 # 测试时计算扩展(Test-Time Compute Scaling)
+
+> 中文简称：测试时计算扩展
 
 ## 一句话总结
 

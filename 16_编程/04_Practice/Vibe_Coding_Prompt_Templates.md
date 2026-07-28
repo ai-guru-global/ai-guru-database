@@ -11,8 +11,11 @@ aliases:
   - Vibe_Coding_Prompt_Templates
 sources: []
 
+name_zh: "Vibe Coding 提示词模板库"
 ---
 # Vibe Coding 提示词模板库
+
+> 中文简称：Vibe Coding 提示词模板库
 
 > **一句话理解**: 从 STAR 框架到规则文件模板，从场景模板到反面教材——你的一站式提示工程工具箱。
 

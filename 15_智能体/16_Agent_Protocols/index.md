@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "智能体协议"
+name_en: "Agent Protocols"
 ---
 
 # Agent Protocols
+
+> 中文简称：智能体协议 ｜ English Name: Agent Protocols
 
 ## 文件导航
 

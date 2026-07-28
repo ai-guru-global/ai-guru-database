@@ -18,9 +18,12 @@ relationships:
   - target: "概念/cri"
     type: related_to
 sources: []
+name_zh: "容器存储接口"
 ---
 
 # CSI（Container Storage Interface）
+
+> 中文简称：容器存储接口
 
 > **一句话理解**: CSI 是 Kubernetes 调用存储系统的「标准插头」——任何存储厂商只要实现 CSI 接口，就能为 K8s 提供动态持久卷能力。
 

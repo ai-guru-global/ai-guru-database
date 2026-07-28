@@ -18,11 +18,14 @@ relationships:
   - target: "概念/falco"
     type: related_to
 sources: []
+name_zh: "Trivy 安全扫描器"
 ---
 
 > **归档提示**: 此概念为通用云原生工具，与AI核心关联度较低。如需学习完整的K8s知识，请参考 CNCF 官方文档。
 
 # Trivy
+
+> 中文简称：Trivy 安全扫描器
 
 > **一句话理解**: Trivy 是 K8s 安全领域的「体检仪」，能扫镜像漏洞、错误配置、敏感信息和密钥泄露。
 

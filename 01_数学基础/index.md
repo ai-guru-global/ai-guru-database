@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "数学基础"
+name_en: "Math & CS Fundamentals"
 ---
 
 # Fundamentals
+
+> 中文简称：数学基础 ｜ English Name: Math & CS Fundamentals
 
 This page indexes the contents of `数学基础`.
 

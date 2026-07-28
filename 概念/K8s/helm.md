@@ -24,8 +24,11 @@ updated: 2026-07-21
 aliases:
   - Helm
 
+name_zh: "K8s 包管理器"
 ---
 # Helm
+
+> 中文简称：K8s 包管理器
 
 > Kubernetes 的「应用商店」——用 Chart 把复杂 K8s 应用打包成一键安装包。
 

@@ -22,9 +22,12 @@ aliases:
   - "Llm Observability Aiops"
   - "llm observability aiops"
 
+name_zh: "LLM 可观测性 × AIOps: 从系统监控到语义监控的范式跃迁"
 ---
 
 # LLM 可观测性 × AIOps: 从系统监控到语义监控的范式跃迁
+
+> 中文简称：LLM 可观测性 × AIOps: 从系统监控到语义监控的范式跃迁
 
 ## The Connection
 

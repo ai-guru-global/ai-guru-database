@@ -17,11 +17,14 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: archived
+name_zh: "Yelp 密钥泄露检测工具"
 ---
 
 > **归档提示**: 此概念为通用云原生工具，与AI核心关联度较低。如需学习完整的K8s知识，请参考 CNCF 官方文档。
 
 # detect-secrets
+
+> 中文简称：Yelp 密钥泄露检测工具
 
 [detect-secrets](https://github.com/Yelp/detect-secrets) 是 Yelp 开源的密钥与凭证泄露检测工具，旨在**防止敏感信息（API Key、Token、密码、私钥等）被意外提交到 Git 仓库**。它通过 Git pre-commit Hook 和 CI 集成两种模式工作，是 DevSecOps 和 AI Stack 安全合规的重要一环。
 

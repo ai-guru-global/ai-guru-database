@@ -33,8 +33,11 @@ aliases:
   - "kv cache compression"
   - "KV Cache 压缩技术"
 
+name_zh: "KV Cache 压缩"
 ---
 # KV Cache 压缩
+
+> 中文简称：KV Cache 压缩
 
 > KV Cache 压缩就像把厚厚的会议记录本改成精简版索引：记得更少，但关键信息不丢，让大模型能同时处理更长的对话和更多的请求。
 

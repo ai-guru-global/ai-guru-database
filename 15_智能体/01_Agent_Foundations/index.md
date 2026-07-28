@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-25
 sources: []
+name_zh: "智能体基础"
+name_en: "Agent Foundations"
 ---
 
 # Agent Foundations
+
+> 中文简称：智能体基础 ｜ English Name: Agent Foundations
 
 智能体基础 — 核心概念、架构模式、状态管理、可观测性与生产部署。
 

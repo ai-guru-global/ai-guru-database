@@ -15,7 +15,10 @@ aliases:
   - GenAI_L14_GenAI_Application_Lifecycle
 sources: []
 
+name_zh: "生成式AI应用生命周期"
 ---
+> 中文简称：生成式AI应用生命周期
+
 ## 学习目标
 
 完成本课后，你将：

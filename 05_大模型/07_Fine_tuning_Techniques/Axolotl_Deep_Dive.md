@@ -11,8 +11,11 @@ aliases:
   - Axolotl_Deep_Dive
 sources: []
 
+name_zh: "Axolotl: 开源微调工具"
 ---
 # Axolotl: 开源微调工具
+
+> 中文简称：Axolotl: 开源微调工具
 
 > **一句话理解**: Axolotl 是开源微调工具——支持全参数/LoRA/QLoRA 微调、多框架兼容、分布式训练，AI 开发者微调的首选。
 

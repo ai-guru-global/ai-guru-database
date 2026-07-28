@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "AI 基础设施工程师"
+name_en: "AI Infrastructure Engineer"
 ---
 
 # AI Infrastructure Engineer
+
+> 中文简称：AI 基础设施工程师 ｜ English Name: AI Infrastructure Engineer
 
 AI 基础设施工程师 — 构建和维护大规模 AI 训练与推理基础设施（GPU 集群、存储、网络）。
 

@@ -15,9 +15,12 @@ relationships:
   - target: "概念/alibaba-cloud"
     type: provided_by
 sources: []
+name_zh: "网络附加存储"
 ---
 
 # NAS
+
+> 中文简称：网络附加存储
 
 > **一句话理解**: NAS 就是网络上的共享硬盘，多台机器可以同时挂载，适合存大家都要读写的文件。
 

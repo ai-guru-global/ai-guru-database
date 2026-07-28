@@ -37,8 +37,11 @@ updated: 2026-07-21 00:00:00+00:00
 aliases:
   - Dra
 
+name_zh: "动态资源分配"
 ---
 # DRA (Dynamic Resource Allocation)
+
+> 中文简称：动态资源分配
 
 ## 核心要点
 

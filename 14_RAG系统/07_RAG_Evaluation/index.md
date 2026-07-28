@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "RAG 评估"
+name_en: "RAG Evaluation"
 ---
 
 # RAG Evaluation
+
+> 中文简称：RAG 评估 ｜ English Name: RAG Evaluation
 
 ## 文件导航
 

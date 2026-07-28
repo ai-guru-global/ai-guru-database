@@ -29,12 +29,15 @@ updated: 2026-07-21
 aliases:
   - Text2sql
 
+name_zh: "自然语言转 SQL"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Text2SQL
+
+> 中文简称：自然语言转 SQL
 
 ## 核心要点
 
@@ -164,7 +167,7 @@ SQL 校验（语法/安全）
 - [[概念/LLM/prompt-engineering|Prompt Engineering]] — 提示工程
 - [[概念/Agent/tool-use|Tool Use]] — 工具调用
 - [[概念/RAG/ragas|RAGAS]] — 评估框架
-- [[概念/LLM/fine-tuning|Fine-tuning]] — 微调
+- [[概念/Training/fine-tuning-techniques|Fine-tuning]] — 微调
 
 > ℹ️ Text2SQL 是自然语言查询数据库的关键技术，2026年 LLM + Agent + Few-shot 组合 准确率已达 90%+，生产环境需配置安全审计和结果解释。
 
@@ -200,8 +203,8 @@ SQL 校验（语法/安全）
 
 - [[概念/Agent/tool-use|Tool Use]] — 工具调用
 - [[概念/RAG/ragas|RAGAS]] — 评估框架
-- [[概念/LLM/fine-tuning|Fine-tuning]] — 微调
+- [[概念/Training/fine-tuning-techniques|Fine-tuning]] — 微调
 - [[概念/RAG/rag-patterns|RAG Patterns]] — RAG 模式
-- [[概念/Agent/agent-frameworks|Agent Frameworks]] — Agent 框架
+- [[概念/Agent/agent-framework|Agent Frameworks]] — Agent 框架
 
 > ℹ️ Text2SQL 生产最佳实践：完整 Schema + Few-shot + 只读审计 + 结果解释，复杂查询用 Agent 多步分解。

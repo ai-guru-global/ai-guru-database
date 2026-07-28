@@ -16,9 +16,12 @@ relationships:
   - target: "概念/pandera"
     type: implemented_by
 sources: []
+name_zh: "数据校验"
 ---
 
 # Data Validation
+
+> 中文简称：数据校验
 
 > **一句话理解**: 数据验证就是训练流水线的「质检员」——在数据进模型之前，自动检查它有没有缺字段、类型对不对、分布有没有漂移。
 

@@ -21,9 +21,12 @@ lifecycle: reviewed
 tier: core
 created: 2026-06-16
 updated: 2026-07-21
+name_zh: "单租户架构"
 ---
 
 # 单租户架构 (Single-Tenant Architecture)
+
+> 中文简称：单租户架构
 
 > 独门独院 vs 合租公寓——数据安全的第一道防线。
 

@@ -22,9 +22,12 @@ lifecycle: reviewed
 tier: core
 created: 2026-06-16
 updated: 2026-07-21
+name_zh: "Checkpoint 检查点"
 ---
 
 # Checkpoint 检查点 (Checkpointing)
+
+> 中文简称：Checkpoint 检查点
 
 > 分布式训练的"存档点"——没有它，一次 GPU 故障可能浪费数天的算力。
 

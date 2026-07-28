@@ -13,8 +13,11 @@ aliases:
   - "Genai Agents Nirdiamant"
   - "genai agents nirdiamant"
 
+name_zh: "GenAI Agent 实现集合"
 ---
 # GenAI Agent 实现集合 (22.5k)
+
+> 中文简称：GenAI Agent 实现集合
 
 > **一句话理解**: 50+ 个 GenAI Agent 教程与实现(22.5k star),从简单对话机器人到复杂多 Agent 系统。
 
@@ -83,7 +86,7 @@ aliases:
 | 播客生成器 | LangGraph | 内容搜索->音频生成 |
 | 博客写手 | OpenAI Swarm | 协作内容创作 |
 
-> **关联**: -> [[Agent|Agent 生产]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[概念/Agent|Agent 生产]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识框架

@@ -13,8 +13,11 @@ aliases:
   - LLM_Architecture_Evolution
 sources: []
 
+name_zh: "LLM 架构演进：从 BERT 到 MoE/Mamba 与 Agent 时代"
 ---
 # LLM 架构演进：从 BERT 到 MoE/Mamba 与 Agent 时代
+
+> 中文简称：LLM 架构演进：从 BERT 到 MoE/Mamba 与 Agent 时代
 
 > **演化主线**: 编码器（双向理解）→ 解码器（自回归生成，当前主流）→ 混合架构（MoE + SSM + 多模态 + Agent）
 

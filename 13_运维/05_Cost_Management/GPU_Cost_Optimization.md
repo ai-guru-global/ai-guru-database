@@ -8,9 +8,12 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "GPU 成本优化"
 ---
 
 # GPU 成本优化
+
+> 中文简称：GPU 成本优化
 
 > **一句话理解**: GPU 贵，优化成本的核心就两条——让 GPU 别闲着，以及让同样的 GPU 能干更多活。
 

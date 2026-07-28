@@ -12,8 +12,11 @@ aliases:
   - o1_Class_Reasoning_Models
 sources: []
 
+name_zh: "o1-class Reasoning Models 深度解析"
 ---
 # o1-class Reasoning Models 深度解析
+
+> 中文简称：o1-class Reasoning Models 深度解析
 
 ## 一句话理解
 

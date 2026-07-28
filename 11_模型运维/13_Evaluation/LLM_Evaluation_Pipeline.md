@@ -13,8 +13,11 @@ aliases:
   - LLM_Evaluation_Pipeline
 sources: []
 
+name_zh: "LLM 评估流水线"
 ---
 # LLM 评估流水线
+
+> 中文简称：LLM 评估流水线
 
 > **一句话理解**: 没有自动化评估，LLM 应用的每一次改动都是赌博——评估流水线是把「靠感觉发版」变成「靠数据发版」的唯一途径。
 

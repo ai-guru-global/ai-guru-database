@@ -18,9 +18,12 @@ relationships:
   - target: "概念/service"
     type: part_of
 sources: []
+name_zh: "容器网络接口"
 ---
 
 # CNI（Container Network Interface）
+
+> 中文简称：容器网络接口
 
 > **一句话理解**: CNI 是 Kubernetes 调用网络插件的「标准插座」，负责给每个 Pod 插上 IP、连上网络。
 

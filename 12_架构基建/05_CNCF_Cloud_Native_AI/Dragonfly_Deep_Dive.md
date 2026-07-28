@@ -11,8 +11,11 @@ aliases:
   - Dragonfly_Deep_Dive
 sources: []
 
+name_zh: "Dragonfly: 大模型权重 P2P 加速分发"
 ---
 # Dragonfly: 大模型权重 P2P 加速分发
+
+> 中文简称：Dragonfly: 大模型权重 P2P 加速分发
 
 > **一句话理解**: Dragonfly 是 CNCF 毕业级的 P2P 分发系统——把"100 个 GPU 节点同时拉 70GB 模型把镜像仓库打爆"变成"节点越多反而越快"，是大模型镜像/权重分发的首选加速层。
 

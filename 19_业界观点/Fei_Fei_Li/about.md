@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "李飞飞简介"
 ---
 # 李飞飞简介 (Fei-Fei Li)
+
+> 中文简称：李飞飞简介
 
 ## 一句话概括
 

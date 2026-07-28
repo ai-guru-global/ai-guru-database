@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "法律政务"
+name_en: "Legal Government"
 ---
 
 # Legal Government
+
+> 中文简称：法律政务 ｜ English Name: Legal Government
 
 ## 文件导航
 

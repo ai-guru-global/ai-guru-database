@@ -19,8 +19,12 @@ aliases:
   - "Concepts Index"
   - "概念分阶"
 
+name_zh: "概念分阶"
+name_en: "concepts"
 ---
 # 概念分阶 (Concepts)
+
+> 中文简称：概念分阶 ｜ English Name: concepts
 
 > AI 核心概念分阶学习 — 从觉醒期到职业化，六个阶段递进式构建完整的 AI 认知与能力体系。每个阶段都有明确目标、核心概念、依赖关系和学习资源。
 

@@ -12,8 +12,11 @@ aliases:
   - MLOps_Maturity_Model
 sources: []
 
+name_zh: "MLOps 成熟度模型与最佳实践"
 ---
 # MLOps 成熟度模型与最佳实践 (MLOps Maturity Model)
+
+> 中文简称：MLOps 成熟度模型与最佳实践
 
 > **一句话理解**: MLOps 成熟度模型就像 AI 团队的"段位系统"——从青铜（全手动）到王者（全自动闭环），帮你评估当前水平并规划升级路径。
 

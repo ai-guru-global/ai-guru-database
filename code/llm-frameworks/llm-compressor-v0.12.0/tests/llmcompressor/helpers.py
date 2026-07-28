@@ -1,0 +1,16 @@
+# ruff: noqa
+
+
+def valid_recipe_strings():
+    return [
+        """
+        test1_stage:
+            smoothquant_modifiers:
+                SmoothQuantModifier:
+                    smoothing_strength: 0.5
+                    mappings: [
+                        [["re:.*q_proj", "re:.*k_proj", "re:.*v_proj"], "re:.*input_layernorm"],
+                        [["re:.*gate_proj", "re:.*up_proj"], "re:.*post_attention_layernorm"]
+                    ]
+        """,
+    ]

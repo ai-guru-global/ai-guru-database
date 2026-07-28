@@ -11,8 +11,11 @@ aliases:
   - Qdrant_Deep_Dive
 sources: []
 
+name_zh: "Qdrant: 高性能向量数据库"
 ---
 # Qdrant: 高性能向量数据库
+
+> 中文简称：Qdrant: 高性能向量数据库
 
 > **一句话理解**: Qdrant 是一个用 Rust 编写的高性能向量数据库——亚毫秒级查询速度，支持混合搜索和过滤，专为生产环境设计。
 

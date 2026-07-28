@@ -12,9 +12,12 @@ aliases:
   - "提示工程师2026"
   - "AI Engineer 2026"
 sources: []
+name_zh: "Prompt Engineer 面试指南"
 ---
 
 # Prompt Engineer 面试指南 (2026升级版)
+
+> 中文简称：Prompt Engineer 面试指南
 
 > **一句话理解**: 2026年的 Prompt Engineer 已从"写提示词的人"进化为 AI 系统工程师——设计、编排和评估 LLM 驱动的智能系统，在 Agent 时代扮演"AI 行为架构师"的角色，通过精确的指令设计和系统化评估将模型能力转化为可靠的产品体验。
 
@@ -878,19 +881,19 @@ Junior Prompt Engineer / AI Engineer (0-2年)
 
 - [[AI_Safety_Engineer_2026]] — AI 安全工程师（prompt 安全防护）
 - [[AI_Product_Manager_2026]] — AI 产品经理（需求方）
-- [[Chain_of_Thought]] — 思维链推理
-- [[Few_Shot_Learning]] — 少样本学习
-- [[RAG]] — 检索增强生成
-- [[Agent_Architecture]] — Agent 架构设计
-- [[LLM_Evaluation]] — 大模型评估
-- [[Prompt_Injection]] — Prompt 注入攻击
-- [[Structured_Output]] — 结构化输出
-- [[Function_Calling]] — 函数调用
-- [[Multi_Agent_System]] — 多 Agent 系统
+- [[概念/LLM/cot-react-reasoning-prompt|Chain_of_Thought]] — 思维链推理
+- Few_Shot_Learning — 少样本学习
+- [[概念/RAG|RAG]] — 检索增强生成
+- Agent_Architecture — Agent 架构设计
+- [[08_模型评估/03_LLM_Evaluation/index|LLM_Evaluation]] — 大模型评估
+- [[概念/Safety/prompt-injection|Prompt_Injection]] — Prompt 注入攻击
+- [[概念/LLM/structured-output|Structured_Output]] — 结构化输出
+- [[概念/Agent/function-calling|Function_Calling]] — 函数调用
+- [[概念/Agent/multi-agent|Multi_Agent_System]] — 多 Agent 系统
 - [[DSPy]] — 自动化 Prompt 优化
 - [[LLM_Observability]] — LLM 可观测性
-- [[AI_Engineering]] — AI 工程
-- [[Model_Selection]] — 模型选择
-- [[Token_Optimization]] — Token 优化
-- [[AI_Product_Design]] — AI 产品设计
-- [[Evaluation_Driven_Development]] — 评估驱动开发
+- AI_Engineering — AI 工程
+- Model_Selection — 模型选择
+- Token_Optimization — Token 优化
+- AI_Product_Design — AI 产品设计
+- Evaluation_Driven_Development — 评估驱动开发

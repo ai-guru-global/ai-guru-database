@@ -26,9 +26,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "困惑度"
 ---
 
 # 困惑度（Perplexity, PPL）
+
+> 中文简称：困惑度
 
 ## 一句话总结
 

@@ -24,8 +24,11 @@ aliases:
   - "Heterogeneous Gpu"
   - "heterogeneous gpu"
 
+name_zh: "异构 GPU 集群"
 ---
 # 异构 GPU 集群 (Heterogeneous GPU Cluster)
+
+> 中文简称：异构 GPU 集群
 
 ## 核心要点
 

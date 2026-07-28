@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "评估自动化"
+name_en: "Automation"
 ---
 
 # Evaluation Automation
+
+> 中文简称：评估自动化 ｜ English Name: Automation
 
 评估自动化 — 自动化模型评估流水线，涵盖统计方法、报告模板和 A/B 测试框架。
 

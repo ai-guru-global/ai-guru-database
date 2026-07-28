@@ -23,9 +23,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: core
+name_zh: "Synapse 模型网关"
 ---
 
 # Synapse 模型网关
+
+> 中文简称：Synapse 模型网关
 
 > **一句话理解**: Synapse 是 AI Stack 的"流量调度员"——所有推理请求都经过它分发到后端模型实例，提供负载均衡和 API 鉴权。
 

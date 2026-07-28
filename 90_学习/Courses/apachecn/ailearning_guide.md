@@ -35,8 +35,11 @@ aliases:
 - ailearning_guide
 - Apachecn Ailearning
 - apachecn ailearning
+name_zh: "ApacheCN AiLearning 学习指南"
 ---
 # ApacheCN AiLearning：学习指南与主线映射
+
+> 中文简称：ApacheCN AiLearning 学习指南
 
 > ApacheCN AiLearning 是一个大型中文 AI 知识库，以中文讲解 + 可运行代码为特色。本页将其主要学习主线映射到 ai-guru-database 的对应章节，便于按需补充阅读。
 

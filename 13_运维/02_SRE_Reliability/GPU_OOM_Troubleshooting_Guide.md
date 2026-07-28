@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: core
 sources: []
+name_zh: "GPU OOM 排障指南"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # GPU OOM 排障指南
+
+> 中文简称：GPU OOM 排障指南
 
 > **一句话理解**: GPU OOM 不只有一种——要分清是 Linux 把容器 kill 了、CUDA 显存分配失败、还是 HAMi 等虚拟化层超卖导致，才能对症下药。
 

@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "深伪安全"
+name_en: "Deepfake Security"
 ---
 
 # Deepfake Security
+
+> 中文简称：深伪安全 ｜ English Name: Deepfake Security
 
 深度伪造安全（Deepfake Security）— Deepfake 检测（detection）、溯源（provenance）与防御技术。
 

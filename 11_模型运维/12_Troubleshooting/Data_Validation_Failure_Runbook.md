@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "数据验证失败 Runbook"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # 数据验证失败 Runbook
+
+> 中文简称：数据验证失败 Runbook
 
 > **一句话理解**: 数据验证失败是训练流水线的「门禁报警」——不是简单重跑就能解决，要定位是哪层期望被违反、上游数据出了什么问题。
 

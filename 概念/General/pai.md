@@ -18,9 +18,12 @@ relationships:
   - target: "概念/mlops"
     type: related_to
 sources: []
+name_zh: "阿里云机器学习平台"
 ---
 
 # PAI
+
+> 中文简称：阿里云机器学习平台
 
 > **一句话理解**: PAI 是阿里云上一站式 AI 平台，从写代码的 Notebook（DSW）、跑训练任务（DLC）到部署推理服务（EAS），全链路覆盖。
 

@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "GPU 多租户架构"
 ---
 # GPU 多租户架构
+
+> 中文简称：GPU 多租户架构
 
 ## 1. 多租户需求
 
@@ -134,8 +137,8 @@ BILLING_MODELS = {
 ## 5. 交叉引用
 
 - [[12_架构基建/|架构基建]]
-- [[13_运维/Cost_Operations/|成本运营]]
-- [[10_部署推理/Serving_Architecture/|服务架构]]
+- [[13_运维/05_Cost_Management/Cost_Operations|成本运营]]
+- [[10_部署推理/01_Deployment_Fundamentals/Serving_Architecture|服务架构]]
 - [[概念/General/single-tenant-architecture|单租户架构]]
 
 ## 架构核心组件对比

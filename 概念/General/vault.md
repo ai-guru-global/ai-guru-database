@@ -17,9 +17,12 @@ relationships:
   - target: "概念/cert-manager"
     type: related_to
 sources: []
+name_zh: "Vault 密钥管理"
 ---
 
 # Vault
+
+> 中文简称：Vault 密钥管理
 
 > **一句话理解**: Vault 是企业级的「密钥保险箱」，帮 K8s 应用安全地管理密码、Token、证书，并实现自动轮换和细粒度访问控制。
 
@@ -196,7 +199,7 @@ Vault 是企业级密钥管理平台，提供动态凭据、加密即服务和�
 ## 相关概念
 
 - [[概念/external-secrets-operator|External Secrets Operator]] — K8s Secret 管理
-- [[概念/zero-trust|Zero Trust]] — 零信任安全架构
+- [[概念/Safety/zero-trust|Zero Trust]] — 零信任安全架构
 
 > 💡 Vault 的核心价值是将 Secret 从代码和配置中解耦，实现动态生成、自动轮换、审计追踪。
 

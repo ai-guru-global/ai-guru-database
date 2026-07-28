@@ -13,8 +13,11 @@ aliases:
   - L18_Transformers_and_BERT
 sources: []
 
+name_zh: "L18 - Transformer 与 BERT"
 ---
 # L18 - Transformer 与 BERT
+
+> 中文简称：L18 - Transformer 与 BERT
 
 > **一句话理解**：本课讲解注意力机制（Attention Mechanism）如何解决 RNN 编解码器在序列翻译中的记忆瓶颈，并引出可并行训练的 Transformer 架构，以及基于 Transformer 编码器的预训练模型 BERT。
 

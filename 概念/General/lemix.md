@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "LeMix 训推统一调度"
 ---
 
 # LeMix 训推统一调度
+
+> 中文简称：LeMix 训推统一调度
 
 > **一句话理解**: LeMix 是"GPU 的时间管理大师"——让训练和推理任务共享 GPU 集群，通过智能调度消除资源浪费，利用率提升 30-50%。
 

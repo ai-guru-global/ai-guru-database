@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "能源气候"
+name_en: "Energy Climate"
 ---
 
 # Energy Climate
+
+> 中文简称：能源气候 ｜ English Name: Energy Climate
 
 ## 文件导航
 

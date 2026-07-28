@@ -16,9 +16,12 @@ relationships:
   - target: "概念/nvidia-gpu"
     type: runs_on
 sources: []
+name_zh: "cuDNN 深度学习库"
 ---
 
 # cuDNN
+
+> 中文简称：cuDNN 深度学习库
 
 > **一句话理解**: cuDNN 是 NVIDIA 给深度学习算子做的「加速包」，卷积、注意力、归一化这些常用操作都靠它跑得快。
 

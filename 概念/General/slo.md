@@ -17,9 +17,12 @@ relationships:
   - target: "概念/sla"
     type: related_to
 sources: []
+name_zh: "服务水平目标"
 ---
 
 # SLO
+
+> 中文简称：服务水平目标
 
 > **一句话理解**: SLO 就是你对用户承诺的服务水平目标，比如「99.9% 可用」或「95% 请求延迟 < 200ms」。
 

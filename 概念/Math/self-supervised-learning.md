@@ -25,8 +25,11 @@ aliases:
   - "Self Supervised Learning"
   - "self supervised learning"
 
+name_zh: "自监督学习"
 ---
 # 自监督学习 (Self-Supervised Learning)
+
+> 中文简称：自监督学习
 
 > 不需要人工标注，让数据自己「教」模型——现代 AI 预训练的核心范式。
 

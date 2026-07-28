@@ -12,8 +12,11 @@ aliases:
   - Python_for_AI_Basics
 sources: []
 
+name_zh: "Python for AI: 零基础到能写 AI 代码"
 ---
 # Python for AI: 零基础到能写 AI 代码
+
+> 中文简称：Python for AI: 零基础到能写 AI 代码
 
 > **一句话理解**: Python 是 AI 领域的"通用语"——就像学英语是为了读论文，学 Python 是为了让 AI 听你的指令。
 

@@ -12,8 +12,11 @@ aliases:
   - fastai_practical_dl
 sources: []
 
+name_zh: "fast.ai 实用深度学习"
 ---
 # fast.ai 实用深度学习 (Practical Deep Learning for Coders)
+
+> 中文简称：fast.ai 实用深度学习
 
 > fast.ai 的实战导向深度学习课程——从应用到理论，top-down 教学方法。
 

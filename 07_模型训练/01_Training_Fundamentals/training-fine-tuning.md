@@ -18,8 +18,11 @@ aliases:
   - "Training Fine Tuning"
   - "training fine tuning"
 
+name_zh: "模型训练 × 微调技术"
 ---
 # 模型训练 × 微调技术
+
+> 中文简称：模型训练 × 微调技术
 
 ## The Connection
 

@@ -33,9 +33,12 @@ sources:
   - LaTRO arXiv:2411.04282
   - Meta-Rewarding 论文
   - OpenReview Self-Rewarding
+name_zh: "Self-Rewarding 自奖励语言模型"
 ---
 
 # Self-Rewarding 自奖励语言模型
+
+> 中文简称：Self-Rewarding 自奖励语言模型
 
 ## 一句话总结
 

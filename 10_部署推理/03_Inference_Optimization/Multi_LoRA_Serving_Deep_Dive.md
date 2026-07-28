@@ -16,9 +16,12 @@ sources:
   - "Punica: Multi-Tenant LoRA Serving (Daglab, 2023)"
   - "LoRA: Low-Rank Adaptation of Large Language Models (Hu et al., ICLR 2022)"
   - "vLLM LoRA Support / SGLang LoRA 2025-2026"
+name_zh: "Multi-LoRA 推理服务"
 ---
 
 # Multi-LoRA 推理服务 (Multi-LoRA Serving Deep Dive)
+
+> 中文简称：Multi-LoRA 推理服务
 
 > **一句话概括**：用一个基座模型 + 一套推理引擎，同时高效服务成百上千个 LoRA 适配器——是 B 端 **多租户、多任务、多语言、个性化** 部署的核心能力，省显存、省部署、省成本。
 

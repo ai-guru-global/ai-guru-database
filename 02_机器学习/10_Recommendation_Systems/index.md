@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "推荐系统"
+name_en: "Recommendation Systems"
 ---
 
 # Recommendation Systems
+
+> 中文简称：推荐系统 ｜ English Name: Recommendation Systems
 
 推荐系统（Recommendation Systems）— 协同过滤（collaborative filtering）、深度学习推荐、排序学习（learning to rank）与冷启动问题。
 

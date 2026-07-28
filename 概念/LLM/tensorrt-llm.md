@@ -31,8 +31,11 @@ aliases:
   - "tensorrt llm"
   - "TRT-LLM"
 
+name_zh: "TensorRT 大模型推理引擎"
 ---
 # TensorRT-LLM
+
+> 中文简称：TensorRT 大模型推理引擎
 
 > **一句话理解**: TensorRT-LLM 就像给 NVIDIA GPU 请了一位“赛车调校师”：把普通模型重新拆解、组装、轻量化，榨干显卡的每一滴性能。
 

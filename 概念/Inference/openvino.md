@@ -19,9 +19,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "OpenVINO 推理优化工具包"
 ---
 
 # OpenVINO 推理优化工具包
+
+> 中文简称：OpenVINO 推理优化工具包
 
 > **一句话理解**: OpenVINO 是"Intel 硬件上的 AI 推理加速器"——在 Intel CPU/GPU/VPU 上把模型推理性能榨干到极致。
 

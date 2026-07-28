@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Dario Amodei 简介"
 ---
 # Dario Amodei 简介 (Dario Amodei)
+
+> 中文简称：Dario Amodei 简介
 
 ## 一句话概括
 

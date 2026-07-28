@@ -12,8 +12,11 @@ aliases:
   - README_for_dummy
 sources: []
 
+name_zh: "94 Visualization — 小白版 📊"
 ---
 # 94 Visualization — 小白版 📊
+
+> 中文简称：94 Visualization — 小白版 📊
 
 > **一句话秒懂**: 可视化就是让 AI 的"思考过程"看得见——把 AI 怎么处理数据、做出决策的过程用图表的方式展示出来，让你不仅知道 AI 说了什么，还知道它为什么这么说。
 

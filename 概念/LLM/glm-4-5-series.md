@@ -35,9 +35,12 @@ tier: core
 created: 2026-07-23
 updated: 2026-07-23
 sources: []
+name_zh: "智谱 GLM-4.5 模型系列"
 ---
 
 # 智谱 GLM-4.5 模型系列
+
+> 中文简称：智谱 GLM-4.5 模型系列
 
 > **一句话理解**: 清华系出身的"大模型六虎"领头羊,GLM-4.5 旗舰 355B MoE 以 1/2 DeepSeek-R1 参数、1/3 Kimi-K2 参数,在推理+代码+Agent 三项同时达到开源 SOTA,12 项基准综合全球第三。
 
@@ -360,13 +363,13 @@ Top-k 选择(激活 top-k 专家)
 ## 九、相关概念
 
 - [[概念/llm-architectures|LLM 架构]]
-- [[概念/moe|MoE 混合专家]]
+- [[概念/General/mixture-of-experts|MoE 混合专家]]
 - [[概念/reasoning-models|推理模型]]
-- [[概念/agent-architectures|Agent 架构]]
+- [[概念/Agent/agent-architectures|Agent 架构]]
 - [[概念/eagle|EAGLE 推测解码]]
 - [[概念/long-context-llm|长上下文 LLM]]
 - [[概念/llm-benchmarks|LLM 评测]]
-- [[概念/llm-pretraining|预训练]]
+- [[概念/Training/pre-training|预训练]]
 
 ---
 

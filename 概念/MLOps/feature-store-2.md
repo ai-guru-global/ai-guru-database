@@ -31,9 +31,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "Tecton / Feast / Databricks / LLM 特征 / 实"
 ---
 
 # Feature Store 2.0
+
+> 中文简称：Tecton / Feast / Databricks / LLM 特征 / 实
 
 > **一句话理解**:Feature Store 2.0 把 ML 特征管理与 LLM 上下文管理融合——Tecton(企业级实时特征)/ Feast(开源 2.0) / Databricks Feature Store 是传统 ML 标配,LLM Feature Store 把"对话历史 / 工具结果 / 检索上下文"作为特征管理。是 Agent / RAG / 个性化 LLM 的基础设施。
 

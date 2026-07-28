@@ -13,8 +13,11 @@ aliases:
   - Offline_RL_Deep_Dive
 sources: []
 
+name_zh: "离线强化学习深度解析"
 ---
 # 离线强化学习深度解析 (Offline RL Deep Dive)
+
+> 中文简称：离线强化学习深度解析
 
 > **一句话理解**: 离线RL就像从历史录像学打仗——不能上战场试错(没有在线交互)，只能从别人录制的战斗视频中学习最优策略，最大的挑战是你学到的策略可能遇到视频中从未出现的局面。
 
@@ -1144,6 +1147,6 @@ class DecisionTransformer(nn.Module):
 - [[06_强化学习/02_Deep_RL/PPO_Deep_Dive]] — PPO（on-policy对比）
 - [[06_强化学习/02_Deep_RL/Model_Based_RL_Deep_Dive]] — 基于模型的RL（模型辅助离线RL）
 - [[06_强化学习/01_RL_Foundations/RL_Foundations]] — RL基础（贝尔曼方程）
-- [[06_强化学习/03_RLHF_Alignment/RLHF_Alignment]] — RLHF（LLM中的RL应用）
+- [[06_强化学习/03_RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive|RLHF_Alignment]] — RLHF（LLM中的RL应用）
 - [[03_深度学习/09_Advanced_Topics/Transfer_Learning]] — 迁移学习（离线RL是迁移的一种）
 - [[概念/Safety/ai-alignment]] — AI对齐（离线安全RL）

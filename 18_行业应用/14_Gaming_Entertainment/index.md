@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "游戏娱乐"
+name_en: "Gaming Entertainment"
 ---
 
 # Gaming Entertainment
+
+> 中文简称：游戏娱乐 ｜ English Name: Gaming Entertainment
 
 ## 文件导航
 

@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "在线评估专题"
 ---
 
 # Online Evaluation
+
+> 中文简称：在线评估专题
 
 在线评估（Online Evaluation）— 生产环境中的模型持续评估，涵盖影子部署（shadow deployment）、在线指标（online metrics）、A/B 测试、用户反馈收集（user feedback collection）与生产环境监控（production monitoring）。
 

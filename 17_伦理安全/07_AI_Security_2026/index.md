@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "AI 安全 2026"
+name_en: "AI Security 2026"
 ---
 
 # AI Security 2026
+
+> 中文简称：AI 安全 2026 ｜ English Name: AI Security 2026
 
 This page indexes the contents of `17_伦理安全/07_AI_Security_2026`.
 

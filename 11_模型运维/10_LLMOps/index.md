@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "大模型运维"
+name_en: "LLMOps"
 ---
 
 # LLMOps
+
+> 中文简称：大模型运维 ｜ English Name: LLMOps
 
 ## 文件导航
 

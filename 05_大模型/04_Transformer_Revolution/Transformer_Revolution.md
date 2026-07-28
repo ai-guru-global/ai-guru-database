@@ -11,8 +11,11 @@ aliases:
   - Transformer_Revolution
 sources: []
 
+name_zh: "Transformer 革命"
 ---
 # Transformer 革命 (Transformer Revolution)
+
+> 中文简称：Transformer 革命
 
 > **一句话理解**: Transformer 就像全班同学互相讨论问题——每个人都能关注到其他所有人的发言，而不是只听前后左右的同学（传统 RNN 的局限），这种"全局视野"让理解更深刻。
 

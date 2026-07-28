@@ -39,8 +39,11 @@ aliases:
   - "Gpu Operator"
   - "gpu operator"
 
+name_zh: "NVIDIA GPU 管理组件"
 ---
 # NVIDIA GPU Operator
+
+> 中文简称：NVIDIA GPU 管理组件
 
 ## 核心要点
 

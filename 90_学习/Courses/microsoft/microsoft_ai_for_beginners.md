@@ -21,8 +21,11 @@ aliases:
 - microsoft ai for beginners
 - microsoft_ai_for_beginners
 sources: []
+name_zh: "Microsoft AI For Beginners：12 周初学者课程映射"
 ---
 # Microsoft AI For Beginners：12 周初学者课程映射
+
+> 中文简称：Microsoft AI For Beginners：12 周初学者课程映射
 
 > **一句话理解**: [Microsoft AI For Beginners](https://microsoft.github.io/AI-For-Beginners/) 是微软开源的 12 周、24 课 AI 入门课程。它涵盖符号 AI、神经网络、计算机视觉、自然语言处理、强化学习、AI 伦理等核心主题，并为每节课提供 **PyTorch / TensorFlow 双框架可运行 Notebook** 与部分实验。本页将课程的完整课表映射到 `ai-guru-database` 的对应章节，方便你在阅读本库理论后，通过官方 Notebook 动手实践。
 

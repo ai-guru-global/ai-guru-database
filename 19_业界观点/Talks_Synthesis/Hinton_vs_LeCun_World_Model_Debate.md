@@ -18,9 +18,12 @@ sources:
   - "https://www.cs.toronto.edu/~hinton/ (Hinton, Mortal Computation, NeurIPS 2022)"
   - "https://www.nature.com/articles/d41586-023-02212-7 (Nature, Hassabis on AGI, 2023)"
   - "https://www.nature.com/articles/nature14539 (Deep Learning Review, LeCun/Bengio/Hinton 2015)"
+name_zh: "Hinton vs LeCun：世界模型、可微记忆与 AGI 路径之争"
 ---
 
 # Hinton vs LeCun：世界模型、可微记忆与 AGI 路径之争
+
+> 中文简称：Hinton vs LeCun：世界模型、可微记忆与 AGI 路径之争
 
 > **一句话概括**: 两位图灵奖得主、深度学习教父的"分家"——Hinton 警告数字智能可能超越生物智能并提出"终有一死的计算" (Mortal Computation)，LeCun 则坚持 LLM 不是 AGI 路径、必须转向世界模型 (World Models) 与联合嵌入预测架构 (JEPA)，这场争论定义了 2026 年通往 AGI 的两条分叉路线。
 

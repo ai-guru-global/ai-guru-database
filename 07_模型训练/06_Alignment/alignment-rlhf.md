@@ -12,8 +12,11 @@ aliases:
   - "alignment rlhf"
 sources: []
 
+name_zh: "价值对齐 × RLHF：从人类反馈到可扩展监督"
 ---
 # 价值对齐 × RLHF：从人类反馈到可扩展监督
+
+> 中文简称：价值对齐 × RLHF：从人类反馈到可扩展监督
 
 ## 核心论点
 

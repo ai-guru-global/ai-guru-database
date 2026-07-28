@@ -11,8 +11,11 @@ aliases:
   - "Model Training in nutshell"
 sources: []
 
+name_zh: "模型训练速成指南"
 ---
 # 模型训练速成指南
+
+> 中文简称：模型训练速成指南
 
 > 🎯 **目标**：用最简单的方式理解如何从零开始训练 AI/ML 模型。
 

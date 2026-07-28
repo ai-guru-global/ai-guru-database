@@ -13,9 +13,12 @@ aliases:
   - "AI SRE"
   - "ML Reliability Engineer"
 sources: []
+name_zh: "AI Reliability Engineer 面试指南"
 ---
 
 # AI Reliability Engineer 面试指南
+
+> 中文简称：AI Reliability Engineer 面试指南
 
 > **一句话理解**: AI Reliability Engineer 是 AI 生产系统的守护者——将传统 SRE 方法论扩展到非确定性的 AI 系统，监控模型漂移和性能退化，设计快速恢复机制，确保 AI 服务在高负载和异常情况下的持续可用。
 
@@ -686,7 +689,7 @@ class InferenceCostMonitor:
 ## Related
 
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 - [[21_面试岗位/MLOps_Engineer/MLOps_Engineer|MLOps Engineer 面试指南]]
 - [[21_面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
 - [[21_面试岗位/AI_Evaluation_Engineer/AI_Evaluation_Engineer|AI Evaluation Engineer 面试指南]]

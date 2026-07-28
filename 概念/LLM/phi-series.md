@@ -32,9 +32,12 @@ tier: core
 created: 2026-07-23
 updated: 2026-07-23
 sources: []
+name_zh: "Phi / Microsoft Research 小模型系列"
 ---
 
 # Phi / Microsoft Research 小模型系列
+
+> 中文简称：Phi / Microsoft Research 小模型系列
 
 > **一句话理解**:Microsoft 用"数据质量 > 数据数量"的哲学,在 1.3B~14B 区间做出了让闭源巨头汗颜的小模型——Phi-4 14B 在 STEM 推理上甚至超过自家 GPT-4o mini,是端侧推理/隐私敏感/成本敏感场景的"性价比之王"。
 
@@ -209,11 +212,11 @@ sources: []
 
 ## 九、相关概念卡
 
-- [[概念/slm|Slm]]
+- [[概念/LLM/small-language-models|Slm]]
 - [[概念/edge-llm|Edge Llm]]
 - [[概念/llama-series|Llama Series]]
 - [[概念/qwen-series|Qwen Series]]
 - [[概念/gemma-series|Gemma Series]]
-- [[概念/distillation|Distillation]]
+- [[概念/Training/knowledge-distillation|Distillation]]
 - [[概念/dpo|Dpo]]
 - [[概念/grpo|Grpo]]

@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Fei-Fei Li 2026 Update", "李飞飞 2026 动态"]
 sources: []
+name_zh: "李飞飞 2026 动态"
 ---
 
 # 李飞飞 2026 动态 (Fei-Fei Li 2026 Update)
+
+> 中文简称：李飞飞 2026 动态
 
 ## 一句话概括
 

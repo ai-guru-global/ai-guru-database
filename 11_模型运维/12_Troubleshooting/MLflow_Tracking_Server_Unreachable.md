@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "MLflow Tracking Server 不可达排障"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # MLflow Tracking Server 不可达排障
+
+> 中文简称：MLflow Tracking Server 不可达排障
 
 > **一句话理解**: MLflow Tracking 连不上，通常不是 MLflow 本身坏了，而是「客户端配置的地址到服务端之间的某一层断了」——本手册按链路逐层排查。
 

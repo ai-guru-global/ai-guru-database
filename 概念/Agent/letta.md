@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "MemGPT Agent 框架"
 ---
 
 # Letta (MemGPT)
+
+> 中文简称：MemGPT Agent 框架
 
 [Letta](https://github.com/letta-ai/letta)（前身为 MemGPT）是一个基于 **MemGPT 论文**开发的有状态 Agent 框架。它的核心创新是将操作系统的**虚拟内存管理**思想应用到 LLM 上下文管理中——通过**分层记忆**（核心记忆/归档记忆/回忆搜索）让 Agent 能够突破上下文窗口限制，自主管理长期交互状态。
 

@@ -11,8 +11,11 @@ aliases:
   - Inference_Performance_Fundamentals
 sources: []
 
+name_zh: "推理性能基础"
 ---
 # 推理性能基础
+
+> 中文简称：推理性能基础
 
 > 延迟花在哪里、吞吐上不去的根因是什么、优化手段又该从哪里下手。
 

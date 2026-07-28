@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Dario Amodei 关于 AI 的观点"
 ---
 # Dario Amodei 关于 AI 的观点 (Dario Amodei on AI)
+
+> 中文简称：Dario Amodei 关于 AI 的观点
 
 ## 1. AI 安全与对齐 (Safety & Alignment)
 

@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "云智能体测评"
+name_en: "Cloud Agent Evaluation"
 ---
 
 # 云智能体评估
+
+> 中文简称：云智能体测评 ｜ English Name: Cloud Agent Evaluation
 
 国内外云 Agent（通用聊天、DevOps、K8s）的评测与排行榜。
 

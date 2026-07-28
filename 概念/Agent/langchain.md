@@ -30,8 +30,11 @@ aliases:
   - Langchain
   - "LangChain Framework"
 
+name_zh: "LLM 应用开发框架"
 ---
 # LangChain
+
+> 中文简称：LLM 应用开发框架
 
 > LLM 应用开发的「瑞士军刀」——把模型、提示、工具、记忆串成可复用组件。
 

@@ -11,8 +11,11 @@ aliases:
   - Process_Reward_Models
 sources: []
 
+name_zh: "Process Reward Models 深度解析"
 ---
 # Process Reward Models (PRM) 深度解析
+
+> 中文简称：Process Reward Models 深度解析
 
 ## 一句话理解
 

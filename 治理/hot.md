@@ -5,8 +5,11 @@ aliases:
   - Hot
 sources: []
 
+name_zh: "热门页面"
 ---
 # Hot Pages — 最近新增与高价值页面
+
+> 中文简称：热门页面
 
 *Last updated: 2026-06-25T15:59:34+08:00*
 

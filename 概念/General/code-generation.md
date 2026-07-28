@@ -28,8 +28,11 @@ aliases:
   - "Code Generation"
   - "code generation"
 
+name_zh: "代码生成"
 ---
 # 代码生成
+
+> 中文简称：代码生成
 
 ## 核心要点
 

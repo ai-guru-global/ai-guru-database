@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-25
 sources: []
+name_zh: "测试框架"
+name_en: "Testing Frameworks"
 ---
 
 # Testing Frameworks
+
+> 中文简称：测试框架 ｜ English Name: Testing Frameworks
 
 测试框架 — DeepEval、Promptfoo 等 AI 系统专用测试工具与框架。
 

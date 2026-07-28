@@ -15,7 +15,10 @@ aliases:
   - GenAI_L20_Building_with_Mistral
 sources: []
 
+name_zh: "使用Mistral模型构建应用"
 ---
+> 中文简称：使用Mistral模型构建应用
+
 ## 学习目标
 
 本课程将涵盖以下内容：

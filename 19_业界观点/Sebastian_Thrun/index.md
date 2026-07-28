@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "塞巴斯蒂安·特龙"
+name_en: "Sebastian Thrun"
 ---
 
 # Sebastian Thrun
+
+> 中文简称：塞巴斯蒂安·特龙 ｜ English Name: Sebastian Thrun
 
 Google X 创始人、Udacity 联合创始人，自动驾驶与 AI 教育的先驱——将深度学习从实验室推向道路与课堂。
 
@@ -207,3 +211,7 @@ Google X 创始人、Udacity 联合创始人，自动驾驶与 AI 教育的先�
 
 ---
 *Last updated: 2026-07-21*
+
+## 关联导航
+
+- [[19_业界观点/Sebastian_Thrun/Sebastian_Thrun_2026_Update\|2026 动态更新]]

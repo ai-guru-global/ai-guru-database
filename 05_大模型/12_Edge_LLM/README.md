@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "小模型与端侧 LLM"
 ---
 # 小模型与端侧 LLM (Edge LLM)
+
+> 中文简称：小模型与端侧 LLM
 
 > **一句话理解**: 让 LLM 跑在手机/PC/嵌入式设备上——通过小模型设计 + 量化压缩 + 高效推理引擎，实现离线可用、隐私安全、低延迟的端侧 AI。
 

@@ -20,8 +20,11 @@ base_confidence: 0.78
 relationships:
   - target: "概念/rag-systems"
     type: related_to
+name_zh: "长上下文 vs RAG: 技术选型指南"
 ---
 # 长上下文 vs RAG: 技术选型指南
+
+> 中文简称：长上下文 vs RAG: 技术选型指南
 
 > **一句话理解**: 当 LLM 支持 100K+ token 上下文窗口时,RAG 还有必要吗?本文对比两种方案的优劣,提供技术选型决策框架。
 

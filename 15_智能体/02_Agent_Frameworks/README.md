@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "Agent 开发框架"
 ---
 # Agent 开发框架
+
+> 中文简称：Agent 开发框架
 
 > 多 Agent 开发框架是构建协作式 Agent 系统的核心基础设施，从对话式协作到状态机编排各有特色。
 

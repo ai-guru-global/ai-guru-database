@@ -26,8 +26,11 @@ aliases:
   - "Learn Claude Code L15 Agent Teams"
   - Learn_Claude_Code_L15_Agent_Teams
 
+name_zh: "Learn Claude Code L15：Agent Teams — 一个搞不"
 ---
 # Learn Claude Code L15：Agent Teams — 一个搞不定，组队来
+
+> 中文简称：Learn Claude Code L15：Agent Teams — 一个搞不
 
 > **一句话理解**: 大项目超出单个 Agent 的上下文覆盖范围时，用文件收件箱（MessageBus）+ 队友线程实现 Lead 与多个持久队友的协作。
 

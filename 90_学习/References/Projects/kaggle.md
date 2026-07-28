@@ -12,8 +12,11 @@ tier: supporting
 aliases:
   - Kaggle
 
+name_zh: "Kaggle 数据科学竞赛平台"
 ---
 # Kaggle 数据科学竞赛平台
+
+> 中文简称：Kaggle 数据科学竞赛平台
 
 > **一句话理解**: Google 旗下数据科学竞赛平台,提供数据集、GPU Notebook 和社区,是 ML 实战练习的首选平台。
 

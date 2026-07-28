@@ -12,8 +12,11 @@ aliases:
   - Architecture_Evolution_for_dummy
 sources: []
 
+name_zh: "LLM 架构演进大白话：KV 压缩、Mamba、RetNet"
 ---
 # LLM 架构演进大白话：KV 压缩、Mamba、RetNet
+
+> 中文简称：LLM 架构演进大白话：KV 压缩、Mamba、RetNet
 
 > **一句话理解**: Transformer 是大模型的“标配发动机”，但长文本时它耗油（显存）又慢；KV 压缩、Mamba、RetNet 分别从“省油”和“换发动机”两个方向解决这个难题。
 

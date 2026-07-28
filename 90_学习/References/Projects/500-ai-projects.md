@@ -13,8 +13,11 @@ aliases:
   - "Ai Projects"
   - "ai projects"
 
+name_zh: "500 个 AI 项目合集"
 ---
 # 500 AI / ML / DL / CV / NLP Projects with Code
+
+> 中文简称：500 个 AI 项目合集
 
 A curated, continuously-updated list of hands-on projects across artificial intelligence, machine learning, deep learning, computer vision, and NLP. Each entry links to code repositories, tutorials, or project collections.
 

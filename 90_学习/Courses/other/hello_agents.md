@@ -23,8 +23,11 @@ aliases:
 - Hello Agents
 - hello agents
 - hello_agents
+name_zh: "Hello-Agents 课程映射：从零开始构建智能体"
 ---
 # Hello-Agents (Datawhale) 课程映射：从零开始构建智能体
+
+> 中文简称：Hello-Agents 课程映射：从零开始构建智能体
 
 > **一句话理解**: [Hello-Agents](https://github.com/datawhalechina/hello-agents) 是 Datawhale 出品的开源中文 AI Agent 系统教程，强调“AI Native Agent”而非流程驱动型低代码 Agent。全书 16 章正课 + 13 个 Extra-Chapter，从 Agent 基础到自研 HelloAgents 框架，再到记忆、RAG、协议、Agentic RL、评估与综合项目。本页将课程完整课表映射到 `ai-guru-database` 的对应章节。
 
@@ -65,7 +68,7 @@ aliases:
 | 章号 | 章节名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
 | 01 | 初识智能体 | 智能体定义、传感器/执行器、自主性、反射/基于模型/基于目标/基于效用/学习型智能体、反应式/规划式/混合式、符号主义/连接主义 | [[00_入门/AI_Fundamentals]]、[[15_智能体/GenAI_L17_AI_Agents]] | [[15_智能体/GenAI_L17_AI_Agents]] |
-| 02 | 智能体发展史 | 物理符号系统假说、专家系统、MYCIN、SHRDLU、符号主义瓶颈、连接主义、强化学习、AlphaGo、LLM 驱动智能体 | [[00_入门/AI_History_Timeline]]、[[06_强化学习/RL_Fundamentals]] | [[00_入门/AI_History_Timeline]] |
+| 02 | 智能体发展史 | 物理符号系统假说、专家系统、MYCIN、SHRDLU、符号主义瓶颈、连接主义、强化学习、AlphaGo、LLM 驱动智能体 | [[00_入门/AI_History_Timeline]]、[[06_强化学习/01_RL_Foundations/RL_Foundations|RL_Fundamentals]] | [[00_入门/AI_History_Timeline]] |
 | 03 | 大语言模型基础 | N-gram、神经网络语言模型、Transformer、自注意力、提示工程、主流 LLM、能力边界 | [[05_大模型/05_LLM_Architectures/LLM_Architectures]]、[[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] | [[05_大模型/05_LLM_Architectures/LLM_Architectures]] |
 
 ### 第二部分：构建你的大语言模型智能体
@@ -84,7 +87,7 @@ aliases:
 | 08 | 记忆与检索 | 感觉/工作/长期记忆、情景/语义/程序性记忆、MemoryManager、RAG Pipeline、Qdrant、Neo4j、SQLite | [[14_RAG系统/RAG_Systems]]、[[14_RAG系统/01_RAG_Fundamentals/GenAI_L15_RAG_and_Vector_Databases]]、[[14_RAG系统/03_Vector_Databases/Qdrant_Deep_Dive]] | [[15_智能体/Hello_Agents_L08_Memory_RAG]] |
 | 09 | 上下文工程 | Prompt Engineering vs Context Engineering、上下文腐蚀、JIT 上下文、GSSC 流水线、压缩整合、结构化笔记、子代理架构 | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]]、[[15_智能体/03_Agent_Workflow/Workflow-in-nutshell]] | [[05_大模型/08_Prompt_Engineering/Hello_Agents_L09_Context_Engineering]] |
 | 10 | 智能体通信协议 | MCP、A2A、ANP、FastMCP、a2a-sdk、服务发现、去中心化网络 | [[15_智能体/16_Agent_Protocols/A2A_Protocol_Deep_Dive]]、[[90_学习/References/Articles/awesome-mcp-servers]] | [[15_智能体/Hello_Agents_L10_Agent_Protocols]] |
-| 11 | Agentic-RL | 预训练、SFT、奖励建模、PPO、RLHF/RLAIF、Agentic RL、MDP、GRPO、推理与工具使用训练 | [[07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods]]、[[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide]]、[[06_强化学习/RL_Fundamentals]] | [[15_智能体/13_Hello_Agents/Hello_Agents_L11_Agentic_RL]] |
+| 11 | Agentic-RL | 预训练、SFT、奖励建模、PPO、RLHF/RLAIF、Agentic RL、MDP、GRPO、推理与工具使用训练 | [[07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods]]、[[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide]]、[[06_强化学习/01_RL_Foundations/RL_Foundations|RL_Fundamentals]] | [[15_智能体/13_Hello_Agents/Hello_Agents_L11_Agentic_RL]] |
 | 12 | 智能体性能评估 | BFCL、GAIA、ToolBench、API-Bank、AgentBench、WebArena、LLM Judge、准精确匹配、Win Rate | [[08_模型评估/02_Benchmarks/Agentic_Benchmark_Guide]]、[[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Guide]]、[[08_模型评估/02_Benchmarks/LLM_Benchmark_Suite_2026]] | [[08_模型评估/02_Benchmarks/Agentic_Benchmark_Guide]] |
 
 ### 第四部分：综合案例进阶

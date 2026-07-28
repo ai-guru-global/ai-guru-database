@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "智能体工作流"
+name_en: "Agent Workflow"
 ---
 
 # Agent Workflow
+
+> 中文简称：智能体工作流 ｜ English Name: Agent Workflow
 
 智能体工作流 — Agentic 工作流设计模式、AgentOps 生产运维与 UI/UX。
 

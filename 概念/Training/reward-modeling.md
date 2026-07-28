@@ -29,9 +29,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "奖励模型"
 ---
 
 # 奖励模型（Reward Modeling）
+
+> 中文简称：奖励模型
 
 ## 一句话总结
 

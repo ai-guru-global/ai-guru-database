@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Satya Nadella 简介"
 ---
 # Satya Nadella 简介 (Satya Nadella)
+
+> 中文简称：Satya Nadella 简介
 
 ## 一句话概括
 

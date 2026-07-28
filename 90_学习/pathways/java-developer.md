@@ -11,8 +11,11 @@ aliases:
   - "java developer"
 sources: []
 
+name_zh: "Java 开发者 AI 路径"
 ---
 # Java 开发者 AI 路径
+
+> 中文简称：Java 开发者 AI 路径
 
 > **面向：有 Java/Spring 经验、想转型或扩展到 AI 应用开发的后端工程师 | 前置要求：Java 17+、Spring Boot 基础 | 预计时间：50-70 小时**
 

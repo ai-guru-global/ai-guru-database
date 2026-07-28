@@ -12,8 +12,11 @@ aliases:
   - AI_Security_Cybersecurity
 sources: []
 
+name_zh: "AI 网络安全应用 2026"
 ---
 # AI 网络安全应用 2026 (AI for Cybersecurity 2026)
+
+> 中文简称：AI 网络安全应用 2026
 
 > AI 正在重塑网络安全行业——从威胁检测到自动化响应，从 LLM 安全到 AI 驱动的攻击防御，系统解析 AI 在网络安全领域的应用全景。
 

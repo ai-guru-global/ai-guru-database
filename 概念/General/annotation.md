@@ -22,9 +22,12 @@ relationships:
   - target: "概念/ingress"
     type: related_to
 sources: []
+name_zh: "K8s 注解"
 ---
 
 # Annotation
+
+> 中文简称：K8s 注解
 
 > **一句话理解**: Annotation 是 K8s 对象上的「便签纸」——可以写任意说明或给控制器看的配置提示，但不能像 Label 那样用来筛选对象。
 

@@ -24,9 +24,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "LLM 评估基准概览"
 ---
 
 # LLM 评估基准（Benchmarks）概览
+
+> 中文简称：LLM 评估基准概览
 
 ## 一句话总结
 

@@ -12,8 +12,11 @@ aliases:
   - Conv_Architectures
 sources: []
 
+name_zh: "卷积架构演进"
 ---
 # 卷积架构演进 (Convolutional Architectures Evolution)
+
+> 中文简称：卷积架构演进
 
 > 从 LeNet 到 ConvNeXt，三十年卷积神经网络架构设计的智慧积累与现代复兴。
 

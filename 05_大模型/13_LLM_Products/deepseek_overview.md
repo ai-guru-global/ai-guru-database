@@ -12,8 +12,11 @@ aliases:
   - deepseek_overview
 sources: []
 
+name_zh: "DeepSeek 深度解析"
 ---
 # DeepSeek 深度解析 (DeepSeek Deep Dive)
+
+> 中文简称：DeepSeek 深度解析
 
 > DeepSeek 是中国最具影响力的开源大模型——以极致性价比和推理能力著称，2025-2026 年改变了全球 LLM 竞争格局。
 

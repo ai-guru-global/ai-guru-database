@@ -12,8 +12,11 @@ aliases:
   - official_courses
 sources: []
 
+name_zh: "Hugging Face 官方系统化课程：离线硬核知识点提取"
 ---
 # Hugging Face 官方系统化课程：离线硬核知识点提取
+
+> 中文简称：Hugging Face 官方系统化课程：离线硬核知识点提取
 
 > **一句话理解**: 针对无法直接观看视频或访问 HF 网站的离线内网环境，本文档将 Hugging Face 官方三大金牌课程（NLP、强化学习、音频处理）中最底层的硬核数学直觉、算法原理与特征工程逻辑，进行了文字化的提取与整理。
 
@@ -92,7 +95,7 @@ PPO 引入了一个**比值因子 (Ratio)** 来衡量新策略和旧策略的差
 ---
 
 ## 相关阅读
-- [[06_强化学习/RL_Fundamentals]]
+- [[06_强化学习/01_RL_Foundations/RL_Foundations|RL_Fundamentals]]
 - [[01_数学基础/Mathematics_for_AI]]
 - [[05_大模型/04_Transformer_Revolution/Self_Attention_Mechanism]]
 

@@ -11,8 +11,11 @@ aliases:
   - Data_Quality_Management
 sources: []
 
+name_zh: "数据质量管理"
 ---
 # 数据质量管理 (Data Quality Management)
+
+> 中文简称：数据质量管理
 
 > **一句话理解**: 在 ML 流水线中，**Garbage In = Garbage Out** 的代价远高于传统软件。数据质量管理通过自动化验证框架在数据进入训练/推理管道前拦截异常，是 MLOps 成熟度的关键指标。
 

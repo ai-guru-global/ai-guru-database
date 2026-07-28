@@ -8,9 +8,12 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "AI 事故响应框架"
 ---
 
 # AI 事故响应框架
+
+> 中文简称：AI 事故响应框架
 
 > **一句话理解**: AI 系统出问题时，不能只靠人手动排查，要有分级、有流程、有 Runbook、有复盘，才能把损失降下来。
 

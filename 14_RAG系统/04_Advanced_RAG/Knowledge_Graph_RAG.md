@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "知识图谱 RAG"
 ---
 # 知识图谱 RAG (Knowledge Graph RAG)
+
+> 中文简称：知识图谱 RAG
 
 ## 1. 为什么需要知识图谱？
 
@@ -167,7 +170,7 @@ GRAPH_RAG_BEST_PRACTICES = {
 
 - [[14_RAG系统/|RAG 系统]]
 - [[14_RAG系统/01_RAG_Fundamentals/Chunking_Strategies|分块策略]]
-- [[14_RAG系统/Hybrid_Search/|混合检索]]
+- [[14_RAG系统/04_Advanced_RAG/Hybrid_Search|混合检索]]
 - [[概念/RAG/rag-patterns|RAG 模式]]
 - [[15_智能体/|智能体 (Agentic RAG)]]
 

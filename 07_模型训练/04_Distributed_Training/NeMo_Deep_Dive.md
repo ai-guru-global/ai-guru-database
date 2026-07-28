@@ -12,8 +12,11 @@ aliases:
   - NeMo_Deep_Dive
 sources: []
 
+name_zh: "NeMo 深度解析: NVIDIA 端到端大模型训练框架"
 ---
 # NeMo 深度解析：NVIDIA 端到端大模型训练框架
+
+> 中文简称：NeMo 深度解析: NVIDIA 端到端大模型训练框架
 
 > **一句话理解**: NeMo 是 NVIDIA 开源的端到端生成式 AI 框架，在 PyTorch Lightning 之上封装 Megatron-core 的 5D 并行能力，用 Recipe 配方体系覆盖 LLM/语音/多模态的预训练、微调（PEFT）与导出部署全流程。
 

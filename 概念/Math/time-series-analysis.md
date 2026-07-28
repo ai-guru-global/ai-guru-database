@@ -22,9 +22,12 @@ lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-07-21T00:00:00Z
+name_zh: "时间序列分析"
 ---
 
 # 时间序列分析
+
+> 中文简称：时间序列分析
 
 时间序列是按时间顺序排列的数据序列，与传统机器学习不同，样本之间存在**时间依赖关系**，不能假设独立同分布。核心关注时间模式、趋势和周期，广泛应用于销售预测、金融分析、设备监控等领域。时间序列数据需要专门的特征工程方法（滞后特征、滑动窗口统计）。
 
@@ -209,6 +212,6 @@ forecast = model.predict(future)
 - [[概念/Math/feature-engineering|特征工程]] — 时序特征
 - [[概念/Math/anomaly-detection|异常检测]] — 时序异常
 - [[概念/Math/neural-networks|神经网络]] — 深度时序
-- [[概念/MLOps/monitoring|监控]] — 时序监控
+- [[概念/MLOps/observability|监控]] — 时序监控
 
 > ℹ️ 时序分析是金融/13_运维/IoT 的核心，Transformer 预训练模型是新趋势。

@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "AI 水印"
 ---
 # AI 水印 (AI Watermarking)
+
+> 中文简称：AI 水印
 
 ## 1. 为什么需要 AI 水印？
 
@@ -159,10 +162,10 @@ DEEPFAKE_DETECTION = {
 ## 6. 交叉引用
 
 - [[17_伦理安全/|伦理安全]]
-- [[17_伦理安全/Model_Card_Documentation/|模型卡]]
+- [[17_伦理安全/03_Governance/Model_Card_Documentation|模型卡]]
 - [[14_RAG系统/05_RAG_Production/RAG_Security|RAG 安全]]
 - [[05_大模型/|大模型 (生成内容)]]
-- [[18_行业应用/Public_Safety/|公共安全 (Deepfake)]]
+- [[18_行业应用/19_Other_Industries/Public_Safety|公共安全 (Deepfake)]]
 
 ## 核心知识体系
 

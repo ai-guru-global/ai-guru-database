@@ -20,9 +20,12 @@ base_confidence: 0.78
 lifecycle: reviewed
 tier: supporting
 updated: 2026-07-21
+name_zh: "PiSSA 奇异值适配"
 ---
 
 # PiSSA 奇异值适配
+
+> 中文简称：PiSSA 奇异值适配
 
 > **一句话理解**: PiSSA 是"更聪明的 LoRA 初始化"——用 SVD 分解找到权重矩阵最重要的方向来初始化适配器，比随机初始化收敛更快、效果更好。
 
@@ -190,7 +193,7 @@ model = get_peft_model(base_model, config)
 - [[概念/Training/qlora|QLoRA]] — 量化 LoRA
 - [[概念/Training/rslora|rsLoRA]] — 稳定 LoRA
 - [[概念/Training/fine-tuning-techniques|Fine-tuning Techniques]] — 微调技术
-- [[概念/LLM/lora|LoRA]] — 低秩适配
+- [[概念/Training/lora-peft|LoRA]] — 低秩适配
 - [[概念/Training/dora|DoRA]] — 方向优化
 
 > ℹ️ PiSSA 通过奇异值初始化提升 LoRA 收敛速度，2026年与 rsLoRA/DoRA 组合使用是 PEFT 最佳实践。

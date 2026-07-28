@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Zhilin Yang 2026 Update", "杨植麟 2026 动态", "Kimi 2026", "Moonshot AI 2026"]
 sources: []
+name_zh: "杨植麟 2026 动态"
 ---
 
 # 杨植麟 2026 动态 (Zhilin Yang 2026 Update)
+
+> 中文简称：杨植麟 2026 动态
 
 ## 一句话概括
 

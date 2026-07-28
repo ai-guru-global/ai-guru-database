@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "编程方法论"
+name_en: "Methodology"
 ---
 
 # 编程方法论
+
+> 中文简称：编程方法论 ｜ English Name: Methodology
 
 AI 编程方法论 — Agentic Coding、Vibe Coding 等新型 AI 辅助编程范式与最佳实践。
 

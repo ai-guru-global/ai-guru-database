@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Yoshua Bengio 简介"
 ---
 # Yoshua Bengio 简介 (Yoshua Bengio)
+
+> 中文简称：Yoshua Bengio 简介
 
 ## 一句话概括
 

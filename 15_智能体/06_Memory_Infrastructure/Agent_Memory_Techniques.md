@@ -14,8 +14,11 @@ aliases:
   - "Agent Memory Techniques"
   - Agent_Memory_Techniques
 
+name_zh: "AI Agent 记忆技术完全指南"
 ---
 # AI Agent 记忆技术完全指南
+
+> 中文简称：AI Agent 记忆技术完全指南
 
 > **一句话理解**: Agent 记忆系统的架构与实现:短期记忆、长期记忆、工作记忆、情景记忆,含 Mem0、Zep、Graphiti 等工具。
 

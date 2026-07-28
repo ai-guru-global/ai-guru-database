@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "概率统计"
+name_en: "Probability Statistics"
 ---
 
 # Probability & Statistics
+
+> 中文简称：概率统计 ｜ English Name: Probability Statistics
 
 概率论与数理统计（Probability & Statistics）— 贝叶斯推断（Bayesian inference）、假设检验、分布族与统计学习的数据基础。
 

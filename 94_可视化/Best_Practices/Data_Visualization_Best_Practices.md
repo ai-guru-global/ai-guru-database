@@ -10,9 +10,12 @@ aliases:
   - "Data Visualization Best Practices"
   - "Visualization Guide"
 sources: []
+name_zh: "数据可视化最佳实践"
 ---
 
 # 数据可视化最佳实践 (Data Visualization Best Practices)
+
+> 中文简称：数据可视化最佳实践
 
 > 数据可视化最佳实践——从图表选择到配色方案、从静态出图到交互式仪表盘，让数据讲故事。
 

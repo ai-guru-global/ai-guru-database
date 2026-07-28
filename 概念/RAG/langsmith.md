@@ -17,9 +17,12 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: supporting
+name_zh: "LangSmith LLM 可观测性平台"
 ---
 
 # LangSmith LLM 可观测性平台
+
+> 中文简称：LangSmith LLM 可观测性平台
 
 > **一句话理解**: LangSmith 是"LangChain 应用的 X 光机"——看到每个 LLM 调用、每次 Tool 执行、每个 Agent 决策的全过程。
 

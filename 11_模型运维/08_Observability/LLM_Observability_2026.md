@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "LLM 可观测性"
 ---
 # LLM 可观测性 (LLM Observability)
+
+> 中文简称：LLM 可观测性
 
 ## 1. 为什么需要 LLM 可观测性？
 
@@ -155,7 +158,7 @@ LLM_MONITORING_ALERTS = {
 ## 5. 交叉引用
 
 - [[11_模型运维/|模型运维]]
-- [[13_运维/Incident_Management/|事故管理]]
+- [[13_运维/03_Incident_Response/Incident_Management|事故管理]]
 - [[09_测试/|测试]]
 - [[概念/General/opentelemetry|OpenTelemetry]]
 - [[概念/RAG/langfuse|Langfuse]]

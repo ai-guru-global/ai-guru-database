@@ -11,8 +11,11 @@ aliases:
   - Training_Monitoring_Visualization
 sources: []
 
+name_zh: "训练监控可视化"
 ---
 # 训练监控可视化 (Training Monitoring Visualization)
+
+> 中文简称：训练监控可视化
 
 > **一句话理解**: 训练监控可视化是 AI 开发的"黑匣子仪表盘"——实时追踪 Loss、梯度、学习率、GPU 利用率等关键指标，让每一次实验可观测、可诊断、可复现。
 

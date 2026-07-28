@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "AI 研究科学家"
+name_en: "AI Research Scientist"
 ---
 
 # AI Research Scientist
+
+> 中文简称：AI 研究科学家 ｜ English Name: AI Research Scientist
 
 AI 研究科学家 — 聚焦大模型前沿研究，涵盖预训练（pre-training）、对齐（alignment）、推理能力与多模态方向。
 

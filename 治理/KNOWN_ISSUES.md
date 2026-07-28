@@ -12,8 +12,11 @@ aliases:
   - KNOWN_ISSUES
 sources: []
 
+name_zh: "AI Guru 知识库 - 已知问题追踪"
 ---
 # AI Guru 知识库 - 已知问题追踪 (Known Issues)
+
+> 中文简称：AI Guru 知识库 - 已知问题追踪
 
 > 本文档记录项目中的已知问题、限制、解决方案和进展状态。用于问题复现规避、知识沉淀和持续改进。
 

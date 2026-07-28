@@ -25,8 +25,11 @@ aliases:
   - "Information Theory"
   - "information theory"
 
+name_zh: "信息论"
 ---
 # 信息论 (Information Theory)
+
+> 中文简称：信息论
 
 > AI 的数学灵魂——交叉熵是分类损失函数，KL散度衡量分布距离，互信息发现特征关联。
 

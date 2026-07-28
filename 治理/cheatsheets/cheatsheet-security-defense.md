@@ -4,9 +4,12 @@ tags: [cheatsheet, llm-security, defense-in-depth, red-teaming, prompt-injection
 type: cheatsheet
 created: 2026-06-17
 sources: []
+name_zh: "LLM 安全防御速查表"
 ---
 
 # LLM 安全防御速查表
+
+> 中文简称：LLM 安全防御速查表
 
 > **核心原则**: 不信任任何输入 | 纵深防御 | 假设任何一层可能被突破
 > 详见 [[LLM_Security_Defense_Guide]] | [[LLM_Security_Complete_Guide]] | [[Agent_RAG_Security]]

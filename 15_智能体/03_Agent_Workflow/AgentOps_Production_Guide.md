@@ -13,8 +13,11 @@ aliases:
   - AgentOps_Production_Guide
 sources: []
 
+name_zh: "智能体 AI 权威指南 Part 3: AgentOps 与生产化落地"
 ---
 # 智能体 AI 权威指南 Part 3: AgentOps 与生产化落地
+
+> 中文简称：智能体 AI 权威指南 Part 3: AgentOps 与生产化落地
 
 > Source: 智能体 AI 权威指南 (yeasy) Part 3, Ch8-10
 > Related: [[Agentic_AI_Complete_Guide]] | [[Multi_Agent_Systems_Guide]] | [[Context_Engineering_Guide]] | [[Prompt_Engineering_Complete_Guide]]

@@ -11,8 +11,11 @@ aliases:
   - Production_Assessment
 sources: []
 
+name_zh: "生产环境评估"
 ---
 # Production Assessment
+
+> 中文简称：生产环境评估
 
 > Protocols for evaluating AI agents in production environments
 

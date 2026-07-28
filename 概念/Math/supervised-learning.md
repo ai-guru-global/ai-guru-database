@@ -24,9 +24,12 @@ lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-07-21T00:00:00Z
+name_zh: "监督学习"
 ---
 
 # 监督学习
+
+> 中文简称：监督学习
 
 监督学习是机器学习的核心范式，利用已知标签的训练数据学习映射函数 $f: X \rightarrow Y$。核心挑战在于泛化能力——在未见数据上保持性能。与无监督学习不同，监督学习需要高质量标注数据驱动。
 
@@ -186,7 +189,7 @@ trainer.train()
 
 - [[概念/Math/self-supervised-learning|自监督学习]] — 预训练基础
 - [[概念/Math/unsupervised-learning|无监督学习]] — 无监督学习
-- [[概念/Training/fine-tuning|微调]] — 模型微调技术
+- [[概念/Training/fine-tuning-techniques|微调]] — 模型微调技术
 - [[概念/Math/feature-engineering|特征工程]] — 特征设计
 
 > ℹ️ 有监督学习是 AI 应用的核心，SFT 是 LLM 对齐的关键步骤。

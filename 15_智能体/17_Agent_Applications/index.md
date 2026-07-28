@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "智能体应用"
+name_en: "Agent Applications"
 ---
 
 # Agent Applications
+
+> 中文简称：智能体应用 ｜ English Name: Agent Applications
 
 ## 文件导航
 

@@ -15,7 +15,10 @@ aliases:
   - GenAI_L15_RAG_and_Vector_Databases
 sources: []
 
+name_zh: "检索增强生成与向量数据库"
 ---
+> 中文简称：检索增强生成与向量数据库
+
 ## 学习目标
 
 完成本课后，你将能够：

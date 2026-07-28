@@ -15,7 +15,10 @@ aliases:
   - GenAI_L11_Integrating_with_Function_Calling
 sources: []
 
+name_zh: "集成函数调用"
 ---
+> 中文简称：集成函数调用
+
 ## 学习目标
 
 完成本课程后，你将能够：

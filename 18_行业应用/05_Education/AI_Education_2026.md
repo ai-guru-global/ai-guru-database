@@ -12,8 +12,11 @@ aliases:
   - AI_Education_2026
 sources: []
 
+name_zh: "AI 教育行业应用"
 ---
 # AI 教育行业应用 (2025-2026)
+
+> 中文简称：AI 教育行业应用
 
 > **一句话理解**: 2026 年 AI 正在重塑教育范式——Khan Academy 的 Khanmigo 已服务数百万学生并提升学习效果 30%，AI 从"辅助工具"升级为"个性化导师"，教育从标准化走向真正的因材施教。
 
@@ -287,11 +290,11 @@ AI导师 2025-2026:
 
 ## Related
 
-- [[../../14_RAG系统/01_RAG_Fundamentals|RAG 基础]] — 教育知识库构建
-- [[../../15_智能体/01_Agent_Foundations|Agent 基础]] — 个性化学习 Agent
-- [[../../05_大模型/01_LLM_Fundamentals|LLM 基础]] — 教育场景大模型应用
-- [[../../08_模型评估/Human_Evaluation|人工评估]] — 教育效果评估方法
-- [[../../10_部署推理/Cost|推理成本]] — 教育普惠的成本优化
+- [[14_RAG系统/01_RAG_Fundamentals|RAG 基础]] — 教育知识库构建
+- [[15_智能体/01_Agent_Foundations|Agent 基础]] — 个性化学习 Agent
+- [[05_大模型/01_LLM_Fundamentals|LLM 基础]] — 教育场景大模型应用
+- [[08_模型评估/01_Evaluation_Fundamentals/Human_Evaluation_Deep_Dive|人工评估]] — 教育效果评估方法
+- [[10_部署推理/09_Cost/index|推理成本]] — 教育普惠的成本优化
 
 ---
 

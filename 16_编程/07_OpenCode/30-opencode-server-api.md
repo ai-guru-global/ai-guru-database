@@ -14,6 +14,7 @@ aliases:
 updated: 2026-06-30
 summary: "Server 模式与 HTTP API — 专题文档"
 sources: []
+name_zh: "Server 模式与 HTTP API"
 ---
 title: Server 模式与 HTTP API
 description: '**文档类型**: 平台集成专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, Server, HTTP
@@ -54,6 +55,8 @@ k8s_versions:
 - '1.32'
 ---
 # Server 模式与 HTTP API
+
+> 中文简称：Server 模式与 HTTP API
 
 > **文档类型**: 平台集成专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, Server, HTTP API, OpenAPI 3.1, SDK, SSE, Headless, Stainless, Hono
 

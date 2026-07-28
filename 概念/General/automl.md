@@ -22,9 +22,12 @@ lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-07-21
+name_zh: "自动化机器学习"
 ---
 
 # AutoML
+
+> 中文简称：自动化机器学习
 
 AutoML（Automated Machine Learning）旨在将机器学习 Pipeline 中的重复性、高门槛步骤自动化，包括特征工程、模型选择、超参数优化和神经架构搜索，降低 ML 应用门槛、提升效率。AutoML 让从业者从"炼丹师"变成"指挥官"。
 

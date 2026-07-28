@@ -10,8 +10,11 @@ aliases:
   - "cv deep learning"
 sources: []
 
+name_zh: "深度学习驱动的计算机视觉"
 ---
 # 深度学习驱动的计算机视觉
+
+> 中文简称：深度学习驱动的计算机视觉
 
 ## The Connection
 

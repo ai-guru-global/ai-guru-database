@@ -27,8 +27,11 @@ updated: 2026-07-21
 aliases:
   - Dora
 
+name_zh: "权重分解低秩适配"
 ---
 # DoRA
+
+> 中文简称：权重分解低秩适配
 
 ## 核心要点
 
@@ -195,7 +198,7 @@ DoRA 是 LoRA 的增强版本，通过权重分解实现更接近全量微调的
 
 ## 相关概念
 
-- [[概念/lora]] — LoRA 低秩适配
+- [[概念/Training/lora-peft|lora]] — LoRA 低秩适配
 - [[概念/qlora]] — QLoRA 量化微调
 - [[概念/peft]] — PEFT 参数高效微调库
 

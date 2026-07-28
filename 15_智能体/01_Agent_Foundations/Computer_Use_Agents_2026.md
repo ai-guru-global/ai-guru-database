@@ -12,8 +12,11 @@ aliases:
   - Computer_Use_Agents_2026
 sources: []
 
+name_zh: "计算机使用智能体 2026"
 ---
 # 计算机使用智能体 2026 (Computer Use Agents)
+
+> 中文简称：计算机使用智能体 2026
 
 > **一句话理解**: Computer Use Agent让AI直接"看"屏幕、"操作"鼠标键盘——从Anthropic Computer Use API到Manus/Open Interpreter，2026年OS级GUI自动化正在重塑人机交互范式，VLM屏幕解析+Set-of-Mark让Agent理解任意界面。
 
@@ -788,8 +791,8 @@ Computer Use Agent 成本模型 (每100步操作):
 - [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L15_Browser_Use|Browser Use]] — 浏览器级Agent
 - [[15_智能体/01_Agent_Foundations/Agent_Safety_Evaluation_for_dummy|Agent安全评估]] — 安全沙箱设计
 - [[15_智能体/01_Agent_Foundations/Agent_Production_Deployment_Runbook|Agent生产部署]] — 部署运维实践
-- [[04_计算机视觉/VLM|视觉语言模型]] — 屏幕理解基础
-- [[工具/Playwright|Playwright]] — Web自动化基础
+- [[04_计算机视觉/08_Multimodal_Vision/index|视觉语言模型]] — 屏幕理解基础
+- [[16_编程/05_Tools/index|Playwright]] — Web自动化基础
 
 ---
 

@@ -11,8 +11,11 @@ aliases:
   - Test_Suites
 sources: []
 
+name_zh: "测试套件"
 ---
 # Test Suites
+
+> 中文简称：测试套件
 
 > Domain-specific test cases for comprehensive agent evaluation
 

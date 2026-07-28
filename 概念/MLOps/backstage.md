@@ -17,9 +17,12 @@ relationships:
   - target: "概念/platform-engineering"
     type: related_to
 sources: []
+name_zh: "开发者门户平台"
 ---
 
 # Backstage
+
+> 中文简称：开发者门户平台
 
 > **一句话理解**: Backstage 是企业内部的「工程操作系统」，把服务目录、文档、脚手架、监控、发布入口整合到一个门户里。
 
@@ -123,7 +126,7 @@ catalog:
 - [[概念/MLOps/mlops|MLOps]] — MLOps 总览
 - [[概念/K8s/kubernetes|Kubernetes]] — 容器编排
 - [[概念/MLOps/argo-rollouts|Argo Rollouts]] — 渐进式交付
-- [[概念/12_架构基建/DevOps|DevOps]] — 开发运维
+- [[概念/MLOps/ci-cd|DevOps]] — 开发运维
 
 > ℹ️ Backstage 是开发者门户的标准，统一服务目录和自助服务。
 
@@ -168,7 +171,7 @@ docker run -p 7007:7007 backstage
 - [[概念/MLOps/mlops|MLOps]] — MLOps 总览
 - [[概念/K8s/kubernetes|Kubernetes]] — 容器编排
 - [[概念/MLOps/argo-rollouts|Argo Rollouts]] — 渐进式交付
-- [[概念/12_架构基建/DevOps|DevOps]] — 开发运维
+- [[概念/MLOps/ci-cd|DevOps]] — 开发运维
 
 > ℹ️ Backstage 是开发者门户的标准，统一服务目录和自助服务。
 

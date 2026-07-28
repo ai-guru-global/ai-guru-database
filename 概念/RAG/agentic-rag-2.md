@@ -32,9 +32,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "智能体化 RAG 2.0"
 ---
 
 # Agentic RAG 2.0
+
+> 中文简称：智能体化 RAG 2.0
 
 > **一句话理解**:Agentic RAG 2.0 让 RAG 像 Agent 一样"判断 → 检索 → 反思 → 重试"——Self-RAG 在每个 token 后自评,CRAG 检测错误并重检,FLARE 边生成边检索,Adaptive RAG 用路由器分流。比传统 RAG 准确率提升 20-40%,是 2025 主流方案。
 

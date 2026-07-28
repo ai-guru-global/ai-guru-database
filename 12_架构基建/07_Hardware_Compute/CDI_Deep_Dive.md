@@ -12,8 +12,11 @@ aliases:
   - CDI_Deep_Dive
 sources: []
 
+name_zh: "CDI : 容器设备接口标准深度解析"
 ---
 # CDI (Container Device Interface): 容器设备接口标准深度解析
+
+> 中文简称：CDI : 容器设备接口标准深度解析
 
 > **一句话理解**: CDI 是容器运行时的「设备通用语」——用一份标准 JSON 描述 GPU/FPGA/RDMA/国产加速器如何接入容器，让 NVIDIA、华为昇腾、寒武纪等异构硬件都能以同一套方式被 vLLM/TGI 等 AI 工作负载透明使用。
 

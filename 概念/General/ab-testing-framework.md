@@ -30,8 +30,11 @@ aliases:
   - "Ab Testing Framework"
   - "ab testing framework"
 
+name_zh: "A/B 测试框架"
 ---
 # A/B 测试框架
+
+> 中文简称：A/B 测试框架
 
 ## 核心要点
 

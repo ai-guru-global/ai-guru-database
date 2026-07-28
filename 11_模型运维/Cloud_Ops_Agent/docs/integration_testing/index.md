@@ -7,9 +7,13 @@ created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
 sources: []
+name_zh: "云产品运维 Agent 集成测试指南"
+name_en: "integration testing"
 ---
 
 # 云产品运维 Agent 集成测试指南 (Integration Testing)
+
+> 中文简称：云产品运维 Agent 集成测试指南 ｜ English Name: integration testing
 
 > 🎯 **目标**: 为测试工程师提供 Cloud Ops Agent 的端到端集成测试、跨组件测试、灰度发布测试、混沌工程测试的完整测试体系，确保系统在生产环境下稳定可靠。
 

@@ -15,9 +15,12 @@ sources:
   - "https://github.com/deepseek-ai (DeepSeek 开源)"
   - "https://qwenlm.github.io/ (Qwen 模型卡)"
   - "https://www.nvidia.com/gtc/ (黄仁勋 GTC 主题演讲)"
+name_zh: "中美 AI 竞赛：领袖观点与格局汇总"
 ---
 
 # 中美 AI 竞赛：领袖观点与格局汇总
+
+> 中文简称：中美 AI 竞赛：领袖观点与格局汇总
 
 > **一句话概括**: 2026 年中美 AI 竞赛已从"谁能造最大模型"演变为"谁能在芯片管制下持续创新"——美国领袖（黄仁勋/Altman/Gates）警告封锁适得其反，中国六小龙（DeepSeek/Qwen/GLM/MiniMax/月之暗面）以 MoE 效率和开源证明"创新能绕过算力墙"，本篇汇总双方领袖的核心判断。
 

@@ -17,9 +17,12 @@ relationships:
     type: implemented_by
 sources:
   - "https://arxiv.org/abs/1603.09320"  # HNSW
+name_zh: "向量索引"
 ---
 
 # Vector Index
+
+> 中文简称：向量索引
 
 > **一句话理解**: 向量索引就是向量数据库里的「快速查找表」，让海量向量中找最相似的几个不用暴力遍历。
 
@@ -94,7 +97,7 @@ sources:
 - [[概念/RAG/ivf|IVF]] — 聚类索引（省内存）
 - [[概念/RAG/vector-database|Vector Database]] — 向量数据库
 - [[概念/RAG/bm25|BM25]] — 关键词检索（互补）
-- [[14_RAG系统/03_Vector_Databases/Vector_Databases|向量数据库专题]]
+- [[14_RAG系统/03_Vector_Databases/rag-vector-database|向量数据库专题]]
 
 ## 2026 向量索引生态现状
 
@@ -139,7 +142,7 @@ sources:
 - [[概念/RAG/ivf|IVF]] — 聚类索引详解
 - [[概念/RAG/vector-database|Vector Database]] — 向量数据库
 - [[概念/RAG/bm25|BM25]] — 关键词检索
-- [[14_RAG系统/03_Vector_Databases/Vector_Databases|向量数据库专题]]
+- [[14_RAG系统/03_Vector_Databases/rag-vector-database|向量数据库专题]]
 
 > ℹ️ 向量索引是 RAG 检索的核心，2026年 HNSW 仍是通用首选，DiskANN 和 GPU 加速索引在超大规模场景表现突出。
 
@@ -197,6 +200,6 @@ sources:
 - [[概念/RAG/ivf|IVF]] — 倒排索引
 - [[概念/RAG/vector-database|Vector Database]] — 向量数据库
 - [[概念/RAG/retrieval-latency|Retrieval Latency]] — 检索延迟
-- [[14_RAG系统/03_Vector_Databases/Vector_Databases|向量数据库专题]]
+- [[14_RAG系统/03_Vector_Databases/rag-vector-database|向量数据库专题]]
 
 > ℹ️ 向量索引选型：< 100M 用 HNSW，> 100M 用 IVF+PQ 或 DiskANN，GPU 可用选 RAFT，始终平衡召回率/延迟/内存三角。

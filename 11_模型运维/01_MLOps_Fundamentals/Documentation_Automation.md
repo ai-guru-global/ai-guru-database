@@ -11,8 +11,11 @@ aliases:
   - Documentation_Automation
 sources: []
 
+name_zh: "AI 文档自动化"
 ---
 # AI 文档自动化
+
+> 中文简称：AI 文档自动化
 
 > **一句话秒懂**: AI 文档自动化就是用工具链让文档"自己写自己、自己更新自己"，告别手动维护文档的噩梦。
 

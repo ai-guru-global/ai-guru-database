@@ -11,8 +11,11 @@ aliases:
   - Benchmarking_Criteria
 sources: []
 
+name_zh: "基准评测标准"
 ---
 # Benchmarking Criteria
+
+> 中文简称：基准评测标准
 
 > Comprehensive evaluation criteria for AI agent assessment
 

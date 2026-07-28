@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "公共安全 AI 应用"
 ---
 # 公共安全 AI 应用 (Public Safety)
+
+> 中文简称：公共安全 AI 应用
 
 ## 1. 行业概况
 
@@ -118,8 +121,8 @@ PUBLIC_SAFETY_ETHICS = {
 - [[18_行业应用/|行业应用]]
 - [[03_深度学习/|深度学习 (视觉)]]
 - [[17_伦理安全/|伦理安全]]
-- [[17_伦理安全/Bias_Fairness_Testing/|偏见公平测试]]
-- [[18_行业应用/Telecommunications/|电信 (网络安全)]]
+- [[17_伦理安全/01_Ethics_Fundamentals/Bias_Fairness_Testing|偏见公平测试]]
+- [[18_行业应用/19_Other_Industries/Telecommunications|电信 (网络安全)]]
 
 ## 进阶知识拓展
 

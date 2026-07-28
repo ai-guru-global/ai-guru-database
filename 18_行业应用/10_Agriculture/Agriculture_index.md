@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "农业专题"
 ---
 
 # Agriculture
+
+> 中文简称：农业专题
 
 智慧农业（Smart Agriculture）— AI 在作物监测、精准灌溉、病虫害识别（pest detection）与产量预测中的应用。
 

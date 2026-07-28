@@ -27,9 +27,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "课程学习"
 ---
 
 # 课程学习 (Curriculum Learning)
+
+> 中文简称：课程学习
 
 > **一句话理解**:课程学习让模型像人一样"从易到难"——先学简单任务,后学复杂任务。LLM 训练中表现为:预训练(通用大数据)+ 退火(高质量数据)、SFT(简单指令 → 复杂)、RL(易题 → 难题)。Llama 3 / Qwen 3 / DeepSeek V3 公开报告全部采用。
 

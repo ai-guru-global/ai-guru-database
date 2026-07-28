@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "可观测性"
+name_en: "Observability"
 ---
 
 # Observability
+
+> 中文简称：可观测性 ｜ English Name: Observability
 
 ## 文件导航
 

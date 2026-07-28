@@ -32,8 +32,11 @@ aliases:
   - "Chatbot Arena"
   - "LMSYS Arena"
 
+name_zh: "大模型竞技场"
 ---
 # LLM Arena
+
+> 中文简称：大模型竞技场
 
 > **一句话理解**: LLM Arena 就像大模型界的“盲测选秀”：两个选手匿名出战，观众投票谁更会说人话、更懂需求、更少胡说。
 

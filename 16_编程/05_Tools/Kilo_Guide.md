@@ -11,8 +11,11 @@ aliases:
   - Kilo_Guide
 sources: []
 
+name_zh: "Kilo / KiloClaw 使用指南"
 ---
 # Kilo / KiloClaw 使用指南
+
+> 中文简称：Kilo / KiloClaw 使用指南
 
 > **一句话**: Kilo 提供 Starter 月度套餐（$19 + $2.85 免费积分），KiloClaw 是其编程工具，适合轻量级项目开发。
 

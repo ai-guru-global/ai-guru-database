@@ -30,8 +30,11 @@ aliases:
   - "Gpu Interconnect"
   - "gpu interconnect"
 
+name_zh: "NVLink 与 GPU 互联技术"
 ---
 # NVLink 与 GPU 互联技术 (GPU Interconnect)
+
+> 中文简称：NVLink 与 GPU 互联技术
 
 > GPU 的算力再强，如果彼此之间无法高效通信，整体性能就上不去。
 

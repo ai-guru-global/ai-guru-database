@@ -12,8 +12,11 @@ aliases:
   - Robot_VLA_Training_Pipeline_2026
 sources: []
 
+name_zh: "机器人 VLA 训练流水线"
 ---
 # Robot VLA Training Pipeline 2026: End-to-End Robotic Foundation Models
+
+> 中文简称：机器人 VLA 训练流水线
 
 > **一句话理解**: VLA (Vision-Language-Action) 训练流水线是具身智能的“炼丹炉”——它将海量的视频数据、人类示范数据和仿真环境经验转化为机器人可执行的连贯动作指令。
 

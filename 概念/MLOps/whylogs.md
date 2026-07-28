@@ -19,9 +19,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "数据质量与 ML 可观测性"
 ---
 
 # whylogs
+
+> 中文简称：数据质量与 ML 可观测性
 
 [whylogs](https://github.com/whylabs/whylogs) 是 [WhyLabs](https://whylabs.ai/) 开源的**数据质量分析和 ML 可观测性**库。它通过**轻量级数据画像（Data Profiling）**技术，对输入数据、模型预测和 LLM 输出进行实时分布统计，实现数据漂移检测、分布监控和异常告警。与 MLflow 侧重"实验追踪"不同，whylogs 侧重**数据层面的可观测性**。
 

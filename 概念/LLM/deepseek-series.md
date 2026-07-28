@@ -7,9 +7,12 @@ aliases:
   - DeepSeek 系列
 summary: "此页面已合并至 DeepSeek 模型系列主卡片。"
 sources: []
+name_zh: "DeepSeek 系列模型架构演进"
 ---
 
 # DeepSeek 系列模型架构演进
+
+> 中文简称：DeepSeek 系列模型架构演进
 
 > 此页面已合并至 [[deepseek-models|DeepSeek 模型系列]] 主卡片。请前往查看完整内容。
 

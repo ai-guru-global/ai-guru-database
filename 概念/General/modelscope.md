@@ -21,9 +21,12 @@ lifecycle: reviewed
 tier: core
 created: 2026-06-16
 updated: 2026-07-21
+name_zh: "ModelScope 魔搭社区"
 ---
 
 # ModelScope 魔搭社区
+
+> 中文简称：ModelScope 魔搭社区
 
 > 中国版的 Hugging Face——国内模型下载的首选平台。
 

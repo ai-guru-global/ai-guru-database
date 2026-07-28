@@ -14,8 +14,11 @@ aliases:
   - "LLM Cost Optimization"
   - LLM_Cost_Optimization
 
+name_zh: "LLM 成本优化完全指南"
 ---
 # LLM 成本优化完全指南
+
+> 中文简称：LLM 成本优化完全指南
 
 > **一句话理解**: 降低 LLM 应用成本的系统性方法:模型路由、Prompt 缓存、量化、批处理、供应商选择等策略。
 

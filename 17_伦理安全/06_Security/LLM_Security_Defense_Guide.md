@@ -24,8 +24,11 @@ aliases:
   - LLM_Security_Defense_Guide
 sources: []
 
+name_zh: "LLM 安全防御指南"
 ---
 # LLM 安全防御指南：架构、I/O 防护、安全运营与治理
+
+> 中文简称：LLM 安全防御指南
 
 > 本文从 [[https://github.com/yeasy/ai_security_guide]] 第三、四部分蒸馏而来，覆盖安全架构设计（Defense in Depth、架构模式、访问控制、Security SDLC、隐私增强技术、供应链安全）、I/O 安全防护（输入验证、输出审核、敏感数据、水印、Constitutional Classifiers）、安全运营（监控、异常检测、事件响应、红队演练、DeepTeam、SHADE-Arena）以及治理（法规、负责任 AI、新兴威胁、成熟度模型、可信 Agent 框架）。
 

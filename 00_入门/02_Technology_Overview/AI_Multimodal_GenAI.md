@@ -10,8 +10,11 @@ aliases:
   - AI_Multimodal_GenAI
 sources: []
 
+name_zh: "AI 多模态与生成式 AI"
 ---
 # AI 多模态与生成式 AI
+
+> 中文简称：AI 多模态与生成式 AI
 
 > **一句话理解**: 多模态 AI 让模型同时具备"看、听、说"的能力，扩散模型（Diffusion Model）实现了从噪声中"雕刻"出图像和视频的魔法，而具身智能（Embodied AI）正在将 AI 从数字世界带入物理世界。
 

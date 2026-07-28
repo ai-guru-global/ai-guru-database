@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "网络安全"
+name_en: "Security Cybersecurity"
 ---
 
 # Security Cybersecurity
+
+> 中文简称：网络安全 ｜ English Name: Security Cybersecurity
 
 ## 文件导航
 

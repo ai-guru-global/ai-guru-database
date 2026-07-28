@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "深度强化学习"
+name_en: "Deep RL"
 ---
 
 # Deep RL
+
+> 中文简称：深度强化学习 ｜ English Name: Deep RL
 
 深度强化学习（Deep Reinforcement Learning）— DQN、PPO、SAC、Model-Based RL 与 Offline RL 的系统知识体系。
 

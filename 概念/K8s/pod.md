@@ -21,9 +21,12 @@ relationships:
   - target: "概念/containerd"
     type: runs_on
 sources: []
+name_zh: "K8s 最小部署单元"
 ---
 
 # Pod
+
+> 中文简称：K8s 最小部署单元
 
 > **一句话理解**: Pod 是 Kubernetes 里「容器的最小组织单元」——一个 Pod 内的容器共享 IP、端口空间和存储卷，一起被调度、一起启停。
 

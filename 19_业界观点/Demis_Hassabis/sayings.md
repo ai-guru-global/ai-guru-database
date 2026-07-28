@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Demis Hassabis 关于 AI 的观点"
 ---
 # Demis Hassabis 关于 AI 的观点 (Demis Hassabis on AI)
+
+> 中文简称：Demis Hassabis 关于 AI 的观点
 
 ## 1. AGI 与智能的本质 (AGI & The Nature of Intelligence)
 

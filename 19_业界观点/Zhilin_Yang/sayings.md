@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "杨植麟关于 AI 的观点"
 ---
 # 杨植麟关于 AI 的观点 (Zhilin Yang on AI)
+
+> 中文简称：杨植麟关于 AI 的观点
 
 1. **"长上下文不是功能特性，是通往 AGI 的关键路径——记忆的长度决定了智能的深度。"**
    - **上下文**: 解释月之暗面从 Transformer-XL 到 Kimi 200K 上下文的核心信念：长记忆是 AGI 的前提。

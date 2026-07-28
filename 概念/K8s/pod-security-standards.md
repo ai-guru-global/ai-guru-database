@@ -19,9 +19,12 @@ relationships:
   - target: "概念/opa"
     type: related_to
 sources: []
+name_zh: "Pod 安全标准"
 ---
 
 # Pod Security Standards
+
+> 中文简称：Pod 安全标准
 
 > **一句话理解**: Pod Security Standards 是 K8s 官方给出的「Pod 安全配置红绿灯」，把 Pod 权限分为宽松、基线、严格三档，防止容器做过危险操作。
 

@@ -27,8 +27,11 @@ aliases:
   - "Microsoft AI Agents L08 Multi Agent"
   - Microsoft_AI_Agents_L08_Multi_Agent
 
+name_zh: "L08 多 Agent 设计模式：组聊、Hand-off、协同过滤"
 ---
 # L08 多 Agent 设计模式：组聊、Hand-off、协同过滤
+
+> 中文简称：L08 多 Agent 设计模式：组聊、Hand-off、协同过滤
 
 > 来源：[Microsoft AI Agents for Beginners / 08-multi-agent](https://github.com/microsoft/ai-agents-for-beginners/tree/main/08-multi-agent)
 

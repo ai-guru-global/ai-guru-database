@@ -12,8 +12,11 @@ aliases:
   - AB_Testing
 sources: []
 
+name_zh: "AI 系统 A/B 测试完全指南"
 ---
 # AI 系统 A/B 测试完全指南 (A/B Testing for AI Systems)
+
+> 中文简称：AI 系统 A/B 测试完全指南
 
 > A/B 测试是 AI 系统上线前的最后一道质量关——从实验设计到统计分析，系统解析 AI 系统 A/B 测试的方法论和工程实践。
 

@@ -7,9 +7,12 @@ created: 2026-07-23
 updated: 2026-07-23
 tier: supporting
 sources: []
+name_zh: "Research Scientist 面试题实例答案"
 ---
 
 # Research Scientist 面试题实例答案
+
+> 中文简称：Research Scientist 面试题实例答案
 
 > 每个答案采用 **结论 → 推导/展开 → 批判 → 追问预判** 结构。
 
@@ -326,4 +329,4 @@ def elbo_loss(x, recon_x, mu, logvar):
 - [[01_数学基础/index|数学基础]]
 - [[20_论文精读/index|论文精读]]
 - [[21_面试岗位/AI_Research_Scientist/index|AI Research Scientist]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]

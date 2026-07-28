@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Sam Altman 关于 AI 的观点"
 ---
 # Sam Altman 关于 AI 的观点 (Sam Altman on AI)
+
+> 中文简称：Sam Altman 关于 AI 的观点
 
 ## 1. AGI 与未来愿景 (AGI & Future Vision)
 

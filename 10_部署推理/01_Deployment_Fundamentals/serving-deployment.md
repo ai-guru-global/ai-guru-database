@@ -18,8 +18,11 @@ aliases:
   - "Serving Deployment"
   - "serving deployment"
 
+name_zh: "模型服务 × 模型部署"
 ---
 # 模型服务 × 模型部署
+
+> 中文简称：模型服务 × 模型部署
 
 ## The Connection
 

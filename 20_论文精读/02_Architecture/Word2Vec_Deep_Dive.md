@@ -7,9 +7,12 @@ summary: "Word2Vec (2013) 用浅层神经网络高效学习词向量，发现 ki
 created: 2026-06-04
 updated: 2026-06-04
 sources: []
+name_zh: "论文深度解读"
 ---
 
 # 论文深度解读: Word2Vec — Efficient Estimation of Word Representations in Vector Space
+
+> 中文简称：论文深度解读
 
 > **一句话理解**: Word2Vec 用浅层网络从上下文预测词，学到的词向量能做类比运算 (king-man+woman≈queen)，开创了"万物皆可 Embedding"的时代。
 

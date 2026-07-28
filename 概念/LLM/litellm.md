@@ -19,9 +19,12 @@ lifecycle: reviewed
 tier: core
 created: 2026-06-12
 updated: 2026-07-21
+name_zh: "LiteLLM 统一 LLM API 代理"
 ---
 
 # LiteLLM 统一 LLM API 代理
+
+> 中文简称：LiteLLM 统一 LLM API 代理
 
 > **一句话理解**: LiteLLM 是"LLM 的统一转接头"——一个 API 格式调用所有 LLM，自动负载均衡、Fallback、成本追踪。
 

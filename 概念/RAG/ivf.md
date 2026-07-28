@@ -22,9 +22,12 @@ relationships:
     type: used_by
 sources:
   - "https://arxiv.org/abs/1702.08734"  # Billion-scale similarity search with GPUs (Faiss)
+name_zh: "倒排文件索引"
 ---
 
 # IVF
+
+> 中文简称：倒排文件索引
 
 > **一句话理解**: IVF 先把向量聚成很多类，搜索时只扫最相关的几个类，用内存少、速度快，适合向量特别多的场景。
 

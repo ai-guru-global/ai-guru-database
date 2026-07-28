@@ -12,8 +12,11 @@ aliases:
   - SmolAgents_Deep_Dive
 sources: []
 
+name_zh: "SmolAgents: 轻量级 Agent 框架"
 ---
 # SmolAgents: 轻量级 Agent 框架
+
+> 中文简称：SmolAgents: 轻量级 Agent 框架
 
 > **一句话理解**: SmolAgents 是 Hugging Face 推出的轻量级 Agent 框架——用最少的代码实现 Tool Calling 和自主决策，让构建 Agent 变得简单高效。
 

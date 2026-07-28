@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Emad Mostaque 简介"
 ---
 # Emad Mostaque 简介 (Emad Mostaque)
+
+> 中文简称：Emad Mostaque 简介
 
 ## 一句话概括
 

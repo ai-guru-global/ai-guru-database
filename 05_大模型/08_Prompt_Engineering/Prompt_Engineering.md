@@ -11,8 +11,11 @@ aliases:
   - Prompt_Engineering
 sources: []
 
+name_zh: "提示词工程"
 ---
 # 提示词工程 (Prompt Engineering)
+
+> 中文简称：提示词工程
 
 > **一句话理解**: 提示词工程就像和一个超级聪明但需要精确指令的助手沟通——你表达得越清楚、给的例子越好，它的回答就越准确。Prompt 是人类与大模型之间的"编程语言"。
 

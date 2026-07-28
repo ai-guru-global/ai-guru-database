@@ -12,8 +12,11 @@ aliases:
   - AI_Gateway_README
 sources: []
 
+name_zh: "AI 网关总览"
 ---
 # AI Gateway
+
+> 中文简称：AI 网关总览
 
 > AI 网关是 LLM 请求的统一入口，提供路由、限流、缓存、成本控制等企业级能力。
 

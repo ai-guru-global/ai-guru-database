@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "Python 工具箱"
+name_en: "Python Toolkit"
 ---
 
 # Python Toolkit
+
+> 中文简称：Python 工具箱 ｜ English Name: Python Toolkit
 
 ## 文件导航
 

@@ -11,8 +11,11 @@ aliases:
   - Deployment_Inference
 sources: []
 
+name_zh: "模型部署与推理加速"
 ---
 # 模型部署与推理加速 (Deployment & Inference)
+
+> 中文简称：模型部署与推理加速
 
 > **一句话理解**: 就像把实验室里的发明变成能在工厂量产的产品，让 AI 模型从研究原型转变为高效稳定的生产服务。
 

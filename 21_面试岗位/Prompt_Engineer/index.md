@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "提示词工程师"
+name_en: "Prompt Engineer"
 ---
 
 # Prompt Engineer
+
+> 中文简称：提示词工程师 ｜ English Name: Prompt Engineer
 
 提示词工程师 — 设计、优化与评估 LLM 提示词（prompt），涵盖 Few-shot、CoT、结构化输出与 Prompt 安全。
 
@@ -205,3 +209,7 @@ tags: [auto-index]
 - [ ] 了解目标公司和岗位的具体要求
 - [ ] 准备好向面试官提问的问题清单
 - [ ] 薪资期望已基于市场调研确定
+
+## 相关文档
+
+- [[21_面试岗位/Prompt_Engineer/question_bank|提示词工程师题库]]

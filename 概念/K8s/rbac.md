@@ -22,8 +22,11 @@ updated: 2026-07-21
 aliases:
   - Rbac
 
+name_zh: "RBAC 基于角色的访问控制"
 ---
 # RBAC 基于角色的访问控制 (Role-Based Access Control)
+
+> 中文简称：RBAC 基于角色的访问控制
 
 > 不给任何人多余的权限——安全架构的基石。
 

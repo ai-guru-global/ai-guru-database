@@ -12,8 +12,11 @@ aliases:
   - AutoML_for_dummy
 sources: []
 
+name_zh: "AutoML - 小白版"
 ---
 # AutoML - 小白版
+
+> 中文简称：AutoML - 小白版
 
 > **一句话秒懂**: AutoML 就像"AI 自动调参机器人"——你把数据丢进去，它帮你自动选模型、调参数、做特征，最后给你一个能用的结果。
 
@@ -241,6 +244,6 @@ flowchart TD
 
 - [[../../01_数学基础/03_Probability_Statistics/Probability_Statistics_for_dummy|概率统计]] — AutoML 的前置数学
 - [[../../03_深度学习/03_Optimization/Optimization_for_dummy|优化入门]] — 超参数搜索的数学基础
-- [[../../08_模型评估/01_Evaluation_Fundamentals|评估基础]] — AutoML 的模型评估方法
+- [[08_模型评估/01_Evaluation_Fundamentals|评估基础]] — AutoML 的模型评估方法
 - [[../../概念/Math/anomaly-detection|异常检测概念卡]] — AutoML 在异常检测中的应用
-- [[../../10_部署推理/Cost|推理成本]] — AutoML 模型部署成本考量
+- [[10_部署推理/09_Cost/index|推理成本]] — AutoML 模型部署成本考量

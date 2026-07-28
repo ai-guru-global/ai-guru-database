@@ -12,8 +12,11 @@ aliases:
   - Prompt_Caching_and_KV_Cache_Optimization
 sources: []
 
+name_zh: "Prompt Caching 与 KV Cache 优化深度解析"
 ---
 # Prompt Caching 与 KV Cache 优化深度解析
+
+> 中文简称：Prompt Caching 与 KV Cache 优化深度解析
 
 ## 一句话理解
 

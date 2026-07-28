@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Ilya Sutskever 关于 AI 的观点"
 ---
 # Ilya Sutskever 关于 AI 的观点 (Ilya Sutskever on AI)
+
+> 中文简称：Ilya Sutskever 关于 AI 的观点
 
 ## 1. 对齐与安全 (Alignment & Safety)
 

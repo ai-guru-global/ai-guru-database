@@ -12,8 +12,11 @@ aliases:
   - Wuying_AgentBay
 sources: []
 
+name_zh: "无影 AgentBay"
 ---
 # Wuying AgentBay: Alibaba Cloud's AI Agent Infrastructure
+
+> 中文简称：无影 AgentBay
 
 ## Overview
 

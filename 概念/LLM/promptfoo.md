@@ -19,9 +19,12 @@ lifecycle: reviewed
 tier: supporting
 created: 2026-06-12
 updated: 2026-07-21
+name_zh: "Promptfoo Prompt 测试框架"
 ---
 
 # Promptfoo Prompt 测试框架
+
+> 中文简称：Promptfoo Prompt 测试框架
 
 > **一句话理解**: Promptfoo 是"LLM Prompt 的单元测试"——用 YAML 定义测试用例，自动跑多模型 A/B 对比，找到最好的 Prompt。
 

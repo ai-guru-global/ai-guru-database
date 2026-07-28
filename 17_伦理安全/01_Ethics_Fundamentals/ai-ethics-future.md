@@ -10,8 +10,11 @@ aliases:
   - "ai ethics future"
 sources: []
 
+name_zh: "AI 伦理与未来趋势的交叉审视"
 ---
 # AI 伦理与未来趋势的交叉审视
+
+> 中文简称：AI 伦理与未来趋势的交叉审视
 
 ## The Connection
 

@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Andrej Karpathy 简介"
 ---
 # Andrej Karpathy 简介 (Andrej Karpathy)
+
+> 中文简称：Andrej Karpathy 简介
 
 ## 一句话概括
 

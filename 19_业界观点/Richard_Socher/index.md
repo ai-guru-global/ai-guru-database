@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "理查德·索赫尔"
+name_en: "Richard Socher"
 ---
 
 # Richard_Socher
+
+> 中文简称：理查德·索赫尔 ｜ English Name: Richard Socher
 
 Richard Socher — Salesforce 首席科学家、you.com 创始人，NLP 与多模态（multimodal）领域的学术先驱。
 
@@ -206,3 +210,7 @@ Richard Socher — Salesforce 首席科学家、you.com 创始人，NLP 与多�
 
 ---
 *Last updated: 2026-07-21*
+
+## 关联导航
+
+- [[19_业界观点/Richard_Socher/Richard_Socher_2026_Update\|2026 动态更新]]

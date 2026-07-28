@@ -12,8 +12,11 @@ aliases:
   - DSPy_Deep_Dive
 sources: []
 
+name_zh: "DSPy: 可编程的 Prompt 优化框架"
 ---
 # DSPy: 可编程的 Prompt 优化框架
+
+> 中文简称：DSPy: 可编程的 Prompt 优化框架
 
 > **一句话理解**: DSPy 是斯坦福的可编程 Prompt 优化框架——用 Python 代码而非字符串定义 Prompt、自动优化模块组合、学会提示而非手工撰写。
 

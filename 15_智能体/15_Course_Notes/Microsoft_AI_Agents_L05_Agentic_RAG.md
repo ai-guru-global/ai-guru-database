@@ -28,8 +28,11 @@ aliases:
   - "Microsoft AI Agents L05 Agentic RAG"
   - Microsoft_AI_Agents_L05_Agentic_RAG
 
+name_zh: "Agentic RAG 课程笔记"
 ---
 # L05 Agentic RAG
+
+> 中文简称：Agentic RAG 课程笔记
 
 > 来源：[Microsoft AI Agents for Beginners / 05-agentic-rag](https://github.com/microsoft/ai-agents-for-beginners/tree/main/05-agentic-rag)
 

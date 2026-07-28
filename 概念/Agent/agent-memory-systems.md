@@ -19,9 +19,12 @@ updated: 2026-07-21
 aliases:
   - "Agent Memory Systems"
   - "agent memory systems"
+name_zh: "Agent 记忆系统"
 ---
 
 # Agent 记忆系统（Memory）
+
+> 中文简称：Agent 记忆系统
 
 ## 核心要点
 

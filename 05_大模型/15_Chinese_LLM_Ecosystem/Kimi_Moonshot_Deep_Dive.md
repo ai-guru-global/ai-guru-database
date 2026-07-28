@@ -11,8 +11,11 @@ aliases:
   - Kimi_Moonshot_Deep_Dive
 sources: []
 
+name_zh: "Kimi / Moonshot AI : 长上下文与推理的技术深潜"
 ---
 # Kimi / Moonshot AI (月之暗面): 长上下文与推理的技术深潜
+
+> 中文简称：Kimi / Moonshot AI : 长上下文与推理的技术深潜
 
 > **一句话理解**: Kimi/Moonshot AI 是中国长上下文 AI 的开拓者——从 200K 上下文先驱到万亿参数 MoE 架构，用 RL scaling 和 MuonClip 优化器走出一条"长上下文 → 深度推理 → Agentic"的技术路径，堪比中国版 Anthropic。
 

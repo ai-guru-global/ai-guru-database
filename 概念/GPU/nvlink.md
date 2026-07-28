@@ -14,9 +14,12 @@ relationships:
   - target: "概念/distributed-training"
     type: related_to
 sources: []
+name_zh: "GPU 高速互联"
 ---
 
 # NVLink
+
+> 中文简称：GPU 高速互联
 
 > **一句话理解**: NVLink 是 NVIDIA GPU 之间的「专用快车道」，让同一台服务器里的多张 GPU 卡能以极高带宽互相访问显存。
 

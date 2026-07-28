@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.80
 lifecycle: reviewed
 tier: supporting
+name_zh: "Docling 文档解析工具"
 ---
 
 # Docling 文档解析工具
+
+> 中文简称：Docling 文档解析工具
 
 > **一句话理解**: Docling 是"RAG 的文档解析器"——IBM 开源，能将 PDF/Word/PPT 转为结构化 JSON，保留表格、图片、段落层级关系，让 RAG 检索更精准。
 

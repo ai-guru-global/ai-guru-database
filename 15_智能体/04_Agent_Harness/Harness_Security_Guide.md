@@ -11,12 +11,15 @@ aliases:
   - Harness_Security_Guide
 sources: []
 
+name_zh: "Agent Harness 安全深度指南"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Agent Harness 安全深度指南
+
+> 中文简称：Agent Harness 安全深度指南
 
 > 生产级 Agent Harness 面临独特的安全挑战：Agent 可以执行代码、访问文件、调用外部 API。本文档提供系统化的 Harness 安全设计方法，从威胁建模到防御实现。
 

@@ -27,8 +27,11 @@ aliases:
   - "Ai Coding Paradigms"
   - "ai coding paradigms"
 
+name_zh: "AI 编程范式"
 ---
 # AI 编程范式（AI Coding Paradigms）
+
+> 中文简称：AI 编程范式
 
 ## 核心要点
 

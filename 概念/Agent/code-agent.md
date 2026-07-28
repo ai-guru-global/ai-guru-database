@@ -33,9 +33,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "Code Agent / 软件工程 Agent"
 ---
 
 # Code Agent / 软件工程 Agent
+
+> 中文简称：Code Agent / 软件工程 Agent
 
 > **一句话理解**:Code Agent 不是 Copilot——它能**自主**打开 IDE、读代码、跑命令、写测试、提交 PR、修复 CI,完成端到端开发任务。SWE-bench Verified 准确率从 2024-01 的 12.5% 飙升到 2026-02 的 80%+,是 AI 落地最确定的 ROI 场景。
 
@@ -281,4 +284,4 @@ claude "在概念/LLM 下加一张 yi-coder.md,10KB 内,涵盖 Yi-Coder 模型�
 - [[概念/agent-framework|Agent Framework]]
 - [[概念/llm-as-judge|Llm As Judge]]
 - [[概念/claude-series|Claude Series]]
-- [[概念/swe-bench|Swe Bench]]
+- [[概念/LLM/agent-benchmarks|Swe Bench]]

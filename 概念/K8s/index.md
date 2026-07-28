@@ -5,9 +5,13 @@ tags: ["kubernetes", "k8s", "index", "ai"]
 summary: "概念/K8s 目录导航索引，按 AI 核心关联度分类。"
 updated: 2026-07-21
 tier: core
+name_zh: "K8s 概念"
+name_en: "K8s"
 ---
 
 # K8s 概念索引
+
+> 中文简称：K8s 概念 ｜ English Name: K8s
 
 > 本目录聚焦 **AI/机器学习场景下的 Kubernetes 知识**。通用云原生工具已归档至底部，仅作参考。
 

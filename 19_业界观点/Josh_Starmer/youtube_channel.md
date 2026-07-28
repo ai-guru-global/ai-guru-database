@@ -16,8 +16,11 @@ aliases:
   - "youtube channel"
   - youtube_channel
 
+name_zh: "StatQuest Josh Starmer YouTube 频道"
 ---
 # StatQuest Josh Starmer YouTube 频道
+
+> 中文简称：StatQuest Josh Starmer YouTube 频道
 
 > **一句话理解**: StatQuest 频道用简单直觉的方式讲解统计学和机器学习,Josh Starmer 的可视化教学让复杂数学变得易懂。
 

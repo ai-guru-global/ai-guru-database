@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "梁文锋关于 AI 的观点"
 ---
 # 梁文锋关于 AI 的观点 (Wenfeng Liang on AI)
+
+> 中文简称：梁文锋关于 AI 的观点
 
 1. **"效率比规模更重要——$5.6M 训练出 GPT-4 级别的模型，证明了算法创新比烧钱更有价值。"**
    - **上下文**: DeepSeek-V3 以 671B 参数、$5.6M 训练成本达到与 GPT-4 媲美的性能，震惊全球 AI 界。

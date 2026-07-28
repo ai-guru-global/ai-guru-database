@@ -19,8 +19,11 @@ aliases:
 sources:
   - "https://developers.google.com/machine-learning/crash-course"
 
+name_zh: "Stage 1: 基础概念"
 ---
 # Stage 1: 基础概念
+
+> 中文简称：Stage 1: 基础概念
 
 > **"AI 的地基——不懂这些词，后面所有技术文档都是天书。"**
 >

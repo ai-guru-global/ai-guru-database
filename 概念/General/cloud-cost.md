@@ -16,9 +16,12 @@ relationships:
   - target: "概念/alibaba-cloud"
     type: incurred_on
 sources: []
+name_zh: "云成本"
 ---
 
 # Cloud Cost（云成本）
+
+> 中文简称：云成本
 
 > **一句话理解**: 云成本 = 用云服务花的钱。AI 时代 GPU 实例占大头，FinOps 是必备技能。
 

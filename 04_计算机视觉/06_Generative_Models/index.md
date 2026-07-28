@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "视觉生成模型"
+name_en: "Generative Models"
 ---
 
 # Generative Models
+
+> 中文简称：视觉生成模型 ｜ English Name: Generative Models
 
 生成式视觉模型（Generative Models）— 扩散模型（Diffusion Models）、GAN、VAE 与图像生成的核心架构。
 

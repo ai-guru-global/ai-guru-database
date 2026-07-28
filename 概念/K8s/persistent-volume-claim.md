@@ -19,9 +19,12 @@ relationships:
   - target: "概念/statefulset"
     type: used_by
 sources: []
+name_zh: "持久卷声明"
 ---
 
 # PersistentVolumeClaim（PVC）
+
+> 中文简称：持久卷声明
 
 > **一句话理解**: PVC 是 Pod 向 Kubernetes 集群「申请持久化存储」的工单，声明需要的容量和访问模式，由集群匹配后端 PersistentVolume。
 

@@ -8,9 +8,12 @@ aliases:
   - "CUDA"
 summary: "此页面已合并至主卡片。"
 sources: []
+name_zh: "CUDA 并行计算平台"
 ---
 
 # CUDA
+
+> 中文简称：CUDA 并行计算平台
 
 > 此页面已合并至 [[概念/GPU/cuda-platform|CUDA 计算平台]] 主卡片。请前往查看完整内容。
 

@@ -12,8 +12,11 @@ aliases:
   - SRE_for_AI_Systems
 sources: []
 
+name_zh: "AI 系统的 SRE 实践指南"
 ---
 # AI 系统的 SRE 实践指南
+
+> 中文简称：AI 系统的 SRE 实践指南
 
 > 🎯 **目标**：将 Google SRE 方法论应用于 AI/LLM 生产系统，建立可靠性工程体系 —— SLI/SLO 定义、错误预算、On-Call、事故响应和 Postmortem 文化。
 

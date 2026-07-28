@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "机器学习基础"
+name_en: "ML Fundamentals"
 ---
 
 # ML Fundamentals
+
+> 中文简称：机器学习基础 ｜ English Name: ML Fundamentals
 
 ## 文件导航
 

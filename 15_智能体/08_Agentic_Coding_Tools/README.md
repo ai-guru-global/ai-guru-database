@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "Agentic Coding 工具"
 ---
 # Agentic Coding 工具
+
+> 中文简称：Agentic Coding 工具
 
 > 从代码补全到完全自主执行，AI Agent 编程工具正在重塑软件开发的每个环节。
 

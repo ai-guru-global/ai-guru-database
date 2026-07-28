@@ -5,9 +5,12 @@ category: ethics
 tags: [ethics, safety, deepfake, privacy, alignment, agi, employment]
 source: yeasy/ai_beginner_guide/15_ethics_future
 sources: []
+name_zh: "AI 伦理、安全与未来"
 ---
 
 # AI 伦理、安全与未来
+
+> 中文简称：AI 伦理、安全与未来
 
 > 一句话理解：AI 是一面镜子，照出了人类社会的偏见；让它安全可靠、造福人类，是当下最核心的技术挑战之一。
 

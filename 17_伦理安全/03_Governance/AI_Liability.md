@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "AI 责任与法律"
 ---
 # AI 责任与法律 (AI Liability)
+
+> 中文简称：AI 责任与法律
 
 ## 1. AI 责任核心问题
 

@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "智能体评估"
+name_en: "Agent Evaluation"
 ---
 
 # Agent Evaluation
+
+> 中文简称：智能体评估 ｜ English Name: Agent Evaluation
 
 智能体评估 — 评估方法论、基准测试、指标体系、排行榜与红队测试。
 

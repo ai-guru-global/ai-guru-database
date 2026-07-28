@@ -6,9 +6,12 @@ summary: StatQuest 统计学与机器学习视频课程索引。
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "StatQuest 学习资源"
 ---
 
 # StatQuest 学习资源
+
+> 中文简称：StatQuest 学习资源
 
 > **一句话理解**: StatQuest 用简洁的动画和解释让统计与机器学习概念变得直观易懂。
 

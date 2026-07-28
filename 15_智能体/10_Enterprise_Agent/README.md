@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "企业级 Agent"
 ---
 # 企业级 Agent
+
+> 中文简称：企业级 Agent
 
 > 生产部署 ≠ 原型上线 —— 企业级 Agent 需要分层架构、完善监控、CI/CD 流水线，以及严格的安全控制和成本管理。
 

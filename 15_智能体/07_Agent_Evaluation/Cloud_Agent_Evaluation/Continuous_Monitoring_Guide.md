@@ -11,8 +11,11 @@ aliases:
   - Continuous_Monitoring_Guide
 sources: []
 
+name_zh: "持续监控与优化指南"
 ---
 # 持续监控与优化指南
+
+> 中文简称：持续监控与优化指南
 
 > 云产品智能体的持续测评、能力追踪和优化改进体系
 

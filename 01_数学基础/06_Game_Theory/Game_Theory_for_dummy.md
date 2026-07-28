@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: introductory
 sources: []
 
+name_zh: "博弈论 - 小白版"
 ---
 # 博弈论 - 小白版
+
+> 中文简称：博弈论 - 小白版
 
 > 零基础友好，用生活故事理解"策略互动"的学问。
 
@@ -210,4 +213,4 @@ GPU 集群分配:
 
 - 想了解数学细节？→ [[01_数学基础/06_Game_Theory/Game_Theory|博弈论总论]]
 - 想了解 AI 对齐？→ [[01_数学基础/06_Game_Theory/Game_Theory_AI_Alignment|博弈论与 AI 对齐]]
-- 想了解多 Agent？→ [[06_强化学习/Multi_Agent_RL/|多智能体强化学习]]
+- 想了解多 Agent？→ [[06_强化学习/06_Multi_Agent/Multi_Agent_RL|多智能体强化学习]]

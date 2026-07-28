@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "特征工程"
+name_en: "Feature Engineering"
 ---
 
 # Feature Engineering
+
+> 中文简称：特征工程 ｜ English Name: Feature Engineering
 
 特征工程 — 从原始数据中构造有效特征以提升模型性能，包括数据预处理、特征变换和特征选择。
 

@@ -14,8 +14,11 @@ aliases:
   - "AI Education Applications 2026"
   - AI_Education_Applications_2026
 
+name_zh: "AI 教育应用场景深度解析"
 ---
 # AI 教育应用场景深度解析
+
+> 中文简称：AI 教育应用场景深度解析
 
 > **一句话理解**: AI 在教育领域的核心应用:个性化辅导、自动评分、内容生成、学习分析等场景的技术方案与实践。
 

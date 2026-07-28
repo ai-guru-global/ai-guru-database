@@ -4,9 +4,12 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "综合索引归档"
 ---
 
 # Synthesis
+
+> 中文简称：综合索引归档
 
 This page indexes the contents of `综合`.
 

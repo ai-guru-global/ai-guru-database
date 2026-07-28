@@ -12,12 +12,15 @@ aliases:
   - CI_CD_Pipeline_AI_2026
 sources: []
 
+name_zh: "AI 系统 CI/CD 流水线 2026"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # AI 系统 CI/CD 流水线 2026 (CI/CD Pipeline for AI)
+
+> 中文简称：AI 系统 CI/CD 流水线 2026
 
 > **一句话理解**: AI 系统的 CI/CD 就像"智能工厂的生产线"——不仅自动测试和部署代码，还要自动训练模型、评估质量、监控性能，确保每次更新都是安全可靠的。
 

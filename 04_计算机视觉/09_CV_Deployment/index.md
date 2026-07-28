@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "视觉部署"
+name_en: "CV Deployment"
 ---
 
 # CV Deployment
+
+> 中文简称：视觉部署 ｜ English Name: CV Deployment
 
 ## 文件导航
 

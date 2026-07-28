@@ -12,8 +12,11 @@ aliases:
   - LLM_Fundamentals
 sources: []
 
+name_zh: "大语言模型基础"
 ---
 # 大语言模型基础 (LLM Fundamentals)
+
+> 中文简称：大语言模型基础
 
 > **一句话理解**: 大语言模型 (LLM) = Transformer 架构 + 海量文本预训练 + 人类反馈对齐——它不"理解"语言，但通过预测下一个 token 的概率分布，涌现出了翻译、推理、编程等惊人能力。
 

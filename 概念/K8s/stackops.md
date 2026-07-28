@@ -21,9 +21,12 @@ lifecycle: reviewed
 tier: core
 created: 2026-06-16
 updated: 2026-07-21
+name_zh: "stackops AI Stack 专属运维工具"
 ---
 
 # stackops / aioController AI Stack 专属运维工具
+
+> 中文简称：stackops AI Stack 专属运维工具
 
 > **一句话理解**: stackops 是 AI Stack 的"一键运维管家"——封装了 K8s/容器/GPU/模型等复杂操作，提供开箱即用的部署/升级/诊断体验。
 

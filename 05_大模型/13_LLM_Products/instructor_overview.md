@@ -14,8 +14,11 @@ aliases:
   - "instructor overview"
   - instructor_overview
 
+name_zh: "Instructor 结构化输出库概览"
 ---
 # Instructor 结构化输出库概览
+
+> 中文简称：Instructor 结构化输出库概览
 
 > **一句话理解**: 最流行的 LLM 结构化输出库,用 Pydantic 定义输出 schema,自动重试确保可靠。
 
@@ -177,8 +180,8 @@ result = client.chat.completions.create(
 
 - [[05_大模型/16_Constrained_Generation/Structured_Output_Guide|结构化输出指南]]
 - [[05_大模型/README|NLP & LLMs]]
-- [[概念/structured-output|结构化输出]]
-- [[概念/pydantic|Pydantic 数据验证]]
+- [[概念/LLM/structured-output|结构化输出]]
+- [[概念/LLM/structured-output|Pydantic 数据验证]]
 - [[05_大模型/13_LLM_Products/outlines_overview|Outlines 概览]]
 - [[05_大模型/13_LLM_Products/chatgpt_overview|ChatGPT 概览]]
 

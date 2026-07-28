@@ -27,8 +27,11 @@ aliases:
   - "Embeddings Vectors Mrl Plain"
   - "embeddings vectors mrl plain"
 
+name_zh: "Embedding、向量与 MRL 大白话"
 ---
 # Embedding、向量与 MRL 大白话
+
+> 中文简称：Embedding、向量与 MRL 大白话
 
 > 本文用生活化的语言解释三个 AI 核心概念：**Embedding**、**向量** 和 **MRL**。不需要数学基础，读完就能跟人聊明白。
 

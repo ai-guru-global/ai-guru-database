@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Richard Socher 关于 AI 的观点"
 ---
 # Richard Socher 关于 AI 的观点 (Richard Socher on AI)
+
+> 中文简称：Richard Socher 关于 AI 的观点
 
 ## 1. 搜索与交互范式 (Search & Interaction Paradigms)
 

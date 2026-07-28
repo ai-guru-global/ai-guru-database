@@ -8,9 +8,12 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "AI 场景 FinOps"
 ---
 
 # AI 场景 FinOps
+
+> 中文简称：AI 场景 FinOps
 
 > **一句话理解**: FinOps for AI 就是「搞清楚 GPU 钱花哪了、谁花的、能不能少花」，并且让技术和财务用同一套语言沟通。
 

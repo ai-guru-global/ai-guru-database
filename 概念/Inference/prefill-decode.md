@@ -35,8 +35,11 @@ aliases:
   - "Prefill Decode"
   - "prefill decode"
 
+name_zh: "Prefill/Decode 推理阶段"
 ---
 # Prefill/Decode 推理阶段 (Inference Phases)
+
+> 中文简称：Prefill/Decode 推理阶段
 
 > 理解推理的两个阶段，才能分别优化它们。
 

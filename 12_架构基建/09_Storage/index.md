@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "存储"
+name_en: "Storage"
 ---
 
 # Storage
+
+> 中文简称：存储 ｜ English Name: Storage
 
 存储（Storage）— AI 平台的存储架构，涵盖模型存储（model storage）、Checkpoint 管理与分布式存储优化。
 

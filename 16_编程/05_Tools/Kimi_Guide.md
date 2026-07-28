@@ -11,12 +11,15 @@ aliases:
   - Kimi_Guide
 sources: []
 
+name_zh: "Kimi Code / Kimi Chat 使用指南"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Kimi Code / Kimi Chat 使用指南
+
+> 中文简称：Kimi Code / Kimi Chat 使用指南
 
 > **一句话**: 月之暗面 Kimi 提供 Code（编程）和 Chat（对话）两种模式，Allegretto 套餐 ¥159/月，是稳定的国产 AI 编程辅助工具。
 

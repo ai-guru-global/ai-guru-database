@@ -30,8 +30,11 @@ updated: 2026-07-21T00:00:00Z
 aliases:
   - Mlops
 
+name_zh: "MLOps 流水线"
 ---
 # MLOps 流水线
+
+> 中文简称：MLOps 流水线
 
 ## 核心要点
 

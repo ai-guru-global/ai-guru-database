@@ -30,8 +30,11 @@ aliases:
   - "Dynamic Batch Scheduling"
   - "dynamic batch scheduling"
 
+name_zh: "动态批调度"
 ---
 # 动态批调度
+
+> 中文简称：动态批调度
 
 ## 核心要点
 

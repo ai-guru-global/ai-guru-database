@@ -12,8 +12,11 @@ aliases:
   - Mistral_AI_Deep_Dive
 sources: []
 
+name_zh: "Mistral AI 技术深度解析"
 ---
 # Mistral AI 技术深度解析
+
+> 中文简称：Mistral AI 技术深度解析
 
 ## 一句话理解
 

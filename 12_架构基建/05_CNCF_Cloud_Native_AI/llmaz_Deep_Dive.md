@@ -12,8 +12,11 @@ aliases:
   - llmaz_Deep_Dive
 sources: []
 
+name_zh: "llmaz: 易用优先的 K8s 大模型推理平台"
 ---
 # llmaz: 易用优先的 K8s 大模型推理平台
+
+> 中文简称：llmaz: 易用优先的 K8s 大模型推理平台
 
 > **一句话理解**: llmaz 把「模型」抽象成一个 Kubernetes CRD（Model）——声明一次模型来源/量化/引擎，就能在任何地方复用部署，是 K8s 上「易用优先」的大模型推理平台。
 

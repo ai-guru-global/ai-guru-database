@@ -19,9 +19,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "Microsoft PII 检测与脱敏引擎"
 ---
 
 # Presidio (Microsoft Presidio)
+
+> 中文简称：Microsoft PII 检测与脱敏引擎
 
 [Microsoft Presidio](https://github.com/microsoft/presidio) 是一个开源的 PII（Personally Identifiable Information，个人身份信息）检测与脱敏引擎。它结合 **NLP 模型**、**正则表达式**和**上下文分析**三种方法，在文本中自动识别敏感信息（如姓名、邮箱、电话、身份证号、银行卡号等），并提供多种匿名化策略。Presidio 是企业 AI 应用中**隐私合规**（GDPR/CCPA/个人信息保护法）的关键基础设施。
 

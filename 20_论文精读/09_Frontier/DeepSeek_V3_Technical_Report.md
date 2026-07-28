@@ -12,8 +12,11 @@ aliases:
   - DeepSeek_V3_Technical_Report
 sources: []
 
+name_zh: "DeepSeek-V3 Technical Report 深度解读"
 ---
 # DeepSeek-V3 Technical Report 深度解读
+
+> 中文简称：DeepSeek-V3 Technical Report 深度解读
 
 > **一句话理解**: DeepSeek-V3 用 $5.6M 和 2048 张 H800 训练出了媲美 GPT-4o 的 671B 模型，证明了算法创新比 GPU 数量更重要
 

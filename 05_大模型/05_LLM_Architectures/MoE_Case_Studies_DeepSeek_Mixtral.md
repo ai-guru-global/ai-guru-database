@@ -12,8 +12,11 @@ aliases:
   - MoE_Case_Studies_DeepSeek_Mixtral
 sources: []
 
+name_zh: "MoE 案例研究：DeepSeek-MoE 与 Mixtral"
 ---
 # MoE 案例研究：DeepSeek-MoE 与 Mixtral
+
+> 中文简称：MoE 案例研究：DeepSeek-MoE 与 Mixtral
 
 ## 一句话理解
 

@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "工具对比"
+name_en: "Tool Comparison"
 ---
 
 # Tool Comparison
+
+> 中文简称：工具对比 ｜ English Name: Tool Comparison
 
 ## 文件导航
 

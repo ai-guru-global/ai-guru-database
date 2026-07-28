@@ -1,4 +1,9 @@
+---
+name_zh: "全库操作日志"
+---
 # Wiki Operations Log
+
+> 中文简称：全库操作日志
 
 本文件记录对本知识库的重大维护动作，作为 `/wiki-status`、`/wiki-lint`、`/wiki-synthesize`、`/cross-linker` 等技能的时间线 baseline。
 

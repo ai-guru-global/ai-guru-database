@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "运维成本"
+name_en: "Cost"
 ---
 
 # Cost
+
+> 中文简称：运维成本 ｜ English Name: Cost
 
 成本优化（Cost Optimization）— ML 系统的 GPU 成本控制、推理延迟（latency）与 SLO 权衡、FinOps 实践。
 

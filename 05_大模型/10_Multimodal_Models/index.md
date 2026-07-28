@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-21
 sources: []
+name_zh: "多模态模型"
+name_en: "Multimodal Models"
 ---
 
 # Multimodal Models
+
+> 中文简称：多模态模型 ｜ English Name: Multimodal Models
 
 多模态模型 — 融合文本、图像、音频、视频等多种模态的大模型架构与应用。
 

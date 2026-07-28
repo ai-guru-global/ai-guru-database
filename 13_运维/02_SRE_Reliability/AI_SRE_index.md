@@ -3,9 +3,12 @@ title: AI SRE (站点可靠性工程)
 category: 12_架构基建/AI_SRE
 tags: [sre, reliability, slo, incident-response, ai-infrastructure]
 summary: AI 系统的站点可靠性工程实践，包括 SLO 管理、事故响应、容量规划和混沌工程。
+name_zh: "站点可靠性工程"
 ---
 
 # AI SRE (站点可靠性工程)
+
+> 中文简称：站点可靠性工程
 
 本目录收录 AI 系统 SRE 相关文档，专注于 AI 基础设施的可靠性保障。
 
@@ -31,9 +34,9 @@ summary: AI 系统的站点可靠性工程实践，包括 SLO 管理、事故响
 ## Related
 
 - [[../13_运维/02_SRE_Reliability/SRE_for_AI_Systems|AI 系统 SRE 实践]]
-- [[../13_运维/04_Troubleshooting/K8s_Troubleshooting_Playbook|K8s 排障手册]]
-- [[../02_Architecture_Overview/System_Architecture|系统架构]]
-- [[../05_CNCF_Cloud_Native_AI/|CNCF 云原生 AI]]
+- [[13_运维/04_Troubleshooting/Kubernetes_Troubleshooting_Playbook|K8s 排障手册]]
+- [[12_架构基建/02_Architecture_Overview/AI_System_Architecture_2026|系统架构]]
+- [[12_架构基建/05_CNCF_Cloud_Native_AI|CNCF 云原生 AI]]
 
 ## 架构核心组件对比
 

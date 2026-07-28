@@ -25,8 +25,11 @@ aliases:
   - "Llm Architectures"
   - "llm architectures"
 
+name_zh: "LLM架构"
 ---
 # LLM架构
+
+> 中文简称：LLM架构
 
 ## 概述
 

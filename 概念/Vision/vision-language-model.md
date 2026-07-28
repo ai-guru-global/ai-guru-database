@@ -25,9 +25,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "视觉语言模型训练与推理"
 ---
 
 # 视觉语言模型（Vision-Language Model）训练与推理
+
+> 中文简称：视觉语言模型训练与推理
 
 > **相关**: [[multimodal-models|多模态模型主卡片]]
 

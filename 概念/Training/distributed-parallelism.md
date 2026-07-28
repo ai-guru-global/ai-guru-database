@@ -26,8 +26,11 @@ aliases:
   - "Distributed Parallelism"
   - "distributed parallelism"
 
+name_zh: "分布式并行策略"
 ---
 # 分布式并行策略 (Distributed Parallelism)
+
+> 中文简称：分布式并行策略
 
 > **主卡片**: [[distributed-training|分布式训练主卡片]] — 本文侧重并行策略对比矩阵。
 

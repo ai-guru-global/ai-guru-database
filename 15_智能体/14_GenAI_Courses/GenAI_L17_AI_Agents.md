@@ -15,7 +15,10 @@ aliases:
   - GenAI_L17_AI_Agents
 sources: []
 
+name_zh: "AI代理"
 ---
+> 中文简称：AI代理
+
 ## 学习目标
 
 完成本课后，你将能够：

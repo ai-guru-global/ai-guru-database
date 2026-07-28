@@ -12,8 +12,11 @@ aliases:
   - DeepSeek_R1_Technical_Analysis
 sources: []
 
+name_zh: "DeepSeek-R1 技术深度解析"
 ---
 # DeepSeek-R1 技术深度解析
+
+> 中文简称：DeepSeek-R1 技术深度解析
 
 ## 一句话理解
 

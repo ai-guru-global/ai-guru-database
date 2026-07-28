@@ -26,8 +26,11 @@ aliases:
   - "request scheduling"
   - "LLM 请求调度"
 
+name_zh: "推理请求调度"
 ---
 # Request Scheduling for LLMs（LLM 请求调度）
+
+> 中文简称：推理请求调度
 
 > LLM 请求调度就是“在显存有限的情况下，决定谁先算、怎么拼 batch、被抢占了怎么办”。
 

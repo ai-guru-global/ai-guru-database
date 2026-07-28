@@ -18,9 +18,12 @@ tier: supporting
 aliases:
   - "Activation Value"
   - "激活值"
+name_zh: "激活值"
 ---
 
 # 激活值 (Activation Value)
+
+> 中文简称：激活值
 
 **激活值是神经网络中单个神经元在处理完输入后输出的数值，代表该神经元对当前输入的响应强度或“兴奋程度”。**
 

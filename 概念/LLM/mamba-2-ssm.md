@@ -33,9 +33,12 @@ tier: core
 created: 2026-07-23
 updated: 2026-07-23
 sources: []
+name_zh: "Mamba-2 / SSD 状态空间模型"
 ---
 
 # Mamba-2 / SSD 状态空间模型
+
+> 中文简称：Mamba-2 / SSD 状态空间模型
 
 > **一句话理解**:Mamba-2 把"状态空间模型(SSM)"与"线性注意力"在数学上证明是**对偶的**——这一理论突破让 Mamba-2 既能像 SSM 一样 O(n) 线性推理,又能像 Attention 一样用成熟的 GPU 优化(Tensor Cores)。是"Transformer 不再一统天下"路线的旗舰架构。
 
@@ -290,11 +293,11 @@ sources: []
 ## 十、相关概念卡
 
 - [[概念/mamba|Mamba]]
-- [[概念/transformer|Transformer]]
+- [[概念/LLM/transformer-architecture|Transformer]]
 - [[概念/long-context-llm|Long Context Llm]]
-- [[概念/linear-attention|Linear Attention]]
+- [[概念/LLM/attention-variants|Linear Attention]]
 - [[概念/flash-attention-kernels|Flash Attention Kernels]]
 - [[概念/llm-architectures|Llm Architectures]]
-- [[概念/state-space-model|State Space Model]]
+- [[概念/LLM/state-space-models|State Space Model]]
 - [[概念/gemma-series|Gemma Series]]
 - [[概念/mistral-series|Mistral Series]]

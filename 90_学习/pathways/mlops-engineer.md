@@ -10,9 +10,12 @@ aliases:
   - "MLOps Engineer Path"
   - "MLOps Learning Path"
 sources: []
+name_zh: "MLOps 工程师学习路径"
 ---
 
 # MLOps 工程师学习路径 (MLOps Engineer Learning Path)
+
+> 中文简称：MLOps 工程师学习路径
 
 > MLOps 工程师负责让 ML 模型在生产环境中稳定、高效、可维护地运行——是连接数据科学与软件工程的桥梁。
 
@@ -99,7 +102,7 @@ sources: []
 
 - [[ai-engineer]]: 偏应用开发
 - [[ml-practitioner]]: 偏模型训练
-- [[cloud-ops-engineer]]: 偏基础设施
+- [[21_面试岗位/Cloud_Ops_Engineer/Cloud_Ops_Engineer|cloud-ops-engineer]]: 偏基础设施
 
 ---
 

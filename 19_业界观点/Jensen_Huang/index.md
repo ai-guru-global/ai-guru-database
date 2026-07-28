@@ -13,9 +13,13 @@ aliases:
 sources:
   - "https://www.nvidia.com/gtc/"
   - "https://blogs.nvidia.com/"
+name_zh: "Jensen Huang 黄仁勋人物索引"
+name_en: "Jensen Huang"
 ---
 
 # Jensen Huang 黄仁勋人物索引
+
+> 中文简称：Jensen Huang 黄仁勋人物索引 ｜ English Name: Jensen Huang
 
 > **一句话概括**: NVIDIA 联合创始人兼 CEO——用 GPU 加速计算重新定义了 AI 基础设施，让"每家公司都成为 AI 公司"的愿景成为现实。
 

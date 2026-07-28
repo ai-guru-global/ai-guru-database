@@ -12,8 +12,11 @@ aliases:
   - Multi_Stage_Training_Pipeline
 sources: []
 
+name_zh: "多阶段训练流水线"
 ---
 # 多阶段训练流水线: Pretrain→Annealing→SFT→RLHF→DPO (Multi-Stage Training Pipeline)
+
+> 中文简称：多阶段训练流水线
 
 > **一句话理解**: 多阶段训练流水线就像培养一个博士生——本科打基础（Pretrain），研究生做方向（Annealing），博士做课题（SFT），博后做精修（RLHF/DPO）。每个阶段目标不同、数据不同、方法不同，但知识必须一脉相承，不能"读了博士忘了本科"。
 

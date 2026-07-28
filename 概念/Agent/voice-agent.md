@@ -34,9 +34,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "Voice Agent / 语音 Agent"
 ---
 
 # Voice Agent / 语音 Agent
+
+> 中文简称：Voice Agent / 语音 Agent
 
 > **一句话理解**:Voice Agent 让 LLM 真的"开口说话 + 听懂"——端到端流式语音对话(< 200ms 延迟 + 自然打断 + 情感识别),不再是"语音转文字 + 文字转语音"的拼接。2024-10 OpenAI Realtime API 开启新时代,2026 已成客服 / 销售标配。
 
@@ -298,6 +301,6 @@ if __name__ == "__main__":
 - [[概念/agent-framework|Agent Framework]]
 - [[概念/tool-use|Tool Use]]
 - [[概念/speech-audio-ai|Speech Audio Ai]]
-- [[概念/multi-modal-agent|Multi Modal Agent]]
-- [[概念/realtime-api|Realtime Api]]
-- [[概念/pipecat|Pipecat]]
+- [[概念/Agent/ai-agents|Multi Modal Agent]]
+- [[概念/Agent/voice-agent|Realtime Api]]
+- [[概念/Agent/voice-agent|Pipecat]]

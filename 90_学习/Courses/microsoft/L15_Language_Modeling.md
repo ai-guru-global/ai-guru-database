@@ -12,8 +12,11 @@ aliases:
   - L15_Language_Modeling
 sources: []
 
+name_zh: "L15 - 语言建模与自定义嵌入训练"
 ---
 # L15 - 语言建模与自定义嵌入训练
+
+> 中文简称：L15 - 语言建模与自定义嵌入训练
 
 > **一句话理解**：语言建模（Language Modeling）让机器通过“预测文本中被遮住的词”来自我学习语言规律；本课带你用 N-gram、CBoW、Skip-gram 三种思路训练专属词嵌入（Word Embedding）。
 

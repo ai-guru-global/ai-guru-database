@@ -35,8 +35,11 @@ aliases:
   - "GPT-Generated Unified Format"
   - "GGUF 模型格式"
 
+name_zh: "llama.cpp 模型格式"
 ---
 # GGUF
+
+> 中文简称：llama.cpp 模型格式
 
 ## 核心要点
 

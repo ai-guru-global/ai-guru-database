@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "能源气候专题"
 ---
 
 # Energy & Climate
+
+> 中文简称：能源气候专题
 
 能源与气候（Energy & Climate）— AI 在电网优化（grid optimization）、可再生能源预测、碳排放监测与气候建模中的应用。
 

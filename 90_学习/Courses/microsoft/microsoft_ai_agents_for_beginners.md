@@ -33,8 +33,11 @@ aliases:
 - microsoft_ai_agents_for_beginners
 - Ai Agents For Beginners
 - ai agents for beginners
+name_zh: "Microsoft AI Agents for Beginners：16 课 A"
 ---
 # Microsoft AI Agents for Beginners：16 课 AI 代理初学者课程映射
+
+> 中文简称：Microsoft AI Agents for Beginners：16 课 A
 
 > **一句话理解**: [AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners) 是微软开源的 16 课 AI 代理入门课程。它以 **Microsoft Agent Framework (MAF)** 与 **Azure AI Foundry Agent Service V2** 为核心技术栈，覆盖 Agent 概念、设计模式、工具调用、Agentic RAG、可信代理、规划、多代理、协议、上下文工程、记忆、浏览器代理与加密安全收据，并为每节课提供 Python / .NET 代码示例。本页将课程完整课表映射到 `ai-guru-database` 的对应章节。
 

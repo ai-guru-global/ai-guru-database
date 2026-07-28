@@ -21,9 +21,12 @@ lifecycle: reviewed
 tier: supporting
 created: 2026-06-26
 updated: 2026-07-21
+name_zh: "Agent 工具集生态"
 ---
 
 # CrewAI Tools
+
+> 中文简称：Agent 工具集生态
 
 [CrewAI Tools](https://github.com/crewAIInc/crewAI-tools) 是 **CrewAI 生态的官方工具集**，为 AI Agent 提供 40+ 预置工具，覆盖文件操作、Web 搜索、数据库查询、API 调用等常见任务场景。它是 CrewAI Agent 的"手脚"——赋予 Agent 实际执行操作的能力。
 

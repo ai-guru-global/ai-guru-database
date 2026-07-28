@@ -15,6 +15,7 @@ aliases:
 updated: 2026-06-30
 summary: "安装部署与快速入门 — 专题文档"
 sources: []
+name_zh: "安装部署与快速入门"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -56,6 +57,8 @@ k8s_versions:
 - '1.32'
 ---
 # 安装部署与快速入门
+
+> 中文简称：安装部署与快速入门
 
 > **文档类型**: 部署指南 | **最后更新**: 2026-03 | **关键词**: OpenCode, Installation, Configuration, Provider, AGENTS.md, Quick Start
 

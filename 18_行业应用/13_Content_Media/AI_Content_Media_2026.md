@@ -12,8 +12,11 @@ aliases:
   - AI_Content_Media_2026
 sources: []
 
+name_zh: "AI 内容创作与媒体行业应用"
 ---
 # AI 内容创作与媒体行业应用 (2025-2026)
+
+> 中文简称：AI 内容创作与媒体行业应用
 
 > **一句话理解**: 2026 年生成式 AI 已重构内容产业——Sora/Kling 引爆 AI 视频创作，AI 音乐和配音实现商业级品质，内容创作从"工具辅助"进入"AI 原生"时代，创作者的核心竞争力从技能转向创意。
 
@@ -328,10 +331,10 @@ sources: []
 
 ## Related
 
-- [[../14_RAG系统/05_RAG_Production|RAG 生产部署]] — 内容创作知识库增强
-- [[../15_智能体/03_Agent_Workflow|Agent 工作流]] — 内容生成自动化 Agent
+- [[14_RAG系统/05_RAG_Production|RAG 生产部署]] — 内容创作知识库增强
+- [[15_智能体/03_Agent_Workflow|Agent 工作流]] — 内容生成自动化 Agent
 - [[../05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 图文视频多模态生成
-- [[../08_模型评估/03_LLM_Evaluation|LLM 评估]] — AI 内容质量评估
+- [[08_模型评估/03_LLM_Evaluation|LLM 评估]] — AI 内容质量评估
 - [[../10_部署推理/Deployment_Strategies|部署策略]] — 高并发内容生成部署
 
 ---

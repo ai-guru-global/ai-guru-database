@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: peripheral
 sources: []
 
+name_zh: "LLM 架构目录"
 ---
 # 大语言模型架构
+
+> 中文简称：LLM 架构目录
 
 本目录包含 大语言模型架构 相关的深度技术内容。
 

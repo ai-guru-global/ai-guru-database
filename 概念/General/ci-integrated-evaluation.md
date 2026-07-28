@@ -30,8 +30,11 @@ aliases:
   - "Ci Integrated Evaluation"
   - "ci integrated evaluation"
 
+name_zh: "CI 集成评估"
 ---
 # CI 集成评估
+
+> 中文简称：CI 集成评估
 
 ## 核心要点
 

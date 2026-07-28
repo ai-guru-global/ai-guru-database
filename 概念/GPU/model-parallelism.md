@@ -16,9 +16,12 @@ relationships:
   - target: "概念/pipeline-parallelism"
     type: is_a
 sources: []
+name_zh: "模型并行"
 ---
 
 # Model Parallelism
+
+> 中文简称：模型并行
 
 > **一句话理解**: 模型并行就是「模型太大，一张 GPU 装不下，把模型拆开分到多张卡上跑」。
 

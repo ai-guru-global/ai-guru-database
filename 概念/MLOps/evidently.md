@@ -15,9 +15,12 @@ relationships:
   - target: "概念/mlops"
     type: related_to
 sources: []
+name_zh: "数据漂移监测工具"
 ---
 
 # Evidently
+
+> 中文简称：数据漂移监测工具
 
 > **一句话理解**: Evidently 专门监控「模型输入数据和输出有没有变坏」，自动发现数据漂移和质量退化。
 

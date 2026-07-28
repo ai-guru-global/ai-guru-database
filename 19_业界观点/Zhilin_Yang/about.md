@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "杨植麟 — 月之暗面/Moonshot AI 创始人"
 ---
 # 杨植麟 (Zhilin Yang) — 月之暗面/Moonshot AI 创始人
+
+> 中文简称：杨植麟 — 月之暗面/Moonshot AI 创始人
 
 ## 一句话概括
 

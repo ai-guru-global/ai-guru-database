@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "偏见与公平性测试"
 ---
 # 偏见与公平性测试 (Bias & Fairness Testing)
+
+> 中文简称：偏见与公平性测试
 
 ## 1. AI 偏见全景
 
@@ -128,7 +131,7 @@ BIAS_MITIGATION = {
 
 - [[17_伦理安全/|伦理安全]]
 - [[17_伦理安全/03_Governance/Model_Card_Documentation|模型卡]]
-- [[17_伦理安全/AI_Liability/|AI 责任]]
+- [[17_伦理安全/03_Governance/AI_Liability|AI 责任]]
 - [[08_模型评估/|模型评估]]
 - [[18_行业应用/19_Other_Industries/Public_Safety|公共安全 (偏见风险)]]
 

@@ -11,8 +11,11 @@ aliases:
   - Image_Classification_Detection
 sources: []
 
+name_zh: "图像分类与检测"
 ---
 # 图像分类与检测 (Image Classification & Detection)
+
+> 中文简称：图像分类与检测
 
 > **一句话理解**: 图像分类就像"看图识物"——告诉计算机这是猫还是狗;目标检测则更进一步,不仅要识别"是什么",还要圈出"在哪里",就像给照片中的每个物体画边框并标注名字。
 
@@ -672,8 +675,8 @@ car (0.75) at [50, 300, 150, 380]
 - [[../../05_大模型/10_Multimodal_Models/LLaVA_Deep_Dive|LLaVA]] — 视觉语言模型架构
 - [[../../03_深度学习/04_Generative_Models/Diffusion_Models_Deep_Dive|Diffusion 深度页]] — 条件图像生成
 - [[../../概念/Vision/object-detection|目标检测概念卡]] — 检测范式定义
-- [[../../10_部署推理/02_Inference_Engines|推理引擎]] — CV 模型高效推理
-- [[../../14_RAG系统/04_Advanced_RAG|高级 RAG]] — ColPali 等视觉检索方法
+- [[10_部署推理/02_Inference_Engines|推理引擎]] — CV 模型高效推理
+- [[14_RAG系统/04_Advanced_RAG|高级 RAG]] — ColPali 等视觉检索方法
 
 ---
 

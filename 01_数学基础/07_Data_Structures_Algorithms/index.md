@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "数据结构与算法"
+name_en: "Data Structures Algorithms"
 ---
 
 # Data Structures & Algorithms
+
+> 中文简称：数据结构与算法 ｜ English Name: Data Structures Algorithms
 
 数据结构与算法（DSA）— 面向 AI 工程师的算法基础，涵盖复杂度分析（complexity analysis）、经典数据结构与算法范式。
 

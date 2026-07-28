@@ -20,8 +20,11 @@ aliases:
   - "Alibaba Cloud AI Stack Deep Dive"
   - Alibaba_Cloud_AI_Stack_Deep_Dive
 
+name_zh: "阿里云 AI Stack 深度解读 — 专有云 AI 推理平台"
 ---
 # 阿里云 AI Stack 深度解读 — 专有云 AI 推理平台
+
+> 中文简称：阿里云 AI Stack 深度解读 — 专有云 AI 推理平台
 
 ## 1. 概述
 

@@ -7,9 +7,12 @@ summary: "AlexNet 是 2012 年 ImageNet 竞赛冠军，用 ReLU + Dropout + GPU 
 created: 2026-06-04
 updated: 2026-06-04
 sources: []
+name_zh: "论文深度解读"
 ---
 
 # 论文深度解读: AlexNet — ImageNet Classification with Deep Convolutional Neural Networks
+
+> 中文简称：论文深度解读
 
 > **一句话理解**: AlexNet 证明了"深度 CNN + GPU + 大数据 = 视觉突破"，是深度学习革命的引爆点。
 

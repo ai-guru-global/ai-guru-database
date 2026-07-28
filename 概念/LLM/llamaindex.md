@@ -30,8 +30,11 @@ aliases:
   - LlamaIndex 数据框架
   - "LlamaIndex Data Framework for LLM Apps"
 
+name_zh: "LlamaIndex 数据框架"
 ---
 # LlamaIndex
+
+> 中文简称：LlamaIndex 数据框架
 
 > LLM 应用的数据「连接器」——把任意数据源变成大模型可理解、可检索的知识。
 

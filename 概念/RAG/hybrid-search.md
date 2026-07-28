@@ -16,9 +16,12 @@ relationships:
     type: uses
 sources:
   - "https://arxiv.org/abs/2210.11934"  # RRF paper
+name_zh: "混合检索"
 ---
 
 # Hybrid Search
+
+> 中文简称：混合检索
 
 > **一句话理解**: 混合检索就是「向量找语义相关 + 关键词找精确匹配」，再把两边结果融合起来，召回更全面。
 

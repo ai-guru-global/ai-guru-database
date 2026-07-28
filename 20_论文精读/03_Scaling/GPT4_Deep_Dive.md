@@ -12,8 +12,11 @@ aliases:
   - GPT4_Deep_Dive
 sources: []
 
+name_zh: "GPT-4 Technical Report 深度解读"
 ---
 # GPT-4 Technical Report 深度解读
+
+> 中文简称：GPT-4 Technical Report 深度解读
 
 > **一句话理解**: GPT-4 是第一个在律师考试、SAT、GRE 等人类专业测试中达到前 10% 水平的 AI 模型，标志着大模型从"语言能力"到"专业能力"的质变
 

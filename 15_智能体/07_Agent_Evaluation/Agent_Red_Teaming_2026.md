@@ -11,8 +11,11 @@ aliases:
   - Agent_Red_Teaming_2026
 sources: []
 
+name_zh: "智能体红队测试"
 ---
 # Agent Red Teaming Framework 2026
+
+> 中文简称：智能体红队测试
 
 > **一句话理解**: Agent Red Teaming 是通过模拟真实攻击者视角，系统性地发现和评估 AI Agent 安全漏洞的能力评估方法，涵盖提示词注入、权限提升、数据窃取、社会工程等核心攻击向量。
 

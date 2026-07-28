@@ -34,9 +34,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "国产 K8s 发行版与 AI 增强"
 ---
 
 # 国产 K8s 发行版与 AI 增强
+
+> 中文简称：国产 K8s 发行版与 AI 增强
 
 > **一句话理解**:国产 K8s 发行版不是"换皮"——KubeSphere 3.4+ 集成 GPU 调度与 AI 工作流,ACK/TKE/CCE 在云原生 AI 平台上做了深度优化(对接自家 GPU 池、对象存储、大数据),OpenYurt + Volcano 是边缘 AI 的国产事实标准。
 

@@ -34,9 +34,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "世界模型 2.0"
 ---
 
 # 世界模型 2.0
+
+> 中文简称：世界模型 2.0
 
 > **一句话理解**:世界模型 2.0 让 AI 理解"物理世界如何运作"——Sora / Veo 3 / Kling 文生视频、Genie 2 交互式世界、JEPA 2 自监督世界模型、World Labs 3D 世界。是具身智能(机器人)、自动驾驶(世界模拟器)、AR/VR 的"物理引擎"。
 
@@ -290,6 +293,6 @@ LLM 局限于文本,无法理解物理世界:
 - [[概念/video-generation|Video Generation]]
 - [[概念/3d-vision-2|3d Vision 2]]
 - [[概念/agent-loop|Agent Loop]]
-- [[概念/sora|Sora]]
+- [[概念/Vision/video-generation|Sora]]
 - [[概念/stable-diffusion|Stable Diffusion]]
 - [[概念/3d-vision|3d Vision]]

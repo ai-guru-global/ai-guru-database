@@ -14,8 +14,11 @@ aliases:
   - "ai engineering roadmap 2026"
   - ai_engineering_roadmap_2026
 
+name_zh: "AI 工程学习路线图 2026"
 ---
 # AI 工程学习路线图 2026（免费资源精选）
+
+> 中文简称：AI 工程学习路线图 2026
 
 > **一句话理解**: 从零到一掌握 AI 工程所需的全部技能——数学、ML、深度学习、LLM、Prompt 工程、RAG、Agent、MCP、MLOps，每一步都有精选免费资源。
 
@@ -128,7 +131,7 @@ flowchart TB
 ### 强化学习
 - [Deep RL Course - Hugging Face](https://huggingface.co/learn/deep-rl-course/unit0/introduction)
 - [Deep RL Bootcamp - UC Berkeley](https://sites.google.com/view/deep-rl-bootcamp/lectures)
-- **关联**: → [[06_强化学习/RL_Fundamentals|强化学习基础]]
+- **关联**: → [[06_强化学习/01_RL_Foundations/RL_Foundations|强化学习基础]]
 
 ---
 

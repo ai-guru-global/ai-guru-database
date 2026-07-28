@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "模型训练"
+name_en: "Model Training"
 ---
 
 # Model Training
+
+> 中文简称：模型训练 ｜ English Name: Model Training
 
 This page indexes the contents of `模型训练`.
 

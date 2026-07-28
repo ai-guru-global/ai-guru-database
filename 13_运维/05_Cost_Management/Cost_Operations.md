@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "AI 成本运营"
 ---
 # AI 成本运营 (FinOps for AI)
+
+> 中文简称：AI 成本运营
 
 ## 1. AI 成本结构
 
@@ -113,9 +116,9 @@ COST_ALLOCATION = {
 ## 5. 交叉引用
 
 - [[13_运维/|运维]]
-- [[13_运维/Incident_Management/|事故管理]]
-- [[12_架构基建/Multi_Tenancy/|多租户]]
-- [[10_部署推理/Cost/|推理成本]]
+- [[13_运维/03_Incident_Response/Incident_Management|事故管理]]
+- [[12_架构基建/01_Architecture_Fundamentals/Multi_Tenancy|多租户]]
+- [[10_部署推理/09_Cost/index|推理成本]]
 - [[概念/General/finops|FinOps]]
 
 ## 进阶知识拓展

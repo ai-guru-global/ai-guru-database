@@ -12,8 +12,11 @@ aliases:
   - README_for_dummy
 sources: []
 
+name_zh: "21 业界观点 — 小白版 🎤"
 ---
 # 21 业界观点 — 小白版 🎤
+
+> 中文简称：21 业界观点 — 小白版 🎤
 
 > **一句话秒懂**: 这一章汇集了 AI 领域"大咖"的声音——OpenAI、Google、DeepMind 的科学家们怎么看 AI 的未来，他们的预测正在塑造整个行业。
 

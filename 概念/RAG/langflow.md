@@ -18,9 +18,12 @@ base_confidence: 0.80
 lifecycle: reviewed
 tier: supporting
 updated: 2026-07-21
+name_zh: "LangFlow 可视化 LLM 编排"
 ---
 
 # LangFlow 可视化 LLM 编排
+
+> 中文简称：LangFlow 可视化 LLM 编排
 
 > **一句话理解**: LangFlow 是"拖拽式 LLM 应用构建器"——无需写代码，通过可视化流程图编排 RAG/Agent/Chain，快速搭建 AI 应用。
 
@@ -192,7 +195,7 @@ AI Stack LLM 应用构建选项
 - [[概念/RAG/dify|Dify]] — 企业级 LLM 平台
 - [[概念/RAG/ragflow|RAGFlow]] — RAG 引擎对比
 - [[概念/RAG/rag-patterns|RAG Patterns]] — RAG 模式
-- [[概念/Agent/agent-frameworks|Agent Frameworks]] — Agent 框架
+- [[概念/Agent/agent-framework|Agent Frameworks]] — Agent 框架
 
 > ℹ️ Langflow 定位：原型验证和轻量 RAG 流程，生产级复杂场景建议迁移到代码实现（LangChain/LlamaIndex）。
 

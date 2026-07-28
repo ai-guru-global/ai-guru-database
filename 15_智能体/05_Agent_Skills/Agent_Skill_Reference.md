@@ -6,9 +6,12 @@ summary: "Agent Skill 文档的文件结构、元数据、引用约定与最佳�
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "Agent Skill 通用参考规范"
 ---
 
 # Agent Skill 通用参考规范
+
+> 中文简称：Agent Skill 通用参考规范
 
 本规范为 `15_智能体/05_Agent_Skills/` 下的 Skill 文档提供统一的文件结构、元数据、引用约定与最佳实践，确保 Skill 定义可被 Agent 框架、自动化工具与人工审阅一致地解析和使用。
 

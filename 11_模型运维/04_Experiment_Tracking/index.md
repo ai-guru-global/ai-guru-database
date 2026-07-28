@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "实验追踪"
+name_en: "Experiment Tracking"
 ---
 
 # Experiment Tracking
+
+> 中文简称：实验追踪 ｜ English Name: Experiment Tracking
 
 This page indexes the contents of `11_模型运维/04_Experiment_Tracking`.
 

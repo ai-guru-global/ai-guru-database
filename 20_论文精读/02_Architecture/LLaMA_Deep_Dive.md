@@ -12,8 +12,11 @@ aliases:
   - LLaMA_Deep_Dive
 sources: []
 
+name_zh: "LLaMA 深度解读"
 ---
 # LLaMA 深度解读 (Open and Efficient Foundation Language Models)
+
+> 中文简称：LLaMA 深度解读
 
 > **一句话理解**: LLaMA 就像 AI 领域的"开源革命先锋"——Meta 用纯公开数据训练出媲美 GPT-3 的模型并开放权重，证明了数据质量比数量更重要、小模型也能打大模型，直接引爆了开源大模型的黄金时代。
 

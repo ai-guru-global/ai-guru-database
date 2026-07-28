@@ -26,8 +26,11 @@ aliases:
   - "Microsoft AI Agents L01 Intro"
   - Microsoft_AI_Agents_L01_Intro
 
+name_zh: "L01 AI 代理简介与使用场景"
 ---
 # L01 AI 代理简介与使用场景
+
+> 中文简称：L01 AI 代理简介与使用场景
 
 > 来源：[Microsoft AI Agents for Beginners / 01-intro-to-ai-agents](https://github.com/microsoft/ai-agents-for-beginners/tree/main/01-intro-to-ai-agents)
 

@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.90
 lifecycle: reviewed
 tier: core
+name_zh: "高效注意力内核"
 ---
 
 # Flash Attention
+
+> 中文简称：高效注意力内核
 
 [Flash Attention](https://github.com/Dao-AILab/flash-attention) 是由 Tri Dao 等人提出的 IO 感知（IO-aware）的精确注意力计算算法，通过**分块计算（Tiling）和重计算（Recomputation）**策略，将 Transformer 注意力机制的显存复杂度从 O(N²) 降低到 O(N)，同时利用 GPU SRAM（共享内存）的高带宽特性大幅提升计算速度。Flash Attention 已成为几乎所有 LLM 推理引擎和训练框架的**标配内核**。
 

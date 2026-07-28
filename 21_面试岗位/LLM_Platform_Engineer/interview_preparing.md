@@ -12,8 +12,11 @@ aliases:
   - interview_preparing
 sources: []
 
+name_zh: "LLM Platform Engineer 面试准备"
 ---
 # LLM Platform Engineer 面试准备
+
+> 中文简称：LLM Platform Engineer 面试准备
 
 ## 核心职责
 - **推理平台**: 模型服务化、路由与弹性扩缩。
@@ -47,7 +50,7 @@ sources: []
 - [[21_面试岗位/LLM_Platform_Engineer/interview_answers|LLM Platform Engineer 面试题实例答案]]
 - [[21_面试岗位/LLM_Platform_Engineer/question_bank|LLM Platform Engineer 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 
 ## 面试准备核心策略
 

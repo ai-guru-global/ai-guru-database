@@ -10,9 +10,12 @@ aliases:
   - "AI Skills Assessment"
   - "Self Assessment"
 sources: []
+name_zh: "AI 技能自评清单"
 ---
 
 # AI 技能自评清单 (AI Skills Self-Assessment)
+
+> 中文简称：AI 技能自评清单
 
 > 系统化的 AI 技能自评工具——帮助你准确定位当前水平，找到学习缺口，制定针对性提升计划。
 

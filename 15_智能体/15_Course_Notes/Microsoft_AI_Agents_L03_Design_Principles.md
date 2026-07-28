@@ -27,8 +27,11 @@ aliases:
   - "Microsoft AI Agents L03 Design Principles"
   - Microsoft_AI_Agents_L03_Design_Principles
 
+name_zh: "L03 Agentic 设计原则：Space / Time / Core 三维框"
 ---
 # L03 Agentic 设计原则：Space / Time / Core 三维框架
+
+> 中文简称：L03 Agentic 设计原则：Space / Time / Core 三维框
 
 > 来源：[Microsoft AI Agents for Beginners / 03-agentic-design-patterns](https://github.com/microsoft/ai-agents-for-beginners/tree/main/03-agentic-design-patterns)
 

@@ -11,6 +11,7 @@ aliases:
   - "K8s Storage Deep Dive"
   - "Kubernetes_Storage_Deep_Dive"
 sources: []
+name_zh: "Kubernetes 存储深度解析"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -18,6 +19,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # Kubernetes 存储深度解析
+
+> 中文简称：Kubernetes 存储深度解析
 
 > **一句话理解**: Kubernetes 存储是一套「声明式持久化」体系——Pod 通过 PVC 表达"我要多大、怎么读写的卷"，StorageClass + CSI Driver 在底层真正创建/挂载/回收卷，让有状态应用在容器编排里也能被声明式管理。
 

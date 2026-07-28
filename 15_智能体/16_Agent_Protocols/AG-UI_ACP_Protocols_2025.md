@@ -16,9 +16,12 @@ sources:
   - "https://github.com/agentcommunicationprotocol/acp-spec"
   - "https://github.com/ag-ui-protocol/ag-ui"
 
+name_zh: "AG-UI 与 ACP：2025 Agent-UI 流协议与 IBM BeeAI"
 ---
 
 # AG-UI 与 ACP：Agent-UI 流协议与通信协议深度解读
+
+> 中文简称：AG-UI 与 ACP：2025 Agent-UI 流协议与 IBM BeeAI
 
 > **一句话理解**: AG-UI 解决"Agent 怎么和用户界面实时通信"，ACP 解决"Agent 怎么被其他 Agent 发现并异步调用"——两者填补了 MCP/A2A 生态中的最后两块拼图。
 

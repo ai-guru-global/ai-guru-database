@@ -14,6 +14,7 @@ aliases:
 updated: 2026-06-30
 summary: "GitHub 集成与 CI/CD 自动化 — 专题文档"
 sources: []
+name_zh: "GitHub 集成与 CI/CD 自动化"
 ---
 title: GitHub 集成与 CI/CD 自动化
 description: '**文档类型**: 自动化集成专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, GitHub, GitHub
@@ -56,6 +57,8 @@ k8s_versions:
 - '1.32'
 ---
 # GitHub 集成与 CI/CD 自动化
+
+> 中文简称：GitHub 集成与 CI/CD 自动化
 
 > **文档类型**: 自动化集成专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, GitHub, GitHub Actions, CI/CD, Issue Triage, PR Review, Automation, Headless
 

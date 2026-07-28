@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "Helicone LLM 可观测性"
 ---
 
 # Helicone LLM 可观测性
+
+> 中文简称：Helicone LLM 可观测性
 
 > **一句话理解**: Helicone 是"LLM API 的智能代理层"——改一行 base_url 就接入，自动追踪成本/延迟/用量，零代码改动。
 

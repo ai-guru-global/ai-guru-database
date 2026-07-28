@@ -11,8 +11,11 @@ aliases:
   - Agentic_Workflow_Design_Patterns_2026
 sources: []
 
+name_zh: "智能体工作流设计模式"
 ---
 # Agentic Workflow Design Patterns 2026: Beyond Simple Chains
+
+> 中文简称：智能体工作流设计模式
 
 > **一句话理解**: 2026 年的智能体开发不再是堆叠 Prompt，而是像设计“分布式软件架构”一样，通过成熟的工作流模式来解决 LLM 的不确定性问题。
 

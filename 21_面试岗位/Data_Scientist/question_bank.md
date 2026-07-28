@@ -7,9 +7,12 @@ created: 2026-05-31
 updated: 2026-06-04
 tier: supporting
 sources: []
+name_zh: "Data Scientist 题库"
 ---
 
 # Data Scientist 题库
+
+> 中文简称：Data Scientist 题库
 
 > **难度标注**: ⭐ Basic | ⭐⭐ Intermediate | ⭐⭐⭐ Advanced
 > **频率标注**: 🔴 高频 | 🟡 中频 | 🟢 低频
@@ -96,7 +99,7 @@ sources: []
 - [[21_面试岗位/Data_Scientist/interview_answers|Data Scientist 面试题实例答案]]
 - [[21_面试岗位/Data_Scientist/interview_preparing|Data Scientist 面试准备]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 ---
 title: Data Scientist 题库
 category: 21-interviews-data-scientist
@@ -142,7 +145,7 @@ aliases:
 - [[21_面试岗位/Data_Scientist/interview_answers|Data Scientist 面试题实例答案]]
 - [[21_面试岗位/Data_Scientist/interview_preparing|Data Scientist 面试准备]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 
 ## 面试核心知识框架
 

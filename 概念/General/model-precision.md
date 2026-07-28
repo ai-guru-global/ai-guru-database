@@ -33,8 +33,11 @@ aliases:
   - "Model Precision"
   - "model precision"
 
+name_zh: "模型精度"
 ---
 # 模型精度 (Model Precision & Accuracy)
+
+> 中文简称：模型精度
 
 ## 核心要点
 

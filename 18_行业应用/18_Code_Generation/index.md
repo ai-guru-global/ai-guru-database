@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "代码生成"
+name_en: "Code Generation"
 ---
 
 # Code Generation
+
+> 中文简称：代码生成 ｜ English Name: Code Generation
 
 ## 文件导航
 

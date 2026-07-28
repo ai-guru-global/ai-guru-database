@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "LLM 语义缓存引擎"
 ---
 
 # GPTCache
+
+> 中文简称：LLM 语义缓存引擎
 
 [GPTCache](https://github.com/zilliztech/GPTCache) 是 [Zilliz](https://zilliz.com/)（Milvus 母公司）开源的 **LLM 语义缓存引擎**。与传统的精确匹配缓存不同，GPTCache 通过**向量嵌入**将 Prompt 转换为语义向量，使用**相似度搜索**找到语义相近的缓存 Prompt，命中时直接返回缓存的 Response——无需调用 LLM。这在大量重复或相似查询的场景下，可将 API 成本降低 **50-90%**，延迟从秒级降到毫秒级。
 

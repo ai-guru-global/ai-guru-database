@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "地产建筑 AI 应用"
 ---
 # 地产建筑 AI 应用 (Real Estate & Construction)
+
+> 中文简称：地产建筑 AI 应用
 
 ## 1. 行业概况
 
@@ -106,7 +109,7 @@ SMART_CONSTRUCTION_SITE = {
 - [[03_深度学习/|深度学习 (视觉检测)]]
 - [[05_大模型/|大模型 (设计生成)]]
 - [[12_架构基建/|架构基建 (IoT)]]
-- [[18_行业应用/Public_Safety/|公共安全 (智慧城市)]]
+- [[18_行业应用/19_Other_Industries/Public_Safety|公共安全 (智慧城市)]]
 
 ## 进阶知识拓展
 

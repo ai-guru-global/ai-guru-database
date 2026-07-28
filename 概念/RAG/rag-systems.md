@@ -40,9 +40,12 @@ lifecycle_changed: 2026-06-04
 tier: core
 created: 2026-05-31 00:00:00+00:00
 updated: 2026-06-12 00:00:00+00:00
+name_zh: "RAG 检索增强生成"
 ---
 
 # RAG 检索增强生成
+
+> 中文简称：RAG 检索增强生成
 
 ## 核心要点
 

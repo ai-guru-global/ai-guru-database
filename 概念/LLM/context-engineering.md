@@ -16,9 +16,12 @@ relationships:
     type: part_of
 sources:
   - "https://www.anthropic.com/engineering/claude-code-best-practices"
+name_zh: "上下文工程"
 ---
 
 # Context Engineering (上下文工程)
+
+> 中文简称：上下文工程
 
 ## 定义
 

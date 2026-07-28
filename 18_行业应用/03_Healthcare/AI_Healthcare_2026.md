@@ -12,8 +12,11 @@ aliases:
   - AI_Healthcare_2026
 sources: []
 
+name_zh: "AI 医疗健康行业应用"
 ---
 # AI 医疗健康行业应用 (2025-2026)
+
+> 中文简称：AI 医疗健康行业应用
 
 > **一句话理解**: 2026 年医疗 AI 已从辅助工具进化为临床"副驾驶"——FDA 累计批准超 1000 款 AI/ML 医疗设备，AI 诊断准确率在多个专科超越人类专家，药物研发周期被压缩 50%。
 
@@ -326,10 +329,10 @@ flowchart TB
 
 ## Related
 
-- [[../../14_RAG系统/05_RAG_Production|RAG 生产部署]] — 医疗知识库与临床检索增强
-- [[../../15_智能体/02_Agent_Frameworks|Agent 框架]] — 医疗辅助诊断 Agent
+- [[14_RAG系统/05_RAG_Production|RAG 生产部署]] — 医疗知识库与临床检索增强
+- [[15_智能体/02_Agent_Frameworks|Agent 框架]] — 医疗辅助诊断 Agent
 - [[../../05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 医学影像多模态分析
-- [[../../08_模型评估/Fairness|公平性评估]] — 医疗 AI 偏见与公平性
+- [[08_模型评估/06_Safety_Evaluation/Fairness_Evaluation_for_dummy|公平性评估]] — 医疗 AI 偏见与公平性
 - [[../../10_部署推理/Deployment_Strategies|部署策略]] — 医疗级高可用部署
 
 ---

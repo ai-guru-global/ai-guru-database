@@ -18,9 +18,12 @@ relationships:
     type: enables
 sources:
   - "https://arxiv.org/abs/2210.03629"  # ReAct paper
+name_zh: "智能体循环"
 ---
 
 # Agent Loop (智能体循环)
+
+> 中文简称：智能体循环
 
 ## 定义
 

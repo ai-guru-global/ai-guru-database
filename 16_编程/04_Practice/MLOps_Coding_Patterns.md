@@ -11,8 +11,11 @@ aliases:
   - MLOps_Coding_Patterns
 sources: []
 
+name_zh: "MLOps 编码模式"
 ---
 # MLOps 编码模式
+
+> 中文简称：MLOps 编码模式
 
 > **一句话理解**: 将 MLOps 工具链的 SDK 使用提炼为可复用的编码模式——Feature Store、Pipeline、Model Registry、实验追踪、数据版本控制、配置管理和测试，每个模式附带生产级代码示例。
 

@@ -30,8 +30,11 @@ updated: 2026-07-21
 aliases:
   - Hami
 
+name_zh: "异构算力虚拟化中间件"
 ---
 # HAMi (Heterogeneous AI Computing Virtualization Middleware)
+
+> 中文简称：异构算力虚拟化中间件
 
 > Kubernetes 上的异构 AI 算力「切分机」——让一张 GPU 像 CPU/内存一样被多个 Pod 安全共享。
 

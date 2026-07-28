@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Andrew Ng 2026 Update", "吴恩达 2026 动态"]
 sources: []
+name_zh: "吴恩达 2026 动态"
 ---
 
 # 吴恩达 2026 动态 (Andrew Ng 2026 Update)
+
+> 中文简称：吴恩达 2026 动态
 
 ## 一句话概括
 

@@ -23,9 +23,12 @@ provenance:
 base_confidence: 0.85
 created: 2026-06-24
 updated: 2026-06-24
+name_zh: "嵌入式向量数据库"
 ---
 
 # Chroma（嵌入式向量数据库）
+
+> 中文简称：嵌入式向量数据库
 
 ## 核心要点
 

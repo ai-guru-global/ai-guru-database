@@ -33,9 +33,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "LiteLLM / Kong AI / Envoy AI / APISIX / "
 ---
 
 # AI Gateway 2.0
+
+> 中文简称：LiteLLM / Kong AI / Envoy AI / APISIX / 
 
 > **一句话理解**:AI Gateway 是 LLM 时代的"Kong"——把 OpenAI / Anthropic / Google / 自托管 / Bedrock / Azure 100+ 模型统一为 OpenAI 兼容 API,加鉴权 / 限流 / 路由 / 缓存 / 审计 / 成本管控。是企业 LLM 落地的基础设施。
 

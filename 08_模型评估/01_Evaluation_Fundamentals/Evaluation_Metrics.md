@@ -11,8 +11,11 @@ aliases:
   - Evaluation_Metrics
 sources: []
 
+name_zh: "评估指标体系"
 ---
 # 评估指标体系 (Evaluation Metrics)
+
+> 中文简称：评估指标体系
 
 > **一句话理解**: 评估指标是衡量模型性能的标尺——不同任务需要不同的标尺，选错指标就像用体温计量体重，数字再精确也毫无意义。
 

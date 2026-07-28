@@ -12,8 +12,11 @@ aliases:
   - DeepSeek_Deep_Dive
 sources: []
 
+name_zh: "DeepSeek 技术深度解析"
 ---
 # DeepSeek (深度求索) 技术深度解析
+
+> 中文简称：DeepSeek 技术深度解析
 
 ## 一句话理解
 

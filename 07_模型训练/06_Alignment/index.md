@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "对齐训练"
+name_en: "Alignment"
 ---
 
 # Alignment
+
+> 中文简称：对齐训练 ｜ English Name: Alignment
 
 模型对齐（Model Alignment）— RLHF、DPO、GRPO 等人类偏好对齐方法（preference alignment）的实践指南。
 

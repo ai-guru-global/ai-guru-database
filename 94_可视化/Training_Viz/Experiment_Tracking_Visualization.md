@@ -11,8 +11,11 @@ aliases:
   - Experiment_Tracking_Visualization
 sources: []
 
+name_zh: "实验追踪可视化"
 ---
 # 实验追踪可视化 (Experiment Tracking Visualization)
+
+> 中文简称：实验追踪可视化
 
 > **一句话理解**: 实验追踪可视化是 ML 团队的"实验笔记本+仪表盘"——自动记录每次训练的超参、指标、产物，并通过交互式面板让数百次实验可对比、可复现、可协作。
 

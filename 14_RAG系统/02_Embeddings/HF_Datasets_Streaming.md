@@ -12,8 +12,11 @@ aliases:
   - HF_Datasets_Streaming
 sources: []
 
+name_zh: "Hugging Face Datasets 流式处理与大规模语料加工指南"
 ---
 # Hugging Face Datasets 流式处理与大规模语料加工指南
+
+> 中文简称：Hugging Face Datasets 流式处理与大规模语料加工指南
 
 > **一句话理解**: 面对 TB 级的大模型预训练或庞大的 RAG 语料库，Hugging Face 的 `datasets` 库提供了强大的 **Streaming (流式加载)** 模式，允许你在一台只有 8GB 内存的笔记本上飞速处理海量数据而不会 OOM。
 

@@ -19,9 +19,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: core
+name_zh: "SentencePiece 分词库"
 ---
 
 # SentencePiece 分词库
+
+> 中文简称：SentencePiece 分词库
 
 > **一句话理解**: SentencePiece 是"LLM 的分词基础设施"——Google 开源，大多数中日韩大模型（LLaMA/Qwen/ChatGLM）都用它训练的分词器。
 

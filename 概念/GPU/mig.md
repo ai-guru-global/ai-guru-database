@@ -17,9 +17,12 @@ relationships:
   - target: "概念/hami"
     type: related_to
 sources: []
+name_zh: "多实例 GPU"
 ---
 
 # MIG
+
+> 中文简称：多实例 GPU
 
 > **一句话理解**: MIG 能把一张 A100/H100 物理切成最多 7 个独立小 GPU，每个实例有自己的显存和计算单元，互不干扰。
 

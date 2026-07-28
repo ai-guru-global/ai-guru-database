@@ -14,8 +14,11 @@ aliases:
   - "coursera math for ml"
   - coursera_math_for_ml
 
+name_zh: "Mathematics for Machine Learning 专项课程"
 ---
 # Mathematics for Machine Learning 专项课程
+
+> 中文简称：Mathematics for Machine Learning 专项课程
 
 > **一句话理解**: Coursera 数学 for ML 专项课程,覆盖线性代数、多元微积分、PCA 三大核心数学主题,是 ML 入门前的数学补课首选。
 

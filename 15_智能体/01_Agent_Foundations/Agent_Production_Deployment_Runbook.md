@@ -10,9 +10,12 @@ aliases:
   - "Agent Production Deployment Runbook"
   - Agent_Production_Deployment_Runbook
 sources: []
+name_zh: "Agent 生产环境部署 Runbook"
 ---
 
 # Agent 生产环境部署 Runbook
+
+> 中文简称：Agent 生产环境部署 Runbook
 
 > **一句话理解**: 把 Agent 从 Demo 推上生产环境，需要在架构、K8s 部署、工具沙箱、版本控制、可观测性和灾备六个维度建立可复现的工程化 Runbook。
 

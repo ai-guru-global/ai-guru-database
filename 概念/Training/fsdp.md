@@ -26,8 +26,11 @@ updated: 2026-07-25
 aliases:
   - Fsdp
 
+name_zh: "全分片数据并行"
 ---
 # FSDP (Fully Sharded Data Parallel)
+
+> 中文简称：全分片数据并行
 
 > PyTorch 原生的「大模型训练利器」——把模型参数、梯度、优化器状态分片到多 GPU。
 

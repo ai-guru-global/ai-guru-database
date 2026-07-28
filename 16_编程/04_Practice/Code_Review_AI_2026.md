@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "AI 代码审查 2026"
 ---
 # AI 代码审查 2026
+
+> 中文简称：AI 代码审查 2026
 
 ## 1. AI Code Review 概述
 
@@ -264,7 +267,7 @@ REVIEW_METRICS = {
 ## 5. 交叉引用
 
 - [[16_编程/06_Tool_Comparison/AI_IDE_Landscape_2026|AI IDE 全景]]
-- [[16_编程/Testing_with_AI/|AI 辅助测试]]
+- [[09_测试/index|AI 辅助测试]]
 - [[16_编程/09_Security/|编程安全]]
 - [[09_测试/|测试]]
 - [[13_运维/|运维]]

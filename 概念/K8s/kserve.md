@@ -28,8 +28,11 @@ updated: 2026-07-21
 aliases:
   - Kserve
 
+name_zh: "K8s 模型推理平台"
 ---
 # KServe
+
+> 中文简称：K8s 模型推理平台
 
 > Kubernetes 上的「模型服务机场」——让模型推理服务的部署、扩缩、灰度、观测像航班一样标准化。
 

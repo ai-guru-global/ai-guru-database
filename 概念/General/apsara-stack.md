@@ -22,9 +22,12 @@ lifecycle: reviewed
 tier: core
 created: 2026-06-16
 updated: 2026-07-21
+name_zh: "飞天企业版 Apsara Stack"
 ---
 
 # 飞天企业版 Apsara Stack
+
+> 中文简称：飞天企业版 Apsara Stack
 
 > 把阿里云搬进企业机房——政企数字化转型的基座。
 

@@ -6,9 +6,12 @@ summary: Agent Skill 开发中常用的描述统计、假设检验、回归与 A
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "Skill 中常用统计方法速查"
 ---
 
 # Skill 中常用统计方法速查
+
+> 中文简称：Skill 中常用统计方法速查
 
 Agent Skill 经常需要把原始观测转化为可用于决策的指标。本文档汇总 Skill schema 设计、评估脚本与 A/B 评估中最常用的统计方法，便于快速选型与正确解释。
 

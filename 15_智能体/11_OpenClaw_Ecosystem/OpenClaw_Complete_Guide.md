@@ -13,12 +13,15 @@ aliases:
   - OpenClaw_Complete_Guide
 sources: []
 
+name_zh: "OpenClaw 从入门到精通：完整运维与使用指南"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # OpenClaw 完整指南：从入门到进阶
+
+> 中文简称：OpenClaw 从入门到精通：完整运维与使用指南
 
 > 本页提炼自《OpenClaw 从入门到精通》第一、二部分（第 1-8 章），聚焦实操运维知识。底层原理与工程实现详见 [[OpenClaw_Internals]]。
 

@@ -12,8 +12,11 @@ aliases:
   - Scaling_Laws_and_Training_Dynamics
 sources: []
 
+name_zh: "LLM 缩放法则与训练动态"
 ---
 # Scaling Laws and Training Dynamics (LLM 缩放法则与训练动态)
+
+> 中文简称：LLM 缩放法则与训练动态
 
 > **一句话理解**: Scaling Laws 是训练大模型的「菜谱公式」——告诉你给定多少钱（compute），该买多少菜（data）配多大的锅（model parameters），才能做出最好吃的菜（lowest loss）。
 

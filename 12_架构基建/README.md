@@ -8,8 +8,11 @@ updated: '2026-06-16'
 tier: supporting
 sources: []
 
+name_zh: "架构与基础设施"
 ---
 # 架构与基础设施 (Architecture & Infrastructure)
+
+> 中文简称：架构与基础设施
 
 > **一句话理解**: AI 系统架构是智能应用的"骨架与神经系统"——决定系统能支撑多少用户、响应有多快、运行有多稳、成本有多低。
 

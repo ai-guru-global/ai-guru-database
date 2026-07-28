@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "评分细则"
+name_en: "Rubrics"
 ---
 
 # Rubrics
+
+> 中文简称：评分细则 ｜ English Name: Rubrics
 
 Agent 输出质量的多维度评分标准（scoring rubrics）与排名系统（ranking system）— 定义客观、可复现的评估标尺。
 

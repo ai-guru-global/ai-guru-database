@@ -19,9 +19,12 @@ relationships:
   - target: "概念/mthreads"
     type: includes
 sources: []
+name_zh: "国产 AI 芯片"
 ---
 
 # Chinese AI Chips
+
+> 中文简称：国产 AI 芯片
 
 > **一句话理解**: 国产 AI 芯片是中国自己做的 AI 算力芯片，主要在国产化、自主可控场景替代 NVIDIA。
 

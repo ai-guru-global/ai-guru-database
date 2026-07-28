@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Wenfeng Liang 2026 Update", "梁文锋 2026 动态", "DeepSeek 2026"]
 sources: []
+name_zh: "梁文锋 2026 动态"
 ---
 
 # 梁文锋 2026 动态 (Wenfeng Liang 2026 Update)
+
+> 中文简称：梁文锋 2026 动态
 
 ## 一句话概括
 

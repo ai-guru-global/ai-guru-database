@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "机器学习工程师"
+name_en: "Machine Learning Engineer"
 ---
 
 # Machine Learning Engineer
+
+> 中文简称：机器学习工程师 ｜ English Name: Machine Learning Engineer
 
 机器学习工程师 — 负责 ML 模型的训练、优化、部署与监控，连接数据科学与生产系统。
 

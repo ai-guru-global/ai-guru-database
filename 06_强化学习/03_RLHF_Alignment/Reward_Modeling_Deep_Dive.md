@@ -12,8 +12,11 @@ aliases:
   - Reward_Modeling_Deep_Dive
 sources: []
 
+name_zh: "奖励建模深度解析"
 ---
 # 奖励建模深度解析 (Reward Modeling Deep Dive)
+
+> 中文简称：奖励建模深度解析
 
 > **一句话理解**: 奖励模型是RLHF的"翻译官"——它将人类模糊的偏好判断（A比B好）转化为精确的数值信号，让强化学习算法能够优化语言模型，是连接人类价值观与机器学习的核心桥梁。
 

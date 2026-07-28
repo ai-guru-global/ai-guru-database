@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "视频生成 2026"
 ---
 # 视频生成 2026
+
+> 中文简称：视频生成 2026
 
 ## 1. 技术架构演进
 
@@ -388,6 +391,6 @@ class InteractiveVideoGen:
 
 - [[05_大模型/10_Multimodal_Models/|多模态模型]]
 - [[03_深度学习/04_Generative_Models/|生成模型]]
-- [[03_深度学习/Attention_Mechanisms/|注意力机制]]
+- [[03_深度学习/02_Neural_Network_Core/Attention_Mechanisms|注意力机制]]
 - [[05_大模型/05_LLM_Architectures/|LLM 架构]]
 - [[18_行业应用/|行业应用]]

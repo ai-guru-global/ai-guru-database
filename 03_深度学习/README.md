@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "03 深度学习基础"
 ---
 # 03 深度学习基础 (Deep Learning Foundations)
+
+> 中文简称：03 深度学习基础
 
 本章聚焦神经网络的核心机制，涵盖网络架构组件（激活函数、归一化层）、训练算法（反向传播）、优化器（Adam/AdamW）和正则化技术（Dropout）。这是现代深度学习的技术基石。
 

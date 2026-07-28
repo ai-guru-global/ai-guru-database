@@ -8,8 +8,11 @@ updated: 2026-07-11
 tier: supporting
 sources: []
 
+name_zh: "01 基础理论"
 ---
 # 01 基础理论 (Fundamentals)
+
+> 中文简称：01 基础理论
 
 本章节涵盖人工智能与机器学习的科学支柱，分为**数学核心**（线性代数、概率统计、微积分、信息论）和**工程基础**（数据结构算法、分布式系统、AI 硬件、Python/Java 工具链）两层。数学核心为理解算法原理提供理论武器，工程基础为实际构建 AI 系统提供工具和方法论。
 
@@ -37,7 +40,7 @@ sources: []
 | **数据结构与算法 (DS & Algorithms)** | 进阶 | 计算图、拓扑排序、向量索引，支撑自动微分与高效检索 | [[07_Data_Structures_Algorithms/Data_Structures_Algorithms]] | — |
 | **分布式系统 (Distributed Systems)** | 进阶 | All-Reduce、并行策略、ZeRO 优化，实现大规模模型训练 | [[09_Distributed_Systems/Distributed_Systems]] | → [[12_架构基建/02_Architecture_Overview/|架构基建]] |
 | **AI 硬件与芯片 (AI Hardware)** | 进阶 | H100/H200/B200 对比，GPU 选型，边缘 AI 芯片，2026 年硬件格局 | [[10_AI_Hardware/AI_Hardware_2026]] | → [[12_架构基建/07_Hardware_Compute/|硬件计算]] |
-| **GPU 编程 (GPU Programming)** | 进阶 | CUDA 基础、Kernel 编写、内存层次 | [[GPU_Programming/CUDA_Basics]] | → [[12_架构基建/07_Hardware_Compute/|硬件计算]] |
+| **GPU 编程 (GPU Programming)** | 进阶 | CUDA 基础、Kernel 编写、内存层次 | [[01_数学基础/10_AI_Hardware/GPU_Programming_CUDA_Basics|CUDA_Basics]] | → [[12_架构基建/07_Hardware_Compute/|硬件计算]] |
 | **Java 生态与 AI (Java Ecosystem)** | 进阶 | Spring AI、LangChain4j、DJL、GraalVM，Java AI 应用全栈概览 | [[11_Java_Ecosystem_AI/Java_Ecosystem_AI_Overview]] | → [[16_编程/|编程]] |
 | **Python 工具链 (Python Toolkit)** | 入门 | NumPy / Pandas / Matplotlib / Scikit-learn 核心操作 | [[08_Python_Toolkit/Python_for_AI_Basics]] | → [[00_入门/|入门]] |
 | **开发环境配置 (Dev Setup)** | 入门 | Jupyter / Conda / VS Code / Colab / GPU 环境搭建 | [[Development_Setup/AI_Development_Environment_Setup]] | → [[00_入门/|入门]] |
@@ -108,7 +111,7 @@ sources: []
 - [[01_数学基础/10_AI_Hardware/AI_Hardware_2026]] — AI 硬件 2026 全景
 - [[01_数学基础/09_Distributed_Systems/Distributed_Systems]] — 分布式系统
 - [[01_数学基础/09_Distributed_Systems/Distributed_Systems_for_dummy]] — 分布式系统入门
-- [[01_数学基础/GPU_Programming/CUDA_Basics]] — GPU/CUDA 编程
+- [[01_数学基础/10_AI_Hardware/GPU_Programming_CUDA_Basics|CUDA_Basics]] — GPU/CUDA 编程
 - [[01_数学基础/11_Java_Ecosystem_AI/Java_Ecosystem_AI_Overview]] — Java AI 生态概览
 - [[01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive]] — Spring AI 深度解析
 - [[01_数学基础/11_Java_Ecosystem_AI/Java_Ecosystem_AI_for_dummy]] — Java AI 生态入门

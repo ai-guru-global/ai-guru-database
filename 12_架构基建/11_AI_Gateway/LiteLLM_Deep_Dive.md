@@ -12,8 +12,11 @@ aliases:
   - LiteLLM_Deep_Dive
 sources: []
 
+name_zh: "LiteLLM: 多模型统一 API 代理"
 ---
 # LiteLLM: 多模型统一 API 代理
+
+> 中文简称：LiteLLM: 多模型统一 API 代理
 
 > **一句话理解**: LiteLLM 让你可以用同一套接口调用 100+ 种 LLM——OpenAI、Anthropic、Azure、Ollama、HuggingFace 等，一个 SDK 搞定所有。
 

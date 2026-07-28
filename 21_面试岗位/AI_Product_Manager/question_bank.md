@@ -7,9 +7,12 @@ created: "2026-07-23"
 updated: "2026-07-23"
 tier: core
 sources: []
+name_zh: "AI Product Manager 题库"
 ---
 
 # AI Product Manager 题库
+
+> 中文简称：AI Product Manager 题库
 
 > **难度标注**: ⭐ Basic | ⭐⭐ Intermediate | ⭐⭐⭐ Advanced
 > **频率标注**: 🔴 高频 | 🟡 中频 | 🟢 低频

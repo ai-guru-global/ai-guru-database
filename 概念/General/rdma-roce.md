@@ -29,8 +29,11 @@ aliases:
   - "Rdma Roce"
   - "rdma roce"
 
+name_zh: "高速 GPU 网络"
 ---
 # RDMA/RoCE (高速 GPU 网络)
+
+> 中文简称：高速 GPU 网络
 
 ## 大白话
 

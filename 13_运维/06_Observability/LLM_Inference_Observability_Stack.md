@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "LLM 推理可观测性栈"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # LLM 推理可观测性栈
+
+> 中文简称：LLM 推理可观测性栈
 
 > **一句话理解**: LLM 推理可观测性就是盯着「首 token 多久回来、每个 token 多快、排队长不长、KV Cache 满没满」这几件事，及时发现和定位问题。
 

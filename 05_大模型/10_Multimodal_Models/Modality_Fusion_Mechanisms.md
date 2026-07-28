@@ -11,8 +11,11 @@ aliases:
   - Modality_Fusion_Mechanisms
 sources: []
 
+name_zh: "模态融合机制深度解析"
 ---
 # 模态融合机制深度解析
+
+> 中文简称：模态融合机制深度解析
 
 ## 一句话理解
 

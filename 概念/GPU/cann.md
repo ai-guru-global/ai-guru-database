@@ -16,9 +16,12 @@ relationships:
   - target: "概念/mindie"
     type: includes
 sources: []
+name_zh: "昇腾异构计算架构"
 ---
 
 # CANN
+
+> 中文简称：昇腾异构计算架构
 
 > **一句话理解**: CANN 是昇腾 NPU 的软件底座，相当于 NVIDIA 的 CUDA + cuDNN + TensorRT 合体。
 

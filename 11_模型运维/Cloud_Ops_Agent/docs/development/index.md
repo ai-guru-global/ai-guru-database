@@ -7,6 +7,8 @@ created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
 sources: []
+name_zh: "云产品运维 Agent 研发指南"
+name_en: "development"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -14,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # 云产品运维 Agent 研发指南 (Development)
+
+> 中文简称：云产品运维 Agent 研发指南 ｜ English Name: development
 
 > 🎯 **目标**: 为研发工程师提供从环境搭建、工具开发、Agent 实现、调试测试到部署上线的完整开发指南，确保代码质量与研发效率。
 

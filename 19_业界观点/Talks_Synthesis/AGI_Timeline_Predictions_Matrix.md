@@ -15,9 +15,12 @@ sources:
   - "https://www.nature.com/articles/d41586-023-02212-7 (Hassabis Nature 访谈)"
   - "https://openreview.net/pdf?id=BZ5a1r-kVsf (LeCun 世界模型论文)"
   - "https://blog.samaltman.com/ (Altman 博客)"
+name_zh: "AGI 时间表预测矩阵：领袖们都说还有几年"
 ---
 
 # AGI 时间表预测矩阵：领袖们都说还有几年
+
+> 中文简称：AGI 时间表预测矩阵：领袖们都说还有几年
 
 > **一句话概括**: 把 Altman / Musk / LeCun / Hassabis / 黄仁勋 / Bengio / Hinton 等 12 位领袖对 AGI 到来时间表的公开预测做成一张矩阵——从"几年内"到"几十年甚至不会"，跨度横跨 50 年，本篇分析他们乐观与悲观的底层逻辑。
 

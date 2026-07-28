@@ -25,8 +25,11 @@ updated: 2026-07-21
 aliases:
   - Rope
 
+name_zh: "RoPE 旋转位置编码"
 ---
 # RoPE 旋转位置编码 (Rotary Position Embedding)
+
+> 中文简称：RoPE 旋转位置编码
 
 ## 1. 定义
 

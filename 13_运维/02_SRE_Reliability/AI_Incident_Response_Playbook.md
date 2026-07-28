@@ -12,12 +12,15 @@ aliases:
   - AI_Incident_Response_Playbook
 sources: []
 
+name_zh: "AI 系统事故响应手册"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # AI 系统事故响应手册
+
+> 中文简称：AI 系统事故响应手册
 
 > 🎯 **目标**：建立 AI/LLM 生产系统的事故响应体系 —— 从 Runbook 模板、War Room 流程、分诊决策树到自动化修复脚本，确保团队在高压下一致、高效地处理故障。
 

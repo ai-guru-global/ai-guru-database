@@ -3,9 +3,12 @@ title: 阿里云专有云 (Alibaba Cloud Proprietary)
 category: 12_架构基建/Alibaba_Cloud
 tags: [alibaba-cloud, proprietary-cloud, k8s, astack, ack]
 summary: 阿里云专有云（Apsara Stack）环境下的 AI 基础设施实践，包括 ACK、ASCM、天基平台和 GPU 运维。
+name_zh: "阿里云专有云"
 ---
 
 # 阿里云专有云 (Alibaba Cloud Proprietary)
+
+> 中文简称：阿里云专有云
 
 本目录收录阿里云专有云环境下的 AI 基础设施文档，面向专有云工单智能体和运维场景。
 
@@ -37,10 +40,10 @@ summary: 阿里云专有云（Apsara Stack）环境下的 AI 基础设施实践�
 
 ## Related
 
-- [[../03_AI_Stack/|阿里云 AI Stack 工具链]]
+- [[12_架构基建/03_AI_Stack|阿里云 AI Stack 工具链]]
 - [[../07_Hardware_Compute/HAMi_Deep_Dive|HAMi GPU 虚拟化]]
-- [[../13_运维/04_Troubleshooting/K8s_Troubleshooting_Playbook|K8s 排障手册]]
-- [[../02_Architecture_Overview/System_Architecture|系统架构]]
+- [[13_运维/04_Troubleshooting/Kubernetes_Troubleshooting_Playbook|K8s 排障手册]]
+- [[12_架构基建/02_Architecture_Overview/AI_System_Architecture_2026|系统架构]]
 
 ## 架构核心组件对比
 

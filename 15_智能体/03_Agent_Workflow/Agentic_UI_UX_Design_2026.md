@@ -12,8 +12,11 @@ aliases:
   - Agentic_UI_UX_Design_2026
 sources: []
 
+name_zh: "智能体 UI/UX 设计"
 ---
 # Agentic UI/UX Design 2026: Designing for AI Agents
+
+> 中文简称：智能体 UI/UX 设计
 
 > **一句话理解**: 好的智能体 UI 不仅仅是一个聊天框，而是一个让“人”与“AI”能够像同事一样协作的数字化动态空间。
 

@@ -27,8 +27,11 @@ aliases:
   - "Microsoft AI Agents L02 Frameworks"
   - Microsoft_AI_Agents_L02_Frameworks
 
+name_zh: "L02 探索 AI Agentic 框架"
 ---
 # L02 探索 AI Agentic 框架
+
+> 中文简称：L02 探索 AI Agentic 框架
 
 > 来源：[Microsoft AI Agents for Beginners / 02-explore-agentic-frameworks](https://github.com/microsoft/ai-agents-for-beginners/tree/main/02-explore-agentic-frameworks)
 

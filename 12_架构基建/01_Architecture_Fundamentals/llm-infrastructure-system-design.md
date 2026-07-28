@@ -21,8 +21,11 @@ aliases:
   - "Llm Infrastructure System Design"
   - "llm infrastructure system design"
 
+name_zh: "LLM 基础设施 × 传统系统架构 — 从 Web 服务到 Token 工厂"
 ---
 # LLM 基础设施 × 传统系统架构 — 从 Web 服务到 Token 工厂
+
+> 中文简称：LLM 基础设施 × 传统系统架构 — 从 Web 服务到 Token 工厂
 
 ## The Connection
 

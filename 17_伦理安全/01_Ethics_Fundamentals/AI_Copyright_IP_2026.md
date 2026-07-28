@@ -11,9 +11,12 @@ aliases:
   - "AI版权与知识产权"
   - AI_Copyright_IP_2026
 sources: []
+name_zh: "AI版权与知识产权 2026"
 ---
 
 # AI版权与知识产权 2026
+
+> 中文简称：AI版权与知识产权 2026
 
 > **一句话理解**: AI版权是2024-2026年最激烈的法律战场——NYT v. OpenAI、Getty v. Stability等标志性诉讼正在重塑训练数据版权边界，Fair Use四要素分析面临AI时代重新诠释，AI生成物的版权归属全球无定论，开发者必须在"创新自由"与"创作者权益"之间找到合规路径。
 
@@ -730,16 +733,16 @@ AI产品版权相关条款建议:
 
 ## 13. 相关概念
 
-- [[EU AI Act实施指南]] — GPAI版权政策义务
-- [[中国AI治理法规]] — 中国训练数据知识产权要求
-- [[AI伦理基础]] — AI伦理理论框架
-- [[AI治理与合规2026]] — 全球AI治理全景
-- [[深度伪造安全]] — AI生成内容标识
-- [[联邦学习]] — 隐私保护训练(与数据合规相关)
-- [[AI安全红队测试]] — 模型安全评估
-- [[自主武器AI伦理]] — AI伦理极端案例
-- [[算法偏见与公平性]] — AI公平性
-- [[可解释AI]] — AI决策透明度
+- [[17_伦理安全/03_Governance/EU_AI_Act_Implementation_2026|EU AI Act实施指南]] — GPAI版权政策义务
+- [[17_伦理安全/03_Governance/China_AI_Regulations_2026|中国AI治理法规]] — 中国训练数据知识产权要求
+- [[17_伦理安全/01_Ethics_Fundamentals/AI_Ethics_Safety_Future|AI伦理基础]] — AI伦理理论框架
+- [[17_伦理安全/03_Governance/AI_Governance_Compliance_2026|AI治理与合规2026]] — 全球AI治理全景
+- [[17_伦理安全/09_Deepfake_Security/Deepfake_Security|深度伪造安全]] — AI生成内容标识
+- [[17_伦理安全/11_Federated_Learning/Federated_Learning_Deep_Dive|联邦学习]] — 隐私保护训练(与数据合规相关)
+- [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Red_Teaming_Guide|AI安全红队测试]] — 模型安全评估
+- [[17_伦理安全/01_Ethics_Fundamentals/Autonomous_Weapons_AI_Ethics|自主武器AI伦理]] — AI伦理极端案例
+- [[17_伦理安全/01_Ethics_Fundamentals/Bias_Fairness_Testing|算法偏见与公平性]] — AI公平性
+- [[概念/Safety/explainable-ai|可解释AI]] — AI决策透明度
 
 ---
 

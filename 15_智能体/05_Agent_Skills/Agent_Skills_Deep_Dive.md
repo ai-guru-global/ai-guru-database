@@ -11,8 +11,11 @@ aliases:
   - Agent_Skills_Deep_Dive
 sources: []
 
+name_zh: "Agent Skills 深度解析"
 ---
 # Agent Skills 深度解析
+
+> 中文简称：Agent Skills 深度解析
 
 > 🎯 **目标**：全面掌握 Agent Skills 开放标准 —— 从核心概念、完整规范、最佳实践到评估体系，构建生产级 Skill 的完整知识体系。
 

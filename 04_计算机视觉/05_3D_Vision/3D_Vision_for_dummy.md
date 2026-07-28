@@ -12,8 +12,11 @@ aliases:
   - 3D_Vision_for_dummy
 sources: []
 
+name_zh: "3D 视觉 - 小白版 🏗️"
 ---
 # 3D 视觉 - 小白版 🏗️
+
+> 中文简称：3D 视觉 - 小白版 🏗️
 
 > **一句话秒懂**: 3D 视觉就是让 AI "看懂"立体世界——不仅识别这是什么物体，还能知道它在 3D 空间里的位置、形状、朝向，就像人类用两只眼睛看世界一样！
 
@@ -196,7 +199,7 @@ CT 和 MRI:
 - [[../../概念/Vision/nerf|NeRF 概念卡]] — 神经辐射场的概念定义
 - [[../../03_深度学习/04_Generative_Models/Diffusion_Models_Deep_Dive|Diffusion 深度页]] — 生成式 3D 内容的底层技术
 - [[../../10_部署推理/03_Inference_Optimization/kv-cache-inference-optimization|推理优化]] — 3D 视觉模型部署优化
-- [[../../14_RAG系统/01_RAG_Fundamentals|RAG 基础]] — 3D 场景的知识增强检索
+- [[14_RAG系统/01_RAG_Fundamentals|RAG 基础]] — 3D 场景的知识增强检索
 
 ---
 

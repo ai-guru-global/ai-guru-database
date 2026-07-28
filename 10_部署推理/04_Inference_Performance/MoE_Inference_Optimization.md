@@ -12,8 +12,11 @@ aliases:
   - MoE_Inference_Optimization
 sources: []
 
+name_zh: "MoE 推理优化"
 ---
 # MoE 推理优化
+
+> 中文简称：MoE 推理优化
 
 > MoE（Mixture of Experts）让大模型“看着很大，用着很小”，但推理时要搞定 All-to-All 通信和专家负载均衡。
 

@@ -25,8 +25,11 @@ aliases:
   - "Bayesian Methods"
   - "bayesian methods"
 
+name_zh: "贝叶斯方法"
 ---
 # 贝叶斯方法 (Bayesian Methods)
+
+> 中文简称：贝叶斯方法
 
 > 让 AI 不仅给出答案，还告诉你「有多不确定」——概率思维的数学框架。
 

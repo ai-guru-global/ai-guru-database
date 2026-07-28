@@ -26,12 +26,15 @@ aliases:
   - "Microsoft AI Agents L00 Course Setup"
   - Microsoft_AI_Agents_L00_Course_Setup
 
+name_zh: "L00 课程环境设置"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # L00 课程环境设置：Microsoft AI Agents for Beginners
+
+> 中文简称：L00 课程环境设置
 
 > 来源：[Microsoft AI Agents for Beginners / 00-course-setup](https://github.com/microsoft/ai-agents-for-beginners/tree/main/00-course-setup)
 

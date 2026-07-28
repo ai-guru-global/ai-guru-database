@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "NLP 工程师"
+name_en: "NLP Engineer"
 ---
 
 # NLP Engineer
+
+> 中文简称：NLP 工程师 ｜ English Name: NLP Engineer
 
 NLP 工程师 — 开发自然语言处理系统，涵盖文本理解、生成、翻译、对话等任务。
 

@@ -18,9 +18,12 @@ relationships:
     type: related_to
 sources:
   - "https://tekton.dev/"
+name_zh: "K8s 原生 CI/CD"
 ---
 
 # Tekton
+
+> 中文简称：K8s 原生 CI/CD
 
 > **一句话理解**: Tekton 是把 CI/CD 流水线也做成 K8s 资源的框架，任务在 Pod 里跑，天然具备弹性、隔离和可观测性。
 
@@ -162,7 +165,7 @@ spec:
 - [[概念/Training/gitops|GitOps]] — Git 运维
 - [[概念/MLOps/mlops|MLOps]] — 机器学习运维
 - [[概念/MLOps/ci-cd|CI/CD]] — 持续集成/部署
-- [[13_运维/02_SRE_Reliability/SRE_Reliability|SRE]] — 站点可靠性
+- [[13_运维/02_SRE_Reliability/index|SRE]] — 站点可靠性
 
 > ℹ️ Tekton 是 2026 年云原生 CI/CD 的事实标准，K8s 原生、可扩展、安全，是 MLOps  管道的基础设施。
 

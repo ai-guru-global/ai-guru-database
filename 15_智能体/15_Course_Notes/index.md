@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "课程笔记"
+name_en: "Course Notes"
 ---
 
 # Course Notes
+
+> 中文简称：课程笔记 ｜ English Name: Course Notes
 
 课程笔记 — AI Agent 相关系统课程的学习笔记（Learn Claude Code、Microsoft AI Agents 等）。
 

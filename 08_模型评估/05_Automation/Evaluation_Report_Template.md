@@ -10,9 +10,12 @@ aliases:
   - "Evaluation Report Template"
   - "Model Evaluation Report"
 sources: []
+name_zh: "模型评估报告模板"
 ---
 
 # 模型评估报告模板 (Model Evaluation Report Template)
+
+> 中文简称：模型评估报告模板
 
 > 标准化的模型评估报告模板——全面记录模型性能、对比分析和推荐结论，支撑上线决策。
 

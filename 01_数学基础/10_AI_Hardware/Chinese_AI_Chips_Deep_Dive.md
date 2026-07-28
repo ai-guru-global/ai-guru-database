@@ -23,8 +23,11 @@ aliases:
   - "Chinese AI Chips Deep Dive"
   - Chinese_AI_Chips_Deep_Dive
 
+name_zh: "国产 AI 芯片深度解析 2026"
 ---
 # 国产 AI 芯片深度解析 2026
+
+> 中文简称：国产 AI 芯片深度解析 2026
 
 > **一句话理解**: 全面解析中国 12 家国产 AI 芯片厂商——从华为昇腾到摩尔线程，覆盖技术架构、软件生态、训练验证和选型决策。
 

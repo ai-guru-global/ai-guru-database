@@ -11,9 +11,12 @@ aliases:
   - SAST_SCA_for_AI_Code
   - 静态安全分析
 sources: []
+name_zh: "SAST 与 SCA 在 AI 编程中的应用"
 ---
 
 # SAST 与 SCA 在 AI 编程中的应用
+
+> 中文简称：SAST 与 SCA 在 AI 编程中的应用
 
 > **一句话理解**: SAST（静态应用安全测试）逐行扫描源代码寻找已知漏洞模式，SCA（软件组成分析）检查第三方依赖中的已知 CVE——两者是拦截 AI 生成代码安全风险的自动化第一道防线。
 

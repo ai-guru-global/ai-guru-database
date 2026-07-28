@@ -15,9 +15,12 @@ relationships:
   - target: "概念/incident-response"
     type: related_to
 sources: []
+name_zh: "混沌工程"
 ---
 
 # Chaos Engineering
+
+> 中文简称：混沌工程
 
 > **一句话理解**: 混沌工程就是「主动搞破坏」来验证系统能不能扛住故障，而不是等真出事才发现问题。
 

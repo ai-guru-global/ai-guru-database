@@ -10,8 +10,11 @@ aliases:
   - "career interviews"
 sources: []
 
+name_zh: "AI 面试与职业发展"
 ---
 # AI 面试与职业发展
+
+> 中文简称：AI 面试与职业发展
 
 ## The Connection
 

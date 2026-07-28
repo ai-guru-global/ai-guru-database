@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-25
 sources: []
+name_zh: "深度学习框架"
+name_en: "DL Frameworks"
 ---
 
 # DL Frameworks
+
+> 中文简称：深度学习框架 ｜ English Name: DL Frameworks
 
 深度学习框架 — PyTorch、TensorFlow、Keras 等主流深度学习框架的用法与对比。
 

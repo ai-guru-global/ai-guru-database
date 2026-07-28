@@ -20,8 +20,11 @@ aliases:
   - "tokens"
 sources: []
 
+name_zh: "Token 大白话解释"
 ---
 # Token 大白话解释
+
+> 中文简称：Token 大白话解释
 
 > **一句话总结**: Token 是大模型的"最小理解单位"——模型不认字，只认积木。
 
@@ -126,7 +129,7 @@ sources: []
 
 ---
 
-*相关概念: [[概念/tokenization|Tokenization 详解]]、[[概念/context-window|上下文窗口]]、[[概念/model-weights|模型权重]]*
+*相关概念: [[概念/tokenization|Tokenization 详解]]、[[概念/context-window|上下文窗口]]、[[概念/Inference/model-formats|模型权重]]*
 
 ---
 

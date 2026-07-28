@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "闫俊杰关于 AI 的观点"
 ---
 # 闫俊杰关于 AI 的观点 (Junjie Yan on AI)
+
+> 中文简称：闫俊杰关于 AI 的观点
 
 1. **"全模态不是锦上添花，是 AGI 的必经之路——文本、视频、语音、音乐都是智能的切面。"**
    - **上下文**: 解释 MiniMax 同时布局 Talkie (社交)、海螺 AI (对话)、Hailuo (视频)、音乐生成的全模态战略。

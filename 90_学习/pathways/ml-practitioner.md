@@ -11,8 +11,11 @@ aliases:
   - "ml practitioner"
 sources: []
 
+name_zh: "ML 从业者路径"
 ---
 # ML 从业者路径
+
+> 中文简称：ML 从业者路径
 
 > **面向：有编程基础，想系统成为 AI 工程师 | 前置要求：Python 基础 | 预计时间：60-80 小时**
 

@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "音频 LLM 2026"
 ---
 # 音频 LLM 2026
+
+> 中文简称：音频 LLM 2026
 
 ## 1. 语音 AI 范式演进
 
@@ -350,7 +353,7 @@ class VoiceAgent:
 
 - [[05_大模型/10_Multimodal_Models/|多模态模型]]
 - [[05_大模型/11_Speech_Audio_AI/|语音音频 AI]]
-- [[05_大模型/LLM_Inference/|LLM 推理]]
+- [[10_部署推理/02_Inference_Engines/index|LLM 推理]]
 - [[15_智能体/|智能体系统]]
 - [[10_部署推理/|部署推理]]
 - [[05_大模型/10_Multimodal_Models/Video_Generation_2026|视频生成]]

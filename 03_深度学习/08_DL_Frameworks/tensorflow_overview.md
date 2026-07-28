@@ -14,8 +14,11 @@ aliases:
   - "tensorflow overview"
   - tensorflow_overview
 
+name_zh: "TensorFlow 概览"
 ---
 # TensorFlow 概览
+
+> 中文简称：TensorFlow 概览
 
 > **一句话理解**: Google 出品的深度学习框架，静态图+Keras 高层 API，生产部署生态（TF Serving/TF Lite/TF.js）最完善，移动端与边缘部署首选。
 

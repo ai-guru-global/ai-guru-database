@@ -22,9 +22,12 @@ lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-07-21
+name_zh: "世界模型与JEPA架构"
 ---
 
 # 世界模型与JEPA架构
+
+> 中文简称：世界模型与JEPA架构
 
 > **主卡片**: [[world-models|World Models 主卡片]] — 本文聚焦 JEPA 架构。
 

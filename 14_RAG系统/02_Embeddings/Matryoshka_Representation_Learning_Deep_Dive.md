@@ -12,8 +12,11 @@ aliases:
   - Matryoshka_Representation_Learning_Deep_Dive
 sources: []
 
+name_zh: "Matryoshka Representation Learning 深度解析"
 ---
 # Matryoshka Representation Learning 深度解析
+
+> 中文简称：Matryoshka Representation Learning 深度解析
 
 > **一句话理解**: MRL（俄罗斯套娃表示学习）让一组向量具备"可截断"能力——前 64 维做粗排、前 256 维做精排、全量 768/1024 维做最终匹配，同一模型按需取前缀即可兼顾检索精度与存储/计算成本。
 

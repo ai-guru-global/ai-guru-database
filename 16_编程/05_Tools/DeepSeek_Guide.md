@@ -12,12 +12,15 @@ aliases:
   - DeepSeek_Guide
 sources: []
 
+name_zh: "DeepSeek 使用指南"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # DeepSeek 使用指南
+
+> 中文简称：DeepSeek 使用指南
 
 > **一句话**: DeepSeek 提供高性价比的 AI 编程辅助，余额 ¥68，月消费约 ¥36，通过 deepseek-tio 工具接入。
 

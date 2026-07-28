@@ -14,6 +14,7 @@ aliases:
 updated: 2026-06-30
 summary: "Provider 与模型管理 — 专题文档"
 sources: []
+name_zh: "Provider 与模型管理"
 ---
 title: Provider 与模型管理
 description: '# Provider 与模型管理'
@@ -53,6 +54,8 @@ k8s_versions:
 - '1.32'
 ---
 # Provider 与模型管理
+
+> 中文简称：Provider 与模型管理
 
 > **文档类型**: 配置指南 | **最后更新**: 2026-03 | **关键词**: OpenCode, Provider, [[概念/prompt-engineering|LLM]] Model, OpenCode Zen, AWS Bedrock, Azure OpenAI, GitHub Copilot, Groq, VertexAI
 

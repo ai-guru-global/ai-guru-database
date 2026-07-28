@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "微软结构化生成库"
 ---
 
 # Guidance
+
+> 中文简称：微软结构化生成库
 
 [Guidance](https://github.com/microsoft/guidance) 是 Microsoft Research 开源的 LLM 结构化生成库，通过类 Handlebars 的模板语法将 Prompt 编写、输出约束与逻辑控制融合在一个统一的编程范式中。与 Outlines 侧重"输出格式约束"不同，Guidance 更关注**生成过程的可编程性**——开发者可以在 Prompt 中嵌入条件分支、循环、函数调用等控制流，让 LLM 的交互行为像程序一样可预测。
 

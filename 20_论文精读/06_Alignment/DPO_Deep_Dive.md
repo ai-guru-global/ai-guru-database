@@ -12,8 +12,11 @@ aliases:
   - DPO_Deep_Dive
 sources: []
 
+name_zh: "Direct Preference Optimization 深度解读"
 ---
 # Direct Preference Optimization (DPO) 深度解读
+
+> 中文简称：Direct Preference Optimization 深度解读
 
 > **一句话理解**: DPO 就像跳过了"先请老师打分再学"的中间步骤——直接从人类偏好数据学习，不需要单独训练奖励模型
 
@@ -756,11 +759,11 @@ flowchart TB
 
 ## Related
 
-- [[../../05_大模型/07_Fine_tuning_Techniques|微调技术]] — DPO 与 RLHF 微调方法对比
+- [[05_大模型/07_Fine_tuning_Techniques|微调技术]] — DPO 与 RLHF 微调方法对比
 - [[../../05_大模型/05_LLM_Architectures/LLM_Internals_Training|LLM 训练内部机制]] — 对齐训练技术细节
 - [[../../概念/LLM/decoding-strategies|解码策略概念卡]] — 偏好优化对生成的影响
 - [[../../03_深度学习/03_Optimization/Optimization|优化方法]] — 损失函数与优化理论
-- [[../../08_模型评估/Human_Evaluation|人工评估]] — 偏好数据质量评估
+- [[08_模型评估/01_Evaluation_Fundamentals/Human_Evaluation_Deep_Dive|人工评估]] — 偏好数据质量评估
 
 ---
 

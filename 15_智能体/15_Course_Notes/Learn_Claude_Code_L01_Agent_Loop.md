@@ -25,8 +25,11 @@ aliases:
   - "Learn Claude Code L01 Agent Loop"
   - Learn_Claude_Code_L01_Agent_Loop
 
+name_zh: "Learn Claude Code L01：Agent Loop — 一个循环就"
 ---
 # Learn Claude Code L01：Agent Loop — 一个循环就够了
+
+> 中文简称：Learn Claude Code L01：Agent Loop — 一个循环就
 
 > **一句话理解**: Agent 的能动性来自模型，harness 只负责“循环”——模型举手要工具就执行并喂回结果，不举手就结束。
 

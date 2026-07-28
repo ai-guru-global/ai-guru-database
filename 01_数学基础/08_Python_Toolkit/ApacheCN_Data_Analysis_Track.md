@@ -19,8 +19,11 @@ aliases:
   - "ApacheCN Data Analysis Track"
   - ApacheCN_Data_Analysis_Track
 
+name_zh: "ApacheCN 数据分析主线"
 ---
 # ApacheCN 数据分析主线
+
+> 中文简称：ApacheCN 数据分析主线
 
 > `docs/da/` 目录下的《Python 数据分析中文笔记》，约 **155 页**、**12 个模块**，系统覆盖 Python 数据分析工具链，是后续机器学习与深度学习的编程基础。
 

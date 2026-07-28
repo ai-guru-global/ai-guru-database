@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "计划"
+name_en: "plan"
 ---
 
 # Plan
+
+> 中文简称：计划 ｜ English Name: plan
 
 治理规划（Governance Plan）— AI 知识库的治理计划与路线图（roadmap），涵盖内容规划、质量标准与维护流程。
 

@@ -11,8 +11,11 @@ aliases:
   - Transformer_Architecture
 sources: []
 
+name_zh: "Transformer 架构详解"
 ---
 # Transformer 架构详解
+
+> 中文简称：Transformer 架构详解
 
 > **一句话理解**: Transformer 用 Self-Attention 取代循环和卷积，让序列中任意两个位置都能直接交互——并行训练、全局感知、高度可扩展，成为当代 AI 的统一基础架构。
 

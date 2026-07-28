@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "LLM 单元测试"
 ---
 # LLM 单元测试
+
+> 中文简称：LLM 单元测试
 
 ## 1. LLM 测试挑战
 
@@ -221,7 +224,7 @@ jobs:
 ## 6. 交叉引用
 
 - [[09_测试/02_Testing_Frameworks/|测试框架]]
-- [[09_测试/RAGAS/|RAGAS]]
-- [[16_编程/Testing_with_AI/|AI 辅助测试]]
+- [[概念/RAG/ragas|RAGAS]]
+- [[09_测试/index|AI 辅助测试]]
 - [[08_模型评估/|模型评估]]
-- [[09_测试/CI_CD_for_ML/|ML CI/CD]]
+- [[11_模型运维/06_CI_CD/index|ML CI/CD]]

@@ -11,8 +11,11 @@ aliases:
   - Volcano_Deep_Dive
 sources: []
 
+name_zh: "Volcano: Kubernetes 批处理与 AI 训练调度器"
 ---
 # Volcano 深度解析
+
+> 中文简称：Volcano: Kubernetes 批处理与 AI 训练调度器
 
 > **一句话理解**: Volcano 是 CNCF 孵化级的 Kubernetes 批处理调度器——靠 PodGroup 实现 Gang Scheduling（要么全调度要么不调度），是大模型分布式训练在 K8s 上避免"半个任务卡死"的事实标准。
 

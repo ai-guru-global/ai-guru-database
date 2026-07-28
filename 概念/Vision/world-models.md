@@ -25,9 +25,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "世界模型"
 ---
 
 # World Models（世界模型）
+
+> 中文简称：世界模型
 
 ## 一句话总结
 
@@ -194,7 +197,7 @@ Sora、Runway、VideoPoet 等视频生成模型被一些人视为世界模型的
 - [[概念/Vision/video-generation|视频生成]] — 视频生成技术
 - [[概念/Vision/computer-vision|计算机视觉]] — CV 基础
 - [[概念/Vision/world-models-jepa|JEPA]] — 联合嵌入预测架构
-- [[概念/Agent/agent-architecture|Agent 架构]] — Agent 规划与决策
+- [[概念/Agent/agent-architectures|Agent 架构]] — Agent 规划与决策
 
 > ℹ️ 世界模型是 AGI 的关键路径之一，让 AI 理解并预测物理世界。
 > 自动驾驶和机器人是世界模型最直接的落地场景。

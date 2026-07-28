@@ -12,8 +12,11 @@ aliases:
   - Inference_Autoscaling_and_Load_Balancing
 sources: []
 
+name_zh: "推理弹性扩缩容与负载均衡"
 ---
 # 推理弹性扩缩容与负载均衡
+
+> 中文简称：推理弹性扩缩容与负载均衡
 
 > LLM 推理的流量像海浪——平时很低，高峰时几倍，弹性扩缩容就是不被浪打翻的船。
 

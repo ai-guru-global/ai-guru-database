@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Andrew Ng 关于 AI 的观点与格言"
 ---
 # Andrew Ng 关于 AI 的观点与格言
+
+> 中文简称：Andrew Ng 关于 AI 的观点与格言
 
 > 说明：以下整理 Andrew Ng 在公开场合关于 AI 的代表性言论，提供中英文对照与出处链接。
 

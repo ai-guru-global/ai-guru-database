@@ -10,9 +10,12 @@ aliases:
   - "AI Code Security Audit Runbook"
   - AI_Code_Security_Audit_Runbook
 sources: []
+name_zh: "AI 代码安全审计 Runbook"
 ---
 
 # AI 代码安全审计 Runbook
+
+> 中文简称：AI 代码安全审计 Runbook
 
 > **一句话理解**: AI 辅助生成的代码在提升研发效率的同时，也引入了传统代码审计未曾充分覆盖的新型风险。本 Runbook 从生产落地视角，系统梳理 AI 生成代码的漏洞模式、自动化与人工结合的审计工具链、CI/CD 集成策略以及企业合规 checklist，帮助团队在“加速”与“安全”之间建立可复现的平衡。
 

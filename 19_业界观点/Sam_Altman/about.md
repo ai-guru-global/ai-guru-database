@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Sam Altman 简介"
 ---
 # Sam Altman 简介 (Sam Altman)
+
+> 中文简称：Sam Altman 简介
 
 ## 一句话概括
 

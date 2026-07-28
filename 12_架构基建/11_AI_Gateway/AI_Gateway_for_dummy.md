@@ -12,8 +12,11 @@ aliases:
   - AI_Gateway_for_dummy
 sources: []
 
+name_zh: "AI Gateway 入门指南"
 ---
 # AI Gateway 入门指南 (for Dummies)
+
+> 中文简称：AI Gateway 入门指南
 
 > 用最简单的语言解释什么是 AI Gateway，以及为什么你需要它。
 

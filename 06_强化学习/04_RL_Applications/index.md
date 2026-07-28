@@ -3,9 +3,13 @@ title: 强化学习应用
 category: 06_强化学习/04_RL_Applications
 tags: [rl, applications, game, recommendation]
 summary: 强化学习在游戏 AI、推荐系统和自动驾驶等领域的应用。
+name_zh: "强化学习应用"
+name_en: "RL Applications"
 ---
 
 # 强化学习应用
+
+> 中文简称：强化学习应用 ｜ English Name: RL Applications
 
 本目录收录强化学习在各领域的应用文档。
 

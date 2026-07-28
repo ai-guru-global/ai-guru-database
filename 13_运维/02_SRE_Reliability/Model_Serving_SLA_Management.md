@@ -11,8 +11,11 @@ aliases:
   - Model_Serving_SLA_Management
 sources: []
 
+name_zh: "模型服务 SLA 管理"
 ---
 # 模型服务 SLA 管理
+
+> 中文简称：模型服务 SLA 管理
 
 > **一句话理解**: 为 LLM/AI 推理服务建立完整的 SLA 管理体系——从指标定义、错误预算到自动扩缩容、降级策略和 On-call 响应。
 

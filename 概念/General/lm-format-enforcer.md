@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "LLM 输出格式约束库"
 ---
 
 # LM Format Enforcer
+
+> 中文简称：LLM 输出格式约束库
 
 [lm-format-enforcer](https://github.com/noamgat/lm-format-enforcer) 是一个专注于 LLM 输出格式约束的轻量级 Python 库，通过在 Token 采样阶段施加 Logit 偏置（Logit Biasing），强制模型输出符合 JSON Schema、正则表达式或自定义语法规范的文本。与 Outlines 和 Guidance 相比，它更**轻量、更聚焦**，专门解决"输出格式合规"这一个核心问题。
 

@@ -7,9 +7,12 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: core
 sources: []
+name_zh: "Kubernetes 可观测性栈"
 ---
 
 # Kubernetes 可观测性栈
+
+> 中文简称：Kubernetes 可观测性栈
 
 > **一句话理解**: K8s 可观测性栈就是把 Metrics（指标）、Logs（日志）、Traces（链路）三类数据统一采集、存储、关联分析，让复杂分布式系统的故障定位有迹可循。
 

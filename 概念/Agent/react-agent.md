@@ -26,9 +26,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-06-25
 sources: []
+name_zh: "ReAct 智能体"
 ---
 
 # ReAct 智能体（Reasoning + Acting）
+
+> 中文简称：ReAct 智能体
 
 ## 一句话总结
 

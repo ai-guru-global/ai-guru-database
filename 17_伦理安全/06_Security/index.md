@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "LLM 安全"
+name_en: "Security"
 ---
 
 # Security
+
+> 中文简称：LLM 安全 ｜ English Name: Security
 
 ## 文件导航
 

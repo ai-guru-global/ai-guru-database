@@ -23,8 +23,11 @@ aliases:
   - "Llm Data Engineering"
   - "llm data engineering"
 
+name_zh: "LLM 数据工程"
 ---
 # LLM 数据工程 (LLM Data Engineering)
+
+> 中文简称：LLM 数据工程
 
 > 数据是 LLM 的燃料——同样的架构和算力，数据质量/数量/配比决定模型是「废铁」还是「SOTA」。
 

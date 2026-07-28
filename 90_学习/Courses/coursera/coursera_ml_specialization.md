@@ -12,8 +12,11 @@ aliases:
   - coursera_ml_specialization
 sources: []
 
+name_zh: "Coursera 机器学习专项课程"
 ---
 # Coursera 机器学习专项课程 (Machine Learning Specialization)
+
+> 中文简称：Coursera 机器学习专项课程
 
 > Andrew Ng 2022 年更新的 3 门机器学习入门课程——监督学习、高级算法、无监督学习。
 

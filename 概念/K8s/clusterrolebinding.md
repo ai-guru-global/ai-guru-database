@@ -16,6 +16,7 @@ relationships:
   - target: "概念/rbac"
     type: part_of
 sources: []
+name_zh: "K8s 集群角色绑定"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -23,6 +24,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # ClusterRoleBinding
+
+> 中文简称：K8s 集群角色绑定
 
 > **一句话理解**: ClusterRoleBinding 是 Kubernetes RBAC 的「全局授权书」——把 ClusterRole 的集群级权限授予用户、组或 ServiceAccount。
 

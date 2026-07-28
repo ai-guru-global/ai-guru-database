@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "训练基础设施"
 ---
 # 训练基础设施 (Training Infrastructure)
+
+> 中文简称：训练基础设施
 
 ## 1. GPU 集群架构
 
@@ -261,8 +264,8 @@ TRAINING_MONITORING = {
 ## 6. 交叉引用
 
 - [[07_模型训练/04_Distributed_Training/|分布式训练]]
-- [[07_模型训练/Mixed_Precision_Training/|混合精度训练]]
-- [[07_模型训练/Pretraining_Playbook/|预训练手册]]
+- [[07_模型训练/03_Optimization/Mixed_Precision_Training|混合精度训练]]
+- [[07_模型训练/01_Training_Fundamentals/Pretraining_Playbook|预训练手册]]
 - [[12_架构基建/|架构基建]]
 - [[13_运维/|运维]]
 - [[07_模型训练/07_Monitoring/|训练监控]]

@@ -7,9 +7,12 @@ created: "2026-07-23"
 updated: "2026-07-23"
 tier: core
 sources: []
+name_zh: "Agent Engineer 题库"
 ---
 
 # Agent Engineer 题库
+
+> 中文简称：Agent Engineer 题库
 
 > 覆盖 LLM Agent 工程化的核心知识点。关联 [[21_面试岗位/Agent_Engineer/Agent_Engineer_2026|Agent Engineer 2026]] 与 [[15_智能体/index|智能体]] 章节。
 

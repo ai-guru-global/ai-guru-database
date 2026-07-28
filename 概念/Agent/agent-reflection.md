@@ -32,8 +32,11 @@ aliases:
   - "Reflexion"
   - "Self-Refine"
 
+name_zh: "Agent 反思"
 ---
 # Agent 反思（Reflection）
+
+> 中文简称：Agent 反思
 
 > 没有反思的 Agent 像“交完卷就走的学生”；有反思的 Agent 像“检查一遍发现错误再改”的好学生，越复杂的任务反思价值越大。
 

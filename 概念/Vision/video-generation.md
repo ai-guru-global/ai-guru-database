@@ -32,9 +32,12 @@ lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31 00:00:00+00:00
 updated: 2026-07-21
+name_zh: "视频生成"
 ---
 
 # 视频生成
+
+> 中文简称：视频生成
 
 AI视频生成是视觉生成模型的时序扩展，从文生图走向文生视频。2026年标志性事件是OpenAI关闭Sora服务（3月24日），市场格局由Google Veo 3.1、快手Kling 3.0、字节Seedance 2.0、Runway Gen-4.5等竞品主导。技术趋势从"逐帧生成像素"转向"内部物理模拟+渲染"。
 

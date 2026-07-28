@@ -30,9 +30,12 @@ provenance:
 base_confidence: 0.82
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "云厂商 AI 平台对比"
 ---
 
 # 云厂商 AI 平台对比
+
+> 中文简称：云厂商 AI 平台对比
 
 ## 一句话定义
 

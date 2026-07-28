@@ -12,12 +12,15 @@ aliases:
   - KServe_Deep_Dive
 sources: []
 
+name_zh: "KServe 深度解析: Kubernetes 标准化模型服务平台"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # KServe 深度解析：Kubernetes 标准化模型服务平台
+
+> 中文简称：KServe 深度解析: Kubernetes 标准化模型服务平台
 
 > **一句话理解**: KServe 是 CNCF Incubating 的 Kubernetes 模型服务平台，通过 InferenceService CRD 把模型推理服务的部署、扩缩、灰度、观测封装成声明式 API，支持 vLLM、Triton、TorchServe 等多种运行时。
 

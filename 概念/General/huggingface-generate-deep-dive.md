@@ -29,9 +29,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-06-25
 sources: []
+name_zh: "Hugging Face generate 深度使用"
 ---
 
 # Hugging Face `generate()` 深度使用
+
+> 中文简称：Hugging Face generate 深度使用
 
 ## 一句话总结
 

@@ -33,9 +33,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "3D 视觉 2.0"
 ---
 
 # 3D 视觉 2.0
+
+> 中文简称：3D 视觉 2.0
 
 > **一句话理解**:3D 视觉 2.0 把"3D 重建"做到实时+高质量——3D Gaussian Splatting(2023, 实时 100 FPS)、NeRF / Instant-NGP(2022, 静态)、World Labs 单图 3D(2024-09)、HunyuanWorld 3D 场景(2025)。是 AR/VR、自动驾驶、机器人、文化遗产、游戏、电商的底层技术。
 

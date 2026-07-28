@@ -12,9 +12,13 @@ aliases:
 sources:
   - "https://blog.google/"
   - "https://deepmind.google/"
+name_zh: "Sundar Pichai 人物索引"
+name_en: "Sundar Pichai"
 ---
 
 # Sundar Pichai 人物索引
+
+> 中文简称：Sundar Pichai 人物索引 ｜ English Name: Sundar Pichai
 
 > **一句话概括**: Alphabet/Google CEO（2015 至今）——称"AI 是人类正在研究的最深远的技术，比火或电更深远"。领导 Google 从"AI first"战略（2016）到 Gemini 生成式 AI 时代的全面转型，统管 Google 搜索、云、YouTube、Android 和 DeepMind，是全球最大 AI 公司之一的掌舵者。
 
@@ -155,6 +159,7 @@ Pichai 的独特之处是**统管全球最大 AI 公司之一却保持低调**�
 - [[19_业界观点/Sundar_Pichai/about\|人物简介]] · [[19_业界观点/Sundar_Pichai/sayings\|核心语录]]
 - [[19_业界观点/Demis_Hassabis/about\|Demis Hassabis]] · [[19_业界观点/Satya_Nadella/about\|Satya Nadella]]
 - [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
+- [[19_业界观点/Sundar_Pichai/Sundar_Pichai_2026_Update\|2026 动态更新]]
 - [[19_业界观点/index\|业界观点首页]]
 
 ---

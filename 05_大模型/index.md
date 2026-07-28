@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-21
 sources: []
+name_zh: "大模型"
+name_en: "NLP & LLMs"
 ---
 
 # NLP Llms
+
+> 中文简称：大模型 ｜ English Name: NLP & LLMs
 
 大模型知识域 — 覆盖 LLM 架构、训练、推理、微调、提示工程、多模态、推理模型等全方位大模型知识。
 

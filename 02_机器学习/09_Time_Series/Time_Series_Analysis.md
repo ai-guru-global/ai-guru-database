@@ -11,8 +11,11 @@ aliases:
   - Time_Series_Analysis
 sources: []
 
+name_zh: "时间序列分析 - 完全指南"
 ---
 # 时间序列分析 (Time Series Analysis) - 完全指南
+
+> 中文简称：时间序列分析 - 完全指南
 
 ## 目录
 

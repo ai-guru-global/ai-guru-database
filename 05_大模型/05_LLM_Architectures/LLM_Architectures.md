@@ -12,8 +12,11 @@ aliases:
   - LLM_Architectures
 sources: []
 
+name_zh: "大语言模型架构"
 ---
 # 大语言模型架构 (LLM Architectures)
+
+> 中文简称：大语言模型架构
 
 > **一句话理解**: 大语言模型就像不同设计理念的"超级大脑"——有的专注理解(BERT),有的擅长创作(GPT),有的是全能选手(T5),还有的像"专家团队"(MoE),各有所长但都基于 Transformer 这一核心架构。
 

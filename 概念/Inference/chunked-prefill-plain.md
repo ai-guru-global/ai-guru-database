@@ -19,9 +19,12 @@ aliases:
   - "chunked prefill plain"
   - "分块预填充 大白话"
 sources: []
+name_zh: "Chunked Prefill 大白话解释"
 ---
 
 # Chunked Prefill 大白话解释
+
+> 中文简称：Chunked Prefill 大白话解释
 
 > 一句话：Chunked Prefill = 不分机器，但规定"读题一口一口读，每读一小口就插空让人家蹦一个字"，轮流来，谁都不用干等。
 

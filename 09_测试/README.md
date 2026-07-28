@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: core
 sources: []
 
+name_zh: "测试与评估"
 ---
 # 测试与评估 (AI Testing)
+
+> 中文简称：测试与评估
 
 > AI 测试是保障 LLM 应用质量的关键环节，覆盖 Prompt 测试、RAG 评估、Agent 评估、合同测试等多个维度。
 

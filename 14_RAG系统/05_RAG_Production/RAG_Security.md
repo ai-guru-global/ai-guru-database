@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "RAG 安全"
 ---
 # RAG 安全 (RAG Security)
+
+> 中文简称：RAG 安全
 
 ## 1. RAG 安全威胁全景
 
@@ -151,7 +154,7 @@ RAG_SECURITY_MONITORING = {
 
 - [[14_RAG系统/|RAG 系统]]
 - [[17_伦理安全/|伦理安全]]
-- [[17_伦理安全/AI_Watermarking/|AI 水印]]
+- [[17_伦理安全/09_Deepfake_Security/AI_Watermarking|AI 水印]]
 - [[15_智能体/07_Agent_Evaluation/Agent_Evaluation|Agent 安全评估]]
 - [[13_运维/03_Incident_Response/Incident_Management|事故管理]]
 

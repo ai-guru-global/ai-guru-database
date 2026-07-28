@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-21
 sources: []
 tags: [auto-index]
+name_zh: "Transformer 革命"
+name_en: "Transformer Revolution"
 ---
 
 # Transformer Revolution
+
+> 中文简称：Transformer 革命 ｜ English Name: Transformer Revolution
 
 Transformer 革命（Transformer Revolution）— Attention 机制、Transformer 架构与 LLM 的基础理论体系。
 

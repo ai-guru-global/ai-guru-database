@@ -11,9 +11,12 @@ summary: "Agent Skills 从 v1 迁移到 v2 的完整变更清单与操作步骤�
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "Agent Skills v1 到 v2 迁移指南"
 ---
 
 # Agent Skills v1 到 v2 迁移指南
+
+> 中文简称：Agent Skills v1 到 v2 迁移指南
 
 本指南帮助 Skill 作者将现有 v1 Skill 平滑升级到 v2 规范，避免在 Agent 运行时出现元数据解析失败或工具调用不匹配的问题。
 

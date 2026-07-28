@@ -29,8 +29,11 @@ updated: 2026-07-21
 aliases:
   - Ray
 
+name_zh: "Ray 分布式计算框架"
 ---
 # Ray / KubeRay
+
+> 中文简称：Ray 分布式计算框架
 
 > Python 生态的「分布式操作系统」——让单机脚本几乎无修改地扩展到千核集群。
 

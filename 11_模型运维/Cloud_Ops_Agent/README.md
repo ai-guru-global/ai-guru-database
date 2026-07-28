@@ -7,9 +7,12 @@ created: '2026-05-31'
 updated: '2026-05-31'
 tier: core
 sources: []
+name_zh: "云运维 Agent"
 ---
 
 # 云运维 Agent (Cloud Ops Agent)
+
+> 中文简称：云运维 Agent
 
 > **一句话理解**: 云运维 Agent 是专为云服务设计的"自动驾驶系统"——自主监控产品健康、诊断问题根因、执行变更操作，让云产品 7×24 小时稳定运行。
 

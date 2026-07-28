@@ -11,8 +11,11 @@ aliases:
   - Hermes_Agent_2026
 sources: []
 
+name_zh: "Hermes Agent 2026年专业指南"
 ---
 # Hermes Agent 2026 年专业指南
+
+> 中文简称：Hermes Agent 2026年专业指南
 
 > **一句话理解**: Hermes Agent 是 Nous Research 推出的开源、多平台、多模型 AI 代理——它不只是一个 CLI 编码工具，而是一个跨终端、消息平台、浏览器、语音的全能型自主助手。
 

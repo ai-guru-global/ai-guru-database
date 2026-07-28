@@ -27,8 +27,11 @@ aliases:
   - "Aws Bedrock"
   - "aws bedrock"
 
+name_zh: "亚马逊 Bedrock 模型服务"
 ---
 # AWS Bedrock
+
+> 中文简称：亚马逊 Bedrock 模型服务
 
 > 亚马逊云的「模型百货商店」——一个 API 调用多个顶尖基础模型。
 

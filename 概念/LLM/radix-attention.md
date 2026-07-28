@@ -31,8 +31,11 @@ aliases:
   - "radix attention"
   - "基数树注意力"
 
+name_zh: "基数树注意力"
 ---
 # RadixAttention
+
+> 中文简称：基数树注意力
 
 > RadixAttention 是 SGLang 的核心技术——用基数树组织 KV Cache，自动发现和复用共享前缀，动态多轮场景下比 vLLM 快 10-20%。
 

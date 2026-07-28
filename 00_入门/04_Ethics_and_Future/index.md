@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-21
 sources: []
 tags: [auto-index]
+name_zh: "伦理与未来"
+name_en: "Ethics and Future"
 ---
 
 # Ethics and Future
+
+> 中文简称：伦理与未来 ｜ English Name: Ethics and Future
 
 伦理与未来（Ethics and Future）— AI 伦理、社会影响（societal impact）、经典案例与未来趋势展望（future trends）。
 

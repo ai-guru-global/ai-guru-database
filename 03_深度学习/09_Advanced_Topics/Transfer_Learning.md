@@ -7,9 +7,12 @@ created: 2026-07-02
 updated: 2026-07-11
 tier: core
 sources: []
+name_zh: "迁移学习完全指南"
 ---
 
 # 迁移学习完全指南 (Transfer Learning Complete Guide)
+
+> 中文简称：迁移学习完全指南
 
 > **完整内容请见** [[Transfer_Learning_Guide|迁移学习实践指南]]，涵盖预训练-微调范式、PEFT 方法、域适应技术与生产 checklist。
 

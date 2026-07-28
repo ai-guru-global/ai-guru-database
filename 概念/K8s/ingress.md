@@ -18,9 +18,12 @@ relationships:
   - target: "概念/helm"
     type: part_of
 sources: []
+name_zh: "K8s 七层流量入口"
 ---
 
 # Ingress
+
+> 中文简称：K8s 七层流量入口
 
 > **一句话理解**: Ingress 是 Kubernetes 集群的「大门」——把外部 HTTP/HTTPS 流量按域名和路径转发到集群内部 Service。
 

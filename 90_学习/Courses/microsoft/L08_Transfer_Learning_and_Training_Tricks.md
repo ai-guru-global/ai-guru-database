@@ -13,8 +13,11 @@ aliases:
   - L08_Transfer_Learning_and_Training_Tricks
 sources: []
 
+name_zh: "L08 - 预训练网络、迁移学习与训练技巧"
 ---
 # L08 - 预训练网络、迁移学习与训练技巧
+
+> 中文简称：L08 - 预训练网络、迁移学习与训练技巧
 
 > **一句话理解**：与其从零训练一个卷积神经网络（Convolutional Neural Network，CNN），不如借用已经在 ImageNet 等大规模数据上学到的通用视觉特征，再针对自己的任务做少量微调，从而省时、省数据、效果往往更好。
 

@@ -12,8 +12,11 @@ aliases:
   - Prompt_Engineering_for_dummy
 sources: []
 
+name_zh: "提示词工程 - 小白版"
 ---
 # 提示词工程 - 小白版
+
+> 中文简称：提示词工程 - 小白版
 
 > **一句话秒懂**: [[05_大模型/08_Prompt_Engineering/Prompt_Engineering|提示词工程]]就像学会"问对问题"——你问得越清楚,AI 回答得越好。这是零成本让 ChatGPT 变聪明的技巧!
 

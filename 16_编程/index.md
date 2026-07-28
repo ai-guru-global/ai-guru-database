@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "编程"
+name_en: "AI Coding"
 ---
 
 # 编程
+
+> 中文简称：编程 ｜ English Name: AI Coding
 
 AI 编程知识体系（AI Coding Knowledge Base）— 涵盖编程基础、方法论、工具对比、安全与实战的完整知识入口。
 

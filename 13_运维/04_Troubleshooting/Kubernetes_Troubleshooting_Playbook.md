@@ -7,6 +7,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: core
 sources: []
+name_zh: "Kubernetes 运维排障 Playbook"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -14,6 +15,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # Kubernetes 运维排障 Playbook
+
+> 中文简称：Kubernetes 运维排障 Playbook
 
 > **一句话理解**: 这是一本按「现象 → 定位 → 命令 → 修复」组织的 K8s 排障手册，目标是让工单智能体或运维工程师能在阿里云专有云环境中快速收敛根因。
 

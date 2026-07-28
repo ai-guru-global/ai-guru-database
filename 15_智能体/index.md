@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-09
 sources: []
+name_zh: "智能体"
+name_en: "Agent Production"
 ---
 
 # 智能体
+
+> 中文简称：智能体 ｜ English Name: Agent Production
 
 本目录是 AI 智能体（Agent）知识的主索引。
 

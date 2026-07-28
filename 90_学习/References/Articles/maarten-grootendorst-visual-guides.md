@@ -13,8 +13,11 @@ aliases:
   - "Maarten Grootendorst Visual Guides"
   - "maarten grootendorst visual guides"
 
+name_zh: "Maarten Grootendorst 图解 AI 系列"
 ---
 # Maarten Grootendorst 图解 AI 系列
+
+> 中文简称：Maarten Grootendorst 图解 AI 系列
 
 > **一句话理解**: Maarten Grootendorst 的图解 AI 系列文章,用精美可视化解释 LLM Agent、MoE、推理模型等前沿概念。
 
@@ -31,7 +34,7 @@ aliases:
 | [Visual Guide to Reasoning LLMs](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-reasoning-llms) | 推理模型图解 |
 | [Visual Guide to Mixture of Experts](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts) | MoE 架构图解 |
 
-> **关联**: -> [[05_大模型|NLP/LLM]] | [[Agent|Agent 生产]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[05_大模型|NLP/LLM]] | [[概念/Agent|Agent 生产]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识框架

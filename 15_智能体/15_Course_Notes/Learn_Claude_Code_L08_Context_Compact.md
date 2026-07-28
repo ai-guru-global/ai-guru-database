@@ -26,8 +26,11 @@ aliases:
   - "Learn Claude Code L08 Context Compact"
   - Learn_Claude_Code_L08_Context_Compact
 
+name_zh: "Learn Claude Code L08：Context Compact"
 ---
 # Learn Claude Code L08：Context Compact — 上下文总会满，要有办法腾地方
+
+> 中文简称：Learn Claude Code L08：Context Compact
 
 > **一句话理解**: 上下文窗口有限，四层压缩策略“便宜的先跑，贵的后跑”：先裁剪旧对话、再占位旧结果、再大结果落盘，最后才让 LLM 做全量摘要。
 

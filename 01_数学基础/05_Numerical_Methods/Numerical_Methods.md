@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "数值方法总论"
 ---
 # 数值方法总论 (Numerical Methods for AI)
+
+> 中文简称：数值方法总论
 
 ## 为什么 AI 工程师需要数值方法？
 

@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-21
 sources: []
+name_zh: "大模型架构"
+name_en: "LLM Architectures"
 ---
 
 # LLM Architectures
+
+> 中文简称：大模型架构 ｜ English Name: LLM Architectures
 
 LLM 架构索引，覆盖 Transformer 变体、MoE、长上下文、推理模型等架构设计。
 
@@ -203,3 +207,8 @@ LLM 架构索引，覆盖 Transformer 变体、MoE、长上下文、推理模型
 | 2025 | 推理 | o3/R1 | 测试时计算 |
 
 > 💡 架构选择的核心：没有最好的架构，只有最适合任务的架构。
+
+## 相关文档
+
+- [[05_大模型/05_LLM_Architectures/Hybrid_Architectures_2026|混合架构 2026]]
+- [[05_大模型/05_LLM_Architectures/moe-inference-optimization|MoE 推理优化]]

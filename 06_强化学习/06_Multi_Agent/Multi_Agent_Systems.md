@@ -12,8 +12,11 @@ aliases:
   - Multi_Agent_Systems
 sources: []
 
+name_zh: "多智能体系统深度解析"
 ---
 # 多智能体系统深度解析 (Multi-Agent Systems Deep Dive)
+
+> 中文简称：多智能体系统深度解析
 
 > 多智能体系统是多个 Agent 在共享环境中交互的复杂系统——从合作到竞争，从博弈到涌现，系统解析多智能体强化学习的理论与实践。
 

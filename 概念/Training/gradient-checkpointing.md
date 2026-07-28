@@ -16,9 +16,12 @@ relationships:
     type: related_to
 sources:
   - "https://arxiv.org/abs/1604.06174"  # Training Deep Nets with Sublinear Memory
+name_zh: "梯度检查点"
 ---
 
 # Gradient Checkpointing
+
+> 中文简称：梯度检查点
 
 > **一句话理解**: Gradient Checkpointing 是训练大模型时的「以时间换空间」技巧——少保存一些中间结果，反向传播时再算一遍，从而省出大量显存。
 

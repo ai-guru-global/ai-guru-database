@@ -11,9 +11,12 @@ aliases:
   - "欧盟AI法案实施指南"
   - EU_AI_Act_Implementation_2026
 sources: []
+name_zh: "EU AI Act 实施指南 2026"
 ---
 
 # EU AI Act 实施指南 2026
+
+> 中文简称：EU AI Act 实施指南 2026
 
 > **一句话理解**: EU AI Act 是全球首部全面的 AI 监管法规，采用基于风险的四级分类体系，2025年8月 GPAI 条款生效，2026年8月高风险系统条款全面执行，违规罚款最高3500万欧元或全球营收7%，对所有在欧盟市场运营 AI 系统的企业具有域外管辖效力。
 
@@ -346,7 +349,7 @@ EU层面:
 1. **域外管辖认知**：只要AI系统输出在欧盟使用，即受管辖
 2. **指定授权代表**：非欧盟Provider须在欧盟指定授权代表 (Article 22)
 3. **GPAI合规准备**：大模型企业需在2025年8月前完成合规
-4. **数据跨境**：与[[GDPR]]数据跨境规则叠加适用
+4. **数据跨境**：与[[概念/Safety/privacy-preserving-ai|GDPR]]数据跨境规则叠加适用
 5. **标准对接**：关注CEN/CENELEC制定的协调标准 (Harmonised Standards)
 
 ### 6.3 合规成本估算
@@ -442,7 +445,7 @@ AI Act 合规自动化Pipeline:
 
 | 框架 | 与EU AI Act关系 | 适用场景 |
 |------|----------------|----------|
-| [[NIST AI RMF]] | 互补，可作为合规参考 | 美国企业/全球企业 |
+| [[概念/Safety/ai-risk-assessment|NIST AI RMF]] | 互补，可作为合规参考 | 美国企业/全球企业 |
 | ISO/IEC 42001 | AI管理体系标准，支持合规 | 组织级AI治理 |
 | ISO/IEC 23894 | AI风险管理 | 高风险系统风险管理 |
 | ISO/IEC 24029 | AI鲁棒性评估 | 技术合规验证 |
@@ -567,7 +570,7 @@ EU AI Act特别考虑了中小企业的合规负担：
 ### 10.3 国际互操作
 
 - 欧盟与美国就AI标准互认展开对话
-- 与[[中国AI治理法规]]存在显著差异，企业需双重合规
+- 与[[17_伦理安全/03_Governance/China_AI_Regulations_2026|中国AI治理法规]]存在显著差异，企业需双重合规
 - OECD AI原则与EU AI Act的对接
 - GPAI Code of Practice (行为准则) 2025年发布
 
@@ -582,18 +585,18 @@ EU AI Act特别考虑了中小企业的合规负担：
 
 ## 11. 相关概念
 
-- [[AI治理与合规2026]] — 全球AI监管全景
-- [[中国AI治理法规]] — 中国AI监管体系对比
-- [[NIST AI RMF]] — 美国AI风险管理框架
-- [[GDPR]] — 欧盟数据保护法规（与AI Act交叉）
-- [[AI伦理基础]] — AI伦理理论框架
-- [[算法偏见与公平性]] — AI公平性技术
-- [[可解释AI]] — 满足透明度要求的技术手段
-- [[AI安全红队测试]] — 对抗性评估方法
-- [[联邦学习]] — 隐私保护AI技术
-- [[AI版权与知识产权]] — GPAI版权政策相关
-- [[深度伪造安全]] — AI生成内容标注
-- [[自主武器AI伦理]] — AI军事应用治理
+- [[17_伦理安全/03_Governance/AI_Governance_Compliance_2026|AI治理与合规2026]] — 全球AI监管全景
+- [[17_伦理安全/03_Governance/China_AI_Regulations_2026|中国AI治理法规]] — 中国AI监管体系对比
+- [[概念/Safety/ai-risk-assessment|NIST AI RMF]] — 美国AI风险管理框架
+- [[概念/Safety/privacy-preserving-ai|GDPR]] — 欧盟数据保护法规（与AI Act交叉）
+- [[17_伦理安全/01_Ethics_Fundamentals/AI_Ethics_Safety_Future|AI伦理基础]] — AI伦理理论框架
+- [[17_伦理安全/01_Ethics_Fundamentals/Bias_Fairness_Testing|算法偏见与公平性]] — AI公平性技术
+- [[概念/Safety/explainable-ai|可解释AI]] — 满足透明度要求的技术手段
+- [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Red_Teaming_Guide|AI安全红队测试]] — 对抗性评估方法
+- [[17_伦理安全/11_Federated_Learning/Federated_Learning_Deep_Dive|联邦学习]] — 隐私保护AI技术
+- [[17_伦理安全/01_Ethics_Fundamentals/AI_Copyright_IP_2026|AI版权与知识产权]] — GPAI版权政策相关
+- [[17_伦理安全/09_Deepfake_Security/Deepfake_Security|深度伪造安全]] — AI生成内容标注
+- [[17_伦理安全/01_Ethics_Fundamentals/Autonomous_Weapons_AI_Ethics|自主武器AI伦理]] — AI军事应用治理
 
 ---
 
@@ -606,7 +609,7 @@ EU AI Act特别考虑了中小企业的合规负担：
 | 协调标准 | CEN/CENELEC JTC 21 |
 | GPAI Code of Practice | AI Office发布 |
 | 合规工具 | ISO/IEC 42001认证机构 |
-| 中国对比 | [[中国AI治理法规]] |
+| 中国对比 | [[17_伦理安全/03_Governance/China_AI_Regulations_2026|中国AI治理法规]] |
 
 ---
 

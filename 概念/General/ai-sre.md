@@ -24,9 +24,12 @@ relationships:
 sources:
   - 13_运维/02_SRE_Reliability/AI_SRE_Runbook.md
   - 18_行业应用/01_Industry_Overview/AI_Production_Architecture_2026.md
+name_zh: "AI 可靠性工程"
 ---
 
 # AI SRE
+
+> 中文简称：AI 可靠性工程
 
 ## 一句话定义
 

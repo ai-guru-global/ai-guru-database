@@ -15,6 +15,7 @@ aliases:
 updated: 2026-06-30
 summary: "快速接入与环境配置 — 专题文档"
 sources: []
+name_zh: "快速接入与环境配置"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -53,6 +54,8 @@ k8s_versions:
 - '1.32'
 ---
 # 快速接入与环境配置
+
+> 中文简称：快速接入与环境配置
 
 > **文档类型**: 部署指南 | **最后更新**: 2026-03 | **关键词**: OpenRouter, QuickStart, SDK, API Key, OpenAI Compatible, Installation, Configuration
 

@@ -14,8 +14,11 @@ aliases:
   - "Agentic RAG Guide"
   - Agentic_RAG_Guide
 
+name_zh: "Agentic RAG: Agent 驱动的智能检索"
 ---
 # Agentic RAG: Agent 驱动的智能检索
+
+> 中文简称：Agentic RAG: Agent 驱动的智能检索
 
 > **一句话理解**: 将 Agent 能力融入 RAG 系统,实现自适应检索、多步推理、自我纠正的智能 RAG 架构。
 

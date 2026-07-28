@@ -11,8 +11,11 @@ aliases:
   - Agent_Harness_Comprehensive_2026
 sources: []
 
+name_zh: "Agent Harness 全面指南 2026"
 ---
 # Agent Harness 全面指南 2026
+
+> 中文简称：Agent Harness 全面指南 2026
 
 > **一句话理解**: Agent Harness 是 AI Agent 工业化落地的核心基础设施，通过标准化的测试环境、多维度评估体系和完整可观测性，让 Agent 从"实验品"变成"可信赖的生产系统"。
 

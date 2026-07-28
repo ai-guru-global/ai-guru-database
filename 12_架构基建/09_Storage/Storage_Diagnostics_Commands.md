@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "AI 存储诊断命令集"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # AI 存储诊断命令集
+
+> 中文简称：AI 存储诊断命令集
 
 > **使用方式**: 存储慢、挂载失败、Checkpoint 写入失败时，按存储类型选择命令。
 

@@ -25,9 +25,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: core
+name_zh: "华为昇腾 NPU"
 ---
 
 # 华为昇腾 NPU (Huawei Ascend)
+
+> 中文简称：华为昇腾 NPU
 
 > **一句话理解**: 昇腾是华为的"国产 AI 芯片"——AI Stack 三大 GPU 选项之一，在 NVIDIA 出口管制背景下是政企客户的核心国产替代方案。
 

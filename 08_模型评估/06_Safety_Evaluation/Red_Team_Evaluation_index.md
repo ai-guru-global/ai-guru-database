@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "红队评估专题"
 ---
 
 # Red Team Evaluation
+
+> 中文简称：红队评估专题
 
 红队评估（Red Team Evaluation）— 对抗测试（adversarial testing）、越狱攻击（jailbreak）与 AI 安全红队方法论。
 

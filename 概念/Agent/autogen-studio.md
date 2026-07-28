@@ -23,9 +23,12 @@ lifecycle: reviewed
 tier: supporting
 created: 2026-06-26
 updated: 2026-07-21
+name_zh: "多 Agent 可视化 IDE"
 ---
 
 # AutoGen Studio
+
+> 中文简称：多 Agent 可视化 IDE
 
 [AutoGen Studio](https://github.com/microsoft/autogen-studio) 是 Microsoft 开源的 **AutoGen 可视化 IDE**，通过拖拽式界面构建、测试和运行多 Agent 工作流。它降低了 AutoGen 的使用门槛——无需编写复杂代码，即可创建功能强大的多 Agent 协作系统。
 

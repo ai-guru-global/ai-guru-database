@@ -10,9 +10,12 @@ aliases:
 sources:
   - "https://langchain-ai.github.io/langgraph/"
   - "https://github.com/langchain-ai/langgraph"
+name_zh: "图编排框架"
 ---
 
 # LangGraph
+
+> 中文简称：图编排框架
 
 ## 一句话定义
 

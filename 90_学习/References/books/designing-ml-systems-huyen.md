@@ -23,8 +23,11 @@ aliases:
   - "Designing Ml Systems Huyen"
   - "designing ml systems huyen"
 
+name_zh: "ML 系统设计"
 ---
 # Designing Machine Learning Systems
+
+> 中文简称：ML 系统设计
 
 > **一句话理解**: ML 系统设计领域的标杆之作，从工程师视角拆解真实 ML 系统的全生命周期，是 MLOps 与 ML 系统面试的必备参考书。
 

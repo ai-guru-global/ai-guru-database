@@ -11,8 +11,11 @@ aliases:
   - Deepfake_Security
 sources: []
 
+name_zh: "Deepfake 安全 2026"
 ---
 # Deepfake 安全 2026
+
+> 中文简称：Deepfake 安全 2026
 
 > **一句话理解**: Deepfake 已经从"明星换脸"进化到"人人可造"——2026 年的 AI 生成内容(AIGC)技术让伪造身份、冒充领导、制造虚假新闻变得前所未有的简单。防御方必须从"识别假"转向"证明真"。
 

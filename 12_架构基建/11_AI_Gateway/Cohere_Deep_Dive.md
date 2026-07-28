@@ -11,8 +11,11 @@ aliases:
   - Cohere_Deep_Dive
 sources: []
 
+name_zh: "Cohere: 企业 AI 平台"
 ---
 # Cohere: 企业 AI 平台
+
+> 中文简称：Cohere: 企业 AI 平台
 
 > **一句话理解**: Cohere 是企业 AI 平台——顶级 embedding 模型、多语言支持、语义搜索、Rerank 排序，企业级 AI 基础设施。
 

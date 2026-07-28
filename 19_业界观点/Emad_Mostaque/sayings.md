@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Emad Mostaque 关于 AI 的观点"
 ---
 # Emad Mostaque 关于 AI 的观点 (Emad Mostaque on AI)
+
+> 中文简称：Emad Mostaque 关于 AI 的观点
 
 ## 1. 开源与去中心化 (Open Source & Decentralization)
 

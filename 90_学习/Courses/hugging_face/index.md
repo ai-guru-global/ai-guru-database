@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "Hugging Face 课程"
+name_en: "hugging face"
 ---
 
 # Hugging Face
+
+> 中文简称：Hugging Face 课程 ｜ English Name: hugging face
 
 Hugging Face 课程 — Agents、Deep RL 与官方 NLP/LLM 系列课程笔记（course notes）。
 

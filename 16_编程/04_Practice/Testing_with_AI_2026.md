@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "AI 辅助测试 2026"
 ---
 # AI 辅助测试 2026
+
+> 中文简称：AI 辅助测试 2026
 
 ## 1. AI 测试概述
 

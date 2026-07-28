@@ -15,7 +15,10 @@ aliases:
   - GenAI_L06_Text_Generation_Apps
 sources: []
 
+name_zh: "构建文本生成应用程序"
 ---
+> 中文简称：构建文本生成应用程序
+
 ## 学习目标
 
 完成本课后，你将能够：

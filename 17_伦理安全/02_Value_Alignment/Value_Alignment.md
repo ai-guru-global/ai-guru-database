@@ -11,8 +11,11 @@ aliases:
   - Value_Alignment
 sources: []
 
+name_zh: "价值对齐"
 ---
 # 价值对齐 (Value Alignment)
+
+> 中文简称：价值对齐
 
 > **一句话理解**: 就像教育孩子懂对错一样,价值对齐是教 AI 理解人类的价值观和伦理标准,确保它的行为符合人类期望。
 

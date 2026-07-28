@@ -15,9 +15,12 @@ relationships:
   - target: "概念/alibaba-cloud"
     type: provided_by
 sources: []
+name_zh: "对象存储服务"
 ---
 
 # OSS
+
+> 中文简称：对象存储服务
 
 > **一句话理解**: OSS 是云上的「大硬盘」，适合存海量文件，按量付费，常用于存训练数据、模型权重和日志。
 

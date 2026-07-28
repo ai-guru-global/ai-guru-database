@@ -17,9 +17,12 @@ relationships:
   - target: "概念/distributed-training"
     type: related_to
 sources: []
+name_zh: "无限带宽网络"
 ---
 
 # InfiniBand
+
+> 中文简称：无限带宽网络
 
 > **一句话理解**: InfiniBand 是数据中心里的「高速公路」，让 GPU 之间可以直接高速通信，延迟远低于传统以太网。
 

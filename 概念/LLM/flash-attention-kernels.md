@@ -32,8 +32,11 @@ aliases:
   - "flash attention kernels"
   - "Flash 算子"
 
+name_zh: "Flash Attention 算子"
 ---
 # Flash Attention 算子 (FlashMLA/FlashInfer)
+
+> 中文简称：Flash Attention 算子
 
 > 通过 Tiling + Online Softmax + Kernel Fusion 把 attention 显存访问降到理论下限——现代 LLM 推理的算子基座。
 

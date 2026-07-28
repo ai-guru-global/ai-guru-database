@@ -15,9 +15,12 @@ relationships:
   - target: "概念/slo"
     type: uses
 sources: []
+name_zh: "站点可靠性工程"
 ---
 
 # SRE
+
+> 中文简称：站点可靠性工程
 
 > **一句话理解**: SRE 就是「用写代码的方式做运维」，用自动化、SLO、错误预算来让系统更可靠。
 

@@ -11,8 +11,11 @@ aliases:
   - Corpus_Improvement_Guide
 sources: []
 
+name_zh: "语料库改进指南"
 ---
 # 语料库改进指南
+
+> 中文简称：语料库改进指南
 
 > 基于评估结果的语料库优化方法论，实现从发现问题到验证提升的完整闭环
 

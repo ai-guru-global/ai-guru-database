@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "三维视觉"
+name_en: "3D Vision"
 ---
 
 # 3D Vision
+
+> 中文简称：三维视觉 ｜ English Name: 3D Vision
 
 三维视觉（3D Vision）— NeRF、3D Gaussian Splatting、点云处理（point cloud processing）与深度估计的前沿技术。
 

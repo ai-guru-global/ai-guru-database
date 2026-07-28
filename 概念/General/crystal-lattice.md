@@ -22,8 +22,11 @@ relationships:
     type: related_to
   - target: "概念/graph-neural-networks"
     type: related_to
+name_zh: "晶体点阵"
 ---
 # 晶体点阵 (Crystal Lattice)
+
+> 中文简称：晶体点阵
 
 > 晶体点阵是材料科学的基础概念——原子在空间中的周期性排列结构，GNN 和图神经网络常用于建模晶体结构。
 

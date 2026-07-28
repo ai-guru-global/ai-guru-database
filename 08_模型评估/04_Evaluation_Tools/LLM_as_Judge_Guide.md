@@ -16,8 +16,11 @@ aliases:
   - "LLM as Judge Guide"
   - LLM_as_Judge_Guide
 
+name_zh: "LLM-as-Judge 评估完全指南"
 ---
 # LLM-as-Judge 评估完全指南
+
+> 中文简称：LLM-as-Judge 评估完全指南
 
 > **一句话理解**: 使用 LLM 评估 LLM 输出质量的方法论,含评分框架、常用工具(Ragas/DeepEval/Promptfoo)、基准测试和最佳实践。
 

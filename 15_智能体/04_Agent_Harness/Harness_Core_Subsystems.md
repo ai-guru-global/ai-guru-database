@@ -14,12 +14,15 @@ aliases:
   - Harness_Core_Subsystems
 sources: []
 
+name_zh: "Harness 核心子系统"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Harness Core Subsystems (Harness 核心子系统深度解析)
+
+> 中文简称：Harness 核心子系统
 
 > 本文从《智能体 Harness 工程指南》Part 2（第 4-7 章）提炼运行时引擎、工具层、记忆子系统和模型集成四大核心子系统的工程实现细节。
 

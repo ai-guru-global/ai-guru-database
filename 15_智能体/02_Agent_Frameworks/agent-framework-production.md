@@ -10,8 +10,11 @@ aliases:
   - "agent framework production"
 sources: []
 
+name_zh: "Agent 框架与生产部署"
 ---
 # Agent 框架与生产部署
+
+> 中文简称：Agent 框架与生产部署
 
 ## The Connection
 

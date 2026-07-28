@@ -11,8 +11,11 @@ aliases:
   - Chroma_Deep_Dive
 sources: []
 
+name_zh: "Chroma: 轻量级向量数据库"
 ---
 # Chroma: 轻量级向量数据库
+
+> 中文简称：Chroma: 轻量级向量数据库
 
 > **一句话理解**: Chroma 是最小的嵌入式向量数据库——专为 AI 应用设计，零配置、易上手、本地优先，LLM 时代的向量存储入门首选。
 

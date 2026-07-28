@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "智能体平台"
+name_en: "Agent Platforms"
 ---
 
 # Agent Platforms
+
+> 中文简称：智能体平台 ｜ English Name: Agent Platforms
 
 智能体平台 — Dify、Coze、OpenRouter、PromptFlow 等低代码/托管 Agent 平台对比。
 

@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Hassabis Science AI 2026", "Demis Hassabis 科学 AI 2026", "AlphaEvolve 2026"]
 sources: []
+name_zh: "Demis Hassabis 科学 AI 深度"
 ---
 
 # Demis Hassabis 科学 AI 深度 (Hassabis Science AI 2026)
+
+> 中文简称：Demis Hassabis 科学 AI 深度
 
 ## 一句话概括
 

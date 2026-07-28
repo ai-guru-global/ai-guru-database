@@ -15,7 +15,10 @@ aliases:
   - GenAI_L01_Intro_to_GenAI_and_LLMs
 sources: []
 
+name_zh: "生成式人工智能和大型语言模型简介"
 ---
+> 中文简称：生成式人工智能和大型语言模型简介
+
 ## 学习目标
 
 完成本课后，你将了解：

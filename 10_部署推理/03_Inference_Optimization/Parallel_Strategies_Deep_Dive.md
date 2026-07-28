@@ -11,12 +11,15 @@ aliases:
   - "LLM 并行策略"
   - Parallel_Strategies_Deep_Dive
 sources: []
+name_zh: "LLM 并行策略全景"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # LLM 并行策略全景 (Parallel Strategies Deep Dive)
+
+> 中文简称：LLM 并行策略全景
 
 > **一句话概括**: TP/PP/DP/EP/SP/CP 六种并行维度如何切分一个万亿参数模型——本页从单卡瓶颈讲到 5D 并行组合，覆盖训练与推理的差异。
 

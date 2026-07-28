@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "评估指标"
+name_en: "Metrics"
 ---
 
 # 评估指标
+
+> 中文简称：评估指标 ｜ English Name: Metrics
 
 Agent 评估指标体系定义与数据采集方法。
 

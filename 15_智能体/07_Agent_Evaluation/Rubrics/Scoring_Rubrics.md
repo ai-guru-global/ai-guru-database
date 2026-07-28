@@ -11,8 +11,11 @@ aliases:
   - Scoring_Rubrics
 sources: []
 
+name_zh: "评分细则"
 ---
 # Scoring Rubrics
+
+> 中文简称：评分细则
 
 > Detailed scoring guides for consistent agent evaluation
 

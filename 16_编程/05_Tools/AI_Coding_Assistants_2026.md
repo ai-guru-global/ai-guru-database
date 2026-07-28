@@ -12,8 +12,11 @@ aliases:
   - AI_Coding_Assistants_2026
 sources: []
 
+name_zh: "AI编程助手 2026年全景报告"
 ---
 # AI 编程助手 2026 年全景报告
+
+> 中文简称：AI编程助手 2026年全景报告
 
 > **一句话理解**: AI 编程已从"代码补全"进化为"结对编程伙伴"——Cursor 以 72% 代码接受率领跑，Claude Code 在复杂任务中表现卓越，而 Devin 代表完全自主编码的未来。
 

@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "GPU 故障排查速查表"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # GPU 故障排查速查表
+
+> 中文简称：GPU 故障排查速查表
 
 > **使用方式**: 根据现象定位到对应章节，按命令顺序执行。
 

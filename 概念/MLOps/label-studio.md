@@ -19,9 +19,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: core
+name_zh: "开源数据标注平台"
 ---
 
 # Label Studio
+
+> 中文简称：开源数据标注平台
 
 [Label Studio](https://github.com/HumanSignal/label-studio) 是 [HumanSignal](https://humansignal.com/)（原 Heartex）开源的**多模态数据标注平台**，支持图像分类、目标检测、文本分类、NER、音频分割、视频标注等几乎所有标注任务类型。它的核心差异化在于**ML Backend 集成**——可以将 ML 模型连接到标注界面，实现预标注（Pre-labeling）和主动学习（Active Learning），大幅提升标注效率。
 

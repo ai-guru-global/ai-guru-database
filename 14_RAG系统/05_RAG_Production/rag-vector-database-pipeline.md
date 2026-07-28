@@ -8,9 +8,12 @@ created: 2026-07-02
 updated: 2026-07-02
 tier: core
 lifecycle: draft
+name_zh: "RAG x 向量数据库: 从 Embedding 到检索的端到端 Pipelin"
 ---
 
 # RAG x 向量数据库: 从 Embedding 到检索的端到端 Pipeline 工程
+
+> 中文简称：RAG x 向量数据库: 从 Embedding 到检索的端到端 Pipelin
 
 ## The Connection
 

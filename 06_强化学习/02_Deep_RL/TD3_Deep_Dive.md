@@ -12,8 +12,11 @@ aliases:
   - TD3_Deep_Dive
 sources: []
 
+name_zh: "TD3 深度解析"
 ---
 # TD3 深度解析 (Twin Delayed DDPG Deep Dive)
+
+> 中文简称：TD3 深度解析
 
 > **一句话理解**: TD3是DDPG的"加固版"——通过双Q网络消除值函数高估、延迟策略更新防止策略震荡、目标策略平滑避免过拟合，三管齐下成为连续控制任务的SOTA基线算法。
 

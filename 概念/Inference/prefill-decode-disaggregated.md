@@ -32,9 +32,12 @@ tier: supporting
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "Prefill-Decode 分离部署架构"
 ---
 
 # Prefill-Decode 分离部署架构
+
+> 中文简称：Prefill-Decode 分离部署架构
 
 ## 一句话总结
 

@@ -11,8 +11,11 @@ aliases:
   - Deployment_Strategies
 sources: []
 
+name_zh: "模型部署策略"
 ---
 # 模型部署策略 (Deployment Strategies)
+
+> 中文简称：模型部署策略
 
 > **一句话理解**: ML 模型不是"部署即完成"——新模型上线后可能在生产分布上表现不佳。部署策略通过渐进式流量切换、影子对比和 A/B 验证，将"翻车"风险降到最低。
 

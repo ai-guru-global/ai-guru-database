@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "测试"
+name_en: "AI Testing"
 ---
 
 # 测试
+
+> 中文简称：测试 ｜ English Name: AI Testing
 
 AI 测试知识体系（Testing Knowledge Base）— 涵盖测试方法论、评估框架、A/B 测试、Agent 评估、RAGAS 与实验跟踪工具。
 

@@ -25,9 +25,12 @@ lifecycle: reviewed
 tier: core
 created: 2026-06-12
 updated: 2026-07-21
+name_zh: "DeepSeek 模型系列"
 ---
 
 # DeepSeek 模型系列
+
+> 中文简称：DeepSeek 模型系列
 
 > **一句话理解**: DeepSeek 是 2024-2026 年最具影响力的开源大模型系列——用 MLA 压缩 KV Cache、用 MoE 稀疏激活、用 MTP 加速推理，性能对标 GPT-4 且完全开源。
 

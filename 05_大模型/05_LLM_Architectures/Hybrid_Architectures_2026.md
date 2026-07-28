@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "混合架构 2026"
 ---
 # 混合架构 2026 (Hybrid Architectures)
+
+> 中文简称：混合架构 2026
 
 ## 1. 为什么需要混合架构？
 
@@ -283,8 +286,8 @@ def select_architecture(requirements: dict) -> str:
 ## 6. 交叉引用
 
 - [[05_大模型/05_LLM_Architectures/|LLM 架构]]
-- [[05_大模型/Architecture_Evolution/|架构演进]]
-- [[03_深度学习/State_Space_Models/|状态空间模型]]
-- [[03_深度学习/Attention_Mechanisms/|注意力机制]]
-- [[05_大模型/LLM_Inference/|LLM 推理]]
+- [[05_大模型/05_LLM_Architectures/index|架构演进]]
+- [[概念/LLM/state-space-models|状态空间模型]]
+- [[03_深度学习/02_Neural_Network_Core/Attention_Mechanisms|注意力机制]]
+- [[10_部署推理/02_Inference_Engines/index|LLM 推理]]
 - [[10_部署推理/|部署推理]]

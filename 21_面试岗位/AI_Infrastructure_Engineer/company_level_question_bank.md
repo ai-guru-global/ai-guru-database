@@ -7,9 +7,12 @@ created: 2026-05-31
 updated: 2026-06-04
 tier: supporting
 sources: []
+name_zh: "AI Infrastructure Engineer 按公司/级别区分的题库"
 ---
 
 # AI Infrastructure Engineer 按公司/级别区分的题库
+
+> 中文简称：AI Infrastructure Engineer 按公司/级别区分的题库
 
 ---
 
@@ -129,7 +132,7 @@ sources: []
 - [[21_面试岗位/AI_Infrastructure_Engineer/interview_preparing|AI Infrastructure Engineer 面试准备]]
 - [[21_面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 ---
 title: AI Infrastructure Engineer 按公司/级别区分的题库
 category: 21-interviews-ai-infrastructure-engineer
@@ -187,7 +190,7 @@ aliases:
 - [[21_面试岗位/AI_Infrastructure_Engineer/interview_preparing|AI Infrastructure Engineer 面试准备]]
 - [[21_面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 
 ## 面试核心知识框架
 

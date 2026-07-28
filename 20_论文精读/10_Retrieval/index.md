@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "检索论文"
+name_en: "Retrieval"
 ---
 
 # Retrieval
+
+> 中文简称：检索论文 ｜ English Name: Retrieval
 
 ## 文件导航
 

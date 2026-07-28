@@ -32,9 +32,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "多 Agent 编排 2.0"
 ---
 
 # 多 Agent 编排 2.0
+
+> 中文简称：多 Agent 编排 2.0
 
 > **一句话理解**:多 Agent 编排 2.0 让"多 Agent 协作"像微服务一样工程化——LangGraph 把 Agent 编排成状态图,AutoGen 0.4 用 actor model 解耦通信,CrewAI 用角色扮演简化建模,OpenAI Swarm 用 handoff 做轻量协作。是企业 Agent 落地的"操作系统"。
 

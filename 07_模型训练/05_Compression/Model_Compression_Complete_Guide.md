@@ -2,11 +2,14 @@
 title: "Model Compression & Optimization"
 tags: [model-training, compression, quantization, pruning, distillation, production]
 status: complete
-last_updated: 2026-07-02
+last_updated: 2026-07-25
 sources: []
+name_zh: "模型压缩完全指南"
 ---
 
 # Model Compression & Optimization
+
+> 中文简称：模型压缩完全指南
 
 ## Overview
 
@@ -328,6 +331,16 @@ def benchmark_compression(original_model, compressed_model, test_data):
     
     return results
 ```
+
+## Source-Level Implementation Insights (llm-compressor v0.12.0 / bitsandbytes v0.50.0)
+
+> 基于本仓库归档源码 `code/llm-frameworks/llm-compressor-v0.12.0/` 与 `code/llm-frameworks/bitsandbytes-v0.50.0/`，行号可对照验证。
+
+- **Compression Pipeline 的工程实现**：本文 Compression Pipeline 一节描述的"多技术串联"在 llm-compressor 中对应 Recipe 机制（`src/llmcompressor/recipe/recipe.py` L27 `Recipe(BaseModel)`）：剪枝 `SparseGPTModifier`（`modifiers/obcq/sgpt_base.py` L12）+ 量化 `GPTQModifier`（`modifiers/gptq/base.py` L46）可声明式堆叠，由 `oneshot()`（`entrypoints/oneshot.py` L261）一次性执行。
+- **Quantization 章节的两条实现路线**：离线校准（GPTQ/AWQ/SmoothQuant，均继承 `modifiers/modifier.py` L13 `Modifier`）vs 动态加载（bitsandbytes `Linear4bit`/`LinearNF4`，`nn/modules.py` L504/L676）。
+- **QLoRA 可训原理**：`autograd/_functions.py` L300 `MatMul4Bit` 前向反量化、反向梯度只流向 LoRA 旁支；8-bit 优化器（`optim/adamw.py` 等）进一步压缩训练时显存。
+
+详见 [[10_部署推理/05_Quantization/Quantization_Techniques_2026]] 第 8 节。
 
 ## Related Topics
 

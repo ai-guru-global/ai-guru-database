@@ -6,9 +6,12 @@ summary: "SecurityContext 是 Kubernetes Pod/Container 级别的安全配置字�
 created: 2026-07-02
 updated: 2026-07-21
 sources: []
+name_zh: "K8s 安全上下文"
 ---
 
 # SecurityContext
+
+> 中文简称：K8s 安全上下文
 
 > **一句话理解**：SecurityContext 是 Kubernetes 为 Pod 或容器声明「以谁的身份运行、能做什么事、能访问哪些资源」的安全配置字段。
 

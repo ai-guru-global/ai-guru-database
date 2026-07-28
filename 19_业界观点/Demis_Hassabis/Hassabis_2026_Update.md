@@ -11,8 +11,11 @@ aliases:
   - Demis Hassabis 2026 Update
 sources: []
 
+name_zh: "Demis Hassabis 2026 年度更新"
 ---
 # Demis Hassabis 2026 年度更新
+
+> 中文简称：Demis Hassabis 2026 年度更新
 
 ## 一句话概括
 

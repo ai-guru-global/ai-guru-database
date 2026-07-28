@@ -33,9 +33,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "GUI Agent / 图形界面 Agent"
 ---
 
 # GUI Agent / 图形界面 Agent
+
+> 中文简称：GUI Agent / 图形界面 Agent
 
 > **一句话理解**:GUI Agent 是"用眼睛看屏幕 + 用手操作键鼠"——能完成"打开 Chrome → 登录 → 填表 → 提交"这种多步桌面/Web 任务,2024-10 之前 SOTA 14.9%,2026-02 达 38.1%,距离人类 72% 还差 2x,但已可替代 60% RPA 场景。
 

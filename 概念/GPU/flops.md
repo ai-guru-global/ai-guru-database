@@ -21,8 +21,11 @@ aliases:
   - "每秒浮点运算次数"
   - "TFLOPS"
 
+name_zh: "每秒浮点运算次数"
 ---
 # FLOPS（每秒浮点运算次数）
+
+> 中文简称：每秒浮点运算次数
 
 > **一句话理解**: FLOPS = GPU 每秒能做多少次数学运算。Prefill 吃 FLOPS，Decode 吃带宽——两个阶段瓶颈完全不同。
 

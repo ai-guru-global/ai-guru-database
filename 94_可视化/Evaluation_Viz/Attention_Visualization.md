@@ -7,9 +7,12 @@ created: 2026-07-23
 updated: 2026-07-23
 tier: core
 sources: []
+name_zh: "注意力可视化深度解析"
 ---
 
 # 注意力可视化深度解析 (Attention Visualization)
+
+> 中文简称：注意力可视化深度解析
 
 > **一句话理解**: 注意力可视化把 Transformer 的"注意力"变成热力图——看清模型在每一步关注输入的哪些 token 或图像区域，从而诊断模型行为与可解释性。
 

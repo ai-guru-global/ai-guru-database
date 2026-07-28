@@ -13,8 +13,11 @@ aliases:
   - "Sebastian Raschka Articles"
   - "sebastian raschka articles"
 
+name_zh: "Sebastian Raschka LLM 深度解析系列"
 ---
 # Sebastian Raschka LLM 深度解析系列
+
+> 中文简称：Sebastian Raschka LLM 深度解析系列
 
 > **一句话理解**: Sebastian Raschka 的 LLM 深度解析系列文章,覆盖架构、训练、微调、推理等核心主题。
 

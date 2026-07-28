@@ -11,8 +11,11 @@ aliases:
   - "Workflow in nutshell"
 sources: []
 
+name_zh: "AI 工作流速成指南"
 ---
 # AI 工作流速成指南
+
+> 中文简称：AI 工作流速成指南
 
 > 🎯 **目标**：理解如何将 AI 组件编排成可靠运行的生产流水线和自动化工作流。
 

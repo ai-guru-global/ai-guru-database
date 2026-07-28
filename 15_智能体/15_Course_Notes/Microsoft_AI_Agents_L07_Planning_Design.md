@@ -28,8 +28,11 @@ aliases:
   - "Microsoft AI Agents L07 Planning Design"
   - Microsoft_AI_Agents_L07_Planning_Design
 
+name_zh: "L07 规划设计模式：任务分解、结构化输出与迭代重规划"
 ---
 # L07 规划设计模式：任务分解、结构化输出与迭代重规划
+
+> 中文简称：L07 规划设计模式：任务分解、结构化输出与迭代重规划
 
 > 来源：[Microsoft AI Agents for Beginners / 07-planning-design](https://github.com/microsoft/ai-agents-for-beginners/tree/main/07-planning-design)
 

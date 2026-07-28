@@ -23,8 +23,11 @@ aliases:
   - "Llm Engineers Handbook"
   - "llm engineers handbook"
 
+name_zh: "LLM 工程师手册"
 ---
 # LLM Engineer's Handbook
+
+> 中文简称：LLM 工程师手册
 
 > **一句话理解**: 面向 LLM 工程师的全栈实战手册，从数据工程到模型部署提供端到端工程化方案，强调可复现、可扩展的生产级 LLM 系统构建。
 

@@ -12,8 +12,11 @@ aliases:
   - LLM_as_Judge_Templates
 sources: []
 
+name_zh: "LLM-as-Judge 评估提示词模板"
 ---
 # LLM-as-Judge 评估提示词模板
+
+> 中文简称：LLM-as-Judge 评估提示词模板
 
 > 用于自动化 Agent 回答质量评估的标准提示词模板
 

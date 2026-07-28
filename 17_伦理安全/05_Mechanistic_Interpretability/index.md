@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "机制可解释性"
+name_en: "Mechanistic Interpretability"
 ---
 
 # Mechanistic Interpretability
+
+> 中文简称：机制可解释性 ｜ English Name: Mechanistic Interpretability
 
 机制可解释性（Mechanistic Interpretability）— 理解大模型内部机制，从神经元（neuron）到回路（circuit）级别的逆向分析。
 

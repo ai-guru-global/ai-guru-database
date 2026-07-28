@@ -11,8 +11,11 @@ aliases:
   - Sentence_Transformers_Deep_Dive
 sources: []
 
+name_zh: "Sentence-Transformers: 嵌入模型框架"
 ---
 # Sentence-Transformers: 嵌入模型框架
+
+> 中文简称：Sentence-Transformers: 嵌入模型框架
 
 > **一句话理解**: Sentence-Transformers 让文本转向量变得简单——几行代码就能使用预训练的语义嵌入模型，支持 100+ 语言，专为语义搜索和 RAG 设计。
 

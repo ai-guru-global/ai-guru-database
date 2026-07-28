@@ -8,7 +8,10 @@ updated: 2026-06-15
 tier: supporting
 sources: []
 
+name_zh: "AI Guru 知识库"
 ---
+> 中文简称：AI Guru 知识库
+
 <div align="center">
 
 <h1>🧠 AI Guru 知识库</h1>

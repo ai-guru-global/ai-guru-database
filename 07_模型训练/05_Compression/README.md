@@ -4,9 +4,12 @@ tags: [model-training, compression, quantization, pruning, distillation]
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "模型压缩技术总览"
 ---
 
 # Compression Techniques for Model Training
+
+> 中文简称：模型压缩技术总览
 
 ## Purpose
 

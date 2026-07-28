@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "AI 解决方案架构师"
+name_en: "AI Solutions Architect"
 ---
 
 # AI Solutions Architect
+
+> 中文简称：AI 解决方案架构师 ｜ English Name: AI Solutions Architect
 
 AI 解决方案架构师 — 为企业客户设计端到端 AI 解决方案，涵盖技术选型、架构设计、可行性验证（POC）与交付落地。
 

@@ -7,9 +7,12 @@ created: 2026-06-15
 updated: 2026-06-15
 baseline: 治理/_project-evaluation.md
 sources: []
+name_zh: "AI Guru 知识库内容完整性评估"
 ---
 
 # AI Guru 知识库内容完整性评估
+
+> 中文简称：AI Guru 知识库内容完整性评估
 
 > **评估日期**: 2026-06-15
 > **基线对照**: [[治理/_project-evaluation|2026-06-03 评估]] (492 文档 / 683 万字)

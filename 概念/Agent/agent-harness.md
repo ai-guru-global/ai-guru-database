@@ -23,9 +23,12 @@ relationships:
 sources:
   - "https://docs.anthropic.com/en/docs/agents"
   - "https://langchain-ai.github.io/langgraph/"
+name_zh: "智能体驭具"
 ---
 
 # Agent Harness (智能体驭具)
+
+> 中文简称：智能体驭具
 
 ## 定义
 

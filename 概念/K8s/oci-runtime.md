@@ -33,8 +33,11 @@ aliases:
   - "Oci Runtime"
   - "oci runtime"
 
+name_zh: "开放容器倡议运行时规范"
 ---
 # OCI Runtime Spec (开放容器倡议运行时规范)
+
+> 中文简称：开放容器倡议运行时规范
 
 ## 核心要点
 

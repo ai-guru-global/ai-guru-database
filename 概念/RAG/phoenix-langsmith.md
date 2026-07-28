@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "Arize 开源 LLM 可观测性平台"
 ---
 
 # Phoenix (Arize Phoenix)
+
+> 中文简称：Arize 开源 LLM 可观测性平台
 
 [Phoenix](https://github.com/Arize-ai/phoenix) 是 [Arize AI](https://arize.com/) 开源的 **LLM 可观测性与评估平台**。它提供 LLM Tracing（链路追踪）、Retrieval 分析、嵌入可视化和自动化评估能力。Phoenix 的核心差异化在于**深度嵌入分析**和 **OpenTelemetry 原生支持**，能可视化向量空间的聚类、漂移和异常，帮助开发者深入理解 RAG 和 Embedding 的行为。
 

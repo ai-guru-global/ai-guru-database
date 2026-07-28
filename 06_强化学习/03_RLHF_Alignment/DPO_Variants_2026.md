@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "DPO 变体全景 2026"
 ---
 # DPO 变体全景 2026
+
+> 中文简称：DPO 变体全景 2026
 
 ## 1. DPO 回顾与局限
 

@@ -23,6 +23,7 @@ aliases:
   - "LM Evaluation Harness"
   - "Lm Evaluation Harness"
   - "lm evaluation harness"
+name_zh: "EleutherAI LLM 评估框架"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -30,6 +31,8 @@ aliases:
 <!-- op-safety-banner v1 -->
 
 # LM Evaluation Harness
+
+> 中文简称：EleutherAI LLM 评估框架
 
 [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) 是 [EleutherAI](https://www.eleuther.ai/) 开源的标准化 LLM 评估框架，提供 **60+ 学术基准测试**（MMLU、HellaSwag、ARC、TruthfulQA 等）的统一评估接口。它是 Open LLM Leaderboard、学术论文模型评估和业界模型对比的**事实标准工具**，几乎所有主流 LLM（Llama、Mistral、Qwen 等）的基准分数都由该工具产出。
 

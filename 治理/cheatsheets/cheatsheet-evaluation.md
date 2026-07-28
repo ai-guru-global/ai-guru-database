@@ -7,9 +7,12 @@ updated: 2026-06-24
 tier: core
 summary: "LLM 评测全栈速查：从通用基准（MMLU/MT-Bench）到领域评测（事实性/安全性/Agent）、LLM-as-Judge 范式、生产级回归测试流水线。"
 sources: []
+name_zh: "LLM 评测速查表"
 ---
 
 # LLM 评测速查表
+
+> 中文简称：LLM 评测速查表
 
 > **核心洞察**：2026 年 LLM 评测已从单一基准（MMLU）演进到**多维评测矩阵**：通用能力 + 领域能力 + 安全 + 偏见 + Agent + RAG + 生产稳定性。没有"一站式评测"，只有"评测矩阵"。
 > 详见 [[08_模型评估]] · [[LLM_Evaluation_Pipeline]] · [[LLM_Safety_Testing_Deep_Dive]] · [[LLM_as_Judge_Guide]]

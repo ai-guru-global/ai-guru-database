@@ -1,4 +1,9 @@
+---
+name_zh: "项目质量评估"
+---
 # Project Quality Assessment — AI Guru Database
+
+> 中文简称：项目质量评估
 
 **Assessment Date:** 2026-07-19 (v2)
 **Previous Assessment:** 2026-07-11 (v1, post-remediation)

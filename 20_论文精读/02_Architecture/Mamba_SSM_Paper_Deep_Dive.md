@@ -12,9 +12,12 @@ aliases:
   - "Selective State Space Model Deep Dive"
   - Mamba_SSM_Paper_Deep_Dive
 sources: []
+name_zh: "Mamba 论文精读"
 ---
 
 # Mamba 论文精读: Selective State Space Models
+
+> 中文简称：Mamba 论文精读
 
 > **一句话理解**: Mamba 就像一个"会选择性记忆"的读者——它不像 Transformer 那样把整本书摊开在桌上随时翻阅（O(n²) 注意力），而是像人一样只记住关键信息、忘掉无关细节（O(n) 状态压缩），从而用线性时间处理任意长度的序列。
 

@@ -7,6 +7,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: core
 sources: []
+name_zh: "LLM 模型热加载与回滚 Runbook"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -14,6 +15,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # LLM 模型热加载与回滚 Runbook
+
+> 中文简称：LLM 模型热加载与回滚 Runbook
 
 > **一句话理解**: 模型上线不是「替换文件就完事」——权重、tokenizer、LoRA 适配器、量化配置任何一项不匹配都会导致服务异常；本手册教你如何安全热加载和回滚。
 

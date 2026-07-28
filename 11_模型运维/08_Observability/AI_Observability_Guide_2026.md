@@ -16,8 +16,11 @@ aliases:
   - "AI Observability Guide 2026"
   - AI_Observability_Guide_2026
 
+name_zh: "AI 可观测性 2026 完全指南"
 ---
 # AI 可观测性 2026 完全指南
+
+> 中文简称：AI 可观测性 2026 完全指南
 
 > **一句话理解**: LLM 应用的可观测性体系:追踪、监控、评估、成本分析,含 Langfuse/LangSmith/Helicone 等工具对比。
 

@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "智能体入门教程"
+name_en: "Hello Agents"
 ---
 
 # Hello Agents
+
+> 中文简称：智能体入门教程 ｜ English Name: Hello Agents
 
 ## 文件导航
 

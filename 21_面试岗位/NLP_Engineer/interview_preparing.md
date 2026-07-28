@@ -12,8 +12,11 @@ aliases:
   - interview_preparing
 sources: []
 
+name_zh: "NLP Engineer 面试准备"
 ---
 # NLP Engineer 面试准备
+
+> 中文简称：NLP Engineer 面试准备
 
 ## 核心职责
 - **LLM 应用**: RAG、工具调用、对话系统。
@@ -47,7 +50,7 @@ sources: []
 - [[21_面试岗位/NLP_Engineer/interview_answers|NLP Engineer 面试题实例答案]]
 - [[21_面试岗位/NLP_Engineer/question_bank|NLP Engineer 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 
 ## 面试准备核心策略
 

@@ -12,8 +12,11 @@ aliases:
   - HAMi_for_dummy
 sources: []
 
+name_zh: "HAMi 入门: 让 Kubernetes GPU 像 CPU 一样共享"
 ---
 # HAMi 入门：让 Kubernetes GPU 像 CPU 一样共享
+
+> 中文简称：HAMi 入门: 让 Kubernetes GPU 像 CPU 一样共享
 
 > **一句话理解**: HAMi 让 Kubernetes 里的一张 GPU 可以被多个 Pod 同时安全使用，就像多个进程共享 CPU 一样；它由 CNCF 孵化，支持 NVIDIA、华为昇腾、寒武纪等多种芯片。
 

@@ -32,8 +32,11 @@ aliases:
   - "inference performance"
   - "推理性能"
 
+name_zh: "推理性能工程"
 ---
 # Inference Performance（推理性能）
+
+> 中文简称：推理性能工程
 
 > 推理性能工程就是：**用更少的资源、更低的延迟、更高的吞吐，把 LLM 推理服务跑得更稳更快。**
 

@@ -14,6 +14,7 @@ aliases:
 updated: 2026-06-30
 summary: "工具体系与权限模型 — 专题文档"
 sources: []
+name_zh: "工具体系与权限模型"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -54,6 +55,8 @@ k8s_versions:
 - '1.32'
 ---
 # 工具体系与权限模型
+
+> 中文简称：工具体系与权限模型
 
 > **文档类型**: 核心能力专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, Tools, Permissions, Custom Tools, bash, edit, read, grep, Security, TypeScript
 

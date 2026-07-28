@@ -13,8 +13,11 @@ aliases:
   - "Illustrated Transformer"
   - "illustrated transformer"
 
+name_zh: "图解 Transformer"
 ---
 # 图解 Transformer (Jay Alammar)
+
+> 中文简称：图解 Transformer
 
 > **一句话理解**: Jay Alammar 的经典图解 Transformer 文章,用可视化方式解释自注意力、编码器-解码器等核心概念,Transformer 入门必读。
 

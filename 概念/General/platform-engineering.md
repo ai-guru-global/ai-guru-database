@@ -18,9 +18,12 @@ relationships:
   - target: "概念/gitops"
     type: related_to
 sources: []
+name_zh: "平台工程"
 ---
 
 # Platform Engineering
+
+> 中文简称：平台工程
 
 > **一句话理解**: 平台工程就是把「运维能力」封装成「自助服务产品」，让开发团队能像用云产品一样快速、安全地使用 K8s、数据库、流水线等资源。
 

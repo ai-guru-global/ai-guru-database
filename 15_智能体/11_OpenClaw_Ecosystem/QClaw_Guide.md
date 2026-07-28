@@ -12,8 +12,11 @@ aliases:
   - QClaw_Guide
 sources: []
 
+name_zh: "QClaw 完全指南"
 ---
 # QClaw Complete Guide: Tencent's WeChat-First AI Agent
+
+> 中文简称：QClaw 完全指南
 
 ## Overview
 

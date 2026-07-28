@@ -31,9 +31,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "Computer Use / 计算机使用"
 ---
 
 # Computer Use / 计算机使用
+
+> 中文简称：Computer Use / 计算机使用
 
 > **一句话理解**:Computer Use 让 LLM 像人一样"看屏幕 → 想清楚 → 动鼠标/键盘",能完成任何 GUI 任务(即使没有 API)。2024-10 OpenAI o1 / Anthropic Claude 3.5 同月发布,2026-02 准确率 38.1%(人类 72%),是"通用 Agent 终极形态"。
 

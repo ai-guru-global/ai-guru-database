@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "强化学习"
+name_en: "RL & Agents"
 ---
 
 # Reinforcement Learning
+
+> 中文简称：强化学习 ｜ English Name: RL & Agents
 
 This page indexes the contents of `强化学习`.
 
@@ -23,7 +27,7 @@ This page indexes the contents of `强化学习`.
 - [[06_强化学习/README|README]]
 - [[06_强化学习/README_for_dummy|README For Dummy]]
 - [[06_强化学习/RL-in-nutshell|RL In Nutshell]]
-- [[06_强化学习/RL_Fundamentals|RL Fundamentals]]
+- [[06_强化学习/01_RL_Foundations/RL_Foundations|RL Fundamentals]]
 - [[06_强化学习/RLHF_DPO_GRPO_Deep_Dive|RLHF DPO GRPO Deep Dive]]
 
 ## 核心概念

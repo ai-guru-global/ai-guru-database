@@ -23,9 +23,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "DeepGEMM FP8 算子库"
 ---
 
 # DeepGEMM FP8 算子库
+
+> 中文简称：DeepGEMM FP8 算子库
 
 > **一句话理解**: DeepGEMM 是 DeepSeek 的"FP8 算力引擎"——让 H100 GPU 以 FP8 精度跑出接近 BF16 的矩阵乘法性能，是 DeepSeek-V3 低成本训练的关键底层。
 

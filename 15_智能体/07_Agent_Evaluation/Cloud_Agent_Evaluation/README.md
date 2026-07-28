@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: core
 sources: []
 
+name_zh: "云智能体专项测评"
 ---
 # Cloud Agent Evaluation
+
+> 中文简称：云智能体专项测评
 
 > 云产品智能体专项测评文档目录
 

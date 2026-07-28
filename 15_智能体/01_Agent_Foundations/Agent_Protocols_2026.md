@@ -11,8 +11,11 @@ aliases:
   - Agent_Protocols_2026
 sources: []
 
+name_zh: "AI Agent 协议栈 2026 完全指南"
 ---
 # AI Agent 协议栈 2026 完全指南
+
+> 中文简称：AI Agent 协议栈 2026 完全指南
 
 > **一句话理解**: 2026 年是 AI Agent 协议标准化的元年——MCP 让 Agent 拥有"万能工具接口"，A2A 让 Agent 之间能够"自由对话"，两者结合构成了企业级 Agent 系统的通信基础设施。
 

@@ -14,6 +14,7 @@ aliases:
 updated: 2026-06-30
 summary: "插件体系与 Web Search — 专题文档"
 sources: []
+name_zh: "插件体系与 Web Search"
 ---
 title: 插件体系与 Web Search
 description: '**文档类型**: 功能详解 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Plugins, Web
@@ -52,6 +53,8 @@ k8s_versions:
 - '1.32'
 ---
 # 插件体系与 Web Search
+
+> 中文简称：插件体系与 Web Search
 
 > **文档类型**: 功能详解 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Plugins, Web Search, Exa, Firecrawl, Parallel, File Parser, Context Compression, Domain Filtering
 

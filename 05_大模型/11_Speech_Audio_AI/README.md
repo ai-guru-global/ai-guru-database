@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "语音与音频 AI"
 ---
 # 语音与音频 AI (Speech & Audio AI)
+
+> 中文简称：语音与音频 AI
 
 > **核心定位**: AI 感知层的核心模态之一，覆盖语音识别(ASR)、语音合成(TTS)、音频理解、音乐生成、实时语音对话。
 

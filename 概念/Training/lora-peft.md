@@ -27,13 +27,16 @@ base_confidence: 0.92
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-07-21
+updated: 2026-07-25
 aliases:
   - "Lora Peft"
   - "lora peft"
 
+name_zh: "LoRA 与参数高效微调"
 ---
 # LoRA 与参数高效微调 (PEFT)
+
+> 中文简称：LoRA 与参数高效微调
 
 > 用 1% 的参数改动，获得 90% 的全量微调效果。
 
@@ -212,6 +215,17 @@ W_final = W₀ + B×A
 
 > LoRA = 冻结原模型 + 学一个小补丁，显存省 10 倍，效果保留 90%+，推理零成本。
 > QLoRA = LoRA + 把原模型压成 4-bit，显存再省 4 倍，单卡能玩 70B。
+
+---
+
+## 10. 源码级洞察（基于 peft v0.19.1 归档源码）
+
+> 证据位于 `code/llm-frameworks/peft-v0.19.1/src/peft/tuners/lora/`：
+
+- **低秩矩阵的真身**：`LoraLayer`（layer.py L100）把 `lora_A`/`lora_B` 存成 `nn.ModuleDict`，`update_layer()`（L153）里 B 零初始化保证起点等价原模型。
+- **替换式注入**：`LoraModel(BaseTuner)`（model.py L88）通过 `inject_adapter()`（`tuners_utils.py` L749）把 `q_proj`/`v_proj` 等 `nn.Linear` 原地换成 `lora.Linear`（layer.py L769）。
+- **合并/撤销**：`merge()`（layer.py L817）`W += B@A*scaling` 实现推理零开销；`unmerge()`（L884）可逆。
+- **变体家族**：同目录 `dora.py`（DoRA）、`variants.py`（rsLoRA）、`tp_layer.py`（张量并行适配）。详见 [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] 第 7 节。
 
 ---
 

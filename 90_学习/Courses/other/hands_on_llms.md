@@ -27,8 +27,11 @@ aliases:
   - "hands on llms"
   - hands_on_llms
 
+name_zh: "Hands-On Large Language Models：12 章课程映射"
 ---
 # Hands-On Large Language Models：12 章课程映射
+
+> 中文简称：Hands-On Large Language Models：12 章课程映射
 
 > **一句话理解**: 《Hands-On Large Language Models》用近 300 张定制图表和 12 章 Jupyter Notebook，系统讲解从 Token/嵌入到 BERT/生成模型微调的 LLM 全栈知识。本页将课程章节映射到 `ai-guru-database` 的对应概念页。
 

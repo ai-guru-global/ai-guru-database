@@ -12,8 +12,11 @@ aliases:
   - Code_RAG_Architecture
 sources: []
 
+name_zh: "代码RAG架构深度解析"
 ---
 # 代码RAG架构深度解析 (Code RAG Architecture)
+
+> 中文简称：代码RAG架构深度解析
 
 > **一句话理解**: 代码RAG不是简单地把代码当文本检索——AST感知分块、符号级索引、跨文件依赖图、代码专用嵌入模型让仓库级代码理解成为可能，Cursor/Copilot/Cody各自代表了不同的工程哲学。
 
@@ -783,7 +786,7 @@ class CodeQueryRouter:
 - [[14_RAG系统/05_RAG_Production/RAG_Cost_Optimization|RAG成本优化]] — 代码RAG成本控制
 - [[14_RAG系统/04_Advanced_RAG/Graph_RAG_Architecture|Graph RAG架构]] — 图结构检索
 - [[15_智能体/01_Agent_Foundations/Agent_Overview|AI Agent全景]] — Agent + 代码理解
-- [[16_编程/Tree_sitter|Tree-sitter]] — AST解析工具
+- Tree-sitter — AST解析工具
 
 ---
 

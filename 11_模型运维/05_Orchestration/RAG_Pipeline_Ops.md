@@ -13,8 +13,11 @@ aliases:
   - RAG_Pipeline_Ops
 sources: []
 
+name_zh: "RAG 流水线运维"
 ---
 # RAG 流水线运维
+
+> 中文简称：RAG 流水线运维
 
 > **一句话理解**: RAG 系统的运维难点不在「检索」，而在「知识库是活的」——文档在变、切块策略在调、Embedding 模型在升级，每个变更都可能让召回质量崩塌。
 

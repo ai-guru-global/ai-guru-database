@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: core
+name_zh: "Stanford LLM 编程框架"
 ---
 
 # DSPy
+
+> 中文简称：Stanford LLM 编程框架
 
 [DSPy](https://github.com/stanfordnlp/dspy)（**D**eclarative **S**elf-improving **Py**thon）是 Stanford NLP 开发的 **LLM 编程框架**，它彻底颠覆了传统的 Prompt Engineering 范式。核心理念：**不要写 Prompt，而是写程序**——通过声明式的 Module 和 Signature 定义 LLM 的输入输出规范，DSPy 的编译器自动优化 Prompt 和 Few-shot 示例，让 LLM 达到最佳性能。
 

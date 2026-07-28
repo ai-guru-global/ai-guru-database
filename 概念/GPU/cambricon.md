@@ -17,9 +17,12 @@ relationships:
   - target: "概念/magicmind"
     type: uses
 sources: []
+name_zh: "寒武纪"
 ---
 
 # Cambricon（寒武纪）
+
+> 中文简称：寒武纪
 
 > **一句话理解**: 寒武纪是国内最早做 AI 芯片的公司之一，MLU 系列主打云端高密度推理。
 

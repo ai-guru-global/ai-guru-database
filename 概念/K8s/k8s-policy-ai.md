@@ -34,9 +34,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "OPA / Kyverno / Gatekeeper / 策略引擎"
 ---
 
 # K8s Policy as Code for AI
+
+> 中文简称：OPA / Kyverno / Gatekeeper / 策略引擎
 
 > **一句话理解**:把"AI 集群治理规则"用代码表达——Kyverno 用 CEL 写策略像写 SQL,OPA/Rego 像写逻辑程序,Gatekeeper 集成到 Admission Webhook。AI 场景专项策略:GPU 配额、模型来源白名单、推理 QPS 限流、敏感数据脱敏、PII 检测、模型血缘追踪。
 

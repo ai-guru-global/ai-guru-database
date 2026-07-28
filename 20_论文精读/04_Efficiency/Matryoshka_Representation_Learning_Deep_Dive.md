@@ -11,8 +11,11 @@ aliases:
   - Matryoshka_Representation_Learning_Deep_Dive
 sources: []
 
+name_zh: "论文深度解读"
 ---
 # 论文深度解读: Matryoshka Representation Learning
+
+> 中文简称：论文深度解读
 
 > **论文**: *Matryoshka Representation Learning* (Kusupati et al., NeurIPS 2022)  
 > **作者**: Aditya Kusupati, Gantavya Bhatt, Aniket Rege, Shuran Song, Brian Price, Sudhanshu Gupta, Rama Chellappa, Ali Farhadi  

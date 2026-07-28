@@ -29,8 +29,11 @@ updated: 2026-06-16
 aliases:
   - Deepspeed
 
+name_zh: "微软训练优化库"
 ---
 # DeepSpeed
+
+> 中文简称：微软训练优化库
 
 > 微软出品的「大模型训练加速器」——用 ZeRO 优化把千亿参数模型塞进有限 GPU。
 

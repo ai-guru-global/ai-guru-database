@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "世界模型"
 ---
 # 世界模型 (World Models)
+
+> 中文简称：世界模型
 
 ## 文档导航
 

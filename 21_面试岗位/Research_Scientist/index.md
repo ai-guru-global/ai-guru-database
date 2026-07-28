@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "研究科学家"
+name_en: "Research Scientist"
 ---
 
 # Research Scientist
+
+> 中文简称：研究科学家 ｜ English Name: Research Scientist
 
 研究科学家（Research Scientist）— 面向基础研究岗位，涵盖论文复现（paper reproduction）、实验设计（experiment design）、理论推导与前沿方向跟进。
 

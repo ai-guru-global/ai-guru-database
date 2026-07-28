@@ -32,9 +32,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "Dagster / Airflow 3.0 / dbt + Spark / LL"
 ---
 
 # Data Pipeline 2.0
+
+> 中文简称：Dagster / Airflow 3.0 / dbt + Spark / LL
 
 > **一句话理解**:Data Pipeline 2.0 把"原始数据 → 训练数据 → 知识库 → 监控数据"全链路用统一流水线管理——Dagster(数据资产原生,2024-2025 新标准)、Airflow 3.0(标准化 + 任务执行)、dbt + Spark(ELT 主流)、LLM Data Pipeline(LLM 生成 / 清洗 / 标注数据)。
 

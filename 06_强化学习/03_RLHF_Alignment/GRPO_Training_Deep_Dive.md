@@ -11,9 +11,12 @@ aliases:
   - "GRPO_Training_Deep_Dive"
 sources: []
 
+name_zh: "GRPO 训练深度解读 - 推理模型生产级训练指南"
 ---
 
 # GRPO 训练深度解读 - 推理模型生产级训练指南
+
+> 中文简称：GRPO 训练深度解读 - 推理模型生产级训练指南
 
 > **一句话理解**: GRPO 是一种去掉 Critic、用组内相对优势和可验证奖励训练推理模型的强化学习算法，是 DeepSeek-R1、Qwen3、o1-class 模型实现“长思维链”能力的核心工程范式。
 

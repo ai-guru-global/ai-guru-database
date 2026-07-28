@@ -8,9 +8,12 @@ created: 2026-07-02
 updated: 2026-07-02
 tier: core
 lifecycle: draft
+name_zh: "PagedAttention x Continuous Batching: 内存"
 ---
 
 # PagedAttention x Continuous Batching: 内存效率与动态调度的双重引擎
+
+> 中文简称：PagedAttention x Continuous Batching: 内存
 
 ## The Connection
 

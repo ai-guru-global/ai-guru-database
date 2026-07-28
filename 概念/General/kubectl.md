@@ -21,6 +21,7 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: supporting
+name_zh: "K8s 命令行工具"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -28,6 +29,8 @@ tier: supporting
 <!-- op-safety-banner v1 -->
 
 # kubectl Kubernetes CLI
+
+> 中文简称：K8s 命令行工具
 
 > **一句话理解**: kubectl 是 K8s 的"遥控器"——所有容器编排操作都通过它执行，AI Stack 底层基于 K8s，运维必会。
 

@@ -19,11 +19,14 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: archived
+name_zh: "nerdctl 容器管理 CLI"
 ---
 
 > **归档提示**: 此概念为通用云原生工具，与AI核心关联度较低。如需学习完整的K8s知识，请参考 CNCF 官方文档。
 
 # nerdctl 容器管理 CLI
+
+> 中文简称：nerdctl 容器管理 CLI
 
 > **一句话理解**: nerdctl 是 containerd 的"Docker 替代品"——兼容 Docker 命令，但更轻量，AI Stack 容器运维的首选工具。
 

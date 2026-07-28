@@ -20,9 +20,12 @@ base_confidence: 0.85
 lifecycle: reviewed
 tier: supporting
 updated: 2026-07-21
+name_zh: "Dify 开源 LLM 应用平台"
 ---
 
 # Dify 开源 LLM 应用平台
+
+> 中文简称：Dify 开源 LLM 应用平台
 
 > **一句话理解**: Dify 是"开源的 LLM 应用开发平台"——可视化工作流 + RAG + Agent + 模型管理 + 运营分析，企业搭建 AI 应用的首选开源方案。
 
@@ -198,6 +201,6 @@ AI Stack LLM 应用构建层级
 - [[概念/RAG/langflow|Langflow]] — 可视化编排
 - [[概念/RAG/rag-patterns|RAG Patterns]] — RAG 模式
 - [[概念/RAG/vector-database|Vector Database]] — 向量数据库
-- [[概念/Agent/agent-frameworks|Agent Frameworks]] — Agent 框架
+- [[概念/Agent/agent-framework|Agent Frameworks]] — Agent 框架
 
 > ℹ️ Dify 最佳实践：内置 RAG 适合快速上线，复杂检索策略建议外接专业向量数据库，生产环境用 K8s 部署 + 多 Worker。

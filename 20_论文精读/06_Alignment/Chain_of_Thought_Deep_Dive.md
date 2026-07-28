@@ -12,8 +12,11 @@ aliases:
   - Chain_of_Thought_Deep_Dive
 sources: []
 
+name_zh: "论文深度解读: Chain-of-Thought — 让 LLM 逐步推理"
 ---
 # 论文深度解读: Chain-of-Thought — 让 LLM 逐步推理
+
+> 中文简称：论文深度解读: Chain-of-Thought — 让 LLM 逐步推理
 
 > **论文**: *Chain-of-Thought Prompting Elicits Reasoning in Large Language Models* (Wei et al., 2022, Google Brain)
 > **重要性**: 开创推理链提示范式，是 GPT-4o1/DeepSeek-R1 等推理模型的思想源头
@@ -250,7 +253,7 @@ CoT Prompting (2022)
 ## Related
 
 - [[../../概念/LLM/cot-react-reasoning-prompt|CoT 推理概念卡]] — 思维链的概念定义
-- [[../../05_大模型/09_Reasoning_Models|推理模型]] — 推理增强 LLM 架构
+- [[05_大模型/09_Reasoning_Models|推理模型]] — 推理增强 LLM 架构
 - [[../../05_大模型/05_LLM_Architectures/LLM_Internals_Inference|LLM 推理内部机制]] — 推理阶段技术细节
 - [[../../03_深度学习/03_Optimization/Optimization|优化方法]] — 推理优化与解码策略
-- [[../../15_智能体/01_Agent_Foundations|Agent 基础]] — CoT 在 Agent 推理中的应用
+- [[15_智能体/01_Agent_Foundations|Agent 基础]] — CoT 在 Agent 推理中的应用

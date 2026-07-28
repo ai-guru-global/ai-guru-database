@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-25
 sources: []
+name_zh: "神经网络核心"
+name_en: "Neural Network Core"
 ---
 
 # Neural Network Core
+
+> 中文简称：神经网络核心 ｜ English Name: Neural Network Core
 
 神经网络核心 — 深度学习基础架构与核心机制，包括前馈网络、注意力机制、归一化、MoE、架构搜索和训练入门。
 

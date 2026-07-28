@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-21
 sources: []
 tags: [auto-index]
+name_zh: "端侧大模型"
+name_en: "Edge LLM"
 ---
 
 # Edge LLM
+
+> 中文简称：端侧大模型 ｜ English Name: Edge LLM
 
 边缘大模型（Edge LLM）— 端侧 LLM/SLM 部署、模型压缩（model compression）与边缘推理优化（edge inference optimization）。
 

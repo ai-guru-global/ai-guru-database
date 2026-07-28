@@ -29,8 +29,11 @@ aliases:
   - "Multimodal Models"
   - "multimodal models"
 
+name_zh: "多模态模型"
 ---
 # 多模态模型
+
+> 中文简称：多模态模型
 
 ## 概述
 

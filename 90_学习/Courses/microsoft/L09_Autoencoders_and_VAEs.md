@@ -13,8 +13,11 @@ aliases:
   - L09_Autoencoders_and_VAEs
 sources: []
 
+name_zh: "L09 - 自编码器与变分自编码器VAE"
 ---
 # L09 - 自编码器与变分自编码器VAE
+
+> 中文简称：L09 - 自编码器与变分自编码器VAE
 
 > **一句话理解**：自编码器用“编码器 → 瓶颈（latent space） → 解码器”的结构让神经网络自己学会图像的紧凑表达；VAE 进一步让隐空间（latent space）服从可采样的概率分布，从而能够连续、可控地生成新图像。
 

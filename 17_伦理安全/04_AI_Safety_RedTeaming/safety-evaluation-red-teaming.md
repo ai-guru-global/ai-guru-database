@@ -22,8 +22,11 @@ aliases:
   - "Safety Evaluation Red Teaming"
   - "safety evaluation red teaming"
 
+name_zh: "安全评测 × 红队测试: 构建 AI 安全的攻防闭环"
 ---
 # 安全评测 × 红队测试: 构建 AI 安全的攻防闭环
+
+> 中文简称：安全评测 × 红队测试: 构建 AI 安全的攻防闭环
 
 ## The Connection
 

@@ -13,8 +13,11 @@ aliases:
   - Diffusion_Models_Deep_Dive
 sources: []
 
+name_zh: "扩散模型深度解析"
 ---
 # 扩散模型深度解析 (Diffusion Models Deep Dive)
+
+> 中文简称：扩散模型深度解析
 
 > **一句话理解**: 扩散模型就像修复古画——先在前向过程逐步给图像加噪直到变成纯噪声，然后训练一个神经网络学会一步步去噪，最终从随机噪声中"雕刻"出清晰的图像。
 
@@ -1237,8 +1240,8 @@ class CFGDiffusion:
 - [[03_深度学习/04_Generative_Models/VAE_Deep_Dive]] — VAE深度解析（扩散的VAE组件）
 - [[03_深度学习/01_DL_Fundamentals/DL_Fundamentals]] — 深度学习基础
 - [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core]] — 神经网络核心（U-Net/Attention）
-- [[03_深度学习/State_Space_Models/State_Space_Models]] — 状态空间模型（与SDE的联系）
+- [[概念/LLM/state-space-models|State_Space_Models]] — 状态空间模型（与SDE的联系）
 - [[03_深度学习/09_Advanced_Topics/Transfer_Learning]] — 迁移学习（预训练扩散模型）
 - [[01_数学基础/03_Probability_Statistics/Probability_Statistics]] — 概率统计（扩散过程基础）
-- [[01_数学基础/04_Information_Theory/Information_Theory]] — 信息论（ELBO/KL散度）
+- [[概念/Math/information-theory|Information_Theory]] — 信息论（ELBO/KL散度）
 - [[概念/Safety/model-watermark]] — 模型水印（AI生成内容检测）

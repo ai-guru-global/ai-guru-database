@@ -12,8 +12,11 @@ aliases:
   - AI_Coding-in-nutshell
 sources: []
 
+name_zh: "AI 辅助编程速览"
 ---
 # AI 辅助编程速览 (AI-Assisted Coding in a Nutshell)
+
+> 中文简称：AI 辅助编程速览
 
 > **一句话理解**: AI 编程之于开发者，就像 GPS 之于司机——你仍然掌控方向盘，但 AI 帮你找路、避堵、甚至自动泊车。
 

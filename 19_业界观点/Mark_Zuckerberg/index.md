@@ -12,9 +12,13 @@ aliases:
 sources:
   - "https://ai.meta.com/llama/"
   - "https://about.meta.com/"
+name_zh: "Mark Zuckerberg 人物索引"
+name_en: "Mark Zuckerberg"
 ---
 
 # Mark Zuckerberg 人物索引
+
+> 中文简称：Mark Zuckerberg 人物索引 ｜ English Name: Mark Zuckerberg
 
 > **一句话概括**: Meta (原 Facebook) 创始人兼 CEO（2004 至今）——将开源 AI 确立为公司核心战略，推动 LLaMA 系列开源大模型成为全球开源 AI 生态的基石。他主张"开放研究是对抗 AI 滥用的最佳防线"，同时在 VR/AR (Metaverse)、智能眼镜、AI 可穿戴设备和社交 AI 助手领域大力投入，构建 AI 驱动的下一代计算平台。
 

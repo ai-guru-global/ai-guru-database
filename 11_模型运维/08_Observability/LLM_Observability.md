@@ -13,8 +13,11 @@ aliases:
   - LLM_Observability
 sources: []
 
+name_zh: "LLM 可观测性"
 ---
 # LLM 可观测性
+
+> 中文简称：LLM 可观测性
 
 > **一句话理解**: 传统 MLOps 监控漂移就够，LLM 应用要监控语义级失败——幻觉、毒性、PII 泄露、越狱，还要能在多步调用链里定位失败点。
 

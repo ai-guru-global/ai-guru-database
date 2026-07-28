@@ -30,9 +30,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-25
 sources: []
+name_zh: "大模型预训练"
 ---
 
 # 大模型预训练（Pre-training）
+
+> 中文简称：大模型预训练
 
 ## 一句话总结
 

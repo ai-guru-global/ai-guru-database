@@ -34,9 +34,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "K8s 上的 LLM 工作负载"
 ---
 
 # K8s 上的 LLM 工作负载
+
+> 中文简称：K8s 上的 LLM 工作负载
 
 > **一句话理解**:LLM 训练和推理在 K8s 上的"标准部署模板"——KubeRay 处理分布式训练(动态扩缩),Training Operator 处理传统训练(PyTorchJob/TFJob),vLLM Operator + LeaderWorkerSet 处理 LLM 推理(P/D 分离 + 弹性)。
 

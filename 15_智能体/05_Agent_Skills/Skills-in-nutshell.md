@@ -11,8 +11,11 @@ aliases:
   - "Skills in nutshell"
 sources: []
 
+name_zh: "Agent Skills 书写速览"
 ---
 # Agent Skills 书写速览
+
+> 中文简称：Agent Skills 书写速览
 
 > 一句话：**Agent Skills = 一个包含 `SKILL.md` 的文件夹**，用 Markdown 告诉 AI Agent 什么场景下该做什么、怎么做。
 

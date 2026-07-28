@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "杨植麟"
+name_en: "Zhilin Yang"
 ---
 
 # Zhilin Yang
+
+> 中文简称：杨植麟 ｜ English Name: Zhilin Yang
 
 杨植麟是月之暗面创始人，Transformer-XL 和 XLNet 共同发明人，29 岁创业，坚信长上下文是通往 AGI 的关键，打造了 Kimi 这款改变中国 AI 格局的产品。
 

@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "语音 Agent"
 ---
 # 语音 Agent (Voice Agents)
+
+> 中文简称：语音 Agent
 
 ## 1. 概述
 

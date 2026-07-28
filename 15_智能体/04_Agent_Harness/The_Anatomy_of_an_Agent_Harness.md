@@ -25,7 +25,10 @@ aliases:
   - The_Anatomy_of_an_Agent_Harness
 sources: []
 
+name_zh: "智能体 Harness 解剖"
 ---
+> 中文简称：智能体 Harness 解剖
+
 ## TLDR
 
 Agent = Model + Harness. Harness engineering is how we build systems around models to turn them into work engines. The model contains the intelligence and the harness makes that intelligence useful.

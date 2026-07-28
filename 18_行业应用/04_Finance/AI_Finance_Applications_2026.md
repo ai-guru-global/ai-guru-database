@@ -14,8 +14,11 @@ aliases:
   - "AI Finance Applications 2026"
   - AI_Finance_Applications_2026
 
+name_zh: "AI 金融应用场景深度解析"
 ---
 # AI 金融应用场景深度解析
+
+> 中文简称：AI 金融应用场景深度解析
 
 > **一句话理解**: AI 在金融领域的核心应用:智能投顾、风控、反欺诈、量化交易、合规审查等场景的技术方案与落地实践。
 

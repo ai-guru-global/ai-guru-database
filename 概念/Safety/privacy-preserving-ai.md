@@ -20,9 +20,12 @@ lifecycle_changed: 2026-07-21
 created: 2026-07-21
 updated: 2026-07-21
 tier: supporting
+name_zh: "隐私保护 AI"
 ---
 
 # 隐私保护 AI
+
+> 中文简称：隐私保护 AI
 
 > 一句话理解：在保护数据隐私的前提下训练和使用 AI 模型的技术体系。
 

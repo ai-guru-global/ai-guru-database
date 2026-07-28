@@ -11,8 +11,11 @@ aliases:
   - Metrics_Collection
 sources: []
 
+name_zh: "指标采集方法"
 ---
 # Metrics Collection
+
+> 中文简称：指标采集方法
 
 > Automated and manual methods for collecting evaluation metrics
 

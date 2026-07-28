@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-25
 sources: []
+name_zh: "分布式训练"
+name_en: "Distributed Training"
 ---
 
 # Distributed Training
+
+> 中文简称：分布式训练 ｜ English Name: Distributed Training
 
 This page indexes the contents of `07_模型训练/04_Distributed_Training`.
 

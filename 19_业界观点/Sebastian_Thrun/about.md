@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Sebastian Thrun 简介"
 ---
 # Sebastian Thrun 简介 (Sebastian Thrun)
+
+> 中文简称：Sebastian Thrun 简介
 
 ## 一句话概括
 

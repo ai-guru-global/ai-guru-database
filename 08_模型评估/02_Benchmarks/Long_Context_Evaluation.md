@@ -11,8 +11,11 @@ aliases:
   - Long_Context_Evaluation
 sources: []
 
+name_zh: "长上下文评测深度解析"
 ---
 # 长上下文评测深度解析
+
+> 中文简称：长上下文评测深度解析
 
 ## 一句话理解
 

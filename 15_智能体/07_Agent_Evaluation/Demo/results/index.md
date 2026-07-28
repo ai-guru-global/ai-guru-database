@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "评估结果"
+name_en: "results"
 ---
 
 # Results
+
+> 中文简称：评估结果 ｜ English Name: results
 
 评估结果（evaluation results）— 存储评估运行的 JSON 输出，包含逐条得分、汇总统计与排名数据。
 

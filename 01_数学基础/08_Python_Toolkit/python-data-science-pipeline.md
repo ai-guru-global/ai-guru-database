@@ -22,8 +22,11 @@ aliases:
   - "Python Data Science Pipeline"
   - "python data science pipeline"
 
+name_zh: "Python 基础 × 数据科学: AI 入门者的完整工具链"
 ---
 # Python 基础 × 数据科学: AI 入门者的完整工具链
+
+> 中文简称：Python 基础 × 数据科学: AI 入门者的完整工具链
 
 ## The Connection
 

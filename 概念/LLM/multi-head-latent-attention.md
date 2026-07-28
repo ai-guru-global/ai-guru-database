@@ -35,8 +35,11 @@ aliases:
   - "Multi Head Latent Attention"
   - "multi head latent attention"
 
+name_zh: "多头潜在注意力"
 ---
 # Multi-head Latent Attention (MLA)
+
+> 中文简称：多头潜在注意力
 
 ## 大白话
 

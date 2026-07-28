@@ -12,9 +12,13 @@ aliases:
 sources:
   - "https://darioamodei.com/machines-of-loving-grace"
   - "https://www.anthropic.com/"
+name_zh: "Dario Amodei 人物索引"
+name_en: "Dario Amodei"
 ---
 
 # Dario Amodei 人物索引
+
+> 中文简称：Dario Amodei 人物索引 ｜ English Name: Dario Amodei
 
 > **一句话概括**: Anthropic 联合创始人兼 CEO，前 OpenAI 研究副总裁——以"安全优先"的 AI 研发哲学挑战行业巨头，开创 Constitutional AI 对齐范式，重新定义了前沿 AI 实验室的责任边界。
 

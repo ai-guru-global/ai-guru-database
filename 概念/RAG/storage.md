@@ -18,9 +18,12 @@ relationships:
   - target: "概念/distributed-filesystem"
     type: includes
 sources: []
+name_zh: "存储"
 ---
 
 # Storage（存储）
+
+> 中文简称：存储
 
 > **一句话理解**: 存储 = AI 数据的「家」——训练数据、模型、Checkpoint、日志都需要合适的存储来放。
 

@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "事故管理"
 ---
 # 事故管理 (Incident Management)
+
+> 中文简称：事故管理
 
 ## 1. 事故分级
 
@@ -122,7 +125,7 @@ POSTMORTEM_TEMPLATE = {
 ## 6. 交叉引用
 
 - [[13_运维/|运维]]
-- [[13_运维/Cost_Operations/|成本运营]]
+- [[13_运维/05_Cost_Management/Cost_Operations|成本运营]]
 - [[12_架构基建/|架构基建]]
 - [[11_模型运维/|模型运维]]
 - [[概念/General/incident-response|事故响应]]

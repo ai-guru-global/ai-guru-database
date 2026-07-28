@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "云运维工程师"
+name_en: "Cloud Ops Engineer"
 ---
 
 # Cloud Ops Engineer
+
+> 中文简称：云运维工程师 ｜ English Name: Cloud Ops Engineer
 
 云运维工程师 — 管理 AI 平台的云基础设施（cloud infrastructure），涵盖 K8s、GPU 集群、监控告警与成本优化。
 
@@ -205,3 +209,7 @@ tags: [auto-index]
 - [ ] 了解目标公司和岗位的具体要求
 - [ ] 准备好向面试官提问的问题清单
 - [ ] 薪资期望已基于市场调研确定
+
+## 相关文档
+
+- [[21_面试岗位/Cloud_Ops_Engineer/question_bank|云运维工程师题库]]

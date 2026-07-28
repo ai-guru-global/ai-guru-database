@@ -14,6 +14,7 @@ aliases:
 updated: 2026-06-30
 summary: "MCP 协议集成指南 — 专题文档"
 sources: []
+name_zh: "MCP 协议集成指南"
 ---
 title: [[概念/ai-agents|MCP]] 协议集成指南
 description: '# MCP 协议集成指南'
@@ -51,6 +52,8 @@ k8s_versions:
 - '1.32'
 ---
 # MCP 协议集成指南
+
+> 中文简称：MCP 协议集成指南
 
 > **文档类型**: 集成指南 | **最后更新**: 2026-03 | **关键词**: OpenCode, MCP, Model Context Protocol, Local MCP, Remote MCP, OAuth, Per-Agent MCP, Sentry, Linear
 

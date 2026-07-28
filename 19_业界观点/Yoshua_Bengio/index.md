@@ -13,9 +13,13 @@ sources:
   - "https://www.nature.com/articles/nature14539"
   - "https://lawzero.org/"
   - "https://futureoflife.org/open-letter/pause-giant-ai-experiments/"
+name_zh: "Yoshua Bengio 人物索引"
+name_en: "Yoshua Bengio"
 ---
 
 # Yoshua Bengio 人物索引
+
+> 中文简称：Yoshua Bengio 人物索引 ｜ English Name: Yoshua Bengio
 
 > **一句话概括**: 蒙特利尔大学教授、Mila 魁北克 AI 研究院创始人与科学主任、2018 年图灵奖得主（与 [[19_业界观点/Geoffrey_Hinton/about|Hinton]]、[[19_业界观点/Yann_LeCun/about|LeCun]] 共获）——深度学习理论与序列建模的奠基人之一，培养了大批顶尖学者。近年来成为全球 AI 安全与治理最积极的倡导者之一，2025 年创立 LawZero 基金会，专注 AI 安全研究。
 
@@ -164,6 +168,7 @@ Yoshua Bengio 是深度学习理论的奠基人。他在 2000 年代初发表了
 - [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
 - [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
 - [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/Yoshua_Bengio/Yoshua_Bengio_2026_Update\|2026 动态更新]]
 - [[19_业界观点/index\|业界观点首页]]
 
 ---

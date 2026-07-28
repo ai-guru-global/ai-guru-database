@@ -7,6 +7,7 @@ summary: "> **一句话理解**: Falco 是 CNCF Incubating 的运行时安全检
 created: "2026-06-16"
 updated: "2026-06-16"
 sources: []
+name_zh: "Falco 深度解析: 容器运行时安全检测"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -14,6 +15,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # Falco 深度解析：容器运行时安全检测
+
+> 中文简称：Falco 深度解析: 容器运行时安全检测
 
 > **一句话理解**: Falco 是 CNCF Incubating 的运行时安全检测工具，通过 eBPF 或内核模块监控系统调用和 K8s 审计日志，发现容器逃逸、权限提升、敏感文件访问等运行时威胁。
 

@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "Agent 论文精读"
 ---
 # Agent 论文精读 (Agent Papers)
+
+> 中文简称：Agent 论文精读
 
 ## 1. 论文列表
 
@@ -99,8 +102,8 @@ ReAct:
 ## 5. 交叉引用
 
 - [[20_论文精读/|论文精读]]
-- [[20_论文精读/Multimodal/|多模态论文]]
-- [[20_论文精读/Reasoning_Papers/|推理论文]]
+- [[20_论文精读/08_Vision/index|多模态论文]]
+- [[20_论文精读/11_Domain_Surveys/Reasoning_Papers|推理论文]]
 - [[15_智能体/|智能体]]
 - [[06_强化学习/04_RL_Applications/RL_for_LLM_Reasoning|RL 推理]]
 

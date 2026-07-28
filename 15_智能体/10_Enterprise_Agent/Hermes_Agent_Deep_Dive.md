@@ -11,8 +11,11 @@ aliases:
   - Hermes_Agent_Deep_Dive
 sources: []
 
+name_zh: "Hermes Agent: 面向企业级的 AI Agent 运行时框架"
 ---
 # Hermes Agent: 面向企业级的 AI Agent 运行时框架
+
+> 中文简称：Hermes Agent: 面向企业级的 AI Agent 运行时框架
 
 > **一句话理解**: Hermes Agent 是专为生产环境设计的企业级 Agent 运行时框架，以安全、可靠、可审计为核心，提供完整的生命周期管理、权限控制和合规保障。
 

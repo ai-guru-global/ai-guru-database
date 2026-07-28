@@ -10,8 +10,11 @@ aliases:
   - Contributing
 sources: []
 
+name_zh: "贡献指南"
 ---
 # Contributing to AI Guru
+
+> 中文简称：贡献指南
 
 We welcome contributions!
 

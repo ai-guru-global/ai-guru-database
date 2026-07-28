@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: core
+name_zh: "HuggingFace 轻量级 Agent 框架"
 ---
 
 # SmolAgents
+
+> 中文简称：HuggingFace 轻量级 Agent 框架
 
 [SmolAgents](https://github.com/huggingface/smolagents)（原名 `smolagents`）是 HuggingFace 开源的**轻量级 Agent 框架**，核心代码仅约 1000 行。它的最大创新是引入了 **CodeAgent** 范式——Agent 通过编写 Python 代码（而非 JSON）来调用工具，这使得工具调用更加灵活、可组合、可调试。
 

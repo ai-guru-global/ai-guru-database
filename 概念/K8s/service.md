@@ -18,9 +18,12 @@ relationships:
   - target: "概念/apsara-stack"
     type: related_to
 sources: []
+name_zh: "K8s 服务"
 ---
 
 # Service
+
+> 中文简称：K8s 服务
 
 > **一句话理解**: Service 是 Kubernetes 中为 Pod 提供稳定网络访问入口的抽象层，通过 Label Selector 把流量负载均衡到后端 Pod。
 

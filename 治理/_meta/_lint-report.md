@@ -3,9 +3,12 @@ title: Wiki Lint 报告
 type: meta
 updated: 2026-06-01T09:55:00.143817
 sources: []
+name_zh: "Wiki Lint 报告"
 ---
 
 # Wiki Lint 最终报告
+
+> 中文简称：Wiki Lint 报告
 
 **全库统计**: 738/739 页面已有 frontmatter (99%)
 **总 wikilink 数**: 2359 个入站链接

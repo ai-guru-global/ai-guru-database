@@ -12,8 +12,11 @@ aliases:
   - "Feature Registry"
 sources: []
 
+name_zh: "特征存储"
 ---
 # Feature Store (特征存储)
+
+> 中文简称：特征存储
 
 > **一句话定义**: Feature Store 是 ML 系统的"特征仓库"——将特征的定义、计算、存储和服务统一管理，确保训练和推理使用完全一致的特征（Training-Serving Consistency）。
 

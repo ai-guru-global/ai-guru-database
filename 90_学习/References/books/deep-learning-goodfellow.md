@@ -22,8 +22,11 @@ aliases:
   - "Deep Learning Goodfellow"
   - "deep learning goodfellow"
 
+name_zh: "深度学习花书"
 ---
 # Deep Learning
+
+> 中文简称：深度学习花书
 
 > **一句话理解**: 深度学习领域的"圣经"（花书），由 GAN 之父 Ian Goodfellow 与图灵奖得主 Yoshua Bengio 等撰写，以数学严谨性著称，是建立深度学习理论根基的最佳参考书。
 

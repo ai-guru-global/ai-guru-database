@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "事故响应"
+name_en: "Incident Response"
 ---
 
 # Incident Response
+
+> 中文简称：事故响应 ｜ English Name: Incident Response
 
 事件响应（Incident Response）— AI 系统的故障响应框架（response framework）、值班手册与事后复盘模板。
 

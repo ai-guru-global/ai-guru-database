@@ -11,8 +11,11 @@ aliases:
   - Chinchilla_Deep_Dive
 sources: []
 
+name_zh: "Training Compute-Optimal Large Language"
 ---
 # Training Compute-Optimal Large Language Models (Chinchilla) 深度解读
+
+> 中文简称：Training Compute-Optimal Large Language
 
 > **一句话理解**: Chinchilla 就像告诉你"与其买大房子住一半房间，不如买小房子住满每个房间"——给定预算，小模型+多数据 > 大模型+少数据
 

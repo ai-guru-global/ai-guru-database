@@ -26,9 +26,12 @@ provenance:
 base_confidence: 0.90
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "OpenAI 与 GPT 系列"
 ---
 
 # OpenAI 与 GPT 系列
+
+> 中文简称：OpenAI 与 GPT 系列
 
 ## 核心要点
 

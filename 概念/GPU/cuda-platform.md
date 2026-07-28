@@ -25,9 +25,12 @@ aliases:
   - "CUDA"
   - "Compute Unified Device Architecture"
   - "CUDA 并行计算"
+name_zh: "CUDA 计算平台"
 ---
 
 # CUDA 计算平台 (CUDA Platform)
+
+> 中文简称：CUDA 计算平台
 
 > 所有深度学习框架的基石——NVIDIA 花了 20 年构建的 GPU 计算护城河。
 

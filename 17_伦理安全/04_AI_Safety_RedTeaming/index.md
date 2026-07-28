@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-25
 sources: []
+name_zh: "AI 安全红队"
+name_en: "AI Safety RedTeaming"
 ---
 
 # AI Safety & Red Teaming
+
+> 中文简称：AI 安全红队 ｜ English Name: AI Safety RedTeaming
 
 AI 安全与红队测试 — 通过对抗性测试发现模型漏洞，评估和提升 AI 系统安全性。
 

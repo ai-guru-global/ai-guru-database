@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-23
 sources: []
 tags: [visualization, index, navigation]
+name_zh: "可视化"
+name_en: "Visualization"
 ---
 
 # 可视化（Visualization）
+
+> 中文简称：可视化 ｜ English Name: Visualization
 
 > **一句话理解**: 可视化章节是 AI 知识库的"眼睛"——把训练、评估、系统三类过程与结果，用图表、仪表盘与交互式视图呈现出来，让模型行为可观测、可解释、可决策。
 
@@ -197,8 +201,12 @@ flowchart LR
 - [[11_模型运维/index|模型运维]] — 仪表盘与告警的运维上下文
 - [[09_测试/02_Testing_Frameworks/Weights_Biases_Deep_Dive|Weights & Biases]] — 实验追踪工具
 - [[03_深度学习/index|深度学习]] — 注意力/嵌入/降维的理论基础
-- [[治理/Best_Practices|治理最佳实践]] — 跨章节最佳实践参考
+- [[94_可视化/Best_Practices|治理最佳实践]] — 跨章节最佳实践参考
 
 ---
 
 *Last updated: 2026-07-23*
+
+## 相关文档
+
+- [[94_可视化/Visualization-in-nutshell|AI 可视化速览 (nutshell)]]

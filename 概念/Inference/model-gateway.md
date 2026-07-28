@@ -27,8 +27,11 @@ aliases:
   - "Model Gateway"
   - "model gateway"
 
+name_zh: "模型网关"
 ---
 # 模型网关 (Model Gateway)
+
+> 中文简称：模型网关
 
 ## 1. 定义
 

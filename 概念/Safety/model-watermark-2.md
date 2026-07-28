@@ -32,9 +32,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "AI 内容水印 2.0"
 ---
 
 # AI 内容水印 2.0
+
+> 中文简称：AI 内容水印 2.0
 
 > **一句话理解**:AI 内容水印 2.0 把"AI 生成内容"打上不可见标签——Google SynthID 嵌入图像 / 音频 / 视频, C2PA Content Credentials 提供"内容凭证", 文本水印用统计偏差嵌入。是 EU AI Act 强制要求,深度伪造监管、版权保护、新闻溯源的事实标准。
 

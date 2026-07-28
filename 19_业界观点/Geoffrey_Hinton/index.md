@@ -13,9 +13,13 @@ sources:
   - "https://www.nature.com/articles/323533a0"
   - "https://www.nytimes.com/2023/05/01/technology/geoffrey-hinton-google-artificial-intelligence.html"
   - "https://www.cs.toronto.edu/~hinton/"
+name_zh: "Geoffrey Hinton 人物索引"
+name_en: "Geoffrey Hinton"
 ---
 
 # Geoffrey Hinton 人物索引
+
+> 中文简称：Geoffrey Hinton 人物索引 ｜ English Name: Geoffrey Hinton
 
 > **一句话概括**: "深度学习教父"、2018 年图灵奖得主（与 [[19_业界观点/Yann_LeCun/about|LeCun]]、[[19_业界观点/Yoshua_Bengio/about|Bengio]] 共获）、多伦多大学荣休教授——反向传播算法的早期推广者、深度信念网络与 Capsule Network 的发明者，2023 年因对 AI 安全的深切担忧而从 Google 辞职，成为 AI 风险警告的标志性人物。
 
@@ -181,6 +185,7 @@ Hinton 与 [[19_业界观点/Yann_LeCun/about|LeCun]] 在三个问题上分歧�
 - [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
 - [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
 - [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/Geoffrey_Hinton/Geoffrey_Hinton_2026_Update\|2026 动态更新]]
 - [[19_业界观点/index\|业界观点首页]]
 
 ---

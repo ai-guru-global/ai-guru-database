@@ -12,8 +12,11 @@ aliases:
   - "llm nlp"
 sources: []
 
+name_zh: "LLM 与 NLP 的融合与演进"
 ---
 # LLM 与 NLP 的融合与演进
+
+> 中文简称：LLM 与 NLP 的融合与演进
 
 ## The Connection
 
@@ -158,7 +161,7 @@ response = client.chat.completions.create(
 - [[概念/tokenization]]
 - [[概念/prompt-engineering]]
 - [[05_大模型/01_LLM_Fundamentals/ApacheCN_NLP_Track|ApacheCN NLP 学习路径]]
-- [[05_大模型/RAG_Frameworks/RAG_Frameworks|RAG 框架]]
+- [[14_RAG系统/06_RAG_Frameworks/index|RAG 框架]]
 
 ## 总结
 

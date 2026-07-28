@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "Agent 评估框架"
 ---
 # Agent 评估框架
+
+> 中文简称：Agent 评估框架
 
 ## 1. Agent 评估挑战
 

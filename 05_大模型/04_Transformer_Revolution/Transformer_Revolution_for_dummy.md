@@ -12,8 +12,11 @@ aliases:
   - Transformer_Revolution_for_dummy
 sources: []
 
+name_zh: "Transformer 革命 - 小白版"
 ---
 # Transformer 革命 - 小白版
+
+> 中文简称：Transformer 革命 - 小白版
 
 > **一句话秒懂**: Transformer 把"排队一个个发言"变成"全班一起讨论"——每个词都能同时关注其他所有词,这让 ChatGPT 成为可能!
 

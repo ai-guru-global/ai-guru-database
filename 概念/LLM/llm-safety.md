@@ -17,9 +17,12 @@ updated: 2026-07-21
 aliases:
   - "Llm Safety"
   - "llm safety"
+name_zh: "LLM 安全"
 ---
 
 # LLM 安全
+
+> 中文简称：LLM 安全
 
 ## 核心要点
 

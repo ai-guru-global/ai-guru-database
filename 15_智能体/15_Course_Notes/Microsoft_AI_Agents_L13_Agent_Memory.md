@@ -28,8 +28,11 @@ aliases:
   - "Microsoft AI Agents L13 Agent Memory"
   - Microsoft_AI_Agents_L13_Agent_Memory
 
+name_zh: "L13 Agent 记忆：七种记忆类型、Mem0/Cognee/Azure AI"
 ---
 # L13 Agent 记忆：七种类型与三大实现
+
+> 中文简称：L13 Agent 记忆：七种记忆类型、Mem0/Cognee/Azure AI
 
 > 来源：[Microsoft AI Agents for Beginners / 13-agent-memory](https://github.com/microsoft/ai-agents-for-beginners/tree/main/13-agent-memory)
 

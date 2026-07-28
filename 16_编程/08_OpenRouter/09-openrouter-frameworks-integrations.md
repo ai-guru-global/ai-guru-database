@@ -14,6 +14,7 @@ aliases:
 updated: 2026-06-30
 summary: "框架集成与生态系统 — 专题文档"
 sources: []
+name_zh: "框架集成与生态系统"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -56,6 +57,8 @@ k8s_versions:
 - '1.32'
 ---
 # 框架集成与生态系统
+
+> 中文简称：框架集成与生态系统
 
 > **文档类型**: 集成指南 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Frameworks, OpenAI SDK, LangChain, Vercel AI, LlamaIndex, Mastra, PydanticAI, Aider, Cline
 

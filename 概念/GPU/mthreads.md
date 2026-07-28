@@ -17,9 +17,12 @@ relationships:
   - target: "概念/musa"
     type: uses
 sources: []
+name_zh: "摩尔线程"
 ---
 
 # Moore Threads（摩尔线程）
+
+> 中文简称：摩尔线程
 
 > **一句话理解**: 摩尔线程是国产 GPU 厂商，既做游戏/图形卡，也做 AI 推理卡，特点是图形和 AI 算力能兼顾。
 

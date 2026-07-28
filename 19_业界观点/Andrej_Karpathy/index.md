@@ -12,9 +12,13 @@ aliases:
 sources:
   - "https://karpathy.medium.com/software-2-0-a64152b37c35"
   - "https://github.com/karpathy/nanoGPT"
+name_zh: "Andrej Karpathy 人物索引"
+name_en: "Andrej Karpathy"
 ---
 
 # Andrej Karpathy 人物索引
+
+> 中文简称：Andrej Karpathy 人物索引 ｜ English Name: Andrej Karpathy
 
 > **一句话概括**: 前 Tesla AI 总监（2017-2022）、OpenAI 创始成员（2015-2017, 2023-2024）、知名 AI 教育者——"Software 2.0"概念提出者、"Vibe Coding"术语首创者，Stanford CS231n 课程的缔造者，将自动驾驶、大模型和深度学习教育融为一体，是全球最具影响力的 AI 实践型布道者之一。
 
@@ -161,6 +165,7 @@ Karpathy 的独特之处是**横跨研究、工程、教育三界**。参见 [[1
 - [[19_业界观点/Fei_Fei_Li/about\|Fei-Fei Li]] · [[19_业界观点/Elon_Musk/about\|Elon Musk]]
 - [[19_业界观点/Andrew_Ng/about\|Andrew Ng]] · [[19_业界观点/3Blue1Brown/about\|3Blue1Brown]]
 - [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
+- [[19_业界观点/Andrej_Karpathy/Andrej_Karpathy_2026_Update\|2026 动态更新]]
 - [[19_业界观点/index\|业界观点首页]]
 
 ---

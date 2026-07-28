@@ -14,8 +14,11 @@ aliases:
   - "lightgbm overview"
   - lightgbm_overview
 
+name_zh: "LightGBM 概览"
 ---
 # LightGBM 概览
+
+> 中文简称：LightGBM 概览
 
 > **一句话理解**: 微软出品的高性能 GBDT 框架，训练速度快、内存占用低
 

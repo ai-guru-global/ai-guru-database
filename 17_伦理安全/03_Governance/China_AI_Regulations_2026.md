@@ -11,9 +11,12 @@ aliases:
   - "中国AI监管法规"
   - China_AI_Regulations_2026
 sources: []
+name_zh: "中国AI治理法规 2026"
 ---
 
 # 中国AI治理法规 2026
+
+> 中文简称：中国AI治理法规 2026
 
 > **一句话理解**: 中国采用"小切口、分场景"的AI监管模式，以生成式AI管理办法、算法备案制度、深度合成标注规则为核心，叠加数据安全法与个人信息保护法，形成全球最细化的AI内容监管体系，企业需完成算法备案、大模型备案、内容标注三重合规。
 
@@ -590,17 +593,17 @@ AI数据跨境合规路径:
 
 ## 11. 相关概念
 
-- [[EU AI Act实施指南]] — 欧盟AI法案对比参考
-- [[AI治理与合规2026]] — 全球AI监管全景
-- [[GDPR]] — 欧盟数据保护(跨境数据参考)
-- [[深度伪造安全]] — 深度合成技术治理
-- [[AI伦理基础]] — AI伦理理论框架
-- [[算法偏见与公平性]] — 算法公平性
-- [[联邦学习]] — 数据不出境的AI训练方案
-- [[AI安全红队测试]] — 模型安全评估方法
-- [[AI版权与知识产权]] — 训练数据版权问题
-- [[自主武器AI伦理]] — AI军事应用治理
-- [[NIST AI RMF]] — 美国AI风险管理框架
+- [[17_伦理安全/03_Governance/EU_AI_Act_Implementation_2026|EU AI Act实施指南]] — 欧盟AI法案对比参考
+- [[17_伦理安全/03_Governance/AI_Governance_Compliance_2026|AI治理与合规2026]] — 全球AI监管全景
+- [[概念/Safety/privacy-preserving-ai|GDPR]] — 欧盟数据保护(跨境数据参考)
+- [[17_伦理安全/09_Deepfake_Security/Deepfake_Security|深度伪造安全]] — 深度合成技术治理
+- [[17_伦理安全/01_Ethics_Fundamentals/AI_Ethics_Safety_Future|AI伦理基础]] — AI伦理理论框架
+- [[17_伦理安全/01_Ethics_Fundamentals/Bias_Fairness_Testing|算法偏见与公平性]] — 算法公平性
+- [[17_伦理安全/11_Federated_Learning/Federated_Learning_Deep_Dive|联邦学习]] — 数据不出境的AI训练方案
+- [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Red_Teaming_Guide|AI安全红队测试]] — 模型安全评估方法
+- [[17_伦理安全/01_Ethics_Fundamentals/AI_Copyright_IP_2026|AI版权与知识产权]] — 训练数据版权问题
+- [[17_伦理安全/01_Ethics_Fundamentals/Autonomous_Weapons_AI_Ethics|自主武器AI伦理]] — AI军事应用治理
+- [[概念/Safety/ai-risk-assessment|NIST AI RMF]] — 美国AI风险管理框架
 
 ---
 

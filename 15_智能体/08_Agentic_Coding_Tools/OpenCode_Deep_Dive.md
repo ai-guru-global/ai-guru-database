@@ -12,12 +12,15 @@ aliases:
   - OpenCode_Deep_Dive
 sources: []
 
+name_zh: "OpenCode: 自主执行式 AI 编程 Agent"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # OpenCode: 自主执行式 AI 编程 Agent
+
+> 中文简称：OpenCode: 自主执行式 AI 编程 Agent
 
 > **一句话理解**: OpenCode 是一款基于多模型协作的自主执行式 AI 编程 Agent，能够直接操作文件系统、执行命令、浏览代码库，实现从任务描述到代码实现的全自动闭环。
 

@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "数据工程师"
+name_en: "Data Engineer"
 ---
 
 # Data Engineer
+
+> 中文简称：数据工程师 ｜ English Name: Data Engineer
 
 数据工程师 — 构建 AI 平台的数据基础设施（data infrastructure），涵盖 ETL 管线、数据质量、特征存储与数据治理。
 

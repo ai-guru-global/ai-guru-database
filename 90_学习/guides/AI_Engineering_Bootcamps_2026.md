@@ -16,8 +16,11 @@ sources:
   - "https://www.deeplearning.ai/"
   - "https://cs229.stanford.edu/"
 
+name_zh: "AI 工程训练营指南 2026"
 ---
 # AI 工程训练营指南 2026 (AI Engineering Bootcamps Guide)
+
+> 中文简称：AI 工程训练营指南 2026
 
 > **一句话理解**: 训练营就像健身房的"私教课"——相比自学（自己摸索器械），训练营提供结构化课程、实战项目与社区氛围，能在短期内高强度建立技能。但私教课不能替你长肌肉，训练营的价值最终取决于你的投入与后续实践。
 

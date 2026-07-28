@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "伦理基础"
+name_en: "Ethics Fundamentals"
 ---
 
 # Ethics Fundamentals
+
+> 中文简称：伦理基础 ｜ English Name: Ethics Fundamentals
 
 ## 文件导航
 

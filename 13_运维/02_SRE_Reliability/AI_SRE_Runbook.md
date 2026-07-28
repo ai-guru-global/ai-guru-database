@@ -10,9 +10,12 @@ aliases:
   - "AI SRE Runbook"
   - AI_SRE_Runbook
 sources: []
+name_zh: "AI 系统 SRE Runbook"
 ---
 
 # AI 系统 SRE Runbook (AI SRE Runbook)
+
+> 中文简称：AI 系统 SRE Runbook
 
 > **一句话理解**: AI 系统 SRE Runbook 是生产环境的"作战手册"——通过定义 SLO/SLI、容量规划、事故响应、模型回滚、灾备和可观测性体系，让 AI Infra 团队在面对 GPU 故障、模型异常和流量突增时能够按 playbook 稳定止损。
 

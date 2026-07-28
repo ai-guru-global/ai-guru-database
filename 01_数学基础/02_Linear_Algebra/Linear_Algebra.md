@@ -11,8 +11,11 @@ aliases:
   - Linear_Algebra
 sources: []
 
+name_zh: "线性代数"
 ---
 # 线性代数 (Linear Algebra)
+
+> 中文简称：线性代数
 
 > **一句话理解**: 线性代数是 AI 的"空间变换工具箱" —— 数据是向量，模型是矩阵，训练就是找到最佳的空间变换方式。
 

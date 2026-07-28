@@ -7,9 +7,12 @@ created: 2026-07-23
 updated: 2026-07-23
 tier: supporting
 sources: []
+name_zh: "MLOps Engineer 按公司/级别区分的题库"
 ---
 
 # MLOps Engineer 按公司/级别区分的题库
+
+> 中文简称：MLOps Engineer 按公司/级别区分的题库
 
 ---
 
@@ -141,4 +144,4 @@ sources: []
 - [[10_部署推理/index|部署推理]]
 - [[11_模型运维/06_CI_CD/index|CI/CD for ML]]
 - [[21_面试岗位/Interview_Guide/System_Design_for_AI|AI 系统设计面试]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]

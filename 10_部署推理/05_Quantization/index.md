@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "量化"
+name_en: "Quantization"
 ---
 
 # Quantization
+
+> 中文简称：量化 ｜ English Name: Quantization
 
 量化技术（Quantization）— INT8/INT4 量化、GPTQ、AWQ 与 HuggingFace 量化生态（quantization ecosystem）。
 

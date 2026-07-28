@@ -12,12 +12,15 @@ aliases:
   - LangChain_Deep_Dive
 sources: []
 
+name_zh: "LangChain: LLM 应用开发框架"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # LangChain: LLM 应用开发框架
+
+> 中文简称：LangChain: LLM 应用开发框架
 
 > **一句话理解**: LangChain 是 LLM 应用的"操作系统"——拼接大模型、提示词、记忆、工具、数据，构建复杂的 AI 应用。
 

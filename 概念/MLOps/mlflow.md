@@ -19,9 +19,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: core
+name_zh: "MLflow 实验追踪与模型管理"
 ---
 
 # MLflow 实验追踪与模型管理
+
+> 中文简称：MLflow 实验追踪与模型管理
 
 > **一句话理解**: MLflow 是"ML 实验的 Git"——追踪每次实验的参数/指标/产物，让 ML 研究可复现、可比较、可部署。
 

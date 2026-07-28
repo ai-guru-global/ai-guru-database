@@ -21,8 +21,11 @@ aliases:
   - "Anomaly Detection Automl"
   - "anomaly detection automl"
 
+name_zh: "异常检测 × AutoML — 自动化异常发现"
 ---
 # 异常检测 × AutoML — 自动化异常发现
+
+> 中文简称：异常检测 × AutoML — 自动化异常发现
 
 ## The Connection
 

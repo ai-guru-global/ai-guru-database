@@ -4,9 +4,12 @@ tags: [cheatsheet, llm-inference, decoding, kv-cache, quantization, flash-attent
 type: cheatsheet
 created: 2026-06-17
 sources: []
+name_zh: "LLM 推理技术速查表"
 ---
 
 # LLM 推理技术速查表
+
+> 中文简称：LLM 推理技术速查表
 
 > 推理三层次：**解码策略**(如何选词) -> **推理优化**(如何加速计算) -> **服务引擎**(如何高效调度)
 > 详见 [[LLM_Inference_Deep_Dive]] | [[LLM_Architecture_Evolution]] | [[AI_Reasoning_Models_Guide]]

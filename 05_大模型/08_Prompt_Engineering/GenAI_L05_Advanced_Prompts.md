@@ -15,7 +15,10 @@ aliases:
   - GenAI_L05_Advanced_Prompts
 sources: []
 
+name_zh: "高级提示技术"
 ---
+> 中文简称：高级提示技术
+
 ## 学习目标
 
 完成本课后，你将能够：

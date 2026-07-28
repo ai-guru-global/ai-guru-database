@@ -33,9 +33,12 @@ tier: core
 created: 2026-07-23
 updated: 2026-07-23
 sources: []
+name_zh: "Gemma / Google DeepMind 开源模型系列"
 ---
 
 # Gemma / Google DeepMind 开源模型系列
+
+> 中文简称：Gemma / Google DeepMind 开源模型系列
 
 > **一句话理解**:Google 把"造 Gemini 的方法论"下放给开源社区——Gemma 不是 Gemini 的开源版,而是用同样的研究规范(Responsible AI、数据治理、严格评估)训练出的"开放权重"对应物,让研究者和企业能用上"Google 品质的底座"。
 

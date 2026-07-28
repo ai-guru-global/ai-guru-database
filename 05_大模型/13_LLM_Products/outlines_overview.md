@@ -14,8 +14,11 @@ aliases:
   - "outlines overview"
   - outlines_overview
 
+name_zh: "Outlines 受控生成框架概览"
 ---
 # Outlines 受控生成框架概览
+
+> 中文简称：Outlines 受控生成框架概览
 
 > **一句话理解**: 通过正则表达式和 JSON Schema 约束 LLM 输出，特别适合本地模型的受控生成。
 
@@ -104,7 +107,7 @@ sentiment = choice_gen("I love this product!")
 - [[05_大模型/16_Constrained_Generation/Structured_Output_Guide|结构化输出指南]]
 - [[05_大模型/README|NLP & LLMs]]
 - [[概念/outlines|Outlines 概念卡片]]
-- [[概念/structured-output|结构化输出]]
+- [[概念/LLM/structured-output|结构化输出]]
 
 ## 总结
 
@@ -189,7 +192,7 @@ cfg_gen = outlines.generate.cfg(model, grammar)
 - [[05_大模型/16_Constrained_Generation/Structured_Output_Guide|结构化输出指南]]
 - [[05_大模型/README|NLP & LLMs]]
 - [[概念/outlines|Outlines 概念卡片]]
-- [[概念/structured-output|结构化输出]]
+- [[概念/LLM/structured-output|结构化输出]]
 - [[05_大模型/13_LLM_Products/instructor_overview|Instructor 概览]]
 - [[05_大模型/13_LLM_Products/chatgpt_overview|ChatGPT 概览]]
 

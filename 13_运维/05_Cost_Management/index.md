@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "成本管理"
+name_en: "Cost Management"
 ---
 
 # Cost Management
+
+> 中文简称：成本管理 ｜ English Name: Cost Management
 
 成本管理（Cost Management）— AI 平台的 FinOps 实践、GPU 成本优化与云资源治理（cloud resource governance）。
 

@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "Harness 配图"
+name_en: "the-anatomy-of-an-agent-harness.assets"
 ---
 
 # Agent Harness Assets
+
+> 中文简称：Harness 配图 ｜ English Name: the-anatomy-of-an-agent-harness.assets
 
 《The Anatomy of an Agent Harness》文章配图 — 包含架构图与流程图，辅助理解 Agent 运行时（runtime）结构、工具调用（tool calling）流程与循环控制（loop control）机制。
 

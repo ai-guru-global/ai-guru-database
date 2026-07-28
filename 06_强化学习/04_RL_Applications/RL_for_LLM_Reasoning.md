@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "RL 驱动 LLM 推理"
 ---
 # RL 驱动 LLM 推理
+
+> 中文简称：RL 驱动 LLM 推理
 
 ## 1. 推理 RL 的兴起
 
@@ -521,5 +524,5 @@ trainer.train()
 - [[06_强化学习/03_RLHF_Alignment/DPO_Variants_2026|DPO 变体]]
 - [[06_强化学习/03_RLHF_Alignment/Reward_Modeling_Deep_Dive|奖励模型]]
 - [[05_大模型/09_Reasoning_Models/|推理模型]]
-- [[03_深度学习/Continual_Learning/|持续学习]]
+- [[03_深度学习/09_Advanced_Topics/Continual_Learning|持续学习]]
 - [[06_强化学习/02_Deep_RL/Decision_Transformer|Decision Transformer]]

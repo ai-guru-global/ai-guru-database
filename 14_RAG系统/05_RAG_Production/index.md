@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "RAG 生产化"
+name_en: "RAG Production"
 ---
 
 # RAG Production
+
+> 中文简称：RAG 生产化 ｜ English Name: RAG Production
 
 ## 文件导航
 

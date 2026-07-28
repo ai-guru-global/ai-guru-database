@@ -14,8 +14,11 @@ aliases:
   - "catboost overview"
   - catboost_overview
 
+name_zh: "CatBoost 概览"
 ---
 # CatBoost 概览
+
+> 中文简称：CatBoost 概览
 
 > **一句话理解**: Yandex 出品的梯度提升框架，原生支持类别特征，无需额外编码
 

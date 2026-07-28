@@ -12,8 +12,11 @@ aliases:
   - LLM_Inference_Engine_Selection_Guide
 sources: []
 
+name_zh: "LLM 推理引擎选型指南"
 ---
 # LLM 推理引擎选型指南
+
+> 中文简称：LLM 推理引擎选型指南
 
 > **一句话理解**: 面向生产环境的 LLM 推理引擎选型指南——通过统一对比维度、场景决策树和成本模型，帮助你在 vLLM、SGLang、TensorRT-LLM、TGI、Groq、llama.cpp 等引擎中做出最优选择。
 

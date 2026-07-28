@@ -10,9 +10,12 @@ aliases:
   - "Deployment Runbook Template"
   - "ML Deployment Checklist"
 sources: []
+name_zh: "部署 Runbook 模板"
 ---
 
 # 部署 Runbook 模板 (Deployment Runbook Template)
+
+> 中文简称：部署 Runbook 模板
 
 > 标准化的 ML 模型部署 Runbook 模板——确保每次部署有据可依、有迹可查、可快速回滚。
 

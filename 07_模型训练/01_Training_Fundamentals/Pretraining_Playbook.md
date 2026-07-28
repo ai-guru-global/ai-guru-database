@@ -8,8 +8,11 @@ updated: 2026-07-25
 tier: supporting
 sources: []
 
+name_zh: "预训练实战手册"
 ---
 # 预训练实战手册 (Pretraining Playbook)
+
+> 中文简称：预训练实战手册
 
 ## 1. 训练前准备
 
@@ -262,12 +265,12 @@ FRAMEWORKS = {
 ## 6. 交叉引用
 
 - [[07_模型训练/04_Distributed_Training/|分布式训练]]
-- [[07_模型训练/Mixed_Precision_Training/|混合精度训练]]
-- [[07_模型训练/Training_Infrastructure/|训练基础设施]]
-- [[07_模型训练/Curriculum_Learning/|课程学习]]
+- [[07_模型训练/03_Optimization/Mixed_Precision_Training|混合精度训练]]
+- [[07_模型训练/04_Distributed_Training/Training_Infrastructure|训练基础设施]]
+- [[07_模型训练/02_Data/Curriculum_Learning|课程学习]]
 - [[07_模型训练/02_Data/|数据工程]]
 - [[07_模型训练/03_Optimization/|优化器]]
-- [[05_大模型/LLM_Training/|LLM 训练]]
+- [[07_模型训练/index|LLM 训练]]
 
 ## 7. 源码级实现要点（基于 code/llm-frameworks/ 归档）
 

@@ -24,8 +24,11 @@ updated: 2026-07-21
 aliases:
   - Prometheus
 
+name_zh: "监控告警系统"
 ---
 # Prometheus
+
+> 中文简称：监控告警系统
 
 > 云原生监控的「时间序列数据库」——拉取、存储、告警一体化。
 

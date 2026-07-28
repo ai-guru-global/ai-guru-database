@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-21
 sources: []
+name_zh: "大模型产品"
+name_en: "LLM Products"
 ---
 
 # LLM Products
+
+> 中文简称：大模型产品 ｜ English Name: LLM Products
 
 LLM 产品概览索引，覆盖主流 AI 助手、结构化输出工具和 AI 搜索引擎。
 
@@ -73,7 +77,7 @@ LLM 产品概览索引，覆盖主流 AI 助手、结构化输出工具和 AI �
 
 - [[05_大模型/14_Global_LLM_Ecosystem|全球 LLM 生态]]
 - [[05_大模型/08_Prompt_Engineering|提示词工程]]
-- [[概念/structured-output|结构化输出]]
+- [[概念/LLM/structured-output|结构化输出]]
 
 ## 统计
 

@@ -14,9 +14,12 @@ relationships:
   - target: "概念/pandas"
     type: related_to
 sources: []
+name_zh: "DataFrame 数据校验库"
 ---
 
 # Pandera
+
+> 中文简称：DataFrame 数据校验库
 
 > **一句话理解**: Pandera 是给 DataFrame 加「类型检查」的工具，让 Pandas 数据也能像静态类型一样被自动校验。
 

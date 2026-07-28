@@ -12,8 +12,11 @@ aliases:
   - AI_Concept_Knowledge_Graph
 sources: []
 
+name_zh: "AI 概念知识图谱"
 ---
 # AI 概念知识图谱
+
+> 中文简称：AI 概念知识图谱
 
 > AI 全链路概念之间的依赖关系与学习路径
 > 

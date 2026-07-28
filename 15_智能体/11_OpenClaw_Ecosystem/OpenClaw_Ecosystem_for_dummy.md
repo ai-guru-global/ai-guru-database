@@ -12,8 +12,11 @@ aliases:
   - OpenClaw_Ecosystem_for_dummy
 sources: []
 
+name_zh: "OpenClaw 生态入门"
 ---
 # OpenClaw Ecosystem for Beginners: Your AI Assistant That Actually Does Things
+
+> 中文简称：OpenClaw 生态入门
 
 ## What is OpenClaw? (The Simple Version)
 

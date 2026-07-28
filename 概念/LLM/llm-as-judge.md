@@ -25,9 +25,12 @@ provenance:
 base_confidence: 0.90
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "LLM 评判员"
 ---
 
 # LLM-as-Judge（LLM 评判员）
+
+> 中文简称：LLM 评判员
 
 ## 核心要点
 

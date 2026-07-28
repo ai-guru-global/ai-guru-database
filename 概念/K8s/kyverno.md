@@ -26,11 +26,14 @@ updated: 2026-07-21
 aliases:
   - Kyverno
 
+name_zh: "K8s 策略引擎"
 ---
 
 > **归档提示**: 此概念为通用云原生工具，与AI核心关联度较低。如需学习完整的K8s知识，请参考 CNCF 官方文档。
 
 # Kyverno
+
+> 中文简称：K8s 策略引擎
 
 > Kubernetes 的「YAML 策略守门员」——用 K8s 原生方式写策略，无需学 Rego。
 

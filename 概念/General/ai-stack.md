@@ -15,9 +15,12 @@ relationships:
   - target: "概念/ack"
     type: runs_on
 sources: []
+name_zh: "阿里云 AI Stack"
 ---
 
 # AI Stack
+
+> 中文简称：阿里云 AI Stack
 
 > **一句话理解**: AI Stack 是阿里云政企客户私有化部署 AI 的「一体机」，模型、训练、推理、监控开箱即用。
 

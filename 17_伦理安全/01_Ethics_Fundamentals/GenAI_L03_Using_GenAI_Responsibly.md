@@ -15,7 +15,10 @@ aliases:
   - GenAI_L03_Using_GenAI_Responsibly
 sources: []
 
+name_zh: "负责任地使用生成式人工智能"
 ---
+> 中文简称：负责任地使用生成式人工智能
+
 ## 学习目标
 
 完成本课后，你将了解：

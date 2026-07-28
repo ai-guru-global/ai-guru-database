@@ -7,9 +7,12 @@ created: 2026-07-23
 updated: 2026-07-23
 tier: core
 sources: []
+name_zh: "降维可视化深度解析"
 ---
 
 # 降维可视化深度解析 (Dimensionality Reduction Visualization)
+
+> 中文简称：降维可视化深度解析
 
 > **一句话理解**: 降维可视化把高维嵌入"压扁"到 2D/3D——用 PCA/t-SNE/UMAP 让你看清类别是否可分、簇是否合理、异常点在哪，是理解高维表征的第一工具。
 

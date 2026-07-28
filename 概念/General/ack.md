@@ -16,9 +16,12 @@ relationships:
   - target: "概念/apsara-stack"
     type: related_to
 sources: []
+name_zh: "阿里云容器服务"
 ---
 
 # ACK
+
+> 中文简称：阿里云容器服务
 
 > **一句话理解**: ACK 是阿里云把 Kubernetes 做成托管服务的产物，让用户不用自己维护控制平面，就能在云上跑容器和 AI 工作负载。
 

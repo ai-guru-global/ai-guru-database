@@ -13,8 +13,11 @@ aliases:
   - ModelScope_Model_Index
 sources: []
 
+name_zh: "ModelScope 全量模型索引"
 ---
 # ModelScope 全量模型索引 (ModelScope Model Index)
+
+> 中文简称：ModelScope 全量模型索引
 
 > **一句话理解**: 本页是 ModelScope 魔搭社区上 15 家中国大模型厂商全部 **1,621 个官方模型** 的完整索引——按厂商分组、按下载量排序，便于检索与选型。
 

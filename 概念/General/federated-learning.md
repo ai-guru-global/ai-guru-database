@@ -23,8 +23,11 @@ aliases:
   - "Federated Learning"
   - "federated learning"
 
+name_zh: "联邦学习"
 ---
 # 联邦学习 (Federated Learning)
+
+> 中文简称：联邦学习
 
 > 数据不动模型动——在隐私保护下实现多方协作训练。
 

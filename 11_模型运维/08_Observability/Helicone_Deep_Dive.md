@@ -11,12 +11,15 @@ aliases:
   - Helicone_Deep_Dive
 sources: []
 
+name_zh: "Helicone: LLM 可观测性平台"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Helicone: LLM 可观测性平台
+
+> 中文简称：Helicone: LLM 可观测性平台
 
 > **一句话理解**: Helicone 是 LLM 可观测性平台——请求追踪、成本分析、速率限制、提示词版本，开箱即用的 LLM 监控。
 

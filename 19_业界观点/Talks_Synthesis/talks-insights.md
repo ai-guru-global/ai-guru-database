@@ -10,8 +10,11 @@ aliases:
   - "talks insights"
 sources: []
 
+name_zh: "AI 领袖演讲与行业洞察"
 ---
 # AI 领袖演讲与行业洞察
+
+> 中文简称：AI 领袖演讲与行业洞察
 
 ## The Connection
 
@@ -201,7 +204,7 @@ AI 领袖的公开演讲和访谈不仅是个人观点的表达，更是行业�
 | 了解某位领袖 | 对应目录/about.md | ⭐ |
 | 查看核心语录 | 对应目录/sayings.md | ⭐ |
 | 横向对比观点 | 本文档 | ⭐⭐ |
-| 学术领袖专题 | Academic_Leaders/ | ⭐⭐ |
+| 学术领袖专题 | [[19_业界观点/Talks_Synthesis/Academic_Leaders_2026|Academic_Leaders_2026]] | ⭐⭐ |
 
 > 💡 理解AI领袖的观点分歧，比记住单一观点更重要。正是这些碰撞推动了AI的健康发展。
 

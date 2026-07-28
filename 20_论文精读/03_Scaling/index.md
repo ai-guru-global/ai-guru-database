@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "规模化论文"
+name_en: "Scaling"
 ---
 
 # Scaling
+
+> 中文简称：规模化论文 ｜ English Name: Scaling
 
 规模化论文精读 — 研究模型规模、数据量和计算量的 Scaling Laws，涵盖 GPT-3、Chinchilla 和 GPT-4。
 

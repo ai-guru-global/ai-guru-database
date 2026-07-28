@@ -31,9 +31,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "K8s AI GPU 算力调度"
 ---
 
 # K8s AI GPU 算力调度
+
+> 中文简称：K8s AI GPU 算力调度
 
 > **一句话理解**:K8s 上跑 AI 工作负载的"GPU 资源全栈"——从硬件驱动、调度器、资源分配模型、隔离级别到国产化方案,这套体系决定了你的 GPU 集群利用率是 20% 还是 80%。
 
@@ -272,4 +275,4 @@ spec:
 - [[概念/nvidia-gpu|Nvidia Gpu]]
 - [[概念/volcano|Volcano]]
 - [[概念/kserve|Kserve]]
-- [[概念/hpa|Horizontal Pod Autoscaler]]
+- [[概念/K8s/horizontal-pod-autoscaler|Horizontal Pod Autoscaler]]

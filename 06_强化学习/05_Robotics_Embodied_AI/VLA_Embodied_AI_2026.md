@@ -12,8 +12,11 @@ aliases:
   - VLA_Embodied_AI_2026
 sources: []
 
+name_zh: "VLA 具身智能 2026"
 ---
 # VLA 具身智能 2026
+
+> 中文简称：VLA 具身智能 2026
 
 > **TL;DR**: VLA (Vision-Language-Action) 模型 = 视觉编码器 + LLM 骨干 + 动作解码器，一个模型同时完成"看懂 → 理解 → 行动"。RT-2 开创范式，pi-0/OpenVLA 推动开源，2026 年 VLA 正在从实验室走向工厂级通用机器人。
 

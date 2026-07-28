@@ -12,8 +12,11 @@ aliases:
   - MoE_Theory
 sources: []
 
+name_zh: "混合专家模型理论"
 ---
 # 混合专家模型理论 (Mixture of Experts Theory)
+
+> 中文简称：混合专家模型理论
 
 > 从稀疏门控到万亿参数，系统解析 Mixture of Experts 的理论基础、工程实现与产业实践。
 

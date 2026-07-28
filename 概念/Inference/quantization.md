@@ -25,8 +25,11 @@ aliases:
   - "模型量化"
   - "LLM Quantization"
 
+name_zh: "量化"
 ---
 # Quantization（量化）
+
+> 中文简称：量化
 
 > 量化通过降低权重和激活的数值精度，减少显存占用和带宽消耗，从而加速推理。
 

@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "评估基础"
+name_en: "Evaluation Fundamentals"
 ---
 
 # Evaluation Fundamentals
+
+> 中文简称：评估基础 ｜ English Name: Evaluation Fundamentals
 
 ## 文件导航
 

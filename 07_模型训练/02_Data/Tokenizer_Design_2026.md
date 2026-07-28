@@ -11,8 +11,11 @@ aliases:
   - Tokenizer_Design_2026
 sources: []
 
+name_zh: "分词器设计"
 ---
 # Tokenizer Design for LLMs
+
+> 中文简称：分词器设计
 
 > **一句话理解**: Tokenizer 是 LLM 的"翻译入口"——就像人类阅读时需要把文字转化为大脑能理解的语义信号，LLM 需要通过 Tokenizer 将原始文本切割成离散的 token 序列，切分的质量直接决定了模型的表达能力、训练效率和多语言支持。
 

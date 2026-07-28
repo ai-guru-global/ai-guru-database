@@ -11,12 +11,15 @@ aliases:
   - Agentic_Benchmark_Guide
 sources: []
 
+name_zh: "Agentic Benchmarks — AI Agent 评测全景指南"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Agentic Benchmarks — AI Agent 评测全景指南
+
+> 中文简称：Agentic Benchmarks — AI Agent 评测全景指南
 
 > **一句话理解**: Agent 评测就像给 AI 安排一场"实习考核"——不是考它背了多少知识（标准 Benchmark），而是看它能不能在真实环境中独立完成工作：读需求、用工具、做决策、遇到错误能自救。
 

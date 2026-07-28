@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "张量并行注意力机制"
 ---
 
 # vLLM TP Attention (张量并行注意力)
+
+> 中文简称：张量并行注意力机制
 
 vLLM TP Attention 是 vLLM 推理引擎中实现**张量并行（Tensor Parallelism, TP）**的核心注意力分发机制。当模型过大无法装入单张 GPU（如 Llama-3-70B、Qwen-72B 等），TP Attention 将 Transformer 层中的 QKV 投影矩阵**切分到多张 GPU** 上并行计算，然后通过 AllReduce/AllGather 通信聚合结果。这是大模型多卡推理的**基础架构技术**。
 

@@ -5,9 +5,12 @@ category: agent-safety
 tags: [agent-security, prompt-injection, alignment, red-team, agi, legal, ethics]
 source: yeasy/agentic_ai_guide/11_future
 sources: []
+name_zh: "智能体安全、价值对齐与 AGI 路径"
 ---
 
 # 智能体安全、价值对齐与 AGI 路径
+
+> 中文简称：智能体安全、价值对齐与 AGI 路径
 
 > 一句话理解：安全不是"加个过滤器"，而是从输入验证到架构隔离的分层工程体系；对齐不是"写个好提示词"，而是让 AI 的目标与人类价值观字面一致、精神也一致。
 

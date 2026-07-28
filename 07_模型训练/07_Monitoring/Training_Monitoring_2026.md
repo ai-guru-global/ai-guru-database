@@ -11,8 +11,11 @@ aliases:
   - Training_Monitoring_2026
 sources: []
 
+name_zh: "训练监控与实验追踪"
 ---
 # Training Monitoring & Experiment Tracking 2026
+
+> 中文简称：训练监控与实验追踪
 
 > **一句话理解**: 训练监控与实验追踪是 AI 工程化的"黑匣子"，让每一次实验都可观测、可复现、可比较，从"炼丹"走向"科学"。
 

@@ -12,8 +12,11 @@ aliases:
   - AI_System_Architecture_2026
 sources: []
 
+name_zh: "AI 系统架构全景图"
 ---
 # AI 系统架构全景图 (AI System Architecture 2026)
+
+> 中文简称：AI 系统架构全景图
 
 > **一句话理解**: 系统架构全景图是 AI 系统的"设计蓝图"——展示从用户请求到模型响应的完整链路，帮助理解各组件如何协作、数据如何流动、系统如何扩展。
 

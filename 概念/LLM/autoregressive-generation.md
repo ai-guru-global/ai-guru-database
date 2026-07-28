@@ -28,9 +28,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "自回归生成"
 ---
 
 # 自回归生成（Autoregressive Generation）
+
+> 中文简称：自回归生成
 
 ## 一句话总结
 

@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "视频生成"
+name_en: "Video Generation"
 ---
 
 # Video Generation
+
+> 中文简称：视频生成 ｜ English Name: Video Generation
 
 视频生成（Video Generation）— 文生视频（text-to-video）、图生视频与视频编辑的扩散模型与生成架构。
 

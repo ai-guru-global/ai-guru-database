@@ -12,8 +12,11 @@ aliases:
   - Reasoning_Models_for_dummy
 sources: []
 
+name_zh: "推理模型小白指南"
 ---
 # 推理模型小白指南 (Reasoning Models for Dummy)
+
+> 中文简称：推理模型小白指南
 
 > **一句话理解**: 推理模型就像"会思考的 AI"——不像普通 AI 那样立刻回答，而是先在脑子里"演算草稿纸"，一步步想清楚再给你答案。
 
@@ -213,7 +216,7 @@ flowchart TB
 
 ## Related
 
-- [[05_大模型/09_Reasoning_Models/Reasoning_Models|推理模型总览]]
+- [[概念/LLM/reasoning-models|推理模型总览]]
 - [[05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models|o1 类推理模型]]
 - [[05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek-R1 技术分析]]
 - [[05_大模型/08_Prompt_Engineering/Prompt_Engineering|提示工程]]

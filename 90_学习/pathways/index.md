@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "学习路线"
+name_en: "pathways"
 ---
 
 # 学习路径
+
+> 中文简称：学习路线 ｜ English Name: pathways
 
 分岗位/方向的 AI 学习路径 — 针对不同角色提供定制化的学习路线。
 

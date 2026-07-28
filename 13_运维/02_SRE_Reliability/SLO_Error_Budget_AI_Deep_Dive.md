@@ -12,8 +12,11 @@ aliases:
   - SLO_Error_Budget_AI_Deep_Dive
 sources: []
 
+name_zh: "AI 系统 SLO 与错误预算深度指南 - 传统 SRE 如何适配 LLM"
 ---
 # AI 系统 SLO 与错误预算深度指南 - 传统 SRE 如何适配 LLM
+
+> 中文简称：AI 系统 SLO 与错误预算深度指南 - 传统 SRE 如何适配 LLM
 
 > **一句话理解**: 传统 SRE 的 SLO 只管"可用性"（请求成功了吗），但 AI 系统的 SLO 是"可用性+质量+成本"三元组——首 token 延迟决定体验、幻觉率决定可信、token 成本决定生存，三者用错误预算统一权衡，让发布决策从"拍脑袋"变成"看预算条"。
 

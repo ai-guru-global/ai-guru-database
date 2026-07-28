@@ -19,8 +19,11 @@ aliases:
   - "T Head PPU for dummy"
   - T_Head_PPU_for_dummy
 
+name_zh: "平头哥 PPU 大白话解读"
 ---
 # 平头哥 PPU 大白话解读
+
+> 中文简称：平头哥 PPU 大白话解读
 
 > **一句话理解**: 平头哥 PPU 就是阿里巴巴自己造的「AI 算力卡」，专门用来跑大模型，性能已经能跟英伟达 H20 掰手腕，而且已经大规模出货、服务几百家企业了。
 

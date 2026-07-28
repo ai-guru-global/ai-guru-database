@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "SGLang API 服务层"
 ---
 
 # SGLang Frontend
+
+> 中文简称：SGLang API 服务层
 
 SGLang Frontend 是 [SGLang](https://github.com/sgl-project/sglang) 推理引擎的 **API 服务层**，负责将底层高性能推理内核（RadixAttention、FlashInfer 等）封装为标准 HTTP/gRPC 接口，对外暴露 OpenAI 兼容 API、流式输出、Function Calling、Structured Output 等前端能力。它是 SGLang 从"研究原型"走向"生产服务"的关键桥梁。
 

@@ -11,8 +11,11 @@ aliases:
   - Vibe_Coding_Methodology
 sources: []
 
+name_zh: "Vibe Coding 方法论 2026 完整指南"
 ---
 # Vibe Coding 方法论 2026 完整指南
+
+> 中文简称：Vibe Coding 方法论 2026 完整指南
 
 > **一句话理解**: Vibe Coding 不是"让 AI 写代码"，而是一套以自然语言为驱动力、以人类判断力为核心的质量可控软件开发方法论——它重新定义了"程序员"的角色：从代码打字员变成系统架构师与代码审计师。
 

@@ -11,8 +11,11 @@ aliases:
   - Portkey_Deep_Dive
 sources: []
 
+name_zh: "Portkey: 企业级 AI Gateway"
 ---
 # Portkey: 企业级 AI Gateway
+
+> 中文简称：Portkey: 企业级 AI Gateway
 
 > **一句话理解**: Portkey 是企业级 AI Gateway——100+ 模型统一接入、智能路由、成本追踪、负载均衡，开箱即用的生产级 AI 基础设施。
 

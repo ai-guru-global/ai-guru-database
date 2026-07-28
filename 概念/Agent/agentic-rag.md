@@ -30,8 +30,11 @@ aliases:
   - "Agentic Rag"
   - "agentic rag"
 
+name_zh: "智能体化 RAG"
 ---
 # Agentic RAG
+
+> 中文简称：智能体化 RAG
 
 ## 核心要点
 

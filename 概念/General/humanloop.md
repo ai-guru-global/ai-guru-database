@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "LLM Prompt 工程与评估平台"
 ---
 
 # Humanloop
+
+> 中文简称：LLM Prompt 工程与评估平台
 
 [Humanloop](https://humanloop.com/) 是一个面向企业的 **LLM Prompt 工程与评估平台**，提供 Prompt 版本管理、A/B 测试、人类反馈收集和自动化评估的全流程工具。它解决的核心问题是：**Prompt 迭代是 AI 应用开发中最关键也最缺乏工具支持的环节**——Humanloop 将 Prompt 工程从"手工作坊"变成"工业化流水线"。
 

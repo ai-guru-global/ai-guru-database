@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "计算机视觉工程师"
+name_en: "Computer Vision Engineer"
 ---
 
 # Computer Vision Engineer
+
+> 中文简称：计算机视觉工程师 ｜ English Name: Computer Vision Engineer
 
 计算机视觉工程师 — 开发图像/视频理解、目标检测、图像生成等视觉 AI 系统。
 

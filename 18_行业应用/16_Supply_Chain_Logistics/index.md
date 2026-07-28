@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "供应链物流"
+name_en: "Supply Chain Logistics"
 ---
 
 # Supply Chain Logistics
+
+> 中文简称：供应链物流 ｜ English Name: Supply Chain Logistics
 
 ## 文件导航
 

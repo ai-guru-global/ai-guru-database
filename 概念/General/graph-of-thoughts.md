@@ -25,9 +25,12 @@ provenance:
 base_confidence: 0.85
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "思维图"
 ---
 
 # GoT（Graph of Thoughts）
+
+> 中文简称：思维图
 
 ## 核心要点
 

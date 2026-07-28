@@ -8,9 +8,12 @@ updated: 2026-06-24
 status: completed
 baseline: 治理/_concept-completion-2026-06-24.md (Round 1)
 sources: []
+name_zh: "概念页加强执行报告"
 ---
 
 # 概念页加强执行报告（2026-06-24 Round 2）
+
+> 中文简称：概念页加强执行报告
 
 > **执行日期**: 2026-06-24
 > **执行依据**: Round 1 完成后扫描发现的进一步改进空间

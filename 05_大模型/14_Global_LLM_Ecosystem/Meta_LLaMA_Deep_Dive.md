@@ -12,8 +12,11 @@ aliases:
   - Meta_LLaMA_Deep_Dive
 sources: []
 
+name_zh: "Meta LLaMA 深度技术解析：从 Dense 到 MoE 的开源 LLM"
 ---
 # Meta LLaMA 深度技术解析：从 Dense 到 MoE 的开源 LLM 进化之路
+
+> 中文简称：Meta LLaMA 深度技术解析：从 Dense 到 MoE 的开源 LLM
 
 > **一句话理解**: LLaMA 是 Meta 开源的 LLM 家族——就像 Android 之于手机行业，LLaMA 用开放权重策略让全世界都能站在巨人的肩膀上构建 AI 应用，从 7B 小模型一路进化到 10M 上下文的 MoE 巨兽。
 

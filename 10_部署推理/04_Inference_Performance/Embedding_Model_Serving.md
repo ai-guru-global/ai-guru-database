@@ -11,8 +11,11 @@ aliases:
   - Embedding_Model_Serving
 sources: []
 
+name_zh: "Embedding 与 Reranker 模型服务"
 ---
 # Embedding 与 Reranker 模型服务
+
+> 中文简称：Embedding 与 Reranker 模型服务
 
 > RAG 系统里，Embedding 和 Reranker 的吞吐直接决定检索延迟，而它们的服务方式和 LLM 完全不同。
 

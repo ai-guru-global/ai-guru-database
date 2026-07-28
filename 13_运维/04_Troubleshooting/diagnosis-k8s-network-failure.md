@@ -10,12 +10,15 @@ aliases:
   - "Pod 网络排障"
 sources: []
 
+name_zh: "K8s 网络故障远程诊断决策树"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # K8s 网络故障远程诊断决策树
+
+> 中文简称：K8s 网络故障远程诊断决策树
 
 > **核心洞察**：K8s 网络工单的 90% 可归纳为三类：「连不上」「解析不了」「访问超时」。远程诊断的关键是引导用户**从 DNS → Service → CNI → 安全策略**四层逐层验证，而非盲目猜测。
 

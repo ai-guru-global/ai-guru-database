@@ -12,12 +12,15 @@ aliases:
   - HF_Accelerate_DeepSpeed_Guide
 sources: []
 
+name_zh: "Hugging Face Accelerate 与 DeepSpeed：分布式训"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Hugging Face Accelerate 与 DeepSpeed：分布式训练极简指南
+
+> 中文简称：Hugging Face Accelerate 与 DeepSpeed：分布式训
 
 > **一句话理解**: 过去配置 PyTorch 分布式训练（DDP）和微软 DeepSpeed 需要写大量冗杂的通信与初始化代码。Hugging Face `accelerate` 库让你只需要改动 4 行代码，就能在单机单卡、多机多卡、DeepSpeed 之间无缝切换。
 

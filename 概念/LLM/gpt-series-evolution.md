@@ -25,9 +25,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "GPT 系列模型演进"
 ---
 
 # GPT 系列模型演进
+
+> 中文简称：GPT 系列模型演进
 
 ## 一句话总结
 

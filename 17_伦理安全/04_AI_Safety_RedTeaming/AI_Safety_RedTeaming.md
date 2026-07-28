@@ -12,8 +12,11 @@ aliases:
   - AI_Safety_RedTeaming
 sources: []
 
+name_zh: "AI 安全与红队"
 ---
 # AI 安全与红队 (AI Safety & Red Teaming)
+
+> 中文简称：AI 安全与红队
 
 > **一句话理解**: 就像雇佣白帽黑客找系统漏洞一样,AI 红队通过模拟攻击来发现和修复 AI 系统的安全弱点。
 

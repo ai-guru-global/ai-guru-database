@@ -12,12 +12,15 @@ aliases:
   - "torch.compile 与 Triton"
   - Compiler_and_Kernel_Deep_Dive
 sources: []
+name_zh: "推理编译器与算子优化"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # 推理编译器与算子优化 (Compiler and Kernel Deep Dive)
+
+> 中文简称：推理编译器与算子优化
 
 > **一句话概括**: 通用框架的 eager 模式有 kernel launch、框架开销、访存浪费——编译器（torch.compile/Inductor）、定制算子（Triton/CUTLASS）和算子融合把访存密集的推理瓶颈榨干。
 

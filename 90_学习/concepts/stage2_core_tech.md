@@ -20,8 +20,11 @@ aliases:
 sources:
   - "https://github.com/microsoft/AI-For-Beginners"
 
+name_zh: "Stage 2: 核心技术"
 ---
 # Stage 2: 核心技术
+
+> 中文简称：Stage 2: 核心技术
 
 > **"现代 AI 的引擎——理解这些，你就理解了为什么 AI 在 2012 年后开始爆发。"**
 >

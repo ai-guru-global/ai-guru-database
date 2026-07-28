@@ -4,9 +4,12 @@ category: meta
 tags: [meta, taxonomy, audit, tags]
 summary: Wiki 标签体系规范化报告，包含标签分布、合并映射和规范化建议。
 sources: []
+name_zh: "标签体系报告"
 ---
 
 # Tag Taxonomy 规范化报告
+
+> 中文简称：标签体系报告
 
 生成时间: 2026-06-01 11:21
 

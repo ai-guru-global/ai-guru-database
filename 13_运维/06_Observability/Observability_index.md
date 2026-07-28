@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "可观测性专题"
 ---
 
 # Observability
+
+> 中文简称：可观测性专题
 
 可观测性（Observability）— LLM 推理服务的监控（monitoring）、链路追踪（distributed tracing）与日志聚合（log aggregation）体系。
 

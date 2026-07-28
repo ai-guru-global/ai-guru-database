@@ -29,9 +29,12 @@ provenance:
 base_confidence: 0.88
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "分布式训练"
 ---
 
 # 分布式训练（Distributed Training）
+
+> 中文简称：分布式训练
 
 ## 一句话定义
 

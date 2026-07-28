@@ -4,7 +4,7 @@ category: "05-nlp-llms-fine-tuning-techniques"
 tags: ["nlp", "llm", "lora", "qlora", "sft", "rlhf", "dpo", "fine-tuning", "alignment", "peft"]
 summary: "> **一句话理解**: 把大模型微调的五个核心概念串成一条线——SFT 教它说话，RLHF/DPO 教它讨人喜欢，LoRA/QLoRA 让这一切能在普通显卡上跑起来。"
 created: "2026-06-16"
-updated: "2026-06-16"
+updated: "2026-07-25"
 tier: supporting
 aliases:
   - "Lora Qlora Sft Rlhf Dpo In Detail"
@@ -12,8 +12,11 @@ aliases:
   - LoRA_QLoRA_SFT_RLHF_DPO_in_Detail
 sources: []
 
+name_zh: "LoRA / QLoRA / SFT / RLHF / DPO 大白话详解"
 ---
 # LoRA / QLoRA / SFT / RLHF / DPO 大白话详解
+
+> 中文简称：LoRA / QLoRA / SFT / RLHF / DPO 大白话详解
 
 > **一句话理解**：训练 ChatGPT 这类模型，本质上分三步——先用 **SFT** 教会它听懂人话，再用 **RLHF/DPO** 让它回答得更讨喜，而 **LoRA/QLoRA** 是让你能用普通电脑跑完这两步的省钱技巧。
 
@@ -30,7 +33,8 @@ sources: []
 7. [实战流水线：QLoRA + SFT → QLoRA + DPO](#7-实战流水线qlora--sft--qlora--dpo)
 8. [选型决策树](#8-选型决策树)
 9. [常见误区与避坑](#9-常见误区与避坑)
-10. [延伸阅读](#10-延伸阅读)
+10. [源码印证：这些概念在代码里长什么样](#10-源码印证这些概念在代码里长什么样)
+11. [延伸阅读](#11-延伸阅读)
 
 ---
 
@@ -582,7 +586,36 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 ---
 
-## 10. 延伸阅读
+## 10. 源码印证：这些概念在代码里长什么样
+
+> 基于本仓库归档源码 `code/llm-frameworks/peft-v0.19.1/` 与 `code/llm-frameworks/LLaMA-Factory-v0.9.5/`，把前面的大白话落到真实实现。
+
+### 10.1 LoRA："便签"的真身
+
+- **便签本体**：`peft/tuners/lora/layer.py` 中 `LoraLayer`（L100）把 `lora_A`/`lora_B` 存成 `nn.ModuleDict`，一个目标层可以同时贴多张"便签"（多 adapter）。
+- **贴便签的动作**：`BaseTuner.inject_adapter()`（`tuners_utils.py` L749）扫描模型，把 `q_proj`/`v_proj` 等 `nn.Linear` 替换成 `lora.Linear`（layer.py L769）——课本（基座权重）一个字都没改。
+- **B 为什么零初始化**：`update_layer()`（layer.py L153）里 B 矩阵初始化为全零，所以训练第 0 步时 `B@A=0`，模型完全等价于原模型，从"不捣乱"的起点开始学。
+- **撕掉便签合进课本**：部署时 `merge()`（layer.py L817）执行 `W += B@A*scaling`，推理零开销；`unmerge()`（L884）可逆向撤销。
+
+### 10.2 QLoRA："低清扫描课本 + 高清便签"
+
+`peft/tuners/lora/bnb.py` 中 `Linear4bit`（L311）：基座是 bitsandbytes 的 NF4 量化层（低清课本），forward 时先反量化算主干，再加上 fp16/bf16 的 LoRA 旁路（高清便签）——两者精度不同但互不干扰，这就是 QLoRA 省显存不牵连训练精度的实现真相。
+
+### 10.3 SFT/DPO/PPO 流水线：LLaMA-Factory 怎么串起来
+
+| 概念 | 源码实体（`src/llamafactory/`） | 说明 |
+|------|-------------------------------|------|
+| 统一入口 | `run_exp()`（train/tuner.py L139）→ `_training_function()`（L68） | 按 `stage` 参数分发到 pt/sft/rm/ppo/dpo/kto 子流水线 |
+| SFT 教学 | `run_sft()`（train/sft/workflow.py L41） | 加模型→套模板→建 Trainer，就是第 2 节讲的"拿题库教学生答题" |
+| 贴 LoRA | `init_adapter()`（model/adapter.py L293） | 内部调用 peft 的 `get_peft_model`，两个库在此接头 |
+| 对话模板 | `Template`（data/template.py L41）+ `get_template_and_fix_tokenizer()`（L628） | 把原始问答对拼成各模型专属 chat 格式，SFT 数据质量的第一道门 |
+| 偏好训练 | `train/dpo/`、`train/ppo/`、`train/rm/`、`train/kto/` 子目录 | 每个对齐方法一个 workflow+trainer，结构与 sft 完全对称 |
+
+> 一句话：**peft 负责"怎么省"（adapter 注入/量化适配），LLaMA-Factory 负责"怎么练"（数据模板/训练编排）**，两者在 `init_adapter` 处会合。详见 [[05_大模型/07_Fine_tuning_Techniques/LLaMA_Factory_Deep_Dive|LLaMA-Factory 深度解析]]。
+
+---
+
+## 11. 延伸阅读
 
 ### 概念卡片
 
@@ -608,4 +641,4 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 ---
 
-*Last updated: 2026-06-16*
+*Last updated: 2026-07-25*

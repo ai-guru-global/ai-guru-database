@@ -12,8 +12,11 @@ aliases:
   - Transformer_Deep_Dive
 sources: []
 
+name_zh: "Transformer 深度剖析：从 QKV 到完整架构"
 ---
 # Transformer 深度剖析：从 QKV 到完整架构
+
+> 中文简称：Transformer 深度剖析：从 QKV 到完整架构
 
 > **核心命题**: Transformer 完全抛弃循环和卷积结构，仅用注意力机制 + 前馈网络 + 位置编码构建整个模型，同时解决了序列建模的三大根本难题——变长输入、长距离依赖、计算效率。
 

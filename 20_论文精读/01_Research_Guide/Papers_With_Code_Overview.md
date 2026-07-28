@@ -14,8 +14,11 @@ aliases:
   - "papers with code overview"
   - papers-with-code_overview
 
+name_zh: "Papers with Code 概览"
 ---
 # Papers with Code 概览
+
+> 中文简称：Papers with Code 概览
 
 > **一句话理解**: 论文+代码+排行榜的综合平台,追踪各领域 SOTA 结果,AI 研究者的核心工具。
 
@@ -36,7 +39,7 @@ aliases:
 | 排行榜 | 有 | 无 | 无 |
 | 数据集 | 有 | 无 | 无 |
 
-> **关联**: -> [[20_Papers|论文精读]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[20_论文精读/index|论文精读]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 ## Related
 

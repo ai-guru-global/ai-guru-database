@@ -25,8 +25,11 @@ aliases:
   - "Gpu Virtualization"
   - "gpu virtualization"
 
+name_zh: "GPU 虚拟化"
 ---
 # GPU 虚拟化 (GPU Virtualization)
+
+> 中文简称：GPU 虚拟化
 
 > 一块 GPU 切给多个用户用——从独占到共享的资源效率革命。
 

@@ -17,9 +17,12 @@ tier: supporting
 created: 2026-06-25T16:01:28Z
 updated: 2026-07-21T16:01:28Z
 sources: []
+name_zh: "矩阵运算"
 ---
 
 # 矩阵运算
+
+> 中文简称：矩阵运算
 
 ## 一句话解释
 

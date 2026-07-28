@@ -11,8 +11,11 @@ aliases:
   - Optimal_Transport_for_ML
 sources: []
 
+name_zh: "最优传输与机器学习: 从 Monge 问题到 WGAN 和 LLM 对齐"
 ---
 # 最优传输与机器学习: 从 Monge 问题到 WGAN 和 LLM 对齐
+
+> 中文简称：最优传输与机器学习: 从 Monge 问题到 WGAN 和 LLM 对齐
 
 > **一句话理解**: 最优传输回答"把一个分布变成另一个分布的最小代价是多少"——Wasserstein 距离为生成模型提供了比 KL 散度更鲁棒的度量，WGAN 解决了训练不稳定性，Sinkhorn 算法让 OT 可扩展到大规模数据，2026年 OT 正在进入 LLM 对齐的前沿。
 
@@ -313,7 +316,7 @@ WGAN 的测度论基础:
   - 即使 P_real ⊥ P_fake, W₁ 仍然有限且连续
   - W₁ metrizes 弱收敛 → 优化 W₁ 等价于让生成分布弱收敛到真实分布
   - Critic 的最优解 = Kantorovich 势 → 提供有意义的梯度方向
-  - 参见: [[Measure_Theory_for_ML]], [[GAN_Architectures]]
+  - 参见: [[Measure_Theory_for_ML]], GAN_Architectures
 ```
 
 ### 4.2 域适应与公平性
@@ -325,14 +328,14 @@ OT 域适应 (OTDA, Courty et al., 2017):
   3. 在对齐后的空间中训练分类器
   数学: γ* = argmin_{γ ∈ Π(μ_s, μ_t)} <C, γ> + λ·正则化
   变体: JDOT (同时对齐特征和标签), Deep OTDA (端到端)
-  参见: [[Domain_Adaptation]], [[Transfer_Learning]]
+  参见: Domain_Adaptation, [[Transfer_Learning]]
 
 OT 在算法公平性中:
   1. 人口统计奇偶: 用传输映射将不同群体的预测分布对齐
   2. 机会均等: 条件传输 (conditional OT)
   3. 公平表示学习: min L_task + λ·W₂(P_{Z|A=0}, P_{Z|A=1})
   优势: 连续的公平性度量, 可权衡准确性和公平性, 几何感知
-  参见: [[Fairness_in_ML]]
+  参见: Fairness_in_ML
 ```
 
 ### 4.3 Sliced Wasserstein 距离
@@ -368,7 +371,7 @@ OT 对齐的新方向 (2025-2026):
   3. 多模态对齐中的 OT:
      视觉-语言模型: OT 匹配图像 patch 和文本 token
      跨语言对齐: 不同语言表示空间的 OT 映射
-     参见: [[Multimodal_Learning]]
+     参见: Multimodal_Learning
 
   4. 知识蒸馏中的 OT:
      教师和学生 logits 之间的 OT 距离
@@ -606,25 +609,25 @@ print(f"理论 W₂ (两个高斯): {np.sqrt(128 * 0.25):.4f}")
 ### 7.1 前置知识
 
 - [[Measure_Theory_for_ML]] — OT 的测度论基础 (推前测度、耦合)
-- [[Linear_Algebra_Essentials]] — 传输计划是矩阵，SVD 用于低秩 OT
-- [[Convex_Optimization]] — Kantorovich 问题是线性规划
-- [[Probability_Distributions]] — 概率测度空间
+- Linear_Algebra_Essentials — 传输计划是矩阵，SVD 用于低秩 OT
+- Convex_Optimization — Kantorovich 问题是线性规划
+- Probability_Distributions — 概率测度空间
 
 ### 7.2 直接应用
 
-- [[GAN_Architectures]] — WGAN 是 OT 在生成模型的标志性应用
-- [[Diffusion_Models]] — OT 路径、Rectified Flow
-- [[Domain_Adaptation]] — OT 域适应
-- [[Fairness_in_ML]] — OT 公平性约束
-- [[Normalizing_Flows]] — 最优传输映射 vs 可逆映射
+- GAN_Architectures — WGAN 是 OT 在生成模型的标志性应用
+- [[概念/General/diffusion-models|Diffusion_Models]] — OT 路径、Rectified Flow
+- Domain_Adaptation — OT 域适应
+- Fairness_in_ML — OT 公平性约束
+- Normalizing_Flows — 最优传输映射 vs 可逆映射
 
 ### 7.3 延伸连接
 
-- [[Information_Geometry]] — KL 几何 vs Wasserstein 几何
-- [[Optimization_Methods]] — Sinkhorn 是 Bregman 投影
-- [[Kernel_Methods]] — MMD vs Wasserstein
-- [[Reinforcement_Learning]] — 分布鲁棒 RL、OT 策略优化
-- [[Multimodal_Learning]] — 跨模态 OT 对齐
+- [[概念/Math/information-geometry|Information_Geometry]] — KL 几何 vs Wasserstein 几何
+- Optimization_Methods — Sinkhorn 是 Bregman 投影
+- Kernel_Methods — MMD vs Wasserstein
+- [[概念/General/reinforcement-learning|Reinforcement_Learning]] — 分布鲁棒 RL、OT 策略优化
+- Multimodal_Learning — 跨模态 OT 对齐
 - [[RLHF]] — LLM 对齐中的 OT 探索
 - [[Numerical_Methods_for_ML]] — Sinkhorn 的数值实现
 

@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "半监督学习"
 ---
 # 半监督学习 (Semi-Supervised Learning)
+
+> 中文简称：半监督学习
 
 ## 内容索引
 

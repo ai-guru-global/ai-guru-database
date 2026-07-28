@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "行业应用"
+name_en: "Industry Applications"
 ---
 
 # AI Applications Industry
+
+> 中文简称：行业应用 ｜ English Name: Industry Applications
 
 This page indexes the contents of `行业应用`.
 

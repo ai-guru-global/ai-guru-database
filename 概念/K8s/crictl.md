@@ -21,11 +21,14 @@ lifecycle: reviewed
 tier: archived
 created: 2026-06-16
 updated: 2026-07-21
+name_zh: "crictl 容器运行时调试工具"
 ---
 
 > **归档提示**: 此概念为通用云原生工具，与AI核心关联度较低。如需学习完整的K8s知识，请参考 CNCF 官方文档。
 
 # crictl 容器运行时调试工具
+
+> 中文简称：crictl 容器运行时调试工具
 
 > **一句话理解**: crictl 是 K8s 的"容器手术刀"——绕过 K8s API 直接操作底层 containerd，用于排查 Pod 启动失败、镜像拉取异常等底层问题。
 

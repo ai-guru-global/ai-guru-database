@@ -21,9 +21,12 @@ lifecycle: reviewed
 tier: supporting
 created: 2026-06-16
 updated: 2026-07-21
+name_zh: "Prompt 版本管理与测试平台"
 ---
 
 # Promptlayer
+
+> 中文简称：Prompt 版本管理与测试平台
 
 [Promptlayer](https://promptlayer.com/) 是一个 **Prompt 版本管理与测试平台**，提供类似 Git 的 Prompt 版本控制、LLM 调用自动追踪和结构化评估能力。它的核心理念是：**Prompt 就是代码**——需要版本控制、测试、审查和协作，Promptlayer 将软件工程的最佳实践应用到 Prompt 工程中。
 

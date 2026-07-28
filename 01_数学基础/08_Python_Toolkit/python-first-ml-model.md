@@ -21,8 +21,11 @@ aliases:
   - "Python First Ml Model"
   - "python first ml model"
 
+name_zh: "Python 基础 × 第一个 ML 模型 — 从零到一的实战桥梁"
 ---
 # Python 基础 × 第一个 ML 模型 — 从零到一的实战桥梁
+
+> 中文简称：Python 基础 × 第一个 ML 模型 — 从零到一的实战桥梁
 
 ## The Connection
 

@@ -1,0 +1,187 @@
+"""
+Utility / helper functions
+"""
+
+import warnings
+
+import torch
+from compressed_tensors.quantization.utils import is_module_quantized
+from compressed_tensors.utils import match_named_modules
+from loguru import logger
+from torch.nn import Module
+from transformers import PreTrainedModel
+
+from llmcompressor.core import ModelParameterizedLayer
+
+__all__ = [
+    "expand_special_targets",
+    "build_parameterized_layers",
+    "qat_active",
+    "get_no_split_params",
+    "infer_sequential_targets",
+]
+
+ALL_TARGET = "__ALL__"
+ALL_PRUNABLE_TARGET = "__ALL_PRUNABLE__"
+ALL_QUANTIZABLE_TARGET = "__ALL_QUANTIZABLE__"
+
+
+def expand_special_targets(targets: str | list[str]) -> list[str]:
+    """
+    Expand special target constants to explicit class names with backward compatibility.
+
+    Special constants like __ALL_PRUNABLE__ and __ALL_QUANTIZABLE__ are deprecated
+    in favor of explicit class name lists. This function provides backward compatibility
+    by expanding these constants while issuing deprecation warnings.
+
+    :param targets: Target strings which may include special constants
+    :return: List of expanded target strings
+    :raises ValueError: If __ALL__ constant is used (no longer supported)
+    """
+    if isinstance(targets, str):
+        targets = [targets]
+
+    expanded = []
+    for target in targets:
+        if target == ALL_PRUNABLE_TARGET:
+            warnings.warn(
+                f"{ALL_PRUNABLE_TARGET} is deprecated. "
+                "Use explicit targets: ['Linear', 'Conv1d', 'Conv2d', 'Conv3d']",
+                DeprecationWarning,
+                stacklevel=3,
+            )
+            expanded.extend(["Linear", "Conv1d", "Conv2d", "Conv3d"])
+        elif target == ALL_QUANTIZABLE_TARGET:
+            warnings.warn(
+                f"{ALL_QUANTIZABLE_TARGET} is deprecated. "
+                "Use explicit targets: ['Linear', 'Conv2d', 'Conv3d']",
+                DeprecationWarning,
+                stacklevel=3,
+            )
+            expanded.extend(["Linear", "Conv2d", "Conv3d"])
+        elif target == ALL_TARGET:
+            raise ValueError(
+                f"{ALL_TARGET} is no longer supported. "
+                "Use explicit layer types or patterns instead."
+            )
+        else:
+            expanded.append(target)
+
+    return expanded
+
+
+def build_parameterized_layers(
+    model: Module,
+    targets: str | list[str],
+    param_name: str = "weight",
+) -> dict[str, ModelParameterizedLayer]:
+    """
+    Build ModelParameterizedLayer objects for modules matching the given targets.
+
+    This function replaces get_layers_params() by using compressed-tensors'
+    match_named_modules() to find matching modules and their parameters,
+    then constructing ModelParameterizedLayer objects.
+
+    :param model: The model to search for matching modules
+    :param targets: Target patterns to match (supports class names, regex with "re:",
+                    and special constants for backward compatibility)
+    :param param_name: Name of the parameter to extract from each layer
+        (default: "weight")
+    :return: Dictionary mapping layer names to ModelParameterizedLayer objects
+    """
+    # Expand special constants if present
+    targets = expand_special_targets(targets)
+
+    parameterized_layers = {}
+    for layer_name, module in match_named_modules(model, targets):
+        # Get the parameter from the module
+        param = getattr(module, param_name, None)
+        if param is None:
+            continue
+
+        # Avoid duplicate entries (same layer can be matched multiple times)
+        if layer_name not in parameterized_layers:
+            parameterized_layers[layer_name] = ModelParameterizedLayer(
+                layer_name=layer_name,
+                layer=module,
+                param_name=f"{layer_name}.{param_name}",
+                param=param,
+            )
+
+    return parameterized_layers
+
+
+def qat_active(module: Module) -> bool:
+    """
+    Determines if any layers in the model have quantization enabled by checking for
+    weight_fake_quant attributes
+
+    :param module: PyTorch model to check for quantization
+    :return: True if quantization is active anywhere in the model, False otherwise
+    """
+    for _, layer in module.named_modules():
+        if isinstance(layer, torch.quantization.FakeQuantize):
+            return True
+        if is_module_quantized(layer):
+            return True
+
+    return False
+
+
+def get_no_split_params(model: PreTrainedModel) -> str | list[str]:
+    """
+    Get list of module classes that shouldn't be split when sharding. For
+    Hugging Face Transformer models, this is the decoder layer type. For other
+    types of models, this just returns all module names.
+
+    :return: list of class names that shouldn't be split
+    """
+    try:
+        # Transformers < v5 support
+        no_split_modules = model._get_no_split_modules("auto")
+    except AttributeError:
+        # Transformers v5 support
+        no_split_modules = model._no_split_modules
+    if len(no_split_modules) <= 0:
+        return ALL_TARGET
+
+    return no_split_modules
+
+
+def infer_sequential_targets(
+    model: Module, sequential_targets: str | list[str] | None = None
+) -> str | list[str]:
+    """
+    Infer or validate sequential targets for layer-wise processing.
+
+    When sequential_targets is None, automatically infers targets using
+    get_no_split_params(). When provided as a string, wraps it in a list.
+    Otherwise, returns the provided list as-is.
+
+    :param model: The model to infer targets from
+    :param sequential_targets: Optional sequential targets to use. If None,
+        targets are inferred from the model. If a string, it's wrapped in a list.
+    :return: List of sequential target class names or patterns
+    """
+    match sequential_targets:
+        case None:
+            return get_no_split_params(model)
+        case str():
+            return [sequential_targets]
+        case _:
+            return sequential_targets
+
+
+# https://discuss.pytorch.org/t/how-to-access-to-a-layer-by-module-name/83797/8
+
+
+def get_module_to_name_dict(model: Module) -> dict[Module, str]:
+    module_to_name = {}
+    for name, module in model.named_modules():
+        if module in module_to_name:
+            logger.warning(
+                f"Warning, {name} and {module_to_name[module]} both "
+                "share the same module, which can result in unexpected behavior"
+            )
+        module_to_name[module] = name
+    return module_to_name

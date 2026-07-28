@@ -28,8 +28,11 @@ aliases:
   - "Text Generation Inference"
   - "HuggingFace TGI"
 
+name_zh: "HF 文本生成推理引擎"
 ---
 # TGI (Text Generation Inference)
+
+> 中文简称：HF 文本生成推理引擎
 
 > HuggingFace 出品的 LLM 推理「发动机」——专为生产级文本生成服务优化。
 

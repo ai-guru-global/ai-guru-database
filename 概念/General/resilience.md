@@ -15,9 +15,12 @@ relationships:
   - target: "概念/chaos-engineering"
     type: verified_by
 sources: []
+name_zh: "系统韧性"
 ---
 
 # Resilience
+
+> 中文简称：系统韧性
 
 > **一句话理解**: 韧性就是系统「扛揍」的能力——出问题了不崩、慢点了不死、恢复了还快。
 

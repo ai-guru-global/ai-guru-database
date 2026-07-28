@@ -11,12 +11,15 @@ aliases:
   - Tutorial_LLMOps_End_to_End
 sources: []
 
+name_zh: "LLMOps 端到端教程"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # LLMOps 端到端教程
+
+> 中文简称：LLMOps 端到端教程
 
 > **目标**: 为一个 RAG 应用搭建完整的 LLMOps 流水线，覆盖可观测性、Prompt 测试、RAG 评估和多模型网关。
 > **技术栈**: Langfuse + Promptfoo + Ragas + LiteLLM

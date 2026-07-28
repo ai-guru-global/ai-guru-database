@@ -12,8 +12,11 @@ aliases:
   - GPT3_Deep_Dive
 sources: []
 
+name_zh: "GPT-3 深度解读"
 ---
 # GPT-3 深度解读 (Language Models are Few-Shot Learners)
+
+> 中文简称：GPT-3 深度解读
 
 > **一句话理解**: GPT-3 就像把一个阅读量超过人类万倍的天才放在一个"只给例子不教规则"的考试中——它通过 1750 亿参数和海量文本训练，竟能从几个示例中顿悟任务逻辑，开启了"大模型 + 提示词"的全新 AI 范式。
 

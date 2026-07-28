@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "内容媒体"
+name_en: "Content Media"
 ---
 
 # Content Media
+
+> 中文简称：内容媒体 ｜ English Name: Content Media
 
 ## 文件导航
 

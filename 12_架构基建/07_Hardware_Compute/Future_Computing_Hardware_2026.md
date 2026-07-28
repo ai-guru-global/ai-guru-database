@@ -11,8 +11,11 @@ aliases:
   - Future_Computing_Hardware_2026
 sources: []
 
+name_zh: "未来 AI 硬件"
 ---
 # Future AI Hardware 2026: Silicon Photonics, LPUs, and Bio-computing
+
+> 中文简称：未来 AI 硬件
 
 > **一句话理解**: 2026 年的 AI 硬件正在突破“电信号”和“冯诺依曼架构”的极限——通过光子互联解决通信带宽问题，通过专用加速器 LPU/NPU 实现推理效率的指数级提升。
 

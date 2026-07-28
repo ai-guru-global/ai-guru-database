@@ -31,9 +31,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "Diffusion LLM 推理"
 ---
 
 # Diffusion LLM 推理
+
+> 中文简称：Diffusion LLM 推理
 
 > **一句话理解**:Diffusion LLM 用"并行去噪"代替"逐 token 生成"——Mercury Coder 1000+ token/s(自回归 10-20x)、LLaDA 8B 是开源 SOTA,MDLM / SEDD 学术领先。是 LLM 推理速度的"终极武器"。
 
@@ -267,8 +270,8 @@ CE loss
 - [[概念/diffusion-llm|Diffusion Llm]]
 - [[概念/inference-performance|Inference Performance]]
 - [[概念/eagle-3|Eagle 3]]
-- [[概念/parallel-decoding|Parallel Decoding]]
+- [[概念/LLM/speculative-decoding|Parallel Decoding]]
 - [[概念/llm-architectures|Llm Architectures]]
 - [[概念/autoregressive-generation|Autoregressive Generation]]
-- [[概念/llm-inference|Llm Inference]]
+- [[概念/Inference/model-inference|Llm Inference]]
 - [[概念/medusa|Medusa]]

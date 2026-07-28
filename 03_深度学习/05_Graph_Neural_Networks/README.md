@@ -8,8 +8,11 @@ updated: 2026-06-04
 tier: supporting
 sources: []
 
+name_zh: "图神经网络"
 ---
 # 图神经网络 (Graph Neural Networks)
+
+> 中文简称：图神经网络
 
 > **核心定位**: 深度学习三大架构之一（CNN/RNN/GNN），处理图结构数据的核心方法论。
 

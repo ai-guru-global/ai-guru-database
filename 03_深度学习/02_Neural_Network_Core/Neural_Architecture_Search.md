@@ -12,8 +12,11 @@ aliases:
   - NAS_Theory
 sources: []
 
+name_zh: "神经架构搜索"
 ---
 # 神经架构搜索 (Neural Architecture Search)
+
+> 中文简称：神经架构搜索
 
 > 从暴力搜索到 LLM 驱动，系统解析自动化神经网络架构设计的理论、方法与前沿。
 

@@ -14,8 +14,11 @@ aliases:
   - "keras overview"
   - keras_overview
 
+name_zh: "Keras 概览"
 ---
 # Keras 概览
+
+> 中文简称：Keras 概览
 
 > **一句话理解**: François Chollet 创建的高层神经网络 API，现已集成进 TensorFlow
 

@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "持续集成交付"
+name_en: "CI CD"
 ---
 
 # CI/CD
+
+> 中文简称：持续集成交付 ｜ English Name: CI CD
 
 持续集成与持续部署（CI/CD）— AI/ML 系统的 CI/CD 管线设计，涵盖数据版本（data versioning）、模型注册与蓝绿部署。
 

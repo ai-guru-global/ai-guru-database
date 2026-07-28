@@ -28,8 +28,11 @@ aliases:
   - "Microsoft AI Agents L14 Microsoft Agent Framework"
   - Microsoft_AI_Agents_L14_Microsoft_Agent_Framework
 
+name_zh: "L14 Microsoft Agent Framework 深度"
 ---
 # L14 Microsoft Agent Framework 深度
+
+> 中文简称：L14 Microsoft Agent Framework 深度
 
 > 来源：[Microsoft AI Agents for Beginners / 14-microsoft-agent-framework](https://github.com/microsoft/ai-agents-for-beginners/tree/main/14-microsoft-agent-framework)
 

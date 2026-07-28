@@ -18,9 +18,12 @@ relationships:
   - target: "概念/service"
     type: part_of
 sources: []
+name_zh: "K8s 网络策略"
 ---
 
 # Network Policy
+
+> 中文简称：K8s 网络策略
 
 > **一句话理解**: Network Policy 是 K8s 的「Pod 级防火墙」，通过标签选择 Pod 并决定谁能访问谁，默认不隔离、声明即生效。
 

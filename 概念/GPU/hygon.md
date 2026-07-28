@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "海光 CPU"
 ---
 
 # 海光 CPU (Hygon)
+
+> 中文简称：海光 CPU
 
 > **一句话理解**: 海光是"国产 x86 CPU"——基于 AMD Zen 架构授权，为国产服务器提供 CPU 算力，是 AI Stack 一体机的底层硬件基座之一。
 

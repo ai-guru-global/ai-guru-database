@@ -11,9 +11,12 @@ aliases:
   - "Group Relative Policy Optimization Deep Dive"
   - GRPO_Paper_Deep_Dive
 sources: []
+name_zh: "GRPO 论文精读"
 ---
 
 # GRPO 论文精读: Group Relative Policy Optimization
+
+> 中文简称：GRPO 论文精读
 
 > **一句话理解**: GRPO 就像一个"不用请裁判"的竞赛训练法——让模型对同一道题生成一组答案，用组内相对排名代替绝对评分，既省去了 Critic 网络的巨大开销，又天然适合推理任务中"答案有对错之分"的场景。
 

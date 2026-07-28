@@ -19,8 +19,11 @@ aliases:
   - "transformer layer"
 sources: []
 
+name_zh: "Transformer Layer大白话"
 ---
 # Transformer Layer（层）大白话
+
+> 中文简称：Transformer Layer大白话
 
 > 一句话：**Layer 就是大模型里的一道“加工工序”。模型把输入反复过很多道工序，每道工序都让理解更深一层。**
 

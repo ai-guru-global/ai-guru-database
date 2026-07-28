@@ -11,12 +11,15 @@ aliases:
   - Flowise_Deep_Dive
 sources: []
 
+name_zh: "Flowise: 低代码 LLM 应用平台"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Flowise: 低代码 LLM 应用平台
+
+> 中文简称：Flowise: 低代码 LLM 应用平台
 
 > **一句话理解**: Flowise 是极简的低代码 LLM 应用平台——拖拽即可构建 AI 应用，专注于 Chatflow 可视化编排。
 

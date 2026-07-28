@@ -22,8 +22,11 @@ aliases:
   - "Build Reasoning Model"
   - "build reasoning model"
 
+name_zh: "从零构建推理模型"
 ---
 # Build a Reasoning Model
+
+> 中文简称：从零构建推理模型
 
 > **一句话理解**: 聚焦"推理模型"这一新范式的实战教程，讲解如何用强化学习训练 LLM 产生长思维链（类似 OpenAI o1 / DeepSeek-R1），是理解推理模型训练原理的前沿参考。
 

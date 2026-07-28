@@ -11,8 +11,11 @@ aliases:
   - Prompt_Engineering_Principles_Ng
 sources: []
 
+name_zh: "提示词工程的两大黄金法则"
 ---
 # 提示词工程的两大黄金法则 (吴恩达 & OpenAI 联合指南)
+
+> 中文简称：提示词工程的两大黄金法则
 
 > **一句话理解**: 抛开网上繁杂玄学的“咒语大全”，吴恩达 (Andrew Ng) 与 OpenAI 教员 Isa Fulford 在 DLAI 经典课程《ChatGPT Prompt Engineering for Developers》中，将 Prompt Engineering 总结为两条最底层、最实用的黄金法则。
 

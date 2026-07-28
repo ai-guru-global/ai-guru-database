@@ -21,8 +21,11 @@ aliases:
 - microsoft genai for beginners
 - microsoft_genai_for_beginners
 sources: []
+name_zh: "Microsoft Generative AI For Beginners：21"
 ---
 # Microsoft Generative AI For Beginners：21 课生成式 AI 初学者课程映射
+
+> 中文简称：Microsoft Generative AI For Beginners：21
 
 > **一句话理解**: [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners) 是微软开源的 21 课生成式 AI 入门课程（版本 3）。它覆盖生成式 AI 概念、LLM 选型、提示工程、文本/聊天/搜索/图像应用构建、RAG、AI 代理、微调、开源模型等核心主题，并为每节课提供 **Python / TypeScript** 代码示例。本页将课程完整课表映射到 `ai-guru-database` 的对应章节。
 

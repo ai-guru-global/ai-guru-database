@@ -22,9 +22,12 @@ relationships:
   - target: "概念/service"
     type: related_to
 sources: []
+name_zh: "K8s 标签"
 ---
 
 # Label
+
+> 中文简称：K8s 标签
 
 > **一句话理解**: Label 是 Kubernetes 里贴在资源上的「键值对标签」——让 Service、Deployment、调度器和运维工具能够快速找到并管理一群资源。
 

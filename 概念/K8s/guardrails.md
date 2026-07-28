@@ -7,9 +7,12 @@ aliases:
   - Guardrails
 summary: "此页面已合并至主卡片。"
 sources: []
+name_zh: "AI 护栏"
 ---
 
 # AI Guardrails (AI 护栏)
+
+> 中文简称：AI 护栏
 
 > 此页面已合并至 [[概念/Safety/guardrails|AI护栏]] 主卡片。请前往查看完整内容。
 

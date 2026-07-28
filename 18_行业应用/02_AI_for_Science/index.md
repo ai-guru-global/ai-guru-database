@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "科学智能"
+name_en: "AI for Science"
 ---
 
 # AI for Science
+
+> 中文简称：科学智能 ｜ English Name: AI for Science
 
 AI for Science — AI 驱动的科学发现，涵盖蛋白质折叠、药物发现和材料科学。
 

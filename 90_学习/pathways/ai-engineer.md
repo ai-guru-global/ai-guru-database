@@ -12,8 +12,11 @@ aliases:
   - ai-engineer-path
 sources: []
 
+name_zh: "AI 工程师学习路径"
 ---
 # AI 工程师学习路径 (AI Engineer Learning Path)
+
+> 中文简称：AI 工程师学习路径
 
 > AI 工程师是 2026 年最热门的职业之一——从基础技能到高级实践，系统规划 AI 工程师的成长路径。
 

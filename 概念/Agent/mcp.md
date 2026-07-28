@@ -18,9 +18,12 @@ relationships:
 sources:
   - "https://modelcontextprotocol.io"
   - "https://spec.modelcontextprotocol.io/specification/2025-03-26/"
+name_zh: "模型上下文协议"
 ---
 
 # Model Context Protocol (MCP)
+
+> 中文简称：模型上下文协议
 
 ## 定义
 
@@ -217,6 +220,6 @@ if __name__ == "__main__":
 - [[概念/Agent/tool-use|Tool Use]] — 大模型工具使用能力
 - [[概念/Agent/agent-harness|Agent Harness]] — MCP 是 Harness 的工具连接层
 - [[概念/Agent/tool-calling-safety|工具调用安全]] — 工具执行的安全保障
-- [[15_智能体/Agent_Protocols/MCP_Deep_Dive|MCP 深度解析]] — 协议规范详解
+- [[概念/Agent/mcp|MCP 深度解析]] — 协议规范详解
 - [[概念/Agent/agentic-rag|Agentic RAG]] — MCP 赋能的检索增强生成
-- [[14_RAG系统/06_RAG_Frameworks/RAG_Frameworks|RAG 框架]] — MCP 在 RAG 管道中的应用
+- [[14_RAG系统/06_RAG_Frameworks/index|RAG 框架]] — MCP 在 RAG 管道中的应用

@@ -20,9 +20,12 @@ lifecycle_changed: 2026-07-21
 created: 2026-07-21
 updated: 2026-07-21
 tier: supporting
+name_zh: "医学影像 AI"
 ---
 
 # 医学影像 AI
+
+> 中文简称：医学影像 AI
 
 > 一句话理解：将深度学习应用于医学图像（CT/MRI/X 光/病理）的分析、诊断和辅助决策。
 

@@ -14,8 +14,11 @@ aliases:
   - "AI Code Generation 2026"
   - AI_Code_Generation_2026
 
+name_zh: "AI 代码生成应用场景深度解析"
 ---
 # AI 代码生成应用场景深度解析
+
+> 中文简称：AI 代码生成应用场景深度解析
 
 > **一句话理解**: AI 代码生成从辅助补全到自主开发的演进,覆盖 GitHub Copilot、Cursor、Claude Code 等工具在企业中的落地实践。
 
@@ -636,6 +639,6 @@ L_FIM = -Σ log P(token_i | prefix, suffix, token_<i)
 > - [[LLM/README|大语言模型]]
 > - [[RAG/README|RAG 检索增强生成]]
 > - [[18_行业应用/18_Code_Generation/Code_Generation_index|代码生成目录]]
-> - [[工具/Copilot|GitHub Copilot]]
-> - [[工具/Cursor|Cursor IDE]]
+> - [[16_编程/05_Tools/github-copilot_overview|GitHub Copilot]]
+> - [[16_编程/05_Tools/Cursor_Guide|Cursor IDE]]
 > - [[Prompt_Engineering/README|Prompt Engineering]]

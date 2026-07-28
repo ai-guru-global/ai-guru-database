@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "Share AI 课程"
+name_en: "share ai"
 ---
 
 # Share AI
+
+> 中文简称：Share AI 课程 ｜ English Name: share ai
 
 Share AI 课程 — 国内外 AI 实战课程与分享，聚焦工具使用（tool usage）与项目实践（hands-on projects）。
 

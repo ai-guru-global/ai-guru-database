@@ -15,9 +15,12 @@ relationships:
   - target: "概念/gpu-sharing"
     type: related_to
 sources: []
+name_zh: "云财务管理"
 ---
 
 # FinOps
+
+> 中文简称：云财务管理
 
 > **一句话理解**: FinOps 就是「让云钱花得明白、花得值」，技术、财务、业务一起管成本。
 

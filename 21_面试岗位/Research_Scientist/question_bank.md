@@ -7,9 +7,12 @@ created: 2026-07-23
 updated: 2026-07-23
 tier: supporting
 sources: []
+name_zh: "Research Scientist 题库"
 ---
 
 # Research Scientist 题库
+
+> 中文简称：Research Scientist 题库
 
 > **难度标注**: ⭐ Basic | ⭐⭐ Intermediate | ⭐⭐⭐ Advanced
 > **频率标注**: 🔴 高频 | 🟡 中频 | 🟢 低频
@@ -158,4 +161,4 @@ sources: []
 - [[01_数学基础/index|数学基础]]
 - [[20_论文精读/index|论文精读]]
 - [[21_面试岗位/AI_Research_Scientist/index|AI Research Scientist]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]

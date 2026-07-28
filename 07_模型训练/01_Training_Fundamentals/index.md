@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "训练基础"
+name_en: "Training Fundamentals"
 ---
 
 # Training Fundamentals
+
+> 中文简称：训练基础 ｜ English Name: Training Fundamentals
 
 ## 文件导航
 

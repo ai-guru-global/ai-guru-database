@@ -6,9 +6,12 @@ summary: ApacheCN 中文 PyTorch 学习路线索引，覆盖张量、自动微�
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "ApacheCN PyTorch 学习路径"
 ---
 
 # ApacheCN PyTorch 学习路径
+
+> 中文简称：ApacheCN PyTorch 学习路径
 
 > **一句话理解**: 这是 ApacheCN 中文社区整理的 PyTorch 入门到实战路线，适合想从 0 掌握深度学习框架的读者。
 

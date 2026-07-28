@@ -28,8 +28,11 @@ aliases:
   - "Microsoft AI Agents L18 Securing AI Agents"
   - Microsoft_AI_Agents_L18_Securing_AI_Agents
 
+name_zh: "L18 用加密审计收据保障 AI Agent 安全：Ed25519 + JCS"
 ---
 # L18 加密审计收据：Ed25519 + JCS + 哈希链
+
+> 中文简称：L18 用加密审计收据保障 AI Agent 安全：Ed25519 + JCS
 
 > 来源：[Microsoft AI Agents for Beginners / 18-securing-ai-agents](https://github.com/microsoft/ai-agents-for-beginners/tree/main/18-securing-ai-agents)
 

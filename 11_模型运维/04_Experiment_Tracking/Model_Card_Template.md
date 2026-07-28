@@ -10,9 +10,12 @@ aliases:
   - "Model Card Template"
   - "Model Documentation"
 sources: []
+name_zh: "Model Card 模型卡片模板"
 ---
 
 # Model Card 模型卡片模板
+
+> 中文简称：Model Card 模型卡片模板
 
 > 标准化的模型卡片模板——记录模型的用途、性能、局限性和伦理考量，是生产级 ML 项目的必备文档。
 

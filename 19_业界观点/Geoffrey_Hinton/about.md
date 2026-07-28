@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Geoffrey Hinton 简介"
 ---
 # Geoffrey Hinton 简介 (Geoffrey Hinton)
+
+> 中文简称：Geoffrey Hinton 简介
 
 ## 一句话概括
 

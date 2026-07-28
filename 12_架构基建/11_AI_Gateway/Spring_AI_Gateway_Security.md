@@ -12,12 +12,15 @@ aliases:
   - Spring_AI_Gateway_Security
 sources: []
 
+name_zh: "Spring AI 网关与安全"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Spring AI 网关与安全
+
+> 中文简称：Spring AI 网关与安全
 
 > 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
 >

@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "Decision Transformer 与轨迹建模"
 ---
 # Decision Transformer 与轨迹建模
+
+> 中文简称：Decision Transformer 与轨迹建模
 
 ## 1. 核心思想：RL as Sequence Modeling
 

@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "架构安全"
+name_en: "Security"
 ---
 
 # Security
+
+> 中文简称：架构安全 ｜ English Name: Security
 
 架构安全（Architecture Security）— AI 平台的容器安全（container security）、供应链安全与基础设施防护。
 

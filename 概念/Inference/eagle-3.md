@@ -29,9 +29,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "EAGLE-3 / 投机解码 SOTA"
 ---
 
 # EAGLE-3 / 投机解码 SOTA
+
+> 中文简称：EAGLE-3 / 投机解码 SOTA
 
 > **一句话理解**:EAGLE-3(2025-04)把投机解码推到 3.5x 加速——用主模型中间层特征 + 轻量 transformer head,联合训练保证无质量损失。是 vLLM / SGLang / TensorRT-LLM 必集成的优化。
 

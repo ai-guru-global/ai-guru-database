@@ -12,8 +12,11 @@ aliases:
   - Industry_Applications-in-nutshell
 sources: []
 
+name_zh: "AI 行业应用速览"
 ---
 # AI 行业应用速览 (AI Industry Applications in a Nutshell)
+
+> 中文简称：AI 行业应用速览
 
 > **一句话理解**: AI 在各行业中就像"电力"在第二次工业革命中的角色——它不是某一台机器，而是一种**通用赋能基础设施 (General-Purpose Enabling Infrastructure)**，正在重塑每一个行业的生产力边界。
 

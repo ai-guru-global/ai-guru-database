@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "云运维智能体"
+name_en: "Cloud Ops Agent"
 ---
 
 # Cloud Ops Agent
+
+> 中文简称：云运维智能体 ｜ English Name: Cloud Ops Agent
 
 This page indexes the contents of `11_模型运维/Cloud_Ops_Agent`.
 

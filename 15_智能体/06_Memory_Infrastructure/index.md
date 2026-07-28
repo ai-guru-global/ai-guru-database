@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "记忆基础设施"
+name_en: "Memory Infrastructure"
 ---
 
 # Memory Infrastructure
+
+> 中文简称：记忆基础设施 ｜ English Name: Memory Infrastructure
 
 记忆基础设施 — Agent 记忆系统架构、RAG 与长期存储技术方案。
 

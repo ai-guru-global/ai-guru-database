@@ -31,9 +31,12 @@ sources:
   - HuggingFace NSA 实现 lucidrains
   - DeepSeek 官方 GitHub
   - TriDao Mamba NSA Kernel
+name_zh: "NSA 原生稀疏注意力"
 ---
 
 # NSA 原生稀疏注意力(Native Sparse Attention)
+
+> 中文简称：NSA 原生稀疏注意力
 
 ## 一句话总结
 

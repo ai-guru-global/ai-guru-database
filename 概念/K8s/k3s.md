@@ -16,9 +16,12 @@ relationships:
   - target: "概念/karmada"
     type: related_to
 sources: []
+name_zh: "轻量级 K8s 发行版"
 ---
 
 # K3s
+
+> 中文简称：轻量级 K8s 发行版
 
 > **一句话理解**: K3s 是 K8s 的「精简版」，去掉云厂商驱动、用 SQLite/etcd 可选存储，能在边缘设备或低资源机器上跑。
 

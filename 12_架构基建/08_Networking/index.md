@@ -4,15 +4,20 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "网络"
+name_en: "Networking"
 ---
 
 # Networking
+
+> 中文简称：网络 ｜ English Name: Networking
 
 This page indexes the contents of `12_架构基建/08_Networking`.
 
 ## Files
 
 - [[12_架构基建/08_Networking/AI_Networking_Fundamentals|AI Networking Fundamentals]]
+- [[12_架构基建/08_Networking/AI_Networking|AI 网络总览]]
 - [[12_架构基建/08_Networking/Docker_Containerization_for_AI|Docker Containerization For AI]]
 - [[12_架构基建/08_Networking/Network_Diagnostics_Commands|Network Diagnostics Commands]]
 - [[12_架构基建/08_Networking/RDMA_and_RoCE_for_AI|RDMA And Roce For AI]]

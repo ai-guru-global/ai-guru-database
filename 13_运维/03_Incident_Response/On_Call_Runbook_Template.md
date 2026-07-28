@@ -8,9 +8,12 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "On-Call Runbook 模板"
 ---
 
 # On-Call Runbook 模板
+
+> 中文简称：On-Call Runbook 模板
 
 > **一句话理解**: On-Call Runbook 是值班人员的「急救手册」——先看什么、先执行什么、什么时候升级，都写清楚。
 

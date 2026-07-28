@@ -34,9 +34,12 @@ tier: core
 created: 2026-07-23
 updated: 2026-07-23
 sources: []
+name_zh: "书生 InternLM 3 模型系列"
 ---
 
 # 书生 InternLM 3 模型系列
+
+> 中文简称：书生 InternLM 3 模型系列
 
 > **一句话理解**: 上海 AI 实验室(上海人工智能实验室)主导的开源旗舰,"轻量高效 + 多模态 + 具身"三线并进——InternLM3-8B-Instruct 用 1/4 训练成本追上 70B 性能,InternVL/XComposer 拿下多模态开源,Intern-Robotics 引领具身全栈开源。
 
@@ -431,11 +434,11 @@ print(tokenizer.batch_decode(generated[:, tokenized.shape[1]:])[0])
 - [[概念/llm-architectures|LLM 架构]]
 - [[概念/multimodal-llm|多模态 LLM]]
 - [[概念/long-context-llm|长上下文 LLM]]
-- [[概念/llm-pretraining|预训练]]
-- [[概念/agent-architectures|Agent 架构]]
+- [[概念/Training/pre-training|预训练]]
+- [[概念/Agent/agent-architectures|Agent 架构]]
 - [[概念/opencompass|OpenCompass 评测]]
 - [[概念/lmdeploy|LMDeploy 推理]]
-- [[概念/embodied-ai|具身智能]]
+- [[概念/General/embodied-ai|具身智能]]
 
 ---
 

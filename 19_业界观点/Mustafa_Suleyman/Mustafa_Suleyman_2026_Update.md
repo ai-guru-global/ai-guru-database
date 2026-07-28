@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Mustafa Suleyman 2026 Update", "穆斯塔法·苏莱曼 2026 动态"]
 sources: []
+name_zh: "穆斯塔法·苏莱曼 2026 动态"
 ---
 
 # 穆斯塔法·苏莱曼 2026 动态 (Mustafa Suleyman 2026 Update)
+
+> 中文简称：穆斯塔法·苏莱曼 2026 动态
 
 ## 一句话概括
 

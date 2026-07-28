@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "模型服务"
+name_en: "Model Serving"
 ---
 
 # Model Serving
+
+> 中文简称：模型服务 ｜ English Name: Model Serving
 
 模型服务（Model Serving）— 模型部署模式（serving patterns）、推理服务架构与自动化再训练（retraining）闭环。
 

@@ -31,9 +31,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "间接 Prompt Injection / 间接注入攻击"
 ---
 
 # 间接 Prompt Injection / 间接注入
+
+> 中文简称：间接 Prompt Injection / 间接注入攻击
 
 > **一句话理解**:间接 Prompt Injection(IPI)让攻击者通过"数据"而非"对话"入侵 LLM——在 RAG 文档、邮件、网页、工具结果中藏恶意指令,LLM 读取后执行。是 2024-2026 Agent 时代头号安全威胁,OWASP LLM Top 10 第一名。
 

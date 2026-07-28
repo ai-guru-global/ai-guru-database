@@ -22,6 +22,7 @@ relationships:
   - target: "概念/rbac"
     type: related_to
 sources: []
+name_zh: "K8s 命名空间"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -29,6 +30,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # Namespace
+
+> 中文简称：K8s 命名空间
 
 > **一句话理解**: Namespace 是 K8s 集群里的「虚拟文件夹」，把 Pod、Service、ConfigMap 等资源按团队或项目分组，实现逻辑隔离与权限边界的软隔离。
 

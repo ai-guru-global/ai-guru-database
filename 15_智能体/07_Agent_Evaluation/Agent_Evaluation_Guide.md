@@ -7,6 +7,7 @@ summary: "> 从配置到运行的完整操作手册"
 created: 2026-05-31
 updated: 2026-05-31
 sources: []
+name_zh: "评估执行指南"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -14,6 +15,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # 评估执行指南
+
+> 中文简称：评估执行指南
 
 > 从配置到运行的完整操作手册
 

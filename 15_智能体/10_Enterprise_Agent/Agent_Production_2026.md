@@ -11,8 +11,11 @@ aliases:
   - Agent_Production_2026
 sources: []
 
+name_zh: "AI Agent 生产部署最佳实践 2026"
 ---
 # AI Agent 生产部署最佳实践 2026
+
+> 中文简称：AI Agent 生产部署最佳实践 2026
 
 > **一句话理解**: 将 AI Agent 从 Demo 部署到生产环境，需要的不仅是代码——而是一套涵盖架构设计、基础设施、监控治理的完整工程体系。本指南总结了 2026 年企业级 Agent 部署的最新模式和反模式。
 

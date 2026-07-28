@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "白金泽"
+name_en: "Jinze Bai"
 ---
 
 # Jinze Bai
+
+> 中文简称：白金泽 ｜ English Name: Jinze Bai
 
 白金泽领导阿里云通义千问团队，打造了 Qwen 系列从 7B 到 235B MoE 的完整模型家族，以 Apache 2.0 开源和 119 种语言覆盖闻名——全球最活跃的开源大模型生态之一。
 
@@ -207,3 +211,7 @@ sources: []
 
 ---
 *Last updated: 2026-07-21*
+
+## 关联导航
+
+- [[19_业界观点/Jinze_Bai/Jinze_Bai_2026_Update\|2026 动态更新]]

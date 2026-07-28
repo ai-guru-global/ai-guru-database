@@ -12,8 +12,11 @@ aliases:
   - MoE_Routing_and_Load_Balancing
 sources: []
 
+name_zh: "MoE 路由与负载均衡深度解析"
 ---
 # MoE 路由与负载均衡深度解析
+
+> 中文简称：MoE 路由与负载均衡深度解析
 
 ## 一句话理解
 

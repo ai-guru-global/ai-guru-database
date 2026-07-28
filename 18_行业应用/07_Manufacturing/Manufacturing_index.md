@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "制造业专题"
 ---
 
 # Manufacturing
+
+> 中文简称：制造业专题
 
 智能制造（Smart Manufacturing）— AI 在质量检测（quality inspection）、预测性维护（predictive maintenance）、生产优化与供应链协同中的应用。
 

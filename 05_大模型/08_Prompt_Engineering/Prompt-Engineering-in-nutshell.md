@@ -11,8 +11,11 @@ aliases:
   - "Prompt Engineering in nutshell"
 sources: []
 
+name_zh: "Prompt Engineering 速成指南"
 ---
 # Prompt Engineering 速成指南
+
+> 中文简称：Prompt Engineering 速成指南
 
 > 🎯 **目标**：掌握如何编写有效的提示词，让大语言模型产出高质量结果。
 

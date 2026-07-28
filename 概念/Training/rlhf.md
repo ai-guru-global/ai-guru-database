@@ -23,13 +23,16 @@ provenance:
 base_confidence: 0.70
 lifecycle: reviewed
 lifecycle_changed: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-25
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-06-16T00:00:00Z
+name_zh: "人类反馈强化学习"
 ---
 
 # RLHF
+
+> 中文简称：人类反馈强化学习
 
 RLHF（Reinforcement Learning from Human Feedback）是将大语言模型与人类偏好对齐的核心训练范式。通过三个阶段——监督微调（SFT）、奖励建模（Reward Modeling）、PPO强化学习优化——使模型输出更安全、更有用、更符合人类意图。RLHF是ChatGPT成功的核心技术，也是深度强化学习在NLP领域最重要的应用。
 
@@ -99,6 +102,17 @@ RLHF训练后的模型表现出明显的"对齐效应"：拒绝有害请求的�
 
 - 06_强化学习/02_Deep_RL/Deep_RL.md
 - 06_强化学习/02_Deep_RL/PPO_Deep_Dive.md
+
+## 源码级洞察（基于 trl v1.9.0 归档源码）
+
+归档位置：`code/llm-frameworks/trl-v1.9.0/`（PyPI sdist）。
+
+- **核心 API 已收敛为六个 Trainer**：`trl/trainer/` 只保留 SFT/DPO/GRPO/RLOO/KTO/Reward，均继承 `trainer/base_trainer.py` L67 `_BaseTrainer(Trainer)`——RLHF 全流水线（SFT→RM→RL）在同一套基类抽象下完成。
+- **经典 PPO 式 RLHF 已退入 experimental**：`PPOTrainer` 位于 `experimental/ppo/ppo_trainer.py` L297，与 ORPO/CPO/OnlineDPO/NashMD/XPO 等 30+ 方法同居——印证主流实践已从 PPO 转向 DPO/GRPO。
+- **奖励模型环节**：`trainer/reward_trainer.py` L227 `RewardTrainer` 实现 Bradley-Terry 成对比较训练，是三阶段流水线中 RM 阶段的参考实现。
+- **规模化基础设施**：`generation/vllm_client.py` L58 `VLLMClient` 提供训推分离（生成走 vLLM、训练进程 NCCL 同步权重），是工业级 RLHF 的关键工程模式。
+
+详见 [[07_模型训练/06_Alignment/RLHF_at_Scale_2026]] 第 13 节、[[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide]] 第 6 节。
 
 ## Related
 

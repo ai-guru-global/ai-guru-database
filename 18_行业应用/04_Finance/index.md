@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "金融"
+name_en: "Finance"
 ---
 
 # Finance
+
+> 中文简称：金融 ｜ English Name: Finance
 
 金融科技（FinTech）— AI 在风控（risk management）、量化交易、合规审查（compliance）、智能投顾和客户服务中的应用。
 

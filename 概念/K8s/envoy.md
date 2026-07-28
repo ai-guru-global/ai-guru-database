@@ -17,11 +17,14 @@ relationships:
   - target: "概念/service-mesh"
     type: used_by
 sources: []
+name_zh: "Envoy 服务代理"
 ---
 
 > **归档提示**: 此概念为通用云原生工具，与AI核心关联度较低。如需学习完整的K8s知识，请参考 CNCF 官方文档。
 
 # Envoy
+
+> 中文简称：Envoy 服务代理
 
 > **一句话理解**: Envoy 是云原生时代最常用的「智能流量代理」，能作为 Ingress、Sidecar、负载均衡器，提供动态路由、限流、熔断、可观测能力。
 

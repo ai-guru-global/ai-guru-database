@@ -12,8 +12,11 @@ aliases:
   - AI_System_Dashboard
 sources: []
 
+name_zh: "AI 系统监控仪表盘"
 ---
 # AI 系统监控仪表盘
+
+> 中文简称：AI 系统监控仪表盘
 
 > **一句话秒懂**: AI 系统仪表盘就是给你 AI 应用的"驾驶舱"——实时看到检索质量、Agent 决策、Token 消耗、A/B 测试、模型性能等一切关键指标。
 

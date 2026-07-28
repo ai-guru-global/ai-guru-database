@@ -5,9 +5,12 @@ category: ai-coding
 tags: [claude, enterprise, customer-service, idp, text-to-sql, qa, rag]
 source: yeasy/claude_guide/09_practical
 sources: []
+name_zh: "Claude 企业实践案例"
 ---
 
 # Claude 企业实践案例
+
+> 中文简称：Claude 企业实践案例
 
 > 一句话理解：AI 不是玩具，是生产力——从智能客服、文档处理、数据分析到 QA 流水线，Claude 在企业四大核心场景中落地。
 

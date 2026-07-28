@@ -11,8 +11,11 @@ aliases:
   - "CUDA OOM 诊断"
 sources: []
 
+name_zh: "AI 工作负载 GPU 故障远程诊断决策树"
 ---
 # AI 工作负载 GPU 故障远程诊断决策树
+
+> 中文简称：AI 工作负载 GPU 故障远程诊断决策树
 
 > **核心洞察**：AI/LLM 工作负载在 K8s 上的 GPU 工单是专有云最高价值的排障场景。远程诊断的关键是**先分清四类 OOM**（host OOM / container OOM / CUDA OOM / HAMi vGPU 超卖），再按训练/推理不同路径深入。GPU 问题 70% 可通过 `nvidia-smi` + Pod Events 定位。
 

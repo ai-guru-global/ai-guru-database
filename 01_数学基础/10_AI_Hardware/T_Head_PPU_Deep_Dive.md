@@ -21,8 +21,11 @@ aliases:
   - "T Head PPU Deep Dive"
   - T_Head_PPU_Deep_Dive
 
+name_zh: "平头哥 T-Head 真武 PPU 深度解析 2026"
 ---
 # 平头哥 T-Head 真武 PPU 深度解析 2026
+
+> 中文简称：平头哥 T-Head 真武 PPU 深度解析 2026
 
 > **一句话理解**: 平头哥是阿里巴巴旗下的芯片公司，其 2026 年主推的「真武」PPU 系列已跻身国产 AI 芯片第一梯队，在训练/推理一体化、万卡集群部署和生态兼容性上直接对标 NVIDIA H20/A800。
 

@@ -11,8 +11,11 @@ aliases:
   - Video_Understanding_Architectures
 sources: []
 
+name_zh: "视频理解架构深度解析"
 ---
 # 视频理解架构深度解析
+
+> 中文简称：视频理解架构深度解析
 
 ## 一句话理解
 

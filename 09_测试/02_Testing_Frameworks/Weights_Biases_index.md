@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "W&B 专题"
 ---
 
 # Weights & Biases
+
+> 中文简称：W&B 专题
 
 Weights & Biases — 实验跟踪（experiment tracking）、模型注册（model registry）与可视化平台在 AI 测试中的应用。
 

@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "容量规划专题"
 ---
 
 # Capacity Planning
+
+> 中文简称：容量规划专题
 
 容量规划（Capacity Planning）— GPU 集群容量预测（capacity forecasting）、资源配额管理与弹性扩缩策略（elastic scaling）。
 

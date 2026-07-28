@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "LLM 安全防护中间件"
 ---
 
 # LLM Guard
+
+> 中文简称：LLM 安全防护中间件
 
 [LLM Guard](https://github.com/protectai/llm-guard) 是 [Protect AI](https://protectai.com/) 开源的 LLM 安全防护中间件，在 LLM 的输入和输出两端提供**双向安全扫描**。它覆盖 Prompt 注入防御、PII 检测与脱敏、毒性内容过滤、幻觉检测、语言检测等 **20+ 种安全扫描器（Scanners）**，可作为 API 代理层或 SDK 集成到任何 LLM 应用中。
 

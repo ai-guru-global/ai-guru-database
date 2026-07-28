@@ -12,8 +12,11 @@ aliases:
   - Chinese_LLM_Comparison_Matrix
 sources: []
 
+name_zh: "中国大模型全厂商对比矩阵"
 ---
 # 中国大模型全厂商对比矩阵 (Chinese LLM Comparison Matrix)
+
+> 中文简称：中国大模型全厂商对比矩阵
 
 > **一句话理解**: 一张表看懂中国大模型全貌——从 DeepSeek 到字节豆包，15 家厂商的技术架构、性能、价格、开源策略全面对比。
 

@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "评测基准"
+name_en: "Benchmarks"
 ---
 
 # Benchmarks
+
+> 中文简称：评测基准 ｜ English Name: Benchmarks
 
 This page indexes the contents of `08_模型评估/02_Benchmarks`.
 

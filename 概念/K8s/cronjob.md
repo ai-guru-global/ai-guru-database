@@ -17,9 +17,12 @@ relationships:
   - target: "概念/pod"
     type: related_to
 sources: []
+name_zh: "K8s 定时任务"
 ---
 
 # CronJob
+
+> 中文简称：K8s 定时任务
 
 > **一句话理解**: CronJob 是 K8s 里的「定时器」——按照 cron 表达式周期性地创建 Job，让批处理任务到点就跑。
 

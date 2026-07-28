@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "Git LFS 大文件存储"
 ---
 
 # Git LFS 大文件存储
+
+> 中文简称：Git LFS 大文件存储
 
 > **一句话理解**: Git LFS 让 Git 能管理"巨型文件"——模型权重动辄数 GB，普通 Git 搞不定，LFS 用指针+对象存储解决。
 

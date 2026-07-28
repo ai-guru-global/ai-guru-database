@@ -12,8 +12,11 @@ aliases:
   - DRA_Deep_Dive
 sources: []
 
+name_zh: "DRA 深度解析:Kubernetes 设备分配的未来"
 ---
 # DRA (Dynamic Resource Allocation) 深度解析
+
+> 中文简称：DRA 深度解析:Kubernetes 设备分配的未来
 
 > **一句话理解**: DRA 是 Kubernetes 1.32+ 的现代设备分配机制——用声明式 `ResourceClaim` 替代 Device Plugin 的整数计数模型，支持拓扑亲和、设备共享与丰富属性匹配，与 [[12_架构基建/07_Hardware_Compute/CDI_Deep_Dive|CDI]] 共同构成下一代 GPU/加速器接入栈。
 

@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "实施落地"
+name_en: "Implementation"
 ---
 
 # 实现指南
+
+> 中文简称：实施落地 ｜ English Name: Implementation
 
 Agent 评估系统的技术实现：API 集成、配置模板、LLM-as-Judge、报告样例。
 

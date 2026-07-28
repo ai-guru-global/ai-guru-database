@@ -25,8 +25,11 @@ aliases:
   - "Nlp With Transformers"
   - "nlp with transformers"
 
+name_zh: "Transformers 自然语言处理"
 ---
 # NLP with Transformers
+
+> 中文简称：Transformers 自然语言处理
 
 > **一句话理解**: Hugging Face 团队核心成员撰写，以 Transformers 库为主线，从注意力机制讲到 BERT/GPT/T5，是 NLP 工程师掌握 Hugging Face 生态与 Transformer 应用的必备实战手册。
 

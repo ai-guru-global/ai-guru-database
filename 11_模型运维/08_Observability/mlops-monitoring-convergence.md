@@ -11,8 +11,11 @@ aliases:
   - "mlops monitoring convergence"
 sources: []
 
+name_zh: "MLOps 与监控的融合"
 ---
 # MLOps 与监控的融合 (MLOps-Monitoring Convergence)
+
+> 中文简称：MLOps 与监控的融合
 
 > MLOps 流水线与 AI 运维监控正在深度融合——模型监控从"事后告警"走向"自动化闭环"，成为 MLOps 不可或缺的一环。
 

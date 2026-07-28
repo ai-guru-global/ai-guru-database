@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "视觉论文"
+name_en: "Vision"
 ---
 
 # Vision
+
+> 中文简称：视觉论文 ｜ English Name: Vision
 
 视觉论文精读 — 计算机视觉里程碑论文深度解读，从 AlexNet 到 Diffusion Models 的完整脉络。
 

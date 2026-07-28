@@ -12,8 +12,11 @@ aliases:
   - AWS_Bedrock_Deep_Dive
 sources: []
 
+name_zh: "AWS Bedrock 深度解析: 亚马逊云托管基础模型服务"
 ---
 # AWS Bedrock 深度解析：亚马逊云托管基础模型服务
+
+> 中文简称：AWS Bedrock 深度解析: 亚马逊云托管基础模型服务
 
 > **一句话理解**: AWS Bedrock 是亚马逊云的托管基础模型服务，通过统一 API 提供 Claude、Llama、Titan、Stable Diffusion 等模型，并集成 RAG、Agent、微调和 Guardrails，帮助企业快速构建生成式 AI 应用。
 

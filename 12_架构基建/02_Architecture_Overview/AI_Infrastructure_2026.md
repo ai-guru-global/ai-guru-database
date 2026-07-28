@@ -12,8 +12,11 @@ aliases:
   - AI_Infrastructure_2026
 sources: []
 
+name_zh: "AI Infrastructure 2026 完全指南"
 ---
 # AI Infrastructure 2026 完全指南
+
+> 中文简称：AI Infrastructure 2026 完全指南
 
 > **一句话理解**: 2026 年的 AI 基础设施是围绕高效推理、智能路由和成本优化构建的——从硬件芯片革新到软件栈演进，从训练集群到推理服务，每一层都在追求极致的效率和可靠性。
 

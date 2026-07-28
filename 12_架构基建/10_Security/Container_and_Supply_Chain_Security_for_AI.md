@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "容器与供应链安全 for AI"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # 容器与供应链安全 for AI
+
+> 中文简称：容器与供应链安全 for AI
 
 > **一句话理解**: AI 镜像通常又大又复杂（CUDA/cuDNN/框架/模型），任何一个组件有漏洞都可能被利用，必须从构建到运行全流程防护。
 

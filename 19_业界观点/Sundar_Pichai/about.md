@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Sundar Pichai 简介"
 ---
 # Sundar Pichai 简介 (Sundar Pichai)
+
+> 中文简称：Sundar Pichai 简介
 
 ## 一句话概括
 

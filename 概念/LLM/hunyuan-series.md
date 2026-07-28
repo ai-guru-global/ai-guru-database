@@ -35,9 +35,12 @@ tier: core
 created: 2026-07-23
 updated: 2026-07-23
 sources: []
+name_zh: "腾讯混元 Hunyuan 模型系列"
 ---
 
 # 腾讯混元 Hunyuan 模型系列
+
+> 中文简称：腾讯混元 Hunyuan 模型系列
 
 > **一句话理解**: 腾讯全栈自研的"万级亿 +"参数 MoE 大模型,以 GQA+CLA KV 压缩和 256K 长上下文闻名,2024.11 起以 MIT-like 协议开源 Hunyuan-Large,引领混合 SSM-Transformer 路线。
 
@@ -339,7 +342,7 @@ Hunyuan TurboS 在 Transformer 层中**部分替换**为 Mamba SSM 层:
 ## 九、相关概念
 
 - [[概念/llm-architectures|LLM 架构]]
-- [[概念/moe|MoE 混合专家]]
+- [[概念/General/mixture-of-experts|MoE 混合专家]]
 - [[概念/kv-cache|KV Cache]]
 - [[概念/long-context-llm|长上下文 LLM]]
 - [[概念/reasoning-models|推理模型]]

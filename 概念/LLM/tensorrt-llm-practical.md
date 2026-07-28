@@ -26,9 +26,12 @@ tier: supporting
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "TensorRT-LLM 实战指南"
 ---
 
 # TensorRT-LLM 实战指南
+
+> 中文简称：TensorRT-LLM 实战指南
 
 ## 一句话总结
 

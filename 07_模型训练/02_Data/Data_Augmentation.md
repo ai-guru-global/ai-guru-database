@@ -12,8 +12,11 @@ aliases:
   - Data_Augmentation
 sources: []
 
+name_zh: "数据增强完全指南"
 ---
 # 数据增强完全指南 (Data Augmentation Complete Guide)
+
+> 中文简称：数据增强完全指南
 
 > 数据增强是提升模型泛化能力的核心技术——从基础变换到 AI 生成合成数据，系统解析数据增强的方法论和工程实践。
 

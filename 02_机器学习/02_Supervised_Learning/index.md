@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "监督学习"
+name_en: "Supervised Learning"
 ---
 
 # Supervised Learning
+
+> 中文简称：监督学习 ｜ English Name: Supervised Learning
 
 监督学习 — 使用标注数据训练模型进行分类和回归，是机器学习最基础也最广泛的范式。
 

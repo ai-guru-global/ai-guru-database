@@ -11,8 +11,11 @@ aliases:
   - Gradio_Deep_Dive
 sources: []
 
+name_zh: "Gradio: 机器学习 Demo 框架"
 ---
 # Gradio: 机器学习 Demo 框架
+
+> 中文简称：Gradio: 机器学习 Demo 框架
 
 > **一句话理解**: Gradio 是机器学习 Demo 框架——几行代码构建 Web 界面、输入输出组件丰富、分享链接即用，ML 模型的交互界面神器。
 

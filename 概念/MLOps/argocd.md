@@ -25,9 +25,12 @@ provenance:
 base_confidence: 0.90
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "GitOps 持续部署工具"
 ---
 
 # ArgoCD（GitOps 持续部署工具）
+
+> 中文简称：GitOps 持续部署工具
 
 ## 核心要点
 

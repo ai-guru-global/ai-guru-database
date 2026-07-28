@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.82
 lifecycle: reviewed
 tier: supporting
+name_zh: "AI 记忆层基础设施"
 ---
 
 # Mem0
+
+> 中文简称：AI 记忆层基础设施
 
 [Mem0](https://github.com/mem0ai/mem0)（前身为 Embedchain）是一个开源的 **AI 记忆层基础设施**，专为 LLM 应用和 AI Agent 提供自动化的长期记忆管理。与 Zep 类似但更**轻量灵活**，Mem0 支持用户（User）、会话（Session）和 Agent 三个维度的记忆，通过自动提取、更新和检索记忆来让 AI 应用具备跨会话的个性化能力。
 

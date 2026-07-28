@@ -15,7 +15,10 @@ aliases:
   - GenAI_L07_Building_Chat_Applications
 sources: []
 
+name_zh: "构建生成式 AI 驱动的聊天应用"
 ---
+> 中文简称：构建生成式 AI 驱动的聊天应用
+
 ## 学习目标
 
 完成本课后，你将能够：

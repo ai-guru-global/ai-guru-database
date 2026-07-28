@@ -32,9 +32,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "AI 集群高速网络 2.0"
 ---
 
 # AI 集群高速网络 2.0
+
+> 中文简称：AI 集群高速网络 2.0
 
 > **一句话理解**:AI 集群高速网络 2.0 是 2024-2026 训练大模型的"血管"——InfiniBand NDR 400Gbps / XDR 800Gbps、RoCE v2 国产化替代、GB200 NVL72 单柜 72 卡、NVLink 5 1.8TB/s 单 GPU、Ultra Ethernet 开放标准。Llama 3 405B 训练用 16K H100 + 800Gbps 网络,性能决定训练效率。
 
@@ -275,5 +278,5 @@ ib_write_bw -d mlx5_0 -x 3  # 3 为 RoCE
 - [[概念/distributed-parallelism|Distributed Parallelism]]
 - [[概念/nccl|Nccl]]
 - [[概念/ascend-npu|Ascend Npu]]
-- [[概念/zero-redundancy-optimizers|Zero Redundancy Optimizers]]
-- [[概念/gb200|Gb200]]
+- [[概念/Training/zero-redundancy-optimizer|Zero Redundancy Optimizers]]
+- [[概念/GPU/nvidia-gpu|Gb200]]

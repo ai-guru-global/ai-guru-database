@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "因果推断"
+name_en: "Causal Inference"
 ---
 
 # Causal Inference
+
+> 中文简称：因果推断 ｜ English Name: Causal Inference
 
 因果推断（Causal Inference）— 因果发现（causal discovery）、反事实推理（counterfactual reasoning）、工具变量与 A/B 测试中的因果分析。
 

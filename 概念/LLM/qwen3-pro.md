@@ -23,9 +23,12 @@ lifecycle: reviewed
 tier: core
 created: 2026-06-12
 updated: 2026-07-21
+name_zh: "Qwen3-Pro 专有优化模型"
 ---
 
 # Qwen3-Pro 专有优化模型
+
+> 中文简称：Qwen3-Pro 专有优化模型
 
 > **一句话理解**: Qwen3-Pro 是 AI Stack 的"杀手级应用"——效果与 235B 开源大模型持平，但推理性能翻倍，且仅能在专有云上使用。
 

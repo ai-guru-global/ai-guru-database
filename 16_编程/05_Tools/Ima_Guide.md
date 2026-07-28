@@ -11,8 +11,11 @@ aliases:
   - Ima_Guide
 sources: []
 
+name_zh: "Ima 使用指南"
 ---
 # Ima 使用指南
+
+> 中文简称：Ima 使用指南
 
 > **一句话**: Ima 是会员制 AI 研究工具，适合基于公众号和知识库的深度研究。
 

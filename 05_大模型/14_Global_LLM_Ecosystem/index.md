@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-21
 sources: []
+name_zh: "全球大模型生态"
+name_en: "Global LLM Ecosystem"
 ---
 
 # Global LLM Ecosystem
+
+> 中文简称：全球大模型生态 ｜ English Name: Global LLM Ecosystem
 
 全球大语言模型生态系统索引，覆盖 OpenAI、Anthropic、Google、Meta、Mistral 等主要厂商的深度解析。
 

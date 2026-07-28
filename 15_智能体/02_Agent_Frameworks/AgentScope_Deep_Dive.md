@@ -12,12 +12,15 @@ aliases:
   - AgentScope_Deep_Dive
 sources: []
 
+name_zh: "AgentScope: 阿里巴巴多智能体开发平台"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # AgentScope: 阿里巴巴多智能体开发平台
+
+> 中文简称：AgentScope: 阿里巴巴多智能体开发平台
 
 > **一句话理解**: AgentScope 是阿里巴巴开源的多智能体(Multi-Agent)开发平台，以"演员-舞台"为核心隐喻，提供丰富的环境交互能力和一键部署支持，让分布式多 Agent 应用的构建像编排剧本一样简单。
 

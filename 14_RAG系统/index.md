@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "RAG 系统"
+name_en: "RAG Systems"
 ---
 
 # RAG Systems
+
+> 中文简称：RAG 系统 ｜ English Name: RAG Systems
 
 This page indexes the contents of `RAG系统`.
 

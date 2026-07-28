@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "企业智能体"
+name_en: "Enterprise Agent"
 ---
 
 # Enterprise Agent
+
+> 中文简称：企业智能体 ｜ English Name: Enterprise Agent
 
 企业级智能体 — 企业环境下的 Agent 认证授权、治理框架与生产部署。
 

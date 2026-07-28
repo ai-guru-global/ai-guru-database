@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "神经架构搜索"
 ---
 # 神经架构搜索 (Neural Architecture Search)
+
+> 中文简称：神经架构搜索
 
 ## 1. NAS 核心框架
 
@@ -324,8 +327,8 @@ NAS 最有价值的场景:
 
 ## 相关文档
 
-- [[03_深度学习/Knowledge_Distillation/|知识蒸馏]] — 模型压缩
+- [[03_深度学习/09_Advanced_Topics/Knowledge_Distillation|知识蒸馏]] — 模型压缩
 - [[03_深度学习/08_DL_Frameworks/|深度学习框架]] — 实现工具
 - [[05_大模型/05_LLM_Architectures/|LLM 架构]] — 手动设计
 - [[07_模型训练/03_Optimization/|优化方法]] — 训练策略
-- [[10_部署推理/Edge_Deployment/|边缘部署]] — 约束优化
+- [[10_部署推理/01_Deployment_Fundamentals/Edge_Deployment|边缘部署]] — 约束优化

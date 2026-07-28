@@ -10,9 +10,12 @@ aliases:
   - "Data Scientist Path"
   - "Data Scientist Learning Path"
 sources: []
+name_zh: "数据科学家学习路径"
 ---
 
 # 数据科学家学习路径 (Data Scientist Learning Path)
+
+> 中文简称：数据科学家学习路径
 
 > 数据科学家是 AI 领域最成熟的职业路径之一——从统计基础到端到端 ML 项目，系统规划数据科学家的成长路径。
 

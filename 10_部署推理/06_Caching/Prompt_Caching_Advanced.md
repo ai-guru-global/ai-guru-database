@@ -14,8 +14,11 @@ aliases:
   - "Prompt Caching Advanced"
   - Prompt_Caching_Advanced
 
+name_zh: "Prompt 缓存高级技术"
 ---
 # Prompt 缓存高级技术
+
+> 中文简称：Prompt 缓存高级技术
 
 > **一句话理解**: Prompt 缓存是降低 LLM 推理成本和延迟的关键技术,本文覆盖前缀缓存、语义缓存、KV Cache 优化等高级方案。
 

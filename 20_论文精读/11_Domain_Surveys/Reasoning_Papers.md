@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "推理论文精读"
 ---
 # 推理论文精读 (Reasoning Papers)
+
+> 中文简称：推理论文精读
 
 ## 1. 论文列表
 
@@ -103,8 +106,8 @@ o3 的突破:
 ## 5. 交叉引用
 
 - [[20_论文精读/|论文精读]]
-- [[20_论文精读/Agent_Papers/|Agent 论文]]
-- [[20_论文精读/Multimodal/|多模态论文]]
+- [[20_论文精读/11_Domain_Surveys/Agent_Papers|Agent 论文]]
+- [[20_论文精读/08_Vision/index|多模态论文]]
 - [[05_大模型/09_Reasoning_Models/Reasoning_RL_Training_Pipeline|推理训练流水线]]
 - [[06_强化学习/03_RLHF_Alignment/DPO_Variants_2026|DPO 变体]]
 

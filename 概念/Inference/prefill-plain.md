@@ -21,9 +21,12 @@ aliases:
   - "prefill plain"
   - "预填充 大白话"
 sources: []
+name_zh: "Prefill 大白话解释"
 ---
 
 # Prefill 大白话解释
+
+> 中文简称：Prefill 大白话解释
 
 > 一句话：Prefill 就是 AI **"读题"** 的阶段——把你输入的内容从头过一遍、读懂，存成一组记忆（KV Cache），准备开始回答。
 

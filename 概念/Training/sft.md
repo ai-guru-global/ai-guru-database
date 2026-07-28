@@ -22,7 +22,7 @@ sources:
 summary: "SFT（Supervised Fine-Tuning）是让预训练 LLM 学会"按指令回答"的关键步骤，用 (prompt, response) 对训练模型，是 RLHF / DPO 等对齐方法的前置阶段。"
 lifecycle: reviewed
 tier: core
-updated: 2026-07-21
+updated: 2026-07-25
 provenance:
   extracted: 0.92
   inferred: 0.06
@@ -30,9 +30,12 @@ provenance:
 base_confidence: 0.95
 created: 2026-06-24
 updated: 2026-06-24
+name_zh: "监督微调"
 ---
 
 # SFT（Supervised Fine-Tuning）
+
+> 中文简称：监督微调
 
 ## 核心要点
 
@@ -170,6 +173,16 @@ llamafactory-cli train \
 | 灾难性遗忘 | 微调后通用能力丧失 | 混入通用数据 + KL 正则 |
 | 过拟合 | 训练好测试差 | 早停 + dropout + 数据增强 |
 | 长度不匹配 | 截断或 OOM | 选合适 max_seq_length |
+
+## 源码级洞察（基于 LLaMA-Factory v0.9.5 归档源码）
+
+> 证据位于 `code/llm-frameworks/LLaMA-Factory-v0.9.5/src/llamafactory/`：
+
+- **SFT 流水线实体**：`run_sft()`（`train/sft/workflow.py` L41）——加模型→套模板→建 Trainer，由 `run_exp()`（`train/tuner.py` L139）按 `stage: sft` 分发。
+- **数据模板是第一道门**：`Template`（`data/template.py` L41）+ `get_template_and_fix_tokenizer()`（L628）把原始问答对渲染成各模型专属 chat 格式——模板选错是 SFT 效果差的头号原因。
+- **与 LoRA 的接头**：`init_adapter()`（`model/adapter.py` L293）在 SFT 前把基座包装成 peft 模型。详见 [[05_大模型/07_Fine_tuning_Techniques/LLaMA_Factory_Deep_Dive|LLaMA-Factory 深度解析]]。
+
+---
 
 ## Related
 

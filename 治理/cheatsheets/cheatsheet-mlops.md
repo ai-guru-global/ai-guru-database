@@ -7,9 +7,12 @@ updated: 2026-06-24
 tier: core
 summary: "LLMOps 全栈速查：从 Prompt 管理、CI/CD、灰度发布、可观测性、成本优化到 SLO/Error Budget 的端到端生产级实践框架。"
 sources: []
+name_zh: "LLMOps 速查表"
 ---
 
 # LLMOps 速查表
+
+> 中文简称：LLMOps 速查表
 
 > **核心洞察**：LLMOps ≠ 传统 MLOps。LLM 应用的不确定性（temperature > 0 时不可重现）、高 token 成本、Prompt 敏感性使得 LLMOps 需要**三层治理**：Prompt/数据 → 推理服务 → 业务效果。
 > 详见 [[MLOps]] · [[13_运维]] · [[LLMOps_2026]] · [[Cost_Optimization_AI_Deep_Dive]] · [[SLO_Error_Budget_AI_Deep_Dive]]

@@ -11,12 +11,15 @@ aliases:
   - Agent_Harness_Deep_Dive
 sources: []
 
+name_zh: "Agent Harness 技术深度解析"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Agent Harness 技术深度解析
+
+> 中文简称：Agent Harness 技术深度解析
 
 > **一句话理解**: Agent Harness 是 AI Agent 工业化落地的核心基础设施，它通过标准化的测试环境、多维度评估体系和完整可观测性，让 Agent 从"实验品"变成"可信赖的生产系统"。
 

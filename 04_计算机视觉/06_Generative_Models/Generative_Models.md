@@ -11,8 +11,11 @@ aliases:
   - Generative_Models
 sources: []
 
+name_zh: "生成模型"
 ---
 # 生成模型 (Generative Models)
+
+> 中文简称：生成模型
 
 > **一句话理解**: 生成模型就像"AI 画家"——给定文字描述或随机噪声,能创作出逼真的图像、音乐甚至视频,它们不是简单地记忆训练数据,而是学会了"创造"的能力。
 
@@ -644,7 +647,7 @@ result.save("controlnet_output.png")
 - [[../../03_深度学习/04_Generative_Models/Diffusion_Models_Deep_Dive|Diffusion 深度页]] — 扩散模型技术细节
 - [[../../03_深度学习/04_Generative_Models/GAN_Deep_Dive|GAN 深度页]] — 对抗生成网络详解
 - [[../../概念/Vision/generative-vision-models|生成式视觉模型概念卡]] — 概念定义与分类
-- [[../../14_RAG系统/05_RAG_Production|视觉 RAG]] — 图像生成与检索增强结合
+- [[14_RAG系统/05_RAG_Production|视觉 RAG]] — 图像生成与检索增强结合
 
 ---
 

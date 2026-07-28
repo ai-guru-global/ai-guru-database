@@ -11,8 +11,11 @@ aliases:
   - Milvus_Deep_Dive
 sources: []
 
+name_zh: "Milvus: 超大规模向量数据库"
 ---
 # Milvus: 超大规模向量数据库
+
+> 中文简称：Milvus: 超大规模向量数据库
 
 > **一句话理解**: Milvus 是超大规模向量数据库——万亿向量秒级检索、分片水平扩展、混合标量过滤，AI 时代的高性能向量检索引擎。
 

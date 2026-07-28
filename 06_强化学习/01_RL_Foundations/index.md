@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "强化学习基础"
+name_en: "RL Foundations"
 ---
 
 # RL Foundations
+
+> 中文简称：强化学习基础 ｜ English Name: RL Foundations
 
 本页面索引 `06_强化学习/01_RL_Foundations` 目录下的所有内容。
 
@@ -199,3 +203,7 @@ sources: []
 
 ---
 *Last updated: 2026-07-21*
+
+## 相关文档
+
+- [[06_强化学习/01_RL_Foundations/Bandit_Algorithms|多臂老虎机算法]]

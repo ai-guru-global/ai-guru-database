@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "效率论文"
+name_en: "Efficiency"
 ---
 
 # Efficiency
+
+> 中文简称：效率论文 ｜ English Name: Efficiency
 
 效率论文精读（Efficiency Papers）— 模型加速与高效推理的核心论文：FlashAttention、LoRA 与 Matryoshka 表示学习。
 

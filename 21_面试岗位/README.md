@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "AI 面试准备"
 ---
 # AI 面试准备 (Interviews)
+
+> 中文简称：AI 面试准备
 
 > **一句话理解**: 本章节为 AI/ML 相关岗位面试提供系统化的准备资料，覆盖 20+ 个核心岗位的核心职责、能力要求、考点梳理与面试题库。
 
@@ -101,12 +104,12 @@ sources: []
 | 文件 | 用途 |
 |------|------|
 | [interview_notes_template.md](21_面试岗位/Interview_Guide/interview_notes_template.md) | 面试复盘模板 — 每次面试后记录经验教训 |
-| [jobs.md](21_面试岗位/Job_Market/jobs.md) | AI 岗位与工种清单 — 21 个岗位的能力地图 |
+| [jobs.md](21_面试岗位/Interview_Guide/jobs.md) | AI 岗位与工种清单 — 21 个岗位的能力地图 |
 | [Interviews_for_dummy.md](21_面试岗位/Interview_Guide/Interviews_for_dummy.md) | AI 面试准备小白版 — 适合零基础读者 |
 
 ## Related
 
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 - [[21_面试岗位/interview_notes_template|面试复盘模板]]
 - [[21_面试岗位/Interviews_for_dummy|AI 面试准备 - 小白版]]
 - [[治理/career-interviews|AI 面试与职业发展]]

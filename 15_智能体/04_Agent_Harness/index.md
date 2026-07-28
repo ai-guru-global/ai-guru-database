@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "智能体 Harness"
+name_en: "Agent Harness"
 ---
 
 # Agent Harness
+
+> 中文简称：智能体 Harness ｜ English Name: Agent Harness
 
 智能体测试工具 (Harness) — Agent 评估测试架构、核心子系统、安全与部署指南。
 

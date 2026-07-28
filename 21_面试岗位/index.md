@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "面试岗位"
+name_en: "AI Career Interviews"
 ---
 
 # Interviews
+
+> 中文简称：面试岗位 ｜ English Name: AI Career Interviews
 
 This page indexes the contents of `面试岗位`.
 
@@ -39,7 +43,7 @@ This page indexes the contents of `面试岗位`.
 
 - [[21_面试岗位/interview_notes_template|Interview Notes Template]]
 - [[21_面试岗位/Interviews_for_dummy|Interviews For Dummy]]
-- [[21_面试岗位/jobs|Jobs]]
+- [[21_面试岗位/Interview_Guide/jobs|Jobs]]
 - [[21_面试岗位/README|README]]
 - [[21_面试岗位/README_for_dummy|README For Dummy]]
 - [[21_面试岗位/System_Design_for_AI|System Design For AI]]
@@ -226,3 +230,9 @@ This page indexes the contents of `面试岗位`.
 - [ ] 了解目标公司和岗位的具体要求
 - [ ] 准备好向面试官提问的问题清单
 - [ ] 薪资期望已基于市场调研确定
+
+## 相关文档
+
+- [[21_面试岗位/Interview_Guide/Interview-in-nutshell|面试岗位速览 (nutshell)]]
+- [[21_面试岗位/AI_Safety_Engineer/question_bank|AI 安全工程师题库]]
+- [[21_面试岗位/Agent_Engineer/question_bank|Agent 工程师题库]]

@@ -10,9 +10,12 @@ aliases:
   - "LLM Guardrails and Safety Ops 2026"
   - LLM_Guardrails_and_Safety_Ops_2026
 sources: []
+name_zh: "LLM 护栏与安全运维 2026"
 ---
 
 # LLM 护栏与安全运维 2026
+
+> 中文简称：LLM 护栏与安全运维 2026
 
 > **一句话理解**: LLM 生产环境的护栏不是「加个 Moderation API」就能了事，而是一套覆盖输入检测、输出过滤、编排策略、版本化、审计留痕的完整工程体系——Guardrails as Code 是 2026 年企业落地的最低门槛。
 

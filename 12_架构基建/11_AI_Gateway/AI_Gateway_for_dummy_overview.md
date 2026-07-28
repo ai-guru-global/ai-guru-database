@@ -12,8 +12,11 @@ aliases:
   - AI_Gateway_for_dummy_overview
 sources: []
 
+name_zh: "14 AI Gateway — 小白版 🚪"
 ---
 # 14 AI Gateway — 小白版 🚪
+
+> 中文简称：14 AI Gateway — 小白版 🚪
 
 > **一句话秒懂**: AI Gateway 就是 AI 系统的"智能路由器"——管理 AI 请求的路由、限流、认证、监控，让多个 AI 模型和服务像一个整体一样高效运行。
 

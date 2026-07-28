@@ -27,8 +27,11 @@ aliases:
   - "Microsoft AI Agents L12 Context Engineering"
   - Microsoft_AI_Agents_L12_Context_Engineering
 
+name_zh: "L12 上下文工程：四类上下文、六大管理策略与四大失败模式"
 ---
 # L12 上下文工程：四类上下文、六大管理策略与四大失败模式
+
+> 中文简称：L12 上下文工程：四类上下文、六大管理策略与四大失败模式
 
 > 来源：[Microsoft AI Agents for Beginners / 12-context-engineering](https://github.com/microsoft/ai-agents-for-beginners/tree/main/12-context-engineering)
 

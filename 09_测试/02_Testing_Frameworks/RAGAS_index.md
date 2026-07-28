@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "RAGAS 专题"
 ---
 
 # RAGAS
+
+> 中文简称：RAGAS 专题
 
 RAGAS — RAG 系统评估框架（evaluation framework），涵盖 Faithfulness、Answer Relevance 与 Context Recall 等指标。
 

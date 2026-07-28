@@ -12,8 +12,11 @@ aliases:
   - AI_Stack_Production_Toolchain
 sources: []
 
+name_zh: "AI Stack 生产工具链总览"
 ---
 # AI Stack 生产工具链总览
+
+> 中文简称：AI Stack 生产工具链总览
 
 > **一句话理解**: AI Stack 生产工具链是私有化 AI 一体机从开发、训练、模型管理、推理部署到容器化运维的全栈命令行工具集合。
 

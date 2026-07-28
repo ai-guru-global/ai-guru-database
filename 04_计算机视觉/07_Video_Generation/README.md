@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "AI视频生成"
 ---
 # AI 视频生成 (Video Generation)
+
+> 中文简称：AI视频生成
 
 ## 文档导航
 

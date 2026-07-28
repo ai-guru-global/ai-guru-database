@@ -19,9 +19,12 @@ lifecycle: reviewed
 tier: core
 created: 2026-06-16
 updated: 2026-07-21
+name_zh: "SSO 与 SAML2 企业身份认证"
 ---
 
 # SSO 与 SAML2 企业身份认证 (Enterprise SSO)
+
+> 中文简称：SSO 与 SAML2 企业身份认证
 
 > 一次登录，处处通行——企业身份管理的终极目标。
 

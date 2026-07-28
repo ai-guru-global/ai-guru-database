@@ -21,9 +21,12 @@ aliases:
   - "K8s Secret"
   - "Kubernetes Secret"
 sources: []
+name_zh: "K8s 机密对象"
 ---
 
 # Secret
+
+> 中文简称：K8s 机密对象
 
 > **一句话理解**: Secret 是 Kubernetes 用来存放密码、Token、证书等敏感数据的「保密信封」，让 Pod 能安全使用这些信息而无需写进镜像或 YAML 明文。
 

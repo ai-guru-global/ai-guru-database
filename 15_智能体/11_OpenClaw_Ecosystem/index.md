@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "OpenClaw 生态"
+name_en: "OpenClaw Ecosystem"
 ---
 
 # OpenClaw Ecosystem
+
+> 中文简称：OpenClaw 生态 ｜ English Name: OpenClaw Ecosystem
 
 OpenClaw 生态 — OpenClaw 智能体系统及其生态工具深度解析。
 

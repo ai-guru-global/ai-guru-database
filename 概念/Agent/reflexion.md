@@ -25,9 +25,12 @@ provenance:
 base_confidence: 0.88
 created: 2026-06-24
 updated: 2026-06-24
+name_zh: "自我反思"
 ---
 
 # Reflexion（自我反思）
+
+> 中文简称：自我反思
 
 ## 核心要点
 

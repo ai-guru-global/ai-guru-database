@@ -13,8 +13,11 @@ aliases:
   - "Papers With Code"
   - "papers with code"
 
+name_zh: "论文代码平台"
 ---
 # Papers with Code
+
+> 中文简称：论文代码平台
 
 > **一句话理解**: 论文+代码+排行榜的综合平台,追踪各领域 SOTA 结果,是 AI 研究者的核心工具。
 
@@ -30,7 +33,7 @@ aliases:
 - **SOTA 排行榜**: 各任务的最先进结果对比
 - **数据集**: 常用数据集的索引和统计
 
-> **关联**: -> [[20_Papers|论文精读]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[20_论文精读/index|论文精读]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识框架

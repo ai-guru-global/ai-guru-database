@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-25
 sources: []
+name_zh: "编程实践"
+name_en: "Practice"
 ---
 
 # 编程实践
+
+> 中文简称：编程实践 ｜ English Name: Practice
 
 AI 编程实战 — Vibe Coding 上手指南、提示模板和企业级应用案例。
 

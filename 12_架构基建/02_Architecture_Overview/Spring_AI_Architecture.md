@@ -12,8 +12,11 @@ aliases:
   - Spring_AI_Architecture
 sources: []
 
+name_zh: "Spring AI 系统架构设计"
 ---
 # Spring AI 系统架构设计
+
+> 中文简称：Spring AI 系统架构设计
 
 > 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
 >

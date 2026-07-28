@@ -25,9 +25,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: core
+name_zh: "APG 自研加速卡"
 ---
 
 # APG 自研加速卡
+
+> 中文简称：APG 自研加速卡
 
 > **一句话理解**: APG 是阿里云的"自研 AI 芯片"——AI Stack 的首选 GPU，高度兼容 CUDA，是国产替代 NVIDIA 的关键载体。
 

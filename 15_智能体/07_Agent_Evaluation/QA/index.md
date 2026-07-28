@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "质量保障"
+name_en: "QA"
 ---
 
 # Quality Assurance
+
+> 中文简称：质量保障 ｜ English Name: QA
 
 Agent 系统的质量保证流程（QA process）与性能基准（performance benchmarks）— 涵盖回归测试、SLO 定义与持续监控。
 

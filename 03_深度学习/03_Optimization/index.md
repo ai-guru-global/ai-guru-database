@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "深度学习优化"
+name_en: "Optimization"
 ---
 
 # Optimization
+
+> 中文简称：深度学习优化 ｜ English Name: Optimization
 
 优化算法（Optimization Algorithms）— SGD、Adam、学习率调度（LR scheduling）与二阶优化方法。
 

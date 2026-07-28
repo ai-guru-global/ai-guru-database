@@ -31,9 +31,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "LLM 安全对齐实战 Pipeline"
 ---
 
 # LLM 安全对齐实战 Pipeline：SFT → RLHF/DPO
+
+> 中文简称：LLM 安全对齐实战 Pipeline
 
 ## 一句话总结
 

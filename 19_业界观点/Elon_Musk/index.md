@@ -13,9 +13,13 @@ sources:
   - "https://aeroastro.mit.edu/news-events/events/centennial-symposium/"
   - "https://futureoflife.org/open-letter/pause-giant-ai-experiments/"
   - "https://x.ai/"
+name_zh: "Elon Musk 人物索引"
+name_en: "Elon Musk"
 ---
 
 # Elon Musk 人物索引
+
+> 中文简称：Elon Musk 人物索引 ｜ English Name: Elon Musk
 
 > **一句话概括**: SpaceX 创始人兼 CEO、Tesla CEO、xAI 创始人、X (原 Twitter) 所有者、OpenAI 联合创始人（2015，2018 离开）——最早公开警告 AI 存在性风险 (existential risk) 的科技巨头之一，称 AI 为"我们最大的生存威胁"；在自动驾驶、人形机器人 (Optimus)、大语言模型 (Grok) 等领域全面推进 AI 应用。
 
@@ -177,6 +181,7 @@ Musk 的 AI 立场充满矛盾，需要批判性看待：
 - [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
 - [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
 - [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/Elon_Musk/Elon_Musk_2026_Update\|2026 动态更新]]
 - [[19_业界观点/index\|业界观点首页]]
 
 ---

@@ -8,9 +8,12 @@ updated: 2026-07-21
 sources:
   - "https://arxiv.org/abs/1706.03762"  # Attention Is All You Need
   - "https://arxiv.org/abs/2005.14165"  # GPT-3
+name_zh: "大语言模型"
 ---
 
 # Large Language Model（大语言模型）
+
+> 中文简称：大语言模型
 
 ## 定义
 

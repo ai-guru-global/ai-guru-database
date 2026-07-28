@@ -15,9 +15,12 @@ relationships:
   - target: "概念/sli"
     type: related_to
 sources: []
+name_zh: "错误预算"
 ---
 
 # Error Budget（错误预算）
+
+> 中文简称：错误预算
 
 > **一句话理解**: 错误预算 = 「你允许服务一个月出多久的错」——预算花光了，就先别发版，先把稳定性修好。
 

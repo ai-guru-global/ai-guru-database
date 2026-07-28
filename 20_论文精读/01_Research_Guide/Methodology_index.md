@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "研究方法论专题"
 ---
 
 # Methodology
+
+> 中文简称：研究方法论专题
 
 方法论论文精读（Methodology Papers）— 研究方法论（research methodology）、实验设计（experiment design）与科学方法相关的经典论文，涵盖消融实验（ablation study）、统计显著性（statistical significance）与可复现性（reproducibility）等核心方法论主题。
 

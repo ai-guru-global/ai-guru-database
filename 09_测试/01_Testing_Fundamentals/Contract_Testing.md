@@ -11,8 +11,11 @@ aliases:
   - Contract_Testing
 sources: []
 
+name_zh: "契约测试"
 ---
 # 契约测试 (Contract Testing for AI Systems)
+
+> 中文简称：契约测试
 
 > **一句话理解**: 契约测试是服务间的"协议保证书"——确保 AI 系统中各服务（LLM、向量库、Agent）之间的 API 交互符合约定，防止版本升级导致的兼容性问题。
 

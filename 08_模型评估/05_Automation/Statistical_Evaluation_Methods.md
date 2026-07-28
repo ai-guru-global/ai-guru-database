@@ -4,9 +4,12 @@ tags: [evaluation, statistics, significance-testing, confidence-intervals, produ
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "统计评估方法"
 ---
 
 # Statistical Evaluation Methods for AI
+
+> 中文简称：统计评估方法
 
 ## Why Statistical Rigor Matters
 

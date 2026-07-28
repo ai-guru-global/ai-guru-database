@@ -4,9 +4,12 @@ tags: [ai-ops, capacity-planning, gpu, scaling, production, cost]
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "AI 容量规划"
 ---
 
 # Capacity Planning for AI Systems 2026
+
+> 中文简称：AI 容量规划
 
 ## Overview
 

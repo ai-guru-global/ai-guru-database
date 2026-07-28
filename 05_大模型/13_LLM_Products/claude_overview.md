@@ -12,8 +12,11 @@ aliases:
   - claude_overview
 sources: []
 
+name_zh: "Claude 深度解析"
 ---
 # Claude 深度解析 (Claude Deep Dive)
+
+> 中文简称：Claude 深度解析
 
 > Claude 是 Anthropic 开发的 AI 助手——以安全性和有用性著称，2026 年已成为企业和开发者的首选 AI 平台之一。
 

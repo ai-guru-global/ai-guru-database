@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "提示词运维"
+name_en: "Prompt Ops"
 ---
 
 # Prompt Ops
+
+> 中文简称：提示词运维 ｜ English Name: Prompt Ops
 
 提示词运维（Prompt Operations）— Prompt 版本管理（version management）、A/B 测试、效果监控和提示词平台的工程化实践。
 

@@ -24,8 +24,11 @@ aliases:
   - ms_swift_Deep_Dive
 sources: []
 
+name_zh: "ms-swift 深度解析：魔搭大模型训练推理全链路框架"
 ---
 # ms-swift 深度解析：魔搭大模型训练推理全链路框架
+
+> 中文简称：ms-swift 深度解析：魔搭大模型训练推理全链路框架
 
 ## 1. 框架概览
 

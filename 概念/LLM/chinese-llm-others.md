@@ -36,9 +36,12 @@ tier: core
 created: 2026-07-23
 updated: 2026-07-23
 sources: []
+name_zh: "国产次主流大模型合并卡"
 ---
 
 # 国产次主流大模型合并卡
+
+> 中文简称：国产次主流大模型合并卡
 
 > **一句话理解**:除"五虎"(Qwen / DeepSeek / GLM / Doubao / Hunyuan)之外的国产 LLM 重要玩家——百度文心(国内首个对标 GPT-4 的闭源旗舰 + 2025-03 全面开源)、华为盘古(政企 + 行业大模型)、昆仑天工(天工 Skywork 多任务专家矩阵)、智源悟道(超大规模 MoE 先行者)、CodeGeeX(代码 + 智谱家族)。理解它们就理解了国产 LLM 生态的"全光谱"。
 
@@ -367,5 +370,5 @@ sources: []
 - [[概念/yi-series|Yi Series]]
 - [[概念/stepfun-series|Stepfun Series]]
 - [[概念/internlm-3-series|Internlm 3 Series]]
-- [[概念/moe|Moe]]
+- [[概念/General/mixture-of-experts|Moe]]
 - [[概念/rag|Rag]]

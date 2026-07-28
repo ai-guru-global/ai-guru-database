@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "LLM 数据工程"
 ---
 # LLM 数据工程 (LLM Data Engineering)
+
+> 中文简称：LLM 数据工程
 
 > **一句话理解**: 数据是 LLM 的燃料——同样的模型架构，数据质量/数量/配比的差异，可以决定一个模型是「废铁」还是「SOTA」。
 

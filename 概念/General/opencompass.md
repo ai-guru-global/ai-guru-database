@@ -26,8 +26,11 @@ updated: 2026-07-21
 aliases:
   - Opencompass
 
+name_zh: "司南评测平台"
 ---
 # OpenCompass
+
+> 中文简称：司南评测平台
 
 > 国产 LLM 评测的「一站式平台」——从学科考试到多模态，全面评估中文大模型。
 

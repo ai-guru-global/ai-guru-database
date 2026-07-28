@@ -12,8 +12,11 @@ aliases:
   - RLHF_DPO_Deep_Dive
 sources: []
 
+name_zh: "RLHF 与 DPO 深度解读"
 ---
 # RLHF 与 DPO 深度解读 (从 InstructGPT 到 Direct Preference Optimization)
+
+> 中文简称：RLHF 与 DPO 深度解读
 
 > **一句话理解**: RLHF 就像给一个博览群书但口无遮拦的天才请了一个"礼仪教练"——通过人类反馈的奖励信号，教会模型什么是"好回答"、什么是"坏回答"，而 DPO 则直接从偏好数据中学习，跳过了复杂的强化学习训练过程。
 

@@ -11,8 +11,11 @@ aliases:
   - Domestic_Cloud_Agents
 sources: []
 
+name_zh: "国内云厂商 Agent 测评详情"
 ---
 # 国内云厂商 Agent 测评详情
+
+> 中文简称：国内云厂商 Agent 测评详情
 
 > 阿里云、腾讯云、百度智能云、华为云、字节火山、讯飞星火、DeepSeek 七大国内云产品智能体的深度测评
 

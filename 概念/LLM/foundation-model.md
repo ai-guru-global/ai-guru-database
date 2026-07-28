@@ -26,9 +26,12 @@ provenance:
 base_confidence: 0.92
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "基础模型"
 ---
 
 # Foundation Model（基础模型）
+
+> 中文简称：基础模型
 
 > **一句话理解**: Foundation Model = “通用预训练大模型”，是 LLM 产业的“原材料”；微调和 Prompt 工程都是在这个基础上做适配。
 
@@ -194,7 +197,7 @@ print(results.summary())  # 各维度得分 + 成本分析
 - [[概念/LLM/large-language-model|大语言模型]]
 - [[12_架构基建/AWS_Bedrock_Deep_Dive|AWS Bedrock 深度解析]]
 - [[05_大模型/07_Fine_tuning_Techniques|微调技术]]
-- [[08_模型评估/Benchmark_Deep_Dive|基准测试深度解析]]
+- [[08_模型评估/02_Benchmarks/index|基准测试深度解析]]
 - [[概念/LLM/llm-benchmarks|LLM Benchmarks]]
 - [[概念/LLM/llm-production-pipeline|LLM 生产管线]]
 

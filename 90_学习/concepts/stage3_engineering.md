@@ -22,8 +22,11 @@ aliases:
 sources:
   - "https://www.oreilly.com/library/view/ai-engineering/9781098166298/"
 
+name_zh: "Stage 3: 工程实践"
 ---
 # Stage 3: 工程实践
+
+> 中文简称：Stage 3: 工程实践
 
 > **"从实验室模型到线上产品——这一步的差距，淘汰了 90% 的 AI 项目。"**
 >

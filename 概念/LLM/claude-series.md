@@ -31,9 +31,12 @@ tier: core
 created: 2026-07-23
 updated: 2026-07-23
 sources: []
+name_zh: "Claude / Anthropic 模型系列"
 ---
 
 # Claude / Anthropic 模型系列
+
+> 中文简称：Claude / Anthropic 模型系列
 
 > **一句话理解**:Anthropic 的"安全为先"闭源旗舰——从 Claude 3 的多模态起步,经 3.5 Sonnet 横扫基准、3.7 引入混合推理,到 Opus 4.5/4.6 强化长时 Agent 与编程能力,叠加 MCP 协议与 Claude Code,正在重塑企业 AI 落地路径。
 

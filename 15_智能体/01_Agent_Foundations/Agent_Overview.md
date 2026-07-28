@@ -12,8 +12,11 @@ aliases:
   - Agent_Overview
 sources: []
 
+name_zh: "AI Agent 全景概览"
 ---
 # AI Agent 全景概览 (AI Agent Overview)
+
+> 中文简称：AI Agent 全景概览
 
 > AI Agent 是 2025-2026 年最重要的技术趋势——从单 Agent 到多 Agent 协作，从工具调用到自主决策，系统解析 AI Agent 的技术全景。
 

@@ -4,9 +4,12 @@ tags: [reinforcement-learning, multi-agent, MARL, cooperative, competitive, prod
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "多智能体强化学习"
 ---
 
 # Multi-Agent Reinforcement Learning (MARL)
+
+> 中文简称：多智能体强化学习
 
 ## Overview
 

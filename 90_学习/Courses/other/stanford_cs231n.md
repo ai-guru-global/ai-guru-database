@@ -12,8 +12,11 @@ aliases:
   - stanford_cs231n
 sources: []
 
+name_zh: "Stanford CS231n: 计算机视觉与深度学习"
 ---
 # Stanford CS231n: 计算机视觉与深度学习
+
+> 中文简称：Stanford CS231n: 计算机视觉与深度学习
 
 > Stanford 经典计算机视觉课程——CNN 架构、目标检测、图像生成、视觉 Transformer。
 

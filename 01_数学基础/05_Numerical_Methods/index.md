@@ -8,8 +8,12 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "数值方法"
+name_en: "Numerical Methods"
 ---
 # 数值方法 (Numerical Methods)
+
+> 中文简称：数值方法 ｜ English Name: Numerical Methods
 
 AI 系统的底层是数值计算。本模块覆盖浮点运算、稀疏矩阵、数值稳定性等核心主题，帮助工程师理解和诊断训练/推理中的数值问题。
 
@@ -31,8 +35,8 @@ AI 系统的底层是数值计算。本模块覆盖浮点运算、稀疏矩阵�
 
 ## 与其他模块的关联
 
-- [[07_模型训练/Mixed_Precision_Training/|混合精度训练]] — FP16/BF16/FP8 实战
-- [[10_部署推理/Model_Compression/|模型压缩与量化]] — INT8/INT4 量化中的精度损失
+- [[07_模型训练/03_Optimization/Mixed_Precision_Training|混合精度训练]] — FP16/BF16/FP8 实战
+- [[10_部署推理/03_Inference_Optimization/Model_Compression|模型压缩与量化]] — INT8/INT4 量化中的精度损失
 - [[05_大模型/05_LLM_Architectures/LLM_Internals_Inference|推理内幕]] — KV Cache 数值精度
 
 ## 进阶知识拓展
@@ -209,3 +213,7 @@ AI 系统的底层是数值计算。本模块覆盖浮点运算、稀疏矩阵�
 - [ ] 参与社区讨论和技术分享
 - [ ] 关注顶会最新成果
 - [ ] 将学习成果应用到实际工作中
+
+## 相关文档
+
+- [[01_数学基础/05_Numerical_Methods/Numerical_Methods_for_dummy|数值方法小白版]]

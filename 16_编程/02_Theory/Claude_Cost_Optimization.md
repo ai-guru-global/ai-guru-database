@@ -5,9 +5,12 @@ category: ai-coding
 tags: [claude, cost-optimization, token, prompt-caching, context-management, routing]
 source: yeasy/claude_guide/10_optimization
 sources: []
+name_zh: "Claude 成本优化与性能调优"
 ---
 
 # Claude 成本优化与性能调优
+
+> 中文简称：Claude 成本优化与性能调优
 
 > 一句话理解：Token 是新的电力——理解计费公式、用好 Prompt Caching、管好上下文窗口，是让 AI 应用从"能用"到"划算"的关键。
 

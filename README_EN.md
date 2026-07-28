@@ -10,7 +10,10 @@ aliases:
   - README_EN
 sources: []
 
+name_zh: "README 英文版"
 ---
+> 中文简称：README 英文版
+
 <div align="center">
 
 <h1>🧠 AI Guru Knowledge Base</h1>

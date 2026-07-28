@@ -4,9 +4,12 @@ tags: [industry, logistics, supply-chain, optimization, production]
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "物流供应链 AI 应用"
 ---
 
 # AI Applications in Logistics & Supply Chain
+
+> 中文简称：物流供应链 AI 应用
 
 ## Overview
 

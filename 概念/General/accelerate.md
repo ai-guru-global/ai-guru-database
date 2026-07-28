@@ -25,9 +25,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "HuggingFace Accelerate 训练框架"
 ---
 
 # HuggingFace Accelerate 训练框架
+
+> 中文简称：HuggingFace Accelerate 训练框架
 
 > **一句话理解**: Accelerate 是"分布式训练的最简路径"——只需加 5 行代码就能让单机训练变成多 GPU/多节点分布式训练。
 

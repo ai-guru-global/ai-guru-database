@@ -12,8 +12,11 @@ aliases:
   - Deepfake_Security_for_dummy
 sources: []
 
+name_zh: "深度伪造安全小白指南"
 ---
 # 深度伪造安全小白指南 (Deepfake Security for Dummy)
+
+> 中文简称：深度伪造安全小白指南
 
 > **一句话理解**: Deepfake 就像"数字变脸魔术"——用 AI 把你的脸换到别人身上，或者让某人说出从没说过的话，真假难辨。
 

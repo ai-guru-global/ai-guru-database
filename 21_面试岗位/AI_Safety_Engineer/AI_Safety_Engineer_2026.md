@@ -11,9 +11,12 @@ aliases:
   - "AI Safety Engineer 面试指南 2026"
   - "AI安全工程师"
 sources: []
+name_zh: "AI Safety Engineer 面试指南"
 ---
 
 # AI Safety Engineer 面试指南 (2026)
+
+> 中文简称：AI Safety Engineer 面试指南
 
 > **一句话理解**: AI Safety Engineer 是 AI 系统的"安全守门人"——通过红队测试、对齐研究、威胁建模和安全评估，确保 AI 模型在部署前和运行中不会对用户和社会造成伤害，在模型能力与安全性之间找到最优平衡点。
 
@@ -751,18 +754,18 @@ Junior AI Safety Engineer (0-2年)
 - [[AI_Security_Engineer]] — AI 安全工程师（系统安全方向）
 - [[Prompt_Engineer]] — 提示工程师（安全防护 Prompt 设计）
 - [[RLHF]] — 基于人类反馈的强化学习
-- [[Constitutional_AI]] — 宪法 AI
-- [[Red_Teaming]] — 红队测试方法论
-- [[Adversarial_Attacks]] — 对抗攻击
-- [[Model_Watermarking]] — 模型水印技术
-- [[Content_Moderation]] — 内容审核
-- [[AI_Ethics]] — AI 伦理
-- [[AI_Governance]] — AI 治理
-- [[Alignment]] — 对齐研究
+- [[概念/LLM/constitutional-ai|Constitutional_AI]] — 宪法 AI
+- [[概念/Safety/red-teaming|Red_Teaming]] — 红队测试方法论
+- [[概念/Safety/adversarial-attack|Adversarial_Attacks]] — 对抗攻击
+- Model_Watermarking — 模型水印技术
+- Content_Moderation — 内容审核
+- [[概念/Safety/ai-ethics|AI_Ethics]] — AI 伦理
+- [[概念/Safety/ai-governance|AI_Governance]] — AI 治理
+- [[07_模型训练/06_Alignment/index|Alignment]] — 对齐研究
 - [[Mechanistic_Interpretability]] — 机制可解释性
-- [[EU_AI_Act]] — 欧盟 AI 法案
-- [[Responsible_Scaling_Policy]] — 负责任扩展政策
-- [[Agent_Safety]] — Agent 安全
-- [[Threat_Modeling]] — 威胁建模
-- [[LLM_Evaluation]] — 大模型评估
+- [[概念/Safety/eu-ai-act|EU_AI_Act]] — 欧盟 AI 法案
+- Responsible_Scaling_Policy — 负责任扩展政策
+- Agent_Safety — Agent 安全
+- Threat_Modeling — 威胁建模
+- [[08_模型评估/03_LLM_Evaluation/index|LLM_Evaluation]] — 大模型评估
 - [[AI_Product_Manager]] — AI 产品经理（安全需求方）

@@ -19,9 +19,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "Outlines 结构化 LLM 生成"
 ---
 
 # Outlines 结构化 LLM 生成
+
+> 中文简称：Outlines 结构化 LLM 生成
 
 > **一句话理解**: Outlines 是"LLM 输出的围栏"——让 LLM 只能生成符合 JSON Schema / 正则 / Pydantic 模型的内容，告别输出格式不稳定。
 

@@ -15,9 +15,12 @@ relationships:
   - target: "概念/mlops"
     type: related_to
 sources: []
+name_zh: "数据验证框架"
 ---
 
 # Great Expectations
+
+> 中文简称：数据验证框架
 
 > **一句话理解**: Great Expectations 是一个让你用「期望」来描述数据应该长什么样的框架，数据不符时就报警。
 

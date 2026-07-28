@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "架构全景"
+name_en: "Architecture Overview"
 ---
 
 # Architecture Overview
+
+> 中文简称：架构全景 ｜ English Name: Architecture Overview
 
 This page indexes the contents of `12_架构基建/02_Architecture_Overview`.
 

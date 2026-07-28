@@ -10,9 +10,12 @@ aliases:
   - "AI Project Guide"
   - "Hands-on Projects"
 sources: []
+name_zh: "AI 实战项目指南"
 ---
 
 # AI 实战项目指南 (AI Hands-on Project Guide)
+
+> 中文简称：AI 实战项目指南
 
 > 从零到一的 AI 实战项目指南——覆盖数据准备、模型开发、评估优化、部署上线全流程，构建有说服力的作品集。
 

@@ -25,9 +25,12 @@ lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-07-21
+name_zh: "计算机视觉"
 ---
 
 # 计算机视觉
+
+> 中文简称：计算机视觉
 
 计算机视觉（Computer Vision, CV）旨在让机器从图像和视频中提取有意义的信息。从2012年AlexNet开启深度学习时代，到Vision transformer-architecture打破CNN垄断，CV经历了架构范式的根本性转变。与目标检测和图像分割共同构成视觉理解的三大支柱。
 

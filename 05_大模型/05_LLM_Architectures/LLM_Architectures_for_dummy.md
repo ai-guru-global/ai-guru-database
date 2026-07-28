@@ -12,8 +12,11 @@ aliases:
   - LLM_Architectures_for_dummy
 sources: []
 
+name_zh: "大语言模型架构 - 小白版"
 ---
 # 大语言模型架构 - 小白版
+
+> 中文简称：大语言模型架构 - 小白版
 
 > **一句话秒懂**: 大语言模型就像"超级大脑"——GPT 擅长写作(生成型),BERT 擅长理解(阅读型),它们都是基于 Transformer 这个"引擎"造出来的!
 

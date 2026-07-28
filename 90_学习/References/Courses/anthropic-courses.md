@@ -13,8 +13,11 @@ aliases:
   - "Anthropic Courses"
   - "anthropic courses"
 
+name_zh: "Anthropic 官方教程"
 ---
 # Anthropic 官方教程
+
+> 中文简称：Anthropic 官方教程
 
 > **一句话理解**: Anthropic 官方提供的 Claude API 教程,覆盖提示工程、工具使用、RAG 等主题。
 

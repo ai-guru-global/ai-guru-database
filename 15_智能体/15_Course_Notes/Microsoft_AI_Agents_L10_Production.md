@@ -28,8 +28,11 @@ aliases:
   - "Microsoft AI Agents L10 Production"
   - Microsoft_AI_Agents_L10_Production
 
+name_zh: "L10 生产化 AI Agent：可观测性与评估"
 ---
 # L10 生产化 AI Agent：可观测性与评估
+
+> 中文简称：L10 生产化 AI Agent：可观测性与评估
 
 > 来源：[Microsoft AI Agents for Beginners / 10-ai-agents-production](https://github.com/microsoft/ai-agents-for-beginners/tree/main/10-ai-agents-production)
 

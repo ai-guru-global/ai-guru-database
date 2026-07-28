@@ -32,9 +32,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "Browser Agent / 浏览器 Agent"
 ---
 
 # Browser Agent / 浏览器 Agent
+
+> 中文简称：Browser Agent / 浏览器 Agent
 
 > **一句话理解**:Browser Agent 把 LLM 接到浏览器上,让它"看页面 → 找元素 → 点击/输入"——能用自然语言完成 Web 任务(下单、填表、爬数据、登录),让"没有 API 的 SaaS"也能被 AI 自动化。
 

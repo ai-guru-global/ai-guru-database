@@ -12,8 +12,11 @@ aliases:
   - README_for_dummy
 sources: []
 
+name_zh: "17 AI 编程 — 小白版 💻"
 ---
 # 17 AI 编程 — 小白版 💻
+
+> 中文简称：17 AI 编程 — 小白版 💻
 
 > **一句话秒懂**: AI 编程就是让 AI 当你的"编程助手"——帮你写代码、Debug、做 Code Review，让你的开发效率提升 10 倍！
 

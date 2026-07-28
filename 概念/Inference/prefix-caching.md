@@ -31,8 +31,11 @@ aliases:
   - "前缀缓存"
   - "Prompt Caching"
 
+name_zh: "前缀缓存"
 ---
 # Prefix Caching (前缀缓存)
+
+> 中文简称：前缀缓存
 
 > 前缀缓存是推理侧最高杠杆的应用层优化——共享前缀的 KV Cache 只算一次，后续请求直接复用。
 

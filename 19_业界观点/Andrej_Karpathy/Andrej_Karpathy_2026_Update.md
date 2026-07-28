@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Andrej Karpathy 2026 Update", "安德烈·卡帕西 2026 动态"]
 sources: []
+name_zh: "安德烈·卡帕西 2026 动态"
 ---
 
 # 安德烈·卡帕西 2026 动态 (Andrej Karpathy 2026 Update)
+
+> 中文简称：安德烈·卡帕西 2026 动态
 
 ## 一句话概括
 

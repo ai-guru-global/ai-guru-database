@@ -10,9 +10,12 @@ aliases:
   - Agent Engineer Interview
   - Agent 工程师面试
 sources: []
+name_zh: "Agent Engineer 岗位面试指南"
 ---
 
 # Agent Engineer 岗位面试指南 (2026)
+
+> 中文简称：Agent Engineer 岗位面试指南
 
 > **一句话理解**: Agent Engineer 是连接大模型能力与企业业务系统的桥梁，既要懂 LLM 的行为边界与提示工程，又要能设计、实现并运维具备记忆、工具调用与多 Agent 协作能力的生产级 Agent 系统。
 
@@ -606,7 +609,7 @@ class ReActAgent:
 ## Related
 
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 - [[21_面试岗位/System_Design_for_AI|System Design for AI Interviews]]
 - [[15_智能体/README|Agent 生产 (Agent Production)]]
 - [[15_智能体/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]]

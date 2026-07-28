@@ -11,8 +11,11 @@ aliases:
   - Dario Amodei 2026 Update
 sources: []
 
+name_zh: "Dario Amodei 2026 年度更新"
 ---
 # Dario Amodei 2026 年度更新
+
+> 中文简称：Dario Amodei 2026 年度更新
 
 ## 一句话概括
 

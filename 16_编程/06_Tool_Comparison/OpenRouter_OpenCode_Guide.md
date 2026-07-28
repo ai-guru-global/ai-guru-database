@@ -38,8 +38,11 @@ aliases:
 
 summary: "AI 编程与 LLM 网关专题 — OpenRouter & OpenCode 全量指南 — 专题文档"
 sources: []
+name_zh: "AI 编程与 LLM 网关专题 — OpenRouter & OpenCode"
 ---
 # AI 编程与 LLM 网关专题 — OpenRouter & OpenCode 全量指南
+
+> 中文简称：AI 编程与 LLM 网关专题 — OpenRouter & OpenCode
 
 > **文档类型**: 专题索引 | **最后更新**: 2026-04 | **关键词**: OpenRouter, OpenCode, Unified LLM API, AI Coding, AI Gateway, Provider Routing, Model Fallback, Prompt Caching, MCP, Agent CLI, BYOK, Enterprise
 

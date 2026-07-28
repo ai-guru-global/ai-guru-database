@@ -8,9 +8,12 @@ updated: 2026-06-15
 baseline: 治理/_project-evaluation.md
 quality: final
 sources: []
+name_zh: "AI Guru 知识库整体内容完整性评估"
 ---
 
 # AI Guru 知识库整体内容完整性评估
+
+> 中文简称：AI Guru 知识库整体内容完整性评估
 
 > **评估时间**: 2026-06-15  
 > **评估范围**: 当前工作目录全部 Markdown 内容（排除 `前端应用/`、`94_可视化/`、`mkdocs-docs/`、`原始/`、`归档/`、`.venv/`、`.git/`、`node_modules/` 及 macOS 副本文件）

@@ -9,12 +9,15 @@ aliases:
   - Claude_Code_Deep_Dive
 sources: []
 
+name_zh: "Claude Code 深度解析：CLI、SDK、IDE 与自动化工作流"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Claude Code 深度解析：CLI、SDK、IDE 与自动化工作流
+
+> 中文简称：Claude Code 深度解析：CLI、SDK、IDE 与自动化工作流
 
 > 本页面提炼自《Claude 技术指南》第七章，覆盖 Claude Code 的安装运维、SDK 集成、IDE 工作流、自主编码实践、高阶特性、Routines 和 Cowork。
 

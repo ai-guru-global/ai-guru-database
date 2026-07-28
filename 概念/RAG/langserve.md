@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "LangChain 一键部署服务"
 ---
 
 # LangServe
+
+> 中文简称：LangChain 一键部署服务
 
 [LangServe](https://github.com/langchain-ai/langserve) 是 LangChain 官方推出的**一键部署工具**，能将任何 LangChain/LangGraph 应用（Chain、Agent、Runnable）自动转化为**生产级 REST API**。它基于 FastAPI 构建，原生支持流式输出、批处理、配置化 Playground UI，是 LangChain 生态中从"开发原型"到"生产服务"的**标准路径**。
 

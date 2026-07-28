@@ -31,9 +31,12 @@ provenance:
 base_confidence: 0.85
 created: 2026-06-24
 updated: 2026-06-24
+name_zh: "vLLM 高吞吐推理引擎"
 ---
 
 # vLLM 高吞吐推理引擎
+
+> 中文简称：vLLM 高吞吐推理引擎
 
 ## 一句话定义
 

@@ -18,11 +18,14 @@ relationships:
   - target: "概念/gitops"
     type: related_to
 sources: []
+name_zh: "Flux GitOps 工具"
 ---
 
 > **归档提示**: 此概念为通用云原生工具，与AI核心关联度较低。如需学习完整的K8s知识，请参考 CNCF 官方文档。
 
 # Flux
+
+> 中文简称：Flux GitOps 工具
 
 > **一句话理解**: Flux 是 K8s 原生的 GitOps 引擎，能自动把 Git 仓库里的 YAML/Helm/Kustomize 同步到集群，还能自动更新镜像版本。
 

@@ -12,8 +12,11 @@ aliases:
   - Spring_AI_Skills_Integration
 sources: []
 
+name_zh: "Spring AI 与 Agent Skills 集成"
 ---
 # Spring AI 与 Agent Skills 集成
+
+> 中文简称：Spring AI 与 Agent Skills 集成
 
 > Spring AI 是支持 Agent Skills 开放标准的 Java AI 应用框架之一。本文档说明如何在 Spring AI 项目中使用 Agent Skills。
 

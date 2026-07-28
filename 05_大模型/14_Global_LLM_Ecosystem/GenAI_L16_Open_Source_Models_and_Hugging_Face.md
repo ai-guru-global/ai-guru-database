@@ -15,7 +15,10 @@ aliases:
   - GenAI_L16_Open_Source_Models_and_Hugging_Face
 sources: []
 
+name_zh: "开源模型与Hugging Face"
 ---
+> 中文简称：开源模型与Hugging Face
+
 ## 学习目标
 
 完成本课后，你将：

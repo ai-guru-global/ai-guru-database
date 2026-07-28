@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Mira Murati 简介"
 ---
 # Mira Murati 简介 (Mira Murati)
+
+> 中文简称：Mira Murati 简介
 
 ## 一句话概括
 

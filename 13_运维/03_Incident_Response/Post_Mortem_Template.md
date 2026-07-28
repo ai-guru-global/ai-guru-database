@@ -4,9 +4,12 @@ tags: [ai-ops, incident-response, post-mortem, sre, production]
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "事故复盘模板"
 ---
 
 # AI Incident Post-Mortem Template
+
+> 中文简称：事故复盘模板
 
 ## Purpose
 

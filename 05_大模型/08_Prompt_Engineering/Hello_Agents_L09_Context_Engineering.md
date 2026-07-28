@@ -25,8 +25,11 @@ aliases:
   - "Hello Agents L09 Context Engineering"
   - Hello_Agents_L09_Context_Engineering
 
+name_zh: "Hello-Agents L09：上下文工程"
 ---
 # Hello-Agents L09：上下文工程
+
+> 中文简称：Hello-Agents L09：上下文工程
 
 > **一句话理解**: 上下文工程关注“在每次模型调用前，如何以可复用、可度量、可演进的方式拼装并优化输入上下文”，是提示工程在 Agent 长程交互场景下的自然延伸。
 

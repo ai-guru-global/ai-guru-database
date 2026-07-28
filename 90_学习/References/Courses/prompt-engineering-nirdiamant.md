@@ -13,8 +13,11 @@ aliases:
   - "Prompt Engineering Nirdiamant"
   - "prompt engineering nirdiamant"
 
+name_zh: "Prompt 工程技术大全"
 ---
 # Prompt 工程技术大全 (5k)
+
+> 中文简称：Prompt 工程技术大全
 
 > **一句话理解**: 从基础到高级的提示工程技术集合,含详细教程和实现。
 

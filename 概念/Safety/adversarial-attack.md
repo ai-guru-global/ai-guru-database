@@ -16,9 +16,12 @@ relationships:
   - target: "概念/adversarial-training"
     type: mitigated_by
 sources: []
+name_zh: "对抗攻击"
 ---
 
 # Adversarial Attack（对抗攻击）
+
+> 中文简称：对抗攻击
 
 > **一句话理解**: 对抗攻击 = 「骗过 AI」——在图片或文字上加一点点人类看不出的改动，让模型做出错误判断。
 

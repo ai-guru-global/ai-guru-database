@@ -32,9 +32,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "高级 Attention 内核 2.0"
 ---
 
 # 高级 Attention 内核 2.0
+
+> 中文简称：高级 Attention 内核 2.0
 
 > **一句话理解**:Attention 内核 2.0 把 GPU Tensor Core 利用率推到 90%+——FlashAttention-3 用 Hopper WGMMA + 异步,FlashInfer 提供统一 Attention 引擎,FlashMLA 专为 MLA 优化,SageAttention 用 INT4/FP8 极致加速。是 vLLM / SGLang / TRT-LLM 默认的内核。
 

@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "资源文件"
+name_en: "assets"
 ---
 
 # Assets
+
+> 中文简称：资源文件 ｜ English Name: assets
 
 智能体模块静态资源（Static Assets）— 存放文章配图、架构图等媒体文件，为文档提供视觉辅助。
 

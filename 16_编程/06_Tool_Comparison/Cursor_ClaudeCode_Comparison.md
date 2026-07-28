@@ -12,8 +12,11 @@ aliases:
   - Cursor_ClaudeCode_Comparison
 sources: []
 
+name_zh: "Cursor vs Claude Code 对比指南"
 ---
 # Cursor vs Claude Code 对比指南
+
+> 中文简称：Cursor vs Claude Code 对比指南
 
 > **一句话理解**: Cursor 是"AI 增强的 IDE"，适合喜欢在图形界面中写代码的开发者；Claude Code 是"AI 驱动的终端代理"，适合喜欢命令行和完全自动化工作流的工程师。
 

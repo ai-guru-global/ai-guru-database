@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Richard Socher 2026 Update", "理查德·索彻 2026 动态"]
 sources: []
+name_zh: "理查德·索彻 2026 动态"
 ---
 
 # 理查德·索彻 2026 动态 (Richard Socher 2026 Update)
+
+> 中文简称：理查德·索彻 2026 动态
 
 ## 一句话概括
 
@@ -293,7 +296,7 @@ Socher 的影响呈现为三个层面：
 ### 技术与应用
 
 - [[05_大模型/README]] -- NLP 基础
-- [[应用/AI_Search]] -- AI 搜索
+- [[05_大模型/13_LLM_Products/perplexity_overview|AI_Search]] -- AI 搜索
 - [[03_深度学习/README]] -- NLP 深度学习
 - [[00_入门/AI_Future_Trends]] -- 搜索未来
 

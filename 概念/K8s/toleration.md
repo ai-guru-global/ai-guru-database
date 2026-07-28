@@ -21,9 +21,12 @@ relationships:
   - target: "概念/request-scheduling"
     type: part_of
 sources: []
+name_zh: "容忍"
 ---
 
 # Toleration（容忍）
+
+> 中文简称：容忍
 
 > **一句话理解**: Toleration 是 Pod 对 Node Taint 的「豁免声明」，让原本被排斥的 Pod 获得调度到污点节点的资格。
 

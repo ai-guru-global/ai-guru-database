@@ -4,9 +4,12 @@ category: meta
 tags: [meta, audit, content-gap, llm, roadmap]
 summary: 基于关键词扫描和深度检测的 LLM 全生命周期内容覆盖度分析，识别需要加强的技术方向。
 sources: []
+name_zh: "LLM 全生命周期内容缺口分析"
 ---
 
 # LLM 全生命周期内容缺口分析
+
+> 中文简称：LLM 全生命周期内容缺口分析
 
 生成时间: 2026-06-01 15:16
 

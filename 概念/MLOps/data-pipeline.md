@@ -15,9 +15,12 @@ relationships:
   - target: "概念/data-validation"
     type: related_to
 sources: []
+name_zh: "数据流水线"
 ---
 
 # Data Pipeline
+
+> 中文简称：数据流水线
 
 > **一句话理解**: 数据流水线就是把原始数据自动清洗、转换、搬运到模型能用的形态的管道。
 

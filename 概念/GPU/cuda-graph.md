@@ -35,8 +35,11 @@ aliases:
   - "Cuda Graph"
   - "cuda graph"
 
+name_zh: "CUDA 图"
 ---
 # CUDA Graph
+
+> 中文简称：CUDA 图
 
 > **一句话理解**: CUDA Graph 把一连串 GPU 操作"录制"成一张图，之后每次执行只需"回放"这张图，CPU 不用逐个下发指令，GPU 几乎零等待，推理速度可提升 20-50%。
 

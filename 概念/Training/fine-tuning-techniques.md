@@ -37,8 +37,11 @@ aliases:
   - "Fine Tuning Techniques"
   - "fine tuning techniques"
 
+name_zh: "微调技术"
 ---
 # 微调技术
+
+> 中文简称：微调技术
 
 ## 概述
 
@@ -198,6 +201,6 @@ $$\mathcal{L}_{DPO} = -\mathbb{E}\left[\log \sigma\left(\beta \log \frac{\pi_\th
 - [[概念/Training/pissa|PiSSA]] — 奇异值初始化
 - [[概念/Training/rslora|rsLoRA]] — 稳定 LoRA
 - [[概念/Training/pre-training|Pre-training]] — 预训练
-- [[概念/LLM/lora|LoRA]] — 低秩适配
+- [[概念/Training/lora-peft|LoRA]] — 低秩适配
 
 > ℹ️ 微调技术选型：资源充足用 Full FT，资源受限用 QLoRA，追求效果用 DoRA+PiSSA，始终配合评估和版本管理。

@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "隐私保护 AI"
+name_en: "Privacy Preserving AI"
 ---
 
 # Privacy Preserving AI
+
+> 中文简称：隐私保护 AI ｜ English Name: Privacy Preserving AI
 
 隐私保护 AI（Privacy Preserving AI）— 差分隐私（differential privacy）、联邦学习与安全多方计算在 AI 系统中的应用。
 

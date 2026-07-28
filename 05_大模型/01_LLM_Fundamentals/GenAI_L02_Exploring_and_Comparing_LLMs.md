@@ -15,7 +15,10 @@ aliases:
   - GenAI_L02_Exploring_and_Comparing_LLMs
 sources: []
 
+name_zh: "探索和比较不同的 LLM"
 ---
+> 中文简称：探索和比较不同的 LLM
+
 ## 学习目标
 
 完成本课后，你将能够：

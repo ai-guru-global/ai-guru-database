@@ -11,8 +11,11 @@ aliases:
   - Python_Data_Science_Toolkit
 sources: []
 
+name_zh: "Python 数据科学工具链"
 ---
 # Python 数据科学工具链: NumPy + Pandas + Matplotlib + Scikit-learn
+
+> 中文简称：Python 数据科学工具链
 
 > **一句话理解**: NumPy 是计算器，Pandas 是 Excel，Matplotlib 是画笔，Scikit-learn 是模型工厂——四者组合，就能完成 80% 的 AI 数据工作。
 

@@ -12,8 +12,11 @@ aliases:
   - AIBrix_Deep_Dive
 sources: []
 
+name_zh: "AIBrix: 模块化的大模型推理基础设施组件"
 ---
 # AIBrix: 模块化的大模型推理基础设施组件
+
+> 中文简称：AIBrix: 模块化的大模型推理基础设施组件
 
 > **一句话理解**: AIBrix 不是又一个推理平台，而是一组「即插即用」的 GenAI 推理基础设施组件——智能路由、前缀缓存、GPU 弹性、Token 级监控，专为在 vLLM/SGLang 之上加'运营能力'而设计。
 

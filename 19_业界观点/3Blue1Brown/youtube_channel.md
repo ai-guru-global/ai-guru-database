@@ -14,8 +14,11 @@ aliases:
   - "youtube channel"
   - youtube_channel
 
+name_zh: "3Blue1Brown YouTube 频道"
 ---
 # 3Blue1Brown YouTube 频道
+
+> 中文简称：3Blue1Brown YouTube 频道
 
 > **一句话理解**: 3Blue1Brown 频道用精美动画讲解数学和 AI,线性代数和神经网络系列是全球最受欢迎的数学可视化教程。
 

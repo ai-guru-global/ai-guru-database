@@ -12,12 +12,15 @@ aliases:
   - MiniMax_Guide
 sources: []
 
+name_zh: "MiniMax / MiniClaw 使用指南"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # MiniMax / MiniClaw 使用指南
+
+> 中文简称：MiniMax / MiniClaw 使用指南
 
 > **一句话**: MiniMax 提供高性价比的模型 API 和编程辅助，MiniClaw（VS Code + Cline + MiniMax）是稳定的 AI 编程组合。
 

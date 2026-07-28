@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "缓存"
+name_en: "Caching"
 ---
 
 # Caching
+
+> 中文简称：缓存 ｜ English Name: Caching
 
 This page indexes the contents of `10_部署推理/06_Caching`.
 

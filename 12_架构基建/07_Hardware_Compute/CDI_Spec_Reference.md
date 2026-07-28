@@ -15,8 +15,11 @@ aliases:
   - "Cdi Spec"
   - "cdi spec"
 
+name_zh: "CDI 规范 — 官方源引用"
 ---
 # CDI 规范 (Container Device Interface Spec) — 官方源引用
+
+> 中文简称：CDI 规范 — 官方源引用
 
 > 本页是 CDI 规范**官方源头**的引用索引;深度技术解析见本地 [[12_架构基建/07_Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]。
 

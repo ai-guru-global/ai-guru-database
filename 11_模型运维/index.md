@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-09
 sources: []
+name_zh: "模型运维"
+name_en: "MLOps Pipeline"
 ---
 
 # 模型运维（MLOps/LLMOps）
+
+> 中文简称：模型运维 ｜ English Name: MLOps Pipeline
 
 本目录是 MLOps 与 LLMOps 知识的主索引。
 

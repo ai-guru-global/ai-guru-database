@@ -7,9 +7,12 @@ created: "2026-07-23"
 updated: "2026-07-23"
 tier: core
 sources: []
+name_zh: "AI Safety Engineer 题库"
 ---
 
 # AI Safety Engineer 题库
+
+> 中文简称：AI Safety Engineer 题库
 
 > 覆盖 AI 安全工程的核心知识。关联 [[21_面试岗位/AI_Safety_Engineer/AI_Safety_Engineer_2026|AI Safety Engineer 2026]] 与 [[17_伦理安全/index|伦理安全]] 章节。
 

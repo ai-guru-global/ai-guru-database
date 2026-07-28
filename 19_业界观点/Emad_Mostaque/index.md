@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "埃马德·莫斯塔克"
+name_en: "Emad Mostaque"
 ---
 
 # Emad_Mostaque
+
+> 中文简称：埃马德·莫斯塔克 ｜ English Name: Emad Mostaque
 
 Emad Mostaque — Stability AI 创始人，开源生成式 AI（open-source generative AI）与 Stable Diffusion 的推动者。
 
@@ -206,3 +210,7 @@ Emad Mostaque — Stability AI 创始人，开源生成式 AI（open-source gene
 
 ---
 *Last updated: 2026-07-21*
+
+## 关联导航
+
+- [[19_业界观点/Emad_Mostaque/Emad_Mostaque_2026_Update\|2026 动态更新]]

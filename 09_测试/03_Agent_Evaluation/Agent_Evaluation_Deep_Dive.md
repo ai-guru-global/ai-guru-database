@@ -11,9 +11,12 @@ aliases:
   - "Agent_Evaluation_Deep_Dive"
 sources: []
 
+name_zh: "Agent 评估深度解析"
 ---
 
 # Agent 评估深度解析 (Agent Evaluation Deep Dive)
+
+> 中文简称：Agent 评估深度解析
 
 > **一句话理解**: Agent 评估是验证智能体系统在生产环境中能否持续、可靠、经济地完成复杂任务的系统工程——它不止看最终答案对错，更关注决策轨迹、工具使用与成本延迟的权衡。
 

@@ -12,8 +12,11 @@ aliases:
   - AI_Hardware_2026
 sources: []
 
+name_zh: "AI硬件与芯片 2026年全景报告"
 ---
 # AI 硬件与芯片 2026 年全景报告
+
+> 中文简称：AI硬件与芯片 2026年全景报告
 
 > **一句话理解**: AI 芯片是 AI 革命的"引擎"——2026 年 NVIDIA H200 成为推理新标杆，Blackwell B200 开始交付，AMD MI350 紧追不舍，而定制 ASIC 和边缘 AI 芯片正在分化市场。
 

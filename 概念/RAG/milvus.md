@@ -28,8 +28,11 @@ updated: 2026-07-21
 aliases:
   - Milvus
 
+name_zh: "分布式向量数据库"
 ---
 # Milvus
+
+> 中文简称：分布式向量数据库
 
 > 面向十亿级向量的「分布式语义搜索引擎」——RAG 和企业知识库的常见底座。
 
@@ -108,7 +111,7 @@ Milvus Cluster
 - [[14_RAG系统/03_Vector_Databases/Milvus_Deep_Dive]] — Milvus 深度解析
 - [[概念/vector-database]] — 向量数据库
 - [[概念/rag-patterns]] — RAG
-- [[概念/embedding]] — Embedding
+- [[概念/RAG/embedding-models|embedding]] — Embedding
 - [[概念/qdrant]] — Qdrant
 - [[概念/weaviate]] — Weaviate
 - [[概念/chroma]] — Chroma

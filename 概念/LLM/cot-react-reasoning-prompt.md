@@ -28,8 +28,11 @@ aliases:
   - "Cot React Reasoning Prompt"
   - "cot react reasoning prompt"
 
+name_zh: "CoT / ReAct / ToT — 推理时 Prompt 技巧"
 ---
 # CoT / ReAct / ToT — 推理时 Prompt 技巧
+
+> 中文简称：CoT / ReAct / ToT — 推理时 Prompt 技巧
 
 > **一句话理解**：CoT 让模型"动笔算",ReAct 让模型"边想边用工具",ToT 让模型"试错回溯"——三个档位的"思考技巧",不动参数就能解锁推理能力。
 

@@ -11,8 +11,11 @@ aliases:
   - Model_Serving_Patterns
 sources: []
 
+name_zh: "模型服务模式"
 ---
 # 模型服务模式 (Model Serving Patterns)
+
+> 中文简称：模型服务模式
 
 > **一句话理解**: 选择正确的服务模式是 ML 系统架构的核心决策——在线实时追求低延迟，批量离线追求高吞吐，流式处理追求实时性。多模型路由则进一步优化成本和质量。
 

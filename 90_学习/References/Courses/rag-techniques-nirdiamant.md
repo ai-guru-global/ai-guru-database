@@ -13,8 +13,11 @@ aliases:
   - "Rag Techniques Nirdiamant"
   - "rag techniques nirdiamant"
 
+name_zh: "RAG 技术大全"
 ---
 # RAG 技术大全 (27.9k)
+
+> 中文简称：RAG 技术大全
 
 > **一句话理解**: 社区驱动的 RAG 技术集合(27.9k star),含 42+ 可运行 Notebook,覆盖从基础到前沿的全部 RAG 技术。
 

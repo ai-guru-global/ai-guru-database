@@ -18,8 +18,11 @@ aliases:
   - "Agents Reinforcement Learning"
   - "agents reinforcement learning"
 
+name_zh: "AI 智能体 × 强化学习"
 ---
 # AI 智能体 × 强化学习
+
+> 中文简称：AI 智能体 × 强化学习
 
 ## The Connection
 

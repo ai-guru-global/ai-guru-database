@@ -12,8 +12,11 @@ aliases:
   - Multi_Agent_Systems_Guide
 sources: []
 
+name_zh: "智能体 AI 权威指南 Part 2: 多智能体系统全解"
 ---
 # 智能体 AI 权威指南 Part 2: 多智能体系统全解
+
+> 中文简称：智能体 AI 权威指南 Part 2: 多智能体系统全解
 
 > Source: 智能体 AI 权威指南 (yeasy) Part 2, Ch5-7
 > Related: [[Agentic_AI_Complete_Guide]] | [[AgentOps_Production_Guide]] | [[Context_Engineering_Guide]] | [[Prompt_Engineering_Complete_Guide]]

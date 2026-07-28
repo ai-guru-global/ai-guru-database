@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "架构论文"
+name_en: "Architecture"
 ---
 
 # Architecture
+
+> 中文简称：架构论文 ｜ English Name: Architecture
 
 架构论文精读 — 深度学习核心架构论文，从 Word2Vec 到 Transformer、BERT、LLaMA 和 MoE。
 

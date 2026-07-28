@@ -27,9 +27,12 @@ lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-07-21T00:00:00Z
+name_zh: "状态空间模型"
 ---
 
 # 状态空间模型
+
+> 中文简称：状态空间模型
 
 状态空间模型（State Space Model, SSM）是 2023-2026 年兴起的序列建模新范式，以 $O(n)$ 线性复杂度挑战 Transformer 的 $O(n^2)$ 注意力。Mamba（S6）通过选择性状态空间机制在长序列建模、DNA 分析、音频生成等任务上展现竞争力，被视为序列建模的下一代架构。
 

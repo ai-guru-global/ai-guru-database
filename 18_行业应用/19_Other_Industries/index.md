@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "其他行业"
+name_en: "Other Industries"
 ---
 
 # Other Industries
+
+> 中文简称：其他行业 ｜ English Name: Other Industries
 
 ## 文件导航
 

@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Elon Musk 2026 Update", "埃隆·马斯克 2026 动态"]
 sources: []
+name_zh: "埃隆·马斯克 2026 动态"
 ---
 
 # 埃隆·马斯克 2026 动态 (Elon Musk 2026 Update)
+
+> 中文简称：埃隆·马斯克 2026 动态
 
 ## 一句话概括
 
@@ -456,7 +459,7 @@ Musk 同时管理 6+ 公司引发精力分散质疑：
 
 ### 技术与基础设施
 
-- [[05_大模型/xAI]] -- xAI 模型技术全景
+- [[05_大模型/14_Global_LLM_Ecosystem/index|xAI]] -- xAI 模型技术全景
 - [[05_大模型/09_Reasoning_Models]] -- 推理模型路线
 - [[10_部署推理/07_GPU_Infrastructure]] -- Colossus 算力基建
 - [[00_入门/AI_Future_Trends]] -- 具身智能与 AGI 讨论

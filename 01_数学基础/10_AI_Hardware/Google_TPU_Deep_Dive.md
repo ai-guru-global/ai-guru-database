@@ -17,8 +17,11 @@ aliases:
   - "Google TPU Deep Dive"
   - Google_TPU_Deep_Dive
 
+name_zh: "Google TPU 深度解析 2026"
 ---
 # Google TPU 深度解析 2026
+
+> 中文简称：Google TPU 深度解析 2026
 
 > **一句话理解**: Google TPU 是全球最早量产的 AI 专用芯片，第七代 Ironwood (TPU7x) 以 192GB HBM、4,614 TFLOPS FP8 和 9,216 芯片 Pod 规模重新定义大规模 AI 计算。
 

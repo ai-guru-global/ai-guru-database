@@ -12,8 +12,11 @@ aliases:
   - Model_Registry_and_Cards_Deep_Dive
 sources: []
 
+name_zh: "模型注册与模型卡片深度解析"
 ---
 # 模型注册与模型卡片深度解析
+
+> 中文简称：模型注册与模型卡片深度解析
 
 > **一句话理解**: Model Registry 是模型的"图书馆管理系统"——负责编目、版本控制和发布审批；Model Card 是每本书的"封面和目录"——告诉使用者这个模型是什么、能做什么、有什么限制。
 

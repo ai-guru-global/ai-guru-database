@@ -32,9 +32,12 @@ sources:
   - Inception Labs Mercury 商用
   - Dream 7B/8B
   - GitHub inclusionAI/LLaDA2.X
+name_zh: "扩散语言模型"
 ---
 
 # 扩散语言模型(Diffusion LLM / dLLM)
+
+> 中文简称：扩散语言模型
 
 ## 一句话总结
 

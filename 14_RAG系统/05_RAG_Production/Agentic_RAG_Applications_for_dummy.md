@@ -12,12 +12,15 @@ aliases:
   - Agentic_RAG_Applications_for_dummy
 sources: []
 
+name_zh: "Agentic RAG 应用大白话：Agentic RAG、Text2SQL、代"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Agentic RAG 应用大白话：Agentic RAG、Text2SQL、代码生成工作流
+
+> 中文简称：Agentic RAG 应用大白话：Agentic RAG、Text2SQL、代
 
 > **一句话理解**: Agentic RAG 让 AI 像侦探一样反复查资料再回答，Text2SQL 让 AI 当数据库翻译官，代码生成工作流让 AI 参与从需求到上线的全过程——三者都是把大模型从“聊天工具”变成“能干活的助手”。
 

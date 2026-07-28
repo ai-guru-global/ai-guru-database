@@ -12,8 +12,11 @@ aliases:
   - 光年之外创始人
 sources: []
 
+name_zh: "王慧文简介"
 ---
 # 王慧文简介 (Wang Huiwen)
+
+> 中文简称：王慧文简介
 
 ## 一句话概括
 

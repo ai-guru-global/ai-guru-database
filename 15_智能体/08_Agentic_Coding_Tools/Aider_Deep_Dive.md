@@ -11,8 +11,11 @@ aliases:
   - Aider_Deep_Dive
 sources: []
 
+name_zh: "Aider: AI 代码编辑工具"
 ---
 # Aider: AI 代码编辑工具
+
+> 中文简称：Aider: AI 代码编辑工具
 
 > **一句话理解**: Aider 是开源 AI 代码编辑 CLI——终端内直接编辑代码、Git 集成、多文件重构、快速迭代，程序员爱用的命令行 AI 助手。
 

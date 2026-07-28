@@ -16,9 +16,12 @@ relationships:
   - target: "概念/opentelemetry"
     type: related_to
 sources: []
+name_zh: "Tempo 分布式追踪"
 ---
 
 # Tempo
+
+> 中文简称：Tempo 分布式追踪
 
 > **一句话理解**: Tempo 是 Grafana 推出的「只按 Trace ID 查询」的轻量追踪后端，用对象存储降低成本，适合与 Grafana 原生集成。
 

@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "MLOps 基础"
+name_en: "MLOps Fundamentals"
 ---
 
 # MLOps Fundamentals
+
+> 中文简称：MLOps 基础 ｜ English Name: MLOps Fundamentals
 
 ## 文件导航
 

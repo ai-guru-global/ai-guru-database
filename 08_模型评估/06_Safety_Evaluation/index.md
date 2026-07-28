@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "安全评估"
+name_en: "Safety Evaluation"
 ---
 
 # Safety Evaluation
+
+> 中文简称：安全评估 ｜ English Name: Safety Evaluation
 
 ## 文件导航
 

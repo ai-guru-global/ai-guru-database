@@ -24,9 +24,12 @@ tier: supporting
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "主流 LLM Benchmark 详解"
 ---
 
 # 主流 LLM Benchmark 详解
+
+> 中文简称：主流 LLM Benchmark 详解
 
 ## 一句话总结
 

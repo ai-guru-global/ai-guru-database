@@ -27,8 +27,11 @@ aliases:
   - "Hello Agents L06 Frameworks AutoGen LangGraph"
   - Hello_Agents_L06_Frameworks_AutoGen_LangGraph
 
+name_zh: "Hello-Agents L06：框架开发实践"
 ---
 # Hello-Agents L06：框架开发实践
+
+> 中文简称：Hello-Agents L06：框架开发实践
 
 > **一句话理解**: 本章从手写脚本过渡到成熟框架，通过 **AutoGen、AgentScope、CAMEL、LangGraph** 四个代表性框架的实战案例，理解框架如何抽象 Agent Loop、状态管理、工具调用与多 Agent 协作。
 

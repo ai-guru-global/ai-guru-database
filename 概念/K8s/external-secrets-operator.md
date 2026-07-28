@@ -18,11 +18,14 @@ relationships:
   - target: "概念/vault"
     type: related_to
 sources: []
+name_zh: "外部密钥同步组件"
 ---
 
 > **归档提示**: 此概念为通用云原生工具，与AI核心关联度较低。如需学习完整的K8s知识，请参考 CNCF 官方文档。
 
 # External Secrets Operator
+
+> 中文简称：外部密钥同步组件
 
 > **一句话理解**: ESO 是 K8s 与外部密钥库之间的「同步器」，让 Secret 继续由 Vault/KMS 管理，同时让 Pod 以原生 Secret 方式使用。
 

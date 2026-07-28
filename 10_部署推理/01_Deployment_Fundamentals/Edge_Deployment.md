@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "边缘部署"
 ---
 # 边缘部署 (Edge Deployment)
+
+> 中文简称：边缘部署
 
 ## 1. 边缘 AI 概述
 
@@ -249,7 +252,7 @@ EDGE_OPTIMIZATION_CHECKLIST = {
 
 - [[10_部署推理/02_Inference_Engines/|推理引擎]]
 - [[10_部署推理/05_Quantization/|量化]]
-- [[10_部署推理/Model_Compression/|模型压缩]]
+- [[10_部署推理/03_Inference_Optimization/Model_Compression|模型压缩]]
 - [[05_大模型/12_Edge_LLM/|边缘 LLM]]
 - [[12_架构基建/|架构基建]]
-- [[10_部署推理/Serving_Architecture/|服务架构]]
+- [[10_部署推理/01_Deployment_Fundamentals/Serving_Architecture|服务架构]]

@@ -8,9 +8,12 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "RDMA 与 RoCE 在 AI 集群中的应用"
 ---
 
 # RDMA 与 RoCE 在 AI 集群中的应用
+
+> 中文简称：RDMA 与 RoCE 在 AI 集群中的应用
 
 > **一句话理解**: RDMA 让网卡直接把数据从一台机器的内存搬到另一台机器， bypass 操作系统，延迟超低、CPU 占用极低。
 

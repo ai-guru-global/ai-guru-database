@@ -12,8 +12,11 @@ aliases:
   - Supervised_Learning_for_dummy
 sources: []
 
+name_zh: "监督学习 - 小白版"
 ---
 # 监督学习 - 小白版
+
+> 中文简称：监督学习 - 小白版
 
 > **一句话秒懂**: 监督学习就像用练习册学习——AI 看大量的"题目+答案"，慢慢学会自己解题。
 
@@ -217,7 +220,7 @@ A: 当然有用！对于表格数据（电商交易数据、银行风控数据�
 ## Related
 
 - [[../../01_数学基础/03_Probability_Statistics/Probability_Statistics_for_dummy|概率统计]] — 监督学习的数学基础
-- [[../../03_深度学习/01_DL_Fundamentals|深度学习基础]] — 从监督学习到深度学习
-- [[../../08_模型评估/01_Evaluation_Fundamentals|评估基础]] — 分类/回归评估指标
+- [[03_深度学习/01_DL_Fundamentals|深度学习基础]] — 从监督学习到深度学习
+- [[08_模型评估/01_Evaluation_Fundamentals|评估基础]] — 分类/回归评估指标
 - [[../../概念/Math/feature-engineering|特征工程概念卡]] — 监督学习的特征处理
 - [[../../04_计算机视觉/02_Image_Classification_Detection/Image_Classification_Detection_for_dummy|图像分类]] — 监督学习在 CV 中的应用

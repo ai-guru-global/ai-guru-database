@@ -16,9 +16,12 @@ relationships:
   - target: "概念/LLM/llmops"
     type: related_to
 sources: []
+name_zh: "幻觉"
 ---
 
 # Hallucination (幻觉)
+
+> 中文简称：幻觉
 
 > **一句话理解**: 幻觉 = 大模型“一本正经地胡说八道”——输出看似流畅自信，但与事实不符或无中生有。
 
@@ -82,7 +85,7 @@ sources: []
 - [[概念/RAG/rag-systems|RAG 系统]]
 - [[概念/LLM/llmops|LLMOps]]
 - [[概念/Safety/adversarial-attack|对抗攻击]]
-- [[17_伦理安全/Guardrails/Guardrails_2026|护栏技术 2026]]
+- [[概念/Safety/guardrails|护栏技术 2026]]
 
 ## 幻觉检测代码示例
 
@@ -157,7 +160,7 @@ print(f"相关性: {result['answer_relevancy']:.2f}")
 - [[概念/RAG/rag-systems|RAG 系统]] — 检索增强生成
 - [[概念/LLM/llmops|LLMOps]] — LLM 运维
 - [[概念/Safety/adversarial-attack|对抗攻击]] — 对抗攻击可诱发幻觉
-- [[17_伦理安全/Guardrails/Guardrails_2026|护栏技术 2026]] — 输出安全护栏
+- [[概念/Safety/guardrails|护栏技术 2026]] — 输出安全护栏
 
 > ℹ️ 幻觉是 LLM 的固有限制，无法完全消除，但可通过 RAG + 验证 + 护栏大幅降低。
 
@@ -204,6 +207,6 @@ def monitor_hallucination(run_id):
 - [[概念/RAG/rag-systems|RAG 系统]] — 检索增强生成
 - [[概念/LLM/llmops|LLMOps]] — LLM 运维
 - [[概念/Safety/adversarial-attack|对抗攻击]] — 对抗攻击可诱发幻觉
-- [[17_伦理安全/Guardrails/Guardrails_2026|护栏技术 2026]] — 输出安全护栏
+- [[概念/Safety/guardrails|护栏技术 2026]] — 输出安全护栏
 
 > ℹ️ 幻觉是 LLM 的固有限制，无法完全消除，但可通过 RAG + 验证 + 护栏大幅降低。

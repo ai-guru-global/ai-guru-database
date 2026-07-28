@@ -28,8 +28,11 @@ aliases:
   - "Rag Patterns"
   - "rag patterns"
 
+name_zh: "RAG 模式分类"
 ---
 # RAG 模式分类（RAG Patterns）
+
+> 中文简称：RAG 模式分类
 
 ## 核心要点
 

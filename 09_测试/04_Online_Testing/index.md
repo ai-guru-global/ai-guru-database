@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "在线测试"
+name_en: "Online Testing"
 ---
 
 # Online Testing
+
+> 中文简称：在线测试 ｜ English Name: Online Testing
 
 ## 文件导航
 

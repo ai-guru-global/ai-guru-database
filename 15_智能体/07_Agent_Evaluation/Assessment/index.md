@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "评估流程"
+name_en: "Assessment"
 ---
 
 # Assessment
+
+> 中文简称：评估流程 ｜ English Name: Assessment
 
 Agent 评估工作流定义（evaluation workflow）与生产级评估方案设计（production assessment design）。
 

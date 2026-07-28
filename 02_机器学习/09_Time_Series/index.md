@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "时间序列"
+name_en: "Time Series"
 ---
 
 # Time Series
+
+> 中文简称：时间序列 ｜ English Name: Time Series
 
 时间序列分析（Time Series Analysis）— ARIMA、Prophet、深度学习时序模型与多变量预测（multivariate forecasting）。
 

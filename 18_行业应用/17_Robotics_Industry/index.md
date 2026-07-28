@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "机器人产业"
+name_en: "Robotics Industry"
 ---
 
 # Robotics Industry
+
+> 中文简称：机器人产业 ｜ English Name: Robotics Industry
 
 ## 文件导航
 

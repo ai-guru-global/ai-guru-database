@@ -12,8 +12,11 @@ aliases:
   - L16_Recurrent_Neural_Networks
 sources: []
 
+name_zh: "L16 - 循环神经网络RNN"
 ---
 # L16 - 循环神经网络RNN
+
+> 中文简称：L16 - 循环神经网络RNN
 
 > **一句话理解**：RNN 通过在序列上维护一个“记忆状态”，让神经网络能够利用词的先后顺序来理解文本，而不是只看词袋统计。
 

@@ -12,8 +12,11 @@ aliases:
   - AI_Finance_2026
 sources: []
 
+name_zh: "AI 金融服务行业应用"
 ---
 # AI 金融服务行业应用 (2025-2026)
+
+> 中文简称：AI 金融服务行业应用
 
 > **一句话理解**: 2026 年金融 AI 已进入"Agentic 时代"——AI 不仅做风控和分析，还能自主执行交易策略、合规审查和客户服务全流程，88% 的金融机构报告 AI 显著提升了年收入。
 
@@ -271,10 +274,10 @@ AI保险 2025-2026:
 
 ## Related
 
-- [[../../14_RAG系统/04_Advanced_RAG|高级 RAG]] — 金融知识库与合规检索
-- [[../../15_智能体/03_Agent_Workflow|Agent 工作流]] — 金融分析 Agent
-- [[../../05_大模型/01_LLM_Fundamentals|LLM 基础]] — 金融大模型应用
-- [[../../08_模型评估/Fairness|公平性评估]] — 金融 AI 公平与合规
+- [[14_RAG系统/04_Advanced_RAG|高级 RAG]] — 金融知识库与合规检索
+- [[15_智能体/03_Agent_Workflow|Agent 工作流]] — 金融分析 Agent
+- [[05_大模型/01_LLM_Fundamentals|LLM 基础]] — 金融大模型应用
+- [[08_模型评估/06_Safety_Evaluation/Fairness_Evaluation_for_dummy|公平性评估]] — 金融 AI 公平与合规
 - [[../../10_部署推理/Deployment_Strategies|部署策略]] — 金融级低延迟部署
 
 ---

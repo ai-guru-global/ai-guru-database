@@ -12,8 +12,11 @@ aliases:
   - LLM_as_Judge_Deep_Dive
 sources: []
 
+name_zh: "LLM-as-Judge 深度解析"
 ---
 # LLM-as-Judge 深度解析
+
+> 中文简称：LLM-as-Judge 深度解析
 
 > **一句话理解**: 用最强的 LLM 当"考官"，用结构化评分标准给其他模型的输出打分——比人工评估便宜 100 倍，比 BLEU/ROUGE 准 3 倍，是当前模型评估的最佳折中方案。
 

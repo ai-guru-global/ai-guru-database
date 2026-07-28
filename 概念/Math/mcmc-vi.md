@@ -34,9 +34,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "蒙特卡洛方法与变分推断"
 ---
 
 # 蒙特卡洛方法与变分推断
+
+> 中文简称：蒙特卡洛方法与变分推断
 
 > **一句话理解**:MCMC 与 VI 是贝叶斯推断的"两大武器"——MCMC 精准采样(M-H / HMC / NUTS / Slice / Gibbs),VI 快速近似(平均场 / 摊销 / 引导流)。在 LLM 时代:RLHF 中 MC 估计 PPO、扩散模型 DDPM 采样、贝叶斯 LLM 推理。是"概率 ML"的根。
 

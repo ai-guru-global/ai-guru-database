@@ -12,8 +12,11 @@ aliases:
   - README_for_dummy
 sources: []
 
+name_zh: "AI Guru 知识库 - 新手导航"
 ---
 # AI Guru 知识库 - 新手导航
+
+> 中文简称：AI Guru 知识库 - 新手导航
 
 > **一句话概括**: 这是一份让你从零开始理解人工智能的"导游手册"，不需要任何数学和编程基础。
 

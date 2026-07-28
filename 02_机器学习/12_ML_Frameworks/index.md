@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "机器学习框架"
+name_en: "ML Frameworks"
 ---
 
 # ML Frameworks
+
+> 中文简称：机器学习框架 ｜ English Name: ML Frameworks
 
 机器学习框架 — scikit-learn、XGBoost、LightGBM、CatBoost 等经典 ML 工具链的用法与最佳实践。
 

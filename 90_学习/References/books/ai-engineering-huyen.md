@@ -23,8 +23,11 @@ aliases:
   - "Ai Engineering Huyen"
   - "ai engineering huyen"
 
+name_zh: "AI 工程"
 ---
 # AI Engineering
+
+> 中文简称：AI 工程
 
 > **一句话理解**: Chip Huyen 继《Designing ML Systems》后的又一力作，聚焦基础模型时代的 AI 工程实践，是 2025 年 LLM 应用工程领域最系统、最权威的参考书。
 

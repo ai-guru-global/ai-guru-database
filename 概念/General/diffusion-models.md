@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: core
 sources: []
 
+name_zh: "扩散模型"
 ---
 # 扩散模型 (Diffusion Models)
+
+> 中文简称：扩散模型
 
 ## 定义
 

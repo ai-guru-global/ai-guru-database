@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "Moonshot AI / Kimi 模型系列"
 ---
 
 # Moonshot AI / Kimi 模型系列
+
+> 中文简称：Moonshot AI / Kimi 模型系列
 
 > **一句话理解**: Moonshot AI（月之暗面）是"长上下文之王"——Kimi 以 200K-2M token 上下文窗口闻名，是中国 AI 四小龙之一。
 
@@ -197,6 +200,6 @@ Moonshot/Kimi 是国产大模型中长上下文能力的代表，其 200K+ 上�
 ## 相关概念
 
 - [[概念/zhipu-glm]] — 智谱 GLM 系列
-- [[概念/qwen]] — 通义千问
-- [[概念/long-context]] — 长上下文技术
+- [[概念/LLM/qwen-series|qwen]] — 通义千问
+- [[概念/LLM/long-context-llm|long-context]] — 长上下文技术
 

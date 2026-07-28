@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "世界模型"
+name_en: "World Models"
 ---
 
 # World Models
+
+> 中文简称：世界模型 ｜ English Name: World Models
 
 世界模型（World Models）— JEPA、Dreamer 等用于预测（prediction）与规划（planning）的内部世界模型架构。
 

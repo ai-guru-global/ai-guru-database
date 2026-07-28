@@ -21,9 +21,12 @@ lifecycle: reviewed
 tier: supporting
 created: 2026-06-12
 updated: 2026-07-21
+name_zh: "LlamaIndex 云端 RAG 平台"
 ---
 
 # LlamaIndex Cloud
+
+> 中文简称：LlamaIndex 云端 RAG 平台
 
 [LlamaIndex Cloud](https://cloud.llamaindex.ai/)（前身为 LlamaParse/LlamaHub Cloud）是 LlamaIndex 官方推出的**云端 RAG 平台**，提供托管式文档解析、索引构建、检索服务和评估工具。它将 LlamaIndex 开源框架的核心能力封装为**SaaS 服务**，让开发者无需自建向量数据库和索引 Pipeline 即可构建生产级 RAG 应用。
 
@@ -208,6 +211,6 @@ pip install llama-index-cloud llama-parse
 ## 延伸阅读
 
 - [[概念/LLM/llamaindex|LlamaIndex]] — 开源框架详解
-- [[概念/RAG/rag-architecture|RAG 架构]] — RAG 系统全景
+- [[概念/RAG/rag-production-architecture|RAG 架构]] — RAG 系统全景
 - [[概念/LLM/cross-encoder|Cross-Encoder]] — 重排序技术
 - [[概念/LLM/context-engineering|上下文工程]] — 上下文管理

@@ -11,8 +11,11 @@ aliases:
   - Ranking_System
 sources: []
 
+name_zh: "排名体系"
 ---
 # Ranking System
+
+> 中文简称：排名体系
 
 > Methodology for comparing and ranking AI agents
 

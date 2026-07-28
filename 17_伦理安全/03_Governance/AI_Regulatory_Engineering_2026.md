@@ -12,8 +12,11 @@ aliases:
   - AI_Regulatory_Engineering_2026
 sources: []
 
+name_zh: "AI 监管工程"
 ---
 # AI Regulatory Engineering & EU AI Act Compliance 2026
+
+> 中文简称：AI 监管工程
 
 > **一句话理解**: 监管工程化是将法律条文转化为可执行的代码逻辑和自动化审计流程，确保 AI 系统在不牺牲创新的前提下符合全球监管标准（如欧盟 AI 法案）。
 

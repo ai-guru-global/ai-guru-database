@@ -28,9 +28,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "下一个 Token 预测"
 ---
 
 # 下一个 Token 预测（Next Token Prediction）
+
+> 中文简称：下一个 Token 预测
 
 ## 一句话总结
 

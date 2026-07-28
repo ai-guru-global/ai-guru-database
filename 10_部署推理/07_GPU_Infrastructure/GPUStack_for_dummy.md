@@ -12,12 +12,15 @@ aliases:
   - GPUStack_for_dummy
 sources: []
 
+name_zh: "GPUStack 入门指南 🚀"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # GPUStack 入门指南 🚀
+
+> 中文简称：GPUStack 入门指南 🚀
 
 > **一句话秒懂**: GPUStack 就像一个"AI 模型应用商店 + 机房管家"——把各种 GPU 统一管理起来, 点几下就能部署大模型, 还能用 OpenAI 一样的 API 调用。
 

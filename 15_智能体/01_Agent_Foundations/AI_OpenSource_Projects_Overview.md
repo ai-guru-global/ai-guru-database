@@ -12,8 +12,11 @@ aliases:
   - AI_OpenSource_Projects_Overview
 sources: []
 
+name_zh: "AI 开源项目全景图"
 ---
 # AI 开源项目全景图
+
+> 中文简称：AI 开源项目全景图
 
 > **一句话理解**: 本知识库收录了 AI 领域 50+ 主流开源项目的深度文档，覆盖 LLM、Agent、RAG、推理部署、评估等全链路。
 

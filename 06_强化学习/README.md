@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "06 强化学习"
 ---
 # 06 强化学习 (Reinforcement Learning)
+
+> 中文简称：06 强化学习
 
 本章涵盖强化学习的完整技术栈，从数学基础（MDP/贝尔曼方程）到深度强化学习算法（DQN/PPO），再到具身智能与机器人。Agent 相关内容已合并至 [Agent](../15_智能体/README.md)。
 

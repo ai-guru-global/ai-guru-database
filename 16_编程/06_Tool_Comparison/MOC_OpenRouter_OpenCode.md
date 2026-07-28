@@ -17,8 +17,11 @@ aliases:
 
 summary: "topic-ai-coding MOC — 专题文档"
 sources: []
+name_zh: "AI 编程专题地图"
 ---
 # topic-ai-coding MOC
+
+> 中文简称：AI 编程专题地图
 
 > **MOC 版本**: 1.0
 > **专题**: topic-ai-coding

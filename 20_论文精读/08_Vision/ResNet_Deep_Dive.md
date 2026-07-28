@@ -12,8 +12,11 @@ aliases:
   - ResNet_Deep_Dive
 sources: []
 
+name_zh: "ResNet 深度解读"
 ---
 # ResNet 深度解读 (Deep Residual Learning for Image Recognition)
+
+> 中文简称：ResNet 深度解读
 
 > **一句话理解**: ResNet 就像给深层神经网络修建了"高速公路"——通过跳跃连接让梯度直接流通，解决了网络越深反而越差的反直觉问题，让 152 层甚至上千层的网络训练成为可能。
 

@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "SWIFT 微调框架"
 ---
 
 # SWIFT 微调框架
+
+> 中文简称：SWIFT 微调框架
 
 > **一句话理解**: SWIFT 是 ModelScope 的"一键微调工具箱"——支持 Qwen/LLaMA/ChatGLM 等 100+ 模型的 LoRA/全参微调，比 transformers Trainer 更简洁。
 
@@ -198,7 +201,7 @@ SWIFT 是 ModelScope 官方微调框架，支持 200+ 模型的 LoRA/QLoRA/全�
 
 ## 相关概念
 
-- [[概念/lora]] — LoRA 微调
+- [[概念/Training/lora-peft|lora]] — LoRA 微调
 - [[概念/modelscope]] — ModelScope 平台
-- [[概念/llamafactory]] — LLaMA-Factory 微调框架
+- [[概念/Training/llama-factory|llamafactory]] — LLaMA-Factory 微调框架
 

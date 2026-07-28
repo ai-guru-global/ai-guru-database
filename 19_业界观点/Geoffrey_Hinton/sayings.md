@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Geoffrey Hinton 关于 AI 的观点"
 ---
 # Geoffrey Hinton 关于 AI 的观点 (Geoffrey Hinton on AI)
+
+> 中文简称：Geoffrey Hinton 关于 AI 的观点
 
 ## 1. 对深度学习的反思 (Reflections on Deep Learning)
 

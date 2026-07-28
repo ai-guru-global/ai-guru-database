@@ -11,8 +11,11 @@ aliases:
   - Kueue_Deep_Dive
 sources: []
 
+name_zh: "Kueue: Kubernetes 原生作业排队系统"
 ---
 # Kueue: Kubernetes 原生作业排队系统
+
+> 中文简称：Kueue: Kubernetes 原生作业排队系统
 
 > **一句话理解**: Kueue 是 Kubernetes SIGs 的作业排队/配额层——它不调度,只负责在 GPU 等稀缺资源紧张时按团队配额/优先级/公平共享决定"谁能先跑",再把作业交给真正的调度器(Volcano/KAI/kube-scheduler)。
 

@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "3FS 分布式文件系统"
 ---
 
 # 3FS 分布式文件系统
+
+> 中文简称：3FS 分布式文件系统
 
 > **一句话理解**: 3FS 是 DeepSeek 的"AI 训练专用存储"——利用 SSD 集群实现 TB/s 级数据吞吐，让 GPU 不再等数据。
 

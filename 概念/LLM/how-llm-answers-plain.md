@@ -19,9 +19,12 @@ lifecycle: reviewed
 tier: supporting
 created: "2026-06-15"
 updated: "2026-07-21"
+name_zh: "大模型回答问题是一道数学题吗？大白话"
 ---
 
 # 大模型回答问题是一道数学题吗？大白话
+
+> 中文简称：大模型回答问题是一道数学题吗？大白话
 
 > 很多人好奇：ChatGPT 回答问题，背后到底是在"思考"，还是在"算题"？
 > 答案是：**它在做一道概率数学题，不是传统意义上的解方程。**
@@ -210,7 +213,7 @@ updated: "2026-07-21"
 - [[概念/embeddings-vectors-mrl-plain]] — Embedding、向量与 MRL 大白话
 - [[05_大模型/LLM_For_Beginners]] — 大语言模型入门
 - [[概念/large-language-model]] — 大语言模型概念卡片
-- [[概念/transformer]] — Transformer 概念卡片
+- [[概念/LLM/transformer-architecture|transformer]] — Transformer 概念卡片
 - [[概念/hallucination]] — LLM 幻觉根因与缓解
 
 ---

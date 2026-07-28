@@ -7,9 +7,12 @@ created: 2026-07-23
 updated: 2026-07-23
 tier: supporting
 sources: []
+name_zh: "AI Policy Specialist 题库"
 ---
 
 # AI Policy Specialist 题库
+
+> 中文简称：AI Policy Specialist 题库
 
 > **难度标注**: ⭐ Basic | ⭐⭐ Intermediate | ⭐⭐⭐ Advanced
 > **频率标注**: 🔴 高频 | 🟡 中频 | 🟢 低频
@@ -126,4 +129,4 @@ sources: []
 - [[17_伦理安全/index|伦理安全]]
 - [[21_面试岗位/AI_Safety_Engineer/index|AI Safety Engineer]]
 - [[21_面试岗位/Interview_Guide/career-interviews|面试职业指南]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]

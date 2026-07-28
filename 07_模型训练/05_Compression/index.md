@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "模型压缩"
+name_en: "Compression"
 ---
 
 # Compression
+
+> 中文简称：模型压缩 ｜ English Name: Compression
 
 模型压缩（Model Compression）— 剪枝（pruning）、知识蒸馏（knowledge distillation）、量化与稀疏化技术。
 

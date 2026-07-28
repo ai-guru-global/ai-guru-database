@@ -12,9 +12,12 @@ aliases:
   - "MLOps_Engineer Interview Guide"
   - "ML Platform Engineer"
 sources: []
+name_zh: "MLOps Engineer 面试指南"
 ---
 
 # MLOps Engineer 面试指南
+
+> 中文简称：MLOps Engineer 面试指南
 
 > **一句话理解**: MLOps Engineer 是 ML 工程化的推动者——将 DevOps 的最佳实践扩展到机器学习领域，构建自动化训练-评估-部署-监控的全生命周期 Pipeline，让模型迭代像软件发布一样可靠、快速、可追溯。
 
@@ -697,7 +700,7 @@ class DataValidationPipeline:
 ## Related
 
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 - [[21_面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
 - [[21_面试岗位/AI_Reliability_Engineer/AI_Reliability_Engineer|AI Reliability Engineer 面试指南]]
 - [[21_面试岗位/Data_Engineer/Data_Engineer|Data Engineer 面试指南]]

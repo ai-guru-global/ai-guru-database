@@ -25,9 +25,12 @@ aliases:
   - "Colossal-AI"
   - "Colossal Ai"
   - "colossal ai"
+name_zh: "ColossalAI 分布式训练框架"
 ---
 
 # ColossalAI 分布式训练框架
+
+> 中文简称：ColossalAI 分布式训练框架
 
 > **一句话理解**: ColossalAI 是"大模型训练的民主化者"——一行代码让 70B 模型训练从 8 卡集群降到单卡可行，把并行策略的配置复杂性降到最低。
 

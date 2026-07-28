@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "智能体基准评估框架"
 ---
 # Agent Benchmarking Evaluation Framework
+
+> 中文简称：智能体基准评估框架
 
 > A comprehensive, production-ready framework for evaluating AI agents in DevOps environments (2026 Edition)
 

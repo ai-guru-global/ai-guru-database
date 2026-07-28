@@ -15,6 +15,7 @@ aliases:
 updated: 2026-06-30
 summary: "安全、隐私与数据治理 — 专题文档"
 sources: []
+name_zh: "安全、隐私与数据治理"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -54,6 +55,8 @@ k8s_versions:
 - '1.32'
 ---
 # 安全、隐私与数据治理
+
+> 中文简称：安全、隐私与数据治理
 
 > **文档类型**: 安全指南 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Security, Privacy, Data Collection, Zero Data Retention, ZDR, EU Residency, BYOK, API Key, OAuth PKCE
 

@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "大模型平台工程师"
+name_en: "LLM Platform Engineer"
 ---
 
 # LLM Platform Engineer
+
+> 中文简称：大模型平台工程师 ｜ English Name: LLM Platform Engineer
 
 LLM 平台工程师 — 构建大模型推理服务平台，处理高并发、低延迟、成本控制等工程挑战。
 

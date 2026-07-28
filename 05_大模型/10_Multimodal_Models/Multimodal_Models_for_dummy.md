@@ -12,8 +12,11 @@ aliases:
   - Multimodal_Models_for_dummy
 sources: []
 
+name_zh: "多模态模型小白指南"
 ---
 # 多模态模型小白指南 (Multimodal Models for Dummy)
+
+> 中文简称：多模态模型小白指南
 
 > **一句话理解**: 多模态模型就像一个有"眼睛和耳朵"的 AI——不仅能读文字，还能看图片、听声音，然后综合所有信息来回答你。
 
@@ -189,7 +192,7 @@ flowchart TB
 - [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md|Fine_tuning_Techniques_for_dummy]]
 - [[05_大模型/07_Fine_tuning_Techniques/Model_Merging_2026.md|Model_Merging_2026]]
 - [[05_大模型/05_LLM_Architectures/LLM_Architectures|LLM 架构总览]]
-- [[概念/multimodal-ai|多模态 AI 概念]]
+- [[概念/LLM/multimodal-llm|多模态 AI 概念]]
 
 ## 总结
 

@@ -11,8 +11,11 @@ aliases:
   - Comate_Guide
 sources: []
 
+name_zh: "Comate 使用指南"
 ---
 # Comate 使用指南
+
+> 中文简称：Comate 使用指南
 
 > **一句话**: 百度 Comate 是基于文心大模型的 AI 编程助手，个人专业版提供月度额度，适合多项目并行开发。
 

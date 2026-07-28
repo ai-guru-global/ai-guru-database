@@ -17,9 +17,12 @@ provenance:
 base_confidence: 0.88
 lifecycle: reviewed
 tier: core
+name_zh: "ONNX 开放神经网络交换格式"
 ---
 
 # ONNX 开放神经网络交换格式
+
+> 中文简称：ONNX 开放神经网络交换格式
 
 > **一句话理解**: ONNX 是"AI 模型的 PDF"——统一格式让模型在不同框架间自由迁移，ONNX Runtime 提供跨平台高性能推理。
 

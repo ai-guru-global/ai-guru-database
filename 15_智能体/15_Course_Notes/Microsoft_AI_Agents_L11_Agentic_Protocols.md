@@ -28,8 +28,11 @@ aliases:
   - "Microsoft AI Agents L11 Agentic Protocols"
   - Microsoft_AI_Agents_L11_Agentic_Protocols
 
+name_zh: "L11 Agentic 协议：MCP / A2A / NLWeb 三件套"
 ---
 # L11 Agentic 协议：MCP / A2A / NLWeb 三件套
+
+> 中文简称：L11 Agentic 协议：MCP / A2A / NLWeb 三件套
 
 > 来源：[Microsoft AI Agents for Beginners / 11-agentic-protocols](https://github.com/microsoft/ai-agents-for-beginners/tree/main/11-agentic-protocols)
 

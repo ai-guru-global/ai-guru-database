@@ -11,8 +11,11 @@ aliases:
   - Evaluation_Metrics
 sources: []
 
+name_zh: "评估指标目录"
 ---
 # Evaluation Metrics
+
+> 中文简称：评估指标目录
 
 > Comprehensive catalog of metrics for AI agent evaluation
 

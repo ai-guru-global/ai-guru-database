@@ -5,9 +5,12 @@ category: agent
 tags: [agent, beginner, react, multi-agent, a2a, low-code]
 source: yeasy/ai_beginner_guide/14_agents
 sources: []
+name_zh: "AI 智能体入门"
 ---
 
 # AI 智能体入门
+
+> 中文简称：AI 智能体入门
 
 > 一句话理解：智能体是 **能规划任务、调用工具、观察结果并根据反馈调整行为的 AI 系统**，不只是聊天，还能做事。
 

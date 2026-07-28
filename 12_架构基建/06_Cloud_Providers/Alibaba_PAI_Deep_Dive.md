@@ -8,9 +8,12 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: core
 sources: []
+name_zh: "阿里云 PAI 深度解析"
 ---
 
 # 阿里云 PAI 深度解析
+
+> 中文简称：阿里云 PAI 深度解析
 
 > **一句话理解**: PAI 是阿里云上一站式 AI 平台，DSW 写代码、DLC 跑训练、EAS 做推理；在专有云里，它们跑在 ACK 和飞天底座之上。
 

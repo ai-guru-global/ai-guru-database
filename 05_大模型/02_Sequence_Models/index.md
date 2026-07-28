@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-21
 sources: []
 tags: [auto-index]
+name_zh: "序列模型"
+name_en: "Sequence Models"
 ---
 
 # Sequence Models
+
+> 中文简称：序列模型 ｜ English Name: Sequence Models
 
 序列模型（Sequence Models）— RNN/LSTM、解码策略（decoding strategy）、Beam Search 与文本生成的核心技术。
 

@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["quantization", "huggingface", "llm-inference", "bitsandbytes", "awq", "gptq", "gguf"]
 summary: "> **一句话理解**: Hugging Face 通过统一的 `quantization_config` 接口，将大模型领域碎片化的量化技术（INT8/INT4/FP4）完美整合。无论你是要动态加载、高性能推理还是部署到边缘设备，都能轻松配置。"
 created: "2026-06-12"
-updated: "2026-06-12"
+updated: "2026-07-25"
 tier: supporting
 aliases:
   - "Hf Quantization Ecosystem"
@@ -12,12 +12,15 @@ aliases:
   - HF_Quantization_Ecosystem
 sources: []
 
+name_zh: "Hugging Face 量化生态：BitsAndBytes, AWQ, GPT"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Hugging Face 量化生态：BitsAndBytes, AWQ, GPTQ 与 GGUF
+
+> 中文简称：Hugging Face 量化生态：BitsAndBytes, AWQ, GPT
 
 > **一句话理解**: 模型尺寸呈指数级增长，显存却成了最大的瓶颈。Hugging Face 通过 `transformers` 库的 `quantization_config` 参数，将底层碎片化、各自为战的量化后端完美统一。只需更改配置参数，即可在精度、显存与速度之间灵活取舍。
 
@@ -30,6 +33,7 @@ sources: []
 3. [高性能推理双雄：AWQ 与 GPTQ](#3-高性能推理双雄awq-与-gptq)
 4. [边缘与 CPU 的王者：GGUF (llama.cpp)](#4-边缘与-cpu-的王者gguf-llamacpp)
 5. [Hugging Face 量化生态选型决策树](#5-hugging-face-量化生态选型决策树)
+6. [源码级实现解析（基于 bitsandbytes v0.50.0）](#6-源码级实现解析基于-bitsandbytes-v0500)
 
 ---
 
@@ -127,6 +131,27 @@ model = AutoModelForCausalLM.from_pretrained(
 | **我要在云端 TGI/vLLM 高速部署** | **AWQ (INT4)** | `autoawq` | 精度损失最小，速度快，但需要提前下载专属的 `-AWQ` 权重分支。 |
 | **AWQ 找不到，或者旧设备支持不佳** | **GPTQ (INT4)** | `optimum` / `auto-gptq` | 依然是极其稳定的生产选择，生态支持度最广。 |
 | **我只有 MacBook / 纯 CPU 服务器**| **GGUF (Q4/Q5/Q8)**| `llama-cpp-python` /原生库 | 边缘侧事实标准，利用系统内存 (RAM) 取代显存 (VRAM)。 |
+
+---
+
+## 6. 源码级实现解析（基于 bitsandbytes v0.50.0）
+
+> 本节基于本仓库归档源码 `code/llm-frameworks/bitsandbytes-v0.50.0/`（PyPI wheel 解包，保留全部 Python 实现），所有行号可对照验证。
+
+第 2 节所述"加载时动态量化"的实现链路（`bitsandbytes/` 目录）：
+
+| 环节 | 关键实体 | 证据文件 | 说明 |
+|------|------|------|------|
+| 参数容器 | `Params4bit` / `Int8Params` | `nn/modules.py` L213 / L719 | 重写 `torch.nn.Parameter`，在 `.cuda()` 时自动触发量化——"加载即量化"的奥秘 |
+| 替换层 | `Linear4bit` / `LinearNF4` / `Linear8bitLt` | `nn/modules.py` L504 / L676 / L1018 | HF `BitsAndBytesConfig` 最终把 `nn.Linear` 替换成这些类 |
+| 量化算子 | `quantize_4bit` / `dequantize_4bit` / `quantize_blockwise` | `functional.py` L884 / L992 / L613 | NF4/FP4 分块量化；`QuantState`（L420）携带双重量化元数据 |
+| 自动微分 | `MatMul4Bit` / `MatMul8bitLt` | `autograd/_functions.py` L300 / L101 | 前向反量化后 matmul，反向梯度只流向 LoRA 旁支（QLoRA 可训的关键） |
+| 多后端 | `backends/` | cuda/cpu/mps/xpu/hpu/triton 子目录 | v0.50 已是多后端架构，Apple Silicon/Intel GPU 亦可用 |
+| 8-bit 优化器 | `optim/` | adamw.py、lion.py、ademamix.py 等 | 优化器状态 blockwise 量化，训练显存再降一档 |
+
+与第 3 节 AWQ/GPTQ 的工程对比：AWQ/GPTQ 的离线校准实现可对照 `code/llm-frameworks/llm-compressor-v0.12.0/`（`modifiers/transform/awq/base.py` L55 `AWQModifier`、`modifiers/gptq/base.py` L46 `GPTQModifier`）——一个需要校准数据集跑 pipeline，一个只需 `load_in_4bit=True`，正是两条技术路线的源码印证。
+
+详细解析见 [[10_部署推理/05_Quantization/Quantization_Techniques_2026]] 第 8 节。
 
 ---
 

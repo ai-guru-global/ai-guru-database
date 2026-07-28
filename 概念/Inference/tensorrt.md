@@ -21,9 +21,12 @@ relationships:
 sources:
   - "https://developer.nvidia.com/tensorrt"
   - "https://github.com/NVIDIA/TensorRT-LLM"
+name_zh: "NVIDIA 推理优化器"
 ---
 
 # TensorRT
+
+> 中文简称：NVIDIA 推理优化器
 
 > **一句话理解**: TensorRT 是 NVIDIA 的「推理加速器」，能把训练好的模型编译成在 NVIDIA GPU 上跑得更快的版本。
 

@@ -12,9 +12,12 @@ tags:
 summary: "从task-specific模型到Foundation Model的范式转变，涵盖预训练+微调范式、In-Context Learning、Scaling Laws、涌现能力的数学分析，以及2026年推理时计算与测试时训练的前沿进展。"
 created: 2026-07-19
 updated: 2026-07-19
+name_zh: "基础模型作为ML范式转变"
 ---
 
 # 基础模型作为ML范式转变
+
+> 中文简称：基础模型作为ML范式转变
 
 ## 概述
 
@@ -599,17 +602,17 @@ $$\min_{\phi} I(X; \phi(X)) - \beta \cdot I(\phi(X); Y)$$
 
 ## 相关概念
 
-- [[Scaling_Laws]] - 规模定律的详细数学推导
-- [[In-Context_Learning]] - ICL机制的深入分析
-- [[Parameter_Efficient_Fine_Tuning]] - LoRA/Adapter/Prefix Tuning
-- [[Emergent_Abilities]] - 涌现能力的争议与证据
-- [[Test_Time_Training]] - 测试时训练架构
-- [[Chain_of_Thought]] - 推理时计算的核心方法
-- [[Bias_Variance_Tradeoff]] - 经典偏差-方差权衡
+- [[概念/LLM/chinchilla-scaling-laws|Scaling_Laws]] - 规模定律的详细数学推导
+- In-Context_Learning - ICL机制的深入分析
+- [[概念/Training/lora-peft|Parameter_Efficient_Fine_Tuning]] - LoRA/Adapter/Prefix Tuning
+- [[概念/LLM/emergent-abilities|Emergent_Abilities]] - 涌现能力的争议与证据
+- Test_Time_Training - 测试时训练架构
+- [[概念/LLM/cot-react-reasoning-prompt|Chain_of_Thought]] - 推理时计算的核心方法
+- Bias_Variance_Tradeoff - 经典偏差-方差权衡
 - [[Transfer_Learning]] - 迁移学习理论基础
-- [[Double_Descent]] - 双重下降现象
-- [[Multimodal_Foundation_Models]] - 多模态基础模型
-- [[ML_Engineering_Practices]] - ML工程实践
+- Double_Descent - 双重下降现象
+- Multimodal_Foundation_Models - 多模态基础模型
+- ML_Engineering_Practices - ML工程实践
 - [[Tabular_Foundation_Models_2026]] - 表格基础模型
 - [[Federated_Learning_ML_Perspective]] - 联邦学习
 - [[ML_Algorithms_Cheatsheet]] - ML算法速查

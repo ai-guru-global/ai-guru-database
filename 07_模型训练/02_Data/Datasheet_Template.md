@@ -10,9 +10,12 @@ aliases:
   - "Datasheet Template"
   - "Dataset Documentation"
 sources: []
+name_zh: "数据集文档模板"
 ---
 
 # 数据集文档模板 (Datasheet for Datasets)
+
+> 中文简称：数据集文档模板
 
 > 标准化的数据集文档模板——记录数据集的来源、构成、偏差和使用限制，是负责任 AI 开发的基础。
 

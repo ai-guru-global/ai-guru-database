@@ -24,9 +24,12 @@ lifecycle: reviewed
 tier: supporting
 created: 2026-06-17
 updated: 2026-07-21
+name_zh: "SimPO 简化偏好优化"
 ---
 
 # SimPO 简化偏好优化
+
+> 中文简称：SimPO 简化偏好优化
 
 > **一句话理解**: SimPO 是“更简单的 DPO”——不需要参考模型，用序列平均 log 概率直接做偏好优化，训练更省、效果不输 DPO。
 

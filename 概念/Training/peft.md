@@ -21,10 +21,13 @@ provenance:
 base_confidence: 0.90
 lifecycle: reviewed
 tier: core
-updated: 2026-07-21
+updated: 2026-07-25
+name_zh: "PEFT 参数高效微调库"
 ---
 
 # PEFT 参数高效微调库
+
+> 中文简称：PEFT 参数高效微调库
 
 > **一句话理解**: PEFT 是"大模型微调的统一入口"——HuggingFace 官方库，一个 Config 切换 LoRA/Prompt Tuning/IA³ 等各种微调方法。
 
@@ -193,6 +196,18 @@ model = get_peft_model(model, LoraConfig(r=16, lora_alpha=32))
 4. **多适配器**：同一模型可挂载多个适配器，按需切换
 5. **合并部署**：`merge_and_unload()` 将适配器合并回基座模型，推理无额外开销
 6. **生态丰富**：支持 PiSSA、DoRA、rsLoRA 等最新变体
+
+---
+
+## 7. 源码级洞察（基于 v0.19.1 归档源码）
+
+> 证据位于 `code/llm-frameworks/peft-v0.19.1/`：
+
+- **统一 API 的实现**：`get_peft_model()`（`src/peft/mapping_func.py` L30）按 config 类型分发；所有方法共享 `BaseTuner`（`tuners/tuners_utils.py` L233）+ `BaseTunerLayer`（L1379）双基类协议。
+- **注入而非修改**：`inject_adapter()`（tuners_utils.py L749）把目标 `nn.Linear` 原地替换为复合层，基座权重零修改。
+- **多适配器字典化**：`LoraLayer`（`tuners/lora/layer.py` L100）用 `nn.ModuleDict` 按 adapter 名存 A/B 矩阵，`set_adapter` 即字典键切换。
+- **merge 零开销部署**：`merge()`（layer.py L817）执行 `W += B@A*scaling`；`merge_and_unload()` 即批量 merge 后拆包装。
+- **方法规模**：`tuners/` 下 40+ 方法目录，均复用同一协议。详见 [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] 第 7 节。
 
 ---
 

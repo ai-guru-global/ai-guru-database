@@ -26,8 +26,11 @@ aliases:
   - "Learn Claude Code L06 Subagent"
   - Learn_Claude_Code_L06_Subagent
 
+name_zh: "Learn Claude Code L06：Subagent — 大任务拆小，干"
 ---
 # Learn Claude Code L06：Subagent — 大任务拆小，干净上下文
+
+> 中文简称：Learn Claude Code L06：Subagent — 大任务拆小，干
 
 > **一句话理解**: 像“开一个新终端”一样 spawn 一个子 Agent，给它独立 messages[] 专心做一件事，做完只把结论写回笔记，主终端继续干活。
 

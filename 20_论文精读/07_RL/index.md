@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "强化学习论文"
+name_en: "RL"
 ---
 
 # RL Papers
+
+> 中文简称：强化学习论文 ｜ English Name: RL
 
 强化学习论文精读（RL Papers）— AlphaGo、DQN、PPO 等 RL 经典与前沿论文。
 

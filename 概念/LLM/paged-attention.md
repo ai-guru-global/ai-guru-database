@@ -25,8 +25,11 @@ aliases:
   - "Paged Attention"
   - "paged attention"
 
+name_zh: "分页注意力"
 ---
 # PagedAttention
+
+> 中文简称：分页注意力
 
 ## 核心要点
 

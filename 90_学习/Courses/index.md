@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "课程"
+name_en: "Courses"
 ---
 
 # Courses
+
+> 中文简称：课程 ｜ English Name: Courses
 
 AI 课程索引（Course Index）— 按平台分类的课程笔记与学习路径（learning path），涵盖 Coursera、Hugging Face、DeepLearning.AI、ApacheCN 等平台的精选课程。
 

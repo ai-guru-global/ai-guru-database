@@ -12,12 +12,15 @@ aliases:
   - HAMi_Operation_Guide
 sources: []
 
+name_zh: "HAMi 运维指南: 安装、配置、升级与监控"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # HAMi 运维指南：安装、配置、升级与监控
+
+> 中文简称：HAMi 运维指南: 安装、配置、升级与监控
 
 > **一句话理解**: 本文档覆盖 HAMi 在生产环境中的完整运维路径——从 Helm 安装、节点标签、调度策略配置，到升级、监控、告警、WebUI 部署与日常排障前置检查。
 

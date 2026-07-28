@@ -8,9 +8,12 @@ created: 2026-07-02
 updated: 2026-07-02
 tier: core
 lifecycle: draft
+name_zh: "Kubernetes x Pod: 集群编排与工作负载生命周期的协同全景"
 ---
 
 # Kubernetes x Pod: 集群编排与工作负载生命周期的协同全景
+
+> 中文简称：Kubernetes x Pod: 集群编排与工作负载生命周期的协同全景
 
 ## The Connection
 

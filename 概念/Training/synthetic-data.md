@@ -32,9 +32,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "合成数据训练"
 ---
 
 # 合成数据训练
+
+> 中文简称：合成数据训练
 
 > **一句话理解**:合成数据让"训练数据不足 / 质量差"的难题终结——用强模型(Claude / GPT-4o)或规则化流程,生成海量高质量训练数据,Phi-4 14B 100% 合成数据击败 GPT-4o mini,DeepSeek R1-Distill 用 80 万 CoT 蒸馏出 32B SOTA。是 2025-2026 主流训练范式。
 

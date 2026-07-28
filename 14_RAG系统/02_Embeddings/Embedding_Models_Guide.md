@@ -13,8 +13,11 @@ aliases:
   - "Embedding Models Guide"
   - Embedding_Models_Guide
 
+name_zh: "Embedding 模型选型与实践指南 2026"
 ---
 # Embedding 模型选型与实践指南 2026
+
+> 中文简称：Embedding 模型选型与实践指南 2026
 
 > **一句话理解**: Embedding 模型是 RAG 和语义搜索的核心,本文对比主流 Embedding 模型的性能、维度、成本,提供选型建议。
 

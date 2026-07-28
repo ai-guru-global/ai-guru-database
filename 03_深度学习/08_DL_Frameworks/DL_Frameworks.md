@@ -12,8 +12,11 @@ aliases:
   - DL_Frameworks
 sources: []
 
+name_zh: "深度学习框架概览"
 ---
 # 深度学习框架概览 (DL Frameworks)
+
+> 中文简称：深度学习框架概览
 
 > 主流深度学习框架的对比与选型指南——PyTorch、TensorFlow、JAX、Keras 各有生态和适用场景。
 

@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "农业"
+name_en: "Agriculture"
 ---
 
 # Agriculture
+
+> 中文简称：农业 ｜ English Name: Agriculture
 
 ## 文件导航
 

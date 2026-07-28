@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "教育"
+name_en: "Education"
 ---
 
 # Education
+
+> 中文简称：教育 ｜ English Name: Education
 
 教育（Education）— AI 在个性化学习（personalized learning）、智能辅导（intelligent tutoring）、自动评测与教育内容生成中的应用。
 

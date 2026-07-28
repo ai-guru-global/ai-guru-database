@@ -11,12 +11,15 @@ aliases:
   - Harness_Deployment_Guide
 sources: []
 
+name_zh: "Agent Harness 部署与运维指南"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Agent Harness 部署与运维指南
+
+> 中文简称：Agent Harness 部署与运维指南
 
 > 从开发环境到生产环境的完整部署路径，涵盖容器化、K8s 编排、监控告警和运维最佳实践。
 

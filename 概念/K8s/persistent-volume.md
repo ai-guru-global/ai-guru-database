@@ -18,9 +18,12 @@ relationships:
   - target: "概念/pod"
     type: part_of
 sources: []
+name_zh: "持久卷"
 ---
 
 # PersistentVolume
+
+> 中文简称：持久卷
 
 > **一句话理解**: PV 是 Kubernetes 里与 Pod 生命周期解耦的持久化存储资源，由管理员预配或 StorageClass 动态供给，通过 PVC 被工作负载消费。
 

@@ -13,8 +13,11 @@ aliases:
   - "Awesome Mcp Servers"
   - "awesome mcp servers"
 
+name_zh: "Awesome MCP Servers 集合"
 ---
 # Awesome MCP Servers 集合 (15k)
+
+> 中文简称：Awesome MCP Servers 集合
 
 > **一句话理解**: 社区维护的 MCP 服务器集合,涵盖文件系统、数据库、搜索、开发工具等各类 MCP 服务。
 
@@ -39,7 +42,7 @@ aliases:
 
 Model Context Protocol (MCP) 是 Anthropic 提出的开放标准,用于连接 AI 模型与外部数据源和工具。MCP 服务器提供工具和资源,MCP 客户端(如 Claude Desktop、Cursor)可以调用这些服务。
 
-> **关联**: -> [[14_AI_Gateway|AI 网关]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[12_架构基建/11_AI_Gateway/index|AI 网关]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识框架

@@ -19,9 +19,12 @@ relationships:
   - target: "概念/pod"
     type: related_to
 sources: []
+name_zh: "K8s 资源限制范围"
 ---
 
 # LimitRange
+
+> 中文简称：K8s 资源限制范围
 
 > **一句话理解**: LimitRange 是命名空间内的「资源护栏」，为 Pod/容器/PVC 自动设置或强制限制 CPU、内存、存储的上下界。
 

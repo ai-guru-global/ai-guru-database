@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: core
 sources: []
 
+name_zh: "浮点精度与混合精度训练"
 ---
 # 浮点精度与混合精度训练
+
+> 中文简称：浮点精度与混合精度训练
 
 ## 1. IEEE 754 浮点格式详解
 
@@ -252,7 +255,7 @@ def debug_precision(model, input_tensor):
 ## 相关文档
 
 - [[01_数学基础/05_Numerical_Methods/Numerical_Methods|数值方法总论]]
-- [[01_数学基础/GPU_Programming/|GPU 编程]] — Tensor Core 与精度
+- [[01_数学基础/10_AI_Hardware/GPU_Programming_CUDA_Basics|GPU 编程]] — Tensor Core 与精度
 - [[07_模型训练/04_Distributed_Training/|分布式训练]] — 多卡混合精度
 - [[10_部署推理/02_Inference_Engines/|推理引擎]] — 量化推理
 - [[05_大模型/07_Fine_tuning_Techniques/|微调技术]] — LoRA 精度选择

@@ -26,8 +26,11 @@ aliases:
   - "Learn Claude Code L17 Autonomous Agents"
   - Learn_Claude_Code_L17_Autonomous_Agents
 
+name_zh: "Learn Claude Code L17：Autonomous Agents"
 ---
 # Learn Claude Code L17：Autonomous Agents — 自己看板，自己认领
+
+> 中文简称：Learn Claude Code L17：Autonomous Agents
 
 > **一句话理解**: 队友应该自己看任务看板，发现没人做的任务就认领，做完再找下一个——不需要 Lead 手动分配。
 

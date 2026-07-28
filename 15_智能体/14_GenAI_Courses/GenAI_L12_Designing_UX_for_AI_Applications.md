@@ -15,7 +15,10 @@ aliases:
   - GenAI_L12_Designing_UX_for_AI_Applications
 sources: []
 
+name_zh: "为人工智能应用设计用户体验"
 ---
+> 中文简称：为人工智能应用设计用户体验
+
 ## 学习目标
 
 完成本课后，你将能够：

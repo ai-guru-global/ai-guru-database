@@ -7,9 +7,13 @@ created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
 sources: []
+name_zh: "云产品运维 Agent 产品管理指南"
+name_en: "product"
 ---
 
 # 云产品运维 Agent 产品管理指南 (Product Management)
+
+> 中文简称：云产品运维 Agent 产品管理指南 ｜ English Name: product
 
 > 🎯 **目标**: 为产品经理提供 Cloud Ops Agent 的产品规划、需求管理、成功指标定义、Roadmap 制定、用户研究的产品视角完整指南，确保产品方向与业务价值对齐。
 

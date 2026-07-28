@@ -12,8 +12,11 @@ aliases:
   - CrewAI_Deep_Dive
 sources: []
 
+name_zh: "CrewAI: 多 Agent 协作框架"
 ---
 # CrewAI: 多 Agent 协作框架
+
+> 中文简称：CrewAI: 多 Agent 协作框架
 
 > **一句话理解**: CrewAI 让多个 AI Agent 像团队一样协作——每个 Agent 有自己的角色和目标，通过任务编排实现复杂目标。
 

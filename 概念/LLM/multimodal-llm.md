@@ -26,9 +26,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "多模态大语言模型"
 ---
 
 # 多模态大语言模型（Multimodal LLM）
+
+> 中文简称：多模态大语言模型
 
 ## 一句话总结
 

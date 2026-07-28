@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "测试数据集"
+name_en: "datasets"
 ---
 
 # Datasets
+
+> 中文简称：测试数据集 ｜ English Name: datasets
 
 评估数据集（evaluation datasets）— 包含 K8s 知识问答、云知识 QA、交互质量、安全测试等多场景评测数据。
 

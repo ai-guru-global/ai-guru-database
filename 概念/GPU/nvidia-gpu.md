@@ -17,9 +17,12 @@ relationships:
   - target: "概念/nvidia-smi"
     type: managed_by
 sources: []
+name_zh: "英伟达 GPU"
 ---
 
 # NVIDIA GPU
+
+> 中文简称：英伟达 GPU
 
 > **一句话理解**: NVIDIA GPU 是 AI 领域最主流的算力卡，从游戏卡 RTX 到数据中心 A100/H100，配合 CUDA 生态几乎统治了深度学习训练市场。
 

@@ -30,8 +30,11 @@ aliases:
   - "Code Generation Workflow"
   - "code generation workflow"
 
+name_zh: "代码生成工作流"
 ---
 # 代码生成工作流
+
+> 中文简称：代码生成工作流
 
 ## 核心要点
 

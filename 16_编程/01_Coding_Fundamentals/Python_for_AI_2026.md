@@ -11,8 +11,11 @@ aliases:
   - Python_for_AI_2026
 sources: []
 
+name_zh: "AI Python 编程全景"
 ---
 # Python for AI 2026
+
+> 中文简称：AI Python 编程全景
 
 > **一句话理解**: 2026 年 AI 开发者的 Python 最佳实践——从语言新特性、类型系统、异步编程到包管理和性能优化的完整指南。
 

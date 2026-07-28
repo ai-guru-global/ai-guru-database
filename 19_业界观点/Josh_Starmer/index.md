@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "乔什·斯塔默"
+name_en: "Josh Starmer"
 ---
 
 # Josh Starmer
+
+> 中文简称：乔什·斯塔默 ｜ English Name: Josh Starmer
 
 Josh Starmer 是 StatQuest 创始人，用'BAM!'和简洁动画将统计学、机器学习、深度学习概念拆解到人人可理解的程度，是 AI 从业者补数学基础的黄金资源。
 
@@ -16,6 +20,7 @@ Josh Starmer 是 StatQuest 创始人，用'BAM!'和简洁动画将统计学、�
 |------|------|----------|
 | [[19_业界观点/Josh_Starmer/about|about]] | 人物简介 | 所有读者 |
 | [[19_业界观点/Josh_Starmer/youtube_channel|youtube_channel]] | YouTube 频道 | 视频学习者 |
+| [[19_业界观点/Josh_Starmer/Josh_Starmer_2026_Update|Josh_Starmer_2026_Update]] | 2026 年动态与 StatQuest 全谱系教学 | 进阶读者 |
 
 ## Related
 

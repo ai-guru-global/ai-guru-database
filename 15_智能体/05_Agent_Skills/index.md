@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "智能体技能"
+name_en: "Agent Skills"
 ---
 
 # Agent Skills
+
+> 中文简称：智能体技能 ｜ English Name: Agent Skills
 
 智能体技能 — Agent 技能设计、版本管理、工具调用最佳实践与生态目录。
 

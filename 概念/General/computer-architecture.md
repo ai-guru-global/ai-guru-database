@@ -21,8 +21,11 @@ sources:
 relationships:
   - target: "概念/ai-hardware"
     type: related_to
+name_zh: "计算机体系结构"
 ---
 # 计算机体系结构 (Computer Architecture)
+
+> 中文简称：计算机体系结构
 
 > 计算机体系结构是 AI 训练与推理的物理基础——从 CPU 到 GPU 到 TPU，硬件架构决定了 AI 系统的性能天花板。
 

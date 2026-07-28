@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "机器学习"
+name_en: "Classical ML"
 ---
 
 # Machine Learning
+
+> 中文简称：机器学习 ｜ English Name: Classical ML
 
 This page indexes the contents of `机器学习`.
 

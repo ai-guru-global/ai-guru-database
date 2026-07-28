@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-25
 sources: []
+name_zh: "推理模型"
+name_en: "Reasoning Models"
 ---
 
 # Reasoning Models
+
+> 中文简称：推理模型 ｜ English Name: Reasoning Models
 
 推理模型 — o1/o3、DeepSeek-R1 等推理增强模型，通过测试时计算和强化学习提升推理能力。
 
@@ -209,3 +213,7 @@ sources: []
 5. **日常对话**: 普通 LLM 即可
 
 > 💡 推理模型的核心：通过测试时计算扩展，让 AI 能够“思考”而不是仅仅“回答”。
+
+## 相关文档
+
+- [[05_大模型/09_Reasoning_Models/o3_o4_Reasoning_Models_2025|o3/o4 推理模型]]

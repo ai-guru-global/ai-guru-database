@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Jensen Huang 关于 AI 的观点"
 ---
 # Jensen Huang 关于 AI 的观点 (Jensen Huang on AI)
+
+> 中文简称：Jensen Huang 关于 AI 的观点
 
 ## 1. 新工业革命 (New Industrial Revolution)
 

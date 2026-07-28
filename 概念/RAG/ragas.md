@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: core
+name_zh: "Ragas RAG 评估框架"
 ---
 
 # Ragas RAG 评估框架
+
+> 中文简称：Ragas RAG 评估框架
 
 > **一句话理解**: Ragas 是"RAG 系统的体检报告"——一套指标量化回答忠实度、检索精度、答案相关性，帮你判断 RAG 到底靠不靠谱。
 

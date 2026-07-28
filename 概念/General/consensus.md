@@ -23,9 +23,12 @@ provenance:
 base_confidence: 0.85
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "共识算法"
 ---
 
 # Consensus Algorithm（共识算法）
+
+> 中文简称：共识算法
 
 ## 核心要点
 
@@ -196,6 +199,6 @@ Safety（安全性）
 ## 相关概念
 
 - [[概念/etcd]] — etcd 分布式键值存储
-- [[概念/raft]] — Raft 共识算法
-- [[概念/paxos]] — Paxos 共识协议
+- [[概念/Training/distributed-systems|raft]] — Raft 共识算法
+- [[概念/Training/distributed-systems|paxos]] — Paxos 共识协议
 - [[概念/distributed-training]] — 分布式训练

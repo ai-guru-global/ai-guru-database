@@ -27,9 +27,12 @@ tier: supporting
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "LLM 训练检查清单"
 ---
 
 # LLM 训练检查清单
+
+> 中文简称：LLM 训练检查清单
 
 ## 一句话总结
 
@@ -182,7 +185,7 @@ LLM 训练需要在**数据质量**、**超参数**、**训练稳定性**、**�
 
 - [[概念/LLM/large-language-model|大语言模型]] — LLM 基础概念
 - [[概念/LLM/llm-production-pipeline|生产流水线]] — 从训练到部署
-- [[概念/Training/Distributed_Training|分布式训练]] — 并行策略详解
+- [[概念/Training/distributed-training|分布式训练]] — 并行策略详解
 - [[概念/LLM/llm-quantization|LLM 量化]] — 训练后量化发布
 
 ## 训练成本估算参考

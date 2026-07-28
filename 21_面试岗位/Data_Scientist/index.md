@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "数据科学家"
+name_en: "Data Scientist"
 ---
 
 # Data Scientist
+
+> 中文简称：数据科学家 ｜ English Name: Data Scientist
 
 数据科学家 — 从数据中提取洞察，构建预测模型，用统计学与 ML 解决业务问题。
 

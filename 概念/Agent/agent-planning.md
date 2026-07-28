@@ -22,9 +22,12 @@ updated: 2026-07-21
 aliases:
   - "Agent Planning"
   - "agent planning"
+name_zh: "Agent 规划"
 ---
 
 # Agent 规划（Planning）
+
+> 中文简称：Agent 规划
 
 ## 核心要点
 

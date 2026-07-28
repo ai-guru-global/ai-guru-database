@@ -12,8 +12,11 @@ aliases:
   - interview_preparing
 sources: []
 
+name_zh: "Data Scientist 面试准备"
 ---
 # Data Scientist 面试准备
+
+> 中文简称：Data Scientist 面试准备
 
 ## 核心职责
 - **统计建模与分析**: 建模、实验设计与指标解释。
@@ -47,7 +50,7 @@ sources: []
 - [[21_面试岗位/Data_Scientist/interview_answers|Data Scientist 面试题实例答案]]
 - [[21_面试岗位/Data_Scientist/question_bank|Data Scientist 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 
 ## 面试准备核心策略
 

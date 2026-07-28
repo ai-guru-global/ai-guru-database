@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "向量数据库"
+name_en: "Vector Databases"
 ---
 
 # Vector Databases
+
+> 中文简称：向量数据库 ｜ English Name: Vector Databases
 
 This page indexes the contents of `14_RAG系统/03_Vector_Databases`.
 

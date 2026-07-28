@@ -10,9 +10,12 @@ aliases:
   - "Knowledge Graph Visualization"
   - "Graph Visualization"
 sources: []
+name_zh: "知识图谱可视化"
 ---
 
 # 知识图谱可视化 (Knowledge Graph Visualization)
+
+> 中文简称：知识图谱可视化
 
 > 知识图谱可视化全指南——从数据准备到交互式探索，用可视化理解实体关系、发现知识模式。
 

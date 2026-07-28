@@ -20,9 +20,12 @@ lifecycle_changed: 2026-07-21
 created: 2026-07-21
 updated: 2026-07-21
 tier: supporting
+name_zh: "文档智能"
 ---
 
 # 文档智能
+
+> 中文简称：文档智能
 
 > 一句话理解：自动识别、理解和提取文档（PDF/图片/扫描件）中的文字、表格、版面结构信息。
 

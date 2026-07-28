@@ -14,6 +14,7 @@ aliases:
 updated: 2026-06-30
 summary: "Structured Outputs 与 Tool Calling — 专题文档"
 sources: []
+name_zh: "Structured Outputs 与 Tool Calling"
 ---
 title: Structured Outputs 与 Tool Calling
 description: '**文档类型**: 功能详解 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Structured
@@ -55,6 +56,8 @@ k8s_versions:
 ---
 
 # Structured Outputs 与 Tool Calling
+
+> 中文简称：Structured Outputs 与 Tool Calling
 
 > **文档类型**: 功能详解 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Structured Outputs, JSON Schema, Tool Calling, Function Calling, Response Healing, Parallel Tools
 

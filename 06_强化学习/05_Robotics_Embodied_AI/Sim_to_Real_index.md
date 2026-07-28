@@ -3,9 +3,12 @@ title: 仿真到现实迁移
 category: 06_强化学习/Sim_to_Real
 tags: [rl, sim2real, transfer, digital-twin]
 summary: Sim2Real 迁移学习和数字孪生训练方法。
+name_zh: "仿真到现实迁移"
 ---
 
 # 仿真到现实迁移
+
+> 中文简称：仿真到现实迁移
 
 本目录收录仿真到现实迁移（Sim2Real）相关文档。
 

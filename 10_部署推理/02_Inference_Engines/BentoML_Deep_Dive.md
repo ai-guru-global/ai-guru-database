@@ -12,12 +12,15 @@ aliases:
   - BentoML_Deep_Dive
 sources: []
 
+name_zh: "BentoML: AI 模型服务框架"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # BentoML: AI 模型服务框架
+
+> 中文简称：BentoML: AI 模型服务框架
 
 > **一句话理解**: BentoML 是开源 AI 模型服务框架——一键将任意模型打包为生产级 API，支持多框架、自动扩缩容、A/B 测试，并能与 vLLM/TGI/TensorRT-LLM 等推理引擎无缝集成。
 

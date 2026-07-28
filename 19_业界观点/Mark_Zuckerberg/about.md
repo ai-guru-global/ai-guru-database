@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Mark Zuckerberg 简介"
 ---
 # Mark Zuckerberg 简介 (Mark Zuckerberg)
+
+> 中文简称：Mark Zuckerberg 简介
 
 ## 一句话概括
 

@@ -17,9 +17,12 @@ relationships:
   - target: "概念/kubernetes"
     type: related_to
 sources: []
+name_zh: "Loki 日志聚合系统"
 ---
 
 # Loki
+
+> 中文简称：Loki 日志聚合系统
 
 > **一句话理解**: Loki 是「像 Prometheus 一样给日志打标签」的日志系统，只索引标签不索引全文，因此成本低、易与 Grafana 集成。
 

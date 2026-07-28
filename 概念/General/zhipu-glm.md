@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "智谱 AI / GLM 模型系列"
 ---
 
 # 智谱 AI / GLM 模型系列
+
+> 中文简称：智谱 AI / GLM 模型系列
 
 > **一句话理解**: 智谱 AI 是"学院派开源先锋"——背靠清华大学 NLP 实验室，ChatGLM 是中国最早开源的大模型之一，GLM-5.1 是最新旗舰。
 

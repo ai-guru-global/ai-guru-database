@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "自动驾驶专题"
 ---
 
 # Autonomous Driving
+
+> 中文简称：自动驾驶专题
 
 自动驾驶（Autonomous Driving）— AI 在感知融合（sensor fusion）、路径规划（path planning）、决策控制与仿真测试中的应用。
 

@@ -18,9 +18,12 @@ relationships:
   - target: "概念/apsara-stack"
     type: related_to
 sources: []
+name_zh: "Pod 中断预算"
 ---
 
 # Pod Disruption Budget
+
+> 中文简称：Pod 中断预算
 
 > **一句话理解**: PDB 是 K8s 对「自愿中断」的保险丝——节点维护、集群缩容时，它保证不会一次性把关键服务的 Pod 全部下线。
 

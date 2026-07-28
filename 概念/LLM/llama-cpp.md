@@ -22,9 +22,12 @@ provenance:
 base_confidence: 0.90
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "C++ LLM 推理引擎"
 ---
 
 # llama.cpp（C++ LLM 推理引擎）
+
+> 中文简称：C++ LLM 推理引擎
 
 ## 核心要点
 

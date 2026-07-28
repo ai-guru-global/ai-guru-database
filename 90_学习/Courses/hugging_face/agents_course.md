@@ -12,8 +12,11 @@ aliases:
   - agents_course
 sources: []
 
+name_zh: "HuggingFace AI Agents 课程"
 ---
 # HuggingFace AI Agents 课程
+
+> 中文简称：HuggingFace AI Agents 课程
 
 > HuggingFace 官方 AI Agents 课程——使用 smolagents 构建生产级智能体。
 

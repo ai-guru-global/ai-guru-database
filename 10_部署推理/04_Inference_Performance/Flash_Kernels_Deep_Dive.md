@@ -11,8 +11,11 @@ aliases:
   - Flash_Kernels_Deep_Dive
 sources: []
 
+name_zh: "Flash 系列 Kernel 深潜"
 ---
 # Flash 系列 Kernel 深潜
+
+> 中文简称：Flash 系列 Kernel 深潜
 
 > 现代 LLM 推理的 attention 算子已经把显存墙利用到极致——核心思路是“算得多、写得少”。
 

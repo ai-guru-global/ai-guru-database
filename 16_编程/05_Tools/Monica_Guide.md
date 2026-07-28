@@ -11,8 +11,11 @@ aliases:
   - Monica_Guide
 sources: []
 
+name_zh: "Monica 使用指南"
 ---
 # Monica 使用指南
+
+> 中文简称：Monica 使用指南
 
 > **一句话**: Monica 是全能型 AI 助手，MAX 套餐 $16.6/月（$199/年），高级查询不限量，适合深度研究与日常 AI 辅助。
 

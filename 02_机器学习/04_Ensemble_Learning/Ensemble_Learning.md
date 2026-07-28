@@ -11,8 +11,11 @@ aliases:
   - Ensemble_Learning
 sources: []
 
+name_zh: "集成学习 - 完全指南"
 ---
 # 集成学习 (Ensemble Learning) - 完全指南
+
+> 中文简称：集成学习 - 完全指南
 
 ## 目录
 

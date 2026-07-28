@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "开源 LLM 可观测性平台"
 ---
 
 # Langfuse
+
+> 中文简称：开源 LLM 可观测性平台
 
 [Langfuse](https://github.com/langfuse/langfuse) 是一个**开源的 LLM 可观测性与评估平台**，提供 Tracing（链路追踪）、Evaluation（评估）、Prompt Management（Prompt 管理）和 Dataset Management（数据集管理）等核心能力。与 LangSmith 类似但**完全开源可自托管**，是企业在数据合规和隐私要求下的首选 LLM 观测方案。
 

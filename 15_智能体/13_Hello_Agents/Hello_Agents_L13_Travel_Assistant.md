@@ -26,8 +26,11 @@ aliases:
   - "Hello Agents L13 Travel Assistant"
   - Hello_Agents_L13_Travel_Assistant
 
+name_zh: "Hello-Agents L13：智能旅行助手"
 ---
 # Hello-Agents L13：智能旅行助手
+
+> 中文简称：Hello-Agents L13：智能旅行助手
 
 > **一句话理解**: 本章将前面章节实现的 HelloAgents 框架能力综合落地，构建一个真实可用的**智能旅行助手**：智能行程规划、地图可视化、预算计算、行程编辑、PDF/图片导出。
 

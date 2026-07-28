@@ -23,9 +23,12 @@ aliases:
   - "Triton"
   - "NVIDIA Triton"
   - "Triton Inference Server"
+name_zh: "Triton 推理服务器（详卡）"
 ---
 
 # Triton Inference Server
+
+> 中文简称：Triton 推理服务器（详卡）
 
 > **一句话理解**: Triton 是"AI 模型的 Nginx"——高性能推理服务器，支持多框架后端、动态批处理、模型并发，用 gRPC/HTTP 对外提供推理 API。
 

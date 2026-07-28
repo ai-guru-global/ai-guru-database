@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "AI 安全工程师"
+name_en: "AI Security Engineer"
 ---
 
 # AI Security Engineer
+
+> 中文简称：AI 安全工程师 ｜ English Name: AI Security Engineer
 
 AI 安全工程师 — 防御对抗攻击（adversarial attack）、Prompt 注入、数据投毒（data poisoning）与模型窃取，构建 AI 系统安全防护体系。
 

@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Mustafa Suleyman 关于 AI 的观点"
 ---
 # Mustafa Suleyman 关于 AI 的观点 (Mustafa Suleyman on AI)
+
+> 中文简称：Mustafa Suleyman 关于 AI 的观点
 
 ## 1. 安全与监管 (Safety & Regulation)
 

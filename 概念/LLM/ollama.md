@@ -25,9 +25,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "Ollama 本地 LLM 运行工具"
 ---
 
 # Ollama 本地 LLM 运行工具
+
+> 中文简称：Ollama 本地 LLM 运行工具
 
 > **一句话理解**: Ollama 是"本地版 Docker for LLM"——一行命令 `ollama run llama3` 就能在自己电脑上跑大模型，零配置开箱即用。
 

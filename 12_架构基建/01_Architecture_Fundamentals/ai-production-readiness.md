@@ -10,9 +10,12 @@ aliases:
   - "AI Production Readiness"
   - "ai production readiness"
 sources: []
+name_zh: "AI 生产就绪：从单点 Runbook 到系统工程"
 ---
 
 # AI 生产就绪：从单点 Runbook 到系统工程
+
+> 中文简称：AI 生产就绪：从单点 Runbook 到系统工程
 
 ## 一句话定位
 

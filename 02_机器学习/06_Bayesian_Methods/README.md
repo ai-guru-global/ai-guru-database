@@ -8,8 +8,11 @@ updated: 2026-06-04
 tier: supporting
 sources: []
 
+name_zh: "贝叶斯方法"
 ---
 # 贝叶斯方法 (Bayesian Methods)
+
+> 中文简称：贝叶斯方法
 
 > **核心定位**: 概率机器学习的核心框架，覆盖贝叶斯定理、MCMC、变分推断、贝叶斯神经网络、贝叶斯优化。
 

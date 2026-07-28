@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "供应链物流专题"
 ---
 
 # Supply Chain & Logistics
+
+> 中文简称：供应链物流专题
 
 供应链与物流（Supply Chain & Logistics）— AI 在需求预测（demand forecasting）、路径优化（route optimization）、仓储管理与风险预警中的应用。
 

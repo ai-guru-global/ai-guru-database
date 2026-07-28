@@ -17,9 +17,12 @@ relationships:
   - target: "概念/opentelemetry"
     type: related_to
 sources: []
+name_zh: "轻量日志转发器"
 ---
 
 # Fluent Bit
+
+> 中文简称：轻量日志转发器
 
 > **一句话理解**: Fluent Bit 是 Kubernetes 上最常用的轻量日志「搬运工」，以 DaemonSet 跑在每个节点上，把容器日志收集并转发到 Loki/ES/Kafka/SLS 等后端。
 

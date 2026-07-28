@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Yann LeCun 2026 Update", "扬·勒昆 2026 动态"]
 sources: []
+name_zh: "扬·勒昆 2026 动态"
 ---
 
 # 扬·勒昆 2026 动态 (Yann LeCun 2026 Update)
+
+> 中文简称：扬·勒昆 2026 动态
 
 ## 一句话概括
 
@@ -353,7 +356,7 @@ V-JEPA 2 作为 LeCun 世界模型愿景的核心实现：
 
 ### 技术与理论
 
-- [[05_大模型/Meta]] -- Llama 系列技术
+- [[05_大模型/14_Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta]] -- Llama 系列技术
 - [[05_大模型/05_LLM_Architectures]] -- 模型架构演进
 - [[05_大模型/09_Reasoning_Models]] -- 推理模型路线
 - [[00_入门/AI_Future_Trends]] -- 世界模型与 AGI

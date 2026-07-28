@@ -11,8 +11,11 @@ aliases:
   - Unsloth_Deep_Dive
 sources: []
 
+name_zh: "Unsloth: 快速 LLM 微调框架"
 ---
 # Unsloth: 快速 LLM 微调框架
+
+> 中文简称：Unsloth: 快速 LLM 微调框架
 
 > **一句话理解**: Unsloth 让大模型微调快 2-5 倍、显存减半——使用优化过的反向传播和量化，在消费级 GPU 上也能微调 70B 模型。
 

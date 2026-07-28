@@ -31,9 +31,12 @@ lifecycle: reviewed
 tier: core
 created: 2026-06-16
 updated: 2026-07-21
+name_zh: "LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲"
 ---
 
 # LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
+
+> 中文简称：LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
 
 > **一句话理解**：训练 ChatGPT 这类模型，本质上分三步——先用 **SFT** 教会它听懂人话，再用 **RLHF/DPO** 让它回答得更讨喜，而 **LoRA/QLoRA** 是让你能用普通电脑跑完这两步的省钱技巧。
 

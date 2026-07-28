@@ -7,9 +7,12 @@ summary: "U-Net (2015) 是编码器-解码器 + 跳跃连接的分割架构，�
 created: 2026-06-04
 updated: 2026-06-04
 sources: []
+name_zh: "论文深度解读"
 ---
 
 # 论文深度解读: U-Net — Convolutional Networks for Biomedical Image Segmentation
+
+> 中文简称：论文深度解读
 
 > **一句话理解**: U-Net 用对称的编码器-解码器 + 跳跃连接实现精准分割，这个 U 形架构后来成为 Stable Diffusion 的去噪骨干。
 

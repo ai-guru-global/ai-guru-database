@@ -19,9 +19,12 @@ sources:
   - "Belz et al. (2021). The QSquare Database: A Dataset for Quality Estimation of Machine Translation."
   - "Clark et al. (2021). All That's 'Human' Is Not Gold: Evaluating Human Evaluation of ML Systems (NeurIPS)."
 
+name_zh: "人工评估深度解析"
 ---
 
 # 人工评估深度解析 (Human Evaluation Deep Dive)
+
+> 中文简称：人工评估深度解析
 
 > **一句话理解**: 人工评估是 LLM 质量评估的"金标准"——所有自动化指标（BLEU、ROUGE、LLM-as-Judge）最终都要以人工评估为校准锚点；它的核心挑战不是"找人打分"，而是设计可复现的标注指南、管理标注者间一致性、控制偏见与疲劳，让主观判断变成可统计的可靠信号。
 
@@ -1954,9 +1957,9 @@ flowchart LR
 - [[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析]] — 用 AI 模拟人工评估，本文的对照方案
 - [[08_模型评估/03_LLM_Evaluation/RAG_Evaluation_Deep_Dive|RAG 系统评估深度解析]] — RAG 场景下的人工评估应用
 - [[08_模型评估/04_Evaluation_Tools/Online_Evaluation|在线评估]] — A/B 测试与线上监控，人工评估的生产延伸
-- [[08_模型评估/Fairness|公平性评估]] — 偏见检测与缓解，与人工评估偏见管理紧密相关
-- [[08_模型评估/Red_Team_Evaluation|红队评估]] — 安全性人工测试，人工评估的高风险特例
-- [[08_模型评估/Benchmark_Comparison|基准对比]] — 标准基准与人工评估的结合使用
+- [[08_模型评估/06_Safety_Evaluation/Fairness_Evaluation_for_dummy|公平性评估]] — 偏见检测与缓解，与人工评估偏见管理紧密相关
+- [[08_模型评估/06_Safety_Evaluation/Red_Team_Evaluation_Guide|红队评估]] — 安全性人工测试，人工评估的高风险特例
+- [[08_模型评估/02_Benchmarks/Unified_Benchmark_Comparison|基准对比]] — 标准基准与人工评估的结合使用
 - [[08_模型评估/05_Automation|评估自动化]] — CI/CD 评估流水线中人工评估的集成点
 
 ---

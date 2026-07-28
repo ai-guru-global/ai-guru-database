@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.82
 lifecycle: reviewed
 tier: supporting
+name_zh: "Chainlit 生产级 AI 聊天界面"
 ---
 
 # Chainlit 生产级 AI 聊天界面
+
+> 中文简称：Chainlit 生产级 AI 聊天界面
 
 > **一句话理解**: Chainlit 是"AI 聊天应用的前端标配"——Python 几行代码就有一个带流式输出、多轮对话、Agent 可视化的生产级聊天界面。
 

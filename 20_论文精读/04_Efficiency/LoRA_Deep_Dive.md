@@ -12,8 +12,11 @@ aliases:
   - LoRA_Deep_Dive
 sources: []
 
+name_zh: "LoRA 深度解读"
 ---
 # LoRA 深度解读 (Low-Rank Adaptation of Large Language Models)
+
+> 中文简称：LoRA 深度解读
 
 > **一句话理解**: LoRA 让你不用重新训练整个大模型，只需在旁边加一对"小矩阵"就能让模型学会新技能——参数量从 70 亿降到 400 万（减少 1000 倍），但效果几乎一样好。
 

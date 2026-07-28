@@ -31,9 +31,12 @@ tier: core
 created: 2026-07-23
 updated: 2026-07-23
 sources: []
+name_zh: "Mistral 模型系列"
 ---
 
 # Mistral 模型系列
+
+> 中文简称：Mistral 模型系列
 
 > **一句话理解**:欧洲"开源反击"的核心旗手——以"高参数效率 MoE"和"Apache 2.0 / 宽松商业许可"为武器,从 7B 小模型一路打到 675B MoE,是 Llama 系列之外最被工业界采纳的开源家族。
 
@@ -200,7 +203,7 @@ sources: []
 
 ## 九、相关概念卡
 
-- [[概念/moe|Moe]]
+- [[概念/General/mixture-of-experts|Moe]]
 - [[概念/mixture-of-experts|Mixture Of Experts]]
 - [[概念/llama-series|Llama Series]]
 - [[概念/edge-llm|Edge Llm]]

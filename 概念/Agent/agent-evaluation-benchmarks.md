@@ -32,8 +32,11 @@ aliases:
   - "agent evaluation benchmarks"
   - "Agent 基准测试"
 
+name_zh: "Agent 评估基准"
 ---
 # Agent 评估基准
+
+> 中文简称：Agent 评估基准
 
 > Agent 评估基准就像 AI 的'综合素质面试'：不是让它背答案，而是给它一个真实任务，观察它怎么思考、怎么动手、怎么纠错。
 

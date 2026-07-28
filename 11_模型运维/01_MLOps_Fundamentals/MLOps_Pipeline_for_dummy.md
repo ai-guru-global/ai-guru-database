@@ -12,8 +12,11 @@ aliases:
   - MLOps_Pipeline_for_dummy
 sources: []
 
+name_zh: "MLOps 流水线 - 小白版"
 ---
 # MLOps 流水线 - 小白版
+
+> 中文简称：MLOps 流水线 - 小白版
 
 > **一句话秒懂**: 就像汽车生产流水线,MLOps 是 AI 的"全自动工厂"——从训练、测试、部署到监控,全程自动化!
 

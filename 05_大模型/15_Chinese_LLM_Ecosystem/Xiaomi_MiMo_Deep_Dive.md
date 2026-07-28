@@ -12,8 +12,11 @@ aliases:
   - Xiaomi_MiMo_Deep_Dive
 sources: []
 
+name_zh: "小米 MiMo 技术深度解析"
 ---
 # 小米 MiMo 技术深度解析
+
+> 中文简称：小米 MiMo 技术深度解析
 
 ## 一句话理解
 

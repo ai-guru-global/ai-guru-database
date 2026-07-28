@@ -27,9 +27,12 @@ updated: 2026-07-21
 tier: core
 created: 2026-07-11T00:00:00Z
 updated: 2026-07-11T00:00:00Z
+name_zh: "Stable Diffusion — 潜在空间扩散模型"
 ---
 
 # Stable Diffusion — 潜在空间扩散模型
+
+> 中文简称：Stable Diffusion — 潜在空间扩散模型
 
 > **一句话理解**: Stable Diffusion 把扩散过程从像素空间搬到压缩的"潜在空间"中——就像先在缩小版画布上反复擦除噪声草图，最后再放大回原图，生成速度提升数十倍，是 AI 绘画普及的引爆点。
 

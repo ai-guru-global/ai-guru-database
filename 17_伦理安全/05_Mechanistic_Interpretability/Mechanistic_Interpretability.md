@@ -11,8 +11,11 @@ aliases:
   - Mechanistic_Interpretability
 sources: []
 
+name_zh: "机械可解释性 2026"
 ---
 # 机械可解释性 (Mechanistic Interpretability) 2026
+
+> 中文简称：机械可解释性 2026
 
 > **一句话理解**: 机械可解释性是 AI 安全的"逆向工程"——通过理解神经网络内部的具体计算机制，回答"这个模型为什么会这样做"，而不只是"这个模型做了什么"。
 

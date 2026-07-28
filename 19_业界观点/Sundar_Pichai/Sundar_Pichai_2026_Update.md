@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Sundar Pichai 2026 Update", "桑达尔·皮查伊 2026 动态"]
 sources: []
+name_zh: "桑达尔·皮查伊 2026 动态"
 ---
 
 # 桑达尔·皮查伊 2026 动态 (Sundar Pichai 2026 Update)
+
+> 中文简称：桑达尔·皮查伊 2026 动态
 
 ## 一句话概括
 
@@ -395,7 +398,7 @@ Pichai 的影响呈现为四个层面：
 
 - [[05_大模型/README]] -- Gemini 技术
 - [[05_大模型/MoE]] -- Gemini MoE 架构
-- [[应用/AI_Search]] -- AI 搜索
+- [[05_大模型/13_LLM_Products/perplexity_overview|AI_Search]] -- AI 搜索
 - [[00_入门/AI_Future_Trends]] -- AI 平台化
 
 ---

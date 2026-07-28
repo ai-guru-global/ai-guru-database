@@ -11,8 +11,11 @@ aliases:
   - "Agent in nutshell"
 sources: []
 
+name_zh: "AI 智能体速成指南"
 ---
 # AI 智能体速成指南
+
+> 中文简称：AI 智能体速成指南
 
 > 🎯 **目标**：理解 AI 智能体如何工作，以及如何构建能够采取行动的自主 AI 系统。
 

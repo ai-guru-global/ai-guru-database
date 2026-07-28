@@ -28,8 +28,11 @@ aliases:
   - "Microsoft AI Agents L06 Trustworthy Agents"
   - Microsoft_AI_Agents_L06_Trustworthy_Agents
 
+name_zh: "L06 构建可信 AI Agent：系统消息框架、威胁建模与人在回路"
 ---
 # L06 构建可信 AI Agent：系统消息框架、威胁建模与人在回路
+
+> 中文简称：L06 构建可信 AI Agent：系统消息框架、威胁建模与人在回路
 
 > 来源：[Microsoft AI Agents for Beginners / 06-building-trustworthy-agents](https://github.com/microsoft/ai-agents-for-beginners/tree/main/06-building-trustworthy-agents)
 

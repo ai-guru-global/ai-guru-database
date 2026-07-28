@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Yann LeCun 关于 AI 的观点"
 ---
 # Yann LeCun 关于 AI 的观点 (Yann LeCun on AI)
+
+> 中文简称：Yann LeCun 关于 AI 的观点
 
 ## 1. 反末日论与开放研究 (Anti-Doomerism & Open Research)
 

@@ -29,9 +29,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "GraphRAG / 知识图谱增强检索"
 ---
 
 # GraphRAG / 知识图谱增强检索
+
+> 中文简称：GraphRAG / 知识图谱增强检索
 
 > **一句话理解**:GraphRAG 不只是"向量 + 关键词"——它把文档拆成"实体 + 关系 + 社区",用 LLM 自动建图,然后让 LLM 沿图遍历找答案。是"跨文档全局问题"和"数据集级推理"的最强解。
 
@@ -252,8 +255,8 @@ print(result)
 - [[概念/rag-systems|Rag Systems]]
 - [[概念/hybrid-search|Hybrid Search]]
 - [[概念/vector-database|Vector Database]]
-- [[概念/knowledge-graph|Knowledge Graph]]
+- [[概念/RAG/knowledge-graph|Knowledge Graph]]
 - [[概念/rag-patterns|Rag Patterns]]
 - [[概念/agentic-rag|Agentic Rag]]
 - [[概念/reranker|Reranker]]
-- [[概念/cognee|Cognee]]
+- [[概念/Agent/agent-memory-systems|Cognee]]

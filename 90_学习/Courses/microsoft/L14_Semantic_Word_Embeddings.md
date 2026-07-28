@@ -12,8 +12,11 @@ aliases:
   - L14_Semantic_Word_Embeddings
 sources: []
 
+name_zh: "L14 - 语义词嵌入：Word2Vec 与 GloVe"
 ---
 # L14 - 语义词嵌入：Word2Vec 与 GloVe
+
+> 中文简称：L14 - 语义词嵌入：Word2Vec 与 GloVe
 
 > **一句话理解**：把词语从稀疏高维的 one-hot 向量压缩成低维稠密向量，让语义相近的词在向量空间中彼此靠近。
 

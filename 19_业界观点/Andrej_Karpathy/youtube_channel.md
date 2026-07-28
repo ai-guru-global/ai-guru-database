@@ -14,8 +14,11 @@ aliases:
   - "youtube channel"
   - youtube_channel
 
+name_zh: "Andrej Karpathy YouTube 频道"
 ---
 # Andrej Karpathy YouTube 频道
+
+> 中文简称：Andrej Karpathy YouTube 频道
 
 > **一句话理解**: 前 OpenAI/Tesla AI 负责人 Andrej Karpathy 的 YouTube 频道,深入浅出讲解 LLM、神经网络、GPT 等核心技术。
 

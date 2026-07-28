@@ -10,8 +10,11 @@ aliases:
   - AI_Reasoning_Models_Guide
 sources: []
 
+name_zh: "AI 推理模型与推理计算指南"
 ---
 # AI 推理模型与推理计算指南
+
+> 中文简称：AI 推理模型与推理计算指南
 
 > **一句话理解**: 推理模型让 AI 从"快速直觉反应"进化到"深入思考后作答"——通过 Inference-Time Compute（推理计算），模型可以在回答时动态分配计算资源，而非仅依赖训练时编码的知识。
 

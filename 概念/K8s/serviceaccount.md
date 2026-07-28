@@ -17,9 +17,12 @@ relationships:
   - target: "概念/pod"
     type: part_of
 sources: []
+name_zh: "K8s 服务账户"
 ---
 
 # ServiceAccount
+
+> 中文简称：K8s 服务账户
 
 > **一句话理解**: ServiceAccount 是 Pod 在 Kubernetes 集群里的「工作证」——让应用以受控身份访问 API Server 或其他服务，而不是使用普通用户账号。
 

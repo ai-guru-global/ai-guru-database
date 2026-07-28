@@ -10,9 +10,12 @@ aliases:
   - "NLP Engineer Path"
   - "NLP Learning Path"
 sources: []
+name_zh: "NLP 工程师学习路径"
 ---
 
 # NLP 工程师学习路径 (NLP Engineer Learning Path)
+
+> 中文简称：NLP 工程师学习路径
 
 > NLP 工程师专注于文本和语言相关的 AI 应用——从传统 NLP 到大语言模型，掌握语言智能的全栈能力。
 

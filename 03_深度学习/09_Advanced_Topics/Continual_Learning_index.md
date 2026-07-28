@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "持续学习"
 ---
 # 持续学习 (Continual Learning)
+
+> 中文简称：持续学习
 
 ## 内容索引
 
@@ -28,7 +31,7 @@ sources: []
 
 - [[03_深度学习/README|深度学习总览]]
 - [[05_大模型/07_Fine_tuning_Techniques/|微调技术]]
-- [[02_机器学习/Online_Learning/|在线学习]]
+- [[02_机器学习/13_Learning_Paradigms/Online_Learning|在线学习]]
 
 ## 进阶知识拓展
 

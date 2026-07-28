@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "训练监控"
+name_en: "Monitoring"
 ---
 
 # Monitoring
+
+> 中文简称：训练监控 ｜ English Name: Monitoring
 
 This page indexes the contents of `07_模型训练/07_Monitoring`.
 

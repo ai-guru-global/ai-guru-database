@@ -11,8 +11,11 @@ aliases:
   - Agent_Observability_2026
 sources: []
 
+name_zh: "Agent 可观测性与调试"
 ---
 # Agent 可观测性与调试 (Agent Observability & Debugging 2026)
+
+> 中文简称：Agent 可观测性与调试
 
 > **一句话理解**: Agent 可观测性是 AI 智能体的"黑匣子"——记录每一次思考、每一个决策、每一次工具调用，让开发者能够回放执行过程、定位问题根因、优化性能瓶颈。
 

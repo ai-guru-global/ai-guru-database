@@ -11,12 +11,15 @@ aliases:
   - Skill_Versioning_Guide
 sources: []
 
+name_zh: "Skill 版本管理与团队治理"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Skill 版本管理与团队治理
+
+> 中文简称：Skill 版本管理与团队治理
 
 > 当团队有 5 个以上的 Agent Skills 时，就需要建立版本管理、评审流程和治理规范。本文档提供一套可直接落地的团队 Skill 库治理方案。
 

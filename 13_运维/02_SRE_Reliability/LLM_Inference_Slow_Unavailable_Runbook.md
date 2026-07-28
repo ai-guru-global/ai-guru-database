@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: core
 sources: []
+name_zh: "LLM 推理延迟/不可用 Runbook"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # LLM 推理延迟/不可用 Runbook
+
+> 中文简称：LLM 推理延迟/不可用 Runbook
 
 > **一句话理解**: LLM 推理变慢或不可用，通常是「GPU 算不过来了」或「请求到不了 GPU」；本手册按「指标 → K8s 层 → 网络层 → 修复」分层排查。
 

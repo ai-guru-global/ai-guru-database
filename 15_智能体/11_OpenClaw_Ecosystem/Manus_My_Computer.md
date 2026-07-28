@@ -11,8 +11,11 @@ aliases:
   - Manus_My_Computer
 sources: []
 
+name_zh: "Manus 我的电脑"
 ---
 # Manus "My Computer": Meta's Desktop AI Agent Revolution
+
+> 中文简称：Manus 我的电脑
 
 ## Overview
 

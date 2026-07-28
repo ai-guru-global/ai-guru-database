@@ -12,8 +12,11 @@ aliases:
   - llm-d_Deep_Dive
 sources: []
 
+name_zh: "llm-d: Kubernetes 原生分布式大模型推理框架"
 ---
 # llm-d: Kubernetes 原生分布式大模型推理框架
+
+> 中文简称：llm-d: Kubernetes 原生分布式大模型推理框架
 
 > **一句话理解**: llm-d 把「大模型推理」拆成 Gateway + KV Cache 协调 + vLLM Worker 三层——可以让多个推理 Pod 共享 KV Cache、独立扩缩 prefill/decode，是目前 K8s 上规模最大的开源 LLM 推理框架之一。
 

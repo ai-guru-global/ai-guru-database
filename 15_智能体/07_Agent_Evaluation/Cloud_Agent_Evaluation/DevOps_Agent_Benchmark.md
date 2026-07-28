@@ -12,8 +12,11 @@ aliases:
   - DevOps_Agent_Benchmark
 sources: []
 
+name_zh: "云运维/DevOps Agent 专项测评"
 ---
 # 云运维/DevOps Agent 专项测评
+
+> 中文简称：云运维/DevOps Agent 专项测评
 
 > 专注于云基础设施运维场景的 Agent 能力评估，覆盖故障排查、自动化部署、监控告警、安全合规等核心运维能力
 

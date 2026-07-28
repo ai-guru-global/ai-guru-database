@@ -31,9 +31,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "ColBERT / 晚期交互检索"
 ---
 
 # ColBERT / 晚期交互检索
+
+> 中文简称：ColBERT / 晚期交互检索
 
 > **一句话理解**:ColBERT 是"中等成本 + 高准确率"的检索 SOTA——每个 token 一向量,检索时做细粒度 MaxSim 匹配,比双塔(BGE)准确率高 20%,比 Cross-Encoder 速度快 100x。是 RAG 系统的"标配组件"。
 
@@ -289,5 +292,5 @@ with Run().context(RunConfig(nranks=1, experiment="v3_index")):
 - [[概念/hybrid-search|Hybrid Search]]
 - [[概念/multimodal-rag|Multimodal Rag]]
 - [[概念/rag-systems|Rag Systems]]
-- [[概念/bge-m3|Bge M3]]
+- [[概念/RAG/bge-m3|Bge M3]]
 - [[概念/qwen-series|Qwen Series]]

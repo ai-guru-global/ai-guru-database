@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "学习指南"
+name_en: "guides"
 ---
 
 # 学习指南
+
+> 中文简称：学习指南 ｜ English Name: guides
 
 AI 工程学习指南 — 路线图、项目实践指南和技能自评清单。
 

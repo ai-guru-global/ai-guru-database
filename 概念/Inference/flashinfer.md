@@ -32,9 +32,12 @@ aliases:
   - "FlashInfer Kernel"
   - "FlashInfer 算子库"
 
+name_zh: "FlashInfer 算子库"
 ---
 
 # FlashInfer 算子库
+
+> 中文简称：FlashInfer 算子库
 
 > **一句话理解**: FlashInfer 是 LLM 推理的“注意力算子引擎”——MLSys 2025 Best Paper，为 SGLang/vLLM 等框架提供底层高效注意力计算。
 

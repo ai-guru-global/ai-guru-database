@@ -17,9 +17,12 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: supporting
+name_zh: "Streamlit 数据应用框架"
 ---
 
 # Streamlit 数据应用框架
+
+> 中文简称：Streamlit 数据应用框架
 
 > **一句话理解**: Streamlit 是"Python 写 Web 应用的捷径"——几行 Python 代码就能做出交互式数据看板、ML Demo 和可视化工具。
 

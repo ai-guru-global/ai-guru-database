@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "推理研究"
+name_en: "LLM Inference Research"
 ---
 
 # LLM Inference Research
+
+> 中文简称：推理研究 ｜ English Name: LLM Inference Research
 
 大模型推理研究 — 系统性调研 LLM 推理优化技术，从问题定义到结论产出的完整研究流程。
 

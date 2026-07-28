@@ -17,9 +17,12 @@ relationships:
   - target: "概念/deepspeed"
     type: mitigated_by
 sources: []
+name_zh: "GPU 显存溢出"
 ---
 
 # GPU OOM
+
+> 中文简称：GPU 显存溢出
 
 > **一句话理解**: GPU OOM 就是 GPU 显存「不够用」了，可能发生在框架层（CUDA 分配失败）、容器层（cgroup limit）或虚拟化层（HAMi 超卖）。
 

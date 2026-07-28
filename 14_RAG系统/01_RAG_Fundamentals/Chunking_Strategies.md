@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "分块策略"
 ---
 # 分块策略 (Chunking Strategies)
+
+> 中文简称：分块策略
 
 ## 1. 为什么分块重要？
 
@@ -168,10 +171,10 @@ CHUNKING_BEST_PRACTICES = {
 ## 4. 交叉引用
 
 - [[14_RAG系统/|RAG 系统]]
-- [[14_RAG系统/Knowledge_Graph_RAG/|知识图谱 RAG]]
+- [[14_RAG系统/04_Advanced_RAG/Knowledge_Graph_RAG|知识图谱 RAG]]
 - [[概念/RAG/rag-patterns|RAG 模式]]
 - [[概念/RAG/embedding-models|嵌入模型]]
-- [[09_测试/RAGAS/|RAGAS 评估]]
+- [[概念/RAG/ragas|RAGAS 评估]]
 
 ## 进阶知识拓展
 

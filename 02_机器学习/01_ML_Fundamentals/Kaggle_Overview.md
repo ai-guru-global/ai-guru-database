@@ -14,8 +14,11 @@ aliases:
   - "kaggle overview"
   - kaggle_overview
 
+name_zh: "Kaggle 数据科学竞赛平台概览"
 ---
 # Kaggle 数据科学竞赛平台概览
+
+> 中文简称：Kaggle 数据科学竞赛平台概览
 
 > **一句话理解**: Google 旗下数据科学竞赛平台,提供海量数据集、免费 GPU Notebook 和百万级社区。
 

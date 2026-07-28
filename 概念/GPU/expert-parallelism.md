@@ -22,8 +22,11 @@ aliases:
   - "EP"
   - "专家并行"
 
+name_zh: "专家并行"
 ---
 # Expert Parallelism（专家并行）
+
+> 中文简称：专家并行
 
 > **一句话理解**: EP = "一个专家住一个 GPU"，token 按路由结果跨卡串门，用 All-to-All 通信换显存空间。
 
@@ -127,7 +130,7 @@ All-to-All Combine（结果聚合回原 GPU）
 
 - [[概念/GPU/model-parallelism|Model Parallelism]] — 模型并行
 - [[概念/GPU/tensor-parallelism|Tensor Parallelism]] — 张量并行
-- [[概念/LLM/moe|MoE]] — 混合专家模型
+- [[概念/General/mixture-of-experts|MoE]] — 混合专家模型
 
 > ℹ️ 专家并行是将 MoE 模型的专家分布到多个 GPU 的技术，用于训练和推理 MoE 模型。
 

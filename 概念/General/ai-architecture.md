@@ -34,8 +34,11 @@ aliases:
   - "Ai Architecture"
   - "ai architecture"
 
+name_zh: "AI 系统架构"
 ---
 # AI 系统架构
+
+> 中文简称：AI 系统架构
 
 ## 核心要点
 

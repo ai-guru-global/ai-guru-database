@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "模型版本回滚 Playbook"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # 模型版本回滚 Playbook
+
+> 中文简称：模型版本回滚 Playbook
 
 > **一句话理解**: 模型回滚不是简单把镜像改回旧 tag——要同步回滚模型权重、tokenizer、LoRA、量化配置，并把 K8s/KServe 流量切回稳定版本。
 

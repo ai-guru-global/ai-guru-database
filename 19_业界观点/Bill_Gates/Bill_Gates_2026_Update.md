@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Bill Gates 2026 Update", "比尔·盖茨 2026 动态"]
 sources: []
+name_zh: "比尔·盖茨 2026 动态"
 ---
 
 # 比尔·盖茨 2026 动态 (Bill Gates 2026 Update)
+
+> 中文简称：比尔·盖茨 2026 动态
 
 ## 一句话概括
 
@@ -380,8 +383,8 @@ Gates 在 2026 年持续通过 GatesNotes 推荐 AI 相关书籍：
 
 - [[00_入门/AI_Future_Trends]] -- AI 时代愿景
 - [[00_入门/AI_Ethics_Society]] -- AI 与不平等
-- [[应用/AI_Healthcare]] -- AI 医疗
-- [[应用/AI_Education]] -- AI 教育
+- [[18_行业应用/03_Healthcare/AI_Healthcare_2026|AI_Healthcare]] -- AI 医疗
+- [[18_行业应用/05_Education/AI_Education_2026|AI_Education]] -- AI 教育
 
 ---
 

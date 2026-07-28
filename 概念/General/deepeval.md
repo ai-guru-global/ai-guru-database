@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.83
 lifecycle: reviewed
 tier: supporting
+name_zh: "DeepEval LLM 评估框架"
 ---
 
 # DeepEval LLM 评估框架
+
+> 中文简称：DeepEval LLM 评估框架
 
 > **一句话理解**: DeepEval 是"LLM 应用的 PyTest"——像写单元测试一样评估 LLM 输出，14+ 指标覆盖幻觉、毒性、偏差、RAG 质量。
 

@@ -25,8 +25,11 @@ aliases:
   - "Ai For Science"
   - "ai for science"
 
+name_zh: "AI驱动的科学发现"
 ---
 # AI for Science (AI驱动的科学发现)
+
+> 中文简称：AI驱动的科学发现
 
 > 从「实验驱动」到「AI驱动」的科学范式转变——预测蛋白质结构、发现新药、模拟天气、设计新材料。
 

@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "高级 RAG"
+name_en: "Advanced RAG"
 ---
 
 # Advanced RAG
+
+> 中文简称：高级 RAG ｜ English Name: Advanced RAG
 
 This page indexes the contents of `14_RAG系统/04_Advanced_RAG`.
 
@@ -228,3 +232,7 @@ This page indexes the contents of `14_RAG系统/04_Advanced_RAG`.
 - [ ] 能将知识应用到实际项目中
 - [ ] 具备论文阅读和复现能力
 - [ ] 持续跟踪领域最新进展
+
+## 相关文档
+
+- [[14_RAG系统/04_Advanced_RAG/multimodal-rag|多模态 RAG]]

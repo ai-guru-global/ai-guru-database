@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.92
 lifecycle: reviewed
 tier: core
+name_zh: "AI 模型与数据集托管平台"
 ---
 
 # Hugging Face Hub
+
+> 中文简称：AI 模型与数据集托管平台
 
 [Hugging Face Hub](https://huggingface.co/) 是 Hugging Face 运营的 AI 模型与数据集托管平台，被业界称为 **"AI 领域的 GitHub"**。它提供模型权重存储、数据集托管、Spaces 应用部署、推理 API 和社区协作等一站式服务。几乎所有开源 LLM（Llama、Mistral、Qwen 等）都首发在 HF Hub 上，是 AI 开发生态的**核心基础设施**。
 

@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: core
 sources: []
 
+name_zh: "注意力机制"
 ---
 # 注意力机制 (Attention Mechanisms)
+
+> 中文简称：注意力机制
 
 ## 内容索引
 
@@ -30,7 +33,7 @@ sources: []
 
 - [[03_深度学习/README|深度学习总览]]
 - [[05_大模型/Transformer_Deep_Dive|Transformer 深度解析]]
-- [[03_深度学习/State_Space_Models/|状态空间模型]]
+- [[概念/LLM/state-space-models|状态空间模型]]
 
 ## 进阶知识拓展
 

@@ -22,9 +22,12 @@ provenance:
 base_confidence: 0.88
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "合成数据"
 ---
 
 # Synthetic Data（合成数据）
+
+> 中文简称：合成数据
 
 ## 核心要点
 
@@ -200,6 +203,6 @@ updated: 2026-07-21
 
 ## 相关概念
 
-- [[概念/data-augmentation]] — 数据增强
+- [[概念/Training/synthetic-data|data-augmentation]] — 数据增强
 - [[概念/snorkel-ai]] — 弱监督标注
 - [[概念/annotation]] — 数据标注

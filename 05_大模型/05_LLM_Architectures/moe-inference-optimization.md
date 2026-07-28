@@ -25,8 +25,11 @@ aliases:
   - "Moe Inference Optimization"
   - "moe inference optimization"
 
+name_zh: "MoE × 推理优化: 专家混合架构的推理加速挑战"
 ---
 # MoE × 推理优化: 专家混合架构的推理加速挑战
+
+> 中文简称：MoE × 推理优化: 专家混合架构的推理加速挑战
 
 > **一句话理解**: MoE 用更少计算换更大容量,但推理时面临专家路由、负载均衡、显存膨胀三重挑战——需要 Expert-Aware 的专门优化策略。
 

@@ -15,7 +15,10 @@ aliases:
   - GenAI_L04_Prompt_Engineering_Fundamentals
 sources: []
 
+name_zh: "提示工程基础"
 ---
+> 中文简称：提示工程基础
+
 ## 学习目标
 
 完成本课后，你将能够：

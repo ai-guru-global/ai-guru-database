@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Sebastian Thrun 关于 AI 的观点"
 ---
 # Sebastian Thrun 关于 AI 的观点 (Sebastian Thrun on AI)
+
+> 中文简称：Sebastian Thrun 关于 AI 的观点
 
 ## 1. 自动驾驶与机器人 (Autonomous Vehicles & Robotics)
 

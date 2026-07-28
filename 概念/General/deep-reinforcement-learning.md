@@ -25,9 +25,12 @@ lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-07-21T00:00:00Z
+name_zh: "深度强化学习"
 ---
 
 # 深度强化学习
+
+> 中文简称：深度强化学习
 
 深度强化学习（Deep RL）结合强化学习与深度学习，用神经网络近似值函数 $Q_\theta(s,a)$ 或策略 $\pi_\theta(a|s)$，处理高维状态空间（原始像素、连续控制）。从2013年DQN首次用深度学习玩Atari游戏，到PPO成为ai-history的RLHF核心算法，Deep RL是当前最实用的RL技术栈。
 

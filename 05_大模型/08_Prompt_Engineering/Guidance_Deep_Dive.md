@@ -11,8 +11,11 @@ aliases:
   - Guidance_Deep_Dive
 sources: []
 
+name_zh: "Guidance: 结构化生成控制语言"
 ---
 # Guidance: 结构化生成控制语言
+
+> 中文简称：Guidance: 结构化生成控制语言
 
 > **一句话理解**: Guidance 是微软的引导式生成框架——用标签控制 LLM 输出格式，实现结构化 JSON、角色扮演、多路径分支，比 Jinja2 更强大。
 

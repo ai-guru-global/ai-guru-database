@@ -8,9 +8,12 @@ created: 2026-07-02
 updated: 2026-07-02
 tier: core
 lifecycle: draft
+name_zh: "KV Cache x Continuous Batching: 推理引擎的显存"
 ---
 
 # KV Cache x Continuous Batching: 推理引擎的显存-调度协同优化
+
+> 中文简称：KV Cache x Continuous Batching: 推理引擎的显存
 
 ## The Connection
 

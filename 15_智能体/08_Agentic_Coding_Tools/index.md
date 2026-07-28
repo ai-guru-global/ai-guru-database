@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "智能体编程工具"
+name_en: "Agentic Coding Tools"
 ---
 
 # Agentic Coding Tools
+
+> 中文简称：智能体编程工具 ｜ English Name: Agentic Coding Tools
 
 Agentic 编程工具 — AI 编码助手与自动化编程工具（Claude Code、Cursor、Aider、OpenCode 等）。
 

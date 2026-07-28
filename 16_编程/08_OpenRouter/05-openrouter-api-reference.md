@@ -16,6 +16,7 @@ tier: peripheral
 updated: 2026-06-30
 summary: "API 参考与请求/响应规范 — 专题文档"
 sources: []
+name_zh: "API 参考与请求/响应规范"
 ---
 title: API 参考与请求/响应规范
 description: '## 概述'
@@ -54,6 +55,8 @@ k8s_versions:
 ---
 
 # API 参考与请求/响应规范
+
+> 中文简称：API 参考与请求/响应规范
 
 > **文档类型**: API 参考 | **最后更新**: 2026-03 | **关键词**: OpenRouter, API Reference, Chat Completions, Request Schema, Response, Parameters, Error Handling, OpenAPI
 

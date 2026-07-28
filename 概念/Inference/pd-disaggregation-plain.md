@@ -21,9 +21,12 @@ aliases:
   - "pd disaggregation plain"
   - "PD分离 大白话"
 sources: []
+name_zh: "PD 分离 大白话解释"
 ---
 
 # PD 分离 大白话解释
+
+> 中文简称：PD 分离 大白话解释
 
 > 一句话：PD 分离 = 把"读题"和"回答"分到两批机器上各干各的，免得它们挤在一起互相打架。
 

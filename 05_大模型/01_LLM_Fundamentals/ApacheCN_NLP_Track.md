@@ -8,9 +8,12 @@ updated: 2026-07-10
 lifecycle: reviewed
 tier: supporting
 sources: []
+name_zh: "ApacheCN 自然语言处理学习路径"
 ---
 
 # ApacheCN 自然语言处理学习路径
+
+> 中文简称：ApacheCN 自然语言处理学习路径
 
 > **一句话理解**: 这是 ApacheCN 中文社区整理的 NLP 学习路线，从文本处理基础到 Transformer 大模型应用。
 
@@ -31,7 +34,7 @@ sources: []
 - [[01_数学基础/02_Linear_Algebra/Linear_Algebra|线性代数]]
 - [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core|神经网络核心]]
 - [[05_大模型/04_Transformer_Revolution/Transformer_Revolution|Transformer 革命]]
-- [[概念/Python|Python 编程基础]]
+- [[01_数学基础/08_Python_Toolkit/index|Python 编程基础]]
 - [[概念/pytorch|PyTorch 深度学习框架]]
 
 ## 核心学习资源

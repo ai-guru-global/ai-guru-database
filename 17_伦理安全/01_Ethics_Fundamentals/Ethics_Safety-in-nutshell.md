@@ -12,8 +12,11 @@ aliases:
   - Ethics_Safety-in-nutshell
 sources: []
 
+name_zh: "AI 伦理与安全速览"
 ---
 # AI 伦理与安全速览 (AI Ethics & Safety in a Nutshell)
+
+> 中文简称：AI 伦理与安全速览
 
 > **一句话理解**: AI 伦理与安全就像为一辆 F1 赛车设计「防滚架 + 安全带 + 遥测系统 + 赛道规则」——不是为了让它变慢，而是为了在它跑出极限时依然可控、可追溯、可问责。
 

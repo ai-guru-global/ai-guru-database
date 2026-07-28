@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "故障排查"
+name_en: "Troubleshooting"
 ---
 
 # Troubleshooting
+
+> 中文简称：故障排查 ｜ English Name: Troubleshooting
 
 This page indexes the contents of `11_模型运维/12_Troubleshooting`.
 

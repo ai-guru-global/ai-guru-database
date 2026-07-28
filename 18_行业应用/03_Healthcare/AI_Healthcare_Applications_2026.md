@@ -14,8 +14,11 @@ aliases:
   - "AI Healthcare Applications 2026"
   - AI_Healthcare_Applications_2026
 
+name_zh: "AI 医疗健康应用场景深度解析"
 ---
 # AI 医疗健康应用场景深度解析
+
+> 中文简称：AI 医疗健康应用场景深度解析
 
 > **一句话理解**: AI 在医疗领域的核心应用:辅助诊断、药物发现、医学影像、临床决策支持、患者管理等场景。
 

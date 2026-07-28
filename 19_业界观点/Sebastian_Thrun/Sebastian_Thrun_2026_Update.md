@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Sebastian Thrun 2026 Update", "塞巴斯蒂安·特龙 2026 动态"]
 sources: []
+name_zh: "塞巴斯蒂安·特龙 2026 动态"
 ---
 
 # 塞巴斯蒂安·特龙 2026 动态 (Sebastian Thrun 2026 Update)
+
+> 中文简称：塞巴斯蒂安·特龙 2026 动态
 
 ## 一句话概括
 

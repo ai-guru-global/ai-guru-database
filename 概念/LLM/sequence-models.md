@@ -23,8 +23,11 @@ aliases:
   - "Sequence Models"
   - "sequence models"
 
+name_zh: "序列模型"
 ---
 # 序列模型
+
+> 中文简称：序列模型
 
 ## 概述
 

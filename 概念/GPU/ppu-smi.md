@@ -21,9 +21,12 @@ lifecycle: reviewed
 tier: supporting
 created: 2026-06-16
 updated: 2026-07-21
+name_zh: "ppu-smi APG GPU 监控工具"
 ---
 
 # ppu-smi APG GPU 监控工具
+
+> 中文简称：ppu-smi APG GPU 监控工具
 
 > **一句话理解**: ppu-smi 是 APG 加速卡的"nvidia-smi"——阿里云自研 GPU 的专属监控 CLI，实时查看 GPU 利用率/显存/温度/功耗。
 
@@ -177,8 +180,8 @@ AI Stack GPU 监控体系
 - [[概念/GPU/rocm-smi|rocm-smi]]
 - [[概念/LLM/llm-infrastructure|LLM 基础设施]]
 - [[12_架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
-- [[13_运维/GPU_Monitoring|GPU 监控体系]]
-- [[12_架构基建/GPU_Cluster_Management|GPU 集群管理]]
+- [[13_运维/06_Observability/index|GPU 监控体系]]
+- [[12_架构基建/07_Hardware_Compute/index|GPU 集群管理]]
 
 ## 常见运维场景
 

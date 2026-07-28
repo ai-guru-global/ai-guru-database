@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "OpenCode"
+name_en: "OpenCode"
 ---
 
 # Opencode
+
+> 中文简称：OpenCode ｜ English Name: OpenCode
 
 This page indexes the contents of `AI编程/05_Tools/OpenCode`.
 

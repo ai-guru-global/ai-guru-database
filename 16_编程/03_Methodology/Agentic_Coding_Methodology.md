@@ -11,8 +11,11 @@ aliases:
   - Agentic_Coding_Methodology
 sources: []
 
+name_zh: "智能体编程方法论"
 ---
 # Agentic Coding Methodology 2026: Multi-Agent Software Engineering
+
+> 中文简称：智能体编程方法论
 
 > **一句话理解**: Agentic Coding 是软件工程的范式转移——从“人编写代码”转变为“人指挥一个由多个 AI 专家组成的团队协作编写代码”。
 

@@ -21,8 +21,11 @@ aliases:
   - "Agent Evaluation Model Evaluation"
   - "agent evaluation model evaluation"
 
+name_zh: "Agent 评估 × 模型评估 — 从指标到行为的评估范式迁移"
 ---
 # Agent 评估 × 模型评估 — 从指标到行为的评估范式迁移
+
+> 中文简称：Agent 评估 × 模型评估 — 从指标到行为的评估范式迁移
 
 ## The Connection
 

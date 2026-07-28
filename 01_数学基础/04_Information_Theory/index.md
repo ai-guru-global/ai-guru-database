@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "信息论"
+name_en: "Information Theory"
 ---
 
 # Information Theory
+
+> 中文简称：信息论 ｜ English Name: Information Theory
 
 信息论（Information Theory）— 熵（entropy）、互信息（mutual information）、KL 散度与编码理论在 ML 中的应用。
 

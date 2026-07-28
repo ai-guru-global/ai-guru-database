@@ -36,9 +36,12 @@ lifecycle: reviewed
 tier: core
 created: 2026-06-04
 updated: 2026-06-15
+name_zh: "嵌入模型"
 ---
 
 # 嵌入模型 (Embedding Models)
+
+> 中文简称：嵌入模型
 
 > 将人类语言转化为机器可计算的向量——语义搜索与 RAG 的基石。
 

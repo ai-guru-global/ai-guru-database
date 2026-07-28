@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "持续学习"
 ---
 # 持续学习 (Continual Learning)
+
+> 中文简称：持续学习
 
 ## 1. 核心问题：灾难性遗忘
 
@@ -374,6 +377,6 @@ class LoRAContinualLearner:
 
 - [[03_深度学习/01_DL_Fundamentals/|深度学习基础]]
 - [[05_大模型/07_Fine_tuning_Techniques/|微调技术]] — LoRA/QLoRA
-- [[02_机器学习/Online_Learning/|在线学习]] — 流式更新
+- [[02_机器学习/13_Learning_Paradigms/Online_Learning|在线学习]] — 流式更新
 - [[07_模型训练/03_Optimization/|优化方法]] — 正则化
 - [[05_大模型/05_LLM_Architectures/|LLM 架构]] — 模块化设计

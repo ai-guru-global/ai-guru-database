@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "测试题库"
+name_en: "Test Bank"
 ---
 
 # Test Bank
+
+> 中文简称：测试题库 ｜ English Name: Test Bank
 
 Agent 评估测试用例库（test case bank）的组织、覆盖与维护 — 系统化管理测试用例的生命周期（lifecycle management）。
 

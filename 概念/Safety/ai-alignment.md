@@ -12,7 +12,7 @@ relationships:
     type: improved_by
   - target: "[[概念/Safety/ai-ethics]]"
     type: implements
-  - target: "[[06_强化学习/03_RLHF_Alignment/RLHF_Alignment]]"
+  - target: "[[06_强化学习/03_RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive|RLHF_Alignment]]"
     type: methodology_for
 sources:
   - AI入门/AI_Ethics_Society.md
@@ -29,9 +29,12 @@ updated: 2026-07-21
 tier: core
 created: 2026-07-11T00:00:00Z
 updated: 2026-07-11T00:00:00Z
+name_zh: "AI对齐"
 ---
 
 # AI对齐
+
+> 中文简称：AI对齐
 
 > **一句话理解**: AI对齐就像教育孩子——不仅要教会他做事(能力)，更要教会他什么事该做、什么事不该做(价值观)，确保他强大了也不会伤害人。
 
@@ -740,7 +743,7 @@ class ConstitutionalAI:
 
 ## Related
 
-- [[06_强化学习/03_RLHF_Alignment/RLHF_Alignment]] — RLHF对齐（详细技术文档）
+- [[06_强化学习/03_RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive|RLHF_Alignment]] — RLHF对齐（详细技术文档）
 - [[06_强化学习/02_Deep_RL/PPO_Deep_Dive]] — PPO（RLHF中的RL算法）
 - [[概念/Safety/jailbreak]] — 越狱攻击（测试对齐的鲁棒性）
 - [[概念/Safety/guardrails]] — AI护栏（运行时对齐补充）

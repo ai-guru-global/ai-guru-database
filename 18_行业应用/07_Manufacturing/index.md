@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "制造业"
+name_en: "Manufacturing"
 ---
 
 # Manufacturing
+
+> 中文简称：制造业 ｜ English Name: Manufacturing
 
 ## 文件导航
 

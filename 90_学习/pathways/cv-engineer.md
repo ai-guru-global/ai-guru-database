@@ -10,9 +10,12 @@ aliases:
   - "CV Engineer Path"
   - "Computer Vision Learning Path"
 sources: []
+name_zh: "CV 工程师学习路径"
 ---
 
 # CV 工程师学习路径 (Computer Vision Engineer Learning Path)
+
+> 中文简称：CV 工程师学习路径
 
 > CV 工程师专注于图像和视频相关的 AI 应用——从图像分类到多模态视觉，掌握视觉智能的全栈能力。
 

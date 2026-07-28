@@ -26,8 +26,11 @@ aliases:
   - "Learn Claude Code L12 Task System"
   - Learn_Claude_Code_L12_Task_System
 
+name_zh: "Learn Claude Code L12：Task System — 目标太大"
 ---
 # Learn Claude Code L12：Task System — 目标太大，拆成小任务
+
+> 中文简称：Learn Claude Code L12：Task System — 目标太大
 
 > **一句话理解**: 把大目标拆成持久化在磁盘上的小任务，任务之间有依赖图，可以跨会话 claim、追踪、解锁，是多 Agent 协作的基础。
 

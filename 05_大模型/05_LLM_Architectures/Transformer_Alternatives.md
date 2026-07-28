@@ -11,8 +11,11 @@ aliases:
   - Transformer_Alternatives
 sources: []
 
+name_zh: "Transformer 替代架构深度解析"
 ---
 # Transformer 替代架构深度解析
+
+> 中文简称：Transformer 替代架构深度解析
 
 ## 一句话理解
 

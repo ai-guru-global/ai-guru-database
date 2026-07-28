@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "数据工程"
+name_en: "Data Engineering"
 ---
 
 # Data Engineering
+
+> 中文简称：数据工程 ｜ English Name: Data Engineering
 
 数据工程（Data Engineering）— ML 数据管线设计（pipeline design）、数据校验（validation）与数据质量保障。
 

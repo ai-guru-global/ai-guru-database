@@ -15,11 +15,14 @@ relationships:
   - target: "概念/k3s"
     type: related_to
 sources: []
+name_zh: "多集群编排平台"
 ---
 
 > **归档提示**: 此概念为通用云原生工具，与AI核心关联度较低。如需学习完整的K8s知识，请参考 CNCF 官方文档。
 
 # Karmada
+
+> 中文简称：多集群编排平台
 
 > **一句话理解**: Karmada 是 K8s 的「多集群放大器」，让你用熟悉的 Deployment/Service 语法把应用同时分发到多个集群，并自动处理容灾和调度。
 

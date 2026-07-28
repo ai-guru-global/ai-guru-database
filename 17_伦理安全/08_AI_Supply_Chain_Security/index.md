@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "AI 供应链安全"
+name_en: "AI Supply Chain Security"
 ---
 
 # AI Supply Chain Security
+
+> 中文简称：AI 供应链安全 ｜ English Name: AI Supply Chain Security
 
 AI 供应链安全（AI Supply Chain Security）— 模型投毒（model poisoning）、后门攻击（backdoor attack）、模型水印与供应链风险管理。
 

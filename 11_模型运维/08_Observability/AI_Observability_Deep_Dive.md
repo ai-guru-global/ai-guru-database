@@ -12,8 +12,11 @@ aliases:
   - AI_Observability_Deep_Dive
 sources: []
 
+name_zh: "AI 可观测性深度解读"
 ---
 # AI 可观测性深度解读 (AI Observability)
+
+> 中文简称：AI 可观测性深度解读
 
 > **TL;DR**: AI 可观测性 = 传统 APM 三大支柱 + LLM 专属维度 (token 追踪、幻觉检测、成本归因)。LangSmith 适合 LangChain 生态，LangFuse 适合开源自建，Helicone 适合轻量代理。选对工具只是开始，关键是建立 "监控 → 告警 → 定位 → 修复" 的闭环。
 

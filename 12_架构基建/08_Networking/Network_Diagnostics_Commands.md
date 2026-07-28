@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "AI 集群网络诊断命令集"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # AI 集群网络诊断命令集
+
+> 中文简称：AI 集群网络诊断命令集
 
 > **使用方式**: 网络异常时，按链路类型选择对应命令。
 

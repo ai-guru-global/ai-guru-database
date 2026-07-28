@@ -7,9 +7,12 @@ created: 2026-07-23
 updated: 2026-07-23
 tier: supporting
 sources: []
+name_zh: "Applied Scientist 面试题实例答案"
 ---
 
 # Applied Scientist 面试题实例答案
+
+> 中文简称：Applied Scientist 面试题实例答案
 
 > 每个答案采用 **结论 → 展开 → 案例/框架 → 追问预判** 结构。
 
@@ -323,4 +326,4 @@ R:
 - [[08_模型评估/index|模型评估]]
 - [[09_测试/AB_Testing/index|A/B 测试]]
 - [[21_面试岗位/Research_Scientist/index|Research Scientist]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]

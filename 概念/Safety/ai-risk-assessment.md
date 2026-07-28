@@ -20,9 +20,12 @@ lifecycle_changed: 2026-07-21
 created: 2026-07-21
 updated: 2026-07-21
 tier: supporting
+name_zh: "AI 风险评估"
 ---
 
 # AI 风险评估
+
+> 中文简称：AI 风险评估
 
 > 一句话理解：系统性识别、分析和评估 AI 系统潜在风险，制定缓解措施的流程。
 

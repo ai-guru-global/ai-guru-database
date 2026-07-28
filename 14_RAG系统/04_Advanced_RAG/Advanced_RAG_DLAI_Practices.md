@@ -12,8 +12,11 @@ aliases:
   - Advanced_RAG_DLAI_Practices
 sources: []
 
+name_zh: "高阶 RAG 实战：来自 DeepLearning.AI 的四个落地技巧"
 ---
 # 高阶 RAG 实战：来自 DeepLearning.AI 的四个落地技巧 (含完整代码)
+
+> 中文简称：高阶 RAG 实战：来自 DeepLearning.AI 的四个落地技巧
 
 > **一句话理解**: 基础的“分块(Chunking) -> 向量化(Embedding) -> 余弦相似度检索(Cosine Similarity)”在面对真实复杂的业务长文档时经常会遇到“找不到”或“上下文割裂”的问题。本文总结了 DLAI 《Building and Evaluating Advanced RAG》等课程中推崇的四大高阶落地技巧，并提供了**不依赖任何外部网络搜寻、可直接在内部代理运行时复制执行的完整 LlamaIndex Python 代码。**
 

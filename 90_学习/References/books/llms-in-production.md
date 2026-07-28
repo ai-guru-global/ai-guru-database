@@ -13,8 +13,11 @@ aliases:
   - "Llms In Production"
   - "llms in production"
 
+name_zh: "LLM 生产化实战"
 ---
 # LLMs in Production
+
+> 中文简称：LLM 生产化实战
 
 > **一句话理解**: LLM 生产化实战指南,覆盖从原型到生产的全流程——把"能跑的 Demo"变成"能扛住流量、控得住成本、看得见质量"的生产系统。
 

@@ -11,12 +11,15 @@ aliases:
   - Prefect_Deep_Dive
 sources: []
 
+name_zh: "Prefect: ML 数据流水线编排"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Prefect: ML 数据流水线编排
+
+> 中文简称：Prefect: ML 数据流水线编排
 
 > **一句话理解**: Prefect 是 Python 原生的数据流水线编排——任务调度、错误重试、可视化监控，ML 数据的 workflow 引擎。
 

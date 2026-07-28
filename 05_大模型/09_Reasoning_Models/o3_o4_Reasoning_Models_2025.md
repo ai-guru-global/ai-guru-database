@@ -15,9 +15,12 @@ sources:
   - "https://openai.com/research/learning-to-reason-with-llms"
   - "https://arxiv.org/abs/2501.12599"
 
+name_zh: "OpenAI o3 与 o4-mini：新一代推理模型深度解析"
 ---
 
 # OpenAI o3 与 o4-mini：新一代推理模型深度解析（2025）
+
+> 中文简称：OpenAI o3 与 o4-mini：新一代推理模型深度解析
 
 > **一句话理解**: o3 和 o4-mini 不是"更大的 GPT"，而是"会用工具思考的推理专家"——它们在思考过程中主动调用代码执行、网络搜索等工具，推理能力因此产生质的飞跃。
 

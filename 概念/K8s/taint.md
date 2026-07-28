@@ -18,9 +18,12 @@ relationships:
   - target: "概念/request-scheduling"
     type: part_of
 sources: []
+name_zh: "污点"
 ---
 
 # Taint（污点）
+
+> 中文简称：污点
 
 > **一句话理解**: Taint 是 Kubernetes 节点上的「排斥标签」，没有对应 Toleration 的 Pod 无法被调度到该节点。
 

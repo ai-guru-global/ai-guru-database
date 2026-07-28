@@ -12,8 +12,11 @@ aliases:
   - README_for_dummy
 sources: []
 
+name_zh: "智能体评估框架入门"
 ---
 # Agent Benchmarking Evaluation Framework - Beginner's Guide
+
+> 中文简称：智能体评估框架入门
 
 > A simple guide to understanding how we test and compare AI agents
 

@@ -31,8 +31,11 @@ aliases:
   - "Pretrain Vs Finetune Vs Rag"
   - "pretrain vs finetune vs rag"
 
+name_zh: "预训练 vs 微调 vs RAG — 三种 LLM 定制方案选型"
 ---
 # 预训练 vs 微调 vs RAG — 三种 LLM 定制方案选型
+
+> 中文简称：预训练 vs 微调 vs RAG — 三种 LLM 定制方案选型
 
 > **一句话理解**:让大模型"按你的需求输出",有 4 个档位的工具,从便宜到贵、从浅到深:Prompt → RAG → 微调 → 预训练。**够用就好,别一上来就最贵**。
 

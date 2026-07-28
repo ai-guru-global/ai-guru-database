@@ -16,9 +16,12 @@ relationships:
   - target: "概念/cann"
     type: part_of
 sources: []
+name_zh: "昇腾推理引擎"
 ---
 
 # MindIE
+
+> 中文简称：昇腾推理引擎
 
 > **一句话理解**: MindIE 是昇腾上的「自研推理引擎」，类似 TensorRT-LLM 在 NVIDIA 上的角色。
 

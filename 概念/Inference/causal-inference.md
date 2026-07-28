@@ -25,8 +25,11 @@ aliases:
   - "Causal Inference"
   - "causal inference"
 
+name_zh: "因果推断"
 ---
 # 因果推断 (Causal Inference)
+
+> 中文简称：因果推断
 
 > 从「相关」到「因果」——让 AI 理解干预的后果，而非仅仅是模式匹配。
 

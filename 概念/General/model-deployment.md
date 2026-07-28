@@ -34,8 +34,11 @@ aliases:
   - "Model Deployment"
   - "model deployment"
 
+name_zh: "模型部署"
 ---
 # 模型部署
+
+> 中文简称：模型部署
 
 ## 核心要点
 

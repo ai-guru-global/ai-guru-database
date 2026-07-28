@@ -14,8 +14,11 @@ aliases:
   - "xgboost overview"
   - xgboost_overview
 
+name_zh: "XGBoost 概览"
 ---
 # XGBoost 概览
+
+> 中文简称：XGBoost 概览
 
 > **一句话理解**: 高性能梯度提升决策树（GBDT）框架，Kaggle 结构化数据竞赛常胜军，支持分布式训练与 GPU 加速，表格数据的事实标准。
 

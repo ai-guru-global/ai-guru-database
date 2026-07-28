@@ -19,10 +19,13 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: core
-updated: 2026-07-21
+updated: 2026-07-25
+name_zh: "QLoRA 量化 LoRA 微调"
 ---
 
 # QLoRA 量化 LoRA 微调
+
+> 中文简称：QLoRA 量化 LoRA 微调
 
 > **一句话理解**: QLoRA 是"穷人的全参微调"——把 65B 模型压缩到 4-bit，只训练 LoRA 适配器，单卡 48GB 就能微调大模型。
 
@@ -104,6 +107,16 @@ model.print_trainable_parameters()
 
 ---
 
+## 6. 源码级洞察（基于 peft v0.19.1 归档源码）
+
+> 证据位于 `code/llm-frameworks/peft-v0.19.1/src/peft/tuners/lora/bnb.py`：
+
+- **QLoRA 的实现实体**：`Linear4bit`（L311）——基座是 bitsandbytes 的 NF4 量化层，LoRA 分支以 fp16/bf16 旁路计算，两种精度互不干扰；8bit 路径对应 `Linear8bitLt`（L35）。
+- **接入方式**：基座加载时带 `BitsAndBytesConfig`，`inject_adapter` 检测到量化层后自动 dispatch 到 bnb 实现——用户代码与普通 LoRA 完全一致。
+- **同目录量化后端矩阵**：`gptq.py`/`awq.py`/`hqq.py`/`eetq.py`/`torchao.py` 等，一个后端一个文件，同一 `LoraLayer` 协议。
+
+---
+
 ## Related
 
 - [[概念/lora-peft]] — LoRA/PEFT 参数高效微调
@@ -167,7 +180,7 @@ model.print_trainable_parameters()
 - [[概念/Training/rslora|rsLoRA]] — 稳定 LoRA
 - [[概念/Training/pissa|PiSSA]] — 奇异值初始化
 - [[概念/Training/fine-tuning-techniques|Fine-tuning Techniques]] — 微调技术
-- [[概念/LLM/lora|LoRA]] — 低秩适配
+- [[概念/Training/lora-peft|LoRA]] — 低秩适配
 
 > ℹ️ QLoRA 是 2026 年资源受限场景的微调标配，NF4 + LoRA 组合可节省 80-90% 显存，配合 Unsloth 可获 2x 加速。
 
@@ -186,7 +199,7 @@ model.print_trainable_parameters()
 - [[概念/Training/rslora|rsLoRA]] — 稳定 LoRA
 - [[概念/Training/pissa|PiSSA]] — 奇异值初始化
 - [[概念/Training/fine-tuning-techniques|Fine-tuning Techniques]] — 微调技术
-- [[概念/LLM/lora|LoRA]] — 低秩适配
+- [[概念/Training/lora-peft|LoRA]] — 低秩适配
 
 > ℹ️ QLoRA 是 2026 年资源受限场景的微调标配，NF4 + LoRA 组合可节省 80-90% 显存。
 

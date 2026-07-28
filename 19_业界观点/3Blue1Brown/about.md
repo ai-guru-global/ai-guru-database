@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Grant Sanderson — 数学可视化教育革命者"
 ---
 # Grant Sanderson (3Blue1Brown) — 数学可视化教育革命者
+
+> 中文简称：Grant Sanderson — 数学可视化教育革命者
 
 ## 一句话概括
 

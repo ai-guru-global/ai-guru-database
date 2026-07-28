@@ -11,8 +11,11 @@ aliases:
   - Prompt_Management_Platform
 sources: []
 
+name_zh: "Prompt 管理平台"
 ---
 # Prompt 管理平台
+
+> 中文简称：Prompt 管理平台
 
 > **一句话秒懂**: Prompt 管理平台就是 AI 应用界的"Git + CI/CD"，让团队能够版本控制、测试、评估和迭代提示词。
 

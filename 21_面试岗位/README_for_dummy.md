@@ -12,8 +12,11 @@ aliases:
   - README_for_dummy
 sources: []
 
+name_zh: "AI 面试准备 — 小白版 🎯"
 ---
 # AI 面试准备 — 小白版 🎯
+
+> 中文简称：AI 面试准备 — 小白版 🎯
 
 > **一句话秒懂**: 这一章是 AI 领域的"求职攻略"——帮你了解不同 AI 岗位需要什么技能、会考什么题目、怎么准备，助你斩获 offer！
 
@@ -167,7 +170,7 @@ sources: []
 
 - [[21_面试岗位/Interviews_for_dummy|AI 面试准备 - 小白版]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 - [[21_面试岗位/interview_notes_template|面试复盘模板]]
 
 ## 面试核心知识框架

@@ -12,8 +12,11 @@ aliases:
   - Protein_Folding_and_Drug_Discovery_2026
 sources: []
 
+name_zh: "蛋白质折叠与药物发现"
 ---
 # AI for Science: Protein Folding and Drug Discovery 2026
+
+> 中文简称：蛋白质折叠与药物发现
 
 > **一句话理解**: AI 正在将生物学从一门“观察学科”变为一门“预测学科”——如果说显微镜让我们看见了生命，那么 AI 正在让我们理解生命的“源代码”并能够重新编写它。
 

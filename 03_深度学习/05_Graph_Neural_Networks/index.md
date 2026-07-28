@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "图神经网络"
+name_en: "Graph Neural Networks"
 ---
 
 # Graph Neural Networks
+
+> 中文简称：图神经网络 ｜ English Name: Graph Neural Networks
 
 图神经网络（Graph Neural Networks / GNN）— GCN、GAT、GraphSAGE 与消息传递机制（message passing）的深度学习范式。
 

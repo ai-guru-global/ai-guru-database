@@ -30,9 +30,12 @@ t tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "RAG 语义缓存"
 ---
 
 # RAG 语义缓存
+
+> 中文简称：RAG 语义缓存
 
 > **一句话理解**:RAG 语义缓存让"用户问'今天天气怎样?'和'现在天气如何?'"共用一个 LLM 响应——用 Embedding 相似度判断语义一致性,命中缓存毫秒级返回,未命中走 RAG。生产环境命中率 30-70%,成本可降 50%+,延迟降 10-100x。
 
@@ -305,5 +308,5 @@ result = multi_turn.run(runtime, question="...")
 - [[概念/gptcache|Gptcache]]
 - [[概念/llm-infrastructure|Llm Infrastructure]]
 - [[概念/inference-performance|Inference Performance]]
-- [[概念/redis|Redis]]
+- [[概念/RAG/storage|Redis]]
 - [[概念/vllm|Vllm]]

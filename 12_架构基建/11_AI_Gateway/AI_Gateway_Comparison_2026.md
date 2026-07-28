@@ -12,8 +12,11 @@ aliases:
   - AI_Gateway_Comparison_2026
 sources: []
 
+name_zh: "AI Gateway 对比 2026"
 ---
 # AI Gateway 对比 2026
+
+> 中文简称：AI Gateway 对比 2026
 
 > **一句话秒懂**: AI Gateway 是调用大模型 API 的"中间人"，帮你统一管理多模型路由、限流、缓存、安全和成本，是 AI 工程化的基础设施。
 

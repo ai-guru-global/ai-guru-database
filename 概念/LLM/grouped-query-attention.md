@@ -30,8 +30,11 @@ aliases:
   - "grouped query attention"
   - "GQA"
 
+name_zh: "分组查询注意力"
 ---
 # Grouped-Query Attention (GQA)
+
+> 中文简称：分组查询注意力
 
 > GQA 让多个 query 头共享同一组 K/V 头，在精度和 KV Cache 压缩之间取平衡——2024-2026 主流模型的默认选择。
 

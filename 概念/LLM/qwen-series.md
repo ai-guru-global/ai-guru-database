@@ -25,9 +25,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "Qwen 系列模型架构演进"
 ---
 
 # Qwen 系列模型架构演进
+
+> 中文简称：Qwen 系列模型架构演进
 
 ## 一句话总结
 

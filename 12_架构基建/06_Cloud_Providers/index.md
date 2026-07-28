@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "云厂商"
+name_en: "Cloud Providers"
 ---
 
 # Cloud Providers
+
+> 中文简称：云厂商 ｜ English Name: Cloud Providers
 
 This page indexes the contents of `12_架构基建/06_Cloud_Providers`.
 
@@ -198,3 +202,7 @@ This page indexes the contents of `12_架构基建/06_Cloud_Providers`.
 | 故障案例库 | 经验总结 | 问题排查参考 |
 | 技术会议演讲 | 前沿分享 | 趋势了解 |
 | 开源项目 | 代码实现 | 深入学习参考 |
+
+## 相关文档
+
+- [[12_架构基建/06_Cloud_Providers/Alibaba_Cloud_index|阿里云专题]]

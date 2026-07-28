@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "价值对齐"
+name_en: "Value Alignment"
 ---
 
 # Value Alignment
+
+> 中文简称：价值对齐 ｜ English Name: Value Alignment
 
 价值对齐（Value Alignment）— RLHF、Constitutional AI（CAI）与 AI 系统的价值观对齐（alignment）方法。
 

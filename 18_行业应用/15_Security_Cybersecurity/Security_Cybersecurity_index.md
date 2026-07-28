@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "网络安全专题"
 ---
 
 # Security & Cybersecurity
+
+> 中文简称：网络安全专题
 
 安全与网络安全（Cybersecurity）— AI 驱动的威胁检测（threat detection）、入侵防御、漏洞挖掘与安全运营自动化。
 

@@ -12,8 +12,11 @@ aliases:
   - AI_Ops_for_dummy
 sources: []
 
+name_zh: "AI Ops 入门指南"
 ---
 # AI Ops 入门指南 (for Dummies)
+
+> 中文简称：AI Ops 入门指南
 
 > 用最简单的语言解释什么是 AI Ops，以及它如何让运维工作变得更轻松。
 

@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-21
 sources: []
+name_zh: "基础概念"
+name_en: "Fundamentals"
 ---
 
 # AI Fundamentals
+
+> 中文简称：基础概念 ｜ English Name: Fundamentals
 
 AI 基础 — 人工智能核心概念、历史脉络和术语表，适合零基础学习者入门。
 

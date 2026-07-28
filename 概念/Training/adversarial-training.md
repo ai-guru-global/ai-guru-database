@@ -16,9 +16,12 @@ relationships:
 sources:
   - "https://arxiv.org/abs/1412.6572"  # Goodfellow FGSM
   - "https://arxiv.org/abs/1706.06083"  # Madry PGD
+name_zh: "对抗训练"
 ---
 
 # Adversarial Training
+
+> 中文简称：对抗训练
 
 > **一句话理解**: 对抗训练就是「用假样本一起训练」，让模型见过各种使坏的输入，从而变得更抗骗。
 
@@ -149,7 +152,7 @@ for x, y in dataloader:
 ## 延伸阅读
 
 - [[概念/LLM/llm-safety|LLM Safety]] — LLM 安全
-- [[概念/Safety/adversarial-attacks|Adversarial Attacks]] — 对抗攻击
+- [[概念/Safety/adversarial-attack|Adversarial Attacks]] — 对抗攻击
 - [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming|红队测试]] — 红队测试
 - [[12_架构基建/10_Security/AI_Security_Fundamentals|AI 安全基础]] — AI 安全
 - [[概念/Training/pre-training|Pre-training]] — 预训练

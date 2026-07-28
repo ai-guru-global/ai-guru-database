@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "可观测性"
+name_en: "Observability"
 ---
 
 # Observability
+
+> 中文简称：可观测性 ｜ English Name: Observability
 
 This page indexes the contents of `11_模型运维/08_Observability`.
 

@@ -11,8 +11,11 @@ aliases:
   - Speculative_Decoding_Advanced_2026
 sources: []
 
+name_zh: "投机解码前沿技术 2026"
 ---
 # 投机解码前沿技术 2026
+
+> 中文简称：投机解码前沿技术 2026
 
 ## 一句话理解
 

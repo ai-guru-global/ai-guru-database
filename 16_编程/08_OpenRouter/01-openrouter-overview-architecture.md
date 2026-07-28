@@ -18,6 +18,7 @@ tier: peripheral
 updated: 2026-06-30
 summary: "OpenRouter 概述与核心架构 — 专题文档"
 sources: []
+name_zh: "OpenRouter 概述与核心架构"
 ---
 title: OpenRouter 概述与核心架构
 description: '# OpenRouter 概述与核心架构'
@@ -57,6 +58,8 @@ k8s_versions:
 ---
 
 # OpenRouter 概述与核心架构
+
+> 中文简称：OpenRouter 概述与核心架构
 
 > **文档类型**: 概念与架构 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Unified LLM API, AI Gateway, Provider Routing, Architecture, Multi-Model
 

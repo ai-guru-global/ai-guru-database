@@ -12,8 +12,11 @@ aliases:
   - AutoGPT_Deep_Dive
 sources: []
 
+name_zh: "AutoGPT: 自主任务执行 Agent"
 ---
 # AutoGPT: 自主任务执行 Agent
+
+> 中文简称：AutoGPT: 自主任务执行 Agent
 
 > **一句话理解**: AutoGPT 是一个让 AI 自主完成复杂任务的框架——给它一个目标，它会自动分解任务、调用工具、反思改进，直到达成目标。
 

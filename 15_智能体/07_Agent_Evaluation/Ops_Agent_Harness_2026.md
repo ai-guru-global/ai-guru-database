@@ -11,12 +11,15 @@ aliases:
   - Ops_Agent_Harness_2026
 sources: []
 
+name_zh: "Ops Agent Harness 2026: 运维 Agent 评估框架"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Ops Agent Harness 2026: 运维 Agent 评估框架
+
+> 中文简称：Ops Agent Harness 2026: 运维 Agent 评估框架
 
 > **一句话理解**: Ops Agent Harness 是专门评估运维场景 AI Agent 的测试框架，覆盖监控告警、故障诊断、自动化修复、安全合规等核心运维能力，确保 Agent 在生产环境中的可靠性和安全性。
 

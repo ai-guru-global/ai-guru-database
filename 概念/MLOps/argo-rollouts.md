@@ -17,9 +17,12 @@ relationships:
   - target: "概念/argocd"
     type: related_to
 sources: []
+name_zh: "渐进式交付控制器"
 ---
 
 # Argo Rollouts
+
+> 中文简称：渐进式交付控制器
 
 > **一句话理解**: Argo Rollouts 让 K8s 发布从「直接全量替换」升级为「先给小流量验证，再逐步放大」，降低变更风险。
 

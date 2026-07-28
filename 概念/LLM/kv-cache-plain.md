@@ -19,8 +19,11 @@ aliases:
   - "kv cache plain"
 sources: []
 
+name_zh: "KV Cache 大白话解释"
 ---
 # KV Cache 大白话解释
+
+> 中文简称：KV Cache 大白话解释
 
 > 一句话：KV Cache 是大模型生成文字时，把已经算过的内容的“精华”存起来，避免重复劳动，让生成速度更快。
 

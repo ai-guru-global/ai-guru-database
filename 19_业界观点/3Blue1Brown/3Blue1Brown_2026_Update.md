@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["3Blue1Brown 2026 Update", "Grant Sanderson 2026", "3Blue1Brown 2026 动态"]
 sources: []
+name_zh: "3Blue1Brown 2026 动态"
 ---
 
 # 3Blue1Brown 2026 动态 (Grant Sanderson 2026 Update)
+
+> 中文简称：3Blue1Brown 2026 动态
 
 ## 一句话概括
 
@@ -120,7 +123,7 @@ Grant Sanderson 强调"**真正的理解来自几何直觉，而非符号运算*
 | 教育者 | 强项 | 与 3B1B 互补点 |
 |--------|------|----------------|
 | **3Blue1Brown** | 数学直觉 + 动画美学 | — |
-| [[19_业界观点/Josh_Starner/Josh_Starner_2026_Update\|StatQuest]] | 统计/ML 全谱系入门 | Josh 更全谱系，3B1B 更美学 |
+| [[19_业界观点/Josh_Starmer/Josh_Starmer_2026_Update\|StatQuest]] | 统计/ML 全谱系入门 | Josh 更全谱系，3B1B 更美学 |
 | [[19_业界观点/Andrej_Karpathy/about\|Karpathy]] | 代码 + 第一性原理 | Karpathy 重实现，3B1B 重直觉 |
 | [[19_业界观点/Andrew_Ng/about\|吴恩达]] | 系统课程 | 吴恩达重体系 |
 
@@ -138,7 +141,7 @@ Grant Sanderson 强调"**真正的理解来自几何直觉，而非符号运算*
 - [[90_学习/References/books/index|学习资源]]
 - [[01_数学基础/index|数学基础]]
 - [[94_可视化/index|可视化]]
-- [[19_业界观点/Josh_Starner/Josh_Starner_2026_Update|Josh Starmer（StatQuest）]]
+- [[19_业界观点/Josh_Starmer/Josh_Starmer_2026_Update|Josh Starmer（StatQuest）]]
 - [[19_业界观点/Andrej_Karpathy/about|Andrej Karpathy]]
 
 ---

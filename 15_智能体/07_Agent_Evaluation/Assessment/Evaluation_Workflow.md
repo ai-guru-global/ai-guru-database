@@ -11,8 +11,11 @@ aliases:
   - Evaluation_Workflow
 sources: []
 
+name_zh: "评估工作流"
 ---
 # Evaluation Workflow
+
+> 中文简称：评估工作流
 
 > Step-by-step process for comprehensive agent evaluation
 

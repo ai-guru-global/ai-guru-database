@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "测试基础"
+name_en: "Testing Fundamentals"
 ---
 
 # Testing Fundamentals
+
+> 中文简称：测试基础 ｜ English Name: Testing Fundamentals
 
 测试基础（Testing Fundamentals）— AI 系统测试的核心概念、方法论（methodology）与最佳实践（best practices）。
 

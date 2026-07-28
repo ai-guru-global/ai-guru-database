@@ -7,9 +7,12 @@ created: 2026-06-22
 updated: 2026-06-22
 status: decided
 sources: []
+name_zh: "05_NLP_LLMs 章节拆分评估"
 ---
 
 # 05_NLP_LLMs 章节拆分评估
+
+> 中文简称：05_NLP_LLMs 章节拆分评估
 
 > **决策**：不拆分。05_NLP_LLMs 保持现状。
 

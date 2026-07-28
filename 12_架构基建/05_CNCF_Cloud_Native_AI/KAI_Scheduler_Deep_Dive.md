@@ -12,8 +12,11 @@ aliases:
   - KAI_Scheduler_Deep_Dive
 sources: []
 
+name_zh: "KAI Scheduler: 大规模 AI GPU 调度器"
 ---
 # KAI Scheduler: 大规模 AI GPU 调度器
+
+> 中文简称：KAI Scheduler: 大规模 AI GPU 调度器
 
 > **一句话理解**: KAI Scheduler 是为万卡级 AI 集群设计的 CNCF 沙箱调度器——靠拓扑感知（同机架/同交换机优先）+ 主动碎片整理 + 大规模公平调度，在 GPU 紧张时把吞吐和拓扑带宽同时拉满。
 

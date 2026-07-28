@@ -17,9 +17,12 @@ sources:
   - "https://github.com/deepseek-ai (DeepSeek 开源仓库)"
   - "https://darioamodei.com/machines-of-loving-grace (Amodei 安全优先)"
   - "https://qwenlm.github.io/ (Qwen 模型卡)"
+name_zh: "开源 vs 闭源 AI：2026 路线之争与立场矩阵"
 ---
 
 # 开源 vs 闭源 AI：2026 路线之争与立场矩阵
+
+> 中文简称：开源 vs 闭源 AI：2026 路线之争与立场矩阵
 
 > **一句话概括**: 2026 年 AI 行业最深刻的分裂——开源阵营 (Meta LLaMA / DeepSeek / Qwen / Mistral) 以权重开放推动生态民主化，闭源阵营 (OpenAI / Anthropic / Google) 以安全可控为由管制前沿模型，本篇用一张立场矩阵呈现十位领袖的真实态度与商业逻辑，并解析"去安全微调"、延迟开源等地缘与技术交织的新现象。
 

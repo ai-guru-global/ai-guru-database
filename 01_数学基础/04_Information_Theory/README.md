@@ -8,8 +8,11 @@ updated: 2026-06-04
 tier: supporting
 sources: []
 
+name_zh: "信息论基础"
 ---
 # 信息论基础 (Information Theory)
+
+> 中文简称：信息论基础
 
 > **核心定位**: AI 的数学基石之一，几乎所有 ML 损失函数（交叉熵）、模型评估（困惑度）、表示学习（信息瓶颈）都源于信息论。
 

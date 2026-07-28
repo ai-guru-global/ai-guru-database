@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Ilya Sutskever 2026 Update", "伊利亚·苏茨克维 2026 动态"]
 sources: []
+name_zh: "伊利亚·苏茨克维 2026 动态"
 ---
 
 # 伊利亚·苏茨克维 2026 动态 (Ilya Sutskever 2026 Update)
+
+> 中文简称：伊利亚·苏茨克维 2026 动态
 
 ## 一句话概括
 

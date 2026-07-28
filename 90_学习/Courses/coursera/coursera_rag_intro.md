@@ -14,8 +14,11 @@ aliases:
   - "coursera rag intro"
   - coursera_rag_intro
 
+name_zh: "RAG 入门实践项目"
 ---
 # RAG 入门实践项目 (Coursera)
+
+> 中文简称：RAG 入门实践项目
 
 > **一句话理解**: Coursera RAG 入门实践项目,通过动手项目学习检索增强生成的基础知识和实现方法。
 

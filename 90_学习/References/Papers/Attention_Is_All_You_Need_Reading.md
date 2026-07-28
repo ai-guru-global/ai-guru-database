@@ -22,8 +22,11 @@ aliases:
   - "Attention Is All You Need"
   - "Transformer Paper"
 
+name_zh: "论文导读"
 ---
 # 论文导读: Attention Is All You Need
+
+> 中文简称：论文导读
 
 > **一句话理解**: Google 团队 2017 年提出的 Transformer 架构，用纯注意力机制取代 RNN/CNN，不仅大幅提升了机器翻译质量，更成为此后所有大语言模型（GPT/BERT/T5/Claude/Gemini）的统一底座——这是现代 AI 最重要的奠基性论文。
 

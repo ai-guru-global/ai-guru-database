@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "DeepLearning.AI 课程"
+name_en: "deeplearning ai"
 ---
 
 # DeepLearning.AI
+
+> 中文简称：DeepLearning.AI 课程 ｜ English Name: deeplearning ai
 
 DeepLearning.AI 短课程（Short Courses）— Andrew Ng 团队的 LLM、生成式 AI（Generative AI）与深度学习系列课程笔记。
 

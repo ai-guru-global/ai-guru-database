@@ -16,8 +16,11 @@ aliases:
   - "AI Coding 2026 Guide"
   - AI_Coding_2026_Guide
 
+name_zh: "AI 编程 2026 全景指南"
 ---
 # AI 编程 2026 全景指南
+
+> 中文简称：AI 编程 2026 全景指南
 
 > **一句话理解**: 2026 年 AI 编程工具全景:从代码补全到自主编程 Agent,对比 Cursor、Windsurf、Claude Code、Codex、GitHub Copilot 等主流方案。
 

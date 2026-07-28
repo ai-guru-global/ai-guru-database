@@ -12,8 +12,11 @@ aliases:
   - Skills_ClawHub
 sources: []
 
+name_zh: "技能与 ClawHub"
 ---
 # Skills & ClawHub: The OpenClaw Skill Ecosystem
+
+> 中文简称：技能与 ClawHub
 
 ## Overview
 

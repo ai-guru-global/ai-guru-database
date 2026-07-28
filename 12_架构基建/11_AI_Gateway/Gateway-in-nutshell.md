@@ -11,8 +11,11 @@ aliases:
   - "Gateway in nutshell"
 sources: []
 
+name_zh: "AI 网关速成指南"
 ---
 # AI 网关速成指南
+
+> 中文简称：AI 网关速成指南
 
 > 🎯 **目标**：理解 AI Gateway 的核心概念、架构和关键功能。
 

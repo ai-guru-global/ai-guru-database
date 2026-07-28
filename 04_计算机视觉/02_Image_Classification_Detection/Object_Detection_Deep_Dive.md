@@ -12,8 +12,11 @@ aliases:
   - Object_Detection
 sources: []
 
+name_zh: "目标检测深度解析"
 ---
 # 目标检测深度解析 (Object Detection Deep Dive)
+
+> 中文简称：目标检测深度解析
 
 > 从 R-CNN 到 YOLOv9 和 DETR，系统解析目标检测的技术演进、核心算法和工业级部署实践。
 

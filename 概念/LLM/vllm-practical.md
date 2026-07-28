@@ -30,9 +30,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "vLLM 实战指南"
 ---
 
 # vLLM 实战指南
+
+> 中文简称：vLLM 实战指南
 
 ## 一句话总结
 

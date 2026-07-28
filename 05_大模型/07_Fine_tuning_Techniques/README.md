@@ -8,8 +8,11 @@ updated: 2026-06-16
 tier: supporting
 sources: []
 
+name_zh: "微调技术"
 ---
 # 微调技术 (Fine-tuning Techniques)
+
+> 中文简称：微调技术
 
 ## 文档导航
 

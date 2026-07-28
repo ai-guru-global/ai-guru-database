@@ -11,8 +11,11 @@ aliases:
   - Quality_Assurance
 sources: []
 
+name_zh: "质量保障"
 ---
 # Quality Assurance
+
+> 中文简称：质量保障
 
 > Ensuring the quality and reliability of agent evaluations
 

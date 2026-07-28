@@ -25,9 +25,12 @@ lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-07-11T00:00:00Z
 updated: 2026-07-21
+name_zh: "视觉 Transformer"
 ---
 
 # Vision Transformer (ViT)
+
+> 中文简称：视觉 Transformer
 
 > **一句话理解**: ViT 把图像当作一串"视觉单词"（Patch），用 NLP 中的 Transformer 来"阅读"图像——抛弃了卷积的局部偏置，用纯注意力从海量数据中学习视觉表征。
 

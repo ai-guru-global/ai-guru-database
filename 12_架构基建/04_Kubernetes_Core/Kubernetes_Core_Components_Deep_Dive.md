@@ -7,6 +7,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: core
 sources: []
+name_zh: "Kubernetes 核心组件深度解析"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -14,6 +15,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # Kubernetes 核心组件深度解析
+
+> 中文简称：Kubernetes 核心组件深度解析
 
 > **一句话理解**: Kubernetes 是一套以声明式 API 为核心的分布式操作系统，控制平面组件负责"决策与记忆"，节点组件负责"执行与汇报"——工单里 80% 的异常都可归因到这两类组件的通信、状态或资源故障。
 

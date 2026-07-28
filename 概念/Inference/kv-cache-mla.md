@@ -29,9 +29,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "KV 缓存 2.0"
 ---
 
 # KV 缓存 2.0 / MLA
+
+> 中文简称：KV 缓存 2.0
 
 > **一句话理解**:MLA(Multi-Head Latent Attention)是 DeepSeek 2024-06 提出的"KV 缓存终极压缩"——把 K + V 联合压缩到"潜在向量",推理时只缓存潜在向量,KV 体积缩小 200x,长上下文推理成本降 90%+。是 V2 / V3 / R1 的核心架构。
 

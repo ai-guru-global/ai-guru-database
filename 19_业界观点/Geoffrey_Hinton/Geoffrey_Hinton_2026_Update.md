@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Geoffrey Hinton 2026 Update", "杰弗里·辛顿 2026 动态"]
 sources: []
+name_zh: "杰弗里·辛顿 2026 动态"
 ---
 
 # 杰弗里·辛顿 2026 动态 (Geoffrey Hinton 2026 Update)
+
+> 中文简称：杰弗里·辛顿 2026 动态
 
 ## 一句话概括
 

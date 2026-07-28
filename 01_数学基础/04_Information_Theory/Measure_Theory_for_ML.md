@@ -11,8 +11,11 @@ aliases:
   - Measure_Theory_for_ML
 sources: []
 
+name_zh: "测度论与机器学习: 从σ-代数到变分推断的数学基石"
 ---
 # 测度论与机器学习: 从σ-代数到变分推断的数学基石
+
+> 中文简称：测度论与机器学习: 从σ-代数到变分推断的数学基石
 
 > **一句话理解**: 测度论为概率论提供了严格的数学基础——σ-代数定义了"可测量的事件"，Lebesgue 积分统一了离散与连续情形，Radon-Nikodym 定理保证了概率密度的存在性，这些看似抽象的工具是变分推断、最优传输、生成模型的理论根基。
 
@@ -245,7 +248,7 @@ f 称为 Radon-Nikodym 导数，记为 f = dν/dμ
 │         = p_Z(f_K ∘ ... ∘ f_1(x)) · Πᵢ |det J_{fᵢ}(x)|     │
 │                                                                 │
 │  这就是推前测度的密度公式!                                      │
-│  参见: [[Normalizing_Flows]]                                    │
+│  参见: Normalizing_Flows                                    │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -372,7 +375,7 @@ ML 中的"汇率":
   关键: 若 Q 的支撑集不包含 P 的支撑集 → KL = ∞
   这就是"zero-avoiding" vs "zero-forcing" 行为的数学根源!
 
-  参见: [[Variational_Inference]], [[ELBO_Derivation]]
+  参见: Variational_Inference, [[ELBO_Derivation]]
 ```
 
 ### 4.2 最优传输 (Optimal Transport)
@@ -443,7 +446,7 @@ VC 维 / Rademacher 复杂度:
   控制经验测度收敛到真实测度的速率
   本质上是在控制函数类对 σ-代数的"复杂度"
 
-  参见: [[Statistical_Learning_Theory]], [[PAC_Learning]]
+  参见: Statistical_Learning_Theory, [[PAC_Learning]]
 ```
 
 ### 4.5 高斯过程与无穷维测度
@@ -463,7 +466,7 @@ VC 维 / Rademacher 复杂度:
   - k 正定 → 有限维分布合法 → Kolmogorov 定理保证测度存在
   - k 的平滑性 → 样本路径的正则性 (连续/可微)
 
-  参见: [[Gaussian_Processes]], [[Kernel_Methods]]
+  参见: Gaussian_Processes, Kernel_Methods
 ```
 
 ---
@@ -720,7 +723,7 @@ Score-Based 扩散模型:
     即 RN 导数的对数梯度!
   - 反向 SDE 通过 score 重建从 p_T ≈ N(0,I) 到 p_0 = P_data 的测度变换
 
-  参见: [[Diffusion_Models]], [[Score_Matching]]
+  参见: [[概念/General/diffusion-models|Diffusion_Models]], [[Score_Matching]]
 ```
 
 ### 6.2 最优传输与对齐
@@ -788,25 +791,25 @@ ML 导向:
 
 ### 8.1 前置知识
 
-- [[集合论基础]] — σ-代数的集合论前提
-- [[实分析基础]] — Lebesgue 测度的构造
-- [[概率论基础]] — 从初等概率到测度论概率
-- [[拓扑学直觉]] — Borel σ-代数与开集
+- 集合论基础 — σ-代数的集合论前提
+- 实分析基础 — Lebesgue 测度的构造
+- 概率论基础 — 从初等概率到测度论概率
+- 拓扑学直觉 — Borel σ-代数与开集
 
 ### 8.2 直接应用
 
 - [[Information_Theory_Fundamentals]] — 熵的测度论定义: H(P) = -∫ log(dP/dλ) dP
 - [[Optimal_Transport_for_ML]] — Wasserstein 距离的测度论表述
-- [[Variational_Inference]] — ELBO 与 KL 散度的严格基础
-- [[Normalizing_Flows]] — 推前测度与变量替换
-- [[Diffusion_Models]] — Fokker-Planck 方程与测度演化
+- Variational_Inference — ELBO 与 KL 散度的严格基础
+- Normalizing_Flows — 推前测度与变量替换
+- [[概念/General/diffusion-models|Diffusion_Models]] — Fokker-Planck 方程与测度演化
 
 ### 8.3 延伸连接
 
-- [[Functional_Analysis_for_ML]] — L^p 空间、对偶空间
-- [[Statistical_Learning_Theory]] — 经验测度理论
-- [[Gaussian_Processes]] — 函数空间上的测度
-- [[Information_Geometry]] — 概率分布流形的微分结构
+- Functional_Analysis_for_ML — L^p 空间、对偶空间
+- Statistical_Learning_Theory — 经验测度理论
+- Gaussian_Processes — 函数空间上的测度
+- [[概念/Math/information-geometry|Information_Geometry]] — 概率分布流形的微分结构
 - [[Numerical_Methods_for_ML]] — 数值积分与测度近似
 
 ---

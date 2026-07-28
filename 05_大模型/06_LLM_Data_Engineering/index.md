@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-21
 sources: []
 tags: [auto-index]
+name_zh: "大模型数据工程"
+name_en: "LLM Data Engineering"
 ---
 
 # LLM Data Engineering
+
+> 中文简称：大模型数据工程 ｜ English Name: LLM Data Engineering
 
 LLM 数据工程（LLM Data Engineering）— 预训练数据清洗（data cleaning）、数据配比（data mixture）、合成数据与数据质量评估。
 
@@ -72,7 +76,7 @@ LLM 数据工程（LLM Data Engineering）— 预训练数据清洗（data clean
 
 - [[05_大模型/index|大模型首页]]
 - [[11_模型运维/02_Data_Engineering/index|Data Engineering]]
-- [[概念/data-engineering|数据工程概念]]
+- [[概念/LLM/llm-data-engineering|数据工程概念]]
 
 ## 统计
 

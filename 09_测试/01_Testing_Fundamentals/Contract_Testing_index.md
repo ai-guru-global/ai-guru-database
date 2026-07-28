@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "契约测试专题"
 ---
 
 # Contract Testing
+
+> 中文简称：契约测试专题
 
 契约测试（Contract Testing）— 微服务架构下 AI API 的消费者驱动契约测试（consumer-driven contract testing）方法。
 

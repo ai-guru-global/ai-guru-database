@@ -12,8 +12,11 @@ aliases:
   - Voice_Agents_Deep_Dive_2026
 sources: []
 
+name_zh: "语音智能体深度解析 2026"
 ---
 # 语音智能体深度解析 2026 (Voice Agents Deep Dive)
+
+> 中文简称：语音智能体深度解析 2026
 
 > **一句话理解**: 2026年语音Agent已从"ASR→LLM→TTS"的串行管道进化为端到端Voice-to-Voice交互——延迟<500ms、情感感知、自然打断，GPT-4o Voice/Claude Voice/Gemini Live重新定义了人机语音对话的边界。
 
@@ -851,8 +854,8 @@ class PersonalizedVoiceAgent:
 - [[15_智能体/01_Agent_Foundations/Computer_Use_Agents_2026|计算机使用智能体]] — 语音+GUI多模态Agent
 - [[14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026|RAG高级实践]] — 语音Agent知识库检索
 - [[14_RAG系统/04_Advanced_RAG/Agentic_RAG_Guide|Agentic RAG指南]] — 语音Agent + RAG集成
-- [[05_大模型/GPT-4o|GPT-4o]] — 端到端语音多模态模型
-- [[前端应用/Realtime_WebApps|实时Web应用]] — WebSocket/WebRTC基础
+- [[05_大模型/14_Global_LLM_Ecosystem/OpenAI_Deep_Dive|GPT-4o]] — 端到端语音多模态模型
+- 实时Web应用 — WebSocket/WebRTC基础
 
 ---
 

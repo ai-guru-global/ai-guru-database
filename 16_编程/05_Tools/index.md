@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "编程工具"
+name_en: "Tools"
 ---
 
 # Tools
+
+> 中文简称：编程工具 ｜ English Name: Tools
 
 This page indexes the contents of `AI编程/Tools`.
 

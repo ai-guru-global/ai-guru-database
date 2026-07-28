@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "AI 可靠性工程师"
+name_en: "AI Reliability Engineer"
 ---
 
 # AI Reliability Engineer
+
+> 中文简称：AI 可靠性工程师 ｜ English Name: AI Reliability Engineer
 
 AI 可靠性工程师 (AIRE) — 保障 AI 系统的稳定性、可观测性与容灾能力，专注 LLM 特有的故障模式。
 

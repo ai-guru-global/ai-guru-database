@@ -27,9 +27,12 @@ updated: 2026-07-21
 aliases:
   - LlamaBox
   - llama box
+name_zh: "llama.cpp 推理服务"
 ---
 
 # llama-box
+
+> 中文简称：llama.cpp 推理服务
 
 > **一句话理解**: llama-box 是 llama.cpp 的"服务端封装版"——底层还是 llama.cpp 那套 GGUF 推理能力，但以上游服务的形式暴露出来，方便被 PPU 等平台调用。
 

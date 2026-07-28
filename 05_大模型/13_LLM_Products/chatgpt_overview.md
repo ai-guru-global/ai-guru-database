@@ -14,8 +14,11 @@ aliases:
   - "chatgpt overview"
   - chatgpt_overview
 
+name_zh: "ChatGPT 概览"
 ---
 # ChatGPT 概览
+
+> 中文简称：ChatGPT 概览
 
 > **一句话理解**: 全球用户量最大的 AI 对话产品，支持文本、图像、代码、搜索等多模态能力。
 

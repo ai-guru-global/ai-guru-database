@@ -7,9 +7,12 @@ created: 2026-07-02
 updated: 2026-07-21
 sources:
   - "https://arxiv.org/abs/2307.03172"  # LongBench
+name_zh: "上下文窗口"
 ---
 
 # Context Window（上下文窗口）
+
+> 中文简称：上下文窗口
 
 ## 定义
 

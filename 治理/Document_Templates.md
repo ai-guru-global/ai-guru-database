@@ -12,8 +12,11 @@ aliases:
   - DOCUMENT_TEMPLATES
 sources: []
 
+name_zh: "AI Guru 知识库 — 文档模板规范"
 ---
 # AI Guru 知识库 — 文档模板规范
+
+> 中文简称：AI Guru 知识库 — 文档模板规范
 
 > **一句话理解**: 本文档定义了 AI Guru 知识库所有 Markdown 文件的标准模板，确保 22 个章节、650+ 文件在结构、风格和用户体验上的一致性。
 

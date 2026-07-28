@@ -31,9 +31,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "优化理论 / 凸优化"
 ---
 
 # 凸优化 / Convex Optimization
+
+> 中文简称：优化理论 / 凸优化
 
 > **一句话理解**:凸优化是 ML 的"数学之母"——凸集、凸函数、LASSO、Ridge、ADMM、Proximal、随机梯度下降(SGD)理论。深度学习所有优化器(SGD / Adam / Lion / Shampoo)的理论基础,是理解"为什么这能收敛"的必备。
 
@@ -281,7 +284,7 @@ def soft_threshold(x, t):
 - [[概念/gradient-descent|Gradient Descent]]
 - [[概念/linear-algebra|Linear Algebra]]
 - [[概念/probability-statistics|Probability Statistics]]
-- [[概念/zero-redundancy-optimizers|Zero Redundancy Optimizers]]
+- [[概念/Training/zero-redundancy-optimizer|Zero Redundancy Optimizers]]
 - [[概念/pre-training|Pre Training]]
 - [[概念/distributed-training|Distributed Training]]
 - [[概念/feature-engineering|Feature Engineering]]

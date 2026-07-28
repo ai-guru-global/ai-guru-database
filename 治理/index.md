@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-09
 sources: []
+name_zh: "治理"
+name_en: "Governance"
 ---
 
 # 项目治理（治理）
+
+> 中文简称：治理 ｜ English Name: Governance
 
 本目录是项目治理、审计报告和元数据的集中存储。
 
@@ -243,3 +247,11 @@ sources: []
 - [ ] 已全面推广并培训
 - [ ] 已建立度量和反馈机制
 - [ ] 持续优化和改进中
+
+## 相关文档
+
+- [[治理/_meta/_evaluation-2026-07-27|2026-07-27 全库评估报告]]
+- [[治理/_meta/_evaluation-implementation-2026-07-27|2026-07-27 评估实施完成报告]]
+- [[治理/_meta/_concept-strengthening-r2-2026-06-24|概念强化 R2 (2026-06-24)]]
+- [[治理/_meta/_synthesis-index-archive|index 综合归档]]
+- [[治理/_meta/_synthesis-readme-archive|README 综合归档]]

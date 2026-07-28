@@ -28,9 +28,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "Top-p 采样"
 ---
 
 # Top-p 采样（Nucleus Sampling）
+
+> 中文简称：Top-p 采样
 
 ## 一句话总结
 

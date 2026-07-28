@@ -33,9 +33,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "端侧 AI 芯片"
 ---
 
 # 端侧 AI 芯片
+
+> 中文简称：端侧 AI 芯片
 
 > **一句话理解**:端侧 AI 芯片让"LLM 跑在手机/PC/车上"——Apple ANE(M3 38 TOPS)、高通 Hexagon NPU(Snapdragon 8 Gen 3 45 TOPS)、联发科 APU(天玑 9300+)、NVIDIA Jetson Orin(275 TOPS)、Intel Core Ultra(11 TOPS)。iPhone 15 Pro 实测可跑 Phi-3.5 3.8B INT4,是 Apple Intelligence 的算力底座。
 
@@ -215,7 +218,7 @@ response = generate(model, tokenizer, prompt="Hello", max_tokens=100)
 - [[概念/quantization|Quantization]]
 - [[概念/phi-series|Phi Series]]
 - [[概念/cn-ai-chips-2|Cn Ai Chips 2]]
-- [[概念/llm-compression|Model Compression]]
+- [[概念/Training/model-compression|Model Compression]]
 - [[概念/llama-cpp|Llama Cpp]]
 - [[概念/onnx|Onnx]]
 - [[概念/openvino|Openvino]]

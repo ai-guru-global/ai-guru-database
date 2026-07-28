@@ -20,9 +20,12 @@ relationships:
   - target: "概念/apsara-stack"
     type: related_to
 sources: []
+name_zh: "K8s 配置字典"
 ---
 
 # ConfigMap
+
+> 中文简称：K8s 配置字典
 
 > **一句话理解**: ConfigMap 是 Kubernetes 的「配置外挂」——把应用配置从容器镜像里抽出来，单独管理并注入到 Pod 中使用。
 

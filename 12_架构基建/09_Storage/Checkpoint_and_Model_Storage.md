@@ -8,9 +8,12 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "Checkpoint 与模型存储"
 ---
 
 # Checkpoint 与模型存储
+
+> 中文简称：Checkpoint 与模型存储
 
 > **一句话理解**: Checkpoint 是训练的「存档点」，写慢了 GPU 空等，丢了模型几周白跑；模型存储是推理的「弹药库」，版本乱了服务就错了。
 

@@ -7,9 +7,13 @@ created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
 sources: []
+name_zh: "云运维智能体文档"
+name_en: "docs"
 ---
 
 # Cloud Ops Agent 知识库首页
+
+> 中文简称：云运维智能体文档 ｜ English Name: docs
 
 欢迎来到 Cloud Ops Agent 的单一可信源（Single Source of Truth）。
 基于 Agent Harness 的设计理念，本文档库对 Agent 开发、语料工程、测评、架构、产品经理、集成测试六类角色的核心知识点进行了系统性重构与拆分。

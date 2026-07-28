@@ -11,9 +11,12 @@ aliases:
   - "AI Research Engineer 面试指南"
   - "AI_Research_Engineer Interview Guide"
 sources: []
+name_zh: "AI Research Engineer 面试指南"
 ---
 
 # AI Research Engineer 面试指南
+
+> 中文简称：AI Research Engineer 面试指南
 
 > **一句话理解**: AI Research Engineer 是研究想法的工程实现者——将科学家的理论构想转化为可运行、可扩展、可复现的实验系统，精通分布式训练、性能优化和大规模实验管理，是前沿 AI 研究不可或缺的工程力量。
 
@@ -719,7 +722,7 @@ class MoELayer(nn.Module):
 ## Related
 
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 - [[21_面试岗位/Research_Scientist/Research_Scientist|Research Scientist 面试指南]]
 - [[21_面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist 面试指南]]
 - [[21_面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]

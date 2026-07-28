@@ -11,12 +11,15 @@ aliases:
   - Claude_Code_Deep_Dive
 sources: []
 
+name_zh: "Claude Code: Anthropic 官方 Agent 编程 CLI"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Claude Code: Anthropic 官方 Agent 编程 CLI
+
+> 中文简称：Claude Code: Anthropic 官方 Agent 编程 CLI
 
 > **一句话理解**: Claude Code 是 Anthropic 官方推出的 Agent 编程工具，通过深度集成 Claude 模型与本地开发环境，让 AI 能够直接读写文件、执行命令、搜索代码，实现"人机协同编程"的新范式。
 

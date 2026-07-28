@@ -25,9 +25,12 @@ provenance:
 base_confidence: 0.88
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "GPT 训练后量化"
 ---
 
 # GPTQ（Post-Training Quantization for GPT）
+
+> 中文简称：GPT 训练后量化
 
 ## 核心要点
 
@@ -185,7 +188,7 @@ llm = LLM(model="qwen2.5-7b-gptq", quantization="gptq")
 - [[概念/LLM/llm-quantization|LLM 量化]]
 - [[概念/LLM/exllama|ExLlamaV2]]
 - [[概念/LLM/vllm|vLLM]]
-- [[10_部署推理/05_Quantization/GPTQ_AWQ_Comparison_2026|GPTQ vs AWQ 对比]]
+- [[10_部署推理/05_Quantization/Quantization_Techniques_2026|GPTQ vs AWQ 对比]]
 
 ## 量化配置示例
 

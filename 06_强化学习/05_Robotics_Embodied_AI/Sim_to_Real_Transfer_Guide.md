@@ -18,9 +18,12 @@ sources:
   - "NVIDIA Isaac Sim Documentation"
   - "Muratore et al. (2022) A Survey on Sim-to-Real Transfer"
 
+name_zh: "仿真到现实迁移完整指南"
 ---
 
 # 仿真到现实迁移完整指南 (Sim2Real Transfer Guide)
+
+> 中文简称：仿真到现实迁移完整指南
 
 > **一句话理解**: Sim2Real 就像飞行员在飞行模拟器里训练后再开真飞机——模拟器里学会了基本功，但真飞时还要应对乱流、颠簸等"模拟器想不到"的真实差异，所以训练时必须故意"制造各种意外"，让策略足够鲁棒才能落地。
 

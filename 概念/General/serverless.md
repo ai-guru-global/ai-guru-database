@@ -30,9 +30,12 @@ provenance:
 base_confidence: 0.80
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "无服务器 AI 推理"
 ---
 
 # 无服务器 AI 推理（Serverless AI Inference）
+
+> 中文简称：无服务器 AI 推理
 
 ## 一句话定义
 

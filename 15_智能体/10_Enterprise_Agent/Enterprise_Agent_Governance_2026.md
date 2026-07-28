@@ -11,8 +11,11 @@ aliases:
   - Enterprise_Agent_Governance_2026
 sources: []
 
+name_zh: "企业智能体治理"
 ---
 # Enterprise Agent Governance 2026: Managing Thousands of Agents
+
+> 中文简称：企业智能体治理
 
 > **一句话理解**: 企业智能体治理是确保公司内部成千上万个 AI Agent 在合规、安全、且成本可控的前提下运行的“交通指挥系统”。
 

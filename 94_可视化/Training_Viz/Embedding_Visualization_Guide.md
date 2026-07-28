@@ -11,8 +11,11 @@ aliases:
   - Embedding_Visualization_Guide
 sources: []
 
+name_zh: "嵌入可视化"
 ---
 # 嵌入可视化 (Embedding Visualization Guide)
+
+> 中文简称：嵌入可视化
 
 > **一句话理解**: 嵌入可视化是将高维向量空间"降维投影"到2D/3D平面的艺术——让你亲眼看到语义相似性、聚类结构和模型学到的知识几何。
 

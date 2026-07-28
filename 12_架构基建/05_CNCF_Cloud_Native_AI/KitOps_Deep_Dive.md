@@ -12,12 +12,15 @@ aliases:
   - KitOps_Deep_Dive
 sources: []
 
+name_zh: "KitOps : 大模型制品打包标准"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # KitOps (ModelKit): 大模型制品打包标准
+
+> 中文简称：KitOps : 大模型制品打包标准
 
 > **一句话理解**: KitOps 定义了 ModelKit——把大模型权重/代码/数据集/配置/文档打成一个 OCI 制品(可签名、可版本、可推任意镜像仓库),解决「模型在生产环境的散装搬运」和供应链安全问题。
 

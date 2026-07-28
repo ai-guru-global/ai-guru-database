@@ -12,12 +12,15 @@ aliases:
   - AI_Stack_Container_Runtime_Guide
 sources: []
 
+name_zh: "AI Stack 容器与运行时指南"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # AI Stack 容器与运行时指南
+
+> 中文简称：AI Stack 容器与运行时指南
 
 > **一句话理解**: AI Stack 以 containerd 为容器运行时，`nerdctl`/`crictl`/`ctr` 分别用于日常运维、K8s 调试和底层排障，`docker`/`podman` 用于开发或安全敏感场景。
 

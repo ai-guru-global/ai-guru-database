@@ -32,9 +32,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "在线学习 / 随机过程"
 ---
 
 # 在线学习 / 随机过程
+
+> 中文简称：在线学习 / 随机过程
 
 > **一句话理解**:在线学习让模型"持续学习"——Online Convex Optimization(OGD / FTPL / Online Mirror Descent)、Multi-Armed Bandit(UCB / Thompson Sampling / Contextual)、Adversarial Online Learning。在 LLM 时代:在线微调、推荐系统、实时决策、广告投放。
 

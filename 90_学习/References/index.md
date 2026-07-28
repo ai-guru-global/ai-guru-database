@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "参考资料"
+name_en: "References"
 ---
 
 # References
+
+> 中文简称：参考资料 ｜ English Name: References
 
 This page indexes the contents of `90_学习/References`.
 

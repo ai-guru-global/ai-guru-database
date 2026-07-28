@@ -15,8 +15,11 @@ aliases:
   - "AI Red Teaming Guide"
   - AI_Red_Teaming_Guide
 
+name_zh: "AI 红队测试完全指南"
 ---
 # AI 红队测试完全指南
+
+> 中文简称：AI 红队测试完全指南
 
 > **一句话理解**: AI 红队测试方法论:如何系统性地发现 LLM 应用的安全漏洞,含攻击向量、测试框架、防御策略。
 

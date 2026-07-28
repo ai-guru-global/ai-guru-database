@@ -13,9 +13,12 @@ tags:
 summary: "表格基础模型的最新进展：TabPFN/TabT/FT-Transformer架构解析，表格数据异质性挑战，与XGBoost/LightGBM的系统对比，企业ML场景应用，以及2026年通用表格智能体前沿。"
 created: 2026-07-19
 updated: 2026-07-19
+name_zh: "表格基础模型"
 ---
 
 # 表格基础模型 (2026)
+
+> 中文简称：表格基础模型
 
 ## 概述
 
@@ -650,17 +653,17 @@ $$\text{TabPerf}(N_{\text{pretrain\_tables}}, d_{\text{model}}) \sim N_{\text{pr
 ## 相关概念
 
 - [[Foundation_Models_ML_Paradigm]] - 基础模型范式转变总论
-- [[XGBoost_LightGBM_CatBoost]] - GBDT三巨头详解
+- XGBoost_LightGBM_CatBoost - GBDT三巨头详解
 - [[Feature_Engineering]] - 特征工程方法论
-- [[Tabular_Data_Processing]] - 表格数据预处理
+- Tabular_Data_Processing - 表格数据预处理
 - [[Federated_Learning_ML_Perspective]] - 联邦学习（隐私保护表格学习）
 - [[AutoML]] - 自动机器学习
-- [[SHAP_Interpretability]] - SHAP可解释性
+- SHAP_Interpretability - SHAP可解释性
 - [[Transformer_Architecture]] - Transformer架构基础
-- [[In-Context_Learning]] - 上下文学习机制
-- [[Scaling_Laws]] - 规模定律
-- [[Enterprise_ML_Deployment]] - 企业ML部署
-- [[Missing_Data_Imputation]] - 缺失值填充
-- [[Categorical_Feature_Encoding]] - 类别特征编码
+- In-Context_Learning - 上下文学习机制
+- [[概念/LLM/chinchilla-scaling-laws|Scaling_Laws]] - 规模定律
+- Enterprise_ML_Deployment - 企业ML部署
+- Missing_Data_Imputation - 缺失值填充
+- Categorical_Feature_Encoding - 类别特征编码
 - [[ML_Algorithms_Cheatsheet]] - ML算法速查
 - [[Supervised_Learning]] - 监督学习基础

@@ -4,7 +4,7 @@ category: "07-model-training"
 tags: ["rlhf", "alignment", "reward-model", "ppo", "grpo", "rlaif", "constitutional-ai", "annotation", "scale"]
 summary: "> **一句话理解**: 大规模 RLHF 就像管理一座万人工厂——从标注流水线的质量控制，到奖励模型的精密校准，再到 PPO/GRPO 的分布式训练，每个环节都需要工业化级别的系统设计。"
 created: 2026-07-19
-updated: 2026-07-19
+updated: 2026-07-25
 tier: supporting
 aliases:
   - "RLHF at Scale 2026"
@@ -12,8 +12,11 @@ aliases:
   - RLHF_at_Scale_2026
 sources: []
 
+name_zh: "大规模 RLHF: 工业化对齐实践"
 ---
 # 大规模 RLHF: 工业化对齐实践 (RLHF at Scale 2026)
+
+> 中文简称：大规模 RLHF: 工业化对齐实践
 
 > **一句话理解**: 大规模 RLHF 就像管理一座万人工厂——从标注流水线的质量控制，到奖励模型的精密校准，再到 PPO/GRPO 的分布式训练，每个环节都需要工业化级别的系统设计。
 
@@ -33,7 +36,8 @@ sources: []
 10. [成本与质量控制](#10-成本与质量控制)
 11. [代码与配置示例](#11-代码与配置示例)
 12. [2026 前沿](#12-2026-前沿)
-13. [相关概念](#13-相关概念)
+13. [源码级实现解析（基于 trl v1.9.0）](#13-源码级实现解析基于-trl-v190)
+14. [相关概念](#14-相关概念)
 
 ---
 
@@ -952,7 +956,35 @@ async def batch_generate(prompts: list, batch_size: int = 50):
 
 ---
 
-## 13. 相关概念
+## 13. 源码级实现解析（基于 trl v1.9.0）
+
+> 本节基于本仓库归档源码 `code/llm-frameworks/trl-v1.9.0/`（PyPI 发布版 sdist），所有行号可直接对照验证。本节聚焦印证第 5 节"PPO/GRPO 规模化挑战"中的工程论断。
+
+### 13.1 训推分离：GRPO 的 vLLM 集成是规模化的核心
+
+第 5 节提到的"生成-训练分离架构"在 trl 中已是一等公民实现：
+
+| 规模化机制 | 证据文件（`trl/`） | 关键实现 |
+|------|------|------|
+| 训推分离开关 | `trainer/grpo_trainer.py` L765 | `use_vllm=True` 时 rollout 走独立 vLLM 实例，训练进程只做前向/反向 |
+| 远程推理客户端 | `generation/vllm_client.py` L58 `VLLMClient` | 通过 HTTP 与 vLLM server 通信：生成请求 + NCCL 权重广播（`update_named_param`），实现"训练若干步→推送新权重→继续 rollout" |
+| colocate 模式 | `generation/vllm_generation.py` L111 `VLLMGeneration` | 单机场景下训练与 vLLM 共享 GPU，省去跨机通信 |
+| 训推不一致修正 | `trainer/grpo_trainer.py` L769 | `vllm_importance_sampling_correction=True`：vLLM 采样分布与训练策略存在数值偏差，用重要性采样比率截断修正——这是 2026 年训推分离框架的标配 |
+| 序列级/词元级 IS | `trainer/grpo_trainer.py` L783 | `importance_sampling_level` 可选 `token`/`sequence`（后者即 GSPO 思路） |
+| 激活值卸载 | `models/activation_offloading.py` | 长序列 rollout 训练时把激活卸载到 CPU，缓解第 5 节所述的显存峰值问题 |
+
+### 13.2 算法工程化取舍的源码证据
+
+- **PPO 已退出核心 API**：`PPOTrainer` 位于 `experimental/ppo/ppo_trainer.py` L297，核心 `trainer/` 目录只保留 SFT/DPO/GRPO/RLOO/KTO/Reward 六个（均继承 `trainer/base_trainer.py` L67 `_BaseTrainer`）。印证本文观点：工业界规模化 RL 已从"4 模型 PPO"转向"免 Critic 的 GRPO/RLOO"。
+- **RLOO 的基线计算**：`trainer/rloo_trainer.py` L1513-1544 实现 NaN-aware 的 leave-one-out 基线——同 prompt 组内其他样本的平均奖励作基线，跳过无效样本，无需价值网络。
+- **GRPO 的组内优势**：`trainer/grpo_trainer.py` L2260 `_generate_and_score_completions` 一次生成 G 个 completion 并组内标准化；L2910 `compute_loss` → L2991 `_compute_loss` 完成 clip 目标计算。
+- **规模化监控**：GRPOTrainer 内置 `entropy`、`clip_ratio`、`kl` 等指标日志，对应第 10 节质量控制中的"训练监控指标"清单。
+
+> 源码阅读入口建议：`trainer/grpo_trainer.py`（训推分离主流程）→ `generation/vllm_client.py`（权重同步协议）→ `trainer/rloo_trainer.py`（免 Critic 基线）→ `experimental/ppo/`（对照传统 PPO 实现）。
+
+---
+
+## 14. 相关概念
 
 - [[GRPO_and_New_Alignment_Methods]] - GRPO 算法详解与对比
 - [[alignment-rlhf]] - RLHF 基础原理

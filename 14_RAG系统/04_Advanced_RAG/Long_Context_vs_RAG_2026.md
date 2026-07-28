@@ -12,8 +12,11 @@ aliases:
   - Long_Context_vs_RAG_2026
 sources: []
 
+name_zh: "长上下文 vs RAG 2026决策指南"
 ---
 # 长上下文 vs RAG 2026决策指南 (Long Context vs RAG)
+
+> 中文简称：长上下文 vs RAG 2026决策指南
 
 > **一句话理解**: 1M+ token窗口并不意味着RAG已死——Lost-in-the-middle、成本线性增长、延迟惩罚让长上下文和RAG各有最优适用区间，2026的最佳实践是混合架构: 长上下文做深度理解，RAG做精准定位。
 

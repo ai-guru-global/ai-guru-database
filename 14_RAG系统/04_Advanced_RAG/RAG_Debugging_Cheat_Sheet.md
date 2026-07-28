@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "RAG 调试速查表"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # RAG 调试速查表
+
+> 中文简称：RAG 调试速查表
 
 > **使用方式**: 根据 RAG 链路阶段定位问题，逐个环节验证。
 

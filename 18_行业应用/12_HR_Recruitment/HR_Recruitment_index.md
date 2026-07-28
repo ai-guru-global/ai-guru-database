@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "人力资源招聘专题"
 ---
 
 # HR & Recruitment
+
+> 中文简称：人力资源招聘专题
 
 人力资源与招聘（HR & Recruitment）— AI 在简历筛选（resume screening）、人岗匹配、面试辅助与员工留存分析中的应用。
 

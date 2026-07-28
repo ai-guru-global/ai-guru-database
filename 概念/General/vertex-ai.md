@@ -27,8 +27,11 @@ aliases:
   - "Vertex Ai"
   - "vertex ai"
 
+name_zh: "谷歌 Vertex AI 平台"
 ---
 # Google Vertex AI
+
+> 中文简称：谷歌 Vertex AI 平台
 
 > GCP 的「统一 AI 工作台」——从数据准备、模型训练到推理部署和 MLOps 全流程覆盖。
 

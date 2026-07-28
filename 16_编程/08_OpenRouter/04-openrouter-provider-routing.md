@@ -14,6 +14,7 @@ aliases:
 updated: 2026-06-30
 summary: "智能路由与 Provider 选择 — 专题文档"
 sources: []
+name_zh: "智能路由与 Provider 选择"
 ---
 title: 智能路由与 Provider 选择
 description: '**文档类型**: 架构深度 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Provider Routing,
@@ -52,6 +53,8 @@ k8s_versions:
 ---
 
 # 智能路由与 Provider 选择
+
+> 中文简称：智能路由与 Provider 选择
 
 > **文档类型**: 架构深度 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Provider Routing, Load Balancing, Fallback, Auto Router, Throughput, Latency, Performance Threshold
 

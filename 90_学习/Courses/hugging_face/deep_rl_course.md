@@ -12,8 +12,11 @@ aliases:
   - deep_rl_course
 sources: []
 
+name_zh: "HuggingFace 深度强化学习课程"
 ---
 # HuggingFace 深度强化学习课程 (Deep RL Course)
+
+> 中文简称：HuggingFace 深度强化学习课程
 
 > HuggingFace 官方深度强化学习课程——从 Q-Learning 到 PPO，配合 Gymnasium 实战。
 

@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Junjie Yan 2026 Update", "闫俊杰 2026 动态", "MiniMax 2026", "海螺 AI 2026"]
 sources: []
+name_zh: "闫俊杰 2026 动态"
 ---
 
 # 闫俊杰 2026 动态 (Junjie Yan 2026 Update)
+
+> 中文简称：闫俊杰 2026 动态
 
 ## 一句话概括
 

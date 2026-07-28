@@ -20,9 +20,12 @@ base_confidence: 0.85
 lifecycle: reviewed
 tier: core
 updated: 2026-07-21
+name_zh: "FP8 浮点精度格式"
 ---
 
 # FP8 浮点精度格式
+
+> 中文简称：FP8 浮点精度格式
 
 > **一句话理解**: FP8 是"8-bit 浮点数"——比 INT8 精度更好，比 FP16 显存省一半，是 2026 年大模型推理的新一代标准精度。
 

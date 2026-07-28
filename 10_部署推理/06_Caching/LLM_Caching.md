@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "LLM 缓存策略"
 ---
 # LLM 缓存策略 (LLM Caching)
+
+> 中文简称：LLM 缓存策略
 
 ## 1. 缓存层次
 
@@ -274,7 +277,7 @@ PREFIX_CACHING = {
 
 ## 6. 交叉引用
 
-- [[10_部署推理/Serving_Architecture/|服务架构]]
+- [[10_部署推理/01_Deployment_Fundamentals/Serving_Architecture|服务架构]]
 - [[10_部署推理/02_Inference_Engines/|推理引擎]]
 - [[概念/LLM/kv-cache|KV Cache 概念]]
 - [[概念/LLM/prefix-caching|前缀缓存]]

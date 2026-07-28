@@ -18,8 +18,11 @@ aliases:
   - "Transformer Llm Architecture"
   - "transformer llm architecture"
 
+name_zh: "Transformer 架构 × LLM 架构"
 ---
 # Transformer 架构 × LLM 架构
+
+> 中文简称：Transformer 架构 × LLM 架构
 
 ## The Connection
 

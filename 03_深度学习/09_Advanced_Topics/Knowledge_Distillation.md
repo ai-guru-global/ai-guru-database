@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "知识蒸馏"
 ---
 # 知识蒸馏 (Knowledge Distillation)
+
+> 中文简称：知识蒸馏
 
 ## 1. 核心思想
 
@@ -279,8 +282,8 @@ def online_mutual_distillation(models, x, y, temperature=3.0):
 
 ## 相关文档
 
-- [[03_深度学习/Neural_Architecture_Search/|NAS]] — 架构搜索
-- [[10_部署推理/Model_Compression/|模型压缩]] — 量化/剪枝
+- [[03_深度学习/09_Advanced_Topics/Neural_Architecture_Search|NAS]] — 架构搜索
+- [[10_部署推理/03_Inference_Optimization/Model_Compression|模型压缩]] — 量化/剪枝
 - [[05_大模型/12_Edge_LLM/|边缘 LLM]] — 小模型部署
 - [[05_大模型/07_Fine_tuning_Techniques/|微调技术]] — LoRA/QLoRA
 - [[05_大模型/09_Reasoning_Models/|推理模型]] — 思维链蒸馏

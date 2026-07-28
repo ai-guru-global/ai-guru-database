@@ -8,9 +8,12 @@ updated: 2026-07-21
 sources:
   - "https://docs.crewai.com/"
   - "https://github.com/crewAIInc/crewAI"
+name_zh: "角色协作智能体框架"
 ---
 
 # CrewAI
+
+> 中文简称：角色协作智能体框架
 
 **CrewAI** 是一个开源的**多 Agent 协作框架**，它把现实工作中的"团队"概念映射到 LLM Agent 编排中：每个 Agent 被赋予明确的角色（role）、目标（goal）和背景故事（backstory），多个 Agent 组成一个 Crew，按照预定义的 Task 流程协作完成复杂任务。它的核心理念是**角色扮演 + 流程驱动**，特别适合需要模拟真实团队分工的业务场景。
 

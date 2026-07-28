@@ -18,6 +18,7 @@ tier: peripheral
 updated: 2026-06-30
 summary: "OpenCode 概述与核心架构 — 专题文档"
 sources: []
+name_zh: "OpenCode 概述与核心架构"
 ---
 title: OpenCode 概述与核心架构
 description: '# OpenCode 概述与核心架构'
@@ -57,6 +58,8 @@ k8s_versions:
 ---
 
 # OpenCode 概述与核心架构
+
+> 中文简称：OpenCode 概述与核心架构
 
 > **文档类型**: 基础概念专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, AI Coding Agent, Client/Server Architecture, Agent Loop, Bubble Tea, Bun, Hono, AI SDK
 

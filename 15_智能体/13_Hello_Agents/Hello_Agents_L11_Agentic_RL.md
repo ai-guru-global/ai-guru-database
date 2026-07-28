@@ -27,8 +27,11 @@ aliases:
   - "Hello Agents L11 Agentic RL"
   - Hello_Agents_L11_Agentic_RL
 
+name_zh: "从 SFT 到 GRPO 的 LLM 训练实战"
 ---
 # Hello-Agents L11：Agentic-RL
+
+> 中文简称：从 SFT 到 GRPO 的 LLM 训练实战
 
 > **一句话理解**: Agentic RL 将 LLM 视为可学习策略，嵌入 Agent 的顺序决策循环，通过强化学习优化多步推理、工具使用与长期任务完成度。
 
@@ -127,7 +130,7 @@ Agentic RL 旨在赋予 LLM Agent 以下能力 ^[extracted]：
 
 - [[07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods]] — GRPO 与新对齐方法
 - [[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide]] — TRL RLHF/DPO 实战
-- [[06_强化学习/RL_Fundamentals]] — 强化学习基础
+- [[06_强化学习/01_RL_Foundations/RL_Foundations|RL_Fundamentals]] — 强化学习基础
 - [[06_强化学习/02_Deep_RL/README]] — 深度强化学习
 - [[15_智能体/Hello_Agents_L04_ReAct]] — ReAct 多步推理范式
 

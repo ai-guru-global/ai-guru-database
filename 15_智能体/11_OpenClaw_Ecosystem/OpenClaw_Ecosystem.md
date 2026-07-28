@@ -12,8 +12,11 @@ aliases:
   - OpenClaw_Ecosystem
 sources: []
 
+name_zh: "OpenClaw 生态全景"
 ---
 # OpenClaw Ecosystem: The AI Agent Revolution (2026)
+
+> 中文简称：OpenClaw 生态全景
 
 ## Overview
 

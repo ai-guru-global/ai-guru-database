@@ -11,8 +11,11 @@ aliases:
   - "AI Testing in nutshell"
 sources: []
 
+name_zh: "AI 测试与评估速成指南"
 ---
 # AI 测试与评估速成指南
+
+> 中文简称：AI 测试与评估速成指南
 
 > 🎯 **目标**：掌握如何测试、评估和验证 AI 系统，确保生产环境的可靠性。
 

@@ -16,9 +16,12 @@ relationships:
   - target: "概念/container-security"
     type: related_to
 sources: []
+name_zh: "供应链安全"
 ---
 
 # Supply Chain Security（供应链安全）
+
+> 中文简称：供应链安全
 
 > **一句话理解**: 供应链安全 = 确保你用的代码、模型、镜像、依赖都是「干净的」，没被动过手脚。
 

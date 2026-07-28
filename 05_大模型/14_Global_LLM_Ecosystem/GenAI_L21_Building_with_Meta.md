@@ -15,7 +15,10 @@ aliases:
   - GenAI_L21_Building_with_Meta
 sources: []
 
+name_zh: "使用Meta家族模型构建应用"
 ---
+> 中文简称：使用Meta家族模型构建应用
+
 ## 学习目标
 
 本课程将涵盖以下内容：

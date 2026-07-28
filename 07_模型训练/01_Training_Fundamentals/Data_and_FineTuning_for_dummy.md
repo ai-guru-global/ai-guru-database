@@ -12,8 +12,11 @@ aliases:
   - Data_and_FineTuning_for_dummy
 sources: []
 
+name_zh: "数据与微调大白话：数据清洗 Pipeline、DoRA、RS-LoRA"
 ---
 # 数据与微调大白话：数据清洗 Pipeline、DoRA、RS-LoRA
+
+> 中文简称：数据与微调大白话：数据清洗 Pipeline、DoRA、RS-LoRA
 
 > **一句话理解**: 训练大模型就像养孩子——先给干净、均衡的“食物”（数据清洗 Pipeline），再用省力的方法教它新技能（DoRA、RS-LoRA），不用把全身神经都重写一遍。
 

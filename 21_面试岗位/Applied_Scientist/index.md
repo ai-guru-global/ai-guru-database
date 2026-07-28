@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "应用科学家"
+name_en: "Applied Scientist"
 ---
 
 # Applied Scientist
+
+> 中文简称：应用科学家 ｜ English Name: Applied Scientist
 
 应用科学家 — 将前沿 AI 技术转化为产品方案，兼顾研究深度（research depth）与业务落地（business impact）。
 

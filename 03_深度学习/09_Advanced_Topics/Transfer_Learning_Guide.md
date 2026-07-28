@@ -4,9 +4,12 @@ tags: [deep-learning, transfer-learning, fine-tuning, pre-training, production]
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "迁移学习完全指南"
 ---
 
 # Transfer Learning Complete Guide
+
+> 中文简称：迁移学习完全指南
 
 ## Overview
 

@@ -13,8 +13,11 @@ aliases:
   - Model_Based_RL_Deep_Dive
 sources: []
 
+name_zh: "基于模型的RL深度解析"
 ---
 # 基于模型的RL深度解析 (Model-Based RL Deep Dive)
+
+> 中文简称：基于模型的RL深度解析
 
 > **一句话理解**: 基于模型的RL就像下棋时在脑中推演——先学会环境的规则(世界模型)，然后在"脑中"模拟各种可能的走法(规划)，选择最优的那一步，而不是盲目试错。
 
@@ -1162,7 +1165,7 @@ flowchart TB
 - [[06_强化学习/02_Deep_RL/Offline_RL_Deep_Dive]] — 离线RL（模型可用于离线数据增强）
 - [[06_强化学习/01_RL_Foundations/RL_Foundations]] — RL基础（MDP/规划）
 - [[06_强化学习/06_Multi_Agent/Multi_Agent_RL]] — 多智能体RL（建模其他智能体）
-- [[06_强化学习/Sim_to_Real/Sim_to_Real]] — Sim-to-Real（模型=simulator）
+- [[06_强化学习/05_Robotics_Embodied_AI/Sim_to_Real_Transfer_Guide|Sim_to_Real]] — Sim-to-Real（模型=simulator）
 - [[03_深度学习/07_World_Models/World_Models_2026]] — 世界模型（JEPA/Sora）
 - [[03_深度学习/01_DL_Fundamentals/DL_Fundamentals]] — 深度学习基础
 - [[概念/Safety/ai-alignment]] — AI对齐（安全规划）

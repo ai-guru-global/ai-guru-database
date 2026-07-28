@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Mustafa Suleyman 简介"
 ---
 # Mustafa Suleyman 简介 (Mustafa Suleyman)
+
+> 中文简称：Mustafa Suleyman 简介
 
 ## 一句话概括
 

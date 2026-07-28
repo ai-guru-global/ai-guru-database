@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-10
 sources: []
+name_zh: "SRE 可靠性"
+name_en: "SRE Reliability"
 ---
 
 # SRE Reliability
+
+> 中文简称：SRE 可靠性 ｜ English Name: SRE Reliability
 
 This page indexes the contents of `13_运维/02_SRE_Reliability`.
 
@@ -200,3 +204,7 @@ This page indexes the contents of `13_运维/02_SRE_Reliability`.
 - [ ] 参与社区讨论和技术分享
 - [ ] 关注顶会最新成果
 - [ ] 将学习成果应用到实际工作中
+
+## 相关文档
+
+- [[13_运维/02_SRE_Reliability/AI_SRE_index|AI SRE 专题索引]]

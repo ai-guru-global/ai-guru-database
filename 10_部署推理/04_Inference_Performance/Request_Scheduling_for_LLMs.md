@@ -12,8 +12,11 @@ aliases:
   - Request_Scheduling_for_LLMs
 sources: []
 
+name_zh: "LLM 推理请求调度"
 ---
 # LLM 推理请求调度
+
+> 中文简称：LLM 推理请求调度
 
 > 同样的 GPU 硬件，不同的调度策略能让吞吐差几倍，也能让 P99 延迟从 500ms 变 2s。
 

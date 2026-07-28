@@ -12,8 +12,11 @@ aliases:
   - RAG_Fundamentals
 sources: []
 
+name_zh: "RAG 基础"
 ---
 # RAG 基础 (RAG Fundamentals)
+
+> 中文简称：RAG 基础
 
 > **一句话理解**: RAG = 检索 + 生成——让 LLM 从外部知识库中"查资料"后回答问题，不再只靠训练时记住的知识。
 

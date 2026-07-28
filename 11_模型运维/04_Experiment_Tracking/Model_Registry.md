@@ -12,8 +12,11 @@ aliases:
   - Model_Registry
 sources: []
 
+name_zh: "模型注册中心完全指南"
 ---
 # 模型注册中心完全指南 (Model Registry Complete Guide)
+
+> 中文简称：模型注册中心完全指南
 
 > 模型注册中心是 MLOps 的核心基础设施——从模型版本管理到生命周期治理，系统解析模型注册中心的架构设计和工程实践。
 

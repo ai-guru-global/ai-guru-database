@@ -21,9 +21,12 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: supporting
+name_zh: "torchrun 分布式训练启动器"
 ---
 
 # torchrun 分布式训练启动器
+
+> 中文简称：torchrun 分布式训练启动器
 
 > **一句话理解**: torchrun 是 PyTorch 分布式训练的"指挥官"——一行命令启动多 GPU / 多节点训练，自动处理进程编排和故障恢复。
 

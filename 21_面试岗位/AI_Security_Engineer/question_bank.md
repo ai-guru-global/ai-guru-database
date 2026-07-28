@@ -7,9 +7,12 @@ created: 2026-07-23
 updated: 2026-07-23
 tier: supporting
 sources: []
+name_zh: "AI Security Engineer 题库"
 ---
 
 # AI Security Engineer 题库
+
+> 中文简称：AI Security Engineer 题库
 
 > **难度标注**: ⭐ Basic | ⭐⭐ Intermediate | ⭐⭐⭐ Advanced
 > **频率标注**: 🔴 高频 | 🟡 中频 | 🟢 低频
@@ -153,4 +156,4 @@ sources: []
 - [[12_架构基建/11_AI_Gateway/index|AI Gateway]]
 - [[21_面试岗位/AI_Safety_Engineer/index|AI Safety Engineer]]
 - [[21_面试岗位/Interview_Guide/System_Design_for_AI|AI 系统设计面试]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]

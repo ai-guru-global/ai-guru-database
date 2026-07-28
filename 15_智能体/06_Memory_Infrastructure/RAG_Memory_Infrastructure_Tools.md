@@ -12,8 +12,11 @@ aliases:
   - RAG_Memory_Infrastructure_Tools
 sources: []
 
+name_zh: "RAG、记忆与 Agent 基础设施"
 ---
 # RAG、记忆与 Agent 基础设施
+
+> 中文简称：RAG、记忆与 Agent 基础设施
 
 > **一句话理解**: Agent 的"智商"不仅取决于 LLM，还取决于 RAG 检索质量、记忆系统设计、知识管理架构——LlamaIndex 是 RAG 的核心框架、MemGPT 开创了持久记忆、Dify 让一切可视化。
 

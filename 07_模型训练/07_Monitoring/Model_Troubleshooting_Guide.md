@@ -11,12 +11,15 @@ aliases:
   - Model_Troubleshooting_Guide
 sources: []
 
+name_zh: "模型问题排查手册 — 预训练/微调/推理全链路故障诊断"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # 模型问题排查手册 — 预训练/微调/推理全链路故障诊断
+
+> 中文简称：模型问题排查手册 — 预训练/微调/推理全链路故障诊断
 
 > **一句话理解**: 模型排查就像看病——先望闻问切（看 loss 曲线、梯度范数、日志），再对症下药（调 LR、换数据、改架构），最后复查验收（benchmark 评测）。
 

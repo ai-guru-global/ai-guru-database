@@ -14,8 +14,11 @@ aliases:
   - "perplexity overview"
   - perplexity_overview
 
+name_zh: "Perplexity AI 概览"
 ---
 # Perplexity AI 概览
+
+> 中文简称：Perplexity AI 概览
 
 > **一句话理解**: 结合 LLM 与实时网络搜索的 AI 搜索引擎，提供带引用来源的精准回答。
 
@@ -162,9 +165,9 @@ print("Related:", result.get("related_questions", []))
 - [[05_大模型/README|NLP & LLMs]]
 - [[概念/perplexity|Perplexity 概念卡片]]
 - [[概念/rag|RAG 检索增强生成]]
-- [[概念/ai-search|AI 搜索]]
+- [[概念/RAG/hybrid-search|AI 搜索]]
 - [[05_大模型/13_LLM_Products/chatgpt_overview|ChatGPT 概览]]
-- [[05_大模型/RAG_Frameworks/RAG_Frameworks|RAG 框架]]
+- [[14_RAG系统/06_RAG_Frameworks/index|RAG 框架]]
 
 ## 总结
 

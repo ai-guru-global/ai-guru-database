@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "笔记"
+name_en: "notes"
 ---
 
 # Notes
+
+> 中文简称：笔记 ｜ English Name: notes
 
 This page indexes the contents of `治理/notes`.
 

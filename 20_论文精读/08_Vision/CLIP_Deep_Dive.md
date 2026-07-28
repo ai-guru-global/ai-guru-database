@@ -12,8 +12,11 @@ aliases:
   - CLIP_Deep_Dive
 sources: []
 
+name_zh: "CLIP 深度解读"
 ---
 # CLIP 深度解读 (Learning Transferable Visual Models From Natural Language Supervision)
+
+> 中文简称：CLIP 深度解读
 
 > **一句话理解**: CLIP 让 AI 同时「看懂」图片和「读懂」文字，并把它们放在同一个语义空间里——一张猫的照片和"一只猫"这句话在这个空间里很近，这就是多模态 AI 的基础。
 

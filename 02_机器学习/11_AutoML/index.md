@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "自动化机器学习"
+name_en: "AutoML"
 ---
 
 # AutoML
+
+> 中文简称：自动化机器学习 ｜ English Name: AutoML
 
 自动机器学习（AutoML）— 自动化超参搜索（HPO）、神经架构搜索（NAS）与模型选择，降低 ML 应用门槛。
 

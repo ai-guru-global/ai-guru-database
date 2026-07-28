@@ -26,8 +26,11 @@ aliases:
   - "Hello Agents L15 Cyber Town"
   - Hello_Agents_L15_Cyber_Town
 
+name_zh: "Hello-Agents L15：构建赛博小镇"
 ---
 # Hello-Agents L15：构建赛博小镇
+
+> 中文简称：Hello-Agents L15：构建赛博小镇
 
 > **一句话理解**: 本章将 Agent 技术与 **Godot 游戏引擎**结合，构建一个 2D 像素风格的 AI 小镇，其中 NPC 具备自然语言对话、短期/长期记忆、好感度系统与情感分析能力。
 

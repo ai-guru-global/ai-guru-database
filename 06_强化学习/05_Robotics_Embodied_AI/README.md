@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "具身智能与机器人"
 ---
 # 具身智能与机器人 (Robotics & Embodied AI)
+
+> 中文简称：具身智能与机器人
 
 ## 文档导航
 

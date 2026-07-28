@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "部署基础"
+name_en: "Deployment Fundamentals"
 ---
 
 # Deployment Fundamentals
+
+> 中文简称：部署基础 ｜ English Name: Deployment Fundamentals
 
 ## 文件导航
 

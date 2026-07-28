@@ -19,9 +19,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "数据编程与弱监督学习平台"
 ---
 
 # Snorkel AI
+
+> 中文简称：数据编程与弱监督学习平台
 
 [Snorkel AI](https://github.com/snorkel-team/snorkel) 源自斯坦福大学的**数据编程（Data Programming）和弱监督学习（Weak Supervision）**平台。其核心思想是：**用编程代替标注**——开发者编写"标注函数"（Labeling Functions）来描述数据中的模式，Snorkel 通过概率模型自动聚合多个弱标注源，生成高质量的训练标签，减少 90%+ 的人工标注需求。
 

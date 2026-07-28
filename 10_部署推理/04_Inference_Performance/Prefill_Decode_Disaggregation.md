@@ -11,8 +11,11 @@ aliases:
   - Prefill_Decode_Disaggregation
 sources: []
 
+name_zh: "Prefill-Decode 分离"
 ---
 # Prefill-Decode 分离（Disaggregated Serving）
+
+> 中文简称：Prefill-Decode 分离
 
 > 把 prefill 和 decode 拆到不同的 GPU/实例上，让两个阶段各自用最合适的资源配置。
 

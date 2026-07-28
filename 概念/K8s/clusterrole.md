@@ -21,9 +21,12 @@ provenance:
   base_confidence: 0.90
 lifecycle: reviewed
 sources: []
+name_zh: "K8s 集群角色"
 ---
 
 # ClusterRole
+
+> 中文简称：K8s 集群角色
 
 > **一句话理解**: ClusterRole 是 Kubernetes 的「全局通行证」——它定义了某个身份在整个集群范围内能对哪些资源执行什么操作。
 

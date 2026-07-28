@@ -13,9 +13,13 @@ sources:
   - "https://openreview.net/pdf?id=BZ5a1r-kVsf"
   - "https://www.nature.com/articles/nature14539"
   - "https://ai.meta.com/llama/"
+name_zh: "Yann LeCun 人物索引"
+name_en: "Yann LeCun"
 ---
 
 # Yann LeCun 人物索引
+
+> 中文简称：Yann LeCun 人物索引 ｜ English Name: Yann LeCun
 
 > **一句话概括**: Meta 首席 AI 科学家、NYU Silver 教授、2018 年图灵奖得主——卷积神经网络 (CNN) 的奠基人之一（LeNet），自监督学习和世界模型 (World Models) 的坚定倡导者，AI"末日论" (doomerism) 最直言不讳的反对者。
 
@@ -186,6 +190,7 @@ LeCun 的自主 AI 系统包含六个可微模块：配置器、感知、世界�
 - [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
 - [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
 - [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[19_业界观点/Yann_LeCun/Yann_LeCun_2026_Update\|2026 动态更新]]
 - [[19_业界观点/index\|业界观点首页]]
 
 ---

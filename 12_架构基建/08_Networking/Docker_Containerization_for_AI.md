@@ -4,9 +4,12 @@ tags: [infrastructure, docker, containers, kubernetes, gpu, production]
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "AI 容器化实践"
 ---
 
 # Docker & Containerization for AI
+
+> 中文简称：AI 容器化实践
 
 ## Why Containers for AI?
 

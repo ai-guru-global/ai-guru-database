@@ -42,9 +42,12 @@ tier: core
 created: 2026-07-23
 updated: 2026-07-23
 sources: []
+name_zh: "阶跃星辰 StepFun 模型系列"
 ---
 
 # 阶跃星辰 StepFun 模型系列
+
+> 中文简称：阶跃星辰 StepFun 模型系列
 
 > **一句话理解**: 中国大模型六虎中最"全栈"的选手——文本 + 语音 + 视频 + 图像 + GUI Agent 五大模态全部开源,Step-3 旗舰 321B MoE 创新 MFA+AFD,Step-Audio 2 端到端语音对话超 GPT-4o Audio,gelab-zero 拿下开源 GUI Agent 第一。
 
@@ -460,11 +463,11 @@ MFA:           Q = Q1·Q2  (低秩分解)
 ## 十四、相关概念
 
 - [[概念/llm-architectures|LLM 架构]]
-- [[概念/moe|MoE 混合专家]]
+- [[概念/General/mixture-of-experts|MoE 混合专家]]
 - [[概念/multimodal-llm|多模态 LLM]]
 - [[概念/speech-audio-ai|语音 AI]]
 - [[概念/video-generation|视频生成]]
-- [[概念/agent-architectures|Agent 架构]]
+- [[概念/Agent/agent-architectures|Agent 架构]]
 - [[概念/llm-quantization|模型量化]]
 - [[概念/vllm|vLLM 推理]]
 

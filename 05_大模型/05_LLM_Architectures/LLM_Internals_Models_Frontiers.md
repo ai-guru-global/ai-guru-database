@@ -10,8 +10,11 @@ aliases:
   - LLM_Internals_Models_Frontiers
 sources: []
 
+name_zh: "大模型家族与前沿架构：从 BERT 到推理模型"
 ---
 # 大模型家族与前沿架构：从 BERT 到推理模型
+
+> 中文简称：大模型家族与前沿架构：从 BERT 到推理模型
 
 > **核心命题**：编码器、解码器、编码器-解码器三条路线如何演化？MoE、SSM、推理时计算扩展如何重塑大模型格局？
 

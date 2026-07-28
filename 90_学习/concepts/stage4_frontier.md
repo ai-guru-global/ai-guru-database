@@ -22,8 +22,11 @@ sources:
   - "https://arxiv.org/abs/1706.03762"
   - "https://arxiv.org/abs/2005.14165"
 
+name_zh: "Stage 4: 前沿探索"
 ---
 # Stage 4: 前沿探索
+
+> 中文简称：Stage 4: 前沿探索
 
 > **"2026 年的 AI 边界——这里的问题还没有标准答案，这里是未来的起点。"**
 >

@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "神经架构搜索"
 ---
 # 神经架构搜索 (Neural Architecture Search)
+
+> 中文简称：神经架构搜索
 
 ## 内容索引
 
@@ -28,7 +31,7 @@ sources: []
 ## 相关文档
 
 - [[03_深度学习/README|深度学习总览]]
-- [[03_深度学习/Knowledge_Distillation/|知识蒸馏]]
+- [[03_深度学习/09_Advanced_Topics/Knowledge_Distillation|知识蒸馏]]
 - [[05_大模型/05_LLM_Architectures/|LLM 架构]]
 
 ## 进阶知识拓展

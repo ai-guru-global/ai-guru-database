@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Bill Gates 简介"
 ---
 # Bill Gates 简介 (Bill Gates)
+
+> 中文简称：Bill Gates 简介
 
 ## 一句话概括
 

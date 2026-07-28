@@ -4,19 +4,22 @@ category: "10-deployment-inference"
 tags: ["quantization", "GPTQ", "AWQ", "SmoothQuant", "GGUF", "NF4", "FP8", "deployment", "inference", "llm"]
 summary: '> **一句话理解**: 量化是把 LLM 的"高精度浮点体重"压缩成"低精度整数身材"——就像把 4K 视频压成 1080p，肉眼几乎看不出差别，但文件小了 4 倍，播放速度快了 3 倍。'
 created: "2026-06-04"
-updated: "2026-06-04"
+updated: "2026-07-25"
 tier: supporting
 aliases:
   - "Quantization Techniques 2026"
   - Quantization_Techniques_2026
 sources: []
 
+name_zh: "LLM 量化技术深度解析 2026"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # LLM 量化技术深度解析 2026
+
+> 中文简称：LLM 量化技术深度解析 2026
 
 > **一句话理解**: [[概念/quantization|量化]]是把 LLM 的"高精度浮点体重"压缩成"低精度整数身材"——就像把 4K 视频压成 1080p，肉眼几乎看不出差别，但文件小了 4 倍，播放速度快了 3 倍。
 
@@ -31,7 +34,8 @@ sources: []
 5. [量化方法对比](#5-量化方法对比)
 6. [实战指南](#6-实战指南)
 7. [前沿进展](#7-前沿进展)
-8. [参考资料与交叉引用](#8-参考资料与交叉引用)
+8. [源码级实现解析（基于 llm-compressor v0.12.0 / bitsandbytes v0.50.0）](#8-源码级实现解析基于-llm-compressor-v0120--bitsandbytes-v0500)
+9. [参考资料与交叉引用](#9-参考资料与交叉引用)
 
 ---
 
@@ -1894,7 +1898,42 @@ graph TB
 
 ---
 
-## 8. 参考资料与交叉引用
+## 8. 源码级实现解析（基于 llm-compressor v0.12.0 / bitsandbytes v0.50.0）
+
+> 本节基于本仓库归档源码 `code/llm-frameworks/llm-compressor-v0.12.0/`（PyPI sdist）与 `code/llm-frameworks/bitsandbytes-v0.50.0/`（PyPI wheel 解包，已剔除二进制 `.so`，保留全部 Python 实现），所有行号可对照验证。
+
+### 8.1 llm-compressor：oneshot + Modifier + Pipeline 三层架构
+
+vLLM 官方的 PTQ 工具链采用"配方（Recipe）驱动"设计，将量化算法抽象为可组合的 Modifier：
+
+| 层次 | 关键类/入口 | 证据文件（`src/llmcompressor/`） | 说明 |
+|------|------|------|------|
+| 统一入口 | `Oneshot` / `oneshot()` | `entrypoints/oneshot.py` L40 / L261 | 一次性 PTQ 入口，接受 model + recipe + 校准数据 |
+| 配方调度 | `Recipe(BaseModel)` | `recipe/recipe.py` L27 | 用 YAML/Python 声明量化流程，多 Modifier 可堆叠 |
+| 算法单元 | `Modifier` | `modifiers/modifier.py` L13 | 所有量化/剪枝算法的基类，带生命周期 hook |
+| GPTQ | `GPTQModifier(Modifier, QuantizationMixin)` | `modifiers/gptq/base.py` L46 | L331 调用 `quantize_weight` 逐层补偿；L290 `compress_modules` |
+| AWQ | `AWQModifier(Modifier)` | `modifiers/transform/awq/base.py` L55 | `duo_scaling`（L148，默认开）对 balance_layers 搜索最优平滑尺度 |
+| SmoothQuant | `SmoothQuantModifier(Modifier)` | `modifiers/transform/smoothquant/base.py` L61 | 激活峰值迁移到权重，平衡量化难度 |
+| 校准管道 | `SequentialPipeline` / `CalibrationPipeline` | `pipelines/sequential/pipeline.py` L52 / `pipelines/registry.py` L18 | 逐层前向捕获激活，降低校准显存 |
+
+工程亮点：GPTQ/AWQ/SmoothQuant 共享同一套 Modifier 生命周期与 Sequential 校准管道，新增算法只需实现 `Modifier` 接口即可接入（对应本文第 2 节 PTQ 各方法）。
+
+### 8.2 bitsandbytes：NF4 与 blockwise 量化的参考实现
+
+QLoRA 赖赖的底层量化在 `bitsandbytes/functional.py` 与 `nn/modules.py`：
+
+- **4-bit 量化核心**：`functional.py` L884 `quantize_4bit` / L992 `dequantize_4bit`，`QuantState`（L420）封装量化常量、blocksize、双重量化元数据。
+- **blockwise 量化**：`functional.py` L613 `quantize_blockwise` ——按块（默认 64/256）独立缩放，对应本文第 1 节“分组/分块量化”原理。
+- **NF4 数据类型**：`nn/modules.py` L676 `LinearNF4`（继承 L504 `Linear4bit`）与 L213 `Params4bit`，`LinearFP4`（L640）为 FP4 变体。
+- **量化 matmul 自动微分**：`autograd/_functions.py` L300 `MatMul4Bit` / L101 `MatMul8bitLt`，L407 `matmul_4bit` 封装前向，反向只回传到 LoRA 旁支。
+- **多后端抽象**：`backends/`（cuda/cpu/mps/xpu/hpu/triton）将量化算子与硬件解耦，对应本文第 5 节“硬件协同”讨论。
+- **8-bit 优化器**：`optim/`（adamw/lion/ademamix 等）提供状态量化，训练时进一步省显存。
+
+> 源码阅读入口建议：（PTQ）`entrypoints/oneshot.py` → `modifiers/gptq/base.py` → `pipelines/sequential/pipeline.py`；（QLoRA 量化）`bitsandbytes/functional.py` 的 `quantize_4bit` → `nn/modules.py` 的 `Linear4bit` → `autograd/_functions.py` 的 `MatMul4Bit`。
+
+---
+
+## 9. 参考资料与交叉引用
 
 ### 8.1 量化精度影响分析
 

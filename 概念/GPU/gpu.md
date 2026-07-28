@@ -17,9 +17,12 @@ relationships:
   - target: "概念/gpu-oom"
     type: related_to
 sources: []
+name_zh: "图形处理器"
 ---
 
 # GPU
+
+> 中文简称：图形处理器
 
 > **一句话理解**: GPU 是 AI 算力的「发动机」，擅长同时做大量简单计算，训练大模型和跑推理都离不开它。
 

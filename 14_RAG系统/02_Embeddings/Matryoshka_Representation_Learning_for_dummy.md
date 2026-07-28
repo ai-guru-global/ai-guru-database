@@ -12,8 +12,11 @@ aliases:
   - Matryoshka_Representation_Learning_for_dummy
 sources: []
 
+name_zh: "Matryoshka Representation Learning — 小白版"
 ---
 # Matryoshka Representation Learning — 小白版
+
+> 中文简称：Matryoshka Representation Learning — 小白版
 
 > **一句话秒懂**: MRL 就像一套俄罗斯套娃——大娃娃里面套着小娃娃，而且每个娃娃都是完整的。对应到 AI，一个 768 维的向量，前 64 维、前 256 维也都能独立用来找相似内容，想快就快、想准就准。
 

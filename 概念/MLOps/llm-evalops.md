@@ -31,9 +31,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "LLM EvalOps / LLM 评测工程"
 ---
 
 # LLM EvalOps / LLM 评测工程
+
+> 中文简称：LLM EvalOps / LLM 评测工程
 
 > **一句话理解**:LLM EvalOps 是 LLM 时代的"软件测试 + 性能监控"——离线基准(HELM / MMLU / MT-Bench / BigBench)+ 在线评测(影子部署 / 黄金集)+ LLM-as-Judge(自动评分)+ A/B 测试 + 人工评估。是 LLM 上线"必走流程"。
 

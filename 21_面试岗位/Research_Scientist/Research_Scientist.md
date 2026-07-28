@@ -11,9 +11,12 @@ aliases:
   - "Research Scientist 面试指南"
   - "Research_Scientist Interview Guide"
 sources: []
+name_zh: "Research Scientist 面试指南"
 ---
 
 # Research Scientist 面试指南
+
+> 中文简称：Research Scientist 面试指南
 
 > **一句话理解**: Research Scientist 是 AI 领域的知识开拓者——通过严谨的科学方法，发现新的原理、设计新的算法、推动领域前沿，在 NeurIPS/ICML/ICLR 等顶级会议上发表有影响力的研究成果。
 
@@ -627,7 +630,7 @@ class SAM(Optimizer):
 ## Related
 
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 - [[21_面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist 面试指南]]
 - [[21_面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer 面试指南]]
 - [[21_面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist 面试指南]]

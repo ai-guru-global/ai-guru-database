@@ -12,8 +12,11 @@ aliases:
   - short_courses
 sources: []
 
+name_zh: "DeepLearning.AI 短课程 核心知识库提炼"
 ---
 # DeepLearning.AI 短课程 (Short Courses) 核心知识库提炼
+
+> 中文简称：DeepLearning.AI 短课程 核心知识库提炼
 
 > **一句话理解**: 对于内部断网无法直接观看或访问 DeepLearning.AI 平台视频环境的 Agent 和开发者，本文档直接提取了那些热门短课程（由 LangChain、LlamaIndex、OpenAI 创始人主讲）中的**核心架构理论、结论代码以及评估 Prompt 模板**，作为内网开发的即用型查阅手册。
 

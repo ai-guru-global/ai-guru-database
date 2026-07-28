@@ -30,9 +30,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "长上下文 LLM：训练与推理"
 ---
 
 # 长上下文 LLM：训练与推理
+
+> 中文简称：长上下文 LLM：训练与推理
 
 ## 一句话总结
 

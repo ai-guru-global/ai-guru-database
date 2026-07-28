@@ -13,8 +13,11 @@ aliases:
   - ModelScope_Model_Catalog
 sources: []
 
+name_zh: "ModelScope 模型目录全景"
 ---
 # ModelScope 模型目录全景 (ModelScope Model Catalog)
+
+> 中文简称：ModelScope 模型目录全景
 
 > **一句话理解**: ModelScope 魔搭社区上 15 家中国大模型厂商的**全量官方模型目录**——从 Qwen 的 437 个模型舰队到 DeepSeek 的 88 个开源模型，一张图看清各家在国产模型托管平台上的真实家底。
 

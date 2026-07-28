@@ -14,6 +14,7 @@ aliases:
 updated: 2026-06-30
 summary: "模型与 Provider 生态 — 专题文档"
 sources: []
+name_zh: "模型与 Provider 生态"
 ---
 title: 模型与 Provider 生态
 description: '**文档类型**: 功能详解 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Models, Providers,
@@ -52,6 +53,8 @@ k8s_versions:
 - '1.32'
 ---
 # 模型与 Provider 生态
+
+> 中文简称：模型与 Provider 生态
 
 > **文档类型**: 功能详解 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Models, Providers, Model API, Pricing, Variants, Multimodal, Embeddings
 

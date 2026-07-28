@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Ilya Sutskever 简介"
 ---
 # Ilya Sutskever 简介 (Ilya Sutskever)
+
+> 中文简称：Ilya Sutskever 简介
 
 ## 一句话概括
 

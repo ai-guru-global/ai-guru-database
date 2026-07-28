@@ -20,9 +20,12 @@ base_confidence: 0.85
 lifecycle: reviewed
 tier: supporting
 updated: 2026-07-21
+name_zh: "RAGFlow 开源 RAG 引擎"
 ---
 
 # RAGFlow 开源 RAG 引擎
+
+> 中文简称：RAGFlow 开源 RAG 引擎
 
 > **一句话理解**: RAGFlow 是"RAG 专精引擎"——以深度文档理解为核心竞争力，解析复杂 PDF 表格/图片/公式的能力业界领先。
 

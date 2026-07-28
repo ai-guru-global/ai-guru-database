@@ -12,8 +12,11 @@ aliases:
   - KV_Cache_Deep_Dive
 sources: []
 
+name_zh: "KV Cache 深度研究：从原理到工程实践"
 ---
 # KV Cache 深度研究：从原理到工程实践
+
+> 中文简称：KV Cache 深度研究：从原理到工程实践
 
 > **一句话秒懂**：KV Cache 是自回归 LLM 推理的“记忆体”——把已经算过的 Key/Value 存下来，让模型每次生成只聚焦新 token，避免重复劳动。
 

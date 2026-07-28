@@ -11,8 +11,11 @@ aliases:
   - Harness_Implementation_Guide
 sources: []
 
+name_zh: "Agent Harness 实现指南"
 ---
 # Agent Harness 实现指南
+
+> 中文简称：Agent Harness 实现指南
 
 > 目标：从零开始，用 Python 搭建一个生产级 Agent Harness。包含文件系统、Docker 沙箱、工具执行、验证回路、上下文压缩。
 

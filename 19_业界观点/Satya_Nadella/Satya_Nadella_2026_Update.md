@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Satya Nadella 2026 Update", "萨提亚·纳德拉 2026 动态"]
 sources: []
+name_zh: "萨提亚·纳德拉 2026 动态"
 ---
 
 # 萨提亚·纳德拉 2026 动态 (Satya Nadella 2026 Update)
+
+> 中文简称：萨提亚·纳德拉 2026 动态
 
 ## 一句话概括
 
@@ -398,7 +401,7 @@ Nadella 2017 年的著作在 2026 年仍是领导力经典：
 ### 技术与应用
 
 - [[05_大模型/README]] -- GPT/Copilot 技术
-- [[应用/AI_Enterprise]] -- 企业 AI
+- [[18_行业应用/01_Industry_Overview/index|AI_Enterprise]] -- 企业 AI
 - [[16_编程/README]] -- GitHub Copilot
 - [[00_入门/AI_Future_Trends]] -- AI 平台化
 

@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "AI安全 2026"
 ---
 # AI 安全 2026 (AI Security)
+
+> 中文简称：AI安全 2026
 
 ## 文档导航
 

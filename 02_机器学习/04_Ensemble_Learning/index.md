@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "集成学习"
+name_en: "Ensemble Learning"
 ---
 
 # Ensemble Learning
+
+> 中文简称：集成学习 ｜ English Name: Ensemble Learning
 
 集成学习（Ensemble Learning）— Bagging、Boosting、Stacking 与随机森林（Random Forest）、XGBoost、LightGBM 实践。
 

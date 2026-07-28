@@ -14,9 +14,12 @@ relationships:
   - target: "概念/infiniBand"
     type: related_to
 sources: []
+name_zh: "GPU 直连技术"
 ---
 
 # GPU Direct
+
+> 中文简称：GPU 直连技术
 
 > **一句话理解**: GPU Direct 让 GPU 和网卡/硬盘「直接对话」，数据不经过 CPU 内存，分布式训练通信更快、CPU 开销更低。
 

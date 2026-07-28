@@ -12,8 +12,11 @@ aliases:
   - GAN_Deep_Dive
 sources: []
 
+name_zh: "GAN 深度解读"
 ---
 # GAN 深度解读 (Generative Adversarial Networks)
+
+> 中文简称：GAN 深度解读
 
 > **一句话理解**: GAN 让两个 AI 互相博弈——「造假者」努力生成逼真图像骗过「鉴定师」，「鉴定师」努力提高鉴别能力抓出假货，两者在对抗中共同进化，最终造假者能创造出以假乱真的图像。
 

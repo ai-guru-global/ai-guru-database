@@ -11,8 +11,11 @@ aliases:
   - GPU_Cluster_Operations_2026
 sources: []
 
+name_zh: "GPU 集群运维 2026"
 ---
 # GPU 集群运维 2026
+
+> 中文简称：GPU 集群运维 2026
 
 > **一句话理解**: 面向千卡/万卡级 GPU 集群的全栈运维指南，覆盖通信网络、资源共享、调度编排、故障自愈、存储、监控六大核心领域。
 
@@ -873,7 +876,7 @@ class TrainingProfiler:
 - [[GPU_OOM_Troubleshooting_Guide]] — GPU OOM 排障
 - [[GPU_Troubleshooting_Cheat_Sheet]] — GPU 故障速查
 - [[K8s_AI_Troubleshooting_Cheat_Sheet]] — K8s AI 排障
-- [[HAMi_Troubleshooting_Cuide]] — HAMi GPU 共享排障
+- [[13_运维/02_SRE_Reliability/HAMi_Troubleshooting_Guide|HAMi_Troubleshooting_Cuide]] — HAMi GPU 共享排障
 - [[Cost_Optimization_AI_Deep_Dive]] — AI 成本优化
 - [[Model_Serving_SLA_Management]] — 模型服务 SLA 管理
 - [[Chaos_Engineering_AI]] — AI 系统混沌工程

@@ -7,9 +7,12 @@ updated: 2026-06-24
 tier: core
 summary: "从 SFT 到 RLHF/DPO/GRPO 的完整后训练技术栈、PEFT 选型、数据准备规范、显存优化技巧与对齐训练最佳实践。"
 sources: []
+name_zh: "模型微调技术速查表"
 ---
 
 # 模型微调技术速查表
+
+> 中文简称：模型微调技术速查表
 
 > **核心洞察**：2026 年模型适配的三大主流路径——**SFT（教说话）→ RLHF/DPO/GRPO（教讨喜）→ PEFT（省显存）**。LoRA/QLoRA 已成为工业标配，让 70B 模型在单卡 24GB 上可微调。
 > 详见 [[Fine_tuning_Techniques]] · [[07_模型训练]] · [[Alignment/TRL_RLHF_DPO_Guide|TRL_RLHF_DPO_Guide]] · [[Alignment/GRPO_and_New_Alignment_Methods|GRPO_Guide]]

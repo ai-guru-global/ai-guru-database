@@ -15,8 +15,11 @@ aliases:
   - "NVIDIA AMD GPU Deep Dive"
   - NVIDIA_AMD_GPU_Deep_Dive
 
+name_zh: "NVIDIA & AMD 数据中心 GPU 深度解析 2026"
 ---
 # NVIDIA & AMD 数据中心 GPU 深度解析 2026
+
+> 中文简称：NVIDIA & AMD 数据中心 GPU 深度解析 2026
 
 > **一句话理解**: NVIDIA H200/B200 主导训练和推理市场，AMD MI300X/MI350 以显存优势切入超大模型推理和性价比训练场景。
 

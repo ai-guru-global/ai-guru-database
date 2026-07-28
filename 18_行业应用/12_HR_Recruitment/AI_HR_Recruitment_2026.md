@@ -12,8 +12,11 @@ aliases:
   - AI_HR_Recruitment
 sources: []
 
+name_zh: "AI 人才招聘应用 2026"
 ---
 # AI 人才招聘应用 2026 (AI for HR & Recruitment 2026)
+
+> 中文简称：AI 人才招聘应用 2026
 
 > AI 正在重塑人力资源行业——从智能招聘到员工体验，从人才分析到组织发展，系统解析 AI 在 HR 领域的应用全景。
 

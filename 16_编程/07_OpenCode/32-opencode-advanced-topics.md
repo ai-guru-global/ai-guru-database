@@ -14,6 +14,7 @@ aliases:
 updated: 2026-06-30
 summary: "进阶话题与生产最佳实践 — 专题文档"
 sources: []
+name_zh: "进阶话题与生产最佳实践"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -54,6 +55,8 @@ k8s_versions:
 ---
 
 # 进阶话题与生产最佳实践
+
+> 中文简称：进阶话题与生产最佳实践
 
 > **文档类型**: 进阶实践专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, Auto Compact, Session Management, Security, Cost Control, Non-interactive, Team Collaboration, Configuration
 

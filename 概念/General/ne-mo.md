@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: core
+name_zh: "NVIDIA NeMo 训练与推理框架"
 ---
 
 # NeMo (NVIDIA NeMo)
+
+> 中文简称：NVIDIA NeMo 训练与推理框架
 
 [NVIDIA NeMo](https://github.com/NVIDIA/NeMo) 是 NVIDIA 开源的端到端 AI 框架，覆盖大语言模型（LLM）、多模态模型（Vision-Language）、自动语音识别（ASR）和文本到语音（TTS）的全生命周期——从数据预处理、预训练、微调到推理部署。NeMo 深度集成 NVIDIA GPU 生态（CUDA、cuDNN、TensorRT、NCCL），是 NVIDIA DGX/HGX 集群上训练大模型的首选框架。
 

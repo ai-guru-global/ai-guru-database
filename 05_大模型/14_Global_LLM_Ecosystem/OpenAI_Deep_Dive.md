@@ -12,8 +12,11 @@ aliases:
   - OpenAI_Deep_Dive
 sources: []
 
+name_zh: "OpenAI 技术深度解析 — 从 GPT-3 到 o3 的完整演进之路"
 ---
 # OpenAI 技术深度解析 — 从 GPT-3 到 o3 的完整演进之路
+
+> 中文简称：OpenAI 技术深度解析 — 从 GPT-3 到 o3 的完整演进之路
 
 ## 一句话理解
 

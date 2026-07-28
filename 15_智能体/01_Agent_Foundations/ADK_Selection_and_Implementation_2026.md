@@ -12,8 +12,11 @@ aliases:
   - ADK_Selection_and_Implementation_2026
 sources: []
 
+name_zh: "ADK 选型与实施"
 ---
 # Agent Development Kits (ADK) 2026: Building with MCP, A2A, and UCP
+
+> 中文简称：ADK 选型与实施
 
 > **一句话理解**: 如果说协议（Protocol）是蓝图，那么 ADK（Agent Development Kit）就是施工工具箱——它让开发者无需从零编写网络报文，即可快速构建符合标准的智能体。
 

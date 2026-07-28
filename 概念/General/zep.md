@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.82
 lifecycle: reviewed
 tier: supporting
+name_zh: "LLM 长期记忆平台"
 ---
 
 # Zep
+
+> 中文简称：LLM 长期记忆平台
 
 [Zep](https://github.com/getzep/zep) 是一个开源的 **LLM 长期记忆平台**，专为 AI 应用（Agent、Chatbot、RAG）提供跨会话的持久记忆能力。与传统基于向量检索的记忆方案不同，Zep 自动从对话历史中**提取事实、实体和关系**，构建**用户知识图谱**，让 AI 能够基于丰富的结构化上下文（而非简单的历史片段）来响应用户。
 

@@ -11,8 +11,11 @@ aliases:
   - Agent_Harness_Architecture_2026
 sources: []
 
+name_zh: "Agent Harness 技术架构 2026"
 ---
 # Agent Harness 技术架构 2026
+
+> 中文简称：Agent Harness 技术架构 2026
 
 > **一句话理解**: Agent Harness 是围绕模型智能构建的完整工程系统，本文从生产部署视角详解 Harness 技术架构、配置参数、性能指标、兼容性矩阵，并为六种角色提供差异化使用指南。
 >

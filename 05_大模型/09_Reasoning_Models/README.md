@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: peripheral
 sources: []
 
+name_zh: "推理模型目录"
 ---
 # 推理模型
+
+> 中文简称：推理模型目录
 
 本目录包含 推理模型 相关的深度技术内容。
 
@@ -173,7 +176,7 @@ sources: []
 
 - [[05_大模型/08_Prompt_Engineering/index|Prompt Engineering]]
 - [[05_大模型/index|大模型首页]]
-- [[概念/reasoning|推理概念]]
+- [[概念/LLM/reasoning-models|推理概念]]
 
 ## 附录：推理能力评估
 

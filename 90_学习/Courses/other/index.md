@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "其他课程"
+name_en: "other"
 ---
 
 # Other Courses
+
+> 中文简称：其他课程 ｜ English Name: other
 
 其他精选课程（Other Courses）— fast.ai、Stanford CS231n、StatQuest 等高质量学习资源。
 

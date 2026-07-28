@@ -12,8 +12,11 @@ aliases:
   - Synthetic_Data_Training_2026
 sources: []
 
+name_zh: "合成数据训练: 自蒸馏与 Model Collapse"
 ---
 # 合成数据训练: 自蒸馏与 Model Collapse (Synthetic Data Training 2026)
+
+> 中文简称：合成数据训练: 自蒸馏与 Model Collapse
 
 > **一句话理解**: 合成数据训练就像用老师的笔记教学生——如果笔记质量够高、覆盖面够广，学生甚至能超越老师；但如果学生只读自己的笔记再教下一代，知识就会像复印件的复印件一样逐渐模糊失真（Model Collapse）。
 

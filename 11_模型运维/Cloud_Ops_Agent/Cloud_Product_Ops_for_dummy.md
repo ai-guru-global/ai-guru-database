@@ -7,9 +7,12 @@ created: 2026-05-31
 updated: 2026-05-31
 tier: core
 sources: []
+name_zh: "云产品运维 Agent 入门指南"
 ---
 
 # 云产品运维 Agent 入门指南 (for Dummies)
+
+> 中文简称：云产品运维 Agent 入门指南
 
 > 用最简单的语言解释什么是云产品运维 Agent，以及它如何帮你管理云服务。
 

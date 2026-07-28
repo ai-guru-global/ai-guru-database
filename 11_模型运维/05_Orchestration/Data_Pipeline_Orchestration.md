@@ -11,8 +11,11 @@ aliases:
   - Data_Pipeline_Orchestration
 sources: []
 
+name_zh: "数据流水线编排"
 ---
 # 数据流水线编排 (Data Pipeline Orchestration)
+
+> 中文简称：数据流水线编排
 
 > **一句话理解**: 数据流水线编排就像铁路调度中心——协调各列火车（任务）的运行顺序、到站时间、异常处理，确保原材料（数据）按时、保质到达目的地（07_模型训练/推理）。
 

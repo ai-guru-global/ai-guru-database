@@ -15,9 +15,12 @@ sources:
   - "https://www.nature.com/articles/nature14539 (Bengio/LeCun/Hinton 深度学习综述)"
   - "https://lifeisgoodphilosophy.com/ (e/acc 宣言)"
   - "https://www.nytimes.com/2023/05/01/technology/geoffrey-hinton-google-artificial-intelligence.html (Hinton 离职)"
+name_zh: "AI 安全立场矩阵：加速派 vs 对齐派 vs 暂停派"
 ---
 
 # AI 安全立场矩阵：加速派 vs 对齐派 vs 暂停派
+
+> 中文简称：AI 安全立场矩阵：加速派 vs 对齐派 vs 暂停派
 
 > **一句话概括**: 把 Altman / Musk / Bengio / Hinton / Amodei / LeCun / 黄仁勋 / Sutskever 等 11 位领袖在 AI 安全议题上的立场做成一张矩阵——从 e/acc 加速派到彻底暂停派，本篇呈现谁主张强监管、谁相信技术自治、以及他们各自的利益与哲学根源。
 

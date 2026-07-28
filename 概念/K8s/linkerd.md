@@ -17,11 +17,14 @@ relationships:
   - target: "概念/service-mesh"
     type: related_to
 sources: []
+name_zh: "Linkerd 服务网格"
 ---
 
 > **归档提示**: 此概念为通用云原生工具，与AI核心关联度较低。如需学习完整的K8s知识，请参考 CNCF 官方文档。
 
 # Linkerd
+
+> 中文简称：Linkerd 服务网格
 
 > **一句话理解**: Linkerd 是 Istio 的「轻量替代品」，安装简单、资源占用少，适合不想为服务网格付出过高复杂度的团队。
 

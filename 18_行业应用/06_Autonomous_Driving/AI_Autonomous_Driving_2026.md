@@ -12,8 +12,11 @@ aliases:
   - AI_Autonomous_Driving_2026
 sources: []
 
+name_zh: "AI 自动驾驶与智能交通应用"
 ---
 # AI 自动驾驶与智能交通应用 (2025-2026)
+
+> 中文简称：AI 自动驾驶与智能交通应用
 
 > **一句话理解**: 2026 年自动驾驶正式进入"商业化拐点"——Waymo 在美国多城市运营 Robotaxi，Tesla FSD 累计行驶超 30 亿英里，中国 L4 级无人出租车在武汉/北京规模运营，端到端 AI 架构成为技术主流。
 
@@ -275,7 +278,7 @@ AI交通管理 2025-2026:
 
 ## Related
 
-- [[../14_RAG系统/05_RAG_Production|RAG 生产部署]] — 车载知识库与实时检索
+- [[14_RAG系统/05_RAG_Production|RAG 生产部署]] — 车载知识库与实时检索
 - [[../15_智能体/02_Agent_Frameworks/LangChain_Deep_Dive|Agent 框架]] — 自动驾驶决策 Agent
 - [[../05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 多传感器融合感知
 - [[../08_模型评估/02_Benchmarks/LLM_Benchmark_Suite_2026|评估基准]] — 自动驾驶安全评估指标

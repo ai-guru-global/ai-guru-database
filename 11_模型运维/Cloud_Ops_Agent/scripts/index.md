@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "脚本"
+name_en: "scripts"
 ---
 
 # Scripts
+
+> 中文简称：脚本 ｜ English Name: scripts
 
 Cloud Ops Agent 自动化脚本（automation scripts）— 包含文档生成与质量门禁检查工具。
 

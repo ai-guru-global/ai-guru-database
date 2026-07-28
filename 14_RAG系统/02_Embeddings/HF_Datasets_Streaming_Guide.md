@@ -12,8 +12,11 @@ aliases:
   - HF_Datasets_Streaming
 sources: []
 
+name_zh: "HuggingFace Datasets Streaming 模式实战指南"
 ---
 # HuggingFace Datasets Streaming 模式实战指南
+
+> 中文简称：HuggingFace Datasets Streaming 模式实战指南
 
 > **一句话理解**: `datasets` 库的 Streaming 模式通过惰性加载（lazy loading）+ Arrow 格式流式传输，让你在 8GB 内存的笔记本上处理 TB 级数据集，无需完整下载。
 

@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "故障排查"
+name_en: "Troubleshooting"
 ---
 
 # Troubleshooting
+
+> 中文简称：故障排查 ｜ English Name: Troubleshooting
 
 故障排查 — AI/ML 基础设施（K8s、GPU、存储、网络）的故障诊断手册和排查 Playbook。
 

@@ -18,9 +18,12 @@ relationships:
   - target: "概念/lakefs"
     type: implemented_by
 sources: []
+name_zh: "数据版本化"
 ---
 
 # Data Versioning（数据版本化）
+
+> 中文简称：数据版本化
 
 > **一句话理解**: 数据版本化 = 让数据集也能像代码一样「回到某个版本」，保证实验可复现、问题可追溯。
 

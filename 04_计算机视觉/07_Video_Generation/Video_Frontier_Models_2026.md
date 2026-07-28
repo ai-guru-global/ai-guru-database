@@ -24,9 +24,12 @@ sources:
   - "Kuaishou Kling 3.0 Technical Report, 2026"
   - "VBench: Comprehensive Benchmark Suite for Video Generative Models, 2024"
   - "EvalCrafter: Benchmarking and Evaluating Large Video Generation Models, CVPR 2024"
+name_zh: "视频生成前沿模型深度报告 2026"
 ---
 
 # 视频生成前沿模型深度报告 2026 (Video Frontier Models)
+
+> 中文简称：视频生成前沿模型深度报告 2026
 
 > **一句话定位**: 本文是对 [[Video_Generation_2026|AI 视频生成 2026 全景报告]] 的技术深度补充——聚焦各前沿模型的**架构设计**、**能力边界**、**技术路线对比**和**商业化挑战**，而非市场分层概览。
 

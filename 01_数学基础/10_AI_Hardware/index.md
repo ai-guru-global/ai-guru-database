@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "AI 硬件"
+name_en: "AI Hardware"
 ---
 
 # AI Hardware
+
+> 中文简称：AI 硬件 ｜ English Name: AI Hardware
 
 This page indexes the contents of `01_数学基础/10_AI_Hardware`.
 

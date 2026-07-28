@@ -37,9 +37,12 @@ tier: core
 created: 2026-07-23
 updated: 2026-07-23
 sources: []
+name_zh: "过程奖励模型"
 ---
 
 # 过程奖励模型 PRM(Process Reward Model)
+
+> 中文简称：过程奖励模型
 
 > **一句话理解**:PRM 是"训练一个会盯着每一步推理打分的老师"——传统的 ORM(结果奖励)只能告诉你"答案对不对",PRM 能告诉你"在第 3 步你错了",是 o1 / DeepSeek R1 / QwQ 等"长思考模型"在数学、代码、规划任务上突破 SOTA 的关键基础设施。
 
@@ -294,6 +297,6 @@ sources: []
 - [[概念/test-time-compute|Test Time Compute]]
 - [[概念/rlvr|Rlvr]]
 - [[概念/reasoning-models|Reasoning Models]]
-- [[概念/chain-of-thought|Chain Of Thought]]
+- [[概念/LLM/cot-react-reasoning-prompt|Chain Of Thought]]
 - [[概念/llm-as-judge|Llm As Judge]]
 - [[概念/self-rewarding|Self Rewarding]]

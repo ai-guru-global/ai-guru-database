@@ -19,6 +19,7 @@ relationships:
   - target: "概念/pod"
     type: part_of
 sources: []
+name_zh: "K8s 批处理任务"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -26,6 +27,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # Job
+
+> 中文简称：K8s 批处理任务
 
 > **一句话理解**: Job 是 Kubernetes 中负责把「跑一次就结束」的批处理任务可靠地跑完的调度器——Pod 成功退出即算完成，失败则按策略重试。
 

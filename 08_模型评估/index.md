@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "模型评估"
+name_en: "Model Evaluation"
 ---
 
 # Model Evaluation
+
+> 中文简称：模型评估 ｜ English Name: Model Evaluation
 
 This page indexes the contents of `模型评估`.
 

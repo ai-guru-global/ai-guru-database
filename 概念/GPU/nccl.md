@@ -17,9 +17,12 @@ relationships:
   - target: "概念/nvlink"
     type: uses
 sources: []
+name_zh: "NVIDIA 集合通信库"
 ---
 
 # NCCL
+
+> 中文简称：NVIDIA 集合通信库
 
 > **一句话理解**: NCCL 是 NVIDIA GPU 之间的「高速对讲机」，负责分布式训练里的 AllReduce、Broadcast、AllGather 等集合通信。
 

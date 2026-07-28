@@ -12,8 +12,11 @@ aliases:
   - DL_Fundamentals
 sources: []
 
+name_zh: "深度学习基础"
 ---
 # 深度学习基础 (Deep Learning Fundamentals)
+
+> 中文简称：深度学习基础
 
 > **一句话理解**: 深度学习是多层神经网络的堆叠艺术——从感知机到 MLP、CNN、RNN 再到 Transformer，每一代架构都在逼近人脑的层次化特征提取能力，而反向传播 + 梯度下降是让这一切运转的引擎。
 

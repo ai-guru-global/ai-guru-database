@@ -8,8 +8,11 @@ updated: 2026-07-23
 tier: supporting
 sources: []
 
+name_zh: "质量度量"
 ---
 # 质量度量 (Quality Metrics)
+
+> 中文简称：质量度量
 
 ## 1. 质量维度
 
@@ -113,7 +116,7 @@ def audit_knowledge_base(root_dir):
 ## 4. 交叉引用
 
 - [[治理/|治理]]
-- [[治理/content-governance/|内容治理]]
+- [[治理/Content_Governance|内容治理]]
 - [[00_入门/|入门 (知识库使用)]]
 
 ## 核心知识体系

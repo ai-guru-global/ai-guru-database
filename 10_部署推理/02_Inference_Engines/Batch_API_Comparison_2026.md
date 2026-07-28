@@ -13,8 +13,11 @@ aliases:
   - Batch_API_Comparison_2026
 sources: []
 
+name_zh: "LLM Batch API 完全指南: 批量推理的成本优化利器"
 ---
 # LLM Batch API 完全指南: 批量推理的成本优化利器
+
+> 中文简称：LLM Batch API 完全指南: 批量推理的成本优化利器
 
 > **一句话理解**: Batch API 是 LLM 成本优化的最大杠杆——用 50% 的价格处理非实时任务，覆盖数据标注、评估、批量嵌入等场景，是生产系统降本的核心武器。
 

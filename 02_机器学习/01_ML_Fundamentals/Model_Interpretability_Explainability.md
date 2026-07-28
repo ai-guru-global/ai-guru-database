@@ -4,9 +4,12 @@ tags: [ml, interpretability, explainability, shap, lime, production]
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "模型可解释性"
 ---
 
 # Model Interpretability & Explainability
+
+> 中文简称：模型可解释性
 
 ## Why Interpretability Matters
 

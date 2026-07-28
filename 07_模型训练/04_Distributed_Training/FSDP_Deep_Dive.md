@@ -12,8 +12,11 @@ aliases:
   - FSDP_Deep_Dive
 sources: []
 
+name_zh: "FSDP 深度解析: PyTorch 全分片数据并行"
 ---
 # FSDP 深度解析：PyTorch 全分片数据并行
+
+> 中文简称：FSDP 深度解析: PyTorch 全分片数据并行
 
 > **一句话理解**: FSDP 是 PyTorch 原生的全分片数据并行框架，相当于 PyTorch 内置的 ZeRO-3，通过把参数、梯度和优化器状态分片到多 GPU，让 PyTorch 项目以最小改动训练大模型。
 

@@ -19,9 +19,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: core
+name_zh: "Weights & Biases 实验追踪"
 ---
 
 # Weights & Biases 实验追踪
+
+> 中文简称：Weights & Biases 实验追踪
 
 > **一句话理解**: W&B 是"ML 实验的仪表盘"——精美的可视化、实时的训练曲线、一键对比实验结果，研究者最爱的实验追踪工具。
 

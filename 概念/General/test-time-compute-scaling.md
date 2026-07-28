@@ -18,9 +18,12 @@ aliases:
   - "测试时计算扩展"
   - "推理时计算扩展"
 sources: []
+name_zh: "测试时计算扩展"
 ---
 
 # Test-Time Compute Scaling
+
+> 中文简称：测试时计算扩展
 
 > 此页面已合并至 [[test-time-compute|Test-Time Compute（测试时计算）]]。请前往查看完整内容。
 

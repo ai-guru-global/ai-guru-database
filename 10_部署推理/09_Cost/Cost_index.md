@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "推理成本专题"
 ---
 
 # Cost
+
+> 中文简称：推理成本专题
 
 推理成本优化（Inference Cost Optimization）— LLM 推理的 Token 成本控制、缓存策略（caching strategy）与多级降本方案。
 

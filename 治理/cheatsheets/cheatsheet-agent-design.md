@@ -4,9 +4,12 @@ tags: [cheatsheet, agent-design, multi-agent, reasoning, memory, framework]
 type: cheatsheet
 created: 2026-06-17
 sources: []
+name_zh: "智能体架构设计速查表"
 ---
 
 # 智能体架构设计速查表
+
+> 中文简称：智能体架构设计速查表
 
 > Agent = LLM + Harness | **模型决定智能上限, Harness 决定工程下限**
 > 详见 [[Agentic_AI_Complete_Guide]] | [[Multi_Agent_Systems_Guide]] | [[AgentOps_Production_Guide]] | [[Harness_Engineering_Complete_Guide]]

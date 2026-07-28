@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "提示词工程师"
 ---
 # 提示词工程师 (Prompt Engineer)
+
+> 中文简称：提示词工程师
 
 ## 1. 岗位定义
 
@@ -93,7 +96,7 @@ INTERVIEW_TOPICS = {
 - [[21_面试岗位/|面试岗位]]
 - [[05_大模型/08_Prompt_Engineering/|Prompt Engineering]]
 - [[00_入门/03_Learning_Path/AI_Career_Guide|AI 职业指南]]
-- [[21_面试岗位/Interview_Preparation/|面试准备]]
+- [[21_面试岗位/Interview_Guide/Interview_Preparation|面试准备]]
 - [[09_测试/|测试 (Prompt 评估)]]
 
 ## 面试核心知识框架

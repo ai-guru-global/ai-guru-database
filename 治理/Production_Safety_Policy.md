@@ -5,9 +5,12 @@ visibility: internal
 tags: [meta, safety, production, policy]
 last_updated: 2026-07-02
 sources: []
+name_zh: "生产安全策略 · Production Safety Policy"
 ---
 
 # 生产安全策略 · Production Safety Policy
+
+> 中文简称：生产安全策略 · Production Safety Policy
 
 > 本页是 ai-guru-database 仓库所有操作类文档引用的**唯一权威安全策略**。
 > 任何操作类文档顶部的「生产安全提示」横幅均指向本页。

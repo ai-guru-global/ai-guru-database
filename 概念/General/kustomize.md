@@ -22,9 +22,12 @@ provenance:
 base_confidence: 0.85
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "K8s 配置管理工具"
 ---
 
 # Kustomize（K8s 配置管理工具）
+
+> 中文简称：K8s 配置管理工具
 
 ## 核心要点
 

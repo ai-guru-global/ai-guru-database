@@ -7,9 +7,12 @@ summary: "> Agent Plugin 接口定义和使用指南"
 created: 2026-05-31
 updated: 2026-05-31
 sources: []
+name_zh: "插件 API 参考文档"
 ---
 
 # 插件 API 参考文档
+
+> 中文简称：插件 API 参考文档
 
 > Agent Plugin 接口定义和使用指南
 

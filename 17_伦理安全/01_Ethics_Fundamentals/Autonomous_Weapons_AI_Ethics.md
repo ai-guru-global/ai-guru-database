@@ -12,9 +12,12 @@ aliases:
   - "LAWS伦理"
   - Autonomous_Weapons_AI_Ethics
 sources: []
+name_zh: "AI武器与自主武器伦理"
 ---
 
 # AI武器与自主武器伦理
+
+> 中文简称：AI武器与自主武器伦理
 
 > **一句话理解**: 致命性自主武器系统(LAWS)是AI伦理最具争议的领域——从无人机群到自主决策系统，技术已远超国际法框架，UN CCW谈判陷入僵局，REAIM峰会推动政治共识，核心争论在于"机器是否应该拥有生死决定权"，2026年国际社会正加速推进AI军事应用治理。
 
@@ -621,16 +624,16 @@ Lavender/Gospel系统 (加沙2023-2024):
 
 ## 13. 相关概念
 
-- [[AI伦理基础]] — AI伦理理论框架
-- [[EU AI Act实施指南]] — AI监管(含军事排除条款)
-- [[中国AI治理法规]] — 中国AI治理(含军事AI)
-- [[AI安全红队测试]] — 对抗性评估方法
-- [[AI治理与合规2026]] — 全球AI治理全景
-- [[算法偏见与公平性]] — 目标识别中的偏见问题
-- [[可解释AI]] — AI决策透明度
-- [[AI版权与知识产权]] — AI技术扩散与知识产权
-- [[价值对齐]] — AI价值观对齐问题
-- [[联邦学习]] — 分布式AI技术
+- [[17_伦理安全/01_Ethics_Fundamentals/AI_Ethics_Safety_Future|AI伦理基础]] — AI伦理理论框架
+- [[17_伦理安全/03_Governance/EU_AI_Act_Implementation_2026|EU AI Act实施指南]] — AI监管(含军事排除条款)
+- [[17_伦理安全/03_Governance/China_AI_Regulations_2026|中国AI治理法规]] — 中国AI治理(含军事AI)
+- [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Red_Teaming_Guide|AI安全红队测试]] — 对抗性评估方法
+- [[17_伦理安全/03_Governance/AI_Governance_Compliance_2026|AI治理与合规2026]] — 全球AI治理全景
+- [[17_伦理安全/01_Ethics_Fundamentals/Bias_Fairness_Testing|算法偏见与公平性]] — 目标识别中的偏见问题
+- [[概念/Safety/explainable-ai|可解释AI]] — AI决策透明度
+- [[17_伦理安全/01_Ethics_Fundamentals/AI_Copyright_IP_2026|AI版权与知识产权]] — AI技术扩散与知识产权
+- [[17_伦理安全/02_Value_Alignment/Value_Alignment|价值对齐]] — AI价值观对齐问题
+- [[17_伦理安全/11_Federated_Learning/Federated_Learning_Deep_Dive|联邦学习]] — 分布式AI技术
 
 ---
 

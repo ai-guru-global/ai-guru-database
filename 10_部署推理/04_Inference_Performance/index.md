@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "推理性能"
+name_en: "Inference Performance"
 ---
 
 # Inference Performance
+
+> 中文简称：推理性能 ｜ English Name: Inference Performance
 
 This page indexes the contents of `10_部署推理/04_Inference_Performance`.
 

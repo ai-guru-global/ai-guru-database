@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "电信行业 AI 应用"
 ---
 # 电信行业 AI 应用 (Telecommunications)
+
+> 中文简称：电信行业 AI 应用
 
 ## 1. 行业概况
 

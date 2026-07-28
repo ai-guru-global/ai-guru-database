@@ -27,9 +27,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "LLaMA 系列模型架构演进"
 ---
 
 # LLaMA 系列模型架构演进
+
+> 中文简称：LLaMA 系列模型架构演进
 
 ## 一句话总结
 
@@ -181,7 +184,7 @@ LLaMA 系列均采用以下设计：
 
 - [[概念/LLM/qwen-series|Qwen 系列]]
 - [[概念/LLM/gpt-series-evolution|GPT 系列演进]]
-- [[05_大模型/Open_Source_LLM/Llama_Family_Complete_Guide|Llama 家族完整指南]]
+- [[概念/LLM/llama-series|Llama 家族完整指南]]
 
 ## 模型选择指南
 

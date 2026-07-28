@@ -12,8 +12,11 @@ aliases:
   - CodeBuddy_Guide
 sources: []
 
+name_zh: "CodeBuddy / WorkBuddy 使用指南"
 ---
 # CodeBuddy / WorkBuddy 使用指南
+
+> 中文简称：CodeBuddy / WorkBuddy 使用指南
 
 > **一句话**: CodeBuddy 是 AI 编程助手，WorkBuddy 是其办公延伸，适合文档和项目脚手架生成。
 

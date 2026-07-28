@@ -4,9 +4,12 @@ tags: [agents, security, authentication, authorization, enterprise, production]
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "智能体认证与授权"
 ---
 
 # Agent Authentication & Authorization
+
+> 中文简称：智能体认证与授权
 
 ## Overview
 

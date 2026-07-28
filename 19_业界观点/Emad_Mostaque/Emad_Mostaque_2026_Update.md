@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Emad Mostaque 2026 Update", "埃马德·莫斯塔克 2026 动态"]
 sources: []
+name_zh: "埃马德·莫斯塔克 2026 动态"
 ---
 
 # 埃马德·莫斯塔克 2026 动态 (Emad Mostaque 2026 Update)
+
+> 中文简称：埃马德·莫斯塔克 2026 动态
 
 ## 一句话概括
 
@@ -389,7 +392,7 @@ Mostaque 通过 Stable Diffusion 对行业产生深远影响：
 ### 技术与生态
 
 - [[05_大模型/README]] -- Stable Diffusion 技术
-- [[应用/Generative_AI]] -- 生成 AI
+- [[00_入门/02_Technology_Overview/index|Generative_AI]] -- 生成 AI
 - [[00_入门/AI_Future_Trends]] -- 去中心化 AI
 - [[17_伦理安全/README]] -- 开源 vs 安全
 

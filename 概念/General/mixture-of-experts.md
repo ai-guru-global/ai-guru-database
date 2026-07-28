@@ -32,8 +32,11 @@ aliases:
   - "Mixture Of Experts"
   - "mixture of experts"
 
+name_zh: "混合专家模型"
 ---
 # 混合专家模型 (Mixture of Experts, MoE)
+
+> 中文简称：混合专家模型
 
 > 参数规模爆炸但计算成本不变的秘密武器——用稀疏激活实现「大象的身材，猎豹的速度」。
 

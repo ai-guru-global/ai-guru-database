@@ -11,8 +11,11 @@ aliases:
   - Pending_Tools_Catalog
 sources: []
 
+name_zh: "待探索工具目录"
 ---
 # 待探索工具目录
+
+> 中文简称：待探索工具目录
 
 > 已识别的 AI 编程工具，待后续探索使用，按类型分类。
 

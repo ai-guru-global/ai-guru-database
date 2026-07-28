@@ -17,9 +17,12 @@ relationships:
   - target: "概念/deployment"
     type: part_of
 sources: []
+name_zh: "K8s 选择器"
 ---
 
 # Selector
+
+> 中文简称：K8s 选择器
 
 > **一句话理解**: Selector 是 Kubernetes 的「筛子」——通过 Label 匹配规则，把 Service、Deployment、ReplicaSet 等控制器与目标 Pod 关联起来。
 

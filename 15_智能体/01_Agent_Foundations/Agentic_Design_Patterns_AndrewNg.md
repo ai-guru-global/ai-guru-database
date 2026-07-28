@@ -12,8 +12,11 @@ aliases:
   - Agentic_Design_Patterns_AndrewNg
 sources: []
 
+name_zh: "吴恩达：Agentic Design Patterns 深度解析"
 ---
 # 吴恩达：Agentic Design Patterns (智能体设计模式) 深度解析 (含 Prompt 与代码实现)
+
+> 中文简称：吴恩达：Agentic Design Patterns 深度解析
 
 > **一句话理解**: 即使是大语言模型在“Zero-shot (零样本直出)”下也会犯错。吴恩达 (Andrew Ng) 提出，通过赋予模型“智能体工作流 (Agentic Workflow)”，旧模型（如 GPT-3.5）甚至能战胜新一代的大模型（如 GPT-4）。
 > 本文不仅讲解理论，还提供了**具体的 Prompt 模板与 Python 控制流示例**，以便你在内部系统直接实现这四大模式。

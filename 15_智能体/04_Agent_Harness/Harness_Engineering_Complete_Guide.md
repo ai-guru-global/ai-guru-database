@@ -13,8 +13,11 @@ aliases:
   - Harness_Engineering_Complete_Guide
 sources: []
 
+name_zh: "Harness 工程完全指南"
 ---
 # Harness Engineering Complete Guide (智能体 Harness 工程完整指南)
+
+> 中文简称：Harness 工程完全指南
 
 > 本文从《智能体 Harness 工程指南》全书 14 章中提炼 Harness 的核心定义、参考架构、五大子系统总览和五大设计原则。
 

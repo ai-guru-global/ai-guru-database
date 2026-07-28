@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "云原生 AI"
+name_en: "CNCF Cloud Native AI"
 ---
 
 # CNCF Cloud Native AI
+
+> 中文简称：云原生 AI ｜ English Name: CNCF Cloud Native AI
 
 This page indexes the contents of `12_架构基建/05_CNCF_Cloud_Native_AI`.
 

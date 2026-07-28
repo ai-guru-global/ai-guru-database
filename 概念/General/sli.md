@@ -16,9 +16,12 @@ relationships:
   - target: "概念/prometheus"
     type: measured_by
 sources: []
+name_zh: "服务水平指标"
 ---
 
 # SLI（Service Level Indicator）
+
+> 中文简称：服务水平指标
 
 > **一句话理解**: SLI = 「你拿什么数字来衡量服务好不好」，比如可用性、延迟、错误率。
 

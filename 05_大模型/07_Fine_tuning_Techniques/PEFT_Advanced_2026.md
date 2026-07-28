@@ -12,8 +12,11 @@ aliases:
   - PEFT_Advanced_2026
 sources: []
 
+name_zh: "PEFT 2026 高阶指南：从 LoRA 到 DoRA 与 PiSSA"
 ---
 # PEFT 2026 高阶指南：从 LoRA 到 DoRA 与 PiSSA
+
+> 中文简称：PEFT 2026 高阶指南：从 LoRA 到 DoRA 与 PiSSA
 
 > **一句话理解**: 毫无疑问，LoRA (Low-Rank Adaptation) 是大模型微调时代的基石。但在 2025-2026 年，Hugging Face 的 `peft` 库集成了多项突破性变体——**DoRA** (解耦权重与方向) 与 **PiSSA** (主成分切分)。它们在不增加推理成本的前提下，将参数高效微调的性能推向了全量微调（FFT）的极限。
 
@@ -167,7 +170,7 @@ print("PiSSA 模型准备就绪。")
 - [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026]]
 - [[03_深度学习/03_Optimization/Optimization_for_dummy]]
 - [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术总览]]
-- [[概念/lora|LoRA 概念]]
+- [[概念/Training/lora-peft|LoRA 概念]]
 
 ## 总结
 

@@ -12,8 +12,11 @@ aliases:
   - AlphaGo_Deep_Dive
 sources: []
 
+name_zh: "AlphaGo 深度解读"
 ---
 # AlphaGo 深度解读 (Mastering the Game of Go)
+
+> 中文简称：AlphaGo 深度解读
 
 > **一句话理解**: AlphaGo 像是一位结合了"棋谱记忆"和"自我对弈"的天才围棋手——它既学习了人类几千年积累的围棋智慧，又通过与自己下棋发现了人类从未想到的新招数，最终在围棋上战胜了人类冠军。
 

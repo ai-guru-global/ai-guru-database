@@ -12,9 +12,13 @@ aliases:
 sources:
   - "https://openai.com/"
   - "https://thinkingmachines.ai/"
+name_zh: "Mira Murati 人物索引"
+name_en: "Mira Murati"
 ---
 
 # Mira Murati 人物索引
+
+> 中文简称：Mira Murati 人物索引 ｜ English Name: Mira Murati
 
 > **一句话概括**: 前 OpenAI CTO（2018-2024）、Thinking Machines Lab 创始人（2024）——领导了 ChatGPT、DALL·E、GPT-4、Sora 等里程碑产品的研发，是 OpenAI 从研究实验室走向全球科技巨头的核心工程领导者。2023 年 11 月在 OpenAI 董事会危机期间曾短暂担任临时 CEO，展现了在 AI 产品工程化与安全评估领域的深厚实力。
 
@@ -147,6 +151,7 @@ Murati 的独特之处是**站在研究与产品的交汇点**，把 [[19_业界
 
 - [[19_业界观点/Mira_Murati/about\|人物简介]] · [[19_业界观点/Mira_Murati/sayings\|核心语录]]
 - [[19_业界观点/Sam_Altman/about\|Sam Altman]] · [[19_业界观点/Ilya_Sutskever/about\|Ilya Sutskever]]
+- [[19_业界观点/Mira_Murati/Mira_Murati_2026_Update\|2026 动态更新]]
 - [[19_业界观点/index\|业界观点首页]]
 
 ---

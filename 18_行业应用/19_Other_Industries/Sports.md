@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "体育 AI 应用"
 ---
 # 体育 AI 应用 (Sports)
+
+> 中文简称：体育 AI 应用
 
 ## 1. 行业概况
 
@@ -121,7 +124,7 @@ INJURY_PREVENTION = {
 - [[03_深度学习/|深度学习 (视觉)]]
 - [[02_机器学习/|机器学习 (预测)]]
 - [[05_大模型/|大模型 (AI 解说)]]
-- [[18_行业应用/Public_Safety/|公共安全 (大型赛事安保)]]
+- [[18_行业应用/19_Other_Industries/Public_Safety|公共安全 (大型赛事安保)]]
 
 ## 进阶知识拓展
 

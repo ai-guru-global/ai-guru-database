@@ -26,9 +26,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-06-25
 sources: []
+name_zh: "大模型 Function Calling"
 ---
 
 # 大模型 Function Calling（函数调用）
+
+> 中文简称：大模型 Function Calling
 
 > **上位概念**: [[tool-use|大模型 Tool Use]]
 

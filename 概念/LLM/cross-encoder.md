@@ -19,9 +19,12 @@ relationships:
     type: related_to
 sources:
   - "https://arxiv.org/abs/2104.08821"  # Cross-Encoders for reranking
+name_zh: "交叉编码器"
 ---
 
 # Cross-Encoder
+
+> 中文简称：交叉编码器
 
 > **一句话理解**: Cross-Encoder 把「问题和候选文档」拼在一起让模型打分，精度比双塔模型高，但因为要一对一对算，所以更慢、更贵。
 
@@ -199,6 +202,6 @@ ranked = sorted(zip(candidates, scores), key=lambda x: -x[1])
 ## 延伸阅读
 
 - [[概念/LLM/llamaindex|LlamaIndex]] — RAG 框架集成
-- [[概念/RAG/rag-architecture|RAG 架构]] — RAG 系统全景
+- [[概念/RAG/rag-production-architecture|RAG 架构]] — RAG 系统全景
 - [[概念/LLM/context-engineering|上下文工程]] — 检索后上下文管理
 - [[概念/LLM/llm-inference-engine|推理引擎]] — 模型服务部署

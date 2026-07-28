@@ -11,8 +11,11 @@ aliases:
   - Multimodal_Inference_Optimization
 sources: []
 
+name_zh: "多模态推理优化"
 ---
 # 多模态推理优化
+
+> 中文简称：多模态推理优化
 
 > 一张图可能等于一千个 token——VLM 的推理瓶颈往往不在 LLM，而在视觉编码器和 image token 的 prefill。
 

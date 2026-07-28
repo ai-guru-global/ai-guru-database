@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "李飞飞"
+name_en: "Fei Fei Li"
 ---
 
 # Fei Fei Li
+
+> 中文简称：李飞飞 ｜ English Name: Fei Fei Li
 
 斯坦福大学教授、斯坦福以人为本 AI 研究院 (HAI) 联合主任、前 Google Cloud AI/ML 首席科学家——ImageNet 数据集的发起人，深度学习革命的催化者，"以人为本 AI"理念的全球倡导者。
 
@@ -207,3 +211,7 @@ sources: []
 
 ---
 *Last updated: 2026-07-21*
+
+## 关联导航
+
+- [[19_业界观点/Fei_Fei_Li/Fei_Fei_Li_2026_Update\|2026 动态更新]]

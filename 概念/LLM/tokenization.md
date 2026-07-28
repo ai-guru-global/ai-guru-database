@@ -25,8 +25,11 @@ updated: 2026-07-21
 aliases:
   - Tokenization
 
+name_zh: "分词与 Tokenization"
 ---
 # 分词与 Tokenization
+
+> 中文简称：分词与 Tokenization
 
 > LLM 的第一步——将人类文字转化为模型可消化的 token 序列。
 

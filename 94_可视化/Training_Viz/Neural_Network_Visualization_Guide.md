@@ -10,9 +10,12 @@ aliases:
   - "Neural Network Visualization"
   - "NN Visualization Guide"
 sources: []
+name_zh: "神经网络可视化指南"
 ---
 
 # 神经网络可视化指南 (Neural Network Visualization Guide)
+
+> 中文简称：神经网络可视化指南
 
 > 神经网络可视化全景——从网络架构图到特征图、注意力热力图、梯度可视化，帮助理解和调试深度学习模型。
 

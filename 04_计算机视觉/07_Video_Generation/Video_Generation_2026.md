@@ -11,8 +11,11 @@ aliases:
   - Video_Generation_2026
 sources: []
 
+name_zh: "AI视频生成 2026年全景报告"
 ---
 # AI 视频生成 2026 年全景报告
+
+> 中文简称：AI视频生成 2026年全景报告
 
 > **一句话理解**: AI 视频生成已经从"实验室玩具"进化为"生产力工具"——OpenAI 的 Sora 在 2026 年 3 月停止服务，但 Google Veo3、快手 Kling 3.0、字节 Seedance 2.0 等竞品已经超越 Sora，在质量、速度和成本上全面领先。
 

@@ -29,8 +29,11 @@ aliases:
   - "LMDeploy 推理引擎"
   - "TurboMind"
 
+name_zh: "国产推理部署工具"
 ---
 # LMDeploy
+
+> 中文简称：国产推理部署工具
 
 > 国产 LLM 推理的「双引擎跑车」——TurboMind 高性能 + PyTorch 灵活，中文场景首选。
 

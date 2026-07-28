@@ -29,9 +29,12 @@ tier: supporting
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "解码策略选择决策树"
 ---
 
 # 解码策略选择决策树
+
+> 中文简称：解码策略选择决策树
 
 ## 一句话总结
 

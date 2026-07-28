@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "AI 网关"
+name_en: "AI Gateway"
 ---
 
 # AI Gateway
+
+> 中文简称：AI 网关 ｜ English Name: AI Gateway
 
 This page indexes the contents of `12_架构基建/11_AI_Gateway`.
 

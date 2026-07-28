@@ -33,9 +33,12 @@ sources:
   - OpenAI Scaling Laws (Kaplan et al. 2020)
   - Llama 2 论文(Touvron et al. 2023)
   - Llama 3 论文(Meta AI 2024)
+name_zh: "Chinchilla 缩放定律"
 ---
 
 # Chinchilla 缩放定律(Compute-Optimal Scaling Laws)
+
+> 中文简称：Chinchilla 缩放定律
 
 ## 一句话总结
 

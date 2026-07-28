@@ -8,8 +8,11 @@ updated: 2026-06-16
 tier: supporting
 sources: []
 
+name_zh: "04 自然语言处理与大模型"
 ---
 # 04 自然语言处理与大模型 (NLP & LLMs)
+
+> 中文简称：04 自然语言处理与大模型
 
 本章系统讲解自然语言处理的现代范式，从序列模型（RNN/LSTM）演进到 Transformer 架构，再到大语言模型（GPT/BERT）、微调技术（LoRA/QLoRA）和提示词工程。这是当前 AI 应用最活跃的领域。
 

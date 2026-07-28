@@ -12,8 +12,11 @@ aliases:
   - Chinese_LLM_Training_Inference_Platforms
 sources: []
 
+name_zh: "中国大模型训练与推理平台实战参考"
 ---
 # 中国大模型训练与推理平台实战参考 (Training & Inference Platforms)
+
+> 中文简称：中国大模型训练与推理平台实战参考
 
 > **一句话理解**: 从 DeepSeek 的 2048 卡 H800 训练到讯飞星火的昇腾 NPU 全栈，从 MoE 专家并行到 RLHF 对齐流水线，从 FP8 量化到 Continuous Batching——中国大模型训推全链路技术参考。
 

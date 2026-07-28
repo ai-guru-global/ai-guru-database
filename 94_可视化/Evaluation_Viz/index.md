@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-23
 sources: []
 tags: [evaluation-visualization, index, navigation]
+name_zh: "评估可视化"
+name_en: "Evaluation Viz"
 ---
 
 # 评估可视化（Evaluation Visualization）
+
+> 中文简称：评估可视化 ｜ English Name: Evaluation Viz
 
 > **一句话理解**: 评估可视化把"模型好不好、好在哪、错在哪"变成图表——从混淆矩阵、ROC 到注意力热力图与降维投影，让模型质量可度量、可解释、可对比。
 

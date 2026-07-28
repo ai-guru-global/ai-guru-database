@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "梁文锋 — DeepSeek 创始人"
 ---
 # 梁文锋 (Wenfeng Liang) — DeepSeek 创始人
+
+> 中文简称：梁文锋 — DeepSeek 创始人
 
 ## 一句话概括
 

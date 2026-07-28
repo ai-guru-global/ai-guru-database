@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "PyTorch 到 TensorRT 编译器"
 ---
 
 # Torch-TensorRT
+
+> 中文简称：PyTorch 到 TensorRT 编译器
 
 [Torch-TensorRT](https://github.com/pytorch/TensorRT) 是 NVIDIA 与 PyTorch 团队合作开发的**PyTorch 到 TensorRT 编译器**。它将 PyTorch 模型（TorchScript 或 FX Graph）直接编译为 TensorRT 优化推理引擎，开发者无需导出 ONNX 中间格式，即可获得 TensorRT 的极致推理性能。是 NVIDIA GPU 上部署 PyTorch 模型的**官方推荐路径**。
 

@@ -12,8 +12,11 @@ aliases:
   - VAE_Deep_Dive
 sources: []
 
+name_zh: "论文深度解读: VAE — 变分自编码器"
 ---
 # 论文深度解读: VAE — 变分自编码器
+
+> 中文简称：论文深度解读: VAE — 变分自编码器
 
 > **论文**: *Auto-Encoding Variational Bayes* (Kingma & Welling, 2014)
 > **重要性**: 变分推断 + 深度生成模型的开创性结合，扩散模型（DDPM/Stable Diffusion）的直接前身

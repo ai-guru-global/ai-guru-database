@@ -23,8 +23,11 @@ updated: 2026-07-11
 tier: core
 lifecycle: redirect
 
+name_zh: "多模态视觉"
 ---
 # 多模态视觉
+
+> 中文简称：多模态视觉
 
 > 此页面已合并至 [[multimodal-models|多模态模型]]。请前往查看完整内容。
 

@@ -11,8 +11,11 @@ aliases:
   - Sequence_Models
 sources: []
 
+name_zh: "序列模型"
 ---
 # 序列模型 (Sequence Models)
+
+> 中文简称：序列模型
 
 > **一句话理解**: 序列模型就像人类阅读文字——逐字逐句地读，并且记住前文来理解后文。RNN/LSTM/GRU 就是让计算机拥有这种"边读边记"能力的技术，是 Transformer 出现之前 NLP 的绝对主力。
 

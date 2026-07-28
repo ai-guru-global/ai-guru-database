@@ -28,8 +28,11 @@ updated: 2026-07-21
 aliases:
   - Kubeflow
 
+name_zh: "K8s 机器学习工具集"
 ---
 # Kubeflow
+
+> 中文简称：K8s 机器学习工具集
 
 > Kubernetes 上的「机器学习全家桶」——从 Jupyter 到训练流水线再到模型服务的一站式 MLOps 平台。
 

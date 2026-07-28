@@ -12,8 +12,11 @@ aliases:
   - MiniMax_Deep_Dive
 sources: []
 
+name_zh: "MiniMax : Lightning Attention 驱动的 AI 全栈平"
 ---
 # MiniMax (稀宇科技): Lightning Attention 驱动的 AI 全栈平台
+
+> 中文简称：MiniMax : Lightning Attention 驱动的 AI 全栈平
 
 > **一句话理解**: MiniMax 就像一支拥有「闪电侠速度」的 AI 军团——用 Lightning Attention 将注意力计算从 O(n²) 降到 O(n)，让百万 token 上下文成为现实，同时在文本、视频、语音、音乐四大战场全面出击。
 

@@ -11,8 +11,11 @@ aliases:
   - Continue_Deep_Dive
 sources: []
 
+name_zh: "Continue: 开源 AI 代码助手"
 ---
 # Continue: 开源 AI 代码助手
+
+> 中文简称：Continue: 开源 AI 代码助手
 
 > **一句话理解**: Continue 是开源 AI 代码助手——VS Code/JetBrains 插件、多模型支持、代码补全/搜索/生成，IDE 内置的 AI 编程工具。
 

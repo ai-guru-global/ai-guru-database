@@ -29,8 +29,11 @@ aliases:
   - "Llm Infrastructure"
   - "llm infrastructure"
 
+name_zh: "LLM 基础设施"
 ---
 # LLM 基础设施
+
+> 中文简称：LLM 基础设施
 
 ## 核心要点
 
@@ -172,8 +175,8 @@ AI服务容量规划的特殊性：资源维度新增GPU显存和Token配额、�
 - [[概念/LLM/tensorrt-llm|TensorRT-LLM]]
 - [[概念/LLM/llm-inference-engine|LLM 推理引擎]]
 - [[12_架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
-- [[12_架构基建/GPU_Cluster_Management|GPU 集群管理]]
-- [[13_运维/GPU_Monitoring|GPU 监控体系]]
+- [[12_架构基建/07_Hardware_Compute/index|GPU 集群管理]]
+- [[13_运维/06_Observability/index|GPU 监控体系]]
 
 ## 成本优化策略
 

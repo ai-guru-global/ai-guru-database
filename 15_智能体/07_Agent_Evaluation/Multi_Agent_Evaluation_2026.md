@@ -11,8 +11,11 @@ aliases:
   - Multi_Agent_Evaluation_2026
 sources: []
 
+name_zh: "多智能体系统评估"
 ---
 # Multi-Agent System Evaluation Framework 2026
+
+> 中文简称：多智能体系统评估
 
 > **一句话理解**: Multi-Agent System (MAS) 评估框架专门针对多个 AI Agent 协作场景，评估 Agent 间的通信效率、任务协调、集体决策质量和系统整体稳定性。
 

@@ -39,9 +39,12 @@ tier: core
 created: 2026-07-23
 updated: 2026-07-23
 sources: []
+name_zh: "Agent 评测基准"
 ---
 
 # Agent 评测基准:六大金刚
+
+> 中文简称：Agent 评测基准
 
 > **一句话理解**: 2024-2026 形成的"Agent 评测六边形"——SWE-bench(代码)、GAIA(工具)、WebArena(网页)、OSWorld(OS)、ARC-AGI(推理)、HLE(人类知识),任何 Agent 发布都要先打这 6 个关卡。
 
@@ -450,7 +453,7 @@ Docker + KVM → 服务器首选,需 /proc/cpuinfo 检查 vmx/svm
 
 ## 十三、相关概念
 
-- [[概念/agent-architectures|Agent 架构]]
+- [[概念/Agent/agent-architectures|Agent 架构]]
 - [[概念/llm-benchmarks|LLM 评测]]
 - [[概念/llm-as-judge|LLM as Judge]]
 - [[概念/reasoning-models|推理模型]]

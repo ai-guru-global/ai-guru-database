@@ -12,8 +12,11 @@ aliases:
   - Prompt_Engineering_Ops
 sources: []
 
+name_zh: "Prompt 工程化运维"
 ---
 # Prompt 工程化运维
+
+> 中文简称：Prompt 工程化运维
 
 > **一句话理解**: Prompt 不是文案，是代码——任何一行改动都可能让线上 LLM 应用从 95 分掉到 40 分，必须用工程化方式版本化、测试、灰度。
 

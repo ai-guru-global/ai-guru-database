@@ -27,9 +27,12 @@ tier: supporting
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "LLM 推理上线检查清单"
 ---
 
 # LLM 推理上线检查清单
+
+> 中文简称：LLM 推理上线检查清单
 
 ## 一句话总结
 

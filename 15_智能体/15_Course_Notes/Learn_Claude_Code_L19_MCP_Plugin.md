@@ -6,9 +6,12 @@ summary: Claude Code 课程第 19 课笔记：MCP 外部工具发现、命名空
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "MCP 插件课程笔记"
 ---
 
 # Learn Claude Code L19 - MCP Plugin
+
+> 中文简称：MCP 插件课程笔记
 
 > **一句话理解**: MCP Plugin 让 Claude Code 像浏览器插件一样动态发现并使用外部工具，核心是把工具调用规范化为 `mcp__server__tool` 命名空间。
 

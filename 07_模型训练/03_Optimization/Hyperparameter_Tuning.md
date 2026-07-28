@@ -12,8 +12,11 @@ aliases:
   - Hyperparameter_Tuning
 sources: []
 
+name_zh: "超参数优化完全指南"
 ---
 # 超参数优化完全指南 (Hyperparameter Optimization Complete Guide)
+
+> 中文简称：超参数优化完全指南
 
 > 超参数优化是模型训练中最具经验性的环节——从网格搜索到贝叶斯优化，从手动调参到自动化，系统解析超参数优化的方法论。
 

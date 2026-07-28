@@ -12,8 +12,11 @@ aliases:
   - Megatron_LM_Deep_Dive
 sources: []
 
+name_zh: "Megatron-LM 深度解析: NVIDIA 大规模 Transformer"
 ---
 # Megatron-LM 深度解析：NVIDIA 大规模 Transformer 训练框架
+
+> 中文简称：Megatron-LM 深度解析: NVIDIA 大规模 Transformer
 
 > **一句话理解**: Megatron-LM 是 NVIDIA 开源的大规模 Transformer 训练框架，以张量并行、流水线并行、序列并行和上下文并行著称，是千亿参数 GPT/BERT/T5 模型预训练的行业标准底座。
 

@@ -13,9 +13,12 @@ tags:
 summary: "从ML算法视角深入联邦学习：FedAvg/FedProx/SCAFFOLD的完整数学推导，通信效率压缩方法，Non-IID异构性挑战与解决方案，差分隐私与Secure Aggregation，大规模实践案例，以及2026年联邦基础模型前沿。"
 created: 2026-07-19
 updated: 2026-07-19
+name_zh: "联邦学习"
 ---
 
 # 联邦学习 (ML算法视角)
+
+> 中文简称：联邦学习
 
 ## 概述
 
@@ -887,14 +890,14 @@ $$\alpha_k^t = \frac{1}{1 + \lambda_{\text{stale}} \cdot (t - \tau_k)}$$
 
 - [[Foundation_Models_ML_Paradigm]] - 基础模型范式（联邦基础模型的基础）
 - [[Tabular_Foundation_Models_2026]] - 表格基础模型（联邦表格学习）
-- [[Differential_Privacy]] - 差分隐私理论
-- [[Distributed_Optimization]] - 分布式优化基础
-- [[SGD_Variants]] - SGD及其变体
-- [[Communication_Efficient_ML]] - 通信高效ML
-- [[Privacy_Preserving_ML]] - 隐私保护机器学习
-- [[Edge_ML]] - 边缘机器学习
+- [[概念/Safety/privacy-preserving-ai|Differential_Privacy]] - 差分隐私理论
+- Distributed_Optimization - 分布式优化基础
+- SGD_Variants - SGD及其变体
+- Communication_Efficient_ML - 通信高效ML
+- Privacy_Preserving_ML - 隐私保护机器学习
+- Edge_ML - 边缘机器学习
 - [[Transfer_Learning]] - 迁移学习
-- [[Multi_Task_Learning]] - 多任务学习
-- [[Bias_Variance_Tradeoff]] - 偏差-方差权衡
+- Multi_Task_Learning - 多任务学习
+- Bias_Variance_Tradeoff - 偏差-方差权衡
 - [[ML_Algorithms_Cheatsheet]] - ML算法速查
 - [[Supervised_Learning]] - 监督学习基础

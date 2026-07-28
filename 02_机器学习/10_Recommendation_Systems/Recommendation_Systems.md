@@ -11,8 +11,11 @@ aliases:
   - Recommendation_Systems
 sources: []
 
+name_zh: "推荐系统"
 ---
 # 推荐系统 (Recommendation Systems)
+
+> 中文简称：推荐系统
 
 > 推荐系统是信息过滤系统的子类，旨在预测用户对物品的"评分"或"偏好"，是电商、内容平台、社交媒体的核心技术。
 
@@ -1259,8 +1262,8 @@ def evaluate_recommender(model, test_loader, k=10):
 
 ## Related
 
-- [[../../01_数学基础/02_Linear_Algebra|线性代数]] — 矩阵分解的数学基础
+- [[01_数学基础/02_Linear_Algebra|线性代数]] — 矩阵分解的数学基础
 - [[../../03_深度学习/Transfer_Learning|迁移学习]] — 推荐模型预训练方法
 - [[../../08_模型评估/Online_Evaluation|在线评估]] — 推荐系统线上评估
 - [[../../概念/General/ab-testing-framework|A/B 测试概念卡]] — 推荐效果评估
-- [[../../05_大模型/01_LLM_Fundamentals|LLM 基础]] — LLM 驱动的推荐系统
+- [[05_大模型/01_LLM_Fundamentals|LLM 基础]] — LLM 驱动的推荐系统

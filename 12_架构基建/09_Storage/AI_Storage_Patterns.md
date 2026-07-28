@@ -8,9 +8,12 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "AI 存储模式"
 ---
 
 # AI 存储模式
+
+> 中文简称：AI 存储模式
 
 > **一句话理解**: AI 场景存储要同时满足「训练时高吞吐读数据」和「Checkpoint 时高吞吐写大文件」，不同环节用不同存储。
 

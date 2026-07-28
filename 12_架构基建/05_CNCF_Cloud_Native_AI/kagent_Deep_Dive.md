@@ -12,8 +12,11 @@ aliases:
   - kagent_Deep_Dive
 sources: []
 
+name_zh: "kagent: Kubernetes 原生的 DevOps AI Agent 框"
 ---
 # kagent: Kubernetes 原生的 DevOps AI Agent 框架
+
+> 中文简称：kagent: Kubernetes 原生的 DevOps AI Agent 框
 
 > **一句话理解**: kagent 是 CNCF 沙箱级的「在 Kubernetes 里声明式运行 AI Agent」的框架——把 Agent 变成 K8s CRD(配模型+工具+指令),由控制器跑 Agent 循环,天生支持 GitOps/RBAC/多租户,专为 DevOps 自动化设计。
 

@@ -8,9 +8,12 @@ updated: "2026-07-23"
 tier: supporting
 aliases: ["Wang Huiwen 2026 Update", "王慧文 2026 动态", "光年之外 2026"]
 sources: []
+name_zh: "王慧文 2026 动态"
 ---
 
 # 王慧文 2026 动态 (Wang Huiwen 2026 Update)
+
+> 中文简称：王慧文 2026 动态
 
 ## 一句话概括
 

@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "文字识别"
+name_en: "OCR Text Recognition"
 ---
 
 # OCR & Text Recognition
+
+> 中文简称：文字识别 ｜ English Name: OCR Text Recognition
 
 OCR 与文字识别（Text Recognition）— 场景文字检测与识别（scene text detection）、文档智能与表格抽取。
 

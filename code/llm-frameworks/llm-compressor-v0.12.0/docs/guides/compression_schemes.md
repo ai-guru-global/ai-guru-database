@@ -1,0 +1,90 @@
+# Compression Schemes
+
+Below is a summary of the most popular schemes supported through LLM Compressor and compressed-tensors.
+A full list of supported schemes can be found [here](https://github.com/vllm-project/compressed-tensors/blob/main/src/compressed_tensors/quantization/quant_scheme.py).
+
+- [W8A8-FP8](#fp8_dynamic)
+- [W8A8-Block](#fp8_block)
+- [W8A8-INT8](#int8_w8a8)
+- [W4A16 and W8A16](#w4a16-and-w8a16)
+- [NVFP4](#nvfp4)
+- [MXFP4](#mxfp4)
+- [MXFP8](#mxfp8)
+
+## PTQ Compression Schemes
+
+
+### FP8_DYNAMIC
+| Scheme       | Description                                                                                  |
+|---------------|----------------------------------------------------------------------------------------------|
+| W8A8-FP8      | 8-bit floating point (FP8) quantization for weights and activations                           |
+| Weights       | Compressed ~2× smaller using channel-wise quantization (per-channel or per-tensor scales)    |
+| Activations   | Quantized to 8-bit using dynamic per-token or static per-tensor methods; most performant with channel-wise weights + dynamic per-token activations |
+| Calibration   | No calibration dataset required if using RTN; activation quantization happens during inference on vLLM    |
+| Use case      | Optimized for performance and compression, especially for server and batch inference         |
+
+### FP8_BLOCK
+| Scheme       | Description                                                                                  |
+|---------------|----------------------------------------------------------------------------------------------|
+| W8A8-FP8_BLOCK | 8-bit floating point (FP8) quantization using block-wise compression for weights             |
+| Weights       | Compressed in blocks (commonly 128×128 tiles)                                                |
+| Activations   | Quantized using dynamic per-group (128) quantization                                         |
+| Calibration   | No calibration dataset required if using RTN; activation quantization happens during inference on vLLM    |
+| Use case      | Optimized for performance and compression during inference                                   |
+
+
+### INT8_W8A8
+| Scheme       | Description                                                                                  |
+|---------------|----------------------------------------------------------------------------------------------|
+| W8A8-INT8     | 8-bit integer (INT8) quantization for weights and activations, providing ~2× smaller weights with 8-bit arithmetic operations |
+| Weights       | Compressed using per-channel, per group |
+| Activations   | Quantized to 8-bit using dynamic or static methods; can also be asymmetric        |
+| Calibration   | Requires calibration dataset if using GPTQ/AWQ for weight quantization and for static activation quantization |
+| Use case      | Optimized for general performance and compression, especially for server, batch inference, and high-QPS or offline serving with vLLM |
+
+
+### W4A16 and W8A16
+
+| Feature       | Description                                                                                  |
+|---------------|----------------------------------------------------------------------------------------------|
+| WNA16         | Quantizes weights to 4 or 8-bit integer precision, retaining activations in 16-bit FP16  |
+| Weights       | Typically ~3.7× compressed on a per-group or per-channel basis; supports asymmetric quantization |
+| Activations   | Retained in 16-bit floating point (FP16)                                                    |
+| Calibration   | Optimally compressed using non-RTN algorithms (GPTQ, AWQ) which require a dataset           |                                                 
+| Use case      | Maximum compression for latency-sensitive applications with limited memory; useful speedups in low-QPS regimes; recommended for any GPU |
+
+
+### NVFP4
+| Feature       | Description                                                                                  |
+|---------------|----------------------------------------------------------------------------------------------|
+| NVFP4         | 4-bit floating point format introduced with NVIDIA Blackwell GPUs; maintains accuracy using high-precision scale encoding and two-level micro-block scaling |
+| Weights       | Compressed using global scale per tensor + local quantization scales per group of 16 elements |
+| Activations   | Quantized dynamically using per-group quantization (group_size=16)                           |
+| Scales        | Stored in FP8 format (`torch.float8_e4m3fn`)                                                 |
+| Calibration   | Requires a calibration dataset to calibrate activation global scales                         |
+| Use case      | Supported on NVIDIA Blackwell (SM100) GPUs or later                                          |
+
+
+### MXFP4
+| Feature       | Description                                                                                  |
+|---------------|----------------------------------------------------------------------------------------------|
+| MXFP4         | 4-bit Microscaling floating point format defined by the OCP MX specification                 |
+| Weights       | Compressed using per-group quantization (group_size=32)                                      |
+| Activations   | Quantized fully dynamically using per-group quantization (group_size=32)                     |
+| Scales        | Stored in E8M0 exponent format (`uint8`), extracting the power-of-2 exponent from each float scale value |
+| Calibration   | No calibration data required if using RTN                                                    |
+| Use case      | Supported on NVIDIA Blackwell (SM100) GPUs or later; cross-platform compatible via the OCP MX spec; can be used as an alternative to NVFP4 when calibration data is not available, though RTN accuracy may be lower |
+
+
+### MXFP8
+| Feature       | Description                                                                                  |
+|---------------|----------------------------------------------------------------------------------------------|
+| MXFP8         | 8-bit Microscaling floating point format defined by the OCP MX specification; higher accuracy than MXFP4 at the cost of lower compression |
+| Weights       | Compressed using per-group quantization (group_size=32)                                      |
+| Activations   | Quantized fully dynamically using per-group quantization (group_size=32)                     |
+| Scales        | Stored in E8M0 exponent format (`uint8`), extracting the power-of-2 exponent from each float scale value |
+| Calibration   | No calibration data required if using RTN                                                    |
+| Use case      | Supported on NVIDIA Blackwell (SM100) GPUs or later; cross-platform compatible via the OCP MX spec |
+
+!!! warning
+    Sparse compression (including 2of4 sparsity) is no longer supported by LLM Compressor due lack of hardware support and user interest. Please see https://github.com/vllm-project/vllm/pull/36799 for more information.

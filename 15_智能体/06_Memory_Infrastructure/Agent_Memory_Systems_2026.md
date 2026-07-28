@@ -11,8 +11,11 @@ aliases:
   - Agent_Memory_Systems_2026
 sources: []
 
+name_zh: "AI Agent 记忆系统 2026"
 ---
 # AI Agent 记忆系统 2026
+
+> 中文简称：AI Agent 记忆系统 2026
 
 > **一句话理解**: 2026 年的 AI Agent 不再"说完就忘"——MemGPT、Mem0 等记忆系统让 Agent 拥有了层级记忆、人格一致性、跨会话学习的能力，从"每次都是新对话"进化到"真正的持续学习伙伴"。
 

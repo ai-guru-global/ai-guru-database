@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "语料库评估"
+name_en: "Corpus Assessment"
 ---
 
 # 语料评估
+
+> 中文简称：语料库评估 ｜ English Name: Corpus Assessment
 
 评估语料的覆盖度框架、质量指标与持续改进指南。
 

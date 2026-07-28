@@ -13,8 +13,11 @@ aliases:
   - "Chip Huyen Agents Article"
   - "chip huyen agents article"
 
+name_zh: "Chip Huyen: AI Agent 深度解析"
 ---
 # Chip Huyen: AI Agent 深度解析
+
+> 中文简称：Chip Huyen: AI Agent 深度解析
 
 > **一句话理解**: Chip Huyen 关于 AI Agent 的深度技术文章,覆盖 Agent 架构、工具使用、记忆机制、生产部署等主题。
 
@@ -37,7 +40,7 @@ aliases:
 
 Chip Huyen 是知名 ML 工程师和作家,《Designing Machine Learning Systems》和《AI Engineering》的作者。
 
-> **关联**: -> [[Agent|Agent 生产]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[概念/Agent|Agent 生产]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识框架

@@ -13,9 +13,12 @@ aliases:
   - "ML Security Engineer"
   - "AI Red Team Engineer"
 sources: []
+name_zh: "AI Security Engineer 面试指南"
 ---
 
 # AI Security Engineer 面试指南
+
+> 中文简称：AI Security Engineer 面试指南
 
 > **一句话理解**: AI Security Engineer 是 AI 系统的安全卫士——既要掌握传统网络安全技能，又要深入理解 AI/ML 特有的攻击向量（对抗样本、Prompt Injection、模型窃取、数据提取），设计多层次的防御体系保护 AI 系统的安全。
 
@@ -832,7 +835,7 @@ AI 回复: {response}
 ## Related
 
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 - [[21_面试岗位/AI_Evaluation_Engineer/AI_Evaluation_Engineer|AI Evaluation Engineer 面试指南]]
 - [[21_面试岗位/AI_Reliability_Engineer/AI_Reliability_Engineer|AI Reliability Engineer 面试指南]]
 - [[21_面试岗位/AI_Policy_Specialist/AI_Policy_Specialist|AI Policy Specialist 面试指南]]

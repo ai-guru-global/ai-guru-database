@@ -14,6 +14,7 @@ aliases:
 updated: 2026-06-30
 summary: "Prompt Caching 与成本优化 — 专题文档"
 sources: []
+name_zh: "Prompt Caching 与成本优化"
 ---
 title: Prompt Caching 与成本优化
 description: '# Prompt Caching 与成本优化'
@@ -52,6 +53,8 @@ k8s_versions:
 - '1.32'
 ---
 # Prompt Caching 与成本优化
+
+> 中文简称：Prompt Caching 与成本优化
 
 > **文档类型**: 架构与优化 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Prompt Caching, Sticky Routing, Cache TTL, Cost [[概念/model-training|Optimization]], Anthropic Cache, OpenAI Cache, DeepSeek, Credits
 

@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "学习资源"
+name_en: "Learning Resources"
 ---
 
 # 学习
+
+> 中文简称：学习资源 ｜ English Name: Learning Resources
 
 AI 学习中心（Learning Center）— 课程笔记、学习路径（learning pathway）、概念参考与实战指南的系统化知识入口。
 
@@ -215,3 +219,7 @@ AI 学习中心（Learning Center）— 课程笔记、学习路径（learning p
 - [ ] 质量意识已建立
 - [ ] 持续学习习惯已养成
 - [ ] 技术视野持续拓展
+
+## 相关文档
+
+- [[90_学习/Learning-in-nutshell|学习中心速览 (nutshell)]]

@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "A/B 测试专题"
 ---
 
 # A/B Testing
+
+> 中文简称：A/B 测试专题
 
 A/B 测试 — AI 系统的在线实验设计（experiment design）、统计显著性检验（significance testing）与因果归因。
 

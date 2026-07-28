@@ -12,8 +12,11 @@ aliases:
   - Constitutional_AI_Deep_Dive
 sources: []
 
+name_zh: "Constitutional AI 深度解读：Anthropic 的宪法式对齐方"
 ---
 # Constitutional AI (CAI) 深度解读：Anthropic 的宪法式对齐方法
+
+> 中文简称：Constitutional AI 深度解读：Anthropic 的宪法式对齐方
 
 > **一句话理解**: CAI 就像给 AI 一本"宪法"——不靠大量人类标注员手把手教什么是对错，而是让 AI 按照明确的原则自我批评、自我修正，再用 AI 自己的判断来训练自己，实现可扩展的安全对齐。
 

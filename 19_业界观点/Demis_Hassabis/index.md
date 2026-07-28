@@ -12,9 +12,13 @@ aliases:
 sources:
   - "https://www.nature.com/articles/d41586-023-02212-7"
   - "https://deepmind.google/"
+name_zh: "Demis Hassabis 人物索引"
+name_en: "Demis Hassabis"
 ---
 
 # Demis Hassabis 人物索引
+
+> 中文简称：Demis Hassabis 人物索引 ｜ English Name: Demis Hassabis
 
 > **一句话概括**: Google DeepMind 联合创始人兼 CEO——以 AlphaGo 击败围棋世界冠军、AlphaFold 破解蛋白质折叠难题，证明 AI 可以攻克人类最复杂的智力与科学挑战，2024 年因 AlphaFold 获诺贝尔化学奖。
 
@@ -166,6 +170,7 @@ Hassabis 的独特之处是**同时追求科学突破和商业部署**——Alph
 - [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun]]
 - [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
 - [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[19_业界观点/Demis_Hassabis/Hassabis_Science_AI_2026\|AI for Science 2026 专题]]
 - [[19_业界观点/index\|业界观点首页]]
 
 ---

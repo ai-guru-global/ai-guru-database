@@ -29,8 +29,11 @@ updated: 2026-07-21
 aliases:
   - Bbh
 
+name_zh: "BBH 困难任务基准"
 ---
 # BBH
+
+> 中文简称：BBH 困难任务基准
 
 ## 核心要点
 
@@ -201,5 +204,5 @@ BBH 是衡量 LLM 复杂推理能力的金标准基准，23 个困难任务覆�
 ## 相关概念
 
 - [[概念/benchmark]] — 基准测试总论
-- [[概念/mmlu]] — MMLU 多任务评估
-- [[概念/gsm8k]] — GSM8K 数学推理
+- [[概念/LLM/llm-benchmarks|mmlu]] — MMLU 多任务评估
+- [[概念/LLM/llm-benchmarks|gsm8k]] — GSM8K 数学推理

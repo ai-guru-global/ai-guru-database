@@ -12,8 +12,11 @@ aliases:
   - Generative_Models_for_dummy
 sources: []
 
+name_zh: "生成模型 - 小白版 🎨"
 ---
 # 生成模型 - 小白版 🎨
+
+> 中文简称：生成模型 - 小白版 🎨
 
 > **一句话秒懂**: 生成模型就是会"画画"的 AI——你说"画一只戴帽子的柴犬",它就能真的画出来,甚至能修图、换背景、让模糊照片变清晰!
 
@@ -597,7 +600,7 @@ AI是工具,不是替代
 - [[../../05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 文本到图像的多模态生成
 - [[../../03_深度学习/04_Generative_Models/Diffusion_Models_Deep_Dive|Diffusion 深度页]] — 扩散模型的核心原理
 - [[../../概念/Vision/generative-vision-models|生成式视觉模型概念卡]] — GAN/Diffusion/VAE 概念定义
-- [[../../10_部署推理/05_Quantization|量化部署]] — 生成模型推理优化
+- [[10_部署推理/05_Quantization|量化部署]] — 生成模型推理优化
 - [[../../08_模型评估/02_Benchmarks/Multimodal_Evaluation_Benchmarks|多模态评估]] — 生成质量评估指标
 
 ---

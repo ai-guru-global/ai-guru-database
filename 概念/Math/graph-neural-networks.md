@@ -25,8 +25,11 @@ aliases:
   - "Graph Neural Networks"
   - "graph neural networks"
 
+name_zh: "图神经网络"
 ---
 # 图神经网络 (Graph Neural Networks)
+
+> 中文简称：图神经网络
 
 > 深度学习三大架构之一（CNN/RNN/GNN），处理万物之间的连接。
 

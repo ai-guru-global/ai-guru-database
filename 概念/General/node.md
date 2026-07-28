@@ -18,9 +18,12 @@ relationships:
   - target: "概念/pod"
     type: related_to
 sources: []
+name_zh: "K8s 工作节点"
 ---
 
 # Node
+
+> 中文简称：K8s 工作节点
 
 > **一句话理解**: Node 是 Kubernetes 集群里的「算力单元」——Pod 最终都跑在 Node 上，由控制面统一调度与管理。
 

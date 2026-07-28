@@ -11,8 +11,11 @@ aliases:
   - Performance_Benchmarks
 sources: []
 
+name_zh: "性能基准"
 ---
 # Performance Benchmarks
+
+> 中文简称：性能基准
 
 > Industry standards and internal benchmarks for agent evaluation
 

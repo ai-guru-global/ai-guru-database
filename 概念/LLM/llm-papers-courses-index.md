@@ -23,9 +23,12 @@ tier: supporting
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "LLM 论文与课程资源索引"
 ---
 
 # LLM 论文与课程资源索引
+
+> 中文简称：LLM 论文与课程资源索引
 
 ## 一句话总结
 

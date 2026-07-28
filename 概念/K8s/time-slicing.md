@@ -16,9 +16,12 @@ relationships:
   - target: "概念/gpu-sharing"
     type: implements
 sources: []
+name_zh: "GPU 时间分片"
 ---
 
 # Time Slicing
+
+> 中文简称：GPU 时间分片
 
 > **一句话理解**: GPU 时间片就是「多个任务排队轮流用 GPU」，成本低但互相可能影响性能。
 

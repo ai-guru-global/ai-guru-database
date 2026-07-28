@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "AI 职业指南"
 ---
 # AI 职业指南 (AI Career Guide)
+
+> 中文简称：AI 职业指南
 
 ## 1. 2026 AI 岗位全景
 
@@ -114,8 +117,8 @@ LEARNING_PATHS = {
 - [[00_入门/|入门]]
 - [[90_学习/|学习]]
 - [[21_面试岗位/|面试岗位]]
-- [[21_面试岗位/Interview_Preparation/|面试准备]]
-- [[00_入门/AI_Tools_Landscape/|AI 工具全景]]
+- [[21_面试岗位/Interview_Guide/Interview_Preparation|面试准备]]
+- [[00_入门/02_Technology_Overview/index|AI 工具全景]]
 
 ## 5. AI 岗位全景图
 

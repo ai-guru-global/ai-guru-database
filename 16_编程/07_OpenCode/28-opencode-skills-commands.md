@@ -16,6 +16,7 @@ tier: peripheral
 updated: 2026-06-30
 summary: "Agent Skill 与自定义命令 — 专题文档"
 sources: []
+name_zh: "Agent Skill 与自定义命令"
 ---
 title: Agent Skill 与自定义命令
 description: '**文档类型**: 扩展开发专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, Skill, SKILL.md,
@@ -55,6 +56,8 @@ k8s_versions:
 - '1.32'
 ---
 # Agent Skill 与自定义命令
+
+> 中文简称：Agent Skill 与自定义命令
 
 > **文档类型**: 扩展开发专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, Skill, SKILL.md, Custom Command, Template, Arguments, Shell Output, File Reference
 

@@ -22,8 +22,11 @@ aliases:
   - "GPT-3 Paper"
   - "Language Models are Few-Shot Learners"
 
+name_zh: "论文导读"
 ---
 # 论文导读: Language Models are Few-Shot Learners (GPT-3)
+
+> 中文简称：论文导读
 
 > **一句话理解**: OpenAI 2020 年发布的 GPT-3，用 1750 亿参数的单一语言模型，在不微调的情况下仅靠提示词中的几个例子（few-shot）就能完成翻译、问答、写代码、做算术等数十种任务——这篇论文实证了"规模即能力"的 Scaling Law，定义了"上下文学习（In-Context Learning）"这一全新范式，是 ChatGPT 与整个大模型时代的直接起点。
 

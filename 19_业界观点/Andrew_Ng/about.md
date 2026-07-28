@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Andrew Ng 简介"
 ---
 # Andrew Ng 简介 (Andrew Ng)
+
+> 中文简称：Andrew Ng 简介
 
 ## 一句话概括
 

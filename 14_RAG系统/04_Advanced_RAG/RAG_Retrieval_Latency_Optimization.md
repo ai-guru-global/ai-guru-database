@@ -8,9 +8,12 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "RAG 检索延迟优化"
 ---
 
 # RAG 检索延迟优化
+
+> 中文简称：RAG 检索延迟优化
 
 > **一句话理解**: RAG 检索慢通常不是「向量数据库慢」，而是「索引没选对、过滤条件没优化、reranker 太重、或者 embedding 模型响应慢」。
 

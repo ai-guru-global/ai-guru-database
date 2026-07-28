@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "医疗健康"
+name_en: "Healthcare"
 ---
 
 # Healthcare
+
+> 中文简称：医疗健康 ｜ English Name: Healthcare
 
 医疗健康（Healthcare）— AI 在医学影像（medical imaging）、药物研发、临床决策支持与患者管理中的应用。
 

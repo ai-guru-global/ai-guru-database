@@ -11,8 +11,11 @@ aliases:
   - Grok_Guide
 sources: []
 
+name_zh: "Grok / Grok Code 使用指南"
 ---
 # Grok / Grok Code 使用指南
+
+> 中文简称：Grok / Grok Code 使用指南
 
 > **一句话**: xAI 的 Grok 搭配 X Premium+ 订阅，通过龙虾（Lobechat/第三方客户端）接入可实现无限制 Credit 的高频会话，是性价比极高的编程辅助工具。
 

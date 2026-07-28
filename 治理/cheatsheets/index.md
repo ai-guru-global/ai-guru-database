@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "速查表"
+name_en: "cheatsheets"
 ---
 
 # Cheatsheets
+
+> 中文简称：速查表 ｜ English Name: cheatsheets
 
 This page indexes the contents of `治理/cheatsheets`.
 

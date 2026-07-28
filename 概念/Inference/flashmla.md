@@ -30,9 +30,12 @@ aliases:
   - "FlashMLA Kernel"
   - "FlashMLA 注意力加速"
 
+name_zh: "FlashMLA 注意力加速"
 ---
 
 # FlashMLA 注意力加速
+
+> 中文简称：FlashMLA 注意力加速
 
 > **一句话理解**: FlashMLA 是 DeepSeek 的“MLA 专属加速器”——为 Multi-head Latent Attention 量身定制的注意力内核，H800 峰值 660 TFLOPS。
 

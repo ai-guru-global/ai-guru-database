@@ -12,8 +12,11 @@ aliases:
   - OCR_Text_Recognition
 sources: []
 
+name_zh: "OCR 与文字识别"
 ---
 # OCR 与文字识别
+
+> 中文简称：OCR 与文字识别
 
 > **一句话秒懂**: OCR 就像给电脑装了一双"识字眼"，能看懂图片里的文字，把它变成可以编辑的文本。
 

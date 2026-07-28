@@ -11,8 +11,11 @@ aliases:
   - Attention_Is_All_You_Need_Deep_Dive
 sources: []
 
+name_zh: "Attention Is All You Need 深度解读"
 ---
 # Attention Is All You Need 深度解读
+
+> 中文简称：Attention Is All You Need 深度解读
 
 > **一句话理解**: 这篇论文就像 AI 领域的"相对论"——它证明了你不需要复杂的 RNN 或 CNN，只靠"注意力机制"就能理解序列中每个词与其他所有词的关系，从而彻底改变了自然语言处理乃至整个人工智能的架构范式。
 

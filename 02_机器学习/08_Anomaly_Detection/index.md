@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "异常检测"
+name_en: "Anomaly Detection"
 ---
 
 # Anomaly Detection
+
+> 中文简称：异常检测 ｜ English Name: Anomaly Detection
 
 异常检测（Anomaly Detection）— 监督/无监督异常检测算法，涵盖 Isolation Forest、AutoEncoder 与时间序列异常检测。
 

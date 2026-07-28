@@ -12,8 +12,11 @@ aliases:
   - Privacy_Preserving_AI_for_dummy
 sources: []
 
+name_zh: "隐私保护 AI 小白指南"
 ---
 # 隐私保护 AI 小白指南 (Privacy Preserving AI for Dummy)
+
+> 中文简称：隐私保护 AI 小白指南
 
 > **一句话理解**: 隐私保护 AI 就像"蒙眼猜谜"——让 AI 学到有用的知识，但永远看不到你的私人数据。
 

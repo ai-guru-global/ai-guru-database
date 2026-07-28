@@ -11,8 +11,11 @@ aliases:
   - Scoring_System
 sources: []
 
+name_zh: "评分系统"
 ---
 # Scoring System
+
+> 中文简称：评分系统
 
 > Comprehensive methodology for calculating and comparing agent scores
 

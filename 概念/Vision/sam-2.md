@@ -30,9 +30,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "SAM 2 / 视频分割 2.0"
 ---
 
 # SAM 2 / 视频分割 2.0
+
+> 中文简称：SAM 2 / 视频分割 2.0
 
 > **一句话理解**:SAM 2 把 SAM 从"图像"扩展到"视频"——用流式记忆 + 提示式交互实现任意视频对象跟踪分割,1 张 GPU 17 FPS 实时,质量比 SAM 提升 2x。Meta 2024-07 开源 + SA-V 数据集,正在重塑视频编辑、自动驾驶、AR、机器人视觉。
 
@@ -303,7 +306,7 @@ masks, scores, _ = predictor.predict(
 
 - [[概念/sam|Sam]]
 - [[概念/image-segmentation|Image Segmentation]]
-- [[概念/video-llm|Video Llm]]
+- [[概念/LLM/multimodal-llm|Video Llm]]
 - [[概念/vision-language-model|Vision Language Model]]
 - [[概念/foundation-model|Foundation Model]]
 - [[概念/image-restoration|Image Restoration]]

@@ -33,9 +33,12 @@ sources:
   - Wei et al. 2022 CoT 论文
   - Ouyang et al. 2022 InstructGPT
   - Stanford CRFM
+name_zh: "LLM 涌现能力"
 ---
 
 # LLM 涌现能力(Emergent Abilities)
+
+> 中文简称：LLM 涌现能力
 
 ## 一句话总结
 

@@ -23,9 +23,12 @@ tier: supporting
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "线性偏置注意力"
 ---
 
 # ALiBi（Attention with Linear Biases）
+
+> 中文简称：线性偏置注意力
 
 ## 一句话总结
 

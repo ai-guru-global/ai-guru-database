@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "测试方法论"
+name_en: "Testing Methodologies"
 ---
 
 # Testing Methodologies
+
+> 中文简称：测试方法论 ｜ English Name: Testing Methodologies
 
 Agent 测试框架与测试套件设计方法论（test suite design methodology）— 从单元测试到端到端场景测试的完整测试体系。
 

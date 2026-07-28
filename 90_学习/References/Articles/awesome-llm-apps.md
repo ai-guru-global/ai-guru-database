@@ -13,8 +13,11 @@ aliases:
   - "Awesome Llm Apps"
   - "awesome llm apps"
 
+name_zh: "Awesome LLM Apps 集合"
 ---
 # Awesome LLM Apps 集合 (10k)
+
+> 中文简称：Awesome LLM Apps 集合
 
 > **一句话理解**: LLM 应用案例集合,含 RAG、Agent、聊天机器人等各类实际应用实现。
 
@@ -32,7 +35,7 @@ aliases:
 - 多模态应用(图像、音频)
 - 工具集成(搜索、数据库)
 
-> **关联**: -> [[05_大模型|NLP/LLM]] | [[Agent|Agent 生产]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[05_大模型|NLP/LLM]] | [[概念/Agent|Agent 生产]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识框架

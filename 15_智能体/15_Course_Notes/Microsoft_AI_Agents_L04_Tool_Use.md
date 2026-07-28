@@ -27,8 +27,11 @@ aliases:
   - "Microsoft AI Agents L04 Tool Use"
   - Microsoft_AI_Agents_L04_Tool_Use
 
+name_zh: "L04 工具使用设计模式"
 ---
 # L04 工具使用设计模式
+
+> 中文简称：L04 工具使用设计模式
 
 > 来源：[Microsoft AI Agents for Beginners / 04-tool-use](https://github.com/microsoft/ai-agents-for-beginners/tree/main/04-tool-use)
 

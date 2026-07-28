@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Demis Hassabis 简介"
 ---
 # Demis Hassabis 简介 (Demis Hassabis)
+
+> 中文简称：Demis Hassabis 简介
 
 ## 一句话概括
 

@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "nvidia-smi GPU 监控工具"
 ---
 
 # nvidia-smi GPU 监控工具
+
+> 中文简称：nvidia-smi GPU 监控工具
 
 > **一句话理解**: nvidia-smi 是 GPU 运维的"仪表盘"——一行命令看 GPU 状态，AI Stack 生产工具链的核心监控组件。
 

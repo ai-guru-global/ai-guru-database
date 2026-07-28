@@ -12,8 +12,11 @@ aliases:
   - Pruning_and_Knowledge_Distillation
 sources: []
 
+name_zh: "Pruning 与知识蒸馏：LLM 压缩实战"
 ---
 # Pruning 与知识蒸馏：LLM 压缩实战 (Pruning and Knowledge Distillation for LLMs)
+
+> 中文简称：Pruning 与知识蒸馏：LLM 压缩实战
 
 > **一句话理解**: Pruning 是给模型"减肥"——把多余的脑细胞去掉；蒸馏是给模型"请家教"——让大模型教小模型做题。两者结合就能得到一个又小又聪明的模型。
 

@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "运维评估"
+name_en: "Evaluation"
 ---
 
 # Evaluation
+
+> 中文简称：运维评估 ｜ English Name: Evaluation
 
 ## 文件导航
 

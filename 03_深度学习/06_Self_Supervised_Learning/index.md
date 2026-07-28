@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "自监督学习"
+name_en: "Self Supervised Learning"
 ---
 
 # Self-Supervised Learning
+
+> 中文简称：自监督学习 ｜ English Name: Self Supervised Learning
 
 自监督学习（Self-Supervised Learning / SSL）— 对比学习（contrastive learning）、掩码建模（masked modeling）与自监督预训练。
 

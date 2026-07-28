@@ -22,9 +22,12 @@ lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-07-21T00:00:00Z
+name_zh: "集成学习"
 ---
 
 # 集成学习
+
+> 中文简称：集成学习
 
 集成学习的核心思想：**组合多个弱学习器，构建一个强学习器**。通过偏差-方差分解理解：$\text{MSE} = \text{Bias}^2 + \text{Variance} + \text{Noise}$。三大范式各有侧重——Bagging 降低方差、Boosting 降低偏差、Stacking 整合互补信息。在监督学习的结构化数据场景中，集成方法几乎是最强方案。
 

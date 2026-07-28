@@ -30,9 +30,12 @@ tier: supporting
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "每 token 生成时间"
 ---
 
 # TPOT（Time Per Output Token）
+
+> 中文简称：每 token 生成时间
 
 ## 一句话总结
 

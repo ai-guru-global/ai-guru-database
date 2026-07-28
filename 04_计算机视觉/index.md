@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "计算机视觉"
+name_en: "Computer Vision"
 ---
 
 # Computer Vision
+
+> 中文简称：计算机视觉 ｜ English Name: Computer Vision
 
 This page indexes the contents of `计算机视觉`.
 

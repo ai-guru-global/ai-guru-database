@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-21
 sources: []
+name_zh: "入门"
+name_en: "AI Introduction"
 ---
 
 # AI 入门
+
+> 中文简称：入门 ｜ English Name: AI Introduction
 
 本目录是 AI 入门知识的主索引，按主题分为四个子目录。`入门` 为原 `AI入门` 的中文简称。
 
@@ -203,3 +207,7 @@ sources: []
 
 ---
 *Last updated: 2026-07-21*
+
+## 相关文档
+
+- [[00_入门/01_Fundamentals/AI-Intro-in-nutshell|AI 入门速览 (nutshell)]]

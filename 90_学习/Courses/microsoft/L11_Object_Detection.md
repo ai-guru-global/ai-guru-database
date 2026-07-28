@@ -12,8 +12,11 @@ aliases:
   - L11_Object_Detection
 sources: []
 
+name_zh: "L11 - 目标检测"
 ---
 # L11 - 目标检测
+
+> 中文简称：L11 - 目标检测
 
 > **一句话理解**：目标检测（Object Detection）不仅是给整张图贴一个类别标签，而是要为图中每个感兴趣物体标出类别并画出边界框（Bounding Box）。
 

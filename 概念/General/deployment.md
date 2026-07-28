@@ -17,6 +17,7 @@ relationships:
   - target: "概念/kustomize"
     type: related_to
 sources: []
+name_zh: "K8s 无状态部署"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -24,6 +25,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # Deployment
+
+> 中文简称：K8s 无状态部署
 
 > **一句话理解**: Deployment 是 K8s 上管理无状态应用的「自动运维器」——你声明要跑几个 Pod、用什么镜像，它负责创建、更新、扩缩和自动恢复。
 

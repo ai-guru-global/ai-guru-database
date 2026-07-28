@@ -20,8 +20,11 @@ aliases:
   - "Build Multi Agent System"
   - "build multi agent system"
 
+name_zh: "从零构建多智能体系统"
 ---
 # Build a Multi-Agent System
+
+> 中文简称：从零构建多智能体系统
 
 > **一句话理解**: Manning 出品的"从零构建"系列之一，聚焦多 Agent 系统的底层设计，讲解 Agent 间通信、任务分解与协作编排，适合深入理解多智能体架构。
 

@@ -20,9 +20,12 @@ lifecycle_changed: 2026-07-21
 created: 2026-07-21
 updated: 2026-07-21
 tier: supporting
+name_zh: "3D 视觉"
 ---
 
 # 3D 视觉
+
+> 中文简称：3D 视觉
 
 > 一句话理解：从 2D 图像/视频恢复三维结构，或直接从 3D 传感器获取空间信息。
 

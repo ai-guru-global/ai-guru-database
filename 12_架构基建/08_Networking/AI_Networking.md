@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "AI 网络基础设施"
 ---
 # AI 网络基础设施
+
+> 中文简称：AI 网络基础设施
 
 ## 1. 网络层次
 
@@ -150,7 +153,7 @@ mpirun -np 64 ./all_reduce_perf -b 8 -e 1G -f 2 -g 8
 ## 6. 交叉引用
 
 - [[12_架构基建/|架构基建]]
-- [[07_模型训练/Training_Infrastructure/|训练基础设施]]
+- [[07_模型训练/04_Distributed_Training/Training_Infrastructure|训练基础设施]]
 - [[07_模型训练/04_Distributed_Training/|分布式训练]]
 - [[概念/General/infiniBand|InfiniBand]]
 - [[概念/General/rdma-roce|RDMA/RoCE]]

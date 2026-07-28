@@ -17,9 +17,12 @@ relationships:
   - target: "概念/prometheus"
     type: related_to
 sources: []
+name_zh: "Jaeger 链路追踪"
 ---
 
 # Jaeger
+
+> 中文简称：Jaeger 链路追踪
 
 > **一句话理解**: Jaeger 是给微服务请求画「调用地图」的工具，能看清一次请求经过哪些服务、每段耗时、哪里出错。
 

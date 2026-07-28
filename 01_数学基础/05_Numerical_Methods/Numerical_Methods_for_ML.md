@@ -11,8 +11,11 @@ aliases:
   - Numerical_Methods_for_ML
 sources: []
 
+name_zh: "数值方法与机器学习: 从浮点精度到混合精度训练的数学基础"
 ---
 # 数值方法与机器学习: 从浮点精度到混合精度训练的数学基础
+
+> 中文简称：数值方法与机器学习: 从浮点精度到混合精度训练的数学基础
 
 > **一句话理解**: 数值方法是 ML 的"工程数学"——浮点精度决定了训练的稳定性，矩阵分解是线性代数的计算实现，自动微分让反向传播成为可能，混合精度训练在数值精度和计算效率间取得平衡，理解这些才能让模型在 GPU 上稳定收敛。
 
@@ -174,7 +177,7 @@ AD 不是近似! 它精确计算导数 (到机器精度)
   - 最多 n 步精确收敛; 实际 O(√κ(A)) 步达到 ε 精度
   - 只需矩阵-向量乘 A·v (不需要显式 A!)
   → 可以用 Hessian-vector product 实现二阶优化!
-  ML: 自然梯度 F⁻¹g 用 CG 求解; 参见: [[Natural_Gradient]]
+  ML: 自然梯度 F⁻¹g 用 CG 求解; 参见: Natural_Gradient
 
 稀疏性来源:
 ┌─────────────────────────────────────────────────────────────────┐
@@ -206,7 +209,7 @@ Loss Scaling (FP16 专用):
 BF16 vs FP16:
   BF16: 指数位=8 (范围大), 尾数位=7 → 通常不需要 loss scaling
   FP16: 指数位=5 (范围小), 尾数位=10 → 需要 loss scaling
-  参见: [[Mixed_Precision_Training]], [[GPU_Architecture]]
+  参见: [[Mixed_Precision_Training]], GPU_Architecture
 ```
 
 ---
@@ -270,7 +273,7 @@ QR: A = QR → 把 A 的列向量正交化
 内存优化:
   - 存储所有激活: O(L × batch × hidden) → 可能 OOM
   - 梯度检查点: 只存部分, 反向时重算 → 时间换空间
-  - 参见: [[Gradient_Checkpointing]], [[Memory_Efficient_Training]]
+  - 参见: [[概念/Training/gradient-checkpointing|Gradient_Checkpointing]], [[Memory_Efficient_Training]]
 ```
 
 ### 4.2 数值稳定的常见技巧
@@ -299,7 +302,7 @@ LoRA: W = W₀ + ΔW = W₀ + BA, B∈R^{d×r}, A∈R^{r×k}, r << min(d,k)
   - 假设: 微调的"有效维度"远小于参数维度
   - 初始化: A ~ N(0, σ²), B = 0 → 初始 ΔW = 0
   - 秩选择: r = 4~64 (与 ΔW 奇异值衰减速度相关)
-  - 存储: O(r(d+k)) vs O(dk); 参见: [[LoRA]], [[Parameter_Efficient_Fine_Tuning]]
+  - 存储: O(r(d+k)) vs O(dk); 参见: [[LoRA]], [[概念/Training/lora-peft|Parameter_Efficient_Fine_Tuning]]
 ```
 
 ### 4.4 GPU 计算的数值考量
@@ -317,9 +320,9 @@ LoRA: W = W₀ + ΔW = W₀ + BA, B∈R^{d×r}, A∈R^{r×k}, r << min(d,k)
   1. 非确定性归约: (a+b)+(c+d) vs (a+c)+(b+d) → 不同舍入
   2. Tensor Core: 维度必须是 8/16 的倍数; 输入 BF16, 累加 FP32
   3. FlashAttention: 在线 softmax + 分块, 内存 O(N) vs O(N²)
-     参见: [[FlashAttention]], [[Efficient_Transformers]]
+     参见: [[概念/LLM/flash-attention-kernels|FlashAttention]], [[Efficient_Transformers]]
   4. 分布式 AllReduce: 多 GPU 梯度聚合, 通信精度影响收敛
-     参见: [[Distributed_Training]]
+     参见: [[概念/Training/distributed-training|Distributed_Training]]
 ```
 
 ---
@@ -528,7 +531,7 @@ x_test = np.random.randn(1000)
 err = np.max(np.abs(online_softmax(x_test) - F.softmax(torch.tensor(x_test), dim=0).numpy()))
 print(f"\n在线 softmax 误差: {err:.2e} → 数值等价, 内存 O(1) vs O(N)")
 print("→ FlashAttention 用此技巧避免存储 N×N 注意力矩阵")
-print("→ 参见: [[FlashAttention]]")
+print("→ 参见: [[概念/LLM/flash-attention-kernels|FlashAttention]]")
 ```
 
 ---
@@ -564,26 +567,26 @@ print("→ 参见: [[FlashAttention]]")
 
 ### 7.1 前置知识
 
-- [[Linear_Algebra_Essentials]] — 矩阵分解的数学理论
-- [[Calculus_Fundamentals]] — 链式法则、多元微积分
-- [[GPU_Architecture]] — Tensor Core、内存层次
+- Linear_Algebra_Essentials — 矩阵分解的数学理论
+- Calculus_Fundamentals — 链式法则、多元微积分
+- GPU_Architecture — Tensor Core、内存层次
 
 ### 7.2 直接应用
 
-- [[Backpropagation]] — 反向传播 = 反向模式 AD
+- Backpropagation — 反向传播 = 反向模式 AD
 - [[Mixed_Precision_Training]] — AMP 的完整实践
 - [[LoRA]] — 低秩适应的数值实现
-- [[FlashAttention]] — 数值稳定的高效注意力
-- [[Gradient_Checkpointing]] — 用计算换内存
+- [[概念/LLM/flash-attention-kernels|FlashAttention]] — 数值稳定的高效注意力
+- [[概念/Training/gradient-checkpointing|Gradient_Checkpointing]] — 用计算换内存
 
 ### 7.3 延伸连接
 
-- [[Optimization_Methods]] — SGD/Adam 的数值行为
-- [[Distributed_Training]] — 多 GPU 数值一致性
-- [[Model_Quantization]] — 低精度推理
-- [[Neural_ODE]] — ODE 数值求解
-- [[Diffusion_Models]] — SDE/ODE 采样器
-- [[Natural_Gradient]] — Fisher 矩阵的 CG 求解
+- Optimization_Methods — SGD/Adam 的数值行为
+- [[概念/Training/distributed-training|Distributed_Training]] — 多 GPU 数值一致性
+- [[概念/Inference/quantization|Model_Quantization]] — 低精度推理
+- Neural_ODE — ODE 数值求解
+- [[概念/General/diffusion-models|Diffusion_Models]] — SDE/ODE 采样器
+- Natural_Gradient — Fisher 矩阵的 CG 求解
 - [[Measure_Theory_for_ML]] — 数值积分的测度论基础
 - [[Optimal_Transport_for_ML]] — Sinkhorn 的数值实现
 

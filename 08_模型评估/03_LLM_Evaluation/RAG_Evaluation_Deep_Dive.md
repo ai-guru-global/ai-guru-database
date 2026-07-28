@@ -12,8 +12,11 @@ aliases:
   - RAG_Evaluation_Deep_Dive
 sources: []
 
+name_zh: "RAG 系统评估深度解析"
 ---
 # RAG 系统评估深度解析 (RAG Evaluation Deep Dive)
+
+> 中文简称：RAG 系统评估深度解析
 
 > **一句话理解**: RAG 系统评估不是只看答案对不对，而是要把检索和生成两个环节拆开测量——检索是否找到了相关文档，生成是否忠于检索到的上下文，以及最终回答是否真正解决了用户问题。
 

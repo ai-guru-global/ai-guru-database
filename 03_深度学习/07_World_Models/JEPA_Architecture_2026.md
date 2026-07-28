@@ -12,8 +12,11 @@ aliases:
   - JEPA_Architecture_2026
 sources: []
 
+name_zh: "JEPA 架构深度解析：LeCun 的世界模型之路"
 ---
 # JEPA 架构深度解析：LeCun 的世界模型之路
+
+> 中文简称：JEPA 架构深度解析：LeCun 的世界模型之路
 
 > 全面解析 Joint Embedding Predictive Architecture (JEPA)：自监督学习的世界模型、视频理解的核心架构、通向 AGI 的关键路径
 > 

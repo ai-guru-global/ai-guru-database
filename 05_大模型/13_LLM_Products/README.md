@@ -4,9 +4,12 @@ tags: [nlp, llm, products, chatgpt, claude, gemini, production]
 status: complete
 last_updated: 2026-07-21
 sources: []
+name_zh: "大模型产品总览"
 ---
 
 # LLM Products Overview
+
+> 中文简称：大模型产品总览
 
 ## Purpose
 

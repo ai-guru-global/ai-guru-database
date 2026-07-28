@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "AI 技术栈"
+name_en: "AI Stack"
 ---
 
 # AI Stack
+
+> 中文简称：AI 技术栈 ｜ English Name: AI Stack
 
 This page indexes the contents of `12_架构基建/03_AI_Stack`.
 

@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "法律政务专题"
 ---
 
 # Legal & Government
+
+> 中文简称：法律政务专题
 
 法律与政务（Legal & Government）— AI 在合同审查（contract review）、法律检索、政策分析与政务服务中的应用。
 

@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "TruLens LLM 评估与反馈"
 ---
 
 # TruLens LLM 评估与反馈
+
+> 中文简称：TruLens LLM 评估与反馈
 
 > **一句话理解**: TruLens 是"LLM 应用的评估仪表盘"——用 Feedback Functions 自定义评估逻辑，追踪 + 评估一体化，帮你量化 LLM 应用质量。
 

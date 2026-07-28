@@ -11,9 +11,12 @@ aliases:
   - "Flash Attention Deep Dive"
   - FlashAttention_Deep_Dive
 sources: []
+name_zh: "FlashAttention 深度解读"
 ---
 
 # FlashAttention 深度解读 (Fast and Memory-Efficient Exact Attention with IO-Awareness)
+
+> 中文简称：FlashAttention 深度解读
 
 > **一句话理解**: FlashAttention 就像一个聪明的大厨——不把所有食材一次性铺满厨房（不把 N×N 注意力矩阵全写进 HBM 显存），而是分批取用、边做边清理，用严格的数学分块（tiling）计算得到完全相同的结果，却把显存从 O(N²) 降到 O(N)、速度提升 2-8 倍。它是今天所有大模型长上下文能力的底层基石。
 
@@ -767,8 +770,8 @@ mindmap
 - [[20_论文精读/02_Architecture/Mixture_of_Experts_Deep_Dive]] — MoE 与 FlashAttention 常结合使用
 - [[20_论文精读/03_Scaling/GPT4_Deep_Dive]] — GPT-4 的长上下文能力依赖 FlashAttention 类技术
 - [[20_论文精读/09_Frontier/DeepSeek_V3_Technical_Report]] — 现代大模型的注意力实现
-- [[概念/GPU/sram-vs-hbm]] — GPU 内存层级详解
-- [[概念/Training/kernel-fusion]] — Kernel Fusion 技术原理
+- [[概念/GPU/advanced-attention-kernels|sram-vs-hbm]] — GPU 内存层级详解
+- [[概念/GPU/cuda-graph|kernel-fusion]] — Kernel Fusion 技术原理
 - [[概念/Inference/kv-cache]] — KV Cache 与 FlashAttention 的关系
 
 ---

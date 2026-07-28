@@ -12,12 +12,15 @@ aliases:
   - Quantization_Precision_Deep_Dive
 sources: []
 
+name_zh: "量化精度深度解析"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # 量化精度深度解析 (Quantization Precision Deep Dive)
+
+> 中文简称：量化精度深度解析
 
 > **核心问题**：量化把模型"压小"了，但它到底"变傻"了多少？哪些能力先退化？怎么量化地评估和缓解？
 

@@ -20,9 +20,12 @@ aliases:
   - "Transformer"
   - "transformer"
 sources: []
+name_zh: "Transformer 大白话解释"
 ---
 
 # Transformer 大白话解释
+
+> 中文简称：Transformer 大白话解释
 
 > 一句话：**Transformer 是一种让模型“整句话一起看、互相找关系”的神经网络结构，是现代大语言模型的基础。**
 

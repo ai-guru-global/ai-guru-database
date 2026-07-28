@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "大模型评估"
+name_en: "LLM Evaluation"
 ---
 
 # LLM Evaluation
+
+> 中文简称：大模型评估 ｜ English Name: LLM Evaluation
 
 ## 文件导航
 

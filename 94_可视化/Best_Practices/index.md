@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-23
 sources: []
 tags: [best-practices, index, navigation]
+name_zh: "最佳实践"
+name_en: "Best Practices"
 ---
 
 # 可视化最佳实践（Best Practices）
+
+> 中文简称：最佳实践 ｜ English Name: Best Practices
 
 > **一句话理解**: 可视化最佳实践是"图表的宪法"——选对图、配好色、标清楚、讲成故事，让数据从"看得见"升级为"看得懂、用得上"。
 

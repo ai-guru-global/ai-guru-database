@@ -11,8 +11,11 @@ aliases:
   - Data_Ingestion_Pipeline
 sources: []
 
+name_zh: "数据摄入管道"
 ---
 # 数据摄入管道 (Data Ingestion Pipeline)
+
+> 中文简称：数据摄入管道
 
 > **一句话理解**: 数据摄入管道就像图书馆的"新书处理流水线"——从采购（抓取数据）、拆包（解析内容）、编目（分块+嵌入）到上架（存入向量数据库），一气呵成。
 

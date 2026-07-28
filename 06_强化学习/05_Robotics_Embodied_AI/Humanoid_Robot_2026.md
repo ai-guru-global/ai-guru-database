@@ -11,8 +11,11 @@ aliases:
   - Humanoid_Robot_2026
 sources: []
 
+name_zh: "人形机器人 2026"
 ---
 # 人形机器人 2026 (Humanoid Robots)
+
+> 中文简称：人形机器人 2026
 
 > **TL;DR**: 人形机器人是具身智能的"终极形态"——2026 年，Tesla Optimus 进入工厂试用，Figure 02 完成融资并展示灵巧操作，Unitree 以低成本路线抢占研究市场，Boston Dynamics Atlas 转型电动版。行业正从"炫技 demo"走向"可量产、能干活"的商业化拐点。
 

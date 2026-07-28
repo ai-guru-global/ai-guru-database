@@ -16,9 +16,12 @@ relationships:
   - target: "概念/kserve"
     type: related_to
 sources: []
+name_zh: "模型回滚"
 ---
 
 # Model Rollback
+
+> 中文简称：模型回滚
 
 > **一句话理解**: 模型回滚就是把线上「表现不好」的模型版本撤下来，换回到之前「表现好」的版本，同时保证权重、tokenizer、配置都一致。
 

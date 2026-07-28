@@ -1,4 +1,9 @@
+---
+name_zh: "AI 协作指令"
+---
 # AGENTS.md — 项目协作指令
+
+> 中文简称：AI 协作指令
 
 本文件为所有 AI agent（opencode / claude / codex 等）在本仓库工作时必须遵守的统一规则。
 

@@ -27,9 +27,12 @@ provenance:
 base_confidence: 0.90
 created: 2026-06-24
 updated: 2026-06-24
+name_zh: "偏好学习"
 ---
 
 # Preference Learning（偏好学习）
+
+> 中文简称：偏好学习
 
 ## 核心要点
 

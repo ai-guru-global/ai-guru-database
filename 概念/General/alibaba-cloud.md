@@ -17,9 +17,12 @@ relationships:
   - target: "概念/apsara-stack"
     type: provides
 sources: []
+name_zh: "阿里云"
 ---
 
 # Alibaba Cloud
+
+> 中文简称：阿里云
 
 > **一句话理解**: 阿里云是中国最大的公有云服务商之一，提供计算、存储、网络、数据库、大数据、AI 等全栈云产品。
 

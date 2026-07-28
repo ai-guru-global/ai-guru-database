@@ -8,9 +8,12 @@ updated: 2026-06-24
 status: completed
 baseline: 治理/_evaluation-2026-06-24.md (2026-06-24, 8.5/10)
 sources: []
+name_zh: "AI Guru 知识库改进执行报告"
 ---
 
 # AI Guru 知识库改进执行报告（2026-06-24）
+
+> 中文简称：AI Guru 知识库改进执行报告
 
 > **执行日期**: 2026-06-24
 > **执行依据**: [[治理/_evaluation-2026-06-24|2026-06-24 评估报告]]

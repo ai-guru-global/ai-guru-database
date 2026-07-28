@@ -12,8 +12,11 @@ aliases:
   - DeepSpeed_for_dummy
 sources: []
 
+name_zh: "DeepSpeed 入门：用更少的 GPU 训练更大的模型"
 ---
 # DeepSpeed 入门：用更少的 GPU 训练更大的模型
+
+> 中文简称：DeepSpeed 入门：用更少的 GPU 训练更大的模型
 
 > **一句话理解**: DeepSpeed 是微软开源的「大模型训练加速器」，它能把模型权重、梯度和优化器状态切分成小块分散到多张 GPU 甚至电脑内存/硬盘上，让你在原来训练不了的超大模型上跑起来。
 

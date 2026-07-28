@@ -23,9 +23,12 @@ lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-07-21T00:00:00Z
+name_zh: "强化学习"
 ---
 
 # 强化学习
+
+> 中文简称：强化学习
 
 强化学习（Reinforcement Learning, RL）是机器学习第三大范式，通过智能体（ai-agents）与环境（Environment）的交互试错学习最优策略。与监督学习的根本区别：反馈是延迟的标量奖励信号而非即时标签，数据是时序相关而非i.i.d.。RL是深度强化学习和RLHF的理论基础，也支撑着AI智能体的决策能力。
 

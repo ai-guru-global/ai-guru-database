@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "业界观点"
+name_en: "Industry Insights"
 ---
 
 # Talks
+
+> 中文简称：业界观点 ｜ English Name: Industry Insights
 
 This page indexes the contents of `业界观点`.
 
@@ -36,6 +40,7 @@ This page indexes the contents of `业界观点`.
 - [[19_业界观点/Satya_Nadella/index|Satya Nadella]]
 - [[19_业界观点/Sebastian_Thrun/index|Sebastian Thrun]]
 - [[19_业界观点/Sundar_Pichai/index|Sundar Pichai]]
+- [[19_业界观点/Wang_Huiwen/about|Wang Huiwen (王慧文)]]
 - [[19_业界观点/Wenfeng_Liang/index|Wenfeng Liang]]
 - [[19_业界观点/Yann_LeCun/index|Yann Lecun]]
 - [[19_业界观点/Yoshua_Bengio/index|Yoshua Bengio]]
@@ -105,7 +110,7 @@ This page indexes the contents of `业界观点`.
 | 了解某位领袖 | 对应目录/about.md | ⭐ |
 | 查看核心语录 | 对应目录/sayings.md | ⭐ |
 | 横向对比观点 | Talks_Synthesis/ | ⭐⭐ |
-| 学术领袖专题 | Academic_Leaders/ | ⭐⭐ |
+| 学术领袖专题 | [[19_业界观点/Talks_Synthesis/Academic_Leaders_2026|Academic_Leaders_2026]] | ⭐⭐ |
 
 > 💡 业界观点是理解AI行业方向的"多棱镜"。28位领袖，28个视角，拼出AI发展的完整图景。
 
@@ -199,3 +204,8 @@ This page indexes the contents of `业界观点`.
 
 ---
 *Last updated: 2026-07-21*
+
+## 关联导航
+
+- [[19_业界观点/Industry_Voices-in-nutshell|业界观点速览 (nutshell)]]
+- [[19_业界观点/Wang_Huiwen/Wang_Huiwen_2026_Update|王慧文 2026 动态]]

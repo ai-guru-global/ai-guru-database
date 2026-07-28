@@ -19,9 +19,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "AI 数据标注与 RLHF 平台"
 ---
 
 # Scale AI
+
+> 中文简称：AI 数据标注与 RLHF 平台
 
 [Scale AI](https://scale.com/) 是全球领先的 **AI 数据标注与 RLHF 平台**，为 OpenAI、Meta、Microsoft、Anthropic 等顶级 AI 公司提供高质量训练数据和人类反馈。它是 AI 数据标注赛道的**绝对龙头**，估值超 130 亿美元（2024），旗下产品覆盖数据标注、RLHF、模型评估和 GenAI 平台。
 

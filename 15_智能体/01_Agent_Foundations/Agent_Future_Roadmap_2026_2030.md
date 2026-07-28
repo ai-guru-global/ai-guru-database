@@ -11,8 +11,11 @@ aliases:
   - Agent_Future_Roadmap_2026_2030
 sources: []
 
+name_zh: "Agent 未来发展路线图 2026-2030"
 ---
 # Agent 未来发展路线图 2026-2030
+
+> 中文简称：Agent 未来发展路线图 2026-2030
 
 > 从当前状态到 AGI Agent：技术演进、产业变革、社会影响的全景预测
 > 

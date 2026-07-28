@@ -7,9 +7,12 @@ created: 2026-07-23
 updated: 2026-07-23
 tier: supporting
 sources: []
+name_zh: "AI Research Scientist 按公司/级别区分的题库"
 ---
 
 # AI Research Scientist 按公司/级别区分的题库
+
+> 中文简称：AI Research Scientist 按公司/级别区分的题库
 
 ---
 
@@ -132,4 +135,4 @@ sources: []
 - [[07_模型训练/index|模型训练]]
 - [[20_论文精读/index|论文精读]]
 - [[21_面试岗位/AI_Research_Engineer/index|AI Research Engineer]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]

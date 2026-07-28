@@ -23,9 +23,12 @@ provenance:
 base_confidence: 0.95
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "AI 开源生态"
 ---
 
 # Hugging Face（AI 开源生态）
+
+> 中文简称：AI 开源生态
 
 ## 核心要点
 

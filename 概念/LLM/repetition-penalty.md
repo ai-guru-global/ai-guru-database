@@ -26,9 +26,12 @@ tier: supporting
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "重复惩罚"
 ---
 
 # 重复惩罚（Repetition Penalty）
+
+> 中文简称：重复惩罚
 
 ## 一句话总结
 

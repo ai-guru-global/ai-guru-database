@@ -7,9 +7,12 @@ created: 2026-07-23
 updated: 2026-07-23
 tier: supporting
 sources: []
+name_zh: "AI Solutions Architect 面试题实例答案"
 ---
 
 # AI Solutions Architect 面试题实例答案
+
+> 中文简称：AI Solutions Architect 面试题实例答案
 
 > 每个答案采用 **结论 → 展开 → 架构图/框架 → 追问预判** 结构。
 
@@ -333,4 +336,4 @@ R:
 - [[10_部署推理/index|部署推理]]
 - [[14_RAG系统/index|RAG 系统]]
 - [[21_面试岗位/Interview_Guide/System_Design_for_AI|AI 系统设计面试]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]

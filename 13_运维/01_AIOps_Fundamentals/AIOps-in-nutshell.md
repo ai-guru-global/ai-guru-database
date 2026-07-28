@@ -11,8 +11,11 @@ aliases:
   - "AIOps in nutshell"
 sources: []
 
+name_zh: "AI Ops 速成指南"
 ---
 # AI Ops 速成指南
+
+> 中文简称：AI Ops 速成指南
 
 > 🎯 **目标**：理解 AI Ops 的核心概念、智能监控、异常检测和自动修复能力。
 

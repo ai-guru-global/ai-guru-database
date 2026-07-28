@@ -12,9 +12,13 @@ aliases:
 sources:
   - "https://www.microsoft.com/en-us/ai"
   - "https://www.penguin.co.uk/books/444/444092/the-coming-wave/"
+name_zh: "Mustafa Suleyman 人物索引"
+name_en: "Mustafa Suleyman"
 ---
 
 # Mustafa Suleyman 人物索引
+
+> 中文简称：Mustafa Suleyman 人物索引 ｜ English Name: Mustafa Suleyman
 
 > **一句话概括**: Microsoft AI CEO（2024 至今）、DeepMind 联合创始人（2010，后并入 Google）、Inflection AI 联合创始人（2022）、《The Coming Wave》作者——从 AI 安全倡导者转型为全球最大科技公司之一的核心 AI 负责人。他提出 AI 治理的核心挑战是"遏制" (containment)——如何在推动技术扩散的同时保持对其风险的控制。
 
@@ -147,6 +151,7 @@ Suleyman 的独特之处是**从安全先锋转型为商业负责人**，立场�
 - [[19_业界观点/Demis_Hassabis/about\|Demis Hassabis]] · [[19_业界观点/Satya_Nadella/about\|Satya Nadella]]
 - [[19_业界观点/Bill_Gates/about\|Bill Gates]]
 - [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[19_业界观点/Mustafa_Suleyman/Mustafa_Suleyman_2026_Update\|2026 动态更新]]
 - [[19_业界观点/index\|业界观点首页]]
 
 ---

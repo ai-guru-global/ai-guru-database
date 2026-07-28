@@ -11,8 +11,11 @@ aliases:
   - General_Chat_Agent_Benchmark
 sources: []
 
+name_zh: "通用对话/知识 Agent 测评详情"
 ---
 # 通用对话/知识 Agent 测评详情
+
+> 中文简称：通用对话/知识 Agent 测评详情
 
 > ChatGPT、Claude、Gemini、Kimi、通义千问、DeepSeek 六大通用对话 Agent 的深度测评
 

@@ -8,9 +8,12 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "AI 网络基础"
 ---
 
 # AI 网络基础
+
+> 中文简称：AI 网络基础
 
 > **一句话理解**: AI 集群里的网络决定了 GPU 之间「说话快不快」，训练大模型时，网络慢了，GPU 再强也得等。
 

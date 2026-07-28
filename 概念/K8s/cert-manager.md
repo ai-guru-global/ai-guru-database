@@ -18,11 +18,14 @@ relationships:
   - target: "概念/vault"
     type: related_to
 sources: []
+name_zh: "证书自动管理"
 ---
 
 > **归档提示**: 此概念为通用云原生工具，与AI核心关联度较低。如需学习完整的K8s知识，请参考 CNCF 官方文档。
 
 # cert-manager
+
+> 中文简称：证书自动管理
 
 > **一句话理解**: cert-manager 是 K8s 上的「自动证书管家」，能自动申请、续期、注入 TLS 证书到 Ingress、Service 或工作负载。
 

@@ -20,7 +20,7 @@ sources:
 summary: "AWQ（Activation-aware Weight Quantization）是 MIT 韩松团队 2023 年提出的 LLM INT4 量化方法，通过保护"显著权重"（基于激活分布）实现 4-bit 量化下接近 FP16 的精度，是 GPTQ 的主要替代方案。"
 lifecycle: reviewed
 tier: core
-updated: 2026-07-21
+updated: 2026-07-25
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -28,9 +28,12 @@ provenance:
 base_confidence: 0.90
 created: 2026-06-24
 updated: 2026-06-24
+name_zh: "激活感知权重量化"
 ---
 
 # AWQ（Activation-aware Weight Quantization）
+
+> 中文简称：激活感知权重量化
 
 ## 核心要点
 
@@ -149,6 +152,16 @@ llm = LLM(
 - **llama.cpp**：支持 AWQ 格式转换
 - **SGLang**：支持
 
+## 源码级洞察（基于 llm-compressor v0.12.0 归档源码）
+
+归档位置：`code/llm-frameworks/llm-compressor-v0.12.0/`（PyPI sdist）。
+
+- **AWQModifier**：`src/llmcompressor/modifiers/transform/awq/base.py` L55 `AWQModifier(Modifier)`——在 vLLM 官方压缩工具链中 AWQ 被归为 transform 类（变换型）方法，与 SmoothQuant 同目录：两者都是"先变换、后量化"。
+- **duo_scaling 网格搜索**：L148 `duo_scaling: bool | Literal["both"] = True`，搜索平滑尺度时可同时用权重+激活计算缩放因子，`"both"` 时各搜一半取优。
+- **配方化使用**：通过 `mappings` 声明 smooth_layer/balance_layers 正则（如 `re:.*q_proj`），由 `oneshot()`（`entrypoints/oneshot.py` L261）驱动逐层校准。
+
+详见 [[10_部署推理/05_Quantization/Quantization_Techniques_2026]] 第 8 节。
+
 ## Related
 
 - [[概念/gptq]] — GPTQ（AWQ 主要替代）
@@ -193,7 +206,7 @@ llm = LLM(
 - [[概念/Training/nf4|NF4]] — 4-bit 量化
 - [[概念/Training/pruning|Pruning]] — 剪枝
 - [[概念/Training/knowledge-distillation|Knowledge Distillation]] — 知识蒸馏
-- [[概念/Inference/model-quantization|Model Quantization]] — 模型量化总览
+- [[概念/Inference/quantization|Model Quantization]] — 模型量化总览
 
 > ℹ️ AWQ 是 2026 年最主流的激活感知量化方案，INT4 精度损失 < 1%，配合 vLLM/TensorRT-LLM 可获得最佳推理性能。
 

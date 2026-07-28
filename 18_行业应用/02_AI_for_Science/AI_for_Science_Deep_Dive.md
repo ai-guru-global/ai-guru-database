@@ -12,8 +12,11 @@ aliases:
   - AI_for_Science_Deep_Dive
 sources: []
 
+name_zh: "AI for Science 深度解读: 从 AlphaFold 到科学基础模型"
 ---
 # AI for Science 深度解读: 从 AlphaFold 到科学基础模型
+
+> 中文简称：AI for Science 深度解读: 从 AlphaFold 到科学基础模型
 
 > **一句话理解**: AI for Science 是用深度学习解决自然科学的核心问题——预测蛋白质结构、发现新药、模拟天气、设计新材料，它正在重塑科学研究的方式，从「实验驱动」走向「AI 驱动的科学发现」。
 

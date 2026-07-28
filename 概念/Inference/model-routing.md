@@ -27,8 +27,11 @@ aliases:
   - "Model Routing"
   - "model routing"
 
+name_zh: "模型路由"
 ---
 # 模型路由（Model Routing）
+
+> 中文简称：模型路由
 
 ## 核心要点
 

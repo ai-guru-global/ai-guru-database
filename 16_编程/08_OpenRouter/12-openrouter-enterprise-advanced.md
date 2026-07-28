@@ -14,6 +14,7 @@ aliases:
 updated: 2026-06-30
 summary: "企业级高级实践 — 专题文档"
 sources: []
+name_zh: "企业级高级实践"
 ---
 title: 企业级高级实践
 description: '# 企业级高级实践'
@@ -52,6 +53,8 @@ k8s_versions:
 ---
 
 # 企业级高级实践
+
+> 中文简称：企业级高级实践
 
 > **文档类型**: 进阶指南 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Enterprise, Provisioning, Credits, Rate Limits, App Attribution, Best Practices, Cost Management, Architecture
 

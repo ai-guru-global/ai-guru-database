@@ -31,9 +31,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "Reranker 2.0 / 重排序 2.0"
 ---
 
 # Reranker 2.0
+
+> 中文简称：Reranker 2.0 / 重排序 2.0
 
 > **一句话理解**:Reranker 2.0 把"二阶段检索"中的精排升级为"LLM-as-Reranker"——用 LLM 直接给文档打分,Qwen3-Reranker、Cohere Rerank v3、BGE-Reranker-v2-Gemma、GPT-4o-as-Reranker 各有特色。RAG 系统准确率提升 30-50% 的关键。
 
@@ -349,5 +352,5 @@ top_5 = results[:5]
 - [[概念/rag-systems|Rag Systems]]
 - [[概念/agentic-rag-2|Agentic Rag 2]]
 - [[概念/hybrid-search|Hybrid Search]]
-- [[概念/bge-m3|Bge M3]]
+- [[概念/RAG/bge-m3|Bge M3]]
 - [[概念/qwen-series|Qwen Series]]

@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "多模态视觉"
+name_en: "Multimodal Vision"
 ---
 
 # Multimodal Vision
+
+> 中文简称：多模态视觉 ｜ English Name: Multimodal Vision
 
 多模态视觉（Multimodal Vision）— 视觉-语言模型（vision-language model）、CLIP、图文匹配与 VQA 的多模态融合。
 

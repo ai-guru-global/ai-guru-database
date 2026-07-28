@@ -15,9 +15,12 @@ provenance:
 base_confidence: 0.90
 lifecycle: reviewed
 tier: supporting
+name_zh: "轻量级 Python 环境管理"
 ---
 
 # Miniconda
+
+> 中文简称：轻量级 Python 环境管理
 
 [Miniconda](https://docs.conda.io/en/latest/miniconda.html) 是 Anaconda 的轻量级发行版，仅包含 `conda` 包管理器和 Python 运行时，不包含庞大的预装科学计算包。用户按需创建隔离的虚拟环境并安装所需依赖，是 AI/ML 开发中管理 Python 环境的**标准工具**之一。
 

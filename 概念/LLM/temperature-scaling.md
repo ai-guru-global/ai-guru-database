@@ -27,9 +27,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "温度缩放"
 ---
 
 # 温度缩放（Temperature Scaling）
+
+> 中文简称：温度缩放
 
 ## 一句话总结
 

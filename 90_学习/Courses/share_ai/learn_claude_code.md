@@ -26,8 +26,11 @@ aliases:
 - Learn Claude Code
 - learn claude code
 - learn_claude_code
+name_zh: "Learn Claude Code 课程映射：20 课 Harness 工程"
 ---
 # Learn Claude Code 课程映射：20 课 Harness 工程
+
+> 中文简称：Learn Claude Code 课程映射：20 课 Harness 工程
 
 > **一句话理解**: [Learn Claude Code](https://github.com/shareAI-lab/learn-claude-code) 是一套从零实现 Claude Code 式 Agent Harness 的 20 节渐进式教程。它主张“能动性来自模型，工程人员负责 Harness”，每章在不变的 `while True` 循环上叠加一个机制。本页将课程完整课表映射到 `ai-guru-database` 的对应章节。
 

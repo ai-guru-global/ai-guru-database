@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.88
 lifecycle: reviewed
 tier: core
+name_zh: "bitsandbytes 量化优化库"
 ---
 
 # bitsandbytes 量化优化库
+
+> 中文简称：bitsandbytes 量化优化库
 
 > **一句话理解**: bitsandbytes 是"让大模型塞进小显卡的魔法师"——8-bit 优化器省一半显存，4-bit 量化省 75% 显存，QLoRA 的底层核心。
 

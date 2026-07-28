@@ -11,8 +11,11 @@ aliases:
   - Agent_Protocols_Detail
 sources: []
 
+name_zh: "AI Agent 协议详解"
 ---
 # AI Agent 协议详解：MCP、A2A、UCP
+
+> 中文简称：AI Agent 协议详解
 
 > 2026 年最新 Agent 协议全景解析：从工具标准化到多 Agent 协作的完整技术栈
 > 

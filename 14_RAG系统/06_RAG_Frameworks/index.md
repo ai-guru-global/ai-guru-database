@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "RAG 框架"
+name_en: "RAG Frameworks"
 ---
 
 # RAG Frameworks
+
+> 中文简称：RAG 框架 ｜ English Name: RAG Frameworks
 
 This page indexes the contents of `14_RAG系统/06_RAG_Frameworks`.
 

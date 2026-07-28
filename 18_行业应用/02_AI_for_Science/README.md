@@ -8,8 +8,11 @@ updated: 2026-06-04
 tier: supporting
 sources: []
 
+name_zh: "AI 驱动的科学发现"
 ---
 # AI for Science (AI 驱动的科学发现)
+
+> 中文简称：AI 驱动的科学发现
 
 > **核心定位**: AI 与自然科学的交叉前沿，用深度学习解决蛋白质折叠、药物发现、气象预测、材料设计等核心科学问题。
 

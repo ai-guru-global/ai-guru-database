@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "伦理安全"
+name_en: "Ethics & Safety"
 ---
 
 # Ethics Safety
+
+> 中文简称：伦理安全 ｜ English Name: Ethics & Safety
 
 This page indexes the contents of `伦理安全`.
 

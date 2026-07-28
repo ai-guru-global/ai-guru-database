@@ -7,9 +7,12 @@ created: 2026-07-23
 updated: 2026-07-23
 tier: supporting
 sources: []
+name_zh: "AI Reliability Engineer 面试题实例答案"
 ---
 
 # AI Reliability Engineer 面试题实例答案
+
+> 中文简称：AI Reliability Engineer 面试题实例答案
 
 > 每个答案采用 **结论 → 展开 → 代码/架构 → 追问预判** 结构。
 
@@ -298,4 +301,4 @@ R:
 - [[11_模型运维/index|模型运维]]
 - [[10_部署推理/index|部署推理]]
 - [[21_面试岗位/Interview_Guide/System_Design_for_AI|AI 系统设计面试]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]

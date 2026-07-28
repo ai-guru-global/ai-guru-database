@@ -10,9 +10,12 @@ aliases:
   - Paper Reading and Reproduction Guide
   - 论文复现 Runbook
 sources: []
+name_zh: "论文阅读与复现工程指南"
 ---
 
 # 论文阅读与复现工程指南
+
+> 中文简称：论文阅读与复现工程指南
 
 > **一句话理解**：把论文从 PDF 搬进生产系统，需要的不只是读懂公式，更是一套可复制、可验证、可落地的工程化工作流。
 

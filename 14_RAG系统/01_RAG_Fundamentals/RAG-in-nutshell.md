@@ -11,8 +11,11 @@ aliases:
   - "RAG in nutshell"
 sources: []
 
+name_zh: "RAG 速成指南"
 ---
 # RAG (检索增强生成) 速成指南
+
+> 中文简称：RAG 速成指南
 
 > 🎯 **目标**：理解如何让 AI 模型访问你自己的数据，而无需重新训练。
 

@@ -12,8 +12,11 @@ aliases:
   - LiteRT_Deep_Dive
 sources: []
 
+name_zh: "LiteRT / TensorFlow Lite: 边缘 AI 推理"
 ---
 # LiteRT / TensorFlow Lite: 边缘 AI 推理
+
+> 中文简称：LiteRT / TensorFlow Lite: 边缘 AI 推理
 
 > **一句话理解**: LiteRT (原 TensorFlow Lite) 是 Google 出品的跨平台边缘 AI 推理框架——Android/iOS/嵌入式全支持、多硬件委托加速、量化压缩，让模型在端侧低延迟、低功耗、完全离线运行。
 

@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Sundar Pichai 关于 AI 的观点"
 ---
 # Sundar Pichai 关于 AI 的观点 (Sundar Pichai on AI)
+
+> 中文简称：Sundar Pichai 关于 AI 的观点
 
 ## 1. AI 的历史意义 (Historical Significance)
 

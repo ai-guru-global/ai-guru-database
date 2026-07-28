@@ -12,8 +12,11 @@ aliases:
   - AI_Supply_Chain
 sources: []
 
+name_zh: "AI 供应链物流应用 2026"
 ---
 # AI 供应链物流应用 2026 (AI for Supply Chain & Logistics 2026)
+
+> 中文简称：AI 供应链物流应用 2026
 
 > AI 正在重塑供应链和物流行业——从需求预测到路径优化，从仓储自动化到供应链韧性，系统解析 AI 在供应链领域的应用全景。
 

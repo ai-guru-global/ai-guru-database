@@ -8,8 +8,11 @@ updated: 2026-06-15
 tier: supporting
 sources: []
 
+name_zh: "Agent 生产部署"
 ---
 # Agent 生产部署 (Agent Production)
+
+> 中文简称：Agent 生产部署
 
 > **一句话理解**: 从 Agent 原型到生产级系统，需要 Harness 工程、框架选型、平台部署、记忆架构、安全合规的完整工程体系。
 

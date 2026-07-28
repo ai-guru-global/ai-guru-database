@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "ML 系统设计"
 ---
 # ML 系统设计 (ML Systems Design)
+
+> 中文简称：ML 系统设计
 
 ## 内容索引
 

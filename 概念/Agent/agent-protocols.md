@@ -32,9 +32,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "Agent 互操作协议"
 ---
 
 # Agent 互操作协议
+
+> 中文简称：Agent 互操作协议
 
 > **一句话理解**:Agent 协议栈正在"标准化"——MCP 解决"Agent 怎么调工具",A2A 解决"Agent 怎么调 Agent",ANP 解决"Agent 怎么发现彼此",ACP 解决"企业 Agent 怎么跨网通信"。2025-2026 是 Agent 协议元年。
 

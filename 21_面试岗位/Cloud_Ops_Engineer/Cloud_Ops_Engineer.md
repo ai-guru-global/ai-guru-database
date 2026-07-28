@@ -10,9 +10,12 @@ aliases:
   - "Cloud Ops Engineer"
   - "Cloud_Ops_Engineer Interview Guide"
 sources: []
+name_zh: "Cloud Ops Engineer 面试指南"
 ---
 
 # Cloud Ops Engineer 题库
+
+> 中文简称：Cloud Ops Engineer 面试指南
 
 > **难度标注**: ⭐ Basic | ⭐⭐ Intermediate | ⭐⭐⭐ Advanced
 > **频率标注**: 🔴 高频 | 🟡 中频 | 🟢 低频

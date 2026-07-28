@@ -18,7 +18,7 @@ sources:
 summary: "NF4（4-bit NormalFloat）是 bitsandbytes 库提出的 4-bit 数据类型，针对正态分布权重做了优化设计；QLoRA 用 NF4 实现单卡 24GB 量化微调 65B 模型。"
 lifecycle: reviewed
 tier: core
-updated: 2026-07-21
+updated: 2026-07-25
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -26,9 +26,12 @@ provenance:
 base_confidence: 0.88
 created: 2026-06-24
 updated: 2026-06-24
+name_zh: "4 比特正态浮点量化"
 ---
 
 # NF4（4-bit NormalFloat Quantization）
+
+> 中文简称：4 比特正态浮点量化
 
 ## 核心要点
 
@@ -136,6 +139,17 @@ QLoRA = NF4 量化 + 双重量化 + 分页优化器
 - **PEFT**：配合 LoRA 使用
 - **Unsloth**：进一步优化（2-5x 加速）
 
+## 源码级洞察（基于 bitsandbytes v0.50.0 归档源码）
+
+归档位置：`code/llm-frameworks/bitsandbytes-v0.50.0/`（PyPI wheel 解包，保留全部 Python 实现）。
+
+- **NF4 的实现入口**：`bitsandbytes/nn/modules.py` L676 `LinearNF4(Linear4bit)`，与 L640 `LinearFP4` 只差一个 `quant_type` 参数——NF4/FP4 共享同一套 4-bit 基础设施。
+- **"加载即量化"**：`nn/modules.py` L213 `Params4bit(torch.nn.Parameter)` 在权重 `.cuda()` 时自动调用 `functional.py` L884 `quantize_4bit`；反量化在 L992 `dequantize_4bit`。
+- **分块+双重量化**：`functional.py` L613 `quantize_blockwise` 按块独立缩放；`QuantState`（L420）封装量化常量与双重量化（量化常量再量化）元数据——QLoRA 论文三大组件中两个在此实现。
+- **QLoRA 可训的关键**：`autograd/_functions.py` L300 `MatMul4Bit` 前向反量化后 matmul，反向梯度绕过冻结的 4-bit 权重只流向 LoRA 旁支。
+
+详见 [[10_部署推理/05_Quantization/HF_Quantization_Ecosystem]] 第 6 节、[[概念/Training/qlora]]。
+
 ## Related
 
 - [[概念/awq]] — AWQ（生产推理首选）
@@ -197,6 +211,6 @@ QLoRA = NF4 量化 + 双重量化 + 分页优化器
 - [[概念/Training/awq|AWQ]] — 激活感知量化
 - [[概念/Training/smoothquant|SmoothQuant]] — 平滑量化
 - [[概念/Training/mixed-precision|Mixed Precision]] — 混合精度
-- [[概念/Inference/model-quantization|Model Quantization]] — 模型量化总览
+- [[概念/Inference/quantization|Model Quantization]] — 模型量化总览
 
 > ℹ️ NF4 是 QLoRA 的核心量化格式，2026年仍是量化微调的标配，训练用 NF4、推理用 AWQ/GPTQ 是最佳实践。

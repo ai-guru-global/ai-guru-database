@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "MLOps on K8s 排查速查表"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # MLOps on K8s 排查速查表
+
+> 中文简称：MLOps on K8s 排查速查表
 
 > **使用方式**: 按组件定位问题，按命令顺序排查。
 

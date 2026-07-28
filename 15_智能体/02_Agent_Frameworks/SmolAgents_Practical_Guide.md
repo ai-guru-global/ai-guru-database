@@ -12,12 +12,15 @@ aliases:
   - SmolAgents_Practical_Guide
 sources: []
 
+name_zh: "SmolAgents 实战指南：用 50 行代码构建多模态 Code Agent"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # SmolAgents 实战指南：用 50 行代码构建多模态 Code Agent
+
+> 中文简称：SmolAgents 实战指南：用 50 行代码构建多模态 Code Agent
 
 > **一句话理解**: SmolAgents 用 Python 代码代替 JSON 作为 Agent 的思考与行动载体（Code Agent 范式），极大简化了多工具调用、数据传递和逻辑推理的复杂度。本文将带你从零实现生产级的 SmolAgents 工作流。
 

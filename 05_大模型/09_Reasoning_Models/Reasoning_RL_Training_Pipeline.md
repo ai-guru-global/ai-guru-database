@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "推理模型训练流水线"
 ---
 # 推理模型训练流水线
+
+> 中文简称：推理模型训练流水线
 
 ## 1. 推理模型训练全景
 
@@ -441,5 +444,5 @@ TRAINING_METRICS = {
 - [[06_强化学习/03_RLHF_Alignment/GRPO_Training_Deep_Dive|GRPO 训练]]
 - [[06_强化学习/03_RLHF_Alignment/DPO_Variants_2026|DPO 变体]]
 - [[05_大模型/09_Reasoning_Models/|推理模型]]
-- [[05_大模型/Test_Time_Compute/|推理时计算]]
+- [[概念/LLM/test-time-compute|推理时计算]]
 - [[05_大模型/07_Fine_tuning_Techniques/|微调技术]]

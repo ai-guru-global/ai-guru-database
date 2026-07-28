@@ -12,8 +12,11 @@ aliases:
   - VAE_Deep_Dive
 sources: []
 
+name_zh: "VAE深度解析"
 ---
 # VAE深度解析 (VAE Deep Dive)
+
+> 中文简称：VAE深度解析
 
 > **一句话理解**: VAE就像一个学会'压缩-解压'的大脑——编码器把图像压缩成概率分布(均值+方差)，解码器再从这个分布采样重建图像，通过让重建尽可能准确、同时让分布接近标准正态，学会了数据的潜在结构。
 
@@ -1015,7 +1018,7 @@ VAE的作用:
 - [[03_深度学习/04_Generative_Models/Diffusion_Models_Deep_Dive]] — 扩散模型深度解析（VAE的连续极限）
 - [[03_深度学习/01_DL_Fundamentals/DL_Fundamentals]] — 深度学习基础
 - [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core]] — 神经网络核心
-- [[03_深度学习/06_Self_Supervised_Learning/Self_Supervised_Learning]] — 自监督学习（表征学习）
+- [[概念/Math/self-supervised-learning|Self_Supervised_Learning]] — 自监督学习（表征学习）
 - [[03_深度学习/09_Advanced_Topics/Transfer_Learning]] — 迁移学习
 - [[01_数学基础/03_Probability_Statistics/Probability_Statistics]] — 概率统计（变分推断基础）
-- [[01_数学基础/04_Information_Theory/Information_Theory]] — 信息论（KL散度/ELBO）
+- [[概念/Math/information-theory|Information_Theory]] — 信息论（KL散度/ELBO）

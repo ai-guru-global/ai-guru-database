@@ -14,6 +14,7 @@ aliases:
 updated: 2026-06-30
 summary: "流式传输与多模态输入 — 专题文档"
 sources: []
+name_zh: "流式传输与多模态输入"
 ---
 title: 流式传输与多模态输入
 description: '**文档类型**: 功能详解 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Streaming,
@@ -49,6 +50,8 @@ k8s_versions:
 - '1.32'
 ---
 # 流式传输与多模态输入
+
+> 中文简称：流式传输与多模态输入
 
 > **文档类型**: 功能详解 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Streaming, SSE, Stream Cancellation, Multimodal, Image, PDF, Audio, Vision, Base64
 

@@ -8,8 +8,11 @@ updated: 2026-06-04
 tier: supporting
 sources: []
 
+name_zh: "因果推断"
 ---
 # 因果推断 (Causal Inference)
+
+> 中文简称：因果推断
 
 > **核心定位**: 超越相关性的因果分析，让 AI 能回答「如果我做 X，会发生什么？」的干预性问题。
 

@@ -1,4 +1,9 @@
+---
+name_zh: "健康度检查报告"
+---
 # Wiki Health Report -- 2026-06-30
+
+> 中文简称：健康度检查报告
 
 **Generated**: 2026-06-30T22:30:00
 **Vault**: `/Users/ai-guru/Documents/GitHub/ai-guru-global/ai-guru-database`

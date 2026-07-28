@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "大模型基础"
+name_en: "LLM Fundamentals"
 ---
 
 # LLM Fundamentals
+
+> 中文简称：大模型基础 ｜ English Name: LLM Fundamentals
 
 ## 文件导航
 

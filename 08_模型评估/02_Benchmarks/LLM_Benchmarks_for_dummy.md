@@ -12,8 +12,11 @@ aliases:
   - LLM_Benchmarks_for_dummy
 sources: []
 
+name_zh: "LLM 评估与测试大白话：BBH、Arena、红队测试、CI 集成评估、A/B"
 ---
 # LLM 评估与测试大白话：BBH、Arena、红队测试、CI 集成评估、A/B 测试框架
+
+> 中文简称：LLM 评估与测试大白话：BBH、Arena、红队测试、CI 集成评估、A/B
 
 > **一句话理解**: BBH 考智力题，Arena 让人类投票，红队测试找安全漏洞，CI 集成评估自动防退化，A/B 测试框架在线比效果——五者从不同维度回答“这个模型到底行不行”。
 

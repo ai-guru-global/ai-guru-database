@@ -5,9 +5,13 @@ created: 2026-07-24
 updated: 2026-07-25
 sources: []
 tags: [auto-index, inference-optimization]
+name_zh: "推理优化"
+name_en: "Inference Optimization"
 ---
 
 # Inference Optimization
+
+> 中文简称：推理优化 ｜ English Name: Inference Optimization
 
 本页索引 `10_部署推理/03_Inference_Optimization` 的内容，聚焦 LLM 推理的优化技术——从 KV Cache 与分页注意力，到并行策略、算子编译与 Multi-LoRA 服务。
 

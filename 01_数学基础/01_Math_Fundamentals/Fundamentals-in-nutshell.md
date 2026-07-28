@@ -11,8 +11,11 @@ aliases:
   - "Fundamentals in nutshell"
 sources: []
 
+name_zh: "AI 基础速成指南"
 ---
 # AI 基础速成指南
+
+> 中文简称：AI 基础速成指南
 
 > **一句话理解**: AI 大厦的地基——数学、算法、硬件和工具链共同构成了让人工智能从理论变为现实的工程基础。
 

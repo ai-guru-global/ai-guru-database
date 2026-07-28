@@ -11,9 +11,12 @@ aliases:
   - "AI Solutions Architect 面试指南"
   - "AI_Solutions_Architect Interview Guide"
 sources: []
+name_zh: "AI Solutions Architect 面试指南"
 ---
 
 # AI Solutions Architect 面试指南
+
+> 中文简称：AI Solutions Architect 面试指南
 
 > **一句话理解**: AI Solutions Architect 是客户需求与技术方案之间的桥梁——既要深度理解 AI 技术栈和云平台能力，又能将模糊的业务需求转化为可落地的端到端 AI 架构方案，在性能、成本、安全和上市时间之间做出最优权衡。
 
@@ -482,7 +485,7 @@ AI Solutions Architect（AI 解决方案架构师）是连接 AI 技术能力与
 ## Related
 
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 - [[21_面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
 - [[21_面试岗位/MLOps_Engineer/MLOps_Engineer|MLOps Engineer 面试指南]]
 - [[21_面试岗位/Data_Engineer/Data_Engineer|Data Engineer 面试指南]]

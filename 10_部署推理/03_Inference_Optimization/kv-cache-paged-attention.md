@@ -8,9 +8,12 @@ created: 2026-07-02
 updated: 2026-07-02
 tier: core
 lifecycle: draft
+name_zh: "KV Cache x PagedAttention: 从显存碎片到虚拟内存的推理"
 ---
 
 # KV Cache x PagedAttention: 从显存碎片到虚拟内存的推理革命
+
+> 中文简称：KV Cache x PagedAttention: 从显存碎片到虚拟内存的推理
 
 ## The Connection
 

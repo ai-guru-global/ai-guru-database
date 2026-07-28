@@ -24,8 +24,11 @@ aliases:
   - "Hands On Ml Geron"
   - "hands on ml geron"
 
+name_zh: "机器学习实战"
 ---
 # Hands-On Machine Learning
+
+> 中文简称：机器学习实战
 
 > **一句话理解**: 全球最畅销的 ML/DL 实战教材，从线性回归到 Transformer 全程代码驱动，被誉为"机器学习入门的第一本书"——1000 页两卷覆盖从经典 ML 到深度学习的完整知识图谱。
 

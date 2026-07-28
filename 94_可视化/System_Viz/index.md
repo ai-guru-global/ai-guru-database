@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-23
 sources: []
 tags: [system-visualization, index, navigation]
+name_zh: "系统可视化"
+name_en: "System Viz"
 ---
 
 # 系统可视化（System Visualization）
+
+> 中文简称：系统可视化 ｜ English Name: System Viz
 
 > **一句话理解**: 系统可视化让 AI 系统从黑盒变白盒——用仪表盘、架构图与知识图谱，把延迟、吞吐、请求链路、模型结构与实体关系一目了然地呈现给平台工程师与架构师。
 

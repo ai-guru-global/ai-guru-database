@@ -12,8 +12,11 @@ aliases:
   - Java_Ecosystem_AI_for_dummy
 sources: []
 
+name_zh: "Java AI 生态小白指南"
 ---
 # Java AI 生态小白指南 (Java Ecosystem AI for Dummy)
+
+> 中文简称：Java AI 生态小白指南
 
 > **一句话理解**: Java AI 生态就像给企业软件装上了"智能大脑"——让原本用 Java 写的银行系统、电商网站也能跑 AI，而不需要推倒重来。
 

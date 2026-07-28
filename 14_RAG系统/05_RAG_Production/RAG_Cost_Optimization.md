@@ -12,8 +12,11 @@ aliases:
   - RAG_Cost_Optimization
 sources: []
 
+name_zh: "RAG成本优化生产实践"
 ---
 # RAG成本优化生产实践 (RAG Cost Optimization)
+
+> 中文简称：RAG成本优化生产实践
 
 > **一句话理解**: RAG系统成本失控的根源是"每次查询都走最贵路径"——通过分层检索(cheap→expensive)、Semantic Cache、Token预算管理和Reranker成本权衡，生产系统月成本从$10K降至$2K，同时准确率不降反升。
 

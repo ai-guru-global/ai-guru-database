@@ -26,8 +26,11 @@ updated: 2026-07-21
 aliases:
   - Containerd
 
+name_zh: "工业级容器运行时"
 ---
 # containerd
+
+> 中文简称：工业级容器运行时
 
 > Kubernetes 的「容器管家」——负责拉镜像、启停容器、管理存储和网络命名空间。
 

@@ -12,8 +12,11 @@ aliases:
   - Java_Ecosystem_AI_Overview
 sources: []
 
+name_zh: "Java 生态与 AI：全景概览"
 ---
 # Java 生态与 AI：全景概览
+
+> 中文简称：Java 生态与 AI：全景概览
 
 > **一句话理解**: Java 生态正在通过 Spring AI、GraalVM、LangChain4j 等项目全面拥抱 AI —— 从企业级后端到边缘推理，JVM 平台为 AI 应用提供了成熟的工程化基础设施。
 

@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "评估演示"
+name_en: "Demo"
 ---
 
 # Demo
+
+> 中文简称：评估演示 ｜ English Name: Demo
 
 Agent 评估 Demo 项目 — 完整的端到端评估示例（end-to-end evaluation demo），含配置文件、评估器、插件、数据集与运行脚本。
 

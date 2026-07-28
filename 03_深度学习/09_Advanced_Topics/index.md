@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "进阶专题"
+name_en: "Advanced Topics"
 ---
 
 # Advanced Topics
+
+> 中文简称：进阶专题 ｜ English Name: Advanced Topics
 
 ## 文件导航
 

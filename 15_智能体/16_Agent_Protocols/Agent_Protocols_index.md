@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "智能体协议专题"
 ---
 
 # Agent Protocols
+
+> 中文简称：智能体协议专题
 
 智能体协议 — A2A (Agent-to-Agent)、MCP (Model Context Protocol) 等智能体间通信与协作标准的深度解析。
 

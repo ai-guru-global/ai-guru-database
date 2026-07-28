@@ -12,8 +12,11 @@ aliases:
   - Feature_Store
 sources: []
 
+name_zh: "Feature Store 深度解析"
 ---
 # Feature Store 深度解析 (Feature Store Deep Dive)
+
+> 中文简称：Feature Store 深度解析
 
 > Feature Store 是 ML 生产化的关键基础设施——统一管理离线和在线特征，确保训练和推理的一致性。
 

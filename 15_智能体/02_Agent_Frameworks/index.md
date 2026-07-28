@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "智能体框架"
+name_en: "Agent Frameworks"
 ---
 
 # Agent Frameworks
+
+> 中文简称：智能体框架 ｜ English Name: Agent Frameworks
 
 智能体框架 — 主流 Agent 开发框架深度解析与对比（LangChain、AutoGen、CrewAI、SmolAgents 等）。
 

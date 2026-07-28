@@ -12,8 +12,11 @@ aliases:
   - Multimodal_RAG_Architecture_2026
 sources: []
 
+name_zh: "多模态 RAG 架构"
 ---
 # Multimodal RAG Architecture 2026: Image, Video, and Complex Layouts
+
+> 中文简称：多模态 RAG 架构
 
 > **一句话理解**: 多模态 RAG 让 AI 不再仅仅“读懂”文字，还能“看懂”复杂的 PDF 布局、图表、视频帧，并将其作为事实来源进行检索和回答。
 

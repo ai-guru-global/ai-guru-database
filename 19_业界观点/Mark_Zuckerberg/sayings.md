@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Mark Zuckerberg 关于 AI 的观点"
 ---
 # Mark Zuckerberg 关于 AI 的观点 (Mark Zuckerberg on AI)
+
+> 中文简称：Mark Zuckerberg 关于 AI 的观点
 
 ## 1. 开源战略 (Open Source Strategy)
 

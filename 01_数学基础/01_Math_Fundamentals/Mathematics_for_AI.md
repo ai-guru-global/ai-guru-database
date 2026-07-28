@@ -12,8 +12,11 @@ aliases:
   - Mathematics_for_AI
 sources: []
 
+name_zh: "AI 数学手册"
 ---
 # AI 数学手册 (Mathematics for AI Reference)
+
+> 中文简称：AI 数学手册
 
 > **速查手册**: 本文是公式级参考，每个公式配一行 AI 应用说明。需要系统学习请移步 [[01_数学基础/Math_Foundations]]。
 

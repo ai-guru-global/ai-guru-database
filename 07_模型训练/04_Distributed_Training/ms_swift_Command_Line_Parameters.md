@@ -20,8 +20,11 @@ aliases:
   - ms_swift_Command_Line_Parameters
 sources: []
 
+name_zh: "ms-swift 命令行参数完全参考手册"
 ---
 # ms-swift 命令行参数完全参考手册
+
+> 中文简称：ms-swift 命令行参数完全参考手册
 
 > 本文档基于 ms-swift v4.x 官方文档，涵盖所有命令行参数。带🔥的为重要参数。
 > 

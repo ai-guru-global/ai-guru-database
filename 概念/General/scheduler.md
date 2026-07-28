@@ -17,9 +17,12 @@ relationships:
   - target: "概念/node"
     type: related_to
 sources: []
+name_zh: "K8s 调度器"
 ---
 
 # Scheduler
+
+> 中文简称：K8s 调度器
 
 > **一句话理解**: K8s Scheduler 是集群里的「调度员」，负责为每个 Pod 挑选最合适的节点，考虑资源、亲和性、污点、拓扑等因素。
 

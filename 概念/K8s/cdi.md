@@ -36,8 +36,11 @@ updated: 2026-07-21 00:00:00+00:00
 aliases:
   - Cdi
 
+name_zh: "容器设备接口"
 ---
 # CDI (Container Device Interface)
+
+> 中文简称：容器设备接口
 
 ## 核心要点
 

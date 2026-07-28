@@ -22,8 +22,11 @@ aliases:
   - "BERT Paper"
   - "Bidirectional Encoder Representations from Transformers"
 
+name_zh: "论文导读"
 ---
 # 论文导读: BERT — Pre-training of Deep Bidirectional Transformers
+
+> 中文简称：论文导读
 
 > **一句话理解**: Google 2018 年发布的 BERT，用双向 Transformer 编码器做掩码语言模型预训练，让模型真正"同时看左右上下文"理解语言，一举刷新 11 项 NLP 基准——它确立了"预训练 + 微调"的标准范式，与 GPT 并列为大模型时代的两大起点，深刻影响了此后的检索、分类、NER 等理解型任务。
 

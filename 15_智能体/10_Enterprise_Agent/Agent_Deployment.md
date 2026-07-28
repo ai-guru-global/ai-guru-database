@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "Agent 部署"
 ---
 # Agent 部署 (Agent Deployment)
+
+> 中文简称：Agent 部署
 
 ## 1. Agent 部署挑战
 

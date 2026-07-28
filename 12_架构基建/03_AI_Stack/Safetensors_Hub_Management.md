@@ -11,8 +11,11 @@ aliases:
   - Safetensors_Hub_Management
 sources: []
 
+name_zh: "Safetensors 与 Hub 治理：下一代模型存储与分发标准"
 ---
 # Safetensors 与 Hub 治理：下一代模型存储与分发标准
+
+> 中文简称：Safetensors 与 Hub 治理：下一代模型存储与分发标准
 
 > **一句话理解**: 曾经，下载一个陌生人的 PyTorch 模型等于交出电脑控制权（Pickle 漏洞）。Hugging Face 推出的 `.safetensors` 彻底淘汰了 `.bin` 格式，实现了零拷贝极速加载与绝对的执行安全。结合 `huggingface_hub` 代码级交互，这套标准构成了当前开源 AI 最坚实的基础设施。
 

@@ -38,9 +38,12 @@ updated: 2026-07-21
 sources:
   - 10_部署推理/04_Inference_Performance/Long_Context_Inference_2026.md
   - 12_架构基建/AI_Stack_Deep_Dive.md
+name_zh: "首 token 延迟"
 ---
 
 # TTFT（Time To First Token）
+
+> 中文简称：首 token 延迟
 
 > **一句话理解**: TTFT 是用户按下回车到看到第一个字的等待时间——Prefill 阶段越短，用户感觉"秒回"。
 

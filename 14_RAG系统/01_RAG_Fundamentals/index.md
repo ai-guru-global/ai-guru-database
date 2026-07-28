@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "RAG 基础"
+name_en: "RAG Fundamentals"
 ---
 
 # RAG Fundamentals
+
+> 中文简称：RAG 基础 ｜ English Name: RAG Fundamentals
 
 ## 文件导航
 

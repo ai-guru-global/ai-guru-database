@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "度量学习"
 ---
 # 度量学习 (Metric Learning)
+
+> 中文简称：度量学习
 
 ## 1. 核心思想
 

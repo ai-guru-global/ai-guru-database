@@ -11,8 +11,11 @@ aliases:
   - Native_Multimodal_Architectures
 sources: []
 
+name_zh: "原生多模态架构深度解析"
 ---
 # 原生多模态架构深度解析
+
+> 中文简称：原生多模态架构深度解析
 
 ## 一句话理解
 

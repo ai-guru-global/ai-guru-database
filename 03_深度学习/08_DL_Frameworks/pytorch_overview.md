@@ -14,8 +14,11 @@ aliases:
   - "pytorch overview"
   - pytorch_overview
 
+name_zh: "PyTorch 概览"
 ---
 # PyTorch 概览
+
+> 中文简称：PyTorch 概览
 
 > **一句话理解**: Meta 出品的主流深度学习框架，动态计算图（define-by-run），Pythonic API，研究社区首选，2026 年深度学习事实标准。
 

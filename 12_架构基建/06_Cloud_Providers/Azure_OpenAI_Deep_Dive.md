@@ -12,8 +12,11 @@ aliases:
   - Azure_OpenAI_Deep_Dive
 sources: []
 
+name_zh: "Azure OpenAI 深度解析: 企业级 GPT 服务"
 ---
 # Azure OpenAI 深度解析：企业级 GPT 服务
+
+> 中文简称：Azure OpenAI 深度解析: 企业级 GPT 服务
 
 > **一句话理解**: Azure OpenAI 是微软在 Azure 云上提供的企业级 OpenAI 服务，支持 GPT-4o、DALL-E、Whisper 等模型，强调数据隐私、区域部署和企业合规，与 M365/Azure 生态深度集成。
 

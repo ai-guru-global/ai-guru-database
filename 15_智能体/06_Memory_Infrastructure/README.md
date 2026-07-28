@@ -8,8 +8,11 @@ updated: '2026-05-31'
 tier: supporting
 sources: []
 
+name_zh: "记忆与基础设施"
 ---
 # 记忆与基础设施
+
+> 中文简称：记忆与基础设施
 
 > Agent 的"智商"不仅取决于 LLM，还取决于 RAG 检索质量、记忆系统设计和知识管理架构。
 

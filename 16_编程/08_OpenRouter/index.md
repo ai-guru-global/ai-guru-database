@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "OpenRouter"
+name_en: "OpenRouter"
 ---
 
 # Openrouter
+
+> 中文简称：OpenRouter ｜ English Name: OpenRouter
 
 This page indexes the contents of `AI编程/05_Tools/OpenRouter`.
 

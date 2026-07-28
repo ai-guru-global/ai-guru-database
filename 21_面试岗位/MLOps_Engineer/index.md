@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "MLOps 工程师"
+name_en: "MLOps Engineer"
 ---
 
 # MLOps Engineer
+
+> 中文简称：MLOps 工程师 ｜ English Name: MLOps Engineer
 
 MLOps 工程师 — 构建 ML 生命周期管线（ML lifecycle pipeline），覆盖数据管线、模型训练、部署、监控与再训练闭环。
 

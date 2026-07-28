@@ -12,8 +12,11 @@ aliases:
   - Normalization_Techniques
 sources: []
 
+name_zh: "归一化技术深度解析"
 ---
 # 归一化技术深度解析 (Normalization Techniques Deep Dive)
+
+> 中文简称：归一化技术深度解析
 
 > 从 BatchNorm 到 RMSNorm，系统解析深度学习中归一化技术的数学原理、工程实践与前沿演进。
 

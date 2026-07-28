@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "硬件算力"
+name_en: "Hardware Compute"
 ---
 
 # Hardware Compute
+
+> 中文简称：硬件算力 ｜ English Name: Hardware Compute
 
 This page indexes the contents of `12_架构基建/07_Hardware_Compute`.
 
@@ -200,3 +204,7 @@ This page indexes the contents of `12_架构基建/07_Hardware_Compute`.
 | 故障案例库 | 经验总结 | 问题排查参考 |
 | 技术会议演讲 | 前沿分享 | 趋势了解 |
 | 开源项目 | 代码实现 | 深入学习参考 |
+
+## 相关文档
+
+- [[12_架构基建/07_Hardware_Compute/MIG使用指南|MIG 使用指南]]

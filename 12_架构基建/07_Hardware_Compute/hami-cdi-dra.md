@@ -24,8 +24,11 @@ aliases:
   - "Hami Cdi Dra"
   - "hami cdi dra"
 
+name_zh: "HAMi × CDI × DRA: 异构 GPU 共享与设备注入的协作关系"
 ---
 # HAMi × CDI × DRA: 异构 GPU 共享与设备注入的协作关系
+
+> 中文简称：HAMi × CDI × DRA: 异构 GPU 共享与设备注入的协作关系
 
 ## The Connection
 

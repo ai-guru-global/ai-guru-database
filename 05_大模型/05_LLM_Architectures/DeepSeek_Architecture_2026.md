@@ -11,9 +11,12 @@ aliases:
   - "DeepSeek 架构"
   - DeepSeek_Architecture_2026
 sources: []
+name_zh: "DeepSeek 架构深度解析 2026"
 ---
 
 # DeepSeek 架构深度解析 2026
+
+> 中文简称：DeepSeek 架构深度解析 2026
 
 > 本章节聚焦 DeepSeek 在模型架构层面的核心创新：MLA 注意力、DeepSeekMoE、FP8 训练与 Multi-Token Prediction，并从生产环境视角讨论训练/推理的工程化挑战与最佳实践。
 

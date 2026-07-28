@@ -11,9 +11,12 @@ aliases:
   - "DQN Deep Dive"
   - DQN_Deep_Dive
 sources: []
+name_zh: "DQN 深度解读"
 ---
 
 # DQN 深度解读 (Human-level Control through Deep Reinforcement Learning)
+
+> 中文简称：DQN 深度解读
 
 > **一句话理解**: DQN 就像一个能在 49 款 Atari 游戏上只用屏幕像素和分数就达到人类水平的"游戏天才"——它将深度学习的感知能力与 Q-Learning 的决策框架结合，通过经验回放和目标网络两大技巧解决了深度 RL 的不稳定性，开创了整个深度强化学习领域。
 
@@ -990,9 +993,9 @@ DQN 的"一句话哲学":
 - [[20_论文精读/06_Alignment/DPO_Deep_Dive]] — DPO: RLHF 中 PPO 的替代方案
 - [[20_论文精读/08_Vision/AlexNet_Deep_Dive]] — AlexNet: DQN CNN 架构的灵感来源
 - [[20_论文精读/02_Architecture/Attention_Is_All_You_Need_Deep_Dive]] — 注意力机制: 与 DQN 的 CNN 形成对比
-- [[概念/Training/experience-replay]] — 经验回放技术详解
-- [[概念/Training/target-network]] — 目标网络详解
-- [[概念/General/q-learning]] — Q-Learning 基础
+- [[概念/Training/experience-replay|experience-replay]] — 经验回放技术详解
+- [[概念/Training/target-network|target-network]] — 目标网络详解
+- [[概念/General/q-learning|q-learning]] — Q-Learning 基础
 
 ---
 

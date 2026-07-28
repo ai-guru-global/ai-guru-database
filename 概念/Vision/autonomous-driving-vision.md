@@ -20,9 +20,12 @@ lifecycle_changed: 2026-07-21
 created: 2026-07-21
 updated: 2026-07-21
 tier: supporting
+name_zh: "自动驾驶视觉"
 ---
 
 # 自动驾驶视觉
+
+> 中文简称：自动驾驶视觉
 
 > 一句话理解：利用摄像头、LiDAR、雷达等传感器实现车辆环境感知、定位和决策的视觉系统。
 

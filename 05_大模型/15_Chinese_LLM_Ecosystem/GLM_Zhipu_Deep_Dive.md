@@ -12,8 +12,11 @@ aliases:
   - GLM_Zhipu_Deep_Dive
 sources: []
 
+name_zh: "GLM / 智谱AI 技术深度剖析"
 ---
 # GLM / 智谱 AI (Zhipu AI) 技术深度剖析
+
+> 中文简称：GLM / 智谱AI 技术深度剖析
 
 ## 一句话理解
 

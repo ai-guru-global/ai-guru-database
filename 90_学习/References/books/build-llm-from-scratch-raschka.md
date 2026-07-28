@@ -25,8 +25,11 @@ aliases:
   - "Build Llm From Scratch Raschka"
   - "build llm from scratch raschka"
 
+name_zh: "从零构建大语言模型"
 ---
 # Build a Large Language Model (From Scratch)
+
+> 中文简称：从零构建大语言模型
 
 > **一句话理解**: Sebastian Raschka（bestselling ML 作者）带你用 PyTorch 从零逐行实现一个 GPT，是理解 LLM 内部运作机制的最佳"拆解式"教程——从 Token 到微调，每一步都有可运行代码。
 

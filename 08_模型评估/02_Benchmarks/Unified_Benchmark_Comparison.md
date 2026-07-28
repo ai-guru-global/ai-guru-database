@@ -7,9 +7,12 @@ created: 2026-06-04
 updated: 2026-06-04
 tier: supporting
 sources: []
+name_zh: "统一 Benchmark 对比表 — 跨领域 AI 基准全景"
 ---
 
 # 统一 Benchmark 对比表 — 跨领域 AI 基准全景
+
+> 中文简称：统一 Benchmark 对比表 — 跨领域 AI 基准全景
 
 > **一句话理解**: 不同 AI 领域有不同的"高考"——本表将 LLM/视觉/语音/多模态/Agent 的 SOTA 结果汇总为一张全景地图，让你快速定位各领域的能力边界。
 

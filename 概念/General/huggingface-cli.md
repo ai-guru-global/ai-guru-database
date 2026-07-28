@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "HuggingFace CLI 命令行工具"
 ---
 
 # HuggingFace CLI 命令行工具
+
+> 中文简称：HuggingFace CLI 命令行工具
 
 > **一句话理解**: huggingface-cli 是"模型界的 npm"——一行命令从 Hugging Face Hub 下载/上传/管理模型和数据集。
 

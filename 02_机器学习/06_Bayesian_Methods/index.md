@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "贝叶斯方法"
+name_en: "Bayesian Methods"
 ---
 
 # Bayesian Methods
+
+> 中文简称：贝叶斯方法 ｜ English Name: Bayesian Methods
 
 贝叶斯方法（Bayesian Methods）— 贝叶斯推断（Bayesian inference）、概率编程、高斯过程（Gaussian Process）与不确定性量化。
 

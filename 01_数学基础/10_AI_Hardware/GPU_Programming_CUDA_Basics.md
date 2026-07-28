@@ -4,9 +4,12 @@ tags: [gpu, cuda, parallel-computing, ai-hardware, performance]
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "GPU 编程与 CUDA 基础"
 ---
 
 # GPU Programming & CUDA Basics
+
+> 中文简称：GPU 编程与 CUDA 基础
 
 ## Why GPU Programming Matters for AI
 

@@ -4,9 +4,12 @@ tags: [computer-vision, object-detection, deep-learning, yolo, production]
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "目标检测完全指南"
 ---
 
 # Object Detection Complete Guide
+
+> 中文简称：目标检测完全指南
 
 ## Overview
 

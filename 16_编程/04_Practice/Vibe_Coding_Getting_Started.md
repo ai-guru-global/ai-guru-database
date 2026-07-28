@@ -11,8 +11,11 @@ aliases:
   - Vibe_Coding_Getting_Started
 sources: []
 
+name_zh: "Vibe Coding 傻瓜指南"
 ---
 # Vibe Coding 傻瓜指南 (Vibe Coding for Dummies)
+
+> 中文简称：Vibe Coding 傻瓜指南
 
 > **一句话理解**: Vibe Coding 就是用"说人话"的方式让 AI 帮你写代码——你不是打字员，你是导演，AI 是你的编剧和演员。
 

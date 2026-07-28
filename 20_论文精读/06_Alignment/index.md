@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "对齐论文"
+name_en: "Alignment"
 ---
 
 # Alignment
+
+> 中文简称：对齐论文 ｜ English Name: Alignment
 
 对齐论文精读（Alignment Papers）— RLHF、DPO、Chain-of-Thought 等模型对齐方向的经典论文。
 

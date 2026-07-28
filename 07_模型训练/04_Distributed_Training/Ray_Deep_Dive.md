@@ -11,8 +11,11 @@ aliases:
   - Ray_Deep_Dive
 sources: []
 
+name_zh: "Ray 深度解析: Python 分布式 AI 计算框架"
 ---
 # Ray 深度解析：Python 分布式 AI 计算框架
+
+> 中文简称：Ray 深度解析: Python 分布式 AI 计算框架
 
 > **一句话理解**: Ray 是面向 Python 的通用分布式计算框架，通过 Task/Actor 抽象让单机代码几乎无修改地扩展到多机多卡；KubeRay 则在 Kubernetes 上提供 Ray 集群的声明式运维。
 

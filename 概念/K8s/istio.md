@@ -17,11 +17,14 @@ relationships:
   - target: "概念/service-mesh"
     type: related_to
 sources: []
+name_zh: "Istio 服务网格"
 ---
 
 > **归档提示**: 此概念为通用云原生工具，与AI核心关联度较低。如需学习完整的K8s知识，请参考 CNCF 官方文档。
 
 # Istio
+
+> 中文简称：Istio 服务网格
 
 > **一句话理解**: Istio 是在 K8s 里给微服务之间加了一层「智能代理」，自动做负载均衡、加密、限流、熔断和链路追踪。
 

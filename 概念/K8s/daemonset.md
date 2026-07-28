@@ -18,9 +18,12 @@ relationships:
   - target: "概念/apsara-stack"
     type: runs_on
 sources: []
+name_zh: "K8s 守护进程集"
 ---
 
 # DaemonSet
+
+> 中文简称：K8s 守护进程集
 
 > **一句话理解**: DaemonSet 让指定 Pod 在集群每个节点上自动跑一份，专门负责日志、监控、网络/存储插件这类"每个节点都需要"的基础设施。
 

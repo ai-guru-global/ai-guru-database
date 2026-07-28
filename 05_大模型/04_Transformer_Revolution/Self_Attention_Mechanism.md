@@ -11,8 +11,11 @@ aliases:
   - Self_Attention_Mechanism
 sources: []
 
+name_zh: "Self-Attention 机制详解"
 ---
 # Self-Attention 机制详解
+
+> 中文简称：Self-Attention 机制详解
 
 > **一句话理解**: Self-Attention 让序列中的每个位置都能"看到"其他所有位置——通过 Query-Key-Value 机制计算注意力权重，实现全局信息融合。
 

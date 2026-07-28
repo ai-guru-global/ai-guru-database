@@ -16,9 +16,12 @@ relationships:
   - target: "概念/sli"
     type: related_to
 sources: []
+name_zh: "服务等级协议"
 ---
 
 # SLA（Service Level Agreement）
+
+> 中文简称：服务等级协议
 
 > **一句话理解**: SLA 是写进合同里的服务承诺，做不到可能要赔钱。
 

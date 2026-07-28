@@ -12,8 +12,11 @@ aliases:
   - Interviews_for_dummy
 sources: []
 
+name_zh: "AI 面试准备 - 小白版"
 ---
 # AI 面试准备 - 小白版
+
+> 中文简称：AI 面试准备 - 小白版
 
 > **一句话理解**: AI 面试就像参加一场综合运动会——不仅要跑得快（算法题），还要投得准（项目经验）、讲得好（沟通表达）、站得稳（基础知识）。
 
@@ -366,7 +369,7 @@ AI 岗位 LeetCode 重点:
 ## Related
 
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 - [[21_面试岗位/interview_notes_template|面试复盘模板]]
 - [[21_面试岗位/Machine_Learning_Engineer/question_bank|MLE 题库]]
 - [[21_面试岗位/NLP_Engineer/question_bank|NLP Engineer 题库]]

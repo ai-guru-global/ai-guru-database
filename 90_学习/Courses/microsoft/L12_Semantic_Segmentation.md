@@ -12,8 +12,11 @@ aliases:
   - L12_Semantic_Segmentation
 sources: []
 
+name_zh: "L12 - 语义分割与U-Net"
 ---
 # L12 - 语义分割与U-Net
+
+> 中文简称：L12 - 语义分割与U-Net
 
 > **一句话理解**：语义分割（Semantic Segmentation）把图像的每个像素都归到一个类别，实现比目标检测更精细的像素级定位；U-Net 通过编码器-解码器加跳跃连接，成为医学图像分割等场景的经典网络。
 

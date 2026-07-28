@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "白金泽 — 通义千问/Qwen 团队负责人"
 ---
 # 白金泽 (Jinze Bai) — 通义千问团队负责人
+
+> 中文简称：白金泽 — 通义千问/Qwen 团队负责人
 
 ## 一句话概括
 

@@ -18,9 +18,12 @@ sources:
   - "Arize Phoenix documentation"
   - "Helicone documentation"
   - "Google SRE Workbook — SLO Design"
+name_zh: "RAG 监控与可观测性完全指南"
 ---
 
 # RAG 监控与可观测性完全指南 (RAG Monitoring and Observability)
+
+> 中文简称：RAG 监控与可观测性完全指南
 
 > **一句话理解**: RAG 系统的可观测性不只是"响应慢不慢"——它要追踪从查询到回答的全链路，监控向量索引健康、检测 Embedding 漂移、预警检索质量退化，并用分布式追踪把检索延迟、生成延迟、数据漂移编织成一张完整的运维视图。
 

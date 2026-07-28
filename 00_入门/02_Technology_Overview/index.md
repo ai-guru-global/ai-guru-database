@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-25
 sources: []
+name_zh: "技术全景"
+name_en: "Technology Overview"
 ---
 
 # Technology Overview
+
+> 中文简称：技术全景 ｜ English Name: Technology Overview
 
 技术全景 — AI 技术版图概览，涵盖应用场景、多模态、新架构和推理模型。
 

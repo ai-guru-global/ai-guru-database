@@ -28,9 +28,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "随机采样解码"
 ---
 
 # 随机采样解码（Sampling Decoding）
+
+> 中文简称：随机采样解码
 
 ## 一句话总结
 

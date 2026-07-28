@@ -12,8 +12,11 @@ aliases:
   - HAMi_Deep_Dive
 sources: []
 
+name_zh: "HAMi 深度解析: Kubernetes 异构算力虚拟化中间件"
 ---
 # HAMi 深度解析: Kubernetes 异构算力虚拟化中间件
+
+> 中文简称：HAMi 深度解析: Kubernetes 异构算力虚拟化中间件
 
 > **一句话理解**: HAMi 是 CNCF Sandbox 级 Kubernetes 异构 AI 算力虚拟化中间件，通过 Scheduler Extender + Device Plugin + 容器内 CUDA 拦截库，把 NVIDIA/昇腾/寒武纪/海光/摩尔线程等加速器统一抽象为可切分、可隔离、可调度的 vGPU。
 

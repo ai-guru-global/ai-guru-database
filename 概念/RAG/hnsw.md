@@ -15,9 +15,12 @@ relationships:
     type: used_by
 sources:
   - "https://arxiv.org/abs/1603.09320"  # HNSW paper
+name_zh: "分层可导航小世界索引"
 ---
 
 # HNSW
+
+> 中文简称：分层可导航小世界索引
 
 > **一句话理解**: HNSW 是向量数据库里常用的「分层图索引」，通过构建多层邻居图实现快速近似最近邻搜索。
 
@@ -152,7 +155,7 @@ results = collection.search(
 - [[概念/RAG/ivf|IVF]] — 另一种向量索引
 - [[概念/RAG/vector-database|Vector Database]] — 向量数据库
 - [[概念/RAG/bm25|BM25]] — 关键词检索（互补）
-- [[14_RAG系统/03_Vector_Databases/Vector_Databases|向量数据库专题]]
+- [[14_RAG系统/03_Vector_Databases/rag-vector-database|向量数据库专题]]
 - [[14_RAG系统/04_Advanced_RAG/RAG_Retrieval_Latency_Optimization|检索延迟优化]]
 
 ## 2026 HNSW 生态现状

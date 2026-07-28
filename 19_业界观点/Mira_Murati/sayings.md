@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Mira Murati 关于 AI 的观点"
 ---
 # Mira Murati 关于 AI 的观点 (Mira Murati on AI)
+
+> 中文简称：Mira Murati 关于 AI 的观点
 
 ## 1. 安全与责任 (Safety & Responsibility)
 

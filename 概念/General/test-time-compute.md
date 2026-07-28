@@ -27,9 +27,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "测试时计算"
 ---
 
 # Test-Time Compute（测试时计算）
+
+> 中文简称：测试时计算
 
 ## 一句话总结
 

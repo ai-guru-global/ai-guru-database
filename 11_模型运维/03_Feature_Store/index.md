@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "特征存储"
+name_en: "Feature Store"
 ---
 
 # Feature Store
+
+> 中文简称：特征存储 ｜ English Name: Feature Store
 
 特征存储（Feature Store）— 特征平台架构设计、特征版本管理（feature versioning）与在线/离线一致性保障。
 

@@ -17,9 +17,12 @@ relationships:
   - target: "概念/hnsw"
     type: mitigated_by
 sources: []
+name_zh: "检索延迟"
 ---
 
 # Retrieval Latency（检索延迟）
+
+> 中文简称：检索延迟
 
 > **一句话理解**: 检索延迟 = RAG 系统「找答案」用了多久——从把问题转成向量，到从向量库搜出相关文档，再到排序返回。
 

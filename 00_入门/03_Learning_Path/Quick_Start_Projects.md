@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "快速上手项目"
 ---
 # 快速上手项目 (Quick Start Projects)
+
+> 中文简称：快速上手项目
 
 ## 1. 项目总览
 

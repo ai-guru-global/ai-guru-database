@@ -7,9 +7,12 @@ created: 2026-05-31
 updated: 2026-06-04
 tier: supporting
 sources: []
+name_zh: "Data Scientist 面试题实例答案"
 ---
 
 # Data Scientist 面试题实例答案
+
+> 中文简称：Data Scientist 面试题实例答案
 
 > 每个答案采用 **结论 → 展开 → 追问预判** 结构，适合面试场景直接参考。
 
@@ -163,7 +166,7 @@ sources: []
 - [[21_面试岗位/Data_Scientist/interview_preparing|Data Scientist 面试准备]]
 - [[21_面试岗位/Data_Scientist/question_bank|Data Scientist 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 ---
 title: Data Scientist 面试题实例答案
 category: 21-interviews-data-scientist
@@ -198,4 +201,4 @@ aliases:
 - [[21_面试岗位/Data_Scientist/interview_preparing|Data Scientist 面试准备]]
 - [[21_面试岗位/Data_Scientist/question_bank|Data Scientist 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]

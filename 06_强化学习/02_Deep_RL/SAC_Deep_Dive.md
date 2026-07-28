@@ -12,8 +12,11 @@ aliases:
   - SAC_Deep_Dive
 sources: []
 
+name_zh: "SAC 深度解析"
 ---
 # SAC 深度解析 (Soft Actor-Critic Deep Dive)
+
+> 中文简称：SAC 深度解析
 
 > **一句话理解**: SAC就像一个"既想赢又要稳"的玩家——它不仅追求高回报，还鼓励探索(保持策略的随机性)，通过最大熵原则在利用和探索之间找到最优平衡，是连续控制任务的首选算法。
 
@@ -902,4 +905,4 @@ PPO           | ~2000       | ~2400  | ~2000    | ~1500
 - [[06_强化学习/02_Deep_RL/Offline_RL_Deep_Dive]] — 离线RL（与off-policy相关）
 - [[06_强化学习/02_Deep_RL/Model_Based_RL_Deep_Dive]] — 基于模型的RL（模型方法对比）
 - [[06_强化学习/01_RL_Foundations/RL_Foundations]] — RL基础（MDP/贝尔曼方程）
-- [[06_强化学习/03_RLHF_Alignment/RLHF_Alignment]] — RLHF对齐（PPO在RLHF中的应用）
+- [[06_强化学习/03_RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive|RLHF_Alignment]] — RLHF对齐（PPO在RLHF中的应用）

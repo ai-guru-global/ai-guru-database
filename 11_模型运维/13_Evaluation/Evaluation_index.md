@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "运维评估专题"
 ---
 
 # Evaluation
+
+> 中文简称：运维评估专题
 
 模型评估运维（Evaluation Ops）— LLM 评估管线设计（evaluation pipeline）、自动化基准测试与评估结果可视化。
 

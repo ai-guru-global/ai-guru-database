@@ -12,8 +12,11 @@ aliases:
   - interview_preparing
 sources: []
 
+name_zh: "AI Data Analyst 面试准备"
 ---
 # AI Data Analyst 面试准备
+
+> 中文简称：AI Data Analyst 面试准备
 
 ## 核心职责
 - **数据分析与洞察**: 指标体系、用户行为与业务分析。
@@ -47,7 +50,7 @@ sources: []
 - [[21_面试岗位/AI_Data_Analyst/interview_answers|AI Data Analyst 面试题实例答案]]
 - [[21_面试岗位/AI_Data_Analyst/question_bank|AI Data Analyst 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 
 ## 面试准备核心策略
 

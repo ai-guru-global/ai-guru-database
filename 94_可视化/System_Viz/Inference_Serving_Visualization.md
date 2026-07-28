@@ -11,8 +11,11 @@ aliases:
   - Inference_Serving_Visualization
 sources: []
 
+name_zh: "推理服务可视化"
 ---
 # 推理服务可视化 (Inference Serving Visualization)
+
+> 中文简称：推理服务可视化
 
 > **一句话理解**: 推理服务可视化是 LLM 在线服务的"运维指挥塔"——实时呈现延迟分布、吞吐曲线、GPU 利用率和 SLO 达标率，让每一次推理请求可追踪、可优化、可保障。
 

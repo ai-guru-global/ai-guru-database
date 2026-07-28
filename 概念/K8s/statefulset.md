@@ -21,9 +21,12 @@ relationships:
   - target: "概念/service"
     type: related_to
 sources: []
+name_zh: "K8s 有状态应用集"
 ---
 
 # StatefulSet
+
+> 中文简称：K8s 有状态应用集
 
 > **一句话理解**: StatefulSet 是 Kubernetes 里给有状态应用「发身份证」的控制器——每个 Pod 都有固定名字、固定网络标识和专属存储，重启后还能找回自己。
 

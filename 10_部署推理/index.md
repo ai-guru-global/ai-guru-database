@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "部署推理"
+name_en: "Deployment & Inference"
 ---
 
 # Deployment Inference
+
+> 中文简称：部署推理 ｜ English Name: Deployment & Inference
 
 This page indexes the contents of `部署推理`.
 

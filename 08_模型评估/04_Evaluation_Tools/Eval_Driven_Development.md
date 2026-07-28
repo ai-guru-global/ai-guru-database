@@ -12,9 +12,12 @@ aliases:
   - Eval_Driven_Development
 sources: []
 
+name_zh: "评估驱动开发"
 ---
 
 # 评估驱动开发 (Eval-Driven Development)
+
+> 中文简称：评估驱动开发
 
 > **一句话理解**: Eval-Driven Development 就像 TDD（测试驱动开发）之于软件工程——先写评估标准，再改模型/提示词/系统，每次改动都必须通过评估门禁才能上线。核心理念：**没有 eval 的改进是盲改，没有 eval 的发布是赌博。**
 

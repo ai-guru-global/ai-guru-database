@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "文档模板"
+name_en: "templates"
 ---
 
 # Templates
+
+> 中文简称：文档模板 ｜ English Name: templates
 
 文档模板（Document Templates）— Cloud Ops Agent 项目的标准化文档模板，涵盖架构、开发、运维与测试四个维度。
 

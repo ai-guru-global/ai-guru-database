@@ -11,8 +11,11 @@ aliases:
   - Anomaly_Detection
 sources: []
 
+name_zh: "异常检测"
 ---
 # 异常检测 (Anomaly Detection)
+
+> 中文简称：异常检测
 
 > 异常检测是识别数据中"与众不同"的模式的任务，广泛应用于欺诈检测、入侵检测、设备故障预警等领域。
 

@@ -7,9 +7,12 @@ summary: "> 评测日期: 2026-04-13 | 测试题数: 80 | 评测版本: 2026 Q2"
 created: 2026-05-31
 updated: 2026-05-31
 sources: []
+name_zh: "Kubernetes 领域专项评测报告"
 ---
 
 # Kubernetes 领域专项评测报告
+
+> 中文简称：Kubernetes 领域专项评测报告
 
 > 评测日期: 2026-04-13 | 测试题数: 80 | 评测版本: 2026 Q2
 

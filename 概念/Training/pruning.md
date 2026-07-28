@@ -28,9 +28,12 @@ provenance:
 base_confidence: 0.88
 created: 2026-06-24
 updated: 2026-06-24
+name_zh: "模型剪枝"
 ---
 
 # Model Pruning（模型剪枝）
+
+> 中文简称：模型剪枝
 
 ## 核心要点
 
@@ -191,7 +194,7 @@ modifier.apply(model)
 - [[概念/Training/awq|AWQ]] — 激活感知量化
 - [[概念/Training/smoothquant|SmoothQuant]] — 平滑量化
 - [[概念/Training/model-compression|Model Compression]] — 模型压缩总览
-- [[概念/Inference/model-quantization|Model Quantization]] — 模型量化
+- [[概念/Inference/quantization|Model Quantization]] — 模型量化
 
 > ℹ️ 剪枝是模型压缩的重要手段，2026年结构化剪枝（SliceGPT/LLM-Pruner）更受生产环境青睐，硬件友好且可加速。
 

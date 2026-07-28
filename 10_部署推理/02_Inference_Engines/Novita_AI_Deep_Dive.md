@@ -12,8 +12,11 @@ aliases:
   - Novita_AI_Deep_Dive
 sources: []
 
+name_zh: "Novita AI: 高性价比云推理平台"
 ---
 # Novita AI: 高性价比云推理平台
+
+> 中文简称：Novita AI: 高性价比云推理平台
 
 > **一句话理解**: Novita AI 定位为"AI 模型的 AWS"——聚合 200+ 开源模型（Llama、Qwen、DeepSeek、Mistral 等），提供 Serverless API 和 Dedicated 两种部署模式，OpenAI 兼容接口，价格在同类平台中极具竞争力。
 

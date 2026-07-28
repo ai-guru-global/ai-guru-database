@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "在线学习"
 ---
 # 在线学习 (Online Learning)
+
+> 中文简称：在线学习
 
 ## 内容索引
 

@@ -15,8 +15,11 @@ aliases:
   - "codex openai overview"
   - codex-openai_overview
 
+name_zh: "OpenAI Codex 概览"
 ---
 # OpenAI Codex 概览
+
+> 中文简称：OpenAI Codex 概览
 
 > **一句话理解**: OpenAI 出品的轻量级编程 Agent,可在终端本地运行,也可在云端异步执行代码任务。
 

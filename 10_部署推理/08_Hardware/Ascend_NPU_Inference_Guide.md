@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "昇腾 NPU LLM 推理部署指南"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # 昇腾 NPU LLM 推理部署指南
+
+> 中文简称：昇腾 NPU LLM 推理部署指南
 
 > **一句话理解**: 昇腾 NPU 是华为推出的 AI 处理器，配合 CANN 和 MindIE 推理引擎，可在国产化环境中部署 LLM 推理服务。
 

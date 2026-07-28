@@ -4,9 +4,12 @@ tags: [rag, graph-database, knowledge-graph, neo4j, production]
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "图 RAG 架构"
 ---
 
 # Graph RAG Architecture
+
+> 中文简称：图 RAG 架构
 
 ## Overview
 

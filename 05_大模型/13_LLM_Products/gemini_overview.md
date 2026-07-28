@@ -12,8 +12,11 @@ aliases:
   - gemini_overview
 sources: []
 
+name_zh: "Gemini 深度解析"
 ---
 # Gemini 深度解析 (Gemini Deep Dive)
+
+> 中文简称：Gemini 深度解析
 
 > Gemini 是 Google DeepMind 开发的多模态大模型——以原生多模态和超长上下文著称，2026 年已成为 Google AI 生态的核心。
 

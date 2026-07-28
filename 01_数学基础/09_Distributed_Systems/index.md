@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "分布式系统"
+name_en: "Distributed Systems"
 ---
 
 # Distributed Systems
+
+> 中文简称：分布式系统 ｜ English Name: Distributed Systems
 
 分布式系统（Distributed Systems）— CAP 定理、一致性协议（consensus protocol）、分布式计算与 AI 训练集群的系统基础。
 

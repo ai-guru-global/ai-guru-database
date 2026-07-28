@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-21
 sources: []
+name_zh: "中国大模型生态"
+name_en: "Chinese LLM Ecosystem"
 ---
 
 # Chinese LLM Ecosystem
+
+> 中文简称：中国大模型生态 ｜ English Name: Chinese LLM Ecosystem
 
 中国大模型生态 — 覆盖 DeepSeek、Qwen、GLM、文心、豆包等中国主流大模型的技术解析与对比。
 

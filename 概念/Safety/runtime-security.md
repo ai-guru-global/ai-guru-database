@@ -25,9 +25,12 @@ provenance:
 base_confidence: 0.85
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "运行时安全"
 ---
 
 # Runtime Security（运行时安全）
+
+> 中文简称：运行时安全
 
 ## 核心要点
 

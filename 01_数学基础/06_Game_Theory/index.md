@@ -8,8 +8,12 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "博弈论"
+name_en: "Game Theory"
 ---
 # 博弈论基础 (Game Theory for AI)
+
+> 中文简称：博弈论 ｜ English Name: Game Theory
 
 ## 内容索引
 
@@ -27,7 +31,7 @@ sources: []
 
 ## 与其他模块的关联
 
-- [[06_强化学习/Multi_Agent_RL/|多智能体强化学习]] — 多 Agent 博弈
+- [[06_强化学习/06_Multi_Agent/Multi_Agent_RL|多智能体强化学习]] — 多 Agent 博弈
 - [[15_智能体/01_Agent_Foundations/Multi_Agent_Systems_Guide|多智能体系统]] — 协作与竞争
 - [[17_伦理安全/02_Value_Alignment/|价值对齐]] — AI 安全中的博弈
 - [[18_行业应用/04_Finance/|金融 AI]] — 拍卖与机制设计
@@ -206,3 +210,7 @@ sources: []
 - [ ] 参与社区讨论和技术分享
 - [ ] 关注顶会最新成果
 - [ ] 将学习成果应用到实际工作中
+
+## 相关文档
+
+- [[01_数学基础/06_Game_Theory/Game_Theory_for_dummy|博弈论小白版]]

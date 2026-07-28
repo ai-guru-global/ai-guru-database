@@ -12,8 +12,11 @@ aliases:
   - ML_Fundamentals
 sources: []
 
+name_zh: "机器学习基础"
 ---
 # 机器学习基础 (Machine Learning Fundamentals)
+
+> 中文简称：机器学习基础
 
 > **一句话理解**: 机器学习的核心是从数据中学习规律并泛化到新数据——理解监督/无监督范式、偏差-方差权衡、交叉验证和模型选择，就掌握了 ML 的 80%。
 

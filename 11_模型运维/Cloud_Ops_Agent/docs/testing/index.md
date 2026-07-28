@@ -7,9 +7,13 @@ created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
 sources: []
+name_zh: "云产品运维 Agent 评测指南"
+name_en: "testing"
 ---
 
 # 云产品运维 Agent 评测指南 (Testing & Evaluation)
+
+> 中文简称：云产品运维 Agent 评测指南 ｜ English Name: testing
 
 > 🎯 **目标**: 为测试工程师和评测工程师提供基于 Agent Harness 的全面评测体系，包括单 Agent 评估、Benchmark 设计、质量度量、回归测试策略，确保 Agent 能力持续提升。
 

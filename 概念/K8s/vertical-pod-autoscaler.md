@@ -19,9 +19,12 @@ relationships:
   - target: "概念/deployment"
     type: part_of
 sources: []
+name_zh: "Pod 纵向自动扩缩容"
 ---
 
 # Vertical Pod Autoscaler（VPA）
+
+> 中文简称：Pod 纵向自动扩缩容
 
 > **一句话理解**: VPA 是 K8s 的「自动调规格」机制——根据 Pod 实际资源用量，动态建议或修改容器的 CPU/内存 requests 与 limits。
 

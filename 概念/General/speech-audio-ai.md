@@ -25,8 +25,11 @@ aliases:
   - "Speech Audio Ai"
   - "speech audio ai"
 
+name_zh: "语音与音频 AI"
 ---
 # 语音与音频 AI (Speech & Audio AI)
+
+> 中文简称：语音与音频 AI
 
 > AI 感知层的核心模态——让机器「听懂」和「说出」人类语言及所有声音。
 

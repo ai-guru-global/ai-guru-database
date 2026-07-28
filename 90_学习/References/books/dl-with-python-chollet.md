@@ -23,8 +23,11 @@ aliases:
   - "Dl With Python Chollet"
   - "dl with python chollet"
 
+name_zh: "Python 深度学习"
 ---
 # Deep Learning with Python
+
+> 中文简称：Python 深度学习
 
 > **一句话理解**: Keras 创始人 François Chollet 的深度学习入门经典，以"直觉优先 + 代码驱动"的方式讲解深度学习，是初学者最友好的 DL 教材之一。
 

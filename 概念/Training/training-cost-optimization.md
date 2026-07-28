@@ -21,9 +21,12 @@ aliases:
   - "Training Cost Optimization"
   - "训练成本优化"
 sources: []
+name_zh: "训练成本优化"
 ---
 
 # 训练成本优化（Training Cost Optimization）
+
+> 中文简称：训练成本优化
 
 ## 一句话定义
 

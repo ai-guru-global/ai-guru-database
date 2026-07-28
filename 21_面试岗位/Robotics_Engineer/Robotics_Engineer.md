@@ -11,9 +11,12 @@ aliases:
   - "Robotics Engineer 面试指南"
   - "Robotics_Engineer Interview Guide"
 sources: []
+name_zh: "Robotics Engineer 面试指南"
 ---
 
 # Robotics Engineer 面试指南
+
+> 中文简称：Robotics Engineer 面试指南
 
 > **一句话理解**: Robotics Engineer 是连接物理世界与智能算法的全栈工程师——既要理解传感器、执行器等硬件约束，又要精通感知、规划、控制的算法链路，在实时性、安全性和鲁棒性的多重约束下让机器人在真实世界中可靠运行。
 
@@ -719,7 +722,7 @@ def main():
 ## Related
 
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 - [[21_面试岗位/Computer_Vision_Engineer/question_bank|Computer Vision Engineer 题库]]
 - [[21_面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
 - [[21_面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]

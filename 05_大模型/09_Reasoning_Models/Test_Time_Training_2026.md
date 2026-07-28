@@ -23,9 +23,12 @@ sources:
   - "Sun et al. 2024, Learning to (Learn at Test Time): RNNs with Expressive Memory"
   - "Sun et al. 2020, Test-Time Training with Self-Supervision for Generalization under Distribution Shifts"
   - "TTT-Linear / TTT-MLP 论文 (arXiv:2407.04620)"
+name_zh: "Test-Time Training: 测试时训练"
 ---
 
 # Test-Time Training: 测试时训练 (TTT 2026)
+
+> 中文简称：Test-Time Training: 测试时训练
 
 > **一句话定位**: Test-Time Training (TTT) 是一种在**推理阶段对模型执行梯度更新**的技术。不同于 Test-Time Compute（o1/R1 式的"多想"而不改参数），TTT 在处理每个 token 或每个样本时，通过对一个内部记忆模块做几步梯度下降，使模型"边推理边学习"。这使隐藏状态从固定的权重变成了**可学习的模型**，极大提升了长序列的表达能力。
 

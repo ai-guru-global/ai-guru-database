@@ -12,8 +12,11 @@ aliases:
   - vLLM_for_dummy
 sources: []
 
+name_zh: "vLLM 大白话解释"
 ---
 # vLLM 大白话解释
+
+> 中文简称：vLLM 大白话解释
 
 > **一句话秒懂**: vLLM 就是一套让开源大模型在 GPU 上跑得更猛、更省、更稳的推理服务端引擎。
 

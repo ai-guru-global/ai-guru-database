@@ -11,9 +11,12 @@ aliases:
   - "CAI Deep Dive"
   - Constitutional_AI_Paper_Deep_Dive
 sources: []
+name_zh: "Constitutional AI 论文精读"
 ---
 
 # Constitutional AI 论文精读: Harmlessness from AI Feedback
+
+> 中文简称：Constitutional AI 论文精读
 
 > **一句话理解**: Constitutional AI 就像给 AI 写了一部"宪法"——AI 不再需要人类逐条批改作业，而是自己对照宪法原则审阅自己的回答，发现违规就修改，最终学会既安全又有用的对话方式。
 

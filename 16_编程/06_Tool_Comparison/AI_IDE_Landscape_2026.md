@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "AI IDE 全景 2026"
 ---
 # AI IDE 全景 2026
+
+> 中文简称：AI IDE 全景 2026
 
 ## 1. AI IDE 演进
 
@@ -285,7 +288,7 @@ BEST_PRACTICES = {
 
 - [[16_编程/05_Tools/|编程工具]]
 - [[16_编程/06_Tool_Comparison/|工具对比]]
-- [[16_编程/Code_Review_AI/|AI 代码审查]]
-- [[16_编程/Testing_with_AI/|AI 辅助测试]]
+- [[16_编程/04_Practice/Code_Review_AI_2026|AI 代码审查]]
+- [[09_测试/index|AI 辅助测试]]
 - [[15_智能体/|智能体系统]]
 - [[05_大模型/13_LLM_Products/|LLM 产品]]

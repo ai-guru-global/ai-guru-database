@@ -11,8 +11,11 @@ aliases:
   - Unsupervised_Learning
 sources: []
 
+name_zh: "无监督学习"
 ---
 # 无监督学习 (Unsupervised Learning)
+
+> 中文简称：无监督学习
 
 > **一句话理解**: 无监督学习就像"自己找规律"——没有老师告诉答案,让模型在没有标签的数据中自己发现隐藏的模式和结构,就像考古学家从文物中推测古代文明的生活方式。
 

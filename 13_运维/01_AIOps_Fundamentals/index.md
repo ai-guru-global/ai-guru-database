@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "智能运维基础"
+name_en: "AIOps Fundamentals"
 ---
 
 # AIOps Fundamentals
+
+> 中文简称：智能运维基础 ｜ English Name: AIOps Fundamentals
 
 智能运维基础 — AI 驱动的 IT 运维方法论，涵盖异常检测、根因分析和自动化修复。
 

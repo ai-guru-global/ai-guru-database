@@ -31,8 +31,11 @@ aliases:
   - "attention variants"
   - "注意力变体"
 
+name_zh: "Attention 变体"
 ---
 # Attention 变体 (GQA/MQA/SWA/MLA)
+
+> 中文简称：Attention 变体
 
 > 注意力架构演进的核心目标：用更少的 KV 头数/维度压缩 KV Cache，降低推理显存和带宽压力。
 

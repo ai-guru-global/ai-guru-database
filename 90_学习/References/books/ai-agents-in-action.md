@@ -25,8 +25,11 @@ aliases:
   - "Ai Agents In Action"
   - "ai agents in action"
 
+name_zh: "AI 智能体实战"
 ---
 # AI Agents in Action
+
+> 中文简称：AI 智能体实战
 
 > **一句话理解**: Manning 出品的 AI Agent 实战指南（第2版），从 Agent 基本概念讲到工具调用、记忆、规划与多 Agent 协作，配套 LangChain / AutoGen / CrewAI 三大主流框架的完整代码示例，是 2024-2026 年 Agent 工程入门到进阶的首选实战书。
 

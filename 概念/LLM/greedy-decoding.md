@@ -24,9 +24,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "贪心解码"
 ---
 
 # 贪心解码（Greedy Decoding）
+
+> 中文简称：贪心解码
 
 ## 一句话总结
 

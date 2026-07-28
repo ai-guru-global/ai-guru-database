@@ -29,8 +29,11 @@ aliases:
   - "Mixed Precision"
   - "mixed precision"
 
+name_zh: "混合精度训练与推理"
 ---
 # 混合精度训练与推理 (Mixed Precision)
+
+> 中文简称：混合精度训练与推理
 
 > 用一半的显存，跑两倍的 batch size——速度与精度的完美平衡。
 

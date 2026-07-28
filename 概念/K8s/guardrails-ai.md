@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.82
 lifecycle: reviewed
 tier: supporting
+name_zh: "AI 安全防护框架"
 ---
 
 # Guardrails AI
+
+> 中文简称：AI 安全防护框架
 
 [Guardrails AI](https://github.com/guardrails-ai/guardrails) 是一个开源的 LLM 安全防护框架，通过在 LLM 的输入和输出两端部署**校验器（Validators）**和**护栏（Guards）**，确保 AI 应用在生产环境中的安全性、合规性和输出质量。它解决的核心问题是：**LLM 的输出不可预测且不可控**，Guardrails AI 让输出变得可验证、可纠正。
 

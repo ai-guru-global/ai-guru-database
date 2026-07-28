@@ -29,9 +29,12 @@ provenance:
 base_confidence: 0.85
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "AI 可观测性"
 ---
 
 # AI 可观测性（LLM Observability）
+
+> 中文简称：AI 可观测性
 
 ## 一句话定义
 

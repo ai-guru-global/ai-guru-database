@@ -11,8 +11,11 @@ aliases:
   - Deep_Learning_Overview
 sources: []
 
+name_zh: "深度学习概览"
 ---
 # 深度学习概览 (Deep Learning Overview)
+
+> 中文简称：深度学习概览
 
 > 深度学习全景概览——从神经网络基础到现代架构，从训练技巧到工程实践，系统性梳理深度学习知识体系。
 

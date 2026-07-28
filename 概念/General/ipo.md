@@ -23,9 +23,12 @@ provenance:
 base_confidence: 0.85
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "身份偏好优化"
 ---
 
 # IPO（Identity Preference Optimization）
+
+> 中文简称：身份偏好优化
 
 ## 核心要点
 

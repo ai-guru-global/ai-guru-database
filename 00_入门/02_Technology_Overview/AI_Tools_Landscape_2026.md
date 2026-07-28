@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "AI 工具全景 2026"
 ---
 # AI 工具全景 2026 (AI Tools Landscape)
+
+> 中文简称：AI 工具全景 2026
 
 ## 1. 工具分类
 

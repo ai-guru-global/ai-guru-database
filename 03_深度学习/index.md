@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "深度学习"
+name_en: "Deep Learning"
 ---
 
 # Deep Learning
+
+> 中文简称：深度学习 ｜ English Name: Deep Learning
 
 This page indexes the contents of `深度学习`.
 

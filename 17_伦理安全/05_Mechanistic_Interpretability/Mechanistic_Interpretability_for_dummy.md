@@ -12,8 +12,11 @@ aliases:
   - Mechanistic_Interpretability_for_dummy
 sources: []
 
+name_zh: "机制可解释性小白指南"
 ---
 # 机制可解释性小白指南 (Mechanistic Interpretability for Dummy)
+
+> 中文简称：机制可解释性小白指南
 
 > **一句话理解**: 机制可解释性就像"打开 AI 的脑子看它在想什么"——不再把 AI 当黑盒，而是解剖它的神经元，看看它是怎么理解"狗"和"猫"的。
 

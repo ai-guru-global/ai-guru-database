@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "智能体评估专题"
 ---
 
 # Agent Evaluation
+
+> 中文简称：智能体评估专题
 
 Agent 评估（Agent Evaluation）— 智能体系统的端到端评估方法论（end-to-end evaluation）、工具链与 Benchmark。
 

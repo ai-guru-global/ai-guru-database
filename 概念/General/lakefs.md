@@ -14,9 +14,12 @@ relationships:
   - target: "概念/data-lake"
     type: works_with
 sources: []
+name_zh: "数据湖版本控制"
 ---
 
 # LakeFS
+
+> 中文简称：数据湖版本控制
 
 > **一句话理解**: LakeFS 给数据湖加上了 Git 的能力——分支、提交、合并、回滚，让数据也能版本化管理。
 

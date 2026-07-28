@@ -12,12 +12,15 @@ aliases:
   - DeepSpeed_MII_Deep_Dive
 sources: []
 
+name_zh: "DeepSpeed-MII: 微软高性能推理框架"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # DeepSpeed-MII: 微软高性能推理框架
+
+> 中文简称：DeepSpeed-MII: 微软高性能推理框架
 
 > **一句话理解**: DeepSpeed-MII 是微软将 DeepSpeed-Inference 能力封装为易用推理服务的框架——2 行代码即可部署模型，自动注入推理优化（KV Cache、量化、CUDA Kernel 融合），支持 gRPC 和 REST API。
 

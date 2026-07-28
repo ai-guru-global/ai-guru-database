@@ -23,9 +23,12 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: core
+name_zh: "A-Speed 加速推理套件"
 ---
 
 # A-Speed 加速推理套件
+
+> 中文简称：A-Speed 加速推理套件
 
 > **一句话理解**: A-Speed 是 AI Stack 的"引擎"——所有模型推理能力都基于此加速套件运行，替代了开源推理框架，提供 50% 性能提升。
 

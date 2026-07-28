@@ -25,9 +25,12 @@ aliases:
   - "Safetensors"
   - "safetensors"
   - "安全张量格式"
+name_zh: "Safetensors 安全模型格式"
 ---
 
 # Safetensors 安全模型格式
+
+> 中文简称：Safetensors 安全模型格式
 
 > **一句话理解**: Safetensors 是"不执行代码的模型文件"——替代了危险的 pickle 格式，下载即安全，已是 HuggingFace Hub 的默认格式。
 

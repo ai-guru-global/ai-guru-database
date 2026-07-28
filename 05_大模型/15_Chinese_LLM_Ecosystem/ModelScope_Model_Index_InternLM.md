@@ -14,7 +14,10 @@ aliases:
   - ModelScope_Model_Index_InternLM
 sources: []
 
+name_zh: "ModelScope 模型索引 · 书生 InternLM"
 ---
+> 中文简称：ModelScope 模型索引 · 书生 InternLM
+
 ## 上海 AI 实验室 · 书生 (InternLM)
 
 Namespace: `Shanghai_AI_Laboratory` · 组织主页: [https://modelscope.cn/brand/view/internlm](https://modelscope.cn/brand/view/internlm) · 模型数: **443**

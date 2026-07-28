@@ -19,9 +19,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "Ray Tune 分布式超参数调优"
 ---
 
 # Ray Tune 分布式超参数调优
+
+> 中文简称：Ray Tune 分布式超参数调优
 
 > **一句话理解**: Ray Tune 是"超参数搜索的分布式引擎"——在多 GPU/多机器上并行搜索最优超参数，支持贝叶斯优化、早停、群体进化等先进算法。
 

@@ -11,8 +11,11 @@ aliases:
   - Multimodal_Evaluation_Benchmarks
 sources: []
 
+name_zh: "多模态评测基准深度解析"
 ---
 # 多模态评测基准深度解析
+
+> 中文简称：多模态评测基准深度解析
 
 ## 一句话理解
 

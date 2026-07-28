@@ -12,8 +12,11 @@ aliases:
   - OpenClaw_Technical_Deep_Dive
 sources: []
 
+name_zh: "OpenClaw 技术深潜"
 ---
 # OpenClaw Technical Deep Dive: Architecture, Internals & Implementation
+
+> 中文简称：OpenClaw 技术深潜
 
 ## Overview
 

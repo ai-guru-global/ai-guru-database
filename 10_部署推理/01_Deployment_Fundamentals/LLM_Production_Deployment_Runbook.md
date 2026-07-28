@@ -10,9 +10,12 @@ aliases:
   - "LLM Production Deployment Runbook"
   - LLM_Production_Deployment_Runbook
 sources: []
+name_zh: "LLM 生产环境部署 Runbook：从模型文件到线上服务"
 ---
 
 # LLM 生产环境部署 Runbook：从模型文件到线上服务
+
+> 中文简称：LLM 生产环境部署 Runbook：从模型文件到线上服务
 
 > **一句话理解**：LLM 生产部署不是把模型文件放到 GPU 上启动 API 那么简单，而是一项围绕「高吞吐、低延迟、高可用、可观测、可成本控制」的系统工程。
 

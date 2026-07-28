@@ -40,13 +40,16 @@ lifecycle: redirect
 lifecycle_changed: 2026-07-11
 tier: core
 created: 2026-05-31 00:00:00+00:00
-updated: 2026-07-11
+updated: 2026-07-25
 aliases:
   - "Model Compression"
   - "model compression"
 
+name_zh: "模型压缩"
 ---
 # 模型压缩
+
+> 中文简称：模型压缩
 
 > 此页面已合并至 [[model-compression-methods|LLM 模型压缩方法对比]]。请前往查看完整内容。
 
@@ -161,6 +164,16 @@ aliases:
 | 修复 | 实施修复方案 | 代码修改+测试 | 修复PR |
 | 验证 | 确认问题消除 | 回归测试 | 验证报告 |
 | 预防 | 防止再次发生 | 监控+文档 | 改进措施 |
+
+## 源码级洞察（基于 llm-compressor v0.12.0 / bitsandbytes v0.50.0 归档源码）
+
+归档位置：`code/llm-frameworks/llm-compressor-v0.12.0/`、`code/llm-frameworks/bitsandbytes-v0.50.0/`。
+
+- **压缩方法的工程统一抽象**：llm-compressor 把量化（GPTQ/AWQ/SmoothQuant）与剪枝（SparseGPT）全部抽象为 `Modifier` 基类（`src/llmcompressor/modifiers/modifier.py` L13），多方法组合 = 多个 Modifier 写进同一份 YAML Recipe（`recipe/recipe.py` L27），由 `oneshot()`（`entrypoints/oneshot.py` L261）一次性执行。
+- **逐层校准管道**：`SequentialPipeline`（`pipelines/sequential/pipeline.py` L52）逐层前向→压缩→释放，单卡即可处理 70B+ 模型——压缩工具的显存瓶颈在工程上被管道化解决。
+- **动态量化路线对照**：bitsandbytes 走"加载即量化"（`nn/modules.py` L213 `Params4bit` 在 `.cuda()` 时触发 `functional.py` L884 `quantize_4bit`），无需校准数据；与 llm-compressor 的离线 PTQ 形成两条互补路线。
+
+详见 [[10_部署推理/05_Quantization/Quantization_Techniques_2026]] 第 8 节。
 
 ## 知识关联图谱
 

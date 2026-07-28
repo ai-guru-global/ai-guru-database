@@ -13,8 +13,11 @@ aliases:
   - Exploration_Strategies_Deep_Dive
 sources: []
 
+name_zh: "探索策略深度解析"
 ---
 # 探索策略深度解析 (Exploration Strategies Deep Dive)
+
+> 中文简称：探索策略深度解析
 
 > **一句话理解**: 探索策略是RL的"好奇心引擎"——在稀疏奖励环境中，外在奖励几乎为零，内在动机（好奇心、新颖性、不确定性）驱动智能体主动发现新状态，是解决"大海捞针"式探索问题的核心方法。
 

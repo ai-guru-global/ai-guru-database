@@ -14,8 +14,11 @@ aliases:
   - "AI Gaming Entertainment 2026"
   - AI_Gaming_Entertainment_2026
 
+name_zh: "AI 游戏与娱乐产业应用深度解析"
 ---
 # AI 游戏与娱乐产业应用深度解析
+
+> 中文简称：AI 游戏与娱乐产业应用深度解析
 
 > **一句话理解**: AI 在游戏与娱乐产业的核心应用:智能NPC、程序化内容生成、玩家分析、AI音乐/影视制作、虚拟人、内容推荐等场景。
 

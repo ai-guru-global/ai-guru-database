@@ -25,9 +25,12 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources: []
+name_zh: "神经符号 AI"
 ---
 
 # Neuro-Symbolic AI（神经符号 AI）
+
+> 中文简称：神经符号 AI
 
 ## 一句话总结
 

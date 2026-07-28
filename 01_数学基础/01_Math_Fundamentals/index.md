@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "数学基础核心"
+name_en: "Math Fundamentals"
 ---
 
 # Math Fundamentals
+
+> 中文简称：数学基础核心 ｜ English Name: Math Fundamentals
 
 ## 文件导航
 

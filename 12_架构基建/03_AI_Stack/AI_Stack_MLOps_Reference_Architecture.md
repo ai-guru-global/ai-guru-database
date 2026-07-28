@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "AI Stack + MLflow + ACK 私有化 MLOps 参考架构"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # AI Stack + MLflow + ACK 私有化 MLOps 参考架构
+
+> 中文简称：AI Stack + MLflow + ACK 私有化 MLOps 参考架构
 
 > **一句话理解**: 把 AI Stack 当成私有化 AI 底座，ACK 当调度层，MLflow 当模型与实验中枢，组合成一条端到端的 MLOps 流水线。
 

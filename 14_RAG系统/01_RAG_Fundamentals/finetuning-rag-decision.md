@@ -22,9 +22,12 @@ aliases:
   - "Finetuning Rag Decision"
   - "finetuning rag decision"
 
+name_zh: "微调 × RAG: LLM 应用知识注入的两条路径"
 ---
 
 # 微调 × RAG: LLM 应用知识注入的两条路径
+
+> 中文简称：微调 × RAG: LLM 应用知识注入的两条路径
 
 ## The Connection
 

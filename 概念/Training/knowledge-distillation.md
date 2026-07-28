@@ -26,8 +26,11 @@ aliases:
   - "Knowledge Distillation"
   - "knowledge distillation"
 
+name_zh: "知识蒸馏"
 ---
 # 知识蒸馏 (Knowledge Distillation)
+
+> 中文简称：知识蒸馏
 
 > 让小学生学会专家的思维方式，而不只是背答案。
 

@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "QwQ 推理模型"
 ---
 
 # QwQ 推理模型
+
+> 中文简称：QwQ 推理模型
 
 > **一句话理解**: QwQ 是通义千问的"深度思考版"——32B 参数的推理模型，用思维链（CoT）逐步推理复杂问题，对标 o1/R1。
 
@@ -195,7 +198,7 @@ QwQ 是阿里开源的推理模型，在数学、代码、逻辑推理等任务�
 
 ## 相关概念
 
-- [[概念/qwen]] — Qwen 通义千问系列
-- [[概念/deepseek-r1]] — DeepSeek-R1 推理模型
+- [[概念/LLM/qwen-series|qwen]] — Qwen 通义千问系列
+- [[概念/LLM/deepseek-series|deepseek-r1]] — DeepSeek-R1 推理模型
 - [[概念/test-time-compute]] — 测试时计算扩展
 

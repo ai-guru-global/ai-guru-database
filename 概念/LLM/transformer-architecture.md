@@ -22,9 +22,12 @@ lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-07-21T00:00:00Z
+name_zh: "Transformer 架构"
 ---
 
 # Transformer 架构
+
+> 中文简称：Transformer 架构
 
 Transformer（Vaswani et al., 2017）彻底改变了序列建模方式，通过自注意力机制实现并行计算和长程依赖建模。从 BERT 到 GPT 系列，Transformer 已成为 NLP 和 CV 的基础架构。然而其 $O(n^2)$ 注意力复杂度也成为核心瓶颈，催生了 状态空间模型 等替代架构。
 

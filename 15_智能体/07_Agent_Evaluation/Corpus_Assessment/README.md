@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "语料库评估"
 ---
 # Corpus Assessment
+
+> 中文简称：语料库评估
 
 > 语料库/知识库质量评估文档目录
 

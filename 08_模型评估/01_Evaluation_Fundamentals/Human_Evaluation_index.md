@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "人工评估专题"
 ---
 
 # Human Evaluation
+
+> 中文简称：人工评估专题
 
 人工评估（Human Evaluation）— 标注指南（annotation guideline）、评估者一致性（inter-annotator agreement / Kappa）与人工评估的工程化。
 

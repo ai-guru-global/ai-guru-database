@@ -11,8 +11,11 @@ aliases:
   - Google_Gemini_Deep_Dive
 sources: []
 
+name_zh: "Google Gemini 技术深度解析"
 ---
 # Google Gemini 技术深度解析
+
+> 中文简称：Google Gemini 技术深度解析
 
 ## 一句话理解
 

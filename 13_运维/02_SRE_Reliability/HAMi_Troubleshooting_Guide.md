@@ -12,12 +12,15 @@ aliases:
   - HAMi_Troubleshooting_Guide
 sources: []
 
+name_zh: "HAMi 问题排查与故障解决指南"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # HAMi 问题排查与故障解决指南
+
+> 中文简称：HAMi 问题排查与故障解决指南
 
 > **一句话理解**: 本文档汇总 HAMi 在生产环境中最常见的安装、调度、隔离、兼容性问题，提供从症状识别、日志定位到修复措施的完整排查路径。
 

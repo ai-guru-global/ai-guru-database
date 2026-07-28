@@ -27,8 +27,11 @@ aliases:
   - "Online Evaluation"
   - "online evaluation"
 
+name_zh: "在线评估"
 ---
 # 在线评估
+
+> 中文简称：在线评估
 
 ## 核心要点
 

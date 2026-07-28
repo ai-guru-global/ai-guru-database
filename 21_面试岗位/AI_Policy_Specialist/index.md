@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "AI 政策专家"
+name_en: "AI Policy Specialist"
 ---
 
 # AI Policy Specialist
+
+> 中文简称：AI 政策专家 ｜ English Name: AI Policy Specialist
 
 AI 政策专家 — 关注 AI 监管框架、伦理治理（ethics governance）、风险评估与国际政策动态。
 

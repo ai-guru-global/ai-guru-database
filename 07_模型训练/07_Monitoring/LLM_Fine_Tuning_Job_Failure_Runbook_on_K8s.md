@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: core
 sources: []
+name_zh: "LLM 微调任务 K8s 失败排障 Runbook"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # LLM 微调任务 K8s 失败排障 Runbook
+
+> 中文简称：LLM 微调任务 K8s 失败排障 Runbook
 
 > **一句话理解**: 这本 Runbook 教你把「微调任务为什么失败」从框架报错（LoRA/数据/优化器）翻译到 K8s 运行信号（OOM、镜像拉取、Pending、重启），再给出修复动作。
 

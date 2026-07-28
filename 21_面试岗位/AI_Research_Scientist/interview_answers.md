@@ -7,9 +7,12 @@ created: 2026-07-23
 updated: 2026-07-23
 tier: supporting
 sources: []
+name_zh: "AI Research Scientist 面试题实例答案"
 ---
 
 # AI Research Scientist 面试题实例答案
+
+> 中文简称：AI Research Scientist 面试题实例答案
 
 > 每个答案采用 **结论 → 展开 → 批判/推导 → 追问预判** 结构。
 
@@ -300,4 +303,4 @@ maximize E[r(x,y)] - β·KL[π || π_ref]
 - [[07_模型训练/index|模型训练]]
 - [[20_论文精读/index|论文精读]]
 - [[21_面试岗位/AI_Research_Engineer/index|AI Research Engineer]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]

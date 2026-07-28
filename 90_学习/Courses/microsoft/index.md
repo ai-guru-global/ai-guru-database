@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "微软课程"
+name_en: "microsoft"
 ---
 
 # Microsoft
+
+> 中文简称：微软课程 ｜ English Name: microsoft
 
 This page indexes the contents of `90_学习/Courses/microsoft`.
 

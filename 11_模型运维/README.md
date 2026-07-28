@@ -8,8 +8,11 @@ updated: '2026-06-15'
 tier: supporting
 sources: []
 
+name_zh: "MLOps 流水线"
 ---
 # MLOps 流水线 (MLOps Pipeline)
+
+> 中文简称：MLOps 流水线
 
 > **一句话理解**: MLOps 是 DevOps 的"AI 版"——如果说开发一个模型像造一辆车，MLOps 就是建造并运营整条汽车生产线，确保模型能持续、稳定、高效地在生产环境中运行。
 

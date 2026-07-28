@@ -11,8 +11,11 @@ aliases:
   - Agno_Deep_Dive
 sources: []
 
+name_zh: "agno: 现代 AI Agent 框架"
 ---
 # agno: 现代 AI Agent 框架
+
+> 中文简称：agno: 现代 AI Agent 框架
 
 > **一句话理解**: agno 是一个现代化的 AI Agent 框架——用极简的代码构建拥有知识、记忆和工具调用的智能 Agent。
 

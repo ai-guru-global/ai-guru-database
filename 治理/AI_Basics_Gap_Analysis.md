@@ -6,9 +6,12 @@ summary: "系统性分析 AI 知识库在入门阶段的覆盖缺口，识别从
 created: 2026-06-01
 updated: 2026-06-01
 sources: []
+name_zh: "AI 基础入门内容缺口分析报告"
 ---
 
 # AI 基础入门内容缺口分析报告
+
+> 中文简称：AI 基础入门内容缺口分析报告
 
 > 生成时间: 2026-06-01
 > 分析范围: 00_AI_Introduction / 01_Fundamentals / 02_Machine_Learning / 90_Learn

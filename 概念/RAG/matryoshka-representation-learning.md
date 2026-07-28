@@ -31,8 +31,11 @@ aliases:
   - "Matryoshka Representation Learning"
   - "matryoshka representation learning"
 
+name_zh: "MRL，俄罗斯套娃表示学习"
 ---
 # Matryoshka Representation Learning（MRL，俄罗斯套娃表示学习）
+
+> 中文简称：MRL，俄罗斯套娃表示学习
 
 > **一句话理解**: MRL 让模型学会"一层套一层"的向量表示——取前 64 维能做粗排，取前 256 维能做精排，取全量 768/1024 维能做高精度匹配；同一组向量可按需截断，不必为不同精度场景训练多个模型。
 

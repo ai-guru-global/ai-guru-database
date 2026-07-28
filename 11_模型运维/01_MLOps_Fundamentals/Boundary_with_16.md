@@ -13,8 +13,11 @@ aliases:
   - Boundary_with_16
 sources: []
 
+name_zh: "10_MLOps_Pipeline 与 16_AI_Ops 边界声明"
 ---
 # 10_MLOps_Pipeline 与 16_AI_Ops 边界声明
+
+> 中文简称：10_MLOps_Pipeline 与 16_AI_Ops 边界声明
 
 > **核心原则**: 10 是「**ML 建设**」（概念 + 工具实现），16 是「**AI 运维**」（线上运营 + 应急响应）。
 > 工具深度解析已于 2026-06-15 从 16 迁入 10，物理结构现已对齐边界原则。

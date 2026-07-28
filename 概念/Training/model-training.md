@@ -39,8 +39,11 @@ aliases:
   - "Model Training"
   - "model training"
 
+name_zh: "模型训练"
 ---
 # 模型训练
+
+> 中文简称：模型训练
 
 ## 核心要点
 

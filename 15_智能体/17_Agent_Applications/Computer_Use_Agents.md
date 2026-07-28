@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "桌面自动化/RPA"
 ---
 # Computer Use Agents
+
+> 中文简称：桌面自动化/RPA
 
 ## 1. 概述
 
@@ -155,7 +158,7 @@ COMPUTER_USE_SAFETY = {
 ## 4. 交叉引用
 
 - [[15_智能体/|智能体系统]]
-- [[15_智能体/Voice_Agents/|语音 Agent]]
+- [[15_智能体/17_Agent_Applications/Voice_Agents|语音 Agent]]
 - [[05_大模型/10_Multimodal_Models/|多模态模型]]
 - [[16_编程/06_Tool_Comparison/AI_IDE_Landscape_2026|AI IDE]]
 - [[17_伦理安全/|伦理安全]]

@@ -11,9 +11,12 @@ aliases:
   - "modern ai training stack"
   - "AI 训练栈"
 sources: []
+name_zh: "现代 AI 训练栈：从预训练到推理扩展的统一视角"
 ---
 
 # 现代 AI 训练栈：从预训练到推理扩展的统一视角
+
+> 中文简称：现代 AI 训练栈：从预训练到推理扩展的统一视角
 
 ## The Connection
 

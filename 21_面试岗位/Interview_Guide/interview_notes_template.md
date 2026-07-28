@@ -7,9 +7,12 @@ created: 2026-06-04
 updated: 2026-06-04
 tier: supporting
 sources: []
+name_zh: "面试复盘模板"
 ---
 
 # 面试复盘模板 (Interview Notes Template)
+
+> 中文简称：面试复盘模板
 
 > **使用方法**: 每次面试后复制下方模板，填写本次面试记录，保存为 `notes_YYYYMMDD_公司名.md`。
 
@@ -146,7 +149,7 @@ sources: []
 ## Related
 
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 
 ## 面试核心知识框架
 

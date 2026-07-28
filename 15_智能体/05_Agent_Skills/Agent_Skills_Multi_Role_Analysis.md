@@ -11,8 +11,11 @@ aliases:
   - Agent_Skills_Multi_Role_Analysis
 sources: []
 
+name_zh: "Agent Skills 多角色全景分析"
 ---
 # Agent Skills 多角色全景分析
+
+> 中文简称：Agent Skills 多角色全景分析
 
 > 🎯 **目标**：从 AI Agent 研发工程师、系统架构师、集成测试工程师、评估师、产品经理五个专业角色视角，全面解析 Agent Skills 的内涵外延，覆盖完整生命周期。
 

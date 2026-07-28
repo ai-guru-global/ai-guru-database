@@ -12,8 +12,11 @@ aliases:
   - AutoGen_Deep_Dive
 sources: []
 
+name_zh: "AutoGen: 微软多 Agent 框架"
 ---
 # AutoGen: 微软多 Agent 框架
+
+> 中文简称：AutoGen: 微软多 Agent 框架
 
 > **一句话理解**: AutoGen 是微软出品的对话式多 Agent 框架——通过自然对话让 Agent 协作，支持 Group Chat、Human-in-the-loop 和代码执行。
 

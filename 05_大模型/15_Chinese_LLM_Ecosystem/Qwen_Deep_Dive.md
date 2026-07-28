@@ -11,8 +11,11 @@ aliases:
   - Qwen_Deep_Dive
 sources: []
 
+name_zh: "Qwen 技术深度解析"
 ---
 # Qwen (通义千问) 技术深度解析
+
+> 中文简称：Qwen 技术深度解析
 
 ## 一句话理解
 

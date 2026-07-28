@@ -13,8 +13,11 @@ aliases:
   - OpenClaw_Internals
 sources: []
 
+name_zh: "OpenClaw 内部机制与生产优化深度指南"
 ---
 # OpenClaw 内部机制与生产优化
+
+> 中文简称：OpenClaw 内部机制与生产优化深度指南
 
 > 本页提炼自《OpenClaw 从入门到精通》第三、四部分（第 9-16 章），聚焦底层原理与生产实战。基础使用与配置详见 [[OpenClaw_Complete_Guide]]。
 

@@ -25,8 +25,11 @@ aliases:
   - "Speculative Decoding"
   - "speculative decoding"
 
+name_zh: "投机解码"
 ---
 # Speculative Decoding (投机解码)
+
+> 中文简称：投机解码
 
 ## 核心要点
 

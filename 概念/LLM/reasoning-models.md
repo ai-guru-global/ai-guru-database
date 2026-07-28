@@ -32,8 +32,11 @@ aliases:
   - "Reasoning Models"
   - "reasoning models"
 
+name_zh: "推理模型"
 ---
 # 推理模型
+
+> 中文简称：推理模型
 
 ## 概述
 

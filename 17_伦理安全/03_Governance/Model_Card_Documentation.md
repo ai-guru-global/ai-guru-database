@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "模型卡与文档"
 ---
 # 模型卡与文档 (Model Card Documentation)
+
+> 中文简称：模型卡与文档
 
 ## 1. 为什么需要模型卡？
 
@@ -132,8 +135,8 @@ COMPLIANCE_REQUIREMENTS = {
 
 - [[17_伦理安全/|伦理安全]]
 - [[17_伦理安全/09_Deepfake_Security/AI_Watermarking|AI 水印]]
-- [[17_伦理安全/Bias_Fairness_Testing/|偏见公平测试]]
-- [[17_伦理安全/AI_Liability/|AI 责任]]
+- [[17_伦理安全/01_Ethics_Fundamentals/Bias_Fairness_Testing|偏见公平测试]]
+- [[17_伦理安全/03_Governance/AI_Liability|AI 责任]]
 - [[08_模型评估/|模型评估]]
 
 ## 核心知识体系

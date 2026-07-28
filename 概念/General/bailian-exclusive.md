@@ -25,9 +25,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: core
+name_zh: "百炼专属版"
 ---
 
 # 百炼专属版 (Bailian Exclusive Edition)
+
+> 中文简称：百炼专属版
 
 > **一句话理解**: 百炼专属版是 AI Stack 的"上层建筑"——在推理一体机之上叠加 RAG、智能体、工作流编排等应用能力。
 

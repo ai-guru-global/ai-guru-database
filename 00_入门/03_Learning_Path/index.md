@@ -4,9 +4,13 @@ category: AI入门/Learning_Path
 tags: [ai, learning, course, practical]
 summary: AI 学习资源、实践指南和课程入门。
 updated: 2026-07-21
+name_zh: "学习路径"
+name_en: "Learning Path"
 ---
 
 # AI 学习路径
+
+> 中文简称：学习路径 ｜ English Name: Learning Path
 
 本目录收录 AI 学习路径和实践指南文档。
 
@@ -198,3 +202,7 @@ updated: 2026-07-21
 
 ---
 *Last updated: 2026-07-21*
+
+## 相关文档
+
+- [[00_入门/03_Learning_Path/Quick_Start_Projects|快速上手项目]]

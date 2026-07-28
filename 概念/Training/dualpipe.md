@@ -20,9 +20,12 @@ base_confidence: 0.80
 lifecycle: reviewed
 tier: supporting
 updated: 2026-07-21
+name_zh: "DualPipe 双向流水线并行"
 ---
 
 # DualPipe 双向流水线并行
+
+> 中文简称：DualPipe 双向流水线并行
 
 > **一句话理解**: DualPipe 是 DeepSeek 开源的"无气泡流水线"——通过双向调度消除传统流水线训练中 60% 的空等时间，效率提升约 4 倍。
 

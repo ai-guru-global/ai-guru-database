@@ -29,9 +29,12 @@ aliases:
   - "Medusa 多头推测解码"
   - "Medusa Decoding"
 
+name_zh: "Medusa 多头推测解码"
 ---
 
 # Medusa 多头推测解码
+
+> 中文简称：Medusa 多头推测解码
 
 > **一句话理解**: Medusa 是“多头并行预测”——在目标模型上加几个轻量 Head，同时预测未来多个 Token，无需额外 Draft 模型。
 

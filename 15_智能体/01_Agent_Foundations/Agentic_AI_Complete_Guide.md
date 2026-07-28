@@ -13,8 +13,11 @@ aliases:
   - Agentic_AI_Complete_Guide
 sources: []
 
+name_zh: "智能体 AI 权威指南 Part 1: 单体智能架构全解"
 ---
 # 智能体 AI 权威指南 Part 1: 单体智能架构全解
+
+> 中文简称：智能体 AI 权威指南 Part 1: 单体智能架构全解
 
 > Source: 智能体 AI 权威指南 (yeasy) Part 1, Ch1-4
 > Related: [[Multi_Agent_Systems_Guide]] | [[AgentOps_Production_Guide]] | [[Context_Engineering_Guide]] | [[Prompt_Engineering_Complete_Guide]]

@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Yann LeCun 简介"
 ---
 # Yann LeCun 简介 (Yann LeCun)
+
+> 中文简称：Yann LeCun 简介
 
 ## 一句话概括
 

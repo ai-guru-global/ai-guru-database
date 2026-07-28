@@ -12,8 +12,11 @@ aliases:
   - coursera_deep_learning_specialization
 sources: []
 
+name_zh: "Coursera 深度学习专项课程"
 ---
 # Coursera 深度学习专项课程 (Deep Learning Specialization)
+
+> 中文简称：Coursera 深度学习专项课程
 
 > Andrew Ng 的 5 门深度学习课程——神经网络、超参调优、结构化机器学习、CNN、序列模型。
 

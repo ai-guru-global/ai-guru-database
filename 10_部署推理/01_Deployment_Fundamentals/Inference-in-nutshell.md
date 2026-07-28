@@ -11,12 +11,15 @@ aliases:
   - "Inference in nutshell"
 sources: []
 
+name_zh: "模型推理速成指南"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # 模型推理速成指南
+
+> 中文简称：模型推理速成指南
 
 > 🎯 **目标**：理解如何在生产环境中使用训练好的 AI 模型进行预测。
 

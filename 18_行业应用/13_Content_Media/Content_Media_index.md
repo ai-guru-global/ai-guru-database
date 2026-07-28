@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "内容媒体专题"
 ---
 
 # Content & Media
+
+> 中文简称：内容媒体专题
 
 内容与媒体（Content & Media）— AI 在内容生成（AIGC）、视频制作、智能审核与个性化推荐中的应用。
 

@@ -10,8 +10,11 @@ aliases:
   - Sayings
 sources: []
 
+name_zh: "Satya Nadella 关于 AI 的观点"
 ---
 # Satya Nadella 关于 AI 的观点 (Satya Nadella on AI)
+
+> 中文简称：Satya Nadella 关于 AI 的观点
 
 ## 1. AI 作为新平台 (AI as a New Platform)
 

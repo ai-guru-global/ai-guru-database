@@ -21,8 +21,11 @@ sources:
 relationships:
   - target: "概念/ai-for-science"
     type: related_to
+name_zh: "蛋白质折叠"
 ---
 # 蛋白质折叠 (Protein Folding)
+
+> 中文简称：蛋白质折叠
 
 > 蛋白质折叠是 AI for Science 的里程碑应用——AlphaFold 2 在 2020 年解决了 50 年来的蛋白质结构预测难题。
 

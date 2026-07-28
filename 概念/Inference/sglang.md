@@ -36,8 +36,11 @@ aliases:
   - "SGLang Runtime"
   - "SGLang 推理引擎"
 
+name_zh: "SGLang 推理引擎"
 ---
 # SGLang
+
+> 中文简称：SGLang 推理引擎
 
 > SGLang = **S**tructured **G**eneration **Lang**uage —— 一家"会记笔记的餐厅"：相同前缀不重复计算，结构化输出零额外开销。
 

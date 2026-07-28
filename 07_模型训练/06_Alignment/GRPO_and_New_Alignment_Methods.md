@@ -4,7 +4,7 @@ category: '07-model-training'
 tags: ["alignment", "grpo", "rlhf", "dpo", "rloo", "reinforcement-learning", "reasoning-rl", "process-reward", "deepseek"]
 summary: '> **一句话理解**: 如果 RLHF 是给模型请了一整套"教练团队"（裁判、助教、陪练），那 GRPO 就是让模型自己组队互评——省掉了最贵的裁判，效果却一样好。'
 created: '2026-06-04'
-updated: '2026-06-04'
+updated: '2026-07-25'
 tier: supporting
 aliases:
   - "Grpo And New Alignment Methods"
@@ -12,8 +12,11 @@ aliases:
   - GRPO_and_New_Alignment_Methods
 sources: []
 
+name_zh: "GRPO 与新一代对齐方法"
 ---
 # GRPO 与新一代对齐方法 (GRPO and New Alignment Methods)
+
+> 中文简称：GRPO 与新一代对齐方法
 
 > **一句话理解**: 如果 RLHF 是给模型请了一整套"教练团队"（裁判、助教、陪练），那 GRPO 就是让模型自己组队互评——省掉了最贵的裁判，效果却一样好。
 
@@ -33,6 +36,7 @@ sources: []
 10. [实战代码与工具链](#10-实战代码与工具链)
 11. [前沿挑战与未来方向](#11-前沿挑战与未来方向)
 12. [与其他章节的关联](#12-与其他章节的关联)
+13. [源码级实现解析（基于 trl v1.9.0）](#13-源码级实现解析基于-trl-v190)
 
 ---
 
@@ -1585,6 +1589,32 @@ flowchart TB
 
 ---
 
+## 13. 源码级实现解析（基于 trl v1.9.0）
+
+> 本节基于本仓库归档源码 `code/llm-frameworks/trl-v1.9.0/`，把前面各方法的公式落到真实实现。
+
+### 13.1 各方法的实现实体
+
+| 本文方法 | 源码实体（`trl/trainer/`） | 关键实现点 |
+|--------|---------------------------|-----------|
+| DPO（第 3 节） | `DPOTrainer`（dpo_trainer.py L410） | `_compute_loss`（L1329）；`loss_type` 为列表可加权组合 sigmoid/robust/exo_pair/aot 等变体（L762）；Liger fused 路径 `_compute_loss_liger`（L1221） |
+| GRPO（第 4 节） | `GRPOTrainer`（grpo_trainer.py L143） | `_generate_and_score_completions`（L2260）采样同 prompt 多 completion 并算组内相对优势；`compute_loss`（L2910）/`_compute_loss`（L2991） |
+| RLOO（第 5 节） | `RLOOTrainer`（rloo_trainer.py L109） | leave-one-out 基线用 NaN-aware 均值排除不可评分样本，防止基线偏移（L1513-1544 注释与实现） |
+| PPO（第 2 节） | `experimental/ppo/ppo_trainer.py` L297 | **已退出核心 trainer**，与 ORPO/CPO/OnlineDPO/NashMD/XPO 等 30+ 方法同居 `experimental/`——印证第 1 节"PPO → DPO/GRPO 演进"的工业现实 |
+| KTO | `KTOTrainer`（kto_trainer.py L463） | 非成对数据对齐 |
+| RM（第 8 节 ORM） | `RewardTrainer`（reward_trainer.py L227） | Bradley-Terry 成对奖励建模 |
+
+### 13.2 GRPO 规模化的工程细节（源码印证）
+
+- **训推分离**：`use_vllm`（grpo_trainer.py L765）把 rollout 外包给 vLLM server，`VLLMClient`（`generation/vllm_client.py` L58）负责权重同步与生成请求。
+- **分布修正**：`vllm_importance_sampling_correction`（L769）对生成引擎与训练引擎的 log-prob 差异做重要性采样修正，`importance_sampling_level`（L783）可选 token/sequence 级——对应第 11 节讲的"训推不一致"前沿挑战。
+- **优势归一化**：`normalize_advantages`（rloo_trainer.py L517）、GRPO 组内 std 归一化均为可配项，对应 Dr. GRPO 等变体争议。
+- **实验方法孵化器**：`experimental/` 含 async_grpo、grpo_with_replay_buffer、gspo_token、gmpo 等——追新方法可直接读该目录。
+
+> 配合 [[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide|TRL 实战指南]] 第 6 节食用更佳。
+
+---
+
 ## 参考文献
 
 1. Ouyang et al. "Training language models to follow instructions with human feedback" (InstructGPT). NeurIPS 2022.
@@ -1600,7 +1630,7 @@ flowchart TB
 
 ---
 
-*Last updated: 2026-06-04*
+*Last updated: 2026-07-25*（新增 trl v1.9.0 源码级解析）
 
 ## 相关链接
 

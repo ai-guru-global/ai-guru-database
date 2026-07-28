@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "机器人与具身智能"
+name_en: "Robotics Embodied AI"
 ---
 
 # Robotics Embodied AI
+
+> 中文简称：机器人与具身智能 ｜ English Name: Robotics Embodied AI
 
 This page indexes the contents of `06_强化学习/05_Robotics_Embodied_AI`.
 
@@ -201,3 +205,7 @@ This page indexes the contents of `06_强化学习/05_Robotics_Embodied_AI`.
 
 ---
 *Last updated: 2026-07-21*
+
+## 相关文档
+
+- [[06_强化学习/05_Robotics_Embodied_AI/Sim_to_Real_index|Sim-to-Real 专题]]

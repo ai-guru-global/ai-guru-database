@@ -28,8 +28,11 @@ aliases:
   - "Tool Calling"
   - "tool calling"
 
+name_zh: "工具调用"
 ---
 # 工具调用
+
+> 中文简称：工具调用
 
 > 此页面已合并至 [[tool-use|大模型 Tool Use（工具使用）]]。请前往查看完整内容。
 

@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "多臂老虎机算法"
 ---
 # 多臂老虎机算法 (Bandit Algorithms)
+
+> 中文简称：多臂老虎机算法
 
 ## 1. 问题定义
 

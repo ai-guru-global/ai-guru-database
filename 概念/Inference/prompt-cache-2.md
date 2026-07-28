@@ -30,9 +30,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "Prefix Caching / vLLM Automatic / SGLang"
 ---
 
 # Prompt Cache 2.0
+
+> 中文简称：Prefix Caching / vLLM Automatic / SGLang
 
 > **一句话理解**:Prompt Cache 2.0 把"长 system prompt / 文档前缀"在多请求间复用——vLLM 自动块级缓存、SGLang RadixAttention 用基数树管理,首次 token 延迟降 5-10x,吞吐量提升 3-8x,显存占用降 50%+。
 

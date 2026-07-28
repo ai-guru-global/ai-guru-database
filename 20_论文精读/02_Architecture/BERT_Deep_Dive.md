@@ -12,8 +12,11 @@ aliases:
   - BERT_Deep_Dive
 sources: []
 
+name_zh: "BERT 深度解读"
 ---
 # BERT 深度解读 (Bidirectional Encoder Representations from Transformers)
+
+> 中文简称：BERT 深度解读
 
 > **一句话理解**: BERT 就像一个能"左右开弓"的阅读天才——它同时看到句子的前后文来理解每个词的含义，通过"完形填空"和"句子接龙"两个自监督任务学会语言规律，彻底改变了 NLP 的游戏规则。
 

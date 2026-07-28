@@ -12,8 +12,11 @@ aliases:
   - AI_Cost_Optimization_2026
 sources: []
 
+name_zh: "AI 成本优化与 FinOps 2026"
 ---
 # AI 成本优化与 FinOps 2026
+
+> 中文简称：AI 成本优化与 FinOps 2026
 
 > **一句话理解**: 2026 年 AI 成本从"技术问题"变成"财务问题"——Token 经济学、推理成本优化、容量规划成为每个 AI 项目必须掌握的能力，一个失误的模型选择可能导致每月数十万美元的浪费。
 

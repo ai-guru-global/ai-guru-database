@@ -8,9 +8,12 @@ aliases:
   - "LM Evaluation Harness"
 summary: "此页面已合并至主卡片。"
 sources: []
+name_zh: "语言模型评测框架"
 ---
 
 # LM Evaluation Harness
+
+> 中文简称：语言模型评测框架
 
 > 此页面已合并至 [[概念/General/lm-eval-harness|LM Evaluation Harness (EleutherAI LLM 评估框架)]] 主卡片。请前往查看完整内容。
 

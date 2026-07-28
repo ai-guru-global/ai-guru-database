@@ -8,8 +8,11 @@ updated: '2026-06-15'
 tier: supporting
 sources: []
 
+name_zh: "Learn — AI Guru 概念入门路径"
 ---
 # Learn — AI Guru 概念入门路径
+
+> 中文简称：Learn — AI Guru 概念入门路径
 
 > **从"AI 是什么"到"如何构建 AI 系统"，按概念递进，因人施教。**
 

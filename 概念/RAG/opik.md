@@ -17,9 +17,12 @@ provenance:
 base_confidence: 0.82
 lifecycle: reviewed
 tier: supporting
+name_zh: "Opik LLM 可观测性平台"
 ---
 
 # Opik LLM 可观测性平台
+
+> 中文简称：Opik LLM 可观测性平台
 
 > **一句话理解**: Opik 是"LLM 应用的黑匣子记录仪"——追踪每一次 LLM 调用、每一个 Agent 决策，帮你理解、调试、优化 AI 应用。
 

@@ -22,8 +22,11 @@ aliases:
   - "Multimodal Rag"
   - "multimodal rag"
 
+name_zh: "多模态 × RAG: 当检索增强遇上图文音视频"
 ---
 # 多模态 × RAG: 当检索增强遇上图文音视频
+
+> 中文简称：多模态 × RAG: 当检索增强遇上图文音视频
 
 ## The Connection
 

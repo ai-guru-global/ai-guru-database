@@ -11,9 +11,12 @@ aliases:
   - "RAG Production Architecture Deep Dive"
   - RAG_Production_Architecture_Deep_Dive
 sources: []
+name_zh: "RAG 生产架构深度解析"
 ---
 
 # RAG 生产架构深度解析
+
+> 中文简称：RAG 生产架构深度解析
 
 > **一句话理解**: 生产级 RAG 不是简单的"向量检索 + LLM"，而是一条需要精确控制数据流、检索质量、生成可信与合规审计的端到端工程管线。
 

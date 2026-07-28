@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "RAG 评估专题"
 ---
 
 # RAG Evaluation
+
+> 中文简称：RAG 评估专题
 
 RAG 评估（RAG Evaluation）— 检索增强生成系统的评估框架，涵盖 Faithfulness、Context Recall 等指标（metrics）。
 

@@ -4,9 +4,12 @@ tags: [architecture, hybrid-cloud, multi-cloud, kubernetes, production, infrastr
 status: complete
 last_updated: 2026-07-02
 sources: []
+name_zh: "混合多云 AI 架构"
 ---
 
 # Hybrid & Multi-Cloud AI Architecture
+
+> 中文简称：混合多云 AI 架构
 
 ## Overview
 

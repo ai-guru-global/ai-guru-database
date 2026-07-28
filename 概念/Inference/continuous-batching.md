@@ -33,8 +33,11 @@ aliases:
   - "连续批处理"
   - "In-flight Batching"
 
+name_zh: "连续批处理"
 ---
 # Continuous Batching (连续批处理)
+
+> 中文简称：连续批处理
 
 ## 核心要点
 

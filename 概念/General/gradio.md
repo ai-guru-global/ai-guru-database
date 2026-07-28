@@ -19,9 +19,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "Gradio ML 应用框架"
 ---
 
 # Gradio ML 应用框架
+
+> 中文简称：Gradio ML 应用框架
 
 > **一句话理解**: Gradio 是"模型的 Web UI 生成器"——几行 Python 代码就能为任何 ML 模型创建交互式 Web 界面，HuggingFace Spaces 的默认框架。
 

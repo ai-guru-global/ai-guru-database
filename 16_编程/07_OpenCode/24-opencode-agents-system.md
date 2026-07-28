@@ -14,6 +14,7 @@ aliases:
 updated: 2026-06-30
 summary: "Agent 系统深度指南 — 专题文档"
 sources: []
+name_zh: "Agent 系统深度指南"
 ---
 title: Agent 系统深度指南
 description: '# Agent 系统深度指南'
@@ -52,6 +53,8 @@ k8s_versions:
 ---
 
 # Agent 系统深度指南
+
+> 中文简称：Agent 系统深度指南
 
 > **文档类型**: 核心能力专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, Agent, Build, Plan, Subagent, Custom Agent, Temperature, Max Steps, Markdown Agent
 

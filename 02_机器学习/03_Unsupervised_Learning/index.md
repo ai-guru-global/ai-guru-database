@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "无监督学习"
+name_en: "Unsupervised Learning"
 ---
 
 # Unsupervised Learning
+
+> 中文简称：无监督学习 ｜ English Name: Unsupervised Learning
 
 无监督学习（Unsupervised Learning）— 聚类（clustering）、降维（dimensionality reduction）、密度估计与表示学习。
 

@@ -11,8 +11,11 @@ aliases:
   - Harness_Ecosystem_Catalog
 sources: []
 
+name_zh: "Agent Harness 生态目录"
 ---
 # Agent Harness 生态目录
+
+> 中文简称：Agent Harness 生态目录
 
 > 收录主流 Harness 平台、框架、工具链和观测系统，作为选型参考。
 

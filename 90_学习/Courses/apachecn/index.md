@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "ApacheCN 课程"
+name_en: "apachecn"
 ---
 
 # ApacheCN
+
+> 中文简称：ApacheCN 课程 ｜ English Name: apachecn
 
 ApacheCN 中文 AI 学习资源 — 社区翻译的机器学习（ML）、深度学习（DL）与 NLP 教程合集。
 

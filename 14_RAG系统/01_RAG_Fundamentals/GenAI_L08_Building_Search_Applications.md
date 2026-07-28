@@ -15,7 +15,10 @@ aliases:
   - GenAI_L08_Building_Search_Applications
 sources: []
 
+name_zh: "构建搜索应用程序"
 ---
+> 中文简称：构建搜索应用程序
+
 ## 学习目标
 
 完成本课后，你将能够：

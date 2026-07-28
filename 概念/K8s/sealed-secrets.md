@@ -18,11 +18,14 @@ relationships:
   - target: "概念/gitops"
     type: related_to
 sources: []
+name_zh: "加密 Secret 方案"
 ---
 
 > **归档提示**: 此概念为通用云原生工具，与AI核心关联度较低。如需学习完整的K8s知识，请参考 CNCF 官方文档。
 
 # Sealed Secrets
+
+> 中文简称：加密 Secret 方案
 
 > **一句话理解**: Sealed Secrets 让 Secret 能「加密地躺在 Git 里」，只有目标 K8s 集群能解密，解决 GitOps 中敏感数据版本化的问题。
 

@@ -30,9 +30,12 @@ provenance:
 base_confidence: 0.85
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "AI Agent 框架总览"
 ---
 
 # AI Agent 框架总览
+
+> 中文简称：AI Agent 框架总览
 
 ## 核心要点
 

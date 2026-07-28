@@ -14,8 +14,11 @@ aliases:
   - "Guardrails Production Guide"
   - Guardrails_Production_Guide
 
+name_zh: "AI 护栏 生产实践指南"
 ---
 # AI 护栏 (Guardrails) 生产实践指南
+
+> 中文简称：AI 护栏 生产实践指南
 
 > **一句话理解**: 在生产环境中为 LLM 应用添加安全护栏:输入过滤、输出验证、主题限制、事实检查等技术方案与工具。
 

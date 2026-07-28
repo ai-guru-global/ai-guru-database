@@ -26,8 +26,11 @@ updated: 2026-07-21
 aliases:
   - Modal
 
+name_zh: "Modal 无服务器 GPU 云"
 ---
 # Modal
+
+> 中文简称：Modal 无服务器 GPU 云
 
 > Python 开发者的「无服务器 GPU 云」——用装饰器把函数变成弹性 GPU 服务。
 

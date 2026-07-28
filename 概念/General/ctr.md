@@ -17,9 +17,12 @@ provenance:
 base_confidence: 0.82
 lifecycle: reviewed
 tier: supporting
+name_zh: "ctr containerd 原生 CLI"
 ---
 
 # ctr containerd 原生 CLI
+
+> 中文简称：ctr containerd 原生 CLI
 
 > **一句话理解**: ctr 是 containerd 的"亲儿子 CLI"——直接跟 containerd 对话，管理容器/镜像/快照/任务，比 crictl 更底层。
 

@@ -19,6 +19,7 @@ relationships:
   - target: "概念/deployment"
     type: part_of
 sources: []
+name_zh: "K8s 副本集"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -26,6 +27,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # ReplicaSet
+
+> 中文简称：K8s 副本集
 
 > **一句话理解**: ReplicaSet 是 K8s 的「副本看守」——它通过 label selector 保证集群里始终有正确数量的 Pod 在运行，是 Deployment 实现自愈与扩缩容的底层机制。
 

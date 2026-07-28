@@ -18,11 +18,14 @@ relationships:
   - target: "概念/linkerd"
     type: implemented_by
 sources: []
+name_zh: "服务网格"
 ---
 
 > **归档提示**: 此概念为通用云原生工具，与AI核心关联度较低。如需学习完整的K8s知识，请参考 CNCF 官方文档。
 
 # Service Mesh
+
+> 中文简称：服务网格
 
 > **一句话理解**: 服务网格把微服务之间「怎么连接、怎么保护、怎么看」的问题从业务代码里抽出来，交给一个专门的代理层处理。
 

@@ -12,12 +12,15 @@ aliases:
   - HF_Leaderboard_Eval_Guide
 sources: []
 
+name_zh: "Hugging Face 评估体系：从 Open LLM Leaderboard"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
 > 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Hugging Face 评估体系：从 Open LLM Leaderboard 到本地自动化评测
+
+> 中文简称：Hugging Face 评估体系：从 Open LLM Leaderboard
 
 > **一句话理解**: Hugging Face 的 Open LLM Leaderboard 是开源模型的“高考成绩单”。本文将拆解排行榜背后的测试集，并教你使用 `lighteval` 和 `lm-evaluation-harness` 在本地对自己的模型进行一样的标准化自动化评测。
 

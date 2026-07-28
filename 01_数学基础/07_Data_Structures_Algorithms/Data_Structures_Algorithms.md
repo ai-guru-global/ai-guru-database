@@ -11,8 +11,11 @@ aliases:
   - Data_Structures_Algorithms
 sources: []
 
+name_zh: "数据结构与算法"
 ---
 # 数据结构与算法 (Data Structures & Algorithms)
+
+> 中文简称：数据结构与算法
 
 > **一句话理解**: 算法是 AI 的"工具箱" —— 数据结构决定存储效率，算法决定计算速度，两者结合支撑起从训练到推理的整个流程。
 

@@ -6,9 +6,12 @@ summary: "> 评估日期：2026-05-17"
 created: 2026-05-31
 updated: 2026-05-31
 sources: []
+name_zh: "AI Guru Database - 内容全面评估 2026"
 ---
 
 # AI Guru Database - 内容全面评估 2026
+
+> 中文简称：AI Guru Database - 内容全面评估 2026
 
 > 评估日期：2026-05-17
 > 总文件数：2,501 文件（文本/代码类）
@@ -178,7 +181,7 @@ sources: []
 
 - [[治理/plan/Project_Comprehensive_Evaluation_2026]] — AI Guru 知识库项目全面评估报告 (共享: goals, model-evaluation, planning, roadmap, strategy)
 - [[治理/plan/Project_Structure_Evaluation_2026]] — AI Guru 知识库 — 全项目结构评估与改进建议 (共享: goals, model-evaluation, planning, roadmap, strategy)
-- [[治理/plan/Implementation_Plan_2026]] — AI Guru 知识库整改执行计划 (共享: goals, planning, roadmap, strategy)
+- [[治理/plan/index|Implementation_Plan_2026]] — AI Guru 知识库整改执行计划 (共享: goals, planning, roadmap, strategy)
 - [[治理/plan/README.md|README]]
 
 ## 核心知识体系

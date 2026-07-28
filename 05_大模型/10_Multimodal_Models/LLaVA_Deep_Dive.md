@@ -12,8 +12,11 @@ aliases:
   - LLaVA_Deep_Dive
 sources: []
 
+name_zh: "LLaVA: 开源多模态大模型"
 ---
 # LLaVA: 开源多模态大模型
+
+> 中文简称：LLaVA: 开源多模态大模型
 
 > **一句话理解**: LLaVA 是开源多模态大模型——连接视觉编码器与 LLM 实现图文对话，在 GPT-4V 开源替代中性能领先。
 

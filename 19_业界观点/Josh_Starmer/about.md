@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Josh Starmer — 统计学与 AI 教育界的清晰之声"
 ---
 # Josh Starmer (StatQuest) — 统计学与 AI 教育界的清晰之声
+
+> 中文简称：Josh Starmer — 统计学与 AI 教育界的清晰之声
 
 ## 一句话概括
 

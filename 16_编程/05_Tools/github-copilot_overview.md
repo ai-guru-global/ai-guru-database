@@ -14,8 +14,11 @@ aliases:
   - "github copilot overview"
   - github-copilot_overview
 
+name_zh: "GitHub Copilot 概览"
 ---
 # GitHub Copilot 概览
+
+> 中文简称：GitHub Copilot 概览
 
 > **一句话理解**: 全球使用最广泛的 AI 编程助手,提供实时代码补全、Chat 对话和 Agent 模式。
 

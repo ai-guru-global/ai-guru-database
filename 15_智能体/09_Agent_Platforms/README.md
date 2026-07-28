@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "Agent 平台与部署"
 ---
 # Agent 平台与部署
+
+> 中文简称：Agent 平台与部署
 
 > Agent 开发平台提供可视化编排、一键部署、模型网关等能力，大幅降低 Agent 系统的构建门槛。
 

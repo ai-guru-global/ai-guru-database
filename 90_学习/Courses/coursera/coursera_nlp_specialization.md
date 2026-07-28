@@ -14,8 +14,11 @@ aliases:
   - "coursera nlp specialization"
   - coursera_nlp_specialization
 
+name_zh: "NLP 专项课程"
 ---
 # NLP 专项课程 (Coursera)
+
+> 中文简称：NLP 专项课程
 
 > **一句话理解**: Coursera NLP 专项课程(DeepLearning.AI),覆盖情感分析、机器翻译、注意力机制、Transformer 等 NLP 核心技术。
 

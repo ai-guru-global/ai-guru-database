@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "AI 产品经理"
+name_en: "AI Product Manager"
 ---
 
 # AI Product Manager
+
+> 中文简称：AI 产品经理 ｜ English Name: AI Product Manager
 
 AI 产品经理 — 将 AI 技术能力转化为用户价值，定义产品方向、管理 AI 功能生命周期。
 
@@ -204,3 +208,7 @@ AI 产品经理 — 将 AI 技术能力转化为用户价值，定义产品方�
 - [ ] 了解目标公司和岗位的具体要求
 - [ ] 准备好向面试官提问的问题清单
 - [ ] 薪资期望已基于市场调研确定
+
+## 相关文档
+
+- [[21_面试岗位/AI_Product_Manager/question_bank|AI 产品经理题库]]

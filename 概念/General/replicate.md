@@ -26,8 +26,11 @@ updated: 2026-07-21
 aliases:
   - Replicate
 
+name_zh: "Replicate 模型托管平台"
 ---
 # Replicate
+
+> 中文简称：Replicate 模型托管平台
 
 > 开源模型的「一键 API 托管平台」——上传模型，自动生成可调用 API。
 

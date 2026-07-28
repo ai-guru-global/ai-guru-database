@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "检索论文专题"
 ---
 
 # Retrieval
+
+> 中文简称：检索论文专题
 
 检索论文精读（Retrieval Papers）— RAG 与检索增强生成（retrieval-augmented generation）的核心论文，涵盖密集检索（dense retrieval）、向量搜索与混合检索（hybrid retrieval）。
 

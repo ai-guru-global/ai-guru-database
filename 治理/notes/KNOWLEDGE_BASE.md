@@ -12,8 +12,11 @@ aliases:
   - KNOWLEDGE_BASE
 sources: []
 
+name_zh: "知识库导览"
 ---
 # 🧠 AI Guru Knowledge Base
+
+> 中文简称：知识库导览
 
 > **The Most Comprehensive AI Learning Resource on GitHub** | 从理论到生产的完整 AI 知识体系
 

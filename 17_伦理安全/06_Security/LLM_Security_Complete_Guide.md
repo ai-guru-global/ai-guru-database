@@ -21,8 +21,11 @@ aliases:
   - LLM_Security_Complete_Guide
 sources: []
 
+name_zh: "LLM 安全攻击指南"
 ---
 # LLM 安全完全指南：威胁全景与攻击技术
+
+> 中文简称：LLM 安全攻击指南
 
 > 本文从 [[https://github.com/yeasy/ai_security_guide]] 第一、二部分蒸馏而来，覆盖 LLM 安全基础、威胁全景、安全框架（OWASP / NIST / MITRE ATLAS）、以及核心攻击技术（Prompt Injection、Jailbreak、Data Poisoning、Backdoor、Model Extraction、Privacy Attacks、Adversarial Robustness、PEFT Security、Malicious Artifacts）。
 

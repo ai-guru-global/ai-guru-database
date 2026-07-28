@@ -8,9 +8,12 @@ updated: 2026-07-21
 sources:
   - "https://arxiv.org/abs/2210.17323"  # GPTQ
   - "https://arxiv.org/abs/2306.00978"  # AWQ
+name_zh: "大模型量化"
 ---
 
 # LLM Quantization
+
+> 中文简称：大模型量化
 
 ## 定义
 

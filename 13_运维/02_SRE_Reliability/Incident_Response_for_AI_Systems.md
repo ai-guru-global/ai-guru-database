@@ -12,8 +12,11 @@ aliases:
   - Incident_Response_for_AI_Systems
 sources: []
 
+name_zh: "AI 系统故障响应"
 ---
 # AI 系统故障响应 (Incident Response for AI)
+
+> 中文简称：AI 系统故障响应
 
 > **TL;DR**: AI 系统的故障与传统软件不同——模型漂移是渐进的、幻觉是概率性的、Prompt 注入是人为攻击。建立 AI 专属的故障分类体系、标准化 Runbook、明确升级路径和 Blameless Post-Mortem 流程，是保障 AI 系统生产可靠性的关键。
 

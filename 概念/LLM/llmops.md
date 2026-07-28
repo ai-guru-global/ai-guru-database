@@ -18,8 +18,11 @@ relationships:
 sources:
   - 11_模型运维/10_LLMOps/LLMOps_2026.md
 
+name_zh: "大模型运维"
 ---
 # LLMOps
+
+> 中文简称：大模型运维
 
 > **一句话定义**: LLMOps 是将大语言模型（LLM）从实验推向生产的全套运维方法论——涵盖 Prompt 管理、RAG 编排、推理部署、可观测性、评估和安全合规。
 

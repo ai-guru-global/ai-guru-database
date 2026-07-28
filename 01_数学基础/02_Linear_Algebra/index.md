@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "线性代数"
+name_en: "Linear Algebra"
 ---
 
 # Linear Algebra
+
+> 中文简称：线性代数 ｜ English Name: Linear Algebra
 
 线性代数（Linear Algebra）— 矩阵分解（matrix decomposition）、特征值（eigenvalue）、SVD 与向量空间在 ML/DL 中的核心应用。
 

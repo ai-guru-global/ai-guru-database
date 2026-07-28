@@ -12,8 +12,11 @@ aliases:
   - AI_Applications_Industry_for_dummy
 sources: []
 
+name_zh: "AI 行业应用 - 小白版"
 ---
 # AI 行业应用 - 小白版
+
+> 中文简称：AI 行业应用 - 小白版
 
 > **一句话理解**: AI 在行业中就像"智能员工"——它不会取代所有人类，但会用数据分析和自动化帮助每个行业做得更好、更快、更省钱。
 

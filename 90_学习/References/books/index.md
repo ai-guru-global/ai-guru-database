@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "书籍"
+name_en: "books"
 ---
 
 # Books
+
+> 中文简称：书籍 ｜ English Name: books
 
 This page indexes the contents of `90_学习/References/books`.
 

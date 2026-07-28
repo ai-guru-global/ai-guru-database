@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "零售电商专题"
 ---
 
 # Retail & E-commerce
+
+> 中文简称：零售电商专题
 
 零售与电商（Retail & E-commerce）— AI 在商品推荐（recommendation）、搜索排序、库存预测、视觉搜索与智能客服中的应用。
 

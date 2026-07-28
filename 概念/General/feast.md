@@ -19,9 +19,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: core
+name_zh: "开源特征存储平台"
 ---
 
 # Feast (Feature Store)
+
+> 中文简称：开源特征存储平台
 
 [Feast](https://github.com/feast-dev/feast)（Feature Store）是 [Tecton](https://www.tecton.ai/) 开源的**特征存储平台**，统一管理 ML 模型的特征定义、计算、存储和服务。它解决的核心问题是 **Training-Serving Skew**（训练与推理的数据不一致）——通过统一的特征定义和存储层，确保模型训练时使用的特征和在线推理时获取的特征**完全一致**。
 

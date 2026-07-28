@@ -14,9 +14,12 @@ sources:
   - "https://langchain-ai.github.io/langgraph/cloud/"
   - "https://docs.crewai.com/"
   - "https://temporal.io/"
+name_zh: "Agent 生产部署"
 ---
 
 # Agent 生产部署
+
+> 中文简称：Agent 生产部署
 
 > **一句话定义**：Agent 生产部署是把能够自主规划、调用工具、维护记忆并与外部系统交互的智能体，从 PoC/Demo 环境迁移到可7×24小时运行、可治理、可回滚的企业级线上环境的完整工程实践。
 

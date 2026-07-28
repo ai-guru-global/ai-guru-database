@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "唐杰"
+name_en: "Jie Tang"
 ---
 
 # Jie Tang
+
+> 中文简称：唐杰 ｜ English Name: Jie Tang
 
 唐杰是清华大学教授、智谱 AI 联合创始人，GLM 预训练框架发明人，从学术论文到千亿参数模型的产学研典范，打造了中国最具学术底蕴的大模型生态。
 

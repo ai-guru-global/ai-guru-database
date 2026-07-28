@@ -7,6 +7,7 @@ created: 2026-06-04
 updated: 2026-06-04
 tier: supporting
 sources: []
+name_zh: "AI 知识库配套实验指南 — 从理论到可运行代码"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -14,6 +15,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # AI 知识库配套实验指南 — 从理论到可运行代码
+
+> 中文简称：AI 知识库配套实验指南 — 从理论到可运行代码
 
 > **一句话理解**: 纸上得来终觉浅——本指南为知识库的每个核心领域提供"拿来就跑"的实验代码，让你 30 分钟内从公式到结果。
 

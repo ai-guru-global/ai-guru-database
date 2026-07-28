@@ -26,9 +26,12 @@ tier: supporting
 created: 2026-06-25
 updated: 2026-06-25
 sources: []
+name_zh: "LLM 推理集群调度"
 ---
 
 # LLM 推理集群调度
+
+> 中文简称：LLM 推理集群调度
 
 ## 一句话总结
 

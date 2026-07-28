@@ -5,9 +5,12 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "测试数据专题"
 ---
 
 # Test Data
+
+> 中文简称：测试数据专题
 
 测试数据管理（Test Data Management）— AI 系统测试数据集的构建、版本管理、隐私保护与数据增强（data augmentation）。
 

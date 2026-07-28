@@ -19,9 +19,12 @@ sources:
   - "DeepSeek (2025) DeepSeek-R1: Incentivizing Reasoning Capability via RL"
   - "Mirhoseini et al. (2021) Chip Placement with Deep Reinforcement Learning"
 
+name_zh: "强化学习应用全景指南"
 ---
 
 # 强化学习应用全景指南 (RL Applications Guide)
+
+> 中文简称：强化学习应用全景指南
 
 > **一句话理解**: 强化学习应用就像把一个"试错学习的学徒"派到各行各业——它能在围棋上战胜人类（AlphaGo）、在抖音里给你推荐下一个视频、在自动驾驶里做变道决策、在 ChatGPT 里学会"人类偏好"——凡是涉及"序贯决策+长期反馈"的地方，RL 都能大显身手。
 

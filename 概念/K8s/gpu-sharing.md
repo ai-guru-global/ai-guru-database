@@ -17,9 +17,12 @@ relationships:
   - target: "概念/hami"
     type: implemented_by
 sources: []
+name_zh: "GPU 共享"
 ---
 
 # GPU Sharing
+
+> 中文简称：GPU 共享
 
 > **一句话理解**: GPU 共享就是「一张显卡分给多个任务用」，提高利用率，但共享方式不同，隔离性和性能也不同。
 

@@ -4,12 +4,15 @@ category: 07-deployment
 tags: ["model-compression", "pruning", "distillation", "quantization", "compression"]
 summary: "模型压缩统一技术体系：剪枝/蒸馏/量化/低秩分解的完整对比、组合策略、2026 LLM 压缩实践与部署优化。"
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-25
 tier: supporting
 sources: []
 
+name_zh: "模型压缩统一视角"
 ---
 # 模型压缩统一视角
+
+> 中文简称：模型压缩统一视角
 
 ## 1. 压缩方法全景
 
@@ -235,11 +238,21 @@ COMPRESSION_PIPELINE_2026 = {
 }
 ```
 
-## 7. 交叉引用
+## 7. 源码级实现解析（基于 llm-compressor v0.12.0 / bitsandbytes v0.50.0）
+
+> 本节基于本仓库归档源码 `code/llm-frameworks/llm-compressor-v0.12.0/` 与 `code/llm-frameworks/bitsandbytes-v0.50.0/`，行号可对照验证。
+
+- **压缩方法统一抽象**：llm-compressor 把第 1 节全景中的量化与剪枝统一为 `Modifier` 基类（`src/llmcompressor/modifiers/modifier.py` L13）：量化有 `GPTQModifier`（`modifiers/gptq/base.py` L46）、`AWQModifier`（`modifiers/transform/awq/base.py` L55）、`SmoothQuantModifier`（`modifiers/transform/smoothquant/base.py` L61）；剪枝有 `SparseGPTModifier`（`modifiers/obcq/sgpt_base.py` L12）——第 6 节"组合策略"在工程上就是多个 Modifier 写进同一份 Recipe（`recipe/recipe.py` L27）依次执行。
+- **逐层校准省显存**：`SequentialPipeline`（`pipelines/sequential/pipeline.py` L52）逐层前向→压缩→释放，单卡即可校准 70B+ 模型。
+- **动态量化路线**：bitsandbytes 的 `Params4bit`（`nn/modules.py` L213）在权重搬上 GPU 时即时量化，`quantize_4bit`/`quantize_blockwise`（`functional.py` L884/L613）实现 NF4 分块量化——无需离线校准，与 llm-compressor 形成"离线 PTQ vs 动态加载"两条路线。
+
+详细解析见 [[10_部署推理/05_Quantization/Quantization_Techniques_2026]] 第 8 节。
+
+## 8. 交叉引用
 
 - [[10_部署推理/05_Quantization/|量化]]
-- [[10_部署推理/Edge_Deployment/|边缘部署]]
-- [[03_深度学习/Knowledge_Distillation/|知识蒸馏]]
+- [[10_部署推理/01_Deployment_Fundamentals/Edge_Deployment|边缘部署]]
+- [[03_深度学习/09_Advanced_Topics/Knowledge_Distillation|知识蒸馏]]
 - [[07_模型训练/05_Compression/|训练压缩]]
 - [[10_部署推理/02_Inference_Engines/|推理引擎]]
-- [[10_部署推理/Serving_Architecture/|服务架构]]
+- [[10_部署推理/01_Deployment_Fundamentals/Serving_Architecture|服务架构]]

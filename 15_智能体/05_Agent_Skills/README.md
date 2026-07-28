@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "Agent Skills 文档索引"
 ---
 # Agent Skills 文档索引
+
+> 中文简称：Agent Skills 文档索引
 
 > 本文件夹收录 Agent Skills 开放标准的完整知识体系，覆盖从入门到生产、从个人到团队的全部场景。
 

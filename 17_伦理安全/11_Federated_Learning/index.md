@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "联邦学习"
+name_en: "Federated Learning"
 ---
 
 # Federated Learning
+
+> 中文简称：联邦学习 ｜ English Name: Federated Learning
 
 联邦学习（Federated Learning）— 分布式模型训练的隐私保护范式，涵盖 FedAvg、差分隐私与安全聚合（secure aggregation）。
 

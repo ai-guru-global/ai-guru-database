@@ -12,8 +12,11 @@ aliases:
   - AI_Test_Framework_2026
 sources: []
 
+name_zh: "AI 系统测试框架"
 ---
 # AI 系统测试框架 (AI Test Framework 2026)
+
+> 中文简称：AI 系统测试框架
 
 > **一句话理解**: AI 系统测试框架是保障 AI 应用质量的"安全网"——通过多层级、自动化的测试体系，确保 AI 系统在发布前经过充分验证，上线后稳定可靠。
 
@@ -1299,15 +1302,15 @@ jobs:
     steps:
       - name: Check test results
         run: |
-          if `````[[ "${{ needs.unit-tests.result }}" != "success" ]]`````; then
+          if [[ "${{ needs.unit-tests.result }}" != "success" ]]; then
             echo "Unit tests failed"
             exit 1
           fi
-          if `````[[ "${{ needs.prompt-tests.result }}" != "success" ]]`````; then
+          if [[ "${{ needs.prompt-tests.result }}" != "success" ]]; then
             echo "Prompt tests failed"
             exit 1
           fi
-          if `````[[ "${{ needs.component-tests.result }}" != "success" ]]`````; then
+          if [[ "${{ needs.component-tests.result }}" != "success" ]]; then
             echo "Component tests failed"
             exit 1
           fi

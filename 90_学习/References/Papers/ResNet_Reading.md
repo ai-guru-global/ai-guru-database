@@ -23,8 +23,11 @@ aliases:
   - "ResNet Paper"
   - "Deep Residual Learning"
 
+name_zh: "论文导读"
 ---
 # 论文导读: Deep Residual Learning for Image Recognition (ResNet)
+
+> 中文简称：论文导读
 
 > **一句话理解**: 何恺明等人 2015 年提出的 ResNet，用一个简单的"残差连接（shortcut）"解决了深层网络无法训练的退化问题，让网络深度从 22 层（VGG）跃升到 152 层甚至上千层，横扫 ImageNet——这是深度学习历史上最具影响力的架构创新之一，其残差思想后来被 Transformer 等几乎所有现代架构采纳。
 

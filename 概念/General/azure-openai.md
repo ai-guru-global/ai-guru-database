@@ -27,8 +27,11 @@ aliases:
   - "Azure Openai"
   - "azure openai"
 
+name_zh: "微软 Azure OpenAI 服务"
 ---
 # Azure OpenAI
+
+> 中文简称：微软 Azure OpenAI 服务
 
 > 企业版的「ChatGPT API」——在 Azure 云上安全合规地使用 GPT 和 Embedding。
 

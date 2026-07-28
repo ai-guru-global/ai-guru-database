@@ -18,8 +18,11 @@ base_confidence: 0.7
 sources:
   - 15_智能体/03_Agent_Workflow/Agentic_UI_UX_Design_2026.md
   - Agent/GenAI_L12_Designing_UX_for_AI_Applications.md
+name_zh: "人机交互"
 ---
 # 人机交互 (Human-AI Interaction)
+
+> 中文简称：人机交互
 
 > 人机交互研究人类如何与 AI 系统有效协作——从传统的 GUI 到对话式 AI 再到 Agentic UI 的演进。
 

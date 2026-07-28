@@ -17,9 +17,12 @@ relationships:
   - target: "概念/serviceaccount"
     type: related_to
 sources: []
+name_zh: "K8s 命名空间角色"
 ---
 
 # Role
+
+> 中文简称：K8s 命名空间角色
 
 > **一句话理解**: Role 是 Kubernetes 里限定在某个 namespace 内的「岗位说明书」——它声明了谁能在这个命名空间里对哪些资源做什么操作。
 

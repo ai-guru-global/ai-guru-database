@@ -12,9 +12,12 @@ aliases:
   - "梯度下降"
 sources:
   - "https://arxiv.org/abs/1412.6980"  # Adam optimizer
+name_zh: "梯度下降"
 ---
 
 # 梯度下降 (Gradient Descent)
+
+> 中文简称：梯度下降
 
 **梯度下降是一种通过反复沿损失函数梯度的反方向调整模型参数，使预测误差逐渐减小的优化算法。** 它是训练神经网络最常用的基础方法。
 

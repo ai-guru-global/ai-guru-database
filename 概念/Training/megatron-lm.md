@@ -30,8 +30,11 @@ aliases:
   - "Megatron Lm"
   - "megatron lm"
 
+name_zh: "大规模训练框架 Megatron"
 ---
 # Megatron-LM
+
+> 中文简称：大规模训练框架 Megatron
 
 > NVIDIA 的「大模型训练并行神器」——用张量并行和流水线并行把 Transformer 扩展到千亿参数。
 

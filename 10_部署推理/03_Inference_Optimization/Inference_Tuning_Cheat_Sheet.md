@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
 sources: []
+name_zh: "LLM 推理调优速查表"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # LLM 推理调优速查表
+
+> 中文简称：LLM 推理调优速查表
 
 > **使用方式**: 根据场景选择启动参数，根据指标调整关键参数。
 

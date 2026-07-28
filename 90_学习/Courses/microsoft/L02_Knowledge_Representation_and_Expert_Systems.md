@@ -13,8 +13,11 @@ aliases:
   - L02_Knowledge_Representation_and_Expert_Systems
 sources: []
 
+name_zh: "L02 - 知识表示与专家系统"
 ---
 # L02 - 知识表示与专家系统
+
+> 中文简称：L02 - 知识表示与专家系统
 
 > **一句话理解**：AI 不仅要靠数据学习，也可以把人类已经总结好的知识显式表示出来，让计算机像专家一样推理、解释和决策。
 

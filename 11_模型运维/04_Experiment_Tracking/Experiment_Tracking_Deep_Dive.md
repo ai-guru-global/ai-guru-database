@@ -11,8 +11,11 @@ aliases:
   - Experiment_Tracking_Deep_Dive
 sources: []
 
+name_zh: "实验追踪深度解析"
 ---
 # 实验追踪深度解析 (Experiment Tracking Deep Dive)
+
+> 中文简称：实验追踪深度解析
 
 > **一句话理解**: 实验追踪就像 AI 的"实验日记本"——自动记录每次训练的配方（参数）、结果（指标）和成品（模型），让你再也不用问"那个效果最好的模型是怎么训出来的？"
 

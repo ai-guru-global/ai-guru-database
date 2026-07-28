@@ -8,8 +8,11 @@ updated: 2026-05-31
 tier: supporting
 sources: []
 
+name_zh: "标准测试题库"
 ---
 # Test Bank
+
+> 中文简称：标准测试题库
 
 > 标准化测试题库文档目录
 

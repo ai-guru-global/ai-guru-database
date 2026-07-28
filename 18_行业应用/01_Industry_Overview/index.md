@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "行业全景"
+name_en: "Industry Overview"
 ---
 
 # Industry Overview
+
+> 中文简称：行业全景 ｜ English Name: Industry Overview
 
 ## 文件导航
 

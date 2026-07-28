@@ -11,8 +11,11 @@ aliases:
   - Multi_Tenant_Architecture
 sources: []
 
+name_zh: "AI 系统多租户架构"
 ---
 # AI 系统多租户架构 (Multi-Tenant Architecture for AI Systems)
+
+> 中文简称：AI 系统多租户架构
 
 > **一句话理解**: 多租户架构是 AI 服务的"公寓楼"——在共享基础设施上为不同租户提供隔离、安全、可计费的服务，实现资源效率与租户隔离的平衡。
 

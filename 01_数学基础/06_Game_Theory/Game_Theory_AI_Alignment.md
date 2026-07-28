@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: core
 sources: []
 
+name_zh: "博弈论与 AI 对齐"
 ---
 # 博弈论与 AI 对齐
+
+> 中文简称：博弈论与 AI 对齐
 
 ## 1. AI 对齐的博弈论视角
 
@@ -234,7 +237,7 @@ AI 对齐 = 确保 AI 的行为符合人类意图
 
 - [[01_数学基础/06_Game_Theory/Game_Theory|博弈论总论]]
 - [[17_伦理安全/02_Value_Alignment/|价值对齐]]
-- [[17_伦理安全/Constitutional_AI/|Constitutional AI]]
+- [[概念/LLM/constitutional-ai|Constitutional AI]]
 - [[06_强化学习/03_RLHF_Alignment/|RLHF 对齐训练]]
 - [[15_智能体/01_Agent_Foundations/Multi_Agent_Systems_Guide|多智能体系统]]
 - [[17_伦理安全/03_Governance/|AI 治理]]

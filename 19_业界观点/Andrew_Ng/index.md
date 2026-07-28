@@ -12,9 +12,13 @@ aliases:
 sources:
   - "https://www.deeplearning.ai/"
   - "https://www.coursera.org/"
+name_zh: "Andrew Ng 吴恩达人物索引"
+name_en: "Andrew Ng"
 ---
 
 # Andrew Ng 吴恩达人物索引
+
+> 中文简称：Andrew Ng 吴恩达人物索引 ｜ English Name: Andrew Ng
 
 > **一句话概括**: DeepLearning.AI 与 Landing AI 创始人、Coursera 联合创始人、斯坦福大学兼职教授、前百度首席科学家（2014-2017）——提出"AI is the new electricity"（AI 是新时代的电力），通过大规模在线课程普及机器学习教育，推动 AI 在制造业等传统行业的落地应用，是全球 AI 民主化与工业化最重要的布道者之一。
 
@@ -158,6 +162,7 @@ Ng 的独特之处是**专注狭义 AI 的工业落地而非追逐 AGI**。参�
 - [[19_业界观点/Sebastian_Thrun/about\|Sebastian Thrun]] · [[19_业界观点/3Blue1Brown/about\|3Blue1Brown]]
 - [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
 - [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views\|中美 AI 竞赛]]
+- [[19_业界观点/Andrew_Ng/Andrew_Ng_2026_Update\|2026 动态更新]]
 - [[19_业界观点/index\|业界观点首页]]
 
 ---

@@ -6,9 +6,12 @@ summary: Claude Code 课程第 07 课笔记：Skill 的两级加载机制、SYST
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "技能加载课程笔记"
 ---
 
 # Learn Claude Code L07 - Skill Loading
+
+> 中文简称：技能加载课程笔记
 
 > **一句话理解**: Skill 两级加载把"目录级元数据"与"完整内容"分离，既保证上下文紧凑，又能在需要时注入完整能力。
 

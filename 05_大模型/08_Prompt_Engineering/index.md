@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-21
 sources: []
+name_zh: "提示工程"
+name_en: "Prompt Engineering"
 ---
 
 # Prompt Engineering
+
+> 中文简称：提示工程 ｜ English Name: Prompt Engineering
 
 提示工程 — 系统化设计、优化和评估 LLM 输入提示的技术与实践。
 

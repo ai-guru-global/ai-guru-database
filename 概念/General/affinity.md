@@ -20,9 +20,12 @@ relationships:
   - target: "概念/apsara-stack"
     type: related_to
 sources: []
+name_zh: "亲和性调度"
 ---
 
 # Affinity（亲和性调度）
+
+> 中文简称：亲和性调度
 
 > **一句话理解**: Affinity 是 Kubernetes 让 Pod「更愿意」落在某些节点、靠近或远离某些 Pod 的调度规则，是 nodeSelector 的增强版。
 

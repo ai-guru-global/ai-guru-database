@@ -7,9 +7,13 @@ created: 2026-05-31
 updated: 2026-05-31
 tier: core
 sources: []
+name_zh: "云产品运维 Agent 语料工程指南"
+name_en: "corpus"
 ---
 
 # 云产品运维 Agent 语料工程指南 (Corpus Engineering)
+
+> 中文简称：云产品运维 Agent 语料工程指南 ｜ English Name: corpus
 
 > 🎯 **目标**: 为语料工程师提供运维 Agent 的训练语料设计、Prompt 工程、Fine-tuning 数据集构建、评估数据集维护的完整指南，确保 Agent 的运维决策能力达到行业领先水平。
 

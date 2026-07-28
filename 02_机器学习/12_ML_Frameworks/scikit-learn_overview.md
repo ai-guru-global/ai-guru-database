@@ -14,8 +14,11 @@ aliases:
   - "scikit learn overview"
   - scikit-learn_overview
 
+name_zh: "Scikit-learn 概览"
 ---
 # Scikit-learn 概览
+
+> 中文简称：Scikit-learn 概览
 
 > **一句话理解**: 经典 Python ML 框架，覆盖分类、回归、聚类、降维等算法，适合入门和快速原型
 

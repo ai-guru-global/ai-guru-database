@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: supporting
+name_zh: "Haystack RAG 框架"
 ---
 
 # Haystack RAG 框架
+
+> 中文简称：Haystack RAG 框架
 
 > **一句话理解**: Haystack 是"RAG 的 Pipeline 工厂"——用组件化的管道架构搭建搜索/问答/RAG 系统，模块化程度业界最高。
 

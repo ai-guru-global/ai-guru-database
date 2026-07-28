@@ -11,8 +11,11 @@ aliases:
   - State_Space_Models_2026
 sources: []
 
+name_zh: "状态空间模型 2026: Mamba 与 Transformer 后继者"
 ---
 # 状态空间模型 2026: Mamba 与 Transformer 后继者
+
+> 中文简称：状态空间模型 2026: Mamba 与 Transformer 后继者
 
 > **一句话理解**: Transformer 统治了 AI 7 年，但 2026 年状态空间模型(SSM)开始挑战它的霸主地位——Mamba、S4、RetNet 等新架构承诺 O(n)线性复杂度、超长上下文处理能力，以及在某些任务上媲美 Transformer 的性能，被认为是 AGI 之路的下一个里程碑。
 

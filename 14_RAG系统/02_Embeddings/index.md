@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
+name_zh: "嵌入模型"
+name_en: "Embeddings"
 ---
 
 # Embeddings
+
+> 中文简称：嵌入模型 ｜ English Name: Embeddings
 
 This page indexes the contents of `14_RAG系统/02_Embeddings`.
 

@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "混合精度训练"
 ---
 # 混合精度训练 (Mixed Precision Training)
+
+> 中文简称：混合精度训练
 
 ## 1. 为什么需要混合精度？
 
@@ -256,7 +259,7 @@ MIXED_PRECISION_BEST_PRACTICES = {
 
 - [[07_模型训练/04_Distributed_Training/|分布式训练]]
 - [[07_模型训练/03_Optimization/|优化器]]
-- [[07_模型训练/Training_Infrastructure/|训练基础设施]]
+- [[07_模型训练/04_Distributed_Training/Training_Infrastructure|训练基础设施]]
 - [[概念/Training/mixed-precision|混合精度概念]]
 - [[概念/Training/fp8|FP8]]
 - [[12_架构基建/|架构基建]]

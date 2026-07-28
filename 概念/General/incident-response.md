@@ -16,9 +16,12 @@ relationships:
   - target: "概念/slo"
     type: related_to
 sources: []
+name_zh: "事故响应"
 ---
 
 # Incident Response（事故响应）
+
+> 中文简称：事故响应
 
 > **一句话理解**: 事故响应 = 系统出问题时按流程「救火」：先止血再修，最后复盘避免再犯。
 

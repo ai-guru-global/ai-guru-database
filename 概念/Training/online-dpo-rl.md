@@ -32,9 +32,12 @@ tier: core
 created: 2026-07-24
 updated: 2026-07-24
 sources: []
+name_zh: "Online DPO / RL 新进展"
 ---
 
 # Online DPO / RL 新进展
+
+> 中文简称：Online DPO / RL 新进展
 
 > **一句话理解**:Online DPO / DAPO / Reinforce++ 是 2025 年"o1 类推理模型"训练范式的三大突破——把 RLHF 复杂流水线简化,无需 reference model(Online DPO)、解耦 clip 提高稳定性(DAPO)、去掉 critic 节省显存(Reinforce++)。DeepSeek R1 / Qwen QwQ / o3 全部采用这些技术。
 

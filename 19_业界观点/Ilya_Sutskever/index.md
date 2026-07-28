@@ -13,9 +13,13 @@ sources:
   - "https://arxiv.org/abs/1409.3215"
   - "https://www.cs.toronto.edu/~hinton/"
   - "https://openai.com/"
+name_zh: "Ilya Sutskever 人物索引"
+name_en: "Ilya Sutskever"
 ---
 
 # Ilya Sutskever 人物索引
+
+> 中文简称：Ilya Sutskever 人物索引 ｜ English Name: Ilya Sutskever
 
 > **一句话概括**: OpenAI 联合创始人兼前首席科学家（2015-2024）、Safe Superintelligence Inc. (SSI) 创始人——AlexNet 共同作者、Seq2Seq 学习的先驱、GPT 系列大语言模型的技术灵魂，被 [[19_业界观点/Geoffrey_Hinton/about|Geoffrey Hinton]] 誉为"我最好的学生"，是推动深度学习从学术研究走向 AGI 工程化的核心人物。
 
@@ -168,6 +172,7 @@ Sutskever 的独特之处是**同时是 Scaling 派和对齐派**——他相信
 - [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
 - [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
 - [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[19_业界观点/Ilya_Sutskever/Ilya_Sutskever_2026_Update\|2026 动态更新]]
 - [[19_业界观点/index\|业界观点首页]]
 
 ---

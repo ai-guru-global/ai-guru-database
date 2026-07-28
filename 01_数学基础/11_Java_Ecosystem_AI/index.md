@@ -4,9 +4,13 @@ type: index
 created: 2026-07-02
 updated: 2026-07-11
 sources: []
+name_zh: "Java AI 生态"
+name_en: "Java Ecosystem AI"
 ---
 
 # Java Ecosystem AI
+
+> 中文简称：Java AI 生态 ｜ English Name: Java Ecosystem AI
 
 Java AI 生态 — Java 生态中的 AI 开发实践，包括 Spring AI 和 JVM 上的 LLM 集成。
 

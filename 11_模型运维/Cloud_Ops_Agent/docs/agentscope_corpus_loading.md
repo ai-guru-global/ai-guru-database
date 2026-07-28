@@ -5,6 +5,7 @@ summary: "> AgentScope Agent 如何加载本语料库作为工单诊断知识库
 created: 2026-07-01
 tier: core
 sources: []
+name_zh: "AgentScope 语料加载与挂载指南"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -12,6 +13,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # AgentScope 语料加载与挂载指南
+
+> 中文简称：AgentScope 语料加载与挂载指南
 
 ## 1. NAS 挂载
 

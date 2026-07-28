@@ -12,8 +12,11 @@ aliases:
   - Blue_Green_Canary_Deployment
 sources: []
 
+name_zh: "蓝绿部署与金丝雀发布完全指南"
 ---
 # 蓝绿部署与金丝雀发布完全指南 (Blue-Green & Canary Deployment)
+
+> 中文简称：蓝绿部署与金丝雀发布完全指南
 
 > 蓝绿部署和金丝雀发布是 AI 模型上线的安全网——从策略设计到自动化回滚，系统解析生产环境模型发布的最佳实践。
 

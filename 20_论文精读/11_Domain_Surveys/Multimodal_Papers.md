@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: supporting
 sources: []
 
+name_zh: "多模态论文精读"
 ---
 # 多模态论文精读 (Multimodal Papers)
+
+> 中文简称：多模态论文精读
 
 ## 1. 论文列表
 
@@ -102,8 +105,8 @@ PAPER_READING_METHOD = {
 ## 5. 交叉引用
 
 - [[20_论文精读/|论文精读]]
-- [[20_论文精读/Agent_Papers/|Agent 论文]]
-- [[20_论文精读/Reasoning_Papers/|推理论文]]
+- [[20_论文精读/11_Domain_Surveys/Agent_Papers|Agent 论文]]
+- [[20_论文精读/11_Domain_Surveys/Reasoning_Papers|推理论文]]
 - [[05_大模型/10_Multimodal_Models/|多模态模型]]
 - [[03_深度学习/|深度学习]]
 

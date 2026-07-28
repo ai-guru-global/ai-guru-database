@@ -12,8 +12,11 @@ aliases:
   - Cost_Optimization_MLOps
 sources: []
 
+name_zh: "MLOps 成本优化"
 ---
 # MLOps 成本优化
+
+> 中文简称：MLOps 成本优化
 
 > **一句话理解**: 模型训练和推理的算力成本是 MLOps 最大的可控开销——GPU 调度、Spot 实例、弹性伸缩、FinOps 分摊，是把月账单砍掉 50% 的四把刀。
 

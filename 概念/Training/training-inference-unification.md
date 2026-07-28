@@ -24,8 +24,11 @@ aliases:
   - "Training Inference Unification"
   - "training inference unification"
 
+name_zh: "训推一体"
 ---
 # 训推一体 (Training-Inference Unification)
+
+> 中文简称：训推一体
 
 ## 核心要点
 

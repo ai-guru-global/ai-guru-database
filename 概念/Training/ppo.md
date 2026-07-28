@@ -21,7 +21,7 @@ sources:
 summary: "PPO（Proximal Policy Optimization）是 OpenAI 2017 提出的策略梯度算法，通过 clip 机制稳定训练；是 RLHF 时代对齐 LLM 的事实标准算法（DPO / GRPO 等简化方法都源于 PPO 思想）。"
 lifecycle: reviewed
 tier: core
-updated: 2026-07-21
+updated: 2026-07-25
 provenance:
   extracted: 0.90
   inferred: 0.08
@@ -29,9 +29,12 @@ provenance:
 base_confidence: 0.92
 created: 2026-06-24
 updated: 2026-06-24
+name_zh: "近端策略优化"
 ---
 
 # PPO（Proximal Policy Optimization）
+
+> 中文简称：近端策略优化
 
 ## 核心要点
 
@@ -148,6 +151,16 @@ Step 3: PPO 优化 Policy
 - **DeepSpeed-Chat**：Microsoft 出品
 - **Verl**（字节）：高性能 PPO 框架
 - **Stable-Baselines3**：通用 RL
+
+## 源码级洞察（基于 trl v1.9.0 归档源码）
+
+归档位置：`code/llm-frameworks/trl-v1.9.0/`（PyPI sdist）。
+
+- **重要事实：PPO 已被移出 TRL 核心 API**。`PPOTrainer` 现位于 `experimental/ppo/ppo_trainer.py` L297，不再在核心 `trl/trainer/` 目录（核心只保留 SFT/DPO/GRPO/RLOO/KTO/Reward 六个）。这是"PPO→DPO/GRPO 演进"的最直接工程证据。
+- **免 Critic 替代者入位**：`trainer/rloo_trainer.py` L1513-1544 用 leave-one-out 组内均值基线替代价值网络；`trainer/grpo_trainer.py` 用组内标准化优势——两者都省掉了 PPO 的 Critic，显存减半。
+- **PPO 的 clip 思想仍在**：GRPO 的 `_compute_loss`（`trainer/grpo_trainer.py` L2991）保留了 PPO 式重要性采样比率截断（clip）目标——PPO 没有消失，而是以简化形态延续。
+
+详见 [[07_模型训练/06_Alignment/RLHF_at_Scale_2026]] 第 13 节。
 
 ## Related
 

@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "Coursera 课程"
+name_en: "coursera"
 ---
 
 # Coursera
+
+> 中文简称：Coursera 课程 ｜ English Name: coursera
 
 Coursera 课程 — 深度学习专项（Deep Learning Specialization）、ML 专项、NLP 专项与数学基础课程笔记。
 

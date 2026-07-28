@@ -20,7 +20,7 @@ sources:
 summary: "GRPO（Group Relative Policy Optimization）是 DeepSeek 在 R1 模型中提出的对齐算法，无需 Critic 模型，通过组内多个采样响应的相对优势进行策略优化，比 PPO 更简单高效。"
 lifecycle: reviewed
 tier: core
-updated: 2026-07-21
+updated: 2026-07-25
 provenance:
   extracted: 0.90
   inferred: 0.08
@@ -28,9 +28,12 @@ provenance:
 base_confidence: 0.92
 created: 2026-06-24
 updated: 2026-06-24
+name_zh: "组相对策略优化"
 ---
 
 # GRPO（Group Relative Policy Optimization）
+
+> 中文简称：组相对策略优化
 
 ## 核心要点
 
@@ -122,6 +125,17 @@ def grpo_objective(prompt, group_responses, rewards, ref_logprobs, beta=0.04):
 | **Unsloth** | ✅ |
 | **LLaMA-Factory** | ✅ |
 | **verl**（字节）| ✅ 大规模 |
+
+## 源码级洞察（基于 trl v1.9.0 归档源码）
+
+归档位置：`code/llm-frameworks/trl-v1.9.0/`（PyPI sdist）。
+
+- **GRPOTrainer 已是核心六 Trainer 之一**：`trainer/grpo_trainer.py` L143 `GRPOTrainer`（而 PPO 退入 experimental），L2260 `_generate_and_score_completions` 一次生成 G 个 completion 并组内标准化优势，无 Critic。
+- **训推分离是一等公民**：L765 `use_vllm=True` 时 rollout 走独立 vLLM；`generation/vllm_client.py` L58 `VLLMClient` 负责生成请求 + NCCL 权重广播，实现"训练几步→推权重→继续 rollout"。
+- **训推不一致修正**：L769 `vllm_importance_sampling_correction` 用重要性采样比率截断修正 vLLM 采样与训练策略的数值偏差；L783 `importance_sampling_level` 可选 `sequence`（即 GSPO 思路）。
+- **进阶变种在 experimental**：`experimental/` 下有 async_grpo（异步 rollout）、grpo_with_replay_buffer、gspo_token、gmpo 等，可观察 GRPO 的演化方向。
+
+详见 [[07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods]] 第 13 节、[[07_模型训练/06_Alignment/RLHF_at_Scale_2026]] 第 13 节。
 
 ## Related
 

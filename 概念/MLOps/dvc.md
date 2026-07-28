@@ -15,9 +15,12 @@ relationships:
   - target: "概念/git"
     type: works_with
 sources: []
+name_zh: "数据版本控制"
 ---
 
 # DVC（Data Version Control）
+
+> 中文简称：数据版本控制
 
 > **一句话理解**: DVC 是 Git 的「数据伴侣」，让大文件和数据集也能像代码一样版本化。
 

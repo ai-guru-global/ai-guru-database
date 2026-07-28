@@ -18,9 +18,12 @@ relationships:
   - target: "概念/kubernetes"
     type: part_of
 sources: []
+name_zh: "K8s 存储类"
 ---
 
 # StorageClass
+
+> 中文简称：K8s 存储类
 
 > **一句话理解**: StorageClass 是 Kubernetes 的「存储套餐」——把不同性能、协议和后端的存储抽象成可复用模板，PVC 按名称引用即可自动获得对应卷。
 

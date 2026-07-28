@@ -12,8 +12,11 @@ aliases:
   - L25_Multi_Modal_Networks
 sources: []
 
+name_zh: "L25 - 多模态网络 CLIP 与 VQGAN"
 ---
 # L25 - 多模态网络 CLIP 与 VQGAN
+
+> 中文简称：L25 - 多模态网络 CLIP 与 VQGAN
 
 > **一句话理解**：Transformer 在 NLP 取得成功后，研究者开始把视觉与语言"绑定"到一个共享语义空间里——CLIP 让图片能听懂文字描述，VQGAN+CLIP 则让文字能直接"画"出图。
 

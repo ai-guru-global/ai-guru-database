@@ -12,8 +12,11 @@ aliases:
   - GAN_Deep_Dive
 sources: []
 
+name_zh: "GAN深度解析"
 ---
 # GAN深度解析 (GAN Deep Dive)
+
+> 中文简称：GAN深度解析
 
 > **一句话理解**: GAN就像伪造者与鉴定师的无休止对决——伪造者(生成器)不断学习造更逼真的假货，鉴定师(判别器)不断学习识别假货，两者在博弈中共同进化，最终伪造者能造出以假乱真的作品。
 
@@ -930,5 +933,5 @@ def train_wgan_gp_step(critic, generator, real_data,
 - [[03_深度学习/01_DL_Fundamentals/DL_Fundamentals]] — 深度学习基础
 - [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core]] — 神经网络核心
 - [[03_深度学习/03_Optimization/Optimization]] — 优化方法
-- [[03_深度学习/06_Self_Supervised_Learning/Self_Supervised_Learning]] — 自监督学习
+- [[概念/Math/self-supervised-learning|Self_Supervised_Learning]] — 自监督学习
 - [[概念/Safety/model-watermark]] — 模型水印（GAN生成内容检测）

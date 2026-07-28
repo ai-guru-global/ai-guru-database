@@ -21,9 +21,12 @@ lifecycle: reviewed
 created: 2026-06-12
 updated: 2026-07-21
 tier: supporting
+name_zh: "LLM 安全与性能监控平台"
 ---
 
 # Arthur AI
+
+> 中文简称：LLM 安全与性能监控平台
 
 [Arthur AI](https://www.arthur.ai/) 是面向企业的 **LLM 安全与性能监控平台**。其核心产品 **Arthur Shield** 是业界领先的 LLM 防火墙，能够在毫秒级延迟下检测并拦截 Prompt 注入、毒性内容和敏感信息泄露等安全威胁。Arthur 同时提供 **Performance** 模块用于追踪 LLM 应用的成本、延迟和质量指标。
 

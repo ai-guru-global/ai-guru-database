@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "自动驾驶"
+name_en: "Autonomous Driving"
 ---
 
 # Autonomous Driving
+
+> 中文简称：自动驾驶 ｜ English Name: Autonomous Driving
 
 ## 文件导航
 

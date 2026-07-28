@@ -34,9 +34,12 @@ sources:
   - Qwen3 论文
   - OpenAI o1 官方博客
   - 数据科学 RLVR 教材(rlvrbook.com)
+name_zh: "RLVR 可验证奖励强化学习"
 ---
 
 # RLVR 可验证奖励强化学习(RL with Verifiable Rewards)
+
+> 中文简称：RLVR 可验证奖励强化学习
 
 ## 一句话总结
 

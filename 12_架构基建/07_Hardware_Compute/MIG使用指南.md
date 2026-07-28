@@ -7,7 +7,10 @@ created: 2026-06-17
 description: "名称解释AbbreviationMeaningMIGMultiple Instance GPU. The unified name for the GI/CI feature. It makes a single PPU device could be split to multiple resou..."
 tags:
   - "clippings"
+name_zh: "MIG使用指南"
 ---
+> 中文简称：MIG使用指南
+
 **名称解释**
 
 <table><thead><tr><td rowspan="1" colspan="1"><p><b>Abbreviation</b></p></td><td rowspan="1" colspan="1"><p><b>Meaning</b></p></td></tr></thead></table>

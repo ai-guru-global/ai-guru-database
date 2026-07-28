@@ -10,8 +10,11 @@ aliases:
   - About
 sources: []
 
+name_zh: "Richard Socher 简介"
 ---
 # Richard Socher 简介 (Richard Socher)
+
+> 中文简称：Richard Socher 简介
 
 ## 一句话概括
 

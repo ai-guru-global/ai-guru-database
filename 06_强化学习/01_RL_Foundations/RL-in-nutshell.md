@@ -11,8 +11,11 @@ aliases:
   - "RL in nutshell"
 sources: []
 
+name_zh: "强化学习速览"
 ---
 # 强化学习速览 (Reinforcement Learning in a Nutshell)
+
+> 中文简称：强化学习速览
 
 > **一句话理解**: 强化学习就像训练一只小狗——做对了给奖励，做错了不给，它慢慢学会了什么行为能拿到最多零食。
 

@@ -19,9 +19,12 @@ provenance:
 base_confidence: 0.82
 lifecycle: reviewed
 tier: supporting
+name_zh: "NVIDIA 对话行为控制框架"
 ---
 
 # NeMo Guardrails
+
+> 中文简称：NVIDIA 对话行为控制框架
 
 [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) 是 NVIDIA 开源的 LLM 对话行为控制框架，通过自创的 **Colang** 领域特定语言（DSL）定义对话流程、主题边界和安全约束。与 Guardrails AI 侧重"输出质量校验"不同，NeMo Guardrails 更关注**对话行为的程序化控制**——定义 AI 可以谈什么、不可以谈什么、何时调用工具、如何响应特定场景。
 

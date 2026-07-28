@@ -32,8 +32,11 @@ aliases:
   - "Model Inference"
   - "model inference"
 
+name_zh: "模型推理原理"
 ---
 # 模型推理原理 (Model Inference)
+
+> 中文简称：模型推理原理
 
 ## 核心要点
 

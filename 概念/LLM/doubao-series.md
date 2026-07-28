@@ -34,9 +34,12 @@ tier: core
 created: 2026-07-23
 updated: 2026-07-23
 sources: []
+name_zh: "豆包 / ByteDance Seed 模型系列"
 ---
 
 # 豆包 / ByteDance Seed 模型系列
+
+> 中文简称：豆包 / ByteDance Seed 模型系列
 
 > **一句话理解**: 字节跳动 Seed 团队 + 火山引擎(Volcano Engine)联合产出的国产闭源大模型主力——以"超高激活参数效率"和"长 CoT 强化学习"两条主线,跻身全球 SOTA 阵营。
 
@@ -298,12 +301,12 @@ VAPO 借鉴 PPO 的 Actor-Critic 框架,核心改进:
 ## 九、相关概念
 
 - [[概念/llm-architectures|LLM 架构]]
-- [[概念/moe|MoE 混合专家]]
+- [[概念/General/mixture-of-experts|MoE 混合专家]]
 - [[概念/reasoning-models|推理模型]]
 - [[概念/multimodal-llm|多模态 LLM]]
 - [[概念/long-context-llm|长上下文 LLM]]
 - [[概念/speculative-decoding|投机解码]]
-- [[概念/llm-pretraining|预训练]]
+- [[概念/Training/pre-training|预训练]]
 - [[概念/reward-model|奖励模型]]
 
 ---

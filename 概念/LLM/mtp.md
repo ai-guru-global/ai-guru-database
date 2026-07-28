@@ -21,9 +21,12 @@ lifecycle: reviewed
 tier: core
 created: 2026-06-16
 updated: 2026-07-21
+name_zh: "Multi-Token Prediction 多 Token 预测"
 ---
 
 # Multi-Token Prediction (MTP)
+
+> 中文简称：Multi-Token Prediction 多 Token 预测
 
 > **一句话理解**: MTP 是"一次预测多个未来 Token"——DeepSeek-V3 首创，训练时教会模型预测下 N 个 Token，推理时用投机解码加速 2-3 倍。
 

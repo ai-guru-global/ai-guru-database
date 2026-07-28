@@ -12,8 +12,11 @@ aliases:
   - Attention_Mechanisms
 sources: []
 
+name_zh: "注意力机制深度解析"
 ---
 # 注意力机制深度解析 (Attention Mechanisms Deep Dive)
+
+> 中文简称：注意力机制深度解析
 
 > 从基础注意力到 Flash Attention，系统解析现代 AI 的核心计算原语——注意力机制的原理、变体与工程实现。
 

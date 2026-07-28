@@ -11,8 +11,11 @@ aliases:
   - Anthropic_Claude_Deep_Dive
 sources: []
 
+name_zh: "Anthropic Claude 技术深度解析"
 ---
 # Anthropic Claude 技术深度解析
+
+> 中文简称：Anthropic Claude 技术深度解析
 
 ## 一句话理解
 

@@ -5,9 +5,13 @@ created: 2026-07-25
 updated: 2026-07-25
 sources: []
 tags: [auto-index]
+name_zh: "前沿论文"
+name_en: "Frontier"
 ---
 
 # Frontier
+
+> 中文简称：前沿论文 ｜ English Name: Frontier
 
 ## 文件导航
 

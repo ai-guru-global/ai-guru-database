@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "论文精读"
+name_en: "Essential Papers"
 ---
 
 # 论文精读
+
+> 中文简称：论文精读 ｜ English Name: Essential Papers
 
 AI 论文精读中心（Paper Reading Center）— 按方向分类的顶会论文深度解读，涵盖架构、对齐、效率、检索、RL 与前沿。
 
@@ -17,7 +21,7 @@ AI 论文精读中心（Paper Reading Center）— 按方向分类的顶会论�
 |------|------|----------|
 | [[20_论文精读/README|README]] | Paper reading module overview and knowledge map | all readers |
 | [[20_论文精读/README_for_dummy|README for dummy]] | Paper reading beginner guide and quick start | newcomers / beginners |
-| [[20_论文精读/Paper_Reading_Guide|Paper Reading Guide]] | Paper reading methodology: how to efficiently read AI papers | students / junior researchers |
+| [[20_论文精读/01_Research_Guide/Paper_Reading_and_Reproduction_Guide|Paper Reading Guide]] | Paper reading methodology: how to efficiently read AI papers | students / junior researchers |
 
 ## Related
 
@@ -202,3 +206,7 @@ AI 论文精读中心（Paper Reading Center）— 按方向分类的顶会论�
 - [ ] 参与社区讨论和技术分享
 - [ ] 关注顶会最新成果
 - [ ] 将学习成果应用到实际工作中
+
+## 相关文档
+
+- [[20_论文精读/01_Research_Guide/Paper-Reading-in-nutshell|论文精读速览 (nutshell)]]

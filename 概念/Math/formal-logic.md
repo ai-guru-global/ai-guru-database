@@ -23,8 +23,11 @@ relationships:
     type: related_to
   - target: "概念/reasoning-models"
     type: related_to
+name_zh: "形式逻辑"
 ---
 # 形式逻辑 (Formal Logic)
+
+> 中文简称：形式逻辑
 
 > 形式逻辑是 AI 推理能力的数学基础——从命题逻辑到一阶逻辑，再到现代 LLM 的神经符号推理。
 

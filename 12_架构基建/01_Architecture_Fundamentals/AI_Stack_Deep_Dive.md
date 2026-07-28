@@ -12,8 +12,11 @@ aliases:
   - AI_Stack_Deep_Dive
 sources: []
 
+name_zh: "阿里云 AI Stack: 企业级软硬一体 AI 推理平台"
 ---
 # 阿里云 AI Stack: 企业级软硬一体 AI 推理平台
+
+> 中文简称：阿里云 AI Stack: 企业级软硬一体 AI 推理平台
 
 > **一句话理解**: 阿里云 AI Stack 是面向政企的软硬一体 AI 推理一体机——开箱即用部署 Qwen/DeepSeek 满血大模型，支持 APG/Ascend/Nvidia 三种 GPU，提供 A-Speed 加速推理、模型网关、RAG 应用等全链路能力。
 

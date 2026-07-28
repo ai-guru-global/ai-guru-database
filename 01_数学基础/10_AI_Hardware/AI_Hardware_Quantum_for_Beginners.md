@@ -5,9 +5,12 @@ category: hardware
 tags: [gpu, tpu, npu, quantum, beginner, ai-chips]
 source: yeasy/ai_beginner_guide/16_ai_hardware_quantum
 sources: []
+name_zh: "AI 芯片与量子计算入门"
 ---
 
 # AI 芯片与量子计算入门
+
+> 中文简称：AI 芯片与量子计算入门
 
 > 一句话理解：算法是 AI 的大脑，芯片是让大脑工作的心脏——选错心脏，再聪明的大脑也跑不动。
 

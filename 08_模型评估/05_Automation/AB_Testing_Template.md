@@ -10,9 +10,12 @@ aliases:
   - "AB Testing Template"
   - "Online Experiment Template"
 sources: []
+name_zh: "A/B 测试方案模板"
 ---
 
 # A/B 测试方案模板 (A/B Testing Template)
+
+> 中文简称：A/B 测试方案模板
 
 > 标准化的 ML 模型 A/B 测试方案模板——科学评估模型变更的业务效果，用数据驱动上线决策。
 

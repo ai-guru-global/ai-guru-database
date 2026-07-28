@@ -14,9 +14,12 @@ relationships:
   - target: "概念/adversarial-attack"
     type: related_to
 sources: []
+name_zh: "模型安全"
 ---
 
 # Model Security
+
+> 中文简称：模型安全
 
 > **一句话理解**: 模型安全就是防止你的模型被坏人「偷走、骗过、或者训练时就被植入了后门」。
 

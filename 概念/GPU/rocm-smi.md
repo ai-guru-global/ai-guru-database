@@ -25,9 +25,12 @@ aliases:
   - "rocm-smi"
   - "ROCm SMI"
   - "AMD GPU 监控"
+name_zh: "rocm-smi AMD GPU 监控工具"
 ---
 
 # rocm-smi AMD GPU 监控工具
+
+> 中文简称：rocm-smi AMD GPU 监控工具
 
 > **一句话理解**: rocm-smi 是 AMD GPU 的"nvidia-smi"——ROCm 生态的 GPU 监控 CLI，查看 AMD MI300X 等 GPU 的利用率/显存/温度/功耗。
 
@@ -197,7 +200,7 @@ rocm-smi --showtopo
 - [[概念/GPU/ppu-smi|ppu-smi]]
 - [[概念/Inference/model-serving|模型服务]]
 - [[12_架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
-- [[13_运维/GPU_Monitoring|GPU 监控体系]]
+- [[13_运维/06_Observability/index|GPU 监控体系]]
 
 ---
 

@@ -11,9 +11,12 @@ aliases:
   - "Data Engineer 面试指南"
   - "Data_Engineer Interview Guide"
 sources: []
+name_zh: "Data Engineer 面试指南"
 ---
 
 # Data Engineer 面试指南
+
+> 中文简称：Data Engineer 面试指南
 
 > **一句话理解**: Data Engineer 是数据驱动型组织的基础设施建设者——设计高性能的数据管道，构建可靠的数据仓库和数据湖，确保数据从采集到消费的全链路高效、准确、可扩展，为分析和 ML 团队提供坚实的数据基础。
 
@@ -641,7 +644,7 @@ class EventStream:
 ## Related
 
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 - [[21_面试岗位/MLOps_Engineer/MLOps_Engineer|MLOps Engineer 面试指南]]
 - [[21_面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
 - [[21_面试岗位/Data_Scientist/question_bank|Data Scientist 题库]]

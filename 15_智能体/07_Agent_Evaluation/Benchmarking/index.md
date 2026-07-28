@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "基准评测"
+name_en: "Benchmarking"
 ---
 
 # Benchmarking
+
+> 中文简称：基准评测 ｜ English Name: Benchmarking
 
 评分标准定义与基准测试方法论（benchmarking methodology）— 为 Agent 性能排名提供可复现的量化依据。
 

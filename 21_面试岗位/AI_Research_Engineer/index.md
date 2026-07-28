@@ -5,9 +5,13 @@ created: 2026-07-02
 updated: 2026-07-11
 sources: []
 tags: [auto-index]
+name_zh: "AI 研究工程师"
+name_en: "AI Research Engineer"
 ---
 
 # AI Research Engineer
+
+> 中文简称：AI 研究工程师 ｜ English Name: AI Research Engineer
 
 AI 研究工程师 — 介于研究与工程之间，兼顾算法创新与系统实现，覆盖训练框架（training framework）与实验基础设施。
 

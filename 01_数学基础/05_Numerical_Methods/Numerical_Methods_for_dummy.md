@@ -8,8 +8,11 @@ updated: 2026-07-21
 tier: introductory
 sources: []
 
+name_zh: "数值方法 - 小白版"
 ---
 # 数值方法 - 小白版
+
+> 中文简称：数值方法 - 小白版
 
 > 零基础友好，用生活类比理解 AI 中的"数学精度"问题。
 
@@ -175,7 +178,7 @@ AI 中的稀疏：
 
 - 想了解具体精度格式？→ [[01_数学基础/05_Numerical_Methods/Floating_Point_Precision|浮点精度详解]]
 - 想了解训练稳定性？→ [[01_数学基础/05_Numerical_Methods/Numerical_Stability|数值稳定性]]
-- 想了解 GPU 计算？→ [[01_数学基础/GPU_Programming/|GPU 编程入门]]
+- 想了解 GPU 计算？→ [[01_数学基础/10_AI_Hardware/GPU_Programming_CUDA_Basics|GPU 编程入门]]
 
 ## 进阶知识拓展
 

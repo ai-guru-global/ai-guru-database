@@ -13,8 +13,11 @@ aliases:
   - L06_Intro_to_Computer_Vision
 sources: []
 
+name_zh: "L06 - 计算机视觉简介与 OpenCV"
 ---
 # L06 - 计算机视觉简介与 OpenCV
+
+> 中文简称：L06 - 计算机视觉简介与 OpenCV
 
 > **一句话理解**：在把图像交给神经网络之前，先学会用 OpenCV 等工具对图像进行读取、变换与增强，是计算机视觉工程流程中的第一步。
 

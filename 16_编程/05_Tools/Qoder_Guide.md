@@ -11,8 +11,11 @@ aliases:
   - Qoder_Guide
 sources: []
 
+name_zh: "Qoder / QoderWork / QoderWake 使用指南"
 ---
 # Qoder / QoderWork / QoderWake 使用指南
+
+> 中文简称：Qoder / QoderWork / QoderWake 使用指南
 
 > **一句话**: Qoder 是面向全栈开发的 AI 编程平台，集成 QoderWork（协作工作台）与 QoderWake（唤醒式 Agent），支持从 miniapp 到 agent project 的快速交付。
 

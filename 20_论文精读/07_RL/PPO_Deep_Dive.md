@@ -11,9 +11,12 @@ aliases:
   - "Proximal Policy Optimization Deep Dive"
   - PPO_Deep_Dive
 sources: []
+name_zh: "PPO 深度解读"
 ---
 
 # PPO 深度解读 (Proximal Policy Optimization Algorithms)
+
+> 中文简称：PPO 深度解读
 
 > **一句话理解**: PPO 就像一个谨慎的学徒——每次只允许自己做一小步调整（clipped update），不会因为一次大跃进就把之前学好的本事搞砸。这个"限制单步更新幅度"的简单想法，让它成为 RLHF 的标准算法、ChatGPT 背后的核心技术之一。
 
@@ -838,8 +841,8 @@ PPO 的"一句话哲学":
 - [[20_论文精读/07_RL/AlphaGo_Deep_Dive]] — AlphaGo: 使用了类似的策略梯度方法
 - [[20_论文精读/06_Alignment/RLHF_DPO_Deep_Dive]] — RLHF 的完整流程详解
 - [[20_论文精读/06_Alignment/Chain_of_Thought_Deep_Dive]] — 推理能力与 RL 的关系
-- [[概念/Training/policy-gradient]] — 策略梯度方法基础
-- [[概念/Training/gae]] — GAE 详解
+- [[概念/Training/policy-gradient|policy-gradient]] — 策略梯度方法基础
+- [[概念/Training/gae|gae]] — GAE 详解
 - [[概念/LLM/rlhf]] — RLHF 技术概览
 
 ---

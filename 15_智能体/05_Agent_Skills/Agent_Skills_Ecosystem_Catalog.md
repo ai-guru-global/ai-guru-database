@@ -11,8 +11,11 @@ aliases:
   - Agent_Skills_Ecosystem_Catalog
 sources: []
 
+name_zh: "Agent Skills 生态目录"
 ---
 # Agent Skills 生态目录
+
+> 中文简称：Agent Skills 生态目录
 
 > 🎯 **目标**：完整收录 38 家开发团队、451+ 个 Agent Skills 的生态全景，作为快速查找和选型参考。
 

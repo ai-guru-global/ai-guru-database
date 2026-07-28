@@ -9,9 +9,12 @@ status: active
 baseline: 治理/_quality-assessment.md (2026-06-15, 8.5/10)
 related: [治理/_project-evaluation.md, 治理/_content-assessment-2026-06-23.md, 治理/_taxonomy-assessment-2026-06-23.md, 治理/_post-restructure-2026-06-19.md, 治理/_governance-worklog-2026-06-22.md]
 sources: []
+name_zh: "AI Guru 知识库整体评估报告"
 ---
 
 # AI Guru 知识库整体评估报告（2026-06-24）
+
+> 中文简称：AI Guru 知识库整体评估报告
 
 > **评估日期**: 2026-06-24
 > **评估版本**: 当前 `content/subdir-reorganization` 分支最新状态

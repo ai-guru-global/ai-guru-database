@@ -11,8 +11,11 @@ aliases:
   - Data_Pipeline_Feature_Visualization
 sources: []
 
+name_zh: "数据管道与特征可视化"
 ---
 # 数据管道与特征可视化 (Data Pipeline & Feature Visualization)
+
+> 中文简称：数据管道与特征可视化
 
 > **一句话理解**: 数据管道与特征可视化是 ML 系统的"体检报告"——从数据摄入到特征工程再到模型输入，全链路监控数据分布、质量和漂移，确保"垃圾进"不会导致"垃圾出"。
 

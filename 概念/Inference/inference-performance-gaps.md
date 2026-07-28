@@ -21,8 +21,11 @@ aliases:
   - "inference performance gaps"
   - "推理性能缺口"
 
+name_zh: "推理性能空白分析"
 ---
 # Inference Performance Gaps（推理性能缺口）
+
+> 中文简称：推理性能空白分析
 
 > 推理性能优化不能只盯 GPU 和 attention kernel，边缘、异构、能耗、多租户、编译启动等“边缘问题”同样决定生产系统能否规模化。
 

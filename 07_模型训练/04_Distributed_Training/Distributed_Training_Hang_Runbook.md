@@ -8,6 +8,7 @@ created: 2026-06-26
 updated: 2026-06-26
 tier: core
 sources: []
+name_zh: "分布式训练 Hang 排障 Runbook"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -15,6 +16,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # 分布式训练 Hang 排障 Runbook
+
+> 中文简称：分布式训练 Hang 排障 Runbook
 
 > **一句话理解**: 分布式训练 Hang 通常不是代码 bug，而是 **NCCL 通信、网络拓扑、GPU 互联** 出了问题；本手册按「现象 → 日志 → 命令 → 修复」帮你定位。
 

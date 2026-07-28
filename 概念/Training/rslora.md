@@ -24,9 +24,12 @@ aliases:
   - "RS-LoRA"
   - "Rs Lora"
   - "rs lora"
+name_zh: "rsLoRA 秩稳定 LoRA"
 ---
 
 # rsLoRA 秩稳定 LoRA
+
+> 中文简称：rsLoRA 秩稳定 LoRA
 
 > **一句话理解**: rsLoRA 是"LoRA 的高秩补丁"——把缩放因子从 α/r 改为 α/√r，让 LoRA 在 rank 增大时不再退化。
 
@@ -206,6 +209,6 @@ model = get_peft_model(base_model, config_rslora)
 - [[概念/Training/qlora|QLoRA]] — 量化 LoRA
 - [[概念/Training/pissa|PiSSA]] — 奇异值初始化
 - [[概念/Training/fine-tuning-techniques|Fine-tuning Techniques]] — 微调技术总览
-- [[概念/LLM/lora|LoRA]] — 低秩适配
+- [[概念/Training/lora-peft|LoRA]] — 低秩适配
 
 > ℹ️ rsLoRA 是 LoRA 的稳定性改进，高 rank 场景必选，与 PiSSA/DoRA 可叠加使用，2026年已成为 PEFT 标配。

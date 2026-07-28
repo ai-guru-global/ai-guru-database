@@ -17,6 +17,7 @@ relationships:
   - target: "概念/serviceaccount"
     type: related_to
 sources: []
+name_zh: "K8s 角色绑定"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -24,6 +25,8 @@ sources: []
 <!-- op-safety-banner v1 -->
 
 # RoleBinding
+
+> 中文简称：K8s 角色绑定
 
 > **一句话理解**: RoleBinding 是 K8s 的「授权通知书」——把某个 Role 或 ClusterRole 的权限授予用户、用户组或 ServiceAccount，且只在指定 Namespace 内生效。
 

@@ -33,8 +33,11 @@ aliases:
   - "Kv Cache"
   - "kv cache"
 
+name_zh: "键值缓存"
 ---
 # KV Cache (Key-Value Cache)
+
+> 中文简称：键值缓存
 
 ## 核心要点
 

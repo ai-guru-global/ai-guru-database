@@ -12,8 +12,11 @@ aliases:
   - LLM_Evaluation_2026
 sources: []
 
+name_zh: "LLM 评估方法论 2026"
 ---
 # LLM 评估方法论 2026 (LLM Evaluation Methodology 2026)
+
+> 中文简称：LLM 评估方法论 2026
 
 > LLM 评估是 AI 工程的核心挑战——从自动化基准到人工评估，从单一指标到多维度评估，系统解析 LLM 评估的方法论和最佳实践。
 

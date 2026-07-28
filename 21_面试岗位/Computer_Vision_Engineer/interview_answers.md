@@ -7,9 +7,12 @@ created: 2026-05-31
 updated: 2026-06-04
 tier: supporting
 sources: []
+name_zh: "Computer Vision Engineer 面试题实例答案"
 ---
 
 # Computer Vision Engineer 面试题实例答案
+
+> 中文简称：Computer Vision Engineer 面试题实例答案
 
 > 每个答案采用 **结论 → 展开 → 追问预判** 结构。
 
@@ -109,7 +112,7 @@ aliases:
 - [[21_面试岗位/Computer_Vision_Engineer/interview_preparing|Computer Vision Engineer 面试准备]]
 - [[21_面试岗位/Computer_Vision_Engineer/question_bank|Computer Vision Engineer 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
-- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
 
 ## 面试核心知识框架
 

@@ -26,9 +26,12 @@ provenance:
 base_confidence: 0.85
 created: 2026-06-24
 updated: 2026-07-21
+name_zh: "策略即代码"
 ---
 
 # Policy as Code（策略即代码）
+
+> 中文简称：策略即代码
 
 ## 核心要点
 

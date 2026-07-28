@@ -17,8 +17,11 @@ aliases:
   - "Structured Output Guide"
   - Structured_Output_Guide
 
+name_zh: "LLM 结构化输出完全指南"
 ---
 # LLM 结构化输出完全指南
+
+> 中文简称：LLM 结构化输出完全指南
 
 > **一句话理解**: 让 LLM 返回可靠结构化数据的技术全景——从 Function Calling 到约束解码,覆盖原理、框架对比、选型决策与生产故障恢复。
 

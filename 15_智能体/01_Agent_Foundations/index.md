@@ -2,7 +2,7 @@
 title: Agent Foundations
 type: index
 created: 2026-07-02
-updated: 2026-07-25
+updated: 2026-07-29
 sources: []
 name_zh: "智能体基础"
 name_en: "Agent Foundations"
@@ -24,6 +24,7 @@ name_en: "Agent Foundations"
 | [[15_智能体/01_Agent_Foundations/AI_Agents_for_dummy|AI Agents for dummy]] | AI Agents for dummy | 开发者/学习者 |
 | [[15_智能体/01_Agent_Foundations/AI_OpenSource_Projects_Overview|AI OpenSource Projects Overview]] | AI OpenSource Projects Overview | 开发者/学习者 |
 | [[15_智能体/01_Agent_Foundations/Agent-in-nutshell|Agent-in-nutshell]] | Agent-in-nutshell | 开发者/学习者 |
+| [[15_智能体/01_Agent_Foundations/Agent_Engineering_Methodology_System_2026|Agent Engineering Methodology System 2026]] | Agent工程八大方法论体系：架构/工具/记忆/规划/协作/运维/安全/评估 | 开发者/架构师 |
 | [[15_智能体/01_Agent_Foundations/Agent_Future_Roadmap_2026_2030|Agent Future Roadmap 2026 2030]] | Agent Future Roadmap 2026 2030 | 开发者/学习者 |
 | [[15_智能体/01_Agent_Foundations/Agent_Observability_2026|Agent Observability 2026]] | Agent Observability 2026 | 开发者/学习者 |
 | [[15_智能体/01_Agent_Foundations/Agent_Overview|Agent Overview]] | Agent Overview | 开发者/学习者 |

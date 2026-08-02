@@ -177,7 +177,7 @@ Attention(Q,K,V) = softmax(QK^T / √d) · V
 - [[05_大模型/05_LLM_Architectures/LLM_Architectures]] — LLM 架构 2026
 - [[概念/transformer-architecture]] — Transformer 架构
 - [[概念/kv-cache]] — KV Cache
-- [[05_大模型/03_Transformer/transformer-llm-architecture|Transformer × LLM 架构]]
+- [[05_大模型/03_Transformer/Transformer与LLM架构|Transformer × LLM 架构]]
 
 ## 总结
 

@@ -199,7 +199,7 @@ RetNet 用 **Retention（保留机制）** 代替 Attention：
 - [[概念/transformer-architecture|Transformer 架构]]
 - [[05_大模型/05_LLM_Architectures/LLM_Architecture_Evolution|LLM 架构演进]]
 - [[03_深度学习/02_Neural_Network_Core/State_Space_Models_2026|状态空间模型 2026]]
-- [[05_大模型/03_Transformer/transformer-llm-architecture|Transformer × LLM 架构]]
+- [[05_大模型/03_Transformer/Transformer与LLM架构|Transformer × LLM 架构]]
 
 ## 总结
 

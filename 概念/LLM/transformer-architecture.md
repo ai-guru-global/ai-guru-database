@@ -145,7 +145,7 @@ Transformer 训练 的标配配置：
 - [[概念/attention-variants|Attention 变体]]
 - [[概念/rope|RoPE]]
 - [[概念/alibi|ALiBi]]
-- [[治理/transformer-llm-architecture]] — Transformer 架构 × LLM 架构 (共享: attention, bert, gpt, nlp, transformer)
+- [[治理/Transformer与LLM架构]] — Transformer 架构 × LLM 架构 (共享: attention, bert, gpt, nlp, transformer)
 - [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, nlp, transformer)
 - [[05_大模型/07_Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, nlp, transformer)
 - [[05_大模型/05_LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, nlp, transformer)

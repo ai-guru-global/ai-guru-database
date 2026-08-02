@@ -57,7 +57,7 @@ This page indexes the contents of `综合`.
 - [[治理/talks-insights|Talks Insights]]
 - [[治理/testing-agents|Testing Agents]]
 - [[治理/training-fine-tuning|Training Fine Tuning]]
-- [[治理/transformer-llm-architecture|Transformer Llm Architecture]]
+- [[治理/Transformer与LLM架构|Transformer Llm Architecture]]
 
 ## 核心知识体系
 

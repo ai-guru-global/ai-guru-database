@@ -28,7 +28,7 @@ name_zh: "跨域综合文档索引"
 
 | 文档 | 交叉领域 | 核心洞见 |
 |------|----------|----------|
-| [transformer-llm-architecture](./transformer-llm-architecture.md) | 03_Deep_Learning × 04_NLP_LLMs | Transformer 架构如何催生 LLM 生态 |
+| [Transformer与LLM架构](./transformer-llm-architecture.md) | 03_Deep_Learning × 04_NLP_LLMs | Transformer 架构如何催生 LLM 生态 |
 | [llm-nlp](./llm-nlp.md) | 04_NLP_LLMs 内部 | 大模型在 NLP 任务上的统一范式 |
 | [moe-inference-optimization](./moe-inference-optimization.md) | 04_NLP_LLMs × 09_Deployment_Inference | MoE 架构的推理优化策略 |
 

@@ -158,7 +158,7 @@ DeepGEMM 作为 DeepSeek 开源生态的一部分，间接支撑 AI Stack 的推
 - [[概念/flash-attention-kernels]] — FlashMLA 算子
 - [[概念/cuda-platform]] — CUDA 计算平台
 - [[概念/quantization]] — 量化技术
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ## DeepGEMM vs 其他 GEMM 库
 

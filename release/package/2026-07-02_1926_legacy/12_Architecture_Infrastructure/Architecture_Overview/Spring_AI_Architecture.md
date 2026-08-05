@@ -752,7 +752,7 @@ jobs:
 │  离线数据流 (文档索引):                                          │
 │  ─────────────────────────────────────────────                 │
 │  文档源 → Tika 解析 → TokenSplitter → Embedding → VectorStore │
-│  (S3/NFS)  (Reader)   (Transformer)  (Model)    (PG/Milvus)   │
+│  (S3/NFS)  (Reader)   (01_Transformer)  (Model)    (PG/Milvus)   │
 │                                                                │
 │  在线数据流 (用户请求):                                          │
 │  ─────────────────────────────────────────────                 │

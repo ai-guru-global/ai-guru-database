@@ -42,7 +42,7 @@ sources: []
 | 19_Ethics_Safety | 19 | 23.31 万 |
 | 15_Testing | 12 | 22.87 万 |
 | 09_Deployment_Inference | 17 | 20.89 万 |
-| 01_Fundamentals | 19 | 20.29 万 |
+| 01_基础入门 | 19 | 20.29 万 |
 | 07_Model_Training | 10 | 18.01 万 |
 | 05_Computer_Vision | 20 | 17.90 万 |
 | 03_Deep_Learning | 12 | 17.95 万 |

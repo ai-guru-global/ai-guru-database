@@ -1,0 +1,220 @@
+---
+title: "Learn Claude Code L17：Autonomous Agents — 自己看板，自己认领"
+category: 15-agent-production
+tags:
+  - ai-agents
+  - agent-harness
+  - claude-code
+  - autonomous-agents
+  - multi-agent
+  - task-system
+sources:
+  - "原始/github-sources/learn-claude-code/s17_autonomous_agents/README.md"
+  - "https://github.com/shareAI-lab/learn-claude-code"
+summary: "Learn Claude Code 第十七课：队友完成当前任务后不退出，进入 idle_poll 阶段轮询收件箱和任务看板，自动认领可执行的任务。"
+provenance:
+  extracted: 0.82
+  inferred: 0.15
+  ambiguous: 0.03
+base_confidence: 0.72
+lifecycle: draft
+lifecycle_changed: 2026-06-12
+tier: supporting
+created: 2026-06-12
+updated: 2026-06-12
+aliases:
+  - "Learn Claude Code L17 Autonomous Agents"
+  - Learn_Claude_Code_L17_Autonomous_Agents
+
+name_zh: "Learn Claude Code L17：Autonomous Agents"
+---
+# Learn Claude Code L17：Autonomous Agents — 自己看板，自己认领
+
+> 中文简称：Learn Claude Code L17：Autonomous Agents
+
+> **一句话理解**: 队友应该自己看任务看板，发现没人做的任务就认领，做完再找下一个——不需要 Lead 手动分配。
+
+## 问题
+
+s16 的队友能通信、能握手关机，但每个任务都等 Lead 分配。如果看板上有 10 个未认领任务，Lead 要手动 assign 10 次，无法扩展。
+
+## 解决方案
+
+沿用 MessageBus 和协议工具，新增：
+- **idle_poll**：空闲时每 5 秒轮询一次
+- **scan_unclaimed_tasks**：扫描看板上可认领的任务
+- **自动认领**：找到任务就 claim
+
+## 队友生命周期
+
+| 阶段 | 行为 | 退出条件 |
+|------|------|---------|
+| WORK | inbox → LLM → 工具循环 | `stop_reason != tool_use` |
+| IDLE | 每 5s 轮询 inbox + 任务板 | 60s 超时或收到 shutdown |
+| SHUTDOWN | 发 summary，退出 | — |
+
+## 扫描可认领任务
+
+```python
+def scan_unclaimed_tasks():
+    unclaimed = []
+    for f in sorted(TASKS_DIR.glob("task_*.json")):
+        task = json.loads(f.read_text())
+        if (task.get("status") == "pending"
+                and not task.get("owner")
+                and can_start(task["id"])):
+            unclaimed.append(task)
+    return unclaimed
+```
+
+三个条件：pending、无 owner、所有 `blockedBy` 依赖已完成。
+
+## 设计要点
+
+- 教学版没有文件锁，并发认领可能出现竞争；至少 `task.owner` 检查避免了后写覆盖 ^[extracted]
+- 真实 Claude Code 用 `proper-lockfile` 保护任务文件，`claimTask` 在文件锁内完成读-改-写 ^[inferred]
+- inbox 优先于任务板，因为可能包含 `shutdown_request` 等协议消息
+
+## 关联阅读
+
+- [[90_学习/03_课程资源/share_ai/01_learn_claude_code]] — 完整 20 课映射
+- [[90_学习/03_课程资源/share_ai/01_learn_claude_code]] — 仓库引用索引
+- [[15_智能体/15_课程笔记/08_Learn_Claude_Code_L12_Task_系统]] — 任务系统
+- [[15_智能体/15_课程笔记/09_Learn_Claude_Code_L15_Agent_Teams]] — Agent Teams
+
+## 附录：核心概念速查
+
+| 概念 | 说明 | 应用场景 |
+|------|------|----------|
+| Agent Loop | 感知-思考-行动循环 | 核心执行流程 |
+| Tool Use | 调用外部工具/API | 扩展能力 |
+| Memory | 短期/长期记忆 | 上下文维护 |
+| Planning | 任务分解与排序 | 复杂任务 |
+| Reflection | 自我评估改进 | 质量提升 |
+| Multi-Agent | 多Agent协作 | 分布式任务 |
+
+## 附录：技术栈对比
+
+| 框架/工具 | 特点 | 适用场景 | 成熟度 |
+|----------|------|----------|--------|
+| LangChain | 链式调用 | 通用Agent | ★★★★☆ |
+| LangGraph | 图结构编排 | 复杂流程 | ★★★★☆ |
+| AutoGen | 多Agent对话 | 协作任务 | ★★★★☆ |
+| CrewAI | 角色分工 | 团队模拟 | ★★★☆☆ |
+| OpenAI SDK | 官方框架 | 快速原型 | ★★★★☆ |
+| Semantic Kernel | 企业级 | .NET/Java | ★★★★☆ |
+
+## 附录：学习路径
+
+| 阶段 | 推荐内容 | 目标 |
+|------|----------|------|
+| 入门 | 基础概念文档 | 理解Agent |
+| 进阶 | 本文档深度内容 | 掌握技术 |
+| 实践 | 动手项目 | 构建应用 |
+| 前沿 | 最新论文/产品 | 跟踪发展 |
+
+## 附录：常见问题
+
+| 问题 | 解答 |
+|------|------|
+| Agent和Chatbot的区别？ | Agent能自主决策+使用工具+持续执行 |
+| 需要什么前置知识？ | LLM基础+编程+系统设计 |
+| 如何评估Agent？ | 任务完成率+效率+安全性 |
+| 2026年趋势？ | 多Agent协作/企业级/具身智能 |
+
+## 附录：术语表
+
+| 术语 | 英文 | 说明 |
+|------|------|------|
+| 智能体 | Agent | 自主决策AI系统 |
+| 工具调用 | Tool Use | 使用外部工具 |
+| 记忆 | Memory | 上下文/历史 |
+| 规划 | Planning | 任务分解 |
+| 反思 | Reflection | 自我评估 |
+| 编排 | Orchestration | 流程管理 |
+| 协议 | Protocol | 通信标准 |
+| 护栏 | Guardrails | 安全约束 |
+
+## 附录：检查清单
+
+| 检查项 | 说明 | 状态 |
+|--------|------|------|
+| 理解核心概念 | Agent架构 | ☐ |
+| 掌握工具调用 | MCP/Function Calling | ☐ |
+| 了解记忆机制 | 短期/长期 | ☐ |
+| 理解规划推理 | CoT/ReAct | ☐ |
+| 动手实践 | 构建Agent | ☐ |
+| 了解评估方法 | 质量度量 | ☐ |
+
+> 💡 智能体是AI从"对话"走向"行动"的关键跨越。掌握Agent开发，是2026年AI工程师的核心竞争力。
+
+---
+*Last updated: 2026-07-21*
+
+## 关键技术对比
+
+| 维度 | 方案一 | 方案二 | 方案三 | 适用场景 |
+|------|--------|--------|--------|----------|
+| 架构模式 | 单体Agent | 多Agent协作 | 层级Agent | 按复杂度选择 |
+| 通信方式 | 直接调用 | 消息队列 | 事件驱动 | 按耦合度选择 |
+| 状态管理 | 内存存储 | 外部数据库 | 分布式缓存 | 按持久性选择 |
+| 错误处理 | 重试机制 | 补偿事务 | 人工介入 | 按严重性选择 |
+| 扩展策略 | 垂直扩展 | 水平扩展 | 弹性伸缩 | 按负载选择 |
+
+## 最佳实践清单
+
+| 实践 | 说明 | 优先级 |
+|------|------|--------|
+| 明确任务边界 | Agent职责单一不越界 | P0 |
+| 结构化输出 | 使用JSON Schema约束 | P0 |
+| 全链路日志 | 记录每步决策依据 | P0 |
+| 超时控制 | 每步设置合理超时 | P1 |
+| 回退机制 | 失败时优雅降级 | P1 |
+| 成本监控 | 跟踪Token消耗 | P1 |
+| 定期评估 | 持续监控质量指标 | P2 |
+| 版本管理 | 提示词/配置版本化 | P2 |
+
+## 常见问题FAQ
+
+| 问题 | 解答 |
+|------|------|
+| 如何选择合适的模型? | 根据任务复杂度：简单任务用小模型降本，复杂推理用大模型保质 |
+| Agent何时停止? | 设置明确终止条件：任务完成/达到最大步数/超时/用户中断 |
+| 如何防止幻觉? | RAG增强+事实验证+结构化输出约束+多轮确认 |
+| 多Agent如何协调? | 明确角色分工+共享状态+消息传递+冲突解决机制 |
+| 如何评估Agent质量? | 任务完成率+推理正确性+工具使用准确率+用户满意度 |
+
+## 术语速查
+
+| 术语 | 含义 |
+|------|------|
+| Agentic | 具有自主决策和行动能力的AI系统特征 |
+| Orchestration | 多组件/Agent的协调编排 |
+| Grounding | 将AI输出锚定到真实数据/事实 |
+| Tool Calling | Agent调用外部API/函数的能力 |
+| Reflection | Agent对自身输出的自我评估和改进 |
+| Planning | Agent将复杂任务分解为子步骤 |
+| Memory | Agent跨会话保持信息的机制 |
+| Guardrails | 限制Agent行为的安全护栏 |
+
+## 知识图谱关联
+
+| 关联主题 | 关系 | 参考路径 |
+|----------|------|----------|
+| Agent基础理论 | 前置知识 | 15_智能体/01_Agent基础/ |
+| 框架与工具 | 实现支撑 | 15_智能体/02_Agent框架/ |
+| 评估与测试 | 质量保障 | 15_智能体/07_Agent评估/ |
+| 协议与标准 | 互操作基础 | 15_智能体/Agent_Protocols/ |
+| 生产部署 | 运维实践 | 15_智能体/10_企业级Agent/ |
+| 记忆系统 | 核心能力 | 15_智能体/06_记忆基础设施/ |
+| 工作流编排 | 执行引擎 | 15_智能体/03_Agent工作流/ |
+| 技能扩展 | 能力增强 | 15_智能体/05_Agent技能/ |
+
+## 版本与更新记录
+
+| 版本 | 日期 | 变更内容 |
+|------|------|----------|
+| v1.0 | 2025-01 | 初始版本创建 |
+| v1.1 | 2025-06 | 补充技术对比和最佳实践 |
+| v2.0 | 2026-01 | 全面扩写深化+结构化增强 |
+| v2.1 | 2026-07 | 质量强化：补充FAQ/术语表/检查清单 |

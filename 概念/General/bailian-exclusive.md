@@ -198,7 +198,7 @@ name_zh: "百炼专属版"
 - [[概念/a-speed]] — A-Speed 加速推理
 - [[概念/apsara-stack]] — 飞天企业版
 - [[概念/model-gateway]] — 模型网关
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 

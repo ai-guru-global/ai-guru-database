@@ -15,8 +15,8 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.75
 sources:
-  - 06_强化学习/05_Robotics_Embodied_AI/VLA_Embodied_AI_2026.md
-  - 06_强化学习/05_Robotics_Embodied_AI/Humanoid_Robot_2026.md
+  - 06_强化学习/05_机器人与具身智能/VLA_Embodied_AI_2026.md
+  - 06_强化学习/05_机器人与具身智能/Humanoid_Robot_2026.md
 name_zh: "遥操作"
 ---
 # 遥操作 (Teleoperation)
@@ -57,8 +57,8 @@ name_zh: "遥操作"
 
 ## 相关阅读
 
-- [[06_强化学习/05_Robotics_Embodied_AI/VLA_Embodied_AI_2026]] — VLA 具身智能 2026
-- [[06_强化学习/05_Robotics_Embodied_AI/Humanoid_Robot_2026]] — 人形机器人 2026
+- [[06_强化学习/05_机器人与具身智能/08_VLA_Embodied_AI_2026]] — VLA 具身智能 2026
+- [[06_强化学习/05_机器人与具身智能/03_Humanoid_Robot_2026]] — 人形机器人 2026
 
 ---
 

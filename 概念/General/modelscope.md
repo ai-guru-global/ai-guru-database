@@ -151,7 +151,7 @@ swift sft --model_type qwen3-235b-a22b \
 - [[概念/model-registry]] — 模型仓库（ModelScope 是公有模型仓库）
 - [[概念/embedding-models]] — 嵌入模型（ModelScope 托管嵌入模型）
 - [[概念/lora-peft]] — LoRA/PEFT（SWIFT 微调框架）
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack（模型下载）
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack（模型下载）
 
 ---
 

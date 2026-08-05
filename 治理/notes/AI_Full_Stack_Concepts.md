@@ -797,11 +797,11 @@ name_zh: "AI 全链路 Concept 清单"
 | 文档 | 路径 | 内容 |
 |------|------|------|
 | **Agent 协议详解** | `06_强化学习/AI_Agents/Agent_Protocols_Detail.md` | MCP、A2A、UCP 完整解析 |
-| **多模态模型架构** | `05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026.md` | GPT-4.5、Gemini 2.0、Claude 4 |
-| **VLA 模型** | `06_强化学习/05_Robotics_Embodied_AI/VLA_Models_2026.md` | π0、RDT、OpenVLA 详解 |
-| **JEPA 深度解析** | `03_深度学习/07_World_Models/JEPA_Architecture_2026.md` | LeCun 世界模型完整指南 |
-| **具身智能指南** | `06_强化学习/05_Robotics_Embodied_AI/Embodied_AI_Complete_2026.md` | 人形机器人、技术栈 |
-| **Agent Harness** | `15_智能体/07_Agent_Evaluation/Agent_Harness_Complete_2026.md` | Agent 评估框架详解 |
+| **多模态模型架构** | `05_大模型/10_多模态模型/Multimodal_Architectures_2026.md` | GPT-4.5、Gemini 2.0、Claude 4 |
+| **VLA 模型** | `06_强化学习/05_机器人与具身智能/VLA_Models_2026.md` | π0、RDT、OpenVLA 详解 |
+| **JEPA 深度解析** | `03_深度学习/07_世界模型/JEPA_Architecture_2026.md` | LeCun 世界模型完整指南 |
+| **具身智能指南** | `06_强化学习/05_机器人与具身智能/Embodied_AI_Complete_2026.md` | 人形机器人、技术栈 |
+| **Agent Harness** | `15_智能体/07_Agent评估/Agent_Harness_Complete_2026.md` | Agent 评估框架详解 |
 | **Agent 未来路线图** | `06_强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030.md` | 2026-2030 技术预测 |
 | **AI 基础设施趋势** | `12_架构基建/AI_Infrastructure_2026.md` | H100/B200、SGLang、成本优化 |
 | **概念知识图谱** | `AI_Concept_Knowledge_Graph.md` | 概念依赖关系与学习路径 |
@@ -827,4 +827,4 @@ name_zh: "AI 全链路 Concept 清单"
 
 - [[治理/notes/AI_Concept_Knowledge_Graph]] — AI 概念知识图谱 (共享: drafts, ideas, notes, observations)
 - [[治理/notes/KNOWLEDGE_BASE]] — 🧠 AI Guru Knowledge Base (共享: drafts, ideas, notes, observations)
-- [[治理/notes/README_for_dummy.md|README_for_dummy]]
+- [[治理/notes/README|README_for_dummy]]

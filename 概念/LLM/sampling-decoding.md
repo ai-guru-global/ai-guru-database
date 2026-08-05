@@ -210,4 +210,4 @@ print(tokenizer.decode(outputs[0]))
 - [[概念/LLM/top-p-sampling|Top-p 采样]]
 - [[概念/LLM/temperature-scaling|Temperature 缩放]]
 - [[概念/LLM/repetition-penalty|重复惩罚]]
-- [[05_大模型/02_Sequence_Models/Text_Generation_Decoding_Strategies|解码策略详解]]
+- [[05_大模型/02_序列模型/Text_Generation_Decoding_Strategies|解码策略详解]]

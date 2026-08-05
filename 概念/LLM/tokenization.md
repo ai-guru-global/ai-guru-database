@@ -10,7 +10,7 @@ relationships:
   - target: "概念/transformer-architecture"
     type: builds_on
 sources:
-  - 05_大模型/05_LLM_Architectures
+  - 05_大模型/05_LLM架构
   - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Tokenization 将文本切分为模型可处理的 token 序列。主流方案为 BPE（GPT系列）、SentencePiece（多语言）和 Unigram。Vocab 大小直接影响模型质量与推理效率。"
 provenance:
@@ -195,7 +195,7 @@ Google 的统一 tokenization 框架，支持 BPE 和 Unigram：
 - [[概念/information-theory]] — 信息论（编码定理与 BPE 的关系）
 - [[概念/llm-architectures]] — LLM 架构
 - [[概念/transformer-architecture]] — Transformer 架构
-- [[05_大模型/05_LLM_Architectures]] — LLM 架构深度解析
+- [[05_大模型/05_LLM架构]] — LLM 架构深度解析
 
 ---
 

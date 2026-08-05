@@ -100,7 +100,7 @@ EOF
 - [[概念/apsara-stack|飞天企业版 Apsara Stack]] — 阿里云专有云
 - [[概念/containerd|containerd]] — 容器运行时
 - [[概念/storage]] — AI 存储基础设施
-- [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[12_架构基建/02_架构概览/02_AI_基础设施_2026]] — AI 基础设施 2026
 
 ---
 
@@ -155,7 +155,7 @@ EOF
 - [[概念/K8s/persistent-volume|Persistent Volume]] — K8s 存储
 - [[概念/K8s/gpu-operator|GPU Operator]] — GPU 管理
 - [[概念/MLOps/data-versioning|数据版本]] — 数据管理
-- [[12_架构基建/09_Storage/AI_Storage_Patterns|AI 存储模式]]
+- [[12_架构基建/09_存储/01_AI_存储_模式|AI 存储模式]]
 
 > ℹ️ StorageClass 是 K8s 存储抽象，2026年 AI 场景需根据工作负载选择 NVMe/并行文件系统/对象存储对应 StorageClass。
 
@@ -194,7 +194,7 @@ EOF
 - [[概念/K8s/persistent-volume|Persistent Volume]] — K8s 持久化存储
 - [[概念/K8s/gpu-operator|GPU Operator]] — GPU 管理
 - [[概念/MLOps/data-versioning|数据版本]] — 数据管理
-- [[12_架构基建/09_Storage/AI_Storage_Patterns|AI 存储模式]]
+- [[12_架构基建/09_存储/01_AI_存储_模式|AI 存储模式]]
 
 > ℹ️ AI 工作负载 StorageClass 选型：训练数据用 Lustre/NVMe，Checkpoint 用 NVMe， 模型归档用 S3，避免用通用 NFS 承载高 I/O 场景。
 

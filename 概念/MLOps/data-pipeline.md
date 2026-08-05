@@ -51,7 +51,7 @@ name_zh: "数据流水线"
 - [[概念/data-validation|Data Validation]]
 - [[概念/feature-store|Feature Store]]
 - [[概念/dvc|DVC]]
-- [[11_模型运维/02_Data_Engineering/Data_Pipeline_for_ML|ML 数据流水线]]
+- [[11_模型运维/02_数据工程/Data_Pipeline_for_ML|ML 数据流水线]]
 
 ---
 

@@ -49,7 +49,7 @@ sources:
 2. **死链重写**：无法解析的链接自动转为纯文本显示文本（可通过 `--no-rewrite` 禁用），确保智能体永不跟随死链。
 3. **BFS 可达性分析**：从入口页出发，沿 wikilink 计算所有可达页面，标记不可达的 Core 页为孤儿。
 4. **验证断言**：导出后二次扫描磁盘文件，强制重写残余死链，**最终断言零断链**——这是硬保证。
-5. **清单生成**：自动生成 `corpus_manifest.json`、`index.md`、`治理/hot.md`、`README.md`。
+5. **清单生成**：自动生成 `corpus_manifest.json`、`索引.md`、`治理/hot.md`、`README.md`。
 
 ---
 
@@ -219,8 +219,8 @@ def extract_wikilinks(text):
 ```
 
 **处理逻辑**：
-- `[[target|alias]]` → 取 `target`（split `|`）
-- `[[target#heading]]` → 取 `target`（split `#`）
+- `[[概念/Training/target-network|alias]]` → 取 `target`（split `|`）
+- `[[概念/Training/target-network#heading]]` → 取 `target`（split `#`）
 - 跳过空目标和外部 URL（`http` 开头）
 
 ### 4.3 鲁棒 Wikilink 解析器（5 级回退）
@@ -234,7 +234,7 @@ flowchart TD
     START[resolve_target] --> NORM[_norm<br/>规范化路径]
     NORM --> L1{Level 1<br/>精确路径匹配?}
     L1 -->|命中| OK[返回路径]
-    L1 -->|未命中| L2{Level 2<br/>目录 hub?<br/>dir/index.md<br/>dir/README.md}
+    L1 -->|未命中| L2{Level 2<br/>目录 hub?<br/>dir/索引.md<br/>dir/README.md}
     L2 -->|命中| OK
     L2 -->|未命中| L3{Level 3<br/>相对源文件上溯?}
     L3 -->|命中| OK
@@ -267,19 +267,19 @@ cand = raw if raw.endswith(".md") else raw + ".md"
 # 尝试: cand, cand 空格→下划线, cand 下划线→空格
 ```
 
-例如 `[[K8s Pod]]` 会尝试 `K8s Pod.md`、`K8s_Pod.md`、`K8s Pod.md`。
+例如 `[[13_运维/04_问题排查/03_diagnosis_k8s_pod_failure]]` 会尝试 `K8s Pod.md`、`K8s_Pod.md`、`K8s Pod.md`。
 
 #### Level 2：目录 hub
 
-如果 target 是目录名，尝试目录下的 `index.md` 和 `README.md`：
+如果 target 是目录名，尝试目录下的 `索引.md` 和 `README.md`：
 
 ```python
 for d in {raw, raw.replace(" ", "_"), raw.replace("_", " ")}:
-    for hub in ("index.md", "README.md"):
+    for hub in ("索引.md", "README.md"):
         r = try_path(f"{d}/{hub}")
 ```
 
-例如 `[[12_Architecture_Infrastructure]]` → `12_Architecture_Infrastructure/README.md`。
+例如 `[[概念/LLM/llm-infrastructure]]` → `12_Architecture_Infrastructure/README.md`。
 
 #### Level 3：相对源文件上溯
 
@@ -346,7 +346,7 @@ graph LR
 **算法**：标准广度优先搜索（BFS），从 `ENTRY` 出发，对每个页面的 wikilinks 调用 `resolve_target` 解析，将解析到的已导出页面加入访问集。
 
 **用途**：
-- 在 `index.md` 中用 🔒 标记不可达页面
+- 在 `索引.md` 中用 🔒 标记不可达页面
 - 在 `治理/hot.md` 中列出不可达的 Core 页（需手动链入）
 - 在 `corpus_manifest.json` 中每页记录 `reachable_from_entry: true/false`
 
@@ -469,7 +469,7 @@ flowchart TD
 第一轮重写在 `export_files` 中进行，但存在以下风险：
 1. 源文件在导出过程中被修改（竞态条件）
 2. 解析器可能有边界 case 遗漏
-3. 生成文件（`index.md`、`治理/hot.md`）中的链接可能引用了不存在的页面
+3. 生成文件（`索引.md`、`治理/hot.md`）中的链接可能引用了不存在的页面
 
 `verify_output` 从磁盘读取**ground truth**（实际写入的文件），独立计算可解析集（包含所有已导出页面），确保万无一失。
 
@@ -594,7 +594,7 @@ if args.clean and output_dir.resolve() in (root.resolve(), *root.resolve().paren
 }
 ```
 
-### 6.2 index.md
+### 6.2 索引.md
 
 按目录组织的全量页面目录：
 - 每个顶层目录一个 `##` 章节

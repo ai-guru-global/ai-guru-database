@@ -11,7 +11,7 @@ relationships:
     type: related_to
 sources:
   - 12_架构基建/AI_Stack_Deep_Dive.md
-  - 02_机器学习/04_Ensemble_Learning/
+  - 02_机器学习/04_集成学习/
 summary: "知识蒸馏将大模型的暗知识（soft labels）迁移到小模型，以更低成本获得接近大模型的效果。DeepSeek-R1 通过蒸馏产生了 7B/14B/32B/70B 全系列推理模型。"
 provenance:
   extracted: 0.50
@@ -150,7 +150,7 @@ q_i = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)}
 - [[概念/lora-peft]] — LoRA/PEFT（蒸馏后的微调方案）
 - [[概念/reasoning-models]] — 推理模型（DeepSeek-R1 蒸馏链）
 - [[概念/pruning]] — 剪枝
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack
 
 ---
 

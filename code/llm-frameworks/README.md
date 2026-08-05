@@ -25,11 +25,11 @@
 
 ## 引用本归档的核心课题文件
 
-- 分布式训练：`07_模型训练/04_Distributed_Training/` 相关文件
-- 推理引擎：`10_部署推理/02_Inference_Engines/` 相关文件
-- 微调/PEFT：[[05_大模型/07_Fine_tuning_Techniques/PEFT_2026]]、[[05_大模型/07_Fine_tuning_Techniques/LLaMA_Factory_Deep_Dive]]、[[05_大模型/07_Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]]
-- 对齐/RLHF：[[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide]]、[[07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods]]、[[07_模型训练/06_Alignment/RLHF_at_Scale_2026]]
-- 压缩/量化：[[10_部署推理/05_Quantization/Quantization_Techniques_2026]]、[[10_部署推理/05_Quantization/HF_Quantization_Ecosystem]]、[[10_部署推理/03_Inference_Optimization/Model_Compression]]、[[07_模型训练/05_Compression/Model_Compression_Complete_Guide]]
+- 分布式训练：`07_模型训练/04_分布式训练/` 相关文件
+- 推理引擎：`10_部署推理/02_推理引擎/` 相关文件
+- 微调/PEFT：[[05_大模型/07_微调技术/PEFT_2026]]、[[05_大模型/07_微调技术/LLaMA_Factory_Deep_Dive]]、[[05_大模型/07_微调技术/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]]
+- 对齐/RLHF：[[07_模型训练/06_对齐研究/TRL_RLHF_DPO_Guide]]、[[07_模型训练/06_对齐研究/GRPO_and_New_Alignment_Methods]]、[[07_模型训练/06_对齐研究/RLHF_at_Scale_2026]]
+- 压缩/量化：[[10_部署推理/04_模型量化/Quantization_Techniques_2026]]、[[10_部署推理/04_模型量化/HF_Quantization_Ecosystem]]、[[10_部署推理/03_推理优化/Model_Compression]]、[[07_模型训练/05_模型压缩/Model_Compression_Complete_Guide]]
 - 概念卡：`概念/Training/` 下 peft、lora-peft、qlora、sft、rlhf、ppo、dpo、grpo、awq、smoothquant、nf4、model-compression 等
 
 ## 归档约定

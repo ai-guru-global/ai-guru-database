@@ -10,7 +10,7 @@ The following models are among the most commonly used with LLM Compressor: Llama
 
       DeepSeek V4 with HCA, CSA, and mHC, quantized to FP8 + NVFP4
 
-      [:octicons-arrow-right-24: DeepSeek V4](deepseek-v4/index.md)
+      [:octicons-arrow-right-24: DeepSeek V4](deepseek-v4/索引.md)
 
 
   - **Qwen3.5**
@@ -19,7 +19,7 @@ The following models are among the most commonly used with LLM Compressor: Llama
 
       Qwen3.5 vision-language and sparse MoE models.
 
-      [:octicons-arrow-right-24: Qwen3.5](qwen3.5/index.md)
+      [:octicons-arrow-right-24: Qwen3.5](qwen3.5/索引.md)
 
   - **Qwen3.6**
 
@@ -27,7 +27,7 @@ The following models are among the most commonly used with LLM Compressor: Llama
 
       Qwen3.6-35B-A3B sparse MoE model.
 
-      [:octicons-arrow-right-24: Qwen3.6](qwen3.6/index.md)
+      [:octicons-arrow-right-24: Qwen3.6](qwen3.6/索引.md)
 
   - **Kimi-K2.6**
 
@@ -35,7 +35,7 @@ The following models are among the most commonly used with LLM Compressor: Llama
 
       Moonshot AI's latest multimodal agentic model.
 
-      [:octicons-arrow-right-24: Kimi-K2.6](kimi-k26/index.md)
+      [:octicons-arrow-right-24: Kimi-K2.6](kimi-k26/索引.md)
 
   - **Gemma 4**
 
@@ -43,7 +43,7 @@ The following models are among the most commonly used with LLM Compressor: Llama
 
       Google's latest multimodal model.
 
-      [:octicons-arrow-right-24: Gemma 4](gemma4/index.md)
+      [:octicons-arrow-right-24: Gemma 4](gemma4/索引.md)
 
   - **Llama 4**
 
@@ -51,7 +51,7 @@ The following models are among the most commonly used with LLM Compressor: Llama
 
       Meta's Llama 4 Scout multimodal model.
 
-      [:octicons-arrow-right-24: Llama 4](llama4/index.md)
+      [:octicons-arrow-right-24: Llama 4](llama4/索引.md)
 
   - **Mistral Large 3**
 
@@ -59,6 +59,6 @@ The following models are among the most commonly used with LLM Compressor: Llama
 
       Mistral's 675B parameter model.
 
-      [:octicons-arrow-right-24: Mistral Large 3](mistral-large-3/index.md)
+      [:octicons-arrow-right-24: Mistral Large 3](mistral-large-3/索引.md)
 
 </div>

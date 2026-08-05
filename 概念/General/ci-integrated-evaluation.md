@@ -12,9 +12,9 @@ relationships:
   - target: "概念/llm-production-pipeline"
     type: part_of
 sources:
-  - 08_模型评估/05_Automation/Evaluation_Automation_2026.md
-  - 11_模型运维/13_Evaluation/LLM_Evaluation_Pipeline.md
-  - 11_模型运维/06_CI_CD/CI_CD_Pipeline_AI_2026.md
+  - 08_模型评估/05_自动化评估/Evaluation_Automation_2026.md
+  - 11_模型运维/13_运维评估/LLM_Evaluation_Pipeline.md
+  - 11_模型运维/06_持续集成部署/CI_CD_Pipeline_AI_2026.md
 summary: "CI 集成评估是把模型评估嵌入持续集成流水线。每次代码或模型变更都自动跑一组基准测试，像软件项目的单元测试一样，确保新版本不会在某些能力上‘开倒车’。"
 provenance:
   extracted: 0.75
@@ -111,7 +111,7 @@ CI 集成评估让这些问题变成流水线的一部分。
 - [[概念/ab-testing-framework]] — A/B 测试框架
 - [[概念/llm-production-pipeline]] — LLM 生产流水线
 - [[08_模型评估/Evaluation_Automation_2026]] — 评估自动化 2026
-- [[11_模型运维/13_Evaluation/LLM_Evaluation_Pipeline]] — LLM 评估流水线
+- [[11_模型运维/13_运维评估/03_LLM评估_流水线]] — LLM 评估流水线
 
 ---
 

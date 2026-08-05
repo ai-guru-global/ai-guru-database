@@ -15,7 +15,7 @@ name_zh: "RAG 检索增强生成速查表"
 > 中文简称：RAG 检索增强生成速查表
 
 > **核心洞察**：RAG 从 2020 至今已完成 **Naive → Advanced → Modular → Agentic** 四代演进；2026 年企业级 RAG 的关键不是"做出来"，而是"做得精（召回率 ≥ 90%）+ 稳定运行（P99 < 3s）+ 成本可控（< $0.01/query）"。
-> 详见 [[14_RAG系统]] · [[RAG_Advanced_2026]] · [[RAG_Systems|14_RAG系统/RAG_Systems]] · [[14_RAG系统/04_Advanced_RAG/index|Advanced_RAG]]
+> 详见 [[14_RAG系统]] · [[14_RAG系统/04_高级RAG/12_RAG_高级_2026]] · [[概念/RAG/rag-systems|14_RAG系统/RAG_Systems]] · [[14_RAG系统/04_高级RAG/index|Advanced_RAG]]
 
 ## RAG 四代架构演进
 
@@ -235,4 +235,4 @@ def self_rag(query):
 
 ---
 
-**参见**：[[14_RAG系统]] · [[14_RAG系统/04_Advanced_RAG/index|Advanced_RAG]] · [[RAG_Advanced_2026]] · [[Embedding_Models_Guide]] · [[14_RAG系统/06_RAG_Frameworks/index|RAG_Frameworks]] · [[Agentic_RAG_Guide]]
+**参见**：[[14_RAG系统]] · [[14_RAG系统/04_高级RAG/index|Advanced_RAG]] · [[14_RAG系统/04_高级RAG/12_RAG_高级_2026]] · [[概念/RAG/embedding-models]] · [[14_RAG系统/06_RAG框架/index|RAG_Frameworks]] · [[14_RAG系统/04_高级RAG/02_Agentic_RAG_指南]]

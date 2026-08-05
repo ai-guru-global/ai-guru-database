@@ -160,8 +160,8 @@ GPU 共享模式决策树
 - [[概念/dra]] — DRA 动态资源分配（MIG 切片的属性化调度）
 - [[概念/gpu-operator]] — NVIDIA GPU Operator（MIG 经其动态管理）
 - [[概念/hami]] — HAMi（Kubernetes 异构 GPU 虚拟化中间件）
-- [[12_架构基建/03_AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack（GPU 共享模式）
+- [[12_架构基建/03_AI技术栈/11_HAMi_深入分析]] — HAMi 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack（GPU 共享模式）
 
 ---
 

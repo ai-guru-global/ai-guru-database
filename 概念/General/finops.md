@@ -53,7 +53,7 @@ Inform → Optimize → Operate
 
 - [[概念/cloud-cost|Cloud Cost]]
 - [[概念/gpu-sharing|GPU Sharing]]
-- [[13_运维/05_Cost_Management/FinOps_for_AI|AI 场景 FinOps]]
+- [[13_运维/05_成本管理/02_FinOps_for_AI|AI 场景 FinOps]]
 
 ---
 

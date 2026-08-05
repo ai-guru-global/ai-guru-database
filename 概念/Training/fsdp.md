@@ -12,7 +12,7 @@ relationships:
   - target: "概念/pytorch"
     type: implements
 sources:
-  - 07_模型训练/04_Distributed_Training/FSDP_Deep_Dive.md
+  - 07_模型训练/04_分布式训练/FSDP_Deep_Dive.md
 summary: "FSDP 是 PyTorch 原生的全分片数据并行框架，相当于 PyTorch 内置的 ZeRO-3，通过分片参数、梯度和优化器状态到多 GPU，实现大模型训练。"
 provenance:
   extracted: 0.8
@@ -105,7 +105,7 @@ name_zh: "全分片数据并行"
 
 ## Related
 
-- [[07_模型训练/04_Distributed_Training/FSDP_Deep_Dive]] — FSDP 深度解析
+- [[07_模型训练/04_分布式训练/05_FSDP_深入分析]] — FSDP 深度解析
 - [[概念/distributed-training]] — 分布式训练
 - [[概念/deepspeed]] — DeepSpeed
 - [[概念/megatron-lm]] — Megatron-LM
@@ -215,4 +215,4 @@ model = FSDP(model, **fsdp_config)
 
 - 工程落地经 HuggingFace Accelerate：`FullyShardedDataParallelPlugin`（`utils/dataclasses.py`）的 `fsdp_version` 字段统一屏蔽 FSDP1（类包装）与 FSDP2（`fully_shard` 函数式 + DTensor）。
 - FSDP2 接管流程见 `fsdp2_prepare_model`（`utils/fsdp_utils.py`）：自动包装→DeviceMesh 接入（可组合 TP/CP）→量化参数兼容→fp32 主权重上提。
-- 源码归档：`code/llm-frameworks/accelerate-v1.14.0/`，详见 [[07_模型训练/04_Distributed_Training/FSDP_Deep_Dive|FSDP 深度解析]] 第 11 节。
+- 源码归档：`code/llm-frameworks/accelerate-v1.14.0/`，详见 [[07_模型训练/04_分布式训练/05_FSDP_深入分析|FSDP 深度解析]] 第 11 节。

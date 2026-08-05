@@ -59,7 +59,7 @@ sources:
 
 **文件**：`工具/check_links.py`（303 行）
 
-**功能概述**：比 `wiki_health.py` 更精细的链接检查器。同时检测 Obsidian wikilink `[[target]]` 和 Markdown 链接 `[text](path)`，将断链分为 6 个语义类别，支持 JSON 输出供下游脚本消费。
+**功能概述**：比 `wiki_health.py` 更精细的链接检查器。同时检测 Obsidian wikilink `[[概念/Training/target-network]]` 和 Markdown 链接 `[text](path)`，将断链分为 6 个语义类别，支持 JSON 输出供下游脚本消费。
 
 **断链分类体系**（`check_links.py:128-169`）：
 
@@ -68,7 +68,7 @@ sources:
 | `missing_concept` | `概念/X` 但文件不存在 | `[[概念/never-created]]` |
 | `missing_file` | 常规路径但文件不存在 | `[[some/missing/page]]` |
 | `stale_path` | 引用已搬迁的旧路径 | `[[_meta/_synthesis-old]]` |
-| `dir_reference` | 引用章节目录 | `[[12_Architecture_Infrastructure]]` |
+| `dir_reference` | 引用章节目录 | `[[概念/LLM/llm-infrastructure]]` |
 | `missing_synthesis` | `概念/synthesis/X` 但不存在 | `[[概念/synthesis/missing]]` |
 | `missing_reference` | `来源/X` 但不存在 | `[[来源/missing]]` |
 
@@ -553,7 +553,7 @@ python3 工具/reorganize_subdirs.py             # 执行
 ```python
 RENAME_MAP = {
     "00_AI_Introduction":          "AI入门",
-    "01_Fundamentals":             "数学基础",
+    "01_基础入门":             "数学基础",
     "02_Machine_Learning":         "机器学习",
     "03_Deep_Learning":            "深度学习",
     "04_Computer_Vision":          "计算机视觉",

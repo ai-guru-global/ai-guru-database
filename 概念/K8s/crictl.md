@@ -114,7 +114,7 @@ AI Stack 容器工具层级
 - [[概念/kubectl]] — kubectl Kubernetes CLI
 - [[概念/containerd]] — containerd 容器运行时
 - [[概念/cri]] — CRI 容器运行时接口
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 

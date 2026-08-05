@@ -145,7 +145,7 @@ LLaMA 系列均采用以下设计：
 
 ## See Also (深度专题)
 
-- [[../../05_大模型/14_Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 深度解析]] — LLaMA 系列架构演进、GQA 优化与开源生态影响
+- [[05_大模型/14_全球LLM生态/07_Meta_LLaMA_深入分析|Meta LLaMA 深度解析]] — LLaMA 系列架构演进、GQA 优化与开源生态影响
 
 ---
 

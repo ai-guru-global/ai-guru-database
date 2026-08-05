@@ -283,7 +283,7 @@ EXPLICIT_MOVES = {
     "12_架构基建/AI_SRE_index.md":
         "13_运维/02_SRE_Reliability/AI_SRE_index.md",
     "15_智能体/Gradio_Deep_Dive.md":
-        "10_部署推理/02_Inference_Engines/Gradio_Deep_Dive.md",
+        "10_部署推理/02_推理引擎/Gradio_Deep_Dive.md",
     "18_行业应用/GenAI_L10_Building_Low_Code_AI_Applications.md":
         "16_编程/05_Tools/GenAI_L10_Building_Low_Code_AI_Applications.md",
     # 重命名（PascalCase 规范化）

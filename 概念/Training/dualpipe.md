@@ -113,7 +113,7 @@ DualPipe 是 DeepSeek 开源训练基础设施的重要组件：
 - [[概念/megatron-lm]] — Megatron-LM
 - [[概念/deepgemm]] — DeepGEMM FP8 算子库
 - [[概念/pipeline-parallelism]] — 流水线并行
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 

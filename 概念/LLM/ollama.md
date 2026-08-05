@@ -227,7 +227,7 @@ AI Stack 模型开发流程
 - [[概念/llama-cpp]] — llama.cpp 推理引擎
 - [[概念/model-serving]] — 模型服务
 - [[概念/a-speed]] — A-Speed 加速推理
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 

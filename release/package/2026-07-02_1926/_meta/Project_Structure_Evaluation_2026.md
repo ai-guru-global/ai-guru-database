@@ -72,7 +72,7 @@ sources: []
 
 | 有 Nutshell | 无 Nutshell（关键缺失） |
 |------------|----------------------|
-| 大模型/LLM_Architectures | **01_Fundamentals**（无） |
+| 大模型/LLM_Architectures | **01_基础入门**（无） |
 | 大模型/Prompt_Engineering | **02_Machine_Learning**（无） |
 | 06_RL/AI_Agents | **03_Deep_Learning**（无） |
 | 07_Model_Training | **05_Computer_Vision**（无） |
@@ -291,7 +291,7 @@ ROADMAP.md
 | 18_Cloud_Ops_Agent | 386 | 🟢 良好 |
 | 00_AI_Introduction | 354 | 🟡 入门章节代码应精简 |
 | 03_Deep_Learning | 308 | 🟢 良好 |
-| 01_Fundamentals | 306 | 🟢 基础章节适量 |
+| 01_基础入门 | 306 | 🟢 基础章节适量 |
 | 17_AI_Coding | 300 | 🟢 良好 |
 | **07_Model_Training** | **~50** | 🔴 **严重不足** |
 | **08_Model_Evaluation** | **~80** | 🔴 **严重不足** |
@@ -359,7 +359,7 @@ ROADMAP.md
 | 06_Reinforcement_Learning | 85 | 75 | 60 | 75 | **74** | 🟢 良好 |
 | 15_Testing | 80 | 70 | 65 | 75 | **72** | 🟢 良好 |
 | 19_Ethics_Safety | 70 | 75 | 55 | 70 | **70** | 🟡 合格 |
-| 01_Fundamentals | 80 | 70 | 60 | 65 | **69** | 🟡 合格 |
+| 01_基础入门 | 80 | 70 | 60 | 65 | **69** | 🟡 合格 |
 | 03_Deep_Learning | 80 | 70 | 60 | 65 | **69** | 🟡 合格 |
 | 00_AI_Introduction | 90 | 70 | 30 | 70 | **68** | 🟡 合格 |
 | 14_AI_Gateway | 80 | 65 | 65 | 65 | **68** | 🟡 合格 |

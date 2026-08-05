@@ -17,11 +17,11 @@ relationships:
     type: related_to
   - target: "概念/Inference/quantization"
     type: related_to
-  - target: "10_部署推理/04_Inference_Performance/README"
+  - target: "10_部署推理/03_推理优化/README"
     type: deepened_by
 sources:
-  - 10_部署推理/04_Inference_Performance/README.md
-  - 10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals.md
+  - 10_部署推理/03_推理优化/README.md
+  - 10_部署推理/03_推理优化/Inference_Performance_Fundamentals.md
 summary: LLM 推理性能工程关注 TTFT、TPOT、吞吐、QPS 等核心指标，通过计算优化、KV Cache 优化、调度优化和系统架构优化，降低延迟并提高资源利用率。
 lifecycle: draft
 tier: core
@@ -138,7 +138,7 @@ Decode:  每次生成 1 个 token → 计算量小但要重复 N 次
 - [[概念/Inference/speculative-decoding|投机解码]]
 - [[概念/Inference/request-scheduling|请求调度]]
 - [[概念/Inference/quantization|量化]]
-- [[10_部署推理/04_Inference_Performance/README|推理性能专题]]
+- [[10_部署推理/03_推理优化/README|推理性能专题]]
 
 ## 推理性能优化全景
 

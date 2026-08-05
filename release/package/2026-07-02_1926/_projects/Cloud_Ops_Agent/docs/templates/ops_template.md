@@ -25,9 +25,9 @@ sources: []
 
 ## 2. 交叉引用
 
-- [架构设计](../architecture/index.md)
-- [研发指南](../development/index.md)
-- [测试指南](../testing/index.md)
+- [架构设计](../architecture/索引.md)
+- [研发指南](../development/索引.md)
+- [测试指南](../testing/索引.md)
 
 ---
 

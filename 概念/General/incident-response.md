@@ -85,7 +85,7 @@ Incident Response 是系统发生故障时，按预定流程进行检测、响�
 - [[概念/sre|SRE]]
 - [[概念/slo|SLO]]
 - [[概念/General/error-budget|Error Budget]]
-- [[13_运维/03_Incident_Response/AI_Incident_Response_Framework|AI 事故响应框架]]
+- [[13_运维/03_故障应急/AI_Incident_Response_Framework|AI 事故响应框架]]
 
 ---
 

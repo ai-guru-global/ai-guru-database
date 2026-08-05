@@ -92,9 +92,9 @@ name_zh: "异构 GPU 集群"
 - [[概念/cdi]] — CDI 容器设备接口（异构芯片统一接入容器的标准）
 - [[概念/dra]] — DRA（异构设备的属性化分配）
 - [[概念/hami]] — HAMi（异构 GPU 统一虚拟化与调度）
-- [[12_架构基建/03_AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
-- [[12_架构基建/AI_Stack_Deep_Dive]] — 阿里云 AI Stack
-- [[01_数学基础/10_AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析
+- [[12_架构基建/03_AI技术栈/11_HAMi_深入分析]] — HAMi 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — 阿里云 AI Stack
+- [[01_数学基础/10_AI硬件/03_Chinese_AI_Chips_深入分析]] — 国产 AI 芯片12家厂商深度解析
 
 ---
 

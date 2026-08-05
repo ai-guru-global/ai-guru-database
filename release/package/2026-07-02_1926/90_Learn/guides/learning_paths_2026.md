@@ -187,7 +187,7 @@ flowchart LR
 
 **Phase 3: 工程化（32-44h）**
 
-- **Ch.07** — [Training nutshell](../../模型训练/Model-Training-in-nutshell.md) → [分布式训练](../../模型训练/Distributed_Training/index.md) → [混合精度](../../模型训练/Optimization/Mixed_Precision_Training.md)
+- **Ch.07** — [Training nutshell](../../模型训练/Model-Training-in-nutshell.md) → [分布式训练](../../模型训练/Distributed_Training/索引.md) → [混合精度](../../模型训练/Optimization/Mixed_Precision_Training.md)
 - **Ch.08** — [评估 for_dummy](../../模型评估/Model_Evaluation_for_dummy.md) → [主文档](../../模型评估/Model_Evaluation.md) → [A/B 测试](../../测试/AB_Testing_AI_Systems.md)
 - **Ch.09** — [部署 for_dummy](../../部署推理/Deployment_Inference_for_dummy.md) → [Inference nutshell](../../部署推理/Inference-in-nutshell.md) → [推理引擎选型指南](../../部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) → [vLLM](../../部署推理/Inference_Engines/vLLM_Deep_Dive.md) → [推理性能基础](../../部署推理/Inference_Performance/Inference_Performance_Fundamentals.md) → 实践: Docker + FastAPI
 - **Key Skills**: FSDP/混合精度、Precision/Recall/F1/AUC、vLLM、推理引擎选型、容器化部署
@@ -241,12 +241,12 @@ flowchart LR
 **Phase 1: LLM 核心（24-32h）**
 
 - **Ch.04** — [LLM nutshell](../../大模型/LLM_Architectures/LLM-Basics-in-nutshell.md) → [Transformer](../../大模型/Transformer_Revolution/Transformer_Revolution.md) → [LLM 架构](../../大模型/LLM_Architectures/LLM_Architectures.md) → [Prompt Engineering](../../大模型/Prompt_Engineering/Prompt_Engineering.md) → [微调 LoRA/QLoRA](../../大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md) → 选读: [推理模型 2026](../../大模型/LLM_Architectures/Reasoning_Models_2026.md) | [中国大模型](../../大模型/README.md)
-- **Ch.07** — [Training nutshell](../../模型训练/Model-Training-in-nutshell.md) → [分布式训练](../../模型训练/Distributed_Training/index.md) → 实践: HuggingFace PEFT LoRA 微调
+- **Ch.07** — [Training nutshell](../../模型训练/Model-Training-in-nutshell.md) → [分布式训练](../../模型训练/Distributed_Training/索引.md) → 实践: HuggingFace PEFT LoRA 微调
 - **Key Skills**: Transformer/Attention、Prompt Engineering、LoRA 微调、PEFT
 
 **Phase 2: 应用构建（22-30h）**
 
-- **Ch.11** — [RAG for_dummy](../../RAG系统/RAG_Systems_for_dummy.md) → [RAG nutshell](../../RAG系统/RAG-in-nutshell.md) → [主文档](../../RAG系统/RAG_Systems.md) → [向量数据库](../../RAG系统/Vector_Databases/index.md) → 实践: LangChain + Qdrant 知识库问答
+- **Ch.11** — [RAG for_dummy](../../RAG系统/RAG_Systems_for_dummy.md) → [RAG nutshell](../../RAG系统/RAG-in-nutshell.md) → [主文档](../../RAG系统/RAG_Systems.md) → [向量数据库](../../RAG系统/Vector_Databases/索引.md) → 实践: LangChain + Qdrant 知识库问答
 - **Ch.13** — [Agent nutshell](../../Agent/Agent_Workflow/Workflow-in-nutshell.md) → [Agent Harness](../../Agent/README.md) → [LangGraph](../../Agent/Agent_Frameworks/LangChain_Deep_Dive.md) → [Agent 记忆](../../Agent/README.md) → 实践: 多步推理 + 工具调用 Agent
 - **Key Skills**: 文档切分、Embedding、向量检索、Reranking、LangGraph、MCP 协议、工具编排
 
@@ -309,7 +309,7 @@ flowchart LR
 **Phase 2: 技术理解（7-11h）**
 
 - **Ch.04 (速览)** — [LLM nutshell](../../大模型/LLM_Architectures/LLM-Basics-in-nutshell.md) → [LLM for_dummy](../../大模型/LLM_Architectures/LLM_Architectures_for_dummy.md) → [Prompt for_dummy](../../大模型/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
-- **Ch.08 (速览)** — [评估 for_dummy](../../模型评估/Model_Evaluation_for_dummy.md) → [A/B 测试](../../测试/AB_Testing_AI_Systems.md) → [Benchmark](../../模型评估/Benchmarks/index.md)
+- **Ch.08 (速览)** — [评估 for_dummy](../../模型评估/Model_Evaluation_for_dummy.md) → [A/B 测试](../../测试/AB_Testing_AI_Systems.md) → [Benchmark](../../模型评估/Benchmarks/索引.md)
 - **Key Skills**: LLM 能力边界、Token 与成本、Precision/Recall 业务权衡、Benchmark 解读
 
 **Phase 3: 责任 AI（6-10h）**
@@ -451,7 +451,7 @@ flowchart LR
 
 **Phase 3: 研究实践（26-36h）**
 
-- **Ch.07** — [分布式训练](../../模型训练/Distributed_Training/index.md) → [混合精度](../../模型训练/Optimization/Mixed_Precision_Training.md) → 实践: 复现一篇论文训练实验 (6h)
+- **Ch.07** — [分布式训练](../../模型训练/Distributed_Training/索引.md) → [混合精度](../../模型训练/Optimization/Mixed_Precision_Training.md) → 实践: 复现一篇论文训练实验 (6h)
 - **Ch.06** — [RL for_dummy](../../强化学习/RL_Foundations/RL_Foundations_for_dummy.md) → [RL 基础](../../强化学习/RL_Foundations/RL_Foundations.md) → [深度 RL](../../强化学习/Deep_RL/Deep_RL.md) → [AI Agent](../../Agent/Agent_Foundations/AI_Agents.md)
 - **Key Skills**: 3D 并行、训练稳定性、MDP/Bellman、PPO、RLHF、Agent 推理与规划
 

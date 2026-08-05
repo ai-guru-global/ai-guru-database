@@ -145,7 +145,7 @@ AI Stack 安全分层
 
 - [[概念/ai-architecture]] — AI 架构（安全架构）
 - [[概念/model-gateway]] — 模型网关（API-Key 鉴权）
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack（RBAC 实现）
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack（RBAC 实现）
 - [[概念/model-serving]] — 模型服务（多租户安全）
 
 ---

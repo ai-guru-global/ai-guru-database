@@ -13,7 +13,7 @@ relationships:
     type: detailed_by
 sources:
   - 12_架构基建/AI_Stack_Deep_Dive.md
-  - 07_模型训练/03_Optimization/Mixed_Precision_Training.md
+  - 07_模型训练/03_训练优化/Mixed_Precision_Training.md
 summary: "混合精度在训练中使用 BF16/FP16 加速计算并保持 FP32 主权重，显存减半、速度翻倍。2026年 FP8 训练成为新前沿，H100/MI300X 原生支持 FP8 Tensor Core。"
 provenance:
   extracted: 0.55
@@ -166,8 +166,8 @@ AMP 训练流程:
 - [[概念/distributed-parallelism]] — 分布式并行（训练加速策略）
 - [[概念/kv-cache]] — KV Cache（推理中的精度选择）
 - [[概念/fp8]] — FP8 精度格式
-- [[07_模型训练/03_Optimization/Mixed_Precision_Training]] — 混合精度训练详解
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack
+- [[07_模型训练/03_训练优化/04_Mixed_精确度_训练]] — 混合精度训练详解
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack
 
 ---
 

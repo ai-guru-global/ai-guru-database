@@ -98,7 +98,7 @@ name_zh: "运行时安全检测"
 - [[概念/kyverno]] — Kyverno
 - [[概念/kubernetes]] — Kubernetes
 - [[概念/trivy]] — Trivy 漏洞扫描
-- [[17_伦理安全/LLM_Security_Complete_Guide]] — LLM 安全完整指南
+- [[17_伦理安全/06_系统安全/05_LLM_安全_完整_指南]] — LLM 安全完整指南
 
 ---
 

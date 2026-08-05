@@ -171,7 +171,7 @@ AI Stack 模型获取流程
 - [[概念/model-registry]] — 模型仓库
 - [[概念/modelscope]] — ModelScope 魔搭
 - [[概念/git-lfs]] — Git LFS 大文件存储
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 

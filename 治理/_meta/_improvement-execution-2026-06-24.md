@@ -32,7 +32,7 @@ name_zh: "AI Guru 知识库改进执行报告"
 | **aliases 字段覆盖** | 2.8% (38/1,359) | **94.7% (1,292/1,364)** | ⬆ +91.9pp |
 | **概念页数量** | 194 | **199** (+5) | ⬆ +2.6% |
 | **速查表数量** | 3 | **8** (+5) | ⬆ +167% |
-| **治理/hot.md / index.md 断链** | 14 (8+6) | **0** | ⬇ -100% |
+| **治理/hot.md / 索引.md 断链** | 14 (8+6) | **0** | ⬇ -100% |
 | **断链治理工具** | 简单计数 | **分类 JSON 报告** | 升级 |
 | **自动化脚本** | 7 | **9** (+2) | ⬆ +28.6% |
 
@@ -56,12 +56,12 @@ name_zh: "AI Guru 知识库改进执行报告"
 
 **P0-1 收益**: 消除 39 处断链（高频引用概念全部可解析）。
 
-### ✅ P0-2：修复 治理/hot.md / index.md 路径
+### ✅ P0-2：修复 治理/hot.md / 索引.md 路径
 
 | 文件 | 修复内容 |
 |------|---------|
 | `治理/hot.md` | `治理/综合-*` → `治理/synthesis-*`（4 处）<br>治理/cheatsheet-* → `治理/cheatsheets/cheatsheet-*`（3 处）|
-| `index.md` | 同上（7 处）|
+| `索引.md` | 同上（7 处）|
 
 **P0-2 收益**: 两个顶层导航文件 14 条断链 → 0。
 
@@ -84,7 +84,7 @@ name_zh: "AI Guru 知识库改进执行报告"
 
 - 21 条断链 → 0 条
 - 导航表中 18 条章节级 `[[XX_Pillar]]` 转换为 `[[XX_Pillar/README]]`
-- 6 条 `14_AI_Gateway/*` 重写为 `12_架构基建/11_AI_Gateway/*`（章节已迁移）
+- 6 条 `14_AI_Gateway/*` 重写为 `12_架构基建/11_AI网关/*`（章节已迁移）
 
 ### ✅ P1-2：tier / aliases 字段批量扩展
 
@@ -205,7 +205,7 @@ python3 工具/check_links.py . --json report.json # 输出 JSON
 | 概念 | 195 | 新增 5 个 + 2 个 alias + 188 个 tier/aliases |
 | 治理/cheatsheets | 8 | 5 新增 + 3 已有 |
 | 治理 报告 | 2 | 本次新增 |
-| 治理/hot.md / index.md | 2 | 路径重写 |
+| 治理/hot.md / 索引.md | 2 | 路径重写 |
 | **总计** | **1328** | |
 
 ---
@@ -227,8 +227,8 @@ python3 工具/check_links.py . --json report.json # 输出 JSON
 | `90_学习/guides/learning_paths_2026.md` | 32 | 引用已废弃的 `X.md`（被 `概念/X` 替代）|
 | `模板/DOCUMENT_TEMPLATES.md` | 21 | 模板内部引用 |
 | `90_学习/Courses/apachecn/ailearning_guide.md` | 9 | 课程指南类 |
-| `15_智能体/01_Agent_Foundations/AI_Agents.md` | 7 | 大文件、内容迭代中 |
-| `06_强化学习/02_Deep_RL/Deep_RL.md` | 7 | 同上 |
+| `15_智能体/01_Agent基础/AI_Agents.md` | 7 | 大文件、内容迭代中 |
+| `06_强化学习/02_深度强化学习/Deep_RL.md` | 7 | 同上 |
 | AI编程/Tools/OpenCode/* | 16 (4+4+4+4) | OpenCode 系列教程 |
 
 **剩余断链特征**：大部分是 **预存引用**（不是本次改进引入），指向从未创建的"应该存在的文件"。需要后续按章节单独治理（每章节 5-15 分钟）。

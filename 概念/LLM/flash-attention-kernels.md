@@ -13,7 +13,7 @@ relationships:
     type: supports
 sources:
   - 12_架构基建/AI_Stack_Deep_Dive.md
-  - 10_部署推理/04_Inference_Performance/Flash_Kernels_Deep_Dive.md
+  - 10_部署推理/03_推理优化/Flash_Kernels_Deep_Dive.md
   - "https://arxiv.org/abs/2205.14135"  # FlashAttention-1
   - "https://arxiv.org/abs/2407.08608"  # FlashAttention-3
 summary: FlashAttention、FlashDecoding、FlashInfer、FlashMLA 等内核通过分块计算 (Tiling)、Online Softmax 和 Kernel 融合，把 attention 的显存访问降到接近理论下限。是现代 LLM 推理的算子基座，支撑从训练到服务的全链路加速。
@@ -141,8 +141,8 @@ FlashInfer（[GitHub](https://github.com/flashinfer-ai/flashinfer)）是面向 L
 - [[概念/Inference/kv-cache]] — KV Cache
 - [[概念/LLM/attention-variants]] — GQA/MQA/SWA 注意力变体
 - [[概念/Inference/flashinfer]] — FlashInfer 算子库
-- [[10_部署推理/04_Inference_Performance/Flash_Kernels_Deep_Dive|Flash 系列 Kernel 深 潜]]
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[10_部署推理/03_推理优化/17_Flash_Kernels_深入分析|Flash 系列 Kernel 深 潜]]
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ## 2026 Flash Attention 生态
 

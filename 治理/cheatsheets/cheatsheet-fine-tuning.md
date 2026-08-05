@@ -15,7 +15,7 @@ name_zh: "模型微调技术速查表"
 > 中文简称：模型微调技术速查表
 
 > **核心洞察**：2026 年模型适配的三大主流路径——**SFT（教说话）→ RLHF/DPO/GRPO（教讨喜）→ PEFT（省显存）**。LoRA/QLoRA 已成为工业标配，让 70B 模型在单卡 24GB 上可微调。
-> 详见 [[Fine_tuning_Techniques]] · [[07_模型训练]] · [[Alignment/TRL_RLHF_DPO_Guide|TRL_RLHF_DPO_Guide]] · [[Alignment/GRPO_and_New_Alignment_Methods|GRPO_Guide]]
+> 详见 [[概念/Training/fine-tuning-techniques]] · [[07_模型训练]] · [[07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南|TRL_RLHF_DPO_Guide]] · [[Alignment/GRPO_and_New_Alignment_Methods|GRPO_Guide]]
 
 ## 后训练三大范式
 
@@ -217,4 +217,4 @@ def grpo_loss(prompt, group_responses, rewards, num_generations=8):
 
 ---
 
-**参见**：[[Fine_tuning_Techniques]] · [[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide|TRL_RLHF_DPO_Guide]] · [[Alignment/GRPO_and_New_Alignment_Methods|GRPO_Guide]] · [[PEFT_2026]] · [[概念/lora-qlora-sft-rlhf-dpo]] · [[概念/distributed-training]]
+**参见**：[[概念/Training/fine-tuning-techniques]] · [[07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南|TRL_RLHF_DPO_Guide]] · [[Alignment/GRPO_and_New_Alignment_Methods|GRPO_Guide]] · [[05_大模型/07_微调技术/09_PEFT_2026]] · [[概念/lora-qlora-sft-rlhf-dpo]] · [[概念/distributed-training]]

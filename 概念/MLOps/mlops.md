@@ -11,10 +11,10 @@ relationships:
     type: related_to
 sources:
   - 10_MLOps_automl/MLOps_Pipeline.md
-  - 11_模型运维/01_MLOps_Fundamentals/MLOps_Maturity_Model.md
-  - 11_模型运维/05_Orchestration/Data_Pipeline_Orchestration.md
-  - 11_模型运维/04_Experiment_Tracking/Experiment_Tracking_Deep_Dive.md
-  - 11_模型运维/06_CI_CD/ML_CI_CD.md
+  - 11_模型运维/01_MLOps基础/MLOps_Maturity_Model.md
+  - 11_模型运维/05_流程编排/Data_Pipeline_Orchestration.md
+  - 11_模型运维/04_实验追踪/Experiment_Tracking_Deep_Dive.md
+  - 11_模型运维/06_持续集成部署/ML_CI_CD.md
   - MLOps/feature-engineering_Store_Deep_Dive.md
 summary: MLOps是DevOps的AI升级版，将机器学习模型从实验环境稳定部署到生产环境的工程实践体系，涵盖数据版本化、实验追踪、特征存储、CI/CD流水线和模型监控等核心能力。
 provenance:
@@ -99,17 +99,17 @@ LLMOps面临新挑战：评估从固定指标转向LLM-as-Judge，版本管理�
 
 ## 来源
 
-- 11_模型运维/01_MLOps_Fundamentals/MLOps_Pipeline.md — 完整流水线设计、LLMOps 2026最佳实践
-- 11_模型运维/01_MLOps_Fundamentals/MLOps_Maturity_Model.md — 成熟度模型Level 0-3、团队建设
-- 11_模型运维/05_Orchestration/Data_Pipeline_Orchestration.md — Airflow/Dagster/Prefect对比
-- 11_模型运维/04_Experiment_Tracking/Experiment_Tracking_Deep_Dive.md — MLflow/W&B/Neptune深度对比
-- 11_模型运维/06_CI_CD/ML_CI_CD.md — 数据验证、模型测试、部署策略
+- 11_模型运维/01_MLOps基础/MLOps_Pipeline.md — 完整流水线设计、LLMOps 2026最佳实践
+- 11_模型运维/01_MLOps基础/MLOps_Maturity_Model.md — 成熟度模型Level 0-3、团队建设
+- 11_模型运维/05_流程编排/Data_Pipeline_Orchestration.md — Airflow/Dagster/Prefect对比
+- 11_模型运维/04_实验追踪/Experiment_Tracking_Deep_Dive.md — MLflow/W&B/Neptune深度对比
+- 11_模型运维/06_持续集成部署/ML_CI_CD.md — 数据验证、模型测试、部署策略
 - MLOps/Experiment_Tracking/Feature_Store_Deep_Dive.md — Feast/Tecton/Hopsworks对比
 
 ## Related
 
-- [[11_模型运维/05_Orchestration/Data_Pipeline_Orchestration]] — 数据流水线编排 (Data Pipeline Orchestration) (共享: ci-cd, feature-store, mlops)
-- [[11_模型运维/MLOps-in-nutshell]] — MLOps 速成指南 (共享: ci-cd, feature-store, mlops)
+- [[11_模型运维/05_流程编排/Data_Pipeline_Orchestration]] — 数据流水线编排 (Data Pipeline Orchestration) (共享: ci-cd, feature-store, mlops)
+- [[11_模型运维/01_MLOps基础/05_MLOps_流水线]] — MLOps 速成指南 (共享: ci-cd, feature-store, mlops)
 - [[概念/automl]] — 自动机器学习
 
 ---

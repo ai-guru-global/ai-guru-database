@@ -404,12 +404,12 @@ graph LR
 
 | 文档 | 内容 |
 |------|------|
-| ⭐ [LLMOps 2026](11_模型运维/10_LLMOps/LLMOps_2026.md) | 主线：传统 MLOps 失效的 7 大原因、三层架构、成熟度模型、事故复盘 |
-| [Prompt 工程化运维](11_模型运维/11_Prompt_Ops/Prompt_Engineering_Ops.md) | Prompt 即代码、版本化、A/B 测试、CI 门禁、DSPy 自动优化 |
-| [LLM 评估流水线](11_模型运维/13_Evaluation/LLM_Evaluation_Pipeline.md) | LLM-as-Judge、人审闭环、Eval-Driven Development、评估陷阱 |
-| [RAG 流水线运维](11_模型运维/05_Orchestration/RAG_Pipeline_Ops.md) | 四维可变性、Embedding 升级迁移、索引重建灰度 |
-| [LLM 成本与延迟 SLO](11_模型运维/09_Cost/LLM_Cost_Latency_SLO.md) | 三层缓存、智能路由、Token 预算熔断、FinOps |
-| [LLM 可观测性](11_模型运维/08_Observability/LLM_Observability.md) | 五层监控、Trace 分布式追踪、幻觉/毒性/PII 在线检测 |
+| ⭐ [LLMOps 2026](11_模型运维/10_LLMOps_大模型运维/05_LLMOps_2026.md) | 主线：传统 MLOps 失效的 7 大原因、三层架构、成熟度模型、事故复盘 |
+| [Prompt 工程化运维](11_模型运维/11_Prompt运维/02_Prompt工程_Ops.md) | Prompt 即代码、版本化、A/B 测试、CI 门禁、DSPy 自动优化 |
+| [LLM 评估流水线](11_模型运维/13_运维评估/03_LLM评估_Pipeline.md) | LLM-as-Judge、人审闭环、Eval-Driven Development、评估陷阱 |
+| [RAG 流水线运维](11_模型运维/05_流程编排/11_RAG_流水线_Ops.md) | 四维可变性、Embedding 升级迁移、索引重建灰度 |
+| [LLM 成本与延迟 SLO](11_模型运维/09_成本管理/03_LLM_成本_延迟_SLO.md) | 三层缓存、智能路由、Token 预算熔断、FinOps |
+| [LLM 可观测性](11_模型运维/08_可观测性/09_LLM_可观测性.md) | 五层监控、Trace 分布式追踪、幻觉/毒性/PII 在线检测 |
 
 > 加上横切关注点（数据版本/再训练/系统 SLO/成本/合规）与 16 个工具深度解析，MLOps 共 41 篇文档。
 
@@ -443,9 +443,9 @@ graph LR
 | **L4 应用层** | | |
 | **14** [RAG 系统](./14_RAG系统/) | 检索增强：向量数据库、混合检索、Agentic RAG、多模态检索 | ⭐⭐⭐ |
 | **15** [Agent 生产部署](./15_智能体/) | Agent 工程：框架、平台、Harness、技能、工作流、评估、OpenClaw 生态 | ⭐⭐⭐⭐ |
-| ↳ [Agent Skills](./15_智能体/05_Agent_Skills/) | 技能体系：技能注册、组合、生态 | ⭐⭐⭐ |
-| ↳ [Agent Workflow](./15_智能体/03_Agent_Workflow/) | 工作流：LangGraph、错误处理、编排 | ⭐⭐⭐ |
-| ↳ [Agent 评估](./15_智能体/07_Agent_Evaluation/) | 评估体系：Benchmark、红队测试、Leaderboard | ⭐⭐⭐⭐ |
+| ↳ [Agent Skills](./15_智能体/05_Agent技能/) | 技能体系：技能注册、组合、生态 | ⭐⭐⭐ |
+| ↳ [Agent Workflow](./15_智能体/03_Agent工作流/) | 工作流：LangGraph、错误处理、编排 | ⭐⭐⭐ |
+| ↳ [Agent 评估](./15_智能体/07_Agent评估/) | 评估体系：Benchmark、红队测试、Leaderboard | ⭐⭐⭐⭐ |
 | **16** [AI 编程](./16_编程/) | 编程工具与方法论：Cursor、Claude Code、Vibe Coding | ⭐⭐ |
 | **L5 治理层** | | |
 | **17** [伦理与安全](./17_伦理安全/) | AI 安全：价值对齐、红队测试、隐私保护、OWASP LLM | ⭐⭐⭐ |
@@ -469,22 +469,22 @@ graph LR
 <tr>
 <td>
 
-- [中国大模型生态全景](./05_大模型/15_Chinese_LLM_Ecosystem/README.md) - DeepSeek/Qwen/GLM/Kimi/MiniMax/MiMo 六大厂商
-- [国际大模型生态全景](./05_大模型/14_Global_LLM_Ecosystem/README.md) - OpenAI/Google/Anthropic/Meta/Mistral 五大厂商
-- [LLMOps 2026](11_模型运维/10_LLMOps/LLMOps_2026.md) - 大模型时代的 MLOps 升级（⭐ 独家主线）
-- [模型问题排查手册](07_模型训练/07_Monitoring/Model_Troubleshooting_Guide.md) - 预训练/微调/推理全链路故障诊断
-- [LLM 基准测试全景](08_模型评估/02_Benchmarks/LLM_Benchmark_Suite_2026.md) - MMLU/SWE-bench/AIME/GPQA 全基准解读
-- [量化技术深度 2026](10_部署推理/05_Quantization/Quantization_Techniques_2026.md) - GPTQ/AWQ/GGUF/NF4/FP8
+- [中国大模型生态全景](./05_大模型/15_中国LLM生态/README.md) - DeepSeek/Qwen/GLM/Kimi/MiniMax/MiMo 六大厂商
+- [国际大模型生态全景](./05_大模型/14_全球LLM生态/README.md) - OpenAI/Google/Anthropic/Meta/Mistral 五大厂商
+- [LLMOps 2026](11_模型运维/10_LLMOps_大模型运维/05_LLMOps_2026.md) - 大模型时代的 MLOps 升级（⭐ 独家主线）
+- [模型问题排查手册](07_模型训练/07_训练监控/03_模型_故障排查_指南.md) - 预训练/微调/推理全链路故障诊断
+- [LLM 基准测试全景](08_模型评估/02_基准测试/07_LLM_基准测试_Suite_2026.md) - MMLU/SWE-bench/AIME/GPQA 全基准解读
+- [量化技术深度 2026](10_部署推理/04_模型量化/04_量化_技术_2026.md) - GPTQ/AWQ/GGUF/NF4/FP8
 
 </td>
 <td>
 
-- [LLM 架构 2026](05_大模型/05_LLM_Architectures/LLM_Architectures.md) - GPT-5.2, Claude 4.5, 推理模型
-- [AI 硬件 2026](01_数学基础/10_AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200, GPU 选型
-- [Scaling Laws 与训练动力学](07_模型训练/03_Optimization/Scaling_Laws_and_Training_Dynamics.md) - Chinchilla/Kaplan/涌现能力
-- [GRPO 与新对齐方法](07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods.md) - GRPO/DPO/RLHF/RLOO
-- [Agent 协议 2026](15_智能体/01_Agent_Foundations/Agent_Protocols_2026.md) - MCP/A2A/UCP
-- [AI 基础设施](12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026) - SGLang, AI Gateway
+- [LLM 架构 2026](05_大模型/05_LLM架构/05_LLM架构.md) - GPT-5.2, Claude 4.5, 推理模型
+- [AI 硬件 2026](01_数学基础/10_AI硬件/01_AI硬件_2026.md) - H100/H200/B200, GPU 选型
+- [Scaling Laws 与训练动力学](07_模型训练/03_训练优化/06_扩展定律_and_训练_Dynamics.md) - Chinchilla/Kaplan/涌现能力
+- [GRPO 与新对齐方法](07_模型训练/06_对齐研究/02_GRPO_and_新型_对齐_Methods.md) - GRPO/DPO/RLHF/RLOO
+- [Agent 协议 2026](15_智能体/01_Agent基础/07_Agent_协议_2026.md) - MCP/A2A/UCP
+- [AI 基础设施](12_架构基建/02_架构概览/AI_Infrastructure_2026) - SGLang, AI Gateway
 
 </td>
 </tr>
@@ -498,7 +498,7 @@ graph LR
 | 趋势 | 关键洞察 | 从业者启示 |
 |------|----------|------------|
 | **🤖 Agentic AI 大规模落地** | Gartner 预测 2026 年近 50% 企业软件将内嵌自主 Agent 工具（2024 年不足 5%）；McKinsey 估算 Agent 技术年价值 $2.6-4.4 万亿；但 >40% Agentic AI 项目可能因治理不足被砍（Gartner 2027 预警）。([Gartner via Joget](https://joget.com/ai-agent-adoption-in-2026-what-the-analysts-data-shows/), [McKinsey](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)) | 重点投入 Agent 编排、工具调用与可观测性；本知识库 Agent 章节直接对应此趋势。 |
-| **🧠 推理模型与推理时计算扩展** | OpenAI o3 系列与 DeepSeek-R1 开创 "推理时计算扩展"（Inference-Time Scaling）范式——DeepSeek-R1 的 RL 训练消耗约 6e23 FLOP，产出与 o1 相当的基准分数，仅为预训练预算的 1/5。RL 训练计算每数月增长 10 倍。（[Epoch AI](https://epoch.ai/gradient-updates/how-far-can-reasoning-models-scale), [arXiv](https://arxiv.org/html/2501.12948v1)） | 关注 GRPO/DPO 等新对齐方法（见 07_模型训练/06_Alignment）；推理优化与成本管控成为核心竞争力。 |
+| **🧠 推理模型与推理时计算扩展** | OpenAI o3 系列与 DeepSeek-R1 开创 "推理时计算扩展"（Inference-Time Scaling）范式——DeepSeek-R1 的 RL 训练消耗约 6e23 FLOP，产出与 o1 相当的基准分数，仅为预训练预算的 1/5。RL 训练计算每数月增长 10 倍。（[Epoch AI](https://epoch.ai/gradient-updates/how-far-can-reasoning-models-scale), [arXiv](https://arxiv.org/html/2501.12948v1)） | 关注 GRPO/DPO 等新对齐方法（见 07_模型训练/06_对齐研究）；推理优化与成本管控成为核心竞争力。 |
 | **⚡ 小模型与高效推理崛起** | 紧凑型语言模型（SLM）预计处理 60% 商业 AI 任务，基础设施成本降低最高 50%（Gleecus 2026 预测）。IBM 指出"效率即新的扩展策略"——专用芯片与边缘部署加速。（[IBM](https://www.ibm.com/think/news/ai-tech-trends-predictions-2026), [Gleecus](https://gleecus.com/blogs/ai-in-2026-trends-predictions/)） | 量化（INT4/FP8）、蒸馏、边缘部署技能需求上升；参见 部署推理 量化深度报告。 |
 | **🌐 多模态 + 具身智能加速** | 多模态模型融合视觉、语言与动作，驱动数字员工处理医疗影像等复杂场景。Deloitte 报告 58% 企业已使用物理机器人与传感器，预计两年内达 80%。具身智能被视为文本扩展边际效益递减后的下一创新前沿。（[IBM](https://www.ibm.com/think/news/ai-tech-trends-predictions-2026), [Gleecus](https://gleecus.com/blogs/ai-in-2026-trends-predictions/)） | VLA（Vision-Language-Action）模型、机器人操作系统成为新技能点；参见 计算机视觉 与 强化学习。 |
 | **🛡️ AI 安全治理与合规常态化** | EU AI Act 进入执行阶段，80% 受监管行业须实施强制合规框架。93% 高管认为 AI 主权（Sovereignty）是必选战略要素。非人类身份（Agent/Bot）管理将成为网络安全核心议题。（[IBM](https://www.ibm.com/think/news/ai-tech-trends-predictions-2026), [Gleecus](https://gleecus.com/blogs/ai-in-2026-trends-predictions/)） | LLMOps 可观测性、红队测试、隐私保护从"加分项"变为"必选项"；参见 伦理安全 与 MLOps/Observability。 |
@@ -562,7 +562,7 @@ zip -r ai-guru-core.zip 入门 大模型 MLOps Agent
 
 **建议的 Agent 使用方式**:
 1. 将整个仓库根目录作为知识库导入
-2. 使用文件路径作为上下文引用（如 `05_大模型/05_LLM_Architectures/LLM_Architectures.md`）
+2. 使用文件路径作为上下文引用（如 `05_大模型/05_LLM架构/05_LLM架构.md`）
 3. 结合章节 README 快速定位内容
 4. 利用 概念/ 做概念查询，治理/ 做跨域关联
 
@@ -655,10 +655,10 @@ git push origin feature/your-feature
 - [[治理/KNOWN_ISSUES.md]] — 已知问题追踪
 - [[README_EN]] — English Version
 - [[CONTRIBUTING]] — 贡献指南
-- [[README_for_dummy]] — 入门版 README
+- [[README]] — 入门版 README
 - [[index]] — 知识库索引
 - [[治理/hot.md]] — 热门页面
 - [[治理/plan/README]] — 项目规划与评估报告
-- [[11_模型运维/01_MLOps_Fundamentals/Boundary_with_16.md]] — 10 与 16 边界声明
+- [[11_模型运维/01_MLOps基础/01_Boundary_with_16.md]] — 10 与 16 边界声明
 - [[治理/README]] — 跨域综合文档索引
-- [[00_入门/01_Fundamentals/AI_Fundamentals.md]] — 知识库入门索引
+- [[00_入门/01_基础入门/02_AI基础.md]] — 知识库入门索引

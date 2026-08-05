@@ -262,7 +262,7 @@ Complete path from math to production:
 | **11** [RAG Systems](./14_RAG系统/) | Retrieval augmented: Vector DBs, hybrid search, Agentic RAG | ⭐⭐⭐ |
 | **12** [Architecture & Infrastructure](./12_架构基建/) | System design: Multi-tenant, SGLang, HA, edge AI | ⭐⭐⭐⭐ |
 | **13** [Agent Production](./15_智能体/) | Agent engineering: Frameworks, skills, workflows, evaluation | ⭐⭐⭐⭐ |
-| **14** [AI Gateway](./12_架构基建/11_AI_Gateway/) | Gateway: Routing, rate limiting, model gateway | ⭐⭐⭐ |
+| **14** [AI Gateway](./12_架构基建/11_AI网关/) | Gateway: Routing, rate limiting, model gateway | ⭐⭐⭐ |
 | **15** [AI Testing](./09_测试/) | Testing: Test frameworks, contract testing, data management | ⭐⭐⭐ |
 | **16** [AI Ops](./13_运维/) | AIOps: Observability, incident response, chaos engineering | ⭐⭐⭐⭐ |
 | **17** [AI Coding](./16_编程/) | Coding tools & methodology: Cursor, Claude Code, Vibe Coding | ⭐⭐ |
@@ -279,16 +279,16 @@ Complete path from math to production:
 
 Latest tech trends and industry insights:
 
-- [LLM Architectures 2026](05_大模型/05_LLM_Architectures/LLM_Architectures.md) - GPT-5.2, Claude 4.5, reasoning models
-- [AI Hardware 2026](01_数学基础/10_AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200 comparison
-- [PEFT Fine-tuning 2026](05_大模型/07_Fine_tuning_Techniques/PEFT_2026.md) - LoRA/QLoRA/DoRA, 70B on single GPU
+- [LLM Architectures 2026](05_大模型/05_LLM架构/05_LLM架构.md) - GPT-5.2, Claude 4.5, reasoning models
+- [AI Hardware 2026](01_数学基础/10_AI硬件/01_AI硬件_2026.md) - H100/H200/B200 comparison
+- [PEFT Fine-tuning 2026](05_大模型/07_微调技术/09_PEFT_2026.md) - LoRA/QLoRA/DoRA, 70B on single GPU
 - [Advanced RAG](./14_RAG系统/) - Hybrid search, Agentic RAG
 - [AI Coding Assistants](./16_编程/) - Cursor, Claude Code, Devin
 - [Vibe Coding Methodology](./16_编程/) - Natural language driven dev, DGRV loop, production practices
-- [Embodied AI 2026](./06_强化学习/05_Robotics_Embodied_AI/) - VLA models, humanoid robots
-- [World Models 2026](./03_深度学习/07_World_Models/) - JEPA/V-JEPA, LeCun's AGI path
-- [AI Video Generation](./04_计算机视觉/07_Video_Generation/) - Veo3, Kling 3.0, post-Sora
-- [AI Security 2026](./17_伦理安全/07_AI_Security_2026/) - OWASP LLM, ASI framework
+- [Embodied AI 2026](./06_强化学习/05_机器人与具身智能/) - VLA models, humanoid robots
+- [World Models 2026](./03_深度学习/07_世界模型/) - JEPA/V-JEPA, LeCun's AGI path
+- [AI Video Generation](./04_计算机视觉/07_视频生成/) - Veo3, Kling 3.0, post-Sora
+- [AI Security 2026](./17_伦理安全/07_AI安全2026/) - OWASP LLM, ASI framework
 - [Agent Production](./15_智能体/) - K8s, monitoring, CI/CD
 
 ---
@@ -346,7 +346,7 @@ Optimized for AI Agent consumption:
 
 **Recommended Agent Usage**:
 1. Import entire `docs/` directory as knowledge base
-2. Use file paths for context reference (e.g., `05_大模型/05_LLM_Architectures/LLM_Architectures.md`)
+2. Use file paths for context reference (e.g., `05_大模型/05_LLM架构/05_LLM架构.md`)
 3. Combine with chapter READMEs for quick content location
 
 ---

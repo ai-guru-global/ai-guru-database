@@ -150,7 +150,7 @@ response = client.messages.create(
 - [[概念/Inference/radix-attention|RadixAttention]]
 - [[概念/Inference/paged-attention|PagedAttention]]
 - [[概念/Inference/inference-performance|推理性能]]
-- [[10_部署推理/06_Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 全 景]]
+- [[10_部署推理/03_推理优化/11_提示缓存_and_KV_Cache_优化|Prompt Caching 全 景]]
 
 ## 前缀缓存技术对比
 

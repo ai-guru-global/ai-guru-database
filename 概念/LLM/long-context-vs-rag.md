@@ -140,7 +140,7 @@ name_zh: "长上下文 vs RAG: 技术选型指南"
 - [[概念/LLM/kv-cache-compression|KV Cache 压缩]]
 - [[概念/LLM/radix-attention|RadixAttention]]
 - [[概念/Inference/prefix-caching|前缀缓存]]
-- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+- [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]]
 
 ## 2026 长上下文 vs RAG 决策矩阵
 

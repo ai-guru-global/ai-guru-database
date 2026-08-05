@@ -31,10 +31,10 @@ name_zh: "概念卡片索引"
 | [ai-ethics](概念/Safety/ai-ethics.md) | 19_Ethics_Safety | 偏见、隐私、治理 |
 | [ai-future-trends](概念/General/ai-future-trends.md) | 00_AI_Introduction | AGI 路径、2026-2040 |
 | [ai-technology-landscape](概念/General/ai-technology-landscape.md) | 00_AI_Introduction | 技术栈、工具链 |
-| [linear-algebra](概念/Math/linear-algebra.md) | 01_Fundamentals | 矩阵、向量、特征分解 |
-| [probability-statistics](概念/Math/probability-statistics.md) | 01_Fundamentals | 贝叶斯、分布、假设检验 |
-| [information-theory](概念/Math/information-theory.md) | 01_Fundamentals | 熵、交叉熵、KL散度、互信息 |
-| [data-structures-algorithms](概念/General/data-structures-algorithms.md) | 01_Fundamentals | 树、图、排序、搜索 |
+| [linear-algebra](概念/Math/linear-algebra.md) | 01_基础入门 | 矩阵、向量、特征分解 |
+| [probability-statistics](概念/Math/probability-statistics.md) | 01_基础入门 | 贝叶斯、分布、假设检验 |
+| [information-theory](概念/Math/information-theory.md) | 01_基础入门 | 熵、交叉熵、KL散度、互信息 |
+| [data-structures-algorithms](概念/General/data-structures-algorithms.md) | 01_基础入门 | 树、图、排序、搜索 |
 
 ### 机器学习（8 张）
 
@@ -63,7 +63,7 @@ name_zh: "概念卡片索引"
 | [retnet](概念/LLM/retnet.md) | 03_Deep_Learning | 保留机制、无 KV Cache、Transformer 替代 |
 | [graph-neural-networks](概念/Math/graph-neural-networks.md) | 03_Deep_Learning | GCN、GAT、消息传递、分子预测 |
 | [self-supervised-learning](概念/Math/self-supervised-learning.md) | 03_Deep_Learning | SimCLR、MoCo、MAE、对比学习 |
-| [distributed-systems](概念/Training/distributed-systems.md) | 01_Fundamentals | CAP 定理、一致性、分布式训练 |
+| [distributed-systems](概念/Training/distributed-systems.md) | 01_基础入门 | CAP 定理、一致性、分布式训练 |
 
 ### NLP 与大模型（22 张）
 
@@ -119,7 +119,7 @@ name_zh: "概念卡片索引"
 | [tool-calling](概念/Agent/tool-calling.md) | 15_Agent_Production | 函数调用、API、MCP |
 | [tool-calling-safety](概念/Agent/tool-calling-safety.md) | 15_Agent_Production / 17_Ethics_Safety | 工具调用安全、护栏、审计 |
 | [agent-evaluation-benchmarks](概念/Agent/agent-evaluation-benchmarks.md) | 08_Model_Evaluation / 13_Agent_Production | Agent 评估、SWE-bench、GAIA |
-| [ai-hardware](概念/General/ai-hardware.md) | 01_Fundamentals | GPU、TPU、H100/B200 |
+| [ai-hardware](概念/General/ai-hardware.md) | 01_基础入门 | GPU、TPU、H100/B200 |
 
 ### 工程与部署（12 张）
 
@@ -156,7 +156,7 @@ name_zh: "概念卡片索引"
 | [request-scheduling](概念/Inference/request-scheduling.md) | 09_Deployment_Inference | Continuous Batching、抢占、SLO-aware |
 | [inference-autoscaling](概念/Inference/inference-autoscaling.md) | 09_Deployment_Inference | HPA、负载均衡、扩缩容 |
 | [grouped-query-attention](概念/LLM/grouped-query-attention.md) | 12_Architecture_Infrastructure | GQA、MQA、KV Cache 压缩 |
-| [flops](概念/GPU/flops.md) | 01_Fundamentals | GPU 算力、FLOPS |
+| [flops](概念/GPU/flops.md) | 01_基础入门 | GPU 算力、FLOPS |
 | [ttft](概念/Inference/ttft.md) | 09_Deployment_Inference | 首字等待时间、TTFT |
 | [quantization](概念/Inference/quantization.md) | 09_Deployment_Inference | FP8/INT8/INT4、量化 |
 | [prefill-decode-disaggregation](概念/Inference/prefill-decode-disaggregation.md) | 09_Deployment_Inference | PD 分离、Disaggregated Serving |
@@ -237,7 +237,7 @@ name_zh: "概念卡片索引"
 | [reward-model](概念/Training/reward-model.md) | 07_Model_Training | 奖励模型 (RLHF/GRPO 偏好评估) |
 | [dify](概念/RAG/dify.md) | 11_RAG_Systems | Dify 开源 LLM 应用平台 |
 | [ragflow](概念/RAG/ragflow.md) | 11_RAG_Systems | RAGFlow 深度文档理解 RAG 引擎 |
-| [llama-index](概念/LLM/llama-index.md) | 11_RAG_Systems | LlamaIndex 数据框架 (索引/查询) |
+| [llama-index](概念/LLM/llama-索引.md) | 11_RAG_Systems | LlamaIndex 数据框架 (索引/查询) |
 | [medusa](概念/LLM/medusa.md) | 09_Deployment_Inference | Medusa 多头推测解码 |
 | [simpo](概念/Training/simpo.md) | 07_Model_Training | SimPO 简化偏好优化 (无参考模型) |
 | [qlora](概念/Training/qlora.md) | 07_Model_Training | QLoRA 4-bit 量化 LoRA 微调 |
@@ -261,7 +261,7 @@ name_zh: "概念卡片索引"
 | [deepeval](概念/General/deepeval.md) | 08_Model_Evaluation | DeepEval LLM 评估框架 |
 | [mlflow](概念/MLOps/mlflow.md) | 10_MLOps_Pipeline | MLflow 实验追踪与模型管理 |
 | [wandb](概念/MLOps/wandb.md) | 10_MLOps_Pipeline | Weights & Biases 实验追踪 |
-| [litellm](概念/LLM/litellm.md) | 12_架构基建/11_AI_Gateway | LiteLLM 统一 LLM API 代理 |
+| [litellm](概念/LLM/litellm.md) | 12_架构基建/11_AI网关 | LiteLLM 统一 LLM API 代理 |
 | [outlines](概念/General/outlines.md) | 09_Deployment_Inference | Outlines 结构化 LLM 生成 |
 | [helicone](概念/MLOps/helicone.md) | 16_AI_Ops | Helicone LLM API 监控 |
 | [trulens](概念/General/trulens.md) | 08_Model_Evaluation | TruLens LLM 评估反馈 |
@@ -271,7 +271,7 @@ name_zh: "概念卡片索引"
 | [lm-format-enforcer](概念/General/lm-format-enforcer.md) | 09_Deployment_Inference | LM Format Enforcer LLM 输出格式约束 |
 | [ne-mo](概念/General/ne-mo.md) | 07_Model_Training | NVIDIA NeMo 训练与推理框架 |
 | [lisa](概念/General/lisa.md) | 07_Model_Training | LISA 层级采样高效微调 |
-| [miniconda](概念/General/miniconda.md) | 01_Fundamentals | Miniconda 轻量级 Python 环境管理 |
+| [miniconda](概念/General/miniconda.md) | 01_基础入门 | Miniconda 轻量级 Python 环境管理 |
 | [flash-attn](概念/Inference/flash-attn.md) | 03_Deep_Learning | Flash Attention 高效注意力内核 |
 | [guardrails-ai](概念/K8s/guardrails-ai.md) | 19_Ethics_Safety | Guardrails AI 安全防护框架 |
 | [presidio](概念/Safety/presidio.md) | 19_Ethics_Safety | Microsoft Presidio PII 检测与脱敏 |
@@ -299,9 +299,9 @@ name_zh: "概念卡片索引"
 | [arthur-ai](概念/General/arthur-ai.md) | 19_Ethics_Safety | Arthur AI LLM 安全监控平台 |
 | [whylogs](概念/MLOps/whylogs.md) | 16_AI_Ops | whylogs 数据质量与 ML 可观测性 |
 | [feast](概念/General/feast.md) | 10_MLOps_Pipeline | Feast 开源特征存储平台 |
-| [label-studio](概念/MLOps/label-studio.md) | 01_Fundamentals | Label Studio 开源数据标注平台 |
-| [scale-ai](概念/General/scale-ai.md) | 01_Fundamentals | Scale AI 数据标注与 RLHF 平台 |
-| [snorkel-ai](概念/General/snorkel-ai.md) | 01_Fundamentals | Snorkel AI 弱监督数据编程平台 |
+| [label-studio](概念/MLOps/label-studio.md) | 01_基础入门 | Label Studio 开源数据标注平台 |
+| [scale-ai](概念/General/scale-ai.md) | 01_基础入门 | Scale AI 数据标注与 RLHF 平台 |
+| [snorkel-ai](概念/General/snorkel-ai.md) | 01_基础入门 | Snorkel AI 弱监督数据编程平台 |
 | [dataherald](概念/General/dataherald.md) | 11_RAG_Systems | DataHerald 自然语言转 SQL 引擎 |
 | [dspy](概念/General/dspy.md) | 04_NLP_LLMs | DSPy Stanford LLM 编程框架 |
 | [autogen-studio](概念/Agent/autogen-studio.md) | 13_Agent_Production | AutoGen Studio 多 Agent 可视化 IDE |

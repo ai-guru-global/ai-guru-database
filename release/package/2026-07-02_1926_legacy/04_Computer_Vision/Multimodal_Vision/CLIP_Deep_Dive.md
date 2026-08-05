@@ -116,7 +116,7 @@ sim(I_i, T_j) = cos(Encoder_I(I_i), Encoder_T(T_j))
 图像编码器 (Vision Transformer):
 图像 → Patch Embedding → Transformer → 图像特征
 
-文本编码器 (Transformer):
+文本编码器 (01_Transformer):
 文本 → Tokenization → Embedding → Transformer → 文本特征
 
 特征维度对齐:

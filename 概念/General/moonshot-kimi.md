@@ -108,7 +108,7 @@ AI Stack 模型生态
 - [[概念/long-context-models]] — 长上下文模型
 - [[概念/deepseek-models]] — DeepSeek 系列
 - [[概念/zhipu-glm]] — 智谱 GLM 系列
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 

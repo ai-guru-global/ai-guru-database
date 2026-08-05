@@ -33,7 +33,7 @@ tier: core
 | 文档 | 交叉领域 | 核心洞见 |
 |------|----------|----------|
 | [training-fine-tuning](./training-fine-tuning.md) | 07_Model_Training × 04_NLP_LLMs | 预训练到后训练的完整链路 |
-| [python-data-science-pipeline](./python-data-science-pipeline.md) | 01_Fundamentals × 02_Machine_Learning | 从数据处理到模型训练的 Python 工具链 |
+| [python-data-science-pipeline](./python-data-science-pipeline.md) | 01_基础入门 × 02_Machine_Learning | 从数据处理到模型训练的 Python 工具链 |
 
 ### 视觉与深度学习（2 篇）
 

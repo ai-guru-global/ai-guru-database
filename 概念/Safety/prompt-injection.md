@@ -490,7 +490,7 @@ define flow block injection
 - [[概念/Safety/adversarial-attack]] — 对抗攻击（更广泛的对抗威胁）
 - [[概念/Safety/runtime-security]] — 运行时安全
 - [[概念/Safety/ai-alignment]] — AI对齐（从训练层面增强安全）
-- [[17_伦理安全/LLM_Security_Defense_Guide]] — LLM安全防御指南
+- [[17_伦理安全/06_系统安全/06_LLM_安全_Defense_指南]] — LLM安全防御指南
 
 ---
 

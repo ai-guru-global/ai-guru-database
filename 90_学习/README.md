@@ -58,14 +58,14 @@ name_zh: "Learn — AI Guru 概念入门路径"
 
 | 组合 | 推荐路径 | 预计时间 |
 |------|---------|---------|
-| A + 1 + a | [零基础通识路径](./pathways/absolute-beginner.md) | 8-12 小时 |
-| B/C + 2 + b | [ML 从业者路径](./pathways/ml-practitioner.md) | 60-80 小时 |
-| C + 2 + c | [LLM 工程师路径](./pathways/llm-engineer.md) | 40-60 小时 |
-| D + 3 + b/c | [AI 研究者路径](./pathways/ai-researcher.md) | 80+ 小时 |
-| B/D + 4 + a/b | [AI 产品经理路径](./pathways/product-manager.md) | 20-30 小时 |
-| C(Java) + 2 + b/c | [Java 开发者 AI 路径](./pathways/java-developer.md) | 50-70 小时 |
+| A + 1 + a | [零基础通识路径](./pathways/01_absolute_beginner.md) | 8-12 小时 |
+| B/C + 2 + b | [ML 从业者路径](./pathways/09_ml_practitioner.md) | 60-80 小时 |
+| C + 2 + c | [LLM 工程师路径](./pathways/08_llm_engineer.md) | 40-60 小时 |
+| D + 3 + b/c | [AI 研究者路径](./pathways/03_ai_researcher.md) | 80+ 小时 |
+| B/D + 4 + a/b | [AI 产品经理路径](./pathways/13_product_manager.md) | 20-30 小时 |
+| C(Java) + 2 + b/c | [Java 开发者 AI 路径](./pathways/07_java_developer.md) | 50-70 小时 |
 
-> 不确定的话，建议从 **[零基础通识路径](./pathways/absolute-beginner.md)** 开始，建立全局认知后再做选择。
+> 不确定的话，建议从 **[零基础通识路径](./pathways/01_absolute_beginner.md)** 开始，建立全局认知后再做选择。
 
 ---
 
@@ -78,7 +78,7 @@ name_zh: "Learn — AI Guru 概念入门路径"
 | **预计时间** | 8-12h | 60-80h | 40-60h | 80+h | 20-30h | 50-70h |
 | **核心产出** | AI 全局认知 | 端到端 ML 能力 | LLM 应用开发能力 | 论文阅读与研究能力 | AI 产品规划能力 | Java 企业级 AI 应用能力 |
 | **覆盖章节** | 00 → 01(轻量) → 选方向 | 01 → 02 → 03 → 04/05/06 → 07 | 01(选) → 04 → 06(Agents) → 07 | 01(深) → 02 → 03 → 04(深) → 前沿 | 00 → 01(轻) → 07(选) → 13 | 01 → 11(RAG) → 12(架构) → 13(Agent) → 14(安全) → 15(测试) |
-| **详细路径** | [查看](./pathways/absolute-beginner.md) | [查看](./pathways/ml-practitioner.md) | [查看](./pathways/llm-engineer.md) | [查看](./pathways/ai-researcher.md) | [查看](./pathways/product-manager.md) | [查看](./pathways/java-developer.md) |
+| **详细路径** | [查看](./pathways/01_absolute_beginner.md) | [查看](./pathways/09_ml_practitioner.md) | [查看](./pathways/08_llm_engineer.md) | [查看](./pathways/03_ai_researcher.md) | [查看](./pathways/13_product_manager.md) | [查看](./pathways/07_java_developer.md) |
 
 ---
 
@@ -119,7 +119,7 @@ Stage 0: AI 觉醒 ────────────────────�
 | 系统 | 位置 | 路径数 | 组织逻辑 | 适合场景 |
 |------|------|---------|---------|----------|
 | **认知层次路径** | [`pathways/`](./pathways/) | 6 条 | 按 Stage 0-4 认知递进 | 第一次学 AI，想知道“从哪里开始” |
-| **职业角色路径** | [`Learning_Paths_2026.md`](./guides/learning_paths_2026.md) | 5 条 | 按 ML/LLM/PM/MLOps/Research 职业角色 | 已有方向，想知道“学哪些章节” |
+| **职业角色路径** | [`Learning_Paths_2026.md`](./guides/05_learning_paths_2026.md) | 5 条 | 按 ML/LLM/PM/MLOps/Research 职业角色 | 已有方向，想知道“学哪些章节” |
 
 > **建议**: 新手先用 `pathways/` 建立全局认知，确定方向后切换到 `Learning_Paths_2026.md` 获得具体的章节序列和时间估算。
 
@@ -127,14 +127,14 @@ Stage 0: AI 觉醒 ────────────────────�
 
 | 资源 | 说明 |
 |------|------|
-| [**职业角色路径指南 2026**](./guides/learning_paths_2026.md) | 5 大职业角色学习路径全景 (ML/LLM/PM/MLOps/Research) |
-| [**AI 工程路线图 2026**](./guides/ai_engineering_roadmap_2026.md) | 免费资源精选路线图（课程、论文、书籍、工具） |
+| [**职业角色路径指南 2026**](./guides/05_learning_paths_2026.md) | 5 大职业角色学习路径全景 (ML/LLM/PM/MLOps/Research) |
+| [**AI 工程路线图 2026**](./guides/02_AI工程路线图2026.md) | 免费资源精选路线图（课程、论文、书籍、工具） |
 | [外部课程映射](./courses/) | 18 门外部课程的章节映射（微软、HF、Datawhale 等） |
 | [概念层次卡片](./概念/) | Stage 0-4 每个阶段的核心概念卡片 |
-| [里程碑自测](./guides/milestones.md) | 每个 Stage 的自测问题与检查点 |
+| [里程碑自测](./guides/07_milestones.md) | 每个 Stage 的自测问题与检查点 |
 | [概念知识图谱](../治理/notes/AI_Concept_Knowledge_Graph.md) | 800+ 概念的完整依赖关系图 |
 | [新手导航（章节版）](.README_for_dummy.md) | 按章节组织的入门指南 |
-| [500+ AI Projects](90_学习/References/Projects/500-ai-projects.md) | 500+ AI/ML/DL/CV/NLP 实战项目合集索引 |
+| [500+ AI Projects](90_学习/References/Projects/03_500_ai_projects.md) | 500+ AI/ML/DL/CV/NLP 实战项目合集索引 |
 
 ---
 
@@ -142,24 +142,24 @@ Stage 0: AI 觉醒 ────────────────────�
 
 ## Related
 
-- [[90_学习/guides/learning_paths_2026|AI Guru 学习路径指南]] — 五大 AI 职业角色学习路径全景指南
-- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程学习路线图 2026(免费资源精选)]]
-- [[90_学习/README_for_dummy|90 Learn — 小白版]]
-- [[90_学习/guides/milestones|里程碑自测]]
-- [[90_学习/概念/stage0_awakening]] — Stage 0: AI 觉醒
-- [[90_学习/概念/stage1_foundation]] — Stage 1: 基础概念
-- [[90_学习/概念/stage2_core_tech]] — Stage 2: 核心技术
-- [[90_学习/概念/stage3_engineering]] — Stage 3: 工程实践
-- [[90_学习/概念/stage4_frontier]] — Stage 4: 前沿探索
-- [[90_学习/pathways/absolute-beginner]] — 零基础通识路径
-- [[90_学习/pathways/ml-practitioner]] — ML 从业者路径
-- [[90_学习/pathways/llm-engineer]] — LLM 工程师路径
-- [[90_学习/pathways/ai-researcher]] — AI 研究者路径
-- [[90_学习/pathways/product-manager]] — AI 产品经理路径
-- [[90_学习/pathways/java-developer]] — Java 开发者 AI 路径
-- [[90_学习/pathways/data-scientist|数据科学家学习路径]] — 数据科学家成长路径
-- [[90_学习/guides/skills_self_assessment|AI 技能自评清单]] — 定位水平与学习缺口
-- [[90_学习/guides/ai_project_guide|AI 实战项目指南]] — 端到端实战项目指引
+- [[90_学习/04_实践指南/05_learning_paths_2026|AI Guru 学习路径指南]] — 五大 AI 职业角色学习路径全景指南
+- [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程学习路线图 2026(免费资源精选)]]
+- [[90_学习/README|90 Learn — 小白版]]
+- [[90_学习/04_实践指南/07_milestones|里程碑自测]]
+- [[90_学习/01_概念认知/02_stage0_awakening]] — Stage 0: AI 觉醒
+- [[90_学习/01_概念认知/03_stage1_foundation]] — Stage 1: 基础概念
+- [[90_学习/01_概念认知/04_stage2_core_tech]] — Stage 2: 核心技术
+- [[90_学习/01_概念认知/05_stage3_engineering]] — Stage 3: 工程实践
+- [[90_学习/01_概念认知/06_stage4_frontier]] — Stage 4: 前沿探索
+- [[90_学习/02_学习路径/01_absolute_beginner]] — 零基础通识路径
+- [[90_学习/02_学习路径/09_ml_practitioner]] — ML 从业者路径
+- [[90_学习/02_学习路径/08_llm_engineer]] — LLM 工程师路径
+- [[90_学习/02_学习路径/03_ai_researcher]] — AI 研究者路径
+- [[90_学习/02_学习路径/13_product_manager]] — AI 产品经理路径
+- [[90_学习/02_学习路径/07_java_developer]] — Java 开发者 AI 路径
+- [[90_学习/02_学习路径/05_data_scientist|数据科学家学习路径]] — 数据科学家成长路径
+- [[90_学习/04_实践指南/08_skills_self_assessment|AI 技能自评清单]] — 定位水平与学习缺口
+- [[90_学习/05_参考资料/Projects/03_500_ai_projects|AI 实战项目指南]] — 端到端实战项目指引
 
 ## 核心知识框架
 
@@ -222,12 +222,3 @@ Stage 0: AI 觉醒 ────────────────────�
 | Maintainability | 可维护性 |
 | Observability | 可观测性 |
 | Reliability | 可靠性 |
-
-## 检查清单
-
-- [ ] 核心概念已理解
-- [ ] 基本操作已掌握
-- [ ] 实践项目已完成
-- [ ] 常见问题能解决
-- [ ] 前沿趋势有关注
-- [ ] 知识已沉淀文档化

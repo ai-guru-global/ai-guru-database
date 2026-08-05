@@ -48,32 +48,32 @@ name_zh: "06 强化学习"
 
 | 主题 | 难度 | 描述 | 文档链接 |
 |------|------|------|---------|
-| 强化学习基础 (RL Foundations) | 入门 | MDP、贝尔曼方程、策略梯度、价值函数，RL 数学框架 | [RL_Foundations.md](06_强化学习/01_RL_Foundations/RL_Foundations.md) |
-| 深度强化学习 (Deep RL) | 进阶 | DQN、PPO、SAC、离线 RL，结合神经网络的 RL 算法 | [Deep_RL.md](06_强化学习/02_Deep_RL/Deep_RL.md) |
-| **多智能体系统 (Multi-Agent Systems)** | **进阶** | **合作/竞争/混合场景、CTDE、QMIX、MAPPO、涌现行为** | **[Multi_Agent_Systems.md](./06_Multi_Agent/Multi_Agent_Systems.md)** |
-| 具身智能 (Embodied AI) | 前沿 | 机器人基础模型、VLA架构、Sim-to-Real、人形机器人产业 | [Embodied_AI_2026.md](./05_Robotics_Embodied_AI/Embodied_AI_2026.md) |
+| 强化学习基础 (RL Foundations) | 入门 | MDP、贝尔曼方程、策略梯度、价值函数，RL 数学框架 | [03_RL基础.md](06_强化学习/01_强化学习基础/03_RL基础.md) |
+| 深度强化学习 (Deep RL) | 进阶 | DQN、PPO、SAC、离线 RL，结合神经网络的 RL 算法 | [02_深度强化学习.md](06_强化学习/02_深度强化学习/02_深度强化学习.md) |
+| **多智能体系统 (Multi-Agent Systems)** | **进阶** | **合作/竞争/混合场景、CTDE、QMIX、MAPPO、涌现行为** | **[03_多智能体系统.md](./06_多智能体/03_多智能体系统.md)** |
+| 具身智能 (Embodied AI) | 前沿 | 机器人基础模型、VLA架构、Sim-to-Real、人形机器人产业 | [01_Embodied_AI_2026.md](./05_机器人与具身智能/01_Embodied_AI_2026.md) |
 
 ### 深度解读 (Deep Dive)
 
 | 算法 | 内容 | 文档链接 |
 |------|------|---------|
-| DQN | 深度强化学习开山之作，Atari 游戏与经验回放 | [DQN_Deep_Dive.md](06_强化学习/02_Deep_RL/DQN_Deep_Dive.md) |
-| PPO | OpenAI 默认 RL 算法，裁剪更新稳定训练 | [PPO_Deep_Dive.md](06_强化学习/02_Deep_RL/PPO_Deep_Dive.md) |
-| RLHF/DPO/GRPO | 大模型对齐训练三大范式（GPT/DPO/DeepSeek-R1 路线） | [RLHF_DPO_GRPO_Deep_Dive.md](06_强化学习/03_RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive.md) |
-| **GRPO 训练深度解析** | **生产必备** | **Group Relative Policy Optimization 原理、Reward 设计、显存优化与 DeepSeek-R1/Qwen3 复现** | **[GRPO_Training_Deep_Dive.md](06_强化学习/03_RLHF_Alignment/GRPO_Training_Deep_Dive.md)** |
+| DQN | 深度强化学习开山之作，Atari 游戏与经验回放 | [02_DQN_深入分析.md](06_强化学习/02_深度强化学习/02_DQN_深入分析.md) |
+| PPO | OpenAI 默认 RL 算法，裁剪更新稳定训练 | [04_PPO_深入分析.md](06_强化学习/02_深度强化学习/04_PPO_深入分析.md) |
+| RLHF/DPO/GRPO | 大模型对齐训练三大范式（GPT/DPO/DeepSeek-R1 路线） | [04_RLHF_DPO_GRPO_深入分析.md](06_强化学习/03_RLHF与对齐/04_RLHF_DPO_GRPO_深入分析.md) |
+| **GRPO 训练深度解析** | **生产必备** | **Group Relative Policy Optimization 原理、Reward 设计、显存优化与 DeepSeek-R1/Qwen3 复现** | **[02_GRPO_训练_深入分析.md](06_强化学习/03_RLHF与对齐/02_GRPO_训练_深入分析.md)** |
 
 ### 小白版入门 (for_dummy)
 
 - [强化学习与智能体 - 小白版](README_for_dummy.md) — 零基础入门
-- [RL 基础 - 小白版](./01_RL_Foundations/RL_Foundations_for_dummy.md)
-- [深度强化学习 - 小白版](./02_Deep_RL/Deep_RL_for_dummy.md)
+- [RL 基础 - 小白版](./01_强化学习基础/RL_Foundations_for_dummy.md)
+- [深度强化学习 - 小白版](./02_深度强化学习/Deep_RL_for_dummy.md)
 
 ## 前置知识 (Prerequisites)
 
-- **必修**: [概率统计](01_数学基础/03_Probability_Statistics/Probability_Statistics.md)（理解 MDP 和期望计算）
-- **必修**: [神经网络核心](03_深度学习/02_Neural_Network_Core/Neural_Network_Core.md)（深度 RL 中的函数逼近）
-- **推荐**: [优化与正则化](03_深度学习/03_Optimization/Optimization.md)（稳定 RL 训练）
-- **可选**: [大语言模型架构](05_大模型/05_LLM_Architectures/LLM_Architectures.md)（理解 LLM 驱动的智能体）
+- **必修**: [概率统计](01_数学基础/03_概率统计/02_概率统计.md)（理解 MDP 和期望计算）
+- **必修**: [神经网络核心](03_深度学习/02_神经网络核心/09_神经网络核心.md)（深度 RL 中的函数逼近）
+- **推荐**: [优化与正则化](03_深度学习/03_训练优化/02_优化.md)（稳定 RL 训练）
+- **可选**: [大语言模型架构](05_大模型/05_LLM架构/05_LLM架构.md)（理解 LLM 驱动的智能体）
 
 ## 关键术语速查 (Key Terms)
 
@@ -97,17 +97,17 @@ name_zh: "06 强化学习"
 
 ## Related
 - [[06_强化学习/RL-in-nutshell|强化学习速览]] — 从 MDP 到 DQN/PPO 到 RLHF/DPO/GRPO 全栈速览 (共享: rl, reinforcement-learning, ppo, rlhf)
-- [[06_强化学习/README_for_dummy|06 强化学习与智能体 - 小白版 🎮]]
+- [[06_强化学习/README|06 强化学习与智能体 - 小白版 🎮]]
 
-- [[06_强化学习/01_RL_Foundations/RL_Foundations]] — 强化学习基础 (RL Foundations)
-- [[06_强化学习/01_RL_Foundations/RL_Foundations_for_dummy]] — 强化学习基础 - 小白版 🎲
-- [[06_强化学习/05_Robotics_Embodied_AI/Embodied_AI_2026]] — Embodied_AI_2026
-- [[06_强化学习/05_Robotics_Embodied_AI/VLA_Models_2026]] — VLA 模型 2026：视觉-语言-动作模型的技术突破与产业应用
-- [[06_强化学习/05_Robotics_Embodied_AI/Embodied_AI_Complete_2026]] — 具身智能 (Embodied AI) 2026 完整指南
-- [[06_强化学习/02_Deep_RL/Deep_RL]] — Deep_RL
-- [[06_强化学习/02_Deep_RL/PPO_Deep_Dive]] — PPO_Deep_Dive
-- [[06_强化学习/02_Deep_RL/Deep_RL_for_dummy]] — Deep_RL_for_dummy
-- [[06_强化学习/02_Deep_RL/DQN_Deep_Dive]] — DQN_Deep_Dive
+- [[06_强化学习/01_强化学习基础/03_RL基础]] — 强化学习基础 (RL Foundations)
+- [[06_强化学习/01_强化学习基础/03_RL基础]] — 强化学习基础 - 小白版 🎲
+- [[06_强化学习/05_机器人与具身智能/01_Embodied_AI_2026]] — Embodied_AI_2026
+- [[06_强化学习/05_机器人与具身智能/09_VLA_模型_2026]] — VLA 模型 2026：视觉-语言-动作模型的技术突破与产业应用
+- [[06_强化学习/05_机器人与具身智能/02_Embodied_AI_完整_2026]] — 具身智能 (Embodied AI) 2026 完整指南
+- [[06_强化学习/02_深度强化学习/02_深度_RL]] — Deep_RL
+- [[06_强化学习/02_深度强化学习/10_PPO_深入分析]] — PPO_Deep_Dive
+- [[06_强化学习/02_深度强化学习/02_深度_RL]] — Deep_RL_for_dummy
+- [[06_强化学习/02_深度强化学习/03_DQN_深入分析]] — DQN_Deep_Dive
 - [[概念/Training/rlhf.md|rlhf]]
 
 ## 强化学习核心算法对比

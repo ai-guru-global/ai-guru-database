@@ -349,7 +349,7 @@ RetNet 双模式设计:
 **Retention vs Attention:**
 
 ```python
-# 标准注意力 (Transformer)
+# 标准注意力 (01_Transformer)
 attn_scores = Q @ K.T  # O(L²)
 attn_weights = softmax(attn_scores / sqrt(d))
 output = attn_weights @ V

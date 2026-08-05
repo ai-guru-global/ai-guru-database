@@ -14,7 +14,7 @@ relationships:
     type: related_to
 sources:
   - 06_reinforcement-learning_unsupervised-learning/Deep_RL/Deep_RL.md
-  - 06_强化学习/02_Deep_RL/PPO_Deep_Dive.md
+  - 06_强化学习/02_深度强化学习/PPO_Deep_Dive.md
 summary: RLHF通过人类偏好训练奖励模型，再用PPO等算法对齐LLM行为，是ChatGPT等模型安全可控的核心训练范式。
 provenance:
   extracted: 0.70
@@ -100,8 +100,8 @@ RLHF训练后的模型表现出明显的"对齐效应"：拒绝有害请求的�
 
 ## 来源
 
-- 06_强化学习/02_Deep_RL/Deep_RL.md
-- 06_强化学习/02_Deep_RL/PPO_Deep_Dive.md
+- 06_强化学习/02_深度强化学习/Deep_RL.md
+- 06_强化学习/02_深度强化学习/PPO_Deep_Dive.md
 
 ## 源码级洞察（基于 trl v1.9.0 归档源码）
 
@@ -112,7 +112,7 @@ RLHF训练后的模型表现出明显的"对齐效应"：拒绝有害请求的�
 - **奖励模型环节**：`trainer/reward_trainer.py` L227 `RewardTrainer` 实现 Bradley-Terry 成对比较训练，是三阶段流水线中 RM 阶段的参考实现。
 - **规模化基础设施**：`generation/vllm_client.py` L58 `VLLMClient` 提供训推分离（生成走 vLLM、训练进程 NCCL 同步权重），是工业级 RLHF 的关键工程模式。
 
-详见 [[07_模型训练/06_Alignment/RLHF_at_Scale_2026]] 第 13 节、[[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide]] 第 6 节。
+详见 [[07_模型训练/06_对齐训练/04_RLHF_at_Scale_2026]] 第 13 节、[[07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南]] 第 6 节。
 
 ## Related
 
@@ -120,7 +120,7 @@ RLHF训练后的模型表现出明显的"对齐效应"：拒绝有害请求的�
 - [[概念/dpo]] — DPO（直接偏好优化）
 - [[概念/grpo]] — GRPO（组相对策略优化）
 - [[概念/reward-modeling]] — 奖励模型
-- [[20_论文精读/06_Alignment/RLHF_DPO_Deep_Dive]] — RLHF 与 DPO 深度解读
+- [[20_论文精读/06_对齐研究/06_RLHF_DPO_深入分析]] — RLHF 与 DPO 深度解读
 - [[概念/deep-reinforcement-learning]] — 深度强化学习
 
 ---

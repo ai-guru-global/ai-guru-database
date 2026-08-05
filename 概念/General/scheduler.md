@@ -57,7 +57,7 @@ name_zh: "K8s 调度器"
 - [[概念/taint|Taint]] — 节点污点
 - [[概念/toleration|Toleration]] — 容忍污点
 - [[概念/affinity|Affinity]] — 亲和性调度
-- [[12_架构基建/Kubernetes_Core_Components_Deep_Dive|K8s 核心组件深度解析]]
+- [[12_架构基建/04_Kubernetes核心/01_Kubernetes核心_Components_深入分析|K8s 核心组件深度解析]]
 
 ---
 

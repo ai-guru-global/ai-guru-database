@@ -199,8 +199,8 @@ rocm-smi --showtopo
 - [[概念/GPU/nvidia-smi|nvidia-smi]]
 - [[概念/GPU/ppu-smi|ppu-smi]]
 - [[概念/Inference/model-serving|模型服务]]
-- [[12_架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
-- [[13_运维/06_Observability/index|GPU 监控体系]]
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析|AI Stack 深度解析]]
+- [[13_运维/06_可观测性/index|GPU 监控体系]]
 
 ---
 

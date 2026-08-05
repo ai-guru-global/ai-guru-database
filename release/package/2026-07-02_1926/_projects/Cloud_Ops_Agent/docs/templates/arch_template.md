@@ -27,9 +27,9 @@ sources: []
 
 ## 4. 交叉引用
 
-- [研发指南](../development/index.md)
-- [测试指南](../testing/index.md)
-- [运维指南](../operations/index.md)
+- [研发指南](../development/索引.md)
+- [测试指南](../testing/索引.md)
+- [运维指南](../operations/索引.md)
 
 ---
 

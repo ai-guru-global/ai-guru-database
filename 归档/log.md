@@ -8,7 +8,7 @@ title: Wiki Log
   - 创建主章节深度解析: RAG系统/Embeddings/Matryoshka_Representation_Learning_Deep_Dive.md
   - 创建小白版: RAG系统/Embeddings/Matryoshka_Representation_Learning_for_dummy.md
   - 创建论文深度解读: 论文精读/Efficiency/Matryoshka_Representation_Learning_Deep_Dive.md
-  - 更新 RAG系统/README.md、概念/matryoshka-representation-learning.md、概念/RAG/embedding-models.md、论文精读/README.md、index.md
+  - 更新 RAG系统/README.md、概念/matryoshka-representation-learning.md、概念/RAG/embedding-models.md、论文精读/README.md、索引.md
 - [2026-05-31T00:00:00Z] INIT
 - [2026-05-31T21:30:00+08:00] CROSS_LINK 概念/ core layer
 - [2026-05-31T21:30:00+08:00] WIKI_SYNTHESIZE 5 pages
@@ -48,7 +48,7 @@ title: Wiki Log
  - 第三轮（目录内交叉链接 + README 聚合）:
  - Talks: 20 个文件通过 `业界观点/README.md` 获得入链
  - Interviews: 46 个文件通过 `面试岗位/README.md` 获得入链
- - index.md 通过 `README.md` 获得入链
+ - 索引.md 通过 `README.md` 获得入链
  - **最终 orphans: 4** (仅 `.github/ISSUE_TEMPLATE/`，不属于 wiki 内容)
  - **Orphan rate: ~0%**
 - 链接总数: **3,425** wikilinks
@@ -272,7 +272,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - Health score: 96%
 
 ### Actions Taken
-- Fixed 3 broken links (mkdocs, index.md, false positives)
+- Fixed 3 broken links (mkdocs, 索引.md, false positives)
 - Injected 286 orphan links into category READMEs
 - Fixed 297 orphaned pages via cross-linker
 - Resolved code false positives in 4 files
@@ -404,7 +404,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 ### 新建合成页面（4 个）
 1. `治理/anomaly-detection-automl.md` — 异常检测 × AutoML：自动化异常发现 (02_Machine_Learning × concepts)
 2. `治理/agent-evaluation-model-evaluation.md` — Agent 评估 × 模型评估：从指标到行为的评估范式迁移 (13_Agent_Production × 08_Model_Evaluation)
-3. `治理/python-first-ml-model.md` — Python 基础 × 第一个 ML 模型：从零到一的实战桥梁 (01_Fundamentals × 02_Machine_Learning)
+3. `治理/python-first-ml-model.md` — Python 基础 × 第一个 ML 模型：从零到一的实战桥梁 (01_基础入门 × 02_Machine_Learning)
 4. `治理/llm-infrastructure-system-design.md` — LLM 基础设施 × 传统系统架构：从 Web 服务到 Token 工厂 (12_Architecture × concepts)
 
 ### 反向链接注入
@@ -493,7 +493,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 ### Pages Updated: 4
 - `学习/README.md` — 在“相关资源”中新增本课程链接
 - `学习/Learning_Paths_2026.md` — 在“推荐系统课程”中新增本课程
-- `index.md` — 在 References 部分新增课程索引与引用页
+- `索引.md` — 在 References 部分新增课程索引与引用页
 - `学习/Microsoft_AI_For_Beginners.md` — 课程表增加本地课程页链接
 
 ### 内容本地化说明
@@ -885,7 +885,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 | 目标目录 | 课程数 |
 |----------|--------|
 | 00_AI_Introduction | 1 |
-| 01_Fundamentals | 1 |
+| 01_基础入门 | 1 |
 | 04_NLP_LLMs | 9 |
 | 10_MLOps_Pipeline | 1 |
 | 11_RAG_Systems | 2 |
@@ -916,7 +916,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 | 500+ AI Projects | `原始/github-sources/500-ai-projects` | [[学习/References/Projects/500-ai-projects]] |
 
 **统计**: 35 个 wiki 页面创建/更新，6 个仓库浅克隆到 `原始/github-sources/`。
-**更新文件**: `index.md`, `学习/README.md`, `学习/Learning_Paths_2026.md`, `.manifest.json`, `治理/hot.md`。
+**更新文件**: `索引.md`, `学习/README.md`, `学习/Learning_Paths_2026.md`, `.manifest.json`, `治理/hot.md`。
 
 ---
 
@@ -942,7 +942,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - 更新 `概念/RAG/rag-systems.md`
   - Embedding 模型选型段落补充 MRL 模型推荐
   - frontmatter 增加 MRL 关系
-- 更新 `index.md`
+- 更新 `索引.md`
   - Concepts 部分新增 MRL 专题索引
 
 ### Manifest Updated
@@ -965,7 +965,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - 更新页面:
   - `部署推理/README.md` — 新增 GPUStack 导航、对比表与 Related 链接
   - `部署推理/Deployment_Fundamentals/Deployment_Inference.md` — 新增 GPUStack 选型建议与资源链接
-  - `index.md` — Concepts 部分新增 GPUStack 索引
+  - `索引.md` — Concepts 部分新增 GPUStack 索引
   - `README.md` — 2026 专题新增 GPUStack 深度解析入口
   - `mkdocs.yml` — Deployment & Inference 导航新增 GPUStack 两个页面
 - 覆盖内容:
@@ -984,7 +984,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
   - `架构基建/Hardware_Compute/CDI_Deep_Dive.md` — CDI 容器设备接口标准深度解析 (13,226 bytes)
 - 更新页面:
   - `架构基建/README.md` — 新增 CDI 导航行、学习路径项、Related 链接
-  - `index.md` — 新增「容器与设备接入」分组并登记 CDI 索引
+  - `索引.md` — 新增「容器与设备接入」分组并登记 CDI 索引
   - `数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive.md` — 关联区新增 CDI 反向链接（异构芯片统一接入）
 - 覆盖内容:
   - 旧世界痛点（NVIDIA 环境变量黑魔法 / 设备插件注入缺口）
@@ -1010,7 +1010,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
   - `部署推理/Inference_Engines/TGI_Deep_Dive.md` — Related 新增 CDI 链接
   - `架构基建/AI_Infrastructure_2026.md` — 新增 §2.5「设备如何进容器：CDI 标准」（补硬件→容器拼图）
   - `架构基建/README.md` — 导航表新增 CDI 小白版行
-  - `index.md` — Concepts 分组新增 cdi 概念卡片索引
+  - `索引.md` — Concepts 分组新增 cdi 概念卡片索引
 - 验证:
   - check_links.py：CDI 相关文件 0 broken markdown link（全库 358 为历史存量，非本次引入）
   - 自定义 wikilink 校验：3 个 CDI 文件全部出链解析通过
@@ -1034,8 +1034,8 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
   - `概念/heterogeneous-gpu.md` → CDI / DRA（异构接入核心，旧卡片零感知）
   - `概念/cdi.md` 延伸阅读 → 新增 DRA / GPU Operator / OCI 同族卡片
 - 登记:
-  - `index.md` Concepts 区新增 dra / gpu-operator / oci-runtime 三张卡
-  - `index.md` 容器与设备接入分组新增 DRA_Deep_Dive
+  - `索引.md` Concepts 区新增 dra / gpu-operator / oci-runtime 三张卡
+  - `索引.md` 容器与设备接入分组新增 DRA_Deep_Dive
   - `架构基建/README.md` 导航表新增 DRA_Deep_Dive 行
 - 知识图谱结构:
   - 形成设备接入主题集群：CDI(注入) ↔ DRA(分配) ↔ GPU Operator(运维) ↔ OCI Runtime(标准)
@@ -1073,9 +1073,9 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
   - 新增 §10「常见问题与排错」—— 6 大类（配置发现 / 生成同步 / 版本兼容 / 注入冲突 / 排查 / 安全）+ 排错决策树，覆盖 spec 找不到、忘重启 runtime、MIG 不同步、Docker feature flag、hooks 报错隐晦、隔离失效等真实坑
   - 「官方资源」段加引向 [[架构基建/Hardware_Compute/CDI_Spec_Reference]] 的 wiki 链接
   - 目录更新为 §1–§11
-- 登记: `index.md` 容器与设备接入分组新增 参考/cdi-spec
+- 登记: `索引.md` 容器与设备接入分组新增 参考/cdi-spec
 - 校验: 新文件 wikilink 全部解析；check_links.py 对新文件 0 broken；参考/cdi-spec 获 2 入链（index + Deep_Dive）非 orphan
-- 副作用备注(非本会话): index.md 的 `_llm-ecosystem-analysis-2026-06-15` 链接因外部重构(文件→治理/)而悬空，非本次引入，留待重构进程统一处理
+- 副作用备注(非本会话): 索引.md 的 `_llm-ecosystem-analysis-2026-06-15` 链接因外部重构(文件→治理/)而悬空，非本次引入，留待重构进程统一处理
 
 
 

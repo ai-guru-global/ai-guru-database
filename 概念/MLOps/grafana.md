@@ -71,7 +71,7 @@ name_zh: "可视化监控平台"
 
 ## Related
 
-- [[11_模型运维/08_Observability/Prometheus_Grafana_Deep_Dive]] — Prometheus + Grafana 深度解析
+- [[11_模型运维/08_可观测性/15_Prometheus_Grafana_深入分析]] — Prometheus + Grafana 深度解析
 - [[概念/prometheus]] — Prometheus 监控系统
 - [[概念/observability]] — 可观测性
 - [[13_运维/AI_Observability_Guide_2026]] — AI 可观测指南 2026

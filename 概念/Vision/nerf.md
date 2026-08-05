@@ -11,7 +11,7 @@ relationships:
   - target: "[[概念/Vision/stable-diffusion]]"
     type: related_to
 sources:
-  - 04_计算机视觉/05_3D_Vision/3D_Vision.md
+  - 04_计算机视觉/05_三维视觉/3D_Vision.md
 summary: NeRF 用一个 MLP 将 3D 空间的位置和观察方向映射为颜色和密度，通过体积渲染从 2D 照片重建可从任意新视角合成的 3D 场景，开启了神经渲染的新范式。
 provenance:
   extracted: 0.82
@@ -185,7 +185,7 @@ NeRF 的 MLP 采用特殊设计以实现视图相关的颜色：
 
 ## 来源
 
-- 04_计算机视觉/05_3D_Vision/3D_Vision.md
+- 04_计算机视觉/05_三维视觉/3D_Vision.md
 - Mildenhall et al., "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis", ECCV 2020
 - Kerbl et al., "3D Gaussian Splatting for Real-Time Radiance Field Rendering", SIGGRAPH 2023
 

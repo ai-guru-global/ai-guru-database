@@ -71,7 +71,7 @@ AI 治理是组织管理 AI 风险的核心框架：
 
 - [[概念/Safety/ai-alignment]] — AI 对齐 (共享: alignment, safety)
 - [[概念/Safety/ai-ethics]] — AI 伦理 (共享: ethics, governance)
-- [[17_伦理安全/03_Governance]] — 治理专题
+- [[17_伦理安全/03_AI治理]] — 治理专题
 
 ## 核心知识框架
 
@@ -134,15 +134,6 @@ AI 治理是组织管理 AI 风险的核心框架：
 | Maintainability | 可维护性 |
 | Observability | 可观测性 |
 | Reliability | 可靠性 |
-
-## 检查清单
-
-- [ ] 核心概念已理解
-- [ ] 基本操作已掌握
-- [ ] 实践项目已完成
-- [ ] 常见问题能解决
-- [ ] 前沿趋势有关注
-- [ ] 知识已沉淀文档化
 
 ## 进阶内容补充
 

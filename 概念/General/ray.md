@@ -14,8 +14,8 @@ relationships:
   - target: "概念/deepspeed"
     type: related_to
 sources:
-  - 07_模型训练/04_Distributed_Training/Ray_Deep_Dive.md
-  - 12_架构基建/05_CNCF_Cloud_Native_AI/KubeRay_Deep_Dive.md
+  - 07_模型训练/04_分布式训练/Ray_Deep_Dive.md
+  - 12_架构基建/05_CNCF云原生AI/KubeRay_Deep_Dive.md
 summary: "Ray 是通用分布式计算框架，以 Task/Actor 抽象简化 Python 并行编程；KubeRay 是 CNCF Sandbox 的 Kubernetes Operator，用于在 K8s 上部署和运维 Ray 集群，广泛应用于 LLM 训练、推理服务和数据预处理。"
 provenance:
   extracted: 0.75
@@ -158,12 +158,12 @@ result = ray.get(predictor.predict.remote(x))
 
 ## Related
 
-- [[07_模型训练/04_Distributed_Training/Ray_Deep_Dive]] — Ray 深度解析
-- [[12_架构基建/05_CNCF_Cloud_Native_AI/KubeRay_Deep_Dive]] — KubeRay 深度解析
+- [[07_模型训练/04_分布式训练/13_Ray_深入分析]] — Ray 深度解析
+- [[12_架构基建/05_CNCF云原生AI/15_KubeRay_深入分析]] — KubeRay 深度解析
 - [[概念/distributed-training]] — 分布式训练
 - [[概念/hami]] — HAMi GPU 虚拟化
-- [[07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive]] — DeepSpeed
-- [[10_部署推理/02_Inference_Engines/KServe_Deep_Dive]] — KServe
+- [[07_模型训练/04_分布式训练/02_DeepSpeed_深入分析]] — DeepSpeed
+- [[10_部署推理/02_推理引擎/11_KServe_深入分析]] — KServe
 
 ---
 

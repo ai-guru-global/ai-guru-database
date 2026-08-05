@@ -10,7 +10,7 @@ relationships:
   - target: "概念/distributed-systems"
     type: extends
 sources:
-  - 12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026
+  - 12_架构基建/02_架构概览/AI_Infrastructure_2026
 summary: "etcd 是 CNCF Graduated 的分布式键值存储，使用 Raft 共识算法，是 Kubernetes 的元数据存储后端，也广泛用于服务发现、配置管理和分布式锁。"
 provenance:
   extracted: 0.8
@@ -94,7 +94,7 @@ etcdctl snapshot save backup.db
 - [[概念/kubernetes]] — Kubernetes
 - [[概念/distributed-systems]] — 分布式系统
 - [[概念/consensus]] — 共识算法
-- [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[12_架构基建/02_架构概览/02_AI_基础设施_2026]] — AI 基础设施 2026
 
 ---
 

@@ -28,7 +28,7 @@ baseline: _meta/_evaluation-2026-06-24.md (2026-06-24, 8.5/10)
 | **aliases 字段覆盖** | 2.8% (38/1,359) | **94.7% (1,292/1,364)** | ⬆ +91.9pp |
 | **概念页数量** | 194 | **199** (+5) | ⬆ +2.6% |
 | **速查表数量** | 3 | **8** (+5) | ⬆ +167% |
-| **hot.md / index.md 断链** | 14 (8+6) | **0** | ⬇ -100% |
+| **hot.md / 索引.md 断链** | 14 (8+6) | **0** | ⬇ -100% |
 | **断链治理工具** | 简单计数 | **分类 JSON 报告** | 升级 |
 | **自动化脚本** | 7 | **9** (+2) | ⬆ +28.6% |
 
@@ -52,12 +52,12 @@ baseline: _meta/_evaluation-2026-06-24.md (2026-06-24, 8.5/10)
 
 **P0-1 收益**: 消除 39 处断链（高频引用概念全部可解析）。
 
-### ✅ P0-2：修复 hot.md / index.md 路径
+### ✅ P0-2：修复 hot.md / 索引.md 路径
 
 | 文件 | 修复内容 |
 |------|---------|
 | `hot.md` | `_meta/_synthesis-*` → `_synthesis/synthesis-*`（4 处）<br>_meta/cheatsheet-* → `_meta/cheatsheets/cheatsheet-*`（3 处）|
-| `index.md` | 同上（7 处）|
+| `索引.md` | 同上（7 处）|
 
 **P0-2 收益**: 两个顶层导航文件 14 条断链 → 0。
 
@@ -201,7 +201,7 @@ python3 _tools/check_links.py . --json report.json # 输出 JSON
 | _concepts | 195 | 新增 5 个 + 2 个 alias + 188 个 tier/aliases |
 | _meta/cheatsheets | 8 | 5 新增 + 3 已有 |
 | _meta 报告 | 2 | 本次新增 |
-| hot.md / index.md | 2 | 路径重写 |
+| hot.md / 索引.md | 2 | 路径重写 |
 | **总计** | **1328** | |
 
 ---

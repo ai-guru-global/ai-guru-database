@@ -167,7 +167,7 @@ LoRA约束参数更新为低秩形式：ΔW = BA（B∈ℝ^{d×r}, A∈ℝ^{r×k
 
 ## 来源
 
-- 01_数学基础/02_Linear_Algebra/Linear_Algebra.md
+- 01_数学基础/02_线性代数/Linear_Algebra.md
 - 3Blue1Brown: Essence of Linear Algebra
 - LoRA: Low-Rank Adaptation of Large Language world-models-jepa (arXiv:2106.09685)
 - Attention Is All You Need (arXiv:1706.03762)

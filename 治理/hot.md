@@ -22,12 +22,12 @@ name_zh: "热门页面"
 - [[概念/gradient-descent|梯度下降]] — 最小化模型误差的参数优化算法
 
 ### 主章节大白话专题页
-- [[05_大模型/05_LLM_Architectures/Architecture_Evolution_for_dummy|LLM 架构演进大白话]] — KV 压缩、Mamba、RetNet
+- [[05_大模型/05_LLM架构/04_LLM_架构_Evolution|LLM 架构演进大白话]] — KV 压缩、Mamba、RetNet
 - [[07_模型训练/Data_and_FineTuning_for_dummy|数据与微调大白话]] — 数据清洗 Pipeline、DoRA、RS-LoRA
-- [[10_部署推理/Inference_Optimization_for_dummy|推理优化大白话]] — SGLang、动态批调度、GGUF、SmoothQuant、TensorRT-LLM
-- [[14_RAG系统/Agentic_RAG_Applications_for_dummy|Agentic RAG 应用大白话]] — Agentic RAG、Text2SQL、代码生成工作流
+- [[10_部署推理/03_推理优化/06_kv_cache_inference_optimization|推理优化大白话]] — SGLang、动态批调度、GGUF、SmoothQuant、TensorRT-LLM
+- [[14_RAG系统/04_高级RAG/02_Agentic_RAG_指南|Agentic RAG 应用大白话]] — Agentic RAG、Text2SQL、代码生成工作流
 - [[15_智能体/Agent_Safety_Evaluation_for_dummy|Agent 安全与评估大白话]] — 工具调用安全、Agent 评估基准
-- [[08_模型评估/02_Benchmarks/LLM_Benchmarks_for_dummy|LLM 评估与测试大白话]] — BBH、Arena、红队测试、CI 集成评估、A/B 测试框架
+- [[08_模型评估/02_基准测试/LLM_Benchmarks_for_dummy|LLM 评估与测试大白话]] — BBH、Arena、红队测试、CI 集成评估、A/B 测试框架
 
 ### 新增概念卡片（26 张）
 - 架构：[[概念/kv-cache-compression|KV Cache 压缩]]、[[概念/mamba|Mamba]]、[[概念/retnet|RetNet]]
@@ -44,8 +44,8 @@ name_zh: "热门页面"
 
 > 在 GPUStack 深度解析和入门指南中新增两个高频问题的大白话解答。
 
-- [[10_部署推理/07_GPU_Infrastructure/GPUStack_Deep_Dive|GPUStack 深度解析]] — 新增 14.4 大白话 FAQ: GPUStack 底座不是 K8s; PPU 通过驱动 + Runtime 探测纳管
-- [[10_部署推理/07_GPU_Infrastructure/GPUStack_for_dummy|GPUStack 入门指南]] — 新增“常见问题（大白话）”节, 解释 K8s 关系与 PPU 纳管
+- [[10_部署推理/05_硬件与算力/01_GPUStack_深入分析|GPUStack 深度解析]] — 新增 14.4 大白话 FAQ: GPUStack 底座不是 K8s; PPU 通过驱动 + Runtime 探测纳管
+- [[概念/GPU/gpustack|GPUStack 入门指南]] — 新增“常见问题（大白话）”节, 解释 K8s 关系与 PPU 纳管
 - [[概念/gpustack|GPUStack 概念卡片]] — 补充“底座不是 K8s”和“PPU 国产芯片纳管”要点
 
 ## 2026-06-15 大白话概念系列（2 页）
@@ -59,9 +59,9 @@ name_zh: "热门页面"
 
 > 通过 ModelScope 官方 API 全量抓取 15 家中国大模型厂商的组织信息与已发布模型清单，共 1,621 个官方模型、1.97 亿次累计下载。
 
-### 模型目录与索引（05_大模型/15_Chinese_LLM_Ecosystem/）
-- [[05_大模型/15_Chinese_LLM_Ecosystem/ModelScope_Model_Catalog]] — 15 家厂商 ModelScope 模型目录（组织信息 + Top 模型精选 + 许可/任务统计）
-- [[05_大模型/15_Chinese_LLM_Ecosystem/ModelScope_Model_Index]] — 全量 1,621 个模型完整索引表（按厂商分组、下载量排序）
+### 模型目录与索引（05_大模型/15_中国LLM生态/）
+- [[05_大模型/15_中国LLM生态/ModelScope_Model_Catalog]] — 15 家厂商 ModelScope 模型目录（组织信息 + Top 模型精选 + 许可/任务统计）
+- [[05_大模型/15_中国LLM生态/ModelScope_Model_Index]] — 全量 1,621 个模型完整索引表（按厂商分组、下载量排序）
 
 ### 原始数据（来源/modelscope/）
 - `来源/modelscope/README.md` — 数据源说明 + 抓取方法 + org→namespace 映射
@@ -74,18 +74,18 @@ name_zh: "热门页面"
 > 完成最后两本未蒸馏书（llm_internals、ai_beginner_guide 剩余章节），yeasy 9 本书全部融入 wiki。
 
 ### LLM 原理与架构（4 页，05_大模型/）
-- [[05_大模型/05_LLM_Architectures/LLM_Internals_Architecture]] — 序列建模演进、注意力机制、Transformer 组件、位置编码
-- [[05_大模型/05_LLM_Architectures/LLM_Internals_Training]] — 预训练/Scaling Law、AdamW、分布式训练、对齐 SFT/RLHF/DPO/LoRA
-- [[05_大模型/05_LLM_Architectures/LLM_Internals_Inference]] — 解码策略、KV Cache/GQA/MLA、Flash Attention、量化、投机解码
-- [[05_大模型/05_LLM_Architectures/LLM_Internals_Models_Frontiers]] — BERT/GPT/Llama/DeepSeek 家族、MoE/SSM/测试时计算
+- [[05_大模型/05_LLM架构/06_LLM_Internals_架构]] — 序列建模演进、注意力机制、Transformer 组件、位置编码
+- [[05_大模型/05_LLM架构/09_LLM_Internals_训练]] — 预训练/Scaling Law、AdamW、分布式训练、对齐 SFT/RLHF/DPO/LoRA
+- [[05_大模型/05_LLM架构/07_LLM_Internals_推理]] — 解码策略、KV Cache/GQA/MLA、Flash Attention、量化、投机解码
+- [[05_大模型/05_LLM架构/LLM_Internals_Models_Frontiers]] — BERT/GPT/Llama/DeepSeek 家族、MoE/SSM/测试时计算
 
 ### AI 入门基础（6 页，跨目录）
-- [[00_入门/AI_Beginner_Fundamentals]] — AI 定义/历史/强vs弱、AI⊃ML⊃DL、技术生态
-- [[02_机器学习/ML_For_Beginners]] — 四大学习范式、评估指标与选型
+- [[00_入门/01_基础入门/02_AI基础]] — AI 定义/历史/强vs弱、AI⊃ML⊃DL、技术生态
+- [[02_机器学习/01_机器学习基础/07_ML_入门]] — 四大学习范式、评估指标与选型
 - [[03_深度学习/Deep_Learning_For_Beginners]] — 神经网络、梯度下降、主流架构与局限
-- [[05_大模型/LLM_For_Beginners]] — Next Token Prediction、注意力、预训练→微调→RLHF
+- [[05_大模型/01_LLM基础/04_LLM_入门]] — Next Token Prediction、注意力、预训练→微调→RLHF
 - [[00_入门/AI_Application_Scenarios]] — BROKE 框架、上下文工程、五大应用场景
-- [[17_伦理安全/AI_Ethics_And_Future_For_Beginners]] — 伦理/对齐、就业、AGI、AI 硬件与量子
+- [[17_伦理安全/01_伦理基础/04_ai_ethics_future]] — 伦理/对齐、就业、AGI、AI 硬件与量子
 
 ---
 
@@ -104,7 +104,7 @@ name_zh: "热门页面"
 - [[概念/guardrails]] — AI 护栏体系
 
 ### 跨书综合页（4 页，治理/）
-- [[治理/synthesis-engineering-evolution]] — 提示词→上下文→Harness 三阶演进
+- [[治理/_meta/_synthesis-readme-archive]] — 提示词→上下文→Harness 三阶演进
 - [[治理/synthesis-llm-security-pipeline]] — 安全全链路：训练投毒到推理防御
 - [[治理/synthesis-architecture-selection-guide]] — 架构选型决策树
 - [[治理/synthesis-memory-systems]] — 记忆体系全景：KV Cache 到知识图谱
@@ -136,9 +136,9 @@ name_zh: "热门页面"
 - 📊 **Benchmark**: FrontierSWE 仅落后 Opus 4.8 1% (超 GPT-5.5 / Opus 4.7), Terminal-Bench 2.1 较 GLM-5.1 +17.5%
 
 ### 更新页面
-- [[05_大模型/15_Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 新增 §"GLM-5.2 正式发布与开源详解" (9 小节, 含架构/国产算力/部署/Agent 产品/未来路线)
-- [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — GLM 行升级到 GLM-5.2, 国产算力适配列扩展为 8 家
-- [[05_大模型/15_Chinese_LLM_Ecosystem/README]] — 第一梯队 GLM 行更新
+- [[05_大模型/15_中国LLM生态/09_GLM_Zhipu_深入分析]] — 新增 §"GLM-5.2 正式发布与开源详解" (9 小节, 含架构/国产算力/部署/Agent 产品/未来路线)
+- [[05_大模型/15_中国LLM生态/04_Chinese_LLM_对比_矩阵]] — GLM 行升级到 GLM-5.2, 国产算力适配列扩展为 8 家
+- [[05_大模型/15_中国LLM生态/README]] — 第一梯队 GLM 行更新
 - [[来源/wechat/2026-06-glm-5.2-release]] — 原文存档
 
 ### 信源
@@ -151,114 +151,41 @@ name_zh: "热门页面"
 ## 2026-06-16 Yeasy AI 知识库系列融合（26 页）
 
 ### 提示词与上下文工程
-- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering_Complete_Guide]] — 提示词工程核心技术
-- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering_Advanced_Apps]] — 提示词高级应用
-- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering_Templates_Patterns]] — 模板库与反模式
-- [[05_大模型/08_Prompt_Engineering/Context_Engineering_Guide]] — 上下文工程权威指南
-- [[05_大模型/08_Prompt_Engineering/Context_Engineering_Patterns]] — 上下文工程模式
+- [[05_大模型/08_提示工程/13_Prompt工程_完整_指南]] — 提示词工程核心技术
+- [[05_大模型/08_提示工程/12_Prompt工程_高级_Apps]] — 提示词高级应用
+- [[05_大模型/08_提示工程/15_Prompt工程_模板_模式]] — 模板库与反模式
+- [[05_大模型/08_提示工程/01_Context_工程_指南]] — 上下文工程权威指南
+- [[05_大模型/08_提示工程/02_Context_工程_模式]] — 上下文工程模式
 
 ### LLM 原理与架构
 - [[05_大模型/Transformer_Deep_Dive]] — Transformer 深度解析
-- [[07_模型训练/01_Training_Fundamentals/LLM_Training_Deep_Dive]] — LLM 训练深度解析
-- [[10_部署推理/03_Inference_Optimization/LLM_Inference_Deep_Dive]] — LLM 推理深度解析
-- [[05_大模型/05_LLM_Architectures/LLM_Architecture_Evolution]] — LLM 架构演进
+- [[07_模型训练/01_训练基础/03_LLM_训练_深入分析]] — LLM 训练深度解析
+- [[10_部署推理/03_推理优化/02_LLM推理_深入分析]] — LLM 推理深度解析
+- [[05_大模型/05_LLM架构/04_LLM_架构_Evolution]] — LLM 架构演进
 
 ### AI 入门与新架构
-- [[00_入门/AI_Reasoning_Models_Guide]] — 推理模型指南
+- [[00_入门/02_技术概览/04_AI_推理模型_指南]] — 推理模型指南
 - [[00_入门/AI_New_Architectures]] — 新架构（SSM/DeepSeek）
-- [[00_入门/AI_Multimodal_GenAI]] — 多模态与生成式 AI
+- [[00_入门/02_技术概览/02_AI_多模态_GenAI]] — 多模态与生成式 AI
 
 ### Claude 与 AI 编码
-- [[16_编程/05_Tools/Claude_Complete_Guide]] — Claude 完整指南
-- [[16_编程/05_Tools/Claude_Code_Deep_Dive]] — Claude Code 深度解析
-- [[16_编程/02_Theory/Claude_Agent_Architecture]] — Claude Agent 架构
+- [[16_编程/05_开发工具/03_Claude_完整_指南]] — Claude 完整指南
+- [[16_编程/05_开发工具/02_Claude_Code_深入分析]] — Claude Code 深度解析
+- [[16_编程/02_理论基础/02_Claude_Agent_架构]] — Claude Agent 架构
 
 ### 智能体与 Harness
-- [[15_智能体/01_Agent_Foundations/Agentic_AI_Complete_Guide]] — 智能体 AI 完整指南
-- [[15_智能体/01_Agent_Foundations/Multi_Agent_Systems_Guide]] — 多智能体系统
-- [[15_智能体/03_Agent_Workflow/AgentOps_Production_Guide]] — AgentOps 生产指南
-- [[15_智能体/04_Agent_Harness/Harness_Engineering_Complete_Guide]] — Harness 工程完整指南
-- [[15_智能体/04_Agent_Harness/Harness_Core_Subsystems]] — Harness 核心子系统
-- [[15_智能体/04_Agent_Harness/Harness_Production_Security]] — Harness 生产安全
+- [[15_智能体/01_Agent基础/12_Agentic_AI_完整_指南]] — 智能体 AI 完整指南
+- [[概念/Agent/multi-agent]] — 多智能体系统
+- [[15_智能体/03_Agent工作流/03_AgentOps_生产_指南]] — AgentOps 生产指南
+- [[15_智能体/04_Agent脚手架/05_脚手架_工程_完整_指南]] — Harness 工程完整指南
+- [[15_智能体/04_Agent脚手架/02_脚手架_核心_Subsystems]] — Harness 核心子系统
+- [[15_智能体/04_Agent脚手架/07_脚手架_生产_安全]] — Harness 生产安全
 
 ### OpenClaw
-- [[15_智能体/11_OpenClaw_Ecosystem/OpenClaw_Complete_Guide]] — OpenClaw 完整指南
-- [[15_智能体/11_OpenClaw_Ecosystem/OpenClaw_Internals]] — OpenClaw 内部实现
+- [[15_智能体/11_OpenClaw生态/04_OpenClaw_完整_指南]] — OpenClaw 完整指南
+- [[15_智能体/11_OpenClaw生态/06_OpenClaw_Internals]] — OpenClaw 内部实现
 
 ### 安全
-- [[17_伦理安全/LLM_Security_Complete_Guide]] — LLM 安全完整指南
-- [[17_伦理安全/LLM_Security_Defense_Guide]] — LLM 安全防御指南
-- [[17_伦理安全/Agent_RAG_Security]] — Agent 与 RAG 安全
-
-## 核心知识体系
-
-| 知识域 | 核心内容 | 重要程度 | 学习优先级 |
-|--------|----------|----------|------------|
-| 基础理论 | 核心概念/原理/方法论 | 最高 | P0 |
-| 技术实践 | 工具/框架/最佳实践 | 高 | P0 |
-| 工程方法 | 设计模式/架构/流程 | 高 | P1 |
-| 前沿趋势 | 新技术/新方向/研究 | 中 | P2 |
-| 行业应用 | 实际案例/落地经验 | 中 | P1 |
-
-## 技术对比与选型
-
-| 维度 | 方案A | 方案B | 方案C | 选型建议 |
-|------|-------|-------|-------|----------|
-| 性能 | 高吞吐 | 低延迟 | 均衡 | 按场景选择 |
-| 复杂度 | 简单 | 中等 | 复杂 | 按团队能力 |
-| 成本 | 低 | 中 | 高 | 按预算约束 |
-| 生态 | 成熟 | 发展中 | 新兴 | 按稳定性需求 |
-| 扩展性 | 有限 | 良好 | 优秀 | 按增长预期 |
-
-## 最佳实践清单
-
-| 实践 | 说明 | 优先级 | 预期收益 |
-|------|------|--------|----------|
-| 标准化流程 | 统一规范和流程 | P0 | 减少错误+提升效率 |
-| 自动化 | 重复工作自动化 | P0 | 节省时间+降低风险 |
-| 持续监控 | 关键指标实时监控 | P1 | 及时发现问题 |
-| 定期回顾 | 周期性复盘改进 | P1 | 持续优化 |
-| 知识沉淀 | 文档化经验教训 | P2 | 团队能力提升 |
-| 安全优先 | 安全贯穿全流程 | P0 | 降低风险 |
-
-## 常见问题与解决方案
-
-| 问题 | 根因分析 | 解决方案 | 预防措施 |
-|------|----------|----------|----------|
-| 效率低下 | 流程不规范/工具不当 | 优化流程+引入工具 | 标准化+培训 |
-| 质量不稳定 | 缺乏检查机制 | 引入质量门禁 | 自动化测试 |
-| 协作困难 | 职责不清/沟通不畅 | 明确分工+定期同步 | 文档化+工具 |
-| 技术债务 | 赶工忽略质量 | 定期重构+代码审查 | 质量优先文化 |
-| 安全风险 | 意识不足/措施缺失 | 安全培训+工具扫描 | 安全左移 |
-
-## 学习路径建议
-
-| 阶段 | 内容 | 时间 | 产出 |
-|------|------|------|------|
-| 入门 | 核心概念+基础操作 | 1-2周 | 理解基本框架 |
-| 基础 | 工具使用+简单实践 | 2-3周 | 能独立完成基础任务 |
-| 进阶 | 深入原理+复杂场景 | 3-4周 | 能处理复杂问题 |
-| 实战 | 生产级应用+优化 | 4-6周 | 独立负责项目 |
-| 精通 | 架构设计+前沿探索 | 持续 | 技术领导力 |
-
-## 术语速查表
-
-| 术语 | 含义 |
-|------|------|
-| Best Practice | 行业公认的最佳做法 |
-| Anti-pattern | 反模式(应避免的做法) |
-| Technical Debt | 技术债务(为速度牺牲质量) |
-| CI/CD | 持续集成/持续部署 |
-| SLA | 服务等级协议 |
-| KPI | 关键绩效指标 |
-| ROI | 投资回报率 |
-| TCO | 总拥有成本 |
-
-## 检查清单
-
-- [ ] 核心概念和原理已理解
-- [ ] 主流工具和框架已掌握
-- [ ] 最佳实践已应用到工作中
-- [ ] 常见问题能独立解决
-- [ ] 持续关注前沿趋势
-- [ ] 知识已文档化沉淀
+- [[17_伦理安全/06_系统安全/05_LLM_安全_完整_指南]] — LLM 安全完整指南
+- [[17_伦理安全/06_系统安全/06_LLM_安全_Defense_指南]] — LLM 安全防御指南
+- [[17_伦理安全/06_系统安全/01_Agent_RAG_安全]] — Agent 与 RAG 安全

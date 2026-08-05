@@ -261,4 +261,4 @@ nerdctl compose ps
 - [[概念/kubernetes]] — Kubernetes 编排
 - [[概念/helm]] — Helm 包管理
 - [[概念/kustomize]] — Kustomize 配置管理
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析

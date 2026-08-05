@@ -889,11 +889,11 @@ alerts:
 
 | 相关文档 | 说明 |
 |---------|------|
-| [研发指南](../development/index.md) | 了解如何开发新组件 |
-| [测试指南](../testing/index.md) | 了解测试策略 |
-| [运维指南](../operations/index.md) | 了解运维实践 |
-| [语料指南](./corpus/index.md) | 了解 AI 能力需求 |
-| [产品指南](./product/index.md) | 了解产品需求 |
+| [研发指南](../development/索引.md) | 了解如何开发新组件 |
+| [测试指南](../testing/索引.md) | 了解测试策略 |
+| [运维指南](../operations/索引.md) | 了解运维实践 |
+| [语料指南](./corpus/索引.md) | 了解 AI 能力需求 |
+| [产品指南](./product/索引.md) | 了解产品需求 |
 
 ---
 

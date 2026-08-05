@@ -218,7 +218,7 @@ flowchart LR
 
 ## 来源
 
-- 04_计算机视觉/02_Image_Classification_Detection/Image_Classification_Detection.md
+- 04_计算机视觉/02_图像分类与检测/Image_Classification_Detection.md
 - Redmon et al., "You Only Look Once" (YOLO), CVPR 2016
 - Ren et al., "Faster R-CNN", NeurIPS 2015
 - Carion et al., "End-to-End Object Detection with Transformers" (DETR), ECCV 2020

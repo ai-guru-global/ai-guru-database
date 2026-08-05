@@ -95,10 +95,10 @@ name_zh: "特征存储"
 
 ## Related
 
-- [[11_模型运维/04_Experiment_Tracking/Feature_Store_Deep_Dive]] — Feature Store 深度解析
-- [[11_模型运维/04_Experiment_Tracking/Feast_Deep_Dive]] — Feast 框架深度解析
+- [[11_模型运维/04_实验追踪/Feature_Store_Deep_Dive]] — Feature Store 深度解析
+- [[11_模型运维/04_实验追踪/04_Feast_深入分析]] — Feast 框架深度解析
 - [[概念/experiment-tracking]] — 实验追踪概念
-- [[14_RAG系统/03_Vector_Databases/index]] — 向量数据库（非结构化特征存储）
+- [[14_RAG系统/03_向量数据库/index]] — 向量数据库（非结构化特征存储）
 
 ---
 

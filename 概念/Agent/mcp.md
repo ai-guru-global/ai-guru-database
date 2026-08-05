@@ -222,4 +222,4 @@ if __name__ == "__main__":
 - [[概念/Agent/tool-calling-safety|工具调用安全]] — 工具执行的安全保障
 - [[概念/Agent/mcp|MCP 深度解析]] — 协议规范详解
 - [[概念/Agent/agentic-rag|Agentic RAG]] — MCP 赋能的检索增强生成
-- [[14_RAG系统/06_RAG_Frameworks/index|RAG 框架]] — MCP 在 RAG 管道中的应用
+- [[14_RAG系统/06_RAG框架/index|RAG 框架]] — MCP 在 RAG 管道中的应用

@@ -66,7 +66,7 @@ sources: []
 | 06_Reinforcement_Learning | 28 | 46,149 | ⭐⭐⭐⭐☆ | RL + 具身智能覆盖 |
 | 22_Papers | 24 | 46,201 | ⭐⭐⭐⭐☆ | 论文笔记深度好 |
 | 02_Machine_Learning | 35 | 40,555 | ⭐⭐⭐⭐☆ | 8 个子主题均衡 |
-| 01_Fundamentals | 29 | 43,171 | ⭐⭐⭐⭐⭐ | 数学/硬件/分布式齐全 |
+| 01_基础入门 | 29 | 43,171 | ⭐⭐⭐⭐⭐ | 数学/硬件/分布式齐全 |
 | 09_Deployment_Inference | 25 | 33,323 | ⭐⭐⭐⭐☆ | 量化/vLLM 深入 |
 | 18_Cloud_Ops_Agent | 19 | 33,174 | ⭐⭐⭐⭐☆ | 云原生 + Agent Ops |
 | 19_Ethics_Safety | 27 | 32,536 | ⭐⭐⭐⭐☆ | 7 个安全子方向 |

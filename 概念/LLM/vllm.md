@@ -6,10 +6,10 @@ aliases:
   - "vllm-engine"
 category: -concepts
 sources:
-  - 10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md
-  - 10_部署推理/02_Inference_Engines/TGI_Deep_Dive.md
-  - 10_部署推理/02_Inference_Engines/Modal_Deep_Dive.md
-  - 10_部署推理/02_Inference_Engines/KServe_Deep_Dive.md
+  - 10_部署推理/02_推理引擎/vLLM_Deep_Dive.md
+  - 10_部署推理/02_推理引擎/TGI_Deep_Dive.md
+  - 10_部署推理/02_推理引擎/Modal_Deep_Dive.md
+  - 10_部署推理/02_推理引擎/KServe_Deep_Dive.md
 relationships:
   - target: "概念/llm-inference-engine"
     type: related_to
@@ -143,9 +143,9 @@ vllm serve meta-llama/Llama-3-70B-Instruct \
 ## 与其他推理引擎的关系
 
 - [[概念/llm-inference-engine]] — 概念族总览
-- [[TGI_Deep_Dive]] — HuggingFace 系，Rust 内核，对小模型友好
-- [[TensorRT_LLM_Deep_Dive]] — NVIDIA 极致优化，性能最高但灵活性低
-- [[SGLang_Deep_Dive]] — UC Berkeley 同期作品，强在复杂控制流（Agent）
+- [[10_部署推理/02_推理引擎/26_TGI_深入分析]] — HuggingFace 系，Rust 内核，对小模型友好
+- [[10_部署推理/02_推理引擎/25_TensorRT_LLM_深入分析]] — NVIDIA 极致优化，性能最高但灵活性低
+- [[10_部署推理/02_推理引擎/23_SGLang_深入分析]] — UC Berkeley 同期作品，强在复杂控制流（Agent）
 - [[KServe_Deep_Dive]] — Kubernetes 原生 serving 框架，常与 vLLM 搭配
 
 ## 何时选择 vLLM
@@ -174,7 +174,7 @@ vllm serve meta-llama/Llama-3-70B-Instruct \
 
 ---
 
-**参见**：[[vLLM_Deep_Dive]] · [[LLM_Inference_Deep_Dive]] · [[10_部署推理/02_Inference_Engines/README]] · [[10_部署推理/README|部署推理]]
+**参见**：[[10_部署推理/02_推理引擎/29_vLLM_深入分析]] · [[10_部署推理/03_推理优化/02_LLM推理_深入分析]] · [[10_部署推理/02_推理引擎/README]] · [[10_部署推理/README|部署推理]]
 
 ---
 
@@ -204,4 +204,4 @@ vllm serve meta-llama/Llama-3-70B-Instruct \
 - [[概念/Inference/paged-attention|PagedAttention]]
 - [[概念/Inference/continuous-batching|Continuous Batching]]
 - [[概念/LLM/exllama|ExLlamaV2]]
-- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_部署推理/02_推理引擎/29_vLLM_深入分析|vLLM 深度解析]]

@@ -105,7 +105,7 @@ QwQ 推理流程
 - [[概念/qwen3-pro]] — Qwen3-Pro 优化模型
 - [[概念/deepseek-models]] — DeepSeek 系列
 - [[概念/cot-react-reasoning-prompt]] — CoT 推理提示
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 

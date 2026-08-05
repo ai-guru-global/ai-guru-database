@@ -13,11 +13,11 @@ relationships:
     type: compressed_by
   - target: "概念/kv-cache-compression"
     type: generalized_by
-  - target: "10_部署推理/06_Caching/KV_Cache_Deep_Dive"
+  - target: "10_部署推理/03_推理优化/KV_Cache_Deep_Dive"
     type: deepened_by
 sources:
   - 12_架构基建/AI_Stack_Deep_Dive.md
-  - 10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md
+  - 10_部署推理/02_推理引擎/vLLM_Deep_Dive.md
 summary: KV Cache 是自回归 LLM 推理的核心优化——缓存已计算的 Key/Value 向量避免重复计算，将时间复杂度从 O(T²) 降至 O(T)。但 128K+ 上下文时 KV Cache 显存超过模型参数本身，催生 PagedAttention、MLA、FP8 量化等优化技术。
 provenance:
   extracted: 0.85
@@ -132,7 +132,7 @@ KV Cache 优化技术栈（从底到顶叠加）
 - [[概念/prefix-caching]] — 前缀缓存：复用共享 prompt prefix
 - [[概念/model-deployment]] — 模型部署全景
 - [[概念/long-context-models]] — 长上下文模型
-- [[10_部署推理/06_Caching/KV_Cache_Deep_Dive]] — KV Cache 深度研究：从原理到工程实践
+- [[10_部署推理/03_推理优化/05_KV_Cache_深入分析]] — KV Cache 深度研究：从原理到工程实践
 - [[概念/kv-cache-compression]] — KV Cache 压缩
 
 ---
@@ -190,7 +190,7 @@ KV Cache 优化技术栈（从底到顶叠加）
 - [[概念/LLM/multi-head-latent-attention|MLA]]
 - [[概念/LLM/paged-attention|PagedAttention]]
 - [[概念/LLM/radix-attention|RadixAttention]]
-- [[10_部署推理/06_Caching/KV_Cache_Deep_Dive|KV Cache 深度研究]]
+- [[10_部署推理/03_推理优化/05_KV_Cache_深入分析|KV Cache 深度研究]]
 
 ## 常见问题 FAQ
 

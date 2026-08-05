@@ -154,7 +154,7 @@ sources: []
 
 ## 七、相关文档
 
-- [语料工程指南](./index.md) — 语料设计、Prompt、SFT/RLHF、评估数据
+- [语料工程指南](./索引.md) — 语料设计、Prompt、SFT/RLHF、评估数据
 - [云产品运维 Agent 体系](../../Cloud_Product_Ops_2026.md) — Cloud Ops Agent 总体架构
 - [kagent 深度解析](../../../12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/kagent_Deep_Dive.md) — K8s 原生 Agent 框架
 - [AI Stack K8s 编排指南](../../../12_Architecture_Infrastructure/AI_Stack/AI_Stack_K8s_Operations_Guide.md) — 现有 K8s 运维命令

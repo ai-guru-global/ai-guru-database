@@ -75,8 +75,8 @@ name_zh: "AI Guru 知识库 — 全项目结构评估与改进建议"
 
 | 有 Nutshell | 无 Nutshell（关键缺失） |
 |------------|----------------------|
-| 05_大模型/05_LLM_Architectures | **01_Fundamentals**（无） |
-| 05_大模型/08_Prompt_Engineering | **02_Machine_Learning**（无） |
+| 05_大模型/05_LLM架构 | **01_基础入门**（无） |
+| 05_大模型/08_提示工程 | **02_Machine_Learning**（无） |
 | 06_RL/AI_Agents | **03_Deep_Learning**（无） |
 | 07_Model_Training | **05_Computer_Vision**（无） |
 | 09_Deployment_Inference | **08_Model_Evaluation**（无） |
@@ -241,15 +241,15 @@ name_zh: "AI Guru 知识库 — 全项目结构评估与改进建议"
 **Spring AI** 主题分散在 **12** 个不同文件中：
 
 ```
-01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md
-01_数学基础/11_Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md
+01_数学基础/11_Java生态与AI/Spring_AI_Deep_Dive.md
+01_数学基础/11_Java生态与AI/Java_Ecosystem_AI_Overview.md
 01_数学基础/README.md
-10_部署推理/02_Inference_Engines/JVM_AI_Deployment.md
-14_RAG系统/06_RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md
+10_部署推理/02_推理引擎/JVM_AI_Deployment.md
+14_RAG系统/06_RAG框架/Spring_AI_RAG_Deep_Dive.md
 12_架构基建/Spring_AI_Architecture.md
-15_智能体/05_Agent_Skills/Spring_AI_Skills_Integration.md
-15_智能体/05_Agent_Skills/README.md
-15_智能体/05_Agent_Skills/Agent_Skills_Deep_Dive.md
+15_智能体/05_Agent技能/Spring_AI_Skills_Integration.md
+15_智能体/05_Agent技能/README.md
+15_智能体/05_Agent技能/Agent_Skills_Deep_Dive.md
 14_AI_Gateway/Spring_AI_Gateway_Security.md
 AI测试/Testing_Frameworks/Java_AI_Testing.md
 11_模型运维/Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md
@@ -263,8 +263,8 @@ AI测试/Testing_Frameworks/Java_AI_Testing.md
 - 维护成本高（一处更新需同步 12 处）
 
 **建议**：
-- 建立 `01_数学基础/11_Java_Ecosystem_AI/` 为主入口
-- 其他章节使用统一引用：`[Spring AI](../01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)`
+- 建立 `01_数学基础/11_Java生态与AI/` 为主入口
+- 其他章节使用统一引用：`[Spring AI](../01_数学基础/11_Java生态与AI/Spring_AI_Deep_Dive.md)`
 - 各章节只写与自身领域相关的 Spring AI 扩展（如 RAG 章节只写 Spring AI RAG，不重复基础介绍）
 
 ### 4.4 连通性评分
@@ -294,7 +294,7 @@ AI测试/Testing_Frameworks/Java_AI_Testing.md
 | 18_Cloud_Ops_Agent | 386 | 🟢 良好 |
 | 00_AI_Introduction | 354 | 🟡 入门章节代码应精简 |
 | 03_Deep_Learning | 308 | 🟢 良好 |
-| 01_Fundamentals | 306 | 🟢 基础章节适量 |
+| 01_基础入门 | 306 | 🟢 基础章节适量 |
 | 17_AI_Coding | 300 | 🟢 良好 |
 | **07_Model_Training** | **~50** | 🔴 **严重不足** |
 | **08_Model_Evaluation** | **~80** | 🔴 **严重不足** |
@@ -362,7 +362,7 @@ AI测试/Testing_Frameworks/Java_AI_Testing.md
 | 06_Reinforcement_Learning | 85 | 75 | 60 | 75 | **74** | 🟢 良好 |
 | 15_Testing | 80 | 70 | 65 | 75 | **72** | 🟢 良好 |
 | 19_Ethics_Safety | 70 | 75 | 55 | 70 | **70** | 🟡 合格 |
-| 01_Fundamentals | 80 | 70 | 60 | 65 | **69** | 🟡 合格 |
+| 01_基础入门 | 80 | 70 | 60 | 65 | **69** | 🟡 合格 |
 | 03_Deep_Learning | 80 | 70 | 60 | 65 | **69** | 🟡 合格 |
 | 00_AI_Introduction | 90 | 70 | 30 | 70 | **68** | 🟡 合格 |
 | 14_AI_Gateway | 80 | 65 | 65 | 65 | **68** | 🟡 合格 |
@@ -445,7 +445,7 @@ _projects/Cloud_Ops_Agent/README.md
 
 #### 2. 统一命名规范
 
-- `14_RAG系统/04_Advanced_RAG/README_Advanced.md` → 重命名为 `README.md` 或合并为双栏导航
+- `14_RAG系统/04_高级RAG/README_Advanced.md` → 重命名为 `README.md` 或合并为双栏导航
 - 确保所有主要目录都有 `README.md`（而非 `README_Advanced.md` 或其他变体）
 
 ### 7.2 短期执行（1-2 周）
@@ -481,23 +481,23 @@ _projects/Cloud_Ops_Agent/README.md
 #### 5. 补齐 for_dummy 和 nutshell
 
 **for_dummy 缺失清单**（12 个）：
-- `01_数学基础/11_Java_Ecosystem_AI/Java_Ecosystem_AI_for_dummy.md`
-- `05_大模型/10_Multimodal_Models/Multimodal_Models_for_dummy.md`
-- `05_大模型/09_Reasoning_Models/Reasoning_Models_for_dummy.md`
-- `17_伦理安全/08_AI_Supply_Chain_Security/AI_Supply_Chain_Security_for_dummy.md`
-- `17_伦理安全/09_Deepfake_Security/Deepfake_Security_for_dummy.md`
-- `17_伦理安全/05_Mechanistic_Interpretability/Mechanistic_Interpretability_for_dummy.md`
-- `17_伦理安全/10_Privacy_Preserving_AI/Privacy_Preserving_AI_for_dummy.md`
+- `01_数学基础/11_Java生态与AI/Java_Ecosystem_AI_for_dummy.md`
+- `05_大模型/10_多模态模型/Multimodal_Models_for_dummy.md`
+- `05_大模型/09_推理模型/Reasoning_Models_for_dummy.md`
+- `17_伦理安全/08_AI供应链安全/AI_Supply_Chain_Security_for_dummy.md`
+- `17_伦理安全/09_深度伪造安全/Deepfake_Security_for_dummy.md`
+- `17_伦理安全/05_机制可解释性/Mechanistic_Interpretability_for_dummy.md`
+- `17_伦理安全/10_隐私保护AI/Privacy_Preserving_AI_for_dummy.md`
 
 **nutshell 缺失清单**（关键 8 个）：
-- `01_数学基础/01_Math_Fundamentals/Fundamentals-in-nutshell.md`
-- `02_机器学习/01_ML_Fundamentals/ML-in-nutshell.md`
-- `03_深度学习/01_DL_Fundamentals/DL-in-nutshell.md`
-- `04_计算机视觉/01_CV_Fundamentals/CV-in-nutshell.md`
-- `08_模型评估/01_Evaluation_Fundamentals/Evaluation-in-nutshell.md`
-- `12_架构基建/01_Architecture_Fundamentals/Architecture-in-nutshell.md`
-- `17_伦理安全/01_Ethics_Fundamentals/Ethics-in-nutshell.md`
-- `18_行业应用/01_Industry_Overview/Industry-in-nutshell.md`
+- `01_数学基础/01_数学基础/Fundamentals-in-nutshell.md`
+- `02_机器学习/01_机器学习基础/ML-in-nutshell.md`
+- `03_深度学习/01_深度学习基础/DL-in-nutshell.md`
+- `04_计算机视觉/01_CV基础/CV-in-nutshell.md`
+- `08_模型评估/01_评估基础/Evaluation-in-nutshell.md`
+- `12_架构基建/01_架构基础/Architecture-in-nutshell.md`
+- `17_伦理安全/01_伦理基础/Ethics-in-nutshell.md`
+- `18_行业应用/01_行业概览/Industry-in-nutshell.md`
 
 #### 6. 重构 21_Talks 和 22_Papers
 
@@ -507,7 +507,7 @@ _projects/Cloud_Ops_Agent/README.md
 - 在每个 `sayings.md` 底部增加"相关章节"链接
 
 **22_Papers 建议**：
-- 选择 Top 10 最具影响力论文，在对应章节中撰写深度解读（如 Attention Is All You Need 在 `05_大模型/04_Transformer_Revolution/` 中扩充）
+- 选择 Top 10 最具影响力论文，在对应章节中撰写深度解读（如 Attention Is All You Need 在 `05_大模型/04_Transformer革命/` 中扩充）
 - `20_论文精读/README.md` 改为"论文索引 + 对应章节链接"，而非纯外链列表
 
 ### 7.3 中期规划（2-4 周）
@@ -555,13 +555,13 @@ _projects/Cloud_Ops_Agent/README.md
 
 以 Spring AI 为试点：
 
-1. **主入口**：`01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md`（全面介绍）
+1. **主入口**：`01_数学基础/11_Java生态与AI/Spring_AI_Deep_Dive.md`（全面介绍）
 2. **其他章节**只写领域特定扩展：
- - `14_RAG系统/06_RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md` → 只写 RAG 相关，基础部分引用主入口
+ - `14_RAG系统/06_RAG框架/Spring_AI_RAG_Deep_Dive.md` → 只写 RAG 相关，基础部分引用主入口
  - `14_AI_Gateway/Spring_AI_Gateway_Security.md` → 只写安全相关，基础部分引用主入口
 3. **在每个相关文件顶部添加**：
    ```markdown
-   > 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI，请先阅读 [Spring AI 深度解析](../01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
+   > 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI，请先阅读 [Spring AI 深度解析](../01_数学基础/11_Java生态与AI/Spring_AI_Deep_Dive.md)。
    ```
 
 #### 9. 扩充行业应用章节

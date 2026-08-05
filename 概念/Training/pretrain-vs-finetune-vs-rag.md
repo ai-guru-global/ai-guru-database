@@ -14,9 +14,9 @@ relationships:
   - target: "概念/lora-peft"
     type: includes
 sources:
-  - 05_大模型/01_LLM_Fundamentals.md
+  - 05_大模型/01_LLM基础.md
   - 14_RAG系统/README.md
-  - 05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Strategies.md
+  - 05_大模型/07_微调技术/Fine_tuning_Strategies.md
 summary: "在已有 LLM 基础上做定制,有四条路:Prompt Engineering → RAG → 微调 → 预训练。选型原则:优先用最便宜的方案解决 80% 的问题,只在该方案搞不定时才升级。本文档给出明确的决策树、对比表、典型场景与选型 checklist。"
 provenance:
   extracted: 0.70
@@ -190,7 +190,7 @@ name_zh: "预训练 vs 微调 vs RAG — 三种 LLM 定制方案选型"
 - [[概念/long-context-vs-rag]] — 长上下文 vs RAG 选型
 - [[概念/pre-training]] — 预训练
 - [[概念/sft]] — SFT 监督微调
-- [[05_大模型/01_LLM_Fundamentals]] — LLM 基础
+- [[05_大模型/01_LLM基础]] — LLM 基础
 - [[14_RAG系统/README]] — RAG 系统
 
 ---

@@ -65,4 +65,4 @@ python tools/preprocess_data.py \
 
 - Explore [Parallelism Strategies](../user-guide/parallelism-guide.md) to scale your training
 - Learn about [Data Preparation](../user-guide/data-preparation.md) best practices
-- Check out [Advanced Features](../user-guide/features/index.md)
+- Check out [Advanced Features](../user-guide/features/索引.md)

@@ -13,7 +13,7 @@ relationships:
     type: uses
 sources:
   - 12_架构基建/AI_Stack_Deep_Dive.md
-  - 10_部署推理/02_Inference_Engines/SGLang_Deep_Dive.md
+  - 10_部署推理/02_推理引擎/SGLang_Deep_Dive.md
   - "https://arxiv.org/abs/2312.07104"
 summary: RadixAttention 是 SGLang 提出的基于基数树的 KV Cache 复用技术，自动检测并缓存共享 prompt 前缀，支持分支前缀匹配。在多轮对话、Agent 循环、RAG 等场景下比 vLLM APC 快 10-20%，是 2026 年动态多轮场景的最优选择。
 provenance:
@@ -200,5 +200,5 @@ Radix Tree 结构:
 - [[概念/Inference/prefix-caching]] — 前缀缓存（RadixAttention 是其中一种实现）
 - [[概念/Inference/sglang]] — SGLang 推理引擎（RadixAttention 首发）
 - [[概念/Inference/flashinfer]] — FlashInfer 算子库
-- [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive]] — SGLang 深度解析
-- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]] — vLLM（Automatic Prefix Caching）
+- [[10_部署推理/02_推理引擎/23_SGLang_深入分析]] — SGLang 深度解析
+- [[10_部署推理/02_推理引擎/29_vLLM_深入分析]] — vLLM（Automatic Prefix Caching）

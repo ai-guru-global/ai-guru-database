@@ -15,7 +15,7 @@ name_zh: "LLM 评测速查表"
 > 中文简称：LLM 评测速查表
 
 > **核心洞察**：2026 年 LLM 评测已从单一基准（MMLU）演进到**多维评测矩阵**：通用能力 + 领域能力 + 安全 + 偏见 + Agent + RAG + 生产稳定性。没有"一站式评测"，只有"评测矩阵"。
-> 详见 [[08_模型评估]] · [[LLM_Evaluation_Pipeline]] · [[LLM_Safety_Testing_Deep_Dive]] · [[LLM_as_Judge_Guide]]
+> 详见 [[08_模型评估]] · [[11_模型运维/13_运维评估/03_LLM评估_流水线]] · [[概念/LLM/llm-safety]] · [[08_模型评估/04_评估工具/04_LLM_as_Judge_指南]]
 
 ## 评测维度全景
 
@@ -314,4 +314,4 @@ jobs:
 
 ---
 
-**参见**：[[08_模型评估]] · [[LLM_Evaluation_Pipeline]] · [[LLM_as_Judge_Guide]] · [[LLM_Safety_Testing_Deep_Dive]] · [[Regression_Testing_LLM_Deep_Dive]] · [[Multimodal_Evaluation_Benchmarks]]
+**参见**：[[08_模型评估]] · [[11_模型运维/13_运维评估/03_LLM评估_流水线]] · [[08_模型评估/04_评估工具/04_LLM_as_Judge_指南]] · [[概念/LLM/llm-safety]] · [[Regression_Testing_LLM_Deep_Dive]] · [[08_模型评估/02_基准测试/02_benchmark_evaluation]]

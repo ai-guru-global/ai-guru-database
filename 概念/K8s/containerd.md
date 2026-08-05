@@ -12,7 +12,7 @@ relationships:
   - target: "概念/docker"
     type: related_to
 sources:
-  - 12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026
+  - 12_架构基建/02_架构概览/AI_Infrastructure_2026
 summary: "containerd 是 CNCF Graduated 的工业级容器运行时，实现了 Kubernetes CRI 接口，负责镜像拉取、容器生命周期管理和存储管理，是 K8s 默认推荐的容器引擎。"
 provenance:
   extracted: 0.8
@@ -112,7 +112,7 @@ systemctl status containerd
 - [[概念/cdi]] — CDI 容器设备接口
 - [[概念/docker]] — Docker 容器平台
 - [[概念/crictl]] — crictl 调试工具
-- [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[12_架构基建/02_架构概览/02_AI_基础设施_2026]] — AI 基础设施 2026
 
 ---
 

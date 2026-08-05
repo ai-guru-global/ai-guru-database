@@ -11,7 +11,7 @@ relationships:
     type: builds_on
 sources:
   - 12_架构基建/AI_Stack_Deep_Dive.md
-  - 12_架构基建/11_AI_Gateway/AI_Gateway_2026
+  - 12_架构基建/11_AI网关/AI_Gateway_2026
 summary: 模型网关是 LLM 服务的统一入口层，负责流量路由、负载均衡、API-Key 鉴权、模型版本管理与可观测性。
 provenance:
   extracted: 0.55
@@ -147,14 +147,14 @@ name_zh: "模型网关"
 
 ## Related
 
-- [[12_架构基建/11_AI_Gateway/AI_Gateway_2026]] — AI Gateway 全景
-- [[12_架构基建/11_AI_Gateway/LiteLLM_Deep_Dive]] — LiteLLM 深度解析
-- [[12_架构基建/11_AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway
-- [[12_架构基建/11_AI_Gateway/Portkey_Deep_Dive]] — Portkey 深度解析
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/11_AI网关/01_AI网关_2026]] — AI Gateway 全景
+- [[12_架构基建/11_AI网关/09_LiteLLM_深入分析]] — LiteLLM 深度解析
+- [[12_架构基建/11_AI网关/08_Kong_AI网关_深入分析]] — Kong AI Gateway
+- [[12_架构基建/11_AI网关/12_Portkey_深入分析]] — Portkey 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 - [[概念/llm-infrastructure]] — LLM 基础设施
 - [[概念/model-serving]] — 模型服务
-- [[12_架构基建/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]] — 专有云推理平台的模型网关实现
+- [[12_架构基建/06_云厂商/01_Alibaba_云_AI技术栈_深入分析|阿里云 AI Stack]] — 专有云推理平台的模型网关实现
 
 ## AI Gateway 功能全景
 

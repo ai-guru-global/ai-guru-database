@@ -211,7 +211,7 @@ name_zh: "大模型回答问题是一道数学题吗？大白话"
 ## 延伸阅读
 
 - [[概念/embeddings-vectors-mrl-plain]] — Embedding、向量与 MRL 大白话
-- [[05_大模型/LLM_For_Beginners]] — 大语言模型入门
+- [[05_大模型/01_LLM基础/04_LLM_入门]] — 大语言模型入门
 - [[概念/large-language-model]] — 大语言模型概念卡片
 - [[概念/LLM/transformer-architecture|transformer]] — Transformer 概念卡片
 - [[概念/hallucination]] — LLM 幻觉根因与缓解

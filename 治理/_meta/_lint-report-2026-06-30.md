@@ -46,7 +46,7 @@ Pages with zero incoming wikilinks. These are invisible to graph traversal and l
 | 11_MLOps_Pipeline | 8 | 2.7% |
 | 03_Deep_Learning | 6 | 2.0% |
 | 16_AI_Coding | 6 | 2.0% |
-| 01_Fundamentals | 5 | 1.7% |
+| 01_基础入门 | 5 | 1.7% |
 | 02_Machine_Learning | 5 | 1.7% |
 | 04_Computer_Vision | 5 | 1.7% |
 | 13_AI_Ops | 5 | 1.7% |
@@ -91,7 +91,7 @@ Wikilinks pointing to pages that do not exist in the vault.
 | `14_AI_Gateway/AI_Gateway_2026.md` | 3 | Moved/merged into AI_Gateway_README |
 | `Agent` | 3 | Chapter-level link |
 | `AI测试` | 3 | Chapter-level link |
-| `05_大模型/15_Chinese_LLM_Ecosystem` | 3 | Subdirectory link without page match |
+| `05_大模型/15_中国LLM生态` | 3 | Subdirectory link without page match |
 | `03_深度学习/ApacheCN_PyTorch_Track` | 3 | Archived/removed |
 | `03_深度学习/ApacheCN_TensorFlow_Track` | 3 | Archived/removed |
 | `05_大模型/ApacheCN_NLP_Track` | 3 | Archived/removed |
@@ -109,10 +109,10 @@ Pages missing one or more required frontmatter fields: `title`, `category`, `tag
 
 | Field | Pages Missing | Top Offenders |
 |---|---|---|
-| `updated` | 78 | AI编程/Tools/OpenRouter/* (48 pages), system pages (治理/hot.md, index.md) |
-| `category` | 31 | Beginner guides, index.md, some Agent Harness pages |
+| `updated` | 78 | AI编程/Tools/OpenRouter/* (48 pages), system pages (治理/hot.md, 索引.md) |
+| `category` | 31 | Beginner guides, 索引.md, some Agent Harness pages |
 | `tags` | 28 | AI编程/Tools/OpenRouter/*, AI编程/Tools/OpenCode/* |
-| `created` | 12 | AI编程/OpenRouter_OpenCode_Guide.md, index.md, 治理/hot.md |
+| `created` | 12 | AI编程/OpenRouter_OpenCode_Guide.md, 索引.md, 治理/hot.md |
 | `title` | 1 | log.md |
 
 ### Pages with No Frontmatter At All
@@ -150,9 +150,9 @@ Pages with `summary_len = 0` (no summary in frontmatter).
 | 48 | `AI编程/Tools/OpenCode/22-opencode-installation-quickstart.md` | 安装部署与快速入门 |
 | 46 | `AI编程/Tools/OpenCode/24-opencode-agents-system.md` | Agent 系统深度指南 |
 | 22 | `AI编程/Tools/OpenRouter/11-openrouter-security-privacy.md` | 安全、隐私与数据治理 |
-| 12 | `15_智能体/04_Agent_Harness/The_Anatomy_of_an_Agent_Harness.md` | The Anatomy of an Agent Harness |
+| 12 | `15_智能体/04_Agent脚手架/The_Anatomy_of_an_Agent_Harness.md` | The Anatomy of an Agent Harness |
 | 10 | `05_大模型/LLM_For_Beginners.md` | 大语言模型入门 |
-| 6 | `05_大模型/05_LLM_Architectures/LLM_Internals_Inference.md` | 大模型推理与部署 |
+| 6 | `05_大模型/05_LLM架构/LLM_Internals_Inference.md` | 大模型推理与部署 |
 
 **Key observation**: 47 of the 65 missing-summary pages (72%) are from the 16_AI_Coding OpenRouter/OpenCode batch ingest. These are high-traffic pages (48-50 incoming each) that urgently need summaries.
 
@@ -209,7 +209,7 @@ Tags with 5+ pages and graph cohesion < 0.15 (fewer than 15% of possible intra-t
 
 **Total pages with tier field**: 1,755 (note: this exceeds the 1,156 page count because some pages in `原始/` and other directories also carry frontmatter)
 
-**Assessment**: The vault is heavily weighted toward `supporting` (74%). The prior audit (2026-06-30 phase B) noted 597 core / 577 supporting / 50 peripheral, suggesting a tier rebalance has already been partially executed (many pages shifted from core to supporting). The 87 peripheral pages are primarily system files (治理/hot.md, index.md, README_EN.md, etc.).
+**Assessment**: The vault is heavily weighted toward `supporting` (74%). The prior audit (2026-06-30 phase B) noted 597 core / 577 supporting / 50 peripheral, suggesting a tier rebalance has already been partially executed (many pages shifted from core to supporting). The 87 peripheral pages are primarily system files (治理/hot.md, 索引.md, README_EN.md, etc.).
 
 **Non-standard tier values**: None found in current scan (the prior `deep-dive` value appears to have been normalized).
 

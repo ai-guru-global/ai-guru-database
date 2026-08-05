@@ -220,5 +220,5 @@ class TieredMemorySystem:
 - [[概念/Agent/agent-planning|Agent 规划]] — 规划依赖记忆中的经验
 - [[概念/LLM/context-window|Context Window]] — 短期记忆的载体
 - [[概念/LLM/context-engineering|上下文工程]] — 短期记忆管理技术
-- [[14_RAG系统/01_RAG_Fundamentals/RAG_Fundamentals|RAG 基础]] — 记忆检索的技术基础
-- [[15_智能体/01_Agent_Foundations/AI_Agents|AI Agents 详解]]
+- [[14_RAG系统/01_RAG基础/06_RAG基础|RAG 基础]] — 记忆检索的技术基础
+- [[15_智能体/01_Agent基础/16_AI_Agent|AI Agents 详解]]

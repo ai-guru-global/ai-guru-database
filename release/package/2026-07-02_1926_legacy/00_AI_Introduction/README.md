@@ -159,7 +159,7 @@ tier: supporting
 ```
 00_AI_Introduction (通识基础)
         ↓
-01_Fundamentals (数学与计算基础)
+01_基础入门 (数学与计算基础)
         ↓
 02-06 (机器学习、深度学习、NLP、CV、RL)
         ↓

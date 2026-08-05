@@ -105,7 +105,7 @@ name_zh: "分布式文件系统"
 - [[概念/Training/storage|Storage]]
 - [[概念/Training/oss|OSS]]
 - [[概念/Training/nas|NAS]]
-- [[12_架构基建/09_Storage/AI_Storage_Patterns|AI 存储模式]]
+- [[12_架构基建/09_存储/01_AI_存储_模式|AI 存储模式]]
 - [[概念/Training/parallel-training|并行训练]]
 
 ## 2026 分布式文件系统生态现状
@@ -142,7 +142,7 @@ name_zh: "分布式文件系统"
 - [[概念/RAG/storage|Storage]] — AI 存储总览
 - [[概念/RAG/storageclass|StorageClass]] — K8s 存储抽象
 - [[概念/K8s/persistent-volume|Persistent Volume]] — K8s 持久化存储
-- [[12_架构基建/09_Storage/AI_Storage_Patterns|AI 存储模式]] — 存储架构设计
+- [[12_架构基建/09_存储/01_AI_存储_模式|AI 存储模式]] — 存储架构设计
 - [[概念/Training/parallel-training|Parallel Training]] — 并行训练
 
 > ℹ️ 分布式文件系统是 AI 训练的数据底座，2026年 Lustre/GPFS 仍是训练数据首选，JuiceFS/Alluxio 是云上新选择。

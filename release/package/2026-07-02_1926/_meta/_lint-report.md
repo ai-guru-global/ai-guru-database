@@ -26,7 +26,7 @@ sources: []
 - AI测试/RAGAS_Deep_Dive.md
 - 18_Cloud_Ops_Agent/Mobile_AI_Ops_Design.md
 - 18_Cloud_Ops_Agent/Cloud_Product_Ops_2026.md
-- 18_Cloud_Ops_Agent/docs/product/index.md
-- 18_Cloud_Ops_Agent/docs/operations/index.md
+- 18_Cloud_Ops_Agent/docs/product/索引.md
+- 18_Cloud_Ops_Agent/docs/operations/索引.md
 - 18_Cloud_Ops_Agent/docs/templates/test_template.md
 - ... and 266 more

@@ -211,4 +211,4 @@ L = - sum_t log P(t_t | t_1, t_2, ..., t_{t-1}; θ)
 
 - **FP8 训练已有一等公民实现**：Megatron core_v0.18.2 内置 `megatron/core/fp8_utils.py` 甚至 `fp4_utils.py`，配合 Transformer Engine 在 Hopper/Blackwell 上生效。
 - **数据管道工程化**：NeMo v2.7.3 的 `PreTrainingDataModule`（`collections/llm/gpt/data/pre_training.py`）封装 Megatron bin-idx mmap 数据集，按并行拓扑切分样本；预训练超参直接取自官方 Recipe（`collections/llm/recipes/`，100+ 模型规格）。
-- **显存预算的三条技术路线**在源码层面清晰可对照：Megatron 靠并行切分（TP/PP/CP）、DeepSpeed 靠 ZeRO 分片+Offload、ColossalAI 靠 Chunk 异构内存，详见 [[07_模型训练/04_Distributed_Training/NeMo_Deep_Dive|NeMo 深度解析]] 与各框架 Deep Dive 源码章节。
+- **显存预算的三条技术路线**在源码层面清晰可对照：Megatron 靠并行切分（TP/PP/CP）、DeepSpeed 靠 ZeRO 分片+Offload、ColossalAI 靠 Chunk 异构内存，详见 [[07_模型训练/04_分布式训练/12_NeMo_深入分析|NeMo 深度解析]] 与各框架 Deep Dive 源码章节。

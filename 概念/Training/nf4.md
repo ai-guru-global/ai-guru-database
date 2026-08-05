@@ -14,7 +14,7 @@ relationships:
   - target: "概念/awq"
     type: alternative
 sources:
-  - 10_部署推理/05_Quantization/
+  - 10_部署推理/04_模型量化/
 summary: "NF4（4-bit NormalFloat）是 bitsandbytes 库提出的 4-bit 数据类型，针对正态分布权重做了优化设计；QLoRA 用 NF4 实现单卡 24GB 量化微调 65B 模型。"
 lifecycle: reviewed
 tier: core
@@ -148,7 +148,7 @@ QLoRA = NF4 量化 + 双重量化 + 分页优化器
 - **分块+双重量化**：`functional.py` L613 `quantize_blockwise` 按块独立缩放；`QuantState`（L420）封装量化常量与双重量化（量化常量再量化）元数据——QLoRA 论文三大组件中两个在此实现。
 - **QLoRA 可训的关键**：`autograd/_functions.py` L300 `MatMul4Bit` 前向反量化后 matmul，反向梯度绕过冻结的 4-bit 权重只流向 LoRA 旁支。
 
-详见 [[10_部署推理/05_Quantization/HF_Quantization_Ecosystem]] 第 6 节、[[概念/Training/qlora]]。
+详见 [[10_部署推理/04_模型量化/01_HF量化生态]] 第 6 节、[[概念/Training/qlora]]。
 
 ## Related
 

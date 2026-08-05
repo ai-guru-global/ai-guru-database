@@ -204,4 +204,4 @@ KV Cache = 2 × layers × hidden_dim × batch_size × seq_len × bytes
 - [[概念/LLM/long-context-vs-rag|长上下文 vs RAG]]
 - [[概念/LLM/kv-cache-compression|KV Cache 压缩]]
 - [[概念/LLM/rope|RoPE 位置编码]]
-- [[05_大模型/05_LLM_Architectures/Long_Context_Models_2026|长上下文模型 2026]]
+- [[05_大模型/05_LLM架构/11_Long_上下文_模型_2026|长上下文模型 2026]]

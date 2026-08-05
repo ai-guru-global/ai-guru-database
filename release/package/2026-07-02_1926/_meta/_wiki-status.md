@@ -125,7 +125,7 @@ _4 chars/token heuristic_
 | 06_Reinforcement_Learning | 21 |
 | 19_Ethics_Safety | 21 |
 | synthesis | 21 |
-| 01_Fundamentals | 21 |
+| 01_基础入门 | 21 |
 | 11_RAG_Systems | 20 |
 | 05_Computer_Vision | 20 |
 | 18_Cloud_Ops_Agent | 19 |

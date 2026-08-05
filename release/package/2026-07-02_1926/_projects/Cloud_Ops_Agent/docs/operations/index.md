@@ -943,12 +943,12 @@ slos:
 
 | 相关文档 | 说明 |
 |---------|------|
-| [架构设计](../architecture/index.md) | 了解系统架构 |
-| [研发指南](../development/index.md) | 了解如何修复问题 |
-| [测试指南](../testing/index.md) | 了解测试验收 |
-| [集成测试](./integration_testing/index.md) | 了解集成测试 |
-| [语料指南](./corpus/index.md) | 了解 AI 能力 |
-| [产品指南](./product/index.md) | 了解产品需求 |
+| [架构设计](../architecture/索引.md) | 了解系统架构 |
+| [研发指南](../development/索引.md) | 了解如何修复问题 |
+| [测试指南](../testing/索引.md) | 了解测试验收 |
+| [集成测试](./integration_testing/索引.md) | 了解集成测试 |
+| [语料指南](./corpus/索引.md) | 了解 AI 能力 |
+| [产品指南](./product/索引.md) | 了解产品需求 |
 
 ---
 

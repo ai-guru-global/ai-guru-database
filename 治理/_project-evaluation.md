@@ -190,7 +190,7 @@ RAG系统 → 智能体 → 行业应用
 
 ### 5.2 独特知识资产
 
-1. **Agent 评估体系** (15_智能体/07_Agent_Evaluation): 63 篇文件，完整评估框架
+1. **Agent 评估体系** (15_智能体/07_Agent评估): 63 篇文件，完整评估框架
 2. **CNCF 云原生 AI** (架构基建): 18 个项目五层架构系统梳理
 3. **推理引擎百科** (部署推理): 20+ 引擎深度解析，含国产化（昇腾/寒武纪/海光）
 4. **LLM_Inference_Research** (论文精读): 学校类比体系串联 19 个推理概念
@@ -228,7 +228,7 @@ for_dummy (小白) → in-nutshell (速成) → Deep Dive (深度) → 2026 专�
 | # | Issue | Location | Recommendation |
 |---|-------|----------|----------------|
 | 1 | 概念/K8s 过度膨胀 (68 文件，多为非 AI 工具简介) | 概念/ | 精简至 25-30 个 AI 相关概念 |
-| 2 | 100+ auto-generated index.md stubs | 全库 | 批量清理或充实为真正导航页 |
+| 2 | 100+ auto-generated 索引.md stubs | 全库 | 批量清理或充实为真正导航页 |
 | 3 | 90_学习/References/books 12 本书全 stub | 90_学习/ | 补充章节摘要 + 知识映射 |
 | 4 | 工具目录缺使用文档 | 工具/ | 添加 README + 用法示例 |
 | 5 | 前端应用 node_modules 占 1.4GB | 前端应用/ | 确认 .gitignore 生效，考虑 git filter-branch 清理历史 |
@@ -298,7 +298,7 @@ for_dummy (小白) → in-nutshell (速成) → Deep Dive (深度) → 2026 专�
 
 | # | Action | Effort | Impact |
 |---|--------|--------|--------|
-| 1 | 清理 100+ auto-generated index.md stubs | 4h | 结构 +0.2 |
+| 1 | 清理 100+ auto-generated 索引.md stubs | 4h | 结构 +0.2 |
 | 2 | 为 205 个孤立文件补充 wikilinks | 6h | 交叉引用 +0.3 |
 | 3 | 更新 README_EN.md 数据 (290→2,669) | 1h | 一致性 |
 
@@ -371,11 +371,11 @@ for_dummy (小白) → in-nutshell (速成) → Deep Dive (深度) → 2026 专�
 
 | 文件 | 行数 | 主题 |
 |------|------|------|
-| `15_智能体/01_Agent_Foundations/Voice_Agents_Deep_Dive_2026.md` | 859 | 语音智能体 |
-| `15_智能体/01_Agent_Foundations/Computer_Use_Agents_2026.md` | 796 | 计算机使用智能体 |
-| `14_RAG系统/04_Advanced_RAG/Code_RAG_Architecture.md` | 790 | 代码 RAG 架构 |
-| `14_RAG系统/04_Advanced_RAG/Long_Context_vs_RAG_2026.md` | 782 | 长上下文 vs RAG |
-| `14_RAG系统/05_RAG_Production/RAG_Cost_Optimization.md` | 920 | RAG 成本优化 |
+| `15_智能体/01_Agent基础/Voice_Agents_Deep_Dive_2026.md` | 859 | 语音智能体 |
+| `15_智能体/01_Agent基础/Computer_Use_Agents_2026.md` | 796 | 计算机使用智能体 |
+| `14_RAG系统/04_高级RAG/Code_RAG_Architecture.md` | 790 | 代码 RAG 架构 |
+| `14_RAG系统/04_高级RAG/Long_Context_vs_RAG_2026.md` | 782 | 长上下文 vs RAG |
+| `14_RAG系统/05_RAG生产实践/RAG_Cost_Optimization.md` | 920 | RAG 成本优化 |
 
 ### 行业应用 (+6 篇, 3,795 行)
 
@@ -468,11 +468,11 @@ for_dummy (小白) → in-nutshell (速成) → Deep Dive (深度) → 2026 专�
 
 | 文件 | 行数 | 主题 |
 |------|------|------|
-| `13_运维/02_SRE_Reliability/GPU_Cluster_Operations_2026.md` | 880 | GPU 集群运维 |
-| `13_运维/02_SRE_Reliability/Model_Serving_SLA_Management.md` | 819 | 模型服务 SLA |
-| `16_编程/01_Coding_Fundamentals/Python_for_AI_2026.md` | 894 | Python for AI 2026 |
-| `16_编程/01_Coding_Fundamentals/Rust_for_AI_Infrastructure.md` | 804 | Rust for AI |
-| `16_编程/04_Practice/MLOps_Coding_Patterns.md` | 896 | MLOps 编码模式 |
+| `13_运维/02_SRE与可靠性/GPU_Cluster_Operations_2026.md` | 880 | GPU 集群运维 |
+| `13_运维/02_SRE与可靠性/Model_Serving_SLA_Management.md` | 819 | 模型服务 SLA |
+| `16_编程/01_编程基础/Python_for_AI_2026.md` | 894 | Python for AI 2026 |
+| `16_编程/01_编程基础/Rust_for_AI_Infrastructure.md` | 804 | Rust for AI |
+| `16_编程/04_实践指南/MLOps_Coding_Patterns.md` | 896 | MLOps 编码模式 |
 
 ### 三轮合计
 

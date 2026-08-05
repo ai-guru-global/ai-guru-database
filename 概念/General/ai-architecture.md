@@ -106,16 +106,16 @@ AI系统高可用的特殊挑战：GPU故障率比CPU高一个数量级（MTBF�
 ## 来源
 
 - 12_架构基建/AI_System_Architecture_2026.md — 四层架构全景图、服务设计、可观测性
-- 12_架构基建/02_Architecture_Overview/Spring_AI_Architecture — Spring AI企业级架构、Advisor模式
+- 12_架构基建/02_架构概览/Spring_AI_Architecture — Spring AI企业级架构、Advisor模式
 - 12_架构基建/High_Availability_2026.md — 多AZ部署、故障恢复、健康检查
 - 12_架构基建/Multi_Tenant_Architecture.md — 隔离模型、资源管理、计费计量
 
 ## Related
 
-- [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: high-availability, kubernetes)
+- [[12_架构基建/02_架构概览/02_AI_基础设施_2026]] — AI Infrastructure 2026 完全指南 (共享: high-availability, kubernetes)
 - [[12_架构基建/Architecture-in-nutshell]] — AI 架构速成指南 (共享: high-availability, kubernetes)
-- [[12_架构基建/Architecture_Infrastructure_for_dummy]] — AI 架构基础设施 - 小白版 (共享: high-availability, kubernetes)
-- [[12_架构基建/02_Architecture_Overview/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: high-availability, kubernetes)
+- [[12_架构基建/02_架构概览/02_AI_基础设施_2026]] — AI 架构基础设施 - 小白版 (共享: high-availability, kubernetes)
+- [[12_架构基建/02_架构概览/10_Spring_AI_架构]] — Spring AI 系统架构设计 (共享: high-availability, kubernetes)
 
 ---
 

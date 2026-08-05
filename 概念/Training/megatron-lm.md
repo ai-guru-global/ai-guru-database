@@ -14,7 +14,7 @@ relationships:
   - target: "概念/pipeline-parallelism"
     type: implements
 sources:
-  - 07_模型训练/04_Distributed_Training/Megatron_LM_Deep_Dive.md
+  - 07_模型训练/04_分布式训练/Megatron_LM_Deep_Dive.md
 summary: "Megatron-LM 是 NVIDIA 开源的大规模 Transformer 训练框架，以张量并行（TP）和流水线并行（PP）著称，广泛用于千亿参数 GPT/BERT/T5 模型的预训练。"
 provenance:
   extracted: 0.8
@@ -107,7 +107,7 @@ name_zh: "大规模训练框架 Megatron"
 
 ## Related
 
-- [[07_模型训练/04_Distributed_Training/Megatron_LM_Deep_Dive]] — Megatron-LM 深度解析
+- [[07_模型训练/04_分布式训练/08_Megatron_LM_深入分析]] — Megatron-LM 深度解析
 - [[概念/distributed-training]] — 分布式训练
 - [[概念/deepspeed]] — DeepSpeed
 - [[概念/fsdp]] — FSDP
@@ -207,4 +207,4 @@ name_zh: "大规模训练框架 Megatron"
 
 - 并行中枢：所有进程组由 `megatron/core/parallel_state.py` 全局单例统一建立（TP/PP/DP/CP/EP 互相正交）。
 - TP 落地在 `tensor_parallel/layers.py` 的 `ColumnParallelLinear`/`RowParallelLinear`；PP 调度在 `pipeline_parallel/schedules.py`（interleaved 1F1B）。
-- 源码归档：`code/llm-frameworks/Megatron-LM-core_v0.18.2/`，详见 [[07_模型训练/04_Distributed_Training/Megatron_LM_Deep_Dive|Megatron-LM 深度解析]] 第 11 节。
+- 源码归档：`code/llm-frameworks/Megatron-LM-core_v0.18.2/`，详见 [[07_模型训练/04_分布式训练/08_Megatron_LM_深入分析|Megatron-LM 深度解析]] 第 11 节。

@@ -12,8 +12,8 @@ relationships:
   - target: "概念/Agent/agentic-rag"
     type: related_to
 sources:
-  - 08_模型评估/02_Benchmarks/Agentic_Benchmark_Guide.md
-  - 15_智能体/07_Agent_Evaluation/README.md
+  - 08_模型评估/02_基准测试/Agentic_Benchmark_Guide.md
+  - 15_智能体/07_Agent评估/README.md
 summary: "Agent 评估基准是专门测试 AI Agent 综合能力的数据集和指标。它不只考模型会不会答题，而是考 Agent 能否正确规划、调用工具、多步推理、处理错误、最终完成任务。"
 provenance:
   extracted: 0.75
@@ -202,8 +202,8 @@ benchmark_design:
 - [[概念/Agent/tool-calling|工具调用]]
 - [[概念/Agent/agent-reflection|Agent 反思]]
 - [[概念/Agent/agentic-rag|Agentic RAG]]
-- [[08_模型评估/02_Benchmarks/Agentic_Benchmark_Guide|Agentic 评估指南]]
-- [[15_智能体/07_Agent_Evaluation/README|Agent 评估]]
+- [[08_模型评估/02_基准测试/01_Agentic_基准测试_指南|Agentic 评估指南]]
+- [[15_智能体/07_Agent评估/README|Agent 评估]]
 
 ---
 

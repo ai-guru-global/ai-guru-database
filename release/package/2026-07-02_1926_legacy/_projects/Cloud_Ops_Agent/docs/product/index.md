@@ -752,11 +752,11 @@ pricing:
 
 | 相关文档 | 说明 |
 |---------|------|
-| [架构设计](../architecture/index.md) | 了解技术可行性，评估产品需求 |
-| [研发指南](../development/index.md) | 需求技术评审 |
-| [测试指南](../testing/index.md) | 产品质量验收 |
-| [运维指南](../operations/index.md) | 产品运营数据收集 |
-| [语料指南](./corpus/index.md) | AI 能力需求对齐 |
+| [架构设计](../architecture/索引.md) | 了解技术可行性，评估产品需求 |
+| [研发指南](../development/索引.md) | 需求技术评审 |
+| [测试指南](../testing/索引.md) | 产品质量验收 |
+| [运维指南](../operations/索引.md) | 产品运营数据收集 |
+| [语料指南](./corpus/索引.md) | AI 能力需求对齐 |
 
 ---
 

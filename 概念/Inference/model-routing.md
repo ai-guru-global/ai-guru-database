@@ -146,7 +146,7 @@ def route_model(prompt, history=None):
 - [[概念/Inference/continuous-batching|连续批处理]]
 - [[概念/Inference/inference-cluster-scheduling|推理集群调度]]
 - [[13_运维/Cost_Optimization_AI_Deep_Dive|成本优化]]
-- [[12_架构基建/11_AI_Gateway/AI_Gateway_2026|AI Gateway]]
+- [[12_架构基建/11_AI网关/AI_Gateway_2026|AI Gateway]]
 
 ## 模型路由策略全景
 

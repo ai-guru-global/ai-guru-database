@@ -8,7 +8,7 @@ relationships:
   - target: "概念/self-supervised-learning"
     type: builds_on
 sources:
-  - 05_大模型/06_LLM_Data_Engineering
+  - 05_大模型/06_LLM数据工程
 summary: "LLM 数据工程覆盖预训练数据收集清洗(去重/过滤/配比)、SFT数据构建(人工标注/自我指令/蒸馏)、RLHF偏好数据和合成数据生成的全链路。"
 provenance:
   extracted: 0.45
@@ -262,7 +262,7 @@ GPT-4(教师) → 回答一批问题 → 用 GPT-4 的回答训练开源模型(�
 
 ## Related
 
-- [[05_大模型/06_LLM_Data_Engineering/README]] — LLM 数据工程深度解析
+- [[05_大模型/06_LLM数据工程/README]] — LLM 数据工程深度解析
 - [[概念/llm-architectures]] — LLM 架构
 - [[概念/self-supervised-learning]] — 自监督学习（预训练范式）
 - [[概念/fine-tuning-techniques]] — 微调技术族
@@ -270,7 +270,7 @@ GPT-4(教师) → 回答一批问题 → 用 GPT-4 的回答训练开源模型(�
 
 ## See Also (深度专题)
 
-- [[../../05_大模型/06_LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive|LLM 数据工程深度解析]] — 数据采集/清洗/标注/合成的全链路工程实践
+- [[概念/LLM/llm-data-engineering|LLM 数据工程深度解析]] — 数据采集/清洗/标注/合成的全链路工程实践
 
 ---
 

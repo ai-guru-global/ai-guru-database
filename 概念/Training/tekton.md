@@ -165,7 +165,7 @@ spec:
 - [[概念/Training/gitops|GitOps]] — Git 运维
 - [[概念/MLOps/mlops|MLOps]] — 机器学习运维
 - [[概念/MLOps/ci-cd|CI/CD]] — 持续集成/部署
-- [[13_运维/02_SRE_Reliability/index|SRE]] — 站点可靠性
+- [[13_运维/02_SRE与可靠性/index|SRE]] — 站点可靠性
 
 > ℹ️ Tekton 是 2026 年云原生 CI/CD 的事实标准，K8s 原生、可扩展、安全，是 MLOps  管道的基础设施。
 

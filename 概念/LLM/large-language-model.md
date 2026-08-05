@@ -138,7 +138,7 @@ LLM 的核心架构几乎普遍基于 Transformer，尤其是 Decoder-only 的 G
 - [[概念/LLM/tokenization|Tokenization]] — 文本切分
 - [[概念/LLM/kv-cache|KV Cache]] — 推理加速
 - [[概念/LLM/reasoning-models|推理模型]] — LLM 的推理进化
-- [[05_大模型/01_LLM_Fundamentals/LLM_Fundamentals|LLM 基础]] — 详细教程
+- [[05_大模型/01_LLM基础/05_LLM_基础|LLM 基础]] — 详细教程
 - [[05_大模型/index|NLP LLMs]] — LLM 章节索引
 
 ## 2026 LLM 能力矩阵

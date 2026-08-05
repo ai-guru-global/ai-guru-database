@@ -14,7 +14,7 @@ relationships:
   - target: "概念/weaviate"
     type: related_to
 sources:
-  - 14_RAG系统/03_Vector_Databases/Qdrant_Deep_Dive.md
+  - 14_RAG系统/03_向量数据库/Qdrant_Deep_Dive.md
 summary: "Qdrant 是用 Rust 开发的开源向量数据库，以高性能、低延迟和易部署著称，支持混合搜索、稀疏向量、量化与多副本，是 RAG 和中型规模语义搜索的热门选择。"
 provenance:
   extracted: 0.75
@@ -94,7 +94,7 @@ name_zh: "Rust 向量数据库"
 
 ## Related
 
-- [[14_RAG系统/03_Vector_Databases/Qdrant_Deep_Dive]] — Qdrant 深度解析
+- [[14_RAG系统/03_向量数据库/04_Qdrant_深入分析]] — Qdrant 深度解析
 - [[概念/vector-database]] — 向量数据库
 - [[概念/rag-patterns]] — RAG
 - [[概念/RAG/embedding-models|embedding]] — Embedding

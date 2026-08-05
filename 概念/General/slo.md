@@ -50,7 +50,7 @@ name_zh: "服务水平目标"
 - [[概念/sli|SLI]]
 - [[概念/error-budget|Error Budget]]
 - [[概念/sla|SLA]]
-- [[13_运维/02_SRE_Reliability/LLM_Inference_SLO_Guide|LLM 推理 SLO 实践指南]]
+- [[13_运维/02_SRE与可靠性/18_LLM推理_SLO_指南|LLM 推理 SLO 实践指南]]
 
 ---
 

@@ -198,6 +198,6 @@ Beam Search (k=1) = Greedy Decoding
 - [[概念/LLM/greedy-decoding|贪婪解码]]
 - [[概念/LLM/sampling-decoding|采样解码]]
 - [[概念/LLM/top-p-sampling|Top-p 采样]]
-- [[05_大模型/02_Sequence_Models/Text_Generation_Decoding_Strategies|解码策略]]
+- [[05_大模型/02_序列模型/Text_Generation_Decoding_Strategies|解码策略]]
 
 > ℹ️ 现代 LLM 应用中，采样策略 (Top-p/Top-k) 比 Beam Search 更常用，Beam Search 主要用于翻译/摘要等确定性任务。

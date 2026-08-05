@@ -9,7 +9,7 @@ relationships:
     type: enables
 sources:
   - 12_架构基建/AI_Stack_Deep_Dive.md
-  - 10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md
+  - 10_部署推理/02_推理引擎/vLLM_Deep_Dive.md
 summary: PagedAttention 是 vLLM 提出的 KV Cache 内存管理技术，借鉴操作系统虚拟内存分页思想，将 KV Cache 分成固定大小 block 按需分配，消除显存碎片，将利用率从 50-65% 提升到 95%+。2026 年所有主流推理引擎均默认启用。
 provenance:
   extracted: 0.9
@@ -145,12 +145,12 @@ Block Table: A→[1,5,8]  B→[2,6]  C→[3,7]
 - [[概念/continuous-batching]] — Continuous Batching（协同技术）
 - [[概念/model-deployment]] — 模型部署全景
 - [[概念/multi-head-latent-attention]] — MLA（架构层压缩 KV Cache）
-- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]] — vLLM（PagedAttention 首发实现）
-- [[10_部署推理/02_Inference_Engines/vLLM_for_dummy]] — vLLM 大白话解释
-- [[10_部署推理/02_Inference_Engines/vLLM_PagedAttention_Architecture]] — vLLM + PagedAttention 架构链路图
-- [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive]] — SGLang（结合 RadixAttention 的内存管理）
-- [[10_部署推理/02_Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy（TurboMind Paging KV Cache）
-- [[10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM（In-Flight Batching + Paged KV）
+- [[10_部署推理/02_推理引擎/29_vLLM_深入分析]] — vLLM（PagedAttention 首发实现）
+- [[10_部署推理/02_推理引擎/vLLM_for_dummy]] — vLLM 大白话解释
+- [[10_部署推理/02_推理引擎/vLLM_PagedAttention_Architecture]] — vLLM + PagedAttention 架构链路图
+- [[10_部署推理/02_推理引擎/23_SGLang_深入分析]] — SGLang（结合 RadixAttention 的内存管理）
+- [[10_部署推理/02_推理引擎/18_LMDeploy_深入分析]] — LMDeploy（TurboMind Paging KV Cache）
+- [[10_部署推理/02_推理引擎/25_TensorRT_LLM_深入分析]] — TensorRT-LLM（In-Flight Batching + Paged KV）
 
 ---
 
@@ -194,7 +194,7 @@ PagedAttention 管理:
 - [[概念/Inference/kv-cache|KV Cache]]
 - [[概念/Inference/continuous-batching|Continuous Batching]]
 - [[概念/LLM/vllm|vLLM]]
-- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_部署推理/02_推理引擎/29_vLLM_深入分析|vLLM 深度解析]]
 
 > ℹ️ PagedAttention 是 vLLM 的核心创新，已成为 LLM 推理服务的事实标准。
 

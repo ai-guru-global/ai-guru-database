@@ -106,7 +106,7 @@ name_zh: "合成数据"
 
 - [[概念/data-cleaning-pipeline]] — 数据清洗流水线
 - [[治理/pretraining-synthetic-data]] — 预训练合成数据综合
-- [[11_模型运维/05_Orchestration/Data_Pipeline_Orchestration]] — 数据流水线
+- [[11_模型运维/05_流程编排/Data_Pipeline_Orchestration]] — 数据流水线
 
 ---
 

@@ -195,12 +195,6 @@ Karmada 是 K8s 多集群编排的事实标准，通过 PropagationPolicy 和 Ov
 
 > 💡 Karmada 是 K8s 多集群编排的事实标准，特别适合跨地域 AI 推理部署和训练容灾场景。
 
-
-
-
-
-
-
 ## 核心知识框架
 
 | 知识层 | 内容 | 深度要求 | 优先级 |
@@ -262,12 +256,3 @@ Karmada 是 K8s 多集群编排的事实标准，通过 PropagationPolicy 和 Ov
 | Maintainability | 可维护性 |
 | Observability | 可观测性 |
 | Reliability | 可靠性 |
-
-## 检查清单
-
-- [ ] 核心概念已理解
-- [ ] 基本操作已掌握
-- [ ] 实践项目已完成
-- [ ] 常见问题能解决
-- [ ] 前沿趋势有关注
-- [ ] 知识已沉淀文档化

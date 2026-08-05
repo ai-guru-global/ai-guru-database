@@ -14,7 +14,7 @@ relationships:
   - target: "概念/vector-database"
     type: uses
 sources:
-  - 14_RAG系统/06_RAG_Frameworks/LlamaIndex_Deep_Dive.md
+  - 14_RAG系统/06_RAG框架/LlamaIndex_Deep_Dive.md
 summary: "LlamaIndex 是面向 LLM 应用的数据框架，专注于数据摄取、索引、检索和 RAG。它提供 Document、Index、Query Engine、Agent 等抽象，是构建企业知识库和检索增强生成系统的核心工具。"
 provenance:
   extracted: 0.8
@@ -137,7 +137,7 @@ print(response)
 - [[概念/LLM/langchain|LangChain]]
 - [[概念/Agent/autogen|AutoGen]]
 - [[概念/RAG/rag-systems|RAG 系统]]
-- [[14_RAG系统/06_RAG_Frameworks/LlamaIndex_Deep_Dive|LlamaIndex 深度解析]]
+- [[14_RAG系统/06_RAG框架/06_LlamaIndex_深入分析|LlamaIndex 深度解析]]
 
 ## 核心代码示例
 

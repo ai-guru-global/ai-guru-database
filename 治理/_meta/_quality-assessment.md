@@ -69,7 +69,7 @@ name_zh: "AI Guru 知识库内容完整性评估"
 | 06_Reinforcement_Learning | 28 | 46,149 | ⭐⭐⭐⭐☆ | RL + 具身智能覆盖 |
 | 22_Papers | 24 | 46,201 | ⭐⭐⭐⭐☆ | 论文笔记深度好 |
 | 02_Machine_Learning | 35 | 40,555 | ⭐⭐⭐⭐☆ | 8 个子主题均衡 |
-| 01_Fundamentals | 29 | 43,171 | ⭐⭐⭐⭐⭐ | 数学/硬件/分布式齐全 |
+| 01_基础入门 | 29 | 43,171 | ⭐⭐⭐⭐⭐ | 数学/硬件/分布式齐全 |
 | 09_Deployment_Inference | 25 | 33,323 | ⭐⭐⭐⭐☆ | 量化/vLLM 深入 |
 | 18_Cloud_Ops_Agent | 19 | 33,174 | ⭐⭐⭐⭐☆ | 云原生 + Agent Ops |
 | 19_Ethics_Safety | 27 | 32,536 | ⭐⭐⭐⭐☆ | 7 个安全子方向 |
@@ -214,15 +214,15 @@ name_zh: "AI Guru 知识库内容完整性评估"
 | 文件 | 字数 |
 |------|------|
 | 治理/notes/AI_Concept_Knowledge_Graph.md | 7,918 |
-| 10_部署推理/05_Quantization/Quantization_Techniques_2026.md | 6,859 |
-| 07_模型训练/02_Data/Tokenizer_Design_2026.md | 6,769 |
-| 05_大模型/15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md | 6,761 |
-| 07_模型训练/02_Data/Data_Curation_and_Mixture_2026.md | 6,695 |
-| 05_大模型/14_Global_LLM_Ecosystem/OpenAI_Deep_Dive.md | 6,694 |
-| 01_数学基础/10_AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive.md | 6,612 |
+| 10_部署推理/04_模型量化/Quantization_Techniques_2026.md | 6,859 |
+| 07_模型训练/02_数据工程/Tokenizer_Design_2026.md | 6,769 |
+| 05_大模型/15_中国LLM生态/DeepSeek_Deep_Dive.md | 6,761 |
+| 07_模型训练/02_数据工程/Data_Curation_and_Mixture_2026.md | 6,695 |
+| 05_大模型/14_全球LLM生态/OpenAI_Deep_Dive.md | 6,694 |
+| 01_数学基础/10_AI硬件/NVIDIA_AMD_GPU_Deep_Dive.md | 6,612 |
 | 治理/notes/AI_Full_Stack_Concepts.md | 6,514 |
-| 07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods.md | 5,895 |
-| 05_大模型/14_Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive.md | 5,824 |
+| 07_模型训练/06_对齐研究/GRPO_and_New_Alignment_Methods.md | 5,895 |
+| 05_大模型/14_全球LLM生态/Anthropic_Claude_Deep_Dive.md | 5,824 |
 
 ---
 

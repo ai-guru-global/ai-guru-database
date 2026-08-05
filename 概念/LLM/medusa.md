@@ -206,4 +206,4 @@ medusa_config = {
 - [[概念/LLM/eagle]] — EAGLE 推测解码
 - [[概念/LLM/mtp]] — Multi-Token Prediction
 - [[概念/Inference/inference-performance]] — 推理性能优化
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析

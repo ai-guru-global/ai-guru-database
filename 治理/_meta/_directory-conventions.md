@@ -28,7 +28,7 @@ ai-guru-database/
 ├── 📋 治理/                 ← 项目治理、审计、评估报告（集中管理）
 ├── 🗄️ 暂存与归档             ← 原始/ + _staging/ + 归档/
 ├── 🌐 工具与构建             ← Web/ (Astro) + 工具/
-└── 📄 根目录文件             ← README、ROADMAP、LICENSE、index.md
+└── 📄 根目录文件             ← README、ROADMAP、LICENSE、索引.md
 ```
 
 ---
@@ -72,7 +72,7 @@ ai-guru-database/
 - `{Topic}_Deep_Dive.md` — 深度解析
 
 **嵌套子目录规范**（2026-06 加前缀重构后）:
-- **主题型子目录**：带两位局部序号前缀 `NN_主题名/`（章节内从 01 起按逻辑层次排序，Fundamentals 打头），如 `05_大模型/01_LLM_Fundamentals/`、`15_智能体/04_Agent_Harness/`
+- **主题型子目录**：带两位局部序号前缀 `NN_主题名/`（章节内从 01 起按逻辑层次排序，Fundamentals 打头），如 `05_大模型/01_LLM基础/`、`15_智能体/04_Agent脚手架/`
 - **不编号**：人名型（`19_业界观点/` 下按人名）、岗位型（`21_面试岗位/` 下按岗位）、非内容目录（`assets/`、`tests/`、独立项目如 `Cloud_Ops_Agent/`）
 - 子目录序号是章节内局部编号，与顶层全局编号无关
 
@@ -206,7 +206,7 @@ git config core.hooksPath .githooks
 | `治理/CONTRIBUTING.md` | 贡献指南 |
 | `治理/KNOWN_ISSUES.md` | 已知问题追踪 |
 | `LICENSE` | MIT 许可证 |
-| `index.md` | Wiki 索引页（自动生成） |
+| `索引.md` | Wiki 索引页（自动生成） |
 | `治理/hot.md` | 热门页面导航（**正式入口**，非暂存；用户与 Agent 的快捷入口） |
 | `.gitignore` | Git 忽略规则 |
 
@@ -218,7 +218,7 @@ git config core.hooksPath .githooks
 
 | 内容类型 | 放置位置 | 示例 |
 |----------|----------|------|
-| 某领域的深度技术文档 | 对应的主章节目录 | `05_大模型/05_LLM_Architectures/xxx.md` |
+| 某领域的深度技术文档 | 对应的主章节目录 | `05_大模型/05_LLM架构/xxx.md` |
 | 某概念的速查卡片 | `概念/` | `概念/xxx.md` |
 | 跨 2+ 领域的综合分析 | `治理/` | `治理/xxx-yyy.md` |
 | 某个工具/产品的深度解析 | 最相关的章节 | `10_部署推理/xxx_Deep_Dive.md` |

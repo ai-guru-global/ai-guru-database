@@ -21,8 +21,8 @@ relationships:
 - target: '概念/model-deployment'
   type: enables
 sources:
-- 01_数学基础/10_AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive.md
-- 12_架构基建/07_Hardware_Compute/CDI_Deep_Dive.md
+- 01_数学基础/10_AI硬件/NVIDIA_AMD_GPU_Deep_Dive.md
+- 12_架构基建/07_硬件与算力/CDI_Deep_Dive.md
 - 12_架构基建/CDI_for_dummy.md
 summary: NVIDIA GPU Operator 是管理 Kubernetes 上 NVIDIA GPU 全栈软件的开源 Operator——以 DaemonSet 形式自动化部署驱动、nvidia-container-toolkit(生成 CDI spec)、device-plugin、DCGM 监控、MIG 管理器等组件，把 GPU 节点的 Day-0 安装与 Day-2 运维变成声明式配置。它是 CDI/DRA 在 NVIDIA 生态里的「实操入口」。
 provenance:
@@ -121,9 +121,9 @@ GPU Operator (运维层)
 - [[概念/cdi|CDI 容器设备接口（Operator 生成其 spec）]]
 - [[概念/dra|DRA（Operator 可部署其驱动）]]
 - [[概念/gpu-virtualization|GPU 虚拟化（MIG 经 Operator 管理）]]
-- [[12_架构基建/07_Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]
-- [[12_架构基建/07_Hardware_Compute/DRA_Deep_Dive|DRA 深度解析]]
-- [[01_数学基础/10_AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA/AMD GPU 深度解析]]
+- [[12_架构基建/07_硬件与算力/03_CDI_深入分析|CDI 深度解析]]
+- [[12_架构基建/07_硬件与算力/06_DRA_深入分析|DRA 深度解析]]
+- [[01_数学基础/10_AI硬件/07_NVIDIA_AMD_GPU_深入分析|NVIDIA/AMD GPU 深度解析]]
 - [[概念/llm-infrastructure|LLM 基础设施]]
 
 ---

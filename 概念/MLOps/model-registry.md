@@ -121,7 +121,7 @@ AI Stack 内置模型仓库，提供预置模型和自定义模型管理：
 - [[概念/model-serving]] — 模型服务（从仓库到服务）
 - [[概念/huggingface]] — Hugging Face（最大的开源模型社区）
 - [[概念/modelscope]] — ModelScope 魔搭（中文模型生态）
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack（内置模型仓库）
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack（内置模型仓库）
 
 ---
 

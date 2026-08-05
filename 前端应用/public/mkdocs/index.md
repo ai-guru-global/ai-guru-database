@@ -12,7 +12,7 @@ This page indexes the contents of `前端应用/public/mkdocs`.
 ## Subdirectories
 
 - [[前端应用/public/mkdocs/00_AI_Introduction/index|AI Introduction]]
-- [[前端应用/public/mkdocs/01_Fundamentals/index|Fundamentals]]
+- [[前端应用/public/mkdocs/01_基础入门/index|Fundamentals]]
 - [[前端应用/public/mkdocs/02_Machine_Learning/index|Machine Learning]]
 - [[前端应用/public/mkdocs/03_Deep_Learning/index|Deep Learning]]
 - [[前端应用/public/mkdocs/04_NLP_LLMs/index|NLP Llms]]

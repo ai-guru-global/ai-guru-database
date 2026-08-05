@@ -1069,7 +1069,7 @@ MVP 发布
 | 文档 | 说明 |
 |------|------|
 | [Edge AI 2026](../../12_Architecture_Infrastructure/Edge_AI_2026.md) | 边缘 AI 技术栈、框架对比 |
-| [AI 硬件 2026](../../01_Fundamentals/AI_Hardware/AI_Hardware_2026.md) | NPU/Edge TPU 规格 |
+| [AI 硬件 2026](../../01_基础入门/AI_Hardware/AI_Hardware_2026.md) | NPU/Edge TPU 规格 |
 | [Cloud Ops Agent](./Cloud_Product_Ops_2026.md) | 云端运维 Agent 架构 |
 | [Agent Harness](../15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026.md) | Agent 评测框架 |
 

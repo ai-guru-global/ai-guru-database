@@ -217,6 +217,6 @@ response = client.chat.completions.create(
 
 - [[概念/Inference/model-gateway|模型网关]] — LiteLLM 作为轻量级网关
 - [[概念/General/openai|OpenAI]] — LiteLLM 统一调用的主要提供商
-- [[12_架构基建/11_AI_Gateway/index|AI Gateway 索引]] — 网关架构总览
+- [[12_架构基建/11_AI网关/index|AI Gateway 索引]] — 网关架构总览
 - [[概念/Inference/model-routing|模型路由]] — LiteLLM 的路由能力
 - [[概念/Inference/inference-autoscaling|推理自动扩缩容]] — 网关配合的扩缩容

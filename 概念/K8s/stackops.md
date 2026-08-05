@@ -117,7 +117,7 @@ aioController 是运行在 K8s 集群中的 **Controller**，负责：
 - [[概念/nerdctl]] — nerdctl 容器管理
 - [[概念/crictl]] — crictl 容器调试
 - [[概念/helm]] — Helm 包管理
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 

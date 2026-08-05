@@ -27,7 +27,7 @@
 - [[入门/README_for_dummy|00 AI 简介与历史 — 小白版 🚀]] `4`
 - [[入门/index|AI Introduction]] 🔒
 
-## 01_Fundamentals（43）
+## 01_基础入门（43）
 
 - [[AI_Development_Environment_Setup|AI 开发环境配置: Jupyter + Conda + GPU 一步到位]] `20`
 - [[AI_Hardware_2026|AI硬件与芯片 2026年全景报告]] `12`
@@ -2302,7 +2302,7 @@
 - ⭐ [[training-fine-tuning|模型训练 × 微调技术]] `4`
 - ⭐ [[transformer-llm-architecture|Transformer 架构 × LLM 架构]] `4`
 
-## index.md（1）
+## 索引.md（1）
 
 - [[index|Wiki Index]] `2`
 

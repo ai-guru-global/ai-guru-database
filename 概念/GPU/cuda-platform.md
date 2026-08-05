@@ -167,7 +167,7 @@ CUDA Graph 将一系列 kernel 调用捕获为静态计算图，减少 kernel la
 - [[概念/gpu-interconnect]] — GPU 互联（NVLink/NVSwitch）
 - [[概念/mixed-precision]] — 混合精度（Tensor Core 加速）
 - [[概念/heterogeneous-gpu]] — 异构 GPU（CUDA 兼容性需求）
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack（CUDA 兼容）
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack（CUDA 兼容）
 
 ---
 

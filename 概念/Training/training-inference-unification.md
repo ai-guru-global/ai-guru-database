@@ -94,7 +94,7 @@ LeMix（UC Riverside, 2025）提出细粒度训推共置调度框架：
 - [[概念/heterogeneous-gpu]] — 异构 GPU 集群
 - [[概念/continuous-batching]] — Continuous Batching
 - [[概念/distributed-training]] — 分布式训练
-- [[12_架构基建/AI_Stack_Deep_Dive]] — 阿里云 AI Stack
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — 阿里云 AI Stack
 
 ---
 
@@ -148,7 +148,7 @@ LeMix（UC Riverside, 2025）提出细粒度训推共置调度框架：
 - [[概念/Inference/model-serving|Model Serving]] — 模型服务化
 - [[概念/K8s/gpu-operator|GPU Operator]] — GPU 管理
 - [[概念/MLOps/mlops|MLOps]] — 机器学习运维
-- [[12_架构基建/AI_Stack_Deep_Dive|AI Stack]] — AI 技术栈
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析|AI Stack]] — AI 技术栈
 
 > ℹ️ 训推一体是 2026 年 AI 基础设施的重要趋势，GPU 资源池化 + 时间片轮转是核心， 可提升 30-50% 利用率。
 

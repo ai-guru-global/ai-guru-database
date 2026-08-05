@@ -207,4 +207,4 @@ AI Stack 日常运维流程
 - [[概念/heterogeneous-gpu]] — 异构 GPU 纳管
 - [[概念/qwen3-pro]] — Qwen3-Pro 优化模型
 - [[概念/model-gateway]] — 模型网关 Synapse
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析

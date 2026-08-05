@@ -18,10 +18,10 @@ relationships:
 - target: '概念/distributed-training'
   type: related_to
 sources:
-- 10_部署推理/07_GPU_Infrastructure/GPUStack_Deep_Dive.md
-- 10_部署推理/07_GPU_Infrastructure/GPUStack_for_dummy.md
-- 10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md
-- 10_部署推理/02_Inference_Engines/SGLang_Deep_Dive.md
+- 10_部署推理/05_硬件与算力/GPUStack_Deep_Dive.md
+- 10_部署推理/05_硬件与算力/GPUStack_for_dummy.md
+- 10_部署推理/02_推理引擎/vLLM_Deep_Dive.md
+- 10_部署推理/02_推理引擎/SGLang_Deep_Dive.md
 summary: GPUStack 是开源的 GPU 集群管理器与私有 MaaS 平台，支持 NVIDIA/AMD/昇腾/摩尔线程等异构 GPU，通过可插拔的 vLLM、SGLang、llama-box、MindIE 等后端运行 LLM、VLM、Embedding、Reranker、语音和图像模型，并提供 OpenAI 兼容 API。
 created: 2026-06-12
 updated: 2026-07-21
@@ -85,10 +85,10 @@ GPUStack
 
 ## 延伸阅读
 
-- [[10_部署推理/07_GPU_Infrastructure/GPUStack_Deep_Dive|GPUStack 深度解析]]
-- [[10_部署推理/07_GPU_Infrastructure/GPUStack_for_dummy|GPUStack 入门指南]]
-- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[10_部署推理/05_硬件与算力/01_GPUStack_深入分析|GPUStack 深度解析]]
+- [[概念/GPU/gpustack|GPUStack 入门指南]]
+- [[10_部署推理/02_推理引擎/29_vLLM_深入分析|vLLM 深度解析]]
+- [[10_部署推理/02_推理引擎/23_SGLang_深入分析|SGLang 深度解析]]
 - [[概念/model-serving|模型服务]]
 - [[概念/model-deployment|模型部署]]
 

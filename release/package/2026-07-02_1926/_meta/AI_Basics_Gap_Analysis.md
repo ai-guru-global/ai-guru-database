@@ -11,7 +11,7 @@ sources: []
 # AI 基础入门内容缺口分析报告
 
 > 生成时间: 2026-06-01
-> 分析范围: 00_AI_Introduction / 01_Fundamentals / 02_Machine_Learning / 90_Learn
+> 分析范围: 00_AI_Introduction / 01_基础入门 / 02_Machine_Learning / 90_Learn
 
 ---
 
@@ -20,7 +20,7 @@ sources: []
 | 模块 | 文档数 | 说明 |
 |------|--------|------|
 | **AI 通识认知** | 10 | 00_AI_Introduction 形成完整 16 周通识课教材，含概念、历史、工具、伦理、未来、术语表、案例、实验 |
-| **数学基础** | 6 | 01_Fundamentals 覆盖线代、概率统计、数据结构算法、分布式系统、AI 硬件，均有 for_dummy 版本 |
+| **数学基础** | 6 | 01_基础入门 覆盖线代、概率统计、数据结构算法、分布式系统、AI 硬件，均有 for_dummy 版本 |
 | **学习路径导航** | 13 | 90_Learn 提供 6 条角色路径 + 5 阶段概念体系 (stage0-4) |
 | **小白版体系** | 45+ | 几乎每个主要章节都有 `_for_dummy.md`，降低阅读门槛 |
 
@@ -38,7 +38,7 @@ sources: []
 - `Fundamentals-in-nutshell.md` 提到 Jupyter/Conda/Docker，但假设读者已会 Python
 - `AI_Practical_Labs.md` 的 8 个实验都标注"无需编程基础"——从"零代码体验"到"写代码"之间没有过渡
 
-**影响**: 纯文科/管理背景读者读完 00 章后，想进入 01_Fundamentals 会被 Python 门槛挡住；自学者需要跳转到外部资源，破坏知识闭环。
+**影响**: 纯文科/管理背景读者读完 00 章后，想进入 01_基础入门 会被 Python 门槛挡住；自学者需要跳转到外部资源，破坏知识闭环。
 
 **建议补充**:
 - `数学基础/Python_for_AI_Basics.md`
@@ -83,7 +83,7 @@ sources: []
                                                         │
                                                         ▼
                                                ┌─────────────────┐
-                                               │  01_Fundamentals │
+                                               │  01_基础入门 │
                                                │  (数学+编程基础) │
                                                └─────────────────┘
 ```

@@ -146,7 +146,7 @@ AI Stack 容错层
 - [[概念/distributed-parallelism]] — 分布式并行策略
 - [[概念/model-training]] — 模型训练
 - [[概念/deepspeed]] — DeepSpeed（ZeRO Checkpoint）
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack（容错层）
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack（容错层）
 
 ---
 

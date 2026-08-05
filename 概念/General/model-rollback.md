@@ -49,8 +49,8 @@ name_zh: "模型回滚"
 - [[概念/model-registry|Model Registry]]
 - [[概念/kserve|KServe]]
 - [[概念/mlflow|MLflow]]
-- [[10_部署推理/01_Deployment_Fundamentals/Model_Hot_Reload_and_Rollback_Runbook|LLM 模型热加载与回滚 Runbook]]
-- [[11_模型运维/12_Troubleshooting/Model_Version_Rollback_Playbook|模型版本回滚 Playbook]]
+- [[10_部署推理/01_部署基础/08_模型_Hot_Reload_and_回滚_操作手册|LLM 模型热加载与回滚 Runbook]]
+- [[11_模型运维/12_故障排查/Model_Version_Rollback_Playbook|模型版本回滚 Playbook]]
 
 ---
 

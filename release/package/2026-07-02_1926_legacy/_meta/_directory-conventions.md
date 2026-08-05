@@ -24,7 +24,7 @@ ai-guru-database/
 ├── 📋 _meta/                 ← 项目治理、审计、评估报告（集中管理）
 ├── 🗄️ 暂存与归档             ← _raw/ + _staging/ + _archives/
 ├── 🌐 工具与构建             ← Web/ (Astro) + _tools/
-└── 📄 根目录文件             ← README、ROADMAP、LICENSE、index.md
+└── 📄 根目录文件             ← README、ROADMAP、LICENSE、索引.md
 ```
 
 ---
@@ -199,7 +199,7 @@ git config core.hooksPath .githooks
 | `CONTRIBUTING.md` | 贡献指南 |
 | `KNOWN_ISSUES.md` | 已知问题追踪 |
 | `LICENSE` | MIT 许可证 |
-| `index.md` | Wiki 索引页（自动生成） |
+| `索引.md` | Wiki 索引页（自动生成） |
 | `hot.md` | 热门页面导航（**正式入口**，非暂存；用户与 Agent 的快捷入口） |
 | `.gitignore` | Git 忽略规则 |
 

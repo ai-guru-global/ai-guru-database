@@ -998,7 +998,7 @@ Speech 2.6 Turbo 架构:
 │       │                                                       │
 │       ▼                                                       │
 │  ┌────────────────────────────────────────────────────┐      │
-│  │  Autoregressive Decoder (Transformer)               │      │
+│  │  Autoregressive Decoder (01_Transformer)               │      │
 │  │  • 逐步生成声学特征 (mel-spectrogram)               │      │
 │  │  • 注意力机制确保文本-语音对齐                      │      │
 │  └────────────────────────────────────────────────────┘      │

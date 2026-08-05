@@ -132,9 +132,9 @@ Netflix Prize 关键经验：集成方法效果最好、矩阵分解是核心、
 
 - [[概念/Math/supervised-learning.md|supervised-learning]]
 - [[概念/Math/unsupervised-learning.md|unsupervised-learning]]
-- [[02_机器学习/08_Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
-- [[02_机器学习/08_Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
-- [[02_机器学习/11_AutoML/AutoML.md|AutoML]]
+- [[02_机器学习/08_异常检测/02_anomaly_detection_automl|Anomaly_Detection]]
+- [[02_机器学习/08_异常检测/02_anomaly_detection_automl|Anomaly_Detection_for_dummy]]
+- [[02_机器学习/11_自动机器学习/01_AutoML|AutoML]]
 
 ---
 

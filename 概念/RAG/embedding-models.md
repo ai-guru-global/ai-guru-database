@@ -17,14 +17,14 @@ relationships:
     type: related_to
   - target: "概念/embeddings-vectors-mrl-plain"
     type: simplified
-  - target: "10_部署推理/04_Inference_Performance/Embedding_Model_Serving"
+  - target: "10_部署推理/03_推理优化/Embedding_Model_Serving"
     type: optimized_by
 sources:
   - 12_架构基建/AI_Stack_Deep_Dive.md
-  - 14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026.md
-  - 14_RAG系统/02_Embeddings/Matryoshka_Representation_Learning_Deep_Dive.md
-  - 20_论文精读/04_Efficiency/Matryoshka_Representation_Learning_Deep_Dive.md
-  - 10_部署推理/04_Inference_Performance/Embedding_Model_Serving.md
+  - 14_RAG系统/04_高级RAG/RAG_Advanced_2026.md
+  - 14_RAG系统/02_嵌入技术/Matryoshka_Representation_Learning_Deep_Dive.md
+  - 20_论文精读/04_效率优化/Matryoshka_Representation_Learning_Deep_Dive.md
+  - 10_部署推理/03_推理优化/Embedding_Model_Serving.md
   - 概念/embeddings-vectors-mrl-plain.md
 summary: "嵌入模型将文本/图像映射为高维稠密向量，是语义搜索、RAG、聚类的基础。2026年主流方案包括 GTE、bge、E5-Mistral 等，维度从 384 到 4096。"
 provenance:
@@ -154,11 +154,11 @@ Query → Embedding Model → 向量数据库 Top-100 → Reranker → Top-5 →
 - [[概念/vector-database]] — 向量数据库（嵌入的存储与检索）
 - [[概念/llm-architectures]] — LLM 架构
 - [[概念/embeddings-vectors-mrl-plain]] — Embedding、向量与 MRL 大白话
-- [[14_RAG系统/02_Embeddings/Sentence_Transformers_Deep_Dive]] — Sentence Transformers
-- [[14_RAG系统/02_Embeddings/Matryoshka_Representation_Learning_Deep_Dive]] — Matryoshka Representation Learning 深度解析
-- [[14_RAG系统/02_Embeddings/Embedding_Models_Guide]] — Embedding 模型选型与实践指南
-- [[10_部署推理/04_Inference_Performance/Embedding_Model_Serving|Embedding/Reranker 服务]]
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack
+- [[14_RAG系统/02_嵌入技术/06_Sentence_Transformers_深入分析]] — Sentence Transformers
+- [[概念/RAG/matryoshka-representation-learning]] — Matryoshka Representation Learning 深度解析
+- [[14_RAG系统/02_嵌入技术/01_嵌入_模型_指南]] — Embedding 模型选型与实践指南
+- [[10_部署推理/03_推理优化/21_嵌入_模型服务|Embedding/Reranker 服务]]
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack
 
 ## 2026 Embedding 模型生态现状
 
@@ -206,4 +206,4 @@ Query → Embedding Model → 向量数据库 Top-100 → Reranker → Top-5 →
 - [[概念/RAG/hnsw|HNSW]] — 向量索引
 - [[概念/RAG/reranker|Reranker]] — 重排序
 - [[概念/RAG/hybrid-search|Hybrid Search]] — 混合检索
-- [[14_RAG系统/02_Embeddings/Embedding_Models_Guide|Embedding 模型选型指南]]
+- [[14_RAG系统/02_嵌入技术/01_嵌入_模型_指南|Embedding 模型选型指南]]

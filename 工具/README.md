@@ -155,7 +155,7 @@ flowchart LR
     subgraph 输出语料包
         OUT[release/<br/>自包含语料]
         MF[corpus_manifest.json]
-        IDX[index.md]
+        IDX[索引.md]
         HOT[治理/hot.md]
     end
 

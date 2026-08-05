@@ -1046,12 +1046,12 @@ kubectl rollout undo deployment/cloud-ops-agent --to-revision=3
 
 | 相关文档 | 说明 |
 |---------|------|
-| [架构设计](../architecture/index.md) | 了解系统架构 |
-| [测试指南](../testing/index.md) | 了解测试框架 |
-| [运维指南](../operations/index.md) | 了解运维实践 |
-| [语料指南](./corpus/index.md) | 了解语料工程 |
-| [产品指南](./product/index.md) | 了解产品需求 |
-| [集成测试](./integration_testing/index.md) | 了解集成测试 |
+| [架构设计](../architecture/索引.md) | 了解系统架构 |
+| [测试指南](../testing/索引.md) | 了解测试框架 |
+| [运维指南](../operations/索引.md) | 了解运维实践 |
+| [语料指南](./corpus/索引.md) | 了解语料工程 |
+| [产品指南](./product/索引.md) | 了解产品需求 |
+| [集成测试](./integration_testing/索引.md) | 了解集成测试 |
 
 ---
 

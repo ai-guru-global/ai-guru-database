@@ -14,7 +14,7 @@ relationships:
   - target: "概念/ray"
     type: related_to
 sources:
-  - 07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive.md
+  - 07_模型训练/04_分布式训练/DeepSpeed_Deep_Dive.md
 summary: "DeepSpeed 是微软开源的深度学习训练与推理优化库，以 ZeRO 显存优化、DeepSpeed-Inference、MoE 训练和 ZeRO-Inference 著称，广泛用于千亿参数大模型的预训练与微调。"
 provenance:
   extracted: 0.8
@@ -114,7 +114,7 @@ Data Parallel Group
 
 ## Related
 
-- [[07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 深度解析
+- [[07_模型训练/04_分布式训练/02_DeepSpeed_深入分析]] — DeepSpeed 深度解析
 - [[概念/distributed-training]] — 分布式训练
 - [[概念/fsdp]] — PyTorch FSDP
 - [[概念/megatron-lm]] — Megatron-LM
@@ -212,4 +212,4 @@ Data Parallel Group
 
 - ZeRO-1/2 在 `deepspeed/runtime/zero/stage_1_and_2.py`（`DeepSpeedZeroOptimizer`），ZeRO-3 在 `stage3.py`（`DeepSpeedZeroOptimizer_Stage3`），由 `zero_optimization.stage` 配置直接选型。
 - ZeRO-3 的"参数从未完整存在于单卡"源于 `zero.Init` hook 模块 `__init__`（`partition_parameters.py`）+ 前向按需 all-gather（`partitioned_param_coordinator.py`）。
-- 源码归档：`code/llm-frameworks/DeepSpeed-v0.19.3/`，详见 [[07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive|DeepSpeed 深度解析]] 第 13 节。
+- 源码归档：`code/llm-frameworks/DeepSpeed-v0.19.3/`，详见 [[07_模型训练/04_分布式训练/02_DeepSpeed_深入分析|DeepSpeed 深度解析]] 第 13 节。

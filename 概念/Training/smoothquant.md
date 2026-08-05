@@ -12,9 +12,9 @@ relationships:
   - target: "概念/tensorrt-llm"
     type: used_by
 sources:
-  - 10_部署推理/05_Quantization/Quantization_Techniques_2026.md
-  - 10_部署推理/05_Quantization/Quantization_Precision_Deep_Dive.md
-  - 10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive.md
+  - 10_部署推理/04_模型量化/Quantization_Techniques_2026.md
+  - 10_部署推理/04_模型量化/Quantization_Precision_Deep_Dive.md
+  - 10_部署推理/02_推理引擎/TensorRT_LLM_Deep_Dive.md
 summary: "SmoothQuant 是一种让大模型 INT8 量化更稳定的技术。它通过把权重和激活值之间的‘波动’重新分配，让两者都更容易用 8 位整数表示，从而在几乎不损失精度的情况下把推理速度提升 1.5-2 倍。"
 provenance:
   extracted: 0.7
@@ -105,7 +105,7 @@ Y = (X / s) · (W × s)
 - **与量化解耦**：SmoothQuant 本身不量化，只做尺度迁移——这解释了为什么它总是以"SmoothQuant + 某量化方法"的配方组合出现（两个 Modifier 写进同一份 Recipe，`recipe/recipe.py` L27）。
 - **逐层校准**：由 `SequentialPipeline`（`pipelines/sequential/pipeline.py` L52）逐层捕获激活峰值，单卡可校准大模型。
 
-详见 [[10_部署推理/05_Quantization/Quantization_Techniques_2026]] 第 8 节。
+详见 [[10_部署推理/04_模型量化/04_量化_技术_2026]] 第 8 节。
 
 ## Related
 
@@ -114,8 +114,8 @@ Y = (X / s) · (W × s)
 - [[概念/model-precision]] — 模型精度
 - [[概念/tensorrt-llm]] — TensorRT-LLM
 - [[概念/awq]] — AWQ 激活感知量化
-- [[10_部署推理/05_Quantization/Quantization_Techniques_2026]] — 量化技术 2026
-- [[10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM 深度解析
+- [[10_部署推理/04_模型量化/04_量化_技术_2026]] — 量化技术 2026
+- [[10_部署推理/02_推理引擎/25_TensorRT_LLM_深入分析]] — TensorRT-LLM 深度解析
 
 ---
 

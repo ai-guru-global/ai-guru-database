@@ -29,7 +29,7 @@ name_zh: "全章节内容审计与缺口分析报告"
 | 章节 | 评分 | 一句话结论 |
 |------|------|-----------|
 | 00_AI_Introduction | -/10 | `AI入门` 作为高校 AI 通识课教材导入章节已具备扎实骨架，概念、历史、工具、伦理、案例、实验覆盖较全，小白版与可运行实验是亮点；但面向企业生产环境的内容明显薄弱，RA... |
-| 01_Fundamentals | -/10 | 作为连接统计与机器学习的进阶数学基础，可与概率统计章节形成进阶路径。... |
+| 01_基础入门 | -/10 | 作为连接统计与机器学习的进阶数学基础，可与概率统计章节形成进阶路径。... |
 | 02_Machine_Learning | -/10 | 一句话结论：该章节在经典机器学习理论与核心算法上覆盖较全（尤其集成学习、推荐、时序、异常检测、AutoML 深度好），但严重偏向“90_学习/竞赛”视角，生产环境所需的 MLOps、部署、监控、特征平台、可... |
 | 03_Deep_Learning | -/10 | `深度学习` 在神经网络基础、优化方法、前沿话题（SSM/GNN/SSL/World Models）上质量较高且覆盖较全，但作为深度学习章节的「主章节」，仍缺少 CNN/Tra... |
 | 04_Computer_Vision | -/10 | 一句话结论：`计算机视觉` 在概念教学、零基础入门和代码示例层面已相当扎实，但距离「企业生产级知识库」仍有明显缺口——缺少部署运维、成本安全、MLOps 数据管线、实时视频分... |
@@ -116,7 +116,7 @@ name_zh: "全章节内容审计与缺口分析报告"
 | ``Fine_tuning_Basics_in_nutshell.md`` | P1 | `AI入门/` |
 | ``AI_Code_Assistants_Deep_Dive.md`` | P1 | `AI入门/` |
 
-### 01_Fundamentals
+### 01_基础入门
 
 `数学基础` 是知识库的“基础理论”支撑章节（`tier: supporting`），定位在数学、计算机科学、编程语言、开发环境与 AI 硬件四个维度，为后续机器学习、深度学习、大模型等应用章节提供前置知识。README 中明确了线性代数 → 概率统计 → 数据结构/分布式系统的主学习路径，并额外补充了 Python、Java、AI 硬件与开发环境等工程入门内容。整体上，该章节更偏向“学习者入门地图”，对生产环境所需的工程化、运维、安全合规、成本优化等主题覆盖较弱。  ---
 
@@ -200,7 +200,7 @@ name_zh: "全章节内容审计与缺口分析报告"
 - 神经网络训练调试 Runbook：损失不下降/NaN/梯度爆炸/过拟合/欠拟合的系统化排查流程与 checklist。
 - 模型量化与压缩（框架层）：INT8/FP16/AWQ/GPTQ/动态量化在 PyTorch/ONNX/TensorRT 中的实践。
 - PyTorch 生产部署 Runbook：TorchScript、TorchExport、`torch.compile`、TorchServe、ONNX 导出、推理优化。
-- 分布式训练深度文档：虽然 `07_模型训练/04_Distributed_Training/` 存在，但 `深度学习` 作为框架层缺少 DDP/FSDP/DeepSpeed/Megatron 的入门与原理衔接。
+- 分布式训练深度文档：虽然 `07_模型训练/04_分布式训练/` 存在，但 `深度学习` 作为框架层缺少 DDP/FSDP/DeepSpeed/Megatron 的入门与原理衔接。
 - 生成模型深度文档（VAE/GAN/Diffusion）：仅在初学者文档中提及，缺少系统深度文档。
 
 #### P1 — 行业主流
@@ -293,12 +293,12 @@ name_zh: "全章节内容审计与缺口分析报告"
 | ``CV_MLOps_Data_Pipeline_Runbook.md`` | P0 | `04_计算机视觉/` 根目录 |
 | ``CV_Security_and_Compliance_2026.md`` | P0 | `04_计算机视觉/` 根目录 |
 | ``Edge_CV_Deployment_Case_Study.md`` | P0 | `04_计算机视觉/` 根目录 |
-| ``Video_Analytics_Pipeline_Runbook.md`` | P0 | `04_计算机视觉/07_Video_Generation/` 或 |
-| ``VLM_Production_Architecture_2026.md`` | P0 | `04_计算机视觉/08_Multimodal_Vision/` |
+| ``Video_Analytics_Pipeline_Runbook.md`` | P0 | `04_计算机视觉/07_视频生成/` 或 |
+| ``VLM_Production_Architecture_2026.md`` | P0 | `04_计算机视觉/08_多模态视觉/` |
 | ``CV_Cost_Optimization_Guide.md`` | P0 | `04_计算机视觉/` 根目录 |
 | ``Industrial_Quality_Inspection_Case_Study.md`` | P0 | `04_计算机视觉/Image_Classification |
-| ``SAM_2_Deep_Dive.md`` | P1 | `04_计算机视觉/03_Segmentation/` |
-| ``FLUX_Ecosystem_Deep_Dive.md`` | P1 | `04_计算机视觉/06_Generative_Models/` |
+| ``SAM_2_Deep_Dive.md`` | P1 | `04_计算机视觉/03_图像分割/` |
+| ``FLUX_Ecosystem_Deep_Dive.md`` | P1 | `04_计算机视觉/06_生成模型/` |
 
 ### 05_NLP_LLMs
 
@@ -395,9 +395,9 @@ name_zh: "全章节内容审计与缺口分析报告"
 | ``RL_Production_Deployment_Runbook.md`` | P0 | `06_强化学习/` |
 | ``RLHF_Production_Runbook.md`` | P0 | `06_强化学习/` |
 | ``GRPO_Training_Deep_Dive.md`` | P0 | `06_强化学习/` |
-| ``Offline_RL_Deep_Dive.md`` | P0 | `06_强化学习/02_Deep_RL/` |
-| ``Multi_Agent_RL_Deep_Dive.md`` | P0 | `06_强化学习/02_Deep_RL/` |
-| ``Safe_RL_Deep_Dive.md`` | P0 | `06_强化学习/02_Deep_RL/` |
+| ``Offline_RL_Deep_Dive.md`` | P0 | `06_强化学习/02_深度强化学习/` |
+| ``Multi_Agent_RL_Deep_Dive.md`` | P0 | `06_强化学习/02_深度强化学习/` |
+| ``Safe_RL_Deep_Dive.md`` | P0 | `06_强化学习/02_深度强化学习/` |
 | ``RL_for_Recommendations_Case_Study.md`` | P0 | `06_强化学习/` |
 | ``RL_MLOps_and_Experiment_Tracking_2026.md`` | P0 | `06_强化学习/` |
 | ``Sim_to_Real_Runbook.md`` | P0 | `06_强化学习/Robotics_Embo |
@@ -442,15 +442,15 @@ name_zh: "全章节内容审计与缺口分析报告"
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``Training_Cost_Optimization_and_FinOps_2026.md`` | P0 | `07_模型训练/03_Optimization/` |
-| ``Checkpoint_Management_and_Disaster_Recovery_Runbook.md`` | P0 | `07_模型训练/07_Monitoring/` |
-| ``Training_Resource_Scheduling_K8s_Slurm_2026.md`` | P0 | `07_模型训练/04_Distributed_Training/ |
-| ``Cloud_Training_Platforms_Guide_2026.md`` | P0 | `07_模型训练/04_Distributed_Training/ |
-| ``Training_Safety_and_Data_Compliance_2026.md`` | P0 | `07_模型训练/02_Data/` 或新建 `Security/ |
+| ``Training_Cost_Optimization_and_FinOps_2026.md`` | P0 | `07_模型训练/03_训练优化/` |
+| ``Checkpoint_Management_and_Disaster_Recovery_Runbook.md`` | P0 | `07_模型训练/07_训练监控/` |
+| ``Training_Resource_Scheduling_K8s_Slurm_2026.md`` | P0 | `07_模型训练/04_分布式训练/ |
+| ``Cloud_Training_Platforms_Guide_2026.md`` | P0 | `07_模型训练/04_分布式训练/ |
+| ``Training_Safety_and_Data_Compliance_2026.md`` | P0 | `07_模型训练/02_数据工程/` 或新建 `Security/ |
 | ``End_to_End_LLM_Pretraining_Case_Study.md`` | P0 | `07_模型训练/` 根目录 |
-| ``MoE_Training_Deep_Dive.md`` | P0 | `07_模型训练/04_Distributed_Training/ |
-| ``Long_Context_Training_2026.md`` | P0 | `07_模型训练/03_Optimization/` |
-| ``FP8_Training_Deep_Dive.md`` | P1 | `07_模型训练/03_Optimization/` |
+| ``MoE_Training_Deep_Dive.md`` | P0 | `07_模型训练/04_分布式训练/ |
+| ``Long_Context_Training_2026.md`` | P0 | `07_模型训练/03_训练优化/` |
+| ``FP8_Training_Deep_Dive.md`` | P1 | `07_模型训练/03_训练优化/` |
 | ``Multimodal_Model_Training_2026.md`` | P1 | `07_模型训练/` 根目录或新建 `Multimodal/ |
 
 ### 08_Model_Evaluation
@@ -476,7 +476,7 @@ name_zh: "全章节内容审计与缺口分析报告"
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
 | ``RAG_Evaluation_Deep_Dive.md`` | P0 | `08_模型评估/` 根目录或新建 `RAG_Evalu |
-| ``Agent_Evaluation_Runbook.md`` | P0 | `08_模型评估/04_Evaluation_Tools/` |
+| ``Agent_Evaluation_Runbook.md`` | P0 | `08_模型评估/04_评估工具/` |
 | ``Evaluation_Cost_Optimization.md`` | P0 | `08_模型评估/` |
 | ``Data_Contamination_Detection_Deep_Dive.md`` | P0 | `08_模型评估/` |
 | ``Model_Card_Template.md`` | P0 | `08_模型评估/` |
@@ -494,7 +494,7 @@ name_zh: "全章节内容审计与缺口分析报告"
 
 #### P0 — 生产环境必备
 
-- Agent 评估方法论与工具：当前仅在 `in-nutshell` 中提及 Agent 指标，缺少系统性的 Agent 任务成功率、工具选择准确率、轨迹评估、Human-in-the-loop 评估实践（虽然 `15_智能体/07_Agent_Evaluation` 存在，但 `AI测试` 作为测试主章应独立成章）。
+- Agent 评估方法论与工具：当前仅在 `in-nutshell` 中提及 Agent 指标，缺少系统性的 Agent 任务成功率、工具选择准确率、轨迹评估、Human-in-the-loop 评估实践（虽然 `15_智能体/07_Agent评估` 存在，但 `AI测试` 作为测试主章应独立成章）。
 - LLM-as-Judge 的偏见控制与校准：现有文档多处使用 Judge LLM，但缺少位置偏差、自我偏好、verbosity bias 的识别与缓解方法。
 - 测试成本优化与 CI 预算管理：LLM 测试调用费用高昂，缺少按影响面选择测试子集、缓存策略、本地小模型预筛选、成本上限控制。
 - A/B 测试与影子测试（Shadow Testing）：生产环境模型切换缺少离线/在线 A/B、灰度、影子流量对比方法论。
@@ -728,11 +728,11 @@ name_zh: "全章节内容审计与缺口分析报告"
 | ``RAG_Evaluation_Framework_Deep_Dive.md`` | P0 | `14_RAG系统/Production_RAG/` 或 `Adva |
 | ``RAG_Monitoring_and_Observability_Runbook.md`` | P0 | `14_RAG系统/Production_RAG/` |
 | ``RAG_Cost_Optimization_Deep_Dive.md`` | P0 | `14_RAG系统/Production_RAG/` |
-| ``Reranker_Deep_Dive.md`` | P0 | `14_RAG系统/04_Advanced_RAG/` |
+| ``Reranker_Deep_Dive.md`` | P0 | `14_RAG系统/04_高级RAG/` |
 | ``Vector_DB_Production_Runbook.md`` | P0 | `14_RAG系统/Production_RAG/` |
 | ``Incremental_Indexing_and_Data_Pipeline_Runbook.md`` | P0 | `14_RAG系统/Production_RAG/` |
-| ``GraphRAG_Deep_Dive.md`` | P0 | `14_RAG系统/04_Advanced_RAG/` |
-| ``Pinecone_Deep_Dive.md`` | P1 | `14_RAG系统/03_Vector_Databases/` |
+| ``GraphRAG_Deep_Dive.md`` | P0 | `14_RAG系统/04_高级RAG/` |
+| ``Pinecone_Deep_Dive.md`` | P1 | `14_RAG系统/03_向量数据库/` |
 
 ### 15_Agent_Production
 

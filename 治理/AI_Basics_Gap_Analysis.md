@@ -14,7 +14,7 @@ name_zh: "AI 基础入门内容缺口分析报告"
 > 中文简称：AI 基础入门内容缺口分析报告
 
 > 生成时间: 2026-06-01
-> 分析范围: 00_AI_Introduction / 01_Fundamentals / 02_Machine_Learning / 90_Learn
+> 分析范围: 00_AI_Introduction / 01_基础入门 / 02_Machine_Learning / 90_Learn
 
 ---
 
@@ -23,7 +23,7 @@ name_zh: "AI 基础入门内容缺口分析报告"
 | 模块 | 文档数 | 说明 |
 |------|--------|------|
 | **AI 通识认知** | 10 | 00_AI_Introduction 形成完整 16 周通识课教材，含概念、历史、工具、伦理、未来、术语表、案例、实验 |
-| **数学基础** | 6 | 01_Fundamentals 覆盖线代、概率统计、数据结构算法、分布式系统、AI 硬件，均有 for_dummy 版本 |
+| **数学基础** | 6 | 01_基础入门 覆盖线代、概率统计、数据结构算法、分布式系统、AI 硬件，均有 for_dummy 版本 |
 | **学习路径导航** | 13 | 90_Learn 提供 6 条角色路径 + 5 阶段概念体系 (stage0-4) |
 | **小白版体系** | 45+ | 几乎每个主要章节都有 `_for_dummy.md`，降低阅读门槛 |
 
@@ -41,28 +41,28 @@ name_zh: "AI 基础入门内容缺口分析报告"
 - `Fundamentals-in-nutshell.md` 提到 Jupyter/Conda/Docker，但假设读者已会 Python
 - `AI_Practical_Labs.md` 的 8 个实验都标注"无需编程基础"——从"零代码体验"到"写代码"之间没有过渡
 
-**影响**: 纯文科/管理背景读者读完 00 章后，想进入 01_Fundamentals 会被 Python 门槛挡住；自学者需要跳转到外部资源，破坏知识闭环。
+**影响**: 纯文科/管理背景读者读完 00 章后，想进入 01_基础入门 会被 Python 门槛挡住；自学者需要跳转到外部资源，破坏知识闭环。
 
 **建议补充**:
 - `01_数学基础/Python_for_AI_Basics.md`
 - `01_数学基础/Python_Data_Science_Toolkit.md`
-- `01_数学基础/08_Python_Toolkit/AI_Development_Environment_Setup.md`
+- `01_数学基础/08_Python工具包/AI_Development_Environment_Setup.md`
 
 ### 🟡 P2: 第一个 AI 程序（Hello World 断点）
 
 **问题**: 实验都是"无需编程"的通识实验，缺少**"写代码跑第一个模型"**的过渡。
 
 **建议补充**:
-- `02_机器学习/02_Supervised_Learning/Your_First_ML_Model.md`
-- `03_深度学习/02_Neural_Network_Core/Your_First_Neural_Network.md`
+- `02_机器学习/02_监督学习/Your_First_ML_Model.md`
+- `03_深度学习/02_神经网络核心/Your_First_Neural_Network.md`
 
 ### 🟡 P3: 数据探索与预处理入门
 
 **问题**: Feature_Engineering_for_dummy 讲的是"特征工程"，而非更基础的"数据清洗与探索"。
 
 **建议补充**:
-- `02_机器学习/05_Feature_Engineering/Data_Preprocessing_for_dummy.md`
-- `02_机器学习/02_Supervised_Learning/EDA_Quick_Start.md`
+- `02_机器学习/05_特征工程/Data_Preprocessing_for_dummy.md`
+- `02_机器学习/02_监督学习/EDA_Quick_Start.md`
 
 ### 🟢 P4: 经典算法速览（可选）
 
@@ -86,7 +86,7 @@ name_zh: "AI 基础入门内容缺口分析报告"
                                                         │
                                                         ▼
                                                ┌─────────────────┐
-                                               │  01_Fundamentals │
+                                               │  01_基础入门 │
                                                │  (数学+编程基础) │
                                                └─────────────────┘
 ```
@@ -115,11 +115,11 @@ name_zh: "AI 基础入门内容缺口分析报告"
 |----------|------|------|
 | `01_数学基础/Python_for_AI_Basics.md` | ⏳ 待创建 | |
 | `01_数学基础/Python_Data_Science_Toolkit.md` | ⏳ 待创建 | |
-| `01_数学基础/08_Python_Toolkit/AI_Development_Environment_Setup.md` | ⏳ 待创建 | |
-| `02_机器学习/02_Supervised_Learning/Your_First_ML_Model.md` | ⏳ 待创建 | |
-| `03_深度学习/02_Neural_Network_Core/Your_First_Neural_Network.md` | ⏳ 待创建 | |
-| `02_机器学习/05_Feature_Engineering/Data_Preprocessing_for_dummy.md` | ⏳ 待创建 | |
-| `02_机器学习/02_Supervised_Learning/EDA_Quick_Start.md` | ⏳ 待创建 | |
+| `01_数学基础/08_Python工具包/AI_Development_Environment_Setup.md` | ⏳ 待创建 | |
+| `02_机器学习/02_监督学习/Your_First_ML_Model.md` | ⏳ 待创建 | |
+| `03_深度学习/02_神经网络核心/Your_First_Neural_Network.md` | ⏳ 待创建 | |
+| `02_机器学习/05_特征工程/Data_Preprocessing_for_dummy.md` | ⏳ 待创建 | |
+| `02_机器学习/02_监督学习/EDA_Quick_Start.md` | ⏳ 待创建 | |
 | `02_机器学习/ML_Algorithms_Cheatsheet.md` | ⏳ 待创建 | |
 
 ---
@@ -127,81 +127,8 @@ name_zh: "AI 基础入门内容缺口分析报告"
 *本报告基于 2026-06-01 的全库扫描生成*
 ## Related
 
-- [[01_数学基础/Python_for_AI_Basics]] — Python 语法基础
+- [[01_数学基础/08_Python工具包/06_Python_for_AI_基础]] — Python 语法基础
 - [[01_数学基础/Python_Data_Science_Toolkit]] — 数据科学工具链
-- [[02_机器学习/02_Supervised_Learning/Your_First_ML_Model]] — 第一个 ML 模型
-- [[90_学习/pathways/absolute-beginner]] — 零基础通识路径
+- [[02_机器学习/02_监督学习/04_Your_First_ML_模型]] — 第一个 ML 模型
+- [[90_学习/02_学习路径/01_absolute_beginner]] — 零基础通识路径
 - [[00_入门/AI_Learning_Resources]] — AI 学习资源与方法论
-
-## 核心知识体系
-
-| 知识域 | 核心内容 | 重要程度 | 学习优先级 |
-|--------|----------|----------|------------|
-| 基础理论 | 核心概念/原理/方法论 | 最高 | P0 |
-| 技术实践 | 工具/框架/最佳实践 | 高 | P0 |
-| 工程方法 | 设计模式/架构/流程 | 高 | P1 |
-| 前沿趋势 | 新技术/新方向/研究 | 中 | P2 |
-| 行业应用 | 实际案例/落地经验 | 中 | P1 |
-
-## 技术对比与选型
-
-| 维度 | 方案A | 方案B | 方案C | 选型建议 |
-|------|-------|-------|-------|----------|
-| 性能 | 高吞吐 | 低延迟 | 均衡 | 按场景选择 |
-| 复杂度 | 简单 | 中等 | 复杂 | 按团队能力 |
-| 成本 | 低 | 中 | 高 | 按预算约束 |
-| 生态 | 成熟 | 发展中 | 新兴 | 按稳定性需求 |
-| 扩展性 | 有限 | 良好 | 优秀 | 按增长预期 |
-
-## 最佳实践清单
-
-| 实践 | 说明 | 优先级 | 预期收益 |
-|------|------|--------|----------|
-| 标准化流程 | 统一规范和流程 | P0 | 减少错误+提升效率 |
-| 自动化 | 重复工作自动化 | P0 | 节省时间+降低风险 |
-| 持续监控 | 关键指标实时监控 | P1 | 及时发现问题 |
-| 定期回顾 | 周期性复盘改进 | P1 | 持续优化 |
-| 知识沉淀 | 文档化经验教训 | P2 | 团队能力提升 |
-| 安全优先 | 安全贯穿全流程 | P0 | 降低风险 |
-
-## 常见问题与解决方案
-
-| 问题 | 根因分析 | 解决方案 | 预防措施 |
-|------|----------|----------|----------|
-| 效率低下 | 流程不规范/工具不当 | 优化流程+引入工具 | 标准化+培训 |
-| 质量不稳定 | 缺乏检查机制 | 引入质量门禁 | 自动化测试 |
-| 协作困难 | 职责不清/沟通不畅 | 明确分工+定期同步 | 文档化+工具 |
-| 技术债务 | 赶工忽略质量 | 定期重构+代码审查 | 质量优先文化 |
-| 安全风险 | 意识不足/措施缺失 | 安全培训+工具扫描 | 安全左移 |
-
-## 学习路径建议
-
-| 阶段 | 内容 | 时间 | 产出 |
-|------|------|------|------|
-| 入门 | 核心概念+基础操作 | 1-2周 | 理解基本框架 |
-| 基础 | 工具使用+简单实践 | 2-3周 | 能独立完成基础任务 |
-| 进阶 | 深入原理+复杂场景 | 3-4周 | 能处理复杂问题 |
-| 实战 | 生产级应用+优化 | 4-6周 | 独立负责项目 |
-| 精通 | 架构设计+前沿探索 | 持续 | 技术领导力 |
-
-## 术语速查表
-
-| 术语 | 含义 |
-|------|------|
-| Best Practice | 行业公认的最佳做法 |
-| Anti-pattern | 反模式(应避免的做法) |
-| Technical Debt | 技术债务(为速度牺牲质量) |
-| CI/CD | 持续集成/持续部署 |
-| SLA | 服务等级协议 |
-| KPI | 关键绩效指标 |
-| ROI | 投资回报率 |
-| TCO | 总拥有成本 |
-
-## 检查清单
-
-- [ ] 核心概念和原理已理解
-- [ ] 主流工具和框架已掌握
-- [ ] 最佳实践已应用到工作中
-- [ ] 常见问题能独立解决
-- [ ] 持续关注前沿趋势
-- [ ] 知识已文档化沉淀

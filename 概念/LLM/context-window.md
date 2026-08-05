@@ -148,7 +148,7 @@ def manage_context(messages, max_tokens=128000, reserve_output=4000):
 - [[概念/LLM/kv-cache|KV Cache]] — 窗口的显存影响
 - [[概念/LLM/long-context-models|长上下文模型]] — 窗口扩展技术
 - [[概念/LLM/context-engineering|上下文工程]] — 窗口内容优化
-- [[14_RAG系统/01_RAG_Fundamentals/RAG_Fundamentals|RAG]] — 窗口的外部补充
+- [[14_RAG系统/01_RAG基础/06_RAG基础|RAG]] — 窗口的外部补充
 
 ## 2026 主流模型上下文窗口
 

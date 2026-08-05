@@ -199,5 +199,5 @@ def query_database(sql: str) -> str:
 - [[概念/Agent/agent-framework|Agent 框架]] — 框架选型背景
 - [[概念/Agent/langgraph|LangGraph]] — 图编排框架
 - [[概念/Agent/langchain|LangChain]] — 底层生态
-- [[15_智能体/02_Agent_Frameworks/CrewAI_Deep_Dive|CrewAI 深度解析]] — 详细教程
-- [[15_智能体/02_Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive|框架对比]] — 横向对比
+- [[15_智能体/02_Agent框架/07_CrewAI_深入分析|CrewAI 深度解析]] — 详细教程
+- [[15_智能体/02_Agent框架/04_AutoGen_CrewAI_LangGraph_Dive|框架对比]] — 横向对比

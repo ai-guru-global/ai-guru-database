@@ -154,6 +154,6 @@ The following tables group common training arguments by category.
 
 ## Next Steps
 
-- **Optimize Performance**: Refer to [Advanced Features](features/index.md) for FSDP, the distributed optimizer, and other optimizations
+- **Optimize Performance**: Refer to [Advanced Features](features/索引.md) for FSDP, the distributed optimizer, and other optimizations
 - **Scale Up**: Refer to [Parallelism Strategies](parallelism-guide.md) to train larger models across more GPUs
 - **Prepare Data**: Follow the [Data Preparation](data-preparation.md) guide to process your own datasets

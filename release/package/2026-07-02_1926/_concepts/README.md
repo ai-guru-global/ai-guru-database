@@ -28,10 +28,10 @@ sources: []
 | [ai-ethics](./ai-ethics.md) | 19_Ethics_Safety | 偏见、隐私、治理 |
 | [ai-future-trends](./ai-future-trends.md) | 00_AI_Introduction | AGI 路径、2026-2040 |
 | [ai-technology-landscape](./ai-technology-landscape.md) | 00_AI_Introduction | 技术栈、工具链 |
-| [linear-algebra](./linear-algebra.md) | 01_Fundamentals | 矩阵、向量、特征分解 |
-| [probability-statistics](./probability-statistics.md) | 01_Fundamentals | 贝叶斯、分布、假设检验 |
-| [information-theory](./information-theory.md) | 01_Fundamentals | 熵、交叉熵、KL散度、互信息 |
-| [data-structures-algorithms](./data-structures-algorithms.md) | 01_Fundamentals | 树、图、排序、搜索 |
+| [linear-algebra](./linear-algebra.md) | 01_基础入门 | 矩阵、向量、特征分解 |
+| [probability-statistics](./probability-statistics.md) | 01_基础入门 | 贝叶斯、分布、假设检验 |
+| [information-theory](./information-theory.md) | 01_基础入门 | 熵、交叉熵、KL散度、互信息 |
+| [data-structures-algorithms](./data-structures-algorithms.md) | 01_基础入门 | 树、图、排序、搜索 |
 
 ### 机器学习（8 张）
 
@@ -60,7 +60,7 @@ sources: []
 | [retnet](./retnet.md) | 03_Deep_Learning | 保留机制、无 KV Cache、Transformer 替代 |
 | [graph-neural-networks](./graph-neural-networks.md) | 03_Deep_Learning | GCN、GAT、消息传递、分子预测 |
 | [self-supervised-learning](./self-supervised-learning.md) | 03_Deep_Learning | SimCLR、MoCo、MAE、对比学习 |
-| [distributed-systems](./distributed-systems.md) | 01_Fundamentals | CAP 定理、一致性、分布式训练 |
+| [distributed-systems](./distributed-systems.md) | 01_基础入门 | CAP 定理、一致性、分布式训练 |
 
 ### NLP 与大模型（14 张）
 
@@ -108,7 +108,7 @@ sources: []
 | [tool-calling](./tool-calling.md) | 15_Agent_Production | 函数调用、API、MCP |
 | [tool-calling-safety](./tool-calling-safety.md) | 15_Agent_Production / 17_Ethics_Safety | 工具调用安全、护栏、审计 |
 | [agent-evaluation-benchmarks](./agent-evaluation-benchmarks.md) | 08_Model_Evaluation / 13_Agent_Production | Agent 评估、SWE-bench、GAIA |
-| [ai-hardware](./ai-hardware.md) | 01_Fundamentals | GPU、TPU、H100/B200 |
+| [ai-hardware](./ai-hardware.md) | 01_基础入门 | GPU、TPU、H100/B200 |
 
 ### 工程与部署（12 张）
 
@@ -145,7 +145,7 @@ sources: []
 | [request-scheduling](./request-scheduling.md) | 09_Deployment_Inference | Continuous Batching、抢占、SLO-aware |
 | [inference-autoscaling](./inference-autoscaling.md) | 09_Deployment_Inference | HPA、负载均衡、扩缩容 |
 | [grouped-query-attention](./grouped-query-attention.md) | 12_Architecture_Infrastructure | GQA、MQA、KV Cache 压缩 |
-| [flops](./flops.md) | 01_Fundamentals | GPU 算力、FLOPS |
+| [flops](./flops.md) | 01_基础入门 | GPU 算力、FLOPS |
 | [ttft](./ttft.md) | 09_Deployment_Inference | 首字等待时间、TTFT |
 | [quantization](./quantization.md) | 09_Deployment_Inference | FP8/INT8/INT4、量化 |
 | [prefill-decode-disaggregation](./prefill-decode-disaggregation.md) | 09_Deployment_Inference | PD 分离、Disaggregated Serving |
@@ -226,7 +226,7 @@ sources: []
 | [reward-model](./reward-model.md) | 07_Model_Training | 奖励模型 (RLHF/GRPO 偏好评估) |
 | [dify](./dify.md) | 11_RAG_Systems | Dify 开源 LLM 应用平台 |
 | [ragflow](./ragflow.md) | 11_RAG_Systems | RAGFlow 深度文档理解 RAG 引擎 |
-| [llama-index](./llama-index.md) | 11_RAG_Systems | LlamaIndex 数据框架 (索引/查询) |
+| [llama-index](./llama-索引.md) | 11_RAG_Systems | LlamaIndex 数据框架 (索引/查询) |
 | [medusa](./medusa.md) | 09_Deployment_Inference | Medusa 多头推测解码 |
 | [simpo](./simpo.md) | 07_Model_Training | SimPO 简化偏好优化 (无参考模型) |
 | [qlora](./qlora.md) | 07_Model_Training | QLoRA 4-bit 量化 LoRA 微调 |
@@ -260,7 +260,7 @@ sources: []
 | [lm-format-enforcer](./lm-format-enforcer.md) | 09_Deployment_Inference | LM Format Enforcer LLM 输出格式约束 |
 | [ne-mo](./ne-mo.md) | 07_Model_Training | NVIDIA NeMo 训练与推理框架 |
 | [lisa](./lisa.md) | 07_Model_Training | LISA 层级采样高效微调 |
-| [miniconda](./miniconda.md) | 01_Fundamentals | Miniconda 轻量级 Python 环境管理 |
+| [miniconda](./miniconda.md) | 01_基础入门 | Miniconda 轻量级 Python 环境管理 |
 | [flash-attn](./flash-attn.md) | 03_Deep_Learning | Flash Attention 高效注意力内核 |
 | [guardrails-ai](./guardrails-ai.md) | 19_Ethics_Safety | Guardrails AI 安全防护框架 |
 | [presidio](./presidio.md) | 19_Ethics_Safety | Microsoft Presidio PII 检测与脱敏 |
@@ -288,9 +288,9 @@ sources: []
 | [arthur-ai](./arthur-ai.md) | 19_Ethics_Safety | Arthur AI LLM 安全监控平台 |
 | [whylogs](./whylogs.md) | 16_AI_Ops | whylogs 数据质量与 ML 可观测性 |
 | [feast](./feast.md) | 10_MLOps_Pipeline | Feast 开源特征存储平台 |
-| [label-studio](./label-studio.md) | 01_Fundamentals | Label Studio 开源数据标注平台 |
-| [scale-ai](./scale-ai.md) | 01_Fundamentals | Scale AI 数据标注与 RLHF 平台 |
-| [snorkel-ai](./snorkel-ai.md) | 01_Fundamentals | Snorkel AI 弱监督数据编程平台 |
+| [label-studio](./label-studio.md) | 01_基础入门 | Label Studio 开源数据标注平台 |
+| [scale-ai](./scale-ai.md) | 01_基础入门 | Scale AI 数据标注与 RLHF 平台 |
+| [snorkel-ai](./snorkel-ai.md) | 01_基础入门 | Snorkel AI 弱监督数据编程平台 |
 | [dataherald](./dataherald.md) | 11_RAG_Systems | DataHerald 自然语言转 SQL 引擎 |
 | [dspy](./dspy.md) | 04_NLP_LLMs | DSPy Stanford LLM 编程框架 |
 | [autogen-studio](./autogen-studio.md) | 13_Agent_Production | AutoGen Studio 多 Agent 可视化 IDE |

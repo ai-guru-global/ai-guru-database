@@ -224,8 +224,8 @@ sentiment = choice_gen("这部电影太棒了！")
 
 ## 相关链接
 
-- [[05_大模型/08_Prompt_Engineering/Outlines_Deep_Dive|Outlines 深度解析]] — Outlines 框架深度剖析
-- [[05_大模型/16_Constrained_Generation/Constrained_Decoding_2026|约束解码 2026]] — Outlines 实现的约束解码
-- [[05_大模型/16_Constrained_Generation/Structured_Output_Guide|结构化输出指南]] — 结构化输出方法总览
+- [[05_大模型/08_提示工程/11_Outlines_深入分析|Outlines 深度解析]] — Outlines 框架深度剖析
+- [[05_大模型/16_约束生成/01_Constrained_Decoding_2026|约束解码 2026]] — Outlines 实现的约束解码
+- [[05_大模型/16_约束生成/Structured_Output_Guide|结构化输出指南]] — 结构化输出方法总览
 - [[概念/LLM/decoding-strategies|解码策略]] — Outlines 的解码机制
-- [[05_大模型/13_LLM_Products/outlines_overview|Outlines 产品概览]] — Outlines 产品速览
+- [[05_大模型/13_LLM产品/08_outlines_概览|Outlines 产品概览]] — Outlines 产品速览

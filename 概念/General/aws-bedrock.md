@@ -94,7 +94,7 @@ name_zh: "亚马逊 Bedrock 模型服务"
 
 ## Related
 
-- [[12_架构基建/AWS_Bedrock_Deep_Dive]] — AWS Bedrock 深度解析
+- [[12_架构基建/06_云厂商/05_AWS_Bedrock_深入分析]] — AWS Bedrock 深度解析
 - [[概念/cloud-ai-platform]] — 云 AI 平台
 - [[概念/azure-openai]] — Azure OpenAI
 - [[概念/vertex-ai]] — Google Vertex AI

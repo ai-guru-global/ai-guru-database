@@ -16,7 +16,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.7
 sources:
-  - 15_智能体/03_Agent_Workflow/Agentic_UI_UX_Design_2026.md
+  - 15_智能体/03_Agent工作流/Agentic_UI_UX_Design_2026.md
   - Agent/GenAI_L12_Designing_UX_for_AI_Applications.md
 name_zh: "人机交互"
 ---
@@ -50,7 +50,7 @@ CLI → GUI → Touch → Voice → Conversational AI → Agentic UI
 
 ## 相关阅读
 
-- [[15_智能体/03_Agent_Workflow/Agentic_UI_UX_Design_2026]] — Agentic UI/UX 设计
+- [[15_智能体/03_Agent工作流/01_Agentic_UI_UX_设计_2026]] — Agentic UI/UX 设计
 - [[15_智能体/GenAI_L12_Designing_UX_for_AI_Applications]] — AI 应用 UX 设计
 
 ---
@@ -105,7 +105,7 @@ CLI → GUI → Touch → Voice → Conversational AI → Agentic UI
 
 - [[概念/General/code-generation|Code Generation]] — 代码生成
 - [[概念/General/platform-engineering|Platform Engineering]] — 平台工程
-- [[15_智能体/03_Agent_Workflow/Agentic_UI_UX_Design_2026]] — Agentic UI 设计
+- [[15_智能体/03_Agent工作流/01_Agentic_UI_UX_设计_2026]] — Agentic UI 设计
 
 ## 总结
 

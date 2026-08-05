@@ -15,7 +15,7 @@ name_zh: "LLMOps 速查表"
 > 中文简称：LLMOps 速查表
 
 > **核心洞察**：LLMOps ≠ 传统 MLOps。LLM 应用的不确定性（temperature > 0 时不可重现）、高 token 成本、Prompt 敏感性使得 LLMOps 需要**三层治理**：Prompt/数据 → 推理服务 → 业务效果。
-> 详见 [[MLOps]] · [[13_运维]] · [[LLMOps_2026]] · [[Cost_Optimization_AI_Deep_Dive]] · [[SLO_Error_Budget_AI_Deep_Dive]]
+> 详见 [[概念/MLOps/mlops]] · [[13_运维]] · [[11_模型运维/10_LLMOps_大模型运维/05_LLMOps_2026]] · [[13_运维/02_SRE与可靠性/09_成本优化_AI_深入分析]] · [[SLO_Error_Budget_AI_Deep_Dive]]
 
 ## LLMOps 三大治理层
 
@@ -395,4 +395,4 @@ def is_significant(success_a, n_a, success_b, n_b, alpha=0.05):
 
 ---
 
-**参见**：[[MLOps]] · [[13_运维]] · [[LLMOps_2026]] · [[Cost_Optimization_AI_Deep_Dive]] · [[SLO_Error_Budget_AI_Deep_Dive]] · [[LLM_Observability]] · [[概念/observability]]
+**参见**：[[概念/MLOps/mlops]] · [[13_运维]] · [[11_模型运维/10_LLMOps_大模型运维/05_LLMOps_2026]] · [[13_运维/02_SRE与可靠性/09_成本优化_AI_深入分析]] · [[SLO_Error_Budget_AI_Deep_Dive]] · [[11_模型运维/08_可观测性/10_llm_observability_aiops]] · [[概念/observability]]

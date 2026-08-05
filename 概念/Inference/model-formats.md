@@ -15,7 +15,7 @@ relationships:
     type: related_to
 sources:
   - 12_架构基建/AI_Stack_Deep_Dive.md
-  - 10_部署推理/05_Quantization/Quantization_Techniques_2026.md
+  - 10_部署推理/04_模型量化/Quantization_Techniques_2026.md
 summary: "模型格式是大模型在存储、分发、推理过程中使用的文件容器。不同格式对应不同生态和场景：Safetensors 用于安全分发，GGUF 用于 llama.cpp 本地/边缘推理，ONNX 用于跨框架部署，TensorRT 等用于厂商硬件加速。"
 provenance:
   extracted: 0.30
@@ -134,7 +134,7 @@ PyTorch 训练模型
 - [[概念/Inference/quantization|量化]]
 - [[概念/LLM/tensorrt-llm|TensorRT-LLM]]
 - [[概念/LLM/llama-cpp|llama.cpp]]
-- [[10_部署推理/05_Quantization/Quantization_Techniques_2026|量化技术 2026]]
+- [[10_部署推理/04_模型量化/04_量化_技术_2026|量化技术 2026]]
 
 ## 模型格式选型决策树
 

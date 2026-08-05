@@ -120,7 +120,7 @@ AI Stack GPU 监控体系
 - [[概念/apg-gpu]] — APG 自研加速卡
 - [[概念/nvidia-smi]] — nvidia-smi GPU 监控
 - [[概念/ascend-npu]] — 华为昇腾 NPU
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 
@@ -179,9 +179,9 @@ AI Stack GPU 监控体系
 - [[概念/GPU/nvidia-smi|nvidia-smi]]
 - [[概念/GPU/rocm-smi|rocm-smi]]
 - [[概念/LLM/llm-infrastructure|LLM 基础设施]]
-- [[12_架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
-- [[13_运维/06_Observability/index|GPU 监控体系]]
-- [[12_架构基建/07_Hardware_Compute/index|GPU 集群管理]]
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析|AI Stack 深度解析]]
+- [[13_运维/06_可观测性/index|GPU 监控体系]]
+- [[12_架构基建/07_硬件与算力/index|GPU 集群管理]]
 
 ## 常见运维场景
 

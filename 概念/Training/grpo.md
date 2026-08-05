@@ -16,7 +16,7 @@ relationships:
   - target: "概念/reasoning-models"
     type: applied_in
 sources:
-  - 07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods.md
+  - 07_模型训练/06_对齐研究/GRPO_and_New_Alignment_Methods.md
 summary: "GRPO（Group Relative Policy Optimization）是 DeepSeek 在 R1 模型中提出的对齐算法，无需 Critic 模型，通过组内多个采样响应的相对优势进行策略优化，比 PPO 更简单高效。"
 lifecycle: reviewed
 tier: core
@@ -135,7 +135,7 @@ def grpo_objective(prompt, group_responses, rewards, ref_logprobs, beta=0.04):
 - **训推不一致修正**：L769 `vllm_importance_sampling_correction` 用重要性采样比率截断修正 vLLM 采样与训练策略的数值偏差；L783 `importance_sampling_level` 可选 `sequence`（即 GSPO 思路）。
 - **进阶变种在 experimental**：`experimental/` 下有 async_grpo（异步 rollout）、grpo_with_replay_buffer、gspo_token、gmpo 等，可观察 GRPO 的演化方向。
 
-详见 [[07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods]] 第 13 节、[[07_模型训练/06_Alignment/RLHF_at_Scale_2026]] 第 13 节。
+详见 [[07_模型训练/06_对齐研究/GRPO_and_New_Alignment_Methods]] 第 13 节、[[07_模型训练/06_对齐训练/04_RLHF_at_Scale_2026]] 第 13 节。
 
 ## Related
 
@@ -144,7 +144,7 @@ def grpo_objective(prompt, group_responses, rewards, ref_logprobs, beta=0.04):
 - [[概念/ppo]] — PPO（GRPO 的“父算法”）
 - [[概念/reasoning-models]] — 推理模型（GRPO 主要应用场景）
 - [[概念/preference-learning]] — 偏好学习总览
-- [[07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods]] — GRPO 深度
+- [[07_模型训练/06_对齐研究/GRPO_and_New_Alignment_Methods]] — GRPO 深度
 
 ---
 

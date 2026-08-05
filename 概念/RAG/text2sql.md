@@ -13,7 +13,7 @@ relationships:
     type: belongs_to
 sources:
   - 14_RAG系统/README.md
-  - 15_智能体/05_Agent_Skills/Agent_Skills_Ecosystem_Catalog.md
+  - 15_智能体/05_Agent技能/Agent_Skills_Ecosystem_Catalog.md
   - AI编程/README.md
 summary: "Text2SQL（也叫 NL2SQL）是把自然语言问题自动转换成可执行 SQL 查询的技术。它让不懂 SQL 的人能用大白话查数据库，是数据分析、智能客服、企业 BI 的核心能力。"
 provenance:

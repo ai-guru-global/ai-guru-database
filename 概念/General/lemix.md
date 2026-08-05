@@ -94,7 +94,7 @@ LeMix 统一调度架构
 - [[概念/training-inference-unification]] — 训推一体架构
 - [[概念/heterogeneous-gpu]] — 异构 GPU 集群纳管
 - [[概念/continuous-batching]] — Continuous Batching
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 

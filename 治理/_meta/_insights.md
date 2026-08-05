@@ -17,13 +17,13 @@ The most-referenced pages in the vault, ranked by incoming wikilink count.
 | # | Page | In | Out | Type | Cluster |
 |---|------|---:|----:|------|---------|
 | 1 | [[Evaluation_Workflow]] | 88 | 5 | sink hub | 15_Agent_Production |
-| 2 | [[AI_Stack_Deep_Dive]] | 83 | 50 | connector hub | 12_Architecture_Infrastructure |
+| 2 | [[概念/General/ai-stack]] | 83 | 50 | connector hub | 12_Architecture_Infrastructure |
 | 3 | [[kubernetes]] | 81 | 17 | connector hub | 概念 |
-| 4 | [[Agent_Red_Teaming_2026]] | 76 | 5 | sink hub | 15_Agent_Production |
-| 5 | [[Agent_Harness_Complete_2026]] | 76 | 4 | sink hub | 15_Agent_Production |
-| 6 | [[Production_Assessment]] | 72 | 5 | sink hub | 15_Agent_Production |
-| 7 | [[vLLM_Deep_Dive]] | 66 | 10 | balanced hub | 10_Deployment_Inference |
-| 8 | [[ai_engineering_roadmap_2026]] | 50 | 73 | connector hub | 90_Learn |
+| 4 | [[15_智能体/07_Agent评估/08_Agent_红队测试_2026]] | 76 | 5 | sink hub | 15_Agent_Production |
+| 5 | [[概念/Agent/agent-harness]] | 76 | 4 | sink hub | 15_Agent_Production |
+| 6 | [[15_智能体/07_Agent评估/Assessment/01_生产_Assessment]] | 72 | 5 | sink hub | 15_Agent_Production |
+| 7 | [[10_部署推理/02_推理引擎/29_vLLM_深入分析]] | 66 | 10 | balanced hub | 10_Deployment_Inference |
+| 8 | [[90_学习/04_实践指南/02_AI工程路线图2026]] | 50 | 73 | connector hub | 90_Learn |
 | 9 | [[kv-cache]] | 49 | 9 | balanced hub | 概念 |
 | 10 | [[ai-agents]] | 45 | 9 | balanced hub | 概念 |
 
@@ -41,11 +41,11 @@ Pages that sit between different topic clusters, linking pages with dissimilar t
 
 | # | Page | Bridge Score | Linker Clusters | Linkee Clusters |
 |---|------|-------------|-----------------|-----------------|
-| 1 | [[ai_engineering_roadmap_2026]] | 38.8 | AI_Intro, Fundamentals, ML, NLP, Coding, Apps, Talks, Papers, Learn, concepts, references | Fundamentals, ML, DL, CV, NLP, RL, Eval, Deploy, MLOps, Infra, RAG, Agents, Coding, Ethics, Apps, Talks, Papers, Learn, concepts, references |
-| 2 | [[LLM_Architectures]] | 35.3 | AI_Intro, Fundamentals, DL, NLP, Eval, Deploy, Papers, Learn, concepts, synthesis | *(no outgoing — pure sink)* |
-| 3 | [[microsoft_ai_agents_for_beginners]] | 35.2 | Agent_Production, Learn, references | Fundamentals, CV, NLP, Deploy, MLOps, Infra, AI_Ops, RAG, Agents, Ethics, Learn, concepts, references |
-| 4 | [[vLLM_Deep_Dive]] | 31.3 | DL, NLP, Training, Eval, Deploy, MLOps, Infra, RAG, concepts, synthesis | Deploy, Infra, synthesis |
-| 5 | [[AI_Stack_Deep_Dive]] | 30.1 | Infra, concepts, synthesis | NLP, Deploy, Infra, RAG, concepts |
+| 1 | [[90_学习/04_实践指南/02_AI工程路线图2026]] | 38.8 | AI_Intro, Fundamentals, ML, NLP, Coding, Apps, Talks, Papers, Learn, concepts, references | Fundamentals, ML, DL, CV, NLP, RL, Eval, Deploy, MLOps, Infra, RAG, Agents, Coding, Ethics, Apps, Talks, Papers, Learn, concepts, references |
+| 2 | [[概念/LLM/llm-architectures]] | 35.3 | AI_Intro, Fundamentals, DL, NLP, Eval, Deploy, Papers, Learn, concepts, synthesis | *(no outgoing — pure sink)* |
+| 3 | [[90_学习/03_课程资源/microsoft/03_microsoft_ai_agents_for_beginners]] | 35.2 | Agent_Production, Learn, references | Fundamentals, CV, NLP, Deploy, MLOps, Infra, AI_Ops, RAG, Agents, Ethics, Learn, concepts, references |
+| 4 | [[10_部署推理/02_推理引擎/29_vLLM_深入分析]] | 31.3 | DL, NLP, Training, Eval, Deploy, MLOps, Infra, RAG, concepts, synthesis | Deploy, Infra, synthesis |
+| 5 | [[概念/General/ai-stack]] | 30.1 | Infra, concepts, synthesis | NLP, Deploy, Infra, RAG, concepts |
 
 **Key observations:**
 - **ai_engineering_roadmap_2026** bridges 11 different directory clusters, making it the most structurally important page in the entire wiki. It is both a learning roadmap and a navigation backbone.
@@ -92,11 +92,11 @@ Cross-category wikilinks that bridge distant knowledge areas.
 
 | # | Source | Target | Score | Reasons |
 |---|--------|--------|------:|---------|
-| 1 | [[fastai_practical_dl]] | [[AI_Learning_Resources]] | 5 | Cross-category (90_Learn -> 00_AI_Introduction); isolated source (2 links) connecting to popular target (16 links) |
-| 2 | [[designing-ml-systems-huyen]] | [[ai_engineering_roadmap_2026]] | 5 | Cross-category (参考 -> 90_Learn); isolated source (2 links) connecting to popular target (123 links) |
-| 3 | [[agentscope_corpus_loading]] | [[diagnosis-work-order-hub]] | 5 | Cross-category (项目 -> 综合); isolated source (2 links) connecting to popular target (18 links) |
+| 1 | [[90_学习/03_课程资源/other/06_fastai_practical_dl]] | [[AI_Learning_Resources]] | 5 | Cross-category (90_Learn -> 00_AI_Introduction); isolated source (2 links) connecting to popular target (16 links) |
+| 2 | [[90_学习/05_参考资料/books/10_designing_ml_systems_huyen]] | [[90_学习/04_实践指南/02_AI工程路线图2026]] | 5 | Cross-category (参考 -> 90_Learn); isolated source (2 links) connecting to popular target (123 links) |
+| 3 | [[11_模型运维/14_云运维Agent/docs/02_agentscope_corpus_loading]] | [[13_运维/04_问题排查/05_diagnosis_work_order_hub]] | 5 | Cross-category (项目 -> 综合); isolated source (2 links) connecting to popular target (18 links) |
 | 4 | [[RAG_Debugging_Cheat_Sheet]] | [[vector-database]] | 5 | Cross-category (14_RAG_Systems -> 概念); isolated source (2 links) connecting to popular target (27 links) |
-| 5 | [[nlp-with-transformers]] | [[ai_engineering_roadmap_2026]] | 5 | Cross-category (参考 -> 90_Learn); isolated source (2 links) connecting to popular target (123 links) |
+| 5 | [[90_学习/05_参考资料/books/03_nlp_with_transformers]] | [[90_学习/04_实践指南/02_AI工程路线图2026]] | 5 | Cross-category (参考 -> 90_Learn); isolated source (2 links) connecting to popular target (123 links) |
 
 **Key observations:**
 - The **参考** (book/course summaries) -> **90_Learn** (roadmaps) pattern appears twice, suggesting that learning resources are a natural bridge between reference material and structured curricula.
@@ -111,12 +111,12 @@ Pages linked from top-10 hubs but with zero outgoing links — dead ends that re
 
 | Page | Incoming | Linked From Hub(s) |
 |------|---------:|--------------------|
-| [[lightgbm_overview]] | 2 | ai_engineering_roadmap_2026 |
-| [[Agent_Memory_Techniques]] | 2 | ai_engineering_roadmap_2026 |
-| [[catboost_overview]] | 2 | ai_engineering_roadmap_2026 |
-| [[scikit-learn_overview]] | 2 | ai_engineering_roadmap_2026 |
-| [[RAG_Deep_Dive]] | 2 | ai_engineering_roadmap_2026 |
-| [[keras_overview]] | 2 | ai_engineering_roadmap_2026 |
+| [[02_机器学习/12_ML框架/03_lightgbm_概览]] | 2 | ai_engineering_roadmap_2026 |
+| [[15_智能体/06_记忆基础设施/02_Agent_Memory_技术]] | 2 | ai_engineering_roadmap_2026 |
+| [[02_机器学习/12_ML框架/01_catboost_概览]] | 2 | ai_engineering_roadmap_2026 |
+| [[02_机器学习/12_ML框架/05_scikit_learn_概览]] | 2 | ai_engineering_roadmap_2026 |
+| [[20_论文精读/10_检索技术/02_RAG_深入分析]] | 2 | ai_engineering_roadmap_2026 |
+| [[03_深度学习/08_DL框架/05_keras_概览]] | 2 | ai_engineering_roadmap_2026 |
 | [[Chain_of_Thought_Deep_Dive]] | 2 | ai_engineering_roadmap_2026 |
 | [[AI_Finance_Applications_2026]] | 1 | ai_engineering_roadmap_2026 |
 | [[AI_Education_Applications_2026]] | 1 | ai_engineering_roadmap_2026 |
@@ -154,11 +154,11 @@ Pages with high incoming links (>=5) currently marked as `supporting` or with no
 
 | Page | Incoming | Current Tier | Cluster |
 |------|---------:|--------------|---------|
-| [[ai_engineering_roadmap_2026]] | 50 | supporting | 90_Learn |
+| [[90_学习/04_实践指南/02_AI工程路线图2026]] | 50 | supporting | 90_Learn |
 | [[ai-agents]] | 45 | supporting | 概念 |
 | [[transformer-architecture]] | 41 | supporting | 概念 |
-| [[AI_Infrastructure_2026]] | 40 | supporting | 12_Architecture_Infrastructure |
-| [[microsoft_genai_for_beginners]] | 36 | supporting | 90_Learn |
+| [[12_架构基建/02_架构概览/02_AI_基础设施_2026]] | 40 | supporting | 12_Architecture_Infrastructure |
+| [[90_学习/03_课程资源/microsoft/01_microsoft_genai_for_beginners]] | 36 | supporting | 90_Learn |
 
 ### Demote to Peripheral (46 candidates — showing top 5)
 
@@ -166,10 +166,10 @@ Pages with <=1 incoming link, not updated in 90+ days, currently marked as `core
 
 | Page | Incoming | Current Tier | Last Updated | Cluster |
 |------|---------:|--------------|-------------|---------|
-| [[agent-framework-production]] | 0 | core | (unknown) | 综合 |
-| [[career-interviews]] | 0 | core | (unknown) | 综合 |
-| [[agentscope_corpus_loading]] | 0 | core | (unknown) | 项目 |
-| [[ai-industry-applications]] | 0 | core | (unknown) | 综合 |
+| [[15_智能体/02_Agent框架/01_agent_framework_production]] | 0 | core | (unknown) | 综合 |
+| [[21_面试岗位/18_面试指南/01_career_interviews]] | 0 | core | (unknown) | 综合 |
+| [[11_模型运维/14_云运维Agent/docs/02_agentscope_corpus_loading]] | 0 | core | (unknown) | 项目 |
+| [[18_行业应用/01_行业概览/04_ai_industry_applications]] | 0 | core | (unknown) | 综合 |
 | [[stackops]] | 1 | core | (unknown) | 概念 |
 
 **Note:** Many demote candidates have `(unknown)` dates, suggesting missing `updated:` frontmatter fields. Consider adding timestamps before demoting — the tier may be correct but the metadata incomplete.

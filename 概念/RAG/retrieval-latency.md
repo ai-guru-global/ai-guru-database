@@ -86,7 +86,7 @@ Reranker 排序 (20-100ms)
 - [[概念/hybrid-search|Hybrid Search]]
 - [[概念/RAG/reranker|Reranker]]
 - [[概念/Inference/ttft|TTFT]] — 检索延迟影响首 token 时间
-- [[14_RAG系统/04_Advanced_RAG/RAG_Retrieval_Latency_Optimization|RAG 检索延迟优化]]
+- [[14_RAG系统/04_高级RAG/RAG_Retrieval_Latency_Optimization|RAG 检索延迟优化]]
 
 ## 2026 检索延迟优化生态
 
@@ -132,7 +132,7 @@ Reranker 排序 (20-100ms)
 - [[概念/RAG/hybrid-search|Hybrid Search]] — 混合检索
 - [[概念/RAG/reranker|Reranker]] — 重排序
 - [[概念/Inference/ttft|TTFT]] — 首 token 时间
-- [[14_RAG系统/04_Advanced_RAG/RAG_Retrieval_Latency_Optimization|RAG 检索延迟优化]]
+- [[14_RAG系统/04_高级RAG/RAG_Retrieval_Latency_Optimization|RAG 检索延迟优化]]
 
 > ℹ️ 检索延迟是 RAG 用户体验的关键指标，2026年通过 HNSW + GPU 加速 + 语义缓存组合，P99 延迟可控制在 50ms 以内。
 
@@ -194,7 +194,7 @@ Reranker 排序 (20-100ms)
 - [[概念/RAG/vector-database|Vector Database]] — 向量数据库
 - [[概念/RAG/hybrid-search|Hybrid Search]] — 混合检索
 - [[概念/Inference/model-serving|Model Serving]] — 模型服务化
-- [[14_RAG系统/04_Advanced_RAG/RAG_Retrieval_Latency_Optimization|检索延迟优化专题]]
+- [[14_RAG系统/04_高级RAG/RAG_Retrieval_Latency_Optimization|检索延迟优化专题]]
 
 > ℹ️ 检索延迟优化核心策略：索引调优 + 缓存 + 异步并行 + GPU 加速，生产 RAG 目标 P99 < 50ms。
 

@@ -156,7 +156,7 @@ name_zh: "矩阵运算"
 
 ## 来源
 
-- 01_数学基础/02_Linear_Algebra/Linear_Algebra.md
+- 01_数学基础/02_线性代数/Linear_Algebra.md
 - 当前对话中关于矩阵运算的白话解释
 
 ---

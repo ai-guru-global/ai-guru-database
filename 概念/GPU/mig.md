@@ -64,7 +64,7 @@ nvidia-smi mig -cgi 19 -C
 - [[概念/gpu-sharing|GPU Sharing]]
 - [[概念/hami|HAMi]]
 - [[概念/time-slicing|Time Slicing]]
-- [[13_运维/02_SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
+- [[13_运维/02_SRE与可靠性/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
 
 ---
 

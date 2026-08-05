@@ -125,7 +125,7 @@ AI Stack 支持通过 **AzureAD + SAML2** 实现企业 SSO：
 
 - [[概念/rbac]] — RBAC 访问控制（SSO 用户角色映射）
 - [[概念/single-tenant-architecture]] — 单租户架构（安全体系）
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack（AzureAD SSO）
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack（AzureAD SSO）
 
 ---
 

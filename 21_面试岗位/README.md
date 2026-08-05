@@ -25,17 +25,17 @@ name_zh: "AI 面试准备"
 | 岗位 | 核心能力 | 文件 |
 |------|---------|------|
 | [[21_面试岗位/AI_Data_Analyst/question_bank|AI Data Analyst]] | 指标体系、A/B 测试、业务分析 | 面试准备 + 题库 |
-| [[21_面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer]] | GPU 集群、训练框架、推理优化 | 面试准备 + 题库 |
+| [[21_面试岗位/04_AI基础设施工程师/05_question_bank|AI Infrastructure Engineer]] | GPU 集群、训练框架、推理优化 | 面试准备 + 题库 |
 | [[21_面试岗位/Cloud_Ops_Engineer/Cloud_Ops_Engineer|Cloud Ops Engineer]] | K8s/GPU 运维、事故响应、云原生可观测 | 面试准备 + 题库 |
 | [[21_面试岗位/AI_Reliability_Engineer/AI_Reliability_Engineer|AI Reliability Engineer]] | 模型监控、故障恢复、SLO 设计 | 面试准备 + 题库 |
 | [[21_面试岗位/AI_Solutions_Architect/AI_Solutions_Architect|AI Solutions Architect]] | 方案设计、技术选型、客户沟通 | 面试准备 + 题库 |
-| [[21_面试岗位/Computer_Vision_Engineer/question_bank|Computer Vision Engineer]] | 图像分类、检测、分割、生成 | 面试准备 + 题库 |
+| [[21_面试岗位/15_计算机视觉工程师/05_question_bank|Computer Vision Engineer]] | 图像分类、检测、分割、生成 | 面试准备 + 题库 |
 | [[21_面试岗位/Data_Engineer/Data_Engineer|Data Engineer]] | 数据管道、ETL、数据仓库 | 面试准备 + 题库 |
 | [[21_面试岗位/Data_Scientist/question_bank|Data Scientist]] | 统计分析、特征工程、A/B 测试 | 面试准备 + 题库 |
-| [[21_面试岗位/LLM_Platform_Engineer/question_bank|LLM Platform Engineer]] | 大模型服务、API 设计、平台化 | 面试准备 + 题库 |
-| [[21_面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer]] | 模型开发、训练优化、部署上线 | 面试准备 + 题库 |
+| [[21_面试岗位/19_LLM平台工程师/05_question_bank|LLM Platform Engineer]] | 大模型服务、API 设计、平台化 | 面试准备 + 题库 |
+| [[21_面试岗位/20_机器学习工程师/05_question_bank|Machine Learning Engineer]] | 模型开发、训练优化、部署上线 | 面试准备 + 题库 |
 | [[21_面试岗位/MLOps_Engineer/MLOps_Engineer|MLOps Engineer]] | 流水线、CI/CD、模型监控 | 面试准备 + 题库 |
-| [[21_面试岗位/NLP_Engineer/question_bank|NLP Engineer]] | 文本处理、LLM 应用、RAG | 面试准备 + 题库 |
+| [[21_面试岗位/22_NLP工程师/05_question_bank|NLP Engineer]] | 文本处理、LLM 应用、RAG | 面试准备 + 题库 |
 | [[21_面试岗位/Prompt_Engineer/Prompt_Engineer|Prompt Engineer]] | Prompt 设计、评估优化、应用落地 | 面试准备 + 题库 |
 | [[21_面试岗位/Robotics_Engineer/Robotics_Engineer|Robotics Engineer]] | 感知、规划、控制、仿真 | 面试准备 + 题库 |
 | [[21_面试岗位/Agent_Engineer_2026|Agent Engineer 2026]] | ReAct/Plan-and-Execute/Multi-Agent/Memory/Tool Use、系统设计、代码题 | 面试准备 + 题库 |
@@ -66,11 +66,11 @@ name_zh: "AI 面试准备"
 
 | 文件 | 内容 |
 |------|------|
-| `interview_preparing.md` | 核心职责、能力要求、常见考点 |
-| `question_bank.md` | 技术面试题库 |
-| `company_level_question_bank.md` | 不同级别（L3/L4/L5+）的题目 |
-| `interview_answers.md` | 高频问题参考答案 |
-| `interview_notes_template.md` | 面试复盘模板 |
+| `04_interview_preparing.md` | 核心职责、能力要求、常见考点 |
+| `02_question_bank.md` | 技术面试题库 |
+| `company_level_02_question_bank.md` | 不同级别（L3/L4/L5+）的题目 |
+| `02_interview_answers.md` | 高频问题参考答案 |
+| `02_interview_notes_template.md` | 面试复盘模板 |
 
 ---
 
@@ -78,9 +78,9 @@ name_zh: "AI 面试准备"
 
 1. **确定目标岗位** → 选择对应目录
 2. **阅读面试准备** → 了解岗位核心能力与考点
-3. **刷题库** → 按 `question_bank.md` 系统练习
-4. **模拟面试** → 使用 `interview_answers.md` 对照答案
-5. **复盘总结** → 使用 `interview_notes_template.md` 记录经验
+3. **刷题库** → 按 `02_question_bank.md` 系统练习
+4. **模拟面试** → 使用 `02_interview_answers.md` 对照答案
+5. **复盘总结** → 使用 `02_interview_notes_template.md` 记录经验
 
 ---
 
@@ -103,21 +103,21 @@ name_zh: "AI 面试准备"
 
 | 文件 | 用途 |
 |------|------|
-| [interview_notes_template.md](21_面试岗位/Interview_Guide/interview_notes_template.md) | 面试复盘模板 — 每次面试后记录经验教训 |
-| [jobs.md](21_面试岗位/Interview_Guide/jobs.md) | AI 岗位与工种清单 — 21 个岗位的能力地图 |
+| [02_interview_notes_template.md](21_面试岗位/Interview_Guide/02_interview_notes_template.md) | 面试复盘模板 — 每次面试后记录经验教训 |
+| [05_jobs.md](21_面试岗位/Interview_Guide/05_jobs.md) | AI 岗位与工种清单 — 21 个岗位的能力地图 |
 | [Interviews_for_dummy.md](21_面试岗位/Interview_Guide/Interviews_for_dummy.md) | AI 面试准备小白版 — 适合零基础读者 |
 
 ## Related
 
-- [[21_面试岗位/Interview_Guide/jobs|AI 相关岗位与工种清单]]
-- [[21_面试岗位/interview_notes_template|面试复盘模板]]
-- [[21_面试岗位/Interviews_for_dummy|AI 面试准备 - 小白版]]
+- [[21_面试岗位/18_面试指南/05_jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/18_面试指南/02_interview_notes_template|面试复盘模板]]
+- [[21_面试岗位/18_面试指南/01_career_interviews|AI 面试准备 - 小白版]]
 - [[治理/career-interviews|AI 面试与职业发展]]
 
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
 
 - [[21_面试岗位/Cloud_Ops_Engineer/Cloud_Ops_Engineer|Cloud Ops Engineer 题库]]
-- [[21_面试岗位/README_for_dummy|AI 面试准备 — 小白版 🎯]]
+- [[21_面试岗位/README|AI 面试准备 — 小白版 🎯]]
 
 ## 面试核心知识框架
 

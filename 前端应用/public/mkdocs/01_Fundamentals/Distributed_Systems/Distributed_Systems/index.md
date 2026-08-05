@@ -7,6 +7,6 @@ updated: 2026-07-02
 
 # Distributed Systems
 
-This page indexes the contents of `前端应用/public/mkdocs/01_Fundamentals/Distributed_Systems/Distributed_Systems`.
+This page indexes the contents of `前端应用/public/mkdocs/01_基础入门/Distributed_Systems/Distributed_Systems`.
 
 *This directory is currently empty.*

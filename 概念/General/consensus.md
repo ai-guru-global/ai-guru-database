@@ -106,7 +106,7 @@ Safety（安全性）
 
 - [[概念/etcd]] — etcd（K8s 用 Raft）
 - [[概念/distributed-systems]] — 分布式系统
-- [[01_数学基础/09_Distributed_Systems/Distributed_Systems]] — 分布式系统章节
+- [[15_智能体/06_记忆基础设施/05_synthesis_memory_systems]] — 分布式系统章节
 
 ---
 

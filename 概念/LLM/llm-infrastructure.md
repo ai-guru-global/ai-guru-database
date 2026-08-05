@@ -57,7 +57,7 @@ SGLang是2026年的性能领导者：在H100上Llama 3.1 8B推理吞吐量达16,
 
 vLLM仍是行业标准，生态最成熟，PagedAttention+Continuous Batching+Speculative Decoding功能完整。TensorRT-LLM在NVIDIA GPU上单请求延迟最低，适合对延迟极致敏感的场景。llama.cpp是边缘/本地推理的首选。
 
-阿里云 AI Stack 采用 **A-Speed 加速套件**作为推理框架（非 vLLM/SGLang），提供深度优化的加速镜像，支持 APG/Ascend/Nvidia 三种 GPU 厂商。官方用户指南（V2.14.0）中未出现 ASLLM/vLLM/SGLang 等名称。推理性能较开源社区版本提升 50%。详见 [[12_架构基建/AI_Stack_Deep_Dive]]。
+阿里云 AI Stack 采用 **A-Speed 加速套件**作为推理框架（非 vLLM/SGLang），提供深度优化的加速镜像，支持 APG/Ascend/Nvidia 三种 GPU 厂商。官方用户指南（V2.14.0）中未出现 ASLLM/vLLM/SGLang 等名称。推理性能较开源社区版本提升 50%。详见 [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]]。
 
 ### FP8精度
 
@@ -104,7 +104,7 @@ AI服务容量规划的特殊性：资源维度新增GPU显存和Token配额、�
 
 ## 来源
 
-- 12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026 — 五层架构、硬件选型、推理引擎对比
+- 12_架构基建/02_架构概览/AI_Infrastructure_2026 — 五层架构、硬件选型、推理引擎对比
 - 12_架构基建/Edge_AI_2026.md — 边缘AI硬件、模型优化、云端协同
 - 12_架构基建/AI_Cost_Optimization_2026.md — Token经济学、路由优化、FinOps
 - 12_架构基建/Capacity_Planning_2026.md — 负载建模、GPU容量规划
@@ -174,9 +174,9 @@ AI服务容量规划的特殊性：资源维度新增GPU显存和Token配额、�
 - [[概念/LLM/vllm|vLLM]]
 - [[概念/LLM/tensorrt-llm|TensorRT-LLM]]
 - [[概念/LLM/llm-inference-engine|LLM 推理引擎]]
-- [[12_架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
-- [[12_架构基建/07_Hardware_Compute/index|GPU 集群管理]]
-- [[13_运维/06_Observability/index|GPU 监控体系]]
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析|AI Stack 深度解析]]
+- [[12_架构基建/07_硬件与算力/index|GPU 集群管理]]
+- [[13_运维/06_可观测性/index|GPU 监控体系]]
 
 ## 成本优化策略
 
@@ -205,4 +205,4 @@ AI服务容量规划的特殊性：资源维度新增GPU显存和Token配额、�
 - [[概念/LLM/llm-inference-engine|推理引擎]] — 引擎选型
 - [[概念/LLM/llm-production-deployment|生产部署]] — 部署实践
 - [[概念/LLM/llmops|LLMOps]] — 运维体系
-- [[12_架构基建/AI_Stack_Deep_Dive|AI Stack]] — 基础设施全景
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析|AI Stack]] — 基础设施全景

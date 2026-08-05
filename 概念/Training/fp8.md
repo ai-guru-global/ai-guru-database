@@ -133,7 +133,7 @@ FP8 两种变体的位分配
 - [[概念/model-formats]] — 模型格式
 - [[概念/mixed-precision]] — 混合精度训练
 - [[概念/smoothquant]] — SmoothQuant INT8 量化
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 

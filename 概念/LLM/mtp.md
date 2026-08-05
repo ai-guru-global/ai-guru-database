@@ -130,7 +130,7 @@ DeepSeek-V3 MTP 架构
 - [[概念/deepseek-models]] — DeepSeek 模型系列
 - [[概念/flash-attention-kernels]] — FlashAttention 算子
 - [[概念/prefill-decode]] — Prefill/Decode 推理阶段
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 
@@ -191,7 +191,7 @@ MTP (N=2):
 - [[概念/LLM/eagle|EAGLE]]
 - [[概念/LLM/medusa|Medusa]]
 - [[概念/Inference/inference-performance|推理性能优化]]
-- [[10_部署推理/06_Caching/Speculative_Decoding_Advanced_2026|投机解码高级技术]]
+- [[10_部署推理/03_推理优化/12_Speculative_Decoding_高级_2026|投机解码高级技术]]
 
 ## 配置示例 (SGLang)
 

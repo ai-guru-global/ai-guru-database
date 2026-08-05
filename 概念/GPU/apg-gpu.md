@@ -154,7 +154,7 @@ AI Stack 异构 GPU 架构
 - [[概念/heterogeneous-gpu]] — 异构 GPU 纳管
 - [[概念/gpu-interconnect]] — GPU 互联
 - [[概念/ascend-npu]] — 华为昇腾 NPU
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 

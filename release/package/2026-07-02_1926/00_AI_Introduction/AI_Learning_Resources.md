@@ -72,7 +72,7 @@ AI学习路径矩阵:
 │  Phase 3: 深度学习 (6-10周)                                     │
 │  ├── PyTorch/TensorFlow掌握                                     │
 │  ├── CNN计算机视觉项目                                          │
-│  ├── NLP项目 (Transformer)                                      │
+│  ├── NLP项目 (01_Transformer)                                      │
 │  └── 模型部署实践                                               │
 │                                                                  │
 │  Phase 4: 专业化 (持续)                                         │

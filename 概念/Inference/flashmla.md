@@ -161,7 +161,7 @@ K,V: [B, d_c]    →  压缩为 latent vector (d_c << d)
 - [[概念/LLM/deepseek-models]] — DeepSeek 模型系列
 - [[概念/Inference/flashinfer]] — FlashInfer 算子库
 - [[概念/LLM/attention-variants]] — 注意力变体
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ## FlashMLA vs FlashAttention
 

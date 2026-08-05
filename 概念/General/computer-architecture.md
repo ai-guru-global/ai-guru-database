@@ -16,8 +16,8 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.75
 sources:
-  - 01_数学基础/10_AI_Hardware/AI_Hardware_2026.md
-  - 12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026
+  - 01_数学基础/10_AI硬件/AI_Hardware_2026.md
+  - 12_架构基建/02_架构概览/AI_Infrastructure_2026
 relationships:
   - target: "概念/ai-hardware"
     type: related_to
@@ -55,9 +55,9 @@ CPU (通用计算) → GPU (并行矩阵运算) → TPU (张量专用) → NPU (
 
 ## 相关阅读
 
-- [[01_数学基础/10_AI_Hardware/AI_Hardware_2026]] — AI 硬件 2026
-- [[10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals]] — 量化技术
-- [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[01_数学基础/10_AI硬件/01_AI硬件_2026]] — AI 硬件 2026
+- [[10_部署推理/03_推理优化/01_推理性能_基础]] — 量化技术
+- [[12_架构基建/02_架构概览/02_AI_基础设施_2026]] — AI 基础设施 2026
 
 ---
 

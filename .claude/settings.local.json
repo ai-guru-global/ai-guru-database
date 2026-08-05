@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(wc:*)",
+      "Bash(grep -E \"\\\\.md$\")",
+      "WebSearch",
+      "Bash(pnpm dev:*)",
+      "Bash(node eval-server.js)",
+      "WebFetch(domain:blog.google)",
+      "Bash(pnpm install:*)",
+      "Bash(curl:*)",
+      "Bash(node -e \"import\\('dotenv/config'\\).then\\(\\(\\) => console.log\\('KIMI:', process.env.KIMI_API_KEY ? 'set' : 'not set'\\)\\)\")",
+      "Bash(pkill -f \"node eval-server.js\")",
+      "Bash(pkill -f \"eval-server\")",
+      "Bash(pnpm add:*)",
+      "Bash(pkill -f \"node eval-server\")",
+      "Bash(node -e \"console.log\\('test'\\)\")",
+      "Bash(node:*)",
+      "Bash(pnpm build:*)",
+      "Bash(lsof -i :4567 -sTCP:LISTEN)",
+      "WebFetch(domain:github.com)",
+      "Bash(git mv *)",
+      "Bash(git -C /Users/ai-guru/Documents/GitHub/ai-guru-global/ai-guru-database status --short)"
+    ]
+  }
+}

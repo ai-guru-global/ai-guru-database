@@ -296,7 +296,7 @@ def process_embeddings(
 ai-guru-docs/
 ├── mkdocs.yml          # 配置文件
 ├── docs/
-│   ├── index.md        # 首页
+│   ├── 索引.md        # 首页
 │   ├── api/
 │   │   ├── chat.md     # Chat API
 │   │   ├── embeddings.md
@@ -411,14 +411,14 @@ markdown_extensions:
       slugify: !!python/name:pymdownx.slugs.uslugify
 
 nav:
-  - 首页: index.md
+  - 首页: 索引.md
   - API 文档:
-    - api/index.md
+    - api/索引.md
     - 对话接口: api/chat.md
     - 嵌入接口: api/embeddings.md
     - 模型管理: api/models.md
   - 使用指南:
-    - guides/index.md
+    - guides/索引.md
     - 快速开始: guides/quickstart.md
     - 部署指南: guides/deployment.md
 

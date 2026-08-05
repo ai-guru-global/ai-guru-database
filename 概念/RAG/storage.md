@@ -115,7 +115,7 @@ Storage 是 AI 系统的数据持久化基础设施，不同场景（训练、�
 - [[概念/GPU/gpu-direct|GPUDirect]] — GPU 直存加速
 - [[概念/MLOps/data-versioning|数据版本]] — 数据版本管理
 - [[概念/General/cloud-cost|Cloud Cost]] — 存储成本优化
-- [[12_架构基建/09_Storage/AI_Storage_Patterns|AI 存储模式]]
+- [[12_架构基建/09_存储/01_AI_存储_模式|AI 存储模式]]
 
 > ℹ️ AI 存储是训练和推理的基础设施，2026年分层存储 + GPUDirect Storage + 分布式缓存是标配，根据场景选择 NVMe/并行文件系统/对象存储组合。
 
@@ -164,7 +164,7 @@ RAG 向量 → 向量数据库 (Milvus/Qdrant)
 - [[概念/RAG/storageclass|StorageClass]] — K8s 存储抽象
 - [[概念/GPU/gpu-direct|GPUDirect]] — GPU 直接存储访问
 - [[概念/K8s/persistent-volume|Persistent Volume]] — K8s 持久化存储
-- [[12_架构基建/09_Storage/AI_Storage_Patterns|AI 存储模式]] — 存储架构设计
+- [[12_架构基建/09_存储/01_AI_存储_模式|AI 存储模式]] — 存储架构设计
 
 > ℹ️ AI 存储架构的核心原则是「分层匹配」：训练用并行 FS、推理用本地 NVMe、归档用 对象存储，避免一刀切导致性能浪费或瓶颈。
 
@@ -184,7 +184,7 @@ RAG 向量 → 向量数据库 (Milvus/Qdrant)
 - [[概念/RAG/storageclass|StorageClass]] — K8s 存储抽象
 - [[概念/GPU/gpu-direct|GPUDirect]] — GPU 直接存储访问
 - [[概念/K8s/persistent-volume|Persistent Volume]] — K8s 持久化存储
-- [[12_架构基建/09_Storage/AI_Storage_Patterns|AI 存储模式]] — 存储架构设计
+- [[12_架构基建/09_存储/01_AI_存储_模式|AI 存储模式]] — 存储架构设计
 
 > ℹ️ 存储选型决策：训练数据用 Lustre/NVMe，Checkpoint 用 NVMe，模型归档用 S3，向量检索用内存 + SSD，避免用 NFS 承载高 I/O。
 

@@ -99,7 +99,7 @@ AI Stack LLM 应用构建选项
 - [[概念/agentic-rag]] — Agentic RAG
 - [[概念/dify]] — Dify 低代码平台
 - [[概念/rag-production-architecture|RAG 生产架构]] — 生产级 RAG 设计
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 

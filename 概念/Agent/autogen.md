@@ -14,7 +14,7 @@ relationships:
   - target: "概念/Agent/mcp"
     type: related_to
 sources:
-  - 15_智能体/02_Agent_Frameworks/AutoGen_Deep_Dive.md
+  - 15_智能体/02_Agent框架/AutoGen_Deep_Dive.md
   - "https://github.com/microsoft/autogen"
 summary: "AutoGen 是微软开源的多 Agent 对话框架，通过 ConversableAgent 抽象让多个 LLM Agent 互相协作、调用工具、执行代码。2025 年重构为 AG2。"
 provenance:
@@ -212,7 +212,7 @@ from ag2 import AssistantAgent
 
 ## Related
 
-- [[15_智能体/02_Agent_Frameworks/AutoGen_Deep_Dive|AutoGen 深度解析]]
+- [[15_智能体/02_Agent框架/05_AutoGen_深入分析|AutoGen 深度解析]]
 - [[概念/Agent/agent-framework|Agent 框架]]
 - [[概念/Agent/multi-agent-orchestration|多 Agent 编排]]
 - [[概念/Agent/langchain|LangChain]]

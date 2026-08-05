@@ -130,7 +130,7 @@ Bahdanau et al.（2015）提出注意力机制，允许解码器在每步"回看
 - [[概念/LLM/retnet|RetNet]]
 - [[概念/LLM/transformer-architecture-plain|Transformer 大白话]]
 - [[概念/LLM/llm-architectures|LLM 架构]]
-- [[05_大模型/02_Sequence_Models/Sequence_Models|序列模型深度解析]]
+- [[05_大模型/02_序列模型/02_序列模型|序列模型深度解析]]
 
 ---
 
@@ -194,8 +194,8 @@ Bahdanau et al.（2015）提出注意力机制，允许解码器在每步"回看
 - [[概念/LLM/retnet|RetNet]]
 - [[概念/LLM/state-space-models|状态空间模型]]
 - [[概念/LLM/attention-variants|注意力变体]]
-- [[03_深度学习/02_Neural_Network_Core/State_Space_Models_2026|状态空间模型 2026]]
-- [[05_大模型/02_Sequence_Models/Sequence_Models|序列模型深度解析]]
+- [[03_深度学习/02_神经网络核心/11_State_Space_模型_2026|状态空间模型 2026]]
+- [[05_大模型/02_序列模型/02_序列模型|序列模型深度解析]]
 
 ## 关键论文
 

@@ -77,7 +77,7 @@ CANN（Compute Architecture for Neural Networks）是华为为昇腾 AI 处理�
 - [[概念/mindie|MindIE]]
 - [[概念/GPU/cambricon|Cambricon]] — 国产 AI 芯片对比
 - [[概念/GPU/cudnn|cuDNN]] — NVIDIA 对标组件
-- [[10_部署推理/08_Hardware/Ascend_NPU_Inference_Guide|昇腾 NPU LLM 推理部署指南]]
+- [[10_部署推理/05_硬件与算力/01_Ascend_NPU_推理_指南|昇腾 NPU LLM 推理部署指南]]
 
 ## 2026 CANN 生态
 

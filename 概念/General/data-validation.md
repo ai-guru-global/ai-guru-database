@@ -54,7 +54,7 @@ name_zh: "数据校验"
 - [[概念/pandera|Pandera]]
 - [[概念/evidently|Evidently]]
 - [[概念/mlops|MLOps]]
-- [[11_模型运维/12_Troubleshooting/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]
+- [[11_模型运维/12_故障排查/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]
 
 ---
 

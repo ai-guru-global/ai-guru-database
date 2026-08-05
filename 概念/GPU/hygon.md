@@ -101,7 +101,7 @@ AI Stack 一体机硬件架构
 - [[概念/apg-gpu]] — APG 自研加速卡
 - [[概念/ascend-npu]] — 华为昇腾 NPU
 - [[概念/apsara-stack]] — 飞天企业版
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 

@@ -72,7 +72,7 @@ LLM 应用的可观测性远超传统 APM，需覆盖成本（$/请求、缓存�
 | 层级 | 代表技术 / 框架 | 作用 |
 |------|----------------|------|
 | 推理服务层 | [[概念/vllm|vLLM]]、TGI、TensorRT-LLM、SGLang | 高吞吐、低延迟的模型服务化 |
-| 网关与治理 | [[12_架构基建/11_AI_Gateway/LLM_Gateway_Deep_Dive|LLM Gateway]]、LiteLLM、Kong/Envoy | 认证、路由、限流、缓存、降级 |
+| 网关与治理 | [[12_架构基建/11_AI网关/11_LLM_Gateway_深入分析|LLM Gateway]]、LiteLLM、Kong/Envoy | 认证、路由、限流、缓存、降级 |
 | 护栏与安全 | NeMo Guardrails、Guardrails AI、Lakera、LLM-as-Judge | 输入输出安全与质量校验 |
 | 可观测性 | Langfuse、Helicone、Arize Phoenix、OpenTelemetry + Grafana | 成本、性能、质量、安全四维监控 |
 | MLOps / 平台 | Kubernetes + KServe / BentoML、MLflow、W&B、[[概念/finops|FinOps]] 工具链 | 模型编排、版本管理与成本治理 |
@@ -89,27 +89,27 @@ LLM 应用的可观测性远超传统 APM，需覆盖成本（$/请求、缓存�
 
 ### 新增核心文档
 
-- [[10_部署推理/01_Deployment_Fundamentals/LLM_Production_Deployment_Runbook|LLM 生产部署运行手册]] — 从选型到上线的完整 Runbook。
-- [[13_运维/02_SRE_Reliability/AI_SRE_Runbook|AI SRE 运行手册]] — 高可用、故障排查与容量规划。
+- [[10_部署推理/01_部署基础/07_LLM_生产_部署_操作手册|LLM 生产部署运行手册]] — 从选型到上线的完整 Runbook。
+- [[13_运维/02_SRE与可靠性/03_AI_SRE_操作手册|AI SRE 运行手册]] — 高可用、故障排查与容量规划。
 - [[11_模型运维/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维]] — 生产级安全治理。
-- [[18_行业应用/01_Industry_Overview/AI_Production_Architecture_2026|AI 生产架构 2026]] — 端到端生产架构设计。
-- [[18_行业应用/01_Industry_Overview/AI_Platform_Selection_2026|AI 平台选型 2026]] — 模型与平台选型指南。
-- [[07_模型训练/08_Cost_Optimization/Training_Cost_Optimization_and_FinOps_2026|训练成本优化与 FinOps]] — 成本与资源优化。
-- [[04_计算机视觉/09_CV_Deployment/CV_Deployment_and_Inference_2026|CV 部署与推理 2026]] — 跨模态生产部署参考。
+- [[18_行业应用/01_行业概览/03_AI_生产_架构_2026|AI 生产架构 2026]] — 端到端生产架构设计。
+- [[18_行业应用/01_行业概览/02_AI_平台_选型_2026|AI 平台选型 2026]] — 模型与平台选型指南。
+- [[07_模型训练/08_成本优化/02_训练_成本优化_and_FinOps_2026|训练成本优化与 FinOps]] — 成本与资源优化。
+- [[04_计算机视觉/09_CV部署/01_CV部署_and_推理_2026|CV 部署与推理 2026]] — 跨模态生产部署参考。
 
 ### 相关领域
 
 - [[15_智能体/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agent 系统的特殊部署挑战。
-- [[14_RAG系统/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深潜]] — 检索增强生成的生产化。
-- [[08_模型评估/RAG_Evaluation_Deep_Dive|RAG 评估深潜]] — 生产质量评估方法。
-- [[09_测试/03_Agent_Evaluation/Agent_Evaluation_Deep_Dive|Agent 评估深潜]] — Agent 系统评估体系。
-- [[06_强化学习/GRPO_Training_Deep_Dive|GRPO 训练深潜]] — 后训练与对齐技术。
-- [[05_大模型/09_Reasoning_Models/Test_Time_Compute_Scaling_2026|测试时计算缩放 2026]] — 推理阶段能力扩展。
-- [[05_大模型/05_LLM_Architectures/DeepSeek_Architecture_2026|DeepSeek 架构 2026]] — 先进模型架构对部署的影响。
-- [[07_模型训练/01_Training_Fundamentals/Diffusion_Model_Training_2026|扩散模型训练 2026]] — 生成式模型生产化参考。
+- [[14_RAG系统/05_RAG生产实践/05_RAG生产实践_架构_深入分析|RAG 生产架构深潜]] — 检索增强生成的生产化。
+- [[08_模型评估/03_LLM评估/05_RAG评估_深入分析|RAG 评估深潜]] — 生产质量评估方法。
+- [[09_测试/03_Agent评估/01_Agent评估深入分析|Agent 评估深潜]] — Agent 系统评估体系。
+- [[06_强化学习/03_RLHF与对齐/02_GRPO_训练_深入分析|GRPO 训练深潜]] — 后训练与对齐技术。
+- [[05_大模型/09_推理模型/Test_Time_Compute_Scaling_2026|测试时计算缩放 2026]] — 推理阶段能力扩展。
+- [[05_大模型/05_LLM架构/DeepSeek_Architecture_2026|DeepSeek 架构 2026]] — 先进模型架构对部署的影响。
+- [[07_模型训练/01_训练基础/01_扩散_模型_训练_2026|扩散模型训练 2026]] — 生成式模型生产化参考。
 - [[16_编程/AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] — 安全与合规实践。
 - [[21_面试岗位/Agent_Engineer_2026|Agent 工程师面试 2026]] — 工程能力要求参考。
-- [[20_论文精读/01_Research_Guide/Paper_Reading_and_Reproduction_Guide|论文阅读与复现指南]] — 从论文到工程落地。
+- [[20_论文精读/01_研读指南/03_论文_Reading_and_Reproduction_指南|论文阅读与复现指南]] — 从论文到工程落地。
 
 ### 相关概念
 
@@ -186,8 +186,8 @@ LLM 应用的可观测性远超传统 APM，需覆盖成本（$/请求、缓存�
 - [[概念/LLM/llm-inference-checklist|推理上线检查清单]]
 - [[概念/LLM/llm-inference-cost-optimization|推理成本优化]]
 - [[概念/LLM/llmops|LLMOps]]
-- [[10_部署推理/02_Inference_Engines|推理引擎专题]]
-- [[11_模型运维/08_Observability/LLM_Observability_2026|LLM 可观测性]]
+- [[10_部署推理/02_推理引擎|推理引擎专题]]
+- [[11_模型运维/08_可观测性/10_llm_observability_aiops|LLM 可观测性]]
 
 ## 常见部署问题排查
 

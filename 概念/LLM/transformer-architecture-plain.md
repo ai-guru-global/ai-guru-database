@@ -197,7 +197,7 @@ Transformer 厉害的地方在于：**不管两个词离得多远，它都能直
 - [[概念/LLM/rope|RoPE 位置编码]]
 - [[概念/LLM/flash-attention-kernels|Flash Attention]]
 - [[概念/LLM/multi-head-latent-attention|MLA 多头潜在注意力]]
-- [[05_大模型/03_Transformer/Transformer_Architecture|Transformer 架构技术详解]]
+- [[05_大模型/03_Transformer架构/14_Transformer 架构详解|Transformer 架构技术详解]]
 
 ## 学习路径建议
 

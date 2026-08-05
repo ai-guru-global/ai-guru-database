@@ -197,7 +197,7 @@ AI Stack V2.14.0 预置以下 DeepSeek 模型：
 - [[概念/knowledge-distillation]] — 知识蒸馏
 - [[概念/llm-architectures]] — LLM 架构
 - [[概念/flash-attention-kernels]] — FlashMLA 算子
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 - [[治理/modern-ai-training-stack|现代 AI 训练栈]] — 从预训练到推理扩展的统一视 角
 
 ---

@@ -99,7 +99,7 @@ name_zh: "K8s 策略引擎"
 - [[概念/falco]] — Falco
 - [[概念/kubernetes]] — Kubernetes
 - [[概念/pod-security-standards]] — Pod 安全标准
-- [[17_伦理安全/LLM_Security_Complete_Guide]] — LLM 安全完整指南
+- [[17_伦理安全/06_系统安全/05_LLM_安全_完整_指南]] — LLM 安全完整指南
 
 ---
 

@@ -242,8 +242,8 @@ P'(t_i) = f(P(t_i), history, hyperparameters)
 
 ## See Also (深度专题)
 
-- [[../../05_大模型/02_Sequence_Models/Text_Generation_Decoding_Strategies|文本生成解码策略]] — Greedy/Beam/Sampling/Speculative 的数学推导与工程实现
-- [[../../05_大模型/02_Sequence_Models/Sequence_Models|序列模型深度解析]] — 自回归生成的底层架构支撑
+- [[../../05_大模型/02_序列模型/Text_Generation_Decoding_Strategies|文本生成解码策略]] — Greedy/Beam/Sampling/Speculative 的数学推导与工程实现
+- [[05_大模型/02_序列模型/02_序列模型|序列模型深度解析]] — 自回归生成的底层架构支撑
 
 ---
 

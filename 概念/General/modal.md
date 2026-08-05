@@ -12,7 +12,7 @@ relationships:
   - target: "概念/vllm"
     type: related_to
 sources:
-  - 10_部署推理/02_Inference_Engines/Modal_Deep_Dive.md
+  - 10_部署推理/02_推理引擎/Modal_Deep_Dive.md
 summary: "Modal 是无服务器 GPU 云平台，允许开发者用 Python 装饰器将函数部署为弹性 GPU/CPU 服务，按秒计费，适合快速原型、异步任务和弹性推理服务。"
 provenance:
   extracted: 0.75
@@ -112,7 +112,7 @@ def main():
 
 ## Related
 
-- [[10_部署推理/02_Inference_Engines/Modal_Deep_Dive]] — Modal 深度解析
+- [[10_部署推理/02_推理引擎/20_Modal_深入分析]] — Modal 深度解析
 - [[概念/model-serving]] — 模型服务
 - [[概念/serverless]] — 无服务器
 - [[概念/vllm]] — vLLM

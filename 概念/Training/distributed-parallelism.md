@@ -11,7 +11,7 @@ relationships:
     type: enables
 sources:
   - 12_架构基建/AI_Stack_Deep_Dive.md
-  - 07_模型训练/04_Distributed_Training/Distributed_Training_2026.md
+  - 07_模型训练/04_分布式训练/Distributed_Training_2026.md
 summary: "分布式并行策略是将大模型训练/推理分布到多GPU上的核心技术——数据并行(DP)、张量并行(TP)、流水线并行(PP)、专家并行(EP)、序列并行(SP)，可组合使用。"
 provenance:
   extracted: 0.50
@@ -194,7 +194,7 @@ Experts 0-85    Experts 86-170   Experts 171-255
 
 ## Related
 
-- [[07_模型训练/04_Distributed_Training/Distributed_Training_2026]] — 分布式训练
+- [[07_模型训练/04_分布式训练/03_分布式训练_2026]] — 分布式训练
 - [[概念/mixture-of-experts]] — MoE（Expert Parallelism）
 - [[概念/model-training]] — 模型训练
 - [[概念/model-serving]] — 模型服务（推理并行策略）
@@ -235,4 +235,4 @@ Experts 0-85    Experts 86-170   Experts 171-255
 | TP | `tensor_parallel/layers.py` | 借助 Megatron | `shardformer/` | 交给 torch TP |
 | PP 调度 | `pipeline_parallel/schedules.py` | `runtime/pipe/` | `colossalai/pipeline/` | 不提供 |
 
-详见各 Deep Dive 的"源码级实现解析"章节：[[07_模型训练/04_Distributed_Training/Megatron_LM_Deep_Dive|Megatron]]、[[07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive|DeepSpeed]]、[[07_模型训练/04_Distributed_Training/Colossal_AI_Deep_Dive|Colossal-AI]]、[[07_模型训练/04_Distributed_Training/FSDP_Deep_Dive|FSDP]]。
+详见各 Deep Dive 的"源码级实现解析"章节：[[07_模型训练/04_分布式训练/08_Megatron_LM_深入分析|Megatron]]、[[07_模型训练/04_分布式训练/02_DeepSpeed_深入分析|DeepSpeed]]、[[07_模型训练/04_分布式训练/01_Colossal_AI_深入分析|Colossal-AI]]、[[07_模型训练/04_分布式训练/05_FSDP_深入分析|FSDP]]。

@@ -99,10 +99,10 @@ AI视频生成需要多维度评估：时序一致性（帧间差异越小越好
 
 ## 来源
 
-- 04_计算机视觉/07_Video_Generation/Video_Generation_2026.md
+- 04_计算机视觉/07_视频生成/Video_Generation_2026.md
 ## Related
 
-- [[20_论文精读/08_Vision/Diffusion_Models_Deep_Dive.md]] — 扩散模型深度解读
+- [[20_论文精读/08_计算机视觉/03_扩散_模型_深入分析]] — 扩散模型深度解读
 
 ---
 

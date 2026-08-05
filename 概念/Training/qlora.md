@@ -124,7 +124,7 @@ model.print_trainable_parameters()
 - [[概念/swift]] — SWIFT 微调框架
 - [[概念/fp8]] — FP8 精度格式
 - [[概念/nf4]] — NF4 量化格式
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 

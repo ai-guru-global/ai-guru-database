@@ -68,7 +68,7 @@ ASR（Whisper）、TTS（VITS/CosyVoice）、音频理解（AudioLM）、音乐�
 
 | 章节 | 缺口 | 优先级 |
 |------|------|--------|
-| 01_Fundamentals | 微积分/优化理论、信息论 | P0 |
+| 01_基础入门 | 微积分/优化理论、信息论 | P0 |
 | 02_Machine_Learning | 在线学习/增量学习、核方法与SVM | P1 |
 | 03_Deep_Learning | GAN专题、自监督学习 | P1 |
 | 04_NLP_LLMs | Tokenization深度、LLM数据工程、小模型/端侧LLM | P1 |

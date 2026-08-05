@@ -207,7 +207,7 @@ model = get_peft_model(model, LoraConfig(r=16, lora_alpha=32))
 - **注入而非修改**：`inject_adapter()`（tuners_utils.py L749）把目标 `nn.Linear` 原地替换为复合层，基座权重零修改。
 - **多适配器字典化**：`LoraLayer`（`tuners/lora/layer.py` L100）用 `nn.ModuleDict` 按 adapter 名存 A/B 矩阵，`set_adapter` 即字典键切换。
 - **merge 零开销部署**：`merge()`（layer.py L817）执行 `W += B@A*scaling`；`merge_and_unload()` 即批量 merge 后拆包装。
-- **方法规模**：`tuners/` 下 40+ 方法目录，均复用同一协议。详见 [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] 第 7 节。
+- **方法规模**：`tuners/` 下 40+ 方法目录，均复用同一协议。详见 [[05_大模型/07_微调技术/09_PEFT_2026|PEFT 2026 完全指南]] 第 7 节。
 
 ---
 

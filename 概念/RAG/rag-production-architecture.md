@@ -58,21 +58,21 @@ name_zh: "RAG 生产架构"
 
 ## 推荐阅读
 
-- [[14_RAG系统/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深度解析]] — 生产架构完整设计、组件拓扑与上线 Checklist
-- [[13_运维/02_SRE_Reliability/AI_SRE_Runbook|AI SRE Runbook]] — 生产系统故障响应、SLO 治理与灾备演练
+- [[14_RAG系统/05_RAG生产实践/05_RAG生产实践_架构_深入分析|RAG 生产架构深度解析]] — 生产架构完整设计、组件拓扑与上线 Checklist
+- [[13_运维/02_SRE与可靠性/03_AI_SRE_操作手册|AI SRE Runbook]] — 生产系统故障响应、SLO 治理与灾备演练
 - [[11_模型运维/LLM_Guardrails_and_Safety_Ops_2026|LLM Guardrails 与安全运维 2026]] — 输入/输出护栏、敏感信息识别与模型安全
-- [[10_部署推理/01_Deployment_Fundamentals/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — LLM 推理服务、vLLM/SGLang 部署与容量规划
-- [[08_模型评估/RAG_Evaluation_Deep_Dive|RAG 评估深度解析]] — RAG 离线/在线评估指标与迭代飞轮
-- [[09_测试/02_Testing_Frameworks/RAGAS_Deep_Dive|RAGAS 深度解析]] — RAG 评估框架与核心指标实践
+- [[10_部署推理/01_部署基础/07_LLM_生产_部署_操作手册|LLM 生产部署 Runbook]] — LLM 推理服务、vLLM/SGLang 部署与容量规划
+- [[08_模型评估/03_LLM评估/05_RAG评估_深入分析|RAG 评估深度解析]] — RAG 离线/在线评估指标与迭代飞轮
+- [[09_测试/02_测试框架/06_RAGAS_深入分析|RAGAS 深度解析]] — RAG 评估框架与核心指标实践
 - [[15_智能体/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agentic RAG 与 Agent 服务上线要点
-- [[18_行业应用/01_Industry_Overview/AI_Production_Architecture_2026|AI 生产架构 2026]] — AI 应用整体生产架构与平台选型视角
-- [[14_RAG系统/RAG_Systems|RAG 系统]] — RAG 基础概念、Pipeline 与框架选型
+- [[18_行业应用/01_行业概览/03_AI_生产_架构_2026|AI 生产架构 2026]] — AI 应用整体生产架构与平台选型视角
+- [[14_RAG系统/01_RAG基础/07_RAG_系统|RAG 系统]] — RAG 基础概念、Pipeline 与框架选型
 - [[概念/rag-systems|RAG 检索增强生成]] — RAG 核心概念总览
 - [[概念/rag-patterns|RAG 模式分类]] — Naive / Modular / Agentic / Graph RAG 选型
 - [[概念/agentic-rag|Agentic RAG]] — 自主检索迭代与 Self-RAG / CRAG 机制
-- [[14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026|RAG 高级实践 2026]] — 混合检索、重排序与上下文压缩进阶
-- [[11_模型运维/LLM_Production_Pipeline_2026|LLM 生产流水线 2026]] — LLM 应用端到端 MLOps 流水线
-- [[12_架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]] — AI 基础设施栈与云原生部署
+- [[14_RAG系统/04_高级RAG/12_RAG_高级_2026|RAG 高级实践 2026]] — 混合检索、重排序与上下文压缩进阶
+- [[11_模型运维/10_LLMOps_大模型运维/04_LLM_生产_流水线_2026|LLM 生产流水线 2026]] — LLM 应用端到端 MLOps 流水线
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析|AI Stack 深度解析]] — AI 基础设施栈与云原生部署
 
 ## 2026 年 RAG 生产架构生态
 

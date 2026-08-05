@@ -1,0 +1,338 @@
+---
+title: 'Claude Code: Anthropic 官方 Agent 编程 CLI'
+category: '15-agent-production-agentic-coding-tools'
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: '> **一句话理解**: Claude Code 是 Anthropic 官方推出的 Agent 编程工具，通过深度集成 Claude 模型与本地开发环境，让 AI 能够直接读写文件、执行命令、搜索代码，实现"人机协同编程"的新范式。'
+created: '2026-05-31'
+updated: '2026-05-31'
+tier: supporting
+aliases:
+  - "Claude Code Deep Dive"
+  - Claude_Code_Deep_Dive
+sources: []
+
+name_zh: "Claude Code: Anthropic 官方 Agent 编程 CLI"
+---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+# Claude Code: Anthropic 官方 Agent 编程 CLI
+
+> 中文简称：Claude Code: Anthropic 官方 Agent 编程 CLI
+
+> **一句话理解**: Claude Code 是 Anthropic 官方推出的 Agent 编程工具，通过深度集成 Claude 模型与本地开发环境，让 AI 能够直接读写文件、执行命令、搜索代码，实现"人机协同编程"的新范式。
+
+---
+
+## 目录
+
+1. [Claude Code 概述](#1-claude-code-概述)
+2. [核心能力](#2-核心能力)
+3. [架构设计](#3-架构设计)
+4. [使用场景](#4-使用场景)
+5. [配置与最佳实践](#5-配置与最佳实践)
+6. [与其他工具对比](#6-与其他工具对比)
+
+---
+
+## 1. Claude Code 概述
+
+### 1.1 什么是 Claude Code
+
+Claude Code 是 Anthropic 官方发布的**命令行 Agent 编程工具**，它：
+
+```
+Claude Code 定位
+═══════════════════════════════════════════════════════════════
+
+传统 IDE:                      Claude Code:
+┌────────────────┐              ┌────────────────────────────────┐
+│                │              │                                 │
+│  Human ──► IDE │              │  Human ──► Claude Code ──► OS  │
+│       │        │              │               │                │
+│       ▼        │              │               ▼                │
+│   编写代码     │              │   理解 → 规划 → 执行 → 验证   │
+│       │        │              │               │                │
+│       ▼        │              │               ▼                │
+│   手动测试     │              │           完成修复              │
+│                │              │                                 │
+└────────────────┘              └────────────────────────────────┘
+
+核心差异: Claude Code 是"执行者"，不只是"建议者"
+```
+
+### 1.2 核心特性
+
+| 特性 | 描述 |
+|------|------|
+| **文件系统访问** | 读取、创建、编辑、删除文件 |
+| **命令执行** | 运行 Shell 命令、测试、构建 |
+| **代码搜索** | 全代码库搜索、理解项目结构 |
+| **Git 操作** | commit、branch、diff、status |
+| **多轮对话** | 持续上下文，理解项目 |
+| **安全审计** | 内置敏感信息检测 |
+
+### 1.3 与 Claude API 的区别
+
+| 维度 | Claude API | Claude Code |
+|------|-----------|-------------|
+| **交互方式** | API 调用 | CLI 对话 |
+| **工具调用** | 手动实现 | 内置支持 |
+| **上下文** | 手动管理 | 自动维护 |
+| **适用场景** | 应用开发 | 编程辅助 |
+
+---
+
+## 2. 核心能力
+
+### 2.1 文件操作
+
+```bash
+# Claude Code 文件操作示例
+
+# 读取文件
+claude-code: 我需要了解这个项目的结构
+→ Claude 分析项目，列出关键文件和目录
+
+# 编辑文件
+claude-code: 在 users.py 中添加注册功能
+→ Claude 编辑文件，添加相应代码
+
+# 创建文件
+claude-code: 创建 REST API 路由文件
+→ Claude 创建完整的路由模块
+```
+
+### 2.2 命令执行
+
+```
+Claude Code 命令执行
+═══════════════════════════════════════════════════════════════
+
+内置命令:
+─────────────────────────────────────────────────────────────
+/test          → 运行测试套件
+/build         → 执行构建
+/lint          → 运行代码检查
+/format        → 格式化代码
+/git [cmd]     → Git 操作
+/search [term] → 搜索代码
+/explain       → 解释代码
+/refactor      → 重构建议
+
+安全特性:
+• 危险命令拦截 (rm -rf 等)
+• 操作前确认机制
+• 完整执行日志
+```
+
+### 2.3 代码理解
+
+```bash
+# 项目理解示例
+
+$ claude-code
+claude-code: 分析这个代码库的技术栈
+
+→ 项目分析:
+  ├── 前端: React 18 + TypeScript
+  ├── 后端: Node.js + Express
+  ├── 数据库: PostgreSQL
+  ├── ORM: Prisma
+  ├── 测试: Jest + Cypress
+  └── 部署: Docker + Kubernetes
+
+架构模式:
+  └── 分层架构 (Controller → Service → Repository)
+```
+
+---
+
+## 3. 架构设计
+
+### 3.1 系统架构
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        Claude Code 架构                                   │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  ┌─────────────────────────────────────────────────────────────────┐    │
+│  │                      CLI Interface                               │    │
+│  │  • 对话界面        • 命令解析        • 历史记录               │    │
+│  └─────────────────────────────────────────────────────────────────┘    │
+│                              │                                          │
+│                              ▼                                          │
+│  ┌─────────────────────────────────────────────────────────────────┐    │
+│  │                    Context Manager                               │    │
+│  │  • 项目上下文      • 文件索引        • 依赖图                   │    │
+│  └─────────────────────────────────────────────────────────────────┘    │
+│                              │                                          │
+│                              ▼                                          │
+│  ┌─────────────────────────────────────────────────────────────────┐    │
+│  │                    Claude Integration                            │    │
+│  │  • API 调用        • 流式响应        • Token 管理               │    │
+│  └─────────────────────────────────────────────────────────────────┘    │
+│                              │                                          │
+│                              ▼                                          │
+│  ┌─────────────────────────────────────────────────────────────────┐    │
+│  │                      Tool System                                 │    │
+│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐       │    │
+│  │  │  File   │  │  Shell   │  │   Git    │  │  Search  │       │    │
+│  │  │  Tools  │  │  Tools   │  │  Tools   │  │  Tools   │       │    │
+│  │  └──────────┘  └──────────┘  └──────────┘  └──────────┘       │    │
+│  └─────────────────────────────────────────────────────────────────┘    │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+### 3.2 执行流程
+
+```
+Claude Code 执行流程
+═══════════════════════════════════════════════════════════════
+
+User: "修复登录页面的响应式布局问题"
+
+     ┌──────────────────────────────────────────────────────┐
+     │ 1. 理解阶段                                          │
+     │    • 解析用户意图                                    │
+     │    • 识别相关文件 (LoginPage.tsx)                   │
+     │    • 确定需要的工具 (read, edit, test)               │
+     └──────────────────────────────────────────────────────┘
+                           │
+                           ▼
+     ┌──────────────────────────────────────────────────────┐
+     │ 2. 规划阶段                                          │
+     │    • 分解任务: 找到文件 → 分析问题 → 修改 → 验证     │
+     │    • 评估风险等级                                    │
+     │    • 准备回滚方案                                    │
+     └──────────────────────────────────────────────────────┘
+                           │
+                           ▼
+     ┌──────────────────────────────────────────────────────┐
+     │ 3. 执行阶段                                          │
+     │    • read: LoginPage.tsx                             │
+     │    • 分析 CSS 响应式规则                              │
+     │    • edit: 修复 media query                          │
+     │    • run: npm test login                             │
+     └──────────────────────────────────────────────────────┘
+                           │
+                           ▼
+     ┌──────────────────────────────────────────────────────┐
+     │ 4. 验证阶段                                          │
+     │    • 测试通过? → 报告完成                             │
+     │    • 测试失败? → 分析错误 → 修复 → 重新验证          │
+     └──────────────────────────────────────────────────────┘
+```
+
+---
+
+## 4. 使用场景
+
+### 4.1 典型场景
+
+| 场景 | 命令 | 效果 |
+|------|------|------|
+| **Bug 修复** | `claude-code: fix the null pointer exception in auth.py` | 自动定位并修复 |
+| **新功能** | `claude-code: add user profile page` | 生成完整功能 |
+| **代码审查** | `claude-code: review the API changes` | 详细审查报告 |
+| **测试生成** | `claude-code: write tests for user service` | 生成测试用例 |
+| **重构** | `claude-code: refactor to use repository pattern` | 安全重构 |
+| **文档** | `claude-code: update API documentation` | 更新文档 |
+
+### 4.2 工作流集成
+
+```bash
+# Git 工作流
+claude-code: create a PR for the login fix
+→ 自动创建分支、提交、推送、创建 PR
+
+# CI/CD 集成
+claude-code: the build failed, analyze and fix
+→ 分析日志、定位问题、提交修复
+
+# 代码审查
+claude-code: review this diff
+→ 提供详细审查意见
+```
+
+---
+
+## 5. 配置与最佳实践
+
+### 5.1 配置文件
+
+```yaml
+# .claude.json
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write", 
+      "Bash(test, build, lint)"
+    ],
+    "deny": [
+      "Bash(rm -rf, dd, mkfs)"  # ⚠️ HIGH-RISK — 递归强制删除，不可逆 [回滚：见文档/备份]
+    ]
+  },
+  "model": {
+    "name": "claude-3-5-sonnet-20241022",
+    "maxTokens": 8192
+  },
+  "project": {
+    "ignore": [
+      "node_modules",
+      ".git",
+      "dist"
+    ]
+  }
+}
+```
+
+### 5.2 安全最佳实践
+
+```
+Claude Code 安全配置
+═══════════════════════════════════════════════════════════════
+
+□ 启用危险命令拦截
+□ 限制文件系统访问范围
+□ 敏感信息自动检测
+□ 操作日志完整记录
+□ 定期审计执行历史
+□ 不执行未确认的操作
+□ 使用只读模式处理陌生代码库
+```
+
+---
+
+## 6. 与其他工具对比
+
+| 工具 | 开发商 | 特点 | 适用场景 |
+|------|--------|------|----------|
+| **Claude Code** | Anthropic | 深度 Claude 集成、官方支持 | 全面编程辅助 |
+| **OpenCode** | OpenCode AI | 多模型支持、开源 | 定制化需求 |
+| **Cursor** | Cursor | IDE 集成、Composer | 日常开发 |
+| **Windsurf** | Windsurf AI | 代理架构、简单 | 快速上手 |
+| **GitHub Copilot** | Microsoft | 补全为主、轻量 | 代码补全 |
+| **Devin** | Cognition | 自主执行、SA级别 | 端到端任务 |
+
+---
+
+## 相关资源
+
+- [Claude Code 官网](https://claude.ai/code)
+- [Anthropic API 文档](https://docs.anthropic.com/)
+- [OpenCode Deep Dive](./07_OpenCode_开源编程_Deep_Dive.md)
+- [Vibe Coding 方法论](16_编程/03_方法论/03_Vibe_Coding_方法论.md) — 如何系统化地使用 Claude Code 进行 Vibe Coding
+
+## 相关链接
+
+- [[15_智能体/08_Agent编程工具/Agentic_Coding_Tools_Overview|Agentic Coding 工具概览]] — 工具全景对比
+- [[15_智能体/08_Agent编程工具/02_Aider_深入分析|Aider 深度解析]] — 同类开源 CLI 工具对比
+- [[15_智能体/08_Agent编程工具/08_Windsurf_Cursor_Devin_Dive|Windsurf/Cursor/Devin 对比]] — IDE 类工具对比
+- [[15_智能体/15_课程笔记/Learn_Claude_Code_L01_Agent_Loop|Claude Code L01: Agent Loop]] — Claude Code 课程笔记
+- [[05_大模型/14_全球LLM生态/01_Anthropic_Claude_深入分析|Anthropic Claude 技术深度解析]] — Claude Code 背后的模型
+- [[15_智能体/08_Agent编程工具/index|Agentic Coding 索引]] — 工具主题导览

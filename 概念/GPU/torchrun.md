@@ -232,4 +232,4 @@ torchrun 弹性训练架构
 - [[概念/deepspeed]] — DeepSpeed 框架
 - [[概念/checkpoint]] — Checkpoint 检查点
 - [[概念/fsdp]] — FSDP 全分片数据并行
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析

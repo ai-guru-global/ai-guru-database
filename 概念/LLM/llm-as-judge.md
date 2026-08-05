@@ -13,7 +13,7 @@ relationships:
   - target: "概念/benchmark"
     type: used_in
 sources:
-  - 08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Guide.md
+  - 08_模型评估/04_评估工具/LLM_as_Judge_Guide.md
   - 概念/llm-arena.md
 summary: "LLM-as-Judge 是用强 LLM（GPT-4 / Claude Opus）作为"裁判"自动评估其他 LLM 输出的范式；2026 年是 RAG、对话、Agent 评测的主流方法，但需警惕位置偏差、长度偏差等系统性问题。"
 lifecycle: reviewed
@@ -140,7 +140,7 @@ JUDGE_PROMPT = """你是一个严格的评分员。请基于以下维度对 [A] 
 
 - [[概念/llm-arena]] — Chatbot Arena（人类评判）
 - [[概念/benchmark]] — Benchmark 总览
-- [[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Guide]] — LLM-as-Judge 深度
+- [[08_模型评估/04_评估工具/04_LLM_as_Judge_指南]] — LLM-as-Judge 深度
 - [[治理/cheatsheets/cheatsheet-evaluation]] — 评测速查表
 
 ---

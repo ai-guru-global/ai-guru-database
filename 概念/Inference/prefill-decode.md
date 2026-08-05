@@ -11,16 +11,16 @@ relationships:
     type: extends
   - target: "概念/flash-attention-kernels"
     type: uses
-  - target: "10_部署推理/04_Inference_Performance/Prefill_Decode_Disaggregation"
+  - target: "10_部署推理/03_推理优化/Prefill_Decode_Disaggregation"
     type: optimized_by
-  - target: "10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy"
+  - target: "10_部署推理/03_推理优化/Inference_Terms_for_dummy"
     type: simplified_by
   - target: "概念/prefill-plain"
     type: simplified_by
 sources:
   - 12_架构基建/AI_Stack_Deep_Dive.md
-  - 10_部署推理/04_Inference_Performance/Prefill_Decode_Disaggregation.md
-  - 10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy.md
+  - 10_部署推理/03_推理优化/Prefill_Decode_Disaggregation.md
+  - 10_部署推理/03_推理优化/Inference_Terms_for_dummy.md
 summary: "LLM 推理分为 Prefill（处理输入，计算密集）和 Decode（逐 token 生成，内存带宽密集）两阶段。优化策略截然不同，理解两阶段差异是推理系统设计的核心。"
 provenance:
   extracted: 0.60
@@ -85,6 +85,7 @@ Prompt  │ 并行计算所有位置的    │      │ 每步只算 1 个 token
 | **KV Cache** | 写入（生成所有层的 KV） | 读取（追加 + 读取历史 KV） |
 | **吞吐量** | 高（大量 token 并行） | 低（逐 token 串行） |
 | **GPU 利用率** | 高（充分利用算力） | 低（受限于内存带宽） |
+| **显存占用** | 一次性写入全部输入 KV | 随生成逐步增长（KV Cache） |
 
 ---
 
@@ -138,6 +139,8 @@ Append 优化：将新 token 的 KV 写入与 Attention 计算融合，减少一
 
 ## 6. DeepSeek 的差异化策略
 
+> 注：下表根据公开发布资料整理，性能数值为约数，未经独立复核，以官方技术报告为准。
+
 | 模型 | Prefill 策略 | Decode 策略 |
 |------|-------------|-------------|
 | **DeepSeek-V2** | Token-level Sparse Attention | Dense MLA Decoding |
@@ -175,20 +178,9 @@ Append 优化：将新 token 的 KV 写入与 Attention 计算融合，减少一
 - [[概念/paged-attention]] — PagedAttention（KV Cache 管理）
 - [[概念/mixture-of-experts]] — MoE（与推理阶段的协同）
 - [[概念/ttft]] — TTFT
-- [[10_部署推理/04_Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
-- [[10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack
-
-## Prefill vs Decode 对比
-
-| 维度 | Prefill | Decode |
-|------|---------|--------|
-| **计算模式** | 并行 (所有输入 Token) | 串行 (逐 Token) |
-| **计算密集度** | 高 (Compute-bound) | 低 (Memory-bound) |
-| **GPU 利用率** | 高 | 低 |
-| **延迟影响** | TTFT | TPOT |
-| **优化方向** | Flash Attention, 分块 | 投机解码, 量化 |
-| **显存占用** | 一次性 | 逐步增长 (KV Cache) |
+- [[10_部署推理/03_推理优化/13_Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
+- [[10_部署推理/03_推理优化/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack
 
 ## PD 分离架构
 
@@ -224,10 +216,3 @@ PD 分离部署:
 | **投机解码** | 小模型加速 Decode 阶段 | GA |
 | **KV Cache 压缩** | 量化/稀疏化降低显存占用 | GA |
 
-## 生产最佳实践
-
-1. **阶段识别**：监控 Prefill/Decode 时间占比，确定瓶颈
-2. **Chunked Prefill**：长输入场景启用分块预填充
-3. **KV Cache 预算**：根据序列长度规划 KV Cache 显存
-4. **投机解码**：Decode-bound 场景启用 Speculative Decoding
-5. **分离部署**：大规模场景考虑 Prefill/Decode 分离架构

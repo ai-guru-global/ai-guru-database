@@ -926,10 +926,10 @@ class CorpusLineage:
 
 | 相关文档 | 说明 |
 |---------|------|
-| [架构设计](../architecture/index.md) | 了解 Agent 整体架构对语料设计的影响 |
-| [Agent 评测体系](../testing/index.md) | 了解评测指标与语料质量的关系 |
-| [Agent 开发指南](../development/index.md) | 了解工具调用对语料格式的要求 |
-| [运维指南](../operations/index.md) | 了解真实运维场景，提取语料素材 |
+| [架构设计](../architecture/索引.md) | 了解 Agent 整体架构对语料设计的影响 |
+| [Agent 评测体系](../testing/索引.md) | 了解评测指标与语料质量的关系 |
+| [Agent 开发指南](../development/索引.md) | 了解工具调用对语料格式的要求 |
+| [运维指南](../operations/索引.md) | 了解真实运维场景，提取语料素材 |
 
 ---
 

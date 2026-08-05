@@ -807,21 +807,21 @@ Model_Training → Evaluation → Deployment
 | **数学基础** | `01_数学基础/` | `Linear_Algebra/`, `Probability_Statistics/` |
 | **机器学习** | `02_机器学习/` | `Feature_Engineering/`, `Supervised_Learning/`, `Unsupervised_Learning/` |
 | **深度学习** | `03_深度学习/` | `Neural_Network_Core/`, `Optimization/`, `World_Models/JEPA_Architecture_2026.md` |
-| **NLP 基础** | `05_大模型/02_Sequence_Models/` | `Transformer_Revolution/` |
-| **大模型** | `05_大模型/05_LLM_Architectures/` | `Fine_tuning_Techniques/`, `Prompt_Engineering/` |
-| **多模态** | `05_大模型/10_Multimodal_Models/` | `04_计算机视觉/` |
+| **NLP 基础** | `05_大模型/02_序列模型/` | `Transformer_Revolution/` |
+| **大模型** | `05_大模型/05_LLM架构/` | `Fine_tuning_Techniques/`, `Prompt_Engineering/` |
+| **多模态** | `05_大模型/10_多模态模型/` | `04_计算机视觉/` |
 | **计算机视觉** | `04_计算机视觉/` | `Image_Classification_Detection/`, `Segmentation/`, `Generative_Models/` |
 | **强化学习** | `06_强化学习/` | `RL_Foundations/`, `Deep_RL/` |
 | **Agent** | `06_强化学习/AI_Agents/` | `Agent_Protocols_Detail.md`, `Agent_Future_Roadmap_2026_2030.md` |
 | **RAG 系统** | `14_RAG系统/` | `RAG_Advanced_2026/`, `Chroma_Deep_Dive.md` |
-| **MoE/Scaling** | `05_大模型/05_LLM_Architectures/` | `AI_Infrastructure_Trends_2026.md` |
-| **Reasoning** | `05_大模型/05_LLM_Architectures/` | `Prompt_Engineering.md` |
+| **MoE/Scaling** | `05_大模型/05_LLM架构/` | `AI_Infrastructure_Trends_2026.md` |
+| **Reasoning** | `05_大模型/05_LLM架构/` | `Prompt_Engineering.md` |
 | **AI for Science** | `13_AI_Applications_Industry/` | `AI_Applications_Industry.md` |
-| **评估基准** | `08_模型评估/` | `15_智能体/07_Agent_Evaluation/`, `Benchmarking/` |
-| **特征工程** | `02_机器学习/05_Feature_Engineering/` | `Feature_Engineering.md` |
+| **评估基准** | `08_模型评估/` | `15_智能体/07_Agent评估/`, `Benchmarking/` |
+| **特征工程** | `02_机器学习/05_特征工程/` | `Feature_Engineering.md` |
 | **安全/可解释** | `17_伦理安全/` | `AI_Safety_RedTeaming/`, `AI_Security_2026/`, `Value_Alignment/` |
-| **具身智能/VLA** | `06_强化学习/05_Robotics_Embodied_AI/` | `VLA_Models_2026.md`, `Embodied_AI_Complete_2026.md` |
-| **评估** | `15_智能体/07_Agent_Evaluation/` | `Agent_Harness_Complete_2026.md`, `Benchmarking/`, `Metrics/` |
+| **具身智能/VLA** | `06_强化学习/05_机器人与具身智能/` | `VLA_Models_2026.md`, `Embodied_AI_Complete_2026.md` |
+| **评估** | `15_智能体/07_Agent评估/` | `Agent_Harness_Complete_2026.md`, `Benchmarking/`, `Metrics/` |
 | **基础设施** | `12_架构基建/` | `AI_Infrastructure_2026.md`, `AI_System_Architecture_2026.md` |
 | **LLMOps** | `AI运维/` | `AI_Ops_2026.md`, `MLflow_Deep_Dive.md` |
 | **Vibe Coding** | `AI编程/Methodology/` | `Vibe_Coding_Methodology.md`, `Vibe_Coding_Production_Practices.md`, `Vibe_Coding_for_dummy.md` |
@@ -835,16 +835,16 @@ Q: MCP 协议详解
 A: 06_强化学习/AI_Agents/Agent_Protocols_Detail.md
 
 Q: 多模态模型架构
-A: 05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026.md
+A: 05_大模型/10_多模态模型/Multimodal_Architectures_2026.md
 
 Q: VLA 模型技术
-A: 06_强化学习/05_Robotics_Embodied_AI/VLA_Models_2026.md
+A: 06_强化学习/05_机器人与具身智能/VLA_Models_2026.md
 
 Q: JEPA 世界模型
-A: 03_深度学习/07_World_Models/JEPA_Architecture_2026.md
+A: 03_深度学习/07_世界模型/JEPA_Architecture_2026.md
 
 Q: 具身智能完整指南
-A: 06_强化学习/05_Robotics_Embodied_AI/Embodied_AI_Complete_2026.md
+A: 06_强化学习/05_机器人与具身智能/Embodied_AI_Complete_2026.md
 
 Q: Vibe Coding 方法论
 A: AI编程/Methodology/Vibe_Coding_Methodology.md
@@ -853,7 +853,7 @@ Q: Vibe Coding 生产环境实践
 A: AI编程/Methodology/Vibe_Coding_Production_Practices.md
 
 Q: Agent 评估框架
-A: 15_智能体/07_Agent_Evaluation/Agent_Harness_Complete_2026.md
+A: 15_智能体/07_Agent评估/Agent_Harness_Complete_2026.md
 
 Q: Agent 未来发展
 A: 06_强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030.md
@@ -865,34 +865,34 @@ Q: RAG 系统设计
 A: 14_RAG系统/
 
 Q: 强化学习基础
-A: 06_强化学习/01_RL_Foundations/
+A: 06_强化学习/01_强化学习基础/
 
 Q: 计算机视觉目标检测
-A: 04_计算机视觉/02_Image_Classification_Detection/
+A: 04_计算机视觉/02_图像分类与检测/
 
 Q: 图像分割 (SAM)
-A: 04_计算机视觉/03_Segmentation/
+A: 04_计算机视觉/03_图像分割/
 
 Q: Coding Agent / AI 编码助手
 A: AI编程/Tools/AI_Coding_Assistants_2026.md
 
 Q: LLM 微调 (LoRA/QLoRA)
-A: 05_大模型/07_Fine_tuning_Techniques/
+A: 05_大模型/07_微调技术/
 
 Q: 视频生成
-A: 04_计算机视觉/07_Video_Generation/Video_Generation_2026.md
+A: 04_计算机视觉/07_视频生成/Video_Generation_2026.md
 
 Q: 分布式训练
-A: 01_数学基础/09_Distributed_Systems/
+A: 01_数学基础/09_分布式系统/
 
 Q: AI 对齐与价值观
-A: 17_伦理安全/02_Value_Alignment/
+A: 17_伦理安全/02_价值对齐/
 
 Q: LLM 评估基准 (MMLU/HumanEval)
-A: 08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md
+A: 08_模型评估/01_评估基础/Model_Evaluation.md
 
 Q: 特征工程
-A: 02_机器学习/05_Feature_Engineering/Feature_Engineering.md
+A: 02_机器学习/05_特征工程/Feature_Engineering.md
 
 Q: AI for Science (药物研发/蛋白质)
 A: 13_AI_Applications_Industry/AI_Applications_Industry.md
@@ -901,7 +901,7 @@ Q: 隐私计算/联邦学习
 A: 02_机器学习/ (Federated_Learning 相关)
 
 Q: Agent 评估框架 (RAPS/基准测试)
-A: 15_智能体/07_Agent_Evaluation/
+A: 15_智能体/07_Agent评估/
 ```
 
 ---

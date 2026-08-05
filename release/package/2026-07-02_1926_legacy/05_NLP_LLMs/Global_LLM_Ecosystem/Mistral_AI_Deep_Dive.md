@@ -695,7 +695,7 @@ Mamba (State Space Model):
 
 ### 6.2 Codestral Mamba 7B 规格
 
-| 维度 | Codestral 22B (Transformer) | Codestral Mamba 7B (SSM) |
+| 维度 | Codestral 22B (01_Transformer) | Codestral Mamba 7B (SSM) |
 |------|---------------------------|-------------------------|
 | 参数 | 22B | 7B |
 | 架构 | Dense Transformer | **Mamba (SSM)** |

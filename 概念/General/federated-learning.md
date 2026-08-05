@@ -8,7 +8,7 @@ relationships:
   - target: "概念/bayesian-methods"
     type: related_to
 sources:
-  - 17_伦理安全/11_Federated_Learning
+  - 17_伦理安全/11_联邦学习
 summary: "联邦学习让多个参与方在不共享原始数据的前提下协作训练模型——数据不动模型动。核心算法FedAvg/FedProx，隐私保护用差分隐私+安全聚合。"
 provenance:
   extracted: 0.45
@@ -71,7 +71,7 @@ name_zh: "联邦学习"
 
 ## Related
 
-- [[17_伦理安全/11_Federated_Learning/README]] — 联邦学习深度解析
+- [[17_伦理安全/11_联邦学习/README]] — 联邦学习深度解析
 - [[概念/neural-networks]] — 神经网络基础
 - [[概念/bayesian-methods]] — 贝叶斯方法（不确定性量化）
 

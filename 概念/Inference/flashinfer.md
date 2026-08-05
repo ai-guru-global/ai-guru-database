@@ -200,4 +200,4 @@ output = flashinfer.merge_state(output_shared, output_local)
 - [[概念/Inference/continuous-batching]] — Continuous Batching
 - [[概念/Inference/sglang]] — SGLang 推理引擎
 - [[概念/Inference/prefix-caching]] — 前缀缓存
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析

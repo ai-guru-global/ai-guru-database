@@ -71,17 +71,16 @@ python -m http.server 8080
 - [[94_可视化/Training_Monitoring_Visualization|训练监控可视化 (Training Monitoring Visualization)]]
 - [[94_可视化/Visualization_for_dummy|AI 可视化 - 小白版]]
 - [[94_可视化/AI_System_Dashboard|AI 系统监控仪表盘]]
-- [[94_可视化/README_for_dummy|94 Visualization — 小白版 📊]]
+- [[94_可视化/README|94 Visualization — 小白版 📊]]
 - [[94_可视化/Model_Interpretability_Visualization|模型可解释性可视化]]
 
 - [[前端应用/atlas/README]] — AI Guru Knowledge Atlas（D3） (共享: charts, dashboards, data-viz, visualization)
 - [[前端应用/atlas/docs/performance]] — 性能审计报告（Lighthouse） (共享: charts, dashboards, data-viz, visualization)
-- [[94_可视化/Training_Viz/Training_Monitoring_Visualization.md|Training_Monitoring_Visualization]]
+- [[94_可视化/Training_Viz/07_训练_监控_可视化.md|Training_Monitoring_Visualization]]
 - [[94_可视化/Best_Practices/Visualization_for_dummy.md|Visualization_for_dummy]]
-- [[94_可视化/System_Viz/AI_System_Dashboard.md|AI_System_Dashboard]]
-- [[94_可视化/README_for_dummy.md|README_for_dummy]]
-- [[94_可视化/Evaluation_Viz/Model_Interpretability_Visualization.md|Model_Interpretability_Visualization]]
-
+- [[94_可视化/System_Viz/01_AI_系统_仪表盘.md|AI_System_Dashboard]]
+- [[94_可视化/README|README_for_dummy]]
+- [[94_可视化/Evaluation_Viz/06_模型_可解释性_可视化.md|Model_Interpretability_Visualization]]
 
 ## 核心知识体系
 
@@ -103,16 +102,6 @@ python -m http.server 8080
 | 可解释性 | 高 | 低 | 极低 | 按合规要求 |
 | 部署难度 | 简单 | 中等 | 复杂 | 按运维能力 |
 | 迭代速度 | 快 | 中 | 慢 | 按业务节奏 |
-
-## 学习路径建议
-
-| 阶段 | 内容 | 时间 | 产出 |
-|------|------|------|------|
-| 入门 | 核心概念+基础数学+直觉建立 | 1-2周 | 理解基本框架 |
-| 基础 | 经典算法+代码实现+实验验证 | 2-4周 | 能独立实现 |
-| 进阶 | 深度模型+论文阅读+性能优化 | 4-8周 | 能解决复杂问题 |
-| 实战 | 生产级项目+系统设计+团队协作 | 2-3月 | 独立负责项目 |
-| 精通 | 前沿研究+架构创新+技术领导 | 持续 | 技术影响力 |
 
 ## 常见问题FAQ
 
@@ -159,16 +148,6 @@ python -m http.server 8080
 - [ ] 了解最新技术趋势和开放问题
 - [ ] 知识已文档化沉淀
 
-## 进阶知识拓展
-
-| 专题 | 深度内容 | 应用场景 | 参考资源 |
-|------|----------|----------|----------|
-| 核心原理 | 底层机制和数学推导 | 深度理解+优化 | 经典教材+论文 |
-| 工程实践 | 生产级实现细节 | 项目落地 | 开源项目+案例 |
-| 性能优化 | 瓶颈分析+调优策略 | 提升效率 | 性能分析工具 |
-| 安全合规 | 安全威胁+防护措施 | 风险管控 | 安全框架+标准 |
-| 前沿研究 | 最新进展+未来方向 | 技术预判 | 顶会论文+博客 |
-
 ## 实践操作指南
 
 | 步骤 | 行动 | 工具/方法 | 预期产出 |
@@ -188,41 +167,3 @@ python -m http.server 8080
 | 忽视基础知识 | 基础决定上限 | 定期回顾基础 |
 | 盲目追新 | 新技术需要验证 | 评估后再采用 |
 | 单打独斗 | 协作效率更高 | 积极参与社区 |
-
-## 深度对比分析
-
-| 对比维度 | 传统方法 | 现代方法 | AI原生方法 | 趋势判断 |
-|----------|----------|----------|------------|----------|
-| 效率 | 人工为主 | 半自动化 | 全自动化 | AI原生是方向 |
-| 质量 | 依赖经验 | 标准化流程 | 数据驱动 | 数据驱动更可靠 |
-| 成本 | 高人力成本 | 工具降低成本 | 边际成本趋零 | 长期成本最优 |
-| 扩展性 | 线性增长 | 亚线性 | 指数级 | 指数级扩展 |
-| 创新速度 | 慢(月级) | 中(周级) | 快(天级) | 持续加速 |
-
-## 知识图谱关联
-
-| 关联主题 | 关系类型 | 参考路径 |
-|----------|----------|----------|
-| 基础理论 | 前置依赖 | 相关基础目录 |
-| 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
-
-## 版本更新记录
-
-| 版本 | 日期 | 变更 |
-|------|------|------|
-| v1.0 | 2025-01 | 初始创建 |
-| v1.1 | 2025-06 | 内容补充 |
-| v2.0 | 2026-01 | 全面扩写 |
-| v2.1 | 2026-07 | 质量强化+结构化增强 |
-
-## 快速自检
-
-- [ ] 核心概念能向他人清晰解释
-- [ ] 已完成至少一个实践项目
-- [ ] 了解主流方案优劣势和适用场景
-- [ ] 掌握常见问题排查方法
-- [ ] 关注最新技术动态
-- [ ] 知识已文档化沉淀

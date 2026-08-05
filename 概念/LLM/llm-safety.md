@@ -139,9 +139,9 @@ output_safe = guard.check_output(
 
 - [[概念/Safety/prompt-injection|Prompt 注入]] — 主要攻击向量
 - [[概念/Agent/tool-calling-safety|工具调用安全]] — Agent 安全核心
-- [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming|红队测试]] — 安全评估方法
-- [[17_伦理安全/Guardrails/Guardrails|Guardrails]] — 推理层护栏
-- [[17_伦理安全/LLM_Security_Defense_Guide|LLM 安全防御指南]] — 详细防御策略
+- [[17_伦理安全/04_AI安全与红队/02_AI安全_RedTeaming|红队测试]] — 安全评估方法
+- [[17_伦理安全/04_AI安全与红队/03_Guardrails_生产_指南|Guardrails]] — 推理层护栏
+- [[17_伦理安全/06_系统安全/06_LLM_安全_Defense_指南|LLM 安全防御指南]] — 详细防御策略
 - [[概念/LLM/large-language-model|LLM]] — 安全的基础对象
 
 ## 2026 LLM 安全威胁全景

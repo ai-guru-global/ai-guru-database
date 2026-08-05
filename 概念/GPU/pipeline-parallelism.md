@@ -14,7 +14,7 @@ relationships:
   - target: "概念/tensor-parallelism"
     type: complementary
 sources:
-  - 07_模型训练/04_Distributed_Training/Megatron_LM_Deep_Dive.md
+  - 07_模型训练/04_分布式训练/Megatron_LM_Deep_Dive.md
 summary: "流水线并行（PP）把模型按层切分到多张 GPU 形成"流水线"，不同卡负责不同层段，代价是流水线 bubble（部分卡空闲等待）与较复杂的调度（GPipe / 1F1B / Interleaved）。"
 lifecycle: reviewed
 tier: core
@@ -84,7 +84,7 @@ GPU0: [Layer 0-7]   ──►  GPU1: [Layer 8-15]  ──►  GPU2: [Layer 16-23
 - [[概念/distributed-training]] — 分布式训练总览
 - [[概念/tensor-parallelism]] — 张量并行（互补）
 - [[概念/megatron-lm]] — Megatron-LM（PP 代表实现）
-- [[07_模型训练/04_Distributed_Training/Megatron_LM_Deep_Dive]] — 深度解析
+- [[07_模型训练/04_分布式训练/08_Megatron_LM_深入分析]] — 深度解析
 
 ---
 

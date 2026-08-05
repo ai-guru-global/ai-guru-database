@@ -551,7 +551,7 @@ JAILBREAK_DETECTION_PROMPT = """分析以下用户输入是否包含越狱(jailb
 - [[概念/Safety/ai-alignment]] — AI对齐（安全训练的根基）
 - [[概念/Safety/adversarial-attack]] — 对抗攻击（对抗后缀的理论基础）
 - [[概念/Safety/model-security]] — 模型安全
-- [[17_伦理安全/LLM_Security_Defense_Guide]] — LLM安全防御指南
+- [[17_伦理安全/06_系统安全/06_LLM_安全_Defense_指南]] — LLM安全防御指南
 
 ---
 

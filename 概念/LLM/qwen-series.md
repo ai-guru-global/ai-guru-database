@@ -142,7 +142,7 @@ name_zh: "Qwen 系列模型架构演进"
 
 ## See Also (深度专题)
 
-- [[../../05_大模型/15_Chinese_LLM_Ecosystem/Qwen_Deep_Dive|Qwen (通义千问) 深度解析]] — Qwen 系列架构演进、长上下文与多模态能力的技术分析
+- [[05_大模型/15_中国LLM生态/19_Qwen_深入分析|Qwen (通义千问) 深度解析]] — Qwen 系列架构演进、长上下文与多模态能力的技术分析
 
 ---
 
@@ -180,7 +180,7 @@ name_zh: "Qwen 系列模型架构演进"
 
 - [[概念/LLM/llama-series|Llama 系列]]
 - [[概念/LLM/gpt-series-evolution|GPT 系列演进]]
-- [[05_大模型/15_Chinese_LLM_Ecosystem/Qwen_Deep_Dive|Qwen 深度解析]]
+- [[05_大模型/15_中国LLM生态/19_Qwen_深入分析|Qwen 深度解析]]
 
 ## Qwen3 模型矩阵 (2026)
 

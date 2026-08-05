@@ -180,7 +180,7 @@ safety_violation_rate: < 0.1%     # 安全违规 ≤ 0.1%
 
 ---
 
-**参见**：[[Prometheus_Grafana_Deep_Dive]] · [[11_模型运维/08_Observability/LLM_Observability]] · [[概念/prometheus]] · [[概念/grafana]] · [[13_运维/README|运维]] · [[治理/cheatsheets/cheatsheet-llm-inference]]
+**参见**：[[11_模型运维/08_可观测性/15_Prometheus_Grafana_深入分析]] · [[11_模型运维/08_可观测性/10_llm_observability_aiops]] · [[概念/prometheus]] · [[概念/grafana]] · [[13_运维/README|运维]] · [[治理/cheatsheets/cheatsheet-llm-inference]]
 
 ---
 

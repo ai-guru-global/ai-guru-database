@@ -16,7 +16,7 @@ relationships:
   - target: "概念/llm-inference"
     type: applied_in
 sources:
-  - 10_部署推理/05_Quantization/
+  - 10_部署推理/04_模型量化/
 summary: "AWQ（Activation-aware Weight Quantization）是 MIT 韩松团队 2023 年提出的 LLM INT4 量化方法，通过保护"显著权重"（基于激活分布）实现 4-bit 量化下接近 FP16 的精度，是 GPTQ 的主要替代方案。"
 lifecycle: reviewed
 tier: core
@@ -160,7 +160,7 @@ llm = LLM(
 - **duo_scaling 网格搜索**：L148 `duo_scaling: bool | Literal["both"] = True`，搜索平滑尺度时可同时用权重+激活计算缩放因子，`"both"` 时各搜一半取优。
 - **配方化使用**：通过 `mappings` 声明 smooth_layer/balance_layers 正则（如 `re:.*q_proj`），由 `oneshot()`（`entrypoints/oneshot.py` L261）驱动逐层校准。
 
-详见 [[10_部署推理/05_Quantization/Quantization_Techniques_2026]] 第 8 节。
+详见 [[10_部署推理/04_模型量化/04_量化_技术_2026]] 第 8 节。
 
 ## Related
 
@@ -168,7 +168,7 @@ llm = LLM(
 - [[概念/quantization]] — 量化总览
 - [[概念/model-compression]] — 模型压缩
 - [[概念/smoothquant]] — SmoothQuant INT8 量化
-- [[10_部署推理/05_Quantization]] — 量化章节
+- [[10_部署推理/05_模型量化]] — 量化章节
 - [[概念/pruning]] — 剪枝
 
 ---

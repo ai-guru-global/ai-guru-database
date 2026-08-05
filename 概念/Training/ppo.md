@@ -16,7 +16,7 @@ relationships:
   - target: "概念/reinforcement-learning"
     type: belongs_to
 sources:
-  - 07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide.md
+  - 07_模型训练/06_对齐研究/TRL_RLHF_DPO_Guide.md
   - 06_强化学习/
 summary: "PPO（Proximal Policy Optimization）是 OpenAI 2017 提出的策略梯度算法，通过 clip 机制稳定训练；是 RLHF 时代对齐 LLM 的事实标准算法（DPO / GRPO 等简化方法都源于 PPO 思想）。"
 lifecycle: reviewed
@@ -160,7 +160,7 @@ Step 3: PPO 优化 Policy
 - **免 Critic 替代者入位**：`trainer/rloo_trainer.py` L1513-1544 用 leave-one-out 组内均值基线替代价值网络；`trainer/grpo_trainer.py` 用组内标准化优势——两者都省掉了 PPO 的 Critic，显存减半。
 - **PPO 的 clip 思想仍在**：GRPO 的 `_compute_loss`（`trainer/grpo_trainer.py` L2991）保留了 PPO 式重要性采样比率截断（clip）目标——PPO 没有消失，而是以简化形态延续。
 
-详见 [[07_模型训练/06_Alignment/RLHF_at_Scale_2026]] 第 13 节。
+详见 [[07_模型训练/06_对齐训练/04_RLHF_at_Scale_2026]] 第 13 节。
 
 ## Related
 

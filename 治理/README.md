@@ -44,7 +44,7 @@ name_zh: "项目治理"
 
 | 职能 | 说明 | 核心载体 |
 |------|------|---------|
-| **导航与索引** | 为知识库的所有内容提供入口和地图 | `治理/hot.md`、`治理/ROADMAP.md`、各 `index.md` |
+| **导航与索引** | 为知识库的所有内容提供入口和地图 | `治理/hot.md`、`治理/ROADMAP.md`、各 `索引.md` |
 | **规范与约定** | 统一文档格式、目录结构、导入流程、协作规则 | `Document_Templates.md`、`Import_Guide.md`、`AGENTS.md` |
 | **质量保障** | 持续评估内容完整性、概念覆盖度、标签一致性 | `_quality-assessment.md`、`_lint-report.md`、`_content-audit-*` |
 | **规划与路线** | 记录项目发展方向、季度目标和执行状态 | `治理/ROADMAP.md`、`plan/` |
@@ -141,7 +141,7 @@ flowchart LR
 | [cheatsheet-rag-systems](./cheatsheets/cheatsheet-rag-systems.md) | RAG 系统构建 |
 | [cheatsheet-security-defense](./cheatsheets/cheatsheet-security-defense.md) | 安全与防御 |
 
-详见: [cheatsheets/index.md](./cheatsheets/index.md)
+详见: [cheatsheets/索引.md](./cheatsheets/索引.md)
 
 ---
 
@@ -182,7 +182,7 @@ flowchart LR
 |------|------|
 | [治理/hot.md](./hot.md) | **最近新增与高价值页面**——记录最新的内容更新、概念卡片和大白话专题页，是了解"最近发生了什么"的入口 |
 | [治理/ROADMAP.md](./ROADMAP.md) | **项目路线图**——年度/季度规划、愿景、任务状态跟踪 |
-| [index.md](./index.md) | 治理目录的自动生成索引页 |
+| [索引.md](./索引.md) | 治理目录的自动生成索引页 |
 | [log.md](./log.md) | 项目变更日志，记录重大结构和内容变动 |
 
 ### 规范与约定类
@@ -202,9 +202,9 @@ flowchart LR
 
 ## _meta 元文件说明
 
-> **📁 位置变更**: 所有 `_` 开头的元文件已归组到 [_meta/](./_meta/index.md) 子目录。详见 [_meta/index.md](./_meta/index.md)。
+> **📁 位置变更**: 所有 `_` 开头的元文件已归组到 [_meta/](./_meta/索引.md) 子目录。详见 [_meta/索引.md](./_meta/索引.md)。
 
-以 `_` 开头的文件是**自动生成或半自动维护的元文件**，记录知识库的健康状态、审计结果和评估报告。它们不面向终端读者，而是面向项目维护者和 AI 工具链。所有元文件统一存放在 [`_meta/`](./_meta/index.md) 子目录下。
+以 `_` 开头的文件是**自动生成或半自动维护的元文件**，记录知识库的健康状态、审计结果和评估报告。它们不面向终端读者，而是面向项目维护者和 AI 工具链。所有元文件统一存放在 [`_meta/`](./_meta/索引.md) 子目录下。
 
 > **命名约定**: `_` 前缀 = 元文件 / 内部报告。带日期后缀的（如 `_lint-report-2026-06-30.md`）是历史快照；不带日期的（如 `_lint-report.md`）是当前版本。
 
@@ -319,7 +319,7 @@ flowchart LR
 
 如果你需要快速查阅某个技术领域：
 
-1. 进入 [cheatsheets/](./cheatsheets/index.md) 选择对应速查表
+1. 进入 [cheatsheets/](./cheatsheets/索引.md) 选择对应速查表
 2. 在 [notes/AI_Full_Stack_Concepts.md](./notes/AI_Full_Stack_Concepts.md) 中搜索术语
 3. 在 [notes/AI_Concept_Knowledge_Graph.md](./notes/AI_Concept_Knowledge_Graph.md) 中探索概念关系
 
@@ -339,7 +339,7 @@ flowchart LR
 ```
 治理/
 ├── README.md                          ← 本文件（治理层总入口）
-├── index.md                           ← 自动生成索引
+├── 索引.md                           ← 自动生成索引
 ├── AGENTS.md                          ← AI Agent 协作指令（含生产安全规范）
 ├── 治理/CONTRIBUTING.md                    ← 贡献指南
 ├── 治理/ROADMAP.md                         ← 项目路线图
@@ -352,7 +352,7 @@ flowchart LR
 ├── knowledge_base_metadata.json       ← 知识库元数据（JSON）
 │
 ├── _meta/                             ← 元文件归组（26 个）
-│   ├── index.md                       ← _meta 索引
+│   ├── 索引.md                       ← _meta 索引
 │   ├── _directory-conventions.md      ← 目录结构规范
 │   ├── _lint-report*.md               ← Lint 报告
 │   ├── _quality-assessment.md         ← 质量评估
@@ -365,7 +365,7 @@ flowchart LR
 │   └── ...                            ← 其他 _meta 元文件
 │
 ├── cheatsheets/                       ← 速查表（8 张）
-│   ├── index.md
+│   ├── 索引.md
 │   ├── cheatsheet-agent-design.md
 │   ├── cheatsheet-evaluation.md
 │   ├── cheatsheet-fine-tuning.md
@@ -377,7 +377,7 @@ flowchart LR
 │
 ├── notes/                             ← 知识图谱与概念
 │   ├── README.md
-│   ├── index.md
+│   ├── 索引.md
 │   ├── AI_Concept_Knowledge_Graph.md  ← ~1,300 概念节点
 │   ├── AI_Full_Stack_Concepts.md      ← ~500 术语条目
 │   ├── KNOWLEDGE_BASE.md
@@ -385,7 +385,7 @@ flowchart LR
 │
 ├── plan/                              ← 项目规划
 │   ├── README.md
-│   ├── index.md
+│   ├── 索引.md
 │   └── README_for_dummy.md
 │
 ├── *_evaluation_*.md                  ← 正式评估报告（非 _meta）
@@ -399,7 +399,7 @@ flowchart LR
 | 日期 | 变更 |
 |------|------|
 | 2026-07-11 | 创建 `治理/README.md`，整合治理层总览、架构图、导航和使用指南 |
-| 2026-07-09 | 更新 `index.md`，新增分析洞察和工作日志导航 |
+| 2026-07-09 | 更新 `索引.md`，新增分析洞察和工作日志导航 |
 | 2026-07-01 | 完成全量内容审计（`_content-audit-2026-07-01.md`），制定内容补充计划 |
 | 2026-06-30 | 执行 Lint 检查，生成 `_lint-report-2026-06-30.md` |
 | 2026-06-25 | 清理已完成的规划文档，归档历史计划；21 个概念大白话 + 26 张概念卡片上线 |

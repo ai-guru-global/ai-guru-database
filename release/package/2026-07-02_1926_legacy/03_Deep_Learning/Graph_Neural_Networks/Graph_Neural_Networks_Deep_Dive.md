@@ -492,7 +492,7 @@ flowchart TB
 
 ```python
 class GraphGPSLayer(nn.Module):
-    """GraphGPS: 统一局部 (MPNN) + 全局 (Transformer) 的图学习"""
+    """GraphGPS: 统一局部 (MPNN) + 全局 (01_Transformer) 的图学习"""
     def __init__(self, dim, mpnn_layer, n_heads=4):
         super().__init__()
         # 局部路径: MPNN

@@ -12,7 +12,7 @@ relationships:
     type: improved_by
   - target: "[[概念/Safety/ai-ethics]]"
     type: implements
-  - target: "[[06_强化学习/03_RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive|RLHF_Alignment]]"
+  - target: "[[06_强化学习/03_RLHF与对齐/04_RLHF_DPO_GRPO_深入分析|RLHF_Alignment]]"
     type: methodology_for
 sources:
   - AI入门/AI_Ethics_Society.md
@@ -240,7 +240,7 @@ for iteration in range(N):
     kl_penalty = beta * kl_divergence(policy, sft_model)
     final_rewards = rewards - kl_penalty
 
-    # 4. PPO 更新 (参见 [[06_强化学习/02_Deep_RL/PPO_Deep_Dive]])
+    # 4. PPO 更新 (参见 [[06_强化学习/02_深度强化学习/10_PPO_深入分析]])
     ppo_update(policy, prompts, responses, final_rewards)
 ```
 
@@ -743,8 +743,8 @@ class ConstitutionalAI:
 
 ## Related
 
-- [[06_强化学习/03_RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive|RLHF_Alignment]] — RLHF对齐（详细技术文档）
-- [[06_强化学习/02_Deep_RL/PPO_Deep_Dive]] — PPO（RLHF中的RL算法）
+- [[06_强化学习/03_RLHF与对齐/04_RLHF_DPO_GRPO_深入分析|RLHF_Alignment]] — RLHF对齐（详细技术文档）
+- [[06_强化学习/02_深度强化学习/10_PPO_深入分析]] — PPO（RLHF中的RL算法）
 - [[概念/Safety/jailbreak]] — 越狱攻击（测试对齐的鲁棒性）
 - [[概念/Safety/guardrails]] — AI护栏（运行时对齐补充）
 - [[概念/Safety/red-teaming]] — 红队测试（评估对齐效果）

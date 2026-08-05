@@ -9,11 +9,11 @@ relationships:
     type: extends
   - target: "概念/gpu-interconnect"
     type: related_to
-  - target: "10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy"
+  - target: "10_部署推理/03_推理优化/Inference_Terms_for_dummy"
     type: simplified_by
 sources:
   - 12_架构基建/AI_Stack_Deep_Dive.md
-  - 10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy.md
+  - 10_部署推理/03_推理优化/Inference_Terms_for_dummy.md
 summary: RDMA (Remote Direct Memory Access) 允许 GPU 间直接内存访问绕过 CPU/OS，RoCE (RDMA over Converged Ethernet) 将其承载在以太网上。AI Stack 16 卡版机间通信带宽达 1.6T，采用 RoCE + 拓扑感知路由实现低时延无拥塞通信。
 provenance:
   extracted: 0.85
@@ -108,7 +108,7 @@ AI Stack 16 卡版网络
 - [[概念/heterogeneous-gpu]] — 异构 GPU 集群
 - [[概念/distributed-systems]] — 分布式系统
 - [[概念/training-inference-unification]] — 训推一体
-- [[12_架构基建/AI_Stack_Deep_Dive]] — 阿里云 AI Stack
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — 阿里云 AI Stack
 
 ---
 

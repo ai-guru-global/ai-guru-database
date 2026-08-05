@@ -12,7 +12,7 @@ relationships:
   - target: "概念/Inference/kv-cache"
     type: optimizes
 sources:
-  - 10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy.md
+  - 10_部署推理/03_推理优化/Inference_Terms_for_dummy.md
   - "https://arxiv.org/abs/2305.13245"  # GQA paper
 summary: GQA 让多个 query 头共享同一组 K/V 头，折中 MHA 的精度和 MQA 的 KV Cache 压缩，是 Llama 3、Qwen 2、Mistral 等 2024-2026 主流模型的默认注意力机制。KV Cache 降至 MHA 的 1/4~1/8，decode 吐吐量提升 30-50%。
 provenance:
@@ -178,7 +178,7 @@ print(f"MHA KV Cache: {mha_bytes / 1e9:.1f} GB")  # ~85.9 GB
 - [[概念/LLM/multi-head-latent-attention]] — MLA
 - [[概念/Inference/kv-cache]] — KV Cache
 - [[概念/Inference/kv-cache-compression]] — KV Cache 压缩
-- [[10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话 解释]]
+- [[10_部署推理/03_推理优化/Inference_Terms_for_dummy|推理性能术语大白话 解释]]
 
 ## GQA 显存计算示例
 

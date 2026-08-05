@@ -21,13 +21,13 @@ tier: supporting
 
 | 角色 | 文档 | 核心关注点 |
 |------|------|-----------|
-| **架构师** | [架构设计指南](./architecture/index.md) | 顶层设计、高可用、安全架构 |
-| **Agent 开发工程师** | [研发指南](./development/index.md) | 工具开发、Agent 实现、调试部署 |
-| **语料工程师** | [语料工程指南](./corpus/index.md) | 训练语料、Prompt 工程、Fine-tuning |
-| **测评工程师** | [测试指南](./testing/index.md) | 评测框架、Benchmark、质量度量 |
-| **产品经理** | [产品管理指南](./product/index.md) | 需求管理、Roadmap、成功指标 |
-| **运维工程师** | [运维指南](./operations/index.md) | 日常运维、故障处理、性能调优 |
-| **集成测试工程师** | [集成测试指南](./integration_testing/index.md) | E2E 测试、混沌工程、灰度发布 |
+| **架构师** | [架构设计指南](./architecture/索引.md) | 顶层设计、高可用、安全架构 |
+| **Agent 开发工程师** | [研发指南](./development/索引.md) | 工具开发、Agent 实现、调试部署 |
+| **语料工程师** | [语料工程指南](./corpus/索引.md) | 训练语料、Prompt 工程、Fine-tuning |
+| **测评工程师** | [测试指南](./testing/索引.md) | 评测框架、Benchmark、质量度量 |
+| **产品经理** | [产品管理指南](./product/索引.md) | 需求管理、Roadmap、成功指标 |
+| **运维工程师** | [运维指南](./operations/索引.md) | 日常运维、故障处理、性能调优 |
+| **集成测试工程师** | [集成测试指南](./integration_testing/索引.md) | E2E 测试、混沌工程、灰度发布 |
 
 ---
 
@@ -90,10 +90,10 @@ Cloud Ops Agent 文档体系
 ---
 
 ### 专项文档
-- [语料工程](./corpus/index.md) - AI 训练数据
-- [产品管理](./product/index.md) - 产品规划
-- [集成测试](./integration_testing/index.md) - E2E 测试
-- [运维指南](./operations/index.md) - 运维实践
+- [语料工程](./corpus/索引.md) - AI 训练数据
+- [产品管理](./product/索引.md) - 产品规划
+- [集成测试](./integration_testing/索引.md) - E2E 测试
+- [运维指南](./operations/索引.md) - 运维实践
 
 ### 移动端产品
 - [Mobile AI Ops 设计](../Mobile_AI_Ops_Design.md) - 基于 Google Edge Gallery 的手拍即运维产品设计
@@ -102,15 +102,15 @@ Cloud Ops Agent 文档体系
 3. [Cloud_Product_Ops_2026.md](../Cloud_Product_Ops_2026.md) - 完整架构
 
 ### 核心文档
-- [架构设计](./architecture/index.md) - 系统架构详解
-- [研发指南](./development/index.md) - 开发规范
-- [测试指南](./testing/index.md) - 评测体系
+- [架构设计](./architecture/索引.md) - 系统架构详解
+- [研发指南](./development/索引.md) - 开发规范
+- [测试指南](./testing/索引.md) - 评测体系
 
 ### 专项文档
-- [语料工程](./corpus/index.md) - AI 训练数据
-- [产品管理](./product/index.md) - 产品规划
-- [集成测试](./integration_testing/index.md) - E2E 测试
-- [运维指南](./operations/index.md) - 运维实践
+- [语料工程](./corpus/索引.md) - AI 训练数据
+- [产品管理](./product/索引.md) - 产品规划
+- [集成测试](./integration_testing/索引.md) - E2E 测试
+- [运维指南](./operations/索引.md) - 运维实践
 
 ---
 

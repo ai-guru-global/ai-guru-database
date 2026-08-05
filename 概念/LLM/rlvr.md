@@ -357,7 +357,7 @@ Test-Time Compute(推理时多算:Best-of-N / Beam Search / DVTS)
 
 ## 相关链接
 
-- [[05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek R1 技术分析]] — RLVR 的代表应用
+- [[05_大模型/09_推理模型/02_索引|DeepSeek R1 技术分析]] — RLVR 的代表应用
 - [[概念/Training/rlhf|RLHF]] — RLVR 的基础方法
 - [[概念/Training/grpo|GRPO]] — RLVR 常用的优化算法
 - [[概念/LLM/reasoning-models|推理模型]] — RLVR 训练推理模型

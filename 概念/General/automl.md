@@ -10,7 +10,7 @@ relationships:
     type: related_to
   - target: "概念/feature-engineering"
     type: related_to
-sources: [02_机器学习/11_AutoML/AutoML.md]
+sources: [02_机器学习/11_自动机器学习/AutoML.md]
 summary: 自动化机器学习Pipeline，包括自动特征工程、模型选择、超参数优化，降低ML应用门槛。
 provenance:
   extracted: 0.80
@@ -133,9 +133,9 @@ Featuretools 是最流行的自动化特征工程库，核心是**深度特征�
 
 - [[概念/Math/supervised-learning.md|supervised-learning]]
 - [[概念/Math/unsupervised-learning.md|unsupervised-learning]]
-- [[02_机器学习/08_Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
-- [[02_机器学习/08_Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
-- [[02_机器学习/11_AutoML/AutoML.md|AutoML]]
+- [[02_机器学习/08_异常检测/02_anomaly_detection_automl|Anomaly_Detection]]
+- [[02_机器学习/08_异常检测/02_anomaly_detection_automl|Anomaly_Detection_for_dummy]]
+- [[02_机器学习/11_自动机器学习/01_AutoML|AutoML]]
 - [[治理/anomaly-detection-automl|异常检测 × AutoML]] — 自动化异常发现的交叉合成
 
 ---

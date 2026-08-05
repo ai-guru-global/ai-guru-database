@@ -57,7 +57,7 @@ name_zh: "混沌工程"
 
 - [[概念/resilience|Resilience]]
 - [[概念/incident-response|Incident Response]]
-- [[13_运维/02_SRE_Reliability/Chaos_Engineering_for_AI_Systems|AI 系统混沌工程]]
+- [[13_运维/02_SRE与可靠性/06_Chaos_工程_AI|AI 系统混沌工程]]
 
 ---
 

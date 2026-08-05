@@ -77,7 +77,7 @@ name_zh: "寒武纪"
 - [[概念/ascend-npu|Ascend NPU]]
 - [[概念/hygon|Hygon]]
 - [[概念/GPU/cann|CANN]] — 华为昇腾对标软件栈
-- [[10_部署推理/08_Hardware/Chinese_AI_Chip_Inference_Matrix|国产芯片推理矩阵]]
+- [[10_部署推理/05_硬件与算力/02_Chinese_AI_Chip_推理_矩阵|国产芯片推理矩阵]]
 
 ## 2026 寒武纪生态
 

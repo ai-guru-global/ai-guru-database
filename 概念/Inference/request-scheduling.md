@@ -11,10 +11,10 @@ relationships:
     type: optimizes
   - target: "概念/Inference/inference-autoscaling"
     type: related_to
-  - target: "10_部署推理/04_Inference_Performance/Request_Scheduling_for_LLMs"
+  - target: "10_部署推理/03_推理优化/Request_Scheduling_for_LLMs"
     type: deepened_by
 sources:
-  - 10_部署推理/04_Inference_Performance/Request_Scheduling_for_LLMs.md
+  - 10_部署推理/03_推理优化/Request_Scheduling_for_LLMs.md
   - "https://arxiv.org/abs/2309.06180"  # vLLM PagedAttention
 summary: LLM 推理请求调度决定请求顺序、batch 组成、抢占策略，通过 Continuous Batching、Chunked Prefill、SLO-aware 调度等手段提高吞吐并稳定延迟。
 lifecycle: draft
@@ -163,7 +163,7 @@ outputs = llm.generate(
 - [[概念/Inference/paged-attention|PagedAttention]]
 - [[概念/Inference/prefill-decode|Prefill / Decode 阶段]]
 - [[概念/Inference/inference-autoscaling|推理扩缩容]]
-- [[10_部署推理/04_Inference_Performance/Request_Scheduling_for_LLMs|LLM 请求调度]]
+- [[10_部署推理/03_推理优化/14_Request_调度_for_LLMs|LLM 请求调度]]
 
 ## 请求调度策略全景
 

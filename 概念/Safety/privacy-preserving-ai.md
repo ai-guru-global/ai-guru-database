@@ -71,7 +71,7 @@ name_zh: "隐私保护 AI"
 
 - [[概念/Safety/presidio]] — Presidio PII 检测 (共享: pii, privacy)
 - [[概念/Safety/ai-governance]] — AI 治理 (共享: governance, compliance)
-- [[17_伦理安全/10_Privacy_Preserving_AI]] — 隐私保护 AI 专题
+- [[17_伦理安全/10_隐私保护AI]] — 隐私保护 AI 专题
 
 ## 核心知识框架
 
@@ -134,15 +134,6 @@ name_zh: "隐私保护 AI"
 | Maintainability | 可维护性 |
 | Observability | 可观测性 |
 | Reliability | 可靠性 |
-
-## 检查清单
-
-- [ ] 核心概念已理解
-- [ ] 基本操作已掌握
-- [ ] 实践项目已完成
-- [ ] 常见问题能解决
-- [ ] 前沿趋势有关注
-- [ ] 知识已沉淀文档化
 
 ## 进阶内容补充
 

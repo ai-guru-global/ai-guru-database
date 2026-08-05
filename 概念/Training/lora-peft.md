@@ -16,7 +16,7 @@ relationships:
   - target: "概念/rs-lora"
     type: related_to
 sources:
-  - 05_大模型/07_Fine_tuning_Techniques/
+  - 05_大模型/07_微调技术/
   - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "LoRA 通过低秩矩阵分解实现仅微调 <1% 参数，是 LLM 微调的主流方案。QLoRA 结合 4-bit 量化可在单卡 24GB GPU 上微调 70B 模型。"
 provenance:
@@ -225,7 +225,7 @@ W_final = W₀ + B×A
 - **低秩矩阵的真身**：`LoraLayer`（layer.py L100）把 `lora_A`/`lora_B` 存成 `nn.ModuleDict`，`update_layer()`（L153）里 B 零初始化保证起点等价原模型。
 - **替换式注入**：`LoraModel(BaseTuner)`（model.py L88）通过 `inject_adapter()`（`tuners_utils.py` L749）把 `q_proj`/`v_proj` 等 `nn.Linear` 原地换成 `lora.Linear`（layer.py L769）。
 - **合并/撤销**：`merge()`（layer.py L817）`W += B@A*scaling` 实现推理零开销；`unmerge()`（L884）可逆。
-- **变体家族**：同目录 `dora.py`（DoRA）、`variants.py`（rsLoRA）、`tp_layer.py`（张量并行适配）。详见 [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] 第 7 节。
+- **变体家族**：同目录 `dora.py`（DoRA）、`variants.py`（rsLoRA）、`tp_layer.py`（张量并行适配）。详见 [[05_大模型/07_微调技术/09_PEFT_2026|PEFT 2026 完全指南]] 第 7 节。
 
 ---
 
@@ -236,8 +236,8 @@ W_final = W₀ + B×A
 - [[概念/model-compression]] — 模型压缩（量化是 QLoRA 的基础）
 - [[概念/distributed-parallelism]] — 分布式并行（全量微调的替代方案）
 - [[概念/model-training]] — 模型训练（训练流程）
-- [[05_大模型/07_Fine_tuning_Techniques]] — 微调技术详解
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack
+- [[05_大模型/07_微调技术]] — 微调技术详解
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack
 - [[概念/dora]] — DoRA
 - [[概念/rs-lora]] — RS-LoRA
 - [[07_模型训练/Data_and_FineTuning_for_dummy]] — 数据与微调大白话

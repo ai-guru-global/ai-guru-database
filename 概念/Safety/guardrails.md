@@ -584,7 +584,7 @@ return output_result.modified_text or llm_response
 - [[概念/Safety/hallucination]] — 幻觉检测（输出护栏）
 - [[概念/Safety/runtime-security]] — 运行时安全（护栏是其中的组件）
 - [[概念/Safety/ai-alignment]] — AI对齐（训练级安全，与护栏互补）
-- [[17_伦理安全/LLM_Security_Defense_Guide]] — LLM安全防御指南
+- [[17_伦理安全/06_系统安全/06_LLM_安全_Defense_指南]] — LLM安全防御指南
 
 ---
 

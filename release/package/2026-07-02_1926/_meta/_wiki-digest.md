@@ -33,7 +33,7 @@ sources: []
 | 02_Machine_Learning | 19 |
 | 18_Cloud_Ops_Agent | 19 |
 | 19_Ethics_Safety | 18 |
-| 01_Fundamentals | 16 |
+| 01_基础入门 | 16 |
 | 20_AI_Applications_Industry | 16 |
 | 09_Deployment_Inference | 15 |
 | 90_Learn | 14 |

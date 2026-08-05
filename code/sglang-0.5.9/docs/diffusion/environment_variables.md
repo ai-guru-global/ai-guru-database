@@ -1,7 +1,7 @@
 ## Caching Acceleration
 
 These variables configure caching acceleration for Diffusion Transformer (DiT) models.
-SGLang supports multiple caching strategies - see [caching documentation](performance/cache/index.md) for an overview.
+SGLang supports multiple caching strategies - see [caching documentation](performance/cache/索引.md) for an overview.
 
 ### Cache-DiT Configuration
 

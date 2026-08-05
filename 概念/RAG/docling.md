@@ -137,7 +137,7 @@ for table in doc.tables:
 - [[概念/embedding-models]] — 嵌入模型
 - [[概念/reranker]] — 重排序模型
 - [[概念/agentic-rag]] — Agentic RAG
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ## 2026 Docling 生态现状
 

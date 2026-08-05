@@ -160,7 +160,7 @@ curl -X POST http://<ai-stack-ip>:<gateway-port>/v1/chat/completions \
 - [[概念/rbac]] — RBAC 访问控制
 - [[概念/single-tenant-architecture]] — 单租户架构
 - [[概念/model-serving]] — 模型服务
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 

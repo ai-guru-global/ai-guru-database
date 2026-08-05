@@ -1148,11 +1148,11 @@ AB_TESTS = [
 
 | 相关文档 | 说明 |
 |---------|------|
-| [架构设计](../architecture/index.md) | 了解系统架构 |
-| [研发指南](../development/index.md) | 了解如何修复测试发现的问题 |
-| [运维指南](../operations/index.md) | 了解生产环境监控 |
-| [集成测试](./integration_testing/index.md) | 了解端到端测试 |
-| [语料指南](./corpus/index.md) | 了解评估数据集要求 |
+| [架构设计](../architecture/索引.md) | 了解系统架构 |
+| [研发指南](../development/索引.md) | 了解如何修复测试发现的问题 |
+| [运维指南](../operations/索引.md) | 了解生产环境监控 |
+| [集成测试](./integration_testing/索引.md) | 了解端到端测试 |
+| [语料指南](./corpus/索引.md) | 了解评估数据集要求 |
 
 ---
 

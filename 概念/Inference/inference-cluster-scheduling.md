@@ -139,7 +139,7 @@ flowchart LR
 - [[概念/Inference/inference-autoscaling|推理自动扩缩容]]
 - [[概念/Inference/ttft|TTFT]]
 - [[概念/LLM/llm-production-deployment|LLM 生产部署]]
-- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_部署推理/02_推理引擎/29_vLLM_深入分析|vLLM 深度解析]]
 
 ## 集群调度架构全景
 

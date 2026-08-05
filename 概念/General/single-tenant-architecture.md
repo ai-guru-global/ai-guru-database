@@ -115,7 +115,7 @@ AI Stack 单租户架构
 - [[概念/rbac]] — RBAC 访问控制（单租户内部权限管理）
 - [[概念/ai-architecture]] — AI 架构（架构选型）
 - [[概念/model-gateway]] — 模型网关（单租户 API 管理）
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack（单租户实现）
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack（单租户实现）
 
 ---
 

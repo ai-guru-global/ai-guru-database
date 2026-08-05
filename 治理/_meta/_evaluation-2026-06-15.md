@@ -104,8 +104,8 @@ name_zh: "AI Guru 知识库整体内容完整性评估"
 ### 4.1 Frontmatter 问题
 
 - **YAML 语法错误**: 3 个文件因中文引号未转义导致解析失败
-  - `10_部署推理/05_Quantization/Quantization_Techniques_2026.md`
-  - `05_大模型/01_LLM_Fundamentals.md`
+  - `10_部署推理/04_模型量化/Quantization_Techniques_2026.md`
+  - `05_大模型/01_LLM基础.md`
   - `05_大模型/NLP_Fundamentals.md`
 - **空 summary 字段**: 43 个
 - **缺失 category**: 9 个

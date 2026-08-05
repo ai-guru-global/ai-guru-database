@@ -104,7 +104,7 @@ RAGFlow 文档解析流水线
 - [[概念/reranker]] — 重排序模型
 - [[概念/dify]] — Dify LLM 平台
 - [[概念/rag-production-architecture|RAG 生产架构]] — 生产级 RAG 设计
-- [[14_RAG系统/06_RAG_Frameworks/README]] — RAGFlow 深度解析
+- [[14_RAG系统/06_RAG框架/README]] — RAGFlow 深度解析
 
 ---
 

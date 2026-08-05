@@ -11,7 +11,7 @@ release/
 └── package/
     ├── 2026-07-02_1926/         # Latest production export
     │   ├── corpus_manifest.json # Machine-readable metadata
-    │   ├── index.md             # Table of contents (2,193 pages)
+    │   ├── 索引.md             # Table of contents (2,193 pages)
     │   ├── hot.md               # High-traffic pages
     │   ├── README.md            # Agent-facing usage guide
     │   └── ...                  # Wiki pages by directory
@@ -35,7 +35,7 @@ release/scripts/export.sh full --dry-run
 
 Each package contains:
 - **corpus_manifest.json** — page inventory, link stats, tier distribution
-- **index.md** — human-readable table of contents with wikilinks
+- **索引.md** — human-readable table of contents with wikilinks
 - **hot.md** — top 20 most-referenced pages
 - **README.md** — agent-facing instructions for LLM-Wiki consumption
 - All wiki pages with unresolved `[[wikilinks]]` rewritten to plain text

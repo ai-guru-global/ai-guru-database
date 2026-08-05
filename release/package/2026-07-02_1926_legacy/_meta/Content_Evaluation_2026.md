@@ -28,7 +28,7 @@ updated: 2026-05-31
 | 7 | 11_RAG_Systems | 21,334 | 18 |
 | 8 | 07_Model_Training | 20,532 | 8 |
 | 9 | 19_Ethics_Safety | 20,402 | 18 |
-| 10 | 01_Fundamentals | 19,899 | 16 |
+| 10 | 01_基础入门 | 19,899 | 16 |
 | 11 | 00_AI_Introduction | 18,722 | 11 |
 | 12 | 15_Testing | 17,724 | 10 |
 | 13 | 03_Deep_Learning | 16,661 | 11 |

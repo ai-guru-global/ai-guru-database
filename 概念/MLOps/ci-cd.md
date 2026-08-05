@@ -135,7 +135,7 @@ ArgoCD / Flux（监听变化）
 - [[概念/argocd]] — ArgoCD（GitOps 工具）
 - [[概念/policy-as-code]] — Policy as Code 集成
 - [[概念/code-generation-workflow]] — AI 代码生成工作流
-- [[11_模型运维/06_CI_CD/index]] — MLOps CI/CD 章节
+- [[11_模型运维/06_持续集成部署/index]] — MLOps CI/CD 章节
 - [[治理/cheatsheets/cheatsheet-mlops]] — LLMOps 速查表
 
 ---

@@ -99,7 +99,7 @@ kubectl auth can-i get pods --as=system:serviceaccount:monitoring:monitor -A
 - [[概念/rbac|RBAC 基于角色的访问控制]] — ClusterRole 所属的授权模型
 - [[概念/clusterrolebinding|ClusterRoleBinding]] — 集群角色绑定
 - [[概念/serviceaccount|ServiceAccount]] — 服务账户
-- [[12_架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]] — 安全与 RBAC 实践
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析|AI Stack 深度解析]] — 安全与 RBAC 实践
 
 ---
 

@@ -97,7 +97,7 @@ aliases:
 │  │                                                                   │ │
 │  │   Image ──┐                                                       │ │
 │  │   Text ───┼──► Unified Encoder-Decoder ──► Output                │ │
-│  │   Audio ──┤       (Transformer)                                   │ │
+│  │   Audio ──┤       (01_Transformer)                                   │ │
 │  │   Video ──┘                                                       │ │
 │  │                                                                   │ │
 │  │  特点: 统一编码器，端到端训练，模态融合更深                         │ │

@@ -64,23 +64,34 @@ FDE 不只是"实施工程师"——他**既要懂技术，又要懂业务**，*
 
 ### 2.2 现状：2025-2026 大爆发
 
+> ⚠️ **数据更正（2026-08-03 核实）**：早期版本记为「全球 FDE 岗位 600→6000，10 倍增长」，该说法**不准确**。根据 **Indeed** 数据（Business Insider 曾误报「6000%」后已发更正），真实数据为 **643（2025.04）→ 5,330（2026.04），同比 +729%（约 7 倍）**。来源：[Business Insider（含更正声明）](https://www.businessinsider.com/forward-deployed-engineer-jobs-in-demand-2026-5)、[Glocomms](https://www.glocomms.com/en-us/industry-insights/hiring-advice/what-is-a-forward-deployed-engineer)。
+
 | 时间 | 事件 | 影响 |
 |---|---|---|
-| **2024-04** | 全球 FDE 岗位 600+ | 起点 |
-| **2025-04** | 全球 FDE 岗位 6000+ | **10 倍增长** |
-| **2025-09** | OpenAI 启动 **Deployment Company** | 行业里程碑 |
-| **2026-01** | Anthropic 与高盛/黑石合作 | 金融 FDE |
-| **2026-01** | Accenture + Microsoft 成立 FDE 实践 | 咨询 + 科技巨头 |
-| **2026** | 国内 FDE 招聘增长 **42 倍** | 中国市场爆发 |
+| **2025-04** | Indeed 统计全球 FDE 岗位 **643** 个 | 起点基线 |
+| **2026-04** | 全球 FDE 岗位 **5,330** 个（+729%） | 约 7 倍增长 |
+| **2026-05-04** | Anthropic + Blackstone + H&F + Goldman Sachs 成立企业级 AI 服务公司（~$1.5B） | PE+投行+模型公司合体 |
+| **2026-05-11** | OpenAI 启动 **Deployment Company**（TPG 主导，~$4B，收购 Tomoro） | 行业里程碑 |
+| **2026** | Accenture + Microsoft 成立 FDE 实践 | 咨询 + 科技巨头 |
+| **2023→2025** | 国内 FDE 招聘增长 **42 倍**（领英报告口径）⚠️ | 中国市场爆发（见下方说明） |
+
+> ⚠️ **「42 倍」免责声明**：该数据源自 **36 氪援引领英 2026.1《全球劳动力市场趋势洞察报告》**，统计口径为 2023→2025。**未能核到 LinkedIn 原始报告**，且中文译法将 forward deployed 误译为「前端部署」（应为「前线/前沿部署」）。引用时建议注明出处并保留存疑态度。来源：[36 氪](https://36kr.com/p/3839857956817414)。
 
 ### 2.3 招聘市场（2026 北京）
 
-- **AI FDE**：40-70K/月（BOSS 直聘，京津冀大数据中心）
-- **资深 FDE**：70-100K/月
-- **FDE 团队 Lead**：100K+ / 月
-- **OpenAI 风格 FDE**：100K + 美元/年
+> 以下为已核实的中国 FDE 真实岗位与薪资（引自 36 氪、猎聘公开岗位）。**华为、百川的 FDE 岗位本次未核到，不在此列。**
 
-> **结论**：FDE 已经**从硅谷小众角色变成行业标配**。
+| 公司 | 岗位 | 薪资 | 来源 |
+|---|---|---|---|
+| **字节跳动（豆包）** | AI 大模型 FDE | 3.5-7 万/月 × 15 薪（最高~105 万年薪） | [36 氪](https://36kr.com/p/3839857956817414) |
+| **蚂蚁数科** | B 端 FDE | 4-6 万/月 × 15 薪 | 36 氪 |
+| **智谱华章** | FDE | 6-8 万/月 | 36 氪 |
+| **阿里云** | 前沿部署工程师（FDE）团队 | —— | [阿里云官网](https://ue.aliyun.com/news/20260527) |
+| **猎聘通用** | FDE | 4-6 万 × 14 薪（~56-84 万/年） | [猎聘](https://www.liepin.com/job/1979584529.shtml) |
+| **美国（Scale AI）** | Forward Deployed Engineer, GenAI | $179,400–$224,000 | [Scale 招聘页](https://scale.com/careers/4593571005) |
+| **美国（OpenAI 风格）** | FDE | TCF 平均~$215K，最高 $650K+ | Perspective AI 报告 |
+
+> **结论**：FDE 已经**从硅谷小众角色变成行业标配**。已证实设立 FDE 团队的中国公司包括字节、蚂蚁、智谱、阿里云。
 
 ---
 
@@ -248,8 +259,11 @@ deliverables/
 
 - **[Forward Deployed Engineering Guide](https://github.com/yeasy/forward_deployed_engineering_guide)** - 国内最系统 FDE 指南
 - **[Palantir FDE 公开文档](https://palantir.com/docs/foundry/ai-fde/overview)** - 行业鼻祖标准
-- **[OpenAI Deployment Company](https://openai.com/index/openai-launches-the-deployment-company)** - OpenAI FDE 实践
-- **领英 2026 劳动力市场趋势** - FDE 增长 42 倍数据来源
+- **[OpenAI Deployment Company（2026.5.11）](https://openai.com/index/openai-launches-the-openai-deployment-company/)** - OpenAI FDE 实践
+- **[Anthropic 企业级 AI 服务公司（2026.5.4）](https://www.anthropic.com/news/enterprise-ai-services-company)** - Anthropic+Blackstone+Goldman
+- **[a16z《Services-Led Growth》](https://a16z.com/services-led-growth/)** - FDE 商业模式理论
+- **[Business Insider（含更正）FDE 数据](https://www.businessinsider.com/forward-deployed-engineer-jobs-in-demand-2026-5)** - 岗位增长 643→5330（+729%）
+- **[36 氪 FDE 报道](https://36kr.com/p/3839857956817414)** - 中国 FDE 42 倍增长（⚠️ 未核到原报告，谨慎引用）
 
 ---
 
@@ -278,5 +292,6 @@ deliverables/
 
 ---
 
-> **最后更新**：2026-08-02  
+> **最后更新**：2026-08-03（基于公开来源全面核实与纠错，详见各模块更新说明）
+> **数据更正摘要**：OpenAI DeployCo 日期 2025.09→2026.5.11；Anthropic 合作 2026.01→2026.5.4；岗位增长「600→6000/10倍」修正为「643→5330/+729%」；NHS 案例补充争议；删除无来源的冰岛案例；中国 FDE 公司名单精确化（删华为/百川未核实项）。
 > **下一步**：深入研读各子模块，构建完整 FDE 知识体系

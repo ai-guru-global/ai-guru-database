@@ -90,7 +90,7 @@ kubectl delete clusterrolebinding read-nodes-binding  # ⚠️ HIGH-RISK — 删
 - [[概念/rbac]] — RBAC 基于角色的访问控制
 - [[概念/clusterrole]] — ClusterRole
 - [[概念/serviceaccount]] — ServiceAccount
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 安全架构
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 安全架构
 
 ---
 

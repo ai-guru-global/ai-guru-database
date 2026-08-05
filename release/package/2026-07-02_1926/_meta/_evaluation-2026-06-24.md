@@ -104,13 +104,13 @@ sources: []
 | 缺失的概念页（`_concepts/distributed-training`, `_concepts/vllm`, `_concepts/rag` 等） | ~12 | 应存在但未创建 | 🔴 中 |
 | 残留旧路径（`14_AI_Gateway/AI_Gateway_for_dummy.md`） | ~10 | 重命名前的路径，重构时漏改 | 🟡 中 |
 | `arxiv`、`大模型安全权威指南` 等 | ~8 | 可能本意是标签或外部资料 | 🟢 低 |
-| `_meta/_synthesis-*` 在 hot.md / index.md 中的引用 | ~6 | 路径写法不一致（文件实际在 `_synthesis/`） | 🟡 中 |
+| `_meta/_synthesis-*` 在 hot.md / 索引.md 中的引用 | ~6 | 路径写法不一致（文件实际在 `_synthesis/`） | 🟡 中 |
 | 其他混合 | ~51 | 单源文件（90_Learn/guides/ai_engineering_roadmap_2026 单文件贡献 21 条）| 🟢 低 |
 
 **问题：**
 - ⚠️ **113 个孤立页面**（无任何入链）需要回查 — 但其中约 30 个是 19_Talks 人物 `about.md`（资源层合理孤立），约 40 个是 10/11/15/17 章节新建立的 Deep_Dive 类页面（被引用但通过目录导航而非 wikilink）
 - ⚠️ 单文件 `ai_engineering_roadmap_2026.md` 贡献 21 条断链 — 这是 `90_Learn/guides/` 下的导航页，需要单独治理
-- ⚠️ hot.md 和 index.md 仍用 `_meta/_synthesis-` 前缀引用，实际文件位于 `_synthesis/` —— 上一轮重构时这两份顶层导航文件被遗漏
+- ⚠️ hot.md 和 索引.md 仍用 `_meta/_synthesis-` 前缀引用，实际文件位于 `_synthesis/` —— 上一轮重构时这两份顶层导航文件被遗漏
 
 ### 4. Frontmatter / 元数据   评分：9.0 / 10
 **优点：**
@@ -153,7 +153,7 @@ sources: []
 - ✅ `_concepts/` 194 概念原子页 — 知识图谱基底层
 - ✅ `_synthesis/` 33 跨域综合页（提示词→上下文→Harness、安全全链路、架构选型决策树等）
 - ✅ 概念 + 综合双层结构是 peace-lab / open-cognition 之外的中文知识库少见设计
-- ✅ `hot.md` / `index.md` 双导航（hot 偏新增热点，index 偏全库）
+- ✅ `hot.md` / `索引.md` 双导航（hot 偏新增热点，index 偏全库）
 
 **问题：**
 - ⚠️ **缺失核心概念页**（被 wikilink 引用但未创建）：
@@ -162,7 +162,7 @@ sources: []
   - `_concepts/rag`（5 处）
   - `_concepts/cloud-ai-platform`（6 处）
   - `_concepts/serverless` / `observability` / `embedding`（各 3 处）
-- ⚠️ cheatsheet 数量偏少：`_meta/cheatsheets/` 仅 3 篇（llm-inference / agent-design / security-defense），但被 hot.md / index.md 高频引用
+- ⚠️ cheatsheet 数量偏少：`_meta/cheatsheets/` 仅 3 篇（llm-inference / agent-design / security-defense），但被 hot.md / 索引.md 高频引用
 - ⚠️ 无 `_synthesis/_README.md` — 综合页缺少导航入口
 
 ### 7. 提交节奏与风险         评分：7.5 / 10
@@ -222,7 +222,7 @@ sources: []
 
 可一并消除 ~30 条断链。
 
-### 🔴 P0-2：hot.md / index.md 路径修正（约 30 分钟）
+### 🔴 P0-2：hot.md / 索引.md 路径修正（约 30 分钟）
 将 `_meta/_synthesis-*` 前缀改为 `_synthesis/*`（或反之，统一一处），消除 ~6 条断链。这两份顶层导航是用户最常访问的入口。
 
 ### 🟡 P1-1：90_Learn/guides 导航页断链治理（约 1 小时）

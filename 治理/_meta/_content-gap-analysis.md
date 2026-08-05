@@ -43,9 +43,9 @@ name_zh: "LLM 全生命周期内容缺口分析"
 - 视频理解架构：时空注意力、帧采样策略
 
 **建议新建页面**:
-- ✅ `05_大模型/10_Multimodal_Models/Native_Multimodal_Architectures.md` — 已创建 (12.8 KB)
-- ✅ `05_大模型/10_Multimodal_Models/Modality_Fusion_Mechanisms.md` — 已创建 (14.2 KB)
-- ✅ `05_大模型/10_Multimodal_Models/Video_Understanding_Architectures.md` — 已创建 (15.9 KB)
+- ✅ `05_大模型/10_多模态模型/Native_Multimodal_Architectures.md` — 已创建 (12.8 KB)
+- ✅ `05_大模型/10_多模态模型/Modality_Fusion_Mechanisms.md` — 已创建 (14.2 KB)
+- ✅ `05_大模型/10_多模态模型/Video_Understanding_Architectures.md` — 已创建 (15.9 KB)
 
 ---
 
@@ -62,8 +62,8 @@ name_zh: "LLM 全生命周期内容缺口分析"
 - MoE 的通信开销与 All-to-All 优化
 
 **建议新建页面**:
-- ✅ `05_大模型/05_LLM_Architectures/MoE_Routing_and_Load_Balancing.md` — 已创建 (15.1 KB)
-- ✅ `05_大模型/05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md` — 已创建 (11.1 KB)
+- ✅ `05_大模型/05_LLM架构/MoE_Routing_and_Load_Balancing.md` — 已创建 (15.1 KB)
+- ✅ `05_大模型/05_LLM架构/MoE_Case_Studies_DeepSeek_Mixtral.md` — 已创建 (11.1 KB)
 
 ---
 
@@ -80,8 +80,8 @@ name_zh: "LLM 全生命周期内容缺口分析"
 - 多模态幻觉评测：POPE、MMHal-Bench
 
 **建议新建页面**:
-- ✅ `08_模型评估/02_Benchmarks/Multimodal_Evaluation_Benchmarks.md` — 已创建 (11.7 KB)
-- ✅ `08_模型评估/02_Benchmarks/Long_Context_Evaluation.md` — 已创建 (12.9 KB)
+- ✅ `08_模型评估/02_基准测试/Multimodal_Evaluation_Benchmarks.md` — 已创建 (11.7 KB)
+- ✅ `08_模型评估/02_基准测试/Long_Context_Evaluation.md` — 已创建 (12.9 KB)
 
 ---
 
@@ -97,8 +97,8 @@ name_zh: "LLM 全生命周期内容缺口分析"
 - 何时选择替代架构？长序列、低延迟、内存受限场景
 
 **建议新建页面**:
-- ✅ `03_深度学习/02_Neural_Network_Core/State_Space_Models_2026.md` — 已扩充 RWKV/RetNet
-- ✅ `05_大模型/05_LLM_Architectures/Transformer_Alternatives.md` — 已创建 (13.7 KB)
+- ✅ `03_深度学习/02_神经网络核心/State_Space_Models_2026.md` — 已扩充 RWKV/RetNet
+- ✅ `05_大模型/05_LLM架构/Transformer_Alternatives.md` — 已创建 (13.7 KB)
 
 ---
 
@@ -115,8 +115,8 @@ name_zh: "LLM 全生命周期内容缺口分析"
 -  prefix caching 在多轮对话中的收益分析
 
 **建议新建页面**:
-- ✅ `10_部署推理/06_Caching/Speculative_Decoding_Advanced_2026.md` — 已创建 (14.8 KB)
-- ✅ `10_部署推理/06_Caching/Prompt_Caching_and_KV_Cache_Optimization.md` — 已创建 (15.2 KB)
+- ✅ `10_部署推理/03_推理优化/Speculative_Decoding_Advanced_2026.md` — 已创建 (14.8 KB)
+- ✅ `10_部署推理/03_推理优化/Prompt_Caching_and_KV_Cache_Optimization.md` — 已创建 (15.2 KB)
 
 ---
 
@@ -133,9 +133,9 @@ name_zh: "LLM 全生命周期内容缺口分析"
 - 推理模型的评测：Beyond accuracy — 推理过程可追溯性
 
 **建议新建页面**:
-- ✅ `05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models.md` — 已创建 (13.7 KB)
-- ✅ `05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis.md` — 已创建 (13.5 KB)
-- ✅ `05_大模型/09_Reasoning_Models/Process_Reward_Models.md` — 已创建 (7.0 KB)
+- ✅ `05_大模型/09_推理模型/o1_Class_Reasoning_Models.md` — 已创建 (13.7 KB)
+- ✅ `05_大模型/09_推理模型/DeepSeek_R1_Technical_Analysis.md` — 已创建 (13.5 KB)
+- ✅ `05_大模型/09_推理模型/Process_Reward_Models.md` — 已创建 (7.0 KB)
 
 ---
 
@@ -186,81 +186,6 @@ name_zh: "LLM 全生命周期内容缺口分析"
 ---
 
 _Last updated: 2026-06-01 15:16_
-
-## 核心知识体系
-
-| 知识域 | 核心内容 | 重要程度 | 学习优先级 |
-|--------|----------|----------|------------|
-| 基础理论 | 核心概念/原理/方法论 | 最高 | P0 |
-| 技术实践 | 工具/框架/最佳实践 | 高 | P0 |
-| 工程方法 | 设计模式/架构/流程 | 高 | P1 |
-| 前沿趋势 | 新技术/新方向/研究 | 中 | P2 |
-| 行业应用 | 实际案例/落地经验 | 中 | P1 |
-
-## 技术对比与选型
-
-| 维度 | 方案A | 方案B | 方案C | 选型建议 |
-|------|-------|-------|-------|----------|
-| 性能 | 高吞吐 | 低延迟 | 均衡 | 按场景选择 |
-| 复杂度 | 简单 | 中等 | 复杂 | 按团队能力 |
-| 成本 | 低 | 中 | 高 | 按预算约束 |
-| 生态 | 成熟 | 发展中 | 新兴 | 按稳定性需求 |
-| 扩展性 | 有限 | 良好 | 优秀 | 按增长预期 |
-
-## 最佳实践清单
-
-| 实践 | 说明 | 优先级 | 预期收益 |
-|------|------|--------|----------|
-| 标准化流程 | 统一规范和流程 | P0 | 减少错误+提升效率 |
-| 自动化 | 重复工作自动化 | P0 | 节省时间+降低风险 |
-| 持续监控 | 关键指标实时监控 | P1 | 及时发现问题 |
-| 定期回顾 | 周期性复盘改进 | P1 | 持续优化 |
-| 知识沉淀 | 文档化经验教训 | P2 | 团队能力提升 |
-| 安全优先 | 安全贯穿全流程 | P0 | 降低风险 |
-
-## 常见问题与解决方案
-
-| 问题 | 根因分析 | 解决方案 | 预防措施 |
-|------|----------|----------|----------|
-| 效率低下 | 流程不规范/工具不当 | 优化流程+引入工具 | 标准化+培训 |
-| 质量不稳定 | 缺乏检查机制 | 引入质量门禁 | 自动化测试 |
-| 协作困难 | 职责不清/沟通不畅 | 明确分工+定期同步 | 文档化+工具 |
-| 技术债务 | 赶工忽略质量 | 定期重构+代码审查 | 质量优先文化 |
-| 安全风险 | 意识不足/措施缺失 | 安全培训+工具扫描 | 安全左移 |
-
-## 学习路径建议
-
-| 阶段 | 内容 | 时间 | 产出 |
-|------|------|------|------|
-| 入门 | 核心概念+基础操作 | 1-2周 | 理解基本框架 |
-| 基础 | 工具使用+简单实践 | 2-3周 | 能独立完成基础任务 |
-| 进阶 | 深入原理+复杂场景 | 3-4周 | 能处理复杂问题 |
-| 实战 | 生产级应用+优化 | 4-6周 | 独立负责项目 |
-| 精通 | 架构设计+前沿探索 | 持续 | 技术领导力 |
-
-## 术语速查表
-
-| 术语 | 含义 |
-|------|------|
-| Best Practice | 行业公认的最佳做法 |
-| Anti-pattern | 反模式(应避免的做法) |
-| Technical Debt | 技术债务(为速度牺牲质量) |
-| CI/CD | 持续集成/持续部署 |
-| SLA | 服务等级协议 |
-| KPI | 关键绩效指标 |
-| ROI | 投资回报率 |
-| TCO | 总拥有成本 |
-
-## 检查清单
-
-- [ ] 核心概念和原理已理解
-- [ ] 主流工具和框架已掌握
-- [ ] 最佳实践已应用到工作中
-- [ ] 常见问题能独立解决
-- [ ] 持续关注前沿趋势
-- [ ] 知识已文档化沉淀
-
----
 
 ## 关联
 

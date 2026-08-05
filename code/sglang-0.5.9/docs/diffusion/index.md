@@ -53,7 +53,7 @@ sglang serve --model-path Qwen/Qwen-Image --port 30010
 
 ### Performance Optimization
 
-- **[Performance Overview](performance/index.md)** - Overview of all performance optimization strategies
+- **[Performance Overview](performance/索引.md)** - Overview of all performance optimization strategies
 - **[Attention Backends](performance/attention_backends.md)** - Available attention backends (FlashAttention, SageAttention, etc.)
 - **[Caching Strategies](performance/cache/)** - Cache-DiT and TeaCache acceleration
 - **[Profiling](performance/profiling.md)** - Profiling techniques with PyTorch Profiler and Nsight Systems

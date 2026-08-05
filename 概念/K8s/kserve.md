@@ -14,7 +14,7 @@ relationships:
   - target: "概念/istio"
     type: related_to
 sources:
-  - 10_部署推理/02_Inference_Engines/KServe_Deep_Dive.md
+  - 10_部署推理/02_推理引擎/KServe_Deep_Dive.md
 summary: "KServe 是 CNCF Incubating 的 Kubernetes 模型服务平台，提供标准化的 InferenceService CRD、多运行时支持、自动扩缩容、蓝绿/金丝雀发布与可解释性，广泛用于生产级 LLM 推理服务。"
 provenance:
   extracted: 0.8
@@ -151,12 +151,12 @@ spec:
 
 ## Related
 
-- [[10_部署推理/02_Inference_Engines/KServe_Deep_Dive]] — KServe 深度解析
+- [[10_部署推理/02_推理引擎/11_KServe_深入分析]] — KServe 深度解析
 - [[概念/model-serving]] — 模型服务概念
 - [[概念/vllm]] — vLLM 推理引擎
 - [[概念/hami]] — HAMi GPU 虚拟化
-- [[10_部署推理/02_Inference_Engines/BentoML_Deep_Dive]] — BentoML 模型服务框架
-- [[12_架构基建/05_CNCF_Cloud_Native_AI/README]] — CNCF 云原生大模型全景
+- [[10_部署推理/02_推理引擎/02_BentoML_深入分析]] — BentoML 模型服务框架
+- [[12_架构基建/05_CNCF云原生AI/README]] — CNCF 云原生大模型全景
 
 ---
 

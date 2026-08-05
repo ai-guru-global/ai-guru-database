@@ -18,8 +18,8 @@ relationships:
   - target: "概念/kto"
     type: alternative
 sources:
-  - 07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide.md
-  - 07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods.md
+  - 07_模型训练/06_对齐研究/TRL_RLHF_DPO_Guide.md
+  - 07_模型训练/06_对齐研究/GRPO_and_New_Alignment_Methods.md
 summary: "DPO（Direct Preference Optimization）是 Rafailov et al. 2023 提出的简化对齐方法，将 PPO 的两阶段（SFT + RM + PPO）合并为单阶段，直接用偏好数据训练，无需训练 Reward Model 和 Critic。"
 lifecycle: reviewed
 tier: core
@@ -182,7 +182,7 @@ llamafactory-cli train \
 - **多 loss 加权组合**：L762-763 支持 `loss_type` 传入列表 + `loss_weights` 加权（如 sigmoid/IPO/hinge 混合），DPO 变种在同一个 Trainer 内部统一实现而非各自建类。
 - **参考模型的三种省显存策略**：① `precompute_ref_log_probs`（L1178 `compute_ref_log_probs`）预算 ref logprobs 后释放 ref 模型；② LoRA 训练时直接 disable adapter 当作 ref（L1256 附近注释），无需第二份权重；③ Liger fused kernel（L1221 `_compute_loss_liger`）融合计算降峰值显存。
 
-详见 [[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide]] 第 6 节。
+详见 [[07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南]] 第 6 节。
 
 ## Related
 
@@ -192,7 +192,7 @@ llamafactory-cli train \
 - [[概念/grpo]] — GRPO（DeepSeek-R1 路线）
 - [[概念/preference-learning]] — 偏好学习总览
 - [[概念/simpo]] — SimPO（无参考模型）
-- [[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide]] — DPO 深度
+- [[07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南]] — DPO 深度
 
 ---
 

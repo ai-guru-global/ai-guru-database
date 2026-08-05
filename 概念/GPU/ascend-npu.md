@@ -176,7 +176,7 @@ FlashMLA 已被华为昇腾平台移植：
 - [[概念/apg-gpu]] — APG 自研加速卡
 - [[概念/cuda-platform]] — CUDA 计算平台
 - [[概念/flash-attention-kernels]] — FlashMLA 算子
-- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 
 ---
 

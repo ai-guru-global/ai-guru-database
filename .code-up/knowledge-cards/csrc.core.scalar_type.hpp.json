@@ -1,0 +1,137 @@
+{
+  "id": "csrc.core.scalar_type.hpp",
+  "title": "Scalar Type",
+  "type": "module",
+  "summary": "Module providing types, int_, ScalarType, ScalarType, TORCH_CHECK and 5 more symbols",
+  "details": "Contains 1 classes: ScalarType. Contains 35 functions/methods",
+  "symbols": 
+    {
+      "name": "types",
+      "kind": "function",
+      "signature": "types(something\n//  that torch.dtype currently does not support).\n//\n//  The type definitions on the Python side can be found in: vllm/scalar_type.py\n//  these type definitions should be kept up to date with any Python API changes\n//  here.\n//\nclass ScalarType {\n public:\n  enum NanRepr : uint8_t {\n    NAN_NONE = 0,                // nans are not supported\n    NAN_IEEE_754 = 1,            // nans are: exp all 1s, mantissa not all 0s\n    NAN_EXTD_RANGE_MAX_MIN = 2,  // nans are: exp all 1s, mantissa all 1s\n\n    NAN_REPR_ID_MAX\n  };\n\n  constexpr ScalarType(uint8_t exponent, uint8_t mantissa, bool signed_,\n                       int32_t bias, bool finite_values_only = false,\n                       NanRepr nan_repr = NAN_IEEE_754)\n      : exponent(exponent),\n        mantissa(mantissa),\n        signed_(signed_),\n        bias(bias),\n        finite_values_only(finite_values_only),\n        nan_repr(nan_repr)",
+      "docstring": "",
+      "line": 10
+    },
+    {
+      "name": "int_",
+      "kind": "function",
+      "signature": "int_(uint8_t size_bits, int32_t bias = 0)",
+      "docstring": "",
+      "line": 35
+    },
+    {
+      "name": "ScalarType",
+      "kind": "function",
+      "signature": "ScalarType(0, size_bits - 1, true, bias);\n  }\n\n  static constexpr ScalarType uint(uint8_t size_bits, int32_t bias = 0)",
+      "docstring": "",
+      "line": 37
+    },
+    {
+      "name": "ScalarType",
+      "kind": "function",
+      "signature": "ScalarType(0, size_bits, false, bias);\n  }\n\n  // IEEE 754 compliant floating point type\n  static constexpr ScalarType float_IEEE754(uint8_t exponent,\n                                            uint8_t mantissa)",
+      "docstring": "",
+      "line": 41
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(mantissa > 0 && exponent > 0);\n    return ScalarType(exponent, mantissa, true, 0, false, NAN_IEEE_754);\n  }\n\n  // IEEE 754 non-compliant floating point type\n  static constexpr ScalarType float_(uint8_t exponent, uint8_t mantissa,\n                                     bool finite_values_only,\n                                     NanRepr nan_repr)",
+      "docstring": "",
+      "line": 47
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(nan_repr < NAN_REPR_ID_MAX, \"Invalid NanRepr\");\n    TORCH_CHECK(mantissa > 0 && exponent > 0);\n    TORCH_CHECK(nan_repr != NAN_IEEE_754,\n                \"use `float_IEEE754` constructor for floating point types that \"\n                \"follow IEEE 754 conventions\");\n    return ScalarType(exponent, mantissa, true, 0, finite_values_only,\n                      nan_repr);\n  }\n\n  uint8_t const exponent;  // size of the exponent field (0 for integer types)\n  uint8_t const mantissa;  // size of the mantissa field (size of the integer\n                           // excluding the sign bit for integer types)\n  bool const signed_;  // flag if the type supports negative numbers (i.e. has a\n                       // sign bit)\n  int32_t const bias;  // stored values equal value + bias,\n                       // used for quantized type\n\n  // Extra Floating point info\n  bool const finite_values_only;  // i.e. no +/-inf if true\n  NanRepr const nan_repr;         // how NaNs are represented\n                                  // (not applicable for integer types)\n\n  using Id = int64_t;\n\n private:\n  // Field size in id\n  template <typename T_>\n  static constexpr size_t member_id_field_width()",
+      "docstring": "",
+      "line": 55
+    },
+    {
+      "name": "sizeof",
+      "kind": "function",
+      "signature": "sizeof(T) * 8;\n  }\n\n  template <typename Fn, typename Init, typename Member, typename... Rest>\n  static constexpr auto reduce_members_helper(Fn f, Init val, Member member,\n                                              Rest... rest)",
+      "docstring": "",
+      "line": 85
+    },
+    {
+      "name": "f",
+      "kind": "function",
+      "signature": "f(val, member);\n    if constexpr (sizeof...(rest) > 0)",
+      "docstring": "",
+      "line": 91
+    },
+    {
+      "name": "reduce_members_helper",
+      "kind": "function",
+      "signature": "reduce_members_helper(f, new_val, rest...);\n    } else {\n      return new_val;\n    };\n  }\n\n  template <typename Fn, typename Init>\n  constexpr auto reduce_members(Fn f, Init init)",
+      "docstring": "",
+      "line": 92
+    },
+    {
+      "name": "reduce_members_helper",
+      "kind": "function",
+      "signature": "reduce_members_helper(f, init, exponent, mantissa, signed_, bias,\n                                 finite_values_only, nan_repr);\n  };\n\n  template <typename Fn, typename Init>\n  static constexpr auto reduce_member_types(Fn f, Init init)",
+      "docstring": "",
+      "line": 101
+    },
+    {
+      "name": "ScalarType",
+      "kind": "function",
+      "signature": "ScalarType(0, 0, false, 0, false, NAN_NONE);\n    return dummy_type.reduce_members(f, init);\n  };\n\n  static constexpr auto id_size_bits()",
+      "docstring": "",
+      "line": 108
+    },
+    {
+      "name": "reduce_member_types",
+      "kind": "function",
+      "signature": "reduce_member_types(\n        [ -> int {\n          return acc + member_id_field_width<decltype(member)>();\n        },\n        0);\n  }\n\n public:\n  // unique id for this scalar type that can be computed at compile time for\n  //  c++17 template specialization this is not needed once we migrate to\n  //  c++20 and can pass literal classes as template parameters\n  constexpr Id id()",
+      "docstring": "",
+      "line": 112
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(id_size_bits() <= sizeof(Id) * 8,\n                  \"ScalarType id is too large to be stored\");\n\n    auto or_and_advance = std::pair<Id, uint32_t> result,\n                             auto member -> std::pair<Id, uint32_t> {\n      auto [id, bit_offset] = result;\n      auto constexpr bits = member_id_field_width<decltype(member)>();\n      return {id | (int64_t(member) & ((uint64_t(1) << bits) - 1))\n                       << bit_offset,\n              bit_offset + bits};\n    };\n    return reduce_members(or_and_advance, std::pair<Id, uint32_t>{}).first;\n  }\n\n  // create a ScalarType from an id, for c++17 template specialization,\n  //  this is not needed once we migrate to c++20 and can pass literal\n  //  classes as template parameters\n  static constexpr ScalarType from_id(Id id)",
+      "docstring": "",
+      "line": 124
+    },
+    {
+      "name": "decltype",
+      "kind": "function",
+      "signature": "decltype(member);\n      auto [tuple, bit_offset] = result;\n      auto constexpr bits = member_id_field_width<T>();\n      auto extracted_val = static_cast<T>((int64_t(id) >> bit_offset) &\n                                          ((uint64_t(1) << bits) - 1));\n      auto new_tuple = std::tuple_cat(tuple, std::make_tuple(extracted_val));\n      return std::pair<decltype(new_tuple), int>{new_tuple, bit_offset + bits};\n    };\n\n    auto [tuple_args, _] = reduce_member_types(extract_and_advance,\n                                               std::pair<std::tuple<>, int>{});\n    return std::apply(auto..",
+      "docstring": "",
+      "line": 144
+    },
+    {
+      "name": "ScalarType",
+      "kind": "function",
+      "signature": "ScalarType(args...); },\n                      tuple_args);\n  }\n\n  constexpr int64_t size_bits()",
+      "docstring": "",
+      "line": 155
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 36,
+    "public_symbols": 36,
+    "classes": 1,
+    "functions": 35,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "oop",
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/core/scalar_type.hpp"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "csrc.moe.marlin_moe_wna16.kernel.h",
+  "title": "Kernel",
+  "type": "file",
+  "summary": "File with 0 symbols",
+  "details": "File with 0 symbols",
+  "symbols": [],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "core",
+      "quantization"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 0,
+    "public_symbols": 0,
+    "classes": 0,
+    "functions": 0,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/moe/marlin_moe_wna16/kernel.h"
+}

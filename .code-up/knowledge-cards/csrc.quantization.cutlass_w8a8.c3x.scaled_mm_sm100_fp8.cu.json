@@ -1,0 +1,46 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_sm100_fp8.cu",
+  "title": "Scaled Mm Sm100 Fp8",
+  "type": "module",
+  "summary": "Module providing cutlass_scaled_mm_sm100_fp8, TORCH_CHECK",
+  "details": "Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "cutlass_scaled_mm_sm100_fp8",
+      "kind": "function",
+      "signature": "cutlass_scaled_mm_sm100_fp8(torch::Tensor& out, torch::Tensor const& a,\n                                 torch::Tensor const& b,\n                                 torch::Tensor const& a_scales,\n                                 torch::Tensor const& b_scales,\n                                 std::optional<torch::Tensor> const& bias)",
+      "docstring": "",
+      "line": 5
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(a_scales.is_contiguous() && b_scales.is_contiguous());\n  if (bias)",
+      "docstring": "",
+      "line": 11
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cutlass_extensions",
+      "scaled_mm_kernels",
+      "scaled_mm_sm100_fp8_dispatch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 2,
+    "public_symbols": 2,
+    "classes": 0,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/c3x/scaled_mm_sm100_fp8.cu"
+}

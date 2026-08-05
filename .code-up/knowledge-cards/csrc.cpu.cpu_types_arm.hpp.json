@@ -1,0 +1,139 @@
+{
+  "id": "csrc.cpu.cpu_types_arm.hpp",
+  "title": "Cpu Types Arm",
+  "type": "module",
+  "summary": "Module providing defined, f, unroll_loop_item, FP16Vec8, FP16Vec8 and 5 more symbols",
+  "details": "Contains 75 functions/methods",
+  "symbols": [
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__APPLE__)\n  #include \"omp.h\"\n#endif\n\nnamespace vec_op {\n\n#ifdef ARM_BF16_SUPPORT\n  #define VLLM_DISPATCH_CASE_FLOATING_TYPES(...)         \\\n    AT_DISPATCH_CASE(at::ScalarType::Float, __VA_ARGS__) \\\n    AT_DISPATCH_CASE(at::ScalarType::Half, __VA_ARGS__)  \\\n    AT_DISPATCH_CASE(at::ScalarType::BFloat16, __VA_ARGS__)\n#else\n  #define VLLM_DISPATCH_CASE_FLOATING_TYPES(...)         \\\n    AT_DISPATCH_CASE(at::ScalarType::Float, __VA_ARGS__) \\\n    AT_DISPATCH_CASE(at::ScalarType::Half, __VA_ARGS__)\n#endif\n\n#define VLLM_DISPATCH_FLOATING_TYPES(TYPE, NAME, ...) \\\n  AT_DISPATCH_SWITCH(TYPE, NAME, VLLM_DISPATCH_CASE_FLOATING_TYPES(__VA_ARGS__))\n\n#ifndef CPU_OP_GUARD\n  #define CPU_KERNEL_GUARD_IN(NAME)\n  #define CPU_KERNEL_GUARD_OUT(NAME)\n#else\n  #define CPU_KERNEL_GUARD_IN(NAME) \\\n    std::cout << #NAME << \" invoked.\" << std::endl;\n  #define CPU_KERNEL_GUARD_OUT(NAME) \\\n    std::cout << #NAME << \" exit.\" << std::endl;\n#endif\n\n#define FORCE_INLINE __attribute__((always_inline)) inline\n\nnamespace {\ntemplate <typename T, T... indexes, typename F>\nconstexpr void unroll_loop_item(std::integer_sequence<T, indexes...>, F&& f)",
+      "docstring": "",
+      "line": 5
+    },
+    {
+      "name": "f",
+      "kind": "function",
+      "signature": "f(std::integral_constant<T, indexes>{}), ...);\n};\n};  // namespace\n\ntemplate <typename T, T count, typename F,\n          typename = std::enable_if_t<std::is_invocable_v<F, T>>>\nconstexpr void unroll_loop(F&& f)",
+      "docstring": "",
+      "line": 40
+    },
+    {
+      "name": "unroll_loop_item",
+      "kind": "function",
+      "signature": "unroll_loop_item(std::make_integer_sequence<T, count>{}, std::forward<F>(f));\n}\n\ntemplate <typename T>\nstruct Vec {\n  constexpr static int get_elem_num()",
+      "docstring": "",
+      "line": 46
+    },
+    {
+      "name": "FP16Vec8",
+      "kind": "function",
+      "signature": "FP16Vec8(const void* ptr)\n      : reg(vld1q_f16(static_cast<const __fp16*>(ptr)))",
+      "docstring": "",
+      "line": 61
+    },
+    {
+      "name": "FP16Vec8",
+      "kind": "function",
+      "signature": "FP16Vec8(const FP32Vec8&);\n\n  void save(void* ptr)",
+      "docstring": "",
+      "line": 64
+    },
+    {
+      "name": "vst1q_f16",
+      "kind": "function",
+      "signature": "vst1q_f16(static_cast<__fp16*>(ptr), reg); }\n};\n\nstruct FP16Vec16 : public Vec<FP16Vec16> {\n  constexpr static int VEC_ELEM_NUM = 16;\n\n  float16x8x2_t reg;\n\n  explicit FP16Vec16(const void* ptr)",
+      "docstring": "",
+      "line": 68
+    },
+    {
+      "name": "vld1q_f16",
+      "kind": "function",
+      "signature": "vld1q_f16(reinterpret_cast<const __fp16*>(ptr));\n    reg.val[1] = vld1q_f16(reinterpret_cast<const __fp16*>(ptr) + 8);\n  }\n\n  explicit FP16Vec16(const FP32Vec16& vec);\n\n  void save(void* ptr)",
+      "docstring": "",
+      "line": 77
+    },
+    {
+      "name": "vst1q_f16",
+      "kind": "function",
+      "signature": "vst1q_f16(reinterpret_cast<__fp16*>(ptr), reg.val[0]);\n    vst1q_f16(reinterpret_cast<__fp16*>(ptr) + 8, reg.val[1]);\n  }\n\n  void save(void* ptr, const int elem_num)",
+      "docstring": "",
+      "line": 83
+    },
+    {
+      "name": "vst1q_f16",
+      "kind": "function",
+      "signature": "vst1q_f16(reinterpret_cast<__fp16*>(ptr), reg.val[0]);\n      if (full_blocks > 1)",
+      "docstring": "",
+      "line": 92
+    },
+    {
+      "name": "vst1q_f16",
+      "kind": "function",
+      "signature": "vst1q_f16(reinterpret_cast<__fp16*>(ptr) + 8, reg.val[1]);\n      }\n    }\n\n    // Note: below is the unrolled version of the following code:\n    //\n    // for (int i = 0; i < remainder; ++i)",
+      "docstring": "",
+      "line": 94
+    },
+    {
+      "name": "vgetq_lane_f16",
+      "kind": "function",
+      "signature": "vgetq_lane_f16(temp, i);\n    // }\n    //\n    // For macOS build (Clang), the arm/neon intrinsics function\n    // `vgetq_lane_f16` needs the parameter `i` to be constant at compile\n    // time.\n\n    if (remainder > 0)",
+      "docstring": "",
+      "line": 103
+    },
+    {
+      "name": "vgetq_lane_f16",
+      "kind": "function",
+      "signature": "vgetq_lane_f16(temp, 0);\n          break;\n        case 2:\n          fp16_ptr[full_blocks * 8 + 0] = vgetq_lane_f16(temp, 0);\n          fp16_ptr[full_blocks * 8 + 1] = vgetq_lane_f16(temp, 1);\n          break;\n        case 3:\n          fp16_ptr[full_blocks * 8 + 0] = vgetq_lane_f16(temp, 0);\n          fp16_ptr[full_blocks * 8 + 1] = vgetq_lane_f16(temp, 1);\n          fp16_ptr[full_blocks * 8 + 2] = vgetq_lane_f16(temp, 2);\n          break;\n        case 4:\n          fp16_ptr[full_blocks * 8 + 0] = vgetq_lane_f16(temp, 0);\n          fp16_ptr[full_blocks * 8 + 1] = vgetq_lane_f16(temp, 1);\n          fp16_ptr[full_blocks * 8 + 2] = vgetq_lane_f16(temp, 2);\n          fp16_ptr[full_blocks * 8 + 3] = vgetq_lane_f16(temp, 3);\n          break;\n        case 5:\n          fp16_ptr[full_blocks * 8 + 0] = vgetq_lane_f16(temp, 0);\n          fp16_ptr[full_blocks * 8 + 1] = vgetq_lane_f16(temp, 1);\n          fp16_ptr[full_blocks * 8 + 2] = vgetq_lane_f16(temp, 2);\n          fp16_ptr[full_blocks * 8 + 3] = vgetq_lane_f16(temp, 3);\n          fp16_ptr[full_blocks * 8 + 4] = vgetq_lane_f16(temp, 4);\n          break;\n        case 6:\n          fp16_ptr[full_blocks * 8 + 0] = vgetq_lane_f16(temp, 0);\n          fp16_ptr[full_blocks * 8 + 1] = vgetq_lane_f16(temp, 1);\n          fp16_ptr[full_blocks * 8 + 2] = vgetq_lane_f16(temp, 2);\n          fp16_ptr[full_blocks * 8 + 3] = vgetq_lane_f16(temp, 3);\n          fp16_ptr[full_blocks * 8 + 4] = vgetq_lane_f16(temp, 4);\n          fp16_ptr[full_blocks * 8 + 5] = vgetq_lane_f16(temp, 5);\n          break;\n        case 7:\n          fp16_ptr[full_blocks * 8 + 0] = vgetq_lane_f16(temp, 0);\n          fp16_ptr[full_blocks * 8 + 1] = vgetq_lane_f16(temp, 1);\n          fp16_ptr[full_blocks * 8 + 2] = vgetq_lane_f16(temp, 2);\n          fp16_ptr[full_blocks * 8 + 3] = vgetq_lane_f16(temp, 3);\n          fp16_ptr[full_blocks * 8 + 4] = vgetq_lane_f16(temp, 4);\n          fp16_ptr[full_blocks * 8 + 5] = vgetq_lane_f16(temp, 5);\n          fp16_ptr[full_blocks * 8 + 6] = vgetq_lane_f16(temp, 6);\n          break;\n\n        default:\n          break;\n      }\n    }\n  }\n};\n\n#ifdef ARM_BF16_SUPPORT\nstruct BF16Vec8 : public Vec<BF16Vec8> {\n  constexpr static int VEC_ELEM_NUM = 8;\n\n  bfloat16x8_t reg;\n\n  explicit BF16Vec8(const void* ptr)\n      : reg(*reinterpret_cast<const bfloat16x8_t*>(ptr))",
+      "docstring": "",
+      "line": 115
+    },
+    {
+      "name": "BF16Vec8",
+      "kind": "function",
+      "signature": "BF16Vec8(bfloat16x8_t data) : reg(data)",
+      "docstring": "",
+      "line": 171
+    },
+    {
+      "name": "BF16Vec8",
+      "kind": "function",
+      "signature": "BF16Vec8(const FP32Vec8&);\n\n  explicit BF16Vec8(float32x4x2_t v)\n      : reg(vcvtq_high_bf16_f32(vcvtq_low_bf16_f32(v.val[0]), v.val[1]))",
+      "docstring": "",
+      "line": 173
+    },
+    {
+      "name": "save",
+      "kind": "function",
+      "signature": "save(void* ptr)",
+      "docstring": "",
+      "line": 178
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "arm_neon",
+      "cmath",
+      "omp",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 75,
+    "public_symbols": 75,
+    "classes": 0,
+    "functions": 75,
+    "internal_deps": 0,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cpu/cpu_types_arm.hpp"
+}

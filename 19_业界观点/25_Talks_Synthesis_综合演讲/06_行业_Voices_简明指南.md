@@ -79,16 +79,16 @@ flowchart TB
 
 | 人物 | 身份 | 必读入口 |
 |------|------|----------|
-| Geoffrey Hinton | 深度学习之父，转向安全警示 | [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton 专页]] |
-| Yann LeCun | Meta 首席科学家，开源旗手 | [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun 专页]] |
-| Sam Altman | OpenAI CEO，AGI 叙事者 | [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman 专页]] |
-| Dario Amodei | Anthropic CEO，安全路线 | [[19_业界观点/05_Dario_Amodei_阿莫迪/03_索引|Amodei 专页]] |
-| Ilya Sutskever | SSI 创始人，"压缩即智能" | [[19_业界观点/11_Ilya_Sutskever_苏茨克维/03_索引|Sutskever 专页]] |
-| 黄仁勋 (Jensen Huang) | NVIDIA CEO，算力叙事 | [[19_业界观点/12_Jensen_Huang_黄仁勋/03_索引|黄仁勋专页]] |
-| 梁文锋 (Wenfeng Liang) | DeepSeek 创始人，开源黑马 | [[19_业界观点/27_Wenfeng_Liang_梁文锋/02_索引|梁文锋专页]] |
-| 杨植麟 (Zhilin Yang) | 月之暗面创始人 | [[19_业界观点/30_Zhilin_Yang_杨植麟/02_索引|杨植麟专页]] |
-| Andrej Karpathy | 独立教育者，"Software 2.0" | [[19_业界观点/02_Andrej_Karpathy_卡帕西/03_索引|Karpathy 专页]] |
-| 李飞飞 (Fei-Fei Li) | 空间智能，World Labs | [[19_业界观点/09_Fei_Fei_Li_李飞飞/03_索引|李飞飞专页]] |
+| Geoffrey Hinton | 深度学习之父，转向安全警示 | [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton 专页]] |
+| Yann LeCun | Meta 首席科学家，开源旗手 | [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun 专页]] |
+| Sam Altman | OpenAI CEO，AGI 叙事者 | [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman 专页]] |
+| Dario Amodei | Anthropic CEO，安全路线 | [[19_业界观点/05_Dario_Amodei_阿莫迪/INDEX|Amodei 专页]] |
+| Ilya Sutskever | SSI 创始人，"压缩即智能" | [[19_业界观点/11_Ilya_Sutskever_苏茨克维/INDEX|Sutskever 专页]] |
+| 黄仁勋 (Jensen Huang) | NVIDIA CEO，算力叙事 | [[19_业界观点/12_Jensen_Huang_黄仁勋/INDEX|黄仁勋专页]] |
+| 梁文锋 (Wenfeng Liang) | DeepSeek 创始人，开源黑马 | [[19_业界观点/27_Wenfeng_Liang_梁文锋/INDEX|梁文锋专页]] |
+| 杨植麟 (Zhilin Yang) | 月之暗面创始人 | [[19_业界观点/30_Zhilin_Yang_杨植麟/INDEX|杨植麟专页]] |
+| Andrej Karpathy | 独立教育者，"Software 2.0" | [[19_业界观点/02_Andrej_Karpathy_卡帕西/INDEX|Karpathy 专页]] |
+| 李飞飞 (Fei-Fei Li) | 空间智能，World Labs | [[19_业界观点/09_Fei_Fei_Li_李飞飞/INDEX|李飞飞专页]] |
 
 ---
 

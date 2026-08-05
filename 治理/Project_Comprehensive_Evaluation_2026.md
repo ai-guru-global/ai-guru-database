@@ -113,7 +113,7 @@ name_zh: "AI Guru 知识库项目全面评估报告"
 #### 整改方案
 
 **1. 扩展长上下文技术专题**
-- 文件: `05_大模型/05_LLM架构/Long_Context_Models_2026.md`
+- 文件: `05_大模型/04_LLM架构/Long_Context_Models_2026.md`
 - 扩展内容:
   - Ring Attention / Striped Attention
   - 上下文压缩技术 (H2O, StreamingLLM)
@@ -121,7 +121,7 @@ name_zh: "AI Guru 知识库项目全面评估报告"
   - 长文本评估基准 (LongBench, L-Eval)
 
 **2. 新增测试时计算专题**
-- 文件: `05_大模型/09_推理模型/Test_Time_Compute_2026.md`
+- 文件: `05_大模型/08_推理模型/Test_Time_Compute_2026.md`
 - 内容:
   - Chain-of-Thought 优化
   - Self-Consistency / Majority Voting
@@ -129,7 +129,7 @@ name_zh: "AI Guru 知识库项目全面评估报告"
   - 计算-性能权衡曲线
 
 **3. 新增多模态 LLM 专题**
-- 文件: `05_大模型/10_多模态模型/Multimodal_LLMs_2026.md`
+- 文件: `05_大模型/09_多模态模型/Multimodal_LLMs_2026.md`
 - 内容:
   - Vision Encoder 集成 (CLIP/SigLIP)
   - 投影层设计 (Q-Former/MLP)
@@ -137,7 +137,7 @@ name_zh: "AI Guru 知识库项目全面评估报告"
   - 视觉指令微调
 
 **4. 补充模型合并技术**
-- 文件: `05_大模型/07_微调技术/Model_Merging_2026.md`
+- 文件: `05_大模型/06_微调技术/Model_Merging_2026.md`
 - 内容:
   - SLERP / TIES / DARE
   - MergeKit 实战

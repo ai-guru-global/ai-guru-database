@@ -1,0 +1,66 @@
+{
+  "id": "csrc.attention.mla.cutlass_mla_kernels.cu",
+  "title": "Cutlass Mla Kernels",
+  "type": "module",
+  "summary": "Module providing Copyright, device, Fmha::get_workspace_size, TORCH_CHECK",
+  "details": "Contains 4 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) 2025, NVIDIA CORPORATION.  All rights reserved.\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n\n#include <torch/all.h>\n\n#include <ATen/cuda/CUDAContext.h>\n#include <c10/cuda/CUDAGuard.h>\n\n#include \"cute/tensor.hpp\"\n\n#include \"cutlass/cutlass.h\"\n#include \"cutlass/kernel_hardware_info.h\"\n\n#include \"cutlass_extensions/common.hpp\"\n\n#include \"device/sm100_mla.hpp\"\n#include \"kernel/sm100_mla_tile_scheduler.hpp\"\n\nusing namespace cute;\nusing namespace cutlass::fmha::kernel;\n\ntemplate <typename T, bool PersistenceOption = true>\nstruct MlaSm100 {\n  using Element = T;\n  using ElementAcc = float;\n  using ElementOut = T;\n\n  using TileShape = Shape<_128, _128, Shape<_512, _64>>;\n  using TileShapeH = cute::tuple_element_t<0, TileShape>;\n  using TileShapeD = cute::tuple_element_t<2, TileShape>;\n\n  // H K (D_latent D_rope) B\n  using ProblemShape = cute::tuple<TileShapeH, int, TileShapeD, int>;\n\n  using StrideQ = cute::tuple<int64_t, _1, int64_t>;  // H D B\n  using StrideK = cute::tuple<int64_t, _1, int64_t>;  // K D B\n  using StrideO = StrideK;                            // H D B\n  using StrideLSE = cute::tuple<_1, int>;             // H B\n\n  using TileScheduler =\n      std::conditional_t<PersistenceOption, Sm100MlaPersistentTileScheduler,\n                         Sm100MlaIndividualTileScheduler>;\n\n  using FmhaKernel =\n      cutlass::fmha::kernel::Sm100FmhaMlaKernelTmaWarpspecialized<\n          TileShape, Element, ElementAcc, ElementOut, ElementAcc, TileScheduler,\n          /*kIsCpAsync=*/true>;\n  using Fmha = cutlass::fmha::device::MLA<FmhaKernel>;\n};\n\ntemplate <typename T>\ntypename T::Fmha::Arguments args_from_options(\n    at::Tensor const& out, at::Tensor const& q_nope, at::Tensor const& q_pe,\n    at::Tensor const& kv_c_and_k_pe_cache, at::Tensor const& seq_lens,\n    at::Tensor const& page_table, double scale)",
+      "docstring": "",
+      "line": 1
+    },
+    {
+      "name": "device",
+      "kind": "function",
+      "signature": "device().index();\n  hw_info.sm_count =\n      cutlass::KernelHardwareInfo::query_device_multiprocessor_count(\n          hw_info.device_id);\n\n  int batches = q_nope.sizes()[0];\n  int page_count_per_seq = page_table.sizes()[1];\n  int page_count_total = kv_c_and_k_pe_cache.sizes()[0];\n  int page_size = kv_c_and_k_pe_cache.sizes()[1];\n  int max_seq_len = page_size * page_count_per_seq;\n  using TileShapeH = typename T::TileShapeH;\n  using TileShapeD = typename T::TileShapeD;\n  auto problem_shape =\n      cute::make_tuple(TileShapeH{}, max_seq_len, TileShapeD{}, batches);\n\n  auto [H, K, D, B] = problem_shape;\n  auto [D_latent, D_rope] = D;\n\n  using StrideQ = typename T::StrideQ;\n  using StrideK = typename T::StrideK;\n  using StrideO = typename T::StrideO;\n  using StrideLSE = typename T::StrideLSE;\n\n  StrideQ stride_Q_latent = cute::make_tuple(\n      static_cast<int64_t>(D_latent), _1{}, static_cast<int64_t>(H * D_latent));\n  StrideQ stride_Q_rope = cute::make_tuple(static_cast<int64_t>(D_rope), _1{},\n                                           static_cast<int64_t>(H * D_rope));\n  StrideK stride_C =\n      cute::make_tuple(static_cast<int64_t>(D_latent + D_rope), _1{},\n                       static_cast<int64_t>(page_size * (D_latent + D_rope)));\n  StrideLSE stride_PT = cute::make_stride(_1{}, page_count_per_seq);\n  StrideLSE stride_LSE = cute::make_tuple(_1{}, static_cast<int>(H));\n  StrideO stride_O = cute::make_tuple(static_cast<int64_t>(D_latent), _1{},\n                                      static_cast<int64_t>(H * D_latent));\n\n  using Element = typename T::Element;\n  using ElementOut = typename T::ElementOut;\n  using ElementAcc = typename T::ElementAcc;\n  auto Q_latent_ptr = static_cast<Element*>(q_nope.data_ptr());\n  auto Q_rope_ptr = static_cast<Element*>(q_pe.data_ptr());\n  auto C_ptr = static_cast<Element*>(kv_c_and_k_pe_cache.data_ptr());\n  auto scale_f = static_cast<float>(scale);\n  typename T::Fmha::Arguments arguments{\n      problem_shape,\n      {scale_f, Q_latent_ptr, stride_Q_latent, Q_rope_ptr, stride_Q_rope, C_ptr,\n       stride_C, C_ptr + D_latent, stride_C,\n       static_cast<int*>(seq_lens.data_ptr()),\n       static_cast<int*>(page_table.data_ptr()), stride_PT, page_count_total,\n       page_size},\n      {static_cast<ElementOut*>(out.data_ptr()), stride_O,\n       static_cast<ElementAcc*>(nullptr), stride_LSE},\n      hw_info,\n      1,        // split_kv\n      nullptr,  // is_var_split_kv\n  };\n  // TODO(kaixih@nvidia): When split_kv=-1 and is_var_split_kv=false, we compute\n  // split_kv automatically based on batch size and sequence length to balance\n  // workload across available SMs. Consider using var_split_kv for manual\n  // control if needed.\n  T::Fmha::set_split_kv(arguments);\n  return arguments;\n}\n\ntemplate <typename Element>\nvoid runMla(at::Tensor const& out, at::Tensor const& q_nope,\n            at::Tensor const& q_pe, at::Tensor const& kv_c_and_k_pe_cache,\n            at::Tensor const& seq_lens, at::Tensor const& page_table,\n            float scale, cudaStream_t stream)",
+      "docstring": "",
+      "line": 70
+    },
+    {
+      "name": "Fmha::get_workspace_size",
+      "kind": "function",
+      "signature": "Fmha::get_workspace_size(arguments);\n  auto const workspace_options =\n      torch::TensorOptions().dtype(torch::kUInt8).device(q_nope.device());\n  auto workspace = torch::empty(workspace_size, workspace_options);\n\n  CUTLASS_CHECK(fmha.can_implement(arguments));\n\n  CUTLASS_CHECK(fmha.initialize(arguments, workspace.data_ptr(), stream));\n\n  CUTLASS_CHECK(fmha.run(arguments, workspace.data_ptr(), stream));\n}\n\nvoid cutlass_mla_decode_sm100a(torch::Tensor const& out,\n                               torch::Tensor const& q_nope,\n                               torch::Tensor const& q_pe,\n                               torch::Tensor const& kv_c_and_k_pe_cache,\n                               torch::Tensor const& seq_lens,\n                               torch::Tensor const& page_table, double scale)",
+      "docstring": "",
+      "line": 142
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(q_nope.device().is_cuda(), \"q_nope must be on CUDA\");\n  TORCH_CHECK(q_nope.dim() == 3, \"q_nope must be a 3D tensor\");\n  TORCH_CHECK(q_pe.dim() == 3, \"q_pe must be a 3D tensor\");\n  TORCH_CHECK(kv_c_and_k_pe_cache.dim() == 3,\n              \"kv_c_and_k_pe_cache must be a 3D tensor\");\n  TORCH_CHECK(seq_lens.dim() == 1, \"seq_lens must be a 1D tensor\");\n  TORCH_CHECK(page_table.dim() == 2, \"page_table must be a 2D tensor\");\n  TORCH_CHECK(out.dim() == 3, \"out must be a 3D tensor\");\n\n  auto B_q_nope = q_nope.size(0);\n  auto H_q_nope = q_nope.size(1);\n  auto D_q_nope = q_nope.size(2);\n  auto B_q_pe = q_pe.size(0);\n  auto H_q_pe = q_pe.size(1);\n  auto D_q_pe = q_pe.size(2);\n  auto B_pt = page_table.size(0);\n  auto PAGE_NUM = page_table.size(1);\n  auto PAGE_SIZE = kv_c_and_k_pe_cache.size(1);\n  auto D_ckv = kv_c_and_k_pe_cache.size(2);\n  auto B_o = out.size(0);\n  auto H_o = out.size(1);\n  auto D_o = out.size(2);\n\n  TORCH_CHECK(D_q_nope == 512, \"D_q_nope must be equal to 512\");\n  TORCH_CHECK(D_q_pe == 64, \"D_q_pe must be equal to 64\");\n  TORCH_CHECK(D_ckv == 576, \"D_ckv must be equal to 576\");\n  TORCH_CHECK(H_q_nope == H_q_pe && H_q_nope == H_o && H_o == 128,\n              \"H_q_nope, H_q_pe, and H_o must be equal to 128\");\n  TORCH_CHECK(PAGE_SIZE > 0 && (PAGE_SIZE & (PAGE_SIZE - 1)) == 0,\n              \"PAGE_SIZE must be a power of 2\");\n  TORCH_CHECK(\n      B_q_nope == B_q_pe && B_q_nope == B_pt && B_q_nope == B_o,\n      \"Batch dims must be same for page_table, q_nope and q_pe, and out\");\n  TORCH_CHECK(PAGE_NUM % (128 / PAGE_SIZE) == 0,\n              \"PAGE_NUM must be divisible by 128 / PAGE_SIZE\");\n  TORCH_CHECK(D_o == 512, \"D_o must be equal to 512\");\n\n  TORCH_CHECK(q_nope.dtype() == at::ScalarType::Half ||\n                  q_nope.dtype() == at::ScalarType::BFloat16 ||\n                  q_nope.dtype() == at::ScalarType::Float8_e4m3fn,\n              \"q_nope must be a half, bfloat16, or float8_e4m3fn tensor\");\n  TORCH_CHECK(kv_c_and_k_pe_cache.dtype() == q_nope.dtype() &&\n                  q_nope.dtype() == q_pe.dtype(),\n              \"kv_c_and_k_pe_cache, q_nope, and q_pe must be the same type\");\n  TORCH_CHECK(seq_lens.dtype() == torch::kInt32,\n              \"seq_lens must be a 32-bit integer tensor\");\n  TORCH_CHECK(page_table.dtype() == torch::kInt32,\n              \"page_table must be a 32-bit integer tensor\");\n\n  auto in_dtype = q_nope.dtype();\n  at::cuda::CUDAGuard device_guard{(char)q_nope.get_device()};\n  const cudaStream_t stream =\n      at::cuda::getCurrentCUDAStream(q_nope.get_device());\n  if (in_dtype == at::ScalarType::Half)",
+      "docstring": "",
+      "line": 159
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "c10",
+      "cute",
+      "cutlass",
+      "cutlass_extensions",
+      "device",
+      "kernel",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 4,
+    "public_symbols": 4,
+    "classes": 0,
+    "functions": 4,
+    "internal_deps": 0,
+    "external_deps": 8,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/attention/mla/cutlass_mla_kernels.cu"
+}

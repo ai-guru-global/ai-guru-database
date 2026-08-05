@@ -1,0 +1,45 @@
+{
+  "id": "csrc.cuda_utils_kernels.cu",
+  "title": "Cuda Utils Kernels",
+  "type": "module",
+  "summary": "Module providing get_device_attribute, CUDA_CHECK",
+  "details": "Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "get_device_attribute",
+      "kind": "function",
+      "signature": "get_device_attribute(int64_t attribute, int64_t device_id)",
+      "docstring": "",
+      "line": 5
+    },
+    {
+      "name": "CUDA_CHECK",
+      "kind": "function",
+      "signature": "CUDA_CHECK(cudaGetDevice(&device));\n    }\n    int value;\n    CUDA_CHECK(cudaDeviceGetAttribute(\n        &value, static_cast<cudaDeviceAttr>(attribute), device));\n    return static_cast<int>(value);\n  }();\n\n  return value;\n}\n\nint64_t get_max_shared_memory_per_block_device_attribute(int64_t device_id)",
+      "docstring": "",
+      "line": 11
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cuda_utils",
+      "hip"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 2,
+    "public_symbols": 2,
+    "classes": 0,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cuda_utils_kernels.cu"
+}

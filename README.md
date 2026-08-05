@@ -469,8 +469,8 @@ graph LR
 <tr>
 <td>
 
-- [中国大模型生态全景](./05_大模型/15_中国LLM生态/README.md) - DeepSeek/Qwen/GLM/Kimi/MiniMax/MiMo 六大厂商
-- [国际大模型生态全景](./05_大模型/14_全球LLM生态/README.md) - OpenAI/Google/Anthropic/Meta/Mistral 五大厂商
+- [中国大模型生态全景](./05_大模型/14_中国LLM生态/README.md) - DeepSeek/Qwen/GLM/Kimi/MiniMax/MiMo 六大厂商
+- [国际大模型生态全景](./05_大模型/13_全球LLM生态/README.md) - OpenAI/Google/Anthropic/Meta/Mistral 五大厂商
 - [LLMOps 2026](11_模型运维/10_LLMOps_大模型运维/05_LLMOps_2026.md) - 大模型时代的 MLOps 升级（⭐ 独家主线）
 - [模型问题排查手册](07_模型训练/07_训练监控/03_模型_故障排查_指南.md) - 预训练/微调/推理全链路故障诊断
 - [LLM 基准测试全景](08_模型评估/02_基准测试/07_LLM_基准测试_Suite_2026.md) - MMLU/SWE-bench/AIME/GPQA 全基准解读
@@ -479,7 +479,7 @@ graph LR
 </td>
 <td>
 
-- [LLM 架构 2026](05_大模型/05_LLM架构/05_LLM架构.md) - GPT-5.2, Claude 4.5, 推理模型
+- [LLM 架构 2026](05_大模型/04_LLM架构/05_LLM架构.md) - GPT-5.2, Claude 4.5, 推理模型
 - [AI 硬件 2026](01_数学基础/10_AI硬件/01_AI硬件_2026.md) - H100/H200/B200, GPU 选型
 - [Scaling Laws 与训练动力学](07_模型训练/03_训练优化/06_扩展定律_and_训练_Dynamics.md) - Chinchilla/Kaplan/涌现能力
 - [GRPO 与新对齐方法](07_模型训练/06_对齐研究/02_GRPO_and_新型_对齐_Methods.md) - GRPO/DPO/RLHF/RLOO
@@ -562,7 +562,7 @@ zip -r ai-guru-core.zip 入门 大模型 MLOps Agent
 
 **建议的 Agent 使用方式**:
 1. 将整个仓库根目录作为知识库导入
-2. 使用文件路径作为上下文引用（如 `05_大模型/05_LLM架构/05_LLM架构.md`）
+2. 使用文件路径作为上下文引用（如 `05_大模型/04_LLM架构/05_LLM架构.md`）
 3. 结合章节 README 快速定位内容
 4. 利用 概念/ 做概念查询，治理/ 做跨域关联
 

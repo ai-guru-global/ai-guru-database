@@ -1,0 +1,135 @@
+{
+  "id": "csrc.quantization.gptq_marlin.dequant.h",
+  "title": "Dequant",
+  "type": "module",
+  "summary": "Module providing Dequantization, volatile, volatile, id, __hsub2 and 5 more symbols",
+  "details": "Contains 25 functions/methods",
+  "symbols": [
+    {
+      "name": "Dequantization",
+      "kind": "function",
+      "signature": "Dequantization(Converting INT4/INT8/FP4/FP8 to FP16/BF16)\n\nThe process of fast dequantization can be summarized as a combination\nof bitwise operations and floating-point computations:\n\nweight =>(bit_op / bitwise operations)=>\nf16_value =>(flop / floating-point computation)=>\ndequantized_weight\n\nSince the dequantized weights typically require subtracting the zero point and\napplying a scale factor, the floating-point computation step can be fused with\nthe zero-point subtraction and scaling operations.\n\nThe following are the parts that need to be modified for the fused operation\nof zero-point subtraction and scaling.\n\n## INT4 => FP16/BF16 or INT8 => FP16\n\nThe floating-point computation is `__hsub2`\n\nIf has zero points:\n\n    flop(bit_op(weight)) - flop(bit_op(zp))\n  = sub(bit_op(weight), bias) - sub(bit_op(zp), bias)\n  = bit_op(weight) - bit_op(zp)\n\nso we don't need additional modification.\n\nIf has float zero points:\n\n    flop(bit_op(weight)) - fzp\n  = sub(bit_op(weight), bias) - fzp\n  = bit_op(weight) - (fzp + bias)\n\nwhere the `fzp + bias` can be computed at weight loading. But this\nmay have accuracy issue, so we should not use this in most cases.\n\nIf has not zero points:\n\n    scale(flop(bit_op(weight)))\n  = scale(sub(bit_op(weight), bias))\n  = scale(bit_op(weight)) - scale(bias)\n  = fma(bit_op(weight), scale_factor, scale(bias))\n\nwhere the `scale(bias)` can be cached. But this may have accuracy issue,\nso we should not use this in most cases.\n\n\n## INT8 => BF16\n\nINT8 => BF16 is a special case, it use byte_perm instead of flop.\nWe cannot fused byte_perm with scaling.\n\n\n## FP4/FP8 => FP16/BF16\n\n    scale(flop(bit_op(weight)))\n  = scale(mul(bit_op(weight), multiplier))\n  = mul(bit_op(weight), scale_factor * multiplier)\n\nwhere `scale_factor * multiplier` can be computed at weight loading.\n\n*/\n\n#include \"marlin_dtypes.cuh\"\n\nnamespace MARLIN_NAMESPACE_NAME {\n\n#if !defined(__CUDA_ARCH__) || __CUDA_ARCH__ >= 800\n// Lookup-table based 3-input logical operation; explicitly used for\n// dequantization as the compiler does not seem to automatically recognize it in\n// all cases.\ntemplate <int lut>\n__device__ inline int lop3(int a, int b, int c)",
+      "docstring": "",
+      "line": 1
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\"lop3.b32 %0, %1, %2, %3, %4;\\n\"\n               : \"=r\"(res)\n               : \"r\"(a), \"r\"(b), \"r\"(c), \"n\"(lut));\n  return res;\n}\n\n// Constructs destination register by taking bytes from 2 sources (based on\n// mask)\ntemplate <int start_byte, int mask>\n__device__ inline uint32_t prmt(uint32_t a)",
+      "docstring": "",
+      "line": 76
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\"prmt.b32 %0, %1, %2, %3;\\n\"\n               : \"=r\"(res)\n               : \"r\"(a), \"n\"(start_byte), \"n\"(mask));\n  return res;\n}\n\ntemplate <typename scalar_t2, vllm::ScalarTypeId w_type_id,\n          bool skip_flop = false>\n__device__ inline void dequant(int q, scalar_t2* frag_b);\n\n//\n// Efficiently dequantize 4bit values packed in an int32 value into a full\n// B-fragment of 4 fp16 values. We mostly follow the strategy in the link below,\n// with some small changes:\n// - FP16:\n// https://github.com/NVIDIA/FasterTransformer/blob/release/v5.3_tag/src/fastertransformer/cutlass_extensions/include/cutlass_extensions/interleaved_numeric_conversion.h#L215-L287\n// - BF16:\n// https://github.com/NVIDIA/FasterTransformer/blob/release/v5.3_tag/src/fastertransformer/cutlass_extensions/include/cutlass_extensions/interleaved_numeric_conversion.h#L327-L385\n//\ntemplate <>\n__device__ inline void dequant<half2, vllm::kU4B8.id(), true>(int q,\n                                                              half2* frag_b)",
+      "docstring": "",
+      "line": 87
+    },
+    {
+      "name": "id",
+      "kind": "function",
+      "signature": "id(), false>(int q,\n                                                               half2* frag_b)",
+      "docstring": "",
+      "line": 122
+    },
+    {
+      "name": "__hsub2",
+      "kind": "function",
+      "signature": "__hsub2(*reinterpret_cast<half2*>(&lo),\n                      *reinterpret_cast<const half2*>(&SUB));\n  frag_b[1] = __hfma2(*reinterpret_cast<half2*>(&hi),\n                      *reinterpret_cast<const half2*>(&MUL),\n                      *reinterpret_cast<const half2*>(&ADD));\n}\n\ntemplate <>\n__device__ inline void dequant<half2, vllm::kU4.id(), true>(int q,\n                                                            half2* frag_b)",
+      "docstring": "",
+      "line": 137
+    },
+    {
+      "name": "id",
+      "kind": "function",
+      "signature": "id(), true>(q, frag_b);\n}\n\ntemplate <>\n__device__ inline void dequant<half2, vllm::kU4.id(), false>(int q,\n                                                             half2* frag_b)",
+      "docstring": "",
+      "line": 147
+    },
+    {
+      "name": "__hsub2",
+      "kind": "function",
+      "signature": "__hsub2(*reinterpret_cast<half2*>(&lo),\n                      *reinterpret_cast<const half2*>(&SUB));\n  frag_b[1] = __hfma2(*reinterpret_cast<half2*>(&hi),\n                      *reinterpret_cast<const half2*>(&MUL),\n                      *reinterpret_cast<const half2*>(&ADD));\n}\n\ntemplate <>\n__device__ inline void dequant<nv_bfloat162, vllm::kU4B8.id(), true>(\n    int q, nv_bfloat162* frag_b)",
+      "docstring": "",
+      "line": 166
+    },
+    {
+      "name": "id",
+      "kind": "function",
+      "signature": "id(), false>(\n    int q, nv_bfloat162* frag_b)",
+      "docstring": "",
+      "line": 191
+    },
+    {
+      "name": "id",
+      "kind": "function",
+      "signature": "id(), true>(q, frag_b);\n\n  static constexpr uint32_t SUB = 0x43084308;\n\n  frag_b[0] = __hsub2(frag_b[0], *reinterpret_cast<const nv_bfloat162*>(&SUB));\n  frag_b[1] = __hsub2(frag_b[1], *reinterpret_cast<const nv_bfloat162*>(&SUB));\n}\n\ntemplate <>\n__device__ inline void dequant<nv_bfloat162, vllm::kU4.id(), true>(\n    int q, nv_bfloat162* frag_b)",
+      "docstring": "",
+      "line": 193
+    },
+    {
+      "name": "id",
+      "kind": "function",
+      "signature": "id(), true>(q, frag_b);\n}\n\ntemplate <>\n__device__ inline void dequant<nv_bfloat162, vllm::kU4.id(), false>(\n    int q, nv_bfloat162* frag_b)",
+      "docstring": "",
+      "line": 204
+    },
+    {
+      "name": "id",
+      "kind": "function",
+      "signature": "id(), true>(q, frag_b);\n\n  static constexpr uint32_t SUB = 0x43004300;\n\n  frag_b[0] = __hsub2(frag_b[0], *reinterpret_cast<const nv_bfloat162*>(&SUB));\n  frag_b[1] = __hsub2(frag_b[1], *reinterpret_cast<const nv_bfloat162*>(&SUB));\n}\n\n//\n// Fast Int8ToFp16/Int8ToBf16: Efficiently dequantize 8bit int values to fp16 or\n// bf16 Reference:\n// - FP16:\n// https://github.com/NVIDIA/FasterTransformer/blob/release/v5.3_tag/src/fastertransformer/cutlass_extensions/include/cutlass_extensions/interleaved_numeric_conversion.h#L53-L85\n// - BF16:\n// https://github.com/NVIDIA/FasterTransformer/blob/release/v5.3_tag/src/fastertransformer/cutlass_extensions/include/cutlass_extensions/interleaved_numeric_conversion.h#L125-L175\n//\ntemplate <>\n__device__ inline void dequant<half2, vllm::kU8B128.id(), true>(int q,\n                                                                half2* frag_b)",
+      "docstring": "",
+      "line": 210
+    },
+    {
+      "name": "id",
+      "kind": "function",
+      "signature": "id(), false>(\n    int q, half2* frag_b)",
+      "docstring": "",
+      "line": 241
+    },
+    {
+      "name": "id",
+      "kind": "function",
+      "signature": "id(), true>(q, frag_b);\n\n  static constexpr uint32_t I8s_TO_F16s_MAGIC_NUM = 0x64806480;\n  frag_b[0] = __hsub2(frag_b[0],\n                      *reinterpret_cast<const half2*>(&I8s_TO_F16s_MAGIC_NUM));\n  frag_b[1] = __hsub2(frag_b[1],\n                      *reinterpret_cast<const half2*>(&I8s_TO_F16s_MAGIC_NUM));\n}\n\ntemplate <>\n__device__ inline void dequant<half2, vllm::kU8.id(), true>(int q,\n                                                            half2* frag_b)",
+      "docstring": "",
+      "line": 243
+    },
+    {
+      "name": "id",
+      "kind": "function",
+      "signature": "id(), true>(q, frag_b);\n}\n\ntemplate <>\n__device__ inline void dequant<half2, vllm::kU8.id(), false>(int q,\n                                                             half2* frag_b)",
+      "docstring": "",
+      "line": 255
+    },
+    {
+      "name": "id",
+      "kind": "function",
+      "signature": "id(), true>(q, frag_b);\n\n  static constexpr uint32_t I8s_TO_F16s_MAGIC_NUM = 0x64006400;\n  frag_b[0] = __hsub2(frag_b[0],\n                      *reinterpret_cast<const half2*>(&I8s_TO_F16s_MAGIC_NUM));\n  frag_b[1] = __hsub2(frag_b[1],\n                      *reinterpret_cast<const half2*>(&I8s_TO_F16s_MAGIC_NUM));\n}\n\ntemplate <>\n__device__ inline void dequant<nv_bfloat162, vllm::kU8B128.id(), false>(\n    int q, nv_bfloat162* frag_b)",
+      "docstring": "",
+      "line": 261
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "marlin_dtypes"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 25,
+    "public_symbols": 25,
+    "classes": 0,
+    "functions": 25,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/gptq_marlin/dequant.h"
+}

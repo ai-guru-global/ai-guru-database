@@ -1,0 +1,79 @@
+{
+  "id": "csrc.quantization.fused_kernels.quant_conversions.cuh",
+  "title": "Quant Conversions",
+  "type": "module",
+  "summary": "Module providing TODO, min, fmax, constexpr, float_to_int8_rn and 2 more symbols",
+  "details": "Contains 7 functions/methods",
+  "symbols": [
+    {
+      "name": "TODO",
+      "kind": "function",
+      "signature": "TODO(luka/varun):refactor common.cuh to use this file instead\n#include \"quantization/fp8/common.cuh\"\n\nnamespace vllm {\n\n// TODO(luka/varun): combine into common utilities for int8\n//  (with int8_quant_kernels.cu)\nstatic __device__ __forceinline__ int8_t float_to_int8_rn(float const x)",
+      "docstring": "",
+      "line": 8
+    },
+    {
+      "name": "min",
+      "kind": "function",
+      "signature": "min());\n  static const float i8_max =\n      static_cast<float>(std::numeric_limits<int8_t>::max());\n  // round\n  float dst = std::nearbyint(x);\n  // saturate\n\n  // See https://github.com/pytorch/pytorch/issues/127666\n  // See https://github.com/llvm/llvm-project/issues/95183\n  // hip-clang std::clamp __glibcxx_assert_fail host function when building on\n  // Arch/gcc14. The following replaces std::clamp usage with similar logic\n  // dst = std::clamp(dst, i8_min, i8_max);\n  dst = (dst < i8_min) ? i8_min : (dst > i8_max) ? i8_max : dst;\n  return static_cast<int8_t>(dst);\n#else\n  // CUDA path\n  uint32_t dst;\n  asm volatile(\"cvt.rni.sat.s8.f32 %0, %1;\" : \"=r\"(dst) : \"f\"(x));\n  return reinterpret_cast<const int8_t&>(dst);\n#endif\n}\n\ntemplate <typename fp8_type>\nstatic __device__ __forceinline__ fp8_type float_to_fp8(float const x)",
+      "docstring": "",
+      "line": 18
+    },
+    {
+      "name": "fmax",
+      "kind": "function",
+      "signature": "fmax(-quant_type_max_v<fp8_type>, fmin(x, quant_type_max_v<fp8_type>));\n  return static_cast<fp8_type>(r);\n}\n\ntemplate <typename quant_type_t, bool is_scale_inverted, typename enable = void>\nstruct ScaledQuant;\n\ntemplate <typename quant_type_t, bool is_scale_inverted>\nstruct ScaledQuant<\n    quant_type_t, is_scale_inverted,\n    typename std::enable_if_t<std::is_same_v<quant_type_t, int8_t>>> {\n  static __device__ __forceinline__ quant_type_t quant_fn(float const x,\n                                                          float const scale)",
+      "docstring": "",
+      "line": 42
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(is_scale_inverted)",
+      "docstring": "",
+      "line": 55
+    },
+    {
+      "name": "float_to_int8_rn",
+      "kind": "function",
+      "signature": "float_to_int8_rn(x * scale);\n    } else {\n      return float_to_int8_rn(x / scale);\n    }\n  }\n};\n\ntemplate <typename quant_type_t, bool is_scale_inverted>\nstruct ScaledQuant<quant_type_t, is_scale_inverted,\n                   typename std::enable_if_t<\n                       std::is_same_v<quant_type_t, c10::Float8_e4m3fn> ||\n                       std::is_same_v<quant_type_t, c10::Float8_e4m3fnuz>>> {\n  static __device__ __forceinline__ quant_type_t quant_fn(float const x,\n                                                          float const scale)",
+      "docstring": "",
+      "line": 56
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(is_scale_inverted)",
+      "docstring": "",
+      "line": 70
+    },
+    {
+      "name": "scaled_quant_conversion",
+      "kind": "function",
+      "signature": "scaled_quant_conversion(quant_type_t* __restrict__ output,\n                                        scalar_t const* __restrict__ input,\n                                        float const scale, int const tid,\n                                        int const num_elements,\n                                        int const step)",
+      "docstring": "",
+      "line": 77
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "quantization"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 7,
+    "public_symbols": 7,
+    "classes": 0,
+    "functions": 7,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/fused_kernels/quant_conversions.cuh"
+}

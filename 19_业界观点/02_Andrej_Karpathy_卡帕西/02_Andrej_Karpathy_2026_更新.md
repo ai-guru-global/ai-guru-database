@@ -25,7 +25,7 @@ name_zh: "安德烈·卡帕西 2026 动态"
 
 ### 背景回顾
 
-Andrej Karpathy（1985 年生于前捷克斯洛伐克），斯坦福大学计算机科学博士（2015，师从 [[19_业界观点/09_Fei_Fei_Li_李飞飞/03_索引|Fei-Fei Li]]），OpenAI 创始成员（2015-2017）、Tesla AI 总监（2017-2022，主导 Autopilot 纯视觉方案）、OpenAI 短暂回归（2023-2024）。2024 年创立 Eureka Labs，专注 AI 教育。他是"Software 2.0"（2017）概念提出者、"Vibe Coding"（2025）术语首创者、Stanford CS231n 课程缔造者、nanoGPT/llm.c 作者。被业界公认为"AI 领域最好的老师"。
+Andrej Karpathy（1985 年生于前捷克斯洛伐克），斯坦福大学计算机科学博士（2015，师从 [[19_业界观点/09_Fei_Fei_Li_李飞飞/INDEX|Fei-Fei Li]]），OpenAI 创始成员（2015-2017）、Tesla AI 总监（2017-2022，主导 Autopilot 纯视觉方案）、OpenAI 短暂回归（2023-2024）。2024 年创立 Eureka Labs，专注 AI 教育。他是"Software 2.0"（2017）概念提出者、"Vibe Coding"（2025）术语首创者、Stanford CS231n 课程缔造者、nanoGPT/llm.c 作者。被业界公认为"AI 领域最好的老师"。
 
 #### Karpathy 2026 关键时间线
 
@@ -204,7 +204,7 @@ Karpathy 的教育哲学：
 Karpathy 的中间立场：
 
 - 承认 AI 风险，但不接受"末日论"
-- 介于 [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]]（乐观）和 [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]]（悲观）之间
+- 介于 [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]]（乐观）和 [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]]（悲观）之间
 - 认为教育是缓解风险的关键
 - 关注"AI 素养"而非"AI 恐慌"
 
@@ -223,7 +223,7 @@ Karpathy 的判断（2026 更新）：
 
 ### 与其他 AI 教育者的对比
 
-| 维度 | Karpathy | [[19_业界观点/03_Andrew_Ng_吴恩达/03_索引|Andrew Ng]] | [[19_业界观点/15_Josh_Starmer_斯塔默/02_索引|Josh Starmer]] |
+| 维度 | Karpathy | [[19_业界观点/03_Andrew_Ng_吴恩达/INDEX|Andrew Ng]] | [[19_业界观点/15_Josh_Starmer_斯塔默/INDEX|Josh Starmer]] |
 |------|----------|---------|-------------|
 | 背景 | 工程实践 | 学术+创业 | 统计教育 |
 | 风格 | 从零构建 | 系统课程 | 故事化讲解 |
@@ -236,9 +236,9 @@ Karpathy 的判断（2026 更新）：
 
 | 雇主 | 关系 | 2026 互动 |
 |------|------|-----------|
-| Tesla（[[19_业界观点/07_Elon_Musk_马斯克/03_索引|Musk]]） | 前员工 | 偶尔回顾 Autopilot |
-| OpenAI（[[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]]） | 创始成员 | 保持友好，不站队 |
-| Stanford（[[19_业界观点/09_Fei_Fei_Li_李飞飞/03_索引|Fei-Fei Li]]） | 校友 | 学术合作 |
+| Tesla（[[19_业界观点/07_Elon_Musk_马斯克/INDEX|Musk]]） | 前员工 | 偶尔回顾 Autopilot |
+| OpenAI（[[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]]） | 创始成员 | 保持友好，不站队 |
+| Stanford（[[19_业界观点/09_Fei_Fei_Li_李飞飞/INDEX|Fei-Fei Li]]） | 校友 | 学术合作 |
 
 ### 对产业格局的影响
 

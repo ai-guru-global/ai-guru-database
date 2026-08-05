@@ -189,7 +189,7 @@ Murati 在 Thinking Machines 的核心差异化：
 | 目标 | 可解释决策 |
 | 方法 | 可解释性研究 |
 | 价值 | 信任+安全 |
-| 与 [[19_业界观点/11_Ilya_Sutskever_苏茨克维/03_索引|SSI]] | 不同路线（SSI 追求数学证明） |
+| 与 [[19_业界观点/11_Ilya_Sutskever_苏茨克维/INDEX|SSI]] | 不同路线（SSI 追求数学证明） |
 
 ### 关于 AGI
 
@@ -199,7 +199,7 @@ Murati 在 Thinking Machines 的核心差异化：
 | 前提 | 安全+可理解 |
 | 时间线 | 5-10 年 |
 | 路径 | 多模态+理解 |
-| 与 [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] | 接近但更注重可理解性 |
+| 与 [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] | 接近但更注重可理解性 |
 
 ### 关于 AI 监管
 
@@ -217,7 +217,7 @@ Murati 在 Thinking Machines 的核心差异化：
 
 ### 与其他 AI 创业领袖的对比
 
-| 维度 | Murati | [[19_业界观点/11_Ilya_Sutskever_苏茨克维/03_索引|Sutskever]]（SSI） | [[19_业界观点/09_Fei_Fei_Li_李飞飞/03_索引|Fei-Fei Li]]（World Labs） |
+| 维度 | Murati | [[19_业界观点/11_Ilya_Sutskever_苏茨克维/INDEX|Sutskever]]（SSI） | [[19_业界观点/09_Fei_Fei_Li_李飞飞/INDEX|Fei-Fei Li]]（World Labs） |
 |------|--------|---------|---------|
 | 2026 公司 | Thinking Machines | SSI | World Labs |
 | 估值 | $100B | $50B | $10B |
@@ -228,7 +228,7 @@ Murati 在 Thinking Machines 的核心差异化：
 
 ### 与前 OpenAI 同事的对比
 
-| 维度 | Murati | [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] | [[19_业界观点/11_Ilya_Sutskever_苏茨克维/03_索引|Sutskever]] |
+| 维度 | Murati | [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] | [[19_业界观点/11_Ilya_Sutskever_苏茨克维/INDEX|Sutskever]] |
 |------|--------|---------|---------|
 | OpenAI 角色 | CTO | CEO | 首席科学家 |
 | 离开时间 | 2024.09 | 留任 | 2024 |

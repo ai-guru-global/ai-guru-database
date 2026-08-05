@@ -10,7 +10,7 @@ relationships:
   - target: "概念/Training/sft"
     type: related_to
 sources:
-  - 05_大模型/07_微调技术/
+  - 05_大模型/06_微调技术/
   - 07_模型训练/
 summary: "LLaMA-Factory 是最流行的开源 LLM 微调框架之一，统一支持百余种模型的 SFT/LoRA/QLoRA/DPO/PPO 训练，提供 WebUI 零代码微调，是中文社区微调的事实标准工具。"
 provenance:

@@ -16,8 +16,8 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.8
 sources:
-  - 05_大模型/09_推理模型/o1_Class_Reasoning_Models.md
-  - 05_大模型/09_推理模型/Process_Reward_Models.md
+  - 05_大模型/08_推理模型/o1_Class_Reasoning_Models.md
+  - 05_大模型/08_推理模型/Process_Reward_Models.md
 relationships:
   - target: "概念/cot-react-reasoning-prompt"
     type: related_to
@@ -57,8 +57,8 @@ Process Reward Model ≈ 逐步验证逻辑正确性
 
 ## 相关阅读
 
-- [[05_大模型/09_推理模型/04_o1_Class_推理模型]] — o1 类推理模型
-- [[05_大模型/09_推理模型/06_Process_Reward_模型]] — 过程奖励模型
+- [[05_大模型/08_推理模型/04_o1_Class_推理模型]] — o1 类推理模型
+- [[05_大模型/08_推理模型/06_Process_Reward_模型]] — 过程奖励模型
 - [[01_数学基础/07_数据结构与算法/01_Data_Structures_Algorithms]] — 数据结构 与算法
 
 ---

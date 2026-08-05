@@ -1,0 +1,55 @@
+{
+  "id": "benchmarks.disagg_benchmarks.disagg_prefill_proxy_server",
+  "title": "Disagg Prefill Proxy Server",
+  "type": "module",
+  "summary": "Module providing forward_request, handle_request, AIOHTTP_TIMEOUT",
+  "details": "Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "forward_request",
+      "kind": "function",
+      "signature": "def forward_request(url, data)",
+      "docstring": "",
+      "line": 14
+    },
+    {
+      "name": "handle_request",
+      "kind": "function",
+      "signature": "def handle_request()",
+      "docstring": "",
+      "line": 28
+    },
+    {
+      "name": "AIOHTTP_TIMEOUT",
+      "kind": "constant",
+      "signature": "AIOHTTP_TIMEOUT = ...",
+      "docstring": "",
+      "line": 9
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "aiohttp",
+      "os",
+      "quart",
+      "sys",
+      "traceback"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 3,
+    "public_symbols": 3,
+    "classes": 0,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 5,
+    "depth": 0,
+    "complexity_sum": 12
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/disagg_benchmarks/disagg_prefill_proxy_server.py"
+}

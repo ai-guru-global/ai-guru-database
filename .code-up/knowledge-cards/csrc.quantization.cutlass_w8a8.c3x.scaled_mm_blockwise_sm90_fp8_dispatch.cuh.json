@@ -1,0 +1,68 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_blockwise_sm90_fp8_dispatch.cuh",
+  "title": "Scaled Mm Blockwise Sm90 Fp8 Dispatch",
+  "type": "module",
+  "summary": "Module providing static_assert, c3x::get_problem_shape, sizes, device, size",
+  "details": "Contains 5 functions/methods",
+  "symbols": 
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(TileSizeM_ % GroupSizeM_ == 0,\n                \"TileSizeM must be a multiple of GroupSizeM\");\n\n  using ElementAB = cutlass::float_e4m3_t;\n\n  using ElementA = ElementAB;\n  using LayoutA = cutlass::layout::RowMajor;\n  static constexpr int AlignmentA = 128 / cutlass::sizeof_bits<ElementA>::value;\n\n  using ElementB = ElementAB;\n  using LayoutB = cutlass::layout::ColumnMajor;\n  static constexpr int AlignmentB = 128 / cutlass::sizeof_bits<ElementB>::value;\n\n  using ElementD = OutType;\n  using StrideD = Stride<int64_t, Int<1>, Int<0>>;\n  static constexpr int AlignmentD = 128 / cutlass::sizeof_bits<ElementD>::value;\n\n  using ElementC = void;\n  using StrideC = StrideD;\n  static constexpr int AlignmentC = AlignmentD;\n\n  using ElementAccumulator = float;\n  using ElementBlockScale = float;\n  using ElementCompute = float;\n  using ArchTag = cutlass::arch::Sm90;\n  using OperatorClass = cutlass::arch::OpClassTensorOp;\n  using TileShape = Shape<TileSizeM, GroupSizeN, GroupSizeK>;\n\n  using KernelSchedule = cutlass::gemm::\n      KernelTmaWarpSpecializedCooperativeFP8BlockScaledSubGroupMAccum<\n          GroupSizeM_>;\n  using EpilogueSchedule = cutlass::epilogue::TmaWarpSpecializedCooperative;\n  using EpilogueTileType = cutlass::epilogue::collective::EpilogueTileAuto;\n\n  using StoreEpilogueCompute = typename cutlass::epilogue::fusion::Sm90EVT<\n      cutlass::epilogue::fusion::Sm90AccFetch>;\n\n  using CollectiveEpilogue =\n      typename cutlass::epilogue::collective::CollectiveBuilder<\n          ArchTag, OperatorClass, TileShape, ClusterShape, EpilogueTileType,\n          ElementAccumulator, ElementCompute, ElementC, StrideC, AlignmentC,\n          ElementD, StrideD, AlignmentD, EpilogueSchedule,\n          StoreEpilogueCompute>::CollectiveOp;\n\n  using CollectiveMainloop =\n      typename cutlass::gemm::collective::CollectiveBuilder<\n          ArchTag, OperatorClass, ElementA, LayoutA, AlignmentA, ElementB,\n          LayoutB, AlignmentB, ElementAccumulator, TileShape, ClusterShape,\n          cutlass::gemm::collective::StageCountAutoCarveout<static_cast<int>(\n              sizeof(typename CollectiveEpilogue::SharedStorage))>,\n          KernelSchedule>::CollectiveOp;\n\n  using KernelType = enable_sm90_or_later<cutlass::gemm::kernel::GemmUniversal<\n      Shape<int, int, int, int>, CollectiveMainloop, CollectiveEpilogue,\n      SchedulerType>>;\n\n  struct GemmKernel : public KernelType {};\n\n  using StrideA = typename GemmKernel::StrideA;\n  using StrideB = typename GemmKernel::StrideB;\n};\n\ntemplate <typename Gemm>\nvoid cutlass_gemm_caller_blockwise(torch::Tensor& out, torch::Tensor const& a,\n                                   torch::Tensor const& b,\n                                   torch::Tensor const& a_scales,\n                                   torch::Tensor const& b_scales)",
+      "docstring": "",
+      "line": 32
+    },
+    {
+      "name": "c3x::get_problem_shape",
+      "kind": "function",
+      "signature": "c3x::get_problem_shape(a, b);\n  int32_t m = get<0>(prob_shape), n = get<1>(prob_shape),\n          k = get<2>(prob_shape);\n\n  int64_t lda = a.stride(0);\n  int64_t ldb = b.stride(1);\n  int64_t ldc = out.stride(0);\n\n  using StrideA = Stride<int64_t, Int<1>, int64_t>;\n  using StrideB = Stride<int64_t, Int<1>, int64_t>;\n  using StrideC = typename Gemm::StrideC;\n\n  StrideA a_stride{lda, Int<1>{}, 0};\n  StrideB b_stride{ldb, Int<1>{}, 0};\n  StrideC c_stride{ldc, Int<1>{}, Int<0>{}};\n\n  auto a_ptr = static_cast<ElementAB*>(a.data_ptr());\n  auto b_ptr = static_cast<ElementAB*>(b.data_ptr());\n  auto a_scales_ptr = static_cast<float*>(a_scales.data_ptr());\n  auto b_scales_ptr = static_cast<float*>(b_scales.data_ptr());\n\n  // Check is the t is contiguous and is 1D or 2D with one of the dimensions\n  // being 1 (i.e. a row or column vector)\n  auto is_contiguous_vector = [",
+      "docstring": "",
+      "line": 106
+    },
+    {
+      "name": "sizes",
+      "kind": "function",
+      "signature": "sizes();\n    return t.is_contiguous() &&\n           (t.dim() == 1 ||\n            (t.dim() == 2 &&\n             *std::min_element(t_sizes.begin(), t_sizes.end()) == 1));\n  };\n\n  // TODO(lucas): lets clean-up the kernel so that we pass in Strides so\n  //  we don't have to deal with enforcing implicit layouts\n  TORCH_CHECK(a_scales.size(0) == m / Gemm::GroupSizeM::value);\n  TORCH_CHECK(a_scales.size(1) == k / Gemm::GroupSizeK::value);\n  TORCH_CHECK(a_scales.stride(0) == 1 || is_contiguous_vector(a_scales),\n              \"a_scales must be M major\");\n  TORCH_CHECK(b_scales.size(0) == k / Gemm::GroupSizeK::value);\n  TORCH_CHECK(b_scales.size(1) == n / Gemm::GroupSizeN::value);\n  TORCH_CHECK(b_scales.stride(0) == 1 || is_contiguous_vector(b_scales),\n              \"b_scales must be K major\");\n  typename GemmKernel::MainloopArguments mainloop_args{\n      a_ptr, a_stride, b_ptr, b_stride, a_scales_ptr, b_scales_ptr};\n\n  auto c_ptr = static_cast<ElementD*>(out.data_ptr());\n  typename GemmKernel::EpilogueArguments epilogue_args{\n      {}, c_ptr, c_stride, c_ptr, c_stride};\n\n  typename GemmKernel::TileSchedulerArguments scheduler;\n\n  static constexpr bool UsesStreamKScheduler =\n      cute::is_same_v<typename GemmKernel::TileSchedulerTag,\n                      cutlass::gemm::StreamKScheduler>;\n\n  if constexpr (UsesStreamKScheduler)",
+      "docstring": "",
+      "line": 130
+    },
+    {
+      "name": "device",
+      "kind": "function",
+      "signature": "device(), prob_shape, mainloop_args,\n                                       epilogue_args, scheduler);\n}\n\ntemplate <typename OutType>\nvoid cutlass_gemm_blockwise_sm90_fp8_dispatch(torch::Tensor& out,\n                                              torch::Tensor const& a,\n                                              torch::Tensor const& b,\n                                              torch::Tensor const& a_scales,\n                                              torch::Tensor const& b_scales)",
+      "docstring": "",
+      "line": 170
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size(1);\n  auto n = b.size(1);\n\n  if (k > 3 * n)",
+      "docstring": "",
+      "line": 180
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cute",
+      "cutlass",
+      "cutlass_extensions",
+      "cutlass_gemm_caller"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 5,
+    "public_symbols": 5,
+    "classes": 0,
+    "functions": 5,
+    "internal_deps": 0,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/c3x/scaled_mm_blockwise_sm90_fp8_dispatch.cuh"
+}

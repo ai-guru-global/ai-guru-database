@@ -1,0 +1,138 @@
+{
+  "id": "benchmarks.kernels.benchmark_cutlass_fp4_moe",
+  "title": "Benchmark Cutlass Fp4 Moe",
+  "type": "module",
+  "summary": "Module providing to_fp8, bench_run, run_triton_moe, run_cutlass_moe_fp4, run_cutlass_from_graph and 5 more symbols",
+  "details": "Contains 8 functions/methods",
+  "symbols": [
+    {
+      "name": "to_fp8",
+      "kind": "function",
+      "signature": "def to_fp8(tensor: torch.Tensor)",
+      "docstring": "",
+      "line": 40
+    },
+    {
+      "name": "bench_run",
+      "kind": "function",
+      "signature": "def bench_run(\n    results: list[benchmark.Measurement],\n    model: str,\n    num_experts: int,\n    topk: int,\n    per_act_token: bool,\n    per_out_ch: bool,\n    mkn: tuple[int, int, int],\n)",
+      "docstring": "",
+      "line": 47
+    },
+    {
+      "name": "run_triton_moe",
+      "kind": "function",
+      "signature": "def run_triton_moe(\n        a: torch.Tensor,\n        w1: torch.Tensor,\n        w2: torch.Tensor,\n        topk_weights: torch.Tensor,\n        topk_ids: torch.Tensor,\n        w1_scale: torch.Tensor,\n        w2_scale: torch.Tensor,\n        a_fp8_scale: torch.Tensor,\n        num_repeats: int,\n    )",
+      "docstring": "",
+      "line": 132
+    },
+    {
+      "name": "run_cutlass_moe_fp4",
+      "kind": "function",
+      "signature": "def run_cutlass_moe_fp4(\n        a: torch.Tensor,\n        w1_fp4: torch.Tensor,\n        w2_fp4: torch.Tensor,\n        w1_blockscale: torch.Tensor,\n        w2_blockscale: torch.Tensor,\n        w1_gs: torch.Tensor,\n        w2_gs: torch.Tensor,\n        a1_gs: torch.Tensor,\n        a2_gs: torch.Tensor,\n        topk_weights: torch.Tensor,\n        topk_ids: torch.Tensor,\n        m: int,\n        n: int,\n        k: int,\n        e: int,\n        device: torch.device,\n        num_repeats: int,\n    )",
+      "docstring": "",
+      "line": 156
+    },
+    {
+      "name": "run_cutlass_from_graph",
+      "kind": "function",
+      "signature": "def run_cutlass_from_graph(\n        a: torch.Tensor,\n        a1_gscale: torch.Tensor,\n        w1_fp4: torch.Tensor,\n        w1_blockscale: torch.Tensor,\n        w1_alphas: torch.Tensor,\n        a2_gscale: torch.Tensor,\n        w2_fp4: torch.Tensor,\n        w2_blockscale: torch.Tensor,\n        w2_alphas: torch.Tensor,\n        topk_weights: torch.Tensor,\n        topk_ids: torch.Tensor,\n        m: int,\n        n: int,\n        k: int,\n        e: int,\n        device: torch.device,\n    )",
+      "docstring": "",
+      "line": 196
+    },
+    {
+      "name": "run_triton_from_graph",
+      "kind": "function",
+      "signature": "def run_triton_from_graph(\n        a: torch.Tensor,\n        w1: torch.Tensor,\n        w2: torch.Tensor,\n        topk_weights: torch.Tensor,\n        topk_ids: torch.Tensor,\n        w1_scale: torch.Tensor,\n        w2_scale: torch.Tensor,\n        a_fp8_scale: torch.Tensor,\n    )",
+      "docstring": "",
+      "line": 236
+    },
+    {
+      "name": "replay_graph",
+      "kind": "function",
+      "signature": "def replay_graph(graph, num_repeats)",
+      "docstring": "",
+      "line": 261
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "signature": "def main(args)",
+      "docstring": "",
+      "line": 429
+    },
+    {
+      "name": "WEIGHT_SHAPES_MOE",
+      "kind": "constant",
+      "signature": "WEIGHT_SHAPES_MOE = ...",
+      "docstring": "",
+      "line": 21
+    },
+    {
+      "name": "DEFAULT_MODELS",
+      "kind": "constant",
+      "signature": "DEFAULT_MODELS = ...",
+      "docstring": "",
+      "line": 27
+    },
+    {
+      "name": "DEFAULT_BATCH_SIZES",
+      "kind": "constant",
+      "signature": "DEFAULT_BATCH_SIZES = ...",
+      "docstring": "",
+      "line": 31
+    },
+    {
+      "name": "DEFAULT_TP_SIZES",
+      "kind": "constant",
+      "signature": "DEFAULT_TP_SIZES = ...",
+      "docstring": "",
+      "line": 32
+    },
+    {
+      "name": "PER_ACT_TOKEN_OPTS",
+      "kind": "constant",
+      "signature": "PER_ACT_TOKEN_OPTS = ...",
+      "docstring": "",
+      "line": 34
+    },
+    {
+      "name": "PER_OUT_CH_OPTS",
+      "kind": "constant",
+      "signature": "PER_OUT_CH_OPTS = ...",
+      "docstring": "",
+      "line": 35
+    },
+    {
+      "name": "FLOAT4_E2M1_MAX",
+      "kind": "constant",
+      "signature": "FLOAT4_E2M1_MAX = ...",
+      "docstring": "",
+      "line": 36
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "nvtx",
+      "torch",
+      "vllm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 16,
+    "public_symbols": 16,
+    "classes": 0,
+    "functions": 8,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 30
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/kernels/benchmark_cutlass_fp4_moe.py"
+}

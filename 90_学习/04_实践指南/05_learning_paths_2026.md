@@ -190,7 +190,7 @@ flowchart LR
 
 **Phase 3: 工程化（32-44h）**
 
-- **Ch.07** — [Training nutshell](07_模型训练/01_训练基础/04_模型_训练_简明指南.md) → [分布式训练](07_模型训练/04_分布式训练/01_索引.md) → [混合精度](07_模型训练/03_训练优化/04_Mixed_精确度_训练.md)
+- **Ch.07** — [Training nutshell](07_模型训练/01_训练基础/04_模型_训练_简明指南.md) → [分布式训练](07_模型训练/04_分布式训练/INDEX.md) → [混合精度](07_模型训练/03_训练优化/04_Mixed_精确度_训练.md)
 - **Ch.08** — [评估 for_dummy](08_模型评估/01_评估基础/Model_Evaluation_for_dummy.md) → [主文档](08_模型评估/01_评估基础/06_模型评估.md) → [A/B 测试](09_测试/04_在线测试/01_AB测试AI系统.md)
 - **Ch.09** — [部署 for_dummy](10_部署推理/01_部署基础/Deployment_Inference_for_dummy.md) → [Inference nutshell](10_部署推理/01_部署基础/06_推理_简明指南.md) → [推理引擎选型指南](10_部署推理/02_推理引擎/17_LLM_推理引擎_选型_指南.md) → [vLLM](10_部署推理/02_推理引擎/29_vLLM_深入分析.md) → [推理性能基础](10_部署推理/03_推理优化/01_推理性能_基础.md) → 实践: Docker + FastAPI
 - **Key Skills**: FSDP/混合精度、Precision/Recall/F1/AUC、vLLM、推理引擎选型、容器化部署
@@ -243,13 +243,13 @@ flowchart LR
 
 **Phase 1: LLM 核心（24-32h）**
 
-- **Ch.04** — [LLM nutshell](05_大模型/05_LLM架构/10_LLM_基础_简明指南.md) → [Transformer](05_大模型/04_Transformer_Revolution/09_03_Transformer架构_Revolution.md) → [LLM 架构](05_大模型/05_LLM架构/05_LLM架构.md) → [Prompt Engineering](05_大模型/08_提示工程/16_Prompt工程.md) → [微调 LoRA/QLoRA](05_大模型/07_微调技术/03_微调技术.md) → 选读: [推理模型 2026](05_大模型/05_LLM架构/15_推理模型_2026.md) | [中国大模型](../../05_大模型/README.md)
-- **Ch.07** — [Training nutshell](07_模型训练/01_训练基础/04_模型_训练_简明指南.md) → [分布式训练](07_模型训练/04_分布式训练/01_索引.md) → 实践: HuggingFace PEFT LoRA 微调
+- **Ch.04** — [LLM nutshell](05_大模型/04_LLM架构/10_LLM_基础_简明指南.md) → [Transformer](05_大模型/04_Transformer_Revolution/09_03_Transformer架构_Revolution.md) → [LLM 架构](05_大模型/04_LLM架构/05_LLM架构.md) → [Prompt Engineering](05_大模型/07_提示工程/16_Prompt工程.md) → [微调 LoRA/QLoRA](05_大模型/06_微调技术/03_微调技术.md) → 选读: [推理模型 2026](05_大模型/04_LLM架构/15_推理模型_2026.md) | [中国大模型](../../05_大模型/README.md)
+- **Ch.07** — [Training nutshell](07_模型训练/01_训练基础/04_模型_训练_简明指南.md) → [分布式训练](07_模型训练/04_分布式训练/INDEX.md) → 实践: HuggingFace PEFT LoRA 微调
 - **Key Skills**: Transformer/Attention、Prompt Engineering、LoRA 微调、PEFT
 
 **Phase 2: 应用构建（22-30h）**
 
-- **Ch.11** — [RAG for_dummy](14_RAG系统/01_RAG基础/RAG_Systems_for_dummy.md) → [RAG nutshell](14_RAG系统/01_RAG基础/08_RAG_简明指南.md) → [主文档](14_RAG系统/01_RAG基础/07_RAG_系统.md) → [向量数据库](14_RAG系统/03_向量数据库/01_索引.md) → 实践: LangChain + Qdrant 知识库问答
+- **Ch.11** — [RAG for_dummy](14_RAG系统/01_RAG基础/RAG_Systems_for_dummy.md) → [RAG nutshell](14_RAG系统/01_RAG基础/08_RAG_简明指南.md) → [主文档](14_RAG系统/01_RAG基础/07_RAG_系统.md) → [向量数据库](14_RAG系统/03_向量数据库/INDEX.md) → 实践: LangChain + Qdrant 知识库问答
 - **Ch.13** — [Agent nutshell](../../15_智能体/03_Agent工作流/06_工作流_简明指南.md) → [Agent Harness](../../15_智能体/README.md) → [LangGraph](../../15_智能体/02_Agent框架/10_LangChain_深入分析.md) → [Agent 记忆](../../15_智能体/README.md) → 实践: 多步推理 + 工具调用 Agent
 - **Key Skills**: 文档切分、Embedding、向量检索、Reranking、LangGraph、MCP 协议、工具编排
 
@@ -311,8 +311,8 @@ flowchart LR
 
 **Phase 2: 技术理解（7-11h）**
 
-- **Ch.04 (速览)** — [LLM nutshell](05_大模型/05_LLM架构/10_LLM_基础_简明指南.md) → [LLM for_dummy](05_大模型/05_LLM架构/LLM_Architectures_for_dummy.md) → [Prompt for_dummy](05_大模型/08_提示工程/Prompt_Engineering_for_dummy.md)
-- **Ch.08 (速览)** — [评估 for_dummy](08_模型评估/01_评估基础/Model_Evaluation_for_dummy.md) → [A/B 测试](09_测试/04_在线测试/01_AB测试AI系统.md) → [Benchmark](08_模型评估/02_基准测试/01_索引.md)
+- **Ch.04 (速览)** — [LLM nutshell](05_大模型/04_LLM架构/10_LLM_基础_简明指南.md) → [LLM for_dummy](05_大模型/04_LLM架构/LLM_Architectures_for_dummy.md) → [Prompt for_dummy](05_大模型/07_提示工程/Prompt_Engineering_for_dummy.md)
+- **Ch.08 (速览)** — [评估 for_dummy](08_模型评估/01_评估基础/Model_Evaluation_for_dummy.md) → [A/B 测试](09_测试/04_在线测试/01_AB测试AI系统.md) → [Benchmark](08_模型评估/02_基准测试/INDEX.md)
 - **Key Skills**: LLM 能力边界、Token 与成本、Precision/Recall 业务权衡、Benchmark 解读
 
 **Phase 3: 责任 AI（6-10h）**
@@ -449,12 +449,12 @@ flowchart LR
 **Phase 2: 前沿视野（36-54h）**
 
 - **Ch.22** — [必读书单](../../20_论文精读/README.md) → 精读: Attention Is All You Need → BERT/GPT → ResNet/BatchNorm → RLHF/DPO → MoE → 选读 5-10 篇
-- **Ch.04 (深入)** — [Transformer](05_大模型/04_Transformer_Revolution/09_03_Transformer架构_Revolution.md) → [LLM 架构](05_大模型/05_LLM架构/05_LLM架构.md) → [推理模型](05_大模型/05_LLM架构/15_推理模型_2026.md) → [长上下文](05_大模型/05_LLM架构/11_Long_上下文_模型_2026.md) → [多模态](05_大模型/10_多模态模型/06_多模态_架构_2026.md) → [微调](05_大模型/07_微调技术/03_微调技术.md)
+- **Ch.04 (深入)** — [Transformer](05_大模型/04_Transformer_Revolution/09_03_Transformer架构_Revolution.md) → [LLM 架构](05_大模型/04_LLM架构/05_LLM架构.md) → [推理模型](05_大模型/04_LLM架构/15_推理模型_2026.md) → [长上下文](05_大模型/04_LLM架构/11_Long_上下文_模型_2026.md) → [多模态](05_大模型/09_多模态模型/06_多模态_架构_2026.md) → [微调](05_大模型/06_微调技术/03_微调技术.md)
 - **Key Skills**: 论文精读、Attention 变体、Scaling Laws、MoE、推理链、多模态融合
 
 **Phase 3: 研究实践（26-36h）**
 
-- **Ch.07** — [分布式训练](07_模型训练/04_分布式训练/01_索引.md) → [混合精度](07_模型训练/03_训练优化/04_Mixed_精确度_训练.md) → 实践: 复现一篇论文训练实验 (6h)
+- **Ch.07** — [分布式训练](07_模型训练/04_分布式训练/INDEX.md) → [混合精度](07_模型训练/03_训练优化/04_Mixed_精确度_训练.md) → 实践: 复现一篇论文训练实验 (6h)
 - **Ch.06** — [RL for_dummy](06_强化学习/01_强化学习基础/RL_Foundations_for_dummy.md) → [RL 基础](06_强化学习/01_强化学习基础/03_RL基础.md) → [深度 RL](06_强化学习/02_深度强化学习/02_深度强化学习.md) → [AI Agent](../../15_智能体/01_Agent基础/16_AI_Agent.md)
 - **Key Skills**: 3D 并行、训练稳定性、MDP/Bellman、PPO、RLHF、Agent 推理与规划
 

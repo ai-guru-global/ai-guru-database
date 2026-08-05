@@ -442,10 +442,10 @@ Transformer 的计算复杂度为 $O(n^2 d)$,内存复杂度为 $O(n^2)$,在长�
 - [注意力机制](05_大模型/03_Transformer架构/03_Transformer_Revolution.md): Seq2Seq Attention
 
 ### 后续推荐
-- [大语言模型架构](../05_LLM架构/05_LLM架构.md): GPT/BERT/T5 详解
-- [微调技术](../07_微调技术/03_微调技术.md): LoRA, RLHF
-- [预训练方法](../05_LLM架构/05_LLM架构.md): MLM, CLM, Seq2Seq
-- [提示工程](../08_提示工程/16_Prompt工程.md): Few-shot, CoT
+- [大语言模型架构](../04_LLM架构/05_LLM架构.md): GPT/BERT/T5 详解
+- [微调技术](../06_微调技术/03_微调技术.md): LoRA, RLHF
+- [预训练方法](../04_LLM架构/05_LLM架构.md): MLM, CLM, Seq2Seq
+- [提示工程](../07_提示工程/16_Prompt工程.md): Few-shot, CoT
 
 ### 跨领域应用
 - [Vision Transformer](04_计算机视觉/01_CV基础/05_ViT_深入分析.md): Transformer 在 CV 的应用
@@ -544,8 +544,8 @@ Transformer 的计算复杂度为 $O(n^2 d)$,内存复杂度为 $O(n^2)$,在长�
 ## 相关链接
 
 - [[05_大模型/03_Transformer架构/03_Transformer_Revolution|Transformer 革命 (小白版)]] — 本篇的零基础版本
-- [[05_大模型/03_Transformer架构/01_索引|Transformer 革命索引]] — Transformer 主题导览
+- [[05_大模型/03_Transformer架构/INDEX|Transformer 革命索引]] — Transformer 主题导览
 - [[05_大模型/03_Transformer架构/02_Self_注意力_Mechanism|自注意力机制]] — Transformer 核心机制深入
-- [[05_大模型/05_LLM架构/05_LLM架构|大语言模型架构]] — 基于 Transformer 的 LLM 架构
+- [[05_大模型/04_LLM架构/05_LLM架构|大语言模型架构]] — 基于 Transformer 的 LLM 架构
 - [[05_大模型/03_Transformer/Transformer_Deep_Dive|Transformer 深度解析]] — Transformer 架构深度剖析
 - [[概念/LLM/transformer-architecture|Transformer 架构]] — Transformer 架构概念卡片

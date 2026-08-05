@@ -971,12 +971,12 @@ swift sft --model <model_id> --dataset <dataset> ...
 
 ## 相关文档
 
-- [[05_大模型/07_微调技术/02_微调_策略]] - 微调策略全景
+- [[05_大模型/06_微调技术/02_微调_策略]] - 微调策略全景
 - [[07_模型训练/04_分布式训练/03_分布式训练_2026]] - 分布式训练技术
 - [[概念/Training/training-optimization]] - 训练优化技术
 - [[概念/General/deployment]] - 部署推理
 - [[10_部署推理/02_推理引擎/29_vLLM_深入分析]] - vLLM推理引擎
 - [[10_部署推理/02_推理引擎/23_SGLang_深入分析]] - SGLang推理引擎
-- [[05_大模型/07_微调技术/01_Axolotl_深入分析]] - Axolotl框架
-- [[05_大模型/07_微调技术/12_Unsloth_深入分析]] - Unsloth框架
+- [[05_大模型/06_微调技术/01_Axolotl_深入分析]] - Axolotl框架
+- [[05_大模型/06_微调技术/12_Unsloth_深入分析]] - Unsloth框架
 - [[07_模型训练/04_分布式训练/ms_swift_Command_Line_Parameters|ms-swift 命令行参数完全参考手册]]

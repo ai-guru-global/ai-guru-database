@@ -227,4 +227,4 @@ def multi_agent_team(user_request):
 ## 相关阅读
 - [[15_智能体/02_Agent框架/05_AutoGen_深入分析]]
 - [[15_智能体/02_Agent框架/SmolAgents_Practical_Guide]]
-- [[05_大模型/08_提示工程/Prompt_Engineering_Principles_Ng]]
+- [[05_大模型/07_提示工程/Prompt_Engineering_Principles_Ng]]

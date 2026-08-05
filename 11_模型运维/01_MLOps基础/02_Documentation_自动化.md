@@ -416,12 +416,12 @@ markdown_extensions:
 nav:
   - 首页: 01_索引.md
   - API 文档:
-    - api/01_索引.md
+    - api/INDEX.md
     - 对话接口: api/chat.md
     - 嵌入接口: api/embeddings.md
     - 模型管理: api/models.md
   - 使用指南:
-    - guides/01_索引.md
+    - guides/INDEX.md
     - 快速开始: guides/quickstart.md
     - 部署指南: guides/deployment.md
 

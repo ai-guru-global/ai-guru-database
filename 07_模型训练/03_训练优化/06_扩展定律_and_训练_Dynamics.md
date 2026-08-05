@@ -1151,7 +1151,7 @@ flowchart TB
 
 - [分布式训练 (Distributed Training 2026)](07_模型训练/04_分布式训练/03_分布式训练_2026.md) — 大规模训练的分布式实现
 - [混合精度训练 (Mixed Precision Training)](07_模型训练/03_训练优化/04_Mixed_精确度_训练.md) — 训练效率优化的基础
-- [LLM 架构 (LLM Architectures)](05_大模型/05_LLM架构/05_LLM架构.md) — 理解 N, D 如何映射到模型结构
+- [LLM 架构 (LLM Architectures)](05_大模型/04_LLM架构/05_LLM架构.md) — 理解 N, D 如何映射到模型结构
 - [LLaMA 论文解读 (LLaMA Deep Dive)](20_论文精读/02_模型架构/04_LLaMA_深入分析.md) — Chinchilla scaling laws 的经典实践案例
 
 ---

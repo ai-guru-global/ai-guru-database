@@ -22,7 +22,7 @@ sources:
 - 07_模型训练/03_训练优化/Mixed_Precision_Training.md
 - 07_模型训练/03_训练优化/Training_Optimization_2026.md
 - 07_模型训练/07_训练监控/Training_Monitoring_2026.md
-- 05_大模型/07_微调技术/Fine_tuning_Strategies.md
+- 05_大模型/06_微调技术/Fine_tuning_Strategies.md
 summary: 模型训练涵盖从分布式并行策略（DDP/FSDP/DeepSpeed/Megatron-LM）到混合精度（BF16/FP8）、训练优化（FlashAttention/梯度检查点/内核融合）以及微调策略（LoRA/QLoRA/DoRA）的全栈技术体系。2026年BF16成为默认精度格式，FSDP+TP成为主流分布式方案，FlashAttention v3将注意力显存从O(n²)降至O(n)。
 provenance:
   extracted: 0.85

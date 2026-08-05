@@ -64,7 +64,7 @@ git clone https://github.com/your-org/ai-guru-knowledge-base.git
 cd ai-guru-knowledge-base/docs
 
 # Start with the 9 In-Nutshell guides
-open 05_大模型/05_LLM架构/LLM-Basics-in-nutshell.md
+open 05_大模型/04_LLM架构/LLM-Basics-in-nutshell.md
 ```
 
 ### For the Web Experience
@@ -183,9 +183,9 @@ Cutting-edge content updated for 2026:
 
 | Report | Key Topics |
 |--------|-----------|
-| **[LLM Architectures 2026](05_大模型/05_LLM架构/LLM_Architectures.md)** | GPT-5.2, Claude 4.5, Gemini 3, Llama 4, Reasoning models |
+| **[LLM Architectures 2026](05_大模型/04_LLM架构/LLM_Architectures.md)** | GPT-5.2, Claude 4.5, Gemini 3, Llama 4, Reasoning models |
 | **[AI Hardware 2026](01_数学基础/10_AI硬件/AI_Hardware_2026.md)** | H100 vs H200 vs B200, MI300X, GPU selection guide |
-| **[PEFT 2026](05_大模型/07_微调技术/PEFT_2026.md)** | LoRA/QLoRA/DoRA/rsLoRA, single-GPU 70B fine-tuning |
+| **[PEFT 2026](05_大模型/06_微调技术/PEFT_2026.md)** | LoRA/QLoRA/DoRA/rsLoRA, single-GPU 70B fine-tuning |
 | **[RAG Advanced 2026](14_RAG系统/04_高级RAG/RAG_Advanced_2026.md)** | Hybrid retrieval + RRF, Agentic RAG, 60%→90% accuracy |
 | **[AI Coding Assistants 2026](16_编程/05_开发工具/AI_Coding_Assistants_2026.md)** | Cursor (72% acc), Claude Code, Windsurf, Devin comparison |
 | **[Vibe Coding Methodology 2026](16_编程/03_方法论/Vibe_Coding_Methodology.md)** | DGRV loop, prompt engineering, quality system, production practices |

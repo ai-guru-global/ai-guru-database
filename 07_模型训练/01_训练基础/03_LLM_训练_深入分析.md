@@ -38,9 +38,9 @@ name_zh: "LLM 训练深度剖析：预训练、分布式训练与对齐"
 
 - [[05_大模型/Transformer_Deep_Dive]] — Transformer 核心架构
 - [[10_部署推理/03_推理优化/02_LLM推理_深入分析]] — 推理优化
-- [[05_大模型/05_LLM架构/04_LLM_架构_Evolution]] — 架构演进
-- [[05_大模型/07_微调技术/07_LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]] — LoRA/RLHF/DPO 实战
-- [[05_大模型/07_微调技术/10_PEFT_高级_2026]] — PEFT 前沿
+- [[05_大模型/04_LLM架构/04_LLM_架构_Evolution]] — 架构演进
+- [[05_大模型/06_微调技术/07_LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]] — LoRA/RLHF/DPO 实战
+- [[05_大模型/06_微调技术/10_PEFT_高级_2026]] — PEFT 前沿
 
 ---
 

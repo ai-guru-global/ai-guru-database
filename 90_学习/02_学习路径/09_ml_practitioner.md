@@ -126,9 +126,9 @@ Phase 6: 完成端到端项目
 #### 方向 A: NLP / 大模型（推荐）
 
 - [序列模型（小白版）](05_大模型/02_序列模型/Sequence_Models_for_dummy.md)
-- [LLM 架构（小白版）](05_大模型/05_LLM架构/LLM_Architectures_for_dummy.md)
-- [微调技术（小白版）](05_大模型/07_微调技术/Fine_tuning_Techniques_for_dummy.md)
-- [提示词工程（小白版）](05_大模型/08_提示工程/Prompt_Engineering_for_dummy.md)
+- [LLM 架构（小白版）](05_大模型/04_LLM架构/LLM_Architectures_for_dummy.md)
+- [微调技术（小白版）](05_大模型/06_微调技术/Fine_tuning_Techniques_for_dummy.md)
+- [提示词工程（小白版）](05_大模型/07_提示工程/Prompt_Engineering_for_dummy.md)
 
 **动手项目**：用 Hugging Face PEFT 库对 LLaMA 做 LoRA 微调
 

@@ -1,0 +1,136 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.scaled_mm_c2x_sm89_fp8_dispatch.cuh",
+  "title": "Scaled Mm C2X Sm89 Fp8 Dispatch",
+  "type": "module",
+  "summary": "Module providing SM89, static_assert, in, static_assert, in and 5 more symbols",
+  "details": "Contains 17 functions/methods",
+  "symbols": [
+    {
+      "name": "SM89",
+      "kind": "function",
+      "signature": "SM89(FP8) based on the Gemm\n * shape.\n */\n\nnamespace vllm {\n\ntemplate <typename InType, typename OutType,\n          template <typename, typename> typename Epilogue>\nstruct sm89_fp8_fallback_gemm {\n  // Shared Memory required by this Gemm - 61440 bytes\n  static_assert(std::is_same<InType, cutlass::float_e4m3_t>());\n  using TileShape = typename cutlass::gemm::GemmShape<64, 128, 64>;\n  using WarpShape = typename cutlass::gemm::GemmShape<32, 64, 64>;\n  using InstructionShape = typename cutlass::gemm::GemmShape<16, 8, 32>;\n  using FP8MathOperator = typename cutlass::arch::OpMultiplyAdd;\n  using Cutlass2xGemm =\n      cutlass_2x_gemm<cutlass::arch::Sm89, enable_sm89_to_sm90, InType, OutType,\n                      Epilogue, TileShape, WarpShape, InstructionShape, 5,\n                      FP8MathOperator>;\n};\n\nstruct sm89_fp8_config_default {\n  // M in (256, inf)\n  using WarpShape = typename cutlass::gemm::GemmShape<64, 64, 64>;\n  using InstructionShape = typename cutlass::gemm::GemmShape<16, 8, 32>;\n  using FP8MathOperator = typename cutlass::arch::OpMultiplyAddFastAccum;\n\n  template <typename InType, typename OutType,\n            template <typename, typename> typename Epilogue,\n            typename... EpilogueArgs>\n  static void dispatch(torch::Tensor& out, torch::Tensor const& a,\n                       torch::Tensor const& b, EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 6
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same<InType, cutlass::float_e4m3_t>());\n    TORCH_CHECK(a.dtype() == torch::kFloat8_e4m3fn);\n\n    using FallbackGemm =\n        typename sm89_fp8_fallback_gemm<InType, OutType,\n                                        Epilogue>::Cutlass2xGemm;\n\n    uint32_t const n = out.size(1);\n    uint32_t const np2 = next_pow_2(n);\n\n    if (np2 <= 4096)",
+      "docstring": "",
+      "line": 38
+    },
+    {
+      "name": "in",
+      "kind": "function",
+      "signature": "in(128, 256]\n  using WarpShape = typename cutlass::gemm::GemmShape<64, 64, 64>;\n  using InstructionShape = typename cutlass::gemm::GemmShape<16, 8, 32>;\n  using FP8MathOperator = typename cutlass::arch::OpMultiplyAddFastAccum;\n\n  template <typename InType, typename OutType,\n            template <typename, typename> typename Epilogue,\n            typename... EpilogueArgs>\n  static void dispatch(torch::Tensor& out, torch::Tensor const& a,\n                       torch::Tensor const& b, EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 79
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same<InType, cutlass::float_e4m3_t>());\n    TORCH_CHECK(a.dtype() == torch::kFloat8_e4m3fn);\n\n    using FallbackGemm =\n        typename sm89_fp8_fallback_gemm<InType, OutType,\n                                        Epilogue>::Cutlass2xGemm;\n\n    uint32_t const n = out.size(1);\n    uint32_t const np2 = next_pow_2(n);\n\n    if (np2 <= 4096)",
+      "docstring": "",
+      "line": 88
+    },
+    {
+      "name": "in",
+      "kind": "function",
+      "signature": "in(64, 128]\n  using WarpShape = typename cutlass::gemm::GemmShape<64, 64, 64>;\n  using InstructionShape = typename cutlass::gemm::GemmShape<16, 8, 32>;\n  using FP8MathOperator = typename cutlass::arch::OpMultiplyAddFastAccum;\n\n  template <typename InType, typename OutType,\n            template <typename, typename> typename Epilogue,\n            typename... EpilogueArgs>\n  static void dispatch(torch::Tensor& out, torch::Tensor const& a,\n                       torch::Tensor const& b, EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 120
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same<InType, cutlass::float_e4m3_t>());\n    TORCH_CHECK(a.dtype() == torch::kFloat8_e4m3fn);\n\n    using FallbackGemm =\n        typename sm89_fp8_fallback_gemm<InType, OutType,\n                                        Epilogue>::Cutlass2xGemm;\n\n    uint32_t const n = out.size(1);\n    uint32_t const np2 = next_pow_2(n);\n\n    if (np2 <= 8192)",
+      "docstring": "",
+      "line": 129
+    },
+    {
+      "name": "in",
+      "kind": "function",
+      "signature": "in(32, 64]\n  using InstructionShape = typename cutlass::gemm::GemmShape<16, 8, 32>;\n\n  template <typename InType, typename OutType,\n            template <typename, typename> typename Epilogue,\n            typename... EpilogueArgs>\n  static void dispatch(torch::Tensor& out, torch::Tensor const& a,\n                       torch::Tensor const& b, EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 170
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same<InType, cutlass::float_e4m3_t>());\n    TORCH_CHECK(a.dtype() == torch::kFloat8_e4m3fn);\n\n    using FallbackGemm =\n        typename sm89_fp8_fallback_gemm<InType, OutType,\n                                        Epilogue>::Cutlass2xGemm;\n\n    uint32_t const n = out.size(1);\n    uint32_t const np2 = next_pow_2(n);\n\n    if (np2 <= 8196)",
+      "docstring": "",
+      "line": 177
+    },
+    {
+      "name": "in",
+      "kind": "function",
+      "signature": "in(16, 32]\n  using InstructionShape = typename cutlass::gemm::GemmShape<16, 8, 32>;\n  using FP8MathOperator = typename cutlass::arch::OpMultiplyAddFastAccum;\n\n  template <typename InType, typename OutType,\n            template <typename, typename> typename Epilogue,\n            typename... EpilogueArgs>\n  static void dispatch(torch::Tensor& out, torch::Tensor const& a,\n                       torch::Tensor const& b, EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 223
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same<InType, cutlass::float_e4m3_t>());\n    TORCH_CHECK(a.dtype() == torch::kFloat8_e4m3fn);\n\n    using FallbackGemm =\n        typename sm89_fp8_fallback_gemm<InType, OutType,\n                                        Epilogue>::Cutlass2xGemm;\n\n    uint32_t const n = out.size(1);\n    uint32_t const np2 = next_pow_2(n);\n\n    if (np2 <= 8192)",
+      "docstring": "",
+      "line": 231
+    },
+    {
+      "name": "dispatch",
+      "kind": "function",
+      "signature": "dispatch(torch::Tensor& out, torch::Tensor const& a,\n                       torch::Tensor const& b, EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 282
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same<InType, cutlass::float_e4m3_t>());\n    TORCH_CHECK(a.dtype() == torch::kFloat8_e4m3fn);\n\n    using FallbackGemm =\n        typename sm89_fp8_fallback_gemm<InType, OutType,\n                                        Epilogue>::Cutlass2xGemm;\n\n    uint32_t const n = out.size(1);\n    uint32_t const np2 = next_pow_2(n);\n\n    if (np2 <= 8192)",
+      "docstring": "",
+      "line": 284
+    },
+    {
+      "name": "cutlass_gemm_sm89_fp8_dispatch",
+      "kind": "function",
+      "signature": "cutlass_gemm_sm89_fp8_dispatch(torch::Tensor& out,\n                                           torch::Tensor const& a,\n                                           torch::Tensor const& b,\n                                           EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 328
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same<InType, cutlass::float_e4m3_t>());\n  TORCH_CHECK(a.dtype() == torch::kFloat8_e4m3fn);\n  TORCH_CHECK(b.dtype() == torch::kFloat8_e4m3fn);\n\n  uint32_t const m = a.size(0);\n  uint32_t const mp2 =\n      std::max(static_cast<uint32_t>(16), next_pow_2(m));  // next power of 2\n\n  if (mp2 <= 16)",
+      "docstring": "",
+      "line": 332
+    },
+    {
+      "name": "in",
+      "kind": "function",
+      "signature": "in(16, 32]\n    return sm89_fp8_config_M32::dispatch<InType, OutType, Epilogue>(\n        out, a, b, std::forward<EpilogueArgs>(args)...);\n  } else if (mp2 <= 64)",
+      "docstring": "",
+      "line": 346
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cutlass",
+      "scaled_mm_c2x"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 17,
+    "public_symbols": 17,
+    "classes": 0,
+    "functions": 17,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/scaled_mm_c2x_sm89_fp8_dispatch.cuh"
+}

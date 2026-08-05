@@ -104,7 +104,7 @@ name_zh: "一二三级目录与文件匹配合理性评估"
 
 抽查无明显"放错章节"的文件。少数边界案例：
 - `06_强化学习/RLHF_DPO_GRPO_Deep_Dive.md` —— 与 `模型训练` 的对齐训练有交叉，但放 RL 章（算法视角）合理
-- `05_大模型/08_提示工程/Context_Engineering_Guide.md` —— 与 `概念/context-engineering` 有重叠，但章节版更详细，合理
+- `05_大模型/07_提示工程/Context_Engineering_Guide.md` —— 与 `概念/context-engineering` 有重叠，但章节版更详细，合理
 
 ---
 

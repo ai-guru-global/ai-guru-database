@@ -288,5 +288,5 @@ def nsa_attention(q, k, v, l=32, d=16, l_prime=64, n=16, w=512):
 - [[概念/LLM/attention-variants|注意力变体]] — 稀疏注意力家族
 - [[概念/Inference/flash-attn|Flash Attention]] — 同类高效注意力机制
 - [[概念/LLM/kv-cache-compression|KV 缓存压缩]] — 稀疏注意力降低 KV 缓存
-- [[05_大模型/05_LLM架构/11_Long_上下文_模型_2026|长上下文模型 2026]] — 稀疏注意力对长上下文的意义
+- [[05_大模型/04_LLM架构/11_Long_上下文_模型_2026|长上下文模型 2026]] — 稀疏注意力对长上下文的意义
 - [[概念/LLM/long-context-llm|长上下文 LLM]] — NSA 的主要应用场景

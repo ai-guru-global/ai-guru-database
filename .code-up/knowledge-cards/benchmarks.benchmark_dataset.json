@@ -1,0 +1,152 @@
+{
+  "id": "benchmarks.benchmark_dataset",
+  "title": "Benchmark Dataset",
+  "type": "package",
+  "summary": "Module providing SampleRequest, BenchmarkDataset, RandomDataset, ShareGPTDataset, CustomDataset and 5 more symbols",
+  "details": "Contains 15 classes: SampleRequest, BenchmarkDataset, RandomDataset, ShareGPTDataset, CustomDataset. Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "SampleRequest",
+      "kind": "class",
+      "signature": "class SampleRequest",
+      "docstring": "Represents a single inference request for benchmarking.",
+      "line": 46
+    },
+    {
+      "name": "BenchmarkDataset",
+      "kind": "class",
+      "signature": "class BenchmarkDataset(ABC)",
+      "docstring": "",
+      "line": 64
+    },
+    {
+      "name": "RandomDataset",
+      "kind": "class",
+      "signature": "class RandomDataset(BenchmarkDataset)",
+      "docstring": "",
+      "line": 285
+    },
+    {
+      "name": "ShareGPTDataset",
+      "kind": "class",
+      "signature": "class ShareGPTDataset(BenchmarkDataset)",
+      "docstring": "Implements the ShareGPT dataset.  Loads data from a JSON file and generates\n    sample requests based on conversation turns.",
+      "line": 372
+    },
+    {
+      "name": "CustomDataset",
+      "kind": "class",
+      "signature": "class CustomDataset(BenchmarkDataset)",
+      "docstring": "Implements the Custom dataset.  Loads data from a JSONL file and generates\n    sample requests based on conversation turns. E.g.,\n    ```\n    {\"prompt\": \"What is the capital of India?\"}\n    {\"prompt\":",
+      "line": 448
+    },
+    {
+      "name": "SonnetDataset",
+      "kind": "class",
+      "signature": "class SonnetDataset(BenchmarkDataset)",
+      "docstring": "Simplified implementation of the Sonnet dataset.  Loads poem lines from a\n    text file and generates sample requests.  Default values here copied from\n    `benchmark_serving.py` for the sonnet datase",
+      "line": 539
+    },
+    {
+      "name": "BurstGPTDataset",
+      "kind": "class",
+      "signature": "class BurstGPTDataset(BenchmarkDataset)",
+      "docstring": "Implements the BurstGPT dataset.  Loads data from a CSV file and generates\n    sample requests based on synthetic prompt generation. Only rows with Model\n    \"GPT-4\" and positive response tokens are u",
+      "line": 622
+    },
+    {
+      "name": "HuggingFaceDataset",
+      "kind": "class",
+      "signature": "class HuggingFaceDataset(BenchmarkDataset)",
+      "docstring": "Base class for datasets hosted on HuggingFace.",
+      "line": 694
+    },
+    {
+      "name": "ConversationDataset",
+      "kind": "class",
+      "signature": "class ConversationDataset(HuggingFaceDataset)",
+      "docstring": "Dataset for conversation data with multimodal support.",
+      "line": 728
+    },
+    {
+      "name": "VisionArenaDataset",
+      "kind": "class",
+      "signature": "class VisionArenaDataset(HuggingFaceDataset)",
+      "docstring": "Vision Arena Dataset.",
+      "line": 787
+    },
+    {
+      "name": "InstructCoderDataset",
+      "kind": "class",
+      "signature": "class InstructCoderDataset(HuggingFaceDataset)",
+      "docstring": "InstructCoder Dataset.\n    https://huggingface.co/datasets/likaixin/InstructCoder\n\n    InstructCoder is the dataset designed for general code editing.  It consists\n    of 114,239 instruction-input-out",
+      "line": 840
+    },
+    {
+      "name": "MTBenchDataset",
+      "kind": "class",
+      "signature": "class MTBenchDataset(HuggingFaceDataset)",
+      "docstring": "MT-Bench Dataset.\n    https://huggingface.co/datasets/philschmid/mt-bench\n\n    We create a single turn dataset for MT-Bench.\n    This is similar to Spec decoding benchmark setup in vLLM\n    https://gi",
+      "line": 894
+    },
+    {
+      "name": "AIMODataset",
+      "kind": "class",
+      "signature": "class AIMODataset(HuggingFaceDataset)",
+      "docstring": "Dataset class for processing a AIMO dataset with reasoning questions.",
+      "line": 949
+    },
+    {
+      "name": "NextEditPredictionDataset",
+      "kind": "class",
+      "signature": "class NextEditPredictionDataset(HuggingFaceDataset)",
+      "docstring": "Dataset class for processing a Next Edit Prediction dataset.",
+      "line": 1051
+    },
+    {
+      "name": "ASRDataset",
+      "kind": "class",
+      "signature": "class ASRDataset(HuggingFaceDataset)",
+      "docstring": "Dataset class for processing a ASR dataset for transcription.\n    Tested on the following set:\n\n    +----------------+----------------------------------------+--------------------------+--------------",
+      "line": 1090
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "PIL",
+      "abc",
+      "base64",
+      "collections",
+      "dataclasses",
+      "datasets",
+      "functools",
+      "io",
+      "json",
+      "librosa",
+      "logging",
+      "numpy",
+      "pandas",
+      "random",
+      "transformers",
+      "typing",
+      "vllm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 17,
+    "public_symbols": 15,
+    "classes": 15,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 17,
+    "depth": 0,
+    "complexity_sum": 10
+  },
+  "tags": [
+    "oop",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/benchmark_dataset.py"
+}

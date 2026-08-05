@@ -94,7 +94,7 @@ INTERVIEW_TOPICS = {
 ## 5. 交叉引用
 
 - [[21_面试岗位/|面试岗位]]
-- [[05_大模型/08_提示工程/|Prompt Engineering]]
+- [[05_大模型/07_提示工程/|Prompt Engineering]]
 - [[00_入门/03_学习路径/AI_Career_Guide|AI 职业指南]]
 - [[21_面试岗位/18_面试指南/03_Interview_Preparation|面试准备]]
 - [[09_测试/|测试 (Prompt 评估)]]

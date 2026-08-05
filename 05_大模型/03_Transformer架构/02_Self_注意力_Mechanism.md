@@ -174,10 +174,10 @@ Attention(Q,K,V) = softmax(QK^T / √d) · V
 - [[05_大模型/03_Transformer架构/03_Transformer_Revolution]] — Transformer 革命
 - [[05_大模型/03_Transformer架构/03_Transformer_Revolution]] — Transformer 入门
 - [[20_论文精读/02_模型架构/01_注意力_Is_All_You_Need_深入分析]] — Attention Is All You Need 深度解读
-- [[05_大模型/05_LLM架构/05_LLM架构]] — LLM 架构 2026
+- [[05_大模型/04_LLM架构/05_LLM架构]] — LLM 架构 2026
 - [[概念/transformer-architecture]] — Transformer 架构
 - [[概念/kv-cache]] — KV Cache
-- [[05_大模型/03_Transformer架构/11_Transformer与LLM架构|Transformer × LLM 架构]]
+- [[05_大模型/03_Transformer架构/08_Transformer与LLM架构|Transformer × LLM 架构]]
 
 ## 总结
 

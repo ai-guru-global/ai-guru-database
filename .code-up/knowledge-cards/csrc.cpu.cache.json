@@ -1,0 +1,102 @@
+{
+  "id": "csrc.cpu.cache",
+  "title": "Cache",
+  "type": "module",
+  "summary": "Module providing defined, size, std::memcpy, collapse, concat_and_cache_mla_cpu_impl and 5 more symbols",
+  "details": "Contains 10 functions/methods",
+  "symbols": [
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__x86_64__)\n  #define DISPATCH_MACRO VLLM_DISPATCH_FLOATING_TYPES_WITH_E5M2\n#else\n  #define DISPATCH_MACRO VLLM_DISPATCH_FLOATING_TYPES\n#endif\n\nnamespace {\ntemplate <typename scalar_t>\nvoid copy_blocks_cpu_impl(std::vector<torch::Tensor> const& key_caches,\n                          std::vector<torch::Tensor> const& value_caches,\n                          const torch::Tensor& mapping_pairs,\n                          const int element_num_per_block,\n                          const int layer_num)",
+      "docstring": "",
+      "line": 6
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size(0);\n  const size_t block_bytes = sizeof(scalar_t) * element_num_per_block;\n#pragma omp parallel for collapse(2)\n  for (int layer = 0; layer < layer_num; ++layer)",
+      "docstring": "",
+      "line": 19
+    },
+    {
+      "name": "std::memcpy",
+      "kind": "function",
+      "signature": "std::memcpy(target_ptr, source_ptr, block_bytes);\n\n      scalar_t* value_cache_ptr = value_caches[layer].data_ptr<scalar_t>();\n      source_ptr = value_cache_ptr + source_offset;\n      target_ptr = value_cache_ptr + target_offset;\n      std::memcpy(target_ptr, source_ptr, block_bytes);\n    }\n  }\n}\n\ntemplate <typename scalar_t>\nvoid reshape_and_cache_cpu_impl(\n    const scalar_t* __restrict__ key, const scalar_t* __restrict__ value,\n    scalar_t* __restrict__ key_cache, scalar_t* __restrict__ value_cache,\n    const int64_t* __restrict__ slot_mapping, const int num_tokens,\n    const int key_stride, const int value_stride, const int num_heads,\n    const int head_size, const int block_size, const int x)",
+      "docstring": "",
+      "line": 30
+    },
+    {
+      "name": "collapse",
+      "kind": "function",
+      "signature": "collapse(2)\n  for (int token_idx = 0; token_idx < num_tokens; ++token_idx)",
+      "docstring": "",
+      "line": 50
+    },
+    {
+      "name": "concat_and_cache_mla_cpu_impl",
+      "kind": "function",
+      "signature": "concat_and_cache_mla_cpu_impl(\n    const scalar_t* __restrict__ kv_c,  // [num_tokens, kv_lora_rank]\n    const scalar_t* __restrict__ k_pe,  // [num_tokens, pe_dim]\n    scalar_t* __restrict__ kv_cache,  // [num_blocks, block_size, (kv_lora_rank\n                                      // + pe_dim)]\n    const int64_t* __restrict__ slot_mapping,  // [num_tokens]\n    const int num_tokens,                      //\n    const int block_stride,                    //\n    const int entry_stride,                    //\n    const int kv_c_stride,                     //\n    const int k_pe_stride,                     //\n    const int kv_lora_rank,                    //\n    const int pe_dim,                          //\n    const int block_size                       //\n)",
+      "docstring": "",
+      "line": 89
+    },
+    {
+      "name": "copy",
+      "kind": "function",
+      "signature": "copy(kv_c, kv_cache, kv_c_stride, block_stride, kv_lora_rank, 0);\n    copy(k_pe, kv_cache, k_pe_stride, block_stride, pe_dim, kv_lora_rank);\n  }\n}\n\n// Note: the key_caches and value_caches vectors are constant but\n// not the Tensors they contain. The vectors need to be const refs\n// in order to satisfy pytorch's C++ operator registration code.\nvoid copy_blocks(std::vector<torch::Tensor> const& key_caches,\n                 std::vector<torch::Tensor> const& value_caches,\n                 const torch::Tensor& block_mapping)",
+      "docstring": "",
+      "line": 126
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size();\n  TORCH_CHECK(num_layers == value_caches.size());\n  if (num_layers == 0)",
+      "docstring": "",
+      "line": 139
+    },
+    {
+      "name": "numel",
+      "kind": "function",
+      "signature": "numel();\n  DISPATCH_MACRO(key_caches[0].scalar_type(), \"copy_blocks_cpu_impl\", [&] {\n    CPU_KERNEL_GUARD_IN(copy_blocks_cpu_impl)\n    copy_blocks_cpu_impl<scalar_t>(key_caches, value_caches, block_mapping,\n                                   element_num_per_block, num_layers);\n    CPU_KERNEL_GUARD_OUT(copy_blocks_cpu_impl)\n  });\n}\n\nvoid reshape_and_cache(torch::Tensor& key, torch::Tensor& value,\n                       torch::Tensor& key_cache, torch::Tensor& value_cache,\n                       torch::Tensor& slot_mapping,\n                       const std::string& kv_cache_dtype,\n                       torch::Tensor& k_scale, torch::Tensor& v_scale)",
+      "docstring": "",
+      "line": 145
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size(0);\n  int num_heads = key.size(1);\n  int head_size = key.size(2);\n  int block_size = key_cache.size(3);\n  int x = key_cache.size(4);\n\n  int key_stride = key.stride(0);\n  int value_stride = value.stride(0);\n\n  DISPATCH_MACRO(key.scalar_type(), \"reshape_and_cache_cpu_impl\", [&] {\n    CPU_KERNEL_GUARD_IN(reshape_and_cache_cpu_impl)\n    reshape_and_cache_cpu_impl<scalar_t>(\n        key.data_ptr<scalar_t>(), value.data_ptr<scalar_t>(),\n        key_cache.data_ptr<scalar_t>(), value_cache.data_ptr<scalar_t>(),\n        slot_mapping.data_ptr<int64_t>(), num_tokens, key_stride, value_stride,\n        num_heads, head_size, block_size, x);\n    CPU_KERNEL_GUARD_OUT(reshape_and_cache_cpu_impl)\n  });\n}\n\nvoid concat_and_cache_mla(\n    torch::Tensor& kv_c,          // [num_tokens, kv_lora_rank]\n    torch::Tensor& k_pe,          // [num_tokens, pe_dim]\n    torch::Tensor& kv_cache,      // [num_blocks, block_size, (kv_lora_rank +\n                                  // pe_dim)]\n    torch::Tensor& slot_mapping,  // [num_tokens] or [num_actual_tokens]\n    const std::string& kv_cache_dtype, torch::Tensor& scale)",
+      "docstring": "",
+      "line": 159
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size(0);\n  int kv_lora_rank = kv_c.size(1);\n  int pe_dim = k_pe.size(1);\n  int block_size = kv_cache.size(1);\n\n  TORCH_CHECK(kv_cache.size(2) == kv_lora_rank + pe_dim);\n  TORCH_CHECK(kv_cache_dtype != \"fp8\");\n\n  int kv_c_stride = kv_c.stride(0);\n  int k_pe_stride = k_pe.stride(0);\n  int block_stride = kv_cache.stride(0);\n  int entry_stride = kv_cache.stride(1);\n\n  VLLM_DISPATCH_FLOATING_TYPES(\n      kv_c.scalar_type(), \"concat_and_cache_mla_cpu_impl\", [&] {\n        CPU_KERNEL_GUARD_IN(concat_and_cache_mla_cpu_impl)\n        concat_and_cache_mla_cpu_impl<scalar_t>(\n            kv_c.data_ptr<scalar_t>(), k_pe.data_ptr<scalar_t>(),\n            kv_cache.data_ptr<scalar_t>(), slot_mapping.data_ptr<int64_t>(),\n            num_tokens, block_stride, entry_stride, kv_c_stride, k_pe_stride,\n            kv_lora_rank, pe_dim, block_size);\n        CPU_KERNEL_GUARD_OUT(concat_and_cache_mla_cpu_impl)\n      });\n}\n\nvoid swap_blocks(torch::Tensor& src, torch::Tensor& dst,\n                 const torch::Tensor& block_mapping)",
+      "docstring": "",
+      "line": 186
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cpu_types",
+      "map",
+      "vector"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 10,
+    "public_symbols": 10,
+    "classes": 0,
+    "functions": 10,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cpu/cache.cpp"
+}

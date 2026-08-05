@@ -1,0 +1,45 @@
+{
+  "id": "csrc.quantization.fp4.nvfp4_quant_entry.cu",
+  "title": "Nvfp4 Quant Entry",
+  "type": "module",
+  "summary": "Module providing Copyright, scaled_fp4_quant_sm100a",
+  "details": "Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) 2025, NVIDIA CORPORATION.  All rights reserved.\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n\n#include <torch/all.h>\n\n#if defined ENABLE_NVFP4 && ENABLE_NVFP4\nvoid scaled_fp4_quant_sm100a(torch::Tensor const& output,\n                             torch::Tensor const& input,\n                             torch::Tensor const& output_sf,\n                             torch::Tensor const& input_sf);\n#endif\n\n#if defined ENABLE_NVFP4 && ENABLE_NVFP4\nvoid scaled_fp4_experts_quant_sm100a(\n    torch::Tensor& output, torch::Tensor& output_scale,\n    torch::Tensor const& input, torch::Tensor const& input_global_scale,\n    torch::Tensor const& input_offset_by_experts,\n    torch::Tensor const& output_scale_offset_by_experts);\n#endif\n\nvoid scaled_fp4_quant(torch::Tensor& output, torch::Tensor const& input,\n                      torch::Tensor& output_sf, torch::Tensor const& input_sf)",
+      "docstring": "",
+      "line": 1
+    },
+    {
+      "name": "scaled_fp4_quant_sm100a",
+      "kind": "function",
+      "signature": "scaled_fp4_quant_sm100a(output, input, output_sf, input_sf);\n#endif\n  TORCH_CHECK_NOT_IMPLEMENTED(false, \"No compiled nvfp4 quantization kernel\");\n}\n\nvoid scaled_fp4_experts_quant(\n    torch::Tensor& output, torch::Tensor& output_scale,\n    torch::Tensor const& input, torch::Tensor const& input_global_scale,\n    torch::Tensor const& input_offset_by_experts,\n    torch::Tensor const& output_scale_offset_by_experts)",
+      "docstring": "",
+      "line": 36
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 2,
+    "public_symbols": 2,
+    "classes": 0,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/fp4/nvfp4_quant_entry.cu"
+}

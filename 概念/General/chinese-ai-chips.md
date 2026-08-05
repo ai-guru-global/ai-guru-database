@@ -53,7 +53,7 @@ name_zh: "国产 AI 芯片"
 - [[概念/cambricon|Cambricon]]
 - [[概念/hygon|Hygon]]
 - [[概念/mthreads|Moore Threads]]
-- [[10_部署推理/05_硬件与算力/02_Chinese_AI_Chip_推理_矩阵|国产芯片推理矩阵]]
+- [[10_部署推理/05_硬件与算力/03_Chinese_AI_Chip_推理_矩阵|国产芯片推理矩阵]]
 - [[01_数学基础/10_AI硬件/03_Chinese_AI_Chips_深入分析|国产 AI 芯片深度解析]]
 
 ---

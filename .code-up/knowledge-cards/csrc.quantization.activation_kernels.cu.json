@@ -1,0 +1,80 @@
+{
+  "id": "csrc.quantization.activation_kernels.cu",
+  "title": "Activation Kernels",
+  "type": "module",
+  "summary": "Module providing silu_kernel, sigmoid, sizeof, VLLM_LDG, ACT_FN and 1 more symbols",
+  "details": "Contains 6 functions/methods",
+  "symbols": [
+    {
+      "name": "silu_kernel",
+      "kind": "function",
+      "signature": "silu_kernel(const T& x)",
+      "docstring": "",
+      "line": 12
+    },
+    {
+      "name": "sigmoid",
+      "kind": "function",
+      "signature": "sigmoid(x)\n  return (T)(((float)x) / (1.0f + expf((float)-x)));\n}\n\n// Activation and gating kernel template.\ntemplate <typename scalar_t, scalar_t (*ACT_FN)(const scalar_t&),\n          typename fp8_type>\n__global__ void act_and_mul_quant_kernel(\n    fp8_type* __restrict__ out,          // [..., d]\n    const scalar_t* __restrict__ input,  // [..., 2, d]\n    const float* scale, const int d)",
+      "docstring": "",
+      "line": 16
+    },
+    {
+      "name": "sizeof",
+      "kind": "function",
+      "signature": "sizeof(scalar_t);\n\n  // We don't expect the hidden dimension to exceed 32 bits so int32 should\n  // be safe here.\n  const int32_t tgt_elems_per_block = div_ceil(d, blocks_per_token);\n  const int32_t elems_per_block =\n      round_to_next_multiple_of(tgt_elems_per_block, elems_per_128bit_load);\n  const int32_t block_start = blockIdx.y * elems_per_block;\n  int32_t block_end = block_start + elems_per_block;\n  block_end = block_end > d ? d : block_end;\n\n  // token_idx is 64 bit to prevent 32 bit overflow when the number of tokens\n  // is very large\n  const int64_t token_idx = blockIdx.x;\n  const scalar_t* __restrict__ x_ptr = input + token_idx * 2 * d;\n  const scalar_t* __restrict__ y_ptr = input + token_idx * 2 * d + d;\n  fp8_type* __restrict__ out_ptr = out + token_idx * d;\n\n  // 128-bit vectorized code\n  const int32_t vec_loop_end =\n      round_to_previous_multiple_of(elems_per_128bit_load, block_end);\n  const int32_t vec_end_idx = vec_loop_end / elems_per_128bit_load;\n  const int32_t vec_start_idx = block_start / elems_per_128bit_load;\n\n  const int4* __restrict__ x_128bit_ptr = reinterpret_cast<const int4*>(x_ptr);\n  const int4* __restrict__ y_128bit_ptr = reinterpret_cast<const int4*>(y_ptr);\n  int2* __restrict__ out_128bit_ptr = reinterpret_cast<int2*>(out_ptr);\n\n  float inverted_scale = 1 / *scale;\n#pragma unroll\n  for (int32_t vec_idx = vec_start_idx + threadIdx.x; vec_idx < vec_end_idx;\n       vec_idx += blockDim.x)",
+      "docstring": "",
+      "line": 29
+    },
+    {
+      "name": "VLLM_LDG",
+      "kind": "function",
+      "signature": "VLLM_LDG(&x_128bit_ptr[vec_idx]);\n    const int4 y_128bit = VLLM_LDG(&y_128bit_ptr[vec_idx]);\n    using scalar_128bit_vec_t = std::array<scalar_t, elems_per_128bit_load>;\n    using scalar_64bit_vec_t = std::array<fp8_type, elems_per_128bit_load>;\n\n    scalar_64bit_vec_t out_vec;\n    const auto x_vec = reinterpret_cast<scalar_128bit_vec_t const&>(x_128bit);\n    const auto y_vec = reinterpret_cast<scalar_128bit_vec_t const&>(y_128bit);\n\n#pragma unroll\n    for (int i = 0; i < elems_per_128bit_load; i++)",
+      "docstring": "",
+      "line": 61
+    },
+    {
+      "name": "ACT_FN",
+      "kind": "function",
+      "signature": "ACT_FN(x_vec[i]) * y_vec[i], inverted_scale);\n    }\n\n    out_128bit_ptr[vec_idx] = reinterpret_cast<const int2&>(out_vec);\n  }\n\n  // Scalar cleanup code\n  if (block_end > vec_loop_end)",
+      "docstring": "",
+      "line": 72
+    },
+    {
+      "name": "VLLM_LDG",
+      "kind": "function",
+      "signature": "VLLM_LDG(&x_ptr[idx]);\n      const scalar_t y = VLLM_LDG(&y_ptr[idx]);\n      out_ptr[idx] =\n          scaled_fp8_conversion<true, fp8_type>(ACT_FN(x) * y, inverted_scale);\n    }\n  }\n}\n}  // namespace vllm\n\n// Launch activation, gating, and quantize kernel.\n#define LAUNCH_ACTIVATION_GATE_KERNEL(KERNEL)                               \\\n  int d = input.size(-1) / 2;                                               \\\n  int64_t num_tokens = input.numel() / input.size(-1);                      \\\n  dim3 grid(num_tokens, num_tokens > 16 ? num_tokens > 32 ? 1 : 2 : 4);     \\\n  dim3 block(std::min(d, 512));                                             \\\n  const at::cuda::OptionalCUDAGuard device_guard(device_of(input));         \\\n  const cudaStream_t stream = at::cuda::getCurrentCUDAStream();             \\\n  VLLM_DISPATCH_FLOATING_TYPES(                                             \\\n      input.scalar_type(), \"act_and_mul_kernel\", [&] {                      \\\n        VLLM_DISPATCH_FP8_TYPES(                                            \\\n            out.scalar_type(), \"fused_add_rms_norm_kernel_fp8_type\", [&] {  \\\n              vllm::act_and_mul_quant_kernel<scalar_t, KERNEL<scalar_t>,    \\\n                                             fp8_t>                         \\\n                  <<<grid, block, 0, stream>>>(out.data_ptr<fp8_t>(),       \\\n                                               input.data_ptr<scalar_t>(),  \\\n                                               scale.data_ptr<float>(), d); \\\n            });                                                             \\\n      });\n\nvoid silu_and_mul_quant(torch::Tensor& out,    // [..., d]\n                        torch::Tensor& input,  // [..., 2 * d]\n                        torch::Tensor& scale)",
+      "docstring": "",
+      "line": 83
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "c10",
+      "cmath",
+      "core",
+      "cuda_compat",
+      "dispatch_utils",
+      "quantization",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 6,
+    "public_symbols": 6,
+    "classes": 0,
+    "functions": 6,
+    "internal_deps": 0,
+    "external_deps": 8,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/activation_kernels.cu"
+}

@@ -160,7 +160,7 @@ SSM 的训练与 传统神经网络 有所不同：
 ## See Also (深度专题)
 
 - [[05_大模型/02_序列模型/02_序列模型|序列模型深度解析]] — SSM/Mamba 与 Transformer 的系统性架构对比
-- [[05_大模型/05_LLM架构/16_Transformer_Alternatives|Transformer 替代架构]] — Mamba/RWKV/RetNet 等新架构全景
+- [[05_大模型/04_LLM架构/16_Transformer_替代架构|Transformer 替代架构]] — Mamba/RWKV/RetNet 等新架构全景
 
 ---
 

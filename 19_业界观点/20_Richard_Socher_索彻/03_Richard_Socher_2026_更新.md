@@ -168,7 +168,7 @@ Socher 的核心信念：
 | 可定制 | 用户定义偏好 |
 | 反垄断 | 反对一家独大 |
 | 开源 | 支持但务实 |
-| 与 [[19_业界观点/08_Emad_Mostaque_莫斯塔克/03_索引|Mostaque]] | 立场接近 |
+| 与 [[19_业界观点/08_Emad_Mostaque_莫斯塔克/INDEX|Mostaque]] | 立场接近 |
 
 ### 关于 Scaling Laws
 
@@ -194,7 +194,7 @@ Socher 的核心信念：
 
 ### 与其他 AI 搜索领袖的对比
 
-| 维度 | Socher | [[19_业界观点/24_Sundar_Pichai_皮查伊/02_索引|Pichai]] | Perplexity（Aravind） |
+| 维度 | Socher | [[19_业界观点/24_Sundar_Pichai_皮查伊/INDEX|Pichai]] | Perplexity（Aravind） |
 |------|--------|---------|----------------------|
 | 公司 | You.com | Google | Perplexity |
 | 起点 | NLP 学术 | 搜索巨头 | AI 原生 |
@@ -204,7 +204,7 @@ Socher 的核心信念：
 
 ### 与 NLP 学术同行的对比
 
-| 维度 | Socher | [[19_业界观点/02_Andrej_Karpathy_卡帕西/03_索引|Karpathy]] | [[19_业界观点/03_Andrew_Ng_吴恩达/03_索引|Ng]] |
+| 维度 | Socher | [[19_业界观点/02_Andrej_Karpathy_卡帕西/INDEX|Karpathy]] | [[19_业界观点/03_Andrew_Ng_吴恩达/INDEX|Ng]] |
 |------|--------|---------|-----|
 | 学术背景 | Stanford NLP | Stanford CV | Stanford ML |
 | 博士导师 | Chris Manning | Fei-Fei Li | 多位 |
@@ -296,7 +296,7 @@ Socher 的影响呈现为三个层面：
 ### 技术与应用
 
 - [[05_大模型/README]] -- NLP 基础
-- [[05_大模型/13_LLM产品/09_perplexity_概览|AI_Search]] -- AI 搜索
+- [[05_大模型/12_LLM产品/09_perplexity_概览|AI_Search]] -- AI 搜索
 - [[03_深度学习/README]] -- NLP 深度学习
 - [[00_入门/04_伦理与未来/03_AI未来趋势]] -- 搜索未来
 

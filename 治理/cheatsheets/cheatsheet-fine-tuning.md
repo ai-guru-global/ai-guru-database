@@ -217,4 +217,4 @@ def grpo_loss(prompt, group_responses, rewards, num_generations=8):
 
 ---
 
-**参见**：[[概念/Training/fine-tuning-techniques]] · [[07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南|TRL_RLHF_DPO_Guide]] · [[Alignment/GRPO_and_New_Alignment_Methods|GRPO_Guide]] · [[05_大模型/07_微调技术/09_PEFT_2026]] · [[概念/lora-qlora-sft-rlhf-dpo]] · [[概念/distributed-training]]
+**参见**：[[概念/Training/fine-tuning-techniques]] · [[07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南|TRL_RLHF_DPO_Guide]] · [[Alignment/GRPO_and_New_Alignment_Methods|GRPO_Guide]] · [[05_大模型/06_微调技术/09_PEFT_2026]] · [[概念/lora-qlora-sft-rlhf-dpo]] · [[概念/distributed-training]]

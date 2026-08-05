@@ -244,7 +244,7 @@ Grootendorst 自己开发的 BERTopic 是本章核心：
   - Self-Consistency（多次采样取多数）
   - Chain-of-Thought（让模型展示推理过程）
   - ReAct（推理 + 行动）
-- 详见 [[05_大模型/08_提示工程/16_Prompt工程]]
+- 详见 [[05_大模型/07_提示工程/16_Prompt工程]]
 
 ### Ch 7: Advanced Text Generation Techniques
 
@@ -352,11 +352,11 @@ Grootendorst 自己开发的 BERTopic 是本章核心：
 | Ch 1-2 基础 | Token/Embedding | [[05_大模型/01_LLM基础]] | LLM 基础概念 |
 | Ch 3 内部机制 | Attention/Transformer | [[03_深度学习/]] | 注意力与架构 |
 | Ch 4-5 分类/聚类 | 表示学习 | [[02_机器学习/]] | 文本分析应用 |
-| Ch 6-7 提示/生成 | Prompt/采样 | [[05_大模型/08_提示工程/16_Prompt工程]] | 提示与解码 |
+| Ch 6-7 提示/生成 | Prompt/采样 | [[05_大模型/07_提示工程/16_Prompt工程]] | 提示与解码 |
 | Ch 8 搜索/RAG | 语义检索 | [[14_RAG系统/01_RAG基础/07_RAG_系统]] | RAG 系统 |
 | Ch 9 多模态 | CLIP/VLM | [[04_计算机视觉/]] | 多模态 |
 | Ch 10 嵌入模型 | Embedding 训练 | [[05_大模型/01_LLM基础]] | 嵌入模型 |
-| Ch 11-12 微调 | LoRA/QLoRA/SFT | [[05_大模型/07_微调技术/04_GenAI_L18_微调_LLMs]] | 微调技术 |
+| Ch 11-12 微调 | LoRA/QLoRA/SFT | [[05_大模型/06_微调技术/04_GenAI_L18_微调_LLMs]] | 微调技术 |
 
 ## 适合人群
 
@@ -430,7 +430,7 @@ Grootendorst 自己开发的 BERTopic 是本章核心：
 - [[90_学习/05_参考资料/books/14_build_llm_from_scratch_raschka|Build LLM From Scratch]] — 底层实现互补
 - [[90_学习/05_参考资料/books/07_hands_on_ml_geron|Hands-On ML]] — ML/DL 基础
 - [[05_大模型/01_LLM基础]] — 知识库 LLM 基础
-- [[05_大模型/08_提示工程/16_Prompt工程]] — 提示工程总览
+- [[05_大模型/07_提示工程/16_Prompt工程]] — 提示工程总览
 - [[14_RAG系统/01_RAG基础/07_RAG_系统]] — RAG 系统专题
 - [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图 2026]]
 

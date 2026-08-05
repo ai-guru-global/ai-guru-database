@@ -1,0 +1,133 @@
+{
+  "id": "csrc.quantization.gguf.vecdotq.cuh",
+  "title": "Vecdotq",
+  "type": "module",
+  "summary": "Module providing get_int_b2, get_int_b4, return, sizeof, sizeof and 5 more symbols",
+  "details": "Contains 95 functions/methods",
+  "symbols": [
+    {
+      "name": "get_int_b2",
+      "kind": "function",
+      "signature": "get_int_b2(const void * x, const int & i32)",
+      "docstring": "",
+      "line": 2
+    },
+    {
+      "name": "get_int_b4",
+      "kind": "function",
+      "signature": "get_int_b4(const void * x, const int & i32)",
+      "docstring": "",
+      "line": 10
+    },
+    {
+      "name": "return",
+      "kind": "function",
+      "signature": "return((const int *) x)[i32]; // assume at least 4 byte alignment\n}\n\nstatic __device__ __forceinline__ int get_int_from_int8(const int8_t * x8, const int & i32)",
+      "docstring": "",
+      "line": 12
+    },
+    {
+      "name": "sizeof",
+      "kind": "function",
+      "signature": "sizeof(int) * i32); // assume at least 2 byte alignment\n    int x32 = 0;\n    x32 |= x16[0] <<  0;\n    x32 |= x16[1] << 16;\n    return x32;\n}\n\nstatic __device__ __forceinline__ int get_int_from_uint8(const uint8_t * x8, const int & i32)",
+      "docstring": "",
+      "line": 17
+    },
+    {
+      "name": "sizeof",
+      "kind": "function",
+      "signature": "sizeof(int) * i32); // assume at least 2 byte alignment\n    int x32 = 0;\n    x32 |= x16[0] <<  0;\n    x32 |= x16[1] << 16;\n    return x32;\n}\n\nstatic __device__ __forceinline__ int get_int_from_int8_aligned(const int8_t * x8, const int & i32)",
+      "docstring": "",
+      "line": 25
+    },
+    {
+      "name": "sizeof",
+      "kind": "function",
+      "signature": "sizeof(int) * i32)); // assume at least 4 byte alignment\n}\n\nstatic __device__ __forceinline__ int get_int_from_uint8_aligned(const uint8_t * x8, const int & i32)",
+      "docstring": "",
+      "line": 33
+    },
+    {
+      "name": "sizeof",
+      "kind": "function",
+      "signature": "sizeof(int) * i32)); // assume at least 4 byte alignment\n}\n\n// VDR = vec dot ratio, how many contiguous integers each thread processes when the vec dot kernel is called\n// MMVQ = mul_mat_vec_q, MMQ = mul_mat_q\n\n#define VDR_Q4_0_Q8_1_MMVQ 2\n#define VDR_Q4_0_Q8_1_MMQ  4\n\ntemplate <int vdr> static __device__ __forceinline__ float vec_dot_q4_0_q8_1_impl(\n    const int * v, const int * u, const float & d4, const half2 & ds8)",
+      "docstring": "",
+      "line": 37
+    },
+    {
+      "name": "__dp4a",
+      "kind": "function",
+      "signature": "__dp4a(vi0, u[2*i+0], sumi);\n        sumi = __dp4a(vi1, u[2*i+1], sumi);\n    }\n\n    const float2 ds8f = __half22float2(ds8);\n\n    // second part effectively subtracts 8 from each quant value\n    return d4 * (sumi * ds8f.x - (8*vdr/QI4_0) * ds8f.y);\n#endif\n}\n\n#define VDR_Q4_1_Q8_1_MMVQ 2\n#define VDR_Q4_1_Q8_1_MMQ  4\n\ntemplate <int vdr> static __device__ __forceinline__ float vec_dot_q4_1_q8_1_impl(\n    const int * v, const int * u, const half2 & dm4, const half2 & ds8)",
+      "docstring": "",
+      "line": 57
+    },
+    {
+      "name": "__dp4a",
+      "kind": "function",
+      "signature": "__dp4a(vi0, u[2*i+0], sumi);\n        sumi = __dp4a(vi1, u[2*i+1], sumi);\n    }\n\n    const float2 tmp = __half22float2(__hmul2(dm4, ds8));\n    const float d4d8 = tmp.x;\n    const float m4s8 = tmp.y;\n\n    // scale second part of sum by QI8_1/(vdr * QR4_1) to compensate for multiple threads adding it\n    return sumi * d4d8 + m4s8 / (QI8_1 / (vdr * QR4_1));\n#endif\n}\n\n#define VDR_Q5_0_Q8_1_MMVQ 2\n#define VDR_Q5_0_Q8_1_MMQ  4\n\ntemplate <int vdr> static __device__ __forceinline__ float vec_dot_q5_0_q8_1_impl(\n    const int * vl, const int * vh, const int * u, const float & d5, const half2 & ds8)",
+      "docstring": "",
+      "line": 82
+    },
+    {
+      "name": "__dp4a",
+      "kind": "function",
+      "signature": "__dp4a(vi0, u[2*i+0], sumi); // SIMD dot product of quantized values\n\n        int vi1 = (vl[i] >>  4) & 0x0F0F0F0F; // upper 4 qs bits, still need qh as 5th bits\n        vi1    |= (vh[i] >> 12) & 0x00000010; // 16 ->  4\n        vi1    |= (vh[i] >>  5) & 0x00001000; // 17 -> 12\n        vi1    |= (vh[i] <<  2) & 0x00100000; // 18 -> 20\n        vi1    |= (vh[i] <<  9) & 0x10000000; // 19 -> 28\n        sumi = __dp4a(vi1, u[2*i+1], sumi); // SIMD dot product of quantized values\n    }\n\n    const float2 ds8f = __half22float2(ds8);\n\n    // second part effectively subtracts 16 from each quant value\n    return d5 * (sumi * ds8f.x - (16*vdr/QI5_0) * ds8f.y);\n#endif\n}\n\n\n#define VDR_Q5_1_Q8_1_MMVQ 2\n#define VDR_Q5_1_Q8_1_MMQ  4\n\ntemplate <int vdr> static __device__ __forceinline__ float vec_dot_q5_1_q8_1_impl(\n    const int * vl, const int * vh, const int * u, const half2 & dm5, const half2 & ds8)",
+      "docstring": "",
+      "line": 110
+    },
+    {
+      "name": "__dp4a",
+      "kind": "function",
+      "signature": "__dp4a(vi0, u[2*i+0], sumi); // SIMD dot product of quantized values\n\n        int vi1 = (vl[i] >>  4) & 0x0F0F0F0F; // upper 4 qs bits, still need qh as 5th bits\n        vi1    |= (vh[i] >> 12) & 0x00000010; // 16 ->  4\n        vi1    |= (vh[i] >>  5) & 0x00001000; // 17 -> 12\n        vi1    |= (vh[i] <<  2) & 0x00100000; // 18 -> 20\n        vi1    |= (vh[i] <<  9) & 0x10000000; // 19 -> 28\n        sumi = __dp4a(vi1, u[2*i+1], sumi); // SIMD dot product of quantized values\n    }\n\n    const float2 tmp = __half22float2(__hmul2(dm5, ds8));\n    const float d5d8 = tmp.x;\n    const float m5s8 = tmp.y;\n\n    // scale second part of sum by QI5_1 / vdr to compensate for multiple threads adding it\n    return sumi*d5d8 + m5s8 / (QI5_1 / vdr);\n#endif\n}\n\n#define VDR_Q8_0_Q8_1_MMVQ 2\n#define VDR_Q8_0_Q8_1_MMQ 8\n\ntemplate <int vdr> static __device__ __forceinline__ float vec_dot_q8_0_q8_1_impl(\n    const int * v, const int * u, const float & d8_0, const float & d8_1)",
+      "docstring": "",
+      "line": 143
+    },
+    {
+      "name": "__dp4a",
+      "kind": "function",
+      "signature": "__dp4a(v[i], u[i], sumi);\n    }\n    return d8_0*d8_1 * sumi;\n#endif\n}\n\ntemplate <int vdr> static __device__ __forceinline__ float vec_dot_q8_1_q8_1_impl(\n    const int * v, const int * u, const half2 & dm8, const half2 & ds8)",
+      "docstring": "",
+      "line": 173
+    },
+    {
+      "name": "__dp4a",
+      "kind": "function",
+      "signature": "__dp4a(v[i], u[i], sumi);\n    }\n\n    const float2 tmp = __half22float2(__hmul2(dm8, ds8));\n    const float d8d8 = tmp.x;\n    const float m8s8 = tmp.y;\n\n    // scale second part of sum by QI8_1/ vdr to compensate for multiple threads adding it\n    return sumi*d8d8 + m8s8 / (QI8_1 / vdr);\n#endif\n}\n\n#define VDR_Q2_K_Q8_1_MMVQ 1\n#define VDR_Q2_K_Q8_1_MMQ  2\n\n// contiguous v/x values\nstatic __device__ __forceinline__ float vec_dot_q2_K_q8_1_impl_mmvq(\n    const int & v, const int * __restrict__ u, const uint8_t * __restrict__ scales,\n    const half2 & dm2, const float * __restrict__ d8)",
+      "docstring": "",
+      "line": 188
+    },
+    {
+      "name": "__dp4a",
+      "kind": "function",
+      "signature": "__dp4a(vi, u[i], 0) * (sc & 0xF)); // SIMD dot product\n\n        // fill int with 4x m\n        int m = sc >> 4;\n        m |= m <<  8;\n        m |= m << 16;\n        sumf_m += d8[i] * __dp4a(m, u[i], 0); // multiply constant q2_K part with sum of q8_1 values\n    }\n\n    const float2 dm2f = __half22float2(dm2);\n\n    return dm2f.x*sumf_d - dm2f.y*sumf_m;\n#endif\n}\n\nstatic __device__ __forceinline__ float vec_dot_q2_K_q8_1_impl_mmq(\n    const int * __restrict__ v, const int * __restrict__ u, const uint8_t * __restrict__ scales,\n    const half2 & dm2, const float & d8)",
+      "docstring": "",
+      "line": 217
+    },
+    {
+      "name": "__dp4a",
+      "kind": "function",
+      "signature": "__dp4a(v[i], u[i], sumi_d_sc); // SIMD dot product\n            sumi_m    = __dp4a(m,    u[i], sumi_m); // multiply sum of q8_1 values with m\n        }\n\n        sumi_d += sumi_d_sc * (sc & 0xF);\n    }\n\n    const float2 dm2f = __half22float2(dm2);\n\n    return d8 * (dm2f.x*sumi_d - dm2f.y*sumi_m);\n#endif\n}\n\n#define VDR_Q3_K_Q8_1_MMVQ 1\n#define VDR_Q3_K_Q8_1_MMQ  2\n\n// contiguous v/x values\nstatic __device__ __forceinline__ float vec_dot_q3_K_q8_1_impl_mmvq(\n    const int & vl, const int & vh, const int * __restrict__ u, const uint8_t * __restrict__ scales,\n    const int & scale_offset, const float & d3, const float * __restrict__ d8)",
+      "docstring": "",
+      "line": 252
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": []
+  },
+  "metrics": {
+    "total_symbols": 95,
+    "public_symbols": 95,
+    "classes": 0,
+    "functions": 95,
+    "internal_deps": 0,
+    "external_deps": 0,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/gguf/vecdotq.cuh"
+}

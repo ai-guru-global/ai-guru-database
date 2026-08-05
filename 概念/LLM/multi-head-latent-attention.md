@@ -206,4 +206,4 @@ MLA 的压缩效果可与 FP8 量化、前缀缓存等技术叠加：
 - [[概念/LLM/grouped-query-attention|GQA]]
 - [[概念/Inference/kv-cache|KV Cache]]
 - [[概念/LLM/kv-cache-compression|KV Cache 压缩]]
-- [[05_大模型/05_LLM架构/01_深度Seek_架构_2026|DeepSeek 深度解析]]
+- [[05_大模型/14_中国LLM生态/25_DeepSeek_架构_2026|DeepSeek 深度解析]]

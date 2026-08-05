@@ -14,7 +14,7 @@ relationships:
 sources:
   - 03_深度学习/02_神经网络核心/State_Space_Models_2026.md
   - AI入门/AI_New_Architectures.md
-  - 05_大模型/05_LLM架构/LLM_Architecture_Evolution.md
+  - 05_大模型/04_LLM架构/LLM_Architecture_Evolution.md
 summary: "Mamba 是一种‘用线性扫描代替注意力’的模型结构。它像一条传送带，边读边更新一个隐藏状态，不必像 Transformer 那样回头看所有词，因此在超长序列上更快、更省显存。"
 provenance:
   extracted: 0.75

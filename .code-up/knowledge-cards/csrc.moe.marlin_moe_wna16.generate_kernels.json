@@ -1,0 +1,97 @@
+{
+  "id": "csrc.moe.marlin_moe_wna16.generate_kernels",
+  "title": "Generate Kernels",
+  "type": "module",
+  "summary": "Module providing remove_old_kernels, generate_new_kernels, FILE_HEAD, TEMPLATE, SCALAR_TYPES and 4 more symbols",
+  "details": "Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "remove_old_kernels",
+      "kind": "function",
+      "signature": "def remove_old_kernels()",
+      "docstring": "",
+      "line": 50
+    },
+    {
+      "name": "generate_new_kernels",
+      "kind": "function",
+      "signature": "def generate_new_kernels()",
+      "docstring": "",
+      "line": 55
+    },
+    {
+      "name": "FILE_HEAD",
+      "kind": "constant",
+      "signature": "FILE_HEAD = ...",
+      "docstring": "",
+      "line": 10
+    },
+    {
+      "name": "TEMPLATE",
+      "kind": "constant",
+      "signature": "TEMPLATE = ...",
+      "docstring": "",
+      "line": 20
+    },
+    {
+      "name": "SCALAR_TYPES",
+      "kind": "constant",
+      "signature": "SCALAR_TYPES = ...",
+      "docstring": "",
+      "line": 35
+    },
+    {
+      "name": "THREAD_CONFIGS",
+      "kind": "constant",
+      "signature": "THREAD_CONFIGS = ...",
+      "docstring": "",
+      "line": 39
+    },
+    {
+      "name": "THREAD_M_BLOCKS",
+      "kind": "constant",
+      "signature": "THREAD_M_BLOCKS = ...",
+      "docstring": "",
+      "line": 41
+    },
+    {
+      "name": "GROUP_BLOCKS",
+      "kind": "constant",
+      "signature": "GROUP_BLOCKS = ...",
+      "docstring": "",
+      "line": 46
+    },
+    {
+      "name": "DTYPES",
+      "kind": "constant",
+      "signature": "DTYPES = ...",
+      "docstring": "",
+      "line": 47
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "glob",
+      "itertools",
+      "jinja2",
+      "os",
+      "subprocess"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 9,
+    "public_symbols": 9,
+    "classes": 0,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 5,
+    "depth": 0,
+    "complexity_sum": 45
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/moe/marlin_moe_wna16/generate_kernels.py"
+}

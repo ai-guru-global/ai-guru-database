@@ -1,0 +1,139 @@
+{
+  "id": "csrc.custom_all_reduce.cu",
+  "title": "Custom All Reduce",
+  "type": "module",
+  "summary": "Module providing static_assert, size, return, is_contiguous, device_guard and 5 more symbols",
+  "details": "Contains 16 functions/methods",
+  "symbols": [
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(sizeof(void*) == sizeof(fptr_t));\n\nfptr_t init_custom_ar(const std::vector<fptr_t>& fake_ipc_ptrs,\n                      torch::Tensor& rank_data, int64_t rank,\n                      bool fully_connected)",
+      "docstring": "",
+      "line": 11
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size();\n  if (world_size > 8)\n    throw std::invalid_argument(\"world size > 8 is not supported\");\n  if (world_size % 2 != 0)\n    throw std::invalid_argument(\"Odd num gpus is not supported for now\");\n  if (rank < 0 || rank >= world_size)\n    throw std::invalid_argument(\"invalid rank passed in\");\n\n  vllm::Signal* ipc_ptrs[8];\n  for (int i = 0; i < world_size; i++)",
+      "docstring": "",
+      "line": 16
+    },
+    {
+      "name": "return",
+      "kind": "function",
+      "signature": "return(fptr_t) new vllm::CustomAllreduce(ipc_ptrs, rank_data.data_ptr(),\n                                            rank_data.numel(), rank, world_size,\n                                            fully_connected);\n}\n\n/**\n * Make sure tensor t's data lies completely within ((char)t.data_ptr()) +\n * t.numel() * t.element_size(). This is slightly weaker than t.is_contiguous()\n * because it allows transpose of contiguous slice (i.e. slicing the first\n * dimension). Currently, we require this because stride information is not\n * passed into the kernels and we treat input tensors as flat.\n *\n * Examples\n * A = torch.zeros(3, 3, 3)\n * 1. A: OK\n * 2. A[1:]: OK\n * 3. A.permute(2, 0, 1): OK\n * 4. A[1:].permute(2, 0, 1): OK\n * 5. A[None].expand(2, -1, -1, -1): Not OK\n * 6. A[:, 1:, 1:]: Not OK\n */\nbool _is_weak_contiguous(torch::Tensor& t)",
+      "docstring": "",
+      "line": 27
+    },
+    {
+      "name": "is_contiguous",
+      "kind": "function",
+      "signature": "is_contiguous() ||\n         (t.storage().nbytes() - t.storage_offset() * t.element_size() ==\n          t.numel() * t.element_size());\n}\n\n/**\n * Performs an out-of-place allreduce and stores result in out.\n *\n * If _reg_buffer is null, assumes inp.data_ptr() is already IPC-registered.\n * Otherwise, _reg_buffer is assumed to be IPC-registered and inp is first\n * copied into _reg_buffer.\n */\nvoid all_reduce(fptr_t _fa, torch::Tensor& inp, torch::Tensor& out,\n                fptr_t _reg_buffer, int64_t reg_buffer_sz_bytes)",
+      "docstring": "",
+      "line": 50
+    },
+    {
+      "name": "device_guard",
+      "kind": "function",
+      "signature": "device_guard(device_of(inp));\n  auto stream = c10::cuda::getCurrentCUDAStream().stream();\n\n  TORCH_CHECK_EQ(inp.scalar_type(), out.scalar_type());\n  TORCH_CHECK_EQ(inp.numel(), out.numel());\n  TORCH_CHECK(_is_weak_contiguous(out));\n  TORCH_CHECK(_is_weak_contiguous(inp));\n  auto input_size = inp.numel() * inp.element_size();\n  auto reg_buffer = reinterpret_cast<void*>(_reg_buffer);\n  if (reg_buffer)",
+      "docstring": "",
+      "line": 64
+    },
+    {
+      "name": "TORCH_CHECK_LE",
+      "kind": "function",
+      "signature": "TORCH_CHECK_LE(input_size, reg_buffer_sz_bytes);\n    AT_CUDA_CHECK(cudaMemcpyAsync(reg_buffer, inp.data_ptr(), input_size,\n                                  cudaMemcpyDeviceToDevice, stream));\n  } else {\n    reg_buffer = inp.data_ptr();\n  }\n  switch (out.scalar_type())",
+      "docstring": "",
+      "line": 74
+    },
+    {
+      "name": "data_ptr",
+      "kind": "function",
+      "signature": "data_ptr()),\n                           out.numel());\n      break;\n    }\n    case at::ScalarType::Half: {\n      fa->allreduce<half>(stream, reinterpret_cast<half*>(reg_buffer),\n                          reinterpret_cast<half*>(out.data_ptr()), out.numel());\n      break;\n    }\n#if (__CUDA_ARCH__ >= 800 || !defined(__CUDA_ARCH__))\n    case at::ScalarType::BFloat16: {\n      fa->allreduce<nv_bfloat16>(\n          stream, reinterpret_cast<nv_bfloat16*>(reg_buffer),\n          reinterpret_cast<nv_bfloat16*>(out.data_ptr()), out.numel());\n      break;\n    }\n#endif\n    default:\n      throw std::runtime_error(\n          \"custom allreduce only supports float32, float16 and bfloat16\");\n  }\n}\n\nvoid dispose(fptr_t _fa)",
+      "docstring": "",
+      "line": 84
+    },
+    {
+      "name": "meta_size",
+      "kind": "function",
+      "signature": "meta_size()",
+      "docstring": "",
+      "line": 109
+    },
+    {
+      "name": "sizeof",
+      "kind": "function",
+      "signature": "sizeof(vllm::Signal); }\n\nvoid register_buffer(fptr_t _fa, const std::vector<fptr_t>& fake_ipc_ptrs)",
+      "docstring": "",
+      "line": 111
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(fake_ipc_ptrs.size() == fa->world_size_);\n  void* ipc_ptrs[8];\n  for (int i = 0; i < fake_ipc_ptrs.size(); i++)",
+      "docstring": "",
+      "line": 114
+    },
+    {
+      "name": "register_buffer",
+      "kind": "function",
+      "signature": "register_buffer(ipc_ptrs);\n}\n\n// Use vector<int64_t> to represent byte data for python binding compatibility.\nstd::tuple<std::vector<int64_t>, std::vector<int64_t>>\nget_graph_buffer_ipc_meta(fptr_t _fa)",
+      "docstring": "",
+      "line": 120
+    },
+    {
+      "name": "get_graph_buffer_ipc_meta",
+      "kind": "function",
+      "signature": "get_graph_buffer_ipc_meta();\n  std::vector<int64_t> bytes(handle.begin(), handle.end());\n  return std::make_tuple(bytes, offsets);\n}\n\n// Use vector<int64_t> to represent byte data for python binding compatibility.\nvoid register_graph_buffers(fptr_t _fa,\n                            const std::vector<std::vector<int64_t>>& handles,\n                            const std::vector<std::vector<int64_t>>& offsets)",
+      "docstring": "",
+      "line": 127
+    },
+    {
+      "name": "reserve",
+      "kind": "function",
+      "signature": "reserve(handles.size());\n  for (int i = 0; i < handles.size(); i++)",
+      "docstring": "",
+      "line": 138
+    },
+    {
+      "name": "emplace_back",
+      "kind": "function",
+      "signature": "emplace_back(handles[i].begin(), handles[i].end());\n  }\n  bytes.reserve(handles.size());\n  fa->register_graph_buffers(bytes, offsets);\n}\n\nstd::tuple<fptr_t, torch::Tensor> allocate_shared_buffer_and_handle(\n    int64_t size)",
+      "docstring": "",
+      "line": 140
+    },
+    {
+      "name": "cuda::current_device",
+      "kind": "function",
+      "signature": "cuda::current_device();\n  at::DeviceGuard device_guard(at::Device(at::DeviceType::CUDA, device_index));\n  void* buffer;\n  cudaStreamCaptureMode mode = cudaStreamCaptureModeRelaxed;\n  auto stream = c10::cuda::getCurrentCUDAStream().stream();\n  AT_CUDA_CHECK(cudaThreadExchangeStreamCaptureMode(&mode));\n\n  // Allocate buffer\n#if defined(USE_ROCM)\n  // data buffers need to be \"uncached\" for signal on MI200\n  AT_CUDA_CHECK(\n      hipExtMallocWithFlags((void**)&buffer, size, hipDeviceMallocUncached));\n#else\n  AT_CUDA_CHECK(cudaMalloc((void**)&buffer, size));\n#endif\n  AT_CUDA_CHECK(cudaMemsetAsync(buffer, 0, size, stream));\n  AT_CUDA_CHECK(cudaStreamSynchronize(stream));\n  AT_CUDA_CHECK(cudaThreadExchangeStreamCaptureMode(&mode));\n\n  // Create IPC memhandle for the allocated buffer.\n  // Will use it in open_mem_handle.\n  auto options =\n      torch::TensorOptions().dtype(torch::kUInt8).device(torch::kCPU);\n  auto handle =\n      torch::empty({static_cast<int64_t>(sizeof(cudaIpcMemHandle_t))}, options);\n  AT_CUDA_CHECK(\n      cudaIpcGetMemHandle((cudaIpcMemHandle_t*)handle.data_ptr(), buffer));\n\n  return std::make_tuple(reinterpret_cast<fptr_t>(buffer), handle);\n}\n\nfptr_t open_mem_handle(torch::Tensor& mem_handle)",
+      "docstring": "",
+      "line": 148
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "c10",
+      "custom_all_reduce",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 16,
+    "public_symbols": 16,
+    "classes": 0,
+    "functions": 16,
+    "internal_deps": 0,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/custom_all_reduce.cu"
+}

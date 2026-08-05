@@ -146,7 +146,7 @@ AZURE_OPENAI_API_VERSION=...   # 可选
 
 - 本课是 [[15_智能体/15_课程笔记/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework]] 中 Workflows 的具体应用——Agent / Actor 模式可用 workflow edges 编排
 - 与 [[15_智能体/15_课程笔记/Microsoft_AI_Agents_L11_Agentic_Protocols]] 中的 **NLWeb** 形成对比：NLWeb 让网站主动暴露 AI 接口，CUA 让 Agent 被动适配任何网站 ^[inferred]
-- 视觉感知呼应 [[05_大模型/10_多模态模型/GenAI_L09_Building_Image_Applications]] 的多模态基础
+- 视觉感知呼应 [[05_大模型/09_多模态模型/GenAI_L09_Building_Image_Applications]] 的多模态基础
 
 ---
 
@@ -155,7 +155,7 @@ AZURE_OPENAI_API_VERSION=...   # 可选
 - [[15_智能体/15_课程笔记/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework]] — 上一课：MAF
 - [[15_智能体/15_课程笔记/28_Microsoft_AI_Agent_L18_Securing_AI_Agent]] — 下一课：安全（L18）
 - [[15_智能体/15_课程笔记/Microsoft_AI_Agents_L11_Agentic_Protocols]] — L11：NLWeb 是互补方案
-- [[05_大模型/10_多模态模型/GenAI_L09_Building_Image_Applications]] — 多模态基础
+- [[05_大模型/09_多模态模型/GenAI_L09_Building_Image_Applications]] — 多模态基础
 - [[90_学习/03_课程资源/microsoft/03_microsoft_ai_agents_for_beginners]] — 课程总览
 
 ## 附录：核心概念速查

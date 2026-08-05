@@ -132,7 +132,7 @@ name_zh: "L12 上下文工程：四类上下文、六大管理策略与四大失
 ## 与其他课的衔接
 
 - 本课是 [[15_智能体/15_课程笔记/25_Microsoft_AI_Agent_L13_Agent_Memory]] 的前置——Memory 是上下文工程的核心工具之一
-- 与 [[05_大模型/08_提示工程/GenAI_L04_Prompt_Engineering_Fundamentals]] 互补：那节讲 prompt，本节讲 prompt 之外的整个 context 管理
+- 与 [[05_大模型/07_提示工程/GenAI_L04_Prompt_Engineering_Fundamentals]] 互补：那节讲 prompt，本节讲 prompt 之外的整个 context 管理
 - Sandbox 策略呼应 [[15_智能体/15_课程笔记/Microsoft_AI_Agents_L06_Trustworthy_Agents]] 中的 Docker 隔离
 
 ---
@@ -142,7 +142,7 @@ name_zh: "L12 上下文工程：四类上下文、六大管理策略与四大失
 - [[15_智能体/15_课程笔记/Microsoft_AI_Agents_L11_Agentic_Protocols]] — 上一课：协议
 - [[15_智能体/15_课程笔记/25_Microsoft_AI_Agent_L13_Agent_Memory]] — 下一课：Agent 记忆
 - [[15_智能体/15_课程笔记/Microsoft_AI_Agents_L09_Metacognition]] — L09：元认知中的反思也是 context 管理
-- [[05_大模型/08_提示工程/GenAI_L04_Prompt_Engineering_Fundamentals]] — Prompt 基础
+- [[05_大模型/07_提示工程/GenAI_L04_Prompt_Engineering_Fundamentals]] — Prompt 基础
 - [[14_RAG系统/README]] — RAG 是 Knowledge context 的主要实现
 - [[90_学习/03_课程资源/microsoft/03_microsoft_ai_agents_for_beginners]] — 课程总览
 

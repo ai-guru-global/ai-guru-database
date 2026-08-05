@@ -364,4 +364,4 @@ jobs:
 - [[09_测试/02_测试框架/03_Java_AI测试|AI_Testing_for_dummy]]
 - [[09_测试/02_测试框架/03_Java_AI测试.md|Java_AI_Testing]]
 - [[09_测试/README.md|测试 README]]
-- [[05_大模型/07_微调技术/01_Axolotl_深入分析.md|Axolotl_Deep_Dive]]
+- [[05_大模型/06_微调技术/01_Axolotl_深入分析.md|Axolotl_Deep_Dive]]

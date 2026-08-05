@@ -1,0 +1,62 @@
+{
+  "id": "csrc.attention.attention_utils.cuh",
+  "title": "Attention Utils",
+  "type": "module",
+  "summary": "Module providing Copyright, T, vllm::fma, VLLM_SHFL_XOR_SYNC",
+  "details": "Contains 4 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) 2023, The vLLM team.\n * Copyright (c) 2020-2023, NVIDIA CORPORATION.  All rights reserved.\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n#pragma once\n\n#include \"../cuda_compat.h\"\n#include \"attention_dtypes.h\"\n\n#include <float.h>\n#include <type_traits>\n\nnamespace vllm {\n\n// Q*K^T operation.\ntemplate <int THREAD_GROUP_SIZE, typename Vec, int N>\ninline __device__ float qk_dot_(const Vec (&q)[N], const Vec (&k)[N])",
+      "docstring": "",
+      "line": 3
+    },
+    {
+      "name": "T",
+      "kind": "function",
+      "signature": "T(treat vector lanes separately).\n  A_vec qk_vec = mul<A_vec, Vec, Vec>(q[0], k[0]);\n#pragma unroll\n  for (int ii = 1; ii < N; ++ii)",
+      "docstring": "",
+      "line": 33
+    },
+    {
+      "name": "vllm::fma",
+      "kind": "function",
+      "signature": "vllm::fma(q[ii], k[ii], qk_vec);\n  }\n\n  // Finalize the reduction across lanes.\n  float qk = sum(qk_vec);\n#pragma unroll\n  for (int mask = THREAD_GROUP_SIZE / 2; mask >= 1; mask /= 2)",
+      "docstring": "",
+      "line": 37
+    },
+    {
+      "name": "VLLM_SHFL_XOR_SYNC",
+      "kind": "function",
+      "signature": "VLLM_SHFL_XOR_SYNC(qk, mask);\n  }\n  return qk;\n}\n\ntemplate <typename T, int THREAD_GROUP_SIZE>\nstruct Qk_dot {\n  template <typename Vec, int N>\n  static inline __device__ float dot(const Vec (&q)[N], const Vec (&k)[N])",
+      "docstring": "",
+      "line": 44
+    }
+  ],
+  "dependencies": {
+    "internal": [
+      "../cuda_compat.h"
+    ],
+    "external": [
+      "attention_dtypes",
+      "float",
+      "type_traits"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 4,
+    "public_symbols": 4,
+    "classes": 0,
+    "functions": 4,
+    "internal_deps": 1,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/attention/attention_utils.cuh"
+}

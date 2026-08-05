@@ -133,9 +133,9 @@ def assemble_context(task, memory, tools):
 
 ## See Also (深度专题)
 
-- [[05_大模型/08_提示工程/01_Context_工程_指南|上下文工程指南]] — 系统 性方法论
-- [[05_大模型/08_提示工程/02_Context_工程_模式|上下文工程模式]] — 工程实践
-- [[05_大模型/08_提示工程/Hello_Agents_L09_Context_Engineering|Agent 上下文 工程]] — Agent 中的上下文管理
+- [[05_大模型/07_提示工程/01_Context_工程_指南|上下文工程指南]] — 系统 性方法论
+- [[05_大模型/07_提示工程/02_Context_工程_模式|上下文工程模式]] — 工程实践
+- [[05_大模型/07_提示工程/Hello_Agents_L09_Context_Engineering|Agent 上下文 工程]] — Agent 中的上下文管理
 - [[概念/LLM/context-window|Context Window]] — 上下文的物理限制
 - [[概念/LLM/prompt-engineering|Prompt Engineering]] — 上下文工程的前身
 - [[概念/Agent/agent-memory-systems|Agent 记忆系统]] — 上下文的记忆来源

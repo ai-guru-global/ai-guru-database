@@ -1,0 +1,40 @@
+{
+  "id": "benchmarks.kernels.benchmark_quant",
+  "title": "Benchmark Quant",
+  "type": "module",
+  "summary": "Module providing main",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "main",
+      "kind": "function",
+      "signature": "def main(\n    num_tokens: int,\n    hidden_size: int,\n    static_scale: bool,\n    quant_dtype: torch.dtype,\n    dtype: torch.dtype,\n    seed: int = 0,\n    do_profile: bool = False,\n    num_warmup_iters: int = 5,\n    num_iters: int = 100,\n) -> None:\n    current_platform.seed_everything(seed)\n    torch.set_default_device(\"cuda\")\n\n    x = torch.randn(num_tokens, hidden_size, dtype=dtype)\n    scale = torch.randn(1, 1, dtype=torch.float32) if static_scale else None\n\n    def run_cuda_benchmark(num_iters: int, profile: bool = False) -> float:\n        torch.cuda.synchronize()\n        if profile:\n            torch.cuda.cudart().cudaProfilerStart()\n        start_time = time.perf_counter()\n\n        for _ in range(num_iters):\n            if quant_dtype == torch.int8:\n                ops.scaled_int8_quant(x, scale)\n            else:\n                ops.scaled_fp8_quant(x, scale)\n        torch.cuda.synchronize()\n\n        end_time = time.perf_counter()\n        if profile:\n            torch.cuda.cudart().cudaProfilerStop()\n        return (end_time - start_time) / num_iters\n\n    # Warmup.\n    print(\"Warming up...\")\n    run_benchmark = run_cuda_benchmark\n    run_benchmark(num_iters=num_warmup_iters, profile=False)\n\n    # Benchmark.\n    if do_profile:\n        latency = run_benchmark(num_iters=1, profile=True)\n    else:\n        latency = run_benchmark(num_iters=num_iters, profile=False)\n    print(f\"Kernel running time: {latency * 1000000:.3f} us\")\n\n\nif __name__ == \"__main__\":\n\n    def to_torch_dtype(dt):\n        if dt == \"int8\":\n            return torch.int8\n        if dt == \"fp8\":\n            return torch.float8_e4m3fn\n        raise ValueError(f\"Unsupported dtype",
+      "docstring": "",
+      "line": 13
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "time",
+      "torch",
+      "vllm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 2
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/kernels/benchmark_quant.py"
+}

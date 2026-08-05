@@ -144,8 +144,8 @@ def generate(model, prompt, n_chars=200, temperature=1.0):
 
 - **延伸**：
   - 想深入序列建模基础 → [[05_大模型/02_序列模型/02_序列模型]]
-  - 想了解 Transformer 与 BERT → 本课程 [[90_学习/03_课程资源/microsoft/11_L18_Transformers_and_BERT|L18 Transformer 与 BERT]] 或 [[05_大模型/04_Transformer革命/03_Transformer_Revolution]]
-  - 想了解现代大语言模型与提示工程 → [[05_大模型/05_LLM架构/05_LLM架构]]、[[05_大模型/08_提示工程/16_Prompt工程]]
+  - 想了解 Transformer 与 BERT → 本课程 [[90_学习/03_课程资源/microsoft/11_L18_Transformers_and_BERT|L18 Transformer 与 BERT]] 或 [[05_大模型/03_Transformer架构/03_Transformer_Revolution]]
+  - 想了解现代大语言模型与提示工程 → [[05_大模型/04_LLM架构/05_LLM架构]]、[[05_大模型/07_提示工程/16_Prompt工程]]
   - 想动手做机器翻译或图像描述 → 关注 sequence-to-sequence 与注意力机制，参阅 [[05_大模型/02_序列模型/02_序列模型]] 中的编码器-解码器部分
 
 ## 相关阅读

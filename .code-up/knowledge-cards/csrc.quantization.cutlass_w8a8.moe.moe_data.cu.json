@@ -1,0 +1,97 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.moe.moe_data.cu",
+  "title": "Moe Data",
+  "type": "module",
+  "summary": "Module providing compute_problem_sizes, atomicAdd, compute_expert_offsets, compute_expert_blockscale_offsets, compute_arg_sorts and 4 more symbols",
+  "details": "Contains 9 functions/methods",
+  "symbols": [
+    {
+      "name": "compute_problem_sizes",
+      "kind": "function",
+      "signature": "compute_problem_sizes(const uint32_t* __restrict__ topk_ids,\n                                      int32_t* problem_sizes1,\n                                      int32_t* problem_sizes2,\n                                      int32_t* atomic_buffer,\n                                      const int topk_length, const int n,\n                                      const int k)",
+      "docstring": "",
+      "line": 8
+    },
+    {
+      "name": "atomicAdd",
+      "kind": "function",
+      "signature": "atomicAdd(&atomic_buffer[expert_id], occurrences);\n  __syncthreads();\n\n  if (threadIdx.x == 0)",
+      "docstring": "",
+      "line": 21
+    },
+    {
+      "name": "compute_expert_offsets",
+      "kind": "function",
+      "signature": "compute_expert_offsets(\n    const int32_t* __restrict__ problem_sizes1, int32_t* expert_offsets,\n    int32_t* atomic_buffer, const int num_experts)",
+      "docstring": "",
+      "line": 34
+    },
+    {
+      "name": "compute_expert_blockscale_offsets",
+      "kind": "function",
+      "signature": "compute_expert_blockscale_offsets(\n    const int32_t* __restrict__ problem_sizes1, int32_t* expert_offsets,\n    int32_t* blockscale_offsets, int32_t* atomic_buffer,\n    const int num_experts)",
+      "docstring": "",
+      "line": 46
+    },
+    {
+      "name": "compute_arg_sorts",
+      "kind": "function",
+      "signature": "compute_arg_sorts(const uint32_t* __restrict__ topk_ids,\n                                  const int32_t* __restrict__ expert_offsets,\n                                  int32_t* input_permutation,\n                                  int32_t* output_permutation,\n                                  int32_t* atomic_buffer, const int topk_length,\n                                  const int topk)",
+      "docstring": "",
+      "line": 63
+    },
+    {
+      "name": "atomicAdd",
+      "kind": "function",
+      "signature": "atomicAdd(&atomic_buffer[expert_id], 1);\n      input_permutation[start] = i / topk;\n      output_permutation[i] = start;\n    }\n  }\n}\n\nvoid get_cutlass_moe_mm_data_caller(\n    const torch::Tensor& topk_ids, torch::Tensor& expert_offsets,\n    torch::Tensor& problem_sizes1, torch::Tensor& problem_sizes2,\n    torch::Tensor& input_permutation, torch::Tensor& output_permutation,\n    const int64_t num_experts, const int64_t n, const int64_t k,\n    const std::optional<torch::Tensor>& blockscale_offsets)",
+      "docstring": "",
+      "line": 86
+    },
+    {
+      "name": "cuda::getCurrentCUDAStream",
+      "kind": "function",
+      "signature": "cuda::getCurrentCUDAStream(topk_ids.device().index());\n  auto options_int32 =\n      torch::TensorOptions().dtype(torch::kInt32).device(topk_ids.device());\n  torch::Tensor atomic_buffer = torch::zeros(num_experts, options_int32);\n\n  int num_threads = min(THREADS_PER_EXPERT, topk_ids.numel());\n  compute_problem_sizes<<<num_experts, num_threads, 0, stream>>>(\n      static_cast<const uint32_t*>(topk_ids.data_ptr()),\n      static_cast<int32_t*>(problem_sizes1.data_ptr()),\n      static_cast<int32_t*>(problem_sizes2.data_ptr()),\n      static_cast<int32_t*>(atomic_buffer.data_ptr()), topk_ids.numel(), n, k);\n  if (blockscale_offsets.has_value())",
+      "docstring": "",
+      "line": 99
+    },
+    {
+      "name": "data_ptr",
+      "kind": "function",
+      "signature": "data_ptr()),\n        static_cast<int32_t*>(expert_offsets.data_ptr()),\n        static_cast<int32_t*>(blockscale_offsets.value().data_ptr()),\n        static_cast<int32_t*>(atomic_buffer.data_ptr()), num_experts);\n  } else {\n    compute_expert_offsets<<<1, 1, 0, stream>>>(\n        static_cast<const int32_t*>(problem_sizes1.data_ptr()),\n        static_cast<int32_t*>(expert_offsets.data_ptr()),\n        static_cast<int32_t*>(atomic_buffer.data_ptr()), num_experts);\n  }\n  compute_arg_sorts<<<num_experts, num_threads, 0, stream>>>(\n      static_cast<const uint32_t*>(topk_ids.data_ptr()),\n      static_cast<const int32_t*>(expert_offsets.data_ptr()),\n      static_cast<int32_t*>(input_permutation.data_ptr()),\n      static_cast<int32_t*>(output_permutation.data_ptr()),\n      static_cast<int32_t*>(atomic_buffer.data_ptr()), topk_ids.numel(),\n      topk_ids.size(1));\n}\n\n__global__ void compute_pplx_data(int32_t* expert_offsets,\n                                  int32_t* problem_sizes1,\n                                  int32_t* problem_sizes2,\n                                  const int32_t* __restrict__ expert_num_tokens,\n                                  const int padded_m, const int n,\n                                  const int k)",
+      "docstring": "",
+      "line": 112
+    },
+    {
+      "name": "get_cutlass_pplx_moe_mm_data_caller",
+      "kind": "function",
+      "signature": "get_cutlass_pplx_moe_mm_data_caller(torch::Tensor& expert_offsets,\n                                         torch::Tensor& problem_sizes1,\n                                         torch::Tensor& problem_sizes2,\n                                         const torch::Tensor& expert_num_tokens,\n                                         const int64_t num_local_experts,\n                                         const int64_t padded_m,\n                                         const int64_t n, const int64_t k)",
+      "docstring": "",
+      "line": 146
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "c10",
+      "cudaTypedefs",
+      "iostream",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 9,
+    "public_symbols": 9,
+    "classes": 0,
+    "functions": 9,
+    "internal_deps": 0,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/moe/moe_data.cu"
+}

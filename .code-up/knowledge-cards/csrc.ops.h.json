@@ -1,0 +1,41 @@
+{
+  "id": "csrc.ops.h",
+  "title": "Ops",
+  "type": "module",
+  "summary": "Module providing weak_ref_tensor",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "weak_ref_tensor",
+      "kind": "function",
+      "signature": "weak_ref_tensor(torch::Tensor& tensor)",
+      "docstring": "",
+      "line": 8
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "core",
+      "optional",
+      "torch",
+      "vector"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/ops.h"
+}

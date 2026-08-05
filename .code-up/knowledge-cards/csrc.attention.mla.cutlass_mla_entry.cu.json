@@ -1,0 +1,38 @@
+{
+  "id": "csrc.attention.mla.cutlass_mla_entry.cu",
+  "title": "Cutlass Mla Entry",
+  "type": "module",
+  "summary": "Module providing Copyright",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) 2025, NVIDIA CORPORATION.  All rights reserved.\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n\n#include <torch/all.h>\n\n#if defined ENABLE_CUTLASS_MLA && ENABLE_CUTLASS_MLA\nvoid cutlass_mla_decode_sm100a(torch::Tensor const& out,\n                               torch::Tensor const& q_nope,\n                               torch::Tensor const& q_pe,\n                               torch::Tensor const& kv_c_and_k_pe_cache,\n                               torch::Tensor const& seq_lens,\n                               torch::Tensor const& page_table, double scale);\n#endif\n\nvoid cutlass_mla_decode(torch::Tensor const& out, torch::Tensor const& q_nope,\n                        torch::Tensor const& q_pe,\n                        torch::Tensor const& kv_c_and_k_pe_cache,\n                        torch::Tensor const& seq_lens,\n                        torch::Tensor const& page_table, double scale)",
+      "docstring": "",
+      "line": 1
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/attention/mla/cutlass_mla_entry.cu"
+}

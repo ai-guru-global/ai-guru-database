@@ -1,0 +1,46 @@
+{
+  "id": "benchmarks.benchmark_latency",
+  "title": "Benchmark Latency",
+  "type": "module",
+  "summary": "Module providing save_to_pytorch_benchmark_format",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "save_to_pytorch_benchmark_format",
+      "kind": "function",
+      "signature": "def save_to_pytorch_benchmark_format(\n    args: argparse.Namespace, results: dict[str, Any]\n) -> None:\n    pt_records = convert_to_pytorch_benchmark_format(\n        args=args,\n        metrics={\"latency\": results[\"latencies\"]},\n        extra_info={k: results[k] for k in [\"avg_latency\", \"percentiles\"]},\n    )\n    if pt_records:\n        pt_file = f\"{os.path.splitext(args.output_json)[0]}.pytorch.json\"\n        write_to_json(pt_file, pt_records)\n\n\ndef main(args: argparse.Namespace):\n    print(args)\n\n    engine_args = EngineArgs.from_cli_args(args)\n\n    # NOTE(woosuk): If the request cannot be processed in a single batch,\n    # the engine will automatically process the request in multiple batches.\n    llm = LLM(**dataclasses.asdict(engine_args))\n    assert llm.llm_engine.model_config.max_model_len >= (\n        args.input_len + args.output_len\n    ), (\n        \"Please ensure that max_model_len is greater than\"\n        \" the sum of input_len and output_len.\"\n    )\n\n    sampling_params = SamplingParams(\n        n=args.n,\n        temperature=1.0,\n        top_p=1.0,\n        ignore_eos=True,\n        max_tokens=args.output_len,\n        detokenize=not args.disable_detokenize,\n    )\n    print(sampling_params)\n    dummy_prompt_token_ids = np.random.randint(\n        10000, size=(args.batch_size, args.input_len)\n    )\n    dummy_prompts: list[PromptType] = [\n        {\"prompt_token_ids\": batch} for batch in dummy_prompt_token_ids.tolist()\n    ]\n\n    def llm_generate():\n        if not args.use_beam_search:\n            llm.generate(dummy_prompts, sampling_params=sampling_params, use_tqdm=False)\n        else:\n            llm.beam_search(\n                dummy_prompts,\n                BeamSearchParams(\n                    beam_width=args.n,\n                    max_tokens=args.output_len,\n                    ignore_eos=True,\n                ),\n            )\n\n    def run_to_completion(profile_dir: Optional[str] = None):\n        if profile_dir:\n            llm.start_profile()\n            llm_generate()\n            llm.stop_profile()\n        else:\n            start_time = time.perf_counter()\n            llm_generate()\n            end_time = time.perf_counter()\n            latency = end_time - start_time\n            return latency\n\n    print(\"Warming up...\")\n    for _ in tqdm(range(args.num_iters_warmup), desc=\"Warmup iterations\"):\n        run_to_completion(profile_dir=None)\n\n    if args.profile:\n        profile_dir = envs.VLLM_TORCH_PROFILER_DIR\n        print(f\"Profiling (results will be saved to '{profile_dir}')...\")\n        run_to_completion(profile_dir=profile_dir)\n        return\n\n    # Benchmark.\n    latencies = []\n    for _ in tqdm(range(args.num_iters), desc=\"Profiling iterations\"):\n        latencies.append(run_to_completion(profile_dir=None))\n    latencies = np.array(latencies)\n    percentages = [10, 25, 50, 75, 90, 99]\n    percentiles = np.percentile(latencies, percentages)\n    print(f\"Avg latency: {np.mean(latencies)} seconds\")\n    for percentage, percentile in zip(percentages, percentiles):\n        print(f\"{percentage}% percentile latency: {percentile} seconds\")\n\n    # Output JSON results if specified\n    if args.output_json:\n        results = {\n            \"avg_latency\": np.mean(latencies),\n            \"latencies\": latencies.tolist(),\n            \"percentiles\": dict(zip(percentages, percentiles.tolist())),\n        }\n        with open(args.output_json, \"w\") as f:\n            json.dump(results, f, indent=4)\n        save_to_pytorch_benchmark_format(args, results)\n\n\nif __name__ == \"__main__\":\n    parser = FlexibleArgumentParser(\n        description=\"Benchmark the latency of processing a single batch of \"\n        \"requests till completion.\"\n    )\n    parser.add_argument(\"--input-len\", type=int, default=32)\n    parser.add_argument(\"--output-len\", type=int, default=128)\n    parser.add_argument(\"--batch-size\", type=int, default=8)\n    parser.add_argument(\n        \"--n\",\n        type=int,\n        default=1,\n        help=\"Number of generated sequences per prompt.\",\n    )\n    parser.add_argument(\"--use-beam-search\", action=\"store_true\")\n    parser.add_argument(\n        \"--num-iters-warmup\",\n        type=int,\n        default=10,\n        help=\"Number of iterations to run for warmup.\",\n    )\n    parser.add_argument(\n        \"--num-iters\", type=int, default=30, help=\"Number of iterations to run.\"\n    )\n    parser.add_argument(\n        \"--profile\",\n        action=\"store_true\",\n        help=\"profile the generation process of a single batch\",\n    )\n    parser.add_argument(\n        \"--output-json\",\n        type=str,\n        default=None,\n        help=\"Path to save the latency results in JSON format.\",\n    )\n    parser.add_argument(\n        \"--disable-detokenize\",\n        action=\"store_true\",\n        help=(\n            \"Do not detokenize responses (i.e. do not include \"\n            \"detokenization time in the latency measurement)\"\n        ),\n    )\n\n    parser = EngineArgs.add_cli_args(parser)\n    # V1 enables prefix caching by default which skews the latency\n    # numbers. We need to disable prefix caching by default.\n    parser.set_defaults(enable_prefix_caching=False)\n    args = parser.parse_args()\n    if args.profile and not envs.VLLM_TORCH_PROFILER_DIR",
+      "docstring": "",
+      "line": 24
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "argparse",
+      "benchmark_utils",
+      "dataclasses",
+      "json",
+      "numpy",
+      "os",
+      "time",
+      "tqdm",
+      "typing",
+      "vllm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 10,
+    "depth": 0,
+    "complexity_sum": 1
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/benchmark_latency.py"
+}

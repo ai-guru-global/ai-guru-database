@@ -61,7 +61,7 @@ name_zh: "白辰甲 2026 动态"
 | 开源许可 | Apache 2.0，最宽松 |
 | 生态 | HuggingFace/ModelScope 高下载量 |
 
-> 详见 [[05_大模型/15_中国LLM生态/04_Chinese_LLM_对比_矩阵|中国大模型对比矩阵]]。
+> 详见 [[05_大模型/14_中国LLM生态/04_Chinese_LLM_对比_矩阵|中国大模型对比矩阵]]。
 
 ### 阶跃星辰（StepFun）：多模态战略
 
@@ -112,7 +112,7 @@ name_zh: "白辰甲 2026 动态"
 
 - [[19_业界观点/14_Jinze_Bai_白锦泽/01_关于|白辰甲 概述]]
 - [[19_业界观点/Jinze_Bai/index|白辰甲 主页]]
-- [[05_大模型/15_中国LLM生态/04_Chinese_LLM_对比_矩阵|中国大模型对比矩阵]]
+- [[05_大模型/14_中国LLM生态/04_Chinese_LLM_对比_矩阵|中国大模型对比矩阵]]
 - [[概念/Vision/vision-language-model|视觉语言模型 2026]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/04_China_US_AI_Race_Leaders_Views|中美 AI 竞赛观点]]
 

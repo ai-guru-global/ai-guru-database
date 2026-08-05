@@ -1,0 +1,54 @@
+{
+  "id": "benchmarks.disagg_benchmarks.round_robin_proxy",
+  "title": "Round Robin Proxy",
+  "type": "module",
+  "summary": "Module providing handle_request, main, RoundRobinProxy",
+  "details": "Contains 1 classes: RoundRobinProxy. Contains 3 functions/methods",
+  "symbols": [
+    {
+      "name": "handle_request",
+      "kind": "function",
+      "signature": "def handle_request(self, request)",
+      "docstring": "",
+      "line": 16
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "signature": "def main()",
+      "docstring": "",
+      "line": 46
+    },
+    {
+      "name": "RoundRobinProxy",
+      "kind": "class",
+      "signature": "class RoundRobinProxy",
+      "docstring": "",
+      "line": 11
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "aiohttp",
+      "asyncio",
+      "itertools"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 4,
+    "public_symbols": 3,
+    "classes": 1,
+    "functions": 3,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 10
+  },
+  "tags": [
+    "oop",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/disagg_benchmarks/round_robin_proxy.py"
+}

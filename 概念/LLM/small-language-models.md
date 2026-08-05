@@ -10,8 +10,8 @@ relationships:
   - target: "概念/Training/model-compression"
     type: related_to
 sources:
-  - 05_大模型/12_端侧大模型/
-  - 05_大模型/05_LLM架构/
+  - 05_大模型/11_端侧大模型/
+  - 05_大模型/04_LLM架构/
 summary: "小语言模型（SLM，通常 <10B 参数）通过高质量数据、蒸馏和架构优化，在特定任务上逼近大模型效果，是端侧部署、低成本推理和 Agent 子任务的主力选择。"
 provenance:
   extracted: 0.50

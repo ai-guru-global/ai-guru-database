@@ -1,0 +1,38 @@
+{
+  "id": "csrc.moe.torch_bindings",
+  "title": "Torch Bindings",
+  "type": "module",
+  "summary": "Module providing TORCH_LIBRARY_EXPAND",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "TORCH_LIBRARY_EXPAND",
+      "kind": "function",
+      "signature": "TORCH_LIBRARY_EXPAND(TORCH_EXTENSION_NAME, m)",
+      "docstring": "",
+      "line": 2
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "core",
+      "moe_ops"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/moe/torch_bindings.cpp"
+}

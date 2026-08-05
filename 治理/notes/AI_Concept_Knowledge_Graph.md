@@ -808,14 +808,14 @@ Model_Training → Evaluation → Deployment
 | **机器学习** | `02_机器学习/` | `Feature_Engineering/`, `Supervised_Learning/`, `Unsupervised_Learning/` |
 | **深度学习** | `03_深度学习/` | `Neural_Network_Core/`, `Optimization/`, `World_Models/JEPA_Architecture_2026.md` |
 | **NLP 基础** | `05_大模型/02_序列模型/` | `Transformer_Revolution/` |
-| **大模型** | `05_大模型/05_LLM架构/` | `Fine_tuning_Techniques/`, `Prompt_Engineering/` |
-| **多模态** | `05_大模型/10_多模态模型/` | `04_计算机视觉/` |
+| **大模型** | `05_大模型/04_LLM架构/` | `Fine_tuning_Techniques/`, `Prompt_Engineering/` |
+| **多模态** | `05_大模型/09_多模态模型/` | `04_计算机视觉/` |
 | **计算机视觉** | `04_计算机视觉/` | `Image_Classification_Detection/`, `Segmentation/`, `Generative_Models/` |
 | **强化学习** | `06_强化学习/` | `RL_Foundations/`, `Deep_RL/` |
 | **Agent** | `06_强化学习/AI_Agents/` | `Agent_Protocols_Detail.md`, `Agent_Future_Roadmap_2026_2030.md` |
 | **RAG 系统** | `14_RAG系统/` | `RAG_Advanced_2026/`, `Chroma_Deep_Dive.md` |
-| **MoE/Scaling** | `05_大模型/05_LLM架构/` | `AI_Infrastructure_Trends_2026.md` |
-| **Reasoning** | `05_大模型/05_LLM架构/` | `Prompt_Engineering.md` |
+| **MoE/Scaling** | `05_大模型/04_LLM架构/` | `AI_Infrastructure_Trends_2026.md` |
+| **Reasoning** | `05_大模型/04_LLM架构/` | `Prompt_Engineering.md` |
 | **AI for Science** | `13_AI_Applications_Industry/` | `AI_Applications_Industry.md` |
 | **评估基准** | `08_模型评估/` | `15_智能体/07_Agent评估/`, `Benchmarking/` |
 | **特征工程** | `02_机器学习/05_特征工程/` | `Feature_Engineering.md` |
@@ -835,7 +835,7 @@ Q: MCP 协议详解
 A: 06_强化学习/AI_Agents/Agent_Protocols_Detail.md
 
 Q: 多模态模型架构
-A: 05_大模型/10_多模态模型/Multimodal_Architectures_2026.md
+A: 05_大模型/09_多模态模型/Multimodal_Architectures_2026.md
 
 Q: VLA 模型技术
 A: 06_强化学习/05_机器人与具身智能/VLA_Models_2026.md
@@ -877,7 +877,7 @@ Q: Coding Agent / AI 编码助手
 A: AI编程/Tools/AI_Coding_Assistants_2026.md
 
 Q: LLM 微调 (LoRA/QLoRA)
-A: 05_大模型/07_微调技术/
+A: 05_大模型/06_微调技术/
 
 Q: 视频生成
 A: 04_计算机视觉/07_视频生成/Video_Generation_2026.md

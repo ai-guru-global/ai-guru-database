@@ -145,7 +145,7 @@ def train_step(model, x_0, optimizer):
 
 - [[概念/LLM/transformer-architecture|Transformer 架构]]
 - [[概念/Inference/quantization|量化]]
-- [[05_大模型/10_多模态模型/Video_Generation_2026|视频生成]]
+- [[05_大模型/09_多模态模型/Video_Generation_2026|视频生成]]
 - [[03_深度学习/04_生成模型/|生成模型]]
 - [[概念/General/mixture-of-experts|MoE]]
 

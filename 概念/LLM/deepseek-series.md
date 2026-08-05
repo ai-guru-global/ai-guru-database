@@ -19,6 +19,6 @@ name_zh: "DeepSeek 系列模型架构演进"
 ## Related
 
 - [[deepseek-models|DeepSeek 模型系列 (主卡片)]]
-- [[../../05_大模型/15_中国LLM生态/DeepSeek_Deep_Dive|DeepSeek 深度解析 (2020行)]]
+- [[../../05_大模型/14_中国LLM生态/DeepSeek_Deep_Dive|DeepSeek 深度解析 (2020行)]]
 - [[mixture-of-experts|MoE 混合专家]]
 - [[multi-head-latent-attention|MLA 多头潜在注意力]]

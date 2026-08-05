@@ -64,25 +64,25 @@ name_zh: "Microsoft Generative AI For Beginners：21"
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
 | 00 | 课程设置 | [[01_数学基础/08_Python工具包/01_AI_开发_Environment_配置]] | [[01_数学基础/08_Python工具包/03_GenAI_L00_课程_配置]] |
-| 01 | 生成式 AI 与大型语言模型简介 | [[00_入门/01_基础入门/02_AI基础]]、[[05_大模型/05_LLM架构/05_LLM架构]] | [[00_入门/GenAI_L01_Intro_to_GenAI_and_LLMs]] |
-| 02 | 探索与比较不同的 LLM | [[05_大模型/05_LLM架构/05_LLM架构]]、[[05_大模型/14_全球LLM生态/README]] | [[05_大模型/01_LLM基础/GenAI_L02_Exploring_and_Comparing_LLMs]] |
+| 01 | 生成式 AI 与大型语言模型简介 | [[00_入门/01_基础入门/02_AI基础]]、[[05_大模型/04_LLM架构/05_LLM架构]] | [[00_入门/GenAI_L01_Intro_to_GenAI_and_LLMs]] |
+| 02 | 探索与比较不同的 LLM | [[05_大模型/04_LLM架构/05_LLM架构]]、[[05_大模型/13_全球LLM生态/README]] | [[05_大模型/01_LLM基础/GenAI_L02_Exploring_and_Comparing_LLMs]] |
 | 03 | 负责任地使用生成式 AI | [[17_伦理安全/Ethics-in-nutshell]]、[[17_伦理安全/AI_Governance_Compliance_2026]] | [[17_伦理安全/01_伦理基础/GenAI_L03_Using_GenAI_Responsibly]] |
 
 ### 提示工程（L04-L05）
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 04 | 理解提示工程基础 | [[05_大模型/08_提示工程/16_Prompt工程]]、[[05_大模型/08_提示工程/Prompt_Engineering_Principles_Ng]] | [[05_大模型/08_提示工程/GenAI_L04_Prompt_Engineering_Fundamentals]] |
-| 05 | 创建高级提示 | [[05_大模型/08_提示工程/16_Prompt工程]]、[[05_大模型/13_LLM产品/05_god_tier_prompts_概览]] | [[05_大模型/08_提示工程/GenAI_L05_Advanced_Prompts]] |
+| 04 | 理解提示工程基础 | [[05_大模型/07_提示工程/16_Prompt工程]]、[[05_大模型/07_提示工程/Prompt_Engineering_Principles_Ng]] | [[05_大模型/07_提示工程/GenAI_L04_Prompt_Engineering_Fundamentals]] |
+| 05 | 创建高级提示 | [[05_大模型/07_提示工程/16_Prompt工程]]、[[05_大模型/12_LLM产品/05_god_tier_prompts_概览]] | [[05_大模型/07_提示工程/GenAI_L05_Advanced_Prompts]] |
 
 ### 应用构建（L06-L11）
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 06 | 构建文本生成应用 | [[15_智能体/README]]、[[05_大模型/13_LLM产品/01_chatgpt_概览]] | [[15_智能体/GenAI_L06_Text_Generation_Apps]] |
+| 06 | 构建文本生成应用 | [[15_智能体/README]]、[[05_大模型/12_LLM产品/01_chatgpt_概览]] | [[15_智能体/GenAI_L06_Text_Generation_Apps]] |
 | 07 | 构建聊天应用 | [[15_智能体/README]]、[[15_智能体/02_Agent框架/README]] | [[15_智能体/GenAI_L07_Building_Chat_Applications]] |
 | 08 | 构建搜索和向量数据库应用 | [[14_RAG系统/01_RAG基础/07_RAG_系统]]、[[14_RAG系统/03_向量数据库/05_rag_vector_database]] | [[14_RAG系统/01_RAG基础/GenAI_L08_Building_Search_Applications]] |
-| 09 | 构建图像生成应用 | [[05_大模型/10_多模态模型/Multimodal_Models_for_dummy]] | [[05_大模型/10_多模态模型/GenAI_L09_Building_Image_Applications]] |
+| 09 | 构建图像生成应用 | [[05_大模型/09_多模态模型/Multimodal_Models_for_dummy]] | [[05_大模型/09_多模态模型/GenAI_L09_Building_Image_Applications]] |
 | 10 | 构建低代码 AI 应用 | [[18_行业应用/README]] | [[16_编程/05_开发工具/GenAI_L10_Building_Low_Code_AI_Applications]] |
 | 11 | 使用函数调用集成外部应用 | [[15_智能体/02_Agent框架/README]]、[[15_智能体/03_Agent工作流/06_工作流_简明指南]] | [[15_智能体/14_GenAI课程/03_GenAI_L11_Integrating_with_Function_Calling]] |
 
@@ -99,7 +99,7 @@ name_zh: "Microsoft Generative AI For Beginners：21"
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
 | 15 | 检索增强生成（RAG）与向量数据库 | [[14_RAG系统/01_RAG基础/07_RAG_系统]]、[[14_RAG系统/04_高级RAG/12_RAG_高级_2026]] | [[14_RAG系统/01_RAG基础/04_GenAI_L15_RAG_and_向量数据库]] |
-| 16 | 开源模型与 Hugging Face | [[05_大模型/14_全球LLM生态/README]]、[[90_学习/03_课程资源/hugging_face/01_official_courses]] | [[05_大模型/14_全球LLM生态/GenAI_L16_Open_Source_Models_and_Hugging_Face]] |
+| 16 | 开源模型与 Hugging Face | [[05_大模型/13_全球LLM生态/README]]、[[90_学习/03_课程资源/hugging_face/01_official_courses]] | [[05_大模型/13_全球LLM生态/GenAI_L16_Open_Source_Models_and_Hugging_Face]] |
 
 ### AI 代理（L17）
 
@@ -111,10 +111,10 @@ name_zh: "Microsoft Generative AI For Beginners：21"
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 18 | 微调大型语言模型 | [[05_大模型/07_微调技术/03_微调技术]]、[[05_大模型/07_微调技术/02_微调_策略]] | [[05_大模型/07_微调技术/04_GenAI_L18_微调_LLMs]] |
-| 19 | 使用小型语言模型构建 | [[05_大模型/12_端侧大模型/01_端侧大模型_深入分析]] | [[05_大模型/12_端侧大模型/02_GenAI_L19_Building_with_SLMs]] |
-| 20 | 使用 Mistral 模型构建 | [[05_大模型/14_全球LLM生态/08_Mistral_AI_深入分析]] | [[05_大模型/14_全球LLM生态/03_GenAI_L20_Building_with_Mistral]] |
-| 21 | 使用 Meta 模型构建 | [[05_大模型/14_全球LLM生态/07_Meta_LLaMA_深入分析]] | [[05_大模型/14_全球LLM生态/04_GenAI_L21_Building_with_Meta]] |
+| 18 | 微调大型语言模型 | [[05_大模型/06_微调技术/03_微调技术]]、[[05_大模型/06_微调技术/02_微调_策略]] | [[05_大模型/06_微调技术/04_GenAI_L18_微调_LLMs]] |
+| 19 | 使用小型语言模型构建 | [[05_大模型/11_端侧大模型/01_端侧大模型_深入分析]] | [[05_大模型/11_端侧大模型/02_GenAI_L19_Building_with_SLMs]] |
+| 20 | 使用 Mistral 模型构建 | [[05_大模型/13_全球LLM生态/08_Mistral_AI_深入分析]] | [[05_大模型/13_全球LLM生态/03_GenAI_L20_Building_with_Mistral]] |
+| 21 | 使用 Meta 模型构建 | [[05_大模型/13_全球LLM生态/07_Meta_LLaMA_深入分析]] | [[05_大模型/13_全球LLM生态/04_GenAI_L21_Building_with_Meta]] |
 
 ---
 
@@ -123,7 +123,7 @@ name_zh: "Microsoft Generative AI For Beginners：21"
 1. **从基础开始**：按 L00→L05 的顺序学习基础概念与提示工程，建立扎实的知识框架。
 2. **边学边做**：L06→L11 是应用构建课，建议配合本库对应章节的实际代码库动手实践。
 3. **深入 RAG 与代理**：L15（RAG）和 L17（AI 代理）是当前最热门的方向，建议重点学习并结合本库 [[14_RAG系统/01_RAG基础/07_RAG_系统]] 和 [[15_智能体/README]] 深入。
-4. **模型选型**：L18→L21 介绍不同模型家族，结合 [[05_大模型/14_全球LLM生态/README]] 理解模型差异与选型策略。
+4. **模型选型**：L18→L21 介绍不同模型家族，结合 [[05_大模型/13_全球LLM生态/README]] 理解模型差异与选型策略。
 5. **完成课后挑战**：每课附带的代码示例（Python / TypeScript）是巩固理解的关键。
 
 ---

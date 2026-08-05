@@ -1,0 +1,128 @@
+{
+  "id": "csrc.cpu.activation",
+  "title": "Activation",
+  "type": "module",
+  "summary": "Module providing vec_op::FP32Vec8, scalar_vec_t::get_elem_num, constexpr, x, y and 5 more symbols",
+  "details": "Contains 14 functions/methods",
+  "symbols": [
+    {
+      "name": "vec_op::FP32Vec8",
+      "kind": "function",
+      "signature": "vec_op::FP32Vec8(*func)(const vec_op::FP32Vec8&),\n          bool is_gated>\nvoid activation_kernel(int num_tokens, int d, scalar_t* __restrict__ input,\n                       scalar_t* __restrict__ output)",
+      "docstring": "",
+      "line": 3
+    },
+    {
+      "name": "scalar_vec_t::get_elem_num",
+      "kind": "function",
+      "signature": "scalar_vec_t::get_elem_num();\n\n  TORCH_CHECK(d % VEC_ELEM_NUM == 0);\n\n#pragma omp parallel for\n  for (int i = 0; i < num_tokens; ++i)",
+      "docstring": "",
+      "line": 9
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(is_gated)",
+      "docstring": "",
+      "line": 16
+    },
+    {
+      "name": "x",
+      "kind": "function",
+      "signature": "x(input + start + j);\n      const vec_op::FP32Vec8 f32_x(x);\n      vec_op::FP32Vec8 f32_ans = func(f32_x);\n\n      if constexpr (is_gated)",
+      "docstring": "",
+      "line": 19
+    },
+    {
+      "name": "y",
+      "kind": "function",
+      "signature": "y(input + start + d + j);\n        const vec_op::FP32Vec8 f32_y(y);\n        f32_ans = f32_y * f32_ans;\n      }\n\n      const scalar_vec_t result(f32_ans);\n      result.save(output + i * d + j);\n    }\n  }\n}\n\nFORCE_INLINE vec_op::FP32Vec8 silu_act(const vec_op::FP32Vec8& x)",
+      "docstring": "",
+      "line": 25
+    },
+    {
+      "name": "zeros",
+      "kind": "function",
+      "signature": "zeros(0.0);\n  const vec_op::FP32Vec8 ones(1.0);\n  return x / (ones + (zeros - x).exp());\n}\n\nFORCE_INLINE vec_op::FP32Vec8 gelu_new_act(const vec_op::FP32Vec8& x)",
+      "docstring": "",
+      "line": 37
+    },
+    {
+      "name": "ones",
+      "kind": "function",
+      "signature": "ones(1.0);\n  const vec_op::FP32Vec8 w1(0.79788456f);\n  const vec_op::FP32Vec8 w2(0.044715f);\n  const vec_op::FP32Vec8 w3(0.5);\n  const vec_op::FP32Vec8 x3 = x * x * x;\n  const vec_op::FP32Vec8 t = (w1 * (x + w2 * x3)).tanh();\n  return w3 * x * (ones + t);\n}\n\nFORCE_INLINE vec_op::FP32Vec8 gelu_fast_act(const vec_op::FP32Vec8& x)",
+      "docstring": "",
+      "line": 43
+    },
+    {
+      "name": "ones",
+      "kind": "function",
+      "signature": "ones(1.0);\n  const vec_op::FP32Vec8 w1(0.79788456f);\n  const vec_op::FP32Vec8 w2(0.044715f);\n  const vec_op::FP32Vec8 w3(0.5);\n  const vec_op::FP32Vec8 t = (x * w1 * (ones + x * w2 * x)).tanh();\n  return w3 * x * (ones + t);\n}\n\nFORCE_INLINE vec_op::FP32Vec8 gelu_quick_act(const vec_op::FP32Vec8& x)",
+      "docstring": "",
+      "line": 53
+    },
+    {
+      "name": "zeros",
+      "kind": "function",
+      "signature": "zeros(0.0);\n  const vec_op::FP32Vec8 ones(1.0);\n  const vec_op::FP32Vec8 w1(1.702f);\n  return x / (ones + (zeros - w1 * x).exp());\n}\n\nFORCE_INLINE vec_op::FP32Vec8 gelu_act(const vec_op::FP32Vec8& x)",
+      "docstring": "",
+      "line": 62
+    },
+    {
+      "name": "ones",
+      "kind": "function",
+      "signature": "ones(1.0);\n  const vec_op::FP32Vec8 w1(M_SQRT1_2);\n  const vec_op::FP32Vec8 w2(0.5);\n  return x * w2 * (ones + (x * w1).er());\n}\n\nFORCE_INLINE vec_op::FP32Vec8 gelu_tanh_act(const vec_op::FP32Vec8& x)",
+      "docstring": "",
+      "line": 69
+    },
+    {
+      "name": "ones",
+      "kind": "function",
+      "signature": "ones(1.0);\n  const vec_op::FP32Vec8 w1(M_SQRT2 * M_2_SQRTPI * 0.5);\n  const vec_op::FP32Vec8 w2(0.5);\n  const vec_op::FP32Vec8 w3(0.044715);\n  const vec_op::FP32Vec8 x_3 = x * x * x;\n  const vec_op::FP32Vec8 inner = w1 * (x + x_3 * w3);\n  return x * w2 * (ones + inner.tanh());\n}\n};  // namespace\n\nvoid silu_and_mul(torch::Tensor& out, torch::Tensor& input)",
+      "docstring": "",
+      "line": 76
+    },
+    {
+      "name": "numel",
+      "kind": "function",
+      "signature": "numel() / input.size(-1);\n  int d = input.size(-1) / 2;\n\n  VLLM_DISPATCH_FLOATING_TYPES(input.scalar_type(), \"silu_and_mul_impl\", [&] {\n    CPU_KERNEL_GUARD_IN(silu_and_mul_impl)\n    activation_kernel<scalar_t, silu_act, true>(\n        num_tokens, d, input.data_ptr<scalar_t>(), out.data_ptr<scalar_t>());\n    CPU_KERNEL_GUARD_OUT(silu_and_mul_impl)\n  });\n}\n\nvoid gelu_and_mul(torch::Tensor& out,    // [..., d]\n                  torch::Tensor& input)  // [..., 2 * d]\n{\n  int num_tokens = input.numel() / input.size(-1);\n  int d = input.size(-1) / 2;\n\n  VLLM_DISPATCH_FLOATING_TYPES(input.scalar_type(), \"gelu_and_mul_impl\", [&] {\n    CPU_KERNEL_GUARD_IN(gelu_and_mul_impl)\n    activation_kernel<scalar_t, gelu_act, true>(\n        num_tokens, d, input.data_ptr<scalar_t>(), out.data_ptr<scalar_t>());\n    CPU_KERNEL_GUARD_OUT(gelu_and_mul_impl)\n  });\n}\n\nvoid gelu_tanh_and_mul(torch::Tensor& out,    // [..., d]\n                       torch::Tensor& input)  // [..., 2 * d]\n{\n  int num_tokens = input.numel() / input.size(-1);\n  int d = input.size(-1) / 2;\n\n  VLLM_DISPATCH_FLOATING_TYPES(\n      input.scalar_type(), \"gelu_tanh_and_mul_impl\", [&] {\n        CPU_KERNEL_GUARD_IN(gelu_tanh_and_mul_impl)\n        activation_kernel<scalar_t, gelu_tanh_act, true>(\n            num_tokens, d, input.data_ptr<scalar_t>(),\n            out.data_ptr<scalar_t>());\n        CPU_KERNEL_GUARD_OUT(gelu_tanh_and_mul_impl)\n      });\n}\n\nvoid gelu_new(torch::Tensor& out, torch::Tensor& input)",
+      "docstring": "",
+      "line": 88
+    },
+    {
+      "name": "numel",
+      "kind": "function",
+      "signature": "numel() / input.size(-1);\n  int d = input.size(-1);\n\n  VLLM_DISPATCH_FLOATING_TYPES(input.scalar_type(), \"gelu_new_impl\", [&] {\n    CPU_KERNEL_GUARD_IN(gelu_new_impl)\n    activation_kernel<scalar_t, gelu_new_act, false>(\n        num_tokens, d, input.data_ptr<scalar_t>(), out.data_ptr<scalar_t>());\n    CPU_KERNEL_GUARD_OUT(gelu_new_impl)\n  });\n}\n\nvoid gelu_fast(torch::Tensor& out, torch::Tensor& input)",
+      "docstring": "",
+      "line": 130
+    },
+    {
+      "name": "numel",
+      "kind": "function",
+      "signature": "numel() / input.size(-1);\n  int d = input.size(-1);\n\n  VLLM_DISPATCH_FLOATING_TYPES(input.scalar_type(), \"gelu_fast_impl\", [&] {\n    CPU_KERNEL_GUARD_IN(gelu_fast_impl)\n    activation_kernel<scalar_t, gelu_fast_act, false>(\n        num_tokens, d, input.data_ptr<scalar_t>(), out.data_ptr<scalar_t>());\n    CPU_KERNEL_GUARD_OUT(gelu_fast_impl)\n  });\n}\n\nvoid gelu_quick(torch::Tensor& out, torch::Tensor& input)",
+      "docstring": "",
+      "line": 142
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cpu_types"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 14,
+    "public_symbols": 14,
+    "classes": 0,
+    "functions": 14,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cpu/activation.cpp"
+}

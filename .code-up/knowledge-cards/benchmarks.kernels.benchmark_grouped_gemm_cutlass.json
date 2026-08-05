@@ -1,0 +1,124 @@
+{
+  "id": "benchmarks.kernels.benchmark_grouped_gemm_cutlass",
+  "title": "Benchmark Grouped Gemm Cutlass",
+  "type": "module",
+  "summary": "Module providing to_fp8, bench_run, run_triton_moe, run_cutlass_moe, run_cutlass_from_graph and 5 more symbols",
+  "details": "Contains 8 functions/methods",
+  "symbols": [
+    {
+      "name": "to_fp8",
+      "kind": "function",
+      "signature": "def to_fp8(tensor: torch.Tensor)",
+      "docstring": "",
+      "line": 30
+    },
+    {
+      "name": "bench_run",
+      "kind": "function",
+      "signature": "def bench_run(\n    results: list[benchmark.Measurement],\n    model: str,\n    num_experts: int,\n    topk: int,\n    per_act_token: bool,\n    per_out_ch: bool,\n    mkn: tuple[int, int, int],\n)",
+      "docstring": "",
+      "line": 37
+    },
+    {
+      "name": "run_triton_moe",
+      "kind": "function",
+      "signature": "def run_triton_moe(\n        a: torch.Tensor,\n        w1: torch.Tensor,\n        w2: torch.Tensor,\n        topk_weights: torch.Tensor,\n        topk_ids: torch.Tensor,\n        w1_scale: torch.Tensor,\n        w2_scale: torch.Tensor,\n        a_scale: torch.Tensor,\n        num_repeats: int,\n    )",
+      "docstring": "",
+      "line": 83
+    },
+    {
+      "name": "run_cutlass_moe",
+      "kind": "function",
+      "signature": "def run_cutlass_moe(\n        a: torch.Tensor,\n        a_scale: torch.Tensor,\n        w1: torch.Tensor,\n        w2: torch.Tensor,\n        w1_scale: torch.Tensor,\n        w2_scale: torch.Tensor,\n        topk_weights: torch.Tensor,\n        topk_ids: torch.Tensor,\n        num_repeats: int,\n    )",
+      "docstring": "",
+      "line": 107
+    },
+    {
+      "name": "run_cutlass_from_graph",
+      "kind": "function",
+      "signature": "def run_cutlass_from_graph(\n        a: torch.Tensor,\n        a_scale: torch.Tensor,\n        w1_q: torch.Tensor,\n        w2_q: torch.Tensor,\n        w1_scale: torch.Tensor,\n        w2_scale: torch.Tensor,\n        topk_weights: torch.Tensor,\n        topk_ids: torch.Tensor,\n    )",
+      "docstring": "",
+      "line": 130
+    },
+    {
+      "name": "run_triton_from_graph",
+      "kind": "function",
+      "signature": "def run_triton_from_graph(\n        a: torch.Tensor,\n        w1: torch.Tensor,\n        w2: torch.Tensor,\n        topk_weights: torch.Tensor,\n        topk_ids: torch.Tensor,\n        w1_scale: torch.Tensor,\n        w2_scale: torch.Tensor,\n        a_scale: torch.Tensor,\n    )",
+      "docstring": "",
+      "line": 154
+    },
+    {
+      "name": "replay_graph",
+      "kind": "function",
+      "signature": "def replay_graph(graph, num_repeats)",
+      "docstring": "",
+      "line": 179
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "signature": "def main(args)",
+      "docstring": "",
+      "line": 317
+    },
+    {
+      "name": "DEFAULT_MODELS",
+      "kind": "constant",
+      "signature": "DEFAULT_MODELS = ...",
+      "docstring": "",
+      "line": 17
+    },
+    {
+      "name": "DEFAULT_BATCH_SIZES",
+      "kind": "constant",
+      "signature": "DEFAULT_BATCH_SIZES = ...",
+      "docstring": "",
+      "line": 23
+    },
+    {
+      "name": "DEFAULT_TP_SIZES",
+      "kind": "constant",
+      "signature": "DEFAULT_TP_SIZES = ...",
+      "docstring": "",
+      "line": 24
+    },
+    {
+      "name": "PER_ACT_TOKEN_OPTS",
+      "kind": "constant",
+      "signature": "PER_ACT_TOKEN_OPTS = ...",
+      "docstring": "",
+      "line": 26
+    },
+    {
+      "name": "PER_OUT_CH_OPTS",
+      "kind": "constant",
+      "signature": "PER_OUT_CH_OPTS = ...",
+      "docstring": "",
+      "line": 27
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "benchmark_shapes",
+      "torch",
+      "vllm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 13,
+    "public_symbols": 13,
+    "classes": 0,
+    "functions": 8,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 31
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/kernels/benchmark_grouped_gemm_cutlass.py"
+}

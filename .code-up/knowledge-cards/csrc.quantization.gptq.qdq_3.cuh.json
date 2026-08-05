@@ -1,0 +1,44 @@
+{
+  "id": "csrc.quantization.gptq.qdq_3.cuh",
+  "title": "Qdq 3",
+  "type": "module",
+  "summary": "Module providing 44222000, 44222000",
+  "details": "Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "44222000",
+      "kind": "function",
+      "signature": "44222000(u, v lsb)\n// vjjjhhhf ffdddbbb  uiiiggge eecccaaa\n// vtttrrrp ppnnnlll  usssqqqo oommmkkk\n\n__forceinline__ __device__ void shuffle_3bit_32(uint32_t* q, int stride)",
+      "docstring": "",
+      "line": 10
+    },
+    {
+      "name": "44222000",
+      "kind": "function",
+      "signature": "44222000(u, v lsb)\n  // zb: vjjjhhhf ffdddbbb  uiiiggge eecccaaa\n  // zc: vtttrrrp ppnnnlll  usssqqqo oommmkkk\n\n  q[0 * stride] = za;\n  q[1 * stride] = zb;\n  q[2 * stride] = zc;\n}\n\n__forceinline__ __device__ void dequant_3bit_32(const uint32_t q_0,\n                                                const uint32_t q_1,\n                                                const uint32_t q_2,\n                                                half2 (&dq)[16], int stride,\n                                                const uint32_t zero)",
+      "docstring": "",
+      "line": 72
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "qdq_util"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 2,
+    "public_symbols": 2,
+    "classes": 0,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/gptq/qdq_3.cuh"
+}

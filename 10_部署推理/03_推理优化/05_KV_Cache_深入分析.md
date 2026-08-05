@@ -365,7 +365,7 @@ $$
 - 与 RoPE 的交互复杂
 - 社区正在研究 MHA/GQA → MLA 的迁移（MHA2MLA、TransMLA）
 
-更多：[[概念/multi-head-latent-attention|MLA 概念卡]]、[[05_大模型/05_LLM架构/01_深度Seek_架构_2026|DeepSeek 深度解析]]。
+更多：[[概念/multi-head-latent-attention|MLA 概念卡]]、[[05_大模型/14_中国LLM生态/25_DeepSeek_架构_2026|DeepSeek 深度解析]]。
 
 ### 5.6 架构对比表
 
@@ -706,7 +706,7 @@ MQA 压缩太激进，质量损失明显。GQA 在压缩比和质量之间取得
 - [[10_部署推理/03_推理优化/11_提示缓存_and_KV_Cache_优化|Prompt Caching 与 KV Cache 优化]]
 - [[10_部署推理/03_推理优化/12_Speculative_Decoding_高级_2026|投机解码前沿技术]]
 - [[10_部署推理/04_模型量化/04_量化_技术_2026|量化技术 2026]]
-- [[05_大模型/05_LLM架构/16_Transformer_Alternatives|Transformer 替代架构]]
+- [[05_大模型/04_LLM架构/16_Transformer_替代架构|Transformer 替代架构]]
 
 ---
 

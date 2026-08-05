@@ -499,7 +499,7 @@ Groq 生产使用 checklist
 - [[10_部署推理/02_推理引擎/26_TGI_深入分析.md|TGI_Deep_Dive]]
 - [[10_部署推理/02_推理引擎/23_SGLang_深入分析.md|SGLang_Deep_Dive]]
 - [[10_部署推理/02_推理引擎/25_TensorRT_LLM_深入分析.md|TensorRT_LLM_Deep_Dive]]
-- [[10_部署推理/06_成本管理/03_LLM_成本优化|LLM_Cost_Optimization]]
+- [[10_部署推理/06_成本管理/01_LLM_成本优化|LLM_Cost_Optimization]]
 - [[10_部署推理/01_部署基础/02_部署推理_2026.md|Deployment_Inference_2026]]
 - [[12_架构基建/11_AI网关/01_AI网关_2026|AI_Gateway_2026]]
 - [[12_架构基建/11_AI网关/09_LiteLLM_深入分析|LiteLLM_Deep_Dive]]

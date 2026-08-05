@@ -1,0 +1,137 @@
+{
+  "id": "csrc.moe.moe_wna16_utils.h",
+  "title": "Moe Wna16 Utils",
+  "type": "module",
+  "summary": "Module providing num2float, __half2float, __half2half2, __halves2half2, __float2half and 5 more symbols",
+  "details": "Contains 1 classes: ScalarType. Contains 20 functions/methods",
+  "symbols": [
+    {
+      "name": "num2float",
+      "kind": "function",
+      "signature": "num2float(const half x)",
+      "docstring": "",
+      "line": 12
+    },
+    {
+      "name": "__half2float",
+      "kind": "function",
+      "signature": "__half2float(x);\n  }\n\n  static __device__ half2 inline num2num2(const half x)",
+      "docstring": "",
+      "line": 14
+    },
+    {
+      "name": "__half2half2",
+      "kind": "function",
+      "signature": "__half2half2(x);\n  }\n\n  static __device__ half2 inline nums2num2(const half x1, const half x2)",
+      "docstring": "",
+      "line": 18
+    },
+    {
+      "name": "__halves2half2",
+      "kind": "function",
+      "signature": "__halves2half2(x1, x2);\n  }\n\n  static __host__ __device__ half inline float2num(const float x)",
+      "docstring": "",
+      "line": 22
+    },
+    {
+      "name": "__float2half",
+      "kind": "function",
+      "signature": "__float2half(x);\n  }\n\n  static __host__ __device__ half inline int2num(const float x)",
+      "docstring": "",
+      "line": 26
+    },
+    {
+      "name": "__int2half_rn",
+      "kind": "function",
+      "signature": "__int2half_rn(x);\n  }\n\n  static __host__ __device__ float2 inline num22float2(const half2 x)",
+      "docstring": "",
+      "line": 30
+    },
+    {
+      "name": "__half22float2",
+      "kind": "function",
+      "signature": "__half22float2(x);\n  }\n\n  static __host__ __device__ half2 inline float22num2(const float2 x)",
+      "docstring": "",
+      "line": 34
+    },
+    {
+      "name": "__float22half2_rn",
+      "kind": "function",
+      "signature": "__float22half2_rn(x);\n  }\n};\n\ntemplate <>\nclass ScalarType<nv_bfloat16> {\n public:\n  using scalar_t = nv_bfloat16;\n  using scalar_t2 = nv_bfloat162;\n\n#if defined(__CUDA_ARCH__) && __CUDA_ARCH__ >= 800\n  static __device__ float inline num2float(const nv_bfloat16 x)",
+      "docstring": "",
+      "line": 38
+    },
+    {
+      "name": "__bfloat162float",
+      "kind": "function",
+      "signature": "__bfloat162float(x);\n  }\n\n  static __device__ nv_bfloat162 inline num2num2(const nv_bfloat16 x)",
+      "docstring": "",
+      "line": 50
+    },
+    {
+      "name": "__bfloat162bfloat162",
+      "kind": "function",
+      "signature": "__bfloat162bfloat162(x);\n  }\n\n  static __device__ nv_bfloat162 inline nums2num2(const nv_bfloat16 x1,\n                                                  const nv_bfloat16 x2)",
+      "docstring": "",
+      "line": 54
+    },
+    {
+      "name": "__halves2bfloat162",
+      "kind": "function",
+      "signature": "__halves2bfloat162(x1, x2);\n  }\n\n  static __host__ __device__ nv_bfloat16 inline float2num(const float x)",
+      "docstring": "",
+      "line": 59
+    },
+    {
+      "name": "__float2bfloat16",
+      "kind": "function",
+      "signature": "__float2bfloat16(x);\n  }\n\n  static __host__ __device__ nv_bfloat16 inline int2num(const float x)",
+      "docstring": "",
+      "line": 63
+    },
+    {
+      "name": "__int2bfloat16_rn",
+      "kind": "function",
+      "signature": "__int2bfloat16_rn(x);\n  }\n\n  static __host__ __device__ float2 inline num22float2(const nv_bfloat162 x)",
+      "docstring": "",
+      "line": 67
+    },
+    {
+      "name": "__bfloat1622float2",
+      "kind": "function",
+      "signature": "__bfloat1622float2(x);\n  }\n\n  static __host__ __device__ nv_bfloat162 inline float22num2(const float2 x)",
+      "docstring": "",
+      "line": 71
+    },
+    {
+      "name": "__float22bfloat162_rn",
+      "kind": "function",
+      "signature": "__float22bfloat162_rn(x);\n  }\n#endif\n};\n\ntemplate <int lut>\n__device__ inline int lop3(int a, int b, int c)",
+      "docstring": "",
+      "line": 75
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cuda_bf16",
+      "cuda_fp16"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 21,
+    "public_symbols": 21,
+    "classes": 1,
+    "functions": 20,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "oop",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/moe/moe_wna16_utils.h"
+}

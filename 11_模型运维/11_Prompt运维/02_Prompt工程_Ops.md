@@ -20,7 +20,7 @@ name_zh: "Prompt 工程化运维"
 
 > **一句话理解**: Prompt 不是文案，是代码——任何一行改动都可能让线上 LLM 应用从 95 分掉到 40 分，必须用工程化方式版本化、测试、灰度。
 
-本文是 [[11_模型运维/10_LLMOps_大模型运维/05_LLMOps_2026]] §3「Prompt 工程化运维」的深扩专题，专注于 Prompt 作为可变更更单元的全生命周期管理。Prompt 的写作技巧见 [[05_大模型/08_提示工程/README]]。
+本文是 [[11_模型运维/10_LLMOps_大模型运维/05_LLMOps_2026]] §3「Prompt 工程化运维」的深扩专题，专注于 Prompt 作为可变更更单元的全生命周期管理。Prompt 的写作技巧见 [[05_大模型/07_提示工程/README]]。
 
 ---
 
@@ -405,8 +405,8 @@ optimized = dspy.BootstrapFewShot().compile(RAGModule(), trainset=trainset)
 - [[11_模型运维/01_MLOps基础/04_MLOps_Maturity_模型]] — 成熟度模型
 
 ### 跨章
-- [[05_大模型/08_提示工程/README]] — Prompt 写作技巧（本文是工程化，那章是艺术化）
-- [[05_大模型/08_提示工程/16_Prompt工程]] — Prompt 入门
+- [[05_大模型/07_提示工程/README]] — Prompt 写作技巧（本文是工程化，那章是艺术化）
+- [[05_大模型/07_提示工程/16_Prompt工程]] — Prompt 入门
 - [[09_测试/02_测试框架/05_Promptfoo_深入分析]] — Promptfoo 工具详解
 - [[17_伦理安全/07_AI安全2026/README]] — Prompt 安全与红队
 - [[概念/mlops]] — MLOps 概念页

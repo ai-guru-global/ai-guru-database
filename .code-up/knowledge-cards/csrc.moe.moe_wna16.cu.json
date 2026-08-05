@@ -1,0 +1,142 @@
+{
+  "id": "csrc.moe.moe_wna16.cu",
+  "title": "Moe Wna16",
+  "type": "module",
+  "summary": "Module providing DIVIDE, defined, DIVIDE, constexpr, constexpr and 5 more symbols",
+  "details": "Contains 22 functions/methods",
+  "symbols": [
+    {
+      "name": "DIVIDE",
+      "kind": "function",
+      "signature": "DIVIDE(x, size) (((x) + (size) - 1) / (size))\n\ntemplate <typename scalar_t, int bit, int GROUPS>\n__global__ void moe_wna16_gemm_kernel(\n    const scalar_t* __restrict__ input, scalar_t* __restrict__ output,\n    const uint32_t* __restrict__ qweight, const scalar_t* __restrict__ scales,\n    const uint32_t* __restrict__ qzeros,\n\n    const float* __restrict__ topk_weights,\n    const int32_t* __restrict__ sorted_token_ids,\n    const int32_t* __restrict__ expert_ids,\n    const int32_t* __restrict__ num_tokens_post_pad,\n\n    uint16_t num_experts, uint16_t group_size, uint16_t top_k, uint32_t size_m,\n    uint32_t size_n, uint32_t size_k, uint16_t BLOCK_SIZE_M,\n    uint16_t BLOCK_SIZE_N, uint16_t BLOCK_SIZE_K, bool has_zp,\n    bool mul_topk_weight)",
+      "docstring": "",
+      "line": 11
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) || __CUDA_ARCH__ < 800\n  if constexpr (std::is_same<scalar_t, nv_bfloat16>::value)",
+      "docstring": "",
+      "line": 28
+    },
+    {
+      "name": "DIVIDE",
+      "kind": "function",
+      "signature": "DIVIDE(BLOCK_SIZE_K, BLOCK_SIZE_N);\n        for (int i = 0; i < k_per_thread; i++)",
+      "docstring": "",
+      "line": 58
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(GROUPS == 2)",
+      "docstring": "",
+      "line": 112
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(GROUPS == 4)",
+      "docstring": "",
+      "line": 117
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(GROUPS == 8)",
+      "docstring": "",
+      "line": 122
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(bit == 4)",
+      "docstring": "",
+      "line": 131
+    },
+    {
+      "name": "Dtype::num2num2",
+      "kind": "function",
+      "signature": "Dtype::num2num2(Dtype::int2num(8));\n      } else {\n        qzero_f2 = Dtype::num2num2(Dtype::int2num(128));\n      }\n    } else {\n      int qzeros_offset_tmp =\n          (offset_n / (8 / bit)) * (size_k / group_size / GROUPS) +\n          offset_k / group_size / GROUPS;\n      if constexpr (GROUPS == 1)",
+      "docstring": "",
+      "line": 133
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(GROUPS == 2)",
+      "docstring": "",
+      "line": 146
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(GROUPS == 4)",
+      "docstring": "",
+      "line": 151
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(GROUPS == 8)",
+      "docstring": "",
+      "line": 156
+    },
+    {
+      "name": "Dtype::num2num2",
+      "kind": "function",
+      "signature": "Dtype::num2num2(scale_f);\n\n        if (has_zp)",
+      "docstring": "",
+      "line": 177
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(bit == 4)",
+      "docstring": "",
+      "line": 181
+    },
+    {
+      "name": "Dtype::num2num2",
+      "kind": "function",
+      "signature": "Dtype::num2num2(Dtype::int2num(qzero));\n        }\n      }\n\n      scalar_t2 weight_half2[16 / bit];\n      dequant<scalar_t2, bit>(expert_qweight_tmp[tmp_k % 4], weight_half2);\n\n      for (int m = 0; m < num_valid_tokens; m++)",
+      "docstring": "",
+      "line": 185
+    },
+    {
+      "name": "__hfma2",
+      "kind": "function",
+      "signature": "__hfma2(__hmul2(__hsub2(weight_half2[i], qzero_f2), scale_f2),\n                         block_input_half2[offset_input], res2);\n        }\n\n        if (tmp_k == 0)",
+      "docstring": "",
+      "line": 198
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "c10",
+      "cuda_bf16",
+      "cuda_fp16",
+      "cuda_runtime",
+      "moe_wna16_utils",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 22,
+    "public_symbols": 22,
+    "classes": 0,
+    "functions": 22,
+    "internal_deps": 0,
+    "external_deps": 7,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/moe/moe_wna16.cu"
+}

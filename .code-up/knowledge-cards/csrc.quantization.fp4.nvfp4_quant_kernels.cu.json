@@ -1,0 +1,142 @@
+{
+  "id": "csrc.quantization.fp4.nvfp4_quant_kernels.cu",
+  "title": "Nvfp4 Quant Kernels",
+  "type": "module",
+  "summary": "Module providing Copyright, defined, defined, volatile, defined and 5 more symbols",
+  "details": "Contains 17 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) 2025, NVIDIA CORPORATION.  All rights reserved.\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n\n#include <torch/all.h>\n\n#include <cuda_runtime_api.h>\n#include <cuda_runtime.h>\n\n#include <ATen/cuda/CUDAContext.h>\n#include <c10/cuda/CUDAGuard.h>\n\n#include <cuda_fp8.h>\n\n#include \"cuda_utils.h\"\n\n// Get type2 from type or vice versa (applied to half and bfloat16)\ntemplate <typename T>\nstruct TypeConverter {\n  using Type = half2;\n};  // keep for generality\n\ntemplate <>\nstruct TypeConverter<half2> {\n  using Type = half;\n};\n\ntemplate <>\nstruct TypeConverter<half> {\n  using Type = half2;\n};\n\ntemplate <>\nstruct TypeConverter<__nv_bfloat162> {\n  using Type = __nv_bfloat16;\n};\n\ntemplate <>\nstruct TypeConverter<__nv_bfloat16> {\n  using Type = __nv_bfloat162;\n};\n\n#define ELTS_PER_THREAD 8\n\nconstexpr int CVT_FP4_ELTS_PER_THREAD = 8;\nconstexpr int CVT_FP4_SF_VEC_SIZE = 16;\n\n// Convert 8 float32 values into 8 e2m1 values (represented as one uint32_t).\ninline __device__ uint32_t fp32_vec_to_e2m1(float (&array)[8])",
+      "docstring": "",
+      "line": 1
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) && (__CUDA_ARCH__ >= 1000)\n  uint32_t val;\n  asm volatile(\n      \"{\\n\"\n      \".reg .b8 byte0;\\n\"\n      \".reg .b8 byte1;\\n\"\n      \".reg .b8 byte2;\\n\"\n      \".reg .b8 byte3;\\n\"\n      \"cvt.rn.satfinite.e2m1x2.f32   byte0, %2, %1;\\n\"\n      \"cvt.rn.satfinite.e2m1x2.f32   byte1, %4, %3;\\n\"\n      \"cvt.rn.satfinite.e2m1x2.f32   byte2, %6, %5;\\n\"\n      \"cvt.rn.satfinite.e2m1x2.f32   byte3, %8, %7;\\n\"\n      \"mov.b32 %0, {byte0, byte1, byte2, byte3};\\n\"\n      \"}\"\n      : \"=r\"(val)\n      : \"f\"(array[0]), \"f\"(array[1]), \"f\"(array[2]), \"f\"(array[3]),\n        \"f\"(array[4]), \"f\"(array[5]), \"f\"(array[6]), \"f\"(array[7]));\n  return val;\n#else\n  return 0;\n#endif\n}\n\n// Convert 4 float2 values into 8 e2m1 values (represented as one uint32_t).\ninline __device__ uint32_t fp32_vec_to_e2m1(float2 (&array)[4])",
+      "docstring": "",
+      "line": 62
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) && (__CUDA_ARCH__ >= 1000)\n  uint32_t val;\n  asm volatile(\n      \"{\\n\"\n      \".reg .b8 byte0;\\n\"\n      \".reg .b8 byte1;\\n\"\n      \".reg .b8 byte2;\\n\"\n      \".reg .b8 byte3;\\n\"\n      \"cvt.rn.satfinite.e2m1x2.f32   byte0, %2, %1;\\n\"\n      \"cvt.rn.satfinite.e2m1x2.f32   byte1, %4, %3;\\n\"\n      \"cvt.rn.satfinite.e2m1x2.f32   byte2, %6, %5;\\n\"\n      \"cvt.rn.satfinite.e2m1x2.f32   byte3, %8, %7;\\n\"\n      \"mov.b32 %0, {byte0, byte1, byte2, byte3};\\n\"\n      \"}\"\n      : \"=r\"(val)\n      : \"f\"(array[0].x), \"f\"(array[0].y), \"f\"(array[1].x), \"f\"(array[1].y),\n        \"f\"(array[2].x), \"f\"(array[2].y), \"f\"(array[3].x), \"f\"(array[3].y));\n  return val;\n#else\n  return 0;\n#endif\n}\n\n// Fast reciprocal.\ninline __device__ float reciprocal_approximate_ftz(float a)",
+      "docstring": "",
+      "line": 87
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\"rcp.approx.ftz.f32 %0, %1;\\n\" : \"=f\"(b) : \"f\"(a));\n  return b;\n}\n\ntemplate <class SFType, int CVT_FP4_NUM_THREADS_PER_SF>\n__device__ uint8_t* cvt_quant_to_fp4_get_sf_out_offset(int rowIdx, int colIdx,\n                                                       int numCols,\n                                                       SFType* SFout)",
+      "docstring": "",
+      "line": 112
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) && (__CUDA_ARCH__ >= 1000)\n  static_assert(CVT_FP4_NUM_THREADS_PER_SF == 1 ||\n                CVT_FP4_NUM_THREADS_PER_SF == 2);\n\n  // One pair of threads write one SF to global memory.\n  // TODO: stage through smem for packed STG.32\n  // is it better than STG.8 from 4 threads ?\n  if (threadIdx.x % CVT_FP4_NUM_THREADS_PER_SF == 0)",
+      "docstring": "",
+      "line": 121
+    },
+    {
+      "name": "index",
+      "kind": "function",
+      "signature": "index(16 elements share one SF in the K dimension).\n    int32_t kIdx = colIdx / CVT_FP4_NUM_THREADS_PER_SF;\n    int32_t mIdx = rowIdx;\n\n    // SF layout [numMTiles, numKTiles, 32 (mTile), 4 (mTile), 4(kTile)]\n    // --> index [mTileIdx, kTileIdx, outerMIdx, innerMIdx, innerKIdx]\n\n    int32_t mTileIdx = mIdx / (32 * 4);\n    // SF vector size 16.\n    int factor = CVT_FP4_SF_VEC_SIZE * 4;\n    int32_t numKTiles = (numCols + factor - 1) / factor;\n    int64_t mTileStride = numKTiles * 32 * 4 * 4;\n\n    int32_t kTileIdx = (kIdx / 4);\n    int64_t kTileStride = 32 * 4 * 4;\n\n    // M tile layout [32, 4] is column-major.\n    int32_t outerMIdx = (mIdx % 32);\n    int64_t outerMStride = 4 * 4;\n\n    int32_t innerMIdx = (mIdx % (32 * 4)) / 32;\n    int64_t innerMStride = 4;\n\n    int32_t innerKIdx = (kIdx % 4);\n    int64_t innerKStride = 1;\n\n    // Compute the global offset.\n    int64_t SFOffset = mTileIdx * mTileStride + kTileIdx * kTileStride +\n                       outerMIdx * outerMStride + innerMIdx * innerMStride +\n                       innerKIdx * innerKStride;\n\n    return reinterpret_cast<uint8_t*>(SFout) + SFOffset;\n  }\n#endif\n  return nullptr;\n}\n\n// Define a 16 bytes packed data type.\ntemplate <class Type>\nstruct PackedVec {\n  typename TypeConverter<Type>::Type elts[4];\n};\n\ntemplate <>\nstruct PackedVec<__nv_fp8_e4m3> {\n  __nv_fp8x2_e4m3 elts[8];\n};\n\n// Quantizes the provided PackedVec into the uint32_t output\ntemplate <class Type, bool UE8M0_SF = false>\n__device__ uint32_t cvt_warp_fp16_to_fp4(PackedVec<Type>& vec, float SFScaleVal,\n                                         uint8_t* SFout)",
+      "docstring": "",
+      "line": 129
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) && (__CUDA_ARCH__ >= 1000)\n  // Get absolute maximum values among the local 8 values.\n  auto localMax = __habs2(vec.elts[0]);\n\n  // Local maximum value.\n  #pragma unroll\n  for (int i = 1; i < CVT_FP4_ELTS_PER_THREAD / 2; i++)",
+      "docstring": "",
+      "line": 181
+    },
+    {
+      "name": "__hmax2",
+      "kind": "function",
+      "signature": "__hmax2(localMax, __habs2(vec.elts[i]));\n  }\n\n  // Get the absolute maximum among all 16 values (two threads).\n  localMax = __hmax2(__shfl_xor_sync(uint32_t(-1), localMax, 1), localMax);\n  // Get the final absolute maximum values.\n  float vecMax = float(__hmax(localMax.x, localMax.y));\n\n  // Get the SF (max value of the vector / max value of e2m1).\n  // maximum value of e2m1 = 6.0.\n  // TODO: use half as compute data type.\n  float SFValue = SFScaleVal * (vecMax * reciprocal_approximate_ftz(6.0f));\n  // 8 bits representation of the SF.\n  uint8_t fp8SFVal;\n  // Write the SF to global memory (STG.8).\n  if constexpr (UE8M0_SF)",
+      "docstring": "",
+      "line": 188
+    },
+    {
+      "name": "__nv_fp8_e4m3",
+      "kind": "function",
+      "signature": "__nv_fp8_e4m3(SFValue);\n    reinterpret_cast<__nv_fp8_e4m3&>(fp8SFVal) = tmp;\n    // Convert back to fp32.\n    SFValue = float(tmp);\n  }\n  // Get the output scale.\n  // Recipe: final_scale = reciprocal(fp32(fp8(SFValue * SFScaleVal))) *\n  //                       reciprocal(SFScaleVal))\n  float outputScale =\n      SFValue != 0 ? reciprocal_approximate_ftz(\n                         SFValue * reciprocal_approximate_ftz(SFScaleVal))\n                   : 0.0f;\n\n  if (SFout)",
+      "docstring": "",
+      "line": 212
+    },
+    {
+      "name": "memory",
+      "kind": "function",
+      "signature": "memory(STG.8).\n    *SFout = fp8SFVal;\n  }\n\n  // Convert the input to float.\n  float2 fp2Vals[CVT_FP4_ELTS_PER_THREAD / 2];\n\n  #pragma unroll\n  for (int i = 0; i < CVT_FP4_ELTS_PER_THREAD / 2; i++)",
+      "docstring": "",
+      "line": 226
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(std::is_same_v<Type, half>)",
+      "docstring": "",
+      "line": 234
+    },
+    {
+      "name": "__half22float2",
+      "kind": "function",
+      "signature": "__half22float2(vec.elts[i]);\n    } else {\n      fp2Vals[i] = __bfloat1622float2(vec.elts[i]);\n    }\n    fp2Vals[i].x *= outputScale;\n    fp2Vals[i].y *= outputScale;\n  }\n\n  // Convert to e2m1 values.\n  uint32_t e2m1Vec = fp32_vec_to_e2m1(fp2Vals);\n\n  // Write the e2m1 values to global memory.\n  return e2m1Vec;\n#else\n  return 0;\n#endif\n}\n\n// Use UE4M3 by default.\ntemplate <class Type, bool UE8M0_SF = false>\n__global__ void\n#if defined(__CUDA_ARCH__) && (__CUDA_ARCH__ >= 1000)\n__launch_bounds__(512, 4) cvt_fp16_to_fp4(\n#else\ncvt_fp16_to_fp4(\n#endif\n    int32_t numRows, int32_t numCols, Type const* in, float const* SFScale,\n    uint32_t* out, uint32_t* SFout)",
+      "docstring": "",
+      "line": 236
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) && (__CUDA_ARCH__ >= 1000)\n  using PackedVec = PackedVec<Type>;\n  static constexpr int CVT_FP4_NUM_THREADS_PER_SF =\n      (CVT_FP4_SF_VEC_SIZE / CVT_FP4_ELTS_PER_THREAD);\n  static_assert(sizeof(PackedVec) == sizeof(Type) * CVT_FP4_ELTS_PER_THREAD,\n                \"Vec size is not matched.\");\n\n  // Get the global scaling factor, which will be applied to the SF.\n  // Note SFScale is the same as next GEMM's alpha, which is\n  // (448.f / (Alpha_A / 6.f)).\n  float const SFScaleVal = SFScale == nullptr ? 1.0f : SFScale[0];\n\n  // Input tensor row/col loops.\n  for (int rowIdx = blockIdx.x; rowIdx < numRows; rowIdx += gridDim.x)",
+      "docstring": "",
+      "line": 264
+    },
+    {
+      "name": "invokeFP4Quantization",
+      "kind": "function",
+      "signature": "invokeFP4Quantization(int m, int n, T const* input, float const* SFScale,\n                           int64_t* output, int32_t* SFOuput, bool useUE8M0,\n                           int multiProcessorCount, cudaStream_t stream)",
+      "docstring": "",
+      "line": 297
+    },
+    {
+      "name": "block",
+      "kind": "function",
+      "signature": "block(std::min(int(n / ELTS_PER_THREAD), 512));\n  // Get number of blocks per SM (assume we can fully utilize the SM).\n  int const numBlocksPerSM = 2048 / block.x;\n  dim3 grid(std::min(int(m), multiProcessorCount * numBlocksPerSM));\n\n  // Launch the cvt kernel.\n  if (useUE8M0)",
+      "docstring": "",
+      "line": 304
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "c10",
+      "cuda_fp8",
+      "cuda_runtime",
+      "cuda_runtime_api",
+      "cuda_utils",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 17,
+    "public_symbols": 17,
+    "classes": 0,
+    "functions": 17,
+    "internal_deps": 0,
+    "external_deps": 7,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/fp4/nvfp4_quant_kernels.cu"
+}

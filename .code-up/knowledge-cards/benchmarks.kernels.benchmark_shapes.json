@@ -1,0 +1,42 @@
+{
+  "id": "benchmarks.kernels.benchmark_shapes",
+  "title": "Benchmark Shapes",
+  "type": "module",
+  "summary": "Module providing WEIGHT_SHAPES, WEIGHT_SHAPES_MOE",
+  "details": "Module providing WEIGHT_SHAPES, WEIGHT_SHAPES_MOE",
+  "symbols": [
+    {
+      "name": "WEIGHT_SHAPES",
+      "kind": "constant",
+      "signature": "WEIGHT_SHAPES = ...",
+      "docstring": "",
+      "line": 4
+    },
+    {
+      "name": "WEIGHT_SHAPES_MOE",
+      "kind": "constant",
+      "signature": "WEIGHT_SHAPES_MOE = ...",
+      "docstring": "",
+      "line": 80
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": []
+  },
+  "metrics": {
+    "total_symbols": 2,
+    "public_symbols": 2,
+    "classes": 0,
+    "functions": 0,
+    "internal_deps": 0,
+    "external_deps": 0,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/kernels/benchmark_shapes.py"
+}

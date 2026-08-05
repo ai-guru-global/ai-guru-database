@@ -1,0 +1,61 @@
+{
+  "id": "csrc.cutlass_extensions.common.hpp",
+  "title": "Common",
+  "type": "module",
+  "summary": "Module providing CUTLASS_CHECK, cudaDeviceGetAttribute, Kernel::operator, Kernel::operator",
+  "details": "Contains 4 functions/methods",
+  "symbols": [
+    {
+      "name": "CUTLASS_CHECK",
+      "kind": "function",
+      "signature": "CUTLASS_CHECK(status)                       \\\n  {                                                 \\\n    cutlass::Status error = status;                 \\\n    TORCH_CHECK(error == cutlass::Status::kSuccess, \\\n                cutlassGetStatusString(error));     \\\n  }\n\ninline int get_cuda_max_shared_memory_per_block_opt_in(int const device)",
+      "docstring": "",
+      "line": 11
+    },
+    {
+      "name": "cudaDeviceGetAttribute",
+      "kind": "function",
+      "signature": "cudaDeviceGetAttribute(&max_shared_mem_per_block_opt_in,\n                         cudaDevAttrMaxSharedMemoryPerBlockOptin, device);\n  return max_shared_mem_per_block_opt_in;\n}\n\nint32_t get_sm_version_num();\n\n/**\n * A wrapper for a kernel that is used to guard against compilation on\n * architectures that will never use the kernel. The purpose of this is to\n * reduce the size of the compiled binary.\n * __CUDA_ARCH__ is not defined in host code, so this lets us smuggle the ifdef\n * into code that will be executed on the device where it is defined.\n */\ntemplate <typename Kernel>\nstruct enable_sm90_or_later : Kernel {\n  template <typename... Args>\n  CUTLASS_DEVICE void operator()(Args&&... args)",
+      "docstring": "",
+      "line": 19
+    },
+    {
+      "name": "Kernel::operator",
+      "kind": "function",
+      "signature": "Kernel::operator()(std::forward<Args>(args)...);\n#endif\n  }\n};\n\ntemplate <typename Kernel>\nstruct enable_sm90_only : Kernel {\n  template <typename... Args>\n  CUTLASS_DEVICE void operator()(Args&&... args)",
+      "docstring": "",
+      "line": 38
+    },
+    {
+      "name": "Kernel::operator",
+      "kind": "function",
+      "signature": "Kernel::operator()(std::forward<Args>(args)...);\n#endif\n  }\n};\n\ntemplate <typename Kernel>\nstruct enable_sm100_only : Kernel {\n  template <typename... Args>\n  CUTLASS_DEVICE void operator()(Args&&... args)",
+      "docstring": "",
+      "line": 48
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "climits",
+      "cuda_runtime",
+      "cutlass",
+      "iostream"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 4,
+    "public_symbols": 4,
+    "classes": 0,
+    "functions": 4,
+    "internal_deps": 0,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cutlass_extensions/common.hpp"
+}

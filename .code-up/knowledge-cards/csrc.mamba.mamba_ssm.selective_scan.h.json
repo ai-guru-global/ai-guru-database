@@ -1,0 +1,137 @@
+{
+  "id": "csrc.mamba.mamba_ssm.selective_scan.h",
+  "title": "Selective Scan",
+  "type": "module",
+  "summary": "Module providing Copyright, std::max, std::min, std::max_element, static_assert and 5 more symbols",
+  "details": "Contains 19 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) 2023, Tri Dao.\n ******************************************************************************/\n// clang-format off\n// adapted from https://github.com/state-spaces/mamba/blob/main/csrc/selective_scan/selective_scan.h\n\n#pragma once\n\n#ifndef USE_ROCM\n    #include <cuda_bf16.h>\n#else\n    #include <hip/hip_bf16.h>\n#endif\n#include <cuda_fp16.h>\n////////////////////////////////////////////////////////////////////////////////////////////////////\n\nstruct SSMParamsBase {\n    using index_t = uint32_t;\n\n    int batch, dim, seqlen, dstate, n_groups, n_chunks;\n    int dim_ngroups_ratio;\n    bool is_variable_B;\n    bool is_variable_C;\n    int64_t pad_slot_id;\n\n    bool delta_softplus;\n\n    index_t A_d_stride;\n    index_t A_dstate_stride;\n    index_t B_batch_stride;\n    index_t B_d_stride;\n    index_t B_dstate_stride;\n    index_t B_group_stride;\n    index_t C_batch_stride;\n    index_t C_d_stride;\n    index_t C_dstate_stride;\n    index_t C_group_stride;\n    index_t u_batch_stride;\n    index_t u_d_stride;\n    index_t delta_batch_stride;\n    index_t delta_d_stride;\n    index_t z_batch_stride;\n    index_t z_d_stride;\n    index_t out_batch_stride;\n    index_t out_d_stride;\n    index_t out_z_batch_stride;\n    index_t out_z_d_stride;\n\n    // Common data pointers.\n    void *__restrict__ A_ptr;\n    void *__restrict__ B_ptr;\n    void *__restrict__ C_ptr;\n    void *__restrict__ D_ptr;\n    void *__restrict__ u_ptr;\n    void *__restrict__ delta_ptr;\n    void *__restrict__ delta_bias_ptr;\n    void *__restrict__ out_ptr;\n    void *__restrict__ ssm_states_ptr;\n    void *__restrict__ z_ptr;\n    void *__restrict__ out_z_ptr;\n\n    void *__restrict__ query_start_loc_ptr;\n    void *__restrict__ cache_indices_ptr;\n    void *__restrict__ has_initial_state_ptr;\n\n};\n\n\n\n\n#ifndef USE_ROCM\n\n    constexpr size_t custom_max(std::initializer_list<size_t> ilist)",
+      "docstring": "",
+      "line": 1
+    },
+    {
+      "name": "std::max",
+      "kind": "function",
+      "signature": "std::max(ilist);\n    }\n\n    template<typename T>\n    constexpr T constexpr_min(T a, T b)",
+      "docstring": "",
+      "line": 74
+    },
+    {
+      "name": "std::min",
+      "kind": "function",
+      "signature": "std::min(a, b);\n    }\n\n#else\n    constexpr size_t custom_max(std::initializer_list<size_t> ilist)",
+      "docstring": "",
+      "line": 79
+    },
+    {
+      "name": "std::max_element",
+      "kind": "function",
+      "signature": "std::max_element(ilist.begin(), ilist.end());\n    }\n\n    template<typename T>\n    constexpr T constexpr_min(T a, T b)",
+      "docstring": "",
+      "line": 86
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(sizeof(Type) == 16);\n};\n\ntemplate<> struct BytesToType<8> {\n    using Type = uint64_t;\n    static_assert(sizeof(Type) == 8);\n};\n\ntemplate<> struct BytesToType<4> {\n    using Type = uint32_t;\n    static_assert(sizeof(Type) == 4);\n};\n\ntemplate<> struct BytesToType<2> {\n    using Type = uint16_t;\n    static_assert(sizeof(Type) == 2);\n};\n\ntemplate<> struct BytesToType<1> {\n    using Type = uint8_t;\n    static_assert(sizeof(Type) == 1);\n};\n\n////////////////////////////////////////////////////////////////////////////////////////////////////\n\ntemplate<typename scalar_t, int N>\nstruct Converter{\n    static inline __device__ void to_float(const scalar_t (&src)[N], float (&dst)[N])",
+      "docstring": "",
+      "line": 116
+    },
+    {
+      "name": "to_float",
+      "kind": "function",
+      "signature": "to_float(const at::Half (&src)[N], float (&dst)[N])",
+      "docstring": "",
+      "line": 151
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(N % 2 == 0);\n        auto &src2 = reinterpret_cast<const half2 (&)[N / 2]>(src);\n        auto &dst2 = reinterpret_cast<float2 (&)[N / 2]>(dst);\n        #pragma unroll\n        for (int i = 0; i < N / 2; ++i)",
+      "docstring": "",
+      "line": 152
+    },
+    {
+      "name": "__half22float2",
+      "kind": "function",
+      "signature": "__half22float2(src2[i]); }\n    }\n};\n\n#if __CUDA_ARCH__ >= 800\ntemplate<int N>\nstruct Converter<at::BFloat16, N>{\n    static inline __device__ void to_float(const at::BFloat16 (&src)[N], float (&dst)[N])",
+      "docstring": "",
+      "line": 157
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(N % 2 == 0);\n        auto &src2 = reinterpret_cast<const nv_bfloat162 (&)[N / 2]>(src);\n        auto &dst2 = reinterpret_cast<float2 (&)[N / 2]>(dst);\n        #pragma unroll\n        for (int i = 0; i < N / 2; ++i)",
+      "docstring": "",
+      "line": 164
+    },
+    {
+      "name": "__bfloat1622float2",
+      "kind": "function",
+      "signature": "__bfloat1622float2(src2[i]); }\n    }\n};\n#endif\n\n////////////////////////////////////////////////////////////////////////////////////////////////////\n\n\ntemplate<typename scalar_t> struct SSMScanOp;\n\ntemplate<>\nstruct SSMScanOp<float> {\n    __device__ __forceinline__ float2 operator()(const float2 &ab0, const float2 &ab1)",
+      "docstring": "",
+      "line": 169
+    },
+    {
+      "name": "make_float2",
+      "kind": "function",
+      "signature": "make_float2(ab1.x * ab0.x, ab1.x * ab0.y + ab1.y);\n    }\n};\n\n// A stateful callback functor that maintains a running prefix to be applied\n// during consecutive scan operations.\ntemplate <typename scalar_t> struct SSMScanPrefixCallbackOp {\n    using scan_t = std::conditional_t<std::is_same_v<scalar_t, float>, float2, float4>;\n    scan_t running_prefix;\n    // Constructor\n    __device__ SSMScanPrefixCallbackOp(scan_t running_prefix_) : running_prefix(running_prefix_)",
+      "docstring": "",
+      "line": 181
+    },
+    {
+      "name": "operator",
+      "kind": "function",
+      "signature": "operator()(scan_t block_aggregate)",
+      "docstring": "",
+      "line": 194
+    },
+    {
+      "name": "load_input",
+      "kind": "function",
+      "signature": "load_input(typename Ktraits::input_t *u,\n                                  typename Ktraits::input_t (&u_vals)[Ktraits::kNItems],\n                                  typename Ktraits::BlockLoadT::TempStorage &smem_load,\n                                  int seqlen)",
+      "docstring": "",
+      "line": 202
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(Ktraits::kIsEvenLen && !Ktraits::kVarlen)",
+      "docstring": "",
+      "line": 208
+    },
+    {
+      "name": "Ktraits::BlockLoadVecT",
+      "kind": "function",
+      "signature": "Ktraits::BlockLoadVecT(smem_load_vec).Load(\n            reinterpret_cast<vec_t*>(u),\n            reinterpret_cast<vec_t(&)[Ktraits::kNLoads]>(u_vals)\n            #ifdef USE_ROCM\n                , Ktraits::kNThreads * Ktraits::kNLoads\n            #endif\n            \n       );\n    } else {\n        typename Ktraits::BlockLoadT(smem_load).Load(u, u_vals, seqlen, 0.f);\n    }\n}\n\n\ntemplate<typename Ktraits>\ninline __device__ void load_weight(typename Ktraits::input_t *Bvar,\n                                   typename Ktraits::weight_t (&B_vals)[Ktraits::kNItems],\n                                   typename Ktraits::BlockLoadWeightT::TempStorage &smem_load_weight,\n                                   int seqlen)",
+      "docstring": "",
+      "line": 211
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cuda_bf16",
+      "cuda_fp16",
+      "hip"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 19,
+    "public_symbols": 19,
+    "classes": 0,
+    "functions": 19,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/mamba/mamba_ssm/selective_scan.h"
+}

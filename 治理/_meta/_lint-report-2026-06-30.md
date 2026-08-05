@@ -91,7 +91,7 @@ Wikilinks pointing to pages that do not exist in the vault.
 | `14_AI_Gateway/AI_Gateway_2026.md` | 3 | Moved/merged into AI_Gateway_README |
 | `Agent` | 3 | Chapter-level link |
 | `AI测试` | 3 | Chapter-level link |
-| `05_大模型/15_中国LLM生态` | 3 | Subdirectory link without page match |
+| `05_大模型/14_中国LLM生态` | 3 | Subdirectory link without page match |
 | `03_深度学习/ApacheCN_PyTorch_Track` | 3 | Archived/removed |
 | `03_深度学习/ApacheCN_TensorFlow_Track` | 3 | Archived/removed |
 | `05_大模型/ApacheCN_NLP_Track` | 3 | Archived/removed |
@@ -152,7 +152,7 @@ Pages with `summary_len = 0` (no summary in frontmatter).
 | 22 | `AI编程/Tools/OpenRouter/11-openrouter-security-privacy.md` | 安全、隐私与数据治理 |
 | 12 | `15_智能体/04_Agent脚手架/The_Anatomy_of_an_Agent_Harness.md` | The Anatomy of an Agent Harness |
 | 10 | `05_大模型/LLM_For_Beginners.md` | 大语言模型入门 |
-| 6 | `05_大模型/05_LLM架构/LLM_Internals_Inference.md` | 大模型推理与部署 |
+| 6 | `05_大模型/04_LLM架构/LLM_Internals_Inference.md` | 大模型推理与部署 |
 
 **Key observation**: 47 of the 65 missing-summary pages (72%) are from the 16_AI_Coding OpenRouter/OpenCode batch ingest. These are high-traffic pages (48-50 incoming each) that urgently need summaries.
 

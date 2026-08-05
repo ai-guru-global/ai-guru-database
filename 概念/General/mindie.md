@@ -74,7 +74,7 @@ MindIE（Mind Inference Engine）是华为为昇腾 NPU 打造的大模型推理
 - [[概念/GPU/cann|CANN]]
 - [[概念/Inference/vllm|vLLM]] — NVIDIA 生态对标
 - [[概念/LLM/tensorrt-llm|TensorRT-LLM]] — 另一对标引擎
-- [[10_部署推理/05_硬件与算力/01_Ascend_NPU_推理_指南|昇腾 NPU LLM 推理部署指南]]
+- [[10_部署推理/05_硬件与算力/02_Ascend_NPU_推理_指南|昇腾 NPU LLM 推理部署指南]]
 
 ---
 

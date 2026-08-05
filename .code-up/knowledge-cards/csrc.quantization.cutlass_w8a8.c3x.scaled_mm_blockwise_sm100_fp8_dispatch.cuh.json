@@ -1,0 +1,62 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_blockwise_sm100_fp8_dispatch.cuh",
+  "title": "Scaled Mm Blockwise Sm100 Fp8 Dispatch",
+  "type": "module",
+  "summary": "Module providing decltype, size, cute::make_shape, size",
+  "details": "Contains 4 functions/methods",
+  "symbols": [
+    {
+      "name": "decltype",
+      "kind": "function",
+      "signature": "decltype(ScaleConfig::deduce_layoutSFA());\n  using LayoutSFB = decltype(ScaleConfig::deduce_layoutSFB());\n\n  using ArchTag = cutlass::arch::Sm100;\n  using OperatorClass = cutlass::arch::OpClassTensorOp;\n\n  static constexpr auto RoundStyle = cutlass::FloatRoundStyle::round_to_nearest;\n  using ElementScalar = float;\n  using DefaultOperation = cutlass::epilogue::fusion::LinearCombination<ElementD, ElementCompute, ElementC, ElementScalar, RoundStyle>;\n  using CollectiveEpilogue = typename cutlass::epilogue::collective::CollectiveBuilder<\n      ArchTag,\n      OperatorClass,\n      MmaTileShape,\n      ClusterShape,\n      cutlass::epilogue::collective::EpilogueTileAuto,\n      ElementAccumulator,\n      ElementCompute,\n      ElementC,\n      conditional_t<swap_ab, LayoutC_Transpose, LayoutC>,\n      AlignmentC,\n      ElementD,\n      conditional_t<swap_ab, LayoutD_Transpose, LayoutD>,\n      AlignmentD,\n      EpilogueScheduler,\n      DefaultOperation\n  >::CollectiveOp;\n \n  using StageCountType = cutlass::gemm::collective::StageCountAuto; \n  using CollectiveMainloop = conditional_t<swap_ab,\n      typename cutlass::gemm::collective::CollectiveBuilder<\n          ArchTag,\n          OperatorClass,\n          ElementB,\n          cute::tuple<LayoutB_Transpose, LayoutSFA>,\n          AlignmentB,\n          ElementA,\n          cute::tuple<LayoutA_Transpose, LayoutSFB>,\n          AlignmentA,\n          ElementAccumulator,\n          MmaTileShape,\n          ClusterShape,\n          cutlass::gemm::collective::StageCountAutoCarveout<static_cast<int>(sizeof(typename CollectiveEpilogue::SharedStorage))>,\n          MainloopScheduler\n      >::CollectiveOp,\n      typename cutlass::gemm::collective::CollectiveBuilder<\n          ArchTag,\n          OperatorClass,\n          ElementA,\n          cute::tuple<LayoutA, LayoutSFA>,\n          AlignmentA,\n          ElementB,\n          cute::tuple<LayoutB, LayoutSFB>,\n          AlignmentB,\n          ElementAccumulator,\n          MmaTileShape,\n          ClusterShape,\n          cutlass::gemm::collective::StageCountAutoCarveout<static_cast<int>(sizeof(typename CollectiveEpilogue::SharedStorage))>,\n          MainloopScheduler\n      >::CollectiveOp>;\n\n  using KernelType = enable_sm100_only<cutlass::gemm::kernel::GemmUniversal<\n      Shape<int, int, int, int>, CollectiveMainloop, CollectiveEpilogue>>;\n\n  struct GemmKernel : public KernelType {};\n};\n\ntemplate <typename Gemm>\nvoid cutlass_gemm_caller_blockwise(torch::Tensor& out, torch::Tensor const& a,\n                                   torch::Tensor const& b,\n                                   torch::Tensor const& a_scales,\n                                   torch::Tensor const& b_scales)",
+      "docstring": "",
+      "line": 69
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size(0), n = b.size(1), k = a.size(1);\n\n  StrideA a_stride;\n  StrideB b_stride;\n  StrideC c_stride;\n  a_stride =\n      cutlass::make_cute_packed_stride(StrideA{}, cute::make_shape(m, k, 1));\n  b_stride =\n      cutlass::make_cute_packed_stride(StrideB{}, cute::make_shape(n, k, 1));\n  c_stride =\n      cutlass::make_cute_packed_stride(StrideC{}, swap_ab ? cute::make_shape(n, m, 1) : cute::make_shape(m, n, 1));\n\n  LayoutSFA layout_SFA = swap_ab ? \n      ScaleConfig::tile_atom_to_shape_SFA(make_shape(n, m, k, 1)) :\n      ScaleConfig::tile_atom_to_shape_SFA(make_shape(m, n, k, 1));\n  LayoutSFB layout_SFB = swap_ab ?\n      ScaleConfig::tile_atom_to_shape_SFB(make_shape(n, m, k, 1)) :\n      ScaleConfig::tile_atom_to_shape_SFB(make_shape(m, n, k, 1));\n\n  auto a_ptr = static_cast<ElementAB*>(a.data_ptr());\n  auto b_ptr = static_cast<ElementAB*>(b.data_ptr());\n  auto a_scales_ptr = static_cast<float*>(a_scales.data_ptr());\n  auto b_scales_ptr = static_cast<float*>(b_scales.data_ptr());\n\n  auto mainloop_args = [&]()",
+      "docstring": "",
+      "line": 153
+    },
+    {
+      "name": "cute::make_shape",
+      "kind": "function",
+      "signature": "cute::make_shape(n, m, k, 1) : cute::make_shape(m, n, k, 1);\n\n  auto c_ptr = static_cast<ElementD*>(out.data_ptr());\n  typename GemmKernel::EpilogueArguments epilogue_args{\n      {}, c_ptr, c_stride, c_ptr, c_stride};\n  c3x::cutlass_gemm_caller<GemmKernel>(a.device(), prob_shape, mainloop_args,\n                                       epilogue_args);\n}\n\ntemplate <typename OutType>\nvoid cutlass_gemm_blockwise_sm100_fp8_dispatch(torch::Tensor& out,\n                                               torch::Tensor const& a,\n                                               torch::Tensor const& b,\n                                               torch::Tensor const& a_scales,\n                                               torch::Tensor const& b_scales)",
+      "docstring": "",
+      "line": 192
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size(0), n = b.size(1), k = a.size(1), sms;\n  cudaDeviceGetAttribute(&sms, cudaDevAttrMultiProcessorCount, a.get_device());\n\n  constexpr int TILE_K = 128;\n  // TODO: better heuristics\n  bool swap_ab = (m < 16) || (m % 4 != 0);\n  bool use_tma_epilogue = (m * n) % 4 == 0;\n  if (!swap_ab)",
+      "docstring": "",
+      "line": 207
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cuda_utils",
+      "cute",
+      "cutlass",
+      "cutlass_extensions",
+      "cutlass_gemm_caller"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 4,
+    "public_symbols": 4,
+    "classes": 0,
+    "functions": 4,
+    "internal_deps": 0,
+    "external_deps": 5,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/c3x/scaled_mm_blockwise_sm100_fp8_dispatch.cuh"
+}

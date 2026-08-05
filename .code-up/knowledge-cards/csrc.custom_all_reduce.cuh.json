@@ -1,0 +1,145 @@
+{
+  "id": "csrc.custom_all_reduce.cuh",
+  "title": "Custom All Reduce",
+  "type": "module",
+  "summary": "Module providing defined, printf, __half2float, __float2half, __hadd and 5 more symbols",
+  "details": "Contains 1 classes: CustomAllreduce. Contains 41 functions/methods",
+  "symbols": [
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(USE_ROCM)\ntypedef __hip_bfloat16 nv_bfloat16;\n#endif\n\n#include <iostream>\n#include <array>\n#include <limits>\n#include <map>\n#include <unordered_map>\n#include <vector>\n\nnamespace vllm {\n#define CUDACHECK(cmd)                                              \\\n  do {                                                              \\\n    cudaError_t e = cmd;                                            \\\n    if (e != cudaSuccess)",
+      "docstring": "",
+      "line": 8
+    },
+    {
+      "name": "printf",
+      "kind": "function",
+      "signature": "printf(\"Failed: Cuda error %s:%d '%s'\\n\", __FILE__, __LINE__, \\\n             cudaGetErrorString(e));                                \\\n      exit(EXIT_FAILURE);                                           \\\n    }                                                               \\\n  } while (0)\n\n// Maximal number of blocks in allreduce kernel.\nconstexpr int kMaxBlocks = 36;\n\n// Default number of blocks in allreduce kernel.\n#ifndef USE_ROCM\nconst int defaultBlockLimit = 36;\nCUpointer_attribute rangeStartAddrAttr = CU_POINTER_ATTRIBUTE_RANGE_START_ADDR;\n#else\nconst int defaultBlockLimit = 16;\nhipPointer_attribute rangeStartAddrAttr =\n    HIP_POINTER_ATTRIBUTE_RANGE_START_ADDR;\n#endif\n\n// Counter may overflow, but it's fine since unsigned int overflow is\n// well-defined behavior.\nusing FlagType = uint32_t;\n\n// Two sets of peer counters are needed for two syncs: starting and ending an\n// operation. The reason is that it's possible for peer GPU block to arrive at\n// the second sync point while the current GPU block haven't passed the first\n// sync point. Thus, peer GPU may write counter+1 while current GPU is busy\n// waiting for counter. We use alternating counter array to avoid this\n// possibility.\nstruct Signal {\n  alignas(128) FlagType start[kMaxBlocks][8];\n  alignas(128) FlagType end[kMaxBlocks][8];\n  alignas(128) FlagType _flag[kMaxBlocks];  // incremental flags for each rank\n};\n\nstruct __align__(16) RankData {\n  const void* ptrs[8];\n};\n\nstruct __align__(16) RankSignals {\n  Signal* signals[8];\n};\n\n// like std::array, but aligned\ntemplate <typename T, int sz>\nstruct __align__(alignof(T) * sz) array_t {\n  T data[sz];\n  using type = T;\n  static constexpr int size = sz;\n};\n\n// use packed type to maximize memory efficiency\n// goal: generate ld.128 and st.128 instructions\ntemplate <typename T>\nstruct packed_t {\n  // the (P)acked type for load/store\n  using P = array_t<T, 16 / sizeof(T)>;\n  // the (A)ccumulator type for reduction\n  using A = array_t<float, 16 / sizeof(T)>;\n};\n\n#define DINLINE __device__ __forceinline__\n\n// scalar cast functions\nDINLINE float upcast_s(half val)",
+      "docstring": "",
+      "line": 23
+    },
+    {
+      "name": "__half2float",
+      "kind": "function",
+      "signature": "__half2float(val); }\n\ntemplate <typename T>\nDINLINE T downcast_s(float val);\ntemplate <>\nDINLINE half downcast_s(float val)",
+      "docstring": "",
+      "line": 88
+    },
+    {
+      "name": "__float2half",
+      "kind": "function",
+      "signature": "__float2half(val);\n}\n\n// scalar add functions\n// for some reason when compiling with Pytorch, the + operator for half and\n// bfloat is disabled so we call the intrinsics directly\nDINLINE half& assign_add(half& a, half b)",
+      "docstring": "",
+      "line": 93
+    },
+    {
+      "name": "__hadd",
+      "kind": "function",
+      "signature": "__hadd(a, b);\n  return a;\n}\nDINLINE float& assign_add(float& a, float b)",
+      "docstring": "",
+      "line": 101
+    },
+    {
+      "name": "__bfloat162float",
+      "kind": "function",
+      "signature": "__bfloat162float(val); }\ntemplate <>\nDINLINE nv_bfloat16 downcast_s(float val)",
+      "docstring": "",
+      "line": 107
+    },
+    {
+      "name": "__float2bfloat16",
+      "kind": "function",
+      "signature": "__float2bfloat16(val);\n}\nDINLINE nv_bfloat16& assign_add(nv_bfloat16& a, nv_bfloat16 b)",
+      "docstring": "",
+      "line": 109
+    },
+    {
+      "name": "__hadd",
+      "kind": "function",
+      "signature": "__hadd(a, b);\n  return a;\n}\n#endif\n\ntemplate <typename T, int N>\nDINLINE array_t<T, N>& packed_assign_add(array_t<T, N>& a, array_t<T, N> b)",
+      "docstring": "",
+      "line": 113
+    },
+    {
+      "name": "assign_add",
+      "kind": "function",
+      "signature": "assign_add(a.data[i], b.data[i]);\n  }\n  return a;\n}\n\ntemplate <typename T, int N>\nDINLINE array_t<float, N> upcast(array_t<T, N> val)",
+      "docstring": "",
+      "line": 121
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(std::is_same<T, float>::value)",
+      "docstring": "",
+      "line": 128
+    },
+    {
+      "name": "upcast_s",
+      "kind": "function",
+      "signature": "upcast_s(val.data[i]);\n    }\n    return out;\n  }\n}\n\ntemplate <typename O>\nDINLINE O downcast(array_t<float, O::size> val)",
+      "docstring": "",
+      "line": 135
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(std::is_same<typename O::type, float>::value)",
+      "docstring": "",
+      "line": 142
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(USE_ROCM)\n\nstatic DINLINE void st_flag_release(FlagType* flag_addr, FlagType flag)",
+      "docstring": "",
+      "line": 155
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) && __CUDA_ARCH__ >= 700\n  asm volatile(\"st.release.sys.global.u32 [%1], %0;\" ::\"r\"(flag),\n               \"l\"(flag_addr));\n  #else\n  asm volatile(\"membar.sys; st.volatile.global.u32 [%1], %0;\" ::\"r\"(flag),\n               \"l\"(flag_addr));\n  #endif\n}\n\nstatic DINLINE FlagType ld_flag_acquire(FlagType* flag_addr)",
+      "docstring": "",
+      "line": 158
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) && __CUDA_ARCH__ >= 700\n  asm volatile(\"ld.acquire.sys.global.u32 %0, [%1];\"\n               : \"=r\"(flag)\n               : \"l\"(flag_addr));\n  #else\n  asm volatile(\"ld.volatile.global.u32 %0, [%1]; membar.gl;\"\n               : \"=r\"(flag)\n               : \"l\"(flag_addr));\n  #endif\n  return flag;\n}\n\nstatic DINLINE void st_flag_volatile(FlagType* flag_addr, FlagType flag)",
+      "docstring": "",
+      "line": 169
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "array",
+      "cuda",
+      "cuda_bf16",
+      "cuda_fp16",
+      "cuda_runtime",
+      "iostream",
+      "limits",
+      "map",
+      "unordered_map",
+      "vector"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 42,
+    "public_symbols": 42,
+    "classes": 1,
+    "functions": 41,
+    "internal_deps": 0,
+    "external_deps": 10,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "oop",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/custom_all_reduce.cuh"
+}

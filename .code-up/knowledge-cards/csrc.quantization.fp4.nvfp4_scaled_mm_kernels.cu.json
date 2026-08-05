@@ -1,0 +1,77 @@
+{
+  "id": "csrc.quantization.fp4.nvfp4_scaled_mm_kernels.cu",
+  "title": "Nvfp4 Scaled Mm Kernels",
+  "type": "module",
+  "summary": "Module providing Copyright, cutlass::make_cute_packed_stride, Gemm::get_workspace_size, TORCH_CHECK, CHECK_INPUT and 1 more symbols",
+  "details": "Contains 6 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) 2025, NVIDIA CORPORATION.  All rights reserved.\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n\n#include <torch/all.h>\n\n#include <ATen/cuda/CUDAContext.h>\n#include <c10/cuda/CUDAGuard.h>\n\n#include \"cutlass_extensions/common.hpp\"\n\n#include \"cutlass/cutlass.h\"\n\n#include \"cutlass/gemm/collective/collective_builder.hpp\"\n#include \"cutlass/epilogue/collective/collective_builder.hpp\"\n#include \"cutlass/gemm/device/gemm_universal_adapter.h\"\n#include \"cutlass/gemm/kernel/gemm_universal.hpp\"\n\n#include \"cutlass/util/packed_stride.hpp\"\n\nusing namespace cute;\n\n#if defined(CUTLASS_ARCH_MMA_SM100_SUPPORTED)\n// Kernel Perf config\ntemplate <typename T>\nstruct KernelTraits;\n\ntemplate <>\nstruct KernelTraits<float> {\n  using MmaTileShape = Shape<_128, _128, _256>;\n  using ClusterShape = Shape<_1, _1, _1>;\n  using PerSmTileShape_MNK = Shape<_128, _128, _256>;\n};\n\ntemplate <>\nstruct KernelTraits<cutlass::half_t> {\n  using MmaTileShape = Shape<_256, _256, _256>;\n  using ClusterShape = Shape<_4, _4, _1>;\n  using PerSmTileShape_MNK = Shape<_128, _256, _256>;\n};\n\ntemplate <>\nstruct KernelTraits<cutlass::bfloat16_t> {\n  using MmaTileShape = Shape<_256, _256, _256>;\n  using ClusterShape = Shape<_4, _4, _1>;\n  using PerSmTileShape_MNK = Shape<_128, _256, _256>;\n};\n\ntemplate <typename T>\nstruct Fp4GemmSm100 {\n  // A matrix configuration\n  using ElementA = cutlass::nv_float4_t<cutlass::float_e2m1_t>;\n  using LayoutATag = cutlass::layout::RowMajor;\n  static constexpr int AlignmentA = 32;\n\n  // B matrix configuration\n  using ElementB = cutlass::nv_float4_t<cutlass::float_e2m1_t>;\n  using LayoutBTag = cutlass::layout::ColumnMajor;\n  static constexpr int AlignmentB = 32;\n\n  // C/D matrix configuration\n  using ElementD = T;\n  using ElementC = T;\n  using LayoutCTag = cutlass::layout::RowMajor;\n  using LayoutDTag = cutlass::layout::RowMajor;\n  static constexpr int AlignmentD = 128 / cutlass::sizeof_bits<ElementD>::value;\n  static constexpr int AlignmentC = 128 / cutlass::sizeof_bits<ElementC>::value;\n  // Kernel functional config\n  using ElementAccumulator = float;\n  using ArchTag = cutlass::arch::Sm100;\n  using OperatorClass = cutlass::arch::OpClassBlockScaledTensorOp;\n\n  // Kernel Perf config\n  using MmaTileShape = typename KernelTraits<T>::MmaTileShape;\n  using ClusterShape = typename KernelTraits<T>::ClusterShape;\n  using PerSmTileShape_MNK = typename KernelTraits<T>::PerSmTileShape_MNK;\n\n  using CollectiveEpilogue =\n      typename cutlass::epilogue::collective::CollectiveBuilder<\n          ArchTag, OperatorClass, PerSmTileShape_MNK, ClusterShape,\n          cutlass::epilogue::collective::EpilogueTileAuto, ElementAccumulator,\n          ElementAccumulator, ElementC, LayoutCTag, AlignmentC, ElementD,\n          LayoutDTag, AlignmentD,\n          cutlass::epilogue::collective::EpilogueScheduleAuto>::CollectiveOp;\n\n  using CollectiveMainloop =\n      typename cutlass::gemm::collective::CollectiveBuilder<\n          ArchTag, OperatorClass, ElementA, LayoutATag, AlignmentA, ElementB,\n          LayoutBTag, AlignmentB, ElementAccumulator, MmaTileShape,\n          ClusterShape,\n          cutlass::gemm::collective::StageCountAutoCarveout<static_cast<int>(\n              sizeof(typename CollectiveEpilogue::SharedStorage))>,\n          cutlass::gemm::collective::KernelScheduleAuto>::CollectiveOp;\n\n  using GemmKernel = cutlass::gemm::kernel::GemmUniversal<\n      Shape<int, int, int, int>, CollectiveMainloop, CollectiveEpilogue, void>;\n  using Gemm = cutlass::gemm::device::GemmUniversalAdapter<GemmKernel>;\n  using StrideA = typename Gemm::GemmKernel::StrideA;\n  using LayoutA = decltype(cute::make_layout(make_shape(0, 0, 0), StrideA{}));\n  using LayoutSFA = typename Gemm::GemmKernel::CollectiveMainloop::LayoutSFA;\n  using StrideB = typename Gemm::GemmKernel::StrideB;\n  using LayoutB = decltype(cute::make_layout(make_shape(0, 0, 0), StrideB{}));\n  using LayoutSFB = typename Gemm::GemmKernel::CollectiveMainloop::LayoutSFB;\n  using StrideC = typename Gemm::GemmKernel::StrideC;\n  using LayoutC = decltype(cute::make_layout(make_shape(0, 0, 0), StrideC{}));\n  using StrideD = typename Gemm::GemmKernel::StrideD;\n  using LayoutD = decltype(cute::make_layout(make_shape(0, 0, 0), StrideD{}));\n};\n\ntemplate <typename T>\ntypename T::Gemm::Arguments args_from_options(\n    at::Tensor& D, at::Tensor const& A, at::Tensor const& B,\n    at::Tensor const& A_sf, at::Tensor const& B_sf, at::Tensor const& alpha,\n    int64_t M, int64_t N, int64_t K)",
+      "docstring": "",
+      "line": 1
+    },
+    {
+      "name": "cutlass::make_cute_packed_stride",
+      "kind": "function",
+      "signature": "cutlass::make_cute_packed_stride(StrideA{}, {m, k, 1});\n  auto stride_B = cutlass::make_cute_packed_stride(StrideB{}, {n, k, 1});\n  auto stride_D = cutlass::make_cute_packed_stride(StrideD{}, {m, n, 1});\n\n  auto layout_SFA = Sm100BlkScaledConfig::tile_atom_to_shape_SFA(\n      cute::make_shape(m, n, k, 1));\n  auto layout_SFB = Sm100BlkScaledConfig::tile_atom_to_shape_SFB(\n      cute::make_shape(m, n, k, 1));\n\n  typename T::Gemm::Arguments arguments{\n      cutlass::gemm::GemmUniversalMode::kGemm,\n      {m, n, k, 1},\n      {// Mainloop arguments\n       static_cast<ElementA const*>(A.data_ptr()), stride_A,\n       static_cast<ElementB const*>(B.data_ptr()), stride_B,\n       static_cast<ElementSFA const*>(A_sf.data_ptr()), layout_SFA,\n       static_cast<ElementSFB const*>(B_sf.data_ptr()), layout_SFB},\n      {     // Epilogue arguments\n       {},  // epilogue.thread\n       static_cast<ElementD const*>(D.data_ptr()),\n       stride_D,\n       static_cast<ElementD*>(D.data_ptr()),\n       stride_D}};\n  auto& fusion_args = arguments.epilogue.thread;\n  fusion_args.alpha_ptr = static_cast<ElementCompute const*>(alpha.data_ptr());\n  return arguments;\n}\n\ntemplate <typename T>\nvoid runGemm(at::Tensor& D, at::Tensor const& A, at::Tensor const& B,\n             at::Tensor const& A_sf, at::Tensor const& B_sf,\n             at::Tensor const& alpha, int64_t m, int64_t n, int64_t k,\n             cudaStream_t stream)",
+      "docstring": "",
+      "line": 142
+    },
+    {
+      "name": "Gemm::get_workspace_size",
+      "kind": "function",
+      "signature": "Gemm::get_workspace_size(arguments);\n  auto const workspace_options =\n      torch::TensorOptions().dtype(torch::kUInt8).device(A.device());\n  auto workspace = torch::empty(workspace_size, workspace_options);\n\n  CUTLASS_CHECK(gemm.can_implement(arguments));\n\n  CUTLASS_CHECK(gemm.initialize(arguments, workspace.data_ptr(), stream));\n\n  CUTLASS_CHECK(gemm.run(arguments, workspace.data_ptr(), stream));\n}\n#else\ntemplate <typename T>\nvoid runGemm(at::Tensor& D, at::Tensor const& A, at::Tensor const& B,\n             at::Tensor const& A_sf, at::Tensor const& B_sf,\n             at::Tensor const& alpha, int64_t m, int64_t n, int64_t k,\n             cudaStream_t stream)",
+      "docstring": "",
+      "line": 180
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(false,\n              \"Unsupported CUTLASS version. Set VLLM_CUTLASS_SRC_DIR to \"\n              \"a CUTLASS 3.8 source directory to enable support.\");\n}\n#endif  // defined(CUTLASS_ARCH_MMA_SM100_SUPPORTED)\n\n#define CHECK_TYPE(x, st, m) \\\n  TORCH_CHECK(x.scalar_type() == st, \": Inconsistency of Tensor type:\", m)\n#define CHECK_TH_CUDA(x, m) \\\n  TORCH_CHECK(x.is_cuda(), m, \": must be a CUDA tensor\")\n#define CHECK_CONTIGUOUS(x, m) \\\n  TORCH_CHECK(x.is_contiguous(), m, \": must be contiguous\")\n#define CHECK_INPUT(x, st, m) \\\n  CHECK_TH_CUDA(x, m);        \\\n  CHECK_CONTIGUOUS(x, m);     \\\n  CHECK_TYPE(x, st, m)\n\nconstexpr auto FLOAT4_E2M1X2 = at::ScalarType::Byte;\nconstexpr auto SF_DTYPE = at::ScalarType::Float8_e4m3fn;\n\nvoid cutlass_scaled_fp4_mm_sm100a(torch::Tensor& D, torch::Tensor const& A,\n                                  torch::Tensor const& B,\n                                  torch::Tensor const& A_sf,\n                                  torch::Tensor const& B_sf,\n                                  torch::Tensor const& alpha)",
+      "docstring": "",
+      "line": 196
+    },
+    {
+      "name": "CHECK_INPUT",
+      "kind": "function",
+      "signature": "CHECK_INPUT(A, FLOAT4_E2M1X2, \"a\");\n  CHECK_INPUT(B, FLOAT4_E2M1X2, \"b\");\n\n  CHECK_INPUT(A_sf, SF_DTYPE, \"scale_a\");\n  CHECK_INPUT(B_sf, SF_DTYPE, \"scale_b\");\n\n  CHECK_INPUT(alpha, at::ScalarType::Float, \"alpha\");\n\n  TORCH_CHECK(A.dim() == 2, \"a must be a matrix\");\n  TORCH_CHECK(B.dim() == 2, \"b must be a matrix\");\n  TORCH_CHECK(A.sizes()[1] == B.sizes()[1],\n              \"a and b shapes cannot be multiplied (\", A.sizes()[0], \"x\",\n              A.sizes()[1], \" and \", B.sizes()[0], \"x\", B.sizes()[1], \")\");\n\n  auto const m = A.sizes()[0];\n  auto const n = B.sizes()[0];\n  auto const k = A.sizes()[1] * 2;\n\n  constexpr int alignment = 32;\n  TORCH_CHECK(k % alignment == 0, \"Expected k to be divisible by \", alignment,\n              \", but got a shape: (\", A.sizes()[0], \"x\", A.sizes()[1],\n              \"), k: \", k, \".\");\n  TORCH_CHECK(n % alignment == 0, \"Expected n to be divisible by \", alignment,\n              \", but got b shape: (\", B.sizes()[0], \"x\", B.sizes()[1], \").\");\n\n  auto round_up = int x, int y",
+      "docstring": "",
+      "line": 221
+    },
+    {
+      "name": "return",
+      "kind": "function",
+      "signature": "return(x + y - 1) / y * y; };\n  int rounded_m = round_up(m, 128);\n  int rounded_n = round_up(n, 128);\n  // Since k is divisible by 32 (alignment), k / 16 is guaranteed to be an\n  // integer.\n  int rounded_k = round_up(k / 16, 4);\n\n  TORCH_CHECK(A_sf.dim() == 2, \"scale_a must be a matrix\");\n  TORCH_CHECK(B_sf.dim() == 2, \"scale_b must be a matrix\");\n  TORCH_CHECK(A_sf.sizes()[1] == B_sf.sizes()[1],\n              \"scale_a and scale_b shapes cannot be multiplied (\",\n              A_sf.sizes()[0], \"x\", A_sf.sizes()[1], \" and \", B_sf.sizes()[0],\n              \"x\", B_sf.sizes()[1], \")\");\n  TORCH_CHECK(A_sf.sizes()[0] == rounded_m && A_sf.sizes()[1] == rounded_k,\n              \"scale_a must be padded and swizzled to a shape (\", rounded_m,\n              \"x\", rounded_k, \"), but got a shape (\", A_sf.sizes()[0], \"x\",\n              A_sf.sizes()[1], \")\");\n  TORCH_CHECK(B_sf.sizes()[0] == rounded_n && B_sf.sizes()[1] == rounded_k,\n              \"scale_b must be padded and swizzled to a shape (\", rounded_n,\n              \"x\", rounded_k, \"), but got a shape (\", B_sf.sizes()[0], \"x\",\n              B_sf.sizes()[1], \")\");\n\n  auto out_dtype = D.dtype();\n  at::cuda::CUDAGuard device_guard{(char)A.get_device()};\n  const cudaStream_t stream = at::cuda::getCurrentCUDAStream(A.get_device());\n\n  if (out_dtype == at::ScalarType::Half)",
+      "docstring": "",
+      "line": 247
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "c10",
+      "cutlass",
+      "cutlass_extensions",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 6,
+    "public_symbols": 6,
+    "classes": 0,
+    "functions": 6,
+    "internal_deps": 0,
+    "external_deps": 5,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/fp4/nvfp4_scaled_mm_kernels.cu"
+}

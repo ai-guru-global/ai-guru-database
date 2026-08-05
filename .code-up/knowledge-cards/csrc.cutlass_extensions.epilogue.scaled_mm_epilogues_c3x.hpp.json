@@ -1,0 +1,114 @@
+{
+  "id": "csrc.cutlass_extensions.epilogue.scaled_mm_epilogues_c3x.hpp",
+  "title": "Scaled Mm Epilogues C3X",
+  "type": "module",
+  "summary": "Module providing sm90a, prepare_args, args_from_tensor, data_ptr, numel and 5 more symbols",
+  "details": "Contains 12 functions/methods",
+  "symbols": [
+    {
+      "name": "sm90a",
+      "kind": "function",
+      "signature": "sm90a(Hopper) or later.\n\n   Epilogues must contain a public type named EVTCompute of type Sm90EVT,\n   as well as a static prepare_args function that constructs an\n   EVTCompute::Arguments struct.\n*/\n\nnamespace vllm::c3x {\n\nusing namespace cute;\n\ntemplate <typename T>\nstruct identity {\n  CUTLASS_HOST_DEVICE\n  T operator()(T lhs)",
+      "docstring": "",
+      "line": 9
+    },
+    {
+      "name": "prepare_args",
+      "kind": "function",
+      "signature": "prepare_args(Args... args)",
+      "docstring": "",
+      "line": 38
+    },
+    {
+      "name": "args_from_tensor",
+      "kind": "function",
+      "signature": "args_from_tensor(torch::Tensor const& tensor)",
+      "docstring": "",
+      "line": 85
+    },
+    {
+      "name": "data_ptr",
+      "kind": "function",
+      "signature": "data_ptr());\n    if constexpr (std::is_same_v<Descriptor, ColOrScalarLoad<T>> ||\n                  std::is_same_v<Descriptor, RowOrScalarLoad<T>>)",
+      "docstring": "",
+      "line": 89
+    },
+    {
+      "name": "numel",
+      "kind": "function",
+      "signature": "numel() != 1};\n    } else {\n      static_assert(!std::is_same_v<Descriptor, ColLoad<T, true>> &&\n                    !std::is_same_v<Descriptor, RowLoad<T, true>>);\n      return Arguments{data_ptr};\n    }\n  }\n\n  // This overload handles the case where there might not be a tensor, in which\n  // case a nullptr is passed and a constant (0) is used.\n  template <typename Descriptor, typename T>\n  static auto args_from_tensor(std::optional<torch::Tensor> const& tensor)",
+      "docstring": "",
+      "line": 92
+    },
+    {
+      "name": "data_ptr",
+      "kind": "function",
+      "signature": "data_ptr()) : nullptr;\n    static_assert(std::is_same_v<Descriptor, ColLoad<T, true>> ||\n                  std::is_same_v<Descriptor, RowLoad<T, true>>);\n    return Arguments{data_ptr};\n  }\n\n  template <typename Descriptor, typename T>\n  static auto args_from_tensor(const T* const* data_ptr, bool do_broadcast)",
+      "docstring": "",
+      "line": 105
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same_v<Descriptor, ColOrScalarLoadArray<T>> ||\n                  std::is_same_v<Descriptor, RowOrScalarLoadArray<T>>);\n    return Arguments{data_ptr, do_broadcast};\n  }\n};\n\n/*\n   This epilogue function defines a quantized GEMM operation similar to\n   torch.scaled_mm_.\n\n   A and B may be both either int8 or fp8_e4m3. A can be\n   quantized per-tensor or per-row. B can be quantized per-tensor or per-column.\n   Any combination of per-tensor and per-row or column is supported.\n   A and B must have symmetric quantization (zero point == 0).\n\n   So the GEMM operation is D = (a_scales * A) (b_scales * B), where the\n   scales are applied elementwise with numpy-style broadcasting.\n\n   ScaleA and ScaleB define the epilogue functions that apply the scales for\n   the A and B operands respectively. These scales may be either per-tensor or\n   per row or column.\n*/\ntemplate <typename ElementAcc, typename ElementD, typename TileShape>\nstruct ScaledEpilogue\n    : private ScaledEpilogueBase<ElementAcc, ElementD, TileShape> {\n private:\n  using SUPER = ScaledEpilogueBase<ElementAcc, ElementD, TileShape>;\n  using Accum = typename SUPER::Accum;\n  using ScaleA = typename SUPER::template ColOrScalarLoad<float>;\n  using ScaleB = typename SUPER::template RowOrScalarLoad<float>;\n\n  using Compute0 = cutlass::epilogue::fusion::Sm90Compute<\n      cutlass::multiplies, float, float,\n      cutlass::FloatRoundStyle::round_to_nearest>;\n\n  using EVTCompute0 =\n      cutlass::epilogue::fusion::Sm90EVT<Compute0, ScaleB, Accum>;\n\n  using Compute1 = cutlass::epilogue::fusion::Sm90Compute<\n      cutlass::multiplies, ElementD, float,\n      cutlass::FloatRoundStyle::round_to_nearest>;\n\n public:\n  using EVTCompute =\n      cutlass::epilogue::fusion::Sm90EVT<Compute1, ScaleA, EVTCompute0>;\n  using ArgumentType = typename EVTCompute::Arguments;\n\n  static ArgumentType prepare_args(torch::Tensor const& a_scales,\n                                   torch::Tensor const& b_scales)",
+      "docstring": "",
+      "line": 113
+    },
+    {
+      "name": "point",
+      "kind": "function",
+      "signature": "point(azp) is used to compute an azp correction term,\n * which is folded into the bias.\n *\n * The bias tensor must be per-output channel.\n * ScaleA and ScaleB can be per-tensor or per-token/per-channel.\n */\ntemplate <typename ElementAcc, typename ElementD, typename TileShape>\nstruct ScaledEpilogueBias\n    : private ScaledEpilogueBase<ElementAcc, ElementD, TileShape> {\n private:\n  using SUPER = ScaledEpilogueBase<ElementAcc, ElementD, TileShape>;\n  using Accum = typename SUPER::Accum;\n  using ScaleA = typename SUPER::template ColOrScalarLoad<float>;\n  using ScaleB = typename SUPER::template RowOrScalarLoad<float>;\n  using Bias = typename SUPER::template RowLoad<ElementD>;\n\n  using Compute0 = cutlass::epilogue::fusion::Sm90Compute<\n      cutlass::multiplies, float, float,\n      cutlass::FloatRoundStyle::round_to_nearest>;\n\n  using EVTCompute0 =\n      cutlass::epilogue::fusion::Sm90EVT<Compute0, ScaleB, Accum>;\n\n  using Compute1 = cutlass::epilogue::fusion::Sm90Compute<\n      cutlass::multiply_add, ElementD, float,\n      cutlass::FloatRoundStyle::round_to_nearest>;\n\n public:\n  using EVTCompute =\n      cutlass::epilogue::fusion::Sm90EVT<Compute1, ScaleA, EVTCompute0, Bias>;\n\n  using ArgumentType = typename EVTCompute::Arguments;\n  static ArgumentType prepare_args(torch::Tensor const& a_scales,\n                                   torch::Tensor const& b_scales,\n                                   torch::Tensor const& bias)",
+      "docstring": "",
+      "line": 173
+    },
+    {
+      "name": "prepare_args",
+      "kind": "function",
+      "signature": "prepare_args(torch::Tensor const& a_scales,\n                                   torch::Tensor const& b_scales,\n                                   torch::Tensor const& bias)",
+      "docstring": "",
+      "line": 248
+    },
+    {
+      "name": "shape",
+      "kind": "function",
+      "signature": "shape(1,n), computed as azp * J @ B.\n *\n * This epilogue also supports bias, which remains per-channel.\n */\ntemplate <typename ElementAcc, typename ElementD, typename TileShape>\nstruct ScaledEpilogueBiasAzp\n    : private ScaledEpilogueBase<ElementAcc, ElementD, TileShape> {\n private:\n  using SUPER = ScaledEpilogueBase<ElementAcc, ElementD, TileShape>;\n  using Accum = typename SUPER::Accum;\n  using ScaleA = typename SUPER::template ColOrScalarLoad<float>;\n  using ScaleB = typename SUPER::template RowOrScalarLoad<float>;\n  using Bias = typename SUPER::template RowLoad<ElementD, true>;\n\n  // This is the full AZP term, azp * J @ B, shape (1,n)\n  using AzpWithAdj = typename SUPER::template RowLoad<int32_t>;\n\n  // Compute float(accum - azp_adj), both operands are int32_t\n  using ComputeAzp = cutlass::epilogue::fusion::Sm90Compute<\n      cutlass::minus, float, int32_t,\n      cutlass::FloatRoundStyle::round_to_nearest>;\n\n  using EVTComputeAzp =\n      cutlass::epilogue::fusion::Sm90EVT<ComputeAzp, Accum, AzpWithAdj>;\n\n  using ComputeScaleB = cutlass::epilogue::fusion::Sm90Compute<\n      cutlass::multiplies, float, float,\n      cutlass::FloatRoundStyle::round_to_nearest>;\n\n  using EVTComputeScaleB =\n      cutlass::epilogue::fusion::Sm90EVT<ComputeScaleB, ScaleB, EVTComputeAzp>;\n\n  using ComputeScaleBiasA = cutlass::epilogue::fusion::Sm90Compute<\n      cutlass::multiply_add, ElementD, float,\n      cutlass::FloatRoundStyle::round_to_nearest>;\n\n public:\n  using EVTCompute =\n      cutlass::epilogue::fusion::Sm90EVT<ComputeScaleBiasA, ScaleA,\n                                         EVTComputeScaleB, Bias>;\n  using ArgumentType = typename EVTCompute::Arguments;\n\n  static ArgumentType prepare_args(torch::Tensor const& a_scales,\n                                   torch::Tensor const& b_scales,\n                                   torch::Tensor const& azp_adj,\n                                   std::optional<torch::Tensor> const& bias)",
+      "docstring": "",
+      "line": 264
+    },
+    {
+      "name": "O",
+      "kind": "function",
+      "signature": "O(m*n) space, and this way it only requires O(m+n) space.\n * The azp term is a 1D tensor of shape (m,1), and represents the unscaled zero\n * point for each row of A.\n * The azp_adj term is a 1D tensor of shape (1,n), computed as J @ B.\n *\n * This epilogue also supports bias, which remains per-channel.\n */\ntemplate <typename ElementAcc, typename ElementD, typename TileShape>\nstruct ScaledEpilogueBiasAzpToken\n    : private ScaledEpilogueBase<ElementAcc, ElementD, TileShape> {\n private:\n  using SUPER = ScaledEpilogueBase<ElementAcc, ElementD, TileShape>;\n  using Accum = typename SUPER::Accum;\n  using ScaleA = typename SUPER::template ColOrScalarLoad<float>;\n  using ScaleB = typename SUPER::template RowOrScalarLoad<float>;\n  using Bias = typename SUPER::template RowLoad<ElementD, true>;\n\n  // Per-token azp term, shape (m,1)\n  using Azp = typename SUPER::template ColLoad<int32_t>;\n\n  // This is the AZP adjustment term, J @ B, shape (1,n)\n  using AzpAdj = typename SUPER::template RowLoad<int32_t>;\n\n  // Compute azp * azp_adj\n  using ComputeAzp = cutlass::epilogue::fusion::Sm90Compute<\n      cutlass::multiplies, int32_t, int32_t,\n      cutlass::FloatRoundStyle::round_to_nearest>;\n\n  using EVTComputeAzp =\n      cutlass::epilogue::fusion::Sm90EVT<ComputeAzp, Azp, AzpAdj>;\n\n  // Compute float(accum - azp*azp_adj), all operands are int32_t\n  using ComputeAcc = cutlass::epilogue::fusion::Sm90Compute<\n      cutlass::minus, float, int32_t,\n      cutlass::FloatRoundStyle::round_to_nearest>;\n\n  using EVTComputeAcc =\n      cutlass::epilogue::fusion::Sm90EVT<ComputeAcc, Accum, EVTComputeAzp>;\n\n  using ComputeScaleB = cutlass::epilogue::fusion::Sm90Compute<\n      cutlass::multiplies, float, float,\n      cutlass::FloatRoundStyle::round_to_nearest>;\n\n  using EVTComputeScaleB =\n      cutlass::epilogue::fusion::Sm90EVT<ComputeScaleB, ScaleB, EVTComputeAcc>;\n\n  using ComputeScaleBiasA = cutlass::epilogue::fusion::Sm90Compute<\n      cutlass::multiply_add, ElementD, float,\n      cutlass::FloatRoundStyle::round_to_nearest>;\n\n public:\n  using EVTCompute =\n      cutlass::epilogue::fusion::Sm90EVT<ComputeScaleBiasA, ScaleA,\n                                         EVTComputeScaleB, Bias>;\n  using ArgumentType = typename EVTCompute::Arguments;\n\n  static ArgumentType prepare_args(torch::Tensor const& a_scales,\n                                   torch::Tensor const& b_scales,\n                                   torch::Tensor const& azp_adj,\n                                   torch::Tensor const& azp,\n                                   std::optional<torch::Tensor> const& bias)",
+      "docstring": "",
+      "line": 326
+    },
+    {
+      "name": "prepare_args",
+      "kind": "function",
+      "signature": "prepare_args(float const* const* a_scales_ptr,\n                                   float const* const* b_scales_ptr,\n                                   bool a_col_broadcast, bool b_row_broadcast)",
+      "docstring": "",
+      "line": 435
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cutlass_extensions"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 12,
+    "public_symbols": 12,
+    "classes": 0,
+    "functions": 12,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cutlass_extensions/epilogue/scaled_mm_epilogues_c3x.hpp"
+}

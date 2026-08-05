@@ -1,0 +1,100 @@
+{
+  "id": "csrc.attention.merge_attn_states.cu",
+  "title": "Merge Attn States",
+  "type": "module",
+  "summary": "Module providing results, sizeof, half, logf, fn and 4 more symbols",
+  "details": "Contains 9 functions/methods",
+  "symbols": [
+    {
+      "name": "results",
+      "kind": "function",
+      "signature": "results(in the split-KV case)\ntemplate <typename scalar_t, const uint NUM_THREADS>\n__global__ void merge_attn_states_kernel(\n    scalar_t* output, float* output_lse, const scalar_t* prefix_output,\n    const float* prefix_lse, const scalar_t* suffix_output,\n    const float* suffix_lse, const uint num_tokens, const uint num_heads,\n    const uint head_size)",
+      "docstring": "",
+      "line": 13
+    },
+    {
+      "name": "sizeof",
+      "kind": "function",
+      "signature": "sizeof(scalar_t);\n  const uint threads_per_head = head_size / pack_size;\n\n  const uint global_idx = blockIdx.x * NUM_THREADS + threadIdx.x;\n  const uint token_head_threads = num_tokens * num_heads * threads_per_head;\n\n  if (global_idx >= token_head_threads) return;\n\n  // global_idx -> token_idx + head_idx + pack_idx\n  const uint token_head_idx = global_idx / threads_per_head;\n  const uint pack_idx = global_idx % threads_per_head;\n\n  const uint token_idx = token_head_idx / num_heads;\n  const uint head_idx = token_head_idx % num_heads;\n\n  const uint pack_offset = pack_idx * pack_size;  // (0~15)*8, etc.\n  const uint head_offset =\n      token_idx * num_heads * head_size + head_idx * head_size;\n  const scalar_t* prefix_head_ptr = prefix_output + head_offset;\n  const scalar_t* suffix_head_ptr = suffix_output + head_offset;\n  scalar_t* output_head_ptr = output + head_offset;\n\n  float p_lse = prefix_lse[head_idx * num_tokens + token_idx];\n  float s_lse = suffix_lse[head_idx * num_tokens + token_idx];\n  p_lse = std::isinf(p_lse) ? -std::numeric_limits<float>::infinity() : p_lse;\n  s_lse = std::isinf(s_lse) ? -std::numeric_limits<float>::infinity() : s_lse;\n\n  const float max_lse = fmaxf(p_lse, s_lse);\n  p_lse = p_lse - max_lse;\n  s_lse = s_lse - max_lse;\n  const float p_se = expf(p_lse);\n  const float s_se = expf(s_lse);\n  const float out_se = p_se + s_se;\n  const float p_scale = p_se / out_se;\n  const float s_scale = s_se / out_se;\n\n  if (pack_offset < head_size)",
+      "docstring": "",
+      "line": 21
+    },
+    {
+      "name": "half",
+      "kind": "function",
+      "signature": "half(uint16_t), bfloat16, float -> float.\n      const float p_out_f =\n          vllm::to_float(reinterpret_cast<const scalar_t*>(&p_out_pack)[i]);\n      const float s_out_f =\n          vllm::to_float(reinterpret_cast<const scalar_t*>(&s_out_pack)[i]);\n      // fma: a * b + c = p_out_f * p_scale + (s_out_f * s_scale)\n      const float o_out_f = p_out_f * p_scale + (s_out_f * s_scale);\n      // float -> half(uint16_t), bfloat16, float.\n      vllm::from_float(reinterpret_cast<scalar_t*>(&o_out_pack)[i], o_out_f);\n    }\n\n    // Pack 128b storage\n    reinterpret_cast<pack_128b_t*>(output_head_ptr)[pack_offset / pack_size] =\n        o_out_pack;\n  }\n  // We only need to write to output_lse once per head.\n  if (output_lse != nullptr && pack_idx == 0)",
+      "docstring": "",
+      "line": 68
+    },
+    {
+      "name": "logf",
+      "kind": "function",
+      "signature": "logf(out_se) + max_lse;\n    output_lse[head_idx * num_tokens + token_idx] = out_lse;\n  }\n}\n\n}  // namespace vllm\n\n// The following macro is used to dispatch the conversion function based on\n// the output data type. The FN is a macro that calls a function with\n// template<typename scalar_t>.\n#define DISPATCH_BY_SCALAR_DTYPE(scalar_dtype, fn)                      \\\n  {                                                                     \\\n    if (scalar_dtype == at::ScalarType::Float)",
+      "docstring": "",
+      "line": 85
+    },
+    {
+      "name": "fn",
+      "kind": "function",
+      "signature": "fn(float);                                                        \\\n    } else if (scalar_dtype == at::ScalarType::Half)",
+      "docstring": "",
+      "line": 97
+    },
+    {
+      "name": "fn",
+      "kind": "function",
+      "signature": "fn(uint16_t);                                                     \\\n    } else if (scalar_dtype == at::ScalarType::BFloat16)",
+      "docstring": "",
+      "line": 99
+    },
+    {
+      "name": "fn",
+      "kind": "function",
+      "signature": "fn(__nv_bfloat16);                                                \\\n    } else {                                                            \\\n      TORCH_CHECK(false, \"Unsupported data type of O: \", scalar_dtype); \\\n    }                                                                   \\\n  }\n\n#define LAUNCH_MERGE_ATTN_STATES(scalar_t, NUM_THREADS)                     \\\n  {                                                                         \\\n    vllm::merge_attn_states_kernel<scalar_t, NUM_THREADS>                   \\\n        <<<grid, block, 0, stream>>>(                                       \\\n            reinterpret_cast<scalar_t*>(output.data_ptr()), output_lse_ptr, \\\n            reinterpret_cast<scalar_t*>(prefix_output.data_ptr()),          \\\n            reinterpret_cast<float*>(prefix_lse.data_ptr()),                \\\n            reinterpret_cast<scalar_t*>(suffix_output.data_ptr()),          \\\n            reinterpret_cast<float*>(suffix_lse.data_ptr()), num_tokens,    \\\n            num_heads, head_size);                                          \\\n  }\n\n/*@brief Merges the attention states from prefix and suffix\n * into the output tensor. NUM_TOKENS: n, NUM_HEADS: h, HEAD_SIZE: d\n *\n * @param output [n,h,d] The output tensor to store the merged attention states.\n * @param output_lse [h,d] Optional tensor to store the log-sum-exp values.\n * @param prefix_output [n,h,d] The prefix attention states.\n * @param prefix_lse [h,n] The log-sum-exp values for the prefix attention\n * states.\n * @param suffix_output [n,h,d] The suffix attention states.\n * @param suffix_lse [h,n] The log-sum-exp values for the suffix attention\n * states.\n */\ntemplate <typename scalar_t>\nvoid merge_attn_states_launcher(torch::Tensor& output,\n                                std::optional<torch::Tensor> output_lse,\n                                const torch::Tensor& prefix_output,\n                                const torch::Tensor& prefix_lse,\n                                const torch::Tensor& suffix_output,\n                                const torch::Tensor& suffix_lse)",
+      "docstring": "",
+      "line": 101
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size(0);\n  const uint num_heads = output.size(1);\n  const uint head_size = output.size(2);\n  const uint pack_size = 16 / sizeof(scalar_t);\n  TORCH_CHECK(head_size % pack_size == 0,\n              \"headsize must be multiple of pack_size:\", pack_size);\n  TORCH_CHECK(output.stride(-2) == head_size && output.stride(-1) == 1,\n              \"output heads must be contiguous in memory\");\n  TORCH_CHECK(\n      prefix_output.stride(-2) == head_size && prefix_output.stride(-1) == 1,\n      \"prefix_output heads must be contiguous in memory\");\n  TORCH_CHECK(\n      suffix_output.stride(-2) == head_size && suffix_output.stride(-1) == 1,\n      \"suffix_output heads must be contiguous in memory\");\n  float* output_lse_ptr = nullptr;\n  if (output_lse.has_value())",
+      "docstring": "",
+      "line": 140
+    },
+    {
+      "name": "value",
+      "kind": "function",
+      "signature": "value().data_ptr<float>();\n  }\n  // Process one pack elements per thread. for float, the\n  // pack_size is 4 for half/bf16, the pack_size is 8.\n  const uint threads_per_head = head_size / pack_size;\n  const uint total_threads = num_tokens * num_heads * threads_per_head;\n\n  dim3 block(NUM_THREADS);\n  dim3 grid((total_threads + NUM_THREADS - 1) / NUM_THREADS);\n\n  const c10::cuda::OptionalCUDAGuard device_guard(prefix_output.device());\n  auto stream = at::cuda::getCurrentCUDAStream();\n\n  LAUNCH_MERGE_ATTN_STATES(scalar_t, NUM_THREADS);\n}\n\n#define CALL_MERGE_ATTN_STATES_LAUNCHER(scalar_t)                           \\\n  {                                                                         \\\n    merge_attn_states_launcher<scalar_t>(output, output_lse, prefix_output, \\\n                                         prefix_lse, suffix_output,         \\\n                                         suffix_lse);                       \\\n  }\n\nvoid merge_attn_states(torch::Tensor& output,\n                       std::optional<torch::Tensor> output_lse,\n                       const torch::Tensor& prefix_output,\n                       const torch::Tensor& prefix_lse,\n                       const torch::Tensor& suffix_output,\n                       const torch::Tensor& suffix_lse)",
+      "docstring": "",
+      "line": 156
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "algorithm",
+      "attention_dtypes",
+      "attention_utils",
+      "c10",
+      "optional",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 9,
+    "public_symbols": 9,
+    "classes": 0,
+    "functions": 9,
+    "internal_deps": 0,
+    "external_deps": 7,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/attention/merge_attn_states.cu"
+}

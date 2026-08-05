@@ -372,7 +372,7 @@ print(f"覆盖度: {label_model.score(L_train, tie_break_policy='random'):.2%}")
 - [[11_模型运维/05_流程编排/Data_Quality_Management]] — 数据质量管理
 - [[11_模型运维/05_流程编排/Data_Pipeline_Orchestration]] — 数据管道编排
 - [[11_模型运维/07_模型服务/01_Automated_Retraining]] — 自动化重训
-- [[05_大模型/06_LLM数据工程/README]] — LLM 数据工程
+- [[05_大模型/05_LLM数据工程/README]] — LLM 数据工程
 
 ---
 

@@ -16,7 +16,7 @@ relationships:
 sources:
   - 05_大模型/01_LLM基础.md
   - 14_RAG系统/README.md
-  - 05_大模型/07_微调技术/Fine_tuning_Strategies.md
+  - 05_大模型/06_微调技术/Fine_tuning_Strategies.md
 summary: "在已有 LLM 基础上做定制,有四条路:Prompt Engineering → RAG → 微调 → 预训练。选型原则:优先用最便宜的方案解决 80% 的问题,只在该方案搞不定时才升级。本文档给出明确的决策树、对比表、典型场景与选型 checklist。"
 provenance:
   extracted: 0.70

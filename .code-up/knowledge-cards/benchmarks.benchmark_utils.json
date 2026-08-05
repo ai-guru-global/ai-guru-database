@@ -1,0 +1,49 @@
+{
+  "id": "benchmarks.benchmark_utils",
+  "title": "Benchmark Utils",
+  "type": "module",
+  "summary": "Module providing convert_to_pytorch_benchmark_format, InfEncoder",
+  "details": "Contains 1 classes: InfEncoder. Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "convert_to_pytorch_benchmark_format",
+      "kind": "function",
+      "signature": "def convert_to_pytorch_benchmark_format(\n    args: argparse.Namespace, metrics: dict[str, list], extra_info: dict[str, Any]\n) -> list:\n    \"\"\"\n    Save the benchmark results in the format used by PyTorch OSS benchmark with\n    on metric per record\n    https://github.com/pytorch/pytorch/wiki/How-to-integrate-with-PyTorch-OSS-benchmark-database\n    \"\"\"\n    records = []\n    if not os.environ.get(\"SAVE_TO_PYTORCH_BENCHMARK_FORMAT\", False):\n        return records\n\n    for name, benchmark_values in metrics.items():\n        record = {\n            \"benchmark\": {\n                \"name\": \"vLLM benchmark\",\n                \"extra_info\": {\n                    \"args\": vars(args),\n                },\n            },\n            \"model\": {\n                \"name\": args.model,\n            },\n            \"metric\": {\n                \"name\": name,\n                \"benchmark_values\": benchmark_values,\n                \"extra_info\": extra_info,\n            },\n        }\n\n        tp = record[\"benchmark\"][\"extra_info\"][\"args\"].get(\"tensor_parallel_size\")\n        # Save tensor_parallel_size parameter if it's part of the metadata\n        if not tp and \"tensor_parallel_size\" in extra_info:\n            record[\"benchmark\"][\"extra_info\"][\"args\"][\"tensor_parallel_size\"] = (\n                extra_info[\"tensor_parallel_size\"]\n            )\n\n        records.append(record)\n\n    return records\n\n\nclass InfEncoder(json.JSONEncoder):\n    def clear_inf(self, o: Any):\n        if isinstance(o, dict):\n            return {k: self.clear_inf(v) for k, v in o.items()}\n        elif isinstance(o, list):\n            return [self.clear_inf(v) for v in o]\n        elif isinstance(o, float) and math.isinf(o):\n            return \"inf\"\n        return o\n\n    def iterencode(self, o: Any, *args, **kwargs) -> Any:\n        return super().iterencode(self.clear_inf(o), *args, **kwargs)\n\n\ndef write_to_json(filename: str, records: list) -> None:\n    with open(filename, \"w\") as f:\n        json.dump(\n            records,\n            f,\n            cls=InfEncoder,\n            default=lambda o",
+      "docstring": "",
+      "line": 11
+    },
+    {
+      "name": "InfEncoder",
+      "kind": "class",
+      "signature": "class InfEncoder(json.JSONEncoder)",
+      "docstring": "",
+      "line": 53
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "argparse",
+      "json",
+      "math",
+      "os",
+      "typing"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 2,
+    "public_symbols": 2,
+    "classes": 1,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 5,
+    "depth": 0,
+    "complexity_sum": 1
+  },
+  "tags": [
+    "oop",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/benchmark_utils.py"
+}

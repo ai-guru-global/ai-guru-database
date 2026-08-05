@@ -241,7 +241,7 @@ AI 的长期目标之一是建立完整的**世界模型**——在脑海中模�
 ## 相关页面
 
 - [[概念/General/ai-fundamentals]] - AI 基础概念
-- [[05_大模型/07_微调技术/04_GenAI_L18_微调_LLMs]] - GenAI 与 LLM 入门
+- [[05_大模型/06_微调技术/04_GenAI_L18_微调_LLMs]] - GenAI 与 LLM 入门
 - [[AI_New_Architectures]] - 新架构与创新（SSM、MLA、MoE）
 - [[00_入门/02_技术概览/04_AI_推理模型_指南]] - 推理模型与推理计算指南
 - [[AI_Tools_Practical_Guide]] - AI 工具实用指南

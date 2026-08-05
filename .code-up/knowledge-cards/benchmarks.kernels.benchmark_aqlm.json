@@ -1,0 +1,49 @@
+{
+  "id": "benchmarks.kernels.benchmark_aqlm",
+  "title": "Benchmark Aqlm",
+  "type": "module",
+  "summary": "Module providing torch_mult, run_timing",
+  "details": "Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "torch_mult",
+      "kind": "function",
+      "signature": "def torch_mult(\n    # [..., in_features]\n    input: torch.Tensor,\n    weights: torch.Tensor,\n    # [num_out_groups, 1, 1, 1]\n    scales: torch.Tensor,\n) -> torch.Tensor:\n    output = F.linear(input, weights)\n    return output\n\n\ndef dequant_out_scale(\n    # [..., in_features]\n    input: torch.Tensor,\n    # [num_out_groups, num_in_groups, num_codebooks]\n    codes: torch.IntTensor,\n    # [num_codebooks, codebook_size, out_group_size, in_group_size]\n    codebooks: torch.Tensor,\n    # [num_out_groups, 1, 1, 1]\n    scales: torch.Tensor,\n    output_partition_sizes: torch.IntTensor,\n    bias: Optional[torch.Tensor],\n) -> torch.Tensor:\n    weights = ops.aqlm_dequant(codes, codebooks, output_partition_sizes)\n\n    if bias is None:\n        output = F.linear(input, weights, bias)\n        orig_shape = output.shape\n        flattened_output = output.view(-1, output.size(-1))\n        f_scales = scales.view(-1, scales.shape[0])\n        b_scales = f_scales.expand(flattened_output.shape[0], -1)\n        flattened_output *= b_scales\n        return flattened_output.view(orig_shape)\n    else:\n        b_scales = scales.view(scales.shape[:-3] + (-1,)).expand(-1, weights.shape[1])\n        weights *= b_scales\n        return F.linear(input, weights, bias)\n\n\ndef dequant_weight_scale(\n    # [..., in_features]\n    input: torch.Tensor,\n    # [num_out_groups, num_in_groups, num_codebooks]\n    codes: torch.IntTensor,\n    # [num_codebooks, codebook_size, out_group_size, in_group_size]\n    codebooks: torch.Tensor,\n    # [num_out_groups, 1, 1, 1]\n    scales: torch.Tensor,\n    output_partition_sizes: torch.IntTensor,\n    bias: Optional[torch.Tensor],\n) -> torch.Tensor:\n    weights = ops.aqlm_dequant(codes, codebooks, output_partition_sizes)\n\n    b_scales = scales.view(scales.shape[:-3] + (-1,)).expand(-1, weights.shape[1])\n    weights *= b_scales\n    return F.linear(input, weights, bias)\n\n\ndef dequant_no_scale(\n    # [..., in_features]\n    input: torch.Tensor,\n    # [num_out_groups, num_in_groups, num_codebooks]\n    codes: torch.IntTensor,\n    # [num_codebooks, codebook_size, out_group_size, in_group_size]\n    codebooks: torch.Tensor,\n    # [num_out_groups, 1, 1, 1]\n    scales: torch.Tensor,\n    output_partition_sizes: torch.IntTensor,\n    bias: Optional[torch.Tensor],\n) -> torch.Tensor:\n    weights = ops.aqlm_dequant(codes, codebooks, output_partition_sizes)\n\n    return F.linear(input, weights, bias)\n\n\n# Compare the optimized 1x16 and 2x8 cuda decompression/dequant kernels against\n# the generic pytorch version.\n# Just visual comparison.\ndef dequant_test(k: int, parts: torch.Tensor, nbooks: int, bits: int) -> None:\n    n = int(parts.sum().item())\n\n    device = torch.device(\"cuda:0\")\n\n    code_range = (1 << bits) // 2\n    ingroups = 8\n\n    codes = torch.randint(\n        -code_range,\n        code_range,\n        size=(n, k // ingroups, nbooks),\n        dtype=get_int_dtype(bits),\n        device=device,\n    )\n\n    codebooks = torch.randn(\n        size=(parts.shape[0] * nbooks, 1 << bits, 1, 8),\n        dtype=torch.float16,\n        device=device,\n    )\n\n    count = 0\n    for index in range(16):\n        for i in range(8):\n            for book in range(nbooks):\n                codebooks[book, index, 0, i] = count * (10**book)\n            count += 1\n\n    print(\"codes shape\", codes.shape)\n\n    for i in range(16):\n        for book in range(nbooks):\n            codes[0, i, book] = i\n            codes[0, -i, book] = i\n\n    weights = dequantize_weight(codes, codebooks, None)\n    weights2 = ops.aqlm_dequant(codes, codebooks, parts)\n\n    print(\"weights shape:\", weights.shape)\n    print(\"weights2 shape:\", weights2.shape)\n\n    print(\"weights are:\", weights)\n    print(\"weights2 are:\", weights2)\n\n    print(\"first 128 weights are\", weights[0, 0:128].to(torch.int32))\n    print(\"first 128 weights2 are:\", weights2[0, 0:128].to(torch.int32))\n\n    print(\"last 128 weights are\", weights[0, -128:])\n    print(\"last 128 weights2 are:\", weights2[0, -128:])\n\n\ndef main():\n    parser = FlexibleArgumentParser(description=\"Benchmark aqlm performance.\")\n\n    # Add arguments\n    parser.add_argument(\n        \"--nbooks\", type=int, default=1, help=\"Number of codebooks (default: 1)\"\n    )\n    parser.add_argument(\n        \"--bits\",\n        type=int,\n        default=16,\n        help=\"Number of bits per code element (default: 16)\",\n    )\n    parser.add_argument(\n        \"--test\",\n        type=bool,\n        default=False,\n        help=\"Run the decompression/dequant tester rather than benchmarking \"\n        \"(default: False)\",\n    )\n\n    # Parse the arguments\n    args = parser.parse_args()\n\n    # Extract values\n    nbooks = args.nbooks\n    bits = args.bits\n\n    if args.test:\n        dequant_test(4096, torch.tensor((4096,)), nbooks, bits)\n        return\n\n    # Otherwise, benchmark.\n    methods = [\n        ops.aqlm_gemm,\n        dequant_out_scale,\n        generic_dequantize_gemm,\n        optimized_dequantize_gemm,\n        dequant_weight_scale,\n        torch_mult,\n        dequant_no_scale,\n    ]\n\n    filename = f\"./aqlm_benchmark_{nbooks}x{bits}.csv\"\n    print(f\"writing benchmarks to file {filename}\")\n    with open(filename, \"w\") as f:\n        sys.stdout = f\n\n        print(\"m | k | n | n parts\", end=\"\")\n        for method in methods:\n            print(f\" | {method.__name__.replace('_', ' ')} (µs)\", end=\"\")\n        print(\"\")\n\n        # These are reasonable prefill sizes.\n        ksandpartions = (\n            (4096, (4096, 4096, 4096)),\n            (4096, (4096,)),\n            (4096, (11008, 11008)),\n            (11008, (4096,)),\n        )\n\n        # reasonable ranges for m.\n        for m in [\n            1,\n            2,\n            4,\n            8,\n            10,\n            12,\n            14,\n            16,\n            24,\n            32,\n            48,\n            52,\n            56,\n            64,\n            96,\n            112,\n            128,\n            256,\n            512,\n            1024,\n            1536,\n            2048,\n            3072,\n            4096,\n        ]:\n            print(f\"{m}\", file=sys.__stdout__)\n            for ksp in ksandpartions:\n                run_grid(m, ksp[0], torch.tensor(ksp[1]), nbooks, bits, methods)\n\n        sys.stdout = sys.__stdout__\n\n\ndef run_grid(m: int, k: int, parts: torch.Tensor, nbooks: int, bits: int, methods):\n    # I didn't see visible improvements from increasing these, but feel free",
+      "docstring": "",
+      "line": 23
+    },
+    {
+      "name": "run_timing",
+      "kind": "function",
+      "signature": "def run_timing(\n    num_calls: int, m: int, k: int, parts: torch.Tensor, nbooks: int, bits: int, method\n) -> float:\n    n = int(parts.sum().item())\n\n    device = torch.device(\"cuda:0\")\n\n    input = torch.randn((1, m, k), dtype=torch.float16, device=device)\n\n    code_range = (1 << bits) // 2\n    ingroups = 8\n\n    codes = torch.randint(\n        -code_range,\n        code_range,\n        size=(n, k // ingroups, nbooks),\n        dtype=get_int_dtype(bits),\n        device=device,\n    )\n\n    codebooks = torch.randn(\n        size=(parts.shape[0] * nbooks, 1 << bits, 1, 8),\n        dtype=torch.float16,\n        device=device,\n    )\n\n    scales = torch.randn(size=(n, 1, 1, 1), dtype=torch.float16, device=device)\n\n    # for comparison to just a pytorch mult.\n    weights = torch.randn((n, k), dtype=torch.float16, device=device)\n\n    start_event = torch.cuda.Event(enable_timing=True)\n    end_event = torch.cuda.Event(enable_timing=True)\n\n    start_event.record()\n\n    if method is torch_mult:\n        for i in range(num_calls):\n            torch_mult(input, weights, scales)\n    else:\n        for i in range(num_calls):\n            method(input, codes, codebooks, scales, parts, None)\n\n    end_event.record()\n    end_event.synchronize()\n\n    dur_ms = start_event.elapsed_time(end_event) / num_calls\n    return dur_ms\n\n\nif __name__ == \"__main__\"",
+      "docstring": "",
+      "line": 294
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "os",
+      "sys",
+      "torch",
+      "typing",
+      "vllm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 2,
+    "public_symbols": 2,
+    "classes": 0,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 5,
+    "depth": 0,
+    "complexity_sum": 9
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/kernels/benchmark_aqlm.py"
+}

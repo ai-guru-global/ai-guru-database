@@ -141,8 +141,8 @@ KV Cache优化（2-3×）、Speculative Decoding（2-3×）、INT8/INT4量化（
 - [[概念/LLM/llm-architectures.md|llm-architectures]]
 - [[概念/LLM/transformer-architecture.md|transformer-architecture]]
 - [[10_部署推理/03_推理优化/23_多模态_推理优化|多模态推理优化]]
-- [[05_大模型/07_微调技术/01_Axolotl_深入分析|Axolotl_Deep_Dive]]
-- [[05_大模型/07_微调技术/03_微调技术|Fine_tuning_Techniques]]
+- [[05_大模型/06_微调技术/01_Axolotl_深入分析|Axolotl_Deep_Dive]]
+- [[05_大模型/06_微调技术/03_微调技术|Fine_tuning_Techniques]]
 
 ---
 

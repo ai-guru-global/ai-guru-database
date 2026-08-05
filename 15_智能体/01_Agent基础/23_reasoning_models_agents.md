@@ -3,8 +3,8 @@ title: "推理模型 × Agent: 当慢思考遇上自主行动"
 category: -synthesis
 tags: ["reasoning", "agent", "o1", "deepseek-r1", "mcts", "planning", "synthesis"]
 sources:
-  - "05_大模型/09_推理模型/o1_Class_Reasoning_Models"
-  - "05_大模型/09_推理模型/DeepSeek_R1_Technical_Analysis"
+  - "05_大模型/08_推理模型/o1_Class_Reasoning_Models"
+  - "05_大模型/08_推理模型/DeepSeek_R1_Technical_Analysis"
   - "15_智能体/02_Agent框架/LangChain_Agents_Deep_Dive"
   - "15_智能体/03_Agent工作流/Workflow-in-nutshell"
 created: 2026-06-01
@@ -89,8 +89,8 @@ DeepSeek R1 的开源使得第二条路径尤其可行——开发者可以在�
 
 ## Related
 
-- [[05_大模型/09_推理模型/04_o1_Class_推理模型]]
-- [[05_大模型/09_推理模型/02_索引]]
+- [[05_大模型/08_推理模型/04_o1_Class_推理模型]]
+- [[05_大模型/08_推理模型/INDEX]]
 - [[15_智能体/02_Agent框架/09_LangChain_Agent_深入分析]]
 - [[15_智能体/03_Agent工作流/06_工作流_简明指南]]
 - [[治理/agents-reinforcement-learning]]

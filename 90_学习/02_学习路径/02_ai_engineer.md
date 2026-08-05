@@ -91,7 +91,7 @@ AI 工程师（AI Engineer）是介于 ML 研究员和软件工程师之间的�
 推荐资源:
   - [[00_入门/AI_Fundamentals_for_dummy]]
   - [[01_数学基础/Python_for_AI_Basics]]
-  - [[05_大模型/08_提示工程/Prompt_Engineering_for_dummy]]
+  - [[05_大模型/07_提示工程/Prompt_Engineering_for_dummy]]
   - DeepLearning.AI 短课程
 ```
 
@@ -127,7 +127,7 @@ AI 工程师（AI Engineer）是介于 ML 研究员和软件工程师之间的�
   - [[14_RAG系统/RAG_Systems_for_dummy]]
   - [[15_智能体/01_Agent基础/Agent_Foundations]]
   - [[15_智能体/02_Agent框架/Agent_Frameworks]]
-  - [[05_大模型/07_微调技术/Fine_tuning_Techniques_for_dummy]]
+  - [[05_大模型/06_微调技术/Fine_tuning_Techniques_for_dummy]]
 ```
 
 ### 阶段 3: 工程深化 (3-6 个月)

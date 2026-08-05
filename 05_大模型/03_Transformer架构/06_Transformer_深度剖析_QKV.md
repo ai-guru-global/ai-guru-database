@@ -36,11 +36,11 @@ name_zh: "Transformer 深度剖析：从 QKV 到完整架构"
 
 ## 关联文档
 
-- [[05_大模型/03_Transformer架构/14_Transformer 架构详解]] — Transformer 架构详解（入门版）
+- [[05_大模型/03_Transformer架构/04_Transformer_架构详解]] — Transformer 架构详解（入门版）
 - [[05_大模型/03_Transformer架构/02_Self_注意力_Mechanism]] — Self-Attention 机制
 - [[07_模型训练/01_训练基础/03_LLM_训练_深入分析]] — LLM 训练深度剖析
 - [[10_部署推理/03_推理优化/02_LLM推理_深入分析]] — LLM 推理深度剖析
-- [[05_大模型/05_LLM架构/04_LLM_架构_Evolution]] — LLM 架构演进
+- [[05_大模型/04_LLM架构/04_LLM_架构_Evolution]] — LLM 架构演进
 
 ---
 
@@ -253,7 +253,7 @@ $$\text{RMSNorm}(x) = \frac{x}{\sqrt{\frac{1}{d}\sum x_i^2 + \epsilon}} \cdot \g
 | 8,192 | 67M | 128 MB | 256x |
 | 131,072 | 17.2B | 32 GB | 65,536x |
 
-平方复杂度催生了 [[kv-cache]]、[[05_大模型/05_LLM架构/11_Long_上下文_模型_2026]]、稀疏注意力、[[mixture-of-experts]]、SSM/Mamba 等优化方向，详见 [[10_部署推理/03_推理优化/02_LLM推理_深入分析]]。
+平方复杂度催生了 [[kv-cache]]、[[05_大模型/04_LLM架构/11_Long_上下文_模型_2026]]、稀疏注意力、[[mixture-of-experts]]、SSM/Mamba 等优化方向，详见 [[10_部署推理/03_推理优化/02_LLM推理_深入分析]]。
 
 ---
 

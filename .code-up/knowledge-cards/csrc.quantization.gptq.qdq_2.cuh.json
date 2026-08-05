@@ -1,0 +1,44 @@
+{
+  "id": "csrc.quantization.gptq.qdq_2.cuh",
+  "title": "Qdq 2",
+  "type": "module",
+  "summary": "Module providing shuffle_2bit_16, dequant_2bit_16",
+  "details": "Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "shuffle_2bit_16",
+      "kind": "function",
+      "signature": "shuffle_2bit_16(uint32_t* q, int stride)",
+      "docstring": "",
+      "line": 15
+    },
+    {
+      "name": "dequant_2bit_16",
+      "kind": "function",
+      "signature": "dequant_2bit_16(const uint32_t q_0,\n                                                half2 (&dq)[8], int stride,\n                                                const uint32_t zero)",
+      "docstring": "",
+      "line": 30
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "qdq_util"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 2,
+    "public_symbols": 2,
+    "classes": 0,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/gptq/qdq_2.cuh"
+}

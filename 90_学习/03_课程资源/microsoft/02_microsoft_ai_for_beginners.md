@@ -60,7 +60,7 @@ name_zh: "Microsoft AI For Beginners：12 周初学者课程映射"
 - **经典机器学习** → 微软另有 [ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners)；本库 [[02_机器学习/README]] 章节。
 - **基于认知服务的实际 AI 应用** → 微软 Learn 模块。
 - **特定 ML 云框架**（Azure ML、Microsoft Fabric 等） → 微软 Learn 路径。
-- **会话式 AI 与聊天机器人** → 本库 [[05_大模型/08_提示工程/16_Prompt工程]] 与 [[15_智能体/README]] 章节。
+- **会话式 AI 与聊天机器人** → 本库 [[05_大模型/07_提示工程/16_Prompt工程]] 与 [[15_智能体/README]] 章节。
 - **深度学习背后的深度数学** → 本库 [[01_数学基础/README]] 与 [Deep Learning 教材](https://www.deeplearningbook.org/)。
 
 ---
@@ -71,13 +71,13 @@ name_zh: "Microsoft AI For Beginners：12 周初学者课程映射"
 |------|------|------------|------------------|----------------------|
 | **环境设置** | 00 | [[90_学习/03_课程资源/microsoft/29_L00_课程_配置|课程环境设置]] | [[01_数学基础/08_Python工具包/01_AI_开发_Environment_配置]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/0-course-setup) |
 | **I. 人工智能简介** | 01 | [[90_学习/courses/microsoft/L01_Introduction_and_History_of_AI|人工智能介绍与历史]] | [[00_入门/01_基础入门/02_AI基础]]、[[00_入门/AI_History_Timeline]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/1-Intro) |
-| **II. 符号 AI** | 02 | [[90_学习/03_课程资源/microsoft/27_L02_Knowledge_Representation_and_Expert_系统|知识表示与专家系统]] | [[00_入门/01_基础入门/02_AI基础]]、[[05_大模型/09_推理模型/03_Neuro_Symbolic_and_Formal_Verification_2026]]（符号推理的现代延续） | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/2-Symbolic) |
+| **II. 符号 AI** | 02 | [[90_学习/03_课程资源/microsoft/27_L02_Knowledge_Representation_and_Expert_系统|知识表示与专家系统]] | [[00_入门/01_基础入门/02_AI基础]]、[[05_大模型/08_推理模型/03_Neuro_Symbolic_and_Formal_Verification_2026]]（符号推理的现代延续） | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/2-Symbolic) |
 | **III. 神经网络简介** | 03 | [[90_学习/03_课程资源/microsoft/26_L03_Perceptron|感知器]] | [[03_深度学习/02_神经网络核心/09_神经网络核心]]、[[03_深度学习/02_神经网络核心/12_Your_First_神经网络]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/3-NeuralNetworks/03-Perceptron) |
 | | 04 | [[90_学习/03_课程资源/microsoft/25_L04_Multi_Layered_Perceptron|多层感知器及创建自己的框架]] | [[03_深度学习/02_神经网络核心/09_神经网络核心]]、[[03_深度学习/03_优化方法/02_优化]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/3-NeuralNetworks/04-OwnFramework) |
 | | 05 | [[90_学习/courses/microsoft/L05_Frameworks_and_Overfitting|框架简介与过拟合]] | [[03_深度学习/03_优化方法/02_优化]]、[[02_机器学习/02_监督学习/Supervised_Learning]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/3-NeuralNetworks/05-Frameworks) |
 | **IV. 计算机视觉** | 06 | [[90_学习/courses/microsoft/L06_Intro_to_Computer_Vision|计算机视觉简介与 OpenCV]] | [[04_计算机视觉/README]]、[[04_计算机视觉/02_图像分类与检测/01_图像分类与检测]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/06-IntroCV) |
 | | 07 | [[90_学习/03_课程资源/microsoft/22_L07_CNN_and_架构|卷积神经网络与 CNN 架构]] | [[04_计算机视觉/02_图像分类与检测/01_图像分类与检测]]、[[04_计算机视觉/CV-in-nutshell]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/07-ConvNets) |
-| | 08 | [[90_学习/courses/microsoft/L08_Transfer_Learning_and_Training_Tricks|预训练网络、迁移学习与训练技巧]] | [[04_计算机视觉/02_图像分类与检测/01_图像分类与检测]]、[[05_大模型/07_微调技术/02_微调_策略]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/08-TransferLearning) |
+| | 08 | [[90_学习/courses/microsoft/L08_Transfer_Learning_and_Training_Tricks|预训练网络、迁移学习与训练技巧]] | [[04_计算机视觉/02_图像分类与检测/01_图像分类与检测]]、[[05_大模型/06_微调技术/02_微调_策略]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/08-TransferLearning) |
 | | 09 | [[90_学习/03_课程资源/microsoft/20_L09_Autoencoders_and_VAEs|自编码器与变分自编码器（VAE）]] | [[04_计算机视觉/06_生成模型/02_生成模型]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/09-Autoencoders) |
 | | 10 | [[90_学习/03_课程资源/microsoft/19_L10_GANs_and_Style_Transfer|生成对抗网络与艺术风格迁移]] | [[04_计算机视觉/06_生成模型/02_生成模型]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/10-GANs) |
 | | 11 | [[90_学习/courses/microsoft/L11_Object_Detection|目标检测]] | [[04_计算机视觉/02_图像分类与检测/01_图像分类与检测]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/11-ObjectDetection) |
@@ -87,14 +87,14 @@ name_zh: "Microsoft AI For Beginners：12 周初学者课程映射"
 | | 15 | [[90_学习/courses/microsoft/L15_Language_Modeling|语言建模与自定义嵌入训练]] | [[05_大模型/02_序列模型/02_序列模型]]、[[概念/LLM/llm-data-engineering]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/5-NLP/15-LanguageModeling) |
 | | 16 | [[90_学习/03_课程资源/microsoft/13_L16_Recurrent_神经网络|循环神经网络（RNN）]] | [[05_大模型/02_序列模型/02_序列模型]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/5-NLP/16-RNN) |
 | | 17 | [[90_学习/03_课程资源/microsoft/12_L17_生成式_Recurrent_网络|生成循环网络]] | [[05_大模型/02_序列模型/02_序列模型]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/5-NLP/17-GenerativeNetworks) |
-| | 18 | [[90_学习/03_课程资源/microsoft/11_L18_Transformers_and_BERT|Transformer 与 BERT]] | [[05_大模型/04_Transformer革命/03_Transformer_Revolution]]、[[05_大模型/05_LLM架构/05_LLM架构]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/5-NLP/18-Transformers) |
-| | 19 | [[90_学习/courses/microsoft/L19_Named_Entity_Recognition|命名实体识别（NER）]] | [[05_大模型/02_序列模型/02_序列模型]]、[[05_大模型/07_微调技术/03_微调技术]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/5-NLP/19-NER) |
-| | 20 | [[90_学习/courses/microsoft/L20_Large_Language_Models|大语言模型、提示编程与少样本任务]] | [[05_大模型/05_LLM架构/05_LLM架构]]、[[05_大模型/08_提示工程/16_Prompt工程]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/5-NLP/20-LangModels) |
+| | 18 | [[90_学习/03_课程资源/microsoft/11_L18_Transformers_and_BERT|Transformer 与 BERT]] | [[05_大模型/03_Transformer架构/03_Transformer_Revolution]]、[[05_大模型/04_LLM架构/05_LLM架构]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/5-NLP/18-Transformers) |
+| | 19 | [[90_学习/courses/microsoft/L19_Named_Entity_Recognition|命名实体识别（NER）]] | [[05_大模型/02_序列模型/02_序列模型]]、[[05_大模型/06_微调技术/03_微调技术]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/5-NLP/19-NER) |
+| | 20 | [[90_学习/courses/microsoft/L20_Large_Language_Models|大语言模型、提示编程与少样本任务]] | [[05_大模型/04_LLM架构/05_LLM架构]]、[[05_大模型/07_提示工程/16_Prompt工程]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/5-NLP/20-LangModels) |
 | **VI. 其他 AI 技术** | 21 | [[90_学习/03_课程资源/microsoft/08_L21_Genetic_Algorithms|遗传算法]] | [[06_强化学习/RL-in-nutshell]]、[[02_机器学习/ML-in-nutshell]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/6-Other/21-GeneticAlgorithms) |
 | | 22 | [[90_学习/courses/microsoft/L22_Deep_Reinforcement_Learning|深度强化学习]] | [[06_强化学习/02_深度强化学习/02_深度_RL]]、[[06_强化学习/01_强化学习基础/03_RL基础]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/6-Other/22-DeepRL) |
 | | 23 | [[90_学习/courses/microsoft/L23_Multi_Agent_Systems|多智能体系统]] | [[15_智能体/01_Agent基础/16_AI_Agent]]、[[15_智能体/README]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/6-Other/23-MultiagentSystems) |
 | **VII. AI 伦理** | 24 | [[90_学习/courses/microsoft/L24_AI_Ethics_and_Responsible_AI|AI 伦理与负责任的 AI]] | [[17_伦理安全/Ethics-in-nutshell]]、[[17_伦理安全/AI_Governance_Compliance_2026]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/7-Ethics) |
-| **IX. 附加内容** | 25 | [[90_学习/courses/microsoft/L25_Multi_Modal_Networks|多模态网络、CLIP 与 VQGAN]] | [[概念/Vision/clip]]、[[05_大模型/10_多模态模型/Multimodal_Models_for_dummy]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/X-Extras/X1-MultiModal) |
+| **IX. 附加内容** | 25 | [[90_学习/courses/microsoft/L25_Multi_Modal_Networks|多模态网络、CLIP 与 VQGAN]] | [[概念/Vision/clip]]、[[05_大模型/09_多模态模型/Multimodal_Models_for_dummy]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/X-Extras/X1-MultiModal) |
 
 ---
 

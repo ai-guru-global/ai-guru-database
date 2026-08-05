@@ -1,0 +1,1909 @@
+{
+  "total_cards": 200,
+  "cards": [
+    {
+      "id": "benchmarks.backend_request_func",
+      "title": "Backend Request Func",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.benchmark_dataset",
+      "title": "Benchmark Dataset",
+      "type": "package",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.benchmark_latency",
+      "title": "Benchmark Latency",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.benchmark_long_document_qa_throughput",
+      "title": "Benchmark Long Document Qa Throughput",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.benchmark_prefix_caching",
+      "title": "Benchmark Prefix Caching",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.benchmark_prioritization",
+      "title": "Benchmark Prioritization",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.benchmark_serving",
+      "title": "Benchmark Serving",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.benchmark_serving_structured_output",
+      "title": "Benchmark Serving Structured Output",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.benchmark_throughput",
+      "title": "Benchmark Throughput",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.benchmark_utils",
+      "title": "Benchmark Utils",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.cutlass_benchmarks.sparse_benchmarks",
+      "title": "Sparse Benchmarks",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.cutlass_benchmarks.utils",
+      "title": "Utils",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.cutlass_benchmarks.w8a8_benchmarks",
+      "title": "W8A8 Benchmarks",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.cutlass_benchmarks.weight_shapes",
+      "title": "Weight Shapes",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.disagg_benchmarks.disagg_prefill_proxy_server",
+      "title": "Disagg Prefill Proxy Server",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.disagg_benchmarks.round_robin_proxy",
+      "title": "Round Robin Proxy",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.disagg_benchmarks.visualize_benchmark_results",
+      "title": "Visualize Benchmark Results",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.fused_kernels.layernorm_rms_benchmarks",
+      "title": "Layernorm Rms Benchmarks",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.bench_fp8_gemm",
+      "title": "Bench Fp8 Gemm",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.benchmark_aqlm",
+      "title": "Benchmark Aqlm",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.benchmark_bitblas",
+      "title": "Benchmark Bitblas",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.benchmark_cutlass_fp4_moe",
+      "title": "Benchmark Cutlass Fp4 Moe",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.benchmark_grouped_gemm_cutlass",
+      "title": "Benchmark Grouped Gemm Cutlass",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.benchmark_layernorm",
+      "title": "Benchmark Layernorm",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.benchmark_lora",
+      "title": "Benchmark Lora",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.benchmark_machete",
+      "title": "Benchmark Machete",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.benchmark_marlin",
+      "title": "Benchmark Marlin",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.benchmark_moe",
+      "title": "Benchmark Moe",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.benchmark_moe_permute_unpermute",
+      "title": "Benchmark Moe Permute Unpermute",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.benchmark_paged_attention",
+      "title": "Benchmark Paged Attention",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.benchmark_quant",
+      "title": "Benchmark Quant",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.benchmark_rmsnorm",
+      "title": "Benchmark Rmsnorm",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.benchmark_rope",
+      "title": "Benchmark Rope",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.benchmark_shapes",
+      "title": "Benchmark Shapes",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.benchmark_w8a8_block_fp8",
+      "title": "Benchmark W8A8 Block Fp8",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.deepgemm.benchmark_fp8_block_dense_gemm",
+      "title": "Benchmark Fp8 Block Dense Gemm",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.graph_machete_bench",
+      "title": "Graph Machete Bench",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.utils",
+      "title": "Utils",
+      "type": "package",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.kernels.weight_shapes",
+      "title": "Weight Shapes",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "benchmarks.overheads.benchmark_hashing",
+      "title": "Benchmark Hashing",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "cmake.hipify",
+      "title": "Hipify",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.activation_kernels.cu",
+      "title": "Activation Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.attention.attention_dtypes.h",
+      "title": "Attention Dtypes",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.attention.attention_generic.cuh",
+      "title": "Attention Generic",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.attention.attention_kernels.cuh",
+      "title": "Attention Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.attention.attention_utils.cuh",
+      "title": "Attention Utils",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.attention.dtype_bfloat16.cuh",
+      "title": "Dtype Bfloat16",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.attention.dtype_float16.cuh",
+      "title": "Dtype Float16",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.attention.dtype_float32.cuh",
+      "title": "Dtype Float32",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.attention.dtype_fp8.cuh",
+      "title": "Dtype Fp8",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.attention.merge_attn_states.cu",
+      "title": "Merge Attn States",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.attention.mla.cutlass_mla_entry.cu",
+      "title": "Cutlass Mla Entry",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.attention.mla.cutlass_mla_kernels.cu",
+      "title": "Cutlass Mla Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.attention.paged_attention_v1.cu",
+      "title": "Paged Attention V1",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.attention.paged_attention_v2.cu",
+      "title": "Paged Attention V2",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.attention.vertical_slash_index.cu",
+      "title": "Vertical Slash Index",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cache.h",
+      "title": "Cache",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cache_kernels.cu",
+      "title": "Cache Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.core.math.hpp",
+      "title": "Math",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.core.registration.h",
+      "title": "Registration",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.core.scalar_type.hpp",
+      "title": "Scalar Type",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cpu.activation",
+      "title": "Activation",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cpu.attention",
+      "title": "Attention",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cpu.cache",
+      "title": "Cache",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cpu.cpu_types.hpp",
+      "title": "Cpu Types",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cpu.cpu_types_arm.hpp",
+      "title": "Cpu Types Arm",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cpu.cpu_types_vsx.hpp",
+      "title": "Cpu Types Vsx",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cpu.cpu_types_vxe.hpp",
+      "title": "Cpu Types Vxe",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cpu.cpu_types_x86.hpp",
+      "title": "Cpu Types X86",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cpu.dnnl_helper.hpp",
+      "title": "Dnnl Helper",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cpu.layernorm",
+      "title": "Layernorm",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cpu.mla_decode",
+      "title": "Mla Decode",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cpu.pos_encoding",
+      "title": "Pos Encoding",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cpu.quant",
+      "title": "Quant",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cpu.shm",
+      "title": "Shm",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cpu.torch_bindings",
+      "title": "Torch Bindings",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cpu.utils",
+      "title": "Utils",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cuda_compat.h",
+      "title": "Cuda Compat",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cuda_utils.h",
+      "title": "Cuda Utils",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cuda_utils_kernels.cu",
+      "title": "Cuda Utils Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cuda_view.cu",
+      "title": "Cuda View",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cumem_allocator",
+      "title": "Cumem Allocator",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.custom_all_reduce.cu",
+      "title": "Custom All Reduce",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.custom_all_reduce.cuh",
+      "title": "Custom All Reduce",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.custom_all_reduce_test.cu",
+      "title": "Custom All Reduce Test",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.common",
+      "title": "Common",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.common.hpp",
+      "title": "Common",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.cute_utils.cuh",
+      "title": "Cute Utils",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.epilogue.broadcast_load_epilogue_array_c3x.hpp",
+      "title": "Broadcast Load Epilogue Array C3X",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.epilogue.broadcast_load_epilogue_c2x.hpp",
+      "title": "Broadcast Load Epilogue C2X",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.epilogue.broadcast_load_epilogue_c3x.hpp",
+      "title": "Broadcast Load Epilogue C3X",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.epilogue.scaled_mm_epilogues_c2x.hpp",
+      "title": "Scaled Mm Epilogues C2X",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.epilogue.scaled_mm_epilogues_c3x.hpp",
+      "title": "Scaled Mm Epilogues C3X",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.gemm.collective.collective_builder.hpp",
+      "title": "Collective Builder",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.gemm.collective.fp8_accumulation.hpp",
+      "title": "Fp8 Accumulation",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.gemm.collective.sm90_mma_tma_gmma_ss_warpspecialized_fp8_blockwise_scaling.hpp",
+      "title": "Sm90 Mma Tma Gmma Ss Warpspecialized Fp8 Blockwise Scaling",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.gemm.dispatch_policy.hpp",
+      "title": "Dispatch Policy",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.torch_utils.hpp",
+      "title": "Torch Utils",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.vllm_collective_builder.cuh",
+      "title": "Vllm Collective Builder",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.vllm_custom_types.cuh",
+      "title": "Vllm Custom Types",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.vllm_cutlass_library_extension",
+      "title": "Vllm Cutlass Library Extension",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.vllm_numeric_conversion.cuh",
+      "title": "Vllm Numeric Conversion",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.cutlass_extensions.vllm_type_utils.cuh",
+      "title": "Vllm Type Utils",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.dispatch_utils.h",
+      "title": "Dispatch Utils",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.layernorm_kernels.cu",
+      "title": "Layernorm Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.layernorm_quant_kernels.cu",
+      "title": "Layernorm Quant Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.mamba.causal_conv1d.causal_conv1d.cu",
+      "title": "Causal Conv1D",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.mamba.causal_conv1d.causal_conv1d.h",
+      "title": "Causal Conv1D",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.mamba.causal_conv1d.static_switch.h",
+      "title": "Static Switch",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.mamba.mamba_ssm.selective_scan.h",
+      "title": "Selective Scan",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.mamba.mamba_ssm.selective_scan_fwd.cu",
+      "title": "Selective Scan Fwd",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.mamba.mamba_ssm.static_switch.h",
+      "title": "Static Switch",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.moe.marlin_moe_wna16.generate_kernels",
+      "title": "Generate Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.moe.marlin_moe_wna16.kernel.h",
+      "title": "Kernel",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.moe.marlin_moe_wna16.marlin_template.h",
+      "title": "Marlin Template",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.moe.marlin_moe_wna16.ops.cu",
+      "title": "Ops",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.moe.moe_align_sum_kernels.cu",
+      "title": "Moe Align Sum Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.moe.moe_ops.h",
+      "title": "Moe Ops",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.moe.moe_permute_unpermute_op.cu",
+      "title": "Moe Permute Unpermute Op",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.moe.moe_wna16.cu",
+      "title": "Moe Wna16",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.moe.moe_wna16_utils.h",
+      "title": "Moe Wna16 Utils",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.moe.permute_unpermute_kernels.dispatch.h",
+      "title": "Dispatch",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.moe.permute_unpermute_kernels.moe_permute_unpermute_kernel.cu",
+      "title": "Moe Permute Unpermute Kernel",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.moe.permute_unpermute_kernels.moe_permute_unpermute_kernel.h",
+      "title": "Moe Permute Unpermute Kernel",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.moe.topk_softmax_kernels.cu",
+      "title": "Topk Softmax Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.moe.torch_bindings",
+      "title": "Torch Bindings",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.ops.h",
+      "title": "Ops",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.permute_cols.cu",
+      "title": "Permute Cols",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.pos_encoding_kernels.cu",
+      "title": "Pos Encoding Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.prepare_inputs.advance_step.cu",
+      "title": "Advance Step",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.prepare_inputs.advance_step.cuh",
+      "title": "Advance Step",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.activation_kernels.cu",
+      "title": "Activation Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.aqlm.gemm_kernels.cu",
+      "title": "Gemm Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.awq.dequantize.cuh",
+      "title": "Dequantize",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.awq.gemm_kernels.cu",
+      "title": "Gemm Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.compressed_tensors.int8_quant_kernels.cu",
+      "title": "Int8 Quant Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.c3x.cutlass_gemm_caller.cuh",
+      "title": "Cutlass Gemm Caller",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm.cuh",
+      "title": "Scaled Mm",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_azp_sm90_int8.cu",
+      "title": "Scaled Mm Azp Sm90 Int8",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_blockwise_sm100_fp8.cu",
+      "title": "Scaled Mm Blockwise Sm100 Fp8",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_blockwise_sm100_fp8_dispatch.cuh",
+      "title": "Scaled Mm Blockwise Sm100 Fp8 Dispatch",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_blockwise_sm90_fp8.cu",
+      "title": "Scaled Mm Blockwise Sm90 Fp8",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_blockwise_sm90_fp8_dispatch.cuh",
+      "title": "Scaled Mm Blockwise Sm90 Fp8 Dispatch",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_helper.hpp",
+      "title": "Scaled Mm Helper",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_kernels.hpp",
+      "title": "Scaled Mm Kernels",
+      "type": "file",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_sm100_fp8.cu",
+      "title": "Scaled Mm Sm100 Fp8",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_sm100_fp8_dispatch.cuh",
+      "title": "Scaled Mm Sm100 Fp8 Dispatch",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_sm90_fp8.cu",
+      "title": "Scaled Mm Sm90 Fp8",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_sm90_fp8_dispatch.cuh",
+      "title": "Scaled Mm Sm90 Fp8 Dispatch",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_sm90_int8.cu",
+      "title": "Scaled Mm Sm90 Int8",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_sm90_int8_dispatch.cuh",
+      "title": "Scaled Mm Sm90 Int8 Dispatch",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.moe.get_group_starts.cuh",
+      "title": "Get Group Starts",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.moe.grouped_mm_c3x.cu",
+      "title": "Grouped Mm C3X",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.moe.grouped_mm_c3x.cuh",
+      "title": "Grouped Mm C3X",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.moe.moe_data.cu",
+      "title": "Moe Data",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.scaled_mm_c2x.cu",
+      "title": "Scaled Mm C2X",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.scaled_mm_c2x.cuh",
+      "title": "Scaled Mm C2X",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.scaled_mm_c2x_sm75_dispatch.cuh",
+      "title": "Scaled Mm C2X Sm75 Dispatch",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.scaled_mm_c2x_sm80_dispatch.cuh",
+      "title": "Scaled Mm C2X Sm80 Dispatch",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.scaled_mm_c2x_sm89_fp8_dispatch.cuh",
+      "title": "Scaled Mm C2X Sm89 Fp8 Dispatch",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.scaled_mm_c2x_sm89_int8_dispatch.cuh",
+      "title": "Scaled Mm C2X Sm89 Int8 Dispatch",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.scaled_mm_c3x_sm100.cu",
+      "title": "Scaled Mm C3X Sm100",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.scaled_mm_c3x_sm90.cu",
+      "title": "Scaled Mm C3X Sm90",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.cutlass_w8a8.scaled_mm_entry.cu",
+      "title": "Scaled Mm Entry",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.fp4.nvfp4_blockwise_moe_kernel.cu",
+      "title": "Nvfp4 Blockwise Moe Kernel",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.fp4.nvfp4_experts_quant.cu",
+      "title": "Nvfp4 Experts Quant",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.fp4.nvfp4_quant_entry.cu",
+      "title": "Nvfp4 Quant Entry",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.fp4.nvfp4_quant_kernels.cu",
+      "title": "Nvfp4 Quant Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.fp4.nvfp4_scaled_mm_entry.cu",
+      "title": "Nvfp4 Scaled Mm Entry",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.fp4.nvfp4_scaled_mm_kernels.cu",
+      "title": "Nvfp4 Scaled Mm Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.fp8.amd.quant_utils.cuh",
+      "title": "Quant Utils",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.fp8.common.cu",
+      "title": "Common",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.fp8.common.cuh",
+      "title": "Common",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.fp8.nvidia.quant_utils.cuh",
+      "title": "Quant Utils",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.fused_kernels.fused_layernorm_dynamic_per_token_quant.cu",
+      "title": "Fused Layernorm Dynamic Per Token Quant",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.fused_kernels.layernorm_utils.cuh",
+      "title": "Layernorm Utils",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.fused_kernels.quant_conversions.cuh",
+      "title": "Quant Conversions",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gguf.dequantize.cuh",
+      "title": "Dequantize",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gguf.ggml-common.h",
+      "title": "Ggml Common",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gguf.gguf_kernel.cu",
+      "title": "Gguf Kernel",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gguf.mmq.cuh",
+      "title": "Mmq",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gguf.mmvq.cuh",
+      "title": "Mmvq",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gguf.moe.cuh",
+      "title": "Moe",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gguf.moe_vec.cuh",
+      "title": "Moe Vec",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gguf.vecdotq.cuh",
+      "title": "Vecdotq",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gptq.compat.cuh",
+      "title": "Compat",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gptq.matrix_view.cuh",
+      "title": "Matrix View",
+      "type": "package",
+      "tier": "peripheral",
+      "tags": [
+        "oop",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gptq.q_gemm.cu",
+      "title": "Q Gemm",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gptq.qdq_2.cuh",
+      "title": "Qdq 2",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gptq.qdq_3.cuh",
+      "title": "Qdq 3",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gptq.qdq_4.cuh",
+      "title": "Qdq 4",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gptq.qdq_8.cuh",
+      "title": "Qdq 8",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gptq.qdq_util.cuh",
+      "title": "Qdq Util",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gptq_allspark.allspark_qgemm_w8a16.cu",
+      "title": "Allspark Qgemm W8A16",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gptq_allspark.allspark_repack.cu",
+      "title": "Allspark Repack",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gptq_allspark.allspark_utils.cuh",
+      "title": "Allspark Utils",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "ml-pytorch",
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gptq_marlin.awq_marlin_repack.cu",
+      "title": "Awq Marlin Repack",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gptq_marlin.dequant.h",
+      "title": "Dequant",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gptq_marlin.generate_kernels",
+      "title": "Generate Kernels",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    },
+    {
+      "id": "csrc.quantization.gptq_marlin.gptq_marlin.cu",
+      "title": "Gptq Marlin",
+      "type": "module",
+      "tier": "peripheral",
+      "tags": [
+        "entry-point"
+      ]
+    }
+  ]
+}

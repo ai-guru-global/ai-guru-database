@@ -1,0 +1,33 @@
+{
+  "id": "cmake.hipify",
+  "title": "Hipify",
+  "type": "file",
+  "summary": "File with 0 symbols",
+  "details": "File with 0 symbols",
+  "symbols": [],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "argparse",
+      "os",
+      "shutil",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 0,
+    "public_symbols": 0,
+    "classes": 0,
+    "functions": 0,
+    "internal_deps": 0,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "cmake/hipify.py"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.scaled_mm_c2x_sm75_dispatch.cuh",
+  "title": "Scaled Mm C2X Sm75 Dispatch",
+  "type": "module",
+  "summary": "Module providing in, static_assert, in, in",
+  "details": "Contains 4 functions/methods",
+  "symbols": [
+    {
+      "name": "in",
+      "kind": "function",
+      "signature": "in(256, inf]\n  // - M in (64, 128]\n  // Shared memory required by this Gemm 32768\n  static_assert(std::is_same<InType, int8_t>());\n  using TileShape = typename cutlass::gemm::GemmShape<128, 128, 64>;\n  using WarpShape = typename cutlass::gemm::GemmShape<64, 64, 64>;\n  using InstructionShape = typename cutlass::gemm::GemmShape<8, 8, 16>;\n  using Cutlass2xGemm =\n      cutlass_2x_gemm<cutlass::arch::Sm75, enable_sm75_to_sm80, InType, OutType,\n                      Epilogue, TileShape, WarpShape, InstructionShape, 2>;\n};\n\ntemplate <typename InType, typename OutType,\n          template <typename, typename> typename Epilogue>\nstruct sm75_config_M256 {\n  // M in (128, 256]\n  // Shared memory required by this Gemm 65536\n  static_assert(std::is_same<InType, int8_t>());\n  using TileShape = typename cutlass::gemm::GemmShape<128, 128, 128>;\n  using WarpShape = typename cutlass::gemm::GemmShape<64, 64, 64>;\n  using InstructionShape = typename cutlass::gemm::GemmShape<8, 8, 16>;\n  using Cutlass2xGemm =\n      cutlass_2x_gemm<cutlass::arch::Sm75, enable_sm75_to_sm80, InType, OutType,\n                      Epilogue, TileShape, WarpShape, InstructionShape, 2>;\n};\n\ntemplate <typename InType, typename OutType,\n          template <typename, typename> typename Epilogue>\nstruct sm75_config_M64 {\n  // M in (32, 64]\n  // Shared memory required by this Gemm 49152\n  static_assert(std::is_same<InType, int8_t>());\n  using TileShape = typename cutlass::gemm::GemmShape<64, 128, 128>;\n  using WarpShape = typename cutlass::gemm::GemmShape<64, 64, 64>;\n  using InstructionShape = typename cutlass::gemm::GemmShape<8, 8, 16>;\n  using Cutlass2xGemm =\n      cutlass_2x_gemm<cutlass::arch::Sm75, enable_sm75_to_sm80, InType, OutType,\n                      Epilogue, TileShape, WarpShape, InstructionShape, 2>;\n};\n\ntemplate <typename InType, typename OutType,\n          template <typename, typename> typename Epilogue>\nstruct sm75_config_M32 {\n  // M in [1, 32]\n  // Shared memory required by this Gemm 49152\n  static_assert(std::is_same<InType, int8_t>());\n  using TileShape = typename cutlass::gemm::GemmShape<32, 128, 64>;\n  using WarpShape = typename cutlass::gemm::GemmShape<32, 64, 64>;\n  using InstructionShape = typename cutlass::gemm::GemmShape<8, 8, 16>;\n  using Cutlass2xGemm =\n      cutlass_2x_gemm<cutlass::arch::Sm75, enable_sm75_to_sm80, InType, OutType,\n                      Epilogue, TileShape, WarpShape, InstructionShape, 2>;\n};\n\ntemplate <typename InType, typename OutType,\n          template <typename, typename> typename Epilogue,\n          typename... EpilogueArgs>\ninline void cutlass_gemm_sm75_dispatch(torch::Tensor& out,\n                                       torch::Tensor const& a,\n                                       torch::Tensor const& b,\n                                       EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 16
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same<InType, int8_t>());\n  TORCH_CHECK(a.dtype() == torch::kInt8);\n  TORCH_CHECK(b.dtype() == torch::kInt8);\n\n  using Cutlass2xGemmDefault =\n      typename sm75_config_default<InType, OutType, Epilogue>::Cutlass2xGemm;\n  using Cutlass2xGemmM256 =\n      typename sm75_config_M256<InType, OutType, Epilogue>::Cutlass2xGemm;\n  using Cutlass2xGemmM128 = Cutlass2xGemmDefault;\n  using Cutlass2xGemmM64 =\n      typename sm75_config_M64<InType, OutType, Epilogue>::Cutlass2xGemm;\n  using Cutlass2xGemmM32 =\n      typename sm75_config_M32<InType, OutType, Epilogue>::Cutlass2xGemm;\n\n  // Due to shared memory requirements, some Gemms may fail to run on some\n  // GPUs. As the name indicates, the Fallback Gemm is used as an alternative\n  // in such cases.\n  // sm75_config_default has the least shared-memory requirements.\n  using FallbackGemm = Cutlass2xGemmDefault;\n\n  uint32_t const m = a.size(0);\n  uint32_t const mp2 =\n      std::max(static_cast<uint32_t>(32), next_pow_2(m));  // next power of 2\n  if (mp2 <= 32)",
+      "docstring": "",
+      "line": 76
+    },
+    {
+      "name": "in",
+      "kind": "function",
+      "signature": "in(32, 64]\n    return fallback_cutlass_gemm_caller<Cutlass2xGemmM64, FallbackGemm>(\n        out, a, b, std::forward<EpilogueArgs>(args)...);\n  } else if (mp2 <= 128)",
+      "docstring": "",
+      "line": 105
+    },
+    {
+      "name": "in",
+      "kind": "function",
+      "signature": "in(64, 128]\n    return fallback_cutlass_gemm_caller<Cutlass2xGemmM128, FallbackGemm>(\n        out, a, b, std::forward<EpilogueArgs>(args)...);\n  } else if (mp2 <= 256)",
+      "docstring": "",
+      "line": 109
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "scaled_mm_c2x"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 4,
+    "public_symbols": 4,
+    "classes": 0,
+    "functions": 4,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/scaled_mm_c2x_sm75_dispatch.cuh"
+}

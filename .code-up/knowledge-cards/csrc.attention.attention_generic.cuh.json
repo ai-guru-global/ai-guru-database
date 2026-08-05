@@ -1,0 +1,58 @@
+{
+  "id": "csrc.attention.attention_generic.cuh",
+  "title": "Attention Generic",
+  "type": "module",
+  "summary": "Module providing Copyright, sum, sum, sizeof",
+  "details": "Contains 4 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) 2023, The vLLM team.\n * Copyright (c) 2020-2023, NVIDIA CORPORATION.  All rights reserved.\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n#pragma once\n\n#include <stdint.h>\n\nnamespace vllm {\n\n// A vector type to store Q, K, V elements.\ntemplate <typename T, int VEC_SIZE>\nstruct Vec {};\n\n// A vector type to store FP32 accumulators.\ntemplate <typename T>\nstruct FloatVec {};\n\n// Template vector operations.\ntemplate <typename Acc, typename A, typename B>\ninline __device__ Acc mul(A a, B b);\n\ntemplate <typename T>\ninline __device__ float sum(T v);\n\ntemplate <typename T>\ninline __device__ float dot(T a, T b)",
+      "docstring": "",
+      "line": 3
+    },
+    {
+      "name": "sum",
+      "kind": "function",
+      "signature": "sum(mul<T, T, T>(a, b));\n}\n\ntemplate <typename A, typename T>\ninline __device__ float dot(T a, T b)",
+      "docstring": "",
+      "line": 41
+    },
+    {
+      "name": "sum",
+      "kind": "function",
+      "signature": "sum(mul<A, T, T>(a, b));\n}\n\ntemplate <typename T>\ninline __device__ void zero(T& dst)",
+      "docstring": "",
+      "line": 46
+    },
+    {
+      "name": "sizeof",
+      "kind": "function",
+      "signature": "sizeof(T) / 4;\n  union {\n    T raw;\n    uint32_t words[WORDS];\n  } tmp;\n\n#pragma unroll\n  for (int ii = 0; ii < WORDS; ++ii)",
+      "docstring": "",
+      "line": 52
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "stdint"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 4,
+    "public_symbols": 4,
+    "classes": 0,
+    "functions": 4,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/attention/attention_generic.cuh"
+}

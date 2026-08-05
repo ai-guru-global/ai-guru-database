@@ -228,4 +228,4 @@ quantizer.quantize(save_dir="./quantized-model", quantization_config=qconfig)
 - [[概念/Inference/triton-server|Triton Inference Server]] — 支持 ONNX 后端的推理服务器
 - [[概念/Inference/openvino|OpenVINO]] — 同类跨平台推理优化方案
 - [[概念/Inference/inference-performance|推理性能]] — ONNX Runtime 的性能优化
-- [[05_大模型/12_端侧大模型/01_端侧大模型_深入分析|端侧 LLM 深度解读]] — ONNX 在端侧推理中的应用
+- [[05_大模型/11_端侧大模型/01_端侧大模型_深入分析|端侧 LLM 深度解读]] — ONNX 在端侧推理中的应用

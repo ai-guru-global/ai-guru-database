@@ -25,7 +25,7 @@ name_zh: "穆斯塔法·苏莱曼 2026 动态"
 
 ### 背景回顾
 
-Mustafa Suleyman（1984 年生于英国伦敦，叙利亚裔英国人），牛津大学肄业（19 岁退学从事社会工作）。DeepMind 联合创始人（2010，与 [[19_业界观点/06_Demis_Hassabis_哈萨比斯/04_索引|Hassabis]]、Shane Legg），负责 Applied AI 和 DeepMind Health。2014 年 Google 收购 DeepMind 后转任 Google VP（AI 产品管理，2019-2022）。2022 年联合创立 Inflection AI，推出 Pi 个人助手（"有情商的 AI"）。2023 年出版《The Coming Wave》。2024 年 3 月加入 Microsoft，出任 Microsoft AI CEO，负责 Copilot 和消费者 AI 战略。
+Mustafa Suleyman（1984 年生于英国伦敦，叙利亚裔英国人），牛津大学肄业（19 岁退学从事社会工作）。DeepMind 联合创始人（2010，与 [[19_业界观点/06_Demis_Hassabis_哈萨比斯/INDEX|Hassabis]]、Shane Legg），负责 Applied AI 和 DeepMind Health。2014 年 Google 收购 DeepMind 后转任 Google VP（AI 产品管理，2019-2022）。2022 年联合创立 Inflection AI，推出 Pi 个人助手（"有情商的 AI"）。2023 年出版《The Coming Wave》。2024 年 3 月加入 Microsoft，出任 Microsoft AI CEO，负责 Copilot 和消费者 AI 战略。
 
 #### Suleyman 2026 关键时间线
 
@@ -164,8 +164,8 @@ Suleyman 的核心论点：
 | 风险 | 必须遏制 |
 | 方法 | 多层面 |
 | 速度 | 管理而非阻止 |
-| 与 [[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]] | 共鸣（治理派） |
-| 与 [[19_业界观点/03_Andrew_Ng_吴恩达/03_索引|Ng]] | 对立（务实派） |
+| 与 [[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]] | 共鸣（治理派） |
+| 与 [[19_业界观点/03_Andrew_Ng_吴恩达/INDEX|Ng]] | 对立（务实派） |
 
 ### 关于全球监管
 
@@ -210,7 +210,7 @@ Suleyman 从 Inflection 带来的理念：
 | 时间线 | 5-15 年 |
 | 态度 | 谨慎追求 |
 | 安全 | 前置 |
-| 与 [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] | 接近但更谨慎 |
+| 与 [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] | 接近但更谨慎 |
 
 ---
 
@@ -218,7 +218,7 @@ Suleyman 从 Inflection 带来的理念：
 
 ### 与其他 AI 治理派的对比
 
-| 维度 | Suleyman | [[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]] | [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]] |
+| 维度 | Suleyman | [[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]] | [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]] |
 |------|----------|---------|---------|
 | 方法 | "遏制"框架 | "红绿灯"框架 | 公众警示 |
 | 立场 | 治理+商业 | 治理优先 | 风险优先 |
@@ -228,7 +228,7 @@ Suleyman 从 Inflection 带来的理念：
 
 ### 与其他科技领袖的对比
 
-| 维度 | Suleyman | [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] | [[19_业界观点/06_Demis_Hassabis_哈萨比斯/04_索引|Hassabis]] |
+| 维度 | Suleyman | [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] | [[19_业界观点/06_Demis_Hassabis_哈萨比斯/INDEX|Hassabis]] |
 |------|----------|---------|---------|
 | 2026 角色 | Microsoft AI CEO | OpenAI CEO | Google DeepMind CEO |
 | 背景 | DeepMind 联合创始人 | OpenAI 联合创始人 | DeepMind 联合创始人 |
@@ -291,7 +291,7 @@ Suleyman 从 Inflection 带来的理念：
 
 ### Microsoft 内部的张力
 
-- 与 [[19_业界观点/22_Satya_Nadella_纳德拉/02_索引|Nadella]] 的关系
+- 与 [[19_业界观点/22_Satya_Nadella_纳德拉/INDEX|Nadella]] 的关系
 - 消费者 AI vs 企业 AI 的资源分配
 - 与 OpenAI 的复杂关系
 - Copilot 与 ChatGPT 的竞争
@@ -351,13 +351,13 @@ Suleyman 从 Inflection 带来的理念：
 
 | 人物 | 关系 | 2026 互动 |
 |------|------|-----------|
-| [[19_业界观点/22_Satya_Nadella_纳德拉/02_索引|Nadella]] | 顶头上司 | 紧密合作 |
-| [[19_业界观点/06_Demis_Hassabis_哈萨比斯/04_索引|Hassabis]] | DeepMind 联合创始人 | 前合伙人 |
-| [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] | 竞争对手 | Copilot vs ChatGPT |
-| [[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]] | 治理同盟 | 遏制+红绿灯 |
-| [[19_业界观点/03_Andrew_Ng_吴恩达/03_索引|Ng]] | 立场对立 | 务实 vs 遏制 |
-| [[19_业界观点/18_Mira_Murati_穆拉蒂/02_索引|Murati]] | 行业同行 | 安全+产品 |
-| [[19_业界观点/07_Elon_Musk_马斯克/03_索引|Musk]] | 复杂关系 | 多线交叉 |
+| [[19_业界观点/22_Satya_Nadella_纳德拉/INDEX|Nadella]] | 顶头上司 | 紧密合作 |
+| [[19_业界观点/06_Demis_Hassabis_哈萨比斯/INDEX|Hassabis]] | DeepMind 联合创始人 | 前合伙人 |
+| [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] | 竞争对手 | Copilot vs ChatGPT |
+| [[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]] | 治理同盟 | 遏制+红绿灯 |
+| [[19_业界观点/03_Andrew_Ng_吴恩达/INDEX|Ng]] | 立场对立 | 务实 vs 遏制 |
+| [[19_业界观点/18_Mira_Murati_穆拉蒂/INDEX|Murati]] | 行业同行 | 安全+产品 |
+| [[19_业界观点/07_Elon_Musk_马斯克/INDEX|Musk]] | 复杂关系 | 多线交叉 |
 
 ### Suleyman 在 2026 年的重大演讲
 

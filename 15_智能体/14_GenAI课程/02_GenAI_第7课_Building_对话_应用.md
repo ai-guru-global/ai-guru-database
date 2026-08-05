@@ -276,7 +276,7 @@ DSL 代表领域特定语言（Domain Specific Language）。利用领域特定�
 - [[15_智能体/GenAI_L06_Text_Generation_Apps]]
 - [[15_智能体/14_GenAI课程/03_GenAI_L11_Integrating_with_Function_Calling]]
 - [[15_智能体/01_Agent基础/13_Agentic_设计_模式_AndrewNg]]
-- [[05_大模型/10_多模态模型/Multimodal_Models_for_dummy]]
+- [[05_大模型/09_多模态模型/Multimodal_Models_for_dummy]]
 
 ## 课程导航
 

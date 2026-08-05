@@ -1,0 +1,44 @@
+{
+  "id": "benchmarks.kernels.benchmark_rmsnorm",
+  "title": "Benchmark Rmsnorm",
+  "type": "module",
+  "summary": "Module providing HuggingFaceRMSNorm",
+  "details": "Contains 1 classes: HuggingFaceRMSNorm. Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "HuggingFaceRMSNorm",
+      "kind": "class",
+      "signature": "class HuggingFaceRMSNorm(nn.Module)",
+      "docstring": "",
+      "line": 15
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "argparse",
+      "flashinfer",
+      "itertools",
+      "torch",
+      "typing",
+      "vllm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 2,
+    "public_symbols": 1,
+    "classes": 1,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 6,
+    "depth": 0,
+    "complexity_sum": 1
+  },
+  "tags": [
+    "oop",
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/kernels/benchmark_rmsnorm.py"
+}

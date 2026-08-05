@@ -334,5 +334,5 @@ Claude Code 安全配置
 - [[15_智能体/08_Agent编程工具/02_Aider_深入分析|Aider 深度解析]] — 同类开源 CLI 工具对比
 - [[15_智能体/08_Agent编程工具/08_Windsurf_Cursor_Devin_Dive|Windsurf/Cursor/Devin 对比]] — IDE 类工具对比
 - [[15_智能体/15_课程笔记/Learn_Claude_Code_L01_Agent_Loop|Claude Code L01: Agent Loop]] — Claude Code 课程笔记
-- [[05_大模型/14_全球LLM生态/01_Anthropic_Claude_深入分析|Anthropic Claude 技术深度解析]] — Claude Code 背后的模型
+- [[05_大模型/13_全球LLM生态/01_Anthropic_Claude_深入分析|Anthropic Claude 技术深度解析]] — Claude Code 背后的模型
 - [[15_智能体/08_Agent编程工具/index|Agentic Coding 索引]] — 工具主题导览

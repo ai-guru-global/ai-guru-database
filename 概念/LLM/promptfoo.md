@@ -218,7 +218,7 @@ tests:
 
 ## 相关链接
 
-- [[05_大模型/08_提示工程/16_Prompt工程|Prompt Engineering]] — Promptfoo 测试的对象
+- [[05_大模型/07_提示工程/16_Prompt工程|Prompt Engineering]] — Promptfoo 测试的对象
 - [[概念/LLM/llm-as-judge|LLM as Judge]] — Promptfoo 的评估机制
 - [[概念/General/deepeval|DeepEval]] — 同类 LLM 测试框架对比
 - [[概念/MLOps/ci-cd|CI/CD]] — Promptfoo 集成的 CI 流水线

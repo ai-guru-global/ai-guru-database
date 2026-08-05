@@ -124,7 +124,7 @@ name_zh: "具身智能与机器人"
 |------|----------|------|
 | 入门 | 01_Embodied_AI_2026.md | 理解具身智能全景 |
 | 进阶 | 05_Robot_VLA_训练_流水线_2026.md | 掌握VLA训练流程 |
-| 实践 | Sim_to_Real/01_索引.md | 仿真到现实迁移 |
+| 实践 | Sim_to_Real/INDEX.md | 仿真到现实迁移 |
 | 前沿 | VLA_01_Embodied_AI_2026.md | 最新模型与趋势 |
 
 ## 统计
@@ -168,7 +168,7 @@ name_zh: "具身智能与机器人"
 | 学习VLA训练 | 05_Robot_VLA_训练_流水线_2026.md | ⭐⭐⭐ |
 | 了解人形机器人 | 03_Humanoid_Robot_2026.md | ⭐⭐ |
 | 最新VLA模型 | VLA_01_Embodied_AI_2026.md | ⭐⭐⭐ |
-| Sim-to-Real迁移 | ../Sim_to_Real/01_索引.md | ⭐⭐ |
+| Sim-to-Real迁移 | ../Sim_to_Real/INDEX.md | ⭐⭐ |
 
 ## 附录：检查清单
 

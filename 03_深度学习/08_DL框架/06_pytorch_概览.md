@@ -94,4 +94,4 @@ for x, y in dataloader:
 - [[03_深度学习/README|深度学习]] — 章节主页
 - [[03_深度学习/08_DL框架/07_tensorflow_概览|TensorFlow 概览]] — 竞品对比
 - [[07_模型训练/README|模型训练]] — PyTorch 训练工程实践
-- [[05_大模型/07_微调技术|微调技术]] — Hugging Face + PyTorch 微调
+- [[05_大模型/06_微调技术|微调技术]] — Hugging Face + PyTorch 微调

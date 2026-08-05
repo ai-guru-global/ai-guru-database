@@ -1,0 +1,142 @@
+{
+  "id": "csrc.quantization.compressed_tensors.int8_quant_kernels.cu",
+  "title": "Int8 Quant Kernels",
+  "type": "module",
+  "summary": "Module providing float_to_int8_rn, min, min, volatile, min and 5 more symbols",
+  "details": "Contains 17 functions/methods",
+  "symbols": [
+    {
+      "name": "float_to_int8_rn",
+      "kind": "function",
+      "signature": "float_to_int8_rn(float x)",
+      "docstring": "",
+      "line": 13
+    },
+    {
+      "name": "min",
+      "kind": "function",
+      "signature": "min());\n  static constexpr auto i8_max =\n      static_cast<float>(std::numeric_limits<int8_t>::max());\n\n  // To match the rounding mode of CUDA, we use nearbyint.\n  // It uses the current rounding mode, which is always FE_TONEAREST on HIP.\n  // If that changes in the future, we may need to set the rounding mode\n  // explicitly, either at runtime or compile time.\n  float dst = std::nearbyint(x);\n\n  // saturate\n\n  // See https://github.com/pytorch/pytorch/issues/127666\n  // See https://github.com/llvm/llvm-project/issues/95183\n  // hip-clang std::clamp __glibcxx_assert_fail host function when building on\n  // Arch/gcc14. The following replaces std::clamp usage with similar logic\n  // dst = std::clamp(dst, i8_min, i8_max);\n  dst = (dst < i8_min) ? i8_min : (dst > i8_max) ? i8_max : dst;\n  return static_cast<int8_t>(dst);\n#else\n  // CUDA path\n  uint32_t dst;\n  asm volatile(\"cvt.rni.sat.s8.f32 %0, %1;\" : \"=r\"(dst) : \"f\"(x));\n  return reinterpret_cast<const int8_t&>(dst);\n#endif\n}\n\nstatic inline __device__ int32_t float_to_int32_rn(float x)",
+      "docstring": "",
+      "line": 18
+    },
+    {
+      "name": "min",
+      "kind": "function",
+      "signature": "min();\n  static constexpr auto i32_min_f = static_cast<float>(i32_min);\n  static constexpr auto i32_max = std::numeric_limits<int32_t>::max();\n  static constexpr auto i32_max_f = static_cast<float>(i32_max);\n\n  // To match the rounding mode of CUDA, we use nearbyint.\n  // It uses the current rounding mode, which is always FE_TONEAREST on HIP.\n  // If that changes in the future, we may need to set the rounding mode\n  // explicitly, either at runtime or compile time.\n  float dst = std::nearbyint(x);\n\n  // saturate on the higher end.\n  if (dst >= i32_max_f)",
+      "docstring": "",
+      "line": 51
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\"cvt.rni.sat.s32.f32 %0, %1;\" : \"=r\"(dst) : \"f\"(x));\n  return reinterpret_cast<const int32_t&>(dst);\n#endif\n}\n\nstatic inline __device__ int8_t int32_to_int8(int32_t x)",
+      "docstring": "",
+      "line": 74
+    },
+    {
+      "name": "min",
+      "kind": "function",
+      "signature": "min());\n  static constexpr auto i8_max =\n      static_cast<int32_t>(std::numeric_limits<int8_t>::max());\n\n  // saturate\n\n  // See https://github.com/pytorch/pytorch/issues/127666\n  // See https://github.com/llvm/llvm-project/issues/95183\n  // hip-clang std::clamp __glibcxx_assert_fail host function when building on\n  // Arch/gcc14. The following replaces std::clamp usage with similar logic\n  // int32_t dst = std::clamp(x, i8_min, i8_max);\n  int32_t dst = (x < i8_min) ? i8_min : (x > i8_max) ? i8_max : x;\n  return static_cast<int8_t>(dst);\n#else\n  // CUDA path\n  uint32_t dst;\n  asm volatile(\"cvt.sat.s8.s32 %0, %1;\" : \"=r\"(dst) : \"r\"(x));\n  return reinterpret_cast<const int8_t&>(dst);\n#endif\n}\n\nnamespace vllm {\n\ntemplate <typename scalar_t, typename scale_type>\n__global__ void static_scaled_int8_quant_kernel(\n    scalar_t const* __restrict__ input, int8_t* __restrict__ out,\n    scale_type const* scale_ptr, const int hidden_size)",
+      "docstring": "",
+      "line": 83
+    },
+    {
+      "name": "float_to_int8_rn",
+      "kind": "function",
+      "signature": "float_to_int8_rn(static_cast<float>(input[i]) / scale);\n  }\n}\n\ntemplate <typename scalar_t, typename scale_type, typename azp_type>\n__global__ void static_scaled_int8_azp_quant_kernel(\n    scalar_t const* __restrict__ input, int8_t* __restrict__ out,\n    scale_type const* scale_ptr, azp_type const* azp_ptr,\n    const int hidden_size)",
+      "docstring": "",
+      "line": 119
+    },
+    {
+      "name": "int32_to_int8",
+      "kind": "function",
+      "signature": "int32_to_int8(float_to_int32_rn(val / scale) + azp);\n    out[i] = quant_val;\n  }\n}\n\ntemplate <typename scalar_t, typename scale_type>\n__global__ void dynamic_scaled_int8_quant_kernel(\n    scalar_t const* __restrict__ input, int8_t* __restrict__ out,\n    scale_type* scale, const int hidden_size)",
+      "docstring": "",
+      "line": 139
+    },
+    {
+      "name": "BlockReduce",
+      "kind": "function",
+      "signature": "BlockReduce(reduceStorage).Reduce(absmax_val, cub::Max{}, blockDim.x);\n  __shared__ float block_absmax_val;\n  if (tid == 0)",
+      "docstring": "",
+      "line": 165
+    },
+    {
+      "name": "__syncthreads",
+      "kind": "function",
+      "signature": "__syncthreads();\n\n  float const tmp_scale = 127.0f / block_absmax_val;\n  for (int i = tid; i < hidden_size; i += blockDim.x)",
+      "docstring": "",
+      "line": 171
+    },
+    {
+      "name": "float_to_int8_rn",
+      "kind": "function",
+      "signature": "float_to_int8_rn(static_cast<float>(input[i]) * tmp_scale);\n  }\n}\n\ntemplate <typename scalar_t, typename scale_type, typename azp_type>\n__global__ void dynamic_scaled_int8_azp_quant_kernel(\n    scalar_t const* __restrict__ input, int8_t* __restrict__ out,\n    scale_type* scale, azp_type* azp, const int hidden_size)",
+      "docstring": "",
+      "line": 176
+    },
+    {
+      "name": "min",
+      "kind": "function",
+      "signature": "min();\n  float min_val = std::numeric_limits<float>::max();\n  for (int i = threadIdx.x; i < hidden_size; i += blockDim.x)",
+      "docstring": "",
+      "line": 191
+    },
+    {
+      "name": "std::max",
+      "kind": "function",
+      "signature": "std::max(max_val, val);\n    min_val = std::min(min_val, val);\n  }\n\n  // Reduce the max and min values across the block\n  using BlockReduce = cub::BlockReduce<float, 1024>;\n  __shared__ typename BlockReduce::TempStorage reduceStorage;\n  max_val = BlockReduce(reduceStorage).Reduce(max_val, cub::Max{}, blockDim.x);\n  __syncthreads();  // Make sure min doesn't mess with max shared memory\n  min_val = BlockReduce(reduceStorage).Reduce(min_val, cub::Min{}, blockDim.x);\n\n  __shared__ scale_type scale_sh;\n  __shared__ azp_type azp_sh;\n\n  // Compute the scale and zero point and store them, only on the first thread\n  if (threadIdx.x == 0)",
+      "docstring": "",
+      "line": 195
+    },
+    {
+      "name": "even",
+      "kind": "function",
+      "signature": "even(same as torch.round)\n    auto const azp_float = std::nearbyint(-128.0f - min_val / scale_val);\n    auto const azp_val = static_cast<azp_type>(azp_float);\n\n    // Store the scale and azp into shared and global\n    scale[token_idx] = scale_sh = scale_val;\n    azp[token_idx] = azp_sh = azp_val;\n  }\n\n  // Wait for the scale and azp to be computed\n  __syncthreads();\n\n  float const scale_val = scale_sh;\n  azp_type const azp_val = azp_sh;\n\n  // Quantize the values\n  for (int i = threadIdx.x; i < hidden_size; i += blockDim.x)",
+      "docstring": "",
+      "line": 212
+    },
+    {
+      "name": "int32_to_int8",
+      "kind": "function",
+      "signature": "int32_to_int8(float_to_int32_rn(val / scale_val) + azp_val);\n    out[i] = quant_val;\n  }\n}\n\n}  // namespace vllm\n\nvoid static_scaled_int8_quant(torch::Tensor& out,          // [..., hidden_size]\n                              torch::Tensor const& input,  // [..., hidden_size]\n                              torch::Tensor const& scale,\n                              std::optional<torch::Tensor> const& azp)",
+      "docstring": "",
+      "line": 230
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(input.is_contiguous());\n  TORCH_CHECK(out.is_contiguous());\n  TORCH_CHECK(scale.numel() == 1);\n  TORCH_CHECK(!azp || azp->numel() == 1);\n\n  int const hidden_size = input.size(-1);\n  int const num_tokens = input.numel() / hidden_size;\n  dim3 const grid(num_tokens);\n  dim3 const block(std::min(hidden_size, 1024));\n  const cudaStream_t stream = at::cuda::getCurrentCUDAStream();\n  VLLM_DISPATCH_FLOATING_TYPES(\n      input.scalar_type(), \"static_scaled_int8_quant_kernel\", [&] {\n        if (!azp)",
+      "docstring": "",
+      "line": 241
+    }
+  ],
+  "dependencies": {
+    "internal": [
+      "../../dispatch_utils.h"
+    ],
+    "external": [
+      "ATen",
+      "cmath",
+      "cub",
+      "hipcub",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 17,
+    "public_symbols": 17,
+    "classes": 0,
+    "functions": 17,
+    "internal_deps": 1,
+    "external_deps": 5,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/compressed_tensors/int8_quant_kernels.cu"
+}

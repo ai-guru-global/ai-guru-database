@@ -1,0 +1,135 @@
+{
+  "id": "csrc.prepare_inputs.advance_step.cu",
+  "title": "Advance Step",
+  "type": "module",
+  "summary": "Module providing advance_step_flashattn_kernel, div_ceil, verify_tensor, size, size and 5 more symbols",
+  "details": "Contains 15 functions/methods",
+  "symbols": [
+    {
+      "name": "advance_step_flashattn_kernel",
+      "kind": "function",
+      "signature": "advance_step_flashattn_kernel(\n    int num_seqs, int num_queries, int block_size, long* input_tokens_ptr,\n    long const* sampled_token_ids_ptr, long* input_positions_ptr,\n    int* seq_lens_ptr, long* slot_mapping_ptr, int const* block_tables_ptr,\n    int64_t const block_tables_stride)",
+      "docstring": "",
+      "line": 13
+    },
+    {
+      "name": "div_ceil",
+      "kind": "function",
+      "signature": "div_ceil(num_queries, num_threads);\n\n  if (blockIdx.x >= num_query_blocks)",
+      "docstring": "",
+      "line": 31
+    },
+    {
+      "name": "verify_tensor",
+      "kind": "function",
+      "signature": "verify_tensor(std::string const& name, torch::Tensor const& t,\n                          int64_t const size_0, int64_t const size_1,\n                          c10::ScalarType const type)",
+      "docstring": "",
+      "line": 64
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size(0) == size_0;\n  }\n\n  bool size_1_cond = true;\n  if (size_1 != -1)",
+      "docstring": "",
+      "line": 71
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size(1) == size_1;\n  }\n\n  bool is_contiguous = t.is_contiguous();\n  bool same_type = t.dtype() == type;\n\n  bool pass = size_0_cond && size_1_cond && is_contiguous && same_type;\n  if (!pass)",
+      "docstring": "",
+      "line": 76
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(false, \"tensor: name = \", name, \", shape = \", t.sizes(),\n                \" is_cont = \", t.is_contiguous(), \", type = \", t.dtype(),\n                \" is not as expected: shape = [\", size_0, \", \", size_1,\n                \"], type = \", type);\n  }\n}\n\n/// each thread processes a block per query\n__global__ void advance_step_flashinfer_kernel(\n    int num_threads, int num_seqs, int num_queries, int block_size,\n    long* input_tokens_ptr, long const* sampled_token_ids_ptr,\n    long* input_positions_ptr, int* seq_lens_ptr, long* slot_mapping_ptr,\n    int const* block_tables_ptr, int64_t const block_tables_stride,\n    int* paged_kv_last_page_len_ptr, int* block_table_bound_ptr)",
+      "docstring": "",
+      "line": 83
+    },
+    {
+      "name": "div_ceil",
+      "kind": "function",
+      "signature": "div_ceil(num_queries, num_threads);\n\n  if (blockIdx.x < num_query_blocks)",
+      "docstring": "",
+      "line": 108
+    },
+    {
+      "name": "div_ceil",
+      "kind": "function",
+      "signature": "div_ceil(next_seq_len, block_size);\n    }\n  }\n}\n\n__global__ void advance_step_flashinfer_indptr_kernel(\n    int num_threads, int num_seqs, int num_queries, int* paged_kv_indptr_ptr,\n    int* block_table_bound_ptr)",
+      "docstring": "",
+      "line": 139
+    },
+    {
+      "name": "advance_step_flashinfer_indices_kernel",
+      "kind": "function",
+      "signature": "advance_step_flashinfer_indices_kernel(\n    int num_seqs, int num_queries, int const* block_tables_ptr,\n    int64_t const max_num_blocks_per_seq, int* paged_kv_indices_ptr,\n    int* paged_kv_indptr_ptr, int* block_table_bound_ptr)",
+      "docstring": "",
+      "line": 159
+    },
+    {
+      "name": "stride",
+      "kind": "function",
+      "signature": "stride(0)\n  int tid = blockIdx.x * blockDim.x + threadIdx.x;\n\n  // when cuda graphs are enabled, paged_kv_indptr tensor\n  // has to be updated for the padded queries\n  // tid represents a query# for paged_kv_indptr tensor\n  if (num_queries < tid && tid <= num_seqs)",
+      "docstring": "",
+      "line": 165
+    },
+    {
+      "name": "advance_step_flashattn",
+      "kind": "function",
+      "signature": "advance_step_flashattn(int num_seqs, int num_queries, int block_size,\n                            torch::Tensor& input_tokens,       // type: long\n                            torch::Tensor& sampled_token_ids,  // type: long\n                            torch::Tensor& input_positions,    // type: long\n                            torch::Tensor& seq_lens,           // type: int\n                            torch::Tensor& slot_mapping,       // type: long\n                            torch::Tensor& block_tables)",
+      "docstring": "",
+      "line": 190
+    },
+    {
+      "name": "printf",
+      "kind": "function",
+      "signature": "printf(\"advance_step_flashattn:\\n\");\n    printf(\"  num_seqs = %d\\n\", num_seqs);\n    printf(\"  num_queries = %d\\n\", num_queries);\n    printf(\"  block_size = %d\\n\", block_size);\n  }\n  // Verify all tensors\n  verify_tensor(\"input_tokens\", input_tokens, num_seqs, -1, at::kLong);\n  verify_tensor(\"sampled_token_ids\", sampled_token_ids, num_queries, 1,\n                at::kLong);\n  verify_tensor(\"input_positions\", input_positions, num_seqs, -1, at::kLong);\n  verify_tensor(\"seq_lens\", seq_lens, num_seqs, -1, at::kInt);\n  verify_tensor(\"slot_mapping\", slot_mapping, num_seqs, -1, at::kLong);\n  verify_tensor(\"block_tables\", block_tables, num_seqs, -1, at::kInt);\n\n  int dev = sampled_token_ids.get_device();\n  cudaStream_t stream = at::cuda::getCurrentCUDAStream(dev);\n\n  int blocks;\n  cudaDeviceGetAttribute(&blocks, cudaDevAttrMultiProcessorCount, dev);\n\n  advance_step_flashattn_kernel<max_threads>\n      <<<blocks, max_threads, 0, stream>>>(\n          num_seqs, num_queries, block_size,\n          reinterpret_cast<long*>(input_tokens.data_ptr()),\n          reinterpret_cast<long const*>(sampled_token_ids.data_ptr()),\n          reinterpret_cast<long*>(input_positions.data_ptr()),\n          reinterpret_cast<int*>(seq_lens.data_ptr()),\n          reinterpret_cast<long*>(slot_mapping.data_ptr()),\n          reinterpret_cast<int const*>(block_tables.data_ptr()),\n          block_tables.stride(0));\n}\n\nvoid advance_step_flashinfer(\n    int num_seqs, int num_queries, int block_size,\n    torch::Tensor& input_tokens,            // type: long\n    torch::Tensor& sampled_token_ids,       // type: long\n    torch::Tensor& input_positions,         // type: long\n    torch::Tensor& seq_lens,                // type: int\n    torch::Tensor& slot_mapping,            // type: long\n    torch::Tensor& block_tables,            // type: int\n    torch::Tensor& paged_kv_indices,        // type: int\n    torch::Tensor& paged_kv_indptr,         // type: int\n    torch::Tensor& paged_kv_last_page_len,  // type: int\n    torch::Tensor& block_table_bound)",
+      "docstring": "",
+      "line": 200
+    },
+    {
+      "name": "printf",
+      "kind": "function",
+      "signature": "printf(\"advance_step_flashinfer:\\n\");\n    printf(\"  num_seqs = %d\\n\", num_seqs);\n    printf(\"  num_queries = %d\\n\", num_queries);\n    printf(\"  block_size = %d\\n\", block_size);\n    printf(\"  block_tables.stride(0) = %zu\\n\", block_tables.stride(0));\n  }\n  // Verify all tensors\n  verify_tensor(\"input_tokens\", input_tokens, num_seqs, -1, at::kLong);\n  // verify_tensor(\"sampled_token_ids\", sampled_token_ids, num_queries, 1,\n  //               at::kLong);\n  verify_tensor(\"input_positions\", input_positions, num_seqs, -1, at::kLong);\n  verify_tensor(\"seq_lens\", seq_lens, num_seqs, -1, at::kInt);\n  verify_tensor(\"slot_mapping\", slot_mapping, num_seqs, -1, at::kLong);\n  verify_tensor(\"block_tables\", block_tables, num_seqs, -1, at::kInt);\n\n  verify_tensor(\"paged_kv_indices\", paged_kv_indices, -1, -1, at::kInt);\n  verify_tensor(\"paged_kv_indptr\", paged_kv_indptr, num_seqs + 1, -1, at::kInt);\n  verify_tensor(\"paged_kv_last_page_len\", paged_kv_last_page_len, num_seqs, -1,\n                at::kInt);\n\n  verify_tensor(\"block_table_bound\", block_table_bound, num_seqs, -1, at::kInt);\n\n  int dev = sampled_token_ids.get_device();\n  cudaStream_t stream = at::cuda::getCurrentCUDAStream(dev);\n\n  int blocks;\n  int threads;\n  cudaDeviceGetAttribute(&blocks, cudaDevAttrMultiProcessorCount, dev);\n  cudaDeviceGetAttribute(&threads, cudaDevAttrMaxThreadsPerBlock, dev);\n\n  maybe_unused int block_tables_stride = block_tables.stride(0);\n  TORCH_CHECK((blocks * threads > num_queries),\n              \"multi-step: not enough threads to map to num_queries = \",\n              num_queries, \" block_tables.stride(0) = \", block_tables.stride(0),\n              \" blocks = \", blocks, \" max_threads = \", threads);\n  if (logging)",
+      "docstring": "",
+      "line": 246
+    },
+    {
+      "name": "printf",
+      "kind": "function",
+      "signature": "printf(\"launching kernels with %d blocks and %d threads\\n\", blocks,\n           threads);\n  }\n  advance_step_flashinfer_kernel<<<blocks, threads, 0, stream>>>(\n      threads, num_seqs, num_queries, block_size,\n      reinterpret_cast<long*>(input_tokens.data_ptr()),\n      reinterpret_cast<long const*>(sampled_token_ids.data_ptr()),\n      reinterpret_cast<long*>(input_positions.data_ptr()),\n      reinterpret_cast<int*>(seq_lens.data_ptr()),\n      reinterpret_cast<long*>(slot_mapping.data_ptr()),\n      reinterpret_cast<int const*>(block_tables.data_ptr()),\n      block_tables.stride(0),\n      reinterpret_cast<int*>(paged_kv_last_page_len.data_ptr()),\n      reinterpret_cast<int*>(block_table_bound.data_ptr()));\n\n  advance_step_flashinfer_indptr_kernel<<<blocks, threads, 0, stream>>>(\n      threads, num_seqs, num_queries,\n      reinterpret_cast<int*>(paged_kv_indptr.data_ptr()),\n      reinterpret_cast<int*>(block_table_bound.data_ptr()));\n\n  advance_step_flashinfer_indices_kernel<<<blocks, threads, 0, stream>>>(\n      num_seqs, num_queries,\n      reinterpret_cast<int const*>(block_tables.data_ptr()),\n      block_tables.stride(0),\n      reinterpret_cast<int*>(paged_kv_indices.data_ptr()),\n      reinterpret_cast<int*>(paged_kv_indptr.data_ptr()),\n      reinterpret_cast<int*>(block_table_bound.data_ptr()));\n}\n\n}  // namespace prepare_inputs\n\nvoid advance_step_flashattn(int64_t num_seqs, int64_t num_queries,\n                            int64_t block_size, torch::Tensor& input_tokens,\n                            torch::Tensor& sampled_token_ids,\n                            torch::Tensor& input_positions,\n                            torch::Tensor& seq_lens,\n                            torch::Tensor& slot_mapping,\n                            torch::Tensor& block_tables)",
+      "docstring": "",
+      "line": 282
+    },
+    {
+      "name": "prepare_inputs::advance_step_flashattn",
+      "kind": "function",
+      "signature": "prepare_inputs::advance_step_flashattn(\n      num_seqs, num_queries, block_size, input_tokens, sampled_token_ids,\n      input_positions, seq_lens, slot_mapping, block_tables);\n}\n\nvoid advance_step_flashinfer(\n    int64_t num_seqs, int64_t num_queries, int64_t block_size,\n    torch::Tensor& input_tokens, torch::Tensor& sampled_token_ids,\n    torch::Tensor& input_positions, torch::Tensor& seq_lens,\n    torch::Tensor& slot_mapping, torch::Tensor& block_tables,\n    torch::Tensor& paged_kv_indices, torch::Tensor& paged_kv_indptr,\n    torch::Tensor& paged_kv_last_page_len, torch::Tensor& block_table_bound)",
+      "docstring": "",
+      "line": 320
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "advance_step"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 15,
+    "public_symbols": 15,
+    "classes": 0,
+    "functions": 15,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/prepare_inputs/advance_step.cu"
+}

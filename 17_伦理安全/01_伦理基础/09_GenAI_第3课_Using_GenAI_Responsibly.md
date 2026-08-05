@@ -346,7 +346,7 @@ for item in result.items:
 ## 扩展阅读
 
 - [[90_学习/03_课程资源/microsoft/01_microsoft_genai_for_beginners]] — 课程总览与章节映射
-- [[05_大模型/08_提示工程/GenAI_L04_Prompt_Engineering_Fundamentals]] — 第 4 课：提示工程基础
+- [[05_大模型/07_提示工程/GenAI_L04_Prompt_Engineering_Fundamentals]] — 第 4 课：提示工程基础
 - [[17_伦理安全/Ethics-in-nutshell]] — AI 伦理概述
 - [[17_伦理安全/07_AI安全2026/README]] — AI 安全体系
 - [[17_伦理安全/AI_Governance_Compliance_2026]] — AI 治理与合规
@@ -355,4 +355,4 @@ for item in result.items:
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[05_大模型/01_LLM基础/GenAI_L02_Exploring_and_Comparing_LLMs|L02 探索比较LLM]] | [[05_大模型/08_提示工程/GenAI_L04_Prompt_Engineering_Fundamentals|L04 提示工程基础]] |
+| [[05_大模型/01_LLM基础/GenAI_L02_Exploring_and_Comparing_LLMs|L02 探索比较LLM]] | [[05_大模型/07_提示工程/GenAI_L04_Prompt_Engineering_Fundamentals|L04 提示工程基础]] |

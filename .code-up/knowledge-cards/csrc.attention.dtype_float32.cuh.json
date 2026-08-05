@@ -1,0 +1,136 @@
+{
+  "id": "csrc.attention.dtype_float32.cuh",
+  "title": "Dtype Float32",
+  "type": "module",
+  "summary": "Module providing Copyright, add, add, add, mul and 5 more symbols",
+  "details": "Contains 33 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) 2023, The vLLM team.\n * Copyright (c) 2020-2023, NVIDIA CORPORATION.  All rights reserved.\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n#pragma once\n\n#include \"attention_generic.cuh\"\n\n#include <stdint.h>\n\nnamespace vllm {\n\n// Define custom FP32 vector data types.\nstruct Float4_ {\n  float2 x;\n  float2 y;\n};\n\nstruct Float8_ {\n  float2 x;\n  float2 y;\n  float2 z;\n  float2 w;\n};\n\n// FP32 vector types for Q, K, V.\ntemplate <>\nstruct Vec<float, 1> {\n  using Type = float;\n};\ntemplate <>\nstruct Vec<float, 2> {\n  using Type = float2;\n};\ntemplate <>\nstruct Vec<float, 4> {\n  using Type = float4;\n};\n\n// FP32 accumulator vector types corresponding to Vec.\ntemplate <>\nstruct FloatVec<float> {\n  using Type = float;\n};\ntemplate <>\nstruct FloatVec<float2> {\n  using Type = float2;\n};\ntemplate <>\nstruct FloatVec<float4> {\n  using Type = float4;\n};\n\n// Vector addition.\ninline __device__ float add(float a, float b)",
+      "docstring": "",
+      "line": 5
+    },
+    {
+      "name": "add",
+      "kind": "function",
+      "signature": "add(float2 a, float2 b)",
+      "docstring": "",
+      "line": 71
+    },
+    {
+      "name": "add",
+      "kind": "function",
+      "signature": "add(a.x, b.x);\n  c.y = add(a.y, b.y);\n  return c;\n}\n\ninline __device__ float4 add(float4 a, float4 b)",
+      "docstring": "",
+      "line": 75
+    },
+    {
+      "name": "add",
+      "kind": "function",
+      "signature": "add(a.x, b.x);\n  c.y = add(a.y, b.y);\n  c.z = add(a.z, b.z);\n  c.w = add(a.w, b.w);\n  return c;\n}\n\n// Vector multiplication.\ntemplate <>\ninline __device__ float mul<float, float>(float a, float b)",
+      "docstring": "",
+      "line": 82
+    },
+    {
+      "name": "mul",
+      "kind": "function",
+      "signature": "mul(float2 a, float2 b)",
+      "docstring": "",
+      "line": 93
+    },
+    {
+      "name": "mul",
+      "kind": "function",
+      "signature": "mul(float a, float2 b)",
+      "docstring": "",
+      "line": 101
+    },
+    {
+      "name": "mul",
+      "kind": "function",
+      "signature": "mul(float4 a, float4 b)",
+      "docstring": "",
+      "line": 109
+    },
+    {
+      "name": "mul",
+      "kind": "function",
+      "signature": "mul(float a, float4 b)",
+      "docstring": "",
+      "line": 119
+    },
+    {
+      "name": "fma",
+      "kind": "function",
+      "signature": "fma(float a, float b, float c)",
+      "docstring": "",
+      "line": 131
+    },
+    {
+      "name": "fma",
+      "kind": "function",
+      "signature": "fma(float2 a, float2 b, float2 c)",
+      "docstring": "",
+      "line": 132
+    },
+    {
+      "name": "fma",
+      "kind": "function",
+      "signature": "fma(a.x, b.x, c.x);\n  d.y = fma(a.y, b.y, c.y);\n  return d;\n}\n\ninline __device__ float2 fma(float a, float2 b, float2 c)",
+      "docstring": "",
+      "line": 136
+    },
+    {
+      "name": "fma",
+      "kind": "function",
+      "signature": "fma(a, b.x, c.x);\n  d.y = fma(a, b.y, c.y);\n  return d;\n}\n\ninline __device__ float4 fma(float4 a, float4 b, float4 c)",
+      "docstring": "",
+      "line": 143
+    },
+    {
+      "name": "fma",
+      "kind": "function",
+      "signature": "fma(a.x, b.x, c.x);\n  d.y = fma(a.y, b.y, c.y);\n  d.z = fma(a.z, b.z, c.z);\n  d.w = fma(a.w, b.w, c.w);\n  return d;\n}\n\ninline __device__ float4 fma(float a, float4 b, float4 c)",
+      "docstring": "",
+      "line": 150
+    },
+    {
+      "name": "fma",
+      "kind": "function",
+      "signature": "fma(a, b.x, c.x);\n  d.y = fma(a, b.y, c.y);\n  d.z = fma(a, b.z, c.z);\n  d.w = fma(a, b.w, c.w);\n  return d;\n}\n\ninline __device__ Float4_ fma(float a, Float4_ b, Float4_ c)",
+      "docstring": "",
+      "line": 159
+    },
+    {
+      "name": "fma",
+      "kind": "function",
+      "signature": "fma(a, b.x, c.x);\n  d.y = fma(a, b.y, c.y);\n  return d;\n}\n\ninline __device__ Float8_ fma(float a, Float8_ b, Float8_ c)",
+      "docstring": "",
+      "line": 168
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "attention_generic",
+      "stdint"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 33,
+    "public_symbols": 33,
+    "classes": 0,
+    "functions": 33,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/attention/dtype_float32.cuh"
+}

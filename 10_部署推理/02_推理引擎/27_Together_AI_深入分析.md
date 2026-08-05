@@ -442,6 +442,6 @@ Together AI 生产使用 checklist
 - [[10_部署推理/02_推理引擎/05_Fireworks_AI_深入分析.md|Fireworks_AI_Deep_Dive]]
 - [[10_部署推理/02_推理引擎/29_vLLM_深入分析.md|vLLM_Deep_Dive]]
 - [[10_部署推理/02_推理引擎/17_LLM_推理引擎_选型_指南.md|LLM_Inference_Engine_Selection_Guide]]
-- [[10_部署推理/06_成本管理/03_LLM_成本优化|LLM_Cost_Optimization]]
+- [[10_部署推理/06_成本管理/01_LLM_成本优化|LLM_Cost_Optimization]]
 - [[12_架构基建/11_AI网关/09_LiteLLM_深入分析|LiteLLM_Deep_Dive]]
 - [[12_架构基建/11_AI网关/01_AI网关_2026|AI_Gateway_2026]]

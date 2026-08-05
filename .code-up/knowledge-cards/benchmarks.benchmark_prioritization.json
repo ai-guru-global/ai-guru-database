@@ -1,0 +1,51 @@
+{
+  "id": "benchmarks.benchmark_prioritization",
+  "title": "Benchmark Prioritization",
+  "type": "module",
+  "summary": "Module providing get_random_flag, sample_requests",
+  "details": "Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "get_random_flag",
+      "kind": "function",
+      "signature": "def get_random_flag()",
+      "docstring": "",
+      "line": 19
+    },
+    {
+      "name": "sample_requests",
+      "kind": "function",
+      "signature": "def sample_requests(\n    dataset_path: str,\n    num_requests: int,\n    tokenizer: PreTrainedTokenizerBase,\n    fixed_output_len: Optional[int],\n) -> list[tuple[str, int, int, int]]:\n    if fixed_output_len is not None and fixed_output_len < 4:\n        raise ValueError(\"output_len too small\")\n\n    # Load the dataset.\n    with open(dataset_path) as f:\n        dataset = json.load(f)\n    # Filter out the conversations with less than 2 turns.\n    dataset = [data for data in dataset if len(data[\"conversations\"]) >= 2]\n    # Only keep the first two turns of each conversation.\n    dataset = [\n        (data[\"conversations\"][0][\"value\"], data[\"conversations\"][1][\"value\"])\n        for data in dataset\n    ]\n\n    # Shuffle the dataset.\n    random.shuffle(dataset)\n\n    # Filter out sequences that are too long or too short\n    filtered_dataset: list[tuple[str, int, int]] = []\n    for i in range(len(dataset)):\n        if len(filtered_dataset) == num_requests:\n            break\n\n        # Tokenize the prompts and completions.\n        prompt = dataset[i][0]\n        prompt_token_ids = tokenizer(prompt).input_ids\n        completion = dataset[i][1]\n        completion_token_ids = tokenizer(completion).input_ids\n        prompt_len = len(prompt_token_ids)\n        output_len = (\n            len(completion_token_ids) if fixed_output_len is None else fixed_output_len\n        )\n        if prompt_len < 4 or output_len < 4:\n            # Prune too short sequences.\n            continue\n        if prompt_len > 1024 or prompt_len + output_len > 2048:\n            # Prune too long sequences.\n            continue\n\n        priority = get_random_flag()\n\n        filtered_dataset.append((prompt, prompt_len, output_len, priority))\n\n    return filtered_dataset\n\n\ndef run_vllm(\n    requests: list[tuple[str, int, int]],\n    n: int,\n    engine_args: EngineArgs,\n    disable_detokenize: bool = False,\n) -> float:\n    from vllm import LLM, SamplingParams\n\n    llm = LLM(**dataclasses.asdict(engine_args))\n\n    assert all(\n        llm.llm_engine.model_config.max_model_len >= (request[1] + request[2])\n        for request in requests\n    ), (\n        \"Please ensure that max_model_len is greater than the sum of\"\n        \" input_len and output_len for all requests.\"\n    )\n\n    # Add the requests to the engine.\n    prompts = []\n    sampling_params = []\n    priority = []\n    for prompt, _, output_len, _priority in requests:\n        prompts.append(prompt)\n        priority.append(_priority)\n        sampling_params.append(\n            SamplingParams(\n                n=n,\n                temperature=1.0,\n                top_p=1.0,\n                ignore_eos=True,\n                max_tokens=output_len,\n                detokenize=not disable_detokenize,\n            )\n        )\n\n    start = time.perf_counter()\n    llm.generate(prompts, sampling_params, priority=priority, use_tqdm=True)\n    end = time.perf_counter()\n    return end - start\n\n\ndef main(args: argparse.Namespace):\n    print(args)\n    random.seed(args.seed)\n\n    # Sample the requests.\n    tokenizer = AutoTokenizer.from_pretrained(\n        args.tokenizer, trust_remote_code=args.trust_remote_code\n    )\n    if args.dataset is None:\n        # Synthesize a prompt with the given input length.\n        prompt = \"hi\" * (args.input_len - 1)\n        requests = [\n            (prompt, args.input_len, args.output_len, get_random_flag())\n            for _ in range(args.num_prompts)\n        ]\n    else:\n        requests = sample_requests(\n            args.dataset, args.num_prompts, tokenizer, args.output_len\n        )\n\n    if args.backend == \"vllm\":\n        elapsed_time = run_vllm(\n            requests, args.n, EngineArgs.from_cli_args(args), args.disable_detokenize\n        )\n    else:\n        raise ValueError(f\"Unknown backend: {args.backend}\")\n    total_num_tokens = sum(\n        prompt_len + output_len for _, prompt_len, output_len, priority in requests\n    )\n    print(\n        f\"Throughput: {len(requests) / elapsed_time:.2f} requests/s, \"\n        f\"{total_num_tokens / elapsed_time:.2f} tokens/s\"\n    )\n\n    # Output JSON results if specified\n    if args.output_json:\n        results = {\n            \"elapsed_time\": elapsed_time,\n            \"num_requests\": len(requests),\n            \"total_num_tokens\": total_num_tokens,\n            \"requests_per_second\": len(requests) / elapsed_time,\n            \"tokens_per_second\": total_num_tokens / elapsed_time,\n        }\n        with open(args.output_json, \"w\") as f:\n            json.dump(results, f, indent=4)\n\n\nif __name__ == \"__main__\":\n    parser = FlexibleArgumentParser(description=\"Benchmark the throughput.\")\n    parser.add_argument(\n        \"--backend\", type=str, choices=[\"vllm\", \"hf\", \"mii\"], default=\"vllm\"\n    )\n    parser.add_argument(\n        \"--dataset\", type=str, default=None, help=\"Path to the dataset.\"\n    )\n    parser.add_argument(\n        \"--input-len\",\n        type=int,\n        default=None,\n        help=\"Input prompt length for each request\",\n    )\n    parser.add_argument(\n        \"--output-len\",\n        type=int,\n        default=None,\n        help=\"Output length for each request. Overrides the \"\n        \"output length from the dataset.\",\n    )\n    parser.add_argument(\n        \"--n\", type=int, default=1, help=\"Number of generated sequences per prompt.\"\n    )\n    parser.add_argument(\n        \"--num-prompts\", type=int, default=200, help=\"Number of prompts to process.\"\n    )\n    parser.add_argument(\n        \"--output-json\",\n        type=str,\n        default=None,\n        help=\"Path to save the throughput results in JSON format.\",\n    )\n    parser.add_argument(\n        \"--disable-detokenize\",\n        action=\"store_true\",\n        help=(\n            \"Do not detokenize responses (i.e. do not include \"\n            \"detokenization time in the latency measurement)\"\n        ),\n    )\n\n    parser = EngineArgs.add_cli_args(parser)\n    args = parser.parse_args()\n    if args.tokenizer is None:\n        args.tokenizer = args.model\n    if args.dataset is None:\n        assert args.input_len is not None\n        assert args.output_len is not None\n    else",
+      "docstring": "",
+      "line": 23
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "argparse",
+      "dataclasses",
+      "json",
+      "random",
+      "time",
+      "transformers",
+      "typing",
+      "vllm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 2,
+    "public_symbols": 2,
+    "classes": 0,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 8,
+    "depth": 0,
+    "complexity_sum": 17
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/benchmark_prioritization.py"
+}

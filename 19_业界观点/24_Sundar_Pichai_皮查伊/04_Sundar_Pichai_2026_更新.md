@@ -214,7 +214,7 @@ Pichai 的立场：
 - 不回避 AGI 话题
 - 强调"负责任地"追求
 - Gemini 是通往 AGI 的步骤
-- 比 [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] 更谨慎，比 [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]] 更乐观
+- 比 [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] 更谨慎，比 [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]] 更乐观
 
 ### 关于竞争
 
@@ -232,7 +232,7 @@ Pichai 的立场：
 
 ### 与其他科技 CEO 的对比
 
-| 维度 | Pichai | [[19_业界观点/22_Satya_Nadella_纳德拉/02_索引|Nadella]] | [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] |
+| 维度 | Pichai | [[19_业界观点/22_Satya_Nadella_纳德拉/INDEX|Nadella]] | [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] |
 |------|--------|---------|---------|
 | 2026 角色 | Google/Alphabet CEO | Microsoft CEO | OpenAI CEO |
 | 旗舰 AI | Gemini 3 | Copilot+GPT-5 | GPT-5 |
@@ -325,13 +325,13 @@ Pichai 的影响呈现为四个层面：
 
 | 人物 | 关系 | 2026 互动 |
 |------|------|-----------|
-| [[19_业界观点/06_Demis_Hassabis_哈萨比斯/04_索引|Hassabis]] | 下属（DeepMind） | 紧密合作 |
-| [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] | 竞争对手 | 正面竞争 |
-| [[19_业界观点/22_Satya_Nadella_纳德拉/02_索引|Nadella]] | 竞争对手 | 云+AI 竞争 |
-| [[19_业界观点/07_Elon_Musk_马斯克/03_索引|Musk]] | 竞争对手 | 多线竞争 |
-| [[19_业界观点/09_Fei_Fei_Li_李飞飞/03_索引|Fei-Fei Li]] | 前同事 | 保持联系 |
-| [[19_业界观点/03_Andrew_Ng_吴恩达/03_索引|Ng]] | 前 Google Brain | 保持友好 |
-| [[19_业界观点/04_Bill_Gates_比尔盖茨/03_索引|Gates]] | 行业同行 | 偶有交流 |
+| [[19_业界观点/06_Demis_Hassabis_哈萨比斯/INDEX|Hassabis]] | 下属（DeepMind） | 紧密合作 |
+| [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] | 竞争对手 | 正面竞争 |
+| [[19_业界观点/22_Satya_Nadella_纳德拉/INDEX|Nadella]] | 竞争对手 | 云+AI 竞争 |
+| [[19_业界观点/07_Elon_Musk_马斯克/INDEX|Musk]] | 竞争对手 | 多线竞争 |
+| [[19_业界观点/09_Fei_Fei_Li_李飞飞/INDEX|Fei-Fei Li]] | 前同事 | 保持联系 |
+| [[19_业界观点/03_Andrew_Ng_吴恩达/INDEX|Ng]] | 前 Google Brain | 保持友好 |
+| [[19_业界观点/04_Bill_Gates_比尔盖茨/INDEX|Gates]] | 行业同行 | 偶有交流 |
 | Tim Cook（Apple） | 合作+竞争 | Gemini in iPhone |
 
 ### Pichai 在 2026 年的重大演讲
@@ -398,7 +398,7 @@ Pichai 的影响呈现为四个层面：
 
 - [[05_大模型/README]] -- Gemini 技术
 - [[05_大模型/MoE]] -- Gemini MoE 架构
-- [[05_大模型/13_LLM产品/09_perplexity_概览|AI_Search]] -- AI 搜索
+- [[05_大模型/12_LLM产品/09_perplexity_概览|AI_Search]] -- AI 搜索
 - [[00_入门/04_伦理与未来/03_AI未来趋势]] -- AI 平台化
 
 ---

@@ -25,7 +25,7 @@ name_zh: "扬·勒昆 2026 动态"
 
 ### 背景回顾
 
-Yann LeCun（1960 年生），Meta 首席 AI 科学家、NYU Silver 教授、2018 年图灵奖得主（与 [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]]、[[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]] 共获）。卷积神经网络（CNN）的奠基人之一（LeNet，1989），自监督学习与世界模型（JEPA）的坚定倡导者，AI"末日论"最直言不讳的反对者。他师从 Hinton，但与导师在 AI 风险议题上形成尖锐对立。2022 年发表《A Path Towards Autonomous Machine Intelligence》论文，明确反对"LLM Scaling 即 AGI"的主流叙事。
+Yann LeCun（1960 年生），Meta 首席 AI 科学家、NYU Silver 教授、2018 年图灵奖得主（与 [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]]、[[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]] 共获）。卷积神经网络（CNN）的奠基人之一（LeNet，1989），自监督学习与世界模型（JEPA）的坚定倡导者，AI"末日论"最直言不讳的反对者。他师从 Hinton，但与导师在 AI 风险议题上形成尖锐对立。2022 年发表《A Path Towards Autonomous Machine Intelligence》论文，明确反对"LLM Scaling 即 AGI"的主流叙事。
 
 #### LeCun 2026 关键时间线
 
@@ -137,7 +137,7 @@ LeCun 在 2026 年持续强化其反 LLM 主流叙事的立场。
 | 支持 | 部分认知科学家 | 物理直觉确实重要 |
 | 中立 | 多数工程师 | LLM 仍有价值 |
 | 反对 | OpenAI/Anthropic | LLM Scaling 仍是核心 |
-| 批评 | [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] | "LeCun 总是错的" |
+| 批评 | [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] | "LeCun 总是错的" |
 
 ### 与 Hinton/Bengio 的公开交锋
 
@@ -145,7 +145,7 @@ LeCun 与图灵奖同侪的分歧在 2026 年彻底公开化。
 
 #### 三巨头立场对比
 
-| 议题 | LeCun | [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]] | [[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]] |
+| 议题 | LeCun | [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]] | [[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]] |
 |------|-------|---------|---------|
 | AI 风险严重性 | 低 | 存在性 | 存在性 |
 | 开源立场 | 激进 | 反对前沿 | 谨慎 |
@@ -202,7 +202,7 @@ LeCun 的立场：
 - 但认为"LLM Scaling 有天花板"
 - 真正的突破需要架构创新（如 JEPA）
 - 反对"算力即护城河"的叙事
-- 与 [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]]、[[19_业界观点/07_Elon_Musk_马斯克/03_索引|Musk]] 的规模派形成对比
+- 与 [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]]、[[19_业界观点/07_Elon_Musk_马斯克/INDEX|Musk]] 的规模派形成对比
 
 ### 关于具身智能
 
@@ -211,7 +211,7 @@ LeCun 认为具身智能是 AGI 的关键：
 - AI 需要与世界交互才能理解物理
 - 纯文本训练无法获得物理直觉
 - Meta 的机器人研究受 JEPA 指引
-- 与 [[19_业界观点/07_Elon_Musk_马斯克/03_索引|Musk]] 的 Optimus、[[19_业界观点/09_Fei_Fei_Li_李飞飞/03_索引|Fei-Fei Li]] 的 World Labs 形成呼应
+- 与 [[19_业界观点/07_Elon_Musk_马斯克/INDEX|Musk]] 的 Optimus、[[19_业界观点/09_Fei_Fei_Li_李飞飞/INDEX|Fei-Fei Li]] 的 World Labs 形成呼应
 
 ---
 
@@ -219,7 +219,7 @@ LeCun 认为具身智能是 AGI 的关键：
 
 ### 与主要 AI 领袖的对比
 
-| 维度 | LeCun | [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] | [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]] | [[19_业界观点/27_Wenfeng_Liang_梁文锋/02_索引|梁文锋]] |
+| 维度 | LeCun | [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] | [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]] | [[19_业界观点/27_Wenfeng_Liang_梁文锋/INDEX|梁文锋]] |
 |------|-------|---------|--------|---------|
 | 模型 | Llama 5 | GPT-5 | （无产品） | DeepSeek V4 |
 | 路线 | JEPA+开源 | LLM+闭源 | mortal computing | MoE+开源 |
@@ -250,8 +250,8 @@ LeCun 对 Meta AI 战略的影响：
 
 ### "乐观派"的批评
 
-- [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]] 批评其"不负责任"
-- [[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]] 批评其"忽视系统性风险"
+- [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]] 批评其"不负责任"
+- [[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]] 批评其"忽视系统性风险"
 - 部分安全研究者认为他"为开源辩护而忽视风险"
 - 被指"为 Meta 商业利益服务"
 
@@ -318,7 +318,7 @@ V-JEPA 2 作为 LeCun 世界模型愿景的核心实现：
 - 日均发推数十条，与网友频繁争论
 - 被批评"过度投入社交媒体辩论"
 - 部分言论被视为"为争论而争论"
-- 与 [[19_业界观点/07_Elon_Musk_马斯克/03_索引|Musk]] 在 X 上的风格有相似之处
+- 与 [[19_业界观点/07_Elon_Musk_马斯克/INDEX|Musk]] 在 X 上的风格有相似之处
 
 ### 与 Meta 商业利益的关系
 
@@ -356,9 +356,9 @@ V-JEPA 2 作为 LeCun 世界模型愿景的核心实现：
 
 ### 技术与理论
 
-- [[05_大模型/14_全球LLM生态/07_Meta_LLaMA_深入分析|Meta]] -- Llama 系列技术
-- [[05_大模型/05_LLM架构]] -- 模型架构演进
-- [[05_大模型/09_推理模型]] -- 推理模型路线
+- [[05_大模型/13_全球LLM生态/07_Meta_LLaMA_深入分析|Meta]] -- Llama 系列技术
+- [[05_大模型/04_LLM架构]] -- 模型架构演进
+- [[05_大模型/08_推理模型]] -- 推理模型路线
 - [[00_入门/04_伦理与未来/03_AI未来趋势]] -- 世界模型与 AGI
 - [[17_伦理安全/README]] -- AI 安全辩论
 
@@ -430,14 +430,14 @@ V-JEPA 2 作为 LeCun 世界模型愿景的核心实现：
 
 | 人物 | 关系 | 2026 互动 |
 |------|------|-----------|
-| [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]] | 图灵奖对手 | 风险辩论 |
-| [[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]] | 图灵奖对手 | 治理辩论 |
+| [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]] | 图灵奖对手 | 风险辩论 |
+| [[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]] | 图灵奖对手 | 治理辩论 |
 | [[19_业界观点/17_Mark_Zuckerberg_扎克伯格/04_Zuckerberg_AI_Pivot_2026]] | 老板 | 深度信任 |
-| [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] | 竞争对手 | 路线对立 |
-| [[19_业界观点/27_Wenfeng_Liang_梁文锋/02_索引|梁文锋]] | 开源同盟 | 技术欣赏 |
-| [[19_业界观点/02_Andrej_Karpathy_卡帕西/03_索引|Karpathy]] | 前同事 | 立场接近 |
-| [[19_业界观点/09_Fei_Fei_Li_李飞飞/03_索引|Fei-Fei Li]] | 学术同行 | 多有共鸣 |
-| [[19_业界观点/07_Elon_Musk_马斯克/03_索引|Musk]] | X 平台主 | 谨慎合作 |
+| [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] | 竞争对手 | 路线对立 |
+| [[19_业界观点/27_Wenfeng_Liang_梁文锋/INDEX|梁文锋]] | 开源同盟 | 技术欣赏 |
+| [[19_业界观点/02_Andrej_Karpathy_卡帕西/INDEX|Karpathy]] | 前同事 | 立场接近 |
+| [[19_业界观点/09_Fei_Fei_Li_李飞飞/INDEX|Fei-Fei Li]] | 学术同行 | 多有共鸣 |
+| [[19_业界观点/07_Elon_Musk_马斯克/INDEX|Musk]] | X 平台主 | 谨慎合作 |
 
 ### LeCun 在 2026 年的重大会议演讲
 

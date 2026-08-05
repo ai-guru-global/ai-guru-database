@@ -263,8 +263,8 @@ BERT 在 SWAG 上也大幅超越基线。
 - [[90_学习/05_参考资料/books/08_hands_on_llms_alammar|Hands-On LLMs]] — 图解 BERT 微调
 - [[90_学习/05_参考资料/books/14_build_llm_from_scratch_raschka|Build LLM From Scratch]] — 理解 Transformer 内部
 - [[05_大模型/01_LLM基础]] — LLM 基础
-- [[05_大模型/07_微调技术/04_GenAI_L18_微调_LLMs]] — 微调技术
+- [[05_大模型/06_微调技术/04_GenAI_L18_微调_LLMs]] — 微调技术
 - [[14_RAG系统/01_RAG基础/07_RAG_系统]] — BERT 嵌入在检索中的应用
 - [[90_学习/01_概念认知/04_stage2_core_tech|Stage 2: 核心技术]] — BERT 在学习路径中的位置
 
-> **关联**: → [[90_学习/05_参考资料/Projects/01_papers_with_code]] | [[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading|Transformer]] | [[90_学习/05_参考资料/Papers/02_GPT3_Reading|GPT-3]] | [[05_大模型/01_LLM基础]] | [[05_大模型/07_微调技术/04_GenAI_L18_微调_LLMs]] | [[14_RAG系统/]]
+> **关联**: → [[90_学习/05_参考资料/Projects/01_papers_with_code]] | [[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading|Transformer]] | [[90_学习/05_参考资料/Papers/02_GPT3_Reading|GPT-3]] | [[05_大模型/01_LLM基础]] | [[05_大模型/06_微调技术/04_GenAI_L18_微调_LLMs]] | [[14_RAG系统/]]

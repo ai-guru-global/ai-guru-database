@@ -1,0 +1,40 @@
+{
+  "id": "csrc.attention.dtype_fp8.cuh",
+  "title": "Dtype Fp8",
+  "type": "module",
+  "summary": "Module providing Fp8KVCacheDataType",
+  "details": "Contains 1 classes: Fp8KVCacheDataType",
+  "symbols": [
+    {
+      "name": "Fp8KVCacheDataType",
+      "kind": "class",
+      "signature": "class Fp8KVCacheDataType",
+      "docstring": "",
+      "line": 14
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "attention_generic",
+      "cuda_fp8",
+      "stdint"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 1,
+    "functions": 0,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "oop",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/attention/dtype_fp8.cuh"
+}

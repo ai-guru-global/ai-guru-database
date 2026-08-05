@@ -1,0 +1,137 @@
+{
+  "id": "csrc.cpu.cpu_types_x86.hpp",
+  "title": "Cpu Types X86",
+  "type": "module",
+  "summary": "Module providing static_assert, f, unroll_loop_item, FP16Vec8, FP16Vec8 and 5 more symbols",
+  "details": "Contains 120 functions/methods",
+  "symbols": [
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(false, \"AVX2 must be supported for the current implementation.\");\n#endif\n\nnamespace vec_op {\n\n#define VLLM_DISPATCH_CASE_FLOATING_TYPES(...)            \\\n  AT_DISPATCH_CASE(at::ScalarType::Float, __VA_ARGS__)    \\\n  AT_DISPATCH_CASE(at::ScalarType::BFloat16, __VA_ARGS__) \\\n  AT_DISPATCH_CASE(at::ScalarType::Half, __VA_ARGS__)\n\n#define VLLM_DISPATCH_CASE_FLOATING_TYPES_FP8(...)        \\\n  AT_DISPATCH_CASE(at::ScalarType::Float, __VA_ARGS__)    \\\n  AT_DISPATCH_CASE(at::ScalarType::BFloat16, __VA_ARGS__) \\\n  AT_DISPATCH_CASE(at::ScalarType::Half, __VA_ARGS__)     \\\n  AT_DISPATCH_CASE(at::ScalarType::Float8_e5m2, __VA_ARGS__)\n\n#define VLLM_DISPATCH_FLOATING_TYPES(TYPE, NAME, ...) \\\n  AT_DISPATCH_SWITCH(TYPE, NAME, VLLM_DISPATCH_CASE_FLOATING_TYPES(__VA_ARGS__))\n\n#define VLLM_DISPATCH_FLOATING_TYPES_WITH_E5M2(TYPE, NAME, ...) \\\n  AT_DISPATCH_SWITCH(TYPE, NAME,                                \\\n                     VLLM_DISPATCH_CASE_FLOATING_TYPES_FP8(__VA_ARGS__))\n\n#ifndef CPU_OP_GUARD\n  #define CPU_KERNEL_GUARD_IN(NAME)\n  #define CPU_KERNEL_GUARD_OUT(NAME)\n#else\n  #define CPU_KERNEL_GUARD_IN(NAME) \\\n    RECORD_FUNCTION(#NAME, c10::ArrayRef<c10::IValue>({}));\n  #define CPU_KERNEL_GUARD_OUT(NAME)\n#endif\n\n#define FORCE_INLINE __attribute__((always_inline)) inline\n\nnamespace {\ntemplate <typename T, T... indexes, typename F>\nconstexpr void unroll_loop_item(std::integer_sequence<T, indexes...>, F&& f)",
+      "docstring": "",
+      "line": 8
+    },
+    {
+      "name": "f",
+      "kind": "function",
+      "signature": "f(std::integral_constant<T, indexes>{}), ...);\n}\n};  // namespace\n\ntemplate <typename T, T count, typename F,\n          typename = std::enable_if_t<std::is_invocable_v<F, T>>>\nconstexpr void unroll_loop(F&& f)",
+      "docstring": "",
+      "line": 46
+    },
+    {
+      "name": "unroll_loop_item",
+      "kind": "function",
+      "signature": "unroll_loop_item(std::make_integer_sequence<T, count>{}, std::forward<F>(f));\n}\n\ntemplate <typename T>\nstruct Vec {\n  constexpr static int get_elem_num()",
+      "docstring": "",
+      "line": 52
+    },
+    {
+      "name": "FP16Vec8",
+      "kind": "function",
+      "signature": "FP16Vec8(const void* ptr)\n      : reg((__m128i)_mm_loadu_si128((__m128i*)ptr))",
+      "docstring": "",
+      "line": 67
+    },
+    {
+      "name": "FP16Vec8",
+      "kind": "function",
+      "signature": "FP16Vec8(const FP32Vec8&);\n\n  void save(void* ptr)",
+      "docstring": "",
+      "line": 70
+    },
+    {
+      "name": "FP16Vec16",
+      "kind": "function",
+      "signature": "FP16Vec16(const void* ptr)\n      : reg((__m256i)_mm256_loadu_si256((__m256i*)ptr))",
+      "docstring": "",
+      "line": 82
+    },
+    {
+      "name": "FP16Vec16",
+      "kind": "function",
+      "signature": "FP16Vec16(bool, void* ptr)\n      : reg(_mm256_stream_load_si256((__m256i*)ptr))",
+      "docstring": "",
+      "line": 86
+    },
+    {
+      "name": "FP16Vec16",
+      "kind": "function",
+      "signature": "FP16Vec16(const FP32Vec16&);\n\n  void save(void* ptr)",
+      "docstring": "",
+      "line": 88
+    },
+    {
+      "name": "save",
+      "kind": "function",
+      "signature": "save(void* ptr, const int elem_num)",
+      "docstring": "",
+      "line": 92
+    },
+    {
+      "name": "_cvtu32_mask16",
+      "kind": "function",
+      "signature": "_cvtu32_mask16(M >> (32 - elem_num));\n    _mm256_mask_storeu_epi16(ptr, mask, reg);\n  }\n};\n\nstruct BF16Vec8 : public Vec<BF16Vec8> {\n  constexpr static int VEC_ELEM_NUM = 8;\n\n  __m128i reg;\n\n  explicit BF16Vec8(const void* ptr)\n      : reg((__m128i)_mm_loadu_si128((__m128i*)ptr))",
+      "docstring": "",
+      "line": 96
+    },
+    {
+      "name": "BF16Vec8",
+      "kind": "function",
+      "signature": "BF16Vec8(const FP32Vec8&);\n\n  void save(void* ptr)",
+      "docstring": "",
+      "line": 107
+    },
+    {
+      "name": "BF16Vec16",
+      "kind": "function",
+      "signature": "BF16Vec16(const void* ptr)\n      : reg((__m256i)_mm256_loadu_si256((__m256i*)ptr))",
+      "docstring": "",
+      "line": 119
+    },
+    {
+      "name": "BF16Vec16",
+      "kind": "function",
+      "signature": "BF16Vec16(bool, void* ptr)\n      : reg(_mm256_stream_load_si256((__m256i*)ptr))",
+      "docstring": "",
+      "line": 123
+    },
+    {
+      "name": "BF16Vec16",
+      "kind": "function",
+      "signature": "BF16Vec16(const FP32Vec16&);\n\n  void save(void* ptr)",
+      "docstring": "",
+      "line": 125
+    },
+    {
+      "name": "save",
+      "kind": "function",
+      "signature": "save(void* ptr, const int elem_num)",
+      "docstring": "",
+      "line": 129
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "immintrin",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 120,
+    "public_symbols": 120,
+    "classes": 0,
+    "functions": 120,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cpu/cpu_types_x86.hpp"
+}

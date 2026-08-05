@@ -83,7 +83,7 @@ name_zh: "Microsoft AI Agents for Beginners：16 课 A"
 
 | 课号 | 课程名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
-| 00 | 课程设置 | Azure CLI 认证、Foundry 项目、.env 配置、依赖安装 | [[01_数学基础/08_Python工具包/01_AI_开发_Environment_配置]]、[[05_大模型/13_LLM产品/01_chatgpt_概览]] | — |
+| 00 | 课程设置 | Azure CLI 认证、Foundry 项目、.env 配置、依赖安装 | [[01_数学基础/08_Python工具包/01_AI_开发_Environment_配置]]、[[05_大模型/12_LLM产品/01_chatgpt_概览]] | — |
 | 01 | AI 代理与使用场景简介 | Agent 定义、感知-推理-行动、七种 Agent 类型、何时使用 Agent | [[概念/ai-agents]]、[[15_智能体/14_GenAI课程/05_GenAI_L17_AI_Agent]]、[[06_强化学习/AI_Agents/Agent-in-nutshell]] | [[15_智能体/15_课程笔记/Microsoft_AI_Agents_L01_Intro]] |
 | 02 | 探索 AI Agentic 框架 | MAF vs Azure AI Agent Service、Agent / Thread / Tools、Azure Identity | [[15_智能体/02_Agent框架/README]]、[[12_架构基建/11_AI网关/01_AI网关_2026]] | [[15_智能体/15_课程笔记/Microsoft_AI_Agents_L02_Frameworks]] |
 
@@ -125,7 +125,7 @@ name_zh: "Microsoft AI Agents for Beginners：16 课 A"
 | 14 | 探索 Microsoft Agent Framework | MAF 编排模式、Agent/Thread/Middleware、Workflows、OpenTelemetry | [[15_智能体/02_Agent框架/README]]、[[15_智能体/03_Agent工作流/06_工作流_简明指南]]、[[13_运维/AI_Observability_Guide_2026]] | — |
 | 15 | 构建计算机使用代理（CUA） | Browser-Use + Playwright + CDP、Vision、结构化输出、Agent vs Actor | [[15_智能体/05_Agent技能/03_Agent_技能_生态_Catalog]]、[[15_智能体/05_Agent技能/02_Agent_技能_深入分析]]、[[04_计算机视觉/08_多模态视觉/03_多模态视觉|多模态视觉模型]] | — |
 | 16 | 部署可扩展代理 | *Coming Soon* | [[12_架构基建/02_架构概览/02_AI_基础设施_2026]]、[[10_部署推理/01_部署基础/02_部署推理_2026]] | — |
-| 17 | 创建本地 AI 代理 | *Coming Soon* | [[05_大模型/12_端侧大模型/01_端侧大模型_深入分析]]、[[10_部署推理/02_推理引擎/12_LiteRT_深入分析]] | — |
+| 17 | 创建本地 AI 代理 | *Coming Soon* | [[05_大模型/11_端侧大模型/01_端侧大模型_深入分析]]、[[10_部署推理/02_推理引擎/12_LiteRT_深入分析]] | — |
 | 18 | 使用加密收据保护 AI 代理 | Ed25519 签名、JCS 规范化、SHA-256 哈希链、离线验证、审计边界 | [[17_伦理安全/07_AI安全2026/01_AI安全2026]]、[[17_伦理安全/AI_Governance_Compliance_2026]]、[[17_伦理安全/04_AI安全与红队/03_Guardrails_生产_指南]] | [[17_伦理安全/07_AI安全2026/01_AI安全2026|AI 代理安全]] |
 
 ---

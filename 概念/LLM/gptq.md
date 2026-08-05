@@ -150,7 +150,7 @@ llm = LLM(model="qwen2.5-7b-gptq", quantization="gptq")
 - [[概念/awq]] — AWQ（GPTQ 主要替代）
 - [[概念/quantization]] — 量化总览
 - [[概念/model-compression]] — 模型压缩
-- [[10_部署推理/05_模型量化]] — 量化章节- [[概念/pruning]] — 剪枝
+- [[10_部署推理/04_模型量化]] — 量化章节- [[概念/pruning]] — 剪枝
 
 ---
 

@@ -1,0 +1,63 @@
+{
+  "id": "benchmarks.kernels.benchmark_paged_attention",
+  "title": "Benchmark Paged Attention",
+  "type": "module",
+  "summary": "Module providing main, NUM_BLOCKS, PARTITION_SIZE, PARTITION_SIZE_ROCM",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "main",
+      "kind": "function",
+      "signature": "def main(\n    version: str,\n    num_seqs: int,\n    seq_len: int,\n    num_query_heads: int,\n    num_kv_heads: int,\n    head_size: int,\n    use_alibi: bool,\n    block_size: int,\n    dtype: torch.dtype,\n    seed: int,\n    do_profile: bool,\n    device: str = \"cuda\",\n    kv_cache_dtype: Optional[str] = None,\n) -> None:\n    current_platform.seed_everything(seed)\n\n    scale = float(1.0 / (head_size**0.5))\n    query = torch.empty(\n        num_seqs, num_query_heads, head_size, dtype=dtype, device=device\n    )\n    query.uniform_(-scale, scale)\n\n    assert num_query_heads % num_kv_heads == 0\n    alibi_slopes = None\n    if use_alibi:\n        alibi_slopes = torch.randn(num_query_heads, dtype=torch.float, device=device)\n\n    seq_lens = [seq_len for _ in range(num_seqs)]\n    max_seq_len = max(seq_lens)\n    seq_lens = torch.tensor(seq_lens, dtype=torch.int, device=device)\n\n    # Create the block tables.\n    max_num_blocks_per_seq = (max_seq_len + block_size - 1) // block_size\n    block_tables_lst: list[list[int]] = []\n    for _ in range(num_seqs):\n        block_table = [\n            random.randint(0, NUM_BLOCKS - 1) for _ in range(max_num_blocks_per_seq)\n        ]\n        block_tables_lst.append(block_table)\n\n    block_tables = torch.tensor(block_tables_lst, dtype=torch.int, device=device)\n\n    # Create the KV cache.\n    key_caches, value_caches = create_kv_caches_with_random(\n        NUM_BLOCKS,\n        block_size,\n        1,\n        num_kv_heads,\n        head_size,\n        kv_cache_dtype,\n        dtype,\n        device=device,\n    )\n    key_cache, value_cache = key_caches[0], value_caches[0]\n\n    # Prepare for the paged attention kernel.\n    output = torch.empty_like(query)\n    if version == \"v2\":\n        if current_platform.is_rocm():\n            global PARTITION_SIZE\n            if not args.custom_paged_attn and not current_platform.is_navi():\n                PARTITION_SIZE = 1024\n            else:\n                PARTITION_SIZE = PARTITION_SIZE_ROCM\n        num_partitions = (max_seq_len + PARTITION_SIZE - 1) // PARTITION_SIZE\n        tmp_output = torch.empty(\n            size=(num_seqs, num_query_heads, num_partitions, head_size),\n            dtype=output.dtype,\n            device=output.device,\n        )\n        exp_sums = torch.empty(\n            size=(num_seqs, num_query_heads, num_partitions),\n            dtype=torch.float32,\n            device=output.device,\n        )\n        max_logits = torch.empty_like(exp_sums)\n\n    def run_cuda_benchmark(num_iters: int, profile: bool = False) -> float:\n        torch.cuda.synchronize()\n        if profile:\n            torch.cuda.cudart().cudaProfilerStart()\n        start_time = time.perf_counter()\n\n        # Using default kv_scale\n        k_scale = v_scale = torch.tensor(1.0, dtype=torch.float32, device=device)\n\n        for _ in range(num_iters):\n            if version == \"v1\":\n                ops.paged_attention_v1(\n                    output,\n                    query,\n                    key_cache,\n                    value_cache,\n                    num_kv_heads,\n                    scale,\n                    block_tables,\n                    seq_lens,\n                    block_size,\n                    max_seq_len,\n                    alibi_slopes,\n                    kv_cache_dtype,\n                    k_scale,\n                    v_scale,\n                )\n            elif version == \"v2\":\n                if not args.custom_paged_attn:\n                    ops.paged_attention_v2(\n                        output,\n                        exp_sums,\n                        max_logits,\n                        tmp_output,\n                        query,\n                        key_cache,\n                        value_cache,\n                        num_kv_heads,\n                        scale,\n                        block_tables,\n                        seq_lens,\n                        block_size,\n                        max_seq_len,\n                        alibi_slopes,\n                        kv_cache_dtype,\n                        k_scale,\n                        v_scale,\n                    )\n                else:\n                    ops.paged_attention_rocm(\n                        output,\n                        exp_sums,\n                        max_logits,\n                        tmp_output,\n                        query,\n                        key_cache,\n                        value_cache,\n                        num_kv_heads,\n                        scale,\n                        block_tables,\n                        seq_lens,\n                        None,\n                        block_size,\n                        max_seq_len,\n                        alibi_slopes,\n                        kv_cache_dtype,\n                        k_scale,\n                        v_scale,\n                    )\n            else:\n                raise ValueError(f\"Invalid version: {version}\")\n        torch.cuda.synchronize()\n\n        end_time = time.perf_counter()\n        if profile:\n            torch.cuda.cudart().cudaProfilerStop()\n        return (end_time - start_time) / num_iters\n\n    # Warmup.\n    print(\"Warming up...\")\n    run_benchmark = run_cuda_benchmark\n    run_benchmark(num_iters=3, profile=False)\n\n    # Benchmark.\n    if do_profile:\n        latency = run_benchmark(num_iters=1, profile=True)\n    else:\n        latency = run_benchmark(num_iters=100, profile=False)\n    print(f\"Kernel running time: {latency * 1000000:.3f} us\")\n\n\nif __name__ == \"__main__\":\n    logger.warning(\n        \"This script benchmarks the paged attention kernel. \"\n        \"By default this is no longer used in vLLM inference.\"\n    )\n\n    parser = FlexibleArgumentParser(description=\"Benchmark the paged attention kernel.\")\n    parser.add_argument(\"--version\", type=str, choices=[\"v1\", \"v2\"], default=\"v2\")\n    parser.add_argument(\"--batch-size\", type=int, default=8)\n    parser.add_argument(\"--seq-len\", type=int, default=4096)\n    parser.add_argument(\"--num-query-heads\", type=int, default=64)\n    parser.add_argument(\"--num-kv-heads\", type=int, default=8)\n    parser.add_argument(\n        \"--head-size\",\n        type=int,\n        choices=[64, 80, 96, 112, 120, 128, 192, 256],\n        default=128,\n    )\n    parser.add_argument(\"--block-size\", type=int, choices=[16, 32], default=16)\n    parser.add_argument(\"--use-alibi\", action=\"store_true\")\n    parser.add_argument(\n        \"--dtype\", type=str, choices=[\"half\", \"bfloat16\", \"float\"], default=\"half\"\n    )\n    parser.add_argument(\"--seed\", type=int, default=0)\n    parser.add_argument(\"--profile\", action=\"store_true\")\n    parser.add_argument(\n        \"--kv-cache-dtype\",\n        type=str,\n        choices=[\"auto\", \"fp8\", \"fp8_e5m2\", \"fp8_e4m3\"],\n        default=\"auto\",\n        help=\"Data type for kv cache storage. If 'auto', will use model \"\n        \"data type. CUDA 11.8+ supports fp8 (=fp8_e4m3) and fp8_e5m2. \"\n        \"ROCm (AMD GPU) supports fp8 (=fp8_e4m3)\",\n    )\n    parser.add_argument(\n        \"--custom-paged-attn\", action=\"store_true\", help=\"Use custom paged attention\"\n    )\n    args = parser.parse_args()\n    print(args)\n\n    if args.num_query_heads % args.num_kv_heads != 0",
+      "docstring": "",
+      "line": 26
+    },
+    {
+      "name": "NUM_BLOCKS",
+      "kind": "constant",
+      "signature": "NUM_BLOCKS = ...",
+      "docstring": "",
+      "line": 21
+    },
+    {
+      "name": "PARTITION_SIZE",
+      "kind": "constant",
+      "signature": "PARTITION_SIZE = ...",
+      "docstring": "",
+      "line": 22
+    },
+    {
+      "name": "PARTITION_SIZE_ROCM",
+      "kind": "constant",
+      "signature": "PARTITION_SIZE_ROCM = ...",
+      "docstring": "",
+      "line": 23
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "random",
+      "time",
+      "torch",
+      "typing",
+      "vllm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 4,
+    "public_symbols": 4,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 5,
+    "depth": 0,
+    "complexity_sum": 1
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/kernels/benchmark_paged_attention.py"
+}

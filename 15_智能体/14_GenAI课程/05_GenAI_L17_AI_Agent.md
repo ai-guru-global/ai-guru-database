@@ -540,4 +540,4 @@ AI代理的核心定义是让LLM通过获得状态（上下文）和工具（数
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[05_大模型/14_全球LLM生态/GenAI_L16_Open_Source_Models_and_Hugging_Face|L16 开源模型与Hugging Face]] | [[05_大模型/07_微调技术/04_GenAI_L18_微调_LLMs|L18 微调大型语言模型]] |
+| [[05_大模型/13_全球LLM生态/GenAI_L16_Open_Source_Models_and_Hugging_Face|L16 开源模型与Hugging Face]] | [[05_大模型/06_微调技术/04_GenAI_L18_微调_LLMs|L18 微调大型语言模型]] |

@@ -1,0 +1,47 @@
+{
+  "manifest_version": "2.0",
+  "generated_by": "code-up",
+  "generated_at": "2026-08-05T08:20:10.215838+00:00",
+  "project": {
+    "name": "vllm-0.9.1",
+    "root": "/Users/ai-guru/Documents/GitHub/ai-guru-global/ai-guru-database/code/vllm-0.9.1"
+  },
+  "config": {
+    "format": "markdown",
+    "granularity": "module"
+  },
+  "outputs": [
+    {
+      "path": "diagrams/dependency_graph.md",
+      "type": "module",
+      "format": "md",
+      "size_bytes": 4925,
+      "tier": "supporting"
+    },
+    {
+      "path": "diagrams/directory_structure.md",
+      "type": "module",
+      "format": "md",
+      "size_bytes": 332,
+      "tier": "supporting"
+    }
+  ],
+  "index": {
+    "by_type": {
+      "module": [
+        "diagrams/dependency_graph.md",
+        "diagrams/directory_structure.md"
+      ]
+    },
+    "by_tier": {
+      "supporting": [
+        "diagrams/dependency_graph.md",
+        "diagrams/directory_structure.md"
+      ]
+    }
+  },
+  "stats": {
+    "total_outputs": 2,
+    "total_size_bytes": 5257
+  }
+}

@@ -114,7 +114,7 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 
 **🔗 深入阅读**：
 - [Transformer 革命（小白版）](05_大模型/04_Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- [LLM 架构（完整版）](05_大模型/05_LLM架构/LLM_Architectures_for_dummy.md)
+- [LLM 架构（完整版）](05_大模型/04_LLM架构/LLM_Architectures_for_dummy.md)
 - 原始论文：[Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
 
 **💡 Transformer 理论重点**：
@@ -156,7 +156,7 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 | Scaling Law 新方向 | [ emergent abilities](https://arxiv.org/abs/2206.11176)、[scaling doesn't plateau](https://arxiv.org/abs/2304.15012) |
 
 **🔗 深入阅读**：
-- [微调技术（小白版）](05_大模型/07_微调技术/Fine_tuning_Techniques_for_dummy.md)
+- [微调技术（小白版）](05_大模型/06_微调技术/Fine_tuning_Techniques_for_dummy.md)
 - [价值对齐（小白版）](17_伦理安全/02_价值对齐/Value_Alignment_for_dummy.md)
 - [AI 安全与红队（小白版）](17_伦理安全/04_AI安全与红队/AI_Safety_RedTeaming_for_dummy.md)
 - [Scaling Law 与后 Scaling 时代](90_学习/concepts/06_stage4_frontier.md)（Stage 4 中的 Scaling Law 部分）

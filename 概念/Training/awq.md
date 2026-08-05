@@ -168,7 +168,7 @@ llm = LLM(
 - [[概念/quantization]] — 量化总览
 - [[概念/model-compression]] — 模型压缩
 - [[概念/smoothquant]] — SmoothQuant INT8 量化
-- [[10_部署推理/05_模型量化]] — 量化章节
+- [[10_部署推理/04_模型量化]] — 量化章节
 - [[概念/pruning]] — 剪枝
 
 ---

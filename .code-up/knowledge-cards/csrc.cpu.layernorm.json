@@ -1,0 +1,100 @@
+{
+  "id": "csrc.cpu.layernorm",
+  "title": "Layernorm",
+  "type": "module",
+  "summary": "Module providing rms_norm_impl, scalar_vec_t::get_elem_num, variance, x, x and 5 more symbols",
+  "details": "Contains 10 functions/methods",
+  "symbols": [
+    {
+      "name": "rms_norm_impl",
+      "kind": "function",
+      "signature": "rms_norm_impl(scalar_t* __restrict__ out,\n                   const scalar_t* __restrict__ input,\n                   const scalar_t* __restrict__ weight, const float epsilon,\n                   const int num_tokens, const int hidden_size)",
+      "docstring": "",
+      "line": 3
+    },
+    {
+      "name": "scalar_vec_t::get_elem_num",
+      "kind": "function",
+      "signature": "scalar_vec_t::get_elem_num();\n  TORCH_CHECK(hidden_size % VEC_ELEM_NUM == 0);\n\n#pragma omp parallel for\n  for (int i = 0; i < num_tokens; ++i)",
+      "docstring": "",
+      "line": 10
+    },
+    {
+      "name": "variance",
+      "kind": "function",
+      "signature": "variance(0.0);\n    auto input_p = input + i * hidden_size;\n    auto output_p = out + i * hidden_size;\n    for (int j = 0; j < hidden_size; j += VEC_ELEM_NUM)",
+      "docstring": "",
+      "line": 14
+    },
+    {
+      "name": "x",
+      "kind": "function",
+      "signature": "x(input_p + j);\n      vec_op::FP32Vec8 fp32_x(x);\n      variance = variance + fp32_x * fp32_x;\n    }\n\n    float s_variance =\n        1.0f / sqrtf(variance.reduce_sum() / (float)hidden_size + epsilon);\n    vec_op::FP32Vec8 fp32_s_variance(s_variance);\n\n    for (int j = 0; j < hidden_size; j += VEC_ELEM_NUM)",
+      "docstring": "",
+      "line": 18
+    },
+    {
+      "name": "x",
+      "kind": "function",
+      "signature": "x(input_p + j);\n      scalar_vec_t w(weight + j);\n\n      vec_op::FP32Vec8 fp32_x(x);\n      vec_op::FP32Vec8 fp32_w(w);\n\n      vec_op::FP32Vec8 fp32_out = fp32_x * fp32_s_variance * fp32_w;\n\n      scalar_vec_t out(fp32_out);\n      out.save(output_p + j);\n    }\n  }\n}\n\ntemplate <typename scalar_t>\nvoid fused_add_rms_norm_impl(scalar_t* __restrict__ input,\n                             scalar_t* __restrict__ residual,\n                             const scalar_t* __restrict__ weight,\n                             const float epsilon, const int num_tokens,\n                             const int hidden_size)",
+      "docstring": "",
+      "line": 28
+    },
+    {
+      "name": "scalar_vec_t::get_elem_num",
+      "kind": "function",
+      "signature": "scalar_vec_t::get_elem_num();\n  TORCH_CHECK(hidden_size % VEC_ELEM_NUM == 0);\n\n#pragma omp parallel for\n  for (int i = 0; i < num_tokens; ++i)",
+      "docstring": "",
+      "line": 50
+    },
+    {
+      "name": "variance",
+      "kind": "function",
+      "signature": "variance(0.0);\n    auto input_p = input + i * hidden_size;\n    auto residual_p = residual + i * hidden_size;\n    for (int j = 0; j < hidden_size; j += VEC_ELEM_NUM)",
+      "docstring": "",
+      "line": 54
+    },
+    {
+      "name": "x",
+      "kind": "function",
+      "signature": "x(input_p + j);\n      scalar_vec_t res(residual_p + j);\n      vec_op::FP32Vec8 fp32_x(x);\n      vec_op::FP32Vec8 fp32_res(res);\n\n      fp32_x = fp32_x + fp32_res;\n      variance = variance + fp32_x * fp32_x;\n      scalar_vec_t out(fp32_x);\n      out.save(residual_p + j);\n    }\n\n    float s_variance =\n        1.0f / sqrtf(variance.reduce_sum() / (float)hidden_size + epsilon);\n    vec_op::FP32Vec8 fp32_s_variance(s_variance);\n\n    for (int j = 0; j < hidden_size; j += VEC_ELEM_NUM)",
+      "docstring": "",
+      "line": 58
+    },
+    {
+      "name": "w",
+      "kind": "function",
+      "signature": "w(weight + j);\n      scalar_vec_t res(residual_p + j);\n\n      vec_op::FP32Vec8 fp32_w(w);\n      vec_op::FP32Vec8 fp32_res(res);\n\n      vec_op::FP32Vec8 fp32_out = fp32_res * fp32_s_variance * fp32_w;\n\n      scalar_vec_t out(fp32_out);\n      out.save(input_p + j);\n    }\n  }\n}\n}  // namespace\n\nvoid rms_norm(torch::Tensor& out, torch::Tensor& input, torch::Tensor& weight,\n              double epsilon)",
+      "docstring": "",
+      "line": 74
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size(-1);\n  int num_tokens = input.numel() / hidden_size;\n\n  VLLM_DISPATCH_FLOATING_TYPES(input.scalar_type(), \"rms_norm_impl\", [&] {\n    CPU_KERNEL_GUARD_IN(rms_norm_impl)\n    rms_norm_impl(out.data_ptr<scalar_t>(), input.data_ptr<scalar_t>(),\n                  weight.data_ptr<scalar_t>(), epsilon, num_tokens,\n                  hidden_size);\n    CPU_KERNEL_GUARD_OUT(rms_norm_impl)\n  });\n}\n\nvoid fused_add_rms_norm(torch::Tensor& input, torch::Tensor& residual,\n                        torch::Tensor& weight, double epsilon)",
+      "docstring": "",
+      "line": 92
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cpu_types"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 10,
+    "public_symbols": 10,
+    "classes": 0,
+    "functions": 10,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cpu/layernorm.cpp"
+}

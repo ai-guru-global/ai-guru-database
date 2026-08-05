@@ -1,0 +1,44 @@
+{
+  "id": "csrc.cuda_utils.h",
+  "title": "Cuda Utils",
+  "type": "module",
+  "summary": "Module providing defined, printf",
+  "details": "Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__HIPCC__)\n  #define HOST_DEVICE_INLINE __host__ __device__\n  #define DEVICE_INLINE __device__\n  #define HOST_INLINE __host__\n#elif defined(__CUDACC__) || defined(_NVHPC_CUDA)\n  #define HOST_DEVICE_INLINE __host__ __device__ __forceinline__\n  #define DEVICE_INLINE __device__ __forceinline__\n  #define HOST_INLINE __host__ __forceinline__\n#else\n  #define HOST_DEVICE_INLINE inline\n  #define DEVICE_INLINE inline\n  #define HOST_INLINE inline\n#endif\n\n#define CUDA_CHECK(cmd)                                             \\\n  do {                                                              \\\n    cudaError_t e = cmd;                                            \\\n    if (e != cudaSuccess)",
+      "docstring": "",
+      "line": 5
+    },
+    {
+      "name": "printf",
+      "kind": "function",
+      "signature": "printf(\"Failed: Cuda error %s:%d '%s'\\n\", __FILE__, __LINE__, \\\n             cudaGetErrorString(e));                                \\\n      exit(EXIT_FAILURE);                                           \\\n    }                                                               \\\n  } while (0)\n\nint64_t get_device_attribute(int64_t attribute, int64_t device_id);\n\nint64_t get_max_shared_memory_per_block_device_attribute(int64_t device_id);\n\nnamespace cuda_utils {\n\ntemplate <typename T>\nHOST_DEVICE_INLINE constexpr std::enable_if_t<std::is_integral_v<T>, T>\nceil_div(T a, T b)",
+      "docstring": "",
+      "line": 22
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "stdio"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 2,
+    "public_symbols": 2,
+    "classes": 0,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cuda_utils.h"
+}

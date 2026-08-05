@@ -1,0 +1,112 @@
+{
+  "id": "csrc.moe.moe_permute_unpermute_op.cu",
+  "title": "Moe Permute Unpermute Op",
+  "type": "module",
+  "summary": "Module providing defined, TORCH_CHECK, value, copy_, TORCH_CHECK and 5 more symbols",
+  "details": "Contains 11 functions/methods",
+  "symbols": [
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(CUDA_VERSION) && (CUDA_VERSION >= 12000)\n\nvoid moe_permute(\n    const torch::Tensor& input,                      // [n_token, hidden]\n    const torch::Tensor& topk_weights,               //[n_token, topk]\n    torch::Tensor& topk_ids,                         // [n_token, topk]\n    const torch::Tensor& token_expert_indicies,      // [n_token, topk]\n    const std::optional<torch::Tensor>& expert_map,  // [n_expert]\n    int64_t n_expert, int64_t n_local_expert, int64_t topk,\n    const std::optional<int64_t>& align_block_size,\n    torch::Tensor&\n        permuted_input,  // [topk * n_token/align_block_size_m, hidden]\n    torch::Tensor& expert_first_token_offset,  // [n_local_expert + 1]\n    torch::Tensor& src_row_id2dst_row_id_map,  // [n_token, topk]\n    torch::Tensor& m_indices)",
+      "docstring": "",
+      "line": 9
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(topk_weights.scalar_type() == at::ScalarType::Float,\n              \"topk_weights must be float32\");\n  TORCH_CHECK(expert_first_token_offset.scalar_type() == at::ScalarType::Long,\n              \"expert_first_token_offset must be int64\");\n  TORCH_CHECK(topk_ids.scalar_type() == at::ScalarType::Int,\n              \"topk_ids must be int32\");\n  TORCH_CHECK(token_expert_indicies.scalar_type() == at::ScalarType::Int,\n              \"token_expert_indicies must be int32\");\n  TORCH_CHECK(src_row_id2dst_row_id_map.scalar_type() == at::ScalarType::Int,\n              \"src_row_id2dst_row_id_map must be int32\");\n  TORCH_CHECK(expert_first_token_offset.size(0) == n_local_expert + 1,\n              \"expert_first_token_offset shape != n_local_expert+1\")\n  TORCH_CHECK(\n      src_row_id2dst_row_id_map.sizes() == token_expert_indicies.sizes(),\n      \"token_expert_indicies shape must be same as src_row_id2dst_row_id_map\");\n  auto n_token = input.sizes()[0];\n  auto n_hidden = input.sizes()[1];\n  auto align_block_size_value =\n      align_block_size.has_value() ? align_block_size.value() : -1;\n  auto stream = at::cuda::getCurrentCUDAStream().stream();\n  const long sorter_size =\n      CubKeyValueSorter::getWorkspaceSize(n_token * topk, n_expert);\n  auto sort_workspace = torch::empty(\n      {sorter_size},\n      torch::dtype(torch::kInt8).device(torch::kCUDA).requires_grad(false));\n  auto permuted_experts_id = torch::empty_like(topk_ids);\n  auto dst_row_id2src_row_id_map = torch::empty_like(src_row_id2dst_row_id_map);\n  auto align_expert_first_token_offset =\n      torch::zeros_like(expert_first_token_offset);\n\n  CubKeyValueSorter sorter{};\n  int64_t* valid_num_ptr = nullptr;\n  // pre-process kernel for expert-parallelism:\n  // no local expert id plus \"n_expert\" offset for priority to local expert\n  // map local expert id [n, .., n+n_local_expert-1] to [0, n_local_expert -1]\n  // For example, 4 expert with ep_size=2. ep_rank=1 owns global expert id\n  // [2,3] with expert_map[-1, -1, 0, 1], preprocess_topk_id  process topk_ids\n  // and map global expert id [2, 3] to local_expert id [0, 1] and map global\n  // expert id [0, 1] ( not in ep rank=1)  to [4, 5] by plus n_expert. This map\n  // operation is to make local expert high priority in following sort topk_ids\n  // and scan local expert_first_token_offset for each ep rank for next group\n  // gemm.\n  if (expert_map.has_value())",
+      "docstring": "",
+      "line": 23
+    },
+    {
+      "name": "value",
+      "kind": "function",
+      "signature": "value());\n    valid_num_ptr =\n        get_ptr<int64_t>(expert_first_token_offset) + n_local_expert;\n    preprocessTopkIdLauncher(get_ptr<int>(topk_ids), n_token * topk,\n                             expert_map_ptr, n_expert, stream);\n  }\n  // expert sort topk expert id and scan expert id get expert_first_token_offset\n  sortAndScanExpert(get_ptr<int>(topk_ids), get_ptr<int>(token_expert_indicies),\n                    get_ptr<int>(permuted_experts_id),\n                    get_ptr<int>(dst_row_id2src_row_id_map),\n                    get_ptr<int64_t>(expert_first_token_offset), n_token,\n                    n_expert, n_local_expert, topk, sorter,\n                    get_ptr<int>(sort_workspace), stream);\n\n  // dispatch expandInputRowsKernelLauncher\n  MOE_DISPATCH(input.scalar_type(), [&] {\n    expandInputRowsKernelLauncher<scalar_t>(\n        get_ptr<scalar_t>(input), get_ptr<scalar_t>(permuted_input),\n        get_ptr<float>(topk_weights), get_ptr<int>(permuted_experts_id),\n        get_ptr<int>(dst_row_id2src_row_id_map),\n        get_ptr<int>(src_row_id2dst_row_id_map),\n        get_ptr<int64_t>(expert_first_token_offset), n_token, valid_num_ptr,\n        n_hidden, topk, n_local_expert, align_block_size_value, stream);\n  });\n\n  // get m_indices and update expert_first_token_offset with align block\n  getMIndices(get_ptr<int64_t>(expert_first_token_offset),\n              get_ptr<int64_t>(align_expert_first_token_offset),\n              get_ptr<int>(m_indices), n_local_expert, align_block_size_value,\n              stream);\n  if (align_block_size.has_value())",
+      "docstring": "",
+      "line": 67
+    },
+    {
+      "name": "copy_",
+      "kind": "function",
+      "signature": "copy_(align_expert_first_token_offset);\n  }\n}\n\nvoid moe_unpermute(\n    const torch::Tensor& permuted_hidden_states,     // [n_token * topk, hidden]\n    const torch::Tensor& topk_weights,               //[n_token, topk]\n    const torch::Tensor& topk_ids,                   // [n_token, topk]\n    const torch::Tensor& src_row_id2dst_row_id_map,  // [n_token, topk]\n    const torch::Tensor& expert_first_token_offset,  // [n_local_expert+1]\n    int64_t n_expert, int64_t n_local_expert, int64_t topk,\n    torch::Tensor& hidden_states  // [n_token, hidden]\n)",
+      "docstring": "",
+      "line": 99
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(src_row_id2dst_row_id_map.sizes() == topk_ids.sizes(),\n              \"topk_ids shape must be same as src_row_id2dst_row_id_map\");\n  TORCH_CHECK(topk_ids.scalar_type() == at::ScalarType::Int,\n              \"topk_ids must be int32\");\n  TORCH_CHECK(\n      permuted_hidden_states.scalar_type() == hidden_states.scalar_type(),\n      \"topk_ids dtype must be same as src_row_id2dst_row_id_map\");\n  auto n_token = hidden_states.size(0);\n  auto n_hidden = hidden_states.size(1);\n  auto stream = at::cuda::getCurrentCUDAStream().stream();\n  const int64_t* valid_ptr =\n      get_ptr<int64_t>(expert_first_token_offset) + n_local_expert;\n  MOE_DISPATCH(hidden_states.scalar_type(), [&] {\n    finalizeMoeRoutingKernelLauncher<scalar_t, scalar_t>(\n        get_ptr<scalar_t>(permuted_hidden_states),\n        get_ptr<scalar_t>(hidden_states), get_ptr<float>(topk_weights),\n        get_ptr<int>(src_row_id2dst_row_id_map), get_ptr<int>(topk_ids),\n        n_token, n_hidden, topk, valid_ptr, stream);\n  });\n}\n\ntemplate <typename T>\n__global__ void shuffleInputRowsKernel(const T* input,\n                                       const int32_t* dst2src_map, T* output,\n                                       int64_t num_src_rows,\n                                       int64_t num_dst_rows, int64_t num_cols)",
+      "docstring": "",
+      "line": 111
+    },
+    {
+      "name": "sizeof",
+      "kind": "function",
+      "signature": "sizeof(T) / 8;\n    using DataElem = cutlass::Array<T, ELEM_PER_THREAD>;\n\n    // Duplicate and permute rows\n    auto const* source_row_ptr =\n        reinterpret_cast<DataElem const*>(input + source_row_idx * num_cols);\n    auto* dest_row_ptr =\n        reinterpret_cast<DataElem*>(output + dest_row_idx * num_cols);\n\n    int64_t const start_offset = threadIdx.x;\n    int64_t const stride = blockDim.x;\n    int64_t const num_elems_in_col = num_cols / ELEM_PER_THREAD;\n\n    for (int elem_index = start_offset; elem_index < num_elems_in_col;\n         elem_index += stride)",
+      "docstring": "",
+      "line": 143
+    },
+    {
+      "name": "shuffle_rows",
+      "kind": "function",
+      "signature": "shuffle_rows(const torch::Tensor& input_tensor,\n                  const torch::Tensor& dst2src_map,\n                  torch::Tensor& output_tensor)",
+      "docstring": "",
+      "line": 161
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(input_tensor.scalar_type() == output_tensor.scalar_type(),\n              \"Input and output tensors must have the same data type\");\n\n  auto stream = at::cuda::getCurrentCUDAStream().stream();\n  int64_t const blocks = output_tensor.size(0);\n  int64_t const threads = 256;\n  int64_t const num_dest_rows = output_tensor.size(0);\n  int64_t const num_src_rows = input_tensor.size(0);\n  int64_t const num_cols = input_tensor.size(1);\n\n  TORCH_CHECK(!(num_cols % (128 / sizeof(input_tensor.scalar_type()) / 8)),\n              \"num_cols must be divisible by 128 / \"\n              \"sizeof(input_tensor.scalar_type()) / 8\");\n\n  MOE_DISPATCH(input_tensor.scalar_type(), [&] {\n    shuffleInputRowsKernel<scalar_t><<<blocks, threads, 0, stream>>>(\n        reinterpret_cast<scalar_t*>(input_tensor.data_ptr()),\n        dst2src_map.data_ptr<int32_t>(),\n        reinterpret_cast<scalar_t*>(output_tensor.data_ptr()), num_src_rows,\n        num_dest_rows, num_cols);\n  });\n}\n\n#else\n\nvoid moe_permute(const torch::Tensor& input, const torch::Tensor& topk_weights,\n                 torch::Tensor& topk_ids,\n                 const torch::Tensor& token_expert_indicies,\n                 const std::optional<torch::Tensor>& expert_map,\n                 int64_t n_expert, int64_t n_local_expert, int64_t topk,\n                 const std::optional<int64_t>& align_block_size,\n                 torch::Tensor& permuted_input,\n                 torch::Tensor& expert_first_token_offset,\n                 torch::Tensor& src_row_id2dst_row_id_map,\n                 torch::Tensor& m_indices)",
+      "docstring": "",
+      "line": 165
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(false, \"moe_unpermute is not supported on CUDA < 12.0\");\n}\n\nvoid moe_unpermute(const torch::Tensor& input,\n                   const torch::Tensor& topk_weights, torch::Tensor& topk_ids,\n                   const torch::Tensor& token_expert_indicies,\n                   const std::optional<torch::Tensor>& expert_map,\n                   int64_t n_expert, int64_t n_local_expert, int64_t topk,\n                   const std::optional<int64_t>& align_block_size,\n                   torch::Tensor& permuted_input,\n                   torch::Tensor& expert_first_token_offset,\n                   torch::Tensor& src_row_id2dst_row_id_map,\n                   torch::Tensor& m_indices)",
+      "docstring": "",
+      "line": 200
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(false, \"moe_unpermute is not supported on CUDA < 12.0\");\n}\n\n#endif\n\nbool moe_permute_unpermute_supported()",
+      "docstring": "",
+      "line": 213
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(CUDA_VERSION) && (CUDA_VERSION >= 12000)\n  return true;\n#else\n  return false;\n#endif\n}\n\nTORCH_LIBRARY_IMPL_EXPAND(TORCH_EXTENSION_NAME, CUDA, m)",
+      "docstring": "",
+      "line": 220
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "c10",
+      "core",
+      "permute_unpermute_kernels",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 11,
+    "public_symbols": 11,
+    "classes": 0,
+    "functions": 11,
+    "internal_deps": 0,
+    "external_deps": 5,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/moe/moe_permute_unpermute_op.cu"
+}

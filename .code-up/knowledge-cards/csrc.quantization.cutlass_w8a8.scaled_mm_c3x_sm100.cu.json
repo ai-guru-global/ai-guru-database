@@ -1,0 +1,37 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.scaled_mm_c3x_sm100.cu",
+  "title": "Scaled Mm C3X Sm100",
+  "type": "module",
+  "summary": "Module providing sm100",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "sm100",
+      "kind": "function",
+      "signature": "sm100(Blackwell).\n*/\n\n#if defined ENABLE_SCALED_MM_SM100 && ENABLE_SCALED_MM_SM100\n\nvoid cutlass_scaled_mm_sm100(torch::Tensor& c, torch::Tensor const& a,\n                             torch::Tensor const& b,\n                             torch::Tensor const& a_scales,\n                             torch::Tensor const& b_scales,\n                             std::optional<torch::Tensor> const& bias)",
+      "docstring": "",
+      "line": 5
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "c3x"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/scaled_mm_c3x_sm100.cu"
+}

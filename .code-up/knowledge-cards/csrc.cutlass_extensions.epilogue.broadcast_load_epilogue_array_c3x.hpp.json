@@ -1,0 +1,136 @@
+{
+  "id": "csrc.cutlass_extensions.epilogue.broadcast_load_epilogue_array_c3x.hpp",
+  "title": "Broadcast Load Epilogue Array C3X",
+  "type": "module",
+  "summary": "Module providing Copyright, can_implement, get_workspace_size, initialize_workspace, Sm90RowOrScalarBroadcastArray and 5 more symbols",
+  "details": "Contains 33 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) 2023 - 2024 NVIDIA CORPORATION & AFFILIATES. All rights\n *reserved. SPDX-License-Identifier: BSD-3-Clause\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice,\n *this list of conditions and the following disclaimer.\n *\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n * this list of conditions and the following disclaimer in the documentation\n * and/or other materials provided with the distribution.\n *\n * 3. Neither the name of the copyright holder nor the names of its\n * contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\n * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n *ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE\n *LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n *CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\n *SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n *INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n *CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\n *ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\n *POSSIBILITY OF SUCH DAMAGE.\n *\n **************************************************************************************************/\n\n//\n// This file is a modified excerpt of\n// include/cutlass/epilogue/fusion/sm90_visitor_load_tma_warpspecialized.hpp\n// from https://github.com/NVIDIA/cutlass v3.5.0\n// It has been modified to support either row/column or scalar broadcasting\n// where the tensor being loaded from is always passed in via a device pointer.\n// This lets one compiled kernel handle all cases of per-tensor or\n// per-channel/per-token quantization.\n//\n// This interface also allows the scales to be passed in as tensors that\n// consistently reside on the device, which avoids an issue with a previous\n// implementation where scalars needed to be on the CPU since they\n// were passed in via float values. This created a potential performance hazard\n// if scales were initially on the device, and caused torch.compile graphs\n// breaks when moving scales to the CPU.\n//\n#pragma once\n\n// Turn off clang-format for the entire file to keep it close to upstream\n// clang-format off\n\n#include \"cutlass/cutlass.h\"\n#include \"cutlass/arch/barrier.h\"\n\n#include \"cute/tensor.hpp\"\n#include \"cutlass/epilogue/fusion/sm90_visitor_tma_warpspecialized.hpp\"\n\nnamespace cutlass::epilogue::fusion {\n\nusing namespace cute;\nusing namespace detail;\n\n// Row vector broadcast\ntemplate<\n  int Stages,\n  class CtaTileShapeMNK,\n  class Element,\n  class StrideMNL = Stride<_0,_1,_0>,\n  int Alignment = 128 / sizeof_bits_v<Element>\n>\nstruct Sm90RowOrScalarBroadcastArray {\n  static_assert(Stages == 0, \"Row broadcast doesn't support smem usage\");\n  static_assert(is_static_v<decltype(take<0,2>(StrideMNL{}))>); // batch stride can be dynamic or static\n  static_assert(take<0,2>(StrideMNL{}) == Stride<_0,_1>{});\n\n  struct SharedStorage { \n    array_aligned<Element, size<1>(CtaTileShapeMNK{})> smem;\n  };\n\n  // This struct has been modified to have a bool indicating that ptr_row is a \n  // scalar that must be broadcast, instead of containing a scalar that is \n  // valid if ptr_row is null.\n  struct Arguments {\n    const Element* const* ptr_row_array = nullptr;\n    bool row_broadcast = true;\n    StrideMNL dRow = {};\n  };\n\n  using Params = Arguments;\n\n  template <class ProblemShape>\n  static constexpr Params\n  to_underlying_arguments(ProblemShape const& problem_shape, Arguments const& args, void* workspace)",
+      "docstring": "",
+      "line": 1
+    },
+    {
+      "name": "can_implement",
+      "kind": "function",
+      "signature": "can_implement(ProblemShape const& problem_shape, Arguments const& args)",
+      "docstring": "",
+      "line": 97
+    },
+    {
+      "name": "get_workspace_size",
+      "kind": "function",
+      "signature": "get_workspace_size(ProblemShape const& problem_shape, Arguments const& args)",
+      "docstring": "",
+      "line": 103
+    },
+    {
+      "name": "initialize_workspace",
+      "kind": "function",
+      "signature": "initialize_workspace(ProblemShape const& problem_shape, Arguments const& args, void* workspace, cudaStream_t stream,\n    CudaHostAdapter* cuda_adapter = nullptr)",
+      "docstring": "",
+      "line": 109
+    },
+    {
+      "name": "Sm90RowOrScalarBroadcastArray",
+      "kind": "function",
+      "signature": "Sm90RowOrScalarBroadcastArray()",
+      "docstring": "",
+      "line": 116
+    },
+    {
+      "name": "Sm90RowOrScalarBroadcastArray",
+      "kind": "function",
+      "signature": "Sm90RowOrScalarBroadcastArray(Params const& params, SharedStorage const& shared_storage)\n      : params(params)\n      , smem(const_cast<Element*>(shared_storage.smem.data()))",
+      "docstring": "",
+      "line": 119
+    },
+    {
+      "name": "is_producer_load_needed",
+      "kind": "function",
+      "signature": "is_producer_load_needed()",
+      "docstring": "",
+      "line": 127
+    },
+    {
+      "name": "is_C_load_needed",
+      "kind": "function",
+      "signature": "is_C_load_needed()",
+      "docstring": "",
+      "line": 132
+    },
+    {
+      "name": "is_zero",
+      "kind": "function",
+      "signature": "is_zero()",
+      "docstring": "",
+      "line": 137
+    },
+    {
+      "name": "return",
+      "kind": "function",
+      "signature": "return(!params.row_broadcast && *(params.ptr_row_array[group]) == Element(0));\n  }\n\n  template <class... Args>\n  CUTLASS_DEVICE auto\n  get_producer_load_callbacks(ProducerLoadArgs<Args...> const& args)",
+      "docstring": "",
+      "line": 140
+    },
+    {
+      "name": "ConsumerStoreCallbacks",
+      "kind": "function",
+      "signature": "ConsumerStoreCallbacks(\n        GS_GTensor tGS_gRow_, GS_STensor tGS_sRow_, \n        GS_CTensor tGS_cRow_, Tiled_G2S tiled_g2s_, \n        SR_STensor tSR_sRow_, SR_RTensor tSR_rRow_,\n        CTensor tCcRow_, ThrResidue residue_tCcRow_, ThrNum thr_num_,\n        int group, Params const& params_)\n      : tGS_gRow(tGS_gRow_)\n      , tGS_sRow(tGS_sRow_)\n      , tGS_cRow(tGS_cRow_)\n      , tiled_G2S(tiled_g2s_)\n      , tSR_sRow(tSR_sRow_)\n      , tSR_rRow(tSR_rRow_)\n      , tCcRow(tCcRow_)\n      , residue_tCcRow(residue_tCcRow_)\n      , group(group)\n      , params(params_)",
+      "docstring": "",
+      "line": 151
+    },
+    {
+      "name": "begin",
+      "kind": "function",
+      "signature": "begin()",
+      "docstring": "",
+      "line": 182
+    },
+    {
+      "name": "fill",
+      "kind": "function",
+      "signature": "fill(tSR_rRow, *(params.ptr_row_array[group]));\n        return;\n      }\n\n      auto synchronize = [&] ()",
+      "docstring": "",
+      "line": 186
+    },
+    {
+      "name": "NamedBarrier::sync",
+      "kind": "function",
+      "signature": "NamedBarrier::sync(thr_num, cutlass::arch::ReservedNamedBarriers::EpilogueBarrier); };\n      Tensor tGS_gRow_flt = filter_zeros(tGS_gRow);\n      Tensor tGS_sRow_flt = filter_zeros(tGS_sRow);\n      Tensor tGS_cRow_flt = make_tensor(tGS_cRow.data(), make_layout(tGS_gRow_flt.shape(), tGS_cRow.stride()));\n\n      for (int i = 0; i < size(tGS_gRow_flt); ++i)",
+      "docstring": "",
+      "line": 191
+    },
+    {
+      "name": "tGS_sRow_flt",
+      "kind": "function",
+      "signature": "tGS_sRow_flt(i) = tGS_gRow_flt(i);\n        }\n        else {\n          tGS_sRow_flt(i) = Element(0); // Set to Zero when OOB so LDS could be issue without any preds.\n        }\n      }\n      synchronize();\n    }\n\n    CUTLASS_DEVICE void\n    begin_loop(int epi_m, int epi_n)",
+      "docstring": "",
+      "line": 200
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cute",
+      "cutlass"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 33,
+    "public_symbols": 33,
+    "classes": 0,
+    "functions": 33,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cutlass_extensions/epilogue/broadcast_load_epilogue_array_c3x.hpp"
+}

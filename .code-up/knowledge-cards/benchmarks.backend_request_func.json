@@ -1,0 +1,109 @@
+{
+  "id": "benchmarks.backend_request_func",
+  "title": "Backend Request Func",
+  "type": "module",
+  "summary": "Module providing async_request_tgi, async_request_openai_chat_completions, async_request_openai_audio, get_model, RequestFuncInput and 4 more symbols",
+  "details": "Contains 2 classes: RequestFuncInput, RequestFuncOutput. Contains 4 functions/methods",
+  "symbols": [
+    {
+      "name": "async_request_tgi",
+      "kind": "function",
+      "signature": "def async_request_tgi(\n    request_func_input: RequestFuncInput,\n    pbar: Optional[tqdm] = None,\n) -> RequestFuncOutput:\n    api_url = request_func_input.api_url\n    assert api_url.endswith(\"generate_stream\")\n\n    async with aiohttp.ClientSession(\n        trust_env=True, timeout=AIOHTTP_TIMEOUT\n    ) as session:\n        params = {\n            \"max_new_tokens\": request_func_input.output_len,\n            \"do_sample\": True,\n            \"temperature\": 0.01,  # TGI does not accept 0.0 temperature.\n            \"top_p\": 0.99,  # TGI does not accept 1.0 top_p.\n            \"truncate\": request_func_input.prompt_len,\n            \"ignore_eos_token\": request_func_input.ignore_eos,\n        }\n        payload = {\n            \"inputs\": request_func_input.prompt,\n            \"parameters\": params,\n        }\n        output = RequestFuncOutput()\n        output.prompt_len = request_func_input.prompt_len\n        if request_func_input.ignore_eos:\n            output.output_tokens = request_func_input.output_len\n        else:\n            output.output_tokens = None\n\n        ttft = 0.0\n        st = time.perf_counter()\n        most_recent_timestamp = st\n        try:\n            async with session.post(url=api_url, json=payload) as response:\n                if response.status == 200:\n                    async for chunk_bytes in response.content:\n                        chunk_bytes = chunk_bytes.strip()\n                        if not chunk_bytes:\n                            continue\n                        chunk_bytes = chunk_bytes.decode(\"utf-8\")\n\n                        # NOTE: Sometimes TGI returns a ping response without\n                        # any data, we should skip it.\n                        if chunk_bytes.startswith(\":\"):\n                            continue\n                        chunk = chunk_bytes.removeprefix(\"data:\")\n\n                        data = json.loads(chunk)\n                        timestamp = time.perf_counter()\n                        # First token\n                        if ttft == 0.0:\n                            ttft = time.perf_counter() - st\n                            output.ttft = ttft\n\n                        # Decoding phase\n                        else:\n                            output.itl.append(timestamp - most_recent_timestamp)\n\n                        most_recent_timestamp = timestamp\n\n                    output.latency = most_recent_timestamp - st\n                    output.success = True\n                    output.generated_text = data[\"generated_text\"]\n                else:\n                    output.error = response.reason or \"\"\n                    output.success = False\n        except Exception:\n            output.success = False\n            exc_info = sys.exc_info()\n            output.error = \"\".join(traceback.format_exception(*exc_info))\n\n        if pbar:\n            pbar.update(1)\n        return output\n\n\nasync def async_request_trt_llm(\n    request_func_input: RequestFuncInput,\n    pbar: Optional[tqdm] = None,\n) -> RequestFuncOutput:\n    api_url = request_func_input.api_url\n    assert api_url.endswith(\"generate_stream\")\n\n    async with aiohttp.ClientSession(\n        trust_env=True, timeout=AIOHTTP_TIMEOUT\n    ) as session:\n        payload = {\n            \"accumulate_tokens\": True,\n            \"text_input\": request_func_input.prompt,\n            \"temperature\": 0.0,\n            \"top_p\": 1.0,\n            \"max_tokens\": request_func_input.output_len,\n            \"stream\": True,\n        }\n        if request_func_input.ignore_eos:\n            payload[\"min_length\"] = request_func_input.output_len\n        output = RequestFuncOutput()\n        output.prompt_len = request_func_input.prompt_len\n\n        ttft = 0.0\n        st = time.perf_counter()\n        most_recent_timestamp = st\n        try:\n            async with session.post(url=api_url, json=payload) as response:\n                if response.status == 200:\n                    async for chunk_bytes in response.content:\n                        chunk_bytes = chunk_bytes.strip()\n                        if not chunk_bytes:\n                            continue\n\n                        chunk = chunk_bytes.decode(\"utf-8\").removeprefix(\"data:\")\n\n                        data = json.loads(chunk)\n                        output.generated_text += data[\"text_output\"]\n                        timestamp = time.perf_counter()\n                        # First token\n                        if ttft == 0.0:\n                            ttft = timestamp - st\n                            output.ttft = ttft\n\n                        # Decoding phase\n                        else:\n                            output.itl.append(timestamp - most_recent_timestamp)\n\n                        most_recent_timestamp = timestamp\n\n                    output.latency = most_recent_timestamp - st\n                    output.success = True\n\n                else:\n                    output.error = response.reason or \"\"\n                    output.success = False\n        except Exception:\n            output.success = False\n            exc_info = sys.exc_info()\n            output.error = \"\".join(traceback.format_exception(*exc_info))\n\n        if pbar:\n            pbar.update(1)\n        return output\n\n\nasync def async_request_deepspeed_mii(\n    request_func_input: RequestFuncInput,\n    pbar: Optional[tqdm] = None,\n) -> RequestFuncOutput:\n    api_url = request_func_input.api_url\n    assert api_url.endswith((\"completions\", \"profile\")), (\n        \"OpenAI Completions API URL must end with 'completions' or 'profile'.\"\n    )\n\n    async with aiohttp.ClientSession(\n        trust_env=True, timeout=AIOHTTP_TIMEOUT\n    ) as session:\n        payload = {\n            \"model\": request_func_input.model,\n            \"prompt\": request_func_input.prompt,\n            \"max_tokens\": request_func_input.output_len,\n            \"temperature\": 0.01,  # deepspeed-mii does not accept 0.0 temp.\n            \"top_p\": 1.0,\n        }\n        headers = {\"Authorization\": f\"Bearer {os.environ.get('OPENAI_API_KEY')}\"}\n\n        output = RequestFuncOutput()\n        output.prompt_len = request_func_input.prompt_len\n\n        # NOTE: DeepSpeed-MII doesn't support streaming as of Jan 28 2024,\n        # will use 0 as placeholder.\n        # See https://github.com/microsoft/DeepSpeed-MII/pull/311\n        output.ttft = 0\n\n        st = time.perf_counter()\n        try:\n            async with session.post(\n                url=api_url, json=payload, headers=headers\n            ) as response:\n                if response.status == 200:\n                    parsed_resp = await response.json()\n                    output.latency = time.perf_counter() - st\n                    if \"choices\" in parsed_resp:\n                        output.generated_text = parsed_resp[\"choices\"][0][\"text\"]\n                    elif \"text\" in parsed_resp:\n                        output.generated_text = parsed_resp[\"text\"][0]\n                    else:\n                        output.error = (\n                            \"Unexpected response format: \"\n                            \"neither 'choices' nor 'text' found\"\n                        )\n                        output.success = False\n                    output.success = True\n                else:\n                    output.error = response.reason or \"\"\n                    output.success = False\n        except Exception:\n            output.success = False\n            exc_info = sys.exc_info()\n            output.error = \"\".join(traceback.format_exception(*exc_info))\n\n        if pbar:\n            pbar.update(1)\n        return output\n\n\nasync def async_request_openai_completions(\n    request_func_input: RequestFuncInput,\n    pbar: Optional[tqdm] = None,\n) -> RequestFuncOutput:\n    api_url = request_func_input.api_url\n    assert api_url.endswith((\"completions\", \"profile\")), (\n        \"OpenAI Completions API URL must end with 'completions' or 'profile'.\"\n    )\n\n    async with aiohttp.ClientSession(\n        trust_env=True, timeout=AIOHTTP_TIMEOUT\n    ) as session:\n        payload = {\n            \"model\": request_func_input.model_name\n            if request_func_input.model_name\n            else request_func_input.model,\n            \"prompt\": request_func_input.prompt,\n            \"temperature\": 0.0,\n            \"repetition_penalty\": 1.0,\n            \"max_tokens\": request_func_input.output_len,\n            \"logprobs\": request_func_input.logprobs,\n            \"stream\": True,\n            \"stream_options\": {\n                \"include_usage\": True,\n            },\n        }\n        if request_func_input.ignore_eos:\n            payload[\"ignore_eos\"] = request_func_input.ignore_eos\n        if request_func_input.extra_body:\n            payload.update(request_func_input.extra_body)\n        headers = {\"Authorization\": f\"Bearer {os.environ.get('OPENAI_API_KEY')}\"}\n\n        output = RequestFuncOutput()\n        output.prompt_len = request_func_input.prompt_len\n\n        generated_text = \"\"\n        st = time.perf_counter()\n        most_recent_timestamp = st\n        try:\n            async with session.post(\n                url=api_url, json=payload, headers=headers\n            ) as response:\n                if response.status == 200:\n                    first_chunk_received = False\n                    async for chunk_bytes in response.content:\n                        chunk_bytes = chunk_bytes.strip()\n                        if not chunk_bytes:\n                            continue\n\n                        chunk = chunk_bytes.decode(\"utf-8\").removeprefix(\"data: \")\n                        if chunk != \"[DONE]\":\n                            data = json.loads(chunk)\n\n                            # NOTE: Some completion API might have a last\n                            # usage summary response without a token so we\n                            # want to check a token was generated\n                            if choices",
+      "docstring": "",
+      "line": 52
+    },
+    {
+      "name": "async_request_openai_chat_completions",
+      "kind": "function",
+      "signature": "def async_request_openai_chat_completions(\n    request_func_input: RequestFuncInput,\n    pbar: Optional[tqdm] = None,\n) -> RequestFuncOutput:\n    api_url = request_func_input.api_url\n    assert api_url.endswith((\"chat/completions\", \"profile\")), (\n        \"OpenAI Chat Completions API URL must end with 'chat/completions'.\"\n    )\n\n    async with aiohttp.ClientSession(\n        trust_env=True, timeout=AIOHTTP_TIMEOUT\n    ) as session:\n        content = [{\"type\": \"text\", \"text\": request_func_input.prompt}]\n        if request_func_input.multi_modal_content:\n            content.append(request_func_input.multi_modal_content)\n        payload = {\n            \"model\": request_func_input.model_name\n            if request_func_input.model_name\n            else request_func_input.model,\n            \"messages\": [\n                {\"role\": \"user\", \"content\": content},\n            ],\n            \"temperature\": 0.0,\n            \"max_completion_tokens\": request_func_input.output_len,\n            \"stream\": True,\n            \"stream_options\": {\n                \"include_usage\": True,\n            },\n        }\n        if request_func_input.ignore_eos:\n            payload[\"ignore_eos\"] = request_func_input.ignore_eos\n        if request_func_input.extra_body:\n            payload.update(request_func_input.extra_body)\n        headers = {\n            \"Content-Type\": \"application/json\",\n            \"Authorization\": f\"Bearer {os.environ.get('OPENAI_API_KEY')}\",\n        }\n\n        output = RequestFuncOutput()\n        output.prompt_len = request_func_input.prompt_len\n\n        generated_text = \"\"\n        ttft = 0.0\n        st = time.perf_counter()\n        most_recent_timestamp = st\n        try:\n            async with session.post(\n                url=api_url, json=payload, headers=headers\n            ) as response:\n                if response.status == 200:\n                    async for chunk_bytes in response.content:\n                        chunk_bytes = chunk_bytes.strip()\n                        if not chunk_bytes:\n                            continue\n\n                        chunk = chunk_bytes.decode(\"utf-8\").removeprefix(\"data: \")\n                        if chunk != \"[DONE]\":\n                            timestamp = time.perf_counter()\n                            data = json.loads(chunk)\n\n                            if choices",
+      "docstring": "",
+      "line": 353
+    },
+    {
+      "name": "async_request_openai_audio",
+      "kind": "function",
+      "signature": "def async_request_openai_audio(\n    request_func_input: RequestFuncInput,\n    pbar: Optional[tqdm] = None,\n) -> RequestFuncOutput:\n    # Lazy import without PlaceholderModule to avoid vllm dep.\n    import soundfile\n\n    api_url = request_func_input.api_url\n    assert api_url.endswith((\"transcriptions\", \"translations\")), (\n        \"OpenAI Chat Completions API URL must end with 'transcriptions' \"\n    )\n    \"or `translations`.\"\n\n    async with aiohttp.ClientSession(\n        trust_env=True, timeout=AIOHTTP_TIMEOUT\n    ) as session:\n        content = [{\"type\": \"text\", \"text\": request_func_input.prompt}]\n        payload = {\n            \"model\": request_func_input.model_name\n            if request_func_input.model_name\n            else request_func_input.model,\n            \"temperature\": 0.0,\n            \"max_completion_tokens\": request_func_input.output_len,\n            \"stream\": True,\n            \"language\": \"en\",\n            # Flattened due to multipart/form-data\n            \"stream_include_usage\": True,\n            \"stream_continuous_usage_stats\": True,\n        }\n        if request_func_input.extra_body:\n            payload.update(request_func_input.extra_body)\n        headers = {\n            \"Authorization\": f\"Bearer {os.environ.get('OPENAI_API_KEY')}\",\n        }\n\n        # Send audio file\n        def to_bytes(y, sr):\n            buffer = io.BytesIO()\n            soundfile.write(buffer, y, sr, format=\"WAV\")\n            buffer.seek(0)\n            return buffer\n\n        with to_bytes(*request_func_input.multi_modal_content[\"audio\"]) as f:\n            form = aiohttp.FormData()\n            form.add_field(\"file\", f, content_type=\"audio/wav\")\n            for key, value in payload.items():\n                form.add_field(key, str(value))\n\n            output = RequestFuncOutput()\n            output.prompt_len = request_func_input.prompt_len\n\n            generated_text = \"\"\n            ttft = 0.0\n            st = time.perf_counter()\n            most_recent_timestamp = st\n            try:\n                async with session.post(\n                    url=api_url, data=form, headers=headers\n                ) as response:\n                    if response.status == 200:\n                        async for chunk_bytes in response.content:\n                            chunk_bytes = chunk_bytes.strip()\n                            if not chunk_bytes:\n                                continue\n\n                            chunk = chunk_bytes.decode(\"utf-8\").removeprefix(\"data: \")\n                            if chunk != \"[DONE]\":\n                                timestamp = time.perf_counter()\n                                data = json.loads(chunk)\n\n                                if choices",
+      "docstring": "",
+      "line": 446
+    },
+    {
+      "name": "get_model",
+      "kind": "function",
+      "signature": "def get_model(pretrained_model_name_or_path: str) -> str:\n    if os.getenv(\"VLLM_USE_MODELSCOPE\", \"False\").lower() == \"true\":\n        from modelscope import snapshot_download\n\n        from vllm.model_executor.model_loader.weight_utils import get_lock\n\n        # Use file lock to prevent multiple processes from\n        # downloading the same model weights at the same time.\n        with get_lock(pretrained_model_name_or_path):\n            model_path = snapshot_download(\n                model_id=pretrained_model_name_or_path,\n                local_files_only=huggingface_hub.constants.HF_HUB_OFFLINE,\n                ignore_file_pattern=[\".*.pt\", \".*.safetensors\", \".*.bin\"],\n            )\n\n            return model_path\n    return pretrained_model_name_or_path\n\n\ndef get_tokenizer(\n    pretrained_model_name_or_path: str,\n    tokenizer_mode: str = \"auto\",\n    trust_remote_code: bool = False,\n    **kwargs,\n) -> Union[PreTrainedTokenizer, PreTrainedTokenizerFast]:\n    if pretrained_model_name_or_path is not None and not os.path.exists(\n        pretrained_model_name_or_path\n    ):\n        pretrained_model_name_or_path = get_model(pretrained_model_name_or_path)\n    if tokenizer_mode == \"slow\":\n        if kwargs.get(\"use_fast\", False):\n            raise ValueError(\"Cannot use the fast tokenizer in slow tokenizer mode.\")\n        kwargs[\"use_fast\"] = False\n    if tokenizer_mode == \"mistral\":\n        try:\n            from vllm.transformers_utils.tokenizer import MistralTokenizer\n        except ImportError as e:\n            raise ImportError(\n                \"MistralTokenizer requires vllm package.\\n\"\n                \"Please install it with `pip install vllm` \"\n                \"to use mistral tokenizer mode.\"\n            ) from e\n        return MistralTokenizer.from_pretrained(str(pretrained_model_name_or_path))\n    else:\n        return AutoTokenizer.from_pretrained(\n            pretrained_model_name_or_path,\n            trust_remote_code=trust_remote_code,\n            **kwargs,\n        )\n\n\nASYNC_REQUEST_FUNCS = {\n    \"tgi\": async_request_tgi,\n    \"vllm\": async_request_openai_completions,\n    \"lmdeploy\": async_request_openai_completions,\n    \"deepspeed-mii\": async_request_deepspeed_mii,\n    \"openai\": async_request_openai_completions,\n    \"openai-chat\": async_request_openai_chat_completions,\n    \"openai-audio\": async_request_openai_audio,\n    \"tensorrt-llm\": async_request_trt_llm,\n    \"scalellm\": async_request_openai_completions,\n    \"sglang\": async_request_openai_completions,\n    \"llama.cpp\"",
+      "docstring": "",
+      "line": 553
+    },
+    {
+      "name": "RequestFuncInput",
+      "kind": "class",
+      "signature": "class RequestFuncInput",
+      "docstring": "",
+      "line": 24
+    },
+    {
+      "name": "RequestFuncOutput",
+      "kind": "class",
+      "signature": "class RequestFuncOutput",
+      "docstring": "",
+      "line": 39
+    },
+    {
+      "name": "AIOHTTP_TIMEOUT",
+      "kind": "constant",
+      "signature": "AIOHTTP_TIMEOUT = ...",
+      "docstring": "",
+      "line": 21
+    },
+    {
+      "name": "ASYNC_REQUEST_FUNCS",
+      "kind": "constant",
+      "signature": "ASYNC_REQUEST_FUNCS = ...",
+      "docstring": "",
+      "line": 604
+    },
+    {
+      "name": "OPENAI_COMPATIBLE_BACKENDS",
+      "kind": "constant",
+      "signature": "OPENAI_COMPATIBLE_BACKENDS = ...",
+      "docstring": "",
+      "line": 618
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "aiohttp",
+      "dataclasses",
+      "huggingface_hub",
+      "io",
+      "json",
+      "modelscope",
+      "os",
+      "soundfile",
+      "sys",
+      "time",
+      "tqdm",
+      "traceback",
+      "transformers",
+      "typing",
+      "vllm",
+      "without PlaceholderModule to avoid vllm dep"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 9,
+    "public_symbols": 9,
+    "classes": 2,
+    "functions": 4,
+    "internal_deps": 0,
+    "external_deps": 16,
+    "depth": 0,
+    "complexity_sum": 29
+  },
+  "tags": [
+    "oop",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/backend_request_func.py"
+}

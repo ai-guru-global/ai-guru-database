@@ -24,7 +24,7 @@ RAG 监控（RAG Monitoring）— 检索增强生成系统的可观测性，涵�
 
 - [[14_RAG系统/index|RAG系统首页]]
 - [[14_RAG系统/07_RAG评估/03_RAG评估_索引|RAG Evaluation]]
-- [[13_运维/06_可观测性/01_索引|Observability]]
+- [[13_运维/06_可观测性/INDEX|Observability]]
 
 ## 专题深度解析
 

@@ -216,13 +216,13 @@ name_zh: "AI Guru 知识库内容完整性评估"
 | 治理/notes/AI_Concept_Knowledge_Graph.md | 7,918 |
 | 10_部署推理/04_模型量化/Quantization_Techniques_2026.md | 6,859 |
 | 07_模型训练/02_数据工程/Tokenizer_Design_2026.md | 6,769 |
-| 05_大模型/15_中国LLM生态/DeepSeek_Deep_Dive.md | 6,761 |
+| 05_大模型/14_中国LLM生态/DeepSeek_Deep_Dive.md | 6,761 |
 | 07_模型训练/02_数据工程/Data_Curation_and_Mixture_2026.md | 6,695 |
-| 05_大模型/14_全球LLM生态/OpenAI_Deep_Dive.md | 6,694 |
+| 05_大模型/13_全球LLM生态/OpenAI_Deep_Dive.md | 6,694 |
 | 01_数学基础/10_AI硬件/NVIDIA_AMD_GPU_Deep_Dive.md | 6,612 |
 | 治理/notes/AI_Full_Stack_Concepts.md | 6,514 |
 | 07_模型训练/06_对齐研究/GRPO_and_New_Alignment_Methods.md | 5,895 |
-| 05_大模型/14_全球LLM生态/Anthropic_Claude_Deep_Dive.md | 5,824 |
+| 05_大模型/13_全球LLM生态/Anthropic_Claude_Deep_Dive.md | 5,824 |
 
 ---
 

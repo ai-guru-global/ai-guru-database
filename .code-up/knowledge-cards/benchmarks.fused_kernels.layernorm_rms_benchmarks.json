@@ -1,0 +1,61 @@
+{
+  "id": "benchmarks.fused_kernels.layernorm_rms_benchmarks",
+  "title": "Layernorm Rms Benchmarks",
+  "type": "module",
+  "summary": "Module providing description, get_bench_params, bench_params_t",
+  "details": "Contains 1 classes: bench_params_t. Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "description",
+      "kind": "function",
+      "signature": "def description(self)",
+      "docstring": "",
+      "line": 27
+    },
+    {
+      "name": "get_bench_params",
+      "kind": "function",
+      "signature": "def get_bench_params() -> list[bench_params_t]:\n    ## Test Fixtures\n    NUM_TOKENS = [2**x for x in range(11)]\n    HIDDEN_SIZES = list(range(1024, 8129, 1024))\n    ADD_RESIDUAL = [True, False]\n    DTYPES = [torch.bfloat16, torch.float]\n\n    combinations = product(NUM_TOKENS, HIDDEN_SIZES, ADD_RESIDUAL, DTYPES)\n    bench_params = list(\n        map(lambda x: bench_params_t(x[0], x[1], x[2], x[3]), combinations)\n    )\n    return bench_params\n\n\n# Reference impls\ndef unfused_int8_impl(\n    rms_norm_layer: RMSNorm,\n    x: torch.Tensor,\n    residual: Optional[torch.Tensor],\n    quant_dtype: torch.dtype,\n):\n    # Norm\n    torch_out = None\n    if residual is None:\n        torch_out = rms_norm_layer.forward_cuda(x, residual)\n    else:\n        torch_out, _ = rms_norm_layer.forward_cuda(x, residual)\n\n    # Quant\n    torch_out, _, _ = ops.scaled_int8_quant(torch_out)\n\n\ndef unfused_fp8_impl(\n    rms_norm_layer: RMSNorm,\n    x: torch.Tensor,\n    residual: Optional[torch.Tensor],\n    quant_dtype: torch.dtype,\n):\n    # Norm\n    torch_out = None\n    if residual is None:\n        torch_out = rms_norm_layer.forward_cuda(x, residual)\n    else:\n        torch_out, _ = rms_norm_layer.forward_cuda(x, residual)\n\n    # Quant\n    torch_out, _ = ops.scaled_fp8_quant(torch_out)\n\n\ndef fused_impl(\n    rms_norm_layer: RMSNorm,  # this stores the weights\n    x: torch.Tensor,\n    residual: Optional[torch.Tensor],\n    quant_dtype: torch.dtype,\n):\n    out, _ = ops.rms_norm_dynamic_per_token_quant(\n        x, rms_norm_layer.weight, 1e-6, quant_dtype, residual=residual\n    )\n\n\n# Bench functions\ndef bench_fn(\n    rms_norm_layer: RMSNorm,\n    x: torch.Tensor,\n    residual: torch.Tensor,\n    quant_dtype: torch.dtype,\n    label: str,\n    sub_label: str,\n    fn: Callable,\n    description: str,\n) -> TMeasurement:\n    min_run_time = 1\n\n    globals = {\n        \"rms_norm_layer\": rms_norm_layer,\n        \"x\": x,\n        \"residual\": residual,\n        \"quant_dtype\": quant_dtype,\n        \"fn\": fn,\n    }\n    return TBenchmark.Timer(\n        stmt=\"fn(rms_norm_layer, x, residual, quant_dtype)\",\n        globals=globals,\n        label=label,\n        sub_label=sub_label,\n        description=description,\n    ).blocked_autorange(min_run_time=min_run_time)\n\n\ndef bench(params: bench_params_t, label: str, sub_label: str) -> Iterable[TMeasurement]:\n    # Make inputs\n    layer = RMSNorm(params.hidden_size, 1e-6).to(dtype=params.dtype)\n    # Make weights\n    layer.weight.data.normal_(mean=1.0, std=0.1)\n    # Make inputs\n    scale = 1 / params.hidden_size\n    x = (\n        torch.randn(\n            params.num_tokens, params.hidden_size, dtype=params.dtype, device=\"cuda\"\n        )\n        * scale\n    )\n    residual = (\n        (torch.randn_like(x) * scale).to(device=\"cuda\") if params.add_residual else None\n    )\n\n    timers = []\n\n    # unfused int8 impl.\n    timers.append(\n        bench_fn(\n            layer,\n            x,\n            residual,\n            torch.int8,\n            label,\n            sub_label,\n            unfused_int8_impl,\n            \"unfused_int8_impl\",\n        )\n    )\n\n    # unfused fp8 impl.\n    timers.append(\n        bench_fn(\n            layer,\n            x,\n            residual,\n            torch.float8_e4m3fn,\n            label,\n            sub_label,\n            unfused_fp8_impl,\n            \"unfused_fp8_impl\",\n        )\n    )\n\n    # fused int8 impl.\n    timers.append(\n        bench_fn(\n            layer,\n            x,\n            residual,\n            torch.int8,\n            label,\n            sub_label,\n            fused_impl,\n            \"fused_int8_impl\",\n        )\n    )\n\n    # fused fp8 impl.\n    timers.append(\n        bench_fn(\n            layer,\n            x,\n            residual,\n            torch.float8_e4m3fn,\n            label,\n            sub_label,\n            fused_impl,\n            \"fused_fp8_impl\",\n        )\n    )\n\n    print_timers(timers)\n\n    return timers\n\n\n# launch bench\n# runner\ndef print_timers(timers: Iterable[TMeasurement]):\n    compare = TBenchmark.Compare(timers)\n    compare.print()\n\n\ndef main():\n    torch.set_default_device(\"cuda\")\n    bench_params = get_bench_params()\n\n    timers = []\n    for bp in tqdm(bench_params):\n        timers.extend(bench(bp, \"rms-norm-dynamic-per-token-quant\", bp.description()))\n    print_timers(timers)\n\n    # pickle all the results\n    timestamp = int(time.time())\n    with open(f\"rms_norm_dpt_quant-{timestamp}.pkl\", \"wb\") as f:\n        pkl.dump(timers, f)\n\n\nif __name__ == \"__main__\"",
+      "docstring": "",
+      "line": 36
+    },
+    {
+      "name": "bench_params_t",
+      "kind": "class",
+      "signature": "class bench_params_t",
+      "docstring": "",
+      "line": 20
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "collections",
+      "dataclasses",
+      "itertools",
+      "pickle",
+      "time",
+      "torch",
+      "tqdm",
+      "typing",
+      "vllm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 3,
+    "public_symbols": 3,
+    "classes": 1,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 9,
+    "depth": 0,
+    "complexity_sum": 5
+  },
+  "tags": [
+    "oop",
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/fused_kernels/layernorm_rms_benchmarks.py"
+}

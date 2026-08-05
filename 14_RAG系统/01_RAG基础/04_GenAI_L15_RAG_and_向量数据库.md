@@ -463,7 +463,7 @@ RAG和向量数据库可以应用于多种场景：
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[11_模型运维/10_LLMOps_大模型运维/01_GenAI_L14_GenAI_应用_Lifecycle|L14 GenAI应用生命周期]] | [[05_大模型/14_全球LLM生态/GenAI_L16_Open_Source_Models_and_Hugging_Face|L16 开源模型与Hugging Face]] |
+| [[11_模型运维/10_LLMOps_大模型运维/01_GenAI_L14_GenAI_应用_Lifecycle|L14 GenAI应用生命周期]] | [[05_大模型/13_全球LLM生态/GenAI_L16_Open_Source_Models_and_Hugging_Face|L16 开源模型与Hugging Face]] |
 
 ## Related
 

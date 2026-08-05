@@ -1,0 +1,63 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.moe.get_group_starts.cuh",
+  "title": "Get Group Starts",
+  "type": "module",
+  "summary": "Module providing get_group_gemm_starts, __CALL_GET_STARTS_KERNEL, data_ptr, TORCH_CHECK",
+  "details": "Contains 4 functions/methods",
+  "symbols": [
+    {
+      "name": "get_group_gemm_starts",
+      "kind": "function",
+      "signature": "get_group_gemm_starts(\n    int32_t* expert_offsets, ElementAB** a_offsets, ElementAB** b_offsets,\n    ElementC** out_offsets, ElementAccumulator** a_scales_offsets,\n    ElementAccumulator** b_scales_offsets, ElementAB* a_base_as_int,\n    ElementAB* b_base_as_int, ElementC* out_base_as_int,\n    ElementAccumulator* a_scales_base_as_int,\n    ElementAccumulator* b_scales_base_as_int, int64_t n, int64_t k,\n    bool per_act_token, bool per_out_ch)",
+      "docstring": "",
+      "line": 9
+    },
+    {
+      "name": "__CALL_GET_STARTS_KERNEL",
+      "kind": "function",
+      "signature": "__CALL_GET_STARTS_KERNEL(TENSOR_C_TYPE, C_TYPE)                    \\\n  else if (out_tensors.dtype() == TENSOR_C_TYPE)",
+      "docstring": "",
+      "line": 33
+    },
+    {
+      "name": "data_ptr",
+      "kind": "function",
+      "signature": "data_ptr()),              \\\n            static_cast<cutlass::float_e4m3_t**>(a_ptrs.data_ptr()),       \\\n            static_cast<cutlass::float_e4m3_t**>(b_ptrs.data_ptr()),       \\\n            static_cast<C_TYPE**>(out_ptrs.data_ptr()),                    \\\n            static_cast<float**>(a_scales_ptrs.data_ptr()),                \\\n            static_cast<float**>(b_scales_ptrs.data_ptr()),                \\\n            static_cast<cutlass::float_e4m3_t*>(a_tensors.data_ptr()),     \\\n            static_cast<cutlass::float_e4m3_t*>(b_tensors.data_ptr()),     \\\n            static_cast<C_TYPE*>(out_tensors.data_ptr()),                  \\\n            static_cast<float*>(a_scales.data_ptr()),                      \\\n            static_cast<float*>(b_scales.data_ptr()), out_tensors.size(1), \\\n            a_tensors.size(1), per_act_token, per_out_ch);                 \\\n  }\n\nnamespace {\n\nvoid run_get_group_gemm_starts(\n    torch::Tensor const& expert_offsets, torch::Tensor& a_ptrs,\n    torch::Tensor& b_ptrs, torch::Tensor& out_ptrs,\n    torch::Tensor& a_scales_ptrs, torch::Tensor& b_scales_ptrs,\n    torch::Tensor const& a_tensors, torch::Tensor const& b_tensors,\n    torch::Tensor& out_tensors, torch::Tensor const& a_scales,\n    torch::Tensor const& b_scales)",
+      "docstring": "",
+      "line": 37
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(a_tensors.dtype() == torch::kFloat8_e4m3fn);\n  TORCH_CHECK(b_tensors.dtype() == torch::kFloat8_e4m3fn);\n  TORCH_CHECK(a_scales.dtype() == torch::kFloat32);\n  TORCH_CHECK(b_scales.dtype() == torch::kFloat32);\n\n  int num_experts = static_cast<int>(expert_offsets.size(0));\n  bool per_act_token = a_scales.numel() != 1;\n  bool per_out_ch = b_scales.numel() != num_experts;\n\n  auto stream = at::cuda::getCurrentCUDAStream(a_tensors.device().index());\n\n  if (false)",
+      "docstring": "",
+      "line": 59
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "c10",
+      "core",
+      "cuda",
+      "cutlass",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 4,
+    "public_symbols": 4,
+    "classes": 0,
+    "functions": 4,
+    "internal_deps": 0,
+    "external_deps": 5,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/moe/get_group_starts.cuh"
+}

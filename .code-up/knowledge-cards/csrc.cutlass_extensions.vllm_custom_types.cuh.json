@@ -1,0 +1,51 @@
+{
+  "id": "csrc.cutlass_extensions.vllm_custom_types.cuh",
+  "title": "Vllm Custom Types",
+  "type": "module",
+  "summary": "Module providing vllm_biased_integer_subbyte, vllm_biased_integer_subbyte, vllm_biased_integer_subbyte",
+  "details": "Contains 3 functions/methods",
+  "symbols": [
+    {
+      "name": "vllm_biased_integer_subbyte",
+      "kind": "function",
+      "signature": "vllm_biased_integer_subbyte() = default;\n\n  /// Conversion from integer type\n  CUTLASS_HOST_DEVICE explicit vllm_biased_integer_subbyte(int value)\n      : Base(value)",
+      "docstring": "",
+      "line": 24
+    },
+    {
+      "name": "vllm_biased_integer_subbyte",
+      "kind": "function",
+      "signature": "vllm_biased_integer_subbyte(unsigned value)\n      : Base(value)",
+      "docstring": "",
+      "line": 29
+    },
+    {
+      "name": "vllm_biased_integer_subbyte",
+      "kind": "function",
+      "signature": "vllm_biased_integer_subbyte(double value)\n      : Base(value)",
+      "docstring": "",
+      "line": 31
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cutlass"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 3,
+    "public_symbols": 3,
+    "classes": 0,
+    "functions": 3,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cutlass_extensions/vllm_custom_types.cuh"
+}

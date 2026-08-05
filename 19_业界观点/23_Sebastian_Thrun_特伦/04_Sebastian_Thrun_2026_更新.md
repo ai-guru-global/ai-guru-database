@@ -103,7 +103,7 @@ Thrun 作为自动驾驶先驱，在 2026 年回顾产业成熟。
 | 公司 | 技术 | 商业化 |
 |------|------|--------|
 | Waymo | L4 激光雷达 | 规模化运营 |
-| Tesla（[[19_业界观点/07_Elon_Musk_马斯克/03_索引|Musk]]） | L2-L3 纯视觉 | FSD 推广 |
+| Tesla（[[19_业界观点/07_Elon_Musk_马斯克/INDEX|Musk]]） | L2-L3 纯视觉 | FSD 推广 |
 | Cruise | L4（重启） | 有限运营 |
 | 百度 Apollo | L4 | 中国运营 |
 | Zoox | L4 | 试点 |
@@ -124,7 +124,7 @@ Thrun 作为自动驾驶先驱，在 2026 年回顾产业成熟。
 | 路线 | 代表 | 优势 | 劣势 |
 |------|------|------|------|
 | 激光雷达+高精地图 | Waymo（Thrun 影响） | 安全冗余 | 成本高 |
-| 纯视觉端到端 | Tesla（[[19_业界观点/02_Andrej_Karpathy_卡帕西/03_索引|Karpathy]] 影响） | 成本低 | 泛化难 |
+| 纯视觉端到端 | Tesla（[[19_业界观点/02_Andrej_Karpathy_卡帕西/INDEX|Karpathy]] 影响） | 成本低 | 泛化难 |
 | 混合方案 | 多数厂商 | 平衡 | 复杂 |
 
 > "When I started the Google self-driving car project in 2009, people thought I was crazy. Today, Waymo drives millions of miles safely. The dream is becoming reality, but slower than I hoped."
@@ -184,7 +184,7 @@ Thrun 的核心信念：
 | 核心信念 | "机器比人更安全" |
 | 车祸 | "可预防的流行病" |
 | 技术路线 | 激光雷达+高精地图 |
-| 与 [[19_业界观点/07_Elon_Musk_马斯克/03_索引|Musk]] | 路线分歧 |
+| 与 [[19_业界观点/07_Elon_Musk_马斯克/INDEX|Musk]] | 路线分歧 |
 | 现状 | 谨慎乐观 |
 
 ### 关于 AI 教育
@@ -194,7 +194,7 @@ Thrun 的核心信念：
 | 最大价值 | 教育和赋能人类 |
 | 理念 | "pedagogy at scale" |
 | 方法 | 纳米学位+实战 |
-| 与 [[19_业界观点/03_Andrew_Ng_吴恩达/03_索引|Ng]] | 教育赛道呼应 |
+| 与 [[19_业界观点/03_Andrew_Ng_吴恩达/INDEX|Ng]] | 教育赛道呼应 |
 | 2026 焦点 | 企业内嵌教育 |
 
 ### 关于 AGI
@@ -213,8 +213,8 @@ Thrun 的核心信念：
 | 方法 | "在应用中监管" |
 | 反对 | 一刀切限制研究 |
 | 支持 | 行业安全标准 |
-| 与 [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] | 差异化 |
-| 与 [[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]] | 不完全一致 |
+| 与 [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] | 差异化 |
+| 与 [[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]] | 不完全一致 |
 
 ### 关于登月创新
 
@@ -232,7 +232,7 @@ Thrun 的核心信念：
 
 ### 与其他 AI 教育者的对比
 
-| 维度 | Thrun | [[19_业界观点/03_Andrew_Ng_吴恩达/03_索引|Ng]] | [[19_业界观点/02_Andrej_Karpathy_卡帕西/03_索引|Karpathy]] |
+| 维度 | Thrun | [[19_业界观点/03_Andrew_Ng_吴恩达/INDEX|Ng]] | [[19_业界观点/02_Andrej_Karpathy_卡帕西/INDEX|Karpathy]] |
 |------|-------|-----|---------|
 | 平台 | Udacity | Coursera | Eureka Labs |
 | 模式 | 纳米学位 | 专项课程 | 从零构建 |
@@ -242,7 +242,7 @@ Thrun 的核心信念：
 
 ### 与自动驾驶领袖的对比
 
-| 维度 | Thrun | [[19_业界观点/07_Elon_Musk_马斯克/03_索引|Musk]] | [[19_业界观点/02_Andrej_Karpathy_卡帕西/03_索引|Karpathy]] |
+| 维度 | Thrun | [[19_业界观点/07_Elon_Musk_马斯克/INDEX|Musk]] | [[19_业界观点/02_Andrej_Karpathy_卡帕西/INDEX|Karpathy]] |
 |------|-------|------|---------|
 | 公司 | Google/Waymo | Tesla | Tesla（前） |
 | 路线 | 激光雷达 | 纯视觉 | 纯视觉（继承） |
@@ -363,11 +363,11 @@ Thrun 为 Google X 设定的项目标准：
 
 | 人物 | 关系 | 2026 互动 |
 |------|------|-----------|
-| [[19_业界观点/07_Elon_Musk_马斯克/03_索引|Musk]] | 自动驾驶路线分歧 | 隔空辩论 |
-| [[19_业界观点/02_Andrej_Karpathy_卡帕西/03_索引|Karpathy]] | Stanford 传承 | 学术共鸣 |
-| [[19_业界观点/03_Andrew_Ng_吴恩达/03_索引|Ng]] | 教育同行 | MOOC 呼应 |
-| [[19_业界观点/24_Sundar_Pichai_皮查伊/02_索引|Pichai]] | 前 Google 同事 | 保持联系 |
-| [[19_业界观点/09_Fei_Fei_Li_李飞飞/03_索引|Fei-Fei Li]] | Stanford 同事 | 学术交流 |
+| [[19_业界观点/07_Elon_Musk_马斯克/INDEX|Musk]] | 自动驾驶路线分歧 | 隔空辩论 |
+| [[19_业界观点/02_Andrej_Karpathy_卡帕西/INDEX|Karpathy]] | Stanford 传承 | 学术共鸣 |
+| [[19_业界观点/03_Andrew_Ng_吴恩达/INDEX|Ng]] | 教育同行 | MOOC 呼应 |
+| [[19_业界观点/24_Sundar_Pichai_皮查伊/INDEX|Pichai]] | 前 Google 同事 | 保持联系 |
+| [[19_业界观点/09_Fei_Fei_Li_李飞飞/INDEX|Fei-Fei Li]] | Stanford 同事 | 学术交流 |
 
 ### Thrun 在 2026 年的重大活动
 

@@ -1,0 +1,45 @@
+{
+  "id": "csrc.quantization.fp4.nvfp4_scaled_mm_entry.cu",
+  "title": "Nvfp4 Scaled Mm Entry",
+  "type": "module",
+  "summary": "Module providing Copyright, cutlass_scaled_fp4_mm_sm100a",
+  "details": "Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) 2025, NVIDIA CORPORATION.  All rights reserved.\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n\n#include <torch/all.h>\n\n#if defined ENABLE_NVFP4 && ENABLE_NVFP4\nvoid cutlass_scaled_fp4_mm_sm100a(torch::Tensor& D, torch::Tensor const& A,\n                                  torch::Tensor const& B,\n                                  torch::Tensor const& A_sf,\n                                  torch::Tensor const& B_sf,\n                                  torch::Tensor const& alpha);\n#endif\n\nvoid cutlass_scaled_fp4_mm(torch::Tensor& D, torch::Tensor const& A,\n                           torch::Tensor const& B, torch::Tensor const& A_sf,\n                           torch::Tensor const& B_sf,\n                           torch::Tensor const& alpha)",
+      "docstring": "",
+      "line": 1
+    },
+    {
+      "name": "cutlass_scaled_fp4_mm_sm100a",
+      "kind": "function",
+      "signature": "cutlass_scaled_fp4_mm_sm100a(D, A, B, A_sf, B_sf, alpha);\n#endif\n  TORCH_CHECK_NOT_IMPLEMENTED(false,\n                              \"No compiled nvfp4 mm kernel, vLLM should \"\n                              \"be compiled using CUDA 12.8 and target \"\n                              \"compute capability 100 or above.\");\n}\n\nbool cutlass_scaled_mm_supports_fp4(int64_t cuda_device_capability)",
+      "docstring": "",
+      "line": 31
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 2,
+    "public_symbols": 2,
+    "classes": 0,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/fp4/nvfp4_scaled_mm_entry.cu"
+}

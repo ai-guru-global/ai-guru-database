@@ -440,10 +440,10 @@ Agent 市场:
 
 ## 相关阅读
 
-- [[15_智能体/01_Agent基础/01_索引.md|Agent_Foundations]] — Agent 基础
+- [[15_智能体/01_Agent基础/INDEX.md|Agent_Foundations]] — Agent 基础
 - [[15_智能体/02_Agent框架/README.md|Agent_Frameworks]] — Agent 框架
 - [[概念/Agent/agent-protocols|Agent_Protocols]] — Agent 协议
 - [[15_智能体/05_Agent技能/README.md|Agent_Skills]] — Agent 技能
-- [[15_智能体/03_Agent工作流/01_索引.md|Agent_Workflow]] — Agent 工作流
+- [[15_智能体/03_Agent工作流/INDEX.md|Agent_Workflow]] — Agent 工作流
 - [[15_智能体/01_Agent基础/13_Agentic_设计_模式_AndrewNg]] — Agent 设计模式
 - [[06_强化学习/06_多智能体/Multi_Agent_Systems]] — 多智能体系统

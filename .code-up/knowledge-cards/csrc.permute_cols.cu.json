@@ -1,0 +1,62 @@
+{
+  "id": "csrc.permute_cols.cu",
+  "title": "Permute Cols",
+  "type": "module",
+  "summary": "Module providing div_ceil, return, std::max, permute_row",
+  "details": "Contains 4 functions/methods",
+  "symbols": [
+    {
+      "name": "div_ceil",
+      "kind": "function",
+      "signature": "div_ceil(int a, int b)",
+      "docstring": "",
+      "line": 8
+    },
+    {
+      "name": "return",
+      "kind": "function",
+      "signature": "return(a + b - 1) / b; }\n\n// For a given \"a\" of size [M,K] performs a permutation of the K columns based\n// on the given \"perm\" indices.\n// Currently only supports 16bit types (since we permute half types)\n__global__ void permute_cols_kernel(int4 const* __restrict__ a_int4_ptr,\n                                    int const* __restrict__ perm_int_ptr,\n                                    int4* __restrict__ out_int4_ptr, int size_m,\n                                    int size_k, int block_rows)",
+      "docstring": "",
+      "line": 9
+    },
+    {
+      "name": "std::max",
+      "kind": "function",
+      "signature": "std::max(finish_row - start_row, 0);\n\n  int row_stride = size_k * sizeof(half) / 16;\n\n  auto permute_row = &",
+      "docstring": "",
+      "line": 23
+    },
+    {
+      "name": "permute_row",
+      "kind": "function",
+      "signature": "permute_row(cur_row);\n    }\n  }\n}\n\n// More efficient version of A[..., perm]\n//  taken from gptq_marlin.cu\ntorch::Tensor permute_cols(torch::Tensor const& A, torch::Tensor const& perm)",
+      "docstring": "",
+      "line": 59
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "c10",
+      "cuda_fp16",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 4,
+    "public_symbols": 4,
+    "classes": 0,
+    "functions": 4,
+    "internal_deps": 0,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/permute_cols.cu"
+}

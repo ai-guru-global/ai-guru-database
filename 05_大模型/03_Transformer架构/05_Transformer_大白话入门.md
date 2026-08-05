@@ -270,7 +270,7 @@ Decoder 的词拿着自己的 **Q**，去和 **Encoder 输出的 K、V** 做匹�
 
 ## 关联文档
 
-- [[05_大模型/03_Transformer架构/14_Transformer 架构详解]] — 架构详解（带公式和代码）
+- [[05_大模型/03_Transformer架构/04_Transformer_架构详解]] — 架构详解（带公式和代码）
 - [[05_大模型/03_Transformer/Transformer_Deep_Dive]] — 06_深度剖析：从 07_QKV 到完整架构
 - [[05_大模型/03_Transformer/Transformer_Training_vs_Inference]] — 训练 vs 推理详解
 - [[05_大模型/03_Transformer架构/02_Self_注意力_Mechanism]] — Self-Attention 机制专题

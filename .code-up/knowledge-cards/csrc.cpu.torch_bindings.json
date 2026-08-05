@@ -1,0 +1,62 @@
+{
+  "id": "csrc.cpu.torch_bindings",
+  "title": "Torch Bindings",
+  "type": "module",
+  "summary": "Module providing init_cpu_threads_env, def, in, def",
+  "details": "Contains 4 functions/methods",
+  "symbols": 
+    {
+      "name": "init_cpu_threads_env",
+      "kind": "function",
+      "signature": "init_cpu_threads_env(const std::string& cpu_ids);\n\nvoid int8_scaled_mm(torch::Tensor& c, const torch::Tensor& a,\n                    const torch::Tensor& b, const torch::Tensor& a_scales,\n                    const torch::Tensor& b_scales,\n                    const std::optional<torch::Tensor>& bias);\n\nvoid int8_scaled_mm_azp(torch::Tensor& c, const torch::Tensor& a,\n                        const torch::Tensor& b, const torch::Tensor& a_scales,\n                        const torch::Tensor& b_scales,\n                        const torch::Tensor& azp_adj,\n                        const std::optional<torch::Tensor>& azp,\n                        const std::optional<torch::Tensor>& bias);\n\n#if defined(__powerpc64__)\nvoid int8_scaled_mm_ppc64le(torch::Tensor& c, const torch::Tensor& a,\n                            const torch::Tensor& b,\n                            const torch::Tensor& a_scales,\n                            const torch::Tensor& b_scales,\n                            const std::optional<torch::Tensor>& bias);\n#endif\n\nvoid mla_decode_kvcache(torch::Tensor& out, torch::Tensor& query,\n                        torch::Tensor& kv_cache, double scale,\n                        torch::Tensor& block_tables, torch::Tensor& seq_lens);\n\nint64_t init_shm_manager(const std::string& name, const int64_t group_size,\n                         const int64_t rank);\n\nstd::string join_shm_manager(int64_t handle, const std::string& name);\n\nvoid shm_allreduce(int64_t handle, torch::Tensor& data);\n\nvoid shm_gather(int64_t handle, torch::Tensor& data,\n                const std::optional<std::vector<torch::Tensor>>& outputs,\n                int64_t dst);\n\nvoid shm_all_gather(int64_t handle, const torch::Tensor& data,\n                    torch::Tensor& output);\n\nvoid shm_send_tensor_list(int64_t handle,\n                          const std::vector<torch::Tensor>& tensor_list,\n                          int64_t dst);\n\nstd::vector<torch::Tensor> shm_recv_tensor_list(int64_t handle, int64_t src);\n\nTORCH_LIBRARY_EXPAND(TORCH_EXTENSION_NAME, ops)",
+      "docstring": "",
+      "line": 5
+    },
+    {
+      "name": "def",
+      "kind": "function",
+      "signature": "def(\n      \"paged_attention_v1(\"\n      \"    Tensor! out, Tensor query, Tensor key_cache,\"\n      \"    Tensor value_cache, int num_kv_heads, float scale,\"\n      \"    Tensor block_tables, Tensor seq_lens, int block_size,\"\n      \"    int max_seq_len, Tensor? alibi_slopes,\"\n      \"    str kv_cache_dtype, Tensor k_scale, Tensor v_scale,\"\n      \"    int tp_rank, int blocksparse_local_blocks,\"\n      \"    int blocksparse_vert_stride, int blocksparse_block_size,\"\n      \"    int blocksparse_head_sliding_step) -> ()\");\n  ops.impl(\"paged_attention_v1\", torch::kCPU, &paged_attention_v1);\n\n  // PagedAttention V2.\n  ops.def(\n      \"paged_attention_v2(\"\n      \"    Tensor! out, Tensor! exp_sums, Tensor! max_logits,\"\n      \"    Tensor! tmp_out, Tensor query, Tensor key_cache,\"\n      \"    Tensor value_cache, int num_kv_heads, float scale,\"\n      \"    Tensor block_tables, Tensor seq_lens, int block_size,\"\n      \"    int max_seq_len, Tensor? alibi_slopes,\"\n      \"    str kv_cache_dtype, Tensor k_scale, Tensor v_scale,\"\n      \"    int tp_rank, int blocksparse_local_blocks,\"\n      \"    int blocksparse_vert_stride, int blocksparse_block_size,\"\n      \"    int blocksparse_head_sliding_step) -> ()\");\n  ops.impl(\"paged_attention_v2\", torch::kCPU, &paged_attention_v2);\n\n  // Activation ops\n\n  // Activation function used in SwiGLU.\n  ops.def(\"silu_and_mul(Tensor! out, Tensor input) -> ()\");\n  ops.impl(\"silu_and_mul\", torch::kCPU, &silu_and_mul);\n\n  // Activation function used in GeGLU with `none` approximation.\n  ops.def(\"gelu_and_mul(Tensor! out, Tensor input) -> ()\");\n  ops.impl(\"gelu_and_mul\", torch::kCPU, &gelu_and_mul);\n\n  // Activation function used in GeGLU with `tanh` approximation.\n  ops.def(\"gelu_tanh_and_mul(Tensor! out, Tensor input) -> ()\");\n  ops.impl(\"gelu_tanh_and_mul\", torch::kCPU, &gelu_tanh_and_mul);\n\n  // GELU implementation used in GPT-2.\n  ops.def(\"gelu_new(Tensor! out, Tensor input) -> ()\");\n  ops.impl(\"gelu_new\", torch::kCPU, &gelu_new);\n\n  // Approximate GELU implementation.\n  ops.def(\"gelu_fast(Tensor! out, Tensor input) -> ()\");\n  ops.impl(\"gelu_fast\", torch::kCPU, &gelu_fast);\n\n  // Quick GELU implementation.\n  ops.def(\"gelu_quick(Tensor! out, Tensor input) -> ()\");\n  ops.impl(\"gelu_quick\", torch::kCPU, &gelu_quick);\n\n  // Layernorm\n  // Apply Root Mean Square (RMS) Normalization to the input tensor.\n  ops.def(\n      \"rms_norm(Tensor! out, Tensor input, Tensor weight, float epsilon) -> \"\n      \"()\");\n  ops.impl(\"rms_norm\", torch::kCPU, &rms_norm);\n\n  // In-place fused Add and RMS Normalization.\n  ops.def(\n      \"fused_add_rms_norm(Tensor! input, Tensor! residual, Tensor weight, \"\n      \"float epsilon) -> ()\");\n  ops.impl(\"fused_add_rms_norm\", torch::kCPU, &fused_add_rms_norm);\n\n  // Rotary embedding\n  // Apply GPT-NeoX or GPT-J style rotary embedding to query and key.\n  ops.def(\n      \"rotary_embedding(Tensor positions, Tensor! query,\"\n      \"                 Tensor!? key, int head_size,\"\n      \"                 Tensor cos_sin_cache, bool is_neox) -> ()\");\n  ops.impl(\"rotary_embedding\", torch::kCPU, &rotary_embedding);\n\n  // Quantization\n#ifdef __AVX512F__\n  // Compute int8 quantized tensor for given scaling factor.\n  ops.def(\n      \"static_scaled_int8_quant(Tensor! out, Tensor input, Tensor scale,\"\n      \"Tensor? azp) -> ()\");\n  ops.impl(\"static_scaled_int8_quant\", torch::kCPU, &static_scaled_int8_quant);\n\n  // Compute int8 quantized tensor and scaling factor\n  ops.def(\n      \"dynamic_scaled_int8_quant(Tensor! out, Tensor input, Tensor! scale, \"\n      \"Tensor!? azp) -> ()\");\n  ops.impl(\"dynamic_scaled_int8_quant\", torch::kCPU,\n           &dynamic_scaled_int8_quant);\n  // W8A8 GEMM, supporting symmetric per-tensor or per-row/column\n  // quantization.\n  ops.def(\n      \"cutlass_scaled_mm(Tensor! out, Tensor a,\"\n      \"                  Tensor b, Tensor a_scales,\"\n      \"                  Tensor b_scales, Tensor? bias) -> ()\");\n  ops.impl(\"cutlass_scaled_mm\", torch::kCPU, &int8_scaled_mm);\n  // w8a8 GEMM, supporting asymmetric per-tensor or per-row/column\n  // quantization.\n  ops.def(\n      \"cutlass_scaled_mm_azp(Tensor! out, Tensor a,\"\n      \"                  Tensor b, Tensor a_scales,\"\n      \"                  Tensor b_scales, Tensor azp_adj,\"\n      \"                  Tensor? azp, Tensor? bias) -> ()\");\n  ops.impl(\"cutlass_scaled_mm_azp\", torch::kCPU, &int8_scaled_mm_azp);\n#elif defined(__powerpc64__)\n  // Compute int8 quantized tensor for given scaling factor.\n  ops.def(\n      \"static_scaled_int8_quant(Tensor! out, Tensor input, Tensor scale,\"\n      \"Tensor? azp) -> ()\");\n  ops.impl(\"static_scaled_int8_quant\", torch::kCPU, &static_scaled_int8_quant);\n\n  // Compute int8 quantized tensor and scaling factor\n  ops.def(\n      \"dynamic_scaled_int8_quant(Tensor! out, Tensor input, Tensor! scale, \"\n      \"Tensor!? azp) -> ()\");\n  ops.impl(\"dynamic_scaled_int8_quant\", torch::kCPU,\n           &dynamic_scaled_int8_quant);\n  // W8A8 GEMM, supporting symmetric quantization.\n  ops.def(\n      \"cutlass_scaled_mm(Tensor! out, Tensor a,\"\n      \"                  Tensor b, Tensor a_scales,\"\n      \"                  Tensor b_scales, Tensor? bias) -> ()\");\n  ops.impl(\"cutlass_scaled_mm\", torch::kCPU, &int8_scaled_mm_ppc64le);\n  // w8a8 GEMM, supporting asymmetric per-tensor or per-row/column\n  // quantization.\n  ops.def(\n      \"cutlass_scaled_mm_azp(Tensor! out, Tensor a,\"\n      \"                  Tensor b, Tensor a_scales,\"\n      \"                  Tensor b_scales, Tensor azp_adj,\"\n      \"                  Tensor? azp, Tensor? bias) -> ()\");\n  ops.impl(\"cutlass_scaled_mm_azp\", torch::kCPU, &int8_scaled_mm_azp);\n#endif\n\n// SHM CCL\n#ifdef __AVX512F__\n  ops.def(\"init_shm_manager(str name, int group_size, int rank) -> int\",\n          &init_shm_manager);\n  ops.def(\"join_shm_manager(int handle, str name) -> str\", &join_shm_manager);\n  ops.def(\"shm_allreduce(int handle, Tensor! data) -> ()\");\n  ops.impl(\"shm_allreduce\", torch::kCPU, &shm_allreduce);\n  ops.def(\n      \"shm_gather(int handle, Tensor data, Tensor[? outputs, int dst) -> \"\n      \"()\");\n  ops.impl(\"shm_gather\", torch::kCPU, &shm_gather);\n  ops.def(\n      \"shm_all_gather(int handle, Tensor data, Tensor! output) -> \"\n      \"()\");\n  ops.impl(\"shm_all_gather\", torch::kCPU, &shm_all_gather);\n  ops.def(\n      \"shm_send_tensor_list(int handle, Tensora tensor_list, int dst) -> \"\n      \"()\");\n  ops.impl(\"shm_send_tensor_list\", torch::kCPU, &shm_send_tensor_list);\n  ops.def(\"shm_recv_tensor_list(int handle, int src) -> Tensora\",\n          &shm_recv_tensor_list);\n#endif\n}\n\nTORCH_LIBRARY_EXPAND(CONCAT(TORCH_EXTENSION_NAME, _cache_ops), cache_ops)",
+      "docstring": "",
+      "line": 59
+    },
+    {
+      "name": "in",
+      "kind": "function",
+      "signature": "in(out) the cache blocks from src to dst.\n  cache_ops.def(\n      \"swap_blocks(Tensor src, Tensor! dst, Tensor block_mapping) -> ()\");\n  cache_ops.impl(\"swap_blocks\", torch::kCPU, &swap_blocks);\n\n  // Copy the cache blocks from src to dst.\n  cache_ops.def(\n      \"copy_blocks(Tensor(a!)[] key_caches, Tensorb! value_caches, \"\n      \"Tensor block_mapping) -> ()\");\n  cache_ops.impl(\"copy_blocks\", torch::kCPU, &copy_blocks);\n\n  // Reshape the key and value tensors and cache them.\n  cache_ops.def(\n      \"reshape_and_cache(Tensor key, Tensor value,\"\n      \"                  Tensor! key_cache, Tensor! value_cache,\"\n      \"                  Tensor slot_mapping,\"\n      \"                  str kv_cache_dtype,\"\n      \"                  Tensor k_scale, Tensor v_scale) -> ()\");\n  cache_ops.impl(\"reshape_and_cache\", torch::kCPU, &reshape_and_cache);\n\n  cache_ops.def(\n      \"concat_and_cache_mla(Tensor kv_c, Tensor k_pe,\"\n      \"                     Tensor! kv_cache,\"\n      \"                     Tensor slot_mapping,\"\n      \"                     str kv_cache_dtype,\"\n      \"                     Tensor scale) -> ()\");\n  cache_ops.impl(\"concat_and_cache_mla\", torch::kCPU, &concat_and_cache_mla);\n}\n\nTORCH_LIBRARY_EXPAND(CONCAT(TORCH_EXTENSION_NAME, _utils), utils)",
+      "docstring": "",
+      "line": 216
+    },
+    {
+      "name": "def",
+      "kind": "function",
+      "signature": "def(\"init_cpu_threads_env(str cpu_ids) -> str\", &init_cpu_threads_env);\n}\n\nTORCH_LIBRARY_EXPAND(CONCAT(TORCH_EXTENSION_NAME, _cpu), cpu_ops)",
+      "docstring": "",
+      "line": 247
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cache",
+      "core",
+      "ops",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 4,
+    "public_symbols": 4,
+    "classes": 0,
+    "functions": 4,
+    "internal_deps": 0,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cpu/torch_bindings.cpp"
+}

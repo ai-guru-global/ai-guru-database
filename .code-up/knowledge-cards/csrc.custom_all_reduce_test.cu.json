@@ -1,0 +1,147 @@
+{
+  "id": "csrc.custom_all_reduce_test.cu",
+  "title": "Custom All Reduce Test",
+  "type": "module",
+  "summary": "Module providing MPICHECK, printf, printf, wall_clock64, defined and 5 more symbols",
+  "details": "Contains 25 functions/methods",
+  "symbols": [
+    {
+      "name": "MPICHECK",
+      "kind": "function",
+      "signature": "MPICHECK(cmd)                                                  \\\n  do {                                                                 \\\n    int e = cmd;                                                       \\\n    if (e != MPI_SUCCESS)",
+      "docstring": "",
+      "line": 35
+    },
+    {
+      "name": "printf",
+      "kind": "function",
+      "signature": "printf(\"Failed: MPI error %s:%d '%d'\\n\", __FILE__, __LINE__, e); \\\n      exit(EXIT_FAILURE);                                              \\\n    }                                                                  \\\n  } while (0)\n\n#define NCCLCHECK(cmd)                                              \\\n  do {                                                              \\\n    ncclResult_t r = cmd;                                           \\\n    if (r != ncclSuccess)",
+      "docstring": "",
+      "line": 38
+    },
+    {
+      "name": "printf",
+      "kind": "function",
+      "signature": "printf(\"Failed, NCCL error %s:%d '%s'\\n\", __FILE__, __LINE__, \\\n             ncclGetErrorString(r));                                \\\n      exit(EXIT_FAILURE);                                           \\\n    }                                                               \\\n  } while (0)\n\n#ifdef USE_ROCM\n__global__ void dummy_kernel()",
+      "docstring": "",
+      "line": 47
+    },
+    {
+      "name": "wall_clock64",
+      "kind": "function",
+      "signature": "wall_clock64();\n    uint64_t cycles_elapsed;\n    do {\n      cycles_elapsed = wall_clock64() - start;\n    } while (cycles_elapsed < 100);\n  }\n  for (int i = 0; i < 100; i++) __nanosleep(1000000);  // 100ms\n}\n#else\n__global__ void dummy_kernel()",
+      "docstring": "",
+      "line": 57
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) && __CUDA_ARCH__ >= 700\n  for (int i = 0; i < 100; i++) __nanosleep(1000000);  // 100ms\n  #else\n  for (int i = 0; i < 100; i++)",
+      "docstring": "",
+      "line": 67
+    },
+    {
+      "name": "clock64",
+      "kind": "function",
+      "signature": "clock64();\n    while (clock64() - start < 150000000);  // approximately 98.4ms on P40\n  }\n  #endif\n}\n#endif\n\ntemplate <typename T>\n__global__ void set_data(T* data, int size, int myRank)",
+      "docstring": "",
+      "line": 71
+    },
+    {
+      "name": "convert_data",
+      "kind": "function",
+      "signature": "convert_data(const T* data1, const T* data2, double* fdata1,\n                             double* fdata2, int size)",
+      "docstring": "",
+      "line": 84
+    },
+    {
+      "name": "init_rand",
+      "kind": "function",
+      "signature": "init_rand(curandState_t* state, int size, int nRanks)",
+      "docstring": "",
+      "line": 94
+    },
+    {
+      "name": "curand_init",
+      "kind": "function",
+      "signature": "curand_init(i + 1, idx, 0, &state[idx * nRanks + i]);\n    }\n  }\n}\n\ntemplate <typename T>\n__global__ void gen_data(curandState_t* state, T* data, double* ground_truth,\n                         int myRank, int nRanks, int size)",
+      "docstring": "",
+      "line": 99
+    },
+    {
+      "name": "curand_uniform_double",
+      "kind": "function",
+      "signature": "curand_uniform_double(&state[idx * nRanks + i]) * 4;\n      T hval = val;  // downcast first\n      sum += static_cast<double>(hval);\n      if (i == myRank) data[idx] = hval;\n    }\n    ground_truth[idx] = sum;\n  }\n}\n\ntemplate <typename T>\nvoid run(int myRank, int nRanks, ncclComm_t& comm, int threads, int block_limit,\n         int data_size, bool performance_test)",
+      "docstring": "",
+      "line": 112
+    },
+    {
+      "name": "CUDACHECK",
+      "kind": "function",
+      "signature": "CUDACHECK(cudaStreamCreateWithFlags(&stream, cudaStreamNonBlocking));\n  CUDACHECK(cudaMalloc(&result, data_size * sizeof(T)));\n  CUDACHECK(cudaMemset(result, 0, data_size * sizeof(T)));\n\n  cudaIpcMemHandle_t self_data_handle;\n  cudaIpcMemHandle_t data_handles[8];\n  vllm::Signal* buffer;\n  T* self_data_copy;\n  /**\n   * Allocate IPC buffer\n   *\n   * The first section is a temporary buffer for storing intermediate allreduce\n   * results, if a particular algorithm requires it. The second section is for\n   * the input to the allreduce. The actual API takes the input pointer as an\n   * argument (that is, they can and usually should be allocated separately).\n   * But since the input pointers and the temporary buffer all require IPC\n   * registration, they are allocated and registered together in the test for\n   * convenience.\n   */\n#ifdef USE_ROCM\n  CUDACHECK(hipExtMallocWithFlags(\n      (void**)&buffer, 2 * data_size * sizeof(T) + sizeof(vllm::Signal),\n      hipDeviceMallocUncached));\n#else\n  CUDACHECK(\n      cudaMalloc(&buffer, 2 * data_size * sizeof(T) + sizeof(vllm::Signal)));\n#endif\n  CUDACHECK(\n      cudaMemset(buffer, 0, 2 * data_size * sizeof(T) + sizeof(vllm::Signal)));\n  CUDACHECK(cudaMalloc(&self_data_copy, data_size * sizeof(T)));\n  CUDACHECK(cudaIpcGetMemHandle(&self_data_handle, buffer));\n\n  MPICHECK(MPI_Allgather(&self_data_handle, sizeof(cudaIpcMemHandle_t),\n                         MPI_BYTE, data_handles, sizeof(cudaIpcMemHandle_t),\n                         MPI_BYTE, MPI_COMM_WORLD));\n\n  void* rank_data;\n  size_t rank_data_sz = 16 * 1024 * 1024;\n  CUDACHECK(cudaMalloc(&rank_data, rank_data_sz));\n  vllm::Signal* ipc_ptrs[8];\n  for (int i = 0; i < nRanks; i++)",
+      "docstring": "",
+      "line": 125
+    },
+    {
+      "name": "sizeof",
+      "kind": "function",
+      "signature": "sizeof(vllm::Signal) + data_size * sizeof(T);\n    }\n    fa.register_buffer(data);\n  }\n\n  double* ground_truth;\n  CUDACHECK(cudaMallocHost(&ground_truth, data_size * sizeof(double)));\n  curandState_t* states;\n  CUDACHECK(cudaMalloc(&states, sizeof(curandState_t) * nRanks * data_size));\n  init_rand<<<108, 1024, 0, stream>>>(states, data_size, nRanks);\n  gen_data<T><<<108, 1024, 0, stream>>>(states, self_data, ground_truth, myRank,\n                                        nRanks, data_size);\n  CUDACHECK(cudaMemcpyAsync(self_data_copy, self_data, data_size * sizeof(T),\n                            cudaMemcpyDeviceToDevice, stream));\n  cudaEvent_t start, stop;\n  CUDACHECK(cudaEventCreate(&start));\n  CUDACHECK(cudaEventCreate(&stop));\n\n  ncclDataType_t ncclDtype;\n  if (std::is_same<T, half>::value)",
+      "docstring": "",
+      "line": 182
+    },
+    {
+      "name": "CUDACHECK",
+      "kind": "function",
+      "signature": "CUDACHECK(cudaMallocHost(&nccl_result, data_size * sizeof(double)));\n  CUDACHECK(cudaMallocHost(&my_result, data_size * sizeof(double)));\n  if (performance_test)",
+      "docstring": "",
+      "line": 208
+    },
+    {
+      "name": "NCCLCHECK",
+      "kind": "function",
+      "signature": "NCCLCHECK(ncclAllReduce(result, result, data_size, ncclDtype, ncclSum,\n                              comm, stream));\n    }\n    CUDACHECK(cudaEventRecord(start, stream));\n    for (int i = 0; i < num_iters; i++)",
+      "docstring": "",
+      "line": 216
+    },
+    {
+      "name": "NCCLCHECK",
+      "kind": "function",
+      "signature": "NCCLCHECK(ncclAllReduce(result, result, data_size, ncclDtype, ncclSum,\n                              comm, stream));\n    }\n    CUDACHECK(cudaEventRecord(stop, stream));\n    CUDACHECK(cudaStreamSynchronize(stream));\n    float allreduce_ms = 0;\n    cudaEventElapsedTime(&allreduce_ms, start, stop);\n\n    dummy_kernel<<<1, 1, 0, stream>>>();\n    // warm up\n    for (int i = 0; i < warmup_iters; i++)",
+      "docstring": "",
+      "line": 221
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cuda",
+      "cuda_profiler_api",
+      "curand_kernel",
+      "custom_all_reduce",
+      "custom_all_reduce_hip",
+      "hip",
+      "limits",
+      "mpi",
+      "nccl",
+      "rccl",
+      "stdio",
+      "stdlib",
+      "vector"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 25,
+    "public_symbols": 25,
+    "classes": 0,
+    "functions": 25,
+    "internal_deps": 0,
+    "external_deps": 13,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/custom_all_reduce_test.cu"
+}

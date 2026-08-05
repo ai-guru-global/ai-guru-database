@@ -1,0 +1,42 @@
+{
+  "id": "benchmarks.kernels.benchmark_rope",
+  "title": "Benchmark Rope",
+  "type": "module",
+  "summary": "Module providing benchmark_rope_kernels_multi_lora",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "benchmark_rope_kernels_multi_lora",
+      "kind": "function",
+      "signature": "def benchmark_rope_kernels_multi_lora(\n    is_neox_style: bool,\n    batch_size: int,\n    seq_len: int,\n    num_heads: int,\n    head_size: int,\n    rotary_dim: Optional[int],\n    dtype: torch.dtype,\n    seed: int,\n    device: str,\n    max_position: int = 8192,\n    base: float = 10000,\n) -> None:\n    current_platform.seed_everything(seed)\n    torch.set_default_device(device)\n    if rotary_dim is None:\n        rotary_dim = head_size\n    # silulating serving 4 LoRAs\n    scaling_factors = [1, 2, 4, 8]\n    # batched RoPE can take multiple scaling factors\n    batched_rope = get_rope(\n        head_size,\n        rotary_dim,\n        max_position,\n        base,\n        is_neox_style,\n        {\"rope_type\": \"linear\", \"factor\": tuple(scaling_factors)},\n    )\n    # non-batched RoPE takes only one scaling factor, we create multiple\n    # instances to simulate the same behavior\n    non_batched_ropes: list[RotaryEmbedding] = []\n    for scaling_factor in scaling_factors:\n        non_batched_ropes.append(\n            get_rope(\n                head_size,\n                rotary_dim,\n                max_position,\n                base,\n                is_neox_style,\n                {\"rope_type\": \"linear\", \"factor\": (scaling_factor,)},\n            )\n        )\n\n    positions = torch.randint(0, max_position, (batch_size, seq_len))\n    query = torch.randn(batch_size, seq_len, num_heads * head_size, dtype=dtype)\n    key = torch.randn_like(query)\n\n    # create query offsets for batched RoPE, we concat multiple kv cache\n    # together and each query needs to find the right kv cache of its type\n    offset_map = torch.tensor(\n        list(\n            accumulate(\n                [0]\n                + [\n                    max_position * scaling_factor * 2\n                    for scaling_factor in scaling_factors[:-1]\n                ]\n            )\n        )\n    )\n    query_types = torch.randint(\n        0, len(scaling_factors), (batch_size, seq_len), device=device\n    )\n    # map query types to offsets\n    query_offsets = offset_map[query_types]\n    # the kernel takes flattened offsets\n    flatten_offsets = query_offsets.flatten()\n\n    # batched queries of the same type together for non-batched RoPE\n    queries = [query[query_types == i] for i in range(len(scaling_factors))]\n    keys = [key[query_types == i] for i in range(len(scaling_factors))]\n    packed_qkr = zip(queries, keys, non_batched_ropes)\n    # synchronize before start timing\n    torch.cuda.synchronize()\n    with nvtx.annotate(\"non-batched\", color=\"yellow\"):\n        for q, k, r in packed_qkr:\n            r.forward(positions, q, k)\n    torch.cuda.synchronize()\n    with nvtx.annotate(\"batched\", color=\"green\"):\n        batched_rope.forward(positions, query, key, flatten_offsets)\n    torch.cuda.synchronize()\n\n\nif __name__ == \"__main__\":\n    parser = FlexibleArgumentParser(\n        description=\"Benchmark the rotary embedding kernels.\"\n    )\n    parser.add_argument(\"--is-neox-style\", type=bool, default=True)\n    parser.add_argument(\"--batch-size\", type=int, default=16)\n    parser.add_argument(\"--seq-len\", type=int, default=512)\n    parser.add_argument(\"--num-heads\", type=int, default=8)\n    parser.add_argument(\n        \"--head-size\",\n        type=int,\n        choices=[64, 80, 96, 112, 120, 128, 192, 256],\n        default=128,\n    )\n    parser.add_argument(\"--rotary-dim\", type=int, choices=[16, 32], default=32)\n    parser.add_argument(\n        \"--dtype\", type=str, choices=[\"bfloat16\", \"float\"], default=\"float\"\n    )\n    parser.add_argument(\"--seed\", type=int, default=0)\n    parser.add_argument(\n        \"--device\", type=str, choices=[\"cuda:0\", \"cuda:1\"], default=\"cuda",
+      "docstring": "",
+      "line": 15
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "itertools",
+      "nvtx",
+      "torch",
+      "typing",
+      "vllm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 5,
+    "depth": 0,
+    "complexity_sum": 1
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/kernels/benchmark_rope.py"
+}

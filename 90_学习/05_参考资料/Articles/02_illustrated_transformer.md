@@ -39,7 +39,7 @@ name_zh: "图解 Transformer"
 
 这篇文章是理解 Transformer 的最佳入门资料之一,被全球 AI 课程广泛引用。作者的可视化风格让复杂的数学概念变得直观易懂。
 
-> **关联**: -> [[20_论文精读/02_模型架构/01_注意力_Is_All_You_Need_深入分析|Attention 论文精读]] | [[05_大模型/03_Transformer架构/14_Transformer 架构详解|Transformer 架构]]
+> **关联**: -> [[20_论文精读/02_模型架构/01_注意力_Is_All_You_Need_深入分析|Attention 论文精读]] | [[05_大模型/03_Transformer架构/04_Transformer_架构详解|Transformer 架构]]
 
 ## 核心知识框架
 

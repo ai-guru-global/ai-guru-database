@@ -1,0 +1,79 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.scaled_mm_c2x.cuh",
+  "title": "Scaled Mm C2X",
+  "type": "module",
+  "summary": "Module providing invoke, Kernel::invoke, Kernel::invoke, Kernel::invoke, size and 1 more symbols",
+  "details": "Contains 6 functions/methods",
+  "symbols": [
+    {
+      "name": "invoke",
+      "kind": "function",
+      "signature": "invoke(Args&&... args)",
+      "docstring": "",
+      "line": 47
+    },
+    {
+      "name": "Kernel::invoke",
+      "kind": "function",
+      "signature": "Kernel::invoke(std::forward<Args>(args)...);\n#endif\n  }\n};\n\ntemplate <typename Kernel>\nstruct enable_sm80_to_sm89 : Kernel {\n  template <typename... Args>\n  CUTLASS_DEVICE static void invoke(Args&&... args)",
+      "docstring": "",
+      "line": 49
+    },
+    {
+      "name": "Kernel::invoke",
+      "kind": "function",
+      "signature": "Kernel::invoke(std::forward<Args>(args)...);\n#endif\n  }\n};\n\ntemplate <typename Kernel>\nstruct enable_sm89_to_sm90 : Kernel {\n  template <typename... Args>\n  CUTLASS_DEVICE static void invoke(Args&&... args)",
+      "docstring": "",
+      "line": 59
+    },
+    {
+      "name": "Kernel::invoke",
+      "kind": "function",
+      "signature": "Kernel::invoke(std::forward<Args>(args)...);\n#endif\n  }\n};\ntemplate <typename Arch, template <typename> typename ArchGuard,\n          typename ElementAB_, typename ElementD_,\n          template <typename, typename> typename Epilogue_, typename TileShape,\n          typename WarpShape, typename InstructionShape, int32_t MainLoopStages,\n          typename FP8MathOperator = cutlass::arch::OpMultiplyAdd>\nstruct cutlass_2x_gemm {\n  using ElementAB = ElementAB_;\n  using ElementD = ElementD_;\n\n  using ElementAcc =\n      typename std::conditional<std::is_same_v<ElementAB, int8_t>, int32_t,\n                                float>::type;\n\n  using Operator =\n      typename std::conditional<std::is_same_v<ElementAB, int8_t>,\n                                cutlass::arch::OpMultiplyAddSaturate,\n                                FP8MathOperator>::type;\n\n  using OutputTileThreadMap =\n      cutlass::epilogue::threadblock::OutputTileThreadLayout<\n          TileShape, WarpShape, float, 4, 1 /* epilogue stages */\n          >;\n\n  using Epilogue = Epilogue_<ElementD, OutputTileThreadMap>;\n  using EVTCompute = typename Epilogue::EVTCompute;\n\n  using D = cutlass::epilogue::threadblock::VisitorAuxStore<\n      OutputTileThreadMap, ElementD, cutlass::FloatRoundStyle::round_to_nearest,\n      Stride<int64_t, Int<1>, Int<0>>>;\n\n  using EVTD = cutlass::epilogue::threadblock::Sm80EVT<D, EVTCompute>;\n\n  // These are the minimum alignments needed for the kernels to compile\n  static constexpr int AlignmentAB =\n      128 / cutlass::sizeof_bits<ElementAB>::value;\n  static constexpr int AlignmentCD = 4;\n\n  // clang-format off\n  using RowMajor = typename cutlass::layout::RowMajor;\n  using ColumnMajor = typename cutlass::layout::ColumnMajor;\n  using KernelType =\n    ArchGuard<typename cutlass::gemm::kernel::DefaultGemmWithVisitor<\n      ElementAB, RowMajor, cutlass::ComplexTransform::kNone, AlignmentAB,\n      ElementAB, ColumnMajor, cutlass::ComplexTransform::kNone, AlignmentAB,\n      float, cutlass::layout::RowMajor, AlignmentCD,\n      ElementAcc, float, cutlass::arch::OpClassTensorOp,\n      Arch,\n      TileShape, WarpShape, InstructionShape,\n      EVTD,\n      cutlass::gemm::threadblock::ThreadblockSwizzleStreamK,\n      MainLoopStages, Operator,\n      1 /* epilogue stages */\n      >::GemmKernel>;\n  // clang-format on\n\n  using Op = cutlass::gemm::device::GemmUniversalAdapter<KernelType>;\n};\n\ntemplate <typename Gemm, typename... EpilogueArgs>\ninline void cutlass_gemm_caller(torch::Tensor& out, torch::Tensor const& a,\n                                torch::Tensor const& b,\n                                EpilogueArgs&&... epilogue_params)",
+      "docstring": "",
+      "line": 69
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size(0);\n  int32_t n = b.size(1);\n  int32_t k = a.size(1);\n  cutlass::gemm::GemmCoord problem_size{m, n, k};\n\n  int64_t lda = a.stride(0);\n  int64_t ldb = b.stride(1);\n  int64_t ldc = out.stride(0);\n\n  using StrideC = Stride<int64_t, Int<1>, Int<0>>;\n  StrideC c_stride{ldc, Int<1>{}, Int<0>{}};\n\n  auto a_ptr = static_cast<ElementAB const*>(a.data_ptr());\n  auto b_ptr = static_cast<ElementAB const*>(b.data_ptr());\n  auto c_ptr = static_cast<ElementD*>(out.data_ptr());\n\n  typename Gemm::D::Arguments d_args{c_ptr, c_stride};\n\n  using Epilogue = typename Gemm::Epilogue;\n  auto evt_args =\n      Epilogue::prepare_args(std::forward<EpilogueArgs>(epilogue_params)...);\n\n  typename Gemm::EVTD::Arguments epilogue_args{\n      evt_args,\n      d_args,\n  };\n\n  typename Gemm::Op::Arguments args{\n      cutlass::gemm::GemmUniversalMode::kGemmSplitKParallel,  // universal mode\n      problem_size,                                           // problem size\n      1,                                                      // batch count\n      epilogue_args,\n      a_ptr,\n      b_ptr,\n      nullptr,\n      nullptr,\n      0,\n      0,\n      0,\n      0,\n      lda,\n      ldb,\n      ldc,\n      ldc};\n\n  // Launch the CUTLASS GEMM kernel.\n  typename Gemm::Op gemm_op;\n  size_t workspace_size = gemm_op.get_workspace_size(args);\n  auto const workspace_options =\n      torch::TensorOptions().dtype(torch::kUInt8).device(a.device());\n  auto workspace = torch::empty(workspace_size, workspace_options);\n\n  auto stream = at::cuda::getCurrentCUDAStream(a.get_device());\n\n  CUTLASS_CHECK(gemm_op.can_implement(args));\n  cutlass::Status status = gemm_op(args, workspace.data_ptr(), stream);\n  CUTLASS_CHECK(status);\n}\n\ntemplate <typename Gemm, typename FallbackGemm, typename... EpilogueArgs>\ninline void fallback_cutlass_gemm_caller(torch::Tensor& out,\n                                         torch::Tensor const& a,\n                                         torch::Tensor const& b,\n                                         EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 139
+    },
+    {
+      "name": "get_cuda_max_shared_memory_per_block_opt_in",
+      "kind": "function",
+      "signature": "get_cuda_max_shared_memory_per_block_opt_in(0);\n\n  size_t const gemm_shared_mem_size =\n      sizeof(typename Gemm::KernelType::SharedStorage);\n  size_t const fallback_gemm_shared_mem_size =\n      sizeof(typename FallbackGemm::KernelType::SharedStorage);\n\n  if (gemm_shared_mem_size <= max_shared_mem_per_block_opt_in)",
+      "docstring": "",
+      "line": 206
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "core",
+      "cute",
+      "cutlass",
+      "cutlass_extensions",
+      "stddef",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 6,
+    "public_symbols": 6,
+    "classes": 0,
+    "functions": 6,
+    "internal_deps": 0,
+    "external_deps": 7,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/scaled_mm_c2x.cuh"
+}

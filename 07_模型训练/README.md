@@ -114,7 +114,7 @@ name_zh: "模型训练"
 - [[07_模型训练/03_训练优化/05_Optimizer_高级_2026.md|Advanced Optimizers for LLM Training 2026]]
 - [[07_模型训练/README|模型训练 (Model Training)]]
 - [[07_模型训练/07_训练监控/05_训练_监控_2026.md|Training Monitoring & Experiment Tracking 2026]]
-- [[05_大模型/07_微调技术/02_微调_策略.md|微调策略完全指南 (Fine-tuning Strategies)]]
+- [[05_大模型/06_微调技术/02_微调_策略.md|微调策略完全指南 (Fine-tuning Strategies)]]
 - [[07_模型训练/README|07 模型训练 — 小白版 🏋️]]
 - [[07_模型训练/04_分布式训练/11_ms_swift_深入分析.md|ms-swift 深度解析：魔搭大模型训练推理全链路框架]]
 - [[07_模型训练/04_分布式训练/10_ms_swift_命令_Line_Parameters.md|ms-swift 命令行参数完全参考手册]]

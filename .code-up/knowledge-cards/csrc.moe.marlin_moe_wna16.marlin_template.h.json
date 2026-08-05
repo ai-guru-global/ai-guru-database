@@ -1,0 +1,136 @@
+{
+  "id": "csrc.moe.marlin_moe_wna16.marlin_template.h",
+  "title": "Marlin Template",
+  "type": "module",
+  "summary": "Module providing Copyright, mma, constexpr, volatile, volatile and 5 more symbols",
+  "details": "Contains 112 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(C) Marlin.2024 Elias Frantar\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *         http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n\n/*\n * Adapted from https://github.com/IST-DASLab/marlin\n */\n\n#ifndef MARLIN_NAMESPACE_NAME\n  #define MARLIN_NAMESPACE_NAME marlin_moe_wna16\n#endif\n\n#include \"quantization/gptq_marlin/marlin.cuh\"\n#include \"quantization/gptq_marlin/marlin_dtypes.cuh\"\n#include \"quantization/gptq_marlin/dequant.h\"\n#include \"core/scalar_type.hpp\"\n\n#define STATIC_ASSERT_SCALAR_TYPE_VALID(scalar_t)               \\\n  static_assert(std::is_same<scalar_t, half>::value ||          \\\n                    std::is_same<scalar_t, nv_bfloat16>::value, \\\n                \"only float16 and bfloat16 is supported\");\n\nnamespace MARLIN_NAMESPACE_NAME {\n\n#if defined(__CUDA_ARCH__) && __CUDA_ARCH__ < 800\n\ntemplate <typename scalar_t,  // compute dtype, half or nv_float16\n          const vllm::ScalarTypeId w_type_id,  // weight ScalarType id\n          const int threads,          // number of threads in a threadblock\n          const int thread_m_blocks,  // number of 16x16 blocks in the m\n                                      // dimension (batchsize) of the\n                                      // threadblock\n          const int thread_n_blocks,  // same for n dimension (output)\n          const int thread_k_blocks,  // same for k dimension (reduction)\n          const bool m_block_size_8,  // whether m_block_size == 8\n                                      // only works when thread_m_blocks == 1\n          const int stages,  // number of stages for the async global->shared\n                             // fetch pipeline\n          const int group_blocks,  // number of consecutive 16x16 blocks\n                                   // with a separate quantization scale\n          const bool is_zp_float   // is zero point of float16 type?\n          >\n__global__ void Marlin(\n    const int4* __restrict__ A,  // fp16 input matrix of shape mxk\n    const int4* __restrict__ B,  // 4bit quantized weight matrix of shape kxn\n    int4* __restrict__ C,        // fp16 output buffer of shape mxn\n    int4* __restrict__ C_tmp,    // fp32 tmp output buffer (for reduce)\n    const int4* __restrict__ scales_ptr,  // fp16 quantization scales of shape\n                                          // (k/groupsize)xn\n    const int4* __restrict__ zp_ptr,      // 4bit packed zero-points of shape\n                                          // (k/groupsize)x(n/pack_factor)\n    const int* __restrict__ g_idx,        // int32 group indices of shape k\n    const int32_t* __restrict__ sorted_token_ids_ptr,        // moe sorted_ids\n    const int32_t* __restrict__ expert_ids_ptr,              // moe expert ids\n    const int32_t* __restrict__ num_tokens_past_padded_ptr,  // moe num tokens\n    const float* __restrict__ topk_weights_ptr,              // moe top weights\n    int top_k,              // num of experts per token\n    bool mul_topk_weights,  // mul topk weights or not\n    bool is_ep,             // expert parallelism\n    int num_groups,         // number of scale groups per output channel\n    int prob_m,             // batch dimension m\n    int prob_n,             // output dimension n\n    int prob_k,             // reduction dimension k\n    int* locks,             // extra global storage for barrier synchronization\n    bool use_atomic_add,    // whether to use atomic add to reduce\n    bool use_fp32_reduce,   // whether to use fp32 global reduce\n    int max_shared_mem)",
+      "docstring": "",
+      "line": 1
+    },
+    {
+      "name": "mma",
+      "kind": "function",
+      "signature": "mma(const typename ScalarType<scalar_t>::FragA& a_frag,\n                           const typename ScalarType<scalar_t>::FragB& frag_b,\n                           typename ScalarType<scalar_t>::FragC& frag_c)",
+      "docstring": "",
+      "line": 87
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(std::is_same<scalar_t, half>::value)",
+      "docstring": "",
+      "line": 94
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\n        \"mma.sync.aligned.m16n8k16.row.col.f32.f16.f16.f32 \"\n        \"{%0,%1,%2,%3}, {%4,%5,%6,%7}, {%8,%9}, {%10,%11,%12,%13};\\n\"\n        : \"=f\"(c[0]), \"=f\"(c[1]), \"=f\"(c[2]), \"=f\"(c[3])\n        : \"r\"(a[0]), \"r\"(a[1]), \"r\"(a[2]), \"r\"(a[3]), \"r\"(b[0]), \"r\"(b[1]),\n          \"f\"(c[0]), \"f\"(c[1]), \"f\"(c[2]), \"f\"(c[3]));\n  } else if constexpr (std::is_same<scalar_t, nv_bfloat16>::value)",
+      "docstring": "",
+      "line": 95
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\n        \"mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 \"\n        \"{%0,%1,%2,%3}, {%4,%5,%6,%7}, {%8,%9}, {%10,%11,%12,%13};\\n\"\n        : \"=f\"(c[0]), \"=f\"(c[1]), \"=f\"(c[2]), \"=f\"(c[3])\n        : \"r\"(a[0]), \"r\"(a[1]), \"r\"(a[2]), \"r\"(a[3]), \"r\"(b[0]), \"r\"(b[1]),\n          \"f\"(c[0]), \"f\"(c[1]), \"f\"(c[2]), \"f\"(c[3]));\n  } else {\n    STATIC_ASSERT_SCALAR_TYPE_VALID(scalar_t);\n  }\n}\n\ntemplate <typename scalar_t>\n__device__ inline void mma_trans(\n    const typename ScalarType<scalar_t>::FragA& a_frag,\n    const typename ScalarType<scalar_t>::FragB& frag_b,\n    const typename ScalarType<scalar_t>::FragB& frag_b2,\n    typename ScalarType<scalar_t>::FragC& frag_c)",
+      "docstring": "",
+      "line": 102
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(std::is_same<scalar_t, half>::value)",
+      "docstring": "",
+      "line": 123
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\n        \"mma.sync.aligned.m16n8k16.row.col.f32.f16.f16.f32 \"\n        \"{%0,%1,%2,%3}, {%4,%5,%6,%7}, {%8,%9}, {%10,%11,%12,%13};\\n\"\n        : \"=f\"(c[0]), \"=f\"(c[1]), \"=f\"(c[2]), \"=f\"(c[3])\n        : \"r\"(b[0]), \"r\"(b2[0]), \"r\"(b[1]), \"r\"(b2[1]), \"r\"(a[0]), \"r\"(a[1]),\n          \"f\"(c[0]), \"f\"(c[1]), \"f\"(c[2]), \"f\"(c[3]));\n  } else if constexpr (std::is_same<scalar_t, nv_bfloat16>::value)",
+      "docstring": "",
+      "line": 124
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\n        \"mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 \"\n        \"{%0,%1,%2,%3}, {%4,%5,%6,%7}, {%8,%9}, {%10,%11,%12,%13};\\n\"\n        : \"=f\"(c[0]), \"=f\"(c[1]), \"=f\"(c[2]), \"=f\"(c[3])\n        : \"r\"(b[0]), \"r\"(b2[0]), \"r\"(b[1]), \"r\"(b2[1]), \"r\"(a[0]), \"r\"(a[1]),\n          \"f\"(c[0]), \"f\"(c[1]), \"f\"(c[2]), \"f\"(c[3]));\n  } else {\n    STATIC_ASSERT_SCALAR_TYPE_VALID(scalar_t);\n  }\n}\n\n// Instruction for loading a full 16x16 matrix fragment of operand A from shared\n// memory, directly in tensor core layout.\ntemplate <int count, typename scalar_t>\n__device__ inline void ldsm(typename ScalarType<scalar_t>::FragA& frag_a,\n                            const void* smem_ptr)",
+      "docstring": "",
+      "line": 131
+    },
+    {
+      "name": "__cvta_generic_to_shared",
+      "kind": "function",
+      "signature": "__cvta_generic_to_shared(smem_ptr));\n  if constexpr (count == 4)",
+      "docstring": "",
+      "line": 149
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\n        \"ldmatrix.sync.aligned.m8n8.x4.shared.b16 {%0,%1,%2,%3}, [%4];\\n\"\n        : \"=r\"(a[0]), \"=r\"(a[1]), \"=r\"(a[2]), \"=r\"(a[3])\n        : \"r\"(smem));\n  } else if constexpr (count == 2)",
+      "docstring": "",
+      "line": 150
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\"ldmatrix.sync.aligned.m8n8.x2.shared.b16 {%0,%1}, [%2];\\n\"\n                 : \"=r\"(a[0]), \"=r\"(a[1])\n                 : \"r\"(smem));\n  } else if constexpr (count == 1)",
+      "docstring": "",
+      "line": 155
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\"ldmatrix.sync.aligned.m8n8.x1.shared.b16 {%0}, [%1];\\n\"\n                 : \"=r\"(a[0])\n                 : \"r\"(smem));\n  } else {\n    static_assert(count == 1 || count == 2 || count == 4, \"invalid count\");\n  }\n}\n\n// Multiply dequantized values by the corresponding quantization scale; used\n// only for grouped quantization.\ntemplate <typename scalar_t>\n__device__ inline void scale(typename ScalarType<scalar_t>::FragB& frag_b,\n                             typename ScalarType<scalar_t>::FragS& frag_s,\n                             int i)",
+      "docstring": "",
+      "line": 159
+    },
+    {
+      "name": "num2num2",
+      "kind": "function",
+      "signature": "num2num2(reinterpret_cast<scalar_t*>(&frag_s)[i]);\n  frag_b[0] = __hmul2(frag_b[0], s);\n  frag_b[1] = __hmul2(frag_b[1], s);\n}\n\ntemplate <typename scalar_t>\n__device__ inline void scale_and_sub(\n    typename ScalarType<scalar_t>::FragB& frag_b, scalar_t s, scalar_t zp)",
+      "docstring": "",
+      "line": 176
+    },
+    {
+      "name": "num2num2",
+      "kind": "function",
+      "signature": "num2num2(s);\n  scalar_t2 zp2 = ScalarType<scalar_t>::num2num2(zp);\n  frag_b[0] = __hfma2(frag_b[0], s2, __hneg2(zp2));\n  frag_b[1] = __hfma2(frag_b[1], s2, __hneg2(zp2));\n}\n\ntemplate <typename scalar_t>\n__device__ inline void sub_zp(typename ScalarType<scalar_t>::FragB& frag_b,\n                              typename ScalarType<scalar_t>::scalar_t2& frag_zp,\n                              int i)",
+      "docstring": "",
+      "line": 185
+    },
+    {
+      "name": "num2num2",
+      "kind": "function",
+      "signature": "num2num2(reinterpret_cast<scalar_t*>(&frag_zp)[i]);\n  frag_b[0] = __hsub2(frag_b[0], zp);\n  frag_b[1] = __hsub2(frag_b[1], zp);\n}\n\n// Same as above, but for act_order (each K is multiplied individually)\ntemplate <typename scalar_t>\n__device__ inline void scale4(typename ScalarType<scalar_t>::FragB& frag_b,\n                              typename ScalarType<scalar_t>::FragS& frag_s_1,\n                              typename ScalarType<scalar_t>::FragS& frag_s_2,\n                              typename ScalarType<scalar_t>::FragS& frag_s_3,\n                              typename ScalarType<scalar_t>::FragS& frag_s_4,\n                              int i)",
+      "docstring": "",
+      "line": 197
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "core",
+      "quantization"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 112,
+    "public_symbols": 112,
+    "classes": 0,
+    "functions": 112,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/moe/marlin_moe_wna16/marlin_template.h"
+}

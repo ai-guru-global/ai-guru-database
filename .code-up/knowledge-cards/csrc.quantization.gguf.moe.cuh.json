@@ -1,0 +1,135 @@
+{
+  "id": "csrc.quantization.gguf.moe.cuh",
+  "title": "Moe",
+  "type": "module",
+  "summary": "Module providing moe_q, load_tiles, get_int_from_int8_aligned, __low2float, vec_dot and 5 more symbols",
+  "details": "Contains 35 functions/methods",
+  "symbols": [
+    {
+      "name": "moe_q",
+      "kind": "function",
+      "signature": "moe_q(\n    const void* __restrict__ vx, const void* __restrict__ vy,\n    scalar_t* __restrict__ dst, const int* __restrict__ sorted_token_ids,\n    const int* __restrict__ expert_ids,\n    const int* __restrict__ num_tokens_post_padded, const int exp_stride,\n    const int ncols_x, const int nrows_x, const int ncols_y, const int nrows_y,\n    const int nrows_dst, const int top_k)",
+      "docstring": "",
+      "line": 4
+    },
+    {
+      "name": "load_tiles",
+      "kind": "function",
+      "signature": "load_tiles(x + row_x_0 * blocks_per_row_x + ib0, tile_x_ql, tile_x_dm,\n               tile_x_qh, tile_x_sc, threadIdx.y, nrows_x - row_x_0 - 1,\n               threadIdx.x, blocks_per_row_x);\n\n    const int n_per_r = ((qk * blocks_per_warp) / qr);\n#pragma unroll\n    for (int ir = 0; ir < qr && ib0 * qk + ir * n_per_r < ncols_x; ++ir)",
+      "docstring": "",
+      "line": 51
+    },
+    {
+      "name": "get_int_from_int8_aligned",
+      "kind": "function",
+      "signature": "get_int_from_int8_aligned(by0->qs, threadIdx.x % QI8_1);\n        }\n      }\n\n      if (threadIdx.x < n_per_r / QK8_1)",
+      "docstring": "",
+      "line": 70
+    },
+    {
+      "name": "__low2float",
+      "kind": "function",
+      "signature": "__low2float(*dsi_src);\n          }\n        }\n      }\n      __syncthreads();\n\n      // #pragma unroll // unrolling this loop causes too much register pressure\n      for (int k = ir * WARP_SIZE_GGUF / qr; k < (ir + 1) * WARP_SIZE_GGUF / qr;\n           k += vdr)",
+      "docstring": "",
+      "line": 90
+    },
+    {
+      "name": "vec_dot",
+      "kind": "function",
+      "signature": "vec_dot(tile_x_ql, tile_x_dm, tile_x_qh, tile_x_sc, tile_y_qs,\n                        tile_y_ds, threadIdx.x + i, threadIdx.y + j, k);\n          }\n        }\n      }\n      __syncthreads();\n    }\n  }\n\n#pragma unroll\n  for (int j = 0; j < mmq_x; j += nwarps)",
+      "docstring": "",
+      "line": 103
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(USE_ROCM)\n  #define MOE_X_Q4_0 8\n  #define MOE_Y_Q4_0 128\n  #define NWARPS_Q4_0 8\n#else\n  #define MOE_X_Q4_0 4\n  #define MOE_Y_Q4_0 32\n  #define NWARPS_Q4_0 4\n#endif\n\ntemplate <typename scalar_t, bool need_check>\nstatic __global__ void\n#if defined(USE_ROCM)\n__launch_bounds__(WARP_SIZE_GGUF* NWARPS_Q4_0, 2)\n#endif\n    moe_q4_0(const void* __restrict__ vx, const void* __restrict__ vy,\n             scalar_t* __restrict__ dst, const int* sorted_token_ids,\n             const int* expert_ids, const int* num_tokens_post_padded,\n             const int exp_stride, const int ncols_x, const int nrows_x,\n             const int ncols_y, const int nrows_y, const int nrows_dst,\n             const int top_k)",
+      "docstring": "",
+      "line": 131
+    },
+    {
+      "name": "ggml_moe_q4_0_q8_1_cuda",
+      "kind": "function",
+      "signature": "ggml_moe_q4_0_q8_1_cuda(\n    const void* inp, const void* w, scalar_t* dst, const int* sorted_token_ids,\n    const int* expert_ids, const int* num_tokens_post_padded,\n    const int exp_stride, const int ncols_x, const int nrows_x,\n    const int ncols_y, const int nrows_y, const int nrows_dst, const int top_k,\n    const int tokens_post_padded, cudaStream_t stream)",
+      "docstring": "",
+      "line": 161
+    },
+    {
+      "name": "block_nums",
+      "kind": "function",
+      "signature": "block_nums(block_num_x, block_num_y, 1);\n  const dim3 block_dims(WARP_SIZE_GGUF, nwarps, 1);\n\n  if (nrows_x % mmq_y == 0)",
+      "docstring": "",
+      "line": 175
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(USE_ROCM)\n  #define MOE_X_Q4_1 8\n  #define MOE_Y_Q4_1 128\n  #define NWARPS_Q4_1 8\n#else\n  #define MOE_X_Q4_1 4\n  #define MOE_Y_Q4_1 32\n  #define NWARPS_Q4_1 4\n#endif\n\ntemplate <typename scalar_t, bool need_check>\nstatic __global__ void\n#if defined(USE_ROCM)\n__launch_bounds__(WARP_SIZE_GGUF* NWARPS_Q4_1, 2)\n#endif\n    moe_q4_1(const void* __restrict__ vx, const void* __restrict__ vy,\n             scalar_t* __restrict__ dst, const int* sorted_token_ids,\n             const int* expert_ids, const int* num_tokens_post_padded,\n             const int exp_stride, const int ncols_x, const int nrows_x,\n             const int ncols_y, const int nrows_y, const int nrows_dst,\n             const int top_k)",
+      "docstring": "",
+      "line": 192
+    },
+    {
+      "name": "ggml_moe_q4_1_q8_1_cuda",
+      "kind": "function",
+      "signature": "ggml_moe_q4_1_q8_1_cuda(\n    const void* inp, const void* w, scalar_t* dst, const int* sorted_token_ids,\n    const int* expert_ids, const int* num_tokens_post_padded,\n    const int exp_stride, const int ncols_x, const int nrows_x,\n    const int ncols_y, const int nrows_y, const int nrows_dst, const int top_k,\n    const int tokens_post_padded, cudaStream_t stream)",
+      "docstring": "",
+      "line": 222
+    },
+    {
+      "name": "block_nums",
+      "kind": "function",
+      "signature": "block_nums(block_num_x, block_num_y, 1);\n  const dim3 block_dims(WARP_SIZE_GGUF, nwarps, 1);\n\n  if (nrows_x % mmq_y == 0)",
+      "docstring": "",
+      "line": 236
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(USE_ROCM)\n  #define MOE_X_Q5_0 8\n  #define MOE_Y_Q5_0 128\n  #define NWARPS_Q5_0 8\n#else\n  #define MOE_X_Q5_0 4\n  #define MOE_Y_Q5_0 32\n  #define NWARPS_Q5_0 4\n#endif\n\ntemplate <typename scalar_t, bool need_check>\nstatic __global__ void\n#if defined(USE_ROCM)\n__launch_bounds__(WARP_SIZE_GGUF* NWARPS_Q5_0, 2)\n#endif\n    moe_q5_0(const void* __restrict__ vx, const void* __restrict__ vy,\n             scalar_t* __restrict__ dst, const int* sorted_token_ids,\n             const int* expert_ids, const int* num_tokens_post_padded,\n             const int exp_stride, const int ncols_x, const int nrows_x,\n             const int ncols_y, const int nrows_y, const int nrows_dst,\n             const int top_k)",
+      "docstring": "",
+      "line": 253
+    },
+    {
+      "name": "ggml_moe_q5_0_q8_1_cuda",
+      "kind": "function",
+      "signature": "ggml_moe_q5_0_q8_1_cuda(\n    const void* inp, const void* w, scalar_t* dst, const int* sorted_token_ids,\n    const int* expert_ids, const int* num_tokens_post_padded,\n    const int exp_stride, const int ncols_x, const int nrows_x,\n    const int ncols_y, const int nrows_y, const int nrows_dst, const int top_k,\n    const int tokens_post_padded, cudaStream_t stream)",
+      "docstring": "",
+      "line": 283
+    },
+    {
+      "name": "block_nums",
+      "kind": "function",
+      "signature": "block_nums(block_num_x, block_num_y, 1);\n  const dim3 block_dims(WARP_SIZE_GGUF, nwarps, 1);\n\n  if (nrows_x % mmq_y == 0)",
+      "docstring": "",
+      "line": 297
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(USE_ROCM)\n  #define MOE_X_Q5_1 8\n  #define MOE_Y_Q5_1 128\n  #define NWARPS_Q5_1 8\n#else\n  #define MOE_X_Q5_1 4\n  #define MOE_Y_Q5_1 32\n  #define NWARPS_Q5_1 4\n#endif\n\ntemplate <typename scalar_t, bool need_check>\nstatic __global__ void\n#if defined(USE_ROCM)\n__launch_bounds__(WARP_SIZE_GGUF* NWARPS_Q5_1, 2)\n#endif\n    moe_q5_1(const void* __restrict__ vx, const void* __restrict__ vy,\n             scalar_t* __restrict__ dst, const int* sorted_token_ids,\n             const int* expert_ids, const int* num_tokens_post_padded,\n             const int exp_stride, const int ncols_x, const int nrows_x,\n             const int ncols_y, const int nrows_y, const int nrows_dst,\n             const int top_k)",
+      "docstring": "",
+      "line": 314
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cstdint"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 35,
+    "public_symbols": 35,
+    "classes": 0,
+    "functions": 35,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/gguf/moe.cuh"
+}

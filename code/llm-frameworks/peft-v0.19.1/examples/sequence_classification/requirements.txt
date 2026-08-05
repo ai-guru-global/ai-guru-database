@@ -1,6 +1,0 @@
-transformers
-accelerate
-evaluate
-tqdm
-datasets
-torchao

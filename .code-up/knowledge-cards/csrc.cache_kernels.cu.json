@@ -1,0 +1,147 @@
+{
+  "id": "csrc.cache_kernels.cu",
+  "title": "Cache Kernels",
+  "type": "module",
+  "summary": "Module providing swap_blocks, device, TORCH_CHECK, TORCH_CHECK, cudaMemcpyAsync and 5 more symbols",
+  "details": "Contains 44 functions/methods",
+  "symbols": [
+    {
+      "name": "swap_blocks",
+      "kind": "function",
+      "signature": "swap_blocks(torch::Tensor& src, torch::Tensor& dst,\n                 const torch::Tensor& block_mapping)",
+      "docstring": "",
+      "line": 23
+    },
+    {
+      "name": "device",
+      "kind": "function",
+      "signature": "device();\n  torch::Device dst_device = dst.device();\n  cudaMemcpyKind memcpy_type;\n  if (src_device.is_cuda() && dst_device.is_cuda())",
+      "docstring": "",
+      "line": 27
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(src_device.index() == dst_device.index(),\n                \"src and dst must be on the same GPU\");\n    memcpy_type = cudaMemcpyDeviceToDevice;\n  } else if (src_device.is_cuda() && dst_device.is_cpu())",
+      "docstring": "",
+      "line": 30
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(false, \"Invalid device combination\");\n  }\n\n  // NOTE(youkaichao): keep in mind that `block_mapping` should be\n  // a cpu tensor, otherwise every `item` call will require a gpu-cpu\n  // synchronization.\n  TORCH_CHECK(block_mapping.device().is_cpu(), \"block_mapping must be on CPU\");\n\n  char* src_ptr = static_cast<char*>(src.data_ptr());\n  char* dst_ptr = static_cast<char*>(dst.data_ptr());\n\n  // We use the stride instead of numel in case the cache is padded for memory\n  // alignment reasons, we assume the blocks data (inclusive of any padding)\n  // is contiguous in memory\n  const int64_t block_size_in_bytes = src.element_size() * src.stride(0);\n  const at::cuda::OptionalCUDAGuard device_guard(\n      src_device.is_cuda() ? src_device : dst_device);\n  const cudaStream_t stream = at::cuda::getCurrentCUDAStream();\n  // NOTE(woosuk): This can be slow if the number of blocks is large.\n  const int64_t num_blocks = block_mapping.size(0);\n  for (size_t i = 0; i < num_blocks; i++)",
+      "docstring": "",
+      "line": 38
+    },
+    {
+      "name": "cudaMemcpyAsync",
+      "kind": "function",
+      "signature": "cudaMemcpyAsync(dst_ptr + dst_offset, src_ptr + src_offset,\n                    block_size_in_bytes, memcpy_type, stream);\n  }\n}\n\nnamespace vllm {\n\n// Grid: (num_layers, num_pairs)\ntemplate <typename scalar_t>\n__global__ void copy_blocks_kernel(int64_t* key_cache_ptrs,\n                                   int64_t* value_cache_ptrs,\n                                   const int64_t* __restrict__ block_mapping,\n                                   const int numel_per_block)",
+      "docstring": "",
+      "line": 63
+    },
+    {
+      "name": "copy_blocks_mla_kernel",
+      "kind": "function",
+      "signature": "copy_blocks_mla_kernel(\n    int64_t* cache_ptrs, const int64_t* __restrict__ block_mapping,\n    const int mem_footprint_per_block)",
+      "docstring": "",
+      "line": 101
+    },
+    {
+      "name": "copy_blocks",
+      "kind": "function",
+      "signature": "copy_blocks(std::vector<torch::Tensor> const& key_caches,\n                 std::vector<torch::Tensor> const& value_caches,\n                 const torch::Tensor& block_mapping)",
+      "docstring": "",
+      "line": 122
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size();\n  TORCH_CHECK(num_layers == value_caches.size());\n  if (num_layers == 0)",
+      "docstring": "",
+      "line": 126
+    },
+    {
+      "name": "device",
+      "kind": "function",
+      "signature": "device();\n  TORCH_CHECK(cache_device.is_cuda());\n\n  // Create data structures for the kernel.\n  // Create an array of pointers to the key and value caches.\n  int64_t key_cache_ptrs[num_layers];\n  int64_t value_cache_ptrs[num_layers];\n  for (int layer_idx = 0; layer_idx < num_layers; ++layer_idx)",
+      "docstring": "",
+      "line": 131
+    },
+    {
+      "name": "data_ptr",
+      "kind": "function",
+      "signature": "data_ptr());\n    value_cache_ptrs[layer_idx] =\n        reinterpret_cast<int64_t>(value_caches[layer_idx].data_ptr());\n  }\n\n  // block_mapping is a 2D tensor with shape (num_pairs, 2).\n  int num_pairs = block_mapping.size(0);\n\n  // Move the data structures to the GPU.\n  // NOTE: This synchronizes the CPU and GPU.\n  torch::Tensor key_cache_ptrs_tensor =\n      torch::from_blob(key_cache_ptrs, {num_layers}, torch::kInt64)\n          .to(cache_device);\n  torch::Tensor value_cache_ptrs_tensor =\n      torch::from_blob(value_cache_ptrs, {num_layers}, torch::kInt64)\n          .to(cache_device);\n\n  // Launch the kernel.\n  const int numel_per_block = key_caches[0][0].numel();\n  dim3 grid(num_layers, num_pairs);\n  dim3 block(std::min(1024, numel_per_block));\n  const at::cuda::OptionalCUDAGuard device_guard(cache_device);\n  const cudaStream_t stream = at::cuda::getCurrentCUDAStream();\n  VLLM_DISPATCH_FLOATING_AND_BYTE_TYPES(\n      key_caches[0].scalar_type(), \"copy_blocks_kernel\", ([&] {\n        vllm::copy_blocks_kernel<scalar_t><<<grid, block, 0, stream>>>(\n            key_cache_ptrs_tensor.data_ptr<int64_t>(),\n            value_cache_ptrs_tensor.data_ptr<int64_t>(),\n            block_mapping.data_ptr<int64_t>(), numel_per_block);\n      }));\n}\n\n// copy blocks kernel for MLA (assumes a joint KV-cache)\nvoid copy_blocks_mla(std::vector<torch::Tensor> const& kv_caches,\n                     const torch::Tensor& block_mapping)",
+      "docstring": "",
+      "line": 140
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size();\n  if (num_layers == 0)",
+      "docstring": "",
+      "line": 175
+    },
+    {
+      "name": "device",
+      "kind": "function",
+      "signature": "device();\n  TORCH_CHECK(cache_device.is_cuda(), \"kv_cache must be on CUDA\");\n\n  std::vector<int64_t> cache_ptrs(num_layers);\n  for (int layer_idx = 0; layer_idx < num_layers; ++layer_idx)",
+      "docstring": "",
+      "line": 179
+    },
+    {
+      "name": "data_ptr",
+      "kind": "function",
+      "signature": "data_ptr());\n  }\n  torch::Tensor cache_ptrs_tensor =\n      torch::from_blob(cache_ptrs.data(), {num_layers}, torch::kInt64)\n          .to(cache_device);\n\n  int num_pairs = block_mapping.size(0);\n  // We use the stride instead of numel in case the cache is padded for memory\n  // alignment reasons, we assume the blocks data (inclusive of any padding)\n  // is contiguous in memory\n  int mem_footprint_per_block = kv_caches[0].stride(0);\n  dim3 grid(num_layers, num_pairs);\n  dim3 block(std::min(1024, mem_footprint_per_block));\n  const at::cuda::OptionalCUDAGuard device_guard(cache_device);\n  const cudaStream_t stream = at::cuda::getCurrentCUDAStream();\n  VLLM_DISPATCH_FLOATING_AND_BYTE_TYPES(\n      kv_caches[0].scalar_type(), \"copy_blocks_mla_kernel\", ([&] {\n        vllm::copy_blocks_mla_kernel<scalar_t><<<grid, block, 0, stream>>>(\n            cache_ptrs_tensor.data_ptr<int64_t>(),\n            block_mapping.data_ptr<int64_t>(), mem_footprint_per_block);\n      }));\n}\n\nnamespace vllm {\n\ntemplate <typename scalar_t, typename cache_t, Fp8KVCacheDataType kv_dt>\n__global__ void reshape_and_cache_kernel(\n    const scalar_t* __restrict__ key,    // [num_tokens, num_heads, head_size]\n    const scalar_t* __restrict__ value,  // [num_tokens, num_heads, head_size]\n    cache_t* __restrict__ key_cache,     // [num_blocks, num_heads, head_size/x,\n                                         // block_size, x]\n    cache_t* __restrict__ value_cache,   // [num_blocks, num_heads, head_size,\n                                         // block_size]\n    const int64_t* __restrict__ slot_mapping,  // [num_tokens]\n    const int key_stride, const int value_stride, const int num_heads,\n    const int head_size, const int block_size, const int x,\n    const float* k_scale, const float* v_scale)",
+      "docstring": "",
+      "line": 185
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(kv_dt == Fp8KVCacheDataType::kAuto)",
+      "docstring": "",
+      "line": 251
+    },
+    {
+      "name": "reshape_and_cache_flash_kernel",
+      "kind": "function",
+      "signature": "reshape_and_cache_flash_kernel(\n    const scalar_t* __restrict__ key,    // [num_tokens, num_heads, head_size]\n    const scalar_t* __restrict__ value,  // [num_tokens, num_heads, head_size]\n    cache_t* __restrict__ key_cache,     // [num_blocks, block_size, num_heads,\n                                         // head_size]\n    cache_t* __restrict__ value_cache,   // [num_blocks, block_size, num_heads,\n                                         // head_size]\n    const int64_t* __restrict__ slot_mapping,  // [num_tokens]\n    const int64_t block_stride, const int64_t page_stride,\n    const int64_t head_stride, const int64_t key_stride,\n    const int64_t value_stride, const int num_heads, const int head_size,\n    const int block_size, const float* k_scale, const float* v_scale)",
+      "docstring": "",
+      "line": 262
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "algorithm",
+      "c10",
+      "cassert",
+      "cuda_compat",
+      "cuda_utils",
+      "dispatch_utils",
+      "hip",
+      "map",
+      "quantization",
+      "torch",
+      "vector"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 44,
+    "public_symbols": 44,
+    "classes": 0,
+    "functions": 44,
+    "internal_deps": 0,
+    "external_deps": 12,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cache_kernels.cu"
+}

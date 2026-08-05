@@ -10,7 +10,7 @@ relationships:
   - target: "概念/Agent/tool-calling"
     type: related_to
 sources:
-  - 05_大模型/16_约束生成/
+  - 05_大模型/15_约束生成/
   - 15_智能体/01_Agent基础/
 summary: "结构化输出让 LLM 按预定义 Schema（JSON/XML/Pydantic 模型）生成可被程序直接解析的结果，是 Agent 工具调用、数据抽取和 API 集成的基础能力。"
 provenance:

@@ -238,7 +238,7 @@ Nadella 的平衡策略：
 | 追求 | 务实，不追求标签 |
 | 关注点 | 真实世界影响力 |
 | 时间线 | 不急于定义 |
-| 与 [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] | 互补关系 |
+| 与 [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] | 互补关系 |
 
 ### 关于 AI 治理
 
@@ -256,7 +256,7 @@ Nadella 的平衡策略：
 
 ### 与其他科技 CEO 的对比
 
-| 维度 | Nadella | [[19_业界观点/24_Sundar_Pichai_皮查伊/02_索引|Pichai]] | [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] |
+| 维度 | Nadella | [[19_业界观点/24_Sundar_Pichai_皮查伊/INDEX|Pichai]] | [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] |
 |------|---------|--------|---------|
 | 2026 角色 | Microsoft CEO | Google CEO | OpenAI CEO |
 | AI 旗舰 | Copilot | Gemini | GPT-5 |
@@ -367,12 +367,12 @@ Nadella 2017 年的著作在 2026 年仍是领导力经典：
 
 | 人物 | 关系 | 2026 互动 |
 |------|------|-----------|
-| [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] | 合作者 | 复杂竞合 |
-| [[19_业界观点/24_Sundar_Pichai_皮查伊/02_索引|Pichai]] | 竞争对手 | 云+AI 竞争 |
-| [[19_业界观点/04_Bill_Gates_比尔盖茨/03_索引|Gates]] | 前任 | 微软顾问 |
-| [[19_业界观点/19_Mustafa_Suleyman_苏莱曼/02_索引|Suleyman]] | 下属 | Microsoft AI CEO |
-| [[19_业界观点/07_Elon_Musk_马斯克/03_索引|Musk]] | 竞争对手 | 多线 |
-| [[19_业界观点/03_Andrew_Ng_吴恩达/03_索引|Ng]] | 行业同行 | 偶有交流 |
+| [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] | 合作者 | 复杂竞合 |
+| [[19_业界观点/24_Sundar_Pichai_皮查伊/INDEX|Pichai]] | 竞争对手 | 云+AI 竞争 |
+| [[19_业界观点/04_Bill_Gates_比尔盖茨/INDEX|Gates]] | 前任 | 微软顾问 |
+| [[19_业界观点/19_Mustafa_Suleyman_苏莱曼/INDEX|Suleyman]] | 下属 | Microsoft AI CEO |
+| [[19_业界观点/07_Elon_Musk_马斯克/INDEX|Musk]] | 竞争对手 | 多线 |
+| [[19_业界观点/03_Andrew_Ng_吴恩达/INDEX|Ng]] | 行业同行 | 偶有交流 |
 
 ---
 

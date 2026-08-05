@@ -75,8 +75,8 @@ name_zh: "AI Guru 知识库 — 全项目结构评估与改进建议"
 
 | 有 Nutshell | 无 Nutshell（关键缺失） |
 |------------|----------------------|
-| 05_大模型/05_LLM架构 | **01_基础入门**（无） |
-| 05_大模型/08_提示工程 | **02_Machine_Learning**（无） |
+| 05_大模型/04_LLM架构 | **01_基础入门**（无） |
+| 05_大模型/07_提示工程 | **02_Machine_Learning**（无） |
 | 06_RL/AI_Agents | **03_Deep_Learning**（无） |
 | 07_Model_Training | **05_Computer_Vision**（无） |
 | 09_Deployment_Inference | **08_Model_Evaluation**（无） |
@@ -482,8 +482,8 @@ _projects/Cloud_Ops_Agent/README.md
 
 **for_dummy 缺失清单**（12 个）：
 - `01_数学基础/11_Java生态与AI/Java_Ecosystem_AI_for_dummy.md`
-- `05_大模型/10_多模态模型/Multimodal_Models_for_dummy.md`
-- `05_大模型/09_推理模型/Reasoning_Models_for_dummy.md`
+- `05_大模型/09_多模态模型/Multimodal_Models_for_dummy.md`
+- `05_大模型/08_推理模型/Reasoning_Models_for_dummy.md`
 - `17_伦理安全/08_AI供应链安全/AI_Supply_Chain_Security_for_dummy.md`
 - `17_伦理安全/09_深度伪造安全/Deepfake_Security_for_dummy.md`
 - `17_伦理安全/05_机制可解释性/Mechanistic_Interpretability_for_dummy.md`
@@ -507,7 +507,7 @@ _projects/Cloud_Ops_Agent/README.md
 - 在每个 `sayings.md` 底部增加"相关章节"链接
 
 **22_Papers 建议**：
-- 选择 Top 10 最具影响力论文，在对应章节中撰写深度解读（如 Attention Is All You Need 在 `05_大模型/04_Transformer革命/` 中扩充）
+- 选择 Top 10 最具影响力论文，在对应章节中撰写深度解读（如 Attention Is All You Need 在 `05_大模型/03_Transformer架构/` 中扩充）
 - `20_论文精读/README.md` 改为"论文索引 + 对应章节链接"，而非纯外链列表
 
 ### 7.3 中期规划（2-4 周）

@@ -126,7 +126,7 @@ scheduler = get_cosine_schedule_with_warmup(
 - [[概念/Training/gradient-checkpointing|梯度检查点]] — 训练显存优化
 - [[概念/Training/distributed-training|分布式训练]] — 多卡并行训练
 - [[03_深度学习/Deep_Learning_For_Beginners|深度学习入门]] — 神经网络基础
-- [[05_大模型/05_LLM架构/09_LLM_Internals_训练|大模型训练内幕]] — 优化器与 学习率调度
+- [[05_大模型/04_LLM架构/09_LLM_Internals_训练|大模型训练内幕]] — 优化器与 学习率调度
 
 ## 2026 梯度下降生态现状
 

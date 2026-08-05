@@ -9,7 +9,7 @@ relationships:
     type: related_to
   - target: "概念/reasoning-models"
     type: related_to
-sources: [05_大模型/05_LLM架构/LLM_Architectures.md]
+sources: [05_大模型/04_LLM架构/LLM_Architectures.md]
 summary: 大语言模型（LLM）架构基于Transformer发展出三大范式：Encoder-only（BERT）、Decoder-only（GPT/LLaMA）和Encoder-Decoder（T5）。2026年主流趋势为Decoder-only + MoE架构，推理模型和Agent原生设计成为标配。
 provenance:
   extracted: 0.85
@@ -165,7 +165,7 @@ MHA每头独立KV（精度高但内存大），MQA所有头共享一组KV（省�
 - [[概念/LLM/mamba|Mamba (SSM)]]
 - [[概念/LLM/foundation-model|基础模型]]
 - [[05_大模型/01_LLM基础/05_LLM_基础|大语言模型基础速成]]
-- [[05_大模型/10_多模态模型/06_多模态_架构_2026|多模态架构 2026]]
+- [[05_大模型/09_多模态模型/06_多模态_架构_2026|多模态架构 2026]]
 
 ## 主流架构参数对比
 

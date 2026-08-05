@@ -43,9 +43,9 @@ name_zh: "LLM 全生命周期内容缺口分析"
 - 视频理解架构：时空注意力、帧采样策略
 
 **建议新建页面**:
-- ✅ `05_大模型/10_多模态模型/Native_Multimodal_Architectures.md` — 已创建 (12.8 KB)
-- ✅ `05_大模型/10_多模态模型/Modality_Fusion_Mechanisms.md` — 已创建 (14.2 KB)
-- ✅ `05_大模型/10_多模态模型/Video_Understanding_Architectures.md` — 已创建 (15.9 KB)
+- ✅ `05_大模型/09_多模态模型/Native_Multimodal_Architectures.md` — 已创建 (12.8 KB)
+- ✅ `05_大模型/09_多模态模型/Modality_Fusion_Mechanisms.md` — 已创建 (14.2 KB)
+- ✅ `05_大模型/09_多模态模型/Video_Understanding_Architectures.md` — 已创建 (15.9 KB)
 
 ---
 
@@ -62,8 +62,8 @@ name_zh: "LLM 全生命周期内容缺口分析"
 - MoE 的通信开销与 All-to-All 优化
 
 **建议新建页面**:
-- ✅ `05_大模型/05_LLM架构/MoE_Routing_and_Load_Balancing.md` — 已创建 (15.1 KB)
-- ✅ `05_大模型/05_LLM架构/MoE_Case_Studies_DeepSeek_Mixtral.md` — 已创建 (11.1 KB)
+- ✅ `05_大模型/04_LLM架构/MoE_Routing_and_Load_Balancing.md` — 已创建 (15.1 KB)
+- ✅ `05_大模型/04_LLM架构/MoE_Case_Studies_DeepSeek_Mixtral.md` — 已创建 (11.1 KB)
 
 ---
 
@@ -98,7 +98,7 @@ name_zh: "LLM 全生命周期内容缺口分析"
 
 **建议新建页面**:
 - ✅ `03_深度学习/02_神经网络核心/State_Space_Models_2026.md` — 已扩充 RWKV/RetNet
-- ✅ `05_大模型/05_LLM架构/Transformer_Alternatives.md` — 已创建 (13.7 KB)
+- ✅ `05_大模型/04_LLM架构/Transformer_Alternatives.md` — 已创建 (13.7 KB)
 
 ---
 
@@ -133,9 +133,9 @@ name_zh: "LLM 全生命周期内容缺口分析"
 - 推理模型的评测：Beyond accuracy — 推理过程可追溯性
 
 **建议新建页面**:
-- ✅ `05_大模型/09_推理模型/o1_Class_Reasoning_Models.md` — 已创建 (13.7 KB)
-- ✅ `05_大模型/09_推理模型/DeepSeek_R1_Technical_Analysis.md` — 已创建 (13.5 KB)
-- ✅ `05_大模型/09_推理模型/Process_Reward_Models.md` — 已创建 (7.0 KB)
+- ✅ `05_大模型/08_推理模型/o1_Class_Reasoning_Models.md` — 已创建 (13.7 KB)
+- ✅ `05_大模型/08_推理模型/DeepSeek_R1_Technical_Analysis.md` — 已创建 (13.5 KB)
+- ✅ `05_大模型/08_推理模型/Process_Reward_Models.md` — 已创建 (7.0 KB)
 
 ---
 

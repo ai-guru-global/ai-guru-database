@@ -1,0 +1,109 @@
+{
+  "id": "csrc.cutlass_extensions.cute_utils.cuh",
+  "title": "Cute Utils",
+  "type": "module",
+  "summary": "Module providing permute_layout, static_assert, constexpr, coalesce, get_logical_ptr and 5 more symbols",
+  "details": "Contains 11 functions/methods",
+  "symbols": [
+    {
+      "name": "permute_layout",
+      "kind": "function",
+      "signature": "permute_layout(Layout l)",
+      "docstring": "",
+      "line": 14
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(rank(l) == sizeof...(I), \"Invalid permutation, rank mismatch\");\n  return cute::make_layout(cute::get<I>(l)...);\n}\n\n// is the layout f(x) = x\ntemplate <typename Layout>\nCUTE_HOST_DEVICE static constexpr bool is_identity_layout()",
+      "docstring": "",
+      "line": 15
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(std::is_same_v<Layout, void>)",
+      "docstring": "",
+      "line": 22
+    },
+    {
+      "name": "coalesce",
+      "kind": "function",
+      "signature": "coalesce(Layout{});\n    if constexpr (rank(coalesced_layout) == 1 &&\n                  stride<0>(coalesced_layout) == 1)",
+      "docstring": "",
+      "line": 26
+    },
+    {
+      "name": "get_logical_ptr",
+      "kind": "function",
+      "signature": "get_logical_ptr(PointerType* ptr)",
+      "docstring": "",
+      "line": 37
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(cute::sizeof_bits_v<PointerType> < 8)",
+      "docstring": "",
+      "line": 40
+    },
+    {
+      "name": "create_auto_vectorizing_copy",
+      "kind": "function",
+      "signature": "create_auto_vectorizing_copy()",
+      "docstring": "",
+      "line": 50
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(bits % 128 == 0)",
+      "docstring": "",
+      "line": 54
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(bits % 64 == 0)",
+      "docstring": "",
+      "line": 57
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(bits % 32 == 0)",
+      "docstring": "",
+      "line": 59
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(bits % 16 == 0)",
+      "docstring": "",
+      "line": 61
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cute",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 11,
+    "public_symbols": 11,
+    "classes": 0,
+    "functions": 11,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cutlass_extensions/cute_utils.cuh"
+}

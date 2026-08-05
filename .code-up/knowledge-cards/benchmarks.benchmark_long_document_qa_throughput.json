@@ -1,0 +1,54 @@
+{
+  "id": "benchmarks.benchmark_long_document_qa_throughput",
+  "title": "Benchmark Long Document Qa Throughput",
+  "type": "module",
+  "summary": "Module providing test_long_document_qa, repeat_prompts, main",
+  "details": "Contains 3 functions/methods",
+  "symbols": [
+    {
+      "name": "test_long_document_qa",
+      "kind": "function",
+      "signature": "def test_long_document_qa(llm=None, sampling_params=None, prompts=None)",
+      "docstring": "Test long document QA with the given prompts and sampling parameters.\n    Print the time spent in processing all the prompts.\n\n    Args:\n        llm: The language model used for generating responses.\n",
+      "line": 52
+    },
+    {
+      "name": "repeat_prompts",
+      "kind": "function",
+      "signature": "def repeat_prompts(prompts, repeat_count, mode: str)",
+      "docstring": "Repeat each prompt in the list for a specified number of times.\n    The order of prompts in the output list depends on the mode.\n\n    Args:\n        prompts: A list of prompts to be repeated.\n        r",
+      "line": 68
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "signature": "def main(args)",
+      "docstring": "",
+      "line": 107
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "dataclasses",
+      "random",
+      "time",
+      "vllm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 3,
+    "public_symbols": 3,
+    "classes": 0,
+    "functions": 3,
+    "internal_deps": 0,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 24
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/benchmark_long_document_qa_throughput.py"
+}

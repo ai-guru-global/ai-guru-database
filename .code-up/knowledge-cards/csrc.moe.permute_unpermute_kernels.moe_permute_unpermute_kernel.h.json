@@ -1,0 +1,58 @@
+{
+  "id": "csrc.moe.permute_unpermute_kernels.moe_permute_unpermute_kernel.h",
+  "title": "Moe Permute Unpermute Kernel",
+  "type": "module",
+  "summary": "Module providing get_ptr, data_ptr, CubKeyValueSorter",
+  "details": "Contains 1 classes: CubKeyValueSorter. Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "get_ptr",
+      "kind": "function",
+      "signature": "get_ptr(torch::Tensor& t)",
+      "docstring": "",
+      "line": 12
+    },
+    {
+      "name": "data_ptr",
+      "kind": "function",
+      "signature": "data_ptr());\n}\n\ntemplate <typename T>\ninline const T* get_ptr(const torch::Tensor& t)",
+      "docstring": "",
+      "line": 16
+    },
+    {
+      "name": "CubKeyValueSorter",
+      "kind": "class",
+      "signature": "class CubKeyValueSorter",
+      "docstring": "",
+      "line": 24
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "c10",
+      "cub",
+      "cutlass",
+      "dispatch",
+      "moe_permute_unpermute_kernel",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 3,
+    "public_symbols": 3,
+    "classes": 1,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 6,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "oop",
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/moe/permute_unpermute_kernels/moe_permute_unpermute_kernel.h"
+}

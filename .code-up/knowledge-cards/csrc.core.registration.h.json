@@ -1,0 +1,37 @@
+{
+  "id": "csrc.core.registration.h",
+  "title": "Registration",
+  "type": "module",
+  "summary": "Module providing _CONCAT",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "_CONCAT",
+      "kind": "function",
+      "signature": "_CONCAT(A, B) A##B\n#define CONCAT(A, B) _CONCAT(A, B)\n\n#define _STRINGIFY(A) #A\n#define STRINGIFY(A) _STRINGIFY(A)\n\n// A version of the TORCH_LIBRARY macro that expands the NAME, i.e. so NAME\n// could be a macro instead of a literal token.\n#define TORCH_LIBRARY_EXPAND(NAME, MODULE) TORCH_LIBRARY(NAME, MODULE)\n\n// A version of the TORCH_LIBRARY_IMPL macro that expands the NAME, i.e. so NAME\n// could be a macro instead of a literal token.\n#define TORCH_LIBRARY_IMPL_EXPAND(NAME, DEVICE, MODULE) \\\n  TORCH_LIBRARY_IMPL(NAME, DEVICE, MODULE)\n\n// REGISTER_EXTENSION allows the shared library to be loaded and initialized\n// via python's import statement.\n#define REGISTER_EXTENSION(NAME)                                               \\\n  PyMODINIT_FUNC CONCAT(PyInit_, NAME)()",
+      "docstring": "",
+      "line": 5
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "Python"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/core/registration.h"
+}

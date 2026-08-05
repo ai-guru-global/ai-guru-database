@@ -1,0 +1,137 @@
+{
+  "id": "csrc.quantization.fp8.amd.quant_utils.cuh",
+  "title": "Quant Utils",
+  "type": "module",
+  "summary": "Module providing cvt_c10, cvt_c10, c10::Float8_e4m3fn, c10::Float8_e4m3fnuz, scaled_vec_conversion and 5 more symbols",
+  "details": "Contains 34 functions/methods",
+  "symbols": [
+    {
+      "name": "cvt_c10",
+      "kind": "function",
+      "signature": "cvt_c10(float const r)",
+      "docstring": "",
+      "line": 16
+    },
+    {
+      "name": "cvt_c10",
+      "kind": "function",
+      "signature": "cvt_c10(float const r)",
+      "docstring": "",
+      "line": 27
+    },
+    {
+      "name": "c10::Float8_e4m3fn",
+      "kind": "function",
+      "signature": "c10::Float8_e4m3fn(\n      __hip_cvt_float_to_fp8(r, __hip_fp8_e4m3::__default_saturation,\n                             __hip_fp8_e4m3::__default_interpret),\n      c10::Float8_e4m3fn::from_bits());\n    #else\n  // Cast implemented by pytorch. Uses bit manipulation instead of HW cvt.\n  // HW cvt above is faster when it is available (ROCm 6.3 or newer).\n  return static_cast<c10::Float8_e4m3fn>(r);\n    #endif\n}\n\ntemplate <>\n__device__ __forceinline__ c10::Float8_e4m3fnuz cvt_c10(float const r)",
+      "docstring": "",
+      "line": 30
+    },
+    {
+      "name": "c10::Float8_e4m3fnuz",
+      "kind": "function",
+      "signature": "c10::Float8_e4m3fnuz(\n      __hip_cvt_float_to_fp8(r, __hip_fp8_e4m3_fnuz::__default_saturation,\n                             __hip_fp8_e4m3_fnuz::__default_interpret),\n      c10::Float8_e4m3fnuz::from_bits());\n}\n\ntemplate <typename Tout, typename Tin>\n__inline__ __device__ Tout vec_conversion(const Tin& x)",
+      "docstring": "",
+      "line": 43
+    },
+    {
+      "name": "scaled_vec_conversion",
+      "kind": "function",
+      "signature": "scaled_vec_conversion(const Tin& x,\n                                                 const float scale)",
+      "docstring": "",
+      "line": 53
+    },
+    {
+      "name": "__hip_cvt_fp8_to_halfraw",
+      "kind": "function",
+      "signature": "__hip_cvt_fp8_to_halfraw(a, fp8_type::__default_interpret).x;\n}\n\n// fp8x2 -> half2\ntemplate <>\n__inline__ __device__ uint32_t\nvec_conversion<uint32_t, uint16_t>(const uint16_t& a)",
+      "docstring": "",
+      "line": 72
+    },
+    {
+      "name": "__hip_cvt_fp8x2_to_halfraw2",
+      "kind": "function",
+      "signature": "__hip_cvt_fp8x2_to_halfraw2(a, fp8_type::__default_interpret);\n  return tmp.ui32;\n}\n\n// fp8x4 -> half2x2\ntemplate <>\n__inline__ __device__ uint2 vec_conversion<uint2, uint32_t>(const uint32_t& a)",
+      "docstring": "",
+      "line": 84
+    },
+    {
+      "name": "__float2bfloat16",
+      "kind": "function",
+      "signature": "__float2bfloat16(static_cast<float>(f8));\n}\n\nusing __nv_bfloat162 = __hip_bfloat162;\n\n// fp8x2 -> __nv_bfloat162\ntemplate <>\n__inline__ __device__ __nv_bfloat162\nvec_conversion<__nv_bfloat162, uint16_t>(const uint16_t& a)",
+      "docstring": "",
+      "line": 119
+    },
+    {
+      "name": "make_float4",
+      "kind": "function",
+      "signature": "make_float4(tmp.x.x, tmp.x.y, tmp.y.x, tmp.y.y);\n  return res;\n}\n\n// fp8x8 -> float8\ntemplate <>\n__inline__ __device__ Float8_ vec_conversion<Float8_, uint2>(const uint2& a)",
+      "docstring": "",
+      "line": 191
+    },
+    {
+      "name": "__hip_cvt_halfraw_to_fp8",
+      "kind": "function",
+      "signature": "__hip_cvt_halfraw_to_fp8(tmp, fp8_type::__default_saturation,\n                                  fp8_type::__default_interpret);\n}\n\ntemplate <>\n__inline__ __device__ uint16_t\nvec_conversion<uint16_t, uint32_t>(const uint32_t& a)",
+      "docstring": "",
+      "line": 214
+    },
+    {
+      "name": "__hip_cvt_halfraw2_to_fp8x2",
+      "kind": "function",
+      "signature": "__hip_cvt_halfraw2_to_fp8x2(tmp.h2r, fp8_type::__default_saturation,\n                                     fp8_type::__default_interpret);\n}\n\n// bf16 -> fp8\ntemplate <>\n__inline__ __device__ uint8_t\nvec_conversion<uint8_t, __nv_bfloat16>(const __nv_bfloat16& a)",
+      "docstring": "",
+      "line": 226
+    },
+    {
+      "name": "__hip_cvt_float_to_fp8",
+      "kind": "function",
+      "signature": "__hip_cvt_float_to_fp8(__bfloat162float(a),\n                                fp8_type::__default_saturation,\n                                fp8_type::__default_interpret);\n}\n\n// float -> fp8\ntemplate <>\n__inline__ __device__ uint8_t vec_conversion<uint8_t, float>(const float& a)",
+      "docstring": "",
+      "line": 234
+    },
+    {
+      "name": "__hip_cvt_float_to_fp8",
+      "kind": "function",
+      "signature": "__hip_cvt_float_to_fp8(a, fp8_type::__default_saturation,\n                                fp8_type::__default_interpret);\n}\n\n// float2 -> half2\ntemplate <>\n__inline__ __device__ uint32_t\nvec_conversion<uint32_t, float2>(const float2& a)",
+      "docstring": "",
+      "line": 242
+    },
+    {
+      "name": "__float22half2_rn",
+      "kind": "function",
+      "signature": "__float22half2_rn(a);\n  return uint32;\n}\n\n// Float4 -> half2x2\ntemplate <>\n__inline__ __device__ uint2 vec_conversion<uint2, Float4_>(const Float4_& a)",
+      "docstring": "",
+      "line": 256
+    },
+    {
+      "name": "__float22bfloat162_rn",
+      "kind": "function",
+      "signature": "__float22bfloat162_rn(a);\n  return b;\n}\n\n// Float4 -> bfloat162x2\ntemplate <>\n__inline__ __device__ bf16_4_t\nvec_conversion<bf16_4_t, Float4_>(const Float4_& a)",
+      "docstring": "",
+      "line": 301
+    }
+  ],
+  "dependencies": {
+    "internal": [
+      "../../../attention/attention_dtypes.h"
+    ],
+    "external": [
+      "hip"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 34,
+    "public_symbols": 34,
+    "classes": 0,
+    "functions": 34,
+    "internal_deps": 1,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/fp8/amd/quant_utils.cuh"
+}

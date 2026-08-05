@@ -3,9 +3,9 @@ title: "微调 × RAG: LLM 应用知识注入的两条路径"
 category: -synthesis
 tags: ["fine-tuning", "rag", "knowledge-injection", "architecture-decision", "llm-application", "synthesis"]
 sources:
-  - "05_大模型/07_微调技术/GenAI_L18_Fine_Tuning_LLMs"
+  - "05_大模型/06_微调技术/GenAI_L18_Fine_Tuning_LLMs"
   - "14_RAG系统/GenAI_L15_RAG_and_Vector_Databases"
-  - "05_大模型/07_微调技术/Fine_tuning_Techniques"
+  - "05_大模型/06_微调技术/Fine_tuning_Techniques"
   - "14_RAG系统/04_高级RAG/RAG_Advanced_2026"
 created: 2026-06-30
 updated: 2026-06-30
@@ -101,8 +101,8 @@ RAG 的失败是**可诊断的**：检索不到 → 扩大搜索范围；检索�
 
 ## Related
 
-- [[05_大模型/07_微调技术/04_GenAI_L18_微调_LLMs]]
+- [[05_大模型/06_微调技术/04_GenAI_L18_微调_LLMs]]
 - [[14_RAG系统/01_RAG基础/04_GenAI_L15_RAG_and_向量数据库]]
-- [[05_大模型/07_微调技术/03_微调技术]]
+- [[05_大模型/06_微调技术/03_微调技术]]
 - [[14_RAG系统/04_高级RAG/12_RAG_高级_2026]]
 - [[治理/multimodal-rag]]

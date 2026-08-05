@@ -1,0 +1,136 @@
+{
+  "id": "csrc.cpu.quant",
+  "title": "Quant",
+  "type": "module",
+  "summary": "Module providing defined, min, cvt_vec_t, elems, clamp and 5 more symbols",
+  "details": "Contains 88 functions/methods",
+  "symbols": [
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__powerpc64__) || defined(__s390x__)\n  // Power architecture-specific vector type\n  using load_vec_type = vec_op::FP32Vec16;\n#else\n  // Fallback for other architectures\n  using load_vec_type = vec_op::FP16Vec16;\n#endif\n  using azp_adj_load_vec_type = vec_op::INT32Vec16;\n  using cvt_vec_type = vec_op::FP32Vec16;\n};\n\n#ifdef __AVX512F__\ntemplate <bool AZP, typename scalar_t>\nvoid static_scaled_int8_quant_impl(const scalar_t* input, int8_t* output,\n                                   const float* scale, const int32_t* azp,\n                                   const int num_tokens,\n                                   const int hidden_size)",
+      "docstring": "",
+      "line": 28
+    },
+    {
+      "name": "min",
+      "kind": "function",
+      "signature": "min());\n  constexpr float i8_max =\n      static_cast<float>(std::numeric_limits<int8_t>::max());\n  const cvt_vec_t inv_scale(1.0 / *scale);\n  const cvt_vec_t i8_min_vec(i8_min);\n  const cvt_vec_t i8_max_vec(i8_max);\n\n  cvt_vec_t zp_vec;\n  if constexpr (AZP)",
+      "docstring": "",
+      "line": 50
+    },
+    {
+      "name": "cvt_vec_t",
+      "kind": "function",
+      "signature": "cvt_vec_t(static_cast<float>(*azp));\n  }\n\n  #pragma omp parallel for\n  for (int i = 0; i < num_tokens; ++i)",
+      "docstring": "",
+      "line": 59
+    },
+    {
+      "name": "elems",
+      "kind": "function",
+      "signature": "elems(input + i * hidden_size + j);\n      cvt_vec_t elems_fp32(elems);\n      elems_fp32 = elems_fp32 * inv_scale;\n\n      if constexpr (AZP)",
+      "docstring": "",
+      "line": 65
+    },
+    {
+      "name": "clamp",
+      "kind": "function",
+      "signature": "clamp(i8_min_vec, i8_max_vec);\n      vec_op::INT8Vec16 elems_int8(elems_fp32);\n      elems_int8.save(output + i * hidden_size + j);\n    }\n\n    load_vec_t elems(input + i * hidden_size + j);\n    cvt_vec_t elems_fp32(elems);\n    elems_fp32 = elems_fp32 * inv_scale;\n\n    if constexpr (AZP)",
+      "docstring": "",
+      "line": 74
+    },
+    {
+      "name": "clamp",
+      "kind": "function",
+      "signature": "clamp(i8_min_vec, i8_max_vec);\n    vec_op::INT8Vec16 elems_int8(elems_fp32);\n    elems_int8.save(output + i * hidden_size + j, hidden_size - j);\n  }\n}\n\ntemplate <bool AZP, typename scalar_t>\nvoid dynamic_scaled_int8_quant_impl(const scalar_t* input, int8_t* output,\n                                    float* scale, int32_t* azp,\n                                    const int num_tokens,\n                                    const int hidden_size)",
+      "docstring": "",
+      "line": 87
+    },
+    {
+      "name": "min",
+      "kind": "function",
+      "signature": "min());\n  constexpr float i8_max =\n      static_cast<float>(std::numeric_limits<int8_t>::max());\n  const cvt_vec_t i8_min_vec(i8_min);\n  const cvt_vec_t i8_max_vec(i8_max);\n\n  #pragma omp parallel for\n  for (int i = 0; i < num_tokens; ++i)",
+      "docstring": "",
+      "line": 103
+    },
+    {
+      "name": "max_value",
+      "kind": "function",
+      "signature": "max_value(std::numeric_limits<float>::lowest());\n    cvt_vec_t min_value(std::numeric_limits<float>::max());\n    {\n      int j = 0;\n      for (; j < hidden_size - vec_elem_num; j += vec_elem_num)",
+      "docstring": "",
+      "line": 110
+    },
+    {
+      "name": "elems",
+      "kind": "function",
+      "signature": "elems(input + i * hidden_size + j);\n        cvt_vec_t elems_fp32(elems);\n        if constexpr (AZP)",
+      "docstring": "",
+      "line": 115
+    },
+    {
+      "name": "max",
+      "kind": "function",
+      "signature": "max(elems_fp32);\n          min_value = min_value.min(elems_fp32);\n        } else {\n          max_value = max_value.max(elems_fp32.abs());\n        }\n      }\n\n      load_vec_t elems(input + i * hidden_size + j);\n      cvt_vec_t elems_fp32(elems);\n\n      if (j + vec_elem_num == hidden_size)",
+      "docstring": "",
+      "line": 119
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(AZP)",
+      "docstring": "",
+      "line": 129
+    },
+    {
+      "name": "max",
+      "kind": "function",
+      "signature": "max(elems_fp32);\n          min_value = min_value.min(elems_fp32);\n        } else {\n          max_value = max_value.max(elems_fp32.abs());\n        }\n      } else {\n        if constexpr (AZP)",
+      "docstring": "",
+      "line": 131
+    },
+    {
+      "name": "max",
+      "kind": "function",
+      "signature": "max(elems_fp32, hidden_size - j);\n          min_value = min_value.min(elems_fp32, hidden_size - j);\n        } else {\n          max_value = max_value.max(elems_fp32.abs(), hidden_size - j);\n        }\n      }\n    }\n\n    float scale_val, azp_val;\n    if constexpr (AZP)",
+      "docstring": "",
+      "line": 138
+    },
+    {
+      "name": "reduce_max",
+      "kind": "function",
+      "signature": "reduce_max();\n      float min_scalar = min_value.reduce_min();\n      scale_val = (max_scalar - min_scalar) / 255.0f;\n      azp_val = std::nearbyint(-128.0f - min_scalar / scale_val);\n      azp[i] = static_cast<int32_t>(azp_val);\n      scale[i] = scale_val;\n    } else {\n      scale_val = max_value.reduce_max() / 127.0f;\n      scale[i] = scale_val;\n    }\n\n    const cvt_vec_t inv_scale(1.0 / scale_val);\n    const cvt_vec_t azp_vec(azp_val);\n\n    {\n      int j = 0;\n      for (; j < hidden_size - vec_elem_num; j += vec_elem_num)",
+      "docstring": "",
+      "line": 148
+    },
+    {
+      "name": "elems",
+      "kind": "function",
+      "signature": "elems(input + i * hidden_size + j);\n        cvt_vec_t elems_fp32(elems);\n        elems_fp32 = (elems_fp32 * inv_scale);\n\n        if constexpr (AZP)",
+      "docstring": "",
+      "line": 164
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cpu_types",
+      "dnnl_helper"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 88,
+    "public_symbols": 88,
+    "classes": 0,
+    "functions": 88,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cpu/quant.cpp"
+}

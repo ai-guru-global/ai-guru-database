@@ -1,0 +1,136 @@
+{
+  "id": "csrc.quantization.gptq_marlin.awq_marlin_repack.cu",
+  "title": "Awq Marlin Repack",
+  "type": "module",
+  "summary": "Module providing awq_marlin_repack_kernel, div_ceil, min, complete, cp_async_fence and 5 more symbols",
+  "details": "Contains 16 functions/methods",
+  "symbols": [
+    {
+      "name": "awq_marlin_repack_kernel",
+      "kind": "function",
+      "signature": "awq_marlin_repack_kernel(\n    uint32_t const* __restrict__ b_q_weight_ptr, uint32_t* __restrict__ out_ptr,\n    int size_k, int size_n)",
+      "docstring": "",
+      "line": 5
+    },
+    {
+      "name": "div_ceil",
+      "kind": "function",
+      "signature": "div_ceil(k_tiles, gridDim.x);\n\n  auto start_k_tile = blockIdx.x * block_k_tiles;\n  if (start_k_tile >= k_tiles)",
+      "docstring": "",
+      "line": 15
+    },
+    {
+      "name": "min",
+      "kind": "function",
+      "signature": "min(start_k_tile + block_k_tiles, k_tiles);\n\n  // Wait until the next thread tile has been loaded to shared memory.\n  auto wait_for_stage = [&]()",
+      "docstring": "",
+      "line": 22
+    },
+    {
+      "name": "complete",
+      "kind": "function",
+      "signature": "complete(as it may otherwise be\n    // overwritten).\n    cp_async_wait<repack_stages - 2>();\n    __syncthreads();\n  };\n\n  extern __shared__ int4 sh[];\n\n  constexpr int tile_n_ints = tile_n_size / pack_factor;\n\n  constexpr int stage_n_threads = tile_n_ints / 4;\n  constexpr int stage_k_threads = tile_k_size;\n  constexpr int stage_size = stage_k_threads * stage_n_threads;\n\n  auto fetch_to_shared = &",
+      "docstring": "",
+      "line": 28
+    },
+    {
+      "name": "cp_async_fence",
+      "kind": "function",
+      "signature": "cp_async_fence();\n      return;\n    }\n\n    int first_n = n_tile_id * tile_n_size;\n    int first_n_packed = first_n / pack_factor;\n\n    int4* sh_ptr = sh + stage_size * pipe;\n\n    if (threadIdx.x < stage_size)",
+      "docstring": "",
+      "line": 43
+    },
+    {
+      "name": "cp_async4",
+      "kind": "function",
+      "signature": "cp_async4(&sh_ptr[k_id * stage_n_threads + n_id],\n                reinterpret_cast<int4 const*>(\n                    &(b_q_weight_ptr[(first_k + k_id) * (size_n / pack_factor) +\n                                     first_n_packed + (n_id * 4)])));\n    }\n\n    cp_async_fence();\n  };\n\n  auto repack_tile = &",
+      "docstring": "",
+      "line": 57
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(num_bits == 4)",
+      "docstring": "",
+      "line": 96
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(num_bits == 4)",
+      "docstring": "",
+      "line": 122
+    },
+    {
+      "name": "fetch_to_shared",
+      "kind": "function",
+      "signature": "fetch_to_shared(pipe, k_tile_id, n_tile_id + pipe);\n    }\n\n    wait_for_stage();\n  };\n#pragma unroll\n  for (int k_tile_id = start_k_tile; k_tile_id < finish_k_tile; k_tile_id++)",
+      "docstring": "",
+      "line": 152
+    },
+    {
+      "name": "start_pipes",
+      "kind": "function",
+      "signature": "start_pipes(k_tile_id, n_tile_id);\n\n    while (n_tile_id < n_tiles)",
+      "docstring": "",
+      "line": 160
+    },
+    {
+      "name": "fetch_to_shared",
+      "kind": "function",
+      "signature": "fetch_to_shared((pipe + repack_stages - 1) % repack_stages, k_tile_id,\n                        n_tile_id + pipe + repack_stages - 1);\n        repack_tile(pipe, k_tile_id, n_tile_id + pipe);\n        wait_for_stage();\n      }\n      n_tile_id += repack_stages;\n    }\n  }\n}\n\n}  // namespace marlin\n\n#define CALL_IF(NUM_BITS)                                                   \\\n  else if (num_bits == NUM_BITS)",
+      "docstring": "",
+      "line": 166
+    },
+    {
+      "name": "cudaFuncSetAttribute",
+      "kind": "function",
+      "signature": "cudaFuncSetAttribute(                                                   \\\n        marlin::awq_marlin_repack_kernel<marlin::repack_threads, NUM_BITS>, \\\n        cudaFuncAttributeMaxDynamicSharedMemorySize, max_shared_mem);       \\\n    marlin::awq_marlin_repack_kernel<marlin::repack_threads, NUM_BITS>      \\\n        <<<blocks, marlin::repack_threads, max_shared_mem, stream>>>(       \\\n            b_q_weight_ptr, out_ptr, size_k, size_n);                       \\\n  }\n\ntorch::Tensor awq_marlin_repack(torch::Tensor& b_q_weight, int64_t size_k,\n                                int64_t size_n, int64_t num_bits)",
+      "docstring": "",
+      "line": 180
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(size_k % marlin::tile_k_size == 0, \"size_k = \", size_k,\n              \" is not divisible by tile_k_size = \", marlin::tile_k_size);\n  TORCH_CHECK(size_n % marlin::tile_n_size == 0, \"size_n = \", size_n,\n              \" is not divisible by tile_n_size = \", marlin::tile_n_size);\n\n  TORCH_CHECK(num_bits == 4 || num_bits == 8,\n              \"num_bits must be 4 or 8. Got = \", num_bits);\n  int const pack_factor = 32 / num_bits;\n\n  // Verify B\n  TORCH_CHECK(b_q_weight.size(0) == size_k,\n              \"b_q_weight.size(0) = \", b_q_weight.size(0),\n              \" is not size_k = \", size_k);\n  TORCH_CHECK((size_n / pack_factor) == b_q_weight.size(1),\n              \"Shape mismatch: b_q_weight.size(1) = \", b_q_weight.size(1),\n              \", size_n = \", size_n, \", pack_factor = \", pack_factor);\n\n  // Verify device and strides\n  TORCH_CHECK(b_q_weight.device().is_cuda(), \"b_q_weight is not on GPU\");\n  TORCH_CHECK(b_q_weight.is_contiguous(), \"b_q_weight is not contiguous\");\n  TORCH_CHECK(b_q_weight.dtype() == at::kInt, \"b_q_weight type is not kInt\");\n\n  // Alloc buffers\n  const at::cuda::OptionalCUDAGuard device_guard(device_of(b_q_weight));\n  auto options = torch::TensorOptions()\n                     .dtype(b_q_weight.dtype())\n                     .device(b_q_weight.device());\n  torch::Tensor out = torch::empty(\n      {size_k / marlin::tile_size, size_n * marlin::tile_size / pack_factor},\n      options);\n\n  // Get ptrs\n  uint32_t const* b_q_weight_ptr =\n      reinterpret_cast<uint32_t const*>(b_q_weight.data_ptr());\n  uint32_t* out_ptr = reinterpret_cast<uint32_t*>(out.data_ptr());\n\n  // Get dev info\n  int dev = b_q_weight.get_device();\n  cudaStream_t stream = at::cuda::getCurrentCUDAStream(dev);\n  int blocks;\n  cudaDeviceGetAttribute(&blocks, cudaDevAttrMultiProcessorCount, dev);\n\n  int max_shared_mem = 0;\n  cudaDeviceGetAttribute(&max_shared_mem,\n                         cudaDevAttrMaxSharedMemoryPerBlockOptin, dev);\n  TORCH_CHECK(max_shared_mem > 0);\n\n  if (false)",
+      "docstring": "",
+      "line": 191
+    },
+    {
+      "name": "CALL_IF",
+      "kind": "function",
+      "signature": "CALL_IF(4)\n  CALL_IF(8)\n  else {\n    TORCH_CHECK(false, \"Unsupported repack config: num_bits = \", num_bits);\n  }\n\n  return out;\n}\n\ntorch::Tensor awq_marlin_repack_meta(torch::Tensor& b_q_weight,\n                                     c10::SymInt size_k, c10::SymInt size_n,\n                                     int64_t num_bits)",
+      "docstring": "",
+      "line": 240
+    },
+    {
+      "name": "torch::TensorOptions",
+      "kind": "function",
+      "signature": "torch::TensorOptions()\n                     .dtype(b_q_weight.dtype())\n                     .device(b_q_weight.device());\n  return torch::empty_symint(\n      {size_k / marlin::tile_size, size_n * marlin::tile_size / pack_factor},\n      options);\n}\n\nTORCH_LIBRARY_IMPL_EXPAND(TORCH_EXTENSION_NAME, CUDA, m)",
+      "docstring": "",
+      "line": 254
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "core",
+      "marlin"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 16,
+    "public_symbols": 16,
+    "classes": 0,
+    "functions": 16,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/gptq_marlin/awq_marlin_repack.cu"
+}

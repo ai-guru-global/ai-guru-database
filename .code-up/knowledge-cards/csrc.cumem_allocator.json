@@ -1,0 +1,139 @@
+{
+  "id": "csrc.cumem_allocator",
+  "title": "Cumem Allocator",
+  "type": "module",
+  "summary": "Module providing CUresult, cuGetErrorString, CUDA_CHECK, CUDA_CHECK, ensure_context and 5 more symbols",
+  "details": "Contains 30 functions/methods",
+  "symbols": [
+    {
+      "name": "CUresult",
+      "kind": "function",
+      "signature": "CUresult(0);\nCUresult error_code = no_error;  // store error code\n\n#define CUDA_CHECK(condition)                                           \\\n  do {                                                                  \\\n    CUresult error = condition;                                         \\\n    if (error != 0)",
+      "docstring": "",
+      "line": 16
+    },
+    {
+      "name": "cuGetErrorString",
+      "kind": "function",
+      "signature": "cuGetErrorString(error, (const char**)&error_string);             \\\n      snprintf(error_msg, sizeof(error_msg), \"CUDA Error: %s at %s:%d\", \\\n               error_string, __FILE__, __LINE__);                       \\\n      std::cerr << error_msg << std::endl;                              \\\n    }                                                                   \\\n  } while (0)\n\n// Global references to Python callables\n// NOTE: this is borrowed reference, so we don't need to DECREF them.\n// This brings the limitation that the allocator needs to be singleton.\nstatic PyObject* g_python_malloc_callback = nullptr;\nstatic PyObject* g_python_free_callback = nullptr;\n\n// ---------------------------------------------------------------------------\n// Helper functions:\n\nvoid ensure_context(unsigned long long device)",
+      "docstring": "",
+      "line": 24
+    },
+    {
+      "name": "CUDA_CHECK",
+      "kind": "function",
+      "signature": "CUDA_CHECK(cuCtxGetCurrent(&pctx));\n  if (!pctx)",
+      "docstring": "",
+      "line": 42
+    },
+    {
+      "name": "CUDA_CHECK",
+      "kind": "function",
+      "signature": "CUDA_CHECK(cuDevicePrimaryCtxRetain(&pctx, device));\n    CUDA_CHECK(cuCtxSetCurrent(pctx));\n  }\n}\n\nvoid create_and_map(unsigned long long device, ssize_t size, CUdeviceptr d_mem,\n                    CUmemGenericAllocationHandle* p_memHandle)",
+      "docstring": "",
+      "line": 45
+    },
+    {
+      "name": "ensure_context",
+      "kind": "function",
+      "signature": "ensure_context(device);\n  // Define memory allocation properties\n  CUmemAllocationProp prop = {};\n  prop.type = CU_MEM_ALLOCATION_TYPE_PINNED;\n  prop.location.type = CU_MEM_LOCATION_TYPE_DEVICE;\n  prop.location.id = device;\n  prop.allocFlags.compressionType = CU_MEM_ALLOCATION_COMP_NONE;\n\n  // Allocate memory using cuMemCreate\n  CUDA_CHECK(cuMemCreate(p_memHandle, size, &prop, 0));\n  if (error_code != 0)",
+      "docstring": "",
+      "line": 52
+    },
+    {
+      "name": "CUDA_CHECK",
+      "kind": "function",
+      "signature": "CUDA_CHECK(cuMemMap(d_mem, size, 0, *p_memHandle, 0));\n  if (error_code != 0)",
+      "docstring": "",
+      "line": 65
+    },
+    {
+      "name": "CUDA_CHECK",
+      "kind": "function",
+      "signature": "CUDA_CHECK(cuMemSetAccess(d_mem, size, &accessDesc, 1));\n  if (error_code != 0)",
+      "docstring": "",
+      "line": 73
+    },
+    {
+      "name": "unmap_and_release",
+      "kind": "function",
+      "signature": "unmap_and_release(unsigned long long device, ssize_t size,\n                       CUdeviceptr d_mem,\n                       CUmemGenericAllocationHandle* p_memHandle)",
+      "docstring": "",
+      "line": 81
+    },
+    {
+      "name": "ensure_context",
+      "kind": "function",
+      "signature": "ensure_context(device);\n  CUDA_CHECK(cuMemUnmap(d_mem, size));\n  if (error_code != 0)",
+      "docstring": "",
+      "line": 87
+    },
+    {
+      "name": "CUDA_CHECK",
+      "kind": "function",
+      "signature": "CUDA_CHECK(cuMemRelease(*p_memHandle));\n  if (error_code != 0)",
+      "docstring": "",
+      "line": 92
+    },
+    {
+      "name": "create_tuple_from_c_integers",
+      "kind": "function",
+      "signature": "create_tuple_from_c_integers(unsigned long long a,\n                                       unsigned long long b,\n                                       unsigned long long c,\n                                       unsigned long long d)",
+      "docstring": "",
+      "line": 97
+    },
+    {
+      "name": "PyTuple_New",
+      "kind": "function",
+      "signature": "PyTuple_New(4);\n  if (!tuple)",
+      "docstring": "",
+      "line": 104
+    },
+    {
+      "name": "PyTuple_SetItem",
+      "kind": "function",
+      "signature": "PyTuple_SetItem(\n      tuple, 0,\n      PyLong_FromUnsignedLongLong(a));  // Steals reference to the PyLong\n  PyTuple_SetItem(tuple, 1, PyLong_FromUnsignedLongLong(b));\n  PyTuple_SetItem(tuple, 2, PyLong_FromUnsignedLongLong(c));\n  PyTuple_SetItem(tuple, 3, PyLong_FromUnsignedLongLong(d));\n\n  // Note: PyTuple_SetItem \"steals\" a reference to each object,\n  // so we do not need to Py_DECREF the PyLong objects explicitly.\n\n  return tuple;  // Return the created tuple\n}\n\n// ---------------------------------------------------------------------------\n// Our exported C functions that call Python:\n\n// use CUstream instead of cudaStream_t, to avoid including cuda_runtime_api.h\nvoid* my_malloc(ssize_t size, int device, CUstream stream)",
+      "docstring": "",
+      "line": 109
+    },
+    {
+      "name": "ensure_context",
+      "kind": "function",
+      "signature": "ensure_context(device);\n\n  // first allocation, align the size, and reserve an address, and also allocate\n  // a CUmemGenericAllocationHandle\n\n  // Define memory allocation properties\n  CUmemAllocationProp prop = {};\n  prop.type = CU_MEM_ALLOCATION_TYPE_PINNED;\n  prop.location.type = CU_MEM_LOCATION_TYPE_DEVICE;\n  prop.location.id = device;\n  prop.allocFlags.compressionType = CU_MEM_ALLOCATION_COMP_NONE;\n\n  // Check if the allocation is supported\n  size_t granularity;\n  CUDA_CHECK(cuMemGetAllocationGranularity(&granularity, &prop,\n                                           CU_MEM_ALLOC_GRANULARITY_MINIMUM));\n  if (error_code != 0)",
+      "docstring": "",
+      "line": 127
+    },
+    {
+      "name": "CUDA_CHECK",
+      "kind": "function",
+      "signature": "CUDA_CHECK(cuMemAddressReserve(&d_mem, alignedSize, 0, 0, 0));\n  if (error_code != 0)",
+      "docstring": "",
+      "line": 149
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "Python",
+      "cuda",
+      "cuda_runtime_api",
+      "iostream",
+      "sys"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 30,
+    "public_symbols": 30,
+    "classes": 0,
+    "functions": 30,
+    "internal_deps": 0,
+    "external_deps": 5,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cumem_allocator.cpp"
+}

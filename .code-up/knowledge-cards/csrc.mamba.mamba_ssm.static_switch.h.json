@@ -1,0 +1,35 @@
+{
+  "id": "csrc.mamba.mamba_ssm.static_switch.h",
+  "title": "Static Switch",
+  "type": "module",
+  "summary": "Module providing BOOL_SWITCH",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "BOOL_SWITCH",
+      "kind": "function",
+      "signature": "BOOL_SWITCH(flag, BoolConst, [&] {\n///     some_function<BoolConst>(...);\n/// });\n/// ```\n#define BOOL_SWITCH(COND, CONST_NAME, ...) \\\n  [&] {                                    \\\n    if (COND)",
+      "docstring": "",
+      "line": 15
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": []
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 0,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/mamba/mamba_ssm/static_switch.h"
+}

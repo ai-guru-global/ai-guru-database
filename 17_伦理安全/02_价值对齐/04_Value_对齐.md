@@ -673,7 +673,7 @@ print(f"Calibration: {calibration_error(y_true, y_prob, sensitive_attr):.3f}")
 ### 进阶推荐
 
 - [AI 安全与红队](17_伦理安全/04_AI安全与红队/02_AI安全_RedTeaming.md) - 对齐的验证与测试
-- [Prompt 工程](05_大模型/08_提示工程/16_Prompt工程.md) - 通过 Prompt 实现对齐
+- [Prompt 工程](05_大模型/07_提示工程/16_Prompt工程.md) - 通过 Prompt 实现对齐
 - [模型评估](08_模型评估/01_评估基础/06_模型评估.md) - 对齐效果评估
 
 ## 8. 面试高频问题 (Interview FAQs)

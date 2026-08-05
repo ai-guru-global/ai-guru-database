@@ -146,17 +146,17 @@ Transformer 训练 的标配配置：
 - [[概念/rope|RoPE]]
 - [[概念/alibi|ALiBi]]
 - [[治理/Transformer与LLM架构]] — Transformer 架构 × LLM 架构 (共享: attention, bert, gpt, nlp, transformer)
-- [[05_大模型/07_微调技术/09_PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, nlp, transformer)
-- [[05_大模型/07_微调技术/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, nlp, transformer)
+- [[05_大模型/06_微调技术/09_PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, nlp, transformer)
+- [[05_大模型/06_微调技术/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, nlp, transformer)
 - [[05_大模型/01_LLM基础/05_LLM_基础]] — 大语言模型基础速成指南 (共享: bert, gpt, nlp, transformer)
 - [[概念/Vision/multimodal-models.md|multimodal-models]]
 - [[治理/_meta/_nlp-llms-split-assessment-2026-06-22]]
 
 ## See Also (深度专题)
 
-- [[05_大模型/03_Transformer架构/14_Transformer 架构详解|Transformer 架构深度解析]] — Self-Attention / Multi-Head / FFN 的数学推导与实现
+- [[05_大模型/03_Transformer架构/04_Transformer_架构详解|Transformer 架构深度解析]] — Self-Attention / Multi-Head / FFN 的数学推导与实现
 - [[../../05_大模型/03_Transformer架构/Transformer_Deep_Dive|Transformer 深度解读]] — 编码器-解码器、位置编码、归一化策略的技术细节
-- [[05_大模型/04_Transformer革命/02_Self_注意力_Mechanism|自注意力机制]] — Attention 的工程优化 (Flash Attention 等)
+- [[05_大模型/03_Transformer架构/02_Self_注意力_Mechanism|自注意力机制]] — Attention 的工程优化 (Flash Attention 等)
 
 ---
 

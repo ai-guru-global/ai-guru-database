@@ -29,7 +29,7 @@ name_zh: "Agentic Benchmarks — AI Agent 评测全景指南"
 
 - [LLM Benchmark Suite 2026](./07_LLM_基准测试_Suite_2026.md) — 通用 LLM 评测基准全景
 - [Agent 生产化部署](../../15_智能体/README.md) — Agent 从评测到生产的完整路径
-- [全球 LLM 生态总览](05_大模型/14_全球LLM生态/README.md) — 各模型家族与能力对比
+- [全球 LLM 生态总览](05_大模型/13_全球LLM生态/README.md) — 各模型家族与能力对比
 
 ---
 

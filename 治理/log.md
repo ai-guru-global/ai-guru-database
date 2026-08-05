@@ -14,7 +14,7 @@ name_zh: "全库操作日志"
 ### 阶段 A：目录结构治理（由主 agent 直接执行）
 
 1. **深度拉齐**：知识目录最深从 L5 压到 L3
-   - `05_大模型/07_微调技术/PEFT_2026/` → 扁平化
+   - `05_大模型/06_微调技术/PEFT_2026/` → 扁平化
    - `15_智能体/15_课程笔记/{Learn_Claude_Code,Microsoft_AI_Agents}/` → 扁平化
    - `15_智能体/07_Agent评估/demo/` → 迁出 `15_智能体/07_Agent评估/demo/`
    - `15_智能体/07_Agent评估/docs/{architecture,guides,api,reports}/*.md` → 上提为 L2 知识页
@@ -23,7 +23,7 @@ name_zh: "全库操作日志"
    - P0：`94_可视化/atlas/`（226 MB Vite 工程）→ `前端应用/atlas/`
    - P1：`AI运维/Observability/` 并入 `11_模型运维/08_可观测性/`
    - P1：`22_Research/` 并入 `20_Papers/` → 改名 `20_论文精读/`
-   - P2：`07_模型训练/Fine_tuning_Strategies.md` → `05_大模型/07_微调技术/`（LLM 专属）
+   - P2：`07_模型训练/Fine_tuning_Strategies.md` → `05_大模型/06_微调技术/`（LLM 专属）
    - P2：`15_智能体/README.md` 加 4 分组索引（能力/评测/生态/工具与学习）
    - P2：`93_Tools/` 改名 `模板/`（消除与 `工具/` 和 `AI编程/Tools/` 的歧义）
    - P3：`91_Notes/` `92_Plan/` 归档到 `治理/notes/` `治理/plan/`

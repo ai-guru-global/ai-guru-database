@@ -508,7 +508,7 @@ evaluation_prompt = f"""
 
 - [Transformer 架构](05_大模型/04_Transformer_Revolution/09_03_Transformer架构架构_Revolution.md) - 理解 Embedding 和 Attention 机制
 - [向量检索基础](01_数学基础/07_数据结构与算法/01_Data_Structures_Algorithms.md) - HNSW、IVF 索引原理
-- [自然语言处理基础](05_大模型/05_LLM架构/05_LLM架构.md) - 文本预处理和分词
+- [自然语言处理基础](05_大模型/04_LLM架构/05_LLM架构.md) - 文本预处理和分词
 
 ### 进阶推荐
 
@@ -516,7 +516,7 @@ evaluation_prompt = f"""
 - [vLLM Deep Dive](10_部署推理/02_推理引擎/29_vLLM_深入分析.md) - 通用生产级 RAG 推理引擎
 - [SGLang Deep Dive](10_部署推理/02_推理引擎/23_SGLang_深入分析.md) - 多轮 / RAG 前缀缓存优化
 - [模型部署与推理](10_部署推理/01_部署基础/03_部署推理.md) - RAG 系统的生产环境部署
-- [Prompt 工程](05_大模型/08_提示工程/16_Prompt工程.md) - 优化 RAG 的 Prompt 设计
+- [Prompt 工程](05_大模型/07_提示工程/16_Prompt工程.md) - 优化 RAG 的 Prompt 设计
 - [模型评估](08_模型评估/01_评估基础/06_模型评估.md) - RAG 系统的效果评估方法
 
 ## 8. 面试高频问题 (Interview FAQs)

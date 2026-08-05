@@ -1,0 +1,91 @@
+{
+  "id": "csrc.quantization.gptq.qdq_util.cuh",
+  "title": "Qdq Util",
+  "type": "module",
+  "summary": "Module providing half2_uint32, half2_uint32, half_uint16, half_uint16, dq_scale and 4 more symbols",
+  "details": "Contains 9 functions/methods",
+  "symbols": [
+    {
+      "name": "half2_uint32",
+      "kind": "function",
+      "signature": "half2_uint32(uint32_t val) : as_uint32(val)",
+      "docstring": "",
+      "line": 13
+    },
+    {
+      "name": "half2_uint32",
+      "kind": "function",
+      "signature": "half2_uint32(half2 val) : as_half2(val)",
+      "docstring": "",
+      "line": 14
+    },
+    {
+      "name": "half_uint16",
+      "kind": "function",
+      "signature": "half_uint16(uint16_t val) : as_uint16(val)",
+      "docstring": "",
+      "line": 20
+    },
+    {
+      "name": "half_uint16",
+      "kind": "function",
+      "signature": "half_uint16(half val) : as_half(val)",
+      "docstring": "",
+      "line": 21
+    },
+    {
+      "name": "dq_scale",
+      "kind": "function",
+      "signature": "dq_scale(const int qs, const half max_scale)",
+      "docstring": "",
+      "line": 25
+    },
+    {
+      "name": "__int2half_rn",
+      "kind": "function",
+      "signature": "__int2half_rn(qs_i * qs_i);\n  qs_h = __hmul(qs_h, max_scale);\n  return qs_h;\n}\n\n__forceinline__ __device__ half dq(const int q, const int qzero,\n                                   const half scale)",
+      "docstring": "",
+      "line": 29
+    },
+    {
+      "name": "__hmul",
+      "kind": "function",
+      "signature": "__hmul(__int2half_rn(q - qzero), scale);\n}\n\n__forceinline__ __device__ half dq_ns(const int q, const int qzero)",
+      "docstring": "",
+      "line": 35
+    },
+    {
+      "name": "__hsub",
+      "kind": "function",
+      "signature": "__hsub(__int2half_rn(q), __int2half_rn(qzero));\n  return __int2half_rn(q - qzero);\n}\n\n__forceinline__ __device__ int exb(const uint32_t q, const int shift,\n                                   const int mask)",
+      "docstring": "",
+      "line": 40
+    },
+    {
+      "name": "return",
+      "kind": "function",
+      "signature": "return(int)((q >> shift) & mask);\n}\n\n__forceinline__ __device__ int exb(const uint32_t q1, const uint32_t q0,\n                                   const int shift, const int mask)",
+      "docstring": "",
+      "line": 45
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": []
+  },
+  "metrics": {
+    "total_symbols": 9,
+    "public_symbols": 9,
+    "classes": 0,
+    "functions": 9,
+    "internal_deps": 0,
+    "external_deps": 0,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/gptq/qdq_util.cuh"
+}

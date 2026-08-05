@@ -25,7 +25,7 @@ name_zh: "杰弗里·辛顿 2026 动态"
 
 ### 背景回顾
 
-Geoffrey Hinton（1947 年生于英国伦敦），"深度学习教父"、2018 年图灵奖得主（与 [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]]、[[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]] 共获）、多伦多大学荣休教授、前 Google Brain 资深研究员。反向传播算法的奠基推广者、深度信念网络与 Capsule Network 的发明者、AlexNet 的指导者（与 Ilya Sutskever 等共同开发）。2023 年 5 月因 AI 安全担忧从 Google 辞职，成为 AI 风险警告的标志性人物。2024 年因神经网络基础工作获诺贝尔物理学奖，是 AI 研究者首次获此殊荣。
+Geoffrey Hinton（1947 年生于英国伦敦），"深度学习教父"、2018 年图灵奖得主（与 [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]]、[[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]] 共获）、多伦多大学荣休教授、前 Google Brain 资深研究员。反向传播算法的奠基推广者、深度信念网络与 Capsule Network 的发明者、AlexNet 的指导者（与 Ilya Sutskever 等共同开发）。2023 年 5 月因 AI 安全担忧从 Google 辞职，成为 AI 风险警告的标志性人物。2024 年因神经网络基础工作获诺贝尔物理学奖，是 AI 研究者首次获此殊荣。
 
 #### Hinton 2026 关键时间线
 
@@ -66,7 +66,7 @@ Geoffrey Hinton（1947 年生于英国伦敦），"深度学习教父"、2018 �
 | 学术层面 | AI 基础研究获得物理学最高认可 |
 | 公众层面 | AI 从"工程"上升为"基础科学" |
 | 政策层面 | Hinton 的安全警告获得超强公信力 |
-| 历史层面 | 与 [[19_业界观点/06_Demis_Hassabis_哈萨比斯/04_索引|Hassabis]] 的化学奖并列，AI 全面进入诺奖体系 |
+| 历史层面 | 与 [[19_业界观点/06_Demis_Hassabis_哈萨比斯/INDEX|Hassabis]] 的化学奖并列，AI 全面进入诺奖体系 |
 | 伦理层面 | "AI 之父"开始反思，引发全球讨论 |
 
 #### Hinton 的诺奖演讲核心论点
@@ -133,7 +133,7 @@ Hinton 在 2026 年与多国政府互动，核心建议：
 
 ### 与学界同盟的深化
 
-Hinton 在 2026 年与安全派同盟（[[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]]、[[19_业界观点/11_Ilya_Sutskever_苏茨克维/03_索引|Sutskever]]）的关系更加紧密。
+Hinton 在 2026 年与安全派同盟（[[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]]、[[19_业界观点/11_Ilya_Sutskever_苏茨克维/INDEX|Sutskever]]）的关系更加紧密。
 
 #### 安全派分工
 
@@ -147,7 +147,7 @@ Hinton 在 2026 年与安全派同盟（[[19_业界观点/29_Yoshua_Bengio_本�
 
 #### 与 LeCun 的公开分歧
 
-Hinton 与 [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]] 在 2026 年的分歧更加公开：
+Hinton 与 [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]] 在 2026 年的分歧更加公开：
 
 - LeCun 称"末日论荒谬"
 - Hinton 回应"LeCun 的乐观是不负责任的"
@@ -175,8 +175,8 @@ Hinton 与 [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]] 在 2026 
 | 机构 | 创始人 | 角色 |
 |------|--------|------|
 | Hinton Institute | Hinton | 公众警示+政策倡导 |
-| LawZero | [[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]] | 治理框架+学术研究 |
-| SSI | [[19_业界观点/11_Ilya_Sutskever_苏茨克维/03_索引|Sutskever]] | 技术路线（可证明安全） |
+| LawZero | [[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]] | 治理框架+学术研究 |
+| SSI | [[19_业界观点/11_Ilya_Sutskever_苏茨克维/INDEX|Sutskever]] | 技术路线（可证明安全） |
 | Anthropic | [[19_业界观点/05_Dario_Amodei_阿莫迪/02_Amodei_2026_更新|Amodei]] | 公司化安全实践 |
 | CAIS | Dan Hendrycks | 政策倡导+红队 |
 
@@ -214,7 +214,7 @@ Hinton 的立场经历明显演变：
 | 2021-2023 | 渐生担忧 |
 | 2023 | 离开 Google 公开警告 |
 | 2024 | 主张"暂停或放缓前沿训练" |
-| 2025 | 支持 [[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]] 的治理框架 |
+| 2025 | 支持 [[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]] 的治理框架 |
 | 2026 | 强调"能力提升速度远超安全研究" |
 
 ### 关于开源 vs 闭源
@@ -224,8 +224,8 @@ Hinton 的立场偏保守：
 - 反对完全开源前沿模型
 - 支持小模型和工具的开源
 - 担忧开源模型被恶意行为者利用
-- 与 [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]]（激进开源）尖锐对立
-- 与 [[19_业界观点/27_Wenfeng_Liang_梁文锋/02_索引|梁文锋]]（全面开源）有根本分歧
+- 与 [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]]（激进开源）尖锐对立
+- 与 [[19_业界观点/27_Wenfeng_Liang_梁文锋/INDEX|梁文锋]]（全面开源）有根本分歧
 
 ### 关于 AGI 时间线
 
@@ -255,7 +255,7 @@ Hinton 在 2026 年罕见地触及 AI 意识这一哲学议题：
 
 ### 与图灵奖三巨头的对比
 
-| 维度 | Hinton | [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]] | [[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]] |
+| 维度 | Hinton | [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]] | [[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]] |
 |------|--------|---------|---------|
 | 2026 角色 | 安全倡导者 | 技术乐观派 | 治理框架派 |
 | 主要机构 | Hinton Institute | Meta AI | LawZero |
@@ -266,7 +266,7 @@ Hinton 在 2026 年罕见地触及 AI 意识这一哲学议题：
 
 ### 与诺贝尔奖得主 Hassabis 的对比
 
-| 维度 | Hinton | [[19_业界观点/06_Demis_Hassabis_哈萨比斯/04_索引|Hassabis]] |
+| 维度 | Hinton | [[19_业界观点/06_Demis_Hassabis_哈萨比斯/INDEX|Hassabis]] |
 |------|--------|---------|
 | 诺奖领域 | 物理学（2024） | 化学（2024） |
 | 2026 角色 | 安全倡导者 | AI for Science 推进者 |
@@ -308,7 +308,7 @@ Hinton 在 2026 年仍是 AI 教育的核心人物：
 - 反向传播算法是所有深度学习课程的必修
 - 他早期的 Coursera 讲座视频仍是经典
 - "深度学习教父"形象被纳入中小学 AI 启蒙教材
-- 与 [[19_业界观点/02_Andrej_Karpathy_卡帕西/03_索引|Karpathy]]、[[19_业界观点/03_Andrew_Ng_吴恩达/03_索引|Andrew Ng]] 形成"教育三巨头"
+- 与 [[19_业界观点/02_Andrej_Karpathy_卡帕西/INDEX|Karpathy]]、[[19_业界观点/03_Andrew_Ng_吴恩达/INDEX|Andrew Ng]] 形成"教育三巨头"
 
 ### 对科学哲学的辐射
 
@@ -324,10 +324,10 @@ Hinton 2026 年的言论触及科学哲学层面：
 | 时间 | 事件 |
 |------|------|
 | 2023.05 | Hinton 离开 Google 警告风险 |
-| 2023.06 | [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]] 称"末日论荒谬" |
+| 2023.06 | [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]] 称"末日论荒谬" |
 | 2024.10 | Hinton 获诺贝尔奖 |
 | 2025.03 | LeCun 重申"LLM 不是 AGI 路径" |
-| 2025.06 | Hinton 与 [[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]] 联合呼吁治理 |
+| 2025.06 | Hinton 与 [[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]] 联合呼吁治理 |
 | 2026.02 | Hinton 与 LeCun 在 X 平台公开交锋 |
 | 2026.06 | 三巨头路线彻底分流 |
 
@@ -370,8 +370,8 @@ Hinton 2026 年的言论触及科学哲学层面：
 
 Hinton 的风险警示面临多方面批评：
 
-- **[[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]] 批评**: "末日论荒谬"，是"对技术的无知"
-- **[[19_业界观点/03_Andrew_Ng_吴恩达/03_索引|Andrew Ng]] 批评**: "担心火星人口过剩"
+- **[[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]] 批评**: "末日论荒谬"，是"对技术的无知"
+- **[[19_业界观点/03_Andrew_Ng_吴恩达/INDEX|Andrew Ng]] 批评**: "担心火星人口过剩"
 - **企业批评**: 担忧过度监管扼杀创新
 - **左翼批评**: 担忧"存在性风险"叙事分散对"现实危害"（偏见、就业）的关注
 

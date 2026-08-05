@@ -22,7 +22,7 @@ name_zh: "热门页面"
 - [[概念/gradient-descent|梯度下降]] — 最小化模型误差的参数优化算法
 
 ### 主章节大白话专题页
-- [[05_大模型/05_LLM架构/04_LLM_架构_Evolution|LLM 架构演进大白话]] — KV 压缩、Mamba、RetNet
+- [[05_大模型/04_LLM架构/04_LLM_架构_Evolution|LLM 架构演进大白话]] — KV 压缩、Mamba、RetNet
 - [[07_模型训练/Data_and_FineTuning_for_dummy|数据与微调大白话]] — 数据清洗 Pipeline、DoRA、RS-LoRA
 - [[10_部署推理/03_推理优化/06_kv_cache_inference_optimization|推理优化大白话]] — SGLang、动态批调度、GGUF、SmoothQuant、TensorRT-LLM
 - [[14_RAG系统/04_高级RAG/02_Agentic_RAG_指南|Agentic RAG 应用大白话]] — Agentic RAG、Text2SQL、代码生成工作流
@@ -59,9 +59,9 @@ name_zh: "热门页面"
 
 > 通过 ModelScope 官方 API 全量抓取 15 家中国大模型厂商的组织信息与已发布模型清单，共 1,621 个官方模型、1.97 亿次累计下载。
 
-### 模型目录与索引（05_大模型/15_中国LLM生态/）
-- [[05_大模型/15_中国LLM生态/ModelScope_Model_Catalog]] — 15 家厂商 ModelScope 模型目录（组织信息 + Top 模型精选 + 许可/任务统计）
-- [[05_大模型/15_中国LLM生态/ModelScope_Model_Index]] — 全量 1,621 个模型完整索引表（按厂商分组、下载量排序）
+### 模型目录与索引（05_大模型/14_中国LLM生态/）
+- [[05_大模型/14_中国LLM生态/ModelScope_Model_Catalog]] — 15 家厂商 ModelScope 模型目录（组织信息 + Top 模型精选 + 许可/任务统计）
+- [[05_大模型/14_中国LLM生态/ModelScope_Model_Index]] — 全量 1,621 个模型完整索引表（按厂商分组、下载量排序）
 
 ### 原始数据（来源/modelscope/）
 - `来源/modelscope/README.md` — 数据源说明 + 抓取方法 + org→namespace 映射
@@ -74,10 +74,10 @@ name_zh: "热门页面"
 > 完成最后两本未蒸馏书（llm_internals、ai_beginner_guide 剩余章节），yeasy 9 本书全部融入 wiki。
 
 ### LLM 原理与架构（4 页，05_大模型/）
-- [[05_大模型/05_LLM架构/06_LLM_Internals_架构]] — 序列建模演进、注意力机制、Transformer 组件、位置编码
-- [[05_大模型/05_LLM架构/09_LLM_Internals_训练]] — 预训练/Scaling Law、AdamW、分布式训练、对齐 SFT/RLHF/DPO/LoRA
-- [[05_大模型/05_LLM架构/07_LLM_Internals_推理]] — 解码策略、KV Cache/GQA/MLA、Flash Attention、量化、投机解码
-- [[05_大模型/05_LLM架构/LLM_Internals_Models_Frontiers]] — BERT/GPT/Llama/DeepSeek 家族、MoE/SSM/测试时计算
+- [[05_大模型/04_LLM架构/06_LLM_Internals_架构]] — 序列建模演进、注意力机制、Transformer 组件、位置编码
+- [[05_大模型/04_LLM架构/09_LLM_Internals_训练]] — 预训练/Scaling Law、AdamW、分布式训练、对齐 SFT/RLHF/DPO/LoRA
+- [[05_大模型/04_LLM架构/07_LLM_Internals_推理]] — 解码策略、KV Cache/GQA/MLA、Flash Attention、量化、投机解码
+- [[05_大模型/04_LLM架构/LLM_Internals_Models_Frontiers]] — BERT/GPT/Llama/DeepSeek 家族、MoE/SSM/测试时计算
 
 ### AI 入门基础（6 页，跨目录）
 - [[00_入门/01_基础入门/02_AI基础]] — AI 定义/历史/强vs弱、AI⊃ML⊃DL、技术生态
@@ -136,9 +136,9 @@ name_zh: "热门页面"
 - 📊 **Benchmark**: FrontierSWE 仅落后 Opus 4.8 1% (超 GPT-5.5 / Opus 4.7), Terminal-Bench 2.1 较 GLM-5.1 +17.5%
 
 ### 更新页面
-- [[05_大模型/15_中国LLM生态/09_GLM_Zhipu_深入分析]] — 新增 §"GLM-5.2 正式发布与开源详解" (9 小节, 含架构/国产算力/部署/Agent 产品/未来路线)
-- [[05_大模型/15_中国LLM生态/04_Chinese_LLM_对比_矩阵]] — GLM 行升级到 GLM-5.2, 国产算力适配列扩展为 8 家
-- [[05_大模型/15_中国LLM生态/README]] — 第一梯队 GLM 行更新
+- [[05_大模型/14_中国LLM生态/09_GLM_Zhipu_深入分析]] — 新增 §"GLM-5.2 正式发布与开源详解" (9 小节, 含架构/国产算力/部署/Agent 产品/未来路线)
+- [[05_大模型/14_中国LLM生态/04_Chinese_LLM_对比_矩阵]] — GLM 行升级到 GLM-5.2, 国产算力适配列扩展为 8 家
+- [[05_大模型/14_中国LLM生态/README]] — 第一梯队 GLM 行更新
 - [[来源/wechat/2026-06-glm-5.2-release]] — 原文存档
 
 ### 信源
@@ -151,17 +151,17 @@ name_zh: "热门页面"
 ## 2026-06-16 Yeasy AI 知识库系列融合（26 页）
 
 ### 提示词与上下文工程
-- [[05_大模型/08_提示工程/13_Prompt工程_完整_指南]] — 提示词工程核心技术
-- [[05_大模型/08_提示工程/12_Prompt工程_高级_Apps]] — 提示词高级应用
-- [[05_大模型/08_提示工程/15_Prompt工程_模板_模式]] — 模板库与反模式
-- [[05_大模型/08_提示工程/01_Context_工程_指南]] — 上下文工程权威指南
-- [[05_大模型/08_提示工程/02_Context_工程_模式]] — 上下文工程模式
+- [[05_大模型/07_提示工程/13_Prompt工程_完整_指南]] — 提示词工程核心技术
+- [[05_大模型/07_提示工程/12_Prompt工程_高级_Apps]] — 提示词高级应用
+- [[05_大模型/07_提示工程/15_Prompt工程_模板_模式]] — 模板库与反模式
+- [[05_大模型/07_提示工程/01_Context_工程_指南]] — 上下文工程权威指南
+- [[05_大模型/07_提示工程/02_Context_工程_模式]] — 上下文工程模式
 
 ### LLM 原理与架构
 - [[05_大模型/Transformer_Deep_Dive]] — Transformer 深度解析
 - [[07_模型训练/01_训练基础/03_LLM_训练_深入分析]] — LLM 训练深度解析
 - [[10_部署推理/03_推理优化/02_LLM推理_深入分析]] — LLM 推理深度解析
-- [[05_大模型/05_LLM架构/04_LLM_架构_Evolution]] — LLM 架构演进
+- [[05_大模型/04_LLM架构/04_LLM_架构_Evolution]] — LLM 架构演进
 
 ### AI 入门与新架构
 - [[00_入门/02_技术概览/04_AI_推理模型_指南]] — 推理模型指南

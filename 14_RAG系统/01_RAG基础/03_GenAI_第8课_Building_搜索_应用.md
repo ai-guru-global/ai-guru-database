@@ -358,11 +358,11 @@ def search(query, embedding_index, top_k=5):
 - [[90_学习/03_课程资源/microsoft/01_microsoft_genai_for_beginners]]
 - [[14_RAG系统/01_RAG基础/07_RAG_系统]]
 - [[14_RAG系统/03_向量数据库/05_rag_vector_database]]
-- [[05_大模型/10_多模态模型/GenAI_L09_Building_Image_Applications]]
+- [[05_大模型/09_多模态模型/GenAI_L09_Building_Image_Applications]]
 - [[15_智能体/GenAI_L07_Building_Chat_Applications]]
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[15_智能体/GenAI_L07_Building_Chat_Applications|L07 构建聊天应用]] | [[05_大模型/10_多模态模型/GenAI_L09_Building_Image_Applications|L09 构建图像生成应用]] |
+| [[15_智能体/GenAI_L07_Building_Chat_Applications|L07 构建聊天应用]] | [[05_大模型/09_多模态模型/GenAI_L09_Building_Image_Applications|L09 构建图像生成应用]] |

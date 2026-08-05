@@ -1,0 +1,140 @@
+{
+  "id": "csrc.attention.dtype_bfloat16.cuh",
+  "title": "Dtype Bfloat16",
+  "type": "module",
+  "summary": "Module providing Copyright, defined, defined, defined, defined and 5 more symbols",
+  "details": "Contains 46 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) 2023, The vLLM team.\n * Copyright (c) 2020-2023, NVIDIA CORPORATION.  All rights reserved.\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n#pragma once\n\n#include \"attention_generic.cuh\"\n#include \"dtype_float32.cuh\"\n\n#ifndef USE_ROCM\n  #include <cuda_bf16.h>\n  #include <cuda_fp16.h>\n#else\n  #include <hip/hip_bf16.h>\n  #include <hip/hip_fp16.h>\n\ntypedef __hip_bfloat162 __nv_bfloat162;\ntypedef __hip_bfloat16 __nv_bfloat16;\n#endif\n\n#include <stdint.h>\n\nnamespace vllm {\n\n// Define custom BF16 vector data types.\nstruct bf16_4_t {\n  __nv_bfloat162 x;\n  __nv_bfloat162 y;\n};\n\nstruct bf16_8_t {\n  __nv_bfloat162 x;\n  __nv_bfloat162 y;\n  __nv_bfloat162 z;\n  __nv_bfloat162 w;\n};\n\n// BF16 vector types for Q, K, V.\ntemplate <>\nstruct Vec<__nv_bfloat16, 1> {\n  using Type = __nv_bfloat16;\n};\ntemplate <>\nstruct Vec<__nv_bfloat16, 2> {\n  using Type = __nv_bfloat162;\n};\ntemplate <>\nstruct Vec<__nv_bfloat16, 4> {\n  using Type = bf16_4_t;\n};\ntemplate <>\nstruct Vec<__nv_bfloat16, 8> {\n  using Type = bf16_8_t;\n};\n\n// FP32 accumulator vector types corresponding to Vec.\ntemplate <>\nstruct FloatVec<__nv_bfloat16> {\n  using Type = float;\n};\ntemplate <>\nstruct FloatVec<__nv_bfloat162> {\n  using Type = float2;\n};\ntemplate <>\nstruct FloatVec<bf16_4_t> {\n  using Type = Float4_;\n};\ntemplate <>\nstruct FloatVec<bf16_8_t> {\n  using Type = Float8_;\n};\n\n// Utility functions for type conversions.\ninline __device__ float2 bf1622float2(const __nv_bfloat162 val)",
+      "docstring": "",
+      "line": 5
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) && __CUDA_ARCH__ < 800\n  assert(false);\n#else\n  return __bfloat1622float2(val);\n#endif\n  __builtin_unreachable();  // Suppress missing return statement warning\n}\n\ninline __device__ __nv_bfloat162 bf162bf162(const __nv_bfloat16 val)",
+      "docstring": "",
+      "line": 92
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) && __CUDA_ARCH__ < 800\n  assert(false);\n#else\n  return __bfloat162bfloat162(val);\n#endif\n  __builtin_unreachable();  // Suppress missing return statement warning\n}\n\n// Vector addition.\ninline __device__ __nv_bfloat16 add(__nv_bfloat16 a, __nv_bfloat16 b)",
+      "docstring": "",
+      "line": 101
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) && __CUDA_ARCH__ < 800\n  assert(false);\n#else\n  #ifndef USE_ROCM\n  return a + b;\n  #else\n  return __hadd(a, b);\n  #endif\n#endif\n  __builtin_unreachable();  // Suppress missing return statement warning\n}\n\ninline __device__ __nv_bfloat162 add(__nv_bfloat162 a, __nv_bfloat162 b)",
+      "docstring": "",
+      "line": 111
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) && __CUDA_ARCH__ < 800\n  assert(false);\n#else\n  return __hadd2(a, b);\n#endif\n  __builtin_unreachable();  // Suppress missing return statement warning\n}\n\ninline __device__ bf16_4_t add(bf16_4_t a, bf16_4_t b)",
+      "docstring": "",
+      "line": 124
+    },
+    {
+      "name": "add",
+      "kind": "function",
+      "signature": "add(a.x, b.x);\n  c.y = add(a.y, b.y);\n  return c;\n}\n\ninline __device__ bf16_8_t add(bf16_8_t a, bf16_8_t b)",
+      "docstring": "",
+      "line": 134
+    },
+    {
+      "name": "add",
+      "kind": "function",
+      "signature": "add(a.x, b.x);\n  c.y = add(a.y, b.y);\n  c.z = add(a.z, b.z);\n  c.w = add(a.w, b.w);\n  return c;\n}\n\ninline __device__ float2 add(__nv_bfloat162 a, float2 fb)",
+      "docstring": "",
+      "line": 141
+    },
+    {
+      "name": "bf1622float2",
+      "kind": "function",
+      "signature": "bf1622float2(a);\n  return add(fa, fb);\n}\n\ninline __device__ Float4_ add(bf16_4_t a, Float4_ fb)",
+      "docstring": "",
+      "line": 149
+    },
+    {
+      "name": "add",
+      "kind": "function",
+      "signature": "add(a.x, fb.x);\n  fc.y = add(a.y, fb.y);\n  return fc;\n}\n\ninline __device__ Float8_ add(bf16_8_t a, Float8_ fb)",
+      "docstring": "",
+      "line": 155
+    },
+    {
+      "name": "add",
+      "kind": "function",
+      "signature": "add(a.x, fb.x);\n  fc.y = add(a.y, fb.y);\n  fc.z = add(a.z, fb.z);\n  fc.w = add(a.w, fb.w);\n  return fc;\n}\n\n// Vector multiplication.\ntemplate <>\ninline __device__ __nv_bfloat16 mul(__nv_bfloat16 a, __nv_bfloat16 b)",
+      "docstring": "",
+      "line": 162
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) && __CUDA_ARCH__ < 800\n  assert(false);\n#else\n  return __hmul(a, b);\n#endif\n  __builtin_unreachable();  // Suppress missing return statement warning\n}\n\ntemplate <>\ninline __device__ __nv_bfloat162 mul(__nv_bfloat162 a, __nv_bfloat162 b)",
+      "docstring": "",
+      "line": 172
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) && __CUDA_ARCH__ < 800\n  assert(false);\n#else\n  return __hmul2(a, b);\n#endif\n  __builtin_unreachable();  // Suppress missing return statement warning\n}\n\ntemplate <>\ninline __device__ __nv_bfloat162 mul(__nv_bfloat16 a, __nv_bfloat162 b)",
+      "docstring": "",
+      "line": 182
+    },
+    {
+      "name": "bf162bf162",
+      "kind": "function",
+      "signature": "bf162bf162(a), b);\n}\n\ntemplate <>\ninline __device__ bf16_4_t mul(bf16_4_t a, bf16_4_t b)",
+      "docstring": "",
+      "line": 192
+    },
+    {
+      "name": "mul",
+      "kind": "function",
+      "signature": "mul(__nv_bfloat16 a, bf16_4_t b)",
+      "docstring": "",
+      "line": 201
+    },
+    {
+      "name": "bf162bf162",
+      "kind": "function",
+      "signature": "bf162bf162(a);\n  bf16_4_t c;\n  c.x = mul<__nv_bfloat162, __nv_bfloat162, __nv_bfloat162>(s, b.x);\n  c.y = mul<__nv_bfloat162, __nv_bfloat162, __nv_bfloat162>(s, b.y);\n  return c;\n}\n\ntemplate <>\ninline __device__ bf16_8_t mul(bf16_8_t a, bf16_8_t b)",
+      "docstring": "",
+      "line": 205
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "attention_generic",
+      "cuda_bf16",
+      "cuda_fp16",
+      "dtype_float32",
+      "hip",
+      "stdint"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 46,
+    "public_symbols": 46,
+    "classes": 0,
+    "functions": 46,
+    "internal_deps": 0,
+    "external_deps": 6,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/attention/dtype_bfloat16.cuh"
+}

@@ -851,10 +851,10 @@ flowchart TB
 ### 横向关联
 - [GPT-3 深度解读](20_论文精读/03_规模扩展/02_GPT3_深入分析.md) — Encoder-only vs Decoder-only 的对比
 - [NLP 与 LLMs](../../05_大模型/README.md) — NLP 任务全景
-- [LLM 架构](../05_大模型/05_LLM架构/) — 现代大模型架构设计
+- [LLM 架构](../05_大模型/04_LLM架构/) — 现代大模型架构设计
 
 ### 进阶方向
-- [Fine-tuning 技术](../05_大模型/07_微调技术/) — 参数高效微调方法
+- [Fine-tuning 技术](../05_大模型/06_微调技术/) — 参数高效微调方法
 - [RLHF 与 DPO 深度解读](20_论文精读/06_对齐研究/RLHF_03_DPO_深入分析.md) — 从 BERT 微调到 RLHF 对齐
 - [Mixture of Experts 深度解读](20_论文精读/02_模型架构/06_混合专家_深入分析.md) — 稀疏 MoE 架构
 
@@ -864,7 +864,7 @@ flowchart TB
 
 ## Related
 
-- [[05_大模型/07_微调技术/09_PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, nlp, transformer)
-- [[05_大模型/07_微调技术/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, nlp, transformer)
+- [[05_大模型/06_微调技术/09_PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, nlp, transformer)
+- [[05_大模型/06_微调技术/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, nlp, transformer)
 - [[05_大模型/01_LLM基础/05_LLM_基础]] — 大语言模型基础速成指南 (共享: bert, nlp, transformer)
-- [[05_大模型/10_多模态模型/06_多模态_架构_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, nlp, transformer)
+- [[05_大模型/09_多模态模型/06_多模态_架构_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, nlp, transformer)

@@ -9,7 +9,7 @@ relationships:
     type: alternative_to
   - target: "概念/reasoning-models"
     type: enables
-sources: [05_大模型/08_提示工程/Prompt_Engineering.md]
+sources: [05_大模型/07_提示工程/Prompt_Engineering.md]
 summary: 提示工程是设计和优化输入提示词以引导LLM产生期望输出的技术，不需要修改模型参数。核心技术从Zero-shot、Few-shot到思维链（CoT）和思维树（ToT），是使用LLM最低成本、最高效的优化手段。
 provenance:
   extracted: 0.85
@@ -146,9 +146,9 @@ Prefix Caching缓存共享的System Prompt前缀；LLMLingua等工具压缩长Pr
 
 ## See Also (深度专题)
 
-- [[05_大模型/08_提示工程/16_Prompt工程|提示工程完全指南]] — CoT/Few-shot/ReAct 等策略的系统性方法论
-- [[05_大模型/08_提示工程/01_Context_工程_指南|上下文工程指南]] — 从 Prompt Engineering 到 Context Engineering 的演进
-- [[05_大模型/08_提示工程/03_DSPy_深入分析|DSPy 深度解析]] — 编程化提示 优化框架
+- [[05_大模型/07_提示工程/16_Prompt工程|提示工程完全指南]] — CoT/Few-shot/ReAct 等策略的系统性方法论
+- [[05_大模型/07_提示工程/01_Context_工程_指南|上下文工程指南]] — 从 Prompt Engineering 到 Context Engineering 的演进
+- [[05_大模型/07_提示工程/03_DSPy_深入分析|DSPy 深度解析]] — 编程化提示 优化框架
 
 ---
 
@@ -188,7 +188,7 @@ Prefix Caching缓存共享的System Prompt前缀；LLMLingua等工具压缩长Pr
 - [[概念/LLM/context-engineering|上下文工程]]
 - [[概念/LLM/promptfoo|Promptfoo 测试]]
 - [[概念/Agent/react-agent|ReAct Agent]]
-- [[05_大模型/08_提示工程/13_Prompt工程_完整_指南|Prompt 工程指南 2026]]
+- [[05_大模型/07_提示工程/13_Prompt工程_完整_指南|Prompt 工程指南 2026]]
 
 ## Prompt 模板示例
 

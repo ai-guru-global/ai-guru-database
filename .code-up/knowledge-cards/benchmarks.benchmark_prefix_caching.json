@@ -1,0 +1,66 @@
+{
+  "id": "benchmarks.benchmark_prefix_caching",
+  "title": "Benchmark Prefix Caching",
+  "type": "module",
+  "summary": "Module providing test_prefix, sample_tokens, Request, PROMPT",
+  "details": "Contains 1 classes: Request. Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "test_prefix",
+      "kind": "function",
+      "signature": "def test_prefix(llm=None, sampling_params=None, prompts=None)",
+      "docstring": "",
+      "line": 51
+    },
+    {
+      "name": "sample_tokens",
+      "kind": "function",
+      "signature": "def sample_tokens(tokenizer: PreTrainedTokenizerBase, length: int) -> list[int]:\n    vocab = tokenizer.get_vocab()\n    all_special_ids = set(tokenizer.all_special_ids)\n\n    # Remove the special tokens.\n    return random.choices(\n        [v for k, v in vocab.items() if k not in all_special_ids],\n        k=length,\n    )\n\n\ndef sample_requests_from_dataset(\n    dataset_path: str,\n    num_requests: int,\n    tokenizer: PreTrainedTokenizerBase,\n    input_length_range: tuple[int, int],\n    fixed_output_len: Optional[int],\n) -> list[Request]:\n    if fixed_output_len is not None and fixed_output_len < 4:\n        raise ValueError(\"output_len too small\")\n\n    # Load the dataset.\n    with open(dataset_path) as f:\n        dataset = json.load(f)\n    # Filter out the conversations with less than 2 turns.\n    dataset = [data for data in dataset if len(data[\"conversations\"]) >= 2]\n    # Only keep the first two turns of each conversation.\n    dataset = [\n        (data[\"conversations\"][0][\"value\"], data[\"conversations\"][1][\"value\"])\n        for data in dataset\n    ]\n\n    # Shuffle the dataset.\n    random.shuffle(dataset)\n\n    min_len, max_len = input_length_range\n    assert min_len >= 0 and max_len >= min_len, \"input_length_range too small\"\n\n    # Filter out sequences that are too long or too short\n    filtered_requests: list[Request] = []\n\n    for i in range(len(dataset)):\n        if len(filtered_requests) == num_requests:\n            break\n\n        # Tokenize the prompts and completions.\n        prompt_token_ids = tokenizer(dataset[i][0]).input_ids\n        prompt = tokenizer.decode(prompt_token_ids)\n        completion = dataset[i][1]\n        completion_token_ids = tokenizer(completion).input_ids\n        prompt_len = len(prompt_token_ids)\n        output_len = (\n            len(completion_token_ids) if fixed_output_len is None else fixed_output_len\n        )\n        if min_len <= prompt_len <= max_len:\n            filtered_requests.append(Request(prompt, prompt_len, output_len))\n\n    return filtered_requests\n\n\ndef sample_requests_from_random(\n    num_requests: int,\n    tokenizer: PreTrainedTokenizerBase,\n    input_length_range: tuple[int, int],\n    fixed_output_len: Optional[int],\n    prefix_len: int,\n) -> list[Request]:\n    requests = []\n    prefix_token_ids = sample_tokens(tokenizer, prefix_len)\n    min_len, max_len = input_length_range\n\n    for i in range(num_requests):\n        unique_part_token_ids = sample_tokens(\n            tokenizer, random.randint(min_len - prefix_len, max_len - prefix_len)\n        )\n        prompt_token_ids = prefix_token_ids + unique_part_token_ids\n        prompt = tokenizer.decode(prompt_token_ids)\n        prompt_len = len(prompt_token_ids)\n        assert min_len <= prompt_len <= max_len, (\n            f\"prompt_len {prompt_len} out of range {min_len}:{max_len}\"\n        )\n        requests.append(Request(prompt, prompt_len, fixed_output_len))\n    return requests\n\n\ndef repeat_and_sort_requests(\n    requests: list[Request], repeat_count: int, sort: bool = False\n) -> list[str]:\n    repeated_requests = requests * repeat_count\n    if sort:\n        repeated_requests.sort(key=lambda x: x[1])\n    else:\n        random.shuffle(repeated_requests)\n    return [req.prompt for req in repeated_requests]\n\n\ndef main(args):\n    tokenizer = get_tokenizer(args.model, trust_remote_code=True)\n    input_length_range = tuple(map(int, args.input_length_range.split(\":\")))\n    random.seed(args.seed)\n    if args.dataset_path is not None:\n        if args.prefix_len > 0:\n            raise ValueError(\n                \"prefix-len is not supported when dataset-path is provided.\"\n            )\n        print(f\"Start to sample {args.num_prompts} prompts from {args.dataset_path}\")\n        filtered_requests = sample_requests_from_dataset(\n            dataset_path=args.dataset_path,\n            num_requests=args.num_prompts,\n            tokenizer=tokenizer,\n            input_length_range=input_length_range,\n            fixed_output_len=args.output_len,\n        )\n    else:\n        print(f\"Start to sample {args.num_prompts} prompts from random\")\n        filtered_requests = sample_requests_from_random(\n            num_requests=args.num_prompts,\n            tokenizer=tokenizer,\n            input_length_range=input_length_range,\n            fixed_output_len=args.output_len,\n            prefix_len=args.prefix_len,\n        )\n\n    # Print some helpful stats of the requests.\n    print(f\"Sampled {len(filtered_requests)} requests.\")\n    prompt_lens = [req.prompt_len for req in filtered_requests]\n    print(f\"Average input length: {sum(prompt_lens) / len(prompt_lens)}\")\n    print(f\"P50 input length: {sorted(prompt_lens)[len(prompt_lens) // 2]}\")\n    print(f\"Min Prompt Length: {min(prompt_lens)}\")\n    print(f\"Max Prompt Length: {max(prompt_lens)}\")\n\n    engine_args = EngineArgs.from_cli_args(args)\n\n    llm = LLM(**dataclasses.asdict(engine_args))\n\n    sampling_params = SamplingParams(\n        temperature=0,\n        max_tokens=args.output_len,\n        detokenize=not args.disable_detokenize,\n    )\n\n    print(\"Testing filtered requests\")\n    prompts = repeat_and_sort_requests(\n        filtered_requests, repeat_count=args.repeat_count, sort=args.sort\n    )\n\n    print(\"------start generating------\")\n    test_prefix(\n        llm=llm,\n        prompts=prompts,\n        sampling_params=sampling_params,\n    )\n\n\nif __name__ == \"__main__\":\n    parser = FlexibleArgumentParser(\n        description=\"Benchmark the performance with or without \"\n        \"automatic prefix caching.\"\n    )\n    parser.add_argument(\n        \"--dataset-path\", type=str, default=None, help=\"Path to the dataset.\"\n    )\n    parser.add_argument(\"--output-len\", type=int, default=10)\n    parser.add_argument(\n        \"--num-prompts\",\n        type=int,\n        required=True,\n        help=\"Number of the prompts sampled from dataset\",\n    )\n    parser.add_argument(\n        \"--repeat-count\",\n        type=int,\n        default=1,\n        help=\"Number of times to repeat each prompt\",\n    )\n    parser.add_argument(\n        \"--sort\", action=\"store_true\", help=\"Sort prompts by input length\"\n    )\n    parser.add_argument(\n        \"--input-length-range\",\n        type=str,\n        required=True,\n        help=\"Range of input lengths for sampling prompts,\"\n        'specified as \"min:max\" (e.g., \"128",
+      "docstring": "",
+      "line": 67
+    },
+    {
+      "name": "Request",
+      "kind": "class",
+      "signature": "class Request",
+      "docstring": "",
+      "line": 60
+    },
+    {
+      "name": "PROMPT",
+      "kind": "constant",
+      "signature": "PROMPT = ...",
+      "docstring": "",
+      "line": 48
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "backend_request_func",
+      "dataclasses",
+      "json",
+      "random",
+      "time",
+      "transformers",
+      "typing",
+      "vllm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 4,
+    "public_symbols": 4,
+    "classes": 1,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 8,
+    "depth": 0,
+    "complexity_sum": 14
+  },
+  "tags": [
+    "oop",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/benchmark_prefix_caching.py"
+}

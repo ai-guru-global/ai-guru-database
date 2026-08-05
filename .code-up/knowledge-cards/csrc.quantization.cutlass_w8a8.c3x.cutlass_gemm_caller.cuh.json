@@ -1,0 +1,57 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.c3x.cutlass_gemm_caller.cuh",
+  "title": "Cutlass Gemm Caller",
+  "type": "module",
+  "summary": "Module providing get_problem_shape, size, CUTLASS_CHECK",
+  "details": "Contains 3 functions/methods",
+  "symbols": [
+    {
+      "name": "get_problem_shape",
+      "kind": "function",
+      "signature": "get_problem_shape(\n    torch::Tensor const& a, torch::Tensor const& b)",
+      "docstring": "",
+      "line": 25
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size(0), n = b.size(1), k = a.size(1);\n  return {m, n, k, 1};\n}\n\ntemplate <typename GemmKernel>\nvoid cutlass_gemm_caller(\n    torch::Device device, cute::Shape<int, int, int, int> prob_shape,\n    typename GemmKernel::MainloopArguments mainloop_args,\n    typename GemmKernel::EpilogueArguments epilogue_args,\n    typename GemmKernel::TileSchedulerArguments scheduler = {})",
+      "docstring": "",
+      "line": 29
+    },
+    {
+      "name": "CUTLASS_CHECK",
+      "kind": "function",
+      "signature": "CUTLASS_CHECK(gemm_op.can_implement(args));\n\n  size_t workspace_size = gemm_op.get_workspace_size(args);\n  auto const workspace_options =\n      torch::TensorOptions().dtype(torch::kUInt8).device(device);\n  auto workspace = torch::empty(workspace_size, workspace_options);\n\n  auto stream = at::cuda::getCurrentCUDAStream(device.index());\n\n  cutlass::Status status = gemm_op.run(args, workspace.data_ptr(), stream);\n  CUTLASS_CHECK(status);\n}\n\ntemplate <typename Gemm, typename... EpilogueArgs>\nvoid cutlass_gemm_caller(torch::Tensor& out, torch::Tensor const& a,\n                         torch::Tensor const& b,\n                         EpilogueArgs&&... epilogue_params)",
+      "docstring": "",
+      "line": 49
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "core",
+      "cute",
+      "cutlass",
+      "cutlass_extensions",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 3,
+    "public_symbols": 3,
+    "classes": 0,
+    "functions": 3,
+    "internal_deps": 0,
+    "external_deps": 6,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/c3x/cutlass_gemm_caller.cuh"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.scaled_mm_c3x_sm90.cu",
+  "title": "Scaled Mm C3X Sm90",
+  "type": "module",
+  "summary": "Module providing sm90a, dispatch_scaled_mm",
+  "details": "Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "sm90a",
+      "kind": "function",
+      "signature": "sm90a(Hopper).\n*/\n\n#if defined ENABLE_SCALED_MM_SM90 && ENABLE_SCALED_MM_SM90\n\nvoid cutlass_scaled_mm_sm90(torch::Tensor& c, torch::Tensor const& a,\n                            torch::Tensor const& b,\n                            torch::Tensor const& a_scales,\n                            torch::Tensor const& b_scales,\n                            std::optional<torch::Tensor> const& bias)",
+      "docstring": "",
+      "line": 5
+    },
+    {
+      "name": "dispatch_scaled_mm",
+      "kind": "function",
+      "signature": "dispatch_scaled_mm(c, a, b, a_scales, b_scales, bias,\n                     vllm::cutlass_scaled_mm_sm90_fp8,\n                     vllm::cutlass_scaled_mm_sm90_int8,\n                     vllm::cutlass_scaled_mm_blockwise_sm90_fp8);\n}\n\nvoid cutlass_scaled_mm_azp_sm90(torch::Tensor& out, torch::Tensor const& a,\n                                torch::Tensor const& b,\n                                torch::Tensor const& a_scales,\n                                torch::Tensor const& b_scales,\n                                torch::Tensor const& azp_adj,\n                                std::optional<torch::Tensor> const& azp,\n                                std::optional<torch::Tensor> const& bias)",
+      "docstring": "",
+      "line": 15
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "c3x"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 2,
+    "public_symbols": 2,
+    "classes": 0,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/scaled_mm_c3x_sm90.cu"
+}

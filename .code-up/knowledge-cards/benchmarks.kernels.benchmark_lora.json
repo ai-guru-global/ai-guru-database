@@ -1,0 +1,150 @@
+{
+  "id": "benchmarks.kernels.benchmark_lora",
+  "title": "Benchmark Lora",
+  "type": "module",
+  "summary": "Module providing dtype_to_str, make_rand_lora_weight_tensor, from_str, with_seq_length, bench_fn_kwargs and 5 more symbols",
+  "details": "Contains 3 classes: OpType, BenchmarkContext, BenchmarkTensors. Contains 12 functions/methods",
+  "symbols": [
+    {
+      "name": "dtype_to_str",
+      "kind": "function",
+      "signature": "def dtype_to_str(dtype: torch.dtype)",
+      "docstring": "",
+      "line": 64
+    },
+    {
+      "name": "make_rand_lora_weight_tensor",
+      "kind": "function",
+      "signature": "def make_rand_lora_weight_tensor(\n    k: int, n: int, num_loras: int, dtype: torch.dtype, device: str = \"cuda\"\n) -> torch.Tensor:\n    # LoRA weights column major\n    return torch.rand((num_loras, n, k), dtype=dtype).to(device)\n\n\ndef make_rand_tensors(\n    a_shape: tuple[int],\n    b_shape: tuple[int],\n    c_shape: tuple[int],\n    a_dtype: torch.dtype,\n    b_dtype: torch.dtype,\n    c_dtype: torch.dtype,\n    num_slices: int,\n    device: str = \"cuda\",\n) -> tuple[torch.Tensor, list[torch.Tensor], torch.Tensor]:\n    \"\"\"\n    Make LoRA input/output matrices.\n    \"\"\"\n    A = torch.rand(a_shape, dtype=a_dtype).to(device)\n\n    # LoRA weights column major\n    Bs = [torch.rand(b_shape, dtype=b_dtype).to(device) for _ in range(num_slices)]\n\n    C = torch.zeros(c_shape, dtype=c_dtype).to(device)\n    return A, Bs, C\n\n\ndef make_prompt_lora_mapping(\n    num_prompts: int, num_active_loras: int, sort_by_lora_id: bool, device: str\n) -> torch.Tensor:\n    \"\"\"\n    All prompts are mapped to a LoRA ID in range [0, num_active_loras).\n    where 0 refers to first lora, 1 refers to second lora and so on.\n    \"\"\"\n    assert num_active_loras > 0\n\n    if not sort_by_lora_id:\n        return torch.randint(0, num_active_loras, (num_prompts,), dtype=torch.long)\n\n    # Divide LoRAs equally and in order.\n    part_size = num_prompts // num_active_loras\n    part_size = max(part_size, 1)\n\n    lora_id = 0\n    prompt_lora_mapping = []\n    while len(prompt_lora_mapping) < num_prompts:\n        prompt_lora_mapping.extend([lora_id] * part_size)\n        lora_id = lora_id + 1 if lora_id + 1 < num_active_loras else lora_id\n    return torch.tensor(\n        prompt_lora_mapping[:num_prompts], dtype=torch.long, device=device\n    )\n\n\ndef make_token_lora_mapping(\n    num_tokens: int,\n    num_prompts: int,\n    prompt_lora_mapping: torch.Tensor,\n    seq_len_tensor: torch.Tensor,\n    device: str,\n):\n    \"\"\"\n    Make token_lora_mapping from prompt_lora_mapping and seq_lens_tensor\n    \"\"\"\n    assert prompt_lora_mapping.shape[0] == num_prompts\n\n    # token to lora index mapping\n    token_lora_mapping = [0] * num_tokens\n    current_offset = 0\n    for b_id in range(num_prompts):\n        lora_index = prompt_lora_mapping[b_id].item()\n        s = current_offset\n        e = s + seq_len_tensor[b_id].item()\n        token_lora_mapping[s:e] = [lora_index] * (e - s)\n        current_offset += seq_len_tensor[b_id].item()\n\n    return torch.tensor(token_lora_mapping, dtype=torch.long, device=device)\n\n\ndef ref_group_gemm(\n    ref_out: torch.Tensor,\n    input: torch.Tensor,\n    lora_weights: list[torch.Tensor],\n    seq_lens_cpu: torch.Tensor,\n    prompt_lora_mapping_cpu: torch.Tensor,\n    scaling: float,\n    add_inputs: Optional[bool],\n):\n    \"\"\"\n    Torch group gemm reference implementation to test correctness of\n    benchmarking operations.\n    \"\"\"\n    batches = seq_lens_cpu.size(0)\n    out_list = []\n    current_offset = 0\n    for lora_index, b_length in zip(range(batches), seq_lens_cpu):\n        x = input[current_offset",
+      "docstring": "",
+      "line": 74
+    },
+    {
+      "name": "from_str",
+      "kind": "function",
+      "signature": "def from_str(s: str) -> \"OpType\":\n        if s.lower() == \"lora_shrink\":\n            return OpType.LORA_SHRINK\n        if s.lower() == \"lora_expand\":\n            return OpType.LORA_EXPAND\n        raise ValueError(f\"Unrecognized str {s} to convert to OpType\")\n\n    def is_shrink_fn(self) -> bool:\n        return self in [OpType.LORA_SHRINK]\n\n    def is_expand_fn(self) -> bool:\n        return self in [OpType.LORA_EXPAND]\n\n    def num_slices(self) -> list[int]:\n        return [1, 2, 3]\n\n    def mkn(\n        self, batch_size: int, seq_length: int, hidden_size: int, lora_rank: int\n    ) -> tuple[int, int, int]:\n        num_tokens = batch_size * seq_length\n        if self.is_shrink_fn():\n            m = num_tokens\n            k = hidden_size\n            n = lora_rank\n        else:\n            assert self.is_expand_fn()\n            m = num_tokens\n            k = lora_rank\n            n = hidden_size\n        return m, k, n\n\n    def matmul_dtypes(\n        self, op_dtype: torch.dtype\n    ) -> tuple[torch.dtype, torch.dtype, torch.dtype]:\n        \"\"\"\n        return a type, b type and c type for A x B = C\n        \"\"\"\n        if self.is_shrink_fn():\n            return op_dtype, op_dtype, torch.float32\n        else:\n            assert self.is_expand_fn()\n            return torch.float32, op_dtype, op_dtype\n\n    def matmul_shapes(\n        self,\n        batch_size: int,\n        seq_length: int,\n        hidden_size: int,\n        lora_rank: int,\n        num_loras: int,\n        num_slices: int,\n    ) -> tuple[tuple[int], tuple[int], tuple[int]]:\n        \"\"\"\n        Given num_slices, return the shapes of the A, B, and C matrices\n        in A x B = C, for the op_type\n        \"\"\"\n        m, k, n = self.mkn(batch_size, seq_length, hidden_size, lora_rank)\n\n        b_shape = (num_loras, n, k)  # col-major\n        if self in [OpType.LORA_SHRINK]:\n            # LoRA shrink kernels support num_slices inherently in the kernel.\n            return ((m, k), b_shape, (num_slices, m, n))\n        if self in [OpType.LORA_EXPAND]:\n            # LoRA expand kernels support num_slices inherently in the kernel\n            return ((num_slices, m, k), b_shape, (m, n * num_slices))\n        raise ValueError(f\"Unrecognized op_type {self}\")\n\n    def bench_fn(self) -> Callable:\n        if self == OpType.LORA_SHRINK:\n            return lora_shrink\n        if self == OpType.LORA_EXPAND:\n            return lora_expand\n\n        raise ValueError(f\"Unrecognized optype {self}\")\n\n    def run_ref_group_gemm(\n        self,\n        output: torch.Tensor,\n        input: torch.Tensor,\n        lora_weights: list[torch.Tensor],\n        **kwargs,\n    ) -> Callable:\n        \"\"\"Each benchmark operation expects the input, lora_weights and outputs\n        in a slightly different format. Refer to self.matmul_shapes().\n        run_ref_group_gemm accounts for those differences in executing a\n        reference group gemm for correctness testing.\n        \"\"\"\n        w_dtype = lora_weights[0].dtype\n        num_slices = len(lora_weights)\n        if self in [OpType.LORA_SHRINK]:\n            for slice_idx in range(num_slices):\n                ref_group_gemm(\n                    ref_out=output[slice_idx,",
+      "docstring": "",
+      "line": 194
+    },
+    {
+      "name": "with_seq_length",
+      "kind": "function",
+      "signature": "def with_seq_length(self, seq_length: int) -> \"BenchmarkContext\":\n        ctx = copy.copy(self)\n        ctx.seq_length = seq_length\n        return ctx\n\n    def with_num_slices(self, num_slices: int) -> \"BenchmarkContext\":\n        ctx = copy.copy(self)\n        ctx.num_slices = num_slices\n        return ctx\n\n    def bench_label(self) -> str:\n        return f\"lora-{self.dtype}\"\n\n    def bench_sublabel(self, op_type: OpType) -> str:\n        m, k, n = op_type.mkn(\n            self.batch_size, self.seq_length, self.hidden_size, self.lora_rank\n        )\n        desc = {\n            \"bs\": self.batch_size,\n            \"sl\": self.seq_length,\n            \"m\": m,\n            \"k\": k,\n            \"n\": n,\n            \"num_loras\": self.num_loras,\n            \"sort_by_lora\": self.sort_by_lora_id,\n            \"num_slices\": self.num_slices,\n        }\n        return json.dumps(desc)\n\n\n@dataclass\nclass BenchmarkTensors:\n    \"\"\"\n    Input/Output tensors used for benchmarks\n    \"\"\"\n\n    # matmul tensors\n    input: torch.Tensor\n    lora_weights_lst: list[torch.Tensor]\n    output: torch.Tensor\n    # LoRA kernel metadata\n    lora_kernel_meta: LoRAKernelMeta\n    # Metadata tensors used in testing correctness\n    seq_lens: torch.Tensor\n    prompt_lora_mapping: torch.Tensor\n\n    def io_types(self) -> str:\n        return (\n            f\"{dtype_to_str(self.input.dtype)}x\"\n            f\"{dtype_to_str(self.lora_weights_lst[0].dtype)}=>\"\n            f\"{dtype_to_str(self.output.dtype)}\"\n        )\n\n    @staticmethod\n    def make(\n        ctx: BenchmarkContext, op_type: OpType, device: str = \"cuda\"\n    ) -> \"BenchmarkTensors\":\n        # Make input / output matmul tensors.\n        a_shape, b_shape, c_shape = op_type.matmul_shapes(\n            ctx.batch_size,\n            ctx.seq_length,\n            ctx.hidden_size,\n            ctx.lora_rank,\n            ctx.num_loras,\n            ctx.num_slices,\n        )\n        a_type, b_type, c_type = op_type.matmul_dtypes(ctx.dtype)\n        input_tensor, lora_weights, output_tensor = make_rand_tensors(\n            a_shape, b_shape, c_shape, a_type, b_type, c_type, num_slices=ctx.num_slices\n        )\n\n        # Make metadata tensors.\n        # Keep the metadata tensors in the CPU for further processing if needed.\n        # The tensors get moved to the GPU before benchmarking.\n        assert ctx.num_active_loras <= ctx.num_loras\n        total_tokens = ctx.batch_size * ctx.seq_length\n\n        # Make metadata tensors involved in correctness testing.\n        # Prepare seq lens tensor\n        seq_len_tensor = torch.randint(\n            ctx.seq_length, ctx.seq_length + 1, (ctx.batch_size,)\n        )\n        assert total_tokens == seq_len_tensor.sum()\n        # Prepare prompt lora indices tensor\n        prompt_lora_indices_tensor = make_prompt_lora_mapping(\n            ctx.batch_size, ctx.num_active_loras, ctx.sort_by_lora_id, \"cpu\"\n        )\n\n        # Make LoRAKernelMeta\n        token_lora_indices_tensor = make_token_lora_mapping(\n            total_tokens,\n            ctx.batch_size,\n            prompt_lora_indices_tensor,\n            seq_len_tensor,\n            \"cpu\",\n        )\n        lora_kernel_meta = LoRAKernelMeta.make(\n            max_loras=ctx.num_loras,\n            max_num_tokens=token_lora_indices_tensor.size(0),\n            device=\"cpu\",\n        )\n        lora_kernel_meta.prepare_tensors(token_lora_mapping=token_lora_indices_tensor)\n\n        return BenchmarkTensors(\n            input_tensor,\n            lora_weights,\n            output_tensor,\n            lora_kernel_meta,\n            seq_len_tensor,\n            prompt_lora_indices_tensor,\n        )\n\n    def sanity_check(self) -> None:\n        \"\"\"\n        Fails asserts when non-conformality is detected.\n        \"\"\"\n        num_tokens = self.input.shape[-2]\n        # check metadata tensors\n        assert torch.sum(self.seq_lens) == num_tokens\n        num_seqs = self.seq_lens.shape[0]\n        # assert self.seq_start_loc.shape[0] == num_seqs\n        assert self.prompt_lora_mapping.shape[0] == num_seqs\n        assert self.lora_kernel_meta.token_lora_mapping.shape[0] == num_tokens\n\n    def to_device(self, device: str):\n        \"\"\"\n        Transfer tensors to device if the tensors aren't already on the device\n        \"\"\"\n\n        def to_device(tensor: torch.Tensor):\n            if tensor.device != device:\n                tensor = tensor.to(device=device)\n            return tensor\n\n        self.input = to_device(self.input)\n        self.output = to_device(self.output)\n        self.seq_lens = to_device(self.seq_lens)\n        self.prompt_lora_mapping = to_device(self.prompt_lora_mapping)\n        for i in range(len(self.lora_weights_lst)):\n            self.lora_weights_lst[i] = to_device(self.lora_weights_lst[i])\n\n        # LoRA meta\n        for field_name in LoRAKernelMeta.__dataclass_fields__:\n            field = getattr(self.lora_kernel_meta, field_name)\n            assert isinstance(field, torch.Tensor)\n            setattr(self.lora_kernel_meta, field_name, to_device(field))\n\n    def metadata(self) -> tuple[int, int, int]:\n        \"\"\"\n        Return num_seqs, num_tokens and max_seq_len\n        \"\"\"\n        num_seqs = self.seq_lens.shape[0]\n        num_tokens = self.lora_kernel_meta.token_lora_mapping.shape[0]\n        max_seq_len = torch.max(self.seq_lens).item()\n        num_slices = len(self.lora_weights_lst)\n        return num_seqs, num_tokens, max_seq_len, num_slices\n\n    def as_lora_shrink_kwargs(self) -> dict[str, Any]:\n        self.sanity_check()\n        self.to_device(self.input.device)\n\n        _, num_tokens, _, num_slices = self.metadata()\n\n        # Sanity check matrix shapes.\n        i_shape, lw_shape, o_shape = (\n            self.input.shape,\n            self.lora_weights_lst[0].shape,\n            self.output.shape,\n        )\n        # Expected input shape [num_tokens, hidden_size]\n        assert len(i_shape) == 2\n        assert i_shape[0] == num_tokens\n        hidden_size = i_shape[1]\n        # Expected lora weight shape [num_loras, lora_rank, hidden_size]\n        assert len(lw_shape) == 3\n        assert lw_shape[2] == hidden_size\n        lora_rank = lw_shape[1]\n        # Expected output shape [num_slices, num_tokens, lora_rank]\n        assert len(o_shape) == 3\n        assert o_shape == (num_slices, num_tokens, lora_rank)\n\n        return {\n            \"inputs\": self.input,\n            \"lora_a_weights\": self.lora_weights_lst,\n            \"output_tensor\": self.output,\n            \"token_lora_mapping\": self.lora_kernel_meta.token_lora_mapping,\n            \"token_indices_sorted_by_lora_ids\": (\n                self.lora_kernel_meta.token_indices_sorted_by_lora_ids\n            ),\n            \"num_tokens_per_lora\": self.lora_kernel_meta.num_tokens_per_lora,\n            \"lora_token_start_loc\": self.lora_kernel_meta.lora_token_start_loc,\n            \"lora_ids\": self.lora_kernel_meta.active_lora_ids,\n            \"scaling\": 1.0,\n        }\n\n    def as_lora_expand_kwargs(self, add_inputs: bool) -> dict[str, Any]:\n        self.sanity_check()\n        self.to_device(self.input.device)\n\n        _, num_tokens, _, num_slices = self.metadata()\n\n        # Sanity check matrix shapes.\n        i_shape, lw_shape, o_shape = (\n            self.input.shape,\n            self.lora_weights_lst[0].shape,\n            self.output.shape,\n        )\n        # Expected input shape",
+      "docstring": "",
+      "line": 322
+    },
+    {
+      "name": "bench_fn_kwargs",
+      "kind": "function",
+      "signature": "def bench_fn_kwargs(\n        self, op_type: OpType, add_inputs: Optional[bool] = None\n    ) -> dict[str, Any]:\n        if op_type.is_shrink_fn():\n            assert add_inputs is None\n        else:\n            assert add_inputs is not None\n\n        if op_type == OpType.LORA_SHRINK:\n            return self.as_lora_shrink_kwargs()\n        if op_type == OpType.LORA_EXPAND:\n            return self.as_lora_expand_kwargs(add_inputs)\n        raise ValueError(f\"Unrecognized optype {self}\")\n\n    def test_correctness(\n        self, op_type: OpType, expand_fn_add_inputs: Optional[bool]\n    ) -> bool:\n        \"\"\"\n        Test correctness of op_type implementation against a grouped gemm\n        reference implementation.\n        \"\"\"\n        seq_lens_cpu = self.seq_lens.to(device=\"cpu\")\n        prompt_lora_mapping_cpu = self.prompt_lora_mapping.to(device=\"cpu\")\n        ref_output = self.output.clone()\n\n        self.output.zero_()\n        op_type.bench_fn()(**self.bench_fn_kwargs(op_type, expand_fn_add_inputs))\n\n        op_type.run_ref_group_gemm(\n            ref_output,\n            self.input,\n            self.lora_weights_lst,\n            seq_lens_cpu=seq_lens_cpu,\n            prompt_lora_mapping_cpu=prompt_lora_mapping_cpu,\n            scaling=1.0,\n            add_inputs=expand_fn_add_inputs,\n        )\n\n        rtol, atol = {\n            torch.float16: (6e-2, 6e-2),\n            torch.bfloat16: (6e-2, 6e-2),\n            torch.float32: (1e-2, 1e-2),\n        }[self.output.dtype]\n\n        return torch.allclose(ref_output, self.output, rtol=rtol, atol=atol)\n\n\ndef bench_optype(\n    ctx: BenchmarkContext,\n    arg_pool_size: int,\n    op_type: OpType,\n    cuda_graph_nops: Optional[int] = None,\n    expand_fn_add_inputs: Optional[bool] = None,\n    test_correctness: bool = False,\n) -> TMeasurement:\n    assert arg_pool_size >= 1\n    if op_type.is_shrink_fn():\n        assert expand_fn_add_inputs is None\n    else:\n        assert expand_fn_add_inputs is not None\n\n    # BenchmarkContext -> BenchmarkTensors\n    bench_tensors: list[BenchmarkTensors] = [\n        BenchmarkTensors.make(ctx, op_type) for _ in range(arg_pool_size)\n    ]\n    for bt in bench_tensors:\n        bt.sanity_check()\n\n    # Test correctness of our implementation.\n    if test_correctness:\n        assert all(\n            [bt.test_correctness(op_type, expand_fn_add_inputs) for bt in bench_tensors]\n        )\n\n    # BenchmarkTensors -> dict (kwargs)\n    kwargs_list = [\n        bt.bench_fn_kwargs(op_type, add_inputs=expand_fn_add_inputs)\n        for bt in bench_tensors\n    ]\n\n    # Clear LoRA optimization hash-maps.\n    _LORA_A_PTR_DICT.clear()\n    _LORA_B_PTR_DICT.clear()\n    # Run bench function so that _LORA_A_PTR_DICT and _LORA_B_PTR_DICT are setup\n    for kwargs in kwargs_list:\n        op_type.bench_fn()(**kwargs)\n    torch.cuda.synchronize()\n\n    # Merge into a single kwargs and qualify arguments as ArgPool\n    kwargs = {k: ArgPool([]) for k in kwargs_list[0]}\n    for _kwargs in kwargs_list:\n        for k, v in _kwargs.items():\n            kwargs[k].values.append(v)\n\n    describe_args = (\n        f\"add_inputs={expand_fn_add_inputs}\" if expand_fn_add_inputs is not None else \"\"\n    )\n    description = f\"{op_type.name}({describe_args}) ({bench_tensors[0].io_types()})\"\n\n    cuda_graph_params = None\n    if cuda_graph_nops:\n        cuda_graph_params = CudaGraphBenchParams(cuda_graph_nops)\n    timer = None\n    with Bench(\n        cuda_graph_params,\n        ctx.bench_label(),\n        ctx.bench_sublabel(op_type),\n        description,\n        op_type.bench_fn(),\n        **kwargs,\n    ) as bench:\n        timer = bench.run()\n    return timer\n\n\ndef bench_torch_mm(\n    ctx: BenchmarkContext,\n    arg_pool_size: int,\n    op_type: OpType,\n    cuda_graph_nops: Optional[int] = None,\n) -> TMeasurement:\n    \"\"\"\n    Benchmark basic torch.mm as a roofline.\n\n    When all the input tokens have the same LoRA ID, the LoRA kernels are just\n    a matmul. This torch.mm benchmark serves as a roofline for that case.\n\n    input op_type is used in determining the m, k, n dimensions for the matmul.\n    \"\"\"\n\n    batch_size, hidden_size, lora_rank, seq_length, dtype = (\n        ctx.batch_size,\n        ctx.hidden_size,\n        ctx.lora_rank,\n        ctx.seq_length,\n        ctx.dtype,\n    )\n\n    m, k, n = op_type.mkn(batch_size, seq_length, hidden_size, lora_rank)\n    # For a fairer comparison.\n    n = n * ctx.num_slices\n\n    # Get matmul input and output tensors for A x B = C\n    As, Bs, Cs = [], [], []\n    for _ in range(arg_pool_size):\n        As.append(torch.rand((m, k), dtype=dtype).to(\"cuda\"))\n        Bs.append(torch.rand((n, k), dtype=dtype).to(\"cuda\").t())\n        Cs.append(torch.rand((m, n), dtype=dtype).to(\"cuda\"))\n\n    # Make torch.mm kwargs\n    mm_kwargs = {\"input\": ArgPool(As), \"mat2\": ArgPool(Bs), \"out\": ArgPool(Cs)}\n\n    description = (\n        f\"single-lora roofline using torch.mm ({dtype_to_str(dtype)}\"\n        f\"x{dtype_to_str(dtype)}\"\n        f\"=>{dtype_to_str(dtype)})\"\n    )\n    cuda_graph_params = None\n    if cuda_graph_nops:\n        cuda_graph_params = CudaGraphBenchParams(cuda_graph_nops)\n    with Bench(\n        cuda_graph_params,\n        ctx.bench_label(),\n        ctx.bench_sublabel(op_type),\n        description,\n        torch.mm,\n        **mm_kwargs,\n    ) as bench:\n        return bench.run()\n\n\n# runner\ndef use_cuda_graph_recommendation() -> str:\n    return \"\"\"\n            Triton kernels have a significant launch overhead with\n            launched directly via python. This overhead is more noticeable\n            for small the problem sizes. For these cases, it is recommended\n            to use the script with `--cuda-graph-nops N` to benchmark N\n            consecutive invocations of the benchmarking operations from \n            inside a CUDA Graph. Note that the returned measurement is for N \n            invocations of the operation.\n            \"\"\"\n\n\ndef print_timers(timers: list[TMeasurement], args: Optional[argparse.Namespace] = None):\n    compare = TBenchmark.Compare(timers)\n    compare.print()\n\n    if args and args.cuda_graph_nops:\n        print(\n            f\"Note",
+      "docstring": "",
+      "line": 557
+    },
+    {
+      "name": "run",
+      "kind": "function",
+      "signature": "def run(args: argparse.Namespace, bench_ctxs: list[BenchmarkContext])",
+      "docstring": "",
+      "line": 763
+    },
+    {
+      "name": "as_benchmark_contexts",
+      "kind": "function",
+      "signature": "def as_benchmark_contexts(\n    hidden_sizes: list[int], lora_ranks: list[int], args: argparse.Namespace\n) -> list[BenchmarkContext]:\n    ctxs: list[BenchmarkContext] = []\n    for batch_size, hidden_size, lora_rank, num_loras, sort_by_lora_id in product(  # noqa\n        args.batch_sizes,\n        list(hidden_sizes),\n        lora_ranks,\n        args.num_loras,\n        args.sort_by_lora_id,\n    ):\n        ctxs.append(\n            BenchmarkContext(\n                batch_size=batch_size,\n                hidden_size=hidden_size,\n                lora_rank=lora_rank,\n                num_loras=num_loras,\n                num_active_loras=args.num_active_loras\n                if args.num_active_loras\n                else num_loras,\n                # To be filled based on the OpType to benchmark\n                seq_length=None,\n                sort_by_lora_id=sort_by_lora_id,\n                dtype=args.dtype,\n                # To be filled based on the OpType to benchmark\n                num_slices=None,\n            )\n        )\n\n    return ctxs\n\n\ndef run_list_bench(args: argparse.Namespace):\n    print(args)\n\n    print(\n        \"List bench",
+      "docstring": "",
+      "line": 823
+    },
+    {
+      "name": "run_range_bench",
+      "kind": "function",
+      "signature": "def run_range_bench(args: argparse.Namespace)",
+      "docstring": "",
+      "line": 872
+    },
+    {
+      "name": "run_model_bench",
+      "kind": "function",
+      "signature": "def run_model_bench(args: argparse.Namespace)",
+      "docstring": "",
+      "line": 896
+    },
+    {
+      "name": "hidden_sizes_from_model",
+      "kind": "function",
+      "signature": "def hidden_sizes_from_model(model: str, tp_size: int) -> set[int]:\n        hidden_sizes = set()\n        for KN, tp_split_dim in WEIGHT_SHAPES[model]:\n            KN[tp_split_dim] = KN[tp_split_dim] // tp_size\n            hidden_sizes.add(KN[1])\n        return hidden_sizes\n\n    # Get all hidden sizes\n    hidden_sizes: set[int] = set()\n    for model_name, tp_size in product(args.models, args.tp_sizes):\n        hidden_sizes = hidden_sizes.union(hidden_sizes_from_model(model_name, tp_size))\n\n    print(f\"Model bench",
+      "docstring": "",
+      "line": 899
+    },
+    {
+      "name": "to_torch_dtype",
+      "kind": "function",
+      "signature": "def to_torch_dtype(dt)",
+      "docstring": "",
+      "line": 923
+    },
+    {
+      "name": "get_bool",
+      "kind": "function",
+      "signature": "def get_bool(s: str) -> bool:\n        return s.lower() in [\"true\", \"1\"]\n\n    def add_common_command_args(p: argparse.ArgumentParser):\n        p.add_argument(\n            \"--dtype\",\n            type=to_torch_dtype,\n            required=True,\n            help=\"Available options are ['torch.float16', 'torch.bfloat16']\",\n        )\n\n        p.add_argument(\n            \"--arg-pool-size\",\n            type=int,\n            default=32,\n            help=\"Run profiles with a pool of input/output/meta tensors instead\"\n            \"of simply reusing the same tensors for all runs. A bigger arg-pool\"\n            \"mitigates hardware caching effects during benchmarking.\",\n        )\n\n        p.add_argument(\n            \"--cuda-graph-nops\",\n            type=int,\n            help=(\n                \"when set profiling is done using cudagraph, \"\n                \"with the given number of operations in a graph.\"\n                \"Note that the measurement returned is the time \"\n                \"taken for N consecutive executions of the benchmarking \"\n                \"functions, where N is the value of this argument.\"\n            ),\n        )\n        p.add_argument(\"--num-loras\", nargs=\"+\", type=int, default=DEFAULT_NUM_LORAS)\n        p.add_argument(\n            \"--num-active-loras\",\n            type=int,\n            default=None,\n            help=\"Active LoRAs. When None, all LoRAs are active\",\n        )\n        p.add_argument(\n            \"--sort-by-lora-id\",\n            nargs=\"+\",\n            type=get_bool,\n            default=DEFAULT_SORT_BY_LORA_IDS,\n        )\n        p.add_argument(\n            \"--op-types\", nargs=\"+\", type=OpType.from_str, default=list(OpType)\n        )\n        p.add_argument(\n            \"--seq-lengths\", nargs=\"+\", type=int, default=DEFAULT_SEQ_LENGTHS\n        )\n        p.add_argument(\n            \"--batch-sizes\", nargs=\"+\", type=int, default=DEFAULT_BATCH_SIZES\n        )\n        p.add_argument(\n            \"--expand-fn-add-inputs\",\n            nargs=\"+\",\n            type=get_bool,\n            default=DEFAULT_EXPAND_FN_ADD_INPUTS,\n        )\n        p.add_argument(\n            \"-o\",\n            \"--output-directory\",\n            type=str,\n            help=(\n                \"Output directory to store a the list of benchmarking\"\n                \"TMeasurement objects as a pickle file\"\n            ),\n        )\n\n        p.add_argument(\n            \"--test-correctness\",\n            action=\"store_true\",\n            help=(\n                \"When enabled, the benchmarking functions are tested\"\n                \"for correctness before the actual benchmarking\"\n            ),\n        )\n\n    parser = FlexibleArgumentParser(\n        description=f\"\"\"\nBenchmark LoRA kernels:\n    {use_cuda_graph_recommendation()}\n\n    list_bench example:\n        python3 benchmarks/kernels/benchmark_lora.py list_bench --arg-pool-size 32 --batch-sizes 1 16 32 --dtype torch.float16 --hidden-sizes 2048 --lora-ranks 16 --num-loras 1 4 --op-types lora_shrink lora_expand --seq-lengths 1 16 --sort-by-lora-id 1 --cuda-graph-nops 32\n\n    model_bench example:\n        python3 benchmarks/kernels/benchmark_lora.py model_bench --models meta-llama/Llama-3-8b  --arg-pool-size 32 --batch-sizes 1 16 32 --dtype torch.float16  --lora-ranks 16 --num-loras 1 4 --op-types lora_shrink lora_expand --seq-lengths 1 16 --sort-by-lora-id 1 --cuda-graph-nops 32 \n\n    range_bench example:\n        python3 benchmarks/kernels/benchmark_lora.py range_bench  --arg-pool-size 32 --batch-sizes 1 16 32 --dtype torch.float16   --num-loras 1 4 --op-types lora_shrink lora_expand --seq-lengths 1 16 --sort-by-lora-id 1 --cuda-graph-nops 32 --hidden-sizes-start 1024 --hidden-sizes-end 4096 --hidden-sizes-increment 1024 --lora-ranks-start 8 --lora-ranks-end 24 --lora-ranks-increment 8 \n            \"\"\",  # noqa",
+      "docstring": "",
+      "line": 930
+    },
+    {
+      "name": "OpType",
+      "kind": "class",
+      "signature": "class OpType(Enum)",
+      "docstring": "LoRA Ops to benchmark and its properties.",
+      "line": 186
+    },
+    {
+      "name": "BenchmarkContext",
+      "kind": "class",
+      "signature": "class BenchmarkContext",
+      "docstring": "LoRA benchmark context",
+      "line": 306
+    },
+    {
+      "name": "BenchmarkTensors",
+      "kind": "class",
+      "signature": "class BenchmarkTensors",
+      "docstring": "Input/Output tensors used for benchmarks",
+      "line": 352
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "argparse",
+      "copy",
+      "dataclasses",
+      "enum",
+      "itertools",
+      "json",
+      "pathlib",
+      "pickle",
+      "time",
+      "torch",
+      "typing",
+      "utils",
+      "vllm",
+      "weight_shapes"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 24,
+    "public_symbols": 24,
+    "classes": 3,
+    "functions": 12,
+    "internal_deps": 0,
+    "external_deps": 14,
+    "depth": 0,
+    "complexity_sum": 80
+  },
+  "tags": [
+    "oop",
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/kernels/benchmark_lora.py"
+}

@@ -279,9 +279,9 @@ Complete path from math to production:
 
 Latest tech trends and industry insights:
 
-- [LLM Architectures 2026](05_大模型/05_LLM架构/05_LLM架构.md) - GPT-5.2, Claude 4.5, reasoning models
+- [LLM Architectures 2026](05_大模型/04_LLM架构/05_LLM架构.md) - GPT-5.2, Claude 4.5, reasoning models
 - [AI Hardware 2026](01_数学基础/10_AI硬件/01_AI硬件_2026.md) - H100/H200/B200 comparison
-- [PEFT Fine-tuning 2026](05_大模型/07_微调技术/09_PEFT_2026.md) - LoRA/QLoRA/DoRA, 70B on single GPU
+- [PEFT Fine-tuning 2026](05_大模型/06_微调技术/09_PEFT_2026.md) - LoRA/QLoRA/DoRA, 70B on single GPU
 - [Advanced RAG](./14_RAG系统/) - Hybrid search, Agentic RAG
 - [AI Coding Assistants](./16_编程/) - Cursor, Claude Code, Devin
 - [Vibe Coding Methodology](./16_编程/) - Natural language driven dev, DGRV loop, production practices
@@ -346,7 +346,7 @@ Optimized for AI Agent consumption:
 
 **Recommended Agent Usage**:
 1. Import entire `docs/` directory as knowledge base
-2. Use file paths for context reference (e.g., `05_大模型/05_LLM架构/05_LLM架构.md`)
+2. Use file paths for context reference (e.g., `05_大模型/04_LLM架构/05_LLM架构.md`)
 3. Combine with chapter READMEs for quick content location
 
 ---

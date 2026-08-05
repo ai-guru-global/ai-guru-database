@@ -1,0 +1,39 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.moe.grouped_mm_c3x.cuh",
+  "title": "Grouped Mm C3X",
+  "type": "module",
+  "summary": "Module providing sizeof",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "sizeof",
+      "kind": "function",
+      "signature": "sizeof(typename CollectiveEpilogue::SharedStorage);\n  using Stages = typename cutlass::gemm::collective::StageCountAutoCarveout<\n      static_cast<int>(CEStorageSize)>;\n\n  using CollectiveMainloop =\n      typename cutlass::gemm::collective::CollectiveBuilder<\n          ArchTag, OperatorClass, ElementAB, LayoutA*, AlignmentAB, ElementAB,\n          LayoutB*, AlignmentAB, ElementAccumulator, TileShape, ClusterShape,\n          Stages, KernelSchedule>::CollectiveOp;\n\n  using KernelType = enable_sm90_only<cutlass::gemm::kernel::GemmUniversal<\n      ProblemShape, CollectiveMainloop, CollectiveEpilogue>>;\n\n  struct GemmKernel : public KernelType {};\n};\n\ntemplate <typename Gemm>\nvoid cutlass_group_gemm_caller(\n    torch::Tensor& out_tensors, torch::Tensor const& a_tensors,\n    torch::Tensor const& b_tensors, torch::Tensor const& a_scales,\n    torch::Tensor const& b_scales, torch::Tensor const& expert_offsets,\n    torch::Tensor const& problem_sizes, torch::Tensor const& a_strides,\n    torch::Tensor const& b_strides, torch::Tensor const& c_strides,\n    bool per_act_token, bool per_out_ch)",
+      "docstring": "",
+      "line": 56
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cutlass",
+      "cutlass_extensions",
+      "get_group_starts"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/moe/grouped_mm_c3x.cuh"
+}

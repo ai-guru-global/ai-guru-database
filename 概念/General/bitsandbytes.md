@@ -224,4 +224,4 @@ optimizer = bnb.optim.PagedAdam8bit(
 - [[概念/Training/nf4|NF4]] — bitsandbytes 实现的 4bit 数据类型
 - [[概念/Inference/quantization|量化]] — 量化技术总览
 - [[概念/Training/lora-peft|LoRA/PEFT]] — 配合 bitsandbytes 的参数高效微调
-- [[05_大模型/07_微调技术/09_PEFT_2026|PEFT 2026 完全指南]] — bitsandbytes 在 PEFT 中的应用
+- [[05_大模型/06_微调技术/09_PEFT_2026|PEFT 2026 完全指南]] — bitsandbytes 在 PEFT 中的应用

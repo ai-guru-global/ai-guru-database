@@ -12,8 +12,8 @@ relationships:
   - target: "概念/rag-systems"
     type: complements
 sources:
-  - 05_大模型/08_提示工程/Prompt_Engineering.md
-  - 05_大模型/09_推理模型/
+  - 05_大模型/07_提示工程/Prompt_Engineering.md
+  - 05_大模型/08_推理模型/
 summary: "CoT(思维链)引导模型'一步步想',ReAct(推理+行动)让模型边想边查工具,ToT(思维树)支持多路径探索。这些推理时 Prompt 技巧让 LLM 在不动参数的情况下解锁更复杂的推理能力,是 Agent 和 Reasoning Model 的核心技术基础。"
 provenance:
   extracted: 0.75
@@ -240,8 +240,8 @@ CoT 是单路径推理,ToT 让模型**同时探索多条推理路径**,用评估
 - [[概念/reasoning-models]] — 推理模型(o1/o3/R1)
 - [[概念/ai-agents]] — AI Agent(ReAct 是 Agent 核心)
 - [[概念/rag-systems]] — RAG(ReAct 决定何时检索)
-- [[05_大模型/08_提示工程]] — Prompt 详解
-- [[05_大模型/09_推理模型/README]] — Reasoning Models 详解
+- [[05_大模型/07_提示工程]] — Prompt 详解
+- [[05_大模型/08_推理模型/README]] — Reasoning Models 详解
 - [[概念/reflexion]] — 自我反思
 
 ---

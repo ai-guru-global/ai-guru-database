@@ -176,11 +176,11 @@ Mostaque 的三大核心论点：
 
 | 阵营 | 代表 | 立场 |
 |------|------|------|
-| 激进开源 | Mostaque、[[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]] | 全面开源 |
-| 谨慎开源 | [[19_业界观点/02_Andrej_Karpathy_卡帕西/03_索引|Karpathy]] | 实用主义 |
-| 分层闭源 | [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] | 前沿闭源 |
+| 激进开源 | Mostaque、[[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]] | 全面开源 |
+| 谨慎开源 | [[19_业界观点/02_Andrej_Karpathy_卡帕西/INDEX|Karpathy]] | 实用主义 |
+| 分层闭源 | [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] | 前沿闭源 |
 | 全面闭源 | 传统安全派 | 反对开源 |
-| 中国开源 | [[19_业界观点/27_Wenfeng_Liang_梁文锋/02_索引|梁文锋]] | 全面开源 |
+| 中国开源 | [[19_业界观点/27_Wenfeng_Liang_梁文锋/INDEX|梁文锋]] | 全面开源 |
 
 ### 关于去中心化
 
@@ -229,7 +229,7 @@ Mostaque 的边缘 AI 预测：
 
 ### 与其他开源 AI 倡导者的对比
 
-| 维度 | Mostaque | [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]] | [[19_业界观点/27_Wenfeng_Liang_梁文锋/02_索引|梁文锋]] |
+| 维度 | Mostaque | [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]] | [[19_业界观点/27_Wenfeng_Liang_梁文锋/INDEX|梁文锋]] |
 |------|----------|---------|---------|
 | 阵营 | 激进开源 | 激进开源 | 全面开源 |
 | 平台 | Stability AI（前） | Meta AI | DeepSeek |
@@ -349,11 +349,11 @@ Mostaque 通过 Stable Diffusion 对行业产生深远影响：
 
 | 人物 | 关系 | 2026 互动 |
 |------|------|-----------|
-| [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]] | 开源同盟 | 立场一致 |
-| [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] | 闭源对手 | 路线对立 |
-| [[19_业界观点/27_Wenfeng_Liang_梁文锋/02_索引|梁文锋]] | 开源共鸣 | 互相欣赏 |
-| [[19_业界观点/02_Andrej_Karpathy_卡帕西/03_索引|Karpathy]] | 开源同行 | 立场接近 |
-| [[19_业界观点/18_Mira_Murati_穆拉蒂/02_索引|Murati]] | 生成 AI 同行 | DALL·E vs SD |
+| [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]] | 开源同盟 | 立场一致 |
+| [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] | 闭源对手 | 路线对立 |
+| [[19_业界观点/27_Wenfeng_Liang_梁文锋/INDEX|梁文锋]] | 开源共鸣 | 互相欣赏 |
+| [[19_业界观点/02_Andrej_Karpathy_卡帕西/INDEX|Karpathy]] | 开源同行 | 立场接近 |
+| [[19_业界观点/18_Mira_Murati_穆拉蒂/INDEX|Murati]] | 生成 AI 同行 | DALL·E vs SD |
 
 ### Mostaque 在 2026 年的活动
 

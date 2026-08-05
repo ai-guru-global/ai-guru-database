@@ -24,7 +24,7 @@ name_zh: "混沌工程专题"
 
 - [[13_运维/index|运维首页]]
 - [[13_运维/03_故障应急/index|Incident Response]]
-- [[13_运维/06_可观测性/01_索引|Observability]]
+- [[13_运维/06_可观测性/INDEX|Observability]]
 
 ## 专题深度解析
 

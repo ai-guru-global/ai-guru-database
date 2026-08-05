@@ -1,0 +1,93 @@
+{
+  "id": "csrc.cpu.pos_encoding",
+  "title": "Pos Encoding",
+  "type": "module",
+  "summary": "Module providing rotary_embedding_impl, scalar_vec_t::get_elem_num, cos, compute_loop, compute_loop and 4 more symbols",
+  "details": "Contains 9 functions/methods",
+  "symbols": [
+    {
+      "name": "rotary_embedding_impl",
+      "kind": "function",
+      "signature": "rotary_embedding_impl(\n    const int64_t* __restrict__ positions,  // [batch_size, seq_len] or\n                                            // [num_tokens]\n    scalar_t* __restrict__ query,           /// [batch_size, seq_len, num_heads,\n                                   /// head_size] or [num_tokens, num_heads,\n                                   /// head_size]\n    scalar_t* __restrict__ key,  // nullptr (optional) or\n                                 // [batch_size, seq_len, num_kv_heads,\n                                 // head_size] or [num_tokens, num_kv_heads,\n                                 // head_size]\n    const scalar_t* __restrict__ cos_sin_cache,  // [max_position, 2, rot_dim //\n                                                 // 2]\n    const int rot_dim, const int64_t query_stride, const int64_t key_stride,\n    const int num_heads, const int num_kv_heads, const int head_size,\n    const int num_tokens)",
+      "docstring": "",
+      "line": 4
+    },
+    {
+      "name": "scalar_vec_t::get_elem_num",
+      "kind": "function",
+      "signature": "scalar_vec_t::get_elem_num();\n\n  const int embed_dim = rot_dim / 2;\n  bool flag = (embed_dim % VEC_ELEM_NUM == 0);\n  const int loop_upper = flag ? embed_dim : embed_dim - VEC_ELEM_NUM;\n\n  auto compute_loop = &",
+      "docstring": "",
+      "line": 22
+    },
+    {
+      "name": "cos",
+      "kind": "function",
+      "signature": "cos(cache_ptr + x_index);\n      const scalar_vec_t sin(cache_ptr + y_index);\n\n      const scalar_vec_t q_x(qk + out_x);\n      const scalar_vec_t q_y(qk + out_y);\n\n      vec_op::FP32Vec8 fp32_cos(cos);\n      vec_op::FP32Vec8 fp32_sin(sin);\n\n      vec_op::FP32Vec8 fp32_q_x(q_x);\n      vec_op::FP32Vec8 fp32_q_y(q_y);\n\n      auto out1 = fp32_q_x * fp32_cos - fp32_q_y * fp32_sin;\n      scalar_vec_t(out1).save(qk + out_x);\n\n      auto out2 = fp32_q_y * fp32_cos + fp32_q_x * fp32_sin;\n      scalar_vec_t(out2).save(qk + out_y);\n    }\n    if (!flag)",
+      "docstring": "",
+      "line": 37
+    },
+    {
+      "name": "compute_loop",
+      "kind": "function",
+      "signature": "compute_loop(token_head, cache_ptr, query);\n    }\n\n    if (key != nullptr)",
+      "docstring": "",
+      "line": 85
+    },
+    {
+      "name": "compute_loop",
+      "kind": "function",
+      "signature": "compute_loop(token_head, cache_ptr, key);\n      }\n    }\n  }\n}\n\ntemplate <typename scalar_t>\nvoid rotary_embedding_gptj_impl(\n    const int64_t* __restrict__ positions,  // [batch_size, seq_len] or\n                                            // [num_tokens]\n    scalar_t* __restrict__ query,           /// [batch_size, seq_len, num_heads,\n                                   /// head_size] or [num_tokens, num_heads,\n                                   /// head_size]\n    scalar_t* __restrict__ key,  // nullptr (optional) or\n                                 // [batch_size, seq_len, num_kv_heads,\n                                 // head_size] or [num_tokens, num_kv_heads,\n                                 // head_size]\n    const scalar_t* __restrict__ cos_sin_cache,  // [max_position, 2, rot_dim //\n                                                 // 2]\n    const int rot_dim, const int64_t query_stride, const int64_t key_stride,\n    const int num_heads, const int num_kv_heads, const int head_size,\n    const int num_tokens)",
+      "docstring": "",
+      "line": 93
+    },
+    {
+      "name": "collapse",
+      "kind": "function",
+      "signature": "collapse(2)\n  for (int token_idx = 0; token_idx < num_tokens; ++token_idx)",
+      "docstring": "",
+      "line": 118
+    },
+    {
+      "name": "collapse",
+      "kind": "function",
+      "signature": "collapse(2)\n  for (int token_idx = 0; token_idx < num_tokens; ++token_idx)",
+      "docstring": "",
+      "line": 150
+    },
+    {
+      "name": "rotary_embedding",
+      "kind": "function",
+      "signature": "rotary_embedding(torch::Tensor& positions, torch::Tensor& query,\n                      std::optional<torch::Tensor> key, int64_t head_size,\n                      torch::Tensor& cos_sin_cache, bool is_neox)",
+      "docstring": "",
+      "line": 177
+    },
+    {
+      "name": "numel",
+      "kind": "function",
+      "signature": "numel();\n  int rot_dim = cos_sin_cache.size(1);\n  int num_heads = query.size(-1) / head_size;\n  int num_kv_heads = key.has_value() ? key->size(-1) / head_size : num_heads;\n  int64_t key_stride = key.has_value() ? key->stride(-2) : 0;\n  int64_t query_stride = query.stride(-2);\n\n  VLLM_DISPATCH_FLOATING_TYPES(\n      query.scalar_type(), \"rotary_embedding_impl\", [&] {\n        CPU_KERNEL_GUARD_IN(rotary_embedding_impl)\n        if (is_neox)",
+      "docstring": "",
+      "line": 182
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cpu_types"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 9,
+    "public_symbols": 9,
+    "classes": 0,
+    "functions": 9,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cpu/pos_encoding.cpp"
+}

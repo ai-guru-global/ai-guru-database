@@ -50,7 +50,7 @@ name_zh: "NLP 工程师学习路径"
 |------|---------|---------|
 | Transformer 架构 | Self-Attention, 位置编码 | [[概念/LLM/transformer-architecture]] |
 | BERT 系列 | 预训练、微调 | [[Transformer_Deep_Dive]] |
-| GPT 系列 | 自回归生成 | [[05_大模型/05_LLM架构/04_LLM_架构_Evolution]] |
+| GPT 系列 | 自回归生成 | [[05_大模型/04_LLM架构/04_LLM_架构_Evolution]] |
 | 微调技术 | LoRA, QLoRA, PEFT | [[概念/Training/fine-tuning-techniques]] |
 | 分布式训练 | DeepSpeed, FSDP | [[07_模型训练/04_分布式训练/03_分布式训练_2026]] |
 
@@ -71,7 +71,7 @@ name_zh: "NLP 工程师学习路径"
 | 对话系统 | 多轮对话、状态管理 | 实战项目 |
 | 机器翻译 | Seq2Seq, 多语言模型 | 实战项目 |
 | 语音AI | ASR, TTS | [[概念/General/speech-audio-ai]] |
-| 中文NLP | 中文分词、中文LLM | [[05_大模型/15_中国LLM生态/README]] |
+| 中文NLP | 中文分词、中文LLM | [[05_大模型/14_中国LLM生态/README]] |
 
 ---
 

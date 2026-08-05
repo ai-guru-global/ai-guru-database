@@ -1,0 +1,142 @@
+{
+  "id": "csrc.quantization.aqlm.gemm_kernels.cu",
+  "title": "Gemm Kernels",
+  "type": "module",
+  "summary": "Module providing 0, __syncthreads, volatile, __syncthreads, volatile and 5 more symbols",
+  "details": "Contains 26 functions/methods",
+  "symbols": [
+    {
+      "name": "0",
+      "kind": "function",
+      "signature": "0(the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *         http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n\n#include <cuda.h>\n#include <cuda_fp16.h>\n#include <cuda_runtime.h>\n#include <torch/all.h>\n#include <c10/cuda/CUDAStream.h>\n#include <c10/cuda/CUDAGuard.h>\n\n#include <iostream>\n#include <cstdlib>\n\nnamespace vllm {\nnamespace aqlm {\n\n__global__ void Code1x16MatVec(\n    const int4* __restrict__ A, const int4* __restrict__ B,\n    int4* __restrict__ C, const int4* __restrict__ codebook, const int prob_m,\n    const int prob_k,\n    const int4 codebook_a_sizes,  // cumulative sizes of A spanning each\n                                  // codebook, at most 3 long.\n    const int codebook_stride     // as int4.\n)",
+      "docstring": "",
+      "line": 5
+    },
+    {
+      "name": "__syncthreads",
+      "kind": "function",
+      "signature": "__syncthreads();\n    for (int i = threadIdx.x; i < 32 * 8; i += blockDim.x)",
+      "docstring": "",
+      "line": 63
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\"ld.cg.global.v4.u32 {%0, %1, %2, %3}, [%4];\"\n                     : \"=r\"(dec[0]), \"=r\"(dec[1]), \"=r\"(dec[2]), \"=r\"(dec[3])\n                     : \"l\"((void*)&codebook[enc[i]]));\n        half2* a = reinterpret_cast<half2*>(&dec);\n        half2* b = reinterpret_cast<half2*>(&sh_b[b_sh_rd]);\n        half2 res2 = {};\n#pragma unroll\n        for (int j = 0; j < 4; j++) res2 = __hfma2(a[j], b[j], res2);\n        res += __half2float(res2.x) + __half2float(res2.y);\n        b_sh_rd++;\n      }\n      a_gl_rd += 32;\n    }\n  }\n\n  if (pred)",
+      "docstring": "",
+      "line": 78
+    },
+    {
+      "name": "__syncthreads",
+      "kind": "function",
+      "signature": "__syncthreads();\n    for (int i = threadIdx.x; i < 32 * 8; i += blockDim.x)",
+      "docstring": "",
+      "line": 148
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\"ld.cg.global.v4.u32 {%0, %1, %2, %3}, [%4];\"\n                     : \"=r\"(dec[0]), \"=r\"(dec[1]), \"=r\"(dec[2]), \"=r\"(dec[3])\n                     : \"l\"((void*)&codebook[enc[i]]));\n\n        C[a_gl_rd * 8 + i] = chunk;\n      }\n    }\n    a_gl_rd += 32;\n  }\n}\n\n__global__ void Code2x8Dequant(\n    const int4* __restrict__ A, int4* __restrict__ C,\n    const int4* __restrict__ codebook, int prob_m, int prob_k,\n    const int4\n        codebook_a_sizes,  // cumulative sizes of A spanning each codebook, at\n                           // most 3 long, corresponds to cols.\n    const int codebook_stride  // as int4\n)",
+      "docstring": "",
+      "line": 222
+    },
+    {
+      "name": "return",
+      "kind": "function",
+      "signature": "return(a + b - 1) / b; }\n\nconst int THREAD_M = 16;\n\nvoid code1x16_matvec_cuda(const void* __restrict__ A,\n                          const void* __restrict__ B, void* __restrict__ C,\n                          const void* __restrict__ codebook, int prob_m,\n                          int prob_k, const int4 codebook_a_sizes,\n                          const int codebook_stride)",
+      "docstring": "",
+      "line": 297
+    },
+    {
+      "name": "cudaDeviceGetAttribute",
+      "kind": "function",
+      "signature": "cudaDeviceGetAttribute(&sms, cudaDevAttrMultiProcessorCount, 0);\n  int waves = 0;\n  int thread_m;\n  do {\n    waves++;\n    thread_m = ceildiv(prob_m, waves * sms);\n  } while (thread_m > THREAD_M);\n\n  int blocks = ceildiv(prob_m, thread_m);\n  int threads = 32 * thread_m;\n  cudaStream_t stream = at::cuda::getCurrentCUDAStream().stream();\n  Code1x16MatVec<<<blocks, threads, 16 * 32 * 9, stream>>>(\n      (const int4*)A, (const int4*)B, (int4*)C, (const int4*)codebook, prob_m,\n      prob_k, codebook_a_sizes, codebook_stride);\n}\n\nvoid code2x8_matvec_cuda(const void* __restrict__ A, const void* __restrict__ B,\n                         void* __restrict__ C,\n                         const void* __restrict__ codebook, int prob_m,\n                         int prob_k, const int4 codebook_a_sizes,\n                         const int codebook_stride)",
+      "docstring": "",
+      "line": 306
+    },
+    {
+      "name": "cudaDeviceGetAttribute",
+      "kind": "function",
+      "signature": "cudaDeviceGetAttribute(&sms, cudaDevAttrMultiProcessorCount, 0);\n  int waves = 0;\n  int thread_m;\n  do {\n    waves++;\n    thread_m = ceildiv(prob_m, waves * sms);\n  } while (thread_m > THREAD_M);\n\n  int blocks = ceildiv(prob_m, thread_m);\n  int threads = 32 * thread_m;\n  int shared = 16 * (2 * 256 * 8 + 32 * 9);\n  cudaFuncSetAttribute(Code2x8MatVec,\n                       cudaFuncAttributeMaxDynamicSharedMemorySize, shared);\n  cudaStream_t stream = at::cuda::getCurrentCUDAStream().stream();\n  Code2x8MatVec<<<blocks, threads, shared, stream>>>(\n      (const int4*)A, (const int4*)B, (int4*)C, (const int4*)codebook, prob_m,\n      prob_k, codebook_a_sizes, codebook_stride);\n}\n\nvoid code1x16_dequant_cuda(\n    const void* __restrict__ A, void* __restrict__ C,\n    const void* __restrict__ codebook, int prob_m, int prob_k,\n    const int4 codebook_a_sizes,  // cumulative sizes of A spanning each\n                                  // codebook, at most 3 long.\n    const int codebook_stride     // as int4.\n)",
+      "docstring": "",
+      "line": 328
+    },
+    {
+      "name": "cudaDeviceGetAttribute",
+      "kind": "function",
+      "signature": "cudaDeviceGetAttribute(&sms, cudaDevAttrMultiProcessorCount, 0);\n  int waves = 0;\n  int thread_m;\n  do {\n    waves++;\n    thread_m = ceildiv(prob_m, waves * sms);\n  } while (thread_m > THREAD_M);\n\n  int blocks = ceildiv(prob_m, thread_m);\n  int threads = 32 * thread_m;\n  cudaStream_t stream = at::cuda::getCurrentCUDAStream().stream();\n  Code1x16Dequant<<<blocks, threads, 0, stream>>>(\n      (const int4*)A, (int4*)C, (const int4*)codebook, prob_m, prob_k,\n      codebook_a_sizes,  // cumulative sizes of A spanning each codebook, at\n                         // most 3 long.\n      codebook_stride    // as int4.\n  );\n}\n\n// Dequantizes the code and codebook into weights.\nvoid code2x8_dequant_cuda(\n    const void* __restrict__ A, void* __restrict__ C,\n    const void* __restrict__ codebook, int prob_m, int prob_k,\n    const int4\n        codebook_a_sizes,  // cumulative sizes of A spanning each codebook, at\n                           // most 3 long, corresponds to cols.\n    const int codebook_stride  // as int4\n)",
+      "docstring": "",
+      "line": 355
+    },
+    {
+      "name": "cudaDeviceGetAttribute",
+      "kind": "function",
+      "signature": "cudaDeviceGetAttribute(&sms, cudaDevAttrMultiProcessorCount, 0);\n  int waves = 0;\n  int thread_m;\n  do {\n    waves++;\n    thread_m = ceildiv(prob_m, waves * sms);\n  } while (thread_m > THREAD_M);\n\n  int blocks = ceildiv(prob_m, thread_m);\n  int threads = 32 * thread_m;\n  int shared = 16 * (2 * 256 * 8 + 32 * 9);\n  cudaStream_t stream = at::cuda::getCurrentCUDAStream().stream();\n\n  cudaFuncSetAttribute(Code2x8Dequant,\n                       cudaFuncAttributeMaxDynamicSharedMemorySize, shared);\n  Code2x8Dequant<<<blocks, threads, shared, stream>>>(\n      (const int4*)A, (int4*)C, (const int4*)codebook, prob_m, prob_k,\n      codebook_a_sizes, codebook_stride);\n}\n\nint codebook_stride(const torch::Tensor& codebooks)",
+      "docstring": "",
+      "line": 384
+    },
+    {
+      "name": "stride",
+      "kind": "function",
+      "signature": "stride(0) * codebooks.element_size() / sizeof(int4);\n}\n\nvoid code1x16_matvec(\n    const torch::Tensor& A, const torch::Tensor& B, torch::Tensor& C,\n    const torch::Tensor& codebook,\n    const int4 codebook_a_sizes  // cumulative sizes of A spanning each\n                                 // codebook, at most 3 long.\n)",
+      "docstring": "",
+      "line": 406
+    },
+    {
+      "name": "device_guard",
+      "kind": "function",
+      "signature": "device_guard(device_of(A));\n  int prob_m = C.size(0);\n  int prob_k = B.size(0);\n\n  code1x16_matvec_cuda(A.data_ptr(), B.data_ptr(), C.data_ptr(),\n                       codebook.data_ptr(), prob_m, prob_k, codebook_a_sizes,\n                       codebook_stride(codebook));\n}\n\ntorch::Tensor code1x16_matmat(const torch::Tensor& input,\n                              const torch::Tensor& codes,\n                              const torch::Tensor& codebooks,\n                              const torch::Tensor& scales,\n                              const int4 codebook_a_sizes,\n                              const std::optional<torch::Tensor>& bias)",
+      "docstring": "",
+      "line": 414
+    },
+    {
+      "name": "sizes",
+      "kind": "function",
+      "signature": "sizes();\n  auto out_features = codes.size(0) * codebooks.size(2);\n  auto flat_input = input.reshape({-1, input.size(-1)});\n  auto flat_output = torch::empty(\n      {flat_input.size(0), out_features},\n      torch::TensorOptions().dtype(input.dtype()).device(input.device()));\n\n  for (int i = 0; i < flat_input.size(0); ++i)",
+      "docstring": "",
+      "line": 430
+    },
+    {
+      "name": "index",
+      "kind": "function",
+      "signature": "index({i});\n    auto output_vec = flat_output.index({i});\n    code1x16_matvec(codes.squeeze(2), input_vec, output_vec, codebooks,\n                    codebook_a_sizes);\n  }\n  flat_output *= scales.flatten().unsqueeze(0);\n\n  if (bias.has_value())",
+      "docstring": "",
+      "line": 438
+    },
+    {
+      "name": "unsqueeze",
+      "kind": "function",
+      "signature": "unsqueeze(0);\n  }\n\n  auto output_sizes = input_sizes.vec();\n  output_sizes.pop_back();\n  output_sizes.push_back(-1);\n  auto output = flat_output.reshape(output_sizes);\n  return output;\n}\n\nvoid code2x8_matvec(const torch::Tensor& A, const torch::Tensor& B,\n                    torch::Tensor& C, const torch::Tensor& codebook,\n                    const int4 codebook_a_sizes)",
+      "docstring": "",
+      "line": 446
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "c10",
+      "cstdlib",
+      "cuda",
+      "cuda_fp16",
+      "cuda_runtime",
+      "iostream",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 26,
+    "public_symbols": 26,
+    "classes": 0,
+    "functions": 26,
+    "internal_deps": 0,
+    "external_deps": 7,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/aqlm/gemm_kernels.cu"
+}

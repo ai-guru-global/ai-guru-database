@@ -1,0 +1,44 @@
+{
+  "id": "csrc.prepare_inputs.advance_step.cuh",
+  "title": "Advance Step",
+  "type": "module",
+  "summary": "Module providing div_ceil",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "div_ceil",
+      "kind": "function",
+      "signature": "div_ceil(int a, int b)",
+      "docstring": "",
+      "line": 15
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "c10",
+      "cuda",
+      "cuda_fp16",
+      "cuda_runtime",
+      "iostream",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 7,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/prepare_inputs/advance_step.cuh"
+}

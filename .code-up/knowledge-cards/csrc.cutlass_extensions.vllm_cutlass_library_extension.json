@@ -1,0 +1,47 @@
+{
+  "id": "csrc.cutlass_extensions.vllm_cutlass_library_extension",
+  "title": "Vllm Cutlass Library Extension",
+  "type": "module",
+  "summary": "Module providing VLLMDataType, MixedInputKernelScheduleType",
+  "details": "Contains 2 classes: VLLMDataType, MixedInputKernelScheduleType",
+  "symbols": [
+    {
+      "name": "VLLMDataType",
+      "kind": "class",
+      "signature": "class VLLMDataType(enum.Enum)",
+      "docstring": "",
+      "line": 14
+    },
+    {
+      "name": "MixedInputKernelScheduleType",
+      "kind": "class",
+      "signature": "class MixedInputKernelScheduleType(enum.Enum)",
+      "docstring": "",
+      "line": 19
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cutlass_library",
+      "enum",
+      "typing"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 2,
+    "public_symbols": 2,
+    "classes": 2,
+    "functions": 0,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "oop",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cutlass_extensions/vllm_cutlass_library_extension.py"
+}

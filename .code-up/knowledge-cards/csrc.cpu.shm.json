@@ -1,0 +1,139 @@
+{
+  "id": "csrc.cpu.shm",
+  "title": "Shm",
+  "type": "module",
+  "summary": "Module providing PER_THREAD_SHM_BUFFER_BYTES, static_assert, set_context, TORCH_CHECK, get_swizzled_rank and 5 more symbols",
+  "details": "Contains 2 classes: ThreadSHMStat, SHMManager. Contains 76 functions/methods",
+  "symbols": [
+    {
+      "name": "PER_THREAD_SHM_BUFFER_BYTES",
+      "kind": "function",
+      "signature": "PER_THREAD_SHM_BUFFER_BYTES(4 * 1024 * 1024)\n#define MIN_THREAD_PROCESS_SIZE (8 * 1024)\n#define MAX_P2P_SEND_TENSOR_NUM 8\n\ntemplate <typename scalar_t>\nstruct KernelVecType {\n  using scalar_vec_t = void;\n};\n\ntemplate <>\nstruct KernelVecType<float> {\n  using scalar_vec_t = vec_op::FP32Vec16;\n};\n\ntemplate <>\nstruct KernelVecType<c10::BFloat16> {\n  using scalar_vec_t = vec_op::BF16Vec16;\n};\n\ntemplate <>\nstruct KernelVecType<c10::Half> {\n  using scalar_vec_t = vec_op::FP16Vec16;\n};\n\nenum class ThreadSHMStat : char { THREAD_READY = 0, SHM_DATA_READY, DONE };\n\nstruct ThreadSHMContext {\n  volatile ThreadSHMStat thread_stats[MAX_SHM_RANK_NUM];\n  int thread_id;\n  int thread_num;\n  int rank;\n  int group_size;\n  size_t _spinning_count;\n  int swizzled_ranks[MAX_SHM_RANK_NUM];\n  void* thread_shm_ptrs[MAX_SHM_RANK_NUM];\n  ThreadSHMContext* shm_contexts[MAX_SHM_RANK_NUM];\n\n  ThreadSHMContext(const int thread_id, const int thread_num, const int rank,\n                   const int group_size, void* thread_shm_ptr)\n      : thread_id(thread_id),\n        thread_num(thread_num),\n        rank(rank),\n        group_size(group_size),\n        _spinning_count(0)",
+      "docstring": "",
+      "line": 11
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(sizeof(ThreadSHMContext) % 64 == 0);\n    TORCH_CHECK(group_size <= MAX_SHM_RANK_NUM);\n    TORCH_CHECK((size_t)this % 64 == 0);\n    TORCH_CHECK((size_t)thread_shm_ptr % 64 == 0);\n    for (int i = 0; i < MAX_SHM_RANK_NUM; ++i)",
+      "docstring": "",
+      "line": 54
+    },
+    {
+      "name": "set_context",
+      "kind": "function",
+      "signature": "set_context(rank, this, thread_shm_ptr);\n  }\n\n  void set_context(int rank, ThreadSHMContext* ptr, void* thread_shm_ptr)",
+      "docstring": "",
+      "line": 64
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(rank < MAX_SHM_RANK_NUM);\n    TORCH_CHECK(ptr);\n    TORCH_CHECK(thread_shm_ptr);\n    TORCH_CHECK_EQ(ptr->thread_num, thread_num);\n    TORCH_CHECK_EQ(ptr->thread_id, thread_id);\n    shm_contexts[rank] = ptr;\n    thread_shm_ptrs[rank] = thread_shm_ptr;\n  }\n\n  template <typename T>\n  T* get_thread_shm_ptr(int rank)",
+      "docstring": "",
+      "line": 68
+    },
+    {
+      "name": "get_swizzled_rank",
+      "kind": "function",
+      "signature": "get_swizzled_rank(int idx)",
+      "docstring": "",
+      "line": 81
+    },
+    {
+      "name": "wait_for_all",
+      "kind": "function",
+      "signature": "wait_for_all(ThreadSHMStat prev_stat)",
+      "docstring": "",
+      "line": 83
+    },
+    {
+      "name": "get_swizzled_rank",
+      "kind": "function",
+      "signature": "get_swizzled_rank(idx);\n      while (thread_stats[rank] == prev_stat)",
+      "docstring": "",
+      "line": 87
+    },
+    {
+      "name": "_mm_pause",
+      "kind": "function",
+      "signature": "_mm_pause();\n      }\n    }\n    vec_op::mem_barrier();\n  }\n\n  void wait_for_one(int rank, ThreadSHMStat prev_stat)",
+      "docstring": "",
+      "line": 89
+    },
+    {
+      "name": "_mm_pause",
+      "kind": "function",
+      "signature": "_mm_pause();\n    }\n    vec_op::mem_barrier();\n  }\n\n  void set_thread_stat(ThreadSHMStat stat)",
+      "docstring": "",
+      "line": 98
+    },
+    {
+      "name": "get_swizzled_rank",
+      "kind": "function",
+      "signature": "get_swizzled_rank(idx);\n      shm_contexts[rank]->thread_stats[this->rank] = stat;\n    }\n  }\n\n  void set_thread_stat(int target_rank, ThreadSHMStat stat)",
+      "docstring": "",
+      "line": 106
+    },
+    {
+      "name": "get_swizzled_rank",
+      "kind": "function",
+      "signature": "get_swizzled_rank(idx);\n      shm_contexts[rank]->thread_stats[target_rank] = stat;\n    }\n  }\n\n  // barrier for all ranks in the group, used for all2all ops\n  // DONE -> THREAD_READY -> SHM_DATA_READY -> DONE -> ...\n  void barrier(ThreadSHMStat next_stat)",
+      "docstring": "",
+      "line": 113
+    },
+    {
+      "name": "set_thread_stat",
+      "kind": "function",
+      "signature": "set_thread_stat(ThreadSHMStat::THREAD_READY);\n      wait_for_all(ThreadSHMStat::DONE);\n    } else if (next_stat == ThreadSHMStat::SHM_DATA_READY)",
+      "docstring": "",
+      "line": 121
+    },
+    {
+      "name": "set_thread_stat",
+      "kind": "function",
+      "signature": "set_thread_stat(ThreadSHMStat::SHM_DATA_READY);\n      wait_for_all(ThreadSHMStat::THREAD_READY);\n    } else if (next_stat == ThreadSHMStat::DONE)",
+      "docstring": "",
+      "line": 124
+    },
+    {
+      "name": "set_thread_stat",
+      "kind": "function",
+      "signature": "set_thread_stat(ThreadSHMStat::DONE);\n      wait_for_all(ThreadSHMStat::SHM_DATA_READY);\n    } else {\n      TORCH_CHECK(false, \"Invalid next_stat to barrier.\");\n    }\n  }\n\n  std::string to_string()",
+      "docstring": "",
+      "line": 127
+    },
+    {
+      "name": "str",
+      "kind": "function",
+      "signature": "str();\n  }\n};\n\nclass SHMManager {\n public:\n  explicit SHMManager(const std::string& name, const int rank,\n                      const int group_size)\n      : _rank(rank),\n        _group_size(group_size),\n        _thread_num(std::min(torch::get_num_threads(), MAX_THREAD_NUM)),\n        _shm_names({\"\"}),\n        _shared_mem_ptrs({nullptr}),\n        _shm_ctx(nullptr)",
+      "docstring": "",
+      "line": 157
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cpu",
+      "fcntl",
+      "sys",
+      "unistd"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 78,
+    "public_symbols": 78,
+    "classes": 2,
+    "functions": 76,
+    "internal_deps": 0,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "oop",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cpu/shm.cpp"
+}

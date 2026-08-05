@@ -1,0 +1,69 @@
+{
+  "id": "benchmarks.cutlass_benchmarks.sparse_benchmarks",
+  "title": "Sparse Benchmarks",
+  "type": "module",
+  "summary": "Module providing bench_fn, DEFAULT_MODELS, DEFAULT_BATCH_SIZES, DEFAULT_TP_SIZES",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "bench_fn",
+      "kind": "function",
+      "signature": "def bench_fn(\n    label: str, sub_label: str, description: str, fn: Callable, *args, **kwargs\n) -> TMeasurement:\n    min_run_time = 1\n\n    globals = {\n        \"args\": args,\n        \"kwargs\": kwargs,\n        \"fn\": fn,\n    }\n    return TBenchmark.Timer(\n        stmt=\"fn(*args, **kwargs)\",\n        globals=globals,\n        label=label,\n        sub_label=sub_label,\n        description=description,\n    ).blocked_autorange(min_run_time=min_run_time)\n\n\ndef bench_int8(\n    dtype: torch.dtype, m: int, k: int, n: int, label: str, sub_label: str\n) -> Iterable[TMeasurement]:\n    assert dtype == torch.int8\n    b_compressed, e, a, b = make_rand_sparse_tensors(torch.int8, m, n, k)\n    scale_a = torch.tensor(1.0, device=\"cuda\", dtype=torch.float32)\n    scale_b = torch.tensor(1.0, device=\"cuda\", dtype=torch.float32)\n    bias = torch.zeros((n,), device=\"cuda\", dtype=torch.bfloat16)\n\n    out = ops.cutlass_scaled_sparse_mm(\n        a, b_compressed, e, scale_a, scale_b, torch.bfloat16\n    )\n    out_ref = ops.cutlass_scaled_mm(a, b, scale_a, scale_b, torch.bfloat16)\n\n    if not torch.allclose(out, out_ref):\n        print(\"Incorrect results\")\n        print(out)\n        print(out_ref)\n    else:\n        print(\"Correct results\")\n\n    timers = []\n    # pytorch impl - bfloat16\n    timers.append(\n        bench_fn(\n            label,\n            sub_label,\n            \"pytorch_bf16_bf16_bf16_matmul-no-scales\",\n            torch.mm,\n            a.to(dtype=torch.bfloat16),\n            b.to(dtype=torch.bfloat16),\n        )\n    )\n\n    # pytorch impl - float16\n    timers.append(\n        bench_fn(\n            label,\n            sub_label,\n            \"pytorch_fp16_fp16_fp16_matmul-no-scales\",\n            torch.mm,\n            a.to(dtype=torch.float16),\n            b.to(dtype=torch.float16),\n        )\n    )\n\n    # cutlass impl\n    timers.append(\n        bench_fn(\n            label,\n            sub_label,\n            \"cutlass_i8_i8_bf16_scaled_mm\",\n            ops.cutlass_scaled_mm,\n            a,\n            b,\n            scale_a,\n            scale_b,\n            torch.bfloat16,\n        )\n    )\n\n    # cutlass with bias\n    timers.append(\n        bench_fn(\n            label,\n            sub_label,\n            \"cutlass_i8_i8_bf16_scaled_mm_bias\",\n            ops.cutlass_scaled_mm,\n            a,\n            b,\n            scale_a,\n            scale_b,\n            torch.bfloat16,\n            bias,\n        )\n    )\n\n    # cutlass sparse impl\n    timers.append(\n        bench_fn(\n            label,\n            sub_label,\n            \"cutlass_i8_i8_bf16_scaled_sparse_mm\",\n            ops.cutlass_scaled_sparse_mm,\n            a,\n            b_compressed,\n            e,\n            scale_a,\n            scale_b,\n            torch.bfloat16,\n        )\n    )\n\n    # cutlass sparse with bias\n    timers.append(\n        bench_fn(\n            label,\n            sub_label,\n            \"cutlass_i8_i8_bf16_scaled_sparse_mm_bias\",\n            ops.cutlass_scaled_sparse_mm,\n            a,\n            b_compressed,\n            e,\n            scale_a,\n            scale_b,\n            torch.bfloat16,\n            bias,\n        )\n    )\n\n    return timers\n\n\ndef bench_fp8(\n    dtype: torch.dtype, m: int, k: int, n: int, label: str, sub_label: str\n) -> Iterable[TMeasurement]:\n    assert dtype == torch.float8_e4m3fn\n    b_compressed, e, a, b = make_rand_sparse_tensors(torch.float8_e4m3fn, m, n, k)\n    scale_a = torch.tensor(1.0, device=\"cuda\", dtype=torch.float32)\n    scale_b = torch.tensor(1.0, device=\"cuda\", dtype=torch.float32)\n    bias = torch.zeros((n,), device=\"cuda\", dtype=torch.bfloat16)\n\n    out = ops.cutlass_scaled_sparse_mm(\n        a, b_compressed, e, scale_a, scale_b, torch.bfloat16\n    )\n    out_ref = ops.cutlass_scaled_mm(a, b, scale_a, scale_b, torch.bfloat16)\n\n    if not torch.allclose(out, out_ref):\n        print(\"Incorrect results\")\n        print(out)\n        print(out_ref)\n    else:\n        print(\"Correct results\")\n\n    timers = []\n\n    # pytorch impl w. bf16\n    timers.append(\n        bench_fn(\n            label,\n            sub_label,\n            \"pytorch_bf16_bf16_bf16_matmul-no-scales\",\n            torch.mm,\n            a.to(dtype=torch.bfloat16, device=\"cuda\"),\n            b.to(dtype=torch.bfloat16, device=\"cuda\"),\n        )\n    )\n\n    # pytorch impl: bf16 output, without fp8 fast accum\n    timers.append(\n        bench_fn(\n            label,\n            sub_label,\n            \"pytorch_fp8_fp8_bf16_scaled_mm\",\n            torch._scaled_mm,\n            a,\n            b,\n            scale_a=scale_a,\n            scale_b=scale_b,\n            out_dtype=torch.bfloat16,\n        )\n    )\n\n    # pytorch impl: bf16 output, with fp8 fast accum\n    timers.append(\n        bench_fn(\n            label,\n            sub_label,\n            \"pytorch_fp8_fp8_bf16_scaled_mm_fast_accum\",\n            torch._scaled_mm,\n            a,\n            b,\n            scale_a=scale_a,\n            scale_b=scale_b,\n            out_dtype=torch.bfloat16,\n            use_fast_accum=True,\n        )\n    )\n\n    # pytorch impl: fp16 output, without fp8 fast accum\n    timers.append(\n        bench_fn(\n            label,\n            sub_label,\n            \"pytorch_fp8_fp8_fp16_scaled_mm\",\n            torch._scaled_mm,\n            a,\n            b,\n            scale_a=scale_a,\n            scale_b=scale_b,\n            out_dtype=torch.float16,\n        )\n    )\n\n    # pytorch impl: fp16 output, with fp8 fast accum\n    timers.append(\n        bench_fn(\n            label,\n            sub_label,\n            \"pytorch_fp8_fp8_fp16_scaled_mm_fast_accum\",\n            torch._scaled_mm,\n            a,\n            b,\n            scale_a=scale_a,\n            scale_b=scale_b,\n            out_dtype=torch.float16,\n            use_fast_accum=True,\n        )\n    )\n\n    # cutlass impl: bf16 output\n    timers.append(\n        bench_fn(\n            label,\n            sub_label,\n            \"cutlass_fp8_fp8_bf16_scaled_mm\",\n            ops.cutlass_scaled_mm,\n            a,\n            b,\n            scale_a,\n            scale_b,\n            torch.bfloat16,\n        )\n    )\n\n    # cutlass impl: bf16 output\n    timers.append(\n        bench_fn(\n            label,\n            sub_label,\n            \"cutlass_fp8_fp8_bf16_scaled_sparse_mm\",\n            ops.cutlass_scaled_sparse_mm,\n            a,\n            b_compressed,\n            e,\n            scale_a,\n            scale_b,\n            torch.bfloat16,\n        )\n    )\n\n    # cutlass impl: fp16 output\n    timers.append(\n        bench_fn(\n            label,\n            sub_label,\n            \"cutlass_fp8_fp8_fp16_scaled_sparse_mm\",\n            ops.cutlass_scaled_sparse_mm,\n            a,\n            b_compressed,\n            e,\n            scale_a,\n            scale_b,\n            torch.float16,\n        )\n    )\n\n    # cutlass impl: bf16 output, with bias\n    timers.append(\n        bench_fn(\n            label,\n            sub_label,\n            \"cutlass_fp8_fp8_bf16_scaled_sparse_mm_bias\",\n            ops.cutlass_scaled_sparse_mm,\n            a,\n            b_compressed,\n            e,\n            scale_a,\n            scale_b,\n            torch.bfloat16,\n            bias,\n        )\n    )\n\n    # cutlass impl: fp16 output, with bias\n    timers.append(\n        bench_fn(\n            label,\n            sub_label,\n            \"cutlass_fp8_fp8_fp16_scaled_sparse_mm_bias\",\n            ops.cutlass_scaled_sparse_mm,\n            a,\n            b_compressed,\n            e,\n            scale_a,\n            scale_b,\n            torch.float16,\n            bias.to(dtype=torch.float16),\n        )\n    )\n\n    return timers\n\n\ndef bench(\n    dtype: torch.dtype, m: int, k: int, n: int, label: str, sub_label: str\n) -> Iterable[TMeasurement]:\n    if dtype == torch.int8:\n        return bench_int8(dtype, m, k, n, label, sub_label)\n    if dtype == torch.float8_e4m3fn:\n        return bench_fp8(dtype, m, k, n, label, sub_label)\n    raise ValueError(\"unsupported type\")\n\n\n# runner\ndef print_timers(timers: Iterable[TMeasurement]):\n    compare = TBenchmark.Compare(timers)\n    compare.print()\n\n\ndef run(\n    dtype: torch.dtype, MKNs: Iterable[tuple[int, int, int]]\n) -> Iterable[TMeasurement]:\n    results = []\n    for m, k, n in MKNs:\n        timers = bench(dtype, m, k, n, f\"scaled-{dtype}-gemm\", f\"MKN=({m}x{k}x{n})\")\n        print_timers(timers)\n        results.extend(timers)\n\n    return results\n\n\n# output makers\ndef make_output(\n    data: Iterable[TMeasurement],\n    MKNs: Iterable[tuple[int, int, int]],\n    base_description: str,\n    timestamp=None,\n):\n    print(f\"== All Results {base_description} ====\")\n    print_timers(data)\n\n    # pickle all the results\n    timestamp = int(time.time()) if timestamp is None else timestamp\n    with open(f\"{base_description}-{timestamp}.pkl\", \"wb\") as f:\n        pkl.dump(data, f)\n\n\n# argparse runners\n\n\ndef run_square_bench(args):\n    dim_sizes = list(range(args.dim_start, args.dim_end + 1, args.dim_increment))\n    MKNs = list(zip(dim_sizes, dim_sizes, dim_sizes))\n    data = run(args.dtype, MKNs)\n\n    make_output(data, MKNs, f\"square_bench-{args.dtype}\")\n\n\ndef run_range_bench(args):\n    dim_sizes = list(range(args.dim_start, args.dim_end, args.dim_increment))\n    n = len(dim_sizes)\n    Ms = [args.m_constant] * n if args.m_constant is not None else dim_sizes\n    Ks = [args.k_constant] * n if args.k_constant is not None else dim_sizes\n    Ns = [args.n_constant] * n if args.n_constant is not None else dim_sizes\n    MKNs = list(zip(Ms, Ks, Ns))\n    data = run(args.dtype, MKNs)\n\n    make_output(data, MKNs, f\"range_bench-{args.dtype}\")\n\n\ndef run_model_bench(args):\n    print(\"Benchmarking models:\")\n    for i, model in enumerate(args.models):\n        print(f\"[{i}]  {model}\")\n\n    def model_shapes(model_name: str, tp_size: int) -> list[tuple[int, int]]:\n        KNs = []\n        for KN, tp_split_dim in copy.deepcopy(WEIGHT_SHAPES[model_name]):\n            KN[tp_split_dim] = KN[tp_split_dim] // tp_size\n            KNs.append(KN)\n        return KNs\n\n    model_bench_data = []\n    models_tps = list(itertools.product(args.models, args.tp_sizes))\n    for model, tp_size in models_tps:\n        Ms = args.batch_sizes\n        KNs = model_shapes(model, tp_size)\n        MKNs = []\n        for m in Ms:\n            for k, n in KNs:\n                MKNs.append((m, k, n))\n\n        data = run(args.dtype, MKNs)\n        model_bench_data.append(data)\n\n    # Print all results\n    for data, model_tp in zip(model_bench_data, models_tps):\n        model, tp_size = model_tp\n        print(f\"== Results {args.dtype} {model}-TP{tp_size} ====\")\n        print_timers(data)\n\n    timestamp = int(time.time())\n\n    all_data = []\n    for d in model_bench_data:\n        all_data.extend(d)\n    # pickle all data\n    with open(f\"model_bench-{args.dtype}-{timestamp}.pkl\", \"wb\") as f:\n        pkl.dump(all_data, f)\n\n\nif __name__ == \"__main__\":\n\n    def to_torch_dtype(dt):\n        if dt == \"int8\":\n            return torch.int8\n        if dt == \"fp8\":\n            return torch.float8_e4m3fn\n        raise ValueError(\"unsupported dtype\")\n\n    parser = FlexibleArgumentParser(\n        description=\"\"\"\nBenchmark Cutlass GEMM.\n\n    To run square GEMMs:\n        python3 ./benchmarks/cutlass_benchmarks/sparse_benchmarks.py --dtype fp8 square_bench --dim-start 128 --dim-end 512 --dim-increment 64\n    \n    To run constant N and K and sweep M:\n        python3 ./benchmarks/cutlass_benchmarks/sparse_benchmarks.py --dtype fp8 range_bench --dim-start 128 --dim-end 512 --dim-increment 64 --n-constant 16384 --k-constant 16384\n    \n    To run dimensions from a model:\n        python3 ./benchmarks/cutlass_benchmarks/sparse_benchmarks.py --dtype fp8 model_bench --models meta-llama/Llama-2-7b-hf --batch-sizes 16 --tp-sizes 1\n    \n    Output:\n        - a .pkl file, that is a list of raw torch.benchmark.utils.Measurements for the pytorch and cutlass implementations for the various GEMMs.\n            \"\"\",  # noqa",
+      "docstring": "",
+      "line": 27
+    },
+    {
+      "name": "DEFAULT_MODELS",
+      "kind": "constant",
+      "signature": "DEFAULT_MODELS = ...",
+      "docstring": "",
+      "line": 21
+    },
+    {
+      "name": "DEFAULT_BATCH_SIZES",
+      "kind": "constant",
+      "signature": "DEFAULT_BATCH_SIZES = ...",
+      "docstring": "",
+      "line": 22
+    },
+    {
+      "name": "DEFAULT_TP_SIZES",
+      "kind": "constant",
+      "signature": "DEFAULT_TP_SIZES = ...",
+      "docstring": "",
+      "line": 23
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "argparse",
+      "collections",
+      "copy",
+      "itertools",
+      "pickle",
+      "time",
+      "torch",
+      "typing",
+      "utils",
+      "vllm",
+      "weight_shapes"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 4,
+    "public_symbols": 4,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 11,
+    "depth": 0,
+    "complexity_sum": 1
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/cutlass_benchmarks/sparse_benchmarks.py"
+}

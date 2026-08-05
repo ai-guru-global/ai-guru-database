@@ -1,0 +1,144 @@
+{
+  "id": "csrc.quantization.gptq_allspark.allspark_utils.cuh",
+  "title": "Allspark Utils",
+  "type": "module",
+  "summary": "Module providing CHECK_CUDA, cudaGetErrorString, exit, num2float, void and 5 more symbols",
+  "details": "Contains 20 functions/methods",
+  "symbols": [
+    {
+      "name": "CHECK_CUDA",
+      "kind": "function",
+      "signature": "CHECK_CUDA(cmd)                                             \\\n  do {                                                              \\\n    cudaError_t cuda_status = cmd;                                  \\\n    if (cuda_status != cudaSuccess)",
+      "docstring": "",
+      "line": 15
+    },
+    {
+      "name": "cudaGetErrorString",
+      "kind": "function",
+      "signature": "cudaGetErrorString(cuda_status);        \\\n      std::cerr << \"Failed: \" << __FILE__ << \":\" << __LINE__ << \" \" \\\n                << err_str;                                         \\\n      exit(-1);                                                     \\\n    }                                                               \\\n  } while (0)\n\n#define CHECK_CUBLAS(cmd)                                            \\\n  do {                                                               \\\n    cublasStatus_t cublas_status = cmd;                              \\\n    if (cublas_status != CUBLAS_STATUS_SUCCESS)",
+      "docstring": "",
+      "line": 19
+    },
+    {
+      "name": "exit",
+      "kind": "function",
+      "signature": "exit(-1);                                                      \\\n    }                                                                \\\n  } while (0)\n\ntemplate <typename FType, typename QType>\nstruct SM8x_GEMM_W8A16_Splitk_Params {\n  const FType* A_ptr;\n  const QType* B_ptr;\n  const FType* B_scale_ptr;\n  const FType* B_zero_ptr;\n  FType* C_ptr;\n  int M;\n  int N;\n  int K;\n  int SplitK;\n  int GroupCnt;\n  int GroupSize;\n  FType* C_split_ptr;       // for non-fused splitk reduce\n  float* C_tmp_ptr;         // for fused splitk reduce\n  uint32_t* red_count_ptr;  // for fused splitk reduce\n};\n\nstruct alignas(16) BlockTileSplitkParams {\n  int Mtile;\n  int Ntile;\n  int SplitK;\n  bool EnableFuse;\n};\n\ntemplate <typename FType, int BLOCK, int N_MATRIX>\n__global__ void f16_gemm_splitk_reduce_kernel(const FType* C_split, FType* C,\n                                              uint32_t n, uint32_t n_matrix,\n                                              uint32_t matrix_size)",
+      "docstring": "",
+      "line": 31
+    },
+    {
+      "name": "num2float",
+      "kind": "function",
+      "signature": "num2float(C_split[idx + i * matrix_size]);\n  }\n\n  C[idx] = ScalarType<FType>::float2num(sum);\n}\n\ntemplate <typename FType>\nvoid f16_gemm_splitk_reduce(const FType* C_split, FType* C, const uint32_t m,\n                            const uint32_t n, const uint32_t n_matrix,\n                            cudaStream_t stream)",
+      "docstring": "",
+      "line": 75
+    },
+    {
+      "name": "void",
+      "kind": "function",
+      "signature": "void(*kernel)(const FType*, FType*, uint32_t, uint32_t, uint32_t) = nullptr;\n\n  switch (n_matrix)",
+      "docstring": "",
+      "line": 87
+    },
+    {
+      "name": "smem_u32addr",
+      "kind": "function",
+      "signature": "smem_u32addr(const void* smem_ptr)",
+      "docstring": "",
+      "line": 140
+    },
+    {
+      "name": "asm",
+      "kind": "function",
+      "signature": "asm(\"{.reg .u64 u64addr;\\n\"\n      \" cvta.to.shared.u64 u64addr, %1;\\n\"\n      \" cvt.u32.u64 %0, u64addr;}\\n\"\n      : \"=r\"(addr)\n      : \"l\"(smem_ptr));\n\n  return addr;\n}\n\ntemplate <typename T>\n__device__ __forceinline__ void ldg16_cg_0(T& r0, const void* ptr, bool guard)",
+      "docstring": "",
+      "line": 142
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(sizeof(T) == 2, \"ldg16_cg_0: invalid T\");\n\n  asm volatile(\n      \"{.reg .pred p;\\n\"\n      \" setp.ne.b32 p, %2, 0;\\n\"\n      \" @!p mov.b16 %0, 0;\\n\"\n#if __CUDACC_VER_MAJOR__ >= 11 && __CUDACC_VER_MINOR__ >= 4 && \\\n    __CUDA_ARCH__ >= 750\n      \" @p ld.global.cg.L2::128B.b16 {%0}, [%1];}\\n\"\n#else\n      \" @p ld.global.ca.b16 {%0}, [%1];}\\n\"\n#endif\n      : \"=h\"(reinterpret_cast<uint16_t&>(r0))\n      : \"l\"(ptr), \"r\"((int)guard));\n}\n\ntemplate <typename T>\n__device__ __forceinline__ void ldg64_ca(T& r0, T& r1, const void* ptr,\n                                         bool guard)",
+      "docstring": "",
+      "line": 153
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(sizeof(T) == 4, \"ldg64_ca: invalid T\");\n\n  asm volatile(\n      \"{.reg .pred p;\\n\"\n      \" setp.ne.b32 p, %3, 0;\\n\"\n#if __CUDACC_VER_MAJOR__ >= 11 && __CUDACC_VER_MINOR__ >= 4 && \\\n    __CUDA_ARCH__ >= 750\n      \" @p ld.global.ca.L2::128B.v2.b32 {%0, %1}, [%2];}\\n\"\n#else\n      \" @p ld.global.ca.v2.b32 {%0, %1}, [%2];}\\n\"\n#endif\n      : \"=r\"(reinterpret_cast<uint32_t&>(r0)),\n        \"=r\"(reinterpret_cast<uint32_t&>(r1))\n      : \"l\"(ptr), \"r\"((int)guard));\n}\n\ntemplate <typename T>\n__device__ __forceinline__ void ldg128_cg_0(T& r0, T& r1, T& r2, T& r3,\n                                            const void* ptr, bool guard)",
+      "docstring": "",
+      "line": 172
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(sizeof(T) == 4, \"ldg128_cg_0: invalid T\");\n\n  asm volatile(\n      \"{.reg .pred p;\\n\"\n      \" setp.ne.b32 p, %5, 0;\\n\"\n      \" @!p mov.b32 %0, 0;\\n\"\n      \" @!p mov.b32 %1, 0;\\n\"\n      \" @!p mov.b32 %2, 0;\\n\"\n      \" @!p mov.b32 %3, 0;\\n\"\n#if __CUDACC_VER_MAJOR__ >= 11 && __CUDACC_VER_MINOR__ >= 4 && \\\n    __CUDA_ARCH__ >= 750\n      \" @p ld.global.cg.L2::128B.v4.b32 {%0, %1, %2, %3}, [%4];}\\n\"\n#else\n      \" @p ld.global.cg.v4.b32 {%0, %1, %2, %3}, [%4];}\\n\"\n#endif\n      : \"=r\"(reinterpret_cast<uint32_t&>(r0)),\n        \"=r\"(reinterpret_cast<uint32_t&>(r1)),\n        \"=r\"(reinterpret_cast<uint32_t&>(r2)),\n        \"=r\"(reinterpret_cast<uint32_t&>(r3))\n      : \"l\"(ptr), \"r\"((int)guard));\n}\n\ntemplate <typename T>\n__device__ __forceinline__ void lds128(T& reg0, T& reg1, T& reg2, T& reg3,\n                                       const uint32_t addr)",
+      "docstring": "",
+      "line": 191
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(sizeof(T) == 4, \"lds128: invalid T\");\n\n  asm volatile(\"ld.shared.v4.b32 {%0, %1, %2, %3}, [%4];\\n\"\n               : \"=r\"(reinterpret_cast<uint32_t&>(reg0)),\n                 \"=r\"(reinterpret_cast<uint32_t&>(reg1)),\n                 \"=r\"(reinterpret_cast<uint32_t&>(reg2)),\n                 \"=r\"(reinterpret_cast<uint32_t&>(reg3))\n               : \"r\"(addr));\n}\n\ntemplate <typename T>\n__device__ __forceinline__ void stg128(const T& r0, const T& r1, const T& r2,\n                                       const T& r3, const void* ptr,\n                                       bool guard)",
+      "docstring": "",
+      "line": 216
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(sizeof(T) == 4, \"stg128: invalid T\");\n\n  asm volatile(\n      \"{.reg .pred p;\\n\"\n      \" setp.ne.b32 p, %1, 0;\\n\"\n      \" @p st.global.v4.b32 [%0], {%2, %3, %4, %5};}\\n\"\n      :\n      : \"l\"(ptr), \"r\"((int)guard), \"r\"(reinterpret_cast<const uint32_t&>(r0)),\n        \"r\"(reinterpret_cast<const uint32_t&>(r1)),\n        \"r\"(reinterpret_cast<const uint32_t&>(r2)),\n        \"r\"(reinterpret_cast<const uint32_t&>(r3)));\n}\n\ntemplate <typename T>\n__device__ __forceinline__ void ldsm_4(T& r0, T& r1, T& r2, T& r3,\n                                       const uint32_t& addr)",
+      "docstring": "",
+      "line": 230
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(sizeof(T) == 4, \"ldsm_4: invalid T\");\n#if (__CUDA_ARCH__ >= 750) && (__CUDACC_VER_MAJOR__ >= 11)\n  asm volatile(\n      \"ldmatrix.sync.aligned.m8n8.x4.shared.b16 {%0, %1, %2, %3}, [%4];\\n\"\n      : \"=r\"(reinterpret_cast<uint32_t&>(r0)),\n        \"=r\"(reinterpret_cast<uint32_t&>(r1)),\n        \"=r\"(reinterpret_cast<uint32_t&>(r2)),\n        \"=r\"(reinterpret_cast<uint32_t&>(r3))\n      : \"r\"(addr));\n#endif\n}\n\ntemplate <typename FType>\n__device__ __forceinline__ void hmma16816_f32(float (&d)[4],\n                                              const uint32_t (&a)[4],\n                                              const uint32_t (&b)[2]);\n\ntemplate <>\n__device__ __forceinline__ void hmma16816_f32<__half>(float (&d)[4],\n                                                      const uint32_t (&a)[4],\n                                                      const uint32_t (&b)[2])",
+      "docstring": "",
+      "line": 246
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(\n      (SIZE_IN_BYTES == 4 || SIZE_IN_BYTES == 8 || SIZE_IN_BYTES == 16),\n      \"Size is not supported\");\n#if __CUDACC_VER_MAJOR__ >= 11 && __CUDA_ARCH__ >= 800\n  asm volatile(\n      \"{.reg.pred p;\\n\"\n      \" setp.ne.b32 p, %4, 0;\\n\"\n  #if __CUDACC_VER_MINOR__ >= 4\n      \" @p cp.async.cg.shared.global.L2::256B [%0], [%1], %2, %3;}\\n\"\n  #else\n      \" @p cp.async.cg.shared.global [%0], [%1], %2, %3;}\\n\"\n  #endif\n      ::\"r\"(smem_addr),\n      \"l\"(gmem_ptr), \"n\"(SIZE_IN_BYTES), \"r\"(src_in_bytes), \"r\"((int)guard));\n#endif\n}\n\ntemplate <int SIZE_IN_BYTES>\n__device__ __forceinline__ void cp_async_ca(const uint32_t smem_addr,\n                                            const void* gmem_ptr,\n                                            const int src_in_bytes,\n                                            bool guard)",
+      "docstring": "",
+      "line": 292
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(\n      (SIZE_IN_BYTES == 4 || SIZE_IN_BYTES == 8 || SIZE_IN_BYTES == 16),\n      \"Size is not supported\");\n#if __CUDACC_VER_MAJOR__ >= 11 && __CUDA_ARCH__ >= 800\n  asm volatile(\n      \"{.reg.pred p;\\n\"\n      \" setp.ne.b32 p, %4, 0;\\n\"\n  #if __CUDACC_VER_MINOR__ >= 4\n      \" @p cp.async.ca.shared.global.L2::256B [%0], [%1], %2, %3;}\\n\"\n  #else\n      \" @p cp.async.ca.shared.global [%0], [%1], %2, %3;}\\n\"\n  #endif\n      ::\"r\"(smem_addr),\n      \"l\"(gmem_ptr), \"n\"(SIZE_IN_BYTES), \"r\"(src_in_bytes), \"r\"((int)guard));\n#endif\n}\n\n__device__ __forceinline__ void cp_async_commit_group()",
+      "docstring": "",
+      "line": 314
+    }
+  ],
+  "dependencies": {
+    "internal": [
+      "../gptq_marlin/marlin_dtypes.cuh"
+    ],
+    "external": [
+      "ATen",
+      "c10",
+      "cuda_bf16",
+      "cuda_fp16",
+      "cuda_runtime",
+      "iostream",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 20,
+    "public_symbols": 20,
+    "classes": 0,
+    "functions": 20,
+    "internal_deps": 1,
+    "external_deps": 7,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/gptq_allspark/allspark_utils.cuh"
+}

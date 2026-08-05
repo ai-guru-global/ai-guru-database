@@ -1,0 +1,138 @@
+{
+  "id": "csrc.attention.dtype_float16.cuh",
+  "title": "Dtype Float16",
+  "type": "module",
+  "summary": "Module providing Copyright, volatile, volatile, volatile, volatile and 5 more symbols",
+  "details": "Contains 52 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) 2023, The vLLM team.\n * Copyright (c) 2020-2023, NVIDIA CORPORATION.  All rights reserved.\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n#pragma once\n\n#include \"attention_generic.cuh\"\n#include \"dtype_float32.cuh\"\n\n#ifdef USE_ROCM\n  #include <hip/hip_fp16.h>\n#endif\n\n#include <stdint.h>\n\nnamespace vllm {\n\n// FP16 vector types for Q, K, V.\ntemplate <>\nstruct Vec<uint16_t, 1> {\n  using Type = uint16_t;\n};\ntemplate <>\nstruct Vec<uint16_t, 2> {\n  using Type = uint32_t;\n};\ntemplate <>\nstruct Vec<uint16_t, 4> {\n  using Type = uint2;\n};\ntemplate <>\nstruct Vec<uint16_t, 8> {\n  using Type = uint4;\n};\n\n// FP32 accumulator vector types corresponding to Vec.\ntemplate <>\nstruct FloatVec<uint16_t> {\n  using Type = float;\n};\ntemplate <>\nstruct FloatVec<uint32_t> {\n  using Type = float2;\n};\ntemplate <>\nstruct FloatVec<uint2> {\n  using Type = Float4_;\n};\ntemplate <>\nstruct FloatVec<uint4> {\n  using Type = Float8_;\n};\n\n// Utility functions for type conversions.\ninline __device__ uint32_t h0_h0(uint16_t a)",
+      "docstring": "",
+      "line": 5
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\"mov.b32 %0, {%1, %1};\" : \"=r\"(b) : \"h\"(a));\n  return b;\n#else\n  union {\n    uint32_t u32;\n    uint16_t u16[2];\n  } tmp;\n  tmp.u16[0] = a;\n  tmp.u16[1] = a;\n  return tmp.u32;\n#endif\n}\n\ninline __device__ float half_to_float(uint16_t h)",
+      "docstring": "",
+      "line": 73
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\"cvt.f32.f16 %0, %1;\\n\" : \"=f\"(f) : \"h\"(h));\n#else\n  asm volatile(\"v_cvt_f32_f16 %0, %1;\" : \"=v\"(f) : \"v\"(h));\n#endif\n  return f;\n}\n\ninline __device__ float2 half2_to_float2(uint32_t v)",
+      "docstring": "",
+      "line": 89
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\"mov.b32 {%0, %1}, %2;\\n\" : \"=h\"(lo), \"=h\"(hi) : \"r\"(v));\n  return make_float2(half_to_float(lo), half_to_float(hi));\n#else\n  union {\n    uint32_t u32;\n    uint16_t u16[2];\n  } tmp;\n  tmp.u32 = v;\n  float2 ret;\n  ret.x = half_to_float(tmp.u16[0]);\n  ret.y = half_to_float(tmp.u16[1]);\n  return ret;\n#endif\n}\n\ninline __device__ uint16_t float_to_half(float f)",
+      "docstring": "",
+      "line": 99
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\"cvt.rn.f16.f32 %0, %1;\\n\" : \"=h\"(tmp.u16[0]) : \"f\"(f));\n#else\n  asm volatile(\"v_cvt_f16_f32 %0, %1;\\n\" : \"=v\"(tmp.u32) : \"v\"(f));\n#endif\n  return tmp.u16[0];\n}\n\ninline __device__ uint32_t float2_to_half2(float2 f)",
+      "docstring": "",
+      "line": 120
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) && __CUDA_ARCH__ >= 800\n  asm volatile(\"cvt.rn.f16x2.f32 %0, %1, %2;\\n\"\n               : \"=r\"(tmp.u32)\n               : \"f\"(f.y), \"f\"(f.x));\n  #else\n  asm volatile(\"cvt.rn.f16.f32 %0, %1;\\n\" : \"=h\"(tmp.u16[0]) : \"f\"(f.x));\n  asm volatile(\"cvt.rn.f16.f32 %0, %1;\\n\" : \"=h\"(tmp.u16[1]) : \"f\"(f.y));\n  #endif\n#else\n  tmp.u16[0] = float_to_half(f.x);\n  tmp.u16[1] = float_to_half(f.y);\n#endif\n  return tmp.u32;\n}\n\n// Vector addition.\ninline __device__ uint16_t add(uint16_t a, uint16_t b)",
+      "docstring": "",
+      "line": 134
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\"add.f16 %0, %1, %2;\\n\" : \"=h\"(c) : \"h\"(a), \"h\"(b));\n#else\n  asm volatile(\"v_add_f16 %0, %1, %2;\\n\" : \"=v\"(c) : \"v\"(a), \"v\"(b));\n#endif\n  return c;\n}\n\ninline __device__ uint32_t add(uint32_t a, uint32_t b)",
+      "docstring": "",
+      "line": 152
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\"add.f16x2 %0, %1, %2;\\n\" : \"=r\"(c) : \"r\"(a), \"r\"(b));\n#else\n  asm volatile(\"v_pk_add_f16 %0, %1, %2;\\n\" : \"=v\"(c) : \"v\"(a), \"v\"(b));\n#endif\n  return c;\n}\n\ninline __device__ uint2 add(uint2 a, uint2 b)",
+      "docstring": "",
+      "line": 162
+    },
+    {
+      "name": "add",
+      "kind": "function",
+      "signature": "add(a.x, b.x);\n  c.y = add(a.y, b.y);\n  return c;\n}\n\ninline __device__ uint4 add(uint4 a, uint4 b)",
+      "docstring": "",
+      "line": 172
+    },
+    {
+      "name": "add",
+      "kind": "function",
+      "signature": "add(a.x, b.x);\n  c.y = add(a.y, b.y);\n  c.z = add(a.z, b.z);\n  c.w = add(a.w, b.w);\n  return c;\n}\n\ninline __device__ float2 add(uint32_t a, float2 fb)",
+      "docstring": "",
+      "line": 179
+    },
+    {
+      "name": "half2_to_float2",
+      "kind": "function",
+      "signature": "half2_to_float2(a);\n  return add(fa, fb);\n}\n\ninline __device__ Float4_ add(uint2 a, Float4_ fb)",
+      "docstring": "",
+      "line": 187
+    },
+    {
+      "name": "add",
+      "kind": "function",
+      "signature": "add(a.x, fb.x);\n  fc.y = add(a.y, fb.y);\n  return fc;\n}\n\ninline __device__ Float8_ add(uint4 a, Float8_ fb)",
+      "docstring": "",
+      "line": 193
+    },
+    {
+      "name": "add",
+      "kind": "function",
+      "signature": "add(a.x, fb.x);\n  fc.y = add(a.y, fb.y);\n  fc.z = add(a.z, fb.z);\n  fc.w = add(a.w, fb.w);\n  return fc;\n}\n\n// Vector multiplication.\ntemplate <>\ninline __device__ uint16_t mul(uint16_t a, uint16_t b)",
+      "docstring": "",
+      "line": 200
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\"mul.f16 %0, %1, %2;\\n\" : \"=h\"(c) : \"h\"(a), \"h\"(b));\n#else\n  asm volatile(\"v_mul_f16 %0, %1, %2;\\n\" : \"=v\"(c) : \"v\"(a), \"v\"(b));\n#endif\n  return c;\n}\n\ntemplate <>\ninline __device__ uint32_t mul(uint32_t a, uint32_t b)",
+      "docstring": "",
+      "line": 211
+    },
+    {
+      "name": "volatile",
+      "kind": "function",
+      "signature": "volatile(\"mul.f16x2 %0, %1, %2;\\n\" : \"=r\"(c) : \"r\"(a), \"r\"(b));\n#else\n  asm volatile(\"v_pk_mul_f16 %0, %1, %2;\\n\" : \"=v\"(c) : \"v\"(a), \"v\"(b));\n#endif\n  return c;\n}\n\ntemplate <>\ninline __device__ uint32_t mul(uint16_t a, uint32_t b)",
+      "docstring": "",
+      "line": 222
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "attention_generic",
+      "dtype_float32",
+      "hip",
+      "stdint"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 52,
+    "public_symbols": 52,
+    "classes": 0,
+    "functions": 52,
+    "internal_deps": 0,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/attention/dtype_float16.cuh"
+}

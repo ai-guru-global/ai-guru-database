@@ -1,0 +1,91 @@
+{
+  "id": "csrc.quantization.fused_kernels.fused_layernorm_dynamic_per_token_quant.cu",
+  "title": "Fused Layernorm Dynamic Per Token Quant",
+  "type": "module",
+  "summary": "Module providing rms_norm_dynamic_per_token_quant_vec, constexpr, rms_norm_dynamic_per_token_quant_kernel, constexpr, rms_norm_dynamic_per_token_quant_dispatch and 3 more symbols",
+  "details": "Contains 8 functions/methods",
+  "symbols": [
+    {
+      "name": "rms_norm_dynamic_per_token_quant_vec",
+      "kind": "function",
+      "signature": "rms_norm_dynamic_per_token_quant_vec(\n    scalar_out_t* __restrict__ out,       // [..., hidden_size]\n    float* __restrict__ scales,           // [num_tokens]\n    scalar_t const* __restrict__ input,   // [..., hidden_size]\n    scalar_t const* __restrict__ weight,  // [hidden_size]\n    float const* scale_ub, float const var_epsilon, int32_t const hidden_size,\n    scalar_t* __restrict__ residual = nullptr)",
+      "docstring": "",
+      "line": 11
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(std::is_same_v<scalar_out_t, int8_t>)",
+      "docstring": "",
+      "line": 32
+    },
+    {
+      "name": "rms_norm_dynamic_per_token_quant_kernel",
+      "kind": "function",
+      "signature": "rms_norm_dynamic_per_token_quant_kernel(\n    scalar_out_t* __restrict__ out,       // [..., hidden_size]\n    float* __restrict__ scales,           // [num_tokens]\n    scalar_t const* __restrict__ input,   // [..., hidden_size]\n    scalar_t const* __restrict__ weight,  // [hidden_size]\n    float const* scale_ub, float const var_epsilon, int32_t const hidden_size,\n    scalar_t* __restrict__ residual = nullptr)",
+      "docstring": "",
+      "line": 46
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(std::is_same_v<scalar_out_t, int8_t>)",
+      "docstring": "",
+      "line": 76
+    },
+    {
+      "name": "rms_norm_dynamic_per_token_quant_dispatch",
+      "kind": "function",
+      "signature": "rms_norm_dynamic_per_token_quant_dispatch(\n    torch::Tensor& out,           // [..., hidden_size]\n    torch::Tensor const& input,   // [..., hidden_size]\n    torch::Tensor const& weight,  // [hidden_size]\n    torch::Tensor& scales,        // [num_tokens]\n    double const var_epsilon,     // Variance epsilon used in norm calculation\n    std::optional<at::Tensor> const& scale_ub,\n    std::optional<at::Tensor>& residual)",
+      "docstring": "",
+      "line": 88
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size(-1);\n  auto num_tokens = input.numel() / hidden_size;\n\n  dim3 grid(num_tokens);\n  dim3 block(std::min(hidden_size, 1024));\n  const at::cuda::OptionalCUDAGuard device_guard(device_of(input));\n  const cudaStream_t stream = at::cuda::getCurrentCUDAStream();\n\n  if (residual.has_value())",
+      "docstring": "",
+      "line": 98
+    },
+    {
+      "name": "VLLM_DISPATCH_QUANT_TYPES",
+      "kind": "function",
+      "signature": "VLLM_DISPATCH_QUANT_TYPES(\n        out.scalar_type(), \"rms_norm_dynamic_per_token_quant_kernel\", [&] {\n          vllm::rms_norm_dynamic_per_token_quant_kernel<scalar_in_t, scalar_t,\n                                                        true>\n              <<<grid, block, 0, stream>>>(\n                  out.data_ptr<scalar_t>(), scales.data_ptr<float>(),\n                  input.data_ptr<scalar_in_t>(), weight.data_ptr<scalar_in_t>(),\n                  scale_ub.has_value() ? scale_ub->data_ptr<float>() : nullptr,\n                  var_epsilon, hidden_size, residual->data_ptr<scalar_in_t>());\n        });\n\n  } else {\n    VLLM_DISPATCH_QUANT_TYPES(\n        out.scalar_type(), \"rms_norm_dynamic_per_token_quant_kernel\", [&] {\n          vllm::rms_norm_dynamic_per_token_quant_kernel<scalar_in_t, scalar_t,\n                                                        false>\n              <<<grid, block, 0, stream>>>(\n                  out.data_ptr<scalar_t>(), scales.data_ptr<float>(),\n                  input.data_ptr<scalar_in_t>(), weight.data_ptr<scalar_in_t>(),\n                  scale_ub.has_value() ? scale_ub->data_ptr<float>() : nullptr,\n                  var_epsilon, hidden_size, nullptr);\n        });\n  }\n}\n\nvoid rms_norm_dynamic_per_token_quant(\n    torch::Tensor& out,           // [..., hidden_size]\n    torch::Tensor const& input,   // [..., hidden_size]\n    torch::Tensor const& weight,  // [hidden_size]\n    torch::Tensor& scales,        // [num_tokens]\n    double const var_epsilon,     // Variance epsilon used in norm calculation\n    std::optional<at::Tensor> scale_ub, std::optional<at::Tensor> residual)",
+      "docstring": "",
+      "line": 106
+    },
+    {
+      "name": "is_fp8_ocp",
+      "kind": "function",
+      "signature": "is_fp8_ocp()\n                                        ? c10::ScalarType::Float8_e4m3fn\n                                        : c10::ScalarType::Float8_e4m3fnuz;\n  TORCH_CHECK(out.dtype() == kFp8Type || out.dtype() == torch::kInt8);\n  TORCH_CHECK(out.is_contiguous() && input.is_contiguous());\n\n  if (scale_ub.has_value())",
+      "docstring": "",
+      "line": 139
+    }
+  ],
+  "dependencies": {
+    "internal": [
+      "../../dispatch_utils.h"
+    ],
+    "external": [
+      "ATen",
+      "c10",
+      "layernorm_utils",
+      "quant_conversions"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 8,
+    "public_symbols": 8,
+    "classes": 0,
+    "functions": 8,
+    "internal_deps": 1,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/fused_kernels/fused_layernorm_dynamic_per_token_quant.cu"
+}

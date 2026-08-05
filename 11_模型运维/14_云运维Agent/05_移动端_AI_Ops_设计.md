@@ -1120,5 +1120,5 @@ A: 通过 RAG 增强 + 本地知识库 + 持续的案例学习，持续优化模
 - [[11_模型运维/Cloud_Ops_Agent/02_云Ops_简明指南.md|CloudOps-in-nutshell]]
 - [[11_模型运维/Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy.md|Cloud_Product_Ops_for_dummy]]
 - [[11_模型运维/Cloud_Ops_Agent/04_Java_云_SDK_指南.md|Java_Cloud_SDK_Guide]]
-- [[_projects/Cloud_Ops_Agent/docs/architecture/01_索引.md|index]]
-- [[_projects/Cloud_Ops_Agent/docs/corpus/01_索引.md|index]]
+- [[_projects/Cloud_Ops_Agent/docs/architecture/INDEX.md|index]]
+- [[_projects/Cloud_Ops_Agent/docs/corpus/INDEX.md|index]]

@@ -1,0 +1,40 @@
+{
+  "id": "benchmarks.cutlass_benchmarks.utils",
+  "title": "Utils",
+  "type": "module",
+  "summary": "Module providing to_fp8",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "to_fp8",
+      "kind": "function",
+      "signature": "def to_fp8(tensor: torch.Tensor) -> torch.Tensor:\n    finfo = torch.finfo(torch.float8_e4m3fn)\n    return torch.round(tensor.clamp(min=finfo.min, max=finfo.max)).to(\n        dtype=torch.float8_e4m3fn\n    )\n\n\ndef to_int8(tensor: torch.Tensor) -> torch.Tensor:\n    return torch.round(tensor.clamp(min=-128, max=127)).to(dtype=torch.int8)\n\n\ndef to_bf16(tensor: torch.Tensor) -> torch.Tensor:\n    return tensor.to(dtype=torch.bfloat16)\n\n\ndef to_fp16(tensor: torch.Tensor) -> torch.Tensor:\n    return tensor.to(dtype=torch.float16)\n\n\ndef make_rand_tensors(\n    dtype: torch.dtype, m: int, n: int, k: int\n) -> tuple[torch.Tensor, torch.Tensor]:\n    a = torch.randn((m, k), device=\"cuda\") * 5\n    b = torch.randn((n, k), device=\"cuda\").t() * 5\n\n    if dtype == torch.int8:\n        return to_int8(a), to_int8(b)\n    if dtype == torch.float8_e4m3fn:\n        return to_fp8(a), to_fp8(b)\n\n    raise ValueError(\"unsupported dtype\")\n\n\ndef prune_to_2_4(tensor):\n    # Reshape tensor to [N, 4] where N is number of groups of 4\n    original_shape = tensor.shape\n    reshaped = tensor.reshape(-1, 4)\n\n    # Get indices of top 2 absolute values in each group of 4\n    _, indices = torch.topk(torch.abs(reshaped), k=2, dim=1)\n\n    # Create binary mask\n    mask = torch.zeros_like(reshaped)\n    mask.scatter_(dim=1, index=indices, src=torch.ones_like(indices, dtype=mask.dtype))\n\n    # Apply mask and reshape back\n    pruned = reshaped * mask\n\n    # Turn all -0.0 to 0.0\n    pruned[pruned == -0.0] = 0.0\n\n    return pruned.reshape(original_shape)\n\n\ndef make_rand_sparse_tensors(\n    dtype: torch.dtype, m: int, n: int, k: int\n) -> tuple[torch.Tensor, torch.Tensor]:\n    a = torch.randn((m, k), device=\"cuda\") * 5\n    b = torch.randn((n, k), device=\"cuda\").t() * 5\n\n    b = prune_to_2_4(b.t()).t()\n\n    if dtype == torch.int8:\n        a, b = to_int8(a), to_int8(b)\n    elif dtype == torch.float8_e4m3fn:\n        a, b = to_fp8(a), to_fp8(b)\n    elif dtype == torch.float16:\n        a, b = to_fp16(a), to_fp16(b)\n    elif dtype == torch.bfloat16:\n        a, b = to_bf16(a), to_bf16(b)\n    else:\n        raise ValueError(\"unsupported dtype\")\n\n    b_compressed, e = ops.cutlass_sparse_compress(b.t())\n\n    # Compressed B, Metadata, Original A, B\n    return b_compressed, e, a, b\n\n\ndef make_n_rand_sparse_tensors(\n    num_tensors: int, dtype: torch.dtype, m: int, n: int, k: int\n) -> tuple[Iterable[torch.Tensor], Iterable[torch.Tensor]]:\n    ABs = []\n    for _ in range(num_tensors):\n        b_comp, e, a, b = make_rand_sparse_tensors(dtype, m, n, k)\n        if b_comp is not None",
+      "docstring": "",
+      "line": 12
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "collections",
+      "torch",
+      "vllm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 1
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/cutlass_benchmarks/utils.py"
+}

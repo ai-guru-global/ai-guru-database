@@ -25,7 +25,7 @@ name_zh: "约书亚·本吉奥 2026 动态"
 
 ### 背景回顾
 
-Yoshua Bengio（1964 年生于法国巴黎），蒙特利尔大学教授、Mila 魁北克 AI 研究院创始人与科学主任、2018 年图灵奖得主（与 [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]]、[[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]] 共获）。深度学习理论与序列建模的奠基人之一，培养了 Ian Goodfellow（GAN 发明者）等大批顶尖学者。2023 年起从纯学术研究转向全球 AI 安全治理，2025 年创立 LawZero 基金会。他是联合国 AI 顾问机构的高级顾问，也是"Pause Giant AI Experiments"公开信（2023）的核心签署者之一。
+Yoshua Bengio（1964 年生于法国巴黎），蒙特利尔大学教授、Mila 魁北克 AI 研究院创始人与科学主任、2018 年图灵奖得主（与 [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]]、[[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]] 共获）。深度学习理论与序列建模的奠基人之一，培养了 Ian Goodfellow（GAN 发明者）等大批顶尖学者。2023 年起从纯学术研究转向全球 AI 安全治理，2025 年创立 LawZero 基金会。他是联合国 AI 顾问机构的高级顾问，也是"Pause Giant AI Experiments"公开信（2023）的核心签署者之一。
 
 #### Bengio 2026 关键时间线
 
@@ -49,7 +49,7 @@ Yoshua Bengio（1964 年生于法国巴黎），蒙特利尔大学教授、Mila 
 - **学术界良心**: 图灵奖得主的道德权威
 - **政策顾问**: 与联合国、G7、欧盟、加拿大深度互动
 - **机构创始人**: LawZero 成为安全研究重镇
-- **路线辩论者**: 与 [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]] 持续论战
+- **路线辩论者**: 与 [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]] 持续论战
 
 ---
 
@@ -136,16 +136,16 @@ Bengio 在 2026 年持续推动建立"国际 AI 机构"（类比 IAEA）。
 
 | 主体 | 关系 |
 |------|------|
-| OpenAI（[[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]]） | 表面支持，实际抗拒 |
+| OpenAI（[[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]]） | 表面支持，实际抗拒 |
 | Anthropic（[[19_业界观点/05_Dario_Amodei_阿莫迪/02_Amodei_2026_更新|Amodei]]） | 部分支持 |
-| Google（[[19_业界观点/24_Sundar_Pichai_皮查伊/02_索引|Pichai]]） | 谨慎支持 |
-| Meta（[[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]]） | 反对过度监管 |
+| Google（[[19_业界观点/24_Sundar_Pichai_皮查伊/INDEX|Pichai]]） | 谨慎支持 |
+| Meta（[[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]]） | 反对过度监管 |
 | 中国 | 主权顾虑，谨慎参与 |
 | 欧盟 | 最积极推动者 |
 
 ### 与 LeCun 的持续论战
 
-Bengio 与 [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]] 在 2026 年的分歧持续深化。
+Bengio 与 [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]] 在 2026 年的分歧持续深化。
 
 #### 核心分歧
 
@@ -188,7 +188,7 @@ Bengio 的中间立场：
 - 反对完全开源前沿模型
 - 支持小模型和工具的开源
 - 认为研究透明度重要但需平衡
-- 介于 [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]]（激进开源）和 [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]]（分层闭源）之间
+- 介于 [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]]（激进开源）和 [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]]（分层闭源）之间
 
 #### 开源风险分级矩阵
 
@@ -210,7 +210,7 @@ Bengio 在 2026 年对对齐技术路线给出系统评估：
 | Constitutional AI | 中等 | "有用方向" | Claude |
 | 可解释性 | 早期 | "最关键的研究" | Anthropic circuits |
 | 宪法约束 | 中等 | "法律层面的约束" | 政策层面 |
-| 可证明对齐 | 萌芽 | "长期目标" | [[19_业界观点/11_Ilya_Sutskever_苏茨克维/03_索引|SSI]] 方向 |
+| 可证明对齐 | 萌芽 | "长期目标" | [[19_业界观点/11_Ilya_Sutskever_苏茨克维/INDEX|SSI]] 方向 |
 | 冗余对齐 | 概念 | "必须并行多种方法" | LawZero 主张 |
 
 > "RLHF is like duct tape on a leaking dam—it helps, but it's not a real solution. We need fundamental breakthroughs in how we understand and control these systems."
@@ -241,7 +241,7 @@ Bengio 关注 AI 对劳动力的冲击：
 
 ### 与图灵奖同侪的对比
 
-| 维度 | Bengio | [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]] | [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]] |
+| 维度 | Bengio | [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]] | [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]] |
 |------|--------|---------|---------|
 | 2026 角色 | 治理框架设计师 | 公众警示者 | 技术乐观派 |
 | 主要机构 | LawZero | Hinton Institute | Meta AI |
@@ -279,7 +279,7 @@ Bengio 的影响呈现为三个层面：
 
 ### 与其他治理派的对比
 
-| 维度 | Bengio | [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]] | [[19_业界观点/19_Mustafa_Suleyman_苏莱曼/02_索引|Suleyman]] |
+| 维度 | Bengio | [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]] | [[19_业界观点/19_Mustafa_Suleyman_苏莱曼/INDEX|Suleyman]] |
 |------|--------|---------|-------------|
 | 方法 | 制度设计 | 公众警示 | 监管遏制 |
 | 主要作品 | "红绿灯"框架 | 公开警告 | 《The Coming Wave》 |
@@ -303,7 +303,7 @@ Bengio 的影响呈现为三个层面：
 
 ### "治理优先"的批评
 
-- [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]] 批评其"过度监管扼杀创新"
+- [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]] 批评其"过度监管扼杀创新"
 - 企业担忧合规成本上升
 - 部分研究者担忧"政策优先于科学"
 - 发展中国家担忧"治理新帝国主义"
@@ -327,7 +327,7 @@ Bengio 的影响呈现为三个层面：
 - Bengio 投入治理工作后，纯学术产出减少
 - Mila 部分研究员对此有微词
 - "科学家转型政客"的争议
-- 与 [[19_业界观点/11_Ilya_Sutskever_苏茨克维/03_索引|Sutskever]]（专注技术）形成对比
+- 与 [[19_业界观点/11_Ilya_Sutskever_苏茨克维/INDEX|Sutskever]]（专注技术）形成对比
 
 ### 对"红绿灯"框架的技术批评
 
@@ -343,11 +343,11 @@ Bengio 的影响呈现为三个层面：
 
 | 阵营 | 代表 | 对 Bengio 立场 |
 |------|------|----------------|
-| 激进开源 | [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]]、[[19_业界观点/08_Emad_Mostaque_莫斯塔克/03_索引|Mostaque]] | 强烈反对 |
-| 谨慎开源 | [[19_业界观点/02_Andrej_Karpathy_卡帕西/03_索引|Karpathy]]、Meta | 部分认同 |
-| 分层闭源 | [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]]、Anthropic | 表面支持 |
+| 激进开源 | [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]]、[[19_业界观点/08_Emad_Mostaque_莫斯塔克/INDEX|Mostaque]] | 强烈反对 |
+| 谨慎开源 | [[19_业界观点/02_Andrej_Karpathy_卡帕西/INDEX|Karpathy]]、Meta | 部分认同 |
+| 分层闭源 | [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]]、Anthropic | 表面支持 |
 | 全面闭源 | 传统安全派 | 完全支持 |
-| 中国开源派 | [[19_业界观点/27_Wenfeng_Liang_梁文锋/02_索引|梁文锋]] | 战略对立 |
+| 中国开源派 | [[19_业界观点/27_Wenfeng_Liang_梁文锋/INDEX|梁文锋]] | 战略对立 |
 
 ---
 
@@ -360,7 +360,7 @@ Bengio 的影响呈现为三个层面：
 | 学术界→政策 | 第 1 | 最成功的学术转政策案例 |
 | 国际机构影响 | 前 3 | 联合国、G7 顾问 |
 | 国家政策影响 | 前 5 | 加拿大、欧盟核心 |
-| 公众认知影响 | 前 10 | 仅次于 [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]]、[[19_业界观点/07_Elon_Musk_马斯克/03_索引|Musk]] |
+| 公众认知影响 | 前 10 | 仅次于 [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]]、[[19_业界观点/07_Elon_Musk_马斯克/INDEX|Musk]] |
 | 企业界影响 | 前 15 | 多家公司咨询 |
 
 ### Bengio 在 2026 年的重大会议演讲
@@ -383,7 +383,7 @@ Bengio 的影响呈现为三个层面：
 | 贡献 | 年份 | 影响 |
 |------|------|------|
 | Neural Probabilistic Language Model | 2003 | 词嵌入先驱 |
-| 词向量（与 [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]]） | 2000s | NLP 基础 |
+| 词向量（与 [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]]） | 2000s | NLP 基础 |
 | 深度学习优化 | 2000s | 训练方法 |
 | Attention 机制前身 | 2014 | 指向 Transformer |
 | GAN（指导 Goodfellow） | 2014 | 生成模型 |
@@ -418,14 +418,14 @@ Bengio 的影响呈现为三个层面：
 
 | 人物 | 关系 | 2026 互动 |
 |------|------|-----------|
-| [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]] | 图灵奖同盟 | 联合呼吁建立国际机构 |
-| [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]] | 图灵奖对手 | 持续论战 |
-| [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] | 复杂关系 | 表面合作实际张力 |
+| [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]] | 图灵奖同盟 | 联合呼吁建立国际机构 |
+| [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]] | 图灵奖对手 | 持续论战 |
+| [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] | 复杂关系 | 表面合作实际张力 |
 | [[19_业界观点/05_Dario_Amodei_阿莫迪/02_Amodei_2026_更新]] | 治理伙伴 | Anthropic 响应其框架 |
-| [[19_业界观点/19_Mustafa_Suleyman_苏莱曼/02_索引|Suleyman]] | 思想同盟 | 联合推动监管 |
-| [[19_业界观点/11_Ilya_Sutskever_苏茨克维/03_索引|Sutskever]] | 间接同盟 | SSI 与 LawZero 平行 |
-| [[19_业界观点/07_Elon_Musk_马斯克/03_索引|Musk]] | 早期盟友 | Pause 公开信联署 |
-| [[19_业界观点/03_Andrew_Ng_吴恩达/03_索引|Ng]] | 立场对立 | 反对过度监管 |
+| [[19_业界观点/19_Mustafa_Suleyman_苏莱曼/INDEX|Suleyman]] | 思想同盟 | 联合推动监管 |
+| [[19_业界观点/11_Ilya_Sutskever_苏茨克维/INDEX|Sutskever]] | 间接同盟 | SSI 与 LawZero 平行 |
+| [[19_业界观点/07_Elon_Musk_马斯克/INDEX|Musk]] | 早期盟友 | Pause 公开信联署 |
+| [[19_业界观点/03_Andrew_Ng_吴恩达/INDEX|Ng]] | 立场对立 | 反对过度监管 |
 
 ---
 

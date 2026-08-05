@@ -300,6 +300,6 @@ Attention 是本阶段最核心也最常考的概念。完整推导：
 - [[90_学习/concepts/index|学习概念索引]] — 学习阶段主题导览
 - [[90_学习/01_概念认知/03_stage1_foundation|Stage 1: 基础概念]] — 前置阶段
 - [[90_学习/01_概念认知/05_stage3_engineering|Stage 3: 工程实践]] — 下一阶段
-- [[05_大模型/04_Transformer革命/03_Transformer_Revolution|Transformer 革命]] — 核心技术代表
+- [[05_大模型/03_Transformer架构/03_Transformer_Revolution|Transformer 革命]] — 核心技术代表
 - [[03_深度学习/02_神经网络核心/09_神经网络核心|神经网络核心]] — 核心技术基础
 - [[90_学习/index|学习首页]] — 学习路径总览

@@ -1,0 +1,89 @@
+{
+  "id": "csrc.quantization.gptq_allspark.allspark_repack.cu",
+  "title": "Allspark Repack",
+  "type": "module",
+  "summary": "Module providing from, 64, ldg128_cg_0, ldg16_cg_0, grid and 3 more symbols",
+  "details": "Contains 8 functions/methods",
+  "symbols": [
+    {
+      "name": "from",
+      "kind": "function",
+      "signature": "from(K, N) to (N_32align / 4, K * 4)\n// K % 16 == 0, N % 16 == 0, N_32align % 32 == 0\ntemplate <typename FType>\n__global__ void __launch_bounds__(128)\n    rearrange_kn_weight_as_n32k16_order_ldg16_kernel(\n        const uint8_t* B, const FType* B_scale, const FType* B_zero,\n        uint8_t* B_result, FType* B_scale_result, FType* B_zero_result,\n        const int K, const int N, const int N_32align)",
+      "docstring": "",
+      "line": 8
+    },
+    {
+      "name": "64",
+      "kind": "function",
+      "signature": "64(k) * 128(n) B elements\n    // per warp process 16(k) * 128 B elements\n    const int src_row_base_idx =\n        blockIdx.x * 64 + warp_id * 16 + ((lane_id % 8) / 2) * 2;\n    const int src_col_idx =\n        blockIdx.y * 128 + (lane_id / 8) * 32 + (lane_id % 2) * 16;\n    uint8_t B_frag[4][16];\n#pragma unroll\n    for (int i = 0; i < 4; ++i)",
+      "docstring": "",
+      "line": 21
+    },
+    {
+      "name": "ldg128_cg_0",
+      "kind": "function",
+      "signature": "ldg128_cg_0(*reinterpret_cast<uint32_t*>(B_frag[i]),\n                  *(reinterpret_cast<uint32_t*>(B_frag[i]) + 1),\n                  *(reinterpret_cast<uint32_t*>(B_frag[i]) + 2),\n                  *(reinterpret_cast<uint32_t*>(B_frag[i]) + 3), B + src_offset,\n                  guard);\n    }\n\n    // reorder B\n    uint8_t B_reorder_frag[8][8];\n#pragma unroll\n    for (int i = 0; i < 4; ++i)",
+      "docstring": "",
+      "line": 32
+    },
+    {
+      "name": "ldg16_cg_0",
+      "kind": "function",
+      "signature": "ldg16_cg_0(b_scale_reg, B_scale + src_offset, src_offset < N);\n    if (B_zero != nullptr)\n      ldg16_cg_0(b_zero_reg, B_zero + src_offset, src_offset < N);\n    int dst_offset =\n        blockIdx.y * 128 + warp_id * 32 + (lane_id % 8) * 4 + lane_id / 8;\n    if (dst_offset < N_32align)",
+      "docstring": "",
+      "line": 68
+    },
+    {
+      "name": "grid",
+      "kind": "function",
+      "signature": "grid(grid_x, grid_y);\n\n  rearrange_kn_weight_as_n32k16_order_ldg16_kernel<FType>\n      <<<grid, BLOCK, 0, stream>>>(B, B_scale, B_zero, B_result, B_scale_result,\n                                   B_zero_result, K, N, N_32align);\n}\n}  // namespace allspark\n\nvoid rearrange_kn_weight_as_n32k16_order(\n    torch::Tensor const& b_qweight, torch::Tensor const& b_scales,\n    std::optional<torch::Tensor> const& b_zeros, bool has_zp,\n    torch::Tensor& b_qweight_reorder, torch::Tensor& b_scales_reorder,\n    std::optional<torch::Tensor> const& b_zeros_reorder, const int64_t K,\n    const int64_t N, const int64_t N_32align)",
+      "docstring": "",
+      "line": 92
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(b_qweight.device().is_cuda(), \"b_qweight is not on GPU\");\n  TORCH_CHECK(b_qweight.is_contiguous(), \"b_qweight is not contiguous\");\n\n  TORCH_CHECK(b_scales.device().is_cuda(), \"b_scales is not on GPU\");\n  TORCH_CHECK(b_scales.is_contiguous(), \"b_scales is not contiguous\");\n\n  TORCH_CHECK(b_qweight_reorder.device().is_cuda(),\n              \"b_qweight_reorder is not on GPU\");\n  TORCH_CHECK(b_qweight_reorder.is_contiguous(),\n              \"b_qweight_reorder is not contiguous\");\n\n  TORCH_CHECK(b_scales_reorder.device().is_cuda(),\n              \"b_scales_reorder is not on GPU\");\n  TORCH_CHECK(b_scales_reorder.is_contiguous(),\n              \"b_scales_reorder is not contiguous\");\n\n  if (has_zp)",
+      "docstring": "",
+      "line": 107
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(b_zeros.value().device().is_cuda(), \"b_zeros is not on GPU\");\n    TORCH_CHECK(b_zeros.value().is_contiguous(), \"b_zeros is not contiguous\");\n\n    TORCH_CHECK(b_zeros_reorder.value().device().is_cuda(),\n                \"b_zeros_reorder is not on GPU\");\n    TORCH_CHECK(b_zeros_reorder.value().is_contiguous(),\n                \"b_zeros_reorder is not contiguous\");\n  }\n\n  const uint8_t* matB = reinterpret_cast<const uint8_t*>(b_qweight.data_ptr());\n  const void* b_scale = b_scales.data_ptr();\n  const void* b_zero = has_zp ? b_zeros.value().data_ptr() : nullptr;\n\n  uint8_t* matB_reorder =\n      reinterpret_cast<uint8_t*>(b_qweight_reorder.data_ptr());\n  void* b_scale_reorder = b_scales_reorder.data_ptr();\n  void* b_zero_reorder = has_zp ? b_zeros_reorder.value().data_ptr() : nullptr;\n\n  cudaStream_t stream = at::cuda::getCurrentCUDAStream();\n  if (b_scales.dtype() == at::ScalarType::Half)",
+      "docstring": "",
+      "line": 124
+    },
+    {
+      "name": "TORCH_LIBRARY_IMPL_EXPAND",
+      "kind": "function",
+      "signature": "TORCH_LIBRARY_IMPL_EXPAND(TORCH_EXTENSION_NAME, CUDA, m)",
+      "docstring": "",
+      "line": 158
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "allspark_utils",
+      "core",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 8,
+    "public_symbols": 8,
+    "classes": 0,
+    "functions": 8,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/gptq_allspark/allspark_repack.cu"
+}

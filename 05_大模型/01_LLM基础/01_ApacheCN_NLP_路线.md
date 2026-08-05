@@ -143,12 +143,12 @@ model = Word2Vec(sentences, vector_size=300, window=5)
 ## Related
 
 - [[05_大模型/README|NLP & LLMs]]
-- [[05_大模型/05_LLM架构/05_LLM架构|LLM 架构]]
+- [[05_大模型/04_LLM架构/05_LLM架构|LLM 架构]]
 - [[90_学习/03_课程资源/apachecn/02_ailearning_指南|ApacheCN AILearning]]
 - [[概念/transformer-architecture|Transformer 架构]]
 - [[概念/tokenization|分词技术]]
-- [[05_大模型/01_LLM基础/06_llm_nlp|LLM 与 NLP 融合]]
-- [[05_大模型/08_提示工程/16_Prompt工程|提示工程]]
+- [[05_大模型/01_LLM基础/06_LLM_NLP_融合|LLM 与 NLP 融合]]
+- [[05_大模型/07_提示工程/16_Prompt工程|提示工程]]
 
 ## 总结
 

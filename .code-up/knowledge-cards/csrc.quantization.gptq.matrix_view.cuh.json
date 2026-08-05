@@ -1,0 +1,138 @@
+{
+  "id": "csrc.quantization.gptq.matrix_view.cuh",
+  "title": "Matrix View",
+  "type": "package",
+  "summary": "Module providing MatrixView_half, item, item_half2, return, __half2half2 and 5 more symbols",
+  "details": "Contains 7 classes: MatrixView_half, MatrixView_half_rw, MatrixView_q4_row, MatrixView_q4_column, MatrixView_q2_row. Contains 37 functions/methods",
+  "symbols": [
+    {
+      "name": "MatrixView_half",
+      "kind": "function",
+      "signature": "MatrixView_half(const half* data, const int height,\n                                             const int width)\n      : data(data), height(height), width(width)",
+      "docstring": "",
+      "line": 21
+    },
+    {
+      "name": "item",
+      "kind": "function",
+      "signature": "item(int row, int column)",
+      "docstring": "",
+      "line": 25
+    },
+    {
+      "name": "item_half2",
+      "kind": "function",
+      "signature": "item_half2(int row, int column)",
+      "docstring": "",
+      "line": 29
+    },
+    {
+      "name": "return",
+      "kind": "function",
+      "signature": "return((half2*)data)[(row * width + column) / 2];\n  }\n  __device__ __forceinline__ half2 item_half2half2(int row, int column)",
+      "docstring": "",
+      "line": 30
+    },
+    {
+      "name": "__half2half2",
+      "kind": "function",
+      "signature": "__half2half2(data[row * width + column]);\n  }\n  __device__ __forceinline__ const half* item_ptr(int row, int column)",
+      "docstring": "",
+      "line": 33
+    },
+    {
+      "name": "item4",
+      "kind": "function",
+      "signature": "item4(half (&items)[4], int row,\n                                        int column)",
+      "docstring": "",
+      "line": 38
+    },
+    {
+      "name": "item_ptr",
+      "kind": "function",
+      "signature": "item_ptr(row, column);\n    half2 i01 = ptr[0];\n    half2 i23 = ptr[1];\n    items[0] = __low2half(i01);\n    items[1] = __high2half(i01);\n    items[2] = __low2half(i23);\n    items[3] = __high2half(i23);\n  }\n  __device__ __forceinline__ void item4_f(float (&items)[4], int row,\n                                          int column)",
+      "docstring": "",
+      "line": 42
+    },
+    {
+      "name": "item_ptr",
+      "kind": "function",
+      "signature": "item_ptr(row, column);\n    half2 i01 = ptr[0];\n    half2 i23 = ptr[1];\n    items[0] = __half2float(__low2half(i01));\n    items[1] = __half2float(__high2half(i01));\n    items[2] = __half2float(__low2half(i23));\n    items[3] = __half2float(__high2half(i23));\n  }\n\n  __device__ __forceinline__ void item4_h2(half2 (&items)[4], int row,\n                                           int column)",
+      "docstring": "",
+      "line": 52
+    },
+    {
+      "name": "item_ptr",
+      "kind": "function",
+      "signature": "item_ptr(row, column);\n    half2 i01 = ptr[0];\n    half2 i23 = ptr[1];\n    items[0] = __half2half2(__low2half(i01));\n    items[1] = __half2half2(__high2half(i01));\n    items[2] = __half2half2(__low2half(i23));\n    items[3] = __half2half2(__high2half(i23));\n  }\n};\n\nclass MatrixView_half_rw {\n public:\n  half* data;\n  const int height;\n  const int width;\n\n  __device__ __forceinline__ MatrixView_half_rw(half* data, const int height,\n                                                const int width)\n      : data(data), height(height), width(width)",
+      "docstring": "",
+      "line": 63
+    },
+    {
+      "name": "item",
+      "kind": "function",
+      "signature": "item(int row, int column)",
+      "docstring": "",
+      "line": 81
+    },
+    {
+      "name": "item_half2",
+      "kind": "function",
+      "signature": "item_half2(int row, int column)",
+      "docstring": "",
+      "line": 85
+    },
+    {
+      "name": "return",
+      "kind": "function",
+      "signature": "return((half2*)data)[(row * width + column) / 2];\n  }\n  __device__ __forceinline__ half* item_ptr(int row, int column)",
+      "docstring": "",
+      "line": 86
+    },
+    {
+      "name": "set",
+      "kind": "function",
+      "signature": "set(int row, int column, half value)",
+      "docstring": "",
+      "line": 91
+    },
+    {
+      "name": "set_half2",
+      "kind": "function",
+      "signature": "set_half2(int row, int column, half2 value)",
+      "docstring": "",
+      "line": 94
+    },
+    {
+      "name": "set4",
+      "kind": "function",
+      "signature": "set4(int row, int column, half v0, half v1,\n                                       half v2, half v3)",
+      "docstring": "",
+      "line": 97
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cuda_fp16",
+      "cuda_runtime",
+      "qdq_util"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 44,
+    "public_symbols": 44,
+    "classes": 7,
+    "functions": 37,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "oop",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/gptq/matrix_view.cuh"
+}

@@ -1,0 +1,127 @@
+{
+  "id": "csrc.layernorm_kernels.cu",
+  "title": "Layernorm Kernels",
+  "type": "module",
+  "summary": "Module providing TODO, BlockReduce, rsqrtf, fused_add_rms_norm_kernel, static_assert and 5 more symbols",
+  "details": "Contains 13 functions/methods",
+  "symbols": [
+    {
+      "name": "TODO",
+      "kind": "function",
+      "signature": "TODO(woosuk): Further optimize this kernel.\ntemplate <typename scalar_t>\n__global__ void rms_norm_kernel(\n    scalar_t* __restrict__ out,           // [..., hidden_size]\n    const scalar_t* __restrict__ input,   // [..., hidden_size]\n    const scalar_t* __restrict__ weight,  // [hidden_size]\n    const float epsilon, const int num_tokens, const int hidden_size)",
+      "docstring": "",
+      "line": 15
+    },
+    {
+      "name": "BlockReduce",
+      "kind": "function",
+      "signature": "BlockReduce(reduceStore).Reduce(variance, cub::Sum{}, blockDim.x);\n\n  if (threadIdx.x == 0)",
+      "docstring": "",
+      "line": 32
+    },
+    {
+      "name": "rsqrtf",
+      "kind": "function",
+      "signature": "rsqrtf(variance / hidden_size + epsilon);\n  }\n  __syncthreads();\n\n  for (int idx = threadIdx.x; idx < hidden_size; idx += blockDim.x)",
+      "docstring": "",
+      "line": 35
+    },
+    {
+      "name": "fused_add_rms_norm_kernel",
+      "kind": "function",
+      "signature": "fused_add_rms_norm_kernel(\n    scalar_t* __restrict__ input,         // [..., hidden_size]\n    scalar_t* __restrict__ residual,      // [..., hidden_size]\n    const scalar_t* __restrict__ weight,  // [hidden_size]\n    const float epsilon, const int num_tokens, const int hidden_size)",
+      "docstring": "",
+      "line": 51
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_pod_v<_f16Vec<scalar_t, width>>);\n  static_assert(sizeof(_f16Vec<scalar_t, width>) == sizeof(scalar_t) * width);\n\n  const int vec_hidden_size = hidden_size / width;\n  __shared__ float s_variance;\n  float variance = 0.0f;\n  /* These and the argument pointers are all declared `restrict` as they are\n     not aliased in practice. Argument pointers should not be dereferenced\n     in this kernel as that would be undefined behavior */\n  auto* __restrict__ input_v =\n      reinterpret_cast<_f16Vec<scalar_t, width>*>(input);\n  auto* __restrict__ residual_v =\n      reinterpret_cast<_f16Vec<scalar_t, width>*>(residual);\n  auto* __restrict__ weight_v =\n      reinterpret_cast<const _f16Vec<scalar_t, width>*>(weight);\n\n  for (int idx = threadIdx.x; idx < vec_hidden_size; idx += blockDim.x)",
+      "docstring": "",
+      "line": 57
+    },
+    {
+      "name": "sum_squares",
+      "kind": "function",
+      "signature": "sum_squares();\n    residual_v[id] = temp;\n  }\n\n  using BlockReduce = cub::BlockReduce<float, 1024>;\n  __shared__ typename BlockReduce::TempStorage reduceStore;\n  variance = BlockReduce(reduceStore).Reduce(variance, cub::Sum{}, blockDim.x);\n\n  if (threadIdx.x == 0)",
+      "docstring": "",
+      "line": 78
+    },
+    {
+      "name": "rsqrtf",
+      "kind": "function",
+      "signature": "rsqrtf(variance / hidden_size + epsilon);\n  }\n  __syncthreads();\n\n  for (int idx = threadIdx.x; idx < vec_hidden_size; idx += blockDim.x)",
+      "docstring": "",
+      "line": 87
+    },
+    {
+      "name": "fused_add_rms_norm_kernel",
+      "kind": "function",
+      "signature": "fused_add_rms_norm_kernel(\n    scalar_t* __restrict__ input,         // [..., hidden_size]\n    scalar_t* __restrict__ residual,      // [..., hidden_size]\n    const scalar_t* __restrict__ weight,  // [hidden_size]\n    const float epsilon, const int num_tokens, const int hidden_size)",
+      "docstring": "",
+      "line": 104
+    },
+    {
+      "name": "BlockReduce",
+      "kind": "function",
+      "signature": "BlockReduce(reduceStore).Reduce(variance, cub::Sum{}, blockDim.x);\n\n  if (threadIdx.x == 0)",
+      "docstring": "",
+      "line": 123
+    },
+    {
+      "name": "rsqrtf",
+      "kind": "function",
+      "signature": "rsqrtf(variance / hidden_size + epsilon);\n  }\n  __syncthreads();\n\n  for (int idx = threadIdx.x; idx < hidden_size; idx += blockDim.x)",
+      "docstring": "",
+      "line": 126
+    },
+    {
+      "name": "rms_norm",
+      "kind": "function",
+      "signature": "rms_norm(torch::Tensor& out,     // [..., hidden_size]\n              torch::Tensor& input,   // [..., hidden_size]\n              torch::Tensor& weight,  // [hidden_size]\n              double epsilon)",
+      "docstring": "",
+      "line": 137
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(out.is_contiguous());\n  TORCH_CHECK(input.is_contiguous());\n  TORCH_CHECK(weight.is_contiguous());\n\n  int hidden_size = input.size(-1);\n  int num_tokens = input.numel() / hidden_size;\n\n  dim3 grid(num_tokens);\n  dim3 block(std::min(hidden_size, 1024));\n  const at::cuda::OptionalCUDAGuard device_guard(device_of(input));\n  const cudaStream_t stream = at::cuda::getCurrentCUDAStream();\n  VLLM_DISPATCH_FLOATING_TYPES(input.scalar_type(), \"rms_norm_kernel\", [&] {\n    vllm::rms_norm_kernel<scalar_t><<<grid, block, 0, stream>>>(\n        out.data_ptr<scalar_t>(), input.data_ptr<scalar_t>(),\n        weight.data_ptr<scalar_t>(), epsilon, num_tokens, hidden_size);\n  });\n}\n\n#define LAUNCH_FUSED_ADD_RMS_NORM(width)                                       \\\n  VLLM_DISPATCH_FLOATING_TYPES(                                                \\\n      input.scalar_type(), \"fused_add_rms_norm_kernel\", [&] {                  \\\n        vllm::fused_add_rms_norm_kernel<scalar_t, width>                       \\\n            <<<grid, block, 0, stream>>>(input.data_ptr<scalar_t>(),           \\\n                                         residual.data_ptr<scalar_t>(),        \\\n                                         weight.data_ptr<scalar_t>(), epsilon, \\\n                                         num_tokens, hidden_size);             \\\n      });\n\nvoid fused_add_rms_norm(torch::Tensor& input,     // [..., hidden_size]\n                        torch::Tensor& residual,  // [..., hidden_size]\n                        torch::Tensor& weight,    // [hidden_size]\n                        double epsilon)",
+      "docstring": "",
+      "line": 142
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size(-1);\n  int num_tokens = input.numel() / hidden_size;\n\n  dim3 grid(num_tokens);\n  /* This kernel is memory-latency bound in many scenarios.\n     When num_tokens is large, a smaller block size allows\n     for increased block occupancy on CUs and better latency\n     hiding on global mem ops. */\n  const int max_block_size = (num_tokens < 256) ? 1024 : 256;\n  dim3 block(std::min(hidden_size, max_block_size));\n  const at::cuda::OptionalCUDAGuard device_guard(device_of(input));\n  const cudaStream_t stream = at::cuda::getCurrentCUDAStream();\n  /*If the tensor types are FP16/BF16, try to use the optimized kernel\n    with packed + vectorized ops.\n    Max optimization is achieved with a width-8 vector of FP16/BF16s\n    since we can load at most 128 bits at once in a global memory op.\n    However, this requires each tensor's data to be aligned to 16\n    bytes.\n   */\n  auto inp_ptr = reinterpret_cast<std::uintptr_t>(input.data_ptr());\n  auto res_ptr = reinterpret_cast<std::uintptr_t>(residual.data_ptr());\n  auto wt_ptr = reinterpret_cast<std::uintptr_t>(weight.data_ptr());\n  bool ptrs_are_aligned =\n      inp_ptr % 16 == 0 && res_ptr % 16 == 0 && wt_ptr % 16 == 0;\n  if (ptrs_are_aligned && hidden_size % 8 == 0)",
+      "docstring": "",
+      "line": 175
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "c10",
+      "cub",
+      "dispatch_utils",
+      "hipcub",
+      "torch",
+      "type_convert"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 13,
+    "public_symbols": 13,
+    "classes": 0,
+    "functions": 13,
+    "internal_deps": 0,
+    "external_deps": 6,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/layernorm_kernels.cu"
+}

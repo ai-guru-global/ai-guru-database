@@ -28,9 +28,9 @@ name_zh: "测试文档模板"
 
 ## 2. 交叉引用
 
-- [架构设计](../architecture/01_索引.md)
-- [研发指南](../development/01_索引.md)
-- [运维指南](../operations/01_索引.md)
+- [架构设计](../architecture/INDEX.md)
+- [研发指南](../development/INDEX.md)
+- [运维指南](../operations/INDEX.md)
 
 ---
 

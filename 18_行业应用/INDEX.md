@@ -1,0 +1,110 @@
+---
+title: AI Applications Industry
+type: index
+created: 2026-07-02
+updated: 2026-07-02
+sources: []
+name_zh: "行业应用"
+name_en: "Industry Applications"
+---
+
+# AI Applications Industry
+
+> 中文简称：行业应用 ｜ English Name: Industry Applications
+
+This page indexes the contents of `行业应用`.
+
+## Subdirectories
+
+- [[18_行业应用/10_农业/Agriculture_index|Agriculture]]
+- [[18_行业应用/02_AI_for_Science_科学计算/index|AI For Science]]
+- [[18_行业应用/06_自动驾驶/Autonomous_Driving_index|Autonomous Driving]]
+- [[18_行业应用/18_代码生成/Code_Generation_index|Code Generation]]
+- [[18_行业应用/13_内容与媒体/Content_Media_index|Content Media]]
+- [[18_行业应用/05_教育/index|Education]]
+- [[18_行业应用/09_能源与气候/Energy_Climate_index|Energy Climate]]
+- [[18_行业应用/04_金融/index|Finance]]
+- [[18_行业应用/03_医疗健康/index|Healthcare]]
+- [[18_行业应用/12_人力资源/HR_Recruitment_index|HR Recruitment]]
+- [[18_行业应用/11_法律与政务/Legal_Government_index|Legal Government]]
+- [[18_行业应用/07_智能制造/Manufacturing_index|Manufacturing]]
+- [[18_行业应用/08_零售电商/Retail_Ecommerce_index|Retail Ecommerce]]
+- [[18_行业应用/15_安全与网安/Security_Cybersecurity_index|Security Cybersecurity]]
+- [[18_行业应用/16_供应链物流/Supply_Chain_Logistics_index|Supply Chain Logistics]]
+
+## Files
+
+- [[18_行业应用/01_行业概览/04_ai_industry_applications|AI Applications Industry]]
+- [[18_行业应用/01_行业概览/04_ai_industry_applications|AI Applications Industry For Dummy]]
+- [[16_编程/05_开发工具/GenAI_L10_Building_Low_Code_AI_Applications|Genai L10 Building Low Code AI Applications]]
+- [[18_行业应用/Industry-in-nutshell|Industry In Nutshell]]
+- [[18_行业应用/01_行业概览/04_ai_industry_applications|Industry Applications In Nutshell]]
+- [[18_行业应用/Industry_Comparison_2026|Industry Comparison 2026]]
+- [[18_行业应用/16_供应链物流/Logistics_Supply_Chain|Logistics Supply Chain]]
+- [[18_行业应用/README|README]]
+- [[18_行业应用/README|README For Dummy]]
+
+## 专题深度解析
+
+| 专题 | 核心要点 | 技术细节 | 实践建议 |
+|------|----------|----------|----------|
+| 基础原理 | 理解底层机制 | 数学推导+直觉解释 | 先理解再应用 |
+| 算法实现 | 掌握核心算法 | 伪代码+复杂度分析 | 手写实现加深理解 |
+| 工程优化 | 生产级优化 | 性能profiling+调优 | 数据驱动优化 |
+| 前沿方向 | 了解最新进展 | 论文解读+趋势分析 | 选择性跟进 |
+| 应用落地 | 解决实际问题 | 方案设计+效果验证 | 从简单开始迭代 |
+
+## 技术方案对比
+
+| 方案 | 优势 | 劣势 | 适用场景 | 成熟度 |
+|------|------|------|----------|--------|
+| 经典方法 | 可解释+稳定 | 能力有限 | 简单任务/合规要求 | 成熟 |
+| 深度学习方法 | 强大表达力 | 黑箱+数据依赖 | 复杂模式识别 | 成熟 |
+| 大模型方法 | 通用能力强 | 成本高+幻觉 | 通用NLP/推理 | 发展中 |
+| 混合方法 | 取长补短 | 复杂度高 | 企业级应用 | 发展中 |
+
+## 实验与验证方法
+
+| 实验类型 | 目的 | 方法 | 评估指标 |
+|----------|------|------|----------|
+| 消融实验 | 验证组件贡献 | 逐一移除组件 | 性能变化量 |
+| 对比实验 | 方案优劣比较 | 相同条件对比 | 多维度指标 |
+| 参数敏感性 | 找最优配置 | 网格/随机搜索 | 最优参数组合 |
+| 鲁棒性测试 | 验证稳定性 | 噪声/扰动输入 | 性能下降幅度 |
+| 可扩展性 | 验证规模适应 | 逐步增大数据/模型 | 性能-规模曲线 |
+
+## 学习资源分级
+
+| 级别 | 资源类型 | 推荐 | 时间投入 |
+|------|----------|------|----------|
+| 入门 | 科普文章/视频 | 3Blue1Brown/科普中国 | 2-4小时 |
+| 基础 | 教材/在线课程 | 经典教材+Coursera | 2-4周 |
+| 进阶 | 论文/技术博客 | 顶会论文+工程博客 | 4-8周 |
+| 实战 | 开源项目/竞赛 | Kaggle/GitHub | 持续 |
+| 研究 | 前沿论文/复现 | arXiv+论文复现 | 持续 |
+
+## 常见面试/考核要点
+
+| 考点 | 典型问题 | 回答框架 |
+|------|----------|----------|
+| 概念理解 | 解释XX的原理 | 定义+直觉+公式+应用 |
+| 方法对比 | A和B的区别 | 维度对比+适用场景 |
+| 实践应用 | 如何解决XX问题 | 分析+方案+权衡+验证 |
+| 前沿认知 | XX的最新进展 | 现状+突破+挑战+展望 |
+| 系统设计 | 设计一个XX系统 | 需求+架构+权衡+扩展 |
+
+## 持续学习建议
+
+- [ ] 每周阅读1-2篇相关论文或技术博客
+- [ ] 每月完成一个实践项目或实验
+- [ ] 每季度更新知识体系
+- [ ] 参与社区讨论和技术分享
+- [ ] 关注顶会最新成果
+- [ ] 将学习成果应用到实际工作中
+
+## 统计
+
+| 指标 | 数值 |
+|------|------|
+| 总文件数 | 47 |
+| 最后更新 | 2026-08-05 |

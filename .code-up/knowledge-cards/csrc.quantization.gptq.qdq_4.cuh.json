@@ -1,0 +1,72 @@
+{
+  "id": "csrc.quantization.gptq.qdq_4.cuh",
+  "title": "Qdq 4",
+  "type": "module",
+  "summary": "Module providing shuffle_4bit_8, dequant_4bit_8, __float2half_rn, z1, z1 and 1 more symbols",
+  "details": "Contains 6 functions/methods",
+  "symbols": [
+    {
+      "name": "shuffle_4bit_8",
+      "kind": "function",
+      "signature": "shuffle_4bit_8(uint32_t* q, int stride)",
+      "docstring": "",
+      "line": 14
+    },
+    {
+      "name": "dequant_4bit_8",
+      "kind": "function",
+      "signature": "dequant_4bit_8(const uint32_t q_0,\n                                               half2 (&dq)[4], int stride,\n                                               const uint32_t zero)",
+      "docstring": "",
+      "line": 29
+    },
+    {
+      "name": "__float2half_rn",
+      "kind": "function",
+      "signature": "__float2half_rn(1.0f / 16.0f);\n  const half2 y16 = __halves2half2(y16_, y16_);\n  const half_uint16 z1_(0xe400 | zero);  // half(-1024.0f - zero);\n  const half z16_ = __hsub(__int2half_rn(-64), __int2half_rn(zero));\n  const half2 z1 = __half2half2(z1_.as_half);\n  const half2 z16 = __half2half2(z16_);\n\n  uint32_t qa = q_0;\n  half2_uint32 q0((qa & 0x000f000f) | c0);  // half2(q[ 0], q[ 1])      + 1024\n  half2_uint32 q1((qa & 0x00f000f0) | c0);  // half2(q[ 2], q[ 3]) * 16 + 1024\n  qa >>= 8;\n  half2_uint32 q2((qa & 0x000f000f) | c0);  // half2(q[ 4], q[ 5])      + 1024\n  half2_uint32 q3((qa & 0x00f000f0) | c0);  // half2(q[ 6], q[ 7]) * 16 + 1024\n\n  dq[0] = __hadd2(q0.as_half2, z1);\n  dq[1] = __hfma2(q1.as_half2, y16, z16);\n  dq[2] = __hadd2(q2.as_half2, z1);\n  dq[3] = __hfma2(q3.as_half2, y16, z16);\n}\n\n__forceinline__ __device__ void dequant_4bit_8_prep_zero_scale(\n    const uint32_t zero, const half scale, half2 (&z1z16)[2],\n    half2 (&y1y16)[2])",
+      "docstring": "",
+      "line": 35
+    },
+    {
+      "name": "z1",
+      "kind": "function",
+      "signature": "z1(0xe400 | zero);  // half(-1024.0f - zero);\n  half z16 = __hsub(__int2half_rn(-64), __int2half_rn(zero));\n\n  half2 scale2 = __half2half2(scale);\n\n  z1z16[0] = __hmul2(scale2, __half2half2(z1.as_half));\n  z1z16[1] = __hmul2(scale2, __half2half2(z16));\n\n  const half y1 = __float2half_rn(1.0f);\n  const half y16 = __float2half_rn(1.0f / 16.0f);\n\n  y1y16[0] = __hmul2(scale2, __half2half2(y1));\n  y1y16[1] = __hmul2(scale2, __half2half2(y16));\n}\n\n__forceinline__ __device__ void dequant_4bit_8_prep_zero(const uint32_t zero,\n                                                         half2 (&z1z16)[2],\n                                                         half2 (&y1y16)[2])",
+      "docstring": "",
+      "line": 57
+    },
+    {
+      "name": "z1",
+      "kind": "function",
+      "signature": "z1(0xe400 | zero);  // half(-1024.0f - zero);\n  half z16 = __hsub(__int2half_rn(-64), __int2half_rn(zero));\n\n  z1z16[0] = __half2half2(z1.as_half);\n  z1z16[1] = __half2half2(z16);\n\n  const half y1 = __float2half_rn(1.0f);\n  const half y16 = __float2half_rn(1.0f / 16.0f);\n\n  y1y16[0] = __half2half2(y1);\n  y1y16[1] = __half2half2(y16);\n}\n\n__forceinline__ __device__ void dequant_4bit_8_gptq(const uint32_t q_0,\n                                                    half2 (&dq)[4],\n                                                    half2 (&z1z16)[2],\n                                                    half2 (&y1y16)[2],\n                                                    int stride, bool scaled)",
+      "docstring": "",
+      "line": 75
+    },
+    {
+      "name": "q0",
+      "kind": "function",
+      "signature": "q0((qa & 0x000f000f) |\n                  c0);  // half2( q[0]      + 1024, q[1]      + 1024 )\n  half2_uint32 q1((qa & 0x00f000f0) |\n                  c0);  // half2( q[2] * 16 + 1024, q[3] * 16 + 1024 )\n  qa >>= 8;\n  half2_uint32 q2((qa & 0x000f000f) |\n                  c0);  // half2( q[4]      + 1024, q[5]      + 1024 )\n  half2_uint32 q3((qa & 0x00f000f0) |\n                  c0);  // half2( q[6] * 16 + 1024, q[7] * 16 + 1024 )\n\n  if (scaled)",
+      "docstring": "",
+      "line": 96
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "qdq_util"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 6,
+    "public_symbols": 6,
+    "classes": 0,
+    "functions": 6,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/gptq/qdq_4.cuh"
+}

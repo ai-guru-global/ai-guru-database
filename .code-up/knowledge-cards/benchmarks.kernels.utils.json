@@ -1,0 +1,98 @@
+{
+  "id": "benchmarks.kernels.utils",
+  "title": "Utils",
+  "type": "package",
+  "summary": "Module providing reset, n_args, collapse_argpool, get_cuda_graph_runner, run_cudagrah and 4 more symbols",
+  "details": "Contains 4 classes: CudaGraphBenchParams, ArgPool, Bench, ArgsIterator. Contains 9 functions/methods",
+  "symbols": [
+    {
+      "name": "reset",
+      "kind": "function",
+      "signature": "def reset(self)",
+      "docstring": "",
+      "line": 49
+    },
+    {
+      "name": "n_args",
+      "kind": "function",
+      "signature": "def n_args(self)",
+      "docstring": "",
+      "line": 52
+    },
+    {
+      "name": "collapse_argpool",
+      "kind": "function",
+      "signature": "def collapse_argpool(self, *args, **kwargs)",
+      "docstring": "",
+      "line": 87
+    },
+    {
+      "name": "get_cuda_graph_runner",
+      "kind": "function",
+      "signature": "def get_cuda_graph_runner(self)",
+      "docstring": "",
+      "line": 121
+    },
+    {
+      "name": "run_cudagrah",
+      "kind": "function",
+      "signature": "def run_cudagrah(self) -> TMeasurement:\n        assert self.use_cuda_graph\n        globals = {\"g\": self.g}\n\n        return TBenchmark.Timer(\n            stmt=\"g.replay()\",\n            globals=globals,\n            label=(\n                f\"{self.label}\"\n                f\" | cugraph {self.cuda_graph_params.num_ops_in_cuda_graph} ops\"\n            ),\n            sub_label=self.sub_label,\n            description=self.description,\n        ).blocked_autorange(min_run_time=self.min_run_time)\n\n    def run_eager(self) -> TMeasurement:\n        setup = None\n        stmt = None\n        globals = None\n\n        has_arg_pool = self.args_iterator.n_args > 1\n        if has_arg_pool:\n            setup = \"\"\"\n                    args_iterator.reset()\n                    args_it = args_iterator.__next__()\n                    \"\"\"\n            stmt = \"\"\"\n                    args, kwargs = next(args_it)\n                    fn(*args, **kwargs)\n                    \"\"\"\n            globals = {\"fn\": self.fn, \"args_iterator\": self.args_iterator}\n        else:\n            # no arg pool. Just use the args and kwargs directly\n            self.args_iterator.reset()\n            args_it = self.args_iterator.__next__()\n            args, kwargs = next(args_it)\n\n            setup = \"\"\n            stmt = \"\"\"\n                    fn(*args, **kwargs)\n                   \"\"\"\n            globals = {\"fn\": self.fn, \"args\": args, \"kwargs\": kwargs}\n\n        return TBenchmark.Timer(\n            stmt=stmt,\n            setup=setup,\n            globals=globals,\n            label=self.label,\n            sub_label=self.sub_label,\n            description=self.description,\n        ).blocked_autorange(min_run_time=self.min_run_time)\n\n    def run(self) -> TMeasurement:\n        timer = None\n        if self.use_cuda_graph:  # noqa SIM108\n            timer = self.run_cudagrah()\n        else:\n            timer = self.run_eager()\n        if not timer.meets_confidence() or timer.has_warnings:\n            print(\"Doesn't meet confidence - re-running bench ...\")\n            return self.run()\n        return timer\n\n    def __enter__(self):\n        return self\n\n    def __exit__(self, exc_type, exc_value, traceback):\n        if exc_type",
+      "docstring": "",
+      "line": 144
+    },
+    {
+      "name": "CudaGraphBenchParams",
+      "kind": "class",
+      "signature": "class CudaGraphBenchParams",
+      "docstring": "",
+      "line": 13
+    },
+    {
+      "name": "ArgPool",
+      "kind": "class",
+      "signature": "class ArgPool",
+      "docstring": "When some argument of the benchmarking function is annotated with this type,\n    the benchmarking class (BenchMM) will collapse the argument to a pick a\n    single value from the given list of values,",
+      "line": 18
+    },
+    {
+      "name": "Bench",
+      "kind": "class",
+      "signature": "class Bench",
+      "docstring": "",
+      "line": 34
+    },
+    {
+      "name": "ArgsIterator",
+      "kind": "class",
+      "signature": "class ArgsIterator",
+      "docstring": "",
+      "line": 35
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "collections",
+      "dataclasses",
+      "torch",
+      "typing"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 13,
+    "public_symbols": 9,
+    "classes": 4,
+    "functions": 9,
+    "internal_deps": 0,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 95
+  },
+  "tags": [
+    "oop",
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/kernels/utils.py"
+}

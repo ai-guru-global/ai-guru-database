@@ -1,0 +1,68 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_helper.hpp",
+  "title": "Scaled Mm Helper",
+  "type": "module",
+  "summary": "Module providing dispatch_scaled_mm, TORCH_CHECK, TORCH_CHECK, fp8_func, int8_func",
+  "details": "Contains 5 functions/methods",
+  "symbols": [
+    {
+      "name": "dispatch_scaled_mm",
+      "kind": "function",
+      "signature": "dispatch_scaled_mm(torch::Tensor& c, torch::Tensor const& a,\n                        torch::Tensor const& b, torch::Tensor const& a_scales,\n                        torch::Tensor const& b_scales,\n                        std::optional<torch::Tensor> const& bias,\n                        Fp8Func fp8_func, Int8Func int8_func,\n                        BlockwiseFunc blockwise_func)",
+      "docstring": "",
+      "line": 3
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(a_scales.dtype() == torch::kFloat32);\n  TORCH_CHECK(b_scales.dtype() == torch::kFloat32);\n\n  int M = a.size(0), N = b.size(1), K = a.size(1);\n\n  if ((a_scales.numel() == 1 || a_scales.numel() == a.size(0)) &&\n      (b_scales.numel() == 1 || b_scales.numel() == b.size(1)))",
+      "docstring": "",
+      "line": 11
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(a_scales.is_contiguous() && b_scales.is_contiguous());\n    if (a.dtype() == torch::kFloat8_e4m3fn)",
+      "docstring": "",
+      "line": 19
+    },
+    {
+      "name": "fp8_func",
+      "kind": "function",
+      "signature": "fp8_func(c, a, b, a_scales, b_scales, bias);\n    } else {\n      TORCH_CHECK(a.dtype() == torch::kInt8);\n      if constexpr (!std::is_same_v<Int8Func, std::nullptr_t>)",
+      "docstring": "",
+      "line": 21
+    },
+    {
+      "name": "int8_func",
+      "kind": "function",
+      "signature": "int8_func(c, a, b, a_scales, b_scales, bias);\n      } else {\n        TORCH_CHECK(false, \"Int8 not supported for this architecture\");\n      }\n    }\n  } else {\n    TORCH_CHECK(a_scales.dim() == 2, \"a scale must be 2d tensor.\");\n    TORCH_CHECK(b_scales.dim() == 2, \"b scale must be 2d tensor.\");\n    int32_t version_num = get_sm_version_num();\n    if (version_num >= 100)",
+      "docstring": "",
+      "line": 25
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cuda_utils",
+      "cutlass_extensions",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 5,
+    "public_symbols": 5,
+    "classes": 0,
+    "functions": 5,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/c3x/scaled_mm_helper.hpp"
+}

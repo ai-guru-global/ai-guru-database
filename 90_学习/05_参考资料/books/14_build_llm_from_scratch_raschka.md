@@ -336,7 +336,7 @@ GPT-2 small (124M):
 | Ch 3 注意力 | Self/Multi-Head Attention | [[03_深度学习/]] | 注意力机制 |
 | Ch 4 GPT 实现 | Transformer Block | [[05_大模型/01_LLM基础]] | 架构实现 |
 | Ch 5 预训练 | 训练循环、损失 | [[07_模型训练/]] | 预训练流程 |
-| Ch 6-7 微调 | SFT 分类/指令 | [[05_大模型/07_微调技术/04_GenAI_L18_微调_LLMs]] | 微调技术 |
+| Ch 6-7 微调 | SFT 分类/指令 | [[05_大模型/06_微调技术/04_GenAI_L18_微调_LLMs]] | 微调技术 |
 | 全书 | 从零实现 | [[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading]] | Transformer 论文导读 |
 
 ## 适合人群

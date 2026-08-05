@@ -1,0 +1,53 @@
+{
+  "id": "benchmarks.overheads.benchmark_hashing",
+  "title": "Benchmark Hashing",
+  "type": "module",
+  "summary": "Module providing main, LONG_PROMPT, LONG_PROMPT",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "main",
+      "kind": "function",
+      "signature": "def main(args)",
+      "docstring": "",
+      "line": 15
+    },
+    {
+      "name": "LONG_PROMPT",
+      "kind": "constant",
+      "signature": "LONG_PROMPT = ...",
+      "docstring": "",
+      "line": 11
+    },
+    {
+      "name": "LONG_PROMPT",
+      "kind": "constant",
+      "signature": "LONG_PROMPT = ...",
+      "docstring": "",
+      "line": 12
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cProfile",
+      "pstats",
+      "vllm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 3,
+    "public_symbols": 3,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 6
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/overheads/benchmark_hashing.py"
+}

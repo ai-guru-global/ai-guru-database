@@ -1,0 +1,136 @@
+{
+  "id": "csrc.cutlass_extensions.vllm_numeric_conversion.cuh",
+  "title": "Vllm Numeric Conversion",
+  "type": "module",
+  "summary": "Module providing convert, constexpr, printf, convert, Converter::convert and 5 more symbols",
+  "details": "Contains 66 functions/methods",
+  "symbols": [
+    {
+      "name": "convert",
+      "kind": "function",
+      "signature": "convert(source_type const& source)",
+      "docstring": "",
+      "line": 28
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(std::is_same_v<IlvBlkLayout, void>)",
+      "docstring": "",
+      "line": 32
+    },
+    {
+      "name": "printf",
+      "kind": "function",
+      "signature": "printf(\n            \"Convert %s <= %s (N = %d, IlvBlkLayout = void), not implemented\\n\",\n            nameof_v<T>, nameof_v<S>, N);\n      } else {\n        printf(\n            \"Convert %s <= %s (N = %d, size(IlvBlkLayout{}) = %d), not \"\n            \"implemented\\n\",\n            nameof_v<T>, nameof_v<S>, N, size(IlvBlkLayout{}));\n      }\n      __brkpt();\n    }\n    return {};\n  }\n\n  CUTLASS_DEVICE\n  result_type operator()(source_type const& s)",
+      "docstring": "",
+      "line": 33
+    },
+    {
+      "name": "convert",
+      "kind": "function",
+      "signature": "convert(s); }\n};\n\ntemplate <typename IlvBlkLayout, typename T, typename S, int N,\n          FloatRoundStyle Round>\nstruct InterleavedNumericArrayConverter<\n    IlvBlkLayout, T, S, N, Round,\n    std::enable_if_t<is_identity_layout<IlvBlkLayout>()>> {\n  using Converter = NumericArrayConverter<T, S, N, Round>;\n\n  using result_type = typename Converter::result_type;\n  using source_type = typename Converter::source_type;\n\n  CUTLASS_DEVICE\n  static result_type convert(source_type const& source)",
+      "docstring": "",
+      "line": 49
+    },
+    {
+      "name": "Converter::convert",
+      "kind": "function",
+      "signature": "Converter::convert(source);\n  }\n\n  CUTLASS_DEVICE\n  result_type operator()(source_type const& s)",
+      "docstring": "",
+      "line": 63
+    },
+    {
+      "name": "convert",
+      "kind": "function",
+      "signature": "convert(s); }\n};\n\ntemplate <typename RegConvert32bit, typename T, typename S, int N>\nstruct ArrayConverterPacked32Bit {\n  using result_type = Array<T, N>;\n  using source_type = Array<S, N>;\n\n  using result_packed_8_t = Array<T, 8>;\n  using result_packed_4_t = Array<T, 4>;\n  using result_packed_2_t = Array<T, 2>;\n  using src_packed_8_t = Array<S, 8>;\n  using src_packed_4_t = Array<S, 4>;\n  using src_packed_2_t = Array<S, 2>;\n\n  static_assert(N % 2 == 0, \"N must be a multiple of 2\");\n  static_assert(cutlass::sizeof_bits_v<S> >= 4);  // TODO: add 16 packed sources\n  static_assert(32 % cutlass::sizeof_bits_v<S> == 0);\n  static constexpr auto src_elems_per_32bit_reg =\n      32 / cutlass::sizeof_bits_v<S>;\n\n  // Maybe not Valid. ScalarConverter will not actually work unless\n  // NumericConverter<T, S, Round> is implemented. However it won't be used\n  // anyways since we assert N % 2 == 0, just here for compliance with\n  // VectorizedConverter.\n  using ScalarConverter = NumericConverter<T, S>;\n\n  template <typename PackedSrc>\n  CUTLASS_DEVICE static auto to_regs(PackedSrc const& src)",
+      "docstring": "",
+      "line": 68
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(sizeof(PackedSrc) == 1)",
+      "docstring": "",
+      "line": 96
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(sizeof(PackedSrc) == 2)",
+      "docstring": "",
+      "line": 99
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(sizeof(PackedSrc) == 4)",
+      "docstring": "",
+      "line": 101
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(sizeof(PackedSrc) == 8);\n      return reinterpret_cast<Array<uint32_t, 2> const&>(src);\n    }\n  }\n\n  // The core converter uses bit tricks to construct a known FP16 number, then\n  // does a subtraction in FP16 for the final result.\n  template <typename PackedResultType, typename PackedSrcType>\n  CUTLASS_DEVICE static PackedResultType packed_convert(\n      PackedSrcType const& source)",
+      "docstring": "",
+      "line": 103
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(PackedSrcType::kElements == PackedResultType::kElements);\n    static_assert(PackedResultType::kElements == 2 ||\n                      PackedResultType::kElements == 4 ||\n                      PackedResultType::kElements == 8,\n                  \"Invalid PackedResultType must be 2, 4 or 8.\");\n    static_assert(std::is_same_v<typename PackedSrcType::Element, S>);\n    static_assert(std::is_same_v<typename PackedResultType::Element, T>);\n\n    return RegConvert32bit::template convert<PackedResultType>(to_regs(source));\n  }\n\n  friend class detail::VectorizedConverter;\n\n public:\n  CUTLASS_DEVICE static result_type convert(source_type const& source)",
+      "docstring": "",
+      "line": 113
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(src_elems_per_32bit_reg >= 8)",
+      "docstring": "",
+      "line": 133
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(src_elems_per_32bit_reg >= 4)",
+      "docstring": "",
+      "line": 139
+    },
+    {
+      "name": "lut_4bit_to_8bit_convert",
+      "kind": "function",
+      "signature": "lut_4bit_to_8bit_convert(\n    uint32_t src)",
+      "docstring": "",
+      "line": 156
+    },
+    {
+      "name": "half",
+      "kind": "function",
+      "signature": "half(i.e. LUT[0:7]) if not set. Then move\n  //  into bit position 0x4 of each nibble so when or'd with final_prmt_base it\n  //  selects the correct candidate. When elements in final_prmt_base\n  //  are >= 0x4, the high candidate is selected (i.e. LUT[8:15]), when elements\n  //  are  < 0x4, the low candidate is selected (i.e. LUT[0:7])\n  uint32_t high_bit = (src & 0x88888888) >> 1;\n\n  // `high_bit` is OR'd with 0x31203120 to find the correct value in the LUT\n  // (selects correct high or low candidate)\n  const uint32_t final_prmt_base = 0x32103210;\n\n  // Ignore the high bit when indexing into LUT, for each 4bit value\n  //  we index into both the high and low candidates then use\n  //  high_bit | final_prmt_base to select the correct candidate\n  uint32_t lut_idx = (src & 0x77777777);\n\n  auto pack = uint8_t a, uint8_t b, uint8_t c, uint8_t d",
+      "docstring": "",
+      "line": 162
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cutlass",
+      "cutlass_extensions"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 66,
+    "public_symbols": 66,
+    "classes": 0,
+    "functions": 66,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cutlass_extensions/vllm_numeric_conversion.cuh"
+}

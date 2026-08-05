@@ -165,8 +165,8 @@ GPT-1 (117M) → GPT-2 (1.5B) → GPT-3 (175B) → GPT-3.5 → GPT-4 → GPT-4o 
 
 ## See Also (深度专题)
 
-- [[05_大模型/14_全球LLM生态/09_OpenAI_深入分析|OpenAI 深度解析]] — GPT 系列架构演进、RLHF 对齐与产品战略
-- [[../../05_大模型/05_LLM架构/LLM_Internals_Models_Frontiers|LLM 内部之：前沿模型]] — GPT/Claude/Gemini 的架构对比
+- [[05_大模型/13_全球LLM生态/09_OpenAI_深入分析|OpenAI 深度解析]] — GPT 系列架构演进、RLHF 对齐与产品战略
+- [[../../05_大模型/04_LLM架构/LLM_Internals_Models_Frontiers|LLM 内部之：前沿模型]] — GPT/Claude/Gemini 的架构对比
 
 ---
 

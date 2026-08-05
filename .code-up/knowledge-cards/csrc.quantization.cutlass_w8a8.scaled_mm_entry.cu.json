@@ -1,0 +1,139 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.scaled_mm_entry.cu",
+  "title": "Scaled Mm Entry",
+  "type": "module",
+  "summary": "Module providing cutlass_scaled_mm_sm75, systems, cutlass_scaled_mm_supports_block_fp8, SM90, cutlass_group_gemm_supported and 5 more symbols",
+  "details": "Contains 22 functions/methods",
+  "symbols": [
+    {
+      "name": "cutlass_scaled_mm_sm75",
+      "kind": "function",
+      "signature": "cutlass_scaled_mm_sm75(torch::Tensor& c, torch::Tensor const& a,\n                            torch::Tensor const& b,\n                            torch::Tensor const& a_scales,\n                            torch::Tensor const& b_scales,\n                            std::optional<torch::Tensor> const& bias);\n\nvoid cutlass_scaled_mm_sm80(torch::Tensor& c, torch::Tensor const& a,\n                            torch::Tensor const& b,\n                            torch::Tensor const& a_scales,\n                            torch::Tensor const& b_scales,\n                            std::optional<torch::Tensor> const& bias);\n\nvoid cutlass_scaled_mm_sm89(torch::Tensor& c, torch::Tensor const& a,\n                            torch::Tensor const& b,\n                            torch::Tensor const& a_scales,\n                            torch::Tensor const& b_scales,\n                            std::optional<torch::Tensor> const& bias);\n\n#if defined ENABLE_SCALED_MM_SM90 && ENABLE_SCALED_MM_SM90\nvoid cutlass_scaled_mm_sm90(torch::Tensor& c, torch::Tensor const& a,\n                            torch::Tensor const& b,\n                            torch::Tensor const& a_scales,\n                            torch::Tensor const& b_scales,\n                            std::optional<torch::Tensor> const& bias);\n#endif\n#if defined ENABLE_CUTLASS_MOE_SM90 && ENABLE_CUTLASS_MOE_SM90\nvoid cutlass_moe_mm_sm90(\n    torch::Tensor& out_tensors, torch::Tensor const& a_tensors,\n    torch::Tensor const& b_tensors, torch::Tensor const& a_scales,\n    torch::Tensor const& b_scales, torch::Tensor const& expert_offsets,\n    torch::Tensor const& problem_sizes, torch::Tensor const& a_strides,\n    torch::Tensor const& b_strides, torch::Tensor const& c_strides,\n    bool per_act_token, bool per_out_ch);\n\n#endif\n\n#if defined ENABLE_SCALED_MM_SM100 && ENABLE_SCALED_MM_SM100\nvoid cutlass_scaled_mm_sm100(torch::Tensor& c, torch::Tensor const& a,\n                             torch::Tensor const& b,\n                             torch::Tensor const& a_scales,\n                             torch::Tensor const& b_scales,\n                             std::optional<torch::Tensor> const& bias);\n#endif\n\n#if defined(ENABLE_SCALED_MM_SM90) && ENABLE_SCALED_MM_SM90 || \\\n    defined(ENABLE_SCALED_MM_SM100) && ENABLE_SCALED_MM_SM100\nvoid get_cutlass_moe_mm_data_caller(\n    const torch::Tensor& topk_ids, torch::Tensor& expert_offsets,\n    torch::Tensor& problem_sizes1, torch::Tensor& problem_sizes2,\n    torch::Tensor& input_permutation, torch::Tensor& output_permutation,\n    const int64_t num_experts, const int64_t n, const int64_t k,\n    const std::optional<torch::Tensor>& blockscale_offsets);\n\nvoid get_cutlass_pplx_moe_mm_data_caller(torch::Tensor& expert_offsets,\n                                         torch::Tensor& problem_sizes1,\n                                         torch::Tensor& problem_sizes2,\n                                         const torch::Tensor& expert_num_tokens,\n                                         const int64_t num_local_experts,\n                                         const int64_t padded_m,\n                                         const int64_t n, const int64_t k);\n#endif\n\nvoid cutlass_scaled_mm_azp_sm75(torch::Tensor& c, torch::Tensor const& a,\n                                torch::Tensor const& b,\n                                torch::Tensor const& a_scales,\n                                torch::Tensor const& b_scales,\n                                torch::Tensor const& azp_adj,\n                                std::optional<torch::Tensor> const& azp,\n                                std::optional<torch::Tensor> const& bias);\n\nvoid cutlass_scaled_mm_azp_sm80(torch::Tensor& c, torch::Tensor const& a,\n                                torch::Tensor const& b,\n                                torch::Tensor const& a_scales,\n                                torch::Tensor const& b_scales,\n                                torch::Tensor const& azp_adj,\n                                std::optional<torch::Tensor> const& azp,\n                                std::optional<torch::Tensor> const& bias);\n\nvoid cutlass_scaled_mm_azp_sm89(torch::Tensor& c, torch::Tensor const& a,\n                                torch::Tensor const& b,\n                                torch::Tensor const& a_scales,\n                                torch::Tensor const& b_scales,\n                                torch::Tensor const& azp_adj,\n                                std::optional<torch::Tensor> const& azp,\n                                std::optional<torch::Tensor> const& bias);\n\n#if defined ENABLE_SCALED_MM_SM90 && ENABLE_SCALED_MM_SM90\nvoid cutlass_scaled_mm_azp_sm90(torch::Tensor& c, torch::Tensor const& a,\n                                torch::Tensor const& b,\n                                torch::Tensor const& a_scales,\n                                torch::Tensor const& b_scales,\n                                torch::Tensor const& azp_adj,\n                                std::optional<torch::Tensor> const& azp,\n                                std::optional<torch::Tensor> const& bias);\n#endif\n\nbool cutlass_scaled_mm_supports_fp8(int64_t cuda_device_capability)",
+      "docstring": "",
+      "line": 6
+    },
+    {
+      "name": "systems",
+      "kind": "function",
+      "signature": "systems(Hopper)\n  //   CUDA 12.4 on SM89 systems (Lovelace)\n\n#if defined CUDA_VERSION\n  if (cuda_device_capability >= 90)",
+      "docstring": "",
+      "line": 106
+    },
+    {
+      "name": "cutlass_scaled_mm_supports_block_fp8",
+      "kind": "function",
+      "signature": "cutlass_scaled_mm_supports_block_fp8(int64_t cuda_device_capability)",
+      "docstring": "",
+      "line": 118
+    },
+    {
+      "name": "SM90",
+      "kind": "function",
+      "signature": "SM90(Hopper)\n\n#if defined CUDA_VERSION\n  if (cuda_device_capability >= 90 && cuda_device_capability < 100)",
+      "docstring": "",
+      "line": 122
+    },
+    {
+      "name": "cutlass_group_gemm_supported",
+      "kind": "function",
+      "signature": "cutlass_group_gemm_supported(int64_t cuda_device_capability)",
+      "docstring": "",
+      "line": 133
+    },
+    {
+      "name": "SM90",
+      "kind": "function",
+      "signature": "SM90(Hopper)\n\n#if defined CUDA_VERSION\n  if (cuda_device_capability == 90)",
+      "docstring": "",
+      "line": 137
+    },
+    {
+      "name": "cutlass_scaled_mm",
+      "kind": "function",
+      "signature": "cutlass_scaled_mm(torch::Tensor& c, torch::Tensor const& a,\n                       torch::Tensor const& b, torch::Tensor const& a_scales,\n                       torch::Tensor const& b_scales,\n                       std::optional<torch::Tensor> const& bias)",
+      "docstring": "",
+      "line": 146
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(a.dim() == 2 && b.dim() == 2 && c.dim() == 2);\n  TORCH_CHECK(c.size(0) == a.size(0) && a.size(1) == b.size(0) &&\n              b.size(1) == c.size(1));\n\n  // Check for strides and alignment\n  TORCH_CHECK(a.stride(1) == 1 && c.stride(1) == 1);  // Row-major\n  TORCH_CHECK(b.stride(0) == 1);                      // Column-major\n  TORCH_CHECK(c.stride(0) % 16 == 0 &&\n              b.stride(1) % 16 == 0);  // 16 Byte Alignment\n\n  if (bias)",
+      "docstring": "",
+      "line": 152
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(bias->numel() == b.size(1) && bias->is_contiguous() &&\n                bias->dim() == 1);\n  }\n\n  at::cuda::OptionalCUDAGuard const device_guard(device_of(a));\n  int32_t version_num = get_sm_version_num();\n\n#if defined ENABLE_SCALED_MM_SM100 && ENABLE_SCALED_MM_SM100\n  if (version_num >= 100)",
+      "docstring": "",
+      "line": 163
+    },
+    {
+      "name": "cutlass_scaled_mm_sm100",
+      "kind": "function",
+      "signature": "cutlass_scaled_mm_sm100(c, a, b, a_scales, b_scales, bias);\n    return;\n  }\n#endif\n\n  // Guard against compilation issues for sm90 kernels\n#if defined ENABLE_SCALED_MM_SM90 && ENABLE_SCALED_MM_SM90\n  if (version_num >= 90 && version_num < 100)",
+      "docstring": "",
+      "line": 172
+    },
+    {
+      "name": "cutlass_scaled_mm_sm90",
+      "kind": "function",
+      "signature": "cutlass_scaled_mm_sm90(c, a, b, a_scales, b_scales, bias);\n    return;\n  }\n#endif\n\n#if defined ENABLE_SCALED_MM_C2X && ENABLE_SCALED_MM_C2X\n  if (version_num == 89)",
+      "docstring": "",
+      "line": 181
+    },
+    {
+      "name": "cutlass_scaled_mm_sm89",
+      "kind": "function",
+      "signature": "cutlass_scaled_mm_sm89(c, a, b, a_scales, b_scales, bias);\n    return;\n  }\n\n  if (version_num >= 80)",
+      "docstring": "",
+      "line": 189
+    },
+    {
+      "name": "cutlass_scaled_mm_sm80",
+      "kind": "function",
+      "signature": "cutlass_scaled_mm_sm80(c, a, b, a_scales, b_scales, bias);\n    return;\n  }\n\n  if (version_num >= 75)",
+      "docstring": "",
+      "line": 195
+    },
+    {
+      "name": "cutlass_scaled_mm_sm75",
+      "kind": "function",
+      "signature": "cutlass_scaled_mm_sm75(c, a, b, a_scales, b_scales, bias);\n    return;\n  }\n#endif\n\n  TORCH_CHECK_NOT_IMPLEMENTED(\n      false,\n      \"No compiled cutlass_scaled_mm for a compute capability less than \"\n      \"CUDA device capability: \",\n      version_num);\n}\n\nvoid cutlass_moe_mm(\n    torch::Tensor& out_tensors, torch::Tensor const& a_tensors,\n    torch::Tensor const& b_tensors, torch::Tensor const& a_scales,\n    torch::Tensor const& b_scales, torch::Tensor const& expert_offsets,\n    torch::Tensor const& problem_sizes, torch::Tensor const& a_strides,\n    torch::Tensor const& b_strides, torch::Tensor const& c_strides,\n    bool per_act_token, bool per_out_ch)",
+      "docstring": "",
+      "line": 201
+    },
+    {
+      "name": "get_sm_version_num",
+      "kind": "function",
+      "signature": "get_sm_version_num();\n#if defined ENABLE_CUTLASS_MOE_SM90 && ENABLE_CUTLASS_MOE_SM90\n  cutlass_moe_mm_sm90(out_tensors, a_tensors, b_tensors, a_scales, b_scales,\n                      expert_offsets, problem_sizes, a_strides, b_strides,\n                      c_strides, per_act_token, per_out_ch);\n  return;\n#endif\n  TORCH_CHECK_NOT_IMPLEMENTED(\n      false,\n      \"No compiled cutlass_scaled_mm for CUDA device capability: \", version_num,\n      \". Required capability: 90\");\n}\n\nvoid get_cutlass_moe_mm_data(\n    const torch::Tensor& topk_ids, torch::Tensor& expert_offsets,\n    torch::Tensor& problem_sizes1, torch::Tensor& problem_sizes2,\n    torch::Tensor& input_permutation, torch::Tensor& output_permutation,\n    const int64_t num_experts, const int64_t n, const int64_t k,\n    const std::optional<torch::Tensor>& blockscale_offsets)",
+      "docstring": "",
+      "line": 221
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "c10",
+      "cudaTypedefs",
+      "cutlass_extensions",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 22,
+    "public_symbols": 22,
+    "classes": 0,
+    "functions": 22,
+    "internal_deps": 0,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/scaled_mm_entry.cu"
+}

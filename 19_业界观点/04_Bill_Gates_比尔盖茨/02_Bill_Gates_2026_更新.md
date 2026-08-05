@@ -141,7 +141,7 @@ Gates 创立的 Breakthrough Energy 在 2026 年投资多个 AI 驱动的气候�
 | Copilot 愿景 | 早期倡导者 |
 | 战略顾问 | 非正式角色 |
 | 公开支持 | 多次为微软 AI 背书 |
-| 与 [[19_业界观点/22_Satya_Nadella_纳德拉/02_索引|Nadella]] 关系 | 密切合作 |
+| 与 [[19_业界观点/22_Satya_Nadella_纳德拉/INDEX|Nadella]] 关系 | 密切合作 |
 
 ---
 
@@ -177,7 +177,7 @@ Gates 的中间偏乐观立场：
 - 但反对"末日论"
 - 认为技术进步的净效果通常正面
 - 主张"治理+创新"并重
-- 介于 [[19_业界观点/03_Andrew_Ng_吴恩达/03_索引|Ng]]（乐观）和 [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]]（悲观）之间
+- 介于 [[19_业界观点/03_Andrew_Ng_吴恩达/INDEX|Ng]]（乐观）和 [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]]（悲观）之间
 
 ### 关于 AI 监管
 
@@ -204,7 +204,7 @@ Gates 最持久的关注：
 
 ### 与其他科技领袖的对比
 
-| 维度 | Gates | [[19_业界观点/24_Sundar_Pichai_皮查伊/02_索引|Pichai]] | [[19_业界观点/22_Satya_Nadella_纳德拉/02_索引|Nadella]] |
+| 维度 | Gates | [[19_业界观点/24_Sundar_Pichai_皮查伊/INDEX|Pichai]] | [[19_业界观点/22_Satya_Nadella_纳德拉/INDEX|Nadella]] |
 |------|-------|---------|---------|
 | 2026 角色 | 慈善+AI 布道 | Google CEO | Microsoft CEO |
 | AI 焦点 | 全球健康/教育 | Gemini/TPU | Copilot/Azure |
@@ -214,7 +214,7 @@ Gates 最持久的关注：
 
 ### 与风险派的对比
 
-| 维度 | Gates | [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]] | [[19_业界观点/07_Elon_Musk_马斯克/03_索引|Musk]] |
+| 维度 | Gates | [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]] | [[19_业界观点/07_Elon_Musk_马斯克/INDEX|Musk]] |
 |------|-------|---------|------|
 | 对 AI 风险 | 承认但乐观 | 严重担忧 | 末日论 |
 | 对末日论 | 保留 | 支持 | 强烈支持 |
@@ -249,7 +249,7 @@ Gates 的影响呈现为三个层面：
 - 反垄断历史仍被提及
 - 对微软 AI 垄断的担忧
 - "慈善洗白"的批评
-- 与 [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] 的关系被质疑
+- 与 [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] 的关系被质疑
 
 ### 慈善方式的有效性
 
@@ -320,12 +320,12 @@ Gates 的影响呈现为三个层面：
 
 | 人物 | 关系 | 2026 互动 |
 |------|------|-----------|
-| [[19_业界观点/22_Satya_Nadella_纳德拉/02_索引|Nadella]] | 继任者 | 微软战略顾问 |
-| [[19_业界观点/21_Sam_Altman_奥特曼/02_索引|Altman]] | 合作者 | OpenAI 牵线 |
-| [[19_业界观点/24_Sundar_Pichai_皮查伊/02_索引|Pichai]] | 行业同行 | 偶有交流 |
-| [[19_业界观点/03_Andrew_Ng_吴恩达/03_索引|Ng]] | 教育同行 | AI 教育共鸣 |
-| [[19_业界观点/01_索引|Buffett]] | 慈善同盟 | Giving Pledge |
-| [[19_业界观点/09_Fei_Fei_Li_李飞飞/03_索引|Fei-Fei Li]] | AI 领袖 | 人本 AI 共鸣 |
+| [[19_业界观点/22_Satya_Nadella_纳德拉/INDEX|Nadella]] | 继任者 | 微软战略顾问 |
+| [[19_业界观点/21_Sam_Altman_奥特曼/INDEX|Altman]] | 合作者 | OpenAI 牵线 |
+| [[19_业界观点/24_Sundar_Pichai_皮查伊/INDEX|Pichai]] | 行业同行 | 偶有交流 |
+| [[19_业界观点/03_Andrew_Ng_吴恩达/INDEX|Ng]] | 教育同行 | AI 教育共鸣 |
+| [[19_业界观点/INDEX|Buffett]] | 慈善同盟 | Giving Pledge |
+| [[19_业界观点/09_Fei_Fei_Li_李飞飞/INDEX|Fei-Fei Li]] | AI 领袖 | 人本 AI 共鸣 |
 
 ### Gates 在 2026 年的重大公开活动
 

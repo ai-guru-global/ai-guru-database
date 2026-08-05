@@ -25,7 +25,7 @@ name_zh: "李飞飞 2026 动态"
 
 ### 背景回顾
 
-李飞飞（Fei-Fei Li，1976 年生于中国北京，15 岁移居美国），普林斯顿大学物理学本科（1999）、加州理工学院电子工程博士（2005）。斯坦福大学计算机科学教授、斯坦福以人为本 AI 研究院（HAI）联合主任。ImageNet 数据集（2007-2009）的发起人——该工作直接催化了 2012 年 AlexNet 和深度学习革命。前 Google Cloud AI/ML 首席科学家（2017-2018）。2024 年创立 World Labs，专注空间智能。她培养了 [[19_业界观点/02_Andrej_Karpathy_卡帕西/03_索引|Karpathy]] 等顶尖学者，是"以人为本 AI"理念的全球旗手。
+李飞飞（Fei-Fei Li，1976 年生于中国北京，15 岁移居美国），普林斯顿大学物理学本科（1999）、加州理工学院电子工程博士（2005）。斯坦福大学计算机科学教授、斯坦福以人为本 AI 研究院（HAI）联合主任。ImageNet 数据集（2007-2009）的发起人——该工作直接催化了 2012 年 AlexNet 和深度学习革命。前 Google Cloud AI/ML 首席科学家（2017-2018）。2024 年创立 World Labs，专注空间智能。她培养了 [[19_业界观点/02_Andrej_Karpathy_卡帕西/INDEX|Karpathy]] 等顶尖学者，是"以人为本 AI"理念的全球旗手。
 
 #### 李飞飞 2026 关键时间线
 
@@ -91,8 +91,8 @@ World Labs 是李飞飞 2024 年创立的空间智能公司，2026 年迎来产�
 | 公司 | 方向 | 差异 |
 |------|------|------|
 | World Labs | 空间智能 | 通用 3D 世界模型 |
-| [[19_业界观点/06_Demis_Hassabis_哈萨比斯/04_索引|DeepMind]] | Genie 2 | 游戏世界生成 |
-| [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|Meta（V-JEPA 2）]] | 视频世界模型 | 视频理解 |
+| [[19_业界观点/06_Demis_Hassabis_哈萨比斯/INDEX|DeepMind]] | Genie 2 | 游戏世界生成 |
+| [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|Meta（V-JEPA 2）]] | 视频世界模型 | 视频理解 |
 | NVIDIA | Omniverse | 工业数字孪生 |
 | Runway | 视频生成 | 创意内容 |
 
@@ -187,7 +187,7 @@ World Labs 是李飞飞 2024 年创立的空间智能公司，2026 年迎来产�
 - 承认 AI 风险，但反对末日论
 - 强调"人的问题"大于"机器的问题"
 - 主张通过治理和教育缓解风险
-- 介于 [[19_业界观点/03_Andrew_Ng_吴恩达/03_索引|Ng]]（务实）和 [[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]]（治理）之间
+- 介于 [[19_业界观点/03_Andrew_Ng_吴恩达/INDEX|Ng]]（务实）和 [[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]]（治理）之间
 
 ### 关于 AI 多样性
 
@@ -204,7 +204,7 @@ World Labs 是李飞飞 2024 年创立的空间智能公司，2026 年迎来产�
 
 ### 与其他 AI 领袖的对比
 
-| 维度 | 李飞飞 | [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]] | [[19_业界观点/06_Demis_Hassabis_哈萨比斯/04_索引|Hassabis]] |
+| 维度 | 李飞飞 | [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]] | [[19_业界观点/06_Demis_Hassabis_哈萨比斯/INDEX|Hassabis]] |
 |------|--------|---------|---------|
 | 2026 角色 | 空间智能先驱 | 开源+世界模型 | AI for Science |
 | 主要机构 | World Labs+Stanford | Meta AI | Google DeepMind |
@@ -217,7 +217,7 @@ World Labs 是李飞飞 2024 年创立的空间智能公司，2026 年迎来产�
 
 | 学生 | 主要贡献 | 现职 |
 |------|----------|------|
-| [[19_业界观点/02_Andrej_Karpathy_卡帕西/03_索引|Karpathy]] | CS231n、Software 2.0 | Eureka Labs |
+| [[19_业界观点/02_Andrej_Karpathy_卡帕西/INDEX|Karpathy]] | CS231n、Software 2.0 | Eureka Labs |
 | Olga Russakovsky | 视觉识别 | Princeton |
 | Justin Johnson | 视觉推理 | Stanford（前） |
 | Li-Jia Li | 场景理解 | Stanford |
@@ -275,8 +275,8 @@ World Labs 是李飞飞 2024 年创立的空间智能公司，2026 年迎来产�
 | 路线 | 代表 | 方法 | 优势 |
 |------|------|------|------|
 | 空间智能 | World Labs | 3D 场景理解+生成 | 通用性强 |
-| 视频世界模型 | [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|V-JEPA 2]] | 自监督视频预测 | 数据高效 |
-| 游戏世界 | [[19_业界观点/06_Demis_Hassabis_哈萨比斯/04_索引|Genie 2]] | 游戏环境生成 | 可玩性 |
+| 视频世界模型 | [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|V-JEPA 2]] | 自监督视频预测 | 数据高效 |
+| 游戏世界 | [[19_业界观点/06_Demis_Hassabis_哈萨比斯/INDEX|Genie 2]] | 游戏环境生成 | 可玩性 |
 | 神经渲染 | NVIDIA（NeRF/Gaussian） | 神经辐射场 | 高保真 |
 | 具身学习 | 机器人学习 | 交互式学习 | 可迁移 |
 
@@ -315,12 +315,12 @@ World Labs 是李飞飞 2024 年创立的空间智能公司，2026 年迎来产�
 
 | 人物 | 关系 | 2026 互动 |
 |------|------|-----------|
-| [[19_业界观点/02_Andrej_Karpathy_卡帕西/03_索引|Karpathy]] | 博士生 | 学术传承 |
-| [[19_业界观点/03_Andrew_Ng_吴恩达/03_索引|Ng]] | 斯坦福同事 | 教育共鸣 |
-| [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|LeCun]] | 视觉同行 | 技术对话 |
-| [[19_业界观点/06_Demis_Hassabis_哈萨比斯/04_索引|Hassabis]] | AI 领袖 | 多有共鸣 |
-| [[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]] | 治理派 | 人本 AI 共鸣 |
-| [[19_业界观点/24_Sundar_Pichai_皮查伊/02_索引|Pichai]] | 前老板 | 保持联系 |
+| [[19_业界观点/02_Andrej_Karpathy_卡帕西/INDEX|Karpathy]] | 博士生 | 学术传承 |
+| [[19_业界观点/03_Andrew_Ng_吴恩达/INDEX|Ng]] | 斯坦福同事 | 教育共鸣 |
+| [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|LeCun]] | 视觉同行 | 技术对话 |
+| [[19_业界观点/06_Demis_Hassabis_哈萨比斯/INDEX|Hassabis]] | AI 领袖 | 多有共鸣 |
+| [[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]] | 治理派 | 人本 AI 共鸣 |
+| [[19_业界观点/24_Sundar_Pichai_皮查伊/INDEX|Pichai]] | 前老板 | 保持联系 |
 
 ### 空间智能的技术挑战
 

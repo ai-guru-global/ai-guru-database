@@ -124,7 +124,7 @@ name_zh: "Hello-Agents L06：框架开发实践"
 - [[15_智能体/02_Agent框架/02_AgentScope_深入分析]] — AgentScope 深度解析
 - [[15_智能体/02_Agent框架/04_AutoGen_CrewAI_LangGraph_Dive]] — AutoGen / CrewAI / LangGraph 对比
 - [[15_智能体/03_Agent工作流/06_工作流_简明指南]] — Agent 工作流总览
-- [[05_大模型/08_提示工程/Hello_Agents_L04_ReAct]] — 经典范式实现
+- [[05_大模型/07_提示工程/Hello_Agents_L04_ReAct]] — 经典范式实现
 
 ## 附录：核心概念速查
 

@@ -1,0 +1,135 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.scaled_mm_c2x_sm89_int8_dispatch.cuh",
+  "title": "Scaled Mm C2X Sm89 Int8 Dispatch",
+  "type": "module",
+  "summary": "Module providing SM89, static_assert, in, static_assert, in and 5 more symbols",
+  "details": "Contains 17 functions/methods",
+  "symbols": [
+    {
+      "name": "SM89",
+      "kind": "function",
+      "signature": "SM89(int8) based on the\n * Gemm shape.\n */\n\nnamespace vllm {\n\ntemplate <typename InType, typename OutType,\n          template <typename, typename> typename Epilogue>\nstruct sm89_int8_fallback_gemm {\n  // Shared mem requirement : 61440\n  static_assert(std::is_same<InType, int8_t>());\n  using TileShape = cutlass::gemm::GemmShape<32, 64, 128>;\n  using WarpShape = cutlass::gemm::GemmShape<16, 64, 64>;\n  using InstructionShape = typename cutlass::gemm::GemmShape<16, 8, 32>;\n  static int32_t const MainLoopStages = 5;\n\n  using Cutlass2xGemm =\n      cutlass_2x_gemm<cutlass::arch::Sm89, enable_sm89_to_sm90, InType, OutType,\n                      Epilogue, TileShape, WarpShape, InstructionShape, 5>;\n};\n\nstruct sm89_int8_config_default {\n  // M in (256, inf)\n  using WarpShape = typename cutlass::gemm::GemmShape<64, 64, 64>;\n  using InstructionShape = typename cutlass::gemm::GemmShape<16, 8, 32>;\n\n  template <typename InType, typename OutType,\n            template <typename, typename> typename Epilogue,\n            typename... EpilogueArgs>\n  static void dispatch(torch::Tensor& out, torch::Tensor const& a,\n                       torch::Tensor const& b, EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 5
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same<InType, int8_t>());\n    TORCH_CHECK(a.dtype() == torch::kInt8);\n\n    using FallbackGemm =\n        typename sm89_int8_fallback_gemm<InType, OutType,\n                                         Epilogue>::Cutlass2xGemm;\n\n    uint32_t const n = out.size(1);\n    uint32_t const np2 = next_pow_2(n);\n\n    if (np2 <= 4096)",
+      "docstring": "",
+      "line": 36
+    },
+    {
+      "name": "in",
+      "kind": "function",
+      "signature": "in(128, 256]\n  using WarpShape = typename cutlass::gemm::GemmShape<64, 64, 64>;\n  using InstructionShape = typename cutlass::gemm::GemmShape<16, 8, 32>;\n\n  template <typename InType, typename OutType,\n            template <typename, typename> typename Epilogue,\n            typename... EpilogueArgs>\n  static void dispatch(torch::Tensor& out, torch::Tensor const& a,\n                       torch::Tensor const& b, EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 84
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same<InType, int8_t>());\n    TORCH_CHECK(a.dtype() == torch::kInt8);\n\n    using FallbackGemm =\n        typename sm89_int8_fallback_gemm<InType, OutType,\n                                         Epilogue>::Cutlass2xGemm;\n\n    uint32_t const n = out.size(1);\n    uint32_t const np2 = next_pow_2(n);\n\n    if (np2 <= 4096)",
+      "docstring": "",
+      "line": 92
+    },
+    {
+      "name": "in",
+      "kind": "function",
+      "signature": "in(64, 128]\n  using InstructionShape = typename cutlass::gemm::GemmShape<16, 8, 32>;\n\n  template <typename InType, typename OutType,\n            template <typename, typename> typename Epilogue,\n            typename... EpilogueArgs>\n  static void dispatch(torch::Tensor& out, torch::Tensor const& a,\n                       torch::Tensor const& b, EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 140
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same<InType, int8_t>());\n    TORCH_CHECK(a.dtype() == torch::kInt8);\n\n    using FallbackGemm =\n        typename sm89_int8_fallback_gemm<InType, OutType,\n                                         Epilogue>::Cutlass2xGemm;\n\n    uint32_t const n = out.size(1);\n    uint32_t const np2 = next_pow_2(n);\n\n    if (np2 <= 8192)",
+      "docstring": "",
+      "line": 147
+    },
+    {
+      "name": "in",
+      "kind": "function",
+      "signature": "in(32, 64]\n  using InstructionShape = typename cutlass::gemm::GemmShape<16, 8, 32>;\n\n  template <typename InType, typename OutType,\n            template <typename, typename> typename Epilogue,\n            typename... EpilogueArgs>\n  static void dispatch(torch::Tensor& out, torch::Tensor const& a,\n                       torch::Tensor const& b, EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 190
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same<InType, int8_t>());\n    TORCH_CHECK(a.dtype() == torch::kInt8);\n\n    using FallbackGemm =\n        typename sm89_int8_fallback_gemm<InType, OutType,\n                                         Epilogue>::Cutlass2xGemm;\n\n    uint32_t const n = out.size(1);\n    uint32_t const np2 = next_pow_2(n);\n\n    if (np2 <= 8192)",
+      "docstring": "",
+      "line": 197
+    },
+    {
+      "name": "in",
+      "kind": "function",
+      "signature": "in(16, 32]\n  using InstructionShape = typename cutlass::gemm::GemmShape<16, 8, 32>;\n\n  template <typename InType, typename OutType,\n            template <typename, typename> typename Epilogue,\n            typename... EpilogueArgs>\n  static void dispatch(torch::Tensor& out, torch::Tensor const& a,\n                       torch::Tensor const& b, EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 231
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same<InType, int8_t>());\n    TORCH_CHECK(a.dtype() == torch::kInt8);\n\n    using FallbackGemm =\n        typename sm89_int8_fallback_gemm<InType, OutType,\n                                         Epilogue>::Cutlass2xGemm;\n\n    uint32_t const n = out.size(1);\n    uint32_t const np2 = next_pow_2(n);\n\n    if (np2 <= 8192)",
+      "docstring": "",
+      "line": 238
+    },
+    {
+      "name": "dispatch",
+      "kind": "function",
+      "signature": "dispatch(torch::Tensor& out, torch::Tensor const& a,\n                       torch::Tensor const& b, EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 278
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same<InType, int8_t>());\n    TORCH_CHECK(a.dtype() == torch::kInt8);\n\n    using FallbackGemm =\n        typename sm89_int8_fallback_gemm<InType, OutType,\n                                         Epilogue>::Cutlass2xGemm;\n\n    uint32_t const n = out.size(1);\n    uint32_t const np2 = next_pow_2(n);\n\n    if (np2 <= 8192)",
+      "docstring": "",
+      "line": 280
+    },
+    {
+      "name": "cutlass_gemm_sm89_int8_dispatch",
+      "kind": "function",
+      "signature": "cutlass_gemm_sm89_int8_dispatch(torch::Tensor& out,\n                                            torch::Tensor const& a,\n                                            torch::Tensor const& b,\n                                            EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 313
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same<InType, int8_t>());\n  TORCH_CHECK(a.dtype() == torch::kInt8);\n  TORCH_CHECK(b.dtype() == torch::kInt8);\n\n  uint32_t const m = a.size(0);\n  uint32_t const mp2 =\n      std::max(static_cast<uint32_t>(16), next_pow_2(m));  // next power of 2\n\n  if (mp2 <= 16)",
+      "docstring": "",
+      "line": 317
+    },
+    {
+      "name": "in",
+      "kind": "function",
+      "signature": "in(16, 32]\n    return sm89_int8_config_M32::dispatch<InType, OutType, Epilogue>(\n        out, a, b, std::forward<EpilogueArgs>(args)...);\n  } else if (mp2 <= 64)",
+      "docstring": "",
+      "line": 331
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "scaled_mm_c2x"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 17,
+    "public_symbols": 17,
+    "classes": 0,
+    "functions": 17,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/scaled_mm_c2x_sm89_int8_dispatch.cuh"
+}

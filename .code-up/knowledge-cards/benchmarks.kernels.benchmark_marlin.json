@@ -1,0 +1,75 @@
+{
+  "id": "benchmarks.kernels.benchmark_marlin",
+  "title": "Benchmark Marlin",
+  "type": "module",
+  "summary": "Module providing bench_run, main, DEFAULT_MODELS, DEFAULT_BATCH_SIZES, ACT_ORDER_OPTS and 1 more symbols",
+  "details": "Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "bench_run",
+      "kind": "function",
+      "signature": "def bench_run(\n    results: list[benchmark.Measurement],\n    model: str,\n    act_order: bool,\n    is_k_full: bool,\n    quant_type: ScalarType,\n    group_size: int,\n    size_m: int,\n    size_k: int,\n    size_n: int,\n)",
+      "docstring": "",
+      "line": 48
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "signature": "def main(args)",
+      "docstring": "",
+      "line": 249
+    },
+    {
+      "name": "DEFAULT_MODELS",
+      "kind": "constant",
+      "signature": "DEFAULT_MODELS = ...",
+      "docstring": "",
+      "line": 41
+    },
+    {
+      "name": "DEFAULT_BATCH_SIZES",
+      "kind": "constant",
+      "signature": "DEFAULT_BATCH_SIZES = ...",
+      "docstring": "",
+      "line": 42
+    },
+    {
+      "name": "ACT_ORDER_OPTS",
+      "kind": "constant",
+      "signature": "ACT_ORDER_OPTS = ...",
+      "docstring": "",
+      "line": 44
+    },
+    {
+      "name": "K_FULL_OPTS",
+      "kind": "constant",
+      "signature": "K_FULL_OPTS = ...",
+      "docstring": "",
+      "line": 45
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "benchmark_shapes",
+      "torch",
+      "vllm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 6,
+    "public_symbols": 6,
+    "classes": 0,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 31
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/kernels/benchmark_marlin.py"
+}

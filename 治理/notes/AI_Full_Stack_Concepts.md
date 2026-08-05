@@ -797,7 +797,7 @@ name_zh: "AI 全链路 Concept 清单"
 | 文档 | 路径 | 内容 |
 |------|------|------|
 | **Agent 协议详解** | `06_强化学习/AI_Agents/Agent_Protocols_Detail.md` | MCP、A2A、UCP 完整解析 |
-| **多模态模型架构** | `05_大模型/10_多模态模型/Multimodal_Architectures_2026.md` | GPT-4.5、Gemini 2.0、Claude 4 |
+| **多模态模型架构** | `05_大模型/09_多模态模型/Multimodal_Architectures_2026.md` | GPT-4.5、Gemini 2.0、Claude 4 |
 | **VLA 模型** | `06_强化学习/05_机器人与具身智能/VLA_Models_2026.md` | π0、RDT、OpenVLA 详解 |
 | **JEPA 深度解析** | `03_深度学习/07_世界模型/JEPA_Architecture_2026.md` | LeCun 世界模型完整指南 |
 | **具身智能指南** | `06_强化学习/05_机器人与具身智能/Embodied_AI_Complete_2026.md` | 人形机器人、技术栈 |

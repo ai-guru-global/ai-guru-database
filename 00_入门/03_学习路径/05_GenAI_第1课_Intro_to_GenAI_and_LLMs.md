@@ -349,9 +349,9 @@ LLM 的输出具有随机性。相同的提示在不同时间运行可能产生�
 
 - [[90_学习/03_课程资源/microsoft/01_microsoft_genai_for_beginners]] — 课程总览与章节映射
 - [[05_大模型/01_LLM基础/GenAI_L02_Exploring_and_Comparing_LLMs]] — 第 2 课：探索和比较不同的 LLM
-- [[05_大模型/05_LLM架构/05_LLM架构]] — LLM 架构详解
+- [[05_大模型/04_LLM架构/05_LLM架构]] — LLM 架构详解
 - [[00_入门/01_基础入门/02_AI基础]] — AI 基础概念
-- [[05_大模型/04_Transformer革命/03_Transformer_Revolution]] — Transformer 技术革命
+- [[05_大模型/03_Transformer架构/03_Transformer_Revolution]] — Transformer 技术革命
 
 ## 课程导航
 

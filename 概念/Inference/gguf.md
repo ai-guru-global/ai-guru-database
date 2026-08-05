@@ -18,7 +18,7 @@ relationships:
 sources:
   - 10_部署推理/02_推理引擎/llama_cpp_Deep_Dive.md
   - 10_部署推理/04_模型量化/Quantization_Techniques_2026.md
-  - 05_大模型/12_端侧大模型/README.md
+  - 05_大模型/11_端侧大模型/README.md
 summary: "GGUF（GPT-Generated Unified Format）是 llama.cpp 推出的大模型文件格式。它把模型权重、配置、tokenizer、特殊词表都打包进一个文件，并原生支持多种量化精度，是本地/边缘部署事实标准。"
 provenance:
   extracted: 0.75

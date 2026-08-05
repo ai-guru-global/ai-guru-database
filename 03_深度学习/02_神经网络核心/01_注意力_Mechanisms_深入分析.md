@@ -404,7 +404,7 @@ KV Cache 内存估算:
 ## 相关阅读
 
 - [[03_深度学习/02_神经网络核心/09_神经网络核心]] — 神经网络核心
-- [[05_大模型/03_Transformer架构/14_Transformer 架构详解]] — Transformer 架构
+- [[05_大模型/03_Transformer架构/04_Transformer_架构详解]] — Transformer 架构
 - [[05_大模型/Transformer_Deep_Dive]] — Transformer 深度解析
 - [[04_计算机视觉/01_CV基础/05_ViT_深入分析]] — Vision Transformer
 - [[10_部署推理/03_推理优化/02_LLM推理_深入分析]] — LLM 推理优化

@@ -1,0 +1,141 @@
+{
+  "id": "csrc.mamba.causal_conv1d.causal_conv1d.cu",
+  "title": "Causal Conv1D",
+  "type": "module",
+  "summary": "Module providing CHECK_SHAPE, __VA_ARGS__, __VA_ARGS__, __VA_ARGS__, memset and 5 more symbols",
+  "details": "Contains 39 functions/methods",
+  "symbols": [
+    {
+      "name": "CHECK_SHAPE",
+      "kind": "function",
+      "signature": "CHECK_SHAPE(x, ...) TORCH_CHECK(x.sizes() == torch::IntArrayRef({__VA_ARGS__}), #x \" must have shape (\" #__VA_ARGS__ \")\")\n\n#define DISPATCH_WTYPE_ITYPE_FLOAT_AND_HALF_AND_BF16(ITYPE, NAME, ...)              \\\n    if (ITYPE == at::ScalarType::Half)",
+      "docstring": "",
+      "line": 24
+    },
+    {
+      "name": "__VA_ARGS__",
+      "kind": "function",
+      "signature": "__VA_ARGS__();                                                              \\\n    } else if (ITYPE == at::ScalarType::BFloat16)",
+      "docstring": "",
+      "line": 29
+    },
+    {
+      "name": "__VA_ARGS__",
+      "kind": "function",
+      "signature": "__VA_ARGS__();                                                              \\\n    } else if (ITYPE == at::ScalarType::Float)",
+      "docstring": "",
+      "line": 33
+    },
+    {
+      "name": "__VA_ARGS__",
+      "kind": "function",
+      "signature": "__VA_ARGS__();                                                              \\\n    } else {                                                                        \\\n        AT_ERROR(#NAME, \" not implemented for input type '\", toString(ITYPE), \"'\"); \\\n    }\n\n\ntemplate<typename input_t, typename weight_t>\nvoid causal_conv1d_fwd_cuda(ConvParamsBase &params, cudaStream_t stream);\n\ntemplate<typename input_t, typename weight_t>\nvoid causal_conv1d_update_cuda(ConvParamsBase &params, cudaStream_t stream);\n\nvoid set_conv_params_fwd(ConvParamsBase &params,\n                         // sizes\n                         const size_t batch,\n                         const size_t dim,\n                         const size_t seqlen,\n                         const size_t width,\n                         // device pointers\n                         const at::Tensor x,\n                         const at::Tensor weight,\n                         const at::Tensor out,\n                         const std::optional<at::Tensor>& bias,\n                         bool silu_activation,\n                         int64_t pad_slot_id,\n                         const std::optional<at::Tensor>& query_start_loc = std::nullopt,\n                         const std::optional<at::Tensor>& cache_indices = std::nullopt,\n                         const std::optional<at::Tensor>& has_initial_state = std::nullopt)",
+      "docstring": "",
+      "line": 37
+    },
+    {
+      "name": "memset",
+      "kind": "function",
+      "signature": "memset(&params, 0, sizeof(params));\n\n    params.batch = batch;\n    params.dim = dim;\n    params.seqlen = seqlen;\n    params.width = width;\n    params.pad_slot_id = pad_slot_id;\n\n    params.silu_activation = silu_activation;\n\n    // Set the pointers and strides.\n    params.x_ptr = x.data_ptr();\n    params.weight_ptr = weight.data_ptr();\n    params.bias_ptr = bias.has_value() ? bias.value().data_ptr() : nullptr;\n    params.out_ptr = out.data_ptr();\n    // All stride are in elements, not bytes.\n    params.query_start_loc_ptr = query_start_loc.has_value() ? query_start_loc.value().data_ptr() : nullptr;\n    params.cache_indices_ptr = cache_indices.has_value() ? cache_indices.value().data_ptr() : nullptr;\n    params.has_initial_state_ptr = has_initial_state.has_value() ? has_initial_state.value().data_ptr() : nullptr;\n    const bool varlen = params.query_start_loc_ptr != nullptr;\n    params.x_batch_stride = x.stride(varlen ? 1 : 0);\n    params.x_c_stride = x.stride(varlen ? 0 : 1);\n    params.x_l_stride = x.stride(varlen ? 1 : -1);\n    params.weight_c_stride = weight.stride(0);\n    params.weight_width_stride = weight.stride(1);\n    params.out_batch_stride = out.stride(varlen ? 1 : 0);\n    params.out_c_stride = out.stride(varlen ? 0 : 1);\n    params.out_l_stride = out.stride(varlen ? 1 : -1);\n}\n\n\nvoid causal_conv1d_fwd(const at::Tensor &x, const at::Tensor &weight,\n                  const std::optional<at::Tensor> &bias_,\n                  const std::optional<at::Tensor> &conv_states,\n                  const std::optional<at::Tensor> &query_start_loc,\n                  const std::optional<at::Tensor> &cache_indices,\n                  const std::optional<at::Tensor> &has_initial_state,\n                  bool silu_activation,\n                 // used to identify padding entries if cache_indices provided\n                 // in case of padding, the kernel will return early\n                  int64_t pad_slot_id)",
+      "docstring": "",
+      "line": 67
+    },
+    {
+      "name": "scalar_type",
+      "kind": "function",
+      "signature": "scalar_type();\n    auto weight_type = weight.scalar_type();\n    TORCH_CHECK(input_type == at::ScalarType::Float || input_type == at::ScalarType::Half || input_type == at::ScalarType::BFloat16);\n    TORCH_CHECK(weight_type == at::ScalarType::Float || weight_type == at::ScalarType::Half || weight_type == at::ScalarType::BFloat16);\n\n    TORCH_CHECK(x.is_cuda());\n    TORCH_CHECK(weight.is_cuda());\n    \n    const bool varlen = query_start_loc.has_value() ? true : false;\n    const auto sizes = x.sizes();\n    const int batch_size = varlen ? query_start_loc.value().sizes()[0] - 1 : sizes[0];\n    const int dim = varlen ? sizes[0] : sizes[1];\n    const int seqlen = varlen ? sizes[1] : sizes[2];\n    const int width = weight.size(-1);\n    if (varlen)",
+      "docstring": "",
+      "line": 109
+    },
+    {
+      "name": "CHECK_SHAPE",
+      "kind": "function",
+      "signature": "CHECK_SHAPE(x, dim, seqlen);\n    }\n    else {\n        CHECK_SHAPE(x, batch_size, dim, seqlen);\n    }\n    CHECK_SHAPE(weight, dim, width);\n\n\n\n    if (bias_.has_value())",
+      "docstring": "",
+      "line": 123
+    },
+    {
+      "name": "value",
+      "kind": "function",
+      "signature": "value();\n        TORCH_CHECK(bias.scalar_type() == weight_type);\n        TORCH_CHECK(bias.is_cuda());\n        TORCH_CHECK(bias.stride(-1) == 1);\n        CHECK_SHAPE(bias, dim);\n    }\n\n\n    if (has_initial_state.has_value())",
+      "docstring": "",
+      "line": 134
+    },
+    {
+      "name": "value",
+      "kind": "function",
+      "signature": "value();\n        TORCH_CHECK(has_initial_state_.scalar_type() == at::ScalarType::Bool);\n        TORCH_CHECK(has_initial_state_.is_cuda());\n        CHECK_SHAPE(has_initial_state_, batch_size);\n    }\n\n\n    if (query_start_loc.has_value())",
+      "docstring": "",
+      "line": 143
+    },
+    {
+      "name": "value",
+      "kind": "function",
+      "signature": "value();\n        TORCH_CHECK(query_start_loc_.scalar_type() == at::ScalarType::Int);\n        TORCH_CHECK(query_start_loc_.is_cuda());\n    }\n\n\n    if (cache_indices.has_value())",
+      "docstring": "",
+      "line": 151
+    },
+    {
+      "name": "value",
+      "kind": "function",
+      "signature": "value();\n        TORCH_CHECK(cache_indices_.scalar_type() == at::ScalarType::Int);\n        TORCH_CHECK(cache_indices_.is_cuda());\n        CHECK_SHAPE(cache_indices_, batch_size);\n    }\n\n    at::Tensor out = x;\n\n    ConvParamsBase params;\n    set_conv_params_fwd(params, batch_size, dim, seqlen, width, x, weight, out,\n                        bias_,\n                        silu_activation, \n                        pad_slot_id,\n                        query_start_loc,\n                        cache_indices,\n                        has_initial_state\n                        );\n\n    if (conv_states.has_value())",
+      "docstring": "",
+      "line": 158
+    },
+    {
+      "name": "value",
+      "kind": "function",
+      "signature": "value();\n        TORCH_CHECK(conv_states_.scalar_type() == input_type);\n        TORCH_CHECK(conv_states_.is_cuda());\n        params.conv_states_ptr = conv_states_.data_ptr();\n        params.conv_states_batch_stride = conv_states_.stride(0);\n        params.conv_states_c_stride = conv_states_.stride(1);\n        params.conv_states_l_stride = conv_states_.stride(2);\n    } else {\n        params.conv_states_ptr = nullptr;\n    }\n\n    // Otherwise the kernel will be launched from cuda:0 device\n    // Cast to char to avoid compiler warning about narrowing\n    at::cuda::CUDAGuard device_guard{(char)x.get_device()};\n    auto stream = at::cuda::getCurrentCUDAStream().stream();\n    DISPATCH_WTYPE_ITYPE_FLOAT_AND_HALF_AND_BF16(x.scalar_type(), \"causal_conv1d_fwd\", [&] {\n            causal_conv1d_fwd_cuda<input_t, weight_t>(params, stream);\n    });\n}\n\n\nvoid causal_conv1d_update(const at::Tensor &x,\n                     const at::Tensor &conv_state,\n                     const at::Tensor &weight,\n                     const std::optional<at::Tensor> &bias_,\n                     bool silu_activation,\n                     const std::optional<at::Tensor> &cache_seqlens_,\n                     const std::optional<at::Tensor> &conv_state_indices_,\n                     // used to identify padding entries if cache_indices provided\n                     // in case of padding, the kernel will return early\n                     int64_t pad_slot_id)",
+      "docstring": "",
+      "line": 177
+    },
+    {
+      "name": "scalar_type",
+      "kind": "function",
+      "signature": "scalar_type();\n    auto weight_type = weight.scalar_type();\n    TORCH_CHECK(input_type == at::ScalarType::Float || input_type == at::ScalarType::Half || input_type == at::ScalarType::BFloat16);\n    TORCH_CHECK(weight_type == at::ScalarType::Float || weight_type == at::ScalarType::Half || weight_type == at::ScalarType::BFloat16);\n    TORCH_CHECK(weight_type == input_type, \"weight type must equal to input type, other variations are disabled due to binary size limitations\");\n    TORCH_CHECK(conv_state.scalar_type() == input_type);\n\n    TORCH_CHECK(x.is_cuda());\n    TORCH_CHECK(conv_state.is_cuda());\n    TORCH_CHECK(weight.is_cuda());\n\n    const auto sizes = x.sizes();\n    const int batch_size = sizes[0];\n    const int dim = sizes[1];\n    const int seqlen = sizes[2];\n    const int width = weight.size(-1);\n    const int conv_state_len = conv_state.size(2);\n    TORCH_CHECK(conv_state_len >= width - 1);\n\n    CHECK_SHAPE(x, batch_size, dim, seqlen);\n    CHECK_SHAPE(weight, dim, width);\n\n    TORCH_CHECK(width >= 2 && width <= 4, \"causal_conv1d only supports width between 2 and 4\");\n\n    if (bias_.has_value())",
+      "docstring": "",
+      "line": 208
+    },
+    {
+      "name": "value",
+      "kind": "function",
+      "signature": "value();\n        TORCH_CHECK(bias.scalar_type() == weight_type);\n        TORCH_CHECK(bias.is_cuda());\n        TORCH_CHECK(bias.stride(-1) == 1);\n        CHECK_SHAPE(bias, dim);\n    }\n\n    at::Tensor out = x;\n\n    ConvParamsBase params;\n    set_conv_params_fwd(params, batch_size, dim, seqlen, width, x, weight, out,\n                        bias_,\n                        silu_activation,\n                        pad_slot_id);\n    params.conv_state_ptr = conv_state.data_ptr();\n    params.conv_state_len = conv_state_len;\n    // All stride are in elements, not bytes.\n    params.conv_state_batch_stride = conv_state.stride(0);\n    params.conv_state_c_stride = conv_state.stride(1);\n    params.conv_state_l_stride = conv_state.stride(2);\n\n    if (cache_seqlens_.has_value())",
+      "docstring": "",
+      "line": 233
+    },
+    {
+      "name": "value",
+      "kind": "function",
+      "signature": "value();\n        TORCH_CHECK(cache_seqlens.scalar_type() == torch::kInt32);\n        TORCH_CHECK(cache_seqlens.is_cuda());\n        TORCH_CHECK(cache_seqlens.stride(-1) == 1);\n        CHECK_SHAPE(cache_seqlens, batch_size);\n        params.cache_seqlens = cache_seqlens.data_ptr<int32_t>();\n    } else {\n        params.cache_seqlens = nullptr;\n    }\n\n    if (conv_state_indices_.has_value())",
+      "docstring": "",
+      "line": 255
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "c10",
+      "causal_conv1d",
+      "cub",
+      "static_switch",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 39,
+    "public_symbols": 39,
+    "classes": 0,
+    "functions": 39,
+    "internal_deps": 0,
+    "external_deps": 6,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/mamba/causal_conv1d/causal_conv1d.cu"
+}

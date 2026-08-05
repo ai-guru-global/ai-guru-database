@@ -28,9 +28,9 @@ name_zh: "运维文档模板"
 
 ## 2. 交叉引用
 
-- [架构设计](../architecture/01_索引.md)
-- [研发指南](../development/01_索引.md)
-- [测试指南](../testing/01_索引.md)
+- [架构设计](../architecture/INDEX.md)
+- [研发指南](../development/INDEX.md)
+- [测试指南](../testing/INDEX.md)
 
 ---
 

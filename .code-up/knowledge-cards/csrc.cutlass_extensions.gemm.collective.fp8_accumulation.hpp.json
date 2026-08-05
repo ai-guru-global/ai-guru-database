@@ -1,0 +1,114 @@
+{
+  "id": "csrc.cutlass_extensions.gemm.collective.fp8_accumulation.hpp",
+  "title": "Fp8 Accumulation",
+  "type": "module",
+  "summary": "Module providing Copyright, accum_, static_assert, accum_, cute::make_fragment_like and 5 more symbols",
+  "details": "Contains 12 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) 2023 - 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.\n * SPDX-License-Identifier: BSD-3-Clause\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n * list of conditions and the following disclaimer.\n *\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n * this list of conditions and the following disclaimer in the documentation\n * and/or other materials provided with the distribution.\n *\n * 3. Neither the name of the copyright holder nor the names of its\n * contributors may be used to endorse or promote products derived from\n * this software without specific prior written permission.\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\n * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\n * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\n * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\n * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\n * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n **************************************************************************************************/\n\n#pragma once\n\n#include \"cute/algorithm/clear.hpp\"\n#include \"cute/tensor.hpp\"\n\n//////////////////////////////////////////////////////////////////////////////\n///////////////////////////////////FP8 Accumulation///////////////////////////\n//////////////////////////////////////////////////////////////////////////////\n/// This class provides API to promote (add) or scale (multiply_add) the results\n/// from the tensor core accumulators to the main accumulators when the number \n/// of MMAs reaches the max number of MMA interval specified by user, after that\n/// the tensor core accumulators are zeroed.\n//////////////////////////////////////////////////////////////////////////////\n\nnamespace cutlass::gemm::collective {\n\ntemplate <\n    class EngineAccum,\n    class LayoutAccum>\nstruct GmmaFP8AccumulationWithScale {  \n  using TensorAccum = cute::Tensor<EngineAccum, LayoutAccum>;\n  using ElementAccumulator = typename EngineAccum::value_type;\n\n  static_assert(is_static<LayoutAccum>::value, \"Accumulator Layout should be static\");\n  static_assert(is_rmem<TensorAccum>::value , \"Accumulator tensor must be rmem resident.\");\n\nprivate:\n  TensorAccum& accum_;\n  TensorAccum accum_temp_;\n\n  uint32_t accum_promotion_interval_;         // defines the max num of executed MMAs after which accum should be promoted.\n  uint32_t mma_count_per_mainloop_iteration_; // num of MMAs per k_tile of mainloop\n  uint32_t mma_count_;                        // current executed MMAs\n  uint32_t reset_accum_flag_;                 // accum needs to be zeroed or not. \n\n  // promote or `add` the partial accumulators to main accumulator (FADD).\n  CUTLASS_DEVICE\n  void promote_core()",
+      "docstring": "",
+      "line": 4
+    },
+    {
+      "name": "accum_",
+      "kind": "function",
+      "signature": "accum_(i) += accum_temp_(i);\n    }\n  }\n\n  // `multiply` scale the partial accumulators and `add` to main accumulator (FFMA).\n  template <\n    class EngineScale,\n    class LayoutScale>\n  CUTLASS_DEVICE\n  void scale_core(const cute::Tensor<EngineScale, LayoutScale> &scale)",
+      "docstring": "",
+      "line": 75
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(is_static<LayoutScale>::value, \"Scale Layout should be static\");\n    static_assert(is_rmem<TensorScale>::value , \"Scale tensor must be rmem resident.\");\n\n    static_assert(LayoutAccum{}.shape() == LayoutScale{}.shape(), \"Accumulator and scale must have same shape.\");\n\n    warpgroup_wait<0>();\n    CUTLASS_PRAGMA_UNROLL\n    for (int i = 0; i < size(accum_); ++i)",
+      "docstring": "",
+      "line": 86
+    },
+    {
+      "name": "accum_",
+      "kind": "function",
+      "signature": "accum_(i) += accum_temp_(i) * scale(i);\n    }\n  }\n\npublic:\n  CUTLASS_DEVICE\n  GmmaFP8AccumulationWithScale(\n      TensorAccum &accum,\n      uint32_t accum_promotion_interval,\n      uint32_t mma_count_per_mainloop_iteration)\n      : accum_(accum), \n        accum_promotion_interval_(accum_promotion_interval),\n        mma_count_per_mainloop_iteration_(mma_count_per_mainloop_iteration),\n        mma_count_(0), \n        reset_accum_flag_(0)",
+      "docstring": "",
+      "line": 95
+    },
+    {
+      "name": "cute::make_fragment_like",
+      "kind": "function",
+      "signature": "cute::make_fragment_like(accum);\n  }\n\n  //\n  // Methods (Common)\n  //\n\n  CUTLASS_DEVICE \n  TensorAccum& operator()()",
+      "docstring": "",
+      "line": 112
+    },
+    {
+      "name": "prepare_if_needed",
+      "kind": "function",
+      "signature": "prepare_if_needed()",
+      "docstring": "",
+      "line": 124
+    },
+    {
+      "name": "Methods",
+      "kind": "function",
+      "signature": "Methods(for FADD version)\n  //\n\n  /// promote (add) the results from the MMA accumulators to main accumulator if needed.\n  CUTLASS_DEVICE\n  void promote_if_needed()",
+      "docstring": "",
+      "line": 131
+    },
+    {
+      "name": "__shfl_sync",
+      "kind": "function",
+      "signature": "__shfl_sync(0xffffffff, mma_count_ == accum_promotion_interval_, 0);\n    if (reset_accum_flag_)",
+      "docstring": "",
+      "line": 138
+    },
+    {
+      "name": "promote_core",
+      "kind": "function",
+      "signature": "promote_core();\n      mma_count_ = 0;\n    }\n  }\n\n  /// promote (add) the residue results from the MMA accumulators to main accumulator if needed.\n  CUTLASS_DEVICE\n  void promote_residue_if_needed()",
+      "docstring": "",
+      "line": 139
+    },
+    {
+      "name": "promote_core",
+      "kind": "function",
+      "signature": "promote_core();\n    }\n  }\n\n  //\n  // Methods (for FFMA version)\n  //\n\n  /// scale (multiply_add) the results from the MMA accumulators to main accumulator if needed.\n  template <\n    class EngineScale,\n    class LayoutScale>\n  CUTLASS_DEVICE\n  void scale_if_needed(const cute::Tensor<EngineScale, LayoutScale> &scale)",
+      "docstring": "",
+      "line": 148
+    },
+    {
+      "name": "__shfl_sync",
+      "kind": "function",
+      "signature": "__shfl_sync(0xffffffff, mma_count_ == accum_promotion_interval_, 0);\n    if (reset_accum_flag_)",
+      "docstring": "",
+      "line": 164
+    },
+    {
+      "name": "scale_core",
+      "kind": "function",
+      "signature": "scale_core(scale);\n      mma_count_ = 0;\n    }\n  }\n\n  /// scale (multiply_add) the residue results from the MMA accumulators to main accumulator if needed.\n  template <\n    class EngineScale,\n    class LayoutScale>\n  CUTLASS_DEVICE\n  void scale_residue_if_needed(const cute::Tensor<EngineScale, LayoutScale> &scale)",
+      "docstring": "",
+      "line": 165
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cute"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 12,
+    "public_symbols": 12,
+    "classes": 0,
+    "functions": 12,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cutlass_extensions/gemm/collective/fp8_accumulation.hpp"
+}

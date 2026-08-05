@@ -73,7 +73,7 @@ name_zh: "Learn Claude Code 课程映射：20 课 Harness 工程"
 | 课号 | 课程名称 | 引入的 Harness 机制 | 本库相关概念/页面 |
 |------|----------|---------------------|-------------------|
 | s09 | Memory | 跨会话记忆：`.memory/` Markdown 文件 + `MEMORY.md` 索引 + 每轮提取/整理 | [[15_智能体/15_课程笔记/Learn_Claude_Code_L09_Memory_System|L09 笔记]], [[15_智能体/06_记忆基础设施/01_Agent_Memory_系统_2026|Agent 记忆系统 2026]] |
-| s10 | System Prompt | system prompt 分段定义、按真实状态运行时组装、缓存 | [[15_智能体/04_Agent脚手架/01_Agent_脚手架_架构_2026|Harness 架构]], [[05_大模型/08_提示工程/16_Prompt工程|提示工程]] |
+| s10 | System Prompt | system prompt 分段定义、按真实状态运行时组装、缓存 | [[15_智能体/04_Agent脚手架/01_Agent_脚手架_架构_2026|Harness 架构]], [[05_大模型/07_提示工程/16_Prompt工程|提示工程]] |
 | s11 | Error Recovery | 错误恢复：输出截断升级、上下文超限 reactive compact、429/529 指数退避与 fallback 模型 | [[概念/Agent/agent-harness|Harness 速览]] |
 
 ### 第四阶段：长期运行与调度（s12-s14）

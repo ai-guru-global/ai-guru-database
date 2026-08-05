@@ -1,0 +1,46 @@
+{
+  "id": "csrc.cuda_view.cu",
+  "title": "Cuda View",
+  "type": "module",
+  "summary": "Module providing UVA, TORCH_CHECK",
+  "details": "Contains 2 functions/methods",
+  "symbols": 
+    {
+      "name": "UVA",
+      "kind": "function",
+      "signature": "UVA(Unified Virtual Addressing) is enabled.\ntorch::Tensor get_cuda_view_from_cpu_tensor(torch::Tensor& cpu_tensor)",
+      "docstring": "",
+      "line": 6
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(cpu_tensor.device().is_cpu(), \"Input tensor must be on CPU\");\n\n  // Get raw host pointer from CPU tensor\n  void* host_ptr = cpu_tensor.data_ptr();\n\n  // Get a device pointer corresponding to the pinned host memory\n  void* device_ptr = nullptr;\n  cudaError_t err = cudaHostGetDevicePointer(&device_ptr, host_ptr, 0);\n  TORCH_CHECK(err == cudaSuccess,\n              \"cudaHostGetDevicePointer failed: \", cudaGetErrorString(err));\n\n  // We'll use the same sizes, strides, and dtype as the CPU tensor.\n  // TODO: check if layout is respected.\n  auto sizes = cpu_tensor.sizes();\n  auto strides = cpu_tensor.strides();\n  auto options = cpu_tensor.options().device(torch::kCUDA);\n\n  // from_blob signature: from_blob(void *data, IntArrayRef sizes, ..., Deleter,\n  // const TensorOptions &) Provide a no-op deleter. The CPU tensor holds the\n  // memory, so we don't free it here.\n  auto deleter = [",
+      "docstring": "",
+      "line": 7
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cuda_runtime",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 2,
+    "public_symbols": 2,
+    "classes": 0,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cuda_view.cu"
+}

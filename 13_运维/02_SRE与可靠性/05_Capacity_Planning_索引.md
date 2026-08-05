@@ -24,7 +24,7 @@ name_zh: "容量规划专题"
 
 - [[13_运维/index|运维首页]]
 - [[13_运维/05_成本管理/index|Cost Management]]
-- [[13_运维/06_可观测性/01_索引|Observability]]
+- [[13_运维/06_可观测性/INDEX|Observability]]
 
 ## 专题深度解析
 

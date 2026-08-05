@@ -854,7 +854,7 @@ class PersonalizedVoiceAgent:
 - [[概念/Agent/computer-use|计算机使用智能体]] — 语音+GUI多模态Agent
 - [[14_RAG系统/04_高级RAG/12_RAG_高级_2026|RAG高级实践]] — 语音Agent知识库检索
 - [[14_RAG系统/04_高级RAG/02_Agentic_RAG_指南|Agentic RAG指南]] — 语音Agent + RAG集成
-- [[05_大模型/14_全球LLM生态/09_OpenAI_深入分析|GPT-4o]] — 端到端语音多模态模型
+- [[05_大模型/13_全球LLM生态/09_OpenAI_深入分析|GPT-4o]] — 端到端语音多模态模型
 - 实时Web应用 — WebSocket/WebRTC基础
 
 ---

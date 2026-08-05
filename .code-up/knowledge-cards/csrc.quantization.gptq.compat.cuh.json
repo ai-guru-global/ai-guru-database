@@ -1,0 +1,56 @@
+{
+  "id": "csrc.quantization.gptq.compat.cuh",
+  "title": "Compat",
+  "type": "module",
+  "summary": "Module providing atomicAdd_half, __hadd, __hadd2, atomicAdd_half",
+  "details": "Contains 4 functions/methods",
+  "symbols": [
+    {
+      "name": "atomicAdd_half",
+      "kind": "function",
+      "signature": "atomicAdd_half(half* address, half val)",
+      "docstring": "",
+      "line": 10
+    },
+    {
+      "name": "__hadd",
+      "kind": "function",
+      "signature": "__hadd(hsum, val);\n    hsum = __half_raw(tmpres);\n    old = (size_t)address & 2 ? (old & 0xffff) | (hsum.x << 16)\n                              : (old & 0xffff0000) | hsum.x;\n    old = atomicCAS(address_as_ui, assumed, old);\n  } while (assumed != old);\n}\n\n// atomicAdd for half2 types\n\n__device__ __forceinline__ void atomicAdd_half2(half2* address, half2 val)",
+      "docstring": "",
+      "line": 22
+    },
+    {
+      "name": "__hadd2",
+      "kind": "function",
+      "signature": "__hadd2(old_val, val);\n    old = atomicCAS(address_as_ui, assumed, *((unsigned int*)&new_val));\n  } while (assumed != old);\n}\n\n//\n\n#if defined(__CUDA_ARCH__) || defined(USE_ROCM)\n  #if __CUDA_ARCH__ < 700 || defined(USE_ROCM)\n\n__device__ __forceinline__ void atomicAdd(half* address, half val)",
+      "docstring": "",
+      "line": 39
+    },
+    {
+      "name": "atomicAdd_half",
+      "kind": "function",
+      "signature": "atomicAdd_half(address, val);\n}\n\n    #if __CUDA_ARCH__ < 600 || defined(USE_ROCM)\n__device__ __forceinline__ void atomicAdd(half2* address, half2 val)",
+      "docstring": "",
+      "line": 49
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": []
+  },
+  "metrics": {
+    "total_symbols": 4,
+    "public_symbols": 4,
+    "classes": 0,
+    "functions": 4,
+    "internal_deps": 0,
+    "external_deps": 0,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/gptq/compat.cuh"
+}

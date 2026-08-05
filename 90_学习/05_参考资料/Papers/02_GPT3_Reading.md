@@ -173,7 +173,7 @@ GPT-3 论文对 In-Context Learning 的解释（也是后续研究的核心议�
 
 1. **催生 ChatGPT**: GPT-3 加上后续的 RLHF（基于人类反馈的强化学习）演化为 ChatGPT（2022），引爆全球 AI 浪潮
 2. **确立 Scaling Law 信仰**: "大力出奇迹"成为大模型时代的主导策略
-3. **定义提示工程（Prompt Engineering）**: Few-Shot / CoT 等技术成为 LLM 应用核心（详见 [[05_大模型/08_提示工程/16_Prompt工程]]）
+3. **定义提示工程（Prompt Engineering）**: Few-Shot / CoT 等技术成为 LLM 应用核心（详见 [[05_大模型/07_提示工程/16_Prompt工程]]）
 4. **API 商业化**: OpenAI 基于 GPT-3 推出 API，开创 LLM as a Service 模式
 
 ### 后续演进
@@ -301,7 +301,7 @@ Loss ≈ A / N^α + B / D^β + C
 
 - [[90_学习/01_概念认知/06_stage4_frontier|Scaling Law]] — 前沿探索中的核心概念
 - [[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading|Transformer 论文]] — 架构源头
-- [[05_大模型/08_提示工程/16_Prompt工程|Prompt Engineering]] — Few-Shot 是核心技巧
+- [[05_大模型/07_提示工程/16_Prompt工程|Prompt Engineering]] — Few-Shot 是核心技巧
 - [[90_学习/01_概念认知/04_stage2_core_tech|预训练 vs 微调]] — ICL 是"第三条路"
 - [[90_学习/05_参考资料/books/08_hands_on_llms_alammar|Hands-On LLMs]] — 可视化理解 LLM
 
@@ -337,8 +337,8 @@ Loss ≈ A / N^α + B / D^β + C
 - [[90_学习/05_参考资料/books/08_hands_on_llms_alammar|Hands-On LLMs]] — LLM 图解
 - [[90_学习/05_参考资料/books/15_ai_engineering_huyen|AI Engineering]] — LLM 应用工程
 - [[05_大模型/01_LLM基础]] — LLM 基础
-- [[05_大模型/08_提示工程/16_Prompt工程]] — 提示工程
+- [[05_大模型/07_提示工程/16_Prompt工程]] — 提示工程
 - [[90_学习/01_概念认知/04_stage2_core_tech|Stage 2: 核心技术]] — LLM 在学习路径中的位置
 - [[90_学习/01_概念认知/06_stage4_frontier|Stage 4: 前沿]] — Scaling Law 与数据墙
 
-> **关联**: → [[90_学习/05_参考资料/Projects/01_papers_with_code]] | [[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading|Transformer]] | [[90_学习/05_参考资料/Papers/03_BERT_Reading|BERT]] | [[05_大模型/01_LLM基础]] | [[05_大模型/08_提示工程/16_Prompt工程]] | [[90_学习/01_概念认知/06_stage4_frontier|Stage 4 前沿]]
+> **关联**: → [[90_学习/05_参考资料/Projects/01_papers_with_code]] | [[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading|Transformer]] | [[90_学习/05_参考资料/Papers/03_BERT_Reading|BERT]] | [[05_大模型/01_LLM基础]] | [[05_大模型/07_提示工程/16_Prompt工程]] | [[90_学习/01_概念认知/06_stage4_frontier|Stage 4 前沿]]

@@ -1,0 +1,124 @@
+{
+  "id": "csrc.attention.vertical_slash_index.cu",
+  "title": "Vertical Slash Index",
+  "type": "module",
+  "summary": "Module providing Copyright, convert_vertical_slash_indexes_kernel, save_blocks, save_blocks, save_blocks and 5 more symbols",
+  "details": "Contains 13 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) Microsoft Corporation.\n// Licensed under the MIT license.\n\n#include <assert.h>\n\n#include <cuda.h>\n\n#include <torch/all.h>\n\n__device__ int64_t save_blocks(int* block_offset, int64_t range_start,\n                               int64_t range_end, int64_t block_size,\n                               int64_t input_block_count, int64_t kv_seqlen)",
+      "docstring": "",
+      "line": 1
+    },
+    {
+      "name": "convert_vertical_slash_indexes_kernel",
+      "kind": "function",
+      "signature": "convert_vertical_slash_indexes_kernel(\n    const int* q_seqlens,         // [BATCH, ]\n    const int* kv_seqlens,        // [BATCH, ]\n    const int* vertical_indexes,  // [BATCH, N_HEADS, NNZ_V]\n    const int* slash_indexes,     // [BATCH, N_HEADS, NNZ_S]\n    int* block_count,             // [BATCH, N_HEADS, cdiv(N_CTX, BLOCK_SIZE_M)]\n    int* block_offset,  // [BATCH, N_HEADS, cdiv(N_CTX, BLOCK_SIZE_M), NNZ_S]\n    int* column_count,  // [BATCH, N_HEADS, cdiv(N_CTX, BLOCK_SIZE_M)]\n    int* column_index,  // [BATCH, N_HEADS, cdiv(N_CTX, BLOCK_SIZE_M), NNZ_V]\n    int64_t N_HEADS, int64_t N_ROWS, int64_t BLOCK_SIZE_M, int64_t BLOCK_SIZE_N,\n    int64_t NNZ_V, int64_t NNZ_S,\n    bool causal  // True for intra, False for succ\n)",
+      "docstring": "",
+      "line": 24
+    },
+    {
+      "name": "save_blocks",
+      "kind": "function",
+      "signature": "save_blocks(block_offset, range_start, range_end,\n                                    BLOCK_SIZE_N, tmp_blk_cnt, kv_seqlen);\n          break;\n        } else {\n          if (causal)",
+      "docstring": "",
+      "line": 117
+    },
+    {
+      "name": "save_blocks",
+      "kind": "function",
+      "signature": "save_blocks(block_offset, range_start, range_end,\n                                      BLOCK_SIZE_N, tmp_blk_cnt, kv_seqlen);\n            range_start = kv_seqlen;\n            range_end = kv_seqlen + BLOCK_SIZE_N;\n          }\n          slash_finished = true;\n        }\n      }\n      if (!slash_finished)",
+      "docstring": "",
+      "line": 127
+    },
+    {
+      "name": "save_blocks",
+      "kind": "function",
+      "signature": "save_blocks(block_offset, range_start, range_end,\n                                    BLOCK_SIZE_N, tmp_blk_cnt, kv_seqlen);\n          range_start = s_idx - BLOCK_SIZE_M;\n          range_end = s_idx;\n        } else if (s_idx > range_end)",
+      "docstring": "",
+      "line": 137
+    },
+    {
+      "name": "convert_vertical_slash_indexes_64x64",
+      "kind": "function",
+      "signature": "convert_vertical_slash_indexes_64x64(\n    const int* q_seqlens,         // [BATCH, ]\n    const int* kv_seqlens,        // [BATCH, ]\n    const int* vertical_indexes,  // [BATCH, N_HEADS, NNZ_V]\n    const int* slash_indexes,     // [BATCH, N_HEADS, NNZ_S]\n    int* block_count,             // [BATCH, N_HEADS, cdiv(N_CTX, BLOCK_SIZE_M)]\n    int* block_offset,  // [BATCH, N_HEADS, cdiv(N_CTX, BLOCK_SIZE_M), NNZ_S]\n    int* column_count,  // [BATCH, N_HEADS, cdiv(N_CTX, BLOCK_SIZE_M)]\n    int* column_index,  // [BATCH, N_HEADS, cdiv(N_CTX, BLOCK_SIZE_M), NNZ_V]\n    int64_t BATCH_SIZE, int64_t N_HEADS, int64_t N_ROWS, int64_t BLOCK_SIZE_M,\n    int64_t BLOCK_SIZE_N, int64_t NNZ_V, int64_t NNZ_S, bool causal)",
+      "docstring": "",
+      "line": 150
+    },
+    {
+      "name": "dimBlock",
+      "kind": "function",
+      "signature": "dimBlock(N_THREADS);\n  const dim3 dimGrid(N_HEADS, BATCH_SIZE, (N_ROWS + N_THREADS - 1) / N_THREADS);\n  convert_vertical_slash_indexes_kernel<<<dimGrid, dimBlock>>>(\n      q_seqlens, kv_seqlens, vertical_indexes, slash_indexes, block_count,\n      block_offset, column_count, column_index, N_HEADS, N_ROWS, BLOCK_SIZE_M,\n      BLOCK_SIZE_N, NNZ_V, NNZ_S, causal);\n}\n\n/**\n * Implements the Algorithm 4 in paper https://arxiv.org/abs/2407.02490.\n *\n * This function builds the index of each row of blocks from vertical indices\n * and slash indices. The vertical indices are treated as points, while the\n * slash indices are converted as ranges. The output consists of the merged\n * ranges and separate column indices, where the ranges are represented by\n * block indices.\n *\n * The implementation is referenced from the original MInference repo:\n * https://github.com/microsoft/MInference/blob/main/csrc/vertical_slash_index.cu.\n */\nvoid convert_vertical_slash_indexes(\n    torch::Tensor& block_count,      // [BATCH, N_HEADS, NUM_ROWS]\n    torch::Tensor& block_offset,     // [BATCH, N_HEADS, NUM_ROWS, NNZ_S]\n    torch::Tensor& column_count,     // [BATCH, N_HEADS, NUM_ROWS]\n    torch::Tensor& column_index,     // [BATCH, N_HEADS, NUM_ROWS, NNZ_V]\n    torch::Tensor q_seqlens,         // [BATCH, ]\n    torch::Tensor kv_seqlens,        // [BATCH, ]\n    torch::Tensor vertical_indexes,  // [BATCH, N_HEADS, NNZ_V]\n    torch::Tensor slash_indexes,     // [BATCH, N_HEADS, NNZ_S]\n    int64_t context_size, int64_t block_size_M, int64_t block_size_N,\n    bool causal)",
+      "docstring": "",
+      "line": 163
+    },
+    {
+      "name": "cudaSetDevice",
+      "kind": "function",
+      "signature": "cudaSetDevice(q_seqlens.get_device());\n\n  int batch_size = slash_indexes.size(0);\n  int num_heads = slash_indexes.size(1);\n  int nnz_slash = slash_indexes.size(2);\n  int nnz_vertical = vertical_indexes.size(2);\n  int num_rows = (context_size + block_size_M - 1) / block_size_M;\n\n  convert_vertical_slash_indexes_64x64(\n      q_seqlens.data_ptr<int>(), kv_seqlens.data_ptr<int>(),\n      vertical_indexes.data_ptr<int>(), slash_indexes.data_ptr<int>(),\n      block_count.data_ptr<int>(), block_offset.data_ptr<int>(),\n      column_count.data_ptr<int>(), column_index.data_ptr<int>(), batch_size,\n      num_heads, num_rows, block_size_M, block_size_N, nnz_vertical, nnz_slash,\n      causal);\n}\n\n__global__ void convert_vertical_slash_indexes_kernel_mergehead(\n    const int* q_seqlens,         // [BATCH, ]\n    const int* kv_seqlens,        // [BATCH, ]\n    const int* vertical_indexes,  // [BATCH, N_HEADS, NNZ_V]\n    const int* slash_indexes,     // [BATCH, N_HEADS, NNZ_S]\n    const int* per_head_vertical_topkv, const int* per_head_slash_topkv,\n    int* block_count,   // [BATCH, N_HEADS, cdiv(N_CTX, BLOCK_SIZE_M)]\n    int* block_offset,  // [BATCH, N_HEADS, cdiv(N_CTX, BLOCK_SIZE_M), NNZ_S]\n    int* column_count,  // [BATCH, N_HEADS, cdiv(N_CTX, BLOCK_SIZE_M)]\n    int* column_index,  // [BATCH, N_HEADS, cdiv(N_CTX, BLOCK_SIZE_M), NNZ_V]\n    int64_t N_HEADS, int64_t N_ROWS, int64_t BLOCK_SIZE_M, int64_t BLOCK_SIZE_N,\n    int64_t NNZ_V, int64_t NNZ_S,\n    bool causal  // True for intra, False for succ\n)",
+      "docstring": "",
+      "line": 194
+    },
+    {
+      "name": "save_blocks",
+      "kind": "function",
+      "signature": "save_blocks(block_offset, range_start, range_end,\n                                    BLOCK_SIZE_N, tmp_blk_cnt, kv_seqlen);\n          break;\n        } else {\n          if (causal)",
+      "docstring": "",
+      "line": 309
+    },
+    {
+      "name": "save_blocks",
+      "kind": "function",
+      "signature": "save_blocks(block_offset, range_start, range_end,\n                                      BLOCK_SIZE_N, tmp_blk_cnt, kv_seqlen);\n            range_start = kv_seqlen;\n            range_end = kv_seqlen + BLOCK_SIZE_N;\n          }\n          slash_finished = true;\n        }\n      }\n      if (!slash_finished)",
+      "docstring": "",
+      "line": 319
+    },
+    {
+      "name": "save_blocks",
+      "kind": "function",
+      "signature": "save_blocks(block_offset, range_start, range_end,\n                                    BLOCK_SIZE_N, tmp_blk_cnt, kv_seqlen);\n          range_start = s_idx - BLOCK_SIZE_M;\n          range_end = s_idx;\n        } else if (s_idx > range_end)",
+      "docstring": "",
+      "line": 329
+    },
+    {
+      "name": "convert_vertical_slash_indexes_64x64_mergehead",
+      "kind": "function",
+      "signature": "convert_vertical_slash_indexes_64x64_mergehead(\n    const int* q_seqlens,         // [BATCH, ]\n    const int* kv_seqlens,        // [BATCH, ]\n    const int* vertical_indexes,  // [BATCH, N_HEADS, NNZ_V]\n    const int* slash_indexes,     // [BATCH, N_HEADS, NNZ_S]\n    int* per_head_vertical_topkv, int* per_head_slash_topkv,\n    int* block_count,   // [BATCH, N_HEADS, cdiv(N_CTX, BLOCK_SIZE_M)]\n    int* block_offset,  // [BATCH, N_HEADS, cdiv(N_CTX, BLOCK_SIZE_M), NNZ_S]\n    int* column_count,  // [BATCH, N_HEADS, cdiv(N_CTX, BLOCK_SIZE_M)]\n    int* column_index,  // [BATCH, N_HEADS, cdiv(N_CTX, BLOCK_SIZE_M), NNZ_V]\n    int64_t BATCH_SIZE, int64_t N_HEADS, int64_t N_ROWS, int64_t BLOCK_SIZE_M,\n    int64_t BLOCK_SIZE_N, int64_t NNZ_V, int64_t NNZ_S, bool causal)",
+      "docstring": "",
+      "line": 342
+    },
+    {
+      "name": "dimBlock",
+      "kind": "function",
+      "signature": "dimBlock(N_THREADS);\n  const dim3 dimGrid(N_HEADS, BATCH_SIZE, (N_ROWS + N_THREADS - 1) / N_THREADS);\n  convert_vertical_slash_indexes_kernel_mergehead<<<dimGrid, dimBlock>>>(\n      q_seqlens, kv_seqlens, vertical_indexes, slash_indexes,\n      per_head_vertical_topkv, per_head_slash_topkv, block_count, block_offset,\n      column_count, column_index, N_HEADS, N_ROWS, BLOCK_SIZE_M, BLOCK_SIZE_N,\n      NNZ_V, NNZ_S, causal);\n}\n\n/**\n * Implements the Algorithm 4 in paper https://arxiv.org/abs/2407.02490.\n *\n * Like the above convert_vertical_slash_indexes, but with\n * pre-computed vertical and slash counts.\n */\nvoid convert_vertical_slash_indexes_mergehead(\n    torch::Tensor& block_count,            // [BATCH, N_HEADS, NUM_ROWS]\n    torch::Tensor& block_offset,           // [BATCH, N_HEADS, NUM_ROWS, NNZ_S]\n    torch::Tensor& column_count,           // [BATCH, N_HEADS, NUM_ROWS]\n    torch::Tensor& column_index,           // [BATCH, N_HEADS, NUM_ROWS, NNZ_V]\n    torch::Tensor q_seqlens,               // [BATCH, ]\n    torch::Tensor kv_seqlens,              // [BATCH, ]\n    torch::Tensor vertical_indexes,        // [BATCH, N_HEADS, NNZ_V]\n    torch::Tensor slash_indexes,           // [BATCH, N_HEADS, NNZ_S]\n    torch::Tensor vertical_indices_count,  // [N_HEADS, ]\n    torch::Tensor slash_indices_count,     // [N_HEADS, ]\n    int64_t context_size, int64_t block_size_M, int64_t block_size_N,\n    bool causal)",
+      "docstring": "",
+      "line": 356
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "assert",
+      "cuda",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 13,
+    "public_symbols": 13,
+    "classes": 0,
+    "functions": 13,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/attention/vertical_slash_index.cu"
+}

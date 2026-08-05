@@ -1,0 +1,133 @@
+{
+  "id": "csrc.quantization.gguf.moe_vec.cuh",
+  "title": "Moe Vec",
+  "type": "module",
+  "summary": "Module providing moe_vec_q, vec_dot_q_cuda, VLLM_SHFL_XOR_SYNC, moe_vec_q4_0_q8_1_cuda, block_nums and 5 more symbols",
+  "details": "Contains 22 functions/methods",
+  "symbols": [
+    {
+      "name": "moe_vec_q",
+      "kind": "function",
+      "signature": "moe_vec_q(const void* __restrict__ vx,\n                                 const void* __restrict__ vy,\n                                 scalar_t* __restrict__ dst,\n                                 const int* topk_ids, const int topk,\n                                 const int ncols, const int nrows,\n                                 const int token_stride)",
+      "docstring": "",
+      "line": 2
+    },
+    {
+      "name": "vec_dot_q_cuda",
+      "kind": "function",
+      "signature": "vec_dot_q_cuda(&x[ibx], &y[iby], iqs);\n  }\n\n  // sum up partial sums and write back result\n#pragma unroll\n  for (int mask = WARP_SIZE / 2; mask > 0; mask >>= 1)",
+      "docstring": "",
+      "line": 41
+    },
+    {
+      "name": "VLLM_SHFL_XOR_SYNC",
+      "kind": "function",
+      "signature": "VLLM_SHFL_XOR_SYNC(tmp, mask);\n  }\n\n  if (threadIdx.x == 0)",
+      "docstring": "",
+      "line": 47
+    },
+    {
+      "name": "moe_vec_q4_0_q8_1_cuda",
+      "kind": "function",
+      "signature": "moe_vec_q4_0_q8_1_cuda(const void* vx, const void* vy,\n                                   scalar_t* dst, const int* topk_ids,\n                                   const int top_k, const int tokens,\n                                   const int ncols, const int nrows,\n                                   const int token_stride,\n                                   cudaStream_t stream)",
+      "docstring": "",
+      "line": 53
+    },
+    {
+      "name": "block_nums",
+      "kind": "function",
+      "signature": "block_nums(block_num_y, 1, tokens * top_k);\n  const dim3 block_dims(WARP_SIZE, GGML_CUDA_MMV_Y, 1);\n  moe_vec_q<scalar_t, QK4_0, QI4_0, block_q4_0, VDR_Q4_0_Q8_1_MMVQ,\n            vec_dot_q4_0_q8_1><<<block_nums, block_dims, 0, stream>>>(\n      vx, vy, dst, topk_ids, top_k, ncols, nrows, token_stride);\n}\n\ntemplate <typename scalar_t>\nstatic void moe_vec_q4_1_q8_1_cuda(const void* vx, const void* vy,\n                                   scalar_t* dst, const int* topk_ids,\n                                   const int top_k, const int tokens,\n                                   const int ncols, const int nrows,\n                                   const int token_stride,\n                                   cudaStream_t stream)",
+      "docstring": "",
+      "line": 62
+    },
+    {
+      "name": "block_nums",
+      "kind": "function",
+      "signature": "block_nums(block_num_y, 1, tokens * top_k);\n  const dim3 block_dims(WARP_SIZE, GGML_CUDA_MMV_Y, 1);\n  moe_vec_q<scalar_t, QK4_0, QI4_1, block_q4_1, VDR_Q4_1_Q8_1_MMVQ,\n            vec_dot_q4_1_q8_1><<<block_nums, block_dims, 0, stream>>>(\n      vx, vy, dst, topk_ids, top_k, ncols, nrows, token_stride);\n}\n\ntemplate <typename scalar_t>\nstatic void moe_vec_q5_0_q8_1_cuda(const void* vx, const void* vy,\n                                   scalar_t* dst, const int* topk_ids,\n                                   const int top_k, const int tokens,\n                                   const int ncols, const int nrows,\n                                   const int token_stride,\n                                   cudaStream_t stream)",
+      "docstring": "",
+      "line": 77
+    },
+    {
+      "name": "block_nums",
+      "kind": "function",
+      "signature": "block_nums(block_num_y, 1, tokens * top_k);\n  const dim3 block_dims(WARP_SIZE, GGML_CUDA_MMV_Y, 1);\n  moe_vec_q<scalar_t, QK5_0, QI5_0, block_q5_0, VDR_Q5_0_Q8_1_MMVQ,\n            vec_dot_q5_0_q8_1><<<block_nums, block_dims, 0, stream>>>(\n      vx, vy, dst, topk_ids, top_k, ncols, nrows, token_stride);\n}\n\ntemplate <typename scalar_t>\nstatic void moe_vec_q5_1_q8_1_cuda(const void* vx, const void* vy,\n                                   scalar_t* dst, const int* topk_ids,\n                                   const int top_k, const int tokens,\n                                   const int ncols, const int nrows,\n                                   const int token_stride,\n                                   cudaStream_t stream)",
+      "docstring": "",
+      "line": 92
+    },
+    {
+      "name": "block_nums",
+      "kind": "function",
+      "signature": "block_nums(block_num_y, 1, tokens * top_k);\n  const dim3 block_dims(WARP_SIZE, GGML_CUDA_MMV_Y, 1);\n  moe_vec_q<scalar_t, QK5_1, QI5_1, block_q5_1, VDR_Q5_1_Q8_1_MMVQ,\n            vec_dot_q5_1_q8_1><<<block_nums, block_dims, 0, stream>>>(\n      vx, vy, dst, topk_ids, top_k, ncols, nrows, token_stride);\n}\n\ntemplate <typename scalar_t>\nstatic void moe_vec_q8_0_q8_1_cuda(const void* vx, const void* vy,\n                                   scalar_t* dst, const int* topk_ids,\n                                   const int top_k, const int tokens,\n                                   const int ncols, const int nrows,\n                                   const int token_stride,\n                                   cudaStream_t stream)",
+      "docstring": "",
+      "line": 107
+    },
+    {
+      "name": "block_nums",
+      "kind": "function",
+      "signature": "block_nums(block_num_y, 1, tokens * top_k);\n  const dim3 block_dims(WARP_SIZE, GGML_CUDA_MMV_Y, 1);\n  moe_vec_q<scalar_t, QK8_0, QI8_0, block_q8_0, VDR_Q8_0_Q8_1_MMVQ,\n            vec_dot_q8_0_q8_1><<<block_nums, block_dims, 0, stream>>>(\n      vx, vy, dst, topk_ids, top_k, ncols, nrows, token_stride);\n}\n\ntemplate <typename scalar_t>\nstatic void moe_vec_q2_K_q8_1_cuda(const void* vx, const void* vy,\n                                   scalar_t* dst, const int* topk_ids,\n                                   const int top_k, const int tokens,\n                                   const int ncols, const int nrows,\n                                   const int token_stride,\n                                   cudaStream_t stream)",
+      "docstring": "",
+      "line": 122
+    },
+    {
+      "name": "block_nums",
+      "kind": "function",
+      "signature": "block_nums(block_num_y, 1, tokens * top_k);\n  const dim3 block_dims(WARP_SIZE, GGML_CUDA_MMV_Y, 1);\n  moe_vec_q<scalar_t, QK_K, QI2_K, block_q2_K, VDR_Q2_K_Q8_1_MMVQ,\n            vec_dot_q2_K_q8_1><<<block_nums, block_dims, 0, stream>>>(\n      vx, vy, dst, topk_ids, top_k, ncols, nrows, token_stride);\n}\n\ntemplate <typename scalar_t>\nstatic void moe_vec_q3_K_q8_1_cuda(const void* vx, const void* vy,\n                                   scalar_t* dst, const int* topk_ids,\n                                   const int top_k, const int tokens,\n                                   const int ncols, const int nrows,\n                                   const int token_stride,\n                                   cudaStream_t stream)",
+      "docstring": "",
+      "line": 137
+    },
+    {
+      "name": "block_nums",
+      "kind": "function",
+      "signature": "block_nums(block_num_y, 1, tokens * top_k);\n  const dim3 block_dims(WARP_SIZE, GGML_CUDA_MMV_Y, 1);\n  moe_vec_q<scalar_t, QK_K, QI3_K, block_q3_K, VDR_Q3_K_Q8_1_MMVQ,\n            vec_dot_q3_K_q8_1><<<block_nums, block_dims, 0, stream>>>(\n      vx, vy, dst, topk_ids, top_k, ncols, nrows, token_stride);\n}\n\ntemplate <typename scalar_t>\nstatic void moe_vec_q4_K_q8_1_cuda(const void* vx, const void* vy,\n                                   scalar_t* dst, const int* topk_ids,\n                                   const int top_k, const int tokens,\n                                   const int ncols, const int nrows,\n                                   const int token_stride,\n                                   cudaStream_t stream)",
+      "docstring": "",
+      "line": 152
+    },
+    {
+      "name": "block_nums",
+      "kind": "function",
+      "signature": "block_nums(block_num_y, 1, tokens * top_k);\n  const dim3 block_dims(WARP_SIZE, GGML_CUDA_MMV_Y, 1);\n  moe_vec_q<scalar_t, QK_K, QI4_K, block_q4_K, VDR_Q4_K_Q8_1_MMVQ,\n            vec_dot_q4_K_q8_1><<<block_nums, block_dims, 0, stream>>>(\n      vx, vy, dst, topk_ids, top_k, ncols, nrows, token_stride);\n}\n\ntemplate <typename scalar_t>\nstatic void moe_vec_q5_K_q8_1_cuda(const void* vx, const void* vy,\n                                   scalar_t* dst, const int* topk_ids,\n                                   const int top_k, const int tokens,\n                                   const int ncols, const int nrows,\n                                   const int token_stride,\n                                   cudaStream_t stream)",
+      "docstring": "",
+      "line": 167
+    },
+    {
+      "name": "block_nums",
+      "kind": "function",
+      "signature": "block_nums(block_num_y, 1, tokens * top_k);\n  const dim3 block_dims(WARP_SIZE, GGML_CUDA_MMV_Y, 1);\n  moe_vec_q<scalar_t, QK_K, QI5_K, block_q5_K, VDR_Q5_K_Q8_1_MMVQ,\n            vec_dot_q5_K_q8_1><<<block_nums, block_dims, 0, stream>>>(\n      vx, vy, dst, topk_ids, top_k, ncols, nrows, token_stride);\n}\n\ntemplate <typename scalar_t>\nstatic void moe_vec_q6_K_q8_1_cuda(const void* vx, const void* vy,\n                                   scalar_t* dst, const int* topk_ids,\n                                   const int top_k, const int tokens,\n                                   const int ncols, const int nrows,\n                                   const int token_stride,\n                                   cudaStream_t stream)",
+      "docstring": "",
+      "line": 182
+    },
+    {
+      "name": "block_nums",
+      "kind": "function",
+      "signature": "block_nums(block_num_y, 1, tokens * top_k);\n  const dim3 block_dims(WARP_SIZE, GGML_CUDA_MMV_Y, 1);\n  moe_vec_q<scalar_t, QK_K, QI6_K, block_q6_K, VDR_Q6_K_Q8_1_MMVQ,\n            vec_dot_q6_K_q8_1><<<block_nums, block_dims, 0, stream>>>(\n      vx, vy, dst, topk_ids, top_k, ncols, nrows, token_stride);\n}\n\ntemplate <typename scalar_t>\nstatic void moe_vec_iq2_xxs_q8_1_cuda(const void* vx, const void* vy,\n                                      scalar_t* dst, const int* topk_ids,\n                                      const int top_k, const int tokens,\n                                      const int ncols, const int nrows,\n                                      const int token_stride,\n                                      cudaStream_t stream)",
+      "docstring": "",
+      "line": 197
+    },
+    {
+      "name": "block_nums",
+      "kind": "function",
+      "signature": "block_nums(block_num_y, 1, tokens * top_k);\n  const dim3 block_dims(WARP_SIZE, GGML_CUDA_MMV_Y, 1);\n  moe_vec_q<scalar_t, QK_K, QI2_XXS, block_iq2_xxs, 1, vec_dot_iq2_xxs_q8_1>\n      <<<block_nums, block_dims, 0, stream>>>(vx, vy, dst, topk_ids, top_k,\n                                              ncols, nrows, token_stride);\n}\n\ntemplate <typename scalar_t>\nstatic void moe_vec_iq2_xs_q8_1_cuda(const void* vx, const void* vy,\n                                     scalar_t* dst, const int* topk_ids,\n                                     const int top_k, const int tokens,\n                                     const int ncols, const int nrows,\n                                     const int token_stride,\n                                     cudaStream_t stream)",
+      "docstring": "",
+      "line": 212
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": []
+  },
+  "metrics": {
+    "total_symbols": 22,
+    "public_symbols": 22,
+    "classes": 0,
+    "functions": 22,
+    "internal_deps": 0,
+    "external_deps": 0,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/gguf/moe_vec.cuh"
+}

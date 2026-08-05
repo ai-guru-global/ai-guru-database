@@ -308,9 +308,9 @@ name_zh: "AI 工作负载 GPU 故障远程诊断决策树"
 | NPU 不可见 | Device Plugin 未安装 | 检查 ascend-device-plugin |
 | CANN 版本不匹配 | 驱动与固件版本不一致 | 对齐 CANN/驱动/固件版本 |
 | 推理精度下降 | 芯片精度差异 | 检查量化配置 |
-| 内存映射失败 | NPU 内存管理差异 | 参见 [[10_部署推理/05_硬件与算力/01_Ascend_NPU_推理_指南]] |
+| 内存映射失败 | NPU 内存管理差异 | 参见 [[10_部署推理/05_硬件与算力/02_Ascend_NPU_推理_指南]] |
 
-参见 [[10_部署推理/05_硬件与算力/01_Ascend_NPU_推理_指南]]、[[概念/ascend-npu]]、[[概念/cann]]、[[概念/mindie]]、[[12_架构基建/07_硬件与算力/05_chinese_chips_inference]]。
+参见 [[10_部署推理/05_硬件与算力/02_Ascend_NPU_推理_指南]]、[[概念/ascend-npu]]、[[概念/cann]]、[[概念/mindie]]、[[12_架构基建/07_硬件与算力/05_chinese_chips_inference]]。
 
 ---
 
@@ -353,7 +353,7 @@ name_zh: "AI 工作负载 GPU 故障远程诊断决策树"
 - [[HAMi_Troubleshooting_Guide]] — HAMi 排障指南
 - [[K8s_AI_Troubleshooting_Cheat_Sheet]] — AI 工作负载排障速查表
 - [[13_运维/02_SRE与可靠性/18_LLM推理_SLO_指南]] — LLM 推理 SLO 指南
-- [[10_部署推理/05_硬件与算力/01_Ascend_NPU_推理_指南]] — 昇腾 NPU 推理指南
+- [[10_部署推理/05_硬件与算力/02_Ascend_NPU_推理_指南]] — 昇腾 NPU 推理指南
 - [[13_运维/04_问题排查/03_diagnosis_k8s_pod_failure]] — Pod 故障诊断决策树
 - [[12_架构基建/06_云厂商/03_Alibaba_云_Proprietary_K8s_上下文]] — 专有云 K8s 上下文
 - [[概念/gpu]] — GPU 概念

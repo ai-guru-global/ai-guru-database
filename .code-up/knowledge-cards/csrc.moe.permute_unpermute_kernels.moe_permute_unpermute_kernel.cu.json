@@ -1,0 +1,135 @@
+{
+  "id": "csrc.moe.permute_unpermute_kernels.moe_permute_unpermute_kernel.cu",
+  "title": "Moe Permute Unpermute Kernel",
+  "type": "module",
+  "summary": "Module providing defined, CubKeyValueSorter::expertsToBits, floor, CubKeyValueSorter::updateNumExperts, expertsToBits and 5 more symbols",
+  "details": "Contains 20 functions/methods",
+  "symbols": [
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(CUDA_VERSION) && (CUDA_VERSION >= 12000)\n\n// CubKeyValueSorter definition begin\nCubKeyValueSorter::CubKeyValueSorter()\n    : num_experts_(0), num_bits_(sizeof(int) * 8)",
+      "docstring": "",
+      "line": 5
+    },
+    {
+      "name": "CubKeyValueSorter::expertsToBits",
+      "kind": "function",
+      "signature": "CubKeyValueSorter::expertsToBits(int num_experts)",
+      "docstring": "",
+      "line": 9
+    },
+    {
+      "name": "floor",
+      "kind": "function",
+      "signature": "floor(log2(V)) + 1\n  return static_cast<int>(log2(2 * num_experts - 1)) + 1;\n}\n\nCubKeyValueSorter::CubKeyValueSorter(int const num_experts)\n    : num_experts_(num_experts), num_bits_(expertsToBits(num_experts))",
+      "docstring": "",
+      "line": 13
+    },
+    {
+      "name": "CubKeyValueSorter::updateNumExperts",
+      "kind": "function",
+      "signature": "CubKeyValueSorter::updateNumExperts(int const num_experts)",
+      "docstring": "",
+      "line": 18
+    },
+    {
+      "name": "expertsToBits",
+      "kind": "function",
+      "signature": "expertsToBits(num_experts);\n}\n\nsize_t CubKeyValueSorter::getWorkspaceSize(size_t const num_key_value_pairs,\n                                           int const num_experts)",
+      "docstring": "",
+      "line": 22
+    },
+    {
+      "name": "expertsToBits",
+      "kind": "function",
+      "signature": "expertsToBits(num_experts);\n  size_t required_storage = 0;\n  int* null_int = nullptr;\n  cub::DeviceRadixSort::SortPairs(nullptr, required_storage, null_int, null_int,\n                                  null_int, null_int, num_key_value_pairs, 0,\n                                  num_bits);\n\n  //   when num_key_value_pairs, num_experts, num_bits, required_storage = 64,\n  //   4, 3, 0 The required_storage seems to vary between 0 and 1 for the same\n  //   inputs\n  if (required_storage == 0)",
+      "docstring": "",
+      "line": 27
+    },
+    {
+      "name": "CubKeyValueSorter::run",
+      "kind": "function",
+      "signature": "CubKeyValueSorter::run(void* workspace, size_t const workspace_size,\n                            int const* keys_in, int* keys_out,\n                            int const* values_in, int* values_out,\n                            size_t const num_key_value_pairs,\n                            cudaStream_t stream)",
+      "docstring": "",
+      "line": 41
+    },
+    {
+      "name": "getWorkspaceSize",
+      "kind": "function",
+      "signature": "getWorkspaceSize(num_key_value_pairs, num_experts_);\n  size_t actual_ws_size = workspace_size;\n\n  TORCH_CHECK(expected_ws_size <= workspace_size,\n              \"[CubKeyValueSorter::run] The allocated workspace is too small \"\n              \"to run this problem.\");\n  cub::DeviceRadixSort::SortPairs(workspace, actual_ws_size, keys_in, keys_out,\n                                  values_in, values_out, num_key_value_pairs, 0,\n                                  num_bits_, stream);\n}\n// CubKeyValueSorter definition end\n\nstatic inline size_t pad_to_multiple_of_16(size_t const& input)",
+      "docstring": "",
+      "line": 48
+    },
+    {
+      "name": "findTotalEltsLessThanTarget",
+      "kind": "function",
+      "signature": "findTotalEltsLessThanTarget(T const* sorted_indices,\n                                                      int64_t const arr_length,\n                                                      T const target)",
+      "docstring": "",
+      "line": 63
+    },
+    {
+      "name": "computeExpertFirstTokenOffsetKernel",
+      "kind": "function",
+      "signature": "computeExpertFirstTokenOffsetKernel(\n    int const* sorted_experts, int64_t const sorted_experts_len,\n    int const num_experts, int64_t* expert_first_token_offset)",
+      "docstring": "",
+      "line": 83
+    },
+    {
+      "name": "findTotalEltsLessThanTarget",
+      "kind": "function",
+      "signature": "findTotalEltsLessThanTarget(sorted_experts, sorted_experts_len, expert);\n}\n\nvoid computeExpertFirstTokenOffset(int const* sorted_indices,\n                                   int const total_indices,\n                                   int const num_experts,\n                                   int64_t* expert_first_token_offset,\n                                   cudaStream_t stream)",
+      "docstring": "",
+      "line": 95
+    },
+    {
+      "name": "std::min",
+      "kind": "function",
+      "signature": "std::min(1024, num_entries);\n  int const blocks = (num_entries + threads - 1) / threads;\n\n  computeExpertFirstTokenOffsetKernel<<<blocks, threads, 0, stream>>>(\n      sorted_indices, total_indices, num_experts, expert_first_token_offset);\n}\n\nvoid sortAndScanExpert(int* expert_for_source_row, const int* source_rows,\n                       int* permuted_experts, int* permuted_rows,\n                       int64_t* expert_first_token_offset, int num_rows,\n                       int num_experts, int num_experts_per_node, int k,\n                       CubKeyValueSorter& sorter, void* sorter_ws,\n                       cudaStream_t stream)",
+      "docstring": "",
+      "line": 105
+    },
+    {
+      "name": "updateNumExperts",
+      "kind": "function",
+      "signature": "updateNumExperts(num_experts);\n  size_t const sorter_ws_size_bytes = pad_to_multiple_of_16(\n      sorter.getWorkspaceSize(expanded_num_rows, num_experts));\n  sorter.run((void*)sorter_ws, sorter_ws_size_bytes, expert_for_source_row,\n             permuted_experts, source_rows, permuted_rows, expanded_num_rows,\n             stream);\n  computeExpertFirstTokenOffset(permuted_experts, expanded_num_rows,\n                                num_experts_per_node, expert_first_token_offset,\n                                stream);\n}\n\n__global__ void preprocessTopkIdKernel(int* topk_id_ptr, int size,\n                                       const int* expert_map_ptr,\n                                       int num_experts)",
+      "docstring": "",
+      "line": 121
+    },
+    {
+      "name": "min",
+      "kind": "function",
+      "signature": "min(offset + blockDim.x, size);\n  extern __shared__ int smem_expert_map[];\n  // store expert_map in smem\n  for (int i = tidx; i < num_experts; i += blockDim.x)",
+      "docstring": "",
+      "line": 138
+    },
+    {
+      "name": "__syncthreads",
+      "kind": "function",
+      "signature": "__syncthreads();\n\n  // query global expert id in expert map.\n  // if global expert id = -1 in exert map, plus n_expert\n  // else set global expert id = exert map[global expert id]\n  if (offset + tidx < bound)",
+      "docstring": "",
+      "line": 143
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "moe_permute_unpermute_kernel"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 20,
+    "public_symbols": 20,
+    "classes": 0,
+    "functions": 20,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/moe/permute_unpermute_kernels/moe_permute_unpermute_kernel.cu"
+}

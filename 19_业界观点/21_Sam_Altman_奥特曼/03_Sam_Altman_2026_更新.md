@@ -164,7 +164,7 @@ PBC 转型同时重塑了 OpenAI 与 Microsoft 的关系：
 | 利润分成 | 微软获 75% 至回本 | 改为持股+持续分成 |
 | 产品整合 | 深度绑定 Copilot | OpenAI 推出独立 Operator，与 Copilot 形成竞合 |
 | 战略对齐 | 高度一致 | 出现分化，OpenAI 更独立 |
-| 竞争领域 | 共同对抗 Google | Microsoft AI（[[19_业界观点/19_Mustafa_Suleyman_苏莱曼/02_索引|Suleyman]]）与 OpenAI 在消费者 AI 领域出现重叠 |
+| 竞争领域 | 共同对抗 Google | Microsoft AI（[[19_业界观点/19_Mustafa_Suleyman_苏莱曼/INDEX|Suleyman]]）与 OpenAI 在消费者 AI 领域出现重叠 |
 
 ### World 数字身份网络
 
@@ -252,7 +252,7 @@ GPT-5 的编程能力被深度整合到 Codex 产品线：
 - **Codex Cloud**: 云端 Agent 完成多文件大型任务
 - **Codex Review**: 自动代码审查
 - **GitHub Copilot X**: 与 Microsoft 合作的下一代
-- 与 [[19_业界观点/02_Andrej_Karpathy_卡帕西/03_索引|Karpathy]] 的"Vibe Coding"理念呼应，但更工程化
+- 与 [[19_业界观点/02_Andrej_Karpathy_卡帕西/INDEX|Karpathy]] 的"Vibe Coding"理念呼应，但更工程化
 
 ---
 
@@ -282,7 +282,7 @@ Altman 在 2026 年采取了"分层开源"策略：
 | 工具与 SDK | 全面开源 | OpenAI Agents SDK、tiktoken |
 | 研究论文 | 选择性发布 | 安全相关论文公开，关键能力论文保密 |
 
-这一立场介于 [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|Yann LeCun]]（激进开源）和 [[19_业界观点/05_Dario_Amodei_阿莫迪/02_Amodei_2026_更新|Dario Amodei]]（保守闭源）之间。
+这一立场介于 [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|Yann LeCun]]（激进开源）和 [[19_业界观点/05_Dario_Amodei_阿莫迪/02_Amodei_2026_更新|Dario Amodei]]（保守闭源）之间。
 
 ### 关于 AI 安全
 
@@ -292,7 +292,7 @@ Altman 在 2026 年继续推进"渐进式安全"路线：
 - 支持"前置许可制"——前沿模型训练需通过国家级安全审查
 - 推动国际 AI 安全机构（类比 IAEA）的建立
 - 在 OpenAI 内部扩大 Superalignment 团队规模
-- 与 [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Geoffrey Hinton]]、[[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Yoshua Bengio]] 在安全优先级上存在张力
+- 与 [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Geoffrey Hinton]]、[[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Yoshua Bengio]] 在安全优先级上存在张力
 
 ### 关于 AGI 时间线
 
@@ -322,7 +322,7 @@ Altman 在 2026 年对就业冲击的表态更加具体：
 Altman 在 2026 年多次谈论中美 AI 竞争：
 
 - 美国在基础模型层领先 1-2 年
-- 中国在效率（[[19_业界观点/27_Wenfeng_Liang_梁文锋/02_索引|DeepSeek]]）和应用层快速追赶
+- 中国在效率（[[19_业界观点/27_Wenfeng_Liang_梁文锋/INDEX|DeepSeek]]）和应用层快速追赶
 - 呼吁美国保持开放移民政策吸引全球人才
 - 警告过度出口管制可能加速中国自主创新
 - 主张"民主国家主导 AGI"的地缘叙事
@@ -333,7 +333,7 @@ Altman 在 2026 年多次谈论中美 AI 竞争：
 
 ### 与主要对手的 2026 对比
 
-| 维度 | Sam Altman (OpenAI) | [[19_业界观点/05_Dario_Amodei_阿莫迪/02_Amodei_2026_更新|Dario Amodei]] (Anthropic) | [[19_业界观点/24_Sundar_Pichai_皮查伊/02_索引|Sundar Pichai]] (Google) | [[19_业界观点/17_Mark_Zuckerberg_扎克伯格/04_Zuckerberg_AI_Pivot_2026|Mark Zuckerberg]] (Meta) |
+| 维度 | Sam Altman (OpenAI) | [[19_业界观点/05_Dario_Amodei_阿莫迪/02_Amodei_2026_更新|Dario Amodei]] (Anthropic) | [[19_业界观点/24_Sundar_Pichai_皮查伊/INDEX|Sundar Pichai]] (Google) | [[19_业界观点/17_Mark_Zuckerberg_扎克伯格/04_Zuckerberg_AI_Pivot_2026|Mark Zuckerberg]] (Meta) |
 |------|---------------------|-----------|---------|---------|
 | 旗舰模型 | GPT-5 | Claude Opus 4.5 | Gemini 3 Ultra | Llama 5 |
 | 开源策略 | 分层 | 闭源 | 闭源+Gemma 小模型 | 全面开源 |
@@ -356,7 +356,7 @@ Altman 在 2026 年的影响呈现为三个层面的重塑：
 - OpenAI 估值突破 $500B，成为全球最具价值私有公司
 - Stargate 融资规模打破硅谷纪录，吸引主权基金参与
 - World 的 WLD 代币成为加密市场"AI 叙事"龙头
-- 带动一批 OpenAI 系创业者（如 [[19_业界观点/18_Mira_Murati_穆拉蒂/02_索引|Mira Murati]] 的 Thinking Machines）获得高估值
+- 带动一批 OpenAI 系创业者（如 [[19_业界观点/18_Mira_Murati_穆拉蒂/INDEX|Mira Murati]] 的 Thinking Machines）获得高估值
 
 ---
 
@@ -366,7 +366,7 @@ Altman 在 2026 年的影响呈现为三个层面的重塑：
 
 Altman 推动 OpenAI 转型 PBC 引发的最大争议是"是否背叛了 2015 年的非营利承诺"：
 
-- **Elon Musk 的诉讼**: [[19_业界观点/07_Elon_Musk_马斯克/03_索引|Elon Musk]] 持续推进对 OpenAI 的诉讼，指控其背离开源初心
+- **Elon Musk 的诉讼**: [[19_业界观点/07_Elon_Musk_马斯克/INDEX|Elon Musk]] 持续推进对 OpenAI 的诉讼，指控其背离开源初心
 - **原董事会成员批评**: 多位 2015 年联创公开表达失望
 - **回应**: Altman 称"2015 年的架构无法支撑 AGI 所需的资本规模，PBC 是更好的平衡"
 - **公众质疑**: 取消利润封顶是否会让投资者收益凌驾于公益使命之上
@@ -432,10 +432,10 @@ Altman 在 2026 年的政治操作引发"科技寡头"担忧：
 
 ### 技术与基础设施
 
-- [[05_大模型/14_全球LLM生态/09_OpenAI_深入分析]] -- OpenAI 模型技术全景
-- [[05_大模型/14_全球LLM生态/09_OpenAI_深入分析|GPT]] -- GPT 系列演进
+- [[05_大模型/13_全球LLM生态/09_OpenAI_深入分析]] -- OpenAI 模型技术全景
+- [[05_大模型/13_全球LLM生态/09_OpenAI_深入分析|GPT]] -- GPT 系列演进
 - Stargate -- Stargate 算力基础设施
-- [[05_大模型/09_推理模型]] -- 推理模型路线
+- [[05_大模型/08_推理模型]] -- 推理模型路线
 - [[00_入门/04_伦理与未来/03_AI未来趋势]] -- AGI 时间线讨论
 - [[17_伦理安全/README]] -- AI 治理与对齐
 

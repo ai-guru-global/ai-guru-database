@@ -1,0 +1,65 @@
+{
+  "id": "csrc.attention.paged_attention_v1.cu",
+  "title": "Paged Attention V1",
+  "type": "module",
+  "summary": "Module providing Copyright, size, NOTE, CALL_V1_LAUNCHER, CALL_V1_LAUNCHER_SPARSITY",
+  "details": "Contains 5 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) 2023, The vLLM team.\n * Copyright (c) 2020-2023, NVIDIA CORPORATION.  All rights reserved.\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n\n#include \"attention_kernels.cuh\"\n\n#ifndef USE_ROCM\n  #define WARP_SIZE 32\n#else\n  #define WARP_SIZE warpSize\n#endif\n\n#define MAX(a, b) ((a) > (b) ? (a) : (b))\n#define MIN(a, b) ((a) < (b) ? (a) : (b))\n#define DIVIDE_ROUND_UP(a, b) (((a) + (b) - 1) / (b))\n\n#define LAUNCH_PAGED_ATTENTION_V1(HEAD_SIZE)                                \\\n  VLLM_DevFuncAttribute_SET_MaxDynamicSharedMemorySize(                     \\\n      ((void*)vllm::paged_attention_v1_kernel<T, CACHE_T, HEAD_SIZE,        \\\n                                              BLOCK_SIZE, NUM_THREADS,      \\\n                                              KV_DTYPE, IS_BLOCK_SPARSE>),  \\\n      shared_mem_size);                                                     \\\n  vllm::paged_attention_v1_kernel<T, CACHE_T, HEAD_SIZE, BLOCK_SIZE,        \\\n                                  NUM_THREADS, KV_DTYPE, IS_BLOCK_SPARSE>   \\\n      <<<grid, block, shared_mem_size, stream>>>(                           \\\n          out_ptr, query_ptr, key_cache_ptr, value_cache_ptr, num_kv_heads, \\\n          scale, block_tables_ptr, seq_lens_ptr, max_num_blocks_per_seq,    \\\n          alibi_slopes_ptr, q_stride, kv_block_stride, kv_head_stride,      \\\n          k_scale_ptr, v_scale_ptr, tp_rank, blocksparse_local_blocks,      \\\n          blocksparse_vert_stride, blocksparse_block_size,                  \\\n          blocksparse_head_sliding_step);\n\n// TODO(woosuk): Tune NUM_THREADS.\ntemplate <typename T, typename CACHE_T, int BLOCK_SIZE,\n          vllm::Fp8KVCacheDataType KV_DTYPE, bool IS_BLOCK_SPARSE,\n          int NUM_THREADS = 128>\nvoid paged_attention_v1_launcher(\n    torch::Tensor& out, torch::Tensor& query, torch::Tensor& key_cache,\n    torch::Tensor& value_cache, int num_kv_heads, float scale,\n    torch::Tensor& block_tables, torch::Tensor& seq_lens, int max_seq_len,\n    const std::optional<torch::Tensor>& alibi_slopes, torch::Tensor& k_scale,\n    torch::Tensor& v_scale, const int tp_rank,\n    const int blocksparse_local_blocks, const int blocksparse_vert_stride,\n    const int blocksparse_block_size, const int blocksparse_head_sliding_step)",
+      "docstring": "",
+      "line": 3
+    },
+    {
+      "name": "size",
+      "kind": "function",
+      "signature": "size(0);\n  int num_heads = query.size(1);\n  int head_size = query.size(2);\n  int max_num_blocks_per_seq = block_tables.size(1);\n  int q_stride = query.stride(0);\n  int kv_block_stride = key_cache.stride(0);\n  int kv_head_stride = key_cache.stride(1);\n\n  maybe_unused int thread_group_size = MAX(WARP_SIZE / BLOCK_SIZE, 1);\n  assert(head_size % thread_group_size == 0);\n\n  // NOTE: alibi_slopes is optional.\n  const float* alibi_slopes_ptr =\n      alibi_slopes\n          ? reinterpret_cast<const float*>(alibi_slopes.value().data_ptr())\n          : nullptr;\n\n  T* out_ptr = reinterpret_cast<T*>(out.data_ptr());\n  T* query_ptr = reinterpret_cast<T*>(query.data_ptr());\n  CACHE_T* key_cache_ptr = reinterpret_cast<CACHE_T*>(key_cache.data_ptr());\n  CACHE_T* value_cache_ptr = reinterpret_cast<CACHE_T*>(value_cache.data_ptr());\n  int* block_tables_ptr = block_tables.data_ptr<int>();\n  int* seq_lens_ptr = seq_lens.data_ptr<int>();\n  const float* k_scale_ptr = reinterpret_cast<const float*>(k_scale.data_ptr());\n  const float* v_scale_ptr = reinterpret_cast<const float*>(v_scale.data_ptr());\n\n  constexpr int NUM_WARPS = NUM_THREADS / WARP_SIZE;\n  int padded_max_seq_len =\n      DIVIDE_ROUND_UP(max_seq_len, BLOCK_SIZE) * BLOCK_SIZE;\n  int logits_size = padded_max_seq_len * sizeof(float);\n  int outputs_size = (NUM_WARPS / 2) * head_size * sizeof(float);\n  // Python-side check in vllm.worker.worker._check_if_can_support_max_seq_len\n  // Keep that in sync with the logic here!\n  int shared_mem_size = std::max(logits_size, outputs_size);\n\n  dim3 grid(num_heads, num_seqs, 1);\n  dim3 block(NUM_THREADS);\n  const at::cuda::OptionalCUDAGuard device_guard(device_of(query));\n  const cudaStream_t stream = at::cuda::getCurrentCUDAStream();\n  switch (head_size)",
+      "docstring": "",
+      "line": 60
+    },
+    {
+      "name": "NOTE",
+      "kind": "function",
+      "signature": "NOTE(woosuk): To reduce the compilation time, we only compile for the\n    // head sizes that we use in the model. However, we can easily extend this\n    // to support any head size which is a multiple of 16.\n    case 32:\n      LAUNCH_PAGED_ATTENTION_V1(32);\n      break;\n    case 64:\n      LAUNCH_PAGED_ATTENTION_V1(64);\n      break;\n    case 80:\n      LAUNCH_PAGED_ATTENTION_V1(80);\n      break;\n    case 96:\n      LAUNCH_PAGED_ATTENTION_V1(96);\n      break;\n    case 112:\n      LAUNCH_PAGED_ATTENTION_V1(112);\n      break;\n    case 120:\n      LAUNCH_PAGED_ATTENTION_V1(120);\n      break;\n    case 128:\n      LAUNCH_PAGED_ATTENTION_V1(128);\n      break;\n    case 192:\n      LAUNCH_PAGED_ATTENTION_V1(192);\n      break;\n    case 256:\n      LAUNCH_PAGED_ATTENTION_V1(256);\n      break;\n    default:\n      TORCH_CHECK(false, \"Unsupported head size: \", head_size);\n      break;\n  }\n}\n\n#define CALL_V1_LAUNCHER(T, CACHE_T, BLOCK_SIZE, KV_DTYPE, IS_BLOCK_SPARSE)  \\\n  paged_attention_v1_launcher<T, CACHE_T, BLOCK_SIZE, KV_DTYPE,              \\\n                              IS_BLOCK_SPARSE>(                              \\\n      out, query, key_cache, value_cache, num_kv_heads, scale, block_tables, \\\n      seq_lens, max_seq_len, alibi_slopes, k_scale, v_scale, tp_rank,        \\\n      blocksparse_local_blocks, blocksparse_vert_stride,                     \\\n      blocksparse_block_size, blocksparse_head_sliding_step);\n\n#define CALL_V1_LAUNCHER_SPARSITY(T, CACHE_T, BLOCK_SIZE, IS_FP8_KV_CACHE) \\\n  if (is_block_sparse)",
+      "docstring": "",
+      "line": 100
+    },
+    {
+      "name": "CALL_V1_LAUNCHER",
+      "kind": "function",
+      "signature": "CALL_V1_LAUNCHER(T, CACHE_T, BLOCK_SIZE, IS_FP8_KV_CACHE, true);       \\\n  } else {                                                                 \\\n    CALL_V1_LAUNCHER(T, CACHE_T, BLOCK_SIZE, IS_FP8_KV_CACHE, false);      \\\n  }\n\n// NOTE(woosuk): To reduce the compilation time, we omitted block sizes\n// 1, 2, 4, 64, 128, 256.\n#define CALL_V1_LAUNCHER_BLOCK_SIZE(T, CACHE_T, KV_DTYPE)         \\\n  switch (block_size)",
+      "docstring": "",
+      "line": 145
+    },
+    {
+      "name": "CALL_V1_LAUNCHER_SPARSITY",
+      "kind": "function",
+      "signature": "CALL_V1_LAUNCHER_SPARSITY(T, CACHE_T, 8, KV_DTYPE);         \\\n      break;                                                      \\\n    case 16:                                                      \\\n      CALL_V1_LAUNCHER_SPARSITY(T, CACHE_T, 16, KV_DTYPE);        \\\n      break;                                                      \\\n    case 32:                                                      \\\n      CALL_V1_LAUNCHER_SPARSITY(T, CACHE_T, 32, KV_DTYPE);        \\\n      break;                                                      \\\n    default:                                                      \\\n      TORCH_CHECK(false, \"Unsupported block size: \", block_size); \\\n      break;                                                      \\\n  }\n\nvoid paged_attention_v1(\n    torch::Tensor& out,    // [num_seqs, num_heads, head_size]\n    torch::Tensor& query,  // [num_seqs, num_heads, head_size]\n    torch::Tensor&\n        key_cache,  // [num_blocks, num_heads, head_size/x, block_size, x]\n    torch::Tensor&\n        value_cache,       // [num_blocks, num_heads, head_size, block_size]\n    int64_t num_kv_heads,  // [num_heads]\n    double scale,\n    torch::Tensor& block_tables,  // [num_seqs, max_num_blocks_per_seq]\n    torch::Tensor& seq_lens,      // [num_seqs]\n    int64_t block_size, int64_t max_seq_len,\n    const std::optional<torch::Tensor>& alibi_slopes,\n    const std::string& kv_cache_dtype, torch::Tensor& k_scale,\n    torch::Tensor& v_scale, const int64_t tp_rank,\n    const int64_t blocksparse_local_blocks,\n    const int64_t blocksparse_vert_stride, const int64_t blocksparse_block_size,\n    const int64_t blocksparse_head_sliding_step)",
+      "docstring": "",
+      "line": 155
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "attention_kernels"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 5,
+    "public_symbols": 5,
+    "classes": 0,
+    "functions": 5,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/attention/paged_attention_v1.cu"
+}

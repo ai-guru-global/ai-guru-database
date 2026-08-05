@@ -166,7 +166,7 @@ Musk 的核心论断：
 
 #### Robotaxi vs Waymo 路线对比
 
-Tesla Robotaxi 与 Waymo（[[19_业界观点/23_Sebastian_Thrun_特伦/02_索引|Thrun]] 系）代表两条自动驾驶路线：
+Tesla Robotaxi 与 Waymo（[[19_业界观点/23_Sebastian_Thrun_特伦/INDEX|Thrun]] 系）代表两条自动驾驶路线：
 
 | 维度 | Tesla（Musk 路线） | Waymo（Google 路线） |
 |------|---------------------|----------------------|
@@ -228,7 +228,7 @@ Musk 对 OpenAI 和 [[19_业界观点/21_Sam_Altman_奥特曼/03_Sam_Altman_2026
 
 - 加速公众对"AI 公司治理"的关注
 - 推动多州审查非营利转营利的合规性
-- 引发 [[19_业界观点/10_Geoffrey_Hinton_辛顿/03_索引|Hinton]]、[[19_业界观点/29_Yoshua_Bengio_本吉奥/02_索引|Bengio]] 等学者表态
+- 引发 [[19_业界观点/10_Geoffrey_Hinton_辛顿/INDEX|Hinton]]、[[19_业界观点/29_Yoshua_Bengio_本吉奥/INDEX|Bengio]] 等学者表态
 - 让 OpenAI 的 PBC 转型增加政治阻力
 
 ---
@@ -258,7 +258,7 @@ Musk 的立场复杂且矛盾：
 - 离开后批评 OpenAI 闭源化
 - xAI 的 Grok-1 开源权重，Grok 2/3/4 部分开源
 - 但前沿模型完全开源有安全顾虑
-- 与 [[19_业界观点/28_Yann_LeCun_杨立昆/02_索引|Yann LeCun]]（激进开源）和 [[19_业界观点/17_Mark_Zuckerberg_扎克伯格/04_Zuckerberg_AI_Pivot_2026|Zuckerberg]]（Llama 开源）形成复杂关系
+- 与 [[19_业界观点/28_Yann_LeCun_杨立昆/INDEX|Yann LeCun]]（激进开源）和 [[19_业界观点/17_Mark_Zuckerberg_扎克伯格/04_Zuckerberg_AI_Pivot_2026|Zuckerberg]]（Llama 开源）形成复杂关系
 
 ### 关于具身智能的赌注
 
@@ -276,7 +276,7 @@ Musk 的算力投入（Colossus 50 万卡）显示他仍是 Scaling 派：
 - 相信更大模型+更多算力仍是核心路径
 - 通过 X 平台获取独家数据优势
 - 强调"数据+算力+人才"的三重押注
-- 与 [[19_业界观点/27_Wenfeng_Liang_梁文锋/02_索引|梁文锋]]（效率优先）路线形成对比
+- 与 [[19_业界观点/27_Wenfeng_Liang_梁文锋/INDEX|梁文锋]]（效率优先）路线形成对比
 
 ### 关于 AGI 与人类的融合
 
@@ -307,7 +307,7 @@ Musk 将 X 平台全面 AI 化：
 
 ### 与主要 AI 巨头的 2026 对比
 
-| 维度 | Elon Musk | [[19_业界观点/21_Sam_Altman_奥特曼/03_Sam_Altman_2026_更新|Sam Altman]] | [[19_业界观点/17_Mark_Zuckerberg_扎克伯格/04_Zuckerberg_AI_Pivot_2026|Mark Zuckerberg]] | [[19_业界观点/27_Wenfeng_Liang_梁文锋/02_索引|梁文锋]] |
+| 维度 | Elon Musk | [[19_业界观点/21_Sam_Altman_奥特曼/03_Sam_Altman_2026_更新|Sam Altman]] | [[19_业界观点/17_Mark_Zuckerberg_扎克伯格/04_Zuckerberg_AI_Pivot_2026|Mark Zuckerberg]] | [[19_业界观点/27_Wenfeng_Liang_梁文锋/INDEX|梁文锋]] |
 |------|-----------|---------|---------|---------|
 | 模型 | Grok 4 | GPT-5 | Llama 5 | DeepSeek V4 |
 | 算力 | Colossus 50 万卡 | Stargate | $100B+ | 2048 H800 |
@@ -459,9 +459,9 @@ Musk 同时管理 6+ 公司引发精力分散质疑：
 
 ### 技术与基础设施
 
-- [[05_大模型/14_全球LLM生态/index|xAI]] -- xAI 模型技术全景
-- [[05_大模型/09_推理模型]] -- 推理模型路线
-- [[10_部署推理/07_GPU基础设施]] -- Colossus 算力基建
+- [[05_大模型/13_全球LLM生态/index|xAI]] -- xAI 模型技术全景
+- [[05_大模型/08_推理模型]] -- 推理模型路线
+- [[10_部署推理/05_硬件与算力]] -- Colossus 算力基建
 - [[00_入门/04_伦理与未来/03_AI未来趋势]] -- 具身智能与 AGI 讨论
 - [[17_伦理安全/README]] -- AI 治理与监管
 - [[00_入门/AI_Ethics_Society]] -- AI 伦理与社会影响

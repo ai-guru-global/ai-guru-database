@@ -41,9 +41,9 @@ name_zh: "大语言模型基础"
 | 子模块 | 核心内容 | 链接 |
 |--------|---------|------|
 | **Transformer 革命** | Self-Attention、位置编码、架构详解 | [[05_大模型/03_Transformer架构/03_Transformer_Revolution]] |
-| **LLM 架构生态** | GPT、LLaMA、Claude、Gemini 等模型对比 | [[05_大模型/05_LLM架构/05_LLM架构]] |
-| **Prompt Engineering** | Zero-shot、Few-shot、CoT、系统提示词 | [[05_大模型/08_提示工程/16_Prompt工程]] |
-| **微调技术** | LoRA、QLoRA、RLHF、DPO | [[05_大模型/07_微调技术/03_微调技术]] |
+| **LLM 架构生态** | GPT、LLaMA、Claude、Gemini 等模型对比 | [[05_大模型/04_LLM架构/05_LLM架构]] |
+| **Prompt Engineering** | Zero-shot、Few-shot、CoT、系统提示词 | [[05_大模型/07_提示工程/16_Prompt工程]] |
+| **微调技术** | LoRA、QLoRA、RLHF、DPO | [[05_大模型/06_微调技术/03_微调技术]] |
 
 ---
 
@@ -184,12 +184,12 @@ flowchart LR
 ## 延伸阅读 (Further Reading)
 
 - [[05_大模型/03_Transformer架构/03_Transformer_Revolution]] — Transformer 架构革命
-- [[05_大模型/05_LLM架构/05_LLM架构]] — 主流 LLM 架构生态
-- [[05_大模型/08_提示工程/16_Prompt工程]] — 提示词工程实战
-- [[05_大模型/07_微调技术/03_微调技术]] — 微调技术全景
-- [[05_大模型/05_LLM架构/11_Long_上下文_模型_2026]] — 长上下文模型 2026
+- [[05_大模型/04_LLM架构/05_LLM架构]] — 主流 LLM 架构生态
+- [[05_大模型/07_提示工程/16_Prompt工程]] — 提示词工程实战
+- [[05_大模型/06_微调技术/03_微调技术]] — 微调技术全景
+- [[05_大模型/04_LLM架构/11_Long_上下文_模型_2026]] — 长上下文模型 2026
 - [[05_大模型/01_LLM基础/GenAI_L02_Exploring_and_Comparing_LLMs]] — LLM 对比与选型
-- [[05_大模型/01_LLM基础/06_llm_nlp|LLM 与 NLP 融合]]
+- [[05_大模型/01_LLM基础/06_LLM_NLP_融合|LLM 与 NLP 融合]]
 - [[05_大模型/01_LLM基础/07_NLP_基础|NLP 基础]]
 
 ## 版本兼容性

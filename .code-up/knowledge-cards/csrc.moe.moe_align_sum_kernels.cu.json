@@ -1,0 +1,141 @@
+{
+  "id": "csrc.moe.moe_align_sum_kernels.cu",
+  "title": "Moe Align Sum Kernels",
+  "type": "module",
+  "summary": "Module providing CEILDIV, moe_align_block_size_kernel, CEILDIV, index, index and 5 more symbols",
+  "details": "Contains 29 functions/methods",
+  "symbols": [
+    {
+      "name": "CEILDIV",
+      "kind": "function",
+      "signature": "CEILDIV(x, y) (((x) + (y) - 1) / (y))\n\nnamespace vllm {\nnamespace moe {\n\nnamespace {\n__device__ __forceinline__ int32_t index(int32_t total_col, int32_t row,\n                                         int32_t col)",
+      "docstring": "",
+      "line": 11
+    },
+    {
+      "name": "moe_align_block_size_kernel",
+      "kind": "function",
+      "signature": "moe_align_block_size_kernel(scalar_t* __restrict__ topk_ids,\n                                            int32_t* sorted_token_ids,\n                                            int32_t* expert_ids,\n                                            int32_t* total_tokens_post_pad,\n                                            int32_t num_experts,\n                                            int32_t block_size, size_t numel)",
+      "docstring": "",
+      "line": 22
+    },
+    {
+      "name": "CEILDIV",
+      "kind": "function",
+      "signature": "CEILDIV(numel, blockDim.x);\n  const size_t start_idx = threadIdx.x * tokens_per_thread;\n\n  extern __shared__ int32_t shared_mem[];\n  int32_t* cumsum = shared_mem;  // 1d tensor with shape (num_experts + 1)\n  token_cnts_t* tokens_cnts =\n      (token_cnts_t*)(shared_mem + num_experts +\n                      1);  // 2d tensor with shape (blockDim.x + 1, num_experts)\n\n  for (int i = 0; i < num_experts; ++i)",
+      "docstring": "",
+      "line": 31
+    },
+    {
+      "name": "index",
+      "kind": "function",
+      "signature": "index(num_experts, threadIdx.x + 1, i)] = 0;\n  }\n\n  /**\n   * In the first step we compute token_cnts[thread_index + 1][expert_index],\n   * which counts how many tokens in the token shard of thread_index are\n   * assigned to expert expert_index.\n   */\n  for (int i = start_idx; i < numel && i < start_idx + tokens_per_thread; ++i)",
+      "docstring": "",
+      "line": 41
+    },
+    {
+      "name": "index",
+      "kind": "function",
+      "signature": "index(num_experts, threadIdx.x + 1, topk_ids[i])];\n  }\n\n  __syncthreads();\n\n  // For each expert we accumulate the token counts from the different threads.\n  if (threadIdx.x < num_experts)",
+      "docstring": "",
+      "line": 50
+    },
+    {
+      "name": "index",
+      "kind": "function",
+      "signature": "index(num_experts, 0, threadIdx.x)] = 0;\n    for (int i = 1; i <= blockDim.x; ++i)",
+      "docstring": "",
+      "line": 57
+    },
+    {
+      "name": "index",
+      "kind": "function",
+      "signature": "index(num_experts, i, threadIdx.x)] +=\n          tokens_cnts[index(num_experts, i - 1, threadIdx.x)];\n    }\n  }\n\n  __syncthreads();\n\n  // We accumulate the token counts of all experts in thread 0.\n  if (threadIdx.x == 0)",
+      "docstring": "",
+      "line": 59
+    },
+    {
+      "name": "CEILDIV",
+      "kind": "function",
+      "signature": "CEILDIV(tokens_cnts[index(num_experts, blockDim.x, i - 1)],\n                          block_size) *\n                      block_size;\n    }\n    *total_tokens_post_pad = static_cast<int32_t>(cumsum[num_experts]);\n  }\n\n  __syncthreads();\n\n  /**\n   * For each expert, each thread processes the tokens of the corresponding\n   * blocks and stores the corresponding expert_id for each block.\n   */\n  if (threadIdx.x < num_experts)",
+      "docstring": "",
+      "line": 70
+    },
+    {
+      "name": "value",
+      "kind": "function",
+      "signature": "value(preset in python).\n   */\n  for (int i = start_idx; i < numel && i < start_idx + tokens_per_thread; ++i)",
+      "docstring": "",
+      "line": 95
+    },
+    {
+      "name": "index",
+      "kind": "function",
+      "signature": "index(num_experts, threadIdx.x, expert_id)] +\n        cumsum[expert_id];\n    sorted_token_ids[rank_post_pad] = i;\n    ++tokens_cnts[index(num_experts, threadIdx.x, expert_id)];\n  }\n}\n\n// TODO(simon): this is temporarily adapted from\n// https://github.com/sgl-project/sglang/commit/31548116a8dc8c6df7e146e0587335a59fc5b9d7\n// we did this to unblock Deepseek V3 but there should be a better\n// implementation to manage shared memory.\ntemplate <typename scalar_t>\n__global__ void moe_align_block_size_global_mem_kernel(\n    scalar_t* __restrict__ topk_ids, int32_t* sorted_token_ids,\n    int32_t* expert_ids, int32_t* total_tokens_post_pad, int32_t num_experts,\n    int32_t block_size, size_t numel, int32_t* tokens_cnts, int32_t* cumsum)",
+      "docstring": "",
+      "line": 107
+    },
+    {
+      "name": "CEILDIV",
+      "kind": "function",
+      "signature": "CEILDIV(numel, blockDim.x);\n  const size_t start_idx = threadIdx.x * tokens_per_thread;\n\n  for (int i = 0; i < num_experts; ++i)",
+      "docstring": "",
+      "line": 123
+    },
+    {
+      "name": "index",
+      "kind": "function",
+      "signature": "index(num_experts, threadIdx.x + 1, i)] = 0;\n  }\n\n  /**\n   * In the first step we compute token_cnts[thread_index + 1][expert_index],\n   * which counts how many tokens in the token shard of thread_index are\n   * assigned to expert expert_index.\n   */\n  for (int i = start_idx; i < numel && i < start_idx + tokens_per_thread; ++i)",
+      "docstring": "",
+      "line": 127
+    },
+    {
+      "name": "index",
+      "kind": "function",
+      "signature": "index(num_experts, threadIdx.x + 1, topk_ids[i])];\n  }\n\n  __syncthreads();\n\n  // For each expert we accumulate the token counts from the different threads.\n  if (threadIdx.x < num_experts)",
+      "docstring": "",
+      "line": 136
+    },
+    {
+      "name": "index",
+      "kind": "function",
+      "signature": "index(num_experts, 0, threadIdx.x)] = 0;\n    for (int i = 1; i <= blockDim.x; ++i)",
+      "docstring": "",
+      "line": 143
+    },
+    {
+      "name": "index",
+      "kind": "function",
+      "signature": "index(num_experts, i, threadIdx.x)] +=\n          tokens_cnts[index(num_experts, i - 1, threadIdx.x)];\n    }\n  }\n\n  __syncthreads();\n\n  // We accumulate the token counts of all experts in thread 0.\n  if (threadIdx.x == 0)",
+      "docstring": "",
+      "line": 145
+    }
+  ],
+  "dependencies": {
+    "internal": [
+      "../cuda_compat.h",
+      "../dispatch_utils.h"
+    ],
+    "external": [
+      "ATen",
+      "c10",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 29,
+    "public_symbols": 29,
+    "classes": 0,
+    "functions": 29,
+    "internal_deps": 2,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/moe/moe_align_sum_kernels.cu"
+}

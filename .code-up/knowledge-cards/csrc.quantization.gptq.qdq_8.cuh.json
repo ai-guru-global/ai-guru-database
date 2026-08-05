@@ -1,0 +1,44 @@
+{
+  "id": "csrc.quantization.gptq.qdq_8.cuh",
+  "title": "Qdq 8",
+  "type": "module",
+  "summary": "Module providing shuffle_8bit_4, dequant_8bit_8",
+  "details": "Contains 2 functions/methods",
+  "symbols": [
+    {
+      "name": "shuffle_8bit_4",
+      "kind": "function",
+      "signature": "shuffle_8bit_4(uint32_t* q, int stride)",
+      "docstring": "",
+      "line": 11
+    },
+    {
+      "name": "dequant_8bit_8",
+      "kind": "function",
+      "signature": "dequant_8bit_8(const uint32_t q_0,\n                                               const uint32_t q_1,\n                                               half2 (&dq)[4], int stride,\n                                               const uint32_t zero)",
+      "docstring": "",
+      "line": 13
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "qdq_util"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 2,
+    "public_symbols": 2,
+    "classes": 0,
+    "functions": 2,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/gptq/qdq_8.cuh"
+}

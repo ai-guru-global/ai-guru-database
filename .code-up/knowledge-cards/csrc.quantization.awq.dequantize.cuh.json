@@ -1,0 +1,35 @@
+{
+  "id": "csrc.quantization.awq.dequantize.cuh",
+  "title": "Dequantize",
+  "type": "module",
+  "summary": "Module providing dequantize_s4_to_fp16x2",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "dequantize_s4_to_fp16x2",
+      "kind": "function",
+      "signature": "dequantize_s4_to_fp16x2(uint32_t const& source)",
+      "docstring": "",
+      "line": 15
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": []
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 0,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/awq/dequantize.cuh"
+}

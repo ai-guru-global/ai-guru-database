@@ -523,6 +523,6 @@ trainer.train()
 - [[06_强化学习/03_RLHF与对齐/02_GRPO_训练_深入分析|GRPO 训练深度解析]]
 - [[06_强化学习/03_RLHF与对齐/01_DPO_Variants_2026|DPO 变体]]
 - [[06_强化学习/03_RLHF与对齐/03_Reward_模型_深入分析|奖励模型]]
-- [[05_大模型/09_推理模型/|推理模型]]
+- [[05_大模型/08_推理模型/|推理模型]]
 - [[03_深度学习/09_高级专题/Continual_Learning|持续学习]]
 - [[06_强化学习/02_深度强化学习/01_Decision_Transformer|Decision Transformer]]

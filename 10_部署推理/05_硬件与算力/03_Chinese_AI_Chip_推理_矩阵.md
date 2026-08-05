@@ -51,7 +51,7 @@ name_zh: "国产 AI 芯片推理矩阵"
 
 ## 2. 昇腾 Ascend
 
-详见：[[10_部署推理/05_硬件与算力/01_Ascend_NPU_推理_指南|昇腾 NPU LLM 推理部署指南]]
+详见：[[10_部署推理/05_硬件与算力/02_Ascend_NPU_推理_指南|昇腾 NPU LLM 推理部署指南]]
 
 **特点**：
 - 全栈自研，生态最完整
@@ -170,7 +170,7 @@ mt-transformer inference \
 
 ## Related
 
-- [[10_部署推理/05_硬件与算力/01_Ascend_NPU_推理_指南|昇腾 NPU LLM 推理部署指南]]
+- [[10_部署推理/05_硬件与算力/02_Ascend_NPU_推理_指南|昇腾 NPU LLM 推理部署指南]]
 - [[概念/ascend-npu|Ascend NPU]]
 - [[概念/hami|HAMi]]
 - [[01_数学基础/10_AI硬件/03_Chinese_AI_Chips_深入分析|国产 AI 芯片深度解析]]

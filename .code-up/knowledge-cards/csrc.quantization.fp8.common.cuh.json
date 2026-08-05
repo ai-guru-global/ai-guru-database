@@ -1,0 +1,116 @@
+{
+  "id": "csrc.quantization.fp8.common.cuh",
+  "title": "Common",
+  "type": "module",
+  "summary": "Module providing is_fp8_ocp, cuda::getCurrentDeviceProperties, __int_as_float, constexpr, fmaxf and 5 more symbols",
+  "details": "Contains 12 functions/methods",
+  "symbols": [
+    {
+      "name": "is_fp8_ocp",
+      "kind": "function",
+      "signature": "is_fp8_ocp()",
+      "docstring": "",
+      "line": 14
+    },
+    {
+      "name": "cuda::getCurrentDeviceProperties",
+      "kind": "function",
+      "signature": "cuda::getCurrentDeviceProperties();\n  std::string device_arch = dprops->gcnArchName;\n  size_t substring = device_arch.find(\"gfx94\");\n  return substring == std::string::npos;\n#endif\n}\n\nnamespace vllm {\n\n__device__ __forceinline__ float atomicMaxFloat(float* addr, float value)",
+      "docstring": "",
+      "line": 19
+    },
+    {
+      "name": "__int_as_float",
+      "kind": "function",
+      "signature": "__int_as_float(atomicMax((int*)addr, __float_as_int(value)))\n            : __uint_as_float(\n                  atomicMin((unsigned int*)addr, __float_as_uint(value)));\n\n  return old;\n}\n\ntemplate <bool is_scale_inverted, typename fp8_type>\n__device__ __forceinline__ fp8_type scaled_fp8_conversion(float const val,\n                                                          float const scale)",
+      "docstring": "",
+      "line": 31
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(is_scale_inverted)",
+      "docstring": "",
+      "line": 41
+    },
+    {
+      "name": "fmaxf",
+      "kind": "function",
+      "signature": "fmaxf(-quant_type_max_v<fp8_type>, fminf(x, quant_type_max_v<fp8_type>));\n#ifndef USE_ROCM\n  return static_cast<fp8_type>(r);\n#else\n  // Use hardware cvt instruction for fp8 on rocm\n  return fp8::cvt_c10<fp8_type>(r);\n#endif\n}\n\n// Compute the absolute maximum m of the input tensor and store\n// m / float8_e4m3::max() in *scale. Each thread block performs a\n// reduction tree and the memory in scale is atomically updated.\n// So to get the right answer, *scale needs to be initialized to\n// a value <= 0.0 and we need to wait for all thread blocks to\n// finish before consuming *scale.\ntemplate <typename scalar_t, typename fp8_type>\n__global__ void segmented_max_reduction(float* __restrict__ scale,\n                                        const scalar_t* __restrict__ input,\n                                        int64_t num_elems)",
+      "docstring": "",
+      "line": 48
+    },
+    {
+      "name": "fmaxf",
+      "kind": "function",
+      "signature": "fmaxf(tmp, fabsf(x));\n    i += blockDim.x * gridDim.x;\n  }\n  cache[threadIdx.x] = tmp;\n\n  __syncthreads();\n\n  // Now perform parallel reduction within the thread block\n  int ib = blockDim.x / 2;\n  while (ib != 0)",
+      "docstring": "",
+      "line": 76
+    },
+    {
+      "name": "__syncthreads",
+      "kind": "function",
+      "signature": "__syncthreads();\n    ib /= 2;\n  }\n  // Finally, since cache[0] contains the maximum for this thread block,\n  // atomically write the max to the target location\n  if (threadIdx.x == 0)",
+      "docstring": "",
+      "line": 88
+    },
+    {
+      "name": "atomicMaxFloat",
+      "kind": "function",
+      "signature": "atomicMaxFloat(scale, cache[0] / quant_type_max_v<fp8_type>);\n  }\n}\n\ntemplate <typename scalar_t>\n__device__ float thread_max_vec(scalar_t const* __restrict__ input,\n                                int64_t const num_elems, int const tid,\n                                int const step)",
+      "docstring": "",
+      "line": 94
+    },
+    {
+      "name": "VEC_SIZE",
+      "kind": "function",
+      "signature": "VEC_SIZE(which is 16)\n  int64_t const num_vec_elems = num_elems >> 4;\n  float absmax_val = 0.0f;\n\n#pragma unroll\n  for (int64_t i = tid; i < num_vec_elems; i += step)",
+      "docstring": "",
+      "line": 108
+    },
+    {
+      "name": "fmaxf",
+      "kind": "function",
+      "signature": "fmaxf(absmax_val, fabsf(in_vec.val[j]));\n    }\n  }\n\n  // Handle the remaining elements if num_elems is not divisible by VEC_SIZE\n  for (int64_t i = num_vec_elems * VEC_SIZE + tid; i < num_elems; i += step)",
+      "docstring": "",
+      "line": 117
+    },
+    {
+      "name": "fmaxf",
+      "kind": "function",
+      "signature": "fmaxf(absmax_val, fabsf(input[i]));\n  }\n\n  return absmax_val;\n}\n\ntemplate <typename scalar_t, bool is_scale_inverted, typename fp8_type>\n__device__ void scaled_fp8_conversion_vec(fp8_type* __restrict__ out,\n                                          scalar_t const* __restrict__ input,\n                                          float const scale,\n                                          int64_t const num_elems,\n                                          int const tid, int const step)",
+      "docstring": "",
+      "line": 123
+    },
+    {
+      "name": "VEC_SIZE",
+      "kind": "function",
+      "signature": "VEC_SIZE(which is 16)\n  int64_t const num_vec_elems = num_elems >> 4;\n\n#pragma unroll\n  for (int64_t i = tid; i < num_vec_elems; i += step)",
+      "docstring": "",
+      "line": 142
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "amd",
+      "cmath",
+      "quantization"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 12,
+    "public_symbols": 12,
+    "classes": 0,
+    "functions": 12,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/fp8/common.cuh"
+}

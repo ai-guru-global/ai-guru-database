@@ -1,0 +1,140 @@
+{
+  "id": "csrc.quantization.fp8.nvidia.quant_utils.cuh",
+  "title": "Quant Utils",
+  "type": "module",
+  "summary": "Module providing vec_conversion, __nv_cvt_fp8_to_halfraw, __nv_cvt_fp8x2_to_halfraw2, __nv_cvt_fp8_to_halfraw, half_to_float and 5 more symbols",
+  "details": "Contains 37 functions/methods",
+  "symbols": [
+    {
+      "name": "vec_conversion",
+      "kind": "function",
+      "signature": "vec_conversion(const Tin &x, const __nv_fp8_interpretation_t fp8_type)",
+      "docstring": "",
+      "line": 15
+    },
+    {
+      "name": "__nv_cvt_fp8_to_halfraw",
+      "kind": "function",
+      "signature": "__nv_cvt_fp8_to_halfraw(a, fp8_type);\n  return res.x;\n}\n\n// fp8x2 -> half2\ntemplate <>\n__inline__ __device__ uint32_t vec_conversion<uint32_t, uint16_t>(\n    const uint16_t &a, const __nv_fp8_interpretation_t fp8_type)",
+      "docstring": "",
+      "line": 26
+    },
+    {
+      "name": "__nv_cvt_fp8x2_to_halfraw2",
+      "kind": "function",
+      "signature": "__nv_cvt_fp8x2_to_halfraw2(a, fp8_type);\n  tmp.u16[0] = res.x;\n  tmp.u16[1] = res.y;\n  return tmp.u32;\n}\n\n// fp8x4 -> half2x2\ntemplate <>\n__inline__ __device__ uint2 vec_conversion<uint2, uint32_t>(\n    const uint32_t &a, const __nv_fp8_interpretation_t fp8_type)",
+      "docstring": "",
+      "line": 38
+    },
+    {
+      "name": "__nv_cvt_fp8_to_halfraw",
+      "kind": "function",
+      "signature": "__nv_cvt_fp8_to_halfraw(a, fp8_type);\n  // half -> float -> bf16\n  float tmp = half_to_float(res.x);\n  return __float2bfloat16(tmp);\n}\n\n// fp8x2 -> __nv_bfloat162\ntemplate <>\n__inline__ __device__ __nv_bfloat162 vec_conversion<__nv_bfloat162, uint16_t>(\n    const uint16_t &a, const __nv_fp8_interpretation_t fp8_type)",
+      "docstring": "",
+      "line": 77
+    },
+    {
+      "name": "half_to_float",
+      "kind": "function",
+      "signature": "half_to_float(tmp);\n}\n\n// fp8x2 -> float2\ntemplate <>\n__inline__ __device__ float2 vec_conversion<float2, uint16_t>(\n    const uint16_t &a, const __nv_fp8_interpretation_t fp8_type)",
+      "docstring": "",
+      "line": 126
+    },
+    {
+      "name": "half2_to_float2",
+      "kind": "function",
+      "signature": "half2_to_float2(tmp);\n}\n\n// fp8x4 -> float4\ntemplate <>\n__inline__ __device__ Float4_ vec_conversion<Float4_, uint32_t>(\n    const uint32_t &a, const __nv_fp8_interpretation_t fp8_type)",
+      "docstring": "",
+      "line": 136
+    },
+    {
+      "name": "__nv_cvt_halfraw_to_fp8",
+      "kind": "function",
+      "signature": "__nv_cvt_halfraw_to_fp8(tmp, __NV_SATFINITE, fp8_type);\n  return (uint8_t)res;\n}\n\n// bf16 -> fp8\ntemplate <>\n__inline__ __device__ uint8_t vec_conversion<uint8_t, __nv_bfloat16>(\n    const __nv_bfloat16 &a, const __nv_fp8_interpretation_t fp8_type)",
+      "docstring": "",
+      "line": 171
+    },
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__CUDA_ARCH__) && __CUDA_ARCH__ < 800\n  assert(false);\n      #else\n  __nv_fp8_storage_t res = __nv_cvt_bfloat16raw_to_fp8(\n      __nv_bfloat16_raw(a), __NV_SATFINITE, fp8_type);\n  return (uint8_t)res;\n      #endif\n}\n\n// float -> fp8\ntemplate <>\n__inline__ __device__ uint8_t vec_conversion<uint8_t, float>(\n    const float &a, const __nv_fp8_interpretation_t fp8_type)",
+      "docstring": "",
+      "line": 180
+    },
+    {
+      "name": "__nv_cvt_float_to_fp8",
+      "kind": "function",
+      "signature": "__nv_cvt_float_to_fp8(a, __NV_SATFINITE, fp8_type);\n  return (uint8_t)res;\n}\n\n// fp8x4 -> float4\ntemplate <>\n__inline__ __device__ float4 vec_conversion<float4, uint32_t>(\n    const uint32_t &a, const __nv_fp8_interpretation_t fp8_type)",
+      "docstring": "",
+      "line": 193
+    },
+    {
+      "name": "make_float4",
+      "kind": "function",
+      "signature": "make_float4(tmp.x.x, tmp.x.y, tmp.y.x, tmp.y.y);\n  return res;\n}\n\ntemplate <>\n__inline__ __device__ uint32_t vec_conversion<uint32_t, float2>(\n    const float2 &a, const __nv_fp8_interpretation_t fp8_type)",
+      "docstring": "",
+      "line": 202
+    },
+    {
+      "name": "__float22half2_rn",
+      "kind": "function",
+      "signature": "__float22half2_rn(a);\n  return uint32;\n}\n\ntemplate <>\n__inline__ __device__ uint2 vec_conversion<uint2, Float4_>(\n    const Float4_ &a, const __nv_fp8_interpretation_t fp8_type)",
+      "docstring": "",
+      "line": 214
+    },
+    {
+      "name": "from_float",
+      "kind": "function",
+      "signature": "from_float(b, a);\n  return b;\n}\n\ntemplate <>\n__inline__ __device__ bf16_4_t vec_conversion<bf16_4_t, Float4_>(\n    const Float4_ &a, const __nv_fp8_interpretation_t fp8_type)",
+      "docstring": "",
+      "line": 259
+    },
+    {
+      "name": "from_float",
+      "kind": "function",
+      "signature": "from_float(b, a);\n  return b;\n}\n\ntemplate <>\n__inline__ __device__ bf16_8_t vec_conversion<bf16_8_t, Float8_>(\n    const Float8_ &a, const __nv_fp8_interpretation_t fp8_type)",
+      "docstring": "",
+      "line": 267
+    },
+    {
+      "name": "from_float",
+      "kind": "function",
+      "signature": "from_float(b, a);\n  return b;\n}\n    #endif\n\n/* Scaled and vectorized conversions, for data exchange between high and low\n   precision domains Convention of the scale in API, e.g: FP8_data =\n   Quantization( High_Precision_data / scale ) s.t. Quantize(HP / scale) => FP8\n     Dequant(FP8) * scale =>  HP\n */\n\ntemplate <typename Tout, typename Tin>\n__inline__ __device__ Tout scaled_vec_conversion(\n    const Tin& x, const float scale, const __nv_fp8_interpretation_t fp8_type)",
+      "docstring": "",
+      "line": 275
+    },
+    {
+      "name": "__nv_cvt_fp8_to_halfraw",
+      "kind": "function",
+      "signature": "__nv_cvt_fp8_to_halfraw(a, fp8_type);\n  return float_to_half(half_to_float(tmp.x) * scale);\n}\n\n// fp8x2 -> half2\ntemplate <>\n__inline__ __device__ uint32_t scaled_vec_conversion<uint32_t, uint16_t>(\n    const uint16_t& a, const float scale,\n    const __nv_fp8_interpretation_t fp8_type)",
+      "docstring": "",
+      "line": 298
+    }
+  ],
+  "dependencies": {
+    "internal": [
+      "../../../attention/attention_dtypes.h"
+    ],
+    "external": [
+      "assert",
+      "float",
+      "stdint",
+      "type_traits"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 37,
+    "public_symbols": 37,
+    "classes": 0,
+    "functions": 37,
+    "internal_deps": 1,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/fp8/nvidia/quant_utils.cuh"
+}

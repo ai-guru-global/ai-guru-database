@@ -180,7 +180,7 @@ Transformer 一次性并行处理全部词，本身没有"顺序"概念，所以
 
 ### 5.3 中国的"百模大战"
 
-中国 AI 在应用落地、中文能力、成本效率上竞争激烈。详见 [[05_大模型/15_中国LLM生态/README|中国大模型生态]]、[[05_大模型/14_全球LLM生态/README|国际大模型生态]]。
+中国 AI 在应用落地、中文能力、成本效率上竞争激烈。详见 [[05_大模型/14_中国LLM生态/README|中国大模型生态]]、[[05_大模型/13_全球LLM生态/README|国际大模型生态]]。
 
 | 厂商 | 代表 | 擅长 |
 | :--- | :--- | :--- |
@@ -255,9 +255,9 @@ Transformer 一次性并行处理全部词，本身没有"顺序"概念，所以
 
 - 基础全景：[[概念/General/ai-fundamentals]]
 - 03_深度学习/Transformer：[[04_计算机视觉/01_CV基础/03_cv_deep_learning]]、[[概念/LLM/transformer-architecture]]、[[Transformer_Deep_Dive]]
-- 系统进阶：[[05_大模型/01_LLM基础/05_LLM_基础]]、[[07_模型训练/01_训练基础/03_LLM_训练_深入分析]]、[[10_部署推理/03_推理优化/02_LLM推理_深入分析]]、[[05_大模型/05_LLM架构/04_LLM_架构_Evolution]]
+- 系统进阶：[[05_大模型/01_LLM基础/05_LLM_基础]]、[[07_模型训练/01_训练基础/03_LLM_训练_深入分析]]、[[10_部署推理/03_推理优化/02_LLM推理_深入分析]]、[[05_大模型/04_LLM架构/04_LLM_架构_Evolution]]
 - 提示与上下文：[[概念/LLM/context-engineering]]、[[概念/LLM/structured-output]]
-- 生态：[[05_大模型/15_中国LLM生态/README|中国大模型生态]]、[[05_大模型/14_全球LLM生态/README|国际大模型生态]]、[[概念/LLM/long-context-models]]
+- 生态：[[05_大模型/14_中国LLM生态/README|中国大模型生态]]、[[05_大模型/13_全球LLM生态/README|国际大模型生态]]、[[概念/LLM/long-context-models]]
 - 同源进阶：[[00_入门/02_技术概览/04_AI_推理模型_指南]]、[[AI_New_Architectures]]、[[00_入门/02_技术概览/02_AI_多模态_GenAI]]
 
 ## Related

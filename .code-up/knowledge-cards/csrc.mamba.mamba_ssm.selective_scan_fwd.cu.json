@@ -1,0 +1,142 @@
+{
+  "id": "csrc.mamba.mamba_ssm.selective_scan_fwd.cu",
+  "title": "Selective Scan Fwd",
+  "type": "module",
+  "summary": "Module providing static_assert, sizeof, __syncthreads, constexpr, __syncthreads and 5 more symbols",
+  "details": "Contains 43 functions/methods",
+  "symbols": [
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(kNItems_ % 4 == 0);\n    using input_t = input_t_;\n    using weight_t = weight_t_;\n    static constexpr int kNThreads = kNThreads_;\n    // Setting MinBlocksPerMP to be 3 (instead of 2) for 128 threads improves occupancy.\n    static constexpr int kMinBlocks = kNThreads < 128 ? 5 : 3;\n    static constexpr int kNItems = kNItems_;\n    static constexpr int kNRows = kNRows_;\n    static constexpr int kNBytes = sizeof(input_t);\n    static_assert(kNBytes == 2 || kNBytes == 4);\n    static constexpr int kNElts = kNBytes == 4 ? 4 : constexpr_min(8, kNItems);\n    static_assert(kNItems % kNElts == 0);\n    static constexpr int kNLoads = kNItems / kNElts;\n    static constexpr bool kIsEvenLen = kVarlen_ ? false : kIsEvenLen_;\n    static constexpr bool kIsVariableB = kIsVariableB_;\n    static constexpr bool kIsVariableC = kIsVariableC_;\n    static constexpr bool kHasZ = kHasZ_;\n    static constexpr bool kVarlen = kVarlen_;\n\n    static constexpr bool kDirectIO = kVarlen_ ? false : kIsEvenLen && kNLoads == 1;\n    static constexpr int kNLoadsIndex = kNItems / 4;\n    using vec_t = typename BytesToType<kNBytes * kNElts>::Type;\n    using scan_t = float2;\n    using BlockLoadT = cub::BlockLoad<input_t, kNThreads, kNItems, cub::BLOCK_LOAD_WARP_TRANSPOSE>;\n    using BlockLoadVecT = cub::BlockLoad<vec_t, kNThreads, kNLoads,\n        !kDirectIO ? cub::BLOCK_LOAD_WARP_TRANSPOSE : cub::BLOCK_LOAD_DIRECT>;\n    using BlockLoadWeightT = cub::BlockLoad<input_t, kNThreads, kNItems , cub::BLOCK_LOAD_WARP_TRANSPOSE>;\n    using BlockLoadWeightVecT = cub::BlockLoad<vec_t, kNThreads, kNLoads ,\n        !kDirectIO ? cub::BLOCK_LOAD_WARP_TRANSPOSE  : cub::BLOCK_LOAD_DIRECT>;\n    using BlockStoreT = cub::BlockStore<input_t, kNThreads, kNItems, cub::BLOCK_STORE_WARP_TRANSPOSE>;\n    using BlockStoreVecT = cub::BlockStore<vec_t, kNThreads, kNLoads,\n        !kDirectIO ? cub::BLOCK_STORE_WARP_TRANSPOSE : cub::BLOCK_STORE_DIRECT>;\n    // using BlockScanT = cub::BlockScan<scan_t, kNThreads, cub::BLOCK_SCAN_RAKING_MEMOIZE>;\n    // using BlockScanT = cub::BlockScan<scan_t, kNThreads, cub::BLOCK_SCAN_RAKING>;\n    using BlockScanT = cub::BlockScan<scan_t, kNThreads, cub::BLOCK_SCAN_WARP_SCANS>;\n    static constexpr int kSmemIOSize = custom_max({sizeof(typename BlockLoadT::TempStorage),\n                                                 sizeof(typename BlockLoadVecT::TempStorage),\n                                                 (int(kIsVariableB) + int(kIsVariableC)) * sizeof(typename BlockLoadWeightT::TempStorage),\n                                                 (int(kIsVariableB) + int(kIsVariableC)) * sizeof(typename BlockLoadWeightVecT::TempStorage),\n                                                 sizeof(typename BlockStoreT::TempStorage),\n                                                 sizeof(typename BlockStoreVecT::TempStorage)});\n    static constexpr int kSmemSize = kSmemIOSize + sizeof(typename BlockScanT::TempStorage);\n};\n\ntemplate<typename Ktraits>\n__global__ __launch_bounds__(Ktraits::kNThreads, Ktraits::kMinBlocks)\nvoid selective_scan_fwd_kernel(SSMParamsBase params)",
+      "docstring": "",
+      "line": 27
+    },
+    {
+      "name": "sizeof",
+      "kind": "function",
+      "signature": "sizeof(weight_t);\n    // auto& smem_load = reinterpret_cast<typename BlockLoadT::TempStorage&>(smem_ + 2 * MAX_DSTATE * sizeof(weight_t));\n    // auto& smem_load = reinterpret_cast<typename BlockLoadT::TempStorage&>(smem_loadstorescan);\n    auto& smem_load = reinterpret_cast<typename Ktraits::BlockLoadT::TempStorage&>(smem_);\n    auto& smem_load_weight = reinterpret_cast<typename Ktraits::BlockLoadWeightT::TempStorage&>(smem_);\n    auto& smem_load_weight1 = *reinterpret_cast<typename Ktraits::BlockLoadWeightT::TempStorage*>(smem_ + sizeof(typename Ktraits::BlockLoadWeightT::TempStorage));\n    auto& smem_store = reinterpret_cast<typename Ktraits::BlockStoreT::TempStorage&>(smem_);\n    auto& smem_scan = *reinterpret_cast<typename Ktraits::BlockScanT::TempStorage*>(smem_ + Ktraits::kSmemIOSize);\n    // weight_t *smem_a = reinterpret_cast<weight_t *>(smem_ + smem_loadstorescan_size);\n    // weight_t *smem_bc = reinterpret_cast<weight_t *>(smem_a + MAX_DSTATE);\n    scan_t *smem_running_prefix = reinterpret_cast<scan_t *>(smem_ + Ktraits::kSmemSize);\n\n    const int batch_id = blockIdx.x;\n    const int dim_id = blockIdx.y;\n    const int group_id = dim_id / (params.dim_ngroups_ratio);\n    int seqlen = params.seqlen;\n    int sequence_start_index = batch_id;\n    if constexpr (kVarlen)",
+      "docstring": "",
+      "line": 90
+    },
+    {
+      "name": "__syncthreads",
+      "kind": "function",
+      "signature": "__syncthreads();\n        #pragma unroll\n        for (int r = 0; r < kNRows; ++r)",
+      "docstring": "",
+      "line": 157
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(!kDirectIO)",
+      "docstring": "",
+      "line": 161
+    },
+    {
+      "name": "__syncthreads",
+      "kind": "function",
+      "signature": "__syncthreads(); }\n            }\n            load_input<Ktraits>(u + r * params.u_d_stride, u_vals[r], smem_load, seqlen - chunk * kChunkSize);\n            if constexpr (!kDirectIO)",
+      "docstring": "",
+      "line": 163
+    },
+    {
+      "name": "__syncthreads",
+      "kind": "function",
+      "signature": "__syncthreads(); }\n            load_input<Ktraits>(delta + r * params.delta_d_stride, delta_vals_load[r], smem_load, seqlen - chunk * kChunkSize);\n        }\n        u += kChunkSize;\n        delta += kChunkSize;\n    \n        float delta_vals[kNRows][kNItems], delta_u_vals[kNRows][kNItems], out_vals[kNRows][kNItems];\n        #pragma unroll\n        for (int r = 0; r < kNRows; ++r)",
+      "docstring": "",
+      "line": 166
+    },
+    {
+      "name": "float",
+      "kind": "function",
+      "signature": "float(u_vals[r][i]);\n                delta_vals[r][i] = float(delta_vals_load[r][i]) + delta_bias[r];\n                if (params.delta_softplus)",
+      "docstring": "",
+      "line": 177
+    },
+    {
+      "name": "log1pf",
+      "kind": "function",
+      "signature": "log1pf(expf(delta_vals[r][i])) : delta_vals[r][i];\n                }\n                delta_u_vals[r][i] = delta_vals[r][i] * u_val;\n                out_vals[r][i] = D_val[r] * u_val;\n            }\n        }\n\n        __syncthreads();\n        for (int state_idx = 0; state_idx < params.dstate; ++state_idx)",
+      "docstring": "",
+      "line": 180
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(kIsVariableB)",
+      "docstring": "",
+      "line": 201
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(!kIsVariableC)",
+      "docstring": "",
+      "line": 204
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(kIsVariableC)",
+      "docstring": "",
+      "line": 211
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(!kIsVariableB)",
+      "docstring": "",
+      "line": 215
+    },
+    {
+      "name": "constexpr",
+      "kind": "function",
+      "signature": "constexpr(!kIsVariableB && !kIsVariableC)",
+      "docstring": "",
+      "line": 222
+    },
+    {
+      "name": "__syncthreads",
+      "kind": "function",
+      "signature": "__syncthreads(); }  // Scan could be using the same smem\n                scan_t thread_data[kNItems];\n                #pragma unroll\n                for (int i = 0; i < kNItems; ++i)",
+      "docstring": "",
+      "line": 232
+    },
+    {
+      "name": "make_float2",
+      "kind": "function",
+      "signature": "make_float2(exp2f(delta_vals[r][i] * A_val[r]),\n                                                 !kIsVariableB ? delta_u_vals[r][i] : B_vals[i] * delta_u_vals[r][i]);\n                    \n                    if (seqlen % (kNItems * kNThreads) != 0)",
+      "docstring": "",
+      "line": 236
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "c10",
+      "cub",
+      "hipcub",
+      "selective_scan",
+      "static_switch",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 43,
+    "public_symbols": 43,
+    "classes": 0,
+    "functions": 43,
+    "internal_deps": 0,
+    "external_deps": 7,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/mamba/mamba_ssm/selective_scan_fwd.cu"
+}

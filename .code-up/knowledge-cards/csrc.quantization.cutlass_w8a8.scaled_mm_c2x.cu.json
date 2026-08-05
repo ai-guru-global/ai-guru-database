@@ -1,0 +1,144 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.scaled_mm_c2x.cu",
+  "title": "Scaled Mm C2X",
+  "type": "module",
+  "summary": "Module providing sm90, TORCH_CHECK, TORCH_CHECK, TORCH_CHECK, TORCH_CHECK and 5 more symbols",
+  "details": "Contains 19 functions/methods",
+  "symbols": [
+    {
+      "name": "sm90",
+      "kind": "function",
+      "signature": "sm90(Hopper).\n*/\n\ntemplate <template <typename, typename> typename Epilogue,\n          typename... EpilogueArgs>\nvoid cutlass_scaled_mm_sm75_epilogue(torch::Tensor& out, torch::Tensor const& a,\n                                     torch::Tensor const& b,\n                                     EpilogueArgs&&... epilogue_args)",
+      "docstring": "",
+      "line": 16
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(a.dtype() == torch::kInt8);\n  TORCH_CHECK(b.dtype() == torch::kInt8);\n\n  if (out.dtype() == torch::kBFloat16)",
+      "docstring": "",
+      "line": 24
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(out.dtype() == torch::kFloat16);\n    return cutlass_gemm_sm75_dispatch<int8_t, cutlass::half_t, Epilogue>(\n        out, a, b, std::forward<EpilogueArgs>(epilogue_args)...);\n  }\n}\n\nvoid cutlass_scaled_mm_sm75(torch::Tensor& out, torch::Tensor const& a,\n                            torch::Tensor const& b,\n                            torch::Tensor const& a_scales,\n                            torch::Tensor const& b_scales,\n                            std::optional<torch::Tensor> const& bias)",
+      "docstring": "",
+      "line": 31
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(a_scales.dtype() == torch::kFloat32);\n  TORCH_CHECK(b_scales.dtype() == torch::kFloat32);\n  if (bias)",
+      "docstring": "",
+      "line": 42
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(bias->dtype() == out.dtype(),\n                \"currently bias dtype must match output dtype \", out.dtype());\n    return cutlass_scaled_mm_sm75_epilogue<c2x::ScaledEpilogueBias>(\n        out, a, b, a_scales, b_scales, *bias);\n  } else {\n    return cutlass_scaled_mm_sm75_epilogue<c2x::ScaledEpilogue>(\n        out, a, b, a_scales, b_scales);\n  }\n}\n\nvoid cutlass_scaled_mm_azp_sm75(torch::Tensor& out, torch::Tensor const& a,\n                                torch::Tensor const& b,\n                                torch::Tensor const& a_scales,\n                                torch::Tensor const& b_scales,\n                                torch::Tensor const& azp_adj,\n                                std::optional<torch::Tensor> const& azp,\n                                std::optional<torch::Tensor> const& bias)",
+      "docstring": "",
+      "line": 45
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(a_scales.dtype() == torch::kFloat32);\n  TORCH_CHECK(b_scales.dtype() == torch::kFloat32);\n\n  if (azp)",
+      "docstring": "",
+      "line": 62
+    },
+    {
+      "name": "cutlass_scaled_mm_sm80_epilogue",
+      "kind": "function",
+      "signature": "cutlass_scaled_mm_sm80_epilogue(torch::Tensor& out, torch::Tensor const& a,\n                                     torch::Tensor const& b,\n                                     EpilogueArgs&&... epilogue_args)",
+      "docstring": "",
+      "line": 76
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(a.dtype() == torch::kInt8);\n  TORCH_CHECK(b.dtype() == torch::kInt8);\n\n  if (out.dtype() == torch::kBFloat16)",
+      "docstring": "",
+      "line": 79
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(out.dtype() == torch::kFloat16);\n    return cutlass_gemm_sm80_dispatch<int8_t, cutlass::half_t, Epilogue>(\n        out, a, b, std::forward<EpilogueArgs>(epilogue_args)...);\n  }\n}\n\nvoid cutlass_scaled_mm_sm80(torch::Tensor& out, torch::Tensor const& a,\n                            torch::Tensor const& b,\n                            torch::Tensor const& a_scales,\n                            torch::Tensor const& b_scales,\n                            std::optional<torch::Tensor> const& bias)",
+      "docstring": "",
+      "line": 86
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(a_scales.dtype() == torch::kFloat32);\n  TORCH_CHECK(b_scales.dtype() == torch::kFloat32);\n  if (bias)",
+      "docstring": "",
+      "line": 97
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(bias->dtype() == out.dtype(),\n                \"currently bias dtype must match output dtype \", out.dtype());\n    return cutlass_scaled_mm_sm80_epilogue<c2x::ScaledEpilogueBias>(\n        out, a, b, a_scales, b_scales, *bias);\n  } else {\n    return cutlass_scaled_mm_sm80_epilogue<c2x::ScaledEpilogue>(\n        out, a, b, a_scales, b_scales);\n  }\n}\n\nvoid cutlass_scaled_mm_azp_sm80(torch::Tensor& out, torch::Tensor const& a,\n                                torch::Tensor const& b,\n                                torch::Tensor const& a_scales,\n                                torch::Tensor const& b_scales,\n                                torch::Tensor const& azp_adj,\n                                std::optional<torch::Tensor> const& azp,\n                                std::optional<torch::Tensor> const& bias)",
+      "docstring": "",
+      "line": 100
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(a_scales.dtype() == torch::kFloat32);\n  TORCH_CHECK(b_scales.dtype() == torch::kFloat32);\n\n  if (azp)",
+      "docstring": "",
+      "line": 117
+    },
+    {
+      "name": "cutlass_scaled_mm_sm89_epilogue",
+      "kind": "function",
+      "signature": "cutlass_scaled_mm_sm89_epilogue(torch::Tensor& out, torch::Tensor const& a,\n                                     torch::Tensor const& b,\n                                     EpilogueArgs&&... epilogue_args)",
+      "docstring": "",
+      "line": 131
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(b.dtype() == torch::kInt8);\n\n    if (out.dtype() == torch::kBFloat16)",
+      "docstring": "",
+      "line": 135
+    },
+    {
+      "name": "assert",
+      "kind": "function",
+      "signature": "assert(out.dtype() == torch::kFloat16);\n      return cutlass_gemm_sm89_int8_dispatch<int8_t, cutlass::half_t, Epilogue>(\n          out, a, b, std::forward<EpilogueArgs>(epilogue_args)...);\n    }\n  } else {\n    TORCH_CHECK(a.dtype() == torch::kFloat8_e4m3fn);\n    TORCH_CHECK(b.dtype() == torch::kFloat8_e4m3fn);\n\n    if (out.dtype() == torch::kBFloat16)",
+      "docstring": "",
+      "line": 142
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cutlass",
+      "cutlass_extensions",
+      "scaled_mm_c2x",
+      "scaled_mm_c2x_sm75_dispatch",
+      "scaled_mm_c2x_sm80_dispatch",
+      "scaled_mm_c2x_sm89_fp8_dispatch",
+      "scaled_mm_c2x_sm89_int8_dispatch",
+      "stddef",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 19,
+    "public_symbols": 19,
+    "classes": 0,
+    "functions": 19,
+    "internal_deps": 0,
+    "external_deps": 9,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/scaled_mm_c2x.cu"
+}

@@ -1331,4 +1331,4 @@ Agent → MCP Client → Server A
 - [[概念/Agent/tool-calling|工具调用]] — MCP 的工具调用机制
 - [[概念/Agent/function-calling|Function Calling]] — MCP 底层机制
 - [[15_智能体/05_Agent技能/Tool_Calling_Best_Practices|工具调用最佳实践]] — MCP 工具调用实践
-- [[05_大模型/07_微调技术/Tool_Use_and_Agent_Fine_Tuning|Tool Use 与 Agent 微调]] — MCP 训练相关
+- [[05_大模型/06_微调技术/Tool_Use_and_Agent_Fine_Tuning|Tool Use 与 Agent 微调]] — MCP 训练相关

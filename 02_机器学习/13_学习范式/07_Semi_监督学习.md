@@ -304,5 +304,5 @@ def llm_pseudo_labeling(texts, model="gpt-4o", few_shot_examples=None):
 - [[02_机器学习/02_监督学习/Supervised_Learning|监督学习]]
 - [[02_机器学习/03_无监督学习/Unsupervised_Learning|无监督学习]]
 - [[03_深度学习/06_自监督学习/|自监督学习]]
-- [[05_大模型/07_微调技术/|微调技术]] — 少样本学习
+- [[05_大模型/06_微调技术/|微调技术]] — 少样本学习
 - [[08_模型评估/02_基准测试/index|评估数据集]] — 标注质量

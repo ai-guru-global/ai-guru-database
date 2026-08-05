@@ -1,0 +1,102 @@
+{
+  "id": "csrc.cpu.dnnl_helper.hpp",
+  "title": "Dnnl Helper",
+  "type": "module",
+  "summary": "Module providing get_dnnl_type, kernel, a_md, set_scales_mask, set_scales_mask and 5 more symbols",
+  "details": "Contains 1 classes: DNNLPrimitiveHelper. Contains 9 functions/methods",
+  "symbols": [
+    {
+      "name": "get_dnnl_type",
+      "kind": "function",
+      "signature": "get_dnnl_type()",
+      "docstring": "",
+      "line": 39
+    },
+    {
+      "name": "kernel",
+      "kind": "function",
+      "signature": "kernel(C = a_scales * A @ (b_scales * B^T) + bias)\n  // A: [M, K], row-major\n  // B: [K, N], column-major\n  // C: [M, N], row-major\n  // bias: [N], row-major, optional\n  // a_scales: [MS]\n  // b_scales: [NS]\n  // Note: Due to the limitation of oneDNN\n  // (https://github.com/oneapi-src/oneDNN/issues/1636), the quantized bias is\n  // not supported.\n  template <typename OutputT, typename BiasT>\n  static void gemm_s8s8_jit(const int8_t* a, const int8_t* b, OutputT* c,\n                            const BiasT* bias, dnnl_dim_t M, dnnl_dim_t N,\n                            dnnl_dim_t K, const float* a_scales,\n                            const float* b_scales, dnnl_dim_t MS,\n                            dnnl_dim_t NS)",
+      "docstring": "",
+      "line": 50
+    },
+    {
+      "name": "a_md",
+      "kind": "function",
+      "signature": "a_md({M, K}, dnnl::memory::data_type::s8, {K, 1});\n    dnnl::memory::desc b_md({K, N}, dnnl::memory::data_type::s8, {1, K});\n    dnnl::memory::desc c_md({M, N}, OutputType, {N, 1});\n\n    dnnl::primitive_attr attr;\n    if constexpr (!InputNoScale)",
+      "docstring": "",
+      "line": 67
+    },
+    {
+      "name": "set_scales_mask",
+      "kind": "function",
+      "signature": "set_scales_mask(DNNL_ARG_SRC, 0);\n      } else {\n        // per-token\n        TORCH_CHECK(false, \"per-token quantization is unsupported.\");\n      }\n    }\n\n    if (NS == 1)",
+      "docstring": "",
+      "line": 77
+    },
+    {
+      "name": "set_scales_mask",
+      "kind": "function",
+      "signature": "set_scales_mask(DNNL_ARG_WEIGHTS, 0);\n    } else {\n      // per-channel\n      attr.set_scales_mask(DNNL_ARG_WEIGHTS, 2);\n    }\n\n    dnnl::matmul::primitive_desc matmul_pd;\n    if (bias)",
+      "docstring": "",
+      "line": 86
+    },
+    {
+      "name": "bias_md",
+      "kind": "function",
+      "signature": "bias_md({1, N}, BiasType, {N, 1});\n      matmul_pd = dnnl::matmul::primitive_desc(default_engine(), a_md, b_md,\n                                               bias_md, c_md, attr);\n    } else {\n      matmul_pd = dnnl::matmul::primitive_desc(default_engine(), a_md, b_md,\n                                               c_md, attr);\n    }\n    dnnl::matmul matmul(matmul_pd);\n\n    auto& engine = default_engine();\n\n    dnnl::memory a_m(a_md, engine, (void*)a);\n    dnnl::memory b_m(b_md, engine, (void*)b);\n    dnnl::memory c_m(c_md, engine, (void*)c);\n    dnnl::memory a_scales_m({{MS}, dnnl::memory::data_type::f32, {1}}, engine,\n                            (void*)a_scales);\n    dnnl::memory b_scales_m({{NS}, dnnl::memory::data_type::f32, {1}}, engine,\n                            (void*)b_scales);\n\n    auto& stream = default_stream();\n    if constexpr (InputNoScale)",
+      "docstring": "",
+      "line": 93
+    },
+    {
+      "name": "bias_md",
+      "kind": "function",
+      "signature": "bias_md({N}, BiasType, {1});\n        dnnl::memory bias_m(bias_md, engine, (void*)bias);\n        matmul.execute(\n            stream, {\n                        {DNNL_ARG_SRC, a_m},\n                        {DNNL_ARG_WEIGHTS, b_m},\n                        {DNNL_ARG_BIAS, bias_m},\n                        {DNNL_ARG_DST, c_m},\n                        {DNNL_ARG_ATTR_SCALES | DNNL_ARG_WEIGHTS, b_scales_m},\n                    });\n      } else {\n        matmul.execute(\n            stream, {\n                        {DNNL_ARG_SRC, a_m},\n                        {DNNL_ARG_WEIGHTS, b_m},\n                        {DNNL_ARG_DST, c_m},\n                        {DNNL_ARG_ATTR_SCALES | DNNL_ARG_WEIGHTS, b_scales_m},\n                    });\n      }\n    } else {\n      if (bias)",
+      "docstring": "",
+      "line": 115
+    },
+    {
+      "name": "bias_md",
+      "kind": "function",
+      "signature": "bias_md({N}, BiasType, {1});\n        dnnl::memory bias_m(bias_md, engine, (void*)bias);\n        matmul.execute(\n            stream, {\n                        {DNNL_ARG_SRC, a_m},\n                        {DNNL_ARG_WEIGHTS, b_m},\n                        {DNNL_ARG_BIAS, bias_m},\n                        {DNNL_ARG_DST, c_m},\n                        {DNNL_ARG_ATTR_SCALES | DNNL_ARG_SRC, a_scales_m},\n                        {DNNL_ARG_ATTR_SCALES | DNNL_ARG_WEIGHTS, b_scales_m},\n                    });\n      } else {\n        matmul.execute(\n            stream, {\n                        {DNNL_ARG_SRC, a_m},\n                        {DNNL_ARG_WEIGHTS, b_m},\n                        {DNNL_ARG_DST, c_m},\n                        {DNNL_ARG_ATTR_SCALES | DNNL_ARG_SRC, a_scales_m},\n                        {DNNL_ARG_ATTR_SCALES | DNNL_ARG_WEIGHTS, b_scales_m},\n                    });\n      }\n    }\n    stream.wait();\n  }\n\n private:\n  static dnnl::engine& default_engine()",
+      "docstring": "",
+      "line": 136
+    },
+    {
+      "name": "engine",
+      "kind": "function",
+      "signature": "engine(dnnl::engine::kind::cpu, 0);\n    return engine;\n  }\n\n  static dnnl::stream& default_stream()",
+      "docstring": "",
+      "line": 163
+    },
+    {
+      "name": "DNNLPrimitiveHelper",
+      "kind": "class",
+      "signature": "class DNNLPrimitiveHelper",
+      "docstring": "",
+      "line": 48
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "c10",
+      "oneapi"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 10,
+    "public_symbols": 10,
+    "classes": 1,
+    "functions": 9,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "oop",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cpu/dnnl_helper.hpp"
+}

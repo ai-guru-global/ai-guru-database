@@ -1,0 +1,106 @@
+{
+  "id": "benchmarks.kernels.bench_fp8_gemm",
+  "title": "Bench Fp8 Gemm",
+  "type": "module",
+  "summary": "Module providing benchmark, run_quant, run_quant, run_quant, run_quant and 5 more symbols",
+  "details": "Contains 10 functions/methods",
+  "symbols": [
+    {
+      "name": "benchmark",
+      "kind": "function",
+      "signature": "def benchmark(batch_size, provider, N, K)",
+      "docstring": "",
+      "line": 48
+    },
+    {
+      "name": "run_quant",
+      "kind": "function",
+      "signature": "def run_quant()",
+      "docstring": "",
+      "line": 76
+    },
+    {
+      "name": "run_quant",
+      "kind": "function",
+      "signature": "def run_quant()",
+      "docstring": "",
+      "line": 88
+    },
+    {
+      "name": "run_quant",
+      "kind": "function",
+      "signature": "def run_quant()",
+      "docstring": "",
+      "line": 102
+    },
+    {
+      "name": "run_quant",
+      "kind": "function",
+      "signature": "def run_quant()",
+      "docstring": "",
+      "line": 115
+    },
+    {
+      "name": "run_quant",
+      "kind": "function",
+      "signature": "def run_quant()",
+      "docstring": "",
+      "line": 125
+    },
+    {
+      "name": "run_quant",
+      "kind": "function",
+      "signature": "def run_quant()",
+      "docstring": "",
+      "line": 139
+    },
+    {
+      "name": "run_quant",
+      "kind": "function",
+      "signature": "def run_quant()",
+      "docstring": "",
+      "line": 151
+    },
+    {
+      "name": "run_quant",
+      "kind": "function",
+      "signature": "def run_quant()",
+      "docstring": "",
+      "line": 166
+    },
+    {
+      "name": "prepare_shapes",
+      "kind": "function",
+      "signature": "def prepare_shapes(args)",
+      "docstring": "",
+      "line": 181
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "argparse",
+      "copy",
+      "itertools",
+      "torch",
+      "vllm",
+      "weight_shapes"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 10,
+    "public_symbols": 10,
+    "classes": 0,
+    "functions": 10,
+    "internal_deps": 0,
+    "external_deps": 6,
+    "depth": 0,
+    "complexity_sum": 87
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/kernels/bench_fp8_gemm.py"
+}

@@ -139,7 +139,7 @@ HelloAgents RAG 系统
 - [[14_RAG系统/01_RAG基础/04_GenAI_L15_RAG_and_向量数据库]] — RAG 与向量数据库
 - [[14_RAG系统/03_向量数据库/04_Qdrant_深入分析]] — Qdrant 向量数据库
 - [[14_RAG系统/04_高级RAG/02_Agentic_RAG_指南]] — Agentic RAG 指南
-- [[05_大模型/08_提示工程/Hello_Agents_L09_Context_Engineering]] — 上下文工程
+- [[05_大模型/07_提示工程/Hello_Agents_L09_Context_Engineering]] — 上下文工程
 
 ## 附录：核心概念速查
 

@@ -1,7 +1,0 @@
-# artifacts
-/nerdctl
-_output
-*.gomodjail
-
-# golangci-lint
-/build

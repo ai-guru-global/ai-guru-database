@@ -1,0 +1,139 @@
+{
+  "id": "csrc.cpu.cpu_types_vsx.hpp",
+  "title": "Cpu Types Vsx",
+  "type": "module",
+  "summary": "Module providing VLLM_DISPATCH_CASE_FLOATING_TYPES, f, unroll_loop_item, BF16Vec8, BF16Vec8 and 5 more symbols",
+  "details": "Contains 72 functions/methods",
+  "symbols": [
+    {
+      "name": "VLLM_DISPATCH_CASE_FLOATING_TYPES",
+      "kind": "function",
+      "signature": "VLLM_DISPATCH_CASE_FLOATING_TYPES(...)         \\\n  AT_DISPATCH_CASE(at::ScalarType::Float, __VA_ARGS__) \\\n  AT_DISPATCH_CASE(at::ScalarType::BFloat16, __VA_ARGS__)\n\n#define VLLM_DISPATCH_FLOATING_TYPES(TYPE, NAME, ...) \\\n  AT_DISPATCH_SWITCH(TYPE, NAME, VLLM_DISPATCH_CASE_FLOATING_TYPES(__VA_ARGS__))\n\n#ifndef CPU_OP_GUARD\n  #define CPU_KERNEL_GUARD_IN(NAME)\n  #define CPU_KERNEL_GUARD_OUT(NAME)\n#else\n  #define CPU_KERNEL_GUARD_IN(NAME) \\\n    std::cout << #NAME << \" invoked.\" << std::endl;\n  #define CPU_KERNEL_GUARD_OUT(NAME) \\\n    std::cout << #NAME << \" exit.\" << std::endl;\n#endif\n\n#define FORCE_INLINE __attribute__((always_inline)) inline\n\nnamespace {\ntemplate <typename T, T... indexes, typename F>\nconstexpr void unroll_loop_item(std::integer_sequence<T, indexes...>, F&& f)",
+      "docstring": "",
+      "line": 13
+    },
+    {
+      "name": "f",
+      "kind": "function",
+      "signature": "f(std::integral_constant<T, indexes>{}), ...);\n}\n};  // namespace\n\ntemplate <typename T, T count, typename F,\n          typename = std::enable_if_t<std::is_invocable_v<F, T>>>\nconstexpr void unroll_loop(F&& f)",
+      "docstring": "",
+      "line": 35
+    },
+    {
+      "name": "unroll_loop_item",
+      "kind": "function",
+      "signature": "unroll_loop_item(std::make_integer_sequence<T, count>{}, std::forward<F>(f));\n}\n\ntemplate <typename T>\nstruct Vec {\n  constexpr static int get_elem_num()",
+      "docstring": "",
+      "line": 41
+    },
+    {
+      "name": "BF16Vec8",
+      "kind": "function",
+      "signature": "BF16Vec8(const void* ptr)\n      : reg((__vector signed short)vec_xl(0, (__vector signed short*)ptr))",
+      "docstring": "",
+      "line": 76
+    },
+    {
+      "name": "BF16Vec8",
+      "kind": "function",
+      "signature": "BF16Vec8(const FP32Vec8&);\n\n  void save(void* ptr)",
+      "docstring": "",
+      "line": 79
+    },
+    {
+      "name": "BF16Vec16",
+      "kind": "function",
+      "signature": "BF16Vec16(const void* ptr)",
+      "docstring": "",
+      "line": 91
+    },
+    {
+      "name": "vec_xl",
+      "kind": "function",
+      "signature": "vec_xl(0, (signed short*)ptr);\n    reg.val[1] = (__vector signed short)vec_xl(16, (signed short*)ptr);\n  }\n\n  explicit BF16Vec16(const FP32Vec16&);\n\n  void save(void* ptr)",
+      "docstring": "",
+      "line": 95
+    },
+    {
+      "name": "vec_xst",
+      "kind": "function",
+      "signature": "vec_xst(reg.val[0], 0, (signed short*)ptr);\n    vec_xst(reg.val[1], 16, (signed short*)ptr);\n  }\n\n  void save(void* ptr, const int elem_num)",
+      "docstring": "",
+      "line": 102
+    },
+    {
+      "name": "std::max",
+      "kind": "function",
+      "signature": "std::max(0, std::min(elem_num, 16));\n\n    // Calculate elements to store in each 128-bit part (8 elements each)\n    const int elements_val0 = std::min(clamped_elem, 8);\n    const int elements_val1 = std::max(clamped_elem - 8, 0);\n\n    // Convert elements to bytes (2 bytes per element)\n    const size_t bytes_val0 = elements_val0 * sizeof(signed short);\n    const size_t bytes_val1 = elements_val1 * sizeof(signed short);\n\n    signed short* dest = static_cast<signed short*>(ptr);\n    // Store the first part using vec_xst_len\n    if (bytes_val0 > 0)",
+      "docstring": "",
+      "line": 108
+    },
+    {
+      "name": "vec_xst_len",
+      "kind": "function",
+      "signature": "vec_xst_len(reg.val[0], dest, bytes_val0);\n    }\n    // Store the second part if needed\n    if (bytes_val1 > 0)",
+      "docstring": "",
+      "line": 120
+    },
+    {
+      "name": "vec_xst_len",
+      "kind": "function",
+      "signature": "vec_xst_len(reg.val[1], dest + elements_val0, bytes_val1);\n    }\n  }\n};\n\nconst static __vector signed short zero = vec_splats((signed short)0);\n\nstruct BF16Vec32 : public Vec<BF16Vec32> {\n  constexpr static int VEC_ELEM_NUM = 32;\n\n  ss16x8x4_t reg;\n  explicit BF16Vec32(const void* ptr)\n      : reg(*reinterpret_cast<const ss16x8x4_t*>(ptr))",
+      "docstring": "",
+      "line": 124
+    },
+    {
+      "name": "BF16Vec32",
+      "kind": "function",
+      "signature": "BF16Vec32(ss16x8x4_t data) : reg(data)",
+      "docstring": "",
+      "line": 137
+    },
+    {
+      "name": "BF16Vec32",
+      "kind": "function",
+      "signature": "BF16Vec32(const BF16Vec8& vec8_data)\n      : reg({vec8_data.reg, vec8_data.reg, vec8_data.reg, vec8_data.reg})",
+      "docstring": "",
+      "line": 139
+    },
+    {
+      "name": "save",
+      "kind": "function",
+      "signature": "save(void* ptr)",
+      "docstring": "",
+      "line": 142
+    },
+    {
+      "name": "FP32Vec4",
+      "kind": "function",
+      "signature": "FP32Vec4(float v) : reg(vec_splats(v))",
+      "docstring": "",
+      "line": 154
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "algorithm",
+      "altivec",
+      "cmath",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 72,
+    "public_symbols": 72,
+    "classes": 0,
+    "functions": 72,
+    "internal_deps": 0,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cpu/cpu_types_vsx.hpp"
+}

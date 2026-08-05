@@ -1,0 +1,52 @@
+{
+  "id": "csrc.core.math.hpp",
+  "title": "Math",
+  "type": "module",
+  "summary": "Module providing next_pow_2, return, round_to_next_multiple_of",
+  "details": "Contains 3 functions/methods",
+  "symbols": [
+    {
+      "name": "next_pow_2",
+      "kind": "function",
+      "signature": "next_pow_2(uint32_t const num)",
+      "docstring": "",
+      "line": 4
+    },
+    {
+      "name": "return",
+      "kind": "function",
+      "signature": "return(a + b - 1) / b;\n}\n\n// Round a down to the next multiple of b. The caller is responsible for making\n// sure that b is non-zero\ntemplate <typename T>\ninline constexpr T round_to_previous_multiple_of(T a, T b)",
+      "docstring": "",
+      "line": 12
+    },
+    {
+      "name": "round_to_next_multiple_of",
+      "kind": "function",
+      "signature": "round_to_next_multiple_of(T a, T b)",
+      "docstring": "",
+      "line": 24
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "climits",
+      "iostream"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 3,
+    "public_symbols": 3,
+    "classes": 0,
+    "functions": 3,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/core/math.hpp"
+}

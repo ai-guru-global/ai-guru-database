@@ -124,7 +124,7 @@ name_zh: "LLM 推理引擎"
 
 ## See Also (深度专题)
 
-- [[05_大模型/06_LLM数据工程/02_LLM_数据工程_深入分析|LLM 推理深度解析]] — vLLM/TensorRT-LLM/SGLang 等推理引擎的架构与优化
+- [[05_大模型/05_LLM数据工程/02_LLM_数据工程_深入分析|LLM 推理深度解析]] — vLLM/TensorRT-LLM/SGLang 等推理引擎的架构与优化
 - [[概念/LLM/llm-production-deployment|LLM 生产部署 Runbook]] — 推理引擎的生产环境选型与运维
 
 ---
@@ -193,7 +193,7 @@ name_zh: "LLM 推理引擎"
 - [[概念/LLM/llm-inference-checklist|推理上线检查清单]]
 - [[概念/LLM/llm-inference-cost-optimization|推理成本优化]]
 - [[10_部署推理/02_推理引擎|推理引擎专题]]
-- [[10_部署推理/04_推理性能|推理性能优化]]
+- [[10_部署推理/03_推理优化|推理性能优化]]
 
 ## 性能基准参考 (7B 模型, H100)
 

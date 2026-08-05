@@ -30,9 +30,9 @@ name_zh: "架构文档模板"
 
 ## 4. 交叉引用
 
-- [研发指南](../development/01_索引.md)
-- [测试指南](../testing/01_索引.md)
-- [运维指南](../operations/01_索引.md)
+- [研发指南](../development/INDEX.md)
+- [测试指南](../testing/INDEX.md)
+- [运维指南](../operations/INDEX.md)
 
 ---
 

@@ -180,7 +180,7 @@ llamafactory-cli train \
 
 - **SFT 流水线实体**：`run_sft()`（`train/sft/workflow.py` L41）——加模型→套模板→建 Trainer，由 `run_exp()`（`train/tuner.py` L139）按 `stage: sft` 分发。
 - **数据模板是第一道门**：`Template`（`data/template.py` L41）+ `get_template_and_fix_tokenizer()`（L628）把原始问答对渲染成各模型专属 chat 格式——模板选错是 SFT 效果差的头号原因。
-- **与 LoRA 的接头**：`init_adapter()`（`model/adapter.py` L293）在 SFT 前把基座包装成 peft 模型。详见 [[05_大模型/07_微调技术/06_LLaMA_Factory_深入分析|LLaMA-Factory 深度解析]]。
+- **与 LoRA 的接头**：`init_adapter()`（`model/adapter.py` L293）在 SFT 前把基座包装成 peft 模型。详见 [[05_大模型/06_微调技术/06_LLaMA_Factory_深入分析|LLaMA-Factory 深度解析]]。
 
 ---
 
@@ -193,7 +193,7 @@ llamafactory-cli train \
 - [[概念/fine-tuning-techniques]] — 微调技术
 - [[概念/lora-peft]] — LoRA / PEFT
 - [[概念/pre-training]] — 预训练（SFT 前置阶段）
-- [[05_大模型/07_微调技术/03_微调技术]] — 微调章节
+- [[05_大模型/06_微调技术/03_微调技术]] — 微调章节
 
 ---
 

@@ -71,12 +71,12 @@ flowchart LR
 |------|---------|-----------|---------|
 | **Word2Vec (2013)** Mikolov et al. | 浅层神经网络高效学习词向量，king-man+woman≈queen 语义类比，Skip-gram + 负采样 | NLP 分布式表示开端，“万物皆可 Embedding” 的起点 | [NLP 与 LLMs](../05_大模型/README.md) [序列模型](../05_大模型/02_序列模型/) |
 | **Attention Is All You Need (2017)** Vaswani et al. | Transformer：完全基于自注意力，摒弃 RNN/CNN，并行训练 + 长距离依赖建模，奠定现代 NLP 基础 | 现代大模型的"圣经"，GPT、BERT、T5 的共同祖先 | [Transformer 革命](../05_大模型/04_Transformer_Revolution/) [序列模型](../05_大模型/02_序列模型/) |
-| **BERT (2018)** Devlin et al. | 双向 Transformer + MLM + NSP，预训练-微调范式，GLUE 基准大幅提升 | "预训练+微调"时代的开启，理解自监督学习的威力 | [NLP 与 LLMs](../05_大模型/README.md) [LLM 架构](../05_大模型/05_LLM架构/) |
-| **Language Models are Few-Shot Learners (GPT-3, 2020)** Brown et al. | 175B 参数，上下文学习（In-Context Learning）涌现，无需微调即可完成任务 | Scaling Laws 的首次大规模验证，"大模型时代"的标志性论文 | [LLM 架构](../05_大模型/05_LLM架构/) [Prompt Engineering](../05_大模型/08_提示工程/) |
-| **Training language models to follow instructions with human feedback (InstructGPT, 2022)** Ouyang et al. | SFT + RLHF 三阶段训练，1.3B InstructGPT 超越 175B GPT-3，证明对齐的重要性 | ChatGPT 的技术基础，理解"有用、无害、诚实"的训练方法 | [Fine-tuning](../05_大模型/07_微调技术/) [RL](../06_强化学习/) |
-| **LLaMA (2023)** Touvron et al. | 开源高效大模型，7B-65B，仅使用公开数据训练，性能接近 GPT-3，引发开源大模型浪潮 | 开源大模型的分水岭，理解高效训练和数据质量的重要性 | [LLM 架构](../05_大模型/05_LLM架构/) [开源 Agent](15_智能体/01_Agent基础/17_AI_OpenSource_项目_概览.md) |
-| **GPT-4 Technical Report (2023)** OpenAI | 多模态大模型（文本+图像输入），1.7T MoE 架构，在多项专业考试中达到人类水平 | 标志 LLM 进入"通用智能"阶段，MoE 架构在超大规模模型中的首次验证 | [LLM 架构](../05_大模型/05_LLM架构/) [Global LLM](../05_大模型/14_全球LLM生态/) |
-| **DeepSeek-V3 Technical Report (2024)** DeepSeek | 671B MoE + MLA + FP8 混合精度训练，$5.6M 训练成本达到 GPT-4 级性能 | 颠覆"只有巨头才能训练大模型"的认知，效率优先路线的里程碑 | [Chinese LLM](../05_大模型/15_中国LLM生态/) [LLM 架构](../05_大模型/05_LLM架构/) |
+| **BERT (2018)** Devlin et al. | 双向 Transformer + MLM + NSP，预训练-微调范式，GLUE 基准大幅提升 | "预训练+微调"时代的开启，理解自监督学习的威力 | [NLP 与 LLMs](../05_大模型/README.md) [LLM 架构](../05_大模型/04_LLM架构/) |
+| **Language Models are Few-Shot Learners (GPT-3, 2020)** Brown et al. | 175B 参数，上下文学习（In-Context Learning）涌现，无需微调即可完成任务 | Scaling Laws 的首次大规模验证，"大模型时代"的标志性论文 | [LLM 架构](../05_大模型/04_LLM架构/) [Prompt Engineering](../05_大模型/07_提示工程/) |
+| **Training language models to follow instructions with human feedback (InstructGPT, 2022)** Ouyang et al. | SFT + RLHF 三阶段训练，1.3B InstructGPT 超越 175B GPT-3，证明对齐的重要性 | ChatGPT 的技术基础，理解"有用、无害、诚实"的训练方法 | [Fine-tuning](../05_大模型/06_微调技术/) [RL](../06_强化学习/) |
+| **LLaMA (2023)** Touvron et al. | 开源高效大模型，7B-65B，仅使用公开数据训练，性能接近 GPT-3，引发开源大模型浪潮 | 开源大模型的分水岭，理解高效训练和数据质量的重要性 | [LLM 架构](../05_大模型/04_LLM架构/) [开源 Agent](15_智能体/01_Agent基础/17_AI_OpenSource_项目_概览.md) |
+| **GPT-4 Technical Report (2023)** OpenAI | 多模态大模型（文本+图像输入），1.7T MoE 架构，在多项专业考试中达到人类水平 | 标志 LLM 进入"通用智能"阶段，MoE 架构在超大规模模型中的首次验证 | [LLM 架构](../05_大模型/04_LLM架构/) [Global LLM](../05_大模型/13_全球LLM生态/) |
+| **DeepSeek-V3 Technical Report (2024)** DeepSeek | 671B MoE + MLA + FP8 混合精度训练，$5.6M 训练成本达到 GPT-4 级性能 | 颠覆"只有巨头才能训练大模型"的认知，效率优先路线的里程碑 | [Chinese LLM](../05_大模型/14_中国LLM生态/) [LLM 架构](../05_大模型/04_LLM架构/) |
 
 ### 深度解读（持续更新）
 
@@ -132,12 +132,12 @@ flowchart LR
 
 | 论文 | 核心贡献 | 为什么必读 | 相关章节 |
 |------|---------|-----------|---------|
-| **Scaling Laws for Neural Language Models (2020)** Kaplan et al. | 损失与计算量/参数量/数据量的幂律关系，预测 GPT-3 规模的可行性 | 大模型时代的"物理定律"，指导训练资源配置 | [模型训练](../07_模型训练/README.md) [LLM 架构](../05_大模型/05_LLM架构/) |
-| **Training Compute-Optimal Large Language Models (Chinchilla, 2022)** Hoffmann et al. | 计算最优训练：给定固定计算预算，数据量应与参数量等比增加，70B Chinchilla 击败 280B Gopher | 推翻"越大越好"的简单 Scaling，证明数据质量和训练效率同样重要 | [模型训练](../07_模型训练/README.md) [LLM 架构](../05_大模型/05_LLM架构/) |
-| **Switch Transformers (2021)** Fedus et al. | MoE 稀疏激活，1.6T 参数但每次只激活 200B，T5 的 7× 加速 | 超大规模模型的关键技术，GPT-4、Mixtral 的架构基础 | [LLM 架构](../05_大模型/05_LLM架构/) |
+| **Scaling Laws for Neural Language Models (2020)** Kaplan et al. | 损失与计算量/参数量/数据量的幂律关系，预测 GPT-3 规模的可行性 | 大模型时代的"物理定律"，指导训练资源配置 | [模型训练](../07_模型训练/README.md) [LLM 架构](../05_大模型/04_LLM架构/) |
+| **Training Compute-Optimal Large Language Models (Chinchilla, 2022)** Hoffmann et al. | 计算最优训练：给定固定计算预算，数据量应与参数量等比增加，70B Chinchilla 击败 280B Gopher | 推翻"越大越好"的简单 Scaling，证明数据质量和训练效率同样重要 | [模型训练](../07_模型训练/README.md) [LLM 架构](../05_大模型/04_LLM架构/) |
+| **Switch Transformers (2021)** Fedus et al. | MoE 稀疏激活，1.6T 参数但每次只激活 200B，T5 的 7× 加速 | 超大规模模型的关键技术，GPT-4、Mixtral 的架构基础 | [LLM 架构](../05_大模型/04_LLM架构/) |
 | **ZeRO (2020)** Rajbhandari et al. | 优化器状态/梯度/参数分片，单卡可训练 10× 大模型，DeepSpeed 核心 | 分布式训练的必备技术，理解显存优化的极限 | [分布式训练](07_模型训练/04_分布式训练/03_分布式训练_2026.md) |
-| **LoRA (2021)** Hu et al. | 低秩适配，冻结原权重，只训练 A/B 低秩矩阵，显存节省 3× | 参数高效微调的标配方法，理解秩的选择与影响 | [Fine-tuning](05_大模型/07_微调技术/02_微调_策略.md) |
-| **QLoRA (2023)** Dettmers et al. | 4-bit NF4 量化 + 双量化 + 分页优化器，单卡 48GB 微调 65B 模型 | 让大模型微调民主化，消费级 GPU 也能玩大模型 | [Fine-tuning](05_大模型/07_微调技术/02_微调_策略.md) |
+| **LoRA (2021)** Hu et al. | 低秩适配，冻结原权重，只训练 A/B 低秩矩阵，显存节省 3× | 参数高效微调的标配方法，理解秩的选择与影响 | [Fine-tuning](05_大模型/06_微调技术/02_微调_策略.md) |
+| **QLoRA (2023)** Dettmers et al. | 4-bit NF4 量化 + 双量化 + 分页优化器，单卡 48GB 微调 65B 模型 | 让大模型微调民主化，消费级 GPU 也能玩大模型 | [Fine-tuning](05_大模型/06_微调技术/02_微调_策略.md) |
 | **FlashAttention (2022)** Dao et al. | IO-Aware 精确注意力，分块计算减少 HBM 访问，2-4× 加速无近似 | Transformer 训练和推理的必备优化，理解内存墙问题 | [训练优化](07_模型训练/03_训练优化/07_训练_优化_2026.md) |
 
 ---
@@ -149,7 +149,7 @@ flowchart LR
 | **Concrete Problems in AI Safety (2016)** Amodei et al. | 将 AI 安全分解为 5 个具体问题：避免负面副作用、避免奖励黑客等 | AI 安全研究的起点，理解安全问题的系统化框架 | [AI 安全](../17_伦理安全/04_AI安全与红队/) |
 | **AI Safety via Debate (2018)** Irving et al. | 用两个 AI 辩论来验证复杂声明，人类评判辩论结果 | 可扩展监督的创新思路，理解"辩论"作为对齐工具 | [价值对齐](17_伦理安全/02_价值对齐/04_Value_对齐.md) |
 | **Constitutional AI (2022)** Bai et al. | 用原则（宪法）自我批判和修订，减少对人工反馈的依赖 | Claude 的核心技术，理解"自我对齐"的可行性 | [价值对齐](17_伦理安全/02_价值对齐/04_Value_对齐.md) |
-| **Direct Preference Optimization (2023)** Rafailov et al. | 直接从偏好数据优化，无需显式奖励模型，简化 RLHF 流程 | DPO 正在取代 PPO 成为对齐首选，理解其数学简洁性 | [价值对齐](17_伦理安全/02_价值对齐/04_Value_对齐.md) [Fine-tuning](05_大模型/07_微调技术/02_微调_策略.md) |
+| **Direct Preference Optimization (2023)** Rafailov et al. | 直接从偏好数据优化，无需显式奖励模型，简化 RLHF 流程 | DPO 正在取代 PPO 成为对齐首选，理解其数学简洁性 | [价值对齐](17_伦理安全/02_价值对齐/04_Value_对齐.md) [Fine-tuning](05_大模型/06_微调技术/02_微调_策略.md) |
 
 ---
 

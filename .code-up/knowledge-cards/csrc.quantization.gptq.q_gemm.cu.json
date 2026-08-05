@@ -1,0 +1,149 @@
+{
+  "id": "csrc.quantization.gptq.q_gemm.cu",
+  "title": "Q Gemm",
+  "type": "module",
+  "summary": "Module providing MAX_GROUPS_IN_BLOCK, hipblasHgemm, __low2float, a_, item_ptr and 5 more symbols",
+  "details": "Contains 74 functions/methods",
+  "symbols": [
+    {
+      "name": "MAX_GROUPS_IN_BLOCK",
+      "kind": "function",
+      "signature": "MAX_GROUPS_IN_BLOCK(BLOCK_KN_SIZE / 32)\n#define MAX_Q_GEMM_ROWS 50\n#define MAX_Q_GEMM_ROWS_8BIT 24\n#define MAX_ALT_GEMM_ROWS 8\n#define THREADS_X 32\n#define THREADS_Y 32\n#define DIVIDE(x, size) (((x) + (size) - 1) / (size))\n\n#if defined(USE_ROCM)\n  #include <hipblas/hipblas.h>\n__host__ __forceinline__ hipblasStatus_t __compat_hipblasHgemm(\n    hipblasHandle_t handle, hipblasOperation_t transA,\n    hipblasOperation_t transB, int m, int n, int k, const half* alpha,\n    const half* AP, int lda, const half* BP, int ldb, const half* beta,\n    half* CP, int ldc)",
+      "docstring": "",
+      "line": 27
+    },
+    {
+      "name": "hipblasHgemm",
+      "kind": "function",
+      "signature": "hipblasHgemm(handle, transA, transB, m, n, k,\n                      reinterpret_cast<const hipblasHalf*>(alpha),\n                      reinterpret_cast<const hipblasHalf*>(AP), lda,\n                      reinterpret_cast<const hipblasHalf*>(BP), ldb,\n                      reinterpret_cast<const hipblasHalf*>(beta),\n                      reinterpret_cast<hipblasHalf*>(CP), ldc);\n}\n  #define hipblasHgemm __compat_hipblasHgemm\n\n  // Previous version of PyTorch were converting to rocBLAS instead of hipBLAS.\n  #define rocblas_operation_none HIPBLAS_OP_N\n  #define rocblas_hgemm __compat_hipblasHgemm\n#endif\n\n__forceinline__ __device__ half2 dot22_8(half2 (&dq)[4], const half* a_ptr,\n                                         const half2 g_result)",
+      "docstring": "",
+      "line": 41
+    },
+    {
+      "name": "__low2float",
+      "kind": "function",
+      "signature": "__low2float(w01);\n    float w1 = __high2float(w01);\n    float x0 = __half2float(*a_ptr++);\n    float x1 = __half2float(*a_ptr++);\n    result = fma(w0, x0, result);\n    result = fma(w1, x1, result);\n  }\n  float qs = __half2float(qs_h);\n  result *= qs;\n  half result_h = __float2half_rn(result);\n  return __hadd(result_h, g_result);\n}\n\n__forceinline__ __device__ half dot22_16_h(half2 (&dq)[8], const half* a_ptr,\n                                           const half g_result,\n                                           const half qs_h)",
+      "docstring": "",
+      "line": 149
+    },
+    {
+      "name": "a_",
+      "kind": "function",
+      "signature": "a_(a, size_m, size_k);\n  MatrixView_half_rw c_(c, size_m, size_n);\n  MatrixView_q4_row b_gptq_qzeros_(b_gptq_qzeros, groups, size_n);\n  MatrixView_half b_gptq_scales_(b_gptq_scales, groups, size_n);\n\n  auto t = threadIdx.x;\n\n  // Block\n  auto offset_n = blockIdx.x * BLOCK_KN_SIZE * 4;\n  auto offset_m = blockIdx.y * m_count;\n  auto offset_k = blockIdx.z * BLOCK_KN_SIZE;\n\n  maybe_unused int end_n = min(offset_n + BLOCK_KN_SIZE * 4, size_n);\n  maybe_unused int end_m = min(offset_m + m_count, size_m);\n  int end_k = min(offset_k + BLOCK_KN_SIZE, size_k);\n\n  int n = offset_n + t * 4;\n\n  // Preload block_a\n  __shared__ half block_a[m_count][BLOCK_KN_SIZE];\n\n  if (offset_k + t < end_k)",
+      "docstring": "",
+      "line": 196
+    },
+    {
+      "name": "item_ptr",
+      "kind": "function",
+      "signature": "item_ptr(offset_m + m, 0);\n      half* block_a_ptr = block_a[m];\n\n      half a0;\n      if (b_q_perm)\n        a0 = a_ptr[b_q_perm[offset_k + t]];\n      else\n        a0 = a_ptr[offset_k + t];\n      block_a_ptr[t] = a0;\n    }\n  }\n\n  // Zero output\n  if (n >= size_n) return;\n\n  if (blockIdx.z == 0)",
+      "docstring": "",
+      "line": 220
+    },
+    {
+      "name": "item4",
+      "kind": "function",
+      "signature": "item4(zeros, group, n);\n      b_gptq_scales_.item4_f(scales, group, n);\n      dequant_4bit_8_prep_zero(zeros[0] + 1, z1z16[0], y1y16[0]);\n      dequant_4bit_8_prep_zero(zeros[1] + 1, z1z16[1], y1y16[1]);\n      dequant_4bit_8_prep_zero(zeros[2] + 1, z1z16[2], y1y16[2]);\n      dequant_4bit_8_prep_zero(zeros[3] + 1, z1z16[3], y1y16[3]);\n    }\n\n#pragma unroll\n    for (int j = 0; j < 4; j++)",
+      "docstring": "",
+      "line": 275
+    },
+    {
+      "name": "dequant_4bit_8_gptq",
+      "kind": "function",
+      "signature": "dequant_4bit_8_gptq(load_int4.x, dq[0], z1z16[0], y1y16[0], size_n,\n                          false);\n      dequant_4bit_8_gptq(load_int4.y, dq[1], z1z16[1], y1y16[1], size_n,\n                          false);\n      dequant_4bit_8_gptq(load_int4.z, dq[2], z1z16[2], y1y16[2], size_n,\n                          false);\n      dequant_4bit_8_gptq(load_int4.w, dq[3], z1z16[3], y1y16[3], size_n,\n                          false);\n\n#pragma unroll\n      for (int m = 0; m < m_count; m++)",
+      "docstring": "",
+      "line": 288
+    },
+    {
+      "name": "fma",
+      "kind": "function",
+      "signature": "fma(dot22_8_f(dq[0], a_ptr + m * a_stride), scales[0],\n                            block_c[m][0]);\n        block_c[m][1] = fma(dot22_8_f(dq[1], a_ptr + m * a_stride), scales[1],\n                            block_c[m][1]);\n        block_c[m][2] = fma(dot22_8_f(dq[2], a_ptr + m * a_stride), scales[2],\n                            block_c[m][2]);\n        block_c[m][3] = fma(dot22_8_f(dq[3], a_ptr + m * a_stride), scales[3],\n                            block_c[m][3]);\n      }\n\n      b_ptr += size_n;\n      a_ptr += 8;\n    }\n\n    k += 32;\n  }\n\n  for (int m = 0; m < m_count; m++)",
+      "docstring": "",
+      "line": 300
+    },
+    {
+      "name": "item_ptr",
+      "kind": "function",
+      "signature": "item_ptr(offset_m + m, n);\n    half2 result01 = __halves2half2(__float2half_rn(block_c[m][0]),\n                                    __float2half_rn(block_c[m][1]));\n    half2 result23 = __halves2half2(__float2half_rn(block_c[m][2]),\n                                    __float2half_rn(block_c[m][3]));\n    atomicAdd(out, result01);\n    atomicAdd(out + 1, result23);\n  }\n}\n\ntemplate <bool first_block, int m_count>\n__global__ void gemm_half_q_half_gptq_2bit_kernel(\n    const half* __restrict__ a, const uint32_t* __restrict__ b_q_weight,\n    const uint32_t* __restrict__ b_gptq_qzeros,\n    const half* __restrict__ b_gptq_scales, half* __restrict__ c,\n    const int size_m, const int size_n, const int size_k, const int groups,\n    const int* __restrict__ b_q_perm)",
+      "docstring": "",
+      "line": 318
+    },
+    {
+      "name": "a_",
+      "kind": "function",
+      "signature": "a_(a, size_m, size_k);\n  MatrixView_half_rw c_(c, size_m, size_n);\n  MatrixView_q2_row b_gptq_qzeros_(b_gptq_qzeros, groups, size_n);\n  MatrixView_half b_gptq_scales_(b_gptq_scales, groups, size_n);\n\n  auto t = threadIdx.x;\n\n  // Block\n  auto offset_n = blockIdx.x * BLOCK_KN_SIZE * 4;\n  auto offset_m = blockIdx.y * m_count;\n  auto offset_k = blockIdx.z * BLOCK_KN_SIZE;\n\n  maybe_unused int end_n = min(offset_n + BLOCK_KN_SIZE * 4, size_n);\n  maybe_unused int end_m = min(offset_m + m_count, size_m);\n  int end_k = min(offset_k + BLOCK_KN_SIZE, size_k);\n\n  int n = offset_n + t * 4;\n\n  // Preload block_a\n  __shared__ half block_a[m_count][BLOCK_KN_SIZE];\n\n  if (offset_k + t < end_k)",
+      "docstring": "",
+      "line": 334
+    },
+    {
+      "name": "item_ptr",
+      "kind": "function",
+      "signature": "item_ptr(offset_m + m, 0);\n      half* block_a_ptr = block_a[m];\n\n      half a0;\n      if (b_q_perm)\n        a0 = a_ptr[b_q_perm[offset_k + t]];\n      else\n        a0 = a_ptr[offset_k + t];\n      block_a_ptr[t] = a0;\n    }\n  }\n\n  // Zero output\n  if (n >= size_n) return;\n\n  if (blockIdx.z == 0)",
+      "docstring": "",
+      "line": 358
+    },
+    {
+      "name": "item4",
+      "kind": "function",
+      "signature": "item4(zeros, group, n);\n      b_gptq_scales_.item4(scales, group, n);\n    }\n\n#pragma unroll\n    for (int j = 0; j < 1; j++)",
+      "docstring": "",
+      "line": 406
+    },
+    {
+      "name": "dequant_2bit_16",
+      "kind": "function",
+      "signature": "dequant_2bit_16(load_int4.x, dq[0], size_n, zeros[0] + 1);\n      dequant_2bit_16(load_int4.y, dq[1], size_n, zeros[1] + 1);\n      dequant_2bit_16(load_int4.z, dq[2], size_n, zeros[2] + 1);\n      dequant_2bit_16(load_int4.w, dq[3], size_n, zeros[3] + 1);\n\n#pragma unroll\n      for (int m = 0; m < m_count; m++)",
+      "docstring": "",
+      "line": 415
+    },
+    {
+      "name": "dot22_16_h",
+      "kind": "function",
+      "signature": "dot22_16_h(dq[0], a_ptr + m * a_stride, block_c[m][0], scales[0]);\n        block_c[m][1] =\n            dot22_16_h(dq[1], a_ptr + m * a_stride, block_c[m][1], scales[1]);\n        block_c[m][2] =\n            dot22_16_h(dq[2], a_ptr + m * a_stride, block_c[m][2], scales[2]);\n        block_c[m][3] =\n            dot22_16_h(dq[3], a_ptr + m * a_stride, block_c[m][3], scales[3]);\n      }\n\n      b_ptr += size_n;\n      a_ptr += 16;\n    }\n\n    k += 16;\n  }\n\n  for (int m = 0; m < m_count; m++)",
+      "docstring": "",
+      "line": 423
+    },
+    {
+      "name": "item_ptr",
+      "kind": "function",
+      "signature": "item_ptr(offset_m + m, n);\n    half2 result01 = __halves2half2(block_c[m][0], block_c[m][1]);\n    half2 result23 = __halves2half2(block_c[m][2], block_c[m][3]);\n    atomicAdd(out, result01);\n    atomicAdd(out + 1, result23);\n  }\n}\n\ntemplate <bool first_block, int m_count>\n__global__ void gemm_half_q_half_gptq_3bit_kernel(\n    const half* __restrict__ a, const uint32_t* __restrict__ b_q_weight,\n    const uint32_t* __restrict__ b_gptq_qzeros,\n    const half* __restrict__ b_gptq_scales, half* __restrict__ c,\n    const int size_m, const int size_n, const int size_k, const int groups,\n    const int* __restrict__ b_q_perm)",
+      "docstring": "",
+      "line": 441
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "c10",
+      "compat",
+      "cstdint",
+      "cstdio",
+      "cuda_fp16",
+      "cuda_runtime",
+      "hipblas",
+      "matrix_view",
+      "qdq_2",
+      "qdq_3",
+      "qdq_4",
+      "qdq_8",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 74,
+    "public_symbols": 74,
+    "classes": 0,
+    "functions": 74,
+    "internal_deps": 0,
+    "external_deps": 14,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/gptq/q_gemm.cu"
+}

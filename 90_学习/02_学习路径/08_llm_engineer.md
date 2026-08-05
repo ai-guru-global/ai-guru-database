@@ -62,10 +62,10 @@ Stage 4 前沿（Agent / 多模态）
 - [Stage 2: 核心技术 — LLM 相关部分](90_学习/concepts/04_stage2_core_tech.md)（深入）
 
 **🔗 深入阅读**：
-- [LLM 架构（小白版）](05_大模型/05_LLM架构/LLM_Architectures_for_dummy.md)
-- [LLM 架构（速查版）](05_大模型/05_LLM架构/10_LLM_基础_简明指南.md)
+- [LLM 架构（小白版）](05_大模型/04_LLM架构/LLM_Architectures_for_dummy.md)
+- [LLM 架构（速查版）](05_大模型/04_LLM架构/10_LLM_基础_简明指南.md)
 - [Transformer 革命（小白版）](05_大模型/04_Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- [微调技术（小白版）](05_大模型/07_微调技术/Fine_tuning_Techniques_for_dummy.md)
+- [微调技术（小白版）](05_大模型/06_微调技术/Fine_tuning_Techniques_for_dummy.md)
 
 **💡 重点理解**：
 - Token 是什么，LLM 的上下文窗口限制
@@ -88,8 +88,8 @@ Stage 4 前沿（Agent / 多模态）
 **📚 核心概念**：[Stage 3 工程实践 — Prompt Engineering 部分](90_学习/concepts/05_stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [提示词工程（小白版）](05_大模型/08_提示工程/Prompt_Engineering_for_dummy.md)
-- [提示词工程（速查版）](05_大模型/08_提示工程/17_Prompt_工程_简明指南.md)
+- [提示词工程（小白版）](05_大模型/07_提示工程/Prompt_Engineering_for_dummy.md)
+- [提示词工程（速查版）](05_大模型/07_提示工程/17_Prompt_工程_简明指南.md)
 
 **💡 Prompt 技巧体系**：
 ```

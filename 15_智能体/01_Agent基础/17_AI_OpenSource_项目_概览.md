@@ -170,7 +170,7 @@ AI 开源项目分类
 
 | 模型 | 开发商 | 特点 | 文档 |
 |------|--------|------|------|
-| **LLaVA** | 微软 | 开源图文对话 | [Deep Dive](05_大模型/10_多模态模型/04_LLaVA_深入分析.md) |
+| **LLaVA** | 微软 | 开源图文对话 | [Deep Dive](05_大模型/09_多模态模型/04_LLaVA_深入分析.md) |
 | **Qwen-VL** | 阿里巴巴 | 中文优化 | (见 06_多模态_架构_2026.md) |
 | **InternVL** | 智谱 | 通用视觉 | (见 06_多模态_架构_2026.md) |
 | **BakLLaVA** | Mistral | 轻量级 | (见 06_多模态_架构_2026.md) |
@@ -291,23 +291,23 @@ AI 开源项目分类
 
 | 框架 | 特点 | 文档 |
 |------|------|------|
-| **Instructor** | Python 原生，类型安全 | [Deep Dive](05_大模型/08_提示工程/10_Instructor_深入分析.md) |
-| **Guidance** | 微软，引导式生成 | [Deep Dive](05_大模型/08_提示工程/06_Guidance_深入分析.md) |
-| **Outlines** | CFG 约束，高速 | [Deep Dive](05_大模型/08_提示工程/11_Outlines_深入分析.md) |
-| **DSPy** | 可编程 Prompt 优化 | [Deep Dive](05_大模型/08_提示工程/03_DSPy_深入分析.md) |
+| **Instructor** | Python 原生，类型安全 | [Deep Dive](05_大模型/07_提示工程/10_Instructor_深入分析.md) |
+| **Guidance** | 微软，引导式生成 | [Deep Dive](05_大模型/07_提示工程/06_Guidance_深入分析.md) |
+| **Outlines** | CFG 约束，高速 | [Deep Dive](05_大模型/07_提示工程/11_Outlines_深入分析.md) |
+| **DSPy** | 可编程 Prompt 优化 | [Deep Dive](05_大模型/07_提示工程/03_DSPy_深入分析.md) |
 
 ### 7.8 微调框架
 
 | 框架 | 特点 | 文档 |
 |------|------|------|
-| **Unsloth** | 2x 加速，24GB 单卡 | [Deep Dive](05_大模型/07_微调技术/12_Unsloth_深入分析.md) |
-| **Axolotl** | 全参数/LoRA/QLoRA | [Deep Dive](05_大模型/07_微调技术/01_Axolotl_深入分析.md) |
+| **Unsloth** | 2x 加速，24GB 单卡 | [Deep Dive](05_大模型/06_微调技术/12_Unsloth_深入分析.md) |
+| **Axolotl** | 全参数/LoRA/QLoRA | [Deep Dive](05_大模型/06_微调技术/01_Axolotl_深入分析.md) |
 
 ### 7.9 多模态模型
 
 | 模型 | 特点 | 文档 |
 |------|------|------|
-| **LLaVA** | 开源图文对话 | [Deep Dive](05_大模型/10_多模态模型/04_LLaVA_深入分析.md) |
+| **LLaVA** | 开源图文对话 | [Deep Dive](05_大模型/09_多模态模型/04_LLaVA_深入分析.md) |
 
 ---
 

@@ -1,0 +1,35 @@
+{
+  "id": "benchmarks.kernels.weight_shapes",
+  "title": "Weight Shapes",
+  "type": "module",
+  "summary": "Module providing WEIGHT_SHAPES",
+  "details": "Module providing WEIGHT_SHAPES",
+  "symbols": [
+    {
+      "name": "WEIGHT_SHAPES",
+      "kind": "constant",
+      "signature": "WEIGHT_SHAPES = ...",
+      "docstring": "",
+      "line": 15
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": []
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 0,
+    "functions": 0,
+    "internal_deps": 0,
+    "external_deps": 0,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "benchmarks/kernels/weight_shapes.py"
+}

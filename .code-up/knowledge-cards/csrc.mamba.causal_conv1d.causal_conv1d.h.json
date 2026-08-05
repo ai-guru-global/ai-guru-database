@@ -1,0 +1,95 @@
+{
+  "id": "csrc.mamba.causal_conv1d.causal_conv1d.h",
+  "title": "Causal Conv1D",
+  "type": "module",
+  "summary": "Module providing Copyright, __shfl_xor_sync, std::max, std::min, __shfl_xor and 4 more symbols",
+  "details": "Contains 9 functions/methods",
+  "symbols": [
+    {
+      "name": "Copyright",
+      "kind": "function",
+      "signature": "Copyright(c) 2024, Tri Dao.\n ******************************************************************************/\n// clang-format off\n// adapted from https://github.com/Dao-AILab/causal-conv1d/blob/main/csrc/causal_conv1d.h\n#pragma once\n\n#include <cuda_bf16.h>\n#include <cuda_fp16.h>\n////////////////////////////////////////////////////////////////////////////////////////////////////\n\nstruct ConvParamsBase {\n    using index_t = uint32_t;\n\n    int batch, dim, seqlen, width;\n    int64_t pad_slot_id;\n    bool silu_activation;\n\n    index_t x_batch_stride;\n    index_t x_c_stride;\n    index_t x_l_stride;\n    index_t weight_c_stride;\n    index_t weight_width_stride;\n    index_t out_batch_stride;\n    index_t out_c_stride;\n    index_t out_l_stride;\n\n    int conv_state_len;\n    index_t conv_state_batch_stride;\n    index_t conv_state_c_stride;\n    index_t conv_state_l_stride;\n\n    // Common data pointers.\n    void *__restrict__ x_ptr;\n    void *__restrict__ weight_ptr;\n    void *__restrict__ bias_ptr;\n    void *__restrict__ out_ptr;\n\n    void *__restrict__ conv_state_ptr;\n    void *__restrict__ query_start_loc_ptr;\n    void *__restrict__ has_initial_state_ptr;\n    void *__restrict__ cache_indices_ptr;\n    int32_t *__restrict__ cache_seqlens;\n\n    // For the continuous batching case. Makes it so that the mamba state for \n    // the current batch doesn't need to be a contiguous tensor.\n    int32_t *__restrict__ conv_state_indices_ptr;\n\n    void *__restrict__ seq_idx_ptr;\n\n    // No __restrict__ since initial_states could be the same as final_states.\n    void * initial_states_ptr;\n    index_t initial_states_batch_stride;\n    index_t initial_states_l_stride;\n    index_t initial_states_c_stride;\n\n    void * final_states_ptr;\n    index_t final_states_batch_stride;\n    index_t final_states_l_stride;\n    index_t final_states_c_stride;\n\n    void *  conv_states_ptr;\n    index_t conv_states_batch_stride;\n    index_t conv_states_l_stride;\n    index_t conv_states_c_stride;\n};\n\n\n#ifndef USE_ROCM\n    #include <cuda_bf16.h>\n\n    template<typename T>\n    __device__ inline T shuffle_xor(T val, int offset)",
+      "docstring": "",
+      "line": 1
+    },
+    {
+      "name": "__shfl_xor_sync",
+      "kind": "function",
+      "signature": "__shfl_xor_sync(uint32_t(-1), val, offset);\n    }\n\n    constexpr size_t custom_max(std::initializer_list<size_t> ilist)",
+      "docstring": "",
+      "line": 73
+    },
+    {
+      "name": "std::max",
+      "kind": "function",
+      "signature": "std::max(ilist);\n    }\n\n    template<typename T>\n    constexpr T constexpr_min(T a, T b)",
+      "docstring": "",
+      "line": 78
+    },
+    {
+      "name": "std::min",
+      "kind": "function",
+      "signature": "std::min(a, b);\n    }\n\n#else\n    #include <hip/hip_bf16.h>\n\n    template<typename T>\n    __device__ inline T shuffle_xor(T val, int offset)",
+      "docstring": "",
+      "line": 83
+    },
+    {
+      "name": "__shfl_xor",
+      "kind": "function",
+      "signature": "__shfl_xor(val, offset);\n    }\n    constexpr size_t custom_max(std::initializer_list<size_t> ilist)",
+      "docstring": "",
+      "line": 91
+    },
+    {
+      "name": "std::max_element",
+      "kind": "function",
+      "signature": "std::max_element(ilist.begin(), ilist.end());\n    }\n\n    template<typename T>\n    constexpr T constexpr_min(T a, T b)",
+      "docstring": "",
+      "line": 96
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(sizeof(Type) == 16);\n};\n\ntemplate<> struct BytesToType<8> {\n    using Type = uint64_t;\n    static_assert(sizeof(Type) == 8);\n};\n\ntemplate<> struct BytesToType<4> {\n    using Type = uint32_t;\n    static_assert(sizeof(Type) == 4);\n};\n\ntemplate<> struct BytesToType<2> {\n    using Type = uint16_t;\n    static_assert(sizeof(Type) == 2);\n};\n\ntemplate<> struct BytesToType<1> {\n    using Type = uint8_t;\n    static_assert(sizeof(Type) == 1);\n};\n\n////////////////////////////////////////////////////////////////////////////////////////////////////\n\ntemplate<typename T>\nstruct SumOp {\n__device__ inline T operator()(T const & x, T const & y)",
+      "docstring": "",
+      "line": 110
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(THREADS == 32 || THREADS == 16 || THREADS == 8 || THREADS == 4);\n    template<typename T, typename Operator>\n    static __device__ inline T run(T x, Operator &op)",
+      "docstring": "",
+      "line": 142
+    },
+    {
+      "name": "op",
+      "kind": "function",
+      "signature": "op(x, __shfl_xor_sync(uint32_t(-1), x, OFFSET));\n        return Allreduce<OFFSET>::run(x, op);\n    }\n};\n\ntemplate<>\nstruct Allreduce<2> {\ntemplate<typename T, typename Operator>\nstatic __device__ inline T run(T x, Operator &op)",
+      "docstring": "",
+      "line": 147
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cuda_bf16",
+      "cuda_fp16",
+      "hip"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 9,
+    "public_symbols": 9,
+    "classes": 0,
+    "functions": 9,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/mamba/causal_conv1d/causal_conv1d.h"
+}

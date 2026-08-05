@@ -1,0 +1,59 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_sm90_fp8_dispatch.cuh",
+  "title": "Scaled Mm Sm90 Fp8 Dispatch",
+  "type": "module",
+  "summary": "Module providing SM90, static_assert, in, TORCH_CHECK",
+  "details": "Contains 4 functions/methods",
+  "symbols": [
+    {
+      "name": "SM90",
+      "kind": "function",
+      "signature": "SM90(fp8) based on the Gemm\n * shape.\n */\n\nnamespace vllm {\n\nusing c3x::cutlass_gemm_caller;\n\ntemplate <typename InType, typename OutType,\n          template <typename, typename, typename> typename Epilogue>\nstruct sm90_fp8_config_default {\n  // M in (128, inf)\n  static_assert(std::is_same<InType, cutlass::float_e4m3_t>());\n  using KernelSchedule =\n      cutlass::gemm::KernelTmaWarpSpecializedPingpongFP8FastAccum;\n  using EpilogueSchedule = typename cutlass::epilogue::TmaWarpSpecialized;\n  using TileShape = Shape<_128, _128, _128>;\n  using ClusterShape = Shape<_2, _1, _1>;\n  using Cutlass3xGemm =\n      cutlass_3x_gemm<InType, OutType, Epilogue, TileShape, ClusterShape,\n                      KernelSchedule, EpilogueSchedule>;\n};\n\ntemplate <typename InType, typename OutType,\n          template <typename, typename, typename> typename Epilogue>\nstruct sm90_fp8_config_M128 {\n  // M in (64, 128]\n  static_assert(std::is_same<InType, cutlass::float_e4m3_t>());\n  using KernelSchedule =\n      cutlass::gemm::KernelTmaWarpSpecializedPingpongFP8FastAccum;\n  using EpilogueSchedule = typename cutlass::epilogue::TmaWarpSpecialized;\n  using TileShape = Shape<_64, _128, _128>;\n  using ClusterShape = Shape<_2, _1, _1>;\n  using Cutlass3xGemm =\n      cutlass_3x_gemm<InType, OutType, Epilogue, TileShape, ClusterShape,\n                      KernelSchedule, EpilogueSchedule>;\n};\n\ntemplate <typename InType, typename OutType,\n          template <typename, typename, typename> typename Epilogue>\nstruct sm90_fp8_config_M64 {\n  // M in [1, 64]\n  static_assert(std::is_same<InType, cutlass::float_e4m3_t>());\n  using KernelSchedule =\n      cutlass::gemm::KernelTmaWarpSpecializedPingpongFP8FastAccum;\n  using EpilogueSchedule = typename cutlass::epilogue::TmaWarpSpecialized;\n  using TileShape = Shape<_64, _64, _128>;\n  using ClusterShape = Shape<_1, _8, _1>;\n\n  using Cutlass3xGemm =\n      cutlass_3x_gemm<InType, OutType, Epilogue, TileShape, ClusterShape,\n                      KernelSchedule, EpilogueSchedule>;\n};\n\ntemplate <typename InType, typename OutType,\n          template <typename, typename, typename> typename Epilogue,\n          typename... EpilogueArgs>\ninline void cutlass_gemm_sm90_fp8_dispatch(torch::Tensor& out,\n                                           torch::Tensor const& a,\n                                           torch::Tensor const& b,\n                                           EpilogueArgs&&... args)",
+      "docstring": "",
+      "line": 6
+    },
+    {
+      "name": "static_assert",
+      "kind": "function",
+      "signature": "static_assert(std::is_same<InType, cutlass::float_e4m3_t>());\n  TORCH_CHECK(a.dtype() == torch::kFloat8_e4m3fn);\n  TORCH_CHECK(b.dtype() == torch::kFloat8_e4m3fn);\n\n  using Cutlass3xGemmDefault =\n      typename sm90_fp8_config_default<InType, OutType,\n                                       Epilogue>::Cutlass3xGemm;\n  using Cutlass3xGemmM64 =\n      typename sm90_fp8_config_M64<InType, OutType, Epilogue>::Cutlass3xGemm;\n  using Cutlass3xGemmM128 =\n      typename sm90_fp8_config_M128<InType, OutType, Epilogue>::Cutlass3xGemm;\n\n  uint32_t const m = a.size(0);\n  uint32_t const mp2 =\n      std::max(static_cast<uint32_t>(64), next_pow_2(m));  // next power of 2\n\n  if (mp2 <= 64)",
+      "docstring": "",
+      "line": 67
+    },
+    {
+      "name": "in",
+      "kind": "function",
+      "signature": "in(64, 128]\n    return cutlass_gemm_caller<Cutlass3xGemmM128>(\n        out, a, b, std::forward<EpilogueArgs>(args)...);\n  } else {\n    // m in (128, inf)\n    return cutlass_gemm_caller<Cutlass3xGemmDefault>(\n        out, a, b, std::forward<EpilogueArgs>(args)...);\n  }\n}\n\ntemplate <template <typename, typename, typename> typename Epilogue,\n          typename... EpilogueArgs>\nvoid cutlass_scaled_mm_sm90_fp8_epilogue(torch::Tensor& out,\n                                         torch::Tensor const& a,\n                                         torch::Tensor const& b,\n                                         EpilogueArgs&&... epilogue_args)",
+      "docstring": "",
+      "line": 89
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(a.dtype() == torch::kFloat8_e4m3fn);\n  TORCH_CHECK(b.dtype() == torch::kFloat8_e4m3fn);\n\n  if (out.dtype() == torch::kBFloat16)",
+      "docstring": "",
+      "line": 104
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cutlass_gemm_caller",
+      "scaled_mm"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 4,
+    "public_symbols": 4,
+    "classes": 0,
+    "functions": 4,
+    "internal_deps": 0,
+    "external_deps": 2,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/c3x/scaled_mm_sm90_fp8_dispatch.cuh"
+}

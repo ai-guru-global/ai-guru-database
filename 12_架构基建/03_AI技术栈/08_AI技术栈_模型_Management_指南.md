@@ -145,7 +145,7 @@ git lfs ls-files
 - [[12_架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
 - [[12_架构基建/03_AI技术栈/05_AI技术栈_推理_服务_指南|AI Stack 推理服务指南]]
 - [[12_架构基建/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
-- [[05_大模型/15_中国LLM生态/README|中国大模型生态]]
+- [[05_大模型/14_中国LLM生态/README|中国大模型生态]]
 - [[07_模型训练/04_分布式训练/11_ms_swift_深入分析|ms-swift 深度解析]]
 - [[概念/model-deployment|LLM 部署]]
 

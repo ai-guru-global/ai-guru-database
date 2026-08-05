@@ -777,7 +777,7 @@ class CachedLongContextCost:
 - [[14_RAG系统/02_嵌入技术/01_嵌入_模型_指南|嵌入模型指南]] — 嵌入模型选型
 - [[14_RAG系统/04_高级RAG/05_Graph_RAG_架构|Graph RAG架构]] — 图结构增强检索
 - [[14_RAG系统/01_RAG基础/07_RAG_系统|RAG系统基础]] — RAG基础概念
-- [[05_大模型/13_LLM产品/04_gemini_概览|Gemini]] — 长上下文模型代表
+- [[05_大模型/12_LLM产品/04_gemini_概览|Gemini]] — 长上下文模型代表
 - [[15_智能体/01_Agent基础/05_Agent_概览|AI Agent全景]] — Agentic RAG基础
 
 ---

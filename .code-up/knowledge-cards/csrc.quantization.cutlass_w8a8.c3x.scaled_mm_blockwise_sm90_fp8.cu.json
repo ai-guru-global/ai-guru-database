@@ -1,0 +1,39 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.c3x.scaled_mm_blockwise_sm90_fp8.cu",
+  "title": "Scaled Mm Blockwise Sm90 Fp8",
+  "type": "module",
+  "summary": "Module providing cutlass_scaled_mm_blockwise_sm90_fp8",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "cutlass_scaled_mm_blockwise_sm90_fp8",
+      "kind": "function",
+      "signature": "cutlass_scaled_mm_blockwise_sm90_fp8(torch::Tensor& out,\n                                          torch::Tensor const& a,\n                                          torch::Tensor const& b,\n                                          torch::Tensor const& a_scales,\n                                          torch::Tensor const& b_scales)",
+      "docstring": "",
+      "line": 6
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cutlass_extensions",
+      "scaled_mm_blockwise_sm90_fp8_dispatch",
+      "scaled_mm_kernels"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 3,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/c3x/scaled_mm_blockwise_sm90_fp8.cu"
+}

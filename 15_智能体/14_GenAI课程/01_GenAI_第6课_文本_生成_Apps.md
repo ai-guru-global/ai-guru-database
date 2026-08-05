@@ -522,10 +522,10 @@ completion = client.chat.completions.create(model=deployment, messages=messages,
 - [[15_智能体/GenAI_L07_Building_Chat_Applications]]
 - [[15_智能体/14_GenAI课程/03_GenAI_L11_Integrating_with_Function_Calling]]
 - [[15_智能体/01_Agent基础/13_Agentic_设计_模式_AndrewNg]]
-- [[05_大模型/10_多模态模型/Multimodal_Models_for_dummy]]
+- [[05_大模型/09_多模态模型/Multimodal_Models_for_dummy]]
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[05_大模型/08_提示工程/GenAI_L05_Advanced_Prompts|L05 高级提示技术]] | [[15_智能体/GenAI_L07_Building_Chat_Applications|L07 构建聊天应用]] |
+| [[05_大模型/07_提示工程/GenAI_L05_Advanced_Prompts|L05 高级提示技术]] | [[15_智能体/GenAI_L07_Building_Chat_Applications|L07 构建聊天应用]] |

@@ -430,7 +430,7 @@ graph LR
 - [[09_测试/02_测试框架/01_DeepEval_深入分析]] — DeepEval 工具详解
 - [[09_测试/02_测试框架/05_Promptfoo_深入分析]] — Promptfoo 工具详解
 - [[08_模型评估/README]] — 传统模型评估（本文是其 LLM 时代的扩展）
-- [[05_大模型/09_推理模型/README]] — Reasoning 模型评估的特殊性
+- [[05_大模型/08_推理模型/README]] — Reasoning 模型评估的特殊性
 - [[15_智能体/07_Agent评估/README]] — Agent 评估（多步调用链）
 
 ---

@@ -1,0 +1,135 @@
+{
+  "id": "csrc.cpu.attention",
+  "title": "Attention",
+  "type": "module",
+  "summary": "Module providing defined, std::exp, reduceSoftmaxAlibi, std::exp, reducePartitonSoftmax and 5 more symbols",
+  "details": "Contains 33 functions/methods",
+  "symbols": [
+    {
+      "name": "defined",
+      "kind": "function",
+      "signature": "defined(__powerpc64__) || defined(__s390x__)\n  // Power and s390x architecture-specific vector types\n  using q_load_vec_type = vec_op::FP32Vec8;\n  using k_load_vec_type = vec_op::FP32Vec16;\n  using v_load_vec_type = vec_op::FP32Vec16;\n#else\n  // Fallback for other architectures, including x86\n  using q_load_vec_type = vec_op::FP16Vec8;\n  using k_load_vec_type = vec_op::FP16Vec16;\n  using v_load_vec_type = vec_op::FP16Vec16;\n#endif\n  using q_vec_type = vec_op::FP32Vec16;\n  using k_vec_type = vec_op::FP32Vec16;\n  using qk_acc_vec_type = vec_op::FP32Vec16;\n};\n\n#ifdef __AVX512BF16__\ntemplate <>\nstruct KernelVecType<c10::BFloat16> {\n  using q_load_vec_type = vec_op::BF16Vec8;\n  using q_vec_type = vec_op::BF16Vec32;\n  using k_load_vec_type = vec_op::BF16Vec32;\n  using k_vec_type = vec_op::BF16Vec32;\n  using qk_acc_vec_type = vec_op::FP32Vec16;\n  using v_load_vec_type = vec_op::BF16Vec16;\n};\n#else\n  #ifdef __aarch64__\n    #ifndef ARM_BF16_SUPPORT\n    // pass\n    #else\ntemplate <>\nstruct KernelVecType<c10::BFloat16> {\n  using q_load_vec_type = vec_op::BF16Vec8;\n  using q_vec_type = vec_op::FP32Vec16;\n  using k_load_vec_type = vec_op::BF16Vec16;\n  using k_vec_type = vec_op::FP32Vec16;\n  using qk_acc_vec_type = vec_op::FP32Vec16;\n  using v_load_vec_type = vec_op::BF16Vec16;\n};\n    #endif\n  #else\ntemplate <>\nstruct KernelVecType<c10::BFloat16> {\n  using q_load_vec_type = vec_op::BF16Vec8;\n  using q_vec_type = vec_op::FP32Vec16;\n  using k_load_vec_type = vec_op::BF16Vec16;\n  using k_vec_type = vec_op::FP32Vec16;\n  using qk_acc_vec_type = vec_op::FP32Vec16;\n  using v_load_vec_type = vec_op::BF16Vec16;\n};\n  #endif\n#endif\n\ntemplate <typename T>\nFORCE_INLINE std::pair<T, T> reduceSoftmax(T* data, const int size,\n                                           const int capacity)",
+      "docstring": "",
+      "line": 27
+    },
+    {
+      "name": "std::exp",
+      "kind": "function",
+      "signature": "std::exp(data[i] - max);\n    sum += data[i];\n  }\n\n  int i = 0;\n  for (; i < size; ++i)",
+      "docstring": "",
+      "line": 91
+    },
+    {
+      "name": "reduceSoftmaxAlibi",
+      "kind": "function",
+      "signature": "reduceSoftmaxAlibi(T* data, const int size,\n                                                const int capacity,\n                                                const float alibi_slope,\n                                                const int start_index,\n                                                const int seq_len)",
+      "docstring": "",
+      "line": 105
+    },
+    {
+      "name": "std::exp",
+      "kind": "function",
+      "signature": "std::exp(data[i] - max);\n    sum += data[i];\n  }\n\n  int i = 0;\n  for (; i < size; ++i)",
+      "docstring": "",
+      "line": 123
+    },
+    {
+      "name": "reducePartitonSoftmax",
+      "kind": "function",
+      "signature": "reducePartitonSoftmax(const T* max_data, T* sum_data,\n                                        const int size)",
+      "docstring": "",
+      "line": 137
+    },
+    {
+      "name": "std::exp",
+      "kind": "function",
+      "signature": "std::exp(max_data[i] - max);\n    rescaled_sum += rescale_factor * sum_data[i];\n    sum_data[i] *= rescale_factor;\n  }\n  for (int i = 0; i < size; ++i)",
+      "docstring": "",
+      "line": 149
+    },
+    {
+      "name": "k_load_vec_type::get_elem_num",
+      "kind": "function",
+      "signature": "k_load_vec_type::get_elem_num() / x;\n  constexpr static int MAX_GROUP_NUM = 16 / TOKEN_PER_GROUP;\n  constexpr static int UNROLL_GROUP_NUM = MAX_GROUP_NUM / 4;\n\n  static_assert(MAX_GROUP_NUM == 8 || MAX_GROUP_NUM == 4);\n  static_assert(k_load_vec_type::get_elem_num() % x == 0);\n  static_assert(q_load_vec_type::get_elem_num() * sizeof(scalar_t) == 16);\n\n  FORCE_INLINE static void call(const scalar_t* __restrict__ q,\n                                const scalar_t* __restrict__ k_block,\n                                float* __restrict__ logits, float scale,\n                                const int token_num)",
+      "docstring": "",
+      "line": 166
+    },
+    {
+      "name": "q_load_group_vec",
+      "kind": "function",
+      "signature": "q_load_group_vec(q + q_offset);\n        q_vec_type q_group_vec(q_load_group_vec);\n\n        vec_op::unroll_loop<int, MAX_GROUP_NUM>(\n            k_block, &q_group_vec, &group_accums",
+      "docstring": "",
+      "line": 183
+    },
+    {
+      "name": "k_load_group_vec",
+      "kind": "function",
+      "signature": "k_load_group_vec(k_block + token_group_idx * x *\n                                                             TOKEN_PER_GROUP);\n              k_vec_type k_group_vec(k_load_group_vec);\n              vec_op::fma(group_accums[token_group_idx], q_group_vec,\n                          k_group_vec);\n              vec_op::prefetch(k_block + x * BLOCK_SIZE +\n                               token_group_idx * x * TOKEN_PER_GROUP);\n            });\n      }\n    } else {\n      for (int q_offset = 0; q_offset < HEAD_SIZE;\n           q_offset += x, k_block += x * BLOCK_SIZE)",
+      "docstring": "",
+      "line": 188
+    },
+    {
+      "name": "q_load_group_vec",
+      "kind": "function",
+      "signature": "q_load_group_vec(q + q_offset);\n        q_vec_type q_group_vec(q_load_group_vec);\n        for (int token_group_start = 0; token_group_start < group_num;\n             token_group_start += UNROLL_GROUP_NUM)",
+      "docstring": "",
+      "line": 200
+    },
+    {
+      "name": "k_load_group_vec",
+      "kind": "function",
+      "signature": "k_load_group_vec(k_block + token_group_idx * x *\n                                                               TOKEN_PER_GROUP);\n                k_vec_type k_group_vec(k_load_group_vec);\n                vec_op::fma(group_accums[token_group_idx], q_group_vec,\n                            k_group_vec);\n                vec_op::prefetch(k_block + x * BLOCK_SIZE +\n                                 token_group_idx * x * TOKEN_PER_GROUP);\n              });\n        }\n      }\n    }\n\n    for (int token_group_idx = 0; token_group_idx < group_num;\n         ++token_group_idx)",
+      "docstring": "",
+      "line": 208
+    },
+    {
+      "name": "qk_acc_vec_type::get_elem_num",
+      "kind": "function",
+      "signature": "qk_acc_vec_type::get_elem_num() /\n                                             TOKEN_PER_GROUP>(token_idx);\n            logits[token_group_idx * TOKEN_PER_GROUP + token_idx] =\n                dot_v * scale;\n          });\n    }\n  }\n};\n\ntemplate <typename scalar_t, int HEAD_SIZE, int BLOCK_SIZE,\n          int HEAD_PARTITION_SIZE, typename acc_t>\nFORCE_INLINE void reduceValueBlock(const float* prob, const scalar_t* v_block,\n                                   acc_t&& acc)",
+      "docstring": "",
+      "line": 227
+    },
+    {
+      "name": "v_load_vec_type::get_elem_num",
+      "kind": "function",
+      "signature": "v_load_vec_type::get_elem_num();\n  static_assert(BLOCK_SIZE == ELEM_NUM);\n  vec_op::FP32Vec16 prob_vec(prob);\n\n  vec_op::unroll_loop<int, HEAD_PARTITION_SIZE>(&",
+      "docstring": "",
+      "line": 241
+    },
+    {
+      "name": "v_vec",
+      "kind": "function",
+      "signature": "v_vec(v_block + BLOCK_SIZE * head_elem_idx);\n    vec_op::FP32Vec16 fp32_v_vec(v_vec);\n    acc[head_elem_idx] = acc[head_elem_idx] + prob_vec * fp32_v_vec;\n  });\n}\n};  // namespace\n\n// Paged attention v1\nnamespace {\ntemplate <typename scalar_t, int HEAD_SIZE, int BLOCK_SIZE>\nstruct paged_attention_v1_impl {\n  static void call(\n      scalar_t* __restrict__ out,            // [num_seqs, num_heads, head_size]\n      const scalar_t* __restrict__ q,        // [num_seqs, num_heads, head_size]\n      const scalar_t* __restrict__ k_cache,  // [num_blocks, num_kv_heads,\n                                             // head_size/x, block_size, x]\n      const scalar_t* __restrict__ v_cache,  // [num_blocks, num_kv_heads,\n                                             // head_size, block_size]\n      const int num_kv_heads, const float scale,\n      const int* __restrict__ block_tables,  // [num_seqs,\n                                             // max_num_blocks_per_seq]\n      const int* __restrict__ seq_lens,      // [num_seqs]\n      const int max_num_blocks_per_seq,\n      const float* __restrict__ alibi_slopes,  // [num_heads]\n      const int q_stride, const int kv_block_stride, const int kv_head_stride,\n      const int num_seqs, const int num_heads)",
+      "docstring": "",
+      "line": 245
+    },
+    {
+      "name": "sizeof",
+      "kind": "function",
+      "signature": "sizeof(scalar_t);\n    const int num_queries_per_kv = num_heads / num_kv_heads;\n\n    static_assert(BLOCK_SIZE == 16);\n\n    int max_seq_len = max_num_blocks_per_seq * BLOCK_SIZE;\n    int max_seq_len_padded = (max_seq_len + 15) & 0xFFFFFFF0;\n    TORCH_CHECK((max_seq_len_padded * sizeof(float)) % 64 == 0);\n\n    const int parallel_work_item_num = omp_get_max_threads();\n\n    size_t logits_bytes =\n        parallel_work_item_num * max_seq_len_padded * sizeof(float);\n    float* logits = (float*)std::aligned_alloc(\n        64, logits_bytes);  // Cacheline alignment for each context token.\n                            // [parallel_work_item_num, max_seq_len_padded]\n\n#pragma omp parallel for collapse(2) schedule(dynamic, 1)\n    for (int seq_idx = 0; seq_idx < num_seqs; ++seq_idx)",
+      "docstring": "",
+      "line": 272
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cpu_types"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 33,
+    "public_symbols": 33,
+    "classes": 0,
+    "functions": 33,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cpu/attention.cpp"
+}

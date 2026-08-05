@@ -17,7 +17,7 @@ name_zh: "Prompt Engineer 题库"
 > **难度标注**: ⭐ Basic | ⭐⭐ Intermediate | ⭐⭐⭐ Advanced
 > **频率标注**: 🔴 高频 | 🟡 中频 | 🟢 低频
 
-> 提示工程（Prompt Engineering）是大模型时代最关键的应用层技能之一。本题库围绕"如何用语言高效地驱动 LLM 产出可靠输出"展开，既考查对 in-context learning、CoT、ReAct 等机制的理解，也考查在 RAG、Agent、结构化输出等真实系统中的工程落地能力。相关背景见 [[05_大模型/08_提示工程/index|提示工程]]。
+> 提示工程（Prompt Engineering）是大模型时代最关键的应用层技能之一。本题库围绕"如何用语言高效地驱动 LLM 产出可靠输出"展开，既考查对 in-context learning、CoT、ReAct 等机制的理解，也考查在 RAG、Agent、结构化输出等真实系统中的工程落地能力。相关背景见 [[05_大模型/07_提示工程/index|提示工程]]。
 
 ---
 
@@ -208,6 +208,6 @@ name_zh: "Prompt Engineer 题库"
 
 - [[21_面试岗位/Prompt_Engineer/Prompt_Engineer_2026|提示工程师2026]]
 - [[21_面试岗位/Interview_Guide/index|面试总指南]]
-- [[05_大模型/08_提示工程/index|提示工程]]
+- [[05_大模型/07_提示工程/index|提示工程]]
 - [[15_智能体/index|智能体]]
 - [[14_RAG系统/index|RAG系统]]

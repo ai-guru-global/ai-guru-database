@@ -1,0 +1,127 @@
+{
+  "id": "csrc.activation_kernels.cu",
+  "title": "Activation Kernels",
+  "type": "module",
+  "summary": "Module providing scalar_t, ACT_FN, VLLM_LDG, sigmoid, return and 5 more symbols",
+  "details": "Contains 13 functions/methods",
+  "symbols": [
+    {
+      "name": "scalar_t",
+      "kind": "function",
+      "signature": "scalar_t(*ACT_FN)(const scalar_t&),\n          bool act_first>\n__device__ __forceinline__ scalar_t compute(const scalar_t& x,\n                                            const scalar_t& y)",
+      "docstring": "",
+      "line": 10
+    },
+    {
+      "name": "ACT_FN",
+      "kind": "function",
+      "signature": "ACT_FN(x) * y : x * ACT_FN(y);\n}\n// Activation and gating kernel template.\n\ntemplate <typename scalar_t, scalar_t (*ACT_FN)(const scalar_t&),\n          bool act_first>\n__global__ void act_and_mul_kernel(\n    scalar_t* __restrict__ out,          // [..., d]\n    const scalar_t* __restrict__ input,  // [..., 2, d]\n    const int d)",
+      "docstring": "",
+      "line": 16
+    },
+    {
+      "name": "VLLM_LDG",
+      "kind": "function",
+      "signature": "VLLM_LDG(&input[token_idx * 2 * d + idx]);\n    const scalar_t y = VLLM_LDG(&input[token_idx * 2 * d + d + idx]);\n    out[token_idx * d + idx] = compute<scalar_t, ACT_FN, act_first>(x, y);\n  }\n}\n\ntemplate <typename T>\n__device__ __forceinline__ T silu_kernel(const T& x)",
+      "docstring": "",
+      "line": 28
+    },
+    {
+      "name": "sigmoid",
+      "kind": "function",
+      "signature": "sigmoid(x)\n  return (T)(((float)x) / (1.0f + expf((float)-x)));\n}\n\ntemplate <typename T>\n__device__ __forceinline__ T gelu_kernel(const T& x)",
+      "docstring": "",
+      "line": 36
+    },
+    {
+      "name": "return",
+      "kind": "function",
+      "signature": "return(T)(f * 0.5f * (1.0f + ::erf(f * ALPHA)));\n}\n\ntemplate <typename T>\n__device__ __forceinline__ T gelu_tanh_kernel(const T& x)",
+      "docstring": "",
+      "line": 46
+    },
+    {
+      "name": "return",
+      "kind": "function",
+      "signature": "return(T)(0.5f * f * (1.0f + ::tanhf(inner)));\n}\n\n}  // namespace vllm\n\n// Launch activation and gating kernel.\n// Use ACT_FIRST (bool) indicating whether to apply the activation function\n// first.\n#define LAUNCH_ACTIVATION_GATE_KERNEL(KERNEL, ACT_FIRST)                 \\\n  int d = input.size(-1) / 2;                                            \\\n  int64_t num_tokens = input.numel() / input.size(-1);                   \\\n  dim3 grid(num_tokens);                                                 \\\n  dim3 block(std::min(d, 1024));                                         \\\n  if (num_tokens == 0)",
+      "docstring": "",
+      "line": 59
+    },
+    {
+      "name": "device_guard",
+      "kind": "function",
+      "signature": "device_guard(device_of(input));      \\\n  const cudaStream_t stream = at::cuda::getCurrentCUDAStream();          \\\n  VLLM_DISPATCH_FLOATING_TYPES(                                          \\\n      input.scalar_type(), \"act_and_mul_kernel\", [&] {                   \\\n        vllm::act_and_mul_kernel<scalar_t, KERNEL<scalar_t>, ACT_FIRST>  \\\n            <<<grid, block, 0, stream>>>(out.data_ptr<scalar_t>(),       \\\n                                         input.data_ptr<scalar_t>(), d); \\\n      });\n\nvoid silu_and_mul(torch::Tensor& out,    // [..., d]\n                  torch::Tensor& input)  // [..., 2 * d]\n{\n  LAUNCH_ACTIVATION_GATE_KERNEL(vllm::silu_kernel, true);\n}\n\nvoid mul_and_silu(torch::Tensor& out,    // [..., d]\n                  torch::Tensor& input)  // [..., 2 * d]\n{\n  // The difference between mul_and_silu and silu_and_mul is that mul_and_silu\n  // applies the silu to the latter half of the input.\n  LAUNCH_ACTIVATION_GATE_KERNEL(vllm::silu_kernel, false);\n}\n\nvoid gelu_and_mul(torch::Tensor& out,    // [..., d]\n                  torch::Tensor& input)  // [..., 2 * d]\n{\n  LAUNCH_ACTIVATION_GATE_KERNEL(vllm::gelu_kernel, true);\n}\n\nvoid gelu_tanh_and_mul(torch::Tensor& out,    // [..., d]\n                       torch::Tensor& input)  // [..., 2 * d]\n{\n  LAUNCH_ACTIVATION_GATE_KERNEL(vllm::gelu_tanh_kernel, true);\n}\n\nnamespace vllm {\n\ntemplate <typename T>\n__device__ __forceinline__ T fatrelu_kernel(const T& x, const float threshold)",
+      "docstring": "",
+      "line": 75
+    },
+    {
+      "name": "return",
+      "kind": "function",
+      "signature": "return(T)(f > threshold ? f : 0.0f);\n}\n\ntemplate <typename scalar_t, scalar_t (*ACT_FN)(const scalar_t&, const float)>\n__global__ void act_and_mul_kernel_with_param(\n    scalar_t* __restrict__ out, const scalar_t* __restrict__ input, const int d,\n    const float param)",
+      "docstring": "",
+      "line": 115
+    },
+    {
+      "name": "VLLM_LDG",
+      "kind": "function",
+      "signature": "VLLM_LDG(&input[token_idx * 2 * d + idx]);\n    const scalar_t y = VLLM_LDG(&input[token_idx * 2 * d + d + idx]);\n    out[token_idx * d + idx] = ACT_FN(x, param) * y;\n  }\n}\n\n}  // namespace vllm\n\n#define LAUNCH_ACTIVATION_GATE_KERNEL_WITH_PARAM(KERNEL, PARAM)         \\\n  int d = input.size(-1) / 2;                                           \\\n  int64_t num_tokens = input.numel() / input.size(-1);                  \\\n  dim3 grid(num_tokens);                                                \\\n  dim3 block(std::min(d, 1024));                                        \\\n  const at::cuda::OptionalCUDAGuard device_guard(device_of(input));     \\\n  const cudaStream_t stream = at::cuda::getCurrentCUDAStream();         \\\n  VLLM_DISPATCH_FLOATING_TYPES(                                         \\\n      input.scalar_type(), \"act_and_mul_kernel_with_param\", [&] {       \\\n        vllm::act_and_mul_kernel_with_param<scalar_t, KERNEL<scalar_t>> \\\n            <<<grid, block, 0, stream>>>(out.data_ptr<scalar_t>(),      \\\n                                         input.data_ptr<scalar_t>(), d, \\\n                                         PARAM);                        \\\n      });\n\nvoid fatrelu_and_mul(torch::Tensor& out,    // [..., d],\n                     torch::Tensor& input,  // [..., 2 * d]\n                     double threshold)",
+      "docstring": "",
+      "line": 125
+    },
+    {
+      "name": "LAUNCH_ACTIVATION_GATE_KERNEL_WITH_PARAM",
+      "kind": "function",
+      "signature": "LAUNCH_ACTIVATION_GATE_KERNEL_WITH_PARAM(vllm::fatrelu_kernel, threshold);\n}\nnamespace vllm {\n\n// Element-wise activation kernel template.\ntemplate <typename scalar_t, scalar_t (*ACT_FN)(const scalar_t&)>\n__global__ void activation_kernel(\n    scalar_t* __restrict__ out,          // [..., d]\n    const scalar_t* __restrict__ input,  // [..., d]\n    const int d)",
+      "docstring": "",
+      "line": 150
+    },
+    {
+      "name": "VLLM_LDG",
+      "kind": "function",
+      "signature": "VLLM_LDG(&input[token_idx * d + idx]);\n    out[token_idx * d + idx] = ACT_FN(x);\n  }\n}\n\n}  // namespace vllm\n\n// Launch element-wise activation kernel.\n#define LAUNCH_ACTIVATION_KERNEL(KERNEL)                                       \\\n  int d = input.size(-1);                                                      \\\n  int64_t num_tokens = input.numel() / d;                                      \\\n  dim3 grid(num_tokens);                                                       \\\n  dim3 block(std::min(d, 1024));                                               \\\n  const at::cuda::OptionalCUDAGuard device_guard(device_of(input));            \\\n  const cudaStream_t stream = at::cuda::getCurrentCUDAStream();                \\\n  VLLM_DISPATCH_FLOATING_TYPES(input.scalar_type(), \"activation_kernel\", [&] { \\\n    vllm::activation_kernel<scalar_t, KERNEL<scalar_t>>                        \\\n        <<<grid, block, 0, stream>>>(out.data_ptr<scalar_t>(),                 \\\n                                     input.data_ptr<scalar_t>(), d);           \\\n  });\n\nnamespace vllm {\n\ntemplate <typename T>\n__device__ __forceinline__ T gelu_new_kernel(const T& x)",
+      "docstring": "",
+      "line": 163
+    },
+    {
+      "name": "tanhf",
+      "kind": "function",
+      "signature": "tanhf((T)(0.79788456f * (float)(x + (T)(0.044715f * x3))));\n  return ((T)0.5) * x * (((T)1.0) + t);\n}\n\ntemplate <typename T>\n__device__ __forceinline__ T gelu_fast_kernel(const T& x)",
+      "docstring": "",
+      "line": 189
+    },
+    {
+      "name": "tanhf",
+      "kind": "function",
+      "signature": "tanhf(((T)(f * 0.79788456f)) * (((T)1.0) + (T)(0.044715f * f) * x));\n  return ((T)0.5) * x * (((T)1.0) + t);\n}\n\ntemplate <typename T>\n__device__ __forceinline__ T gelu_quick_kernel(const T& x)",
+      "docstring": "",
+      "line": 197
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "ATen",
+      "c10",
+      "cmath",
+      "cuda_compat",
+      "dispatch_utils",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 13,
+    "public_symbols": 13,
+    "classes": 0,
+    "functions": 13,
+    "internal_deps": 0,
+    "external_deps": 6,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/activation_kernels.cu"
+}

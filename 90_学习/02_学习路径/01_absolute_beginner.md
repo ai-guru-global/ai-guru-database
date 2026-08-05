@@ -108,8 +108,8 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **🔗 深入阅读**：
 - [自然语言处理与大模型（小白版）](../../05_大模型/README_for_dummy.md)
 - [Transformer 革命（小白版）](05_大模型/04_Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- [提示词工程（小白版）](05_大模型/08_提示工程/Prompt_Engineering_for_dummy.md)
-- [大语言模型架构（小白版）](05_大模型/05_LLM架构/LLM_Architectures_for_dummy.md)
+- [提示词工程（小白版）](05_大模型/07_提示工程/Prompt_Engineering_for_dummy.md)
+- [大语言模型架构（小白版）](05_大模型/04_LLM架构/LLM_Architectures_for_dummy.md)
 
 **✅ 学会标志**：
 - 能解释 Transformer 的核心思想（Attention 机制）

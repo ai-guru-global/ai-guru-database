@@ -201,4 +201,4 @@ python -m vllm.entrypoints.openai.api_server \
 - [[概念/LLM/llm-quantization|LLM 量化]]
 - [[概念/LLM/speculative-decoding|推测解码]]
 - [[概念/Inference/continuous-batching|Continuous Batching]]
-- [[10_部署推理/06_成本管理/03_LLM_成本优化|推理成本优化 2026]]
+- [[10_部署推理/06_成本管理/01_LLM_成本优化|推理成本优化 2026]]

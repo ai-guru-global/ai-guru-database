@@ -1,0 +1,37 @@
+{
+  "id": "csrc.moe.permute_unpermute_kernels.dispatch.h",
+  "title": "Dispatch",
+  "type": "module",
+  "summary": "Module providing MOE_SWITCH",
+  "details": "Contains 1 functions/methods",
+  "symbols": [
+    {
+      "name": "MOE_SWITCH",
+      "kind": "function",
+      "signature": "MOE_SWITCH(TYPE, ...)                                     \\\n  at::ScalarType _st = ::detail::scalar_type(TYPE);               \\\n  switch (_st)",
+      "docstring": "",
+      "line": 3
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cuda_fp8"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 1,
+    "public_symbols": 1,
+    "classes": 0,
+    "functions": 1,
+    "internal_deps": 0,
+    "external_deps": 1,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/moe/permute_unpermute_kernels/dispatch.h"
+}

@@ -381,7 +381,7 @@ L1  │  Foundation Practitioner              │  代码审查
 
 ## 4. 提示工程体系
 
-> **扩展阅读**: 本节聚焦 Vibe Coding 场景下的提示技巧。如需系统学习提示工程理论（CoT、ToT、ReAct、Few-Shot 等），请参阅 [Prompt Engineering 专题](05_大模型/08_提示工程/16_Prompt工程.md)。
+> **扩展阅读**: 本节聚焦 Vibe Coding 场景下的提示技巧。如需系统学习提示工程理论（CoT、ToT、ReAct、Few-Shot 等），请参阅 [Prompt Engineering 专题](05_大模型/07_提示工程/16_Prompt工程.md)。
 
 ### 4.0 模型选择策略
 
@@ -1108,7 +1108,7 @@ Vibe Coding 演进路线:
 - [实战案例集](../04_实践指南/08_Vibe_Coding_实战_案例.md) — 场景化实战与真实案例
 - [Vibe Coding 生产实践](./04_Vibe_Coding_生产_实践.md) — 生产环境工程化落地
 - [Agentic Coding 方法论](./01_Agent编程_方法论.md) — 多Agent协作开发方法论
-- [Prompt Engineering 专题](05_大模型/08_提示工程/16_Prompt工程.md) — 提示工程理论基础
+- [Prompt Engineering 专题](05_大模型/07_提示工程/16_Prompt工程.md) — 提示工程理论基础
 
 ### 社区资源
 - [Awesome Cursor Rules](https://github.com/PatrickJS/awesome-cursorrules)

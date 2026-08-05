@@ -1,0 +1,63 @@
+{
+  "id": "csrc.quantization.cutlass_w8a8.moe.grouped_mm_c3x.cu",
+  "title": "Grouped Mm C3X",
+  "type": "module",
+  "summary": "Module providing in, TORCH_CHECK, dispatch_moe_mm_sm90, cutlass_moe_mm_sm90",
+  "details": "Contains 4 functions/methods",
+  "symbols": [
+    {
+      "name": "in",
+      "kind": "function",
+      "signature": "in(16, inf)\n  static_assert(std::is_same<InType, cutlass::float_e4m3_t>());\n  using KernelSchedule =\n      cutlass::gemm::KernelPtrArrayTmaWarpSpecializedPingpongFP8FastAccum;\n  using EpilogueSchedule =\n      cutlass::epilogue::PtrArrayTmaWarpSpecializedPingpong;\n  using TileShape = cute::Shape<cute::_64, cute::_256, cute::_128>;\n  using ClusterShape = cute::Shape<cute::_1, cute::_2, cute::_1>;\n\n  using Cutlass3xGemm =\n      cutlass_3x_group_gemm<InType, OutType, Epilogue, TileShape, ClusterShape,\n                            KernelSchedule, EpilogueSchedule>;\n};\n\ntemplate <typename InType, typename OutType,\n          template <typename, typename, typename> typename Epilogue>\nstruct sm90_fp8_config_M16 {\n  // M in [1, 16]\n  static_assert(std::is_same<InType, cutlass::float_e4m3_t>());\n  using KernelSchedule =\n      cutlass::gemm::KernelPtrArrayTmaWarpSpecializedPingpongFP8FastAccum;\n  using EpilogueSchedule =\n      cutlass::epilogue::PtrArrayTmaWarpSpecializedPingpong;\n  using TileShape = cute::Shape<cute::_64, cute::_64, cute::_128>;\n  using ClusterShape = cute::Shape<cute::_1, cute::_4, cute::_1>;\n\n  using Cutlass3xGemm =\n      cutlass_3x_group_gemm<InType, OutType, Epilogue, TileShape, ClusterShape,\n                            KernelSchedule, EpilogueSchedule>;\n};\n\ntemplate <typename InType, typename OutType,\n          template <typename, typename, typename> typename Epilogue>\nstruct sm90_fp8_config_K8192 {\n  // K in [8192, inf)\n  static_assert(std::is_same<InType, cutlass::float_e4m3_t>());\n  using KernelSchedule =\n      cutlass::gemm::KernelPtrArrayTmaWarpSpecializedPingpongFP8FastAccum;\n  using EpilogueSchedule =\n      cutlass::epilogue::PtrArrayTmaWarpSpecializedPingpong;\n  using TileShape = cute::Shape<cute::_128, cute::_128, cute::_128>;\n  using ClusterShape = cute::Shape<cute::_1, cute::_8, cute::_1>;\n\n  using Cutlass3xGemm =\n      cutlass_3x_group_gemm<InType, OutType, Epilogue, TileShape, ClusterShape,\n                            KernelSchedule, EpilogueSchedule>;\n};\n\ntemplate <typename InType, typename OutType,\n          template <typename, typename, typename> typename Epilogue>\nstruct sm90_fp8_config_N8192 {\n  // N in [8192, inf)\n  static_assert(std::is_same<InType, cutlass::float_e4m3_t>());\n  using KernelSchedule =\n      cutlass::gemm::KernelPtrArrayTmaWarpSpecializedPingpongFP8FastAccum;\n  using EpilogueSchedule =\n      cutlass::epilogue::PtrArrayTmaWarpSpecializedPingpong;\n  using TileShape = cute::Shape<cute::_64, cute::_128, cute::_256>;\n  using ClusterShape = cute::Shape<cute::_1, cute::_8, cute::_1>;\n\n  using Cutlass3xGemm =\n      cutlass_3x_group_gemm<InType, OutType, Epilogue, TileShape, ClusterShape,\n                            KernelSchedule, EpilogueSchedule>;\n};\n\ntemplate <typename InType, typename OutType>\nvoid run_cutlass_moe_mm_sm90(\n    torch::Tensor& out_tensors, torch::Tensor const& a_tensors,\n    torch::Tensor const& b_tensors, torch::Tensor const& a_scales,\n    torch::Tensor const& b_scales, torch::Tensor const& expert_offsets,\n    torch::Tensor const& problem_sizes, torch::Tensor const& a_strides,\n    torch::Tensor const& b_strides, torch::Tensor const& c_strides,\n    bool per_act_token, bool per_out_ch)",
+      "docstring": "",
+      "line": 16
+    },
+    {
+      "name": "TORCH_CHECK",
+      "kind": "function",
+      "signature": "TORCH_CHECK(a_tensors.size(0) > 0, \"No input A tensors provided.\");\n  TORCH_CHECK(b_tensors.size(0) > 0, \"No input B tensors provided.\");\n  TORCH_CHECK(out_tensors.size(0) > 0, \"No output tensors provided.\");\n\n  TORCH_CHECK(a_tensors.dtype() == torch::kFloat8_e4m3fn,\n              \"A tensors must be of type float8_e4m3fn.\");\n  TORCH_CHECK(b_tensors.dtype() == torch::kFloat8_e4m3fn,\n              \"B tensors must be of type float8_e4m3fn.\");\n\n  TORCH_CHECK(a_tensors.dtype() == torch::kFloat8_e4m3fn);\n  TORCH_CHECK(b_tensors.dtype() == torch::kFloat8_e4m3fn);\n\n  using Cutlass3xGemmN8192 = typename sm90_fp8_config_N8192<\n      InType, OutType, vllm::c3x::ScaledEpilogueArray>::Cutlass3xGemm;\n  using Cutlass3xGemmK8192 = typename sm90_fp8_config_K8192<\n      InType, OutType, vllm::c3x::ScaledEpilogueArray>::Cutlass3xGemm;\n  using Cutlass3xGemmM16 = typename sm90_fp8_config_M16<\n      InType, OutType, vllm::c3x::ScaledEpilogueArray>::Cutlass3xGemm;\n  using Cutlass3xGemmDefault = typename sm90_fp8_config_default<\n      InType, OutType, vllm::c3x::ScaledEpilogueArray>::Cutlass3xGemm;\n\n  uint32_t const m = a_tensors.size(0);\n  uint32_t const n = out_tensors.size(1);\n  uint32_t const k = a_tensors.size(1);\n\n  if (n >= 8192)",
+      "docstring": "",
+      "line": 88
+    },
+    {
+      "name": "dispatch_moe_mm_sm90",
+      "kind": "function",
+      "signature": "dispatch_moe_mm_sm90(\n    torch::Tensor& out_tensors, torch::Tensor const& a_tensors,\n    torch::Tensor const& b_tensors, torch::Tensor const& a_scales,\n    torch::Tensor const& b_scales, torch::Tensor const& expert_offsets,\n    torch::Tensor const& problem_sizes, torch::Tensor const& a_strides,\n    torch::Tensor const& b_strides, torch::Tensor const& c_strides,\n    bool per_act_token, bool per_out_ch)",
+      "docstring": "",
+      "line": 135
+    },
+    {
+      "name": "cutlass_moe_mm_sm90",
+      "kind": "function",
+      "signature": "cutlass_moe_mm_sm90(\n    torch::Tensor& out_tensors, torch::Tensor const& a_tensors,\n    torch::Tensor const& b_tensors, torch::Tensor const& a_scales,\n    torch::Tensor const& b_scales, torch::Tensor const& expert_offsets,\n    torch::Tensor const& problem_sizes, torch::Tensor const& a_strides,\n    torch::Tensor const& b_strides, torch::Tensor const& c_strides,\n    bool per_act_token, bool per_out_ch)",
+      "docstring": "",
+      "line": 157
+    }
+  ],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "c10",
+      "cudaTypedefs",
+      "cutlass",
+      "grouped_mm_c3x",
+      "torch"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 4,
+    "public_symbols": 4,
+    "classes": 0,
+    "functions": 4,
+    "internal_deps": 0,
+    "external_deps": 5,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "ml-pytorch",
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/quantization/cutlass_w8a8/moe/grouped_mm_c3x.cu"
+}

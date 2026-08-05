@@ -1,3 +1,0 @@
-cadence: "nightly"
-model: Qwen/Qwen3-30B-A3B
-scheme: FP8_DYNAMIC

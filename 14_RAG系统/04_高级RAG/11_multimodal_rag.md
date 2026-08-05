@@ -3,8 +3,8 @@ title: "多模态 × RAG: 当检索增强遇上图文音视频"
 category: -synthesis
 tags: ["multimodal", "rag", "vision-language", "retrieval", "embedding", "synthesis"]
 sources:
-  - "05_大模型/10_多模态模型/Native_Multimodal_Architectures"
-  - "05_大模型/10_多模态模型/Modality_Fusion_Mechanisms"
+  - "05_大模型/09_多模态模型/Native_Multimodal_Architectures"
+  - "05_大模型/09_多模态模型/Modality_Fusion_Mechanisms"
   - "14_RAG系统/04_高级RAG/RAG_Advanced_2026"
   - "14_RAG系统/Vector_Database_for_dummy"
 created: 2026-06-01
@@ -78,8 +78,8 @@ name_zh: "多模态 × RAG: 当检索增强遇上图文音视频"
 
 ## Related
 
-- [[05_大模型/10_多模态模型/07_Native_多模态_架构]]
-- [[05_大模型/10_多模态模型/05_Modality_Fusion_Mechanisms]]
+- [[05_大模型/09_多模态模型/07_Native_多模态_架构]]
+- [[05_大模型/09_多模态模型/05_Modality_Fusion_Mechanisms]]
 - [[14_RAG系统/04_高级RAG/12_RAG_高级_2026]]
 - [[14_RAG系统/03_向量数据库/05_rag_vector_database]]
 - [[概念/multimodal-vision]]

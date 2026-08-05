@@ -148,7 +148,7 @@ flowchart LR
 | **Token 粒度** | 影响模型学习难度 | 过细的切分需要更多层来组合语义 |
 | **Byte fallback** | 避免 UNK 但增加序列长度 | 罕见字符退化为 1-4 个 byte token |
 
-> **延伸阅读**: Tokenizer 的设计与模型整体架构紧密相关，详见 [LLM Architectures](05_大模型/05_LLM架构/05_LLM架构.md)。
+> **延伸阅读**: Tokenizer 的设计与模型整体架构紧密相关，详见 [LLM Architectures](05_大模型/04_LLM架构/05_LLM架构.md)。
 
 ---
 
@@ -1793,7 +1793,7 @@ for model_name in model_names:
 ---
 
 > **相关文档**:
-> - [LLM Architectures](05_大模型/05_LLM架构/05_LLM架构.md) - 模型架构详解
+> - [LLM Architectures](05_大模型/04_LLM架构/05_LLM架构.md) - 模型架构详解
 > - [GPT-3 Deep Dive](20_论文精读/03_规模扩展/02_GPT3_深入分析.md) - GPT-3 论文深度解读
 > - [LLaMA Deep Dive](20_论文精读/02_模型架构/04_LLaMA_深入分析.md) - LLaMA 系列论文深度解读
 

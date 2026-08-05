@@ -64,7 +64,7 @@ Phase 5 企业级实践（安全 + 部署 + 多云）
 - [Java 生态 AI 全景概览](01_数学基础/11_Java生态与AI/02_Java生态与AI_概览.md)（重点）
 
 **🔗 深入阅读**：
-- [LLM 架构（小白版）](05_大模型/05_LLM架构/LLM_Architectures_for_dummy.md)
+- [LLM 架构（小白版）](05_大模型/04_LLM架构/LLM_Architectures_for_dummy.md)
 - [RAG 系统入门](14_RAG系统/01_RAG基础/RAG_Systems_for_dummy.md)
 - [AI 系统架构全景图](12_架构基建/02_架构概览/03_AI_系统_架构_2026.md)
 

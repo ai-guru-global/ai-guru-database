@@ -122,7 +122,7 @@ name_zh: "里程碑自测"
 | Q1-Q2 | 阅读 [神经网络核心（小白版）](03_深度学习/02_神经网络核心/Neural_Network_Core_for_dummy.md) |
 | Q3 | 阅读 [序列模型（小白版）](05_大模型/02_序列模型/Sequence_Models_for_dummy.md) + [图像分类（小白版）](04_计算机视觉/02_图像分类与检测/Image_Classification_Detection_for_dummy.md) |
 | Q4-Q5 | 阅读 [Transformer 革命（小白版）](05_大模型/04_Transformer_Revolution/Transformer_Revolution_for_dummy.md) |
-| Q6-Q7 | 阅读 [LLM 架构（小白版）](05_大模型/05_LLM架构/LLM_Architectures_for_dummy.md) + [微调技术（小白版）](05_大模型/07_微调技术/Fine_tuning_Techniques_for_dummy.md) |
+| Q6-Q7 | 阅读 [LLM 架构（小白版）](05_大模型/04_LLM架构/LLM_Architectures_for_dummy.md) + [微调技术（小白版）](05_大模型/06_微调技术/Fine_tuning_Techniques_for_dummy.md) |
 | Q8 | 阅读 [生成模型（小白版）](04_计算机视觉/06_生成模型/Generative_Models_for_dummy.md) |
 
 ---
@@ -157,7 +157,7 @@ name_zh: "里程碑自测"
 | 问题 | 补救建议 |
 |------|---------|
 | Q1-Q2 | 阅读 [RAG 系统（小白版）](14_RAG系统/01_RAG基础/RAG_Systems_for_dummy.md) |
-| Q3 | 阅读 [提示词工程（小白版）](05_大模型/08_提示工程/Prompt_Engineering_for_dummy.md) |
+| Q3 | 阅读 [提示词工程（小白版）](05_大模型/07_提示工程/Prompt_Engineering_for_dummy.md) |
 | Q4 | 阅读 [AI Agent（小白版）](../../15_智能体/01_Agent基础/AI_Agents_for_dummy.md) |
 | Q5 | 阅读 [MLOps 流水线（小白版）](11_模型运维/01_MLOps基础/MLOps_Pipeline_for_dummy.md) |
 | Q6 | 阅读 [模型评估（小白版）](08_模型评估/01_评估基础/Model_Evaluation_for_dummy.md) |

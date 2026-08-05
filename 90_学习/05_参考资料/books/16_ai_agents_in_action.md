@@ -261,7 +261,7 @@ Action: reply(列出 5 个航班供用户选择)
 | Ch 1-2 Agent 基础 | Agent 定义/四大支柱 | [[15_智能体/01_Agent基础/16_AI_Agent]] | Agent 基础概念 |
 | Ch 3 工具调用 | Function Calling | [[15_智能体/01_Agent基础/Agent-in-nutshell]] | 工具调用机制 |
 | Ch 4 记忆 | 短期/长期记忆 | [[14_RAG系统/01_RAG基础/07_RAG_系统]] | 记忆即个性化 RAG |
-| Ch 5 ReAct | 规划模式 | [[05_大模型/08_提示工程/16_Prompt工程]] | ReAct 提示模式 |
+| Ch 5 ReAct | 规划模式 | [[05_大模型/07_提示工程/16_Prompt工程]] | ReAct 提示模式 |
 | Ch 7 多 Agent | CrewAI/AutoGen | [[90_学习/05_参考资料/books/13_build_multi_agent_system]] | 多 Agent 架构 |
 | Ch 8 护栏 | Guardrails | [[17_伦理安全/04_AI安全与红队]] | 安全与护栏 |
 | Ch 9 部署 | 可观测性 | [[10_部署推理/]] | 生产化部署 |
@@ -363,7 +363,7 @@ Action: reply(列出 5 个航班供用户选择)
 - [[90_学习/05_参考资料/books/13_build_multi_agent_system|Building Multi-Agent Systems]] — 多 Agent 架构进阶
 - [[90_学习/05_参考资料/books/15_ai_engineering_huyen|AI Engineering]] — Agent 在 AI 工程全景中的位置
 - [[15_智能体/01_Agent基础/16_AI_Agent]] — 知识库 Agent 基础
-- [[05_大模型/08_提示工程/16_Prompt工程]] — ReAct / Plan-and-Execute 提示模式
+- [[05_大模型/07_提示工程/16_Prompt工程]] — ReAct / Plan-and-Execute 提示模式
 - [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图 2026]] — Agent 在整体路线中的位置
 
 > **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[15_智能体/]] | [[工具/]] | [[14_RAG系统/]] | [[10_部署推理/]]

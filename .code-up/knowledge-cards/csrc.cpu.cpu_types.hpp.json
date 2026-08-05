@@ -1,0 +1,32 @@
+{
+  "id": "csrc.cpu.cpu_types.hpp",
+  "title": "Cpu Types",
+  "type": "file",
+  "summary": "File with 0 symbols",
+  "details": "File with 0 symbols",
+  "symbols": [],
+  "dependencies": {
+    "internal": [],
+    "external": [
+      "cpu_types_arm",
+      "cpu_types_vsx",
+      "cpu_types_vxe",
+      "cpu_types_x86"
+    ]
+  },
+  "metrics": {
+    "total_symbols": 0,
+    "public_symbols": 0,
+    "classes": 0,
+    "functions": 0,
+    "internal_deps": 0,
+    "external_deps": 4,
+    "depth": 0,
+    "complexity_sum": 0
+  },
+  "tags": [
+    "entry-point"
+  ],
+  "tier": "peripheral",
+  "file_path": "csrc/cpu/cpu_types.hpp"
+}

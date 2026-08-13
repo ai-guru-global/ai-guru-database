@@ -1,5 +1,7 @@
 ---
+
 name: wiki-import
+tags: [wiki, import, graph]
 description: >
   Import a wiki knowledge graph from a graph.json export file into the current vault.
   Use this skill when the user says "import wiki", "import from export", "load graph.json",

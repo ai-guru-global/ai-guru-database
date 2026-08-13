@@ -1,5 +1,7 @@
 ---
+
 name: wiki-export
+tags: [wiki, export, graph]
 description: >
   Export the Obsidian wiki's knowledge graph to structured formats for use in external tools.
   Use this skill when the user says "export wiki", "export graph", "export to JSON", "export to Gephi",

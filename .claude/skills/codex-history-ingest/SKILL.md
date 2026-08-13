@@ -1,5 +1,7 @@
 ---
+
 name: codex-history-ingest
+tags: [wiki, history-ingest, codex]
 description: >
   Ingest Codex CLI conversation history into the Obsidian wiki. Use this skill when the user wants to mine
   their past Codex sessions for knowledge, import their ~/.codex folder, extract insights from previous coding

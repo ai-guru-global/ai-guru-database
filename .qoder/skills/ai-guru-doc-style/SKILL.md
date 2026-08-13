@@ -1,6 +1,13 @@
+---
+name: ai-guru-doc-style
+tags: [wiki, documentation, style-guide]
+description: >
+  AI Guru 知识库文档编写规范技能。定义了全项目 2000+ Markdown 文件在结构、风格和用户体验上的一致性标准，包括文档类型模板、文件命名规范、中英文混排规则、交叉引用要求和质量检查清单。在创建或修改知识库中任何 Markdown 文档时使用此技能，确保输出符合项目规范。涵盖 8 种文档类型模板（章节 README、Nutshell 速览、For Dummy、核心内容、论文解读、行业应用、人物档案、面试准备）和通用格式规范。
+---
+
 # AI Guru 知识库文档规范
 
-本 skill 定义了 ai-guru-database 项目的文档编写规范，确保全项目 650+ Markdown 文件在结构、风格和用户体验上的一致性。
+本 skill 定义了 ai-guru-database 项目的文档编写规范，确保全项目 2000+ Markdown 文件在结构、风格和用户体验上的一致性。
 
 ## 核心原则
 
@@ -11,18 +18,19 @@
 
 ## 文档类型与模板
 
-详见 `模板/DOCUMENT_TEMPLATES.md`，包含 8 种文档类型的完整模板：
+详见 `../../../治理/Document_Templates.md`，包含 8 种文档类型的完整模板：
 
 | 类型 | 文件模式 | 目标字数 |
 |------|---------|---------|
-| 章节 README | `XX_Chapter/README.md` | 100-300 行 |
+| 章节 README | `XX_章节/README.md` | 100-300 行 |
+| 章节索引 | `XX_章节/INDEX.md` | 50-100 行 |
 | Nutshell 速览 | `*in-nutshell.md` | 500-800 行 |
 | For Dummy | `*for_dummy.md` | 300-500 行 |
-| 核心内容 | `*Deep_Dive.md` / `*_2026.md` | 800-1,500 行 |
-| 论文解读 | `22_Papers/*Deep_Dive.md` | 600-900 行 |
-| 行业应用 | `20_Industry/*AI_*_2026.md` | 500+ 行 |
-| 人物档案 | `21_Talks/*/about.md` | 50+ 行 |
-| 面试准备 | `23_Interviews/*/interview_preparing.md` | 30-50 行 |
+| 核心内容 | `XX_主题名.md`（数字前缀） | 800-1,500 行 |
+| 论文解读 | `20_论文精读/*Deep_Dive.md` | 600-900 行 |
+| 行业应用 | `18_行业应用/*AI_*_2026.md` | 500+ 行 |
+| 人物档案 | `19_业界观点/*/about.md` | 50+ 行 |
+| 面试准备 | `21_面试岗位/*/interview_preparing.md` | 30-50 行 |
 
 ## 通用格式规范
 
@@ -69,19 +77,26 @@
 | 命名模式 | 示例 |
 |---------|------|
 | 章节 README | `README.md` |
+| 章节索引 | `INDEX.md` |
 | 速览文件 | `ML-in-nutshell.md` |
 | 小白指南 | `RAG_Systems_for_dummy.md` |
+| 数字前缀文件 | `05_Transformer_大白话入门.md` |
 | 深度文档 | `LiteLLM_Deep_Dive.md` |
 | 年度趋势 | `AI_System_Architecture_2026.md` |
 
-**原则**：英文为主、大驼峰+下划线、子目录内文件与目录同名。
+**原则**：
+- 目录使用 `数字前缀_中文名`，如 `05_大模型/`、`15_智能体/`
+- 文件使用 `数字前缀_主题名.md`，如 `03_Transformer_Revolution.md`、`05_Transformer_大白话入门.md`
+- 专有名词保留英文原大小写（`PyTorch`、`Transformer`），通用概念可用中文
+- 子目录内必须有 `README.md`（导航入口）和 `INDEX.md`（索引）
+- 保留 `for_dummy`、`in-nutshell`、`Deep_Dive` 等后缀模式用于特殊文档类型
 
 ## 反模式（不要这样做）
 
 | 反模式 | 正确做法 |
 |--------|---------|
 | 孤岛文档（无内部链接） | 至少包含 2 个 `../` 交叉引用 |
-| 目录裸引用 `[章节](../XX_Chapter/)` | 指向具体文件 `[章节](../XX_Chapter/README.md)` |
+| 目录裸引用 `[章节](../XX_章节/)` | 指向具体文件 `[章节](../XX_章节/README.md)` |
 | for_dummy 比正常版还长 | for_dummy 应为正常版的 40-70% |
 | 术语轰炸 | 首次出现术语时加粗并简要解释 |
 | 有图无文 | 每个 mermaid 图下方加 1-2 句解释 |
@@ -102,38 +117,36 @@
 ## 项目结构速查
 
 ```
-00_AI_Introduction/    # AI 入门、历史、术语
-01_Fundamentals/       # 数学、算法、Java 生态
-02_Machine_Learning/   # 监督/无监督学习
-03_Deep_Learning/      # 神经网络、优化
-04_NLP_LLMs/           # Transformer、LLM、Prompt
-05_Computer_Vision/    # 图像分类、检测、生成
-06_Reinforcement_Learning/  # RL、Agent、机器人
-07_Model_Training/     # 分布式训练、微调、监控
-08_Model_Evaluation/   # 评估指标、A/B 测试
-09_Deployment_Inference/  # vLLM、ONNX、边缘部署
-10_MLOps_Pipeline/     # MLflow、特征存储
-11_RAG_Systems/        # 向量数据库、RAG 框架
-12_Architecture_Infrastructure/  # 系统架构、容量规划
-13_Agent_Production/   # Agent 框架、Harness、技能
-14_AI_Gateway/         # 网关、限流、安全
-15_Testing/            # AI 测试框架、RAGAS
-16_AI_Ops/             # 可观测性、混沌工程
-17_AI_Coding/          # AI 辅助编程
-18_Cloud_Ops_Agent/    # 云运维 Agent
-19_Ethics_Safety/      # AI 安全、隐私、对齐
-20_AI_Applications_Industry/  # 10 大行业应用
-21_Talks/              # AI 领袖演讲与观点
-22_Papers/             # 经典论文解读
-23_Interviews/         # 岗位面试准备
-90_Learn/              # 学习路径
-治理/notes/              # 知识图谱
-治理/plan/               # 项目规划与评估
-93_Templates/              # 工具与模板
-94_Visualization/      # 知识图谱可视化
+00_入门/           # AI 入门、历史、术语
+01_数学基础/       # 数学、算法、分布式系统
+02_机器学习/       # 监督/无监督学习
+03_深度学习/       # 神经网络、优化
+04_计算机视觉/     # 图像分类、检测、生成
+05_大模型/         # Transformer、LLM、Prompt
+06_强化学习/       # RL、Agent、机器人
+07_模型训练/       # 分布式训练、微调、监控
+08_模型评估/       # 评估指标、A/B 测试
+09_测试/           # AI 测试框架、RAGAS
+10_部署推理/       # vLLM、ONNX、边缘部署
+11_模型运维/       # MLflow、特征存储、MLOps
+12_架构基建/       # 系统架构、容量规划
+13_运维/           # 可观测性、混沌工程
+14_RAG系统/        # 向量数据库、RAG 框架
+15_智能体/         # Agent 框架、Harness、技能
+16_编程/           # AI 辅助编程
+17_伦理安全/       # AI 安全、隐私、对齐
+18_行业应用/       # 10+ 行业应用
+19_业界观点/       # AI 领袖演讲与观点
+20_论文精读/       # 经典论文解读
+21_面试岗位/       # 岗位面试准备
+22-FDE/            # 全栈工程实践
+90_学习/           # 学习路径
+94_可视化/         # 知识图谱可视化
+治理/              # 项目治理、文档模板、评估报告
+工具/              # 自动化脚本与工具
 ```
 
 ## 关联文档
 
-- [完整模板文档](../../模板/DOCUMENT_TEMPLATES.md) — 含 8 种模板、反模式清单、自动化检查脚本
-- [项目结构评估报告](../../治理/plan/Project_Structure_Evaluation_2026.md)
+- [完整模板文档](../../../治理/Document_Templates.md) — 含 8 种模板、反模式清单、自动化检查脚本
+- [项目结构评估报告](../../../治理/Project_Structure_Evaluation_2026.md)

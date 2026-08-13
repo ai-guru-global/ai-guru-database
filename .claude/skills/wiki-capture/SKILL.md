@@ -1,5 +1,7 @@
 ---
+
 name: wiki-capture
+tags: [wiki, ingestion, conversation]
 description: >
   Save the current conversation as a permanent, structured wiki note. Use this skill when the user
   says "save this", "/wiki-capture", "capture this", "file this conversation", "preserve this",

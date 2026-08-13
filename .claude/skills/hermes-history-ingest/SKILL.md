@@ -1,5 +1,7 @@
 ---
+
 name: hermes-history-ingest
+tags: [wiki, history-ingest, hermes]
 description: >
   Ingest Hermes agent history into the Obsidian wiki. Use this skill when the user wants to mine
   their past Hermes sessions for knowledge, import their ~/.hermes folder, extract insights from

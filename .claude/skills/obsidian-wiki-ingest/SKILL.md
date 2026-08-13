@@ -1,5 +1,7 @@
 ---
+
 name: obsidian-wiki-ingest
+tags: [wiki, ingestion, obsidian]
 description: >
   Automates ingestion of documents into the Obsidian wiki (obsidian-wiki) using the wiki-ingest pipeline. Handles deduplication via manifest, frontmatter, and cross-links; triggers on user request within the obsidian-wiki project context.
 ---

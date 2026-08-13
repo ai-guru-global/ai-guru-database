@@ -1,5 +1,7 @@
 ---
+
 name: wiki-rebuild
+tags: [wiki, rebuild, archive]
 description: >
   Archive existing wiki knowledge and rebuild from scratch, or restore from a previous archive.
   Use this skill when the user wants to start fresh, rebuild the wiki from all sources, archive current

@@ -1,5 +1,7 @@
 ---
+
 name: openclaw-history-ingest
+tags: [wiki, history-ingest, openclaw]
 description: >
   Ingest OpenClaw agent history into the Obsidian wiki. Use this skill when the user wants to mine
   their past OpenClaw sessions for knowledge, import their ~/.openclaw folder, extract insights from

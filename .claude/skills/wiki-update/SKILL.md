@@ -1,5 +1,7 @@
 ---
+
 name: wiki-update
+tags: [wiki, sync, update]
 description: >
   Sync the current project's knowledge into the Obsidian wiki. Use this skill from any project
   when the user says "update wiki", "sync to wiki", "save this to my wiki", "update obsidian",

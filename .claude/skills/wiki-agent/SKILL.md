@@ -1,5 +1,7 @@
 ---
+
 name: wiki-agent
+tags: [wiki, ingestion, history]
 description: >
   Query-driven targeted ingest from a specific AI agent's raw history. Use this skill when the user
   invokes /wiki-claude, /wiki-codex, /wiki-hermes, /wiki-openclaw, /wiki-copilot, /wiki-pi — with or without a

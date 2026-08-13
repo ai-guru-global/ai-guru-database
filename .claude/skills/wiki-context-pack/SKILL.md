@@ -1,5 +1,7 @@
 ---
+
 name: wiki-context-pack
+tags: [wiki, context, export]
 description: >
   Produce a token-bounded context pack from the Obsidian wiki — a compact, structured slice of the most
   relevant pages for a topic or recent activity, designed for downstream consumption by another agent or skill.

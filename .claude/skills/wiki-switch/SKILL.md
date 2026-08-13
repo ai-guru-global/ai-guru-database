@@ -1,5 +1,7 @@
 ---
+
 name: wiki-switch
+tags: [wiki, vault, switching]
 description: >
   Switch between multiple Obsidian wiki vault profiles. Use this skill when the user says
   "/wiki-switch NAME", "switch to my work wiki", "switch vault", "change wiki", "which wiki am I on",

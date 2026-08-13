@@ -1,5 +1,7 @@
 ---
+
 name: daily-update
+tags: [wiki, maintenance, automation]
 description: >
   Run the daily wiki maintenance cycle: check all source freshness, update the index, and regenerate hot.md.
   Use this skill when the user says "/daily-update", "run the daily update", "update everything", "morning sync",

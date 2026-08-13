@@ -1,5 +1,7 @@
 ---
+
 name: wiki-dashboard
+tags: [wiki, visualization, dataview]
 description: >
   Create dynamic, queryable dashboard views of the Obsidian vault using Obsidian Bases or Dataview.
   Use this skill when the user says "create a dashboard", "vault dashboard", "show all X as a table",

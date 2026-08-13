@@ -1,5 +1,7 @@
 ---
+
 name: cross-linker
+tags: [wiki, link-maintenance, wikilinks]
 description: >
   Scan the Obsidian wiki and automatically discover missing cross-references between pages.
   Use this skill when the user says "link my pages", "find missing links", "cross-reference",

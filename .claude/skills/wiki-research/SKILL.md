@@ -1,5 +1,7 @@
 ---
+
 name: wiki-research
+tags: [wiki, research, web-search]
 description: >
   Autonomously research a topic via multi-round web search, synthesize findings, and file structured
   results into the Obsidian wiki. Use this skill when the user says "/wiki-research [topic]",

@@ -1,5 +1,7 @@
 ---
+
 name: wiki-stage-commit
+tags: [wiki, staging, review]
 description: >
   Review and promote staged wiki pages to their final locations. Use when WIKI_STAGED_WRITES=true
   and the user says "/wiki-stage-commit", "review staged pages", "commit staged writes",

@@ -1,5 +1,7 @@
 ---
+
 name: wiki-digest
+tags: [wiki, digest, reporting]
 description: >
   Generate a periodic knowledge digest — a human-readable newsletter-style summary of what was
   learned, updated, and connected in your wiki over a specified period (day/week/month). Use when

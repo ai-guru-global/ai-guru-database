@@ -1,5 +1,7 @@
 ---
+
 name: claude-history-ingest
+tags: [wiki, history-ingest, claude]
 description: >
   Ingest Claude Code conversation history into the Obsidian wiki. Use this skill when the user wants to mine
   their past Claude conversations for knowledge, import their ~/.claude folder, extract insights from

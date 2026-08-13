@@ -1,5 +1,7 @@
 ---
+
 name: wiki-status
+tags: [wiki, status, monitoring]
 description: >
   Show the current state of the wiki — what's been ingested, what's pending, and the delta between sources
   and wiki content. Use this skill when the user asks "what's the status", "how much is ingested",

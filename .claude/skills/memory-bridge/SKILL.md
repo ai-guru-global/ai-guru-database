@@ -1,5 +1,7 @@
 ---
+
 name: memory-bridge
+tags: [wiki, query, cross-tool]
 description: >
   Browse and compare wiki knowledge by which AI tool originally produced it. Use this skill when the user
   says "/memory-bridge", "browse codex memory", "what did codex know about X", "show me claude knowledge",

@@ -1,5 +1,7 @@
 ---
+
 name: wiki-quick-chat-capture
+tags: [wiki, capture, staging]
 description: >
   Fast, zero-friction capture of technical findings from the current conversation to the wiki's
   原始/ staging area. Use this skill when the user says "/wiki-quick-chat-capture", "quick capture",

@@ -1,5 +1,7 @@
 ---
+
 name: pi-history-ingest
+tags: [wiki, history-ingest, pi]
 description: >
   Ingest Pi coding agent session history into the Obsidian wiki. Use this skill when the user wants to mine
   their past Pi sessions for knowledge, import their ~/.pi/agent/sessions folder, extract insights from
@@ -239,10 +241,6 @@ Update `index.md` and `log.md`:
 - Default to redaction for anything that looks sensitive
 - Ask the user before storing personal or sensitive details
 - Keep references to other people minimal and purpose-bound
-
-## Reference
-
-See `references/pi-data-format.md` for field-level parsing notes and extraction guidance.
 
 ## QMD Refresh After Vault Writes
 

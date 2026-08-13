@@ -1,5 +1,7 @@
 ---
+
 name: wiki-history-ingest
+tags: [wiki, history-ingest, router]
 description: >
   Unified wiki-history-ingest entrypoint for conversation/session sources. Use this when the user says
   "/wiki-history-ingest claude", "/wiki-history-ingest copilot", "/wiki-history-ingest codex",
@@ -43,6 +45,24 @@ If the user invokes `/wiki-history-ingest <target>` (or equivalent text command)
 - After routing, execute the destination skill's workflow exactly.
 - Do not duplicate destination logic in this file.
 - Leave manifest/index/log update semantics to the destination skill.
+
+## Design Decision: Why 6 Separate Skills (Not One Parametrized Skill)
+
+Each source skill stays separate on purpose — this is **not** accidental duplication:
+
+1. **Progressive disclosure** — merged body would exceed the ~1500-2000 line / 5000-token guidance
+   for a single SKILL.md. Separation keeps each skill under the 500-line budget.
+2. **Source-specific data formats** — `~/.claude/` audit logs, `~/.copilot/session-store.db`
+   (SQLite), Codex rollout JSONL, Hermes memories, OpenClaw MEMORY.md, and Pi message-role
+   schemas each need dedicated extraction rules and privacy filters. Co-locating them would
+   bloat every activation with irrelevant parsing details.
+3. **Trigger precision** — the catalog (Tier 1) shows 6 precise descriptions instead of one
+   generic "ingest agent history", so the model activates exactly the right parser.
+4. **Independent evolution** — formats change per tool; each skill can be updated in isolation
+   without touching the other five.
+
+This router is the single entry point; the specialized skills are the implementation layer.
+Revisit this decision only if a source's parser drops below ~100 lines of unique logic.
 
 ## UX Convention
 

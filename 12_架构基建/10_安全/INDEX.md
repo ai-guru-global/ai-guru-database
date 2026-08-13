@@ -21,6 +21,8 @@ name_en: "Security"
 |------|------|----------|
 | [[12_架构基建/10_安全/01_AI_安全_基础|AI Security Fundamentals]] | AI security fundamentals: threat model, attack surface and defense strategy | security engineers / DevSecOps |
 | [[12_架构基建/10_安全/Container_and_Supply_Chain_Security_for_AI|Container and Supply Chain Security for AI]] | Container and supply chain security: image scanning, SBOM and signature verification | DevSecOps engineers / platform security |
+| [[12_架构基建/10_安全/03_AI_供应链_CVE_for_AI|AI 供应链 CVE 速查]] | AI 供应链 CVE 速查：Pickle/HuggingFace/PyTorch/TensorFlow/NVIDIA 容器逃逸/模型投毒 | AI 平台 / 安全工程 |
+| [[12_架构基建/10_安全/04_向量数据库_CVE_for_AI|向量数据库 CVE 速查]] | 向量数据库 CVE 速查：Milvus/Qdrant/Weaviate/Chroma/pgvector | RAG 系统 / 安全工程 |
 
 ## Related
 

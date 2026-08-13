@@ -1,5 +1,7 @@
 ---
+
 name: data-ingest
+tags: [wiki, ingestion, data-processing]
 description: >
   Ingest any raw text data, conversation logs, chat exports, or unstructured documents into the Obsidian wiki.
   Use this skill when the user wants to process data that isn't standard documents or Claude history —

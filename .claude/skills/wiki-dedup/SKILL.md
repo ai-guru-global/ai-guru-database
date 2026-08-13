@@ -1,5 +1,7 @@
 ---
+
 name: wiki-dedup
+tags: [wiki, maintenance, deduplication]
 description: >
   Scan the Obsidian wiki for page-level identity collisions — different pages covering the same
   concept under different names (e.g. "RSC" vs "React Server Components") — and merge them.

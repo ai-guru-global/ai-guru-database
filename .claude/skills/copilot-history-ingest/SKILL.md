@@ -1,5 +1,7 @@
 ---
+
 name: copilot-history-ingest
+tags: [wiki, history-ingest, copilot]
 description: >
   Ingest GitHub Copilot CLI session history into an Obsidian wiki as distilled knowledge pages. Use this skill
   when the user wants to capture their Copilot CLI sessions into a personal wiki — extracting architecture

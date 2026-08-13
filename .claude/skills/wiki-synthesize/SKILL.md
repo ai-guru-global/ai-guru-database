@@ -1,5 +1,7 @@
 ---
+
 name: wiki-synthesize
+tags: [wiki, synthesis, knowledge-graph]
 description: >
   Systematically discover synthesis opportunities across the Obsidian wiki — pairs or clusters of
   concepts that co-occur frequently across pages but have no synthesis page connecting them. Creates

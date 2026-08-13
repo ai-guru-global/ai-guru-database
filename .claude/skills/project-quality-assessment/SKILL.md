@@ -1,5 +1,7 @@
 ---
+
 name: project-quality-assessment
+tags: [quality-assurance, assessment, knowledge-base]
 description: >
   Comprehensive quality assessment for knowledge base projects. Evaluates content completeness,
   identifies gaps, assesses documentation quality, and provides actionable improvement recommendations.

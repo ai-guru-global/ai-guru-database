@@ -1,5 +1,7 @@
 ---
+
 name: ingest-url
+tags: [wiki, ingestion, web]
 description: >
   Fetch a URL and distill its content into the Obsidian wiki. If invoked from inside a project
   directory, the page lands directly in that project's folder (creating the project in the vault

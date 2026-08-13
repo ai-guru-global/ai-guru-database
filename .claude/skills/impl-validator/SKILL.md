@@ -1,5 +1,7 @@
 ---
+
 name: impl-validator
+tags: [quality-assurance, validation, meta]
 description: >
   Validate whether an implementation matches its stated goal. Use this skill when a skill or agent wants
   a second opinion on its own output, when the user says "check this implementation", "validate what you did",

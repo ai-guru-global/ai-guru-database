@@ -1,5 +1,7 @@
 ---
+
 name: llm-wiki
+tags: [wiki, architecture, distillation]
 description: >
   The foundational knowledge distillation pattern for building and maintaining an AI-powered Obsidian wiki.
   Based on Andrej Karpathy's LLM Wiki architecture. Use this skill whenever the user wants to understand the

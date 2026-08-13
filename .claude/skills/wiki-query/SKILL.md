@@ -1,5 +1,7 @@
 ---
+
 name: wiki-query
+tags: [wiki, query, search]
 description: >
   Answer questions by searching the compiled Obsidian wiki. Use this skill when the user asks a question
   about their knowledge base, wants to find information across their wiki, asks "what do I know about X",

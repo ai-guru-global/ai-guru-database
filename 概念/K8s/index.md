@@ -135,6 +135,42 @@ name_en: "K8s"
 - [[opa]] — 通用策略引擎 (Rego)
 - [[cert-manager]] — TLS 证书管理
 
+### K8s 官方 CVE 漏洞速查
+
+- [[kubernetes-cve-history]] — K8s 控制面核心组件（apiserver/kubelet/etcd）历年 CVE
+- [[runc-cve-history]] — runc 容器运行时 CVE（含 CVE-2019-5736 / CVE-2024-21626 容器逃逸）
+- [[ingress-nginx-cve-history]] — ingress-nginx CVE（AI 推理入口最常见攻击面）
+- [[coredns-etcd-cve]] — etcd 数据层 + CoreDNS DNS 层 CVE
+- [[cni-cve-history]] — CNI 插件（Cilium/Calico/Flannel）CVE + HTTP/2 Rapid Reset
+- [[istio-envoy-cve-history]] — 服务网格（Istio/Envoy）CVE
+- [[containerd-cve-history]] — containerd 容器运行时 CVE（与 runc 联动）
+- [[gpu-operator-cve-history]] — GPU Operator / NVIDIA Device Plugin / DRA CVE（AI 集群核心）
+- [[harbor-cve-history]] — Harbor 镜像仓库 CVE（AI 模型仓库基础）
+- [[gitops-cve-history]] — Argo CD / Flux GitOps CVE（集群写权限代理）
+- [[kubeflow-argo-cve-history]] — Kubeflow / Argo Workflows ML 工作流 CVE
+- [[vault-cve-history]] — HashiCorp Vault CVE（AI 集群密钥库）
+- [[message-broker-cve-history]] — NATS / Kafka / Redis / RabbitMQ CVE（消息/缓存层）
+- [[observability-cve-history]] — Prometheus / Grafana / Loki / Tempo CVE（可观测性）
+- [[operator-framework-cve-history]] — Operator Framework / OLM CVE（Operator 化部署）
+- [[ray-cve-history]] — Ray / KubeRay CVE（分布式训练框架）
+- [[mlflow-wandb-cve-history]] — MLflow / W&B CVE（实验追踪 / 模型注册）
+- [[serverless-cve-history]] — Knative / KEDA / OpenFaaS CVE（Serverless 弹性伸缩）
+- [[ml-orchestration-cve-history]] — Airflow / Prefect / Dagster CVE（ML 工作流编排）
+- [[helm-cve-history]] — Helm / Helmfile / Kustomize / ChartMuseum CVE（包管理）
+- [[dapr-cve-history]] — Dapr CVE（分布式应用运行时）
+- [[ebpf-cve-history]] — Tetragon / Pixie / Inspektor Gadget CVE（eBPF 安全）
+- [[feature-store-cve-history]] — Feast / Tecton / Hopsworks CVE（特征存储）
+- [[triton-cve-history]] — NVIDIA Triton Inference Server CVE（详细）
+- [[llm-inference-cve-history]] — vLLM / TGI / SGLang / llama.cpp / DeepSpeed CVE（大模型推理）
+- [[k8s-subproject-cve-history]] — kops / kubespray / kubeadm / kubectl CVE（K8s 子项目）
+- [[llm-training-cve-history]] — NeMo / Megatron-LM / DeepSpeed / FSDP CVE（大模型训练）
+- [[data-processing-cve-history]] — Beam / Spark / Flink / Kafka Connect / Trino CVE（数据处理）
+- [[storage-cve-history]] — Ceph / Rook / MinIO / OpenEBS / Longhorn CVE（存储层）
+- [[auth-cve-history]] — Keycloak / OAuth2 Proxy / Dex / Authelia CVE（认证与身份）
+- [[cert-manager-cve-history]] — cert-manager / certbot / Let's Encrypt CVE（证书管理）
+- [[api-gateway-cve-history]] — Kong / Ambassador / Tyk / APISIX CVE（API 网关）
+- [[extension-cve-history]] — ClusterAPI / ExternalDNS / KEDA / Ceph-CSI CVE（K8s 扩展组件）
+
 ### CLI 工具
 
 - [[nerdctl]] — containerd CLI

@@ -1,5 +1,7 @@
 ---
+
 name: graph-colorize
+tags: [wiki, visualization, obsidian]
 description: >
   Color-code the Obsidian graph view by rewriting `.obsidian/graph.json` colorGroups.
   Use this skill when the user says "color my graph", "color code obsidian", "colorize

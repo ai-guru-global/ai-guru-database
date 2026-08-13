@@ -1,5 +1,7 @@
 ---
+
 name: wiki-setup
+tags: [wiki, setup, bootstrap]
 description: >
   Initialize a new Obsidian wiki vault with the correct structure, special files, and configuration.
   Use this skill when the user wants to set up a new wiki from scratch, initialize the vault structure,

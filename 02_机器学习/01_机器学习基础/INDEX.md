@@ -18,7 +18,7 @@ name_en: "ML Fundamentals"
 | 文件 | 说明 |
 |------|------|
 | [[02_机器学习/01_机器学习基础/ApacheCN_Machine_Learning_Track|ApacheCN 机器学习（机器学习实战）主线]] | ApacheCN 机器学习实战主线概览：docs/ml/ 下 16 章，覆盖 KNN、决策树、SVM、集成方法、聚类、关联规则、PCA/SVD 与推荐系统。 |
-| [[02_机器学习/01_机器学习基础/Federated_Learning_ML_Perspective|联邦学习 (ML算法视角)]] | 从ML算法视角深入联邦学习：FedAvg/FedProx/SCAFFOLD的完整数学推导，通信效率压缩方法，Non-IID异构性挑战与解决方案，差分隐私与... |
+| [[02_机器学习/README.md|联邦学习 (ML算法视角)]] | 从ML算法视角深入联邦学习：FedAvg/FedProx/SCAFFOLD的完整数学推导，通信效率压缩方法，Non-IID异构性挑战与解决方案，差分隐私与... |
 | [[02_机器学习/01_机器学习基础/03_Foundation_模型_ML_Paradigm|基础模型作为ML范式转变]] | 从task-specific模型到Foundation Model的范式转变，涵盖预训练+微调范式、In-Context Learning、Scaling... |
 | [[02_机器学习/01_机器学习基础/05_Kaggle_概览|Kaggle 数据科学竞赛平台概览]] | Google 旗下数据科学竞赛平台,提供海量数据集、免费 GPU Notebook 和百万级社区,是 ML 实战练习和求职作品集的首选平台。 |
 | [[02_机器学习/01_机器学习基础/ML-in-nutshell|机器学习速成指南]] | 机器学习就是让计算机从数据中找到规律，然后用这些规律对新数据做出预测或决策，而无需显式编程。 |

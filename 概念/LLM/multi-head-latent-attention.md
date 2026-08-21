@@ -176,7 +176,7 @@ MLA 的压缩效果可与 FP8 量化、前缀缓存等技术叠加：
 - [[概念/model-deployment]] — 模型部署（KV Cache/PagedAttention）
 - [[概念/llm-infrastructure]] — LLM 基础设施
 - [[概念/grouped-query-attention]] — GQA（Grouped-Query Attention）
-- [[10_部署推理/03_推理优化/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[10_部署推理/README.md|推理性能术语大白话解释]]
 - [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — 阿里云 AI Stack（含 MLA 通用技术背景）
 
 ---

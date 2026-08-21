@@ -19,8 +19,8 @@ name_en: "Feature Engineering"
 | 文件 | 说明 |
 |------|------|
 | [[02_机器学习/05_特征工程/01_特征工程|特征工程]] | 核心方法论与实践指南 |
-| [[02_机器学习/05_特征工程/Feature_Engineering_for_dummy|入门版]] | 零基础特征工程入门 |
-| [[02_机器学习/05_特征工程/Data_Preprocessing_for_dummy|数据预处理]] | 数据清洗与预处理入门 |
+| [[02_机器学习/README.md|入门版]] | 零基础特征工程入门 |
+| [[02_机器学习/README.md|数据预处理]] | 数据清洗与预处理入门 |
 | [[11_模型运维/03_特征存储/Feature_Store_Fundamentals|特征存储]] | 特征平台工程化 |
 
 ## Related

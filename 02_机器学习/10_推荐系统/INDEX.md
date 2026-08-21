@@ -20,12 +20,12 @@ name_en: "Recommendation Systems"
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[02_机器学习/10_推荐系统/Recommendation_Systems|Recommendation Systems]] | Recommendation system knowledge: recall, ranking, re-ranking and multi-objective optimization | ML engineers / recommendation system developers |
-| [[02_机器学习/10_推荐系统/Recommendation_Systems_for_dummy|Recommendation Systems for dummy]] | Recommendation systems beginner guide: from matrix factorization to two-tower models | beginners / ML learners |
+| [[02_机器学习/README.md|Recommendation Systems for dummy]] | Recommendation systems beginner guide: from matrix factorization to two-tower models | beginners / ML learners |
 
 ## Related
 
 - [[02_机器学习/04_集成学习/index|Ensemble Learning]]
-- [[18_行业应用/08_零售电商/Retail_Ecommerce_index|Retail & E-commerce]]
+- [[18_行业应用/README.md|Retail & E-commerce]]
 - [[05_大模型/02_序列模型/index|Sequence Models]]
 
 ## 专题深度解析

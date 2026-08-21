@@ -100,9 +100,9 @@ name_zh: "01 基础理论"
 
 ### 数学核心
 - [[01_数学基础/02_线性代数/03_线性代数]] — 线性代数
-- [[01_数学基础/02_线性代数/Linear_Algebra_for_dummy]] — 线性代数入门
+- [[01_数学基础/README.md]] — 线性代数入门
 - [[01_数学基础/03_概率统计/02_概率统计]] — 概率论与统计
-- [[01_数学基础/03_概率统计/Probability_Statistics_for_dummy]] — 概率统计入门
+- [[01_数学基础/README.md]] — 概率统计入门
 - [[01_数学基础/01_数学基础/Calculus_Optimization]] — 微积分与优化
 - [[01_数学基础/04_信息论/Information_Theory_Fundamentals]] — 信息论基础
 - [[01_数学基础/Fundamentals-in-nutshell]] — AI 基础速成指南
@@ -110,7 +110,7 @@ name_zh: "01 基础理论"
 ### 工程基础
 - [[01_数学基础/10_AI硬件/01_AI硬件_2026]] — AI 硬件 2026 全景
 - [[15_智能体/06_记忆基础设施/05_synthesis_memory_systems]] — 分布式系统
-- [[01_数学基础/09_分布式系统/Distributed_Systems_for_dummy]] — 分布式系统入门
+- [[01_数学基础/README.md]] — 分布式系统入门
 - [[01_数学基础/10_AI硬件/05_GPU_Programming_CUDA_基础|CUDA_Basics]] — GPU/CUDA 编程
 - [[01_数学基础/11_Java生态与AI/02_Java生态与AI_概览]] — Java AI 生态概览
 - [[01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析]] — Spring AI 深度解析

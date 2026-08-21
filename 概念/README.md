@@ -2,7 +2,7 @@
 title: 概念卡片索引 (Concept Cards Index)
 category: -concepts
 tags: [concepts, knowledge-graph, index]
-summary: 584 张 AI 概念卡片，覆盖 AI 全栈核心概念，按 12 个子域组织，与主章节通过 sources 字段关联。
+summary: 700+ 张 AI 概念卡片，覆盖 AI 全栈核心概念，按 12 个子域组织，与主章节通过 sources 字段关联。
 created: 2026-06-03
 updated: 2026-07-10
 tier: core
@@ -237,7 +237,7 @@ name_zh: "概念卡片索引"
 | [reward-model](概念/Training/reward-model.md) | 07_Model_Training | 奖励模型 (RLHF/GRPO 偏好评估) |
 | [dify](概念/RAG/dify.md) | 11_RAG_Systems | Dify 开源 LLM 应用平台 |
 | [ragflow](概念/RAG/ragflow.md) | 11_RAG_Systems | RAGFlow 深度文档理解 RAG 引擎 |
-| [llama-index](概念/LLM/llama-索引.md) | 11_RAG_Systems | LlamaIndex 数据框架 (索引/查询) |
+| [llama-index](概念/LLM/ollama.md) | 11_RAG_Systems | LlamaIndex 数据框架 (索引/查询) |
 | [medusa](概念/LLM/medusa.md) | 09_Deployment_Inference | Medusa 多头推测解码 |
 | [simpo](概念/Training/simpo.md) | 07_Model_Training | SimPO 简化偏好优化 (无参考模型) |
 | [qlora](概念/Training/qlora.md) | 07_Model_Training | QLoRA 4-bit 量化 LoRA 微调 |
@@ -275,6 +275,7 @@ name_zh: "概念卡片索引"
 | [flash-attn](概念/Inference/flash-attn.md) | 03_Deep_Learning | Flash Attention 高效注意力内核 |
 | [guardrails-ai](概念/K8s/guardrails-ai.md) | 19_Ethics_Safety | Guardrails AI 安全防护框架 |
 | [presidio](概念/Safety/presidio.md) | 19_Ethics_Safety | Microsoft Presidio PII 检测与脱敏 |
+| [recursive-self-improvement](概念/Safety/recursive-self-improvement.md) | 19_Ethics_Safety | RSI 递归自我改进、智能爆炸、Seed AI |
 | [sglang-frontend](概念/Inference/sglang-frontend.md) | 09_Deployment_Inference | SGLang API 服务层 |
 | [vllm-tp-attention](概念/LLM/vllm-tp-attention.md) | 09_Deployment_Inference | vLLM 张量并行注意力机制 |
 | [detect-secrets](概念/K8s/detect-secrets.md) | 19_Ethics_Safety | Yelp detect-secrets 密钥泄露检测 |
@@ -398,7 +399,7 @@ tier: core | supporting
 
 ## 统计
 
-- **总数**: 584 张概念卡片(2026-07-23 更新:基础 14 张 + 查漏 8 张 = 新增 22 张,移动 4 张至正确子域)（12 个子域）
+- **总数**: 700+ 张概念卡片(2026-07-23 更新:基础 14 张 + 查漏 8 张 = 新增 22 张,移动 4 张至正确子域;2026-08-17 新增 RSI 1 张)（12 个子域）
 - **平均大小**: ~6.2 KB
 - **覆盖章节**: 00-19 全部 20 个主章节
 - **关系类型**: related_to、prerequisite、builds_on
@@ -419,7 +420,7 @@ tier: core | supporting
 | **MLOps** | 23 | ML 运维、CI/CD、监控 |
 | **Math** | 18 | 数学基础、优化理论 |
 | **Vision** | 24 | 计算机视觉、多模态 |
-| **Safety** | 20 | AI 安全、对齐、伦理 |
+| **Safety** | 26 | AI 安全、对齐、伦理、治理 |
 
 ## 相关页面
 

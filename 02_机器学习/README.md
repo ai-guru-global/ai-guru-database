@@ -65,12 +65,12 @@ name_zh: "02 经典机器学习"
 
 | 主题 | 文档链接 |
 |------|---------|
-| 集成学习入门 | [Ensemble_Learning_for_dummy.md](./04_集成学习/Ensemble_Learning_for_dummy.md) |
-| 时间序列入门 | [Time_Series_for_dummy.md](./09_时间序列/Time_Series_for_dummy.md) |
-| 异常检测入门 | [Anomaly_Detection_for_dummy.md](./08_异常检测/Anomaly_Detection_for_dummy.md) |
-| 推荐系统入门 | [Recommendation_Systems_for_dummy.md](./10_推荐系统/Recommendation_Systems_for_dummy.md) |
-| AutoML 入门 | [AutoML_for_dummy.md](./11_自动机器学习/AutoML_for_dummy.md) |
-| **数据预处理入门** | [Data_Preprocessing_for_dummy.md](./05_特征工程/Data_Preprocessing_for_dummy.md) |
+| 集成学习入门 | Ensemble_Learning_for_dummy.md |
+| 时间序列入门 | Time_Series_for_dummy.md |
+| 异常检测入门 | Anomaly_Detection_for_dummy.md |
+| 推荐系统入门 | Recommendation_Systems_for_dummy.md |
+| AutoML 入门 | AutoML_for_dummy.md |
+| **数据预处理入门** | Data_Preprocessing_for_dummy.md |
 | **第一个 ML 模型** | [04_Your_First_ML_模型.md](./02_监督学习/04_Your_First_ML_模型.md) |
 | **EDA 快速入门** | [01_EDA_快速入门.md](./02_监督学习/01_EDA_快速入门.md) |
 
@@ -101,21 +101,21 @@ name_zh: "02 经典机器学习"
 
 - [[02_机器学习/04_集成学习/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: machine-learning, ml, supervised, unsupervised)
 - [[02_机器学习/05_特征工程/01_特征工程]] — 特征工程 (Feature Engineering) (共享: machine-learning, ml, supervised, unsupervised)
-- [[02_机器学习/05_特征工程/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_机器学习/README.md]] — 特征工程 - 小白版 (共享: machine-learning, ml, supervised, unsupervised)
 - [[02_机器学习/ML-in-nutshell]] — 机器学习速成指南 (共享: machine-learning, ml, supervised, unsupervised)
 - [[02_机器学习/08_异常检测/02_anomaly_detection_automl]] — Anomaly_Detection_for_dummy
 - [[02_机器学习/08_异常检测/02_anomaly_detection_automl]] — Anomaly_Detection
 - [[02_机器学习/10_推荐系统/Recommendation_Systems]] — Recommendation_Systems
-- [[02_机器学习/10_推荐系统/Recommendation_Systems_for_dummy]] — Recommendation_Systems_for_dummy
+- [[02_机器学习/README.md]] — Recommendation_Systems_for_dummy
 - [[02_机器学习/11_自动机器学习/01_AutoML]] — AutoML
 - [[02_机器学习/11_自动机器学习/01_AutoML]] — AutoML_for_dummy
 - [[02_机器学习/03_无监督学习/Unsupervised_Learning]] — Unsupervised_Learning
-- [[02_机器学习/03_无监督学习/Unsupervised_Learning_for_dummy]] — 无监督学习 - 小白版
-- [[02_机器学习/09_时间序列/Time_Series_for_dummy]] — Time_Series_for_dummy
+- [[02_机器学习/README.md]] — 无监督学习 - 小白版
+- [[02_机器学习/README.md]] — Time_Series_for_dummy
 - [[02_机器学习/09_时间序列/Time_Series_Analysis]] — 时间序列分析 (Time Series Analysis) - 完全指南
-- [[02_机器学习/02_监督学习/Supervised_Learning_for_dummy]] — Supervised_Learning_for_dummy
+- [[02_机器学习/README.md]] — Supervised_Learning_for_dummy
 - [[02_机器学习/02_监督学习/Supervised_Learning]] — Supervised_Learning
-- [[02_机器学习/04_集成学习/Ensemble_Learning_for_dummy]] — Ensemble_Learning_for_dummy
+- [[02_机器学习/README.md]] — Ensemble_Learning_for_dummy
 - [[02_机器学习/README|README_for_dummy]]
 - [[概念/Math/feature-engineering.md|feature-engineering]]
 

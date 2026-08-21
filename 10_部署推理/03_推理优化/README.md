@@ -33,63 +33,63 @@ name_zh: "推理优化"
 
 | 序号 | 文档 | 主题 | 适用读者 |
 |------|------|------|----------|
-| 01 | [[10_部署推理/03_推理优化/01_推理性能_基础\|推理性能基础]] | TTFT/TPOT/吞吐指标、Roofline 瓶颈分析、优化决策树 | 所有从业者 |
-| 02 | [[10_部署推理/03_推理优化/02_LLM推理_深入分析\|LLM 推理深度剖析]] | 解码策略、KV 缓存、GQA/MLA、FlashAttention、服务引擎全链路 | 推理工程师 |
-| 03 | [[10_部署推理/03_推理优化/03_推理_Tuning_Cheat_Sheet\|推理调优速查表]] | vLLM/SGLang/TGI/TRT-LLM 关键参数、性能诊断、场景配置 | 推理工程师、SRE |
-| 04 | [[10_部署推理/03_推理优化/04_模型压缩\|模型压缩统一视角]] | 剪枝/蒸馏/量化/低秩分解的完整对比与组合策略 | 部署工程师 |
+| 01 | [[10_部署推理/03_推理优化/01_推理性能_基础|推理性能基础]] | TTFT/TPOT/吞吐指标、Roofline 瓶颈分析、优化决策树 | 所有从业者 |
+| 02 | [[10_部署推理/03_推理优化/02_LLM推理_深入分析|LLM 推理深度剖析]] | 解码策略、KV 缓存、GQA/MLA、FlashAttention、服务引擎全链路 | 推理工程师 |
+| 03 | [[10_部署推理/03_推理优化/03_推理_Tuning_Cheat_Sheet|推理调优速查表]] | vLLM/SGLang/TGI/TRT-LLM 关键参数、性能诊断、场景配置 | 推理工程师、SRE |
+| 04 | [[10_部署推理/03_推理优化/04_模型压缩|模型压缩统一视角]] | 剪枝/蒸馏/量化/低秩分解的完整对比与组合策略 | 部署工程师 |
 
 ### 💾 KV Cache 与缓存
 
 | 序号 | 文档 | 主题 | 适用读者 |
 |------|------|------|----------|
-| 05 | [[10_部署推理/03_推理优化/05_KV_Cache_深入分析\|KV Cache 深度研究]] | 自回归冗余、显存公式、压缩与量化、生产实践 | 推理优化工程师 |
-| 06 | [[10_部署推理/03_推理优化/06_kv_cache_inference_optimization\|KV Cache × Continuous Batching]] | 显存-调度协同优化、prefix caching、chunked prefill | 系统工程师 |
-| 07 | [[10_部署推理/03_推理优化/07_kv_cache_paged_attention\|KV Cache × PagedAttention]] | 从显存碎片到虚拟内存的推理革命 | 系统工程师 |
-| 08 | [[10_部署推理/03_推理优化/08_paged_attention_continuous_batching\|PagedAttention × Continuous Batching]] | 内存效率与动态调度的双重引擎 | 系统工程师 |
-| 09 | [[10_部署推理/03_推理优化/09_LLM_缓存\|LLM 缓存策略]] | KV Cache 管理、语义缓存、Prompt/前缀缓存、分布式架构 | 平台工程师 |
-| 10 | [[10_部署推理/03_推理优化/10_提示缓存_高级\|Prompt 缓存高级技术]] | 前缀缓存、命中率优化、缓存失效策略 | 平台工程师 |
-| 11 | [[10_部署推理/03_推理优化/11_提示缓存_and_KV_Cache_优化\|Prompt Caching × KV Cache 优化]] | KV Cache 管理、Prefix Caching、Prompt 缓存深度解析 | 推理优化工程师 |
-| 12 | [[10_部署推理/03_推理优化/12_Speculative_Decoding_高级_2026\|投机解码前沿 2026]] | Medusa、Lookahead Decoding、REST 等变体与生产实践 | 追求极致延迟 |
+| 05 | [[10_部署推理/03_推理优化/05_KV_Cache_深入分析|KV Cache 深度研究]] | 自回归冗余、显存公式、压缩与量化、生产实践 | 推理优化工程师 |
+| 06 | [[10_部署推理/03_推理优化/06_kv_cache_inference_optimization|KV Cache × Continuous Batching]] | 显存-调度协同优化、prefix caching、chunked prefill | 系统工程师 |
+| 07 | [[10_部署推理/03_推理优化/07_kv_cache_paged_attention|KV Cache × PagedAttention]] | 从显存碎片到虚拟内存的推理革命 | 系统工程师 |
+| 08 | [[10_部署推理/03_推理优化/08_paged_attention_continuous_batching|PagedAttention × Continuous Batching]] | 内存效率与动态调度的双重引擎 | 系统工程师 |
+| 09 | [[10_部署推理/03_推理优化/09_LLM_缓存|LLM 缓存策略]] | KV Cache 管理、语义缓存、Prompt/前缀缓存、分布式架构 | 平台工程师 |
+| 10 | [[10_部署推理/03_推理优化/10_提示缓存_高级|Prompt 缓存高级技术]] | 前缀缓存、命中率优化、缓存失效策略 | 平台工程师 |
+| 11 | [[10_部署推理/03_推理优化/11_提示缓存_and_KV_Cache_优化|Prompt Caching × KV Cache 优化]] | KV Cache 管理、Prefix Caching、Prompt 缓存深度解析 | 推理优化工程师 |
+| 12 | [[10_部署推理/03_推理优化/12_Speculative_Decoding_高级_2026|投机解码前沿 2026]] | Medusa、Lookahead Decoding、REST 等变体与生产实践 | 追求极致延迟 |
 
 ### ⚡ 调度与并发
 
 | 序号 | 文档 | 主题 | 适用读者 |
 |------|------|------|----------|
-| 13 | [[10_部署推理/03_推理优化/13_Prefill_Decode_Disaggregation\|Prefill-Decode 分离]] | Disaggregated Serving 架构与 KV Cache 传输 | 长上下文/高并发 |
-| 14 | [[10_部署推理/03_推理优化/14_Request_调度_for_LLMs\|LLM 请求调度]] | Continuous Batching、抢占、Chunked Prefill、SLO-aware | 服务调度 |
-| 15 | [[10_部署推理/03_推理优化/15_推理_Autoscaling_and_负载均衡\|弹性扩缩容与负载均衡]] | HPA、预热池、多模型混部、智能路由 | 平台/SRE |
+| 13 | [[10_部署推理/03_推理优化/13_Prefill_Decode_Disaggregation|Prefill-Decode 分离]] | Disaggregated Serving 架构与 KV Cache 传输 | 长上下文/高并发 |
+| 14 | [[10_部署推理/03_推理优化/14_Request_调度_for_LLMs|LLM 请求调度]] | Continuous Batching、抢占、Chunked Prefill、SLO-aware | 服务调度 |
+| 15 | [[10_部署推理/03_推理优化/15_推理_Autoscaling_and_负载均衡|弹性扩缩容与负载均衡]] | HPA、预热池、多模型混部、智能路由 | 平台/SRE |
 
 ### 🔧 算子与编译器
 
 | 序号 | 文档 | 主题 | 适用读者 |
 |------|------|------|----------|
-| 16 | [[10_部署推理/03_推理优化/16_Compiler_and_Kernel_深入分析\|推理编译器与算子优化]] | torch.compile/Triton/CUTLASS、算子融合 | Kernel/算子优化 |
-| 17 | [[10_部署推理/03_推理优化/17_Flash_Kernels_深入分析\|Flash 系列 Kernel 深潜]] | FlashAttention / FlashDecoding / FlashInfer / FlashMLA | Kernel/算子优化 |
+| 16 | [[10_部署推理/03_推理优化/16_Compiler_and_Kernel_深入分析|推理编译器与算子优化]] | torch.compile/Triton/CUTLASS、算子融合 | Kernel/算子优化 |
+| 17 | [[10_部署推理/03_推理优化/17_Flash_Kernels_深入分析|Flash 系列 Kernel 深潜]] | FlashAttention / FlashDecoding / FlashInfer / FlashMLA | Kernel/算子优化 |
 
 ### 🔗 并行与通信
 
 | 序号 | 文档 | 主题 | 适用读者 |
 |------|------|------|----------|
-| 18 | [[10_部署推理/03_推理优化/18_Parallel_策略_深入分析\|LLM 并行策略全景]] | TP/PP/DP/EP/SP/CP 六种并行维度切分万亿参数模型 | 分布式工程师 |
-| 19 | [[10_部署推理/03_推理优化/19_Communication_系统_深入分析\|LLM 通信系统全景]] | NVLink/IB 物理层 + 胖树拓扑 + NCCL 集合通信原语 | 分布式工程师 |
+| 18 | [[10_部署推理/03_推理优化/18_Parallel_策略_深入分析|LLM 并行策略全景]] | TP/PP/DP/EP/SP/CP 六种并行维度切分万亿参数模型 | 分布式工程师 |
+| 19 | [[10_部署推理/03_推理优化/19_Communication_系统_深入分析|LLM 通信系统全景]] | NVLink/IB 物理层 + 胖树拓扑 + NCCL 集合通信原语 | 分布式工程师 |
 
 ### 🎯 专项优化
 
 | 序号 | 文档 | 主题 | 适用读者 |
 |------|------|------|----------|
-| 20 | [[10_部署推理/03_推理优化/20_Multi_LoRA_服务_深入分析\|Multi-LoRA 推理服务]] | 单基座多适配器高效服务（S-LoRA/Punica） | 企业多租户 |
-| 21 | [[10_部署推理/03_推理优化/21_嵌入_模型服务\|Embedding 与 Reranker 服务]] | Dynamic Batching、Matryoshka、混合精度 | RAG 部署 |
-| 22 | [[10_部署推理/03_推理优化/22_MoE_推理优化\|MoE 推理优化]] | All-to-All、Expert Parallelism、负载均衡 | MoE 部署 |
-| 23 | [[10_部署推理/03_推理优化/23_多模态_推理优化\|多模态推理优化]] | Vision Encoder、Image Token 压缩、VLM Prefill | VLM 部署 |
-| 24 | [[10_部署推理/03_推理优化/24_长上下文_推理_2026\|长上下文推理 2026]] | 128K+ 上下文、KV Cache 压缩、PD 分离 | 长上下文服务 |
-| 25 | [[10_部署推理/03_推理优化/25_Disaggregated_服务_2026\|2026 推理服务前沿架构]] | 前缀共享 / 连续批处理 → PD 分离演进 | 架构师 |
+| 20 | [[10_部署推理/03_推理优化/20_Multi_LoRA_服务_深入分析|Multi-LoRA 推理服务]] | 单基座多适配器高效服务（S-LoRA/Punica） | 企业多租户 |
+| 21 | [[10_部署推理/03_推理优化/21_嵌入_模型服务|Embedding 与 Reranker 服务]] | Dynamic Batching、Matryoshka、混合精度 | RAG 部署 |
+| 22 | [[10_部署推理/03_推理优化/22_MoE_推理优化|MoE 推理优化]] | All-to-All、Expert Parallelism、负载均衡 | MoE 部署 |
+| 23 | [[10_部署推理/03_推理优化/23_多模态_推理优化|多模态推理优化]] | Vision Encoder、Image Token 压缩、VLM Prefill | VLM 部署 |
+| 24 | [[10_部署推理/03_推理优化/24_长上下文_推理_2026|长上下文推理 2026]] | 128K+ 上下文、KV Cache 压缩、PD 分离 | 长上下文服务 |
+| 25 | [[10_部署推理/03_推理优化/25_Disaggregated_服务_2026|2026 推理服务前沿架构]] | 前缀共享 / 连续批处理 → PD 分离演进 | 架构师 |
 
 ### 📊 方法论与评测
 
 | 序号 | 文档 | 主题 | 适用读者 |
 |------|------|------|----------|
-| 26 | [[10_部署推理/03_推理优化/26_推理_Profiling_and_基准测试\|推理 Profiling 与 Benchmarking]] | Nsight、PyTorch Profiler、llmperf、评测陷阱 | 性能测试工程师 |
-| 27 | [[10_部署推理/03_推理优化/27_推理性能_未解问题_2026\|推理性能未解问题与缺口评估]] | 边缘、异构、能耗、多租户、编译启动等缺口 | 架构师、性能工程师 |
+| 26 | [[10_部署推理/03_推理优化/26_推理_Profiling_and_基准测试|推理 Profiling 与 Benchmarking]] | Nsight、PyTorch Profiler、llmperf、评测陷阱 | 性能测试工程师 |
+| 27 | [[10_部署推理/03_推理优化/27_推理性能_未解问题_2026|推理性能未解问题与缺口评估]] | 边缘、异构、能耗、多租户、编译启动等缺口 | 架构师、性能工程师 |
 
 ---
 

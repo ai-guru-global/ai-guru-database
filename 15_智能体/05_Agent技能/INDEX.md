@@ -18,7 +18,7 @@ name_en: "Agent Skills"
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[15_智能体/05_Agent技能/Agent_Skill_Reference|Agent Skill Reference]] | Agent Skill Reference | 开发者/学习者 |
+| [[15_智能体/README.md|Agent Skill Reference]] | Agent Skill Reference | 开发者/学习者 |
 | [[15_智能体/05_Agent技能/02_Agent_技能_深入分析|Agent Skills Deep Dive]] | Agent Skills Deep Dive | 开发者/学习者 |
 | [[15_智能体/05_Agent技能/03_Agent_技能_生态_Catalog|Agent Skills Ecosystem Catalog]] | Agent Skills Ecosystem Catalog | 开发者/学习者 |
 | [[15_智能体/05_Agent技能/Agent_Skills_Multi_Role_Analysis|Agent Skills Multi Role Analysis]] | Agent Skills Multi Role Analysis | 开发者/学习者 |

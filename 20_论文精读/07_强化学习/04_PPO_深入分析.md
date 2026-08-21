@@ -847,6 +847,6 @@ PPO 的"一句话哲学":
 
 ---
 
-*本文是 [论文精读](.README.md) 系列的一部分，适合想深入理解强化学习和大模型对齐的读者。*
+*本文是 论文精读 系列的一部分，适合想深入理解强化学习和大模型对齐的读者。*
 *原始论文: [Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347)*
 *OpenAI Baselines: [github.com/openai/baselines](https://github.com/openai/baselines)*

@@ -82,7 +82,7 @@
 | 观点 | 提出者 | 来源 |
 |---|---|---|
 | 「FDE 是该被淘汰的东西」 | Bart Butler（Proton CTO） | [Instagram Reel](https://www.instagram.com/reel/DbBamONCH_V/)（**争议性少数派观点**） |
-| 反驳：Agent 不会消灭 FDE，而是让 FDE 从「手艺人」变「工头」 | 行业主流共识 | 见 [AI Agent FDE](../14_前沿趋势/AI_Agent_FDE.md) |
+| 反驳：Agent 不会消灭 FDE，而是让 FDE 从「手艺人」变「工头」 | 行业主流共识 | 见 [AI Agent FDE](22-FDE/14_前沿趋势/02_AI_Agent_FDE.md) |
 
 ---
 
@@ -96,4 +96,4 @@
 
 ---
 
-> **关联阅读**：[DeployCo 案例](../06_案例研究/DeployCo案例.md) · [Palantir 案例详解](../06_案例研究/Palantir案例详解.md) · [AI Agent FDE](../14_前沿趋势/AI_Agent_FDE.md)
+> **关联阅读**：[DeployCo 案例](22-FDE/06_案例研究/03_DeployCo案例.md) · [Palantir 案例详解](22-FDE/06_案例研究/01_Palantir案例详解.md) · [AI Agent FDE](22-FDE/14_前沿趋势/02_AI_Agent_FDE.md)

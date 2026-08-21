@@ -508,7 +508,7 @@ awesome-agent-skills 仓库强调**人工审核**，不接受 AI 批量生成的
 ## 🔗 相关主题
 
 - [Agent Skills 深度解析](./02_Agent_技能_深入分析.md) — 完整规范和理论
-- [Agent Skills 实战指南](./05_Agent技能_Practical_Guide.md) — 创建和优化
+- Agent Skills 实战指南 — 创建和优化
 - [Agent Skills 多角色全景分析](./04_Agent_技能_Multi_Role_分析.md) — 五角色视角深度解析完整生命周期
 - [官方目录](https://officialskills.sh) — 在线浏览全部 451+ Skills
 - [精选合集](https://github.com/Volt智能体/awesome-agent-skills) — GitHub 精选列表

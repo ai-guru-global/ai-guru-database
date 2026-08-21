@@ -31,7 +31,7 @@ name_zh: "神经架构搜索"
 ## 相关文档
 
 - [[03_深度学习/README|深度学习总览]]
-- [[03_深度学习/09_高级专题/Knowledge_Distillation|知识蒸馏]]
+- [[概念/Training/knowledge-distillation.md|知识蒸馏]]
 - [[05_大模型/04_LLM架构/|LLM 架构]]
 
 ## 专题深度解析

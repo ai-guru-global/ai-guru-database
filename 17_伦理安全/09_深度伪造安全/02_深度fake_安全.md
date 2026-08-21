@@ -871,7 +871,7 @@ class LivenessDetector:
 
 ## 相关链接
 
-- [[17_伦理安全/09_深度伪造安全/Deepfake_Security_for_dummy|Deepfake 安全 (小白版)]] — 本篇的零基础版本
+- [[17_伦理安全/README.md|Deepfake 安全 (小白版)]] — 本篇的零基础版本
 - [[17_伦理安全/09_深度伪造安全/index|Deepfake 安全索引]] — 主题导览
 - [[17_伦理安全/09_深度伪造安全/01_AI_Watermarking|AI 水印]] — 溯源防御手段
 - [[概念/Vision/video-generation|AI 视频生成 2026]] — 视频生成技术全景

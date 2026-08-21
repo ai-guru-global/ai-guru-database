@@ -20,9 +20,9 @@ name_en: "plugins"
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[15_智能体/07_Agent评估/Demo/plugins/base|base]] | Plugin base class and interface definition | plugin developers |
-| [[15_智能体/07_Agent评估/Demo/plugins/aliyun_plugin|aliyun plugin]] | Aliyun model API adapter plugin | integration engineers |
-| [[15_智能体/07_Agent评估/Demo/plugins/openai_plugin|openai plugin]] | OpenAI model API adapter plugin | integration engineers |
-| [[15_智能体/07_Agent评估/Demo/plugins/__init__|  init  ]] | Module initialization file | developers |
+| [[15_智能体/README.md|aliyun plugin]] | Aliyun model API adapter plugin | integration engineers |
+| [[15_智能体/README.md|openai plugin]] | OpenAI model API adapter plugin | integration engineers |
+| [[15_智能体/README.md|init]] | Module initialization file | developers |
 
 ## Related
 

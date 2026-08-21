@@ -1936,7 +1936,7 @@ jobs:
 - **大语言模型**: [LLM架构](05_大模型/04_LLM架构/05_LLM架构.md) —— Agent 的"大脑"
 - **提示工程**: [Prompt Engineering](05_大模型/07_提示工程/16_Prompt工程.md) —— 设计 Agent 的系统提示
 - **强化学习**: [RL Foundations](06_强化学习/01_强化学习基础/03_RL基础.md) —— Agent 的决策理论基础
-- **深度强化学习**: [Deep RL](06_强化学习/02_深度强化学习/02_深度强化学习.md) —— RLHF 训练 Agent
+- **深度强化学习**: [Deep RL](06_强化学习/README.md) —— RLHF 训练 Agent
 
 ### 10.2 相关技术
 - **RAG**: [检索增强生成] —— Agent 的记忆系统基础
@@ -2199,4 +2199,4 @@ def no_progress_detector(state_history):
 
 ## Related
 
-- [[01_索引.md|index]]
+- [[22-FDE/索引.md|index]]

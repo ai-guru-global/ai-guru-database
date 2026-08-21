@@ -18,7 +18,7 @@ name_en: "Frontier"
 | 文件 | 说明 |
 |------|------|
 | [[20_论文精读/09_前沿探索/DeepSeek_V3_Technical_Report|DeepSeek-V3 Technical Report 深度解读]] | DeepSeek-V3 用 $5.6M 和 2048 张 H800 训练出了媲美 GPT-4o 的 671B 模型，证明了算法创新比 GPU 数量更重要 |
-| [[20_论文精读/09_前沿探索/Frontier_index|Frontier]] |  |
+| [[20_论文精读/README.md|Frontier]] |  |
 
 ## Related
 

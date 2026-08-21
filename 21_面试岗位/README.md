@@ -89,7 +89,7 @@ name_zh: "AI 面试准备"
 - [AI 基础](../00_入门/README.md) — 面试中的通用知识
 - [机器学习](../02_机器学习/README.md) — ML 岗位核心理论
 - [深度学习](../03_深度学习/README.md) — DL 岗位核心理论
-- [部署推理](./10_部署推理/README.md) — MLE/MLOps 岗位实操
+- [部署推理](10_部署推理/README.md) — MLE/MLOps 岗位实操
 - [Agent 生产](../15_智能体/README.md) — Agent 相关岗位前沿知识
 - [测试](../09_测试/README.md) — AI Evaluation Engineer 核心技能
 
@@ -103,9 +103,9 @@ name_zh: "AI 面试准备"
 
 | 文件 | 用途 |
 |------|------|
-| [02_interview_notes_template.md](21_面试岗位/Interview_Guide/02_interview_notes_template.md) | 面试复盘模板 — 每次面试后记录经验教训 |
-| [05_jobs.md](21_面试岗位/Interview_Guide/05_jobs.md) | AI 岗位与工种清单 — 21 个岗位的能力地图 |
-| [Interviews_for_dummy.md](21_面试岗位/Interview_Guide/Interviews_for_dummy.md) | AI 面试准备小白版 — 适合零基础读者 |
+| [02_interview_notes_template.md](21_面试岗位/18_面试指南/02_interview_notes_template.md) | 面试复盘模板 — 每次面试后记录经验教训 |
+| [05_jobs.md](21_面试岗位/18_面试指南/05_jobs.md) | AI 岗位与工种清单 — 21 个岗位的能力地图 |
+| [Interviews_for_dummy.md](21_面试岗位/README.md) | AI 面试准备小白版 — 适合零基础读者 |
 
 ## Related
 

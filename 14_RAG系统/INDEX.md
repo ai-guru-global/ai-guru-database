@@ -26,7 +26,7 @@ This page indexes the contents of `RAG系统`.
 - [[14_RAG系统/04_高级RAG/02_Agentic_RAG_指南|Agentic RAG Applications For Dummy]]
 - [[14_RAG系统/01_RAG基础/GenAI_L08_Building_Search_Applications|Genai L08 Building Search Applications]]
 - [[14_RAG系统/01_RAG基础/04_GenAI_L15_RAG_and_向量数据库|Genai L15 RAG And Vector Databases]]
-- [[14_RAG系统/02_嵌入技术/HF_Datasets_Streaming_Guide|HF Datasets Streaming]]
+- [[14_RAG系统/README.md|HF Datasets Streaming]]
 - [[概念/RAG/matryoshka-representation-learning|Matryoshka Representation Learning For Dummy]]
 - [[14_RAG系统/RAG-in-nutshell|RAG In Nutshell]]
 - [[14_RAG系统/01_RAG基础|RAG Fundamentals]]

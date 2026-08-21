@@ -24,5 +24,5 @@ This page indexes the contents of `Web`.
 - [[前端应用/CHANGELOG|CHANGELOG]]
 - [[前端应用/CONTRIBUTING|CONTRIBUTING]]
 - [[前端应用/README|README]]
-- [[前端应用/README_for_dummy|README For Dummy]]
+- [[前端应用/README.md|README For Dummy]]
 - [[前端应用/TROUBLESHOOTING|TROUBLESHOOTING]]

@@ -25,10 +25,10 @@ This page indexes the contents of `模型训练`.
 
 ## Files
 
-- [[07_模型训练/Data_and_FineTuning_for_dummy|Data And Finetuning For Dummy]]
+- [[07_模型训练/README.md|Data And Finetuning For Dummy]]
 - [[15_智能体/13_Hello_Agents课程/04_Hello_Agents_L11_Agentic_RL|Hello Agents L11 Agentic RL]]
 - [[07_模型训练/Model-Training-in-nutshell|Model Training In Nutshell]]
-- [[07_模型训练/Model_Training_for_dummy|Model Training For Dummy]]
+- [[07_模型训练/README.md|Model Training For Dummy]]
 - [[07_模型训练/README|README]]
 - [[07_模型训练/README|README For Dummy]]
 - [[07_模型训练/08_成本优化/02_训练_成本优化_and_FinOps_2026|Training Cost Optimization And Finops 2026]]

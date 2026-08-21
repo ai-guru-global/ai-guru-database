@@ -166,8 +166,8 @@ Yoshua Bengio 是深度学习理论的奠基人。他在 2000 年代初发表了
 - [[19_业界观点/29_Yoshua_Bengio_本吉奥/01_关于|人物简介]] · [[19_业界观点/29_Yoshua_Bengio_本吉奥/03_名言|核心语录]]
 - [[19_业界观点/10_Geoffrey_Hinton_辛顿/01_关于|Geoffrey Hinton]] · [[19_业界观点/28_Yann_LeCun_杨立昆/01_关于|Yann LeCun]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]]
-- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
-- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/05_Hinton_vs_LeCun_世界模型_Debate.md|Hinton vs LeCun 之争]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/02_AGI_时间线_预测_矩阵.md|AGI 时间表矩阵]]
 - [[19_业界观点/29_Yoshua_Bengio_本吉奥/04_Yoshua_Bengio_2026_更新|2026 动态更新]]
 - [[19_业界观点/INDEX|业界观点首页]]
 

@@ -128,4 +128,4 @@ FDE 在 AI 时代被重新定义为 **软件工程 + 售前工程 + 平台工程
 
 ---
 
-> **关联阅读**：[OpenAI FDE 实践](02_OpenAI_FDE实践.md) · [Palantir 案例详解](01_Palantir案例详解.md) · [中国 FDE 市场](../09_市场分析/01_中国FDE市场.md)
+> **关联阅读**：[OpenAI FDE 实践](22-FDE/06_案例研究/02_OpenAI_FDE实践.md) · [Palantir 案例详解](22-FDE/06_案例研究/01_Palantir案例详解.md) · [中国 FDE 市场](../09_市场分析/01_中国FDE市场.md)

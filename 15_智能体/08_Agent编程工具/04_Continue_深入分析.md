@@ -335,4 +335,4 @@ custom_prompts = Prompts(
 - [[15_智能体/08_Agent编程工具/07_OpenCode_深入分析|OpenCode 深度解析]] — 同类开源工具对比
 - [[15_智能体/08_Agent编程工具/index|Agentic Coding 索引]] — 工具主题导览
 - [[16_编程/index|编程索引]] — AI 编程主题导览
-- [[18_行业应用/18_代码生成/Code_Generation_index|代码生成索引]] — 代码生成应用
+- [[18_行业应用/README.md|代码生成索引]] — 代码生成应用

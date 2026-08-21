@@ -178,7 +178,7 @@ print(f"MHA KV Cache: {mha_bytes / 1e9:.1f} GB")  # ~85.9 GB
 - [[概念/LLM/multi-head-latent-attention]] — MLA
 - [[概念/Inference/kv-cache]] — KV Cache
 - [[概念/Inference/kv-cache-compression]] — KV Cache 压缩
-- [[10_部署推理/03_推理优化/Inference_Terms_for_dummy|推理性能术语大白话 解释]]
+- [[10_部署推理/README.md|推理性能术语大白话 解释]]
 
 ## GQA 显存计算示例
 

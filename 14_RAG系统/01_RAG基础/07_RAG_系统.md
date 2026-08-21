@@ -506,7 +506,7 @@ evaluation_prompt = f"""
 
 ### 前置知识
 
-- [Transformer 架构](05_大模型/04_Transformer_Revolution/09_03_Transformer架构架构_Revolution.md) - 理解 Embedding 和 Attention 机制
+- [Transformer 架构](05_大模型/03_Transformer架构/03_Transformer_Revolution.md) - 理解 Embedding 和 Attention 机制
 - [向量检索基础](01_数学基础/07_数据结构与算法/01_Data_Structures_Algorithms.md) - HNSW、IVF 索引原理
 - [自然语言处理基础](05_大模型/04_LLM架构/05_LLM架构.md) - 文本预处理和分词
 

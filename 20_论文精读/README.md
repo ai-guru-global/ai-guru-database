@@ -47,9 +47,9 @@ flowchart LR
 |------|---------|-----------|---------|
 | **Deep Learning (2015)** LeCun et al. | 深度学习三大要素（深度网络、大规模数据、GPU 计算）的系统综述，定义了现代深度学习的研究范式 | 建立全局视野，理解深度学习为何在 2012 年后爆发 | [深度学习](../03_深度学习/README.md) |
 | **ImageNet Classification with Deep Convolutional Neural Networks (2012)** Krizhevsky et al. | AlexNet：ReLU + Dropout + GPU 训练的首次成功组合，ImageNet 2012 冠军，误差率降低 10.8% | 深度学习的"大爆炸"起点，计算机视觉的里程碑 | [计算机视觉](../04_计算机视觉/README.md) |
-| **Dropout (2014)** Srivastava et al. | 训练时随机丢弃神经元，防止共适应，成为 CNN 和全连接层的标准正则化方法 | 几乎每次训练模型都会用到，理解原理才能调好参数 | [深度学习优化](03_深度学习/03_训练优化/02_优化.md) |
-| **Batch Normalization (2015)** Ioffe & Szegedy | 层输入标准化 + 可学习缩放/偏移，解决内部协变量偏移，允许使用更大学习率 | 现代网络训练的"默认配置"，ResNet 等架构的基础 | [深度学习优化](03_深度学习/03_训练优化/02_优化.md) |
-| **Adam (2014)** Kingma & Ba | 一阶和二阶矩估计的自适应学习率，默认 β₁=0.9, β₂=0.999，成为最常用的优化器 | 训练神经网络时默认选择的优化器，理解其工作机制 | [深度学习优化](03_深度学习/03_训练优化/02_优化.md) |
+| **Dropout (2014)** Srivastava et al. | 训练时随机丢弃神经元，防止共适应，成为 CNN 和全连接层的标准正则化方法 | 几乎每次训练模型都会用到，理解原理才能调好参数 | [深度学习优化](03_深度学习/03_优化方法/02_优化.md) |
+| **Batch Normalization (2015)** Ioffe & Szegedy | 层输入标准化 + 可学习缩放/偏移，解决内部协变量偏移，允许使用更大学习率 | 现代网络训练的"默认配置"，ResNet 等架构的基础 | [深度学习优化](03_深度学习/03_优化方法/02_优化.md) |
+| **Adam (2014)** Kingma & Ba | 一阶和二阶矩估计的自适应学习率，默认 β₁=0.9, β₂=0.999，成为最常用的优化器 | 训练神经网络时默认选择的优化器，理解其工作机制 | [深度学习优化](03_深度学习/03_优化方法/02_优化.md) |
 
 ---
 
@@ -87,19 +87,19 @@ flowchart LR
 - [BERT 深度解读](20_论文精读/02_模型架构/02_BERT_深入分析.md) — 双向编码、MLM/NSP 与预训练-微调范式
 - [LLaMA 深度解读](20_论文精读/02_模型架构/04_LLaMA_深入分析.md) — 开源 LLM 革命、RoPE/SwiGLU/RMSNorm 架构创新
 - [DeepSeek-V3 技术报告](20_论文精读/09_前沿探索/01_深度Seek_V3_Technical_报告.md) — MLA、MoE、FP8 训练与 $5.6M 成本奇迹
-- [Diffusion Models 深度解读](04_计算机视觉/06_生成模型/03_扩散_模型_深入分析.md) — 从 DDPM 到 Stable Diffusion 再到 DiT
-- [RLHF 与 DPO 深度解读](20_论文精读/06_对齐研究/RLHF_03_DPO_深入分析.md) — InstructGPT 三阶段训练、DPO 数学推导与对齐方法
+- [Diffusion Models 深度解读](20_论文精读/08_计算机视觉/03_扩散_模型_深入分析.md) — 从 DDPM 到 Stable Diffusion 再到 DiT
+- [RLHF 与 DPO 深度解读](20_论文精读/06_对齐研究/06_RLHF_DPO_深入分析.md) — InstructGPT 三阶段训练、DPO 数学推导与对齐方法
 - [DPO 深度解读](20_论文精读/06_对齐研究/03_DPO_深入分析.md) — 直接偏好优化的数学推导、与 RLHF 对比及对齐方法演进
 - [Mixture of Experts 深度解读](20_论文精读/02_模型架构/06_混合专家_深入分析.md) — Switch Transformer、Mixtral、DeepSeek MoE 架构解析
-- [DQN 深度解读](06_强化学习/02_深度强化学习/02_DQN_深入分析.md) — 深度强化学习开山之作，Atari 游戏与经验回放
+- [DQN 深度解读](20_论文精读/07_强化学习/02_DQN_深入分析.md) — 深度强化学习开山之作，Atari 游戏与经验回放
 - [AlphaGo 深度解读](20_论文精读/07_强化学习/01_AlphaGo_深入分析.md) — 围棋 AI 的突破，深度 RL 与蒙特卡洛树搜索
 - [GAN 深度解读](20_论文精读/08_计算机视觉/04_GAN_深入分析.md) — 生成对抗网络：从 Goodfellow 到 StyleGAN 的对抗训练革命
-- [CLIP 深度解读](04_计算机视觉/08_多模态视觉/02_CL知识产权_深入分析.md) — 视觉-语言多模态对齐基石，零样本分类与对比学习
+- [CLIP 深度解读](20_论文精读/08_计算机视觉/02_CL知识产权_深入分析.md) — 视觉-语言多模态对齐基石，零样本分类与对比学习
 - [LoRA 深度解读](20_论文精读/04_效率优化/03_LoRA_深入分析.md) — 低秩适配微调：从 LoRA 到 QLoRA 的参数高效训练
 - [VAE 深度解读](20_论文精读/08_计算机视觉/08_VAE_深入分析.md) — 变分自编码器：重参数化技巧、潜空间生成、扩散模型前身
 - [Chain-of-Thought 深度解读](20_论文精读/06_对齐研究/01_思维链_深入分析.md) — 思维链提示：让 LLM 逐步推理，o1/R1 的思想源头
 - [RAG 深度解读](20_论文精读/10_检索技术/02_RAG_深入分析.md) — 检索增强生成：先查后答，解决 LLM 知识过时和幻觉问题
-- [Matryoshka Representation Learning 深度解读](14_RAG系统/02_嵌入技术/04_Matryoshka_Representation_学习_深入分析.md) — 可截断的多尺度向量表示，RAG 与向量数据库的弹性维度方案
+- [Matryoshka Representation Learning 深度解读](20_论文精读/04_效率优化/04_Matryoshka_Representation_学习_深入分析.md) — 可截断的多尺度向量表示，RAG 与向量数据库的弹性维度方案
 - [Chinchilla 深度解读](20_论文精读/03_规模扩展/01_Chinchilla_深入分析.md) — 计算最优训练：数据量比参数量更重要，重塑 Scaling Laws
 - [AlexNet 深度解读](20_论文精读/08_计算机视觉/01_AlexNet_深入分析.md) — 深度学习革命起点：ReLU + Dropout + GPU 训练
 - [Word2Vec 深度解读](20_论文精读/02_模型架构/07_Word2Vec_深入分析.md) — NLP 分布式表示开端：Skip-gram、负采样、语义类比
@@ -222,7 +222,7 @@ flowchart TB
 - [[20_论文精读/05_LLM推理研究/02_文献调研|课题研究：大模型推理入门 — 文献调研]]
 - [[20_论文精读/05_LLM推理研究/04_结论与产出|课题研究：大模型推理入门 — 结论与产出]]
 - [[20_论文精读/07_强化学习/01_AlphaGo_深入分析|AlphaGo 深度解读 (Mastering the Game of Go)]]
-- [[20_论文精读/Research_README_for_dummy|课题研究 — 小白版 (Research for Beginners)]]
+- [[20_论文精读/README.md|课题研究 — 小白版 (Research for Beginners)]]
 - [[20_论文精读/03_规模扩展/01_Chinchilla_深入分析|Training Compute-Optimal Large Language Models (Chinchilla) 深度解读]]
 - [[GPT4_Deep_Dive|GPT-4 Technical Report 深度解读]]
 - [[20_论文精读/08_计算机视觉/07_UNet_深入分析|论文深度解读: U-Net — Convolutional Networks for Biomedical Image Segmentation]]

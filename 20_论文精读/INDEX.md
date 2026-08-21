@@ -29,8 +29,8 @@ AI 论文精读中心（Paper Reading Center）— 按方向分类的顶会论�
 - [[20_论文精读/04_效率优化/index|Efficiency]]
 - [[20_论文精读/10_检索技术/03_检索_索引|Retrieval]]
 - [[20_论文精读/07_强化学习/index|RL]]
-- [[20_论文精读/09_前沿探索/Frontier_index|Frontier]]
-- [[20_论文精读/01_研读指南/Methodology_index|Methodology]]
+- [[20_论文精读/README.md|Frontier]]
+- [[20_论文精读/README.md|Methodology]]
 
 ## 专题深度解析
 

@@ -19,12 +19,12 @@ name_en: "evaluator"
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[15_智能体/07_Agent评估/Demo/evaluator/core|core]] | Core evaluation dispatcher logic | evaluation engineers |
+| [[15_智能体/README.md|core]] | Core evaluation dispatcher logic | evaluation engineers |
 | [[15_智能体/07_Agent评估/Implementation/02_LLM_as_Judge_模板|llm judge]] | LLM-based automatic evaluation module | evaluation engineers |
 | [[15_智能体/07_Agent评估/Metrics/01_Metrics_Collection|metrics]] | Evaluation metrics calculation module | evaluation engineers |
-| [[15_智能体/07_Agent评估/Demo/evaluator/safety_checker|safety checker]] | Safety compliance checking module | security engineers |
-| [[15_智能体/07_Agent评估/Demo/evaluator/scorer|scorer]] | Score aggregation and ranking module | evaluation engineers |
-| [[15_智能体/07_Agent评估/Demo/evaluator/__init__|  init  ]] | Module initialization file | developers |
+| [[15_智能体/README.md|safety checker]] | Safety compliance checking module | security engineers |
+| [[15_智能体/README.md|scorer]] | Score aggregation and ranking module | evaluation engineers |
+| [[15_智能体/README.md|init]] | Module initialization file | developers |
 
 ## Related
 

@@ -141,7 +141,7 @@ flowchart LR
 | [cheatsheet-rag-systems](./cheatsheets/cheatsheet-rag-systems.md) | RAG 系统构建 |
 | [cheatsheet-security-defense](./cheatsheets/cheatsheet-security-defense.md) | 安全与防御 |
 
-详见: [cheatsheets/索引.md](./cheatsheets/索引.md)
+详见: [cheatsheets/索引.md](22-FDE/索引.md)
 
 ---
 
@@ -182,7 +182,7 @@ flowchart LR
 |------|------|
 | [治理/hot.md](./hot.md) | **最近新增与高价值页面**——记录最新的内容更新、概念卡片和大白话专题页，是了解"最近发生了什么"的入口 |
 | [治理/ROADMAP.md](./ROADMAP.md) | **项目路线图**——年度/季度规划、愿景、任务状态跟踪 |
-| [索引.md](./索引.md) | 治理目录的自动生成索引页 |
+| [索引.md](22-FDE/索引.md) | 治理目录的自动生成索引页 |
 | [log.md](./log.md) | 项目变更日志，记录重大结构和内容变动 |
 
 ### 规范与约定类
@@ -202,9 +202,9 @@ flowchart LR
 
 ## _meta 元文件说明
 
-> **📁 位置变更**: 所有 `_` 开头的元文件已归组到 [_meta/](./_meta/索引.md) 子目录。详见 [_meta/索引.md](./_meta/索引.md)。
+> **📁 位置变更**: 所有 `_` 开头的元文件已归组到 [_meta/](22-FDE/索引.md) 子目录。详见 [_meta/索引.md](22-FDE/索引.md)。
 
-以 `_` 开头的文件是**自动生成或半自动维护的元文件**，记录知识库的健康状态、审计结果和评估报告。它们不面向终端读者，而是面向项目维护者和 AI 工具链。所有元文件统一存放在 [`_meta/`](./_meta/索引.md) 子目录下。
+以 `_` 开头的文件是**自动生成或半自动维护的元文件**，记录知识库的健康状态、审计结果和评估报告。它们不面向终端读者，而是面向项目维护者和 AI 工具链。所有元文件统一存放在 [`_meta/`](22-FDE/索引.md) 子目录下。
 
 > **命名约定**: `_` 前缀 = 元文件 / 内部报告。带日期后缀的（如 `_lint-report-2026-06-30.md`）是历史快照；不带日期的（如 `_lint-report.md`）是当前版本。
 
@@ -319,7 +319,7 @@ flowchart LR
 
 如果你需要快速查阅某个技术领域：
 
-1. 进入 [cheatsheets/](./cheatsheets/索引.md) 选择对应速查表
+1. 进入 [cheatsheets/](22-FDE/索引.md) 选择对应速查表
 2. 在 [notes/AI_Full_Stack_Concepts.md](./notes/AI_Full_Stack_Concepts.md) 中搜索术语
 3. 在 [notes/AI_Concept_Knowledge_Graph.md](./notes/AI_Concept_Knowledge_Graph.md) 中探索概念关系
 

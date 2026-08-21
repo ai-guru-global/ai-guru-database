@@ -77,7 +77,7 @@ Harness 具体包含：
 | **[10_脚手架_简明指南.md](15_智能体/04_Agent脚手架/10_脚手架_简明指南.md)** | 速览版 / 快速入门 | 所有接触 Harness 的人 | 30 分钟 |
 | **[The Anatomy of an Agent Harness](15_智能体/04_Agent脚手架/13_The_Anatomy_of_an_Agent_脚手架.md)** | 理论概念篇 | 架构师、设计师、研究者 | 1 小时 |
 | **[Agent Harness 技术架构 2026](15_智能体/04_Agent脚手架/01_Agent_脚手架_架构_2026.md)** | 技术架构大全 | 开发者、架构师、运维 | 2-3 小时 |
-| **[Harness Implementation Guide](15_智能体/04_Agent脚手架/06_Harness_04_Implementation_指南.md)** | 实战实现手册 | 需要动手搭建的开发者 | 2-4 小时 |
+| **[Harness Implementation Guide](15_智能体/07_Agent评估/Implementation/04_Implementation_指南.md)** | 实战实现手册 | 需要动手搭建的开发者 | 2-4 小时 |
 | **[Harness Security Guide](15_智能体/04_Agent脚手架/08_脚手架_安全_指南.md)** | 安全深度指南 | 安全工程师、架构师 | 1-2 小时 |
 | **[Harness Deployment Guide](15_智能体/04_Agent脚手架/03_脚手架_部署_指南.md)** | 部署与运维 | DevOps、SRE | 1-2 小时 |
 | **[Harness Testing Guide](15_智能体/04_Agent脚手架/09_脚手架_测试_指南.md)** | 测试策略 | 测试工程师、开发者 | 1-2 小时 |
@@ -120,7 +120,7 @@ Harness 具体包含：
 | [10_脚手架_简明指南.md](15_智能体/04_Agent脚手架/10_脚手架_简明指南.md) | 30 分钟速览：核心公式、5 层架构、关键配置、快速启动代码 | 所有角色 |
 | [The Anatomy of an Agent Harness](15_智能体/04_Agent脚手架/13_The_Anatomy_of_an_Agent_脚手架.md) | LangChain 博客解读：Harness 工程定义与核心组件推导 | 设计师、架构师、开发者 |
 | [Agent Harness 技术架构 2026](15_智能体/04_Agent脚手架/01_Agent_脚手架_架构_2026.md) | Harness 技术架构详解：配置参数、性能指标、兼容性矩阵、多角色指南 | 全角色 |
-| [Harness Implementation Guide](15_智能体/04_Agent脚手架/06_Harness_04_Implementation_指南.md) | 从零搭建生产级 Harness：文件系统、Docker 沙箱、验证回路、Ralph Loop | 开发者 |
+| [Harness Implementation Guide](15_智能体/07_Agent评估/Implementation/04_Implementation_指南.md) | 从零搭建生产级 Harness：文件系统、Docker 沙箱、验证回路、Ralph Loop | 开发者 |
 
 ### 关联文档 (Agent_Evaluation)
 
@@ -148,7 +148,7 @@ Agent Harness 的**评估视角**内容位于 `07_Agent评估/`，与本目录�
 
 - 从 [10_脚手架_简明指南.md](15_智能体/04_Agent脚手架/10_脚手架_简明指南.md) 快速启动
 - 阅读 [技术架构](15_智能体/04_Agent脚手架/01_Agent_脚手架_架构_2026.md) 获取代码示例和集成指南
-- 跟随 [Implementation Guide](15_智能体/04_Agent脚手架/06_Harness_04_Implementation_指南.md) 从零搭建
+- 跟随 [Implementation Guide](15_智能体/07_Agent评估/Implementation/04_Implementation_指南.md) 从零搭建
 - 查看框架适配器模式（LangChain、AutoGen 等）
 - 参考 [Agentic Coding Tools](../08_Agent编程工具/) 选择开发工具
 
@@ -174,7 +174,7 @@ Agent Harness 的**评估视角**内容位于 `07_Agent评估/`，与本目录�
 - 阅读 [The Anatomy](15_智能体/04_Agent脚手架/13_The_Anatomy_of_an_Agent_脚手架.md) 理解 Harness 设计哲学
 - 阅读 [技术架构](15_智能体/04_Agent脚手架/01_Agent_脚手架_架构_2026.md) 中的系统设计和扩展性章节
 - 结合 [Enterprise Agent](../10_企业级Agent/) 了解企业级架构模式
-- 参考 [Implementation Guide](15_智能体/04_Agent脚手架/06_Harness_04_Implementation_指南.md) 验证技术可行性
+- 参考 [Implementation Guide](15_智能体/07_Agent评估/Implementation/04_Implementation_指南.md) 验证技术可行性
 
 ---
 

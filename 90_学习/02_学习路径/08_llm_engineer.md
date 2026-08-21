@@ -58,14 +58,14 @@ Stage 4 前沿（Agent / 多模态）
 **🎯 目标**：理解 LLM 的工作原理、架构差异和核心能力边界。
 
 **📚 核心概念**：
-- [Stage 1: 基础概念](90_学习/concepts/03_stage1_foundation.md)（快速浏览）
-- [Stage 2: 核心技术 — LLM 相关部分](90_学习/concepts/04_stage2_core_tech.md)（深入）
+- [Stage 1: 基础概念](90_学习/01_概念认知/03_stage1_foundation.md)（快速浏览）
+- [Stage 2: 核心技术 — LLM 相关部分](90_学习/01_概念认知/04_stage2_core_tech.md)（深入）
 
 **🔗 深入阅读**：
-- [LLM 架构（小白版）](05_大模型/04_LLM架构/LLM_Architectures_for_dummy.md)
+- [LLM 架构（小白版）](05_大模型/README.md)
 - [LLM 架构（速查版）](05_大模型/04_LLM架构/10_LLM_基础_简明指南.md)
-- [Transformer 革命（小白版）](05_大模型/04_Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- [微调技术（小白版）](05_大模型/06_微调技术/Fine_tuning_Techniques_for_dummy.md)
+- [Transformer 革命（小白版）](05_大模型/03_Transformer架构/03_Transformer_Revolution.md)
+- [微调技术（小白版）](05_大模型/README.md)
 
 **💡 重点理解**：
 - Token 是什么，LLM 的上下文窗口限制
@@ -85,10 +85,10 @@ Stage 4 前沿（Agent / 多模态）
 
 **🎯 目标**：成为 Prompt 高手，能用 Prompt 解决复杂问题。
 
-**📚 核心概念**：[Stage 3 工程实践 — Prompt Engineering 部分](90_学习/concepts/05_stage3_engineering.md)
+**📚 核心概念**：[Stage 3 工程实践 — Prompt Engineering 部分](90_学习/01_概念认知/05_stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [提示词工程（小白版）](05_大模型/07_提示工程/Prompt_Engineering_for_dummy.md)
+- [提示词工程（小白版）](05_大模型/README.md)
 - [提示词工程（速查版）](05_大模型/07_提示工程/17_Prompt_工程_简明指南.md)
 
 **💡 Prompt 技巧体系**：
@@ -128,10 +128,10 @@ Stage 4 前沿（Agent / 多模态）
 
 **🎯 目标**：构建生产级 RAG 应用，理解从文档到答案的完整链路。
 
-**📚 核心概念**：[Stage 3: 工程实践 — RAG / 向量数据库](90_学习/concepts/05_stage3_engineering.md)
+**📚 核心概念**：[Stage 3: 工程实践 — RAG / 向量数据库](90_学习/01_概念认知/05_stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [RAG 系统（小白版）](14_RAG系统/01_RAG基础/RAG_Systems_for_dummy.md)
+- [RAG 系统（小白版）](14_RAG系统/README.md)
 - [RAG 系统（速查版）](14_RAG系统/01_RAG基础/08_RAG_简明指南.md)
 - [AI Skills 速查版](15_智能体/05_Agent技能/12_技能_简明指南.md)（AI Skills 的设计模式）
 
@@ -177,10 +177,10 @@ Stage 4 前沿（Agent / 多模态）
 
 **🎯 目标**：构建能自主执行复杂任务的 AI Agent。
 
-**📚 核心概念**：[Stage 3: 工程实践 — Agent 部分](90_学习/concepts/05_stage3_engineering.md) + [Stage 4 前沿 — Agent 深度](90_学习/concepts/06_stage4_frontier.md)
+**📚 核心概念**：[Stage 3: 工程实践 — Agent 部分](90_学习/01_概念认知/05_stage3_engineering.md) + [Stage 4 前沿 — Agent 深度](90_学习/01_概念认知/06_stage4_frontier.md)
 
 **🔗 深入阅读**：
-- [AI Agent（小白版）](15_智能体/01_Agent基础/AI_Agents_for_dummy.md)
+- [AI Agent（小白版）](15_智能体/README.md)
 - [AI Agent（速查版）](15_智能体/01_Agent基础/11_Agent_简明指南.md)
 - [AI 工作流（速查版）](15_智能体/03_Agent工作流/06_工作流_简明指南.md)
 
@@ -222,10 +222,10 @@ Agent 框架选择：
 
 **🎯 目标**：掌握 LLM 生产部署的成本优化和性能调优。
 
-**📚 核心概念**：[Stage 3: 工程实践 — 部署 / AI Gateway](90_学习/concepts/05_stage3_engineering.md)
+**📚 核心概念**：[Stage 3: 工程实践 — 部署 / AI Gateway](90_学习/01_概念认知/05_stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [部署与推理（小白版）](10_部署推理/01_部署基础/Deployment_Inference_for_dummy.md)
+- [部署与推理（小白版）](10_部署推理/README.md)
 - [部署与推理（速查版）](10_部署推理/01_部署基础/06_推理_简明指南.md)
 - [AI Gateway（速查版）](12_架构基建/11_AI网关/06_Gateway_简明指南.md)
 - [AIOps（速查版）](13_运维/01_AIOps基础/02_AIOps简明指南.md)
@@ -267,20 +267,20 @@ Agent 框架选择：
 
 ## 里程碑自测
 
-完成本路径后，请回顾 [07_milestones.md](90_学习/guides/07_milestones.md) 中 Stage 2-4 的自测题，重点关注 LLM、Agent、RAG 相关问题。
+完成本路径后，请回顾 [07_milestones.md](90_学习/04_实践指南/07_milestones.md) 中 Stage 2-4 的自测题，重点关注 LLM、Agent、RAG 相关问题。
 
 ## 下一步推荐
 
 | 你的打算 | 推荐去向 |
 |---------|---------|
 | 想深入 Agent 评估 | [Agent 评估框架](../../15_智能体/07_Agent评估/README.md) |
-| 想做 AI 研究 | [AI 研究者路径](90_学习/pathways/03_ai_researcher.md) |
-| 想补充 CV 能力 | [ML 从业者路径](90_学习/pathways/09_ml_practitioner.md) 方向 B（CV） |
-| 想进入 AI 产品领域 | [AI 产品经理路径](90_学习/pathways/13_product_manager.md) |
+| 想做 AI 研究 | [AI 研究者路径](90_学习/02_学习路径/03_ai_researcher.md) |
+| 想补充 CV 能力 | [ML 从业者路径](90_学习/02_学习路径/09_ml_practitioner.md) 方向 B（CV） |
+| 想进入 AI 产品领域 | [AI 产品经理路径](90_学习/02_学习路径/13_product_manager.md) |
 
 ---
 
-*本路径聚焦 LLM 应用开发。如需深入模型训练或预训练，建议先完成 [ML 从业者路径](90_学习/pathways/09_ml_practitioner.md) 的 Phase 1-3。*
+*本路径聚焦 LLM 应用开发。如需深入模型训练或预训练，建议先完成 [ML 从业者路径](90_学习/02_学习路径/09_ml_practitioner.md) 的 Phase 1-3。*
 
 ## Related
 

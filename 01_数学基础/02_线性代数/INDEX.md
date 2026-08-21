@@ -20,7 +20,7 @@ name_en: "Linear Algebra"
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[01_数学基础/02_线性代数/03_线性代数|Linear Algebra]] | Linear algebra knowledge system: matrix operations, decomposition and gradient geometry | ML engineers / DL researchers / students |
-| [[01_数学基础/02_线性代数/Linear_Algebra_for_dummy|Linear Algebra for dummy]] | Linear algebra beginner guide: core concepts for deep learning | beginners / DL learners |
+| [[01_数学基础/README.md|Linear Algebra for dummy]] | Linear algebra beginner guide: core concepts for deep learning | beginners / DL learners |
 | [[01_数学基础/02_线性代数/ApacheCN_Linear_Algebra_Track|ApacheCN 线性代数主线]] | ApacheCN 线性代数主线概览：docs/linalg/ 下 MIT 18.06 中文笔记 35 讲，覆盖向量空间、特征值、SVD、伪逆与线性变换。 | - | - |
 
 ## Related

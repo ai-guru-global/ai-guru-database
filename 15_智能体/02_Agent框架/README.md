@@ -33,7 +33,7 @@ name_zh: "Agent 开发框架"
 | [agno Deep Dive](./03_Agno_深入分析.md) | 现代化 Agent 框架：知识库、记忆系统、多 Agent 协作 | 快速构建生产级 Agent |
 | [LangChain Deep Dive](./10_LangChain_深入分析.md) | LLM 应用框架：组件化、LCEL、工具集成 | 开发者、架构师 |
 | [LangChain Agents Deep Dive](./09_LangChain_Agent_深入分析.md) | 工具调用框架：ReAct、Plan-and-Execute、工具绑定 | Agent 开发、工具集成 |
-| [Transformers Agents Deep Dive](./09_14_Transformers_Agent_深入分析.md) | HuggingFace Agent 框架：代码执行、多模态工具 | HF 生态、多模态 Agent |
+| Transformers Agents Deep Dive | HuggingFace Agent 框架：代码执行、多模态工具 | HF 生态、多模态 Agent |
 | [CrewAI Deep Dive](./07_CrewAI_深入分析.md) | 多 Agent 协作框架：角色定义、任务编排、团队协作 | 快速原型、团队协作 |
 | [AutoGen Deep Dive](./05_AutoGen_深入分析.md) | 微软多 Agent 框架：对话式协作、Group Chat、Human-in-the-loop | 企业应用、代码协作 |
 

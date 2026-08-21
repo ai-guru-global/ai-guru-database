@@ -47,12 +47,12 @@ name_zh: "学习路径 ↔ 概念交叉映射"
 
 | 概念阶段 | [[90_学习/02_学习路径/08_llm_engineer|LLM 工程师]] | [[90_学习/02_学习路径/09_ml_practitioner|ML 实践者]] | [[90_学习/02_学习路径/03_ai_researcher|AI 研究员]] | [[90_学习/02_学习路径/10_mlops_engineer|MLOps 工程师]] | [[90_学习/02_学习路径/11_nlp_engineer|NLP 工程师]] | [[90_学习/02_学习路径/04_cv_engineer|CV 工程师]] | [[90_学习/02_学习路径/13_product_manager|产品经理]] | [[90_学习/02_学习路径/01_absolute_beginner|零基础]] |
 |---------|-----------|-----------|-----------|-----------|-----------|---------|---------|---------|
-| [Stage 0 觉醒](90_学习/concepts/02_stage0_awakening.md) | 掌握 | 掌握 | 掌握 | 掌握 | 掌握 | 掌握 | 掌握 | 掌握 |
-| [Stage 1 基础](90_学习/concepts/03_stage1_foundation.md) | 掌握 | 精通 | 精通 | 掌握 | 精通 | 精通 | 了解 | 了解 |
-| [Stage 2 核心技术](90_学习/concepts/04_stage2_core_tech.md) | 精通(Transformer/LLM) | 精通 | 精通 | 了解 | 精通(NLP) | 精通(CV) | 了解 | 可选 |
-| [Stage 3 工程](90_学习/concepts/05_stage3_engineering.md) | 精通(RAG/Agent) | 掌握 | 了解 | 精通 | 掌握 | 掌握 | 了解 | 可选 |
-| [Stage 4 前沿](90_学习/concepts/06_stage4_frontier.md) | 掌握 | 了解 | 精通 | 了解 | 掌握 | 掌握 | 了解 | 可选 |
-| [Stage 5 职业化](90_学习/concepts/07_stage5_professional.md) | 掌握 | 掌握 | 可选 | 掌握 | 掌握 | 掌握 | 精通 | 可选 |
+| [Stage 0 觉醒](90_学习/01_概念认知/02_stage0_awakening.md) | 掌握 | 掌握 | 掌握 | 掌握 | 掌握 | 掌握 | 掌握 | 掌握 |
+| [Stage 1 基础](90_学习/01_概念认知/03_stage1_foundation.md) | 掌握 | 精通 | 精通 | 掌握 | 精通 | 精通 | 了解 | 了解 |
+| [Stage 2 核心技术](90_学习/01_概念认知/04_stage2_core_tech.md) | 精通(Transformer/LLM) | 精通 | 精通 | 了解 | 精通(NLP) | 精通(CV) | 了解 | 可选 |
+| [Stage 3 工程](90_学习/01_概念认知/05_stage3_engineering.md) | 精通(RAG/Agent) | 掌握 | 了解 | 精通 | 掌握 | 掌握 | 了解 | 可选 |
+| [Stage 4 前沿](90_学习/01_概念认知/06_stage4_frontier.md) | 掌握 | 了解 | 精通 | 了解 | 掌握 | 掌握 | 了解 | 可选 |
+| [Stage 5 职业化](90_学习/01_概念认知/07_stage5_professional.md) | 掌握 | 掌握 | 可选 | 掌握 | 掌握 | 掌握 | 精通 | 可选 |
 
 ---
 
@@ -90,7 +90,7 @@ name_zh: "学习路径 ↔ 概念交叉映射"
 
 | 阶段 | 深度 | 重点概念 | 推荐资源 |
 |------|------|---------|---------|
-| Stage 0 | 掌握 | AI 发展史、四次浪潮 | [[90_学习/Courses/microsoft/L01_Introduction_and_History_of_AI\|AI 历史]] |
+| Stage 0 | 掌握 | AI 发展史、四次浪潮 | [[90_学习/Courses/microsoft/L01_Introduction_and_History_of_AI|AI 历史]] |
 | Stage 1 | **精通** | 全部基础概念（含数学推导） | [[90_学习/05_参考资料/books/11_deep_learning_goodfellow|花书]] |
 | Stage 2 | **精通** | 全部核心技术（含从零实现） | [[90_学习/05_参考资料/books/14_build_llm_from_scratch_raschka|Build LLM]]、[[90_学习/05_参考资料/Projects/01_papers_with_code]] 全部 |
 | Stage 3 | 了解 | 工程实践（偏理论则可选） | [[90_学习/05_参考资料/books/03_nlp_with_transformers|NLP w/ Transformers]] |
@@ -234,11 +234,11 @@ graph TD
 - [[90_学习/concepts/index|概念分阶索引]] — 知识地图
 - [[90_学习/pathways/index|学习路径索引]] — 角色路线
 - [[90_学习/guides/index|学习指南索引]] — 方法论
-- [[90_学习/References/books/|书籍参考]] — 书籍库
+- [[90_学习/README.md|书籍参考]] — 书籍库
 - [[90_学习/05_参考资料/Projects/01_papers_with_code|论文导读]] — 论文库
 - [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图 2026]]
 - [[05_大模型/]] — 大模型章节
 - [[03_深度学习/]] — 深度学习章节
 - [[15_智能体/]] — Agent 章节
 
-> **关联**: → [[90_学习/concepts/index|概念分阶]] | [[90_学习/pathways/index|学习路径]] | [[90_学习/guides/index|学习指南]] | [[90_学习/References/books/|书籍]] | [[90_学习/05_参考资料/Projects/01_papers_with_code|论文]]
+> **关联**: → [[90_学习/concepts/index|概念分阶]] | [[90_学习/pathways/index|学习路径]] | [[90_学习/guides/index|学习指南]] | [[90_学习/README.md|书籍]] | [[90_学习/05_参考资料/Projects/01_papers_with_code|论文]]

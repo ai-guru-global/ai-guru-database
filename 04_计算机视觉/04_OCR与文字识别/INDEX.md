@@ -20,7 +20,7 @@ OCR 与文字识别（Text Recognition）— 场景文字检测与识别（scene
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[04_计算机视觉/04_OCR与文字识别/OCR_Text_Recognition|OCR Text Recognition]] | OCR knowledge system: CRNN, CTC and Transformer-based OCR | CV engineers / document AI developers |
-| [[04_计算机视觉/04_OCR与文字识别/OCR_for_dummy|OCR for dummy]] | OCR beginner guide: from traditional methods to vision-language models | beginners / CV learners |
+| [[04_计算机视觉/README.md|OCR for dummy]] | OCR beginner guide: from traditional methods to vision-language models | beginners / CV learners |
 
 ## Related
 

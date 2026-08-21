@@ -20,7 +20,7 @@ name_zh: "Spring AI 深度解析"
 
 > **一句话理解**: Spring AI 是 Spring 官方的 AI 应用框架 —— 用 Spring 的方式统一接入 LLM、构建 RAG、编排 Agent，让 Java 开发者用熟悉的编程模型构建企业级 AI 应用。
 
-> **相关文档**: [Java 生态 AI 概览](01_数学基础/11_Java生态与AI/02_Java生态与AI_概览.md) | [Spring AI 架构设计](../../12_架构基建/02_架构概览/Spring_AI_Architecture) | [Spring AI RAG 深度解析](14_RAG系统/06_RAG框架/07_Spring_AI_02_RAG_深入分析.md) | [Spring AI 网关与安全](12_架构基建/11_AI网关/13_Spring_AI网关_安全.md)
+> **相关文档**: [Java 生态 AI 概览](01_数学基础/11_Java生态与AI/02_Java生态与AI_概览.md) | [Spring AI 架构设计](../../12_架构基建/02_架构概览/Spring_AI_Architecture) | [Spring AI RAG 深度解析](14_RAG系统/06_RAG框架/07_Spring_AI_RAG_深入分析.md) | [Spring AI 网关与安全](12_架构基建/11_AI网关/13_Spring_AI网关_安全.md)
 
 ---
 

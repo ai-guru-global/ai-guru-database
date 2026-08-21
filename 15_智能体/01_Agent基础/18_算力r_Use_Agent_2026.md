@@ -789,7 +789,7 @@ Computer Use Agent 成本模型 (每100步操作):
 - [[15_智能体/01_Agent基础/MCP_Implementation_Guide|MCP实现指南]] — Agent工具调用协议
 - [[15_智能体/03_Agent工作流/02_Agentic_工作流_设计_模式_2026|Agentic Workflow设计模式]] — 任务规划与分解
 - [[15_智能体/15_课程笔记/Microsoft_AI_Agents_L15_Browser_Use|Browser Use]] — 浏览器级Agent
-- [[15_智能体/01_Agent基础/Agent_Safety_Evaluation_for_dummy|Agent安全评估]] — 安全沙箱设计
+- [[15_智能体/README.md|Agent安全评估]] — 安全沙箱设计
 - [[15_智能体/01_Agent基础/06_Agent_生产_部署_操作手册|Agent生产部署]] — 部署运维实践
 - [[04_计算机视觉/08_多模态视觉/index|视觉语言模型]] — 屏幕理解基础
 - [[16_编程/05_开发工具/index|Playwright]] — Web自动化基础

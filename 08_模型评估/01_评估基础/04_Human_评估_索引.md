@@ -23,7 +23,7 @@ name_zh: "人工评估专题"
 ## Related
 
 - [[08_模型评估/index|模型评估首页]]
-- [[08_模型评估/04_评估工具/Online_Evaluation_index|Online Evaluation]]
+- [[08_模型评估/README.md|Online Evaluation]]
 - [[09_测试/index|测试]]
 
 ## 专题深度解析

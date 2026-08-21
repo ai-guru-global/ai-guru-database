@@ -207,7 +207,7 @@ This page indexes the contents of `业界观点`.
 
 ## 关联导航
 
-- [[19_业界观点/Industry_Voices-in-nutshell|业界观点速览 (nutshell)]]
+- [[19_业界观点/README.md|业界观点速览 (nutshell)]]
 - [[19_业界观点/26_Wang_Huiwen_王慧文/02_Wang_Huiwen_2026_更新|王慧文 2026 动态]]
 
 ## 统计

@@ -57,7 +57,7 @@ Stage 3: 工程实践（理解 AI 产品的工程边界）
 
 **🎯 目标**：理解 AI 是什么，它能做什么、不能做什么，建立对 AI 能力的直觉。
 
-**📚 核心概念**：[Stage 0: AI 觉醒](../concepts/02_stage0_awakening.md)（全量）
+**📚 核心概念**：[Stage 0: AI 觉醒](90_学习/01_概念认知/02_stage0_awakening.md)（全量）
 
 **🔗 深入阅读**：
 - [AI 基础概念入门](00_入门/01_基础入门/02_AI基础.md)
@@ -80,13 +80,13 @@ Stage 3: 工程实践（理解 AI 产品的工程边界）
 
 **🎯 目标**：理解 AI 产品的工程约束，知道 AI 项目为什么常常延期和失败。
 
-**📚 核心概念**：[Stage 1 基础概念](90_学习/concepts/03_stage1_foundation.md) + [Stage 3 工程实践](90_学习/concepts/05_stage3_engineering.md)
+**📚 核心概念**：[Stage 1 基础概念](90_学习/01_概念认知/03_stage1_foundation.md) + [Stage 3 工程实践](90_学习/01_概念认知/05_stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [README_for_dummy.md](17_伦理安全/README_for_dummy.md) — 新手导航（快速浏览）
-- [RAG 系统（小白版）](14_RAG系统/01_RAG基础/RAG_Systems_for_dummy.md) — 理解 AI + 知识库的工程路径
-- [部署与推理（小白版）](10_部署推理/01_部署基础/Deployment_Inference_for_dummy.md) — 理解 AI 的性能与成本
-- [模型评估（小白版）](08_模型评估/01_评估基础/Model_Evaluation_for_dummy.md) — 理解 AI 质量评估的复杂性
+- [README_for_dummy.md](17_伦理安全/README.md) — 新手导航（快速浏览）
+- [RAG 系统（小白版）](14_RAG系统/README.md) — 理解 AI + 知识库的工程路径
+- [部署与推理（小白版）](10_部署推理/README.md) — 理解 AI 的性能与成本
+- [模型评估（小白版）](08_模型评估/README.md) — 理解 AI 质量评估的复杂性
 
 **💡 产品经理必须理解的技术事实**：
 ```
@@ -117,10 +117,10 @@ AI 成本结构：
 
 **🎯 目标**：掌握 AI 产品设计的核心方法论，知道如何将 AI 能力转化为用户价值。
 
-**📚 核心概念**：[Stage 3 工程实践 — Agent / 工作流部分](90_学习/concepts/05_stage3_engineering.md)（重点理解 Agent 能做什么）
+**📚 核心概念**：[Stage 3 工程实践 — Agent / 工作流部分](90_学习/01_概念认知/05_stage3_engineering.md)（重点理解 Agent 能做什么）
 
 **🔗 深入阅读**：
-- [AI Agent（小白版）](15_智能体/01_Agent基础/AI_Agents_for_dummy.md) — 理解 AI Agent 的能力边界
+- [AI Agent（小白版）](15_智能体/README.md) — 理解 AI Agent 的能力边界
 - [AI 工作流（速查版）](15_智能体/03_Agent工作流/06_工作流_简明指南.md) — 理解 AI 工作流设计
 - [AI 工具与实践指南](00_入门/02_技术概览/05_AI技术全景.md) — 理解 AI 工具生态
 
@@ -204,7 +204,7 @@ AI 成本结构：
 
 **🎯 目标**：理解 AI 的发展趋势，制定 AI 产品路线图。
 
-**📚 核心概念**：[Stage 4 前沿探索](90_学习/concepts/06_stage4_frontier.md)（浏览为主）
+**📚 核心概念**：[Stage 4 前沿探索](90_学习/01_概念认知/06_stage4_frontier.md)（浏览为主）
 
 **🔗 深入阅读**：
 - [AI 未来趋势展望](00_入门/04_伦理与未来/03_AI未来趋势.md)
@@ -235,7 +235,7 @@ Step 5: 迭代计划（如何持续优化 AI 效果？）
 
 ## 里程碑自测
 
-完成本路径后，请回顾 [07_milestones.md](90_学习/guides/07_milestones.md) 中 Stage 0-1 的自测题，重点检查：
+完成本路径后，请回顾 [07_milestones.md](90_学习/04_实践指南/07_milestones.md) 中 Stage 0-1 的自测题，重点检查：
 - [ ] 能理解 AI 术语并与 AI 团队有效沟通
 - [ ] 能评估 AI 产品需求的可行性和成本
 - [ ] 能设计包含 AI 功能的完整产品方案
@@ -245,14 +245,14 @@ Step 5: 迭代计划（如何持续优化 AI 效果？）
 
 | 你的打算 | 推荐去向 |
 |---------|---------|
-| 想动手实现 AI 产品原型 | [LLM 工程师路径](90_学习/pathways/08_llm_engineer.md)（专注 Phase 2-3） |
-| 想全面理解 AI 技术 | [ML 从业者路径](90_学习/pathways/09_ml_practitioner.md) |
+| 想动手实现 AI 产品原型 | [LLM 工程师路径](90_学习/02_学习路径/08_llm_engineer.md)（专注 Phase 2-3） |
+| 想全面理解 AI 技术 | [ML 从业者路径](90_学习/02_学习路径/09_ml_practitioner.md) |
 | 想深入某个行业 | 参见 [13_AI_Applications_Industry/](../../13_AI_Applications_Industry/) 各行业深度内容 |
 | 准备 AI PM 面试 | [AI 面试指南 — AI Product Manager](../../11_Interviews/AI_Product_Manager/) |
 
 ---
 
-*本路径专注于 AI 产品思维，不要求你写代码。但如果你有兴趣动手实践，强烈建议试试 [LLM 工程师路径](90_学习/pathways/08_llm_engineer.md) 的 Phase 2（Prompt Engineering），亲手体验 AI 的能力边界会大大加深你的产品直觉。*
+*本路径专注于 AI 产品思维，不要求你写代码。但如果你有兴趣动手实践，强烈建议试试 [LLM 工程师路径](90_学习/02_学习路径/08_llm_engineer.md) 的 Phase 2（Prompt Engineering），亲手体验 AI 的能力边界会大大加深你的产品直觉。*
 
 ## Related
 

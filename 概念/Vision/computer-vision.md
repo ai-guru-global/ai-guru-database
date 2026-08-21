@@ -107,7 +107,7 @@ OCR系统由文字检测+文字识别两阶段组成。经典CRNN架构采用CNN
 
 - [[20_论文精读/08_计算机视觉/06_ResNet_深入分析]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv, deep-learning)
 - [[04_计算机视觉/README]] — 05 计算机视觉 (Computer Vision) (共享: cnn, cv)
-- [[04_计算机视觉/03_图像分割/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, cv)
+- [[04_计算机视觉/README.md]] — 图像分割 - 小白版 ✂️ (共享: cnn, cv)
 - [[04_计算机视觉/07_视频生成/README]] — AI视频生成 (Video Generation) (共享: cnn, cv)
 - [[治理/cv-deep-learning]]
 

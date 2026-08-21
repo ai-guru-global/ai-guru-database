@@ -20,7 +20,7 @@ AI 供应链安全（AI Supply Chain Security）— 模型投毒（model poisoni
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[17_伦理安全/08_AI供应链安全/AI_Supply_Chain_Security|AI Supply Chain Security]] | AI supply chain security knowledge system: model poisoning, backdoor detection and governance | security researchers / model security engineers |
-| [[17_伦理安全/08_AI供应链安全/AI_Supply_Chain_Security_for_dummy|AI Supply Chain Security for dummy]] | AI supply chain security beginner guide: Hugging Face model security practices | beginners / security learners |
+| [[17_伦理安全/README.md|AI Supply Chain Security for dummy]] | AI supply chain security beginner guide: Hugging Face model security practices | beginners / security learners |
 
 ## Related
 

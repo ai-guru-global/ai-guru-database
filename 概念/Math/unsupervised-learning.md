@@ -114,7 +114,7 @@ name_zh: "无监督学习"
 
 - [[02_机器学习/04_集成学习/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: ml, unsupervised)
 - [[02_机器学习/05_特征工程/01_特征工程]] — 特征工程 (Feature Engineering) (共享: ml, unsupervised)
-- [[02_机器学习/05_特征工程/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: ml, unsupervised)
+- [[02_机器学习/README.md]] — 特征工程 - 小白版 (共享: ml, unsupervised)
 - [[02_机器学习/ML-in-nutshell]] — 机器学习速成指南 (共享: ml, unsupervised)
 - [[概念/Math/time-series-analysis.md|time-series-analysis]]
 - [[概念/General/automl.md|automl]]

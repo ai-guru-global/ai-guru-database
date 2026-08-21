@@ -63,7 +63,7 @@ name_zh: "Agent Skills 文档索引"
 | 文档 | 定位 | 适合读者 | 预估阅读时间 |
 |------|------|---------|-------------|
 | **[12_技能_简明指南.md](15_智能体/05_Agent技能/12_技能_简明指南.md)** | 速览版 / 书写速查手册 | 所有写 Skill 的人 | 30 分钟 |
-| **[05_Agent技能_Practical_Guide.md](15_智能体/05_Agent技能/05_Agent技能_Practical_Guide.md)** | 实战操作手册 | 需要案例和步骤的开发者 | 1 小时 |
+| **[05_Agent技能_Practical_Guide.md](15_智能体/README.md)** | 实战操作手册 | 需要案例和步骤的开发者 | 1 小时 |
 | **[02_Agent_技能_深入分析.md](15_智能体/05_Agent技能/02_Agent_技能_深入分析.md)** | 理论规范大全 | 需要全面掌握标准的人 | 2-3 小时 |
 | **[04_Agent_技能_Multi_Role_分析.md](15_智能体/05_Agent技能/04_Agent_技能_Multi_Role_分析.md)** | 团队协作视角 | 团队 Lead、架构师、PM | 1-2 小时 |
 | **[03_Agent_技能_生态_Catalog.md](15_智能体/05_Agent技能/03_Agent_技能_生态_Catalog.md)** | 生态选型索引 | 需要找现成 Skill 的人 | 20 分钟 |

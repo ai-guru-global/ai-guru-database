@@ -27,8 +27,8 @@ name_zh: "Agentic Coding 工具"
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
 | [Agentic Coding Tools Overview](./01_Agent编程_工具_概览.md) | AI Agent 全景图 (20+ 工具分层对比) | 全角色、入门选型 |
-| [Claude Code Deep Dive](./02_Claude_Code_深入分析.md) | Anthropic 官方 Agent 编程 CLI 深度解析 | 开发者、评估师 |
-| [OpenCode Deep Dive](./07_OpenCode_开源编程_Deep_Dive.md) | 自主执行式 AI 编程 Agent 架构与实践 | 开发者、评估师 |
+| [Claude Code Deep Dive](16_编程/05_开发工具/02_Claude_Code_深入分析.md) | Anthropic 官方 Agent 编程 CLI 深度解析 | 开发者、评估师 |
+| OpenCode Deep Dive | 自主执行式 AI 编程 Agent 架构与实践 | 开发者、评估师 |
 | [Windsurf / Cursor / Devin](./08_Windsurf_Cursor_Devin_Dive.md) | Agentic Coding CLI 全景对比 | 开发者、产品经理 |
 | [International Agentic Tools](./06_International_Agentic_工具.md) | 国际工具 (Aider/Continue/CodeRabbit/Cody/Tabnine/Codeium) | 开发者、选型参考 |
 | [Aider Deep Dive](./02_Aider_深入分析.md) | 开源 CLI 代码编辑工具：Git 集成、多文件重构 | 开发者 |

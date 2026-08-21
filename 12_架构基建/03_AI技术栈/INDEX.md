@@ -27,7 +27,7 @@ This page indexes the contents of `12_架构基建/03_AI技术栈`.
 - [[12_架构基建/03_AI技术栈/AI_Stack_Production_Toolchain|AI Stack Production Toolchain]]
 - [[12_架构基建/03_AI技术栈/AI_Stack_Training_Launchers_Guide|AI Stack Training Launchers Guide]]
 - [[12_架构基建/03_AI技术栈/11_HAMi_深入分析|Hami Deep Dive]]
-- [[12_架构基建/03_AI技术栈/HAMi_for_dummy|Hami For Dummy]]
+- [[12_架构基建/README.md|Hami For Dummy]]
 - [[12_架构基建/03_AI技术栈/12_HAMi_Operation_指南|Hami Operation Guide]]
 - [[12_架构基建/03_AI技术栈/14_Safetensors_Hub_Management|Safetensors Hub Management]]
 

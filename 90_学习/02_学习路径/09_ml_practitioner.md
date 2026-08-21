@@ -54,12 +54,12 @@ Phase 6: 完成端到端项目
 
 **🎯 目标**：补齐数学基础，理解为什么 AI 需要线性代数和概率统计。
 
-**📚 核心概念**：[Stage 1: 基础概念](90_学习/concepts/03_stage1_foundation.md)（重点关注损失函数、梯度下降相关概念）
+**📚 核心概念**：[Stage 1: 基础概念](90_学习/01_概念认知/03_stage1_foundation.md)（重点关注损失函数、梯度下降相关概念）
 
 **🔗 深入阅读**：
-- [线性代数（小白版）](01_数学基础/02_线性代数/Linear_Algebra_for_dummy.md)
-- [概率统计（小白版）](01_数学基础/03_概率统计/Probability_Statistics_for_dummy.md)
-- [数据结构与算法（小白版）](01_数学基础/07_数据结构与算法/Data_Structures_Algorithms_for_dummy.md)
+- [线性代数（小白版）](01_数学基础/README.md)
+- [概率统计（小白版）](01_数学基础/README.md)
+- [数据结构与算法（小白版）](01_数学基础/07_数据结构与算法/01_Data_Structures_Algorithms.md)
 
 **💡 重点**：
 - 线性代数：向量、矩阵、点积（理解神经网络中的矩阵运算）
@@ -74,12 +74,12 @@ Phase 6: 完成端到端项目
 
 **🎯 目标**：掌握经典 ML 的三大范式：监督学习、无监督学习、特征工程。
 
-**📚 核心概念**：[Stage 1](90_学习/concepts/03_stage1_foundation.md) + [Stage 2 前半](90_学习/concepts/04_stage2_core_tech.md)
+**📚 核心概念**：[Stage 1](90_学习/01_概念认知/03_stage1_foundation.md) + [Stage 2 前半](90_学习/01_概念认知/04_stage2_core_tech.md)
 
 **🔗 深入阅读**：
-- [监督学习（小白版）](02_机器学习/02_监督学习/Supervised_Learning_for_dummy.md)
-- [无监督学习（小白版）](02_机器学习/03_无监督学习/Unsupervised_Learning_for_dummy.md)
-- [特征工程（小白版）](02_机器学习/05_特征工程/Feature_Engineering_for_dummy.md)
+- [监督学习（小白版）](02_机器学习/README.md)
+- [无监督学习（小白版）](02_机器学习/README.md)
+- [特征工程（小白版）](02_机器学习/README.md)
 - [监督学习（完整版）](02_机器学习/02_监督学习/03_监督学习.md)
 
 **💡 动手实践建议**：
@@ -99,12 +99,12 @@ Phase 6: 完成端到端项目
 
 **🎯 目标**：理解神经网络、反向传播、CNN、Transformer 的工作原理。
 
-**📚 核心概念**：[Stage 2: 核心技术](90_学习/concepts/04_stage2_core_tech.md)
+**📚 核心概念**：[Stage 2: 核心技术](90_学习/01_概念认知/04_stage2_core_tech.md)
 
 **🔗 深入阅读**：
-- [神经网络核心（小白版）](03_深度学习/02_神经网络核心/Neural_Network_Core_for_dummy.md)
-- [优化（小白版）](07_模型训练/03_训练优化/Optimization_for_dummy.md)
-- [Transformer 革命（小白版）](05_大模型/04_Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- [神经网络核心（小白版）](03_深度学习/README.md)
+- [优化（小白版）](07_模型训练/README.md)
+- [Transformer 革命（小白版）](05_大模型/03_Transformer架构/03_Transformer_Revolution.md)
 
 **💡 动手实践建议**：
 - 用 PyTorch 实现一个简单的手写数字识别（MNIST）
@@ -125,25 +125,25 @@ Phase 6: 完成端到端项目
 
 #### 方向 A: NLP / 大模型（推荐）
 
-- [序列模型（小白版）](05_大模型/02_序列模型/Sequence_Models_for_dummy.md)
-- [LLM 架构（小白版）](05_大模型/04_LLM架构/LLM_Architectures_for_dummy.md)
-- [微调技术（小白版）](05_大模型/06_微调技术/Fine_tuning_Techniques_for_dummy.md)
-- [提示词工程（小白版）](05_大模型/07_提示工程/Prompt_Engineering_for_dummy.md)
+- [序列模型（小白版）](05_大模型/README.md)
+- [LLM 架构（小白版）](05_大模型/README.md)
+- [微调技术（小白版）](05_大模型/README.md)
+- [提示词工程（小白版）](05_大模型/README.md)
 
 **动手项目**：用 Hugging Face PEFT 库对 LLaMA 做 LoRA 微调
 
 #### 方向 B: 计算机视觉
 
-- [图像分类与检测（小白版）](04_计算机视觉/02_图像分类与检测/Image_Classification_Detection_for_dummy.md)
-- [生成模型（小白版）](04_计算机视觉/06_生成模型/Generative_Models_for_dummy.md)
-- [多模态视觉（小白版）](04_计算机视觉/08_多模态视觉/Multimodal_Vision_for_dummy.md)
+- [图像分类与检测（小白版）](04_计算机视觉/README.md)
+- [生成模型（小白版）](04_计算机视觉/README.md)
+- [多模态视觉（小白版）](04_计算机视觉/README.md)
 
 **动手项目**：用 diffusers 库跑一遍 Stable Diffusion 图像生成
 
 #### 方向 C: 强化学习 / Agent
 
-- [强化学习基础（小白版）](06_强化学习/01_强化学习基础/RL_Foundations_for_dummy.md)
-- [AI Agent（小白版）](15_智能体/01_Agent基础/AI_Agents_for_dummy.md)
+- [强化学习基础（小白版）](06_强化学习/README.md)
+- [AI Agent（小白版）](15_智能体/README.md)
 
 **动手项目**：用 LangGraph 构建一个能调用搜索工具的对话 Agent
 
@@ -153,13 +153,13 @@ Phase 6: 完成端到端项目
 
 **🎯 目标**：掌握将模型部署上线的完整工程能力。
 
-**📚 核心概念**：[Stage 3: 工程实践](90_学习/concepts/05_stage3_engineering.md)
+**📚 核心概念**：[Stage 3: 工程实践](90_学习/01_概念认知/05_stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [部署与推理（小白版）](10_部署推理/01_部署基础/Deployment_Inference_for_dummy.md)
-- [RAG 系统（小白版）](14_RAG系统/01_RAG基础/RAG_Systems_for_dummy.md)
-- [MLOps 流水线（小白版）](11_模型运维/01_MLOps基础/MLOps_Pipeline_for_dummy.md)
-- [模型评估（小白版）](08_模型评估/01_评估基础/Model_Evaluation_for_dummy.md)
+- [部署与推理（小白版）](10_部署推理/README.md)
+- [RAG 系统（小白版）](14_RAG系统/README.md)
+- [MLOps 流水线（小白版）](11_模型运维/README.md)
+- [模型评估（小白版）](08_模型评估/README.md)
 - [AI 工作流（速查版）](15_智能体/03_Agent工作流/06_工作流_简明指南.md)
 
 **💡 动手实践建议**：
@@ -194,14 +194,14 @@ Phase 6: 完成端到端项目
 
 ## 里程碑自测
 
-完成本路径后，请回顾 [07_milestones.md](90_学习/guides/07_milestones.md) 中 Stage 1-3 的自测题。
+完成本路径后，请回顾 [07_milestones.md](90_学习/04_实践指南/07_milestones.md) 中 Stage 1-3 的自测题。
 
 ## 下一步推荐
 
 | 你的打算 | 推荐去向 |
 |---------|---------|
-| 想专注 LLM 应用开发 | [LLM 工程师路径](90_学习/pathways/08_llm_engineer.md) |
-| 想做 AI 研究/读论文 | [AI 研究者路径](90_学习/pathways/03_ai_researcher.md) |
+| 想专注 LLM 应用开发 | [LLM 工程师路径](90_学习/02_学习路径/08_llm_engineer.md) |
+| 想做 AI 研究/读论文 | [AI 研究者路径](90_学习/02_学习路径/03_ai_researcher.md) |
 | 想系统评估/测试 AI | [Agent 评估框架](../../15_智能体/07_Agent评估/README.md) |
 
 ---

@@ -667,7 +667,7 @@ print(f"Calibration: {calibration_error(y_true, y_prob, sensitive_attr):.3f}")
 ### 前置知识
 
 - [强化学习基础](06_强化学习/01_强化学习基础/03_RL基础.md) - 理解 RLHF 中的 RL 算法
-- [Transformer 架构](05_大模型/04_Transformer_Revolution/09_03_Transformer架构架构_Revolution.md) - LLM 基础
+- [Transformer 架构](05_大模型/03_Transformer架构/03_Transformer_Revolution.md) - LLM 基础
 - [监督学习](02_机器学习/02_监督学习/03_监督学习.md) - SFT 阶段原理
 
 ### 进阶推荐

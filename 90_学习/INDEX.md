@@ -213,7 +213,7 @@ AI 学习中心（Learning Center）— 课程笔记、学习路径（learning p
 
 ## 相关文档
 
-- [[90_学习/Learning-in-nutshell|学习中心速览 (nutshell)]]
+- [[90_学习/README.md|学习中心速览 (nutshell)]]
 
 ## 统计
 

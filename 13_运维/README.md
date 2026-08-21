@@ -38,7 +38,7 @@ name_zh: "运维与可观测性"
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
 | [AI_Ops_2026](./01_AIOps基础/01_AI运维2026.md) | AI 运维全栈指南：监控、日志、成本控制、灾难恢复 | 架构师、SRE |
-| [AI_Ops_for_dummy](./01_AIOps基础/AI_Ops_for_dummy.md) | AI 运维入门：基础概念与实践 | 初学者 |
+| AI_Ops_for_dummy | AI 运维入门：基础概念与实践 | 初学者 |
 | [AIOps-in-nutshell](./01_AIOps基础/02_AIOps简明指南.md) | AI 运维速查：核心概念快速掌握 | 快速入门 |
 
 ## 运维实践
@@ -90,8 +90,8 @@ name_zh: "运维与可观测性"
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
 | [AI 场景 FinOps](./05_成本管理/02_FinOps_for_AI.md) | 成本分摊、利用率监控、预算与告警 | FinOps、平台工程师 |
-| [GPU 成本优化](./05_成本管理/GPU_Cost_02_优化.md) | 利用率提升、调度优化、弹性伸缩、模型压缩 | 平台/SRE |
-| [成本优化](./02_SRE与可靠性/09_成本管理_Optimization_AI_Deep_Dive.md) | 推理降本六板斧（批处理/量化/缓存/路由/投机/KV）、FinOps | FinOps、平台工程师 |
+| GPU 成本优化 | 利用率提升、调度优化、弹性伸缩、模型压缩 | 平台/SRE |
+| 成本优化 | 推理降本六板斧（批处理/量化/缓存/路由/投机/KV）、FinOps | FinOps、平台工程师 |
 
 ## 保留在本章的工具页
 
@@ -113,7 +113,7 @@ name_zh: "运维与可观测性"
 | [AI Stack 容器与运行时](12_架构基建/03_AI技术栈/01_AI技术栈_容器_Runtime_指南.md) | nerdctl / crictl / ctr / docker / podman | SRE、平台工程师 |
 | [AI Stack GPU 监控](12_架构基建/03_AI技术栈/04_AI技术栈_GPU_监控_指南.md) | nvidia-smi / ppu-smi / rocm-smi / pmon | 运维、SRE |
 | [AI Stack K8s 编排](12_架构基建/03_AI技术栈/06_AI技术栈_K8s_Operations_指南.md) | kubectl / helm 排障与包管理 | K8s 工程师 |
-| [AI Stack 专属工具](12_架构基建/03_AI技术栈/03_AI技术栈_Exclusive_Tools_Guide.md) | stackops / aioController | AI Stack 运维 |
+| [AI Stack 专属工具](12_架构基建/README.md) | stackops / aioController | AI Stack 运维 |
 
 ---
 
@@ -152,7 +152,7 @@ name_zh: "运维与可观测性"
 - [[13_运维/02_SRE与可靠性/13_Guardrails_深入分析]] — Guardrails AI: LLM 安全护栏
 - [[11_模型运维/08_可观测性/16_PromptLayer_深入分析]] — PromptLayer: 提示词管理与追踪
 - [[13_运维/01_AIOps基础/AIOps-in-nutshell]] — AI Ops 速成指南
-- [[13_运维/01_AIOps基础/AI_Ops_for_dummy]] — AI Ops 入门指南
+- [[13_运维/README.md]] — AI Ops 入门指南
 - [[13_运维/README]] — 16 AI Ops — 小白版 📡
 - [[12_架构基建/AI_Stack_Production_Toolchain]] — AI Stack 生产工具链总览
 - [[12_架构基建/AI_Stack_Container_Runtime_Guide]] — AI Stack 容器与运行时指南

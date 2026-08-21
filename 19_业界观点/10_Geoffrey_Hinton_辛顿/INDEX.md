@@ -97,7 +97,7 @@ Geoffrey Hinton 是当代深度学习最重要的奠基人。他 1986 年与 Rum
 
 ## 与 LeCun 的路线之争
 
-Hinton 与 [[19_业界观点/28_Yann_LeCun_杨立昆/01_关于|LeCun]] 在三个问题上分歧明显：(1) LLM 是否是 AGI 路径；(2) AI 是否构成存在性风险；(3) 反向传播是否是终极算法。Hinton 倾向承认 LLM 能力但担忧后果，LeCun 则认为 LLM 不是 AGI 路径、需世界模型。完整对比见 [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 世界模型之争]]。
+Hinton 与 [[19_业界观点/28_Yann_LeCun_杨立昆/01_关于|LeCun]] 在三个问题上分歧明显：(1) LLM 是否是 AGI 路径；(2) AI 是否构成存在性风险；(3) 反向传播是否是终极算法。Hinton 倾向承认 LLM 能力但担忧后果，LeCun 则认为 LLM 不是 AGI 路径、需世界模型。完整对比见 [[19_业界观点/25_Talks_Synthesis_综合演讲/05_Hinton_vs_LeCun_世界模型_Debate.md|Hinton vs LeCun 世界模型之争]]。
 
 | 议题 | Hinton | LeCun |
 |------|--------|-------|
@@ -138,7 +138,7 @@ Hinton 与 [[19_业界观点/28_Yann_LeCun_杨立昆/01_关于|LeCun]] 在三个
 | 入门 | [[19_业界观点/10_Geoffrey_Hinton_辛顿/01_关于|about]] | 了解学术历程 |
 | 进阶 | [[19_业界观点/10_Geoffrey_Hinton_辛顿/04_名言|sayings]] | 掌握安全观点 |
 | 深入 | 1986 反向传播论文 / NeurIPS 2022 演讲 | 技术细节 |
-| 对比 | [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun]] | 路线之争 |
+| 对比 | [[19_业界观点/25_Talks_Synthesis_综合演讲/05_Hinton_vs_LeCun_世界模型_Debate.md|Hinton vs LeCun]] | 路线之争 |
 
 ---
 
@@ -182,9 +182,9 @@ Hinton 与 [[19_业界观点/28_Yann_LeCun_杨立昆/01_关于|LeCun]] 在三个
 - [[19_业界观点/10_Geoffrey_Hinton_辛顿/01_关于|人物简介]] · [[19_业界观点/10_Geoffrey_Hinton_辛顿/04_名言|核心语录]]
 - [[19_业界观点/28_Yann_LeCun_杨立昆/01_关于|Yann LeCun]] · [[19_业界观点/29_Yoshua_Bengio_本吉奥/01_关于|Yoshua Bengio]]
 - [[19_业界观点/11_Ilya_Sutskever_苏茨克维/01_关于|Ilya Sutskever]]
-- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/05_Hinton_vs_LeCun_世界模型_Debate.md|Hinton vs LeCun 之争]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]]
-- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/02_AGI_时间线_预测_矩阵.md|AGI 时间表矩阵]]
 - [[19_业界观点/10_Geoffrey_Hinton_辛顿/02_Geoffrey_Hinton_2026_更新|2026 动态更新]]
 - [[19_业界观点/INDEX|业界观点首页]]
 

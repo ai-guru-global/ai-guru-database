@@ -408,7 +408,7 @@ flowchart TB
 - [Transformer 革命](../05_大模型/04_Transformer_Revolution/) — Transformer 变体与演进
 - [LLM 架构](../05_大模型/04_LLM架构/) — 现代大模型的架构选择
 - [序列模型](../05_大模型/02_序列模型/) — RNN/LSTM 与 Transformer 的对比
-- [Transformer 革命](05_大模型/04_Transformer_Revolution/09_03_Transformer架构_Revolution.md) — Attention 的数学细节
+- [Transformer 革命](05_大模型/03_Transformer架构/03_Transformer_Revolution.md) — Attention 的数学细节
 
 ---
 

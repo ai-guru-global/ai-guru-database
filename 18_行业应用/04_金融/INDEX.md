@@ -24,8 +24,8 @@ name_en: "Finance"
 
 ## Related
 
-- [[18_行业应用/11_法律与政务/Legal_Government_index|Legal & Government]]
-- [[18_行业应用/15_安全与网安/Security_Cybersecurity_index|Security & Cybersecurity]]
+- [[18_行业应用/README.md|Legal & Government]]
+- [[18_行业应用/README.md|Security & Cybersecurity]]
 - [[02_机器学习/08_异常检测/index|Anomaly Detection]]
 
 ## 专题深度解析

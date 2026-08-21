@@ -19,12 +19,12 @@ name_en: "datasets"
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[15_智能体/07_Agent评估/Demo/datasets/k8s_qa_benchmark|k8s qa benchmark]] | K8s QA benchmark test dataset | evaluation engineers |
-| [[15_智能体/07_Agent评估/Demo/datasets/k8s_corpus_coverage|k8s corpus coverage]] | K8s corpus coverage test dataset | evaluation engineers |
-| [[15_智能体/07_Agent评估/Demo/datasets/cloud_knowledge_qa|cloud knowledge qa]] | Cloud knowledge QA dataset | evaluation engineers |
-| [[15_智能体/07_Agent评估/Demo/datasets/task_completion|task completion]] | Task completion evaluation dataset | evaluation engineers |
-| [[15_智能体/07_Agent评估/Demo/datasets/interaction_quality|interaction quality]] | Interaction quality assessment dataset | evaluation engineers |
-| [[15_智能体/07_Agent评估/Demo/datasets/safety_test|safety test]] | Safety boundary test dataset | security engineers |
+| [[15_智能体/README.md|k8s qa benchmark]] | K8s QA benchmark test dataset | evaluation engineers |
+| [[15_智能体/07_Agent评估/Corpus_Assessment/04_Corpus_Coverage_框架.md|k8s corpus coverage]] | K8s corpus coverage test dataset | evaluation engineers |
+| [[15_智能体/README.md|cloud knowledge qa]] | Cloud knowledge QA dataset | evaluation engineers |
+| [[15_智能体/README.md|task completion]] | Task completion evaluation dataset | evaluation engineers |
+| [[15_智能体/README.md|interaction quality]] | Interaction quality assessment dataset | evaluation engineers |
+| [[15_智能体/README.md|safety test]] | Safety boundary test dataset | security engineers |
 
 ## Related
 

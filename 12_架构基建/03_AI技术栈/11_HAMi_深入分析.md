@@ -462,5 +462,5 @@ vLLM 看到的显存即为配额，可同时运行多个 vLLM 实例共卡。
 - [[概念/cdi]] — CDI 容器设备接口
 - [[概念/dra]] — DRA 动态资源分配
 - [[12_架构基建/03_AI技术栈/12_HAMi_Operation_指南]] — HAMi 运维指南
-- [[12_架构基建/03_AI技术栈/HAMi_for_dummy]] — HAMi 入门
+- [[12_架构基建/README.md]] — HAMi 入门
 - [[13_运维/02_SRE与可靠性/HAMi_Troubleshooting_Guide]] — HAMi 问题排查

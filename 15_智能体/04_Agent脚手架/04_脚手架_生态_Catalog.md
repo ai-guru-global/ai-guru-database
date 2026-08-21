@@ -272,7 +272,7 @@ with Sandbox() as sandbox:
 ## 🔗 相关主题
 
 - [Agent Harness 技术架构 2026](./01_Agent_脚手架_架构_2026.md) — 框架选型建议
-- [Harness Implementation Guide](./06_Harness_04_Implementation_指南.md) — 从零搭建
+- Harness Implementation Guide — 从零搭建
 - [Harness Security Guide](./08_脚手架_安全_指南.md) — 安全加固
 - [Harness Deployment Guide](./03_脚手架_部署_指南.md) — 容器化部署
 - [Harness Testing Guide](./09_脚手架_测试_指南.md) — 测试策略

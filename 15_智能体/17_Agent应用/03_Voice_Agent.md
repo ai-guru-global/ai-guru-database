@@ -183,7 +183,7 @@ VOICE_AGENT_APPLICATIONS = {
 
 - [[15_智能体/|智能体系统]]
 - [[概念/Agent/computer-use|Computer Use Agent]]
-- [[05_大模型/09_多模态模型/Audio_LLM_2026|音频 LLM]]
+- [[05_大模型/README.md|音频 LLM]]
 - [[10_部署推理/01_部署基础/09_Serving_架构|服务架构]]
 - [[17_伦理安全/|伦理安全]]
 

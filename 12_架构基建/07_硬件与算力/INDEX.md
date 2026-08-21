@@ -18,7 +18,7 @@ This page indexes the contents of `12_架构基建/07_硬件与算力`.
 
 - [[12_架构基建/07_硬件与算力/03_CDI_深入分析|CDI Deep Dive 3]]
 - [[12_架构基建/07_硬件与算力/03_CDI_深入分析|CDI Deep Dive]]
-- [[12_架构基建/07_硬件与算力/CDI_for_dummy|CDI For Dummy]]
+- [[12_架构基建/README.md|CDI For Dummy]]
 - [[12_架构基建/07_硬件与算力/06_DRA_深入分析|DRA Deep Dive]]
 - [[12_架构基建/07_硬件与算力/07_边缘_AI_2026|Edge AI 2026]]
 - [[12_架构基建/07_硬件与算力/08_未来_Computing_硬件_2026|Future Computing Hardware 2026]]

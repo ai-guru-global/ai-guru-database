@@ -20,7 +20,7 @@ name_en: "Distributed Systems"
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[15_智能体/06_记忆基础设施/05_synthesis_memory_systems|Distributed Systems]] | Distributed systems knowledge system: consensus, replication, sharding and distributed training | system engineers / ML infrastructure engineers |
-| [[01_数学基础/09_分布式系统/Distributed_Systems_for_dummy|Distributed Systems for dummy]] | Distributed systems beginner guide: from RPC to parameter servers | beginners / infrastructure learners |
+| [[01_数学基础/README.md|Distributed Systems for dummy]] | Distributed systems beginner guide: from RPC to parameter servers | beginners / infrastructure learners |
 
 ## Related
 

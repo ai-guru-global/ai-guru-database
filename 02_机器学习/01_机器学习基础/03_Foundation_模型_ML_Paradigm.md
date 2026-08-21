@@ -614,6 +614,6 @@ $$\min_{\phi} I(X; \phi(X)) - \beta \cdot I(\phi(X); Y)$$
 - Multimodal_Foundation_Models - 多模态基础模型
 - ML_Engineering_Practices - ML工程实践
 - [[02_机器学习/01_机器学习基础/13_Tabular_Foundation_模型_2026]] - 表格基础模型
-- [[Federated_Learning_ML_Perspective]] - 联邦学习
+- Federated_Learning_ML_Perspective - 联邦学习
 - [[治理/cheatsheets/cheatsheet-ml-algorithms]] - ML算法速查
 - [[概念/Math/supervised-learning]] - 监督学习基础

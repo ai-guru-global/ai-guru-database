@@ -268,7 +268,7 @@ To more harness building, better systems, and better agents.
 
 ### 路径 B：完整实现（2-4 小时）
 
-阅读 [Harness Implementation Guide](./06_Harness_04_Implementation_指南.md) → 从零搭建一个包含 Docker 沙箱、验证回路、记忆系统的生产级 Harness。
+阅读 Harness Implementation Guide → 从零搭建一个包含 Docker 沙箱、验证回路、记忆系统的生产级 Harness。
 
 ### 路径 C：架构设计（1-2 小时）
 

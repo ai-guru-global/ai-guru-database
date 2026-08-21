@@ -23,11 +23,11 @@ name_zh: "热门页面"
 
 ### 主章节大白话专题页
 - [[05_大模型/04_LLM架构/04_LLM_架构_Evolution|LLM 架构演进大白话]] — KV 压缩、Mamba、RetNet
-- [[07_模型训练/Data_and_FineTuning_for_dummy|数据与微调大白话]] — 数据清洗 Pipeline、DoRA、RS-LoRA
+- [[07_模型训练/README.md|数据与微调大白话]] — 数据清洗 Pipeline、DoRA、RS-LoRA
 - [[10_部署推理/03_推理优化/06_kv_cache_inference_optimization|推理优化大白话]] — SGLang、动态批调度、GGUF、SmoothQuant、TensorRT-LLM
 - [[14_RAG系统/04_高级RAG/02_Agentic_RAG_指南|Agentic RAG 应用大白话]] — Agentic RAG、Text2SQL、代码生成工作流
-- [[15_智能体/Agent_Safety_Evaluation_for_dummy|Agent 安全与评估大白话]] — 工具调用安全、Agent 评估基准
-- [[08_模型评估/02_基准测试/LLM_Benchmarks_for_dummy|LLM 评估与测试大白话]] — BBH、Arena、红队测试、CI 集成评估、A/B 测试框架
+- [[15_智能体/README.md|Agent 安全与评估大白话]] — 工具调用安全、Agent 评估基准
+- [[08_模型评估/README.md|LLM 评估与测试大白话]] — BBH、Arena、红队测试、CI 集成评估、A/B 测试框架
 
 ### 新增概念卡片（26 张）
 - 架构：[[概念/kv-cache-compression|KV Cache 压缩]]、[[概念/mamba|Mamba]]、[[概念/retnet|RetNet]]

@@ -390,9 +390,9 @@ AI 安全立场演变与几个关键公共事件紧密相关：
 - [[19_业界观点/07_Elon_Musk_马斯克/01_关于|Musk 简介]] · [[19_业界观点/28_Yann_LeCun_杨立昆/01_关于|LeCun 简介]]
 - [[19_业界观点/11_Ilya_Sutskever_苏茨克维/01_关于|Sutskever 简介]] · [[19_业界观点/19_Mustafa_Suleyman_苏莱曼/01_关于|Suleyman 简介]]
 - [[19_业界观点/12_Jensen_Huang_黄仁勋/01_关于|黄仁勋 简介]] · [[19_业界观点/06_Demis_Hassabis_哈萨比斯/01_关于|Hassabis 简介]]
-- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 之争]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/05_Hinton_vs_LeCun_世界模型_Debate.md|Hinton vs LeCun 之争]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/07_Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]
-- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]
+- [[19_业界观点/README.md|AGI 时间表预测矩阵]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/04_China_US_AI_Race_Leaders_Views|中美 AI 竞赛领袖观点]]
 - [[19_业界观点/index|业界观点首页]]
 

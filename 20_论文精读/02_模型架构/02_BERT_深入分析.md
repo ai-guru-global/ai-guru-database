@@ -846,7 +846,7 @@ flowchart TB
 ### 前置知识
 - [Attention Is All You Need 深度解读](20_论文精读/02_模型架构/01_注意力_Is_All_You_Need_深入分析.md) — Transformer 架构基础
 - [Transformer 革命](../05_大模型/04_Transformer_Revolution/) — Self-Attention 机制详解
-- [深度学习优化](03_深度学习/03_训练优化/02_优化.md) — 预训练与微调的优化策略
+- [深度学习优化](03_深度学习/03_优化方法/02_优化.md) — 预训练与微调的优化策略
 
 ### 横向关联
 - [GPT-3 深度解读](20_论文精读/03_规模扩展/02_GPT3_深入分析.md) — Encoder-only vs Decoder-only 的对比
@@ -855,7 +855,7 @@ flowchart TB
 
 ### 进阶方向
 - [Fine-tuning 技术](../05_大模型/06_微调技术/) — 参数高效微调方法
-- [RLHF 与 DPO 深度解读](20_论文精读/06_对齐研究/RLHF_03_DPO_深入分析.md) — 从 BERT 微调到 RLHF 对齐
+- [RLHF 与 DPO 深度解读](20_论文精读/06_对齐研究/06_RLHF_DPO_深入分析.md) — 从 BERT 微调到 RLHF 对齐
 - [Mixture of Experts 深度解读](20_论文精读/02_模型架构/06_混合专家_深入分析.md) — 稀疏 MoE 架构
 
 ---

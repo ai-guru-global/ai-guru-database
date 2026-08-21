@@ -142,4 +142,4 @@ This project is licensed under the MIT License - see the [LICENSE](../LICENSE) f
 - [[前端应用/CONTRIBUTING]] — 贡献指南 (共享: backend, frontend, fullstack, web)
 - [[前端应用/TROUBLESHOOTING]] — Troubleshooting Guide (共享: backend, frontend, fullstack, web)
 - [[前端应用/docs/architecture]] — Architecture Documentation
-- [[前端应用/README_for_dummy.md|README_for_dummy]]
+- [[前端应用/README.md|README_for_dummy]]

@@ -419,7 +419,7 @@ flowchart LR
 - 欲了解分布式训练技术细节，参阅 [[07_模型训练/04_分布式训练/02_DeepSpeed_深入分析.md|DeepSpeed 深度解析：微软大模型训练与推理优化库]]。
 - 欲了解 PyTorch 原生大模型训练，参阅 [[07_模型训练/04_分布式训练/05_FSDP_深入分析.md|FSDP Deep Dive]]。
 - 欲了解训练监控与实验跟踪，参阅 [[07_模型训练/07_训练监控/05_训练_监控_2026.md|Training Monitoring & Experiment Tracking 2026]]。
-- 欲了解模型压缩带来的推理成本优化，参阅 [[07_模型训练/05_模型压缩/Pruning_and_05_知识蒸馏.md|剪枝与知识蒸馏]]。
+- 欲了解模型压缩带来的推理成本优化，参阅 [[07_模型训练/README.md|剪枝与知识蒸馏]]。
 - 欲了解云上 AI 基础设施与 SRE，参阅 [[13_运维/02_SRE与可靠性/03_AI_SRE_操作手册.md|AI SRE Runbook]]。
 
 ---
@@ -429,6 +429,6 @@ flowchart LR
 - [[07_模型训练/04_分布式训练/02_DeepSpeed_深入分析.md|DeepSpeed 深度解析：微软大模型训练与推理优化库]]
 - [[07_模型训练/04_分布式训练/05_FSDP_深入分析.md|FSDP Deep Dive]]
 - [[07_模型训练/07_训练监控/05_训练_监控_2026.md|Training Monitoring & Experiment Tracking 2026]]
-- [[07_模型训练/05_模型压缩/Pruning_and_05_知识蒸馏.md|剪枝与知识蒸馏]]
+- [[07_模型训练/README.md|剪枝与知识蒸馏]]
 - [[13_运维/02_SRE与可靠性/03_AI_SRE_操作手册.md|AI SRE Runbook]]
 - [[概念/training-cost-optimization|训练成本优化]] — 概念层总览

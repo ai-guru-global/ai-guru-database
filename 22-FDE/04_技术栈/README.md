@@ -9,10 +9,10 @@
 
 | 文件 | 内容 |
 |---|---|
-| [AI工程栈](01_AI工程栈.md) | LLM/RAG/Agent 开发全栈（含 2026 框架对比） |
-| [Agent协议栈](07_Agent协议栈.md) | **MCP / A2A / AG-UI 三层协议对比（2025-2026 新增）** |
-| [云原生与K8s](02_云原生与K8s.md) | 容器化、编排、GitOps、IaC |
-| [推理优化与部署](03_推理优化与部署.md) | vLLM/SGLang/TensorRT-LLM/llama.cpp 选型 |
-| [系统集成](04_系统集成.md) | 向量库选型、MCP 集成、SSO、消息队列 |
-| [可观测性](05_可观测性.md) | LangSmith/Langfuse/Arize Phoenix 对比 |
-| [安全与合规](06_安全与合规.md) | 零信任、加密、审计、等保、**信创 AI 适配** |
+| [AI工程栈](22-FDE/04_技术栈/01_AI工程栈.md) | LLM/RAG/Agent 开发全栈（含 2026 框架对比） |
+| [Agent协议栈](22-FDE/04_技术栈/07_Agent协议栈.md) | **MCP / A2A / AG-UI 三层协议对比（2025-2026 新增）** |
+| [云原生与K8s](22-FDE/04_技术栈/02_云原生与K8s.md) | 容器化、编排、GitOps、IaC |
+| [推理优化与部署](22-FDE/04_技术栈/03_推理优化与部署.md) | vLLM/SGLang/TensorRT-LLM/llama.cpp 选型 |
+| [系统集成](22-FDE/04_技术栈/04_系统集成.md) | 向量库选型、MCP 集成、SSO、消息队列 |
+| [可观测性](22-FDE/04_技术栈/05_可观测性.md) | LangSmith/Langfuse/Arize Phoenix 对比 |
+| [安全与合规](22-FDE/04_技术栈/06_安全与合规.md) | 零信任、加密、审计、等保、**信创 AI 适配** |

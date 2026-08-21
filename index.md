@@ -325,10 +325,10 @@ graph LR
 - [[12_架构基建/07_硬件与算力/06_DRA_深入分析]] — DRA 动态资源分配:K8s 设备分配的未来,与 CDI 配对 ( #dra #kubernetes #gpu #scheduling)
 - [[12_架构基建/07_硬件与算力/11_MIG_深入分析]] — MIG (Multi-Instance GPU):A100/H100/PPU 硬件级切片,多租户强隔离推理 ( #mig #gpu-partitioning #multi-tenant #a100 #h100)
 - [[12_架构基建/03_AI技术栈/11_HAMi_深入分析]] — HAMi 深度解析:CNCF Sandbox 异构 GPU 虚拟化与调度 ( #hami #cncf #gpu-virtualization #kubernetes #heterogeneous)
-- [[12_架构基建/03_AI技术栈/HAMi_for_dummy]] — HAMi 入门:让 Kubernetes GPU 像 CPU 一样共享 ( #hami #for-dummy #gpu-sharing)
+- [[12_架构基建/README.md]] — HAMi 入门:让 Kubernetes GPU 像 CPU 一样共享 ( #hami #for-dummy #gpu-sharing)
 - [[12_架构基建/03_AI技术栈/12_HAMi_Operation_指南]] — HAMi 运维指南:安装、配置、升级与监控 ( #hami #operations #kubernetes)
 - [[13_运维/02_SRE与可靠性/HAMi_Troubleshooting_Guide]] — HAMi 问题排查与故障解决指南 ( #hami #troubleshooting #ops)
-- [[12_架构基建/07_硬件与算力/CDI_Spec_Reference]] — CDI 规范官方源引用(CNCF/Apache-2.0/运行时支持矩阵) ( #cdi #cncf #references)
+- [[12_架构基建/README.md]] — CDI 规范官方源引用(CNCF/Apache-2.0/运行时支持矩阵) ( #cdi #cncf #references)
 
 ### CNCF 云原生大模型 (Cloud Native AI)
 - [[12_架构基建/05_CNCF云原生AI/README]] — CNCF 生态 18 个大模型项目五层架构全景与选型决策树 ( #cncf #kubernetes #cloud-native #llm #genai)

@@ -446,8 +446,8 @@ Agentic Coding 工具发展趋势
 
 ## 相关资源
 
-- [Claude Code](./02_Claude_Code_深入分析.md)
-- [OpenCode](./07_OpenCode_开源编程_Deep_Dive.md)
+- [Claude Code](16_编程/05_开发工具/02_Claude_Code_深入分析.md)
+- OpenCode
 - [Cursor 官网](https://cursor.sh)
 - [Windsurf 官网](https://codeium.com/windsurf)
 - [Devin 官网](https://cognition.ai/devin)
@@ -459,5 +459,5 @@ Agentic Coding 工具发展趋势
 - [[15_智能体/08_Agent编程工具/03_Claude_Code_深入分析|Claude Code 深度解析]] — CLI 类工具对比
 - [[15_智能体/08_Agent编程工具/06_International_Agentic_工具|国际 Agentic 工具]] — 国际工具生态
 - [[15_智能体/08_Agent编程工具/index|Agentic Coding 索引]] — 工具主题导览
-- [[18_行业应用/18_代码生成/Code_Generation_index|代码生成索引]] — 代码生成应用
+- [[18_行业应用/README.md|代码生成索引]] — 代码生成应用
 - [[16_编程/index|编程索引]] — AI 编程主题导览

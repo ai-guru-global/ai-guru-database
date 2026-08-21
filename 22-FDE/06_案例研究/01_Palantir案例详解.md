@@ -152,4 +152,4 @@ FDE 驻场 → 发现客户定制需求 → 构建定制方案（碎石路）
 
 ---
 
-> **关联阅读**：[OpenAI FDE 实践](02_OpenAI_FDE实践.md) · [DeployCo 案例](03_DeployCo案例.md) · [FDE 起源与 Palantir](../01_FDE基础/02_FDE起源与Palantir.md)
+> **关联阅读**：[OpenAI FDE 实践](22-FDE/06_案例研究/02_OpenAI_FDE实践.md) · [DeployCo 案例](22-FDE/06_案例研究/03_DeployCo案例.md) · [FDE 起源与 Palantir](../01_FDE基础/02_FDE起源与Palantir.md)

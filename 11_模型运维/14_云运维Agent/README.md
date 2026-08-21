@@ -24,7 +24,7 @@ name_zh: "云运维 Agent"
 |------|------|----------|
 | [CloudOps-in-nutshell](./02_云Ops_简明指南.md) | 30 分钟速览：云运维 Agent 核心概念与架构 | 快速入门 |
 | [Cloud Product Ops 2026](./01_云_产品_Ops_2026.md) | 云产品运维 Agent 体系：监控、诊断、变更、安全 | 系统学习 |
-| [Cloud Product Ops for Dummy](./Cloud_Product_Ops_for_dummy.md) | 云运维 Agent 概念的简化版 | 初学者 |
+| Cloud Product Ops for Dummy | 云运维 Agent 概念的简化版 | 初学者 |
 | [Java Cloud SDK Guide](./04_Java_云_SDK_指南.md) | Java 云 SDK 开发指南 | Java 开发者 |
 | [Mobile AI Ops Design](./05_移动端_AI_Ops_设计.md) | 移动端 AI 运维架构设计 | 移动端开发者 |
 
@@ -34,7 +34,7 @@ name_zh: "云运维 Agent"
 
 - **快速入门** → [CloudOps-in-nutshell](./02_云Ops_简明指南.md)（30 分钟）
 - **系统学习** → [Cloud Product Ops 2026](./01_云_产品_Ops_2026.md)（2-3 小时）
-- **简化版** → [Cloud Product Ops for Dummy](./Cloud_Product_Ops_for_dummy.md)
+- **简化版** → Cloud Product Ops for Dummy
 - **Java 实践** → [Java Cloud SDK Guide](./04_Java_云_SDK_指南.md)
 - **移动端** → [Mobile AI Ops Design](./05_移动端_AI_Ops_设计.md)
 
@@ -43,14 +43,14 @@ name_zh: "云运维 Agent"
 ## 与其他章节的关联
 
 ### 前置知识
-- [Agent 生产](../15_智能体/README.md) — Agent 架构、Harness 工程
-- [架构基础设施](../12_Architecture_Infrastructure/README.md) — 高可用、容量规划
-- [AI Ops](../13_AI_Ops/README.md) — 可观测性、混沌工程
+- [Agent 生产](15_智能体/README.md) — Agent 架构、Harness 工程
+- 架构基础设施 — 高可用、容量规划
+- AI Ops — 可观测性、混沌工程
 
 ### 进阶方向
-- [AI Gateway](../14_AI_Gateway/README.md) — 云服务的流量治理
-- [测试](../09_Testing/README.md) — 运维变更的测试策略
-- [伦理安全](../17_Ethics_Safety/README.md) — 自动化运维的安全合规
+- AI Gateway — 云服务的流量治理
+- 测试 — 运维变更的测试策略
+- 伦理安全 — 自动化运维的安全合规
 
 ---
 

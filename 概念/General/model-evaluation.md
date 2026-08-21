@@ -116,7 +116,7 @@ name_zh: "模型评估"
 - [[概念/red-teaming]] — 红队测试
 - [[概念/ci-integrated-evaluation]] — CI 集成评估
 - [[概念/ab-testing-framework]] — A/B 测试框架
-- [[08_模型评估/02_基准测试/LLM_Benchmarks_for_dummy]] — LLM 评估与测试大白话
+- [[08_模型评估/README.md]] — LLM 评估与测试大白话
 
 ---
 

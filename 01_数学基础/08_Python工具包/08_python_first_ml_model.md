@@ -76,7 +76,7 @@ Day 14:   Kaggle 提交 + 总结复盘
 - [[01_数学基础/08_Python工具包/06_Python_for_AI_基础]] — Python AI 基础
 - [[01_数学基础/08_Python工具包/01_AI_开发_Environment_配置]] — 开发环境配置
 - [[02_机器学习/02_监督学习/EDA_Quick_Start]] — EDA 快速入门
-- [[02_机器学习/05_特征工程/Data_Preprocessing_for_dummy]] — 数据预处理入门
+- [[02_机器学习/README.md]] — 数据预处理入门
 - [[治理/python-data-science-pipeline]] — Python × 数据科学管道
 
 ## 专题深度解析

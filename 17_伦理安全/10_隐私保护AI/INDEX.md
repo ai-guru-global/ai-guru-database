@@ -20,7 +20,7 @@ name_en: "Privacy Preserving AI"
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[17_伦理安全/10_隐私保护AI/Privacy_Preserving_AI|Privacy Preserving AI]] | Privacy preserving AI knowledge system: DP-SGD, federated learning and privacy attacks | security researchers / privacy engineers |
-| [[17_伦理安全/10_隐私保护AI/Privacy_Preserving_AI_for_dummy|Privacy Preserving AI for dummy]] | Privacy preserving AI beginner guide: from data anonymization to differential privacy | beginners / privacy learners |
+| [[17_伦理安全/README.md|Privacy Preserving AI for dummy]] | Privacy preserving AI beginner guide: from data anonymization to differential privacy | beginners / privacy learners |
 
 ## Related
 

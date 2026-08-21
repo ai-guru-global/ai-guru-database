@@ -18,7 +18,7 @@ name_en: "Agriculture"
 | 文件 | 说明 |
 |------|------|
 | [[18_行业应用/10_农业/AI_Agriculture_2026|AI 农业行业应用 (2025-2026)]] | 2026年农业AI正从"精准农业"迈向"自主农业"——AI+卫星遥感实现全球作物监测，农业机器人开始规模化田间作业，气候智能农业成为粮食安全的关键工具。 |
-| [[18_行业应用/10_农业/Agriculture_index|Agriculture]] |  |
+| [[18_行业应用/README.md|Agriculture]] |  |
 
 ## Related
 

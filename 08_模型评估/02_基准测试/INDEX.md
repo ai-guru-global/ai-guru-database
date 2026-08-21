@@ -19,7 +19,7 @@ This page indexes the contents of `08_模型评估/02_基准测试`.
 - [[08_模型评估/02_基准测试/01_Agentic_基准测试_指南|Agentic Benchmark Guide]]
 - [[08_模型评估/02_基准测试/05_HF_Leaderboard_Eval_指南|HF Leaderboard Eval Guide]]
 - [[08_模型评估/02_基准测试/07_LLM_基准测试_Suite_2026|LLM Benchmark Suite 2026]]
-- [[08_模型评估/02_基准测试/LLM_Benchmarks_for_dummy|LLM Benchmarks For Dummy]]
+- [[08_模型评估/README.md|LLM Benchmarks For Dummy]]
 - [[08_模型评估/02_基准测试/08_Long_上下文_评估|Long Context Evaluation]]
 - [[08_模型评估/02_基准测试/02_benchmark_evaluation|Multimodal Evaluation Benchmarks]]
 

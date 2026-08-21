@@ -172,7 +172,7 @@ response = client.chat.completions.create(
 | 主题 | 文档 |
 |------|------|
 | 完整架构 | [01_AI网关_2026.md](./01_AI网关_2026.md) |
-| 入门指南 | [AI_Gateway_for_dummy.md](./AI_Gateway_for_dummy.md) |
+| 入门指南 | AI_Gateway_for_dummy.md |
 | SRE 实践 | [../AI_Ops/22_SRE_for_AI_系统.md](13_运维/02_SRE与可靠性/22_SRE_for_AI_系统.md) |
 | 可观测性 | [../AI_Ops/03_AI_可观测性_指南.md](../../11_模型运维/08_可观测性/03_AI_可观测性_指南.md) |
 | 成本优化 | [../01_AI_成本优化_2026.md](12_架构基建/02_架构概览/01_AI_成本优化_2026.md) |

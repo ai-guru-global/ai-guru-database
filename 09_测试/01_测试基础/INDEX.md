@@ -24,7 +24,7 @@ name_en: "Testing Fundamentals"
 | [[09_测试/02_测试框架/03_Java_AI测试|AI-Testing-in-nutshell]] | AI testing in a nutshell: core concepts quick reference | all practitioners |
 | [[09_测试/01_测试基础/06_LLM_Unit_测试|LLM 单元测试 (LLM Unit Testing)]] | LLM 应用单元测试完整指南：非确定性输出测试策略、断言设计、快照测试、Mock 策略、评估驱动测试与 2026 工具链。 | - | - |
 | [[09_测试/01_测试基础/Test_Data_Management|测试数据管理 (Test Data Management)]] | 测试数据管理是 AI 系统测试的"后勤保障"——系统化地创建、维护、版本化测试数据，确保测试可重复、结果可信、回归高效。 | - | - |
-| [[09_测试/01_测试基础/Test_Data_index|Test Data]] |  | - | - |
+| [[09_测试/README.md|Test Data]] |  | - | - |
 
 ## Related
 

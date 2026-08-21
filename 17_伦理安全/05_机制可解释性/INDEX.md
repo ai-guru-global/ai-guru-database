@@ -20,7 +20,7 @@ name_en: "Mechanistic Interpretability"
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[17_伦理安全/05_机制可解释性/Mechanistic_Interpretability|Mechanistic Interpretability]] | Mechanistic interpretability knowledge system: superposition, circuits and activation patching | interpretability researchers |
-| [[17_伦理安全/05_机制可解释性/Mechanistic_Interpretability_for_dummy|Mechanistic Interpretability for dummy]] | Mechanistic interpretability beginner guide: from probes to sparse autoencoders | beginners / interpretability learners |
+| [[17_伦理安全/README.md|Mechanistic Interpretability for dummy]] | Mechanistic interpretability beginner guide: from probes to sparse autoencoders | beginners / interpretability learners |
 
 ## Related
 

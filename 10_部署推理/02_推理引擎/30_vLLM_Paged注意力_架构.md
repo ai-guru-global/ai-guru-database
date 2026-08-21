@@ -113,7 +113,7 @@ Block Table: A→[1,5,8]  B→[2,6]  C→[3,7]
 ## Related
 
 - [[10_部署推理/02_推理引擎/29_vLLM_深入分析|vLLM 深度解析]]
-- [[10_部署推理/02_推理引擎/vLLM_for_dummy|vLLM 大白话解释]]
+- [[10_部署推理/README.md|vLLM 大白话解释]]
 - [[10_部署推理/02_推理引擎/17_LLM_推理引擎_选型_指南|LLM 推理引擎选型指南]]
 - [[概念/paged-attention|PagedAttention 概念卡片]]
 - [[概念/kv-cache|KV Cache 概念卡片]]

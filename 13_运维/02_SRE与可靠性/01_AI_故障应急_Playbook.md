@@ -732,7 +732,7 @@ MTTR_DISTRIBUTION = {
 
 - [SRE for AI Systems](./22_SRE_for_AI_系统.md) — SLI/SLO 设计与错误预算
 - [AI Ops 2026](13_运维/01_AIOps基础/01_AI运维2026.md) — 智能运维完整体系
-- [Cloud Ops 2026](11_模型运维/Cloud_Ops_Agent/01_云_产品_Ops_2026.md) — 云产品运维 Agent
+- [Cloud Ops 2026](11_模型运维/14_云运维Agent/01_云_产品_Ops_2026.md) — 云产品运维 Agent
 - [部署与推理](10_部署推理/01_部署基础/06_推理_简明指南.md) — 推理优化
 - [AI 测试](09_测试/01_测试基础/02_AI测试简明指南.md) — AI 测试体系
 
@@ -741,7 +741,7 @@ MTTR_DISTRIBUTION = {
 ## Related
 
 - [[13_运维/01_AIOps基础/02_AIOps简明指南.md]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
-- [[13_运维/01_AIOps基础/AI_Ops_for_dummy.md]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_运维/README.md]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
 - [[13_运维/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
 - [[13_运维/README]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
 - [[11_模型运维/08_可观测性/03_AI_可观测性_指南.md|AI_Observability_Guide]]

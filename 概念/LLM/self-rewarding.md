@@ -387,3 +387,4 @@ RLVR / GRPO(数学/代码/agent 任务)
 - [[概念/Training/reward-modeling|奖励建模]] — 自奖励的奖励来源
 - [[概念/LLM/llm-as-judge|LLM as Judge]] — 自奖励的核心机制
 - [[概念/Safety/ai-alignment|AI 对齐]] — 对齐技术总览
+- [[概念/Safety/recursive-self-improvement|递归自我改进 (RSI)]] — 自我改进范式的安全风险与理论框架

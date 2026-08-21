@@ -17,7 +17,7 @@ This page indexes the contents of `12_架构基建/08_网络`.
 ## Files
 
 - [[12_架构基建/08_网络/AI_Networking_Fundamentals|AI Networking Fundamentals]]
-- [[12_架构基建/08_网络/AI_Networking|AI 网络总览]]
+- [[12_架构基建/README.md|AI 网络总览]]
 - [[12_架构基建/08_网络/Docker_Containerization_for_AI|Docker Containerization For AI]]
 - [[12_架构基建/08_网络/Network_Diagnostics_Commands|Network Diagnostics Commands]]
 - [[12_架构基建/08_网络/06_RDMA_and_RoCE_for_AI|RDMA And Roce For AI]]

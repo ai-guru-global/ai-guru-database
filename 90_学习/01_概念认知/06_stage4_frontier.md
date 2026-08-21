@@ -288,7 +288,7 @@ Level 5: 鲁棒（抵抗对抗攻击）       → 仍脆弱
 完成 Stage 4 后，你已经具备了完整的 AI 认知框架。建议：
 - **深入某个方向** → 选择对应的专业路径继续深耕（见 [[90_学习/pathways/index|学习路径]]）
 - **走向职业化** → [[90_学习/01_概念认知/07_stage5_professional|Stage 5: 职业化]]
-- **准备面试/述职** → 回顾 [[90_学习/guides/07_milestones.md|milestones]] 自测
+- **准备面试/述职** → 回顾 [[90_学习/04_实践指南/07_milestones.md|milestones]] 自测
 - **关注最新进展** → 订阅 [[90_学习/README.md|AI Guru 知识库]] 的更新
 - **回看全景** → [[90_学习/concepts/index|概念分阶索引]]
 

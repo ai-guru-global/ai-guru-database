@@ -862,7 +862,7 @@ flowchart TB
 
 ### 横向关联
 - [LLM 架构](../05_大模型/04_LLM架构/) — 现代大模型架构设计
-- [RLHF 与 DPO 深度解读](../06_对齐研究/RLHF_03_DPO_深入分析.md) — LLaMA 2 Chat 的 RLHF 对齐
+- RLHF 与 DPO 深度解读 — LLaMA 2 Chat 的 RLHF 对齐
 - [Mixture of Experts 深度解读](./06_混合专家_深入分析.md) — MoE 架构在 LLM 中的应用
 
 ### 进阶方向

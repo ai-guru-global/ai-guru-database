@@ -355,4 +355,4 @@ src/
 - [[15_智能体/08_Agent编程工具/04_Continue_深入分析|Continue 深度解析]] — IDE 插件类工具对比
 - [[15_智能体/08_Agent编程工具/index|Agentic Coding 索引]] — 工具主题导览
 - [[16_编程/index|编程索引]] — AI 编程主题导览
-- [[18_行业应用/18_代码生成/Code_Generation_index|代码生成索引]] — 代码生成应用
+- [[18_行业应用/README.md|代码生成索引]] — 代码生成应用

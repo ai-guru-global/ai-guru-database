@@ -165,4 +165,4 @@ DEEPFAKE_DETECTION = {
 - [[17_伦理安全/03_AI治理/07_模型_Card_Documentation|模型卡]]
 - [[14_RAG系统/05_RAG生产实践/06_RAG_安全|RAG 安全]]
 - [[05_大模型/|大模型 (生成内容)]]
-- [[18_行业应用/19_其他行业/Public_Safety|公共安全 (Deepfake)]]
+- [[18_行业应用/README.md|公共安全 (Deepfake)]]

@@ -97,7 +97,7 @@ Yann LeCun 是计算机视觉与深度学习的奠基人。1989 年提出 LeNet�
 
 ## 与 Hinton 的路线之争
 
-LeCun 与 [[19_业界观点/10_Geoffrey_Hinton_辛顿/01_关于|Hinton]] 在 LLM 路径、AGI 风险、反向传播地位上分歧明显。LeCun 认为必须换架构（JEPA），Hinton 倾向承认 LLM 能力但担忧后果。完整对比见 [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 世界模型之争]]。
+LeCun 与 [[19_业界观点/10_Geoffrey_Hinton_辛顿/01_关于|Hinton]] 在 LLM 路径、AGI 风险、反向传播地位上分歧明显。LeCun 认为必须换架构（JEPA），Hinton 倾向承认 LLM 能力但担忧后果。完整对比见 [[19_业界观点/25_Talks_Synthesis_综合演讲/05_Hinton_vs_LeCun_世界模型_Debate.md|Hinton vs LeCun 世界模型之争]]。
 
 | 议题 | LeCun | Hinton |
 |------|-------|--------|
@@ -143,7 +143,7 @@ LeCun 的自主 AI 系统包含六个可微模块：配置器、感知、世界�
 | 入门 | [[19_业界观点/28_Yann_LeCun_杨立昆/01_关于|about]] | 了解 CNN 与世界模型 |
 | 进阶 | [[19_业界观点/28_Yann_LeCun_杨立昆/03_名言|sayings]] | 掌握反末日论立场 |
 | 深入 | 2022 OpenReview 论文 | JEPA 技术细节 |
-| 对比 | [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun]] | 路线之争 |
+| 对比 | [[19_业界观点/25_Talks_Synthesis_综合演讲/05_Hinton_vs_LeCun_世界模型_Debate.md|Hinton vs LeCun]] | 路线之争 |
 
 ---
 
@@ -187,7 +187,7 @@ LeCun 的自主 AI 系统包含六个可微模块：配置器、感知、世界�
 - [[19_业界观点/28_Yann_LeCun_杨立昆/01_关于|人物简介]] · [[19_业界观点/28_Yann_LeCun_杨立昆/03_名言|核心语录]]
 - [[19_业界观点/10_Geoffrey_Hinton_辛顿/01_关于|Geoffrey Hinton]] · [[19_业界观点/29_Yoshua_Bengio_本吉奥/01_关于|Yoshua Bengio]]
 - [[19_业界观点/17_Mark_Zuckerberg_扎克伯格/01_关于|Mark Zuckerberg]]
-- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/05_Hinton_vs_LeCun_世界模型_Debate.md|Hinton vs LeCun 之争]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/07_Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]]
 - [[19_业界观点/28_Yann_LeCun_杨立昆/04_Yann_LeCun_2026_更新|2026 动态更新]]

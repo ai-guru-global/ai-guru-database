@@ -730,7 +730,7 @@ flowchart TB
 ## 🔗 相关主题
 
 - [Agent Skills 深度解析](./02_Agent_技能_深入分析.md) — 完整规范、核心机制与案例分析
-- [Agent Skills 实战指南](./05_Agent技能_Practical_Guide.md) — 从零创建、测试、优化和发布
+- Agent Skills 实战指南 — 从零创建、测试、优化和发布
 - [Agent Skills 生态目录](./03_Agent_技能_生态_Catalog.md) — 451+ Skills 按团队和领域索引
 - [Agent Skills 书写速览](./12_技能_简明指南.md) — Agent Skills 快速入门与书写精要
 - [官方文档](https://agentskills.io) — Agent Skills 标准文档站

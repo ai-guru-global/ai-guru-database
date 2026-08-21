@@ -19,8 +19,8 @@ name_en: "results"
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[15_智能体/07_Agent评估/Demo/results/k8s_evaluation_results|k8s evaluation results]] | K8s scenario evaluation results JSON | evaluation engineers |
-| [[15_智能体/07_Agent评估/Demo/results/sample_results|sample results]] | Sample evaluation results JSON | developers |
+| [[15_智能体/README.md|k8s evaluation results]] | K8s scenario evaluation results JSON | evaluation engineers |
+| [[15_智能体/README.md|sample results]] | Sample evaluation results JSON | developers |
 
 ## Related
 

@@ -254,7 +254,7 @@ def debug_precision(model, input_tensor):
 
 ## 相关文档
 
-- [[01_数学基础/05_数值方法/Numerical_Methods|数值方法总论]]
+- [[01_数学基础/README.md|数值方法总论]]
 - [[01_数学基础/10_AI硬件/05_GPU_Programming_CUDA_基础|GPU 编程]] — Tensor Core 与精度
 - [[07_模型训练/04_分布式训练/|分布式训练]] — 多卡混合精度
 - [[10_部署推理/02_推理引擎/|推理引擎]] — 量化推理

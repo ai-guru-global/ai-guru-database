@@ -204,7 +204,7 @@ flowchart TB
 | 主题 | 文档 |
 |------|------|
 | 完整架构 | [01_云_产品_Ops_2026.md](./01_云_产品_Ops_2026.md) |
-| 入门指南 | [Cloud_Product_Ops_for_dummy.md](./Cloud_Product_Ops_for_dummy.md) |
+| 入门指南 | Cloud_Product_Ops_for_dummy.md |
 | Agent Harness | [15_Ops_Agent_脚手架_2026.md](15_智能体/07_Agent评估/15_Ops_Agent_脚手架_2026.md) |
 | SRE 实践 | [../AI_Ops/22_SRE_for_AI_系统.md](13_运维/02_SRE与可靠性/22_SRE_for_AI_系统.md) |
 | 事故响应 | [../AI_Ops/01_AI_故障应急_Playbook.md](13_运维/02_SRE与可靠性/01_AI_故障应急_Playbook.md) |
@@ -216,8 +216,8 @@ flowchart TB
 
 ## Related
 
-- [[_projects/Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- Cloud_Product_Ops_for_dummy — 云产品运维 Agent 入门指南 (for Dummies) (共享: ai-agents, automation, cloud-ops, devops, sre)
 - [[_projects/Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: ai-agents, automation, cloud-ops, devops, sre)
 - [[_projects/Cloud_Ops_Agent/docs/corpus/index]] — 云产品运维 Agent 语料工程指南 (Corpus Engineering) (共享: ai-agents, automation, cloud-ops, devops, sre)
 - [[_projects/Cloud_Ops_Agent/docs/development/index]] — 云产品运维 Agent 研发指南 (Development) (共享: ai-agents, automation, cloud-ops, devops, sre)
-- [[_projects/Cloud_Ops_Agent/README.md|README]]
+- README

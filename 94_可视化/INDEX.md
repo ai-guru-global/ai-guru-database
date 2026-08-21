@@ -49,43 +49,43 @@ AI 可视化知识体系（Visualization Knowledge Base）涵盖训练监控（t
 |------|------|----------|
 | [[94_可视化/README|README]] | Visualization module overview and knowledge map | all readers |
 | [[94_可视化/README|README for dummy]] | Visualization beginner guide and quick start | newcomers / beginners |
-| [[94_可视化/Best_Practices/Visualization_for_dummy\|Visualization for dummy]] | 工具选择与常见陷阱 | beginners |
+| [[94_可视化/README.md|Visualization for dummy]] | 工具选择与常见陷阱 | beginners |
 
 ### 训练可视化（Training Viz）
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[94_可视化/Training_Viz/Training_Monitoring_Visualization\|Training Monitoring Visualization]] | Loss/梯度/激活实时跟踪 | ML 工程师 |
-| [[94_可视化/Training_Viz/Training_Curves_Analysis\|Training Curves Analysis]] | 训练曲线分析（损失/梯度/学习率） | ML 工程师 / 深度学习实践者 |
-| [[94_可视化/Training_Viz/Embedding_Visualization_Guide\|Embedding Visualization Guide]] | 嵌入空间可视化 | DL 研究员 |
+| [[94_可视化/Training_Viz/Training_Monitoring_Visualization|Training Monitoring Visualization]] | Loss/梯度/激活实时跟踪 | ML 工程师 |
+| [[94_可视化/02_训练可视化/06_训练_Curves_分析.md|Training Curves Analysis]] | 训练曲线分析（损失/梯度/学习率） | ML 工程师 / 深度学习实践者 |
+| [[94_可视化/Training_Viz/Embedding_Visualization_Guide|Embedding Visualization Guide]] | 嵌入空间可视化 | DL 研究员 |
 | [[94_可视化/01_最佳实践/04_Visualization_简明指南|Neural Network Visualization Guide]] | 神经网络结构与特征可视化 | DL 研究员 |
-| [[94_可视化/Training_Viz/Experiment_Tracking_Visualization\|Experiment Tracking Visualization]] | 实验对比与追踪 | ML 工程师 |
-| [[94_可视化/Training_Viz/Data_Pipeline_Feature_Visualization\|Data Pipeline & Feature Visualization]] | 数据管道与特征可视化 | 数据工程师 |
+| [[94_可视化/Training_Viz/Experiment_Tracking_Visualization|Experiment Tracking Visualization]] | 实验对比与追踪 | ML 工程师 |
+| [[94_可视化/Training_Viz/Data_Pipeline_Feature_Visualization|Data Pipeline & Feature Visualization]] | 数据管道与特征可视化 | 数据工程师 |
 
 ### 评估可视化（Evaluation Viz）
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[94_可视化/01_最佳实践/04_Visualization_简明指南|Evaluation Visualization Guide]] | 混淆矩阵/ROC/PR/雷达图 | ML 工程师 |
-| [[94_可视化/Evaluation_Viz/Attention_Visualization\|Attention Visualization]] | 注意力可视化（注意力图/热力图） | NLP/CV 研究员 |
-| [[94_可视化/Evaluation_Viz/Model_Interpretability_Visualization\|Model Interpretability Visualization]] | SHAP/LIME/可解释性 | 可解释性研究员 |
-| [[94_可视化/Evaluation_Viz/Dimensionality_Reduction_Viz\|Dimensionality Reduction Viz]] | t-SNE/UMAP/PCA 降维可视化 | DL 研究员 |
+| [[94_可视化/03_评估可视化/02_注意力可视化.md|Attention Visualization]] | 注意力可视化（注意力图/热力图） | NLP/CV 研究员 |
+| [[94_可视化/Evaluation_Viz/Model_Interpretability_Visualization|Model Interpretability Visualization]] | SHAP/LIME/可解释性 | 可解释性研究员 |
+| [[94_可视化/03_评估可视化/03_降维可视化.md|Dimensionality Reduction Viz]] | t-SNE/UMAP/PCA 降维可视化 | DL 研究员 |
 
 ### 系统可视化（System Viz）
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[94_可视化/System_Viz/AI_System_Dashboard\|AI System Dashboard]] | 监控/告警/运维仪表盘 | 平台工程师 |
-| [[94_可视化/System_Viz/Inference_Serving_Visualization\|Inference Serving Visualization]] | 推理服务可视化 | 推理工程师 |
-| [[94_可视化/System_Viz/Knowledge_Graph_Visualization\|Knowledge Graph Visualization]] | 知识图谱布局与交互 | 图谱工程师 |
+| [[94_可视化/System_Viz/AI_System_Dashboard|AI System Dashboard]] | 监控/告警/运维仪表盘 | 平台工程师 |
+| [[94_可视化/System_Viz/Inference_Serving_Visualization|Inference Serving Visualization]] | 推理服务可视化 | 推理工程师 |
+| [[94_可视化/System_Viz/Knowledge_Graph_Visualization|Knowledge Graph Visualization]] | 知识图谱布局与交互 | 图谱工程师 |
 | [[94_可视化/04_系统可视化/05_模型_架构_Viz|Model Architecture Viz]] | 模型架构可视化 | 架构师 / 研究员 |
 
 ### 最佳实践（Best Practices）
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[94_可视化/Best_Practices/Data_Visualization_Best_Practices\|Data Visualization Best Practices]] | 图表选择/配色/标注 | 全体实践者 |
-| [[94_可视化/Best_Practices/Data_Viz_Best_Practices\|Data Viz Best Practices]] | 数据可视化最佳实践（深度版） | 数据分析师 |
+| [[94_可视化/Best_Practices/Data_Visualization_Best_Practices|Data Visualization Best Practices]] | 图表选择/配色/标注 | 全体实践者 |
+| [[94_可视化/01_最佳实践/02_数据_Viz_最佳实践.md|Data Viz Best Practices]] | 数据可视化最佳实践（深度版） | 数据分析师 |
 
 ---
 
@@ -133,8 +133,8 @@ flowchart LR
 | Weights & Biases | 实验追踪/协作 | 多实验对比 | [[09_测试/02_测试框架/09_Weights_Biases_深入分析|Weights & Biases]] |
 | Plotly / Dash | 交互式图表 | 评估图表/仪表盘 | [[94_可视化/03_评估可视化/INDEX|Evaluation Viz]] |
 | ECharts / D3.js | Web 可视化 | 系统仪表盘 | [[94_可视化/04_系统可视化/INDEX|System Viz]] |
-| t-SNE / UMAP | 降维投影 | 嵌入/特征 | [[94_可视化/Evaluation_Viz/Dimensionality_Reduction_Viz\|降维可视化]] |
-| Captum / SHAP | 可解释性 | 归因/注意力 | [[94_可视化/Evaluation_Viz/Model_Interpretability_Visualization\|可解释性]] |
+| t-SNE / UMAP | 降维投影 | 嵌入/特征 | [[94_可视化/03_评估可视化/03_降维可视化.md|降维可视化]] |
+| Captum / SHAP | 可解释性 | 归因/注意力 | [[94_可视化/Evaluation_Viz/Model_Interpretability_Visualization|可解释性]] |
 
 ---
 
@@ -142,12 +142,12 @@ flowchart LR
 
 | 陷阱 | 表现 | 正确做法 | 关联 |
 |------|------|----------|------|
-| 截断 y 轴 | 夸大差异 | 柱状图 y 轴从 0 起 | [[94_可视化/Best_Practices/Data_Viz_Best_Practices\|最佳实践]] |
-| 用饼图比微小占比 | 难以辨别 | 改用条形图 | [[94_可视化/Best_Practices/Data_Visualization_Best_Practices\|图表选择]] |
-| 颜色过多/红绿混用 | 色盲不友好 | 限 5 色+色盲安全调色板 | [[94_可视化/Best_Practices/Data_Viz_Best_Practices\|配色]] |
-| 训练曲线只看最终值 | 误判收敛 | 看趋势+方差+学习率 | [[94_可视化/Training_Viz/Training_Curves_Analysis\|曲线分析]] |
-| t-SNE 误解为距离 | 过度解读簇间距 | 结合局部/全局+多随机种子 | [[94_可视化/Evaluation_Viz/Dimensionality_Reduction_Viz\|降维]] |
-| 注意力≠因果 | 把权重当解释 | 配合归因方法交叉验证 | [[94_可视化/Evaluation_Viz/Attention_Visualization\|注意力]] |
+| 截断 y 轴 | 夸大差异 | 柱状图 y 轴从 0 起 | [[94_可视化/01_最佳实践/02_数据_Viz_最佳实践.md|最佳实践]] |
+| 用饼图比微小占比 | 难以辨别 | 改用条形图 | [[94_可视化/Best_Practices/Data_Visualization_Best_Practices|图表选择]] |
+| 颜色过多/红绿混用 | 色盲不友好 | 限 5 色+色盲安全调色板 | [[94_可视化/01_最佳实践/02_数据_Viz_最佳实践.md|配色]] |
+| 训练曲线只看最终值 | 误判收敛 | 看趋势+方差+学习率 | [[94_可视化/02_训练可视化/06_训练_Curves_分析.md|曲线分析]] |
+| t-SNE 误解为距离 | 过度解读簇间距 | 结合局部/全局+多随机种子 | [[94_可视化/03_评估可视化/03_降维可视化.md|降维]] |
+| 注意力≠因果 | 把权重当解释 | 配合归因方法交叉验证 | [[94_可视化/03_评估可视化/02_注意力可视化.md|注意力]] |
 
 ---
 
@@ -201,7 +201,7 @@ flowchart LR
 - [[11_模型运维/index|模型运维]] — 仪表盘与告警的运维上下文
 - [[09_测试/02_测试框架/09_Weights_Biases_深入分析|Weights & Biases]] — 实验追踪工具
 - [[03_深度学习/index|深度学习]] — 注意力/嵌入/降维的理论基础
-- [[94_可视化/Best_Practices|治理最佳实践]] — 跨章节最佳实践参考
+- [[94_可视化/README.md|治理最佳实践]] — 跨章节最佳实践参考
 
 ---
 
@@ -209,7 +209,7 @@ flowchart LR
 
 ## 相关文档
 
-- [[94_可视化/Visualization-in-nutshell|AI 可视化速览 (nutshell)]]
+- [[94_可视化/README.md|AI 可视化速览 (nutshell)]]
 
 ## 统计
 

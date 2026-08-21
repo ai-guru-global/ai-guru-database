@@ -26,7 +26,7 @@ name_zh: "Spring AI 网关与安全"
 >
 > **一句话理解**: Spring Security + Spring AI Gateway 是 Java 企业级 AI 应用的安全基石 —— 认证授权、Prompt 注入防御、API 密钥管理、限流熔断，全面保障 AI 服务的安全可控。
 
-> **相关文档**: [AI Gateway 概述](./01_AI网关_2026.md) | [Spring AI 深度解析](01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md) | [Spring AI 架构设计](../02_架构概览/10_Spring_AI_架构.md) | [AI 安全红队测试](17_伦理安全/04_AI安全与红队/AI_Safety_RedTeaming_for_dummy.md)
+> **相关文档**: [AI Gateway 概述](./01_AI网关_2026.md) | [Spring AI 深度解析](01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md) | [Spring AI 架构设计](../02_架构概览/10_Spring_AI_架构.md) | [AI 安全红队测试](17_伦理安全/README.md)
 
 ---
 

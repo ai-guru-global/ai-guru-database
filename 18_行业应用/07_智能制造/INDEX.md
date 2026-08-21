@@ -18,7 +18,7 @@ name_en: "Manufacturing"
 | 文件 | 说明 |
 |------|------|
 | [[18_行业应用/07_智能制造/AI_Manufacturing_2026|AI 智能制造行业应用 (2025-2026)]] | 2026年制造业AI已进入"数字孪生+Agentic"阶段——PepsiCo用AI数字孪生提升产能20%，视觉质检漏检率降低90%，"黑灯工厂"从概念走向... |
-| [[18_行业应用/07_智能制造/Manufacturing_index|Manufacturing]] |  |
+| [[18_行业应用/README.md|Manufacturing]] |  |
 
 ## Related
 

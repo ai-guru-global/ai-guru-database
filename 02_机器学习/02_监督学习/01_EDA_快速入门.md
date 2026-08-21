@@ -354,7 +354,7 @@ def quick_eda(df, target_col=None):
 
 ## Related
 
-- [[02_机器学习/05_特征工程/Data_Preprocessing_for_dummy]] — 数据清洗与预处理
-- [[02_机器学习/05_特征工程/Feature_Engineering_for_dummy]] — 特征工程入门
+- [[02_机器学习/README.md]] — 数据清洗与预处理
+- [[02_机器学习/README.md]] — 特征工程入门
 - [[01_数学基础/Python_Data_Science_Toolkit]] — Pandas + Matplotlib 基础
 - [[02_机器学习/02_监督学习/04_Your_First_ML_模型]] — 建模实战

@@ -200,4 +200,4 @@ level_3_enterprise:
 - [[概念/tool-calling-safety]] — 工具调用安全
 - [[概念/agent-evaluation-benchmarks]] — Agent 评估基准
 - [[概念/agentic-rag]] — Agentic RAG
-- [[15_智能体/Agent_Safety_Evaluation_for_dummy]] — Agent 安全与评估大白话
+- [[15_智能体/README.md]] — Agent 安全与评估大白话

@@ -29,7 +29,7 @@ name_en: "RL Foundations"
 
 | 文件 | 说明 |
 |------|------|
-| [[06_强化学习/01_强化学习基础/RL-in-nutshell\|RL in a Nutshell]] | 强化学习精要概览——从 RL_Fundamentals 合并，浓缩核心概念与关键算法 |
+| [[06_强化学习/01_强化学习基础/RL-in-nutshell|RL in a Nutshell]] | 强化学习精要概览——从 RL_Fundamentals 合并，浓缩核心概念与关键算法 |
 | [[06_强化学习/01_强化学习基础/04_RL_基础_概览|RL Fundamentals Overview]] | 强化学习基础总览——从 RL_Fundamentals 合并，系统梳理 RL 基础知识体系 |
 
 ## 全部文件

@@ -1061,7 +1061,7 @@ GPU 需求: 1x T4 (16GB) + OpenAI API
 ## Related
 
 - [[_projects/Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: automation, cloud-ops, devops, sre)
-- [[_projects/Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: automation, cloud-ops, devops, sre)
+- Cloud_Product_Ops_for_dummy — 云产品运维 Agent 入门指南 (for Dummies) (共享: automation, cloud-ops, devops, sre)
 - [[_projects/Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: automation, cloud-ops, devops, sre)
 - [[_projects/Cloud_Ops_Agent/docs/corpus/index]] — 云产品运维 Agent 语料工程指南 (Corpus Engineering) (共享: automation, cloud-ops, devops, sre)
 - [[15_智能体/07_Agent评估/Cloud_Agent_Evaluation/README|README_for_dummy]]

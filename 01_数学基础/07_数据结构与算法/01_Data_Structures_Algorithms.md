@@ -633,7 +633,7 @@ $$
 
 ### 进阶推荐
 - **[神经网络核心](03_深度学习/02_神经网络核心/09_神经网络核心.md)**: 计算图与反向传播
-- **[Transformer 架构](05_大模型/04_Transformer_Revolution/09_03_Transformer架构架构_Revolution.md)**: 注意力机制的优化
+- **[Transformer 架构](05_大模型/03_Transformer架构/03_Transformer_Revolution.md)**: 注意力机制的优化
 - **[模型压缩](10_部署推理/01_部署基础/03_部署推理.md)**: 量化、剪枝、蒸馏
 - **[向量数据库](14_RAG系统/01_RAG基础/07_RAG_系统.md)**: HNSW、ANN 算法实践
 

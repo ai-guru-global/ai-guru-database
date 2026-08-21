@@ -447,7 +447,7 @@ plt.show()
 - [[94_可视化/index|可视化首页]]
 - [[94_可视化/Best_Practices/index|Best Practices]]
 - [[94_可视化/Best_Practices/Data_Visualization_Best_Practices|数据可视化最佳实践（速查）]]
-- [[94_可视化/Best_Practices/Visualization_for_dummy|Visualization for dummy]]
+- [[94_可视化/README.md|Visualization for dummy]]
 - [[94_可视化/Training_Viz/index|Training Viz]]
 - [[94_可视化/Evaluation_Viz/index|Evaluation Viz]]
 - [[08_模型评估/index|模型评估]]

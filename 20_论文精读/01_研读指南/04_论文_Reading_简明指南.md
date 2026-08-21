@@ -78,8 +78,8 @@ flowchart LR
 | ⭐⭐⭐ | Attention Is All You Need | 现代 AI 的地基 | [[20_论文精读/02_模型架构/01_注意力_Is_All_You_Need_深入分析|Transformer 精读]] |
 | ⭐⭐⭐ | BERT | 预训练-微调范式确立 | [[20_论文精读/02_模型架构/02_BERT_深入分析|BERT 精读]] |
 | ⭐⭐ | LLaMA | 开源 LLM 的起点 | [[20_论文精读/02_模型架构/04_LLaMA_深入分析|LLaMA 精读]] |
-| ⭐⭐ | MoE | 稀疏化扩展主流路线 | [[20_论文精读/02_模型架构/Mixture_of_Experts_Deep_Dive\|MoE 精读]] |
-| ⭐⭐ | DeepSeek-V3 | 2026 开源效率标杆 | [[20_论文精读/09_前沿探索/DeepSeek_V3_Technical_Report\|DeepSeek-V3 报告]] |
+| ⭐⭐ | MoE | 稀疏化扩展主流路线 | [[20_论文精读/02_模型架构/Mixture_of_Experts_Deep_Dive|MoE 精读]] |
+| ⭐⭐ | DeepSeek-V3 | 2026 开源效率标杆 | [[20_论文精读/09_前沿探索/DeepSeek_V3_Technical_Report|DeepSeek-V3 报告]] |
 | ⭐ | Word2Vec | 理解 embedding 的源头 | [[20_论文精读/02_模型架构/07_Word2Vec_深入分析|Word2Vec 精读]] |
 
 ---
@@ -101,7 +101,7 @@ flowchart LR
 
 - 每篇精读用统一模板：问题 → 方法 → 实验 → 局限 → 可借鉴点
 - 模板直接取用: [[20_论文精读/01_研读指南/Research_Template|研究笔记模板]]
-- 读论文的方法论体系: [[20_论文精读/01_研读指南/Methodology_index|方法论索引]]
+- 读论文的方法论体系: [[20_论文精读/README.md|方法论索引]]
 
 ---
 

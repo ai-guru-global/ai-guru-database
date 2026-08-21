@@ -98,7 +98,7 @@ Andrew Ng 是 AI 教育民主化的旗手。2011 年他在斯坦福开设免费�
 | 工业落地派 | 代表 |
 | AGI 怀疑派 | 成员 |
 
-Ng 的独特之处是**专注狭义 AI 的工业落地而非追逐 AGI**。参见 [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表矩阵]]、[[19_业界观点/25_Talks_Synthesis_综合演讲/04_China_US_AI_Race_Leaders_Views|中美 AI 竞赛]]（百度经历）。
+Ng 的独特之处是**专注狭义 AI 的工业落地而非追逐 AGI**。参见 [[19_业界观点/README.md|AGI 时间表矩阵]]、[[19_业界观点/25_Talks_Synthesis_综合演讲/04_China_US_AI_Race_Leaders_Views|中美 AI 竞赛]]（百度经历）。
 
 ---
 
@@ -160,7 +160,7 @@ Ng 的独特之处是**专注狭义 AI 的工业落地而非追逐 AGI**。参�
 - [[19_业界观点/03_Andrew_Ng_吴恩达/01_关于|人物简介]] · [[19_业界观点/03_Andrew_Ng_吴恩达/04_名言|核心语录]]
 - [[19_业界观点/02_Andrej_Karpathy_卡帕西/01_关于|Andrej Karpathy]] · [[19_业界观点/09_Fei_Fei_Li_李飞飞/01_关于|Fei-Fei Li]]
 - [[19_业界观点/23_Sebastian_Thrun_特伦/01_关于|Sebastian Thrun]] · [[19_业界观点/01_3Blue1Brown_三蓝一棕/02_关于|3Blue1Brown]]
-- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/02_AGI_时间线_预测_矩阵.md|AGI 时间表矩阵]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/04_China_US_AI_Race_Leaders_Views|中美 AI 竞赛]]
 - [[19_业界观点/03_Andrew_Ng_吴恩达/02_Andrew_Ng_2026_更新|2026 动态更新]]
 - [[19_业界观点/INDEX|业界观点首页]]

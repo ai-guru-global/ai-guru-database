@@ -25,12 +25,12 @@ AI 系统的底层是数值计算。本模块覆盖浮点运算、稀疏矩阵�
 | 浮点精度与混合精度训练 | 进阶 | [01_Floating_Point_精确度.md](./01_Floating_Point_精确度.md) |
 | 稀疏矩阵与高效运算 | 进阶 | [06_Sparse_矩阵_Computation.md](./06_Sparse_矩阵_Computation.md) |
 | 数值稳定性与诊断 | 进阶 | [05_Numerical_Stability.md](./05_Numerical_Stability.md) |
-| 小白版入门 | 入门 | [Numerical_Methods_for_dummy.md](./Numerical_Methods_for_dummy.md) |
+| 小白版入门 | 入门 | Numerical_Methods_for_dummy.md |
 
 ## 前置知识
 
 - **必修**: [线性代数](../02_线性代数/03_线性代数.md)（矩阵运算基础）
-- **必修**: [微积分与优化](01_数学基础/01_数学基础/01_Calculus_02_优化.md)（梯度计算）
+- **必修**: [微积分与优化](01_数学基础/README.md)（梯度计算）
 - **推荐**: [GPU 编程](../GPU_Programming/)（硬件浮点实现）
 
 ## 与其他模块的关联
@@ -99,4 +99,4 @@ AI 系统的底层是数值计算。本模块覆盖浮点运算、稀疏矩阵�
 
 ## 相关文档
 
-- [[01_数学基础/05_数值方法/Numerical_Methods_for_dummy|数值方法小白版]]
+- [[01_数学基础/README.md|数值方法小白版]]

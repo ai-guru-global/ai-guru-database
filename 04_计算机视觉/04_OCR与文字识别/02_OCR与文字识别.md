@@ -943,7 +943,7 @@ print(plate)
 
 ## 相关链接
 
-- [[04_计算机视觉/04_OCR与文字识别/OCR_for_dummy|OCR 与文字识别 (小白版)]] — 本篇的零基础版本
+- [[04_计算机视觉/README.md|OCR 与文字识别 (小白版)]] — 本篇的零基础版本
 - [[04_计算机视觉/04_OCR与文字识别/index|OCR 文字识别索引]] — 主题导览
 - [[概念/Vision/document-ai|文档 AI]] — OCR 在文档 AI 中的应用
 - [[14_RAG系统/index|RAG 系统]] — OCR 在 RAG 文档解析中的作用

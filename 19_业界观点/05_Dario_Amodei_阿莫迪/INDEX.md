@@ -171,7 +171,7 @@ Amodei 的独特之处是**同时是 Scaling 派和安全派**——他相信强
 - [[19_业界观点/21_Sam_Altman_奥特曼/01_关于|Sam Altman]] · [[19_业界观点/06_Demis_Hassabis_哈萨比斯/01_关于|Demis Hassabis]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/07_Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源]]
-- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/02_AGI_时间线_预测_矩阵.md|AGI 时间表矩阵]]
 - [[19_业界观点/INDEX|业界观点首页]]
 
 ---

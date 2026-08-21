@@ -493,7 +493,7 @@ IDE 扩展 ───────────────────────
 - [Cody 官网](https://sourcegraph.com/cody)
 - [Tabnine 官网](https://tabnine.com)
 - [Codeium 官网](https://codeium.com)
-- [Claude Code](./02_Claude_Code_深入分析.md)
+- [Claude Code](16_编程/05_开发工具/02_Claude_Code_深入分析.md)
 - [Windsurf/Cursor/Devin](./08_Windsurf_Cursor_Devin_Dive.md)
 
 ## Related

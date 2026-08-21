@@ -35,7 +35,7 @@ name_en: "Agent Production"
 
 - [[15_智能体/01_Agent基础/05_Agent_概览|智能体概览]]
 - [[15_智能体/Agent_Production_Deployment_Runbook|智能体生产部署手册]]
-- [[15_智能体/Agent_Safety_Evaluation_for_dummy|智能体安全评估入门]]
+- [[15_智能体/README.md|智能体安全评估入门]]
 - [[15_智能体/01_Agent基础/13_Agentic_设计_模式_AndrewNg|Agentic 设计模式（Andrew Ng）]]
 - [[15_智能体/AI_OpenSource_Projects_Overview|AI 开源项目概览]]
 - [[15_智能体/GenAI_L06_Text_Generation_Apps|GenAI L06 文本生成应用]]

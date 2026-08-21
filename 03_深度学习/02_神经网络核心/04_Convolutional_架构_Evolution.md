@@ -818,11 +818,11 @@ class HybridBlock(nn.Module):
 - [[03_深度学习/02_神经网络核心/01_注意力_Mechanisms_深入分析]] — Vision Transformer 的注意力机制
 - [[03_深度学习/02_神经网络核心/09_神经网络核心]] — 神经网络核心架构总览
 - [[03_深度学习/02_神经网络核心/10_Normalization_技术_深入分析]] — CNN 中的 BatchNorm vs Transformer 中的 LayerNorm
-- [[Neural_Architecture_Search]] — EfficientNet 的 NAS 搜索
+- Neural_Architecture_Search — EfficientNet 的 NAS 搜索
 - [[概念/Math/optimization-regularization]] — 深度 CNN 训练的优化策略
 - [[03_深度学习/State_Space_Models/index|状态空间模型]] — Mamba 对 CNN 的潜在替代
 - [[03_深度学习/04_生成模型/index|生成模型]] — CNN 在 Diffusion 中的角色
-- [[Embedding_Representation_Learning]] — CNN 特征作为视觉嵌入
+- Embedding_Representation_Learning — CNN 特征作为视觉嵌入
 
 ---
 

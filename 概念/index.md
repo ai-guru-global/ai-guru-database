@@ -12,24 +12,24 @@ name_en: "Concept Graph"
 
 > 中文简称：概念图谱 ｜ English Name: Concept Graph
 
-This page indexes the contents of `概念`. Total: 584 files across 12 subdomains.
+This page indexes the contents of `概念`. Total: 700+ files across 12 subdomains.
 
 ## Subdomains
 
 | 子域 | 文件数 | 说明 |
 |------|------|------|
 | [[概念/General/index|概念/General 域索引]] | 151 | 已建 12 个逻辑语义子域导航 (2026-07) |
-| [[概念/LLM/]] | 116 | 大语言模型架构、训练、对齐 |
-| [[概念/K8s/]] | 70 | Kubernetes 与云原生 AI 基础设施 |
-| [[概念/Training/]] | 49 | 模型训练、分布式训练、优化 |
-| [[概念/Inference/]] | 35 | 推理引擎、服务化、优化 |
-| [[概念/RAG/]] | 33 | 检索增强生成、向量数据库 |
-| [[概念/Agent/]] | 30 | AI 智能体、工具调用、多智能体 |
-| [[概念/GPU/]] | 30 | GPU 硬件、CUDA、集群管理 |
-| [[概念/MLOps/]] | 23 | ML 运维、CI/CD、监控 |
-| [[概念/Math/]] | 18 | 数学基础、优化理论 |
-| [[概念/Vision/]] | 24 | 计算机视觉、多模态 |
-| [[概念/Safety/]] | 20 | AI 安全、对齐、伦理 |
+| [[概念/LLM/]] | 118 | 大语言模型架构、训练、对齐 |
+| [[概念/K8s/]] | 106 | Kubernetes 与云原生 AI 基础设施 |
+| [[概念/Training/]] | 61 | 模型训练、分布式训练、优化 |
+| [[概念/Inference/]] | 43 | 推理引擎、服务化、优化 |
+| [[概念/RAG/]] | 41 | 检索增强生成、向量数据库 |
+| [[概念/Agent/]] | 39 | AI 智能体、工具调用、多智能体 |
+| [[概念/GPU/]] | 34 | GPU 硬件、CUDA、集群管理 |
+| [[概念/MLOps/]] | 28 | ML 运维、CI/CD、监控 |
+| [[概念/Math/]] | 22 | 数学基础、优化理论 |
+| [[概念/Vision/]] | 28 | 计算机视觉、多模态 |
+| [[概念/Safety/README|Safety 域索引]] | 26 | AI 安全、对齐、伦理、治理 |
 
 ## Files (General subdomain)
 
@@ -463,6 +463,7 @@ This page indexes the contents of `概念`. Total: 584 files across 12 subdomain
 - [[概念/README|README]]
 - [[概念/reasoning-models|Reasoning Models]]
 - [[概念/recommendation-systems|Recommendation Systems]]
+- [[概念/recursive-self-improvement|Recursive Self Improvement]]
 - [[概念/red-teaming|Red Teaming]]
 - [[概念/reflexion|Reflexion]]
 - [[概念/reinforcement-learning|Reinforcement Learning]]
@@ -608,6 +609,7 @@ This page indexes the contents of `概念`. Total: 584 files across 12 subdomain
 - [[概念/RAG/multimodal-rag|multimodal-rag]]
 - [[概念/RAG/reranker-2|reranker-2]]
 - [[概念/Safety/ai-audit-traceability|ai-audit-traceability]]
+- [[概念/Safety/recursive-self-improvement|recursive-self-improvement]]
 - [[概念/Training/curriculum-learning|curriculum-learning]]
 - [[概念/Vision/autonomous-driving-vision|autonomous-driving-vision]]
 - [[概念/Vision/face-recognition|face-recognition]]

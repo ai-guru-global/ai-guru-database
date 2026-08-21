@@ -62,24 +62,24 @@ name_zh: "05 计算机视觉"
 | 论文 | 内容 | 文档链接 |
 |------|------|---------|
 | ViT (Vision Transformer) | 将 Transformer 引入视觉，图像即 16×16 tokens | [05_ViT_深入分析.md](04_计算机视觉/01_CV基础/05_ViT_深入分析.md) |
-| CLIP | 多模态学习里程碑，zero-shot 图像分类 | [02_CL知识产权_深入分析.md](./08_多模态视觉/02_CL知识产权_深入分析.md) |
+| CLIP | 多模态学习里程碑，zero-shot 图像分类 | [02_CL知识产权_深入分析.md](20_论文精读/08_计算机视觉/02_CL知识产权_深入分析.md) |
 
 ### 小白版入门 (for_dummy)
 
-- [计算机视觉 - 小白版](README_for_dummy.md) — 零基础入门
-- [图像分类与检测 - 小白版](./02_图像分类与检测/Image_Classification_Detection_for_dummy.md)
-- [图像分割 - 小白版](./03_图像分割/Segmentation_for_dummy.md)
-- [多模态视觉 - 小白版](./08_多模态视觉/Multimodal_Vision_for_dummy.md)
-- [生成模型 - 小白版](./06_生成模型/Generative_Models_for_dummy.md)
-- [视频生成 - 小白版](./07_视频生成/Video_Generation_for_dummy.md)
-- [3D 视觉 - 小白版](./05_三维视觉/3D_Vision_for_dummy.md)
-- [OCR - 小白版](./04_OCR与文字识别/OCR_for_dummy.md)
+- 计算机视觉 - 小白版 — 零基础入门
+- 图像分类与检测 - 小白版
+- 图像分割 - 小白版
+- 多模态视觉 - 小白版
+- 生成模型 - 小白版
+- 视频生成 - 小白版
+- 3D 视觉 - 小白版
+- OCR - 小白版
 
 ## 前置知识 (Prerequisites)
 
 - **必修**: [神经网络核心](03_深度学习/02_神经网络核心/09_神经网络核心.md)（理解 CNN 架构）
-- **必修**: [优化与正则化](03_深度学习/03_训练优化/02_优化.md)（训练视觉模型）
-- **推荐**: [Transformer 革命](05_大模型/04_Transformer_Revolution/09_03_Transformer架构_Revolution.md)（理解 ViT 和多模态）
+- **必修**: [优化与正则化](03_深度学习/03_优化方法/02_优化.md)（训练视觉模型）
+- **推荐**: [Transformer 革命](05_大模型/03_Transformer架构/03_Transformer_Revolution.md)（理解 ViT 和多模态）
 - **可选**: [概率统计](01_数学基础/03_概率统计/02_概率统计.md)（理解扩散模型）
 
 ## 关键术语速查 (Key Terms)
@@ -103,20 +103,20 @@ name_zh: "05 计算机视觉"
 - [[04_计算机视觉/README|05 计算机视觉 - 小白版 🖼️]]
 - [[04_计算机视觉/CV-in-nutshell|计算机视觉速成指南 (Computer Vision in a Nutshell)]]
 
-- [[04_计算机视觉/03_图像分割/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, computer-vision, cv, image-processing)
+- [[04_计算机视觉/README.md]] — 图像分割 - 小白版 ✂️ (共享: cnn, computer-vision, cv, image-processing)
 - [[04_计算机视觉/07_视频生成/README]] — AI视频生成 (Video Generation) (共享: cnn, computer-vision, cv, image-processing)
 - [[20_论文精读/08_计算机视觉/06_ResNet_深入分析]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
 - [[04_计算机视觉/05_三维视觉/3D_Vision]] — 3D_Vision
-- [[04_计算机视觉/05_三维视觉/3D_Vision_for_dummy]] — 3D_Vision_for_dummy
+- [[04_计算机视觉/README.md]] — 3D_Vision_for_dummy
 - [[概念/Vision/image-segmentation]] — Segmentation
-- [[04_计算机视觉/04_OCR与文字识别/OCR_for_dummy]] — OCR_for_dummy
+- [[04_计算机视觉/README.md]] — OCR_for_dummy
 - [[04_计算机视觉/04_OCR与文字识别/OCR_Text_Recognition]] — OCR_Text_Recognition
 - [[概念/Vision/video-generation]] — Video_Generation_for_dummy
 - [[概念/Vision/video-generation]] — Video_Generation_2026
 - [[概念/Vision/clip]] — CLIP_Deep_Dive
 - [[04_计算机视觉/08_多模态视觉/03_多模态视觉]] — Multimodal_Vision_for_dummy
 - [[04_计算机视觉/08_多模态视觉/03_多模态视觉]] — Multimodal_Vision
-- [[04_计算机视觉/02_图像分类与检测/Image_Classification_Detection_for_dummy]] — Image_Classification_Detection_for_dummy
+- [[04_计算机视觉/README.md]] — Image_Classification_Detection_for_dummy
 - [[04_计算机视觉/02_图像分类与检测/01_图像分类与检测]] — Image_Classification_Detection
 - [[04_计算机视觉/06_生成模型/02_生成模型]] — Generative_Models
 - [[04_计算机视觉/06_生成模型/02_生成模型]] — Generative_Models_for_dummy

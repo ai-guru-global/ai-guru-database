@@ -101,8 +101,8 @@ name_zh: "Hands-On Large Language Models：12 章课程映射"
 ## 相关阅读
 
 - [[90_学习/05_参考资料/books/08_hands_on_llms_alammar]] — 书籍引用索引与本地克隆路径
-- [[90_学习/Courses/microsoft/01_microsoft_genai_for_beginners.md]] — 微软生成式 AI 入门课程（可与本书互补）
-- [[90_学习/Courses/microsoft/02_microsoft_ai_for_beginners.md]] — 微软 AI 基础 12 周课程
+- [[90_学习/03_课程资源/microsoft/01_microsoft_genai_for_beginners.md]] — 微软生成式 AI 入门课程（可与本书互补）
+- [[90_学习/03_课程资源/microsoft/02_microsoft_ai_for_beginners.md]] — 微软 AI 基础 12 周课程
 
 ## 核心知识框架
 

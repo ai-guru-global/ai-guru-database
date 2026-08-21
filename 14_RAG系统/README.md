@@ -25,21 +25,21 @@ name_zh: "RAG 系统"
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
 | [RAG-in-nutshell](14_RAG系统/01_RAG基础/08_RAG_简明指南.md) | 30 分钟速览：核心概念、架构流程、关键组件 | 快速入门 |
-| [RAG Systems for Dummy](14_RAG系统/01_RAG基础/RAG_Systems_for_dummy.md) | RAG 概念的简化版解释 | 初学者 |
+| [RAG Systems for Dummy](14_RAG系统/README.md) | RAG 概念的简化版解释 | 初学者 |
 
 ### 系统学习
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
 | [RAG Systems](14_RAG系统/01_RAG基础/07_RAG_系统.md) | RAG 完整技术体系：索引、检索、生成、评估 | 系统学习 |
-| [RAG 生产架构深度解析](14_RAG系统/05_RAG生产实践/05_RAG生产实践_Architecture_Deep_Dive.md) | 经典/Advanced/Agentic RAG 演进、生产管线、检索/生成/评估/合规 | RAG 架构师 |
+| [RAG 生产架构深度解析](14_RAG系统/README.md) | 经典/Advanced/Agentic RAG 演进、生产管线、检索/生成/评估/合规 | RAG 架构师 |
 | [RAG Advanced 2026](14_RAG系统/04_高级RAG/12_RAG_高级_2026.md) | 混合检索、重排序、Agentic RAG | 进阶学习 |
-| [RAG 检索延迟优化](14_RAG系统/04_高级RAG/RAG_Retrieval_Latency_02_优化.md) | HNSW/IVF、hybrid search、reranker 成本、向量索引调参 | RAG 性能工程师 |
+| [RAG 检索延迟优化](14_RAG系统/README.md) | HNSW/IVF、hybrid search、reranker 成本、向量索引调参 | RAG 性能工程师 |
 | [RAG 调试速查表](14_RAG系统/04_高级RAG/13_RAG_调试_Cheat_Sheet.md) | Query/检索/重排序/生成四环节诊断与评估指标 | RAG 工程师 |
-| [Agentic RAG 应用大白话](14_RAG系统/05_RAG生产实践/Agentic_RAG_Applications_for_dummy.md) | Agentic RAG、Text2SQL、代码生成工作流大白话 | 初学者 |
+| [Agentic RAG 应用大白话](14_RAG系统/README.md) | Agentic RAG、Text2SQL、代码生成工作流大白话 | 初学者 |
 | [Multimodal RAG 2026](14_RAG系统/04_高级RAG/10_多模态_RAG_架构_2026.md) | 多模态 RAG：复杂 PDF 解析、视频 RAG、ColPali 架构 | 进阶学习 |
-| [Matryoshka Representation Learning Deep Dive](./02_嵌入技术/04_Matryoshka_Representation_学习_深入分析.md) | MRL 可截断嵌入：精度与成本的动态平衡 | 进阶学习 |
-| [Spring AI RAG Deep Dive](14_RAG系统/06_RAG框架/07_Spring_AI_02_RAG_深入分析.md) | Spring AI 生态中的 RAG 实现 | Java 开发者 |
+| [Matryoshka Representation Learning Deep Dive](20_论文精读/04_效率优化/04_Matryoshka_Representation_学习_深入分析.md) | MRL 可截断嵌入：精度与成本的动态平衡 | 进阶学习 |
+| [Spring AI RAG Deep Dive](14_RAG系统/06_RAG框架/07_Spring_AI_RAG_深入分析.md) | Spring AI 生态中的 RAG 实现 | Java 开发者 |
 
 ### 向量数据库
 
@@ -65,8 +65,8 @@ name_zh: "RAG 系统"
 
 | 文档 | 内容 |
 |------|------|
-| [Sentence Transformers Deep Dive](14_RAG系统/02_嵌入技术/Sentence_Transformers_Deep_Dive.md) | 开源 Embedding 模型：多语言支持、100+ 模型 |
-| [Matryoshka Representation Learning Deep Dive](./02_嵌入技术/04_Matryoshka_Representation_学习_深入分析.md) | MRL 可截断嵌入：同一向量按需取前缀 |
+| [Sentence Transformers Deep Dive](14_RAG系统/02_嵌入技术/06_Sentence_Transformers_深入分析.md) | 开源 Embedding 模型：多语言支持、100+ 模型 |
+| [Matryoshka Representation Learning Deep Dive](20_论文精读/04_效率优化/04_Matryoshka_Representation_学习_深入分析.md) | MRL 可截断嵌入：同一向量按需取前缀 |
 
 ---
 
@@ -75,7 +75,7 @@ name_zh: "RAG 系统"
 - **快速入门** → [RAG-in-nutshell](14_RAG系统/01_RAG基础/08_RAG_简明指南.md)（30 分钟）
 - **系统学习** → [RAG Systems](14_RAG系统/01_RAG基础/07_RAG_系统.md)（2-3 小时）
 - **进阶实践** → [RAG Advanced 2026](14_RAG系统/04_高级RAG/12_RAG_高级_2026.md) + 向量数据库选型
-- **简化版** → [RAG Systems for Dummy](14_RAG系统/01_RAG基础/RAG_Systems_for_dummy.md)
+- **简化版** → [RAG Systems for Dummy](14_RAG系统/README.md)
 
 ---
 
@@ -83,7 +83,7 @@ name_zh: "RAG 系统"
 
 ### 前置知识
 - [大模型基础](../05_大模型/README.md) — Transformer、Prompt Engineering
-- [部署推理](./10_部署推理/README.md) — 模型服务化部署
+- [部署推理](10_部署推理/README.md) — 模型服务化部署
 - [Java 生态](../01_数学基础/11_Java生态与AI/) — Spring AI 集成
 
 ### RAG 推理引擎推荐
@@ -98,7 +98,7 @@ RAG 的生成阶段对 TTFT（首个 token 时间）和前缀缓存命中率非�
 | 极致低延迟云 API | [Groq](10_部署推理/02_推理引擎/07_Groq_深入分析.md) | LPU、毫秒级 TTFT |
 | 推理引擎统一选型 | [LLM Inference Engine Selection Guide](10_部署推理/02_推理引擎/17_LLM_推理引擎_选型_指南.md) | 决策树与场景速查 |
 
-详见 [部署推理](./10_部署推理/README.md) 完整专题。
+详见 [部署推理](10_部署推理/README.md) 完整专题。
 
 ### 进阶方向
 - [Agent 生产](../15_智能体/README.md) — Agentic RAG、记忆系统
@@ -140,7 +140,7 @@ RAG 的生成阶段对 TTFT（首个 token 时间）和前缀缓存命中率非�
 - [[14_RAG系统/04_高级RAG/02_Agentic_RAG_指南|Agentic RAG 应用大白话]]
 
 - [[RAG_Retrieval_Latency_Optimization|RAG 检索延迟优化]]
-- [[14_RAG系统/02_嵌入技术/HF_Datasets_Streaming_Guide|HuggingFace Datasets Streaming 模式实战指南]]
+- [[14_RAG系统/README.md|HuggingFace Datasets Streaming 模式实战指南]]
 
 ## 新增页面
 

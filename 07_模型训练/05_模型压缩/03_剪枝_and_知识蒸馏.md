@@ -1168,9 +1168,9 @@ flowchart LR
 
 - [**量化技术深度解析 2026**](10_部署推理/04_模型量化/04_量化_技术_2026.md) — 量化的完整方法论，与本文的剪枝+量化组合策略直接互补
 - [**PEFT 2026 参数高效微调**](05_大模型/06_微调技术/09_PEFT_2026.md) — 蒸馏后 Student 的低成本微调方法（LoRA、DoRA 等）
-- [**Meta LLaMA 深度解析**](05_大模型/13_全球LLM生态/07_Meta_04_LLaMA_深入分析.md) — LLaMA 4 Behemoth→Scout/Maverick 蒸馏架构的详细分析
+- [**Meta LLaMA 深度解析**](05_大模型/13_全球LLM生态/07_Meta_LLaMA_深入分析.md) — LLaMA 4 Behemoth→Scout/Maverick 蒸馏架构的详细分析
 - [**分布式训练 2026**](07_模型训练/04_分布式训练/03_分布式训练_2026.md) — 蒸馏训练中的大规模数据并行和 Teacher 推理并行
-- [**GRPO 与对齐方法**](07_模型训练/06_对齐研究/02_GRPO_and_新型_对齐_Methods.md) — 蒸馏后的对齐阶段（DPO/GRPO）方法详解
+- [**GRPO 与对齐方法**](07_模型训练/06_对齐训练/02_GRPO_and_新型_对齐_Methods.md) — 蒸馏后的对齐阶段（DPO/GRPO）方法详解
 
 ### 关键论文
 
@@ -1211,4 +1211,4 @@ flowchart LR
 - [[概念/Training/pruning|剪枝]] — 剪枝概念卡片
 - [[概念/Training/knowledge-distillation|知识蒸馏]] — 蒸馏概念卡片
 - [[概念/Training/model-compression|模型压缩]] — 压缩概念卡片
-- [[03_深度学习/09_高级专题/Knowledge_Distillation|知识蒸馏]] — 蒸馏技术详解
+- [[概念/Training/knowledge-distillation.md|知识蒸馏]] — 蒸馏技术详解

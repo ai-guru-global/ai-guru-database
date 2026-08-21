@@ -75,7 +75,7 @@ name_zh: "Agent 生产部署"
 | [Agent Protocols 2026](15_智能体/01_Agent基础/07_Agent_协议_2026.md) | MCP、A2A、UCP 协议规范 | 架构师、开发者 |
 | [Agent Protocols Comparison](15_智能体/01_Agent基础/08_Agent_协议_对比_2026.md) | Agent 协议对比分析 | 选型参考 |
 | [Agent Protocols Detail](15_智能体/01_Agent基础/09_Agent_协议_Detail.md) | Agent 协议详解 | 架构师 |
-| [MCP Implementation Guide](15_智能体/01_Agent基础/20_MCP_04_Implementation_指南.md) | MCP 协议实现指南 | 开发者 |
+| [MCP Implementation Guide](15_智能体/07_Agent评估/Implementation/04_Implementation_指南.md) | MCP 协议实现指南 | 开发者 |
 | [Agent State Management](15_智能体/01_Agent基础/10_Agent_State_Management.md) | Agent 状态管理 | 架构师、开发者 |
 | [Agent Observability 2026](15_智能体/01_Agent基础/04_Agent_可观测性_2026.md) | Agent 可观测性 | SRE、运维 |
 | [ADK Selection & Implementation](15_智能体/01_Agent基础/01_ADK_选型_and_实现_2026.md) | ADK 选型与跨协议实战 | 开发者 |
@@ -88,7 +88,7 @@ name_zh: "Agent 生产部署"
 | [Agent Harness README](./04_Agent脚手架/) | Harness 专题入口与角色指南 | 全角色 |
 | [The Anatomy of an Agent Harness](15_智能体/04_Agent脚手架/13_The_Anatomy_of_an_Agent_脚手架.md) | LangChain 博客：Harness 工程定义与核心组件 | 设计师、架构师 |
 | [Agent Harness 技术架构 2026](15_智能体/04_Agent脚手架/01_Agent_脚手架_架构_2026.md) | 技术架构、配置参数、性能指标、兼容性矩阵 | 全角色 |
-| [Agent 安全与评估大白话](15_智能体/01_Agent基础/Agent_Safety_Evaluation_for_dummy.md) | 工具调用安全、Agent 评估基准大白话 | 初学者 |
+| [Agent 安全与评估大白话](15_智能体/README.md) | 工具调用安全、Agent 评估基准大白话 | 初学者 |
 
 ### Agentic Coding 工具
 
@@ -96,7 +96,7 @@ name_zh: "Agent 生产部署"
 |------|------|----------|
 | [Agentic Coding Tools Overview](15_智能体/08_Agent编程工具/01_Agent编程_工具_概览.md) | AI Agent 全景图 (20+ 工具汇总) | 入门、选型 |
 | [Claude Code Deep Dive](16_编程/05_开发工具/02_Claude_Code_深入分析.md) | Anthropic 官方 Agent 编程 CLI | 开发者、评估师 |
-| [OpenCode Deep Dive](15_智能体/08_Agent编程工具/07_OpenCode_开源编程_Deep_Dive.md) | 自主执行式 AI 编程 Agent | 开发者、评估师 |
+| [OpenCode Deep Dive](15_智能体/README.md) | 自主执行式 AI 编程 Agent | 开发者、评估师 |
 | [Windsurf / Cursor / Devin](15_智能体/08_Agent编程工具/08_Windsurf_Cursor_Devin_Dive.md) | CLI 工具全景对比 | 选型参考 |
 | [International Agentic Tools](15_智能体/08_Agent编程工具/06_International_Agentic_工具.md) | 国际工具 (Aider/Continue/CodeRabbit/Cody) | 开发者、选型 |
 
@@ -270,7 +270,7 @@ L4: 持久化知识 → SQL/NoSQL
 - [[概念/tool-calling|工具调用]]
 - [[概念/tool-calling-safety|工具调用安全]]
 - [[概念/agent-evaluation-benchmarks|Agent 评估基准]]
-- [[15_智能体/Agent_Safety_Evaluation_for_dummy|Agent 安全与评估大白话]]
+- [[15_智能体/README.md|Agent 安全与评估大白话]]
 
 - [[15_智能体/12_中国Agent生态/README|国内 AI Agent 生态]]
 - [[15_智能体/07_Agent评估/Cloud_Agent_Evaluation/README|Cloud Agent Evaluation]]

@@ -26,8 +26,8 @@ title: Wiki Log
 
 - Broken link 清理最终轮:
  - 修复 15 个文件的 false positive（Python 列表、YAML 头、模板语法）
- - 修复 MOC_OpenRouter_OpenCode.md 的 [[topic-ai-coding/ 前缀链接
- - 修复 24 个 OpenRouter/OpenCode 文件的 `[[AI编程/MOC_OpenRouter_OpenCode|...]]` 回链
+ - 修复 MOC_OpenRouter_OpenCode.md 的 \[\[topic-ai-coding/ 前缀链接
+ - 修复 24 个 OpenRouter/OpenCode 文件的 \[\[AI编程/MOC_OpenRouter_OpenCode|...\]\] 回链
  - **最终 broken links: 0**
 - Frontmatter 补完:
  - 为 `_insights.md` 和 `README_EN.md` 添加 frontmatter
@@ -1071,7 +1071,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - 新增 `参考/cdi-spec.md` — CDI 规范官方源引用索引（references 层；仓库/Apache-2.0/CNCF Tags/spec 版本/运行时支持矩阵/CLI 工具，含本地文档反链）
 - 更新 `架构基建/Hardware_Compute/CDI_Deep_Dive.md`:
   - 新增 §10「常见问题与排错」—— 6 大类（配置发现 / 生成同步 / 版本兼容 / 注入冲突 / 排查 / 安全）+ 排错决策树，覆盖 spec 找不到、忘重启 runtime、MIG 不同步、Docker feature flag、hooks 报错隐晦、隔离失效等真实坑
-  - 「官方资源」段加引向 [[架构基建/Hardware_Compute/CDI_Spec_Reference]] 的 wiki 链接
+  - 「官方资源」段加引向 CDI_Spec_Reference 的 wiki 链接
   - 目录更新为 §1–§11
 - 登记: `索引.md` 容器与设备接入分组新增 参考/cdi-spec
 - 校验: 新文件 wikilink 全部解析；check_links.py 对新文件 0 broken；参考/cdi-spec 获 2 入链（index + Deep_Dive）非 orphan

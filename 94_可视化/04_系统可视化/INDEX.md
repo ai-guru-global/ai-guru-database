@@ -35,9 +35,9 @@ name_en: "System Viz"
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[94_可视化/System_Viz/AI_System_Dashboard\|AI System Dashboard]] | 监控、告警与运维仪表盘设计 | 平台工程师 / 运维仪表盘设计者 |
-| [[94_可视化/System_Viz/Inference_Serving_Visualization\|Inference Serving Visualization]] | 推理服务延迟、吞吐与链路可视化 | 推理工程师 |
-| [[94_可视化/System_Viz/Knowledge_Graph_Visualization\|Knowledge Graph Visualization]] | 知识图谱布局、交互与探索 | 知识图谱工程师 / 可视化开发者 |
+| [[94_可视化/System_Viz/AI_System_Dashboard|AI System Dashboard]] | 监控、告警与运维仪表盘设计 | 平台工程师 / 运维仪表盘设计者 |
+| [[94_可视化/System_Viz/Inference_Serving_Visualization|Inference Serving Visualization]] | 推理服务延迟、吞吐与链路可视化 | 推理工程师 |
+| [[94_可视化/System_Viz/Knowledge_Graph_Visualization|Knowledge Graph Visualization]] | 知识图谱布局、交互与探索 | 知识图谱工程师 / 可视化开发者 |
 | [[94_可视化/04_系统可视化/05_模型_架构_Viz|Model Architecture Viz]] | 模型架构可视化（结构图/计算图） | 架构师 / 研究员 |
 
 ---

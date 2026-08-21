@@ -8,8 +8,8 @@
 
 | 文件 | 内容 |
 |---|---|
-| [FDE概述与定义](01_FDE概述与定义.md) | FDE 完整定义、核心特征、一句话讲清楚 |
-| [FDE起源与Palantir](02_FDE起源与Palantir.md) | Palantir 如何发明 FDE 模式、历史演变 |
-| [FDE与传统岗位对比](03_FDE与传统岗位对比.md) | FDE vs 售前/实施/客户成功/产品经理 |
-| [FDE在中国的发展](04_FDE在中国的发展.md) | 中国 FDE 市场现状、42 倍增长分析 |
-| [FDE的行业角色定位](05_FDE的行业角色定位.md) | FDE 在 AI 产业链中的位置与价值 |
+| [FDE概述与定义](22-FDE/01_FDE基础/01_FDE概述与定义.md) | FDE 完整定义、核心特征、一句话讲清楚 |
+| [FDE起源与Palantir](22-FDE/01_FDE基础/02_FDE起源与Palantir.md) | Palantir 如何发明 FDE 模式、历史演变 |
+| [FDE与传统岗位对比](22-FDE/01_FDE基础/03_FDE与传统岗位对比.md) | FDE vs 售前/实施/客户成功/产品经理 |
+| [FDE在中国的发展](22-FDE/01_FDE基础/04_FDE在中国的发展.md) | 中国 FDE 市场现状、42 倍增长分析 |
+| [FDE的行业角色定位](22-FDE/01_FDE基础/05_FDE的行业角色定位.md) | FDE 在 AI 产业链中的位置与价值 |

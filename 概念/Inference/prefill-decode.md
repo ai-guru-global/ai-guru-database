@@ -179,7 +179,7 @@ Append 优化：将新 token 的 KV 写入与 Attention 计算融合，减少一
 - [[概念/mixture-of-experts]] — MoE（与推理阶段的协同）
 - [[概念/ttft]] — TTFT
 - [[10_部署推理/03_推理优化/13_Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
-- [[10_部署推理/03_推理优化/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[10_部署推理/README.md|推理性能术语大白话解释]]
 - [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack
 
 ## PD 分离架构

@@ -60,12 +60,12 @@ Phase 5 企业级实践（安全 + 部署 + 多云）
 **🎯 目标**：理解 AI/LLM 核心概念，了解 Java 生态的 AI 布局。
 
 **📚 核心阅读**：
-- [Stage 1: 基础概念](90_学习/concepts/03_stage1_foundation.md)（快速浏览）
+- [Stage 1: 基础概念](90_学习/01_概念认知/03_stage1_foundation.md)（快速浏览）
 - [Java 生态 AI 全景概览](01_数学基础/11_Java生态与AI/02_Java生态与AI_概览.md)（重点）
 
 **🔗 深入阅读**：
-- [LLM 架构（小白版）](05_大模型/04_LLM架构/LLM_Architectures_for_dummy.md)
-- [RAG 系统入门](14_RAG系统/01_RAG基础/RAG_Systems_for_dummy.md)
+- [LLM 架构（小白版）](05_大模型/README.md)
+- [RAG 系统入门](14_RAG系统/README.md)
 - [AI 系统架构全景图](12_架构基建/02_架构概览/03_AI_系统_架构_2026.md)
 
 **💡 重点理解**：
@@ -135,7 +135,7 @@ public class ChatController {
 **🎯 目标**：掌握用 Spring AI 构建 RAG 系统 —— 文档加载、分块、向量存储、检索增强。
 
 **📚 核心阅读**：
-- [Spring AI RAG 深度解析](14_RAG系统/06_RAG框架/07_Spring_AI_02_RAG_深入分析.md)（重点精读）
+- [Spring AI RAG 深度解析](14_RAG系统/06_RAG框架/07_Spring_AI_RAG_深入分析.md)（重点精读）
 - [RAG 高级专题](14_RAG系统/04_高级RAG/12_RAG_高级_2026.md)（选读）
 
 **🔧 实践任务**：
@@ -193,7 +193,7 @@ public class ChatController {
 - [Spring AI 网关与安全](12_架构基建/11_AI网关/13_Spring_AI网关_安全.md)（重点）
 - [JVM AI 部署与推理](10_部署推理/02_推理引擎/10_JVM_AI_部署.md)（重点）
 - [Java AI 测试实践](09_测试/02_测试框架/03_Java_AI测试.md)（重点）
-- [Java Cloud SDK 指南](11_模型运维/Cloud_Ops_Agent/04_Java_云_SDK_指南.md)（选读）
+- [Java Cloud SDK 指南](11_模型运维/14_云运维Agent/04_Java_云_SDK_指南.md)（选读）
 
 **🔧 实践任务**：
 
@@ -274,7 +274,7 @@ public class ChatController {
                               └─────────────┘
 ```
 
-本路径专注于 **Java/Spring 生态的 AI 应用开发**。如果你想更深入了解 AI 底层原理，建议同时学习 [LLM 工程师路径](90_学习/pathways/08_llm_engineer.md)。
+本路径专注于 **Java/Spring 生态的 AI 应用开发**。如果你想更深入了解 AI 底层原理，建议同时学习 [LLM 工程师路径](90_学习/02_学习路径/08_llm_engineer.md)。
 
 ---
 
@@ -392,7 +392,7 @@ Day 1-2: Embedding + 向量数据库
 □ 安装 PGVector (docker run pgvector/pgvector)
 □ 理解 Embedding 原理
 □ 实现文档 → Embedding → PGVector 写入
-□ 阅读文档: → [RAG 深度指南](14_RAG系统/06_RAG框架/07_Spring_AI_02_RAG_深入分析.md)
+□ 阅读文档: → [RAG 深度指南](14_RAG系统/06_RAG框架/07_Spring_AI_RAG_深入分析.md)
 
 Day 3-5: 构建第一个 RAG 应用
 ────────────────────────────────────────────────────────────────

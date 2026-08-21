@@ -27,7 +27,7 @@ This page indexes the contents of `模型评估`.
 - [[08_模型评估/05_自动化评估/Evaluation_Report_Template|模型评估报告模板]]
 - [[08_模型评估/Evaluation_Automation_2026|Evaluation Automation 2026]]
 - [[15_智能体/07_Agent评估/Metrics/01_Metrics_Collection|Evaluation Metrics]]
-- [[08_模型评估/06_安全评估/Fairness_Evaluation_for_dummy|Fairness Evaluation For Dummy]]
+- [[08_模型评估/README.md|Fairness Evaluation For Dummy]]
 - [[08_模型评估/03_LLM评估/03_LLM评估_2026|LLM Evaluation 2026]]
 - [[08_模型评估/01_评估基础/06_模型评估|Model Evaluation]]
 - [[08_模型评估/01_评估基础/06_模型评估|Model Evaluation For Dummy]]

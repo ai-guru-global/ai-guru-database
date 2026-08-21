@@ -146,7 +146,7 @@ Block Table: A→[1,5,8]  B→[2,6]  C→[3,7]
 - [[概念/model-deployment]] — 模型部署全景
 - [[概念/multi-head-latent-attention]] — MLA（架构层压缩 KV Cache）
 - [[10_部署推理/02_推理引擎/29_vLLM_深入分析]] — vLLM（PagedAttention 首发实现）
-- [[10_部署推理/02_推理引擎/vLLM_for_dummy]] — vLLM 大白话解释
+- [[10_部署推理/README.md]] — vLLM 大白话解释
 - [[10_部署推理/02_推理引擎/vLLM_PagedAttention_Architecture]] — vLLM + PagedAttention 架构链路图
 - [[10_部署推理/02_推理引擎/23_SGLang_深入分析]] — SGLang（结合 RadixAttention 的内存管理）
 - [[10_部署推理/02_推理引擎/18_LMDeploy_深入分析]] — LMDeploy（TurboMind Paging KV Cache）

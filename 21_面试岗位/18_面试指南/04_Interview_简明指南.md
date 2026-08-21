@@ -57,14 +57,14 @@ flowchart TB
 
 | 赛道 | 岗位 | 核心考察 | 入口 |
 |------|------|----------|------|
-| 研究 | Research Scientist / Applied Scientist | 论文、数学推导、实验设计 | [[21_面试岗位/Research_Scientist\|研究科学家]] |
+| 研究 | Research Scientist / Applied Scientist | 论文、数学推导、实验设计 | [[21_面试岗位/Research_Scientist|研究科学家]] |
 | 算法工程 | Machine Learning Engineer | ML 基础 + 编程 + 系统设计 | [[21_面试岗位/INDEX|MLE]] |
-| LLM 平台 | LLM Platform Engineer | 推理优化、分布式、GPU | [[21_面试岗位/LLM_Platform_Engineer\|LLM 平台工程师]] |
-| 智能体 | Agent Engineer | Agent 架构、工具调用、RAG | [[21_面试岗位/Agent_Engineer/Agent_Engineer_2026\|Agent 工程师]] |
-| 运维 | MLOps Engineer / Cloud Ops | 流水线、监控、成本 | [[21_面试岗位/MLOps_Engineer\|MLOps]] |
-| 数据 | Data Engineer / Data Scientist | SQL、管道、统计与实验 | [[21_面试岗位/Data_Scientist\|数据科学家]] |
-| 评估安全 | Evaluation / Safety / Security | 评测体系、红队、对齐 | [[21_面试岗位/AI_Evaluation_Engineer\|评估工程师]] |
-| 产品 | AI Product Manager | 产品 sense、AI 能力边界 | [[21_面试岗位/AI_Product_Manager\|AI 产品经理]] |
+| LLM 平台 | LLM Platform Engineer | 推理优化、分布式、GPU | [[21_面试岗位/README.md|LLM 平台工程师]] |
+| 智能体 | Agent Engineer | Agent 架构、工具调用、RAG | [[21_面试岗位/Agent_Engineer/Agent_Engineer_2026|Agent 工程师]] |
+| 运维 | MLOps Engineer / Cloud Ops | 流水线、监控、成本 | [[21_面试岗位/MLOps_Engineer|MLOps]] |
+| 数据 | Data Engineer / Data Scientist | SQL、管道、统计与实验 | [[21_面试岗位/README.md|数据科学家]] |
+| 评估安全 | Evaluation / Safety / Security | 评测体系、红队、对齐 | [[21_面试岗位/AI_Evaluation_Engineer|评估工程师]] |
+| 产品 | AI Product Manager | 产品 sense、AI 能力边界 | [[21_面试岗位/AI_Product_Manager|AI 产品经理]] |
 
 > 完整 24 岗位列表见 [[21_面试岗位/index|章节首页]]。
 

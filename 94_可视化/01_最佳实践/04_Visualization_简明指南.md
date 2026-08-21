@@ -81,7 +81,7 @@ flowchart TB
 | 学习率调度 | warmup 与衰减是否符合预期 | loss 尖刺常与 LR 突变对齐 |
 | 梯度范数 | 数值稳定性 | 爆炸 → 加 clip；趋零 → 梯度消失/死层 |
 
-深入: [[94_可视化/Training_Viz/Training_Curves_Analysis|训练曲线分析]] · [[94_可视化/Training_Viz/Training_Monitoring_Visualization|训练监控可视化]] · [[94_可视化/Training_Viz/Experiment_Tracking_Visualization|实验跟踪可视化]]
+深入: [[94_可视化/README.md|训练曲线分析]] · [[94_可视化/Training_Viz/Training_Monitoring_Visualization|训练监控可视化]] · [[94_可视化/Training_Viz/Experiment_Tracking_Visualization|实验跟踪可视化]]
 
 ---
 
@@ -90,8 +90,8 @@ flowchart TB
 | 技术 | 回答的问题 | 入口 |
 |------|-----------|------|
 | 注意力热图 | 模型在"看"哪里 | [[94_可视化/01_最佳实践/04_Visualization_简明指南|注意力可视化指南]] |
-| t-SNE / UMAP | embedding 空间长什么样 | [[94_可视化/Evaluation_Viz/Dimensionality_Reduction_Viz\|降维可视化]] |
-| SHAP / Grad-CAM | 哪个特征/像素决定了预测 | [[94_可视化/Evaluation_Viz/Model_Interpretability_Visualization\|可解释性可视化]] |
+| t-SNE / UMAP | embedding 空间长什么样 | [[94_可视化/03_评估可视化/03_降维可视化.md|降维可视化]] |
+| SHAP / Grad-CAM | 哪个特征/像素决定了预测 | [[94_可视化/Evaluation_Viz/Model_Interpretability_Visualization|可解释性可视化]] |
 | 混淆矩阵 / PR 曲线 | 错在哪一类、阈值怎么选 | [[94_可视化/01_最佳实践/04_Visualization_简明指南|评估可视化指南]] |
 
 > t-SNE vs UMAP 一句话：**t-SNE 局部聚类更漂亮，UMAP 更快且全局距离更可信**；两者的簇间距离都不能过度解读。

@@ -680,7 +680,7 @@ llama.cpp 性能优化 checklist
 
 - [[10_部署推理/01_部署基础/03_部署推理.md|Deployment_Inference]]
 - [[10_部署推理/01_部署基础/02_部署推理_2026.md|Deployment_Inference_2026]]
-- [[10_部署推理/01_部署基础/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[10_部署推理/README.md|Deployment_Inference_for_dummy]]
 - [[10_部署推理/01_部署基础/06_推理_简明指南.md|Inference-in-nutshell]]
 - [[10_部署推理/02_推理引擎/22_Ollama_深入分析.md|Ollama_Deep_Dive]]
 - [[10_部署推理/02_推理引擎/29_vLLM_深入分析.md|vLLM_Deep_Dive]]

@@ -18,7 +18,7 @@ This page indexes the contents of `07_模型训练/04_分布式训练`.
 
 - [[07_模型训练/04_分布式训练/01_Colossal_AI_深入分析|Colossal AI Deep Dive]]
 - [[07_模型训练/04_分布式训练/02_DeepSpeed_深入分析|Deepspeed Deep Dive]]
-- [[07_模型训练/04_分布式训练/DeepSpeed_for_dummy|Deepspeed For Dummy]]
+- [[07_模型训练/README.md|Deepspeed For Dummy]]
 - [[07_模型训练/04_分布式训练/03_分布式训练_2026|Distributed Training 2026]]
 - [[07_模型训练/04_分布式训练/03_分布式训练_2026|Distributed Training For Dummy]]
 - [[07_模型训练/04_分布式训练/04_分布式训练_Hang_操作手册|Distributed Training Hang Runbook]]

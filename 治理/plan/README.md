@@ -71,7 +71,7 @@ name_zh: "项目规划"
 
 ## 与其他章节的关联
 
-- [90_Learn](../90_学习/README.md) — 学习路径规划
+- [90_Learn](90_学习/README.md) — 学习路径规划
 - [治理/Import_Guide](../Import_Guide.md) — 项目导入指南
 - [治理/Document_Templates](../Document_Templates.md) — 文档模板规范
 

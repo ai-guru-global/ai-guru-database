@@ -599,7 +599,7 @@ request_cost_dollars = Counter(
 
 - [AI Ops 2026](../01_AIOps基础/01_AI运维2026.md) — 智能运维完整体系
 - [AI Ops 速成](../01_AIOps基础/02_AIOps简明指南.md) — AI Ops 核心概念
-- [Cloud Ops 2026](../../11_模型运维/Cloud_Ops_Agent/01_云_产品_Ops_2026.md) — 云产品运维
+- [Cloud Ops 2026](11_模型运维/14_云运维Agent/01_云_产品_Ops_2026.md) — 云产品运维
 - [部署与推理](../../10_部署推理/01_部署基础/06_推理_简明指南.md) — 推理优化
 - [AI 成本优化](12_架构基建/02_架构概览/01_AI_成本优化_2026.md) — Token 经济学
 - [AI 安全](../../17_伦理安全/07_AI安全2026/) — 安全红队
@@ -610,5 +610,5 @@ request_cost_dollars = Counter(
 
 - [[13_运维/01_AIOps基础/AIOps-in-nutshell]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
 - [[13_运维/02_SRE与可靠性/01_AI_故障应急_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
-- [[13_运维/01_AIOps基础/AI_Ops_for_dummy]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_运维/README.md]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
 - [[13_运维/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)

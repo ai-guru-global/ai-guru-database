@@ -136,5 +136,5 @@ COMPLIANCE_REQUIREMENTS = {
 - [[17_伦理安全/|伦理安全]]
 - [[17_伦理安全/09_深度伪造安全/01_AI_Watermarking|AI 水印]]
 - [[17_伦理安全/01_伦理基础/06_Bias_Fairness_测试|偏见公平测试]]
-- [[17_伦理安全/03_AI治理/AI_Liability|AI 责任]]
+- [[17_伦理安全/README.md|AI 责任]]
 - [[08_模型评估/|模型评估]]

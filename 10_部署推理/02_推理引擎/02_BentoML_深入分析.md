@@ -723,7 +723,7 @@ class ObservableService:
 - [[10_部署推理/02_推理引擎/25_TensorRT_LLM_深入分析.md|TensorRT_LLM_Deep_Dive]]
 - [[10_部署推理/01_部署基础/03_部署推理.md|Deployment_Inference]]
 - [[10_部署推理/01_部署基础/02_部署推理_2026.md|Deployment_Inference_2026]]
-- [[10_部署推理/01_部署基础/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[10_部署推理/README.md|Deployment_Inference_for_dummy]]
 - [[10_部署推理/01_部署基础/06_推理_简明指南.md|Inference-in-nutshell]]
 - [[10_部署推理/02_推理引擎/17_LLM_推理引擎_选型_指南.md|LLM_Inference_Engine_Selection_Guide]]
 - [[12_架构基建/11_AI网关/09_LiteLLM_深入分析|LiteLLM_Deep_Dive]]

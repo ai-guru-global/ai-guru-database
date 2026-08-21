@@ -325,7 +325,7 @@ Claude Code 安全配置
 
 - [Claude Code 官网](https://claude.ai/code)
 - [Anthropic API 文档](https://docs.anthropic.com/)
-- [OpenCode Deep Dive](./07_OpenCode_开源编程_Deep_Dive.md)
+- OpenCode Deep Dive
 - [Vibe Coding 方法论](16_编程/03_方法论/03_Vibe_Coding_方法论.md) — 如何系统化地使用 Claude Code 进行 Vibe Coding
 
 ## 相关链接

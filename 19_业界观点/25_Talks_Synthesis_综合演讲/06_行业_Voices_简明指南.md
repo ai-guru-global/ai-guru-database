@@ -71,7 +71,7 @@ flowchart TB
 | 开源 vs 闭源 | LeCun/梁文锋：开源是安全阀 | Amodei：强模型开源有扩散风险 | DeepSeek/Llama 已逼近闭源第一梯队 |
 | 世界模型 vs LLM | LeCun：LLM 无法通向 AGI | Sutskever：压缩即智能 | 多模态 + 世界模型成为共同押注 |
 
-深入阅读: [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 世界模型之辩]] · [[19_业界观点/25_Talks_Synthesis_综合演讲/07_Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源 2026]]
+深入阅读: [[19_业界观点/25_Talks_Synthesis_综合演讲/05_Hinton_vs_LeCun_世界模型_Debate.md|Hinton vs LeCun 世界模型之辩]] · [[19_业界观点/25_Talks_Synthesis_综合演讲/07_Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源 2026]]
 
 ---
 
@@ -101,7 +101,7 @@ flowchart TB
 | 2035+（保守） | LeCun、Andrew Ng | LLM 缺世界模型与持续学习 |
 | 拒绝预测 | Hinton | "不确定性本身就是最大的风险" |
 
-> 规律：**离商业融资越近，时间线越激进**。完整矩阵见 [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间线预测矩阵]]。
+> 规律：**离商业融资越近，时间线越激进**。完整矩阵见 [[19_业界观点/README.md|AGI 时间线预测矩阵]]。
 
 ---
 

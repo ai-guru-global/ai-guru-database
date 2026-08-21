@@ -18,7 +18,7 @@ name_zh: "AI视频生成"
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
-| [08_视频生成_2026.md](./08_视频生成_2026.md) | 2026 年 AI 视频生成全景报告 | 全面学习 |
+| [08_视频生成_2026.md](05_大模型/09_多模态模型/08_视频生成_2026.md) | 2026 年 AI 视频生成全景报告 | 全面学习 |
 
 ## 2026 年市场格局
 
@@ -69,7 +69,7 @@ name_zh: "AI视频生成"
 ## Related
 
 - [[04_计算机视觉/README]] — 05 计算机视觉 (Computer Vision) (共享: cnn, computer-vision, cv, image-processing)
-- [[04_计算机视觉/03_图像分割/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, computer-vision, cv, image-processing)
+- [[04_计算机视觉/README.md]] — 图像分割 - 小白版 ✂️ (共享: cnn, computer-vision, cv, image-processing)
 - [[20_论文精读/08_计算机视觉/06_ResNet_深入分析]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
 - [[概念/computer-vision]] — 计算机视觉 (共享: cnn, cv)
 - [[04_计算机视觉/01_CV基础/05_ViT_深入分析.md|ViT_Deep_Dive]]

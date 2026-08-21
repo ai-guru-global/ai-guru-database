@@ -32,7 +32,7 @@ name_en: "Agent Foundations"
 | [[概念/Agent/agent-protocols|Agent Protocols 2026]] | Agent Protocols 2026 | 开发者/学习者 |
 | [[概念/Agent/agent-protocols|Agent Protocols Comparison 2026]] | Agent Protocols Comparison 2026 | 开发者/学习者 |
 | [[15_智能体/01_Agent基础/Agent_Protocols_Detail|Agent Protocols Detail]] | Agent Protocols Detail | 开发者/学习者 |
-| [[15_智能体/01_Agent基础/Agent_Safety_Evaluation_for_dummy|Agent Safety Evaluation for dummy]] | Agent Safety Evaluation for dummy | 开发者/学习者 |
+| [[15_智能体/README.md|Agent Safety Evaluation for dummy]] | Agent Safety Evaluation for dummy | 开发者/学习者 |
 | [[15_智能体/01_Agent基础/10_Agent_State_Management|Agent State Management]] | Agent State Management | 开发者/学习者 |
 | [[15_智能体/01_Agent基础/13_Agentic_设计_模式_AndrewNg|吴恩达：Agentic Design Patterns 深度解析 (含 Prompt 与代码实现)]] | 吴恩达提出了推动 AI Agent 走向生产的四大核心模式：Reflection、Tool Use、Planning 和 Multi-agent。本文深入... | - | - |
 

@@ -20,12 +20,12 @@ name_en: "Time Series"
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[02_机器学习/09_时间序列/Time_Series_Analysis|Time Series Analysis]] | Time series analysis: classical methods, deep learning and Transformer-based approaches | data scientists / forecasting engineers |
-| [[02_机器学习/09_时间序列/Time_Series_for_dummy|Time Series for dummy]] | Time series beginner guide: trend, seasonality and forecasting fundamentals | beginners / analysts |
+| [[02_机器学习/README.md|Time Series for dummy]] | Time series beginner guide: trend, seasonality and forecasting fundamentals | beginners / analysts |
 
 ## Related
 
 - [[02_机器学习/08_异常检测/index|Anomaly Detection]]
-- [[18_行业应用/16_供应链物流/Supply_Chain_Logistics_index|Supply Chain & Logistics]]
+- [[18_行业应用/README.md|Supply Chain & Logistics]]
 
 ## 专题深度解析
 

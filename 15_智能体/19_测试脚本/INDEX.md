@@ -21,7 +21,7 @@ name_en: "tests"
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[15_智能体/tests/validate_markdown.sh|validate markdown.sh]] | Markdown format validation script | CI/CD pipeline / knowledge base maintainers |
+| [[15_智能体/README.md|validate markdown.sh]] | Markdown format validation script | CI/CD pipeline / knowledge base maintainers |
 
 ## Related
 

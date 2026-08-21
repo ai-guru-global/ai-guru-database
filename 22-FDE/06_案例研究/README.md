@@ -9,11 +9,11 @@
 
 | 文件 | 内容 |
 |---|---|
-| [Palantir案例详解](01_Palantir案例详解.md) | FDE 鼻祖的 20 余年实践（含 CIA/空客/NHS 争议） |
-| [OpenAI FDE实践](02_OpenAI_FDE实践.md) | Deployment Company（2026.5.11）的运作模式 |
-| [DeployCo案例](03_DeployCo案例.md) | OpenAI DeployCo + Anthropic-Blackstone-Goldman 模型公司下场做交付 |
-| [Anthropic金融FDE](Anthropic金融FDE.md) | 高盛/黑石合作案例分析（规划中） |
-| [国内FDE案例集](国内FDE案例集.md) | 中国本土 FDE 落地实践（规划中） |
-| [政企AI落地标杆](政企AI落地标杆.md) | 成功与失败案例深度复盘（规划中） |
+| [Palantir案例详解](22-FDE/06_案例研究/01_Palantir案例详解.md) | FDE 鼻祖的 20 余年实践（含 CIA/空客/NHS 争议） |
+| [OpenAI FDE实践](22-FDE/06_案例研究/02_OpenAI_FDE实践.md) | Deployment Company（2026.5.11）的运作模式 |
+| [DeployCo案例](22-FDE/06_案例研究/03_DeployCo案例.md) | OpenAI DeployCo + Anthropic-Blackstone-Goldman 模型公司下场做交付 |
+| Anthropic金融FDE | 高盛/黑石合作案例分析（规划中） |
+| 国内FDE案例集 | 中国本土 FDE 落地实践（规划中） |
+| 政企AI落地标杆 | 成功与失败案例深度复盘（规划中） |
 
 > ⚠️ 标注「规划中」的文件尚未创建。已核实的中国 FDE 公司与薪资见 [中国 FDE 市场](../09_市场分析/01_中国FDE市场.md)。

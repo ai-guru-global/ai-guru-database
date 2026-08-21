@@ -209,7 +209,7 @@ flowchart TB
 
 ### 议题 3：AGI 时间表与竞赛节奏
 
-竞赛节奏取决于双方对 AGI 何时到来的判断——若很近，军备竞赛会加速；若远，可能缓和。见 [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]。
+竞赛节奏取决于双方对 AGI 何时到来的判断——若很近，军备竞赛会加速；若远，可能缓和。见 [[19_业界观点/README.md|AGI 时间表预测矩阵]]。
 
 ---
 
@@ -361,8 +361,8 @@ flowchart TB
 - [[19_业界观点/04_Bill_Gates_比尔盖茨/01_关于|Bill Gates 简介]] · [[19_业界观点/21_Sam_Altman_奥特曼/01_关于|Altman 简介]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/07_Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]]
-- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]
-- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 之争]]
+- [[19_业界观点/README.md|AGI 时间表预测矩阵]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/05_Hinton_vs_LeCun_世界模型_Debate.md|Hinton vs LeCun 之争]]
 - [[19_业界观点/index|业界观点首页]]
 
 ---

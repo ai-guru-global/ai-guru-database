@@ -1240,7 +1240,7 @@ spec:
 
 - [[10_部署推理/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, model-deployment, serving, vllm)
 - [[10_部署推理/01_部署基础/02_部署推理_2026]] — 部署推理 2026 趋势 (共享: deployment, inference, model-deployment, serving, vllm)
-- [[10_部署推理/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, model-deployment, serving, vllm)
+- [[10_部署推理/README.md]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, model-deployment, serving, vllm)
 - [[概念/Inference/causal-inference]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)
 - [[10_部署推理/02_推理引擎/12_LiteRT_深入分析.md|LiteRT_Deep_Dive]]
 - [[10_部署推理/02_推理引擎/22_Ollama_深入分析.md|Ollama_Deep_Dive]]

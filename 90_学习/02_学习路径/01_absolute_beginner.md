@@ -58,7 +58,7 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 
 **🎯 目标**：理解 AI 是什么，它和普通软件有什么区别，为什么 ChatGPT 这么特别。
 
-**📚 核心概念**：[Stage 0: AI 觉醒](../concepts/02_stage0_awakening.md)
+**📚 核心概念**：[Stage 0: AI 觉醒](90_学习/01_概念认知/02_stage0_awakening.md)
 
 **🔗 深入阅读**：
 - [AI 基础概念入门](00_入门/01_基础入门/02_AI基础.md) — 最推荐的起点
@@ -76,10 +76,10 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 
 **🎯 目标**：掌握 AI 领域的核心术语，知道"模型"、"训练"、"推理"这些词是什么意思。
 
-**📚 核心概念**：[Stage 1: 基础概念](../concepts/03_stage1_foundation.md)（浏览为主，不需要深入细节）
+**📚 核心概念**：[Stage 1: 基础概念](90_学习/01_概念认知/03_stage1_foundation.md)（浏览为主，不需要深入细节）
 
 **🔗 深入阅读**：
-- [README_for_dummy.md](../.README_for_dummy.md) — 新手导航，章节级别的概览
+- README_for_dummy.md — 新手导航，章节级别的概览
 - [AI 技术全景概览](00_入门/02_技术概览/05_AI技术全景.md) — 技术栈全貌
 
 **💡 重点理解的概念**（只需要"知道"，不需要"会用"）：
@@ -106,10 +106,10 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **🎯 目标**：理解 ChatGPT、Claude 为什么能对话，它们背后的 Transformer 是什么。
 
 **🔗 深入阅读**：
-- [自然语言处理与大模型（小白版）](../../05_大模型/README_for_dummy.md)
-- [Transformer 革命（小白版）](05_大模型/04_Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- [提示词工程（小白版）](05_大模型/07_提示工程/Prompt_Engineering_for_dummy.md)
-- [大语言模型架构（小白版）](05_大模型/04_LLM架构/LLM_Architectures_for_dummy.md)
+- [自然语言处理与大模型（小白版）](05_大模型/README.md)
+- [Transformer 革命（小白版）](05_大模型/03_Transformer架构/03_Transformer_Revolution.md)
+- [提示词工程（小白版）](05_大模型/README.md)
+- [大语言模型架构（小白版）](05_大模型/README.md)
 
 **✅ 学会标志**：
 - 能解释 Transformer 的核心思想（Attention 机制）
@@ -124,9 +124,9 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **🎯 目标**：理解 AI 怎么看图片和视频，为什么它能认出照片里的人脸。
 
 **🔗 深入阅读**：
-- [计算机视觉（小白版）](../../04_计算机视觉/README_for_dummy.md)
-- [图像分类与检测（小白版）](04_计算机视觉/02_图像分类与检测/Image_Classification_Detection_for_dummy.md)
-- [生成模型（小白版）](04_计算机视觉/06_生成模型/Generative_Models_for_dummy.md)
+- [计算机视觉（小白版）](04_计算机视觉/README.md)
+- [图像分类与检测（小白版）](04_计算机视觉/README.md)
+- [生成模型（小白版）](04_计算机视觉/README.md)
 
 **✅ 学会标志**：
 - 能解释 CNN 的核心思想（卷积核扫描图像）
@@ -142,8 +142,8 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **🔗 深入阅读**：
 - [AI 伦理与社会影响](00_入门/04_伦理与未来/02_AI伦理_Society.md)
 - [AI 经典案例分析集](00_入门/04_伦理与未来/01_AI经典案例.md)
-- [价值对齐（小白版）](17_伦理安全/02_价值对齐/Value_Alignment_for_dummy.md)
-- [AI 安全与红队（小白版）](17_伦理安全/04_AI安全与红队/AI_Safety_RedTeaming_for_dummy.md)
+- [价值对齐（小白版）](17_伦理安全/README.md)
+- [AI 安全与红队（小白版）](17_伦理安全/README.md)
 
 **✅ 学会标志**：
 - 能列出至少 3 个 AI 伦理问题并说出各方观点
@@ -169,7 +169,7 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 
 ## 里程碑自测
 
-完成本路径后，请回顾 [07_milestones.md](../guides/07_milestones.md) 中的 Stage 0 和 Stage 1 自测题。
+完成本路径后，请回顾 [07_milestones.md](90_学习/04_实践指南/07_milestones.md) 中的 Stage 0 和 Stage 1 自测题。
 
 如果你能正确回答大部分问题，说明你已经建立了扎实的 AI 基础认知框架。
 

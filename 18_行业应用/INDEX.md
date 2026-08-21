@@ -16,21 +16,21 @@ This page indexes the contents of `行业应用`.
 
 ## Subdirectories
 
-- [[18_行业应用/10_农业/Agriculture_index|Agriculture]]
+- [[18_行业应用/README.md|Agriculture]]
 - [[18_行业应用/02_AI_for_Science_科学计算/index|AI For Science]]
-- [[18_行业应用/06_自动驾驶/Autonomous_Driving_index|Autonomous Driving]]
-- [[18_行业应用/18_代码生成/Code_Generation_index|Code Generation]]
-- [[18_行业应用/13_内容与媒体/Content_Media_index|Content Media]]
+- [[18_行业应用/README.md|Autonomous Driving]]
+- [[18_行业应用/README.md|Code Generation]]
+- [[18_行业应用/README.md|Content Media]]
 - [[18_行业应用/05_教育/index|Education]]
-- [[18_行业应用/09_能源与气候/Energy_Climate_index|Energy Climate]]
+- [[18_行业应用/README.md|Energy Climate]]
 - [[18_行业应用/04_金融/index|Finance]]
 - [[18_行业应用/03_医疗健康/index|Healthcare]]
-- [[18_行业应用/12_人力资源/HR_Recruitment_index|HR Recruitment]]
-- [[18_行业应用/11_法律与政务/Legal_Government_index|Legal Government]]
-- [[18_行业应用/07_智能制造/Manufacturing_index|Manufacturing]]
-- [[18_行业应用/08_零售电商/Retail_Ecommerce_index|Retail Ecommerce]]
-- [[18_行业应用/15_安全与网安/Security_Cybersecurity_index|Security Cybersecurity]]
-- [[18_行业应用/16_供应链物流/Supply_Chain_Logistics_index|Supply Chain Logistics]]
+- [[18_行业应用/README.md|HR Recruitment]]
+- [[18_行业应用/README.md|Legal Government]]
+- [[18_行业应用/README.md|Manufacturing]]
+- [[18_行业应用/README.md|Retail Ecommerce]]
+- [[18_行业应用/README.md|Security Cybersecurity]]
+- [[18_行业应用/README.md|Supply Chain Logistics]]
 
 ## Files
 

@@ -398,6 +398,6 @@ predicted_class = outputs.logits.argmax(-1)
 
 - [[04_计算机视觉/README.md|计算机视觉 README]]
 - [[04_计算机视觉/05_三维视觉/02_三维视觉.md|3D_Vision]]
-- [[04_计算机视觉/05_三维视觉/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]
+- [[04_计算机视觉/README.md|3D_Vision_for_dummy]]
 - [[04_计算机视觉/06_生成模型/02_生成模型.md|Generative_Models]]
 - [[04_计算机视觉/06_生成模型/02_生成模型|Generative_Models_for_dummy]]

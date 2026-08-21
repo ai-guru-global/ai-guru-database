@@ -19,7 +19,7 @@ name_en: "HR Recruitment"
 |------|------|
 | [[18_行业应用/12_人力资源/AI_HR_Recruitment_2026|AI 人才招聘应用 2026 (AI for HR & Recruitment 2026)]] | AI 正在重塑人力资源行业——从智能招聘到员工体验，从人才分析到组织发展，系统解析 AI 在 HR 领域的应用全景。 |
 | [[18_行业应用/12_人力资源/02_HR_AI_Tech_架构_2026|HR AI 生产架构与 ROI 案例 2026]] | 深入 HR AI 的生产级技术方案——简历解析流水线、人岗匹配双塔模型、面试 Copilot、离职预测系统的架构设计，以及可量化的 ROI 测算与合规红线。 |
-| [[18_行业应用/12_人力资源/HR_Recruitment_index|HR & Recruitment]] |  |
+| [[18_行业应用/README.md|HR & Recruitment]] |  |
 
 ## Related
 

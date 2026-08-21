@@ -35,9 +35,9 @@ name_en: "Best Practices"
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[94_可视化/Best_Practices/Data_Visualization_Best_Practices\|Data Visualization Best Practices]] | 图表选择、配色与标注原则 | 全体实践者 / 数据分析师 |
-| [[94_可视化/Best_Practices/Data_Viz_Best_Practices\|Data Viz Best Practices]] | 数据可视化最佳实践（深度版） | 数据分析师 / 数据故事讲述者 |
-| [[94_可视化/Best_Practices/Visualization_for_dummy\|Visualization for dummy]] | 工具选择与常见陷阱 | 初学者 / 数据可视化学习者 |
+| [[94_可视化/Best_Practices/Data_Visualization_Best_Practices|Data Visualization Best Practices]] | 图表选择、配色与标注原则 | 全体实践者 / 数据分析师 |
+| [[94_可视化/01_最佳实践/02_数据_Viz_最佳实践.md|Data Viz Best Practices]] | 数据可视化最佳实践（深度版） | 数据分析师 / 数据故事讲述者 |
+| [[94_可视化/README.md|Visualization for dummy]] | 工具选择与常见陷阱 | 初学者 / 数据可视化学习者 |
 
 ---
 

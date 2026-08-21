@@ -85,4 +85,4 @@ FDE 不只是实施工程师——他**既是工程师，又是解决方案架�
 
 ---
 
-> **下一步**：了解 [FDE 的起源与 Palantir 的故事](02_FDE起源与Palantir.md)
+> **下一步**：了解 [FDE 的起源与 Palantir 的故事](22-FDE/01_FDE基础/02_FDE起源与Palantir.md)

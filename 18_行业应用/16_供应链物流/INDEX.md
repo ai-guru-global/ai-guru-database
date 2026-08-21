@@ -19,7 +19,7 @@ name_en: "Supply Chain Logistics"
 |------|------|
 | [[18_行业应用/16_供应链物流/AI_Supply_Chain_2026|AI 供应链物流应用 2026 (AI for Supply Chain & Logistics 2026)]] | AI 正在重塑供应链和物流行业——从需求预测到路径优化，从仓储自动化到供应链韧性，系统解析 AI 在供应链领域的应用全景。 |
 | [[18_行业应用/16_供应链物流/Logistics_Supply_Chain|AI Applications in Logistics & Supply Chain]] |  |
-| [[18_行业应用/16_供应链物流/Supply_Chain_Logistics_index|Supply Chain & Logistics]] |  |
+| [[18_行业应用/README.md|Supply Chain & Logistics]] |  |
 
 ## Related
 

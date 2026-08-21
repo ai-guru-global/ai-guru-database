@@ -92,7 +92,7 @@ AI 开源项目分类
 |------|------|------|------|
 | **LangChain** | 全能，组件丰富 | LLM 应用开发 | [Deep Dive](15_智能体/02_Agent框架/10_LangChain_深入分析.md) |
 | **LangChain Agents** | 工具调用框架 | ReAct、Plan-and-Execute | [Deep Dive](15_智能体/02_Agent框架/09_LangChain_Agent_深入分析.md) |
-| **Transformers Agents** | HuggingFace 原生 | 代码执行、多模态工具 | [Deep Dive](15_智能体/02_Agent框架/09_14_Transformers_Agent_深入分析.md) |
+| **Transformers Agents** | HuggingFace 原生 | 代码执行、多模态工具 | [Deep Dive](15_智能体/02_Agent框架/14_Transformers_Agent_深入分析.md) |
 
 ---
 
@@ -158,7 +158,7 @@ AI 开源项目分类
 
 | 模型 | 特点 | 文档 |
 |------|------|------|
-| **Sentence-Transformers** | 开源，多语言 | [Deep Dive](14_RAG系统/02_嵌入技术/Sentence_Transformers_Deep_Dive.md) |
+| **Sentence-Transformers** | 开源，多语言 | [Deep Dive](14_RAG系统/02_嵌入技术/06_Sentence_Transformers_深入分析.md) |
 | **Cohere Embed** | 企业级，高精度 | [Deep Dive](12_架构基建/11_AI网关/05_Cohere_深入分析.md) |
 | **OpenAI Embedding** | API 调用 | (见 OpenAI API 文档) |
 
@@ -190,8 +190,8 @@ AI 开源项目分类
 
 | 工具 | 类型 | 开发商 | 文档 |
 |------|------|--------|------|
-| **Claude Code** | CLI | Anthropic | [Deep Dive](15_智能体/08_Agent编程工具/02_Claude_Code_深入分析.md) |
-| **OpenCode** | CLI | OpenCode | [Deep Dive](15_智能体/08_Agent编程工具/07_OpenCode_开源编程_Deep_Dive.md) |
+| **Claude Code** | CLI | Anthropic | [Deep Dive](16_编程/05_开发工具/02_Claude_Code_深入分析.md) |
+| **OpenCode** | CLI | OpenCode | [Deep Dive](15_智能体/README.md) |
 | **Cursor** | IDE | Cursor | [Deep Dive](15_智能体/08_Agent编程工具/08_Windsurf_Cursor_Devin_Dive.md) |
 | **Windsurf** | IDE | Codeium | [Deep Dive](15_智能体/08_Agent编程工具/08_Windsurf_Cursor_Devin_Dive.md) |
 | **Devin** | SA Agent | Cognition | [Deep Dive](15_智能体/08_Agent编程工具/08_Windsurf_Cursor_Devin_Dive.md) |

@@ -231,7 +231,7 @@ flowchart LR
 | **闭源锁定** | 前沿能力因安全/管制被少数实验室垄断 | 中 | Amodei / Hassabis |
 | **分级监管** | 政府按能力等级强制要求开源/闭源策略 | 中 | Altman（呼吁类似 FDA 的 AI 机构）|
 
-> 关联阅读：AGI 何时到来会显著影响这场争论——若 AGI 在 2-5 年内实现，闭源锁定可能性上升；若更远，开源主导更可能。见 [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]。
+> 关联阅读：AGI 何时到来会显著影响这场争论——若 AGI 在 2-5 年内实现，闭源锁定可能性上升；若更远，开源主导更可能。见 [[19_业界观点/README.md|AGI 时间表预测矩阵]]。
 
 ---
 
@@ -389,8 +389,8 @@ flowchart LR
 - [[19_业界观点/02_Andrej_Karpathy_卡帕西/01_关于|Karpathy 简介]] · [[19_业界观点/20_Richard_Socher_索彻/01_关于|Socher 简介]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/04_China_US_AI_Race_Leaders_Views|中美 AI 竞赛领袖观点]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]]
-- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]
-- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 之争]]
+- [[19_业界观点/README.md|AGI 时间表预测矩阵]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/05_Hinton_vs_LeCun_世界模型_Debate.md|Hinton vs LeCun 之争]]
 - [[19_业界观点/index|业界观点首页]]
 
 ---

@@ -75,7 +75,7 @@ vendor.com/class=unique_name
 ## 与本地文档的关联
 
 - 深度解析 → [[12_架构基建/07_硬件与算力/03_CDI_深入分析|CDI 深度解析]](含 spec 结构、工作原理、训练/推理定位、常见问题)
-- 入门 → [[12_架构基建/CDI_for_dummy|CDI 小白版]]
+- 入门 → [[12_架构基建/README.md|CDI 小白版]]
 - 概念卡 → [[概念/cdi|CDI 概念卡片]]
 - 配套生态 → [[概念/dra|DRA]]、[[概念/gpu-operator|GPU Operator]]、[[概念/oci-runtime|OCI Runtime Spec]]
 

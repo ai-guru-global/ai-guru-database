@@ -168,7 +168,7 @@ Jensen Huang 是 AI 算力时代的核心人物。2006 年他推出 CUDA 平台�
 - [[19_业界观点/17_Mark_Zuckerberg_扎克伯格/01_关于|Mark Zuckerberg]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/04_China_US_AI_Race_Leaders_Views|中美 AI 竞赛]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]]
-- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/02_AGI_时间线_预测_矩阵.md|AGI 时间表矩阵]]
 - [[19_业界观点/INDEX|业界观点首页]]
 
 ---

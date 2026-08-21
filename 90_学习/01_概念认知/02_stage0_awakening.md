@@ -171,7 +171,7 @@ graph TD
   - **就业影响**: 自动化对劳动力市场的冲击
   - **信息生态**: 深假 (Deepfake)、虚假信息、信息茧房
   - **AI 治理与法规**: EU AI Act、各国 AI 监管框架
-- **延伸**: [[17_伦理安全/02_价值对齐/04_Value_对齐]]、[[17_伦理安全/04_AI安全与红队/AI_Safety_RedTeaming_for_dummy]]
+- **延伸**: [[17_伦理安全/02_价值对齐/04_Value_对齐]]、[[17_伦理安全/README.md]]
 
 ---
 
@@ -236,7 +236,7 @@ graph TD
 | 书籍 | [[90_学习/05_参考资料/books/01_why_machines_learn|Why Machines Learn]] | 数学科普，建立直觉 |
 | 书籍 | [[90_学习/05_参考资料/books/07_hands_on_ml_geron|Hands-On ML]] 前两章 | ML 全景与端到端项目 |
 | 课程 | [[90_学习/03_课程资源/microsoft/02_microsoft_ai_for_beginners|Microsoft AI for Beginners]] | 免费 12 周入门 |
-| 课程 | [[90_学习/Courses/microsoft/L01_Introduction_and_History_of_AI\|AI 历史与导论]] | 微软 AI 课程第 1 课 |
+| 课程 | [[90_学习/Courses/microsoft/L01_Introduction_and_History_of_AI|AI 历史与导论]] | 微软 AI 课程第 1 课 |
 | 工具 | ChatGPT / Claude / Gemini | 亲手使用，建立感性认识 |
 
 ## 学完本层的标志

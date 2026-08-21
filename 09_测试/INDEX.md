@@ -29,7 +29,7 @@ AI 测试知识体系（Testing Knowledge Base）— 涵盖测试方法论、评
 - [[09_测试/04_在线测试/02_AB测试索引|AB Testing]]
 - [[09_测试/02_测试框架/07_RAGAS_索引|RAGAS]]
 - [[09_测试/02_测试框架/10_Weights_Biases_索引|Weights & Biases]]
-- [[09_测试/01_测试基础/Test_Data_index|Test Data]]
+- [[09_测试/README.md|Test Data]]
 - [[09_测试/01_测试基础/04_Contract_测试|Contract Testing]]
 - [[08_模型评估/index|模型评估]]
 

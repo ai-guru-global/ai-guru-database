@@ -20,7 +20,7 @@ name_en: "Unsupervised Learning"
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[02_机器学习/03_无监督学习/Unsupervised_Learning|Unsupervised Learning]] | Unsupervised learning knowledge system: K-Means, DBSCAN, PCA and t-SNE | ML engineers / data scientists |
-| [[02_机器学习/03_无监督学习/Unsupervised_Learning_for_dummy|Unsupervised Learning for dummy]] | Unsupervised learning beginner guide: from clustering to self-supervised methods | beginners / ML learners |
+| [[02_机器学习/README.md|Unsupervised Learning for dummy]] | Unsupervised learning beginner guide: from clustering to self-supervised methods | beginners / ML learners |
 
 ## Related
 

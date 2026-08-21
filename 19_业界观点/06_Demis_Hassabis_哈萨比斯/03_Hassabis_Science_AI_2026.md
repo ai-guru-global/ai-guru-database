@@ -176,7 +176,7 @@ AI 预测的科学结果（如蛋白结构）有时缺乏可解释的机理，�
 - [[06_强化学习/index|强化学习]]（AlphaGo/Zero 的技术根基）
 - [[15_智能体/index|智能体]]（AlphaEvolve 的自主性）
 - [[18_行业应用/03_医疗健康/AI_Healthcare_Applications_2026|AI 医疗应用]]（Isomorphic Labs 方向）
-- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]
+- [[19_业界观点/README.md|AGI 时间表预测矩阵]]
 
 ---
 

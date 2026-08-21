@@ -23,10 +23,10 @@ name_en: "Neural Network Core"
 | [[03_深度学习/02_神经网络核心/01_注意力_Mechanisms_深入分析|注意力机制]] | Attention 原理深度解读 |
 | [[03_深度学习/02_神经网络核心/12_Your_First_神经网络|第一个神经网络]] | 从零搭建神经网络 |
 | [[03_深度学习/02_神经网络核心/10_Normalization_技术_深入分析|归一化技术]] | BN/LN/GN/RMSNorm 深度解析 |
-| [[03_深度学习/02_神经网络核心/Mixture_of_Experts_Theory|混合专家模型]] | MoE 理论、路由与工程实践 |
-| [[03_深度学习/02_神经网络核心/Neural_Architecture_Search|神经架构搜索]] | NAS 方法: DARTS/ENAS/EfficientNet |
+| [[03_深度学习/README.md|混合专家模型]] | MoE 理论、路由与工程实践 |
+| [[03_深度学习/README.md|神经架构搜索]] | NAS 方法: DARTS/ENAS/EfficientNet |
 | [[03_深度学习/02_神经网络核心/04_Convolutional_架构_Evolution|卷积架构演进]] | LeNet→ResNet→ConvNeXt 30年演进 |
-| [[03_深度学习/02_神经网络核心/Embedding_Representation_Learning|嵌入与表示学习]] | Word2Vec→RoPE→多模态嵌入 |
+| [[03_深度学习/README.md|嵌入与表示学习]] | Word2Vec→RoPE→多模态嵌入 |
 | [[03_深度学习/02_神经网络核心/02_注意力_Mechanisms_索引|注意力机制 (Attention Mechanisms)]] | 注意力机制子目录：从 Self-Attention 到 Flash Attention、GQA、MLA 的完整技术图谱。 | - |
 | [[03_深度学习/02_神经网络核心/11_State_Space_模型_2026|状态空间模型 2026: Mamba 与 Transformer 后继者]] | Transformer统治了AI 7年，但2026年状态空间模型(SSM)开始挑战它的霸主地位——Mamba、S4、RetNet等新架构承诺O(n)线性复... | - |
 

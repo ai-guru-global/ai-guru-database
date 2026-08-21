@@ -26,7 +26,7 @@ This page indexes the contents of `90_学习/References`.
 - [[90_学习/03_课程资源/apachecn/02_ailearning_指南|Apachecn Ailearning]]
 - [[90_学习/05_参考资料/Articles/05_awesome_llm_apps|Awesome Llm Apps]]
 - [[90_学习/05_参考资料/Articles/04_awesome_mcp_servers|Awesome Mcp Servers]]
-- [[12_架构基建/07_硬件与算力/CDI_Spec_Reference|Cdi Spec]]
+- [[12_架构基建/README.md|Cdi Spec]]
 - [[90_学习/05_参考资料/Articles/03_chip_huyen_agents_article|Chip Huyen Agents Article]]
 - [[90_学习/05_参考资料/Courses/05_genai_agents_nirdiamant|Genai Agents Nirdiamant]]
 - [[90_学习/03_课程资源/other/04_hello_agents|Hello Agents]]

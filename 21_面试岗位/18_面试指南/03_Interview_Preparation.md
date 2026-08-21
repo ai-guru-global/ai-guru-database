@@ -129,7 +129,7 @@ PREP_STRATEGY = {
 
 - [[21_面试岗位/|面试岗位]]
 - [[21_面试岗位/Prompt_Engineer/Prompt_Engineer|提示词工程师]]
-- [[00_入门/03_学习路径/AI_Career_Guide|AI 职业指南]]
+- [[00_入门/README.md|AI 职业指南]]
 - [[05_大模型/|大模型 (LLM 面试题)]]
 - [[12_架构基建/|架构基建 (系统设计)]]
 

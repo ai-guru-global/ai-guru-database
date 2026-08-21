@@ -20,7 +20,7 @@ name_en: "Segmentation"
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[概念/Vision/image-segmentation|Segmentation]] | Image segmentation knowledge system: U-Net, DeepLab to SAM | CV engineers / researchers |
-| [[04_计算机视觉/03_图像分割/Segmentation_for_dummy|Segmentation for dummy]] | Image segmentation beginner guide: from thresholding to Transformer-based models | beginners / CV learners |
+| [[04_计算机视觉/README.md|Segmentation for dummy]] | Image segmentation beginner guide: from thresholding to Transformer-based models | beginners / CV learners |
 
 ## Related
 

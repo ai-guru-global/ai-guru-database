@@ -367,8 +367,8 @@ AWS Bedrock    │  ✓    │  ✓    │  -    │  ✓    │  ✓
 ## 相关资源
 
 ### Agentic Coding CLI
-- [Claude Code](./02_Claude_Code_深入分析.md)
-- [OpenCode](./07_OpenCode_开源编程_Deep_Dive.md)
+- [Claude Code](16_编程/05_开发工具/02_Claude_Code_深入分析.md)
+- OpenCode
 - [CLI 工具全景对比](./08_Windsurf_Cursor_Devin_Dive.md)
 
 ### 多 Agent 框架

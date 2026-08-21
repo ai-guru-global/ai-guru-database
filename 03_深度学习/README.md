@@ -38,7 +38,7 @@ name_zh: "03 深度学习基础"
 | 主题 | 难度 | 描述 | 文档链接 |
 |------|------|------|---------|
 | 神经网络核心 (Neural Network Core) | 入门 | 激活函数、反向传播、BatchNorm/LayerNorm，理解网络训练机制 | [09_神经网络核心.md](03_深度学习/02_神经网络核心/09_神经网络核心.md) |
-| 优化与正则化 (Optimization) | 进阶 | AdamW、学习率调度、Dropout/Weight Decay，稳定训练与防过拟合 | [02_优化.md](03_深度学习/03_训练优化/02_优化.md) |
+| 优化与正则化 (Optimization) | 进阶 | AdamW、学习率调度、Dropout/Weight Decay，稳定训练与防过拟合 | [02_优化.md](03_深度学习/03_优化方法/02_优化.md) |
 | **状态空间模型 2026 (SSM)** | **2026 新增** | **Mamba/S4/RetNet、O(n)线性复杂度、Transformer 挑战者** | **[11_State_Space_模型_2026.md](./02_神经网络核心/11_State_Space_模型_2026.md)** |
 | **图神经网络 (GNN)** | **2026 新增** | **GCN/GAT/GraphSAGE/Graph Transformer、消息传递范式、分子预测** | **[Graph_Neural_Networks/](./05_图神经网络/)** |
 | **自监督学习 (SSL)** | **2026 新增** | **对比学习(SimCLR/MoCo)、掩码建模(MAE/BEiT)、自蒸馏(DINO)** | **[Self_Supervised_Learning/](./06_自监督学习/)** |

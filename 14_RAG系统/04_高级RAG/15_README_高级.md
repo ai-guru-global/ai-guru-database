@@ -33,7 +33,7 @@ name_zh: "RAG高级实践 2026"
 | [Milvus Deep Dive](14_RAG系统/03_向量数据库/03_Milvus_深入分析.md) | 超大规模向量数据库：万亿向量、分布式、云原生 | 超大规模 |
 | [Typesense Deep Dive](14_RAG系统/03_向量数据库/06_Typesense_深入分析.md) | 极速矢量搜索：毫秒级响应、模糊匹配 | 搜索优先 |
 | [Weaviate Deep Dive](14_RAG系统/03_向量数据库/07_Weaviate_深入分析.md) | 混合检索向量数据库：GraphQL、原生多模态 | 多模态、生产级 |
-| [Sentence Transformers Deep Dive](14_RAG系统/02_嵌入技术/Sentence_Transformers_Deep_Dive.md) | 开源 Embedding 模型：多语言支持、100+ 模型 | RAG、语义搜索 |
+| [Sentence Transformers Deep Dive](14_RAG系统/02_嵌入技术/06_Sentence_Transformers_深入分析.md) | 开源 Embedding 模型：多语言支持、100+ 模型 | RAG、语义搜索 |
 
 ## 框架选型
 

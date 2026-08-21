@@ -776,6 +776,6 @@ mindmap
 
 ---
 
-*本文是 [论文精读](.README.md) 系列的一部分，适合想深入理解注意力计算优化的读者。*
+*本文是 论文精读 系列的一部分，适合想深入理解注意力计算优化的读者。*
 *原始论文: [FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness](https://arxiv.org/abs/2205.14135)*
 *官方代码: [github.com/Dao-AILab/flash-attention](https://github.com/Dao-AILab/flash-attention)*

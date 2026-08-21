@@ -19,10 +19,10 @@ Agent 评估 Demo 项目 — 完整的端到端评估示例（end-to-end evaluat
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[15_智能体/07_Agent评估/Demo/run_evaluation|run evaluation]] | General evaluation runner script | evaluation engineers |
-| [[15_智能体/07_Agent评估/Demo/run_k8s_evaluation|run k8s evaluation]] | K8s scenario evaluation runner script | evaluation engineers |
+| [[15_智能体/README.md|run evaluation]] | General evaluation runner script | evaluation engineers |
+| [[15_智能体/README.md|run k8s evaluation]] | K8s scenario evaluation runner script | evaluation engineers |
 | [[15_智能体/07_Agent评估/Implementation/05_Config_模板|config]] | General evaluation configuration YAML | DevOps engineers |
-| [[15_智能体/07_Agent评估/Demo/config_k8s|config k8s]] | K8s evaluation configuration YAML | DevOps engineers |
+| [[15_智能体/README.md|config k8s]] | K8s evaluation configuration YAML | DevOps engineers |
 | [[15_智能体/07_Agent评估/Demo/requirements.txt|requirements.txt]] | Python dependencies requirements file | developers |
 | [[15_智能体/07_Agent评估/Demo/README|README]] | Project README documentation | all users |
 

@@ -353,7 +353,7 @@ AGI 预测不是静态的，它会随技术突破而剧烈波动。下表展示�
 - [[19_业界观点/11_Ilya_Sutskever_苏茨克维/01_关于|Sutskever 简介]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/07_Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]
-- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 之争]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/05_Hinton_vs_LeCun_世界模型_Debate.md|Hinton vs LeCun 之争]]
 - [[19_业界观点/index|业界观点首页]]
 
 ---

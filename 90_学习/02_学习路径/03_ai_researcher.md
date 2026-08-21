@@ -54,12 +54,12 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 
 **🎯 目标**：建立扎实的数学基础，能读懂论文中的公式推导。
 
-**📚 核心概念**：[Stage 1: 基础概念 — 数学相关部分](90_学习/concepts/03_stage1_foundation.md)
+**📚 核心概念**：[Stage 1: 基础概念 — 数学相关部分](90_学习/01_概念认知/03_stage1_foundation.md)
 
 **🔗 深入阅读**：
-- [线性代数（小白版）](01_数学基础/02_线性代数/Linear_Algebra_for_dummy.md) + 完整版
-- [概率统计（小白版）](01_数学基础/03_概率统计/Probability_Statistics_for_dummy.md) + 完整版
-- [优化（小白版）](03_深度学习/03_训练优化/Optimization_for_dummy.md)
+- [线性代数（小白版）](01_数学基础/README.md) + 完整版
+- [概率统计（小白版）](01_数学基础/README.md) + 完整版
+- [优化（小白版）](03_深度学习/README.md)
 
 **💡 研究者重点**：
 - 矩阵分解（SVD）与表示学习的关系
@@ -79,13 +79,13 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 
 **🎯 目标**：深入理解经典 ML/DL 的理论基础，不只是会用，要理解为什么。
 
-**📚 核心概念**：[Stage 1 + Stage 2 基础](90_学习/concepts/03_stage1_foundation.md) + [Stage 2 核心技术](90_学习/concepts/04_stage2_core_tech.md)
+**📚 核心概念**：[Stage 1 + Stage 2 基础](90_学习/01_概念认知/03_stage1_foundation.md) + [Stage 2 核心技术](90_学习/01_概念认知/04_stage2_core_tech.md)
 
 **🔗 深入阅读**（完整版，非 _for_dummy）：
 - [监督学习（完整版）](02_机器学习/02_监督学习/03_监督学习.md)
 - [无监督学习（完整版）](02_机器学习/03_无监督学习/02_无监督学习.md)
 - [神经网络核心（完整版）](03_深度学习/02_神经网络核心/09_神经网络核心.md)
-- [优化（完整版）](03_深度学习/03_训练优化/02_优化.md)
+- [优化（完整版）](03_深度学习/03_优化方法/02_优化.md)
 
 **💡 理论重点**：
 - VC 维数与泛化理论
@@ -110,11 +110,11 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 
 **🎯 目标**：彻底理解 Transformer 的每一处细节，能自己实现一个简化版本。
 
-**📚 核心概念**：[Stage 2: 核心技术 — Transformer / Attention 部分](90_学习/concepts/04_stage2_core_tech.md)
+**📚 核心概念**：[Stage 2: 核心技术 — Transformer / Attention 部分](90_学习/01_概念认知/04_stage2_core_tech.md)
 
 **🔗 深入阅读**：
-- [Transformer 革命（小白版）](05_大模型/04_Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- [LLM 架构（完整版）](05_大模型/04_LLM架构/LLM_Architectures_for_dummy.md)
+- [Transformer 革命（小白版）](05_大模型/03_Transformer架构/03_Transformer_Revolution.md)
+- [LLM 架构（完整版）](05_大模型/README.md)
 - 原始论文：[Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
 
 **💡 Transformer 理论重点**：
@@ -141,7 +141,7 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 
 **🎯 目标**：深入理解 LLM 的训练和对齐技术，掌握前沿研究方向。
 
-**📚 核心概念**：[Stage 2 LLM 部分](90_学习/concepts/04_stage2_core_tech.md) + [Stage 4 前沿部分](90_学习/concepts/06_stage4_frontier.md)
+**📚 核心概念**：[Stage 2 LLM 部分](90_学习/01_概念认知/04_stage2_core_tech.md) + [Stage 4 前沿部分](90_学习/01_概念认知/06_stage4_frontier.md)
 
 **🔗 必读论文**：
 
@@ -156,10 +156,10 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 | Scaling Law 新方向 | [ emergent abilities](https://arxiv.org/abs/2206.11176)、[scaling doesn't plateau](https://arxiv.org/abs/2304.15012) |
 
 **🔗 深入阅读**：
-- [微调技术（小白版）](05_大模型/06_微调技术/Fine_tuning_Techniques_for_dummy.md)
-- [价值对齐（小白版）](17_伦理安全/02_价值对齐/Value_Alignment_for_dummy.md)
-- [AI 安全与红队（小白版）](17_伦理安全/04_AI安全与红队/AI_Safety_RedTeaming_for_dummy.md)
-- [Scaling Law 与后 Scaling 时代](90_学习/concepts/06_stage4_frontier.md)（Stage 4 中的 Scaling Law 部分）
+- [微调技术（小白版）](05_大模型/README.md)
+- [价值对齐（小白版）](17_伦理安全/README.md)
+- [AI 安全与红队（小白版）](17_伦理安全/README.md)
+- [Scaling Law 与后 Scaling 时代](90_学习/01_概念认知/06_stage4_frontier.md)（Stage 4 中的 Scaling Law 部分）
 
 **✅ 学会标志**：
 - 能解释 RLHF 的完整流程和每一步的作用
@@ -208,7 +208,7 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 
 **🎯 目标**：深入当前最前沿的研究方向，形成自己的研究视野。
 
-**📚 核心概念**：[Stage 4: 前沿探索](90_学习/concepts/06_stage4_frontier.md)
+**📚 核心概念**：[Stage 4: 前沿探索](90_学习/01_概念认知/06_stage4_frontier.md)
 
 **🔗 2026 前沿专题**：
 
@@ -221,7 +221,7 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 - 核心论文：RT-2、OpenVLA、Figure AI 相关工作
 
 **专题 C: AI Safety 与对齐**
-- [AI 安全红队（小白版）](17_伦理安全/04_AI安全与红队/AI_Safety_RedTeaming_for_dummy.md)
+- [AI 安全红队（小白版）](17_伦理安全/README.md)
 - 核心论文：Mechanistic Interpretability Survey、ARC Prize
 
 **专题 D: Agent 评估**
@@ -237,7 +237,7 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 
 ## 里程碑自测
 
-完成本路径后，请回顾 [07_milestones.md](90_学习/guides/07_milestones.md) 中的所有自测题。同时检查：
+完成本路径后，请回顾 [07_milestones.md](90_学习/04_实践指南/07_milestones.md) 中的所有自测题。同时检查：
 - [ ] 能阅读并理解 NeurIPS / ICLR / ACL 的论文
 - [ ] 能复现至少 2 篇论文的实验
 - [ ] 对某个前沿方向有深入理解，能提出 research ideas
@@ -257,7 +257,7 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 
 ## Related
 
-- [[90_学习/guides/07_milestones.md]] — 里程碑自测 (共享: courses, education, learning, study-path)
-- [[90_学习/pathways/01_absolute_beginner.md]] — 零基础通识路径 (共享: courses, education, learning, study-path)
-- [[90_学习/pathways/07_java_developer.md]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)
-- [[90_学习/pathways/08_llm_engineer.md]] — LLM 工程师路径 (共享: courses, education, learning, study-path)
+- [[90_学习/04_实践指南/07_milestones.md]] — 里程碑自测 (共享: courses, education, learning, study-path)
+- [[90_学习/02_学习路径/01_absolute_beginner.md]] — 零基础通识路径 (共享: courses, education, learning, study-path)
+- [[90_学习/02_学习路径/07_java_developer.md]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)
+- [[90_学习/02_学习路径/08_llm_engineer.md]] — LLM 工程师路径 (共享: courses, education, learning, study-path)

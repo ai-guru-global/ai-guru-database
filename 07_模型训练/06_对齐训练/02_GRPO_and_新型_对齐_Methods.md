@@ -1572,7 +1572,7 @@ flowchart TB
 ## 12. 与其他章节的关联
 
 ### 前置知识
-- [RLHF 与 DPO 深度解读](20_论文精读/06_对齐研究/RLHF_03_DPO_深入分析.md) — InstructGPT、DPO 原始论文的详细解读
+- [RLHF 与 DPO 深度解读](20_论文精读/06_对齐研究/06_RLHF_DPO_深入分析.md) — InstructGPT、DPO 原始论文的详细解读
 - [深度学习基础](../../03_深度学习/README.md) — 反向传播、优化器、损失函数
 - [强化学习基础](../06_强化学习/) — PPO、REINFORCE、Actor-Critic 等 RL 算法
 

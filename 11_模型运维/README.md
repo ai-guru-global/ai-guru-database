@@ -72,7 +72,7 @@ graph LR
 |------|------|----------|
 | ⭐ **[LLMOps 2026](11_模型运维/10_LLMOps_大模型运维/05_LLMOps_2026.md)** | **LLM 时代主线**：传统 MLOps 失效的 7 大原因、Prompt/模型/RAG 三层架构、成本与延迟 SLO、可观测性、成熟度模型、3 个事故复盘 | 所有人必读 |
 | [Prompt 工程化运维](11_模型运维/11_Prompt运维/02_Prompt工程_Ops.md) | Prompt 版本化、A/B 测试、回归门禁、Prompt Registry（Promptflow/LangSmith/Promptfoo） | LLM 应用工程师 |
-| [LLM 评估流水线](11_模型运维/13_运维评估/03_LLM评估_Pipeline.md) | LLM-as-Judge、人审工作流、Eval 数据集版本化、CI 门禁、Ragas/DeepEval 实战 | LLM 应用工程师 |
+| [LLM 评估流水线](11_模型运维/README.md) | LLM-as-Judge、人审工作流、Eval 数据集版本化、CI 门禁、Ragas/DeepEval 实战 | LLM 应用工程师 |
 | [RAG 流水线运维](11_模型运维/05_流程编排/11_RAG_流水线_Ops.md) | 切块版本化、Embedding 升级策略、索引重建、检索质量监控（侧重 Ops） | RAG 系统工程师 |
 | [LLM 成本与延迟 SLO](11_模型运维/09_成本管理/03_LLM_成本_延迟_SLO.md) | 三层缓存、智能路由、级联、Token 预算熔断、FinOps | LLM 平台工程师 |
 | [LLM 可观测性](11_模型运维/08_可观测性/09_LLM_可观测性.md) | 五层监控、Trace 分布式追踪、幻觉/毒性/PII 在线检测、Runbook | SRE / LLM 平台 |
@@ -84,12 +84,12 @@ graph LR
 |------|------|----------|
 | [MLOps-in-nutshell](11_模型运维/01_MLOps基础/06_MLOps_简明指南.md) | 30 分钟速览：成熟度模型、生命周期、关键工具 | 快速入门 |
 | [MLOps Pipeline](11_模型运维/01_MLOps基础/05_MLOps_流水线.md) | 完整流水线设计：数据版本化、特征存储、模型注册、持续部署 | 系统学习 |
-| [MLOps Pipeline for Dummy](11_模型运维/01_MLOps基础/MLOps_Pipeline_for_dummy.md) | MLOps 概念的简化版解释 | 初学者 |
+| [MLOps Pipeline for Dummy](11_模型运维/README.md) | MLOps 概念的简化版解释 | 初学者 |
 | [Feature Store 深度解析](11_模型运维/04_实验追踪/05_特征存储_深入分析.md) | Feast/Tecton/Hopsworks 对比，训练-服务偏差解决方案 | 进阶 |
 | [实验追踪深度解析](11_模型运维/04_实验追踪/02_实验追踪_深入分析.md) | MLflow/W&B/Neptune 全面对比，实验管理与复现 | 进阶 |
 | [ML CI/CD 流水线](11_模型运维/06_持续集成部署/04_ML_CI_CD.md) | 数据验证、模型测试、金丝雀部署、GitHub Actions for ML | 进阶 |
 | [Model Monitoring & Drift Detection 2026](11_模型运维/08_可观测性/13_模型_监控_and_Drift_检测_2026.md) | 漂移检测理论、PSI/KS 统计、语义漂移、Evidently/WhyLabs 实战 | 进阶 |
-| [数据流水线编排](11_模型运维/05_流程编排/02_数据工程_Pipeline_Orchestration.md) | Airflow/Dagster/Prefect 对比，DAG 设计最佳实践 | 进阶 |
+| [数据流水线编排](11_模型运维/README.md) | Airflow/Dagster/Prefect 对比，DAG 设计最佳实践 | 进阶 |
 | [MLOps 成熟度模型](11_模型运维/01_MLOps基础/04_MLOps_Maturity_模型.md) | Level 0-3 成熟度评估、团队建设、工具选型、ROI 衡量 | 管理者 |
 | [Model Registry & Model Cards](11_模型运维/04_实验追踪/09_模型_注册中心_and_Cards_深入分析.md) | MLflow Registry、版本管理、阶段转换、Model Card 文档化 | 进阶 |
 
@@ -98,7 +98,7 @@ graph LR
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
 | [ML 数据流水线](11_模型运维/02_数据工程/01_数据_流水线_for_ML.md) | 数据摄取、清洗、特征工程、版本化、Airflow/K8s 编排 | 数据工程师 |
-| [数据验证与质量](11_模型运维/02_数据工程/02_数据工程_Validation_and_Quality.md) | 四层验证、Great Expectations/Pandera/Evidently、漂移检测 | 数据/MLOps 工程师 |
+| [数据验证与质量](11_模型运维/02_数据工程/02_数据_Validation_and_Quality.md) | 四层验证、Great Expectations/Pandera/Evidently、漂移检测 | 数据/MLOps 工程师 |
 
 ### 特征平台
 
@@ -149,8 +149,8 @@ graph LR
 
 | 文档 | 对应概念页 |
 |------|-----------|
-| [Kubeflow Deep Dive](11_模型运维/05_流程编排/07_Kubeflow_深入分析.md) | [[11_模型运维/05_流程编排/02_数据工程_Pipeline_Orchestration.md]] |
-| [Prefect Deep Dive](11_模型运维/05_流程编排/09_Prefect_深入分析.md) | [[11_模型运维/05_流程编排/02_数据工程_Pipeline_Orchestration.md]] |
+| [Kubeflow Deep Dive](11_模型运维/05_流程编排/07_Kubeflow_深入分析.md) | [[11_模型运维/README.md]] |
+| [Prefect Deep Dive](11_模型运维/05_流程编排/09_Prefect_深入分析.md) | [[11_模型运维/README.md]] |
 
 #### LLM 可观测与评估
 
@@ -190,13 +190,13 @@ graph LR
 
 ### LLM 应用开发者路径（2026 主流）
 - **主线** → [LLMOps 2026](11_模型运维/10_LLMOps_大模型运维/05_LLMOps_2026.md)（1 小时，必读）
-- **深扩** → [Prompt Ops](11_模型运维/11_Prompt运维/02_Prompt工程_Ops.md) → [LLM Eval](11_模型运维/13_运维评估/03_LLM评估_Pipeline.md) → [RAG Ops](11_模型运维/05_流程编排/11_RAG_流水线_Ops.md)
+- **深扩** → [Prompt Ops](11_模型运维/11_Prompt运维/02_Prompt工程_Ops.md) → [LLM Eval](11_模型运维/README.md) → [RAG Ops](11_模型运维/05_流程编排/11_RAG_流水线_Ops.md)
 - **成本** → 跨章参考 [[10_部署推理/06_成本管理/01_LLM_成本优化]]
 
 ### 传统 ML 工程师路径
 - **快速入门** → [MLOps-in-nutshell](11_模型运维/01_MLOps基础/06_MLOps_简明指南.md)（30 分钟）
 - **系统学习** → [MLOps Pipeline](11_模型运维/01_MLOps基础/05_MLOps_流水线.md)（2-3 小时）
-- **简化版** → [MLOps Pipeline for Dummy](11_模型运维/01_MLOps基础/MLOps_Pipeline_for_dummy.md)
+- **简化版** → [MLOps Pipeline for Dummy](11_模型运维/README.md)
 
 ---
 
@@ -205,7 +205,7 @@ graph LR
 ### 前置知识
 - [模型训练](../07_模型训练/) — 训练流程是 MLOps 的输入
 - [模型评估](../08_模型评估/) — 评估是流水线中的质量门禁
-- [部署推理](./10_部署推理/README.md) — MLOps 的最终交付环节
+- [部署推理](10_部署推理/README.md) — MLOps 的最终交付环节
 
 ### 进阶方向
 - [AI Ops](../13_运维/README.md) — 模型监控、告警、自动回滚

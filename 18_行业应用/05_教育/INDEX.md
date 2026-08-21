@@ -24,7 +24,7 @@ name_en: "Education"
 
 ## Related
 
-- [[18_行业应用/12_人力资源/HR_Recruitment_index|HR & Recruitment]]
+- [[18_行业应用/README.md|HR & Recruitment]]
 - [[18_行业应用/03_医疗健康/index|Healthcare]]
 
 ## 专题深度解析

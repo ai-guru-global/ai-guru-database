@@ -87,7 +87,7 @@ name_zh: "08 AI 伦理、安全与对齐"
 
 - **必修**: [大语言模型架构](05_大模型/04_LLM架构/05_LLM架构.md)（理解 LLM 行为）
 - **必修**: [微调技术](05_大模型/06_微调技术/03_微调技术.md)（RLHF 是微调的一种）
-- **推荐**: [深度强化学习](06_强化学习/02_深度强化学习/02_深度强化学习.md)（RLHF 中的 PPO）
+- **推荐**: [深度强化学习](06_强化学习/README.md)（RLHF 中的 PPO）
 - **推荐**: [提示词工程](../05_大模型/07_提示工程/)（理解越狱攻击）
 
 ## 关键术语速查 (Key Terms)
@@ -151,17 +151,17 @@ name_zh: "08 AI 伦理、安全与对齐"
 - [[17_伦理安全/08_AI供应链安全/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
 - [[17_伦理安全/Ethics_Safety-in-nutshell|AI 伦理与安全速览]] — 一张图看懂 AI 伦理与安全全貌 (共享: ai-safety, alignment, rlhf, red-teaming)
 - [[17_伦理安全/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)
-- [[17_伦理安全/04_AI安全与红队/AI_Safety_RedTeaming_for_dummy]] — AI_Safety_RedTeaming_for_dummy
+- [[17_伦理安全/README.md]] — AI_Safety_RedTeaming_for_dummy
 - [[17_伦理安全/10_隐私保护AI/Privacy_Preserving_AI]] — Privacy_Preserving_AI
-- [[17_伦理安全/10_隐私保护AI/Privacy_Preserving_AI_for_dummy]] — Privacy_Preserving_AI_for_dummy
+- [[17_伦理安全/README.md]] — Privacy_Preserving_AI_for_dummy
 - [[17_伦理安全/02_价值对齐/04_Value_对齐]] — 价值对齐 (Value Alignment)
 - [[17_伦理安全/02_价值对齐/04_Value_对齐]] — 价值对齐 - 小白版
 - [[17_伦理安全/09_深度伪造安全/Deepfake_Security]] — Deepfake_Security
-- [[17_伦理安全/09_深度伪造安全/Deepfake_Security_for_dummy]] — Deepfake_Security_for_dummy
+- [[17_伦理安全/README.md]] — Deepfake_Security_for_dummy
 - [[17_伦理安全/05_机制可解释性/Mechanistic_Interpretability]] — Mechanistic_Interpretability
-- [[17_伦理安全/05_机制可解释性/Mechanistic_Interpretability_for_dummy]] — Mechanistic_Interpretability_for_dummy
+- [[17_伦理安全/README.md]] — Mechanistic_Interpretability_for_dummy
 - [[17_伦理安全/07_AI安全2026/01_AI安全2026]] — AI_Security_2026
-- [[17_伦理安全/08_AI供应链安全/AI_Supply_Chain_Security_for_dummy]] — AI_Supply_Chain_Security_for_dummy
+- [[17_伦理安全/README.md]] — AI_Supply_Chain_Security_for_dummy
 - [[17_伦理安全/03_AI治理/01_AI治理合规2026.md|AI_Governance_Compliance_2026]]
 - [[17_伦理安全/README|README_for_dummy]]
 - [[治理/ai-ethics-future|Ai Ethics Future]]

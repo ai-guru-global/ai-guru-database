@@ -46,9 +46,9 @@ name_zh: "里程碑自测"
 
 | 问题 | 补救建议 |
 |------|---------|
-| Q1-Q3 | 回到 [Stage 0 概念卡](../concepts/02_stage0_awakening.md)，重点阅读 AI 定义、AI 能力边界、历史部分 |
+| Q1-Q3 | 回到 [Stage 0 概念卡](90_学习/01_概念认知/02_stage0_awakening.md)，重点阅读 AI 定义、AI 能力边界、历史部分 |
 | Q4 | 阅读 [AI 伦理与社会影响](00_入门/04_伦理与未来/02_AI伦理_Society.md) |
-| Q5-Q6 | 阅读 [监督学习入门](02_机器学习/02_监督学习/Supervised_Learning_for_dummy.md) |
+| Q5-Q6 | 阅读 [监督学习入门](02_机器学习/README.md) |
 
 ---
 
@@ -80,11 +80,11 @@ name_zh: "里程碑自测"
 
 | 问题 | 补救建议 |
 |------|---------|
-| Q1 | 阅读 [监督学习](02_机器学习/02_监督学习/Supervised_Learning_for_dummy.md) |
-| Q2-Q3 | 阅读 [神经网络核心](03_深度学习/02_神经网络核心/Neural_Network_Core_for_dummy.md) + [优化](03_深度学习/03_训练优化/Optimization_for_dummy.md) |
-| Q4-Q5 | 阅读 [监督学习](02_机器学习/02_监督学习/Supervised_Learning_for_dummy.md) 中的过拟合章节 |
-| Q6 | 阅读 [模型评估](08_模型评估/01_评估基础/Model_Evaluation_for_dummy.md) |
-| Q7 | 阅读 [无监督学习](02_机器学习/03_无监督学习/Unsupervised_Learning_for_dummy.md) + [强化学习基础](06_强化学习/01_强化学习基础/RL_Foundations_for_dummy.md) |
+| Q1 | 阅读 [监督学习](02_机器学习/README.md) |
+| Q2-Q3 | 阅读 [神经网络核心](03_深度学习/README.md) + [优化](03_深度学习/README.md) |
+| Q4-Q5 | 阅读 [监督学习](02_机器学习/README.md) 中的过拟合章节 |
+| Q6 | 阅读 [模型评估](08_模型评估/README.md) |
+| Q7 | 阅读 [无监督学习](02_机器学习/README.md) + [强化学习基础](06_强化学习/README.md) |
 
 ---
 
@@ -119,11 +119,11 @@ name_zh: "里程碑自测"
 
 | 问题 | 补救建议 |
 |------|---------|
-| Q1-Q2 | 阅读 [神经网络核心（小白版）](03_深度学习/02_神经网络核心/Neural_Network_Core_for_dummy.md) |
-| Q3 | 阅读 [序列模型（小白版）](05_大模型/02_序列模型/Sequence_Models_for_dummy.md) + [图像分类（小白版）](04_计算机视觉/02_图像分类与检测/Image_Classification_Detection_for_dummy.md) |
-| Q4-Q5 | 阅读 [Transformer 革命（小白版）](05_大模型/04_Transformer_Revolution/Transformer_Revolution_for_dummy.md) |
-| Q6-Q7 | 阅读 [LLM 架构（小白版）](05_大模型/04_LLM架构/LLM_Architectures_for_dummy.md) + [微调技术（小白版）](05_大模型/06_微调技术/Fine_tuning_Techniques_for_dummy.md) |
-| Q8 | 阅读 [生成模型（小白版）](04_计算机视觉/06_生成模型/Generative_Models_for_dummy.md) |
+| Q1-Q2 | 阅读 [神经网络核心（小白版）](03_深度学习/README.md) |
+| Q3 | 阅读 [序列模型（小白版）](05_大模型/README.md) + [图像分类（小白版）](04_计算机视觉/README.md) |
+| Q4-Q5 | 阅读 [Transformer 革命（小白版）](05_大模型/03_Transformer架构/03_Transformer_Revolution.md) |
+| Q6-Q7 | 阅读 [LLM 架构（小白版）](05_大模型/README.md) + [微调技术（小白版）](05_大模型/README.md) |
+| Q8 | 阅读 [生成模型（小白版）](04_计算机视觉/README.md) |
 
 ---
 
@@ -156,11 +156,11 @@ name_zh: "里程碑自测"
 
 | 问题 | 补救建议 |
 |------|---------|
-| Q1-Q2 | 阅读 [RAG 系统（小白版）](14_RAG系统/01_RAG基础/RAG_Systems_for_dummy.md) |
-| Q3 | 阅读 [提示词工程（小白版）](05_大模型/07_提示工程/Prompt_Engineering_for_dummy.md) |
-| Q4 | 阅读 [AI Agent（小白版）](../../15_智能体/01_Agent基础/AI_Agents_for_dummy.md) |
-| Q5 | 阅读 [MLOps 流水线（小白版）](11_模型运维/01_MLOps基础/MLOps_Pipeline_for_dummy.md) |
-| Q6 | 阅读 [模型评估（小白版）](08_模型评估/01_评估基础/Model_Evaluation_for_dummy.md) |
+| Q1-Q2 | 阅读 [RAG 系统（小白版）](14_RAG系统/README.md) |
+| Q3 | 阅读 [提示词工程（小白版）](05_大模型/README.md) |
+| Q4 | 阅读 [AI Agent（小白版）](15_智能体/README.md) |
+| Q5 | 阅读 [MLOps 流水线（小白版）](11_模型运维/README.md) |
+| Q6 | 阅读 [模型评估（小白版）](08_模型评估/README.md) |
 | Q7 | 阅读 [AI Gateway（速查版）](12_架构基建/11_AI网关/06_Gateway_简明指南.md) |
 
 ---
@@ -192,12 +192,12 @@ name_zh: "里程碑自测"
 
 | 问题 | 补救建议 |
 |------|---------|
-| Q1 | 阅读 [多模态视觉（小白版）](04_计算机视觉/08_多模态视觉/Multimodal_Vision_for_dummy.md) |
+| Q1 | 阅读 [多模态视觉（小白版）](04_计算机视觉/README.md) |
 | Q2 | 阅读 [世界模型 2026](03_深度学习/07_世界模型/03_世界模型_2026.md) |
 | Q3 | 阅读 [机器人与具身智能 2026](06_强化学习/05_机器人与具身智能/01_Embodied_AI_2026.md) |
 | Q4 | 阅读 [AI 未来趋势](00_入门/04_伦理与未来/03_AI未来趋势.md) |
-| Q5 | 阅读 [AI 安全与红队（小白版）](17_伦理安全/04_AI安全与红队/AI_Safety_RedTeaming_for_dummy.md) |
-| Q6 | 回到 [Stage 4 概念卡](../concepts/06_stage4_frontier.md) 的 Scaling Law 部分 |
+| Q5 | 阅读 [AI 安全与红队（小白版）](17_伦理安全/README.md) |
+| Q6 | 回到 [Stage 4 概念卡](90_学习/01_概念认知/06_stage4_frontier.md) 的 Scaling Law 部分 |
 
 ---
 

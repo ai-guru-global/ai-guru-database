@@ -180,7 +180,7 @@ Musk 的 AI 立场充满矛盾，需要批判性看待：
 - [[19_业界观点/29_Yoshua_Bengio_本吉奥/01_关于|Yoshua Bengio]] · [[19_业界观点/02_Andrej_Karpathy_卡帕西/01_关于|Andrej Karpathy]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/07_Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源]]
-- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/02_AGI_时间线_预测_矩阵.md|AGI 时间表矩阵]]
 - [[19_业界观点/07_Elon_Musk_马斯克/02_Elon_Musk_2026_更新|2026 动态更新]]
 - [[19_业界观点/INDEX|业界观点首页]]
 

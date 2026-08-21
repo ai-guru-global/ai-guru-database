@@ -26,7 +26,7 @@ name_en: "Scaling"
 ## Related
 
 - [[20_论文精读/02_模型架构/index|Architecture]]
-- [[20_论文精读/09_前沿探索/Frontier_index|Frontier]]
+- [[20_论文精读/README.md|Frontier]]
 
 ## 专题深度解析
 

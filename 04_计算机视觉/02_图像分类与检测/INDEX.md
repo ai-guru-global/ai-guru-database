@@ -19,7 +19,7 @@ name_en: "Image Classification Detection"
 | 文件 | 说明 |
 |------|------|
 | [[04_计算机视觉/02_图像分类与检测/01_图像分类与检测|分类与检测]] | 核心方法与技术综述 |
-| [[04_计算机视觉/02_图像分类与检测/Image_Classification_Detection_for_dummy|入门版]] | 零基础图像分类与检测入门 |
+| [[04_计算机视觉/README.md|入门版]] | 零基础图像分类与检测入门 |
 | [[概念/Vision/object-detection|目标检测深度指南]] | 目标检测深度实践 |
 | [[概念/Vision/object-detection|目标检测完全指南]] | 目标检测完整教程 |
 

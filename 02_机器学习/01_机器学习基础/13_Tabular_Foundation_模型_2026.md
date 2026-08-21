@@ -633,7 +633,7 @@ class TabularRAG:
 
 企业表格数据高度敏感，2026年方向：
 
-1. **联邦表格学习**：多机构联合训练，数据不出域（参见[[Federated_Learning_ML_Perspective]]）
+1. **联邦表格学习**：多机构联合训练，数据不出域（参见Federated_Learning_ML_Perspective）
 2. **差分隐私TabFM**：在预训练中注入噪声
 3. **安全多方计算**：加密状态下的表格推理
 4. **合成数据替代**：生成保真合成表格用于开发
@@ -656,7 +656,7 @@ $$\text{TabPerf}(N_{\text{pretrain\_tables}}, d_{\text{model}}) \sim N_{\text{pr
 - XGBoost_LightGBM_CatBoost - GBDT三巨头详解
 - [[概念/Math/feature-engineering]] - 特征工程方法论
 - Tabular_Data_Processing - 表格数据预处理
-- [[Federated_Learning_ML_Perspective]] - 联邦学习（隐私保护表格学习）
+- Federated_Learning_ML_Perspective - 联邦学习（隐私保护表格学习）
 - [[02_机器学习/11_自动机器学习/01_AutoML]] - 自动机器学习
 - SHAP_Interpretability - SHAP可解释性
 - [[概念/LLM/transformer-architecture]] - Transformer架构基础

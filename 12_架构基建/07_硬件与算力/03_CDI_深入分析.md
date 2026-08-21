@@ -418,13 +418,13 @@ CDI spec 是**某时刻的快照**，硬件变了 spec 没跟着变，就会引�
    └─▶ runtime debug 日志看 hooks/权限/挂载 ──▶ 定位到具体 containerEdits
 ```
 
-> 详见 [[12_架构基建/07_硬件与算力/CDI_Spec_Reference|CDI 规范官方源]] 的 CLI 与 schema 校验段。
+> 详见 [[12_架构基建/README.md|CDI 规范官方源]] 的 CLI 与 schema 校验段。
 
 ---
 
 ## 官方资源
 
-> 详细引用索引见 [[12_架构基建/07_硬件与算力/CDI_Spec_Reference|CDI 规范官方源引用]]。
+> 详细引用索引见 [[12_架构基建/README.md|CDI 规范官方源引用]]。
 
 - **规范仓库**: [github.com/cncf-tags/container-device-interface](https://github.com/cncf-tags/container-device-interface)
 - **开源协议**: Apache-2.0（完全开源）

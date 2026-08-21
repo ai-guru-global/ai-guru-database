@@ -272,7 +272,7 @@ def prototypical_classification(support_embeddings, support_labels,
 
 ## 相关文档
 
-- [[02_机器学习/13_学习范式/Semi_Supervised_Learning|半监督学习]] — 对比学习
+- [[02_机器学习/README.md|半监督学习]] — 对比学习
 - [[14_RAG系统/02_嵌入技术/|Embedding 模型]] — RAG 检索
 - [[03_深度学习/06_自监督学习/|自监督学习]] — 表示学习
 - [[04_计算机视觉/|计算机视觉]] — 人脸识别/检索

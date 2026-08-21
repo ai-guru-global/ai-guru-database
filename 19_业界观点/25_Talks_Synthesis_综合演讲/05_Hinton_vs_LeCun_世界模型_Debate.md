@@ -303,7 +303,7 @@ flowchart TB
 | 第 2 步 | [[19_业界观点/10_Geoffrey_Hinton_辛顿/04_名言|Hinton 语录]] + [[19_业界观点/28_Yann_LeCun_杨立昆/03_名言|LeCun 语录]] | 掌握核心观点 |
 | 第 3 步 | LeCun 2022 OpenReview 论文 | 理解 JEPA 技术细节 |
 | 第 4 步 | Hinton NeurIPS 2022 "Forward-Forward" 演讲 | 理解 Mortal Computation |
-| 第 5 步 | [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表矩阵]] | 把争论放入时间框架 |
+| 第 5 步 | [[19_业界观点/README.md|AGI 时间表矩阵]] | 把争论放入时间框架 |
 | 第 6 步 | [[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]] | 把争论放入安全光谱 |
 | 第 7 步 | [[19_业界观点/25_Talks_Synthesis_综合演讲/07_Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源]] | 理解开源分歧的延伸 |
 
@@ -437,7 +437,7 @@ Mortal Computation 目前仍是 Hinton 个人的探索性主张，未被主流�
 - [[19_业界观点/21_Sam_Altman_奥特曼/01_关于|Sam Altman 简介]] — Scaling 派旗手，LeCun 批评对象
 - [[19_业界观点/12_Jensen_Huang_黄仁勋/01_关于|黄仁勋 简介]] — 算力派旁观者，Cosmos 世界基础模型推动者
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]] — 把两人的风险分歧放入完整光谱
-- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]] — 两人的 AGI 预测对比
+- [[19_业界观点/README.md|AGI 时间表预测矩阵]] — 两人的 AGI 预测对比
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/07_Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]] — 开源分歧的延伸
 - [[19_业界观点/index|业界观点首页]]
 

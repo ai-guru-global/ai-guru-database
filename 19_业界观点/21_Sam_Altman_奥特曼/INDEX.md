@@ -123,7 +123,7 @@ Altman 是"规模派"核心代表，坚信模型能力提升主要依赖更大�
 | 安全务实派 | 核心 | [[19_业界观点/04_Bill_Gates_比尔盖茨/01_关于|Gates]] |
 | AGI 乐观派 | 代表 | [[19_业界观点/05_Dario_Amodei_阿莫迪/01_关于|Amodei]] |
 
-参见横向对比：[[19_业界观点/25_Talks_Synthesis_综合演讲/07_Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]、[[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]、[[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]]。
+参见横向对比：[[19_业界观点/25_Talks_Synthesis_综合演讲/07_Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]、[[19_业界观点/25_Talks_Synthesis_综合演讲/02_AGI_时间线_预测_矩阵.md|AGI 时间表矩阵]]、[[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]]。
 
 ---
 
@@ -147,7 +147,7 @@ Altman 是"规模派"核心代表，坚信模型能力提升主要依赖更大�
 | 入门 | [[19_业界观点/21_Sam_Altman_奥特曼/01_关于|about]] 人物简介 | 了解背景 |
 | 进阶 | [[19_业界观点/21_Sam_Altman_奥特曼/04_名言|sayings]] 核心语录 | 理解观点 |
 | 深入 | "Planning for AGI and Beyond" 博文 | AGI 路线哲学 |
-| 对比 | [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]] | 横向定位 |
+| 对比 | [[19_业界观点/25_Talks_Synthesis_综合演讲/02_AGI_时间线_预测_矩阵.md|AGI 时间表矩阵]] | 横向定位 |
 | 实践 | OpenAI API / GPTs 商店 | 体验其产品哲学 |
 
 ---
@@ -196,7 +196,7 @@ Altman 是"规模派"核心代表，坚信模型能力提升主要依赖更大�
 - [[19_业界观点/07_Elon_Musk_马斯克/01_关于|Elon Musk]] · [[19_业界观点/22_Satya_Nadella_纳德拉/01_关于|Satya Nadella]]
 - [[19_业界观点/12_Jensen_Huang_黄仁勋/01_关于|Jensen Huang]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/07_Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源]]
-- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/02_AGI_时间线_预测_矩阵.md|AGI 时间表矩阵]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]]
 - [[19_业界观点/INDEX|业界观点首页]]
 

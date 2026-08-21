@@ -999,6 +999,6 @@ DQN 的"一句话哲学":
 
 ---
 
-*本文是 [论文精读](.README.md) 系列的一部分，适合想深入理解深度强化学习基础的读者。*
+*本文是 论文精读 系列的一部分，适合想深入理解深度强化学习基础的读者。*
 *原始论文: [Human-level control through deep reinforcement learning](https://www.nature.com/articles/nature14236) (Nature 2015)*
 *初版论文: [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602) (NIPS Workshop 2013)*

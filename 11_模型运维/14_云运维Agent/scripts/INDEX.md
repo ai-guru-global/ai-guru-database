@@ -19,8 +19,8 @@ Cloud Ops Agent 自动化脚本（automation scripts）— 包含文档生成与
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[11_模型运维/Cloud_Ops_Agent/scripts/generate_doc|generate doc]] | Automated documentation generation script | technical writers / developers |
-| [[11_模型运维/Cloud_Ops_Agent/scripts/quality_gate|quality gate]] | Quality gate check script for CI/CD pipeline | DevOps engineers / CI/CD maintainers |
+| [[11_模型运维/README.md|generate doc]] | Automated documentation generation script | technical writers / developers |
+| [[11_模型运维/README.md|quality gate]] | Quality gate check script for CI/CD pipeline | DevOps engineers / CI/CD maintainers |
 
 ## Related
 

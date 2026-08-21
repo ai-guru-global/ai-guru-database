@@ -103,7 +103,7 @@ LLM 生产化的 10 个痛点              ←→   云原生解法
 | 6 | **Volcano** | Incubating | 调度 | K8s 批处理/HPC/AI 训练调度器 | [[12_架构基建/05_CNCF云原生AI/19_Volcano_深入分析.md]] |
 | 7 | **KAI Scheduler** | Sandbox | 调度 | 大规模 AI GPU 调度器（YN 机房级） | [[12_架构基建/05_CNCF云原生AI/09_KAI_Scheduler_深入分析.md]] |
 | 8 | **Kueue** | Landscape | 调度 | K8s 原生 Job 排队系统（配额/抢占） | [[12_架构基建/05_CNCF云原生AI/16_Kueue_深入分析.md]] |
-| 9 | **KubeRay** | Landscape | 调度 | 在 K8s 上运行 Ray（vLLM/SGLang 分布式底座） | [[12_架构基建/05_CNCF云原生AI/Kube13_Ray_深入分析.md]] |
+| 9 | **KubeRay** | Landscape | 调度 | 在 K8s 上运行 Ray（vLLM/SGLang 分布式底座） | [[12_架构基建/05_CNCF云原生AI/15_KubeRay_深入分析.md]] |
 | 10 | **Kubeflow** | Incubating | 平台 | K8s 原生 ML 平台（训练流水线） | [[11_模型运维/05_流程编排/07_Kubeflow_深入分析.md]] |
 | 11 | **KitOps** | Sandbox | 平台 | ModelKit——模型+代码+数据统一打包标准 | [[12_架构基建/05_CNCF云原生AI/12_KitOps_深入分析.md]] |
 | 12 | **Dragonfly** | Graduated | 平台 | P2P 加速——百 GB 模型权重秒级分发 | [[12_架构基建/05_CNCF云原生AI/03_Dragonfly_深入分析.md]] |

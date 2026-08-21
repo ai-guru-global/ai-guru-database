@@ -152,9 +152,9 @@ Spring AI 框架的深度技术文档（ChatClient、Advisor、RAG、MCP、Obser
 ## 🔗 相关主题
 
 - [Agent Skills 深度解析](./02_Agent_技能_深入分析.md) — Agent Skills 完整规范
-- [Agent Skills 实战指南](./05_Agent技能_Practical_Guide.md) — 创建和优化 Skill
+- Agent Skills 实战指南 — 创建和优化 Skill
 - [Spring AI 架构设计](../../12_架构基建/02_架构概览/Spring_AI_Architecture)
-- [Spring AI RAG 深度解析](14_RAG系统/06_RAG框架/07_Spring_AI_02_RAG_深入分析.md)
+- [Spring AI RAG 深度解析](14_RAG系统/06_RAG框架/07_Spring_AI_RAG_深入分析.md)
 
 ## Related
 

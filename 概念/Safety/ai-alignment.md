@@ -752,6 +752,8 @@ class ConstitutionalAI:
 - [[概念/Safety/bias-detection]] — 偏见检测（对齐的一个维度）
 - [[概念/Safety/ai-ethics]] — AI伦理（对齐实现伦理目标）
 - [[概念/Safety/hallucination]] — 幻觉（诚实维度的对齐）
+- [[概念/Safety/recursive-self-improvement]] — 递归自我改进（RSI，AI自我迭代的对齐挑战）
+- [[概念/LLM/self-rewarding]] — Self-Rewarding 自奖励语言模型（自我改进的实证路径）
 - [[概念/ai-fundamentals]] — AI基础
 - [[概念/ai-future-trends]] — AI未来趋势（AGI安全）
 

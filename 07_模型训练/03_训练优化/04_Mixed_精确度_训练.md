@@ -818,7 +818,7 @@ training_args = TrainingArguments(
 
 - 更多训练优化技巧 → [训练优化 2026](./07_训练_优化_2026.md)
 - 分布式训练中的混合精度 → [分布式训练 2026](../04_分布式训练/03_分布式训练_2026.md)
-- 优化器基础与原理 → [03_深度学习/03_训练优化/02_优化.md](03_深度学习/03_训练优化/02_优化.md)
+- 优化器基础与原理 → [03_深度学习/03_训练优化/02_优化.md](03_深度学习/03_优化方法/02_优化.md)
 - 模型评估指标 → [08_模型评估/01_评估基础/06_模型评估.md](08_模型评估/01_评估基础/06_模型评估.md)
 - 部署推理优化 → [10_部署推理/01_部署基础/06_推理_简明指南.md](10_部署推理/01_部署基础/06_推理_简明指南.md)
 
@@ -843,5 +843,5 @@ training_args = TrainingArguments(
 - [[07_模型训练/04_分布式训练/03_分布式训练_2026]] — Distributed Training 2026 (共享: distributed-training, fsdp, model-training, optimization)
 - [[07_模型训练/04_分布式训练/03_分布式训练_2026]] — 分布式训练 - 小白版 (共享: distributed-training, fsdp, model-training, optimization)
 - [[07_模型训练/Model-Training-in-nutshell]] — 模型训练速成指南 (共享: distributed-training, fsdp, model-training, optimization)
-- [[07_模型训练/Model_Training_for_dummy]] — 模型训练小白指南 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_模型训练/README.md]] — 模型训练小白指南 (共享: distributed-training, fsdp, model-training, optimization)
 - [[07_模型训练/07_训练监控/05_训练_监控_2026.md|Training_Monitoring_2026]]

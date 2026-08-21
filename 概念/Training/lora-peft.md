@@ -240,7 +240,7 @@ W_final = W₀ + B×A
 - [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack
 - [[概念/dora]] — DoRA
 - [[概念/rs-lora]] — RS-LoRA
-- [[07_模型训练/Data_and_FineTuning_for_dummy]] — 数据与微调大白话
+- [[07_模型训练/README.md]] — 数据与微调大白话
 
 ---
 

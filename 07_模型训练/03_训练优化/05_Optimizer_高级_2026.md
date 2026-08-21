@@ -1246,7 +1246,7 @@ class Muon(torch.optim.Optimizer):
 - [Training Monitoring 2026](07_模型训练/07_训练监控/05_训练_监控_2026.md) — 训练监控与实验追踪
 - [Scaling Laws and Training Dynamics](07_模型训练/03_训练优化/06_扩展定律_and_训练_Dynamics.md) — 训练动态与 scaling law
 - [LLM Architectures](05_大模型/04_LLM架构/05_LLM架构.md) — Transformer 架构与优化器的关系
-- [Optimization 基础](03_深度学习/03_训练优化/02_优化.md) — 深度学习优化基础：梯度下降、凸优化、Loss Landscape
+- [Optimization 基础](03_深度学习/03_优化方法/02_优化.md) — 深度学习优化基础：梯度下降、凸优化、Loss Landscape
 
 ---
 

@@ -33,12 +33,12 @@ name_zh: "架构与基础设施"
 | [Spring AI Architecture](./02_架构概览/10_Spring_AI_架构.md) | Spring AI 企业级架构设计 | Java 生态开发者 |
 | [AI Stack Deep Dive](12_架构基建/03_AI技术栈/02_AI技术栈_深入分析.md) | 阿里云 AI Stack 软硬一体推理一体机（V2.14.0） | 政企 IT 决策者、基础设施工程师 |
 | [Future AI Hardware 2026](./07_硬件与算力/08_未来_Computing_硬件_2026.md) | 前沿硬件：硅光子技术、LPU、NPU 霸权、生物计算 | 架构师、前瞻研究 |
-| [CDI Deep Dive](./07_硬件与算力/01_03_CDI_深入分析.md) | 容器设备接口标准：GPU/国产加速器如何统一接入 K8s 容器 | 基础设施工程师、平台 SRE |
-| [CDI 小白版](./07_硬件与算力/CDI_for_dummy.md) | 用「酒店入住单」「万能插头」比喻讲懂 CDI | 初学者、非基础设施背景 |
+| CDI Deep Dive | 容器设备接口标准：GPU/国产加速器如何统一接入 K8s 容器 | 基础设施工程师、平台 SRE |
+| CDI 小白版 | 用「酒店入住单」「万能插头」比喻讲懂 CDI | 初学者、非基础设施背景 |
 | [DRA Deep Dive](./07_硬件与算力/06_DRA_深入分析.md) | 动态资源分配：K8s 设备分配的未来，与 CDI 配对 | 架构师、平台 SRE |
 | [MIG Deep Dive](./07_硬件与算力/11_MIG_深入分析.md) | Multi-Instance GPU：A100/H100/PPU 硬件级切片（GI/CI），多租户强隔离推理 | 平台工程师、多租户 SRE |
 | [HAMi Deep Dive](./03_AI技术栈/11_HAMi_深入分析.md) | CNCF Sandbox 异构 GPU 虚拟化：NVIDIA/昇腾/寒武纪统一共享与隔离 | 平台工程师、SRE、成本优化团队 |
-| [HAMi 入门](./03_AI技术栈/HAMi_for_dummy.md) | 零基础理解 HAMi 如何让 K8s GPU 像 CPU 一样共享 | 初学者、开发测试负责人 |
+| HAMi 入门 | 零基础理解 HAMi 如何让 K8s GPU 像 CPU 一样共享 | 初学者、开发测试负责人 |
 | [HAMi 运维指南](./03_AI技术栈/12_HAMi_Operation_指南.md) | HAMi 安装、配置、升级、监控与 WebUI | 平台 SRE、运维工程师 |
 
 ### Kubernetes 基础与专有云上下文
@@ -72,7 +72,7 @@ name_zh: "架构与基础设施"
 | [推理服务](12_架构基建/03_AI技术栈/05_AI技术栈_推理_服务_指南.md) | vLLM / SGLang / Ollama / llama-server 启动与运维 | 推理工程师 |
 | [训练启动器](12_架构基建/03_AI技术栈/10_AI技术栈_训练_发布ers_指南.md) | torchrun / accelerate / deepspeed / swift 分布式训练 | 训练工程师 |
 | [K8s 编排](12_架构基建/03_AI技术栈/06_AI技术栈_K8s_Operations_指南.md) | kubectl / helm 日常排障与包管理 | K8s 工程师 |
-| [AI Stack 专属工具](12_架构基建/03_AI技术栈/03_AI技术栈_Exclusive_Tools_Guide.md) | stackops / aioController 运维与生命周期 | AI Stack 运维 |
+| [AI Stack 专属工具](12_架构基建/README.md) | stackops / aioController 运维与生命周期 | AI Stack 运维 |
 | [AI Stack MLOps 参考架构](./03_AI技术栈/07_AI技术栈_MLOps_参考_架构.md) | AI Stack + MLflow + ACK 私有化 MLOps 流水线 | 平台架构师 |
 
 ### AI 基础设施（领域知识）
@@ -117,7 +117,7 @@ name_zh: "架构与基础设施"
 | [Volcano 深度解析](./05_CNCF云原生AI/19_Volcano_深入分析.md) | Gang Scheduling 批处理调度器（CNCF 孵化） | 分布式训练 |
 | [KAI Scheduler 深度解析](./05_CNCF云原生AI/09_KAI_Scheduler_深入分析.md) | 万卡级拓扑感知 GPU 调度器（CNCF 沙箱） | 超大 AI 集群 |
 | [Kueue 深度解析](./05_CNCF云原生AI/16_Kueue_深入分析.md) | K8s 原生作业排队/配额系统（SIGs） | 多租户平台 |
-| [KubeRay 深度解析](./05_CNCF云原生AI/Kube13_Ray_深入分析.md) | Ray on K8s（vLLM 分布式底座） | 多机多卡推理 |
+| KubeRay 深度解析 | Ray on K8s（vLLM 分布式底座） | 多机多卡推理 |
 | [KitOps 深度解析](./05_CNCF云原生AI/12_KitOps_深入分析.md) | ModelKit 大模型制品打包标准（CNCF 沙箱） | MLOps、供应链安全 |
 | [Dragonfly 深度解析](./05_CNCF云原生AI/03_Dragonfly_深入分析.md) | P2P 加速权重分发（CNCF 毕业） | 大规模集群 |
 | [K8sGPT 深度解析](./05_CNCF云原生AI/07_K8sGPT_深入分析.md) | AI SRE 集群扫描器（CNCF 沙箱） | SRE、运维 |
@@ -133,7 +133,7 @@ name_zh: "架构与基础设施"
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
 | [AWS Bedrock 深度解析](12_架构基建/06_云厂商/05_AWS_Bedrock_深入分析.md) | 亚马逊云托管基础模型服务：Claude/Llama/Titan/RAG/Agent/Guardrails | 企业架构师 |
-| [Azure OpenAI 深度解析](12_架构基建/06_云厂商/Azure_09_OpenAI_深入分析.md) | 微软企业级 GPT 服务：数据隐私、区域部署、M365 集成 | 企业架构师 |
+| [Azure OpenAI 深度解析](12_架构基建/06_云厂商/06_Azure_OpenAI_深入分析.md) | 微软企业级 GPT 服务：数据隐私、区域部署、M365 集成 | 企业架构师 |
 | [Google Vertex AI 深度解析](12_架构基建/06_云厂商/07_Google_Vertex_AI_深入分析.md) | GCP 统一 AI 平台：Gemini、训练、MLOps、TPU、BigQuery | 企业架构师 |
 
 ---
@@ -146,7 +146,7 @@ name_zh: "架构与基础设施"
 - **边缘场景** → [Edge AI 2026](./07_硬件与算力/07_边缘_AI_2026.md)
 - **Java 生态** → [Spring AI Architecture](./02_架构概览/10_Spring_AI_架构.md)
 - **私有化 AI 一体机** → [AI Stack Deep Dive](12_架构基建/03_AI技术栈/02_AI技术栈_深入分析.md) → [AI Stack 生产工具链总览](12_架构基建/03_AI技术栈/09_AI技术栈_生产_工具链.md)
-- **异构设备接入** → [CDI Deep Dive](./07_硬件与算力/01_03_CDI_深入分析.md)（GPU/昇腾/寒武纪统一容器化）
+- **异构设备接入** → CDI Deep Dive（GPU/昇腾/寒武纪统一容器化）
 - **GPU 硬件级切分** → [MIG Deep Dive](./07_硬件与算力/11_MIG_深入分析.md)（A100/H100/PPU 多租户强隔离）+ [HAMi Deep Dive](./03_AI技术栈/11_HAMi_深入分析.md)（软件超卖）
 - **GPU 共享与池化** → [HAMi Deep Dive](./03_AI技术栈/11_HAMi_深入分析.md) → [HAMi 运维指南](./03_AI技术栈/12_HAMi_Operation_指南.md)
 - **云原生大模型** → [CNCF LLM 项目全景导览](./05_CNCF云原生AI/README.md)（推理/调度/平台/AIOps/网关五层）
@@ -157,7 +157,7 @@ name_zh: "架构与基础设施"
 
 ### 前置知识
 - [深度学习](../03_深度学习/README.md) — 理解模型计算特性
-- [部署推理](./10_部署推理/README.md) — 推理优化是架构设计的基础
+- [部署推理](10_部署推理/README.md) — 推理优化是架构设计的基础
 - [RAG 系统](../14_RAG系统/README.md) — 检索系统的架构考量
 
 ### 进阶方向
@@ -199,7 +199,7 @@ name_zh: "架构与基础设施"
 - [[AI_Stack_MLOps_Reference_Architecture|AI Stack + MLflow + ACK 私有化 MLOps 参考架构]]
 - [[12_架构基建/03_AI技术栈/14_Safetensors_Hub_Management|Safetensors 与 Hub 治理：下一代模型存储与分发标准]]
 - [[12_架构基建/06_云厂商/04_Alibaba_PAI_深入分析|阿里云 PAI 深度解析]]
-- [[12_架构基建/07_硬件与算力/CDI_for_dummy|CDI 容器设备接口 - 小白版]]
+- [[12_架构基建/README.md|CDI 容器设备接口 - 小白版]]
 - [[概念/K8s/kubernetes|Kubernetes 可观测性栈]]
 - [[12_架构基建/08_网络/06_RDMA_and_RoCE_for_AI|RDMA 与 RoCE 在 AI 集群中的应用]]
 - [[Container_and_Supply_Chain_Security_for_AI|容器与供应链安全 for AI]]

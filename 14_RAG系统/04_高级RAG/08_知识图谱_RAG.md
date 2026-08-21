@@ -169,7 +169,7 @@ GRAPH_RAG_BEST_PRACTICES = {
 ## 6. 交叉引用
 
 - [[14_RAG系统/|RAG 系统]]
-- [[14_RAG系统/01_RAG基础/Chunking_Strategies|分块策略]]
+- [[14_RAG系统/README.md|分块策略]]
 - [[概念/RAG/hybrid-search|混合检索]]
 - [[概念/RAG/rag-patterns|RAG 模式]]
 - [[15_智能体/|智能体 (Agentic RAG)]]

@@ -19,7 +19,7 @@ name_en: "Supervised Learning"
 | 文件 | 说明 |
 |------|------|
 | [[02_机器学习/02_监督学习/Supervised_Learning|监督学习]] | 核心算法与理论综述 |
-| [[02_机器学习/02_监督学习/Supervised_Learning_for_dummy|入门版]] | 零基础监督学习入门 |
+| [[02_机器学习/README.md|入门版]] | 零基础监督学习入门 |
 | [[02_机器学习/02_监督学习/EDA_Quick_Start|EDA 快速入门]] | 探索性数据分析实战 |
 | [[02_机器学习/02_监督学习/04_Your_First_ML_模型|第一个 ML 模型]] | 从零搭建机器学习模型 |
 

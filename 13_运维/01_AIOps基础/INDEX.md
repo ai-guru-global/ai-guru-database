@@ -18,7 +18,7 @@ name_en: "AIOps Fundamentals"
 
 | 文件 | 说明 |
 |------|------|
-| [[13_运维/01_AIOps基础/AI_Ops_for_dummy|入门版]] | 零基础 AIOps 入门 |
+| [[13_运维/README.md|入门版]] | 零基础 AIOps 入门 |
 | [[13_运维/01_AIOps基础/AIOps-in-nutshell|速览]] | AIOps 精华速览 |
 | [[13_运维/01_AIOps基础/AI_Ops_2026|AI Ops 2026]] | 2026 年智能运维全景 |
 

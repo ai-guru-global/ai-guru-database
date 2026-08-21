@@ -20,7 +20,7 @@ name_en: "Probability Statistics"
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[01_数学基础/03_概率统计/02_概率统计|Probability Statistics]] | Probability and statistics knowledge system: distributions, inference and information theory | ML engineers / data scientists / students |
-| [[01_数学基础/03_概率统计/Probability_Statistics_for_dummy|Probability Statistics for dummy]] | Probability and statistics beginner guide: core concepts for ML | beginners / ML learners |
+| [[01_数学基础/README.md|Probability Statistics for dummy]] | Probability and statistics beginner guide: core concepts for ML | beginners / ML learners |
 | [[01_数学基础/03_概率统计/03_Skill_Statistics_速查表|Skill Statistics Cheatsheet]] | Probability and statistics quick reference cheatsheet | all practitioners / exam preparation |
 
 ## Related

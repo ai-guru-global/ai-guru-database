@@ -99,7 +99,7 @@ FLOPS（Floating Point Operations Per Second）衡量处理器每秒执行的浮
 - [[概念/prefill-decode]] — Prefill / Decode 阶段
 - [[概念/GPU/expert-parallelism|Expert Parallelism]] — 并行效率度量
 - [[概念/Inference/ttft|TTFT]] — Prefill 速度直接影响首 token 延迟
-- [[10_部署推理/03_推理优化/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[10_部署推理/README.md|推理性能术语大白话解释]]
 
 ## 2026 GPU FLOPS 对比
 

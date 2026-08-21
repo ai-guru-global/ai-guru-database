@@ -56,5 +56,5 @@ name_zh: "模型服务 × 模型部署"
 
 - [[10_部署推理/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, serving, vllm)
 - [[10_部署推理/01_部署基础/02_部署推理_2026]] — 部署推理 2026 趋势 (共享: deployment, inference, serving, vllm)
-- [[10_部署推理/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, serving, vllm)
+- [[10_部署推理/README.md]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, serving, vllm)
 - [[概念/Inference/causal-inference]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)

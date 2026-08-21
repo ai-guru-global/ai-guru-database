@@ -22,7 +22,7 @@ This page indexes the contents of `11_模型运维/Cloud_Ops_Agent`.
 ## Files
 
 - [[11_模型运维/Cloud_Ops_Agent/Cloud_Product_Ops_2026|Cloud Product Ops 2026]]
-- [[11_模型运维/Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy|Cloud Product Ops For Dummy]]
+- [[11_模型运维/README.md|Cloud Product Ops For Dummy]]
 - [[11_模型运维/Cloud_Ops_Agent/CloudOps-in-nutshell|Cloudops In Nutshell]]
 - [[11_模型运维/14_云运维Agent/04_Java_云_SDK_指南|Java Cloud SDK Guide]]
 - [[11_模型运维/Cloud_Ops_Agent/Mobile_AI_Ops_Design|Mobile AI Ops Design]]

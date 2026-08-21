@@ -102,7 +102,7 @@ Demis Hassabis 是"科学导向 AGI 研究"的代表。他领导 DeepMind 开发
 | 闭源负责任部署派 | 成员 |
 | 规模信仰派 | 成员（Gemini 也 Scaling）|
 
-Hassabis 的独特之处是**同时追求科学突破和商业部署**——AlphaFold 推动科学，Gemini 参与商业竞赛。他认同世界模型重要性（DeepMind 的 Genie/Dreamer 系列），是世界模型研究的另一支主力。参见 [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表矩阵]]、[[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 之争]]。
+Hassabis 的独特之处是**同时追求科学突破和商业部署**——AlphaFold 推动科学，Gemini 参与商业竞赛。他认同世界模型重要性（DeepMind 的 Genie/Dreamer 系列），是世界模型研究的另一支主力。参见 [[19_业界观点/README.md|AGI 时间表矩阵]]、[[19_业界观点/25_Talks_Synthesis_综合演讲/05_Hinton_vs_LeCun_世界模型_Debate.md|Hinton vs LeCun 之争]]。
 
 ---
 
@@ -124,7 +124,7 @@ Hassabis 的独特之处是**同时追求科学突破和商业部署**——Alph
 | 入门 | [[19_业界观点/06_Demis_Hassabis_哈萨比斯/01_关于|about]] | 了解 AlphaGo/AlphaFold |
 | 进阶 | [[19_业界观点/06_Demis_Hassabis_哈萨比斯/05_名言|sayings]] | 掌握 AGI 哲学 |
 | 深入 | AlphaFold 论文 / Nature 访谈 | 科学突破 |
-| 对比 | [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|时间表]] | 路线定位 |
+| 对比 | [[19_业界观点/25_Talks_Synthesis_综合演讲/02_AGI_时间线_预测_矩阵.md|时间表]] | 路线定位 |
 
 ---
 
@@ -167,8 +167,8 @@ Hassabis 的独特之处是**同时追求科学突破和商业部署**——Alph
 - [[19_业界观点/06_Demis_Hassabis_哈萨比斯/01_关于|人物简介]] · [[19_业界观点/06_Demis_Hassabis_哈萨比斯/05_名言|核心语录]]
 - [[19_业界观点/24_Sundar_Pichai_皮查伊/01_关于|Sundar Pichai]] · [[19_业界观点/05_Dario_Amodei_阿莫迪/01_关于|Dario Amodei]]
 - [[19_业界观点/28_Yann_LeCun_杨立昆/01_关于|Yann LeCun]]（世界模型呼应）
-- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun]]
-- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/05_Hinton_vs_LeCun_世界模型_Debate.md|Hinton vs LeCun]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/02_AGI_时间线_预测_矩阵.md|AGI 时间表矩阵]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]]
 - [[19_业界观点/06_Demis_Hassabis_哈萨比斯/03_Hassabis_Science_AI_2026|AI for Science 2026 专题]]
 - [[19_业界观点/INDEX|业界观点首页]]

@@ -20,7 +20,7 @@ name_en: "Ensemble Learning"
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[02_机器学习/04_集成学习/Ensemble_Learning|Ensemble Learning]] | Ensemble learning knowledge system: bias-variance decomposition and combination strategies | ML engineers / data scientists |
-| [[02_机器学习/04_集成学习/Ensemble_Learning_for_dummy|Ensemble Learning for dummy]] | Ensemble learning beginner guide: from voting to gradient boosting | beginners / ML learners |
+| [[02_机器学习/README.md|Ensemble Learning for dummy]] | Ensemble learning beginner guide: from voting to gradient boosting | beginners / ML learners |
 
 ## Related
 

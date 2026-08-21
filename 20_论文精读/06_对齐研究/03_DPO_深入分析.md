@@ -694,8 +694,8 @@ flowchart TB
 
 | 相关文档 | 关系 | 详见 |
 |---------|------|------|
-| RLHF & DPO Deep Dive | 本论文的综述级解读 | [RLHF_03_DPO_深入分析.md](20_论文精读/06_对齐研究/RLHF_03_DPO_深入分析.md) |
-| GRPO 与新对齐方法 | DPO 之后的演进 | [../07_模型训练/02_GRPO_and_新型_对齐_Methods.md](07_模型训练/06_对齐研究/02_GRPO_and_新型_对齐_Methods.md) |
+| RLHF & DPO Deep Dive | 本论文的综述级解读 | [RLHF_03_DPO_深入分析.md](20_论文精读/06_对齐研究/06_RLHF_DPO_深入分析.md) |
+| GRPO 与新对齐方法 | DPO 之后的演进 | [../07_模型训练/02_GRPO_and_新型_对齐_Methods.md](07_模型训练/06_对齐训练/02_GRPO_and_新型_对齐_Methods.md) |
 | GPT-4 Deep Dive | RLHF at Scale 的实践 | [03_GPT4_深入分析.md](20_论文精读/03_规模扩展/03_GPT4_深入分析.md) |
 | LLaMA Deep Dive | DPO 对齐的典型基座模型 | [04_LLaMA_深入分析.md](20_论文精读/02_模型架构/04_LLaMA_深入分析.md) |
 | LoRA Deep Dive | DPO 常与 LoRA 结合使用 | [03_LoRA_深入分析.md](20_论文精读/04_效率优化/03_LoRA_深入分析.md) |

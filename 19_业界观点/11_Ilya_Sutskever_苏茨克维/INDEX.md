@@ -104,7 +104,7 @@ Ilya Sutskever 是连接深度学习学术突破与大规模工程化落地的�
 | 对齐派 | 核心（SSI 使命）|
 | 超级智能派 | 代表 |
 
-Sutskever 的独特之处是**同时是 Scaling 派和对齐派**——他相信超级智能即将到来（Scaling），但全部精力转向如何让它安全（对齐）。参见 [[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]]、[[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表矩阵]]。
+Sutskever 的独特之处是**同时是 Scaling 派和对齐派**——他相信超级智能即将到来（Scaling），但全部精力转向如何让它安全（对齐）。参见 [[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]]、[[19_业界观点/README.md|AGI 时间表矩阵]]。
 
 ---
 
@@ -126,7 +126,7 @@ Sutskever 的独特之处是**同时是 Scaling 派和对齐派**——他相信
 | 入门 | [[19_业界观点/11_Ilya_Sutskever_苏茨克维/01_关于|about]] | 了解学术历程 |
 | 进阶 | [[19_业界观点/11_Ilya_Sutskever_苏茨克维/04_名言|sayings]] | 掌握 Scaling + 对齐 |
 | 深入 | AlexNet / Seq2Seq 论文 | 技术细节 |
-| 对比 | [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表]] | 路线定位 |
+| 对比 | [[19_业界观点/25_Talks_Synthesis_综合演讲/02_AGI_时间线_预测_矩阵.md|AGI 时间表]] | 路线定位 |
 
 ---
 
@@ -169,8 +169,8 @@ Sutskever 的独特之处是**同时是 Scaling 派和对齐派**——他相信
 - [[19_业界观点/11_Ilya_Sutskever_苏茨克维/01_关于|人物简介]] · [[19_业界观点/11_Ilya_Sutskever_苏茨克维/04_名言|核心语录]]
 - [[19_业界观点/10_Geoffrey_Hinton_辛顿/01_关于|Geoffrey Hinton]]（导师）
 - [[19_业界观点/21_Sam_Altman_奥特曼/01_关于|Sam Altman]] · [[19_业界观点/05_Dario_Amodei_阿莫迪/01_关于|Dario Amodei]]
-- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
-- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/05_Hinton_vs_LeCun_世界模型_Debate.md|Hinton vs LeCun 之争]]
+- [[19_业界观点/25_Talks_Synthesis_综合演讲/02_AGI_时间线_预测_矩阵.md|AGI 时间表矩阵]]
 - [[19_业界观点/25_Talks_Synthesis_综合演讲/03_AI安全_Stance_矩阵|AI 安全立场矩阵]]
 - [[19_业界观点/11_Ilya_Sutskever_苏茨克维/02_Ilya_Sutskever_2026_更新|2026 动态更新]]
 - [[19_业界观点/INDEX|业界观点首页]]

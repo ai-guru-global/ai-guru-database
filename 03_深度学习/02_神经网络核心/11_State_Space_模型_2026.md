@@ -703,4 +703,4 @@ SSM在AGI中的角色:
 - [[03_深度学习/README.md|深度学习 README]]
 - [[03_深度学习/02_神经网络核心/09_神经网络核心.md|Neural_Network_Core]]
 - [[03_深度学习/02_神经网络核心/09_神经网络核心|Neural_Network_Core_for_dummy]]
-- [[03_深度学习/03_训练优化/02_优化.md|Optimization]]
+- [[03_深度学习/03_优化方法/02_优化.md|Optimization]]

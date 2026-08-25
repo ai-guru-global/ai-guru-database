@@ -195,7 +195,7 @@ print(results.summary())  # 各维度得分 + 成本分析
 - [[概念/LLM/llm-quantization|LLM 量化]]
 - [[概念/LLM/llmops|LLMOps]]
 - [[概念/LLM/large-language-model|大语言模型]]
-- [[12_架构基建/06_云厂商/05_AWS_Bedrock_深入分析|AWS Bedrock 深度解析]]
+- [[12_架构基建/06_云厂商/AWS/01_AWS_Bedrock_深入分析|AWS Bedrock 深度解析]]
 - [[05_大模型/06_微调技术|微调技术]]
 - [[08_模型评估/02_基准测试/index|基准测试深度解析]]
 - [[概念/LLM/llm-benchmarks|LLM Benchmarks]]

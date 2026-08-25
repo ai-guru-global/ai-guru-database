@@ -51,7 +51,7 @@ name_zh: "阿里云容器服务"
 
 - [[概念/kubernetes|Kubernetes]] — 开源容器编排
 - [[概念/apsara-stack|Apsara Stack]] — 阿里云专有云
-- [[12_架构基建/06_云厂商/03_Alibaba_云_Proprietary_K8s_上下文|阿里云专有云 K8s 上下文]]
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文|阿里云专有云 K8s 上下文]]
 
 ---
 

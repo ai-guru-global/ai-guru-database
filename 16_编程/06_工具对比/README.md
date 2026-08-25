@@ -18,6 +18,7 @@ name_zh: "06_工具对比"
 
 ## 内容索引
 
+| [[16_编程/06_工具对比/03_AI_应用生成平台_全景_2026|03_AI_应用生成平台_全景_2026]] | AI 应用生成与发布平台全景对比（Meoo/秒哒/吐司/CloudBase/扣子/Lovable/Bolt/Replit/v0） |
 | [[16_16_编程/06_工具对比/01_AI_IDE_全景_2026|01_AI_IDE_全景_2026]] | 待补充 |
 | [[16_16_编程/06_工具对比/02_Cursor_ClaudeCode_对比|02_Cursor_ClaudeCode_对比]] | 待补充 |
 | [[16_16_编程/06_工具对比/04_MOC_OpenRouter_OpenCode|04_MOC_OpenRouter_OpenCode]] | 待补充 |

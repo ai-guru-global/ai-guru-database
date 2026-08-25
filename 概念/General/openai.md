@@ -83,7 +83,7 @@ name_zh: "OpenAI 与 GPT 系列"
 - [[概念/azure-openai]] — Azure OpenAI（中国/合规）
 - [[概念/cloud-ai-platform]] — 云 AI 平台
 - [[05_大模型/13_全球LLM生态/09_OpenAI_深入分析]] — OpenAI 深度
-- [[12_架构基建/06_云厂商/06_Azure_OpenAI_深入分析]] — Azure OpenAI
+- [[12_架构基建/06_云厂商/Azure/01_Azure_OpenAI_深入分析]] — Azure OpenAI
 
 ---
 

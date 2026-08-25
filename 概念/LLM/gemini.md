@@ -138,7 +138,7 @@ for chunk in model.generate_content(prompt, stream=True):
 
 - [[概念/LLM/foundation-model|基础模型]]
 - [[概念/LLM/multimodal-models|多模态模型]]
-- [[12_架构基建/06_云厂商/07_Google_Vertex_AI_深入分析|Vertex AI 深度解析]]
+- [[12_架构基建/06_云厂商/Google_Cloud/01_Google_Vertex_AI_深入分析|Vertex AI 深度解析]]
 - [[05_大模型/13_全球LLM生态/05_Google_Gemini_深入分析|Google Gemini 深度解析]]
 
 ---

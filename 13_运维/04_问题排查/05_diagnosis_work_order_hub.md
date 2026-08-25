@@ -70,7 +70,7 @@ name_zh: "工单智能体远程诊断知识枢纽"
 - GPU 虚拟化：[[12_架构基建/03_AI技术栈/11_HAMi_深入分析|HAMi]]（CNCF Sandbox）
 - AI Stack：[[概念/General/ai-stack|阿里云 AI Stack 软硬一体机]]
 
-详见 [[12_架构基建/06_云厂商/03_Alibaba_云_Proprietary_K8s_上下文]]。
+详见 [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文]]。
 
 ---
 
@@ -106,7 +106,7 @@ name_zh: "工单智能体远程诊断知识枢纽"
 - [[13_运维/04_问题排查/02_diagnosis_k8s_network_failure]] — 网络故障诊断决策树
 - [[13_运维/04_问题排查/04_diagnosis_k8s_storage_failure]] — 存储故障诊断决策树
 - [[13_运维/04_问题排查/01_diagnosis_gpu_ai_workload_failure]] — GPU/AI 工作负载诊断决策树
-- [[12_架构基建/06_云厂商/03_Alibaba_云_Proprietary_K8s_上下文]] — 专有云 K8s 上下文
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文]] — 专有云 K8s 上下文
 - [[Kubernetes_Troubleshooting_Playbook]] — K8s 排障手册
 - [[K8s_AI_Troubleshooting_Cheat_Sheet]] — 排障速查表
 - [[Cloud_Product_Ops_2026]] — 云产品运维 Agent 体系

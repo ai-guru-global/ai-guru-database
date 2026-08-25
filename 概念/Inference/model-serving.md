@@ -146,7 +146,7 @@ Client → API Gateway / Load Balancer
 - [[概念/Inference/prefix-caching|前缀缓存]]
 - [[概念/Inference/gguf|GGUF]]
 - [[10_部署推理/02_推理引擎/29_vLLM_深入分析|vLLM 深度解析]]
-- [[12_架构基建/06_云厂商/01_Alibaba_云_AI技术栈_深入分析|阿里云 AI Stack]]
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/01_阿里云_AI技术栈_深入分析|阿里云 AI Stack]]
 
 ## 模型服务引擎对比 (2026)
 

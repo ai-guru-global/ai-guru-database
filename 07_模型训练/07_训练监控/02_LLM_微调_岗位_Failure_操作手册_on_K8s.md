@@ -285,5 +285,5 @@ kubectl get pod <pod> -n <ns> -o jsonpath='{.spec.containers[*].resources}'
 - [[概念/fsdp|FSDP]]
 - [[概念/gradient-checkpointing|Gradient Checkpointing]]
 - [[概念/nccl|NCCL]]
-- [[12_架构基建/06_云厂商/03_Alibaba_云_Proprietary_K8s_上下文|阿里云专有云 K8s 上下文]]
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文|阿里云专有云 K8s 上下文]]
 - [[13_运维/Kubernetes_Troubleshooting_Playbook|Kubernetes 运维排障 Playbook]]

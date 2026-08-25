@@ -196,7 +196,7 @@ OOMKilled (Exit 137)
 - [[12_架构基建/04_Kubernetes核心/01_Kubernetes核心_Components_深入分析]] — K8s 核心组件深度解析
 - [[K8s_AI_Troubleshooting_Cheat_Sheet]] — AI 工作负载排障速查表
 - [[GPU_OOM_Troubleshooting_Guide]] — GPU OOM 专项排障
-- [[12_架构基建/06_云厂商/03_Alibaba_云_Proprietary_K8s_上下文]] — 专有云 K8s 上下文
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文]] — 专有云 K8s 上下文
 - [[概念/pod]] — Pod 概念
 - [[概念/deployment]] — Deployment 概念
 - [[07_模型训练/07_训练监控/02_LLM_微调_岗位_Failure_操作手册_on_K8s]] — LLM 训练失败 Runbook

@@ -268,4 +268,4 @@ done
 - [[概念/fsdp|FSDP]]
 - [[07_模型训练/07_训练监控/02_LLM_微调_岗位_Failure_操作手册_on_K8s|LLM 微调任务 K8s 失败排障]]
 - [[13_运维/02_SRE与可靠性/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
-- [[12_架构基建/06_云厂商/03_Alibaba_云_Proprietary_K8s_上下文|阿里云专有云 K8s 上下文]]
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文|阿里云专有云 K8s 上下文]]

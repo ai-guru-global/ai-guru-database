@@ -154,7 +154,7 @@ name_zh: "模型网关"
 - [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack 深度解析
 - [[概念/llm-infrastructure]] — LLM 基础设施
 - [[概念/model-serving]] — 模型服务
-- [[12_架构基建/06_云厂商/01_Alibaba_云_AI技术栈_深入分析|阿里云 AI Stack]] — 专有云推理平台的模型网关实现
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/01_阿里云_AI技术栈_深入分析|阿里云 AI Stack]] — 专有云推理平台的模型网关实现
 
 ## AI Gateway 功能全景
 

@@ -55,7 +55,7 @@ name_zh: "阿里云"
 - [[概念/ack|ACK]]
 - [[概念/pai|PAI]]
 - [[概念/apsara-stack|Apsara Stack]]
-- [[12_架构基建/06_云厂商/04_Alibaba_PAI_深入分析|阿里云 PAI 深度解析]]
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/04_阿里云_PAI_深入分析|阿里云 PAI 深度解析]]
 
 ---
 

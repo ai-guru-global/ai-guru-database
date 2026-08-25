@@ -51,13 +51,13 @@ name_zh: "架构与基础设施"
 | [Kubernetes 网络深度解析](12_架构基建/04_Kubernetes核心/02_Kubernetes_网络_深入分析.md) | CNI、Service、DNS、Ingress、NetworkPolicy 与排障 | 网络工程师、SRE |
 | [Kubernetes 存储深度解析](12_架构基建/04_Kubernetes核心/04_Kubernetes_存储_深入分析.md) | PV/PVC/StorageClass、CSI、StatefulSet 与分布式存储 | 存储工程师、SRE |
 | [Kubernetes 可观测性栈](12_架构基建/04_Kubernetes核心/03_Kubernetes_可观测性_Stack.md) | Metrics/Logs/Traces 三支柱与阿里云专有云集成 | 可观测性工程师 |
-| [阿里云专有云 K8s 上下文](./06_云厂商/03_Alibaba_云_Proprietary_K8s_上下文.md) | ACK 专有版/敏捷版、天基、ASCM、飞天底座映射 | 专有云运维、工单处理 |
+| [阿里云专有云 K8s 上下文](./06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文.md) | ACK 专有版/敏捷版、天基、ASCM、飞天底座映射 | 专有云运维、工单处理 |
 
 ### 阿里云 AI 平台
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
-| [阿里云 PAI 深度解析](./06_云厂商/04_Alibaba_PAI_深入分析.md) | PAI-DSW / DLC / EAS 与 ACK 专有云集成 | AI 平台工程师、SRE |
+| [阿里云 PAI 深度解析](./06_云厂商/Alibaba_Cloud/专有云/04_阿里云_PAI_深入分析.md) | PAI-DSW / DLC / EAS 与 ACK 专有云集成 | AI 平台工程师、SRE |
 
 ### AI Stack 生产工具链
 
@@ -132,9 +132,9 @@ name_zh: "架构与基础设施"
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
-| [AWS Bedrock 深度解析](12_架构基建/06_云厂商/05_AWS_Bedrock_深入分析.md) | 亚马逊云托管基础模型服务：Claude/Llama/Titan/RAG/Agent/Guardrails | 企业架构师 |
-| [Azure OpenAI 深度解析](12_架构基建/06_云厂商/06_Azure_OpenAI_深入分析.md) | 微软企业级 GPT 服务：数据隐私、区域部署、M365 集成 | 企业架构师 |
-| [Google Vertex AI 深度解析](12_架构基建/06_云厂商/07_Google_Vertex_AI_深入分析.md) | GCP 统一 AI 平台：Gemini、训练、MLOps、TPU、BigQuery | 企业架构师 |
+| [AWS Bedrock 深度解析](./06_云厂商/AWS/01_AWS_Bedrock_深入分析.md) | 亚马逊云托管基础模型服务：Claude/Llama/Titan/RAG/Agent/Guardrails | 企业架构师 |
+| [Azure OpenAI 深度解析](./06_云厂商/Azure/01_Azure_OpenAI_深入分析.md) | 微软企业级 GPT 服务：数据隐私、区域部署、M365 集成 | 企业架构师 |
+| [Google Vertex AI 深度解析](./06_云厂商/Google_Cloud/01_Google_Vertex_AI_深入分析.md) | GCP 统一 AI 平台：Gemini、训练、MLOps、TPU、BigQuery | 企业架构师 |
 
 ---
 
@@ -182,7 +182,7 @@ name_zh: "架构与基础设施"
 - [[12_架构基建/07_硬件与算力/03_CDI_深入分析|CDI (Container Device Interface): 容器设备接口标准]]
 - [[概念/ai-architecture]] — AI 系统架构
 - [[概念/llm-infrastructure]] — LLM 基础设施
-- [[12_架构基建/06_云厂商/01_Alibaba_云_AI技术栈_深入分析|阿里云 AI Stack 深度解读]] — 专有云 AI 推理平台三层架构
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/01_阿里云_AI技术栈_深入分析|阿里云 AI Stack 深度解读]] — 专有云 AI 推理平台三层架构
 - [[12_架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
 - [[12_架构基建/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]
 - [[12_架构基建/03_AI技术栈/04_AI技术栈_GPU_监控_指南|AI Stack GPU 监控指南]]
@@ -198,7 +198,7 @@ name_zh: "架构与基础设施"
 - [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析|阿里云 AI Stack: 企业级软硬一体 AI 推理平台]]
 - [[AI_Stack_MLOps_Reference_Architecture|AI Stack + MLflow + ACK 私有化 MLOps 参考架构]]
 - [[12_架构基建/03_AI技术栈/14_Safetensors_Hub_Management|Safetensors 与 Hub 治理：下一代模型存储与分发标准]]
-- [[12_架构基建/06_云厂商/04_Alibaba_PAI_深入分析|阿里云 PAI 深度解析]]
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/04_阿里云_PAI_深入分析|阿里云 PAI 深度解析]]
 - [[12_架构基建/README.md|CDI 容器设备接口 - 小白版]]
 - [[概念/K8s/kubernetes|Kubernetes 可观测性栈]]
 - [[12_架构基建/08_网络/06_RDMA_and_RoCE_for_AI|RDMA 与 RoCE 在 AI 集群中的应用]]

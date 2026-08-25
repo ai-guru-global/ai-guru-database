@@ -17,6 +17,7 @@ name_en: "Tool Comparison"
 
 | 文件 | 说明 |
 |------|------|
+| [[16_编程/06_工具对比/03_AI_应用生成平台_全景_2026|AI 应用生成平台全景 2026 (Meoo/Lovable/Bolt/秒哒)]] | 2026 AI 应用生成与发布平台全景对比：阿里秒悟 Meoo、百度秒哒、腾讯吐司/CloudBase、字节扣子与 Lovable、Bolt.new、Replit、Vercel v0 的全栈能力、发布方式、国内访问可达性对比与选型指南 |
 | [[16_编程/README.md|AI IDE 全景 2026 (Cursor/Windsurf/Trae/Qoder)]] | 2026 AI IDE 全景对比：Cursor/Windsurf/Trae/Qoder/GitHub Copilot 架构、核心功能、Agent 模式、适... |
 | [[16_编程/06_工具对比/02_Cursor_ClaudeCode_对比|Cursor vs Claude Code 对比指南]] | Cursor 是'AI 增强的 IDE'，适合喜欢在图形界面中写代码的开发者；Claude Code 是'AI 驱动的终端代理'，适合喜欢命令行和完全自动... |
 | [[16_编程/06_工具对比/04_MOC_OpenRouter_OpenCode|topic-ai-coding MOC]] | topic-ai-coding MOC — 专题文档 |

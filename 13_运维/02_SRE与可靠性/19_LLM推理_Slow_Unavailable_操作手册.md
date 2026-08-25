@@ -234,4 +234,4 @@ kubectl logs -n ingress-nginx -l app.kubernetes.io/name=ingress-nginx --tail=200
 - [[概念/continuous-batching|Continuous Batching]]
 - [[10_部署推理/README|推理部署总览]]
 - [[13_运维/02_SRE与可靠性/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
-- [[12_架构基建/06_云厂商/03_Alibaba_云_Proprietary_K8s_上下文|阿里云专有云 K8s 上下文]]
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文|阿里云专有云 K8s 上下文]]

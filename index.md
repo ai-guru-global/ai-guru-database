@@ -113,9 +113,9 @@ graph LR
 ## Deep Dives
 
 ### 云平台
-- [[12_架构基建/06_云厂商/05_AWS_Bedrock_深入分析]] — AWS Bedrock 深度解析 ( #aws-bedrock #cloud #foundation-model)
-- [[12_架构基建/06_云厂商/06_Azure_OpenAI_深入分析]] — Azure OpenAI 深度解析 ( #azure-openai #cloud #openai)
-- [[12_架构基建/06_云厂商/07_Google_Vertex_AI_深入分析]] — Google Vertex AI 深度解析 ( #vertex-ai #google-cloud #ai-platform)
+- [[12_架构基建/06_云厂商/AWS/01_AWS_Bedrock_深入分析]] — AWS Bedrock 深度解析 ( #aws-bedrock #cloud #foundation-model)
+- [[12_架构基建/06_云厂商/Azure/01_Azure_OpenAI_深入分析]] — Azure OpenAI 深度解析 ( #azure-openai #cloud #openai)
+- [[12_架构基建/06_云厂商/Google_Cloud/01_Google_Vertex_AI_深入分析]] — Google Vertex AI 深度解析 ( #vertex-ai #google-cloud #ai-platform)
 
 ### 训练框架
 - [[07_模型训练/04_分布式训练/08_Megatron_LM_深入分析]] — Megatron-LM 深度解析 ( #megatron-lm #distributed-training #nvidia)

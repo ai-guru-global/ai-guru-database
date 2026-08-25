@@ -5,7 +5,7 @@ subcategory: cloud-providers
 tags: ["alibaba-cloud", "pai", "llm", "training", "inference", "kubernetes", "k8s", "proprietary-cloud"]
 summary: "系统讲解阿里云 PAI 平台的核心产品（DSW/DLC/EAS）、与 ACK 专有云的集成方式，以及典型 LLM 训练/推理工单的处理入口。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-22
 tier: core
 sources: []
 name_zh: "阿里云 PAI 深度解析"
@@ -145,7 +145,7 @@ ACK 专有版 / 敏捷版
 - [[概念/pai|PAI]]
 - [[概念/ack|ACK]]
 - [[概念/alibaba-cloud|Alibaba Cloud]]
-- [[12_架构基建/06_云厂商/03_Alibaba_云_Proprietary_K8s_上下文|阿里云专有云 K8s 上下文]]
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文|阿里云专有云 K8s 上下文]]
 - [[07_模型训练/07_训练监控/02_LLM_微调_岗位_Failure_操作手册_on_K8s|LLM 微调任务 K8s 失败排障]]
 - [[13_运维/02_SRE与可靠性/19_LLM推理_Slow_Unavailable_操作手册|LLM 推理延迟/不可用 Runbook]]
 
@@ -227,3 +227,16 @@ ACK 专有版 / 敏捷版
 - [ ] 能进行基本的性能分析和优化
 - [ ] 熟悉生产环境最佳实践
 - [ ] 关注硬件和架构演进趋势
+
+---
+
+**相关文档**
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文|专有云 K8s 上下文]] — ACK 是 PAI 的底层容器平台
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/01_阿里云_AI技术栈_深入分析|AI Stack 深度解读]] — 专有云版 AI 推理平台
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/产品/07_MaaS平台_百炼与千问AI平台|MaaS 平台]] — 百炼是 PAI 之上的上层抽象
+- [[07_模型训练/04_分布式训练/01_分布式训练_2026|分布式训练 2026]] — PAI-DLC 的训练技术背景
+- [[10_部署推理/02_推理引擎/29_vLLM_深入分析|vLLM 深度解析]] — PAI-EAS 常集成 vLLM 做推理
+
+---
+
+*Last updated: 2026-08-22*

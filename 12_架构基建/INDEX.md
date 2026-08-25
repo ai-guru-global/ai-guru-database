@@ -30,7 +30,7 @@ This page indexes the contents of `架构基建`.
 
 - [[13_运维/02_SRE与可靠性/03_AI_SRE_操作手册|AI SRE Runbook]]
 - [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析|AI Stack Deep Dive]]
-- [[12_架构基建/06_云厂商/03_Alibaba_云_Proprietary_K8s_上下文|Alibaba Cloud Proprietary K8s Context]]
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文|Alibaba Cloud Proprietary K8s Context]]
 - [[12_架构基建/Architecture-in-nutshell|Architecture In Nutshell]]
 - [[12_架构基建/02_架构概览/02_AI_基础设施_2026|Architecture Infrastructure For Dummy]]
 - [[12_架构基建/04_Kubernetes核心/01_Kubernetes核心_Components_深入分析|Kubernetes Core Components Deep Dive]]

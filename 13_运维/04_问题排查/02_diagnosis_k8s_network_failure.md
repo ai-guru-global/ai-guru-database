@@ -113,7 +113,7 @@ DNS 解析失败
 │   └── → kubelet 未正确注入 DNS 配置
 │
 ├── 专有云特有
-│   ├── 天基/ASCM 网络变更影响 → 参见 [[12_架构基建/06_云厂商/03_Alibaba_云_Proprietary_K8s_上下文]]
+│   ├── 天基/ASCM 网络变更影响 → 参见 [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文]]
 │   └── ndots 问题（长域名解析慢） → 检点 ndots: 5 配置
 │
 └── 上游 DNS 不可达
@@ -142,7 +142,7 @@ DNS 解析失败
 | LoadBalancer | 访问超时 | 安全组/防火墙 | 检查安全组规则 |
 | NodePort | 无法访问 | 节点安全组 | 检查节点防火墙 |
 
-参见 [[概念/ingress]]、[[概念/service]]、[[12_架构基建/06_云厂商/03_Alibaba_云_Proprietary_K8s_上下文]]。
+参见 [[概念/ingress]]、[[概念/service]]、[[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文]]。
 
 ---
 
@@ -174,7 +174,7 @@ DNS 解析失败
 2. 联系平台团队扩容节点 ENI 配额或增加辅助 IP 池
 3. 或调整 Pod 密度（减少单节点 Pod 数）
 
-参见 [[12_架构基建/06_云厂商/03_Alibaba_云_Proprietary_K8s_上下文]]、[[概念/cni]]。
+参见 [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文]]、[[概念/cni]]。
 
 ---
 
@@ -197,7 +197,7 @@ DNS 解析失败
 - [[Kubernetes_Troubleshooting_Playbook]] — K8s 排障完整手册
 - [[13_运维/04_问题排查/03_diagnosis_k8s_pod_failure]] — Pod 故障诊断决策树
 - [[13_运维/04_问题排查/04_diagnosis_k8s_storage_failure]] — 存储故障诊断决策树
-- [[12_架构基建/06_云厂商/03_Alibaba_云_Proprietary_K8s_上下文]] — 专有云 K8s 上下文
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文]] — 专有云 K8s 上下文
 - [[概念/cni]] — CNI 概念
 - [[概念/service]] — Service 概念
 - [[概念/ingress]] — Ingress 概念

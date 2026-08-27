@@ -95,7 +95,7 @@ name_zh: "谷歌 Vertex AI 平台"
 
 ## Related
 
-- [[12_架构基建/06_云厂商/07_Google_Vertex_AI_深入分析]] — Google Vertex AI 深度解析
+- [[12_架构基建/06_云厂商/Google_Cloud/01_Google_Vertex_AI_深入分析]] — Google Vertex AI 深度解析
 - [[概念/cloud-ai-platform]] — 云 AI 平台
 - [[概念/gemini]] — Gemini
 - [[概念/aws-bedrock]] — AWS Bedrock

@@ -12,10 +12,13 @@ EXCLUDE_DIRS = {'.git', '.venv', 'node_modules', '.claude', '.qoder', '.qwen',
                 '.comate', '.crush', '.pytest_cache', '__pycache__', 'Web',
                 '.obsidian', '.github', 'dist', 'site', '_raw'}
 
-def fix_file(filepath, base):
+def fix_file(filepath, base, dry_run=False):
     """Fix relative links in a single file."""
     rel = os.path.relpath(filepath, base)
-    depth = len(rel.split(os.sep)) - 1  # 0 = root level
+    # depth 相对仓库根计算：checker 将无前缀链接按仓库根解析，
+    # 因此只要文件不在仓库根，就需要 ./ 前缀
+    rel_root = os.path.relpath(filepath, '.')
+    depth = len(rel_root.split(os.sep)) - 1  # 0 = 仓库根级
     if depth == 0:
         return 0  # Root-level files: links without ./ correctly resolve from base
 
@@ -66,7 +69,9 @@ def fix_file(filepath, base):
         if not path.endswith('.md'):
             return m.group(0)
         first_comp = path.split('/')[0]
-        if re.match(r'^\d{2}_', first_comp):
+        # 仅当路径含 / 且首段为 NN_ 章节目录时才视为仓库根相对；
+        # 裸文件名（如 06_Xxx.md）是兄弟文件链接，需要 ./ 前缀
+        if '/' in path and re.match(r'^\d{2}_', first_comp):
             return m.group(0)
         if first_comp.startswith('_') or first_comp in {'docs', 'scripts'}:
             return m.group(0)
@@ -95,13 +100,12 @@ def main():
             if not fname.endswith('.md'):
                 continue
             fp = os.path.join(dirpath, fname)
-            fixes = fix_file(fp, base)
+            fixes = fix_file(fp, base, dry_run)
             if fixes > 0:
                 rel = os.path.relpath(fp, base)
                 total += fixes
                 files += 1
-                if dry_run:
-                    print(f"  Would fix {fixes} links in {rel}")
+                print(f"  {'Would fix' if dry_run else 'Fixed'} {fixes} links in {rel}")
     print(f"\n{'DRY RUN: ' if dry_run else ''}Fixed {total} links in {files} files")
 
 if __name__ == '__main__':

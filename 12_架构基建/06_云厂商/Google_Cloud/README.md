@@ -20,7 +20,7 @@ name_zh: "Google Cloud AI 平台"
 
 | 文档 | 说明 | 适用读者 |
 |------|------|----------|
-| [01_Google_Vertex_AI_深入分析](01_Google_Vertex_AI_深入分析.md) | GCP 统一 AI 平台：Gemini、训练、MLOps、TPU、BigQuery | 企业架构师 |
+| [01_Google_Vertex_AI_深入分析](./01_Google_Vertex_AI_深入分析.md) | GCP 统一 AI 平台：Gemini、训练、MLOps、TPU、BigQuery | 企业架构师 |
 
 ## 待展开
 

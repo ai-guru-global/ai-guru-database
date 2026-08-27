@@ -11,7 +11,7 @@ name_zh: "全库总索引"
 
 > 中文简称：全库总索引
 
-*This index is automatically maintained. Last updated: 2026-07-11*
+*This index is automatically maintained. Last updated: 2026-08-25*
 
 ## 知识图谱 (Knowledge Graph)
 

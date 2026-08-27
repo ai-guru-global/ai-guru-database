@@ -20,7 +20,7 @@ name_zh: "AWS AI 平台"
 
 | 文档 | 说明 | 适用读者 |
 |------|------|----------|
-| [01_AWS_Bedrock_深入分析](01_AWS_Bedrock_深入分析.md) | 托管基础模型服务：Claude/Llama/Titan、RAG、Agent、Guardrails | 企业架构师 |
+| [01_AWS_Bedrock_深入分析](./01_AWS_Bedrock_深入分析.md) | 托管基础模型服务：Claude/Llama/Titan、RAG、Agent、Guardrails | 企业架构师 |
 
 ## 待展开
 

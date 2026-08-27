@@ -95,7 +95,7 @@ name_zh: "微软 Azure OpenAI 服务"
 
 ## Related
 
-- [[12_架构基建/06_云厂商/06_Azure_OpenAI_深入分析]] — Azure OpenAI 深度解析
+- [[12_架构基建/06_云厂商/Azure/01_Azure_OpenAI_深入分析]] — Azure OpenAI 深度解析
 - [[概念/cloud-ai-platform]] — 云 AI 平台
 - [[概念/openai]] — OpenAI
 - [[概念/aws-bedrock]] — AWS Bedrock

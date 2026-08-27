@@ -4,7 +4,7 @@ category: documentation
 tags: ["documentation", "docs-as-code", "ai-knowledge", "llmops", "mlops"]
 summary: "GitHub 上最全面的 AI 全栈中文知识库——从数学基础到 Agent 生产部署，含 LLMOps 完整主线。"
 created: 2026-05-31
-updated: 2026-08-21
+updated: 2026-08-25
 tier: supporting
 sources: []
 
@@ -18,7 +18,7 @@ name_zh: "AI Guru 知识库"
 
 <p><strong>这可能是 GitHub 上最全面的 AI 学习资源</strong></p>
 
-<p>从理论到生产的完整 AI 知识体系 | 2,039 篇核心文档 + 700+ 概念卡片 | 1,888 万字 | LLMOps 完整主线 | 2026 最新</p>
+<p>从理论到生产的完整 AI 知识体系 | 2,061 篇核心文档 + 700+ 概念卡片 | 1,894 万字 | LLMOps 完整主线 | 2026 最新</p>
 
 <p>
  <a href="#-快速开始"> 快速开始</a> •
@@ -29,8 +29,8 @@ name_zh: "AI Guru 知识库"
 </p>
 
 <p>
- <img src="https://img.shields.io/badge/核心文档-2039-blue?style=flat-square" alt="Docs">
- <img src="https://img.shields.io/badge/字数-1888万-green?style=flat-square" alt="Content">
+ <img src="https://img.shields.io/badge/核心文档-2061-blue?style=flat-square" alt="Docs">
+ <img src="https://img.shields.io/badge/字数-1894万-green?style=flat-square" alt="Content">
  <img src="https://img.shields.io/badge/章节-24-orange?style=flat-square" alt="Chapters">
  <img src="https://img.shields.io/badge/速成指南-70+-purple?style=flat-square" alt="Guides">
  <img src="https://img.shields.io/badge/概念卡片-700+-critical?style=flat-square" alt="Concepts">
@@ -60,8 +60,8 @@ name_zh: "AI Guru 知识库"
 <td width="50%">
 
 ** 内容全面**
-- 2,039 篇核心知识文档 + 700+ 概念卡片
-- ~1,888 万字符（约 3,000 页 A4）
+- 2,061 篇核心知识文档 + 700+ 概念卡片
+- ~1,894 万字符（约 3,000 页 A4）
 - 24 大知识章节 + 12 子域概念网络
 - 覆盖从数学基础到 AGI 前沿
 
@@ -101,29 +101,29 @@ name_zh: "AI Guru 知识库"
 ### 数据说话
 
 ```
- 2,039 篇核心文档     1,888 万字符（约 3,000 页 A4）
+ 2,061 篇核心文档     1,894 万字符（约 3,000 页 A4）
  24 个知识章节         70+ 篇速成指南 (in-nutshell)
  48 篇入门指南 (for_dummy)     700+ 概念卡片（12 子域）
  240 篇 Agent 专题     157 篇业界领袖观点
  140 篇面试指南        87 篇行业应用案例
 ```
 
->  **核心文档**（24 章节目录）：2,039 篇 / 1,888 万字 ｜ **概念卡片**（12 子域）：700+ 张
+>  **核心文档**（24 章节目录）：2,061 篇 / 1,894 万字 ｜ **概念卡片**（12 子域）：700+ 张
 
 #### 各目录统计
 
 | 目录 | 文件数 | 字符数 | 占比 |
 |---------|--------|--------|------|
 | **概念** | 700+ | — | — |
-| 15_智能体 | 240 | 284.5 万 | 15.1% |
-| 05_大模型 | 157 | 232.3 万 | 12.3% |
+| 15_智能体 | 240 | 284.5 万 | 15.0% |
 | 19_业界观点 | 157 | 96.0 万 | 5.1% |
+| 05_大模型 | 154 | 230.4 万 | 12.2% |
 | 21_面试岗位 | 140 | 87.5 万 | 4.6% |
+| 12_架构基建 | 140 | 151.3 万 | 8.0% |
 | 90_学习 | 123 | 86.2 万 | 4.6% |
-| 12_架构基建 | 115 | 143.8 万 | 7.6% |
 | 11_模型运维 | 115 | 113.0 万 | 6.0% |
-| 10_部署推理 | 106 | 94.1 万 | 5.0% |
-| 16_编程 | 94 | 64.8 万 | 3.4% |
+| 10_部署推理 | 105 | 94.0 万 | 5.0% |
+| 16_编程 | 95 | 65.5 万 | 3.5% |
 | 18_行业应用 | 87 | 42.0 万 | 2.2% |
 | 22-FDE | 71 | 25.4 万 | 1.3% |
 | 20_论文精读 | 69 | 58.5 万 | 3.1% |
@@ -141,7 +141,7 @@ name_zh: "AI Guru 知识库"
 | 09_测试 | 30 | 31.8 万 | 1.7% |
 | 00_入门 | 27 | 24.2 万 | 1.3% |
 | 94_可视化 | 28 | 27.1 万 | 1.4% |
-| **总计** | **2,039** | **1,888 万** | **100%** |
+| **总计** | **2,061** | **1,894 万** | **100%** |
 
 >  提示：运行 `python3 工具/count_words.py` 可查看最新的实时统计
 

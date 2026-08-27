@@ -4,7 +4,7 @@ category: 05-nlp-llms-chinese-llm-ecosystem
 tags: [deepseek, chinese-llm, moe, mla, grpo, reasoning, fp8-training, r1, v3, v4, open-source, deepseek-v4, csa, hca, mhc, muon, hybrid-attention]
 summary: "全面剖析 DeepSeek 从 7B Dense 到 V4 系列（V4-Pro 1.6T-A49B / V4-Flash 284B-A13B，1M 上下文）的完整技术演进：MLA 注意力压缩、DeepSeekMoE 路由、FP8/FP4+FP8 混合精度训练、GRPO 强化学习、R1 自进化推理，以及 V4 的 Hybrid Attention (CSA+HCA)、Manifold-constrained Hyper-Connections (mHC)、Muon 优化器与三档思考力度（Non-think/High/Max）。"
 created: 2026-06-01
-updated: 2026-06-16
+updated: 2026-08-26
 tier: supporting
 aliases:
   - "Deepseek Deep Dive"
@@ -1613,6 +1613,44 @@ print(f"推理过程: {reasoning}")
 print(f"最终答案: {answer}")
 ```
 
+#### 9.2.1 API 错误码速查（官方）
+
+> 调用 DeepSeek API 报错时，先看 HTTP 状态码即可定位绝大多数问题——4xx 是客户端问题（密钥、余额、参数、速率），5xx 是服务端问题（等待重试即可）。
+
+| 错误码 | 含义 | 常见原因 | 解决方法 |
+|--------|------|---------|---------|
+| **400** | 格式错误 | 请求体格式错误 | 根据错误信息提示修改请求体 |
+| **401** | 认证失败 | API key 错误，认证失败 | 检查 API key 是否正确；如没有 API key，请先创建 API key |
+| **402** | 余额不足 | 账号余额不足 | 确认账户余额，并前往充值页面充值 |
+| **422** | 参数错误 | 请求体参数错误 | 根据错误信息提示修改相关参数 |
+| **429** | 请求速率达到上限 | 请求速率（TPM 或 RPM）达到上限 | 合理规划请求速率，采用指数退避重试 |
+| **500** | 服务器故障 | 服务器内部故障 | 等待后重试；若问题一直存在，请联系官方解决 |
+| **503** | 服务器繁忙 | 服务器负载过高 | 稍后重试请求 |
+
+```python
+# 429 限流 / 5xx 服务端错误的指数退避重试模板
+import time
+from openai import OpenAI, APIError, RateLimitError
+
+client = OpenAI(base_url="https://api.deepseek.com/v1", api_key="your-api-key")
+
+def call_with_retry(messages, max_retries=5):
+    """遇到 429 限流或 5xx 服务端错误时，按指数退避自动重试"""
+    for attempt in range(max_retries):
+        try:
+            return client.chat.completions.create(
+                model="deepseek-chat",
+                messages=messages,
+            )
+        except (RateLimitError, APIError) as e:
+            wait = 2 ** attempt
+            print(f"第 {attempt + 1} 次失败（HTTP {e.status_code}），{wait} 秒后重试")
+            time.sleep(wait)
+    raise RuntimeError("重试次数耗尽，请根据错误码排查")
+```
+
+> **排障优先级**：先自查 4xx（API key → 余额 → 参数 → 速率），5xx 为服务端问题无需修改请求。官方错误码文档：[DeepSeek API 错误码](https://api-docs.deepseek.com/zh-cn/quick_start/error_codes)。
+
 ### 9.3 vLLM 部署
 
 ```bash
@@ -2010,6 +2048,7 @@ DeepSeek 提供双协议端点：
 ### 官方来源
 - DeepSeek 官网: https://www.deepseek.com
 - DeepSeek API 平台: https://platform.deepseek.com
+- DeepSeek API 错误码文档: https://api-docs.deepseek.com/zh-cn/quick_start/error_codes
 - DeepSeek GitHub: https://github.com/deepseek-ai
 - DeepSeek-V3 技术报告: arXiv:2412.19437
 - DeepSeek-R1 技术报告: arXiv:2501.12948
@@ -2020,4 +2059,4 @@ DeepSeek 提供双协议端点：
 - [[05_大模型/14_中国LLM生态/05_Chinese_LLM_训练_推理_平台]] — 训推平台实战
 
 ---
-*Last updated: 2026-06-16*
+*Last updated: 2026-08-26*

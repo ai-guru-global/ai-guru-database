@@ -147,7 +147,7 @@ name_zh: "云厂商 AI 平台对比"
 
 ---
 
-**参见**：[[12_架构基建/06_云厂商/05_AWS_Bedrock_深入分析]] · [[12_架构基建/06_云厂商/06_Azure_OpenAI_深入分析]] · [[12_架构基建/06_云厂商/07_Google_Vertex_AI_深入分析]] · [[12_架构基建/README|架构基建]] · [[概念/aws-bedrock]] · [[概念/azure-openai]]
+**参见**：[[12_架构基建/06_云厂商/AWS/01_AWS_Bedrock_深入分析]] · [[12_架构基建/06_云厂商/Azure/01_Azure_OpenAI_深入分析]] · [[12_架构基建/06_云厂商/Google_Cloud/01_Google_Vertex_AI_深入分析]] · [[12_架构基建/README|架构基建]] · [[概念/aws-bedrock]] · [[概念/azure-openai]]
 
 ---
 

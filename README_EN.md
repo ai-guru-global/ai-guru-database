@@ -20,7 +20,7 @@ name_zh: "README 英文版"
 
 <p><strong>Probably the Most Comprehensive AI Learning Resource on GitHub</strong></p>
 
-<p>Complete AI Knowledge System from Theory to Production | 2,039 Core Docs + 700+ Concept Cards | 18.9M Characters | LLMOps End-to-End | 2026 Latest</p>
+<p>Complete AI Knowledge System from Theory to Production | 2,061 Core Docs + 700+ Concept Cards | 18.9M Characters | LLMOps End-to-End | 2026 Latest</p>
 
 <p>
  <a href="#-quick-start"> Quick Start</a> •
@@ -31,7 +31,7 @@ name_zh: "README 英文版"
 </p>
 
 <p>
- <img src="https://img.shields.io/badge/Core%20Docs-2039-blue?style=flat-square" alt="Docs">
+ <img src="https://img.shields.io/badge/Core%20Docs-2061-blue?style=flat-square" alt="Docs">
  <img src="https://img.shields.io/badge/Content-18.9M%20chars-green?style=flat-square" alt="Content">
  <img src="https://img.shields.io/badge/Chapters-24-orange?style=flat-square" alt="Chapters">
  <img src="https://img.shields.io/badge/Quick%20Guides-70+-purple?style=flat-square" alt="Guides">
@@ -62,7 +62,7 @@ name_zh: "README 英文版"
 <td width="50%">
 
 ** Comprehensive Content**
-- 2,039 core docs + 700+ atomic concept cards
+- 2,061 core docs + 700+ atomic concept cards
 - ~18.9M characters (~3,000 A4 pages)
 - 24 knowledge chapters + 12 subdomain concept network
 - From math foundations to AGI frontiers
@@ -103,29 +103,29 @@ name_zh: "README 英文版"
 ### By The Numbers
 
 ```
- 2,039 Core Docs         18.9M chars (~3,000 A4 pages)
+ 2,061 Core Docs         18.9M chars (~3,000 A4 pages)
  24 Knowledge Chapters   70+ Quick Guides (in-nutshell)
  48 Beginner Guides (for_dummy)   700+ Concept Cards (12 subdomains)
  240 Agent Articles      157 Industry Leader Perspectives
  140 Interview Guides    87 Industry Case Studies
 ```
 
-> **Core docs** (24 chapter directories): 2,039 files / 18.9M chars **Concept cards** (12 subdomains): 700+ files
+> **Core docs** (24 chapter directories): 2,061 files / 18.9M chars **Concept cards** (12 subdomains): 700+ files
 
 #### Per-Directory Stats
 
 | Directory | Files | Characters | Share |
 |-----------|-------|------------|-------|
 | **概念 (Concepts)** | 700+ | — | — |
-| 15_智能体 (Agents) | 240 | 2.84M | 15.1% |
-| 05_大模型 (LLMs) | 157 | 2.32M | 12.3% |
+| 15_智能体 (Agents) | 240 | 2.84M | 15.0% |
 | 19_业界观点 (Insights) | 157 | 960K | 5.1% |
+| 05_大模型 (LLMs) | 154 | 2.30M | 12.2% |
 | 21_面试岗位 (Interviews) | 140 | 875K | 4.6% |
+| 12_架构基建 (Infrastructure) | 140 | 1.51M | 8.0% |
 | 90_学习 (Learning) | 123 | 862K | 4.6% |
-| 12_架构基建 (Infrastructure) | 115 | 1.44M | 7.6% |
 | 11_模型运维 (MLOps) | 115 | 1.13M | 6.0% |
-| 10_部署推理 (Deployment) | 106 | 941K | 5.0% |
-| 16_编程 (AI Coding) | 94 | 648K | 3.4% |
+| 10_部署推理 (Deployment) | 105 | 940K | 5.0% |
+| 16_编程 (AI Coding) | 95 | 655K | 3.5% |
 | 18_行业应用 (Industry) | 87 | 420K | 2.2% |
 | 22-FDE (Full-Stack Eng) | 71 | 254K | 1.3% |
 | 20_论文精读 (Papers) | 69 | 585K | 3.1% |
@@ -143,7 +143,7 @@ name_zh: "README 英文版"
 | 09_测试 (Testing) | 30 | 318K | 1.7% |
 | 00_入门 (Intro) | 27 | 242K | 1.3% |
 | 94_可视化 (Visualization) | 28 | 271K | 1.4% |
-| **Total** | **2,039** | **18.9M** | **100%** |
+| **Total** | **2,061** | **18.9M** | **100%** |
 
 > Tip: Run `python3 工具/count_words.py` for real-time stats.
 

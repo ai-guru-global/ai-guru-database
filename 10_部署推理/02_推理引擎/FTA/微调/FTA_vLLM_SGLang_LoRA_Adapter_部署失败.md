@@ -4,7 +4,7 @@ category: "07-model-training"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "lora", "adapter", "deployment", "fine-tuning"]
 summary: "> **一句话理解**: 微调 adapter 部署失败时，先验证文件与 base 一致性，再查 rank/格式兼容性——训练产物到推理引擎之间有一条「格式 + 版本」鸿沟。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA LoRA Adapter Deployment Failure"
@@ -23,7 +23,7 @@ name_zh: "FTA: vLLM / SGLang Adapter 部署失败"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang 微调 Adapter 部署到推理引擎失败
 
-> 中文简称：FTA: vLLM / SGLang Adapter 部署失败
+> 中文简称：FTA: vLLM / SGLang Adapter 部署失败 ｜ English: FTA LoRA Adapter Deployment Failure
 
 > **一句话理解**: 微调 adapter 部署失败时，先验证文件与 base 一致性，再查 rank/格式兼容性——训练产物到推理引擎之间有一条「格式 + 版本」鸿沟。
 
@@ -142,4 +142,4 @@ python -m sglang.launch_server \
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_多LoRA冲突.md|多 LoRA 冲突 FTA]]
 - [[10_部署推理/02_推理引擎/FTA/微调/FTA_vLLM_SGLang_LoRA_合并失败.md|LoRA 合并失败 FTA]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

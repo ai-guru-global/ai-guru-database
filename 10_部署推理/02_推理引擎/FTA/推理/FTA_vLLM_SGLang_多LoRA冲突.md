@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "lora", "multi-lora", "adapter"]
 summary: "> **一句话理解**: 多 LoRA 服务出问题时，先确认「adapter 是否真的加载成功」，再看 rank 上限、base 模型一致性、并发 adapter 数量这三个容量约束。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA Multi-LoRA Conflict"
@@ -23,7 +23,7 @@ name_zh: "FTA: vLLM / SGLang 多 LoRA 服务冲突"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang 多 LoRA 服务冲突 / 加载异常
 
-> 中文简称：FTA: vLLM / SGLang 多 LoRA 服务冲突
+> 中文简称：FTA: vLLM / SGLang 多 LoRA 服务冲突 ｜ English: FTA Multi-LoRA Conflict
 
 > **一句话理解**: 多 LoRA 服务出问题时，先确认「adapter 是否真的加载成功」，再看 rank 上限、base 模型一致性、并发 adapter 数量这三个容量约束。
 
@@ -142,4 +142,4 @@ python -m sglang.launch_server \
 - [[10_部署推理/02_推理引擎/FTA/微调/FTA_vLLM_SGLang_LoRA_Adapter_部署失败.md|LoRA Adapter 部署失败 FTA]]
 - [[10_部署推理/02_推理引擎/FTA/微调/FTA_vLLM_SGLang_LoRA_合并失败.md|LoRA 合并失败 FTA]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

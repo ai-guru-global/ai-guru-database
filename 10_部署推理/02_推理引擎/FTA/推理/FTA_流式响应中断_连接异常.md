@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "streaming", "sse", "websocket", "connection", "timeout", "inference"]
 summary: "> **一句话理解**: 流式响应中断大多不是引擎挂了，而是代理层空闲超时、首 token 太慢或生成被截断——从「服务端 vs 代理层 vs 客户端」三段链路定位断点。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA 流式响应中断"
@@ -23,7 +23,7 @@ name_zh: "FTA: 流式响应中断与连接异常"
 <!-- op-safety-banner v1 -->
 # FTA: 流式响应中断与连接异常
 
-> 中文简称：FTA: 流式响应中断与连接异常
+> 中文简称：FTA: 流式响应中断与连接异常 ｜ English: FTA Streaming Interruption and Connection Error
 
 > **一句话理解**: 流式响应中断大多不是引擎挂了，而是代理层空闲超时、首 token 太慢或生成被截断——从「服务端 vs 代理层 vs 客户端」三段链路定位断点。
 
@@ -140,4 +140,4 @@ route:
 - [[10_部署推理/02_推理引擎/23_SGLang_深入分析.md|SGLang_Deep_Dive]]
 - [[12_架构基建/11_AI网关/README.md|AI 网关]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

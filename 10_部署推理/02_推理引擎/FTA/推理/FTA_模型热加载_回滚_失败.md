@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "hot-reload", "rollback", "model-serving", "inference", "k8s"]
 summary: "> **一句话理解**: 模型热加载/回滚后服务异常，九成是「权重、tokenizer、LoRA、量化配置」四项没有一起换——先校验文件一致性，再查回滚流程是否完整执行。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA 模型热加载失败"
@@ -23,7 +23,7 @@ name_zh: "FTA: 模型热加载与回滚失败"
 <!-- op-safety-banner v1 -->
 # FTA: 模型热加载与回滚失败
 
-> 中文简称：FTA: 模型热加载与回滚失败
+> 中文简称：FTA: 模型热加载与回滚失败 ｜ English: FTA Hot Reload and Rollback Failure
 
 > **一句话理解**: 模型热加载/回滚后服务异常，九成是「权重、tokenizer、LoRA、量化配置」四项没有一起换——先校验文件一致性，再查回滚流程是否完整执行。
 
@@ -148,4 +148,4 @@ kubectl patch inferenceservice <name> -n <ns> --type=merge -p \
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_启动失败_架构_Tokenizer.md|启动失败 FTA（架构/Tokenizer）]]
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_推理_OOM.md|推理 OOM FTA]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

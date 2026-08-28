@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "prefix-caching", "radix-attention", "cache-hit-rate"]
 summary: "> **一句话理解**: 前缀缓存命中率跌破 50% 时，优先怀疑「前缀本身不一致」——时间戳、随机 token、block 对齐与缓存开关是四大检查点。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA Prefix Caching Miss"
@@ -22,7 +22,7 @@ name_zh: "FTA: vLLM / SGLang Prefix Caching 失效"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang Prefix Caching 失效（命中率低）
 
-> 中文简称：FTA: vLLM / SGLang Prefix Caching 失效
+> 中文简称：FTA: vLLM / SGLang Prefix Caching 失效 ｜ English: FTA Prefix Caching Miss
 
 > **一句话理解**: 前缀缓存命中率跌破 50% 时，优先怀疑「前缀本身不一致」——时间戳、随机 token、block 对齐与缓存开关是四大检查点。
 
@@ -133,4 +133,4 @@ python -m sglang.launch_server \
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_TTFT_抖动.md|TTFT 抖动 FTA]]
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_KV_Cache_溢出.md|KV Cache 溢出 FTA]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

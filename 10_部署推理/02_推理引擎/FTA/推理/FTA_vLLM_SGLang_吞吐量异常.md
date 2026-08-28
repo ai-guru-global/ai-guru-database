@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "throughput", "performance", "batching"]
 summary: "> **一句话理解**: 吞吐量上不去时，按「批大小 → GPU 利用率 → 调度开销 → 硬件瓶颈」四层逐级排查，先放大批再抠细节，避免在错误层浪费时间。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA Throughput Degradation"
@@ -23,7 +23,7 @@ name_zh: "FTA: vLLM / SGLang 吞吐量异常低"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang 吞吐量异常低
 
-> 中文简称：FTA: vLLM / SGLang 吞吐量异常低
+> 中文简称：FTA: vLLM / SGLang 吞吐量异常低 ｜ English: FTA Throughput Degradation
 
 > **一句话理解**: 吞吐量上不去时，按「批大小 → GPU 利用率 → 调度开销 → 硬件瓶颈」四层逐级排查，先放大批再抠细节，避免在错误层浪费时间。
 
@@ -144,4 +144,4 @@ python -m sglang.launch_server \
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_TTFT_抖动.md|TTFT 抖动 FTA]]
 - [[07_模型训练/07_训练监控/03_模型_故障排查_指南.md|模型问题排查手册]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "inference", "memory-fragmentation", "gpu-memory", "long-running"]
 summary: "> **一句话理解**: 服务跑几天后开始 OOM 或变慢、重启就好——这不是请求变多，而是进程级显存碎片化/泄漏累积；用 expandable_segments 与碎片监控根治。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA 显存碎片化"
@@ -23,7 +23,7 @@ name_zh: "FTA: vLLM / SGLang 显存碎片化与长期运行退化"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang 显存碎片化与长期运行退化
 
-> 中文简称：FTA: vLLM / SGLang 显存碎片化与长期运行退化
+> 中文简称：FTA: vLLM / SGLang 显存碎片化与长期运行退化 ｜ English: FTA GPU Memory Fragmentation and Long-Run Degradation
 
 > **一句话理解**: 服务跑几天后开始 OOM 或变慢、重启就好——这不是请求变多，而是进程级显存碎片化/泄漏累积；用 expandable_segments 与碎片监控根治。
 
@@ -136,4 +136,4 @@ python -m sglang.launch_server --model-path <model> --mem-fraction-static 0.85
 - [[10_部署推理/03_推理优化/07_kv_cache_paged_attention.md|KV Cache x PagedAttention]]
 - [[10_部署推理/02_推理引擎/29_vLLM_深入分析.md|vLLM_Deep_Dive]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

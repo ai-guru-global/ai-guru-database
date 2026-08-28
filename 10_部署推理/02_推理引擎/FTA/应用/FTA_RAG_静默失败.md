@@ -4,7 +4,7 @@ category: "14-rag-systems"
 tags: ["fta", "fault-tree-analysis", "rag", "retrieval", "silent-failure", "embedding", "vector-db", "quality"]
 summary: "> **一句话理解**: RAG 最危险的是「不报错但答错」——检索不到、检索到无关内容、上下文被污染都无异常码；靠质量监控 + 分块/嵌入版本管理 + 降级策略三道防线。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA RAG 静默失败"
@@ -23,7 +23,7 @@ name_zh: "FTA: RAG 静默失败与检索质量退化"
 <!-- op-safety-banner v1 -->
 # FTA: RAG 静默失败与检索质量退化
 
-> 中文简称：FTA: RAG 静默失败与检索质量退化
+> 中文简称：FTA: RAG 静默失败与检索质量退化 ｜ English: FTA RAG Silent Failure and Retrieval Degradation
 
 > **一句话理解**: RAG 最危险的是「不报错但答错」——检索不到、检索到无关内容、上下文被污染都无异常码；靠质量监控 + 分块/嵌入版本管理 + 降级策略三道防线。
 
@@ -136,4 +136,4 @@ Step 3: 重建后跑黄金问题集回归：recall@k 不低于旧版基线
 - [[14_RAG系统/02_嵌入技术/README.md|嵌入技术]]
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_可观测性缺失.md|可观测性缺失 FTA]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

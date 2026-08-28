@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "speculative-decoding", "eagle", "draft-model"]
 summary: "> **一句话理解**: 投机解码不上速或报错时，按「draft 模型匹配性 → 采样兼容性 → 显存开销 → 加速比验证」四层排查，draft 与 target 的 vocab 一致性是首要检查点。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA Speculative Decoding Failure"
@@ -23,7 +23,7 @@ name_zh: "FTA: vLLM / SGLang Speculative Decoding 异常"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang Speculative Decoding 异常（无加速 / 报错）
 
-> 中文简称：FTA: vLLM / SGLang Speculative Decoding 异常
+> 中文简称：FTA: vLLM / SGLang Speculative Decoding 异常 ｜ English: FTA Speculative Decoding Failure
 
 > **一句话理解**: 投机解码不上速或报错时，按「draft 模型匹配性 → 采样兼容性 → 显存开销 → 加速比验证」四层排查，draft 与 target 的 vocab 一致性是首要检查点。
 
@@ -148,4 +148,4 @@ python -m sglang.launch_server \
 - [[10_部署推理/03_推理优化/12_Speculative_Decoding_高级_2026.md|投机解码]]
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_解码延迟高.md|解码延迟高 FTA]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

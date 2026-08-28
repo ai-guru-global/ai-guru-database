@@ -4,7 +4,7 @@ category: "07-model-training"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "distributed-training", "nccl", "ray", "interruption"]
 summary: "> **一句话理解**: 分布式任务中断时，先看日志定位「网络层 / 资源层 / 进程层」——NCCL 超时、节点掉线、OOM 被杀是三大高频根因，恢复的关键是断点续训与状态落盘。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA Distributed Training Interruption"
@@ -23,7 +23,7 @@ name_zh: "FTA: vLLM / SGLang 分布式训练 / 多机部署中断"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang 分布式训练 / 多机部署中断（Ray / NCCL）
 
-> 中文简称：FTA: vLLM / SGLang 分布式训练 / 多机部署中断
+> 中文简称：FTA: vLLM / SGLang 分布式训练 / 多机部署中断 ｜ English: FTA Distributed Training Interruption
 
 > **一句话理解**: 分布式任务中断时，先看日志定位「网络层 / 资源层 / 进程层」——NCCL 超时、节点掉线、OOM 被杀是三大高频根因，恢复的关键是断点续训与状态落盘。
 
@@ -147,4 +147,4 @@ docker run --gpus all --ipc=host -v ...   # /dev/shm 共享宿主机
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_TP_启动失败.md|TP 启动失败 FTA]]
 - [[07_模型训练/07_训练监控/03_模型_故障排查_指南.md|模型问题排查手册]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

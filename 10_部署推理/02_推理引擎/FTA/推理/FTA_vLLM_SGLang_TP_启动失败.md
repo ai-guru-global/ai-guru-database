@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "tensor-parallel", "nccl", "distributed", "multi-gpu"]
 summary: "> **一句话理解**: TP 多卡启动失败九成是 NCCL 通信问题——先查 GPU 互连（NVLink）与 NCCL 环境变量，再查 TP 规模与卡数匹配，最后查 Ray 集群状态。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA Tensor Parallel Failure"
@@ -23,7 +23,7 @@ name_zh: "FTA: vLLM / SGLang TP 多卡启动失败"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang Tensor Parallel 多卡启动失败（NCCL）
 
-> 中文简称：FTA: vLLM / SGLang TP 多卡启动失败
+> 中文简称：FTA: vLLM / SGLang TP 多卡启动失败 ｜ English: FTA Tensor Parallel Failure
 
 > **一句话理解**: TP 多卡启动失败九成是 NCCL 通信问题——先查 GPU 互连（NVLink）与 NCCL 环境变量，再查 TP 规模与卡数匹配，最后查 Ray 集群状态。
 
@@ -150,4 +150,4 @@ python -m sglang.launch_server \
 - [[10_部署推理/02_推理引擎/FTA/微调/FTA_vLLM_SGLang_分布式训练中断.md|分布式训练中断 FTA]]
 - [[07_模型训练/07_训练监控/03_模型_故障排查_指南.md|模型问题排查手册]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

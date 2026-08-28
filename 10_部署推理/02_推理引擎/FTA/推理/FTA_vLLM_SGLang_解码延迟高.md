@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "decode", "latency", "tpot", "speculative-decoding"]
 summary: "> **一句话理解**: 单请求出字慢（TPOT 高）时，decode 是显存带宽主导的串行阶段，先看带宽与批次竞争，再考虑投机解码与量化这类针对性加速。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA High Decode Latency"
@@ -23,7 +23,7 @@ name_zh: "FTA: vLLM / SGLang 单请求解码延迟高"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang 单请求解码延迟高（TPOT 异常）
 
-> 中文简称：FTA: vLLM / SGLang 单请求解码延迟高
+> 中文简称：FTA: vLLM / SGLang 单请求解码延迟高 ｜ English: FTA High Decode Latency
 
 > **一句话理解**: 单请求出字慢（TPOT 高）时，decode 是显存带宽主导的串行阶段，先看带宽与批次竞争，再考虑投机解码与量化这类针对性加速。
 
@@ -145,4 +145,4 @@ python -m sglang.launch_server \
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_Speculative_Decoding_异常.md|Speculative Decoding 异常 FTA]]
 - [[10_部署推理/03_推理优化/12_Speculative_Decoding_高级_2026.md|投机解码]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

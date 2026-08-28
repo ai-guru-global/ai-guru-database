@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "disk", "storage", "huggingface", "model-download", "inference"]
 summary: "> **一句话理解**: 模型加载报错先查文件完整性——分片没下全、sha256 没过、磁盘写满三类原因占九成；下载要带校验、落地要原子写入、磁盘要留余量。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA 磁盘空间不足"
@@ -23,7 +23,7 @@ name_zh: "FTA: 磁盘空间不足与模型文件下载不完整"
 <!-- op-safety-banner v1 -->
 # FTA: 磁盘空间不足与模型文件下载不完整
 
-> 中文简称：FTA: 磁盘空间不足与模型文件下载不完整
+> 中文简称：FTA: 磁盘空间不足与模型文件下载不完整 ｜ English: FTA Disk Full and Incomplete Model Download
 
 > **一句话理解**: 模型加载报错先查文件完整性——分片没下全、sha256 没过、磁盘写满三类原因占九成；下载要带校验、落地要原子写入、磁盘要留余量。
 
@@ -136,4 +136,4 @@ du -h -d 1 /models ~/.cache/huggingface 2>/dev/null | sort -h
 - [[13_运维/04_问题排查/04_diagnosis_k8s_storage_failure.md|K8s 存储故障诊断]]
 - [[10_部署推理/02_推理引擎/29_vLLM_深入分析.md|vLLM_Deep_Dive]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

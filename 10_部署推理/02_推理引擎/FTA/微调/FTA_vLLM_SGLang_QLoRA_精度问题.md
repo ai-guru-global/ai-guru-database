@@ -4,7 +4,7 @@ category: "07-model-training"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "qlora", "4bit", "nf4", "precision", "fine-tuning"]
 summary: "> **一句话理解**: QLoRA 精度翻车时，按「NF4 量化误差 → double quant 误差 → 计算精度 → 合并部署验证」四层排查，4-bit 产物上线前必须做精度对比验证。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA QLoRA Precision Issue"
@@ -23,7 +23,7 @@ name_zh: "FTA: vLLM / SGLang QLoRA 4-bit 精度问题"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang QLoRA 4-bit 精度问题（影响部署推理）
 
-> 中文简称：FTA: vLLM / SGLang QLoRA 4-bit 精度问题
+> 中文简称：FTA: vLLM / SGLang QLoRA 4-bit 精度问题 ｜ English: FTA QLoRA Precision Issue
 
 > **一句话理解**: QLoRA 精度翻车时，按「NF4 量化误差 → double quant 误差 → 计算精度 → 合并部署验证」四层排查，4-bit 产物上线前必须做精度对比验证。
 
@@ -143,4 +143,4 @@ python -m vllm.entrypoints.openai.api_server \
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_量化部署_精度下降.md|量化部署精度下降 FTA]]
 - [[05_大模型/06_微调技术/09_PEFT_2026.md|PEFT/LoRA 详解]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "vllm", "model-architecture", "tokenizer", "startup-failure"]
 summary: "> **一句话理解**: vLLM 启动报架构不支持或 tokenizer 错误时，按「引擎版本 → 模型 config → 权重完整性 → 远端代码信任」四步排查，多数是版本滞后与文件缺失。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA vLLM Startup Failure"
@@ -22,7 +22,7 @@ name_zh: "FTA: vLLM 启动失败（架构 / Tokenizer）"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM 启动失败（模型架构不支持 / Tokenizer 不匹配）
 
-> 中文简称：FTA: vLLM 启动失败（架构 / Tokenizer）
+> 中文简称：FTA: vLLM 启动失败（架构 / Tokenizer） ｜ English: FTA vLLM Startup Failure
 
 > **一句话理解**: vLLM 启动报架构不支持或 tokenizer 错误时，按「引擎版本 → 模型 config → 权重完整性 → 远端代码信任」四步排查，多数是版本滞后与文件缺失。
 
@@ -130,4 +130,4 @@ python -m vllm.entrypoints.openai.api_server \
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_TP_启动失败.md|TP 启动失败 FTA]]
 - [[07_模型训练/07_训练监控/03_模型_故障排查_指南.md|模型问题排查手册]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

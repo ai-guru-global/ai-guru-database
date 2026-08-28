@@ -4,7 +4,7 @@ category: "15-agent-production"
 tags: ["fta", "fault-tree-analysis", "agent", "tool-calling", "dead-loop", "context-overflow", "cost-snowball"]
 summary: "> **一句话理解**: Agent 故障三大类——工具调用失败、循环卡死、上下文溢出，共同点是缺护栏：轮次上限、超时重试、上下文压缩、成本阈值缺一不可。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA Agent 工具调用失败"
@@ -23,7 +23,7 @@ name_zh: "FTA: Agent 应用故障（工具调用失败 / 死循环 / 上下文�
 <!-- op-safety-banner v1 -->
 # FTA: Agent 应用故障（工具调用失败 / 死循环 / 上下文溢出）
 
-> 中文简称：FTA: Agent 应用故障（工具调用失败 / 死循环 / 上下文溢出）
+> 中文简称：FTA: Agent 应用故障（工具调用失败 / 死循环 / 上下文溢出） ｜ English: FTA Agent Tool Failure and Infinite Loop
 
 > **一句话理解**: Agent 故障三大类——工具调用失败、循环卡死、上下文溢出，共同点是缺护栏：轮次上限、超时重试、上下文压缩、成本阈值缺一不可。
 
@@ -138,4 +138,4 @@ if iteration > MAX_ITERATIONS or progress < min_progress_delta:
 - [[15_智能体/07_Agent评估/08_Agent_红队测试_2026.md|Agent 红队测试 2026]]
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_排队超时.md|排队超时 FTA]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

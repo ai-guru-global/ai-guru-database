@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "inference", "oom", "gpu-memory"]
 summary: "> **一句话理解**: 推理服务抛出 CUDA out of memory 时，按「模型权重 → KV Cache → 激活值」三组件逐一排查显存去向，再通过量化、限长、调并发预算对症解决。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA vLLM Inference OOM"
@@ -23,7 +23,7 @@ name_zh: "FTA: vLLM / SGLang 推理 OOM"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang 推理 OOM（显存不足）
 
-> 中文简称：FTA: vLLM / SGLang 推理 OOM
+> 中文简称：FTA: vLLM / SGLang 推理 OOM ｜ English: FTA vLLM / SGLang Inference OOM
 
 > **一句话理解**: 推理服务抛出 CUDA out of memory 时，按「模型权重 → KV Cache → 激活值」三组件逐一排查显存去向，再通过量化、限长、调并发预算对症解决。
 
@@ -149,4 +149,4 @@ python -m sglang.launch_server \
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_KV_Cache_溢出.md|KV Cache 溢出 FTA]]
 - [[07_模型训练/07_训练监控/03_模型_故障排查_指南.md|模型问题排查手册]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

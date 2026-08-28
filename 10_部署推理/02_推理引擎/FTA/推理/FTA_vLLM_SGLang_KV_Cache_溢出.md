@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "kv-cache", "long-context", "oom"]
 summary: "> **一句话理解**: 长上下文请求把 KV Cache 缓存池撑爆导致 OOM 时，按「长度预算 → 缓存精度 → 前缀复用」三层依次收紧，把缓存池压回安全水位。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA KV Cache Overflow"
@@ -23,7 +23,7 @@ name_zh: "FTA: vLLM / SGLang KV Cache 显存溢出"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang KV Cache 显存溢出（长上下文 OOM）
 
-> 中文简称：FTA: vLLM / SGLang KV Cache 显存溢出
+> 中文简称：FTA: vLLM / SGLang KV Cache 显存溢出 ｜ English: FTA KV Cache Overflow
 
 > **一句话理解**: 长上下文请求把 KV Cache 缓存池撑爆导致 OOM 时，按「长度预算 → 缓存精度 → 前缀复用」三层依次收紧，把缓存池压回安全水位。
 
@@ -143,4 +143,4 @@ python -m sglang.launch_server \
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_推理_OOM.md|推理 OOM FTA]]
 - [[07_模型训练/07_训练监控/03_模型_故障排查_指南.md|模型问题排查手册]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

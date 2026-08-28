@@ -4,7 +4,7 @@ category: "07-model-training"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "lora", "merge", "fine-tuning", "peft"]
 summary: "> **一句话理解**: LoRA 合并翻车时，base 模型版本不一致是第一嫌疑，其次是合并流程与精度验证缺失——合并后必须与合并前跑同一基准对比。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA LoRA Merge Failure"
@@ -23,7 +23,7 @@ name_zh: "FTA: vLLM / SGLang LoRA 合并失败"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang LoRA 合并失败 / 合并后效果变差
 
-> 中文简称：FTA: vLLM / SGLang LoRA 合并失败
+> 中文简称：FTA: vLLM / SGLang LoRA 合并失败 ｜ English: FTA LoRA Merge Failure
 
 > **一句话理解**: LoRA 合并翻车时，base 模型版本不一致是第一嫌疑，其次是合并流程与精度验证缺失——合并后必须与合并前跑同一基准对比。
 
@@ -149,4 +149,4 @@ curl http://localhost:8000/v1/chat/completions \
 - [[10_部署推理/02_推理引擎/FTA/微调/FTA_vLLM_SGLang_LoRA_Adapter_部署失败.md|LoRA Adapter 部署失败 FTA]]
 - [[05_大模型/06_微调技术/09_PEFT_2026.md|PEFT/LoRA 详解]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

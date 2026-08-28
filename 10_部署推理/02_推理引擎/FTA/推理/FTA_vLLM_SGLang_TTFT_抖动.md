@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "ttft", "latency", "chunked-prefill"]
 summary: "> **一句话理解**: 首 token 时间忽高忽低时，核心矛盾是长 prefill 与 decode 抢资源，chunked prefill 与调度策略是把抖动压平的两种主要手段。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA TTFT Jitter"
@@ -22,7 +22,7 @@ name_zh: "FTA: vLLM / SGLang TTFT 高且抖动"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang TTFT 高且抖动（长 prompt 阻塞）
 
-> 中文简称：FTA: vLLM / SGLang TTFT 高且抖动
+> 中文简称：FTA: vLLM / SGLang TTFT 高且抖动 ｜ English: FTA TTFT Jitter
 
 > **一句话理解**: 首 token 时间忽高忽低时，核心矛盾是长 prefill 与 decode 抢资源，chunked prefill 与调度策略是把抖动压平的两种主要手段。
 
@@ -139,4 +139,4 @@ python -m sglang.launch_server \
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_吞吐量异常.md|吞吐量异常 FTA]]
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_Prefix_Caching_失效.md|Prefix Caching 失效 FTA]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "quantization", "awq", "gptq", "fp8", "precision"]
 summary: "> **一句话理解**: 量化模型部署翻车时，先区分「加载报错」与「精度退化」两类故障——前者查参数匹配与硬件支持，后者用 Perplexity 与逐层误差定位敏感层。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA Quantization Failure"
@@ -23,7 +23,7 @@ name_zh: "FTA: vLLM / SGLang 量化模型部署报错 / 精度下降"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang 量化模型部署报错 / 精度下降
 
-> 中文简称：FTA: vLLM / SGLang 量化模型部署报错 / 精度下降
+> 中文简称：FTA: vLLM / SGLang 量化模型部署报错 / 精度下降 ｜ English: FTA Quantization Failure
 
 > **一句话理解**: 量化模型部署翻车时，先区分「加载报错」与「精度退化」两类故障——前者查参数匹配与硬件支持，后者用 Perplexity 与逐层误差定位敏感层。
 
@@ -148,4 +148,4 @@ python -m sglang.launch_server \
 - [[10_部署推理/04_模型量化/04_量化_技术_2026.md|量化技术 2026]]
 - [[07_模型训练/07_训练监控/03_模型_故障排查_指南.md|模型问题排查手册]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

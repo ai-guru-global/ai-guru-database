@@ -4,7 +4,7 @@ category: "08-model-evaluation"
 tags: ["fta", "fault-tree-analysis", "evaluation", "benchmark", "data-pollution", "interruption", "eval-harness"]
 summary: "> **一句话理解**: 基准分不可信的三大来源——任务中断（OOM/超时）、生成截断、测试集泄漏；评估前固定环境与参数、评估中监控失败样本、评估后查污染。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA 评估任务中断"
@@ -23,7 +23,7 @@ name_zh: "FTA: 评估任务中断与基准结果失真"
 <!-- op-safety-banner v1 -->
 # FTA: 评估任务中断与基准结果失真
 
-> 中文简称：FTA: 评估任务中断与基准结果失真
+> 中文简称：FTA: 评估任务中断与基准结果失真 ｜ English: FTA Evaluation Interruption and Benchmark Distortion
 
 > **一句话理解**: 基准分不可信的三大来源——任务中断（OOM/超时）、生成截断、测试集泄漏；评估前固定环境与参数、评估中监控失败样本、评估后查污染。
 
@@ -133,4 +133,4 @@ Step 4: 复跑验证：失败率 = 0 后再采信分数
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_推理_OOM.md|推理 OOM FTA]]
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_可观测性缺失.md|可观测性缺失 FTA]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

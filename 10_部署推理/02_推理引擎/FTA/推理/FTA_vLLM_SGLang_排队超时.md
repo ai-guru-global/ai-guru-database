@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "inference", "rate-limit", "queue", "timeout", "concurrency"]
 summary: "> **一句话理解**: 请求排队超时通常是并发预算与流量不匹配——先看 running/queued 指标区分「队列满」还是「处理慢」，再对症调并发预算或扩容。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA vLLM 排队超时"
@@ -23,7 +23,7 @@ name_zh: "FTA: vLLM / SGLang 并发限流与排队超时"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang 并发限流与排队超时
 
-> 中文简称：FTA: vLLM / SGLang 并发限流与排队超时
+> 中文简称：FTA: vLLM / SGLang 并发限流与排队超时 ｜ English: FTA Queueing Timeout and Request Backlog
 
 > **一句话理解**: 请求排队超时通常是并发预算与流量不匹配——先看 running/queued 指标区分「队列满」还是「处理慢」，再对症调并发预算或扩容。
 
@@ -141,4 +141,4 @@ python -m sglang.launch_server \
 - [[11_模型运维/09_成本管理/03_LLM_成本_延迟_SLO.md|LLM 成本与延迟 SLO]]
 - [[12_架构基建/11_AI网关/README.md|AI 网关]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

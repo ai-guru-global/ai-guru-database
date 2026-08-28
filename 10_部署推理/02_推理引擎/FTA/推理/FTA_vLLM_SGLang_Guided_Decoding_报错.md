@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["fta", "fault-tree-analysis", "vllm", "sglang", "guided-decoding", "structured-output", "json-schema", "xgrammar"]
 summary: "> **一句话理解**: 结构化输出失败时，按「schema 合法性 → 约束后端兼容性 → 采样参数冲突 → 输出截断」四层排查，大部分问题出在 schema 定义与引擎版本不匹配。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA Guided Decoding Error"
@@ -23,7 +23,7 @@ name_zh: "FTA: vLLM / SGLang Guided Decoding 报错"
 <!-- op-safety-banner v1 -->
 # FTA: vLLM / SGLang Guided Decoding / 结构化输出报错
 
-> 中文简称：FTA: vLLM / SGLang Guided Decoding 报错
+> 中文简称：FTA: vLLM / SGLang Guided Decoding 报错 ｜ English: FTA Guided Decoding Error
 
 > **一句话理解**: 结构化输出失败时，按「schema 合法性 → 约束后端兼容性 → 采样参数冲突 → 输出截断」四层排查，大部分问题出在 schema 定义与引擎版本不匹配。
 
@@ -165,4 +165,4 @@ response = client.chat.completions.create(
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_解码延迟高.md|解码延迟高 FTA]]
 - [[07_模型训练/07_训练监控/03_模型_故障排查_指南.md|模型问题排查手册]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

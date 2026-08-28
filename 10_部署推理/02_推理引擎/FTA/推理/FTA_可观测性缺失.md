@@ -4,7 +4,7 @@ category: "11-model-operations"
 tags: ["fta", "fault-tree-analysis", "observability", "metrics", "logging", "tracing", "alerting", "operations"]
 summary: "> **一句话理解**: 故障发生时「没日志、没指标、没 Trace、没告警」本身就是故障——可观测性缺失会让一切排障变成黑盒猜测，按「采集→存储→关联→告警」四层补齐。"
 created: "2026-08-13"
-updated: "2026-08-13"
+updated: "2026-08-28"
 tier: supporting
 aliases:
   - "FTA 可观测性缺失"
@@ -23,7 +23,7 @@ name_zh: "FTA: 可观测性缺失（日志与指标不完整）"
 <!-- op-safety-banner v1 -->
 # FTA: 可观测性缺失（日志与指标不完整）
 
-> 中文简称：FTA: 可观测性缺失（日志与指标不完整）
+> 中文简称：FTA: 可观测性缺失（日志与指标不完整） ｜ English: FTA Observability Gap
 
 > **一句话理解**: 故障发生时「没日志、没指标、没 Trace、没告警」本身就是故障——可观测性缺失会让一切排障变成黑盒猜测，按「采集→存储→关联→告警」四层补齐。
 
@@ -145,4 +145,4 @@ scrape_configs:
 - [[10_部署推理/02_推理引擎/29_vLLM_深入分析.md|vLLM_Deep_Dive]]
 - [[10_部署推理/02_推理引擎/FTA/推理/FTA_vLLM_SGLang_排队超时.md|排队超时 FTA]]
 
-*Last updated: 2026-08-13*
+*Last updated: 2026-08-28*

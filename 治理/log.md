@@ -108,6 +108,15 @@ _本文件作为 wiki 维护操作时间线 baseline，后续每次 `/wiki-lint`
 - [2026-06-25T15:59:34] CAPTURE type=concept page="概念/activation-value.md" title="激活值 (Activation Value)"
 - [2026-06-25T15:59:34] CAPTURE type=concept page="概念/gradient-descent.md" title="梯度下降 (Gradient Descent)"
 
+---
+
+## 2026-09-04 — 项目整体评估报告沉淀
+
+- 新增 [[治理/_meta/_evaluation-2026-09-04|项目整体评估 2026-09-04]]：综合评分 4/5（骨架 90 分 / 执行 70 分）。
+- 实测读数（eval_scan 口径）：2,821 文件 / 90 万行 / 32.7 MB / 24,622 wikilinks；真断链 2,944 次 / 879 唯一目标（对 07-27 严口径基线 679 次 / 446 目标显著回归）；孤立 204。
+- 关键判定：P0-5 / P2-6 巡检工具 CI 化未落地是回归根因；多工具度量口径分裂导致 [[治理/ROADMAP|路线图]] OKR 数字失真。
+- 行动项：断链批修（smart_fix_links / batch_fix_links）→ CI 门禁落地 → 统一度量口径 → 仓库瘦身（.git 1.1 GB）→ 重写 [[治理/KNOWN_ISSUES|已知问题]]，详见评估报告 §七。
+
 ## 关联
 
 项目日志记录治理与内容演进，关联文档提供流程依据与规划上下文。

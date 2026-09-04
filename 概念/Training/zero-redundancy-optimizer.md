@@ -20,7 +20,7 @@ base_confidence: 0.90
 lifecycle: reviewed
 tier: core
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-09-03
 aliases:
   - "ZeRO"
   - "Zero Redundancy Optimizer"
@@ -76,6 +76,161 @@ name_zh: "ZeRO 零冗余优化器"
 
 ---
 
+## 5. 三阶段显存对比（70B 模型 × 8 卡实例）
+
+| 阶段 | 切分内容 | 70B 模型显存/卡（8 卡） | 通信开销 |
+|------|----------|--------------------------|----------|
+| **DDP（无分片）** | 无 | 840GB | 1× |
+| **ZeRO-1** | Optimizer States | 280GB | 1.0× |
+| **ZeRO-2** | + Gradients | 210GB | 1.0× |
+| **ZeRO-3** | + Parameters | 105GB | 1.5× |
+| **ZeRO-3 + Offload** | + CPU Offload | 35GB | 2× |
+
+---
+
+## 6. FSDP 实战（PyTorch 原生）
+
+```python
+from torch.distributed.fsdp import FullyShardedDataParallel as FSDP
+from torch.distributed.fsdp import MixedPrecision, BackwardPrefetch
+
+model = FSDP(
+    model,
+    mixed_precision=MixedPrecision(
+        param_dtype=torch.bfloat16,
+        reduce_dtype=torch.float32,
+        buffer_dtype=torch.bfloat16,
+    ),
+    backward_prefetch=BackwardPrefetch.BACKWARD_PRE,
+    device_id=torch.cuda.current_device(),
+)
+```
+
+Transformer 逐层包装（以 Llama 为例）：
+
+```python
+from torch.distributed.fsdp.wrap import transformer_auto_wrap_policy
+from transformers.models.llama.modeling_llama import LlamaDecoderLayer
+
+policy = transformer_auto_wrap_policy(
+    transformer_layer_cls={LlamaDecoderLayer},
+)
+
+model = FSDP(
+    model,
+    auto_wrap_policy=policy,
+    mixed_precision=MixedPrecision(param_dtype=torch.bfloat16, ...),
+)
+```
+
+启动（FSDP 在 torch 2.0+ 内置）：
+
+```bash
+torchrun --nproc_per_node=8 train.py
+```
+
+---
+
+## 7. DeepSpeed ZeRO 实战
+
+ZeRO-3 + CPU Offload 的 `ds_config.json` 关键配置：
+
+```json
+{
+  "train_micro_batch_size_per_gpu": 2,
+  "gradient_accumulation_steps": 8,
+  "gradient_clipping": 1.0,
+  "bf16": {
+    "enabled": true
+  },
+  "zero_optimization": {
+    "stage": 3,
+    "offload_optimizer": {
+      "device": "cpu",
+      "pin_memory": true
+    },
+    "offload_param": {
+      "device": "cpu",
+      "pin_memory": true
+    },
+    "overlap_comm": true,
+    "contiguous_gradients": true,
+    "reduce_bucket_size": "auto",
+    "stage3_prefetch_bucket_size": "auto",
+    "stage3_gather_16bit_weights_on_model_save": true
+  }
+}
+```
+
+启动：
+
+```bash
+deepspeed --num_gpus=8 train.py --deepspeed ds_config.json
+```
+
+关键优势：CPU/NVMe Offload 扩展性最强；`overlap_comm` 自动做通信计算重叠；config 一行切换 ZeRO 阶段。
+
+---
+
+## 8. 3D 并行（TP + PP + DP/ZeRO）
+
+主流方案：DeepSpeed + Megatron（DeepSpeed 3D Parallel，工业标准）、FSDP + TP（PyTorch 原生）、Megatron-LM（NVIDIA 3D 并行）。
+
+配置示例（8 节点 64 卡）：
+
+```
+- TP（张量并行） = 8（单节点内）
+- PP（流水线并行） = 4（跨节点）
+- DP/ZeRO = 2
+- 总 GPU = 8 × 4 × 2 = 64
+```
+
+典型应用：Llama 3 405B（16K H100，3D 并行）、DeepSeek V3（ZeRO + EP + 256 卡）、Qwen 3（FSDP + TP）。
+
+---
+
+## 9. 生产最佳实践
+
+1. **首选 FSDP（原生）**：PyTorch 2.0+ 内置，与 torchrun 完美集成。
+2. **< 30B 模型用 ZeRO-2 / FSDP FULL_SHARD**：开 ZeRO-3 通信开销大。
+3. **30B+ 模型用 ZeRO-3 / FSDP FULL_SHARD**：显存必须切。
+4. **> 100B 用 ZeRO-3 + CPU Offload**：70B 可在 8 卡 A100 训练。
+5. **BF16 + FSDP**：用 BF16 替代 FP16，数值稳定。
+6. **激活重计算必开**：节省 30-50% 显存。
+7. **通信优化**：NCCL P2P + Ring AllReduce，跨节点用 RDMA。
+8. **Checkpoint 频繁保存**：ZeRO-3 保存需 gather，慢但可靠。
+9. **Mixed Precision**：Param BF16 + Reduce FP32，稳定且快。
+10. **3D 并行复杂度高**：简单场景 2D（ZeRO + TP）。
+11. **Offload CPU 用高速内存**：NVMe 慢，慎用。
+12. **监控通信/计算比**：> 30% 通信考虑调小 ZeRO 阶段。
+
+---
+
+## 10. 2026 生态速览
+
+| 维度 | 2026 状态 |
+|------|-----------|
+| **DeepSpeed** | v0.17，ZeRO-Infinity 卸载到 NVMe |
+| **FSDP** | PyTorch 2.5+，FULL_SHARD 默认 |
+| **Megatron-LM** | v0.12，3D 并行成熟 |
+| **3D 并行** | 主流，DeepSpeed + Megatron |
+| **FP8 训练** | NVIDIA Hopper 原生，Transformer Engine |
+| **MoE 并行** | EP（专家并行）成熟，DeepSpeed + Megatron |
+| **Ring Attention** | 长序列分片，12M context |
+| **企业应用** | 70B+ 模型训练标配 |
+| **主要竞品** | DeepSpeed / FSDP / Megatron / ColossalAI / Mesh-TensorFlow |
+
+---
+
+## 11. 官方资源
+
+- DeepSpeed：[deepspeed.ai](https://www.deepspeed.ai/) ｜ [GitHub](https://github.com/microsoft/DeepSpeed) ｜ [ZeRO 论文](https://arxiv.org/abs/1910.02054) ｜ [ZeRO-Infinity](https://arxiv.org/abs/2104.07857)
+- FSDP：[PyTorch 文档](https://pytorch.org/docs/stable/fsdp.html) ｜ [FSDP 论文](https://arxiv.org/abs/2304.11277)
+- Megatron：[Megatron-LM](https://github.com/NVIDIA/Megatron-LM) ｜ [论文](https://arxiv.org/abs/1909.08053) ｜ [Megatron-DeepSpeed](https://github.com/microsoft/Megatron-DeepSpeed)
+- 其他：[ColossalAI](https://github.com/hpcaitech/ColossalAI) ｜ [Mesh-TensorFlow](https://github.com/tensorflow/mesh) ｜ [Ring Attention](https://github.com/lhao499/llm_large_context)
+
+---
+
 ## Related
 
 - [[概念/Training/deepspeed]] — DeepSpeed（ZeRO 宿主框架）
@@ -119,16 +274,25 @@ name_zh: "ZeRO 零冗余优化器"
 
 ## 核心术语速查
 
-| 术语 | 含义 | 关联概念 |
-|------|------|----------|
-| Loss Function | 衡量预测与真实值差距 | 交叉熵/MSE/对比损失 |
-| Gradient Descent | 沿负梯度方向更新参数 | SGD/Adam/学习率 |
-| Overfitting | 模型在训练集过好但泛化差 | 正则化/Dropout/早停 |
-| Batch Size | 每次更新的样本数 | 收敛速度/显存/噪声 |
-| Epoch | 完整遍历训练集一次 | 训练轮次/早停 |
-| Fine-tuning | 在预训练模型上继续训练 | 迁移学习/LoRA/全量 |
-| Inference | 模型前向传播产生输出 | 延迟/吞吐/量化 |
-| Token | 文本处理的最小单元 | BPE/SentencePiece |
+| 中文 | 英文 | 说明 |
+|------|------|------|
+| 零冗余优化器 | Zero Redundancy Optimizer（ZeRO） | DeepSpeed 优化器分片 |
+| 全分片数据并行 | Fully Sharded Data Parallel（FSDP） | PyTorch 原生 |
+| 优化器分片 | Optimizer Sharding | ZeRO-1 |
+| 梯度分片 | Gradient Sharding | ZeRO-2 |
+| 参数分片 | Parameter Sharding | ZeRO-3 |
+| 数据并行 | Data Parallel（DP） | 每卡全模型 |
+| 模型并行 | Model Parallel（MP） | 模型切分到卡 |
+| 张量并行 | Tensor Parallel（TP） | 单层内切分 |
+| 流水线并行 | Pipeline Parallel（PP） | 层间切分 |
+| 专家并行 | Expert Parallel（EP） | MoE 专家分片 |
+| 序列并行 | Sequence Parallel（SP） | 长序列切分 |
+| 优化器状态 | Optimizer States | Adam 的 m/v |
+| 激活重计算 | Activation Recomputation | 节省显存 |
+| 混合精度 | Mixed Precision | FP16/BF16/FP8 |
+| Offload | Offload | CPU / NVMe 卸载 |
+| 3D 并行 | 3D Parallelism | TP + PP + DP |
+| 通信开销 | Communication Overhead | 切分后增加 |
 
 ## 推荐资源
 

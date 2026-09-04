@@ -32,7 +32,7 @@ summary: "Voice Agent 是 2024-2026 爆发的"语音 LLM"赛道——OpenAI Real
 lifecycle: reviewed
 tier: core
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-09-03
 sources: []
 name_zh: "Voice Agent / 语音 Agent"
 ---
@@ -152,8 +152,10 @@ pip install pipecat-ai[daily,openai,silero]
 ### 4.2 简单 Voice Bot
 
 ```python
+from pipecat.frames.frames import TextFrame
 from pipecat.pipeline.pipeline import Pipeline
 from pipecat.pipeline.task import PipelineTask
+from pipecat.processors.aggregators.openai_llm_context import OpenAILLMContext
 from pipecat.services.openai_realtime_beta import OpenAIRealtimeBetaLLMService
 from pipecat.transports.services.daily import DailyTransport
 from pipecat.audio.vad.silero import SileroVADAnalyzer
@@ -172,13 +174,23 @@ async def main():
         model="gpt-4o-realtime-preview-2024-12-17",
     )
     
+    context = OpenAILLMContext(
+        messages=[
+            {"role": "system", "content": "你是 helpful voice agent,回答简短"}
+        ]
+    )
+    context_aggregator = llm.create_context_aggregator(context)
+    
     pipeline = Pipeline([
         transport.input(),
+        context_aggregator.user(),
         llm,
         transport.output(),
+        context_aggregator.assistant(),
     ])
     
     task = PipelineTask(pipeline)
+    await task.queue_frame(TextFrame("你好,我是 voice agent"))
     await runner.run(task)
 
 if __name__ == "__main__":

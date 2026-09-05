@@ -61,6 +61,7 @@ __pycache__
 .qoder/
 .qwen/
 .mimocode/
+.mimosa/
 
 # 备份文件
 *.bak

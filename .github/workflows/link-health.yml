@@ -1,0 +1,20 @@
+name: Link Health Gate
+
+# P2-6：wikilink 断链门禁 —— 断链数相对 治理/_meta/link-health-baseline.json 只许下降、不许上升
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  link-health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: wikilink 断链门禁
+        run: python3 工具/link_gate.py

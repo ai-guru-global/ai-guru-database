@@ -17,4 +17,14 @@ if [ -n "$dupes" ]; then
   exit 1
 fi
 
+# wikilink 断链门禁（P2-6）：暂存区含 .md 时才执行，断链多于基线即阻断
+if git diff --cached --name-only | grep -q '\.md$'; then
+  if ! python3 工具/link_gate.py; then
+    echo "" >&2
+    echo "链接健康门禁未通过，提交已阻止。" >&2
+    echo "请修复上述新增断链；确需绕过用 git commit --no-verify（不建议）。" >&2
+    exit 1
+  fi
+fi
+
 exit 0

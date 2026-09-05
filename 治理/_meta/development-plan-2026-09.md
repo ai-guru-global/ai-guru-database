@@ -91,7 +91,7 @@ name_zh: "AI Guru 知识库发展建议与三阶段计划"
 | # | 方向 | 要点 | 价值 |
 |---|------|------|------|
 | 3.1 | 前端成为唯一交付面 | merge 即自动发布 Pages；`release/package/` 改为 CI 构建产物不再入库；大文件走 LFS | `.git` 从 1.1 GB 降回百 MB 级，发布零手工 |
-| 3.2 | **AI Guru 助手（已提前至 Q4 启动 MVP）** | 用本库 1,928 万字纯净中文语料 + `.code-up/knowledge-cards` 结构化数据做带引用溯源的 RAG 问答。MVP 范围：向量检索 + 引用溯源 + 门禁数据作质检层，目标两周出 demo | 门面产品 + 14_RAG系统方法论自证 + 求职作品集硬通货 |
+| 3.2 | **AI Guru 助手（已提前至 Q4 启动 MVP）** | 用本库 1,928 万字纯净中文语料 + `.code-up/knowledge-cards` 结构化数据做带引用溯源的 RAG 问答。**MVP 已落地（2026-09-05）**：[[assistant/README|AI Guru 助手]]——纯标准库 TF-IDF 检索（6.5 万块 / 12.5 万词项 / 17 MB 索引）+ 引用溯源 + 门禁数据质量加权，LLM 生成可插拔（OpenAI 兼容接口）。Q4 演进：Embedding 混合检索 → HTTP 服务化 → 评测集 | 门面产品 + 14_RAG系统方法论自证 + 求职作品集硬通货 |
 | 3.3 | 概念图谱可视化 | 702 概念页 + 2.5 万 wikilink 的 force-graph 交互图进前端 | 成本低、展示效果强 |
 | 3.4 | 贡献者入口自动化 | 从门禁数据自动生成 good-first-issue（缺失页清单天然就是任务列表） | 缓解 bus factor = 1 |
 

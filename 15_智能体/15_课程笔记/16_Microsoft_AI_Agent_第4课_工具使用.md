@@ -173,7 +173,7 @@ agent = project_client.agents.create_agent(
 
 ## 关联阅读
 
-- [[15_智能体/05_Agent技能/Tool_Calling_Best_Practices]] — 工具调用最佳实践
+- [[15_智能体/05_Agent技能/14_工具调用_最佳实践]] — 工具调用最佳实践
 - [[15_智能体/05_Agent技能/README]] — Agent 技能总览
 - [[15_智能体/14_GenAI课程/03_GenAI_L11_Integrating_with_Function_Calling]] — 函数调用与外部应用集成
 - [[15_智能体/15_课程笔记/Microsoft_AI_Agents_L02_Frameworks]] — MAF 与 Azure AI Agent Service 框架

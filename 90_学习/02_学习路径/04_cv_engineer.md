@@ -59,7 +59,7 @@ name_zh: "CV 工程师学习路径"
 | 多模态视觉 | CLIP, LLaVA, GPT-4V | [[概念/Vision/multimodal-vision]] |
 | 生成模型 | Diffusion, GAN | [[概念/Vision/generative-vision-models]] |
 | 视频理解 | 视频分类、动作识别 | [[概念/Vision/video-generation]] |
-| 3D视觉 | 点云、NeRF、3D重建 | [[3D_Vision]] |
+| 3D视觉 | 点云、NeRF、3D重建 | [[概念/Vision/3d-vision]] |
 
 ### 阶段四：生产部署（2-3个月）
 

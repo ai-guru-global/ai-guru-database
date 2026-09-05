@@ -297,5 +297,5 @@ DeepSeek 对行业的影响:
 - [[05_大模型/08_推理模型/INDEX]] — DeepSeek-R1 技术分析
 - [[05_大模型/12_LLM产品/02_claude_概览]] — Claude 概览
 - [[05_大模型/12_LLM产品/01_chatgpt_概览]] — ChatGPT 概览
-- [[05_大模型/04_LLM架构/MoE_Case_Studies_DeepSeek_Mixtral]] — MoE 架构案例
+- [[05_大模型/04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral]] — MoE 架构案例
 - [[05_大模型/14_中国LLM生态/04_Chinese_LLM_对比_矩阵]] — 中文 LLM 对比

@@ -1065,8 +1065,8 @@ kubectl rollout undo deployment/cloud-ops-agent --to-revision=3
 
 ## Related
 
-- [[_projects/Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: ai-agents, automation, cloud-ops, devops, sre)
-- [[_projects/Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[11_模型运维/14_云运维Agent/02_云Ops_简明指南]] — 云产品运维 Agent 速成指南 (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[11_模型运维/14_云运维Agent/01_云_产品_Ops_2026]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: ai-agents, automation, cloud-ops, devops, sre)
 - [[_projects/Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: ai-agents, automation, cloud-ops, devops, sre)
 - [[_projects/Cloud_Ops_Agent/docs/corpus/index]] — 云产品运维 Agent 语料工程指南 (Corpus Engineering) (共享: ai-agents, automation, cloud-ops, devops, sre)
 - [[_projects/Cloud_Ops_Agent/docs/templates/04_dev_template.md|dev_template]]

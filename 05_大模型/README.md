@@ -173,7 +173,7 @@ flowchart LR
 - [[05_大模型/09_多模态模型/05_Modality_Fusion_Mechanisms|Modality Fusion Mechanisms: Deep Dive]]
 - [[05_大模型/09_多模态模型/Video_Understanding_Architectures|Video Understanding Architectures]]
 - [[05_大模型/04_LLM架构/13_MoE_Routing_and_负载均衡|MoE Routing and Load Balancing]]
-- [[05_大模型/04_LLM架构/MoE_Case_Studies_DeepSeek_Mixtral|MoE Case Studies: DeepSeek and Mixtral]]
+- [[05_大模型/04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral|MoE Case Studies: DeepSeek and Mixtral]]
 - [[05_大模型/04_LLM架构/16_Transformer_替代架构|Transformer Alternatives: RWKV, RetNet, Mamba, and Beyond]]
 - [[05_大模型/08_推理模型/04_o1_Class_推理模型|o1-Class Reasoning Models]]
 - [[05_大模型/08_推理模型/INDEX|DeepSeek R1 Technical Analysis]]

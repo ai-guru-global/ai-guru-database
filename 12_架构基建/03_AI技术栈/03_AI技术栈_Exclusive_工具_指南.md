@@ -110,8 +110,8 @@ AI Stack 平台层
 
 ## Related
 
-- [[12_架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
-- [[12_架构基建/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]
+- [[12_架构基建/03_AI技术栈/09_AI技术栈_生产_工具链|AI Stack 生产工具链总览]]
+- [[12_架构基建/03_AI技术栈/01_AI技术栈_容器_Runtime_指南|AI Stack 容器与运行时指南]]
 - [[12_架构基建/03_AI技术栈/06_AI技术栈_K8s_Operations_指南|AI Stack K8s 编排指南]]
 - [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析|阿里云 AI Stack 软硬一体推理平台]]
 

@@ -128,7 +128,7 @@ name_zh: "AI 基础入门内容缺口分析报告"
 ## Related
 
 - [[01_数学基础/08_Python工具包/06_Python_for_AI_基础]] — Python 语法基础
-- [[01_数学基础/Python_Data_Science_Toolkit]] — 数据科学工具链
+- [[01_数学基础/08_Python工具包/05_Python_数据_Science_工具kit]] — 数据科学工具链
 - [[02_机器学习/02_监督学习/04_Your_First_ML_模型]] — 第一个 ML 模型
 - [[90_学习/02_学习路径/01_absolute_beginner]] — 零基础通识路径
-- [[00_入门/AI_Learning_Resources]] — AI 学习资源与方法论
+- [[00_入门/03_学习路径/02_AI学习资源]] — AI 学习资源与方法论

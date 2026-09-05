@@ -82,7 +82,7 @@ AI 不认识"字"，它只认识 **Token**。Token 由 **分词器（Tokenizer�
 
 ## 3. Transformer 的注意力机制：探照灯
 
-> 本节是直觉版。技术深度见 [[概念/LLM/transformer-architecture]]、[[Transformer_Deep_Dive]]。
+> 本节是直觉版。技术深度见 [[概念/LLM/transformer-architecture]]、[[05_大模型/03_Transformer架构/04_Transformer_架构详解]]。
 
 ### 3.1 要解决的核心问题：一词多义
 
@@ -254,7 +254,7 @@ Transformer 一次性并行处理全部词，本身没有"顺序"概念，所以
 ## 相关页面
 
 - 基础全景：[[概念/General/ai-fundamentals]]
-- 03_深度学习/Transformer：[[04_计算机视觉/01_CV基础/03_cv_deep_learning]]、[[概念/LLM/transformer-architecture]]、[[Transformer_Deep_Dive]]
+- 03_深度学习/Transformer：[[04_计算机视觉/01_CV基础/03_cv_deep_learning]]、[[概念/LLM/transformer-architecture]]、[[05_大模型/03_Transformer架构/04_Transformer_架构详解]]
 - 系统进阶：[[05_大模型/01_LLM基础/05_LLM_基础]]、[[07_模型训练/01_训练基础/03_LLM_训练_深入分析]]、[[10_部署推理/03_推理优化/02_LLM推理_深入分析]]、[[05_大模型/04_LLM架构/04_LLM_架构_Evolution]]
 - 提示与上下文：[[概念/LLM/context-engineering]]、[[概念/LLM/structured-output]]
 - 生态：[[05_大模型/14_中国LLM生态/README|中国大模型生态]]、[[05_大模型/13_全球LLM生态/README|国际大模型生态]]、[[概念/LLM/long-context-models]]

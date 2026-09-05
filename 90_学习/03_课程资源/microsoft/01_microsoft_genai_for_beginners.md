@@ -66,13 +66,13 @@ name_zh: "Microsoft Generative AI For Beginners：21"
 | 00 | 课程设置 | [[01_数学基础/08_Python工具包/01_AI_开发_Environment_配置]] | [[01_数学基础/08_Python工具包/03_GenAI_L00_课程_配置]] |
 | 01 | 生成式 AI 与大型语言模型简介 | [[00_入门/01_基础入门/02_AI基础]]、[[05_大模型/04_LLM架构/05_LLM架构]] | [[00_入门/GenAI_L01_Intro_to_GenAI_and_LLMs]] |
 | 02 | 探索与比较不同的 LLM | [[05_大模型/04_LLM架构/05_LLM架构]]、[[05_大模型/13_全球LLM生态/README]] | [[05_大模型/01_LLM基础/GenAI_L02_Exploring_and_Comparing_LLMs]] |
-| 03 | 负责任地使用生成式 AI | [[17_伦理安全/Ethics-in-nutshell]]、[[17_伦理安全/AI_Governance_Compliance_2026]] | [[17_伦理安全/01_伦理基础/GenAI_L03_Using_GenAI_Responsibly]] |
+| 03 | 负责任地使用生成式 AI | [[17_伦理安全/Ethics-in-nutshell]]、[[17_伦理安全/03_AI治理/01_AI治理合规2026]] | [[17_伦理安全/01_伦理基础/GenAI_L03_Using_GenAI_Responsibly]] |
 
 ### 提示工程（L04-L05）
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 04 | 理解提示工程基础 | [[05_大模型/07_提示工程/16_Prompt工程]]、[[05_大模型/07_提示工程/Prompt_Engineering_Principles_Ng]] | [[05_大模型/07_提示工程/GenAI_L04_Prompt_Engineering_Fundamentals]] |
+| 04 | 理解提示工程基础 | [[05_大模型/07_提示工程/16_Prompt工程]]、[[05_大模型/07_提示工程/14_Prompt工程_原则_Ng]] | [[05_大模型/07_提示工程/04_GenAI_第4课_Prompt工程_基础]] |
 | 05 | 创建高级提示 | [[05_大模型/07_提示工程/16_Prompt工程]]、[[05_大模型/12_LLM产品/05_god_tier_prompts_概览]] | [[05_大模型/07_提示工程/GenAI_L05_Advanced_Prompts]] |
 
 ### 应用构建（L06-L11）

@@ -22,7 +22,7 @@ This page indexes the contents of `强化学习`.
 
 ## Files
 
-- [[06_强化学习/06_多智能体/Multi_Agent_RL|Multi Agent RL]]
+- [[06_强化学习/06_多智能体/02_多智能体强化学习|Multi Agent RL]]
 - [[06_强化学习/06_多智能体/Multi_Agent_Systems|Multi Agent Systems]]
 - [[06_强化学习/README|README]]
 - [[06_强化学习/README|README For Dummy]]

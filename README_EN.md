@@ -2,7 +2,8 @@
 title: AI Guru Knowledge Base (English)
 category: meta
 tags: [readme, en, overview]
-summary: English README for the AI Guru comprehensive AI learning resource repository — 2,000+ core docs, 700+ concept cards, 24 chapters, LLMOps end-to-end.
+summary: English README for the AI Guru comprehensive AI learning resource repository — 2,800+ core docs, 700+ concept cards, 24 chapters, LLMOps end-to-end.
+updated: 2026-09-04
 tier: peripheral
 aliases:
   - "Readme En"
@@ -20,7 +21,7 @@ name_zh: "README 英文版"
 
 <p><strong>Probably the Most Comprehensive AI Learning Resource on GitHub</strong></p>
 
-<p>Complete AI Knowledge System from Theory to Production | 2,061 Core Docs + 700+ Concept Cards | 18.9M Characters | LLMOps End-to-End | 2026 Latest</p>
+<p>Complete AI Knowledge System from Theory to Production | 2,826 Core Docs + 700 Concept Cards | 19.3M Characters | LLMOps End-to-End | 2026 Latest</p>
 
 <p>
  <a href="#-quick-start"> Quick Start</a> •
@@ -31,13 +32,13 @@ name_zh: "README 英文版"
 </p>
 
 <p>
- <img src="https://img.shields.io/badge/Core%20Docs-2061-blue?style=flat-square" alt="Docs">
- <img src="https://img.shields.io/badge/Content-18.9M%20chars-green?style=flat-square" alt="Content">
+ <img src="https://img.shields.io/badge/Core%20Docs-2826-blue?style=flat-square" alt="Docs">
+ <img src="https://img.shields.io/badge/Content-19.3M%20chars-green?style=flat-square" alt="Content">
  <img src="https://img.shields.io/badge/Chapters-24-orange?style=flat-square" alt="Chapters">
  <img src="https://img.shields.io/badge/Quick%20Guides-70+-purple?style=flat-square" alt="Guides">
  <img src="https://img.shields.io/badge/Concept%20Cards-700+-critical?style=flat-square" alt="Concepts">
  <img src="https://img.shields.io/badge/LLMOps-End--to--End-blueviolet?style=flat-square" alt="LLMOps">
- <img src="https://img.shields.io/badge/Updated-2026--08-red?style=flat-square" alt="Updated">
+ <img src="https://img.shields.io/badge/Updated-2026--09-red?style=flat-square" alt="Updated">
  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
 </p>
 
@@ -62,7 +63,7 @@ name_zh: "README 英文版"
 <td width="50%">
 
 ** Comprehensive Content**
-- 2,061 core docs + 700+ atomic concept cards
+- 2,826 core docs + 700 atomic concept cards
 - ~18.9M characters (~3,000 A4 pages)
 - 24 knowledge chapters + 12 subdomain concept network
 - From math foundations to AGI frontiers
@@ -103,47 +104,48 @@ name_zh: "README 英文版"
 ### By The Numbers
 
 ```
- 2,061 Core Docs         18.9M chars (~3,000 A4 pages)
+ 2,826 Total Docs        19.3M chars (~3,200 A4 pages)
  24 Knowledge Chapters   70+ Quick Guides (in-nutshell)
- 48 Beginner Guides (for_dummy)   700+ Concept Cards (12 subdomains)
+ 48 Beginner Guides (for_dummy)   700 Concept Cards (12 subdomains)
  240 Agent Articles      157 Industry Leader Perspectives
  140 Interview Guides    87 Industry Case Studies
 ```
 
-> **Core docs** (24 chapter directories): 2,061 files / 18.9M chars **Concept cards** (12 subdomains): 700+ files
+> **Core docs** (24 chapter directories): 2,131 files / 19.3M chars · **Concept cards** (12 subdomains): 702 files · **Governance**: 64 files
 
 #### Per-Directory Stats
 
 | Directory | Files | Characters | Share |
 |-----------|-------|------------|-------|
-| **概念 (Concepts)** | 700+ | — | — |
-| 15_智能体 (Agents) | 240 | 2.84M | 15.0% |
-| 19_业界观点 (Insights) | 157 | 960K | 5.1% |
-| 05_大模型 (LLMs) | 154 | 2.30M | 12.2% |
-| 21_面试岗位 (Interviews) | 140 | 875K | 4.6% |
-| 12_架构基建 (Infrastructure) | 140 | 1.51M | 8.0% |
-| 90_学习 (Learning) | 123 | 862K | 4.6% |
-| 11_模型运维 (MLOps) | 115 | 1.13M | 6.0% |
-| 10_部署推理 (Deployment) | 105 | 940K | 5.0% |
-| 16_编程 (AI Coding) | 95 | 655K | 3.5% |
-| 18_行业应用 (Industry) | 87 | 420K | 2.2% |
-| 22-FDE (Full-Stack Eng) | 71 | 254K | 1.3% |
-| 20_论文精读 (Papers) | 69 | 585K | 3.1% |
-| 02_机器学习 (ML) | 64 | 455K | 2.4% |
+| **概念 (Concepts)** | 702 | — | — |
+| 15_智能体 (Agents) | 240 | 2.85M | 14.8% |
+| 90_学习 (Learning) | 193 | 1.19M | 6.2% |
+| 19_业界观点 (Insights) | 157 | 0.96M | 5.0% |
+| 05_大模型 (LLMs) | 154 | 2.31M | 12.0% |
+| 12_架构基建 (Infrastructure) | 140 | 1.51M | 7.8% |
+| 21_面试岗位 (Interviews) | 140 | 0.88M | 4.5% |
+| 11_模型运维 (MLOps) | 115 | 1.13M | 5.9% |
+| 10_部署推理 (Deployment) | 105 | 0.94M | 4.9% |
+| 16_编程 (AI Coding) | 95 | 0.65M | 3.4% |
+| 18_行业应用 (Industry) | 87 | 0.42M | 2.2% |
+| 20_论文精读 (Papers) | 69 | 0.58M | 3.0% |
+| 02_机器学习 (ML) | 64 | 0.45M | 2.4% |
+| 17_伦理安全 (Safety) | 63 | 0.44M | 2.3% |
+| 07_模型训练 (Training) | 62 | 0.76M | 4.0% |
+| 14_RAG系统 (RAG) | 62 | 0.57M | 2.9% |
 | 治理 (Governance) | 64 | — | — |
-| 17_伦理安全 (Safety) | 63 | 438K | 2.3% |
-| 07_模型训练 (Training) | 62 | 763K | 4.0% |
-| 14_RAG系统 (RAG) | 62 | 567K | 3.0% |
-| 01_数学基础 (Math) | 60 | 492K | 2.6% |
-| 03_深度学习 (DL) | 55 | 499K | 2.6% |
-| 13_运维 (SRE/Ops) | 52 | 375K | 2.0% |
-| 08_模型评估 (Evaluation) | 48 | 585K | 3.1% |
-| 06_强化学习 (RL) | 44 | 535K | 2.8% |
-| 04_计算机视觉 (CV) | 41 | 313K | 1.7% |
-| 09_测试 (Testing) | 30 | 318K | 1.7% |
-| 00_入门 (Intro) | 27 | 242K | 1.3% |
-| 94_可视化 (Visualization) | 28 | 271K | 1.4% |
-| **Total** | **2,061** | **18.9M** | **100%** |
+| 01_数学基础 (Math) | 60 | 0.49M | 2.6% |
+| 03_深度学习 (DL) | 55 | 0.50M | 2.6% |
+| 13_运维 (SRE/Ops) | 52 | 0.38M | 1.9% |
+| 08_模型评估 (Evaluation) | 48 | 0.59M | 3.0% |
+| 06_强化学习 (RL) | 44 | 0.54M | 2.8% |
+| 04_计算机视觉 (CV) | 41 | 0.31M | 1.6% |
+| 09_测试 (Testing) | 30 | 0.32M | 1.6% |
+| 94_可视化 (Visualization) | 28 | 0.27M | 1.4% |
+| 00_入门 (Intro) | 27 | 0.24M | 1.3% |
+| **Total (24 chapters)** | **2,131** | **19.3M** | **100%** |
+
+> Incl. 概念/ (702) and 治理/ (64), the repo totals **2,826 Markdown files / 32.7 MB on disk** (eval_scan 2026-09-04).
 
 > Tip: Run `python3 工具/count_words.py` for real-time stats.
 

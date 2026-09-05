@@ -462,7 +462,7 @@ async def async_moe_forward(tokens, router_decision):
 
 ## Related
 
-- [[05_大模型/04_LLM架构/MoE_Case_Studies_DeepSeek_Mixtral]]
+- [[05_大模型/04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral]]
 - [[概念/transformer-architecture]]
 - [[05_大模型/04_LLM架构/05_LLM架构]]
 - [[07_模型训练/04_分布式训练/03_分布式训练_2026]]

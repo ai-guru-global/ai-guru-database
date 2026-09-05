@@ -68,7 +68,7 @@ name_zh: "MLOps 工程师学习路径"
 | 主题 | 核心内容 | 推荐资源 |
 |------|---------|---------|
 | 可观测性 | Prometheus, Grafana | [[11_模型运维/08_可观测性/15_Prometheus_Grafana_深入分析]] |
-| 模型监控 | 漂移检测、质量告警 | [[Model_Monitoring_and_Drift_Detection_2026]] |
+| 模型监控 | 漂移检测、质量告警 | [[11_模型运维/08_可观测性/13_模型_监控_and_Drift_检测_2026]] |
 | SRE 实践 | SLO、Error Budget | [[13_运维/02_SRE与可靠性/22_SRE_for_AI_系统]] |
 | 故障响应 | Runbook、Post-mortem | [[13_运维/02_SRE与可靠性/01_AI_故障应急_Playbook]] |
 | 成本优化 | GPU 利用率、FinOps | [[13_运维/05_成本管理/02_FinOps_for_AI]] |

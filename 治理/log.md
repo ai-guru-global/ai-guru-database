@@ -117,6 +117,46 @@ _本文件作为 wiki 维护操作时间线 baseline，后续每次 `/wiki-lint`
 - 关键判定：P0-5 / P2-6 巡检工具 CI 化未落地是回归根因；多工具度量口径分裂导致 [[治理/ROADMAP|路线图]] OKR 数字失真。
 - 行动项：断链批修（smart_fix_links / batch_fix_links）→ CI 门禁落地 → 统一度量口径 → 仓库瘦身（.git 1.1 GB）→ 重写 [[治理/KNOWN_ISSUES|已知问题]]，详见评估报告 §七。
 
+## 2026-09-04（下午） — P2-6 断链门禁落地 + 首轮断链批修
+
+- **重映射修复**：新增 `工具/fix_wikilinks_precise.py`（只重写 wikilink 目标、保留别名 / 锚点 / 表格转义、默认 dry-run、路径容器校验），按人工核实的 41 项映射批量修复 **358 处断链**（252 文件）。主因是 6-7 月批量改名迁移：如 `MoE_Case_Studies_DeepSeek_Mixtral` → `12_MoE_案例_Studies_深度Seek_Mixtral`、`Tool_Calling_Best_Practices` → `14_工具调用_最佳实践`。
+- **补建枢纽页**：4 个被高频引用但从未创建的页面（50 处引用随之解析）——`15_智能体/Agent_Production_Deployment_Runbook`、`00_入门/02_技术概览/AI_New_Architectures`、`02_机器学习/ML-in-nutshell`、`17_伦理安全/Ethics-in-nutshell`，均含完整 frontmatter 与 ≥4 条真实出链。
+- **门禁落地（P2-6 ✅）**：`工具/link_gate.py`（runpy 进程内复用 check_wikilinks 扫描逻辑）+ 基线 `治理/_meta/link-health-baseline.json`（断链 1795）+ pre-commit 钩子扩展（暂存 .md 时触发，实测约 5s）+ `.github/workflows/link-health.yml`。正反测试通过：注入临时断链即被阻断，清理后恢复通过。
+- **指标变化（check_wikilinks 口径）**：断链 2,201 → **1,795** 次（-18.4%），唯一目标 628 → 580，断链率 8.9% → **7.2%**；eval_scan 口径 2,944 → 2,560。剩余 580 个缺失目标多为「规划中未建页」（GenAI L01-L06 课程页、Dashboard / Cheat_Sheet 类），留待后续内容补齐；门禁已锁定回归。
+- 治理同步：[[治理/ROADMAP|路线图]] P2-6 状态 ⏳ → ✅。
+
+## 2026-09-04（傍晚） — 发展计划制定 + 第一阶段执行
+
+- **沉淀 [[治理/_meta/development-plan-2026-09|发展计划 2026-09]]**：三阶段主线（门禁补完 / 内容收敛 / 产品化），含任务拆解与验收标准。
+- **任务 1.1 ✅**：新增 `工具/move_page.py` 改名安全工具（移动 + 全库入链重写 + dry-run 默认 + relative_to 容器校验）。实战首用：`12_MoE_案例_Studies_深度Seek_Mixtral` 恢复规范名 `12_MoE_Case_Studies_DeepSeek_Mixtral`，31 处入链同步重写，门禁通过并收紧基线至 **1,794**（裸名称断链随之解析 -1）。
+- **任务 1.3 🔄**：README / README_EN 徽章与章节表、[[治理/ROADMAP|路线图]] 指标表与 OKR 当前值（KR1.1 / KR2.1-KR2.3）全部刷新为 eval_scan 唯一事实源实测口径（2,826 篇 / 1,928 万字 / 断链率 7.2%），消除 3 倍失真。
+- **任务 1.4 ✅**：[[治理/KNOWN_ISSUES|已知问题]]全面重写为真实问题登记簿（ISS-101~107，含根因 / 处置 / 验收标准），替换原模板演示内容。
+- **任务 1.5 ✅**：`.gitignore` 排除 `.mimosa/`（阻断工具噪音入库）；自本日起提交采用 conventional commits。
+- 门禁最终态：断链 1,794 / 率 7.2%，基线锁定。
+
+## 2026-09-04（晚） — INDEX 陈旧化巡检 + basename 回退修复
+
+- 证伪「mkdocs 副本兜底解析」假说：`AI_Governance_Compliance_2026` 等旧英文名链接本就计在断链清单内（共 37 处），mkdocs 下同名项是目录而非文件；`performance` 为全路径有效链接（扫描误报）。库内不存在「隐性断链」类。
+- `工具/fix_wikilinks_precise.py` 升级：新增 basename 回退匹配（6 项旧英文名 → 现中文名映射）与**已解析链接保护**（basename 回退仅对断链生效，杜绝误改）。
+- 追加修复 **111 处**（85 文件 / 38 目标）——主要是此前精确匹配漏掉的「带章节前缀变体」（如 `13_运维/02_SRE与可靠性/GPU_OOM_Troubleshooting_Guide` ×9）。
+- 基线收紧：1,794 → **1,683**（断链率 7.2% → **6.7%**）；治理文档（KNOWN_ISSUES / ROADMAP 指标表与 OKR / 发展计划）数字同步。
+
+## 2026-09-04（深夜） — 查漏补缺：门禁 v2 + mimosa 出库 + 内容冲刺
+
+- **合入期回归修复**：会话间协作者编辑引入 12 处新断链实例，经 diff 解析定位后以 7 项新映射批量修复 67 处（含 `AI_Research_Engineer` ×9、`Scaling_Laws_and_Training_Dynamics` → `06_扩展定律_and_训练_Dynamics` 等）。
+- **`.mimosa/` 出库**：`git rm -r --cached` 解除 1,783 个已追踪工具状态文件（.gitignore 昨已排除，本步补齐存量）。
+- **任务 1.2 ✅（2/3）**：`工具/link_gate.py` v2 —— runpy 进程内复用 checker 函数，一次扫描产出三项指标（断链 / 孤立页 / frontmatter 8 字段完整性），全部基线化只降不升；三类反向测试均正确拦截；基线 1,598 / 779 / 770 已持久化。中英间距检查待编排 `fix_spacing.py`。
+- **内容冲刺**：补建 [[14_RAG系统/RAG-in-nutshell|RAG 速览]]（9 处引用解析）与 [[05_大模型/09_多模态模型/Multimodal_Models_for_dummy|多模态模型大白话]]（9 处引用解析）。
+- **任务 1.3 收尾**：[[治理/Quality_Metrics|质量度量]] 增加口径声明（eval_scan 唯一事实源 + 门禁基线指针）。
+- 门禁终态：断链 **1,598 / 6.4%**、孤立 779、frontmatter 缺失 770，三项基线锁定。
+
+## 2026-09-04（收官） — 第一阶段完成 + 周运营节奏确立
+
+- **任务 1.2 补齐第 4 项 ✅**：中英间距检查以 `fix_spacing.py` 差分复用接入 link_gate v2.1（规则与修复工具零漂移，零自造正则），基线 1,678 持久化；四类反向测试全部通过。**第一阶段 1.1–1.5 全部完成。**
+- **§1.6 周巡检 Runbook** 制定（每周 30 分钟：gate → 断链三分类 → 冲刺 → 收紧基线；月底 eval_scan 刷新指标表）。
+- **§3.2 RAG 助手 MVP 提前至 Q4**：范围收敛为向量检索 + 引用溯源 + 门禁数据质检层，目标两周 demo。
+- **22-FDE 定位决策**：保持专项目录（连字符命名，不纳入章节编号），README 增加定位声明并与工信部 414 号文政策页互链；`gen_subdir_indexes.py` 判定不重跑（与禁跑的迁移脚本耦合），INDEX 陈旧化已由批修与门禁覆盖（两个 INDEX 旧名残留实测为 0）。
+
 ## 关联
 
 项目日志记录治理与内容演进，关联文档提供流程依据与规划上下文。

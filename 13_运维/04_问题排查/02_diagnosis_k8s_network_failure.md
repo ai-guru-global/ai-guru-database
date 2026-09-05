@@ -194,7 +194,7 @@ DNS 解析失败
 ## Related
 
 - [[Kubernetes_Networking_Deep_Dive]] — K8s 网络深度解析
-- [[Kubernetes_Troubleshooting_Playbook]] — K8s 排障完整手册
+- [[13_运维/04_问题排查/07_Kubernetes_故障排查_Playbook]] — K8s 排障完整手册
 - [[13_运维/04_问题排查/03_diagnosis_k8s_pod_failure]] — Pod 故障诊断决策树
 - [[13_运维/04_问题排查/04_diagnosis_k8s_storage_failure]] — 存储故障诊断决策树
 - [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文]] — 专有云 K8s 上下文

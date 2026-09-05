@@ -197,7 +197,7 @@ name_zh: "K8s 存储故障远程诊断决策树"
 ## Related
 
 - [[12_架构基建/04_Kubernetes核心/04_Kubernetes_存储_深入分析]] — K8s 存储深度解析
-- [[Kubernetes_Troubleshooting_Playbook]] — K8s 排障完整手册
+- [[13_运维/04_问题排查/07_Kubernetes_故障排查_Playbook]] — K8s 排障完整手册
 - [[13_运维/04_问题排查/03_diagnosis_k8s_pod_failure]] — Pod 故障诊断决策树
 - [[13_运维/04_问题排查/02_diagnosis_k8s_network_failure]] — 网络故障诊断决策树
 - [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文]] — 专有云 K8s 上下文

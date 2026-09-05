@@ -261,5 +261,5 @@ spec:
 - [[概念/helm]] -- Helm 包管理器
 - [[治理/serving-deployment]] -- 模型服务 x 模型部署
 - [[12_架构基建/04_Kubernetes核心/01_Kubernetes核心_Components_深入分析]] -- K8s 核心组件深度解析
-- [[13_运维/Kubernetes_Troubleshooting_Playbook]] -- K8s 运维排障 Playbook
+- [[13_运维/04_问题排查/07_Kubernetes_故障排查_Playbook]] -- K8s 运维排障 Playbook
 - [[概念/model-deployment]] -- 模型部署全景

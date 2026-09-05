@@ -161,6 +161,6 @@ curl http://localhost:8000/v1/chat/completions -d '{...}'
 
 ## Related
 
-- [[13_运维/04_问题排查/Kubernetes_Troubleshooting_Playbook|K8s 系统排障 Playbook]]
+- [[13_运维/04_问题排查/07_Kubernetes_故障排查_Playbook|K8s 系统排障 Playbook]]
 - [[13_运维/02_SRE与可靠性/GPU_Troubleshooting_Cheat_Sheet|GPU 故障排查速查表]]
 - [[07_模型训练/07_训练监控/02_LLM_微调_岗位_Failure_操作手册_on_K8s|LLM 微调任务 K8s 失败排障]]

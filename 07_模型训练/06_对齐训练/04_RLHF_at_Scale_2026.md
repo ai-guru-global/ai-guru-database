@@ -986,14 +986,14 @@ async def batch_generate(prompts: list, batch_size: int = 50):
 
 ## 14. 相关概念
 
-- [[GRPO_and_New_Alignment_Methods]] - GRPO 算法详解与对比
+- [[07_模型训练/06_对齐训练/02_GRPO_and_新型_对齐_Methods]] - GRPO 算法详解与对比
 - [[07_模型训练/06_对齐训练/01_alignment_rlhf]] - RLHF 基础原理
 - [[07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南]] - TRL 框架实战指南
-- [[Data_Curation_and_Mixture_2026]] - 数据配比与质量
+- [[07_模型训练/02_数据工程/04_数据_Curation_and_Mixture_2026]] - 数据配比与质量
 - [[07_模型训练/02_数据工程/07_pretraining_synthetic_data]] - 合成数据在预训练中的应用
 - [[概念/General/finops]] - 训练成本优化
 - [[07_模型训练/01_训练基础/05_Multi_Stage_训练_流水线]] - 多阶段训练流水线
-- [[Scaling_Laws_and_Training_Dynamics]] - Scaling Laws
+- [[07_模型训练/03_训练优化/06_扩展定律_and_训练_Dynamics]] - Scaling Laws
 - [[07_模型训练/04_分布式训练/04_分布式训练_Hang_操作手册]] - 分布式训练故障排查
 - [[概念/Training/synthetic-data]] - 合成数据训练
 - [[Curriculum_Learning_for_LLMs]] - 课程学习

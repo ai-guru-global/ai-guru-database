@@ -533,7 +533,7 @@ class MixtralMoELayer(nn.Module):
 | 模型质量 | 部分专家过度拟合 | 专家专业化 + 均衡 |
 | 实现复杂度 | 简单 | 需额外损失项，权重需调优 |
 
-> **深入阅读**: Mixtral 的 MoE 路由策略与 DeepSeek 的对比分析，详见 [MoE Case Studies: DeepSeek & Mixtral](../04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md)。负载均衡技术的详细讨论见 [MoE Routing and Load Balancing](../04_LLM架构/13_MoE_Routing_and_负载均衡.md)。
+> **深入阅读**: Mixtral 的 MoE 路由策略与 DeepSeek 的对比分析，详见 [MoE Case Studies: DeepSeek & Mixtral](../04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md)。负载均衡技术的详细讨论见 [MoE Routing and Load Balancing](../04_LLM架构/13_MoE_Routing_and_负载均衡.md)。
 
 ### 4.2 Mixtral 8x22B — 最大开源 MoE
 
@@ -1459,7 +1459,7 @@ curl http://localhost:11434/api/generate -d '{
 ### 架构基础
 
 - [LLM Architectures (大语言模型架构)](../04_LLM架构/05_LLM架构.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
-- [MoE Case Studies: DeepSeek & Mixtral](../04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md) — MoE 路由策略、专家专业化的深度对比分析
+- [MoE Case Studies: DeepSeek & Mixtral](../04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略、专家专业化的深度对比分析
 - [MoE Routing and Load Balancing](../04_LLM架构/13_MoE_Routing_and_负载均衡.md) — MoE 负载均衡技术详解，含 Mixtral 辅助损失分析
 - [Transformer Alternatives](../04_LLM架构/16_Transformer_替代架构.md) — Mamba, SSM 等非 Transformer 架构的全面分析
 
@@ -1488,7 +1488,7 @@ curl http://localhost:11434/api/generate -d '{
 
 - [[05_大模型/13_全球LLM生态/README|国际大模型生态全景]] — 五大国际大模型厂商横向对比
 - [[05_大模型/13_全球LLM生态/07_Meta_LLaMA_深入分析|Meta LLaMA 深度解析]] — 同为开源 LLM 旗手的技术路线对比
-- [[05_大模型/04_LLM架构/MoE_Case_Studies_DeepSeek_Mixtral|MoE 案例：DeepSeek 与 Mixtral]] — Mixtral MoE 架构深度剖析
+- [[05_大模型/04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral|MoE 案例：DeepSeek 与 Mixtral]] — Mixtral MoE 架构深度剖析
 - [[概念/LLM/mistral-series|Mistral 系列]] — Mistral 模型家族概念卡片
 - [[概念/LLM/mamba|Mamba]] — Mistral 探索的 SSM 替代架构
 - [[05_大模型/13_全球LLM生态/03_GenAI_L20_Building_with_Mistral|GenAI L20: 构建 Mistral 应用]] — 基于 Mistral 的实战课程

@@ -903,7 +903,7 @@ study.optimize(
 ## Related
 
 - [[概念/automl]] — AutoML 概念总览
-- [[02_机器学习/02_监督学习/Supervised_Learning]] — 监督学习：AutoML 自动选择的模型空间
+- [[概念/Math/supervised-learning]] — 监督学习：AutoML 自动选择的模型空间
 - [[02_机器学习/05_特征工程/01_特征工程]] — 特征工程：自动化特征构造方法
 - [[05_大模型/06_微调技术/02_微调_策略]] — 微调策略：神经架构搜索 (NAS) 的应用
-- [[11_模型运维/04_实验追踪/Experiment_Tracking_Deep_Dive]] — 实验追踪：AutoML 搜索过程管理
+- [[11_模型运维/04_实验追踪/02_实验追踪_深入分析]] — 实验追踪：AutoML 搜索过程管理

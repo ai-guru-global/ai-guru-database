@@ -49,7 +49,7 @@ name_zh: "NLP 工程师学习路径"
 | 主题 | 核心内容 | 推荐资源 |
 |------|---------|---------|
 | Transformer 架构 | Self-Attention, 位置编码 | [[概念/LLM/transformer-architecture]] |
-| BERT 系列 | 预训练、微调 | [[Transformer_Deep_Dive]] |
+| BERT 系列 | 预训练、微调 | [[05_大模型/03_Transformer架构/04_Transformer_架构详解]] |
 | GPT 系列 | 自回归生成 | [[05_大模型/04_LLM架构/04_LLM_架构_Evolution]] |
 | 微调技术 | LoRA, QLoRA, PEFT | [[概念/Training/fine-tuning-techniques]] |
 | 分布式训练 | DeepSpeed, FSDP | [[07_模型训练/04_分布式训练/03_分布式训练_2026]] |

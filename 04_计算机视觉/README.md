@@ -106,7 +106,7 @@ name_zh: "05 计算机视觉"
 - [[04_计算机视觉/README.md]] — 图像分割 - 小白版 ✂️ (共享: cnn, computer-vision, cv, image-processing)
 - [[04_计算机视觉/07_视频生成/README]] — AI视频生成 (Video Generation) (共享: cnn, computer-vision, cv, image-processing)
 - [[20_论文精读/08_计算机视觉/06_ResNet_深入分析]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
-- [[04_计算机视觉/05_三维视觉/3D_Vision]] — 3D_Vision
+- [[概念/Vision/3d-vision]] — 3D_Vision
 - [[04_计算机视觉/README.md]] — 3D_Vision_for_dummy
 - [[概念/Vision/image-segmentation]] — Segmentation
 - [[04_计算机视觉/README.md]] — OCR_for_dummy

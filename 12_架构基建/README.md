@@ -24,6 +24,7 @@ name_zh: "架构与基础设施"
 |------|------|----------|
 | [AI System Architecture 2026](./02_架构概览/03_AI_系统_架构_2026.md) | 四层架构全景图：应用层→服务层→数据层→基础设施层 | 架构师、技术负责人 |
 | [AI Infrastructure 2026](./02_架构概览/02_AI_基础设施_2026.md) | GPU 集群、存储网络、训练/推理基础设施 | 基础设施工程师 |
+| [Token 工厂 2026](./02_架构概览/11_Token_工厂_2026.md) | 从 IDC 到智能量产：液冷/RDMA、K8s 推理组件栈、KServe+vLLM 落地四步 | 基础设施工程师、平台负责人 |
 | [Capacity Planning 2026](./02_架构概览/05_Capacity_Planning_2026.md) | QPS/并发模型、GPU 显存估算、成本预测 | 架构师、SRE |
 | [AI SRE Runbook](../13_运维/02_SRE与可靠性/03_AI_SRE_操作手册.md) | AI 系统 SLO/SLI、GPU 容量规划、事故响应、模型回滚、灾备 | AI SRE、平台负责人 |
 | [High Availability 2026](12_架构基建/02_架构概览/06_高可用_2026.md) | 多活架构、故障转移、灾备演练 | 运维工程师 |
@@ -171,7 +172,7 @@ name_zh: "架构与基础设施"
 
 ## Related
 - [[12_架构基建/02_架构概览/01_AI_成本优化_2026|AI 成本优化与 FinOps 2026]]
-- [[12_架构基建/High_Availability_2026|AI 系统高可用架构设计 (High Availability 2026)]]
+- [[12_架构基建/02_架构概览/06_高可用_2026|AI 系统高可用架构设计 (High Availability 2026)]]
 - [[12_架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]
 - [[12_架构基建/07_硬件与算力/07_边缘_AI_2026|边缘 AI / 设备端 AI 2026]]
 - [[12_架构基建/02_架构概览/03_AI_系统_架构_2026|AI 系统架构全景图 (AI System Architecture 2026)]]
@@ -183,8 +184,8 @@ name_zh: "架构与基础设施"
 - [[概念/ai-architecture]] — AI 系统架构
 - [[概念/llm-infrastructure]] — LLM 基础设施
 - [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/01_阿里云_AI技术栈_深入分析|阿里云 AI Stack 深度解读]] — 专有云 AI 推理平台三层架构
-- [[12_架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
-- [[12_架构基建/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]
+- [[12_架构基建/03_AI技术栈/09_AI技术栈_生产_工具链|AI Stack 生产工具链总览]]
+- [[12_架构基建/03_AI技术栈/01_AI技术栈_容器_Runtime_指南|AI Stack 容器与运行时指南]]
 - [[12_架构基建/03_AI技术栈/04_AI技术栈_GPU_监控_指南|AI Stack GPU 监控指南]]
 - [[12_架构基建/03_AI技术栈/08_AI技术栈_模型_Management_指南|AI Stack 模型下载与管理指南]]
 - [[12_架构基建/03_AI技术栈/05_AI技术栈_推理_服务_指南|AI Stack 推理服务指南]]

@@ -23,7 +23,7 @@ name_en: "Agent Foundations"
 | [[15_智能体/01_Agent基础/15_AI_Agent_入门|AI Agents for Beginners]] | AI Agents for Beginners | 开发者/学习者 |
 | [[15_智能体/01_Agent基础/16_AI_Agent|AI Agents for dummy]] | AI Agents for dummy | 开发者/学习者 |
 | [[15_智能体/01_Agent基础/AI_OpenSource_Projects_Overview|AI OpenSource Projects Overview]] | AI OpenSource Projects Overview | 开发者/学习者 |
-| [[15_智能体/01_Agent基础/Agent-in-nutshell|Agent-in-nutshell]] | Agent-in-nutshell | 开发者/学习者 |
+| [[15_智能体/01_Agent基础/11_Agent_简明指南|Agent-in-nutshell]] | Agent-in-nutshell | 开发者/学习者 |
 | [[15_智能体/01_Agent基础/Agent_Engineering_Methodology_System_2026|Agent Engineering Methodology System 2026]] | Agent工程八大方法论体系：架构/工具/记忆/规划/协作/运维/安全/评估 | 开发者/架构师 |
 | [[15_智能体/01_Agent基础/03_Agent_未来_路线图_2026_2030|Agent Future Roadmap 2026 2030]] | Agent Future Roadmap 2026 2030 | 开发者/学习者 |
 | [[15_智能体/01_Agent基础/04_Agent_可观测性_2026|Agent Observability 2026]] | Agent Observability 2026 | 开发者/学习者 |

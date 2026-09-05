@@ -259,7 +259,7 @@ Action: reply(列出 5 个航班供用户选择)
 | 本书章节 | 本书概念 | 知识库主题 | 关联说明 |
 |----------|----------|------------|----------|
 | Ch 1-2 Agent 基础 | Agent 定义/四大支柱 | [[15_智能体/01_Agent基础/16_AI_Agent]] | Agent 基础概念 |
-| Ch 3 工具调用 | Function Calling | [[15_智能体/01_Agent基础/Agent-in-nutshell]] | 工具调用机制 |
+| Ch 3 工具调用 | Function Calling | [[15_智能体/01_Agent基础/11_Agent_简明指南]] | 工具调用机制 |
 | Ch 4 记忆 | 短期/长期记忆 | [[14_RAG系统/01_RAG基础/07_RAG_系统]] | 记忆即个性化 RAG |
 | Ch 5 ReAct | 规划模式 | [[05_大模型/07_提示工程/16_Prompt工程]] | ReAct 提示模式 |
 | Ch 7 多 Agent | CrewAI/AutoGen | [[90_学习/05_参考资料/books/13_build_multi_agent_system]] | 多 Agent 架构 |

@@ -19,7 +19,7 @@ name_en: "Applied Scientist"
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[21_面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist]] | 岗位面试全攻略：从论文到产品的转化路径、实验驱动决策与跨团队协作 | applied scientist candidates / industry researchers |
+| [[21_面试岗位/13_应用科学家/README|Applied Scientist]] | 岗位面试全攻略：从论文到产品的转化路径、实验驱动决策与跨团队协作 | applied scientist candidates / industry researchers |
 
 ## Related
 

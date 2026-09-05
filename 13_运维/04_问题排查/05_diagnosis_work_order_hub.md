@@ -78,8 +78,8 @@ name_zh: "工单智能体远程诊断知识枢纽"
 
 | Runbook | 覆盖场景 |
 |---------|---------|
-| [[Kubernetes_Troubleshooting_Playbook]] | K8s 通用排障（Pod/节点/网络/存储/调度/控制平面） |
-| [[GPU_OOM_Troubleshooting_Guide]] | GPU OOM 四类区分与修复阶梯 |
+| [[13_运维/04_问题排查/07_Kubernetes_故障排查_Playbook]] | K8s 通用排障（Pod/节点/网络/存储/调度/控制平面） |
+| [[13_运维/02_SRE与可靠性/11_GPU_OOM_故障排查_指南]] | GPU OOM 四类区分与修复阶梯 |
 | [[13_运维/02_SRE与可靠性/19_LLM推理_Slow_Unavailable_操作手册]] | LLM 推理延迟/不可用分层排障 |
 | [[07_模型训练/04_分布式训练/04_分布式训练_Hang_操作手册]] | 分布式训练 NCCL/RDMA Hang 排障 |
 | [[07_模型训练/07_训练监控/02_LLM_微调_岗位_Failure_操作手册_on_K8s]] | LLM 微调失败（NaN/OOM/数据格式） |
@@ -107,6 +107,6 @@ name_zh: "工单智能体远程诊断知识枢纽"
 - [[13_运维/04_问题排查/04_diagnosis_k8s_storage_failure]] — 存储故障诊断决策树
 - [[13_运维/04_问题排查/01_diagnosis_gpu_ai_workload_failure]] — GPU/AI 工作负载诊断决策树
 - [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文]] — 专有云 K8s 上下文
-- [[Kubernetes_Troubleshooting_Playbook]] — K8s 排障手册
+- [[13_运维/04_问题排查/07_Kubernetes_故障排查_Playbook]] — K8s 排障手册
 - [[K8s_AI_Troubleshooting_Cheat_Sheet]] — 排障速查表
 - [[Cloud_Product_Ops_2026]] — 云产品运维 Agent 体系

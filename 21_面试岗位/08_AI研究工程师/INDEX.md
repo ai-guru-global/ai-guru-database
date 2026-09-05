@@ -19,7 +19,7 @@ AI 研究工程师 — 介于研究与工程之间，兼顾算法创新与系统
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[21_面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer]] | 岗位面试全攻略：分布式训练、实验管理与算法工程化最佳实践 | research engineer candidates / ML infra engineers |
+| [[21_面试岗位/08_AI研究工程师/README|AI Research Engineer]] | 岗位面试全攻略：分布式训练、实验管理与算法工程化最佳实践 | research engineer candidates / ML infra engineers |
 
 ## Related
 

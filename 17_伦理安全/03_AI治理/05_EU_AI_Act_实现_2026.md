@@ -570,7 +570,7 @@ EU AI Act特别考虑了中小企业的合规负担：
 ### 10.3 国际互操作
 
 - 欧盟与美国就AI标准互认展开对话
-- 与[[17_伦理安全/03_AI治理/China_AI_Regulations_2026|中国AI治理法规]]存在显著差异，企业需双重合规
+- 与[[17_伦理安全/03_AI治理/04_China_AI_监管_2026|中国AI治理法规]]存在显著差异，企业需双重合规
 - OECD AI原则与EU AI Act的对接
 - GPAI Code of Practice (行为准则) 2025年发布
 
@@ -585,8 +585,8 @@ EU AI Act特别考虑了中小企业的合规负担：
 
 ## 11. 相关概念
 
-- [[17_伦理安全/03_AI治理/AI_Governance_Compliance_2026|AI治理与合规2026]] — 全球AI监管全景
-- [[17_伦理安全/03_AI治理/China_AI_Regulations_2026|中国AI治理法规]] — 中国AI监管体系对比
+- [[17_伦理安全/03_AI治理/01_AI治理合规2026|AI治理与合规2026]] — 全球AI监管全景
+- [[17_伦理安全/03_AI治理/04_China_AI_监管_2026|中国AI治理法规]] — 中国AI监管体系对比
 - [[概念/Safety/ai-risk-assessment|NIST AI RMF]] — 美国AI风险管理框架
 - [[概念/Safety/privacy-preserving-ai|GDPR]] — 欧盟数据保护法规（与AI Act交叉）
 - [[17_伦理安全/01_伦理基础/AI_Ethics_Safety_Future|AI伦理基础]] — AI伦理理论框架
@@ -609,7 +609,7 @@ EU AI Act特别考虑了中小企业的合规负担：
 | 协调标准 | CEN/CENELEC JTC 21 |
 | GPAI Code of Practice | AI Office发布 |
 | 合规工具 | ISO/IEC 42001认证机构 |
-| 中国对比 | [[17_伦理安全/03_AI治理/China_AI_Regulations_2026|中国AI治理法规]] |
+| 中国对比 | [[17_伦理安全/03_AI治理/04_China_AI_监管_2026|中国AI治理法规]] |
 
 ---
 

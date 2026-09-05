@@ -533,7 +533,7 @@ vllm serve deepseek-ai/DeepSeek-V3 \
 
 - [[05_大模型/12_LLM产品/03_deepseek_概览|DeepSeek 深度解析]] — DeepSeek 全貌与 API 使用
 - [[05_大模型/08_推理模型/INDEX|DeepSeek-R1 技术深度解析]] — R1 训练流程与 GRPO 细节
-- [[05_大模型/04_LLM架构/MoE_Case_Studies_DeepSeek_Mixtral|MoE 案例研究：DeepSeek-MoE 与 Mixtral]] — MoE 路由与专家设计对比
+- [[05_大模型/04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral|MoE 案例研究：DeepSeek-MoE 与 Mixtral]] — MoE 路由与专家设计对比
 - [[03_深度学习/02_神经网络核心/01_注意力_Mechanisms_深入分析|注意力机制深度解析]] — 标准 MHA / GQA / MLA 的关系
 - [[05_大模型/04_LLM架构/05_LLM架构|大模型架构全景]] — LLM 架构演进路线
 - [[07_模型训练/03_训练优化/04_Mixed_精确度_训练|混合精度训练]] — FP16/BF16/FP8 原理

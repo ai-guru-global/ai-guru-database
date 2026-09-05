@@ -19,7 +19,7 @@ This page indexes the contents of `08_模型评估/04_评估工具`.
 - [[08_模型评估/04_评估工具/03_LLM_as_Judge_深入分析|LLM As Judge Deep Dive]]
 - [[08_模型评估/04_评估工具/04_LLM_as_Judge_指南|LLM As Judge Guide]]
 - [[08_模型评估/04_评估工具/05_LM_评估_脚手架_深入分析|LM Evaluation Harness Deep Dive]]
-- [[08_模型评估/04_评估工具/Online_Evaluation|Online Evaluation]]
+- [[概念/General/online-evaluation|Online Evaluation]]
 - [[08_模型评估/04_评估工具/08_OpenCompass_深入分析|Opencompass Deep Dive]]
 
 ## 专题深度解析

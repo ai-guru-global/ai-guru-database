@@ -104,7 +104,7 @@ Agent 系统的生产部署与传统微服务存在本质差异：LLM 输出非�
 ## 推荐阅读
 
 - [[15_智能体/Agent_Production_Deployment_Runbook|Agent 生产环境部署 Runbook]] — 从架构、K8s 部署、沙箱、版本化、可观测性到灾备的完整 Runbook
-- [[11_模型运维/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维 2026]] — Guardrails as Code 与多层输入输出防护体系
+- [[17_伦理安全/04_AI安全与红队/03_Guardrails_生产_指南|LLM 护栏与安全运维 2026]] — Guardrails as Code 与多层输入输出防护体系
 - [[10_部署推理/01_部署基础/07_LLM_生产_部署_操作手册|LLM 生产环境部署 Runbook]] — 推理引擎选型、KV Cache、Prefix Caching、量化与多模型路由
 - [[14_RAG系统/05_RAG生产实践/05_RAG生产实践_架构_深入分析|RAG 生产架构深度解析]] — RAG 与 Agent 结合时的检索质量、幻觉抑制与合规审计
 - [[09_测试/03_Agent评估/01_Agent评估深入分析|Agent 评估深度解析]] — 任务成功率、轨迹评估、LLM-as-Judge 与生产评估流水线

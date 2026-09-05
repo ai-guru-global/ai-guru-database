@@ -75,7 +75,7 @@ name_zh: "AI 工作负载 GPU 故障远程诊断决策树"
    - 使用 LoRA/QLoRA 减少可训练参数
 4. 如果是 HAMi 环境且显存看起来够但报 OOM → 参见 §9
 
-参见 [[GPU_OOM_Troubleshooting_Guide]]、[[概念/gpu-oom]]、[[概念/gradient-checkpointing]]。
+参见 [[13_运维/02_SRE与可靠性/11_GPU_OOM_故障排查_指南]]、[[概念/gpu-oom]]、[[概念/gradient-checkpointing]]。
 
 ---
 
@@ -269,7 +269,7 @@ name_zh: "AI 工作负载 GPU 故障远程诊断决策树"
 | Xid 63 | ECC 双比特错误 | 🔴 严重 | GPU 硬件故障，联系硬件团队 |
 | Xid 79 | 内存不足 | 🟡 可恢复 | 降低工作负载 |
 
-参见 [[GPU_OOM_Troubleshooting_Guide]]、[[概念/gpu]]。
+参见 [[13_运维/02_SRE与可靠性/11_GPU_OOM_故障排查_指南]]、[[概念/gpu]]。
 
 ---
 
@@ -345,7 +345,7 @@ name_zh: "AI 工作负载 GPU 故障远程诊断决策树"
 
 ## Related
 
-- [[GPU_OOM_Troubleshooting_Guide]] — GPU OOM 专项排障指南
+- [[13_运维/02_SRE与可靠性/11_GPU_OOM_故障排查_指南]] — GPU OOM 专项排障指南
 - [[13_运维/02_SRE与可靠性/19_LLM推理_Slow_Unavailable_操作手册]] — LLM 推理延迟/不可用 Runbook
 - [[07_模型训练/04_分布式训练/04_分布式训练_Hang_操作手册]] — 分布式训练 Hang 排障
 - [[07_模型训练/07_训练监控/02_LLM_微调_岗位_Failure_操作手册_on_K8s]] — LLM 微调失败 Runbook

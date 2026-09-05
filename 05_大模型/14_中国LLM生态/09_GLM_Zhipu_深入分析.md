@@ -327,7 +327,7 @@ vs GeLU(x) = x · Φ(x)
 
 GLM-4.5 是智谱 AI 目前的旗舰模型，代表了其技术积累的最高水平。
 
-> 关于 MoE 架构的通用原理，参见 [LLM 架构详解](../04_LLM架构/05_LLM架构.md)；关于 MoE 路由策略与 DeepSeek 对比，参见 [MoE 案例研究](../04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md)。
+> 关于 MoE 架构的通用原理，参见 [LLM 架构详解](../04_LLM架构/05_LLM架构.md)；关于 MoE 路由策略与 DeepSeek 对比，参见 [MoE 案例研究](../04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md)。
 
 #### GLM-4.5 架构全景
 
@@ -1594,7 +1594,7 @@ GLM-5.2 首次引入 **effort level** 控制，开发者可在**能力 / 速度 
 ## Cross-References / 相关文档
 
 - [LLM 架构详解](../04_LLM架构/05_LLM架构.md): Transformer 架构、GPT/BERT/T5 对比，理解 GLM 架构演进的基础
-- [MoE 案例研究：DeepSeek-MoE 与 Mixtral](../04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md): MoE 路由策略与专家设计，与 GLM-4.5 MoE 对比
+- [MoE 案例研究：DeepSeek-MoE 与 Mixtral](../04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md): MoE 路由策略与专家设计，与 GLM-4.5 MoE 对比
 - [多模态架构 2026](../09_多模态模型/06_多模态_架构_2026.md): 多模态模型全景，CogVLM/CogAgent 在行业中的位置
 
 ---

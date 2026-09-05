@@ -315,6 +315,6 @@ jobs:
 ## Related Topics
 
 - [[12_架构基建/04_Kubernetes核心/01_Kubernetes核心_Components_深入分析]]: K8s fundamentals
-- [[AI_Stack_Container_Runtime_Guide]]: Container runtime for AI
+- [[12_架构基建/03_AI技术栈/01_AI技术栈_容器_Runtime_指南]]: Container runtime for AI
 - [[11_模型运维/06_持续集成部署/01_CI_CD_流水线_AI_2026]]: CI/CD pipelines
 - [[12_架构基建/02_架构概览/02_AI_基础设施_2026]]: GPU management

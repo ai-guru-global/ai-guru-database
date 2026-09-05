@@ -21,7 +21,7 @@ name_zh: "LLM 架构目录"
 ## 页面列表
 
 - [[05_大模型/04_LLM架构/13_MoE_Routing_and_负载均衡|MoE Routing and Load Balancing]]
-- [[05_大模型/04_LLM架构/MoE_Case_Studies_DeepSeek_Mixtral|MoE Case Studies: DeepSeek and Mixtral]]
+- [[05_大模型/04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral|MoE Case Studies: DeepSeek and Mixtral]]
 - [[05_大模型/04_LLM架构/16_Transformer_替代架构|Transformer Alternatives: RWKV, RetNet, Mamba, and Beyond]]
 
 ## 相关页面

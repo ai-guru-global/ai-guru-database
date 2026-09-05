@@ -158,7 +158,7 @@ name_zh: "热门页面"
 - [[05_大模型/07_提示工程/02_Context_工程_模式]] — 上下文工程模式
 
 ### LLM 原理与架构
-- [[05_大模型/Transformer_Deep_Dive]] — Transformer 深度解析
+- [[05_大模型/03_Transformer架构/04_Transformer_架构详解]] — Transformer 深度解析
 - [[07_模型训练/01_训练基础/03_LLM_训练_深入分析]] — LLM 训练深度解析
 - [[10_部署推理/03_推理优化/02_LLM推理_深入分析]] — LLM 推理深度解析
 - [[05_大模型/04_LLM架构/04_LLM_架构_Evolution]] — LLM 架构演进

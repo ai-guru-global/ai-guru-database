@@ -132,8 +132,8 @@ pmon | sort -k4 -n
 
 ## Related
 
-- [[12_架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
-- [[12_架构基建/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]
+- [[12_架构基建/03_AI技术栈/09_AI技术栈_生产_工具链|AI Stack 生产工具链总览]]
+- [[12_架构基建/03_AI技术栈/01_AI技术栈_容器_Runtime_指南|AI Stack 容器与运行时指南]]
 - [[12_架构基建/03_AI技术栈/05_AI技术栈_推理_服务_指南|AI Stack 推理服务指南]]
 - [[12_架构基建/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
 - [[10_部署推理/03_推理优化/01_推理性能_基础|推理性能基础]]

@@ -1627,7 +1627,7 @@ for block in response.content:
 ### 架构基础
 
 - [LLM Architectures (大语言模型架构)](../04_LLM架构/05_LLM架构.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
-- [MoE Case Studies: DeepSeek & Mixtral](../04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md) — MoE 路由策略与专家专业化分析
+- [MoE Case Studies: DeepSeek & Mixtral](../04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略与专家专业化分析
 
 ### 推理模型
 

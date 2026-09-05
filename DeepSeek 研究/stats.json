@@ -1,0 +1,1122 @@
+{
+  "en": [
+    {
+      "url": "https://api-docs.deepseek.com/PromptLibrary",
+      "lang": "en",
+      "local": "en/PromptLibrary.md",
+      "title": "DeepSeek API Docs",
+      "words": 7,
+      "bytes": 82,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/faq",
+      "lang": "en",
+      "local": "en/faq.md",
+      "title": "FAQ",
+      "words": 678,
+      "bytes": 4760,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/markdown-page",
+      "lang": "en",
+      "local": "en/markdown-page.md",
+      "title": "Markdown page example",
+      "words": 29,
+      "bytes": 225,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/",
+      "lang": "en",
+      "local": "en/home.md",
+      "title": "Your First API Call",
+      "words": 407,
+      "bytes": 3451,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/api/create-completion",
+      "lang": "en",
+      "local": "en/api/create-completion.md",
+      "title": "Create FIM Completion (Beta)",
+      "words": 129,
+      "bytes": 1206,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/updates",
+      "lang": "en",
+      "local": "en/updates.md",
+      "title": "Change Log",
+      "words": 1257,
+      "bytes": 9769,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/prompt-library",
+      "lang": "en",
+      "local": "en/prompt-library.md",
+      "title": "Prompt Library",
+      "words": 9,
+      "bytes": 107,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/api/deepseek-api",
+      "lang": "en",
+      "local": "en/api/deepseek-api.md",
+      "title": "DeepSeek API",
+      "words": 77,
+      "bytes": 808,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/api/create-chat-completion",
+      "lang": "en",
+      "local": "en/api/create-chat-completion.md",
+      "title": "Create Chat Completion",
+      "words": 522,
+      "bytes": 5918,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/api/list-models",
+      "lang": "en",
+      "local": "en/api/list-models.md",
+      "title": "Lists Models",
+      "words": 137,
+      "bytes": 1060,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/api_samples/chat_nodejs",
+      "lang": "en",
+      "local": "en/api_samples/chat_nodejs.md",
+      "title": "chat_nodejs",
+      "words": 57,
+      "bytes": 633,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/api/get-user-balance",
+      "lang": "en",
+      "local": "en/api/get-user-balance.md",
+      "title": "Get User Balance",
+      "words": 89,
+      "bytes": 755,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/api_samples/chat_python",
+      "lang": "en",
+      "local": "en/api_samples/chat_python.md",
+      "title": "chat_python",
+      "words": 46,
+      "bytes": 629,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/api_samples/thinking_mode_api_example_non_streaming",
+      "lang": "en",
+      "local": "en/api_samples/thinking_mode_api_example_non_streaming.md",
+      "title": "thinking_mode_api_example_non_streaming",
+      "words": 70,
+      "bytes": 992,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/api_samples/thinking_mode_api_example_streaming",
+      "lang": "en",
+      "local": "en/api_samples/thinking_mode_api_example_streaming.md",
+      "title": "thinking_mode_api_example_streaming",
+      "words": 89,
+      "bytes": 1191,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/api_samples/thinking_mode_api_example_tool_call",
+      "lang": "en",
+      "local": "en/api_samples/thinking_mode_api_example_tool_call.md",
+      "title": "thinking_mode_api_example_tool_call",
+      "words": 248,
+      "bytes": 2914,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/api_samples/thinking_mode_api_example_tool_call_output",
+      "lang": "en",
+      "local": "en/api_samples/thinking_mode_api_example_tool_call_output.md",
+      "title": "thinking_mode_api_example_tool_call_output",
+      "words": 240,
+      "bytes": 2304,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/api_samples/chat_curl",
+      "lang": "en",
+      "local": "en/api_samples/chat_curl.md",
+      "title": "chat_curl",
+      "words": 46,
+      "bytes": 527,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/guides/anthropic_api",
+      "lang": "en",
+      "local": "en/guides/anthropic_api.md",
+      "title": "Anthropic API",
+      "words": 686,
+      "bytes": 4470,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/guides/chat_prefix_completion",
+      "lang": "en",
+      "local": "en/guides/chat_prefix_completion.md",
+      "title": "Chat Prefix Completion (Beta)",
+      "words": 204,
+      "bytes": 1585,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/guides/fim_completion",
+      "lang": "en",
+      "local": "en/guides/fim_completion.md",
+      "title": "FIM Completion (Beta)",
+      "words": 202,
+      "bytes": 1626,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/guides/json_mode",
+      "lang": "en",
+      "local": "en/guides/json_mode.md",
+      "title": "JSON Output",
+      "words": 283,
+      "bytes": 2111,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/guides/multi_round_chat",
+      "lang": "en",
+      "local": "en/guides/multi_round_chat.md",
+      "title": "Multi-round Conversation",
+      "words": 243,
+      "bytes": 2010,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/guides/coding_agents",
+      "lang": "en",
+      "local": "en/guides/coding_agents.md",
+      "title": "Integrate with AI Tools",
+      "words": 527,
+      "bytes": 4546,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/guides/kv_cache",
+      "lang": "en",
+      "local": "en/guides/kv_cache.md",
+      "title": "Context Caching",
+      "words": 849,
+      "bytes": 5417,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/news/news0725",
+      "lang": "en",
+      "local": "en/news/news0725.md",
+      "title": "DeepSeek API Upgrade",
+      "words": 779,
+      "bytes": 5358,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/guides/tool_calls",
+      "lang": "en",
+      "local": "en/guides/tool_calls.md",
+      "title": "Tool Calls",
+      "words": 1033,
+      "bytes": 8821,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/guides/thinking_mode",
+      "lang": "en",
+      "local": "en/guides/thinking_mode.md",
+      "title": "Thinking Mode",
+      "words": 1286,
+      "bytes": 11555,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/news/news1120",
+      "lang": "en",
+      "local": "en/news/news1120.md",
+      "title": "🚀 DeepSeek-R1-Lite-Preview is now live: unleashing supercharged reasoning power!",
+      "words": 94,
+      "bytes": 867,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/news/news0905",
+      "lang": "en",
+      "local": "en/news/news0905.md",
+      "title": "DeepSeek-V2.5: A New Open-Source Model Combining General and Coding Capabilities",
+      "words": 624,
+      "bytes": 4751,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/news/news1210",
+      "lang": "en",
+      "local": "en/news/news1210.md",
+      "title": "🚀 DeepSeek V2.5: The Grand Finale 🎉",
+      "words": 160,
+      "bytes": 1250,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/news/news1226",
+      "lang": "en",
+      "local": "en/news/news1226.md",
+      "title": "🚀 Introducing DeepSeek-V3",
+      "words": 205,
+      "bytes": 1485,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/news/news250115",
+      "lang": "en",
+      "local": "en/news/news250115.md",
+      "title": "Introducing DeepSeek App",
+      "words": 130,
+      "bytes": 897,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/news/news250120",
+      "lang": "en",
+      "local": "en/news/news250120.md",
+      "title": "DeepSeek-R1 Release",
+      "words": 227,
+      "bytes": 1700,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/news/news0802",
+      "lang": "en",
+      "local": "en/news/news0802.md",
+      "title": "DeepSeek API introduces Context Caching on Disk, cutting prices by an order of magnitude",
+      "words": 705,
+      "bytes": 4627,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/news/news250325",
+      "lang": "en",
+      "local": "en/news/news250325.md",
+      "title": "DeepSeek-V3-0324 Release",
+      "words": 79,
+      "bytes": 690,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/news/news250528",
+      "lang": "en",
+      "local": "en/news/news250528.md",
+      "title": "DeepSeek-R1-0528 Release",
+      "words": 60,
+      "bytes": 746,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/news/news250821",
+      "lang": "en",
+      "local": "en/news/news250821.md",
+      "title": "DeepSeek-V3.1 Release",
+      "words": 247,
+      "bytes": 2305,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/news/news260424",
+      "lang": "en",
+      "local": "en/news/news260424.md",
+      "title": "DeepSeek V4 Preview Release",
+      "words": 375,
+      "bytes": 3122,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/astrbot",
+      "lang": "en",
+      "local": "en/quick_start/agent_integrations/astrbot.md",
+      "title": "Integrate with AstrBot",
+      "words": 357,
+      "bytes": 2546,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/claude_code",
+      "lang": "en",
+      "local": "en/quick_start/agent_integrations/claude_code.md",
+      "title": "Integrate with Claude Code",
+      "words": 452,
+      "bytes": 4539,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/crush",
+      "lang": "en",
+      "local": "en/quick_start/agent_integrations/crush.md",
+      "title": "Integrate with Crush",
+      "words": 277,
+      "bytes": 2417,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/copilot_cli",
+      "lang": "en",
+      "local": "en/quick_start/agent_integrations/copilot_cli.md",
+      "title": "Integrate with GitHub Copilot CLI",
+      "words": 304,
+      "bytes": 2840,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/deepcode",
+      "lang": "en",
+      "local": "en/quick_start/agent_integrations/deepcode.md",
+      "title": "Integrate with Deep Code",
+      "words": 366,
+      "bytes": 2672,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/github_copilot",
+      "lang": "en",
+      "local": "en/quick_start/agent_integrations/github_copilot.md",
+      "title": "Integrate with GitHub Copilot",
+      "words": 358,
+      "bytes": 2315,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/news/news250922",
+      "lang": "en",
+      "local": "en/news/news250922.md",
+      "title": "DeepSeek-V3.1-Terminus",
+      "words": 105,
+      "bytes": 940,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/news/news251201",
+      "lang": "en",
+      "local": "en/news/news251201.md",
+      "title": "DeepSeek-V3.2 Release",
+      "words": 249,
+      "bytes": 2536,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/news/news250929",
+      "lang": "en",
+      "local": "en/news/news250929.md",
+      "title": "Introducing DeepSeek-V3.2-Exp",
+      "words": 167,
+      "bytes": 1582,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/pi_mono",
+      "lang": "en",
+      "local": "en/quick_start/agent_integrations/pi_mono.md",
+      "title": "Integrate with Pi",
+      "words": 369,
+      "bytes": 3628,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/oh_my_pi",
+      "lang": "en",
+      "local": "en/quick_start/agent_integrations/oh_my_pi.md",
+      "title": "Using DeepSeek with Oh My Pi",
+      "words": 604,
+      "bytes": 5189,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/hermes",
+      "lang": "en",
+      "local": "en/quick_start/agent_integrations/hermes.md",
+      "title": "Integrate with Hermes Agent",
+      "words": 212,
+      "bytes": 1625,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/langcli",
+      "lang": "en",
+      "local": "en/quick_start/agent_integrations/langcli.md",
+      "title": "Integrate with Langcli",
+      "words": 177,
+      "bytes": 1408,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/kilo_code",
+      "lang": "en",
+      "local": "en/quick_start/agent_integrations/kilo_code.md",
+      "title": "Integrate with Kilo Code",
+      "words": 182,
+      "bytes": 1247,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/openclaw",
+      "lang": "en",
+      "local": "en/quick_start/agent_integrations/openclaw.md",
+      "title": "Integrate with OpenClaw",
+      "words": 396,
+      "bytes": 2946,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/nanobot",
+      "lang": "en",
+      "local": "en/quick_start/agent_integrations/nanobot.md",
+      "title": "Integrating nanobot",
+      "words": 204,
+      "bytes": 1632,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/opencode",
+      "lang": "en",
+      "local": "en/quick_start/agent_integrations/opencode.md",
+      "title": "Integrate with OpenCode",
+      "words": 184,
+      "bytes": 1381,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "lang": "en",
+      "local": "en/quick_start/pricing.md",
+      "title": "Models & Pricing",
+      "words": 380,
+      "bytes": 2459,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/reasonix",
+      "lang": "en",
+      "local": "en/quick_start/agent_integrations/reasonix.md",
+      "title": "Integrate with Reasonix",
+      "words": 207,
+      "bytes": 1562,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/rate_limit",
+      "lang": "en",
+      "local": "en/quick_start/rate_limit.md",
+      "title": "Rate Limit & Isolation",
+      "words": 578,
+      "bytes": 4102,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/workbuddy",
+      "lang": "en",
+      "local": "en/quick_start/agent_integrations/workbuddy.md",
+      "title": "Integrate with WorkBuddy/CodeBuddy",
+      "words": 452,
+      "bytes": 3788,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/error_codes",
+      "lang": "en",
+      "local": "en/quick_start/error_codes.md",
+      "title": "Error Codes",
+      "words": 279,
+      "bytes": 1906,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/quick_start/token_usage",
+      "lang": "en",
+      "local": "en/quick_start/token_usage.md",
+      "title": "Token & Token Usage",
+      "words": 212,
+      "bytes": 1377,
+      "status": "ok"
+    }
+  ],
+  "zh-cn": [
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/markdown-page",
+      "lang": "zh-cn",
+      "local": "zh-cn/markdown-page.md",
+      "title": "Markdown page example",
+      "words": 29,
+      "bytes": 231,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/",
+      "lang": "zh-cn",
+      "local": "zh-cn/home.md",
+      "title": "首次调用 API",
+      "words": 271,
+      "bytes": 3272,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/PromptLibrary",
+      "lang": "zh-cn",
+      "local": "zh-cn/PromptLibrary.md",
+      "title": "DeepSeek API Docs",
+      "words": 7,
+      "bytes": 88,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/prompt-library",
+      "lang": "zh-cn",
+      "local": "zh-cn/prompt-library.md",
+      "title": "Prompt Library",
+      "words": 9,
+      "bytes": 113,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/updates",
+      "lang": "zh-cn",
+      "local": "zh-cn/updates.md",
+      "title": "更新日志",
+      "words": 550,
+      "bytes": 8470,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/faq",
+      "lang": "zh-cn",
+      "local": "zh-cn/faq.md",
+      "title": "常见问题",
+      "words": 220,
+      "bytes": 7777,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/api/create-completion",
+      "lang": "zh-cn",
+      "local": "zh-cn/api/create-completion.md",
+      "title": "FIM 补全（Beta）",
+      "words": 104,
+      "bytes": 1125,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/api_samples/chat_curl",
+      "lang": "zh-cn",
+      "local": "zh-cn/api_samples/chat_curl.md",
+      "title": "chat_curl",
+      "words": 46,
+      "bytes": 533,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/api/list-models",
+      "lang": "zh-cn",
+      "local": "zh-cn/api/list-models.md",
+      "title": "列出模型",
+      "words": 75,
+      "bytes": 919,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/api_samples/chat_python",
+      "lang": "zh-cn",
+      "local": "zh-cn/api_samples/chat_python.md",
+      "title": "chat_python",
+      "words": 46,
+      "bytes": 635,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/api/create-chat-completion",
+      "lang": "zh-cn",
+      "local": "zh-cn/api/create-chat-completion.md",
+      "title": "对话补全",
+      "words": 488,
+      "bytes": 5867,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/api_samples/chat_nodejs",
+      "lang": "zh-cn",
+      "local": "zh-cn/api_samples/chat_nodejs.md",
+      "title": "chat_nodejs",
+      "words": 57,
+      "bytes": 639,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/api/get-user-balance",
+      "lang": "zh-cn",
+      "local": "zh-cn/api/get-user-balance.md",
+      "title": "查询余额",
+      "words": 67,
+      "bytes": 686,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/api_samples/thinking_mode_api_example_non_streaming",
+      "lang": "zh-cn",
+      "local": "zh-cn/api_samples/thinking_mode_api_example_non_streaming.md",
+      "title": "thinking_mode_api_example_non_streaming",
+      "words": 70,
+      "bytes": 998,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/api/deepseek-api",
+      "lang": "zh-cn",
+      "local": "zh-cn/api/deepseek-api.md",
+      "title": "Deepseek API",
+      "words": 58,
+      "bytes": 743,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/api_samples/thinking_mode_api_example_tool_call_output",
+      "lang": "zh-cn",
+      "local": "zh-cn/api_samples/thinking_mode_api_example_tool_call_output.md",
+      "title": "thinking_mode_api_example_tool_call_output",
+      "words": 240,
+      "bytes": 2310,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/api_samples/thinking_mode_api_example_streaming",
+      "lang": "zh-cn",
+      "local": "zh-cn/api_samples/thinking_mode_api_example_streaming.md",
+      "title": "thinking_mode_api_example_streaming",
+      "words": 89,
+      "bytes": 1197,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/guides/anthropic_api",
+      "lang": "zh-cn",
+      "local": "zh-cn/guides/anthropic_api.md",
+      "title": "Anthropic API",
+      "words": 581,
+      "bytes": 4415,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/guides/coding_agents",
+      "lang": "zh-cn",
+      "local": "zh-cn/guides/coding_agents.md",
+      "title": "接入 Agent 工具",
+      "words": 291,
+      "bytes": 4229,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/api_samples/thinking_mode_api_example_tool_call",
+      "lang": "zh-cn",
+      "local": "zh-cn/api_samples/thinking_mode_api_example_tool_call.md",
+      "title": "thinking_mode_api_example_tool_call",
+      "words": 248,
+      "bytes": 2920,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/guides/json_mode",
+      "lang": "zh-cn",
+      "local": "zh-cn/guides/json_mode.md",
+      "title": "JSON Output",
+      "words": 172,
+      "bytes": 2037,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/guides/multi_round_chat",
+      "lang": "zh-cn",
+      "local": "zh-cn/guides/multi_round_chat.md",
+      "title": "多轮对话",
+      "words": 137,
+      "bytes": 1807,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/guides/fim_completion",
+      "lang": "zh-cn",
+      "local": "zh-cn/guides/fim_completion.md",
+      "title": "FIM 补全（Beta）",
+      "words": 79,
+      "bytes": 1476,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/guides/kv_cache",
+      "lang": "zh-cn",
+      "local": "zh-cn/guides/kv_cache.md",
+      "title": "上下文硬盘缓存",
+      "words": 198,
+      "bytes": 4734,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news0725",
+      "lang": "zh-cn",
+      "local": "zh-cn/news/news0725.md",
+      "title": "DeepSeek API 升级，支持续写、FIM、Function Calling、JSON Output",
+      "words": 250,
+      "bytes": 4865,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/guides/thinking_mode",
+      "lang": "zh-cn",
+      "local": "zh-cn/guides/thinking_mode.md",
+      "title": "思考模式",
+      "words": 820,
+      "bytes": 11033,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/guides/tool_calls",
+      "lang": "zh-cn",
+      "local": "zh-cn/guides/tool_calls.md",
+      "title": "Tool Calls",
+      "words": 641,
+      "bytes": 8174,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/guides/chat_prefix_completion",
+      "lang": "zh-cn",
+      "local": "zh-cn/guides/chat_prefix_completion.md",
+      "title": "对话前缀续写（Beta）",
+      "words": 87,
+      "bytes": 1425,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news1210",
+      "lang": "zh-cn",
+      "local": "zh-cn/news/news1210.md",
+      "title": "DeepSeek V2 系列收官，联网搜索上线官网",
+      "words": 75,
+      "bytes": 2459,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news1226",
+      "lang": "zh-cn",
+      "local": "zh-cn/news/news1226.md",
+      "title": "DeepSeek-V3 正式发布",
+      "words": 183,
+      "bytes": 3890,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news0802",
+      "lang": "zh-cn",
+      "local": "zh-cn/news/news0802.md",
+      "title": "DeepSeek API 创新采用硬盘缓存，价格再降一个数量级",
+      "words": 170,
+      "bytes": 4396,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news1120",
+      "lang": "zh-cn",
+      "local": "zh-cn/news/news1120.md",
+      "title": "DeepSeek推理模型预览版上线，解密o1推理过程",
+      "words": 82,
+      "bytes": 2555,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news0905",
+      "lang": "zh-cn",
+      "local": "zh-cn/news/news0905.md",
+      "title": "DeepSeek-V2.5：融合通用与代码能力的全新开源模型",
+      "words": 168,
+      "bytes": 3956,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news250115",
+      "lang": "zh-cn",
+      "local": "zh-cn/news/news250115.md",
+      "title": "DeepSeek APP",
+      "words": 9,
+      "bytes": 101,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news250120",
+      "lang": "zh-cn",
+      "local": "zh-cn/news/news250120.md",
+      "title": "DeepSeek-R1 发布，性能对标 OpenAI o1 正式版",
+      "words": 123,
+      "bytes": 2935,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news250528",
+      "lang": "zh-cn",
+      "local": "zh-cn/news/news250528.md",
+      "title": "DeepSeek-R1 更新，思考更深，推理更强",
+      "words": 197,
+      "bytes": 4679,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news250821",
+      "lang": "zh-cn",
+      "local": "zh-cn/news/news250821.md",
+      "title": "DeepSeek-V3.1 发布",
+      "words": 162,
+      "bytes": 3760,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news250325",
+      "lang": "zh-cn",
+      "local": "zh-cn/news/news250325.md",
+      "title": "DeepSeek-V3 模型更新，各项能力全面进阶",
+      "words": 96,
+      "bytes": 2555,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news250922",
+      "lang": "zh-cn",
+      "local": "zh-cn/news/news250922.md",
+      "title": "DeepSeek-V3.1 版本更新",
+      "words": 50,
+      "bytes": 1262,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news250929",
+      "lang": "zh-cn",
+      "local": "zh-cn/news/news250929.md",
+      "title": "DeepSeek-V3.2-Exp 发布，训练推理提效，API 同步降价",
+      "words": 134,
+      "bytes": 3805,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news251201",
+      "lang": "zh-cn",
+      "local": "zh-cn/news/news251201.md",
+      "title": "DeepSeek V3.2 正式版：强化 Agent 能力，融入思考推理",
+      "words": 185,
+      "bytes": 6087,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/astrbot",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/agent_integrations/astrbot.md",
+      "title": "接入 AstrBot",
+      "words": 152,
+      "bytes": 2313,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news260424",
+      "lang": "zh-cn",
+      "local": "zh-cn/news/news260424.md",
+      "title": "DeepSeek-V4 预览版：迈入百万上下文普惠时代",
+      "words": 180,
+      "bytes": 4618,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/github_copilot",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/agent_integrations/github_copilot.md",
+      "title": "接入 GitHub Copilot",
+      "words": 197,
+      "bytes": 2249,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/crush",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/agent_integrations/crush.md",
+      "title": "接入 Crush",
+      "words": 171,
+      "bytes": 2265,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/deepcode",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/agent_integrations/deepcode.md",
+      "title": "集成 Deep Code",
+      "words": 227,
+      "bytes": 2476,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/copilot_cli",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/agent_integrations/copilot_cli.md",
+      "title": "接入 GitHub Copilot CLI",
+      "words": 206,
+      "bytes": 2812,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/hermes",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/agent_integrations/hermes.md",
+      "title": "接入 Hermes",
+      "words": 89,
+      "bytes": 1432,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/kilo_code",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/agent_integrations/kilo_code.md",
+      "title": "接入 Kilo Code",
+      "words": 107,
+      "bytes": 1114,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/langcli",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/agent_integrations/langcli.md",
+      "title": "接入 Langcli",
+      "words": 94,
+      "bytes": 1257,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/oh_my_pi",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/agent_integrations/oh_my_pi.md",
+      "title": "在 Oh My Pi 中使用 DeepSeek",
+      "words": 426,
+      "bytes": 5117,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/openclaw",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/agent_integrations/openclaw.md",
+      "title": "接入 OpenClaw",
+      "words": 204,
+      "bytes": 2746,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/nanobot",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/agent_integrations/nanobot.md",
+      "title": "接入 nanobot",
+      "words": 115,
+      "bytes": 1498,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/reasonix",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/agent_integrations/reasonix.md",
+      "title": "接入 Reasonix",
+      "words": 106,
+      "bytes": 1476,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/pi_mono",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/agent_integrations/pi_mono.md",
+      "title": "接入 Pi",
+      "words": 240,
+      "bytes": 3462,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/workbuddy",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/agent_integrations/workbuddy.md",
+      "title": "接入 WorkBuddy/CodeBuddy",
+      "words": 253,
+      "bytes": 3528,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/error_codes",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/error_codes.md",
+      "title": "错误码",
+      "words": 91,
+      "bytes": 1436,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/pricing.md",
+      "title": "模型 & 价格",
+      "words": 161,
+      "bytes": 2353,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/rate_limit",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/rate_limit.md",
+      "title": "限速与隔离",
+      "words": 207,
+      "bytes": 3548,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/token_usage",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/token_usage.md",
+      "title": "Token 用量计算",
+      "words": 63,
+      "bytes": 1169,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/claude_code",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/agent_integrations/claude_code.md",
+      "title": "接入 Claude Code",
+      "words": 252,
+      "bytes": 4365,
+      "status": "ok"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/opencode",
+      "lang": "zh-cn",
+      "local": "zh-cn/quick_start/agent_integrations/opencode.md",
+      "title": "接入 OpenCode",
+      "words": 86,
+      "bytes": 1167,
+      "status": "ok"
+    }
+  ]
+}

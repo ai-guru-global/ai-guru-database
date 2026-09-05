@@ -938,7 +938,7 @@ V2X增强:
 
 ### 本知识库相关页面
 
-- [[3D_Vision]] - 3D计算机视觉 (3D检测/点云基础)
+- [[概念/Vision/3d-vision]] - 3D计算机视觉 (3D检测/点云基础)
 - [[04_计算机视觉/01_CV基础/05_ViT_深入分析]] - Vision Transformer (BEV感知骨干)
 - [[概念/Vision/object-detection]] - 目标检测 (2D/3D检测基础)
 - [[概念/Vision/object-detection]] - 目标检测完整指南

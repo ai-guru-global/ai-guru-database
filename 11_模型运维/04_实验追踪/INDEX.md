@@ -17,7 +17,7 @@ This page indexes the contents of `11_模型运维/04_实验追踪`.
 ## Files
 
 - [[11_模型运维/04_实验追踪/01_ClearML_深入分析|Clearml Deep Dive]]
-- [[11_模型运维/04_实验追踪/Experiment_Tracking_Deep_Dive|Experiment Tracking Deep Dive]]
+- [[11_模型运维/04_实验追踪/02_实验追踪_深入分析|Experiment Tracking Deep Dive]]
 - [[11_模型运维/04_实验追踪/04_Feast_深入分析|Feast Deep Dive]]
 - [[11_模型运维/04_实验追踪/Feature_Store_Deep_Dive|Feature Store Deep Dive]]
 - [[11_模型运维/04_实验追踪/07_MLflow_深入分析|Mlflow Deep Dive]]

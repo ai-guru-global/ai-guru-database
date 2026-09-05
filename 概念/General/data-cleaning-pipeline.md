@@ -99,7 +99,7 @@ name_zh: "数据清洗 Pipeline"
 - [[概念/llm-data-engineering]] — 大模型数据工程
 - [[概念/model-training]] — 模型训练
 - [[概念/synthetic-data]] — 合成数据
-- [[07_模型训练/02_数据工程/Data_Curation_and_Mixture_2026]] — 数据策展与配比 2026
+- [[07_模型训练/02_数据工程/04_数据_Curation_and_Mixture_2026]] — 数据策展与配比 2026
 - [[05_大模型/05_LLM数据工程/README]] — 大模型数据工程
 
 ---

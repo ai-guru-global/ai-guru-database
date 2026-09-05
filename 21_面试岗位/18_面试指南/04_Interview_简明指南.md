@@ -57,7 +57,7 @@ flowchart TB
 
 | 赛道 | 岗位 | 核心考察 | 入口 |
 |------|------|----------|------|
-| 研究 | Research Scientist / Applied Scientist | 论文、数学推导、实验设计 | [[21_面试岗位/Research_Scientist|研究科学家]] |
+| 研究 | Research Scientist / Applied Scientist | 论文、数学推导、实验设计 | [[21_面试岗位/24_研究科学家/README|研究科学家]] |
 | 算法工程 | Machine Learning Engineer | ML 基础 + 编程 + 系统设计 | [[21_面试岗位/INDEX|MLE]] |
 | LLM 平台 | LLM Platform Engineer | 推理优化、分布式、GPU | [[21_面试岗位/README.md|LLM 平台工程师]] |
 | 智能体 | Agent Engineer | Agent 架构、工具调用、RAG | [[21_面试岗位/Agent_Engineer/Agent_Engineer_2026|Agent 工程师]] |

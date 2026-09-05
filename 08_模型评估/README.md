@@ -84,7 +84,7 @@ name_zh: "模型评估"
 - [[08_模型评估/02_基准测试/01_Agentic_基准测试_指南|Agentic Benchmarks — AI Agent 评测全景指南]]
 - [[08_模型评估/04_评估工具/03_LLM_as_Judge_深入分析|LLM-as-Judge 深度解析 (LLM-as-Judge Deep Dive)]]
 - [[08_模型评估/Evaluation-in-nutshell|模型评估速成指南]]
-- [[08_模型评估/04_评估工具/Online_Evaluation|在线评估 (Online Evaluation)]]
+- [[概念/General/online-evaluation|在线评估 (Online Evaluation)]]
 - [[08_模型评估/README.md|公平性评估 - 小白版]]
 - [[08_模型评估/Evaluation_Automation_2026|自动化模型评估 2026 (Evaluation Automation)]]
 - [[08_模型评估/README|08 模型评估 — 小白版 📝]]

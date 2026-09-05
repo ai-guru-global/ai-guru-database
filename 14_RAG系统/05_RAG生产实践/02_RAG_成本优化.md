@@ -910,7 +910,7 @@ RAG成本优化检查清单 (按优先级):
 - [[14_RAG系统/04_高级RAG/12_RAG_高级_2026|RAG高级实践2026]] — RAG核心优化技术
 - [[14_RAG系统/04_高级RAG/09_Long_上下文_vs_RAG_2026|长上下文vs RAG]] — 架构选择与成本
 - [[14_RAG系统/04_高级RAG/03_Code_RAG_架构|代码RAG架构]] — 代码场景成本
-- [[14_RAG系统/04_高级RAG/RAG_Retrieval_Latency_Optimization|RAG检索延迟优化]] — 延迟与成本权衡
+- [[14_RAG系统/04_高级RAG/14_RAG_检索_延迟_优化|RAG检索延迟优化]] — 延迟与成本权衡
 - [[14_RAG系统/02_嵌入技术/01_嵌入_模型_指南|嵌入模型指南]] — 嵌入成本选型
 - [[概念/RAG/matryoshka-representation-learning|Matryoshka表示学习]] — 降维节约
 - [[14_RAG系统/03_向量数据库/04_Qdrant_深入分析|Qdrant深度解析]] — 向量数据库成本

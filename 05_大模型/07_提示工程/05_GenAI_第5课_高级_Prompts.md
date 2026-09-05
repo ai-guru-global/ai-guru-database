@@ -730,7 +730,7 @@ if __name__ == '__main__':
 ## 扩展阅读
 
 - [[90_学习/03_课程资源/microsoft/01_microsoft_genai_for_beginners]] — 课程总览与章节映射
-- [[05_大模型/07_提示工程/GenAI_L04_Prompt_Engineering_Fundamentals]] — 第 4 课：提示工程基础
+- [[05_大模型/07_提示工程/04_GenAI_第4课_Prompt工程_基础]] — 第 4 课：提示工程基础
 - [[05_大模型/07_提示工程/16_Prompt工程]] — 提示工程深度指南
 - [[05_大模型/12_LLM产品/05_god_tier_prompts_概览]] — 高级提示模式概览
 
@@ -738,4 +738,4 @@ if __name__ == '__main__':
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[05_大模型/07_提示工程/GenAI_L04_Prompt_Engineering_Fundamentals|L04 提示工程基础]] | [[15_智能体/GenAI_L06_Text_Generation_Apps|L06 构建文本生成应用]] |
+| [[05_大模型/07_提示工程/04_GenAI_第4课_Prompt工程_基础|L04 提示工程基础]] | [[15_智能体/GenAI_L06_Text_Generation_Apps|L06 构建文本生成应用]] |

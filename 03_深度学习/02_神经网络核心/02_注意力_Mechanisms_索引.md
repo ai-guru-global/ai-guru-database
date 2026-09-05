@@ -32,7 +32,7 @@ name_zh: "注意力机制"
 ## 相关文档
 
 - [[03_深度学习/README|深度学习总览]]
-- [[05_大模型/Transformer_Deep_Dive|Transformer 深度解析]]
+- [[05_大模型/03_Transformer架构/04_Transformer_架构详解|Transformer 深度解析]]
 - [[概念/LLM/state-space-models|状态空间模型]]
 
 ## 专题深度解析

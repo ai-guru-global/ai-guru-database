@@ -39,7 +39,7 @@ name_zh: "RAG 与 Agent 的融合"
 1. **RAG 作为 Agent 工具** ([[14_RAG系统/04_高级RAG/12_RAG_高级_2026]]):
    - Agent 将 RAG 检索作为一个 Tool Calling 动作
    - 决定何时检索、检索什么、如何使用结果
-   - 参考: [[15_智能体/05_Agent技能/Tool_Calling_Best_Practices]]
+   - 参考: [[15_智能体/05_Agent技能/14_工具调用_最佳实践]]
 
 2. **Agent 增强 RAG** ([[15_智能体/01_Agent基础/16_AI_Agent]]):
    - Agent 自主优化检索策略（选择数据库、调整查询）
@@ -77,7 +77,7 @@ name_zh: "RAG 与 Agent 的融合"
 - [[14_RAG系统/04_高级RAG/12_RAG_高级_2026]] — RAG 高级实践
 - [[15_智能体/README]] — Agent 生产部署
 - [[15_智能体/03_Agent工作流/02_Agentic_工作流_设计_模式_2026]] — Agentic 工作流设计模式
-- [[15_智能体/05_Agent技能/Tool_Calling_Best_Practices]] — Tool Calling 最佳实践
+- [[15_智能体/05_Agent技能/14_工具调用_最佳实践]] — Tool Calling 最佳实践
 
 ## 附录：核心概念速查
 

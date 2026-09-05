@@ -21,7 +21,7 @@ name_en: "Research Scientist"
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[21_面试岗位/Research_Scientist/Research_Scientist|Research Scientist]] | 岗位面试全攻略：论文阅读方法论、实验设计与学术写作要点 | research scientist candidates / PhD holders |
+| [[21_面试岗位/24_研究科学家/README|Research Scientist]] | 岗位面试全攻略：论文阅读方法论、实验设计与学术写作要点 | research scientist candidates / PhD holders |
 
 ## Related
 

@@ -141,7 +141,7 @@ ranked = sorted(zip(candidates, scores), key=lambda x: -x[1])
 - [[概念/RAG/reranker|Reranker]]
 - [[概念/RAG/rag-systems|RAG Systems]]
 - [[概念/RAG/vector-index|向量索引]]
-- [[14_RAG系统/04_高级RAG/RAG_Retrieval_Latency_Optimization|RAG 检索延迟优化]]
+- [[14_RAG系统/04_高级RAG/14_RAG_检索_延迟_优化|RAG 检索延迟优化]]
 
 ## 2026 Cross-Encoder 生态
 

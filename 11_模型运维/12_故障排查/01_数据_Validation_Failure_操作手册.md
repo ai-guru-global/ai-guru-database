@@ -149,7 +149,7 @@ Step 7: 记录 incident 与数据质量报告
 - [[概念/pandera|Pandera]]
 - [[概念/evidently|Evidently]]
 - [[11_模型运维/06_持续集成部署/04_ML_CI_CD|ML CI/CD]]
-- [[07_模型训练/02_数据工程/Data_Curation_and_Mixture_2026|数据策展与混合]]
+- [[07_模型训练/02_数据工程/04_数据_Curation_and_Mixture_2026|数据策展与混合]]
 
 ## MLOps核心流程对比
 

@@ -989,7 +989,7 @@ FRR = (误拒合法请求次数) / (合法请求总数)
 - [[17_伦理安全/08_AI供应链安全/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
 - [[17_伦理安全/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)
 - [[17_伦理安全/README]] — 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment) (共享: ai-ethics, alignment, red-teaming, safety)
-- [[17_伦理安全/04_AI安全与红队/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
-- [[治理/safety-evaluation-red-teaming|安全评测 × 红队]] — 评测与攻击的迭代
+- [[17_伦理安全/04_AI安全与红队/05_安全评估_框架|AI 安全评测框架]] — 安全评测基准与红队测试方法论
+- [[17_伦理安全/04_AI安全与红队/06_safety_evaluation_red_teaming|安全评测 × 红队]] — 评测与攻击的迭代
 
 - [[治理/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]]

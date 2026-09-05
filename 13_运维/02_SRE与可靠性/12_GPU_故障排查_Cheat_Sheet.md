@@ -146,6 +146,6 @@ kubectl logs -n kube-system -l name=nvidia-device-plugin-ds
 
 ## Related
 
-- [[13_运维/02_SRE与可靠性/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
+- [[13_运维/02_SRE与可靠性/11_GPU_OOM_故障排查_指南|GPU OOM 排障指南]]
 - [[07_模型训练/04_分布式训练/04_分布式训练_Hang_操作手册|分布式训练 Hang 排障]]
 - [[概念/nvidia-smi|nvidia-smi]]

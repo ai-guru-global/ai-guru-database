@@ -146,7 +146,7 @@ results = client.query_points(
 - [[概念/RAG/vector-database|Vector Database]] — 向量检索
 - [[概念/RAG/hnsw|HNSW]] — 向量索引
 - [[概念/RAG/hybrid-search|混合检索专题]] — 深度解析
-- [[14_RAG系统/04_高级RAG/RAG_Retrieval_Latency_Optimization|检索延迟优化]]
+- [[14_RAG系统/04_高级RAG/14_RAG_检索_延迟_优化|检索延迟优化]]
 
 ## 2026 混合检索生态现状
 

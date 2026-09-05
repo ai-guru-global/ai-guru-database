@@ -50,7 +50,7 @@ name_zh: "AI 面试与职业发展"
 
 - [[21_面试岗位/README]]
 - [[概念/ai-fundamentals]]
-- [[00_入门/AI_Learning_Resources]]
+- [[00_入门/03_学习路径/02_AI学习资源]]
 - [[16_编程/README.md]]
 
 ## 面试核心知识框架

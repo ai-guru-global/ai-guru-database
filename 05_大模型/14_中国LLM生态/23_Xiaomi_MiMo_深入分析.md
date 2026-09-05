@@ -410,7 +410,7 @@ graph TB
 | **加速比** | 2-3× | 2-3× |
 | **工程复杂度** | 低 | 高 |
 
-> **相关文档**: MTP 与 DeepSeek-V3 的 MTP 模块对比，参见 [MoE Case Studies: DeepSeek & Mixtral](../04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md)
+> **相关文档**: MTP 与 DeepSeek-V3 的 MTP 模块对比，参见 [MoE Case Studies: DeepSeek & Mixtral](../04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md)
 
 ### 3.4 1M Token 上下文窗口
 
@@ -1200,7 +1200,7 @@ MiMo 成本优化清单
 | **Qwen3-235B** | 235B | 22B | 128 | Top-K | 128K |
 | **Mixtral 8x22B** | 141B | 39B | 8 | Top-2 | 64K |
 
-> **MoE 深度分析**: [MoE Case Studies: DeepSeek & Mixtral](../04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md)
+> **MoE 深度分析**: [MoE Case Studies: DeepSeek & Mixtral](../04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md)
 
 ---
 
@@ -1274,7 +1274,7 @@ MiMo 未来路线图 (推测)
 ### 架构基础
 
 - [LLM Architectures (大语言模型架构)](../04_LLM架构/05_LLM架构.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
-- [MoE Case Studies: DeepSeek & Mixtral](../04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md) — MoE 路由策略、专家专业化、Multi-Token Prediction 的深度分析
+- [MoE Case Studies: DeepSeek & Mixtral](../04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略、专家专业化、Multi-Token Prediction 的深度分析
 - [MoE Routing and Load Balancing](../04_LLM架构/13_MoE_Routing_and_负载均衡.md) — MoE 负载均衡技术详解
 
 ### 推理与 Agent

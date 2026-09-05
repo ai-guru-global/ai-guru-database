@@ -508,8 +508,8 @@ def facets_compare(df_train, df_test):
 
 ## 10. 相关概念
 
-- [[Training_Monitoring_Visualization]] — 训练过程监控
-- [[Experiment_Tracking_Visualization]] — 实验追踪可视化
+- [[94_可视化/02_训练可视化/07_训练_监控_可视化]] — 训练过程监控
+- [[94_可视化/02_训练可视化/03_实验追踪_可视化]] — 实验追踪可视化
 - [[Embedding_Visualization_Guide]] — 嵌入空间可视化
 - [[94_可视化/01_最佳实践/04_Visualization_简明指南]] — 注意力可视化
 - [[Inference_Serving_Visualization]] — 推理服务监控

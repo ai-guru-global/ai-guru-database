@@ -20,7 +20,7 @@ This page indexes the contents of `07_模型训练/03_训练优化`.
 - [[07_模型训练/03_训练优化/04_Mixed_精确度_训练|Mixed Precision Training]]
 - [[03_深度学习/03_优化方法/02_优化|Optimization For Dummy]]
 - [[07_模型训练/03_训练优化/05_Optimizer_高级_2026|Optimizer Advanced 2026]]
-- [[07_模型训练/03_训练优化/Scaling_Laws_and_Training_Dynamics|Scaling Laws And Training Dynamics]]
+- [[07_模型训练/03_训练优化/06_扩展定律_and_训练_Dynamics|Scaling Laws And Training Dynamics]]
 - [[07_模型训练/03_训练优化/07_训练_优化_2026|Training Optimization 2026]]
 
 ## 专题深度解析

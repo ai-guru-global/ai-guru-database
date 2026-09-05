@@ -344,7 +344,7 @@ Aligned Chat Model（又好又安全）
 - [[概念/model-training]] — 模型训练基础
 - [[05_大模型/06_微调技术/03_微调技术]] — 微调技术小白版
 - [[07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南]] — TRL 实战：RLHF 与 DPO
-- [[07_模型训练/06_对齐研究/GRPO_and_New_Alignment_Methods]] — GRPO 与新一代对齐方法
+- [[07_模型训练/06_对齐训练/02_GRPO_and_新型_对齐_Methods]] — GRPO 与新一代对齐方法
 
 ---
 

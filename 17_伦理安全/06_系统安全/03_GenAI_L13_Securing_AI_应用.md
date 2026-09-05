@@ -418,7 +418,7 @@ AI红队测试并非包罗万象，应作为其他控制措施的补充，例如
 - [[90_学习/03_课程资源/microsoft/01_microsoft_genai_for_beginners]] - 课程总览
 - [[17_伦理安全/07_AI安全2026/README]] - AI安全前沿
 - [[17_伦理安全/04_AI安全与红队/02_AI安全_RedTeaming]] - 红队测试实践
-- [[17_伦理安全/04_AI安全与红队/Safety_Evaluation_Framework]] - 安全评估框架
+- [[17_伦理安全/04_AI安全与红队/05_安全评估_框架]] - 安全评估框架
 - [[11_模型运维/10_LLMOps_大模型运维/01_GenAI_L14_GenAI_应用_Lifecycle]] - AI应用生命周期
 
 ## 课程导航

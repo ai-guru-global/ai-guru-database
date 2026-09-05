@@ -667,12 +667,12 @@ Level 5: Token 级别 — 不同 token 的 loss 权重 (Selective LM, 2026 新�
 
 ## 13. 相关概念
 
-- [[Data_Curation_and_Mixture_2026]] - 数据配比与清洗
+- [[07_模型训练/02_数据工程/04_数据_Curation_and_Mixture_2026]] - 数据配比与清洗
 - [[概念/Training/synthetic-data]] - 合成数据训练
 - [[07_模型训练/01_训练基础/05_Multi_Stage_训练_流水线]] - 多阶段训练流水线
-- [[Scaling_Laws_and_Training_Dynamics]] - Scaling Laws 与训练动态
+- [[07_模型训练/03_训练优化/06_扩展定律_and_训练_Dynamics]] - Scaling Laws 与训练动态
 - [[07_模型训练/06_对齐训练/04_RLHF_at_Scale_2026]] - 大规模 RLHF
-- [[GRPO_and_New_Alignment_Methods]] - GRPO 与对齐方法
+- [[07_模型训练/06_对齐训练/02_GRPO_and_新型_对齐_Methods]] - GRPO 与对齐方法
 - [[概念/General/finops]] - 训练成本优化
 - [[07_模型训练/03_训练优化/01_Hyperparameter_Tuning]] - 超参数调优
 - [[07_模型训练/02_数据工程/07_pretraining_synthetic_data]] - 预训练合成数据

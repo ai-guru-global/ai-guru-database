@@ -128,7 +128,7 @@ ArgoCD 原生支持 Kustomize：
 - [[概念/helm]] — Helm（K8s 包管理）
 - [[概念/argocd]] — ArgoCD（GitOps）
 - [[概念/ci-cd]] — CI/CD 流水线
-- [[12_架构基建/AI_Stack_Container_Runtime_Guide]] — K8s 实践
+- [[12_架构基建/03_AI技术栈/01_AI技术栈_容器_Runtime_指南]] — K8s 实践
 
 ---
 

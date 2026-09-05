@@ -167,7 +167,7 @@ swift dpo \
 
 ## Related
 
-- [[12_架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
+- [[12_架构基建/03_AI技术栈/09_AI技术栈_生产_工具链|AI Stack 生产工具链总览]]
 - [[12_架构基建/03_AI技术栈/04_AI技术栈_GPU_监控_指南|AI Stack GPU 监控指南]]
 - [[12_架构基建/03_AI技术栈/08_AI技术栈_模型_Management_指南|AI Stack 模型下载与管理指南]]
 - [[07_模型训练/04_分布式训练/03_分布式训练_2026|分布式训练 2026]]

@@ -92,7 +92,7 @@ Cross-category wikilinks that bridge distant knowledge areas.
 
 | # | Source | Target | Score | Reasons |
 |---|--------|--------|------:|---------|
-| 1 | [[90_学习/03_课程资源/other/06_fastai_practical_dl]] | [[AI_Learning_Resources]] | 5 | Cross-category (90_Learn -> 00_AI_Introduction); isolated source (2 links) connecting to popular target (16 links) |
+| 1 | [[90_学习/03_课程资源/other/06_fastai_practical_dl]] | [[00_入门/03_学习路径/02_AI学习资源]] | 5 | Cross-category (90_Learn -> 00_AI_Introduction); isolated source (2 links) connecting to popular target (16 links) |
 | 2 | [[90_学习/05_参考资料/books/10_designing_ml_systems_huyen]] | [[90_学习/04_实践指南/02_AI工程路线图2026]] | 5 | Cross-category (参考 -> 90_Learn); isolated source (2 links) connecting to popular target (123 links) |
 | 3 | [[11_模型运维/14_云运维Agent/docs/02_agentscope_corpus_loading]] | [[13_运维/04_问题排查/05_diagnosis_work_order_hub]] | 5 | Cross-category (项目 -> 综合); isolated source (2 links) connecting to popular target (18 links) |
 | 4 | [[RAG_Debugging_Cheat_Sheet]] | [[vector-database]] | 5 | Cross-category (14_RAG_Systems -> 概念); isolated source (2 links) connecting to popular target (27 links) |

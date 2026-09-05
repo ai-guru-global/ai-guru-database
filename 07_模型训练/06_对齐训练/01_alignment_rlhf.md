@@ -54,7 +54,7 @@ name_zh: "价值对齐 × RLHF：从人类反馈到可扩展监督"
 
 ## 延伸阅读
 
-- [[治理/safety-evaluation-red-teaming|安全评测 × 红队测试]]
+- [[17_伦理安全/04_AI安全与红队/06_safety_evaluation_red_teaming|安全评测 × 红队测试]]
 - [[概念/ai-ethics|AI 伦理与治理]]
 
 ## 专题深度解析

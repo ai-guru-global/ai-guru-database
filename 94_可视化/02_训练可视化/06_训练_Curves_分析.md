@@ -432,7 +432,7 @@ loss       ──── 几乎不动
 
 ## 附录 E：与实验追踪的协作
 
-- 曲线与超参、代码版本、数据版本绑定（[[94_可视化/Training_Viz/Experiment_Tracking_Visualization|实验追踪]]）。
+- 曲线与超参、代码版本、数据版本绑定（[[94_可视化/02_训练可视化/03_实验追踪_可视化|实验追踪]]）。
 - 多实验曲线同图对比，标注关键事件（lr 衰减/早停）。
 - 用 tag/sweep 组织曲线，支持过滤与下钻。
 
@@ -456,8 +456,8 @@ loss       ──── 几乎不动
 
 - [[94_可视化/index|可视化首页]]
 - [[94_可视化/Training_Viz/index|Training Viz]]
-- [[94_可视化/Training_Viz/Training_Monitoring_Visualization|训练监控可视化]]
-- [[94_可视化/Training_Viz/Experiment_Tracking_Visualization|实验追踪可视化]]
+- [[94_可视化/02_训练可视化/07_训练_监控_可视化|训练监控可视化]]
+- [[94_可视化/02_训练可视化/03_实验追踪_可视化|实验追踪可视化]]
 - [[94_可视化/01_最佳实践/04_Visualization_简明指南|神经网络可视化]]
 - [[07_模型训练/index|模型训练]]
 - [[03_深度学习/index|深度学习]]

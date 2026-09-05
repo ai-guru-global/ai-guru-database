@@ -4,7 +4,7 @@ category: documentation
 tags: ["documentation", "docs-as-code", "ai-knowledge", "llmops", "mlops"]
 summary: "GitHub 上最全面的 AI 全栈中文知识库——从数学基础到 Agent 生产部署，含 LLMOps 完整主线。"
 created: 2026-05-31
-updated: 2026-08-25
+updated: 2026-09-04
 tier: supporting
 sources: []
 
@@ -18,7 +18,7 @@ name_zh: "AI Guru 知识库"
 
 <p><strong>这可能是 GitHub 上最全面的 AI 学习资源</strong></p>
 
-<p>从理论到生产的完整 AI 知识体系 | 2,061 篇核心文档 + 700+ 概念卡片 | 1,894 万字 | LLMOps 完整主线 | 2026 最新</p>
+<p>从理论到生产的完整 AI 知识体系 | 2,826 篇核心文档 + 700 概念卡片 | 1,928 万字 | LLMOps 完整主线 | 2026 最新</p>
 
 <p>
  <a href="#-快速开始"> 快速开始</a> •
@@ -29,8 +29,8 @@ name_zh: "AI Guru 知识库"
 </p>
 
 <p>
- <img src="https://img.shields.io/badge/核心文档-2061-blue?style=flat-square" alt="Docs">
- <img src="https://img.shields.io/badge/字数-1894万-green?style=flat-square" alt="Content">
+ <img src="https://img.shields.io/badge/核心文档-2826-blue?style=flat-square" alt="Docs">
+ <img src="https://img.shields.io/badge/字数-1928万-green?style=flat-square" alt="Content">
  <img src="https://img.shields.io/badge/章节-24-orange?style=flat-square" alt="Chapters">
  <img src="https://img.shields.io/badge/速成指南-70+-purple?style=flat-square" alt="Guides">
  <img src="https://img.shields.io/badge/概念卡片-700+-critical?style=flat-square" alt="Concepts">

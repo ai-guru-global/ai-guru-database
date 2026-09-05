@@ -656,7 +656,7 @@ class RedTeamFramework:
 - [[概念/model-evaluation]] — 模型评估
 - [[概念/llm-safety]] — LLM安全
 - [[17_伦理安全/06_系统安全/06_LLM_安全_Defense_指南]] — LLM安全防御指南
-- [[17_伦理安全/04_AI安全与红队/Safety_Evaluation_Framework]] — 安全评估框架
+- [[17_伦理安全/04_AI安全与红队/05_安全评估_框架]] — 安全评估框架
 
 ---
 

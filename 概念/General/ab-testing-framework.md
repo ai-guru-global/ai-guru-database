@@ -108,7 +108,7 @@ A/B 测试直接看真实用户身上的效果。
 - [[概念/model-deployment]] — 模型部署
 - [[概念/online-evaluation]] — 在线评估
 - [[概念/ci-integrated-evaluation]] — CI 集成评估
-- [[08_模型评估/04_评估工具/Online_Evaluation]] — 在线评估
+- [[概念/General/online-evaluation]] — 在线评估
 - [[11_模型运维/13_运维评估/03_LLM评估_流水线]] — LLM 评估流水线
 
 ---

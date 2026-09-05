@@ -33,6 +33,7 @@ name_zh: "模型训练"
 | [**数据策展与配比 2026**](07_模型训练/02_数据工程/04_数据_Curation_and_Mixture_2026.md) | 数据清洗/去重/配比/合成数据/多语言 | 数据工程 |
 | [数据集文档模板 (Datasheet)](07_模型训练/02_数据工程/05_数据sheet_模板.md) | 记录数据集来源、构成、偏差与使用限制的标准模板 | 数据工程师 / 合规 |
 | [**GRPO 与新对齐方法**](07_模型训练/06_对齐训练/02_GRPO_and_新型_对齐_Methods.md) | PPO/DPO/KTO/GRPO/RLOO/Reasoning RL | 对齐训练 |
+| [**训练四法大白话**](07_模型训练/01_训练基础/LLM_Training_Four_Methods_for_dummy.md) | CPT 读书 / SFT 背书 / DPO 纠错 / RL 实战（实习生类比速览） | 快速入门 |
 | [**剪枝与知识蒸馏**](07_模型训练/README.md) | Wanda/SparseGPT/LLM-Pruner/SFT 蒸馏 | 模型压缩 |
 | [**训练成本优化与 FinOps 2026**](07_模型训练/08_成本优化/02_训练_成本优化_and_FinOps_2026.md) | GPU 利用率、Spot 实例、Checkpoint、成本归因与预算告警 | 训练 FinOps |
 | [**Ray Deep Dive**](07_模型训练/04_分布式训练/13_Ray_深入分析.md) | 分布式 AI 计算框架：Train/Serve/Data/Tune | 分布式训练与推理 |
@@ -118,7 +119,7 @@ name_zh: "模型训练"
 - [[07_模型训练/README|07 模型训练 — 小白版 🏋️]]
 - [[07_模型训练/04_分布式训练/11_ms_swift_深入分析.md|ms-swift 深度解析：魔搭大模型训练推理全链路框架]]
 - [[07_模型训练/04_分布式训练/10_ms_swift_命令_Line_Parameters.md|ms-swift 命令行参数完全参考手册]]
-- [[AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
+- [[12_架构基建/03_AI技术栈/09_AI技术栈_生产_工具链|AI Stack 生产工具链总览]]
 - [[AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
 - [[概念/GPU/gpu|AI Stack GPU 监控指南]]
 - [[12_架构基建/03_AI技术栈/08_AI技术栈_模型_Management_指南|AI Stack 模型下载与管理指南]]

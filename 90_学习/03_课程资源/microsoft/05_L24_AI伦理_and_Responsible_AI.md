@@ -81,9 +81,9 @@ name_zh: "L24 - AI 伦理与负责任的 AI"
 - **不覆盖**：具体的公平性优化算法实现（如 Fairlearn 的 `ExponentiatedGradient`、`GridSearch`）、差分隐私训练、对抗样本防御、AI 法律法规细节。
 - **延伸**：
   - 想了解 AI 伦理全景 → [[17_伦理安全/Ethics-in-nutshell]]
-  - 想了解企业级 AI 治理、合规框架与落地流程 → [[17_伦理安全/AI_Governance_Compliance_2026]]
+  - 想了解企业级 AI 治理、合规框架与落地流程 → [[17_伦理安全/03_AI治理/01_AI治理合规2026]]
   - 想了解生成式 AI 的安全风险与缓解 → [[17_伦理安全/01_伦理基础/GenAI_L03_Using_GenAI_Responsibly]]
-  - 想了解红队测试与模型安全评估 → [[17_伦理安全/04_AI安全与红队/01_AI_红队测试_指南]]、[[17_伦理安全/04_AI安全与红队/Safety_Evaluation_Framework]]
+  - 想了解红队测试与模型安全评估 → [[17_伦理安全/04_AI安全与红队/01_AI_红队测试_指南]]、[[17_伦理安全/04_AI安全与红队/05_安全评估_框架]]
 
 ---
 
@@ -92,7 +92,7 @@ name_zh: "L24 - AI 伦理与负责任的 AI"
 - 课程索引：[[90_学习/03_课程资源/microsoft/02_microsoft_ai_for_beginners]]
 - 本库相关页面：
   - [[17_伦理安全/Ethics-in-nutshell]]
-  - [[17_伦理安全/AI_Governance_Compliance_2026]]
+  - [[17_伦理安全/03_AI治理/01_AI治理合规2026]]
 
 ## 核心知识框架
 

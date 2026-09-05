@@ -57,11 +57,11 @@ name_zh: "ApacheCN 机器学习主线"
 
 - 本库机器学习总览 → [[02_机器学习/README]]
 - 速成指南 → [[02_机器学习/ML-in-nutshell]]
-- 监督学习 → [[02_机器学习/02_监督学习/Supervised_Learning]]
-- 集成学习 → [[02_机器学习/04_集成学习/Ensemble_Learning]]
-- 无监督学习 → [[02_机器学习/03_无监督学习/Unsupervised_Learning]]
+- 监督学习 → [[概念/Math/supervised-learning]]
+- 集成学习 → [[概念/Math/ensemble-learning]]
+- 无监督学习 → [[概念/Math/unsupervised-learning]]
 - 特征工程 → [[02_机器学习/05_特征工程/01_特征工程]]
-- 推荐系统 → [[02_机器学习/10_推荐系统/Recommendation_Systems]]
+- 推荐系统 → [[概念/Math/recommendation-systems]]
 
 ## 参考
 

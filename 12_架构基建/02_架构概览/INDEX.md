@@ -21,10 +21,11 @@ This page indexes the contents of `12_架构基建/02_架构概览`.
 - [[12_架构基建/02_架构概览/03_AI_系统_架构_2026|AI System Architecture 2026]]
 - [[12_架构基建/02_架构概览/04_Airgapped_离线_部署_2026|Airgapped Offline Deployment 2026]]
 - [[12_架构基建/02_架构概览/05_Capacity_Planning_2026|Capacity Planning 2026]]
-- [[12_架构基建/02_架构概览/High_Availability_2026|High Availability 2026]]
-- [[12_架构基建/02_架构概览/Hybrid_Multi_Cloud_AI|Hybrid Multi Cloud AI]]
+- [[12_架构基建/02_架构概览/06_高可用_2026|High Availability 2026]]
+- [[12_架构基建/02_架构概览/07_混合_Multi_云_AI|Hybrid Multi Cloud AI]]
 - [[12_架构基建/02_架构概览/09_Multi_Tenant_架构|Multi Tenant Architecture]]
 - [[12_架构基建/02_架构概览/10_Spring_AI_架构|Spring AI Architecture]]
+- [[12_架构基建/02_架构概览/11_Token_工厂_2026|Token 工厂 2026]]
 
 ## 架构核心组件对比
 

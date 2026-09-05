@@ -19,7 +19,7 @@ AI 研究科学家 — 聚焦大模型前沿研究，涵盖预训练（pre-train
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[21_面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist]] | 岗位面试全攻略：LLM 训练理论、前沿论文追踪与研究方向选择 | AI research scientist candidates / ML researchers |
+| [[21_面试岗位/09_AI研究科学家/README|AI Research Scientist]] | 岗位面试全攻略：LLM 训练理论、前沿论文追踪与研究方向选择 | AI research scientist candidates / ML researchers |
 
 ## Related
 

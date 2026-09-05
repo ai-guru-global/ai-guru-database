@@ -277,7 +277,7 @@ kubectl get pod <pod> -n <ns> -o jsonpath='{.spec.containers[*].resources}'
 
 - [[07_模型训练/04_分布式训练/04_分布式训练_Hang_操作手册|分布式训练 Hang 排障 Runbook]]
 - [[07_模型训练/07_训练监控/04_训练_岗位_Diagnosis_工作流|训练任务诊断工作流]]
-- [[13_运维/02_SRE与可靠性/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
+- [[13_运维/02_SRE与可靠性/11_GPU_OOM_故障排查_指南|GPU OOM 排障指南]]
 - [[13_运维/02_SRE与可靠性/K8s_AI_Troubleshooting_Cheat_Sheet|K8s for AI 排查速查表]]
 - [[概念/lora-peft|LoRA / PEFT]]
 - [[概念/qlora|QLoRA]]
@@ -286,4 +286,4 @@ kubectl get pod <pod> -n <ns> -o jsonpath='{.spec.containers[*].resources}'
 - [[概念/gradient-checkpointing|Gradient Checkpointing]]
 - [[概念/nccl|NCCL]]
 - [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文|阿里云专有云 K8s 上下文]]
-- [[13_运维/Kubernetes_Troubleshooting_Playbook|Kubernetes 运维排障 Playbook]]
+- [[13_运维/04_问题排查/07_Kubernetes_故障排查_Playbook|Kubernetes 运维排障 Playbook]]

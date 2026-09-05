@@ -371,7 +371,7 @@ for name, m in models.items():
 ## Related
 
 - [[01_数学基础/08_Python工具包/06_Python_for_AI_基础]] — Python 语法基础
-- [[01_数学基础/Python_Data_Science_Toolkit]] — NumPy / Pandas / Matplotlib
+- [[01_数学基础/08_Python工具包/05_Python_数据_Science_工具kit]] — NumPy / Pandas / Matplotlib
 - [[01_数学基础/08_Python工具包/01_AI_开发_Environment_配置]] — 环境配置
 - [[02_机器学习/01_机器学习基础/06_ML_Algorithms_速查表]] — 经典算法速查
 - [[治理/python-data-science-pipeline|Python × 数据科学]] — 入门到实战

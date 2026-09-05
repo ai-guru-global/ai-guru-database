@@ -293,7 +293,7 @@ Runbook: 幻觉率激增 (Hallucination Surge)
 
 - [[13_运维/AI_Observability_Deep_Dive]] - AI 可观测性深度解读
 - [[13_运维/README]] - AI Ops 总体体系
-- [[11_模型运维/08_可观测性/Model_Monitoring_and_Drift_Detection_2026]] - 模型监控与漂移检测
+- [[11_模型运维/08_可观测性/13_模型_监控_and_Drift_检测_2026]] - 模型监控与漂移检测
 
 ### 资源链接
 

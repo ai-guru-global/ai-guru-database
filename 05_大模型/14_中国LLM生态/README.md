@@ -168,14 +168,14 @@ flowchart TD
 1. 先读本文的对比表格，建立全局视野
 2. 阅读 [[05_大模型/14_中国LLM生态/04_Chinese_LLM_对比_矩阵]] 了解全厂商横向对比
 3. 选择感兴趣的厂商，深入其 Deep Dive 文档
-4. 参考 [[05_大模型/04_LLM架构/MoE_Case_Studies_DeepSeek_Mixtral]] 了解 MoE 共性
+4. 参考 [[05_大模型/04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral]] 了解 MoE 共性
 
 ---
 
 ## 前置知识 (Prerequisites)
 
 - **必修**: [[05_大模型/04_LLM架构/05_LLM架构]] — 理解 Transformer、MoE、GQA 等基础架构
-- **推荐**: [[05_大模型/04_LLM架构/MoE_Case_Studies_DeepSeek_Mixtral]] — MoE 路由与负载均衡
+- **推荐**: [[05_大模型/04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral]] — MoE 路由与负载均衡
 - **推荐**: [[05_大模型/08_推理模型/INDEX]] — 推理模型深度分析
 
 ---

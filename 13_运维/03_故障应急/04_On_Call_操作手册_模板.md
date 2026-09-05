@@ -72,7 +72,7 @@ name_zh: "On-Call Runbook 模板"
 | 场景 | 入口 Runbook |
 |------|-------------|
 | LLM 推理延迟高 | [[13_运维/02_SRE与可靠性/19_LLM推理_Slow_Unavailable_操作手册|LLM 推理延迟/不可用 Runbook]] |
-| GPU OOM | [[13_运维/02_SRE与可靠性/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]] |
+| GPU OOM | [[13_运维/02_SRE与可靠性/11_GPU_OOM_故障排查_指南|GPU OOM 排障指南]] |
 | 训练任务失败 | [[07_模型训练/07_训练监控/02_LLM_微调_岗位_Failure_操作手册_on_K8s|LLM 微调任务 K8s 失败排障]] |
 | 分布式训练 Hang | [[07_模型训练/04_分布式训练/04_分布式训练_Hang_操作手册|分布式训练 Hang 排障]] |
 | MLflow 不可达 | [[11_模型运维/12_故障排查/MLflow_Tracking_Server_Unreachable|MLflow Tracking Server 不可达]] |

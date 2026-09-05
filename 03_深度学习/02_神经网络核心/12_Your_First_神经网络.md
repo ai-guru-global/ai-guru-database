@@ -440,7 +440,7 @@ class CNN(nn.Module):
 ## Related
 
 - [[01_数学基础/08_Python工具包/06_Python_for_AI_基础]] — Python 语法基础
-- [[01_数学基础/Python_Data_Science_Toolkit]] — NumPy / Pandas
+- [[01_数学基础/08_Python工具包/05_Python_数据_Science_工具kit]] — NumPy / Pandas
 - [[01_数学基础/08_Python工具包/01_AI_开发_Environment_配置]] — GPU 环境配置
 - [[02_机器学习/02_监督学习/04_Your_First_ML_模型]] — 第一个传统 ML 模型
 - [[03_深度学习/02_神经网络核心/09_神经网络核心]] — 神经网络原理小白版

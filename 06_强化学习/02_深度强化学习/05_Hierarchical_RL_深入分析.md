@@ -1099,7 +1099,7 @@ train_low_level()  # 每步
   - 多机器人仓库物流
   - 自动驾驶车队协调
   - 多无人机编队
-  - 见 [[Multi_Agent_RL]]
+  - 见 [[06_强化学习/06_多智能体/02_多智能体强化学习]]
 
 方法:
   - 集中式高层 + 分布式低层
@@ -1153,7 +1153,7 @@ train_low_level()  # 每步
 - [[Exploration_Strategies_Deep_Dive]] — 层次化探索策略
 - [[Inverse_RL_Imitation_Learning]] — 从演示学习技能/子目标
 - [[06_强化学习/02_深度强化学习/09_离线_RL_深入分析]] — 层次化离线RL
-- [[Multi_Agent_RL]] — 多智能体层次化
+- [[06_强化学习/06_多智能体/02_多智能体强化学习]] — 多智能体层次化
 
 ### RLHF与Agent
 

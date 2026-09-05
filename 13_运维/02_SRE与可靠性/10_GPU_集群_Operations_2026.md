@@ -873,7 +873,7 @@ class TrainingProfiler:
 
 - [[13_运维/02_SRE与可靠性/22_SRE_for_AI_系统]] — AI 系统 SRE 实践总纲
 - [[13_运维/02_SRE与可靠性/18_LLM推理_SLO_指南]] — 推理服务 SLO 设计
-- [[GPU_OOM_Troubleshooting_Guide]] — GPU OOM 排障
+- [[13_运维/02_SRE与可靠性/11_GPU_OOM_故障排查_指南]] — GPU OOM 排障
 - [[GPU_Troubleshooting_Cheat_Sheet]] — GPU 故障速查
 - [[K8s_AI_Troubleshooting_Cheat_Sheet]] — K8s AI 排障
 - [[13_运维/02_SRE与可靠性/HAMi_Troubleshooting_Guide|HAMi_Troubleshooting_Cuide]] — HAMi GPU 共享排障

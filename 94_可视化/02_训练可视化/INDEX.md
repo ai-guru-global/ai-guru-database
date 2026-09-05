@@ -35,11 +35,11 @@ name_en: "Training Viz"
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[94_可视化/Training_Viz/Training_Monitoring_Visualization|Training Monitoring Visualization]] | Loss/梯度/激活的实时跟踪与告警 | ML 工程师 / 深度学习实践者 |
+| [[94_可视化/02_训练可视化/07_训练_监控_可视化|Training Monitoring Visualization]] | Loss/梯度/激活的实时跟踪与告警 | ML 工程师 / 深度学习实践者 |
 | [[94_可视化/02_训练可视化/06_训练_Curves_分析.md|Training Curves Analysis]] | 训练曲线深度分析（损失/梯度/学习率诊断） | ML 工程师 / 调参者 |
 | [[94_可视化/Training_Viz/Embedding_Visualization_Guide|Embedding Visualization Guide]] | 嵌入空间投影与聚类可视化 | DL 研究员 |
 | [[94_可视化/01_最佳实践/04_Visualization_简明指南|Neural Network Visualization Guide]] | 网络结构、特征图与神经元可视化 | DL 研究员 |
-| [[94_可视化/Training_Viz/Experiment_Tracking_Visualization|Experiment Tracking Visualization]] | 多实验对比、超参搜索与追踪 | ML 工程师 |
+| [[94_可视化/02_训练可视化/03_实验追踪_可视化|Experiment Tracking Visualization]] | 多实验对比、超参搜索与追踪 | ML 工程师 |
 | [[94_可视化/Training_Viz/Data_Pipeline_Feature_Visualization|Data Pipeline & Feature Visualization]] | 数据分布、特征统计与管道健康度 | 数据工程师 |
 
 ---

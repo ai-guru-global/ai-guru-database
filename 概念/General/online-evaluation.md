@@ -67,7 +67,7 @@ name_zh: "在线评估"
 - [[概念/model-evaluation]] — 模型评估
 - [[概念/ab-testing-framework]] — A/B 测试框架
 - [[概念/model-deployment]] — 模型部署
-- [[08_模型评估/04_评估工具/Online_Evaluation]] — 在线评估
+- [[概念/General/online-evaluation]] — 在线评估
 
 ---
 

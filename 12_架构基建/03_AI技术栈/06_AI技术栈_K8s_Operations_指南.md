@@ -134,8 +134,8 @@ helm show values gpustack/gpustack
 
 ## Related
 
-- [[12_架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
-- [[12_架构基建/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]
+- [[12_架构基建/03_AI技术栈/09_AI技术栈_生产_工具链|AI Stack 生产工具链总览]]
+- [[12_架构基建/03_AI技术栈/01_AI技术栈_容器_Runtime_指南|AI Stack 容器与运行时指南]]
 - [[12_架构基建/03_AI技术栈/03_AI技术栈_Exclusive_工具_指南|AI Stack 专属运维工具指南]]
 - [[12_架构基建/07_硬件与算力/03_CDI_深入分析|CDI: 容器设备接口标准]]
 - [[12_架构基建/07_硬件与算力/06_DRA_深入分析|DRA: 动态资源分配]]

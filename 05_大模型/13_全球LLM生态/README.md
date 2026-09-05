@@ -194,7 +194,7 @@ flowchart TD
 
 - **必修**: [../LLM_Architectures/04_LLM架构.md](../04_LLM架构/05_LLM架构.md) — Transformer、MoE、GQA 基础
 - **推荐**: [../Reasoning_Models/04_o1_Class_推理模型.md](../08_推理模型/04_o1_Class_推理模型.md) — 推理模型原理
-- **推荐**: [../LLM_Architectures/12_MoE_案例_Studies_深度Seek_Mixtral.md](../04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md) — MoE 架构详解
+- **推荐**: [../LLM_Architectures/12_MoE_案例_Studies_深度Seek_Mixtral.md](../04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 架构详解
 - **可选**: [../../20_论文精读/02_GPT3_深入分析.md](../../20_论文精读/03_规模扩展/02_GPT3_深入分析.md) — GPT-3 论文解读
 - **可选**: [../../20_论文精读/04_LLaMA_深入分析.md](../../20_论文精读/02_模型架构/04_LLaMA_深入分析.md) — LLaMA 论文解读
 

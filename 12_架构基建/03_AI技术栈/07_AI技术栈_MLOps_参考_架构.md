@@ -308,7 +308,7 @@ model = mlflow.pyfunc.load_model("models:/qwen2-7b-sft/Production")
 - [[概念/mlops|MLOps]]
 - [[概念/kserve|KServe]]
 - [[11_模型运维/12_故障排查/MLflow_Tracking_Server_Unreachable|MLflow Tracking Server 不可达排障]]
-- [[12_架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
+- [[12_架构基建/03_AI技术栈/09_AI技术栈_生产_工具链|AI Stack 生产工具链总览]]
 - [[12_架构基建/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
 
 - [[12_架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]

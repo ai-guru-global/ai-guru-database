@@ -285,5 +285,5 @@ Claude Code 流程:
 - [[16_编程/05_开发工具/08_Cursor_指南]] — Cursor 详细指南
 - [[16_编程/01_编程基础/01_AI编程2026指南]] — AI 编程入门
 - [[16_编程/05_开发工具/01_AI_编程_Assistants_2026]] — 2026 AI 编程助手全景
-- [[15_智能体/05_Agent技能/Tool_Calling_Best_Practices]] — Tool Calling 最佳实践
+- [[15_智能体/05_Agent技能/14_工具调用_最佳实践]] — Tool Calling 最佳实践
 - [[15_智能体/03_Agent工作流/05_LangGraph_深入分析]] — LangGraph 深度解读

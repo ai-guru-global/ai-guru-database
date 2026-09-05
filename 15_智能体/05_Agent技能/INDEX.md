@@ -30,7 +30,7 @@ name_en: "Agent Skills"
 | [[15_智能体/05_Agent技能/Skill_Versioning_Guide|Skill Versioning Guide]] | Skill Versioning Guide | 开发者/学习者 |
 | [[15_智能体/05_Agent技能/Skills-in-nutshell|Skills-in-nutshell]] | Skills-in-nutshell | 开发者/学习者 |
 | [[15_智能体/05_Agent技能/Spring_AI_Skills_Integration|Spring AI Skills Integration]] | Spring AI Skills Integration | 开发者/学习者 |
-| [[15_智能体/05_Agent技能/Tool_Calling_Best_Practices|Tool Calling Best Practices]] | Tool Calling Best Practices | 开发者/学习者 |
+| [[15_智能体/05_Agent技能/14_工具调用_最佳实践|Tool Calling Best Practices]] | Tool Calling Best Practices | 开发者/学习者 |
 
 ## 入门
 

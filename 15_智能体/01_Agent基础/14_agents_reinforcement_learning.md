@@ -55,7 +55,7 @@ name_zh: "AI 智能体 × 强化学习"
 ## Related
 
 - [[15_智能体/01_Agent基础/16_AI_Agent]] — AI智能体 - 小白版 🤖 (共享: ai-agents, reinforcement-learning, rl)
-- [[06_强化学习/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: ai-agents, reinforcement-learning, rl)
+- [[15_智能体/01_Agent基础/11_Agent_简明指南]] — AI 智能体速成指南 (共享: ai-agents, reinforcement-learning, rl)
 - [[15_智能体/01_Agent基础/03_Agent_未来_路线图_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: ai-agents, reinforcement-learning, rl)
 
 ## 附录：核心概念速查

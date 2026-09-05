@@ -35,7 +35,7 @@ name_en: "MLOps Pipeline"
 - [[11_模型运维/01_MLOps基础/Documentation_Automation|AI 文档自动化]]
 - [[11_模型运维/11_Prompt运维/Prompt_Management_Platform|Prompt 管理平台]]
 - [[11_模型运维/10_LLMOps_大模型运维/01_GenAI_L14_GenAI_应用_Lifecycle|GenAI 应用生命周期]]
-- [[11_模型运维/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维]]
+- [[17_伦理安全/04_AI安全与红队/03_Guardrails_生产_指南|LLM 护栏与安全运维]]
 - [[11_模型运维/10_LLMOps_大模型运维/04_LLM_生产_流水线_2026|LLM 生产流水线]]
 - [[11_模型运维/10_LLMOps_大模型运维/05_LLMOps_2026|LLMOps 2026]]
 - [[11_模型运维/01_MLOps基础/05_MLOps_流水线|MLOps 速成]]

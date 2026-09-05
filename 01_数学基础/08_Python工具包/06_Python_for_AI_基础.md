@@ -266,7 +266,7 @@ except Exception as e:
 - ✅ 运行 Jupyter Notebook 中的示例
 
 接下来建议学习：
-- **[[01_数学基础/Python_Data_Science_Toolkit|Python 数据科学工具链]]** — NumPy / Pandas / Matplotlib
+- **[[01_数学基础/08_Python工具包/05_Python_数据_Science_工具kit|Python 数据科学工具链]]** — NumPy / Pandas / Matplotlib
 - **[[01_数学基础/08_Python工具包/01_AI_开发_Environment_配置|AI 开发环境配置]]** — Jupyter / Conda / GPU
 - **[[02_机器学习/02_监督学习/04_Your_First_ML_模型|你的第一个 ML 模型]]** — 用 scikit-learn 训练真实模型
 
@@ -289,7 +289,7 @@ except Exception as e:
 
 ## Related
 
-- [[01_数学基础/Python_Data_Science_Toolkit]] — NumPy / Pandas / Matplotlib / Scikit-learn
+- [[01_数学基础/08_Python工具包/05_Python_数据_Science_工具kit]] — NumPy / Pandas / Matplotlib / Scikit-learn
 - [[01_数学基础/08_Python工具包/01_AI_开发_Environment_配置]] — Jupyter / Conda / Colab / GPU
 - [[01_数学基础/README.md]] — 线代基础
 - [[00_入门/01_基础入门/02_AI基础]] — AI 概念小白版

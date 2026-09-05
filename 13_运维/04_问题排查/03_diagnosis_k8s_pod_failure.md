@@ -88,7 +88,7 @@ name_zh: "K8s Pod 故障远程诊断决策树"
 | 4 | 权限不足 | `permission denied` | 检查 [[概念/securitycontext]] | 调整 SecurityContext 或 ServiceAccount |
 | 5 | 应用 Bug | 异常堆栈 | 分析日志堆栈 | 回滚到上一版本 |
 
-参见 [[Kubernetes_Troubleshooting_Playbook]]、[[概念/deployment]]、[[概念/replicaset]]。
+参见 [[13_运维/04_问题排查/07_Kubernetes_故障排查_Playbook]]、[[概念/deployment]]、[[概念/replicaset]]。
 
 ---
 
@@ -108,7 +108,7 @@ name_zh: "K8s Pod 故障远程诊断决策树"
 | `Failed: dial tcp i/o timeout` | 网络不可达 | 从节点 `ping`/`curl` 镜像仓库 | 检查网络策略/DNS/代理 |
 | `Node ran out of disk` | 节点磁盘满 | `df -h` 在节点上 | 清理镜像 `crictl rmi --prune` |
 
-参见 [[Kubernetes_Troubleshooting_Playbook]]。
+参见 [[13_运维/04_问题排查/07_Kubernetes_故障排查_Playbook]]。
 
 ---
 
@@ -129,10 +129,10 @@ OOMKilled (Exit 137)
 │
 ├── 内存泄漏（使用量持续增长）
 │   └── → 需要应用层排查，临时重启策略
-│   └── 参见 GPU OOM 区分: [[GPU_OOM_Troubleshooting_Guide]]
+│   └── 参见 GPU OOM 区分: [[13_运维/02_SRE与可靠性/11_GPU_OOM_故障排查_指南]]
 │
 ├── AI/LLM 工作负载 OOM
-│   ├── GPU OOM (CUDA OOM) → 参见 [[GPU_OOM_Troubleshooting_Guide]]
+│   ├── GPU OOM (CUDA OOM) → 参见 [[13_运维/02_SRE与可靠性/11_GPU_OOM_故障排查_指南]]
 │   ├── 模型加载 OOM → 检查 batch size / 模型大小
 │   └── HAMi vGPU 超卖 → 参见 [[HAMi_Troubleshooting_Guide]]
 │
@@ -192,10 +192,10 @@ OOMKilled (Exit 137)
 
 ## Related
 
-- [[Kubernetes_Troubleshooting_Playbook]] — K8s 排障完整手册
+- [[13_运维/04_问题排查/07_Kubernetes_故障排查_Playbook]] — K8s 排障完整手册
 - [[12_架构基建/04_Kubernetes核心/01_Kubernetes核心_Components_深入分析]] — K8s 核心组件深度解析
 - [[K8s_AI_Troubleshooting_Cheat_Sheet]] — AI 工作负载排障速查表
-- [[GPU_OOM_Troubleshooting_Guide]] — GPU OOM 专项排障
+- [[13_运维/02_SRE与可靠性/11_GPU_OOM_故障排查_指南]] — GPU OOM 专项排障
 - [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文]] — 专有云 K8s 上下文
 - [[概念/pod]] — Pod 概念
 - [[概念/deployment]] — Deployment 概念

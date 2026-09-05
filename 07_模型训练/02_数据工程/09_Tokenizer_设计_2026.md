@@ -1802,7 +1802,7 @@ for model_name in model_names:
 ## 相关链接
 
 - [[07_模型训练/02_数据工程/index|训练数据索引]] — 训练数据主题导览
-- [[07_模型训练/02_数据工程/Data_Curation_and_Mixture_2026|数据治理与配比 2026]] — 数据工程相关
+- [[07_模型训练/02_数据工程/04_数据_Curation_and_Mixture_2026|数据治理与配比 2026]] — 数据工程相关
 - [[概念/LLM/tokenization|分词]] — 分词概念卡片
 - [[概念/General/sentencepiece|SentencePiece]] — 主流分词器
 - [[概念/LLM/token-plain|Token]] — Token 概念卡片

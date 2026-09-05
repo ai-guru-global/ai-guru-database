@@ -58,7 +58,7 @@ Layer 1: Python 语法 → Layer 2: 开发环境 → Layer 3: 数据工具链 �
 - 里程碑: 能写 50 行 Python 脚本，能启动 Jupyter
 
 **Week 2: 数据工具链 + 第一个模型**
-- Days 6-8: NumPy 数组运算 + Pandas 数据清洗（[[01_数学基础/Python_Data_Science_Toolkit]]）
+- Days 6-8: NumPy 数组运算 + Pandas 数据清洗（[[01_数学基础/08_Python工具包/05_Python_数据_Science_工具kit]]）
 - Days 9-10: Scikit-learn 训练第一个模型 + Matplotlib 可视化（[[02_机器学习/02_监督学习/04_Your_First_ML_模型]]）
 - 里程碑: 完成 Titanic 生存预测，提交 Kaggle
 
@@ -82,7 +82,7 @@ Layer 1: Python 语法 → Layer 2: 开发环境 → Layer 3: 数据工具链 �
 ## Related
 
 - [[01_数学基础/08_Python工具包/06_Python_for_AI_基础]]
-- [[01_数学基础/Python_Data_Science_Toolkit]]
+- [[01_数学基础/08_Python工具包/05_Python_数据_Science_工具kit]]
 - [[01_数学基础/08_Python工具包/01_AI_开发_Environment_配置]]
 - [[02_机器学习/02_监督学习/04_Your_First_ML_模型]]
 - [[90_学习/02_学习路径/09_ml_practitioner]]

@@ -55,11 +55,11 @@ AI 可视化知识体系（Visualization Knowledge Base）涵盖训练监控（t
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[94_可视化/Training_Viz/Training_Monitoring_Visualization|Training Monitoring Visualization]] | Loss/梯度/激活实时跟踪 | ML 工程师 |
+| [[94_可视化/02_训练可视化/07_训练_监控_可视化|Training Monitoring Visualization]] | Loss/梯度/激活实时跟踪 | ML 工程师 |
 | [[94_可视化/02_训练可视化/06_训练_Curves_分析.md|Training Curves Analysis]] | 训练曲线分析（损失/梯度/学习率） | ML 工程师 / 深度学习实践者 |
 | [[94_可视化/Training_Viz/Embedding_Visualization_Guide|Embedding Visualization Guide]] | 嵌入空间可视化 | DL 研究员 |
 | [[94_可视化/01_最佳实践/04_Visualization_简明指南|Neural Network Visualization Guide]] | 神经网络结构与特征可视化 | DL 研究员 |
-| [[94_可视化/Training_Viz/Experiment_Tracking_Visualization|Experiment Tracking Visualization]] | 实验对比与追踪 | ML 工程师 |
+| [[94_可视化/02_训练可视化/03_实验追踪_可视化|Experiment Tracking Visualization]] | 实验对比与追踪 | ML 工程师 |
 | [[94_可视化/Training_Viz/Data_Pipeline_Feature_Visualization|Data Pipeline & Feature Visualization]] | 数据管道与特征可视化 | 数据工程师 |
 
 ### 评估可视化（Evaluation Viz）

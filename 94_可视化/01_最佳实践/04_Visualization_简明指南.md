@@ -81,7 +81,7 @@ flowchart TB
 | 学习率调度 | warmup 与衰减是否符合预期 | loss 尖刺常与 LR 突变对齐 |
 | 梯度范数 | 数值稳定性 | 爆炸 → 加 clip；趋零 → 梯度消失/死层 |
 
-深入: [[94_可视化/README.md|训练曲线分析]] · [[94_可视化/Training_Viz/Training_Monitoring_Visualization|训练监控可视化]] · [[94_可视化/Training_Viz/Experiment_Tracking_Visualization|实验跟踪可视化]]
+深入: [[94_可视化/README.md|训练曲线分析]] · [[94_可视化/02_训练可视化/07_训练_监控_可视化|训练监控可视化]] · [[94_可视化/02_训练可视化/03_实验追踪_可视化|实验跟踪可视化]]
 
 ---
 

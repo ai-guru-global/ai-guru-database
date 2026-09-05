@@ -54,8 +54,8 @@ name_zh: "预训练数据 × 合成数据：从规模到质量的范式转移"
 
 ## 跨域连接
 
-- [[07_模型训练/02_数据工程/Data_Curation_and_Mixture_2026|数据策展与混合 2026]] — 数据混合比例的最新研究
-- [[07_模型训练/03_训练优化/Scaling_Laws_and_Training_Dynamics|Scaling Laws 与训练动态]] — 数据规模的数学规律
+- [[07_模型训练/02_数据工程/04_数据_Curation_and_Mixture_2026|数据策展与混合 2026]] — 数据混合比例的最新研究
+- [[07_模型训练/03_训练优化/06_扩展定律_and_训练_Dynamics|Scaling Laws 与训练动态]] — 数据规模的数学规律
 - [[概念/LLM/llm-data-engineering|LLM 数据工程深度解读]] — 数据工程全流程
 - [[概念/llm-data-engineering|LLM 数据工程]] — 数据策展的核心理论
 

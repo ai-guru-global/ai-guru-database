@@ -213,7 +213,7 @@ name_zh: "00 - 入门：AI 简介与历史"
 *Last updated: 2026-04-01*
 
 ## Related
-- [[00_入门/02_技术概览/AI_Technology_Landscape|AI技术全景概览]]
+- [[概念/General/ai-technology-landscape|AI技术全景概览]]
 - [[00_入门/03_学习路径/AI_Practical_Labs|AI课堂实验与实践指导]]
 - [[00_入门/03_学习路径/AI_Tools_Practical_Guide|AI工具与实践指南]]
 

@@ -4,7 +4,7 @@ category: 07-governance
 tags: ["quality-metrics", "coverage", "consistency", "freshness", "audit"]
 summary: "知识库质量度量体系：覆盖率、一致性、时效性、交叉引用密度、内容深度指标定义与自动化审计方法。"
 created: 2026-07-21
-updated: 2026-07-23
+updated: 2026-09-04
 tier: supporting
 sources: []
 
@@ -13,6 +13,8 @@ name_zh: "质量度量"
 # 质量度量 (Quality Metrics)
 
 > 中文简称：质量度量
+
+> **口径声明（2026-09-04）**: 全库规模统计以 `工具/eval_scan_2026_07.py` 为唯一事实源（2,826 文件 / 90.07 万行 / 32.7 MB）；wikilink 与断链以 `工具/check_wikilinks.py` 严口径为准；门禁三项基线（断链 / 孤立页 / frontmatter 完整性）记录于 `治理/_meta/link-health-baseline.json`，由 `工具/link_gate.py` 维护，只降不升。
 
 ## 1. 质量维度
 

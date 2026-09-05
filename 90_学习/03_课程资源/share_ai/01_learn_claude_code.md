@@ -55,7 +55,7 @@ name_zh: "Learn Claude Code 课程映射：20 课 Harness 工程"
 | 课号 | 课程名称 | 引入的 Harness 机制 | 本库相关概念/页面 |
 |------|----------|---------------------|-------------------|
 | s01 | Agent Loop | 最小 `while True` 循环；`stop_reason == "tool_use"` 决定是否继续 | [[15_智能体/15_课程笔记/Learn_Claude_Code_L01_Agent_Loop|L01 笔记]], [[15_智能体/14_GenAI课程/05_GenAI_L17_AI_Agent|AI 代理]], [[15_智能体/04_Agent脚手架/13_The_Anatomy_of_an_Agent_脚手架|Harness 解剖]] |
-| s02 | Tool Use | 工具定义 + `TOOL_HANDLERS` 分发映射；多工具并发安全 | [[15_智能体/14_GenAI课程/03_GenAI_L11_Integrating_with_Function_Calling|函数调用]], [[15_智能体/05_Agent技能/Tool_Calling_Best_Practices|工具调用最佳实践]] |
+| s02 | Tool Use | 工具定义 + `TOOL_HANDLERS` 分发映射；多工具并发安全 | [[15_智能体/14_GenAI课程/03_GenAI_L11_Integrating_with_Function_Calling|函数调用]], [[15_智能体/05_Agent技能/14_工具调用_最佳实践|工具调用最佳实践]] |
 | s03 | Permission | 三道权限闸门：硬拒绝、规则匹配、用户审批 | [[15_智能体/15_课程笔记/Learn_Claude_Code_L03_Permission_System|L03 笔记]], [[15_智能体/10_企业级Agent/03_Agent_生产_2026|Agent 生产治理]] |
 | s04 | Hooks | 循环扩展点：`UserPromptSubmit` / `PreToolUse` / `PostToolUse` / `Stop` | [[15_智能体/04_Agent脚手架/01_Agent_脚手架_架构_2026|Harness 架构]] |
 

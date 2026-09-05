@@ -1481,7 +1481,7 @@ graph TD
 
 - [LLM Architectures (大语言模型架构)](../04_LLM架构/05_LLM架构.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
 - [MoE Routing and Load Balancing](../04_LLM架构/13_MoE_Routing_and_负载均衡.md) — MoE 路由策略与负载均衡技术详解
-- [MoE Case Studies: DeepSeek & Mixtral](../04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md) — MoE 在实际模型中的应用案例分析
+- [MoE Case Studies: DeepSeek & Mixtral](../04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 在实际模型中的应用案例分析
 
 ### 多模态与长上下文
 

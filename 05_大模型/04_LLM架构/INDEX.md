@@ -34,7 +34,7 @@ LLM 架构索引，覆盖 Transformer 变体、MoE、长上下文、推理模型
 - [[05_大模型/04_LLM架构/LLM_Internals_Models_Frontiers|LLM Internals Models Frontiers]]
 - [[05_大模型/04_LLM架构/09_LLM_Internals_训练|LLM Internals Training]]
 - [[05_大模型/04_LLM架构/11_Long_上下文_模型_2026|Long Context Models 2026]]
-- [[05_大模型/04_LLM架构/MoE_Case_Studies_DeepSeek_Mixtral|Moe Case Studies Deepseek Mixtral]]
+- [[05_大模型/04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral|Moe Case Studies Deepseek Mixtral]]
 - [[05_大模型/04_LLM架构/13_MoE_Routing_and_负载均衡|Moe Routing And Load Balancing]]
 - [[05_大模型/04_LLM架构/README|README]]
 - [[05_大模型/04_LLM架构/15_推理模型_2026|Reasoning Models 2026]]

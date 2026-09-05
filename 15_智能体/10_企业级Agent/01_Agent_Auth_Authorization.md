@@ -403,4 +403,4 @@ class AgentAuditLogger:
 - [[Agent_Security_Ethics_AGI]]: Agent security overview
 - [[17_伦理安全/06_系统安全/05_LLM_安全_完整_指南]]: LLM security
 - [[17_伦理安全/04_AI安全与红队/03_Guardrails_生产_指南]]: Safety guardrails
-- [[AI_Governance_Compliance_2026]]: Governance framework
+- [[17_伦理安全/03_AI治理/01_AI治理合规2026]]: Governance framework

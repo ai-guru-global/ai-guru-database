@@ -159,7 +159,7 @@ God Tier Prompts 处于"实践模板"端——适合**快速获得可用提示�
 - [[05_大模型/07_提示工程/README|God Tier Prompts 索引]] — 详细条目
 - [[概念/prompt-engineering|提示工程概念卡片]]
 - [[概念/dspy|DSPy 自动提示优化]]
-- [[05_大模型/07_提示工程/Prompt_Engineering_Principles_Ng|Ng 提示工程原则]]
+- [[05_大模型/07_提示工程/14_Prompt工程_原则_Ng|Ng 提示工程原则]]
 
 ## 总结
 

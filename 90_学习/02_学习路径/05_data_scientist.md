@@ -38,7 +38,7 @@ name_zh: "数据科学家学习路径"
 
 | 主题 | 核心内容 | 推荐资源 |
 |------|---------|---------|
-| Python 编程 | NumPy, Pandas, Matplotlib | [[Python_Data_Science_Toolkit]] |
+| Python 编程 | NumPy, Pandas, Matplotlib | [[01_数学基础/08_Python工具包/05_Python_数据_Science_工具kit]] |
 | 统计学 | 假设检验、回归分析、贝叶斯 | [[概念/Math/probability-statistics]] |
 | 线性代数 | 矩阵运算、特征值、SVD | [[概念/Math/linear-algebra]] |
 | SQL | 窗口函数、CTE、聚合 | 实战练习 |

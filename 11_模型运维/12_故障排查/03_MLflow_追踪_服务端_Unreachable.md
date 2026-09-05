@@ -178,7 +178,7 @@ curl -u user:pass http://mlflow-tracking:5000/api/2.0/mlflow/experiments/list
 - [[概念/experiment-tracking|Experiment Tracking]]
 - [[概念/model-registry|Model Registry]]
 - [[11_模型运维/04_实验追踪/07_MLflow_深入分析|MLflow 深度解析]]
-- [[13_运维/Kubernetes_Troubleshooting_Playbook|Kubernetes 运维排障 Playbook]]
+- [[13_运维/04_问题排查/07_Kubernetes_故障排查_Playbook|Kubernetes 运维排障 Playbook]]
 
 ## MLOps核心流程对比
 

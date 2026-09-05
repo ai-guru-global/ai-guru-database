@@ -18,7 +18,7 @@ name_zh: "大模型架构核心：从注意力到完整 Transformer"
 
 > **核心命题**：Transformer 为何用纯注意力取代 RNN/CNN？注意力、位置编码、残差、归一化等组件各自解决了什么根本问题？
 
-本文系统提炼《大模型原理与架构》第一部分（基础篇，第 1–4 章），覆盖序列建模的演进、注意力机制原理、Transformer 核心组件与位置编码设计。相关深入内容可参见 [[概念/LLM/transformer-architecture]]、[[Transformer_Deep_Dive]]、[[05_大模型/01_LLM基础/05_LLM_基础]] 与 [[05_大模型/04_LLM架构/04_LLM_架构_Evolution]]。
+本文系统提炼《大模型原理与架构》第一部分（基础篇，第 1–4 章），覆盖序列建模的演进、注意力机制原理、Transformer 核心组件与位置编码设计。相关深入内容可参见 [[概念/LLM/transformer-architecture]]、[[05_大模型/03_Transformer架构/04_Transformer_架构详解]]、[[05_大模型/01_LLM基础/05_LLM_基础]] 与 [[05_大模型/04_LLM架构/04_LLM_架构_Evolution]]。
 
 ---
 

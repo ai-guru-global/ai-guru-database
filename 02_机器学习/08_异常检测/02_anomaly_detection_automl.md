@@ -69,7 +69,7 @@ name_zh: "异常检测 × AutoML — 自动化异常发现"
 - [[概念/automl]] — AutoML 概念总览
 - [[02_机器学习/08_异常检测/02_anomaly_detection_automl]] — 异常检测完整指南
 - [[02_机器学习/11_自动机器学习/01_AutoML]] — AutoML 完整指南
-- [[02_机器学习/03_无监督学习/Unsupervised_Learning]] — 无监督学习基础
+- [[概念/Math/unsupervised-learning]] — 无监督学习基础
 
 ## 专题深度解析
 

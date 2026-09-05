@@ -128,7 +128,7 @@ Agentic RL 旨在赋予 LLM Agent 以下能力 ^[extracted]：
 
 ## 6. 关联阅读
 
-- [[07_模型训练/06_对齐研究/GRPO_and_New_Alignment_Methods]] — GRPO 与新对齐方法
+- [[07_模型训练/06_对齐训练/02_GRPO_and_新型_对齐_Methods]] — GRPO 与新对齐方法
 - [[07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南]] — TRL RLHF/DPO 实战
 - [[06_强化学习/01_强化学习基础/03_RL基础|RL_Fundamentals]] — 强化学习基础
 - [[06_强化学习/02_深度强化学习/README]] — 深度强化学习

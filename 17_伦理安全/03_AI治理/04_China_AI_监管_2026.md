@@ -593,8 +593,8 @@ AI数据跨境合规路径:
 
 ## 11. 相关概念
 
-- [[17_伦理安全/03_AI治理/EU_AI_Act_Implementation_2026|EU AI Act实施指南]] — 欧盟AI法案对比参考
-- [[17_伦理安全/03_AI治理/AI_Governance_Compliance_2026|AI治理与合规2026]] — 全球AI监管全景
+- [[17_伦理安全/03_AI治理/05_EU_AI_Act_实现_2026|EU AI Act实施指南]] — 欧盟AI法案对比参考
+- [[17_伦理安全/03_AI治理/01_AI治理合规2026|AI治理与合规2026]] — 全球AI监管全景
 - [[概念/Safety/privacy-preserving-ai|GDPR]] — 欧盟数据保护(跨境数据参考)
 - [[17_伦理安全/09_深度伪造安全/Deepfake_Security|深度伪造安全]] — 深度合成技术治理
 - [[17_伦理安全/01_伦理基础/AI_Ethics_Safety_Future|AI伦理基础]] — AI伦理理论框架

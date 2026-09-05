@@ -39,11 +39,11 @@ name_zh: "LLM 架构演进：从 BERT 到 MoE/Mamba 与 Agent 时代"
 
 ## 关联文档
 
-- [[05_大模型/Transformer_Deep_Dive]] — Transformer 核心架构
+- [[05_大模型/03_Transformer架构/04_Transformer_架构详解]] — Transformer 核心架构
 - [[07_模型训练/01_训练基础/03_LLM_训练_深入分析]] — 训练技术
 - [[10_部署推理/03_推理优化/02_LLM推理_深入分析]] — 推理优化
 - [[05_大模型/04_LLM架构/05_LLM架构]] — LLM 架构总览
-- [[05_大模型/04_LLM架构/MoE_Case_Studies_DeepSeek_Mixtral]] — MoE 案例分析
+- [[05_大模型/04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral]] — MoE 案例分析
 - [[05_大模型/08_推理模型/INDEX]] — DeepSeek-R1 技术分析
 
 ---

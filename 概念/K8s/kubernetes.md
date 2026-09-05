@@ -123,7 +123,7 @@ Worker Node
 - [[12_架构基建/04_Kubernetes核心/01_Kubernetes核心_Components_深入分析]] — K8s 核心组件深度解析
 - [[12_架构基建/Kubernetes_Networking_Deep_Dive]] — K8s 网络深度解析
 - [[12_架构基建/04_Kubernetes核心/04_Kubernetes_存储_深入分析]] — K8s 存储深度解析
-- [[13_运维/Kubernetes_Troubleshooting_Playbook]] — K8s 运维排障 Playbook
+- [[13_运维/04_问题排查/07_Kubernetes_故障排查_Playbook]] — K8s 运维排障 Playbook
 
 ---
 

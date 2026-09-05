@@ -60,7 +60,7 @@ name_en: "NLP & LLMs"
 - [[05_大模型/README|README For Dummy]]
 - [[05_大模型/15_约束生成/03_Structured_输出_指南|Structured Output Guide]]
 - [[05_大模型/03_Transformer架构/04_Transformer_架构详解|Transformer Architecture]]
-- [[05_大模型/Transformer_Deep_Dive|Transformer Deep Dive]]
+- [[05_大模型/03_Transformer架构/04_Transformer_架构详解|Transformer Deep Dive]]
 - [[05_大模型/Transformer_Training_vs_Inference|Transformer Training Vs Inference]]
 
 ## 子域统计

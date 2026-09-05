@@ -99,22 +99,22 @@ name_zh: "02 经典机器学习"
 ## Related
 - [[02_机器学习/README|经典机器学习 - 新手导航]]
 
-- [[02_机器学习/04_集成学习/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[概念/Math/ensemble-learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: machine-learning, ml, supervised, unsupervised)
 - [[02_机器学习/05_特征工程/01_特征工程]] — 特征工程 (Feature Engineering) (共享: machine-learning, ml, supervised, unsupervised)
 - [[02_机器学习/README.md]] — 特征工程 - 小白版 (共享: machine-learning, ml, supervised, unsupervised)
 - [[02_机器学习/ML-in-nutshell]] — 机器学习速成指南 (共享: machine-learning, ml, supervised, unsupervised)
 - [[02_机器学习/08_异常检测/02_anomaly_detection_automl]] — Anomaly_Detection_for_dummy
 - [[02_机器学习/08_异常检测/02_anomaly_detection_automl]] — Anomaly_Detection
-- [[02_机器学习/10_推荐系统/Recommendation_Systems]] — Recommendation_Systems
+- [[概念/Math/recommendation-systems]] — Recommendation_Systems
 - [[02_机器学习/README.md]] — Recommendation_Systems_for_dummy
 - [[02_机器学习/11_自动机器学习/01_AutoML]] — AutoML
 - [[02_机器学习/11_自动机器学习/01_AutoML]] — AutoML_for_dummy
-- [[02_机器学习/03_无监督学习/Unsupervised_Learning]] — Unsupervised_Learning
+- [[概念/Math/unsupervised-learning]] — Unsupervised_Learning
 - [[02_机器学习/README.md]] — 无监督学习 - 小白版
 - [[02_机器学习/README.md]] — Time_Series_for_dummy
-- [[02_机器学习/09_时间序列/Time_Series_Analysis]] — 时间序列分析 (Time Series Analysis) - 完全指南
+- [[概念/Math/time-series-analysis]] — 时间序列分析 (Time Series Analysis) - 完全指南
 - [[02_机器学习/README.md]] — Supervised_Learning_for_dummy
-- [[02_机器学习/02_监督学习/Supervised_Learning]] — Supervised_Learning
+- [[概念/Math/supervised-learning]] — Supervised_Learning
 - [[02_机器学习/README.md]] — Ensemble_Learning_for_dummy
 - [[02_机器学习/README|README_for_dummy]]
 - [[概念/Math/feature-engineering.md|feature-engineering]]

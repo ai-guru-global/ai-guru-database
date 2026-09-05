@@ -1271,7 +1271,7 @@ class AdaptiveEval:
 - [[08_模型评估/02_基准测试/07_LLM_基准测试_Suite_2026]] — LLM 评测基准全览
 - [[概念/General/benchmark]] — 推理能力评估基准
 - [[概念/General/code-generation]] — 代码生成评估
-- [[Contamination_Detection_Guide]] — 数据污染检测
+- [[08_模型评估/02_基准测试/04_Contamination_检测_指南]] — 数据污染检测
 - [[Safety_Alignment_Evaluation]] — 安全与对齐评估
 - [[08_模型评估/06_安全评估/02_Red_Team_评估_指南]] — 红队评估指南
 - [[08_模型评估/03_LLM评估/05_RAG评估_深入分析]] — RAG 评估深度解析

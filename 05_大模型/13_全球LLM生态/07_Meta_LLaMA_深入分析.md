@@ -631,7 +631,7 @@ Track 2: 原生多模态 (11B / 90B Vision)
 
 ## 5. LLaMA 4 MoE 架构深度剖析
 
-> 更多关于 MoE 架构的通用原理，请参阅 → [MoE 案例研究：DeepSeek-MoE 与 Mixtral](../04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md)
+> 更多关于 MoE 架构的通用原理，请参阅 → [MoE 案例研究：DeepSeek-MoE 与 Mixtral](../04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md)
 
 ### 5.1 MoE 转型的战略意义
 
@@ -1430,7 +1430,7 @@ KV Cache for 10M tokens 需要巨大内存
 - **LLM 架构综述** → [../LLM_Architectures/04_LLM架构.md](../04_LLM架构/05_LLM架构.md)
  - Transformer 架构变体、位置编码、注意力机制的横向对比
 
-- **MoE 案例研究** → [../LLM_Architectures/12_MoE_案例_Studies_深度Seek_Mixtral.md](../04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md)
+- **MoE 案例研究** → [../LLM_Architectures/12_MoE_案例_Studies_深度Seek_Mixtral.md](../04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md)
  - DeepSeek-MoE 和 Mixtral 的 MoE 架构详解，与 LLaMA 4 MoE 对比
 
 - **多模态架构 2026** → [../Multimodal_Models/06_多模态_架构_2026.md](../09_多模态模型/06_多模态_架构_2026.md)
@@ -1555,7 +1555,7 @@ LLaMA 模型选择指南
 
 - [[05_大模型/13_全球LLM生态/README|国际大模型生态全景]] — 五大国际大模型厂商横向对比
 - [[05_大模型/13_全球LLM生态/08_Mistral_AI_深入分析|Mistral AI 技术深度解析]] — 同为开源 LLM 旗手的技术路线对比
-- [[05_大模型/04_LLM架构/MoE_Case_Studies_DeepSeek_Mixtral|MoE 案例：DeepSeek 与 Mixtral]] — LLaMA MoE 与 Mixtral 架构对比
+- [[05_大模型/04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral|MoE 案例：DeepSeek 与 Mixtral]] — LLaMA MoE 与 Mixtral 架构对比
 - [[05_大模型/14_中国LLM生态/19_Qwen_深入分析|Qwen 深度解析]] — 开源生态中的另一强力竞争者
 - [[05_大模型/11_端侧大模型/01_端侧大模型_深入分析|端侧 LLM 深度解读]] — LLaMA 在端侧部署中的应用
 - [[概念/LLM/llama-series|LLaMA 系列]] — LLaMA 模型家族概念卡片

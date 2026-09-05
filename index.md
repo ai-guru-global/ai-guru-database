@@ -236,9 +236,9 @@ graph LR
 - [[07_模型训练/04_分布式训练/|分布式训练]] — Ray / DeepSpeed / Megatron-LM / FSDP / Colossal-AI ( #distributed-training #gpu)
 - [[07_模型训练/04_分布式训练/04_分布式训练_Hang_操作手册|分布式训练排障]] — NCCL/RDMA/InfiniBand/NVLink 诊断流程 ( #distributed-training #troubleshooting)
 - [[05_大模型/06_微调技术/|微调技术]] — LoRA / QLoRA / PEFT 参数高效微调 ( #fine-tuning #lora)
-- [[07_模型训练/03_训练优化/Scaling_Laws_and_Training_Dynamics|Scaling Laws]] — Kaplan/Chinchilla/涌现能力/推理时 Scaling ( #scaling-law #training)
+- [[07_模型训练/03_训练优化/06_扩展定律_and_训练_Dynamics|Scaling Laws]] — Kaplan/Chinchilla/涌现能力/推理时 Scaling ( #scaling-law #training)
 - [[07_模型训练/03_训练优化/05_Optimizer_高级_2026|优化器进阶]] — AdamW/Lion/Muon/Sophia/Shampoo + 学习率调度 ( #optimizer #training)
-- [[07_模型训练/02_数据工程/Data_Curation_and_Mixture_2026|数据策展与配比]] — 数据清洗/去重/配比/合成数据/多语言 ( #data-engineering #pretraining)
+- [[07_模型训练/02_数据工程/04_数据_Curation_and_Mixture_2026|数据策展与配比]] — 数据清洗/去重/配比/合成数据/多语言 ( #data-engineering #pretraining)
 - [[07_模型训练/02_数据工程/09_Tokenizer_设计_2026|Tokenizer 设计]] — BPE/SentencePiece/tiktoken/Unigram ( #tokenizer #pretraining)
 - [[17_伦理安全/02_价值对齐/Constitutional_AI_Deep_Dive|对齐 (Alignment)]] — RLHF / DPO / Constitutional AI 安全对齐 ( #alignment #rlhf #safety)
 
@@ -258,7 +258,7 @@ graph LR
 - [[概念/opencompass|OpenCompass]] — 一站式大模型评测平台 ( #opencompass #evaluation #chinese-llm)
 - [[概念/lm-evaluation-harness|LM Evaluation Harness]] — EleutherAI LLM 评测框架 ( #lm-evaluation-harness #evaluation)
 - [[08_模型评估/04_评估工具/03_LLM_as_Judge_深入分析|LLM-as-Judge]] — 单点评分、成对比较、Rubric 评估、偏差缓解 ( #evaluation #llm-as-judge)
-- [[08_模型评估/04_评估工具/Online_Evaluation|在线评估]] — A/B 测试、影子流量、金丝雀发布 ( #evaluation #ab-testing)
+- [[概念/General/online-evaluation|在线评估]] — A/B 测试、影子流量、金丝雀发布 ( #evaluation #ab-testing)
 - [[17_伦理安全/06_系统安全/06_LLM_安全_Defense_指南|红队与安全评估]] — 红队测试、对抗性评估、攻击模拟 ( #red-teaming #security #evaluation)
 
 ### 运维与 MLOps 技能 (Operations & MLOps)
@@ -360,7 +360,7 @@ graph LR
 - [[00_入门/GenAI_L01_Intro_to_GenAI_and_LLMs]] — L01 生成式 AI 与 LLM 简介 ( #microsoft-genai-course #generative-ai)
 - [[05_大模型/01_LLM基础/GenAI_L02_Exploring_and_Comparing_LLMs]] — L02 探索与比较不同 LLM ( #microsoft-genai-course #llm)
 - [[17_伦理安全/01_伦理基础/GenAI_L03_Using_GenAI_Responsibly]] — L03 负责任地使用生成式 AI ( #microsoft-genai-course #ethics)
-- [[05_大模型/07_提示工程/GenAI_L04_Prompt_Engineering_Fundamentals]] — L04 提示工程基础 ( #microsoft-genai-course #prompt-engineering)
+- [[05_大模型/07_提示工程/04_GenAI_第4课_Prompt工程_基础]] — L04 提示工程基础 ( #microsoft-genai-course #prompt-engineering)
 - [[05_大模型/07_提示工程/GenAI_L05_Advanced_Prompts]] — L05 创建高级提示 ( #microsoft-genai-course #prompt-engineering)
 - [[15_智能体/GenAI_L06_Text_Generation_Apps]] — L06 构建文本生成应用 ( #microsoft-genai-course #text-generation)
 - [[15_智能体/GenAI_L07_Building_Chat_Applications]] — L07 构建聊天应用 ( #microsoft-genai-course #chat)
@@ -471,7 +471,7 @@ graph LR
 - [[05_大模型/07_提示工程/02_Context_工程_模式]] — 上下文工程模式：记忆架构、Graph RAG、XML 标签、反模式 ( #context-engineering #graph-rag #memory)
 
 ### Yeasy AI 知识库系列 — LLM 原理与架构
-- [[05_大模型/Transformer_Deep_Dive]] — Transformer 深度解析：07_QKV 注意力、位置编码（RoPE/ALiBi）、完整架构 ( #transformer #attention #position-encoding)
+- [[05_大模型/03_Transformer架构/04_Transformer_架构详解]] — Transformer 深度解析：07_QKV 注意力、位置编码（RoPE/ALiBi）、完整架构 ( #transformer #attention #position-encoding)
 - [[07_模型训练/01_训练基础/03_LLM_训练_深入分析]] — LLM 训练深度解析：预训练、分布式训练（ZeRO/3D 并行）、对齐（RLHF/DPO/LoRA） ( #llm-training #distributed #rlhf #lora)
 - [[10_部署推理/03_推理优化/02_LLM推理_深入分析]] — LLM 推理深度解析：解码策略、KV Cache、Flash Attention、投机解码、PagedAttention ( #llm-inference #kv-cache #flash-attention)
 - [[05_大模型/04_LLM架构/04_LLM_架构_Evolution]] — LLM 架构演进：BERT/GPT/Llama/DeepSeek 家族、MoE、SSM/Mamba ( #llm-architecture #moe #ssm)

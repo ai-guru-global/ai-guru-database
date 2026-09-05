@@ -18,7 +18,7 @@ name_en: "Troubleshooting"
 
 | 文件 | 说明 |
 |------|------|
-| [[13_运维/04_问题排查/Kubernetes_Troubleshooting_Playbook|K8s 排查手册]] | Kubernetes 故障排查 Playbook |
+| [[13_运维/04_问题排查/07_Kubernetes_故障排查_Playbook|K8s 排查手册]] | Kubernetes 故障排查 Playbook |
 | [[13_运维/04_问题排查/01_diagnosis_gpu_ai_workload_failure|GPU 故障诊断]] | AI 负载 GPU 故障诊断 |
 | [[13_运维/04_问题排查/03_diagnosis_k8s_pod_failure|Pod 故障诊断]] | K8s Pod 故障诊断 |
 | [[13_运维/04_问题排查/02_diagnosis_k8s_network_failure|网络故障诊断]] | K8s 网络故障诊断 |

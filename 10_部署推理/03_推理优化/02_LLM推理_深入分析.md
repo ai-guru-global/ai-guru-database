@@ -37,7 +37,7 @@ name_zh: "LLM 推理深度剖析：解码策略、推理优化与服务引擎"
 
 ## 关联文档
 
-- [[05_大模型/Transformer_Deep_Dive]] — Transformer 架构基础
+- [[05_大模型/03_Transformer架构/04_Transformer_架构详解]] — Transformer 架构基础
 - [[07_模型训练/01_训练基础/03_LLM_训练_深入分析]] — 训练技术
 - [[05_大模型/04_LLM架构/04_LLM_架构_Evolution]] — 架构演进
 - [[05_大模型/11_端侧大模型/01_端侧大模型_深入分析]] — 端侧推理

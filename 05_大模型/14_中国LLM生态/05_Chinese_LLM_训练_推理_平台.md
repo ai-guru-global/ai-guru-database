@@ -886,7 +886,7 @@ print(state["answer"])
 ### 训练相关
 
 - [[05_大模型/04_LLM架构/13_MoE_Routing_and_负载均衡]] — MoE 路由与负载均衡
-- [[05_大模型/04_LLM架构/MoE_Case_Studies_DeepSeek_Mixtral]] — MoE 案例研究
+- [[05_大模型/04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral]] — MoE 案例研究
 - [[05_大模型/08_推理模型/INDEX]] — DeepSeek R1 GRPO 训练
 - [[05_大模型/06_微调技术/04_GenAI_L18_微调_LLMs]] — LLM 微调技术
 - [[20_论文精读/04_效率优化/03_LoRA_深入分析]] — LoRA 低秩适配

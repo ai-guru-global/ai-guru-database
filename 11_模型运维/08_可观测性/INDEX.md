@@ -24,7 +24,7 @@ This page indexes the contents of `11_模型运维/08_可观测性`.
 - [[11_模型运维/08_可观测性/07_LangSmith_深入分析|Langsmith Deep Dive]]
 - [[11_模型运维/08_可观测性/10_llm_observability_aiops|LLM Observability]]
 - [[11_模型运维/08_可观测性/11_ML_可观测性_SLO|ML Observability SLO]]
-- [[11_模型运维/08_可观测性/Model_Monitoring_and_Drift_Detection_2026|Model Monitoring And Drift Detection 2026]]
+- [[11_模型运维/08_可观测性/13_模型_监控_and_Drift_检测_2026|Model Monitoring And Drift Detection 2026]]
 - [[11_模型运维/08_可观测性/14_Phoenix_深入分析|Phoenix Deep Dive]]
 - [[11_模型运维/08_可观测性/15_Prometheus_Grafana_深入分析|Prometheus Grafana Deep Dive]]
 - [[11_模型运维/08_可观测性/16_PromptLayer_深入分析|Promptlayer Deep Dive]]

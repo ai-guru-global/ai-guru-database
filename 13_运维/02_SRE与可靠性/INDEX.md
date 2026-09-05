@@ -19,7 +19,7 @@ This page indexes the contents of `13_运维/02_SRE与可靠性`.
 - [[13_运维/02_SRE与可靠性/01_AI_故障应急_Playbook|AI Incident Response Playbook]]
 - [[13_运维/02_SRE与可靠性/06_Chaos_工程_AI|Chaos Engineering AI]]
 - [[13_运维/02_SRE与可靠性/09_成本优化_AI_深入分析|Cost Optimization AI Deep Dive]]
-- [[13_运维/02_SRE与可靠性/GPU_OOM_Troubleshooting_Guide|GPU OOM Troubleshooting Guide]]
+- [[13_运维/02_SRE与可靠性/11_GPU_OOM_故障排查_指南|GPU OOM Troubleshooting Guide]]
 - [[13_运维/02_SRE与可靠性/GPU_Troubleshooting_Cheat_Sheet|GPU Troubleshooting Cheat Sheet]]
 - [[13_运维/02_SRE与可靠性/13_Guardrails_深入分析|Guardrails Deep Dive]]
 - [[13_运维/02_SRE与可靠性/HAMi_Troubleshooting_Guide|HAMi Troubleshooting Guide]]

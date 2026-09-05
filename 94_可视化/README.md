@@ -68,7 +68,7 @@ python -m http.server 8080
 *本章节为可视化工具，不直接包含学习内容。建议在学完基础概念后，使用可视化工具探索知识关联。*
 
 ## Related
-- [[94_可视化/Training_Monitoring_Visualization|训练监控可视化 (Training Monitoring Visualization)]]
+- [[94_可视化/02_训练可视化/07_训练_监控_可视化|训练监控可视化 (Training Monitoring Visualization)]]
 - [[94_可视化/README.md|AI 可视化 - 小白版]]
 - [[94_可视化/AI_System_Dashboard|AI 系统监控仪表盘]]
 - [[94_可视化/README|94 Visualization — 小白版 📊]]

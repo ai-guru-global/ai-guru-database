@@ -358,5 +358,5 @@ def monitor_explanations(predictions, explanations, threshold=0.1):
 
 - Fairness_Evaluation_for_dummy: Fairness metrics
 - [[17_伦理安全/04_AI安全与红队/01_AI_红队测试_指南]]: Finding model failures
-- [[Safety_Evaluation_Framework]]: Safety assessment
+- [[17_伦理安全/04_AI安全与红队/05_安全评估_框架]]: Safety assessment
 - [[概念/General/model-evaluation]]: General evaluation

@@ -443,7 +443,7 @@ results = vector_db.search(
 - [[14_RAG系统/01_RAG基础/07_RAG_系统|RAG 系统 (RAG Systems)]]
 - [[14_RAG系统/RAG-in-nutshell|RAG 速成指南]]
 - [[14_RAG系统/04_高级RAG/12_RAG_高级_2026|RAG 高级实践 2026]]
-- [[14_RAG系统/04_高级RAG/RAG_Retrieval_Latency_Optimization|RAG 检索延迟优化]]
+- [[14_RAG系统/04_高级RAG/14_RAG_检索_延迟_优化|RAG 检索延迟优化]]
 - [[14_RAG系统/04_高级RAG/Multimodal_RAG_Architecture_2026|Multimodal RAG 2026]]
 - [[14_RAG系统/06_RAG框架/06_LlamaIndex_深入分析|LlamaIndex 深度解析]]
 - [[09_测试/02_测试框架/06_RAGAS_深入分析|RAGAS 深度解析]]

@@ -626,7 +626,7 @@ response = client.chat.completions.create(
 # API 用法详见本文末尾 "Qwen 3.7 系列最新更新" 章节
 ```
 
-> **相关文档**: 关于 MoE 路由策略和负载均衡的深入分析，参见 [MoE Case Studies](../04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md)
+> **相关文档**: 关于 MoE 路由策略和负载均衡的深入分析，参见 [MoE Case Studies](../04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md)
 
 ---
 
@@ -1848,7 +1848,7 @@ Qwen 3.7 系列全面支持以下高级功能：
 ### 架构基础
 
 - [LLM Architectures (大语言模型架构)](../04_LLM架构/05_LLM架构.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
-- [MoE Case Studies: DeepSeek & Mixtral](../04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md) — MoE 路由策略、专家专业化的深度分析
+- [MoE Case Studies: DeepSeek & Mixtral](../04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略、专家专业化的深度分析
 - [MoE Routing and Load Balancing](../04_LLM架构/13_MoE_Routing_and_负载均衡.md) — MoE 负载均衡技术详解
 
 ### 多模态

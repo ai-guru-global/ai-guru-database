@@ -631,6 +631,6 @@ AI 服务的高维度标签（如 user_id、model_version、gpu_node）容易导
 - [[11_模型运维/README|MLOps Pipeline：模型生命周期与 CI/CD]]
 - [[10_部署推理/README|部署与推理：推理优化基础]]
 - [[12_架构基建/02_架构概览/05_Capacity_Planning_2026|AI 系统容量规划指南]]
-- [[12_架构基建/02_架构概览/High_Availability_2026|AI 系统高可用架构设计]]
+- [[12_架构基建/02_架构概览/06_高可用_2026|AI 系统高可用架构设计]]
 - [[12_架构基建/04_Kubernetes核心/03_Kubernetes_可观测性_Stack|Kubernetes 可观测性栈]]
 - [[治理/Production_Safety_Policy|生产安全策略]] — 操作风险评估与安全规范

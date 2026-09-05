@@ -397,7 +397,7 @@ flowchart TB
 | **Long2Short** | 有 (核心创新) | 有 (蒸馏) | 未公开 |
 | **上下文** | 128K | 64K (128K extended) | 未公开 |
 
-更多 MoE 与推理模型的架构对比，参见 [MoE 案例研究：DeepSeek 与 Mixtral](../04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md)。
+更多 MoE 与推理模型的架构对比，参见 [MoE 案例研究：DeepSeek 与 Mixtral](../04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md)。
 
 ### 4.5 Benchmark 表现
 
@@ -1325,7 +1325,7 @@ flowchart TB
 ### 10.4 延伸阅读
 
 - [DeepSeek R1 技术分析](../08_推理模型/01_DeepSeek_R1_Technical_分析.md) — 推理模型的 RL 训练方法对比
-- [MoE 案例研究：DeepSeek 与 Mixtral](../04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md) — MoE 架构设计与路由策略详解
+- [MoE 案例研究：DeepSeek 与 Mixtral](../04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 架构设计与路由策略详解
 - [长上下文模型 2026 全景](../04_LLM架构/11_Long_上下文_模型_2026.md) — 长上下文技术发展趋势
 
 ---

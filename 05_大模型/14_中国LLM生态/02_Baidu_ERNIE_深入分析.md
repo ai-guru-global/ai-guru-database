@@ -785,7 +785,7 @@ print(response["result"])
 - [[05_大模型/14_中国LLM生态/25_DeepSeek_架构_2026]] — DeepSeek 深度解析
 - [[05_大模型/14_中国LLM生态/09_GLM_Zhipu_深入分析]] — 智谱 GLM 深度解析
 - [[05_大模型/14_中国LLM生态/04_Chinese_LLM_对比_矩阵]] — 国产模型对比矩阵
-- [[05_大模型/07_提示工程/GenAI_L04_Prompt_Engineering_Fundamentals]] — 提示工程基础
+- [[05_大模型/07_提示工程/04_GenAI_第4课_Prompt工程_基础]] — 提示工程基础
 - [[05_大模型/06_微调技术/04_GenAI_L18_微调_LLMs]] — LLM 微调技术
 - [[14_RAG系统/01_RAG基础/04_GenAI_L15_RAG_and_向量数据库]] — RAG 与向量数据库
 - [[15_智能体/14_GenAI课程/05_GenAI_L17_AI_Agent]] — AI Agent 概述

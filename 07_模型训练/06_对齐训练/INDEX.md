@@ -20,7 +20,7 @@ name_en: "Alignment"
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[07_模型训练/06_对齐训练/01_alignment_rlhf|alignment-rlhf]] | RLHF alignment practice: reward modeling and PPO training | alignment engineers / LLM researchers |
-| [[07_模型训练/06_对齐研究/GRPO_and_New_Alignment_Methods|GRPO and New Alignment Methods]] | GRPO and new alignment methods: DeepSeek's innovative approach | alignment researchers / LLM engineers |
+| [[07_模型训练/06_对齐训练/02_GRPO_and_新型_对齐_Methods|GRPO and New Alignment Methods]] | GRPO and new alignment methods: DeepSeek's innovative approach | alignment researchers / LLM engineers |
 | [[07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南|TRL RLHF DPO Guide]] | TRL library hands-on guide: RLHF, DPO and PPO training | LLM practitioners / alignment engineers |
 
 ## Related

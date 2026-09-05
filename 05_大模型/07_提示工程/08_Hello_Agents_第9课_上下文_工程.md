@@ -145,7 +145,7 @@ name_zh: "Hello-Agents L09：上下文工程"
 ## 7. 关联阅读
 
 - [[05_大模型/07_提示工程/16_Prompt工程]] — 提示工程基础
-- [[05_大模型/07_提示工程/Prompt_Engineering_Principles_Ng]] — Ng 提示工程原则
+- [[05_大模型/07_提示工程/14_Prompt工程_原则_Ng]] — Ng 提示工程原则
 - [[15_智能体/Hello_Agents_L08_Memory_RAG]] — 记忆与 RAG
 - [[15_智能体/03_Agent工作流/06_工作流_简明指南]] — Agent 工作流总览
 - [[05_大模型/07_提示工程/Hello_Agents_L04_ReAct|ReAct 模式]]

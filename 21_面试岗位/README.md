@@ -44,10 +44,10 @@ name_zh: "AI 面试准备"
 
 | 岗位 | 核心能力 | 文件 |
 |------|---------|------|
-| [[21_面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer]] | 算法实现、实验设计、工程落地 | 面试准备 + 题库 |
-| [[21_面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist]] | 前沿研究、论文发表、技术创新 | 面试准备 + 题库 |
-| [[21_面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist]] | 业务建模、算法优化、产品落地 | 面试准备 + 题库 |
-| [[21_面试岗位/Research_Scientist/Research_Scientist|Research Scientist]] | 基础理论研究、学术影响力 | 面试准备 + 题库 |
+| [[21_面试岗位/08_AI研究工程师/README|AI Research Engineer]] | 算法实现、实验设计、工程落地 | 面试准备 + 题库 |
+| [[21_面试岗位/09_AI研究科学家/README|AI Research Scientist]] | 前沿研究、论文发表、技术创新 | 面试准备 + 题库 |
+| [[21_面试岗位/13_应用科学家/README|Applied Scientist]] | 业务建模、算法优化、产品落地 | 面试准备 + 题库 |
+| [[21_面试岗位/24_研究科学家/README|Research Scientist]] | 基础理论研究、学术影响力 | 面试准备 + 题库 |
 
 ### 产品与管理类
 

@@ -673,11 +673,11 @@ Pretrain → Annealing(数学/代码强化) → Cold Start SFT(少量推理数�
 ## 11. 相关概念
 
 - [[07_模型训练/06_对齐训练/04_RLHF_at_Scale_2026]] - 大规模 RLHF 工业化实践
-- [[GRPO_and_New_Alignment_Methods]] - GRPO 与新一代对齐方法
+- [[07_模型训练/06_对齐训练/02_GRPO_and_新型_对齐_Methods]] - GRPO 与新一代对齐方法
 - [[概念/Training/synthetic-data]] - 合成数据训练
 - [[Curriculum_Learning_for_LLMs]] - 课程学习与数据调度
-- [[Data_Curation_and_Mixture_2026]] - 数据配比与清洗
-- [[Scaling_Laws_and_Training_Dynamics]] - Scaling Laws
+- [[07_模型训练/02_数据工程/04_数据_Curation_and_Mixture_2026]] - 数据配比与清洗
+- [[07_模型训练/03_训练优化/06_扩展定律_and_训练_Dynamics]] - Scaling Laws
 - [[概念/General/finops]] - 训练成本优化
 - [[07_模型训练/06_对齐训练/01_alignment_rlhf]] - RLHF 基础
 - [[07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南]] - TRL 实战指南

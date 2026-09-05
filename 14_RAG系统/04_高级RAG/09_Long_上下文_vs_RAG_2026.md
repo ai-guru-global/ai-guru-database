@@ -773,7 +773,7 @@ class CachedLongContextCost:
 - [[14_RAG系统/04_高级RAG/03_Code_RAG_架构|代码RAG架构]] — 代码场景的RAG
 - [[14_RAG系统/04_高级RAG/02_Agentic_RAG_指南|Agentic RAG指南]] — Agent驱动的自适应RAG
 - [[14_RAG系统/05_RAG生产实践/02_RAG_成本优化|RAG成本优化]] — 成本优化实践
-- [[14_RAG系统/04_高级RAG/RAG_Retrieval_Latency_Optimization|RAG检索延迟优化]] — 延迟优化
+- [[14_RAG系统/04_高级RAG/14_RAG_检索_延迟_优化|RAG检索延迟优化]] — 延迟优化
 - [[14_RAG系统/02_嵌入技术/01_嵌入_模型_指南|嵌入模型指南]] — 嵌入模型选型
 - [[14_RAG系统/04_高级RAG/05_Graph_RAG_架构|Graph RAG架构]] — 图结构增强检索
 - [[14_RAG系统/01_RAG基础/07_RAG_系统|RAG系统基础]] — RAG基础概念

@@ -58,15 +58,15 @@ name_zh: "AI 相关岗位与工种清单"
 - [[21_面试岗位/AI_Policy_Specialist/AI_Policy_Specialist]] — AI Policy Specialist 面试指南（AI 治理/合规/政策）
 - [[21_面试岗位/AI_Product_Manager/AI_Product_Manager]] — AI Product Manager 面试指南（产品策略/用户洞察）
 - [[21_面试岗位/AI_Reliability_Engineer/AI_Reliability_Engineer]] — AI Reliability Engineer 面试指南（模型监控/SLO/故障恢复）
-- [[21_面试岗位/AI_Research_Engineer/AI_Research_Engineer]] — AI Research Engineer 面试指南（算法实现/实验设计）
-- [[21_面试岗位/AI_Research_Scientist/AI_Research_Scientist]] — AI Research Scientist 面试指南（前沿研究/论文发表）
+- [[21_面试岗位/08_AI研究工程师/README]] — AI Research Engineer 面试指南（算法实现/实验设计）
+- [[21_面试岗位/09_AI研究科学家/README]] — AI Research Scientist 面试指南（前沿研究/论文发表）
 - [[21_面试岗位/AI_Security_Engineer/AI_Security_Engineer]] — AI Security Engineer 面试指南（对抗攻击/红队测试）
 - [[21_面试岗位/AI_Solutions_Architect/AI_Solutions_Architect]] — AI Solutions Architect 面试指南（方案设计/技术选型）
-- [[21_面试岗位/Applied_Scientist/Applied_Scientist]] — Applied Scientist 面试指南（业务建模/算法优化）
+- [[21_面试岗位/13_应用科学家/README]] — Applied Scientist 面试指南（业务建模/算法优化）
 - [[21_面试岗位/Data_Engineer/Data_Engineer]] — Data Engineer 面试指南（数据管道/ETL/数据仓库）
 - [[21_面试岗位/MLOps_Engineer/MLOps_Engineer]] — MLOps Engineer 面试指南（流水线/CI-CD/模型监控）
 - [[21_面试岗位/Prompt_Engineer/Prompt_Engineer]] — Prompt Engineer 面试指南（Prompt 设计/评估优化）
-- [[21_面试岗位/Research_Scientist/Research_Scientist]] — Research Scientist 面试指南（基础理论/学术影响力）
+- [[21_面试岗位/24_研究科学家/README]] — Research Scientist 面试指南（基础理论/学术影响力）
 - [[21_面试岗位/Robotics_Engineer/Robotics_Engineer]] — Robotics Engineer 面试指南（感知/规划/控制/仿真）
 - [[21_面试岗位/Cloud_Ops_Engineer/Cloud_Ops_Engineer]] — Cloud Ops Engineer 面试指南（K8s/GPU 13_运维/事故响应）
 

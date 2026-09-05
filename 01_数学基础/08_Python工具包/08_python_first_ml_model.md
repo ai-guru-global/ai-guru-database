@@ -3,7 +3,7 @@ title: "Python 基础 × 第一个 ML 模型 — 从零到一的实战桥梁"
 category: -synthesis
 tags: [python, machine-learning, fundamentals, scikit-learn, beginner, hands-on]
 sources:
-  - "[[01_数学基础/Python_Data_Science_Toolkit]]"
+  - "[[01_数学基础/08_Python工具包/05_Python_数据_Science_工具kit]]"
   - "[[02_机器学习/02_监督学习/04_Your_First_ML_模型]]"
   - "[[01_数学基础/08_Python工具包/06_Python_for_AI_基础]]"
   - "[[01_数学基础/08_Python工具包/01_AI_开发_Environment_配置]]"
@@ -71,7 +71,7 @@ Day 14:   Kaggle 提交 + 总结复盘
 
 ## Related
 
-- [[01_数学基础/Python_Data_Science_Toolkit]] — Python 数据科学工具链
+- [[01_数学基础/08_Python工具包/05_Python_数据_Science_工具kit]] — Python 数据科学工具链
 - [[02_机器学习/02_监督学习/04_Your_First_ML_模型]] — 第一个 ML 模型
 - [[01_数学基础/08_Python工具包/06_Python_for_AI_基础]] — Python AI 基础
 - [[01_数学基础/08_Python工具包/01_AI_开发_Environment_配置]] — 开发环境配置

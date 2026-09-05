@@ -139,7 +139,7 @@ RAG 的生成阶段对 TTFT（首个 token 时间）和前缀缓存命中率非�
 - [[概念/General/code-generation-workflow.md|代码生成工作流]]
 - [[14_RAG系统/04_高级RAG/02_Agentic_RAG_指南|Agentic RAG 应用大白话]]
 
-- [[RAG_Retrieval_Latency_Optimization|RAG 检索延迟优化]]
+- [[14_RAG系统/04_高级RAG/14_RAG_检索_延迟_优化|RAG 检索延迟优化]]
 - [[14_RAG系统/README.md|HuggingFace Datasets Streaming 模式实战指南]]
 
 ## 新增页面

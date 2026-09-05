@@ -19,7 +19,7 @@ name_en: "Time Series"
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[02_机器学习/09_时间序列/Time_Series_Analysis|Time Series Analysis]] | Time series analysis: classical methods, deep learning and Transformer-based approaches | data scientists / forecasting engineers |
+| [[概念/Math/time-series-analysis|Time Series Analysis]] | Time series analysis: classical methods, deep learning and Transformer-based approaches | data scientists / forecasting engineers |
 | [[02_机器学习/README.md|Time Series for dummy]] | Time series beginner guide: trend, seasonality and forecasting fundamentals | beginners / analysts |
 
 ## Related

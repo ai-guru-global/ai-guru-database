@@ -20,7 +20,7 @@ name_zh: "Transformer 大白话入门（Head First）"
 
 > **一句话理解**: Transformer 用 Self-Attention 取代循环和卷积，让序列中任意两个位置都能直接交互——并行训练、全局感知、高度可扩展，成为当代 AI 的统一基础架构。
 
-> **这篇文档是干嘛的**：不用公式、不堆术语，用大白话把 Transformer 里出现的每一个概念都讲清楚，最后把它们串成一个完整的故事。看完之后再看 [[概念/LLM/transformer-architecture]] 和 [[Transformer_Deep_Dive]] 会顺很多。
+> **这篇文档是干嘛的**：不用公式、不堆术语，用大白话把 Transformer 里出现的每一个概念都讲清楚，最后把它们串成一个完整的故事。看完之后再看 [[概念/LLM/transformer-architecture]] 和 [[05_大模型/03_Transformer架构/04_Transformer_架构详解]] 会顺很多。
 
 ---
 
@@ -271,7 +271,7 @@ Decoder 的词拿着自己的 **Q**，去和 **Encoder 输出的 K、V** 做匹�
 ## 关联文档
 
 - [[05_大模型/03_Transformer架构/04_Transformer_架构详解]] — 架构详解（带公式和代码）
-- [[05_大模型/03_Transformer/Transformer_Deep_Dive]] — 06_深度剖析：从 07_QKV 到完整架构
+- [[05_大模型/03_Transformer架构/04_Transformer_架构详解]] — 06_深度剖析：从 07_QKV 到完整架构
 - [[05_大模型/03_Transformer/Transformer_Training_vs_Inference]] — 训练 vs 推理详解
 - [[05_大模型/03_Transformer架构/02_Self_注意力_Mechanism]] — Self-Attention 机制专题
 - [[20_论文精读/02_模型架构/01_注意力_Is_All_You_Need_深入分析]] — 原始论文精读

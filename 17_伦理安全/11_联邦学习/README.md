@@ -35,6 +35,6 @@ name_zh: "联邦学习"
 
 - [[17_伦理安全/11_联邦学习/Federated_Learning_Deep_Dive|联邦学习深度解读]] — 联邦学习深入解析
 - [[17_伦理安全/11_联邦学习/index|联邦学习索引]] — 联邦学习索引
-- [[17_伦理安全/10_隐私保护AI/Privacy_Preserving_AI|隐私保护 AI]] — 联邦学习的隐私目标
+- [[概念/Safety/privacy-preserving-ai|隐私保护 AI]] — 联邦学习的隐私目标
 - [[概念/General/federated-learning|联邦学习]] — 联邦学习概念卡片
 - [[17_伦理安全/index|伦理安全首页]] — 伦理安全知识总览

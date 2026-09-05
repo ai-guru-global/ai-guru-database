@@ -154,8 +154,8 @@ name_zh: "运维与可观测性"
 - [[13_运维/01_AIOps基础/AIOps-in-nutshell]] — AI Ops 速成指南
 - [[13_运维/README.md]] — AI Ops 入门指南
 - [[13_运维/README]] — 16 AI Ops — 小白版 📡
-- [[12_架构基建/AI_Stack_Production_Toolchain]] — AI Stack 生产工具链总览
-- [[12_架构基建/AI_Stack_Container_Runtime_Guide]] — AI Stack 容器与运行时指南
+- [[12_架构基建/03_AI技术栈/09_AI技术栈_生产_工具链]] — AI Stack 生产工具链总览
+- [[12_架构基建/03_AI技术栈/01_AI技术栈_容器_Runtime_指南]] — AI Stack 容器与运行时指南
 - [[12_架构基建/03_AI技术栈/04_AI技术栈_GPU_监控_指南]] — AI Stack GPU 监控指南
 - [[12_架构基建/03_AI技术栈/06_AI技术栈_K8s_Operations_指南]] — AI Stack K8s 编排指南
 - [[12_架构基建/03_AI技术栈/03_AI技术栈_Exclusive_工具_指南]] — AI Stack 专属运维工具指南

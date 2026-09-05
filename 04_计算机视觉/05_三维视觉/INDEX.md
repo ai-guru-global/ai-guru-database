@@ -19,7 +19,7 @@ name_en: "3D Vision"
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[04_计算机视觉/05_三维视觉/3D_Vision|3D Vision]] | 3D vision knowledge system: from multi-view geometry to neural rendering | CV researchers / 3D vision engineers |
+| [[概念/Vision/3d-vision|3D Vision]] | 3D vision knowledge system: from multi-view geometry to neural rendering | CV researchers / 3D vision engineers |
 | [[04_计算机视觉/README.md|3D Vision for dummy]] | 3D vision beginner guide: NeRF and Gaussian Splatting fundamentals | beginners / CV learners |
 
 ## Related

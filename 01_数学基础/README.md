@@ -26,8 +26,8 @@ name_zh: "01 基础理论"
 
 | 主题 | 难度 | 描述 | 文档链接 |
 |------|------|------|---------|
-| **线性代数 (Linear Algebra)** | 入门 | 张量运算、特征值分解、SVD，构建所有模型参数表示的数学基础 | [[02_线性代数/Linear_Algebra]] |
-| **概率论与统计 (Probability & Statistics)** | 入门 | 贝叶斯定理、高斯分布、信息论，处理 AI 中的不确定性 | [[03_概率统计/Probability_Statistics]] |
+| **线性代数 (Linear Algebra)** | 入门 | 张量运算、特征值分解、SVD，构建所有模型参数表示的数学基础 | [[概念/Math/linear-algebra]] |
+| **概率论与统计 (Probability & Statistics)** | 入门 | 贝叶斯定理、高斯分布、信息论，处理 AI 中的不确定性 | [[概念/Math/probability-statistics]] |
 | **微积分与优化 (Calculus & Optimization)** | 入门→进阶 | 导数/偏导/链式法则/梯度下降/凸优化/KKT 条件，深度学习的数学基石 | [[Calculus_Optimization/Calculus_Optimization]] |
 | **信息论 (Information Theory)** | 进阶 | 香农熵、交叉熵、KL 散度，连接信息论与损失函数设计 | [[04_信息论/Information_Theory_Fundamentals]] |
 
@@ -38,7 +38,7 @@ name_zh: "01 基础理论"
 | 主题 | 难度 | 描述 | 文档链接 | 关联目录 |
 |------|------|------|---------|---------|
 | **数据结构与算法 (DS & Algorithms)** | 进阶 | 计算图、拓扑排序、向量索引，支撑自动微分与高效检索 | [[01_数学基础/07_数据结构与算法/01_Data_Structures_Algorithms]] | — |
-| **分布式系统 (Distributed Systems)** | 进阶 | All-Reduce、并行策略、ZeRO 优化，实现大规模模型训练 | [[09_分布式系统/Distributed_Systems]] | → [[12_架构基建/02_架构概览/|架构基建]] |
+| **分布式系统 (Distributed Systems)** | 进阶 | All-Reduce、并行策略、ZeRO 优化，实现大规模模型训练 | [[概念/Training/distributed-systems]] | → [[12_架构基建/02_架构概览/|架构基建]] |
 | **AI 硬件与芯片 (AI Hardware)** | 进阶 | H100/H200/B200 对比，GPU 选型，边缘 AI 芯片，2026 年硬件格局 | [[01_数学基础/10_AI硬件/01_AI硬件_2026]] | → [[12_架构基建/07_硬件与算力/|硬件计算]] |
 | **GPU 编程 (GPU Programming)** | 进阶 | CUDA 基础、Kernel 编写、内存层次 | [[01_数学基础/10_AI硬件/05_GPU_Programming_CUDA_基础|CUDA_Basics]] | → [[12_架构基建/07_硬件与算力/|硬件计算]] |
 | **Java 生态与 AI (Java Ecosystem)** | 进阶 | Spring AI、LangChain4j、DJL、GraalVM，Java AI 应用全栈概览 | [[01_数学基础/11_Java生态与AI/02_Java生态与AI_概览]] | → [[16_编程/|编程]] |

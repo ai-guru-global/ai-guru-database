@@ -339,6 +339,6 @@ display(Image(app.get_graph(xray=True).draw_mermaid_png()))
 
 - [[15_智能体/03_Agent工作流/02_Agentic_工作流_设计_模式_2026]] — Agent 工作流设计模式
 - [[15_智能体/03_Agent工作流/06_工作流_简明指南]] — 工作流速览
-- [[15_智能体/05_Agent技能/Tool_Calling_Best_Practices]] — Tool Calling 最佳实践
+- [[15_智能体/05_Agent技能/14_工具调用_最佳实践]] — Tool Calling 最佳实践
 - [[15_智能体/02_Agent框架/README]] — Agent 框架概览
 - [[15_智能体/05_Agent技能/Agent_Skills_Practical_Guide]] — Agent Skills 实战

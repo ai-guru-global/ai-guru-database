@@ -23,7 +23,7 @@ This page indexes the contents of `14_RAG系统/04_高级RAG`.
 - [[14_RAG系统/04_高级RAG/Multimodal_RAG_Architecture_2026|Multimodal RAG Architecture 2026]]
 - [[14_RAG系统/04_高级RAG/12_RAG_高级_2026|RAG Advanced 2026]]
 - [[14_RAG系统/04_高级RAG/RAG_Debugging_Cheat_Sheet|RAG Debugging Cheat Sheet]]
-- [[14_RAG系统/04_高级RAG/RAG_Retrieval_Latency_Optimization|RAG Retrieval Latency Optimization]]
+- [[14_RAG系统/04_高级RAG/14_RAG_检索_延迟_优化|RAG Retrieval Latency Optimization]]
 
 ## 专题深度解析
 

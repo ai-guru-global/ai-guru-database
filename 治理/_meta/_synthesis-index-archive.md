@@ -48,7 +48,7 @@ This page indexes the contents of `综合`.
 - [[治理/rag-vector-database|Rag Vector Database]]
 - [[治理/README|README]]
 - [[治理/AGENTS|Reasoning Models Agents]]
-- [[治理/safety-evaluation-red-teaming|Safety Evaluation Red Teaming]]
+- [[17_伦理安全/04_AI安全与红队/06_safety_evaluation_red_teaming|Safety Evaluation Red Teaming]]
 - [[治理/serving-deployment|Serving Deployment]]
 - [[治理/synthesis-architecture-selection-guide|Synthesis Architecture Selection Guide]]
 - [[治理/_meta/_synthesis-readme-archive|Synthesis Engineering Evolution]]

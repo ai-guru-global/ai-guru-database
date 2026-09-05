@@ -87,7 +87,7 @@ name_zh: "Hello-Agents 课程映射：从零开始构建智能体"
 | 08 | 记忆与检索 | 感觉/工作/长期记忆、情景/语义/程序性记忆、MemoryManager、RAG Pipeline、Qdrant、Neo4j、SQLite | [[14_RAG系统/01_RAG基础/07_RAG_系统]]、[[14_RAG系统/01_RAG基础/04_GenAI_L15_RAG_and_向量数据库]]、[[14_RAG系统/03_向量数据库/04_Qdrant_深入分析]] | [[15_智能体/Hello_Agents_L08_Memory_RAG]] |
 | 09 | 上下文工程 | Prompt Engineering vs Context Engineering、上下文腐蚀、JIT 上下文、GSSC 流水线、压缩整合、结构化笔记、子代理架构 | [[05_大模型/07_提示工程/16_Prompt工程]]、[[15_智能体/03_Agent工作流/06_工作流_简明指南]] | [[05_大模型/07_提示工程/Hello_Agents_L09_Context_Engineering]] |
 | 10 | 智能体通信协议 | MCP、A2A、ANP、FastMCP、a2a-sdk、服务发现、去中心化网络 | [[概念/Agent/a2a-protocol]]、[[90_学习/05_参考资料/Articles/04_awesome_mcp_servers]] | [[15_智能体/Hello_Agents_L10_Agent_Protocols]] |
-| 11 | Agentic-RL | 预训练、SFT、奖励建模、PPO、RLHF/RLAIF、Agentic RL、MDP、GRPO、推理与工具使用训练 | [[07_模型训练/06_对齐研究/GRPO_and_New_Alignment_Methods]]、[[07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南]]、[[06_强化学习/01_强化学习基础/03_RL基础|RL_Fundamentals]] | [[15_智能体/13_Hello_Agents课程/04_Hello_Agents_L11_Agentic_RL]] |
+| 11 | Agentic-RL | 预训练、SFT、奖励建模、PPO、RLHF/RLAIF、Agentic RL、MDP、GRPO、推理与工具使用训练 | [[07_模型训练/06_对齐训练/02_GRPO_and_新型_对齐_Methods]]、[[07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南]]、[[06_强化学习/01_强化学习基础/03_RL基础|RL_Fundamentals]] | [[15_智能体/13_Hello_Agents课程/04_Hello_Agents_L11_Agentic_RL]] |
 | 12 | 智能体性能评估 | BFCL、GAIA、ToolBench、API-Bank、AgentBench、WebArena、LLM Judge、准精确匹配、Win Rate | [[08_模型评估/02_基准测试/01_Agentic_基准测试_指南]]、[[08_模型评估/04_评估工具/04_LLM_as_Judge_指南]]、[[08_模型评估/02_基准测试/07_LLM_基准测试_Suite_2026]] | [[08_模型评估/02_基准测试/01_Agentic_基准测试_指南]] |
 
 ### 第四部分：综合案例进阶

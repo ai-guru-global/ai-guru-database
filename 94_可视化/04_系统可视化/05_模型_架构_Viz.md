@@ -215,7 +215,7 @@ torchinfo.summary(model, input_size=(1,3,224,224))
 
 ### 7.3 与训练监控联动
 
-把架构图与 [[94_可视化/Training_Viz/Training_Monitoring_Visualization|训练监控]] 联动：点击某层查看其梯度/激活直方图。
+把架构图与 [[94_可视化/02_训练可视化/07_训练_监控_可视化|训练监控]] 联动：点击某层查看其梯度/激活直方图。
 
 ---
 

@@ -403,7 +403,7 @@ spec:
 - [[11_模型运维/05_流程编排/Data_Versioning_DVC_LakeFS]] — DVC 深度解析
 - [[11_模型运维/04_实验追踪/07_MLflow_深入分析]] — MLflow 深度解析
 - [[11_模型运维/06_持续集成部署/04_ML_CI_CD]] — ML CI/CD
-- [[11_模型运维/08_可观测性/Model_Monitoring_and_Drift_Detection_2026]] — 模型监控
+- [[11_模型运维/08_可观测性/13_模型_监控_and_Drift_检测_2026]] — 模型监控
 
 ---
 

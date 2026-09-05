@@ -155,7 +155,7 @@ Transformer 训练 的标配配置：
 ## See Also (深度专题)
 
 - [[05_大模型/03_Transformer架构/04_Transformer_架构详解|Transformer 架构深度解析]] — Self-Attention / Multi-Head / FFN 的数学推导与实现
-- [[../../05_大模型/03_Transformer架构/Transformer_Deep_Dive|Transformer 深度解读]] — 编码器-解码器、位置编码、归一化策略的技术细节
+- [[05_大模型/03_Transformer架构/04_Transformer_架构详解|Transformer 深度解读]] — 编码器-解码器、位置编码、归一化策略的技术细节
 - [[05_大模型/03_Transformer架构/02_Self_注意力_Mechanism|自注意力机制]] — Attention 的工程优化 (Flash Attention 等)
 
 ---

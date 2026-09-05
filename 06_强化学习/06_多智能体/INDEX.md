@@ -17,7 +17,7 @@ name_en: "Multi Agent"
 
 | 文件 | 说明 |
 |------|------|
-| [[06_强化学习/06_多智能体/Multi_Agent_RL|Multi-Agent Reinforcement Learning]] |  |
+| [[06_强化学习/06_多智能体/02_多智能体强化学习|Multi-Agent Reinforcement Learning]] |  |
 | [[06_强化学习/06_多智能体/Multi_Agent_Systems|多智能体系统深度解析 (Multi-Agent Systems Deep Dive)]] | 多智能体系统是多个 Agent 在共享环境中交互的复杂系统——从合作到竞争，从博弈到涌现，系统解析多智能体强化学习的理论与实践。 |
 
 ## Related

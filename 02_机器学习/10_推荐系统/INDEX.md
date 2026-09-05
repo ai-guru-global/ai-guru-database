@@ -19,7 +19,7 @@ name_en: "Recommendation Systems"
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[02_机器学习/10_推荐系统/Recommendation_Systems|Recommendation Systems]] | Recommendation system knowledge: recall, ranking, re-ranking and multi-objective optimization | ML engineers / recommendation system developers |
+| [[概念/Math/recommendation-systems|Recommendation Systems]] | Recommendation system knowledge: recall, ranking, re-ranking and multi-objective optimization | ML engineers / recommendation system developers |
 | [[02_机器学习/README.md|Recommendation Systems for dummy]] | Recommendation systems beginner guide: from matrix factorization to two-tower models | beginners / ML learners |
 
 ## Related

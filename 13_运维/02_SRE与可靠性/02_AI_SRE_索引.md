@@ -34,7 +34,7 @@ name_zh: "站点可靠性工程"
 ## Related
 
 - [[13_运维/02_SRE与可靠性/22_SRE_for_AI_系统|AI 系统 SRE 实践]]
-- [[13_运维/04_问题排查/Kubernetes_Troubleshooting_Playbook|K8s 排障手册]]
+- [[13_运维/04_问题排查/07_Kubernetes_故障排查_Playbook|K8s 排障手册]]
 - [[12_架构基建/02_架构概览/03_AI_系统_架构_2026|系统架构]]
 - [[12_架构基建/05_CNCF云原生AI|CNCF 云原生 AI]]
 

@@ -152,7 +152,7 @@ name_zh: "08 AI 伦理、安全与对齐"
 - [[17_伦理安全/Ethics_Safety-in-nutshell|AI 伦理与安全速览]] — 一张图看懂 AI 伦理与安全全貌 (共享: ai-safety, alignment, rlhf, red-teaming)
 - [[17_伦理安全/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)
 - [[17_伦理安全/README.md]] — AI_Safety_RedTeaming_for_dummy
-- [[17_伦理安全/10_隐私保护AI/Privacy_Preserving_AI]] — Privacy_Preserving_AI
+- [[概念/Safety/privacy-preserving-ai]] — Privacy_Preserving_AI
 - [[17_伦理安全/README.md]] — Privacy_Preserving_AI_for_dummy
 - [[17_伦理安全/02_价值对齐/04_Value_对齐]] — 价值对齐 (Value Alignment)
 - [[17_伦理安全/02_价值对齐/04_Value_对齐]] — 价值对齐 - 小白版
@@ -165,7 +165,7 @@ name_zh: "08 AI 伦理、安全与对齐"
 - [[17_伦理安全/03_AI治理/01_AI治理合规2026.md|AI_Governance_Compliance_2026]]
 - [[17_伦理安全/README|README_for_dummy]]
 - [[治理/ai-ethics-future|Ai Ethics Future]]
-- [[17_伦理安全/04_AI安全与红队/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
+- [[17_伦理安全/04_AI安全与红队/05_安全评估_框架|AI 安全评测框架]] — 安全评测基准与红队测试方法论
 
 - [[AI_Ethics_Safety_Future|AI 伦理、安全与未来]]
 - [[Agent_Security_Ethics_AGI|智能体安全、价值对齐与 AGI 路径]]

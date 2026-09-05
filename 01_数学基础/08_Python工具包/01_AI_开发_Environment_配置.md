@@ -357,7 +357,7 @@ python -m ipykernel install --user --name=ai --display-name="Python (AI)"
 ## Related
 
 - [[01_数学基础/08_Python工具包/06_Python_for_AI_基础]] — Python 语法基础
-- [[01_数学基础/Python_Data_Science_Toolkit]] — NumPy / Pandas / Matplotlib
+- [[01_数学基础/08_Python工具包/05_Python_数据_Science_工具kit]] — NumPy / Pandas / Matplotlib
 - [[01_数学基础/10_AI硬件/01_AI硬件_2026]] — GPU 选型指南
 - [[02_机器学习/02_监督学习/04_Your_First_ML_模型]] — 第一个 ML 模型实战
 - [[治理/python-data-science-pipeline|Python × 数据科学]] — 环境配置与工具链

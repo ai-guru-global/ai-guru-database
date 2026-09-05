@@ -449,6 +449,6 @@ evaluation:
 - [[08_模型评估/01_评估基础/06_模型评估|模型评估]] — 评估方法论全景
 - [[08_模型评估/Evaluation_Automation_2026|评估自动化]] — 自动化评估流水线
 - [[08_模型评估/02_基准测试/02_benchmark_evaluation|多模态评测]] — 多模态模型评估
-- [[治理/safety-evaluation-red-teaming|安全评测 × 红队测试]] — 安全评估的综合分析
+- [[17_伦理安全/04_AI安全与红队/06_safety_evaluation_red_teaming|安全评测 × 红队测试]] — 安全评估的综合分析
 
 - [[治理/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]

@@ -164,7 +164,7 @@ name_zh: "Data Scientist 面试题实例答案"
 
 - [[21_面试岗位/Data_Scientist/company_level_question_bank|Data Scientist 按公司/级别区分的题库]]
 - [[21_面试岗位/Data_Scientist/interview_preparing|Data Scientist 面试准备]]
-- [[21_面试岗位/Data_Scientist/question_bank|Data Scientist 题库]]
+- [[21_面试岗位/17_数据科学家/05_question_bank|Data Scientist 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
 - [[21_面试岗位/18_面试指南/05_jobs|AI 相关岗位与工种清单]]
 ---
@@ -199,6 +199,6 @@ aliases:
 
 - [[21_面试岗位/Data_Scientist/company_level_question_bank|Data Scientist 按公司/级别区分的题库]]
 - [[21_面试岗位/Data_Scientist/interview_preparing|Data Scientist 面试准备]]
-- [[21_面试岗位/Data_Scientist/question_bank|Data Scientist 题库]]
+- [[21_面试岗位/17_数据科学家/05_question_bank|Data Scientist 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
 - [[21_面试岗位/18_面试指南/05_jobs|AI 相关岗位与工种清单]]

@@ -18,7 +18,7 @@ name_en: "Constrained Generation"
 | 文件 | 说明 |
 |------|------|
 | [[05_大模型/15_约束生成/01_Constrained_Decoding_2026|约束解码深度指南: 从正则到 CFG 的合规生成]] | 约束解码(Constrained Decoding)是保证 LLM 输出格式 100% 合规的根本技术——本文系统讲解正则约束、JSON Schema 约... |
-| [[05_大模型/15_约束生成/Structured_Output_Guide|LLM 结构化输出完全指南]] | 让 LLM 返回可靠结构化数据的技术全景:Function Calling、JSON Mode、Instructor、PydanticAI、Outline... |
+| [[05_大模型/15_约束生成/03_Structured_输出_指南|LLM 结构化输出完全指南]] | 让 LLM 返回可靠结构化数据的技术全景:Function Calling、JSON Mode、Instructor、PydanticAI、Outline... |
 
 ## Related
 

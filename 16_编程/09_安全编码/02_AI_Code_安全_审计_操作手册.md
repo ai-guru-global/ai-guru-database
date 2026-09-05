@@ -597,7 +597,7 @@ AI 代码安全审计不是一次性的项目，而是伴随 AI 编程工具演�
 
 - [[16_编程/03_方法论/04_Vibe_Coding_生产_实践|Vibe Coding 生产环境实践指南]]
 - [[16_编程/03_方法论/Agentic_Coding_Methodology|Agentic Coding 方法论]]
-- [[16_编程/03_方法论/Vibe_Coding_Methodology|Vibe Coding 方法论]]
+- [[16_编程/03_方法论/03_Vibe_Coding_方法论|Vibe Coding 方法论]]
 - [[16_编程/02_理论基础/01_AI_编程_理论|AI 编程理论基础]]
 - [[16_编程/05_开发工具/01_AI_编程_Assistants_2026|AI 编程助手全景报告]]
 - [[16_编程/05_开发工具/14_Hermes_Agent_2026|Hermes Agent 2026 年专业指南]]

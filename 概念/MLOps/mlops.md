@@ -108,7 +108,7 @@ LLMOps面临新挑战：评估从固定指标转向LLM-as-Judge，版本管理�
 
 ## Related
 
-- [[11_模型运维/05_流程编排/Data_Pipeline_Orchestration]] — 数据流水线编排 (Data Pipeline Orchestration) (共享: ci-cd, feature-store, mlops)
+- [[11_模型运维/05_流程编排/02_数据_流水线_编排]] — 数据流水线编排 (Data Pipeline Orchestration) (共享: ci-cd, feature-store, mlops)
 - [[11_模型运维/01_MLOps基础/05_MLOps_流水线]] — MLOps 速成指南 (共享: ci-cd, feature-store, mlops)
 - [[概念/automl]] — 自动机器学习
 

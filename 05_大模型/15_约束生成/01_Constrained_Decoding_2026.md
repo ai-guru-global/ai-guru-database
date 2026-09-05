@@ -826,7 +826,7 @@ graph TB
 
 ## Related
 
-- [[05_大模型/15_约束生成/Structured_Output_Guide|结构化输出完全指南]] — 上层视角的方案对比
+- [[05_大模型/15_约束生成/03_Structured_输出_指南|结构化输出完全指南]] — 上层视角的方案对比
 - [[05_大模型/07_提示工程/13_Prompt工程_完整_指南|提示词工程]] — 格式输出的提示技巧
 - [[15_智能体/14_GenAI课程/03_GenAI_L11_Integrating_with_Function_Calling|Function Calling]] — 训练层结构化输出
 - [[05_大模型/04_LLM架构/07_LLM_Internals_推理|LLM 推理内部机制]] — 解码过程详解

@@ -37,7 +37,7 @@ This page indexes the contents of `伦理安全`.
 - [[17_伦理安全/02_价值对齐/Constitutional_AI_Deep_Dive|Constitutional AI Deep Dive]]
 - [[17_伦理安全/Ethics-in-nutshell|Ethics In Nutshell]]
 - [[17_伦理安全/Ethics_Safety-in-nutshell|Ethics Safety In Nutshell]]
-- [[17_伦理安全/01_伦理基础/GenAI_L03_Using_GenAI_Responsibly|Genai L03 Using Genai Responsibly]]
+- [[17_伦理安全/01_伦理基础/09_GenAI_第3课_Using_GenAI_Responsibly|Genai L03 Using Genai Responsibly]]
 - [[17_伦理安全/06_系统安全/03_GenAI_L13_Securing_AI_应用|Genai L13 Securing AI Applications]]
 - [[17_伦理安全/04_AI安全与红队/03_Guardrails_生产_指南|Guardrails Production Guide]]
 - [[17_伦理安全/06_系统安全/05_LLM_安全_完整_指南|LLM Security Complete Guide]]

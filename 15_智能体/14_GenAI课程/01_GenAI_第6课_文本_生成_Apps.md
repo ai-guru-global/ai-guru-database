@@ -528,4 +528,4 @@ completion = client.chat.completions.create(model=deployment, messages=messages,
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[05_大模型/07_提示工程/GenAI_L05_Advanced_Prompts|L05 高级提示技术]] | [[15_智能体/GenAI_L07_Building_Chat_Applications|L07 构建聊天应用]] |
+| [[05_大模型/07_提示工程/05_GenAI_第5课_高级_Prompts|L05 高级提示技术]] | [[15_智能体/GenAI_L07_Building_Chat_Applications|L07 构建聊天应用]] |

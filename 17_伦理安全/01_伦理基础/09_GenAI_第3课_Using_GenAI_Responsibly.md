@@ -355,4 +355,4 @@ for item in result.items:
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[05_大模型/01_LLM基础/GenAI_L02_Exploring_and_Comparing_LLMs|L02 探索比较LLM]] | [[05_大模型/07_提示工程/04_GenAI_第4课_Prompt工程_基础|L04 提示工程基础]] |
+| [[05_大模型/01_LLM基础/02_GenAI_第2课_Exploring_and_Comparing_LLMs|L02 探索比较LLM]] | [[05_大模型/07_提示工程/04_GenAI_第4课_Prompt工程_基础|L04 提示工程基础]] |

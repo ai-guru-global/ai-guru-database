@@ -75,7 +75,7 @@ Agent 评估不是模型评估的简单扩展，而是一次**范式迁移**：
 - [[08_模型评估/04_评估工具/03_LLM_as_Judge_深入分析]] — LLM-as-Judge 深度解读
 - [[08_模型评估/02_基准测试/01_Agentic_基准测试_指南]] — Agent 评估基准指南
 - [[概念/General/online-evaluation]] — 在线评估方法
-- [[治理/benchmark-evaluation]] — 评测基准 × 评测方法论
+- [[08_模型评估/02_基准测试/02_benchmark_evaluation]] — 评测基准 × 评测方法论
 
 ## 附录：核心概念速查
 

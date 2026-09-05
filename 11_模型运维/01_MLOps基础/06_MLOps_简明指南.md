@@ -375,7 +375,7 @@ flowchart TB
 
 ## Related
 
-- [[11_模型运维/05_流程编排/Data_Pipeline_Orchestration]] — 数据流水线编排 (Data Pipeline Orchestration) (共享: ci-cd, feature-store, mlops, pipeline)
+- [[11_模型运维/05_流程编排/02_数据_流水线_编排]] — 数据流水线编排 (Data Pipeline Orchestration) (共享: ci-cd, feature-store, mlops, pipeline)
 - [[11_模型运维/README.md|README]]
 - [[11_模型运维/README|README_for_dummy]]
 - [[11_模型运维/04_实验追踪/02_实验追踪_深入分析.md|Experiment_Tracking_Deep_Dive]]

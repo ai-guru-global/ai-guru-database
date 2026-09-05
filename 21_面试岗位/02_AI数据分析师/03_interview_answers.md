@@ -102,7 +102,7 @@ ORDER BY f.register_date;
 
 - [[21_面试岗位/AI_Data_Analyst/company_level_question_bank|AI Data Analyst 按公司/级别区分的题库]]
 - [[21_面试岗位/AI_Data_Analyst/interview_preparing|AI Data Analyst 面试准备]]
-- [[21_面试岗位/AI_Data_Analyst/question_bank|AI Data Analyst 题库]]
+- [[21_面试岗位/17_数据科学家/05_question_bank|AI Data Analyst 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
 - [[21_面试岗位/18_面试指南/05_jobs|AI 相关岗位与工种清单]]
 ---
@@ -137,7 +137,7 @@ aliases:
 
 - [[21_面试岗位/AI_Data_Analyst/company_level_question_bank|AI Data Analyst 按公司/级别区分的题库]]
 - [[21_面试岗位/AI_Data_Analyst/interview_preparing|AI Data Analyst 面试准备]]
-- [[21_面试岗位/AI_Data_Analyst/question_bank|AI Data Analyst 题库]]
+- [[21_面试岗位/17_数据科学家/05_question_bank|AI Data Analyst 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
 - [[21_面试岗位/18_面试指南/05_jobs|AI 相关岗位与工种清单]]
 

@@ -1527,4 +1527,4 @@ settings:
 
 ## 延伸阅读
 
-- [[治理/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]
+- [[08_模型评估/02_基准测试/02_benchmark_evaluation|评测基准 × 评测方法论：从分数到可信评估]]

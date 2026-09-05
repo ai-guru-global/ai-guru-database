@@ -211,7 +211,7 @@ flowchart LR
 
 ## 新增页面
 
-- [[05_大模型/15_约束生成/Structured_Output_Guide|结构化输出指南]]
+- [[05_大模型/15_约束生成/03_Structured_输出_指南|结构化输出指南]]
 
 ## 域统计
 

@@ -38,7 +38,7 @@ name_en: "Agent Production"
 - [[15_智能体/README.md|智能体安全评估入门]]
 - [[15_智能体/01_Agent基础/13_Agentic_设计_模式_AndrewNg|Agentic 设计模式（Andrew Ng）]]
 - [[15_智能体/AI_OpenSource_Projects_Overview|AI 开源项目概览]]
-- [[15_智能体/GenAI_L06_Text_Generation_Apps|GenAI L06 文本生成应用]]
+- [[15_智能体/14_GenAI课程/01_GenAI_第6课_文本_生成_Apps|GenAI L06 文本生成应用]]
 - [[15_智能体/GenAI_L07_Building_Chat_Applications|GenAI L07 聊天应用构建]]
 - [[15_智能体/14_GenAI课程/03_GenAI_L11_Integrating_with_Function_Calling|GenAI L11 Function Calling]]
 - [[15_智能体/GenAI_L12_Designing_UX_for_AI_Applications|GenAI L12 AI 应用 UX 设计]]

@@ -386,7 +386,7 @@ Karpathy 在 Tesla 的工作在 2026 年持续被重新评估：
 
 - [[19_业界观点/Yann_LeCun/index]] -- 端到端哲学共鸣
 - [[05_大模型/README]] -- nanoGPT 与 GPT 架构
-- [[16_编程/03_方法论/Vibe_Coding_Methodology]] -- Vibe Coding 方法论
+- [[16_编程/03_方法论/03_Vibe_Coding_方法论]] -- Vibe Coding 方法论
 - [[00_入门/04_伦理与未来/03_AI未来趋势]] -- Software 2.0/3.0
 - [[03_深度学习/README]] -- CS231n 遗产
 

@@ -319,7 +319,7 @@ R:
 
 ## Related
 
-- [[21_面试岗位/Applied_Scientist/question_bank|Applied Scientist 题库]]
+- [[21_面试岗位/17_数据科学家/05_question_bank|Applied Scientist 题库]]
 - [[21_面试岗位/Applied_Scientist/company_level_question_bank|Applied Scientist 按公司/级别区分的题库]]
 - [[21_面试岗位/Applied_Scientist/index|Applied Scientist 首页]]
 - [[02_机器学习/index|机器学习]]

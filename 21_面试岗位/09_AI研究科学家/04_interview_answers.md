@@ -296,7 +296,7 @@ maximize E[r(x,y)] - β·KL[π || π_ref]
 
 ## Related
 
-- [[21_面试岗位/AI_Research_Scientist/question_bank|AI Research Scientist 题库]]
+- [[21_面试岗位/17_数据科学家/05_question_bank|AI Research Scientist 题库]]
 - [[21_面试岗位/AI_Research_Scientist/company_level_question_bank|AI Research Scientist 按公司/级别区分的题库]]
 - [[21_面试岗位/AI_Research_Scientist/index|AI Research Scientist 首页]]
 - [[05_大模型/index|大模型]]

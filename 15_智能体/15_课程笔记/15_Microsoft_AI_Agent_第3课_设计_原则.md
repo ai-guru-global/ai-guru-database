@@ -122,7 +122,7 @@ name_zh: "L03 Agentic 设计原则：Space / Time / Core 三维框"
 - [[15_智能体/15_课程笔记/Microsoft_AI_Agents_L02_Frameworks]] — 上一课：框架选型
 - [[15_智能体/15_课程笔记/27_Microsoft_AI_Agent_L15_浏览器_Use]] — 下一课：工具使用设计模式
 - [[15_智能体/01_Agent基础/13_Agentic_设计_模式_AndrewNg]] — Andrew Ng 工程视角的四大 Agentic 模式
-- [[17_伦理安全/01_伦理基础/GenAI_L03_Using_GenAI_Responsibly]] — 负责任 AI 概览
+- [[17_伦理安全/01_伦理基础/09_GenAI_第3课_Using_GenAI_Responsibly]] — 负责任 AI 概览
 - [[90_学习/03_课程资源/microsoft/03_microsoft_ai_agents_for_beginners]] — 课程总览
 
 ## 附录：核心概念速查

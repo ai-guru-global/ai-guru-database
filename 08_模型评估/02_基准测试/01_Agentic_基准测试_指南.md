@@ -33,7 +33,7 @@ name_zh: "Agentic Benchmarks — AI Agent 评测全景指南"
 
 ---
 
-- [[治理/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]
+- [[08_模型评估/02_基准测试/02_benchmark_evaluation|评测基准 × 评测方法论：从分数到可信评估]]
 ## 一、Agent 评测概述
 
 ### 1.1 为什么标准 Benchmark 对 Agent 失效

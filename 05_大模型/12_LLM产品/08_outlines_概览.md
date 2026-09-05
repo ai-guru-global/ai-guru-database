@@ -106,7 +106,7 @@ sentiment = choice_gen("I love this product!")
 
 ## 相关概念
 
-- [[05_大模型/15_约束生成/Structured_Output_Guide|结构化输出指南]]
+- [[05_大模型/15_约束生成/03_Structured_输出_指南|结构化输出指南]]
 - [[05_大模型/README|NLP & LLMs]]
 - [[概念/outlines|Outlines 概念卡片]]
 - [[概念/LLM/structured-output|结构化输出]]
@@ -191,7 +191,7 @@ cfg_gen = outlines.generate.cfg(model, grammar)
 
 ## 相关概念
 
-- [[05_大模型/15_约束生成/Structured_Output_Guide|结构化输出指南]]
+- [[05_大模型/15_约束生成/03_Structured_输出_指南|结构化输出指南]]
 - [[05_大模型/README|NLP & LLMs]]
 - [[概念/outlines|Outlines 概念卡片]]
 - [[概念/LLM/structured-output|结构化输出]]

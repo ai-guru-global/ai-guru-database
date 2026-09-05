@@ -451,4 +451,4 @@ evaluation:
 - [[08_模型评估/02_基准测试/02_benchmark_evaluation|多模态评测]] — 多模态模型评估
 - [[17_伦理安全/04_AI安全与红队/06_safety_evaluation_red_teaming|安全评测 × 红队测试]] — 安全评估的综合分析
 
-- [[治理/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]
+- [[08_模型评估/02_基准测试/02_benchmark_evaluation|评测基准 × 评测方法论：从分数到可信评估]]

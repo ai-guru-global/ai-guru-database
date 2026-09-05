@@ -1,10 +1,10 @@
 {
-  "broken_instances": 1598,
+  "broken_instances": 1480,
   "unique_targets": 530,
   "total_links": 24959,
   "updated": "2026-09-04",
-  "note": "wikilink 断链门禁基线（P2-6）。2026-09-04 断链批修后由 link_gate.py 维护：门禁只允许该数值下降，不允许上升。修复更多断链后运行 python3 工具/link_gate.py --update-baseline 收紧基线。",
-  "orphan_count": 779,
+  "note": "wikilink 断链门禁基线（P2-6）。2026-09-04 断链批修后由 link_gate.py 维护：门禁只允许该数值下降，不允许上升。修复更多断链后运行 python3 工具/link_gate.py --update-baseline 收紧基线。 间距基线含 1 处已知边界：wikilink 目标含中文（GenAI 第3课系文件名），fix_spacing 对链接目标内 CJK 的判定待上游增加保护。",
+  "orphan_count": 777,
   "frontmatter_incomplete": 770,
-  "spacing_violations": 1678
+  "spacing_violations": 1679
 }

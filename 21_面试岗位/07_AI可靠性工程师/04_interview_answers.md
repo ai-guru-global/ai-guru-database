@@ -294,7 +294,7 @@ R:
 
 ## Related
 
-- [[21_面试岗位/AI_Reliability_Engineer/question_bank|AI Reliability Engineer 题库]]
+- [[21_面试岗位/17_数据科学家/05_question_bank|AI Reliability Engineer 题库]]
 - [[21_面试岗位/AI_Reliability_Engineer/company_level_question_bank|AI Reliability Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/AI_Reliability_Engineer/index|AI Reliability Engineer 首页]]
 - [[13_运维/index|运维]]

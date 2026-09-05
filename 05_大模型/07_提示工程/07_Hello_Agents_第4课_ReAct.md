@@ -141,7 +141,7 @@ Reflection 可视为在 ReAct 循环之上增加了一层**元认知（Metacogni
 - [[15_智能体/02_Agent框架/05_AutoGen_深入分析]] — AutoGen 多 Agent 框架
 - [[15_智能体/03_Agent工作流/06_工作流_简明指南]] — Agent 工作流总览
 - [[05_大模型/07_提示工程/16_Prompt工程]] — 提示工程基础
-- [[05_大模型/07_提示工程/GenAI_L05_Advanced_Prompts]] — 高级提示技术
+- [[05_大模型/07_提示工程/05_GenAI_第5课_高级_Prompts]] — 高级提示技术
 - [[15_智能体/Hello_Agents_L06_Frameworks_AutoGen_LangGraph]] — 主流框架实践
 - [[05_大模型/07_提示工程/Hello_Agents_L09_Context_Engineering|上下文工程]]
 

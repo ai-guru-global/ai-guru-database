@@ -466,7 +466,7 @@ You can click on the links to access the courses.
 ## 扩展阅读
 
 - [[90_学习/03_课程资源/microsoft/01_microsoft_genai_for_beginners]]
-- [[15_智能体/GenAI_L06_Text_Generation_Apps]]
+- [[15_智能体/14_GenAI课程/01_GenAI_第6课_文本_生成_Apps]]
 - [[15_智能体/GenAI_L07_Building_Chat_Applications]]
 - [[15_智能体/01_Agent基础/13_Agentic_设计_模式_AndrewNg]]
 - [[15_智能体/02_Agent框架/README]]

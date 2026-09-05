@@ -33,7 +33,7 @@ name_en: "Multimodal Models"
 | [[05_大模型/09_多模态模型/05_Modality_Fusion_Mechanisms|模态融合机制]] | 多模态融合方法详解 |
 | [[05_大模型/09_多模态模型/Video_Understanding_Architectures|视频理解]] | 视频理解架构 |
 | [[05_大模型/09_多模态模型/04_LLaVA_深入分析|LLaVA]] | LLaVA 多模态模型深度解读 |
-| [[05_大模型/09_多模态模型/GenAI_L09_Building_Image_Applications|图像应用构建]] | 多模态图像应用实践 |
+| [[05_大模型/09_多模态模型/02_GenAI_第9课_Building_图像_应用|图像应用构建]] | 多模态图像应用实践 |
 | [[05_大模型/09_多模态模型/README|README]] | 目录说明 |
 
 ## 核心概念速查

@@ -234,7 +234,7 @@ This page indexes the contents of `面试岗位`.
 ## 相关文档
 
 - [[21_面试岗位/18_面试指南/03_Interview_Preparation|面试岗位速览 (nutshell)]]
-- [[21_面试岗位/AI_Safety_Engineer/question_bank|AI 安全工程师题库]]
+- [[21_面试岗位/17_数据科学家/05_question_bank|AI 安全工程师题库]]
 - [[21_面试岗位/01_Agent工程师/02_question_bank|Agent 工程师题库]]
 
 ## 统计

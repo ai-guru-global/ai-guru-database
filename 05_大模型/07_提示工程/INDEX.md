@@ -30,7 +30,7 @@ name_en: "Prompt Engineering"
 - [[05_大模型/07_提示工程/02_Context_工程_模式|Context Engineering Patterns]]
 - [[05_大模型/07_提示工程/03_DSPy_深入分析|Dspy Deep Dive]]
 - [[05_大模型/07_提示工程/04_GenAI_第4课_Prompt工程_基础|Genai L04 Prompt Engineering Fundamentals]]
-- [[05_大模型/07_提示工程/GenAI_L05_Advanced_Prompts|Genai L05 Advanced Prompts]]
+- [[05_大模型/07_提示工程/05_GenAI_第5课_高级_Prompts|Genai L05 Advanced Prompts]]
 - [[05_大模型/07_提示工程/06_Guidance_深入分析|Guidance Deep Dive]]
 - [[05_大模型/07_提示工程/Hello_Agents_L04_ReAct|Hello Agents L04 React]]
 - [[05_大模型/07_提示工程/Hello_Agents_L09_Context_Engineering|Hello Agents L09 Context Engineering]]

@@ -378,7 +378,7 @@ Ng 的影响呈现为四个层面：
 - [[05_大模型/README]] -- 模型应用
 - [[MLOps/README]] -- 机器学习运维
 - [[00_入门/04_伦理与未来/03_AI未来趋势]] -- AI 民主化
-- [[16_编程/03_方法论/Vibe_Coding_Methodology]] -- Agentic 与 Vibe Coding 关系
+- [[16_编程/03_方法论/03_Vibe_Coding_方法论]] -- Agentic 与 Vibe Coding 关系
 
 ---
 

@@ -123,7 +123,7 @@ name_zh: "编程"
 - [[概念/prompt-engineering]] — 提示工程
 - [[16_编程/03_方法论/04_Vibe_Coding_生产_实践]] — Vibe_Coding_Production_Practices
 - [[16_编程/03_方法论/Agentic_Coding_Methodology]] — Agentic_Coding_Methodology
-- [[16_编程/03_方法论/Vibe_Coding_Methodology]] — Vibe_Coding_Methodology
+- [[16_编程/03_方法论/03_Vibe_Coding_方法论]] — Vibe_Coding_Methodology
 - [[16_编程/05_开发工具/20_MiMO_指南]] — MiMO 使用指南
 - [[16_编程/05_开发工具/17_Kilo_指南]] — Kilo / KiloClaw 使用指南
 - [[16_编程/05_开发工具/13_Grok_指南]] — Grok / Grok Code 使用指南

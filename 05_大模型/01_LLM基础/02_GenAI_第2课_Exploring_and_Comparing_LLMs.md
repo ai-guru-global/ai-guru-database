@@ -424,7 +424,7 @@ Azure AI Studio 的模型目录使用户能够：
 ## 扩展阅读
 
 - [[90_学习/03_课程资源/microsoft/01_microsoft_genai_for_beginners]] — 课程总览与章节映射
-- [[17_伦理安全/01_伦理基础/GenAI_L03_Using_GenAI_Responsibly]] — 第 3 课：负责任地使用生成式 AI
+- [[17_伦理安全/01_伦理基础/09_GenAI_第3课_Using_GenAI_Responsibly]] — 第 3 课：负责任地使用生成式 AI
 - [[05_大模型/04_LLM架构/05_LLM架构]] — LLM 架构详解
 - [[14_RAG系统/01_RAG基础/07_RAG_系统]] — RAG 系统详解
 - [[05_大模型/13_全球LLM生态/README]] — 全球 LLM 生态系统
@@ -433,4 +433,4 @@ Azure AI Studio 的模型目录使用户能够：
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[00_入门/GenAI_L01_Intro_to_GenAI_and_LLMs|L01 生成式AI简介]] | [[17_伦理安全/01_伦理基础/GenAI_L03_Using_GenAI_Responsibly|L03 负责任使用AI]] |
+| [[00_入门/GenAI_L01_Intro_to_GenAI_and_LLMs|L01 生成式AI简介]] | [[17_伦理安全/01_伦理基础/09_GenAI_第3课_Using_GenAI_Responsibly|L03 负责任使用AI]] |

@@ -745,7 +745,7 @@ flowchart TD
 - [[治理/AGENTS|推理模型 × Agent]]
 - [[治理/moe-inference-optimization|MoE 推理优化]]
 - [[治理/alignment-rlhf|价值对齐 × RLHF]]
-- [[治理/benchmark-evaluation|评测基准 × 评测方法论]]
+- [[08_模型评估/02_基准测试/02_benchmark_evaluation|评测基准 × 评测方法论]]
 - [[治理/talks-insights|AI 领袖演讲与行业洞察]]
 
 ---

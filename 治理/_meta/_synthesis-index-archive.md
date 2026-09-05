@@ -22,7 +22,7 @@ This page indexes the contents of `综合`.
 - [[治理/ai-industry-applications|Ai Industry Applications]]
 - [[治理/alignment-rlhf|Alignment Rlhf]]
 - [[治理/anomaly-detection-automl|Anomaly Detection Automl]]
-- [[治理/benchmark-evaluation|Benchmark Evaluation]]
+- [[08_模型评估/02_基准测试/02_benchmark_evaluation|Benchmark Evaluation]]
 - [[治理/career-interviews|Career Interviews]]
 - [[治理/chinese-chips-inference|Chinese Chips Inference]]
 - [[治理/Chinese_vs_Global_LLM_Comparison|Chinese Vs Global LLM Comparison]]

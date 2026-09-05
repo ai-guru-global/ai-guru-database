@@ -746,4 +746,4 @@ flowchart LR
 - [[16_编程/09_安全编码/04_SAST_SCA_for_AI_Code]] — SAST/SCA 在 AI 编程中的应用 (共享: sast, sca, code-review)
 - [[16_编程/09_安全编码/05_Secure_Prompt工程]] — 安全提示工程 (共享: prompt-security, output-filtering)
 - [[16_编程/03_方法论/04_Vibe_Coding_生产_实践]] — Vibe Coding 生产实践 (共享: security, production)
-- [[16_编程/03_方法论/Vibe_Coding_Methodology]] — Vibe Coding 方法论 (共享: quality, workflow)
+- [[16_编程/03_方法论/03_Vibe_Coding_方法论]] — Vibe Coding 方法论 (共享: quality, workflow)

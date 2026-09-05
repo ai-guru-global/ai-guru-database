@@ -188,7 +188,7 @@ flowchart LR
 - [[05_大模型/07_提示工程/16_Prompt工程]] — 提示词工程实战
 - [[05_大模型/06_微调技术/03_微调技术]] — 微调技术全景
 - [[05_大模型/04_LLM架构/11_Long_上下文_模型_2026]] — 长上下文模型 2026
-- [[05_大模型/01_LLM基础/GenAI_L02_Exploring_and_Comparing_LLMs]] — LLM 对比与选型
+- [[05_大模型/01_LLM基础/02_GenAI_第2课_Exploring_and_Comparing_LLMs]] — LLM 对比与选型
 - [[05_大模型/01_LLM基础/06_LLM_NLP_融合|LLM 与 NLP 融合]]
 - [[05_大模型/01_LLM基础/07_NLP_基础|NLP 基础]]
 

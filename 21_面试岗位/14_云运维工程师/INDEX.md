@@ -212,4 +212,4 @@ name_en: "Cloud Ops Engineer"
 
 ## 相关文档
 
-- [[21_面试岗位/Cloud_Ops_Engineer/question_bank|云运维工程师题库]]
+- [[21_面试岗位/17_数据科学家/05_question_bank|云运维工程师题库]]

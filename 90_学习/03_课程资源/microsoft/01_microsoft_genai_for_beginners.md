@@ -65,24 +65,24 @@ name_zh: "Microsoft Generative AI For Beginners：21"
 |------|----------|------------------|----------|
 | 00 | 课程设置 | [[01_数学基础/08_Python工具包/01_AI_开发_Environment_配置]] | [[01_数学基础/08_Python工具包/03_GenAI_L00_课程_配置]] |
 | 01 | 生成式 AI 与大型语言模型简介 | [[00_入门/01_基础入门/02_AI基础]]、[[05_大模型/04_LLM架构/05_LLM架构]] | [[00_入门/GenAI_L01_Intro_to_GenAI_and_LLMs]] |
-| 02 | 探索与比较不同的 LLM | [[05_大模型/04_LLM架构/05_LLM架构]]、[[05_大模型/13_全球LLM生态/README]] | [[05_大模型/01_LLM基础/GenAI_L02_Exploring_and_Comparing_LLMs]] |
-| 03 | 负责任地使用生成式 AI | [[17_伦理安全/Ethics-in-nutshell]]、[[17_伦理安全/03_AI治理/01_AI治理合规2026]] | [[17_伦理安全/01_伦理基础/GenAI_L03_Using_GenAI_Responsibly]] |
+| 02 | 探索与比较不同的 LLM | [[05_大模型/04_LLM架构/05_LLM架构]]、[[05_大模型/13_全球LLM生态/README]] | [[05_大模型/01_LLM基础/02_GenAI_第2课_Exploring_and_Comparing_LLMs]] |
+| 03 | 负责任地使用生成式 AI | [[17_伦理安全/Ethics-in-nutshell]]、[[17_伦理安全/03_AI治理/01_AI治理合规2026]] | [[17_伦理安全/01_伦理基础/09_GenAI_第3课_Using_GenAI_Responsibly]] |
 
 ### 提示工程（L04-L05）
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
 | 04 | 理解提示工程基础 | [[05_大模型/07_提示工程/16_Prompt工程]]、[[05_大模型/07_提示工程/14_Prompt工程_原则_Ng]] | [[05_大模型/07_提示工程/04_GenAI_第4课_Prompt工程_基础]] |
-| 05 | 创建高级提示 | [[05_大模型/07_提示工程/16_Prompt工程]]、[[05_大模型/12_LLM产品/05_god_tier_prompts_概览]] | [[05_大模型/07_提示工程/GenAI_L05_Advanced_Prompts]] |
+| 05 | 创建高级提示 | [[05_大模型/07_提示工程/16_Prompt工程]]、[[05_大模型/12_LLM产品/05_god_tier_prompts_概览]] | [[05_大模型/07_提示工程/05_GenAI_第5课_高级_Prompts]] |
 
 ### 应用构建（L06-L11）
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 06 | 构建文本生成应用 | [[15_智能体/README]]、[[05_大模型/12_LLM产品/01_chatgpt_概览]] | [[15_智能体/GenAI_L06_Text_Generation_Apps]] |
+| 06 | 构建文本生成应用 | [[15_智能体/README]]、[[05_大模型/12_LLM产品/01_chatgpt_概览]] | [[15_智能体/14_GenAI课程/01_GenAI_第6课_文本_生成_Apps]] |
 | 07 | 构建聊天应用 | [[15_智能体/README]]、[[15_智能体/02_Agent框架/README]] | [[15_智能体/GenAI_L07_Building_Chat_Applications]] |
 | 08 | 构建搜索和向量数据库应用 | [[14_RAG系统/01_RAG基础/07_RAG_系统]]、[[14_RAG系统/03_向量数据库/05_rag_vector_database]] | [[14_RAG系统/01_RAG基础/GenAI_L08_Building_Search_Applications]] |
-| 09 | 构建图像生成应用 | [[05_大模型/09_多模态模型/Multimodal_Models_for_dummy]] | [[05_大模型/09_多模态模型/GenAI_L09_Building_Image_Applications]] |
+| 09 | 构建图像生成应用 | [[05_大模型/09_多模态模型/Multimodal_Models_for_dummy]] | [[05_大模型/09_多模态模型/02_GenAI_第9课_Building_图像_应用]] |
 | 10 | 构建低代码 AI 应用 | [[18_行业应用/README]] | [[16_编程/05_开发工具/GenAI_L10_Building_Low_Code_AI_Applications]] |
 | 11 | 使用函数调用集成外部应用 | [[15_智能体/02_Agent框架/README]]、[[15_智能体/03_Agent工作流/06_工作流_简明指南]] | [[15_智能体/14_GenAI课程/03_GenAI_L11_Integrating_with_Function_Calling]] |
 

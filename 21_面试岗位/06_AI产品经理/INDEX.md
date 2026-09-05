@@ -211,4 +211,4 @@ AI 产品经理 — 将 AI 技术能力转化为用户价值，定义产品方�
 
 ## 相关文档
 
-- [[21_面试岗位/AI_Product_Manager/question_bank|AI 产品经理题库]]
+- [[21_面试岗位/17_数据科学家/05_question_bank|AI 产品经理题库]]

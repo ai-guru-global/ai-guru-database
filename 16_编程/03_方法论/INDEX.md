@@ -19,7 +19,7 @@ AI 编程方法论 — Agentic Coding、Vibe Coding 等新型 AI 辅助编程范
 | 文件 | 说明 |
 |------|------|
 | [[16_编程/03_方法论/Agentic_Coding_Methodology|Agentic Coding]] | 智能体编程方法论 |
-| [[16_编程/03_方法论/Vibe_Coding_Methodology|Vibe Coding 方法论]] | Vibe Coding 编程理念 |
+| [[16_编程/03_方法论/03_Vibe_Coding_方法论|Vibe Coding 方法论]] | Vibe Coding 编程理念 |
 | [[16_编程/03_方法论/04_Vibe_Coding_生产_实践|Vibe Coding 生产实践]] | Vibe Coding 生产环境实践 |
 
 ## Related

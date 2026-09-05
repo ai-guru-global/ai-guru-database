@@ -446,7 +446,7 @@ except openai.BadRequestError as err:
 - [[05_大模型/09_多模态模型/Multimodal_Models_for_dummy]]
 - [[16_编程/05_开发工具/GenAI_L10_Building_Low_Code_AI_Applications]]
 - [[14_RAG系统/04_高级RAG/Multimodal_RAG_Architecture_2026]]
-- [[15_智能体/GenAI_L06_Text_Generation_Apps]]
+- [[15_智能体/14_GenAI课程/01_GenAI_第6课_文本_生成_Apps]]
 
 ## 课程导航
 

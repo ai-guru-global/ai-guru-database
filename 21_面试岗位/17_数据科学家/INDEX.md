@@ -18,7 +18,7 @@ name_en: "Data Scientist"
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[21_面试岗位/Data_Scientist/question_bank|question_bank]] | 面试题库总览，按知识点分类 | 所有备考者 |
+| [[21_面试岗位/17_数据科学家/05_question_bank|question_bank]] | 面试题库总览，按知识点分类 | 所有备考者 |
 | [[21_面试岗位/Data_Scientist/company_level_question_bank|company_level_question_bank]] | 按公司/难度分级的真题集 | 有明确目标公司的候选人 |
 | [[21_面试岗位/Data_Scientist/interview_answers|interview_answers]] | 高频面试题参考答案与解析 | 需要参考思路的备考者 |
 | [[21_面试岗位/Data_Scientist/interview_preparing|interview_preparing]] | 备考策略与时间规划指南 | 首次面试 / 转岗求职者 |

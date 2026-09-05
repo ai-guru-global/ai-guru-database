@@ -273,7 +273,7 @@ DSL 代表领域特定语言（Domain Specific Language）。利用领域特定�
 ## 扩展阅读
 
 - [[90_学习/03_课程资源/microsoft/01_microsoft_genai_for_beginners]]
-- [[15_智能体/GenAI_L06_Text_Generation_Apps]]
+- [[15_智能体/14_GenAI课程/01_GenAI_第6课_文本_生成_Apps]]
 - [[15_智能体/14_GenAI课程/03_GenAI_L11_Integrating_with_Function_Calling]]
 - [[15_智能体/01_Agent基础/13_Agentic_设计_模式_AndrewNg]]
 - [[05_大模型/09_多模态模型/Multimodal_Models_for_dummy]]
@@ -282,4 +282,4 @@ DSL 代表领域特定语言（Domain Specific Language）。利用领域特定�
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[15_智能体/GenAI_L06_Text_Generation_Apps|L06 构建文本生成应用]] | [[14_RAG系统/01_RAG基础/GenAI_L08_Building_Search_Applications|L08 构建搜索应用程序]] |
+| [[15_智能体/14_GenAI课程/01_GenAI_第6课_文本_生成_Apps|L06 构建文本生成应用]] | [[14_RAG系统/01_RAG基础/GenAI_L08_Building_Search_Applications|L08 构建搜索应用程序]] |

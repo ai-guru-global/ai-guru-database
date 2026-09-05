@@ -85,7 +85,7 @@ name_zh: "跨域综合文档索引"
 ---
 
 - [[治理/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]] — #alignment × #rlhf
-- [[治理/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]] — #benchmark × #evaluation
+- [[08_模型评估/02_基准测试/02_benchmark_evaluation|评测基准 × 评测方法论：从分数到可信评估]] — #benchmark × #evaluation
 - [[治理/pretraining-synthetic-data|预训练数据 × 合成数据：从规模到质量的范式转移]] — #pretraining-data × #synthetic-data
 ## 综合文档模板
 

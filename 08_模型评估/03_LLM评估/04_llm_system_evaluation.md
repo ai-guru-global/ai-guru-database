@@ -73,7 +73,7 @@ MMLU 提升 2% 未必带来用户满意度提升，但 RAG 的幻觉率下降 1%
 - [[15_智能体/Agent_Production_Deployment_Runbook|Agent 生产部署运行手册]] — Agent 系统上线评估
 - [[08_模型评估/04_评估工具/03_LLM_as_Judge_深入分析|LLM-as-Judge 深度解读]] — 自动化评判的核心方法
 - [[治理/agent-evaluation-model-evaluation|Agent 评估 × 模型评估]] — 从指标到行为的范式迁移
-- [[治理/benchmark-evaluation|评测基准 × 评测方法论]] — 从分数到可信评估
+- [[08_模型评估/02_基准测试/02_benchmark_evaluation|评测基准 × 评测方法论]] — 从分数到可信评估
 - [[治理/AGENTS|测试 × Agent]] — 非确定性系统的测试方法论
 
 ## 专题深度解析

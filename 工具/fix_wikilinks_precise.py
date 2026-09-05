@@ -94,6 +94,17 @@ MAPPING = {
         '07_模型训练/03_训练优化/06_扩展定律_and_训练_Dynamics',
     '07_模型训练/02_数据工程/Data_Curation_and_Mixture_2026':
         '07_模型训练/02_数据工程/04_数据_Curation_and_Mixture_2026',
+    # ---- 2026-09-05 周巡检第一批（GenAI 课程系 + 方法论改名受害者）----
+    '治理/benchmark-evaluation': '08_模型评估/02_基准测试/02_benchmark_evaluation',
+    'GenAI_L03_Using_GenAI_Responsibly': '17_伦理安全/01_伦理基础/09_GenAI_第3课_Using_GenAI_Responsibly',
+    'GenAI_L09_Building_Image_Applications': '05_大模型/09_多模态模型/02_GenAI_第9课_Building_图像_应用',
+    'GenAI_L02_Exploring_and_Comparing_LLMs': '05_大模型/01_LLM基础/02_GenAI_第2课_Exploring_and_Comparing_LLMs',
+    'GenAI_L05_Advanced_Prompts': '05_大模型/07_提示工程/05_GenAI_第5课_高级_Prompts',
+    'GenAI_L06_Text_Generation_Apps': '15_智能体/14_GenAI课程/01_GenAI_第6课_文本_生成_Apps',
+    'Structured_Output_Guide': '05_大模型/15_约束生成/03_Structured_输出_指南',
+    'Vibe_Coding_Methodology': '16_编程/03_方法论/03_Vibe_Coding_方法论',
+    'Data_Pipeline_Orchestration': '11_模型运维/05_流程编排/02_数据_流水线_编排',
+    '21_面试岗位/Data_Scientist/question_bank': '21_面试岗位/17_数据科学家/05_question_bank',
     '17_伦理安全/04_AI安全与红队/Safety_Evaluation_Framework':
         '17_伦理安全/04_AI安全与红队/05_安全评估_框架',
     '17_伦理安全/04_AI安全与红队/AI_Safety_RedTeaming':

@@ -24,14 +24,14 @@ name_zh: "AI 面试准备"
 
 | 岗位 | 核心能力 | 文件 |
 |------|---------|------|
-| [[21_面试岗位/AI_Data_Analyst/question_bank|AI Data Analyst]] | 指标体系、A/B 测试、业务分析 | 面试准备 + 题库 |
+| [[21_面试岗位/17_数据科学家/05_question_bank|AI Data Analyst]] | 指标体系、A/B 测试、业务分析 | 面试准备 + 题库 |
 | [[21_面试岗位/04_AI基础设施工程师/05_question_bank|AI Infrastructure Engineer]] | GPU 集群、训练框架、推理优化 | 面试准备 + 题库 |
 | [[21_面试岗位/Cloud_Ops_Engineer/Cloud_Ops_Engineer|Cloud Ops Engineer]] | K8s/GPU 运维、事故响应、云原生可观测 | 面试准备 + 题库 |
 | [[21_面试岗位/AI_Reliability_Engineer/AI_Reliability_Engineer|AI Reliability Engineer]] | 模型监控、故障恢复、SLO 设计 | 面试准备 + 题库 |
 | [[21_面试岗位/AI_Solutions_Architect/AI_Solutions_Architect|AI Solutions Architect]] | 方案设计、技术选型、客户沟通 | 面试准备 + 题库 |
 | [[21_面试岗位/15_计算机视觉工程师/05_question_bank|Computer Vision Engineer]] | 图像分类、检测、分割、生成 | 面试准备 + 题库 |
 | [[21_面试岗位/Data_Engineer/Data_Engineer|Data Engineer]] | 数据管道、ETL、数据仓库 | 面试准备 + 题库 |
-| [[21_面试岗位/Data_Scientist/question_bank|Data Scientist]] | 统计分析、特征工程、A/B 测试 | 面试准备 + 题库 |
+| [[21_面试岗位/17_数据科学家/05_question_bank|Data Scientist]] | 统计分析、特征工程、A/B 测试 | 面试准备 + 题库 |
 | [[21_面试岗位/19_LLM平台工程师/05_question_bank|LLM Platform Engineer]] | 大模型服务、API 设计、平台化 | 面试准备 + 题库 |
 | [[21_面试岗位/20_机器学习工程师/05_question_bank|Machine Learning Engineer]] | 模型开发、训练优化、部署上线 | 面试准备 + 题库 |
 | [[21_面试岗位/MLOps_Engineer/MLOps_Engineer|MLOps Engineer]] | 流水线、CI/CD、模型监控 | 面试准备 + 题库 |

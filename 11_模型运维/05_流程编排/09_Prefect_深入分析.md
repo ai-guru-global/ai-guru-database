@@ -23,7 +23,7 @@ name_zh: "Prefect: ML 数据流水线编排"
 
 > **一句话理解**: Prefect 是 Python 原生的数据流水线编排——任务调度、错误重试、可视化监控，ML 数据的 workflow 引擎。
 
-> 📐 **概念与选型方法论**: 流水线编排的原理、Prefect vs Airflow vs Dagster 选型，见 [[11_模型运维/05_流程编排/Data_Pipeline_Orchestration]]。本文聚焦 Prefect 工具用法。
+> 📐 **概念与选型方法论**: 流水线编排的原理、Prefect vs Airflow vs Dagster 选型，见 [[11_模型运维/05_流程编排/02_数据_流水线_编排]]。本文聚焦 Prefect 工具用法。
 
 ---
 

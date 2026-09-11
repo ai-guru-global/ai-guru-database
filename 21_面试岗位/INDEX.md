@@ -2,7 +2,7 @@
 title: Interviews
 type: index
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-09-07
 sources: []
 name_zh: "面试岗位"
 name_en: "AI Career Interviews"
@@ -38,6 +38,7 @@ This page indexes the contents of `面试岗位`.
 - [[21_面试岗位/Prompt_Engineer/index|Prompt Engineer]]
 - [[21_面试岗位/Research_Scientist/index|Research Scientist]]
 - [[21_面试岗位/Robotics_Engineer/index|Robotics Engineer]]
+- [[21_面试岗位/26_高级面试问答/README|Advanced Interview QA]]
 
 ## Files
 
@@ -241,5 +242,5 @@ This page indexes the contents of `面试岗位`.
 
 | 指标 | 数值 |
 |------|------|
-| 总文件数 | 91 |
-| 最后更新 | 2026-08-05 |
+| 总文件数 | 94 |
+| 最后更新 | 2026-09-07 |

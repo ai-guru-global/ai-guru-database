@@ -2,7 +2,7 @@
 title: Agent Foundations
 type: index
 created: 2026-07-02
-updated: 2026-07-29
+updated: 2026-09-07
 sources: []
 name_zh: "智能体基础"
 name_en: "Agent Foundations"
@@ -23,6 +23,7 @@ name_en: "Agent Foundations"
 | [[15_智能体/01_Agent基础/15_AI_Agent_入门|AI Agents for Beginners]] | AI Agents for Beginners | 开发者/学习者 |
 | [[15_智能体/01_Agent基础/16_AI_Agent|AI Agents for dummy]] | AI Agents for dummy | 开发者/学习者 |
 | [[15_智能体/01_Agent基础/AI_OpenSource_Projects_Overview|AI OpenSource Projects Overview]] | AI OpenSource Projects Overview | 开发者/学习者 |
+| [[15_智能体/01_Agent基础/25_Agent_经济学_2026|Agent Economics 2026]] | Agent 单任务 Token 消耗为对话 5–30 倍：成本泄漏解剖、cost-per-successful-completion 度量体系、模型路由/预算护栏等降本工具箱与 FinOps 三件事 | 开发者/架构师 |
 | [[15_智能体/01_Agent基础/11_Agent_简明指南|Agent-in-nutshell]] | Agent-in-nutshell | 开发者/学习者 |
 | [[15_智能体/01_Agent基础/Agent_Engineering_Methodology_System_2026|Agent Engineering Methodology System 2026]] | Agent工程八大方法论体系：架构/工具/记忆/规划/协作/运维/安全/评估 | 开发者/架构师 |
 | [[15_智能体/01_Agent基础/03_Agent_未来_路线图_2026_2030|Agent Future Roadmap 2026 2030]] | Agent Future Roadmap 2026 2030 | 开发者/学习者 |

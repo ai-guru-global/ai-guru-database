@@ -6,7 +6,7 @@ summary: "降低 LLM 应用成本的系统性方法:模型路由、Prompt 缓存
 sources:
 
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-09-07
 lifecycle: reviewed
 tier: core
 aliases:
@@ -111,4 +111,4 @@ OpenAI Batch API 享受 50% 折扣:
 4. **定期审计**: 每月分析成本构成,找出优化点
 5. **设置上限**: 防止异常请求导致成本飙升
 
-> **关联**: -> [[10_部署推理/README|部署推理]] | [[12_架构基建/11_AI网关/index|AI 网关]] | [[10_部署推理/03_推理优化/11_提示缓存_and_KV_Cache_优化|Prompt Caching]]
+> **关联**: -> [[10_部署推理/README|部署推理]] | [[12_架构基建/11_AI网关/index|AI 网关]] | [[10_部署推理/03_推理优化/11_提示缓存_and_KV_Cache_优化|Prompt Caching]] | [[18_行业应用/01_行业概览/09_Token_Economics_2026|Token 经济学与 AI 经济学 2026]]

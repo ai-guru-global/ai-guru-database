@@ -88,7 +88,8 @@ def build_resolution_index(base):
 
 def resolve_obsidian(target, base, basename_lower, basename_norm, alias_to_file):
     """Resolve [[target]] using Obsidian-style fuzzy matching. Returns path or None."""
-    target = target.split('|')[0].split('#')[0].strip()
+    # 表格内转义写法 [[path\|alias]]：split('|') 后目标尾部会残留转义反斜杠
+    target = target.split('|')[0].split('#')[0].strip().rstrip('\\')
     if not target:
         return None
     if target.startswith(('http://', 'https://', 'file://')):

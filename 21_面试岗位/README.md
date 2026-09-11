@@ -4,7 +4,7 @@ category: 21-interviews
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "> **一句话理解**: 本章节为 AI/ML 相关岗位面试提供系统化的准备资料，覆盖 20+ 个核心岗位的核心职责、能力要求、考点梳理与面试题库。"
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-09-07
 tier: supporting
 sources: []
 
@@ -57,6 +57,12 @@ name_zh: "AI 面试准备"
 | [[21_面试岗位/AI_Policy_Specialist/AI_Policy_Specialist|AI Policy Specialist]] | AI 治理、合规、政策分析 | 面试准备 + 题库 |
 | [[21_面试岗位/AI_Product_Manager/AI_Product_Manager|AI Product Manager]] | 产品策略、用户洞察、跨团队协作 | 面试准备 + 题库 |
 | [[21_面试岗位/AI_Security_Engineer/AI_Security_Engineer|AI Security Engineer]] | 模型安全、对抗攻击、红队测试 | 面试准备 + 题库 |
+
+### 按主题（跨岗位）
+
+| 主题 | 核心内容 | 文件 |
+|------|---------|------|
+| [[21_面试岗位/26_高级面试问答/README|高级面试问答（按主题）]] | LLM 推理 / 训练 / RAG / Agent / 评估的深度问答系列 | 01_LLM推理（已上线），其余规划中 |
 
 ---
 

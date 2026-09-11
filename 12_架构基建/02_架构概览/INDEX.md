@@ -2,7 +2,7 @@
 title: Architecture Overview
 type: index
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-09-07
 sources: []
 name_zh: "架构全景"
 name_en: "Architecture Overview"
@@ -26,6 +26,7 @@ This page indexes the contents of `12_架构基建/02_架构概览`.
 - [[12_架构基建/02_架构概览/09_Multi_Tenant_架构|Multi Tenant Architecture]]
 - [[12_架构基建/02_架构概览/10_Spring_AI_架构|Spring AI Architecture]]
 - [[12_架构基建/02_架构概览/11_Token_工厂_2026|Token 工厂 2026]]
+- [[12_架构基建/02_架构概览/12_主权_AI_2026|Sovereign AI 2026]]
 
 ## 架构核心组件对比
 

@@ -2,7 +2,7 @@
 title: Chinese LLM Ecosystem
 type: index
 created: 2026-07-02
-updated: 2026-07-21
+updated: 2026-09-07
 sources: []
 name_zh: "中国大模型生态"
 name_en: "Chinese LLM Ecosystem"
@@ -30,6 +30,7 @@ name_en: "Chinese LLM Ecosystem"
 - [[05_大模型/14_中国LLM生态/03_ByteDance_Doubao_深入分析|Bytedance Doubao Deep Dive]]
 - [[05_大模型/14_中国LLM生态/04_Chinese_LLM_对比_矩阵|Chinese LLM Comparison Matrix]]
 - [[05_大模型/14_中国LLM生态/05_Chinese_LLM_训练_推理_平台|Chinese LLM Training Inference Platforms]]
+- [[05_大模型/14_中国LLM生态/26_中国模型出海_2026|Chinese Model Going Global 2026]]
 - [[05_大模型/14_中国LLM生态/06_Chinese_Open_Source_Top100|Chinese Open Source Top100]]
 - [[05_大模型/14_中国LLM生态/25_DeepSeek_架构_2026|Deepseek Deep Dive]]
 - [[05_大模型/14_中国LLM生态/09_GLM_Zhipu_深入分析|GLM Zhipu Deep Dive]]
@@ -91,9 +92,9 @@ name_en: "Chinese LLM Ecosystem"
 
 | 指标 | 数值 |
 |------|------|
-| 文件数 | 24 |
+| 文件数 | 25 |
 | 覆盖厂商 | 15+ |
-| 最后更新 | 2026-07-21 |
+| 最后更新 | 2026-09-07 |
 
 > 💡 中国大模型生态已形成开源与商业并进的格局，DeepSeek 证明了高效训练的可能性。
 
@@ -201,4 +202,4 @@ name_en: "Chinese LLM Ecosystem"
 | 商业 | 文心/豆包 |
 
 ---
-*Last updated: 2026-07-21*
+*Last updated: 2026-09-07*

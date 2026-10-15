@@ -5,7 +5,7 @@ import tsParser from '@typescript-eslint/parser'
 
 export default [
   {
-    ignores: ['dist', '**/*.test.ts', '**/*.test.tsx', 'vite.config.ts', 'jest.config.ts', 'jest.setup.ts'],
+    ignores: ['dist', 'console', 'atlas', '**/*.test.ts', '**/*.test.tsx', 'vite.config.ts', 'jest.config.ts', 'jest.setup.ts'],
   },
   {
     files: ['**/*.{ts,tsx}'],

@@ -4,7 +4,7 @@ category: '07-model-training'
 tags: ["alignment", "grpo", "rlhf", "dpo", "rloo", "reinforcement-learning", "reasoning-rl", "process-reward", "deepseek"]
 summary: '> **一句话理解**: 如果 RLHF 是给模型请了一整套"教练团队"（裁判、助教、陪练），那 GRPO 就是让模型自己组队互评——省掉了最贵的裁判，效果却一样好。'
 created: '2026-06-04'
-updated: '2026-07-25'
+updated: 2026-10-14
 tier: supporting
 aliases:
   - "Grpo And New Alignment Methods"
@@ -1612,6 +1612,24 @@ flowchart TB
 - **实验方法孵化器**：`experimental/` 含 async_grpo、grpo_with_replay_buffer、gspo_token、gmpo 等——追新方法可直接读该目录。
 
 > 配合 [[07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南|TRL 实战指南]] 第 6 节食用更佳。
+
+---
+
+## 14. 2026 Q4 现状：RLVR 家族成为主流后训练栈
+
+> 2026 年的行业共识：**GRPO / DAPO / RLVR + 合成自我博弈**已在多数前沿实验室的后训练流水线中取代传统 RLHF-on-PPO；奖励信号从「人类偏好」转向「可验证信号」。
+
+| 方法 | 状态（2026 Q4） | 说明 |
+|------|----------------|------|
+| **GRPO / DAPO** | 推理模型后训练标配 | 本文第 2–5 节的 GRPO 谱系已生产化，DAPO 等改进成为默认选项 |
+| **RLVR** | 从数学/代码扩展到更多领域 | 可验证奖励任务域持续扩大，见 [[概念/LLM/rlvr|RLVR 概念页]] |
+| **RLVRR**（2026-01 提出） | 缓解「验证器难题」 | 无客观答案的任务改用**参考式奖励**（reference-based rewards）打分 |
+| **合成自我博弈** | 与 RLVR 组合 | 自生任务 + 自评，减少人工标注依赖 |
+
+- 对推理模型的落地（GRPO → o1/R1 类模型）见 [[05_大模型/08_推理模型/07_推理_RL_训练_流水线|推理模型 RL 训练流水线]]；
+- 行业全景见 [[05_大模型/13_全球LLM生态/10_LLM_前沿格局_2026_Q4|LLM 前沿格局 2026 Q4]]。
+
+> 来源：[Post-Training in 2026: GRPO, DAPO, RLVR & Beyond（llm-stats.com）](https://llm-stats.com/blog/research/post-training-techniques-2026)、[RLVR Beyond Math and Code](https://subhadipmitra.com/blog/2026/rlvr-beyond-math-code/)
 
 ---
 

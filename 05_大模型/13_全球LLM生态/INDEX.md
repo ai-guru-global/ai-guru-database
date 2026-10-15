@@ -2,7 +2,7 @@
 title: Global LLM Ecosystem
 type: index
 created: 2026-07-02
-updated: 2026-07-21
+updated: 2026-10-14
 sources: []
 name_zh: "全球大模型生态"
 name_en: "Global LLM Ecosystem"
@@ -33,6 +33,7 @@ name_en: "Global LLM Ecosystem"
 - [[05_大模型/13_全球LLM生态/07_Meta_LLaMA_深入分析|Meta Llama Deep Dive]]
 - [[05_大模型/13_全球LLM生态/08_Mistral_AI_深入分析|Mistral AI Deep Dive]]
 - [[05_大模型/13_全球LLM生态/09_OpenAI_深入分析|Openai Deep Dive]]
+- [[05_大模型/13_全球LLM生态/10_LLM_前沿格局_2026_Q4|LLM 前沿格局 2026 Q4]]
 - [[05_大模型/13_全球LLM生态/README|README]]
 
 ## 学习路径建议

@@ -4,7 +4,7 @@ category: 15-agent-production
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: 从 Agent 原型到生产级系统，需要 Harness 工程、框架选型、平台部署、记忆架构、安全合规的完整工程体系。"
 created: 2026-05-31
-updated: 2026-06-15
+updated: 2026-10-14
 tier: supporting
 sources: []
 
@@ -47,6 +47,7 @@ name_zh: "Agent 生产部署"
 |--------|------|
 | [Agent_Platforms](./09_Agent平台/) | Dify / Coze / PromptFlow / OpenRouter |
 | [Enterprise_Agent](./10_企业级Agent/) | 企业级部署、Hermes Agent |
+| [Agentic_Infra](./20_Agentic_Infra/) | 智能体基础设施七层栈：网关/协议/沙箱/记忆/编排/可观测/安全 |
 | [Agent_Ecosystem_CN](./12_中国Agent生态/) | 国内 AI Agent 产品与开源 |
 | [Agent_Applications](./17_Agent应用/) | Computer Use / Voice Agents 应用形态 |
 | [OpenClaw_Ecosystem](./11_OpenClaw生态/) | OpenClaw / CoPaw / QClaw / Manus |

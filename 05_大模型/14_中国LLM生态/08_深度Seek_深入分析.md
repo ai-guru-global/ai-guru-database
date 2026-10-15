@@ -4,7 +4,7 @@ category: 05-nlp-llms-chinese-llm-ecosystem
 tags: [deepseek, chinese-llm, moe, mla, grpo, reasoning, fp8-training, r1, v3, v4, open-source, deepseek-v4, csa, hca, mhc, muon, hybrid-attention]
 summary: "全面剖析 DeepSeek 从 7B Dense 到 V4 系列（V4-Pro 1.6T-A49B / V4-Flash 284B-A13B，1M 上下文）的完整技术演进：MLA 注意力压缩、DeepSeekMoE 路由、FP8/FP4+FP8 混合精度训练、GRPO 强化学习、R1 自进化推理，以及 V4 的 Hybrid Attention (CSA+HCA)、Manifold-constrained Hyper-Connections (mHC)、Muon 优化器与三档思考力度（Non-think/High/Max）。"
 created: 2026-06-01
-updated: 2026-08-26
+updated: 2026-10-14
 tier: supporting
 aliases:
   - "Deepseek Deep Dive"
@@ -318,7 +318,7 @@ class MultiHeadLatentAttention(nn.Module):
 | 性能影响 | 基线 | 轻微下降 | 明显下降 | **持平或更优** |
 | 长上下文友好 | 差 | 中 | 好 | **极好** |
 
-> **相关文档**: 关于 MoE 架构的详细分析，参见 [MoE Case Studies: DeepSeek & Mixtral](05_大模型/04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md)
+> **相关文档**: 关于 MoE 架构的详细分析，参见 [MoE Case Studies: DeepSeek & Mixtral](05_大模型/04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md)
 
 ### 3.2 DeepSeekMoE 路由架构
 
@@ -2013,12 +2013,33 @@ DeepSeek 提供双协议端点：
 
 ---
 
+## V4 家族全面落地与 V4.1-Flash（2026 年 7–10 月）
+
+> 2026 年内 V4 家族完成三段式落地，10 月又追加 **V4.1-Flash**，配合 vLLM 实现 Day 0 支持。
+
+| 节点 | 时间 | 要点 |
+|------|------|------|
+| **V4 Preview**（V4-Pro + V4-Flash） | 2026-04-24 | MIT 开源、1M token 上下文，「性价比 1M 上下文时代」 |
+| **V4-Flash 开源权重** | 2026-07-31 | 轻量档位开放下载 |
+| **V4-Pro GA** | 2026-08-13 | 生产可用，API 正式商用 |
+| **V4.1-Flash** | 2026-10 | vLLM 官方博客：Day 0 支持，agentic 吞吐较上代 **5x** |
+
+**解读**：
+
+- DeepSeek 的「Preview → 开源 → GA → 增量迭代」节奏已成为开源旗舰的标准发布范式；
+- 1M 上下文 + agentic 负载优化（多轮工具调用下的 KV 复用）是 V4.1 的工程重心，详见 [[10_部署推理/02_推理引擎/29_vLLM_深入分析|vLLM 深入分析]]；
+- 开源阵营横向对比（Kimi K3 / GLM-5.2 / Qwen3.8）见 [[05_大模型/13_全球LLM生态/10_LLM_前沿格局_2026_Q4|LLM 前沿格局 2026 Q4]]。
+
+> 来源：[DeepSeek V4 Preview Release](https://api-docs.deepseek.com/news/news260424/)、[vLLM Blog: DeepSeek-V4.1-Flash on vLLM](https://vllm-project.github.io/)
+
+---
+
 ## 相关文档
 
 ### 架构基础
 
 - [LLM Architectures (大语言模型架构)](05_大模型/04_LLM架构/05_LLM架构.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
-- [MoE Case Studies: DeepSeek & Mixtral](05_大模型/04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md) — MoE 路由策略、专家专业化的深度分析
+- [MoE Case Studies: DeepSeek & Mixtral](05_大模型/04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略、专家专业化的深度分析
 - [MoE Routing and Load Balancing](05_大模型/04_LLM架构/13_MoE_Routing_and_负载均衡.md) — MoE 负载均衡技术详解
 - [Mixture of Experts Deep Dive](20_论文精读/02_模型架构/06_混合专家_深入分析.md) — MoE 从理论到实践的完整剖析
 
@@ -2059,4 +2080,4 @@ DeepSeek 提供双协议端点：
 - [[05_大模型/14_中国LLM生态/05_Chinese_LLM_训练_推理_平台]] — 训推平台实战
 
 ---
-*Last updated: 2026-08-26*
+*Last updated: 2026-10-14*

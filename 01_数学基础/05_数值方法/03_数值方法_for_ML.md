@@ -4,7 +4,7 @@ category: "01-fundamentals-calculus-optimization"
 tags: ["numerical-methods", "floating-point", "matrix-decomposition", "automatic-differentiation", "sparse-optimization", "mixed-precision", "GPU-computing", "numerical-stability"]
 summary: "> **一句话理解**: 数值方法是ML的'工程数学'——浮点精度决定了训练的稳定性，矩阵分解是线性代数的计算实现，自动微分让反向传播成为可能，混合精度训练在数值精度和计算效率间取得平衡，理解这些才能让模型在GPU上稳定收敛。"
 created: 2026-07-19
-updated: 2026-07-19
+updated: 2026-10-14
 tier: supporting
 aliases:
   - "Numerical Methods for ML"
@@ -135,7 +135,7 @@ QR 分解: A = QR, Q^TQ = I, R 上三角
 SVD: A = UΣV^T
   截断 SVD: A ≈ U_r Σ_r V_r^T (Eckart-Young: 最优秩-r近似)
   ML: PCA, LoRA (W = W₀ + BA, r << min(n,m)), 模型压缩
-  参见: [[LoRA]], [[PCA]], [[Model_Compression]]
+  参见: [[概念/Training/lora-peft|LoRA]], [[PCA]], [[Model_Compression]]
 ```
 
 ### 2.4 自动微分 (Automatic Differentiation)
@@ -302,7 +302,7 @@ LoRA: W = W₀ + ΔW = W₀ + BA, B∈R^{d×r}, A∈R^{r×k}, r << min(d,k)
   - 假设: 微调的"有效维度"远小于参数维度
   - 初始化: A ~ N(0, σ²), B = 0 → 初始 ΔW = 0
   - 秩选择: r = 4~64 (与 ΔW 奇异值衰减速度相关)
-  - 存储: O(r(d+k)) vs O(dk); 参见: [[LoRA]], [[概念/Training/lora-peft|Parameter_Efficient_Fine_Tuning]]
+  - 存储: O(r(d+k)) vs O(dk); 参见: [[概念/Training/lora-peft|LoRA]], [[概念/Training/lora-peft|Parameter_Efficient_Fine_Tuning]]
 ```
 
 ### 4.4 GPU 计算的数值考量
@@ -575,7 +575,7 @@ print("→ 参见: [[概念/LLM/flash-attention-kernels|FlashAttention]]")
 
 - Backpropagation — 反向传播 = 反向模式 AD
 - [[概念/Training/mixed-precision]] — AMP 的完整实践
-- [[LoRA]] — 低秩适应的数值实现
+- [[概念/Training/lora-peft|LoRA]] — 低秩适应的数值实现
 - [[概念/LLM/flash-attention-kernels|FlashAttention]] — 数值稳定的高效注意力
 - [[概念/Training/gradient-checkpointing|Gradient_Checkpointing]] — 用计算换内存
 

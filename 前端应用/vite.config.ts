@@ -1,4 +1,4 @@
-import { defineConfig } from "vite";
+import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import fs from "fs";
@@ -170,5 +170,11 @@ export default defineConfig(({ mode }) => ({
     port: 4567,
     host: "0.0.0.0",
     strictPort: true,
+  },
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: ["./vitest.setup.ts"],
+    exclude: ["node_modules", "dist", "atlas", "console", "tests", "playwright-report"],
   },
 }));

@@ -4,7 +4,7 @@ category: 14-rag-systems
 tags: ["rag", "monitoring", "observability", "distributed-tracing", "drift-detection", "slo", "langsmith", "phoenix", "helicone", "alerting", "production"]
 summary: "> **一句话理解**: RAG 系统的可观测性不只是'响应慢不慢'——它要追踪从查询到回答的全链路，监控向量索引健康、检测 Embedding 漂移、预警检索质量退化，并用分布式追踪把检索延迟、生成延迟、数据漂移编织成一张完整的运维视图。"
 created: 2026-07-11
-updated: 2026-07-11
+updated: 2026-10-14
 tier: core
 aliases:
   - "RAG Monitoring and Observability"
@@ -1697,7 +1697,7 @@ flowchart TB
 
 ## Related
 
-- [[../RAG_Evaluation/RAG_Evaluation_Framework|RAG 评估框架完全指南]] — 评估是监控的基础，离线评估方法论
+- [[../07_RAG评估/02_RAG评估_框架|RAG 评估框架完全指南]] — 评估是监控的基础，离线评估方法论
 - [[../RAG_Evaluation/index|RAG 评估目录]] — 评估相关文档导航
 - [[14_RAG系统/04_高级RAG/12_RAG_高级_2026|RAG高级实践 2026年完全指南]] — 高级 RAG 架构影响监控策略设计
 - [[14_RAG系统/01_RAG基础/06_RAG基础|RAG 基础]] — 理解 RAG 基本流程是设计监控的前提

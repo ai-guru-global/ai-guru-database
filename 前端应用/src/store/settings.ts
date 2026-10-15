@@ -21,14 +21,6 @@ interface SettingsState {
   updateKimi: (config: Partial<LLMConfig>) => void;
 }
 
-const defaultConfig: LLMConfig = {
-  apiKey: '',
-  endpoint: '',
-  modelName: '',
-  temperature: 0.7,
-  maxTokens: 2048,
-};
-
 const defaultKimiConfig: LLMConfig = {
   apiKey: '',
   endpoint: 'https://api.moonshot.cn/v1',

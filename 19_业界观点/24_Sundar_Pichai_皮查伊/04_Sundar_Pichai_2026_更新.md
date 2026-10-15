@@ -397,7 +397,7 @@ Pichai 的影响呈现为四个层面：
 ### 技术与应用
 
 - [[05_大模型/README]] -- Gemini 技术
-- [[05_大模型/MoE]] -- Gemini MoE 架构
+- [[05_大模型/04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral|MoE]] -- Gemini MoE 架构
 - [[05_大模型/12_LLM产品/09_perplexity_概览|AI_Search]] -- AI 搜索
 - [[00_入门/04_伦理与未来/03_AI未来趋势]] -- AI 平台化
 
@@ -472,4 +472,4 @@ Pichai 的影响呈现为四个层面：
 
 ---
 
-*Last updated: 2026-07-23*
+*Last updated: 2026-10-14*

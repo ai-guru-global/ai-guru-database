@@ -30,12 +30,12 @@ name_zh: "AI Guru 知识库"
 
 <p>
  <img src="https://img.shields.io/badge/核心文档-2826-blue?style=flat-square" alt="Docs">
- <img src="https://img.shields.io/badge/字数-1928万-green?style=flat-square" alt="Content">
+ <img src="https://img.shields.io/badge/字数-1925万-green?style=flat-square" alt="Content">
  <img src="https://img.shields.io/badge/章节-24-orange?style=flat-square" alt="Chapters">
  <img src="https://img.shields.io/badge/速成指南-70+-purple?style=flat-square" alt="Guides">
  <img src="https://img.shields.io/badge/概念卡片-700+-critical?style=flat-square" alt="Concepts">
  <img src="https://img.shields.io/badge/LLMOps-完整主线-blueviolet?style=flat-square" alt="LLMOps">
- <img src="https://img.shields.io/badge/更新-2026--08-red?style=flat-square" alt="Updated">
+ <img src="https://img.shields.io/badge/更新-2026--10-red?style=flat-square" alt="Updated">
  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
 </p>
 

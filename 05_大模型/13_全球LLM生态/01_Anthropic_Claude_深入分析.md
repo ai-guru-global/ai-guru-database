@@ -4,7 +4,7 @@ category: 05-nlp-llms-global-llm-ecosystem
 tags: [anthropic, claude, constitutional-ai, safety, extended-thinking, computer-use, mcp, rlhf, rlaif, reasoning, alignment]
 summary: "全面剖析 Anthropic 从 Claude 1 到 Claude 4.5 的完整技术演进：Constitutional AI (CAI) 自监督对齐、Extended Thinking 混合推理、Computer Use 桌面智能体、Model Context Protocol (MCP) 开放协议以及 Responsible Scaling Policy 安全框架。"
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-10-14
 tier: supporting
 aliases:
   - "Anthropic Claude Deep Dive"
@@ -1619,6 +1619,26 @@ for block in response.content:
 - [Anthropic RSP](https://www.anthropic.com/rsp) — Responsible Scaling Policy
 - [Anthropic ASL Framework](https://www.anthropic.com/research/ai-safety-levels) — AI Safety Levels
 - [Mechanistic Interpretability Research](https://www.anthropic.com/research#interpretability) — 可解释性研究
+
+---
+
+## Claude 5.5 家族：Opus 5.5 与 Fable / Mythos 谱系（2026 年 6–9 月）
+
+> Anthropic 在 2026 年中完成了 Claude 5 家族的完整铺开，并在 9 月 22 日开启 **Claude 5.5** 时代。
+
+| 模型 | 时间 | 要点 |
+|------|------|------|
+| **Claude Fable 5** | 2026-06-09 | Mythos 级首个公开模型；上线三天内一度暂停，随后修复回归 |
+| **Claude Fable 5.1 / Mythos 5.1** | 2026 年中 | 全平台可用（AWS / Google Cloud / Azure 同步） |
+| **Claude Opus 5.5** | 2026-09-22 | 5.5 家族首个模型：大多数任务达到 Fable 5.1 水平，运行成本比 Opus 5 **低 40%** |
+
+**解读**：
+
+- 分层策略与 OpenAI 对位：Opus（生产主力）/ Fable（高性能）/ Mythos（旗舰级），5.5 代主线是「同能力、更低成本」；
+- Fable 5 上线三天即暂停的事件说明旗舰级模型的**安全评估与灰度发布**已成为发布流程标配，参见 [[17_伦理安全/README|伦理安全]]；
+- 跨厂商对比见 [[05_大模型/13_全球LLM生态/10_LLM_前沿格局_2026_Q4|LLM 前沿格局 2026 Q4]]。
+
+> 来源：[Introducing Claude Opus 5.5](https://www.anthropic.com/claude-opus-5-5)、[Claude Fable 5.1 and Mythos 5.1](https://www.anthropic.com/claude-fable-and-mythos-5-1)、[InfoQ: Anthropic Releases and Temporarily Suspends Claude](https://www.infoq.com/news/2026/06/claude-5-release/)
 
 ---
 

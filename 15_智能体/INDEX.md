@@ -2,7 +2,7 @@
 title: 智能体
 type: index
 created: 2026-07-02
-updated: 2026-07-09
+updated: 2026-10-14
 sources: []
 name_zh: "智能体"
 name_en: "Agent Production"
@@ -30,6 +30,7 @@ name_en: "Agent Production"
 - [[15_智能体/10_企业级Agent/index|企业级智能体]]
 - [[15_智能体/06_记忆基础设施/index|记忆基础设施]]
 - [[15_智能体/11_OpenClaw生态/index|OpenClaw 生态]]
+- [[15_智能体/20_Agentic_Infra/INDEX|智能体基础设施]]
 
 ## 文档导航
 

@@ -4,7 +4,7 @@ category: "15-agent-production-agent-protocols"
 tags: ["agents", "ag-ui", "acp", "protocol", "streaming", "ibm", "beeai", "agent-ui", "interoperability"]
 summary: "AG-UI (Agent-User Interaction Protocol) 定义了 Agent 与前端 UI 之间的标准化流式通信接口；ACP (Agent Communication Protocol) 由 IBM BeeAI 主导，专注于多 Agent 异步消息传递与服务发现。两者与 MCP/A2A 共同构成 2025 年 Agent 协议完整生态。"
 created: 2025-07-15
-updated: 2025-07-15
+updated: 2026-10-14
 tier: supporting
 lifecycle: reviewed
 aliases:
@@ -701,6 +701,23 @@ async def translate_async(text: str) -> str:
 | Agent 微服务平台 | ACP + MCP |
 | 全栈企业 AI 系统 | AG-UI + A2A + ACP + MCP |
 | 简单 LLM 工具调用 | 仅 MCP |
+
+---
+
+## 8. 2026 年中更新：ACP 并入 A2A，协议栈收敛为两层
+
+> 2026 年 6 月，ACP（Agent Communication Protocol）规范正式**并入 A2A**；业界收敛为「MCP 管 Agent↔工具、A2A 管 Agent↔Agent」的两层协议栈。
+
+| 变化 | 影响 |
+|------|------|
+| **ACP 并入 A2A**（2026-06） | 第 6 节的「ACP 多 Agent 服务注册」方案迁移到 A2A 的 Agent Card 体系 |
+| **MCP 成为事实标准** | 主流框架与企业工具原生兼容 MCP，详见 [[15_智能体/01_Agent基础/MCP_Implementation_Guide|MCP 实现指南]] |
+| **WebMCP 等浏览器侧扩展兴起** | 协议栈开始向端侧延伸 |
+
+- 上一节的「四协议组合架构」应按此更新理解：原 ACP 位置由 A2A 承接，AG-UI 继续负责前端事件流；
+- 全景综述见 [[05_大模型/13_全球LLM生态/10_LLM_前沿格局_2026_Q4|LLM 前沿格局 2026 Q4]] 与 [[概念/Agent/agent-protocols|Agent 协议栈完全指南]]。
+
+> 来源：[Agent protocols: A complete guide to MCP, A2A, and ACP（tyk.io, 2026-06）](https://tyk.io/learning-center/agent-protocols-a-complete-guide-to-mcp-a2a-and-acp/)
 
 ---
 

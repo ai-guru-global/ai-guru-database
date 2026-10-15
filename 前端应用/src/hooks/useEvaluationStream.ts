@@ -16,7 +16,7 @@ interface StreamState {
   error: string | null;
 }
 
-export function useEvaluationStream(runId: string | null) {
+export function useEvaluationStream(_runId: string | null) {
   const [state, setState] = useState<StreamState>({
     connected: false,
     progress: null,

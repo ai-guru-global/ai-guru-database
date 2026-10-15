@@ -4,7 +4,7 @@ category: 05-nlp-llms-global-llm-ecosystem
 tags: [openai, gpt, gpt-3, gpt-4, gpt-4o, gpt-4.1, o1, o3, o4-mini, rlhf, moe, reasoning, multimodal, dall-e, whisper, sora, chatgpt]
 summary: "全面剖析 OpenAI 从 2015 年成立到 2025 年的完整技术演进：GPT 系列架构迭代 (GPT-3 → GPT-4 → GPT-4.1)、RLHF 对齐革命、MoE 稀疏专家架构、原生多模态 (GPT-4o)、o 系列推理模型 (o1/o3/o4-mini) 的隐式思维链与测试时计算扩展，以及 DALL-E / Whisper / Sora 多模态生态。"
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-10-14
 tier: supporting
 aliases:
   - "Openai Deep Dive"
@@ -1688,13 +1688,33 @@ API 调用:
 
 ---
 
+## GPT-6 时代：Astra / Sol / Luna（2026 年 10 月）
+
+> 2026 年 10 月，OpenAI 完成 GPT-5.5（2026-04）到 **GPT-6 家族**的代际切换，10 月 7 日推出 GPT-6 Sol 与 Luna，10 月 8 日起向全体 ChatGPT 用户推送。
+
+| 模型 | 定位 | 要点 |
+|------|------|------|
+| **GPT-6 Astra** | 旗舰 | 官方称「最智能且最对齐」：计算机使用（computer use）、编码、网络安全、科学任务全面 SOTA |
+| **GPT-6 Sol / Luna** | 日常双档位 | 能力/成本不同平衡，面向 everyday work，10-07 发布 |
+| **GPT-6 Instant** | 低延迟档 | 快速响应场景（随全量推送一同提供） |
+
+**解读**：
+
+- 「旗舰 + 档位化副线」策略成型——用 Astra 冲前沿、Sol/Luna/Instant 切分价位与延迟；
+- **计算机使用与网络安全**首次成为一级卖点，与 [[05_大模型/15_约束生成/01_Constrained_Decoding_2026|约束解码]]、[[15_智能体/README|智能体]] 章节的 computer-use 范式互相印证；
+- 全景对比见 [[05_大模型/13_全球LLM生态/10_LLM_前沿格局_2026_Q4|LLM 前沿格局 2026 Q4]]。
+
+> 来源：[Introducing GPT-6 Sol and Luna](https://openai.com/index/introducing-gpt-6-sol-and-luna/)、[GPT-6 Astra](https://openai.com/index/gpt-6-astra/)、[GPT-6 for everyone](https://openai.com/index/gpt-6-for-everyone/)
+
+---
+
 ## 相关文档
 
 ### 架构基础
 
 - [LLM Architectures (大语言模型架构)](05_大模型/04_LLM架构/05_LLM架构.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
 - [Mixture of Experts Deep Dive](20_论文精读/02_模型架构/06_混合专家_深入分析.md) — MoE 从理论到实践的完整剖析
-- [MoE Case Studies: DeepSeek & Mixtral](05_大模型/04_LLM架构/12_MoE_案例_Studies_深度Seek_Mixtral.md) — MoE 路由策略与专家专业化分析
+- [MoE Case Studies: DeepSeek & Mixtral](05_大模型/04_LLM架构/12_MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略与专家专业化分析
 - [MoE Routing and Load Balancing](05_大模型/04_LLM架构/13_MoE_Routing_and_负载均衡.md) — MoE 负载均衡技术详解
 
 ### 推理模型
@@ -1728,7 +1748,7 @@ API 调用:
 
 ---
 
-*Last updated: 2026-06-02*
+*Last updated: 2026-10-14*
 
 ## 相关链接
 

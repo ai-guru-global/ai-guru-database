@@ -42,10 +42,10 @@ describe("core topic taxonomy", () => {
     const topicMap = buildCoreTopicMap(docs);
 
     expect(topicMap["01-linear-algebra"]?.length).toBeGreaterThan(0);
-    expect(topicMap["07-rag-systems"]?.some((topic) => topic.id === "rag-retrieval-knowledge")).toBe(
+    expect(topicMap["14-rag-systems"]?.some((topic) => topic.id === "rag-retrieval-knowledge")).toBe(
       true
     );
-    expect(topicMap["08-ai-security"]?.some((topic) => topic.id === "safety-governance")).toBe(
+    expect(topicMap["17-ai-security"]?.some((topic) => topic.id === "safety-governance")).toBe(
       true
     );
   });

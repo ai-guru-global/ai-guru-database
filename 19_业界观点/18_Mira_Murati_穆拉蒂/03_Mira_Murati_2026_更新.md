@@ -384,7 +384,7 @@ Murati 的影响呈现为三个层面：
 ### 技术与应用
 
 - [[05_大模型/README]] -- 多模态模型
-- [[05_大模型/Multimodal]] -- 多模态架构
+- [[概念/LLM/multimodal-llm|Multimodal]] -- 多模态架构
 - [[17_伦理安全/README]] -- AI 安全工程化
 - [[00_入门/04_伦理与未来/03_AI未来趋势]] -- 可理解 AI
 
@@ -456,4 +456,4 @@ Murati 的影响呈现为三个层面：
 
 ---
 
-*Last updated: 2026-07-23*
+*Last updated: 2026-10-14*

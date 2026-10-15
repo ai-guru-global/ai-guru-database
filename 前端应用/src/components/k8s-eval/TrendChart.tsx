@@ -159,7 +159,7 @@ export function TrendChart({ selectedModels = ["kimi"] }: TrendChartProps) {
                 <g key={m}>
                   {/* Line */}
                   <polyline
-                    points={points}
+                    points={points.join(" ")}
                     fill="none"
                     stroke={MODEL_COLORS[m] || "#888"}
                     strokeWidth="2.5"
@@ -191,7 +191,7 @@ export function TrendChart({ selectedModels = ["kimi"] }: TrendChartProps) {
               const step = Math.max(1, Math.floor(latestData.length / 5));
               return latestData
                 .filter((_, i) => i % step === 0 || i === latestData.length - 1)
-                .map((pt, i, arr) => {
+                .map((pt) => {
                   const origIdx = latestData.findIndex(p => p.date === pt.date);
                   const x = 40 + (origIdx / (latestData.length - 1)) * (chartWidth - 50);
                   return (

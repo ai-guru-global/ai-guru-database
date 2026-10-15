@@ -5,9 +5,8 @@
  *             Schedule, Run History, Trend Chart (merged from K8s Live)
  */
 import { useState, useRef, useCallback, useEffect } from "react";
-import { Link } from "react-router-dom";
 import {
-  ArrowLeft, Play, Loader2, Zap, RotateCcw, TrendingUp,
+  Play, Loader2, Zap, RotateCcw, TrendingUp,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";

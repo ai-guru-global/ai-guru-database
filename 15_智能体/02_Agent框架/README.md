@@ -4,7 +4,7 @@ category: 15-agent-production-agent-frameworks
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 多 Agent 开发框架是构建协作式 Agent 系统的核心基础设施，从对话式协作到状态机编排各有特色。"
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-10-14
 tier: supporting
 sources: []
 
@@ -28,6 +28,7 @@ name_zh: "Agent 开发框架"
 |------|------|----------|
 | [AutoGen / CrewAI / LangGraph](./04_AutoGen_CrewAI_LangGraph_Dive.md) | 三大框架对比：对话式、角色编排、状态机 | 开发者、架构师 |
 | [AgentScope Deep Dive](./02_AgentScope_深入分析.md) | 阿里巴巴多智能体平台：Actor-Staged 架构、大规模并发 | 开发者、架构师 |
+| [AgentScope 与 AgentRun 生产部署架构](./15_AgentScope_AgentRun_生产部署架构.md) | 部署路径、agent 实例创建、与阿里云 AgentRun 对比、生产架构图 | 架构师、SRE |
 | [AutoGPT Deep Dive](./06_AutoGPT_深入分析.md) | 自主任务执行 Agent：目标分解、自主规划、反思改进 | 开发者、探索者 |
 | [SmolAgents Deep Dive](./12_SmolAgent_深入分析.md) | HuggingFace 轻量级框架：代码执行、多工具集成 | HF 生态用户 |
 | [agno Deep Dive](./03_Agno_深入分析.md) | 现代化 Agent 框架：知识库、记忆系统、多 Agent 协作 | 快速构建生产级 Agent |
@@ -63,20 +64,20 @@ name_zh: "Agent 开发框架"
 *Last updated: 2026-04-14*
 
 ## Related
-- [[15_智能体/02_Agent框架/06_AutoGPT_深入分析|AutoGPT: 自主任务执行 Agent]]
-- [[15_智能体/02_Agent框架/14_Transformers_Agent_深入分析|Transformers Agents: HuggingFace Agent 框架]]
-- [[15_智能体/02_Agent框架/07_CrewAI_深入分析|CrewAI: 多 Agent 协作框架]]
-- [[15_智能体/02_Agent框架/12_SmolAgent_深入分析|SmolAgents: 轻量级 Agent 框架]]
-- [[15_智能体/02_Agent框架/04_AutoGen_CrewAI_LangGraph_Dive|多 Agent 开发框架: AutoGen / CrewAI / LangGraph]]
-- [[15_智能体/02_Agent框架/05_AutoGen_深入分析|AutoGen: 微软多 Agent 框架]]
-- [[15_智能体/02_Agent框架/03_Agno_深入分析|agno: 现代 AI Agent 框架]]
-- [[15_智能体/02_Agent框架/02_AgentScope_深入分析|AgentScope: 阿里巴巴多智能体开发平台]]
-- [[15_智能体/02_Agent框架/10_LangChain_深入分析|LangChain: LLM 应用开发框架]]
+- [[15_智能体/02_Agent 框架/06_AutoGPT_深入分析|AutoGPT: 自主任务执行 Agent]]
+- [[15_智能体/02_Agent 框架/14_Transformers_Agent_深入分析|Transformers Agents: HuggingFace Agent 框架]]
+- [[15_智能体/02_Agent 框架/07_CrewAI_深入分析|CrewAI: 多 Agent 协作框架]]
+- [[15_智能体/02_Agent 框架/12_SmolAgent_深入分析|SmolAgents: 轻量级 Agent 框架]]
+- [[15_智能体/02_Agent 框架/04_AutoGen_CrewAI_LangGraph_Dive|多 Agent 开发框架: AutoGen / CrewAI / LangGraph]]
+- [[15_智能体/02_Agent 框架/05_AutoGen_深入分析|AutoGen: 微软多 Agent 框架]]
+- [[15_智能体/02_Agent 框架/03_Agno_深入分析|agno: 现代 AI Agent 框架]]
+- [[15_智能体/02_Agent 框架/02_AgentScope_深入分析|AgentScope: 阿里巴巴多智能体开发平台]]
+- [[15_智能体/02_Agent 框架/10_LangChain_深入分析|LangChain: LLM 应用开发框架]]
 
-- [[15_智能体/07_Agent评估/05_Agent_脚手架_完整_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_智能体/07_Agent评估/08_Agent_红队测试_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_智能体/07_Agent评估/Assessment/03_评估_工作流]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_智能体/07_Agent评估/Assessment/01_生产_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent 评估/05_Agent_脚手架_完整_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent 评估/08_Agent_红队测试_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent 评估/Assessment/03_评估_工作流]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent 评估/Assessment/01_生产_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
 
 
 - [[15_智能体/README|Agent 生产部署 (Agent Production)]]
@@ -90,15 +91,15 @@ name_zh: "Agent 开发框架"
 | Memory | 短期/长期记忆 | 上下文维护 |
 | Planning | 任务分解与排序 | 复杂任务 |
 | Reflection | 自我评估改进 | 质量提升 |
-| Multi-Agent | 多Agent协作 | 分布式任务 |
+| Multi-Agent | 多 Agent 协作 | 分布式任务 |
 
 ## 附录：技术栈对比
 
 | 框架/工具 | 特点 | 适用场景 | 成熟度 |
 |----------|------|----------|--------|
-| LangChain | 链式调用 | 通用Agent | ★★★★☆ |
+| LangChain | 链式调用 | 通用 Agent | ★★★★☆ |
 | LangGraph | 图结构编排 | 复杂流程 | ★★★★☆ |
-| AutoGen | 多Agent对话 | 协作任务 | ★★★★☆ |
+| AutoGen | 多 Agent 对话 | 协作任务 | ★★★★☆ |
 | CrewAI | 角色分工 | 团队模拟 | ★★★☆☆ |
 | OpenAI SDK | 官方框架 | 快速原型 | ★★★★☆ |
 | Semantic Kernel | 企业级 | .NET/Java | ★★★★☆ |
@@ -107,7 +108,7 @@ name_zh: "Agent 开发框架"
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | 基础概念文档 | 理解Agent |
+| 入门 | 基础概念文档 | 理解 Agent |
 | 进阶 | 本文档深度内容 | 掌握技术 |
 | 实践 | 动手项目 | 构建应用 |
 | 前沿 | 最新论文/产品 | 跟踪发展 |
@@ -116,16 +117,16 @@ name_zh: "Agent 开发框架"
 
 | 问题 | 解答 |
 |------|------|
-| Agent和Chatbot的区别？ | Agent能自主决策+使用工具+持续执行 |
-| 需要什么前置知识？ | LLM基础+编程+系统设计 |
-| 如何评估Agent？ | 任务完成率+效率+安全性 |
-| 2026年趋势？ | 多Agent协作/企业级/具身智能 |
+| Agent 和 Chatbot 的区别？ | Agent 能自主决策+使用工具+持续执行 |
+| 需要什么前置知识？ | LLM 基础+编程+系统设计 |
+| 如何评估 Agent？ | 任务完成率+效率+安全性 |
+| 2026 年趋势？ | 多 Agent 协作/企业级/具身智能 |
 
 ## 附录：术语表
 
 | 术语 | 英文 | 说明 |
 |------|------|------|
-| 智能体 | Agent | 自主决策AI系统 |
+| 智能体 | Agent | 自主决策 AI 系统 |
 | 工具调用 | Tool Use | 使用外部工具 |
 | 记忆 | Memory | 上下文/历史 |
 | 规划 | Planning | 任务分解 |
@@ -138,14 +139,14 @@ name_zh: "Agent 开发框架"
 
 | 检查项 | 说明 | 状态 |
 |--------|------|------|
-| 理解核心概念 | Agent架构 | ☐ |
+| 理解核心概念 | Agent 架构 | ☐ |
 | 掌握工具调用 | MCP/Function Calling | ☐ |
 | 了解记忆机制 | 短期/长期 | ☐ |
 | 理解规划推理 | CoT/ReAct | ☐ |
-| 动手实践 | 构建Agent | ☐ |
+| 动手实践 | 构建 Agent | ☐ |
 | 了解评估方法 | 质量度量 | ☐ |
 
-> 💡 智能体是AI从"对话"走向"行动"的关键跨越。掌握Agent开发，是2026年AI工程师的核心竞争力。
+> 💡 智能体是 AI 从"对话"走向"行动"的关键跨越。掌握 Agent 开发，是 2026 年 AI 工程师的核心竞争力。
 
 ---
 *Last updated: 2026-07-21*

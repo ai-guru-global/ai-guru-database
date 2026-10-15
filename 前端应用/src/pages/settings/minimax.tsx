@@ -101,7 +101,7 @@ export function MinimaxSettingsPage() {
                 <Input
                   type="text"
                   placeholder="Enter your Minimax Group ID"
-                  onChange={(e) => updateMinimax({ apiKey: minimax.apiKey })}
+                  onChange={() => updateMinimax({ apiKey: minimax.apiKey })}
                 />
               </div>
               <div className="space-y-2">

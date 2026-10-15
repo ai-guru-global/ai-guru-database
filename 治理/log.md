@@ -163,6 +163,14 @@ _本文件作为 wiki 维护操作时间线 baseline，后续每次 `/wiki-lint`
 - **§3.2 RAG 助手 MVP 落地**：[[assistant/README|AI Guru 助手]]——`assistant/build_index.py`（64,914 块 / 3,075 文件 / 125,247 词项 → 17 MB gzip 索引，86 秒构建）+ `assistant/query.py`（TF-IDF 检索、引用溯源、门禁质量加权、OpenAI 兼容 LLM 可插拔、失败自动回退检索模式）。实测：政策类查询命中精准（414 号文解读 TOP1/TOP3）；自引用污染已修复（assistant/ 目录排除出知识语料）。索引产物 `.code-up/rag-index/` 已 gitignore。
 - 基线终态：断链 **1,480 / 5.9%**（自 2,201 起 **-32.8%**）、孤立 777、frontmatter 缺失 770、间距 1,679。
 
+## 2026-10-14 — 全面更新：巡检修复 / 内容时效 / 前端工具链 / Agentic Infra 扩充
+
+- **全库巡检与断链清零**：核心区断链 52 → **0**（排除发布快照/暂存区与用户 WIP）。修复 35 处 / 19 文件（文件名汉化迁移残留的旧英文名链接、`research/`→`研究/` 目录迁移残留、双前缀 `12_12_` 系、iCloud 同步残留行）；新增 `概念/harbor.md` 补齐 K8s CVE 系概念页缺口。
+- **fix_spacing 全库损伤与回滚**：ISS-108 立案——全库运行实证破坏 4,473 文件链接目标，`git checkout` 分批回滚 4,478 文件（排除 4 个用户 WIP），随后全部自主修改重放并复核（最终核心区断链 0）。
+- **内容时效更新（截至 2026-10）**：新增 [[05_大模型/13_全球LLM生态/10_LLM_前沿格局_2026_Q4|LLM 前沿格局 2026 Q4]]；OpenAI/Anthropic/Gemini/DeepSeek 四篇深入分析各增 Q4 章节（GPT-6 家族、Claude 5.5、Gemini 4 Argon、V4.1-Flash）；vLLM/ACP 协议/GRPO 对齐三页增补（v0.26+PD 分离、ACP 并入 A2A、RLVR 家族主流化）；13_全球LLM生态 README 厂商表刷新。
+- **Agentic Infra 扩充**：新建 [[15_智能体/20_Agentic_Infra/01_Agentic_Infra_全景_2026|七层栈全景长文]]（网关/协议/沙箱/记忆/编排/可观测/安全）+ 子域 README/INDEX + `概念/Agent/agentic-infra.md`；`02_AI_基础设施_2026.md` 增 Q4 章（GB300 NVL72、光互联、BOM 变化、PD 分离默认化）。
+- **前端工具链修复**：type-check 37 错误 → 0（补装缺失依赖 antd/@ant-design/icons、修 3 个真 bug：visualize 模式类型、BatchSummary 缺字段、polyline points）；lint 恢复可用（修复 `--ext` 废弃参数、补装 globals、console/atlas 子项目出圈）并清零 warning；vitest 迁移正轨（jsdom+globals+setup 桥接），46/46 通过（修复 2 处章节重编号导致的过时 slug）；生产构建通过。`package.json` scripts 修正 `test`→`vitest run`（原 watch 模式挂死）。
+
 ## 关联
 
 项目日志记录治理与内容演进，关联文档提供流程依据与规划上下文。

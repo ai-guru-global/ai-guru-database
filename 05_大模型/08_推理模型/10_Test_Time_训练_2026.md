@@ -541,7 +541,7 @@ Q6: 能否将 TTT 扩展为"跨会话持久学习" (真正的在线学习)?
 ### 核心关联
 
 - [[概念/General/test-time-compute-scaling|Test-Time Compute Scaling 2026（推理时计算扩展）]] — **最关键的对照页**，系统介绍 TTC（o1/R1 式推理扩展），与本文 TTT 互为补充
-- [[../08_推理模型/Test_Time_Compute_2026|测试时计算 (Test-Time Compute)]] — TTC 的概念入口页
+- [[08_Test_Time_算力_2026|测试时计算 (Test-Time Compute)]] — TTC 的概念入口页
 
 ### 序列建模关联
 
@@ -552,12 +552,12 @@ Q6: 能否将 TTT 扩展为"跨会话持久学习" (真正的在线学习)?
 ### 推理与学习关联
 
 - [[05_大模型/08_推理模型/04_o1_Class_推理模型|o1 类推理模型]] — TTC 的代表，与 TTT 形成对照
-- [[../08_推理模型/DeepSeek_R1_Technical_Analysis|DeepSeek-R1 技术分析]] — RL 驱动的推理模型，推理时计算扩展的另一路线
+- [[01_DeepSeek_R1_Technical_分析|DeepSeek-R1 技术分析]] — RL 驱动的推理模型，推理时计算扩展的另一路线
 - [[05_大模型/06_微调技术/09_PEFT_2026|PEFT 2026（参数高效微调）]] — 另一种"轻量参数更新"范式（离线 vs TTT 的在线）
 
 ### 多模态关联
 
-- [[../09_多模态模型/Video_Understanding_Architectures|视频理解架构]] — TTT 在长视频理解中的应用前景
+- [[../09_多模态模型/09_视频_Understanding_架构|视频理解架构]] — TTT 在长视频理解中的应用前景
 
 ### 参考文献
 

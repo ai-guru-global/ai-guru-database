@@ -132,8 +132,8 @@ DeepSeek-R1采用纯RL训练的思维链，无需监督数据。
 ## See Also (深度专题)
 
 - [[05_大模型/08_推理模型/04_o1_Class_推理模型|o1 类推理模型]] — o1/o3 架构与推理链机制的深度技术分析
-- [[../../05_大模型/08_推理模型/DeepSeek_R1_Technical_Analysis|DeepSeek-R1 技术分析]] — RL 驱动的推理模型训练全流程
-- [[../../05_大模型/Test_Time_Compute/Test_Time_Compute_Scaling_2026|Test-Time Compute Scaling 2026]] — 推理时计算扩展的生产实践
+- [[../../05_大模型/08_推理模型/01_DeepSeek_R1_Technical_分析|DeepSeek-R1 技术分析]] — RL 驱动的推理模型训练全流程
+- [[../../05_大模型/08_推理模型/09_Test_Time_算力_扩展_2026|Test-Time Compute Scaling 2026]] — 推理时计算扩展的生产实践
 - [[05_大模型/08_推理模型/10_Test_Time_训练_2026|Test-Time Training (TTT) 2026]] — 测试时训练：推理时梯度更新的新技术路线
 
 ---

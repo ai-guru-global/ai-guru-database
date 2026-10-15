@@ -5,9 +5,9 @@
 import { useState, useCallback, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
-  ArrowLeft, Play, Loader2, CheckCircle2, XCircle,
-  RotateCcw, ChevronDown, ChevronUp, History, Zap,
-  Database, MessageSquare, Settings2, Activity, TrendingUp,
+  ArrowLeft, Play, Loader2,
+  ChevronDown, ChevronUp, History, Zap,
+  MessageSquare, Settings2, Activity, TrendingUp,
   BarChart3,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -110,21 +110,6 @@ async function apiEvaluate(modelId: string, question: K8sTestQuestion): Promise<
   return d.result;
 }
 
-async function apiBatch(modelIds: string[], questions: K8sTestQuestion[]): Promise<{
-  summary: Record<string, BatchSummary>;
-  results: Record<string, SingleResult[]>;
-  historyId: string;
-}> {
-  const r = await fetch("/api/k8s-eval/batch", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ modelIds, questions }),
-  });
-  const d = await r.json();
-  if (!d.ok) throw new Error(d.error);
-  return { summary: d.summary, results: d.results, historyId: d.historyId };
-}
-
 async function apiHistoryList(): Promise<HistoryItem[]> {
   const r = await fetch("/api/k8s-eval/history");
   const d = await r.json();
@@ -169,7 +154,7 @@ export function K8sRealEvaluationPage() {
   const [modelStatus, setModelStatus] = useState<Record<string, boolean>>({});
   const [selectedModels, setSelectedModels] = useState<ModelId[]>(["qwen", "kimi", "minimax"]);
   const [selectedDims, setSelectedDims] = useState<K8sDimension[]>([...ALL_DIMS]);
-  const [mode, setMode] = useState<"single" | "batch">("batch");
+  const [mode, setMode] = useState<"single" | "batch" | "visualize">("batch");
 
   // Single-test state
   const [selectedQuestion, setSelectedQuestion] = useState<K8sTestQuestion | null>(null);
@@ -180,7 +165,7 @@ export function K8sRealEvaluationPage() {
 
   // Batch state
   const [batchRunning, setBatchRunning] = useState(false);
-  const [batchProgress, setBatchProgress] = useState({ current: 0, total: 0 });
+  const [, setBatchProgress] = useState({ current: 0, total: 0 });
   const [batchSummary, setBatchSummary] = useState<Record<string, BatchSummary> | null>(null);
   const [batchResults, setBatchResults] = useState<Record<string, SingleResult[]> | null>(null);
 
@@ -204,9 +189,11 @@ export function K8sRealEvaluationPage() {
     apiHistoryList().then(setHistory).catch(() => {});
   }, []);
 
-  // Cleanup SSE on unmount
+  // Cleanup SSE on unmount（ref 模式：disconnectStream 每渲染新引用，仅取最新）
+  const disconnectRef = useRef(disconnectStream);
+  disconnectRef.current = disconnectStream;
   useEffect(() => {
-    return () => disconnectStream();
+    return () => disconnectRef.current();
   }, []);
 
   // Toggle selection helpers
@@ -244,10 +231,10 @@ export function K8sRealEvaluationPage() {
         const res = await apiEvaluate(mid, testQ);
         results.push(res);
         setSingleResults([...results]);
-      } catch (err: any) {
+      } catch (err: unknown) {
         results.push({
           modelId: mid, modelName: MODELS.find((m) => m.id === mid)?.name || mid,
-          content: `Error: ${err.message}`, latencyMs: 0,
+          content: `Error: ${err instanceof Error ? err.message : String(err)}`, latencyMs: 0,
           score: { total: 0, breakdown: { keywordScore: 0, keywordHits: [], keywordTotal: 0, referenceScore: 0, lengthScore: 0, structureScore: 0 } },
         });
         setSingleResults([...results]);
@@ -279,7 +266,7 @@ export function K8sRealEvaluationPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ models: selectedModels }),
       });
-      const triggerData = await triggerRes.json();
+      await triggerRes.json();
 
       // Poll for results while streaming
       const pollInterval = setInterval(async () => {
@@ -293,23 +280,25 @@ export function K8sRealEvaluationPage() {
               const detailData = await detailRes.json();
               if (detailData.record) {
                 // Build summary from detail
-                const summary: Record<string, any> = {};
+                const summary: Record<string, BatchSummary> = {};
                 for (const [modelId, resultList] of Object.entries(detailData.record.results || {})) {
-                  const list = resultList as any[];
-                  const totalScore = list.reduce((sum: number, r: any) => sum + (r.score?.total || 0), 0);
+                  const list = resultList as { score?: { total?: number }; dimension?: string }[];
+                  const totalScore = list.reduce((sum: number, r) => sum + (r.score?.total || 0), 0);
                   const dimScores: Record<string, { sum: number; count: number }> = {};
                   for (const r of list) {
+                    if (!r.dimension) continue;
                     if (!dimScores[r.dimension]) dimScores[r.dimension] = { sum: 0, count: 0 };
                     dimScores[r.dimension].sum += r.score?.total || 0;
                     dimScores[r.dimension].count += 1;
                   }
                   const dimAverages: Record<string, number> = {};
                   for (const [dim, vals] of Object.entries(dimScores)) {
-                    dimAverages[dim] = Math.round(((vals as any).sum / (vals as any).count) * 10) / 10;
+                    dimAverages[dim] = Math.round((vals.sum / vals.count) * 10) / 10;
                   }
                   summary[modelId] = {
                     modelName: MODELS.find(m => m.id === modelId)?.name || modelId,
                     model: MODELS.find(m => m.id === modelId)?.model || modelId,
+                    totalQuestions: list.length,
                     averageScore: Math.round((totalScore / list.length) * 10) / 10,
                     dimensionScores: dimAverages,
                   };
@@ -330,7 +319,7 @@ export function K8sRealEvaluationPage() {
         disconnectStream();
       }, 600000);
 
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error("Batch error:", err);
       setBatchRunning(false);
       disconnectStream();

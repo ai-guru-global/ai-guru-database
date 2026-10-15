@@ -4,7 +4,7 @@ category: 05-nlp-llms-global-llm-ecosystem
 tags: [google, gemini, deepmind, palm, lama, gemma, multimodal, moe, long-context, thinking-model, tpu, astra, mariner]
 summary: "全面剖析 Google DeepMind 从 LaMDA 到 Gemini 2.5 的完整技术演进：Pathways 分布式训练系统、原生多模态架构 (Natively Multimodal)、Mixture-of-Experts + 百万级上下文、Thinking Mode 可控推理、Gemma 开源模型族、TPU 自研芯片基础设施，以及 Project Astra / Mariner 智能体生态。"
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-10-14
 tier: supporting
 aliases:
   - "Google Gemini Deep Dive"
@@ -1472,6 +1472,27 @@ graph TD
 - [Awesome Gemini](https://github.com/nicepkg/awesome-gemini) — 社区精选 Gemini 资源
 - [Gemini Cookbook](https://github.com/google-gemini/cookbook) — 官方代码示例
 - [Gemma 模型合集 (HuggingFace)](https://huggingface.co/collections/google/gemma-3-release-67c6d4ab9fe2c1a2b1e4f5e9) — 全系列 Gemma 3 模型
+
+---
+
+## Gemini 4 Argon：新一代前沿模型（2026 年 9–10 月）
+
+> 2026-09-30 Google DeepMind 宣布 **Gemini 4 Argon**，10-13 面向开发者与企业正式上线；同期 Gemini 3.1 Pro 继续承担日常主力。
+
+| 维度 | 要点 |
+|------|------|
+| **定位** | 真实世界编码（real-world coding）、企业知识工作、网络防御（cyber defense） |
+| **初期访问** | 发布初期仅面向受信任的网络防御方（trusted cyber defenders），后扩大至开发者/企业 |
+| **性能** | 官方 Model Card：整体超过 Gemini 3.1 Pro |
+| **后续** | 社区普遍预期 Gemini 4 Pro 预览版在路上（截至 2026-10-14 未见官方确认） |
+
+**解读**：
+
+- Google 用「3.1 Pro 承接日常 + 4 Argon 冲前沿」的双轨对位 OpenAI/Anthropic 的档位化策略；
+- **网络防御**作为一级场景与 GPT-6 Astra 的 cybersecurity 卖点呼应——安全攻防正在成为前沿模型的竞技场，参见 [[17_伦理安全/README|伦理安全]]；
+- 跨厂商对比见 [[05_大模型/13_全球LLM生态/10_LLM_前沿格局_2026_Q4|LLM 前沿格局 2026 Q4]]。
+
+> 来源：[Gemini 4 Argon 官方博客](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/)、[Model Card](https://deepmind.google/models/model-cards/gemini-4-argon/)、[Reuters 2026-10-13](https://www.reuters.com/business/google-launches-flagship-ai-model-gemini-4-argon-developers-businesses-2026-10-13/)
 
 ---
 

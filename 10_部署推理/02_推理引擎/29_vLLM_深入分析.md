@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["deployment", "inference", "serving", "vllm", "llm", "paged-attention", "continuous-batching"]
 summary: "> **一句话理解**: vLLM 是 UC Berkeley 出品的生产级 LLM 推理引擎——PagedAttention 技术让显存利用率从 20% 提升到 90%+，吞吐量行业标杆。"
 created: "2026-05-31"
-updated: "2026-07-25"
+updated: 2026-10-14
 tier: core
 aliases:
   - "Vllm Deep Dive"
@@ -600,6 +600,22 @@ Decode 节点:  高显存带宽，专注 token 生成
 
 - `gpu_memory_utilization`、`max_num_batched_tokens`、`enable_prefix_caching` 等关键参数最终都作用于 `KVCacheManager`/`Scheduler` 的预算计算。
 - V1 引擎（`VLLM_USE_V1=1`，0.9.x 已默认）与 V0 代码路径完全独立（`vllm/v1/` 目录自成体系），排障时注意区分。
+
+---
+
+## 10. 2026 Q4 动态：v0.26 与 DeepSeek V4.1-Flash Day 0 支持
+
+| 动态 | 时间 | 要点 |
+|------|------|------|
+| **v0.26.0** 发布 | 2026 Q4 | 411 commits / 212 contributors（61 位新贡献者）；新增 Inkling 模型族全量支持 |
+| **DeepSeek-V4.1-Flash** Day 0 支持 | 2026-10-07 | 官方博客称 agentic 吞吐较上代 **5x**，多轮工具调用 + KV 复用为优化重心 |
+| **Disaggregated Serving 实践指南** | 2026-09-29 | prefill/decode 分离部署从论文走向工程标配，官方发布拆解长文 |
+
+- Agentic 负载（长上下文、多轮工具调用、前缀复用）已取代纯 chat 成为 vLLM 的第一优化场景；
+- PD 分离架构与 SGLang/TensorRT-LLM 的对位分析，见 [[10_部署推理/02_推理引擎/23_SGLang_深入分析|SGLang 深入分析]] 与 [[10_部署推理/02_推理引擎/25_TensorRT_LLM_深入分析|TensorRT-LLM 深入分析]]；
+- 模型侧背景（V4 家族时间线）见 [[05_大模型/14_中国LLM生态/08_深度Seek_深入分析|DeepSeek 深入分析]]，全景见 [[05_大模型/13_全球LLM生态/10_LLM_前沿格局_2026_Q4|LLM 前沿格局 2026 Q4]]。
+
+> 来源：[vLLM Releases](https://github.com/vllm-project/vllm/releases)、[vLLM Blog](https://vllm-project.github.io/)
 
 ---
 

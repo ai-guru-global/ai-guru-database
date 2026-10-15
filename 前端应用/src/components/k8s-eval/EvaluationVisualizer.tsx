@@ -91,7 +91,7 @@ export function EvaluationVisualizer({
       };
     }
     setModelProgress(progress);
-  }, [selectedModels, selectedDims]);
+  }, [selectedModels, selectedDims, questions.length]);
 
   const toggleExpanded = (modelId: string) => {
     setExpandedModels(prev => {
@@ -211,7 +211,7 @@ export function EvaluationVisualizer({
 
     es.addEventListener("complete", async (e) => {
       try {
-        const data = JSON.parse(e.data);
+JSON.parse(e.data);
         // Fetch results
         const runsRes = await fetch("/api/k8s-eval/runs?limit=1");
         const runsData = await runsRes.json();

@@ -4,7 +4,7 @@ category: 05-nlp-llms-global-llm-ecosystem
 tags: ["openai", "google", "gemini", "anthropic", "claude", "meta", "llama", "mistral", "global-llm", "moe", "reasoning"]
 summary: "系统梳理国际五大前沿大模型厂商（OpenAI、Google DeepMind、Anthropic、Meta、Mistral AI）的技术路线、模型矩阵、核心创新与 Benchmark 对比，对标 HuggingFace 和 ModelScope 信息量。"
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-10-14
 tier: supporting
 sources: []
 
@@ -22,11 +22,13 @@ name_zh: "国际大模型生态全景"
 
 | **厂商** | **成立时间** | **核心技术** | **旗舰模型** | **最大参数** | **最大亮点** | 深度文档 |
 |----------|-------------|-------------|-------------|-------------|-------------|---------|
-| **OpenAI** | 2015, 旧金山 | RLHF + MoE + Reasoning RL | o3 / GPT-4.1 | ~1.7T MoE (GPT-4) | 开创 ChatGPT 时代 + o3 推理 99.8%ile Codeforces | [09_OpenAI_深入分析.md](./09_OpenAI_深入分析.md) |
-| **Google DeepMind** | 2023 (合并), 山景城 | Native Multimodal + MoE + TPU | Gemini 2.5 Pro | 未公开 MoE | 原生多模态 + 1M 上下文 + Thinking Mode | [05_Google_Gemini_深入分析.md](./05_Google_Gemini_深入分析.md) |
-| **Anthropic** | 2021, 旧金山 | Constitutional AI + Extended Thinking | Claude 4 Opus | 未公开 | 安全第一 + 可见思维链 + Computer Use | [01_Anthropic_Claude_深入分析.md](./01_Anthropic_Claude_深入分析.md) |
+| **OpenAI** | 2015, 旧金山 | RLHF + MoE + Reasoning RL | GPT-6 Astra (Sol/Luna) | ~1.7T MoE (GPT-4) | 开创 ChatGPT 时代；GPT-6 时代计算机使用/安全任务全面 SOTA | [09_OpenAI_深入分析.md](./09_OpenAI_深入分析.md) |
+| **Google DeepMind** | 2023 (合并), 山景城 | Native Multimodal + MoE + TPU | Gemini 4 Argon (3.1 Pro 主力) | 未公开 MoE | 原生多模态 + 1M 上下文；4 Argon 主打真实世界编码与网络防御 | [05_Google_Gemini_深入分析.md](./05_Google_Gemini_深入分析.md) |
+| **Anthropic** | 2021, 旧金山 | Constitutional AI + Extended Thinking | Claude Opus 5.5 (Fable 5.1) | 未公开 | 安全第一 + 可见思维链；5.5 家族同能力成本降 40% | [01_Anthropic_Claude_深入分析.md](./01_Anthropic_Claude_深入分析.md) |
 | **Meta AI** | FAIR 2013, 门洛帕克 | Open-Weight + MoE + Native Multimodal | LLaMA 4 Maverick | 400B/17B active (128 experts) | 开源 LLaMA 生态 + 10M Token 上下文 | [07_Meta_LLaMA_深入分析.md](./07_Meta_LLaMA_深入分析.md) |
 | **Mistral AI** | 2023, 巴黎 | SWA + GQA + Open MoE | Mistral 3 (675B MoE) | 675B/41B active | 欧洲之光 + 开源 MoE 先驱 + Mamba SSM | [08_Mistral_AI_深入分析.md](./08_Mistral_AI_深入分析.md) |
+
+> **2026 Q4 最新格局速览**：闭源代际切换（GPT-6 / Claude 5.5 / Gemini 4）+ 开源多强混战（DeepSeek V4 / Kimi K3 / GLM-5.2 / Qwen3.8），详见 [10_LLM_前沿格局_2026_Q4.md](./10_LLM_前沿格局_2026_Q4.md)。
 
 ---
 

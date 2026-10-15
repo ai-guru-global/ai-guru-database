@@ -4,7 +4,7 @@ category: 10-deployment-inference-engines
 tags: [inference, engine, vllm, sglang, tensorrt, tgi, ollama, llama-cpp, serving]
 summary: "> LLM 推理引擎与服务平台全景：开源引擎、云平台、选型/迁移/基准测试方法论。"
 created: 2026-07-02
-updated: 2026-08-05
+updated: 2026-10-14
 tier: core
 sources: []
 
@@ -40,6 +40,7 @@ name_zh: "推理引擎"
 |------|------|------|----------|
 | 29 | [[10_部署推理/02_推理引擎/29_vLLM_深入分析|vLLM]] | UC Berkeley 生产级引擎，PagedAttention 显存优化 | 通用生产 |
 | 30 | [[10_部署推理/02_推理引擎/30_vLLM_Paged注意力_架构|vLLM + PagedAttention 架构图]] | 一张图看懂 vLLM 如何服务更多请求 | 架构师、初学者 |
+| 31 | [[10_部署推理/02_推理引擎/31_vLLM_CPU_kind_无GPU实验指南|vLLM CPU + kind 无 GPU 实验]] | 无 GPU 在 kind 上跑通 vLLM：调度行为与指标观测零成本实验室 | 培训师、自学者、K8s 工程师 |
 | 23 | [[10_部署推理/02_推理引擎/23_SGLang_深入分析|SGLang]] | RadixAttention 前缀缓存、多 LoRA、结构化输出 | 追求极致性能 |
 | 26 | [[10_部署推理/02_推理引擎/26_TGI_深入分析|TGI]] | HuggingFace 生产级引擎，Rust+Python、HF 生态原生 | HF 生态团队 |
 | 25 | [[10_部署推理/02_推理引擎/25_TensorRT_LLM_深入分析|TensorRT-LLM]] | NVIDIA 高性能推理，TensorRT 编译、FP8、Triton 集成 | H100 部署 |

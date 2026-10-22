@@ -164,7 +164,7 @@ print("Related:", result.get("related_questions", []))
 
 - [[05_大模型/README|NLP & LLMs]]
 - [[概念/perplexity|Perplexity 概念卡片]]
-- [[概念/rag|RAG 检索增强生成]]
+- [[概念/RAG|RAG 检索增强生成]]
 - [[概念/RAG/hybrid-search|AI 搜索]]
 - [[05_大模型/12_LLM产品/01_chatgpt_概览|ChatGPT 概览]]
 - [[14_RAG系统/06_RAG框架/index|RAG 框架]]

@@ -3,7 +3,7 @@ title: "LlamaIndex"
 category: -concepts
 tags: ["llamaindex", "rag", "llm", "framework", "data-framework", "agent", "indexing", "retrieval"]
 relationships:
-  - target: "概念/rag"
+  - target: "概念/RAG"
     type: extends
   - target: "概念/agent-framework"
     type: related_to

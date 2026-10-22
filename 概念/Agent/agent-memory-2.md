@@ -22,7 +22,7 @@ aliases:
 relationships:
   - target: "概念/agent-memory-systems"
     type: extends
-  - target: "概念/rag"
+  - target: "概念/RAG"
     type: related_to
   - target: "概念/vector-database"
     type: related_to
@@ -351,7 +351,7 @@ print(related)
 
 - [[概念/agent-memory-systems|Agent Memory Systems]]
 - [[概念/agent-loop|Agent Loop]]
-- [[概念/rag|Rag]]
+- [[概念/RAG|Rag]]
 - [[概念/vector-database|Vector Database]]
 - [[概念/RAG/knowledge-graph|Knowledge Graph]]
 - [[概念/agent-framework|Agent Framework]]

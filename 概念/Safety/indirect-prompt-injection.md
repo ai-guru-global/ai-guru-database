@@ -23,7 +23,7 @@ relationships:
     type: related_to
   - target: "概念/llm-safety"
     type: related_to
-  - target: "概念/rag"
+  - target: "概念/RAG"
     type: related_to
 summary: "间接 Prompt Injection(IPI)是 2024-2026 突破"LLM 数据源投毒"的关键攻击——通过文档 / 网页 / 邮件 / 工具结果注入恶意指令,绕过直接 prompt injection 防护。是 Agent 时代头号安全威胁,RAG 投毒、邮件注入、网页钓鱼都用此法。OWASP LLM Top 10 #1 风险。"
 lifecycle: reviewed
@@ -302,7 +302,7 @@ def check_indirect_injection(text):
 - [[概念/jailbreak|Jailbreak]]
 - [[概念/llm-safety|Llm Safety]]
 - [[概念/llm-guard|Llm Guard]]
-- [[概念/rag|Rag]]
+- [[概念/RAG|Rag]]
 - [[概念/mcp|Mcp]]
 - [[概念/agent-loop|Agent Loop]]
 - [[概念/model-security|Model Security]]

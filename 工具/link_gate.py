@@ -41,6 +41,23 @@ def load_spacer():
     return runpy.run_path(str(SPACER), run_name='spacing_module')
 
 
+def exists_exact(rel: str) -> bool:
+    """逐组件精确名存在性检查。macOS 文件系统大小写不敏感，os.path.exists
+    会把 [[概念/rag]]（实际为 概念/RAG）误判为存在，Linux CI 上却判断链，
+    造成门禁跨平台漂移；统一按目录项精确匹配消除差异。"""
+    cur = ROOT
+    for part in Path(rel).parts:
+        try:
+            entries = os.listdir(cur)
+        except OSError:
+            return False
+        hit = [e for e in entries if e == part]
+        if not hit:
+            return False
+        cur = cur / hit[0]
+    return True
+
+
 def scan(chk, spacer) -> dict:
     """一次扫描同时产出：断链 / 孤立页 / frontmatter 不完整 / 间距违规 清单。"""
     scan_mds, all_mds, dirs = chk['collect_files']()
@@ -75,7 +92,7 @@ def scan(chk, spacer) -> dict:
                 resolved = name_index[os.path.basename(t).lower()][0]
             if resolved:
                 inlinked.add(resolved)
-            elif t.rstrip('/') not in dirs and not os.path.exists(ROOT / t):
+            elif t.rstrip('/') not in dirs and not exists_exact(t.rstrip('/')):
                 broken.append({'source': rel, 'target': t,
                                'category': chk['classify'](t)})
     orphans = [rel for rel in scan_mds

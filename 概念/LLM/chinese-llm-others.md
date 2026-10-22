@@ -371,4 +371,4 @@ name_zh: "国产次主流大模型合并卡"
 - [[概念/stepfun-series|Stepfun Series]]
 - [[概念/internlm-3-series|Internlm 3 Series]]
 - [[概念/General/mixture-of-experts|Moe]]
-- [[概念/rag|Rag]]
+- [[概念/RAG|Rag]]

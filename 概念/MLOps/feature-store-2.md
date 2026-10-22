@@ -23,7 +23,7 @@ relationships:
     type: related_to
   - target: "概念/mlops"
     type: related_to
-  - target: "概念/rag"
+  - target: "概念/RAG"
     type: related_to
 summary: "Feature Store 2.0 是 2024-2026 突破"特征管理碎片化"的关键——Tecton(企业级实时特征)、Feast(开源 2.0)、Databricks Feature Store、AWS SageMaker Feature Store、LLM Feature Store(RAG + Agent 特征)。从传统 ML 特征(用户画像)扩展到 LLM 特征(对话历史、工具结果、检索上下文)。"
 lifecycle: reviewed
@@ -286,7 +286,7 @@ job = fs.get_historical_features(
 - [[概念/feature-store|Feature Store]]
 - [[概念/online-evaluation|Online Evaluation]]
 - [[概念/mlops|Mlops]]
-- [[概念/rag|Rag]]
+- [[概念/RAG|Rag]]
 - [[概念/agent-memory-2|Agent Memory 2]]
 - [[概念/llm-production-pipeline|Llm Production Pipeline]]
 - [[概念/data-pipeline|Data Pipeline]]

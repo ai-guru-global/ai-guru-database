@@ -36,6 +36,8 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+        env:
+          HUSKY: 0  # CI 无需 git hooks，且子目录 install 下 husky 找不到 .git 会失败
 
       - name: Type check
         run: npx tsc --noEmit

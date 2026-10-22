@@ -344,4 +344,4 @@ const actions = await page.observe("找到搜索框");
 - [[概念/tool-use|Tool Use]]
 - [[概念/agent-framework|Agent Framework]]
 - [[概念/agent-loop|Agent Loop]]
-- [[概念/rag|Rag]]
+- [[概念/RAG|Rag]]

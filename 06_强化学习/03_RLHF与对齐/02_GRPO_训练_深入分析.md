@@ -256,8 +256,8 @@ GRPO 虽然去掉了 Critic，但仍然是 online RL，训练稳定性是生产�
 
 - **Warm-up**：前 N 步 β 从 0 线性增长到目标值，让模型先学会任务格式。
 - **自适应 KL**：根据当前 KL 值动态调整 β。
-  - 若 KL > 阈值，增大 β；
-  - 若 KL < 阈值，减小 β。
+ - 若 KL > 阈值，增大 β；
+ - 若 KL < 阈值，减小 β。
 - **Clip 奖励**：对奖励做归一化，防止极端值导致优势爆炸。
 
 ### 5.2 Ratio 与 Clip
@@ -448,7 +448,7 @@ optimization:
 | **Pipeline Parallelism (PP)** | 模型按层切分到多卡 | 长序列、大 batch |
 | **Activation Checkpointing** | 重计算前向激活，换显存 | 序列长、group size 大 |
 | **FlashAttention-2/3** | 降低 attention 显存与计算 | 任何 Transformer 训练 |
-| **vLLM Rollout** | 用PagedAttention加速采样 | GRPO 采样阶段 |
+| **vLLM Rollout** | 用 PagedAttention 加速采样 | GRPO 采样阶段 |
 | **Reference Model Offload** | 把参考模型权重放到 CPU | 显存极度紧张 |
 
 ### 7.4 训练吞吐调优

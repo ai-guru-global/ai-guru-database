@@ -102,7 +102,7 @@ name_en: "Deep RL"
 | 裁剪 | Clipping | 限制更新幅度 |
 | 熵 | Entropy | 探索程度度量 |
 
-## 深度RL算法对比
+## 深度 RL 算法对比
 
 | 算法 | 类型 | 动作空间 | 样本效率 | 稳定性 | 典型应用 |
 |------|------|----------|----------|--------|----------|
@@ -111,7 +111,7 @@ name_en: "Deep RL"
 | PPO | 策略梯度 | 连续/离散 | 中 | 高 | 通用控制 |
 | SAC | Actor-Critic | 连续 | 高 | 高 | 机器人 |
 | TD3 | Actor-Critic | 连续 | 高 | 高 | 连续控制 |
-| Decision Transformer | 序列建模 | 任意 | 高 | 高 | 离线RL |
+| Decision Transformer | 序列建模 | 任意 | 高 | 高 | 离线 RL |
 | Dreamer | 模型基础 | 连续 | 极高 | 中 | 想象训练 |
 
 ## 关键技术创新
@@ -138,28 +138,28 @@ name_en: "Deep RL"
 
 | 问题 | 解答 |
 |------|------|
-| DQN为什么需要目标网络？ | 避免“自己追自己”的训练不稳定 |
-| PPO的clip有什么作用？ | 限制策略更新幅度，防止崩溃 |
-| SAC的最大熵是什么意思？ | 在优化奖励的同时鼓励探索 |
-| Decision Transformer和传统RL的区别？ | 将RL转化为序列预测问题，无需贝尔曼方程 |
+| DQN 为什么需要目标网络？ | 避免“自己追自己”的训练不稳定 |
+| PPO 的 clip 有什么作用？ | 限制策略更新幅度，防止崩溃 |
+| SAC 的最大熵是什么意思？ | 在优化奖励的同时鼓励探索 |
+| Decision Transformer 和传统 RL 的区别？ | 将 RL 转化为序列预测问题，无需贝尔曼方程 |
 
 ## 统计
 
 | 指标 | 数值 |
 |------|------|
 | 核心算法 | 7+ |
-| 关键技术 | 6项 |
-| 前置知识 | RL基础 + 深度学习 |
+| 关键技术 | 6 项 |
+| 前置知识 | RL 基础 + 深度学习 |
 | 实践框架 | Stable-Baselines3, RLlib |
 
-> 💡 深度RL = 强化学习 + 深度网络。DQN开创了时代，PPO成为事实标准，Decision Transformer代表新范式。
+> 💡 深度 RL = 强化学习 + 深度网络。DQN 开创了时代，PPO 成为事实标准，Decision Transformer 代表新范式。
 
 ## 附录：知识图谱
 
 | 知识节点 | 前置依赖 | 后续延伸 |
 |----------|----------|----------|
-| 经验回放 | 数据结构 | DQN、离线RL |
-| 目标网络 | 神经网络 | DQN稳定性 |
+| 经验回放 | 数据结构 | DQN、离线 RL |
+| 目标网络 | 神经网络 | DQN 稳定性 |
 | 截断策略 | 策略梯度 | PPO、TRPO |
 | 最大熵 | 信息论 | SAC |
 | 注意力机制 | Transformer | Decision Transformer |
@@ -174,15 +174,15 @@ name_en: "Deep RL"
 | 截断 | Clipping | 限制策略更新幅度 |
 | 广义优势估计 | GAE | 平衡偏差与方差 |
 | 最大熵 | Maximum Entropy | 鼓励探索的正则化 |
-| 离线RL | Offline RL | 无需在线交互 |
+| 离线 RL | Offline RL | 无需在线交互 |
 
 ## 附录：快速导航
 
 | 我想... | 去看 | 难度 |
 |---------|------|------|
-| 理解DQN原理 | 02_DQN_深入分析.md | ⭐⭐ |
-| 掌握PPO实现 | 04_PPO_深入分析.md | ⭐⭐ |
-| 了解Decision Transformer | Decision_Transformer.md | ⭐⭐⭐ |
+| 理解 DQN 原理 | 02_DQN_深入分析.md | ⭐⭐ |
+| 掌握 PPO 实现 | 04_PPO_深入分析.md | ⭐⭐ |
+| 了解 Decision Transformer | Decision_Transformer.md | ⭐⭐⭐ |
 | 动手实验 | Gymnasium + SB3 | ⭐⭐ |
 
 ## 附录：检查清单
@@ -191,14 +191,14 @@ name_en: "Deep RL"
 |--------|------|------|
 | 理解经验回放 | 为什么需要、如何实现 | ☐ |
 | 理解目标网络 | 为什么稳定训练 | ☐ |
-| 实现DQN | Atari环境 | ☐ |
-| 理解PPO clip | 截断机制原理 | ☐ |
-| 实现PPO | 连续控制环境 | ☐ |
-| 了解SAC | 最大熵框架 | ☐ |
-| 了解Decision Transformer | 序列决策 | ☐ |
-| 实践项目 | 完成一个完整RL项目 | ☐ |
-| 阅读论文 | DQN/PPO/SAC原论文 | ☐ |
-| 理解离线RL | CQL/DT | ☐ |
+| 实现 DQN | Atari 环境 | ☐ |
+| 理解 PPO clip | 截断机制原理 | ☐ |
+| 实现 PPO | 连续控制环境 | ☐ |
+| 了解 SAC | 最大熵框架 | ☐ |
+| 了解 Decision Transformer | 序列决策 | ☐ |
+| 实践项目 | 完成一个完整 RL 项目 | ☐ |
+| 阅读论文 | DQN/PPO/SAC 原论文 | ☐ |
+| 理解离线 RL | CQL/DT | ☐ |
 
 ---
 *Last updated: 2026-07-21*

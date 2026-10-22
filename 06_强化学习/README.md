@@ -51,7 +51,7 @@ name_zh: "06 强化学习"
 | 强化学习基础 (RL Foundations) | 入门 | MDP、贝尔曼方程、策略梯度、价值函数，RL 数学框架 | [03_RL基础.md](06_强化学习/01_强化学习基础/03_RL基础.md) |
 | 深度强化学习 (Deep RL) | 进阶 | DQN、PPO、SAC、离线 RL，结合神经网络的 RL 算法 | [02_深度强化学习.md](06_强化学习/README.md) |
 | **多智能体系统 (Multi-Agent Systems)** | **进阶** | **合作/竞争/混合场景、CTDE、QMIX、MAPPO、涌现行为** | **[03_多智能体系统.md](./06_多智能体/03_多智能体系统.md)** |
-| 具身智能 (Embodied AI) | 前沿 | 机器人基础模型、VLA架构、Sim-to-Real、人形机器人产业 | [01_Embodied_AI_2026.md](./05_机器人与具身智能/01_Embodied_AI_2026.md) |
+| 具身智能 (Embodied AI) | 前沿 | 机器人基础模型、VLA 架构、Sim-to-Real、人形机器人产业 | [01_Embodied_AI_2026.md](./05_机器人与具身智能/01_Embodied_AI_2026.md) |
 
 ### 深度解读 (Deep Dive)
 
@@ -89,7 +89,7 @@ name_zh: "06 强化学习"
 - **Multi-Agent RL**: 多智能体强化学习，处理协作与竞争场景
 - **VLA (Vision-Language-Action)**: 视觉-语言-动作模型，机器人基础模型架构
 - **Sim-to-Real**: 仿真到现实迁移，让仿真训练的模型在真实机器人上工作
-- **Embodied AI**: 具身智能，有物理身体、能与环境交互的AI系统
+- **Embodied AI**: 具身智能，有物理身体、能与环境交互的 AI 系统
 - **Robot Foundation Model**: 机器人基础模型，在大量机器人数据上预训练的通用模型
 
 ---
@@ -162,41 +162,41 @@ name_zh: "06 强化学习"
 
 | 知识节点 | 前置依赖 | 后续延伸 |
 |----------|----------|----------|
-| MDP基础 | 概率论 | Q-Learning、策略梯度 |
-| Q-Learning | MDP基础 | DQN、Double DQN |
+| MDP 基础 | 概率论 | Q-Learning、策略梯度 |
+| Q-Learning | MDP 基础 | DQN、Double DQN |
 | 策略梯度 | 微积分、MDP | REINFORCE、PPO |
 | Actor-Critic | 策略梯度+值函数 | SAC、TD3、A3C |
-| DQN | Q-Learning+深度网络 | Rainbow、离线RL |
+| DQN | Q-Learning+深度网络 | Rainbow、离线 RL |
 | PPO | 策略梯度+截断 | RLHF、机器人控制 |
 | RLHF | PPO+奖励模型 | DPO、GRPO |
-| 多智能体RL | 博弈论+RL | 协作/竞争场景 |
+| 多智能体 RL | 博弈论+RL | 协作/竞争场景 |
 | Sim-to-Real | 仿真环境+域随机化 | 具身智能 |
-| VLA模型 | 多模态+RL | 机器人操作 |
+| VLA 模型 | 多模态+RL | 机器人操作 |
 
 ## 附录：术语表
 
 | 术语 | 英文 | 说明 |
 |------|------|------|
-| 马尔可夫决策过程 | MDP | RL的数学框架 |
+| 马尔可夫决策过程 | MDP | RL 的数学框架 |
 | 贝尔曼方程 | Bellman Equation | 价值函数递推关系 |
 | 经验回放 | Experience Replay | 存储并重用转换 |
 | 目标网络 | Target Network | 稳定训练的延迟更新网络 |
 | 优势函数 | Advantage Function | A(s,a)=Q(s,a)-V(s) |
 | 广义优势估计 | GAE | 平衡偏差与方差 |
-| 域随机化 | Domain Randomization | Sim-to-Real核心技术 |
+| 域随机化 | Domain Randomization | Sim-to-Real 核心技术 |
 | 奖励塑形 | Reward Shaping | 设计中间奖励加速学习 |
 
 ## 附录：快速导航
 
 | 我想... | 去看 | 难度 |
 |---------|------|------|
-| 零基础入门RL | RL_Foundations/RL_Foundations_for_dummy | ⭐ |
-| 理解DQN原理 | Deep_RL/DQN_Deep_Dive | ⭐⭐ |
-| 掌握PPO实现 | Deep_RL/PPO_Deep_Dive | ⭐⭐ |
-| 了解RLHF对齐 | RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive | ⭐⭐⭐ |
+| 零基础入门 RL | RL_Foundations/RL_Foundations_for_dummy | ⭐ |
+| 理解 DQN 原理 | Deep_RL/DQN_Deep_Dive | ⭐⭐ |
+| 掌握 PPO 实现 | Deep_RL/PPO_Deep_Dive | ⭐⭐ |
+| 了解 RLHF 对齐 | RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive | ⭐⭐⭐ |
 | 学习具身智能 | Robotics_Embodied_AI/ | ⭐⭐⭐ |
 | 多智能体协作 | Multi_Agent_RL/Multi_Agent_RL | ⭐⭐⭐ |
-| Sim-to-Real迁移 | Sim_to_Real/index | ⭐⭐⭐ |
+| Sim-to-Real 迁移 | Sim_to_Real/index | ⭐⭐⭐ |
 
 ---
 *Last updated: 2026-07-21*

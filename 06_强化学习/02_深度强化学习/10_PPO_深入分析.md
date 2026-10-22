@@ -198,12 +198,12 @@ PPO → PPO2 → Generalized PPO
 
 | 场景 | 代表项目 | 说明 |
 |------|----------|------|
-| 游戏AI | OpenAI Five, Hide-and-Seek | 多智能体协作 |
+| 游戏 AI | OpenAI Five, Hide-and-Seek | 多智能体协作 |
 | 机器人控制 | MuJoCo, Isaac Gym | 连续动作空间 |
-| LLM对齐 | InstructGPT, ChatGPT | RLHF核心算法 |
+| LLM 对齐 | InstructGPT, ChatGPT | RLHF 核心算法 |
 | 自动驾驶 | 路径规划决策 | 安全约束优化 |
 
-> 💡 PPO 因其“开箱即用”的稳定性，已成为从游戏AI到LLM对齐的事实标准策略梯度算法。
+> 💡 PPO 因其“开箱即用”的稳定性，已成为从游戏 AI 到 LLM 对齐的事实标准策略梯度算法。
 
 ---
 

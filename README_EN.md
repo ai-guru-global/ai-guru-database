@@ -419,41 +419,41 @@ Complete path from math to production:
 | Chapter | Core Content | Difficulty |
 |---------|--------------|------------|
 | **L0 Foundation** | | |
-| **00** [AI Intro & History](./00_入门/) | General education: concepts, landscape, history, tools, ethics |  |
-| **01** [Fundamentals](./01_数学基础/) | Math & CS: Linear algebra, probability, data structures, distributed systems, AI hardware 2026 |  |
+| **00** [AI Intro & History](./00_入门/) | General education: concepts, landscape, history, tools, ethics | |
+| **01** [Fundamentals](./01_数学基础/) | Math & CS: Linear algebra, probability, data structures, distributed systems, AI hardware 2026 | |
 | **L1 Models** | | |
-| **02** [Classical ML](./02_机器学习/) | ML basics: Supervised/unsupervised learning, feature engineering, XGBoost |  |
-| **03** [Deep Learning](./03_深度学习/) | Neural networks: MLP, backprop, optimization, JEPA world models |  |
-| **04** [Computer Vision](./04_计算机视觉/) | Vision AI: CNN, YOLO, diffusion, video generation 2026 |  |
-| **05** [NLP & LLMs](./05_大模型/) | LLM tech: Transformer, GPT-5.2/Claude 4.5, DeepSeek-R1, LoRA/RLHF/DPO |  |
-| **06** [RL & Agents](./06_强化学习/) | RL & Agents: DQN/PPO, GRPO, VLA embodied AI |  |
+| **02** [Classical ML](./02_机器学习/) | ML basics: Supervised/unsupervised learning, feature engineering, XGBoost | |
+| **03** [Deep Learning](./03_深度学习/) | Neural networks: MLP, backprop, optimization, JEPA world models | |
+| **04** [Computer Vision](./04_计算机视觉/) | Vision AI: CNN, YOLO, diffusion, video generation 2026 | |
+| **05** [NLP & LLMs](./05_大模型/) | LLM tech: Transformer, GPT-5.2/Claude 4.5, DeepSeek-R1, LoRA/RLHF/DPO | |
+| **06** [RL & Agents](./06_强化学习/) | RL & Agents: DQN/PPO, GRPO, VLA embodied AI | |
 | **L2 Engineering** | | |
-| **07** [Model Training](./07_模型训练/) | Training: Loss functions, optimizers, distributed training, GRPO alignment |  |
-| **08** [Model Evaluation](./08_模型评估/) | Evaluation: Metrics, benchmarks, LLM-as-Judge, A/B testing |  |
-| **09** [AI Testing](./09_测试/) | Testing: Ragas/DeepEval/Promptfoo, contract testing, Eval-Driven Dev |  |
-| **10** [Deployment & Inference](./10_部署推理/) | Inference: vLLM/SGLang, quantization, KV Cache, reasoning models |  |
+| **07** [Model Training](./07_模型训练/) | Training: Loss functions, optimizers, distributed training, GRPO alignment | |
+| **08** [Model Evaluation](./08_模型评估/) | Evaluation: Metrics, benchmarks, LLM-as-Judge, A/B testing | |
+| **09** [AI Testing](./09_测试/) | Testing: Ragas/DeepEval/Promptfoo, contract testing, Eval-Driven Dev | |
+| **10** [Deployment & Inference](./10_部署推理/) | Inference: vLLM/SGLang, quantization, KV Cache, reasoning models | |
 | **L3 Platform** | | |
-| **11** [MLOps Pipeline](./11_模型运维/) | **LLMOps end-to-end** + traditional MLOps + deep-dive tool analysis (115 docs) |  |
-| **12** [Architecture & Infra](./12_架构基建/) | System design: K8s, multi-tenant, HA, GPU cluster, capacity planning |  |
-| **13** [AI Ops](./13_运维/) | AIOps: Incident response, SRE practices, chaos engineering, K8s troubleshooting |  |
+| **11** [MLOps Pipeline](./11_模型运维/) | **LLMOps end-to-end** + traditional MLOps + deep-dive tool analysis (115 docs) | |
+| **12** [Architecture & Infra](./12_架构基建/) | System design: K8s, multi-tenant, HA, GPU cluster, capacity planning | |
+| **13** [AI Ops](./13_运维/) | AIOps: Incident response, SRE practices, chaos engineering, K8s troubleshooting | |
 | **L4 Application** | | |
-| **14** [RAG Systems](./14_RAG系统/) | Retrieval augmented: Vector DBs, hybrid search, Agentic RAG, multimodal retrieval |  |
-| **15** [Agent Production](./15_智能体/) | Agent engineering: Frameworks, MCP/A2A protocol, Harness, skills, workflows, eval (240 docs) |  |
-|  [Agent Skills](./15_智能体/05_Agent技能/) | Skill system: Registration, composition, ecosystem |  |
-|  [Agent Workflow](./15_智能体/03_Agent工作流/) | Workflows: LangGraph, error handling, orchestration |  |
-|  [Agent Eval](./15_智能体/07_Agent评估/) | Evaluation: Benchmark, red team, leaderboard |  |
-| **16** [AI Coding](./16_编程/) | Coding tools & methodology: Cursor, Claude Code, Vibe Coding |  |
-| **22** [FDE Full-Stack Eng](./22-FDE/) | End-to-end full-stack projects: System design, architecture, production deployment |  |
+| **14** [RAG Systems](./14_RAG系统/) | Retrieval augmented: Vector DBs, hybrid search, Agentic RAG, multimodal retrieval | |
+| **15** [Agent Production](./15_智能体/) | Agent engineering: Frameworks, MCP/A2A protocol, Harness, skills, workflows, eval (240 docs) | |
+| [Agent Skills](./15_智能体/05_Agent技能/) | Skill system: Registration, composition, ecosystem | |
+| [Agent Workflow](./15_智能体/03_Agent工作流/) | Workflows: LangGraph, error handling, orchestration | |
+| [Agent Eval](./15_智能体/07_Agent评估/) | Evaluation: Benchmark, red team, leaderboard | |
+| **16** [AI Coding](./16_编程/) | Coding tools & methodology: Cursor, Claude Code, Vibe Coding | |
+| **22** [FDE Full-Stack Eng](./22-FDE/) | End-to-end full-stack projects: System design, architecture, production deployment | |
 | **L5 Governance** | | |
-| **17** [Ethics & Safety](./17_伦理安全/) | AI safety: Alignment, red team, RSI, privacy protection, OWASP LLM |  |
+| **17** [Ethics & Safety](./17_伦理安全/) | AI safety: Alignment, red team, RSI, privacy protection, OWASP LLM | |
 | **L6 Resources** | | |
-| **18** [Industry Applications](./18_行业应用/) | Verticals: Healthcare/Finance/Manufacturing/Retail/Education/Autonomous Driving |  |
-| **19** [Industry Perspectives](./19_业界观点/) | Leader insights: 28 AI pioneers, including 2026 trend collections |  |
-| **20** [Essential Papers](./20_论文精读/) | Classics: Transformer, BERT, GPT, RLHF, DPO and other milestones |  |
-| **21** [Interviews & Careers](./21_面试岗位/) | Career: 25+ AI role interview guides, question banks, system design |  |
+| **18** [Industry Applications](./18_行业应用/) | Verticals: Healthcare/Finance/Manufacturing/Retail/Education/Autonomous Driving | |
+| **19** [Industry Perspectives](./19_业界观点/) | Leader insights: 28 AI pioneers, including 2026 trend collections | |
+| **20** [Essential Papers](./20_论文精读/) | Classics: Transformer, BERT, GPT, RLHF, DPO and other milestones | |
+| **21** [Interviews & Careers](./21_面试岗位/) | Career: 25+ AI role interview guides, question banks, system design | |
 | **Extras** | | |
-| **90** [Learning Resources](./90_学习/) | Course maps: Microsoft/Datawhale/HuggingFace courses, career paths |  |
-| **94** [Visualization](./94_可视化/) | Knowledge graph viz: Dashboards, training monitoring, eval visualization |  |
+| **90** [Learning Resources](./90_学习/) | Course maps: Microsoft/Datawhale/HuggingFace courses, career paths | |
+| **94** [Visualization](./94_可视化/) | Knowledge graph viz: Dashboards, training monitoring, eval visualization | |
 
 </details>
 
@@ -570,12 +570,12 @@ npm run dev
 ```
 
 Features:
--   Vite fast builds
--   Tailwind CSS + shadcn/ui
--   Full-text search (Fuse.js)
--   Dark/light mode
--   Responsive design
--   Agent evaluation dashboard integration
+- Vite fast builds
+- Tailwind CSS + shadcn/ui
+- Full-text search (Fuse.js)
+- Dark/light mode
+- Responsive design
+- Agent evaluation dashboard integration
 
 [View Frontend Details →](./前端应用/README.md)
 
@@ -634,9 +634,9 @@ Special thanks to:
 <p><b>AI Guru</b> — Making AI Learning Systematic, Efficient, and Accessible</p>
 
 <p>
-  ⭐ <b>Star this repo</b> for updates •
-    <b>Watch</b> for new content •
-    <b>Fork</b> to create your version
+ ⭐ <b>Star this repo</b> for updates •
+ <b>Watch</b> for new content •
+ <b>Fork</b> to create your version
 </p>
 
 </div>

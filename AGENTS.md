@@ -58,7 +58,7 @@ index.md                Auto-maintained root wiki index. Do NOT hand-edit.
 ```
 
 - Chapter directories use `NN_中文短名/` (e.g. `05_大模型`, `15_智能体`). The number
-  encodes learning order, not arbitrary sorting.
+ encodes learning order, not arbitrary sorting.
 - Each chapter has a `README.md` (chapter index) and usually an `INDEX.md`.
 
 ---
@@ -142,11 +142,11 @@ name_zh: "中文短名"           # REQUIRED — Chinese short name
 ```
 
 - **`name_zh` is mandatory** (present on 2,742 pages). Immediately after the `# H1`,
-  repeat it as a blockquote: `> 中文简称：<name_zh>`. This bilingual naming contract
-  is how the wiki disambiguates pages.
+ repeat it as a blockquote: `> 中文简称：<name_zh>`. This bilingual naming contract
+ is how the wiki disambiguates pages.
 - **`tier`** drives wiki health/lifecycle tooling. Distribution: `supporting` (~4050),
-  `core` (~1520), `peripheral` (~260). Use `core` for hub/foundational pages,
-  `supporting` for normal content, `peripheral` for low-priority.
+ `core` (~1520), `peripheral` (~260). Use `core` for hub/foundational pages,
+ `supporting` for normal content, `peripheral` for low-priority.
 - **`updated`** must be bumped whenever you edit a page (review gate checks this).
 
 ### Body structure
@@ -175,16 +175,16 @@ name_zh: "中文短名"           # REQUIRED — Chinese short name
 - Topic files use **PascalCase with underscores**: `Distributed_Training_2026.md`.
 - Chapter index is always `README.md` (exact case).
 - Special suffixes carry meaning:
-  - `_in-nutshell` — 30-min quick guide (500–800 lines)
-  - `_for_dummy` — beginner-friendly, emoji-heavy, short code (<30 lines)
-  - `_Deep_Dive` — deep technical doc (don't combine with `_2026`)
-  - `_2026` — current-year topic/roundup
+ - `_in-nutshell` — 30-min quick guide (500–800 lines)
+ - `_for_dummy` — beginner-friendly, emoji-heavy, short code (<30 lines)
+ - `_Deep_Dive` — deep technical doc (don't combine with `_2026`)
+ - `_2026` — current-year topic/roundup
 - Filenames are **English** even when content is Chinese.
 
 ### Formatting rules
 
 - **CJK–Latin spacing**: insert a space between Chinese and English/numbers
-  (`使用 Python 训练`, not `使用Python训练`). `工具/fix_spacing.py` enforces this.
+ (`使用 Python 训练`, not `使用Python训练`). `工具/fix_spacing.py` enforces this.
 - Use full-width parentheses `（）` for Chinese parenthetical content.
 - Preserve proper-noun capitalization (`PyTorch`, `GPT-4`).
 - Mermaid diagrams: prefer `flowchart` + `subgraph`; add 1–2 sentence explanation below.
@@ -194,10 +194,10 @@ name_zh: "中文短名"           # REQUIRED — Chinese short name
 
 - Use Obsidian-style wikilinks: `[[概念/rlhf]]` or `[[概念/rlhf|display text]]`.
 - Wikilinks resolve **by path** (and basename as fallback). The concept graph
-  (`概念/`) is the interconnection layer — concept pages carry `relationships:`
-  frontmatter linking to related concepts.
+ (`概念/`) is the interconnection layer — concept pages carry `relationships:`
+ frontmatter linking to related concepts.
 - Markdown relative links for chapter refs: `[深度学习](../03_深度学习/README.md)`
-  — always point to a file, never a bare directory.
+ — always point to a file, never a bare directory.
 - Every page should have **≥2** outgoing cross-references (anti-pattern: "孤岛文档").
 
 Full detail: [`治理/Document_Templates.md`](治理/Document_Templates.md).
@@ -241,7 +241,7 @@ Full detail: [`治理/Document_Templates.md`](治理/Document_Templates.md).
 ## When you create or edit a page — checklist
 
 - [ ] Frontmatter complete: `title`, `name_zh`, `tier`, `tags`, `summary`, `created`,
-      `updated` (bump `updated`), `sources`, `aliases`.
+ `updated` (bump `updated`), `sources`, `aliases`.
 - [ ] `> 中文简称：<name_zh>` blockquote right after H1.
 - [ ] `> **一句话理解**: …` present.
 - [ ] Sections separated by `---`; `*Last updated: YYYY-MM-DD*` at footer.
@@ -249,7 +249,7 @@ Full detail: [`治理/Document_Templates.md`](治理/Document_Templates.md).
 - [ ] ≥2 outgoing cross-references; no broken wikilinks (`check_links.py`).
 - [ ] CJK–Latin spacing correct.
 - [ ] Run `python3 工具/check_links.py` and `python3 工具/wiki_health.py` after
-      structural changes.
+ structural changes.
 
 ---
 

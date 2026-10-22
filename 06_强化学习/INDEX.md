@@ -104,11 +104,11 @@ This page indexes the contents of `强化学习`.
 
 | 分类维度 | 类型 | 代表算法 | 特点 |
 |----------|------|----------|------|
-| 值函数方法 | 离散动作 | DQN, Double DQN | 学习Q值 |
+| 值函数方法 | 离散动作 | DQN, Double DQN | 学习 Q 值 |
 | 策略梯度 | 连续/离散 | PPO, REINFORCE | 直接优化策略 |
 | Actor-Critic | 连续 | SAC, TD3, A3C | 结合两者优势 |
 | 模型基础 | 任意 | Dreamer, MBPO | 学习环境模型 |
-| 离线RL | 任意 | CQL, Decision Transformer | 无需在线交互 |
+| 离线 RL | 任意 | CQL, Decision Transformer | 无需在线交互 |
 | 多智能体 | 任意 | MAPPO, QMIX | 协作/竞争 |
 
 ## 子域导航
@@ -127,10 +127,10 @@ This page indexes the contents of `强化学习`.
 
 | 问题 | 解答 |
 |------|------|
-| RL的核心挑战是什么？ | 探索-利用平衡、延迟奖励、样本效率、训练稳定性 |
-| 深度RL和传统RL的区别？ | 用深度网络替代表格，处理高维状态空间 |
-| RLHF为什么重要？ | 让LLM输出符合人类偏好，是ChatGPT的核心技术 |
-| 学RL需要什么前置？ | Python + 概率论 + 基本微积分 + 线性代数 |
+| RL 的核心挑战是什么？ | 探索-利用平衡、延迟奖励、样本效率、训练稳定性 |
+| 深度 RL 和传统 RL 的区别？ | 用深度网络替代表格，处理高维状态空间 |
+| RLHF 为什么重要？ | 让 LLM 输出符合人类偏好，是 ChatGPT 的核心技术 |
+| 学 RL 需要什么前置？ | Python + 概率论 + 基本微积分 + 线性代数 |
 
 ## 统计
 
@@ -141,58 +141,58 @@ This page indexes the contents of `强化学习`.
 | 核心算法 | 15+ |
 | 覆盖应用 | 游戏/机器人/LLM/推荐 |
 
-> 💡 强化学习是AI从“感知”走向“决策”的核心桥梁。2026年，RL与LLM的融合（RLHF/GRPO）和具身智能是最活跃的研究方向。
+> 💡 强化学习是 AI 从“感知”走向“决策”的核心桥梁。2026 年，RL 与 LLM 的融合（RLHF/GRPO）和具身智能是最活跃的研究方向。
 
 ## 附录：知识图谱
 
 | 知识节点 | 前置依赖 | 后续延伸 |
 |----------|----------|----------|
-| MDP基础 | 概率论 | Q-Learning、策略梯度 |
-| Q-Learning | MDP基础 | DQN、Double DQN |
+| MDP 基础 | 概率论 | Q-Learning、策略梯度 |
+| Q-Learning | MDP 基础 | DQN、Double DQN |
 | 策略梯度 | 微积分、MDP | REINFORCE、PPO |
 | Actor-Critic | 策略梯度+值函数 | SAC、TD3、A3C |
-| DQN | Q-Learning+深度网络 | Rainbow、离线RL |
+| DQN | Q-Learning+深度网络 | Rainbow、离线 RL |
 | PPO | 策略梯度+截断 | RLHF、机器人控制 |
 | RLHF | PPO+奖励模型 | DPO、GRPO |
-| 多智能体RL | 博弈论+RL | 协作/竞争场景 |
+| 多智能体 RL | 博弈论+RL | 协作/竞争场景 |
 | Sim-to-Real | 仿真环境+域随机化 | 具身智能 |
-| VLA模型 | 多模态+RL | 机器人操作 |
+| VLA 模型 | 多模态+RL | 机器人操作 |
 
 ## 附录：术语表
 
 | 术语 | 英文 | 说明 |
 |------|------|------|
-| 马尔可夫决策过程 | MDP | RL的数学框架 |
+| 马尔可夫决策过程 | MDP | RL 的数学框架 |
 | 贝尔曼方程 | Bellman Equation | 价值函数递推关系 |
 | 经验回放 | Experience Replay | 存储并重用转换 |
 | 目标网络 | Target Network | 稳定训练的延迟更新网络 |
 | 优势函数 | Advantage Function | A(s,a)=Q(s,a)-V(s) |
 | 广义优势估计 | GAE | 平衡偏差与方差 |
-| 域随机化 | Domain Randomization | Sim-to-Real核心技术 |
+| 域随机化 | Domain Randomization | Sim-to-Real 核心技术 |
 | 奖励塑形 | Reward Shaping | 设计中间奖励加速学习 |
 
 ## 附录：快速导航
 
 | 我想... | 去看 | 难度 |
 |---------|------|------|
-| 零基础入门RL | RL_Foundations/ | ⭐ |
-| 理解DQN原理 | Deep_RL/DQN_Deep_Dive | ⭐⭐ |
-| 掌握PPO实现 | Deep_RL/PPO_Deep_Dive | ⭐⭐ |
-| 了解RLHF对齐 | RLHF_Alignment/ | ⭐⭐⭐ |
+| 零基础入门 RL | RL_Foundations/ | ⭐ |
+| 理解 DQN 原理 | Deep_RL/DQN_Deep_Dive | ⭐⭐ |
+| 掌握 PPO 实现 | Deep_RL/PPO_Deep_Dive | ⭐⭐ |
+| 了解 RLHF 对齐 | RLHF_Alignment/ | ⭐⭐⭐ |
 | 学习具身智能 | Robotics_Embodied_AI/ | ⭐⭐⭐ |
 | 多智能体协作 | Multi_Agent_RL/ | ⭐⭐⭐ |
-| Sim-to-Real迁移 | Sim_to_Real/ | ⭐⭐ |
-| RL应用全景 | RL_Applications/ | ⭐⭐ |
+| Sim-to-Real 迁移 | Sim_to_Real/ | ⭐⭐ |
+| RL 应用全景 | RL_Applications/ | ⭐⭐ |
 
 ## 附录：检查清单
 
 | 检查项 | 说明 | 状态 |
 |--------|------|------|
-| 理解MDP建模 | 状态/动作/奖励/转移 | ☐ |
+| 理解 MDP 建模 | 状态/动作/奖励/转移 | ☐ |
 | 掌握值函数方法 | Q-Learning/SARSA | ☐ |
 | 理解策略梯度 | REINFORCE/PPO | ☐ |
-| 了解RLHF | 奖励模型+PPO | ☐ |
-| 动手实践 | Gymnasium环境 | ☐ |
+| 了解 RLHF | 奖励模型+PPO | ☐ |
+| 动手实践 | Gymnasium 环境 | ☐ |
 
 ---
 *Last updated: 2026-07-21*

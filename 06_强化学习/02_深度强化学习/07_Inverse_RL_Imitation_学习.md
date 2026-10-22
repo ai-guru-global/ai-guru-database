@@ -19,7 +19,7 @@ name_zh: "逆强化学习与模仿学习深度解析"
 
 > 中文简称：逆强化学习与模仿学习深度解析
 
-> **一句话理解**: 逆强化学习是"看行为猜奖励"——从专家演示中推断奖励函数；模仿学习是"照葫芦画瓢"——直接学习专家策略。两者结合让AI无需手动设计奖励就能从人类演示中学习复杂技能。
+> **一句话理解**: 逆强化学习是"看行为猜奖励"——从专家演示中推断奖励函数；模仿学习是"照葫芦画瓢"——直接学习专家策略。两者结合让 AI 无需手动设计奖励就能从人类演示中学习复杂技能。
 
 ---
 
@@ -41,7 +41,7 @@ name_zh: "逆强化学习与模仿学习深度解析"
 
 | 属性 | 内容 |
 |------|------|
-| **IRL奠基** | Algorithms for Inverse Reinforcement Learning (Ng & Russell, 2000) |
+| **IRL 奠基** | Algorithms for Inverse Reinforcement Learning (Ng & Russell, 2000) |
 | **MaxEnt IRL** | Maximum Entropy Inverse Reinforcement Learning (Ziebart et al., 2008) |
 | **GAIL** | Generative Adversarial Imitation Learning (Ho & Ermon, 2016) |
 | **AIRL** | Learning Robust Rewards with Adversarial Inverse RL (Fu et al., 2018) |
@@ -219,17 +219,17 @@ $$\pi_{N+1} = \arg\min_{\pi \in \Pi} \mathbb{E}_{(s,a) \sim \mathcal{D}_N} [\mat
 
 #### 理论保证
 
-DAGGER将模仿学习的regret从 $O(T^2)$ 降低到 $O(T)$：
+DAGGER 将模仿学习的 regret 从 $O(T^2)$ 降低到 $O(T)$：
 
 $$J(\pi^*) - J(\pi_N) \leq T \cdot \epsilon_N + O(1/T)$$
 
-其中 $\epsilon_N$ 是第N轮的分类误差。
+其中 $\epsilon_N$ 是第 N 轮的分类误差。
 
 ### 2.3 GAIL (Generative Adversarial Imitation Learning)
 
 #### 核心思想
 
-用GAN的框架做模仿学习——判别器区分专家和策略的轨迹：
+用 GAN 的框架做模仿学习——判别器区分专家和策略的轨迹：
 
 ```
 GAN vs GAIL:
@@ -260,7 +260,7 @@ $$\max_\pi -\mathbb{E}_{\pi}[\log D(s,a)] + \lambda H(\pi)$$
 
 #### 等价于最小化分布距离
 
-GAIL等价于最小化策略分布和专家分布之间的Jensen-Shannon散度：
+GAIL 等价于最小化策略分布和专家分布之间的 Jensen-Shannon 散度：
 
 $$\min_\pi D_{JS}(\rho_{\pi_E} || \rho_\pi)$$
 
@@ -268,7 +268,7 @@ $$\min_\pi D_{JS}(\rho_{\pi_E} || \rho_\pi)$$
 
 ### 2.4 AIRL (Adversarial Inverse Reinforcement Learning)
 
-#### GAIL的局限
+#### GAIL 的局限
 
 ```
 GAIL的问题:
@@ -284,9 +284,9 @@ GAIL的问题:
    → GAN训练的不稳定性
 ```
 
-#### AIRL的改进
+#### AIRL 的改进
 
-AIRL将判别器分解为奖励函数和策略：
+AIRL 将判别器分解为奖励函数和策略：
 
 $$D(s, a, s') = \frac{\exp(f(s, a, s'))}{\exp(f(s, a, s')) + \pi_\theta(a|s')}$$
 
@@ -297,7 +297,7 @@ $$f(s, a, s') = r(s, a) + \gamma h(s') - h(s)$$
 - $r(s,a)$: 可恢复的奖励函数（shaping-free）
 - $\gamma h(s') - h(s)$: 奖励塑形项（不改变最优策略）
 
-#### AIRL的优势
+#### AIRL 的优势
 
 ```
 1. 可恢复真实奖励:
@@ -500,7 +500,7 @@ Step 2: 用RL微调
 
 ## 4. 实验与基准
 
-### 4.1 MuJoCo基准对比
+### 4.1 MuJoCo 基准对比
 
 | 环境 | BC | DAGGER | GAIL | AIRL+SAC | SAC(无演示) |
 |------|-----|--------|------|----------|-------------|
@@ -511,10 +511,10 @@ Step 2: 用RL微调
 | Humanoid | 120±50 | 450±180 | 1800±350 | **4100±200** | 4337±176 |
 
 **关键发现**：
-- BC在简单任务上可用，复杂任务严重退化
-- DAGGER需要在线专家，但效果显著优于BC
-- GAIL不需要在线专家，效果接近RL
-- AIRL+SAC结合演示和RL，达到或超越纯RL
+- BC 在简单任务上可用，复杂任务严重退化
+- DAGGER 需要在线专家，但效果显著优于 BC
+- GAIL 不需要在线专家，效果接近 RL
+- AIRL+SAC 结合演示和 RL，达到或超越纯 RL
 
 ### 4.2 样本效率对比
 
@@ -1061,31 +1061,31 @@ VLA (Vision-Language-Action) 模型 = 大规模BC + 多模态预训练
 
 ### 直接相关
 
-- [[概念/Training/reward-modeling]] — 奖励建模本质是IRL在NLP中的应用
-- [[06_强化学习/02_深度强化学习/10_PPO_深入分析]] — GAIL中策略优化的标准选择
-- [[06_强化学习/02_深度强化学习/11_SAC_深入分析]] — AIRL中策略优化的最佳搭档
-- [[06_强化学习/02_深度强化学习/12_TD3_深入分析]] — 连续控制中AIRL+RL的组合
+- [[概念/Training/reward-modeling]] — 奖励建模本质是 IRL 在 NLP 中的应用
+- [[06_强化学习/02_深度强化学习/10_PPO_深入分析]] — GAIL 中策略优化的标准选择
+- [[06_强化学习/02_深度强化学习/11_SAC_深入分析]] — AIRL 中策略优化的最佳搭档
+- [[06_强化学习/02_深度强化学习/12_TD3_深入分析]] — 连续控制中 AIRL+RL 的组合
 
 ### 扩展方向
 
 - [[06_强化学习/02_深度强化学习/08_模型_Based_RL_深入分析]] — 世界模型，视频预测作为模仿学习
-- [[06_强化学习/02_深度强化学习/05_Hierarchical_RL_深入分析]] — 层次化RL，技能学习与演示学习
+- [[06_强化学习/02_深度强化学习/05_Hierarchical_RL_深入分析]] — 层次化 RL，技能学习与演示学习
 - [[Exploration_Strategies_Deep_Dive]] — 探索策略，演示引导探索
-- [[06_强化学习/02_深度强化学习/09_离线_RL_深入分析]] — 离线RL，与BC/IL共享"从数据学习"的思想
+- [[06_强化学习/02_深度强化学习/09_离线_RL_深入分析]] — 离线 RL，与 BC/IL 共享"从数据学习"的思想
 
-### RLHF与对齐
+### RLHF 与对齐
 
-- [[06_强化学习/03_RLHF与对齐/04_RLHF_DPO_GRPO_深入分析]] — RLHF全流程，IRL思想的应用
-- [[06_强化学习/03_RLHF与对齐/02_GRPO_训练_深入分析]] — GRPO训练，无需奖励模型的对齐
+- [[06_强化学习/03_RLHF与对齐/04_RLHF_DPO_GRPO_深入分析]] — RLHF 全流程，IRL 思想的应用
+- [[06_强化学习/03_RLHF与对齐/02_GRPO_训练_深入分析]] — GRPO 训练，无需奖励模型的对齐
 
 ### 应用与基础
 
 - [[06_强化学习/05_机器人与具身智能/07_Sim_to_Real_Transfer_指南]] — Sim-to-Real，演示学习在仿真中的应用
 - [[06_强化学习/06_多智能体/02_多智能体强化学习]] — 多智能体，多专家演示学习
 - [[06_强化学习/01_强化学习基础/03_RL基础]] — 强化学习基础
-- [[90_学习/03_课程资源/hugging_face/03_deep_rl_course]] — 深度RL总览
-- [[06_强化学习/05_机器人与具身智能/01_Embodied_AI_2026]] — 具身智能，VLA模型的应用场景
-- [[06_强化学习/05_机器人与具身智能/09_VLA_模型_2026]] — VLA模型，大规模模仿学习的代表
+- [[90_学习/03_课程资源/hugging_face/03_deep_rl_course]] — 深度 RL 总览
+- [[06_强化学习/05_机器人与具身智能/01_Embodied_AI_2026]] — 具身智能，VLA 模型的应用场景
+- [[06_强化学习/05_机器人与具身智能/09_VLA_模型_2026]] — VLA 模型，大规模模仿学习的代表
 
 ---
 

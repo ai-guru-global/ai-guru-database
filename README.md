@@ -4,7 +4,7 @@ category: documentation
 tags: ["documentation", "docs-as-code", "ai-knowledge", "llmops", "mlops"]
 summary: "GitHub 上最全面的 AI 全栈中文知识库——从数学基础到 Agent 生产部署，含 LLMOps 完整主线。"
 created: 2026-05-31
-updated: 2026-09-04
+updated: 2026-10-22
 tier: supporting
 sources: []
 
@@ -18,7 +18,7 @@ name_zh: "AI Guru 知识库"
 
 <p><strong>这可能是 GitHub 上最全面的 AI 学习资源</strong></p>
 
-<p>从理论到生产的完整 AI 知识体系 | 2,826 篇核心文档 + 700 概念卡片 | 1,928 万字 | LLMOps 完整主线 | 2026 最新</p>
+<p>从理论到生产的完整 AI 知识体系 | 2,142 篇核心文档 + 704 概念卡片 | 1,957 万字 | LLMOps 完整主线 | 2026 最新</p>
 
 <p>
  <a href="#-快速开始"> 快速开始</a> •
@@ -29,14 +29,20 @@ name_zh: "AI Guru 知识库"
 </p>
 
 <p>
- <img src="https://img.shields.io/badge/核心文档-2826-blue?style=flat-square" alt="Docs">
- <img src="https://img.shields.io/badge/字数-1925万-green?style=flat-square" alt="Content">
- <img src="https://img.shields.io/badge/章节-24-orange?style=flat-square" alt="Chapters">
- <img src="https://img.shields.io/badge/速成指南-70+-purple?style=flat-square" alt="Guides">
- <img src="https://img.shields.io/badge/概念卡片-700+-critical?style=flat-square" alt="Concepts">
- <img src="https://img.shields.io/badge/LLMOps-完整主线-blueviolet?style=flat-square" alt="LLMOps">
- <img src="https://img.shields.io/badge/更新-2026--10-red?style=flat-square" alt="Updated">
- <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
+ <a href="https://github.com/ai-guru-global/ai-guru-database/actions/workflows/link-health.yml"><img src="https://github.com/ai-guru-global/ai-guru-database/actions/workflows/link-health.yml/badge.svg" alt="Link Health Gate"></a>
+ <a href="https://github.com/ai-guru-global/ai-guru-database/actions/workflows/deploy-pages.yml"><img src="https://github.com/ai-guru-global/ai-guru-database/actions/workflows/deploy-pages.yml/badge.svg" alt="Deploy Pages"></a>
+ <a href="https://github.com/ai-guru-global/ai-guru-database/actions/workflows/secret-scan.yml"><img src="https://github.com/ai-guru-global/ai-guru-database/actions/workflows/secret-scan.yml/badge.svg" alt="Secret Scan"></a>
+</p>
+
+<p>
+ <img src="https://img.shields.io/badge/核心文档-2142-green?style=flat-square" alt="Docs">
+ <img src="https://img.shields.io/badge/字数-1957万-green?style=flat-square" alt="Content">
+ <img src="https://img.shields.io/badge/章节-24-green?style=flat-square" alt="Chapters">
+ <img src="https://img.shields.io/badge/速成指南-70+-green?style=flat-square" alt="Guides">
+ <img src="https://img.shields.io/badge/概念卡片-704-green?style=flat-square" alt="Concepts">
+ <img src="https://img.shields.io/badge/LLMOps-完整主线-green?style=flat-square" alt="LLMOps">
+ <img src="https://img.shields.io/badge/更新-2026--10-green?style=flat-square" alt="Updated">
+ <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License">
 </p>
 
 <p>
@@ -335,7 +341,7 @@ graph TD
 | 角色 | 推荐路径 | 预计时间 |
 |------|---------|---------|
 | **零基础入门** | 入门 → 数学基础 → 机器学习 → 深度学习 | 16-20 周 |
-| **LLM 工程师** | 大模型 → 模型训练 → 部署推理 → RAG系统 → 智能体 | 8-12 周 |
+| **LLM 工程师** | 大模型 → 模型训练 → 部署推理 → RAG 系统 → 智能体 | 8-12 周 |
 | **运维/SRE** | 部署推理 → 架构基建 → 模型运维 → 运维 | 4-8 周 |
 | **AI 安全工程师** | 伦理安全 → 模型评估/红队 → 概念/Safety | 4-6 周 |
 | **面试备战** | 面试岗位 → 论文精读 → 概念速查 → 学习 | 2-4 周 |
@@ -410,46 +416,46 @@ graph LR
 从数学基础到生产部署的完整路径：
 
 <details>
-<summary><b>  展开查看完整目录</b></summary>
+<summary><b> 展开查看完整目录</b></summary>
 
 | 章节 | 核心内容 | 难度 |
 |------|----------|------|
 | **L0 基础层** | | |
-| **00** [AI 简介与历史](./00_入门/) | 通识导入：基础概念、技术全景、历史、工具、伦理、未来 |  |
-| **01** [基础理论](./01_数学基础/) | 数学与计算机：线代、概率、数据结构、分布式、AI 硬件 2026 |  |
+| **00** [AI 简介与历史](./00_入门/) | 通识导入：基础概念、技术全景、历史、工具、伦理、未来 | |
+| **01** [基础理论](./01_数学基础/) | 数学与计算机：线代、概率、数据结构、分布式、AI 硬件 2026 | |
 | **L1 模型层** | | |
-| **02** [经典机器学习](./02_机器学习/) | ML 基础：监督/无监督学习、特征工程、XGBoost |  |
-| **03** [深度学习](./03_深度学习/) | 神经网络：MLP、反向传播、优化、世界模型 JEPA |  |
-| **04** [计算机视觉](./04_计算机视觉/) | 视觉 AI：CNN、YOLO、Diffusion、视频生成 2026 |  |
-| **05** [NLP 与大模型](./05_大模型/) | LLM 技术：Transformer、GPT-5.2/Claude 4.5、DeepSeek-R1、LoRA/RLHF/DPO |  |
-| **06** [强化学习与智能体](./06_强化学习/) | RL 与 Agent：DQN/PPO、GRPO、VLA 具身智能 |  |
+| **02** [经典机器学习](./02_机器学习/) | ML 基础：监督/无监督学习、特征工程、XGBoost | |
+| **03** [深度学习](./03_深度学习/) | 神经网络：MLP、反向传播、优化、世界模型 JEPA | |
+| **04** [计算机视觉](./04_计算机视觉/) | 视觉 AI：CNN、YOLO、Diffusion、视频生成 2026 | |
+| **05** [NLP 与大模型](./05_大模型/) | LLM 技术：Transformer、GPT-5.2/Claude 4.5、DeepSeek-R1、LoRA/RLHF/DPO | |
+| **06** [强化学习与智能体](./06_强化学习/) | RL 与 Agent：DQN/PPO、GRPO、VLA 具身智能 | |
 | **L2 工程层** | | |
-| **07** [模型训练](./07_模型训练/) | 训练工程：损失函数、优化器、分布式训练、GRPO 对齐 |  |
-| **08** [模型评估](./08_模型评估/) | 评估方法：指标体系、基准测试、LLM-as-Judge、A/B 测试 |  |
-| **09** [AI 测试](./09_测试/) | 测试工程：Ragas/DeepEval/Promptfoo、契约测试、Eval-Driven Dev |  |
-| **10** [部署与推理](./10_部署推理/) | 推理优化：vLLM/SGLang、量化、KV Cache、推理模型 |  |
+| **07** [模型训练](./07_模型训练/) | 训练工程：损失函数、优化器、分布式训练、GRPO 对齐 | |
+| **08** [模型评估](./08_模型评估/) | 评估方法：指标体系、基准测试、LLM-as-Judge、A/B 测试 | |
+| **09** [AI 测试](./09_测试/) | 测试工程：Ragas/DeepEval/Promptfoo、契约测试、Eval-Driven Dev | |
+| **10** [部署与推理](./10_部署推理/) | 推理优化：vLLM/SGLang、量化、KV Cache、推理模型 | |
 | **L3 平台层** | | |
-| **11** [MLOps 流水线](./11_模型运维/) | **LLMOps 完整主线** + 传统 MLOps + 工具深度解析（115 篇） |  |
-| **12** [架构与基础设施](./12_架构基建/) | 架构设计 + 基础设施：K8s、多租户、高可用、GPU 集群、容量规划 |  |
-| **13** [AI 运维](./13_运维/) | AIOps：事故响应、SRE 实践、混沌工程、K8s 排障 |  |
+| **11** [MLOps 流水线](./11_模型运维/) | **LLMOps 完整主线** + 传统 MLOps + 工具深度解析（115 篇） | |
+| **12** [架构与基础设施](./12_架构基建/) | 架构设计 + 基础设施：K8s、多租户、高可用、GPU 集群、容量规划 | |
+| **13** [AI 运维](./13_运维/) | AIOps：事故响应、SRE 实践、混沌工程、K8s 排障 | |
 | **L4 应用层** | | |
-| **14** [RAG 系统](./14_RAG系统/) | 检索增强：向量数据库、混合检索、Agentic RAG、多模态检索 |  |
-| **15** [Agent 生产部署](./15_智能体/) | Agent 工程：框架、MCP/A2A 协议、Harness、技能、工作流、评估（240 篇） |  |
-|  [Agent Skills](./15_智能体/05_Agent技能/) | 技能体系：技能注册、组合、生态 |  |
-|  [Agent Workflow](./15_智能体/03_Agent工作流/) | 工作流：LangGraph、错误处理、编排 |  |
-|  [Agent 评估](./15_智能体/07_Agent评估/) | 评估体系：Benchmark、红队测试、Leaderboard |  |
-| **16** [AI 编程](./16_编程/) | 编程工具与方法论：Cursor、Claude Code、Vibe Coding |  |
-| **22** [FDE 全栈工程](./22-FDE/) | 端到端全栈项目：系统设计、架构实践、生产部署 |  |
+| **14** [RAG 系统](./14_RAG系统/) | 检索增强：向量数据库、混合检索、Agentic RAG、多模态检索 | |
+| **15** [Agent 生产部署](./15_智能体/) | Agent 工程：框架、MCP/A2A 协议、Harness、技能、工作流、评估（240 篇） | |
+| [Agent Skills](./15_智能体/05_Agent技能/) | 技能体系：技能注册、组合、生态 | |
+| [Agent Workflow](./15_智能体/03_Agent工作流/) | 工作流：LangGraph、错误处理、编排 | |
+| [Agent 评估](./15_智能体/07_Agent评估/) | 评估体系：Benchmark、红队测试、Leaderboard | |
+| **16** [AI 编程](./16_编程/) | 编程工具与方法论：Cursor、Claude Code、Vibe Coding | |
+| **22** [FDE 全栈工程](./22-FDE/) | 端到端全栈项目：系统设计、架构实践、生产部署 | |
 | **L5 治理层** | | |
-| **17** [伦理与安全](./17_伦理安全/) | AI 安全：价值对齐、红队测试、RSI、隐私保护、OWASP LLM |  |
+| **17** [伦理与安全](./17_伦理安全/) | AI 安全：价值对齐、红队测试、RSI、隐私保护、OWASP LLM | |
 | **L6 资源层** | | |
-| **18** [行业应用](./18_行业应用/) | 行业融合：医疗/金融/制造/零售/教育/自动驾驶 |  |
-| **19** [业界观点](./19_业界观点/) | 领袖洞见：28 位 AI 领袖演讲与观点，含 2026 趋势合集 |  |
-| **20** [必读论文](./20_论文精读/) | 经典文献：Transformer、BERT、GPT、RLHF、DPO 等里程碑 |  |
-| **21** [面试与岗位](./21_面试岗位/) | 职业发展：25+ AI 岗位面试指南、题库、系统设计 |  |
+| **18** [行业应用](./18_行业应用/) | 行业融合：医疗/金融/制造/零售/教育/自动驾驶 | |
+| **19** [业界观点](./19_业界观点/) | 领袖洞见：28 位 AI 领袖演讲与观点，含 2026 趋势合集 | |
+| **20** [必读论文](./20_论文精读/) | 经典文献：Transformer、BERT、GPT、RLHF、DPO 等里程碑 | |
+| **21** [面试与岗位](./21_面试岗位/) | 职业发展：25+ AI 岗位面试指南、题库、系统设计 | |
 | **拓展** | | |
-| **90** [学习资源](./90_学习/) | 课程映射：微软/Datawhale/HuggingFace 等课程、职业路径 |  |
-| **94** [可视化](./94_可视化/) | 知识图谱可视化：仪表盘、训练监控、评估可视化 |  |
+| **90** [学习资源](./90_学习/) | 课程映射：微软/Datawhale/HuggingFace 等课程、职业路径 | |
+| **94** [可视化](./94_可视化/) | 知识图谱可视化：仪表盘、训练监控、评估可视化 | |
 
 </details>
 
@@ -566,12 +572,12 @@ npm run dev
 ```
 
 特性：
--   Vite 极速构建
--   Tailwind CSS + shadcn/ui
--   全文搜索 (Fuse.js)
--   暗黑/亮色模式
--   响应式设计
--   Agent 评估仪表盘集成
+- Vite 极速构建
+- Tailwind CSS + shadcn/ui
+- 全文搜索 (Fuse.js)
+- 暗黑/亮色模式
+- 响应式设计
+- Agent 评估仪表盘集成
 
 [查看前端详情 →](./前端应用/README.md)
 
@@ -630,9 +636,9 @@ git push origin feature/your-feature
 <p><b>AI Guru</b> — 让 AI 学习更系统、更高效、更 accessible</p>
 
 <p>
-  ⭐ <b>Star 本仓库</b> 获取更新通知 •
-    <b>Watch</b> 关注新内容 •
-    <b>Fork</b> 创建你的版本
+ ⭐ <b>Star 本仓库</b> 获取更新通知 •
+ <b>Watch</b> 关注新内容 •
+ <b>Fork</b> 创建你的版本
 </p>
 
 </div>

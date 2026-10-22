@@ -19,7 +19,7 @@ name_zh: "层次化强化学习深度解析"
 
 > 中文简称：层次化强化学习深度解析
 
-> **一句话理解**: 层次化RL是"分层管理"——高层策略制定子目标（做什么），低层策略执行具体动作（怎么做），通过时间抽象将长horizon任务分解为可管理的子任务，是解决复杂长序列决策的关键架构。
+> **一句话理解**: 层次化 RL 是"分层管理"——高层策略制定子目标（做什么），低层策略执行具体动作（怎么做），通过时间抽象将长 horizon 任务分解为可管理的子任务，是解决复杂长序列决策的关键架构。
 
 ---
 
@@ -161,11 +161,11 @@ name_zh: "层次化强化学习深度解析"
 
 #### 形式化定义
 
-一个option $o$ 是一个三元组 $o = \langle \mathcal{I}_o, \pi_o, \beta_o \rangle$：
+一个 option $o$ 是一个三元组 $o = \langle \mathcal{I}_o, \pi_o, \beta_o \rangle$：
 
-- **启动条件** $\mathcal{I}_o \subseteq \mathcal{S}$: 在哪些状态可以启动该option
-- **内部策略** $\pi_o: \mathcal{S} \times \mathcal{A} \rightarrow [0,1]$: option执行期间的动作策略
-- **终止条件** $\beta_o: \mathcal{S} \rightarrow [0,1]$: 在每个状态终止option的概率
+- **启动条件** $\mathcal{I}_o \subseteq \mathcal{S}$: 在哪些状态可以启动该 option
+- **内部策略** $\pi_o: \mathcal{S} \times \mathcal{A} \rightarrow [0,1]$: option 执行期间的动作策略
+- **终止条件** $\beta_o: \mathcal{S} \rightarrow [0,1]$: 在每个状态终止 option 的概率
 
 #### 执行语义
 
@@ -186,28 +186,28 @@ Option执行过程:
   → 有效减少了高层的决策频率
 ```
 
-#### Semi-MDP框架
+#### Semi-MDP 框架
 
-使用options后，问题变成Semi-MDP (SMDP)：
+使用 options 后，问题变成 Semi-MDP (SMDP)：
 
 $$\text{SMDP} = \langle \mathcal{S}, \mathcal{O}, P_o, R_o, \Gamma_o \rangle$$
 
 其中：
-- $P_o(s'|s, o)$: 执行option $o$ 后的状态转移
-- $R_o(s, o)$: 执行option $o$ 的累积奖励
-- $\Gamma_o(s, o)$: 折扣因子（取决于option持续时间）
+- $P_o(s'|s, o)$: 执行 option $o$ 后的状态转移
+- $R_o(s, o)$: 执行 option $o$ 的累积奖励
+- $\Gamma_o(s, o)$: 折扣因子（取决于 option 持续时间）
 
 $$R_o(s, o) = \mathbb{E}\left[\sum_{k=0}^{\tau-1} \gamma^k r_{t+k} \mid s_t = s, o_t = o\right]$$
 
-其中 $\tau$ 是option的持续时间（随机变量）。
+其中 $\tau$ 是 option 的持续时间（随机变量）。
 
-#### Option-Critic架构
+#### Option-Critic 架构
 
-Option-Critic (Bacon et al., 2017) 端到端学习options：
+Option-Critic (Bacon et al., 2017) 端到端学习 options：
 
 $$\mathcal{L} = \mathcal{L}_{option} + \mathcal{L}_{termination}$$
 
-Option选择（高层）：
+Option 选择（高层）：
 
 $$\pi_\Omega(o|s) = \text{softmax}(Q_\Omega(s, o))$$
 
@@ -252,15 +252,15 @@ Manager损失:
 
 #### 数学公式
 
-Manager目标：
+Manager 目标：
 
 $$\max_{\theta_M} \mathbb{E}\left[\sum_t r_t + \alpha \mathcal{H}(\pi_M)\right]$$
 
-Worker内在奖励：
+Worker 内在奖励：
 
 $$r_t^{intrinsic} = \frac{(s_{t+1} - s_t) \cdot g_t}{||s_{t+1} - s_t|| \cdot ||g_t||}$$
 
-Worker总奖励：
+Worker 总奖励：
 
 $$r_t^{total} = r_t^{env} + \beta \cdot r_t^{intrinsic}$$
 
@@ -268,7 +268,7 @@ $$r_t^{total} = r_t^{env} + \beta \cdot r_t^{intrinsic}$$
 
 #### 核心创新
 
-HIRO解决了层次化RL中的off-policy修正问题：
+HIRO 解决了层次化 RL 中的 off-policy 修正问题：
 
 ```
 问题: 高层策略是off-policy的
@@ -573,11 +573,11 @@ DIAYN (Diversity is All You Need):
 | Ant-Push | 蚂蚁推物体 | 500+ | 大（需要分阶段） |
 | Ant-Fall | 蚂蚁下台阶 | 500+ | 大（需要分阶段） |
 | Kitchen | 厨房多任务 | 280 | 大（多子任务序列） |
-| Montezuma's Revenge | Atari探索 | 9999+ | 极大（极度稀疏） |
+| Montezuma's Revenge | Atari 探索 | 9999+ | 极大（极度稀疏） |
 | MiniGrid | 网格世界 | 变化 | 中等 |
 | Crafter | 生存游戏 | 无限 | 大（科技树） |
 
-### 4.2 Ant-Maze性能对比
+### 4.2 Ant-Maze 性能对比
 
 | 方法 | Ant-Maze-U | Ant-Maze-M | Ant-Maze-L |
 |------|-----------|-----------|-----------|
@@ -590,12 +590,12 @@ DIAYN (Diversity is All You Need):
 | LEAGUE (2024) | **90%** | **75%** | **60%** |
 
 **关键发现**：
-- 扁平RL在长horizon迷宫中完全失败
-- 层次化方法将成功率从0%提升到60-90%
+- 扁平 RL 在长 horizon 迷宫中完全失败
+- 层次化方法将成功率从 0% 提升到 60-90%
 - Director（世界模型+层次化）效果最好
 - 子目标空间设计是关键
 
-### 4.3 Kitchen多任务环境
+### 4.3 Kitchen 多任务环境
 
 ```
 Kitchen环境:
@@ -939,15 +939,15 @@ train_low_level()  # 每步
 
 ### 6.1 综合对比表
 
-| 维度 | 扁平RL | Options | FuN | HIRO | Director |
+| 维度 | 扁平 RL | Options | FuN | HIRO | Director |
 |------|--------|---------|-----|------|----------|
-| **时间抽象** | 无 | 可变 | 固定c | 固定c | 固定c |
+| **时间抽象** | 无 | 可变 | 固定 c | 固定 c | 固定 c |
 | **子目标类型** | 无 | 终止条件 | 方向向量 | 状态差 | 离散任务 |
 | **高层学习** | 不适用 | 策略梯度 | 策略梯度 | Off-policy | 世界模型 |
 | **低层学习** | 直接 | 策略梯度 | 内在奖励 | TD3 | 世界模型 |
 | **Off-policy** | 可以 | 困难 | 困难 | 是 | 是(想象) |
 | **样本效率** | 低 | 中 | 中 | 高 | 极高 |
-| **长horizon** | 极差 | 好 | 好 | 好 | 极好 |
+| **长 horizon** | 极差 | 好 | 好 | 好 | 极好 |
 | **实现复杂度** | 低 | 中 | 高 | 高 | 极高 |
 | **可扩展性** | 好 | 中 | 中 | 好 | 中 |
 
@@ -1143,31 +1143,31 @@ train_low_level()  # 每步
 
 ### 直接相关
 
-- [[06_强化学习/02_深度强化学习/12_TD3_深入分析]] — HIRO低层使用TD3训练
-- [[06_强化学习/02_深度强化学习/11_SAC_深入分析]] — 技能学习(DIAYN)基于SAC
-- [[06_强化学习/02_深度强化学习/10_PPO_深入分析]] — Option-Critic中策略更新
-- [[06_强化学习/02_深度强化学习/08_模型_Based_RL_深入分析]] — Director基于世界模型
+- [[06_强化学习/02_深度强化学习/12_TD3_深入分析]] — HIRO 低层使用 TD3 训练
+- [[06_强化学习/02_深度强化学习/11_SAC_深入分析]] — 技能学习(DIAYN)基于 SAC
+- [[06_强化学习/02_深度强化学习/10_PPO_深入分析]] — Option-Critic 中策略更新
+- [[06_强化学习/02_深度强化学习/08_模型_Based_RL_深入分析]] — Director 基于世界模型
 
 ### 扩展方向
 
 - [[Exploration_Strategies_Deep_Dive]] — 层次化探索策略
 - [[Inverse_RL_Imitation_Learning]] — 从演示学习技能/子目标
-- [[06_强化学习/02_深度强化学习/09_离线_RL_深入分析]] — 层次化离线RL
+- [[06_强化学习/02_深度强化学习/09_离线_RL_深入分析]] — 层次化离线 RL
 - [[06_强化学习/06_多智能体/02_多智能体强化学习]] — 多智能体层次化
 
-### RLHF与Agent
+### RLHF 与 Agent
 
 - [[概念/Training/reward-modeling]] — 多层级奖励设计
-- [[06_强化学习/03_RLHF与对齐/04_RLHF_DPO_GRPO_深入分析]] — RLHF中的层次化奖励
+- [[06_强化学习/03_RLHF与对齐/04_RLHF_DPO_GRPO_深入分析]] — RLHF 中的层次化奖励
 - [[06_强化学习/02_深度强化学习/05_Hierarchical_RL_深入分析]] — 本文
 
 ### 基础与应用
 
 - [[06_强化学习/01_强化学习基础/03_RL基础]] — 强化学习基础，SMDP
-- [[90_学习/03_课程资源/hugging_face/03_deep_rl_course]] — 深度RL总览
-- [[06_强化学习/05_机器人与具身智能/07_Sim_to_Real_Transfer_指南]] — 层次化策略的Sim-to-Real
+- [[90_学习/03_课程资源/hugging_face/03_deep_rl_course]] — 深度 RL 总览
+- [[06_强化学习/05_机器人与具身智能/07_Sim_to_Real_Transfer_指南]] — 层次化策略的 Sim-to-Real
 - [[06_强化学习/05_机器人与具身智能/01_Embodied_AI_2026]] — 具身智能中的层次化控制
-- [[06_强化学习/05_机器人与具身智能/09_VLA_模型_2026]] — VLA模型，LLM+RL的层次化架构
+- [[06_强化学习/05_机器人与具身智能/09_VLA_模型_2026]] — VLA 模型，LLM+RL 的层次化架构
 
 ---
 

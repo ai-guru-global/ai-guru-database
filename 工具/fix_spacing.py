@@ -61,6 +61,15 @@ def _fix_line_spacing(line: str) -> str:
             # Inline code - don't touch
             fixed_parts.append(part)
         else:
+            # Protect wikilinks entirely: 给目标加空格会把 [[dir/03_RL基础]] 这类
+            # 链接目标改坏，目标内不做任何间距处理
+            wl_pattern = re.compile(r'\[\[[^\]]*\]\]')
+            wl_placeholders = {}
+            for j, match in enumerate(wl_pattern.finditer(part)):
+                placeholder = f'__WIKI{j}__'
+                wl_placeholders[placeholder] = match.group()
+            temp = wl_pattern.sub(lambda m: f'__WIKI{list(wl_placeholders.values()).index(m.group())}__', part)
+
             # Protect URLs
             url_placeholders = {}
             url_pattern = re.compile(r'https?://\S+')
@@ -68,7 +77,7 @@ def _fix_line_spacing(line: str) -> str:
                 placeholder = f'__URL{j}__'
                 url_placeholders[placeholder] = match.group()
 
-            temp = url_pattern.sub(lambda m: f'__URL{list(url_placeholders.values()).index(m.group())}__', part)
+            temp = url_pattern.sub(lambda m: f'__URL{list(url_placeholders.values()).index(m.group())}__', temp)
 
             # Protect markdown link syntax [...](...)
             link_pattern = re.compile(r'\[([^\]]*)\]\([^)]*\)')
@@ -100,6 +109,9 @@ def _fix_line_spacing(line: str) -> str:
                 temp = temp.replace(placeholder, original)
             # Restore URLs
             for placeholder, original in url_placeholders.items():
+                temp = temp.replace(placeholder, original)
+            # Restore wikilinks
+            for placeholder, original in wl_placeholders.items():
                 temp = temp.replace(placeholder, original)
 
             fixed_parts.append(temp)

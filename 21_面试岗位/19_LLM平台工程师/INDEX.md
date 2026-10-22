@@ -2,7 +2,7 @@
 title: LLM Platform Engineer
 type: index
 created: 2026-07-02
-updated: 2026-07-11
+updated: 2026-10-22
 sources: []
 name_zh: "大模型平台工程师"
 name_en: "LLM Platform Engineer"
@@ -18,6 +18,8 @@ LLM 平台工程师 — 构建大模型推理服务平台，处理高并发、�
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
+| [[21_面试岗位/19_LLM平台工程师/07_vLLM_SGLang_运维_面试问答|07_vLLM_SGLang_运维_面试问答]] | vLLM 与 SGLang 双引擎运维面试全集：53 题深度问答（架构/调优/排障/部署/选型）+ 40 题快问快答 + 报错速查 + 监控基线 + 命令速查 + 必背公式 + 2 个故障叙事模板 | 推理运维方向备考者 |
+| [[21_面试岗位/19_LLM平台工程师/06_PD分离_面试复习|06_PD分离_面试复习]] | PD 分离专题复习稿：病因/架构/KV 迁移数字/单双池取舍/vLLM·SGLang 落地/运维排查/15 题快问快答 | 推理运维方向备考者 |
 | [[21_面试岗位/19_LLM平台工程师/05_question_bank|question_bank]] | 面试题库总览，按知识点分类 | 所有备考者 |
 | [[21_面试岗位/LLM_Platform_Engineer/company_level_question_bank|company_level_question_bank]] | 按公司/难度分级的真题集 | 有明确目标公司的候选人 |
 | [[21_面试岗位/19_LLM平台工程师/03_interview_answers|interview_answers]] | 高频面试题参考答案与解析 | 需要参考思路的备考者 |

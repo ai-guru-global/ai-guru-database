@@ -4,7 +4,7 @@ category: 10-deployment-inference-engines
 tags: [inference, engine, vllm, sglang, tensorrt, tgi, ollama, llama-cpp, serving]
 summary: "> LLM 推理引擎与服务平台全景：开源引擎、云平台、选型/迁移/基准测试方法论。"
 created: 2026-07-02
-updated: 2026-10-14
+updated: 2026-10-22
 tier: core
 sources: []
 
@@ -38,6 +38,12 @@ name_zh: "推理引擎"
 
 | 序号 | 文档 | 主题 | 适用读者 |
 |------|------|------|----------|
+| 32 | [[10_部署推理/02_推理引擎/32_vLLM_SGLang_原理_零基础|vLLM 与 SGLang 原理：从零讲起]] | 零基础分层讲解：KV Cache → PagedAttention → batching → 前缀缓存 → RadixAttention | 初学者、面试准备 |
+| 33 | [[10_部署推理/02_推理引擎/33_注意力机制演进_MLA_DSA_混合注意力|注意力机制演进：MLA、DSA 与混合注意力]] | 三代各压一个量：MLA 降存的单价 → DSA 降算的范围 → 混合注意力降存的总量，含引擎支持视角 | 面试准备、运维工程师 |
+| 34 | [[10_部署推理/02_推理引擎/34_前缀缓存与_RadixAttention|前缀缓存与 RadixAttention：从比喻到生产]] | 「一样的开头只算一次」：原理推导、助教笔记本比喻、树结构机制、SGLang/vLLM 对比、失效场景与 10 道快问快答 | 面试准备、推理运维 |
+| 35 | [[10_部署推理/02_推理引擎/35_MLA_DSA_混合注意力_深入|MLA、DSA 与混合注意力：原理深入与引擎落地]] | 33 号页深入版：latent 矩阵吸收、lightning indexer/IndexCache、混合谱系、容量估算与运维坑 | 面试深挖、推理运维 |
+| 36 | [[10_部署推理/02_推理引擎/36_Prefill_KV_Cache_填充机制_深度解析|Prefill 与 KV Cache：填充机制深度解析]] | Prefill 到底在填什么：KV Cache 结构与显存公式、Roofline 归因 compute/memory-bound、chunked prefill / prefix caching / PD 分离三大工程优化、误区清单与 12 道快问快答 | 面试准备、推理运维 |
+| 38 | [[10_部署推理/02_推理引擎/38_推理原理系列_导览与面试口径|推理原理系列：导览与面试口径]] | 32～37 系列地图（阅读顺序）+ 七个技术点一句话口径卡 + 面试速背八句；排障统一指向 37 号性能专题 | 复习串讲、面试准备 |
 | 29 | [[10_部署推理/02_推理引擎/29_vLLM_深入分析|vLLM]] | UC Berkeley 生产级引擎，PagedAttention 显存优化 | 通用生产 |
 | 30 | [[10_部署推理/02_推理引擎/30_vLLM_Paged注意力_架构|vLLM + PagedAttention 架构图]] | 一张图看懂 vLLM 如何服务更多请求 | 架构师、初学者 |
 | 31 | [[10_部署推理/02_推理引擎/31_vLLM_CPU_kind_无GPU实验指南|vLLM CPU + kind 无 GPU 实验]] | 无 GPU 在 kind 上跑通 vLLM：调度行为与指标观测零成本实验室 | 培训师、自学者、K8s 工程师 |
@@ -77,6 +83,8 @@ name_zh: "推理引擎"
 ### 🩺 故障树分析（FTA）
 
 | 领域 | 入口 | 覆盖故障 |
+|------|------|---------|
+| 性能总纲 | [[10_部署推理/02_推理引擎/37_vLLM_SGLang_性能问题专题|vLLM/SGLang 性能问题专题]] | 七大故障域地图 + 指标体检单 + 排查决策树 + vLLM↔SGLang 参数速查表 + 快问快答——性能类故障的总入口 |
 |------|------|---------|
 | 推理（18 篇） | [[10_部署推理/02_推理引擎/FTA/README|FTA 索引]] | 启动/性能/显存/流式/热加载/量化等 |
 | 微调（4 篇） | [[10_部署推理/02_推理引擎/FTA/README|FTA 索引]] | LoRA 部署/合并/QLoRA/训练中断 |

@@ -28,6 +28,7 @@ This page indexes the contents of `11_模型运维/08_可观测性`.
 - [[11_模型运维/08_可观测性/14_Phoenix_深入分析|Phoenix Deep Dive]]
 - [[11_模型运维/08_可观测性/15_Prometheus_Grafana_深入分析|Prometheus Grafana Deep Dive]]
 - [[11_模型运维/08_可观测性/16_PromptLayer_深入分析|Promptlayer Deep Dive]]
+- [[11_模型运维/08_可观测性/17_Langfuse_LangSmith_对比|Langfuse vs LangSmith 对比]]
 
 ## MLOps核心流程对比
 

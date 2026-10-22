@@ -4,7 +4,7 @@ category: 15-agent-production-agent-frameworks
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 多 Agent 开发框架是构建协作式 Agent 系统的核心基础设施，从对话式协作到状态机编排各有特色。"
 created: 2026-05-31
-updated: 2026-10-14
+updated: 2026-10-22
 tier: supporting
 sources: []
 
@@ -29,6 +29,7 @@ name_zh: "Agent 开发框架"
 | [AutoGen / CrewAI / LangGraph](./04_AutoGen_CrewAI_LangGraph_Dive.md) | 三大框架对比：对话式、角色编排、状态机 | 开发者、架构师 |
 | [AgentScope Deep Dive](./02_AgentScope_深入分析.md) | 阿里巴巴多智能体平台：Actor-Staged 架构、大规模并发 | 开发者、架构师 |
 | [AgentScope 与 AgentRun 生产部署架构](./15_AgentScope_AgentRun_生产部署架构.md) | 部署路径、agent 实例创建、与阿里云 AgentRun 对比、生产架构图 | 架构师、SRE |
+| [AgentScope 部署形态全景](./18_AgentScope_部署形态全景.md) | 四形态光谱：SDK 进程内 / Agent Service / runtime 九种部署方式 / 云托管对比与决策树 | 架构师、SRE |
 | [AutoGPT Deep Dive](./06_AutoGPT_深入分析.md) | 自主任务执行 Agent：目标分解、自主规划、反思改进 | 开发者、探索者 |
 | [SmolAgents Deep Dive](./12_SmolAgent_深入分析.md) | HuggingFace 轻量级框架：代码执行、多工具集成 | HF 生态用户 |
 | [agno Deep Dive](./03_Agno_深入分析.md) | 现代化 Agent 框架：知识库、记忆系统、多 Agent 协作 | 快速构建生产级 Agent |

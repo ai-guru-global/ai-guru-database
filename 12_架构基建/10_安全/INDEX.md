@@ -2,7 +2,7 @@
 title: Security
 type: index
 created: 2026-07-02
-updated: 2026-07-11
+updated: 2026-10-20
 sources: []
 tags: [auto-index]
 name_zh: "架构安全"
@@ -20,9 +20,10 @@ name_en: "Security"
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[12_架构基建/10_安全/01_AI_安全_基础|AI Security Fundamentals]] | AI security fundamentals: threat model, attack surface and defense strategy | security engineers / DevSecOps |
-| [[12_架构基建/10_安全/Container_and_Supply_Chain_Security_for_AI|Container and Supply Chain Security for AI]] | Container and supply chain security: image scanning, SBOM and signature verification | DevSecOps engineers / platform security |
+| [[12_架构基建/10_安全/02_容器_and_AI供应链安全_for_AI|Container and Supply Chain Security for AI]] | Container and supply chain security: image scanning, SBOM and signature verification | DevSecOps engineers / platform security |
 | [[12_架构基建/10_安全/03_AI_供应链_CVE_for_AI|AI 供应链 CVE 速查]] | AI 供应链 CVE 速查：Pickle/HuggingFace/PyTorch/TensorFlow/NVIDIA 容器逃逸/模型投毒 | AI 平台 / 安全工程 |
 | [[12_架构基建/10_安全/04_向量数据库_CVE_for_AI|向量数据库 CVE 速查]] | 向量数据库 CVE 速查：Milvus/Qdrant/Weaviate/Chroma/pgvector | RAG 系统 / 安全工程 |
+| [[12_架构基建/10_安全/05_gVisor_常见问题与避坑指南|gVisor 避坑指南]] | gVisor（runsc）高频问题全景：性能开销、兼容性、网络、GPU 推理、内存口径与排障 | 平台运维 / AI Infra / 安全工程 |
 
 ## Related
 

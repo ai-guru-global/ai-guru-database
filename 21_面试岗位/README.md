@@ -4,7 +4,7 @@ category: 21-interviews
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "> **一句话理解**: 本章节为 AI/ML 相关岗位面试提供系统化的准备资料，覆盖 20+ 个核心岗位的核心职责、能力要求、考点梳理与面试题库。"
 created: 2026-05-31
-updated: 2026-10-13
+updated: 2026-10-20
 tier: supporting
 sources: []
 
@@ -40,6 +40,7 @@ name_zh: "AI 面试准备"
 | [[21_面试岗位/Robotics_Engineer/Robotics_Engineer|Robotics Engineer]] | 感知、规划、控制、仿真 | 面试准备 + 题库 |
 | [[21_面试岗位/Agent_Engineer_2026|Agent Engineer 2026]] | ReAct/Plan-and-Execute/Multi-Agent/Memory/Tool Use、系统设计、代码题 | 面试准备 + 题库 |
 | [[21_面试岗位/27_技术解决方案工程师/README|技术解决方案工程师（阿里云弹性计算 SSE）]] | 云沙箱/容器/ECS、Agent Infra 方案设计、POC 与商业化落地 | JD 沉淀（题库规划中） |
+| [[21_面试岗位/28_Agent_Runtime工程师/README|Agent Runtime 工程师]] | Runtime 机制/沙箱隔离/编排调度/MCP·A2A/可观测评测/企业交付 | 专题系列（11 篇 + JD 解读） |
 
 ### 研究类
 

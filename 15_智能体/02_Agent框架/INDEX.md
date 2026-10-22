@@ -2,7 +2,7 @@
 title: Agent Frameworks
 type: index
 created: 2026-07-02
-updated: 2026-10-14
+updated: 2026-10-22
 sources: []
 name_zh: "智能体框架"
 name_en: "Agent Frameworks"
@@ -31,6 +31,9 @@ name_en: "Agent Frameworks"
 | [[15_智能体/02_Agent 框架/SmolAgents_Practical_Guide|SmolAgents Practical Guide]] | SmolAgents Practical Guide | 开发者/学习者 |
 | [[15_智能体/02_Agent 框架/14_Transformers_Agent_深入分析|Transformers Agents Deep Dive]] | Transformers Agents Deep Dive | 开发者/学习者 |
 | [[15_智能体/02_Agent 框架/01_agent_framework_production|agent-framework-production]] | agent-framework-production | 开发者/学习者 |
+| [[15_智能体/02_Agent框架/16_开源多智能体平台_盘点_2026|开源多智能体平台盘点 2026]] | AgentScope 之外的开源多智能体框架盘点与选型 | 开发者/架构师 |
+| [[15_智能体/02_Agent框架/17_AgentCore_AgentRun_AgentScope_辨析|agent-core / AgentRun / AgentScope 辨析]] | 三概念辨析 + 阿里开源 Agent 产品矩阵 | 架构师/开发者 |
+| [[15_智能体/02_Agent框架/18_AgentScope_部署形态全景|AgentScope 部署形态全景]] | 四形态光谱：SDK 进程内 / Agent Service / runtime 九种部署方式 / 云托管对比与决策树 | 架构师/开发者 |
 
 ## 入门
 

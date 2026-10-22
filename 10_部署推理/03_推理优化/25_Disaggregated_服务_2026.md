@@ -4,7 +4,7 @@ category: 10-deployment-inference-inference-performance
 tags: [inference, PD分离, Disaggregated, Chunked-Prefill, distserve, mooncake, splitwise, kv-cache-migration, 2026]
 summary: "> **一句话概括**：2026 年 LLM 推理服务从前缀共享 / 连续批处理演进到 Prefill-Decode 分离、Chunked Prefill、Decode 池化的 disaggregated 架构，用 KV Cache 跨节点迁移换两阶段极致解耦。"
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-10-22
 tier: core
 aliases:
   - "Disaggregated Serving 2026"
@@ -543,6 +543,7 @@ MoE 模型 prefill 时专家负载波动大，分离后 prefill 池可专门做�
 ## 相关知识
 
 - [[10_部署推理/03_推理优化/13_Prefill_Decode_Disaggregation|PD分离基础]] — 本页的基础概念版
+- [[10_部署推理/03_推理优化/28_办公Agent_PD分离_链路推演|办公 Agent × PD 分离链路推演]] — 以办公 Agent 负载为例，把本页架构整条链路推演一遍（场景版）
 - [[10_部署推理/03_推理优化/18_Parallel_策略_深入分析|并行策略]] — 双池如何与 TP/PP 组合
 - [[10_部署推理/03_推理优化/14_Request_调度_for_LLMs|请求调度]] — 连续批处理、抢占、优先级
 - [[10_部署推理/03_推理优化/24_长上下文_推理_2026|长上下文推理]] — 长上下文为何放大 PD 分离收益

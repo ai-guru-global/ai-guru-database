@@ -4,7 +4,7 @@ category: 10-deployment-inference-optimization
 tags: [inference, optimization, kv-cache, paged-attention, speculative-decoding, scheduling, performance]
 summary: "> LLM 推理性能工程全景：从 KV Cache、调度策略到算子编译与专项优化的完整方法论。"
 created: 2026-07-24
-updated: 2026-08-05
+updated: 2026-10-22
 tier: core
 sources: []
 
@@ -27,7 +27,7 @@ name_zh: "推理优化"
 
 ## 内容索引
 
-> 文件按"基础→缓存→调度→算子→并行→专项→方法论"分组，共 27 篇。
+> 文件按"基础→缓存→调度→算子→并行→专项→方法论"分组，共 28 篇。
 
 ### 🎯 基础与总览
 
@@ -83,6 +83,7 @@ name_zh: "推理优化"
 | 23 | [[10_部署推理/03_推理优化/23_多模态_推理优化|多模态推理优化]] | Vision Encoder、Image Token 压缩、VLM Prefill | VLM 部署 |
 | 24 | [[10_部署推理/03_推理优化/24_长上下文_推理_2026|长上下文推理 2026]] | 128K+ 上下文、KV Cache 压缩、PD 分离 | 长上下文服务 |
 | 25 | [[10_部署推理/03_推理优化/25_Disaggregated_服务_2026|2026 推理服务前沿架构]] | 前缀共享 / 连续批处理 → PD 分离演进 | 架构师 |
+| 28 | [[10_部署推理/03_推理优化/28_办公Agent_PD分离_链路推演|办公 Agent × PD 分离链路推演]] | 办公 Agent 负载的整条链路映射：数字账、SLO 分档、组织级前缀共享、本机对照 | 架构师、面试备战 |
 
 ### 📊 方法论与评测
 

@@ -4,7 +4,7 @@ category: -agents
 tags: ["agentic-infra", "agent-infrastructure", "llm-gateway", "mcp", "sandbox", "agent-memory", "durable-execution", "agent-observability", "agent-security"]
 summary: "2026 年 10 月的智能体基础设施全景：模型网关（LiteLLM/Portkey/Kong/Higress）、工具协议（MCP/A2A）、沙箱执行（E2B/Daytona/Modal）、记忆上下文（Mem0/Letta/Zep）、持久编排（Temporal/Inngest/Restate）、可观测评估（Langfuse/LangSmith/Braintrust）、安全治理（OWASP Agentic Top 10）七大层的格局、trade-off 与选型。"
 created: 2026-10-14
-updated: 2026-10-14
+updated: 2026-10-22
 tier: core
 aliases: ["智能体基础设施全景", "Agentic Infrastructure 2026"]
 sources:
@@ -402,6 +402,8 @@ flowchart LR
 | 要看 agent 每一步并自动评质量 | 自托管选 Langfuse；LangChain 系选 LangSmith；eval 重选 Braintrust |
 | 面向互联网的浏览/文档型 agent | L3 沙箱 + L7 注入防护为强制项，工具白名单收窄 |
 
+> 上表按「场景最优」口径给出推荐路径；每层「采用面最大」的默认项与口径辨析，见 [[15_智能体/20_Agentic_Infra/06_Mainstream_Selection_2026|主流选型 2026]]。
+
 ---
 
 ## 11. 与本库章节的映射
@@ -438,4 +440,4 @@ flowchart LR
 
 ---
 
-*Last updated: 2026-10-14*
+*Last updated: 2026-10-22*

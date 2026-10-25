@@ -6,7 +6,8 @@ import { visualizer } from "rollup-plugin-visualizer";
 
 // https://vitejs.dev/config/
 function serveDocsContent() {
-  const projectRoot = path.resolve(__dirname, "..");
+  // 仓库根 = code/前端应用 → 上溯两级；内容根 = 仓库根/wiki
+  const contentRoot = path.resolve(__dirname, "..", "..", "wiki");
   return {
     name: "serve-docs-content",
     configureServer(server: { middlewares: { use: Function } }) {
@@ -15,9 +16,9 @@ function serveDocsContent() {
           const relativePath = decodeURIComponent(
             req.url.replace("/docs-content/", "")
           );
-          const fullPath = path.resolve(projectRoot, relativePath);
-          // Security: ensure the resolved path is within project root
-          if (!fullPath.startsWith(projectRoot)) {
+          const fullPath = path.resolve(contentRoot, relativePath);
+          // Security: ensure the resolved path is within content root
+          if (!fullPath.startsWith(contentRoot)) {
             res.statusCode = 403;
             res.end("Forbidden");
             return;

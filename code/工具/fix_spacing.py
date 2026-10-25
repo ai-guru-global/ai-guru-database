@@ -10,6 +10,9 @@ import sys
 import os
 from pathlib import Path
 
+# 默认扫描内容根 wiki/（仓库根 = code/工具/ 上溯三级）
+CONTENT_ROOT = str(Path(__file__).resolve().parent.parent.parent / 'wiki')
+
 CJK_RANGE = r'\u4e00-\u9fff\u3400-\u4dbf\uf900-\ufaff'
 CJK = re.compile(f'[{CJK_RANGE}]')
 ASCII_WORD = re.compile(r'[A-Za-z0-9%]')
@@ -143,7 +146,7 @@ def process_file(filepath: str) -> tuple:
 
 
 def main():
-    base_dir = sys.argv[1] if len(sys.argv) > 1 else '.'
+    base_dir = sys.argv[1] if len(sys.argv) > 1 else CONTENT_ROOT
 
     # Find all .md files in core directories (exclude Web, synthesis, .git, etc.)
     exclude_dirs = {'Web', 'synthesis', '.git', '_archives', '_raw', '_staging',

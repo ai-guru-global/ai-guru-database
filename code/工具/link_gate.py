@@ -21,10 +21,12 @@ import runpy
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-BASELINE_PATH = ROOT / '治理' / '_meta' / 'link-health-baseline.json'
-CHECKER = ROOT / '工具' / 'check_wikilinks.py'
-SPACER = ROOT / '工具' / 'fix_spacing.py'
+# 仓库根：code/工具/<本文件> → 上溯三级；内容根为 wiki/
+ROOT = Path(__file__).resolve().parent.parent.parent
+CONTENT = ROOT / 'wiki'
+BASELINE_PATH = CONTENT / '治理' / '_meta' / 'link-health-baseline.json'
+CHECKER = ROOT / 'code' / '工具' / 'check_wikilinks.py'
+SPACER = ROOT / 'code' / '工具' / 'fix_spacing.py'
 NAV_BASES = {'readme', 'index', 'readme_for_dummy'}
 REQUIRED_FIELDS = ('title', 'category', 'tags', 'summary',
                    'created', 'updated', 'tier', 'name_zh')
@@ -45,17 +47,20 @@ def exists_exact(rel: str) -> bool:
     """逐组件精确名存在性检查。macOS 文件系统大小写不敏感，os.path.exists
     会把 [[概念/rag]]（实际为 概念/RAG）误判为存在，Linux CI 上却判断链，
     造成门禁跨平台漂移；统一按目录项精确匹配消除差异。"""
-    cur = ROOT
-    for part in Path(rel).parts:
-        try:
-            entries = os.listdir(cur)
-        except OSError:
-            return False
-        hit = [e for e in entries if e == part]
-        if not hit:
-            return False
-        cur = cur / hit[0]
-    return True
+    for base in (CONTENT, ROOT):
+        cur = base
+        for part in Path(rel).parts:
+            try:
+                entries = os.listdir(cur)
+            except OSError:
+                break
+            hit = [e for e in entries if e == part]
+            if not hit:
+                break
+            cur = cur / hit[0]
+        else:
+            return True
+    return False
 
 
 def scan(chk, spacer) -> dict:
@@ -69,7 +74,7 @@ def scan(chk, spacer) -> dict:
     for rel in scan_mds:
         if rel in chk['SKIP_FILES']:
             continue
-        text = (ROOT / rel).read_text(encoding='utf-8', errors='ignore')
+        text = (Path(chk['CONTENT']) / rel).read_text(encoding='utf-8', errors='ignore')
         # frontmatter 完整性
         m = FRONTMATTER.match(text)
         fields = set(FIELD.findall(m.group(1))) if m else set()

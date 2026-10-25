@@ -8,7 +8,7 @@ r"""wikilink 断链分类巡检工具（2026-07 评估校准版）。
 4. 目录级链接识别（指向存在目录视为合法）
 
 输出：按五类分类的断链报告（裸名称/旧路径/缺失概念页/相对路径/基础设施路径）。
-用法：python3 工具/check_wikilinks.py [--json 输出路径] [--quiet]
+用法：python3 code/工具/check_wikilinks.py [--json 输出路径] [--quiet]
 退出码：有断链时为 1（可用于 pre-commit / CI）。
 """
 import json
@@ -17,13 +17,15 @@ import re
 import sys
 from collections import defaultdict
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# 仓库根：code/工具/<本文件> → 上溯三级
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# 内容根：全部 wiki 文档所在目录（vault 内容区）
+CONTENT = os.path.join(ROOT, 'wiki')
 # 任何层级都排除（版本控制/编辑器/构建产物）
 ALWAYS_SKIP = {'.git', '.obsidian', '.qoder', '.claude', '.githooks', '.github',
                'node_modules', 'release'}
-# 仅根级跳过扫描的基建目录：其中的 md 仍收录为合法链接目标（避免误报），
-# 但不作为断链扫描源；注意 docs 只跳根级，子目录如 Cloud_Ops_Agent/docs/ 照常处理
-ROOT_ONLY_SKIP = {'前端应用', '原始', '来源', '归档', 'docs', 'code', '工具'}
+# 内容根内保持原有口径：信源归档/历史归档/规划稿只作为合法链接目标，不作为断链扫描源
+ROOT_ONLY_SKIP = {'来源', '归档', 'docs'}
 # 历史评估报告是快照，其中断链示例不计入（与修复脚本 SKIP_FILES 一致）
 SKIP_FILES = {'治理/_meta/_evaluation-2026-07-27.md',
               '治理/_meta/_evaluation-2026-06-24.md',
@@ -41,9 +43,9 @@ def collect_files():
     目标索引用全库列表构建（含基建目录内真实文件），断链扫描只跑待扫描列表。
     """
     scan_mds, all_mds, dirs = [], [], set()
-    for dp, dns, fns in os.walk(ROOT):
+    for dp, dns, fns in os.walk(CONTENT):
         dns[:] = [d for d in dns if d not in ALWAYS_SKIP]
-        rel_dp = os.path.relpath(dp, ROOT)
+        rel_dp = os.path.relpath(dp, CONTENT)
         if rel_dp != '.':
             dirs.add(rel_dp)
         top = rel_dp.split(os.sep)[0]
@@ -103,7 +105,7 @@ def main():
     for rel in scan_mds:
         if rel in SKIP_FILES:
             continue
-        text = open(os.path.join(ROOT, rel), encoding='utf-8', errors='ignore').read()
+        text = open(os.path.join(CONTENT, rel), encoding='utf-8', errors='ignore').read()
         # 剔除代码块/行内代码，避免 bash [[ ]] 等语法误报
         text = INLINE_CODE.sub('', FENCED_CODE.sub('', text))
         for m in WIKILINK.findall(text):
@@ -117,10 +119,11 @@ def main():
                 continue
             if t.rstrip('/') in dirs:  # 目录级链接
                 continue
-            # 磁盘上真实存在的非 md 文件（代码/脚本/数据）视为合法
-            if os.path.exists(os.path.join(ROOT, t)) or any(
-                    os.path.exists(os.path.join(ROOT, t + ext))
-                    for ext in ('.py', '.sh', '.txt', '.json', '.csv', '.yaml', '.yml')):
+            # 磁盘上真实存在的非 md 文件（代码/脚本/数据）视为合法；
+            # 先在内容根内找，再回退仓库根（兼容 [[工具/xxx.py]] 这类基建路径）
+            if any(os.path.exists(os.path.join(base, t + ext))
+                   for base in (CONTENT, ROOT)
+                   for ext in ('', '.py', '.sh', '.txt', '.json', '.csv', '.yaml', '.yml')):
                 continue
             broken.append((rel, t, classify(t)))
 

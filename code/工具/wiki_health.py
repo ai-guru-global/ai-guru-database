@@ -55,7 +55,7 @@ def parse_frontmatter(content):
     return fm
 
 def main():
-    base = sys.argv[1] if len(sys.argv) > 1 else '.'
+    base = sys.argv[1] if len(sys.argv) > 1 else str(Path(__file__).resolve().parent.parent.parent / 'wiki')
     files = walk_md(base)
     print(f"Scanning {len(files)} markdown files...\n")
 

@@ -300,7 +300,7 @@ flowchart TB
 - [发布与增长手册 2026](./Launch_Playbook_2026.md) — 90 天行动计划与执行工具
 - [AI Guru 知识库 README](../README.md) — 产品事实与对外叙事来源
 - [治理/ROADMAP](../治理/ROADMAP.md) — 项目演进方向，GTM 节奏需与其对齐
-- [前端应用](../前端应用/README.md) — Web 浏览应用，GTM 的第二交付物
+- [前端应用](../../code/前端应用/README.md) — Web 浏览应用，GTM 的第二交付物
 
 ---
 

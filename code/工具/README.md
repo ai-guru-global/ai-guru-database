@@ -230,7 +230,7 @@ flowchart LR
 
 #### `batch_fix_links.py` — 基于报告的批量修复
 
-**工作流**：`check_links.py --json /tmp/cl.json` → `batch_fix_links.py . /tmp/cl.json`
+**工作流**：`check_links.py --json /tmp/cl.json` → `batch_fix_links.py wiki /tmp/cl.json`
 
 策略：构建 basename → 实际路径索引，对每条断链按 basename 查找候选，选择路径最相似的候选计算正确相对路径，原地修复。
 
@@ -323,43 +323,43 @@ flowchart LR
 
 ```bash
 # 全量导出（要求 git 工作区干净）
-python3 工具/export_corpus.py --scope full --output release --clean
+python3 code/工具/export_corpus.py --scope full --output release --clean
 
 # 子集导出（K8s/GPU/运维，token 优化）
-python3 工具/export_corpus.py --scope subset --output release --clean
+python3 code/工具/export_corpus.py --scope subset --output release --clean
 
 # 预检模式（不写文件）
-python3 工具/export_corpus.py --scope full --dry-run
+python3 code/工具/export_corpus.py --scope full --dry-run
 
 # 工作区有未提交改动时强制导出
-python3 工具/export_corpus.py --scope full --output release --allow-dirty
+python3 code/工具/export_corpus.py --scope full --output release --allow-dirty
 ```
 
 ### 5.3 健康检查
 
 ```bash
 # 知识库健康体检
-python3 工具/wiki_health.py .
+python3 code/工具/wiki_health.py wiki
 
 # 断链检测（带 JSON 输出）
-python3 工具/check_links.py . --json /tmp/cl.json
+python3 code/工具/check_links.py wiki --json /tmp/cl.json
 
 # 断链修复
-python3 工具/batch_fix_links.py . /tmp/cl.json --dry-run
-python3 工具/batch_fix_links.py . /tmp/cl.json
+python3 code/工具/batch_fix_links.py wiki /tmp/cl.json --dry-run
+python3 code/工具/batch_fix_links.py wiki /tmp/cl.json
 ```
 
 ### 5.4 元数据维护
 
 ```bash
 # 批量注入缺失的 tier 和 aliases
-python3 工具/inject_tier_aliases.py
+python3 code/工具/inject_tier_aliases.py
 
 # 修正中英文间距
-python3 工具/fix_spacing.py .
+python3 code/工具/fix_spacing.py wiki
 
 # 关键页 tier 提升
-python3 工具/fix_tiers.py
+python3 code/工具/fix_tiers.py
 ```
 
 ---
@@ -385,39 +385,39 @@ flowchart TD
 
 ```bash
 # Step 1: 检测断链
-python3 工具/check_links.py . --json /tmp/cl.json --strict
+python3 code/工具/check_links.py wiki --json /tmp/cl.json --strict
 
 # Step 2: 预览修复
-python3 工具/batch_fix_links.py . /tmp/cl.json --dry-run
+python3 code/工具/batch_fix_links.py wiki /tmp/cl.json --dry-run
 
 # Step 3: 执行修复
-python3 工具/batch_fix_links.py . /tmp/cl.json
+python3 code/工具/batch_fix_links.py wiki /tmp/cl.json
 
 # Step 4: 补 ./ 前缀
-python3 工具/add_dot_slash.py . --dry-run
-python3 工具/add_dot_slash.py .
+python3 code/工具/add_dot_slash.py wiki --dry-run
+python3 code/工具/add_dot_slash.py wiki
 
 # Step 5: 孤儿页交叉链入
-python3 工具/cross_link_orphans.py
+python3 code/工具/cross_link_orphans.py
 
 # Step 6: 重新检查
-python3 工具/check_links.py .
+python3 code/工具/check_links.py wiki
 ```
 
 ### 6.3 大规模重构流程（参考 restructure_2026.py）
 
 ```bash
 # Phase A: 预检
-python3 工具/restructure_2026.py dry-run
+python3 code/工具/restructure_2026.py dry-run
 
 # Phase B: 重命名（每章一个 commit）
-python3 工具/restructure_2026.py rename
+python3 code/工具/restructure_2026.py rename
 
 # Phase C: 重写链接
-python3 工具/restructure_2026.py rewrite-links
+python3 code/工具/restructure_2026.py rewrite-links
 
 # Phase D: 验证
-python3 工具/restructure_2026.py verify
+python3 code/工具/restructure_2026.py verify
 ```
 
 ---

@@ -276,7 +276,9 @@ def find_all_links(base, strict=False):
 def main():
     import argparse
     parser = argparse.ArgumentParser(description='Wiki link checker with classified output')
-    parser.add_argument('base_dir', nargs='?', default='.', help='Project root')
+    parser.add_argument('base_dir', nargs='?',
+                        default=str(Path(__file__).resolve().parent.parent.parent / 'wiki'),
+                        help='Content root (default: <repo>/wiki)')
     parser.add_argument('--json', metavar='FILE', help='Write JSON report to FILE')
     parser.add_argument('--strict', action='store_true', help='Also flag dir-level wikilinks')
     args = parser.parse_args()

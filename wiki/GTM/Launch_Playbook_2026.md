@@ -209,7 +209,7 @@ flowchart LR
 - [GTM 总览](./README.md) — 一页速览与三级飞轮
 - [GTM 战略 2026](./GTM_Strategy_2026.md) — 本手册的策略依据
 - [AI Guru 知识库 README](../README.md) — 产品事实与对外叙事来源
-- [前端应用](../前端应用/README.md) — Web 浏览应用（Launch 前需完成部署核查）
+- [前端应用](../../code/前端应用/README.md) — Web 浏览应用（Launch 前需完成部署核查）
 - [治理/ROADMAP](../治理/ROADMAP.md) — 项目方向对齐
 
 ---

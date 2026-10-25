@@ -9,11 +9,13 @@ import importlib.util
 import re
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+# 仓库根 = code/工具/ 上溯三级；内容根 = wiki/
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+CONTENT_ROOT = REPO_ROOT / "wiki"
 TODAY = datetime.date.today().isoformat()
 
 spec = importlib.util.spec_from_file_location(
-    "reo", REPO_ROOT / "工具" / "reorganize_scattered_2026.py")
+    "reo", REPO_ROOT / "code" / "工具" / "reorganize_scattered_2026.py")
 reo = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(reo)
 
@@ -109,22 +111,22 @@ def main():
     moves = reo.build_moves()
     dirs = {}
     for new in moves.values():
-        p = REPO_ROOT / new
+        p = CONTENT_ROOT / new
         if p.parent.name not in ("assets", "tests", "治理", "pathways"):
             dirs.setdefault(p.parent, []).append(p)
     created, updated = 0, 0
     for d, files in sorted(dirs.items()):
-        if d == REPO_ROOT or not d.is_dir():
+        if d == CONTENT_ROOT or not d.is_dir():
             continue
         if not (d / "index.md").is_file():
             n = create_index(d)
             created += 1
-            print(f"  + index.md: {d.relative_to(REPO_ROOT)} ({n} files)")
+            print(f"  + index.md: {d.relative_to(CONTENT_ROOT)} ({n} files)")
         else:
             n = append_to_index(d, files)
             if n:
                 updated += 1
-                print(f"  ~ index.md: {d.relative_to(REPO_ROOT)} (+{n} rows)")
+                print(f"  ~ index.md: {d.relative_to(CONTENT_ROOT)} (+{n} rows)")
     print(f"新建 {created} 个 index.md，更新 {updated} 个")
 
 

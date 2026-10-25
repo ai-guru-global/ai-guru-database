@@ -70,7 +70,7 @@ GTM 不是独立于知识库的运营文档，它直接引用并服务于仓库�
 
 - 产品事实与对外叙事来源：[AI Guru 知识库 README](../README.md)（含英文版 [README_EN](../README_EN.md)）
 - 项目演进方向对齐：[治理/ROADMAP](../治理/ROADMAP.md)
-- GTM 的第二个交付物（Web 浏览应用）：[前端应用](../前端应用/README.md)
+- GTM 的第二个交付物（Web 浏览应用）：[前端应用](../../code/前端应用/README.md)
 
 ---
 

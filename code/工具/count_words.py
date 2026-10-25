@@ -15,7 +15,8 @@ def count_words():
     print("📊 开始统计文档字数...")
     print("=" * 60)
     
-    base_dir = Path(__file__).parent.parent
+    # 内容根：wiki/（仓库根 = code/工具/ 上溯三级）
+    base_dir = Path(__file__).resolve().parent.parent.parent / 'wiki'
     total_chars = 0
     file_count = 0
     dir_stats = defaultdict(lambda: {"files": 0, "chars": 0})

@@ -5,7 +5,7 @@
  * so they can be served as static assets on GitHub Pages.
  *
  * Reads filePaths from src/data/docMap.ts and copies the actual .md files
- * from the project root into Web/dist/docs-content/<filePath>.
+ * from the wiki content root (repo-root/wiki) into Web/dist/docs-content/<filePath>.
  */
 
 import { readFileSync, mkdirSync, copyFileSync, existsSync } from "fs";
@@ -14,7 +14,9 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const webDir = resolve(__dirname, "..");
-const projectRoot = resolve(webDir, "..");
+// 仓库根 = code/前端应用 → 上溯两级；内容根 = 仓库根/wiki
+const repoRoot = resolve(webDir, "..", "..");
+const contentRoot = resolve(repoRoot, "wiki");
 const distDocsDir = resolve(webDir, "dist", "docs-content");
 
 // Read docMap.ts and extract all filePath values
@@ -35,7 +37,7 @@ let copied = 0;
 let skipped = 0;
 
 for (const fp of filePaths) {
-  const srcPath = resolve(projectRoot, fp);
+  const srcPath = resolve(contentRoot, fp);
   const destPath = resolve(distDocsDir, fp);
 
   if (!existsSync(srcPath)) {

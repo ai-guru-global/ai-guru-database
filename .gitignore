@@ -104,9 +104,9 @@ _raw/github-sources/ai-agents-for-beginners/translations/*/
 # ============================================================
 
 # Node modules and build artifacts
-前端应用/node_modules/
-前端应用/dist/
-前端应用/.vite/
+code/前端应用/node_modules/
+code/前端应用/dist/
+code/前端应用/.vite/
 
 # Python cache
 __pycache__/
@@ -134,5 +134,4 @@ Thumbs.db
 
 # Empty release staging
 release_new/
-code/
 .code-up/rag-index/

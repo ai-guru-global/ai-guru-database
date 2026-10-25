@@ -7,15 +7,12 @@
     "**/dist",
     "**/build",
     "code",
-    "前端应用",
-    "原始",
+    "wiki",
     "release",
-    "归档",
     ".obsidian",
     ".qoder",
     ".claude",
-    "docs",
-    "94_可视化"
+    "skills"
   ],
   "typeCheckingMode": "basic",
   "reportMissingImports": "warning"

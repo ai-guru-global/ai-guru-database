@@ -4,7 +4,7 @@ category: '92-plan'
 tags: ["planning", "roadmap", "strategy", "goals"]
 summary: '> **一句话理解**: 本章节记录 AI Guru 知识库的项目规划、评估报告和发展路线图，是项目治理和持续改进的"指挥中心"。'
 created: '2026-05-31'
-updated: '2026-06-25'
+updated: '2026-10-27'
 tier: supporting
 sources: []
 
@@ -21,11 +21,14 @@ name_zh: "项目规划"
 ## 本章内容
 
 > **状态更新 (2026-06-25)**: 所有规划文档已执行完毕并归档清理。本目录当前仅保留 README 和 README_for_dummy。
+> **状态更新 (2026-10-27)**: 新增两份进行中的深度专题清单——[[治理/plan/Task_List_P0_2026_10|P0 任务清单 2026-10]] / [[治理/plan/Task_List_P1_2026_10|P1 任务清单 2026-10]]（源自 [[治理/Content_Strategy_Audit_2026_10|内容战略体检 2026-10]]）。
 
 | 文档 | 内容 | 更新频率 |
 |------|------|--------|
 | [Project Comprehensive Evaluation 2026](治理/Project_Comprehensive_Evaluation_2026.md) | 项目全面评估报告（角色视角） | 季度 |
 | [Project Structure Evaluation 2026](治理/Project_Structure_Evaluation_2026.md) | 项目结构评估报告（数据驱动） | 季度 |
+| [[治理/plan/Task_List_P0_2026_10|P0 任务清单 2026-10]]（进行中） | 体检 P0 深度专题执行清单（Deep Research / Computer Use / Agent 记忆） | 专题完成时 |
+| [[治理/plan/Task_List_P1_2026_10|P1 任务清单 2026-10]]（进行中） | 体检 P1 专题执行清单（算力基建 / 具身 VLA / 视频生成） | 专题完成时 |
 
 ### 已执行归档的历史计划
 

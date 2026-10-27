@@ -2,7 +2,7 @@
 title: Agent Applications
 type: index
 created: 2026-07-25
-updated: 2026-07-25
+updated: 2026-10-25
 sources: []
 tags: [auto-index]
 name_zh: "智能体应用"
@@ -17,7 +17,8 @@ name_en: "Agent Applications"
 
 | 文件 | 说明 |
 |------|------|
-| [[概念/Agent/computer-use|Computer Use Agents (桌面自动化/RPA)]] | Computer Use Agent 完整技术体系：屏幕理解、GUI 操作、Claude Computer Use/OpenAI Operator/Ant... |
+| [[15_智能体/17_Agent应用/01_Computer_Use_Agent|Computer Use Agents (桌面自动化/RPA)]] | Computer Use Agent 完整技术体系：屏幕理解、GUI 操作、Claude Computer Use/OpenAI Operator/Ant... |
+| [[15_智能体/17_Agent应用/02_Deep_Research_Agent|Deep Research Agent 深度研究智能体]] | Deep Research 研究循环：多轮搜索→交叉验证→长文综合；2026 产品格局（OpenAI/Gemini/Perplexity/Tongyi DeepResearch）、训练三阶段演进、与 RAG 边界、面试快问快答 |
 | [[15_智能体/17_Agent应用/03_Voice_Agent|语音 Agent (Voice Agents)]] | 语音 Agent 完整技术体系：实时对话架构、ASR/TTS 管线、GPT-4o 语音模式、开源方案（Whisper/Piper/F5-TTS）、延迟优化... |
 
 ## Related

@@ -4,7 +4,7 @@ category: "01-fundamentals-ai-hardware"
 tags: ["hardware", "gpu", "ai-chip", "infrastructure", "t-head", "ppu", "chinese-chip"]
 summary: "AI 计算硬件基础设施总览，覆盖 GPU、AI 加速卡、国产芯片（含平头哥真武 PPU）等硬件选型和部署方案。"
 created: 2026-06-12
-updated: 2026-06-15
+updated: 2026-10-27
 tier: supporting
 sources: []
 
@@ -33,6 +33,7 @@ name_zh: "AI 硬件基础设施"
 |------|------|---------|------|
 | [[01_数学基础/10_AI硬件/03_Chinese_AI_Chips_深入分析|国产 AI 芯片深度解析]] | 12+ 家厂商 | 全线覆盖 | T1-T3 |
 | [[01_数学基础/10_AI硬件/08_T_Head_PPU_深入分析|平头哥真武 PPU 深度解析]] | 平头哥 (T-Head) | 真武 810E / M890 | T2 |
+| [[01_数学基础/10_AI硬件/09_PPU_High_Performance_Network|PPU 高性能网络与 ICN 互联]] | 平头哥 + 阿里云 | ICN / HPN / RDMA / ACCL-P | 专题 |
 | [[01_数学基础/10_AI硬件/08_T_Head_PPU_深入分析|平头哥 PPU 大白话解读]] | 平头哥 (T-Head) | 真武 810E / M890 | 入门 |
 
 ### NVIDIA/AMD 快速对比

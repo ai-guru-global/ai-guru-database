@@ -4,7 +4,7 @@ category: root
 tags: ["overview", "governance", "known-issues"]
 summary: "知识库仓库真实已知问题登记簿：断链积压、度量口径、孤立页、仓库体积等，含状态、根因、处置与验收标准。2026-09-04 基于实测评估全面重写。"
 created: 2026-05-31
-updated: 2026-10-14
+updated: 2026-10-25
 tier: supporting
 aliases:
   - "Known Issues"
@@ -125,9 +125,11 @@ name_zh: "AI Guru 知识库 - 已知问题追踪"
 | **优先级** | P1 |
 | **发现** | 2026-09-04 断链批修取证 |
 
-**典型案例**: `MoE_Case_Studies_DeepSeek_Mixtral` 被改为 `12_MoE_案例_Studies_深度Seek_Mixtral`（"DeepSeek" → "深度Seek"），破坏全库 31 处引用。**2026-09-04 已用 `工具/move_page.py` 恢复规范名并入链同步重写。**
+**典型案例 1**: `MoE_Case_Studies_DeepSeek_Mixtral` 被改为 `12_MoE_案例_Studies_深度Seek_Mixtral`（"DeepSeek" → "深度Seek"），破坏全库 31 处引用。**2026-09-04 已用 `工具/move_page.py` 恢复规范名并入链同步重写。**
 
-**处置计划**: 全库扫描同类「中英混杂损坏名」文件，用 move_page.py 批量恢复（现在改名不会断链）。
+**典型案例 2（Computer → 算力r）**: 2026-10-25 内容战略体检发现同源事故第二批——3 个文件名含乱码「算力r」：`17_Agent应用/01_算力r_Use_Agent`、`01_Agent基础/18_算力r_Use_Agent_2026`、`11_OpenClaw生态/03_Manus_My_算力r`。**已手动 mv 改回规范名（`01_Computer_Use_Agent` / `18_Computer_Use_Agent_2026` / `03_Manus_My_Computer`）并同步全部 6 处引用（含 3 处 `15_15_` 双前缀），grep 验证零残留。** 详见 [Content_Strategy_Audit_2026_10](./Content_Strategy_Audit_2026_10.md)。
+
+**处置计划**: 全库扫描同类「中英混杂损坏名」文件，用 move_page.py 批量恢复（现在改名不会断链）。关联现象：`15_15_智能体/` 双前缀 wikilink（历史批量替换把 `15_` 误扩为 `15_15_`）仍残留约 10 个文件（重灾区：`11_OpenClaw生态/README`、`13_Hello_Agents课程/README`），待专项批量修复。
 
 ---
 
@@ -164,6 +166,22 @@ name_zh: "AI Guru 知识库 - 已知问题追踪"
 **根因**: 脚本的 CJK-Latin 间距规则不区分正文与链接目标段——`[[目标|显示]]` 的目标部分和 `](路径.md)` 的路径部分同被处理。2026-09-05 周巡检已记录同类判定（间距基线 +1），本次为破坏性实证。
 
 **处置计划**: 给 `工具/fix_spacing.py` 增加 wikilink/md-link 目标段保护（先按 `[[...]]`/`](...)` 切片再只处理正文段）；修复前门禁与人工均**禁止全库运行**，仅可对单个文件白名单式使用并 diff 复核。
+
+---
+
+## ISS-109: check_links.py 把裸相对链接从 vault 根解析（误报断链）
+
+| 属性 | 值 |
+|-----|-----|
+| **状态** | 🟡 Investigating |
+| **优先级** | P2 |
+| **发现** | 2026-10-25 内容战略体检落库时实测 |
+
+**现象**: `check_links.py` 第 251–255 行对 md 链接的解析：仅当链接以 `./` 或 `../` 开头时才相对源文件目录解析；**裸相对链接（如 `[ROADMAP](ROADMAP.md)`）被错误地从 vault 根解析**，导致同目录合法链接被误报 `missing_file`。注释（"if absolute... check against base; else relative to source"）与实现相反。
+
+**影响**: `total_broken` 基线（2026-10-25 实测 973）中含一批此类误报；link_gate 基线数字相应虚高。
+
+**处置计划**: 修复解析（裸相对链接一律 `os.path.join(dirname(f), link_path)`），修复后重跑基线并按棘轮收紧 link_gate 数字。修复前，新写页面建议统一用 `./` 前缀写同目录链接（渲染语义等价，可绕过误报）——2026-10-25 新落库页面已按此约定执行。与 [[#ISS-108]] 同属「工具自身缺陷」家族。
 
 ---
 

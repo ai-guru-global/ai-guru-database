@@ -13,7 +13,7 @@ sources:
   - "https://www.donews.com/news/detail/1/6535158.html"
   - "https://m.jiemian.com/article/13949936.html"
 created: 2026-06-15
-updated: 2026-06-16
+updated: 2026-10-27
 lifecycle: reviewed
 tier: supporting
 aliases:
@@ -391,7 +391,10 @@ IoT / 端侧芯片:
 | 科创板日报 | [平头哥新款 AI 芯片正式亮相](https://www.cls.cn/detail/2273750) | 真武 810E 官网发布，400+ 客户 |
 | 每日经济新闻 | [平头哥深度拆解](https://www.mrjjxw.com/articles/2026-01-25/4233928.html) | 公司历史、产品矩阵、对外销售 |
 | 2026 阿里云峰会 | 公开报道 | 真武 M890、ICN Switch 1.0、V900/J900 路线图 |
+| 平头哥半导体 | [真武 810E 产品页](https://www.t-head.cn/product?id=7) | 7 个 ICN 端口、700 GB/s、PCCL |
+| 平头哥半导体 | [真武 M890 官方发布](https://www.t-head.cn/news/newsDetail?id=188) | ICN Switch 1.0、64 卡全带宽、128 卡超节点 |
+| 阿里云 | [真武 PPU 云服务](https://www.aliyun.com/ppu) | 整机 16 卡、片间带宽与并行策略 |
 
 ### 关联 Wiki 页面
 
-> **关联**: -> [[01_数学基础/10_AI硬件/03_Chinese_AI_Chips_深入分析|国产 AI 芯片深度解析]] | [[01_数学基础/10_AI硬件/01_AI硬件_2026|AI 硬件与芯片 2026 年全景报告]] | [[01_数学基础/10_AI硬件/07_NVIDIA_AMD_GPU_深入分析|NVIDIA & AMD GPU 深度解析]] | [[12_架构基建/02_架构概览/02_AI_基础设施_2026|AI 基础设施 2026]] | [[07_模型训练/04_分布式训练/03_分布式训练_2026|分布式训练 2026]] | [[01_数学基础/10_AI硬件/08_T_Head_PPU_深入分析|平头哥 PPU 大白话解读]]
+> **关联**: -> [[01_数学基础/10_AI硬件/09_PPU_High_Performance_Network|PPU 高性能网络与 ICN 互联]] | [[01_数学基础/10_AI硬件/03_Chinese_AI_Chips_深入分析|国产 AI 芯片深度解析]] | [[01_数学基础/10_AI硬件/01_AI硬件_2026|AI 硬件与芯片 2026 年全景报告]] | [[01_数学基础/10_AI硬件/07_NVIDIA_AMD_GPU_深入分析|NVIDIA & AMD GPU 深度解析]] | [[12_架构基建/02_架构概览/02_AI_基础设施_2026|AI 基础设施 2026]] | [[07_模型训练/04_分布式训练/03_分布式训练_2026|分布式训练 2026]] | [[01_数学基础/10_AI硬件/08_T_Head_PPU_深入分析|平头哥 PPU 大白话解读]]

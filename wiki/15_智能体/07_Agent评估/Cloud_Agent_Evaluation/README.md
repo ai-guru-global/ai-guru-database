@@ -89,7 +89,7 @@ name_zh: "云智能体专项测评"
 - [[15_智能体/11_OpenClaw生态/09_技能_ClawHub.md|Skills_ClawHub]]
 - [[15_智能体/11_OpenClaw生态/01_CoPaw_深入分析.md|CoPaw_Deep_Dive]]
 - [[15_智能体/11_OpenClaw生态/08_QClaw_指南.md|QClaw_Guide]]
-- [[15_智能体/11_OpenClaw生态/03_Manus_My_算力r.md|Manus_My_Computer]]
+- [[15_智能体/11_OpenClaw生态/03_Manus_My_Computer|Manus_My_Computer]]
 
 
 ## 附录：核心概念速查

@@ -4,12 +4,13 @@ category: '15-agent-production-memory-infrastructure'
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: '> **一句话理解**: 2026年的AI Agent不再"说完就忘"——MemGPT、Mem0等记忆系统让Agent拥有了层级记忆、人格一致性、跨会话学习的能力，从"每次都是新对话"进化到"真正的持续学习伙伴"。'
 created: '2026-05-31'
-updated: '2026-05-31'
+updated: '2026-10-25'
 tier: supporting
 aliases:
   - "Agent Memory Systems 2026"
   - Agent_Memory_Systems_2026
 sources: []
+review_by: 2027-01-25
 
 name_zh: "AI Agent 记忆系统 2026"
 ---
@@ -678,19 +679,58 @@ class MemoryPrivacyManager:
 
 ---
 
+## 2026-10 前沿增量（平台记忆原语化与图谱记忆）
+
+> 本节为 2026-10-25 补充：本页主体写于 2026-05，彼时记忆是「自建中间件」；2025 H2 起记忆正在变成**平台标配原语**，格局重排。
+
+### 平台记忆产品化
+
+| 平台 | 记忆能力 | 要点 |
+|------|------|------|
+| Anthropic Claude | **Memory Tool**（2025-10） | 官方 memory tool 原语（file-based、client 维护）+ CLAUDE.md 项目记忆；Agent 开发者不再必须自建记忆层 |
+| OpenAI | ChatGPT 持久记忆 + **Memory API**（2025-04 alpha） | 从 C 端个人记忆走向 enterprise API 化，跨对话引用 |
+| LangChain | **LangMem** | 官方记忆层：semantic（事实）/ episodic（事件）/ procedural（规则）三类记忆与 LangGraph 状态模型整合 |
+
+判断：MemGPT 论文（见第 2 节）提出的「OS 式分层」正在被平台厂商直接吸收为默认能力。
+
+### 中间件与图谱记忆
+
+- **Letta**（MemGPT 团队商业化，原名 MemGPT）：agent server + 记忆分层产品化。
+- **Mem0**：开源记忆层事实标准之一（本页已详述），持续向 hotpath 检索优化演进。
+- **Zep + Graphiti**：**时序知识图谱**记忆（bi-temporal：事件发生时间 vs 系统摄取时间），核心解决「记忆新鲜度与事实冲突消解」——这是纯向量检索记忆的结构性短板。
+
+### 研究前沿
+
+- **A-MEM**（2025）：agentic memory——记忆条目组织为笔记网络，新记忆动态链接旧记忆并演化标签，向人类知识管理（Zettelkasten/LTU）靠拢。
+- 记忆与强化学习/测试时学习结合：记忆写入策略本身成为可训练对象。
+
+### 标准化趋势
+
+- **MCP 记忆 server 模式**：记忆以 MCP 资源/工具暴露，任意 Agent runtime 可插拔（与 [[15_智能体/16_Agent协议/README|Agent 协议]]、[[15_智能体/20_Agentic_Infra/README|Agentic Infra]] 平台化趋势同频）。
+
+### 面试三问
+
+1. **Mem0 vs Zep 怎么选？** — 简单检索层（快、易运维）vs 时序知识图谱（能做事实冲突消解与时间推理）；有「用户事实会随时间改变」的场景选 Zep。
+2. **Claude Memory Tool 改变了什么？** — 记忆从自建中间件变成平台原语，file-based + client 维护，省掉一层自研；代价是锁定与跨平台迁移。
+3. **记忆四分层如何映射产品？** — working（上下文内）/ episodic（会话历史）/ semantic（用户事实库）/ procedural（规则与偏好），分别对应不同检索与遗忘策略。
+
+---
+
 ## 6. 参考资源
 
 ### 开源项目
 - [MemGPT](https://github.com/MemGPT/MemGPT)
 - [Mem0](https://github.com/mem0ai/mem0)
 - [Letta](https://github.com/letta-ai/letta)
+- [Zep/Graphiti](https://github.com/getzep/graphiti)
+- [LangMem](https://github.com/langchain-ai/langmem)
 
 ### 论文
 - [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560)
 
 ---
 
-*Last updated: 2026-04-10*
+*Last updated: 2026-10-25*
 
 ## Related
 

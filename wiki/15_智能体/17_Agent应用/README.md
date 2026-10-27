@@ -18,7 +18,7 @@ name_zh: "17_Agent应用"
 
 ## 内容索引
 
-| [[15_15_智能体/17_Agent应用/01_算力r_Use_Agent|01_算力r_Use_Agent]] | 待补充 |
+| [[15_智能体/17_Agent应用/01_Computer_Use_Agent|01_Computer_Use_Agent]] | 待补充 |
 | [[15_15_智能体/17_Agent应用/03_Voice_Agent|03_Voice_Agent]] | 待补充 |
 
 ## 学习路径

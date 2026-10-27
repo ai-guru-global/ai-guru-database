@@ -19,7 +19,7 @@ name_zh: "11_OpenClaw生态"
 ## 内容索引
 
 | [[15_15_智能体/11_OpenClaw生态/01_CoPaw_深入分析|01_CoPaw_深入分析]] | 待补充 |
-| [[15_15_智能体/11_OpenClaw生态/03_Manus_My_算力r|03_Manus_My_算力r]] | 待补充 |
+| [[15_智能体/11_OpenClaw生态/03_Manus_My_Computer|03_Manus_My_Computer]] | 待补充 |
 | [[15_15_智能体/11_OpenClaw生态/04_OpenClaw_完整_指南|04_OpenClaw_完整_指南]] | 待补充 |
 | [[15_15_智能体/11_OpenClaw生态/05_OpenClaw_生态|05_OpenClaw_生态]] | 待补充 |
 | [[15_15_智能体/11_OpenClaw生态/06_OpenClaw_Internals|06_OpenClaw_Internals]] | 待补充 |

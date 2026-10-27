@@ -4,9 +4,11 @@ category: 05-agents
 tags: ["computer-use", "desktop-automation", "rpa", "gui-agent", "screen-understanding"]
 summary: "Computer Use Agent 完整技术体系：屏幕理解、GUI 操作、Claude Computer Use/OpenAI Operator/Anthropic CUA、安全框架与 2026 企业自动化应用。"
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-10-25
 tier: supporting
+aliases: ["Computer Use Agent", "GUI Agent", "计算机使用智能体", "桌面自动化 Agent"]
 sources: []
+review_by: 2027-01-25
 
 name_zh: "桌面自动化/RPA"
 ---
@@ -157,11 +159,11 @@ COMPUTER_USE_SAFETY = {
 
 ## 4. 交叉引用
 
-- [[15_智能体/|智能体系统]]
+- [[15_智能体/README|智能体系统]]
 - [[15_智能体/17_Agent应用/03_Voice_Agent|语音 Agent]]
-- [[05_大模型/09_多模态模型/|多模态模型]]
+- [[05_大模型/09_多模态模型/README|多模态模型]]
 - [[16_编程/README.md|AI IDE]]
-- [[17_伦理安全/|伦理安全]]
+- [[17_伦理安全/README|伦理安全]]
 
 ## 附录：核心概念速查
 
@@ -229,5 +231,12 @@ COMPUTER_USE_SAFETY = {
 
 > 💡 智能体是AI从"对话"走向"行动"的关键跨越。掌握Agent开发，是2026年AI工程师的核心竞争力。
 
+## 关联页面
+
+- 技术深潜（VLM 屏幕解析 / Set-of-Mark / 2026 技术体系）: [[15_智能体/01_Agent基础/18_Computer_Use_Agent_2026|Computer Use Agents 2026]]
+- 姊妹形态（搜索-阅读循环的 Web Agent）: [[15_智能体/17_Agent应用/02_Deep_Research_Agent|Deep Research Agent]]
+- 概念卡: [[概念/Agent/computer-use|computer-use]]
+- 沙箱与运行时安全: [[15_智能体/20_Agentic_Infra/README|Agentic Infra]]
+
 ---
-*Last updated: 2026-07-21*
+*Last updated: 2026-10-25*

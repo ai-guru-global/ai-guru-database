@@ -620,7 +620,7 @@ For comprehensive coverage of specific ecosystem products and technical details,
 |----------|-------------|
 | **[CoPaw Deep Dive](./01_CoPaw_深入分析.md)** | Complete guide to Alibaba's AI agent workstation, including ReMe memory system, channel integrations, and advanced configuration |
 | **[QClaw Guide](./08_QClaw_指南.md)** | Comprehensive guide to Tencent's WeChat-first AI agent, including setup, skills ecosystem, and the "raise your lobster" concept |
-| **[Manus My Computer](./03_Manus_My_算力r.md)** | Detailed coverage of Meta's desktop AI agent, including the Meta acquisition, architecture, and local execution capabilities |
+| **[Manus My Computer](./03_Manus_My_Computer.md)** | Detailed coverage of Meta's desktop AI agent, including the Meta acquisition, architecture, and local execution capabilities |
 | **[Wuying AgentBay](./10_Wuying_AgentBay.md)** | Complete guide to Alibaba Cloud's AI agent infrastructure, MCP server, and cloud sandbox features |
 | **[Skills & ClawHub](./09_技能_ClawHub.md)** | Comprehensive skill ecosystem guide, including creating custom skills, ClawHub/SkillHub marketplaces, and security best practices |
 

@@ -35,7 +35,7 @@ name_zh: "01_Agent基础"
 | [[15_15_智能体/01_Agent基础/15_AI_Agent_入门|15_AI_Agent_入门]] | 待补充 |
 | [[15_15_智能体/01_Agent基础/16_AI_Agent|16_AI_Agent]] | 待补充 |
 | [[15_15_智能体/01_Agent基础/17_AI_OpenSource_项目_概览|17_AI_OpenSource_项目_概览]] | 待补充 |
-| [[15_15_智能体/01_Agent基础/18_算力r_Use_Agent_2026|18_算力r_Use_Agent_2026]] | 待补充 |
+| [[15_智能体/01_Agent基础/18_Computer_Use_Agent_2026|18_Computer_Use_Agent_2026]] | 待补充 |
 | [[15_15_智能体/01_Agent基础/20_MCP_实现_指南|20_MCP_实现_指南]] | 待补充 |
 | [[15_15_智能体/01_Agent基础/21_多智能体系统_指南|21_多智能体系统_指南]] | 待补充 |
 | [[15_15_智能体/01_Agent基础/22_rag_agents|22_rag_agents]] | 待补充 |

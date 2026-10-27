@@ -1,0 +1,7 @@
+# 第三方源码一律不入库：体积大（数 GB）、可由 clone.sh 一键重建。
+# 只保留清单与脚本本身，保证新环境能自我复原。
+/*
+!.gitignore
+!README.md
+!clone.sh
+!repos.txt

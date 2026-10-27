@@ -71,33 +71,40 @@ __pycache__
 
 
 # ============================================================
-# _raw/ — GitHub source mirrors (staging area for wiki distillation)
-# Strategy: ALLOWLIST. Only .md / .ipynb / .py knowledge files pass.
-# Original 13581 files / 1.35 GB  →  target ~700 files / <15 MB.
+# code/原始/ — GitHub source mirrors (staging area for wiki distillation)
+# Strategy: ALLOWLIST for NEW files. Only .md / .ipynb / .py knowledge files pass.
+# NOTE: files already tracked before this rule was in force stay tracked —
+#       .gitignore never untracks. Ignore rules only gate newly added paths.
 # ============================================================
 
-# Step 1 — Default deny: ignore everything under _raw/...
-_raw/**
+# Step 1 — Default deny: ignore everything under code/原始/...
+code/原始/**
 
 # ...but keep directory structure traversable (so git descends into dirs)
-!_raw/**/
+!code/原始/**/
 
 # Step 2 — Allowlist the three knowledge extensions
-!_raw/**/*.md
-!_raw/**/*.ipynb
-!_raw/**/*.py
+!code/原始/**/*.md
+!code/原始/**/*.ipynb
+!code/原始/**/*.py
 
 # Step 3 — Defense-in-depth: kill nested .git even if rules above change
-_raw/**/.git/
-_raw/**/.git
-_raw/**/.gitmodules
-_raw/**/.gitattributes
+code/原始/**/.git/
+code/原始/**/.git
+code/原始/**/.gitmodules
+code/原始/**/.gitattributes
 
 # Step 4 — Translations: keep English originals only.
 # (translations/*/ re-ignores all language subdirs that Step 2 may have allowed;
 #  then we re-allow en/ — last matching pattern wins.)
-_raw/github-sources/ai-agents-for-beginners/translations/*/
-!_raw/github-sources/ai-agents-for-beginners/translations/en/
+code/原始/github-sources/ai-agents-for-beginners/translations/*/
+!code/原始/github-sources/ai-agents-for-beginners/translations/en/
+
+# ============================================================
+# code/repo/ — 第三方开源代码库（vllm / sglang / gvisor / …）
+# Not tracked: several GB, rebuildable via code/repo/clone.sh.
+# Exclusions live in code/repo/.gitignore (keeps the manifest tracked).
+# ============================================================
 
 # ============================================================
 # 通用开发与运行时产物

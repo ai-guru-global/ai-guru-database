@@ -1,0 +1,33 @@
+# 常用开源代码库清单（AI Guru 知识库源码参考层）
+#
+# 格式：<本地目录名>  <仓库地址>  # <说明>
+# 由 clone.sh 读取；代码本体被 code/repo/.gitignore 排除，不入库。
+# 新环境重建：bash code/repo/clone.sh
+# 更新已有：  bash code/repo/clone.sh --update
+
+# ── 推理引擎与容器隔离（核心） ────────────────────────────────
+vllm              https://github.com/vllm-project/vllm              # 主流 LLM 推理引擎，PagedAttention / 连续批处理
+sglang            https://github.com/sgl-project/sglang            # 高性能推理引擎，RadixAttention / 结构化生成
+gvisor            https://github.com/google/gvisor                 # 用户态内核，容器沙箱隔离
+
+# ── 推理与算力生态 ───────────────────────────────────────────
+TensorRT-LLM      https://github.com/NVIDIA/TensorRT-LLM           # NVIDIA 官方推理优化栈
+llama.cpp         https://github.com/ggml-org/llama.cpp            # CPU/边缘端推理，GGUF 量化
+HAMi              https://github.com/Project-HAMi/HAMi             # Kubernetes GPU 共享与异构调度
+gpu-operator      https://github.com/NVIDIA/gpu-operator            # NVIDIA GPU 集群运维 Operator
+containerd        https://github.com/containerd/containerd          # 容器运行时
+
+# ── 训练与 Agent 生态 ────────────────────────────────────────
+DeepSpeed         https://github.com/deepspeedai/DeepSpeed         # ZeRO / 分布式训练优化
+Megatron-LM       https://github.com/NVIDIA/Megatron-LM            # 大规模预训练框架
+langchain         https://github.com/langchain-ai/langchain        # Agent / RAG 编排框架
+llama_index       https://github.com/run-llama/llama_index         # 数据索引与 RAG 框架
+autogen           https://github.com/microsoft/autogen             # 多智能体对话框架
+crewai            https://github.com/crewAIInc/crewAI              # 角色化多智能体框架
+
+# ── RAG 与平台生态 ───────────────────────────────────────────
+milvus            https://github.com/milvus-io/milvus              # 分布式向量数据库
+qdrant            https://github.com/qdrant/qdrant                 # 向量检索引擎（Rust）
+faiss             https://github.com/facebookresearch/faiss        # 向量相似度检索库
+dify              https://github.com/langgenius/dify               # LLM 应用开发平台
+ragflow           https://github.com/infiniflow/ragflow            # RAG 引擎与文档解析

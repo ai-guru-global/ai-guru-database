@@ -4,7 +4,7 @@ category: 12_架构基建-08-网络
 tags: ["auto-generated"]
 summary: 08_网络 相关内容的索引和概览。
 created: 2026-08-05
-updated: 2026-08-05
+updated: 2026-10-27
 tier: supporting
 sources: []
 name_zh: "08_网络"
@@ -23,10 +23,13 @@ name_zh: "08_网络"
 | [[12_12_架构基建/08_网络/03_Docker_容器ization_for_AI|03_Docker_容器ization_for_AI]] | 待补充 |
 | [[12_12_架构基建/08_网络/05_网络_Diagnostics_命令|05_网络_Diagnostics_命令]] | 待补充 |
 | [[12_12_架构基建/08_网络/06_RDMA_and_RoCE_for_AI|06_RDMA_and_RoCE_for_AI]] | 待补充 |
+| [[12_架构基建/08_网络/07_GPU_高网设计/README|07_GPU_高网设计]] | GPU 高性能网络设计知识体系（8 层 + 厂家 + 视角，60 页子目录） |
+| [[12_架构基建/08_网络/PPU与高网/README|PPU与高网]] | PPU×高网交叉系列：知识点 6 篇 + 算力厂家互联 13 家 + 选型/运维/面试三角度（23 页） |
 
 ## 学习路径
 
-1. 待补充
+1. 从 [[12_架构基建/08_网络/07_GPU_高网设计/README|07_GPU_高网设计]] 总索引进入，按训练/推理/运维三条路径学习
+2. 算力厂家互联（ICN/HCCS/MLU-Link/XPU-Link/BLINK…）与 PPU 交叉场景进 [[12_架构基建/08_网络/PPU与高网/README|PPU与高网]] 系列；两个系列互补：前者网络工程视角（交换机/光模块/无损配置），后者算力芯片视角（卡间互联/超节点/通信库）
 
 ## Related
 

@@ -2,7 +2,7 @@
 title: Networking
 type: index
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-10-27
 sources: []
 name_zh: "网络"
 name_en: "Networking"
@@ -21,6 +21,8 @@ This page indexes the contents of `12_架构基建/08_网络`.
 - [[12_架构基建/08_网络/Docker_Containerization_for_AI|Docker Containerization For AI]]
 - [[12_架构基建/08_网络/Network_Diagnostics_Commands|Network Diagnostics Commands]]
 - [[12_架构基建/08_网络/06_RDMA_and_RoCE_for_AI|RDMA And Roce For AI]]
+- [[12_架构基建/08_网络/07_GPU_高网设计/README|GPU 高性能网络设计（高网）知识体系]]
+- [[12_架构基建/08_网络/PPU与高网/README|PPU 与高网系列（算力厂家互联×高网交叉）]]
 
 ## 架构核心组件对比
 

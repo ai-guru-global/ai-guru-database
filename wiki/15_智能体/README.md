@@ -4,7 +4,7 @@ category: 15-agent-production
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: 从 Agent 原型到生产级系统，需要 Harness 工程、框架选型、平台部署、记忆架构、安全合规的完整工程体系。"
 created: 2026-05-31
-updated: 2026-10-14
+updated: 2026-11-03
 tier: supporting
 sources: []
 
@@ -32,7 +32,7 @@ name_zh: "Agent 生产部署"
 | [Agent_Protocols](./16_Agent协议/) | MCP / A2A / UCP 协议栈、A2A 深度解析 |
 | [Agent_Skills](./05_Agent技能/) | 工具 / 技能 / 调用范式 |
 | [Agent_Workflow](./03_Agent工作流/) | 设计模式、编排、UI/UX |
-| [Memory_Infrastructure](./06_记忆基础设施/) | MemGPT / 向量库 / RAG 基础设施 |
+| [Memory_Infrastructure](./06_记忆基础设施/) | 记忆系统专题：总览决策树 / 原理 / 产品选型 / 压缩遗忘 / 快答 |
 
 ### 评测层 —— 把 Agent 从原型推向可信
 

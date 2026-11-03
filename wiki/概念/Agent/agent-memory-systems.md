@@ -15,7 +15,7 @@ summary: "Agent 记忆系统让 Agent 跨步骤、跨会话保持信息。短期
 lifecycle: reviewed
 tier: core
 created: 2026-06-23
-updated: 2026-07-21
+updated: 2026-11-03
 aliases:
   - "Agent Memory Systems"
   - "agent memory systems"
@@ -213,6 +213,29 @@ class TieredMemorySystem:
 | **备份恢复** | 定期快照，支持回滚 |
 | **合规** | GDPR 要求支持记忆删除（被遗忘权） |
 
+## 长期记忆 2.0 与产品格局（2026-11 合并自 agent-memory-2）
+
+> 同域卡 `agent-memory-2`（长期记忆 2.0：MemGPT/Zep/Mem0/Letta 产品向内容）已并入本卡与章节页；该卡现为 stub 重定向，别名（MemGPT / Zep / Mem0 / Letta / Episodic Memory）仍可命中。
+
+### 产品格局速览
+
+| 路线 | 代表 | 一句话 |
+|------|------|--------|
+| 检索层中间件 | Mem0 | LLM-as-Judge 自动提取 + 向量检索，轻、快、易运维 |
+| 时序知识图谱 | Zep + Graphiti | bi-temporal 事实追踪，天然做冲突消解与时间推理 |
+| OS 式分层 | Letta（MemGPT） | 虚拟上下文分页，长对话重度场景 |
+| 框架记忆层 | LangMem | LangChain/LangGraph 官方，semantic/episodic/procedural 三类 |
+| 平台原语 | Claude Memory Tool / OpenAI Memory | 记忆成为模型平台默认能力，免自建一层 |
+
+逐项对比与四条决策轴见 [[15_智能体/06_记忆基础设施/06_记忆产品选型对比_2026|记忆产品选型对比 2026]]；原理与实现见 [[15_智能体/06_记忆基础设施/01_Agent_Memory_系统_2026|AI Agent 记忆系统 2026]]；记忆卫生学见 [[15_智能体/06_记忆基础设施/07_压缩_遗忘_分层策略|压缩遗忘与分层策略]]。
+
+### 官方源（合并自 agent-memory-2）
+
+- MemGPT 论文: arxiv.org/abs/2310.08560 ｜ Letta: letta.com · github.com/letta-ai/letta
+- Zep 论文: arxiv.org/abs/2501.13956 ｜ getzep.com · github.com/getzep/graphiti
+- Mem0 论文: arxiv.org/abs/2504.19413 ｜ mem0.ai · github.com/mem0ai/mem0
+- LangMem: github.com/langchain-ai/langmem ｜ Cognee: github.com/topoteretes/cognee
+
 ## Related
 
 - [[概念/Agent/ai-agents|AI Agent]] — Agent 基础
@@ -222,3 +245,6 @@ class TieredMemorySystem:
 - [[概念/LLM/context-engineering|上下文工程]] — 短期记忆管理技术
 - [[14_RAG系统/01_RAG基础/06_RAG基础|RAG 基础]] — 记忆检索的技术基础
 - [[15_智能体/01_Agent基础/16_AI_Agent|AI Agents 详解]]
+- [[15_智能体/06_记忆基础设施/00_记忆系统总览_决策树|记忆系统总览（决策树 hub）]]
+- [[15_智能体/06_记忆基础设施/06_记忆产品选型对比_2026|记忆产品选型对比 2026]]
+- [[概念/Agent/mem0|Mem0]] ｜ [[概念/Agent/letta|Letta]]

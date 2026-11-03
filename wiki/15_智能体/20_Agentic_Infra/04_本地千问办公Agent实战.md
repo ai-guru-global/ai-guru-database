@@ -4,7 +4,7 @@ category: -agents
 tags: ["agentic-infra", "local-deployment", "qwen", "ollama", "dify", "rag", "office-agent", "apple-silicon", "litellm"]
 summary: "在 Apple M4 24GB 上自建「千问办公」平替的完整实战：硬件与模型选型账（Qwen3-30B-A3B 的内存与 KV 容量预算）、七层基础设施的生产版到本地版映射、Dify/Open WebUI/Qwen-Agent 三条产品路线、分周实施路线（含可复制的命令）、LiteLLM 本地 + 百炼云混合架构、常见坑与升级路径。"
 created: 2026-10-22
-updated: 2026-10-22
+updated: 2026-11-03
 tier: supporting
 aliases: ["本地千问办公实战", "千问办公平替", "Local Qwen Office Agent"]
 sources:
@@ -310,7 +310,8 @@ router_settings:
 - [[12_架构基建/02_架构概览/02_AI_基础设施_2026|AI 基础设施 2026]] — 生产级推理引擎与 GPU 调度（升级到生产档时读）
 - [[15_智能体/Agent_Production_Deployment_Runbook|智能体生产部署手册]] — 上生产的操作视角
 - [[概念/Agent/agentic-infra|Agentic Infra 概念页]] — 七层栈概念速览
+- [[15_智能体/06_记忆基础设施/06_记忆产品选型对比_2026|记忆产品选型对比 2026]] — 记忆层的选型结论（单用户本地 = Mem0 OSS / file-based 自建）
 
 ---
 
-*Last updated: 2026-10-22*
+*Last updated: 2026-11-03*

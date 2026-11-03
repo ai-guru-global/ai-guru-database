@@ -4,7 +4,7 @@ category: 92-plan
 tags: ["strategy", "task-list", "p0", "2026-10"]
 summary: "内容战略体检 2026-10 的 P0 深度专题执行清单：Deep Research 专题（14_RAG系统/08_Deep_Research）、Agent 记忆专题化（15_智能体/06_记忆基础设施）、Computer Use 专题（15_智能体/21_Computer_Use），含落点编号、工作量估算与收尾门禁。"
 created: 2026-10-25
-updated: 2026-10-27
+updated: 2026-11-03
 tier: supporting
 aliases: ["P0 任务清单", "P0 Task List 2026-10"]
 sources: []
@@ -23,6 +23,7 @@ name_zh: "P0 任务清单 2026-10"
 > 现状已于 2026-10-25 实测核实：Deep Research 全库 0 篇；Computer Use 无章节级页面（仅 gui-agent 概念卡 273 行）；Agent 记忆在 `15_智能体/06_记忆基础设施` 已有 4 篇内容页 + 2 张重复概念卡。
 > 工作量标记：S ≤半天 / M ≈1 天 / L ≈2 天。
 > **状态（2026-10-27 入库）**：体检页 P0 快赢已完成（Deep Research 总览落 `15_智能体/17_Agent应用/02_Deep_Research_Agent.md`、Computer Use 乱码修复、记忆主页 2026 增量）；本清单的深度专题（新建目录 + 成体系页面）尚未动工。
+> **状态更新（2026-11-03）**：P0-1 Deep Research 深度专题已完成——5 篇系列 + 目录 README/INDEX + 概念卡（落 `概念/Agent/deep-research.md`，依先导页「待建」指针改挂 Agent 域）+ 互链 6 处，门禁全过；P0-3 / P0-2 未动工。
 
 ## 总览
 
@@ -38,23 +39,23 @@ name_zh: "P0 任务清单 2026-10"
 
 ## P0-1 Deep Research 专题（新建目录 `wiki/14_RAG系统/08_Deep_Research/`）
 
-- [ ] **1.1 全景页** `01_Deep_Research_全景_2026.md`（M）
+- [x] **1.1 全景页** `01_Deep_Research_全景_2026.md`（M）
   - 一句话理解；定义：RAG 的 Agent 化演进（规划 → 并行检索 → 交叉验证 → 综合成报）
   - 辨析表：Deep Research vs 传统 RAG vs Agentic RAG vs 普通聊天搜索
   - 产品格局：OpenAI / Gemini / Claude Research / Perplexity / 开源（open-deep-research、smolagents、LangChain deep agents）
   - 能力边界与典型失败模式；≥3 出链（`概念/RAG/rag`、`15_智能体`、`02_嵌入技术`）
-- [ ] **1.2 架构拆解页** `02_架构拆解_四阶段流水线.md`（L，本专题核心深度页）
+- [x] **1.2 架构拆解页** `02_架构拆解_四阶段流水线.md`（L，本专题核心深度页）
   - 四阶段逐一拆：规划器（问题分解/子问题生成）、检索编排（多源并行/迭代补检）、交叉验证（证据冲突检测/引用对齐）、综合（长文结构化/引用规范）
   - 每阶段伪代码 + 工程参数（并行度、上下文预算、终止条件）；Mermaid flowchart + subgraph
   - 测试时计算视角（与 o1/R1 推理模型的关系，互链 06_强化学习/推理模型相关页）
-- [ ] **1.3 开源实现对比页** `03_开源实现对比与最小复现.md`（M）
+- [x] **1.3 开源实现对比页** `03_开源实现对比与最小复现.md`（M）
   - 对比表（框架/检索器/并行策略/验证机制/成本）；Mac M4 本地跑 minimal DR 的落点（与 `15_智能体/20_Agentic_Infra/04` 互链）
-- [ ] **1.4 评测页** `04_Deep_Research_评测.md`（S–M）
+- [x] **1.4 评测页** `04_Deep_Research_评测.md`（S–M）
   - 评测集（BrowseComp/GAIA 等）与指标（引用准确率/事实一致性/任务完成率）；与 `07_RAG评估` 的差异
-- [ ] **1.5 面试快问快答** `05_面试快问快答_30题.md`（S，版式参照 `28/13_Sandbox_快问快答_50题.md`）
-- [ ] **1.6 概念卡** `概念/RAG/deep-research.md`（S）
+- [x] **1.5 面试快问快答** `05_面试快问快答_30题.md`（S，版式参照 `28/13_Sandbox_快问快答_50题.md`）
+- [x] **1.6 概念卡** `概念/Agent/deep-research.md`（S，落点依先导页「待建」指针调整至 Agent 域）
   - aliases 必含：深度搜索、深度研究、DeepResearch；relationships 连 rag / tool-use / agent-planning
-- [ ] **1.7 互链收拢**（S）：14 章 README/INDEX、`04_高级RAG` 与 `05_RAG生产实践` 各 1–2 页加"演进 → Deep Research"出链、`RAG-in-nutshell.md` 延伸阅读段
+- [x] **1.7 互链收拢**（S）：14 章 README/INDEX、`04_高级RAG` 与 `05_RAG生产实践` 各 1–2 页加"演进 → Deep Research"出链、`RAG-in-nutshell.md` 延伸阅读段
 
 ## P0-3 Agent 记忆系统专题化（`wiki/15_智能体/06_记忆基础设施/`，注意 03 编号历史空缺，新文件从 06 起编）
 
@@ -112,4 +113,4 @@ name_zh: "P0 任务清单 2026-10"
 
 ---
 
-*Last updated: 2026-10-27*
+*Last updated: 2026-11-03*

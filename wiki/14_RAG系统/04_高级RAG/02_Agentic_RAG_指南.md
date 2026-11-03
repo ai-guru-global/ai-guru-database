@@ -6,7 +6,7 @@ summary: "将 Agent 能力融入 RAG 系统,实现自适应检索、多步推理
 sources:
   - "https://github.com/NirDiamant/RAG_Techniques"
 created: 2026-06-12
-updated: 2026-06-15
+updated: 2026-11-03
 lifecycle: reviewed
 tier: supporting
 aliases:
@@ -124,5 +124,9 @@ Agentic RAG 涉及多次 LLM 调用，低延迟和高吞吐至关重要：
 - **极低延迟云 API**: [[10_部署推理/02_推理引擎/07_Groq_深入分析|Groq]]
 - **推理引擎统一选型**: [[10_部署推理/02_推理引擎/17_LLM_推理引擎_选型_指南|LLM 推理引擎选型指南]]
 - **迁移与基准测试**: [[10_部署推理/02_推理引擎/16_LLM_推理引擎_迁移_指南|迁移指南]] / [[10_部署推理/02_推理引擎/15_LLM推理_基准测试_指南|基准测试指南]]
+
+### 演进终点：Deep Research
+
+Agentic RAG 的下一站是 [[14_RAG系统/08_Deep_Research/01_Deep_Research_全景_2026|Deep Research]]：检索从「要不要再查一次」的少轮循环，升级为模型规划整个研究计划的长程循环（规划 → 并行检索 → 交叉验证 → 综合），输出从答案升级为带引用地图的报告。工程拆解见 [[14_RAG系统/08_Deep_Research/02_架构拆解_四阶段流水线|四阶段架构拆解]]，Agent 视角的产品格局见 [[15_智能体/17_Agent应用/02_Deep_Research_Agent|深度研究智能体先导页]]。
 
 > **关联**: -> [[14_RAG系统/README|RAG 系统]] | [[15_智能体/README|Agent 生产]] | [[治理/rag-agents|RAG x Agent 合成]]

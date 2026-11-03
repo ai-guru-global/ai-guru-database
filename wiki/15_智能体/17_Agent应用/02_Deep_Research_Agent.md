@@ -4,7 +4,7 @@ category: 15-agent-applications
 tags: ["deep-research", "web-agent", "agentic-search", "tongyi", "information-synthesis", "2026"]
 summary: "Deep Research 总览：多轮搜索→交叉验证→长文综合的研究循环智能体——2026 产品格局（OpenAI/Gemini/Perplexity/Tongyi DeepResearch）、技术解剖（循环/上下文管理/训练三阶段）、与 RAG 的边界、面试快问快答。"
 created: 2026-10-25
-updated: 2026-10-25
+updated: 2026-11-03
 tier: core
 aliases: ["Deep Research", "深度研究智能体", "DeepResearch Agent", "深度研究"]
 sources:
@@ -133,12 +133,13 @@ name_zh: "深度研究智能体"
 
 - 推理基础: [AI 推理模型指南](../../00_入门/02_技术概览/04_AI_推理模型_指南.md)
 - 编排模式: [Agentic 工作流设计模式](../03_Agent工作流/02_Agentic_工作流_设计_模式_2026.md)
+- 工程系列（RAG 章视角）: [[14_RAG系统/08_Deep_Research/README|Deep Research 专题]]——四阶段架构拆解 / 开源复现 / 评测 / 30 题快答
 - 评估方法: [Agent 评估](../07_Agent评估/README.md)
 - 相邻形态: [[概念/Agent/computer-use|Computer Use]] ｜ [Voice Agent](./03_Voice_Agent.md)
-- 概念卡（待建）: `概念/Agent/deep-research`——按 P2 行动清单，本页发布后应补建概念卡并挂入图谱
+- 概念卡: [[概念/Agent/deep-research|deep-research]]——已建卡，挂 rag / tool-use / agent-planning / computer-use 等 6 条关系
 
 > 本页 frontmatter 带 `review_by: 2027-01-25`——前沿格局页按《[内容战略体检 2026-10](../../治理/Content_Strategy_Audit_2026_10.md)》提出的机制做定期复审示范。
 
 ---
 
-*Last updated: 2026-10-25*
+*Last updated: 2026-11-03*

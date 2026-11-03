@@ -4,7 +4,7 @@ category: -rag
 tags: ["rag", "nutshell", "quick-guide", "retrieval", "embedding", "beginner"]
 summary: "30 分钟速览 RAG：检索增强生成的完整流水线（分块 → 向量化 → 检索 → 重排 → 生成）、什么时候不该用 RAG、五大常见翻车点与调试入口。"
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-11-03
 tier: supporting
 aliases: [RAG-in-nutshell, RAG 速览]
 sources: []
@@ -87,7 +87,8 @@ flowchart LR
 - [[14_RAG系统/README|14_RAG系统]] — 领域知识地图
 - [[14_RAG系统/04_高级RAG/13_RAG_调试_Cheat_Sheet|RAG 调试速查表]] — 翻车现场急救
 - [[14_RAG系统/04_高级RAG/09_Long_上下文_vs_RAG_2026|Long 上下文 vs RAG 2026]] — 技术路线之争
+- [[14_RAG系统/08_Deep_Research/01_Deep_Research_全景_2026|Deep Research 全景]] — 检索增强的下一站：Agent 化研究循环
 
 ---
 
-*Last updated: 2026-09-04*
+*Last updated: 2026-11-03*

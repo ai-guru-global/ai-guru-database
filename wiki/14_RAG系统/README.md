@@ -4,7 +4,7 @@ category: '14-rag-systems'
 tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: '> **一句话理解**: RAG（检索增强生成）就像给大模型配备了一个"外接大脑"——让模型在回答问题时，先查阅专业知识库，再基于检索到的信息生成准确、可信的回答。'
 created: '2026-05-31'
-updated: '2026-06-15'
+updated: '2026-11-03'
 tier: supporting
 sources: []
 
@@ -40,6 +40,7 @@ name_zh: "RAG 系统"
 | [Multimodal RAG 2026](14_RAG系统/04_高级RAG/10_多模态_RAG_架构_2026.md) | 多模态 RAG：复杂 PDF 解析、视频 RAG、ColPali 架构 | 进阶学习 |
 | [Matryoshka Representation Learning Deep Dive](20_论文精读/04_效率优化/04_Matryoshka_Representation_学习_深入分析.md) | MRL 可截断嵌入：精度与成本的动态平衡 | 进阶学习 |
 | [Spring AI RAG Deep Dive](14_RAG系统/06_RAG框架/07_Spring_AI_RAG_深入分析.md) | Spring AI 生态中的 RAG 实现 | Java 开发者 |
+| Deep Research 全景 2026 — [[14_RAG系统/08_Deep_Research/01_Deep_Research_全景_2026\|Deep Research 全景]] | RAG 的 Agent 化终点：架构 / 复现 / 评测 / 快答五篇 | 进阶学习 |
 
 ### 向量数据库
 
@@ -102,6 +103,7 @@ RAG 的生成阶段对 TTFT（首个 token 时间）和前缀缓存命中率非�
 
 ### 进阶方向
 - [Agent 生产](../15_智能体/README.md) — Agentic RAG、记忆系统
+- [[14_RAG系统/08_Deep_Research/README|Deep Research 专题]] — RAG 的 Agent 化终点（架构 / 复现 / 评测）
 - [AI Gateway](12_架构基建/05_CNCF云原生AI/README.md) — RAG 服务的流量治理
 - [测试](../09_测试/README.md) — RAG 系统的评估（RAGAS）
 - [MLOps](../11_模型运维/) — RAG 流水线的自动化

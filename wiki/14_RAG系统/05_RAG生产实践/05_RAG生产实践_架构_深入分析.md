@@ -5,7 +5,7 @@ subcategory: advanced-rag
 tags: ["rag", "retrieval", "production", "vector-database", "embedding", "agentic-rag", "hybrid-search", "observability", "compliance"]
 summary: "> **一句话理解**: 生产级 RAG 不是简单的‘向量检索 + LLM’，而是一条需要精确控制数据流、检索质量、生成可信与合规审计的端到端工程管线。"
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-11-03
 tier: core
 aliases:
   - "RAG Production Architecture Deep Dive"
@@ -449,7 +449,9 @@ results = vector_db.search(
 - [[09_测试/02_测试框架/06_RAGAS_深入分析|RAGAS 深度解析]]
 - [[15_智能体/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]]
 - [[13_运维/02_SRE与可靠性/03_AI_SRE_操作手册|AI SRE Runbook]]
+- [[14_RAG系统/08_Deep_Research/README|Deep Research 专题（RAG 的 Agent 化终点）]]
+- [[15_智能体/17_Agent应用/02_Deep_Research_Agent|深度研究智能体]]
 
 ---
 
-*Last updated: 2026-07-02*
+*Last updated: 2026-11-03*

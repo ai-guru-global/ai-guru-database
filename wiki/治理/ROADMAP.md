@@ -4,7 +4,7 @@ category: root
 tags: ["overview"]
 summary: "AI Guru 知识库滚动路线图：2025Q3–2026Q4 季度里程碑、owner、状态跟踪与优先级矩阵。"
 created: 2026-05-31
-updated: 2026-10-27
+updated: 2026-11-03
 tier: supporting
 aliases:
   - Roadmap
@@ -16,7 +16,7 @@ name_zh: "AI Guru 知识库路线图"
 
 > 中文简称：AI Guru 知识库路线图
 
-> **最后更新**: 2026-10-27
+> **最后更新**: 2026-11-03
 > **版本**: 2026 Q4 (滚动更新)
 
 ---
@@ -72,7 +72,7 @@ name_zh: "AI Guru 知识库路线图"
 | **Agentic Infra 七层栈子域** | **✅ 已完成（2026-10）** | 2026-10 |
 | **LLM 前沿格局 Q4 速览 + 四厂商深入分析增补** | **✅ 已完成（2026-10）** | 2026-10 |
 | **[[治理/Content_Strategy_Audit_2026_10|内容战略体检 2026-10]] 落库 + P0 快赢（Deep Research 总览 / Computer Use 乱码修复 / Agent 记忆 2026 增量）** | **✅ 已完成（2026-10）** | 2026-10 |
-| 体检 P0 深度专题（[[治理/plan/Task_List_P0_2026_10|Deep Research / Computer Use / Agent 记忆]]） | ⏳ 计划中 | 2026-11 |
+| 体检 P0 深度专题（[[治理/plan/Task_List_P0_2026_10|Deep Research / Computer Use / Agent 记忆]]）——P0-1 Deep Research 工程系列 ✅ 2026-11-03，余两专题进行中 | 🔄 进行中 | 2026-11 |
 | 体检 P1 专题（[[治理/plan/Task_List_P1_2026_10|算力基建 / 具身 VLA / 视频生成]]） | ⏳ 计划中 | 2026-Q4 |
 | 混沌工程实践 | ⏳ 计划中 | 2026-10 |
 | 多租户架构设计 | ⏳ 计划中 | 2026-10 |

@@ -2,9 +2,9 @@
 title: Agent Runtime 工程师 面试准备系列
 category: 21_面试岗位
 tags: ["面试", "Agent-Runtime", "Sandbox", "Kubernetes", "MCP", "A2A", "系列导航"]
-summary: "Agent Runtime 工程师岗位面试准备系列导航：Runtime 机制、沙箱隔离、沙箱快问快答、Kata 架构深潜、编排调度、MCP/A2A、框架生态、可观测评测、企业交付、平台岗简历匹配等 14 篇专题。"
+summary: "Agent Runtime 工程师岗位面试准备系列导航：Runtime 机制、沙箱隔离、Kata 架构深潜、编排调度、MCP/A2A、框架生态、可观测评测、企业交付、Computer Use 等 15 篇专题。"
 created: 2026-10-20
-updated: 2026-10-22
+updated: 2026-11-04
 tier: core
 aliases: [Agent Runtime 面试系列, Agent Infra 面试系列]
 sources: []
@@ -37,6 +37,7 @@ name_zh: "Agent Runtime 工程师面试系列"
 | 12 | [[21_面试岗位/28_Agent_Runtime工程师/12_平台岗JD_简历匹配与拓展\|平台岗 JD × 简历匹配]] | 平台岗三方向逐项匹配、面试话术、预判追问、简历改法 | P0 |
 | 13 | [[21_面试岗位/28_Agent_Runtime工程师/13_Sandbox_快问快答_50题\|Sandbox 快问快答 50 题]] | 面试前冲刺：沙箱 50 题一问一答速览（八类全覆盖） | P0 |
 | 14 | [[21_面试岗位/28_Agent_Runtime工程师/14_Kata_Containers_架构深潜\|Kata Containers 架构深潜]] | 调用链逐组件拆解、shim 之辨、版本演进、hypervisor 选型、高频追问 | P0 |
+| 15 | [[21_面试岗位/28_Agent_Runtime工程师/15_Computer_Use_快问快答_30题\|Computer Use 快问快答 30 题]] | 概念辨析/grounding/执行/安全/评测/选型六类速答 | P1 |
 
 ---
 
@@ -67,4 +68,4 @@ flowchart LR
 
 ---
 
-*Last updated: 2026-10-22*
+*Last updated: 2026-11-04*

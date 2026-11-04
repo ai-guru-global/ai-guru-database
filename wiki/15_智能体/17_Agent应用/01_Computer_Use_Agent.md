@@ -237,6 +237,7 @@ COMPUTER_USE_SAFETY = {
 - 姊妹形态（搜索-阅读循环的 Web Agent）: [[15_智能体/17_Agent应用/02_Deep_Research_Agent|Deep Research Agent]]
 - 概念卡: [[概念/Agent/computer-use|computer-use]]
 - 沙箱与运行时安全: [[15_智能体/20_Agentic_Infra/README|Agentic Infra]]
+- 工程系列（感知-决策-执行拆解 / 权限安全 / 评测）: [[15_智能体/21_Computer_Use/README|Computer Use 专题（21 章）]]
 
 ---
-*Last updated: 2026-10-25*
+*Last updated: 2026-11-04*

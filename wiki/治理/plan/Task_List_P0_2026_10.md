@@ -24,7 +24,8 @@ name_zh: "P0 任务清单 2026-10"
 > 工作量标记：S ≤半天 / M ≈1 天 / L ≈2 天。
 > **状态（2026-10-27 入库）**：体检页 P0 快赢已完成（Deep Research 总览落 `15_智能体/17_Agent应用/02_Deep_Research_Agent.md`、Computer Use 乱码修复、记忆主页 2026 增量）；本清单的深度专题（新建目录 + 成体系页面）尚未动工。
 > **状态更新（2026-11-03）**：P0-1 Deep Research 深度专题已完成——5 篇系列 + 目录 README/INDEX + 概念卡（落 `概念/Agent/deep-research.md`，依先导页「待建」指针改挂 Agent 域）+ 互链 6 处，门禁全过。
-> **状态更新（2026-11-03 · 二）**：P0-3 Agent 记忆专题化已完成——4 新页（00 决策树 hub / 06 产品选型 / 07 压缩遗忘 / 08 快答 20 题）+ 02 薄页扩写（写入/冲突消解/程序记忆）+ `agent-memory-2` 并入 `agent-memory-systems` 主卡（stub 重定向保留别名壳）+ 互链 4 处（06 README/INDEX 全量、15 章 README、20/04 反链；「概念/Agent 域索引」实为自动生成文件，未手编）；断链 973 持平零新增。仅 P0-2 Computer Use 未动工。
+> **状态更新（2026-11-03 · 二）**：P0-3 Agent 记忆专题化已完成——4 新页（00 决策树 hub / 06 产品选型 / 07 压缩遗忘 / 08 快答 20 题）+ 02 薄页扩写（写入/冲突消解/程序记忆）+ `agent-memory-2` 并入 `agent-memory-systems` 主卡（stub 重定向保留别名壳）+ 互链 4 处（06 README/INDEX 全量、15 章 README、20/04 反链；「概念/Agent 域索引」实为自动生成文件，未手编）；断链 973 持平零新增。
+> **状态更新（2026-11-04）**：**P0-2 Computer Use 完成，P0 三专题全部收官**——新目录 `15_智能体/21_Computer_Use/`（01 全景 / 02 感知-决策-执行拆解 / 03 权限与安全 / 04 评测与失败模式 + README/INDEX）+ 28 系列 15 号快答 30 题 + 双概念卡（computer-use/gui-agent）补 review_by 与工程系列反链 + 互链 4 处（15 章 README、28 README 15 号入导航、17/01 反链；01/18 反链未加，出链已覆盖）。2.6 调整说明：`概念/Agent/computer-use.md` 已由 2026-10-25 快赢批次建好（高质量），本次未重建、只补时效戳与反链。断链 973 持平零新增。
 
 ## 总览
 
@@ -75,17 +76,17 @@ name_zh: "P0 任务清单 2026-10"
 
 ## P0-2 Computer Use / GUI Agent 专题（新建目录 `wiki/15_智能体/21_Computer_Use/`）
 
-- [ ] **2.1 全景页** `01_GUI_Agent_Computer_Use_全景_2026.md`（M）
+- [x] **2.1 全景页** `01_GUI_Agent_Computer_Use_全景_2026.md`（M）
   - 辨析：Computer Use（操作真实 OS）vs GUI Agent（网页内）vs Browser Use；产品格局（Claude Computer Use / OpenAI Operator·CUA / Gemini Mariner / Manus / 开源 browser-use）；四条技术路线（像素截图 / DOM / 无障碍树 / VLA）
-- [ ] **2.2 技术拆解页** `02_技术拆解_感知_决策_执行.md`（L，核心深度页）
+- [x] **2.2 技术拆解页** `02_技术拆解_感知_决策_执行.md`（L，核心深度页）
   - 感知（截图/Set-of-Mark/无障碍树）、决策（动作空间：click/type/scroll/hotkey、层级策略）、执行（CDP/Playwright/pyautogui/系统 API）；轨迹数据格式（Anthropic / OpenAI CUA）；Mermaid
-- [ ] **2.3 权限与安全页** `03_权限与安全模型.md`（M）
+- [x] **2.3 权限与安全页** `03_权限与安全模型.md`（M）
   - 最小权限、人类在环确认、敏感操作门（支付/删除）、网页内容提示注入防护、沙箱隔离——互链 `28/04_Sandbox`、`28/13_快问快答`、`20_Agentic_Infra/09`、`12_架构基建/10_安全/05_gVisor`，形成「执行体」故事线
-- [ ] **2.4 评测页** `04_评测与失败模式.md`（M）
+- [x] **2.4 评测页** `04_评测与失败模式.md`（M）
   - OSWorld（22 处散提及）/ WebArena（28）/ AndroidWorld（3）基准与 SOTA 区间；常见失败（grounding 错误/长任务漂移/验证缺失）；自建评测 checklist
-- [ ] **2.5 面试快问快答** `21_面试岗位/28_Agent_Runtime工程师/15_Computer_Use_快问快答_30题.md`（S，接 28 系列现有 14 篇编号）
-- [ ] **2.6 概念卡**（S）：扩写 `概念/Agent/gui-agent.md`（273 行 → 补 2026 产品/路线）；新建 `概念/Agent/computer-use.md` 与 gui-agent 辨析；aliases 补 Computer Use / CUA
-- [ ] **2.7 互链收拢**（S）：15 章 README/INDEX、28 系列 README、`概念/Agent` 域索引
+- [x] **2.5 面试快问快答** `21_面试岗位/28_Agent_Runtime工程师/15_Computer_Use_快问快答_30题.md`（S，接 28 系列现有 14 篇编号）
+- [x] **2.6 概念卡**（S）：扩写 `概念/Agent/gui-agent.md`（273 行 → 补 2026 产品/路线）；新建 `概念/Agent/computer-use.md` 与 gui-agent 辨析；aliases 补 Computer Use / CUA（2026-11-04 注：双卡已由快赢批次建好，本次补 review_by 与工程系列反链）
+- [x] **2.7 互链收拢**（S）：15 章 README/INDEX、28 系列 README、`概念/Agent` 域索引
 
 ## P0-X 通用收尾门禁（每个专题完成后必跑）
 

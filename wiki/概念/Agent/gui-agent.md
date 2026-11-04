@@ -31,8 +31,9 @@ summary: "GUI Agent 能"看屏幕"自主操作桌面/Web 应用——字节 UI-T
 lifecycle: reviewed
 tier: core
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-11-04
 sources: []
+review_by: 2027-01-25
 name_zh: "GUI Agent / 图形界面 Agent"
 ---
 
@@ -271,3 +272,5 @@ response = client.beta.messages.create(
 - [[概念/tool-use|Tool Use]]
 - [[概念/computer-use|Computer Use]]
 - [[概念/llm-as-judge|Llm As Judge]]
+- [[15_智能体/21_Computer_Use/README|Computer Use 专题（工程系列）]]
+- [[21_面试岗位/28_Agent_Runtime工程师/15_Computer_Use_快问快答_30题|Computer Use 快问快答 30 题]]

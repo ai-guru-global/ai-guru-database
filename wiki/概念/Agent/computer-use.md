@@ -29,8 +29,9 @@ summary: "Computer Use 是 2024-10 OpenAI / Anthropic 同月推出的"屏幕 + �
 lifecycle: reviewed
 tier: core
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-11-04
 sources: []
+review_by: 2027-01-25
 name_zh: "Computer Use / 计算机使用"
 ---
 
@@ -312,3 +313,5 @@ while not done:
 - [[概念/agent-framework|Agent Framework]]
 - [[概念/code-agent|Code Agent]]
 - [[概念/voice-agent|Voice Agent]]
+- [[15_智能体/21_Computer_Use/README|Computer Use 专题（工程系列：感知决策执行/安全/评测）]]
+- [[21_面试岗位/28_Agent_Runtime工程师/15_Computer_Use_快问快答_30题|Computer Use 快问快答 30 题]]

@@ -4,7 +4,7 @@ category: 10-deployment-inference-hardware
 tags: [hardware, gpu, npu, ascend, gpu-stack, chinese-ai-chip, inference]
 summary: "> GPU/NPU/ASIC 推理硬件的选型、集群管理与国产芯片适配。"
 created: 2026-07-02
-updated: 2026-08-05
+updated: 2026-11-06
 tier: core
 sources: []
 
@@ -45,5 +45,5 @@ name_zh: "硬件与算力"
 
 - [[10_部署推理/README|模型部署与推理 总览]]
 - [[10_部署推理/03_推理优化/README|推理优化]] — 硬件决定优化上限
-- [[12_架构基建/07_硬件与算力/README|架构基建-硬件计算]] — 训练/通用算力视角
+- [[12_架构基建/07_硬件与算力/README|架构基建-硬件计算]] — **训练/硬件系统栈视角**（分工：本目录=推理选型，彼处=系统栈+虚拟化；其 13 号页是五层栈地图）
 - [[概念/GPU/gpu|GPU 概念卡]] · [[概念/GPU/gpustack|GPUStack 入门]]

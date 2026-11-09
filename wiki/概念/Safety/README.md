@@ -2,7 +2,7 @@
 title: 概念/Safety 域索引 (AI 安全与对齐)
 type: index
 created: 2026-08-17
-updated: 2026-08-17
+updated: 2026-11-09
 sources: []
 tags: [concept-index, safety]
 name_zh: "AI 安全与对齐"
@@ -17,9 +17,9 @@ name_en: "Safety"
 
 > 域治理原则：安全类工具卡（如 Guardrails AI、NeMo Guardrails）按工具归属放入 [[概念/K8s/index|K8s 域]] 或 General；本域聚焦**安全方法、风险类别与治理框架**。
 
-## A. 对齐与价值观 (6)
+## A. 对齐与价值观 (9)
 
-[[概念/Safety/ai-alignment|ai-alignment]] · [[概念/Safety/ai-ethics|ai-ethics]] · [[概念/Safety/bias-detection|bias-detection]] · [[概念/Safety/red-teaming|red-teaming]] · [[概念/Safety/recursive-self-improvement|recursive-self-improvement]] · [[概念/Safety/hallucination|hallucination]]
+[[概念/Safety/ai-alignment|ai-alignment]] · [[概念/Safety/ai-ethics|ai-ethics]] · [[概念/Safety/bias-detection|bias-detection]] · [[概念/Safety/red-teaming|red-teaming]] · [[概念/Safety/recursive-self-improvement|recursive-self-improvement]] · [[概念/Safety/hallucination|hallucination]] · [[概念/Safety/agentic-misalignment|agentic-misalignment]] · [[概念/Safety/sandbagging|sandbagging]] · [[概念/Safety/superintelligence|superintelligence]]
 
 ## B. 攻击与防御 (12)
 

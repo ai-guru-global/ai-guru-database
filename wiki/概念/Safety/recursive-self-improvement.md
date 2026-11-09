@@ -20,10 +20,11 @@ confidence:
   ambiguous: 0.10
 base_confidence: 0.78
 lifecycle: reviewed
-lifecycle_changed: 2026-08-17
+lifecycle_changed: 2026-11-09
 created: 2026-08-17
-updated: 2026-08-17
+updated: 2026-11-09
 tier: supporting
+review_by: 2027-02-09
 name_zh: "递归自我改进"
 ---
 
@@ -89,6 +90,22 @@ RSI 自举循环:
 
 > **关键判断**：2026 年的 LLM 已具备"自我评估 + 自我改进"的**闭环雏形**（见 [[概念/LLM/self-rewarding|Self-Rewarding]]），但受限于架构固定、数据质量饱和与计算预算，尚未进入"改进速度自我加速"的强 RSI 阶段。
 
+### 2026 Q3-Q4 实证进展（2026-11-09 增补）
+
+2026 年 8-11 月，RSI 讨论完成从「是否可能」到「渗透率测量」的转向：
+
+| 信源 | 时间 | 级别 | 要点 |
+|------|------|------|------|
+| **RAND**《Recursive Self-Improvement and Automated AI Research》 | 2026-10-12 | 确认（官方智库报告） | AI 已自动化 AI 研发的显著部分；**多家前沿实验室自述多数新增代码为 AI 生成** |
+| **FutureSearch** RSI 预测报告 | 2026-08-27 | 报道（第三方预测机构） | 对 OpenAI/Anthropic 等实验室的 RSI 进展给出量化预测（生产率增益口径） |
+| Dean W. Ball 系列文《On Recursive Self-Improvement》 | 2026-02 起 | 分析 | 论证美国主要前沿实验室已自动化大比例研究工程运营 |
+| 第三方能力评估 | 2026-10 | 报道 | Anthropic 类系统在良定义任务上的能力提升速率约为 2024-03 的 **2 倍**——「AI 加速做 AI」的量化信号 |
+| Sakana AI | 持续 | 确认（官方） | 最早明确以 RSI 为目标的实验室之一（Darwin Gödel Machine，见 [[概念/Agent/self-evolving-agents|自进化智能体]]） |
+
+**关键判断更新**：弱 RSI 的证据从「实验室内部传闻」升级为「机构级测量」；讨论焦点变为**自动化研发飞轮的真实转速**（AI 代码占比、实验闭环时延）与对齐投入的差值。安全含义：留给校准的时间窗假设应从「年」下调至「季度」量级做规划。
+
+> ⚠️ 口径纪律：「多数新代码 AI 生成」是**实验室自述**口径，未经独立审计；引用时保留出处限定。
+
 ## RSI 带来的安全挑战
 
 | 挑战 | 描述 | 严重程度 |
@@ -151,5 +168,9 @@ flowchart TB
 - [[概念/Safety/ai-governance]] — AI 治理（RSI 的监管框架）
 - [[概念/Safety/guardrails]] — AI 护栏（运行时防护）
 - [[概念/General/ai-future-trends]] — AI 未来趋势（AGI 路径与奇点讨论）
+- [[概念/Agent/self-evolving-agents]] — 自进化智能体（RSI 的工程前奏，L1-L4 谱系）
+- [[概念/Safety/superintelligence]] — 超级智能（ASI 实体化叙事与 RSI 绑定关系）
+- [[概念/Safety/sandbagging]] — 藏拙（RSI 时代的评估可信度问题）
+- [[00_入门/02_技术概览/07_新概念雷达_2026Q3Q4]] — 2026 Q3-Q4 新概念雷达（本卡更新记录）
 
-*Last updated: 2026-08-17*
+*Last updated: 2026-11-09*

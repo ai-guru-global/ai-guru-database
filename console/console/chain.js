@@ -1,0 +1,427 @@
+/* AI 产业链五层拆解，手工策展（本文件不被构建覆盖）。
+ * 每个节点 = 产业链上的一页：def 一句话定义，keywords 用于对全库语料（线索/大事/档案/玩家/模型）
+ * 做运行时聚合；upstream/downstream 为节点 id，构成价值流关系。
+ * 某节点聚合数为 0 不是错误，是采集缺口的信号——与「研究缺口」同一哲学。
+ *
+ * 拆解卡（Anatomy Card，2026-10-22 起）——每个节点带结构化判断字段，字段来源与口径：
+ *   maturity 阶段：六阶段（萌芽/过热/挤泡沫/爬坡/成熟/重构），S 曲线 + Gartner 炒作曲线的改造版，
+ *             刻画「该节点的行业位置」，是分析判断不是事实；
+ *   why       价值来源：这层为什么存在、钱从哪来（波特价值链口径）；
+ *   moat      护城河：当前最有效的壁垒形态（一句话）；
+ *   bottleneck 瓶颈：当前卡住规模化的第一约束；
+ *   signals   领先指标：先于收入/共识变化的观测点（卖方研究 catalyst 模型口径）；
+ *   sub       二级细分：关键节点再往下拆一层（MECE 口径），细分不单设路由、渲染在节点页。
+ * 以上全部是观点层：与 def 一样可被证据修正，修正走 git 留痕。 */
+DB.chain = {
+  layers: [
+    {
+      key: 'L1', name: '算力与硬件层', en: 'Compute & Hardware',
+      desc: '价值流的物理底座：芯片、集群、能源与网络。此层决定训练与推理的成本曲线，也是地缘博弈的主战场。',
+      nodes: [
+        { id: 'gpu', name: 'GPU 与 AI 加速卡', def: '通用 AI 算力的主要供给形态，英伟达居垄断位，AMD 追赶。', keywords: ['nvidia', '英伟达', 'gpu', 'amd', '加速卡', 'blackwell', 'b200', 'h100', '算力芯片'], upstream: ['fab', 'memory'], downstream: ['datacenter', 'cloud'], maturity: '爬坡期', why: '一切智能供给的物理入口，训练与推理需求叠加放量。', moat: 'CUDA 软件生态 + 互连全栈（NVLink/InfiniBand）双重锁定。', bottleneck: '先进制程与 CoWoS 封装产能、HBM 配给。', signals: ['数据中心 GPU 出货量与交期', '云厂商资本开支指引'], sub: [
+          { id: 'train', name: '训练旗舰卡', def: 'B/H 系旗舰与整机柜形态，服务前沿训练与大规模后训练。' },
+          { id: 'infer', name: '推理与性价比卡', def: '低精度、高吞吐路线（Ultrafast 类），推理成本曲线的硬件端。' },
+          { id: 'rack', name: '机柜与互连方案', def: 'NVLink 机柜、整机柜交付：卖点从单卡转向系统级吞吐。' }
+        ] },
+        { id: 'asic', name: '自研 ASIC 与 TPU', def: '云厂商与头部 lab 为特定 workload 自研的专用芯片，追求性价比与供应自主。', keywords: ['tpu', 'asic', '自研芯片', 'trainium', 'mtia', '定制芯片', '平头哥', '真武', 'ppu', '含光800', 't-head'], upstream: ['fab'], downstream: ['datacenter'], maturity: '爬坡期', why: '云厂商把推理成本曲线握回自己手里、对冲 GPU 供给风险的手段。', moat: '与自家 workload 和采购规模深度耦合，外部难以复制。', bottleneck: '软件生态（CUDA 迁移成本）与代工产能分配。', signals: ['TPU/Trainium 对外开放比例', '自研芯片对内部负载的替代率'], sub: [
+          { id: 'cloudasic', name: '云自研（TPU/Trainium/MTIA）', def: '头部云厂商的定制路线，成本优势随规模放大。' },
+          { id: 'cnasic', name: '国产替代（昇腾等）', def: '供给自主驱动的第二条供给曲线，生态成熟度是差距所在。' }
+        ] },
+        { id: 'fab', name: '先进制程与代工', def: '芯片制造的物理上限：先进制程产能与先进封装是算力供给的硬约束。', keywords: ['台积电', '代工', '制程', '3nm', '2nm', '先进封装', 'cowos'], upstream: [], downstream: ['gpu', 'asic', 'memory'], maturity: '成熟期', why: '算力供给的物理上限：制程与封装产能决定全行业出货天花板。', moat: '十年量级的工艺积累与千亿级资本门槛。', bottleneck: '3nm/2nm 产能与 CoWoS 先进封装扩产节奏。', signals: ['台积电 AI 相关营收占比', '先进封装扩产与交期'] , sub: [
+          { id: 'leading', name: '领先制程（3nm/2nm）', def: '性能与能效的前沿，AI 芯片主力' },
+          { id: 'mature', name: '成熟制程扩产', def: '28nm+ 与车规工业芯片，国产替代主场' },
+          { id: 'hybrid', name: '制程与封装协同', def: '先进制程 × CoWoS 一体化交付能力' }
+        ] },
+        { id: 'equip', name: '半导体设备与材料', def: '制程能力的上游决定者：光刻、沉积、刻蚀、量测设备与关键材料，EUV 是最硬的单点卡口。', keywords: ['asml', '应用材料', '北方华创', '中微', '光刻机', 'euv', '刻蚀', '设备', '量测', 'eda'], upstream: [], downstream: ['fab', 'packaging', 'memory'], maturity: '成熟期', why: '制程上限的物理决定者：没有设备就没有产能，扩产订单领先晶圆厂两年。', moat: '专利与工艺 know-how、装机量带来的服务与耗材收入、客户认证壁垒。', bottleneck: 'EUV 与量测等单点垄断、出口管制；交期以年计。', signals: ['设备商订单与出货指引', '中国大陆设备采购占比'] , sub: [
+          { id: 'litho', name: '光刻与量测', def: 'EUV 单点卡口与良率之眼' },
+          { id: 'depsub', name: '沉积刻蚀与清洗', def: '台数最多、国产替代进展最快的环节' },
+          { id: 'materials', name: '材料与零部件', def: '光刻胶、硅片与精密部件，良率的隐形决定者' }
+        ] },
+        { id: 'packaging', name: '先进封装', def: 'CoWoS/SoIC/混合键合把 GPU 与 HBM 装到一起，是当前算力供给最硬的产能瓶颈。', keywords: ['cowos', '先进封装', 'soic', '混合键合', 'chiplet', '芯粒', '封装', '长电'], upstream: ['fab', 'equip'], downstream: ['gpu', 'asic', 'memory'], maturity: '爬坡期', why: '单卡性能提升放缓后封装成为系统级性能的新前沿，AI 卡出货的直接卡点。', moat: '与前道制程联动的工艺积累、大客户绑定产能。', bottleneck: 'CoWoS 产能与混合键合良率；洁净室与人力扩张速度。', signals: ['CoWoS 月产能', '封装在加速卡 BOM 成本中的占比'], sub: [
+          { id: 'cowos', name: '2.5D（CoWoS 类）', def: 'GPU 与 HBM 并排封装到中介层，AI 加速卡当前主流形态。' },
+          { id: 'soic3d', name: '3D 与混合键合', def: 'SoIC/Foveros 直接堆叠，带宽与密度再上一档。' },
+          { id: 'chiplet', name: '芯粒与标准接口', def: 'UCIe 标准下的模块化设计，把大芯片拆成小芯粒分别流片。' }
+        ] },
+        { id: 'memory', name: 'HBM 与存储', def: '高带宽内存是 AI 芯片的搭配刚需，产能分配直接影响 GPU 供给。', keywords: ['hbm', '存储', '内存', '海力士', '美光', 'dram'], upstream: ['fab'], downstream: ['gpu'], maturity: '爬坡期', why: 'HBM 是 AI 芯片的标配刚需，堆叠容量决定单卡能力上限。', moat: '三家寡头格局与 DRAM 工艺深度耦合，新进入者周期以年计。', bottleneck: 'HBM 产能分配（大客户优先）与堆叠良率。', signals: ['HBM 合约价与预订量', '单卡 HBM 容量趋势'] , sub: [
+          { id: 'hbm', name: 'HBM 堆叠', def: 'AI 显存刚需，产能分配决定 GPU 出货' },
+          { id: 'dram', name: 'DRAM 主存', def: '服务器与端侧基本盘，周期性强' },
+          { id: 'nand', name: 'NAND 闪存', def: '企业级 SSD 与存力，AI 数据湖底座' }
+        ] },
+        { id: 'datacenter', name: '数据中心与集群', def: '万卡集群与智算中心是把芯片变成可用算力的系统集成层。', keywords: ['数据中心', '算力集群', '超算', '万卡', '智算中心', 'cluster', '一体机', '超融合', 'hci', '私有化部署'], upstream: ['gpu', 'asic', 'network', 'energy'], downstream: ['cloud'], maturity: '爬坡期', why: '把芯片变成可用算力的系统集成层，交付周期本身就是供给约束。', moat: '选址、电力接入与运维经验的本地化壁垒。', bottleneck: '电力接入与关键设备交期（以季度计）。', signals: ['智算中心开工与上架率', 'GPU 利用率/空转率'] , sub: [
+          { id: 'hyperscale', name: '超大规模自建', def: '云厂与模型公司的十万卡集群' },
+          { id: 'colocation', name: '第三方托管 IDC', def: '机柜、电力与合规节点' },
+          { id: 'liquidcool', name: '液冷与配套', def: '冷板/浸没液冷、高压直流配电' },
+          { id: 'appliance', name: '超融合与一体机', def: '私有化「开箱即用」形态：全栈超融合升级为 Agent 承载底座；大模型一体机从满血 671B 退潮后转向 70B 级与场景套件' }
+        ] },
+        { id: 'energy', name: '能源与电力', def: 'AI 的终极约束正从芯片转向电力：兆瓦级供电成为选址第一变量。', keywords: ['电力', '能源', '核电', '供电', '耗电', '兆瓦', '电力供应'], upstream: [], downstream: ['datacenter'], maturity: '过热期', why: 'AI 的终极约束正从芯片转向兆瓦：电力即产能。', moat: '电网接入权与长协核电等稀缺资源位。', bottleneck: '并网周期与电网容量（以年计），跑不赢负载增长。', signals: ['核电与长期购电协议签约量', '数据中心用电审批节奏'], sub: [
+          { id: 'nuclear', name: '核电与长期购电', def: '基荷供电的主流解：核电新建、重启与多年期 PPA。' },
+          { id: 'gas', name: '燃气轮机与备用电源', def: '并网慢的过渡解：现场燃气轮机与储能。' },
+          { id: 'grid', name: '电网与选址', def: '并网队列与电价结构决定选址，主权算力布局的一环。' }
+        ] },
+        { id: 'network', name: '网络与光互连', def: '集群规模上到万卡后，互连带宽与光模块成为新的瓶颈与生意。', keywords: ['光模块', '互连', 'infiniband', '以太网', '交换机', '组网'], upstream: [], downstream: ['datacenter'], maturity: '爬坡期', why: '万卡集群的规模上限由互连带宽决定，光模块量价齐升。', moat: '光器件工艺良率与客户认证周期。', bottleneck: '1.6T 光模块产能与交换芯片供给。', signals: ['光模块龙头月度营收', '以太网 RDMA 对 IB 的份额侵蚀'] , sub: [
+          { id: 'switch', name: '交换芯片与设备', def: '端口速率与拥塞控制的大脑' },
+          { id: 'optics', name: '光模块与光器件', def: '电光转换，1.6T 世代量价齐升' },
+          { id: 'fabric', name: '组网与协议', def: 'InfiniBand 对以太网、rail-optimized 拓扑' }
+        ] },
+        { id: 'cloud', name: '算力租赁与云', def: '把算力按 token 或按卡时卖出去的层，价格即模型创业的成本线。', keywords: ['算力租赁', 'coreweave', 'aws', 'azure', 'gcp', '云厂商', '算力价格', '租赁'], upstream: ['datacenter'], downstream: ['maas', 'training'], maturity: '成熟期', why: '算力的分销层：按卡时/token 卖出，价格即下游创业成本线。', moat: '企业合同、混合云粘性与合规资质。', bottleneck: 'GPU 供给分配与价格战对毛利的挤压。', signals: ['算力租赁价格指数', '云厂商 AI 收入占比'] , sub: [
+          { id: 'integrated', name: '综合云', def: 'AWS/Azure/GCP 企业市场三强' },
+          { id: 'gpuc', name: 'GPU 专项云', def: 'CoreWeave 类按卡时出租的 AI 原生云' },
+          { id: 'chinacloud', name: '中国算力云', def: '阿里云、火山引擎、华为云分层竞争' }
+        ] },
+        { id: 'edge', name: '边缘与端侧算力', def: '手机、PC 与终端设备上的本地推理，隐私与延迟驱动的新战场。', keywords: ['端侧', '边缘', 'npu', '手机芯片', '本地推理', '终端算力'], upstream: ['gpu', 'asic'], downstream: ['device', 'assistant'], maturity: '萌芽期', why: '隐私与延迟驱动的本地推理，端侧是下一个分发入口的物化。', moat: 'SoC 集成能力与终端出货量。', bottleneck: '端侧模型能力不足与 NPU 生态碎片化。', signals: ['旗舰机 NPU 算力配置', '端侧模型跑分与实际调用量'] , sub: [
+          { id: 'soc', name: '手机与 PC SoC', def: 'NPU 算力成为旗舰卖点' },
+          { id: 'autoedge', name: '车载与机器人边缘', def: '安全等级最高的端侧算力' },
+          { id: 'runtime', name: '端侧运行时', def: '量化模型与框架适配，碎片化是主要障碍' }
+        ] },
+        { id: 'robothw', name: '机器人本体与执行器', def: '具身智能的物理载体：电机、减速器、灵巧手与传感器，中国供应链占优。', keywords: ['机器人', '执行器', '减速器', '电机', '灵巧手', '传感器', '宇树', '本体'], upstream: [], downstream: ['embodiedapp'], maturity: '过热期', why: '具身智能的物理载体，中国供应链在执行器/减速器环节占优。', moat: '精密制造的规模成本与快速迭代。', bottleneck: '灵巧手与传感器仍是短板，整机未过经济性关。', signals: ['人形机器人出货量与成本曲线', '核心部件国产化率'] , sub: [
+          { id: 'actuator', name: '执行器与关节', def: '电机 + 减速器 + 丝杠，成本与性能核心' },
+          { id: 'dexterous', name: '灵巧手与力控', def: '具身智能最难的硬件短板' },
+          { id: 'sensor', name: '传感与整机集成', def: '视觉、力觉与 IMU 的整机工程' }
+        ] },
+        { id: 'supply', name: '供应链与出口管制', def: '地缘政治直接改写算力供给曲线：禁售、替代与转口是常态变量。', keywords: ['出口管制', '禁售', '供应链', '制裁', '地缘', 'h20', '管制'], upstream: [], downstream: ['gpu', 'datacenter'], maturity: '成熟期', why: '地缘变量直接改写供给曲线与成本结构，常态化的政策风险。', moat: '合规体系与多元化产能布局。', bottleneck: '管制规则的不确定性本身（无法对冲，只能冗余）。', signals: ['出口管制清单更新', '转口与替代链份额变化'] , sub: [
+          { id: 'chiplist', name: '芯片与设备管制', def: '先进制程、EUV 与 HBM 的出口许可' },
+          { id: 'transit', name: '转口与第三国', def: '中东与东南亚的算力飞地' },
+          { id: 'compliance', name: '企业合规体系', def: '多源采购、库存与许可证管理' }
+        ] }
+      ]
+    },
+    {
+      key: 'L2', name: '数据与模型层', en: 'Data & Models',
+      desc: '把数据变成智能的层：预训练语料、前沿模型、开源权重、训练方法与推理优化。智能本身的供给在这里形成。',
+      nodes: [
+        { id: 'pretrain', name: '预训练数据', def: '高质量语料的存量与版权是预训练的第一性约束，数据墙叙事的源头。', keywords: ['预训练', '训练数据', '语料', '数据集', '版权数据', '数据墙'], upstream: [], downstream: ['frontier', 'openweight'], maturity: '爬坡期', why: '语料存量与版权是智能的第一性约束，数据墙叙事的源头。', moat: '独家授权与私有数据壁垒。', bottleneck: '高质量人类文本见底，清洗与版权成本陡增。', signals: ['版权授权成交额', '数据中心容量（GW 口径）'] , sub: [
+          { id: 'web', name: '网页语料', def: 'Common Crawl 清洗与配比，规模基础' },
+          { id: 'licensed', name: '授权语料', def: '新闻、图书与代码的版权采购' },
+          { id: 'mmdata', name: '多模态数据', def: '图文音视频配比，能力泛化的边界' }
+        ] },
+        { id: 'synth', name: '合成数据与标注', def: '用模型生成训练数据缓解数据墙，标注产业随之转型。', keywords: ['合成数据', '标注', '数据工厂', '人类反馈', '数据合成'], upstream: ['frontier'], downstream: ['training'], maturity: '爬坡期', why: '用生成缓解数据墙：质量闸门决定它是补药还是毒药。', moat: '过滤漏斗与验证闭环的工程资产。', bottleneck: '模式坍缩与分布多样性损失。', signals: ['前沿模型训练中合成占比披露', '合成数据工具与论文热度'] , sub: [
+          { id: 'synthetic', name: '合成数据', def: '模型生成 + 质量闸门，补真实语料缺口' },
+          { id: 'rlhf', name: '人类反馈数据', def: '偏好与专家标注，对齐的原料' },
+          { id: 'env', name: '可验证环境', def: '代码、数学与 agent 轨迹的训练场' }
+        ] },
+        { id: 'frontier', name: '前沿闭源模型', def: 'GPT/Claude/Gemini/Grok 的旗舰竞赛：能力上限的定义者，也是 API 经济的卖方。', keywords: ['gpt', 'claude', 'gemini', 'grok', '前沿模型', '旗舰模型', 'astra', 'fable', 'mythos'], upstream: ['pretrain', 'synth', 'cloud'], downstream: ['maas', 'agentfw', 'coding'], maturity: '爬坡期', why: '能力上限的定义者，API 经济的卖方龙头。', moat: '算力获取 + 后训练 know-how + 安全合规资质。', bottleneck: '训练成本与能源约束；旗舰差异化正在收窄。', signals: ['旗舰迭代间隔与幅度', 'API 价格与毛利结构'], sub: [
+          { id: 'flagship', name: '旗舰档', def: 'Astra/Gemini 旗舰/Opus 级：能力天花板与品牌锚。' },
+          { id: 'fast', name: '快速档', def: 'Flash/Turbo/Sol 类：成本敏感场景的主力出货位。' },
+          { id: 'cyber', name: '安全特化档', def: 'Cyber/Argon 类：受控开放的网络防御特化路线。' }
+        ] },
+        { id: 'openweight', name: '开源权重生态', def: 'Qwen/DeepSeek/GLM/Llama 等开放权重阵营：把模型变成公共品，改写定价权；Hugging Face 被收购后社区治理进入巨头时代。', keywords: ['开源', '权重', 'apache', 'mit 许可', 'llama', 'qwen', 'deepseek', 'glm', '开源模型', 'hugging face', 'huggingface'], upstream: ['pretrain'], downstream: ['maas', 'economics'], maturity: '爬坡期', why: '把模型变成公共品，改写定价权与地缘供给格局。', moat: '社区生态、迭代速度与多语种覆盖。', bottleneck: '推理成本与商业化闭环——谁为开源买单尚未定型。', signals: ['开源与闭源的智能指数差距', '权重下载量与衍生模型数'] , sub: [
+          { id: 'flagship', name: '旗舰开源家族', def: 'Llama/Qwen 生态，大厂开源换影响力' },
+          { id: 'efficient', name: '高效开源', def: 'DeepSeek/Mistral，性价比路线' },
+          { id: 'finetune', name: '微调与垂直生态', def: '行业模型与本地化部署的衍生层' }
+        ] },
+        { id: 'training', name: '训练方法与对齐', def: '预训练之上的后训练：RLHF、蒸馏、强化学习决定模型的可用性与性格。', keywords: ['rlhf', '对齐', '后训练', '蒸馏', '微调', '强化学习', '训练方法'], upstream: ['synth'], downstream: ['frontier', 'guardrail'], maturity: '成熟期', why: '决定模型可用性与「性格」的环节，能力竞赛的暗线。', moat: '后训练 know-how 与偏好数据资产。', bottleneck: '可验证领域之外的奖励设计（开放域收益有限）。', signals: ['新模型行为差异的对比分析', 'RLVR 与验证器相关披露'] , sub: [
+          { id: 'sft', name: '指令微调（SFT）', def: '教会模型「听话」的第一步' },
+          { id: 'alignment', name: '偏好与对齐', def: 'RLHF/DPO 定行为与性格' },
+          { id: 'rlvr', name: '可验证奖励 RL', def: '数学、代码与工具调用，后训练当前主战场' }
+        ] },
+        { id: 'reasoning', name: '推理模型与测试时计算', def: '用推理时间换能力：思维链、自我验证与搜索让模型「先想后答」，把算力竞赛从训练侧延伸到推理侧。', keywords: ['o1', '推理模型', '测试时计算', '思维链', '推理档', 'r1', '思考', 'test-time', '长思考', '反向扩展'], upstream: ['training', 'frontier'], downstream: ['inference', 'token'], maturity: '爬坡期', why: '预训练 Scaling 放缓后的第二段能力曲线：推理算力可以直接购买智能。', moat: '奖励设计与可验证领域的后训练 know-how。', bottleneck: '过度思考与反向扩展（更长思考不总更好）；单位任务成本。', signals: ['旗舰推理档与标准档的价差与采用率', '推理算力占资本开支比重'], sub: [
+          { id: 'cot', name: '思维链与推理档', def: 'CoT 与混合推理（单模型开关思考）成为旗舰标配。' },
+          { id: 'rlr', name: '可验证奖励 RL', def: '数学、代码与 agent 轨迹：推理能力的训练侧来源。' },
+          { id: 'overthink', name: '过度思考与边界', def: '反向扩展现象：思考预算调度成为新的工程问题。' }
+        ] },
+        { id: 'inference', name: '推理优化与引擎', def: 'vLLM/量化/KV cache 等系统工程，决定单位算力能服务多少用户。', keywords: ['推理', 'vllm', 'sglang', '量化', 'kv cache', '吞吐', '推理引擎', '推理优化'], upstream: ['frontier', 'openweight', 'reasoning'], downstream: ['maas', 'deploy'], maturity: '爬坡期', why: '决定单位算力能服务多少用户，是成本曲线的工程端。', moat: '系统工程深度与硬件耦合优化。', bottleneck: '长上下文与高并发下的 KV 带宽墙。', signals: ['推理引擎版本与吞吐基准', '单 token 成本下降速率'], sub: [
+          { id: 'engine', name: '推理引擎（vLLM/SGLang）', def: '调度、批处理与内核优化的主战场。' },
+          { id: 'quant', name: '量化与压缩', def: 'FP4/FP8 与 KV 压缩：精度换吞吐的性价比杠杆。' },
+          { id: 'serve', name: '服务化与调度', def: '多模型路由、弹性伸缩与冷启动治理。' }
+        ] },
+        { id: 'bench', name: '评测与基准', def: 'Benchmark 是行业的度量衡：榜单名次直接影响商业信任与叙事。', keywords: ['基准', 'benchmark', 'sota', '评测', 'arc-agi', 'lmarena', '榜单', '刷榜'], upstream: [], downstream: ['frontier', 'openweight'], maturity: '挤泡沫期', why: '行业的度量衡：榜单名次直接影响商业信任与叙事。', moat: '基准的方法论公信力与防污染设计。', bottleneck: '刷榜与数据污染侵蚀公信力，「评测作弊」事件频发。', signals: ['新基准更替速度', '模型作弊/污染曝光事件'] , sub: [
+          { id: 'static', name: '静态题库', def: 'MMLU/GPQA 类知识考试，趋于饱和' },
+          { id: 'arena', name: '人类偏好竞技场', def: 'LMArena 类真实投票，难以刷榜' },
+          { id: 'task', name: '任务与安全基准', def: 'SWE-bench、红队评测，向真实工作迁移' }
+        ] },
+        { id: 'multimodal', name: '多模态与视频生成', def: '视觉/音频/视频的统一建模，视频生成是当前竞争最激烈的细分。', keywords: ['多模态', '视频生成', '图像生成', 'sora', 'veo', 'seedance', '可灵', '视频模型'], upstream: ['frontier'], downstream: ['creative'], maturity: '爬坡期', why: '统一建模打开视觉/音频/视频的变现面，视频生成竞争最烈。', moat: '视频版权数据 + 算力 + 生成质量。', bottleneck: '物理一致性与单条生成成本。', signals: ['视频模型迭代与时长突破', '创作工具的付费转化'] , sub: [
+          { id: 'understanding', name: '多模态理解', def: '看图听音读视频，先商业化' },
+          { id: 'video', name: '视频生成', def: '竞争最激烈，广告影视工业化入口' },
+          { id: 'image', name: '图像生成', def: '设计生产力与素材供给的底座' }
+        ] },
+        { id: 'speech', name: '语音与音频模型', def: 'TTS、实时语音与音乐生成的模型层，voice 是下一个交互入口。', keywords: ['语音', '音频', 'tts', '音乐生成', 'suno', '实时语音', '全双工'], upstream: ['frontier'], downstream: ['audio'], maturity: '爬坡期', why: '延迟最敏感、粘性最强的交互入口。', moat: '延迟与情感表现力的端到端栈。', bottleneck: '全双工延迟与规模化成本。', signals: ['实时语音延迟纪录', '语音场景调用时长'] , sub: [
+          { id: 'asr', name: '语音识别', def: '听写准确率之战基本收官' },
+          { id: 'tts', name: '语音合成', def: '克隆与情感，商业化最快' },
+          { id: 'duplex', name: '实时对话', def: '全双工与低延迟，语音 agent 的入口' }
+        ] },
+        { id: 'worldmodel', name: '世界模型', def: '让模型理解物理世界的尝试：视频生成作世界模拟器，通往具身智能。', keywords: ['世界模型', '物理仿真', '世界模拟', 'genie'], upstream: ['multimodal'], downstream: ['embodiedapp'], maturity: '萌芽期', why: '通往具身与物理仿真的必经实验，下一个范式的期权。', moat: '研究纵深与仿真数据闭环。', bottleneck: '物理规律的可验证性尚未解决。', signals: ['世界模型论文与 demo 突破', '机器人训练中仿真占比'] , sub: [
+          { id: 'videowm', name: '视频世界模型', def: 'Genie 类，从视频学物理规律' },
+          { id: 'autowm', name: '自动驾驶世界模型', def: '仿真与长尾生成，车厂刚需' },
+          { id: 'sim', name: '仿真平台', def: '机器人训练的合成环境供给' }
+        ] },
+        { id: 'token', name: '模型定价与 token 经济', def: '每百万 token 的定价体系是智能的价格发现机制，降价即行业信号。', keywords: ['定价', '降价', 'token', '价格战', '每百万', '价格'], upstream: ['frontier', 'openweight', 'inference'], downstream: ['bizmodel', 'economics'], maturity: '重构期', why: '智能的价格发现机制：降价本身就是行业信号。', moat: '成本曲线领先对手一个身位。', bottleneck: '价格战下毛利与差异化的平衡。', signals: ['旗舰与快速档价差', '每任务成本基准（AA 口径）'] , sub: [
+          { id: 'listprice', name: '牌价与分档', def: '旗舰锚品牌、快速档抢量' },
+          { id: 'discount', name: '缓存与批量折扣', def: '命中率直接影响账单与毛利' },
+          { id: 'outcome', name: '按结果计费', def: '从按 token 走向按任务定价的试验' }
+        ] }
+      ]
+    },
+    {
+      key: 'L3', name: '平台与工具层', en: 'Platform & Tools',
+      desc: '把模型能力变成开发者可用的产品基础设施：框架、API、搜索、护栏与协议。谁离开发者最近，谁捕获分发。',
+      nodes: [
+        { id: 'agentfw', name: '智能体框架与编排', def: 'Agent 的开发框架与多智能体编排层，应用复杂度的承载者。', keywords: ['智能体', 'agent 框架', '编排', '多智能体', 'langgraph', 'autogen', 'crewai', 'agent'], upstream: ['frontier', 'maas'], downstream: ['enterprise', 'office'], maturity: '过热期', why: '应用复杂度的承载层：谁定框架，谁定分发。', moat: '开发者心智与运行时事实标准。', bottleneck: '框架过剩、生产级可靠性工程尚未收敛。', signals: ['框架采用率消长（star/生产案例）', '标准化收敛事件（合并或淘汰）'] , sub: [
+          { id: 'orchestration', name: '编排框架', def: 'LangGraph 类：图与状态机的开发范式' },
+          { id: 'multiagent', name: '多智能体协作', def: '分工、交接与共享记忆' },
+          { id: 'lowcode', name: '低代码工作流', def: 'Dify/Coze：把编排交给业务人员' }
+        ] },
+        { id: 'coding', name: 'Agentic 编码', def: 'AI 编码是模型变现最快、竞争最白热的场景：IDE、终端与云端智能体三条路线。', keywords: ['编码', 'cursor', 'claude code', 'copilot', 'ide', 'devin', 'codex', '代码'], upstream: ['frontier', 'maas'], downstream: ['devtools', 'devhost'], maturity: '爬坡期', why: '模型变现最快、能力兑现最直接的场景。', moat: '采纳/重试信号的数据飞轮 + 入口卡位。', bottleneck: '长任务可靠性与企业采购合规。', signals: ['编码工具 ARR 与估值锚', 'SWE 基准与真实仓库通过率'], sub: [
+          { id: 'ide', name: 'AI IDE（Cursor 类）', def: '编辑器入口 + 商业化最成熟，被收购整合后进入巨头棋局。' },
+          { id: 'cli', name: '终端 Agent（Claude Code/Codex）', def: '开发者自有环境里的常驻智能体，扩展机制成为新平台。' },
+          { id: 'cloudag', name: '云端自主 Agent（Devin 类）', def: '异步整机沙箱形态，按任务交付而非按席位收费。' }
+        ] },
+        { id: 'devhost', name: '代码托管与 CI', def: '仓库与流水线是 agent 时代的新基座：自建托管（Origin 类）正在挑战 GitHub 的中心地位。', keywords: ['代码托管', 'github', 'gitlab', '仓库', 'ci', '版本控制', 'origin'], upstream: ['coding'], downstream: ['devtools'], maturity: '萌芽期', why: 'agent 时代的代码基座：托管权即生态权。', moat: '迁移成本与 CI 集成深度。', bottleneck: '与 GitHub 网络效应对抗的冷启动。', signals: ['自建托管平台的企业采用', 'agent 原生 CI 工具的出现'] , sub: [
+          { id: 'git', name: '代码托管', def: '仓库、PR 与评审的网络效应' },
+          { id: 'cicd', name: 'CI/CD 流水线', def: '构建、测试与部署的自动化' },
+          { id: 'sandbox', name: 'Agent 沙箱', def: 'agent 读写仓库的隔离运行环境' }
+        ] },
+        { id: 'maas', name: 'MaaS 与模型 API', def: '把模型按调用卖的开发者入口，价格战与生态锁定的主阵地。', keywords: ['api', 'maas', '开放平台', '模型服务', '推理服务', '接口'], upstream: ['frontier', 'openweight', 'inference', 'cloud'], downstream: ['agentfw', 'coding', 'rag'], maturity: '重构期', why: '开发者入口与价格战主阵地：卖模型的方式正在被重写。', moat: '生态锁定与企业合同。', bottleneck: '同质化与毛利压缩，开源权重平价冲击。', signals: ['API 降价节奏', '聚合/路由层份额'], sub: [
+          { id: 'pub', name: '公云 API', def: '模型厂商直营的开发者入口，价格战的第一现场。' },
+          { id: 'broker', name: '聚合与路由（OpenRouter 类）', def: '多模型代理与按效果路由，比价层捕获弃留决策。' },
+          { id: 'priv', name: '私有化部署', def: '数据主权与合规驱动的自持路线，vLLM 栈的主场。' }
+        ] },
+        { id: 'search', name: 'AI 搜索与答案引擎', def: '用生成式答案重构信息获取，直接动摇传统搜索的分发权。', keywords: ['ai 搜索', '答案引擎', 'perplexity', '搜索引擎', '信息获取', 'ai 浏览器'], upstream: ['frontier', 'rag'], downstream: ['assistant'], maturity: '过热期', why: '重构信息分发权，动摇最大的广告市场。', moat: '分发入口与出版商独家授权。', bottleneck: '商业化（订阅/广告）与答案可信度。', signals: ['查询量份额变化', 'GEO 与出版商授权交易'], sub: [
+          { id: 'answer', name: '答案引擎（Perplexity 类）', def: '引用优先的独立入口，靠授权内容建差异。' },
+          { id: 'embed', name: '内嵌搜索（ChatGPT 搜索）', def: '助手内置检索：入口在手，搜索变成功能。' },
+          { id: 'browser', name: 'AI 浏览器形态', def: '把答案层做进浏览器，直接接管会话与操作。' }
+        ] },
+        { id: 'rag', name: 'RAG 与知识库', def: '企业把私有知识接进模型的标准化路径，落地项目的第一站。', keywords: ['rag', '向量', '知识库', '检索增强', 'embedding', '企业知识'], upstream: ['maas'], downstream: ['enterprise', 'legal'], maturity: '成熟期', why: '企业私有知识接入的标准路径，落地项目的第一站。', moat: '数据管线资产与行业知识库。', bottleneck: '检索质量的场景适配长尾。', signals: ['企业 RAG 项目中标与续费率', '向量/检索组件营收增长'] , sub: [
+          { id: 'vector', name: '向量检索', def: 'Embedding + 相似度，RAG 的地基' },
+          { id: 'kb', name: '企业知识库', def: '权限、血缘与新鲜度的治理' },
+          { id: 'eval', name: '检索评测', def: '命中率与引用准确度的量化' }
+        ] },
+        { id: 'datainfra', name: '数据基础设施', def: '数据湖、湖仓一体、向量库与数据治理：企业 AI 的数据底座，模型越强越依赖数据工程。', keywords: ['databricks', 'snowflake', '数据湖', '湖仓', '向量数据库', '数据治理', 'etl', 'milvus'], upstream: ['cloud', 'pretrain'], downstream: ['rag', 'deploy'], maturity: '爬坡期', why: '企业 AI 项目大部分工作量在数据侧：RAG、微调与 agent 都吃数据基础设施。', moat: '数据引力（数据在哪计算就在哪）与开放格式生态（Delta/Iceberg）。', bottleneck: '云厂自研服务的挤压；非结构化数据治理成熟度。', signals: ['湖仓一体采用率', '向量库工作负载增长'] , sub: [
+          { id: 'lakehouse', name: '湖仓一体', def: 'Databricks/Snowflake 路线：把数据湖与数仓合并成一个平台。' },
+          { id: 'vectordb', name: '向量与检索', def: 'Pinecone/Milvus 类：为 RAG 与语义搜索提供检索底座。' },
+          { id: 'datagov', name: '数据治理与合规', def: '目录、血缘与权限：企业敢不敢用数据的先决条件。' }
+        ] },
+        { id: 'devtools', name: '开发者工具链', def: 'SDK、CLI 与调试工作流：开发体验即生态护城河。', keywords: ['开发者工具', 'sdk', 'cli', '调试', '工作流', '开发者'], upstream: ['coding'], downstream: ['office'], maturity: '爬坡期', why: '开发体验即生态护城河的转化层。', moat: '工作流嵌入深度。', bottleneck: '模型厂商平台化对独立工具空间的挤压。', signals: ['SDK/CLI 下载与留存', '平台收购独立工具的动线'] , sub: [
+          { id: 'eval', name: '评测与回归', def: 'prompt 与模型的版本化管理' },
+          { id: 'observability', name: '可观测', def: '轨迹追踪、成本与质量归因' },
+          { id: 'shipping', name: '部署与扩缩容', def: '从 notebook 到生产的最后一跳' }
+        ] },
+        { id: 'guardrail', name: '安全护栏与评测服务', def: '红队、护栏与安全评估的产业化：前沿能力 commercialize 的前提。', keywords: ['护栏', '安全评估', '红队', 'preparedness', 'aisi', '安全评测'], upstream: ['training'], downstream: ['regulation'], maturity: '萌芽期', why: '前沿能力商业化的合规前提，监管直接创造的市场。', moat: '评测方法学与监管互认。', bottleneck: '标准未定，采购意愿滞后于合规压力。', signals: ['AI Act 执法案例', '红队/评估服务采购额'] , sub: [
+          { id: 'ioguard', name: '输入输出护栏', def: '越狱与敏感内容的内容过滤' },
+          { id: 'toolperm', name: '工具权限', def: 'agent 能碰什么、花什么的边界' },
+          { id: 'redteam', name: '红队与评测', def: '持续对抗测试与安全认证' }
+        ] },
+        { id: 'deploy', name: '部署与可观测', def: '模型的灰度、监控与成本治理：生产环境与 demo 的分界线。', keywords: ['部署', '可观测', '监控', '灰度', '运维', '交付', 'fde', '部署工程', '实施', '伙伴认证', '专业服务'], upstream: ['inference'], downstream: ['enterprise'], maturity: '爬坡期', why: '生产与 demo 的分界线，可观测决定续费。', moat: '深度运维集成带来的切换成本。', bottleneck: '概率系统的 SLO 定义本身未定型。', signals: ['LLM 可观测工具营收', '企业 AI 项目上线率'], sub: [
+          { id: 'serving', name: '推理服务化', def: 'vLLM 类引擎与批处理调度' },
+          { id: 'obs', name: '监控与追踪', def: '延迟、质量与成本的遥测' },
+          { id: 'costctl', name: '成本调度', def: '路由、缓存与降级策略' }
+        ] },
+        { id: 'opsagent', name: '运维智能体与 AIOps', def: '把告警分诊、根因定位、受控变更与巡检交给 agent：从规则引擎 AIOps 走向大模型驱动的自治运维。', keywords: ['运维', 'aiops', 'sre', '告警', '根因', '巡检', '运维智能体', '变更', '智算运维'], upstream: ['deploy', 'agentfw', 'datacenter'], downstream: ['secops'], maturity: '爬坡期', why: '告警过载与专家稀缺让自治运维成为刚需，智算中心让「算力运维」本身变成 AI 工作。', moat: '遥测数据规模、运维知识库与误报率的长期积累，以及变更执行权限的信任。', bottleneck: '自动变更的信任与责任界定；跨系统权限打通。', signals: ['告警自动闭环率', 'MTTR 缩短幅度', '智算运维订单'], sub: [
+          { id: 'alerting', name: '告警分诊与根因', def: 'AI 分诊告警、定位根因，替代一线值守。' },
+          { id: 'changeops', name: '变更与自愈', def: '低风险变更自动化、故障自愈与回滚。' },
+          { id: 'gpuops', name: '算力运维', def: '智算中心 GPU 集群巡检、故障卡定位与调度优化。' }
+        ] },
+        { id: 'computeruse', name: '浏览器与计算机使用', def: '让模型直接操作电脑与浏览器：通用 agent 的最后一公里。', keywords: ['computer use', '浏览器', '桌面自动化', '操作电脑', 'computer'], upstream: ['agentfw'], downstream: ['office', 'enterprise'], maturity: '萌芽期', why: '通用 agent 的最后一公里：绕开 API 生态的直通路径。', moat: '暂无稳定护城河，先发交互数据占优。', bottleneck: '可靠性与安全边界（越权与误操作风险）。', signals: ['浏览器自动化的生产采用案例', '沙箱/权限基础设施成熟度'] , sub: [
+          { id: 'browser', name: '浏览器操作', def: '网页填表与比价，最先落地' },
+          { id: 'desktop', name: '桌面操控', def: '跨应用执行，权限与风险最高' },
+          { id: 'recovery', name: '失败恢复', def: '点错之后的回滚与重试策略' }
+        ] },
+        { id: 'mcp', name: '协议与互操作', def: 'MCP 等协议把工具调用标准化：agent 生态的 USB 接口。', keywords: ['mcp', '协议', '互操作', 'function calling', '标准化'], upstream: ['agentfw'], downstream: ['devtools', 'enterprise'], maturity: '爬坡期', why: '工具调用的 USB 接口：把 N×M 集成降为 N+M。', moat: '协议事实标准的网络效应。', bottleneck: '安全与授权模型尚不完善。', signals: ['主流平台原生支持数', 'MCP 服务器生态增速'] , sub: [
+          { id: 'tools', name: '工具协议', def: 'MCP：模型接工具的 USB-C' },
+          { id: 'a2a', name: 'Agent 协作', def: 'A2A：跨 agent 的任务交接' },
+          { id: 'identity', name: '身份与支付', def: 'agent 代表谁的授权与结算' }
+        ] }
+      ]
+    },
+    {
+      key: 'L4', name: '行业应用层', en: 'Applications',
+      desc: '智能变成收入的地方：消费助手、企业服务、垂直行业与创作工具。应用层的成败决定整条链的商业闭环。',
+      nodes: [
+        { id: 'assistant', name: '消费级 AI 助手', def: '面向大众的超级入口：ChatGPT/豆包/Kimi 的用户数竞赛与广告变现。', keywords: ['chatgpt', '助手', '豆包', 'kimi', '月之暗面', '消费级', '用户数'], upstream: ['maas', 'search', 'edge'], downstream: ['bizmodel', 'distribution'], maturity: '爬坡期', why: '面向大众的超级入口，用户数与广告变现双引擎。', moat: '品牌心智与默认分发位。', bottleneck: '变现多元化（广告/订阅）与差异化。', signals: ['周活与留存', '广告年化收入'], sub: [
+          { id: 'general', name: '通用助手（ChatGPT/豆包）', def: '全人群入口，靠规模与分发打。' },
+          { id: 'verticalag', name: '垂直人群助手', def: 'Teens/教育等特定人群的定制入口，政策敏感。' },
+          { id: 'portal', name: '入口 App 化', def: '嵌进支付/终端等既有高频 App 的助手形态（阿宝类）。' }
+        ] },
+        { id: 'ads', name: '推荐与广告', def: 'AI 最早规模化变现的场景：推荐排序决定平台时长，广告竞价决定流量价值，生成式创意正在改写素材供给。', keywords: ['推荐', '广告', '信息流', '竞价', 'applovin', '程序化', '投放', '素材生成'], upstream: ['inference', 'frontier', 'pretrain'], downstream: ['commerce', 'creative', 'bizmodel'], maturity: '成熟期', why: 'AI 最大的现金流场景：全球广告市场万亿级，匹配效率每提升 1% 都是巨额利润。', moat: '数据飞轮（行为→模型→匹配→行为）与广告主生态双边锁定。', bottleneck: '隐私政策造成的信号丢失与库存增长放缓；生成创意的质量控制。', signals: ['单用户广告价值（ARPU）趋势', '生成素材在广告库中的占比'], sub: [
+          { id: 'recsys', name: '推荐排序', def: '信息流与短视频的排序模型，决定时长与留存。' },
+          { id: 'adtech', name: '广告竞价与投放', def: '程序化竞价与自动出价（Advantage+/PMax 类）。' },
+          { id: 'adcreative', name: '生成式创意', def: 'AI 生成素材、脚本与数字人，改写广告生产成本曲线。' }
+        ] },
+        { id: 'commerce', name: '电商与零售', def: '购物 agent、选品定价、营销素材与履约调度：电商是 AI 渗透最深、离交易最近的场景。', keywords: ['电商', '零售', 'amazon', 'shopify', '阿里', '美团', '购物 agent', '选品', '定价'], upstream: ['ads', 'agentfw', 'rag'], downstream: ['distribution', 'bizmodel'], maturity: '爬坡期', why: '转化率提升可直接换算成 GMV，投入产出可精确度量，是企业最愿付费的 AI。', moat: '商品与交易数据规模、履约网络与商家生态。', bottleneck: '购物 agent 重构入口引发平台与品牌博弈；履约成本刚性。', signals: ['AI 推荐对 GMV 的贡献占比', '购物 agent 交易渗透率'], sub: [
+          { id: 'shopagent', name: '购物助手与 agent', def: 'Rufus 类入口：从找商品、比价到代下单。' },
+          { id: 'opsai', name: '经营与供应链 AI', def: '选品、动态定价、库存与履约调度。' },
+          { id: 'storefront', name: '营销素材与店铺', def: '商品图、详情页与直播数字人的批量生成。' }
+        ] },
+        { id: 'enterprise', name: '企业服务与客服', def: '企业级落地最宽的跑道：客服、营销、销售与内部效率。', keywords: ['企业', '客服', '营销', 'crm', '销售', 'b 端', 'to b'], upstream: ['agentfw', 'rag'], downstream: ['bizmodel'], maturity: '爬坡期', why: '企业落地最宽跑道：从客服到内部效率全流程渗透。', moat: '行业数据与流程集成深度。', bottleneck: '交付产能（人力）而非需求。', signals: ['企业 AI 预算占比', '客服/营销场景续费率'] , sub: [
+          { id: 'service', name: '客服与售后', def: '按解决率计费，最先规模化的场景' },
+          { id: 'sales', name: '销售与营销', def: '线索、话术与 CRM 自动化' },
+          { id: 'internal', name: '内部效率', def: 'HR、财务与流程审批助手' }
+        ] },
+        { id: 'health', name: '医疗 AI', def: '诊断、药物研发与临床流程：监管最严、周期最长、价值最深的垂直。', keywords: ['医疗', '诊断', '药物', '临床', '健康', '医院'], upstream: ['rag', 'multimodal'], downstream: ['bizmodel'], maturity: '爬坡期', why: '价值最深、周期最长的垂直，监管即门槛。', moat: '临床证据与审批资质。', bottleneck: '临床验证周期与责任认定。', signals: ['AI 药物管线进临床数', '医保/审批里程碑'] , sub: [
+          { id: 'diagnosis', name: '诊断辅助', def: '影像与病历，审批最严' },
+          { id: 'pharma', name: '药物研发', def: '管线价值高周期长，联动科学 AI' },
+          { id: 'hospital', name: '医院运营', def: '编码、排班与质控，先落地' }
+        ] },
+        { id: 'finance', name: '金融 AI', def: '投研、量化与风控：数据密集与合规敏感的行业。', keywords: ['金融', '投研', '量化', '风控', '银行', '证券', '保险', 'claude for excel', 'chatgpt for excel', 'grok for excel', '盈透', 'interactive brokers', '普华永道', '欧洲央行'], upstream: ['rag'], downstream: ['bizmodel'], maturity: '爬坡期', why: '数据密集 + 合规敏感，付费能力最强的行业之一。', moat: '数据接入与合规牌照。', bottleneck: '模型可解释性与监管接受度。', signals: ['金融机构 AI 采购额', '投研/交易助手渗透率'] , sub: [
+          { id: 'research', name: '投研', def: '报告生成与信息抽取，卖方先行' },
+          { id: 'risk', name: '风控与反欺诈', def: '可解释性要求最高的场景' },
+          { id: 'service', name: '客服与合规', def: '留痕审计是产品的一部分' }
+        ] },
+        { id: 'legal', name: '法律与合规 AI', def: '合同、检索与合规自动化：文本密集型行业的天然适配。', keywords: ['法律', '律师', '合规', '合同', '司法', '法务', 'harvey', 'legora', 'legal-kb'], upstream: ['rag'], downstream: ['bizmodel'], maturity: '爬坡期', why: '文本密集天然适配，律所付费能力高。', moat: '律所关系与判例数据。', bottleneck: '责任边界与法院接受度。', signals: ['头部律所渗透口径（厂商自述需打折）', '法律 AI 融资与收入锚'] , sub: [
+          { id: 'contract', name: '合同审查', def: '比对、风险标注与条款库' },
+          { id: 'research', name: '判例检索', def: '引用准确度是生命线' },
+          { id: 'dd', name: '尽调与合规', def: '交易与监管场景的高价值交付' }
+        ] },
+        { id: 'secops', name: '网络安全与安全运营', def: 'AI 攻防的双向军备：SOC 自动化、漏洞挖掘与钓鱼对抗，安全预算的新增量。', keywords: ['网络安全', 'soc', '漏洞', '攻防', '红队', 'crowdstrike', '渗透', '钓鱼'], upstream: ['guardrail', 'agentfw'], downstream: ['regulation', 'delivery'], maturity: '爬坡期', why: '攻击者先用 AI，防守被迫跟进：告警过载与安全人才缺口让自动化成为刚需。', moat: '遥测数据规模与威胁情报网络，误报率是长期积累的壁垒。', bottleneck: 'AI 决策的可解释性与追责；agent 扩大攻击面。', signals: ['SOC 自动化采用率', 'AI 相关漏洞披露与事件'], sub: [
+          { id: 'soc', name: 'SOC 自动化与检测响应', def: '告警分诊、自动闭环（MDR/XDR），替代一线分析师。' },
+          { id: 'vulnai', name: '漏洞挖掘与代码审计', def: 'AI 找漏洞、修漏洞，渗透测试自动化。' },
+          { id: 'redteam', name: '红队与攻防对抗', def: 'AI 红队评测模型与系统，攻防两边同时升级。' }
+        ] },
+        { id: 'edu', name: '教育 AI', def: '辅导、测评与个性化学习：政策敏感但需求刚性。', keywords: ['教育', '学习成本', '学习新方式', '学习方法论', '学习体验', '辅导', '课程', '学校', '教学', 'chatgpt for teens', 'guided learning', 'learnvector', 'k-12', '教师', '教育部'], upstream: ['assistant'], downstream: ['bizmodel'], maturity: '过热期', why: '需求刚性但政策极敏感，个性化学习是真价值所在。', moat: '内容版权与学校渠道。', bottleneck: '未成年人/数据政策与采购周期。', signals: ['教育规划落地文件', 'K12 产品合规化进度'] , sub: [
+          { id: 'tutoring', name: '个性化辅导', def: '一对一答疑，家长付费意愿强' },
+          { id: 'grading', name: '批改与测评', def: '教师端工具，B2B/B2G 入口' },
+          { id: 'campus', name: '校园与政策', def: '国产化与未成年人合规的门槛' }
+        ] },
+        { id: 'science', name: '科学与研发 AI', def: 'AI for Science：药物发现、材料设计、气象预报与科研 agent，把假设检验的成本压低一个量级。', keywords: ['ai4science', '药物发现', '材料', '气象', 'alphafold', '蛋白质', '科研 agent'], upstream: ['frontier', 'worldmodel', 'synth'], downstream: ['health', 'mfg'], maturity: '爬坡期', why: '科学是 AI 泛化能力的试金石，药物与材料的市场足够大且容错高。', moat: '专有实验数据闭环（湿实验 × 算力协同）、科研人才与发表网络。', bottleneck: '湿实验验证周期长；物理一致性与可复现性。', signals: ['AI 设计分子进入临床的数量', '气象与材料 AI 的机构采用'], sub: [
+          { id: 'drug', name: '药物发现与生命科学', def: '靶点、分子生成与临床试验设计，AlphaFold 系能力商业化。' },
+          { id: 'material', name: '材料与能源科学', def: '电池、催化与新材料筛选，仿真 + 模型替代试错。' },
+          { id: 'weather', name: '气象与地球科学', def: 'AI 气象模型逼近数值预报，灾害预警与农业受益。' }
+        ] },
+        { id: 'gov', name: '政务与公共服务', def: '城市治理、政务热线、审批与公共安全：政府采购逻辑独特，规模化靠资质与本地化交付。', keywords: ['政务', '公共安全', '城市治理', '热线', '审批', '智慧城市', '城市大脑', '主权项目'], upstream: ['agentfw', 'rag', 'multimodal'], downstream: ['delivery', 'regulation'], maturity: '爬坡期', why: '中国与中东的确定性市场：城市大脑与政务大模型集中采购，规模大但账期长。', moat: '资质与本地化交付网络、政务数据合规壁垒。', bottleneck: '预算与账期；数据孤岛与部门墙。', signals: ['政务大模型中标金额', '城市级 AI 项目复购率'], sub: [
+          { id: 'hotline', name: '热线与审批助手', def: '12345 热线、材料预审与办事导引，最先规模化的政务 AI。' },
+          { id: 'cityops', name: '城市治理与应急', def: '城市大脑、事件发现与应急调度。' },
+          { id: 'publicsafe', name: '公共安全与执法辅助', def: '视频理解与情报研判，合规要求最高。' }
+        ] },
+        { id: 'defense', name: '国防与军事 AI', def: '情报分析、指挥辅助、无人系统与军工采购：国防预算成为前沿 AI 的新买家，也带来最重的合规与伦理约束。', keywords: ['国防', '军事', '军工', '五角大楼', '国防部', '作战', '情报分析', 'palantir', 'maven', '战争'], upstream: ['frontier', 'secops', 'datacenter'], downstream: ['regulation', 'funding'], maturity: '爬坡期', why: '最不差钱的买家：国防合同给前沿模型厂商同时带来收入与争议。', moat: '安全审查资质与涉密环境交付能力。', bottleneck: '安全评估与授权流程；厂商自身使用政策红线。', signals: ['国防级 AI 合同金额', '模型厂商军用授权政策变化'], sub: [
+          { id: 'intel', name: '情报与指挥辅助', def: 'Palantir Maven 类：情报融合与决策支持。' },
+          { id: 'unmanned', name: '无人与自主系统', def: '自主武器与无人集群，伦理红线区。' },
+          { id: 'defenseproc', name: '军工采购与合规', def: 'DoD 授权、涉密云与供应链安全认定。' }
+        ] },
+        { id: 'creative', name: '图像与视频创作', def: '生成式创作工具：从玩具到生产力的临界点正在发生。', keywords: ['创作', '视频', '图像', 'midjourney', '剪辑', '设计', '生成'], upstream: ['multimodal'], downstream: ['distribution'], maturity: '过热期', why: '生成式最先击中创作链路，正处玩具到生产力的临界点。', moat: '工作流嵌入与社区生态。', bottleneck: '版权诉讼与商业化的平衡。', signals: ['创作工具付费转化', '版权判例进展'] , sub: [
+          { id: 'image', name: '图像生成', def: '设计与素材的产量革命' },
+          { id: 'video', name: '视频生成', def: '从镜头到成片，算力最重' },
+          { id: 'prowork', name: '专业工作流', def: '分层、可控与版本管理才是付费点' }
+        ] },
+        { id: 'audio', name: '音乐与语音产品', def: '音乐生成、播客与有声内容：版权与创作伦理的焦点区。', keywords: ['音乐', '播客', '配音', '有声', '语音产品'], upstream: ['speech'], downstream: ['distribution'], maturity: '过热期', why: '创作门槛最低的内容形态，版权争议的风暴眼。', moat: '音乐版权合作与分发渠道。', bottleneck: '训练数据合法性（GEMA 案先例）。', signals: ['音乐模型版本迭代', '版权诉讼与授权交易'] , sub: [
+          { id: 'music', name: '音乐生成', def: 'Suno 类，版权是天花板' },
+          { id: 'dubbing', name: '配音与有声', def: '出版、游戏与短剧的供给革命' },
+          { id: 'voiceagent', name: '语音交互', def: '陪伴、客服与硬件入口' }
+        ] },
+        { id: 'device', name: 'AI 硬件终端', def: '把模型装进眼镜、耳机与专用硬件：入口焦虑的产物。', keywords: ['ai 硬件', '眼镜', '耳机', '终端设备', '硬件产品'], upstream: ['edge', 'assistant'], downstream: ['distribution'], maturity: '挤泡沫期', why: '入口焦虑的产物：硬件是分发权的物化。', moat: '暂缺——产品形态尚未收敛。', bottleneck: '杀手级场景缺失，第一波出清进行中。', signals: ['AI 硬件退货率与复购', '大厂入场（眼镜/耳机）节奏'] , sub: [
+          { id: 'glasses', name: 'AI 眼镜', def: '下一个计算平台的候选' },
+          { id: 'wearable', name: '耳机与可穿戴', def: '语音入口与健康数据' },
+          { id: 'companion', name: '陪伴与玩具', def: '情感交互，监管敏感' }
+        ] },
+        { id: 'embodiedapp', name: '具身智能应用', def: '人形机器人进入工厂与家庭：整机、场景与数据闭环的竞赛。', keywords: ['具身', '人形机器人', 'figure', 'optimus', '工厂', '仓储', '运动会'], upstream: ['robothw', 'worldmodel'], downstream: ['bizmodel'], maturity: '萌芽期', why: '机器人进工厂与家庭，具身价值的兑现端。', moat: '场景数据闭环与整机制造成本。', bottleneck: '场景泛化与经济性（回本周期）。', signals: ['工厂部署台数与复购', '家庭场景试点进度'], sub: [
+          { id: 'factory', name: '工厂与仓储', def: '最先跑通的场景：结构化环境 + 可量化 ROI。' },
+          { id: 'home', name: '家庭服务', def: '终局最大但最远：安全与泛化双重门槛。' },
+          { id: 'specialag', name: '特种作业', def: '高危/极端环境作业，政策与预算驱动。' }
+        ] },
+        { id: 'mobility', name: '自动驾驶与出行', def: 'Robotaxi、辅助驾驶与智能座舱：世界模型 + 车规算力 + 运营闭环的第一个规模化具身场景。', keywords: ['自动驾驶', 'robotaxi', 'waymo', '萝卜快跑', 'fsd', '辅助驾驶', '小鹏', '华为车', '智能座舱'], upstream: ['worldmodel', 'robothw', 'multimodal'], downstream: ['embodiedapp', 'energy'], maturity: '爬坡期', why: '物理世界 AI 最大的单一市场：出行是万亿级替换，数据闭环与安全验证构筑壁垒。', moat: '公里级驾驶数据闭环、安全验证体系与车队运营能力。', bottleneck: '长尾场景与事故责任界定；单车成本与保险经济性。', signals: ['Robotaxi 车队规模与订单密度', '辅助驾驶装车率与事故率'], sub: [
+          { id: 'robotaxi', name: 'Robotaxi 运营', def: 'Waymo/萝卜快跑：车队、调度与远程安全员体系。' },
+          { id: 'adas', name: '辅助驾驶与整车', def: 'FSD/华为 ADS/小鹏：端到端大模型上车。' },
+          { id: 'cockpit', name: '智能座舱', def: '语音交互、车载 agent 与座舱 SoC。' }
+        ] },
+        { id: 'mfg', name: '工业与制造', def: '质检、预测性维护、工艺优化与工业软件：AI 在产线上替代的是经验与检测人力。', keywords: ['工业', '制造', '质检', '预测性维护', '数字孪生', '工业软件', '西门子', '边缘'], upstream: ['multimodal', 'robothw', 'edge'], downstream: ['embodiedapp'], maturity: '爬坡期', why: 'B 端落地最实的市场之一：缺陷与停机损失可直接换算成钱，ROI 清晰。', moat: '行业工艺 know-how 与产线数据；失败成本高的领域客户黏性强。', bottleneck: '数据孤岛与产线改造成本；项目制交付难以规模化。', signals: ['质检 AI 渗透率', '预测性维护带来的停机时长下降'], sub: [
+          { id: 'inspect', name: '质检与检测', def: '视觉缺陷检测替代人工目检，是最成熟的工业 AI。' },
+          { id: 'predict', name: '预测性维护与工艺', def: '传感器数据 + 模型预测故障、调优工艺参数。' },
+          { id: 'indsw', name: '工业软件与数字孪生', def: 'CAD/CAE/PLM 的 AI 化与产线仿真。' }
+        ] },
+        { id: 'game', name: '游戏与娱乐', def: 'NPC、内容生成与互动叙事：游戏是最宽容的试验场。', keywords: ['游戏', 'npc', '互动', '娱乐', '叙事'], upstream: ['agentfw', 'multimodal'], downstream: ['distribution'], maturity: '萌芽期', why: '最宽容的试验场：NPC 与内容生成先行。', moat: '引擎与 IP 的集成深度。', bottleneck: '生成内容的可控性与成本。', signals: ['3A 采用生成管线的案例', 'UGC 平台 AI 工具化'] , sub: [
+          { id: 'npc', name: '智能 NPC', def: '自由对话重塑玩法叙事' },
+          { id: 'content', name: '内容生成', def: '美术、关卡与剧情的提效管线' },
+          { id: 'ugc', name: 'UGC 平台工具', def: '把生成能力交给玩家创作者' }
+        ] },
+        { id: 'office', name: '办公与协同', def: '文档、PPT、会议与邮件的 AI 化：存量软件的重新洗牌。', keywords: ['办公', '协同', '文档', 'ppt', '会议', '邮件', '效率', 'workbuddy', 'qwenwork', '千问办公', 'trae', '钉钉', '飞书', 'copilot', 'workspace'], upstream: ['agentfw', 'computeruse'], downstream: ['distribution'], maturity: '爬坡期', why: '存量软件的重新洗牌，办公是最高频的企业场景。', moat: '套件协同与分发（预装/渠道）。', bottleneck: '替代摩擦与席位定价竞争。', signals: ['办公 AI 席位与定价锚', '三强渠道与 FDE 准入对比'], sub: [
+          { id: 'doc', name: '文档与演示', def: '写作与汇报的生成式重做，最普及的第一站。' },
+          { id: 'meeting', name: '会议与协同', def: '纪要、行动项与实时协作的 AI 化。' },
+          { id: 'sheet', name: '表格与数据 Agent', def: '结构化数据操作是价值最高、最难做对的一格。' }
+        ] }
+      ]
+    },
+    {
+      key: 'L5', name: '商业与生态层', en: 'Business & Ecosystem',
+      desc: '决定谁活下来谁定规则的层：商业模式、资本、人才、监管与联盟。产业链的利润分配在这里完成。',
+      nodes: [
+        { id: 'bizmodel', name: '商业模式与变现', def: '订阅、API、广告与按效果付费：智能的收费方式仍在发明中。', keywords: ['商业模式', '变现', 'arr', '收入', '订阅', '广告', '付费'], upstream: ['assistant', 'enterprise', 'token'], downstream: ['economics'], maturity: '重构期', why: '智能的收费方式仍在发明中，模式决定生死。', moat: '与场景耦合的变现闭环。', bottleneck: '订阅之外的规模化模式未定型。', signals: ['广告/按效果收入占比', '定价结构创新事件'] , sub: [
+          { id: 'subscription', name: '订阅制', def: '可预测收入，席位有天花板' },
+          { id: 'usage', name: '用量计费', def: 'API 与按 token，随规模放大' },
+          { id: 'outcome', name: '按结果收费', def: '与客户价值对齐，计量是难点' }
+        ] },
+        { id: 'funding', name: '融资与估值', def: '万亿级的资本开支与融资竞赛：一级市场的信念定价。', keywords: ['融资', '估值', '领投', '风投', '筹款', '融资轮'], upstream: [], downstream: ['economics'], maturity: '过热期', why: '万亿级信念定价：资本开支节奏直接决定供给节奏。', moat: '算力绑定与战略投资人网络。', bottleneck: '估值与收入的剪刀差（ARR 倍数）。', signals: ['前沿 lab 融资条款', '一级市场 AI 份额'] , sub: [
+          { id: 'primary', name: '一级市场', def: 'VC 与成长期，估值锚定叙事' },
+          { id: 'strategic', name: '战略与主权资本', def: '巨头 CVC 与主权基金，绑定算力' },
+          { id: 'secondary', name: '二级与退出', def: 'IPO 窗口与并购退出的定价' }
+        ] },
+        { id: 'mna', name: '并购与整合', def: '巨头用并购补能力拼图：SpaceX-xAI、NVIDIA-HF 式的重构。', keywords: ['收购', '并购', '合并', '整合', '交割', '全资'], upstream: [], downstream: ['competition'], maturity: '爬坡期', why: '巨头用并购补拼图，整合速度决定格局。', moat: '监管审查承受力与整合能力。', bottleneck: '反垄断审查与关键人才保留。', signals: ['十亿美元级交易数与交割率', '监管拦截案例'] , sub: [
+          { id: 'acqui', name: '并购与控股', def: '买技术、数据与入口' },
+          { id: 'acquihire', name: '人才收购', def: '绕过竞业的团队获取方式' },
+          { id: 'minority', name: '少数股权投资', def: '绑定不控股，联盟化整合' }
+        ] },
+        { id: 'talent', name: '人才流动', def: '联创离职、研究员创业与人才战：智力的再分配即未来的分配。', keywords: ['离职', '人才', '联创', '跳槽', '招聘', '研究员'], upstream: [], downstream: ['competition'], maturity: '爬坡期', why: '智力的再分配即未来的分配。', moat: '顶尖研究者的集聚效应。', bottleneck: '关键人风险与创始团队稳定性。', signals: ['联创/研究员离职创业数', 'lab 间人才流动方向'] , sub: [
+          { id: 'researcher', name: '研究员', def: '前沿能力的天花板，天价薪酬' },
+          { id: 'engineer', name: '工程与产品', def: '把能力做成产品的主力' },
+          { id: 'org', name: '组织与文化', def: '团队产出大于个人英雄的转折' }
+        ] },
+        { id: 'delivery', name: '交付与实施（FDE）', def: '把模型接进客户现场：FDE 人力、服务伙伴认证与交付毛利，AI 应用的乙方层。', keywords: ['fde', '交付', '部署工程', '前沿部署', '实施', '服务伙伴', '专业服务', '伙伴认证', 'adp 认证', '返点', '保证金', '交付成本'], upstream: ['talent'], downstream: ['enterprise'], maturity: '爬坡期', why: '把模型接进客户现场的乙方层，交付产能即行业瓶颈。', moat: '认证体系与交付方法论复用。', bottleneck: '人力规模与毛利的矛盾（规模化困难）。', signals: ['FDE 认证与伙伴体系扩展', '交付毛利披露'] , sub: [
+          { id: 'fde', name: '前向部署（FDE）', def: '驻场交付，Palantir 模式扩散' },
+          { id: 'si', name: '系统集成', def: '传统交付主力，毛利承压' },
+          { id: 'productize', name: '产品化', def: '交付经验沉淀为模板与产品' }
+        ] },
+        { id: 'regulation', name: '监管与地缘', def: '欧盟 AI Act、美国出口管制与各国立法：合规成本成为产品变量。', keywords: ['监管', '法案', '欧盟', '立法', '合规要求', '执法', '管制'], upstream: [], downstream: ['supply', 'bizmodel'], maturity: '爬坡期', why: '合规成本成为产品变量，规则直接改写市场边界。', moat: '政策游说与合规工程能力。', bottleneck: '多辖区规则碎片化、不同步。', signals: ['AI Act 执法案例', '出口管制清单变化'] , sub: [
+          { id: 'content', name: '内容与安全', def: '备案、标识与未成年人保护' },
+          { id: 'copyright', name: '版权与数据', def: '训练合法性与授权市场' },
+          { id: 'export', name: '出口管制', def: '芯片、模型权重与主权边界' }
+        ] },
+        { id: 'sovereign', name: '主权 AI 与国家算力', def: '国家级算力与模型计划：中东以资本换技术，欧盟以监管换主权，中国全栈自主——算力成为国家基础设施。', keywords: ['主权 ai', '国家算力', '中东', '沙特', '阿联酋', 'stargate', '数字主权', '智算中心'], upstream: ['datacenter', 'cloud', 'supply'], downstream: ['regulation', 'funding'], maturity: '爬坡期', why: '政府成为 AI 基础设施最大买家之一：主权云、国家模型与智算中心投资以百亿美元计。', moat: '数据不出境的合规要求、国家资本与政策连续性。', bottleneck: '人才与运营能力；地缘政治改变技术获取路径。', signals: ['国家级 AI 基建投资公告', '主权云与国家模型采购'] , sub: [
+          { id: 'mideast', name: '中东主权算力', def: '沙特 HUMAIN、阿联酋 G42：用石油资本换 AI 席位。' },
+          { id: 'eusov', name: '欧盟数字主权', def: 'Mistral 与主权云：以监管换生态的第三条路。' },
+          { id: 'cnsovereign', name: '中国国家算力', def: '东数西算与智算中心：全栈自主的最重投入。' }
+        ] },
+        { id: 'opensource', name: '开源治理与许可', def: 'Apache/MIT 与开源定义之争：许可即商业策略。', keywords: ['开源许可', 'apache', 'mit 许可', '许可证', '开源治理'], upstream: ['openweight'], downstream: ['economics'], maturity: '爬坡期', why: '许可即商业策略，开源治理决定生态走向。', moat: '基金会/社区治理权。', bottleneck: '「开源」定义之争对社区信任的消耗。', signals: ['许可证变更事件', '开源定义投票与治理动态'] , sub: [
+          { id: 'license', name: '许可证', def: 'Apache/MIT 与限制条款之争' },
+          { id: 'governance', name: '治理', def: '基金会中立与厂商主导' },
+          { id: 'commercialize', name: '商业化', def: '托管、支持与企业版' }
+        ] },
+        { id: 'economics', name: '成本与单位经济', def: '训练成本、推理毛利与烧钱速度：智能生意的会计学。', keywords: ['成本', '毛利', '单位经济', '烧钱', '盈利', '亏损', '现金流'], upstream: ['bizmodel', 'funding', 'token'], downstream: [], maturity: '重构期', why: '智能生意的会计学：训练成本、推理毛利与烧钱速度。', moat: '单位成本领先 + 收入质量（现金循环）。', bottleneck: '收入增速与算力开支的平衡。', signals: ['推理毛利与资本开支指引', '折旧口径变化'] , sub: [
+          { id: 'traincost', name: '训练成本', def: '一次性资本化，十亿美元级' },
+          { id: 'infercost', name: '推理成本', def: '随用量线性，利用率决定盈亏' },
+          { id: 'pricing', name: '定价与毛利', def: '价格战、缓存与产品分层' }
+        ] },
+        { id: 'computefin', name: '算力金融化', def: 'GPU 抵押贷款、SPV、算力资产证券化与循环交易：把算力变成可融资资产，也把周期风险金融化。', keywords: ['算力融资', 'gpu 抵押', 'neocloud', '资产证券化', '算力 abs', '循环交易', 'vendor financing', 'spv', 'reit'], upstream: ['gpu', 'datacenter', 'cloud'], downstream: ['funding', 'economics'], maturity: '过热期', why: '算力资产规模以千亿美元计，金融市场开始为 GPU 定价；循环交易放大周期波动。', moat: '资产规模与租约结构；对电力与卡源的获取能力。', bottleneck: 'GPU 残值与贬值速度；租约到期后的再融资风险。', signals: ['算力 ABS 与抵押融资规模', 'GPU 残值曲线与二手价格'], sub: [
+          { id: 'collateral', name: 'GPU 抵押与 SPV', def: '以算力合同与设备为底层资产的融资结构。' },
+          { id: 'compabs', name: '算力资产证券化', def: '把未来算力收入打包成 ABS/REIT。' },
+          { id: 'circular', name: '循环交易与关联融资', def: '投资—买卡—采购的闭环交易，放大周期。' }
+        ] },
+        { id: 'distribution', name: '分发与渠道', def: '用户数、DAU 与入口占位：应用层的胜负手。', keywords: ['分发', '渠道', '用户数', 'dau', '增长', '获客', '留存'], upstream: ['assistant', 'creative', 'device'], downstream: ['competition'], maturity: '爬坡期', why: '应用层胜负手：入口占位与渠道决定天花板。', moat: '默认入口与渠道网络。', bottleneck: '分发被平台与硬件商双重钳制。', signals: ['预装/默认位争夺', '获客成本变化'] , sub: [
+          { id: 'appstore', name: '应用商店', def: '移动入口，抽成 15–30%' },
+          { id: 'cloudmkt', name: '云市场', def: '企业采购入口，承诺消费抵扣' },
+          { id: 'agententry', name: 'Agent 入口', def: 'agent 代操作重写分发的新变量' }
+        ] },
+        { id: 'competition', name: '竞争格局与阵营', def: 'OpenAI 系、Anthropic 系、开源阵营与巨头生态的合纵连横。', keywords: ['竞争', '阵营', '对抗', '格局', '抢占', '对手'], upstream: ['mna', 'talent', 'distribution'], downstream: [], maturity: '重构期', why: '阵营合纵连横：格局变化本身即最大风险变量。', moat: '生态位锁定（算力/模型/应用绑定）。', bottleneck: '中立生态位的生存空间收窄。', signals: ['阵营化交易（算力/模型绑定）', '跨阵营合作破裂事件'] , sub: [
+          { id: 'campuscompute', name: '算力阵营', def: '芯片与云的供给联盟' },
+          { id: 'campusmodel', name: '模型阵营', def: 'OpenAI-Microsoft 对 Anthropic-Amazon/Google' },
+          { id: 'campusapp', name: '应用与开源阵营', def: '分发卡位与开源侧翼' }
+        ] },
+        { id: 'alliance', name: '标准与联盟', def: '算力联盟、模型合作与标准协议：生态位的中长期锁定。', keywords: ['联盟', '标准', '合作', '签署', '伙伴', '共同'], upstream: [], downstream: ['competition'], maturity: '萌芽期', why: '标准与联盟锁定中长期生态位。', moat: '先发标准制定权。', bottleneck: '联盟承诺的执行力与利益分配。', signals: ['算力联盟签约', '标准组织成员变动'] , sub: [
+          { id: 'hwstandard', name: '硬件标准', def: 'NVLink 对 UALink、超以太网' },
+          { id: 'protocol', name: '协议标准', def: 'MCP/A2A 的 agent 互操作' },
+          { id: 'evalstandard', name: '评测与安全标准', def: 'MLPerf、NIST 与监管引用' }
+        ] }
+      ]
+    }
+  ],
+
+  /* 行业通行技术栈视图（AI Stack），手工策展（2026-10-22 起）。
+   * 分层逻辑：应用在顶、能源在底——自上而下是需求对物理约束的牵引，自下而上是价值流的供给底座；
+   * 底三层（基础设施/芯片/能源）在行业话语里合称「AI 工厂」（AI Factories）。
+   * tiers[].nodes 映射到上方五层的节点 id，全 71 节点一一定位；
+   * 标准栈之外，本台另拆 L3 平台与工具、L5 商业与生态两层（extensions）——
+   * 标准视图不回答「谁离开发者最近」与「钱和规则怎么分」，本台回答。
+   * 原始参考图留档：console/assets/ai-stack-layers.png（2026-10 微信收录）。 */
+  stack: {
+    note: '行业通行的五层技术栈：应用 → 模型 → 基础设施 → 芯片 → 能源；底三层合称 AI 工厂，把电力变成可用智能的物理产线。本台五层产业链把全部 71 个节点映射进这五档，并在标准栈之外加拆两层（见下方扩展层）。',
+    factory: { name: 'AI 工厂', en: 'AI Factories', desc: '基础设施 + 芯片 + 能源：把电力变成可用算力与智能的物理产线，当前万亿级资本开支的主战场。' },
+    tiers: [
+      { key: 'apps',   name: '应用', en: 'Applications',    maps: 'L4', desc: '智能变成产品与收入的地方：消费助手、推荐广告、电商、企业服务、垂直行业、安全与科研、创作工具与具身落地。', nodes: ['assistant', 'ads', 'commerce', 'enterprise', 'health', 'finance', 'legal', 'secops', 'edu', 'science', 'gov', 'defense', 'creative', 'audio', 'device', 'game', 'office', 'embodiedapp', 'mobility', 'mfg', 'robothw'] },
+      { key: 'models', name: '模型', en: 'Models',          maps: 'L2', desc: '智能本身的供给：语料与训练、前沿与开源权重、多模态与语音、推理模型与推理优化、token 定价。', nodes: ['pretrain', 'synth', 'frontier', 'openweight', 'training', 'reasoning', 'inference', 'multimodal', 'speech', 'worldmodel', 'bench', 'token'] },
+      { key: 'infra',  name: '基础设施', en: 'Infrastructure', maps: 'L1', factory: true, desc: '把芯片变成可用算力的系统集成：数据中心与集群、网络互连、云与算力租赁、边缘部署。', nodes: ['datacenter', 'network', 'cloud', 'edge'] },
+      { key: 'chips',  name: '芯片', en: 'Chips',            maps: 'L1', factory: true, desc: '算力的物理上限：半导体设备、先进制程与代工、先进封装、GPU 与 ASIC、HBM 存储，以及改写供给曲线的出口管制。', nodes: ['equip', 'fab', 'packaging', 'gpu', 'asic', 'memory', 'supply'] },
+      { key: 'energy', name: '能源', en: 'Energy',           maps: 'L1', factory: true, desc: 'AI 的终极约束：电力正在取代芯片成为选址与扩张的第一变量。', nodes: ['energy'] }
+    ],
+    extensions: [
+      { key: 'L3', name: '平台与工具', note: '标准栈把开发者平台折叠进应用侧；本台单拆一层——谁离开发者最近，谁捕获分发（框架、MaaS、编码、协议）。' },
+      { key: 'L5', name: '商业与生态', note: '标准栈不回答钱与规则；本台单拆一层——融资、并购、监管、成本与联盟决定谁活下来、谁定规则。' }
+    ],
+    refImage: 'assets/ai-stack-layers.png'
+  }
+};

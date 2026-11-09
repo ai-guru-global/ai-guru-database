@@ -1,0 +1,67 @@
+name: dataset
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "schema/**"
+      - "tools/scripts/build_dataset.py"
+      - "tools/scripts/validate_dataset.py"
+      - "tools/scripts/build_pages.py"
+      - "tools/scripts/build_issues.py"
+      - "tools/scripts/check_links.py"
+      - "tools/scripts/build_console.py"
+      - "docs/good-first-issues.md"
+      - "console/chain.js"
+      - "console/explain.js"
+      - "console/explain-l*.js"
+      - "console/deep.js"
+      - "console/deep-l*.js"
+      - "console/models.js"
+      - "console/players.js"
+      - "console/glossary.js"
+      - "_2026大事记.md"
+      - "_2025大事记.md"
+      - "docs/2026待核实清单.md"
+      - "**/*.md"
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "20"
+
+      - name: 重建数据集并校验引用完整性
+        run: make dataset
+
+      - name: 内容库格式校验
+        run: python tools/scripts/validate.py
+
+      - name: 生成贡献队列与静态站
+        run: |
+          python tools/scripts/build_issues.py
+          python tools/scripts/build_pages.py
+          python tools/scripts/check_links.py
+
+      - name: MCP server 冒烟测试
+        run: python tools/mcp/test_client.py
+
+      - name: npm 包冒烟测试
+        run: node packages/ai-industry-graph/test.mjs
+
+      - name: data/、schema/ 与贡献队列必须与源同源
+        run: |
+          if ! git diff --exit-code -- data schema docs/good-first-issues.md; then
+            echo "::error::产物不是最新，请在本地运行 'make dataset && make issues' 后提交。"
+            exit 1
+          fi

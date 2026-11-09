@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI GURU 工作台 · AI 全行业拆解台</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FFFFFF'/%3E%3Crect x='0.5' y='0.5' width='31' height='31' fill='none' stroke='%23D5D9DF'/%3E%3Ctext x='16' y='21.5' font-family='Georgia,serif' font-size='12.5' font-weight='600' fill='%23101317' text-anchor='middle'%3EAI%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#FFFFFF">
+</head>
+<body>
+<noscript><div class="nojs"><b>本台需要启用 JavaScript。</b><span>拆解台为静态单页应用，视图由本地引擎渲染。未启用时，全部内容仍以仓库 md 为准。</span></div></noscript>
+<div class="app">
+
+  <!-- ================= 左侧文件柜 ================= -->
+  <aside class="sidebar">
+    <div class="sb-brand">
+      <h1>AI GURU 工作台</h1>
+      <div class="en">AI Industry Anatomy</div>
+      <div class="zh">用最细的维度，一层层拆解 AI 全行业</div>
+    </div>
+
+    <nav class="sb-nav" id="nav">
+
+      <div class="sb-tools">
+        <button type="button" id="navExpandAll">全部展开</button>
+        <button type="button" id="navCollapseAll">全部收起</button>
+      </div>
+
+      <div class="sb-sec" data-sec="anatomy">
+        <button type="button" class="sb-group"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg>00 拆解主轴 Anatomy</button>
+        <div class="sb-sub">导读</div>
+        <a href="#/guide/paths" data-v="guide" data-h="#/guide/paths"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13V4.5C3 3.7 3.7 3 4.5 3H13"/><path d="M3 8h10"/><path d="M6.5 13h6.5"/></svg></span>阅读指南<span class="cnt" id="navGuideCnt"></span></a>
+        <a href="#/guide/tour" data-v="guide" data-h="#/guide/tour"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="4" cy="4" r="1.6"/><circle cx="4" cy="12" r="1.6"/><circle cx="12" cy="8" r="1.6"/><path d="M5.4 4.6l5.2 2.6M5.4 11.4l5.2-2.6"/></svg></span>通读序列<span class="cnt" id="navTourCnt"></span></a>
+        <div class="sb-sub">拆解骨架 · 五层产业链</div>
+        <a href="#/chain/map" data-v="chain" data-h="#/chain/map"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="3.2" cy="8" r="1.5"/><circle cx="12.6" cy="3.8" r="1.5"/><circle cx="12.6" cy="12.2" r="1.5"/><path d="M4.6 7.3l6.5-2.7M4.6 8.7l6.5 2.7"/></svg></span>产业链全景<span class="cnt" id="navChainCnt"></span></a>
+        <a href="#/chain/density" data-v="chain" data-h="#/chain/density"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 13.5h11"/><path d="M4.75 13.5V9.8M8 13.5V4.8M11.25 13.5V7.6"/></svg></span>证据密度</a>
+        <div class="sb-tree" data-tree="chain/L1">
+          <div class="sb-row"><a href="#/chain/L1" data-v="chain" data-h="#/chain/L1"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.4l4.7 2.5L8 7.4 3.3 4.9z"/><path d="M3.3 8.3L8 10.8l4.7-2.5"/><path d="M3.3 11.2L8 13.7l4.7-2.5"/></svg></span>L1 算力与硬件</a><button type="button" class="sb-x" aria-label="展开 L1 算力与硬件" aria-expanded="false"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg></button></div>
+          <div class="sb-kids"></div>
+        </div>
+        <div class="sb-tree" data-tree="chain/L2">
+          <div class="sb-row"><a href="#/chain/L2" data-v="chain" data-h="#/chain/L2"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.4l4.7 2.5L8 7.4 3.3 4.9z"/><path d="M3.3 8.3L8 10.8l4.7-2.5"/><path d="M3.3 11.2L8 13.7l4.7-2.5"/></svg></span>L2 数据与模型</a><button type="button" class="sb-x" aria-label="展开 L2 数据与模型" aria-expanded="false"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg></button></div>
+          <div class="sb-kids"></div>
+        </div>
+        <div class="sb-tree" data-tree="chain/L3">
+          <div class="sb-row"><a href="#/chain/L3" data-v="chain" data-h="#/chain/L3"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.4l4.7 2.5L8 7.4 3.3 4.9z"/><path d="M3.3 8.3L8 10.8l4.7-2.5"/><path d="M3.3 11.2L8 13.7l4.7-2.5"/></svg></span>L3 平台与工具</a><button type="button" class="sb-x" aria-label="展开 L3 平台与工具" aria-expanded="false"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg></button></div>
+          <div class="sb-kids"></div>
+        </div>
+        <div class="sb-tree" data-tree="chain/L4">
+          <div class="sb-row"><a href="#/chain/L4" data-v="chain" data-h="#/chain/L4"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.4l4.7 2.5L8 7.4 3.3 4.9z"/><path d="M3.3 8.3L8 10.8l4.7-2.5"/><path d="M3.3 11.2L8 13.7l4.7-2.5"/></svg></span>L4 行业应用</a><button type="button" class="sb-x" aria-label="展开 L4 行业应用" aria-expanded="false"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg></button></div>
+          <div class="sb-kids"></div>
+        </div>
+        <div class="sb-tree" data-tree="chain/L5">
+          <div class="sb-row"><a href="#/chain/L5" data-v="chain" data-h="#/chain/L5"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.4l4.7 2.5L8 7.4 3.3 4.9z"/><path d="M3.3 8.3L8 10.8l4.7-2.5"/><path d="M3.3 11.2L8 13.7l4.7-2.5"/></svg></span>L5 商业与生态</a><button type="button" class="sb-x" aria-label="展开 L5 商业与生态" aria-expanded="false"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg></button></div>
+          <div class="sb-kids"></div>
+        </div>
+        <div class="sb-sub">横向主题域</div>
+        <a href="#/topics/table" data-v="topics" data-h="#/topics/table"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.4l4.7 2.5L8 7.4 3.3 4.9z"/><path d="M3.3 8.3L8 10.8l4.7-2.5"/><path d="M3.3 11.2L8 13.7l4.7-2.5"/></svg></span>主题总表<span class="cnt" id="navTopicCnt"></span></a>
+        <a href="#/topics/coverage" data-v="topics" data-h="#/topics/coverage"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 13.5h11"/><path d="M4.75 13.5V9.8M8 13.5V4.8M11.25 13.5V7.6"/></svg></span>覆盖度仪表</a>
+        <div class="sb-sub">数据面</div>
+        <a href="#/overview/panorama" data-v="overview" data-h="#/overview/panorama"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.6" y="2.6" width="4.6" height="4.6"/><rect x="8.8" y="2.6" width="4.6" height="4.6"/><rect x="2.6" y="8.8" width="4.6" height="4.6"/><rect x="8.8" y="8.8" width="4.6" height="4.6"/></svg></span>全景<span class="cnt">KPIs</span></a>
+      </div>
+
+      <div class="sb-sec" data-sec="landscape">
+        <button type="button" class="sb-group"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg>01 竞争格局 Landscape</button>
+        <div class="sb-sub">玩家</div>
+        <a href="#/players/table" data-v="players" data-h="#/players/table"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="5.5" r="2.4"/><path d="M3.5 13.2c0-2.6 2-4.5 4.5-4.5s4.5 1.9 4.5 4.5"/></svg></span>玩家总表<span class="cnt" id="navPlayerCnt"></span></a>
+        <a href="#/company" data-v="company" data-h="#/company"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="6.5" width="11" height="7"/><path d="M5.5 13.5V9.5h2v4M9.5 13.5V9.5h2v4M2.5 6.5L8 2.8l5.5 3.7"/></svg></span>公司专页<span class="cnt" id="navCompanyCnt"></span></a>
+        <div class="sb-tree" data-tree="players/detail">
+          <div class="sb-row"><a href="#/players/detail" data-v="players" data-h="#/players/detail"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="5.5" r="2.4"/><path d="M3.5 13.2c0-2.6 2-4.5 4.5-4.5s4.5 1.9 4.5 4.5"/><path d="M11.6 3.4l1.4 1.4M13 3.4l-1.4 1.4"/></svg></span>玩家详情</a><button type="button" class="sb-x" aria-label="展开 玩家详情" aria-expanded="false"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg></button></div>
+          <div class="sb-kids"></div>
+        </div>
+        <div class="sb-sub">机构名录</div>
+        <a href="#/directory/companies" data-v="directory" data-h="#/directory/companies"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="6.5" width="11" height="7"/><path d="M5.5 13.5V9.5h2v4M9.5 13.5V9.5h2v4M2.5 6.5L8 2.8l5.5 3.7"/></svg></span>公司名录<span class="cnt" id="navOrgCnt"></span></a>
+        <a href="#/directory/univ" data-v="directory" data-h="#/directory/univ"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.6L14 5.4 8 8.2 2 5.4z"/><path d="M4.6 6.6v3c0 1 1.5 1.9 3.4 1.9s3.4-.9 3.4-1.9v-3"/><path d="M13.5 5.9v3.2"/></svg></span>高校与实验室</a>
+        <a href="#/directory/labs" data-v="directory" data-h="#/directory/labs"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.5 2.5h3M7 2.5v4.2L3.8 12a1.2 1.2 0 0 0 1 1.8h6.4a1.2 1.2 0 0 0 1-1.8L9 6.7V2.5"/><path d="M5 10h6"/></svg></span>研究机构</a>
+        <a href="#/directory/orgs" data-v="directory" data-h="#/directory/orgs"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v9.5M4.5 12.5h7"/><path d="M2 6.5h12"/><path d="M2 6.5a1.6 1.6 0 0 0 3.2 0M10.8 6.5a1.6 1.6 0 0 0 3.2 0"/></svg></span>非营利与治理</a>
+        <a href="#/directory/funds" data-v="directory" data-h="#/directory/funds"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 6.2L8 3l5.5 3.2"/><path d="M3.6 6v7.5h8.8V6"/><path d="M6.4 13.5V9.2h3.2v4.3"/></svg></span>资本名录</a>
+        <a href="#/directory/media" data-v="directory" data-h="#/directory/media"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 6.6v2.8l8.2 3.1V3.5z"/><path d="M11.6 5.4a2.9 2.9 0 0 1 0 5.2"/><path d="M4.6 9.9v3.1h2v-2.4"/></svg></span>媒体与数据</a>
+      </div>
+
+      <div class="sb-sec" data-sec="sectors">
+        <button type="button" class="sb-group"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg>02 赛道与评分 Sectors</button>
+        <div class="sb-sub">赛道</div>
+        <div class="sb-tree" data-tree="sectors/matrix">
+          <div class="sb-row"><a href="#/sectors/matrix" data-v="sectors" data-h="#/sectors/matrix"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 13.5h11"/><path d="M4.75 13.5V9.8M8 13.5V4.8M11.25 13.5V7.6"/></svg></span>赛道矩阵<span class="cnt" id="navSectorCnt"></span></a><button type="button" class="sb-x" aria-label="展开 赛道矩阵" aria-expanded="false"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg></button></div>
+          <div class="sb-kids"></div>
+        </div>
+        <a href="#/sectors/rank" data-v="sectors" data-h="#/sectors/rank"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 13.5h11"/><path d="M4.2 13.5V9M8 13.5V5.5M11.8 13.5V7.5"/></svg></span>热度排行</a>
+        <a href="#/sectors/gaps" data-v="sectors" data-h="#/sectors/gaps"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5l5.8 10.4H2.2z"/><path d="M8 6.4v3.2"/><circle cx="8" cy="11.3" r=".6"/></svg></span>研究缺口</a>
+        <div class="sb-sub">量化评分</div>
+        <a href="#/scores/rank" data-v="scores" data-h="#/scores/rank"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 13.5h11"/><path d="M4.75 13.5V9.8M8 13.5V4.8M11.25 13.5V7.6"/></svg></span>赛道评分卡<span class="cnt" id="navScoreCnt"></span></a>
+        <a href="#/scores/weights" data-v="scores" data-h="#/scores/weights"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/><circle cx="5.5" cy="4.5" r="1.3"/><circle cx="10" cy="8" r="1.3"/><circle cx="6.5" cy="11.5" r="1.3"/></svg></span>权重与假设</a>
+        <a href="#/scores/method" data-v="scores" data-h="#/scores/method"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5l5.8 10.4H2.2z"/><path d="M8 6.4v3.2"/><circle cx="8" cy="11.3" r=".6"/></svg></span>口径与红线</a>
+      </div>
+
+      <div class="sb-sec closed" data-sec="product">
+        <button type="button" class="sb-group"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg>03 产品与单位经济 Product Economics</button>
+        <div class="sb-sub">模型</div>
+        <a href="#/models/table" data-v="models" data-h="#/models/table"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.2 2.5h3.6l.5 2.3 2 1.2 2.2-.8 1.8 3.1-1.7 1.6v2.2l1.7 1.6-1.8 3.1-2.2-.8-2 1.2-.5 2.3H6.2l-.5-2.3-2-1.2-2.2.8-1.8-3.1 1.7-1.6v-2.2L-.3 8.3l1.8-3.1 2.2.8 2-1.2z" transform="scale(.92) translate(.7 .3)"/><circle cx="8" cy="8" r="2.1"/></svg></span>模型总表<span class="cnt" id="navModelCnt"></span></a>
+        <a href="#/models/pricing" data-v="models" data-h="#/models/pricing"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="M8 4.6v6.8M6.2 10.4c.4.9 1 1.3 1.8 1.3 1 0 1.8-.6 1.8-1.5 0-2-3.4-1.2-3.4-3.2 0-.9.8-1.5 1.6-1.5.8 0 1.4.4 1.7 1.1"/></svg></span>定价对比</a>
+        <a href="#/models/timeline" data-v="models" data-h="#/models/timeline"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="M8 4.6V8l2.3 1.6"/></svg></span>发布时间线</a>
+        <div class="sb-sub">推理成本</div>
+        <a href="#/sim/sim" data-v="sim" data-h="#/sim/sim"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="M8 4.6v6.8M6.2 10.4c.4.9 1 1.3 1.8 1.3 1 0 1.8-.6 1.8-1.5 0-2-3.4-1.2-3.4-3.2 0-.9.8-1.5 1.6-1.5.8 0 1.4.4 1.7 1.1"/></svg></span>推理账单</a>
+        <a href="#/sim/table" data-v="sim" data-h="#/sim/table"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 13.5h11"/><path d="M4.2 13.5V9M8 13.5V5.5M11.8 13.5V7.5"/></svg></span>全模型对比</a>
+      </div>
+
+      <div class="sb-sec closed" data-sec="capital">
+        <button type="button" class="sb-group"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg>04 资本与生态 Capital & Ecosystem</button>
+        <div class="sb-sub">资本动向</div>
+        <a href="#/capital/flow" data-v="capital" data-h="#/capital/flow"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 6.2L8 3l5.5 3.2"/><path d="M3.6 6v7.5h8.8V6"/><path d="M6.4 13.5V9.2h3.2v4.3"/></svg></span>资本动向<span class="cnt" id="navCapitalCnt"></span></a>
+        <a href="#/capital/rank" data-v="capital" data-h="#/capital/rank"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="M8 4.6v6.8M6.2 10.4c.4.9 1 1.3 1.8 1.3 1 0 1.8-.6 1.8-1.5 0-2-3.4-1.2-3.4-3.2 0-.9.8-1.5 1.6-1.5.8 0 1.4.4 1.7 1.1"/></svg></span>金额榜</a>
+        <div class="sb-sub">生态位</div>
+        <a href="#/eco/radar" data-v="eco" data-h="#/eco/radar"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="3.2" cy="8" r="1.5"/><circle cx="12.6" cy="3.8" r="1.5"/><circle cx="12.6" cy="12.2" r="1.5"/><path d="M4.6 7.3l6.5-2.7M4.6 8.7l6.5 2.7"/></svg></span>寄生共生</a>
+        <a href="#/eco/kol" data-v="eco" data-h="#/eco/kol"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 13.5h11"/><path d="M4.75 13.5V9.8M8 13.5V4.8M11.25 13.5V7.6"/></svg></span>KOL 价值</a>
+        <a href="#/eco/partners" data-v="eco" data-h="#/eco/partners"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="5.5" cy="5.5" r="2.2"/><circle cx="10.5" cy="10.5" r="2.2"/><path d="M7 7l2 2"/></svg></span>互补伙伴</a>
+        <a href="#/eco/matrix" data-v="eco" data-h="#/eco/matrix"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.6" y="2.6" width="4.6" height="4.6"/><rect x="8.8" y="2.6" width="4.6" height="4.6"/><rect x="2.6" y="8.8" width="4.6" height="4.6"/><rect x="8.8" y="8.8" width="4.6" height="4.6"/></svg></span>技术迁移矩阵</a>
+      </div>
+
+      <div class="sb-sec closed" data-sec="policy">
+        <button type="button" class="sb-group"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg>05 政策与风险 Policy & Risk</button>
+        <div class="sb-sub">政策与合规</div>
+        <a href="#/risk/laws" data-v="risk" data-h="#/risk/laws"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5l5.5 2.2v3.6c0 3-2.3 4.9-5.5 6.2-3.2-1.3-5.5-3.2-5.5-6.2V4.7z"/><path d="M5.8 7.8l1.6 1.6 2.8-3"/></svg></span>政策雷达</a>
+        <a href="#/risk/license" data-v="risk" data-h="#/risk/license"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="2.5" width="10" height="11" rx="1"/><path d="M5.5 6h5M5.5 8.5h5M5.5 11h3"/></svg></span>许可雷区</a>
+        <div class="sb-sub">结构性风险</div>
+        <a href="#/risk/deps" data-v="risk" data-h="#/risk/deps"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="4" cy="4" r="1.8"/><circle cx="12" cy="12" r="1.8"/><path d="M5.2 5.2l5.6 5.6"/></svg></span>平台依赖</a>
+        <a href="#/risk/cash" data-v="risk" data-h="#/risk/cash"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="M8 4.6v6.8M6.2 10.4c.4.9 1 1.3 1.8 1.3 1 0 1.8-.6 1.8-1.5 0-2-3.4-1.2-3.4-3.2 0-.9.8-1.5 1.6-1.5.8 0 1.4.4 1.7 1.1"/></svg></span>压力测试</a>
+        <a href="#/risk/chaos" data-v="risk" data-h="#/risk/chaos"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5l1.6 3.4 3.9.5-2.8 2.7.7 3.9L8 11.2l-3.4 1.8.7-3.9-2.8-2.7 3.9-.5z"/></svg></span>混沌演习</a>
+        <div class="sb-sub">反方观点</div>
+        <a href="#/red/board" data-v="red" data-h="#/red/board"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="6" r="1.6"/><circle cx="11" cy="6" r="1.6"/><path d="M2.5 12.5c.4-2.2 1.4-3.2 2.5-3.2s2.1 1 2.5 3.2M8.5 12.5c.4-2.2 1.4-3.2 2.5-3.2s2.1 1 2.5 3.2"/></svg></span>影子董事会</a>
+        <a href="#/red/short" data-v="red" data-h="#/red/short"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 4.5h11M8 4.5v7.5"/><path d="M5.5 9.5L8 12l2.5-2.5"/></svg></span>做空报告</a>
+        <a href="#/red/bias" data-v="red" data-h="#/red/bias"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="M8 2.5v11"/><path d="M8 2.5a5.5 5.5 0 0 1 0 11" fill="currentColor" stroke="none" opacity=".35"/></svg></span>偏见审计</a>
+      </div>
+
+      <div class="sb-sec" data-sec="evidence">
+        <button type="button" class="sb-group"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg>06 证据与信号 Evidence & Signals</button>
+        <div class="sb-sub">线索</div>
+        <a href="#/clues/list" data-v="clues" data-h="#/clues/list"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2.5h6.8l3.2 3.2v7.8H3z"/><path d="M9.8 2.5v3.2H13"/><path d="M5.4 8.4h5.2M5.4 10.8h3.6"/></svg></span>线索库<span class="cnt" id="navClueCnt"></span></a>
+        <a href="#/clues/hot" data-v="clues" data-h="#/clues/hot"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 13.5h11"/><path d="M4.2 13.5V9M8 13.5V5.5M11.8 13.5V7.5"/></svg></span>线索热榜</a>
+        <a href="#/clues/analysis" data-v="clues" data-h="#/clues/analysis"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 3.5h8v9H4z"/><path d="M6 6h4M6 8h4M6 10h2.5"/></svg></span>观点库<span class="cnt" id="navAnalysisCnt"></span></a>
+        <a href="#/clues/updates" data-v="clues" data-h="#/clues/updates"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 8a5.2 5.2 0 1 1-1.5-3.7"/><path d="M13.5 2.8v2.4h-2.4"/></svg></span>收录动态</a>
+        <div class="sb-sub">编年</div>
+        <a href="#/chronicle/flow" data-v="chronicle" data-h="#/chronicle/flow"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="3.5" width="11" height="10"/><path d="M2.5 6.5h11M5.5 2v3M10.5 2v3"/></svg></span>大事记<span class="cnt" id="navEventCnt"></span></a>
+        <a href="#/chronicle/monthly" data-v="chronicle" data-h="#/chronicle/monthly"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 13.5h11"/><path d="M4.2 13.5V9M8 13.5V5.5M11.8 13.5V7.5"/></svg></span>月度统计</a>
+        <a href="#/chronicle/hubs" data-v="chronicle" data-h="#/chronicle/hubs"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5a4 4 0 0 1 4 4c0 2.8-4 6.5-4 6.5S4 9.3 4 6.5a4 4 0 0 1 4-4z"/><circle cx="8" cy="6.5" r="1.5"/></svg></span>枢纽事件</a>
+        <div class="sb-sub">节奏与信号</div>
+        <a href="#/overview/pulse" data-v="overview" data-h="#/overview/pulse"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="M4.5 8h1.6l1.2-2.6 1.6 5 1.1-2.4h1.5"/></svg></span>本周脉搏</a>
+        <a href="#/daily/day" data-v="daily" data-h="#/daily/day"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="3.5" width="11" height="10"/><path d="M2.5 6.5h11"/><path d="M8 6.5v7"/></svg></span>日报<span class="cnt" id="navDailyCnt"></span></a>
+        <a href="#/daily/rhythm" data-v="daily" data-h="#/daily/rhythm"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="M4.5 8h1.6l1.2-2.6 1.6 5 1.1-2.4h1.5"/></svg></span>近7日节奏</a>
+        <a href="#/digest/current" data-v="digest" data-h="#/digest/current"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.6" y="3.8" width="10.8" height="8.4"/><path d="M2.6 4.4L8 8.5l5.4-4.1"/></svg></span>周报本期<span class="cnt" id="navDigestCnt"></span></a>
+        <a href="#/digest/daily" data-v="digest" data-h="#/digest/daily"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="3.5" width="11" height="10"/><path d="M2.5 6.5h11"/><path d="M8 6.5v7"/></svg></span>周报每日明细</a>
+        <a href="#/calendar/year" data-v="calendar" data-h="#/calendar/year"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="3.5" width="11" height="10"/><path d="M2.5 6.5h11M5.5 2v3M10.5 2v3"/></svg></span>年度日历<span class="cnt" id="navCalCnt"></span></a>
+        <a href="#/calendar/next" data-v="calendar" data-h="#/calendar/next"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="M8 4.6V8l2.3 1.6"/></svg></span>未来 90 天</a>
+        <div class="sb-sub">语料</div>
+        <a href="#/archive/search" data-v="archive" data-h="#/archive/search"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.2"/><path d="M10.2 10.2L13.6 13.6"/></svg></span>语料检索<span class="cnt" id="navArchiveCnt"></span></a>
+        <a href="#/archive/sources" data-v="archive" data-h="#/archive/sources"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 6.6v2.8l8.2 3.1V3.5z"/><path d="M11.6 5.4a2.9 2.9 0 0 1 0 5.2"/><path d="M4.6 9.9v3.1h2v-2.4"/></svg></span>来源分布</a>
+        <a href="#/archive/cats" data-v="archive" data-h="#/archive/cats"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.6" y="2.6" width="4.6" height="4.6"/><rect x="8.8" y="2.6" width="4.6" height="4.6"/><rect x="2.6" y="8.8" width="4.6" height="4.6"/><rect x="8.8" y="8.8" width="4.6" height="4.6"/></svg></span>分类分布</a>
+        <a href="#/archive/years" data-v="archive" data-h="#/archive/years"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.4l4.7 2.5L8 7.4 3.3 4.9z"/><path d="M3.3 8.3L8 10.8l4.7-2.5"/><path d="M3.3 11.2L8 13.7l4.7-2.5"/></svg></span>年度节奏</a>
+        <div class="sb-sub">文档</div>
+        <a href="#/library/files" data-v="library" data-h="#/library/files"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2.5h6.8l3.2 3.2v7.8H3z"/><path d="M9.8 2.5v3.2H13"/><path d="M5.4 8.4h5.2M5.4 10.8h3.6"/></svg></span>文档中心<span class="cnt" id="navLibCnt"></span></a>
+      </div>
+
+      <div class="sb-sec closed" data-sec="trust">
+        <button type="button" class="sb-group"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg>07 核验与方法论 Trust</button>
+        <div class="sb-sub">开放问题</div>
+        <a href="#/overview/unknowns" data-v="overview" data-h="#/overview/unknowns"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.6"/><path d="M6.4 6.2c.1-1 .8-1.6 1.7-1.6 1 0 1.7.6 1.7 1.5 0 1.2-1.7 1.3-1.7 2.6"/><circle cx="8" cy="11.3" r=".5"/></svg></span>开放问题<span class="cnt" id="navUnkCnt"></span></a>
+        <div class="sb-sub">核验</div>
+        <a href="#/verify/queue" data-v="verify" data-h="#/verify/queue"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.1l5 1.9v3.9c0 2.95-2 4.95-5 6.05-3-1.1-5-3.1-5-6.05V4z"/><path d="M5.9 7.85l1.5 1.5 2.7-2.95"/></svg></span>事实核查<span class="cnt" id="navVerifyCnt"></span></a>
+        <a href="#/verify/byclue" data-v="verify" data-h="#/verify/byclue"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.5 9.5a3 3 0 0 0 4.2.3l2-2a3 3 0 0 0-4.2-4.2l-1 1"/><path d="M9.5 6.5a3 3 0 0 0-4.2-.3l-2 2a3 3 0 0 0 4.2 4.2l1-1"/></svg></span>关联线索</a>
+        <a href="#/verify/stats" data-v="verify" data-h="#/verify/stats"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 13.5h11"/><path d="M4.2 13.5V9M8 13.5V5.5M11.8 13.5V7.5"/></svg></span>核验统计</a>
+        <a href="#/overview/radar" data-v="overview" data-h="#/overview/radar"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><circle cx="8" cy="8" r="2.2"/><path d="M8 8l3.9-3.9"/></svg></span>风险雷达</a>
+        <div class="sb-sub">方法论</div>
+        <a href="#/method/standards" data-v="method" data-h="#/method/standards"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2.5h6.8l3.2 3.2v7.8H3z"/><path d="M9.8 2.5v3.2H13"/><path d="M5.4 8.4h5.2M5.4 10.8h3.6"/></svg></span>收录标准</a>
+        <a href="#/method/methodology" data-v="method" data-h="#/method/methodology"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.1l5 1.9v3.9c0 2.95-2 4.95-5 6.05-3-1.1-5-3.1-5-6.05V4z"/><path d="M5.9 7.85l1.5 1.5 2.7-2.95"/></svg></span>核验方法论</a>
+        <a href="#/method/template" data-v="method" data-h="#/method/template"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 4.6l1.1 1.1L6.3 3.3"/><path d="M8.6 4.7h4.6"/><path d="M3 10.4l1.1 1.1 2.2-2.4"/><path d="M8.6 10.5h4.6"/></svg></span>线索模板</a>
+        <a href="#/method/redlines" data-v="method" data-h="#/method/redlines"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5l5.8 10.4H2.2z"/><path d="M8 6.4v3.2"/><circle cx="8" cy="11.3" r=".6"/></svg></span>研究红线</a>
+        <a href="#/method/corrections" data-v="method" data-h="#/method/corrections"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 8a5.2 5.2 0 1 1-1.5-3.7"/><path d="M13.5 2.8v2.4h-2.4"/></svg></span>修正记录</a>
+      </div>
+
+      <div class="sb-sec closed" data-sec="output">
+        <button type="button" class="sb-group"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg>08 判断与输出 Judgment</button>
+        <div class="sb-sub">研判</div>
+        <a href="#/research/docs" data-v="research" data-h="#/research/docs"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2.5h6.8l3.2 3.2v7.8H3z"/><path d="M9.8 2.5v3.2H13"/><path d="M5.4 8.4h5.2M5.4 10.8h3.6"/></svg></span>研判文档<span class="cnt" id="navResCnt"></span></a>
+        <a href="#/research/guide" data-v="research" data-h="#/research/guide"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 4.6l1.1 1.1L6.3 3.3"/><path d="M8.6 4.7h4.6"/><path d="M3 10.4l1.1 1.1 2.2-2.4"/><path d="M8.6 10.5h4.6"/></svg></span>使用说明</a>
+        <div class="sb-sub">议题</div>
+        <a href="#/theses/ledger" data-v="theses" data-h="#/theses/ledger"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><circle cx="8" cy="8" r="2.4"/><circle cx="8" cy="8" r=".6"/></svg></span>议题账本<span class="cnt" id="navThesesCnt"></span></a>
+        <a href="#/theses/settle" data-v="theses" data-h="#/theses/settle"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="M8 4.6V8l2.3 1.6"/></svg></span>议题结算台</a>
+        <a href="#/theses/stats" data-v="theses" data-h="#/theses/stats"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 13.5h11"/><path d="M4.2 13.5V9M8 13.5V5.5M11.8 13.5V7.5"/></svg></span>议题统计</a>
+        <div class="sb-sub">决策</div>
+        <a href="#/decisions/board" data-v="decisions" data-h="#/decisions/board"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v9.5M4.5 12.5h7"/><path d="M2 6.5h12"/><path d="M2 6.5a1.6 1.6 0 0 0 3.2 0M10.8 6.5a1.6 1.6 0 0 0 3.2 0"/></svg></span>决策台<span class="cnt" id="navDecCnt"></span></a>
+        <a href="#/decisions/log" data-v="decisions" data-h="#/decisions/log"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="2.5" width="11" height="11"/><path d="M5.4 8.3l1.8 1.8 3.6-3.8"/></svg></span>已决归档</a>
+        <div class="sb-sub">行动</div>
+        <a href="#/actions/open" data-v="actions" data-h="#/actions/open"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="2.5" width="11" height="11"/><path d="M5.4 8.3l1.8 1.8 3.6-3.8"/></svg></span>行动项<span class="cnt" id="navActionsCnt"></span></a>
+        <a href="#/actions/done" data-v="actions" data-h="#/actions/done"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="2.5" width="11" height="11"/><path d="M5.4 8.3l1.8 1.8 3.6-3.8"/></svg></span>已完成</a>
+      </div>
+
+      <div class="sb-sec closed" data-sec="reference">
+        <button type="button" class="sb-group"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg>09 知识库与术语 Knowledge</button>
+        <div class="sb-sub">知识库</div>
+        <a href="#/kb/method" data-v="kb" data-h="#/kb/method"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 4.1C6.7 3.2 5 2.9 3 3.1v9.3c2-.2 3.7.1 5 1 1.3-.9 3-1.2 5-1V3.1c-2-.2-3.7.1-5 1z"/><path d="M8 4.1v9.3"/></svg></span>方法论<span class="cnt" id="navKbCnt"></span></a>
+        <a href="#/kb/eng" data-v="kb" data-h="#/kb/eng"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.2 2.5h3.6l.5 2.3 2 1.2 2.2-.8 1.8 3.1-1.7 1.6v2.2l1.7 1.6-1.8 3.1-2.2-.8-2 1.2-.5 2.3H6.2l-.5-2.3-2-1.2-2.2.8-1.8-3.1 1.7-1.6v-2.2L-.3 8.3l1.8-3.1 2.2.8 2-1.2z" transform="scale(.92) translate(.7 .3)"/><circle cx="8" cy="8" r="2.1"/></svg></span>工程方式</a>
+        <a href="#/kb/roles" data-v="kb" data-h="#/kb/roles"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="5.5" r="2.4"/><path d="M3.5 13.2c0-2.6 2-4.5 4.5-4.5s4.5 1.9 4.5 4.5"/></svg></span>岗位</a>
+        <a href="#/kb/companies" data-v="kb" data-h="#/kb/companies"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="6.5" width="11" height="7"/><path d="M5.5 13.5V9.5h2v4M9.5 13.5V9.5h2v4M2.5 6.5L8 2.8l5.5 3.7"/></svg></span>公司档案</a>
+        <a href="#/kb/biz" data-v="kb" data-h="#/kb/biz"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="M8 4.6v6.8M6.2 10.4c.4.9 1 1.3 1.8 1.3 1 0 1.8-.6 1.8-1.5 0-2-3.4-1.2-3.4-3.2 0-.9.8-1.5 1.6-1.5.8 0 1.4.4 1.7 1.1"/></svg></span>商业模式</a>
+        <a href="#/kb/career" data-v="kb" data-h="#/kb/career"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.6L14 5.4 8 8.2 2 5.4z"/><path d="M4.6 6.6v3c0 1 1.5 1.9 3.4 1.9s3.4-.9 3.4-1.9v-3"/><path d="M13.5 5.9v3.2"/></svg></span>职业路径</a>
+        <a href="#/kb/ops" data-v="kb" data-h="#/kb/ops"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.2" y="2.6" width="9.6" height="10.8"/><path d="M5.6 5.6h4.8M5.6 8h4.8M5.6 10.4h3"/></svg></span>操盘手册</a>
+        <div class="sb-sub">术语</div>
+        <a href="#/glossary/dict" data-v="glossary" data-h="#/glossary/dict"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4.4 12.8L8 3.4l3.6 9.4"/><path d="M5.85 9.6h4.3"/></svg></span>术语词典<span class="cnt" id="navGlossCnt"></span></a>
+      </div>
+
+      <div class="sb-sec closed" data-sec="opslocal">
+        <button type="button" class="sb-group"><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4"/></svg>10 本机运营 Local Ops</button>
+        <div class="sb-sub">产品操盘</div>
+        <a href="#/opp/board" data-v="opp" data-h="#/opp/board"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><circle cx="8" cy="8" r="2.2"/><path d="M8 2.5v2M8 11.5v2M2.5 8h2M11.5 8h2"/></svg></span>机会台<span class="cnt" id="navOppCnt"></span></a>
+        <a href="#/opp/mvp" data-v="opp" data-h="#/opp/mvp"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2.5h6.8l3.2 3.2v7.8H3z"/><path d="M9.8 2.5v3.2H13"/><path d="M5.4 8.4h5.2M5.4 10.8h3.6"/></svg></span>MVP 启动包</a>
+        <a href="#/opp/broken" data-v="opp" data-h="#/opp/broken"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12.5l3-4 2 2 3-5"/><path d="M2.5 13.5h11"/></svg></span>断链检查<span class="cnt" id="navBrokenCnt"></span></a>
+        <a href="#/exp/ledger" data-v="exp" data-h="#/exp/ledger"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8.5" r="4.5"/><path d="M8 6.5v2l1.4 1"/><path d="M6.5 2.5h3"/></svg></span>实验登记簿<span class="cnt" id="navExpCnt"></span></a>
+        <div class="sb-sub">台子自审</div>
+        <a href="#/meta/signals" data-v="meta" data-h="#/meta/signals"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 8a5.2 5.2 0 1 1-1.5-3.7"/><path d="M13.5 2.8v2.4h-2.4"/></svg></span>信号回流</a>
+        <a href="#/meta/roi" data-v="meta" data-h="#/meta/roi"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 13.5h11"/><path d="M4.2 13.5V9M8 13.5V5.5M11.8 13.5V7.5"/></svg></span>成本 ROI</a>
+        <a href="#/meta/tempo" data-v="meta" data-h="#/meta/tempo"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="M8 4.6V8l2.3 1.6"/></svg></span>节奏健康</a>
+        <a href="#/meta/decay" data-v="meta" data-h="#/meta/decay"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 8A5.2 5.2 0 1 1 8 2.8"/><path d="M8 6.8v4M8 4.6v.4"/></svg></span>策略遗忘</a>
+        <a href="#/meta/review" data-v="meta" data-h="#/meta/review"><span class="ic"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="3.5" width="11" height="10"/><path d="M2.5 6.5h11M5.5 2v3M10.5 2v3"/></svg></span>季度重构</a>
+      </div>
+    </nav>
+
+    <div class="sb-foot">
+      <div><b id="sbAsOf"></b></div>
+      <div id="sbAnchor"></div>
+      <div style="margin-top:6px;opacity:.72">只读快照，不回写仓库</div>
+    </div>
+  </aside>
+
+  <!-- ================= 主工作区 ================= -->
+  <div class="main">
+    <div class="topbar">
+      <div class="crumb">AI GURU 工作台<span></span><b id="crumbNow">总览</b></div>
+      <span class="conf">CONFIDENTIAL 内部研究</span>
+      <div class="tb-search">
+        <span class="mag"><svg viewBox="0 0 16 16" width="12" height="12" style="display:block" aria-hidden="true"><circle cx="6.8" cy="6.8" r="4.3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.2 10.2L14 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        <input id="gSearch" type="text" placeholder="搜索节点，线索，事件，档案，名录，知识库" autocomplete="off">
+        <div class="sr-pop" id="srPop"></div>
+      </div>
+      <div class="tb-clock" id="tbClock"></div>
+    </div>
+    <div class="tourbar" id="tourBar" style="display:none"></div>
+
+    <div class="view-wrap">
+      <section class="view" id="v-guide"></section>
+      <section class="view" id="v-overview"></section>
+      <section class="view" id="v-topics"></section>
+      <section class="view" id="v-clues"></section>
+      <section class="view" id="v-chronicle"></section>
+      <section class="view" id="v-archive"></section>
+      <section class="view" id="v-daily"></section>
+      <section class="view" id="v-library"></section>
+      <section class="view" id="v-verify"></section>
+      <section class="view" id="v-method"></section>
+      <section class="view" id="v-players"></section>
+      <section class="view" id="v-company"></section>
+      <section class="view" id="v-sectors"></section>
+      <section class="view" id="v-models"></section>
+      <section class="view" id="v-capital"></section>
+      <section class="view" id="v-chain"></section>
+      <section class="view" id="v-directory"></section>
+      <section class="view" id="v-scores"></section>
+      <section class="view" id="v-sim"></section>
+      <section class="view" id="v-decisions"></section>
+      <section class="view" id="v-calendar"></section>
+      <section class="view" id="v-glossary"></section>
+      <section class="view" id="v-kb"></section>
+      <section class="view" id="v-research"></section>
+      <section class="view" id="v-theses"></section>
+      <section class="view" id="v-digest"></section>
+      <section class="view" id="v-actions"></section>
+      <section class="view" id="v-opp"></section>
+      <section class="view" id="v-exp"></section>
+      <section class="view" id="v-red"></section>
+      <section class="view" id="v-risk"></section>
+      <section class="view" id="v-eco"></section>
+      <section class="view" id="v-meta"></section>
+
+      <div class="page-foot">
+        <div>AI GURU 工作台只读快照 <span class="mono" id="footAsOf"></span>。本台不是新闻台：拆解主轴是五层产业链目录树（目录即行业），新闻与线索是节点上的证据；证据与语料以仓库源文件为准：<span class="mono">证据层/&lt;主题&gt;/*.md</span>，<span class="mono">_2026大事记.md</span>，<span class="mono">aihot-mirror/by-date/</span>，<span class="mono">docs/2026待核实清单.md</span></div>
+        <div class="mono">内部研究，不对外</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= 术语弹框 ================= -->
+<div class="glossary-layer" id="glossLayer" role="dialog" aria-modal="true">
+  <div class="glossary-card">
+    <header>
+      <h4 id="gTitle"></h4>
+      <span class="cat" id="gCat"></span>
+      <button class="x" id="gClose" title="关闭" aria-label="关闭"><svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 2L10 10M10 2L2 10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    </header>
+    <div class="gbody" id="gBody"></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="players.js"></script>
+<script src="models.js"></script>
+<script src="chain.js"></script>
+<script src="companies.js"></script>
+<script src="explain.js"></script>
+<script src="explain-l1.js"></script>
+<script src="explain-l2.js"></script>
+<script src="explain-l3.js"></script>
+<script src="explain-l4.js"></script>
+<script src="explain-l5.js"></script>
+<script src="deep.js"></script>
+<script src="deep-l1.js"></script>
+<script src="deep-l2.js"></script>
+<script src="deep-l3.js"></script>
+<script src="deep-l4.js"></script>
+<script src="deep-l5.js"></script>
+<script src="engine.js"></script>
+<script src="cites.js"></script>
+<script src="score.js"></script>
+<script src="glossary.js"></script>
+<script src="decisions.js"></script>
+<script src="calendar.js"></script>
+<script src="kb.js"></script>
+<script src="unknowns.js"></script>
+<script src="orgs.js"></script>
+<script src="guide.js"></script>
+<script src="ops.js"></script>
+<script src="data.local.js"></script>
+<script src="ops.local.js" onerror="window.opsLocalMissing=true"></script>
+<script src="md.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

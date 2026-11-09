@@ -1,0 +1,49 @@
+name: 数据修正（L0）
+description: 错字、断链、重复条目、格式错误的低门槛修正
+title: "[L0] 修正："
+labels: ["good first issue", "数据修正"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **L0 · 1 分钟级贡献**。适合第一次参与：只改一个错字、一个断链或一处格式。
+        如果改动涉及事实或数字，请改走「补一个来源」或「核实一条待核实」。
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 修正类型
+      options:
+        - 错字 / 标点
+        - 断链 / 死链
+        - 重复条目
+        - 格式（frontmatter / 月份 / 倒序）
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: 位置
+      description: 文件路径 + 章节或行号，例：`基础模型/Claude.md`「时间线」2026-09
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 现状
+      description: 贴出当前文本（可只贴关键片段）
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: 建议改为
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: 确认
+      options:
+        - label: 这次修改不改变事实判断，只修形式
+          required: true

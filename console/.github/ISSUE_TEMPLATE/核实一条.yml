@@ -1,0 +1,56 @@
+name: 核实一条待核实（L1）
+description: 认领六态台账里的一条存疑事件，给出结论与一手来源
+title: "[L1] 核实："
+labels: ["good first issue", "核验"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **L1 · 5 分钟级贡献**。台账见 [`docs/2026待核实清单.md`](https://github.com/ai-guru-global/ai-guru-console/blob/main/docs/2026待核实清单.md)。
+        结论只有四种：✅ 已核验 / ✗ 已证伪 / ⚠️ 部分可取 / 🔍 仍缺来源。
+  - type: input
+    id: item
+    attributes:
+      label: 待核实条目
+      description: 条目标题或台账中的定位，例：`SpaceX 与 xAI 合并，估值 1.25 万亿美元`
+    validations:
+      required: true
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: 结论
+      options:
+        - "✅ 已核验（一手来源 + 交叉印证）"
+        - "✗ 已证伪"
+        - "⚠️ 部分可取（有来源但口径不全）"
+        - "🔍 仍缺来源"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 一手来源 URL
+      description: 官方公告 / 监管 filing / 论文正文优先；没有一手源就选「仍缺来源」
+    validations:
+      required: true
+  - type: textarea
+    id: crosscheck
+    attributes:
+      label: 交叉印证
+      description: 至少一家独立媒体；写清媒体名、日期、链接
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: 口径说明
+      description: 金额、份额、日期等容易混淆的口径，写清你采用哪一个
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我读过来源正文，而不是只看标题或转述
+          required: true
+        - label: 我确认这不是单一利益相关方的自述（若是，已注明「厂商口径」）
+          required: true

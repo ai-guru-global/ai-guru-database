@@ -1,0 +1,84 @@
+# Binary files
+/ai-news-database
+/ai-news-database.exe
+/tools/cmd/ai-news-database
+/tools/cmd/ai-news-database.exe
+
+# Go build cache
+*.test
+*.out
+
+# Coverage reports
+/tools/cmd/.coverage/
+coverage.out
+*.coverprofile
+
+# Dependency directories
+vendor/
+
+# IDE configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+tmp/
+temp/
+dist/
+
+# Local runtime files (not committed to repo)
+local/
+
+# AI assistant tool directories
+.agents/
+.claude/
+.codebuddy/
+.kilo/
+.qoder/
+.qwen/
+.trae/
+.windsurf/
+
+# Other tool-specific files
+skills/
+skills-lock.json
+
+# Benchmark results
+bench.out
+benchmark/
+
+# Static analysis results
+golangci-lint-report.*
+
+# AI HOT mirror — 提交可读产物（README / by-date / state.json / tools）
+# 忽略大数据缓存（可由 snapshot 重生）和原始抓取
+aihot-mirror/state/items.jsonl
+aihot-mirror/raw/
+aihot-mirror/logs/
+
+
+# Mimosa 扫描器本地状态
+.mimosa/
+
+# feed 生成器产物（Pages artifact，不入库）
+site/
+
+# 私人工作台：本机研判层（观点/行动项）与本地生成物，永不进公共库
+# （2026-11-09 自 ai-guru-console 迁入：本文件现位于 <仓库根>/console/，带 console/ 前缀的模式已去前缀）
+研判/
+data.local.js
+
+# Meoo CDN 发布目录（产物副本 + 平台绑定 .env）
+publish-meoo/
+
+# 操盘台私有台账（机会卡/实验/依赖/成本等），永不进公共库
+ops.local.js

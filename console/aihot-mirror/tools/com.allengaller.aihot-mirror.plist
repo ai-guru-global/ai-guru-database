@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!--
+    AI HOT 每日增量同步
+    每天北京时间 9 点 = UTC 1 点跑 daily_sync.sh
+    安装：cp tools/com.allengaller.aihot-mirror.plist ~/Library/LaunchAgents/
+          launchctl load ~/Library/LaunchAgents/com.allengaller.aihot-mirror.plist
+    卸载：launchctl unload ~/Library/LaunchAgents/com.allengaller.aihot-mirror.plist
+  -->
+  <key>Label</key>
+  <string>com.allengaller.aihot-mirror</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/allengaller/Documents/GitHub/standup-coder/ai-news-database/aihot-mirror/tools/daily_sync.sh</string>
+  </array>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>1</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/allengaller/Documents/GitHub/standup-coder/ai-news-database/aihot-mirror/logs/launchd.out</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/allengaller/Documents/GitHub/standup-coder/ai-news-database/aihot-mirror/logs/launchd.err</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/allengaller/Documents/GitHub/standup-coder/ai-news-database/aihot-mirror</string>
+</dict>
+</plist>

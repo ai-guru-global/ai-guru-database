@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Database 设置</title>
+  <link rel="stylesheet" href="popup.css">
+  <style>
+    body { width: 360px; margin: 20px auto; }
+    .container { padding: 20px; }
+    h2 { font-size: 16px; margin-bottom: 12px; }
+    .hint { font-size: 11px; color: var(--text-secondary); margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>AI News Database 设置</h2>
+
+    <label for="api-url">本地 API 地址</label>
+    <input type="text" id="api-url" value="http://localhost:8081">
+    <p class="hint">Web Dashboard 默认运行在 8081 端口</p>
+
+    <label for="api-key">API Key（可选）</label>
+    <input type="text" id="api-key" placeholder="留空表示不验证">
+
+    <div class="actions">
+      <button id="save-btn" class="btn-primary">保存设置</button>
+    </div>
+
+    <div id="status" class="status hidden"></div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

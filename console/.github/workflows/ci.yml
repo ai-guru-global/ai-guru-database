@@ -1,0 +1,120 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  GO_VERSION: '1.27' # govulncheck@latest (x/vuln v1.8.0) 要求 go >= 1.26，与本地开发版对齐
+  COVERAGE_MIN: 60
+
+defaults:
+  run:
+    working-directory: tools/cmd
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      - name: Check formatting
+        run: |
+          if [ -n "$(gofmt -l .)" ]; then
+            echo "以下文件未通过 go fmt，请运行 'make fmt' 后重新提交："
+            gofmt -l .
+            exit 1
+          fi
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      - name: Build
+        run: go build -o /dev/null ./...
+
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      - name: Test
+        run: go test ./... -race -coverprofile=coverage.out -covermode=atomic
+      - name: Upload coverage
+        if: matrix.os == 'ubuntu-latest'
+        uses: actions/upload-artifact@v7
+        with:
+          name: coverage
+          path: tools/cmd/coverage.out
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      - name: golangci-lint
+        uses: golangci/golangci-lint-action@v9
+        with:
+          version: v2.13 # 固定 v2 线：配置已迁移至 v2 格式，latest 解析出的旧二进制无法处理新工具链
+          args: --timeout=5m
+          working-directory: tools/cmd
+
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      - name: Run govulncheck
+        run: |
+          go install golang.org/x/vuln/cmd/govulncheck@latest
+          govulncheck ./...
+        working-directory: tools/cmd
+
+  coverage:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      - name: Download coverage
+        uses: actions/download-artifact@v8
+        with:
+          name: coverage
+          path: tools/cmd/.coverage
+      - name: Check coverage threshold
+        run: |
+          COVERAGE=$(go tool cover -func=.coverage/coverage.out | grep total | awk '{print $3}' | tr -d '%')
+          echo "Coverage: $COVERAGE%"
+          if [ "$COVERAGE" -lt "${{ env.COVERAGE_MIN }}" ]; then
+            echo "ERROR: Coverage $COVERAGE% is below minimum ${{ env.COVERAGE_MIN }}%"
+            exit 1
+          fi
+          echo "Coverage check passed!"
+
+  vet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version: ${{ env.GO_VERSION }}
+      - name: go vet
+        run: go vet ./...

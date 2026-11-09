@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-guru.global/schema/verify.schema.json",
+  "title": "AI GURU Verification Item",
+  "type": "object",
+  "required": [
+    "uid",
+    "title",
+    "status"
+  ],
+  "properties": {
+    "uid": {
+      "type": "string",
+      "pattern": "^verify/"
+    },
+    "sec": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "✅",
+        "⚠️",
+        "❓",
+        "🔍",
+        "✗",
+        "E",
+        ""
+      ]
+    },
+    "date": {
+      "type": "string"
+    },
+    "lines": {
+      "type": "array"
+    },
+    "into": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

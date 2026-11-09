@@ -1,0 +1,65 @@
+name: feed
+
+on:
+  schedule:
+    - cron: "0 2 * * 1" # 每周一 10:00（北京时间）
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "_2026大事记.md"
+      - "_2025大事记.md"
+      - "tools/scripts/build_feed.py"
+      - "tools/scripts/build_pages.py"
+      - "tools/scripts/build_dataset.py"
+      - "data/**"
+      - "schema/**"
+      - "console/chain.js"
+      - "console/explain*.js"
+      - "console/deep*.js"
+      - "console/models.js"
+      - "console/players.js"
+      - "console/glossary.js"
+      - "README.md"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: 生成 feed 与站点
+        run: python tools/scripts/build_feed.py
+
+      - name: 生成可抓取的节点静态页
+        run: python tools/scripts/build_pages.py
+      - name: 提交 feed.xml 与 README 最近大事
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add feed.xml README.md
+          git diff --cached --quiet || (git commit -m "chore(feed): 周更订阅源与最近大事" && git push)
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

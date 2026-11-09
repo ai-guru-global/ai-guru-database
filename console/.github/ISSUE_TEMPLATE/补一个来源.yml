@@ -1,0 +1,55 @@
+name: 给一条结论补来源（L2）
+description: 为节点判断、线索概述或深度拆解里的一个数字/结论补上可追溯来源
+title: "[L2] 补来源："
+labels: ["good first issue", "来源"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **L2 · 15 分钟级贡献**。目标不是改结论，而是让已有结论**可追溯**。
+        来源分级：A 一手正文 / B 一手但利益相关 / C 多源交叉 / D 单源二手 / E 榜单软文。
+  - type: input
+    id: where
+    attributes:
+      label: 结论位置
+      description: 节点 uid 或线索路径 + 原文片段，例：`ai-guru:chain/L1/gpu`「护城河」
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: 结论原文
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: 来源 URL
+    validations:
+      required: true
+  - type: dropdown
+    id: tier
+    attributes:
+      label: 来源级别
+      options:
+        - "A · 一手正文（官方公告 / 论文 / 监管 filing）"
+        - "B · 一手但利益相关（厂商自述）"
+        - "C · 多源交叉（≥2 家独立媒体）"
+        - "D · 单源二手"
+        - "E · 榜单 / 软文（仅证明品类存在）"
+    validations:
+      required: true
+  - type: textarea
+    id: quote
+    attributes:
+      label: 来源中的原句
+      description: 贴出支撑该结论的原句；没有原句等于没有来源
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我贴的是来源正文原句，不是搜索摘要
+          required: true

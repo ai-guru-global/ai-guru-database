@@ -1,0 +1,74 @@
+name: 新闻线索投稿
+description: 投稿一条 AI 新闻，经维护者核验后录入对应线索时间线
+labels: ["线索投稿"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢投稿！本库遵循「宁可漏收、不可错收」原则：
+        - 优先官方一手源（官方博客/公告），其次主流媒体（Reuters、TechCrunch、CNBC 等）；
+        - 投稿前请先在仓库搜索，确认该新闻尚未收录。
+  - type: input
+    id: title
+    attributes:
+      label: 新闻标题
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: 原文链接
+      description: 官方一手源或主流媒体 URL，需可公开访问
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: 发生日期
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+  - type: dropdown
+    id: topic
+    attributes:
+      label: 所属主题
+      options:
+        - 基础模型
+        - 开源模型与生态
+        - Agentic编码
+        - 智能体平台
+        - 多模态大模型
+        - 推理与基础设施
+        - 训练与数据
+        - 评测与基准
+        - 具身智能
+        - 世界模型
+        - 行业应用
+        - AI安全与对齐
+        - 开发者工具
+        - 语音与音频
+        - AI搜索与信息获取
+        - 商业与投融资
+        - 消费级AI应用
+        - 交付与组织
+    validations:
+      required: true
+  - type: input
+    id: thread
+    attributes:
+      label: 建议线索文件
+      description: 如已知对应线索（例：基础模型/Claude.md）；无线索可留空
+  - type: textarea
+    id: summary
+    attributes:
+      label: 一句话摘要
+      description: 关键数据与影响，一句话说清
+    validations:
+      required: true
+  - type: checkboxes
+    id: authenticity
+    attributes:
+      label: 真实性确认
+      options:
+        - label: 我确认链接可访问、内容属实，且非仅单一不可溯源信源
+          required: true

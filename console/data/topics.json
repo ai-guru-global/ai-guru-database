@@ -1,0 +1,320 @@
+{
+  "count": 18,
+  "items": [
+    {
+      "uid": "topic/基础模型",
+      "key": "基础模型",
+      "name": "基础模型",
+      "en": "Foundation Models",
+      "def": "基础大模型能力本身：GPT/Claude/Gemini/Llama 等前沿模型与权重",
+      "defEn": "Frontier model capabilities and weights: GPT, Claude, Gemini, Llama and the frontier race.",
+      "count": 5,
+      "clues": [
+        "基础模型/Grok",
+        "基础模型/Gemini",
+        "基础模型/GPT系列",
+        "基础模型/Claude",
+        "基础模型/微软MAI"
+      ],
+      "url": "#/topics/基础模型"
+    },
+    {
+      "uid": "topic/智能体平台",
+      "key": "智能体平台",
+      "name": "智能体平台",
+      "en": "Agent Platforms",
+      "def": "Agent 框架、编排、工具调用、多智能体系统",
+      "defEn": "Agent frameworks, orchestration, tool use and multi-agent systems.",
+      "count": 5,
+      "clues": [
+        "智能体平台/Manus",
+        "智能体平台/A2A协议",
+        "智能体平台/MCP协议",
+        "智能体平台/ClaudeAgentSDK",
+        "智能体平台/Agent框架"
+      ],
+      "url": "#/topics/智能体平台"
+    },
+    {
+      "uid": "topic/Agentic编码",
+      "key": "Agentic编码",
+      "name": "Agentic编码",
+      "en": "Agentic Coding",
+      "def": "Agentic Coding、代码 Agent、AI IDE/Copilot",
+      "defEn": "Agentic coding, code agents, AI IDEs and copilots.",
+      "count": 6,
+      "clues": [
+        "Agentic编码/Windsurf",
+        "Agentic编码/GeminiCLI",
+        "Agentic编码/Codex",
+        "Agentic编码/Cursor",
+        "Agentic编码/ClaudeCode",
+        "Agentic编码/Devin"
+      ],
+      "url": "#/topics/Agentic编码"
+    },
+    {
+      "uid": "topic/多模态大模型",
+      "key": "多模态大模型",
+      "name": "多模态大模型",
+      "en": "Multimodal Models",
+      "def": "视觉/音频/视频/统一多模态模型",
+      "defEn": "Vision, audio, video and unified multimodal models.",
+      "count": 4,
+      "clues": [
+        "多模态大模型/图像生成与编辑",
+        "多模态大模型/Midjourney",
+        "多模态大模型/视频生成竞赛",
+        "多模态大模型/Sora"
+      ],
+      "url": "#/topics/多模态大模型"
+    },
+    {
+      "uid": "topic/推理与基础设施",
+      "key": "推理与基础设施",
+      "name": "推理与基础设施",
+      "en": "Inference & Infra",
+      "def": "推理优化、推理引擎、芯片、算力、数据中心",
+      "defEn": "Inference optimization, inference engines, chips, compute and datacenters.",
+      "count": 15,
+      "clues": [
+        "推理与基础设施/真武PPU",
+        "推理与基础设施/平头哥",
+        "推理与基础设施/液冷与散热",
+        "推理与基础设施/摩尔线程",
+        "推理与基础设施/寒武纪",
+        "推理与基础设施/台积电与先进制程",
+        "推理与基础设施/华为昇腾",
+        "推理与基础设施/云厂商自研芯片",
+        "推理与基础设施/主权AI",
+        "推理与基础设施/HBM与先进存储",
+        "推理与基础设施/Groq与推理专用芯片",
+        "推理与基础设施/GPU高速网络",
+        "推理与基础设施/AI数据中心与能源",
+        "推理与基础设施/vLLM与推理引擎",
+        "推理与基础设施/AI芯片竞争"
+      ],
+      "url": "#/topics/推理与基础设施"
+    },
+    {
+      "uid": "topic/开源模型与生态",
+      "key": "开源模型与生态",
+      "name": "开源模型与生态",
+      "en": "Open Source & Ecosystem",
+      "def": "开源权重、开源框架、社区生态（HuggingFace 等）",
+      "defEn": "Open weights, open frameworks and community ecosystems such as Hugging Face.",
+      "count": 12,
+      "clues": [
+        "开源模型与生态/谷歌Gemma",
+        "开源模型与生态/Mistral",
+        "开源模型与生态/HuggingFace",
+        "开源模型与生态/智谱GLM",
+        "开源模型与生态/字节豆包",
+        "开源模型与生态/Kimi",
+        "开源模型与生态/国产大模型群像",
+        "开源模型与生态/Qwen",
+        "开源模型与生态/MiniMax",
+        "开源模型与生态/Llama",
+        "开源模型与生态/DeepSeek",
+        "开源模型与生态/ThinkingMachines"
+      ],
+      "url": "#/topics/开源模型与生态"
+    },
+    {
+      "uid": "topic/训练与数据",
+      "key": "训练与数据",
+      "name": "训练与数据",
+      "en": "Training & Data",
+      "def": "训练方法、对齐、数据集、合成数据",
+      "defEn": "Training methods, alignment, datasets and synthetic data.",
+      "count": 4,
+      "clues": [
+        "训练与数据/推理模型与测试时计算",
+        "训练与数据/ScaleAI与数据标注",
+        "训练与数据/数据壁垒与合成数据",
+        "训练与数据/RLHF与后训练"
+      ],
+      "url": "#/topics/训练与数据"
+    },
+    {
+      "uid": "topic/评测与基准",
+      "key": "评测与基准",
+      "name": "评测与基准",
+      "en": "Evaluation & Benchmarks",
+      "def": "Benchmark、能力评测、评测方法",
+      "defEn": "Benchmarks, capability evaluation and evaluation methods.",
+      "count": 4,
+      "clues": [
+        "评测与基准/LMArena",
+        "评测与基准/ArtificialAnalysis指数",
+        "评测与基准/ARC系列基准",
+        "评测与基准/SWE-bench"
+      ],
+      "url": "#/topics/评测与基准"
+    },
+    {
+      "uid": "topic/具身智能",
+      "key": "具身智能",
+      "name": "具身智能",
+      "en": "Embodied AI",
+      "def": "具身 AI、机器人、感知与控制",
+      "defEn": "Embodied AI, robotics, perception and control.",
+      "count": 5,
+      "clues": [
+        "具身智能/波士顿动力",
+        "具身智能/宇树科技",
+        "具身智能/特斯拉Optimus",
+        "具身智能/GeminiRobotics",
+        "具身智能/Figure"
+      ],
+      "url": "#/topics/具身智能"
+    },
+    {
+      "uid": "topic/世界模型",
+      "key": "世界模型",
+      "name": "世界模型",
+      "en": "World Models",
+      "def": "世界模型、物理仿真、视频生成模型作世界模型",
+      "defEn": "World models, physics simulation, and video generation as world simulators.",
+      "count": 3,
+      "clues": [
+        "世界模型/NVIDIACosmos",
+        "世界模型/Genie",
+        "世界模型/WorldLabs"
+      ],
+      "url": "#/topics/世界模型"
+    },
+    {
+      "uid": "topic/行业应用",
+      "key": "行业应用",
+      "name": "行业应用",
+      "en": "Industry Applications",
+      "def": "医疗/办公/金融/法律/教育/科研等垂直落地",
+      "defEn": "Vertical deployments in healthcare, office, finance, legal, education and research.",
+      "count": 10,
+      "clues": [
+        "行业应用/医疗AI",
+        "行业应用/AlphaFold与AI科研",
+        "行业应用/AI办公",
+        "行业应用/AI与营销电商",
+        "行业应用/AI与网络安全",
+        "行业应用/AI与法律",
+        "行业应用/AI与汽车出行",
+        "行业应用/AI与内容产业",
+        "行业应用/AI金融",
+        "行业应用/AI教育"
+      ],
+      "url": "#/topics/行业应用"
+    },
+    {
+      "uid": "topic/AI安全与对齐",
+      "key": "AI安全与对齐",
+      "name": "AI安全与对齐",
+      "en": "AI Safety & Alignment",
+      "def": "安全、对齐、红队、监管政策",
+      "defEn": "Safety, alignment, red-teaming and regulation.",
+      "count": 3,
+      "clues": [
+        "AI安全与对齐/智能体安全与攻防",
+        "AI安全与对齐/对齐与可解释性研究",
+        "AI安全与对齐/AI监管政策"
+      ],
+      "url": "#/topics/AI安全与对齐"
+    },
+    {
+      "uid": "topic/开发者工具",
+      "key": "开发者工具",
+      "name": "开发者工具",
+      "en": "Dev Tools",
+      "def": "面向开发者的 AI 工具链、SDK、平台",
+      "defEn": "AI toolchains, SDKs and platforms for developers.",
+      "count": 2,
+      "clues": [
+        "开发者工具/GitHubCopilot",
+        "开发者工具/Ollama"
+      ],
+      "url": "#/topics/开发者工具"
+    },
+    {
+      "uid": "topic/语音与音频",
+      "key": "语音与音频",
+      "name": "语音与音频",
+      "en": "Speech & Audio",
+      "def": "语音合成/识别、音乐生成、实时语音交互",
+      "defEn": "Speech synthesis and recognition, music generation and real-time voice interaction.",
+      "count": 3,
+      "clues": [
+        "语音与音频/OpenAI实时语音",
+        "语音与音频/Suno",
+        "语音与音频/ElevenLabs"
+      ],
+      "url": "#/topics/语音与音频"
+    },
+    {
+      "uid": "topic/AI搜索与信息获取",
+      "key": "AI搜索与信息获取",
+      "name": "AI搜索与信息获取",
+      "en": "AI Search & Information",
+      "def": "AI 搜索引擎、答案引擎、AI 浏览器、信息聚合",
+      "defEn": "AI search engines, answer engines, AI browsers and information aggregation.",
+      "count": 3,
+      "clues": [
+        "AI搜索与信息获取/GEO",
+        "AI搜索与信息获取/Perplexity",
+        "AI搜索与信息获取/ChatGPT搜索"
+      ],
+      "url": "#/topics/AI搜索与信息获取"
+    },
+    {
+      "uid": "topic/商业与投融资",
+      "key": "商业与投融资",
+      "name": "商业与投融资",
+      "en": "Business & Funding",
+      "def": "融资、并购、人才流动、商业模式、市场格局",
+      "defEn": "Funding, M&A, talent mobility, business models and market structure.",
+      "count": 4,
+      "clues": [
+        "商业与投融资/AI的IPO窗口",
+        "商业与投融资/OpenAI融资与重组",
+        "商业与投融资/Anthropic融资与重组",
+        "商业与投融资/AI人才与并购潮"
+      ],
+      "url": "#/topics/商业与投融资"
+    },
+    {
+      "uid": "topic/消费级AI应用",
+      "key": "消费级AI应用",
+      "name": "消费级AI应用",
+      "en": "Consumer AI",
+      "def": "面向大众的 AI 产品：助手 App、陪伴、创作工具",
+      "defEn": "Mass-market AI products: assistant apps, companionship and creation tools.",
+      "count": 5,
+      "clues": [
+        "消费级AI应用/纽扣AI",
+        "消费级AI应用/NotebookLM",
+        "消费级AI应用/AI陪伴与CharacterAI",
+        "消费级AI应用/ChatGPT产品",
+        "消费级AI应用/Meta-AI"
+      ],
+      "url": "#/topics/消费级AI应用"
+    },
+    {
+      "uid": "topic/交付与组织",
+      "key": "交付与组织",
+      "name": "交付与组织",
+      "en": "Delivery & Organization",
+      "def": "FDE/前沿部署、交付与实施、服务伙伴认证、乙方组织与人才结构",
+      "defEn": "FDE and forward deployment, delivery and implementation, partner certification, and vendor-side organization and talent structure.",
+      "count": 6,
+      "clues": [
+        "交付与组织/神州数码",
+        "交付与组织/京北方",
+        "交付与组织/FDE行业调研",
+        "交付与组织/FDE前沿部署工程师",
+        "交付与组织/服务伙伴与认证体系",
+        "交付与组织/AI交付成本结构"
+      ],
+      "url": "#/topics/交付与组织"
+    }
+  ]
+}

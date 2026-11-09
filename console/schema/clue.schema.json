@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-guru.global/schema/clue.schema.json",
+  "title": "AI GURU Clue",
+  "type": "object",
+  "required": [
+    "uid",
+    "id",
+    "topic",
+    "name",
+    "updated",
+    "body"
+  ],
+  "properties": {
+    "uid": {
+      "type": "string",
+      "pattern": "^clue/"
+    },
+    "id": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "alias": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string"
+    },
+    "updated": {
+      "type": "string"
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "quote": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "analysis": {
+      "type": "string"
+    },
+    "nAnalysis": {
+      "type": "integer"
+    },
+    "nEvents": {
+      "type": "integer"
+    },
+    "lastEvent": {
+      "type": "string"
+    },
+    "months": {
+      "type": "integer"
+    },
+    "verified": {
+      "type": "integer"
+    },
+    "pending": {
+      "type": "integer"
+    },
+    "related": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "url": {
+      "type": "string"
+    },
+    "src": {
+      "type": "string"
+    }
+  }
+}

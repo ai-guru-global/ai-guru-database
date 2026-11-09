@@ -1,0 +1,78 @@
+version: "2"
+
+run:
+  timeout: 5m
+  modules-download-mode: readonly
+
+# golangci-lint v2 配置。prealloc 关停（7 处存量建议，待专项清理后可重开）；
+# gosimple 并入 staticcheck；typecheck 恒开；golint/exportloopref 已废弃移除
+linters:
+  default: standard
+  enable:
+    - errcheck
+    - gosec
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+    - misspell
+    - nakedret
+  settings:
+    errcheck:
+      exclude-functions:
+        - (*encoding/json.Encoder).Encode
+        - (*encoding/json.Decoder).Decode
+        - fmt.Sscanf
+        - (*database/sql.DB).Exec
+        - os.WriteFile
+        - (*os.File).Close
+        - (*github.com/spf13/cobra.Command).GenBashCompletion
+        - (*github.com/spf13/cobra.Command).GenZshCompletion
+        - (*github.com/spf13/cobra.Command).GenFishCompletion
+        - (*github.com/spf13/cobra.Command).GenPowerShellCompletionWithDesc
+        - (*github.com/spf13/cobra.Command).MarkFlagRequired
+        # defer 中的资源释放（Close/Flush）与向 stdout 的打印，失败无法处理
+        - (*database/sql.Rows).Close
+        - (*text/tabwriter.Writer).Flush
+        - (*bufio.Writer).Flush
+        - fmt.Fprintf
+        - fmt.Fprint
+        - (*net/http.body).Close
+        - (*ai-news-database/internal/db.DB).Close
+    gosec:
+      excludes:
+        - G104 # ioutil.NopCloser
+        # 存量债务（v2 恢复执行后暴露，待专项清理，勿新增同类代码）
+        - G114 # http.ListenAndServe：本地开发服务器
+        - G202 # SQL 字符串拼接
+        - G301 # 目录权限 0750
+        - G304 # 变量路径读文件
+        - G306 # WriteFile 权限
+    staticcheck:
+      checks:
+        - all
+        # 存量债务（v2 新增检查口径，待专项清理）
+        - -QF1003
+        - -QF1012
+        - -S1000
+        - -ST1003 # deep_research 包名带下划线，改名侵入过大
+        - -ST1005
+    misspell:
+      locale: US
+    nakedret:
+      max-func-lines: 40
+  exclusions:
+    rules:
+      - path: _test\.go
+        linters:
+          - errcheck
+          - gosec
+          - nakedret
+      - path: internal/integration/
+        linters:
+          - errcheck
+          - gosec
+
+formatters:
+  enable:
+    - gofmt

@@ -1,0 +1,44 @@
+{
+  "name": "ai-industry-graph",
+  "version": "0.1.0",
+  "description": "Machine-readable map of the AI industry: 5 value-chain layers, 69 nodes, evidence timelines and a six-state verification ledger.",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    },
+    "./data/*": "./data/*"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "LICENSE",
+    "data"
+  ],
+  "scripts": {
+    "prepack": "node scripts/sync-data.mjs",
+    "test": "node test.mjs"
+  },
+  "keywords": [
+    "ai",
+    "industry",
+    "dataset",
+    "knowledge-graph",
+    "ai-infra",
+    "llm"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ai-guru-global/ai-guru-console.git",
+    "directory": "packages/ai-industry-graph"
+  },
+  "homepage": "https://ai-guru-global.github.io/ai-guru-console/",
+  "engines": {
+    "node": ">=18"
+  }
+}

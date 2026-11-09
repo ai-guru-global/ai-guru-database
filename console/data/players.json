@@ -1,0 +1,1769 @@
+{
+  "count": 142,
+  "items": [
+    {
+      "name": "OpenAI",
+      "type": "公司",
+      "positioning": "前沿 lab + 消费级超级入口（ChatGPT）",
+      "aliases": [
+        "GPT-4",
+        "GPT-4o",
+        "o1",
+        "o3",
+        "GPT-5",
+        "Model Context Protocol"
+      ],
+      "note": "关键角色，出现于 21 条线索",
+      "uid": "player/openai"
+    },
+    {
+      "name": "Anthropic",
+      "type": "公司",
+      "positioning": "前沿 lab，主打编码/Agent 与安全叙事",
+      "aliases": [
+        "Claude 3",
+        "Claude 3.5",
+        "Claude 4",
+        "Anthropic 模型",
+        "Claude Agent SDK",
+        "Claude Code SDK"
+      ],
+      "note": "关键角色，出现于 13 条线索",
+      "uid": "player/anthropic"
+    },
+    {
+      "name": "Google DeepMind",
+      "type": "公司",
+      "positioning": "Google 旗下前沿模型研究部门",
+      "aliases": [
+        "Google Gemini",
+        "Gemini 1.5",
+        "Gemini 2.0",
+        "Gemini 2.5",
+        "Veo",
+        "Runway"
+      ],
+      "note": "关键角色，出现于 6 条线索",
+      "uid": "player/google-deepmind"
+    },
+    {
+      "name": "Microsoft",
+      "type": "公司",
+      "positioning": "云 + Copilot 生态，自研 MAI 模型",
+      "aliases": [
+        "Microsoft MAI",
+        "MAI-1",
+        "MAI-Thinking",
+        "LangGraph",
+        "AutoGen",
+        "Microsoft Agent Framework"
+      ],
+      "note": "关键角色，出现于 9 条线索",
+      "uid": "player/microsoft"
+    },
+    {
+      "name": "Google",
+      "type": "公司",
+      "positioning": "Gemini 全家桶与算力基础设施",
+      "aliases": [
+        "Google Gemini",
+        "Gemini 1.5",
+        "Gemini 2.0",
+        "Gemini 2.5",
+        "Model Context Protocol",
+        "MCP"
+      ],
+      "note": "关键角色，出现于 9 条线索",
+      "uid": "player/google"
+    },
+    {
+      "name": "Meta",
+      "type": "公司",
+      "positioning": "开源 Llama 路线与超级智能 lab",
+      "aliases": [
+        "NVIDIA",
+        "GPU",
+        "TPU",
+        "AI 算力",
+        "LLaMA",
+        "Llama 2"
+      ],
+      "note": "关键角色，出现于 5 条线索",
+      "uid": "player/meta"
+    },
+    {
+      "name": "NVIDIA",
+      "type": "公司",
+      "positioning": "AI 算力芯片与推理生态垄断者",
+      "aliases": [
+        "GPU",
+        "TPU",
+        "AI 算力",
+        "vLLM",
+        "SGLang",
+        "TensorRT-LLM"
+      ],
+      "note": "关键角色，出现于 4 条线索",
+      "uid": "player/nvidia"
+    },
+    {
+      "name": "MiniMax",
+      "type": "公司",
+      "positioning": "国产多模态与视频生成",
+      "aliases": [
+        "Veo",
+        "Runway",
+        "Kling",
+        "文生视频",
+        "M2",
+        "M3"
+      ],
+      "note": "关键角色，出现于 4 条线索",
+      "uid": "player/minimax"
+    },
+    {
+      "name": "DeepSeek",
+      "type": "公司",
+      "positioning": "开源高性价比路线代表",
+      "aliases": [
+        "vLLM",
+        "SGLang",
+        "TensorRT-LLM",
+        "推理优化",
+        "深度求索",
+        "DeepSeek-V3"
+      ],
+      "note": "关键角色，出现于 3 条线索",
+      "uid": "player/deepseek"
+    },
+    {
+      "name": "UC Berkeley",
+      "type": "机构",
+      "positioning": "推理引擎与竞技场的学术源点",
+      "aliases": [
+        "vLLM",
+        "SGLang",
+        "TensorRT-LLM",
+        "推理优化",
+        "Chatbot Arena",
+        "LMSYS"
+      ],
+      "note": "关键角色，出现于 2 条线索",
+      "uid": "player/uc-berkeley"
+    },
+    {
+      "name": "LMSYS",
+      "type": "机构",
+      "positioning": "Chatbot Arena 竞技场运营方",
+      "aliases": [
+        "vLLM",
+        "SGLang",
+        "TensorRT-LLM",
+        "推理优化",
+        "Chatbot Arena",
+        "竞技场"
+      ],
+      "note": "关键角色，出现于 2 条线索",
+      "uid": "player/lmsys"
+    },
+    {
+      "name": "Amazon",
+      "type": "公司",
+      "positioning": "云厂商，反向收购补 AI 能力",
+      "aliases": [
+        "反向收购",
+        "acqui-hire",
+        "AI 人才战争",
+        "OpenAI 估值",
+        "OpenAI 营利化重组"
+      ],
+      "note": "关键角色，出现于 2 条线索",
+      "uid": "player/amazon"
+    },
+    {
+      "name": "Mustafa Suleyman",
+      "type": "人物",
+      "positioning": "Microsoft AI 负责人，MAI 主导者",
+      "aliases": [
+        "Microsoft MAI",
+        "MAI-1",
+        "MAI-Thinking"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/mustafa-suleyman"
+    },
+    {
+      "name": "LangChain",
+      "type": "公司",
+      "positioning": "Agent 框架头部，并入 Microsoft MAF",
+      "aliases": [
+        "LangGraph",
+        "AutoGen",
+        "Microsoft Agent Framework",
+        "CrewAI",
+        "MAF"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/langchain"
+    },
+    {
+      "name": "CrewAI",
+      "type": "公司",
+      "positioning": "多智能体编排框架",
+      "aliases": [
+        "LangGraph",
+        "AutoGen",
+        "Microsoft Agent Framework",
+        "MAF"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/crewai"
+    },
+    {
+      "name": "Anysphere",
+      "type": "公司",
+      "positioning": "Cursor 母公司，SpaceX 全资子公司",
+      "aliases": [
+        "Cursor IDE"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/anysphere"
+    },
+    {
+      "name": "Runway",
+      "type": "公司",
+      "positioning": "视频生成头部",
+      "aliases": [
+        "Veo",
+        "Kling",
+        "文生视频"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/runway"
+    },
+    {
+      "name": "快手",
+      "type": "公司",
+      "positioning": "可灵视频生成",
+      "aliases": [
+        "Veo",
+        "Runway",
+        "Kling",
+        "文生视频"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/快手"
+    },
+    {
+      "name": "Luma",
+      "type": "公司",
+      "positioning": "视频生成 Dream Machine",
+      "aliases": [
+        "Veo",
+        "Runway",
+        "Kling",
+        "文生视频"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/luma"
+    },
+    {
+      "name": "Midjourney",
+      "type": "公司",
+      "positioning": "图像生成独立头部",
+      "aliases": [
+        "Veo",
+        "Runway",
+        "Kling",
+        "文生视频"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/midjourney"
+    },
+    {
+      "name": "腾讯",
+      "type": "公司",
+      "positioning": "WorkBuddy 与腾讯云渠道体系，AI 办公交付门槛的设定方",
+      "aliases": [
+        "WorkBuddy",
+        "腾讯混元"
+      ],
+      "note": "关键角色，出现于 3 条线索",
+      "uid": "player/腾讯"
+    },
+    {
+      "name": "阿里巴巴",
+      "type": "公司",
+      "positioning": "千问办公与阿里云代理体系，席位+积分定价样板",
+      "aliases": [
+        "千问办公",
+        "QwenWork",
+        "通义千问"
+      ],
+      "note": "关键角色，出现于 3 条线索",
+      "uid": "player/阿里巴巴"
+    },
+    {
+      "name": "字节跳动",
+      "type": "公司",
+      "positioning": "火山引擎 TRAE Work 与 Seed 模型，透明分级渠道政策",
+      "aliases": [
+        "TRAE Work",
+        "豆包大模型",
+        "火山引擎"
+      ],
+      "note": "关键角色，出现于 2 条线索",
+      "uid": "player/字节跳动"
+    },
+    {
+      "name": "AppLovin",
+      "type": "公司",
+      "positioning": "移动广告投放平台，AXON 引擎重写买量经济学",
+      "aliases": [
+        "AXON",
+        "买量",
+        "效果广告"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/applovin"
+    },
+    {
+      "name": "The Trade Desk",
+      "type": "公司",
+      "positioning": "独立程序化广告平台，品牌预算的中立通道",
+      "aliases": [
+        "TTD",
+        "Kokai",
+        "程序化广告"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/the-trade-desk"
+    },
+    {
+      "name": "AppsFlyer",
+      "type": "公司",
+      "positioning": "移动营销归因与反作弊，广告数据的裁判",
+      "aliases": [
+        "归因",
+        "移动归因",
+        "反作弊"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/appsflyer"
+    },
+    {
+      "name": "美团",
+      "type": "公司",
+      "positioning": "本地生活与即时零售，AI 调度价值最大的场景",
+      "aliases": [
+        "Meituan",
+        "美团外卖",
+        "即时零售",
+        "无人机配送"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/美团"
+    },
+    {
+      "name": "Shopify",
+      "type": "公司",
+      "positioning": "独立站建站平台，把 AI 塞进商家全家桶",
+      "aliases": [
+        "Shopify Magic",
+        "Sidekick",
+        "独立站"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/shopify"
+    },
+    {
+      "name": "Waymo",
+      "type": "公司",
+      "positioning": "Robotaxi 运营标杆，安全记录即品牌",
+      "aliases": [
+        "Google 无人车",
+        "Robotaxi"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/waymo"
+    },
+    {
+      "name": "小马智行",
+      "type": "公司",
+      "positioning": "中国 Robotaxi 头部，车队运营与干线物流",
+      "aliases": [
+        "Pony.ai",
+        "PonyPilot"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/小马智行"
+    },
+    {
+      "name": "地平线",
+      "type": "公司",
+      "positioning": "车规智驾芯片，中阶市场性价比之王",
+      "aliases": [
+        "Horizon Robotics",
+        "征程",
+        "J6P",
+        "辅助驾驶芯片"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/地平线"
+    },
+    {
+      "name": "禾赛科技",
+      "type": "公司",
+      "positioning": "激光雷达头部，自动驾驶感知的硬件供给",
+      "aliases": [
+        "Hesai",
+        "ATX",
+        "激光雷达"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/禾赛科技"
+    },
+    {
+      "name": "西门子",
+      "type": "公司",
+      "positioning": "工业软件与自动化巨头，AI 嵌入全流程",
+      "aliases": [
+        "Siemens",
+        "NX",
+        "Teamcenter",
+        "Industrial Copilot"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/西门子"
+    },
+    {
+      "name": "基恩士",
+      "type": "公司",
+      "positioning": "传感与视觉检测标准品，工厂自动化的高毛利王者",
+      "aliases": [
+        "Keyence",
+        "机器视觉",
+        "传感器"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/基恩士"
+    },
+    {
+      "name": "创新奇智",
+      "type": "公司",
+      "positioning": "中国工业 AI 集成头部，制造业大客户覆盖",
+      "aliases": [
+        "AInnovation",
+        "AI 质检",
+        "工业视觉"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/创新奇智"
+    },
+    {
+      "name": "中望软件",
+      "type": "公司",
+      "positioning": "国产 CAD 自主内核，工业软件国产替代标的",
+      "aliases": [
+        "ZWSoft",
+        "中望CAD",
+        "中望3D"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/中望软件"
+    },
+    {
+      "name": "ASML",
+      "type": "公司",
+      "positioning": "EUV 光刻独家垄断，先进制程的物理上限",
+      "aliases": [
+        "阿斯麦",
+        "High-NA EUV",
+        "光刻机"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/asml"
+    },
+    {
+      "name": "Applied Materials",
+      "type": "公司",
+      "positioning": "沉积刻蚀平台型设备龙头，品类最全",
+      "aliases": [
+        "应用材料",
+        "AMAT",
+        "CVD",
+        "刻蚀设备"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/applied-materials"
+    },
+    {
+      "name": "KLA",
+      "type": "公司",
+      "positioning": "量测与检测设备垄断者，良率爬坡之眼",
+      "aliases": [
+        "KLAC",
+        "缺陷检测",
+        "量测设备"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/kla"
+    },
+    {
+      "name": "台积电",
+      "type": "公司",
+      "positioning": "先进制程与先进封装代工，AI 算力的制造底座",
+      "aliases": [
+        "TSMC",
+        "CoWoS",
+        "3nm",
+        "2nm"
+      ],
+      "note": "关键角色，出现于 2 条线索",
+      "uid": "player/台积电"
+    },
+    {
+      "name": "日月光",
+      "type": "公司",
+      "positioning": "委外封测（OSAT）龙头，承接先进封装溢出产能",
+      "aliases": [
+        "ASE",
+        "封测",
+        "OSAT"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/日月光"
+    },
+    {
+      "name": "长电科技",
+      "type": "公司",
+      "positioning": "中国封测三强之首，XDFOI 芯粒封装平台",
+      "aliases": [
+        "JCET",
+        "XDFOI",
+        "Chiplet 封装"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/长电科技"
+    },
+    {
+      "name": "CrowdStrike",
+      "type": "公司",
+      "positioning": "云原生端点安全龙头，AI 分诊重构 SOC",
+      "aliases": [
+        "Falcon",
+        "Charlotte AI",
+        "EDR"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/crowdstrike"
+    },
+    {
+      "name": "Palo Alto Networks",
+      "type": "公司",
+      "positioning": "网络安全平台化巨头，全栈并购整合",
+      "aliases": [
+        "PANW",
+        "XSIAM",
+        "Cortex",
+        "下一代防火墙"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/palo-alto-networks"
+    },
+    {
+      "name": "Wiz",
+      "type": "公司",
+      "positioning": "云安全增速纪录保持者，CNAPP 品类定义者",
+      "aliases": [
+        "CNAPP",
+        "云工作负载安全"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/wiz"
+    },
+    {
+      "name": "奇安信",
+      "type": "公司",
+      "positioning": "中国政企安全头部，关基与等保驱动",
+      "aliases": [
+        "QAX",
+        "态势感知",
+        "关基保护"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/奇安信"
+    },
+    {
+      "name": "Isomorphic Labs",
+      "type": "公司",
+      "positioning": "DeepMind 衍生，AlphaFold 药物发现商业化主体",
+      "aliases": [
+        "AlphaFold",
+        "结构预测",
+        "AI 制药"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/isomorphic-labs"
+    },
+    {
+      "name": "晶泰科技",
+      "type": "公司",
+      "positioning": "机器人湿实验 + AI 的中国药物与材料公司",
+      "aliases": [
+        "XtalPi",
+        "AI 制药",
+        "自动化实验"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/晶泰科技"
+    },
+    {
+      "name": "深势科技",
+      "type": "公司",
+      "positioning": "科学计算底座，机器学习势函数与 Bohrium 平台",
+      "aliases": [
+        "DP Technology",
+        "Bohrium",
+        "DPA",
+        "AI for Science"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/深势科技"
+    },
+    {
+      "name": "科大讯飞",
+      "type": "公司",
+      "positioning": "语音与政务大模型先行者，12345 热线场景深耕",
+      "aliases": [
+        "iFlytek",
+        "星火",
+        "讯飞星火",
+        "政务大模型"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/科大讯飞"
+    },
+    {
+      "name": "海康威视",
+      "type": "公司",
+      "positioning": "城市治理视频物联龙头，观澜大模型",
+      "aliases": [
+        "Hikvision",
+        "观澜大模型",
+        "城市安防"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/海康威视"
+    },
+    {
+      "name": "浪潮信息",
+      "type": "公司",
+      "positioning": "中国 AI 服务器与全栈超融合头部，政务与智算中心算力供给",
+      "aliases": [
+        "Inspur",
+        "AI 服务器",
+        "整机柜"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/浪潮信息"
+    },
+    {
+      "name": "Databricks",
+      "type": "公司",
+      "positioning": "湖仓一体开创者，数据与 AI 平台的事实标准",
+      "aliases": [
+        "Unity Catalog",
+        "Delta Lake",
+        "Mosaic AI"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/databricks"
+    },
+    {
+      "name": "Snowflake",
+      "type": "公司",
+      "positioning": "云数仓第二极，Cortex 补齐 AI 能力",
+      "aliases": [
+        "SNOW",
+        "Snowpark",
+        "Cortex AI"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/snowflake"
+    },
+    {
+      "name": "Zilliz",
+      "type": "公司",
+      "positioning": "开源向量数据库 Milvus 商业化，大规模检索底座",
+      "aliases": [
+        "Milvus",
+        "向量数据库",
+        "向量检索"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/zilliz"
+    },
+    {
+      "name": "G42",
+      "type": "公司",
+      "positioning": "阿联酋主权 AI 集团，资本换技术的样板",
+      "aliases": [
+        "Presight",
+        "Core42",
+        "阿联酋 AI"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/g42"
+    },
+    {
+      "name": "HUMAIN",
+      "type": "公司",
+      "positioning": "沙特主权算力公司，2030 愿景的 AI 引擎",
+      "aliases": [
+        "沙特 AI",
+        "SAI"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/humain"
+    },
+    {
+      "name": "中科曙光",
+      "type": "公司",
+      "positioning": "超算与液冷基础设施，国家智算中心主力",
+      "aliases": [
+        "Sugon",
+        "液冷",
+        "国家超算"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/中科曙光"
+    },
+    {
+      "name": "CoreWeave",
+      "type": "公司",
+      "positioning": "GPU 云与算力融资标杆，租约换杠杆的信用创造样本",
+      "aliases": [
+        "CRWV",
+        "GPU 云",
+        "算力租赁"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/coreweave"
+    },
+    {
+      "name": "Crusoe",
+      "type": "公司",
+      "positioning": "能源 + 算力，伴生能源数据中心的 SPV 融资样本",
+      "aliases": [
+        "能源算力",
+        "伴生能源",
+        "数据中心 SPV"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/crusoe"
+    },
+    {
+      "name": "Blue Owl",
+      "type": "公司",
+      "positioning": "数据中心与算力融资的私募信贷头部",
+      "aliases": [
+        "OWL",
+        "私募信贷",
+        "数据中心贷款"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/blue-owl"
+    },
+    {
+      "name": "SK 海力士",
+      "type": "公司",
+      "positioning": "HBM 龙头，AI 显存供给的第一变量",
+      "aliases": [
+        "SK hynix",
+        "HBM3E",
+        "HBM4",
+        "高带宽内存"
+      ],
+      "note": "关键角色，出现于 2 条线索",
+      "uid": "player/sk-海力士"
+    },
+    {
+      "name": "美光",
+      "type": "公司",
+      "positioning": "存储三强，HBM 第三供给与高性价比路线",
+      "aliases": [
+        "Micron",
+        "1β DRAM",
+        "HBM"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/美光"
+    },
+    {
+      "name": "长鑫存储",
+      "type": "公司",
+      "positioning": "中国 DRAM 主体，国产存储替代主力",
+      "aliases": [
+        "CXMT",
+        "DRAM 国产",
+        "合肥长鑫"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/长鑫存储"
+    },
+    {
+      "name": "中际旭创",
+      "type": "公司",
+      "positioning": "全球光模块龙头，800G/1.6T 光互连主力供给",
+      "aliases": [
+        "Innolight",
+        "1.6T 光模块",
+        "硅光"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/中际旭创"
+    },
+    {
+      "name": "博通",
+      "type": "公司",
+      "positioning": "交换芯片与互连半导体平台，AI 网络的大脑",
+      "aliases": [
+        "Broadcom",
+        "Tomahawk",
+        "Jericho",
+        "定制 ASIC"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/博通"
+    },
+    {
+      "name": "Arista",
+      "type": "公司",
+      "positioning": "云数据中心交换机头部，AI 组网的主力设备商",
+      "aliases": [
+        "Arista Networks",
+        "EOS",
+        "Leaf-Spine"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/arista"
+    },
+    {
+      "name": "高通",
+      "type": "公司",
+      "positioning": "端侧 AI 与手机芯片霸主，Hexagon NPU 生态",
+      "aliases": [
+        "Qualcomm",
+        "骁龙",
+        "Hexagon NPU",
+        "Snapdragon"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/高通"
+    },
+    {
+      "name": "联发科",
+      "type": "公司",
+      "positioning": "手机芯片出货冠军，天玑端侧 AI 主力",
+      "aliases": [
+        "MediaTek",
+        "天玑",
+        "APU"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/联发科"
+    },
+    {
+      "name": "苹果",
+      "type": "公司",
+      "positioning": "Neural Engine 端侧推理与 Apple Intelligence 生态",
+      "aliases": [
+        "Apple Intelligence",
+        "A 系列",
+        "M 系列"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/苹果"
+    },
+    {
+      "name": "中芯国际",
+      "type": "公司",
+      "positioning": "中国大陆晶圆代工龙头，出口管制下成熟制程扩产",
+      "aliases": [
+        "SMIC",
+        "国产代工",
+        "成熟制程"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/中芯国际"
+    },
+    {
+      "name": "美国商务部 BIS",
+      "type": "机构",
+      "positioning": "出口管制的执行机构，实体清单与许可审批",
+      "aliases": [
+        "BIS",
+        "实体清单",
+        "Entity List",
+        "许可审批"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/美国商务部-bis"
+    },
+    {
+      "name": "富士康",
+      "type": "公司",
+      "positioning": "AI 服务器供应链代工巨头，GB 系列机柜主力组装",
+      "aliases": [
+        "Foxconn",
+        "鸿海",
+        "AI 服务器组装"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/富士康"
+    },
+    {
+      "name": "Scale AI",
+      "type": "公司",
+      "positioning": "训练数据与标注龙头，RLHF 与评测数据供给",
+      "aliases": [
+        "Scale Data Engine",
+        "数据标注",
+        "评测数据"
+      ],
+      "note": "关键角色，出现于 3 条线索",
+      "uid": "player/scale-ai"
+    },
+    {
+      "name": "Common Crawl",
+      "type": "机构",
+      "positioning": "开放网页数据集，预训练语料的公共底座",
+      "aliases": [
+        "C4",
+        "网页语料"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/common-crawl"
+    },
+    {
+      "name": "Getty Images",
+      "type": "公司",
+      "positioning": "版权图像授权与训练数据许可",
+      "aliases": [
+        "Getty",
+        "版权授权",
+        "生成式授权"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/getty-images"
+    },
+    {
+      "name": "Surge AI",
+      "type": "公司",
+      "positioning": "人类反馈数据工厂，RLHF 数据质量标杆",
+      "aliases": [
+        "RLHF 数据",
+        "专家标注"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/surge-ai"
+    },
+    {
+      "name": "Appen",
+      "type": "公司",
+      "positioning": "老牌数据标注供应商，多语种标注网络",
+      "aliases": [
+        "数据标注",
+        "标注平台"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/appen"
+    },
+    {
+      "name": "Invisible Technologies",
+      "type": "公司",
+      "positioning": "AI 训练运营与人类反馈数据服务商",
+      "aliases": [
+        "AI 训练运营",
+        "数据运营"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/invisible-technologies"
+    },
+    {
+      "name": "Hugging Face",
+      "type": "公司",
+      "positioning": "开源模型社区与微调工具链的事实标准",
+      "aliases": [
+        "Transformers",
+        "TRL",
+        "模型社区",
+        "PEFT"
+      ],
+      "note": "关键角色，出现于 3 条线索",
+      "uid": "player/hugging-face"
+    },
+    {
+      "name": "Together AI",
+      "type": "公司",
+      "positioning": "开源模型微调与推理服务一体化平台",
+      "aliases": [
+        "开源托管",
+        "微调服务",
+        "推理服务"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/together-ai"
+    },
+    {
+      "name": "Nous Research",
+      "type": "公司",
+      "positioning": "开源模型后训练与强化学习研究团体",
+      "aliases": [
+        "Hermes",
+        "后训练",
+        "强化学习"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/nous-research"
+    },
+    {
+      "name": "MLCommons",
+      "type": "机构",
+      "positioning": "行业基准联盟，MLPerf 训练与推理评测",
+      "aliases": [
+        "MLPerf",
+        "基准评测"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/mlcommons"
+    },
+    {
+      "name": "Artificial Analysis",
+      "type": "公司",
+      "positioning": "第三方模型评测榜单，性价比与速度横评",
+      "aliases": [
+        "模型榜单",
+        "横评",
+        "LLM 评测"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/artificial-analysis"
+    },
+    {
+      "name": "Epoch AI",
+      "type": "公司",
+      "positioning": "AI 算力与基准趋势研究机构",
+      "aliases": [
+        "算力趋势",
+        "基准研究",
+        "FLOP 统计"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/epoch-ai"
+    },
+    {
+      "name": "World Labs",
+      "type": "公司",
+      "positioning": "李飞飞的空间智能公司，世界模型商业化",
+      "aliases": [
+        "Fei-Fei Li",
+        "空间智能",
+        "世界模型"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/world-labs"
+    },
+    {
+      "name": "Decart",
+      "type": "公司",
+      "positioning": "实时视频世界模型与生成仿真",
+      "aliases": [
+        "Lucid",
+        "实时世界模型"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/decart"
+    },
+    {
+      "name": "群核科技",
+      "type": "公司",
+      "positioning": "空间认知与物理仿真渲染，世界模拟应用层",
+      "aliases": [
+        "ManyWorlds",
+        "SpatialLM",
+        "酷家乐"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/群核科技"
+    },
+    {
+      "name": "OpenRouter",
+      "type": "公司",
+      "positioning": "多模型 API 聚合与路由，MaaS 层的分发入口",
+      "aliases": [
+        "模型路由",
+        "API 聚合",
+        "统一接口"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/openrouter"
+    },
+    {
+      "name": "硅基流动",
+      "type": "公司",
+      "positioning": "开源模型 API 推理服务平台，国产 MaaS 代表",
+      "aliases": [
+        "SiliconFlow",
+        "推理服务",
+        "模型 API"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/硅基流动"
+    },
+    {
+      "name": "Perplexity",
+      "type": "公司",
+      "positioning": "AI 答案引擎，搜索引擎的最大挑战者",
+      "aliases": [
+        "答案引擎",
+        "Comet",
+        "AI 搜索"
+      ],
+      "note": "关键角色，出现于 2 条线索",
+      "uid": "player/perplexity"
+    },
+    {
+      "name": "秘塔科技",
+      "type": "公司",
+      "positioning": "中国 AI 搜索代表，秘塔 AI 搜索与长文本",
+      "aliases": [
+        "Metaso",
+        "秘塔 AI 搜索"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/秘塔科技"
+    },
+    {
+      "name": "The Browser Company",
+      "type": "公司",
+      "positioning": "Dia AI 浏览器，把浏览器的默认入口交给模型",
+      "aliases": [
+        "Dia",
+        "Arc 浏览器",
+        "AI 浏览器"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/the-browser-company"
+    },
+    {
+      "name": "Lakera",
+      "type": "公司",
+      "positioning": "LLM 护栏与红队评测，提示注入防护头部",
+      "aliases": [
+        "Lakera Guard",
+        "提示注入",
+        "护栏"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/lakera"
+    },
+    {
+      "name": "Robust Intelligence",
+      "type": "公司",
+      "positioning": "模型安全护栏与防火墙，被思科收购",
+      "aliases": [
+        "AI 防火墙",
+        "安全护栏"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/robust-intelligence"
+    },
+    {
+      "name": "Haize Labs",
+      "type": "公司",
+      "positioning": "AI 红队自动化评测，越狱对抗研究",
+      "aliases": [
+        "红队评测",
+        "越狱测试",
+        "安全评测"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/haize-labs"
+    },
+    {
+      "name": "Browser Use",
+      "type": "公司",
+      "positioning": "浏览器自动化开源框架，computer use 的基础设施",
+      "aliases": [
+        "浏览器自动化",
+        "WebAgent"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/browser-use"
+    },
+    {
+      "name": "Browserbase",
+      "type": "公司",
+      "positioning": "AI 浏览器基础设施，无头浏览器云",
+      "aliases": [
+        "无头浏览器",
+        "Web MCP"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/browserbase"
+    },
+    {
+      "name": "UiPath",
+      "type": "公司",
+      "positioning": "RPA 桌面自动化龙头，向 Agentic 转型",
+      "aliases": [
+        "RPA",
+        "桌面自动化",
+        "Agentic 自动化"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/uipath"
+    },
+    {
+      "name": "恒生电子",
+      "type": "公司",
+      "positioning": "金融 IT 与投研大模型，券商基金的系统底座",
+      "aliases": [
+        "LightGPT",
+        "投研大模型",
+        "金融 IT"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/恒生电子"
+    },
+    {
+      "name": "同花顺",
+      "type": "公司",
+      "positioning": "证券信息与 AI 投研工具，C 端金融流量入口",
+      "aliases": [
+        "HithinkGPT",
+        "问财",
+        "证券 AI"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/同花顺"
+    },
+    {
+      "name": "Bloomberg",
+      "type": "公司",
+      "positioning": "金融数据终端与 AI 研究助手，卖方标准配置",
+      "aliases": [
+        "BloombergGPT",
+        "金融终端",
+        "彭博"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/bloomberg"
+    },
+    {
+      "name": "Harvey",
+      "type": "公司",
+      "positioning": "法律 AI 头部，律所与大法律部门的标准采购",
+      "aliases": [
+        "法律 AI",
+        "Harvey Assistant",
+        "大律师事务所"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/harvey"
+    },
+    {
+      "name": "幂律智能",
+      "type": "公司",
+      "positioning": "合同智能审查的中国代表，法律科技垂直化",
+      "aliases": [
+        "PowerLaw",
+        "合同审查",
+        "法律科技"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/幂律智能"
+    },
+    {
+      "name": "Thomson Reuters",
+      "type": "公司",
+      "positioning": "法律信息与合规内容巨头，Westlaw + AI 防守",
+      "aliases": [
+        "Westlaw",
+        "CoCounsel",
+        "法律信息"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/thomson-reuters"
+    },
+    {
+      "name": "可汗学院",
+      "type": "机构",
+      "positioning": "个性化辅导标杆，Khanmigo 教学助手",
+      "aliases": [
+        "Khan Academy",
+        "Khanmigo",
+        "个性化辅导"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/可汗学院"
+    },
+    {
+      "name": "Duolingo",
+      "type": "公司",
+      "positioning": "教育科技与 AI 对话学习，多邻国游戏化方法论",
+      "aliases": [
+        "多邻国",
+        "Max 对话",
+        "语言学习"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/duolingo"
+    },
+    {
+      "name": "作业帮",
+      "type": "公司",
+      "positioning": "中国 K12 辅导与课程，银河大模型落地教育",
+      "aliases": [
+        "银河大模型",
+        "K12 辅导",
+        "拍照搜题"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/作业帮"
+    },
+    {
+      "name": "Suno",
+      "type": "公司",
+      "positioning": "AI 音乐生成头部，文本到歌曲的消费品",
+      "aliases": [
+        "v4",
+        "AI 音乐",
+        "Text-to-Song"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/suno"
+    },
+    {
+      "name": "ElevenLabs",
+      "type": "公司",
+      "positioning": "语音合成与配音基础设施，声音克隆标杆",
+      "aliases": [
+        "TTS",
+        "声音克隆",
+        "配音",
+        "实时语音"
+      ],
+      "note": "关键角色，出现于 2 条线索",
+      "uid": "player/elevenlabs"
+    },
+    {
+      "name": "腾讯音乐",
+      "type": "公司",
+      "positioning": "音乐流媒体与 AI 创作工具，中国曲库版权方",
+      "aliases": [
+        "TME",
+        "QQ音乐",
+        "酷狗",
+        "AI 创作"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/腾讯音乐"
+    },
+    {
+      "name": "Rokid",
+      "type": "公司",
+      "positioning": "AR 眼镜与 AI 硬件，国内消费级代表",
+      "aliases": [
+        "乐奇",
+        "AR 眼镜",
+        "Rokid Glasses"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/rokid"
+    },
+    {
+      "name": "XREAL",
+      "type": "公司",
+      "positioning": "AR 眼镜出货头部，空间显示终端",
+      "aliases": [
+        "Nreal",
+        "空间显示",
+        " Beam"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/xreal"
+    },
+    {
+      "name": "闪极科技",
+      "type": "公司",
+      "positioning": "AI 眼镜硬件产品新锐，低价普及路线",
+      "aliases": [
+        "闪极 AI 眼镜",
+        "A1"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/闪极科技"
+    },
+    {
+      "name": "欧盟 AI 办公室",
+      "type": "机构",
+      "positioning": "欧盟 AI 法案的执法机构，通用模型义务监督",
+      "aliases": [
+        "EU AI Office",
+        "AI Act 执法",
+        "GPAI"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/欧盟-ai-办公室"
+    },
+    {
+      "name": "NIST",
+      "type": "机构",
+      "positioning": "美国标准机构，AI RMF 与评测框架输出方",
+      "aliases": [
+        "AI RMF",
+        "GenAI 框架",
+        "美国标准"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/nist"
+    },
+    {
+      "name": "中国信通院",
+      "type": "机构",
+      "positioning": "中国 AI 治理与合规要求评估，可信 AI 认证",
+      "aliases": [
+        "信通院",
+        "可信 AI",
+        "合规评估"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/中国信通院"
+    },
+    {
+      "name": "Apache 软件基金会",
+      "type": "机构",
+      "positioning": "开源许可治理的中立托管方，ASF 治理范式",
+      "aliases": [
+        "Apache 2.0",
+        "ASF",
+        "开源治理"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/apache-软件基金会"
+    },
+    {
+      "name": "OSI",
+      "type": "机构",
+      "positioning": "开源许可定义与审批，Open Source 的定义者",
+      "aliases": [
+        "Open Source Initiative",
+        "开源许可定义",
+        "OSI 许可"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/osi"
+    },
+    {
+      "name": "魔搭社区",
+      "type": "公司",
+      "positioning": "阿里开源模型社区，中国模型分发的开源治理枢纽",
+      "aliases": [
+        "ModelScope",
+        "模型开源社区",
+        "开源治理"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/魔搭社区"
+    },
+    {
+      "name": "xAI",
+      "type": "公司",
+      "positioning": "算力驱动的第二梯队头名，竞争格局的搅局者",
+      "aliases": [
+        "Grok",
+        "SpaceXAI",
+        "Colossus"
+      ],
+      "note": "关键角色，出现于 7 条线索",
+      "uid": "player/xai"
+    },
+    {
+      "name": "华为",
+      "type": "公司",
+      "positioning": "全栈国产化旗手，昇腾算力、鸿蒙生态与超融合一体机的中国阵营核心",
+      "aliases": [
+        "昇腾",
+        "鸿蒙",
+        "ModelArts",
+        "盘古",
+        "FusionCube A1000",
+        "超融合一体机"
+      ],
+      "note": "关键角色，出现于 3 条线索",
+      "uid": "player/华为"
+    },
+    {
+      "name": "月之暗面",
+      "type": "公司",
+      "positioning": "Kimi 开发商，国内长文本竞争第一梯队",
+      "aliases": [
+        "Kimi",
+        "Moonshot",
+        "长文本"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/月之暗面"
+    },
+    {
+      "name": "深信服",
+      "type": "公司",
+      "positioning": "超融合整体与全栈双第一（IDC 2026H1），网络安全 + HCI + Agent 承载",
+      "aliases": [
+        "Sangfor",
+        "aESC",
+        "HCI",
+        "VMware 替代",
+        "安全 GPT",
+        "网络安全"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "brief": "超融合与政企安全",
+      "uid": "player/深信服"
+    },
+    {
+      "name": "SmartX",
+      "type": "公司",
+      "positioning": "超融合纯软件市场第一（连续 13 季度），金融核心虚拟化",
+      "aliases": [
+        "SMTX OS",
+        "志凌海纳",
+        "分布式存储",
+        "ZBS"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "brief": "软件定义基础设施",
+      "uid": "player/smartx"
+    },
+    {
+      "name": "Nutanix",
+      "type": "公司",
+      "positioning": "全球 HCI 软件标杆，订阅收入占比 95%+ 的软件优先模式",
+      "aliases": [
+        "AHV",
+        "NCI",
+        "混合云基础设施"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "brief": "全球 HCI 软件",
+      "uid": "player/nutanix"
+    },
+    {
+      "name": "新华三",
+      "type": "公司",
+      "positioning": "全栈 ICT 与 UIS 超融合一体机，大政企交付主力",
+      "aliases": [
+        "H3C",
+        "UIS",
+        "GreenNet",
+        "一体机"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "brief": "全栈 ICT 一体机",
+      "uid": "player/新华三"
+    },
+    {
+      "name": "云智慧",
+      "type": "公司",
+      "positioning": "国内 AIOps 头部，告警收敛与根因定位",
+      "aliases": [
+        "CloudWise",
+        "智能运维",
+        "全景运维"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/云智慧"
+    },
+    {
+      "name": "必示科技",
+      "type": "公司",
+      "positioning": "AIOps 根因定位，电信与金融场景深耕",
+      "aliases": [
+        "BizSeer",
+        "异常检测",
+        "根因分析"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/必示科技"
+    },
+    {
+      "name": "Dynatrace",
+      "type": "公司",
+      "positioning": "可观测与根因 AI 先行者，Davis 因果定位",
+      "aliases": [
+        "Davis AI",
+        "Grail",
+        "DT"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/dynatrace"
+    },
+    {
+      "name": "嘉为蓝鲸",
+      "type": "公司",
+      "positioning": "智能体自治运维一体化：AIDev 智能体平台 + A2A 多智能体协同，运维大模型鲸智",
+      "aliases": [
+        "蓝鲸",
+        "腾讯蓝鲸",
+        "AIDev",
+        "鲸智",
+        "Agentic Ops"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/嘉为蓝鲸"
+    },
+    {
+      "name": "快猫星云",
+      "type": "公司",
+      "positioning": "开源可观测与告警响应，夜莺 Nightingale 与调查型 Agent",
+      "aliases": [
+        "FlashCat",
+        "Nightingale",
+        "夜莺",
+        "Flashduty",
+        "Categraf"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/快猫星云"
+    },
+    {
+      "name": "观测云",
+      "type": "公司",
+      "positioning": "一体化可观测平台，让运维与智能体的行动都被看见",
+      "aliases": [
+        "Guance",
+        "DataKit",
+        "全栈观测"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/观测云"
+    },
+    {
+      "name": "Resolve.ai",
+      "type": "公司",
+      "positioning": "SRE Agent 标杆：多 agent 并行排障，目标自动处理 80% 报警",
+      "aliases": [
+        "AI SRE",
+        "SRE Agent"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/resolve-ai"
+    },
+    {
+      "name": "ServiceNow",
+      "type": "公司",
+      "positioning": "Now Platform + AI Agents，把 ITSM 工作流与 IT 运维智能体化",
+      "aliases": [
+        "Now Platform",
+        "ITSM",
+        "AI Agents",
+        "ITOM"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/servicenow"
+    },
+    {
+      "name": "Shoreline.io",
+      "type": "公司",
+      "positioning": "修复动作即代码的运维自动化 agent",
+      "aliases": [
+        "Op 语言",
+        "自动化修复"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/shoreline-io"
+    },
+    {
+      "name": "New Relic",
+      "type": "公司",
+      "positioning": "全栈可观测与 Agentic AIOps，AI 生成代码的可靠性监控",
+      "aliases": [
+        "NRAI",
+        "APM",
+        "Agentic AIOps"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/new-relic"
+    },
+    {
+      "name": "擎创科技",
+      "type": "公司",
+      "positioning": "国内首批 AIOps 智能运维，夏洛克平台深耕日志与根因",
+      "aliases": [
+        "夏洛克",
+        "Sherlock",
+        "智能运维"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/擎创科技"
+    },
+    {
+      "name": "中软国际",
+      "type": "公司",
+      "positioning": "智算运维与 IT 服务的规模人力替代方",
+      "aliases": [
+        "Chinasoft",
+        "解放号",
+        "IT 外包"
+      ],
+      "note": "策展玩家，暂无线索关联",
+      "uid": "player/中软国际"
+    },
+    {
+      "name": "神州数码",
+      "type": "公司",
+      "positioning": "中国 IT 分销与交付体量最大的乙方之一：鲲泰国产算力整机 × 问学平台 × 灵果模型网关 × FDE 交付",
+      "aliases": [
+        "Digital China",
+        "神州数码集团",
+        "Digital China Group",
+        "000034",
+        "神州鲲泰",
+        "神州问学",
+        "灵果Routero"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/神州数码"
+    },
+    {
+      "name": "京北方",
+      "type": "公司",
+      "positioning": "银行 IT 人力外包规模样本：ITO+BPO 覆盖 100% 国有大行与股份行，大模型智能体平台 + FDE 模式对冲人天替代",
+      "aliases": [
+        "京北方信息技术",
+        "京北方信息技术股份有限公司",
+        "002987",
+        "North King"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/京北方"
+    },
+    {
+      "name": "纽扣AI",
+      "type": "公司",
+      "positioning": "C 端 AI 副业教育样本：BYOK 聚合壳（工作流市场/漫剧工作台/数字人）× 课程陪跑 × 分销返佣；运营主体未披露",
+      "aliases": [
+        "纽扣",
+        "niukousy",
+        "纽扣学院",
+        "纽扣漫剧",
+        "纽扣剪映助手"
+      ],
+      "note": "关键角色，出现于 1 条线索",
+      "uid": "player/纽扣ai"
+    }
+  ]
+}

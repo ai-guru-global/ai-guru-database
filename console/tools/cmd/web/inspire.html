@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>灵感 — AI News Database</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Geist:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: oklch(18% 0.02 60);
+            --ink-mid: oklch(38% 0.02 60);
+            --paper: oklch(97.5% 0.008 75);
+            --paper-white: oklch(99.2% 0.005 75);
+            --stone: oklch(52% 0.02 70);
+            --stone-light: oklch(70% 0.015 70);
+            --stone-faint: oklch(90% 0.01 70);
+            --accent: oklch(50% 0.15 25);
+            --radius: 5px;
+            --font-body: 'Geist', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+            --font-serif: 'EB Garamond', 'Noto Serif SC', 'Songti SC', 'SimSun', Georgia, serif;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { -webkit-font-smoothing: antialiased; scroll-behavior: smooth; font-kerning: normal; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.75;
+            min-height: 100vh;
+            text-autospace: ideograph-alpha ideograph-numeric;
+            font-feature-settings: "pkna" 1;
+        }
+
+        :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+            html { scroll-behavior: auto; }
+        }
+
+        header {
+            position: sticky; top: 0; z-index: 50;
+            background: oklch(97.5% 0.008 75 / 0.88);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--stone-faint);
+        }
+
+        .header-inner {
+            max-width: 820px; margin: 0 auto; padding: 0 1.5rem;
+            height: 48px; display: flex; align-items: center; justify-content: space-between;
+        }
+
+        .brand { display: flex; align-items: baseline; gap: 0.4rem; text-decoration: none; color: var(--ink); }
+        .brand-name { font-family: var(--font-serif); font-size: 1.05rem; font-weight: 500; letter-spacing: -0.01em; }
+        .brand-sep { color: var(--stone-light); font-size: 0.85rem; }
+        .brand-page { font-size: 0.78rem; color: var(--stone); }
+        .header-meta { font-size: 0.75rem; color: var(--stone); font-variant-numeric: tabular-nums; }
+
+        .page { max-width: 820px; margin: 0 auto; padding: 2rem 1.5rem 0.5rem; }
+
+        .page-title {
+            font-family: var(--font-serif); font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+            font-weight: 400; letter-spacing: -0.02em; line-height: 1.15;
+        }
+        .page-title em { font-style: italic; color: var(--accent); }
+
+        .page-sub {
+            margin-top: 0.35rem; font-size: 0.85rem; color: var(--stone);
+            line-height: 1.6; max-width: 44ch;
+        }
+        .page-sub code {
+            font-family: var(--font-body); font-size: 0.82em;
+            background: var(--stone-faint); padding: 0.1em 0.4em; border-radius: 3px;
+        }
+
+        .toolbar {
+            display: flex; align-items: center; gap: 0.5rem;
+            padding: 0.65rem 0; border-bottom: 1px solid var(--stone-faint);
+            margin: 1.5rem 0 0.5rem; flex-wrap: wrap;
+        }
+
+        .search { flex: 1; max-width: 240px; position: relative; }
+        .search input {
+            width: 100%; padding: 0.4rem 0.65rem 0.4rem 1.8rem;
+            border: 1px solid var(--stone-faint); border-radius: var(--radius);
+            font-family: var(--font-body); font-size: 0.8rem;
+            background: var(--paper-white); color: var(--ink); outline: none;
+            transition: border-color 0.15s ease;
+        }
+        .search input:focus { border-color: var(--stone-light); }
+        .search input::placeholder { color: var(--stone-light); }
+        .search svg {
+            position: absolute; left: 0.55rem; top: 50%; transform: translateY(-50%);
+            width: 13px; height: 13px; color: var(--stone-light); pointer-events: none;
+        }
+
+        .toolbar-actions { display: flex; gap: 2px; margin-left: auto; align-items: center; }
+
+        .btn-sm {
+            padding: 0.35rem 0.6rem; border: none; background: none;
+            font-family: var(--font-body); font-size: 0.76rem; color: var(--stone);
+            cursor: pointer; border-radius: 3px;
+            transition: color 0.12s ease, background 0.12s ease;
+        }
+        .btn-sm:hover { color: var(--ink-mid); }
+        .btn-sm.active { color: var(--ink); background: var(--stone-faint); font-weight: 500; }
+
+        .btn-outline {
+            display: inline-flex; align-items: center; gap: 0.3rem;
+            padding: 0.35rem 0.65rem; border: 1px solid var(--stone-faint); background: none;
+            font-family: var(--font-body); font-size: 0.76rem; color: var(--stone);
+            cursor: pointer; border-radius: var(--radius);
+            transition: color 0.12s ease, border-color 0.12s ease;
+        }
+        .btn-outline:hover { color: var(--ink-mid); border-color: var(--stone-light); }
+        .btn-outline svg { width: 12px; height: 12px; }
+
+        .sep { width: 1px; height: 18px; background: var(--stone-faint); margin: 0 0.3rem; }
+
+        .list { display: flex; flex-direction: column; }
+
+        .item {
+            display: grid; grid-template-columns: 2rem 1fr auto;
+            gap: 0 0.75rem; align-items: baseline;
+            padding: 0.7rem 0; border-bottom: 1px solid oklch(94% 0.008 70);
+            transition: background 0.12s ease, opacity 0.25s ease, transform 0.25s ease;
+            opacity: 0; transform: translateY(5px);
+        }
+        .item.visible { opacity: 1; transform: translateY(0); }
+        .item:hover { background: oklch(96.5% 0.009 75); margin: 0 -0.5rem; padding-left: 0.5rem; padding-right: 0.5rem; border-radius: 3px; }
+
+        .item-num {
+            font-family: var(--font-serif); font-size: 0.75rem; color: var(--stone-light);
+            font-style: italic; text-align: right; padding-top: 0.05rem;
+        }
+
+        .item-body { min-width: 0; }
+
+        .item-title { font-size: 0.88rem; font-weight: 500; line-height: 1.4; margin-bottom: 0.15rem; }
+        .item-title a { text-decoration: none; color: var(--ink); transition: color 0.12s ease; }
+        .item-title a:hover { color: var(--accent); }
+
+        .item-desc {
+            font-size: 0.78rem; color: var(--stone); line-height: 1.5;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+        }
+        .item-desc.expanded { -webkit-line-clamp: unset; display: block; }
+
+        .item-meta { display: flex; align-items: center; gap: 0.35rem; white-space: nowrap; }
+        .item-date { font-size: 0.7rem; color: var(--stone-light); font-variant-numeric: tabular-nums; }
+        .item-pts {
+            font-size: 0.68rem; color: var(--stone-light); font-variant-numeric: tabular-nums;
+            background: var(--stone-faint); padding: 0.05rem 0.35rem; border-radius: 2px;
+        }
+        .item-pts.hot { color: var(--accent); background: oklch(95% 0.02 25); font-weight: 500; }
+
+        .item-action {
+            border: none; background: none; padding: 0.15rem; cursor: pointer;
+            color: var(--stone-faint); border-radius: 2px; transition: color 0.12s ease;
+            display: flex; align-items: center;
+        }
+        .item-action:hover { color: var(--ink-mid); }
+        .item-action.starred { color: var(--accent); }
+
+        .item.is-read .item-title a { color: var(--stone); }
+        .item.is-read .item-num { color: var(--stone-faint); }
+        .item.is-read .item-desc { opacity: 0.6; }
+        .item.is-starred .item-title a { color: var(--ink); }
+
+        .empty { padding: 3rem 0 2rem; }
+        .empty-title { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 400; margin-bottom: 0.3rem; }
+        .empty-desc { font-size: 0.82rem; color: var(--stone); line-height: 1.6; max-width: 36ch; margin-bottom: 1.25rem; }
+        .empty-cmd {
+            display: inline-block; padding: 0.4rem 0.8rem; background: var(--ink);
+            color: var(--paper); border-radius: var(--radius); font-family: var(--font-body); font-size: 0.78rem;
+        }
+
+        .loader { display: flex; align-items: center; justify-content: center; padding: 3rem 0; gap: 0.5rem; }
+        .loader-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--stone-light); animation: dot 1s ease infinite; }
+        .loader-dot:nth-child(2) { animation-delay: 0.12s; }
+        .loader-dot:nth-child(3) { animation-delay: 0.24s; }
+        @keyframes dot { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
+
+        footer {
+            max-width: 820px; margin: 0 auto; padding: 1.5rem 1.5rem 2.5rem;
+            font-size: 0.72rem; color: var(--stone-light);
+        }
+        footer a { color: var(--stone); text-decoration: none; }
+        footer a:hover { color: var(--accent); }
+
+        .toast {
+            position: fixed; bottom: 1.25rem; left: 50%;
+            transform: translateX(-50%) translateY(60px);
+            padding: 0.4rem 0.85rem; background: var(--ink); color: var(--paper);
+            border-radius: var(--radius); font-size: 0.76rem; z-index: 100;
+            transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            pointer-events: none;
+        }
+        .toast.show { transform: translateX(-50%) translateY(0); }
+
+        .section {
+            margin-top: 2rem; padding-top: 1.25rem;
+            border-top: 1px solid var(--stone-faint);
+        }
+        .section-header {
+            display: flex; align-items: center; justify-content: space-between;
+            margin-bottom: 0.75rem;
+        }
+        .section-title { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 500; }
+        .section-close {
+            border: none; background: none; font-size: 1.1rem; color: var(--stone-light);
+            cursor: pointer; padding: 0.2rem; line-height: 1;
+        }
+        .section-close:hover { color: var(--ink-mid); }
+
+        .burst-form { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
+        .burst-form input {
+            flex: 1; min-width: 180px; padding: 0.4rem 0.65rem;
+            border: 1px solid var(--stone-faint); border-radius: var(--radius);
+            font-family: var(--font-body); font-size: 0.8rem;
+            background: var(--paper-white); color: var(--ink); outline: none;
+        }
+        .burst-form input:focus { border-color: var(--stone-light); }
+        .burst-form input::placeholder { color: var(--stone-light); }
+
+        .burst-mode-select {
+            padding: 0.4rem 0.5rem; border: 1px solid var(--stone-faint);
+            border-radius: var(--radius); font-family: var(--font-body); font-size: 0.78rem;
+            background: var(--paper-white); color: var(--ink); outline: none; cursor: pointer;
+        }
+
+        .btn-primary {
+            padding: 0.4rem 0.75rem; border: 1px solid var(--ink); background: var(--ink);
+            color: var(--paper); border-radius: var(--radius); font-family: var(--font-body);
+            font-size: 0.78rem; cursor: pointer; transition: opacity 0.12s ease;
+        }
+        .btn-primary:hover { opacity: 0.85; }
+        .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        .burst-ideas { display: flex; flex-direction: column; gap: 0.75rem; }
+        .burst-idea {
+            padding: 0.75rem 0; border-bottom: 1px solid oklch(94% 0.008 70);
+            cursor: pointer;
+        }
+        .burst-idea:last-child { border-bottom: none; }
+        .burst-idea:hover .burst-idea-title { color: var(--accent); }
+        .burst-idea-title { font-size: 0.88rem; font-weight: 500; margin-bottom: 0.2rem; transition: color 0.12s ease; }
+        .burst-idea-desc { font-size: 0.78rem; color: var(--stone); line-height: 1.55; margin-bottom: 0.25rem; }
+        .burst-idea-src { font-size: 0.72rem; color: var(--stone-light); }
+        .burst-idea-dive {
+            margin-top: 0.4rem; padding: 0.25rem 0.55rem;
+            border: 1px solid var(--stone-faint); background: none;
+            font-family: var(--font-body); font-size: 0.72rem; color: var(--stone);
+            cursor: pointer; border-radius: 3px; transition: color 0.12s ease, border-color 0.12s ease;
+        }
+        .burst-idea-dive:hover { color: var(--ink-mid); border-color: var(--stone-light); }
+
+        .burst-status { font-size: 0.78rem; color: var(--stone); padding: 0.5rem 0; }
+
+        .history-list { display: flex; flex-direction: column; gap: 0.5rem; }
+        .history-item {
+            padding: 0.6rem 0; border-bottom: 1px solid oklch(94% 0.008 70);
+            cursor: pointer; transition: background 0.1s ease;
+        }
+        .history-item:hover { background: oklch(96.5% 0.009 75); margin: 0 -0.5rem; padding-left: 0.5rem; padding-right: 0.5rem; border-radius: 3px; }
+        .history-meta { font-size: 0.72rem; color: var(--stone-light); margin-bottom: 0.15rem; }
+        .history-preview { font-size: 0.78rem; color: var(--stone); line-height: 1.4; }
+
+        .deep-dive-panel {
+            display: none; margin-top: 1rem; padding: 1rem 0;
+            border-top: 1px solid var(--stone-faint);
+        }
+        .deep-dive-panel.open { display: block; }
+        .deep-dive-title { font-family: var(--font-serif); font-size: 1.05rem; font-weight: 500; margin-bottom: 0.5rem; }
+        .deep-dive-content { font-size: 0.82rem; color: var(--stone); line-height: 1.65; white-space: pre-wrap; }
+        .deep-dive-content strong { color: var(--ink); font-weight: 500; }
+        .deep-dive-close {
+            border: none; background: none; font-size: 0.78rem; color: var(--stone);
+            cursor: pointer; padding: 0.2rem 0.4rem; margin-top: 0.5rem;
+        }
+        .deep-dive-close:hover { color: var(--ink-mid); }
+
+        .tab-bar { display: flex; gap: 0; margin-bottom: 0.75rem; }
+        .tab-btn {
+            padding: 0.4rem 0.7rem; border: none; background: none;
+            font-family: var(--font-body); font-size: 0.78rem; color: var(--stone);
+            cursor: pointer; border-bottom: 2px solid transparent;
+            transition: color 0.12s ease, border-color 0.12s ease;
+        }
+        .tab-btn:hover { color: var(--ink-mid); }
+        .tab-btn.active { color: var(--ink); border-bottom-color: var(--ink); font-weight: 500; }
+
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        @media (max-width: 640px) {
+            .item { grid-template-columns: 1fr; gap: 0.1rem; padding: 0.6rem 0; }
+            .item-num { display: none; }
+            .item-meta { gap: 0.4rem; }
+            .toolbar { flex-wrap: wrap; }
+            .search { max-width: 100%; width: 100%; order: 2; margin-top: 0.35rem; }
+            .toolbar-actions { margin-left: 0; }
+            .burst-form { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="brand">
+                <span class="brand-name">AI News Database</span>
+                <span class="brand-sep">/</span>
+                <span class="brand-page">灵感</span>
+            </a>
+            <span class="header-meta" id="header-meta"></span>
+        </div>
+    </header>
+
+    <main class="page">
+        <div class="page-head">
+            <h1 class="page-title">Show HN <em>灵感</em></h1>
+            <p class="page-sub">Hacker News 上的新产品与项目。运行 <code>ai-news-database inspire</code> 获取。</p>
+        </div>
+
+        <div class="toolbar">
+            <div class="search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                <input type="text" id="search" placeholder="搜索...">
+            </div>
+            <div class="toolbar-actions">
+                <button class="btn-sm active" data-filter="all">全部</button>
+                <button class="btn-sm" data-filter="unread">未读</button>
+                <button class="btn-sm" data-filter="read">已读</button>
+                <button class="btn-sm" data-filter="starred">收藏</button>
+                <div class="sep"></div>
+                <button class="btn-sm" id="sort-btn" onclick="toggleSort()">按热度</button>
+                <div class="sep"></div>
+                <button class="btn-outline" onclick="markAllRead()">全部已读</button>
+                <button class="btn-outline" id="burst-toggle" onclick="toggleBurst()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    灵感爆发
+                </button>
+            </div>
+        </div>
+
+        <div class="list" id="list">
+            <div class="loader">
+                <span class="loader-dot"></span>
+                <span class="loader-dot"></span>
+                <span class="loader-dot"></span>
+            </div>
+        </div>
+
+        <div class="section" id="burst-section" style="display:none;">
+            <div class="section-header">
+                <span class="section-title">灵感爆发</span>
+                <button class="section-close" onclick="toggleBurst()">&times;</button>
+            </div>
+
+            <div class="tab-bar">
+                <button class="tab-btn active" data-tab="generate" onclick="switchTab('generate')">生成</button>
+                <button class="tab-btn" data-tab="history" onclick="switchTab('history')">历史</button>
+            </div>
+
+            <div class="tab-content active" id="tab-generate">
+                <div class="burst-form">
+                    <select class="burst-mode-select" id="burst-mode">
+                        <option value="cross-domain">跨界联想</option>
+                        <option value="problem">问题驱动</option>
+                        <option value="techstack">技术栈组合</option>
+                    </select>
+                    <input type="text" id="burst-focus" placeholder="聚焦方向（可选）">
+                    <button class="btn-primary" id="burst-go" onclick="runBurst()">生成</button>
+                </div>
+                <div class="burst-ideas" id="burst-ideas"></div>
+                <div class="deep-dive-panel" id="deep-dive-panel">
+                    <div class="section-header">
+                        <span class="section-title deep-dive-title" id="deep-dive-title"></span>
+                        <button class="section-close" onclick="closeDeepDive()">&times;</button>
+                    </div>
+                    <div class="deep-dive-content" id="deep-dive-content"></div>
+                    <button class="deep-dive-close" onclick="closeDeepDive()">关闭</button>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-history">
+                <div class="history-list" id="history-list">
+                    <p class="burst-status">加载中...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>数据存储在本地 · <a href="/">AI News Database</a></footer>
+    <div class="toast" id="toast"></div>
+
+    <script>
+        const state = { items: [], filter: 'all', search: '', sort: 'date' };
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        async function init() {
+            try {
+                const resp = await fetch('/api/inspire');
+                const data = await resp.json();
+                state.items = data.items || [];
+                render();
+                updateMeta();
+            } catch (e) {
+                document.getElementById('list').innerHTML =
+                    '<div class="empty"><p class="empty-title">连接失败</p><p class="empty-desc">请通过 ai-news-database web 启动服务。</p></div>';
+            }
+        }
+
+        function filtered() {
+            let items = state.items;
+            if (state.filter === 'unread') items = items.filter(i => i.read_status === 'unread');
+            if (state.filter === 'read') items = items.filter(i => i.read_status === 'read');
+            if (state.filter === 'starred') items = items.filter(i => i.read_status === 'starred');
+            if (state.search) {
+                const q = state.search.toLowerCase();
+                items = items.filter(i => i.title.toLowerCase().includes(q) || (i.summary && i.summary.toLowerCase().includes(q)));
+            }
+            return items;
+        }
+
+        function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+        function render() {
+            const list = document.getElementById('list');
+            const items = filtered();
+
+            if (items.length === 0 && state.items.length === 0) {
+                list.innerHTML = '<div class="empty"><p class="empty-title">还没有收藏</p><p class="empty-desc">运行以下命令发现灵感：</p><code class="empty-cmd">ai-news-database inspire</code></div>';
+                return;
+            }
+            if (items.length === 0) {
+                list.innerHTML = '<div class="empty"><p class="empty-title">没有匹配项</p><p class="empty-desc">试试其他关键词。</p></div>';
+                return;
+            }
+
+            list.innerHTML = items.map((item, i) => {
+                const hnId = item.url.split('id=')[1] || '';
+                const link = hnId ? `https://news.ycombinator.com/item?id=${hnId}` : item.url;
+                const isRead = item.read_status === 'read';
+                const isStarred = item.read_status === 'starred';
+                const ptsClass = item.points >= 100 ? ' hot' : '';
+                return `<div class="item${isRead ? ' is-read' : ''}${isStarred ? ' is-starred' : ''}">
+                    <span class="item-num">${i + 1}</span>
+                    <div class="item-body">
+                        <div class="item-title"><a href="${link}" target="_blank" rel="noopener">${esc(item.title)}</a></div>
+                        ${item.summary ? `<p class="item-desc" id="desc-${item.id}">${esc(item.summary)}</p>` : ''}
+                    </div>
+                    <div class="item-meta">
+                        ${item.points > 0 ? `<span class="item-pts${ptsClass}">▲ ${item.points}</span>` : ''}
+                        <span class="item-date">${item.published_at || item.fetched_at}</span>
+                        <button class="item-action${isStarred ? ' starred' : ''}" onclick="toggleStar(${item.id},this)" title="收藏">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="${isStarred ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </button>
+                        ${!isRead ? `<button class="item-action" onclick="markRead(${item.id},this)" title="标记已读"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></button>` : ''}
+                    </div>
+                </div>`;
+            }).join('');
+
+            if (!prefersReducedMotion) {
+                requestAnimationFrame(() => {
+                    const els = list.querySelectorAll('.item');
+                    els.forEach((el, i) => setTimeout(() => el.classList.add('visible'), Math.min(i * 25, 250)));
+                });
+            } else {
+                list.querySelectorAll('.item').forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; });
+            }
+        }
+
+        function updateMeta() {
+            const total = state.items.length;
+            const unread = state.items.filter(i => i.read_status === 'unread').length;
+            const starred = state.items.filter(i => i.read_status === 'starred').length;
+            document.getElementById('header-meta').textContent = `${total} 条 · ${unread} 未读 · ${starred} 收藏`;
+        }
+
+        async function markRead(id, btn) {
+            try {
+                await fetch('/api/inspire/read', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id }) });
+                const item = state.items.find(i => i.id === id);
+                if (item) item.read_status = 'read';
+                updateMeta(); toast('已读');
+                const row = btn.closest('.item'); row.classList.add('is-read'); btn.remove();
+            } catch (e) { toast('失败'); }
+        }
+
+        async function toggleStar(id, btn) {
+            try {
+                const item = state.items.find(i => i.id === id);
+                if (!item) return;
+                const newStatus = item.read_status === 'starred' ? 'unread' : 'starred';
+                const endpoint = newStatus === 'starred' ? '/api/inspire/star' : '/api/inspire/read';
+                await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id }) });
+                item.read_status = newStatus;
+                updateMeta(); toast(newStatus === 'starred' ? '已收藏' : '取消收藏');
+                render();
+            } catch (e) { toast('失败'); }
+        }
+
+        async function markAllRead() {
+            try {
+                const resp = await fetch('/api/inspire/mark-all-read', { method: 'POST' });
+                const data = await resp.json();
+                state.items.forEach(i => { if (i.read_status === 'unread') i.read_status = 'read'; });
+                updateMeta(); render();
+                toast(`已标记 ${data.updated || 0} 条为已读`);
+            } catch (e) { toast('失败'); }
+        }
+
+        function toggleSort() {
+            state.sort = state.sort === 'date' ? 'points' : 'date';
+            const btn = document.getElementById('sort-btn');
+            btn.textContent = state.sort === 'points' ? '按时间' : '按热度';
+            btn.classList.toggle('active', state.sort === 'points');
+            fetchAndRender();
+        }
+
+        async function fetchAndRender() {
+            const sortParam = state.sort === 'points' ? '?sort=points' : '';
+            const resp = await fetch(`/api/inspire${sortParam}`);
+            const data = await resp.json();
+            state.items = data.items || [];
+            render(); updateMeta();
+        }
+
+        function toast(msg) {
+            const el = document.getElementById('toast');
+            el.textContent = msg; el.classList.add('show');
+            setTimeout(() => el.classList.remove('show'), 1400);
+        }
+
+        document.querySelectorAll('[data-filter]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('[data-filter]').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                state.filter = btn.dataset.filter;
+                render();
+            });
+        });
+
+        let searchTimer;
+        document.getElementById('search').addEventListener('input', (e) => {
+            clearTimeout(searchTimer);
+            searchTimer = setTimeout(() => { state.search = e.target.value; render(); }, 180);
+        });
+
+        function toggleBurst() {
+            const section = document.getElementById('burst-section');
+            const toggle = document.getElementById('burst-toggle');
+            const visible = section.style.display !== 'none';
+            section.style.display = visible ? 'none' : 'block';
+            toggle.classList.toggle('active', !visible);
+            if (!visible) loadHistory();
+        }
+
+        function switchTab(tab) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.toggle('active', c.id === `tab-${tab}`));
+            if (tab === 'history') loadHistory();
+        }
+
+        async function loadHistory() {
+            const el = document.getElementById('history-list');
+            try {
+                const resp = await fetch('/api/burst/history');
+                const data = await resp.json();
+                const items = data.items || [];
+                if (items.length === 0) {
+                    el.innerHTML = '<p class="burst-status">暂无历史记录。</p>';
+                    return;
+                }
+                const modeLabels = { 'cross-domain': '跨界联想', 'problem': '问题驱动', 'techstack': '技术栈组合' };
+                el.innerHTML = items.map(r => {
+                    let ideas = [];
+                    try { ideas = JSON.parse(r.ideas || '[]'); } catch(e) {}
+                    const previews = ideas.slice(0, 2).map(i => i.title).join('、');
+                    const more = ideas.length > 2 ? ` 等 ${ideas.length} 个` : '';
+                    return `<div class="history-item" onclick="loadHistoryDetail(${r.id})">
+                        <div class="history-meta">#${r.id} · ${r.created_at} · ${modeLabels[r.mode] || r.mode}${r.focus ? ' · ' + esc(r.focus) : ''} · ${r.based_on} 条数据</div>
+                        <div class="history-preview">${esc(previews)}${more}</div>
+                    </div>`;
+                }).join('');
+            } catch (e) {
+                el.innerHTML = '<p class="burst-status">加载失败。</p>';
+            }
+        }
+
+        async function loadHistoryDetail(id) {
+            try {
+                const resp = await fetch('/api/burst/history');
+                const data = await resp.json();
+                const result = (data.items || []).find(r => r.id === id);
+                if (!result) return;
+                let ideas = [];
+                try { ideas = JSON.parse(result.ideas || '[]'); } catch(e) {}
+                const modeLabels = { 'cross-domain': '跨界联想', 'problem': '问题驱动', 'techstack': '技术栈组合' };
+                document.getElementById('burst-ideas').innerHTML = ideas.map((idea, i) => `
+                    <div class="burst-idea">
+                        <div class="burst-idea-title">${i + 1}. ${esc(idea.title)}</div>
+                        <p class="burst-idea-desc">${esc(idea.description)}</p>
+                        <p class="burst-idea-src">← ${esc(idea.inspiration)}</p>
+                        <button class="burst-idea-dive" onclick="deepDive('${esc(idea.title).replace(/'/g, "\\'")}','${esc(idea.description).replace(/'/g, "\\'")}','${esc(idea.inspiration).replace(/'/g, "\\'")}',event)">深入分析</button>
+                    </div>
+                `).join('');
+                switchTab('generate');
+            } catch (e) { toast('加载失败'); }
+        }
+
+        async function runBurst() {
+            const focus = document.getElementById('burst-focus').value.trim();
+            const mode = document.getElementById('burst-mode').value;
+            const ideasEl = document.getElementById('burst-ideas');
+            const btn = document.getElementById('burst-go');
+            btn.disabled = true;
+            closeDeepDive();
+            ideasEl.innerHTML = '<p class="burst-status">正在调用 LLM 进行跨界联想...</p>';
+
+            try {
+                const resp = await fetch('/api/inspire/burst', {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ count: 3, focus, mode })
+                });
+                const data = await resp.json();
+                if (data.error) { ideasEl.innerHTML = `<p class="burst-status">${esc(data.error)}</p>`; return; }
+                if (!data.ideas || data.ideas.length === 0) { ideasEl.innerHTML = '<p class="burst-status">未生成创意，请重试。</p>'; return; }
+
+                ideasEl.innerHTML = data.ideas.map((idea, i) => `
+                    <div class="burst-idea">
+                        <div class="burst-idea-title">${i + 1}. ${esc(idea.title)}</div>
+                        <p class="burst-idea-desc">${esc(idea.description)}</p>
+                        <p class="burst-idea-src">← ${esc(idea.inspiration)}</p>
+                        <button class="burst-idea-dive" onclick="deepDive('${esc(idea.title).replace(/'/g, "\\'")}','${esc(idea.description).replace(/'/g, "\\'")}','${esc(idea.inspiration).replace(/'/g, "\\'")}',event)">深入分析</button>
+                    </div>
+                `).join('');
+            } catch (e) {
+                ideasEl.innerHTML = '<p class="burst-status">请求失败，请检查 LLM 配置。</p>';
+            } finally { btn.disabled = false; }
+        }
+
+        async function deepDive(title, desc, inspiration, event) {
+            if (event) event.stopPropagation();
+            const panel = document.getElementById('deep-dive-panel');
+            const contentEl = document.getElementById('deep-dive-content');
+            const titleEl = document.getElementById('deep-dive-title');
+            titleEl.textContent = title;
+            contentEl.textContent = '正在深入分析...';
+            panel.classList.add('open');
+
+            try {
+                const resp = await fetch('/api/burst/deep-dive', {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ title, description: desc, inspiration })
+                });
+                const data = await resp.json();
+                if (data.error) { contentEl.textContent = data.error; return; }
+                let analysis;
+                try {
+                    analysis = JSON.parse(data.analysis);
+                    contentEl.innerHTML = Object.entries(analysis).map(([k, v]) => {
+                        const label = { market: '市场分析', tech: '技术方案', mvp: 'MVP 定义', timeline: '开发计划', business: '商业模式', risks: '风险评估' }[k] || k;
+                        let val = Array.isArray(v) ? v.map(s => `  · ${s}`).join('\n') : v;
+                        return `<strong>${label}</strong>\n${val}`;
+                    }).join('\n\n');
+                } catch (e) {
+                    contentEl.textContent = data.analysis;
+                }
+            } catch (e) {
+                contentEl.textContent = '分析失败，请检查 LLM 配置。';
+            }
+        }
+
+        function closeDeepDive() {
+            document.getElementById('deep-dive-panel').classList.remove('open');
+        }
+
+        init();
+    </script>
+</body>
+</html>

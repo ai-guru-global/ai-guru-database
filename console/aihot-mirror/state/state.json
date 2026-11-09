@@ -1,0 +1,9 @@
+{
+  "cursor": "ax1.eyJrIjoic3luYyIsImUiOiJzaWhVRzBPUyIsInciOjQ3NDMsImYiOiJtaW5pbWFsIn0",
+  "asOf": "2026-10-02T03:42:01.065Z",
+  "count": 4243,
+  "fields": "minimal",
+  "fetchedAt": "2026-10-02T03:52:37+00:00",
+  "pages": 9,
+  "snapshot_source": "aihot.virxact.com/api/v1/selected/snapshot"
+}

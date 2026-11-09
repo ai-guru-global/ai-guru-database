@@ -1,0 +1,67 @@
+name: 提议产业链节点（L4）
+description: 提议在五层产业链里新增一个节点或二级细分
+title: "[L4] 节点提案："
+labels: ["结构提案"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **L4 · 结构级贡献**。节点是拆解台的坐标，新增节点会自动聚合全库证据。
+        先读 [`console/chain.js`](https://github.com/ai-guru-global/ai-guru-console/blob/main/console/chain.js) 的现有骨架，确认不是重复。
+  - type: dropdown
+    id: layer
+    attributes:
+      label: 所属层
+      options:
+        - "L1 算力与硬件"
+        - "L2 数据与模型"
+        - "L3 平台与工具"
+        - "L4 行业应用"
+        - "L5 商业与生态"
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: 节点名
+    validations:
+      required: true
+  - type: input
+    id: slug
+    attributes:
+      label: 建议 id
+      description: 小写英文短 id，例：`liquidcool`、`ai-for-science`
+    validations:
+      required: true
+  - type: textarea
+    id: definition
+    attributes:
+      label: 一句话定义
+    validations:
+      required: true
+  - type: textarea
+    id: gap
+    attributes:
+      label: 为什么现有节点接不住
+      description: 指出内容现在散落在哪里、挂到现有节点会丢什么
+    validations:
+      required: true
+  - type: input
+    id: edges
+    attributes:
+      label: 上游 / 下游节点 id
+      description: 例：upstream=[fab, equip]；downstream=[datacenter]
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 首批证据
+      description: 3–5 条可追溯来源，证明该节点不是空壳
+    validations:
+      required: true
+  - type: checkboxes
+    id: offer
+    attributes:
+      label: 参与意愿
+      options:
+        - label: 我愿意提交节点卡与首批 3 条线索
+        - label: 我只提议，愿意由维护者接手

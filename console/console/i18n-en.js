@@ -1,0 +1,108 @@
+/* 英文骨架（手工策展，2026-11-03 起）。
+ * 只覆盖节点名/定义与主题定义，作为 chain.json 的英文层；正文与证据层仍以中文为主。
+ * 口径：英文是检索与引用用的骨架，不追求文学性；专有名词保留原写法。
+ * 修正走 git 留痕；新增节点时同步补这里，否则 data/chain.json 的 nameEn/defEn 为空。 */
+DB.i18nEn = {
+  nodes: {
+    /* L1 Compute & Hardware */
+    gpu: { name: "GPU & AI Accelerators", def: "The primary supply of general-purpose AI compute; NVIDIA holds a monopoly position while AMD catches up." },
+    asic: { name: "Custom ASICs & TPUs", def: "Purpose-built chips designed by cloud providers and leading labs for specific workloads, pursuing cost efficiency and supply autonomy." },
+    fab: { name: "Leading-Edge Nodes & Foundry", def: "The physical ceiling of chipmaking: leading-edge capacity and advanced packaging are the hard constraints on compute supply." },
+    equip: { name: "Semiconductor Equipment & Materials", def: "The upstream determinant of process capability: lithography, deposition, etch, metrology and critical materials, with EUV as the hardest single choke point." },
+    packaging: { name: "Advanced Packaging", def: "CoWoS, SoIC and hybrid bonding package GPUs with HBM; currently the tightest capacity bottleneck in compute supply." },
+    memory: { name: "HBM & Memory", def: "High-bandwidth memory is a mandatory companion to AI chips, and capacity allocation directly shapes GPU supply." },
+    datacenter: { name: "Datacenters & Clusters", def: "The system-integration layer that turns chips into usable compute: 10k-GPU clusters and AI compute centers." },
+    energy: { name: "Energy & Power", def: "The ultimate constraint on AI is shifting from chips to power: megawatt-scale supply is becoming the first siting variable." },
+    network: { name: "Networking & Optical Interconnect", def: "Once clusters reach 10k GPUs, interconnect bandwidth and optical modules become both the new bottleneck and a business." },
+    cloud: { name: "Compute Rental & Cloud", def: "The layer that sells compute by token or GPU-hour; its price is the cost baseline for model startups." },
+    edge: { name: "Edge & On-Device Compute", def: "Local inference on phones, PCs and devices, a new battleground driven by privacy and latency." },
+    robothw: { name: "Robot Bodies & Actuators", def: "The physical carrier of embodied AI: motors, reducers, dexterous hands and sensors, where China's supply chain leads." },
+    supply: { name: "Supply Chain & Export Controls", def: "Geopolitics directly rewrites the compute supply curve; bans, substitutions and transshipment are persistent variables." },
+
+    /* L2 Data & Models */
+    pretrain: { name: "Pre-training Data", def: "The stock and copyright status of high-quality corpora is the first-principles constraint on pre-training, and the root of the data-wall narrative." },
+    synth: { name: "Synthetic Data & Labeling", def: "Using models to generate training data relieves the data wall, and the labeling industry is transforming with it." },
+    frontier: { name: "Frontier Closed Models", def: "The flagship race among GPT, Claude, Gemini and Grok: definers of the capability frontier and sellers in the API economy." },
+    openweight: { name: "Open-Weight Ecosystem", def: "Qwen, DeepSeek, GLM, Llama and other open-weight camps turn models into public goods and reshape pricing power; after the Hugging Face acquisition, community governance entered the big-tech era." },
+    training: { name: "Training Methods & Alignment", def: "Post-training on top of pre-training: RLHF, distillation and reinforcement learning determine usability and personality." },
+    reasoning: { name: "Reasoning Models & Test-Time Compute", def: "Trading inference time for capability: chain-of-thought, self-verification and search make models think before answering, extending the compute race from training to inference." },
+    inference: { name: "Inference Optimization & Engines", def: "Systems engineering such as vLLM, quantization and KV cache determines how many users each unit of compute can serve." },
+    bench: { name: "Evaluation & Benchmarks", def: "Benchmarks are the industry measuring stick: leaderboard rank directly affects commercial trust and narrative." },
+    multimodal: { name: "Multimodal & Video Generation", def: "Unified modeling of vision, audio and video; video generation is the most contested sub-segment today." },
+    speech: { name: "Speech & Audio Models", def: "The model layer for TTS, real-time voice and music generation; voice is the next interaction entry point." },
+    worldmodel: { name: "World Models", def: "Attempts to make models understand the physical world: video generation as a world simulator, leading toward embodied AI." },
+    token: { name: "Model Pricing & Token Economics", def: "Per-million-token pricing is the price-discovery mechanism for intelligence; a price cut is an industry signal." },
+
+    /* L3 Platform & Tools */
+    agentfw: { name: "Agent Frameworks & Orchestration", def: "The development frameworks and multi-agent orchestration layer that carry application complexity." },
+    coding: { name: "Agentic Coding", def: "AI coding is the fastest path to model monetization and the most competitive arena: IDE, terminal and cloud-agent routes." },
+    devhost: { name: "Code Hosting & CI", def: "Repositories and pipelines are the new substrate of the agent era; self-hosted alternatives are challenging GitHub's centrality." },
+    maas: { name: "MaaS & Model APIs", def: "The developer entry point for selling models by call, and the main battlefield for price wars and ecosystem lock-in." },
+    search: { name: "AI Search & Answer Engines", def: "Generative answers restructure information access and directly threaten the distribution power of traditional search." },
+    rag: { name: "RAG & Knowledge Bases", def: "The standard path for connecting enterprise private knowledge to models, and the first stop for most deployments." },
+    datainfra: { name: "Data Infrastructure", def: "Data lakes, lakehouse, vector databases and data governance: the data foundation of enterprise AI; stronger models depend more on data engineering." },
+    devtools: { name: "Developer Toolchain", def: "SDKs, CLIs and debugging workflows: developer experience is the ecosystem moat." },
+    guardrail: { name: "Safety Guardrails & Evaluation Services", def: "The industrialization of red-teaming, guardrails and safety evaluation, a prerequisite for commercializing frontier capabilities." },
+    deploy: { name: "Deployment & Observability", def: "Canary rollout, monitoring and cost governance for models: the line between production and demo." },
+    opsagent: { name: "Ops Agents & AIOps", def: "Handing alert triage, root-cause analysis, controlled changes and inspection to agents: from rule-based AIOps to LLM-driven autonomous operations." },
+    computeruse: { name: "Browser & Computer Use", def: "Letting models operate computers and browsers directly, the last mile of general-purpose agents." },
+    mcp: { name: "Protocols & Interoperability", def: "Protocols such as MCP standardize tool invocation: the USB interface of the agent ecosystem." },
+
+    /* L4 Applications */
+    assistant: { name: "Consumer AI Assistants", def: "The mass-market super entry point: the user race and ad monetization of ChatGPT, Doubao and Kimi." },
+    ads: { name: "Recommendation & Advertising", def: "AI's earliest scaled monetization: ranking determines time spent, ad auctions determine traffic value, and generative creative is rewriting creative supply." },
+    commerce: { name: "E-commerce & Retail", def: "Shopping agents, assortment and pricing, marketing assets and fulfillment scheduling: e-commerce is where AI penetrates deepest and sits closest to transactions." },
+    enterprise: { name: "Enterprise Services & Customer Support", def: "The broadest enterprise runway: customer support, marketing, sales and internal efficiency." },
+    health: { name: "Healthcare AI", def: "Diagnosis, drug discovery and clinical workflows: the vertical with the strictest regulation, longest cycles and deepest value." },
+    finance: { name: "Financial AI", def: "Research, quant and risk control: a data-intensive and compliance-sensitive industry." },
+    legal: { name: "Legal & Compliance AI", def: "Contracts, retrieval and compliance automation: a natural fit for text-heavy industries." },
+    secops: { name: "Cybersecurity & Security Operations", def: "A two-way AI arms race: SOC automation, vulnerability discovery and phishing defense, a new increment in security budgets." },
+    edu: { name: "Education AI", def: "Tutoring, assessment and personalized learning: policy-sensitive but with rigid demand." },
+    science: { name: "Science & R&D AI", def: "AI for Science: drug discovery, materials design, weather forecasting and research agents, lowering the cost of hypothesis testing by an order of magnitude." },
+    gov: { name: "Government & Public Services", def: "Urban governance, government hotlines, approvals and public safety: procurement logic is distinct, and scale depends on qualifications and localized delivery." },
+    defense: { name: "Defense & Military AI", def: "Intelligence analysis, command assistance, unmanned systems and defense procurement: national-defense budgets become a new buyer of frontier AI, bringing the heaviest compliance and ethics constraints." },
+    creative: { name: "Image & Video Creation", def: "Generative creation tools: the tipping point from toy to productivity is happening now." },
+    audio: { name: "Music & Audio Products", def: "Music generation, podcasts and audio content: the focal area for copyright and creative ethics." },
+    device: { name: "AI Hardware Devices", def: "Putting models into glasses, earbuds and purpose-built hardware: a product of entry-point anxiety." },
+    embodiedapp: { name: "Embodied AI Applications", def: "Humanoid robots entering factories and homes: a race over full systems, scenarios and data loops." },
+    mobility: { name: "Autonomous Driving & Mobility", def: "Robotaxi, ADAS and smart cockpits: the first scaled embodied scenario combining world models, automotive-grade compute and operational loops." },
+    mfg: { name: "Industry & Manufacturing", def: "Inspection, predictive maintenance, process optimization and industrial software: AI replaces experience and inspection labor on the line." },
+    game: { name: "Games & Entertainment", def: "NPCs, content generation and interactive narrative: games are the most forgiving testing ground." },
+    office: { name: "Office & Collaboration", def: "AI in documents, slides, meetings and email: a reshuffle of incumbent software." },
+
+    /* L5 Business & Ecosystem */
+    bizmodel: { name: "Business Models & Monetization", def: "Subscriptions, APIs, advertising and outcome-based pricing: how to charge for intelligence is still being invented." },
+    funding: { name: "Funding & Valuation", def: "Trillion-scale capex and financing races: belief-based pricing in private markets." },
+    mna: { name: "M&A & Integration", def: "Giants use acquisitions to fill capability gaps: restructurings such as SpaceX-xAI and NVIDIA-HF." },
+    talent: { name: "Talent Mobility", def: "Co-founder departures, researcher startups and talent wars: the reallocation of intelligence is the allocation of the future." },
+    delivery: { name: "Delivery & Implementation (FDE)", def: "Bringing models into customer sites: FDE labor, partner certification and delivery margins, the vendor-side layer of AI applications." },
+    regulation: { name: "Regulation & Geopolitics", def: "The EU AI Act, US export controls and national legislation: compliance cost becomes a product variable." },
+    sovereign: { name: "Sovereign AI & National Compute", def: "National compute and model programs: the Middle East trades capital for technology, the EU trades regulation for sovereignty, China pursues full-stack autonomy, and compute becomes national infrastructure." },
+    opensource: { name: "Open-Source Governance & Licensing", def: "Apache, MIT and the open-source definition debate: licensing is commercial strategy." },
+    economics: { name: "Cost & Unit Economics", def: "Training cost, inference margin and burn rate: the accounting of the intelligence business." },
+    computefin: { name: "Compute Financialization", def: "GPU-backed loans, SPVs, compute securitization and circular deals: turning compute into a financeable asset while financializing cycle risk." },
+    distribution: { name: "Distribution & Channels", def: "User numbers, DAU and entry-point ownership: the decisive factor at the application layer." },
+    competition: { name: "Competitive Landscape & Camps", def: "The OpenAI camp, Anthropic camp, open-source camp and big-tech ecosystems, with shifting alignments." },
+    alliance: { name: "Standards & Alliances", def: "Compute alliances, model partnerships and standard protocols: medium- to long-term lock-in of ecosystem positions." }
+  },
+  topics: {
+    "基础模型": { def: "Frontier model capabilities and weights: GPT, Claude, Gemini, Llama and the frontier race." },
+    "智能体平台": { def: "Agent frameworks, orchestration, tool use and multi-agent systems." },
+    "Agentic编码": { def: "Agentic coding, code agents, AI IDEs and copilots." },
+    "多模态大模型": { def: "Vision, audio, video and unified multimodal models." },
+    "推理与基础设施": { def: "Inference optimization, inference engines, chips, compute and datacenters." },
+    "开源模型与生态": { def: "Open weights, open frameworks and community ecosystems such as Hugging Face." },
+    "训练与数据": { def: "Training methods, alignment, datasets and synthetic data." },
+    "评测与基准": { def: "Benchmarks, capability evaluation and evaluation methods." },
+    "具身智能": { def: "Embodied AI, robotics, perception and control." },
+    "世界模型": { def: "World models, physics simulation, and video generation as world simulators." },
+    "行业应用": { def: "Vertical deployments in healthcare, office, finance, legal, education and research." },
+    "AI安全与对齐": { def: "Safety, alignment, red-teaming and regulation." },
+    "开发者工具": { def: "AI toolchains, SDKs and platforms for developers." },
+    "语音与音频": { def: "Speech synthesis and recognition, music generation and real-time voice interaction." },
+    "AI搜索与信息获取": { def: "AI search engines, answer engines, AI browsers and information aggregation." },
+    "商业与投融资": { def: "Funding, M&A, talent mobility, business models and market structure." },
+    "消费级AI应用": { def: "Mass-market AI products: assistant apps, companionship and creation tools." },
+    "交付与组织": { def: "FDE and forward deployment, delivery and implementation, partner certification, and vendor-side organization and talent structure." }
+  }
+};

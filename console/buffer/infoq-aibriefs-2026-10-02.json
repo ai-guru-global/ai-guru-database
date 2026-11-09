@@ -1,0 +1,182 @@
+[
+  {
+    "id": 10481,
+    "title": "AFederation 开放无结构 AI 药物发现模型 Ptarmigan-1",
+    "description": "AFederation 宣布开放其无结构（structure-free）AI 药物发现模型 Ptarmigan-1，供所有人使用。该模型可在不构建蛋白质 3D 结构的情况下，预测哪些小分子与蛋白质结合以及结合位置。Ptarmigan-1 从多种数据中学习，其中包括对蛋白质在细胞内工作状态的测量数据。原文未披露模型的具体性能指标、训练数据规模、适用蛋白质范围或使用限制。",
+    "original_link": "https://x.com/ycombinator/status/2105847295812259884",
+    "category": [],
+    "collect_time": 1790909049326,
+    "publish_time": 0
+  },
+  {
+    "id": 10480,
+    "title": "MiniMax将出席AI Engineer NYC，Morgan Suo谈更快模型的隐性成本",
+    "description": "MiniMax 官方宣布将参加 AI Engineer NYC 活动。MiniMax 美国业务发展负责人 Morgan Suo 将发表演讲，主题为《更快模型的隐性成本》（The Hidden Costs of a Faster Model）。据官方介绍，演讲内容将涵盖量化（quantization）、投机解码（speculative decoding）和推理控制（reasoning controls）如何改变模型的成本、速度和质量。原文附带一个链接，但链接具体指向内容未在原文中说明。",
+    "original_link": "https://x.com/MiniMax_AI/status/2105832011319648681",
+    "category": [],
+    "collect_time": 1790905508858,
+    "publish_time": 0
+  },
+  {
+    "id": 10479,
+    "title": "Google联合Planet发射原型卫星，搭载四颗TPU入轨",
+    "description": "Google宣布与Planet合作，通过SpaceX的Transporter-18拼车任务，将一颗搭载四颗TPU的原型卫星送入轨道。这是Google长期研究登月项目Project Suncatcher的第一步，旨在探索相关可行性。该消息由Google官方账号发布，Demis Hassabis转发。原文未披露TPU在轨的具体用途、技术指标或后续计划时间表。",
+    "original_link": "https://x.com/demishassabis/status/2105829161440804963",
+    "category": [],
+    "collect_time": 1790904363929,
+    "publish_time": 0
+  },
+  {
+    "id": 10478,
+    "title": "Isomorphic Labs：潜在药物化学搜索空间接近10^60",
+    "description": "Isomorphic Labs 发布推文（由 demishassabis 转发），指出从小的分子到复杂的生物制品，跨越多种模态的潜在药物宇宙在数量上极其庞大。为便于理解，该推文给出保守估计：针对小的、类药物分子的庞大化学搜索空间接近 10^60。原文在给出该数字后以链接形式截断，未提供更多可验证细节。",
+    "original_link": "https://x.com/demishassabis/status/2105826569604235725",
+    "category": [],
+    "collect_time": 1790904309812,
+    "publish_time": 0
+  },
+  {
+    "id": 10477,
+    "title": "MiniMax H3 在 MachGen 平台实现 30 秒连续视频生成",
+    "description": "MachGenAI 转发消息称，MiniMax H3 在 MachGen 平台上实现了 30 秒连续视频生成，而 MiniMax H3 原生会在 15 秒处截断。该内容强调，这不是将两段视频拼接成的蒙太奇，而是一个单一、不中断的视觉序列连续展开半分钟。原文未提及具体技术实现方式、画质指标、分辨率、帧率、可用范围或限制条件，也未说明该能力是否面向所有用户开放。",
+    "original_link": "https://x.com/MiniMax_AI/status/2105829896975270241",
+    "category": [],
+    "collect_time": 1790904248492,
+    "publish_time": 0
+  },
+  {
+    "id": 10476,
+    "title": "Google DeepMind 发布 SynthID Bio，为 AI 设计蛋白质嵌入水印",
+    "description": "Google 及 Google DeepMind 首席执行官 sundarpichai 在 Twitter 宣布，SynthID Bio 作为面向 AI 生成生物设计的新型水印方法家族，是科学诚信与生物安全领域的重大进展。该技术在全球范围内首次实现将不可感知的签名直接嵌入蛋白质序列，且不影响其生物功能。原文未提及具体技术细节、发布时间、适用范围与限制条件。",
+    "original_link": "https://x.com/sundarpichai/status/2105828136428691774",
+    "category": [],
+    "collect_time": 1790904248491,
+    "publish_time": 0
+  },
+  {
+    "id": 10475,
+    "title": "NVIDIA AI 发文祝贺 CoreWeave 在 RL Rollouts 方面的进展",
+    "description": "NVIDIAAI 发推祝贺 CoreWeave 在 RL Rollouts 方面的工作。推文指出，RL 后训练涉及大量反复过程：训练模型、生成响应、再训练；推理工作节点每次都需要加载更新后的模型权重，随着模型变大，这会导致 GPU 处于等待状态。推文提及 CoreWeave 的新产品 CoreWeave Forge，并附带一条关于生产 trace 的内容：文中观点认为，从未到达下一轮训练的生产 trace 是一种付费后被丢弃的信号，多数团队每天都这样做，因为捕获 trace 的工具与运行训练的工具来自不同厂商。",
+    "original_link": "https://x.com/NVIDIAAI/status/2105818757671338444",
+    "category": [],
+    "collect_time": 1790901844179,
+    "publish_time": 0
+  },
+  {
+    "id": 10474,
+    "title": "Sundar Pichai 宣布与 Planet 合作的原型卫星成功发射",
+    "description": "Sundar Pichai 在推文中回顾了团队首次提出“将算力送入太空”构想的那次会议，他称其为令人兴奋的想法。他宣布，与合作伙伴 Planet 的原型卫星已成功发射，并表示这既展示了目前已取得的进展，也说明仍有很长的路要走。他同时感谢 SpaceX 提供的发射支持，并附有一条链接。",
+    "original_link": "https://x.com/sundarpichai/status/2105817662651777367",
+    "category": [],
+    "collect_time": 1790901844178,
+    "publish_time": 0
+  },
+  {
+    "id": 10473,
+    "title": "Meta在Connect 2026发布智能眼镜，目标年底达100款设计",
+    "description": "Meta在Connect 2026上宣布推出智能眼镜，售价区间为249美元至1299美元，并计划在年底前实现100款设计。IDC 2026年第二季度数据显示，轻薄型眼镜占XR眼镜与头显出货量的70.3%，头显占15.4%，Meta在XR眼镜与头显市场占有68.7%的份额。",
+    "original_link": "https://x.com/IDC/status/2105818822628254031",
+    "category": [],
+    "collect_time": 1790901844177,
+    "publish_time": 0
+  },
+  {
+    "id": 10472,
+    "title": "LeCun 转发讨论：LeWM 的 SIGReg 应用方式或致时间坍缩",
+    "description": "Yann LeCun（@ylecun）转发 @randall_balestr 的推文指出，LeWM 按时间步（per time-step）应用 SIGReg，因此无法防止时间坍缩（temporal collapse）。推文认为，若数据包含此类慢特征（slow features），应改为在 (N*T, D) 张量上应用 SIGReg，并称相关工作已证明这能解决该问题，同时附有链接（https://t.co/F09B72fprS）。推文还提到 @vlad_is_ai 此前已讨论过 JEPA+Slow features（JEPA 加慢特征）。原推文未给出实验细节、数据集、指标或结论的量化结果。",
+    "original_link": "https://x.com/ylecun/status/2105812545466429808",
+    "category": [],
+    "collect_time": 1790900649115,
+    "publish_time": 0
+  },
+  {
+    "id": 10471,
+    "title": "OpenAI GPT-6 Astra Ultrafast 在 NVIDIA Blackwell GPU 上运行",
+    "description": "NVIDIA 宣布，OpenAI 的 GPT-6 Astra Ultrafast 已在 NVIDIA Blackwell GPU 上运行，并通过 OpenAI API 及符合条件的 ChatGPT Work 和 Codex 用户开放。借助针对 NVIDIA Blackwell 架构的持续推理优化，Ultrafast 模式的 token 生成速度最高可达 Astra 标准模式的 8 倍。OpenAI 推理负责人 Philippe Tillet 与计算首席技术官 Uday Ruddarraju 均表示，NVIDIA 平台的可编程性及工具链投入帮助实现了 Astra Ultrafast 背后的加速。OpenAI 正用自家模型持续改进运行在 NVIDIA GPU 上的推理软件，开发者可通过 API 使用 GPT-6 Astra Ultrafast，具体访问、定价和实施细节参见 Ultrafast 指南。",
+    "original_link": "https://x.com/nvidia/status/2105809442365423918",
+    "category": [],
+    "collect_time": 1790899444587,
+    "publish_time": 0
+  },
+  {
+    "id": 10470,
+    "title": "Gemini 4 Argon 智能指数追平 GPT-6 Astra，每任务成本仅为其 60%",
+    "description": "Artificial Analysis 发推称，Google 新推出的 Gemini 4 Argon 在 Artificial Analysis Intelligence Index 上追平 GPT-6 Astra，且在折扣价格下每任务成本仅为后者的 60%。该推文还称，Google 因此重回智能水平前三的实验室之列。另据推文，Gemini 4 Argon 是 Google DeepMind 首个 proprietary 模型，原文以链接形式给出，具体内容未展开。Demis Hassabis 转发了该推文。",
+    "original_link": "https://x.com/demishassabis/status/2105803651864285301",
+    "category": [],
+    "collect_time": 1790898249379,
+    "publish_time": 0
+  },
+  {
+    "id": 10469,
+    "title": "Perplexity 发布 pplx-decider-v1-27b 决策模型，11 项基准总分 85.71%",
+    "description": "Perplexity 在 Hugging Face 发布基于 Qwen3.8-27B 微调的决策模型 pplx-decider-v1-27b，并通过 Perplexity API 在 11 项基准上测量准确率。该模型总分 85.71%，优于 Jev（84.51%）和原始 Qwen3.8-27B（74.76%）。在 FinancialPhraseBank（84.18%）、RAGTruth（88.80%）、TabFact（90.60%）、Circa（89.20%）等任务上表现最佳，ContractNLI 与 Qwen 并列最佳（80.78%）。但在 WinoGrande（83.30%）、JudgeBench（78.29%）、BBH（82.80%）、JevBench public hard（70.30%）、Belebele（94.00%）、TruthfulQA binary（85.40%）上，Jev 仍保持领先。使用该模型需 Python 3.12+ 及可容纳约 49 GiB 权重加工作内存的 CUDA GPU，支持 choice 与 noul 类型及图像输入。",
+    "original_link": "https://x.com/AravSrinivas/status/2105800293783064735",
+    "category": [],
+    "collect_time": 1790898249378,
+    "publish_time": 0
+  },
+  {
+    "id": 10468,
+    "title": "Mustafa Suleyman 宣布推出实时转录模型，称速度提升55%、成本降低60%",
+    "description": "Mustafa Suleyman 在 Twitter 上宣布推出一款实时转录模型，并声称其为全球最准确、排名第一。据其表述，该模型比 ElevenLabs 快 55%、成本低 60%，同时邀请开发者在其平台上构建 Agent。Satya Nadella 转发了该推文。文中未提及模型名称、具体技术细节、平台名称以及适用范围与限制。",
+    "original_link": "https://x.com/satyanadella/status/2105791561216958853",
+    "category": [],
+    "collect_time": 1790895904470,
+    "publish_time": 0
+  },
+  {
+    "id": 10467,
+    "title": "PyTorch 发布 Jagged Flash Attention 技术博客",
+    "description": "PyTorch 发布最新博客，介绍 Jagged Flash Attention (JFA)——Meta 生成式广告模型（GEM）背后的注意力内核。该内核在 NVIDIA Blackwell（B200）平台上实现，并基于 TLX（Triton Low-level Extensions）构建；TLX 在 Triton 高层能力之上增加了显式的、硬件感知的控制能力。原文未提及具体性能指标、开源情况或适用范围等细节。",
+    "original_link": "https://x.com/PyTorch/status/2105788900576743798",
+    "category": [],
+    "collect_time": 1790894888463,
+    "publish_time": 0
+  },
+  {
+    "id": 10466,
+    "title": "Cursor 上线 GLM 5.3 与 GLM 5.3 Flash",
+    "description": "Cursor 官方账号宣布，GLM 5.3 与 GLM 5.3 Flash 现已在 Cursor 中可用。同时提到，GLM 5.3 Max 是 CursorBench 4.0 上得分最高的开源权重（open-weight）模型。原文未提供模型参数规模、上下文长度、定价、具体评测分数或可用范围等细节。",
+    "original_link": "https://x.com/cursor_ai/status/2105787358557999585",
+    "category": [],
+    "collect_time": 1790894644015,
+    "publish_time": 0
+  },
+  {
+    "id": 10465,
+    "title": "CrusoeAI 将参加 PyTorch Conference North America",
+    "description": "CrusoeAI 转发公告称，将于 10 月 20 日至 21 日参加在圣何塞举办的 PyTorch Conference North America（@PyTorch）。活动内容包括：关于 Triton、MoE 微调与模型定制的演讲；展位演示与挑战活动；与 @dstackai、@SGLang（@lmsysorg）共同举办的 AI Infra Night。公告附带注册链接，并带有 #PyTorchCon 标签。原文未披露演讲者、具体时间安排、演示细节及注册截止等信息。",
+    "original_link": "https://x.com/PyTorch/status/2105774076862292058",
+    "category": [],
+    "collect_time": 1790891285362,
+    "publish_time": 0
+  },
+  {
+    "id": 10464,
+    "title": "NVIDIA 高管将在 SEMICON West 探讨 AI 驱动半导体变革",
+    "description": "NVIDIA AI Infrastructure 官方账号转发内容称，AI 正在改变半导体行业。NVIDIA 工业与计算工程副总裁兼总经理 Tim Costa 将在 #SEMICONWest 活动上回答这一变革的驱动因素，并深入探讨加速计算、AI 物理、代理式 AI（agentic AI）与物理 AI（physical AI）如何定义相关发展。原文附带一条链接，但未提供更多技术细节、数据或结论。",
+    "original_link": "https://x.com/nvidiaomniverse/status/2105773781470105814",
+    "category": [],
+    "collect_time": 1790891108974,
+    "publish_time": 0
+  },
+  {
+    "id": 10463,
+    "title": "a16z发布第二版《市场状况》报告：科技2026年贡献标普500约76%盈利增长",
+    "description": "a16z发布第二版《市场状况》报告，以图表形式呈现2026年前两季度股票市场与科技领域的核心趋势。报告显示，科技自2023年起成为盈利增长的主要来源，2026年（截至8月底）贡献标普500总盈利增长约76%，取代耐用消费品成为经济周期的定义者。报告认为，科技内部主题正从“比特”转向“原子”，硬件成为主角：AI建设推动半导体、电力、网络等传统周期性、资本密集型产业的需求，相关资金主要来自全球最大科技公司创纪录的利润，并越来越多依赖债务融资。报告同时提及，全球基础设施需求以万亿美元计、国防开支上升、电网全面电气化、制造业回流、机器人与自动驾驶出租车临近。在资本开支方面，报告指出计算需求仍超过供给；针对GPU三四年即过时的质疑，报告认为AI计算需求曲线向上拐点意味着A100仍相当有用。",
+    "original_link": "https://x.com/a16z/status/2105772183700267320",
+    "category": [],
+    "collect_time": 1790891108973,
+    "publish_time": 0
+  },
+  {
+    "id": 10462,
+    "title": "Perplexity开源pplx-decider-27b并推出Decisions API",
+    "description": "Perplexity宣布开源其最先进的多模态决策模型pplx-decider-27b，并同步推出全新的Decisions API。该模型由pplx-decider-v1-27b驱动，训练目标为对固定答案集输出概率分布，而非生成文本。定价方面，API为每百万输入token 4美分，输出token免费；官方表示未来数天内将进一步降价。该模型在基准测试中得分85.71%。",
+    "original_link": "https://x.com/AravSrinivas/status/2105774153903268288",
+    "category": [],
+    "collect_time": 1790891048937,
+    "publish_time": 0
+  }
+]

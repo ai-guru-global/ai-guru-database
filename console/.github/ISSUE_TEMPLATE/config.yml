@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 贡献指南
+    url: https://github.com/ai-guru-global/ai-guru-console/blob/main/CONTRIBUTING.md
+    about: 录入规范、贡献五级阶梯与时间线格式
+  - name: 数据字典
+    url: https://github.com/ai-guru-global/ai-guru-console/blob/main/data/README.md
+    about: data/*.json 的字段、稳定 ID 与版本口径
+  - name: 主题索引
+    url: https://github.com/ai-guru-global/ai-guru-console/blob/main/_topics.md
+    about: 18 个主题与各主题线索/候选清单
+  - name: 引用格式
+    url: https://github.com/ai-guru-global/ai-guru-console/blob/main/CITATION.md
+    about: 节点 / 线索 / 术语的稳定 ID 与引用方式

@@ -1,0 +1,87 @@
+name: Publish to Chrome Web Store
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish_type:
+        description: 'Publish type'
+        required: true
+        default: 'draft'
+        type: choice
+        options:
+          - draft
+          - publish
+          - threshold
+
+env:
+  NODE_VERSION: '20'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install chrome-webstore-upload
+        run: npm install -g chrome-webstore-upload-cli
+
+      - name: Package extension
+        run: |
+          cd tools/cmd/browser-extension
+          zip -r ../../../ai-news-database-clipper.zip .
+        shell: bash
+
+      - name: Upload to Chrome Web Store
+        env:
+          CHROME_EXTENSION_ID: ${{ secrets.CHROME_EXTENSION_ID }}
+          CHROME_CLIENT_ID: ${{ secrets.CHROME_CLIENT_ID }}
+          CHROME_CLIENT_SECRET: ${{ secrets.CHROME_CLIENT_SECRET }}
+          CHROME_REFRESH_TOKEN: ${{ secrets.CHROME_REFRESH_TOKEN }}
+        run: |
+          if [ "${{ github.event.inputs.publish_type }}" == "publish" ]; then
+            echo "Publishing to Chrome Web Store..."
+            chrome-webstore-upload upload \
+              --source ai-news-database-clipper.zip \
+              --extension-id "$CHROME_EXTENSION_ID" \
+              --client-id "$CHROME_CLIENT_ID" \
+              --client-secret "$CHROME_CLIENT_SECRET" \
+              --refresh-token "$CHROME_REFRESH_TOKEN"
+          elif [ "${{ github.event.inputs.publish_type }}" == "threshold" ]; then
+            echo "Publishing with threshold review..."
+            chrome-webstore-upload upload \
+              --source ai-news-database-clipper.zip \
+              --extension-id "$CHROME_EXTENSION_ID" \
+              --client-id "$CHROME_CLIENT_ID" \
+              --client-secret "$CHROME_CLIENT_SECRET" \
+              --refresh-token "$CHROME_REFRESH_TOKEN" \
+              --publish-type threshold
+          else
+            echo "Uploading as draft..."
+            chrome-webstore-upload upload \
+              --source ai-news-database-clipper.zip \
+              --extension-id "$CHROME_EXTENSION_ID" \
+              --client-id "$CHROME_CLIENT_ID" \
+              --client-secret "$CHROME_CLIENT_SECRET" \
+              --refresh-token "$CHROME_REFRESH_TOKEN" \
+              --upload-only
+          fi
+
+      - name: Verify upload
+        if: github.event.inputs.publish_type != 'draft'
+        env:
+          CHROME_EXTENSION_ID: ${{ secrets.CHROME_EXTENSION_ID }}
+          CHROME_CLIENT_ID: ${{ secrets.CHROME_CLIENT_ID }}
+          CHROME_CLIENT_SECRET: ${{ secrets.CHROME_CLIENT_SECRET }}
+          CHROME_REFRESH_TOKEN: ${{ secrets.CHROME_REFRESH_TOKEN }}
+        run: |
+          echo "Extension status:"
+          chrome-webstore-upload list \
+            --extension-id "$CHROME_EXTENSION_ID" \
+            --client-id "$CHROME_CLIENT_ID" \
+            --client-secret "$CHROME_CLIENT_SECRET" \
+            --refresh-token "$CHROME_REFRESH_TOKEN"

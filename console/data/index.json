@@ -1,0 +1,38 @@
+{
+  "name": "AI GURU Industry Graph",
+  "nameZh": "AI GURU 工作台 · AI 行业坐标系",
+  "version": "2026.11",
+  "asOf": "2026-11-06",
+  "license": {
+    "data": "CC BY-SA 4.0",
+    "code": "MIT",
+    "attribution": "AI GURU 工作台（ai-guru-console）"
+  },
+  "citation": "AI GURU 工作台（ai-guru-console），2026.11，ai-guru:chain/L1/gpu",
+  "counts": {
+    "layers": 5,
+    "nodes": 71,
+    "subNodes": 213,
+    "topics": 18,
+    "clues": 99,
+    "events": 169,
+    "verify": 154,
+    "models": 14,
+    "players": 142,
+    "terms": 62,
+    "explainNodes": 71,
+    "deepNodes": 71
+  },
+  "files": {
+    "chain": "chain.json",
+    "topics": "topics.json",
+    "clues": "clues.json",
+    "chronicle": "chronicle.json",
+    "verify": "verify.json",
+    "models": "models.json",
+    "players": "players.json",
+    "glossary": "glossary.json",
+    "explain": "explain.json",
+    "deep": "deep.json"
+  }
+}

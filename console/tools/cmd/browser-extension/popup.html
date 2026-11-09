@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Database Clipper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="icons/icon32.png" alt="logo" class="logo">
+      <h1>AI News Database</h1>
+    </div>
+
+    <div id="status" class="status hidden"></div>
+
+    <div class="form">
+      <label for="title">标题</label>
+      <input type="text" id="title" placeholder="文章标题">
+
+      <label for="url">链接</label>
+      <input type="text" id="url" placeholder="https://..." readonly>
+
+      <label for="summary">摘要（可选）</label>
+      <textarea id="summary" rows="3" placeholder="输入摘要或留空"></textarea>
+
+      <label for="tags">标签（可选，逗号分隔）</label>
+      <input type="text" id="tags" placeholder="go, kubernetes">
+    </div>
+
+    <div class="actions">
+      <button id="save-btn" class="btn-primary">保存到本地库</button>
+    </div>
+
+    <div class="footer">
+      <span>数据永远属于你</span>
+      <a href="#" id="settings-link">设置</a>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

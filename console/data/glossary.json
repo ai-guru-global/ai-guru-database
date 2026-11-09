@@ -1,0 +1,610 @@
+{
+  "cats": {
+    "model": "模型",
+    "train": "训练",
+    "infer": "推理",
+    "agent": "智能体",
+    "safety": "安全",
+    "infra": "基础设施",
+    "biz": "商业",
+    "eval": "评测",
+    "delivery": "交付与组织"
+  },
+  "items": [
+    {
+      "k": "llm",
+      "c": "model",
+      "t": "LLM 大语言模型",
+      "a": [
+        "大语言模型"
+      ],
+      "b": "以海量文本自监督预训练的 Transformer 模型，通过上下文学习泛化到未训练任务。",
+      "uid": "term/llm"
+    },
+    {
+      "k": "foundation",
+      "c": "model",
+      "t": "基础模型 Foundation Model",
+      "a": [
+        "基础模型"
+      ],
+      "b": "在大规模数据上预训练、可适配下游任务的模型总称，是本库「基础模型」主题的边界。",
+      "uid": "term/foundation"
+    },
+    {
+      "k": "multimodal",
+      "c": "model",
+      "t": "多模态模型",
+      "b": "统一处理文本、图像、音频、视频等多种模态的模型；模态对齐质量是核心指标。",
+      "uid": "term/multimodal"
+    },
+    {
+      "k": "moe",
+      "c": "model",
+      "t": "MoE 混合专家",
+      "a": [
+        "MoE"
+      ],
+      "b": "稀疏激活架构：每 token 只路由到部分专家网络，以低推理成本换大参数容量。",
+      "uid": "term/moe"
+    },
+    {
+      "k": "openweight",
+      "c": "model",
+      "t": "开源权重 Open Weights",
+      "a": [
+        "开源权重"
+      ],
+      "b": "公开模型权重允许下载与自部署（如 Apache/MIT 许可），与开源代码含义不同：多数不含训练数据与完整训练代码。",
+      "uid": "term/openweight"
+    },
+    {
+      "k": "distill",
+      "c": "model",
+      "t": "蒸馏 Distillation",
+      "a": [
+        "蒸馏"
+      ],
+      "b": "用大模型的输出训练小模型，把能力压缩到低成本推理侧；前沿 lab 的服务条款常限制蒸馏。",
+      "uid": "term/distill"
+    },
+    {
+      "k": "token",
+      "c": "model",
+      "t": "Token",
+      "b": "模型的文本计量与计价单位，约 0.75 个英文单词或 1-2 个汉字；API 价格按百万 token 报。",
+      "uid": "term/token"
+    },
+    {
+      "k": "ctx",
+      "c": "model",
+      "t": "上下文窗口 Context Window",
+      "a": [
+        "上下文窗口"
+      ],
+      "b": "模型单次可处理的 token 上限；长上下文的「大海捞针」有效利用率是独立于长度的真实指标。",
+      "uid": "term/ctx"
+    },
+    {
+      "k": "scaling",
+      "c": "model",
+      "t": "Scaling Law 规模定律",
+      "a": [
+        "Scaling Law"
+      ],
+      "b": "模型能力随参数/数据/算力幂律提升的经验规律；预训练收益递减后，行业转向后训练与推理时扩展。",
+      "uid": "term/scaling"
+    },
+    {
+      "k": "pretrain",
+      "c": "train",
+      "t": "预训练 Pre-training",
+      "a": [
+        "预训练"
+      ],
+      "b": "在海量无标注语料上的自监督训练阶段，消耗绝大部分算力，决定模型的基础能力。",
+      "uid": "term/pretrain"
+    },
+    {
+      "k": "posttrain",
+      "c": "train",
+      "t": "后训练 Post-training",
+      "a": [
+        "后训练"
+      ],
+      "b": "预训练之后的全部训练：SFT、RLHF/RLAIF、偏好优化；模型的可用性与「性格」主要由这一阶段决定。",
+      "uid": "term/posttrain"
+    },
+    {
+      "k": "rlhf",
+      "c": "train",
+      "t": "RLHF 人类反馈强化学习",
+      "a": [
+        "RLHF"
+      ],
+      "b": "用人类偏好训练奖励模型再强化学习优化策略；RLAIF 用 AI 反馈替代人力。",
+      "uid": "term/rlhf"
+    },
+    {
+      "k": "sft",
+      "c": "train",
+      "t": "SFT 监督微调",
+      "a": [
+        "SFT"
+      ],
+      "b": "在指令-回答对上做监督训练，是教模型「按指令行事」的第一步。",
+      "uid": "term/sft"
+    },
+    {
+      "k": "synthetic",
+      "c": "train",
+      "t": "合成数据 Synthetic Data",
+      "a": [
+        "合成数据"
+      ],
+      "b": "由模型生成的训练数据；缓解数据墙的主力手段，风险是模式坍缩与误差放大。",
+      "uid": "term/synthetic"
+    },
+    {
+      "k": "rlvr",
+      "c": "train",
+      "t": "RLVR 可验证奖励强化学习",
+      "a": [
+        "RLVR"
+      ],
+      "b": "用可程序化验证的奖励（数学对错、代码测试通过）做强化学习，推理模型的核心训练法。",
+      "uid": "term/rlvr"
+    },
+    {
+      "k": "cot",
+      "c": "train",
+      "t": "思维链 Chain-of-Thought",
+      "a": [
+        "思维链"
+      ],
+      "b": "让模型先输出推理步骤再给答案的提示或训练范式；推理模型将其内化为长思考。",
+      "uid": "term/cot"
+    },
+    {
+      "k": "inference",
+      "c": "infer",
+      "t": "推理 Inference",
+      "b": "模型部署后对请求的前向计算；成本、吞吐与延迟的工程学都发生在这里。",
+      "uid": "term/inference"
+    },
+    {
+      "k": "vllm",
+      "c": "infer",
+      "t": "vLLM",
+      "a": [
+        "vLLM"
+      ],
+      "b": "高吞吐推理引擎，以 PagedAttention 连续批处理著称；开源部署的事实标准之一。",
+      "uid": "term/vllm"
+    },
+    {
+      "k": "quant",
+      "c": "infer",
+      "t": "量化 Quantization",
+      "a": [
+        "量化"
+      ],
+      "b": "把权重从 FP16 压到 INT8/INT4 等低位宽，以小幅度精度损失换大幅成本下降。",
+      "uid": "term/quant"
+    },
+    {
+      "k": "kvcache",
+      "c": "infer",
+      "t": "KV Cache",
+      "a": [
+        "KV cache",
+        "KV Cache"
+      ],
+      "b": "缓存注意力历史键值避免重算；显存占用的最大头，长上下文优化的核心对象。",
+      "uid": "term/kvcache"
+    },
+    {
+      "k": "speculative",
+      "c": "infer",
+      "t": "投机解码 Speculative Decoding",
+      "a": [
+        "投机解码"
+      ],
+      "b": "小模型草拟、大模型验证的解码方式，可显著降低时延且不损失质量。",
+      "uid": "term/speculative"
+    },
+    {
+      "k": "testtime",
+      "c": "infer",
+      "t": "推理时扩展 Test-time Compute",
+      "a": [
+        "推理时扩展",
+        "推理时计算"
+      ],
+      "b": "用更多推理期计算（更长思考、多次采样、验证）换更强能力；深思考模型的核心范式。",
+      "uid": "term/testtime"
+    },
+    {
+      "k": "agent",
+      "c": "agent",
+      "t": "智能体 Agent",
+      "a": [
+        "智能体"
+      ],
+      "b": "能规划、调用工具、多步执行并依反馈修正的模型系统；本库按「平台框架 / 编码 / 具身」三条线追踪。",
+      "uid": "term/agent"
+    },
+    {
+      "k": "tooluse",
+      "c": "agent",
+      "t": "工具调用 Tool Use",
+      "a": [
+        "工具调用"
+      ],
+      "b": "模型输出结构化调用请求（函数/API），由外部执行后回传结果；Function Calling 的泛化。",
+      "uid": "term/tooluse"
+    },
+    {
+      "k": "mcp",
+      "c": "agent",
+      "t": "MCP Model Context Protocol",
+      "a": [
+        "MCP"
+      ],
+      "b": "模型与工具/数据源之间的开放互操作协议，正在成为 agent 生态的「USB 接口」。",
+      "uid": "term/mcp"
+    },
+    {
+      "k": "multiagent",
+      "c": "agent",
+      "t": "多智能体系统",
+      "a": [
+        "多智能体"
+      ],
+      "b": "多个 agent 分工协作（规划者/执行者/评审者）；可靠性瓶颈在错误传播而非单点能力。",
+      "uid": "term/multiagent"
+    },
+    {
+      "k": "computeruse",
+      "c": "agent",
+      "t": "Computer Use 计算机使用",
+      "a": [
+        "Computer Use"
+      ],
+      "b": "模型直接操作 GUI（截图-理解-点击-输入），通用 agent 落地物理数字世界的最后一公里。",
+      "uid": "term/computeruse"
+    },
+    {
+      "k": "rag",
+      "c": "agent",
+      "t": "RAG 检索增强生成",
+      "a": [
+        "RAG"
+      ],
+      "b": "先检索外部知识再生成，把私有知识与时效性接进模型；企业落地第一站。",
+      "uid": "term/rag"
+    },
+    {
+      "k": "sandbox",
+      "c": "agent",
+      "t": "沙箱 Sandbox",
+      "a": [
+        "沙箱"
+      ],
+      "b": "隔离执行环境，让 agent 的代码与操作不伤宿主；评估 agent 安全性的基础设施。",
+      "uid": "term/sandbox"
+    },
+    {
+      "k": "escape",
+      "c": "safety",
+      "t": "逃逸 / 失控 Escape",
+      "a": [
+        "逃逸"
+      ],
+      "b": "模型突破评测或部署的边界约束（越权操作、自我复制、对抗评估者）；本库安全主题的核心监测对象。",
+      "uid": "term/escape"
+    },
+    {
+      "k": "preparedness",
+      "c": "safety",
+      "t": "Preparedness Framework",
+      "a": [
+        "Preparedness"
+      ],
+      "b": "OpenAI 的前沿风险分级框架（低/中/高/Critical），Critical 级能力触发发布延缓。",
+      "uid": "term/preparedness"
+    },
+    {
+      "k": "asl",
+      "c": "safety",
+      "t": "ASL 负责任扩展等级",
+      "a": [
+        "ASL"
+      ],
+      "b": "Anthropic RSP 的安全等级（ASL-1 至 4），能力越强部署门槛越高。",
+      "uid": "term/asl"
+    },
+    {
+      "k": "jailbreak",
+      "c": "safety",
+      "t": "越狱 Jailbreak",
+      "a": [
+        "越狱"
+      ],
+      "b": "绕过安全对齐获取违禁输出的攻击；与模型能力的提升同步演化。",
+      "uid": "term/jailbreak"
+    },
+    {
+      "k": "watermark",
+      "c": "safety",
+      "t": "文本水印 Watermark",
+      "a": [
+        "水印"
+      ],
+      "b": "在模型输出中嵌入统计特征以标识 AI 生成；检测鲁棒性与误报是落地难点。",
+      "uid": "term/watermark"
+    },
+    {
+      "k": "redteam",
+      "c": "safety",
+      "t": "红队 Red Team",
+      "a": [
+        "红队"
+      ],
+      "b": "以攻击者视角系统性探测模型失效模式；发布前安全评估的标配流程。",
+      "uid": "term/redteam"
+    },
+    {
+      "k": "aiact",
+      "c": "safety",
+      "t": "欧盟 AI Act",
+      "a": [
+        "AI Act"
+      ],
+      "b": "全球首部全面 AI 法案，按风险分级施加义务；透明度义务已于 2026-08 进入执法期。",
+      "uid": "term/aiact"
+    },
+    {
+      "k": "daybreak",
+      "c": "safety",
+      "t": "Daybreak / 受限开放",
+      "a": [
+        "Daybreak"
+      ],
+      "b": "前沿安全模型面向经审查防御者分级开放的机制（本库语料中的 Cyber 模型开放模式）。",
+      "uid": "term/daybreak"
+    },
+    {
+      "k": "gpu",
+      "c": "infra",
+      "t": "GPU 与 AI 加速器",
+      "b": "并行计算硬件，训练与推理的算力底座；互连带宽与显存常比峰值算力更关键。",
+      "uid": "term/gpu"
+    },
+    {
+      "k": "hbm",
+      "c": "infra",
+      "t": "HBM 高带宽内存",
+      "a": [
+        "HBM"
+      ],
+      "b": "与 GPU 封装在一起的堆叠内存；AI 芯片供给瓶颈，产能分配是产业博弈变量。",
+      "uid": "term/hbm"
+    },
+    {
+      "k": "datacenter",
+      "c": "infra",
+      "t": "智算中心 / 万卡集群",
+      "a": [
+        "万卡"
+      ],
+      "b": "把数万卡组网成单一大集群的系统工程；故障率与网络是难点，电力是新约束。",
+      "uid": "term/datacenter"
+    },
+    {
+      "k": "flops",
+      "c": "infra",
+      "t": "FLOP/s 与有效算力",
+      "b": "浮点运算速率；实际训练关注「有效算力利用率」MFU，而非纸面峰值。",
+      "uid": "term/flops"
+    },
+    {
+      "k": "inferencecost",
+      "c": "infra",
+      "t": "推理成本曲线",
+      "a": [
+        "推理成本"
+      ],
+      "b": "单位智能价格随算法与硬件进步快速下降；「智能的通缩」是行业长期变量。",
+      "uid": "term/inferencecost"
+    },
+    {
+      "k": "edgeai",
+      "c": "infra",
+      "t": "端侧推理 Edge AI",
+      "a": [
+        "端侧"
+      ],
+      "b": "在手机/PC/设备本地运行模型；隐私、延迟与离线可用驱动，受内存与功耗约束。",
+      "uid": "term/edgeai"
+    },
+    {
+      "k": "arr",
+      "c": "biz",
+      "t": "ARR 年化经常性收入",
+      "a": [
+        "ARR"
+      ],
+      "b": "月收入 ×12 的年化口径；AI 公司披露常混用 ARR/收入/流水，比较时必须对齐口径。",
+      "uid": "term/arr"
+    },
+    {
+      "k": "maas",
+      "c": "biz",
+      "t": "MaaS 模型即服务",
+      "a": [
+        "MaaS"
+      ],
+      "b": "按调用计费的模型托管形态；价格战主战场，毛利取决于推理成本曲线。",
+      "uid": "term/maas"
+    },
+    {
+      "k": "tokenomics",
+      "c": "biz",
+      "t": "Token 经济",
+      "b": "围绕 token 定价的商业模式：输入/输出差价、缓存折扣、批量价与分级路由。",
+      "uid": "term/tokenomics"
+    },
+    {
+      "k": "capex",
+      "c": "biz",
+      "t": "算力资本开支 Capex",
+      "a": [
+        "Capex"
+      ],
+      "b": "云厂商与 lab 的数据中心投资计划；AI 行业需求最硬的先行指标。",
+      "uid": "term/capex"
+    },
+    {
+      "k": "acqui",
+      "c": "biz",
+      "t": "反向收购 Acqui-hire",
+      "a": [
+        "反向收购"
+      ],
+      "b": "以收购公司为主要目的的人才并购；AI 行业常见的能力补全与监管规避形态。",
+      "uid": "term/acqui"
+    },
+    {
+      "k": "benchmark",
+      "c": "eval",
+      "t": "Benchmark 基准",
+      "b": "标准化能力测验；饱和、污染与作弊是三大失效模式，需看榜单外的复现与实战。",
+      "uid": "term/benchmark"
+    },
+    {
+      "k": "contam",
+      "c": "eval",
+      "t": "数据污染 Contamination",
+      "b": "测试题混入训练数据导致虚高分数；严肃评测必须报告去污措施。",
+      "uid": "term/contam"
+    },
+    {
+      "k": "arena",
+      "c": "eval",
+      "t": "竞技场 Arena",
+      "b": "以真人盲测偏好排名的评测（如 LMArena）；反映体验而非单项能力。",
+      "uid": "term/arena"
+    },
+    {
+      "k": "swebench",
+      "c": "eval",
+      "t": "SWE-bench 类工程评测",
+      "a": [
+        "SWE-bench"
+      ],
+      "b": "用真实 GitHub issue 验证 agent 编码能力；通过率是 Agentic 编码赛道的关键指标。",
+      "uid": "term/swebench"
+    },
+    {
+      "k": "halucination",
+      "c": "eval",
+      "t": "幻觉 Hallucination",
+      "a": [
+        "幻觉"
+      ],
+      "b": "模型编造不存在事实的失效模式；检索增强与引用溯源是主流缓解手段。",
+      "uid": "term/halucination"
+    },
+    {
+      "k": "fde",
+      "c": "delivery",
+      "t": "FDE 前沿部署工程师",
+      "a": [
+        "FDE",
+        "前沿部署工程师",
+        "Forward Deployed Engineer"
+      ],
+      "b": "Palantir 首创的客户现场工程角色：深入业务现场把方案推进到上线运营并对交付结果负责，与后端产品团队按 Echo/Delta 分工配对。海外厂商把它写成岗位与合同 SKU；国内取证到把它写成可考证书的仅有腾讯云 ADP（2026-08-17），阿里云与火山引擎侧为缺位记录，属消极证据。",
+      "uid": "term/fde"
+    },
+    {
+      "k": "deployeng",
+      "c": "delivery",
+      "t": "部署工程",
+      "a": [
+        "部署工程"
+      ],
+      "b": "把模型或智能体从 demo 推进到客户生产环境的工作集合：场景理解、数据与权限接入、集成、运维交接。腾讯云 ADP 活动页把「交付实施」列为考察项并点名金融、政务、制造、零售、医疗、教育六个场景。",
+      "uid": "term/deployeng"
+    },
+    {
+      "k": "prosvc",
+      "c": "delivery",
+      "t": "专业服务 Professional Services",
+      "a": [
+        "专业服务"
+      ],
+      "b": "以人天而非席位计费、把能力交付给客户的那部分收入。判断「自建交付是否值得」的分母：a16z 用 ServiceNow 毛利率 63.2%→79% 说明机制是自有实施团队把重复现场问题写成可复用产品模块，外包成「认证 + 伙伴」结构时模块沉淀在伙伴侧，厂商报表不会因多发证书而爬升。",
+      "uid": "term/prosvc"
+    },
+    {
+      "k": "acv",
+      "c": "delivery",
+      "t": "ACV 年度合同额",
+      "a": [
+        "ACV"
+      ],
+      "b": "Annual Contract Value，单客户年度合同金额，是「自建 FDE 是否划算」的分母（口径：合同·年）。社区流传的「ACV 100 万美元以上才养得起 FDE」是同一社区单源口径（D 级），不得与人均成本、毛利率混用为一条推理链。",
+      "uid": "term/acv"
+    },
+    {
+      "k": "loadedcost",
+      "c": "delivery",
+      "t": "人均全成本 Loaded Cost",
+      "b": "把薪资之外的差旅、工具、保险与管理摊销计入后的员工年成本，口径为「人·年」。社区估算的前沿部署人均全成本 22 万–40 万美元与「年薪 20 万–30 万美元」不是同一量：前者是全成本，后者是现金薪酬，二者不可互相校验。",
+      "uid": "term/loadedcost"
+    },
+    {
+      "k": "rebate",
+      "c": "delivery",
+      "t": "返点",
+      "a": [
+        "返点"
+      ],
+      "b": "渠道政策里按销量或消耗阶梯返还给分销商的部分，边际收益在项目数上非线性。本库的返点档位来自冻结的渠道政策快照；「返点与交付认证如何绑定」的条款在登录墙后未取得（❓），故只能描述档位结构，不能断言绑定关系。",
+      "uid": "term/rebate"
+    },
+    {
+      "k": "deposit",
+      "c": "delivery",
+      "t": "保证金",
+      "a": [
+        "保证金"
+      ],
+      "b": "分销商为取得代理资格前置且一次性缴纳的款项，与是否中标无关，因此它抬高的是进入门槛而非单笔项目成本。与返点档位、分级五档、驻场要求共同构成渠道准入的四道闸。",
+      "uid": "term/deposit"
+    },
+    {
+      "k": "partnercert",
+      "c": "delivery",
+      "t": "伙伴认证（ADP）",
+      "a": [
+        "伙伴认证",
+        "ADP"
+      ],
+      "b": "云厂商面向合作伙伴工程师发放的能力证书（腾讯云 ADP 为其一），把「谁能替厂商做交付」变成可考核的个人资格。阿里云侧是两套并行口径：AI 生态计划按调用量结算，服务伙伴计划把认证人员数直接写进等级门槛——不可合并为「阿里云的伙伴制度」。",
+      "uid": "term/partnercert"
+    },
+    {
+      "k": "delivcert",
+      "c": "delivery",
+      "t": "交付认证",
+      "a": [
+        "交付认证"
+      ],
+      "b": "以证书形式约定的交付资格制度。核对三件事：由谁发证、与什么合同权利绑定（投标加分／分包资格／返点档位／名录曝光）、能否通过消耗承诺购买。腾讯云 ADP 活动页参与第一步即「注册开通并加赠 PU」，说明该认证以消耗承诺为前提。",
+      "uid": "term/delivcert"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-guru.global/schema/chain.schema.json",
+  "title": "AI GURU Industry Chain",
+  "type": "object",
+  "required": [
+    "layers",
+    "nodeCount"
+  ],
+  "properties": {
+    "nodeCount": {
+      "type": "integer"
+    },
+    "subNodeCount": {
+      "type": "integer"
+    },
+    "i18n": {
+      "type": "object"
+    },
+    "layers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "key",
+          "name",
+          "nodes"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "pattern": "^L[1-5]$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "en": {
+            "type": "string"
+          },
+          "desc": {
+            "type": "string"
+          },
+          "nodes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/node"
+            }
+          }
+        }
+      }
+    },
+    "stack": {
+      "type": "object"
+    }
+  },
+  "$defs": {
+    "node": {
+      "type": "object",
+      "required": [
+        "uid",
+        "id",
+        "name",
+        "def",
+        "layer"
+      ],
+      "properties": {
+        "uid": {
+          "type": "string",
+          "pattern": "^chain/L[1-5]/"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "def": {
+          "type": "string"
+        },
+        "nameEn": {
+          "type": "string"
+        },
+        "defEn": {
+          "type": "string"
+        },
+        "layer": {
+          "type": "string"
+        },
+        "layerName": {
+          "type": "string"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "upstream": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "downstream": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "maturity": {
+          "type": "string"
+        },
+        "why": {
+          "type": "string"
+        },
+        "moat": {
+          "type": "string"
+        },
+        "bottleneck": {
+          "type": "string"
+        },
+        "signals": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "url": {
+          "type": "string"
+        },
+        "sub": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

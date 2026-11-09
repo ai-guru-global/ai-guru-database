@@ -1,0 +1,24 @@
+version: 2
+updates:
+  - package-ecosystem: "gomod"
+    directory: "/tools/cmd"
+    schedule:
+      interval: "weekly"
+    # 停用自动版本 PR：仓库策略「只保留 main 一个分支」，依赖升级改为手动
+    open-pull-requests-limit: 0
+    labels:
+      - "dependencies"
+      - "automated"
+    reviewers:
+      - "@owner"
+    commit-message:
+      prefix: "deps"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 0
+    labels:
+      - "github-actions"
+      - "automated"

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Database — 本地优先的技术资讯终端</title>
+    <meta name="description" content="专为程序员设计的本地优先技术资讯终端。数据存储在本地 SQLite，无需云端。LLM 增强、智能策展、RAG 问答。">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Geist:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="inner">
+            <a href="#" class="logo">AI News Database</a>
+            <div class="nav-links" id="nav-links">
+                <a href="#features" class="nav-link">特性</a>
+                <a href="#sources" class="nav-link">信息源</a>
+                <a href="#workflow" class="nav-link">工作流</a>
+                <a href="#start" class="nav-link nav-link-cta">开始使用</a>
+            </div>
+            <button class="menu-btn" id="menu-btn" aria-label="菜单">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="inner">
+            <h1 class="hero-title">你的技术资讯，<br><em>你做主。</em></h1>
+            <p class="hero-sub">本地优先的智能资讯终端。所有数据存储在本地 SQLite，无需云端账号。</p>
+            <div class="hero-actions">
+                <a href="#start" class="btn">开始使用</a>
+                <a href="#features" class="btn btn-ghost">了解特性</a>
+            </div>
+            <div class="hero-demo" id="hero-demo">
+                <div><span class="prompt">$</span> <span class="cmd">ai-news-database sync</span></div>
+                <div><span class="ok">✓</span> 已同步 8 个源到 ~/.ai-news-database/ai-news-database.db</div>
+                <div><span class="prompt">$</span> <span class="cmd">ai-news-database inspire --days 7</span></div>
+                <div><span class="ok">✨</span> 已保存 12 条 Show HN 新产品到本地</div>
+                <div><span class="prompt">$</span> <span class="cmd">ai-news-database curate --top 5</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="inner">
+            <h2 class="section-title">核心特性</h2>
+            <p class="section-sub">从采集到知识沉淀，全部本地完成。</p>
+            <div class="features">
+                <div class="feat feat-highlight">
+                    <h3>✨ 灵感模式</h3>
+                    <p>自动捕获 Show HN 上的新产品/新项目，保存到本地知识库，随时激发创意。</p>
+                </div>
+                <div class="feat">
+                    <h3>TUI 收件箱</h3>
+                    <p>基于 Bubble Tea 的交互式终端，j/k 翻页，r/s/d/a 秒级处理文章。</p>
+                </div>
+                <div class="feat">
+                    <h3>多源采集</h3>
+                    <p>HN / Reddit / V2EX API + 网页提取，实时获取 8 个高质量源内容。</p>
+                </div>
+                <div class="feat">
+                    <h3>LLM 增强</h3>
+                    <p>自动生成中文摘要、技术标签、质量评分（0-10）和语言检测。</p>
+                </div>
+                <div class="feat">
+                    <h3>智能策展</h3>
+                    <p>基于质量评分和阅读偏好，自动生成「今日必读」清单。</p>
+                </div>
+                <div class="feat">
+                    <h3>本地知识库</h3>
+                    <p>SQLite + FTS5 全文检索，所有数据本地存储，构建属于你的技术资产。</p>
+                </div>
+                <div class="feat">
+                    <h3>RAG 问答</h3>
+                    <p>基于本地知识库回答技术问题，自动标注引用来源，无需上传数据。</p>
+                </div>
+                <div class="feat">
+                    <h3>断舍离</h3>
+                    <p>批量归档、自动清理、语义去重、订阅健康度——保持收件箱整洁。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sources" class="section section-alt">
+        <div class="inner">
+            <h2 class="section-title">精选信息源</h2>
+            <p class="section-sub">内置高质量中英文技术源，一键同步到本地。</p>
+            <div class="sources">
+                <div class="source">Hacker News<span>API</span></div>
+                <div class="source">GitHub Blog<span>Reader</span></div>
+                <div class="source">Lobsters<span>HTML</span></div>
+                <div class="source">Reddit<span>JSON</span></div>
+                <div class="source">V2EX<span>API</span></div>
+                <div class="source">阮一峰<span>Reader</span></div>
+                <div class="source">InfoQ<span>爬虫</span></div>
+                <div class="source">Show HN<span>灵感</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="workflow" class="section">
+        <div class="inner">
+            <h2 class="section-title">工作流</h2>
+            <div class="steps">
+                <div class="step"><code>sync</code><p>同步到本地</p></div>
+                <span class="arrow">&rarr;</span>
+                <div class="step"><code>enrich</code><p>LLM 增强</p></div>
+                <span class="arrow">&rarr;</span>
+                <div class="step"><code>curate</code><p>智能策展</p></div>
+                <span class="arrow">&rarr;</span>
+                <div class="step"><code>inbox</code><p>TUI 浏览</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="start" class="section section-alt">
+        <div class="inner start-inner">
+            <h2 class="section-title">开始使用</h2>
+            <p class="section-sub">单二进制文件，无需依赖。支持 OpenAI 兼容接口和 Ollama。</p>
+            <div class="install">
+                <div class="install-tabs">
+                    <button class="tab active" data-os="mac">macOS</button>
+                    <button class="tab" data-os="linux">Linux</button>
+                    <button class="tab" data-os="windows">Windows</button>
+                </div>
+                <div class="install-cmd">
+                    <code id="install-command">curl -sSL https://get.ai-news-database.dev | bash</code>
+                    <button class="copy-btn" aria-label="复制安装命令">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                    </button>
+                </div>
+            </div>
+            <p class="start-note">无需账号 · 本地存储 · 数据可导出</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="inner">
+            <span>&copy; 2025 AI News Database · MIT License</span>
+            <a href="#">GitHub</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

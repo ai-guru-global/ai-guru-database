@@ -1,0 +1,75 @@
+name: 新建线索（L3）
+description: 为一个值得长期跟踪的产品/公司/技术新建时间线线索
+title: "[L3] 新线索："
+labels: ["线索投稿"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **L3 · 1 小时级贡献**。先读 [`docs/线索模板.md`](https://github.com/ai-guru-global/ai-guru-console/blob/main/docs/线索模板.md)。
+        线索是「持续追加的时间线」，不是一篇文章；至少要能给出 3 条可追溯证据。
+  - type: dropdown
+    id: topic
+    attributes:
+      label: 所属主题
+      options:
+        - 基础模型
+        - 智能体平台
+        - Agentic编码
+        - 多模态大模型
+        - 推理与基础设施
+        - 开源模型与生态
+        - 训练与数据
+        - 评测与基准
+        - 具身智能
+        - 世界模型
+        - 行业应用
+        - AI安全与对齐
+        - 开发者工具
+        - 语音与音频
+        - AI搜索与信息获取
+        - 商业与投融资
+        - 消费级AI应用
+        - 交付与组织
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: 线索名
+      description: 中文简称为主，专有名词保留英文，例：`Claude`、`MCP协议`
+    validations:
+      required: true
+  - type: input
+    id: aliases
+    attributes:
+      label: 别名 / 英文名
+      description: 逗号分隔，用于节点聚合与搜索
+  - type: textarea
+    id: positioning
+    attributes:
+      label: 一句话定位
+      description: 这条线索为什么值得长期跟踪
+    validations:
+      required: true
+  - type: input
+    id: roles
+    attributes:
+      label: 关键角色
+      description: 逗号分隔的公司/机构/人物
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 首批 3 条证据
+      description: 每条写「日期 · 标题 · URL · 一句话摘要」，优先官方一手源
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我已搜索仓库，确认没有重复线索
+          required: true
+        - label: 我理解「概述」只写事实，「分析」才写观点
+          required: true

@@ -48,6 +48,7 @@
 - [ElevenLabs](ElevenLabs.md) — 活跃
 - [OpenAI实时语音](OpenAI实时语音.md) — 活跃
 - [Suno](Suno.md) — 活跃
+- [腾讯音乐](腾讯音乐.md) — 活跃
 
 ## 价值流
 

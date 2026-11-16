@@ -45,7 +45,9 @@
 
 ## 本节点页面
 
+- [Decart](Decart.md) — 活跃
 - [NVIDIACosmos](NVIDIACosmos.md) — 活跃
+- [群核科技](群核科技.md) — 活跃
 
 ## 价值流
 

@@ -13,6 +13,8 @@
 - [Perplexity](Perplexity.md) — 活跃
 - [ChatGPT搜索](ChatGPT搜索.md) — 活跃
 - [GEO](GEO.md) — 活跃
+- [The Browser Company](The Browser Company.md) — 活跃（2026-11-11 新建：机构深度拆解补齐批次）
+- [秘塔科技](秘塔科技.md) — 活跃（2026-11-11 新建：机构深度拆解补齐批次）
 
 <!-- 新建线索后在此追加：- [线索名](线索名.md) — 状态 -->
 

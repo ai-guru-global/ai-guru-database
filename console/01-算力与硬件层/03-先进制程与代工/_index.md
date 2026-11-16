@@ -45,6 +45,9 @@
 
 ## 本节点页面
 
+- [Applied Materials](Applied Materials.md) — 活跃
+- [KLA](KLA.md) — 活跃
+- [中芯国际](中芯国际.md) — 活跃
 - [台积电与先进制程](台积电与先进制程.md) — 活跃
 
 ## 价值流

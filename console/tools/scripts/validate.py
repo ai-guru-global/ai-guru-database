@@ -75,7 +75,7 @@ def check_thread(path: Path, issues: list[str]) -> None:
         target = link.strip()
         if "<" in target or "/" not in target:
             continue  # 模板占位符或单名引用
-        if not (ROOT / "证据层" / target).with_suffix(".md").exists():
+        if not (ROOT / "证据层" / (target + ".md")).exists():
             issues.append(f"{rel}: 断链双链 [[{target}]]")
 
 

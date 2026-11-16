@@ -23,8 +23,8 @@ DB.chain = {
           { id: 'infer', name: '推理与性价比卡', def: '低精度、高吞吐路线（Ultrafast 类），推理成本曲线的硬件端。' },
           { id: 'rack', name: '机柜与互连方案', def: 'NVLink 机柜、整机柜交付：卖点从单卡转向系统级吞吐。' }
         ] },
-        { id: 'asic', name: '自研 ASIC 与 TPU', def: '云厂商与头部 lab 为特定 workload 自研的专用芯片，追求性价比与供应自主。', keywords: ['tpu', 'asic', '自研芯片', 'trainium', 'mtia', '定制芯片', '平头哥', '真武', 'ppu', '含光800', 't-head'], upstream: ['fab'], downstream: ['datacenter'], maturity: '爬坡期', why: '云厂商把推理成本曲线握回自己手里、对冲 GPU 供给风险的手段。', moat: '与自家 workload 和采购规模深度耦合，外部难以复制。', bottleneck: '软件生态（CUDA 迁移成本）与代工产能分配。', signals: ['TPU/Trainium 对外开放比例', '自研芯片对内部负载的替代率'], sub: [
-          { id: 'cloudasic', name: '云自研（TPU/Trainium/MTIA）', def: '头部云厂商的定制路线，成本优势随规模放大。' },
+        { id: 'asic', name: '自研 ASIC 与 TPU', def: '云厂商与头部 lab 为特定 workload 自研的专用芯片，追求性价比与供应自主。', keywords: ['tpu', 'asic', '自研芯片', 'trainium', 'mtia', '定制芯片', '平头哥', '真武', 'ppu', '含光800', 't-head'], upstream: ['fab'], downstream: ['datacenter'], maturity: '爬坡期', why: '云厂商把推理成本曲线握回自己手里、对冲 GPU 供给风险的手段。', moat: '与自家 workload 和采购规模深度耦合，外部难以复制。', bottleneck: '软件生态（CUDA 迁移成本）与代工产能分配。', signals: ['TPU/Trainium 对外开放比例', '自研芯片对内部负载的替代率', '真武 PPU 第三方基准与 V900 商用节奏'], sub: [
+          { id: 'cloudasic', name: '云自研（TPU/Trainium/MTIA/真武PPU）', def: '头部云厂商的定制路线，成本优势随规模放大；阿里真武 PPU 已实例化对外售卖（ACS）。' },
           { id: 'cnasic', name: '国产替代（昇腾等）', def: '供给自主驱动的第二条供给曲线，生态成熟度是差距所在。' }
         ] },
         { id: 'fab', name: '先进制程与代工', def: '芯片制造的物理上限：先进制程产能与先进封装是算力供给的硬约束。', keywords: ['台积电', '代工', '制程', '3nm', '2nm', '先进封装', 'cowos'], upstream: [], downstream: ['gpu', 'asic', 'memory'], maturity: '成熟期', why: '算力供给的物理上限：制程与封装产能决定全行业出货天花板。', moat: '十年量级的工艺积累与千亿级资本门槛。', bottleneck: '3nm/2nm 产能与 CoWoS 先进封装扩产节奏。', signals: ['台积电 AI 相关营收占比', '先进封装扩产与交期'] , sub: [

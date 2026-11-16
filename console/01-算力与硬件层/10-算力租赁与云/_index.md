@@ -45,7 +45,7 @@
 
 ## 本节点页面
 
-（叶子待挂）
+- [CoreWeave](CoreWeave.md) — 活跃
 
 ## 价值流
 

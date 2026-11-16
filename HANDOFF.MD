@@ -2,6 +2,24 @@
 
 > 供后续 Agent 会话接手时先读，避免重复踩坑。按最新在前追加。
 
+## 2026-11-12 · 机构拆解全面补齐批次（88 卡批量生产 + 收尾集成）
+
+- **批量卡时间线必须机械重排**：19 波 subagent 写的 88 张卡，「月内最新在上」纪律约六成违反（45 处月内乱序 + 2 处月间乱序）。修法：python 脚本按 `## 时间线` → `### YYYY-MM` → `- **` 条目三级切分重排（月-only 条目沉月末尾）。**第一版漏了 `reverse=True`，把原本正确的倒序排成正序、越修越糟（49→149 错）**——重排脚本必须先在 1 个文件上验证方向，且天然幂等可重跑。已全绿。
+- **validate.py 双链解析对点号线索名有存量 bug（已修）**：`with_suffix(".md")` 会把 `Resolve.ai`/`Shoreline.io` 的 `.ai`/`.io` 当后缀剥掉 → 误报断链。已改为 `target + ".md"` 追加式。以后公司名带点号（域名式命名）直接建卡即可。
+- **大批量挂叶后 OVERRIDES 要全量审查而非抽查**：88 张卡默认挂叶约三分之一被正文关键词吸走（美团→开源权重、BIS→GPU、CoreWeave→成本单位经济…）。先 `find 0* -name "*.md" -newer` 列全量挂点 → 人眼过一遍身份级错挂 → 批量登记 OVERRIDES（本批 +48 条，累计 62）→ 删旧叶重跑 `make tree`。抽样检查会漏。
+- **players.js note 批量重算脚本**：88 家 note 更新用 node 脚本跑 playerStats 口径（roles 含本名或别名精确匹配 clue.alias），基于 make console 后的 data.js；`src.split(old).join(neu)` 全局替换（JSON.stringify 做锚），别用 `p.note = ...` 后直接写回（会改内存不改盘）。
+- **限流中断恢复纪律再次生效**：两次 5 小时限流 + 一次 API 网络瞬断，均按「先 ls 盘点磁盘实际状态再补派」零重做（Rokid 报错前已写完、Duolingo 补派时才真缺）。API 瞬断（ENOTFOUND/EADDRNOTAVAIL）等 1-2 分钟重试即可。
+- **search 配额耗尽后的替代通道优先级**（本批 88 卡全程实战验证）：SEC EDGAR / HKEX 披露易 / 巨潮 / Federal Register 直连 > 公司官网 newsroom > GitHub API / arXiv > 东方财富接口 > 搜狗结果页。WebSearch 配额约一周窗口，大批量前先打满一轮测试配额水位。
+- 产物：187 线索（+88）/ 5 层 71 节点 / data.js 4.6MB / dataset v2026.11 / npm 187 clues 全绿；台账 `console/研判/2026-11-11-机构拆解全面补齐台账.md`（已标记完成）。
+
+## 2026-11-10 · console × wiki 联邦制启动（实体登记表 + 高网映射表）
+
+- **两库融合不走物理合并**：评估结论（`console/研判/2026-11-09-console与wiki语料融合评估.md`）是联邦制——骨架文件 `wiki/治理/实体登记表.md`（跨库实体互认 + SSOT 声明，准入纪律=只登记两边都有专页的实体）与 `wiki/治理/高网内容映射表.md`（高网三套 38 对知识点配对，归一候选 22 待 P2 逐对裁决）。**后续任何人想「合并/搬迁」两库内容前必须先读这两份文件**；新增跨库内容先查登记表定落点。
+- **表格内 `\|` 转义 wikilink：check_links.py 实测不误报**（2026-11-09 条目留的疑问已闭环）；自写校验脚本仍需 `.rstrip('\\')`。
+- **vault 外（console/）引用一律用反引号文字路径，不用 md 相对链接**：Obsidian 对 vault 外相对链接不可靠，且可避免链接校验器对 ../ 出库路径的未知行为；写完用 `(Path(文件).parent / 路径).resolve().exists()` 验证存在性。
+- **增量断链核对法**：改 wiki 前后各跑 `check_links.py --json f.json`，broken_list 按 source 归因——总数字会随并行会话漂移（本次 973→975→973，+2 是自己引用的未建文件，建完即平），只看绝对数会误判。
+- console 深潜库（01..05 树下）README 改动不影响 build_console/validate（只扫证据层），无需重跑 make console。
+
 ## 2026-11-09 · ai-guru-console 拆解台整体迁入 console/ 子项目
 
 - **迁移已完成并 commit（6fa98acb9，1160 文件）**：拆解台自 `ai-guru-console` 仓库全量迁入 `console/`，源项目清理按用户指令执行中。console 子项目**自包含**：`cd console && make console` 即可构建（构建脚本 ROOT=parents[2] 自适应新位置），`file://…/console/console/index.html` 直开。

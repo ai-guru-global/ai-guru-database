@@ -4,7 +4,7 @@ category: 12_架构基建/Alibaba_Cloud
 tags: [alibaba-cloud, ath, qwen, maas, ai-products]
 summary: 阿里 AI 产品资源全景：ATH 事业群组织、Qwen 模型家族、MaaS 平台、AI 原生应用矩阵、Token 商业化、算力基础设施。
 created: 2026-08-22
-updated: 2026-08-22
+updated: 2026-11-06
 tier: core
 sources: [aliyun.com, qianwenai.com, wukong.dingtalk.com]
 aliases: [阿里 AI 产品, AI 产品生态]
@@ -27,6 +27,8 @@ name_zh: "阿里 AI 产品生态"
 | [10_算力与基础设施](./10_算力与基础设施.md) | 灵骏智算、GPU ECS、ACK、CPFS、eRDMA | 基础设施工程师、SRE |
 | [11_平头哥_自研芯片与AI加速](./11_平头哥_自研芯片与AI加速.md) | 含光/倚天/玄铁/真武 PPU + SAIL 软件栈 | 芯片架构、硬件选型 |
 | [12_数据平台_与AI数据工程](./12_数据平台_与AI数据工程.md) | MaxCompute + DataWorks + Hologres + PAI-FeatureStore | 数据工程师、ML 工程师 |
+| [13_百炼深度/README](./13_百炼深度/README.md) | 百炼产品深度沉淀 25 页（基于 bl CLI v2.5.1 实测：计费/模型/微调部署/Agent 基建/MCP/可观测/面试） | 平台工程师、Agent 开发者、售前 |
+| [14_OpenTrek/README](./14_OpenTrek/README.md) | OpenTrek 产品深度沉淀 15 页（智能体工厂：两代演进/三范式/数字员工/AgentRuntime/知识库/训练调优/选型/面试） | 售前解决方案、私有化平台建设 |
 
 > 这 8 篇覆盖了"谁造模型→谁来卖→谁来用→怎么定价→在什么上跑→芯片自研→数据从哪来"的完整链路，面试时这就是你的产品知识弹药库。
 

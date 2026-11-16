@@ -47,16 +47,19 @@
 
 - [图像生成与编辑](图像生成与编辑.md) — 活跃
 - [Ollama](Ollama.md) — 活跃
+- [Apache软件基金会](Apache软件基金会.md) — 活跃
 - [DeepSeek](DeepSeek.md) — 活跃
 - [HuggingFace](HuggingFace.md) — 活跃
 - [Kimi](Kimi.md) — 活跃
 - [Llama](Llama.md) — 活跃
 - [MiniMax](MiniMax.md) — 活跃
 - [Mistral](Mistral.md) — 活跃
+- [OSI](OSI.md) — 活跃
 - [Qwen](Qwen.md) — 活跃
 - [ThinkingMachines](ThinkingMachines.md) — 活跃
 - [国产大模型群像](国产大模型群像.md) — 活跃
 - [谷歌Gemma](谷歌Gemma.md) — 活跃
+- [魔搭社区](魔搭社区.md) — 活跃
 - [Meta-AI](Meta-AI.md) — 活跃
 - [RLHF与后训练](RLHF与后训练.md) — 活跃
 

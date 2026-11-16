@@ -5,7 +5,7 @@ tags: [maas, bailian, qianwen-ai-platform, modelscope, pai, agent, model-market,
 summary: 阿里 MaaS 平台层全景：百炼 Model Studio 的完整功能体系（模型服务 / 应用构建 / CLI / 计费 / 管控）、千问AI平台（Agent Skills + CLI）、PAI 训练推理平台与 ModelScope 开源社区。
 tier: core
 created: 2026-08-21
-updated: 2026-08-24
+updated: 2026-11-06
 name_zh: "MaaS 平台"
 ---
 
@@ -380,6 +380,7 @@ ModelScope 承担阿里开源战略的社区角色：
 
 ## Related
 
+- [[12_架构基建/06_云厂商/Alibaba_Cloud/产品/13_百炼深度/README|百炼产品深度沉淀]] — 本页的逐域深潜（25 页：计费/模型/微调部署/Agent 基建/MCP/可观测/面试，基于 bl v2.5.1 实测）
 - [[../README|阿里云大模型产品全景]] — 四层产品地图总入口
 - [[06_Qwen模型家族_2026|Qwen 模型家族 2026]] — 平台上的"货"
 - [[08_AI原生应用矩阵|AI 原生应用矩阵]] — 平台之上的"车"
@@ -389,4 +390,4 @@ ModelScope 承担阿里开源战略的社区角色：
 
 ---
 
-*Last updated: 2026-08-24*
+*Last updated: 2026-11-06*

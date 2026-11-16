@@ -49,6 +49,7 @@
 - [Midjourney](Midjourney.md) — 活跃
 - [字节豆包](字节豆包.md) — 活跃
 - [NotebookLM](NotebookLM.md) — 活跃
+- [Getty Images](Getty Images.md) — 活跃
 
 ## 价值流
 

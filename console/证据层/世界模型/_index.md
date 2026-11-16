@@ -14,6 +14,8 @@
 - [WorldLabs](WorldLabs.md) — 活跃
 
 - [NVIDIACosmos](NVIDIACosmos.md) — 活跃
+- [Decart](Decart.md) — 活跃（2026-11-11 新建：机构深度拆解补齐批次）
+- [群核科技](群核科技.md) — 活跃（2026-11-11 新建：机构深度拆解补齐批次）
 
 <!-- 新建线索后在此追加：- [线索名](线索名.md) — 状态 -->
 

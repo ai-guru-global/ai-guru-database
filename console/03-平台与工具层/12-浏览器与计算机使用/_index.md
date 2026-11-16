@@ -45,7 +45,8 @@
 
 ## 本节点页面
 
-（叶子待挂）
+- [Browser Use](Browser Use.md) — 活跃
+- [Browserbase](Browserbase.md) — 活跃
 
 ## 价值流
 

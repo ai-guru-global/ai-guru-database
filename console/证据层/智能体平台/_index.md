@@ -16,6 +16,10 @@
 
 - [A2A协议](A2A协议.md) — 活跃
 - [Manus](Manus.md) — 活跃
+- [Browser Use](Browser Use.md) — 活跃（2026-11-11 新建：机构深度拆解补齐批次）
+- [Browserbase](Browserbase.md) — 活跃（2026-11-11 新建：机构深度拆解补齐批次）
+- [OpenRouter](OpenRouter.md) — 活跃（2026-11-11 新建：机构深度拆解补齐批次）
+- [UiPath](UiPath.md) — 活跃（2026-11-11 新建：机构深度拆解补齐批次）
 
 <!-- 新建线索后在此追加：- [线索名](线索名.md) — 状态 -->
 

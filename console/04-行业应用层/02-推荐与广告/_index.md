@@ -46,6 +46,9 @@ AI 最大现金流场景：平台与投放自动化最受益，代理与创意�
 ## 本节点页面
 
 - [AI与营销电商](AI与营销电商.md) — 活跃
+- [AppLovin](AppLovin.md) — 活跃
+- [AppsFlyer](AppsFlyer.md) — 活跃
+- [The Trade Desk](The Trade Desk.md) — 活跃
 
 ## 价值流
 

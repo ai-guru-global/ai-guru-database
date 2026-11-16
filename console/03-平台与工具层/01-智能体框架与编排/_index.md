@@ -48,6 +48,7 @@
 - [Agent框架](Agent框架.md) — 活跃
 - [MCP协议](MCP协议.md) — 活跃
 - [Manus](Manus.md) — 活跃
+- [UiPath](UiPath.md) — 活跃
 
 ## 价值流
 

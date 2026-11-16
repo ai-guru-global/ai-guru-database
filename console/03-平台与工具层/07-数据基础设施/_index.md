@@ -45,7 +45,8 @@ AI 的隐形地基：留存最好的软件品类，治理层是下一个价值�
 
 ## 本节点页面
 
-（叶子待挂）
+- [Snowflake](Snowflake.md) — 活跃
+- [Zilliz](Zilliz.md) — 活跃
 
 ## 价值流
 

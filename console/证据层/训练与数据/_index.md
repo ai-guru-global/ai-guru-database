@@ -15,6 +15,9 @@
 
 - [推理模型与测试时计算](推理模型与测试时计算.md) — 活跃
 - [ScaleAI与数据标注](ScaleAI与数据标注.md) — 活跃
+- [Common Crawl](Common Crawl.md) — 活跃（2026-11-11 新建：机构深度拆解补齐批次）
+- [Getty Images](Getty Images.md) — 活跃（2026-11-11 新建：机构深度拆解补齐批次）
+- [Invisible Technologies](Invisible Technologies.md) — 活跃（2026-11-11 新建：机构深度拆解补齐批次）
 
 <!-- 新建线索后在此追加：- [线索名](线索名.md) — 状态 -->
 

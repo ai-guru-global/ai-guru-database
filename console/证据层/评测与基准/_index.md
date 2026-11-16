@@ -14,6 +14,7 @@
 - [LMArena](LMArena.md) — 活跃
 - [ARC系列基准](ARC系列基准.md) — 活跃
 - [ArtificialAnalysis指数](ArtificialAnalysis指数.md) — 活跃
+- [MLCommons](MLCommons.md) — 活跃（2026-11-11 新建：机构深度拆解补齐批次）
 
 <!-- 新建线索后在此追加：- [线索名](线索名.md) — 状态 -->
 

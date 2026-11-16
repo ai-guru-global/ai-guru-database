@@ -45,6 +45,8 @@
 
 ## 本节点页面
 
+- [The Browser Company](The Browser Company.md) — 活跃
+- [秘塔科技](秘塔科技.md) — 活跃
 - [OpenAI融资与重组](OpenAI融资与重组.md) — 活跃
 - [ChatGPT产品](ChatGPT产品.md) — 活跃
 - [纽扣AI](纽扣AI.md) — 观察中

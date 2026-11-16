@@ -46,6 +46,8 @@
 ## 本节点页面
 
 - [AI监管政策](AI监管政策.md) — 活跃
+- [欧盟AI办公室](欧盟AI办公室.md) — 活跃
+- [美国商务部BIS](美国商务部BIS.md) — 活跃
 - [AI陪伴与CharacterAI](AI陪伴与CharacterAI.md) — 观察中
 
 ## 价值流

@@ -142,3 +142,9 @@ Thumbs.db
 # Empty release staging
 release_new/
 .code-up/rag-index/
+
+# P0（2026-11-17）：mkdocs 站点是构建产物，取消跟踪、由 CI 构建（deploy-pages.yml）
+code/前端应用/public/mkdocs/
+
+# P1：portal 阅读分片本地生成（make portal）；index.json 与 golden.json 入库
+design/统一入口/data/pages/

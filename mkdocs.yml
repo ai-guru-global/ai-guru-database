@@ -1,0 +1,107 @@
+# P0 恢复（2026-11-17）：mkdocs 构建链重建。
+# 历史：旧配置（c51fa2757 删除）基于已废弃的 mkdocs-docs 英文目录中转；
+# 现直接以 wiki/ 为 docs_dir，目录名与前端 docMap 的 filePath（中文路径）对齐，
+# /mkdocs/<filePath>/ 与 code/前端应用 的跳转一一对应。
+# 构建：.venv/bin/mkdocs build（前端 pnpm build:mkdocs 同源）。
+# nav 只挂各章 README 落地页，其余页面照常构建、靠站内搜索触达。
+site_name: AI Guru Database
+site_description: CNCF-level knowledge base for AI documentation
+site_author: AI Guru Team
+site_url: https://ai-guru-global.github.io/ai-guru-database/mkdocs/
+
+docs_dir: wiki
+site_dir: code/前端应用/public/mkdocs
+
+exclude_docs: |
+  index.md
+  README_EN.md
+  _ppt_workspace/**
+  治理/**
+  原始/**
+  来源/**
+  归档/**
+  docs/**
+  GTM/**
+  reports/**
+  assistant/**
+  **/node_modules/**
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+plugins:
+  - search:
+      lang:
+        - en
+        - zh
+
+markdown_extensions:
+  - tables
+  - attr_list
+  - md_in_html
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.details
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ai-guru-global/ai-guru-database
+
+nav:
+  - 首页: README.md
+  - 00_入门: 00_入门/README.md
+  - 01_数学基础: 01_数学基础/README.md
+  - 02_机器学习: 02_机器学习/README.md
+  - 03_深度学习: 03_深度学习/README.md
+  - 04_计算机视觉: 04_计算机视觉/README.md
+  - 05_大模型: 05_大模型/README.md
+  - 06_强化学习: 06_强化学习/README.md
+  - 07_模型训练: 07_模型训练/README.md
+  - 08_模型评估: 08_模型评估/README.md
+  - 09_测试: 09_测试/README.md
+  - 10_部署推理: 10_部署推理/README.md
+  - 11_模型运维: 11_模型运维/README.md
+  - 12_架构基建: 12_架构基建/README.md
+  - 13_运维: 13_运维/README.md
+  - 14_RAG系统: 14_RAG系统/README.md
+  - 15_智能体: 15_智能体/README.md
+  - 16_编程: 16_编程/README.md
+  - 17_伦理安全: 17_伦理安全/README.md
+  - 18_行业应用: 18_行业应用/README.md
+  - 19_业界观点: 19_业界观点/README.md
+  - 20_论文精读: 20_论文精读/README.md
+  - 21_面试岗位: 21_面试岗位/README.md
+  - 22-FDE: 22-FDE/README.md
+  - 90_学习: 90_学习/README.md
+  - 94_可视化: 94_可视化/README.md
+  - AI原生企业: AI原生企业/README.md
+  - DeepSeek 研究: DeepSeek 研究/README.md
+  - 机构深度研究: 机构深度研究/README.md
+  - 概念: 概念/README.md

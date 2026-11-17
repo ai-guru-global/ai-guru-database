@@ -107,6 +107,6 @@ ElevenLabs 成立于 2022 年，由前 Palantir 工程师 Piotr Dąbkowski 与�
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/语音与音频/ElevenLabs.md)
-- [语音与音频/Suno](../../../证据层/语音与音频/Suno.md)
-- [消费级AI应用/ChatGPT产品](../../../证据层/消费级AI应用/ChatGPT产品.md)
+- [证据时间线（原始线索卡）](../../证据层/语音与音频/ElevenLabs.md)
+- [语音与音频/Suno](../../证据层/语音与音频/Suno.md)
+- [消费级AI应用/ChatGPT产品](../../证据层/消费级AI应用/ChatGPT产品.md)

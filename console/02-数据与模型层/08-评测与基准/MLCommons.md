@@ -45,7 +45,7 @@
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/评测与基准/MLCommons.md)
-- [评测与基准/LMArena](../../../证据层/评测与基准/LMArena.md)
-- [评测与基准/ArtificialAnalysis指数](../../../证据层/评测与基准/ArtificialAnalysis指数.md)
-- [推理与基础设施/AI芯片竞争](../../../证据层/推理与基础设施/AI芯片竞争.md)
+- [证据时间线（原始线索卡）](../../证据层/评测与基准/MLCommons.md)
+- [评测与基准/LMArena](../../证据层/评测与基准/LMArena.md)
+- [评测与基准/ArtificialAnalysis指数](../../证据层/评测与基准/ArtificialAnalysis指数.md)
+- [推理与基础设施/AI芯片竞争](../../证据层/推理与基础设施/AI芯片竞争.md)

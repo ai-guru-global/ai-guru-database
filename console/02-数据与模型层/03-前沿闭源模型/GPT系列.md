@@ -160,8 +160,8 @@ GPT（Generative Pre-trained Transformer）系列是 OpenAI 的核心模型资�
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/基础模型/GPT系列.md)
-- [基础模型/Claude](../../../证据层/基础模型/Claude.md)
-- [基础模型/Gemini](../../../证据层/基础模型/Gemini.md)
-- [消费级AI应用/ChatGPT产品](../../../证据层/消费级AI应用/ChatGPT产品.md)
-- [商业与投融资/OpenAI融资与重组](../../../证据层/商业与投融资/OpenAI融资与重组.md)
+- [证据时间线（原始线索卡）](../../证据层/基础模型/GPT系列.md)
+- [基础模型/Claude](../../证据层/基础模型/Claude.md)
+- [基础模型/Gemini](../../证据层/基础模型/Gemini.md)
+- [消费级AI应用/ChatGPT产品](../../证据层/消费级AI应用/ChatGPT产品.md)
+- [商业与投融资/OpenAI融资与重组](../../证据层/商业与投融资/OpenAI融资与重组.md)

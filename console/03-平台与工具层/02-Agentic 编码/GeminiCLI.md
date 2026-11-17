@@ -45,7 +45,7 @@ Gemini CLI 是 Google 2025 年 6 月发布的开源命令行编码智能体（Ap
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/Agentic编码/GeminiCLI.md)
-- [Agentic编码/ClaudeCode](../../../证据层/Agentic编码/ClaudeCode.md)
-- [Agentic编码/Codex](../../../证据层/Agentic编码/Codex.md)
-- [基础模型/Gemini](../../../证据层/基础模型/Gemini.md)
+- [证据时间线（原始线索卡）](../../证据层/Agentic编码/GeminiCLI.md)
+- [Agentic编码/ClaudeCode](../../证据层/Agentic编码/ClaudeCode.md)
+- [Agentic编码/Codex](../../证据层/Agentic编码/Codex.md)
+- [基础模型/Gemini](../../证据层/基础模型/Gemini.md)

@@ -54,7 +54,7 @@ Gemini Robotics 是 DeepMind 将 Gemini 多模态模型能力迁移到机器人�
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/具身智能/GeminiRobotics.md)
-- [具身智能/Figure](../../../证据层/具身智能/Figure.md)
-- [具身智能/特斯拉Optimus](../../../证据层/具身智能/特斯拉Optimus.md)
-- [世界模型/Genie](../../../证据层/世界模型/Genie.md)
+- [证据时间线（原始线索卡）](../../证据层/具身智能/GeminiRobotics.md)
+- [具身智能/Figure](../../证据层/具身智能/Figure.md)
+- [具身智能/特斯拉Optimus](../../证据层/具身智能/特斯拉Optimus.md)
+- [世界模型/Genie](../../证据层/世界模型/Genie.md)

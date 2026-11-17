@@ -96,7 +96,7 @@ LMArena（原 Chatbot Arena）由 UC Berkeley/LMSYS 于 2023 年 5 月推出：�
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/评测与基准/LMArena.md)
-- [评测与基准/SWE-bench](../../../证据层/评测与基准/SWE-bench.md)
-- [开源模型与生态/Llama](../../../证据层/开源模型与生态/Llama.md)
-- [基础模型/Gemini](../../../证据层/基础模型/Gemini.md)
+- [证据时间线（原始线索卡）](../../证据层/评测与基准/LMArena.md)
+- [评测与基准/SWE-bench](../../证据层/评测与基准/SWE-bench.md)
+- [开源模型与生态/Llama](../../证据层/开源模型与生态/Llama.md)
+- [基础模型/Gemini](../../证据层/基础模型/Gemini.md)

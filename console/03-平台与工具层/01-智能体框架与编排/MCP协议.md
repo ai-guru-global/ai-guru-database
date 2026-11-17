@@ -83,7 +83,7 @@ Model Context Protocol（MCP）是 Anthropic 于 2024 年 11 月开源的开放�
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/智能体平台/MCP协议.md)
-- [智能体平台/ClaudeAgentSDK](../../../证据层/智能体平台/ClaudeAgentSDK.md)
-- [Agentic编码/ClaudeCode](../../../证据层/Agentic编码/ClaudeCode.md)
-- [开发者工具/GitHubCopilot](../../../证据层/开发者工具/GitHubCopilot.md)
+- [证据时间线（原始线索卡）](../../证据层/智能体平台/MCP协议.md)
+- [智能体平台/ClaudeAgentSDK](../../证据层/智能体平台/ClaudeAgentSDK.md)
+- [Agentic编码/ClaudeCode](../../证据层/Agentic编码/ClaudeCode.md)
+- [开发者工具/GitHubCopilot](../../证据层/开发者工具/GitHubCopilot.md)

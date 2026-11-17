@@ -48,9 +48,9 @@ ARC 系列由前 Google 研究员、《Python 深度学习》作者 François Ch
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/评测与基准/ARC系列基准.md)
-- [评测与基准/SWE-bench](../../../证据层/评测与基准/SWE-bench.md)
-- [评测与基准/LMArena](../../../证据层/评测与基准/LMArena.md)
-- [评测与基准/ArtificialAnalysis指数](../../../证据层/评测与基准/ArtificialAnalysis指数.md)
-- [基础模型/GPT系列](../../../证据层/基础模型/GPT系列.md)
-- [基础模型/Gemini](../../../证据层/基础模型/Gemini.md)
+- [证据时间线（原始线索卡）](../../证据层/评测与基准/ARC系列基准.md)
+- [评测与基准/SWE-bench](../../证据层/评测与基准/SWE-bench.md)
+- [评测与基准/LMArena](../../证据层/评测与基准/LMArena.md)
+- [评测与基准/ArtificialAnalysis指数](../../证据层/评测与基准/ArtificialAnalysis指数.md)
+- [基础模型/GPT系列](../../证据层/基础模型/GPT系列.md)
+- [基础模型/Gemini](../../证据层/基础模型/Gemini.md)

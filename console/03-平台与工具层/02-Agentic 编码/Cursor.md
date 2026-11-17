@@ -130,7 +130,7 @@ Cursor 是 Anysphere 公司开发的 AI 原生代码编辑器（VS Code 分叉�
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/Agentic编码/Cursor.md)
-- [Agentic编码/ClaudeCode](../../../证据层/Agentic编码/ClaudeCode.md)
-- [开发者工具/GitHubCopilot](../../../证据层/开发者工具/GitHubCopilot.md)
-- [商业与投融资/AI人才与并购潮](../../../证据层/商业与投融资/AI人才与并购潮.md)
+- [证据时间线（原始线索卡）](../../证据层/Agentic编码/Cursor.md)
+- [Agentic编码/ClaudeCode](../../证据层/Agentic编码/ClaudeCode.md)
+- [开发者工具/GitHubCopilot](../../证据层/开发者工具/GitHubCopilot.md)
+- [商业与投融资/AI人才与并购潮](../../证据层/商业与投融资/AI人才与并购潮.md)

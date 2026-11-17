@@ -58,7 +58,7 @@ NotebookLM 前身 Project Tailwind，2023 年 12 月更名发布，核心形态�
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/消费级AI应用/NotebookLM.md)
-- [基础模型/Gemini](../../../证据层/基础模型/Gemini.md)
-- [消费级AI应用/ChatGPT产品](../../../证据层/消费级AI应用/ChatGPT产品.md)
-- [语音与音频/Suno](../../../证据层/语音与音频/Suno.md)
+- [证据时间线（原始线索卡）](../../证据层/消费级AI应用/NotebookLM.md)
+- [基础模型/Gemini](../../证据层/基础模型/Gemini.md)
+- [消费级AI应用/ChatGPT产品](../../证据层/消费级AI应用/ChatGPT产品.md)
+- [语音与音频/Suno](../../证据层/语音与音频/Suno.md)

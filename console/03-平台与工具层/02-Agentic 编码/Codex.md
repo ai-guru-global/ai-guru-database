@@ -65,7 +65,7 @@ Codex 最初是 OpenAI 2021 年推出的代码生成模型（code-davinci 系列
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/Agentic编码/Codex.md)
-- [基础模型/GPT系列](../../../证据层/基础模型/GPT系列.md)
-- [Agentic编码/ClaudeCode](../../../证据层/Agentic编码/ClaudeCode.md)
-- [开发者工具/GitHubCopilot](../../../证据层/开发者工具/GitHubCopilot.md)
+- [证据时间线（原始线索卡）](../../证据层/Agentic编码/Codex.md)
+- [基础模型/GPT系列](../../证据层/基础模型/GPT系列.md)
+- [Agentic编码/ClaudeCode](../../证据层/Agentic编码/ClaudeCode.md)
+- [开发者工具/GitHubCopilot](../../证据层/开发者工具/GitHubCopilot.md)

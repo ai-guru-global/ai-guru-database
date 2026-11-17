@@ -79,7 +79,7 @@ Manus 由连续创业者肖弘的蝴蝶效应（Butterfly Effect）团队打造�
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/智能体平台/Manus.md)
-- [智能体平台/Agent框架](../../../证据层/智能体平台/Agent框架.md)
-- [Agentic编码/ClaudeCode](../../../证据层/Agentic编码/ClaudeCode.md)
-- [商业与投融资/AI人才与并购潮](../../../证据层/商业与投融资/AI人才与并购潮.md)
+- [证据时间线（原始线索卡）](../../证据层/智能体平台/Manus.md)
+- [智能体平台/Agent框架](../../证据层/智能体平台/Agent框架.md)
+- [Agentic编码/ClaudeCode](../../证据层/Agentic编码/ClaudeCode.md)
+- [商业与投融资/AI人才与并购潮](../../证据层/商业与投融资/AI人才与并购潮.md)

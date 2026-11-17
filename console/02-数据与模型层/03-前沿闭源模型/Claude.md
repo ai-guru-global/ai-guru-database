@@ -141,8 +141,8 @@ Anthropic 以「宪法 AI（Constitutional AI）」等对齐方法著称，其�
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/基础模型/Claude.md)
-- [基础模型/GPT系列](../../../证据层/基础模型/GPT系列.md)
-- [基础模型/Gemini](../../../证据层/基础模型/Gemini.md)
-- [Agentic编码/ClaudeCode](../../../证据层/Agentic编码/ClaudeCode.md)
-- [AI安全与对齐/对齐与可解释性研究](../../../证据层/AI安全与对齐/对齐与可解释性研究.md)
+- [证据时间线（原始线索卡）](../../证据层/基础模型/Claude.md)
+- [基础模型/GPT系列](../../证据层/基础模型/GPT系列.md)
+- [基础模型/Gemini](../../证据层/基础模型/Gemini.md)
+- [Agentic编码/ClaudeCode](../../证据层/Agentic编码/ClaudeCode.md)
+- [AI安全与对齐/对齐与可解释性研究](../../证据层/AI安全与对齐/对齐与可解释性研究.md)

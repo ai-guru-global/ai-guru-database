@@ -187,9 +187,9 @@ def node_dir_name(idx: int, node: dict) -> str:
 
 
 def leaf_md(clue: dict, layer_dir: str, node_dir: str) -> str:
-    src_rel = "../../../证据层/" + clue["src"].relative_to(EVID).as_posix()
+    src_rel = "../../证据层/" + clue["src"].relative_to(EVID).as_posix()
     rel = "\n".join(
-        f"- [{t}](../../../证据层/{t.split('/')[0]}/{t.split('/', 1)[1]}.md)" for t in clue["rel"]
+        f"- [{t}](../../证据层/{t.split('/')[0]}/{t.split('/', 1)[1]}.md)" for t in clue["rel"]
     )
     anchors = "\n".join(
         f"- **{d}** · {t}" for d, t in clue["anchors"]

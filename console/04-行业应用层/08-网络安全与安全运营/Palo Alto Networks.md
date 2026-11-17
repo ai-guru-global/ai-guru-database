@@ -43,7 +43,7 @@
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/AI安全与对齐/Palo Alto Networks.md)
-- [AI安全与对齐/Wiz](../../../证据层/AI安全与对齐/Wiz.md)
-- [AI安全与对齐/智能体安全与攻防](../../../证据层/AI安全与对齐/智能体安全与攻防.md)
-- [AI安全与对齐/Robust Intelligence](../../../证据层/AI安全与对齐/Robust Intelligence.md)
+- [证据时间线（原始线索卡）](../../证据层/AI安全与对齐/Palo Alto Networks.md)
+- [AI安全与对齐/Wiz](../../证据层/AI安全与对齐/Wiz.md)
+- [AI安全与对齐/智能体安全与攻防](../../证据层/AI安全与对齐/智能体安全与攻防.md)
+- [AI安全与对齐/Robust Intelligence](../../证据层/AI安全与对齐/Robust Intelligence.md)

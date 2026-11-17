@@ -76,7 +76,7 @@ Genie 是 Google DeepMind 的「生成式交互环境（Generative Interactive E
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/世界模型/Genie.md)
-- [世界模型/WorldLabs](../../../证据层/世界模型/WorldLabs.md)
-- [多模态大模型/Sora](../../../证据层/多模态大模型/Sora.md)
-- [具身智能/Figure](../../../证据层/具身智能/Figure.md)
+- [证据时间线（原始线索卡）](../../证据层/世界模型/Genie.md)
+- [世界模型/WorldLabs](../../证据层/世界模型/WorldLabs.md)
+- [多模态大模型/Sora](../../证据层/多模态大模型/Sora.md)
+- [具身智能/Figure](../../证据层/具身智能/Figure.md)

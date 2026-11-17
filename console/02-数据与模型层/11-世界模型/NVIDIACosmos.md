@@ -63,8 +63,8 @@ Cosmos 是 NVIDIA 2025 年 1 月 CES 发布的世界基础模型（World Foundat
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/世界模型/NVIDIACosmos.md)
-- [世界模型/Genie](../../../证据层/世界模型/Genie.md)
-- [世界模型/WorldLabs](../../../证据层/世界模型/WorldLabs.md)
-- [具身智能/GeminiRobotics](../../../证据层/具身智能/GeminiRobotics.md)
-- [多模态大模型/视频生成竞赛](../../../证据层/多模态大模型/视频生成竞赛.md)
+- [证据时间线（原始线索卡）](../../证据层/世界模型/NVIDIACosmos.md)
+- [世界模型/Genie](../../证据层/世界模型/Genie.md)
+- [世界模型/WorldLabs](../../证据层/世界模型/WorldLabs.md)
+- [具身智能/GeminiRobotics](../../证据层/具身智能/GeminiRobotics.md)
+- [多模态大模型/视频生成竞赛](../../证据层/多模态大模型/视频生成竞赛.md)

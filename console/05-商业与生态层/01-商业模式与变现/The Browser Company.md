@@ -45,8 +45,8 @@
 
 ## 下钻
 
-- [证据时间线（原始线索卡）](../../../证据层/AI搜索与信息获取/The Browser Company.md)
-- [AI搜索与信息获取/Perplexity](../../../证据层/AI搜索与信息获取/Perplexity.md)
-- [AI搜索与信息获取/ChatGPT搜索](../../../证据层/AI搜索与信息获取/ChatGPT搜索.md)
-- [消费级AI应用/ChatGPT产品](../../../证据层/消费级AI应用/ChatGPT产品.md)
-- [商业与投融资/AI人才与并购潮](../../../证据层/商业与投融资/AI人才与并购潮.md)
+- [证据时间线（原始线索卡）](../../证据层/AI搜索与信息获取/The Browser Company.md)
+- [AI搜索与信息获取/Perplexity](../../证据层/AI搜索与信息获取/Perplexity.md)
+- [AI搜索与信息获取/ChatGPT搜索](../../证据层/AI搜索与信息获取/ChatGPT搜索.md)
+- [消费级AI应用/ChatGPT产品](../../证据层/消费级AI应用/ChatGPT产品.md)
+- [商业与投融资/AI人才与并购潮](../../证据层/商业与投融资/AI人才与并购潮.md)

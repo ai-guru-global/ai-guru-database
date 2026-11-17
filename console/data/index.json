@@ -2,7 +2,7 @@
   "name": "AI GURU Industry Graph",
   "nameZh": "AI GURU 工作台 · AI 行业坐标系",
   "version": "2026.11",
-  "asOf": "2026-11-11",
+  "asOf": "2026-11-16",
   "license": {
     "data": "CC BY-SA 4.0",
     "code": "MIT",
@@ -15,7 +15,7 @@
     "subNodes": 213,
     "topics": 18,
     "clues": 187,
-    "events": 169,
+    "events": 170,
     "verify": 154,
     "models": 14,
     "players": 145,

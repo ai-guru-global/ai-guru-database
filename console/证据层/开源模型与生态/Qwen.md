@@ -4,7 +4,7 @@
 别名: [通义千问, Qwen, Qwen3, Qwen-Coder]
 状态: 活跃
 创建: 2026-08-03
-更新: 2026-09-04
+更新: 2026-11-16
 关键角色: [阿里巴巴, 通义实验室]
 ---
 
@@ -17,6 +17,11 @@
 Qwen（通义千问）是阿里巴巴的大模型系列，覆盖通用、Coder、VL（视觉）、数学等多条线。2024 年起 Qwen2/2.5 系列以 Apache 2.0 开源，迅速成为 Hugging Face 上下载量最大的中国模型族；2025 年 Qwen3 引入「混合推理」（Hybrid Thinking）。
 
 2026 年 Qwen 进入「Agentic AI era」定位，迭代速度进一步加快（Qwen3.5 → 3.5-Omni → 3.6 → 3.7-Max → Qwen4 Coder → 3.8），并横向扩张至全模态、具身智能（VLA、Robot）与图像生成，旗舰闭源 Max 系列与开源系列双线并进；7 月国行 Apple 智能确认集成千问模型。该线索追踪 Qwen 的版本演进与开源生态影响。
+
+### 2026-11
+
+- **2026-11-16** · [Qwen 发布 Qwen4-Max：2.4T 主干、百万上下文与长程智能体能力](https://qwen.ai/blog?id=qwen4-max)
+  Qwen4 系列首款旗舰闭源模型：2.4T 主干参数、每 token 激活 71B、328B N-gram Embedding，原生视觉 + 1M 上下文。架构升级为 GDN+QSA、Gated Residual、N-gram Embedding 三件套，2.4T 预训练全程无 loss spike。官方口径：Work360 单任务均价 26.58 → 11.16 元（-58%），Terminal-Bench 4.0 token 消耗降约 48%；API 定价输入 $1.5/M、输出 $4.5/M、隐式缓存降 70%。内置 Live Delivery 持续交付并开源 Qwen-Live-Delivery-Plugin；官方预告小尺寸 Qwen4 模型将陆续开放权重（[官方 X](https://x.com/Alibaba_Qwen/status/2122148127520289151)、[IT之家/凤凰网](https://tech.ifeng.com/c/8y5w0vc9KsC)、快科技交叉印证）。专题拆解见 [Qwen4-Max 学习页](../../02-数据与模型层/03-前沿闭源模型/Qwen4-Max.md)。
 
 ### 2026-09
 

@@ -37,6 +37,7 @@ name_en: "Agentic Infra"
 - [[15_智能体/20_Agentic_Infra/07_AgentScope_Runtime_生产部署实战|AgentScope Runtime 生产部署实战]]
 - [[15_智能体/20_Agentic_Infra/08_Qwen_Agent_vs_AgentScope_Runtime|Qwen-Agent vs agentscope-runtime 对比]]
 - [[15_智能体/20_Agentic_Infra/09_Sandbox_隔离技术与沙箱平台选型|Sandbox 隔离技术与沙箱平台选型（OpenSandbox 深度解析）]]
+- [[15_智能体/20_Agentic_Infra/10_AI_Agent_K8s_Startups_2026|AI Infra / Agent Infra / K8s 赛道创业公司拆解 2026]]
 - [[15_智能体/20_Agentic_Infra/README|README]]
 
 ## 学习路径建议

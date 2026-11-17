@@ -20,6 +20,8 @@ name_en: "Agent Applications"
 | [[15_智能体/17_Agent应用/01_Computer_Use_Agent|Computer Use Agents (桌面自动化/RPA)]] | Computer Use Agent 完整技术体系：屏幕理解、GUI 操作、Claude Computer Use/OpenAI Operator/Ant... |
 | [[15_智能体/17_Agent应用/02_Deep_Research_Agent|Deep Research Agent 深度研究智能体]] | Deep Research 研究循环：多轮搜索→交叉验证→长文综合；2026 产品格局（OpenAI/Gemini/Perplexity/Tongyi DeepResearch）、训练三阶段演进、与 RAG 边界、面试快问快答 |
 | [[15_智能体/17_Agent应用/03_Voice_Agent|语音 Agent (Voice Agents)]] | 语音 Agent 完整技术体系：实时对话架构、ASR/TTS 管线、GPT-4o 语音模式、开源方案（Whisper/Piper/F5-TTS）、延迟优化... |
+| [[15_智能体/17_Agent应用/04_AI_Office_Agent_2026|AI 办公 Agent 赛道拆解 2026]] | 2026 办公智能体赛道全景：腾讯 WorkBuddy / 阿里千问办公 / 字节豆包工作三强拆解（出身、生态绑定、易观与爱分析双口径流量格局）、百度/金山/商汤第二梯队、三个竞争回合判读 |
+| [[15_智能体/17_Agent应用/05_Agent_Startups_2026|Agent 赛道创业公司拆解 2026]] | 2026 Agent 创业资本全景：轮次变少单笔变大（122 轮 79.5 亿美元、中位数 3,000 万美元）、四层玩家（Manus/Genspark/Cursor/Cognition/Sierra 等）代表公司与估值、中国梯队三条路径与退出通道 |
 
 ## Related
 

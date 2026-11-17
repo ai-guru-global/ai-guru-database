@@ -1,0 +1,31 @@
+[
+ {
+  "scope": "app",
+  "shape": "app screen",
+  "theme": "Console",
+  "axes": "dark/grotesk-sans/chromatic-amber",
+  "hero": null,
+  "nav": "topbar wordmark + counts, left unified tree (five layers + four surface entries)",
+  "footer": "status bar: dataset v2026.11, asOf, check counts",
+  "imagery": "screenshots 4 (capture.mjs)",
+  "photos": [],
+  "entry": "design/统一入口/index.html",
+  "fingerprint": {
+   "genre": "modern-minimal",
+   "tone": "austere",
+   "composition": "search-first table with preview tabs",
+   "chrome": "tree sidebar"
+  },
+  "sections": [
+   "全库检索 block",
+   "跨面检索结果表",
+   "四个面预览 tabs",
+   "status bar"
+  ],
+  "signature": "跨面检索结果表（Qwen 查询，5 行命中覆盖 4 面，真实路径列）",
+  "waived": [],
+  "prompt": "merge four web surfaces of ai-guru-database into one page; design draft first",
+  "date": "2026-11-17",
+  "mode": "build"
+ }
+]

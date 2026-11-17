@@ -1,0 +1,28 @@
+{
+  "project": "ai-guru-database",
+  "date": "2026-11-17",
+  "designSystem": {
+    "found": true,
+    "path": "console/console/styles.css:1-14",
+    "note": "AI GURU 工作台白底黑字研究台视觉语言：paper/ink/navy/gold tokens，衬线标题+等宽表格数字，高密度机构风",
+    "preserved": true
+  },
+  "surfaces": [
+    { "name": "console静态发布站", "path": "console/site", "pages": 93 },
+    { "name": "拆解台SPA", "path": "console/console/index.html", "routes": "32视图/99页" },
+    { "name": "wiki前端应用", "path": "code/前端应用/src/App.tsx:19-37", "routes": 16 },
+    { "name": "mkdocs文档站", "path": "code/前端应用/public/mkdocs", "pages": 459 }
+  ],
+  "lockedSystem": null,
+  "brandSpec": null,
+  "togetherApiKey": false,
+  "genre": "modern-minimal",
+  "scope": "app-screen",
+  "introduced": "单一入口页设计稿（全新文件，不动现有内容与路由）",
+  "answers": {
+    "material": "真实截图 + 真实数据",
+    "audience": "作者本人（研究工作台）",
+    "use": "检索 + 跨面导航",
+    "tone": "austere"
+  }
+}

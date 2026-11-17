@@ -1,7 +1,7 @@
 # Root Makefile — forwards to tools/cmd
 # 内容库为本仓库主体；Go 工具在 tools/cmd 下自包含维护。
 
-.PHONY: build run test test-short test-coverage clean install fmt vet lint lint-fix security quality release mod tree console dataset dataset-check pages pages-check issues issues-publish mcp-test npm-test help
+.PHONY: build run test test-short test-coverage clean install fmt vet lint lint-fix security quality release mod tree console dataset dataset-check pages pages-check portal portal-check issues issues-publish mcp-test npm-test help
 
 # 行业分层目录树：01..05 五层目录 + 节点学习页 + 叶子（_index 重新生成；叶子已存在跳过）
 tree:
@@ -36,6 +36,16 @@ issues-publish:
 # 静态站内部链接检查
 pages-check:
 	python3 tools/scripts/check_links.py
+
+# P1 统一入口数据：跨面检索索引 + md 阅读分片（产物 ../design/统一入口/data/）
+VENV_PY := $(wildcard ../.venv/bin/python)
+PY := $(if $(VENV_PY),../.venv/bin/python,python3)
+
+portal:
+	$(PY) tools/scripts/build_portal.py
+
+portal-check:
+	$(PY) tools/scripts/build_portal.py --check
 
 # MCP server 冒烟测试（initialize / tools/list / tools/call）
 mcp-test:

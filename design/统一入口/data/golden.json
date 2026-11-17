@@ -1,0 +1,60 @@
+[
+ {
+  "q": "Qwen4-Max",
+  "must_any": [
+   "console/02-数据与模型层/03-前沿闭源模型/Qwen4-Max.md"
+  ]
+ },
+ {
+  "q": "Qwen",
+  "must_any": [
+   "console/证据层/开源模型与生态/Qwen.md"
+  ]
+ },
+ {
+  "q": "涂鸦智能",
+  "must_any": [
+   "机构深度研究/AIoT平台/涂鸦智能/README.md"
+  ]
+ },
+ {
+  "q": "MCP协议",
+  "must_any": [
+   "console/证据层/智能体平台/MCP协议.md"
+  ]
+ },
+ {
+  "q": "FDE",
+  "must_any": [
+   "22-FDE/01_FDE基础/01_FDE概述与定义.md",
+   "console/05-商业与生态层/05-交付与实施（FDE）/FDE前沿部署工程师.md"
+  ]
+ },
+ {
+  "q": "大事记",
+  "must_any": [
+   "console/_2026大事记.md"
+  ]
+ },
+ {
+  "q": "Manus",
+  "must_any": [
+   "console/data/players.json#player/manus",
+   "console/03-平台与工具层/01-智能体框架与编排/Manus.md"
+  ]
+ },
+ {
+  "q": "GPT-6 Astra",
+  "must_any": [
+   "console/data/models.json#model/gpt-6-astra"
+  ]
+ },
+ {
+  "q": "RAG系统",
+  "any_p_contains": "14_RAG系统/"
+ },
+ {
+  "q": "多模态模型",
+  "any_p_contains": "09_多模态模型"
+ }
+]

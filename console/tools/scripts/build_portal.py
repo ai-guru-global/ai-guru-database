@@ -38,10 +38,16 @@ WIKI = REPO / "wiki"
 CONSOLE = REPO / "console"
 DOCMAP = REPO / "code/前端应用/src/data/docMap.ts"
 
-# 与 mkdocs.yml 的 exclude_docs 保持一致：门户只索引“发布面”内容
+# 与 mkdocs.yml 的 exclude_docs 保持一致：门户只索引“发布面”内容。
+# 2026-11 目录重组后排除项是“路径”而非顶层目录名（顶层旧名保留作回退）：
+#   资料与归档/{来源,docs,reports,assistant}、专题研究/GTM
 WIKI_EXCLUDE_DIRS = {
     "治理", "原始", "来源", "归档", "docs", "GTM", "reports", "assistant",
 }
+WIKI_EXCLUDE_SUBDIRS = (
+    "资料与归档/来源", "资料与归档/docs", "资料与归档/reports",
+    "资料与归档/assistant", "专题研究/GTM",
+)
 WIKI_EXCLUDE_FILES = {"index.md", "README_EN.md"}
 
 FM_RE = re.compile(r"\A---\s*\n(.*?)\n---\s*\n", re.S)
@@ -101,9 +107,12 @@ def wiki_docs() -> list[dict]:
             continue
         if parts[0] in WIKI_EXCLUDE_DIRS or parts[0] in WIKI_EXCLUDE_FILES:
             continue
+        rel_posix = rel_path.as_posix()
+        if any(rel_posix.startswith(p + "/") for p in WIKI_EXCLUDE_SUBDIRS):
+            continue
         if "_ppt_workspace" in parts:
             continue
-        rec = load_doc(md, rel_path.as_posix(), "文档站")
+        rec = load_doc(md, rel_posix, "文档站")
         if rec:
             out.append(rec)
     return out

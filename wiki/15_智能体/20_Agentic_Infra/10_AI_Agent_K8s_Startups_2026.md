@@ -2,7 +2,7 @@
 title: AI Infra / Agent Infra / K8s 赛道创业公司拆解 2026
 category: -agents
 tags: ["ai-infra", "agent-infrastructure", "kubernetes", "startups", "融资", "2026"]
-summary: "三条基础设施赛道的创业资本对照：AI Infra 单笔十亿美元级军备赛（Fireworks/Baseten/Together/Modal）、Agent Infra 成长期（LangChain 30 亿美元 @C 轮）、K8s 成熟期退出靠并购（Isovalent→Cisco、Run:ai→NVIDIA）；附 NVIDIA 三层战投标的完整清单（推理三家、Cognition/Cursor、Run:ai/SchedMD/Hugging Face）。"
+summary: "三条基础设施赛道的创业资本对照：AI Infra 单笔十亿美元级军备赛（Fireworks/Baseten/Together/Modal）、Agent Infra 成长期（LangChain 30 亿美元 @C 轮）、K8s 成熟期退出靠并购（Isovalent→Cisco、Run:ai→NVIDIA）；附 NVIDIA 三层战投标的完整清单与模型层融资估值清单（OpenAI 1.25 万亿融前、Anthropic 9,650 亿 H 轮/650 亿 ARR、中国 IPO 潮 PS 阶梯）。"
 created: 2026-11-17
 updated: 2026-11-17
 tier: core
@@ -154,12 +154,55 @@ name_zh: "Infra赛道创业拆解"
 
 ---
 
-## 5. 三赛道合起来看：两条判读
+## 5. 模型层公司融资与估值清单（2026-11-17 检索补充）
+
+**框架位置**：模型层是三条 infra 赛道的**共同上游客户与资金源头**——NVIDIA 向前沿实验室投入近 500 亿美元（2026-08-26 财报电话会），本质是给卖铲生意预付货款；推理三家的 Token 需求、Agent 层的模型调用，全部由模型层的资本开支与 ARR 派生。
+
+### 5.1 美国头部：万亿美元俱乐部
+
+| 公司 | 最新融资/估值（时点） | 收入口径（时点） | 状态 |
+|------|----------------------|------------------|------|
+| **OpenAI** | 私募 150 亿美元 @ **1.25 万亿美元融前**（2026-11-13 CNBC，首批 110 亿 11-06 到账）；此前 1,220 亿美元承诺 @8,520 亿投后（2026-03-31 完成） | 2026Q3 营收约 100 亿美元（环比 +50%），运营亏损 109 亿美元（WSJ）；ARR 约 400 亿（2026-11 口径） | IPO 推迟至 2027；NVIDIA 承诺 300 亿（2026-02） |
+| **Anthropic** | H 轮 650 亿 @ **9,650 亿**（2026-05，全球最高估值私有 AI 公司）；G 轮 300 亿 @3,800 亿（2026-02，GIC/Coatue 领投，微软、NVIDIA 参投）；Forge 隐含 1 万亿（2026-04，**私募二级口径非融资口径**） | ARR **650 亿美元**（2026-11 彭博引创始人披露，较 2025 底约 90 亿增 7 倍+）；4 月曾以总额法 300 亿首超 OpenAI 净额法 250 亿 | 纳斯达克 IPO 计划 **2026-11-19 开始交易**、目标估值最高 1.4 万亿（路透，2026-11-13）；80% 营收来自企业端，Claude Code ARR 超 25 亿 |
+| **xAI** | E 轮 200 亿 @ **2,300 亿**（2026-01，a16z 领投，NVIDIA 参与） | — | 并入 SpaceX 后 NVIDIA 持股转为 SpaceX 股票（账面约 210 亿，2026-09 口径） |
+| **Thinking Machines Lab** | 洽谈 10 亿 @ **400 亿**（2026-09-03 TechCrunch，Accel 拟领投）；此前 20 亿 @80 亿（2025-10，NVIDIA 为主要参与方） | — | Mira Murati 创立；联创流失传闻与高估值并存 |
+| **Safe Superintelligence** | NVIDIA 承诺最高 50 亿（2026-07-28 参投） | 研究型、无收入 | Ilya Sutskever 创立，纯研究定位 |
+
+> 证伪注记：Anthropic「1 万亿美元」是 Forge Global 私募二级隐含估值（2026-04），不是融资估值；其融资口径为 H 轮 9,650 亿。两个数字不得混用。
+
+### 5.2 欧洲：Mistral 的主权 AI 转向
+
+- D 轮 30 亿欧元（约 34.9 亿美元）@ **210 亿欧元+**（2026-09-08，**三星领投**，Salesforce Ventures、英伟达、ASML 等 20+ 家跟投）——**欧洲科技公司史上最大股权融资**；一年前 ASML 领投后估值 117 亿欧元
+- 战略转向：从开放权重模型转向出售 AI 基础设施与主权计算（Mistral Compute，自建数据中心 + 算力租赁），与 Nebius、Nscale 直接竞争；本轮首次由非欧洲实体领投
+- 收入参考：约 4 亿美元（2025-09 Series C 口径，multiples.vc）
+
+### 5.3 中国：IPO 潮与两条资本哲学
+
+| 公司 | 融资/估值（时点） | 收入（时点） | 资本动作 |
+|------|-------------------|--------------|----------|
+| **DeepSeek** | 首轮外部融资隐含 **3,508.8 亿元**（2026-07-17，安徽开润披露 29 亿获 0.8265%）；二轮 1,055 亿元 @ **投后 6,155 亿元**（2026-10） | 4.75 亿元营收、7.15 亿亏损（2026 前 7 个月） | 腾讯/宁德时代/京东/网易/IDG 参与；中信证券筹备科创板、目标 2026 交表；创始人系持股约 78% |
+| **月之暗面（Kimi）** | C 轮后 43 亿（2025 底）→ 3 个月 180 亿 → Pre-IPO **约 500 亿美元**（2026-07 洽谈、10 月完成） | ARR 3 亿（2026-06）→ **10 亿美元**（2026-08） | 2027Q1 港股 IPO；中国移动等产业资本进入；K3 达 2.8 万亿参数（全球最大开源模型） |
+| **智谱** | 港股市值峰值破万亿 → 约 3,135 亿港元（2026-10-08，较 6 月高点 **-78%**） | H1'26 营收 9.54 亿元、亏 20 亿；全业务 ARR 破 18 亿美元（2026-09） | 2026-01-08 上市，「全球大模型第一股」 |
+| **MiniMax** | 港股市值约 730 亿港元（2026-10-08，较 3 月高点蒸发约 3,400 亿，媒体称「跌掉 80%」） | 2025 营收 5.43 亿元、亏 17.5 亿 | 2026-01-09 上市首日 +109% |
+| **阶跃星辰** | 约 25 亿美元融资 @ 约 100 亿美元投后（2026-11 口径） | — | 手机产业链资本支持，押注万亿参数基座 + 终端落地 |
+
+**PS 阶梯**（36氪，2026-11-12，按 H1 收入年化 vs 市值/估值）：MiniMax 40x < 可灵 41x < 月之暗面 50x < DeepSeek 74x < 智谱 141x——一级市场「夹在两只已上市股票中间：比跌透的 MiniMax 贵，比没跌透的智谱便宜」。
+
+### 5.4 三个判读
+
+1. **收入-估值鸿沟是行业底色**：智谱 H1 亏 20 亿对应 3,135 亿港元市值、OpenAI 单季亏 109 亿对应 1.25 万亿融前——市场按「技术壁垒 × 增长斜率 × 生态话语权」定价，传统 PS 框架失效
+2. **Anthropic 反超的口径陷阱**：2026-04 首次在 ARR（总额法 300 亿 vs OpenAI 净额法 250 亿）与隐含估值（1 万亿 vs 8,800 亿）双领先，但净额法调整后 220 亿仍低于 250 亿——**引用必须带口径**
+3. **两种资本哲学**：DeepSeek 绝对控股（约 78%）+ 谨慎节奏 vs 月之暗面火箭冲刺（3 个月估值 4 倍、股东倒逼上市）；中国大模型 PS 约为美国同行 7–8 倍（港股纯血稀缺所致）
+
+---
+
+## 6. 三赛道合起来看：三条判读
 
 1. **同一门生意的不同时段**：K8s 教会了世界「编排一切」，AI Infra 是把编排对象换成 GPU/Token，Agent Infra 是把编排对象换成任务与工具——**K8s 的退出史（并购）就是 AI Infra 的未来剧本**（预示推理层终局可能被芯片商/云商整合；NVIDIA 已用 Run:ai 与 Hugging Face 两笔收购预演）
 2. **NVIDIA 的三层下注**：详见第 4 节完整清单——战投推理公司（Fireworks/Baseten/Together）+ 买调度层与分发入口（Run:ai/SchedMD/Hugging Face/Groq）+ 合作伙伴网络（Rafay/思科 AI 工厂）
+3. **模型层是三条赛道的资金总闸**：第 5 节显示模型层半年融资近 1,880 亿美元（占当季全球风投约 63%，2026H1 口径）——infra 层的景气度是模型层资本开支的影子变量，模型层估值收缩会先传导到推理层订单
 
-## 6. 风险与挑战
+## 7. 风险与挑战
 
 - **口径冲突**：Baseten 130 亿（2026-06 F 轮）vs 300 亿（2026-11 全景）差 2.3 倍，引用必须带时点
 - **推理价格战**：Token 工厂互相压价，毛利率被云厂商与开源（vLLM/SGLang）两头挤压
@@ -168,26 +211,33 @@ name_zh: "Infra赛道创业拆解"
 
 ---
 
-## 7. 与其它文档的衔接
+## 8. 与其它文档的衔接
 
 - 同目录：[Agentic Infra 全景 2026](./01_Agentic_Infra_全景_2026.md)（七层栈技术版）、[生产环境组件清单](./02_生产环境组件清单.md)、[推理服务化与 PD 分离部署](./03_推理服务化与_PD_分离部署.md)
 - 同批次：[Agent 赛道创业公司拆解 2026](../17_Agent应用/05_Agent_Startups_2026.md)（应用层资本面——本篇是其上游）
 - 跨章节：[CNCF 云原生 AI](../../12_架构基建/05_CNCF云原生AI/README.md)（K8s 项目图谱）、[Agent Gateway 深入分析](../../12_架构基建/05_CNCF云原生AI/01_AgentGateway_深入分析.md)
 
-## 8. 来源与时点
+## 9. 来源与时点
 
-- 老虎财经《全球 AI 独角兽全景图》（2026-11-16，Baseten/Modal/fal/Crusoe 估值与收入）
-- DefiLlama Pre-IPO：Fireworks AI（2026-11-14 估值 385 亿）
-- 智东西/Business Insider：Fireworks 新轮洽谈 300–400 亿（2026-10-21）
-- Today's Startup News：Modal D 轮 7.5 亿 @157.5 亿（2026-10-18）
-- 36氪《无问芯穹 C 轮 23 亿》（2026-10-12）与《Token 工厂融资大爆发》（2026-10-16）
-- 新浪财经/TechCrunch：LangChain 3 亿 @30 亿（2026-11-16）
-- NVIDIA Developer Blog：Rafay 合作（2026-03-17）；CSDN：思科收购 Isovalent（2023-12-24）；Calcalist：Run:ai 7 亿对价与欧盟审查（2024-10-31）
-- TradingKey《英伟达 2026 年 AI 投资清单》（2026-08-27，OpenAI 300 亿/Anthropic 100 亿/CoreWeave 20 亿等）
-- 腾讯新闻《129 亿美元，英伟达史上最大一笔收购即将落地》（2026-09-15，前沿实验室近 500 亿总口径）
-- 读懂 AI 时代《英伟达同意以 129.303 亿美元收购 Hugging Face》（2026-09-15）；InfoQ 转引 Business Insider 谈判与 DOJ 问询（2026-11-13）
-- Odaily《Cognition 完成超 20 亿美元 E 轮》（2026-09-11，NVIDIA 在投资方名单）
-- Wikipedia：Cursor（D 轮 23 亿 @293 亿含 NVIDIA/Google，2025-11-13）；网易《英伟达投的三家美国 AI 创企》（2026-10-19）与雪球《AI 圈最贵的》（2026-10-15，Baseten E 轮 NVIDIA 约 1.5 亿）
+- [老虎财经《全球 AI 独角兽全景图》](https://www.laohucaijing.com/Www_detail1/index/2/238989/)（2026-11-16，Baseten/Modal/fal/Crusoe 估值与收入；[c114 镜像](http://www.c114.net.cn/industry/146875.html)，均校验 200）
+- [DefiLlama Pre-IPO：Fireworks AI](https://defillama.com/pre-ipo/fireworks-ai)（2026-11-14 估值 385 亿；*2026-11-17 校验：该站整站自本网络 000 不可达——example.com 200 排除普遍断网，WebFetch 亦超时；内容为检索当日获取，浏览器/海外网络可复核*）
+- 智东西/Business Insider：Fireworks 新轮洽谈 300–400 亿（2026-10-21；*知乎原文 403 反爬，改挂[网易转载《华人女掌门带队！英伟达支持的 AI 独角兽》](https://m.163.com/dy/article/L9PQ7Q210519QQUP.html)，校验 200*）
+- [Today's Startup News：Modal D 轮 7.5 亿 @157.5 亿](https://www.todaysstartupnews.com/news/october-11-18-2026-startup-funding-news-recap)（2026-10-18，校验 200）
+- [36氪《无问芯穹 C 轮 23 亿》](https://m.36kr.com/p/4022354331160454)（2026-10-12）与《Token 工厂融资大爆发》（2026-10-16；*知乎原文 403 反爬，改挂[百家号同文镜像](https://baijiahao.baidu.com/s?id=1878818287080034823)，校验 200*）
+- [新浪财经：LangChain 3 亿 @30 亿](https://finance.sina.cn/cj/2026-11-16/detail-iniywwze5717825.d.html)（2026-11-16）与 [TechCrunch 原文](https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/)（2026-11-13；[网易镜像](https://m.163.com/dy/article/LBUC3SG6051180F7.html)），均校验 200
+- [NVIDIA Developer Blog：Rafay 合作](https://developer.nvidia.com/zh-cn/blog/delivering-nvidia-accelerated-computing-for-enterprise-ai-workloads-with-rafay/)（2026-03-17）；[CSDN：思科收购 Isovalent](https://m.blog.csdn.net/dwh0403/article/details/135182811)（2023-12-24，另见 [cniteyes 分析](http://www.cniteyes.com/archives/39220)）；[Calcalist：Run:ai 7 亿对价与欧盟审查](https://www.calcalistech.com/ctechnews/article/rk7fhg11bjg)（2024-10-31，另见 [ai-bot 官宣稿](https://ai-bot.cn/nvidia-acquires-ai-startup-runai/)），均校验 200
+- [TradingKey《英伟达 2026 年 AI 投资清单》](https://www.tradingkey.com/zh-hans/analysis/stocks/us-stock/262135441-nvidia-2026-ai-investment-openai-huggingface-nvda-tradingkey)（2026-08-27，OpenAI 300 亿/Anthropic 100 亿/CoreWeave 20 亿等，校验 200）
+- [腾讯新闻《129 亿美元，英伟达史上最大一笔收购即将落地》](https://new.qq.com/rain/a/20260915A05O9600)（2026-09-15，前沿实验室近 500 亿总口径，校验 200）
+- [读懂 AI 时代《英伟达同意以 129.303 亿美元收购 Hugging Face》](https://www.readaitime.com/news/2026-09-15/2g5zg6fi)（2026-09-15）；[InfoQ 转引 Business Insider 谈判与 DOJ 问询](https://www.infoq.cn/article/Z9bIWfsMCIA9yiLUSDvJ)（2026-11-13），均校验 200
+- [Odaily《Cognition 完成超 20 亿美元 E 轮》](https://m.odaily.news/zh-CN/newsflash/516824)（2026-09-11，NVIDIA 在投资方名单；[链得得镜像](https://www.chaindd.net/nictation/3901929.html)），均校验 200
+- [CNBC/IT之家《OpenAI 最新一轮私募融资 150 亿美元，融前估值 1.25 万亿美元》](https://www.ithome.com/html/android/1026495.htm)（2026-11-13，含 WSJ Q3 营收 100 亿/运营亏损 109 亿；另存[同花顺镜像](https://goodsfu.10jqka.com.cn/20261113/c681784512.shtml)，均校验 200）
+- [firecat《IPO 前夕营收数据曝光：Anthropic 年化收入达 650 亿美元》](https://www.firecat-web.com/daily-news/14341)（2026-11-14，彭博口径 + H 轮 650 亿@9,650 亿）与 [firecat《Anthropic 估值触及万亿美元》](https://www.firecat-web.com/daily-news/8410)（2026-11-15，Forge 隐含估值与总额/净额法辨析）
+- [navcn《2026 年 AI 行业融资快报》](https://www.navcn.cn/1480.html)（2026-11-12，四笔合计 1,880 亿占当季风投 63%；xAI E 轮 200 亿@2,300 亿）
+- [36氪《2026 AI 上市潮》](https://36kr.com/p/3971481903306372)（2026-11-17，中国各家收入-市值对照）与 [36氪《MiniMax 跌掉 80%、DeepSeek 拟融资 1000 亿》](https://36kr.com/p/4019328250171529)（2026-11-12，PS 阶梯 40x–141x）
+- [央视财经/同花顺《Mistral 完成 30 亿欧元 D 轮，估值超 210 亿欧元》](https://finance.sina.cn/stock/jdts/2026-09-09/detail-iniresya5647820.d.html)（2026-09-09，三星领投、欧洲史上最大股权融资；收入参考另见 [multiples.vc](https://multiples.vc/private-comps/mistral-ai)）
+- [百度百科「估值」词条](https://baike.baidu.com/item/%E4%BC%B0%E5%80%BC/4518500)（2026-11-12，DeepSeek 首轮 3,508.8 亿元隐含估值、月之暗面 500 亿美元 Pre-IPO；*脚本访问 403 为整站条目页反爬，浏览器可正常访问，2026-11-17 校验*）
+- [InfoQ 转引 TechCrunch《Accel 拟领投 Thinking Machines 10 亿轮 @400 亿》](https://xie.infoq.cn/article/7b07800b7ad0f2c0e5f5659c8)（2026-09-03；月之暗面 IPO 节奏另见 [firecat](https://www.firecat-web.com/daily-news/6146)、PS 与估值争议另见[新浪财经《大模型跌成这样，还是贵？》](https://cj.sina.cn/articles/view/2357213493/8c803935019028aag)）
+- [Wikipedia：Cursor (company)](https://en.wikipedia.org/wiki/Cursor_(company))（D 轮 23 亿 @293 亿含 NVIDIA/Google，2025-11-13；*2026-11-17 校验：en.wikipedia.org 整站自本网络 000 不可达（网络层，非内容失效），内容为检索当日获取；同事实另见 [BAAI Hub 引 Business Insider](https://hub.baai.ac.cn/view/59141)（SpaceX 600 亿收购 Cursor，校验 200）*）；雪球《AI 圈最贵的》（2026-10-15，Baseten E 轮 NVIDIA 约 1.5 亿，[校验 200](https://xueqiu.com/4379570015/412473348)；英伟达押注三家 Token 工厂的同源论述另见[搜狐转载](https://sports.sohu.com/a/1088177409_122983200)（校验 200））——*原引网易《英伟达投的三家美国 AI 创企》（2026-10-19）经校验 m/www 双端 404 真失效，已弃用*
 
 ---
 

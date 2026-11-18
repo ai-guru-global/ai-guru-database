@@ -17,7 +17,17 @@ if [ -n "$dupes" ]; then
   exit 1
 fi
 
-# wikilink 断链门禁（P2-6）：暂存区含 .md 时才执行，断链多于基线即阻断
+# 变更文件门禁（P0-1）：暂存区含 wiki/.md 时，对新增 / 修改文件零容忍
+if git diff --cached --name-only --diff-filter=AMR | grep -q '^wiki/.*\.md$'; then
+  if ! python3 code/工具/link_gate.py --changed-only --staged; then
+    echo "" >&2
+    echo "变更文件门禁未通过，提交已阻止。" >&2
+    echo "修复上述违规后重新 git add；确需绕过用 git commit --no-verify（不建议）。" >&2
+    exit 1
+  fi
+fi
+
+# 全库 ratchet 兜底（P2-6）：暂存区含 .md 时执行，任一指标高于基线即阻断
 if git diff --cached --name-only | grep -q '\.md$'; then
   if ! python3 code/工具/link_gate.py; then
     echo "" >&2

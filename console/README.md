@@ -56,7 +56,7 @@
 - 重新生成数据：`make portal`（产物在 `../design/统一入口/data/`；`index.json`/`index.js`/`tree.js` 入库，`pages/` 分片约 52MB 已 gitignore）
 - 检索回归：`make portal-check`（golden 10 条，`make portal` 构建时也会自动执行）
 - 分片覆盖强校验：doc 记录数必须等于分片页面数，源文件缺失会在构建时报错
-- 部署口径：页面本体尚未上线（部署 URL 待定）；四个面的打开方式为——md 页内阅读、发布站/拆解台/文档站走仓内文件直开、前端应用走 GitHub Pages 线上地址
+- 部署口径（2026-11-19 拍板）：线上 <https://ai-guru-global.github.io/ai-guru-database/portal/>——`deploy-pages.yml` 把 portal 本体连同发布站/拆解台打包进 `dist/portal/surfaces/`，五面同源（文档站走 `../mkdocs/`、前端应用即站点根）；本地 `file://` 双击行为不变（仓内相对路径直开，原始 md 本地直开），线上「打开原始文件」与主题总表走 GitHub blob。`data.local.js` 为 gitignore 的本机数据，线上拆解台研判面板留空（与新克隆一致）。
 
 ## 目录结构
 

@@ -363,7 +363,7 @@ GOLDEN = [
     {"q": "涂鸦智能", "must_any": ["专题研究/机构深度研究/AIoT平台/涂鸦智能/README.md"]},
     {"q": "MCP协议", "must_any": ["console/证据层/智能体平台/MCP协议.md"]},
     {"q": "FDE", "must_any": [
-        "22-FDE/01_FDE基础/01_FDE概述与定义.md",
+        "22_FDE/01_FDE基础/01_FDE概述与定义.md",
         "console/05-商业与生态层/05-交付与实施（FDE）/FDE前沿部署工程师.md",
     ]},
     {"q": "大事记", "must_any": ["console/_2026大事记.md"]},

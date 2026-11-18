@@ -444,7 +444,7 @@ Complete path from math to production:
 | [Agent Workflow](./15_智能体/03_Agent工作流/) | Workflows: LangGraph, error handling, orchestration | |
 | [Agent Eval](./15_智能体/07_Agent评估/) | Evaluation: Benchmark, red team, leaderboard | |
 | **16** [AI Coding](./16_编程/) | Coding tools & methodology: Cursor, Claude Code, Vibe Coding | |
-| **22** [FDE Full-Stack Eng](./22-FDE/) | End-to-end full-stack projects: System design, architecture, production deployment | |
+| **22** [FDE Full-Stack Eng](./22_FDE/) | End-to-end full-stack projects: System design, architecture, production deployment | |
 | **L5 Governance** | | |
 | **17** [Ethics & Safety](./17_伦理安全/) | AI safety: Alignment, red team, RSI, privacy protection, OWASP LLM | |
 | **L6 Resources** | | |

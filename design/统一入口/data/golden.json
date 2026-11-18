@@ -26,7 +26,7 @@
  {
   "q": "FDE",
   "must_any": [
-   "22-FDE/01_FDE基础/01_FDE概述与定义.md",
+   "22_FDE/01_FDE基础/01_FDE概述与定义.md",
    "console/05-商业与生态层/05-交付与实施（FDE）/FDE前沿部署工程师.md"
   ]
  },

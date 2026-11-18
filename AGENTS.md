@@ -53,7 +53,7 @@ wiki/                   OBSIDIAN VAULT ROOT — open THIS directory as the vault
   归档/                 Archive — top-level kept (10+ skills hard-code `归档/` as
                         an exclusion path; see 治理/Directory_Restructure_Plan_2026).
   专题研究/              Project-based research zone (restructure 2026-11 P1):
-                        DeepSeek 研究/, 机构深度研究/, AI原生企业/, GTM/.
+                        DeepSeek_研究/, 机构深度研究/, AI原生企业/, GTM/.
   资料与归档/            Ops-materials zone (restructure 2026-11 P2):
                         reports/, 来源/ (source materials), docs/,
                         assistant/ (RAG assistant scripts + README).

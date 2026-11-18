@@ -78,7 +78,7 @@ wiki/
 | **P1** | `git mv` 4 研究目录 → `专题研究/`；修 33 出链 + 2 入链 + mkdocs 项；建新目录 README | `check_links.py` 零断链 + 独立 commit | ✅ 2026-11-18 |
 | **P2** | `git mv` 4 运营目录 → `资料与归档/`（`归档/`、`原始/` 因 skill 耦合保留顶层）；修 7 入链 + build_index/query 脚本根定位 + mkdocs 5 项 + AGENTS 布局 | 同上 | ✅ 2026-11-18 |
 | **P3** | 命名归一：`22-FDE`→`22_FDE`、`DeepSeek 研究`→`DeepSeek_研究` | 同上 + portal 再生成 golden 10/10 | ✅ 2026-11-18 |
-| **P4** | 全量校验：`check_links.py --strict` + `wiki_health.py` + `gen_subdir_indexes.py` 重建 INDEX + mkdocs 构建冒烟 + 更新本文件状态 | 四项全绿 | ⬜ |
+| **P4** | 全量校验：`check_links.py --strict` + `wiki_health.py` + `gen_subdir_indexes.py` 重建 INDEX + mkdocs 构建冒烟 + 更新本文件状态 | 四项全绿 | ✅ 2026-11-18 |
 
 **回滚约定**：每期独立 commit，任一步 `git revert` 即还原；全程只移动、不删除。
 
@@ -87,6 +87,7 @@ wiki/
 - 2026-11-18：计划沉淀；P1 执行完毕——`git mv` 4 目录（147 篇）入 `专题研究/`，修复 33 处出链、2 处外部入链、42 处内部 wikilink 前缀、mkdocs.yml 4 项、portal 测试夹具 2 处（golden.json/build_portal.py，计划外发现）；新建专区 README 并补 wikilink 入链消孤立；`check_links.py` 移动相关断链 0（全库 974→973 为存量清零 1）、`link_gate.py` 四项指标均不高于基线。
 - 2026-11-18：P2 执行完毕——`git mv` reports/来源/docs/assistant 入 `资料与归档/`；修复 8 文件 wikilink 入链（来源 5 + assistant 2 + 来源内部自引）、hot.md 3 处行内路径、`assistant/build_index.py` 与 `query.py` 根定位（`parents[2]`）+ 跳过集补 `资料与归档`、mkdocs 排除 5 项、根 AGENTS.md 布局段（含 P1 遗留）、新建专区 README + 入链；**范围调整**：`归档/`、`原始/` 因 10+ skill 顶层硬编码保留原位（成本表漏检，同 P1 portal 夹具类），列为 P5 候选。**工具随迁**：`check_wikilinks.py` 扫描排除规则由「仅顶层命中」改为「一级或二级路径命中」——`来源/`、`docs/` 迁入二级后仍延续「信源/规划稿只作链接目标、不作扫描源」的既定口径（否则其历史 frontmatter/间距/断链违规将一次性入账 +18）；门禁四项 1438/734/767/1047 全部恰等基线。
 - 2026-11-18：P3 执行完毕——`git mv` `22-FDE`→`22_FDE`、`专题研究/DeepSeek 研究`→`DeepSeek_研究`；sed 全库 md（两旧名→新名）+ AGENTS.md + mkdocs 导航 + ai-guru-doc-style skill + build_portal golden 常量；`build_portal.py` 再生成 portal 数据（3978 条索引 / 37 分片 3819 页，覆盖校验 3819/3819，golden 10/10 含 `FDE`→`22_FDE/` 新路径）；旧分片 `wiki__22-FDE.js` 由生成器自动清除。**有意保留**：`.zcode/plans` 与 `console/研判/2026-11-09` 历史快照不改名，`console/data.local.js` 为 gitignore 本机产物。顺手修复 1 处存量断链（`22_FDE/03_交付方法论` 裸路径链接补 `./` 前缀，检查器按库根解析所致）。终检：源残留 0、`check_links` 相关断链 0、`link_gate` 四项 1438/734/767/1047 全绿。
+- 2026-11-18：P4 执行完毕，**四期计划全部收官**——① `check_links --strict`：973（972 missing_file + 1 dir_reference，均存量，重组相关 0，较非严格仅 +1）；② `wiki_health`：corpus 孤立页 0，1 处存量 frontmatter 缺失（`治理/_meta/_synthesis-index-archive.md`）；③ `gen_subdir_indexes` 补建 1 个缺失自动索引（`10_部署推理/02_推理引擎/index.md`，38 文件导航）——其模板缺现行必备字段且含间距违规，已补齐 `category/summary/tier/name_zh`、跑 `fix_spacing` 修复、父 README 补 wikilink 入链消孤立；④ mkdocs 全量构建 exit 0（98.85s，仅存量锚点 INFO）；⑤ `link_gate` 四项 1438/734/767/1047 全部恰等基线。遗留（非本计划范围）：972 条存量断链以 90_学习 书籍外链为主，另有 P5（skill 契约解耦：归档/原始 顶层保留）候选。
 
 ---
 

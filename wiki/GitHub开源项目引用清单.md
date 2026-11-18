@@ -1,3 +1,15 @@
+---
+title: GitHub 开源工具/项目引用清单
+category: meta
+tags: ["github", "开源", "清单", "引用统计"]
+summary: 自动生成的全库 GitHub 仓库引用清单：1435 个不同仓库按被引用次数降序排列，可查每个开源项目在库内被引用的广度。
+created: 2026-08-05
+updated: 2026-08-05
+tier: peripheral
+aliases: [GitHub 引用清单, 开源项目清单]
+sources: []
+name_zh: "GitHub引用清单"
+---
 # GitHub 开源工具/项目引用清单
 
 > 自动生成于 2026-08-05，扫描本仓库全部 Markdown 文件中出现的 github.com 链接，

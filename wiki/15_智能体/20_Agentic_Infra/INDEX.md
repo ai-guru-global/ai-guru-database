@@ -49,7 +49,7 @@ name_en: "Agentic Infra"
 | 选型速查 | 06_Mainstream_Selection_2026 | 掌握每层采用面最大的默认项与口径辨析 |
 | 对比辨析 | 08_Qwen_Agent_vs_AgentScope_Runtime | 分清框架层（写 agent）与运行时层（跑 agent），避免选型错位 |
 | 选型深读 | 09_Sandbox_隔离技术与沙箱平台选型 | 拆清沙箱「隔离技术层 vs 平台层」，掌握 OpenSandbox 架构与威胁模型决策树 |
-| 实战 | 02_生产环境组件清单 + 04_本地千问办公Agent实战 | 落地自己平台的架构（生产或本地） |
+| 实战 | 02_生产环境组件清单 + 04_本地千问办公 Agent 实战 | 落地自己平台的架构（生产或本地） |
 | 实战 | 05_部署组合与迁移路径 | 制定团队从 MVP 到完整版的演进计划与迁移清单 |
 | 实战 | 07_AgentScope_Runtime_生产部署实战 | 用 agentscope-runtime 把 agent 服务化上线（K8s/Serverless/云托管） |
 

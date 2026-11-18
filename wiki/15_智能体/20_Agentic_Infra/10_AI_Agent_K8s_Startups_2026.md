@@ -17,7 +17,7 @@ name_zh: "Infra赛道创业拆解"
 
 # AI Infra / Agent Infra / K8s 赛道创业公司拆解 2026
 
-> 中文简称：Infra赛道创业拆解
+> 中文简称：Infra 赛道创业拆解
 
 > **一句话理解**: 同样叫「基础设施」，三条赛道处在三个生命周期——AI Infra 是单笔十亿美元级的军备竞赛，Agent Infra 是刚被验证的成长期（LangChain 一年估值翻倍到 30 亿美元），K8s 则是成熟到「赢家靠并购退出」的旧战场。
 
@@ -49,14 +49,14 @@ name_zh: "Infra赛道创业拆解"
 | **Modal** | D 轮 7.5 亿美元 @157.5 亿（2026-10-14，Accel 领投） | 较 5 月 C 轮 46.5 亿翻 3 倍+ | ARR 破 10 亿美元，Sandboxes 单品近 3 亿 |
 | **fal** | — | 160 亿（2026-11 口径） | 约 8 亿美元（偏图像/视频推理） |
 
-三家（Fireworks/Baseten/Together）**均获 NVIDIA 战投**——芯片巨头把推理层当作释放硬件价值的杠杆（36氪，2026-10-12）。
+三家（Fireworks/Baseten/Together）**均获 NVIDIA 战投**——芯片巨头把推理层当作释放硬件价值的杠杆（36 氪，2026-10-12）。
 
 ### 1.2 中国梯队与新玩家
 
-- **无问芯穹**：C 轮 23 亿元（2026-10 完成交割，清华电子系背景），累计 43 亿元——**国内最大 AI Infra 融资**，正筹备 IPO（36氪，2026-10-12）
+- **无问芯穹**：C 轮 23 亿元（2026-10 完成交割，清华电子系背景），累计 43 亿元——**国内最大 AI Infra 融资**，正筹备 IPO（36 氪，2026-10-12）
 - **vLLM 团队官宣创业**：融资 1.5 亿美元，清华特奖游凯超任联创（2026-01 社区资讯）
 - **RadixArk**（SGLang 团队拆分）：估值 4 亿美元（2026-01）；**Tensormesh**（华人创立）种子 450 万美元
-- 估值差的含义：海外独立 AI Infra 已先行定价（175 亿/130 亿/83 亿），国产 Token 工厂折价既说明赛道更早，也留出效率验证后的成长空间（知乎/36氪口径，2026-10）
+- 估值差的含义：海外独立 AI Infra 已先行定价（175 亿/130 亿/83 亿），国产 Token 工厂折价既说明赛道更早，也留出效率验证后的成长空间（知乎/36 氪口径，2026-10）
 
 **风险点**：Fireworks 于 2026-10-09 披露安全事件（内部凭证入侵、少量客户 API 密钥泄露，模型与数据称未被访问）——新轮融资洽谈紧随其后，客户信任成为变量。
 
@@ -186,7 +186,7 @@ name_zh: "Infra赛道创业拆解"
 | **MiniMax** | 港股市值约 730 亿港元（2026-10-08，较 3 月高点蒸发约 3,400 亿，媒体称「跌掉 80%」） | 2025 营收 5.43 亿元、亏 17.5 亿 | 2026-01-09 上市首日 +109% |
 | **阶跃星辰** | 约 25 亿美元融资 @ 约 100 亿美元投后（2026-11 口径） | — | 手机产业链资本支持，押注万亿参数基座 + 终端落地 |
 
-**PS 阶梯**（36氪，2026-11-12，按 H1 收入年化 vs 市值/估值）：MiniMax 40x < 可灵 41x < 月之暗面 50x < DeepSeek 74x < 智谱 141x——一级市场「夹在两只已上市股票中间：比跌透的 MiniMax 贵，比没跌透的智谱便宜」。
+**PS 阶梯**（36 氪，2026-11-12，按 H1 收入年化 vs 市值/估值）：MiniMax 40x < 可灵 41x < 月之暗面 50x < DeepSeek 74x < 智谱 141x——一级市场「夹在两只已上市股票中间：比跌透的 MiniMax 贵，比没跌透的智谱便宜」。
 
 ### 5.4 三个判读
 
@@ -223,17 +223,17 @@ name_zh: "Infra赛道创业拆解"
 - [DefiLlama Pre-IPO：Fireworks AI](https://defillama.com/pre-ipo/fireworks-ai)（2026-11-14 估值 385 亿；*2026-11-17 校验：该站整站自本网络 000 不可达——example.com 200 排除普遍断网，WebFetch 亦超时；内容为检索当日获取，浏览器/海外网络可复核*）
 - 智东西/Business Insider：Fireworks 新轮洽谈 300–400 亿（2026-10-21；*知乎原文 403 反爬，改挂[网易转载《华人女掌门带队！英伟达支持的 AI 独角兽》](https://m.163.com/dy/article/L9PQ7Q210519QQUP.html)，校验 200*）
 - [Today's Startup News：Modal D 轮 7.5 亿 @157.5 亿](https://www.todaysstartupnews.com/news/october-11-18-2026-startup-funding-news-recap)（2026-10-18，校验 200）
-- [36氪《无问芯穹 C 轮 23 亿》](https://m.36kr.com/p/4022354331160454)（2026-10-12）与《Token 工厂融资大爆发》（2026-10-16；*知乎原文 403 反爬，改挂[百家号同文镜像](https://baijiahao.baidu.com/s?id=1878818287080034823)，校验 200*）
+- [36 氪《无问芯穹 C 轮 23 亿》](https://m.36kr.com/p/4022354331160454)（2026-10-12）与《Token 工厂融资大爆发》（2026-10-16；*知乎原文 403 反爬，改挂[百家号同文镜像](https://baijiahao.baidu.com/s?id=1878818287080034823)，校验 200*）
 - [新浪财经：LangChain 3 亿 @30 亿](https://finance.sina.cn/cj/2026-11-16/detail-iniywwze5717825.d.html)（2026-11-16）与 [TechCrunch 原文](https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/)（2026-11-13；[网易镜像](https://m.163.com/dy/article/LBUC3SG6051180F7.html)），均校验 200
 - [NVIDIA Developer Blog：Rafay 合作](https://developer.nvidia.com/zh-cn/blog/delivering-nvidia-accelerated-computing-for-enterprise-ai-workloads-with-rafay/)（2026-03-17）；[CSDN：思科收购 Isovalent](https://m.blog.csdn.net/dwh0403/article/details/135182811)（2023-12-24，另见 [cniteyes 分析](http://www.cniteyes.com/archives/39220)）；[Calcalist：Run:ai 7 亿对价与欧盟审查](https://www.calcalistech.com/ctechnews/article/rk7fhg11bjg)（2024-10-31，另见 [ai-bot 官宣稿](https://ai-bot.cn/nvidia-acquires-ai-startup-runai/)），均校验 200
 - [TradingKey《英伟达 2026 年 AI 投资清单》](https://www.tradingkey.com/zh-hans/analysis/stocks/us-stock/262135441-nvidia-2026-ai-investment-openai-huggingface-nvda-tradingkey)（2026-08-27，OpenAI 300 亿/Anthropic 100 亿/CoreWeave 20 亿等，校验 200）
 - [腾讯新闻《129 亿美元，英伟达史上最大一笔收购即将落地》](https://new.qq.com/rain/a/20260915A05O9600)（2026-09-15，前沿实验室近 500 亿总口径，校验 200）
 - [读懂 AI 时代《英伟达同意以 129.303 亿美元收购 Hugging Face》](https://www.readaitime.com/news/2026-09-15/2g5zg6fi)（2026-09-15）；[InfoQ 转引 Business Insider 谈判与 DOJ 问询](https://www.infoq.cn/article/Z9bIWfsMCIA9yiLUSDvJ)（2026-11-13），均校验 200
 - [Odaily《Cognition 完成超 20 亿美元 E 轮》](https://m.odaily.news/zh-CN/newsflash/516824)（2026-09-11，NVIDIA 在投资方名单；[链得得镜像](https://www.chaindd.net/nictation/3901929.html)），均校验 200
-- [CNBC/IT之家《OpenAI 最新一轮私募融资 150 亿美元，融前估值 1.25 万亿美元》](https://www.ithome.com/html/android/1026495.htm)（2026-11-13，含 WSJ Q3 营收 100 亿/运营亏损 109 亿；另存[同花顺镜像](https://goodsfu.10jqka.com.cn/20261113/c681784512.shtml)，均校验 200）
+- [CNBC/IT 之家《OpenAI 最新一轮私募融资 150 亿美元，融前估值 1.25 万亿美元》](https://www.ithome.com/html/android/1026495.htm)（2026-11-13，含 WSJ Q3 营收 100 亿/运营亏损 109 亿；另存[同花顺镜像](https://goodsfu.10jqka.com.cn/20261113/c681784512.shtml)，均校验 200）
 - [firecat《IPO 前夕营收数据曝光：Anthropic 年化收入达 650 亿美元》](https://www.firecat-web.com/daily-news/14341)（2026-11-14，彭博口径 + H 轮 650 亿@9,650 亿）与 [firecat《Anthropic 估值触及万亿美元》](https://www.firecat-web.com/daily-news/8410)（2026-11-15，Forge 隐含估值与总额/净额法辨析）
 - [navcn《2026 年 AI 行业融资快报》](https://www.navcn.cn/1480.html)（2026-11-12，四笔合计 1,880 亿占当季风投 63%；xAI E 轮 200 亿@2,300 亿）
-- [36氪《2026 AI 上市潮》](https://36kr.com/p/3971481903306372)（2026-11-17，中国各家收入-市值对照）与 [36氪《MiniMax 跌掉 80%、DeepSeek 拟融资 1000 亿》](https://36kr.com/p/4019328250171529)（2026-11-12，PS 阶梯 40x–141x）
+- [36 氪《2026 AI 上市潮》](https://36kr.com/p/3971481903306372)（2026-11-17，中国各家收入-市值对照）与 [36 氪《MiniMax 跌掉 80%、DeepSeek 拟融资 1000 亿》](https://36kr.com/p/4019328250171529)（2026-11-12，PS 阶梯 40x–141x）
 - [央视财经/同花顺《Mistral 完成 30 亿欧元 D 轮，估值超 210 亿欧元》](https://finance.sina.cn/stock/jdts/2026-09-09/detail-iniresya5647820.d.html)（2026-09-09，三星领投、欧洲史上最大股权融资；收入参考另见 [multiples.vc](https://multiples.vc/private-comps/mistral-ai)）
 - [百度百科「估值」词条](https://baike.baidu.com/item/%E4%BC%B0%E5%80%BC/4518500)（2026-11-12，DeepSeek 首轮 3,508.8 亿元隐含估值、月之暗面 500 亿美元 Pre-IPO；*脚本访问 403 为整站条目页反爬，浏览器可正常访问，2026-11-17 校验*）
 - [InfoQ 转引 TechCrunch《Accel 拟领投 Thinking Machines 10 亿轮 @400 亿》](https://xie.infoq.cn/article/7b07800b7ad0f2c0e5f5659c8)（2026-09-03；月之暗面 IPO 节奏另见 [firecat](https://www.firecat-web.com/daily-news/6146)、PS 与估值争议另见[新浪财经《大模型跌成这样，还是贵？》](https://cj.sina.cn/articles/view/2357213493/8c803935019028aag)）

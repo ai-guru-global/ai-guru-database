@@ -3,6 +3,7 @@ title: AI Guru Knowledge Base (English)
 category: meta
 tags: [readme, en, overview]
 summary: English README for the AI Guru comprehensive AI learning resource repository — 2,800+ core docs, 700+ concept cards, 24 chapters, LLMOps end-to-end.
+created: 2026-04-02
 updated: 2026-09-04
 tier: peripheral
 aliases:

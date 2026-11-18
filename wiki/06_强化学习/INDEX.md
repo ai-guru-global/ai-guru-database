@@ -1,8 +1,12 @@
 ---
 title: Reinforcement Learning
+category: 06-reinforcement-learning
 type: index
+tags: ["reinforcement-learning", "rl", "agents", "index"]
+summary: 强化学习章节总目录：基础与深度 RL、多智能体、RL 应用与机器人，串起本章全部学习路径与页面。
 created: 2026-07-02
 updated: 2026-07-02
+tier: supporting
 sources: []
 name_zh: "强化学习"
 name_en: "RL & Agents"

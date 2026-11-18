@@ -21,7 +21,7 @@ exclude_docs: |
   来源/**
   归档/**
   docs/**
-  GTM/**
+  专题研究/GTM/**
   reports/**
   assistant/**
   **/node_modules/**
@@ -101,7 +101,7 @@ nav:
   - 22-FDE: 22-FDE/README.md
   - 90_学习: 90_学习/README.md
   - 94_可视化: 94_可视化/README.md
-  - AI原生企业: AI原生企业/README.md
-  - DeepSeek 研究: DeepSeek 研究/README.md
-  - 机构深度研究: 机构深度研究/README.md
+  - AI原生企业: 专题研究/AI原生企业/README.md
+  - DeepSeek 研究: 专题研究/DeepSeek 研究/README.md
+  - 机构深度研究: 专题研究/机构深度研究/README.md
   - 概念: 概念/README.md

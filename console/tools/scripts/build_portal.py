@@ -351,7 +351,7 @@ def build_tree(records: list[dict], out_dir: Path) -> dict:
 GOLDEN = [
     {"q": "Qwen4-Max", "must_any": ["console/02-数据与模型层/03-前沿闭源模型/Qwen4-Max.md"]},
     {"q": "Qwen", "must_any": ["console/证据层/开源模型与生态/Qwen.md"]},
-    {"q": "涂鸦智能", "must_any": ["机构深度研究/AIoT平台/涂鸦智能/README.md"]},
+    {"q": "涂鸦智能", "must_any": ["专题研究/机构深度研究/AIoT平台/涂鸦智能/README.md"]},
     {"q": "MCP协议", "must_any": ["console/证据层/智能体平台/MCP协议.md"]},
     {"q": "FDE", "must_any": [
         "22-FDE/01_FDE基础/01_FDE概述与定义.md",

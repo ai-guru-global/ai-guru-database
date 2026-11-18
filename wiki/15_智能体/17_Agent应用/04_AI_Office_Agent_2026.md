@@ -118,7 +118,7 @@ name_zh: "AI办公Agent赛道"
 - 同章节：[Computer Use Agent](./01_Computer_Use_Agent.md)（技术底座）、[Deep Research Agent](./02_Deep_Research_Agent.md)（办公场景的调研能力）、[Voice Agent](./03_Voice_Agent.md)
 - 同章节：[国内顶级 AI Agent 产品](../12_中国Agent生态/02_Domestic_AI_Agent_产品_CN.md)（模型层全景）、[Dify/Coze 平台拆解](../09_Agent平台/01_Dify_Coze_MLServe_Dive.md)
 - 实战：[本地千问办公 Agent 实战](../20_Agentic_Infra/04_本地千问办公Agent实战.md)
-- 跨模块：[机构深度研究·AIoT 平台行业总览](../../机构深度研究/AIoT平台/README.md)（平台型生意的抽佣逻辑对照）
+- 跨模块：[机构深度研究·AIoT 平台行业总览](../../专题研究/机构深度研究/AIoT平台/README.md)（平台型生意的抽佣逻辑对照）
 
 ## 7. 来源与时点
 

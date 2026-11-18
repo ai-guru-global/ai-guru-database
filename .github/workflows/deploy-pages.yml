@@ -54,6 +54,14 @@ jobs:
           python -m pip install -r code/工具/requirements.txt
           mkdocs build
 
+      # portal 的阅读分片（data/pages/）与发布站（console/site/）都是 gitignore 的
+      # 构建产物，checkout 里没有——必须在打包前现构建（依赖上一步装好的 markdown）。
+      - name: Build portal data and console site
+        working-directory: ${{ github.workspace }}/console
+        run: |
+          python3 tools/scripts/build_portal.py
+          python3 tools/scripts/build_pages.py
+
       - name: Type check
         run: npx tsc --noEmit
 

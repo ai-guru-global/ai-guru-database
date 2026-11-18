@@ -1,0 +1,20 @@
+# gitleaks 配置（本地与 CI 均自动读取仓库根的此文件）
+#
+# [extend] useDefault = true —— 必须显式继承内置规则集：
+# 自定义配置会整体替换默认规则（2026-11-18 实测：漏写时探针密钥不再被检出，等于关掉扫描）。
+#
+# 豁免登记（2026-11-17 CI 实证 + 2026-11-18 本地复扫）：
+#   console/console/data.js 内嵌的研判文档含 `NAV_KEY='ainews.navClosed.v2'`
+#   ——一个 localStorage 键名，被 generic-api-key 规则的“关键词(KEY)+赋值结构”
+#   分支误判为 API key（entropy 3.616349，共 3 处；CI 钉版 v8.18.4 行为相同）。
+# 约束：三重交集（规则 × 路径 × 值前缀），只豁免这一个键名赋值——
+#   该文件内其他模式、其他文件中的 NAV_KEY、以及其他规则一律照常扫描。
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "拆解台 data.js 内嵌研判文档的 NAV_KEY localStorage 键名（非密钥）"
+ruleID = "generic-api-key"
+paths = ['console/console/data\.js']
+regex = "NAV_KEY='ainews"

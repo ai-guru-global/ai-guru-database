@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-"""P1 数据管线：为统一入口页（design/统一入口）生成检索索引与阅读分片。
+"""P1/P2 数据管线：为统一入口页（design/统一入口）生成检索索引、树数据与阅读分片。
 
 产物（默认 --out ../design/统一入口/data）：
-  index.json          跨面检索索引（≤3MB 预算；超预算会失败提示分片）
-  pages/<shard>.json  md → HTML 阅读分片，按顶层目录分片、读取时按需加载
+  index.json          跨面检索索引（≤3MB 预算；机器可读，portal-check 用）
+  index.js            同内容的 window.__PORTAL_INDEX__ 赋值（页面用，file:// 双击可用）
+  tree.js             window.__PORTAL_TREE__：五层产业链节点前缀 + 文档章节计数 + 四面计数
+  pages/<shard>.js    md → HTML 阅读分片（window.__PORTAL_SHARDS__），按顶层目录分片、
+                      读取时按需 <script> 注入——与拆解台 data.js 同模式，绕开 file:// 的
+                      fetch/CORS 限制
   golden.json         检索回归集（配合 --check 使用）
 
 记录字段（P2 前端按此约定消费）：
@@ -196,10 +200,20 @@ def build_wikilink_resolver(records: list[dict]) -> dict[str, str]:
     return by_base
 
 
-def md_to_html(md_text: str, resolver: dict[str, str]) -> str:
-    import markdown
+def md_to_html(md_text: str, resolver: dict[str, str], path_set: set[str],
+               src_dir: Path) -> str:
+    """md → HTML；链接三路改写（代码块/行内码先保护，避免改写示例文本）。
 
-    def repl(m: re.Match) -> str:
+    wikilink [[t|x]]        → 命中索引：#read=（页内阅读），未命中：提示样式
+    普通 md 链接 [x](p.md)  → 命中索引：#read=；真实存在：../../<仓库相对路径>（file:// 直开）
+    其余（http、锚点、缺失）  → 原样交给 markdown
+    """
+    import markdown
+    from urllib.parse import unquote
+
+    text, stash = _protect_code(md_text)
+
+    def wl_repl(m: re.Match) -> str:
         target = m.group(1).strip()
         label = (m.group(2) or target).strip()
         base = Path(target.replace("\\", "/")).stem
@@ -208,20 +222,69 @@ def md_to_html(md_text: str, resolver: dict[str, str]) -> str:
             return f'<a class="wikilink" href="#read={hit}" data-read="{hit}">{label}</a>'
         return f'<span class="wikilink wikilink-miss" title="未解析：{target}">{label}</span>'
 
-    body = WIKILINK_RE.sub(repl, md_text)
+    text = WIKILINK_RE.sub(wl_repl, text)
+
+    def md_repl(m: re.Match) -> str:
+        label, target = m.group(1), unquote(m.group(2).strip())
+        if target.startswith(("http://", "https://", "mailto:", "#")):
+            return m.group(0)
+        path_part = target.split("#", 1)[0].strip()
+        if not path_part:
+            return m.group(0)
+        abs_p = (src_dir / path_part)
+        try:
+            resolved = abs_p.resolve()
+        except OSError:
+            return m.group(0)
+        for root, prefix in ((WIKI, ""), (CONSOLE, "console")):
+            try:
+                rel = resolved.relative_to(root.resolve()).as_posix()
+            except ValueError:
+                continue
+            rec_key = rel if not prefix else f"{prefix}/{rel}"
+            if rec_key in path_set:
+                return f'<a class="mdread" href="#read={rec_key}" data-read="{rec_key}">{label}</a>'
+            if abs_p.exists():
+                file_href = f"../../wiki/{rel}" if not prefix else f"../../console/{rel}"
+                return f'<a href="{file_href}">{label}</a>'
+            break
+        return m.group(0)
+
+    text = MDLINK_RE.sub(md_repl, text)
+    text = _restore_code(text, stash)
     return markdown.markdown(
-        body,
+        text,
         extensions=["tables", "fenced_code", "attr_list", "md_in_html"],
         output_format="html5",
     )
 
 
+MDLINK_RE = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)]+)\)")
+
+
+def _protect_code(text: str) -> tuple[str, list[str]]:
+    stash: list[str] = []
+
+    def stash_fn(m: re.Match) -> str:
+        stash.append(m.group(0))
+        return f"\x00{len(stash) - 1}\x00"
+
+    text = re.sub(r"```.*?```", stash_fn, text, flags=re.S)
+    text = re.sub(r"`[^`\n]+`", stash_fn, text)
+    return text, stash
+
+
+def _restore_code(text: str, stash: list[str]) -> str:
+    return re.sub(r"\x00(\d+)\x00", lambda m: stash[int(m.group(1))], text)
+
+
 def build_pages(records: list[dict], out_dir: Path, resolver: dict[str, str]) -> dict[str, int]:
     pages_dir = out_dir / "pages"
     pages_dir.mkdir(parents=True, exist_ok=True)
-    for old in pages_dir.glob("*.json"):
+    for old in list(pages_dir.glob("*.json")) + list(pages_dir.glob("*.js")):
         old.unlink()
     shards: dict[str, dict[str, str]] = {}
+    path_set = {r["p"] for r in records if r["k"] == "doc"}
     for r in records:
         if r["k"] != "doc":
             continue
@@ -234,15 +297,55 @@ def build_pages(records: list[dict], out_dir: Path, resolver: dict[str, str]) ->
             continue
         m = FM_RE.match(text)
         body = text[m.end():] if m else text
-        shards.setdefault(shard_of(r), {})[r["p"]] = md_to_html(body, resolver)
+        shards.setdefault(shard_of(r), {})[r["p"]] = md_to_html(
+            body, resolver, path_set, src.parent
+        )
     counts = {}
     for name, pages in sorted(shards.items()):
-        safe = name.replace("/", "__") + ".json"
+        safe = name.replace("/", "__") + ".js"
+        payload = json.dumps(pages, ensure_ascii=False, separators=(",", ":"))
         (pages_dir / safe).write_text(
-            json.dumps(pages, ensure_ascii=False, separators=(",", ":")), encoding="utf-8"
+            "window.__PORTAL_SHARDS__=window.__PORTAL_SHARDS__||{};"
+            f"window.__PORTAL_SHARDS__[{json.dumps(name, ensure_ascii=False)}]={payload};",
+            encoding="utf-8",
         )
         counts[name] = len(pages)
     return counts
+
+
+def build_tree(records: list[dict], out_dir: Path) -> dict:
+    """tree.js：产业链层/节点（带 console 路径前缀，供前缀过滤）+ 文档章节计数 + 四面计数。"""
+    chain = json.loads((CONSOLE / "data/chain.json").read_text(encoding="utf-8"))
+    layers = []
+    for i, ly in enumerate(chain["layers"], 1):
+        layer_dir = f"{i:02d}-{ly['name']}"
+        nodes = []
+        for j, nd in enumerate(ly["nodes"], 1):
+            nodes.append({
+                "n": nd["name"],
+                "p": f"console/{layer_dir}/{j:02d}-{nd['name']}/",
+            })
+        layers.append({"n": ly["name"], "p": f"console/{layer_dir}/", "nodes": nodes})
+
+    chapters: dict[str, int] = {}
+    for r in records:
+        if r["s"] in ("文档站", "前端应用") and "/" in r["p"]:
+            top = r["p"].split("/")[0]
+            chapters[top] = chapters.get(top, 0) + 1
+
+    site_pages = len(list((CONSOLE / "site").rglob("*.html")))
+    wiki_docs = sum(1 for r in records if r["s"] in ("文档站", "前端应用"))
+    tree = {
+        "layers": layers,
+        "chapters": [{"n": k, "c": v, "p": k + "/"} for k, v in sorted(chapters.items())],
+        # 拆解台99/前端16为静态口径（app.js:5 与 App.tsx 路由数）；site/docs 构建时实数
+        "surfaces": {"发布站": site_pages, "拆解台": 99, "文档站": wiki_docs, "前端应用": 16},
+    }
+    (out_dir / "tree.js").write_text(
+        "window.__PORTAL_TREE__=" + json.dumps(tree, ensure_ascii=False, separators=(",", ":")) + ";",
+        encoding="utf-8",
+    )
+    return tree
 
 
 GOLDEN = [
@@ -324,18 +427,24 @@ def main() -> int:
         "records": records,
     }
     out_dir.mkdir(parents=True, exist_ok=True)
+    idx_text = json.dumps(index, ensure_ascii=False, separators=(",", ":"))
     idx_path = out_dir / "index.json"
-    idx_path.write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    idx_path.write_text(idx_text, encoding="utf-8")
+    (out_dir / "index.js").write_text("window.__PORTAL_INDEX__=" + idx_text + ";", encoding="utf-8")
     size = idx_path.stat().st_size
-    print(f"index.json: {len(records)} records, {size / 1024 / 1024:.2f} MB, bySurface={by_surface}")
+    print(f"index.json/js: {len(records)} records, {size / 1024 / 1024:.2f} MB, bySurface={by_surface}")
     if size > 3 * 1024 * 1024:
         print("✗ 超出 3MB 预算：按面分片 index（P1 预案），先精简 x 字段", file=sys.stderr)
         return 1
 
+    tree = build_tree(records, out_dir)
+    print(f"tree.js: {len(tree['layers'])} layers / {sum(len(l['nodes']) for l in tree['layers'])} nodes"
+          f" / {len(tree['chapters'])} chapters / surfaces={tree['surfaces']}")
+
     resolver = build_wikilink_resolver(records)
     shard_counts = build_pages(records, out_dir, resolver)
     total_pages = sum(shard_counts.values())
-    pages_size = sum(f.stat().st_size for f in (out_dir / "pages").glob("*.json"))
+    pages_size = sum(f.stat().st_size for f in (out_dir / "pages").glob("*.js"))
     print(f"pages/: {len(shard_counts)} shards, {total_pages} pages, {pages_size / 1024 / 1024:.1f} MB")
 
     (out_dir / "golden.json").write_text(

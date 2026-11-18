@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI GURU 统一工作台（设计稿）</title>
-  <meta name="description" content="把发布站、拆解台、文档站与前端应用收进一个检索框的单页工作台设计稿。">
+  <title>AI GURU 统一工作台</title>
+  <meta name="description" content="把发布站、拆解台、文档站与前端应用收进一个检索框的单页工作台：跨面检索、树式浏览与页内阅读。">
   <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="./styles.css">
 </head>
@@ -21,100 +21,67 @@
   <div class="shell">
     <aside class="tree" aria-label="统一树">
       <details class="tree-disc" open>
-        <summary>产业链树与四面入口</summary>
-        <nav aria-label="产业链">
-        <p class="group">产业链</p>
-        <ul>
-          <li><a href="../../console/01-算力与硬件层/_index.md">L1 算力与硬件层 <span class="count">13</span></a></li>
-          <li>
-            <a href="../../console/02-数据与模型层/_index.md">L2 数据与模型层 <span class="count">12</span></a>
-            <ul class="sub">
-              <li><a href="../../console/02-数据与模型层/03-前沿闭源模型/_index.md" aria-current="page">03 前沿闭源模型</a></li>
-            </ul>
-          </li>
-          <li><a href="../../console/03-平台与工具层/_index.md">L3 平台与工具层 <span class="count">13</span></a></li>
-          <li><a href="../../console/04-行业应用层/_index.md">L4 行业应用层 <span class="count">20</span></a></li>
-          <li><a href="../../console/05-商业与生态层/_index.md">L5 商业与生态层 <span class="count">13</span></a></li>
-        </ul>
-        <p class="group">横向主题</p>
-        <ul>
-          <li><a href="../../console/_topics.md">主题总表 <span class="count">18 类</span></a></li>
-        </ul>
-        <p class="group">文档与工具</p>
-        <ul>
-          <li><a href="#surface-site">发布站 <span class="count">93 页</span></a></li>
-          <li><a href="#surface-console">拆解台 <span class="count">99 视图</span></a></li>
-          <li><a href="#surface-docs">文档站 <span class="count">459 页</span></a></li>
-          <li><a href="#surface-app">前端应用 <span class="count">16 路由</span></a></li>
-        </ul>
+        <summary>产业链树、文档章节与四面入口</summary>
+        <nav id="tree-nav" aria-label="统一树内容">
+          <p class="tree-miss">正在加载树数据…</p>
         </nav>
       </details>
+      <noscript>
+        <p class="tree-miss">本页依赖 JavaScript 加载数据（script 注入模式，兼容 file:// 双击打开）。</p>
+      </noscript>
     </aside>
 
     <main id="main">
       <section id="search-sec" aria-label="全库检索">
         <h1><label for="q">全库检索</label></h1>
-        <form class="search" data-endpoint="" novalidate>
+        <form class="search" id="q-form" data-endpoint="" novalidate>
           <div class="qrow">
-            <input id="q" name="q" type="search" value="Qwen" autocomplete="off"
+            <input id="q" name="q" type="search" autocomplete="off"
                    placeholder="Qwen、MCP、FDE" aria-describedby="q-help">
             <button class="btn btn--primary" type="submit">检索</button>
           </div>
-          <p class="help" id="q-help" aria-live="polite">设计稿：检索尚未接线，下表为 2026-11-17 的真实快照。</p>
+          <p class="help" id="q-help" aria-live="polite">输入即搜：标题 8 分、包含 3 分、路径 2 分、摘要 1 分，取前 10 条。</p>
         </form>
-        <p class="status" role="status">命中 <span class="measured">5</span> 条，覆盖 <span class="measured">4</span> 个面；文档站内容止于 <span class="measured">2026-04</span>。</p>
 
-        <table class="results">
+        <div id="filterbar" hidden>
+          <span class="chip chip-filter">限定 <span id="filter-prefix"></span></span>
+          <button class="btn btn-quiet" type="button" data-clear-prefix>清除限定</button>
+        </div>
+
+        <p class="status" id="status" role="status" hidden></p>
+
+        <div class="state" id="st-loading" aria-label="加载中">
+          <div aria-hidden="true">
+            <div class="sk-row"><span class="sk t"></span><span class="sk m"></span></div>
+            <div class="sk-row"><span class="sk t"></span><span class="sk s"></span></div>
+            <div class="sk-row"><span class="sk t"></span><span class="sk m"></span></div>
+          </div>
+          <p class="why">正在注入检索索引（data/index.js）…</p>
+        </div>
+
+        <div class="state" id="st-error" hidden>
+          <p class="what">索引未加载</p>
+          <p class="why">数据文件缺失或未生成，检索无处可查。</p>
+          <p class="do">在 console/ 运行 make portal 后刷新本页。</p>
+        </div>
+
+        <div class="state" id="st-idle" hidden>
+          <p class="what">开始检索，或从左树逐层浏览</p>
+          <p class="why">索引覆盖仓库全部发布面内容：wiki 章节、console 节点与线索、数据集实体。</p>
+          <p class="do">试试 <a href="#q=Qwen4-Max" data-focus-q>Qwen4-Max</a>，或展开左侧产业链。</p>
+        </div>
+
+        <div class="state" id="st-empty" hidden>
+          <p class="what">没有命中<span id="empty-q"></span></p>
+          <p class="why">检索覆盖仓库全部发布面内容；词太长或太生僻时会落空。</p>
+          <p class="do"><a href="#" data-focus-q>换个词再试</a>，或从左树逐层浏览。</p>
+        </div>
+
+        <table class="results" id="results" hidden>
           <thead>
             <tr><th scope="col">命中</th><th scope="col">面</th><th scope="col">路径</th><th scope="col">更新</th></tr>
           </thead>
-          <tbody>
-            <tr>
-              <td data-label="命中">
-                <a class="hit" href="../../console/02-数据与模型层/03-前沿闭源模型/Qwen4-Max.md" data-crumb="02-数据与模型层/03-前沿闭源模型/Qwen4-Max.md" data-excerpt="1">Qwen4-Max 专题学习页</a>
-                <span class="sub">2.4T 主干、71B 激活，GDN+QSA（Qwen Sparse Attention）架构拆解与新词速查</span>
-              </td>
-              <td data-label="面"><span class="chip">发布站</span></td>
-              <td class="path" data-label="路径">02-数据与模型层/03-前沿闭源模型/Qwen4-Max.md</td>
-              <td class="date" data-label="更新">2026-11-17</td>
-            </tr>
-            <tr>
-              <td data-label="命中">
-                <a class="hit" href="../../console/证据层/开源模型与生态/Qwen.md" data-crumb="证据层/开源模型与生态/Qwen.md">Qwen 线索时间线</a>
-                <span class="sub">2026-11-16 Qwen4-Max 发布条目，官方博客与多源印证</span>
-              </td>
-              <td data-label="面"><span class="chip">拆解台</span></td>
-              <td class="path" data-label="路径">证据层/开源模型与生态/Qwen.md</td>
-              <td class="date" data-label="更新">2026-11-16</td>
-            </tr>
-            <tr>
-              <td data-label="命中">
-                <a class="hit" href="../../console/_2026大事记.md" data-crumb="_2026大事记.md">2026 大事记</a>
-                <span class="sub">2026-11 段登记 Qwen 发布 Qwen4-Max</span>
-              </td>
-              <td data-label="面"><span class="chip">拆解台</span></td>
-              <td class="path" data-label="路径">_2026大事记.md</td>
-              <td class="date" data-label="更新">2026-11-16</td>
-            </tr>
-            <tr>
-              <td data-label="命中">
-                <a class="hit" href="../../wiki/05_大模型/09_多模态模型/06_多模态_架构_2026.md" data-crumb="05_大模型/09_多模态模型/06_多模态_架构_2026.md">Multimodal Architectures 2026</a>
-                <span class="sub">CLIP、LLaVA、GPT-4o、Qwen-VL 多模态融合</span>
-              </td>
-              <td data-label="面"><span class="chip">前端应用</span></td>
-              <td class="path" data-label="路径">05_大模型/09_多模态模型/06_多模态_架构_2026.md</td>
-              <td class="date" data-label="更新"><span class="fill" data-fill="doc-date">日期待接入</span></td>
-            </tr>
-            <tr>
-              <td data-label="命中">
-                <a class="hit" href="../../code/前端应用/public/mkdocs/00_AI_Introduction/AI_Technology_Landscape/index.html" data-crumb="00_AI_Introduction/AI_Technology_Landscape/">AI Technology Landscape</a>
-                <span class="sub">AI 技术全景，提及 Qwen 系列的旧版快照</span>
-              </td>
-              <td data-label="面"><span class="chip">文档站</span></td>
-              <td class="path" data-label="路径">00_AI_Introduction/AI_Technology_Landscape/</td>
-              <td class="date" data-label="更新">2026-04</td>
-            </tr>
-          </tbody>
+          <tbody id="results-body"></tbody>
         </table>
       </section>
 
@@ -134,7 +101,7 @@
                    alt="发布站首页：AI GURU Industry Graph，五层产业链卡片与顶部导航"
                    fetchpriority="high">
             </div>
-            <figcaption class="caption">发布站首页：console/site，<span class="measured">93</span> 页</figcaption>
+            <figcaption class="caption">发布站首页：console/site，<span class="measured" id="cap-site">93</span> 页</figcaption>
           </figure>
         </section>
         <section class="panel" id="surface-console" role="tabpanel" aria-labelledby="tab-console">
@@ -144,7 +111,7 @@
                    alt="拆解台总览：左侧五层树与 KPI 面板，最新大事显示 Qwen 发布 Qwen4-Max"
                    loading="lazy">
             </div>
-            <figcaption class="caption">拆解台总览：console/console，<span class="measured">99</span> 视图</figcaption>
+            <figcaption class="caption">拆解台总览：console/console，<span class="measured" id="cap-console">99</span> 视图</figcaption>
           </figure>
         </section>
         <section class="panel" id="surface-docs" role="tabpanel" aria-labelledby="tab-docs">
@@ -154,7 +121,7 @@
                    alt="文档站首页：AI Guru 知识库目录、章节导航与右侧目录栏"
                    loading="lazy">
             </div>
-            <figcaption class="caption">文档站首页：public/mkdocs，<span class="measured">459</span> 页，2026-04 快照</figcaption>
+            <figcaption class="caption">文档站首页：public/mkdocs，<span class="measured" id="cap-docs">3242</span> 篇（2026-11-18 全量重建）</figcaption>
           </figure>
         </section>
         <section class="panel" id="surface-app" role="tabpanel" aria-labelledby="tab-app">
@@ -164,62 +131,22 @@
                    alt="前端应用首页：AI Guru Knowledge Base，检索入口与文档统计"
                    loading="lazy">
             </div>
-            <figcaption class="caption">前端应用首页：code/前端应用，<span class="measured">16</span> 路由</figcaption>
+            <figcaption class="caption">前端应用首页：code/前端应用，<span class="measured" id="cap-app">16</span> 路由</figcaption>
           </figure>
         </section>
-      </section>
-
-      <section class="states" id="states-sec" aria-label="结果区状态设计">
-        <h2>结果区的三个备用状态</h2>
-        <div class="state-grid">
-          <figure class="state">
-            <div aria-hidden="true">
-              <div class="sk-row"><span class="sk t"></span><span class="sk m"></span></div>
-              <div class="sk-row"><span class="sk t"></span><span class="sk s"></span></div>
-              <div class="sk-row"><span class="sk t"></span><span class="sk m"></span></div>
-            </div>
-            <figcaption>加载：按结果行的形状给骨架，宽度随内容，内容就位前不跳动。</figcaption>
-          </figure>
-          <figure class="state">
-            <p class="what">没有命中「quantum blockchain」</p>
-            <p class="why">检索覆盖仓库全部 md 与数据集；词太长或太生僻时会落空。</p>
-            <p class="do"><a href="#q" data-focus-q>换个词再试</a>，或从左树逐层浏览。</p>
-            <figcaption>空：说清什么没命中、为什么、下一步做什么，不只写「无结果」。</figcaption>
-          </figure>
-          <figure class="state">
-            <p class="what">索引未加载</p>
-            <p class="why">数据集未构建，检索无处可查。</p>
-            <p class="do">在仓库根目录运行 make dataset 后重试。</p>
-            <figcaption>错误：说明坏在哪、为何、怎么办，一行说完。</figcaption>
-          </figure>
-        </div>
-        <p class="caption">设计稿说明：实现时三态由真实检索驱动，示意内容不进生产。</p>
       </section>
 
       <section class="reader" id="reader" hidden aria-label="阅读视图">
         <div class="reader-actions">
           <button class="btn" type="button" id="r-back">返回结果</button>
         </div>
-        <p class="crumb" id="r-crumb">02-数据与模型层/03-前沿闭源模型/Qwen4-Max.md</p>
-        <h1 id="r-title">Qwen4-Max 专题学习页</h1>
-        <p class="status" id="r-lede">2.4T 主干、71B 激活，GDN+QSA（Qwen Sparse Attention）架构拆解与新词速查</p>
-        <blockquote id="r-quote">阿里 Qwen4 系列首款旗舰闭源模型：2.4T 主干参数、原生视觉、百万上下文，主打「更省 token 的 AI 同事」。</blockquote>
-        <div id="r-excerpt">
-          <h2>本报告新名词速查（节选）</h2>
-          <table class="results">
-            <thead><tr><th scope="col">名词</th><th scope="col">大白话</th></tr></thead>
-            <tbody>
-              <tr><td class="path">QSA（Qwen Sparse Attention）</td><td>先派廉价「前台」按块筛出相关段落，再让「专家」精读</td></tr>
-              <tr><td class="path">GDN（Gated DeltaNet）</td><td>把读过的历史浓缩进固定大小的「笔记本」，文章再长笔记也不变厚</td></tr>
-              <tr><td class="path">Gated Residual（GR）</td><td>残差高速路从 1 条扩成 4 条还装了闸门，梯度走得稳</td></tr>
-              <tr><td class="path">N-gram Embedding</td><td>328B 查表参数给模型发一批「常用词组卡片」，扩容量几乎不加算力</td></tr>
-            </tbody>
-          </table>
-          <p class="note">节选自该页「新名词速查」；完整页面含逐段拆解、三张图与评测表。</p>
-        </div>
-        <p class="note" id="r-note" hidden>该文件的完整渲染由实现阶段的 md 渲染器提供；此设计稿只内嵌了第一条的真实节选。</p>
+        <p class="crumb" id="r-crumb"></p>
+        <h1 id="r-title"></h1>
+        <p class="status" id="r-lede"></p>
+        <div class="r-body" id="r-body"></div>
+        <p class="note" id="r-note" hidden></p>
         <div class="reader-actions">
-          <a class="btn" id="r-open" href="../../console/02-数据与模型层/03-前沿闭源模型/Qwen4-Max.md">打开原始文件</a>
+          <a class="btn" id="r-open" href="#">打开原始文件</a>
         </div>
       </section>
     </main>
@@ -230,113 +157,9 @@
     <span>asOf 2026-11-16</span>
     <span>校验 0 warning</span>
     <span>截图 2026-11-17</span>
-    <span>设计稿 v1</span>
+    <span>工作台 v2</span>
   </footer>
 
-  <script>
-    window.hallmarkSlots = function (map) {
-      if (!map) return;
-      document.querySelectorAll('[data-slot]').forEach(function (el) {
-        var key = el.getAttribute('data-slot');
-        if (map[key]) { var img = el.querySelector('img'); if (img) img.src = map[key]; }
-      });
-    };
-
-    (function () {
-      var disc = document.querySelector('.tree-disc');
-      var mq = window.matchMedia('(max-width: 60rem)');
-      function syncTree() { if (disc) disc.open = !mq.matches; }
-      syncTree();
-      if (mq.addEventListener) mq.addEventListener('change', syncTree);
-
-      var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
-      var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('aria-controls')); });
-      function select(i) {
-        tabs.forEach(function (t, j) {
-          var on = i === j;
-          t.setAttribute('aria-selected', on ? 'true' : 'false');
-          t.tabIndex = on ? 0 : -1;
-          if (panels[j]) panels[j].hidden = !on;
-        });
-      }
-      tabs.forEach(function (t, i) {
-        t.addEventListener('click', function () { select(i); if (panels[i]) { try { history.replaceState(null, '', '#' + panels[i].id); } catch (err) {} } });
-        t.addEventListener('keydown', function (e) {
-          var n = null;
-          if (e.key === 'ArrowRight') n = (i + 1) % tabs.length;
-          if (e.key === 'ArrowLeft') n = (i - 1 + tabs.length) % tabs.length;
-          if (e.key === 'Home') n = 0;
-          if (e.key === 'End') n = tabs.length - 1;
-          if (n !== null) { e.preventDefault(); select(n); tabs[n].focus(); }
-        });
-      });
-      document.querySelectorAll('a[href^="#surface-"]').forEach(function (a) {
-        a.addEventListener('click', function (e) {
-          var id = a.getAttribute('href').slice(1);
-          var idx = panels.findIndex(function (p) { return p && p.id === id; });
-          if (idx >= 0) { e.preventDefault(); select(idx); tabs[idx].focus(); try { history.replaceState(null, '', '#' + id); } catch (err) {} }
-        });
-      });
-      if (tabs.length) select(0);
-
-      var reader = document.getElementById('reader');
-      var viewSections = ['search-sec', 'surfaces-sec', 'states-sec'].map(function (id) { return document.getElementById(id); });
-      function setHash(h) { try { history.replaceState(null, '', h); } catch (e) { /* file:// 下忽略 */ } }
-      document.querySelectorAll('.results .hit').forEach(function (a) {
-        a.addEventListener('click', function (e) {
-          e.preventDefault();
-          var row = a.closest('tr');
-          document.getElementById('r-crumb').textContent = a.getAttribute('data-crumb') || a.getAttribute('href');
-          document.getElementById('r-title').textContent = a.textContent.trim();
-          document.getElementById('r-lede').textContent = row.querySelector('.sub').textContent;
-          document.getElementById('r-open').setAttribute('href', a.getAttribute('href'));
-          var has = a.getAttribute('data-excerpt') === '1';
-          document.getElementById('r-quote').hidden = !has;
-          document.getElementById('r-excerpt').hidden = !has;
-          document.getElementById('r-note').hidden = has;
-          viewSections.forEach(function (s) { if (s) s.hidden = true; });
-          reader.hidden = false;
-          setHash('#read');
-          document.getElementById('r-back').focus();
-          window.scrollTo(0, 0);
-        });
-      });
-      document.getElementById('r-back').addEventListener('click', function () {
-        reader.hidden = true;
-        viewSections.forEach(function (s) { if (s) s.hidden = false; });
-        setHash('#results');
-        var first = document.querySelector('.results .hit');
-        if (first) first.focus();
-      });
-      document.querySelectorAll('[data-focus-q]').forEach(function (el) {
-        el.addEventListener('click', function (e) {
-          e.preventDefault();
-          var q = document.getElementById('q');
-          if (q) { q.focus(); q.select(); }
-        });
-      });
-
-      var form = document.querySelector('form[data-endpoint]');
-      var input = document.getElementById('q');
-      var help = document.getElementById('q-help');
-      if (form && input && help) {
-        form.addEventListener('submit', function (e) {
-          e.preventDefault();
-          var ok = input.value.trim().length > 0;
-          input.toggleAttribute('aria-invalid', !ok);
-          if (!ok) { help.textContent = '请输入检索词，例如 Qwen。'; help.classList.add('is-error'); input.focus(); return; }
-          help.classList.remove('is-error');
-          help.textContent = '设计稿：检索尚未接线，下表为 2026-11-17 的真实快照。';
-        });
-        input.addEventListener('input', function () {
-          if (input.hasAttribute('aria-invalid') && input.value.trim()) {
-            input.removeAttribute('aria-invalid');
-            help.classList.remove('is-error');
-            help.textContent = '设计稿：检索尚未接线，下表为 2026-11-17 的真实快照。';
-          }
-        });
-      }
-    })();
-  </script>
+  <script src="./app.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 /* Hallmark · shape: app screen · genre: modern-minimal · theme: Console (deal 1/3, seed single-page-research-workbench-merging-109e·b675e3fb·2026-11-17·r0)
  * nav: 顶栏 wordmark + 计数，左侧统一树（五层 71 节点 + 四面入口），主区全库检索
  * signature: 跨面检索结果表（查询 Qwen，5 行命中覆盖 4 个面，真实路径列）
- * states: full / loading / empty / error 四态在页展示，reader 阅读视图是签名的落地态 · console: graphite
+ * states: full / loading / error / idle / empty 由真实检索驱动 · wire: data/index.js + data/tree.js + data/pages/<shard>.js（script 注入，file:// 双击可用） · console: graphite
  * axes: dark/grotesk-sans/chromatic-amber · posture: restrained · contrast: pass · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H4 E4 S4 R5 V5 · weakest: S, shell 本可属于任一检索工具；以真实路径列与五层树计数锚定本产品 */
 /* Hallmark · finish-review: subagent · 4 findings · 4 resolved */
@@ -38,8 +38,11 @@
   position: sticky; top: 0; align-self: start;
   border-right: var(--rule-hair) solid var(--color-rule);
   background: var(--color-paper-2);
-  padding-block: var(--space-md);
+  padding-block: var(--space-md) var(--space-lg);
   min-height: calc(100dvh - 56px);
+}
+@media (min-width: 60.0625rem) {
+  .tree { max-height: 100dvh; overflow-y: auto; overscroll-behavior-y: contain; }
 }
 .tree .group {
   margin: var(--space-md) 0 var(--space-2xs); padding-inline: var(--space-lg);
@@ -220,4 +223,82 @@ h2 { font-size: var(--text-title); }
   .results td[data-label="命中"]::before,
   .results td[data-label="命中"] .hit,
   .results td .sub { grid-column: 1 / -1; }
+}
+
+/* ---------------- P2 生产化：数据驱动的树、过滤条、阅读体 ---------------- */
+
+/* 树：层折叠行与节点按钮（与 .tree a 同一视觉） */
+.tree .layer > summary {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-xs);
+  min-height: 36px; padding: var(--space-2xs) var(--space-lg);
+  cursor: pointer; list-style: none;
+  font-size: var(--text-md); color: var(--color-ink-2);
+}
+.tree .layer > summary::-webkit-details-marker { display: none; }
+.tree .layer > summary::after { content: "▾"; font-size: var(--text-xs); color: var(--color-muted); }
+.tree .layer:not([open]) > summary::after { content: "▸"; }
+.tree .layer > summary:hover { background: var(--color-paper-3); color: var(--color-ink); }
+.tree .layer > summary:focus-visible { outline: 2px solid var(--color-focus); outline-offset: -2px; }
+.tree .nodes { list-style: none; margin: 0; padding: 0; }
+.tree .nodes button {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-xs);
+  width: 100%; min-height: 32px;
+  padding: var(--space-2xs) var(--space-lg) var(--space-2xs) var(--space-xl);
+  border: 0; background: none; color: var(--color-ink-2);
+  font: inherit; font-size: var(--text-sm); text-align: left; cursor: pointer;
+}
+.tree .nodes button:hover { background: var(--color-paper-3); color: var(--color-ink); }
+.tree .nodes button:focus-visible { outline: 2px solid var(--color-focus); outline-offset: -2px; }
+.tree .nodes button[aria-pressed="true"] {
+  color: var(--color-ink); font-weight: 500;
+  box-shadow: inset 2px 0 0 var(--color-accent);
+}
+.tree-miss { margin: 0; padding: var(--space-sm) var(--space-lg); font-size: var(--text-sm); color: var(--color-muted); }
+
+/* 过滤条 */
+#filterbar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-xs);
+  margin-top: var(--space-sm);
+}
+.btn-quiet {
+  min-height: 32px; padding: 0 var(--space-sm);
+  font-size: var(--text-sm); background: transparent; color: var(--color-ink-2);
+  border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-pill);
+  cursor: pointer; font-weight: 500;
+}
+.btn-quiet:hover { background: var(--color-paper-2); color: var(--color-ink); }
+.btn-quiet:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+.muted { color: var(--color-muted); }
+
+/* 阅读体：渲染后的 md */
+.r-body { display: grid; gap: var(--space-md); color: var(--color-ink-2); }
+.r-body h1, .r-body h2, .r-body h3 { color: var(--color-ink); }
+.r-body h2 { font-size: var(--text-lg); margin-top: var(--space-sm); }
+.r-body h3 { font-size: var(--text-title); margin-top: var(--space-xs); }
+.r-body p, .r-body li { max-width: 75ch; }
+.r-body ul, .r-body ol { margin: 0; padding-left: var(--space-xl); }
+.r-body a { color: var(--color-ink); text-decoration-color: var(--color-rule-2); text-underline-offset: 0.16em; }
+.r-body a:hover { text-decoration-color: var(--color-accent); }
+.r-body table { width: 100%; border-collapse: collapse; }
+.r-body th {
+  text-align: left; white-space: nowrap; font-weight: 500; font-size: var(--text-sm);
+  color: var(--color-muted); padding: var(--space-xs) var(--space-sm);
+  border-bottom: var(--rule-hair) solid var(--color-rule-2);
+}
+.r-body td {
+  padding: var(--space-sm); vertical-align: top; font-size: var(--text-sm);
+  border-bottom: var(--rule-hair) solid var(--color-rule);
+}
+.r-body pre {
+  margin: 0; padding: var(--space-sm); overflow-x: auto;
+  background: var(--color-paper-3); border-radius: var(--radius-pill);
+  font-family: var(--font-outlier); font-size: var(--text-xs); line-height: 1.5;
+}
+.r-body code { font-family: var(--font-outlier); font-size: 0.92em; }
+.r-body pre code { font-size: inherit; }
+.r-body img { border-radius: var(--radius-card); outline: 1px solid color-mix(in oklab, var(--color-ink) 8%, transparent); outline-offset: -1px; }
+.r-body hr { border: 0; border-top: var(--rule-hair) solid var(--color-rule); }
+.wikilink-miss {
+  color: var(--color-muted);
+  border-bottom: 1px dashed color-mix(in oklch, var(--color-muted) 70%, transparent);
 }

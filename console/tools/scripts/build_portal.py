@@ -447,6 +447,14 @@ def main() -> int:
     pages_size = sum(f.stat().st_size for f in (out_dir / "pages").glob("*.js"))
     print(f"pages/: {len(shard_counts)} shards, {total_pages} pages, {pages_size / 1024 / 1024:.1f} MB")
 
+    # 分片覆盖强校验：每条 doc 记录都必须有可读分片，源文件缺失/被跳过即失败
+    doc_count = sum(1 for r in records if r["k"] == "doc")
+    if total_pages != doc_count:
+        print(f"✗ 分片覆盖不全：doc 记录 {doc_count} ≠ 分片页面 {total_pages}"
+              f"（源文件缺失或被静默跳过，阅读视图会出现缺口）", file=sys.stderr)
+        return 1
+    print(f"分片覆盖校验通过：{total_pages}/{doc_count}")
+
     (out_dir / "golden.json").write_text(
         json.dumps(GOLDEN, ensure_ascii=False, indent=1), encoding="utf-8"
     )

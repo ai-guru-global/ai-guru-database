@@ -49,6 +49,15 @@
 
 给 Agent 用：仓库自带零依赖 MCP server（`tools/mcp/aiguru_mcp.py`），配置见 [`tools/mcp/README.md`](tools/mcp/README.md)。给 JS/TS 用：npm 包 `ai-industry-graph`（[`packages/ai-industry-graph`](packages/ai-industry-graph)）。
 
+## 统一入口（跨面检索台）
+
+[`../design/统一入口/`](../design/统一入口/index.html) 把四个 Web 面（发布站 / 拆解台 / 文档站 / 前端应用）收进一个检索框：跨面检索（打分口径与 `tools/scripts/build_portal.py` 的 docstring 一致，golden 回归守护）、五层产业链与 wiki 章节树的前缀过滤、md 页内阅读（wikilink 与普通 md 链接均改写为 `#read=` 跳转）。双击 `index.html` 即用——数据以 script 注入（`data/index.js`、`data/tree.js`、`data/pages/<shard>.js`），兼容 file://，与拆解台 `data.js` 同模式。
+
+- 重新生成数据：`make portal`（产物在 `../design/统一入口/data/`；`index.json`/`index.js`/`tree.js` 入库，`pages/` 分片约 52MB 已 gitignore）
+- 检索回归：`make portal-check`（golden 10 条，`make portal` 构建时也会自动执行）
+- 分片覆盖强校验：doc 记录数必须等于分片页面数，源文件缺失会在构建时报错
+- 部署口径：页面本体尚未上线（部署 URL 待定）；四个面的打开方式为——md 页内阅读、发布站/拆解台/文档站走仓内文件直开、前端应用走 GitHub Pages 线上地址
+
 ## 目录结构
 
 ```
@@ -125,4 +134,5 @@ RSS：`https://ai-guru-global.github.io/ai-guru-console/feed.xml`（每周自动
 - `tools/scripts/build_tree.py`：生成五层目录树（`make tree`）
 - `tools/scripts/build_console.py`：重建拆解台内嵌数据（`make console`）
 - `tools/scripts/build_dataset.py` / `build_pages.py` / `check_links.py`：数据集、静态站与链接检查
+- `tools/scripts/build_portal.py`：统一入口检索索引、树数据与阅读分片（`make portal` / `make portal-check`）
 - `tools/cmd/`：Go CLI（本地阅读、筛选、导出）、Web 界面与浏览器剪藏扩展

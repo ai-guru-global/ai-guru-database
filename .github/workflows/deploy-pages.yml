@@ -76,15 +76,17 @@ jobs:
       # Portal 上线（2026-11-19 拍板）：五面同源——portal 本体 + 发布站/拆解台随包，
       # 文档站走同源 ../mkdocs/，前端应用即站点根。data.local.js 为 gitignore 的本机数据，
       # CI 无此文件（拆解台按设计容忍缺失，研判面板留空）。
+      # 注意：job 默认 working-directory 是 code/前端应用，此步显式用仓库根——
+      # 但上传路径是 code/前端应用/dist，所有目标必须写全路径（曾因 dist/歧义打错目录）。
       - name: Copy portal and static surfaces into dist
         working-directory: ${{ github.workspace }}
         run: |
-          rm -rf dist/portal
-          mkdir -p dist/portal/surfaces
-          cp -r design/统一入口/. dist/portal/
-          rm -rf dist/portal/.hallmark
-          cp -r console/site dist/portal/surfaces/site
-          cp -r console/console dist/portal/surfaces/console
+          rm -rf code/前端应用/dist/portal
+          mkdir -p code/前端应用/dist/portal/surfaces
+          cp -r design/统一入口/. code/前端应用/dist/portal/
+          rm -rf code/前端应用/dist/portal/.hallmark
+          cp -r console/site code/前端应用/dist/portal/surfaces/site
+          cp -r console/console code/前端应用/dist/portal/surfaces/console
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

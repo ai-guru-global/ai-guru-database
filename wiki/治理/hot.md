@@ -63,9 +63,9 @@ name_zh: "热门页面"
 - [[05_大模型/14_中国LLM生态/ModelScope_Model_Catalog]] — 15 家厂商 ModelScope 模型目录（组织信息 + Top 模型精选 + 许可/任务统计）
 - [[05_大模型/14_中国LLM生态/ModelScope_Model_Index]] — 全量 1,621 个模型完整索引表（按厂商分组、下载量排序）
 
-### 原始数据（来源/modelscope/）
-- `来源/modelscope/README.md` — 数据源说明 + 抓取方法 + org→namespace 映射
-- `来源/modelscope/raw/*.json` — 15 个厂商的完整模型元数据（含可复跑 `scraper.py`）
+### 原始数据（资料与归档/来源/modelscope/）
+- `资料与归档/来源/modelscope/README.md` — 数据源说明 + 抓取方法 + org→namespace 映射
+- `资料与归档/来源/modelscope/raw/*.json` — 15 个厂商的完整模型元数据（含可复跑 `scraper.py`）
 
 **亮点**: Qwen 437 模型 / 1.46 亿次下载居首；发现 ByteDance 官方模型实际位于 `bytedance-community`（非 `ByteDance-Seed`）、InternLM 归属 `Shanghai_AI_Laboratory` namespace。
 
@@ -139,7 +139,7 @@ name_zh: "热门页面"
 - [[05_大模型/14_中国LLM生态/09_GLM_Zhipu_深入分析]] — 新增 §"GLM-5.2 正式发布与开源详解" (9 小节, 含架构/国产算力/部署/Agent 产品/未来路线)
 - [[05_大模型/14_中国LLM生态/04_Chinese_LLM_对比_矩阵]] — GLM 行升级到 GLM-5.2, 国产算力适配列扩展为 8 家
 - [[05_大模型/14_中国LLM生态/README]] — 第一梯队 GLM 行更新
-- [[来源/wechat/2026-06-glm-5.2-release]] — 原文存档
+- [[资料与归档/来源/wechat/2026-06-glm-5.2-release]] — 原文存档
 
 ### 信源
 - 原文: https://mp.weixin.qq.com/s/GRzZ1NCCe1hWzYvCxN003Q

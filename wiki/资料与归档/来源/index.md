@@ -1,18 +1,19 @@
 ---
-title: Wechat
+title: Sources
 type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
 ---
 
-# Wechat
+# Sources
 
-This page indexes the contents of `来源/wechat`.
+This page indexes the contents of `来源`.
 
-## Files
+## Subdirectories
 
-- [[来源/wechat/2026-06-glm-5.2-release|2026 06 Glm 5.2 Release]]
+- [[资料与归档/来源/aliyun/index|Aliyun]]
+- [[资料与归档/来源/wechat/index|Wechat]]
 
 ## 核心知识框架
 

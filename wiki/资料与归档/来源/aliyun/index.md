@@ -1,19 +1,18 @@
 ---
-title: Sources
+title: Aliyun
 type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
 ---
 
-# Sources
+# Aliyun
 
-This page indexes the contents of `来源`.
+This page indexes the contents of `来源/aliyun`.
 
-## Subdirectories
+## Files
 
-- [[来源/aliyun/index|Aliyun]]
-- [[来源/wechat/index|Wechat]]
+- [[资料与归档/来源/aliyun/MIG使用指南_v2.1|MIG使用指南 V2.1]]
 
 ## 核心知识框架
 

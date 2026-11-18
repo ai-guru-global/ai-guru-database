@@ -10,8 +10,8 @@ LLM 模式（配置环境变量后）：将检索块交给 OpenAI 兼容接口�
     ASSISTANT_MODEL      如 qwen-plus
 
 用法：
-    python3 assistant/query.py "KServe 和 vLLM 什么关系"
-    python3 assistant/query.py "Token 工厂和 IDC 的区别" --topk 5 --llm
+    python3 资料与归档/assistant/query.py "KServe 和 vLLM 什么关系"
+    python3 资料与归档/assistant/query.py "Token 工厂和 IDC 的区别" --topk 5 --llm
 """
 import gzip
 import json
@@ -24,7 +24,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_index import tokenize  # noqa: E402
 
-INDEX = Path(__file__).resolve().parent.parent / '.code-up' / 'rag-index' / 'index.json.gz'
+INDEX = Path(__file__).resolve().parents[2] / '.code-up' / 'rag-index' / 'index.json.gz'
 
 
 def load():

@@ -1,18 +1,18 @@
 ---
-title: Aliyun
+title: Wechat
 type: index
 created: 2026-07-02
 updated: 2026-07-02
 sources: []
 ---
 
-# Aliyun
+# Wechat
 
-This page indexes the contents of `来源/aliyun`.
+This page indexes the contents of `来源/wechat`.
 
 ## Files
 
-- [[来源/aliyun/MIG使用指南_v2.1|MIG使用指南 V2.1]]
+- [[资料与归档/来源/wechat/2026-06-glm-5.2-release|2026 06 Glm 5.2 Release]]
 
 ## 核心知识框架
 

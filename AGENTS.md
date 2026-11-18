@@ -49,8 +49,14 @@ wiki/                   OBSIDIAN VAULT ROOT — open THIS directory as the vault
                         and the safety AGENTS.md.
   原始/                 Ingest inbox — unprocessed drafts staged for wiki-ingest.
                         Distinct from `code/原始/`, which holds cloned repos.
-  来源/                  Source materials (technical-report PDFs, wechat articles).
-  归档/, docs/, reports/, GTM/, AI原生企业/, DeepSeek 研究/, assistant/
+                        (Top-level kept: 10+ wiki-* skills hard-code it as inbox.)
+  归档/                 Archive — top-level kept (10+ skills hard-code `归档/` as
+                        an exclusion path; see 治理/Directory_Restructure_Plan_2026).
+  专题研究/              Project-based research zone (restructure 2026-11 P1):
+                        DeepSeek 研究/, 机构深度研究/, AI原生企业/, GTM/.
+  资料与归档/            Ops-materials zone (restructure 2026-11 P2):
+                        reports/, 来源/ (source materials), docs/,
+                        assistant/ (RAG assistant scripts + README).
   index.md             Auto-maintained vault index. Do NOT hand-edit.
   .manifest.json       Ingest tracking ledger (source → promoted pages).
 code/                   ALL code.

@@ -18,7 +18,7 @@ import os
 import re
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]  # wiki/（脚本现位于 wiki/资料与归档/assistant/）
 OUT = ROOT / '.code-up' / 'rag-index' / 'index.json.gz'
 CJK_RUN = re.compile(r'[\u4e00-\u9fff]+')
 ASCII_RUN = re.compile(r'[a-z0-9]+')
@@ -29,7 +29,7 @@ REQUIRED = ('title', 'category', 'tags', 'summary',
             'created', 'updated', 'tier', 'name_zh')
 ALWAYS_SKIP = {'.git', '.obsidian', '.qoder', '.claude', '.githooks', '.github',
                'node_modules', 'release'}
-ROOT_ONLY_SKIP = {'前端应用', '原始', '来源', '归档', 'docs', 'code', '工具',
+ROOT_ONLY_SKIP = {'前端应用', '原始', '来源', '归档', 'docs', 'code', '工具', '资料与归档',
                   'assistant'}   # 本助手自身是工具代码，不是知识语料
 CHUNK_TARGET = 600          # 单块目标字符数
 MAX_DF_RATIO = 0.30         # 出现在 30% 以上块中的词视为停用

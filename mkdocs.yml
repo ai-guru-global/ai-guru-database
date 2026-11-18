@@ -18,12 +18,12 @@ exclude_docs: |
   _ppt_workspace/**
   治理/**
   原始/**
-  来源/**
+  资料与归档/来源/**
   归档/**
-  docs/**
+  资料与归档/docs/**
   专题研究/GTM/**
-  reports/**
-  assistant/**
+  资料与归档/reports/**
+  资料与归档/assistant/**
   **/node_modules/**
 
 theme:

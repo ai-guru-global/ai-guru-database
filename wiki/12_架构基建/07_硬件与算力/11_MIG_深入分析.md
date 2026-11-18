@@ -21,7 +21,7 @@ name_zh: "MIG : GPU 空间分片与多租户隔离深度解析"
 > **一句话理解**: MIG 是 GPU 的「硬件级刀片」——把一张 A100/H100 在硅片层面切成最多 7 个互相隔离的实例（GI/CI），每个实例独享显存与算力、故障互不影响，是大模型推理做多租户细粒度切分、榨干单卡利用率的事实标准。
 
 > **硬件支持**: NVIDIA A100 / A30 / H100 / H200 / B200；国产侧阿里云 PPU、摩尔线程、沐曦、海光等亦提供 MIG 兼容语义（`ppu-smi` 等工具对齐 `nvidia-smi`）。
-> **信源**: 本文操作部分蒸馏自阿里云《MIG 使用指南 v2.1》〔[[来源/aliyun/MIG使用指南_v2.1]]〕，并补齐 NVIDIA 原生 profile 与 K8s 生产实践。
+> **信源**: 本文操作部分蒸馏自阿里云《MIG 使用指南 v2.1》〔[[资料与归档/来源/aliyun/MIG使用指南_v2.1]]〕，并补齐 NVIDIA 原生 profile 与 K8s 生产实践。
 
 ---
 
@@ -365,5 +365,5 @@ CUDA_VISIBLE_DEVICES=4,2,MIG-${UUID},3,PPU-${UUID}  # 生效：GPU4,GPU2
 - [[12_架构基建/03_AI技术栈/11_HAMi_深入分析]] — GPU 超卖与多租户（与 MIG 互补）
 - [[概念/gpu-virtualization]] — GPU 虚拟化全景
 - [[治理/hami-cdi-dra]] — GPU 共享技术栈综合
-- [[来源/aliyun/MIG使用指南_v2.1]] — 原始信源归档（阿里云 PPU MIG 指南 v2.1）
+- [[资料与归档/来源/aliyun/MIG使用指南_v2.1]] — 原始信源归档（阿里云 PPU MIG 指南 v2.1）
 - [[README]] — 知识库总索引

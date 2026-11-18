@@ -48,8 +48,10 @@ def collect_files():
         rel_dp = os.path.relpath(dp, CONTENT)
         if rel_dp != '.':
             dirs.add(rel_dp)
-        top = rel_dp.split(os.sep)[0]
-        scannable = rel_dp == '.' or top not in ROOT_ONLY_SKIP
+        parts = () if rel_dp == '.' else rel_dp.split(os.sep)
+        # 2026-11 目录重组后 来源/docs 收编于 资料与归档/ 之下：路径一级或二级
+        # 命中跳过集均不作扫描源，延续「信源/规划稿只作合法链接目标」的既定口径
+        scannable = rel_dp == '.' or not any(p in ROOT_ONLY_SKIP for p in parts[:2])
         for f in fns:
             if f.endswith('.md'):
                 rel = os.path.normpath(os.path.join(rel_dp, f)) if rel_dp != '.' else f

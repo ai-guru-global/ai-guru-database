@@ -67,6 +67,10 @@ def build_indexes(mds):
         rel_index.add(no_ext)
         # Obsidian 的 basename 解析对大小写不敏感
         name_index[os.path.basename(no_ext).lower()].append(no_ext)
+    # 候选按路径排序：os.walk 遍历顺序在 macOS/Linux 上不同，重名文件的
+    # 「先到先得」会造成门禁结果跨平台漂移（link_gate 取 [0]），排序后两侧一致
+    for key in name_index:
+        name_index[key].sort()
     return rel_index, name_index
 
 

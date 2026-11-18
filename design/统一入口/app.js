@@ -12,6 +12,32 @@
   var tree = null;
   var $ = function (id) { return document.getElementById(id); };
 
+  /* 部署口径：file:// 双击 = 仓内相对路径直开；http(s) = Pages 打包结构
+   * （portal 与 发布站/拆解台 同在 /portal/ 下，文档站在 ../mkdocs/，前端应用在 ../）
+   * 原始 md 文件线上走 GitHub blob（仓库公开）。 */
+  var ONLINE = location.protocol !== 'file:';
+  function surfaceHref(kind) {
+    if (!ONLINE) {
+      return {
+        site: '../../console/site/index.html',
+        cons: '../../console/console/index.html',
+        docs: '../../code/前端应用/public/mkdocs/index.html',
+        app: 'https://ai-guru-global.github.io/ai-guru-database/'
+      }[kind];
+    }
+    return {
+      site: './surfaces/site/index.html',
+      cons: './surfaces/console/index.html',
+      docs: '../mkdocs/index.html',
+      app: '../'
+    }[kind];
+  }
+  function rawHref(path) {
+    var p = String(path).split('#')[0];
+    if (!ONLINE) return '../../' + p;
+    return 'https://github.com/ai-guru-global/ai-guru-database/blob/main/' + encodeURI(p);
+  }
+
   /* ---------------- hash 路由（前进/后退可用） ---------------- */
   function parseHash() {
     var out = { q: '', p: '', read: '', surface: state.surface || 'site' };
@@ -225,8 +251,7 @@
       $('r-crumb').textContent = path;
       $('r-title').textContent = rec ? rec.t : path;
       $('r-lede').textContent = rec && rec.x ? rec.x : '';
-      var raw = path.split('#')[0];
-      $('r-open').setAttribute('href', (raw.indexOf('/') > 0 ? '../../' : '') + raw);
+      $('r-open').setAttribute('href', rawHref(path));
       $('r-body').innerHTML = '';
       var note = $('r-note');
       if (!rec) {
@@ -294,12 +319,13 @@
         ' <span class="count">' + c.c + '</span></button></li>';
     });
     h += '</ul></details>';
-    h += '<p class="group">横向主题</p><ul><li><a href="../../console/_topics.md">主题总表 <span class="count">18 类</span></a></li></ul>';
+    h += '<p class="group">横向主题</p><ul><li><a href="' + rawHref('console/_topics.md') + '"' +
+      (ONLINE ? ' target="_blank" rel="noopener"' : '') + '>主题总表 <span class="count">18 类</span></a></li></ul>';
     h += '<p class="group">打开四个面</p><ul>' +
-      '<li><a href="../../console/site/index.html" target="_blank" rel="noopener">发布站 <span class="count">' + tree.surfaces['发布站'] + ' 页</span></a></li>' +
-      '<li><a href="../../console/console/index.html" target="_blank" rel="noopener">拆解台 <span class="count">' + tree.surfaces['拆解台'] + ' 视图</span></a></li>' +
-      '<li><a href="../../code/前端应用/public/mkdocs/index.html" target="_blank" rel="noopener">文档站 <span class="count">' + tree.surfaces['文档站'] + ' 篇</span></a></li>' +
-      '<li><a href="https://ai-guru-global.github.io/ai-guru-database/" target="_blank" rel="noopener">前端应用 <span class="count">' + tree.surfaces['前端应用'] + ' 路由</span></a></li>' +
+      '<li><a href="' + surfaceHref('site') + '" target="_blank" rel="noopener">发布站 <span class="count">' + tree.surfaces['发布站'] + ' 页</span></a></li>' +
+      '<li><a href="' + surfaceHref('cons') + '" target="_blank" rel="noopener">拆解台 <span class="count">' + tree.surfaces['拆解台'] + ' 视图</span></a></li>' +
+      '<li><a href="' + surfaceHref('docs') + '" target="_blank" rel="noopener">文档站 <span class="count">' + tree.surfaces['文档站'] + ' 篇</span></a></li>' +
+      '<li><a href="' + surfaceHref('app') + '" target="_blank" rel="noopener">前端应用 <span class="count">' + tree.surfaces['前端应用'] + ' 路由</span></a></li>' +
       '</ul>';
     nav.innerHTML = h;
     // 预览区计数同步

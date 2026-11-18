@@ -50,7 +50,9 @@ def nav_row(dir_rel, md):
 
 
 def create_index(dir_path):
-    dir_rel = dir_path.relative_to(REPO_ROOT).as_posix()
+    # 导航链接按 wiki 内容根相对（旧版按仓库根会带 wiki/ 前缀，只能靠 basename 兜底解析）
+    dir_rel = dir_path.relative_to(CONTENT_ROOT).as_posix()
+    # 章节名按 wiki 内容根切分（旧版按仓库根切会得到 "wiki"，连带 Related 链接语义错误）
     chapter = dir_rel.split("/")[0]
     name = dir_path.name
     display = re.sub(r"^\d+_", "", name).replace("_", " ")
@@ -59,10 +61,14 @@ def create_index(dir_path):
     content = f"""---
 title: {display}
 type: index
+category: {chapter}
+summary: "自动索引：{display} 目录 {len(files)} 篇文档的文件导航表（按文件名排序）。"
 created: {TODAY}
 updated: {TODAY}
+tier: supporting
 sources: []
 tags: [auto-index]
+name_zh: "{display}索引"
 ---
 
 # {display}
@@ -77,6 +83,15 @@ tags: [auto-index]
 
 - [[{chapter}/README|{chapter} 章节导航]]
 """
+    # 与 link_gate 的间距口径零漂移：生成后过一遍 fix_spacing（表格空单元格等差分）
+    try:
+        spec = importlib.util.spec_from_file_location(
+            "fix_spacing", REPO_ROOT / "code" / "工具" / "fix_spacing.py")
+        spacer = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(spacer)
+        content = spacer.fix_spacing(content)  # module 属性访问，不可下标
+    except Exception as exc:
+        print(f"  ! fix_spacing 后处理失败（生成内容未清洗）: {exc!r}")
     (dir_path / "index.md").write_text(content, encoding="utf-8")
     return len(files)
 
@@ -87,8 +102,9 @@ def append_to_index(dir_path, new_files):
     if not idx.is_file():
         return 0
     text = idx.read_text(encoding="utf-8")
-    dir_rel = dir_path.relative_to(REPO_ROOT).as_posix()
-    missing = [f for f in new_files if f.stem not in text]
+    # 内容根相对链接；仅补真实存在的文件（旧迁移清单可能含已改名/删除的残留条目）
+    dir_rel = dir_path.relative_to(CONTENT_ROOT).as_posix()
+    missing = [f for f in new_files if f.is_file() and f.stem not in text]
     if not missing:
         return 0
     m = re.search(r"## 文件导航.*?(?:\n\|[^\n]*)+", text, re.S)

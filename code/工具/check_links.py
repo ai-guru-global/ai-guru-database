@@ -26,6 +26,73 @@ EXCLUDE_DIRS = {'.git', '.venv', 'node_modules', '.claude', '.qoder', '.qwen',
                 '.comade', '.crush', '.pytest_cache', '__pycache__', 'Web',
                 '.obsidian', '.github', 'dist', 'site'}
 
+FRONTMATTER = re.compile(r'\A---\s*\n(.*?)\n---', re.S)
+
+
+def _split_alias_values(rest):
+    """拆分 aliases: [a, b] / aliases: a, b / aliases: 'a' 等写法。"""
+    rest = re.sub(r'\s+#.*$', '', rest).strip()
+    if rest.startswith('[') and rest.endswith(']'):
+        rest = rest[1:-1]
+    parts, buf, quote = [], [], None
+    for ch in rest:
+        if quote:
+            buf.append(ch)
+            if ch == quote:
+                quote = None
+        elif ch in '"\'':
+            quote = ch
+            buf.append(ch)
+        elif ch == ',':
+            parts.append(''.join(buf))
+            buf = []
+        else:
+            buf.append(ch)
+    parts.append(''.join(buf))
+    out = []
+    for part in parts:
+        value = re.sub(r'\s+#.*$', '', part).strip().strip('"\'')
+        if value:
+            out.append(value)
+    return out
+
+
+def parse_aliases(text):
+    """解析 frontmatter aliases，兼容单数/复数与行内、块级列表。"""
+    m = FRONTMATTER.match(text)
+    if not m:
+        return []
+    lines = m.group(1).split('\n')
+    aliases = []
+    i = 0
+    while i < len(lines):
+        am = re.match(r'^alias(?:es)?\s*:\s*(.*)$', lines[i])
+        if not am:
+            i += 1
+            continue
+        rest = am.group(1).strip()
+        if rest:
+            aliases.extend(_split_alias_values(rest))
+            i += 1
+            continue
+        j = i + 1
+        while j < len(lines):
+            item = re.match(r'^\s+-\s*(.*)$', lines[j])
+            if not item:
+                break
+            value = re.sub(r'\s+#.*$', '', item.group(1)).strip().strip('"\'')
+            if value:
+                aliases.append(value)
+            j += 1
+        i = j
+    return aliases
+
+
+def alias_keys(value):
+    """别名归一化键：大小写不敏感，空格与连字符两种写法都登记。"""
+    low = re.sub(r'\s+', ' ', value.strip().lower())
+    return {low, low.replace(' ', '-')} if low else set()
+
 
 def walk_all(base):
     """Walk all md files (used for resolution index)."""
@@ -69,20 +136,11 @@ def build_resolution_index(base):
         # Parse aliases from frontmatter
         try:
             content = open(p, 'r', encoding='utf-8', errors='ignore').read()
-            if not content.lstrip().startswith('---'):
-                continue
-            m = re.match(r'^---\s*\n(.*?)\n---', content, re.DOTALL)
-            if not m:
-                continue
-            alias_block = re.search(r'^aliases?\s*:\s*\n((?:^\s+-\s+.+\n)+)', m.group(1), re.MULTILINE)
-            if alias_block:
-                aliases = re.findall(r'-\s+"?([^"\n]+?)"?\s*$', alias_block.group(1), re.MULTILINE)
-                for a in aliases:
-                    a_low = a.strip().lower().replace(' ', '-')
-                    alias_to_file[a_low] = rel
-                    alias_to_file[a.strip().lower()] = rel
         except Exception:
-            pass
+            continue
+        for alias in parse_aliases(content):
+            for key in alias_keys(alias):
+                alias_to_file[key] = rel
     return basename_lower, basename_norm, alias_to_file
 
 
@@ -268,6 +326,7 @@ def find_all_links(base, strict=False):
         'total_mdlinks_internal': total_mdlinks,
         'total_broken': len(broken),
         'broken_by_category': dict(by_category),
+        'broken_by_source': dict(by_source),
         'broken_by_source_top': by_source.most_common(20),
         'broken_list': broken,
     }

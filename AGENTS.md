@@ -254,6 +254,22 @@ Full detail: [`wiki/治理/Document_Templates.md`](wiki/治理/Document_Template
 
 ---
 
+## 故障排查
+
+1. **`git push` 连接超时，或连上后报 `Error in the HTTP2 framing layer`（github.com:443
+   分线路抖动）。** 先探端口：`nc -z -G 5 github.com 443`——抖动期端口时通时断，且会出现
+   "端口通但 HTTP/2 帧层系统性失败"（重试默认通道无用）。此时改用 HTTP/1.1 单次推送即可，
+   不需要改全局配置：
+
+   ```bash
+   git -c http.version=HTTP/1.1 push origin main
+   ```
+
+   长时间不通时挂一个监控循环（探通即推）等网络窗口；`api.github.com` 通常仍可达，
+   可用 `gh run list` 等只读操作先行确认远端状态。
+
+---
+
 ## When you create or edit a page — checklist
 
 - [ ] Frontmatter complete: `title`, `name_zh`, `tier`, `tags`, `summary`, `created`,

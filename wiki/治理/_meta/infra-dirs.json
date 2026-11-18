@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "updated": "2026-11-18",
+  "purpose": "wiki 基建目录单一事实源（single source of truth）。移动或更名任何下列目录时：① 先改本文件 dirs 与 tool_lists；② 已接线工具（check_wikilinks.py / build_portal.py / assistant/build_index.py）自动跟随；③ 同步 static_copies_not_wired 中登记的静态副本（mkdocs.yml 等）；④ 按 skill_couplings 清单更新对应 skill 文案。工具加载本文件失败时回退内置默认值（与本文件同值，行为不变）。",
+  "how_to_move": [
+    "1. 改本文件：dirs[].path、tool_lists 各键、skill_couplings 键名",
+    "2. git mv 目标目录，修复入链出链（参考 治理/Directory_Restructure_Plan_2026.md 的 P1-P4 流程）",
+    "3. 同步 mkdocs.yml exclude_docs（静态副本，YAML 无法读 JSON）",
+    "4. 按 skill_couplings 更新 skills 文案中的路径字样",
+    "5. 校验：link_gate 四项 ≤ 基线 + build_portal 全量重建 diff 为空 + check_links 移动相关断链 0"
+  ],
+  "dirs": [
+    {"path": "治理", "role": "治理规则与元数据", "placement": "top-level", "status": "stable", "scan": "include", "portal": "exclude", "mkdocs": "exclude"},
+    {"path": "归档", "role": "历史归档（log.md + index.md，2 文件）", "placement": "top-level", "status": "stable-top-level", "scan": "skip", "portal": "exclude", "mkdocs": "exclude", "reason": "10 个 skill 顶层排除清单硬编码；P2 实测移动收益趋零，保留顶层"},
+    {"path": "原始", "role": "ingest 收件箱（当前仅 .gitkeep，工作流活跃）", "placement": "top-level", "status": "stable-top-level", "scan": "include", "portal": "exclude", "mkdocs": "exclude", "reason": "wiki-ingest/wiki-digest/quick-chat-capture 等 13 个 skill 依赖 /wiki-ingest 原始/ 工作流；收件箱语义要求顶层"},
+    {"path": "专题研究", "role": "项目制研究专区（P1 收编）", "placement": "top-level", "status": "stable", "scan": "include", "portal": "include", "mkdocs": "include"},
+    {"path": "专题研究/GTM", "role": "GTM 手册（mkdocs/portal 排除）", "placement": "nested", "status": "stable", "scan": "include", "portal": "exclude", "mkdocs": "exclude"},
+    {"path": "资料与归档", "role": "运营杂项专区（P2 收编）", "placement": "top-level", "status": "stable", "scan": "include", "portal": "include", "mkdocs": "include"},
+    {"path": "资料与归档/来源", "role": "信源存档（wechat/aliyun/modelscope/technical_reports）", "placement": "nested", "status": "stable", "scan": "skip", "portal": "exclude", "mkdocs": "exclude", "reason": "信源只作链接目标不作扫描源（check_wikilinks 二级命中规则）"},
+    {"path": "资料与归档/docs", "role": "superpowers 规划稿（plans/specs）", "placement": "nested", "status": "stable", "scan": "skip", "portal": "exclude", "mkdocs": "exclude", "reason": "规划稿只作链接目标不作扫描源"},
+    {"path": "资料与归档/reports", "role": "历史评估报告（k8s CVE 等 8 篇）", "placement": "nested", "status": "stable", "scan": "include", "portal": "exclude", "mkdocs": "exclude"},
+    {"path": "资料与归档/assistant", "role": "RAG 助手脚本与说明（build_index.py / query.py）", "placement": "nested", "status": "stable", "scan": "include", "portal": "exclude", "mkdocs": "exclude"}
+  ],
+  "tool_lists": {
+    "check_wikilinks_scan_skip": ["来源", "归档", "docs"],
+    "check_wikilinks_classify_first": ["前端应用", "工具", "code", "docs", "原始", "来源", "归档", "release"],
+    "build_portal_exclude_dirs": ["治理", "原始", "来源", "归档", "docs", "GTM", "reports", "assistant"],
+    "build_portal_exclude_subdirs": ["资料与归档/来源", "资料与归档/docs", "资料与归档/reports", "资料与归档/assistant", "专题研究/GTM"],
+    "assistant_index_skip": ["前端应用", "原始", "来源", "归档", "docs", "code", "工具", "资料与归档", "assistant"]
+  },
+  "wired_tools": [
+    "code/工具/check_wikilinks.py（ROOT_ONLY_SKIP + classify 首段集合；link_gate 经 runpy 复用）",
+    "console/tools/scripts/build_portal.py（WIKI_EXCLUDE_DIRS + WIKI_EXCLUDE_SUBDIRS）",
+    "wiki/资料与归档/assistant/build_index.py（ROOT_ONLY_SKIP）"
+  ],
+  "skill_couplings": {
+    "归档/": [
+      "skills/cross-linker/SKILL.md (3)",
+      "skills/graph-colorize/SKILL.md (2)",
+      "skills/llm-wiki/SKILL.md (3)",
+      "skills/tag-taxonomy/SKILL.md (1)",
+      "skills/wiki-dedup/SKILL.md (2)",
+      "skills/wiki-digest/SKILL.md (6)",
+      "skills/wiki-export/SKILL.md (2)",
+      "skills/wiki-rebuild/SKILL.md (8)",
+      "skills/wiki-setup/SKILL.md (4)",
+      "skills/wiki-synthesize/SKILL.md (2)"
+    ],
+    "原始/": [
+      "skills/graph-colorize/SKILL.md (2)",
+      "skills/obsidian-wiki-ingest/SKILL.md (1)",
+      "skills/wiki-dedup/SKILL.md (2)",
+      "skills/wiki-digest/SKILL.md (6)",
+      "skills/wiki-export/SKILL.md (2)",
+      "skills/wiki-ingest/SKILL.md (13)",
+      "skills/wiki-query/SKILL.md (1)",
+      "skills/wiki-quick-chat-capture/SKILL.md (7)",
+      "skills/wiki-quick-chat-capture/references/RAW-FORMAT.md (1)",
+      "skills/wiki-setup/SKILL.md (4)",
+      "skills/wiki-stage-commit/SKILL.md (6)",
+      "skills/wiki-status/SKILL.md (7)",
+      "skills/wiki-synthesize/SKILL.md (2)"
+    ],
+    "note": "括号内为 2026-11-18 扫描命中次数；17 个文件已统一追加『路径权威』指引段"
+  },
+  "static_copies_not_wired": [
+    "mkdocs.yml: exclude_docs（YAML 静态，移动目录时手工同步，上方已加指引注释）",
+    "code/工具/smart_fix_links.py: EXCLUDE_DIRS 含 原始/来源/docs（修复工具，低频，未接线）",
+    "code/工具/check_links.py: 第 44 行 skip 集含 'docs'（P2 后为陈旧值，全量行走无顶层排除，无实害）",
+    "code/工具 一次性脚本 ×8（add_name_annotations_2026_07 / fix_broken_links_2026_07·08 / fix_wikilinks_precise / move_page / orphan_scan_2026_07 等，AGENTS 禁重跑，仅登记）"
+  ]
+}

@@ -213,3 +213,7 @@ Record QMD refresh in the final report as one of:
 3. **Never delete archives** unless the user explicitly asks. Archives are cheap insurance.
 4. **The `.obsidian/` directory is sacred.** Never touch it during archive/rebuild/restore — it contains the user's Obsidian settings, plugins, and themes.
 5. If something goes wrong mid-rebuild, the archive is there. Tell the user they can restore.
+
+---
+
+> **路径权威（2026-11-18 P5 解耦）**：本 skill 涉及的 wiki 基建目录路径（`归档/`、`原始/` 等）以 `wiki/治理/_meta/infra-dirs.json` 为单一事实源——移动目录时先改该文件，再按其 `skill_couplings` 清单同步本 skill 文案。

@@ -330,3 +330,7 @@ Only include lines for filters that were actually applied.
 - **Broken wikilinks are skipped** — only edges to pages that exist in the vault are exported
 - **The `wiki-export/` directory should be gitignored** if the vault is version-controlled — these are derived artifacts
 - **`graph.json` is the primary format** — the others are derived from it. If a future tool supports graph queries natively, point it at `graph.json`
+
+---
+
+> **路径权威（2026-11-18 P5 解耦）**：本 skill 涉及的 wiki 基建目录路径（`归档/`、`原始/` 等）以 `wiki/治理/_meta/infra-dirs.json` 为单一事实源——移动目录时先改该文件，再按其 `skill_couplings` 清单同步本 skill 文案。

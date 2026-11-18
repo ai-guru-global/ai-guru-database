@@ -39,15 +39,22 @@ CONSOLE = REPO / "console"
 DOCMAP = REPO / "code/前端应用/src/data/docMap.ts"
 
 # 与 mkdocs.yml 的 exclude_docs 保持一致：门户只索引“发布面”内容。
-# 2026-11 目录重组后排除项是“路径”而非顶层目录名（顶层旧名保留作回退）：
-#   资料与归档/{来源,docs,reports,assistant}、专题研究/GTM
-WIKI_EXCLUDE_DIRS = {
+# 2026-11 目录重组后排除项是“路径”而非顶层目录名（顶层旧名保留作回退）。
+# 2026-11-18 P5 解耦：权威清单 = wiki/治理/_meta/infra-dirs.json；加载失败回退同值默认
+def _load_infra(key, default):
+    try:
+        with open(REPO / 'wiki' / '治理' / '_meta' / 'infra-dirs.json', encoding='utf-8') as f:
+            return json.load(f)['tool_lists'][key]
+    except Exception:
+        return list(default)
+
+WIKI_EXCLUDE_DIRS = set(_load_infra('build_portal_exclude_dirs', [
     "治理", "原始", "来源", "归档", "docs", "GTM", "reports", "assistant",
-}
-WIKI_EXCLUDE_SUBDIRS = (
+]))
+WIKI_EXCLUDE_SUBDIRS = tuple(_load_infra('build_portal_exclude_subdirs', [
     "资料与归档/来源", "资料与归档/docs", "资料与归档/reports",
     "资料与归档/assistant", "专题研究/GTM",
-)
+]))
 WIKI_EXCLUDE_FILES = {"index.md", "README_EN.md"}
 
 FM_RE = re.compile(r"\A---\s*\n(.*?)\n---\s*\n", re.S)

@@ -12,6 +12,7 @@ site_url: https://ai-guru-global.github.io/ai-guru-database/mkdocs/
 docs_dir: wiki
 site_dir: code/前端应用/public/mkdocs
 
+# 排除清单权威源：wiki/治理/_meta/infra-dirs.json（YAML 无法读 JSON，移动目录时手工同步本段）
 exclude_docs: |
   index.md
   README_EN.md

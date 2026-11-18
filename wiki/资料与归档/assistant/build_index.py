@@ -29,8 +29,17 @@ REQUIRED = ('title', 'category', 'tags', 'summary',
             'created', 'updated', 'tier', 'name_zh')
 ALWAYS_SKIP = {'.git', '.obsidian', '.qoder', '.claude', '.githooks', '.github',
                'node_modules', 'release'}
-ROOT_ONLY_SKIP = {'前端应用', '原始', '来源', '归档', 'docs', 'code', '工具', '资料与归档',
-                  'assistant'}   # 本助手自身是工具代码，不是知识语料
+# 2026-11-18 P5 解耦：权威清单 = wiki/治理/_meta/infra-dirs.json；加载失败回退同值默认
+def _load_infra_skip(default):
+    try:
+        with open(ROOT / '治理' / '_meta' / 'infra-dirs.json', encoding='utf-8') as f:
+            return set(json.load(f)['tool_lists']['assistant_index_skip'])
+    except Exception:
+        return set(default)
+
+ROOT_ONLY_SKIP = _load_infra_skip(
+    {'前端应用', '原始', '来源', '归档', 'docs', 'code', '工具', '资料与归档',
+     'assistant'})   # 本助手自身是工具代码，不是知识语料
 CHUNK_TARGET = 600          # 单块目标字符数
 MAX_DF_RATIO = 0.30         # 出现在 30% 以上块中的词视为停用
 

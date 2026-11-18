@@ -25,7 +25,19 @@ CONTENT = os.path.join(ROOT, 'wiki')
 ALWAYS_SKIP = {'.git', '.obsidian', '.qoder', '.claude', '.githooks', '.github',
                'node_modules', 'release'}
 # 内容根内保持原有口径：信源归档/历史归档/规划稿只作为合法链接目标，不作为断链扫描源
-ROOT_ONLY_SKIP = {'来源', '归档', 'docs'}
+# 2026-11-18 P5 解耦：权威清单 = 治理/_meta/infra-dirs.json；加载失败回退同值默认
+def _load_infra_list(key, default):
+    try:
+        with open(os.path.join(CONTENT, '治理', '_meta', 'infra-dirs.json'), encoding='utf-8') as f:
+            return set(json.load(f)['tool_lists'][key])
+    except Exception:
+        return set(default)
+
+ROOT_ONLY_SKIP = _load_infra_list(
+    'check_wikilinks_scan_skip', {'来源', '归档', 'docs'})
+CLASSIFY_INFRA_FIRST = _load_infra_list(
+    'check_wikilinks_classify_first',
+    {'前端应用', '工具', 'code', 'docs', '原始', '来源', '归档', 'release'})
 # 历史评估报告是快照，其中断链示例不计入（与修复脚本 SKIP_FILES 一致）
 SKIP_FILES = {'治理/_meta/_evaluation-2026-07-27.md',
               '治理/_meta/_evaluation-2026-06-24.md',
@@ -35,6 +47,106 @@ WIKILINK = re.compile(r'\[\[([^\]]+?)\]\]')
 CHAPTER_PREFIX = re.compile(r'^(\d{2}_|概念/|治理/|90_|94_)')
 FENCED_CODE = re.compile(r'```.*?```', re.S)
 INLINE_CODE = re.compile(r'`[^`\n]+`')
+FRONTMATTER = re.compile(r'\A---\s*\n(.*?)\n---', re.S)
+
+
+def _split_alias_values(rest):
+    """拆分 aliases: [a, b] / aliases: a, b / aliases: 'a' 等写法。"""
+    rest = re.sub(r'\s+#.*$', '', rest).strip()
+    if rest.startswith('[') and rest.endswith(']'):
+        rest = rest[1:-1]
+    parts, buf, quote = [], [], None
+    for ch in rest:
+        if quote:
+            buf.append(ch)
+            if ch == quote:
+                quote = None
+        elif ch in '"\'':
+            quote = ch
+            buf.append(ch)
+        elif ch == ',':
+            parts.append(''.join(buf))
+            buf = []
+        else:
+            buf.append(ch)
+    parts.append(''.join(buf))
+    out = []
+    for part in parts:
+        value = re.sub(r'\s+#.*$', '', part).strip().strip('"\'')
+        if value:
+            out.append(value)
+    return out
+
+
+def parse_aliases(text):
+    """解析 frontmatter aliases，兼容行内列表与块级列表（无 PyYAML 依赖）。"""
+    m = FRONTMATTER.match(text)
+    if not m:
+        return []
+    lines = m.group(1).split('\n')
+    aliases = []
+    i = 0
+    while i < len(lines):
+        am = re.match(r'^alias(?:es)?\s*:\s*(.*)$', lines[i])
+        if not am:
+            i += 1
+            continue
+        rest = am.group(1).strip()
+        if rest:
+            aliases.extend(_split_alias_values(rest))
+            i += 1
+            continue
+        j = i + 1
+        while j < len(lines):
+            item = re.match(r'^\s+-\s*(.*)$', lines[j])
+            if not item:
+                break
+            value = re.sub(r'\s+#.*$', '', item.group(1)).strip().strip('"\'')
+            if value:
+                aliases.append(value)
+            j += 1
+        i = j
+    return aliases
+
+
+def alias_keys(value):
+    """别名归一化键：大小写不敏感，空格与连字符两种写法都登记。"""
+    low = re.sub(r'\s+', ' ', value.strip().lower())
+    return {low, low.replace(' ', '-')} if low else set()
+
+
+def build_alias_index(mds, read_text=None):
+    """alias 归一化键 -> 按路径排序的 rel（无 .md 后缀）。
+
+    read_text 供 --staged 模式注入索引内容读取；返回 None 时跳过。
+    """
+    index = defaultdict(set)
+    for rel in mds:
+        try:
+            if read_text is not None:
+                text = read_text(rel)
+            else:
+                text = open(os.path.join(CONTENT, rel), encoding='utf-8',
+                            errors='ignore').read()
+        except OSError:
+            continue
+        if not text:
+            continue
+        for alias in parse_aliases(text):
+            for key in alias_keys(alias):
+                index[key].add(rel[:-3])
+    return {key: sorted(paths) for key, paths in index.items()}
+
+
+def alias_candidates(target, alias_index):
+    """按 Obsidian basename 语义返回 alias 命中路径；无命中返回空列表。"""
+    base = re.sub(r'\s+', ' ', os.path.basename(target).strip().lower())
+    if not base:
+        return []
+    for key in (base, base.replace(' ', '-')):
+        if key in alias_index:
+            return alias_index[key]
+    return []
 
 
 def collect_files():
@@ -90,7 +202,7 @@ def classify(target):
         return 'missing_concept'
     if '../' in target or target.startswith('./'):
         return 'relative_path'
-    if target.split('/')[0] in {'前端应用', '工具', 'code', 'docs', '原始', '来源', '归档', 'release'}:
+    if target.split('/')[0] in CLASSIFY_INFRA_FIRST:
         return 'infra_path'
     if '/' in target and CHAPTER_PREFIX.match(target):
         return 'stale_path'
@@ -105,9 +217,11 @@ def main():
 
     scan_mds, all_mds, dirs = collect_files()
     rel_index, name_index = build_indexes(all_mds)
+    alias_index = build_alias_index(all_mds)
 
     broken = []  # (source, target, category)
     total_links = 0
+    alias_hits = 0
     for rel in scan_mds:
         if rel in SKIP_FILES:
             continue
@@ -131,6 +245,9 @@ def main():
                    for base in (CONTENT, ROOT)
                    for ext in ('', '.py', '.sh', '.txt', '.json', '.csv', '.yaml', '.yml')):
                 continue
+            if alias_candidates(t, alias_index):
+                alias_hits += 1
+                continue
             broken.append((rel, t, classify(t)))
 
     by_cat = defaultdict(list)
@@ -140,6 +257,8 @@ def main():
     if not quiet:
         print(f'总 wikilink: {total_links}  断链: {len(broken)} 次 / '
               f'{len({t for _, t, _ in broken})} 唯一目标')
+        if alias_hits:
+            print(f'  其中 alias 兜底解析: {alias_hits} 次')
         for cat in ('bare_name', 'stale_path', 'missing_concept', 'relative_path', 'infra_path'):
             items = by_cat.get(cat, [])
             if not items:

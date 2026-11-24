@@ -298,6 +298,16 @@ h2 { font-size: var(--text-title); }
 .r-body pre code { font-size: inherit; }
 .r-body img { border-radius: var(--radius-card); outline: 1px solid color-mix(in oklab, var(--color-ink) 8%, transparent); outline-offset: -1px; }
 .r-body hr { border: 0; border-top: var(--rule-hair) solid var(--color-rule); }
+/* C2 mermaid：渲染成品 / 等待中 / 降级原文 */
+.r-body .mermaid-figure { padding: var(--space-sm); background: var(--color-paper-3); border-radius: var(--radius-pill); overflow-x: auto; }
+.r-body .mermaid-figure svg { max-width: 100%; height: auto; }
+.r-body pre.mermaid-pending { opacity: 0.72; }
+.r-body pre.mermaid-fallback { opacity: 0.85; }
+.r-body pre.mermaid-fallback::after {
+  content: "⌐ mermaid 图未渲染（离线或语法不支持，源码保留）";
+  display: block; margin-top: var(--space-xs);
+  color: var(--color-muted); font-family: var(--font-body); font-size: var(--text-xs);
+}
 .wikilink-miss {
   color: var(--color-muted);
   border-bottom: 1px dashed color-mix(in oklch, var(--color-muted) 70%, transparent);

@@ -242,6 +242,63 @@
       .replace(/\son[a-z]+\s*=\s*[^\s">]+/gi, '')
       .replace(/(href|src)\s*=\s*["']\s*javascript:[^"']*["']/gi, '$1="#"');
   }
+
+  /* ---------------- mermaid 渲染（C2：按需 CDN 加载，离线/失败降级为代码块） ----------------
+   * 分片里的图是 <pre><code class="language-mermaid">源码</code></pre>；
+   * 首次遇到才拉 mermaid@11 ESM（~1MB，仅阅读视图带图页面触发）；
+   * 渲染成功 → pre 换成 .mermaid-figure > svg；CDN 不可达或单图语法错 → 保留原文并打标。 */
+  var mermaidState = 'idle'; // idle | loading | ready | error
+  var mermaidWaiters = [];
+  function ensureMermaid(cb) {
+    if (mermaidState === 'ready') { cb(null); return; }
+    if (mermaidState === 'error') { cb('error'); return; }
+    mermaidWaiters.push(cb);
+    if (mermaidState === 'loading') return;
+    mermaidState = 'loading';
+    import('https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs')
+      .then(function (mod) {
+        mod.default.initialize({ startOnLoad: false, securityLevel: 'strict' });
+        window.__MERMAID__ = mod.default;
+        mermaidState = 'ready';
+        mermaidWaiters.forEach(function (f) { f(null); });
+        mermaidWaiters = [];
+      })
+      .catch(function () {
+        mermaidState = 'error';
+        mermaidWaiters.forEach(function (f) { f('error'); });
+        mermaidWaiters = [];
+      });
+  }
+  function upgradeMermaid(root) {
+    var blocks = Array.prototype.slice.call(
+      root.querySelectorAll('pre > code[class*="language-mermaid"]'));
+    if (!blocks.length) return;
+    blocks.forEach(function (code) { code.parentElement.classList.add('mermaid-pending'); });
+    ensureMermaid(function (err) {
+      blocks.forEach(function (code, i) {
+        var pre = code.parentElement;
+        if (!pre.isConnected) return; // 阅读视图已切走
+        if (err) {
+          pre.classList.remove('mermaid-pending');
+          pre.classList.add('mermaid-fallback');
+          return;
+        }
+        window.__MERMAID__.render('mmd-' + Date.now() + '-' + i, code.textContent)
+          .then(function (out) {
+            if (!pre.isConnected) return;
+            var fig = document.createElement('div');
+            fig.className = 'mermaid-figure';
+            fig.innerHTML = out.svg; // mermaid strict 模式输出，标签已 DOMPurify 消毒
+            pre.replaceWith(fig);
+          })
+          .catch(function () {
+            if (!pre.isConnected) return;
+            pre.classList.remove('mermaid-pending');
+            pre.classList.add('mermaid-fallback');
+          });
+      });
+    });
+  }
   function openRead(path) {
     ensureIndex(function () {
       var recs = window.__PORTAL_INDEX__.records;
@@ -279,6 +336,7 @@
             show(note, true);
           } else {
             $('r-body').innerHTML = sanitize(page);
+            upgradeMermaid($('r-body'));
             show(note, false);
           }
         }

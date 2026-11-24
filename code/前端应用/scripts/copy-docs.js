@@ -19,6 +19,54 @@ const repoRoot = resolve(webDir, "..", "..");
 const contentRoot = resolve(repoRoot, "wiki");
 const distDocsDir = resolve(webDir, "dist", "docs-content");
 
+// 三区口径（P0-3）：非 published 区不得入站打包（防"假入库"）。
+// 权威源 = wiki/治理/_meta/infra-dirs.json 的 dirs[].zone + zones 策略块；
+// 加载失败时回退内置同值默认（与 JSON 保持一致），不阻断构建。
+function loadZonePaths() {
+  const fallback = {
+    staging: ["原始", "资料与归档/来源", "资料与归档/docs"],
+    archive: ["归档"],
+  };
+  try {
+    const infraPath = resolve(
+      contentRoot,
+      "治理",
+      "_meta",
+      "infra-dirs.json"
+    );
+    const infra = JSON.parse(readFileSync(infraPath, "utf-8"));
+    const paths = {};
+    for (const [zone, spec] of Object.entries(infra.zones ?? {})) {
+      if (spec && Array.isArray(spec.paths) && spec.paths.length > 0) {
+        paths[zone] = spec.paths;
+      }
+    }
+    return Object.keys(paths).length > 0 ? paths : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function zoneOf(filePath, zonePaths) {
+  const norm = filePath.replace(/\\/g, "/").replace(/\/+$/, "");
+  let best = "published";
+  let bestLen = -1;
+  for (const [zone, paths] of Object.entries(zonePaths)) {
+    for (const p of paths) {
+      const pNorm = p.replace(/\\/g, "/").replace(/\/+$/, "");
+      if (norm === pNorm || norm.startsWith(pNorm + "/")) {
+        if (pNorm.length > bestLen) {
+          best = zone;
+          bestLen = pNorm.length;
+        }
+      }
+    }
+  }
+  return best;
+}
+
+const zonePaths = loadZonePaths();
+
 // Read docMap.ts and extract all filePath values
 const docMapPath = resolve(webDir, "src", "data", "docMap.ts");
 const docMapContent = readFileSync(docMapPath, "utf-8");
@@ -35,8 +83,17 @@ console.log(`Found ${filePaths.length} doc files to copy.`);
 
 let copied = 0;
 let skipped = 0;
+let zoneBlocked = 0;
 
 for (const fp of filePaths) {
+  const zone = zoneOf(fp, zonePaths);
+  if (zone !== "published") {
+    console.warn(`  SKIP (zone=${zone}, 不得入库): ${fp}`);
+    zoneBlocked++;
+    skipped++;
+    continue;
+  }
+
   const srcPath = resolve(contentRoot, fp);
   const destPath = resolve(distDocsDir, fp);
 
@@ -51,4 +108,6 @@ for (const fp of filePaths) {
   copied++;
 }
 
-console.log(`Done: ${copied} copied, ${skipped} skipped.`);
+console.log(
+  `Done: ${copied} copied, ${skipped} skipped (zone blocked: ${zoneBlocked}).`
+);

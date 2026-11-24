@@ -26,15 +26,63 @@ ALWAYS_SKIP = {'.git', '.obsidian', '.qoder', '.claude', '.githooks', '.github',
                'node_modules', 'release'}
 # 内容根内保持原有口径：信源归档/历史归档/规划稿只作为合法链接目标，不作为断链扫描源
 # 2026-11-18 P5 解耦：权威清单 = 治理/_meta/infra-dirs.json；加载失败回退同值默认
-def _load_infra_list(key, default):
+# 2026-11-24 P0-3 三区口径：dirs[].zone 字段 + zones 策略块是门禁分级与站点入库权威分区
+def _load_infra():
     try:
         with open(os.path.join(CONTENT, '治理', '_meta', 'infra-dirs.json'), encoding='utf-8') as f:
-            return set(json.load(f)['tool_lists'][key])
+            return json.load(f)
+    except Exception:
+        return None
+
+
+_INFRA = _load_infra()
+
+
+def _load_infra_list(key, default):
+    try:
+        return set(_INFRA['tool_lists'][key])
     except Exception:
         return set(default)
 
-ROOT_ONLY_SKIP = _load_infra_list(
-    'check_wikilinks_scan_skip', {'来源', '归档', 'docs'})
+
+def _load_zone_paths():
+    """返回 zone → 路径列表；加载失败回退 v1 行为（staging 不含 原始/）。"""
+    try:
+        return {name: list(spec.get('paths', []))
+                for name, spec in _INFRA['zones'].items()
+                if isinstance(spec, dict)}
+    except Exception:
+        return {'staging': ['资料与归档/来源', '资料与归档/docs'],
+                'archive': ['归档']}
+
+
+ZONE_PATHS = _load_zone_paths()
+
+
+def zone_of(rel):
+    """wiki 相对路径 → 所属区：staging / archive / published（默认）。
+
+    最长前缀匹配：zones.paths 中的目录前缀命中即归属该区；无命中为 published。
+    """
+    rel_norm = str(rel).replace('\\', '/').rstrip('/')
+    best, best_len = 'published', -1
+    for zone, paths in ZONE_PATHS.items():
+        for p in paths:
+            p_norm = p.replace('\\', '/').rstrip('/')
+            if rel_norm == p_norm or rel_norm.startswith(p_norm + '/'):
+                if len(p_norm) > best_len:
+                    best, best_len = zone, len(p_norm)
+    return best
+
+
+def _zone_skip_names():
+    """非 published 区目录名跳过集（一级或二级命中，延续既有口径）。"""
+    return {os.path.basename(p.replace('\\', '/').rstrip('/'))
+            for paths in ZONE_PATHS.values() for p in paths} or \
+        _load_infra_list('check_wikilinks_scan_skip', {'来源', '归档', 'docs'})
+
+
+ROOT_ONLY_SKIP = _zone_skip_names()
 CLASSIFY_INFRA_FIRST = _load_infra_list(
     'check_wikilinks_classify_first',
     {'前端应用', '工具', 'code', 'docs', '原始', '来源', '归档', 'release'})

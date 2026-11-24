@@ -137,13 +137,19 @@ def inspect_text(text, chk, fix_spacing, rel_index, name_index, alias_index, dir
 
 
 def scan(chk, spacer) -> dict:
-    """一次扫描同时产出：断链 / 孤立页 / frontmatter 不完整 / 间距违规 清单。"""
+    """一次扫描同时产出：断链 / 孤立页 / frontmatter 不完整 / 间距违规 清单。
+
+    三区口径（P0-3）：published 区全量四项；staging 区仅格式检查且计入独立
+    指标（staging_*，独立棘轮）；archive 区不参与（collect_files 已排除）。
+    staging 页的出链不计入 published 孤立页判定（延续「信源不作扫描源」口径）。
+    """
     scan_mds, all_mds, dirs = chk['collect_files']()
     rel_index, name_index = chk['build_indexes'](all_mds)
     alias_index = chk['build_alias_index'](all_mds)
     fix_spacing = spacer['fix_spacing']
     broken, inlinked = [], set()
     fm_incomplete, spacing_bad = [], []
+    staging_fm, staging_spacing = [], []
     alias_hits = {'bare': 0, 'path': 0}
     total_links = 0
     for rel in scan_mds:
@@ -164,9 +170,21 @@ def scan(chk, spacer) -> dict:
             broken.append({'source': rel, **item})
     orphans = [rel for rel in scan_mds
                if rel[:-3] not in inlinked and not is_nav_page(rel)]
+    for rel in all_mds:
+        if rel in chk['SKIP_FILES'] or chk['zone_of'](rel) != 'staging':
+            continue
+        text = (Path(chk['CONTENT']) / rel).read_text(encoding='utf-8', errors='ignore')
+        info = inspect_text(text, chk, fix_spacing, rel_index, name_index,
+                            alias_index, dirs)
+        if info['fm_missing']:
+            staging_fm.append(rel)
+        if not info['spacing_ok']:
+            staging_spacing.append(rel)
     return {'broken': broken, 'orphans': orphans, 'fm_incomplete': fm_incomplete,
             'spacing_bad': spacing_bad, 'alias_hits': alias_hits,
-            'total_links': total_links}
+            'total_links': total_links,
+            'staging_fm_incomplete': staging_fm,
+            'staging_spacing_bad': staging_spacing}
 
 
 def git_paths(args):
@@ -219,13 +237,15 @@ def run_changed_only(args, chk, spacer) -> int:
     scan_mds, all_mds, dirs = chk['collect_files']()
     rel_index, name_index = chk['build_indexes'](all_mds)
     fix_spacing = spacer['fix_spacing']
-    scan_set = set(scan_mds) - set(chk['SKIP_FILES'])
+    # 三区口径：staging / archive 也在盘上，变更时按区分级检查，
+    # 不得静默放行（防 ingest 草稿混入违规而无人察觉）
+    all_set = set(all_mds) - set(chk['SKIP_FILES'])
     try:
         raw_changed = changed_wiki_paths(args.staged, args.base)
     except GitError as exc:
         print(f'❌ {exc}', file=sys.stderr)
         return 2
-    changed = [rel for rel in raw_changed if rel in scan_set]
+    changed = [rel for rel in raw_changed if rel in all_set]
     if not changed:
         print('✅ changed-only：没有需要检查的 wiki/.md 变更')
         return 0
@@ -244,7 +264,9 @@ def run_changed_only(args, chk, spacer) -> int:
 
     alias_index = chk['build_alias_index'](all_mds, read_text=read_alias_text)
     failed = 0
+    checked = 0
     for rel in changed:
+        zone = chk['zone_of'](rel)
         text = read_changed_text(rel, args.staged)
         if text is None:
             print(f'⚠️  {rel}（无法读取，已跳过）')
@@ -252,25 +274,30 @@ def run_changed_only(args, chk, spacer) -> int:
         info = inspect_text(text, chk, fix_spacing, rel_index, name_index,
                             alias_index, dirs)
         problems = []
+        if zone == 'archive':
+            print(f'⏭️  {rel}（archive 冻结区，不参与门禁）')
+            continue
+        checked += 1
         if info['fm_missing']:
             problems.append('frontmatter 缺: ' + '、'.join(info['fm_missing']))
         if not info['spacing_ok']:
             problems.append('中英间距违规：运行 python3 code/工具/fix_spacing.py 修复')
-        for item in info['broken']:
-            problems.append(f'断链: [[{item["target"]}]]（{item["category"]}）')
+        if zone == 'published':
+            for item in info['broken']:
+                problems.append(f'断链: [[{item["target"]}]]（{item["category"]}）')
         if problems:
             failed += 1
-            print(f'❌ {rel}')
+            print(f'❌ {rel}（{zone} 区：仅格式检查）' if zone == 'staging' else f'❌ {rel}')
             for problem in problems:
                 print(f'   - {problem}')
         else:
-            print(f'✅ {rel}')
+            print(f'✅ {rel}' + (f'（{zone} 区）' if zone == 'staging' else ''))
 
     print()
     if failed:
-        print(f'❌ changed-only 门禁未通过：{failed}/{len(changed)} 个文件有违规')
+        print(f'❌ changed-only 门禁未通过：{failed}/{checked} 个文件有违规')
         return 1
-    print(f'✅ changed-only 门禁通过（{len(changed)} 个文件）')
+    print(f'✅ changed-only 门禁通过（{checked} 个文件）')
     return 0
 
 
@@ -310,13 +337,21 @@ def main():
         'orphan_count': len(result['orphans']),
         'frontmatter_incomplete': len(result['fm_incomplete']),
         'spacing_violations': len(result['spacing_bad']),
+        'staging_frontmatter_incomplete': len(result['staging_fm_incomplete']),
+        'staging_spacing_violations': len(result['staging_spacing_bad']),
     }
     total = result['total_links']
 
     baseline = json.loads(BASELINE_PATH.read_text(encoding='utf-8'))
     label = {'broken_instances': '断链', 'orphan_count': '孤立页',
              'frontmatter_incomplete': 'frontmatter 缺失',
-             'spacing_violations': '中英间距'}
+             'spacing_violations': '中英间距',
+             'staging_frontmatter_incomplete': 'staging frontmatter 缺失',
+             'staging_spacing_violations': 'staging 中英间距'}
+    examples = {'frontmatter_incomplete': result['fm_incomplete'],
+                'spacing_violations': result['spacing_bad'],
+                'staging_frontmatter_incomplete': result['staging_fm_incomplete'],
+                'staging_spacing_violations': result['staging_spacing_bad']}
     failed = []
     adopted = False
     for key, cur in current.items():
@@ -357,11 +392,9 @@ def main():
                         print(f'   - {b["target"]}   <- {b["source"]}')
         if 'orphan_count' in failed:
             print('   新增孤立页示例：' + '；'.join(result['orphans'][:5]))
-        if 'frontmatter_incomplete' in failed:
-            print('   frontmatter 缺失示例：'
-                  + '；'.join(result['fm_incomplete'][:5]))
-        if 'spacing_violations' in failed:
-            print('   间距违规示例：' + '；'.join(result['spacing_bad'][:5]))
+        for key, items in examples.items():
+            if key in failed:
+                print(f'   {label[key]}示例：' + '；'.join(items[:5]))
         print('   确需绕过用 git commit --no-verify（不建议）')
         sys.exit(1)
     rate = current['broken_instances'] / max(total, 1) * 100

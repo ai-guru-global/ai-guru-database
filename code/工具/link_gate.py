@@ -42,6 +42,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent.parent
 CONTENT = ROOT / 'wiki'
 BASELINE_PATH = CONTENT / '治理' / '_meta' / 'link-health-baseline.json'
+# P0-4 导入批次：一次性导入的债务按批次授权增量，到期自动失效；
+# 禁止用一次性抬高基线吸收导入债务——额度只影响通过与否则不进基线
+BATCH_DIR = CONTENT / '治理' / '_meta' / 'import-batches'
+BATCH_METRICS = ('broken_instances', 'orphan_count', 'frontmatter_incomplete',
+                 'spacing_violations', 'staging_frontmatter_incomplete',
+                 'staging_spacing_violations')
 CHECKER = ROOT / 'code' / '工具' / 'check_wikilinks.py'
 SPACER = ROOT / 'code' / '工具' / 'fix_spacing.py'
 NAV_BASES = {'readme', 'readme_en', 'index', 'readme_for_dummy'}
@@ -185,6 +191,60 @@ def scan(chk, spacer) -> dict:
             'total_links': total_links,
             'staging_fm_incomplete': staging_fm,
             'staging_spacing_bad': staging_spacing}
+
+
+def load_active_batches(batch_dir=None, today=None):
+    """读取导入批次 → ({metric: 允许增量}, [生效批次], [过期批次])。
+
+    批次文件：wiki/治理/_meta/import-batches/<batch>.json
+        {"batch": 名称, "created": "YYYY-MM-DD", "expires": "YYYY-MM-DD",
+         "allowed_delta": {指标: 正整数增量}, "note": 审计说明}
+    expires 早于今天的批次自动失效（不计额度，仅打印过期提示保留审计轨迹）；
+    无效文件忽略并告警；allowed_delta 只认 BATCH_METRICS 内的正整数。
+    """
+    today = today or date.today()
+    batch_dir = Path(batch_dir) if batch_dir else BATCH_DIR
+    deltas, active, expired = {}, [], []
+    if not batch_dir.is_dir():
+        return deltas, active, expired
+    for path in sorted(batch_dir.glob('*.json')):
+        try:
+            data = json.loads(path.read_text(encoding='utf-8'))
+            name = str(data['batch'])
+            expires = date.fromisoformat(str(data['expires']))
+            assert isinstance(data.get('allowed_delta'), dict), 'allowed_delta 须为对象'
+        except Exception as exc:
+            print(f'⚠️ 批次文件无效，已忽略：{path.name}（{exc}）')
+            continue
+        if expires < today:
+            expired.append(name)
+            continue
+        active.append(name)
+        for metric, delta in data['allowed_delta'].items():
+            if metric in BATCH_METRICS and isinstance(delta, int) and delta > 0:
+                deltas[metric] = deltas.get(metric, 0) + delta
+    return deltas, active, expired
+
+
+def evaluate_metrics(current, baseline, batch_deltas):
+    """返回 (failed_keys, 收紧后的新 baseline, adopted_keys)。
+
+    通过线 = 基线 + 未过期批次增量；批次额度不抬高基线——棘轮仍只对
+    基线本体收紧（cur < 基线 时基线降为 cur），导入债务偿还后基线自动回落。
+    基线缺项视为该检查项首次启用：以当前值建档（adopted）。
+    """
+    failed, adopted, new_baseline = [], [], dict(baseline)
+    for key, cur in current.items():
+        base = baseline.get(key)
+        if base is None:
+            new_baseline[key] = cur
+            adopted.append(key)
+            continue
+        if cur > base + batch_deltas.get(key, 0):
+            failed.append(key)
+        elif cur < base:
+            new_baseline[key] = cur
+    return failed, new_baseline, adopted
 
 
 def git_paths(args):
@@ -352,21 +412,22 @@ def main():
                 'spacing_violations': result['spacing_bad'],
                 'staging_frontmatter_incomplete': result['staging_fm_incomplete'],
                 'staging_spacing_violations': result['staging_spacing_bad']}
-    failed = []
-    adopted = False
+    batch_deltas, active_batches, expired_batches = load_active_batches()
+    if active_batches:
+        print(f"ℹ️ 生效导入批次：{'、'.join(active_batches)}（额度已并入通过线，不抬高基线）")
+    if expired_batches:
+        print(f"⌛ 过期批次（不计额度）：{'、'.join(expired_batches)}——债务须回补或收紧基线")
+    failed, baseline, adopted_keys = evaluate_metrics(current, baseline, batch_deltas)
+    adopted = bool(adopted_keys)
     for key, cur in current.items():
-        allowed = baseline.get(key)
-        if allowed is None:  # 首次部署该检查项：自动建立基线
-            baseline[key] = cur
-            adopted = True
+        base = baseline.get(key, cur)
+        if key in adopted_keys:
             print(f'🆕 {label[key]}检查首次启用，基线建立为 {cur}')
             continue
-        mark = '✅' if cur <= allowed else '❌'
-        print(f'{mark} {label[key]}：{cur} / 基线 {allowed}')
-        if cur > allowed:
-            failed.append(key)
-        elif cur < allowed:
-            baseline[key] = cur
+        extra = batch_deltas.get(key, 0)
+        suffix = f' + 批次额度 {extra}' if extra else ''
+        mark = '✅' if cur <= base + extra else '❌'
+        print(f'{mark} {label[key]}：{cur} / 基线 {base}{suffix}')
     hits = result['alias_hits']
     if hits['bare'] or hits['path']:
         print(f"ℹ️ aliases 兜底解析：{hits['bare'] + hits['path']} 次"

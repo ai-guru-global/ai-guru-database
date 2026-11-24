@@ -18,24 +18,19 @@ spec.loader.exec_module(rs)
 # === Task 1: 映射表完备性 ===
 
 def test_top_level_rename_covers_all_main_chapters():
-    """映射表必须覆盖全部现有主章节（00-21，排除 90-94 拓展目录）。
+    """迁移已完成的不变量：主章节目录不得残留映射表旧名。
 
-    rename 前实际目录是旧名（匹配键），rename 后是新名（匹配值）。
-    本测试在两个阶段都成立：实际目录应等于映射表的键集合 或 值集合。
+    原断言（实际目录 == 旧名集合 或 == 新名集合）只在迁移窗口内成立；
+    迁移完成后结构继续演进（新增 19/20/21/27/28 等章），两集合均不再
+    匹配。长期有效的检查是：旧名不得再次出现。
     """
     actual_dirs = {
         d.name for d in Path(rs.REPO_ROOT).iterdir()
         if d.is_dir() and len(d.name) > 3 and d.name[:2].isdigit()
         and not d.name.startswith("9")
     }
-    old_names = set(rs.TOP_LEVEL_RENAME.keys())
-    new_names = set(rs.TOP_LEVEL_RENAME.values())
-    assert actual_dirs == old_names or actual_dirs == new_names, (
-        f"实际主章节目录既不匹配映射表旧名也不匹配新名。\n"
-        f"实际: {sorted(actual_dirs)}\n"
-        f"旧名: {sorted(old_names)}\n"
-        f"新名: {sorted(new_names)}"
-    )
+    stale = actual_dirs & set(rs.TOP_LEVEL_RENAME.keys())
+    assert not stale, f"迁移已完成但旧章节目录名仍存在: {sorted(stale)}"
 
 
 def test_top_level_rename_produces_contiguous_00_to_21():

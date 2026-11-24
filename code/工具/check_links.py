@@ -306,20 +306,28 @@ def find_all_links(base, strict=False):
             if not link_path.endswith('.md'):
                 continue
             total_mdlinks += 1
-            # Resolve: if absolute (no ../ or ./), check against base; else relative to source file
-            if link_path.startswith('./') or link_path.startswith('../'):
-                target_full = Path(os.path.normpath(os.path.join(os.path.dirname(f), link_path)))
+            # md 链接解析（ISS-109 修复）：'/' 开头保留 vault 根语义；其余一律
+            # 先按源文件目录解析（标准 Markdown / Obsidian 语义）。源目录不存在
+            # 而 vault 根存在时，单列 root_relative_bare——这类"根相对裸写"链接
+            # 在 mkdocs 渲染站与 Obsidian 内实为 404，旧口径从根解析导致漏报；
+            # 计入断链但独立成类，便于批量改写收敛。
+            category = None
+            if link_path.startswith('/'):
+                target_full = Path(base) / link_path.lstrip('/')
             else:
-                target_full = Path(base) / link_path
+                target_full = Path(os.path.normpath(os.path.join(os.path.dirname(f), link_path)))
+                if not target_full.is_file() and (Path(base) / link_path).is_file():
+                    category = 'root_relative_bare'
             if not target_full.is_file():
+                category = category or classify_target(link_path)
                 broken.append({
                     'source': rel,
                     'link_type': 'markdown',
                     'target': link_path,
-                    'category': classify_target(link_path),
+                    'category': category,
                 })
                 by_source[rel] += 1
-                by_category[classify_target(link_path)] += 1
+                by_category[category] += 1
 
     return {
         'total_wikilinks': total_wikilinks,

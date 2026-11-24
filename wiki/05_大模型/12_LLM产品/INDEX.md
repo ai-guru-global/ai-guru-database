@@ -33,6 +33,7 @@ LLM 产品概览索引，覆盖主流 AI 助手、结构化输出工具和 AI �
 - [[05_大模型/12_LLM产品/07_instructor_概览|Instructor Overview]]
 - [[05_大模型/12_LLM产品/08_outlines_概览|Outlines Overview]]
 - [[05_大模型/12_LLM产品/09_perplexity_概览|Perplexity Overview]]
+- [[05_大模型/12_LLM产品/10_Token_Plan_套餐拆解_2026|Token Plan 套餐拆解 2026]]
 - [[05_大模型/12_LLM产品/README|README]]
 
 ## 产品对比矩阵

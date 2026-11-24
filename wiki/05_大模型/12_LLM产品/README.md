@@ -27,6 +27,7 @@ This directory contains overviews of major LLM products and tools in the ecosyst
 | 07_instructor_概览.md | Instructor library for structured outputs |
 | 08_outlines_概览.md | Outlines for constrained generation |
 | 05_god_tier_prompts_概览.md | Curated high-quality prompts |
+| 10_Token_Plan_套餐拆解_2026.md | 各家 Token Plan 横向拆解：Credits/AFP/积分换算与海外对照 (2026) |
 
 ## Related Directories
 

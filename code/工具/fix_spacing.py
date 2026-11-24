@@ -54,72 +54,37 @@ def fix_spacing(text: str) -> str:
 
 
 def _fix_line_spacing(line: str) -> str:
-    """Fix spacing in a single line, preserving inline code and links."""
-    # Split by inline code spans to protect them
-    parts = re.split(r'(`[^`]+`)', line)
-    fixed_parts = []
+    """Fix spacing in a single line, preserving links, URLs and inline code.
 
-    for i, part in enumerate(parts):
-        if part.startswith('`') and part.endswith('`'):
-            # Inline code - don't touch
-            fixed_parts.append(part)
-        else:
-            # Protect wikilinks entirely: 给目标加空格会把 [[dir/03_RL基础]] 这类
-            # 链接目标改坏，目标内不做任何间距处理
-            wl_pattern = re.compile(r'\[\[[^\]]*\]\]')
-            wl_placeholders = {}
-            for j, match in enumerate(wl_pattern.finditer(part)):
-                placeholder = f'__WIKI{j}__'
-                wl_placeholders[placeholder] = match.group()
-            temp = wl_pattern.sub(lambda m: f'__WIKI{list(wl_placeholders.values()).index(m.group())}__', part)
+    保护优先级：完整 md 链接 → wikilink → URL → 行内代码。必须先保护完整
+    链接再做行内代码，否则 [`path.md`](path.md) 这类"显示文本含行内代码"的
+    链接会被代码切分拦腰断开，`](目标)` 残片匹配不上链接正则，目标段被改坏
+    （实证：07_模型训练/04_分布式训练/03_分布式训练_2026.md，ISS-108）。
+    """
+    protected = []
 
-            # Protect URLs
-            url_placeholders = {}
-            url_pattern = re.compile(r'https?://\S+')
-            for j, match in enumerate(url_pattern.finditer(part)):
-                placeholder = f'__URL{j}__'
-                url_placeholders[placeholder] = match.group()
+    def stash(m):
+        protected.append(m.group())
+        return f'__PROT{len(protected) - 1}__'
 
-            temp = url_pattern.sub(lambda m: f'__URL{list(url_placeholders.values()).index(m.group())}__', temp)
+    temp = line
+    for pattern in (re.compile(r'\[[^\]]*\]\([^)]*\)'),   # md 链接整体
+                    re.compile(r'\[\[[^\]]*\]\]'),        # wikilink 整体
+                    re.compile(r'https?://\S+'),          # URL
+                    re.compile(r'(`+)([^`]+?)\1')):       # 行内代码（反引号游程配对，
+        temp = pattern.sub(stash, temp)                   # 兼容 ``…`` 双反引号围栏）
 
-            # Protect markdown link syntax [...](...)
-            link_pattern = re.compile(r'\[([^\]]*)\]\([^)]*\)')
-            link_placeholders = {}
-            for j, match in enumerate(link_pattern.finditer(temp)):
-                placeholder = f'__LINK{j}__'
-                link_placeholders[placeholder] = match.group()
+    # Fix: CJK followed by ASCII (add space)
+    temp = re.sub(f'([{CJK_RANGE}])([A-Za-z0-9])', r'\1 \2', temp)
+    # Fix: ASCII followed by CJK (add space)
+    temp = re.sub(f'([A-Za-z0-9%])([{CJK_RANGE}])', r'\1 \2', temp)
+    # Fix double spaces introduced
+    temp = re.sub(r'  +', ' ', temp)
 
-            temp = link_pattern.sub(lambda m: f'__LINK{list(link_placeholders.values()).index(m.group())}__', temp)
-
-            # Fix: CJK followed by ASCII (add space)
-            temp = re.sub(
-                f'([{CJK_RANGE}])([A-Za-z0-9])',
-                r'\1 \2',
-                temp
-            )
-            # Fix: ASCII followed by CJK (add space)
-            temp = re.sub(
-                f'([A-Za-z0-9%])([{CJK_RANGE}])',
-                r'\1 \2',
-                temp
-            )
-
-            # Fix double spaces introduced
-            temp = re.sub(r'  +', ' ', temp)
-
-            # Restore links
-            for placeholder, original in link_placeholders.items():
-                temp = temp.replace(placeholder, original)
-            # Restore URLs
-            for placeholder, original in url_placeholders.items():
-                temp = temp.replace(placeholder, original)
-            # Restore wikilinks
-            for placeholder, original in wl_placeholders.items():
-                temp = temp.replace(placeholder, original)
-
-            fixed_parts.append(temp)
-
-    return ''.join(fixed_parts)
+    # 逆序还原：嵌套占位（如链接内又有行内代码）须由外向内展开
+    for i in range(len(protected) - 1, -1, -1):
+        temp = temp.replace(f'__PROT{i}__', protected[i])
+    return temp
 
 
 def process_file(filepath: str) -> tuple:

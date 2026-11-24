@@ -7,8 +7,11 @@
   tree.js             window.__PORTAL_TREE__：五层产业链节点前缀 + 文档章节计数 + 四面计数
   pages/<shard>.js    md → HTML 阅读分片（window.__PORTAL_SHARDS__），按顶层目录分片、
                       读取时按需 <script> 注入——与拆解台 data.js 同模式，绕开 file:// 的
-                      fetch/CORS 限制
+                      fetch/CORS 限制；序列化超 4MB 的 wiki 顶层章按二级目录再分
   golden.json         检索回归集（配合 --check 使用）
+
+index 头额外字段：shardSplit = 被二级再分的章名单；app.js shardOf 读取该字段镜像
+同一分片规则——改分片逻辑必须两处同步。
 
 记录字段（P2 前端按此约定消费）：
   t 标题 · p 仓库相对路径 · s 面（发布站/拆解台/文档站/前端应用/数据集）
@@ -65,6 +68,10 @@ MD_NOISE_RE = re.compile(r"!\[[^\]]*\]\([^)]*\)|\[[^\]]*\]\([^)]*\)|`{1,3}[^`]*`
 DATE_KEYS = ("updated", "更新", "created", "创建")
 TITLE_KEYS = ("title", "name_zh")
 SUMMARY_KEYS = ("summary", "摘要")
+
+# C3：wiki 顶层分片序列化体积超过该值时按二级目录再分；章名单写入 index 头 shardSplit，
+# app.js 的 shardOf 镜像同一规则（旧 index 无 shardSplit 时 app.js 走旧键，双向兼容）
+SHARD_SPLIT_BYTES = 4 * 1024 * 1024
 
 
 def fm_get(fm: str, keys: tuple[str, ...]) -> str:
@@ -294,7 +301,8 @@ def _restore_code(text: str, stash: list[str]) -> str:
     return re.sub(r"\x00(\d+)\x00", lambda m: stash[int(m.group(1))], text)
 
 
-def build_pages(records: list[dict], out_dir: Path, resolver: dict[str, str]) -> dict[str, int]:
+def build_pages(records: list[dict], out_dir: Path,
+                resolver: dict[str, str]) -> tuple[dict[str, int], list[str]]:
     pages_dir = out_dir / "pages"
     pages_dir.mkdir(parents=True, exist_ok=True)
     for old in list(pages_dir.glob("*.json")) + list(pages_dir.glob("*.js")):
@@ -316,6 +324,21 @@ def build_pages(records: list[dict], out_dir: Path, resolver: dict[str, str]) ->
         shards.setdefault(shard_of(r), {})[r["p"]] = md_to_html(
             body, resolver, path_set, src.parent
         )
+    # C3：超体积的 wiki 顶层分片按二级目录再分（顶层散文件归 _root 桶）
+    split: list[str] = []
+    for name in [n for n in shards if re.fullmatch(r"wiki/[^/]+", n)]:
+        payload = json.dumps(shards[name], ensure_ascii=False, separators=(",", ":"))
+        if len(payload.encode("utf-8")) <= SHARD_SPLIT_BYTES:
+            continue
+        top = name[len("wiki/"):]
+        regrouped: dict[str, dict[str, str]] = {}
+        for p, html in shards[name].items():
+            parts = p.split("/")
+            sub = parts[1] if len(parts) > 2 else "_root"
+            regrouped.setdefault(f"{name}/{sub}", {})[p] = html
+        del shards[name]
+        shards.update(regrouped)
+        split.append(top)
     counts = {}
     for name, pages in sorted(shards.items()):
         safe = name.replace("/", "__") + ".js"
@@ -326,7 +349,7 @@ def build_pages(records: list[dict], out_dir: Path, resolver: dict[str, str]) ->
             encoding="utf-8",
         )
         counts[name] = len(pages)
-    return counts
+    return counts, sorted(split)
 
 
 def build_tree(records: list[dict], out_dir: Path) -> dict:
@@ -448,11 +471,15 @@ def main() -> int:
     for r in records:
         by_surface[r["s"]] = by_surface.get(r["s"], 0) + 1
 
+    resolver = build_wikilink_resolver(records)
+    shard_counts, split = build_pages(records, out_dir, resolver)
+
     index = {
         "asOf": date.today().isoformat(),
         "count": len(records),
         "bySurface": by_surface,
         "scoring": "q split by whitespace, AND; exact-t=8 t=3 p=2 x=1; top5",
+        "shardSplit": split,
         "records": records,
     }
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -470,11 +497,10 @@ def main() -> int:
     print(f"tree.js: {len(tree['layers'])} layers / {sum(len(l['nodes']) for l in tree['layers'])} nodes"
           f" / {len(tree['chapters'])} chapters / surfaces={tree['surfaces']}")
 
-    resolver = build_wikilink_resolver(records)
-    shard_counts = build_pages(records, out_dir, resolver)
     total_pages = sum(shard_counts.values())
     pages_size = sum(f.stat().st_size for f in (out_dir / "pages").glob("*.js"))
-    print(f"pages/: {len(shard_counts)} shards, {total_pages} pages, {pages_size / 1024 / 1024:.1f} MB")
+    print(f"pages/: {len(shard_counts)} shards, {total_pages} pages, {pages_size / 1024 / 1024:.1f} MB"
+          + (f"，二级再分：{split}" if split else ""))
 
     # 分片覆盖强校验：每条 doc 记录都必须有可读分片，源文件缺失/被跳过即失败
     doc_count = sum(1 for r in records if r["k"] == "doc")

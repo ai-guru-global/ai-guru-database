@@ -102,7 +102,15 @@
       if (top === '证据层' || /^0[1-5]-/.test(top)) return 'console/' + top;
       return 'console/_root';
     }
-    return 'wiki/' + path.split('/')[0];
+    var top = path.split('/')[0];
+    // C3 二级分片镜像：build_portal.py 把超 4MB 章名单写进 index 头 shardSplit，
+    // 这里按同一规则取二级目录（顶层散文件归 _root）。旧 index 无该字段时走整章键。
+    var split = (window.__PORTAL_INDEX__ && window.__PORTAL_INDEX__.shardSplit) || [];
+    if (split.indexOf(top) >= 0) {
+      var seg = path.split('/');
+      return 'wiki/' + top + '/' + (seg.length > 2 ? seg[1] : '_root');
+    }
+    return 'wiki/' + top;
   }
   function ensureShard(path, cb) {
     var key = shardOf(path);

@@ -1,13 +1,16 @@
 name: Link Health Gate
 
-# P2-6：wikilink 断链门禁 —— 断链数相对 wiki/治理/_meta/link-health-baseline.json 只许下降、不许上升
+# P2-6 / P1-1b：断链门禁两级口径。
+# push main：全文棘轮——六项指标相对 wiki/治理/_meta/link-health-baseline.json 只许下降、不许上升；
+# PR：changed-only 零容忍——本 PR 新增/修改的 wiki 页不许引入任何断链、frontmatter 缺失或间距违规。
 on:
   push:
     branches: [main]
   pull_request:
 
 jobs:
-  link-health:
+  full-ratchet:
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,5 +19,20 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: wikilink 断链门禁
+      - name: 全文棘轮门禁
         run: python3 code/工具/link_gate.py
+
+  pr-zero-tolerance:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 变更文件零容忍
+        run: python3 code/工具/link_gate.py --changed-only --base "origin/${{ github.base_ref }}"

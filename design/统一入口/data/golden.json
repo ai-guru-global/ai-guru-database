@@ -56,5 +56,43 @@
  {
   "q": "多模态模型",
   "any_p_contains": "09_多模态模型"
+ },
+ {
+  "q": "GLM-5",
+  "must_any": [
+   "console/data/models.json#model/glm-5-3"
+  ]
+ },
+ {
+  "q": "平头哥",
+  "must_any": [
+   "console/data/players.json#player/平头哥"
+  ]
+ },
+ {
+  "q": "中望软件",
+  "must_any": [
+   "console/data/players.json#player/中望软件"
+  ]
+ },
+ {
+  "q": "推理优化",
+  "any_p_contains": "10_部署推理/03_推理优化/"
+ },
+ {
+  "q": "架构基建",
+  "any_p_contains": "12_架构基建/"
+ },
+ {
+  "q": "智能体",
+  "any_p_contains": "15_智能体/"
+ },
+ {
+  "q": "量子占卜xyz",
+  "expect_empty": true
+ },
+ {
+  "q": "Qwen 雷电法王",
+  "expect_empty": true
  }
 ]

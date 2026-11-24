@@ -381,6 +381,17 @@ GOLDEN = [
     {"q": "GPT-6 Astra", "must_any": ["console/data/models.json#model/gpt-6-astra"]},
     {"q": "RAG系统", "any_p_contains": "14_RAG系统/"},
     {"q": "多模态模型", "any_p_contains": "09_多模态模型"},
+    # C1 扩充（2026-11-24）：数据集实体（models/players uid 路径）
+    {"q": "GLM-5", "must_any": ["console/data/models.json#model/glm-5-3"]},
+    {"q": "平头哥", "must_any": ["console/data/players.json#player/平头哥"]},
+    {"q": "中望软件", "must_any": ["console/data/players.json#player/中望软件"]},
+    # C1 扩充：章节前缀浏览（章节名查询应带回该章路径）
+    {"q": "推理优化", "any_p_contains": "10_部署推理/03_推理优化/"},
+    {"q": "架构基建", "any_p_contains": "12_架构基建/"},
+    {"q": "智能体", "any_p_contains": "15_智能体/"},
+    # C1 扩充：错误态（无结果 / AND 语义下单 token 拖空）
+    {"q": "量子占卜xyz", "expect_empty": True},
+    {"q": "Qwen 雷电法王", "expect_empty": True},
 ]
 
 
@@ -392,6 +403,8 @@ def run_check(index: dict) -> int:
         paths = [r["p"] for r in top]
         if "must_any" in g:
             ok = any(p in paths for p in g["must_any"])
+        elif "expect_empty" in g:
+            ok = not paths
         else:
             ok = any(g["any_p_contains"] in p for p in paths)
         mark = "ok " if ok else "FAIL"

@@ -49,9 +49,13 @@ frontmatter 缺失、孤立页等债务。本机制替代"一次性抬高基线"
 }
 ```
 
-- `allowed_delta` 只认门禁指标键：`broken_instances` / `orphan_count` /
-  `frontmatter_incomplete` / `spacing_violations` /
-  `staging_frontmatter_incomplete` / `staging_spacing_violations`。
+- `allowed_delta` 只认门禁指标键：
+
+  ```text
+  broken_instances / orphan_count / frontmatter_incomplete
+  spacing_violations / staging_frontmatter_incomplete / staging_spacing_violations
+  ```
+
 - 多个未过期批次按指标求和；无效文件忽略并告警，不阻断门禁。
 
 ---

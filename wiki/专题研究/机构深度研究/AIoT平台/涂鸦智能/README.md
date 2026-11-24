@@ -4,7 +4,7 @@ category: -research
 tags: ["AIoT", "IoT-PaaS", "涂鸦智能", "Tuya", "机构拆解"]
 summary: "中立 IoT PaaS 龙头转型 AI 云平台：2025 年收入 3.22 亿美元、净利 5,789 万美元，市值一度低于净现金。"
 created: 2026-11-16
-updated: 2026-11-16
+updated: 2026-11-24
 tier: core
 aliases: [Tuya, Tuya Smart, 涂鸦, tuya.com]
 sources: ["tuya.com", "港交所公告", "SEC 20-F"]
@@ -56,5 +56,5 @@ name_zh: "涂鸦智能"
 ## 交叉阅读
 
 - 行业坐标：[[专题研究/机构深度研究/AIoT平台/README|AIoT 平台行业总览]]
-- 同赛道（待拆解）：小米（Vela 生态）、华为（HarmonyOS）、阿里云 IoT——见行业总览"后续可增补"
+- 同赛道（批次二已落库）：[[专题研究/机构深度研究/AIoT平台/小米集团/README|小米集团]]（Vela 生态）、[[专题研究/机构深度研究/AIoT平台/华为/README|华为]]（HarmonyOS 生态）、[[专题研究/机构深度研究/AIoT平台/阿里云IoT/README|阿里云 IoT]]（云附属型）
 - 跨模块理论：[云 AI 平台](../../../../概念/General/cloud-ai-platform.md)｜[边缘 AI 芯片](../../../../概念/GPU/edge-ai-chips.md)｜[AI 智能体](../../../../概念/Agent/ai-agents.md)

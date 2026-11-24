@@ -15,7 +15,7 @@ sources:
   - "https://arxiv.org/abs/1706.03762"
   - "https://papers.nips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html"
 created: 2026-07-23
-updated: 2026-07-23
+updated: 2026-11-24
 lifecycle: reviewed
 tier: supporting
 aliases:
@@ -333,7 +333,7 @@ class MultiHeadAttention(nn.Module):
 ## 与知识库其他内容的连接
 
 - [[90_学习/01_概念认知/04_stage2_core_tech|Transformer]] — 概念分阶中的核心概念
-- [[05_大模型/03_Transformer|Transformer 详解]] — 知识库的架构章节
+- [[05_大模型/03_Transformer架构/README|Transformer 详解]] — 知识库的架构章节
 - [[90_学习/05_参考资料/Papers/03_BERT_Reading|BERT 论文]] — Encoder 方向的延伸
 - [[90_学习/05_参考资料/Papers/02_GPT3_Reading|GPT-3 论文]] — Decoder 方向的延伸
 - [[90_学习/05_参考资料/books/14_build_llm_from_scratch_raschka|Raschka 实现 LLM]] — 从零实现 Transformer
@@ -367,8 +367,8 @@ class MultiHeadAttention(nn.Module):
 - [[90_学习/05_参考资料/books/14_build_llm_from_scratch_raschka|Build LLM From Scratch]] — 逐行实现 Transformer
 - [[90_学习/05_参考资料/books/03_nlp_with_transformers|NLP with Transformers]] — HF 生态应用
 - [[90_学习/05_参考资料/books/08_hands_on_llms_alammar|Hands-On LLMs]] — 图解 Transformer 内部
-- [[05_大模型/01_LLM基础]] — 知识库 LLM 基础
-- [[03_深度学习/]] — 深度学习章节
+- [[05_大模型/01_LLM基础/README|LLM 基础章节]] — 知识库 LLM 基础
+- [[03_深度学习/README|深度学习章节]] — 深度学习章节
 - [[90_学习/01_概念认知/04_stage2_core_tech|Stage 2: 核心技术]] — Transformer 在学习路径中的位置
 
-> **关联**: → [[90_学习/05_参考资料/Projects/01_papers_with_code]] | [[90_学习/05_参考资料/Papers/03_BERT_Reading|BERT]] | [[90_学习/05_参考资料/Papers/02_GPT3_Reading|GPT-3]] | [[05_大模型/01_LLM基础]] | [[90_学习/05_参考资料/books/14_build_llm_from_scratch_raschka|从零实现]]
+> **关联**: → [[90_学习/05_参考资料/Projects/01_papers_with_code]] | [[90_学习/05_参考资料/Papers/03_BERT_Reading|BERT]] | [[90_学习/05_参考资料/Papers/02_GPT3_Reading|GPT-3]] | [[05_大模型/01_LLM基础/README|LLM 基础]] | [[90_学习/05_参考资料/books/14_build_llm_from_scratch_raschka|从零实现]]

@@ -2,7 +2,8 @@
 title: Synthesis
 type: index
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-11-24
+tier: peripheral
 sources: []
 name_zh: "综合索引归档"
 ---

@@ -1,7 +1,7 @@
 # Root Makefile — forwards to tools/cmd
 # 内容库为本仓库主体；Go 工具在 tools/cmd 下自包含维护。
 
-.PHONY: build run test test-short test-coverage clean install fmt vet lint lint-fix security quality release mod tree console dataset dataset-check pages pages-check portal portal-check issues issues-publish mcp-test npm-test help
+.PHONY: build run test test-short test-coverage clean install fmt vet lint lint-fix security quality release mod tree console dataset dataset-check pages pages-check portal portal-check shots issues issues-publish mcp-test npm-test help
 
 # 行业分层目录树：01..05 五层目录 + 节点学习页 + 叶子（_index 重新生成；叶子已存在跳过）
 tree:
@@ -46,6 +46,10 @@ portal:
 
 portal-check:
 	$(PY) tools/scripts/build_portal.py --check
+
+# C4 截图资产：面改版上线后重截四面首屏（生产地址直截，playwright+系统 Chrome，2880×1800@2x）
+shots:
+	node tools/scripts/capture_surfaces.mjs
 
 # MCP server 冒烟测试（initialize / tools/list / tools/call）
 mcp-test:

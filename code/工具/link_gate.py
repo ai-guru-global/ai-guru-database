@@ -51,7 +51,7 @@ BATCH_METRICS = ('broken_instances', 'orphan_count', 'frontmatter_incomplete',
                  'spacing_violations', 'staging_frontmatter_incomplete',
                  'staging_spacing_violations', 'md_broken',
                  'md_root_relative_bare', 'fm_value_violations',
-                 'ambiguous_basename_links')
+                 'ambiguous_basename_links', 'body_contract_violations')
 CHECKER = ROOT / 'code' / '工具' / 'check_wikilinks.py'
 SPACER = ROOT / 'code' / '工具' / 'fix_spacing.py'
 NAV_BASES = {'readme', 'readme_en', 'index', 'readme_for_dummy'}
@@ -64,6 +64,11 @@ FIELD = re.compile(r'^(\w[\w-]*):', re.M)
 TIER_VALUES = ('core', 'supporting', 'peripheral')
 ISO_DATE = re.compile(r'^\d{4}-\d{2}-\d{2}$')
 ISO_DATETIME = re.compile(r'^\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}')
+# P1-5①：正文契约（AGENTS.md 强制项的机器化）。存量 2,539 项走全文棘轮只降
+# 不升；changed-only 只阻断净新增（改文件不再要求顺带清历史债）
+NAME_BLOCK_RE = re.compile(r'>\s*中文简称[：:]')
+ONE_LINER_RE = re.compile(r'> \*\*一句话理解\*\*')
+FOOTER_RE = re.compile(r'\*Last updated: \d{4}-\d{2}-\d{2}\*')
 # P0-2B：md 内部链接进门禁。口径与 check_links.py 一致（源文件目录解析、
 # '/' 开头 vault 根、根相对裸写单列）；正则暂与 check_links 重复，待 P2-1 单一 resolver 并库
 MD_LINK = re.compile(r'\[([^\]]*)\]\(([^)]+)\)')
@@ -185,6 +190,25 @@ def validate_fm_values(text: str) -> list:
     return problems
 
 
+def validate_body_contract(text: str, link_count: int) -> list:
+    """P1-5①：正文契约四项（中文简称块 / 一句话理解 / 页脚 / 出链≥2）。
+
+    link_count 由 inspect_text 传入（wikilink + md 内部链接合计，口径与
+    孤立页入链一致）。存量约 2,500 项由全文模式 body_contract_violations
+    独立棘轮收敛；changed-only 只阻断净新增。
+    """
+    problems = []
+    if not NAME_BLOCK_RE.search(text):
+        problems.append('缺「> 中文简称：」块')
+    if not ONE_LINER_RE.search(text):
+        problems.append('缺「> **一句话理解**：」块')
+    if not FOOTER_RE.search(text[-400:]):
+        problems.append('缺 *Last updated: YYYY-MM-DD* 页脚')
+    if link_count < 2:
+        problems.append(f'出链不足 2（当前 {link_count}，含 wikilink 与 md 链接）')
+    return problems
+
+
 def read_head_text(rel: str):
     """读 HEAD 版本的 wiki/<rel>（changed-only 净新增判定用）；读不到返回 None。"""
     try:
@@ -260,7 +284,8 @@ def inspect_text(text, chk, fix_spacing, rel_index, name_index, alias_index, dir
             'resolved': resolved, 'broken': broken, 'alias_hits': alias_hits,
             'link_count': link_count, 'md_missing': md_missing,
             'md_root_bare': md_root_bare, 'ambiguous': ambiguous,
-            'fm_value_problems': validate_fm_values(text)}
+            'fm_value_problems': validate_fm_values(text),
+            'contract_problems': validate_body_contract(text, link_count)}
 
 
 def scan(chk, spacer) -> dict:
@@ -278,7 +303,7 @@ def scan(chk, spacer) -> dict:
     fm_incomplete, spacing_bad = [], []
     staging_fm, staging_spacing = [], []
     md_missing, md_root_bare = [], []
-    fm_value, ambiguous = [], []
+    fm_value, ambiguous, contract = [], [], []
     alias_hits = {'bare': 0, 'path': 0}
     total_links = 0
     for rel in scan_mds:
@@ -301,6 +326,8 @@ def scan(chk, spacer) -> dict:
         md_root_bare.extend({'source': rel, **item} for item in info['md_root_bare'])
         for p in info['fm_value_problems']:
             fm_value.append({'source': rel, 'problem': p})
+        for p in info['contract_problems']:
+            contract.append({'source': rel, 'problem': p})
         ambiguous.extend({'source': rel, **item} for item in info['ambiguous'])
     orphans = [rel for rel in scan_mds
                if rel[:-3] not in inlinked and not is_nav_page(rel)]
@@ -320,7 +347,7 @@ def scan(chk, spacer) -> dict:
             'staging_fm_incomplete': staging_fm,
             'staging_spacing_bad': staging_spacing,
             'md_missing': md_missing, 'md_root_bare': md_root_bare,
-            'fm_value': fm_value, 'ambiguous': ambiguous}
+            'fm_value': fm_value, 'ambiguous': ambiguous, 'contract': contract}
 
 
 def load_active_batches(batch_dir=None, today=None):
@@ -483,13 +510,14 @@ def run_changed_only(args, chk, spacer) -> int:
                     f'（ISS-110，实为 404——改用 ./ 或 ../ 开头的显式相对路径）')
             # P1-3/P1-4 值校验与歧义裸名：净新增阻断，存量只提示（棘轮口径，
             # 避免改文件即须清历史债；全文模式以独立棘轮指标收敛存量）
-            old_value, old_amb = set(), set()
+            old_value, old_amb, old_contract = set(), set(), set()
             old_text = read_head_text(rel)
             if old_text is not None:
                 old_info = inspect_text(old_text, chk, fix_spacing, rel_index,
                                         name_index, alias_index, dirs, rel)
                 old_value = set(old_info['fm_value_problems'])
                 old_amb = {a['target'] for a in old_info['ambiguous']}
+                old_contract = set(old_info['contract_problems'])
             for p in info['fm_value_problems']:
                 if p in old_value:
                     print(f'   ⚠️  {rel}（存量值违规，不阻断）: {p}')
@@ -502,6 +530,11 @@ def run_changed_only(args, chk, spacer) -> int:
                     problems.append(
                         f'歧义裸名链接: [[{a["target"]}]]——该 basename 有多个'
                         f'同名文件，新链接须用全路径（P1-4）')
+            for p in info['contract_problems']:
+                if p in old_contract:
+                    print(f'   ⚠️  {rel}（存量契约缺失，不阻断）: {p}')
+                else:
+                    problems.append(f'正文契约: {p}')
         if problems:
             failed += 1
             print(f'❌ {rel}（{zone} 区：仅格式检查）' if zone == 'staging' else f'❌ {rel}')
@@ -560,6 +593,7 @@ def main():
         'md_root_relative_bare': len(result['md_root_bare']),
         'fm_value_violations': len(result['fm_value']),
         'ambiguous_basename_links': len(result['ambiguous']),
+        'body_contract_violations': len(result['contract']),
     }
     total = result['total_links']
 
@@ -572,7 +606,8 @@ def main():
              'md_broken': 'md 断链',
              'md_root_relative_bare': 'md 根相对裸写',
              'fm_value_violations': 'frontmatter 值违规',
-             'ambiguous_basename_links': '歧义裸名链接'}
+             'ambiguous_basename_links': '歧义裸名链接',
+             'body_contract_violations': '正文契约'}
     examples = {'frontmatter_incomplete': result['fm_incomplete'],
                 'spacing_violations': result['spacing_bad'],
                 'staging_frontmatter_incomplete': result['staging_fm_incomplete'],
@@ -584,7 +619,9 @@ def main():
                 'fm_value_violations': [f"{b['source']}: {b['problem']}"
                                         for b in result['fm_value'][:5]],
                 'ambiguous_basename_links': [f"{b['source']}: [[{b['target']}]]"
-                                             for b in result['ambiguous'][:5]]}
+                                             for b in result['ambiguous'][:5]],
+                'body_contract_violations': [f"{b['source']}: {b['problem']}"
+                                             for b in result['contract'][:5]]}
     batch_deltas, active_batches, expired_batches = load_active_batches()
     if active_batches:
         print(f"ℹ️ 生效导入批次：{'、'.join(active_batches)}（额度已并入通过线，不抬高基线）")

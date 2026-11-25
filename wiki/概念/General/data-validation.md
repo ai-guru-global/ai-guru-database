@@ -28,10 +28,10 @@ name_zh: "数据校验"
 ## 核心要点
 
 - **四层验证**:
-  - L0 Schema: 字段存在、类型、非空
-  - L1 Statistics: 均值、方差、分位数、类别分布
-  - L2 Distribution: 训练/服务数据分布漂移
-  - L3 Semantic: 文本质量、毒性、PII、重复
+ - L0 Schema: 字段存在、类型、非空
+ - L1 Statistics: 均值、方差、分位数、类别分布
+ - L2 Distribution: 训练/服务数据分布漂移
+ - L3 Semantic: 文本质量、毒性、PII、重复
 - **CI/CD 门禁**: 验证失败可阻断训练任务。
 - **工具**: Great Expectations、Pandera、Evidently、WhyLabs、Deequ。
 
@@ -54,7 +54,7 @@ name_zh: "数据校验"
 - [[概念/pandera|Pandera]]
 - [[概念/evidently|Evidently]]
 - [[概念/mlops|MLOps]]
-- [[11_模型运维/12_故障排查/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]
+- [I_模型运维/12_故障排查/01_数据_Validation_Failure_操作手册|数据验证失败 Runbook]]
 
 ---
 

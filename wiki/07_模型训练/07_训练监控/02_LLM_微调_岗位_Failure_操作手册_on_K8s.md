@@ -278,7 +278,7 @@ kubectl get pod <pod> -n <ns> -o jsonpath='{.spec.containers[*].resources}'
 - [[07_模型训练/04_分布式训练/04_分布式训练_Hang_操作手册|分布式训练 Hang 排障 Runbook]]
 - [[07_模型训练/07_训练监控/04_训练_岗位_Diagnosis_工作流|训练任务诊断工作流]]
 - [[13_运维/02_SRE与可靠性/11_GPU_OOM_故障排查_指南|GPU OOM 排障指南]]
-- [[13_运维/02_SRE与可靠性/K8s_AI_Troubleshooting_Cheat_Sheet|K8s for AI 排查速查表]]
+- [K_运维/02_SRE 与可靠性/17_K8s_AI_故障排查_Cheat_Sheet|K8s for AI 排查速查表]]
 - [[概念/lora-peft|LoRA / PEFT]]
 - [[概念/qlora|QLoRA]]
 - [[概念/deepspeed|DeepSpeed]]

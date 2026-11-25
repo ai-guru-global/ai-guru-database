@@ -160,7 +160,7 @@ response = client.chat.completions.create(
 - [[20_论文精读/03_规模扩展/GPT3_Deep_Dive]]
 - [[概念/tokenization]]
 - [[概念/prompt-engineering]]
-- [[05_大模型/01_LLM基础/ApacheCN_NLP_Track|ApacheCN NLP 学习路径]]
+- [E_大模型/01_LLM 基础/01_ApacheCN_NLP_路线|ApacheCN NLP 学习路径]]
 - [[14_RAG系统/06_RAG框架/index|RAG 框架]]
 
 ## 总结

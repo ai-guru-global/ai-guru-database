@@ -10,6 +10,9 @@ aliases:
 sources: []
 
 name_zh: "Claude 完整指南：模型、提示工程、工具与协议"
+category: 16-misc
+summary: "Claude 完整指南：模型、提示工程、工具与协议 相关主题页面：定义、要点与延伸阅读。"
+updated: 2026-11-25
 ---
 # Claude 完整指南：模型、提示工程、工具与协议
 
@@ -355,4 +358,4 @@ Skills 是**包含指令、脚本和资源的文件夹**，Claude 在需要时�
 - [[05_大模型/01_LLM基础/05_LLM_基础]] - 大语言模型基础知识
 - [[16_编程/05_开发工具/02_Claude_Code_深入分析]] - Claude Code 深度解析
 - [[16_编程/02_理论基础/02_Claude_Agent_架构]] - Claude Agent 架构设计
-- [[15_智能体/15_课程笔记/Learn_Claude_Code_L19_MCP_Plugin|L19 MCP Plugin]] - MCP 外部工具发现与命名空间
+- [M_智能体/15_课程笔记/11_Learn_Claude_Code_L19_MCP_插件|L19 MCP Plugin]] - MCP 外部工具发现与命名空间

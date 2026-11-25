@@ -6,6 +6,10 @@ updated: 2026-07-25
 sources: []
 name_zh: "推理模型"
 name_en: "Reasoning Models"
+category: 05-misc
+tags: ["推理模型", "knowledge-page"]
+summary: "推理模型 相关主题页面：定义、要点与延伸阅读。"
+tier: supporting
 ---
 
 # Reasoning Models
@@ -34,7 +38,7 @@ name_en: "Reasoning Models"
 | [[05_大模型/08_推理模型/INDEX|DeepSeek R1]] | DeepSeek R1 技术分析 |
 | [[05_大模型/08_推理模型/03_Neuro_Symbolic_and_Formal_Verification_2026|神经符号与形式验证]] | 神经符号推理方法 |
 | [[05_大模型/08_推理模型/README|README]] | 目录说明 |
-| [[05_大模型/08_推理模型/Test_Time_Compute_Scaling_2026|Test-Time Compute Scaling 2026: 推理时计算扩展的生产实践]] | 从生产环境视角系统梳理 Test-Time Compute Scaling（测试时计算扩展）: 核心原理、系统架构、成本-延迟-质量三角权衡、2026 年... | - |
+| [E_大模型/08_推理模型/09_Test_Time_算力_扩展_2026|Test-Time Compute Scaling 2026: 推理时计算扩展的生产实践]] | 从生产环境视角系统梳理 Test-Time Compute Scaling（测试时计算扩展）: 核心原理、系统架构、成本-延迟-质量三角权衡、2026 年... | - |
 | [[05_大模型/08_推理模型/10_Test_Time_训练_2026|Test-Time Training: 测试时训练 (TTT 2026)]] | Test-Time Training (TTT) 与 Test-Time Compute 截然不同——它不是让模型"多想想"，而是在推理过程中对模型参数（... | - |
 
 ## 核心概念速查

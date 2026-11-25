@@ -153,4 +153,4 @@ kubectl exec -it <pod> -n <ns> -- python train.py --batch_size 1 --max_steps 10
 
 - [[07_模型训练/07_训练监控/02_LLM_微调_岗位_Failure_操作手册_on_K8s|LLM 微调任务 K8s 失败排障]]
 - [[07_模型训练/04_分布式训练/04_分布式训练_Hang_操作手册|分布式训练 Hang 排障]]
-- [[13_运维/02_SRE与可靠性/K8s_AI_Troubleshooting_Cheat_Sheet|K8s for AI 排查速查表]]
+- [K_运维/02_SRE与可靠性/17_K8s_AI_故障排查_Cheat_Sheet|K8s for AI 排查速查表]]

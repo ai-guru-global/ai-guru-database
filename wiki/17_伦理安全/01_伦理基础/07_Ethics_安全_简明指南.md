@@ -682,7 +682,7 @@ AI 伦理与安全 10 条底线:
 
 ## 相关链接
 
-- [[17_伦理安全/01_伦理基础/AI_Ethics_Safety_Future|AI 伦理安全未来]] — 伦理安全深度探讨
+- [O_伦理安全/01_伦理基础/04_ai_ethics_future|AI 伦理安全未来]] — 伦理安全深度探讨
 - [[17_伦理安全/index|伦理安全首页]] — 伦理安全知识总览
 - [[概念/Safety/ai-ethics|AI 伦理]] — AI 伦理概念卡片
 - [[概念/Safety/ai-alignment|AI 对齐]] — 对齐技术总览

@@ -7,6 +7,9 @@ sources: []
 tags: [auto-index]
 name_zh: "事故响应"
 name_en: "Incident Response"
+category: 13-misc
+summary: "事故响应 相关主题页面：定义、要点与延伸阅读。"
+tier: supporting
 ---
 
 # Incident Response
@@ -19,7 +22,7 @@ name_en: "Incident Response"
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[13_运维/03_故障应急/AI_Incident_Response_Framework|AI Incident Response Framework]] | AI incident response framework: severity levels, escalation and automated mitigation | SRE / on-call engineers |
+| [K_运维/03_故障应急/02_Incident_Management|AI Incident Response Framework]] | AI incident response framework: severity levels, escalation and automated mitigation | SRE / on-call engineers |
 | [[13_运维/03_故障应急/04_On_Call_操作手册_模板|On Call Runbook Template]] | On-call runbook template: common fault handling SOP | on-call engineers / ops |
 | [[13_运维/03_故障应急/05_Post_Mortem_模板|Post Mortem Template]] | Post-mortem template: blameless post-mortem format and best practices | all engineers / engineering managers |
 | [[13_运维/03_故障应急/02_Incident_Management|事故管理 (Incident Management)]] | AI 系统事故管理完整体系：事故分级、响应流程、Runbook 模板、复盘方法、AI 系统特有故障模式与 2026 SRE 实践。 | - | - |
@@ -36,7 +39,7 @@ name_en: "Incident Response"
 |------|----------|----------|----------|
 | 基础原理 | 理解底层机制 | 数学推导+直觉解释 | 先理解再应用 |
 | 算法实现 | 掌握核心算法 | 伪代码+复杂度分析 | 手写实现加深理解 |
-| 工程优化 | 生产级优化 | 性能profiling+调优 | 数据驱动优化 |
+| 工程优化 | 生产级优化 | 性能 profiling+调优 | 数据驱动优化 |
 | 前沿方向 | 了解最新进展 | 论文解读+趋势分析 | 选择性跟进 |
 | 应用落地 | 解决实际问题 | 方案设计+效果验证 | 从简单开始迭代 |
 
@@ -46,7 +49,7 @@ name_en: "Incident Response"
 |------|------|------|----------|--------|
 | 经典方法 | 可解释+稳定 | 能力有限 | 简单任务/合规要求 | 成熟 |
 | 深度学习方法 | 强大表达力 | 黑箱+数据依赖 | 复杂模式识别 | 成熟 |
-| 大模型方法 | 通用能力强 | 成本高+幻觉 | 通用NLP/推理 | 发展中 |
+| 大模型方法 | 通用能力强 | 成本高+幻觉 | 通用 NLP/推理 | 发展中 |
 | 混合方法 | 取长补短 | 复杂度高 | 企业级应用 | 发展中 |
 
 ## 实验与验证方法
@@ -63,9 +66,9 @@ name_en: "Incident Response"
 
 | 级别 | 资源类型 | 推荐 | 时间投入 |
 |------|----------|------|----------|
-| 入门 | 科普文章/视频 | 3Blue1Brown/科普中国 | 2-4小时 |
-| 基础 | 教材/在线课程 | 经典教材+Coursera | 2-4周 |
-| 进阶 | 论文/技术博客 | 顶会论文+工程博客 | 4-8周 |
+| 入门 | 科普文章/视频 | 3Blue1Brown/科普中国 | 2-4 小时 |
+| 基础 | 教材/在线课程 | 经典教材+Coursera | 2-4 周 |
+| 进阶 | 论文/技术博客 | 顶会论文+工程博客 | 4-8 周 |
 | 实战 | 开源项目/竞赛 | Kaggle/GitHub | 持续 |
 | 研究 | 前沿论文/复现 | arXiv+论文复现 | 持续 |
 
@@ -73,15 +76,15 @@ name_en: "Incident Response"
 
 | 考点 | 典型问题 | 回答框架 |
 |------|----------|----------|
-| 概念理解 | 解释XX的原理 | 定义+直觉+公式+应用 |
-| 方法对比 | A和B的区别 | 维度对比+适用场景 |
-| 实践应用 | 如何解决XX问题 | 分析+方案+权衡+验证 |
-| 前沿认知 | XX的最新进展 | 现状+突破+挑战+展望 |
-| 系统设计 | 设计一个XX系统 | 需求+架构+权衡+扩展 |
+| 概念理解 | 解释 XX 的原理 | 定义+直觉+公式+应用 |
+| 方法对比 | A 和 B 的区别 | 维度对比+适用场景 |
+| 实践应用 | 如何解决 XX 问题 | 分析+方案+权衡+验证 |
+| 前沿认知 | XX 的最新进展 | 现状+突破+挑战+展望 |
+| 系统设计 | 设计一个 XX 系统 | 需求+架构+权衡+扩展 |
 
 ## 持续学习建议
 
-- [ ] 每周阅读1-2篇相关论文或技术博客
+- [ ] 每周阅读 1-2 篇相关论文或技术博客
 - [ ] 每月完成一个实践项目或实验
 - [ ] 每季度更新知识体系
 - [ ] 参与社区讨论和技术分享

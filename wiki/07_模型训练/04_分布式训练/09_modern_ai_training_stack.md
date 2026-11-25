@@ -38,7 +38,7 @@ GRPO 不是孤立技术，它与架构效率紧密耦合：更长的 CoT 意味�
 
 ### 3. 推理时计算扩展（TTC Scaling）
 
-[[05_大模型/08_推理模型/Test_Time_Compute_Scaling_2026|Test-Time Compute Scaling]] 把能力增长的战场从训练阶段延伸到了推理阶段。它通过并行采样、串行反思、验证器搜索等方式，让较小/较便宜的模型在复杂任务上媲美大模型。这与训练时 Scaling 形成鲜明对比：
+[E_大模型/08_推理模型/09_Test_Time_算力_扩展_2026|Test-Time Compute Scaling]] 把能力增长的战场从训练阶段延伸到了推理阶段。它通过并行采样、串行反思、验证器搜索等方式，让较小/较便宜的模型在复杂任务上媲美大模型。这与训练时 Scaling 形成鲜明对比：
 
 | 维度 | Train-Time Scaling | Test-Time Scaling |
 |---|---|---|
@@ -98,7 +98,7 @@ GRPO 不是孤立技术，它与架构效率紧密耦合：更长的 CoT 意味�
 
 - [[07_模型训练/08_成本优化/02_训练_成本优化_and_FinOps_2026|大模型训练成本优化与 FinOps 实践 2026]]
 - [[06_强化学习/03_RLHF与对齐/02_GRPO_训练_深入分析|GRPO 训练深度解读]]
-- [[05_大模型/08_推理模型/Test_Time_Compute_Scaling_2026|Test-Time Compute Scaling 2026]]
+- [E_大模型/08_推理模型/09_Test_Time_算力_扩展_2026|Test-Time Compute Scaling 2026]]
 - [[05_大模型/04_LLM架构/DeepSeek_Architecture_2026|DeepSeek 架构深度解析 2026]]
 - [[07_模型训练/01_训练基础/01_扩散_模型_训练_2026|扩散模型训练实战 2026]]
 - [[10_部署推理/01_部署基础/07_LLM_生产_部署_操作手册|LLM 生产环境部署 Runbook]]

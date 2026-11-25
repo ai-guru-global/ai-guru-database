@@ -6,6 +6,10 @@ updated: 2026-07-11
 sources: []
 name_zh: "课程笔记"
 name_en: "Course Notes"
+category: 15-misc
+tags: ["课程笔记", "knowledge-page"]
+summary: "课程笔记 相关主题页面：定义、要点与延伸阅读。"
+tier: supporting
 ---
 
 # Course Notes
@@ -21,13 +25,13 @@ name_en: "Course Notes"
 | [[15_智能体/15_课程笔记/Learn_Claude_Code_L01_Agent_Loop|Learn Claude Code L01 Agent Loop]] | Learn Claude Code L01 Agent Loop | 开发者/学习者 |
 | [[15_智能体/15_课程笔记/Learn_Claude_Code_L03_Permission_System|Learn Claude Code L03 Permission System]] | Learn Claude Code L03 Permission System | 开发者/学习者 |
 | [[15_智能体/15_课程笔记/Learn_Claude_Code_L06_Subagent|Learn Claude Code L06 Subagent]] | Learn Claude Code L06 Subagent | 开发者/学习者 |
-| [[15_智能体/15_课程笔记/Learn_Claude_Code_L07_Skill_Loading|Learn Claude Code L07 Skill Loading]] | Learn Claude Code L07 Skill Loading | 开发者/学习者 |
+| [M_智能体/15_课程笔记/05_Learn_Claude_Code_第 7 课_技能_Loading|Learn Claude Code L07 Skill Loading]] | Learn Claude Code L07 Skill Loading | 开发者/学习者 |
 | [[15_智能体/15_课程笔记/Learn_Claude_Code_L08_Context_Compact|Learn Claude Code L08 Context Compact]] | Learn Claude Code L08 Context Compact | 开发者/学习者 |
 | [[15_智能体/15_课程笔记/Learn_Claude_Code_L09_Memory_System|Learn Claude Code L09 Memory System]] | Learn Claude Code L09 Memory System | 开发者/学习者 |
 | [[15_智能体/15_课程笔记/08_Learn_Claude_Code_L12_Task_系统|Learn Claude Code L12 Task System]] | Learn Claude Code L12 Task System | 开发者/学习者 |
 | [[15_智能体/15_课程笔记/09_Learn_Claude_Code_L15_Agent_Teams|Learn Claude Code L15 Agent Teams]] | Learn Claude Code L15 Agent Teams | 开发者/学习者 |
 | [[15_智能体/15_课程笔记/10_Learn_Claude_Code_L17_Autonomous_Agent|Learn Claude Code L17 Autonomous Agents]] | Learn Claude Code L17 Autonomous Agents | 开发者/学习者 |
-| [[15_智能体/15_课程笔记/Learn_Claude_Code_L19_MCP_Plugin|Learn Claude Code L19 MCP Plugin]] | Learn Claude Code L19 MCP Plugin | 开发者/学习者 |
+| [M_智能体/15_课程笔记/11_Learn_Claude_Code_L19_MCP_插件|Learn Claude Code L19 MCP Plugin]] | Learn Claude Code L19 MCP Plugin | 开发者/学习者 |
 | [[15_智能体/15_课程笔记/12_Microsoft_AI_Agent_L00_课程_配置|Microsoft AI Agents L00 Course Setup]] | Microsoft AI Agents L00 Course Setup | 开发者/学习者 |
 | [[15_智能体/15_课程笔记/Microsoft_AI_Agents_L01_Intro|Microsoft AI Agents L01 Intro]] | Microsoft AI Agents L01 Intro | 开发者/学习者 |
 | [[15_智能体/15_课程笔记/Microsoft_AI_Agents_L02_Frameworks|Microsoft AI Agents L02 Frameworks]] | Microsoft AI Agents L02 Frameworks | 开发者/学习者 |
@@ -43,56 +47,56 @@ name_en: "Course Notes"
 
 | 概念 | 说明 | 应用场景 |
 |------|------|----------|
-| 智能体架构 | Agent的核心组件与设计模式 | 系统设计 |
-| 工具调用 | Agent与外部工具交互 | 任务执行 |
+| 智能体架构 | Agent 的核心组件与设计模式 | 系统设计 |
+| 工具调用 | Agent 与外部工具交互 | 任务执行 |
 | 记忆管理 | 短期/长期记忆机制 | 上下文维护 |
 | 规划推理 | 任务分解与执行策略 | 复杂任务 |
-| 多智能体协作 | Agent间通信与协调 | 分布式系统 |
+| 多智能体协作 | Agent 间通信与协调 | 分布式系统 |
 
 ## 关键技术对比
 
 | 技术/框架 | 特点 | 适用场景 | 成熟度 |
 |----------|------|----------|--------|
-| LangChain/LangGraph | 链式调用/图结构 | 通用Agent | ★★★★☆ |
+| LangChain/LangGraph | 链式调用/图结构 | 通用 Agent | ★★★★☆ |
 | AutoGen | 多智能体对话 | 协作任务 | ★★★★☆ |
 | CrewAI | 角色分工 | 团队协作 | ★★★☆☆ |
 | OpenAI Agents SDK | 官方框架 | 快速原型 | ★★★★☆ |
 | Semantic Kernel | 企业级 | .NET/Java | ★★★★☆ |
-| ADK (Google) | Agent开发套件 | Google生态 | ★★★☆☆ |
+| ADK (Google) | Agent 开发套件 | Google 生态 | ★★★☆☆ |
 
 ## 学习路径建议
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | Agent_Foundations/ | 理解Agent基本概念 |
+| 入门 | Agent_Foundations/ | 理解 Agent 基本概念 |
 | 进阶 | 本文档相关深度文章 | 掌握核心技术 |
-| 实践 | 动手项目/框架 | 构建Agent应用 |
+| 实践 | 动手项目/框架 | 构建 Agent 应用 |
 | 前沿 | 最新论文/产品 | 跟踪发展 |
 
 ## 常见问题
 
 | 问题 | 解答 |
 |------|------|
-| Agent和传统软件的区别？ | Agent能自主决策、使用工具、持续学习 |
-| 需要什么前置知识？ | LLM基础 + 编程 + 系统设计 |
-| 如何评估Agent质量？ | 任务完成率 + 效率 + 安全性 |
-| 2026年Agent趋势？ | 多智能体协作、具身智能、企业级部署 |
+| Agent 和传统软件的区别？ | Agent 能自主决策、使用工具、持续学习 |
+| 需要什么前置知识？ | LLM 基础 + 编程 + 系统设计 |
+| 如何评估 Agent 质量？ | 任务完成率 + 效率 + 安全性 |
+| 2026 年 Agent 趋势？ | 多智能体协作、具身智能、企业级部署 |
 
 ## 统计
 
 | 指标 | 数值 |
 |------|------|
 | 子域文档 | 见文件导航 |
-| 核心主题 | Agent架构/协议/评估/部署 |
+| 核心主题 | Agent 架构/协议/评估/部署 |
 | 主流框架 | 6+ |
-| 2026热点 | 多智能体/企业级/安全 |
+| 2026 热点 | 多智能体/企业级/安全 |
 
 ## 附录：知识图谱
 
 | 知识节点 | 前置依赖 | 后续延伸 |
 |----------|----------|----------|
-| Agent基础 | LLM基础 | 工具调用/记忆 |
-| 工具调用 | API设计 | MCP/A2A协议 |
+| Agent 基础 | LLM 基础 | 工具调用/记忆 |
+| 工具调用 | API 设计 | MCP/A2A 协议 |
 | 记忆管理 | 向量数据库 | RAG/长期记忆 |
 | 规划推理 | CoT/ToT | 复杂任务分解 |
 | 多智能体 | 通信协议 | 协作/竞争 |
@@ -102,38 +106,38 @@ name_en: "Course Notes"
 
 | 术语 | 英文 | 说明 |
 |------|------|------|
-| 智能体 | Agent | 自主决策的AI系统 |
-| 工具调用 | Tool Use | Agent使用外部工具 |
+| 智能体 | Agent | 自主决策的 AI 系统 |
+| 工具调用 | Tool Use | Agent 使用外部工具 |
 | 记忆 | Memory | 上下文/历史信息 |
 | 规划 | Planning | 任务分解与排序 |
 | 反思 | Reflection | 自我评估与改进 |
-| 多智能体 | Multi-Agent | 多个Agent协作 |
-| 协议 | Protocol | Agent间通信标准 |
+| 多智能体 | Multi-Agent | 多个 Agent 协作 |
+| 协议 | Protocol | Agent 间通信标准 |
 | 编排 | Orchestration | 任务流管理 |
 
 ## 附录：快速导航
 
 | 我想... | 去看 | 难度 |
 |---------|------|------|
-| 了解Agent基础 | Agent_Foundations/ | ⭐ |
-| 学习Agent协议 | Agent_Protocols/ | ⭐⭐ |
-| 构建Agent应用 | Agent_Workflow/ | ⭐⭐ |
-| 评估Agent质量 | Agent_Evaluation/ | ⭐⭐⭐ |
-| 部署Agent系统 | Agent_Deployment/ | ⭐⭐⭐ |
+| 了解 Agent 基础 | Agent_Foundations/ | ⭐ |
+| 学习 Agent 协议 | Agent_Protocols/ | ⭐⭐ |
+| 构建 Agent 应用 | Agent_Workflow/ | ⭐⭐ |
+| 评估 Agent 质量 | Agent_Evaluation/ | ⭐⭐⭐ |
+| 部署 Agent 系统 | Agent_Deployment/ | ⭐⭐⭐ |
 | 多智能体系统 | Multi_Agent_Systems/ | ⭐⭐⭐ |
 
 ## 附录：检查清单
 
 | 检查项 | 说明 | 状态 |
 |--------|------|------|
-| 理解Agent架构 | 核心组件 | ☐ |
+| 理解 Agent 架构 | 核心组件 | ☐ |
 | 掌握工具调用 | MCP/Function Calling | ☐ |
 | 了解记忆机制 | 短期/长期 | ☐ |
 | 理解规划推理 | CoT/ReAct | ☐ |
-| 动手实践 | 构建一个Agent | ☐ |
+| 动手实践 | 构建一个 Agent | ☐ |
 | 了解评估方法 | 质量度量 | ☐ |
 
-> 💡 智能体是AI从"对话"走向"行动"的关键跨越。2026年，Agent正在从实验走向生产，成为AI应用的核心范式。
+> 💡 智能体是 AI 从"对话"走向"行动"的关键跨越。2026 年，Agent 正在从实验走向生产，成为 AI 应用的核心范式。
 
 ---
 *Last updated: 2026-07-21*
@@ -185,11 +189,11 @@ name_en: "Course Notes"
 ---
 *Last updated: 2026-07-21*
 
-## 附录：Agent开发工具链
+## 附录：Agent 开发工具链
 
 | 工具 | 用途 | 说明 |
 |------|------|------|
-| LangSmith | 调试/监控 | LangChain生态 |
+| LangSmith | 调试/监控 | LangChain 生态 |
 | Weights & Biases | 实验追踪 | 训练/评估 |
 | Docker | 容器化 | 部署隔离 |
 | Kubernetes | 编排 | 规模化部署 |
@@ -202,7 +206,7 @@ name_en: "Course Notes"
 |--------|------|----------|
 | 提示注入 | 恶意输入操控 | 输入验证/过滤 |
 | 数据泄露 | 敏感信息暴露 | 权限控制/脱敏 |
-| 过度自主 | Agent越权操作 | 权限边界/审批 |
+| 过度自主 | Agent 越权操作 | 权限边界/审批 |
 | 幻觉输出 | 错误信息传播 | 事实验证/引用 |
 | 合规审计 | 法规遵从 | 日志/追溯 |
 
@@ -215,7 +219,7 @@ name_en: "Course Notes"
 | 可靠性 | 重试/降级/熔断 | 稳定性提升 |
 | 扩展性 | 异步/队列/分布式 | 吞吐量提升 |
 
-> 💡 Agent开发是系统工程。技术选型、安全设计、性能优化、监控运维，缺一不可。
+> 💡 Agent 开发是系统工程。技术选型、安全设计、性能优化、监控运维，缺一不可。
 
 ---
 *Last updated: 2026-07-21*

@@ -65,7 +65,7 @@ name_zh: "Learn Claude Code 课程映射：20 课 Harness 工程"
 |------|----------|---------------------|-------------------|
 | s05 | TodoWrite | `todo_write` 计划工具 + nag reminder，先列清单再执行 | [[15_智能体/03_Agent工作流/06_工作流_简明指南|工作流概述]], [[15_智能体/01_Agent基础/13_Agentic_设计_模式_AndrewNg|代理设计模式]] |
 | s06 | Subagent | 子 Agent：独立 `messages[]`、只回传结论、禁止递归 | [[15_智能体/15_课程笔记/Learn_Claude_Code_L06_Subagent|L06 笔记]] |
-| s07 | Skill Loading | 技能两级加载：SYSTEM 放目录，`load_skill` 按需注入完整内容 | [[15_智能体/Learn_Claude_Code_L07_Skill_Loading|L07 笔记]], [[15_智能体/05_Agent技能/Skills-in-nutshell|Agent Skills 速览]] |
+| s07 | Skill Loading | 技能两级加载：SYSTEM 放目录，`load_skill` 按需注入完整内容 | [[15_智能体/15_课程笔记/05_Learn_Claude_Code_第7课_技能_Loading|L07 笔记]], [[15_智能体/05_Agent技能/Skills-in-nutshell|Agent Skills 速览]] |
 | s08 | Context Compact | 四层压缩管线：snip / micro / budget / LLM 摘要 + reactive 应急 | [[15_智能体/15_课程笔记/Learn_Claude_Code_L08_Context_Compact|L08 笔记]] |
 
 ### 第三阶段：记忆与恢复（s09-s11）
@@ -97,7 +97,7 @@ name_zh: "Learn Claude Code 课程映射：20 课 Harness 工程"
 
 | 课号 | 课程名称 | 引入的 Harness 机制 | 本库相关概念/页面 |
 |------|----------|---------------------|-------------------|
-| s19 | MCP Plugin | MCP 外部工具发现与调用：`mcp__server__tool` 命名空间、动态工具池 | [[15_智能体/Learn_Claude_Code_L19_MCP_Plugin|L19 笔记]], [[90_学习/05_参考资料/Articles/04_awesome_mcp_servers|Awesome MCP Servers]] |
+| s19 | MCP Plugin | MCP 外部工具发现与调用：`mcp__server__tool` 命名空间、动态工具池 | [[15_智能体/15_课程笔记/11_Learn_Claude_Code_L19_MCP_插件|L19 笔记]], [[90_学习/05_参考资料/Articles/04_awesome_mcp_servers|Awesome MCP Servers]] |
 | s20 | Comprehensive Agent | 把 s01-s19 的机制挂回同一个循环，展示完整 harness 数据流 | [[90_学习/03_课程资源/share_ai/01_learn_claude_code|仓库引用]], [[15_智能体/04_Agent脚手架/13_The_Anatomy_of_an_Agent_脚手架|Harness 解剖]] |
 
 ---
@@ -118,8 +118,8 @@ name_zh: "Learn Claude Code 课程映射：20 课 Harness 工程"
 - [[15_智能体/08_Agent编程工具/03_Claude_Code_深入分析]] — Claude Code 产品解析
 - [[90_学习/04_实践指南/02_AI工程路线图2026]] — AI 工程师学习路线
 - [[90_学习/04_实践指南/05_learning_paths_2026]] — 本库 6 条学习路径总览
-- [[15_智能体/15_课程笔记/Learn_Claude_Code_L07_Skill_Loading]] — L07: Skill 两级加载机制
-- [[15_智能体/15_课程笔记/Learn_Claude_Code_L19_MCP_Plugin]] — L19: MCP Plugin 工具发现
+- [M_智能体/15_课程笔记/05_Learn_Claude_Code_第 7 课_技能_Loading]] — L07: Skill 两级加载机制
+- [M_智能体/15_课程笔记/11_Learn_Claude_Code_L19_MCP_插件]] — L19: MCP Plugin 工具发现
 
 ## 核心知识框架
 
@@ -152,7 +152,7 @@ name_zh: "Learn Claude Code 课程映射：20 课 Harness 工程"
 | 学习曲线 | 平缓 | 中等 | 陡峭 | 按团队 |
 | 社区支持 | 广泛 | 一般 | 有限 | 优先广泛 |
 
-## 常见问题FAQ
+## 常见问题 FAQ
 
 | 问题 | 解答 |
 |------|------|
@@ -166,10 +166,10 @@ name_zh: "Learn Claude Code 课程映射：20 课 Harness 工程"
 
 | 阶段 | 内容 | 时间 | 产出 |
 |------|------|------|------|
-| 入门 | 核心概念+基础操作 | 1-2周 | 基本理解 |
-| 基础 | 工具使用+简单实践 | 2-3周 | 能独立操作 |
-| 进阶 | 深入原理+复杂场景 | 3-4周 | 能解决问题 |
-| 实战 | 生产级应用 | 4-6周 | 独立负责 |
+| 入门 | 核心概念+基础操作 | 1-2 周 | 基本理解 |
+| 基础 | 工具使用+简单实践 | 2-3 周 | 能独立操作 |
+| 进阶 | 深入原理+复杂场景 | 3-4 周 | 能解决问题 |
+| 实战 | 生产级应用 | 4-6 周 | 独立负责 |
 | 精通 | 架构+创新 | 持续 | 技术领导 |
 
 ## 术语表
@@ -197,8 +197,8 @@ name_zh: "Learn Claude Code 课程映射：20 课 Harness 工程"
 
 | 步骤 | 操作 | 验证方法 | 常见问题 |
 |------|------|----------|----------|
-| 环境搭建 | 安装依赖+配置 | 运行hello world | 版本冲突 |
-| 基础使用 | 核心API调用 | 单元测试通过 | 参数错误 |
+| 环境搭建 | 安装依赖+配置 | 运行 hello world | 版本冲突 |
+| 基础使用 | 核心 API 调用 | 单元测试通过 | 参数错误 |
 | 功能开发 | 业务逻辑实现 | 集成测试通过 | 边界条件 |
 | 性能优化 | 热点优化+缓存 | 压测达标 | 内存泄漏 |
 | 部署上线 | 容器化+CI/CD | 灰度验证通过 | 配置差异 |
@@ -208,7 +208,7 @@ name_zh: "Learn Claude Code 课程映射：20 课 Harness 工程"
 | 考量因素 | 权重 | 评估方法 | 决策标准 |
 |----------|------|----------|----------|
 | 功能匹配 | 30% | 需求清单对比 | 覆盖核心需求 |
-| 性能表现 | 25% | 基准测试 | 满足SLA |
+| 性能表现 | 25% | 基准测试 | 满足 SLA |
 | 社区生态 | 20% | Star/Issue/更新频率 | 活跃维护 |
 | 学习成本 | 15% | 文档质量+上手时间 | 团队可接受 |
 | 长期维护 | 10% | 路线图+兼容性 | 可持续发展 |
@@ -220,7 +220,7 @@ name_zh: "Learn Claude Code 课程映射：20 课 Harness 工程"
 | 复现 | 稳定复现问题 | 日志+断点 | 复现步骤 |
 | 定位 | 缩小问题范围 | 二分法+排除法 | 问题模块 |
 | 分析 | 找到根本原因 | 源码+文档 | 根因报告 |
-| 修复 | 实施修复方案 | 代码修改+测试 | 修复PR |
+| 修复 | 实施修复方案 | 代码修改+测试 | 修复 PR |
 | 验证 | 确认问题消除 | 回归测试 | 验证报告 |
 | 预防 | 防止再次发生 | 监控+文档 | 改进措施 |
 

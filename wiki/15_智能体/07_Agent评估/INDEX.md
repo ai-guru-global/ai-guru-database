@@ -6,6 +6,10 @@ updated: 2026-07-11
 sources: []
 name_zh: "智能体评估"
 name_en: "Agent Evaluation"
+category: 15-misc
+tags: ["智能体评估", "knowledge-page"]
+summary: "智能体评估 相关主题页面：定义、要点与延伸阅读。"
+tier: supporting
 ---
 
 # Agent Evaluation
@@ -19,7 +23,7 @@ name_en: "Agent Evaluation"
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
 | [[15_智能体/07_Agent评估/01_Agent_评估_指南|Agent Evaluation Guide]] | Agent Evaluation Guide | 开发者/学习者 |
-| [[15_智能体/07_Agent评估/Agent_Evaluation_Plugin_API|Agent Evaluation Plugin API]] | Agent Evaluation Plugin API | 开发者/学习者 |
+| [M_智能体/07_Agent 评估/02_Agent_评估_插件_API|Agent Evaluation Plugin API]] | Agent Evaluation Plugin API | 开发者/学习者 |
 | [[15_智能体/07_Agent评估/03_Agent_评估_系统_架构|Agent Evaluation System Architecture]] | Agent Evaluation System Architecture | 开发者/学习者 |
 | [[15_智能体/07_Agent评估/05_Agent_脚手架_完整_2026|Agent Harness Complete 2026]] | Agent Harness Complete 2026 | 开发者/学习者 |
 | [[15_智能体/07_Agent评估/Agent_Harness_Comprehensive_2026|Agent Harness Comprehensive 2026]] | Agent Harness Comprehensive 2026 | 开发者/学习者 |
@@ -27,7 +31,7 @@ name_en: "Agent Evaluation"
 | [[15_智能体/07_Agent评估/08_Agent_红队测试_2026|Agent Red Teaming 2026]] | Agent Red Teaming 2026 | 开发者/学习者 |
 | [[15_智能体/07_Agent评估/10_云_Agent_评估_系统_2026|Cloud Agent Evaluation System 2026]] | Cloud Agent Evaluation System 2026 | 开发者/学习者 |
 | [[15_智能体/07_Agent评估/11_云_Agent_Leaderboard_2026|Cloud Agent Leaderboard 2026]] | Cloud Agent Leaderboard 2026 | 开发者/学习者 |
-| [[15_智能体/07_Agent评估/K8s_Agent_Evaluation_Report|K8s Agent Evaluation Report]] | K8s Agent Evaluation Report | 开发者/学习者 |
+| [M_智能体/07_Agent 评估/13_K8s_Agent_评估_报告|K8s Agent Evaluation Report]] | K8s Agent Evaluation Report | 开发者/学习者 |
 | [[概念/Agent/multi-agent|Multi Agent Evaluation 2026]] | Multi Agent Evaluation 2026 | 开发者/学习者 |
 | [[15_智能体/07_Agent评估/15_Ops_Agent_脚手架_2026|Ops Agent Harness 2026]] | Ops Agent Harness 2026 | 开发者/学习者 |
 | [[15_智能体/07_Agent评估/09_agent_evaluation_model_evaluation|agent-evaluation-model-evaluation]] | agent-evaluation-model-evaluation | 开发者/学习者 |
@@ -61,56 +65,56 @@ name_en: "Agent Evaluation"
 
 | 概念 | 说明 | 应用场景 |
 |------|------|----------|
-| 智能体架构 | Agent的核心组件与设计模式 | 系统设计 |
-| 工具调用 | Agent与外部工具交互 | 任务执行 |
+| 智能体架构 | Agent 的核心组件与设计模式 | 系统设计 |
+| 工具调用 | Agent 与外部工具交互 | 任务执行 |
 | 记忆管理 | 短期/长期记忆机制 | 上下文维护 |
 | 规划推理 | 任务分解与执行策略 | 复杂任务 |
-| 多智能体协作 | Agent间通信与协调 | 分布式系统 |
+| 多智能体协作 | Agent 间通信与协调 | 分布式系统 |
 
 ## 关键技术对比
 
 | 技术/框架 | 特点 | 适用场景 | 成熟度 |
 |----------|------|----------|--------|
-| LangChain/LangGraph | 链式调用/图结构 | 通用Agent | ★★★★☆ |
+| LangChain/LangGraph | 链式调用/图结构 | 通用 Agent | ★★★★☆ |
 | AutoGen | 多智能体对话 | 协作任务 | ★★★★☆ |
 | CrewAI | 角色分工 | 团队协作 | ★★★☆☆ |
 | OpenAI Agents SDK | 官方框架 | 快速原型 | ★★★★☆ |
 | Semantic Kernel | 企业级 | .NET/Java | ★★★★☆ |
-| ADK (Google) | Agent开发套件 | Google生态 | ★★★☆☆ |
+| ADK (Google) | Agent 开发套件 | Google 生态 | ★★★☆☆ |
 
 ## 学习路径建议
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | Agent_Foundations/ | 理解Agent基本概念 |
+| 入门 | Agent_Foundations/ | 理解 Agent 基本概念 |
 | 进阶 | 本文档相关深度文章 | 掌握核心技术 |
-| 实践 | 动手项目/框架 | 构建Agent应用 |
+| 实践 | 动手项目/框架 | 构建 Agent 应用 |
 | 前沿 | 最新论文/产品 | 跟踪发展 |
 
 ## 常见问题
 
 | 问题 | 解答 |
 |------|------|
-| Agent和传统软件的区别？ | Agent能自主决策、使用工具、持续学习 |
-| 需要什么前置知识？ | LLM基础 + 编程 + 系统设计 |
-| 如何评估Agent质量？ | 任务完成率 + 效率 + 安全性 |
-| 2026年Agent趋势？ | 多智能体协作、具身智能、企业级部署 |
+| Agent 和传统软件的区别？ | Agent 能自主决策、使用工具、持续学习 |
+| 需要什么前置知识？ | LLM 基础 + 编程 + 系统设计 |
+| 如何评估 Agent 质量？ | 任务完成率 + 效率 + 安全性 |
+| 2026 年 Agent 趋势？ | 多智能体协作、具身智能、企业级部署 |
 
 ## 统计
 
 | 指标 | 数值 |
 |------|------|
 | 子域文档 | 见文件导航 |
-| 核心主题 | Agent架构/协议/评估/部署 |
+| 核心主题 | Agent 架构/协议/评估/部署 |
 | 主流框架 | 6+ |
-| 2026热点 | 多智能体/企业级/安全 |
+| 2026 热点 | 多智能体/企业级/安全 |
 
 ## 附录：知识图谱
 
 | 知识节点 | 前置依赖 | 后续延伸 |
 |----------|----------|----------|
-| Agent基础 | LLM基础 | 工具调用/记忆 |
-| 工具调用 | API设计 | MCP/A2A协议 |
+| Agent 基础 | LLM 基础 | 工具调用/记忆 |
+| 工具调用 | API 设计 | MCP/A2A 协议 |
 | 记忆管理 | 向量数据库 | RAG/长期记忆 |
 | 规划推理 | CoT/ToT | 复杂任务分解 |
 | 多智能体 | 通信协议 | 协作/竞争 |
@@ -120,38 +124,38 @@ name_en: "Agent Evaluation"
 
 | 术语 | 英文 | 说明 |
 |------|------|------|
-| 智能体 | Agent | 自主决策的AI系统 |
-| 工具调用 | Tool Use | Agent使用外部工具 |
+| 智能体 | Agent | 自主决策的 AI 系统 |
+| 工具调用 | Tool Use | Agent 使用外部工具 |
 | 记忆 | Memory | 上下文/历史信息 |
 | 规划 | Planning | 任务分解与排序 |
 | 反思 | Reflection | 自我评估与改进 |
-| 多智能体 | Multi-Agent | 多个Agent协作 |
-| 协议 | Protocol | Agent间通信标准 |
+| 多智能体 | Multi-Agent | 多个 Agent 协作 |
+| 协议 | Protocol | Agent 间通信标准 |
 | 编排 | Orchestration | 任务流管理 |
 
 ## 附录：快速导航
 
 | 我想... | 去看 | 难度 |
 |---------|------|------|
-| 了解Agent基础 | Agent_Foundations/ | ⭐ |
-| 学习Agent协议 | Agent_Protocols/ | ⭐⭐ |
-| 构建Agent应用 | Agent_Workflow/ | ⭐⭐ |
-| 评估Agent质量 | Agent_Evaluation/ | ⭐⭐⭐ |
-| 部署Agent系统 | Agent_Deployment/ | ⭐⭐⭐ |
+| 了解 Agent 基础 | Agent_Foundations/ | ⭐ |
+| 学习 Agent 协议 | Agent_Protocols/ | ⭐⭐ |
+| 构建 Agent 应用 | Agent_Workflow/ | ⭐⭐ |
+| 评估 Agent 质量 | Agent_Evaluation/ | ⭐⭐⭐ |
+| 部署 Agent 系统 | Agent_Deployment/ | ⭐⭐⭐ |
 | 多智能体系统 | Multi_Agent_Systems/ | ⭐⭐⭐ |
 
 ## 附录：检查清单
 
 | 检查项 | 说明 | 状态 |
 |--------|------|------|
-| 理解Agent架构 | 核心组件 | ☐ |
+| 理解 Agent 架构 | 核心组件 | ☐ |
 | 掌握工具调用 | MCP/Function Calling | ☐ |
 | 了解记忆机制 | 短期/长期 | ☐ |
 | 理解规划推理 | CoT/ReAct | ☐ |
-| 动手实践 | 构建一个Agent | ☐ |
+| 动手实践 | 构建一个 Agent | ☐ |
 | 了解评估方法 | 质量度量 | ☐ |
 
-> 💡 智能体是AI从"对话"走向"行动"的关键跨越。2026年，Agent正在从实验走向生产，成为AI应用的核心范式。
+> 💡 智能体是 AI 从"对话"走向"行动"的关键跨越。2026 年，Agent 正在从实验走向生产，成为 AI 应用的核心范式。
 
 ---
 *Last updated: 2026-07-21*

@@ -57,7 +57,7 @@ securityContext:
 
 - [[概念/kubernetes|Kubernetes]]
 - [[概念/supply-chain-security|Supply Chain Security]]
-- [[12_架构基建/10_安全/Container_and_Supply_Chain_Security_for_AI|容器与供应链安 全 for AI]]
+- [J_架构基建/10_安全/02_容器_and_AI 供应链安全_for_AI|容器与供应链安 全 for AI]]
 
 ---
 

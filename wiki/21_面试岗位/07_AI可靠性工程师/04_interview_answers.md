@@ -112,8 +112,8 @@ def psi(expected, actual, bins=10):
 1. **Streaming（流式输出）**: 用 SSE/WebSocket 逐 token 返回，TTFT 从"等全部生成"降到"等首 token"，用户感知大幅改善
 2. **Continuous Batching（动态批处理）**: vLLM/Orca 的核心技术，请求级别动态组批，不等一批完成，新的随时加入
 3. **KV Cache 优化**:
-   - PagedAttention（vLLM）: 类似 OS 虚拟内存的分页 KV 存储，减少显存碎片
-   - Prefix Caching: 相同 system prompt 的 KV 复用，省重复计算
+ - PagedAttention（vLLM）: 类似 OS 虚拟内存的分页 KV 存储，减少显存碎片
+ - Prefix Caching: 相同 system prompt 的 KV 复用，省重复计算
 4. **量化（INT8/INT4）**: 减少显存带宽压力，提速 2-3x
 
 **架构示意**:
@@ -295,7 +295,7 @@ R:
 ## Related
 
 - [[21_面试岗位/17_数据科学家/05_question_bank|AI Reliability Engineer 题库]]
-- [[21_面试岗位/AI_Reliability_Engineer/company_level_question_bank|AI Reliability Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/07_AI可靠性工程师/02_企业级题库.md|AI Reliability Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/AI_Reliability_Engineer/index|AI Reliability Engineer 首页]]
 - [[13_运维/index|运维]]
 - [[11_模型运维/index|模型运维]]

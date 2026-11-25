@@ -337,7 +337,7 @@ R:
 ## Related
 
 - [[21_面试岗位/21_MLOps工程师/05_question_bank|MLOps Engineer 题库]]
-- [[21_面试岗位/MLOps_Engineer/company_level_question_bank|MLOps Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/21_MLOps工程师/01_企业级题库.md|MLOps Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/MLOps_Engineer/index|MLOps Engineer 首页]]
 - [[11_模型运维/index|模型运维]]
 - [[10_部署推理/index|部署推理]]

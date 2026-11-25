@@ -113,7 +113,7 @@ Agent 系统的生产部署与传统微服务存在本质差异：LLM 输出非�
 - [[16_编程/AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] — AI 生成代码的安全风险与 DevSecOps 集成
 - [[07_模型训练/08_成本优化/02_训练_成本优化_and_FinOps_2026|训练成本优化与 FinOps 2026]] — 大模型训练的 GPU 利用率、Spot 实例与成本归因
 - [[18_行业应用/01_行业概览/02_AI_平台_选型_2026|AI 平台选型 2026]] — 云 API、私有化、开源模型与企业级套件的选型框架
-- [[21_面试岗位/Agent_Engineer_2026|Agent Engineer 岗位面试指南 2026]] — Agent 工程师核心考点与系统设计题
+- [[21_面试岗位/01_Agent工程师/01_Agent工程师_2026|Agent Engineer 岗位面试指南 2026]] — Agent 工程师核心考点与系统设计题
 - [[概念/agentops|AgentOps]] — Agent 可观测性平台
 - [[概念/agent-memory-systems|Agent 记忆系统]] — 短期与长期记忆设计
 - [[概念/agent-harness|Agent Harness]] — Agent 运行时与编排抽象

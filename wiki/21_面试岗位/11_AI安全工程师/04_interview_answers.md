@@ -356,7 +356,7 @@ R:
 ## Related
 
 - [[21_面试岗位/17_数据科学家/05_question_bank|AI Security Engineer 题库]]
-- [[21_面试岗位/AI_Security_Engineer/company_level_question_bank|AI Security Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/11_AI安全工程师/02_企业级题库.md|AI Security Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/AI_Security_Engineer/index|AI Security Engineer 首页]]
 - [[17_伦理安全/index|伦理安全]]
 - [[12_架构基建/11_AI网关/index|AI Gateway]]

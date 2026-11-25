@@ -102,7 +102,7 @@ name_zh: "MLOps 工程师学习路径"
 
 - [[90_学习/02_学习路径/02_ai_engineer]]: 偏应用开发
 - [[90_学习/02_学习路径/09_ml_practitioner]]: 偏模型训练
-- [[21_面试岗位/Cloud_Ops_Engineer/Cloud_Ops_Engineer|cloud-ops-engineer]]: 偏基础设施
+- [[21_面试岗位/14_云运维工程师/01_云运维工程师|cloud-ops-engineer]]: 偏基础设施
 
 ---
 

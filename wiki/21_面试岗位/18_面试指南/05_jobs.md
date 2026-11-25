@@ -53,7 +53,7 @@ name_zh: "AI 相关岗位与工种清单"
 
 ## Related
 
-- [[21_面试岗位/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[21_面试岗位/02_AI数据分析师/01_企业级题库.md]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
 - [[21_面试岗位/AI_Evaluation_Engineer/AI_Evaluation_Engineer]] — AI Evaluation Engineer 面试指南（评测方法论/LLM-as-Judge/RAG 评测）
 - [[21_面试岗位/AI_Policy_Specialist/AI_Policy_Specialist]] — AI Policy Specialist 面试指南（AI 治理/合规/政策）
 - [[21_面试岗位/AI_Product_Manager/AI_Product_Manager]] — AI Product Manager 面试指南（产品策略/用户洞察）
@@ -65,10 +65,10 @@ name_zh: "AI 相关岗位与工种清单"
 - [[21_面试岗位/13_应用科学家/README]] — Applied Scientist 面试指南（业务建模/算法优化）
 - [[21_面试岗位/Data_Engineer/Data_Engineer]] — Data Engineer 面试指南（数据管道/ETL/数据仓库）
 - [[21_面试岗位/MLOps_Engineer/MLOps_Engineer]] — MLOps Engineer 面试指南（流水线/CI-CD/模型监控）
-- [[21_面试岗位/Prompt_Engineer/Prompt_Engineer]] — Prompt Engineer 面试指南（Prompt 设计/评估优化）
+- [[21_面试岗位/23_Prompt工程师/03_Prompt工程师]] — Prompt Engineer 面试指南（Prompt 设计/评估优化）
 - [[21_面试岗位/24_研究科学家/README]] — Research Scientist 面试指南（基础理论/学术影响力）
 - [[21_面试岗位/Robotics_Engineer/Robotics_Engineer]] — Robotics Engineer 面试指南（感知/规划/控制/仿真）
-- [[21_面试岗位/Cloud_Ops_Engineer/Cloud_Ops_Engineer]] — Cloud Ops Engineer 面试指南（K8s/GPU 13_运维/事故响应）
+- [[21_面试岗位/14_云运维工程师/01_云运维工程师]] — Cloud Ops Engineer 面试指南（K8s/GPU 13_运维/事故响应）
 
 ## 面试核心知识框架
 

@@ -117,11 +117,11 @@ name_zh: "AI Infrastructure Engineer 面试题实例答案"
 
 **展开**:
 - **步骤**:
-  1. 新版本部署为独立 Pod/Service
-  2. Istio/Envoy 按权重分流 (95% → 旧版, 5% → 新版)
-  3. 监控新版: 延迟 P99、错误率、模型质量指标
-  4. 逐步提升: 5% → 20% → 50% → 100%
-  5. 异常自动回滚: 错误率 > 阈值 → 流量切回旧版
+ 1. 新版本部署为独立 Pod/Service
+ 2. Istio/Envoy 按权重分流 (95% → 旧版, 5% → 新版)
+ 3. 监控新版: 延迟 P99、错误率、模型质量指标
+ 4. 逐步提升: 5% → 20% → 50% → 100%
+ 5. 异常自动回滚: 错误率 > 阈值 → 流量切回旧版
 - **ML 特有挑战**: 模型效果需延迟评估 (不是简单 HTTP 200)，需 A/B 对比模型质量指标
 - **工具**: KServe + Istio、Seldon Core、BentoML + K8s
 
@@ -144,7 +144,7 @@ name_zh: "AI Infrastructure Engineer 面试题实例答案"
 
 ## Related
 
-- [[21_面试岗位/AI_Infrastructure_Engineer/company_level_question_bank|AI Infrastructure Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/04_AI基础设施工程师/01_企业级题库.md|AI Infrastructure Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/04_AI基础设施工程师/04_interview_preparing|AI Infrastructure Engineer 面试准备]]
 - [[21_面试岗位/04_AI基础设施工程师/05_question_bank|AI Infrastructure Engineer 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
@@ -179,7 +179,7 @@ aliases:
 
 ## Related
 
-- [[21_面试岗位/AI_Infrastructure_Engineer/company_level_question_bank|AI Infrastructure Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/04_AI基础设施工程师/01_企业级题库.md|AI Infrastructure Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/04_AI基础设施工程师/04_interview_preparing|AI Infrastructure Engineer 面试准备]]
 - [[21_面试岗位/04_AI基础设施工程师/05_question_bank|AI Infrastructure Engineer 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]

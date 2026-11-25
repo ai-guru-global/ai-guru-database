@@ -60,7 +60,7 @@ name_zh: "Data Scientist 面试题实例答案"
 **展开**:
 - **Step 1 - 假设**: H₀ (无差异) vs H₁ (有差异)，定义核心指标 + 护栏指标
 - **Step 2 - 样本量**: 需要 baseline 转化率、MDE (最小可检测效应)、α=0.05、Power=0.8
-  - 公式: n = (Z_{1-α/2} + Z_{1-β})² × p(1-p) / δ²
+ - 公式: n = (Z_{1-α/2} + Z_{1-β})² × p(1-p) / δ²
 - **Step 3 - 分流**: 用户级随机化 (非请求级)，检查 SRM
 - **Step 4 - 运行**: 至少跑 1-2 周 (覆盖周中/周末差异)，不做 Peeking
 - **Step 5 - 分析**: t-test / z-test → p-value + CI + 效应量 → 异质性分析 (按国家/设备/新老用户)
@@ -75,9 +75,9 @@ name_zh: "Data Scientist 面试题实例答案"
 **展开**:
 - **检测方法**: 卡方检验 (χ²)，如预期 50:50 但实际 51:49 → χ² = (O-E)²/E 求和
 - **常见原因**:
-  - 分流 hash 不均匀 (bot/爬虫集中在某组)
-  - 某组 crash/错误率高导致数据丢失
-  - 分流逻辑 bug (如按 user_id % 2 但 user_id 分布不均)
+ - 分流 hash 不均匀 (bot/爬虫集中在某组)
+ - 某组 crash/错误率高导致数据丢失
+ - 分流逻辑 bug (如按 user_id % 2 但 user_id 分布不均)
 - **处理方式**: ①先修复分流问题 ②重新运行实验 ③SRM 未解决前不解读实验结果
 
 **追问预判**: "SRM 的 p-value 多少算有问题？"
@@ -128,10 +128,10 @@ name_zh: "Data Scientist 面试题实例答案"
 
 **展开**:
 - **关键特征**:
-  - RFM: Recency (最近一次活跃)、Frequency (活跃频率)、Monetary (付费金额)
-  - 行为趋势: 最近 7 天 vs 前 7 天的活跃变化率
-  - 产品使用: 核心功能使用深度、功能覆盖率
-  - 支持交互: 投诉次数、客服对话情感分数
+ - RFM: Recency (最近一次活跃)、Frequency (活跃频率)、Monetary (付费金额)
+ - 行为趋势: 最近 7 天 vs 前 7 天的活跃变化率
+ - 产品使用: 核心功能使用深度、功能覆盖率
+ - 支持交互: 投诉次数、客服对话情感分数
 - **模型选择**: XGBoost (可解释 + 强基线) → 校准 (Platt Scaling / Isotonic Regression) → 输出流失概率
 - **业务闭环**: 预测高风险用户 → 分层触达 (优惠/关怀/客服回访) → 追踪干预效果
 
@@ -162,7 +162,7 @@ name_zh: "Data Scientist 面试题实例答案"
 
 ## Related
 
-- [[21_面试岗位/Data_Scientist/company_level_question_bank|Data Scientist 按公司/级别区分的题库]]
+- [[21_面试岗位/17_数据科学家/01_企业级题库.md|Data Scientist 按公司/级别区分的题库]]
 - [[21_面试岗位/Data_Scientist/interview_preparing|Data Scientist 面试准备]]
 - [[21_面试岗位/17_数据科学家/05_question_bank|Data Scientist 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
@@ -197,7 +197,7 @@ aliases:
 
 ## Related
 
-- [[21_面试岗位/Data_Scientist/company_level_question_bank|Data Scientist 按公司/级别区分的题库]]
+- [[21_面试岗位/17_数据科学家/01_企业级题库.md|Data Scientist 按公司/级别区分的题库]]
 - [[21_面试岗位/Data_Scientist/interview_preparing|Data Scientist 面试准备]]
 - [[21_面试岗位/17_数据科学家/05_question_bank|Data Scientist 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]

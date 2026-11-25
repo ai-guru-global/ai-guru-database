@@ -14,7 +14,7 @@ name_zh: "Agent Engineer 题库"
 
 > 中文简称：Agent Engineer 题库
 
-> 覆盖 LLM Agent 工程化的核心知识点。关联 [[21_面试岗位/Agent_Engineer/Agent_Engineer_2026|Agent Engineer 2026]] 与 [[15_智能体/index|智能体]] 章节。
+> 覆盖 LLM Agent 工程化的核心知识点。关联 [[21_面试岗位/01_Agent工程师/01_Agent工程师_2026.md|Agent Engineer 2026]] 与 [[15_智能体/index|智能体]] 章节。
 
 ---
 
@@ -120,7 +120,7 @@ name_zh: "Agent Engineer 题库"
 
 ## Related
 
-- [[21_面试岗位/Agent_Engineer/Agent_Engineer_2026|Agent Engineer 2026 指南]]
+- [[21_面试岗位/01_Agent工程师/01_Agent工程师_2026.md|Agent Engineer 2026 指南]]
 - [[21_面试岗位/Interview_Guide/index|面试总指南]]
 - [[15_智能体/index|智能体章节]]
 - [[15_智能体/02_Agent框架/index|Agent 框架]]

@@ -107,17 +107,17 @@ name_zh: "LLM Platform Engineer 面试题实例答案"
 
 ### Q6: LLM 应用的监控指标设计？
 
-**结论**: 四大维度：性能 (TTFT/TPS/P99延迟)、可靠性 (错误率/可用性)、成本 (Token消耗/USD/query)、质量 (评分/反馈/幻觉率)。
+**结论**: 四大维度：性能 (TTFT/TPS/P99 延迟)、可靠性 (错误率/可用性)、成本 (Token 消耗/USD/query)、质量 (评分/反馈/幻觉率)。
 
 **展开**:
 - **性能指标**:
-  - TTFT (Time to First Token): < 500ms (P95)
-  - TPS (Tokens per Second): > 30 (流式)
-  - P99 延迟: < 5s (完整响应)
+ - TTFT (Time to First Token): < 500ms (P95)
+ - TPS (Tokens per Second): > 30 (流式)
+ - P99 延迟: < 5s (完整响应)
 - **可靠性指标**:
-  - 错误率 < 0.1% (HTTP 5xx + 超时)
-  - 可用性 > 99.9% (月度)
-  - Fallback 触发率 < 5%
+ - 错误率 < 0.1% (HTTP 5xx + 超时)
+ - 可用性 > 99.9% (月度)
+ - Fallback 触发率 < 5%
 - **成本指标**: 每千次请求成本、Token 消耗趋势、按部门/项目分摊
 - **质量指标**: LLM-as-Judge 评分、用户反馈 (👍/👎)、幻觉率
 - **工具栈**: Prometheus (采集) + Grafana (展示) + OpenTelemetry (Trace) + PagerDuty (告警)
@@ -134,9 +134,9 @@ name_zh: "LLM Platform Engineer 面试题实例答案"
 - **超时设置**: 首 Token 超时 5s，完整响应超时 60s。超时后立即 Fallback
 - **熔断器 (Circuit Breaker)**: 连续 N 次失败 → 熔断 (不再请求该模型) → 定期探测恢复
 - **降级方案**: 
-  - Level 1: 大模型 → 小模型 (质量降级)
-  - Level 2: LLM → Semantic Cache (时效性降级)
-  - Level 3: 返回"服务暂不可用" + 建议用户稍后重试
+ - Level 1: 大模型 → 小模型 (质量降级)
+ - Level 2: LLM → Semantic Cache (时效性降级)
+ - Level 3: 返回"服务暂不可用" + 建议用户稍后重试
 - **关键原则**: 用户永远不应看到裸异常，每个错误路径都有优雅的用户体验
 
 ---
@@ -155,7 +155,7 @@ name_zh: "LLM Platform Engineer 面试题实例答案"
 
 ## Related
 
-- [[21_面试岗位/LLM_Platform_Engineer/company_level_question_bank|LLM Platform Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/19_LLM平台工程师/01_企业级题库.md|LLM Platform Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/19_LLM平台工程师/04_interview_preparing|LLM Platform Engineer 面试准备]]
 - [[21_面试岗位/19_LLM平台工程师/05_question_bank|LLM Platform Engineer 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
@@ -190,7 +190,7 @@ aliases:
 
 ## Related
 
-- [[21_面试岗位/LLM_Platform_Engineer/company_level_question_bank|LLM Platform Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/19_LLM平台工程师/01_企业级题库.md|LLM Platform Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/19_LLM平台工程师/04_interview_preparing|LLM Platform Engineer 面试准备]]
 - [[21_面试岗位/19_LLM平台工程师/05_question_bank|LLM Platform Engineer 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]

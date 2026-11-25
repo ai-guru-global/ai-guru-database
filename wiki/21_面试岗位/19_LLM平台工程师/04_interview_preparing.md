@@ -46,7 +46,7 @@ name_zh: "LLM Platform Engineer 面试准备"
 
 ## Related
 
-- [[21_面试岗位/LLM_Platform_Engineer/company_level_question_bank|LLM Platform Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/19_LLM平台工程师/01_企业级题库.md|LLM Platform Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/19_LLM平台工程师/03_interview_answers|LLM Platform Engineer 面试题实例答案]]
 - [[21_面试岗位/19_LLM平台工程师/05_question_bank|LLM Platform Engineer 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]

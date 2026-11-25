@@ -26,7 +26,7 @@ name_zh: "AI 面试准备"
 |------|---------|------|
 | [[21_面试岗位/17_数据科学家/05_question_bank|AI Data Analyst]] | 指标体系、A/B 测试、业务分析 | 面试准备 + 题库 |
 | [[21_面试岗位/04_AI基础设施工程师/05_question_bank|AI Infrastructure Engineer]] | GPU 集群、训练框架、推理优化 | 面试准备 + 题库 |
-| [[21_面试岗位/Cloud_Ops_Engineer/Cloud_Ops_Engineer|Cloud Ops Engineer]] | K8s/GPU 运维、事故响应、云原生可观测 | 面试准备 + 题库 |
+| [[21_面试岗位/14_云运维工程师/01_云运维工程师|Cloud Ops Engineer]] | K8s/GPU 运维、事故响应、云原生可观测 | 面试准备 + 题库 |
 | [[21_面试岗位/AI_Reliability_Engineer/AI_Reliability_Engineer|AI Reliability Engineer]] | 模型监控、故障恢复、SLO 设计 | 面试准备 + 题库 |
 | [[21_面试岗位/AI_Solutions_Architect/AI_Solutions_Architect|AI Solutions Architect]] | 方案设计、技术选型、客户沟通 | 面试准备 + 题库 |
 | [[21_面试岗位/15_计算机视觉工程师/05_question_bank|Computer Vision Engineer]] | 图像分类、检测、分割、生成 | 面试准备 + 题库 |
@@ -36,9 +36,9 @@ name_zh: "AI 面试准备"
 | [[21_面试岗位/20_机器学习工程师/05_question_bank|Machine Learning Engineer]] | 模型开发、训练优化、部署上线 | 面试准备 + 题库 |
 | [[21_面试岗位/MLOps_Engineer/MLOps_Engineer|MLOps Engineer]] | 流水线、CI/CD、模型监控 | 面试准备 + 题库 |
 | [[21_面试岗位/22_NLP工程师/05_question_bank|NLP Engineer]] | 文本处理、LLM 应用、RAG | 面试准备 + 题库 |
-| [[21_面试岗位/Prompt_Engineer/Prompt_Engineer|Prompt Engineer]] | Prompt 设计、评估优化、应用落地 | 面试准备 + 题库 |
+| [[21_面试岗位/23_Prompt工程师/03_Prompt工程师|Prompt Engineer]] | Prompt 设计、评估优化、应用落地 | 面试准备 + 题库 |
 | [[21_面试岗位/Robotics_Engineer/Robotics_Engineer|Robotics Engineer]] | 感知、规划、控制、仿真 | 面试准备 + 题库 |
-| [[21_面试岗位/Agent_Engineer_2026|Agent Engineer 2026]] | ReAct/Plan-and-Execute/Multi-Agent/Memory/Tool Use、系统设计、代码题 | 面试准备 + 题库 |
+| [[21_面试岗位/01_Agent工程师/01_Agent工程师_2026|Agent Engineer 2026]] | ReAct/Plan-and-Execute/Multi-Agent/Memory/Tool Use、系统设计、代码题 | 面试准备 + 题库 |
 | [[21_面试岗位/27_技术解决方案工程师/README|技术解决方案工程师（阿里云弹性计算 SSE）]] | 云沙箱/容器/ECS、Agent Infra 方案设计、POC 与商业化落地 | JD 沉淀（题库规划中） |
 | [[21_面试岗位/28_Agent_Runtime工程师/README|Agent Runtime 工程师]] | Runtime 机制/沙箱隔离/编排调度/MCP·A2A/可观测评测/企业交付 | 专题系列（11 篇 + JD 解读） |
 
@@ -124,7 +124,7 @@ name_zh: "AI 面试准备"
 
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
 
-- [[21_面试岗位/Cloud_Ops_Engineer/Cloud_Ops_Engineer|Cloud Ops Engineer 题库]]
+- [[21_面试岗位/14_云运维工程师/01_云运维工程师|Cloud Ops Engineer 题库]]
 - [[21_面试岗位/README|AI 面试准备 — 小白版 🎯]]
 
 ## 面试核心知识框架

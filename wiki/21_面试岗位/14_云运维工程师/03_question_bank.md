@@ -200,7 +200,7 @@ name_zh: "Cloud Ops Engineer 题库"
 
 ## Related
 
-- [[21_面试岗位/Cloud_Ops_Engineer/Cloud_Ops_Engineer|云运维工程师]]
+- [[21_面试岗位/14_云运维工程师/01_云运维工程师|云运维工程师]]
 - [[21_面试岗位/Interview_Guide/index|面试总指南]]
 - [[13_运维/index|运维]]
 - [[10_部署推理/index|部署推理]]

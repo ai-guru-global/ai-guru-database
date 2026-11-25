@@ -251,7 +251,7 @@ R (Result):
 ## Related
 
 - [[21_面试岗位/20_机器学习工程师/05_question_bank|Machine Learning Engineer 题库]]
-- [[21_面试岗位/Machine_Learning_Engineer/company_level_question_bank|Machine Learning Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/20_机器学习工程师/01_企业级题库.md|Machine Learning Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/Machine_Learning_Engineer/interview_preparing|Machine Learning Engineer 面试准备]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
 - [[21_面试岗位/18_面试指南/05_jobs|AI 相关岗位与工种清单]]
@@ -264,9 +264,9 @@ created: 2026-05-31
 updated: 2026-06-04
 tier: supporting
 aliases:
-  - "Interview Answers"
-  - "interview answers"
-  - interview_answers
+ - "Interview Answers"
+ - "interview answers"
+ - interview_answers
 
 ---
 # Machine Learning Engineer 面试题实例答案
@@ -285,7 +285,7 @@ aliases:
 
 ## Related
 
-- [[21_面试岗位/Machine_Learning_Engineer/company_level_question_bank|Machine Learning Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/20_机器学习工程师/01_企业级题库.md|Machine Learning Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/Machine_Learning_Engineer/interview_preparing|Machine Learning Engineer 面试准备]]
 - [[21_面试岗位/20_机器学习工程师/05_question_bank|Machine Learning Engineer 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]

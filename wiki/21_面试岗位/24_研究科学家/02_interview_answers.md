@@ -322,7 +322,7 @@ def elbo_loss(x, recon_x, mu, logvar):
 ## Related
 
 - [[21_面试岗位/17_数据科学家/05_question_bank|Research Scientist 题库]]
-- [[21_面试岗位/Research_Scientist/company_level_question_bank|Research Scientist 按公司/级别区分的题库]]
+- [[21_面试岗位/24_研究科学家/03_question_bank|Research Scientist 按公司/级别区分的题库]]
 - [[21_面试岗位/Research_Scientist/index|Research Scientist 首页]]
 - [[05_大模型/index|大模型]]
 - [[03_深度学习/index|深度学习]]

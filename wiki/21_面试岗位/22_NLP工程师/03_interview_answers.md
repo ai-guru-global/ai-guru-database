@@ -82,13 +82,13 @@ name_zh: "NLP Engineer 面试题实例答案"
 
 **展开**:
 - **低精度解决方案**:
-  - Cross-Encoder Re-ranker (二次排序)
-  - Query 意图识别 + 过滤
-  - 元数据过滤 (时间/来源/类型)
+ - Cross-Encoder Re-ranker (二次排序)
+ - Query 意图识别 + 过滤
+ - 元数据过滤 (时间/来源/类型)
 - **低召回解决方案**:
-  - 查询扩展: HyDE (用 LLM 先生成假设答案再检索)、Multi-Query
-  - 混合检索: 向量 + BM25 + RRF 融合
-  - 多级索引: Summary 索引 → 按需展开细节
+ - 查询扩展: HyDE (用 LLM 先生成假设答案再检索)、Multi-Query
+ - 混合检索: 向量 + BM25 + RRF 融合
+ - 多级索引: Summary 索引 → 按需展开细节
 - **共同优化**: 更好的 Embedding 模型、领域微调、定期更新索引
 
 **追问预判**: "RRF 是什么？为什么有效？"
@@ -100,11 +100,11 @@ name_zh: "NLP Engineer 面试题实例答案"
 
 **展开**:
 - **检索指标**:
-  - Context Precision: 检索到的文档中有多少是相关的
-  - Context Recall: 相关文档中有多少被检索到
+ - Context Precision: 检索到的文档中有多少是相关的
+ - Context Recall: 相关文档中有多少被检索到
 - **生成指标**:
-  - Faithfulness: 答案是否忠实于检索到的上下文 (衡量幻觉)
-  - Answer Relevancy: 答案是否真正回答了用户的问题
+ - Faithfulness: 答案是否忠实于检索到的上下文 (衡量幻觉)
+ - Answer Relevancy: 答案是否真正回答了用户的问题
 - **评测方法**: 构建 Golden Dataset (问题-答案-相关文档三元组)，用 LLM-as-Judge 自动评分
 - **补充指标**: Answer Correctness (与参考答案的语义相似度)、Aspect Critique (安全性/有害性)
 
@@ -193,7 +193,7 @@ name_zh: "NLP Engineer 面试题实例答案"
 
 ## Related
 
-- [[21_面试岗位/NLP_Engineer/company_level_question_bank|NLP Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/22_NLP工程师/01_企业级题库.md|NLP Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/22_NLP工程师/04_interview_preparing|NLP Engineer 面试准备]]
 - [[21_面试岗位/22_NLP工程师/05_question_bank|NLP Engineer 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
@@ -228,7 +228,7 @@ aliases:
 
 ## Related
 
-- [[21_面试岗位/NLP_Engineer/company_level_question_bank|NLP Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/22_NLP工程师/01_企业级题库.md|NLP Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/22_NLP工程师/04_interview_preparing|NLP Engineer 面试准备]]
 - [[21_面试岗位/22_NLP工程师/05_question_bank|NLP Engineer 题库]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]

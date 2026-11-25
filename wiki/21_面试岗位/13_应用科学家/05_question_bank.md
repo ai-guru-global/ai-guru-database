@@ -137,8 +137,8 @@ name_zh: "Applied Scientist 题库"
 
 ## Related
 
-- [[21_面试岗位/Applied_Scientist/interview_answers|Applied Scientist 面试题实例答案]]
-- [[21_面试岗位/Applied_Scientist/company_level_question_bank|Applied Scientist 按公司/级别区分的题库]]
+- [[21_面试岗位/13_应用科学家/04_interview_answers.md|Applied Scientist 面试题实例答案]]
+- [[21_面试岗位/13_应用科学家/02_企业级题库.md|Applied Scientist 按公司/级别区分的题库]]
 - [[21_面试岗位/Applied_Scientist/index|Applied Scientist 首页]]
 - [[02_机器学习/index|机器学习]]
 - [[08_模型评估/index|模型评估]]

@@ -124,8 +124,8 @@ name_zh: "AI Reliability Engineer 题库"
 
 ## Related
 
-- [[21_面试岗位/AI_Reliability_Engineer/interview_answers|AI Reliability Engineer 面试题实例答案]]
-- [[21_面试岗位/AI_Reliability_Engineer/company_level_question_bank|AI Reliability Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/07_AI可靠性工程师/04_interview_answers.md|AI Reliability Engineer 面试题实例答案]]
+- [[21_面试岗位/07_AI可靠性工程师/02_企业级题库.md|AI Reliability Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/AI_Reliability_Engineer/index|AI Reliability Engineer 首页]]
 - [[13_运维/index|运维]]
 - [[11_模型运维/index|模型运维]]
@@ -154,14 +154,14 @@ name_zh: "AI Reliability Engineer 题库"
 | 部署难度 | 简单 | 中等 | 复杂 | 按运维能力 |
 | 迭代速度 | 快 | 中 | 慢 | 按业务节奏 |
 
-## 常见问题FAQ
+## 常见问题 FAQ
 
 | 问题 | 解答 |
 |------|------|
 | 如何快速入门该领域? | 先建立直觉(可视化/类比)，再学数学原理，最后代码实现 |
-| 需要哪些前置知识? | 线性代数+概率统计+微积分+Python编程基础 |
+| 需要哪些前置知识? | 线性代数+概率统计+微积分+Python 编程基础 |
 | 如何选择学习资源? | 经典教材打基础+顶会论文跟前沿+开源项目练实战 |
-| 理论学习和实践如何平衡? | 7:3比例——70%时间理解原理，30%时间动手验证 |
+| 理论学习和实践如何平衡? | 7:3 比例——70% 时间理解原理，30% 时间动手验证 |
 | 如何评估自己的掌握程度? | 能向他人清晰解释+能独立实现+能解决变体问题 |
 
 ## 核心术语速查
@@ -181,10 +181,10 @@ name_zh: "AI Reliability Engineer 题库"
 
 | 类型 | 资源 | 适用阶段 |
 |------|------|----------|
-| 教材 | 领域经典教材(花书/CS229等) | 入门-基础 |
-| 课程 | Stanford/MIT在线课程 | 入门-进阶 |
+| 教材 | 领域经典教材(花书/CS229 等) | 入门-基础 |
+| 课程 | Stanford/MIT 在线课程 | 入门-进阶 |
 | 论文 | 顶会最佳论文+综述 | 进阶-精通 |
-| 代码 | PyTorch/HuggingFace官方示例 | 基础-实战 |
+| 代码 | PyTorch/HuggingFace 官方示例 | 基础-实战 |
 | 社区 | 技术博客+论文读书会 | 全阶段 |
 | 竞赛 | Kaggle/天池/学术竞赛 | 基础-进阶 |
 

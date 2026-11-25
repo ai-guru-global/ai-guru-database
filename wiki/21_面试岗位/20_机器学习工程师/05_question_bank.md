@@ -115,8 +115,8 @@ name_zh: "Machine Learning Engineer 题库"
 
 ## Related
 
-- [[21_面试岗位/Machine_Learning_Engineer/interview_answers|Machine Learning Engineer 面试题实例答案]]
-- [[21_面试岗位/Machine_Learning_Engineer/company_level_question_bank|Machine Learning Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/20_机器学习工程师/03_interview_answers.md|Machine Learning Engineer 面试题实例答案]]
+- [[21_面试岗位/20_机器学习工程师/01_企业级题库.md|Machine Learning Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/Machine_Learning_Engineer/interview_preparing|Machine Learning Engineer 面试准备]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
 - [[21_面试岗位/18_面试指南/05_jobs|AI 相关岗位与工种清单]]
@@ -129,9 +129,9 @@ created: 2026-05-31
 updated: 2026-06-04
 tier: supporting
 aliases:
-  - "Question Bank"
-  - "question bank"
-  - question_bank
+ - "Question Bank"
+ - "question bank"
+ - question_bank
 
 ---
 # Machine Learning Engineer 题库
@@ -161,8 +161,8 @@ aliases:
 
 ## Related
 
-- [[21_面试岗位/Machine_Learning_Engineer/company_level_question_bank|Machine Learning Engineer 按公司/级别区分的题库]]
-- [[21_面试岗位/Machine_Learning_Engineer/interview_answers|Machine Learning Engineer 面试题实例答案]]
+- [[21_面试岗位/20_机器学习工程师/01_企业级题库.md|Machine Learning Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/20_机器学习工程师/03_interview_answers.md|Machine Learning Engineer 面试题实例答案]]
 - [[21_面试岗位/Machine_Learning_Engineer/interview_preparing|Machine Learning Engineer 面试准备]]
 - [[21_面试岗位/README|AI 面试准备 (Interviews)]]
 - [[21_面试岗位/18_面试指南/05_jobs|AI 相关岗位与工种清单]]
@@ -182,18 +182,18 @@ aliases:
 
 | 问题类型 | 典型问题 | 应答策略 |
 |----------|----------|----------|
-| 概念题 | 解释XX的原理 | 定义+原理+应用+对比 |
-| 对比题 | A和B的区别 | 维度对比+适用场景+选型建议 |
-| 设计题 | 设计一个XX系统 | 需求分析+架构+权衡+扩展 |
-| 经验题 | 遇到的最大挑战 | STAR法则+量化成果+反思 |
-| 开放题 | 如何看待XX趋势 | 现状+分析+判断+行动 |
+| 概念题 | 解释 XX 的原理 | 定义+原理+应用+对比 |
+| 对比题 | A 和 B 的区别 | 维度对比+适用场景+选型建议 |
+| 设计题 | 设计一个 XX 系统 | 需求分析+架构+权衡+扩展 |
+| 经验题 | 遇到的最大挑战 | STAR 法则+量化成果+反思 |
+| 开放题 | 如何看待 XX 趋势 | 现状+分析+判断+行动 |
 
 ## 面试评分维度
 
 | 维度 | 优秀表现 | 一般表现 | 不佳表现 |
 |------|----------|----------|----------|
 | 技术深度 | 深入原理+举一反三 | 知道概念但浅 | 概念模糊/错误 |
-| 编码能力 | 最优解+代码整洁 | 可行解但非最优 | 无法完成/bug多 |
+| 编码能力 | 最优解+代码整洁 | 可行解但非最优 | 无法完成/bug 多 |
 | 系统思维 | 全面考虑+合理权衡 | 基本方案可行 | 忽略关键约束 |
 | 表达能力 | 逻辑清晰+重点突出 | 能表达但冗长 | 混乱/答非所问 |
 | 学习潜力 | 快速理解+主动探索 | 需要提示能跟上 | 无法理解新概念 |
@@ -206,7 +206,7 @@ aliases:
 | 系统设计 | System Design Primer | 架构思维培养 |
 | 技术书籍 | 岗位相关经典书籍 | 深度理解 |
 | 技术博客 | 目标公司工程博客 | 了解技术栈 |
-| Mock平台 | Pramp/interviewing.io | 模拟实战 |
+| Mock 平台 | Pramp/interviewing.io | 模拟实战 |
 
 ## 检查清单
 
@@ -214,6 +214,6 @@ aliases:
 - [ ] 高频算法题型已熟练掌握
 - [ ] 项目案例已深度准备
 - [ ] 系统设计方法论已掌握
-- [ ] 目标岗位JD已仔细研究
+- [ ] 目标岗位 JD 已仔细研究
 - [ ] 面试问题已模拟回答
 - [ ] 心态调整到位

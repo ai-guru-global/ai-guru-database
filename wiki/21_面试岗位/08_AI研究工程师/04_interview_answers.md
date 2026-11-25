@@ -336,7 +336,7 @@ R:
 ## Related
 
 - [[21_面试岗位/17_数据科学家/05_question_bank|AI Research Engineer 题库]]
-- [[21_面试岗位/AI_Research_Engineer/company_level_question_bank|AI Research Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/08_AI研究工程师/02_企业级题库.md|AI Research Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/AI_Research_Engineer/index|AI Research Engineer 首页]]
 - [[07_模型训练/index|模型训练]]
 - [[03_深度学习/index|深度学习]]

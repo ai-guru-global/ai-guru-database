@@ -274,7 +274,7 @@ R:
 ## Related
 
 - [[21_面试岗位/17_数据科学家/05_question_bank|AI Policy Specialist 题库]]
-- [[21_面试岗位/AI_Policy_Specialist/company_level_question_bank|AI Policy Specialist 按公司/级别区分的题库]]
+- [[21_面试岗位/05_AI政策专家/02_企业级题库.md|AI Policy Specialist 按公司/级别区分的题库]]
 - [[21_面试岗位/AI_Policy_Specialist/index|AI Policy Specialist 首页]]
 - [[治理/index|AI 治理]]
 - [[17_伦理安全/index|伦理安全]]

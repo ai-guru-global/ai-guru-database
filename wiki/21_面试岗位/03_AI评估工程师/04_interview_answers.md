@@ -101,14 +101,14 @@ print("PR-AUC :", average_precision_score(y_true, y_pred))  # ~0.17 暴露问题
 
 **展开**:
 1. **数据隔离**:
-   - 评测集严格保密，不在公开渠道发布完整版
-   - 采用"私有 Leaderboard"机制（如 LMSYS 私有 split）
+ - 评测集严格保密，不在公开渠道发布完整版
+ - 采用"私有 Leaderboard"机制（如 LMSYS 私有 split）
 2. **动态生成**:
-   - 用模板程序化生成题目（如数学题参数随机化）
-   - LiveBench 每月更新，用最近新闻/论文题目避免被记住
+ - 用模板程序化生成题目（如数学题参数随机化）
+ - LiveBench 每月更新，用最近新闻/论文题目避免被记住
 3. **污染检测**:
-   - 用 n-gram 重叠检测评测样本是否出现在预训练语料
-   - 检查模型对"改写版本"的表现，若原版远好于改写版 → 已被记住
+ - 用 n-gram 重叠检测评测样本是否出现在预训练语料
+ - 检查模型对"改写版本"的表现，若原版远好于改写版 → 已被记住
 
 **污染检测代码示例**:
 ```python
@@ -163,13 +163,13 @@ flowchart LR
 
 **展开**:
 1. **路径非唯一**: 同一目标有多种合法 action 序列，不能只比对精确路径
-   - 方案：只评最终状态（end-state evaluation）或关键步骤（milestone-based）
+ - 方案：只评最终状态（end-state evaluation）或关键步骤（milestone-based）
 2. **环境交互**: 需要可复现的沙箱环境（如 WebArena、SWE-bench 的 Docker 环境）
 3. **指标设计**:
-   - Success Rate: 完成任务的比例
-   - Steps Efficiency: 实际步数 / 最优步数
-   - Tool Accuracy: 正确调用工具的比例
-   - Cost: Token / API 调用成本
+ - Success Rate: 完成任务的比例
+ - Steps Efficiency: 实际步数 / 最优步数
+ - Tool Accuracy: 正确调用工具的比例
+ - Cost: Token / API 调用成本
 
 **追问预判**: "如何评测一个会改代码的 Coding Agent？"
 → 用 SWE-bench 思路：给定 GitHub issue，agent 提交 PR，自动跑测试套件判断是否解决，避免主观评分。
@@ -292,7 +292,7 @@ R:
 ## Related
 
 - [[21_面试岗位/03_AI评估工程师/05_question_bank|AI Evaluation Engineer 题库]]
-- [[21_面试岗位/AI_Evaluation_Engineer/company_level_question_bank|AI Evaluation Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/03_AI评估工程师/02_企业级题库.md|AI Evaluation Engineer 按公司/级别区分的题库]]
 - [[21_面试岗位/AI_Evaluation_Engineer/index|AI Evaluation Engineer 首页]]
 - [[08_模型评估/index|模型评估]]
 - [[09_测试/03_Agent评估/02_Agent_评估_索引|Agent 评测]]

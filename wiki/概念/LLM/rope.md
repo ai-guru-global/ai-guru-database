@@ -154,7 +154,7 @@ DeepSeek-V3 在 MLA 架构中对 RoPE 做了特殊处理——**解耦 RoPE**：
 
 ## Related
 
-- [[05_大模型/04_LLM架构]] — LLM 架构全景
+- [[05_大模型/04_LLM架构/README]] — LLM 架构全景
 - [[概念/transformer-architecture]] — Transformer 架构
 - [[概念/multi-head-latent-attention]] — Multi-head Latent Attention (MLA)
 - [[概念/attention-variants]] — GQA/MQA/SWA 注意力变体

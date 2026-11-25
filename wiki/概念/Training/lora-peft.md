@@ -236,7 +236,7 @@ W_final = W₀ + B×A
 - [[概念/model-compression]] — 模型压缩（量化是 QLoRA 的基础）
 - [[概念/distributed-parallelism]] — 分布式并行（全量微调的替代方案）
 - [[概念/model-training]] — 模型训练（训练流程）
-- [[05_大模型/06_微调技术]] — 微调技术详解
+- [[05_大模型/06_微调技术/README]] — 微调技术详解
 - [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析]] — AI Stack
 - [[概念/dora]] — DoRA
 - [[概念/rs-lora]] — RS-LoRA

@@ -156,11 +156,11 @@ graph TD
 
 | 类别 | 代表工具 | 用途 | 关联知识库 |
 |------|---------|------|-----------|
-| 对话型 LLM | ChatGPT (GPT-5.2)、Claude (4.5)、Gemini | 对话、写作、分析、编程 | [[05_大模型/]] |
-| 编程助手 | Cursor、Claude Code、Windsurf、Devin | 代码生成、调试、重构 | [[15_智能体/]] |
-| 图像生成 | Midjourney、DALL-E、Stable Diffusion | 图片创作、设计 | [[04_计算机视觉/]] |
-| Agent 平台 | Dify、Coze、LangGraph | 构建 AI Agent 工作流 | [[15_智能体/]] |
-| 开源框架 | PyTorch、Hugging Face、vLLM | 模型训练与部署 | [[10_部署推理/]] |
+| 对话型 LLM | ChatGPT (GPT-5.2)、Claude (4.5)、Gemini | 对话、写作、分析、编程 | [[05_大模型/README]] |
+| 编程助手 | Cursor、Claude Code、Windsurf、Devin | 代码生成、调试、重构 | [[15_智能体/README]] |
+| 图像生成 | Midjourney、DALL-E、Stable Diffusion | 图片创作、设计 | [[04_计算机视觉/README]] |
+| Agent 平台 | Dify、Coze、LangGraph | 构建 AI Agent 工作流 | [[15_智能体/README]] |
+| 开源框架 | PyTorch、Hugging Face、vLLM | 模型训练与部署 | [[10_部署推理/README]] |
 
 ### 8. AI 伦理与社会影响
 
@@ -260,8 +260,8 @@ graph TD
 - [[90_学习/concepts/index|概念分阶索引]]
 - [[90_学习/01_概念认知/03_stage1_foundation|Stage 1: 基础概念]]
 - [[90_学习/pathways/index|学习路径]]
-- [[05_大模型/]] — 大模型知识章节
+- [[05_大模型/README]] — 大模型知识章节
 - [[17_伦理安全/02_价值对齐/04_Value_对齐|价值对齐]]
 - [[00_入门/03_学习路径/02_AI学习资源.md|AI_Learning_Resources]]
 
-> **关联**: → [[90_学习/concepts/index|概念分阶]] | [[90_学习/01_概念认知/03_stage1_foundation|Stage 1 基础]] | [[90_学习/02_学习路径/01_absolute_beginner|零基础路径]] | [[05_大模型/]] | [[17_伦理安全/]]
+> **关联**: → [[90_学习/concepts/index|概念分阶]] | [[90_学习/01_概念认知/03_stage1_foundation|Stage 1 基础]] | [[90_学习/02_学习路径/01_absolute_beginner|零基础路径]] | [[05_大模型/README]] | [[17_伦理安全/README]]

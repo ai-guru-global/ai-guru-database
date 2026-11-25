@@ -317,7 +317,7 @@ class BasicBlock(nn.Module):
 - [[90_学习/01_概念认知/03_stage1_foundation|深度学习基础]] — 概念分阶
 - [[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading|Transformer]] — 残差连接在新架构中的应用
 - [[90_学习/05_参考资料/books/07_hands_on_ml_geron|Hands-On ML]] — 第 14 章 CNN 详解
-- [[04_计算机视觉/]] — ResNet 是 CV 的基石
+- [[04_计算机视觉/README]] — ResNet 是 CV 的基石
 - [[90_学习/01_概念认知/02_stage0_awakening|Stage 0]] — AI 的第三次浪潮起点
 
 ## 如何精读这篇论文
@@ -347,8 +347,8 @@ class BasicBlock(nn.Module):
 - [[90_学习/05_参考资料/Papers/03_BERT_Reading|BERT]] — 残差在编码器中的应用
 - [[90_学习/05_参考资料/Papers/02_GPT3_Reading|GPT-3]] — 残差在解码器中的应用
 - [[90_学习/05_参考资料/books/07_hands_on_ml_geron|Hands-On ML]] Ch 14 — CNN 实战
-- [[04_计算机视觉/]] — 知识库 CV 章节
-- [[03_深度学习/]] — 深度学习章节
+- [[04_计算机视觉/README]] — 知识库 CV 章节
+- [[03_深度学习/README]] — 深度学习章节
 - [[90_学习/01_概念认知/04_stage2_core_tech|Stage 2: 核心技术]] — CNN 在学习路径中的位置
 
-> **关联**: → [[90_学习/05_参考资料/Projects/01_papers_with_code]] | [[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading|Transformer]] | [[04_计算机视觉/]] | [[03_深度学习/]] | [[90_学习/05_参考资料/books/07_hands_on_ml_geron|Hands-On ML]]
+> **关联**: → [[90_学习/05_参考资料/Projects/01_papers_with_code]] | [[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading|Transformer]] | [[04_计算机视觉/README]] | [[03_深度学习/README]] | [[90_学习/05_参考资料/books/07_hands_on_ml_geron|Hands-On ML]]

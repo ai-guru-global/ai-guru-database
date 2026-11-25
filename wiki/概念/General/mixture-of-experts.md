@@ -199,7 +199,7 @@ AI Stack 支持的模型中，多个采用 MoE 架构：
 
 ## Related
 
-- [[05_大模型/04_LLM架构]] — LLM 架构全景
+- [[05_大模型/04_LLM架构/README]] — LLM 架构全景
 - [[概念/llm-architectures]] — LLM 架构
 - [[概念/transformer-architecture]] — Transformer 架构
 - [[概念/distributed-parallelism]] — 分布式并行策略（Expert Parallelism）

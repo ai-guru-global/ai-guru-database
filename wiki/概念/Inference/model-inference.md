@@ -137,7 +137,7 @@ Attention 解决的是"指代消解"问题——当模型看到"它"时，需要
 ## 来源
 
 - Vaswani et al., "Attention Is All You Need," NeurIPS 2017
-- [[05_大模型/01_LLM基础]] — LLM 基础知识
+- [[05_大模型/01_LLM基础/README]] — LLM 基础知识
 - [[05_大模型/03_Transformer架构/04_Transformer_架构详解]] — Transformer 架构详解
 
 ## Related

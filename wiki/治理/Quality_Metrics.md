@@ -117,9 +117,9 @@ def audit_knowledge_base(root_dir):
 
 ## 4. 交叉引用
 
-- [[治理/|治理]]
+- [[治理/README|治理]]
 - [[治理/Content_Governance|内容治理]]
-- [[00_入门/|入门 (知识库使用)]]
+- [[00_入门/README|入门 (知识库使用)]]
 
 ## 5. 深度评分卡（Depth Scorecard）
 

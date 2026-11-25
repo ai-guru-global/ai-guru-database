@@ -475,5 +475,5 @@ class RecommendationBandit:
 - [[06_强化学习/01_强化学习基础/03_RL基础|RL 入门]]
 - [[06_强化学习/02_深度强化学习/Exploration_Strategies_Deep_Dive|探索策略]]
 - [[概念/Math/online-learning.md|在线学习]]
-- [[01_数学基础/03_概率统计/|概率统计]]
-- [[15_智能体/|智能体决策]]
+- [[01_数学基础/03_概率统计/README|概率统计]]
+- [[15_智能体/README|智能体决策]]

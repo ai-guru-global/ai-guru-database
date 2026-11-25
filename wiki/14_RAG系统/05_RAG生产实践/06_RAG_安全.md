@@ -152,8 +152,8 @@ RAG_SECURITY_MONITORING = {
 
 ## 5. 交叉引用
 
-- [[14_RAG系统/|RAG 系统]]
-- [[17_伦理安全/|伦理安全]]
+- [[14_RAG系统/README|RAG 系统]]
+- [[17_伦理安全/README|伦理安全]]
 - [[17_伦理安全/09_深度伪造安全/01_AI_Watermarking|AI 水印]]
 - [[15_智能体/07_Agent评估/04_Agent_评估|Agent 安全评估]]
 - [[13_运维/03_故障应急/02_Incident_Management|事故管理]]

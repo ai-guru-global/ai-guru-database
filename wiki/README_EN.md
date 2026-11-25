@@ -651,5 +651,5 @@ Special thanks to:
 - [[概念/README]] — Concept Cards Index
 - [[治理/README]] — Cross-domain Index
 - [[治理/hot.md]] — Hot Pages
-- [[治理/plan]] — Planning & Evaluation
+- [[治理/plan/README]] — Planning & Evaluation
 - [[00_入门/01_基础入门/02_AI基础.md]] — Knowledge Base Entry

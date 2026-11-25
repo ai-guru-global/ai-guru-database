@@ -299,8 +299,8 @@ Level 5: 鲁棒（抵抗对抗攻击）       → 仍脆弱
 - [[90_学习/01_概念认知/07_stage5_professional|Stage 5: 职业化]]
 - [[90_学习/pathways/index|学习路径]]
 - [[90_学习/05_参考资料/Projects/01_papers_with_code]] — 经典论文导读
-- [[05_大模型/]] — 大模型知识章节
-- [[17_伦理安全/]] — AI 安全与对齐
-- [[04_计算机视觉/]] — 多模态与视觉
+- [[05_大模型/README]] — 大模型知识章节
+- [[17_伦理安全/README]] — AI 安全与对齐
+- [[04_计算机视觉/README]] — 多模态与视觉
 
-> **关联**: → [[90_学习/concepts/index|概念分阶]] | [[90_学习/01_概念认知/07_stage5_professional|Stage 5 职业化]] | [[90_学习/05_参考资料/Projects/01_papers_with_code]] | [[05_大模型/]] | [[17_伦理安全/]] | [[04_计算机视觉/]]
+> **关联**: → [[90_学习/concepts/index|概念分阶]] | [[90_学习/01_概念认知/07_stage5_professional|Stage 5 职业化]] | [[90_学习/05_参考资料/Projects/01_papers_with_code]] | [[05_大模型/README]] | [[17_伦理安全/README]] | [[04_计算机视觉/README]]

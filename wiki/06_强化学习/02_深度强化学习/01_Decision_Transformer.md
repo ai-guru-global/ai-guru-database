@@ -467,4 +467,4 @@ def preprocess_trajectories(dataset, discount=1.0):
 - [[06_强化学习/02_深度强化学习/10_PPO_深入分析|PPO 算法]]
 - [[06_强化学习/04_强化学习应用/03_RL_for_LLM_推理|RL 驱动 LLM 推理]]
 - [[03_深度学习/02_神经网络核心/03_注意力_Mechanisms|注意力机制]]
-- [[15_智能体/|智能体系统]]
+- [[15_智能体/README|智能体系统]]

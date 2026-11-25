@@ -336,9 +336,9 @@ Loss ≈ A / N^α + B / D^β + C
 - [[90_学习/05_参考资料/books/14_build_llm_from_scratch_raschka|Build LLM From Scratch]] — GPT 架构实现
 - [[90_学习/05_参考资料/books/08_hands_on_llms_alammar|Hands-On LLMs]] — LLM 图解
 - [[90_学习/05_参考资料/books/15_ai_engineering_huyen|AI Engineering]] — LLM 应用工程
-- [[05_大模型/01_LLM基础]] — LLM 基础
+- [[05_大模型/01_LLM基础/README]] — LLM 基础
 - [[05_大模型/07_提示工程/16_Prompt工程]] — 提示工程
 - [[90_学习/01_概念认知/04_stage2_core_tech|Stage 2: 核心技术]] — LLM 在学习路径中的位置
 - [[90_学习/01_概念认知/06_stage4_frontier|Stage 4: 前沿]] — Scaling Law 与数据墙
 
-> **关联**: → [[90_学习/05_参考资料/Projects/01_papers_with_code]] | [[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading|Transformer]] | [[90_学习/05_参考资料/Papers/03_BERT_Reading|BERT]] | [[05_大模型/01_LLM基础]] | [[05_大模型/07_提示工程/16_Prompt工程]] | [[90_学习/01_概念认知/06_stage4_frontier|Stage 4 前沿]]
+> **关联**: → [[90_学习/05_参考资料/Projects/01_papers_with_code]] | [[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading|Transformer]] | [[90_学习/05_参考资料/Papers/03_BERT_Reading|BERT]] | [[05_大模型/01_LLM基础/README]] | [[05_大模型/07_提示工程/16_Prompt工程]] | [[90_学习/01_概念认知/06_stage4_frontier|Stage 4 前沿]]

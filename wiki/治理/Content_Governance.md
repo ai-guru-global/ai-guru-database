@@ -133,10 +133,10 @@ CONTRIBUTION_GUIDELINES = {
 
 ## 6. 交叉引用
 
-- [[治理/|治理]]
+- [[治理/README|治理]]
 - [[治理/Quality_Metrics|质量度量]]
-- [[00_入门/|入门]]
-- [[90_学习/|学习]]
+- [[00_入门/README|入门]]
+- [[90_学习/README|学习]]
 
 ## 7. 变更评审流程（Change Review Workflow）
 

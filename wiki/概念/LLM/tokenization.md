@@ -195,7 +195,7 @@ Google 的统一 tokenization 框架，支持 BPE 和 Unigram：
 - [[概念/information-theory]] — 信息论（编码定理与 BPE 的关系）
 - [[概念/llm-architectures]] — LLM 架构
 - [[概念/transformer-architecture]] — Transformer 架构
-- [[05_大模型/04_LLM架构]] — LLM 架构深度解析
+- [[05_大模型/04_LLM架构/README]] — LLM 架构深度解析
 
 ---
 

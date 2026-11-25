@@ -661,5 +661,5 @@ git push origin feature/your-feature
 - [[概念/README]] — 概念卡片索引
 - [[治理/README]] — 跨域综合文档索引
 - [[治理/hot.md]] — 热门页面
-- [[治理/plan]] — 项目规划与评估报告
+- [[治理/plan/README]] — 项目规划与评估报告
 - [[00_入门/01_基础入门/02_AI基础.md]] — 知识库入门索引

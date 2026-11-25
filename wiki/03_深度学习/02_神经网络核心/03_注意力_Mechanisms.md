@@ -292,5 +292,5 @@ def linear_attention(Q, K, V):
 - [[05_大模型/03_Transformer架构/04_Transformer_架构详解|Transformer 深度解析]]
 - [[05_大模型/04_LLM架构/06_LLM_Internals_架构|大模型架构内幕]]
 - [[概念/LLM/state-space-models|状态空间模型]] — Mamba/RWKV
-- [[10_部署推理/02_推理引擎/|推理引擎]] — KV Cache 优化
+- [[10_部署推理/02_推理引擎/README|推理引擎]] — KV Cache 优化
 - [[01_数学基础/05_数值方法/05_Numerical_Stability|数值稳定性]] — Softmax 溢出

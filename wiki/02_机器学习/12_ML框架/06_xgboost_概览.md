@@ -96,4 +96,4 @@ shap_values = explainer.shap_values(X_test)
 - [[02_机器学习/README|机器学习]] — 章节主页
 - [[08_模型评估/README|模型评估]] — GBDT 的评估指标（AUC/F1）
 - [[07_模型训练/README|模型训练]] — 超参数调优实践
-- [[02_机器学习/05_特征工程|特征工程]] — XGBoost 配套的特征处理
+- [[02_机器学习/05_特征工程/README|特征工程]] — XGBoost 配套的特征处理

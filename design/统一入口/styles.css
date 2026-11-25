@@ -317,3 +317,20 @@ h2 { font-size: var(--text-title); }
   color: var(--color-muted);
   border-bottom: 1px dashed color-mix(in oklch, var(--color-muted) 70%, transparent);
 }
+/* C7 四面实况：iframe 撑满槽位（内部滚动），动作行与树内按钮链接化 */
+.live-frame {
+  width: 100%; height: 100%; border: 0;
+  border-radius: var(--radius-card); background: var(--color-paper-3);
+  display: block;
+}
+.live-actions {
+  display: flex; align-items: center; gap: var(--space-md); margin: 0;
+}
+.live-open { font-size: var(--text-xs); color: var(--color-muted); }
+.live-open:hover { color: var(--color-ink); }
+.tree-nav .linkish {
+  background: none; border: 0; padding: 0; cursor: pointer;
+  font: inherit; color: var(--color-ink-2); text-align: left;
+}
+.tree-nav .linkish:hover { color: var(--color-ink); text-decoration: underline; }
+.tree-nav .linkish .count { color: var(--color-muted); }

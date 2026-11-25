@@ -387,11 +387,12 @@
     h += '</ul></details>';
     h += '<p class="group">横向主题</p><ul><li><a href="' + rawHref('console/_topics.md') + '"' +
       (ONLINE ? ' target="_blank" rel="noopener"' : '') + '>主题总表 <span class="count">18 类</span></a></li></ul>';
+    // C7：四面入口改页内实况（按钮），新窗兜底在预览面板的「新窗打开」
     h += '<p class="group">打开四个面</p><ul>' +
-      '<li><a href="' + surfaceHref('site') + '" target="_blank" rel="noopener">发布站 <span class="count">' + tree.surfaces['发布站'] + ' 页</span></a></li>' +
-      '<li><a href="' + surfaceHref('cons') + '" target="_blank" rel="noopener">拆解台 <span class="count">' + tree.surfaces['拆解台'] + ' 视图</span></a></li>' +
-      '<li><a href="' + surfaceHref('docs') + '" target="_blank" rel="noopener">文档站 <span class="count">' + tree.surfaces['文档站'] + ' 篇</span></a></li>' +
-      '<li><a href="' + surfaceHref('app') + '" target="_blank" rel="noopener">前端应用 <span class="count">' + tree.surfaces['前端应用'] + ' 路由</span></a></li>' +
+      '<li><button type="button" class="linkish" data-surface-live="site">发布站 <span class="count">' + tree.surfaces['发布站'] + ' 页</span></button></li>' +
+      '<li><button type="button" class="linkish" data-surface-live="console">拆解台 <span class="count">' + tree.surfaces['拆解台'] + ' 视图</span></button></li>' +
+      '<li><button type="button" class="linkish" data-surface-live="docs">文档站 <span class="count">' + tree.surfaces['文档站'] + ' 篇</span></button></li>' +
+      '<li><button type="button" class="linkish" data-surface-live="app">前端应用 <span class="count">' + tree.surfaces['前端应用'] + ' 路由</span></button></li>' +
       '</ul>';
     nav.innerHTML = h;
     // 预览区计数同步
@@ -428,9 +429,44 @@
     commit(push);
   }
 
+  /* ---------------- 四面实况 iframe（C7：页内载入，懒加载，新窗兜底） ---------------- */
+  var liveLoaded = {};
+  function loadLive(kind) {
+    if (liveLoaded[kind]) { selectTab(kind, false); return; }
+    var slot = document.querySelector('[data-slot="surface-' + kind + '"]');
+    if (!slot) return;
+    var f = document.createElement('iframe');
+    f.src = surfaceHref(kind);
+    f.title = '实况预览：' + kind;
+    f.className = 'live-frame';
+    f.loading = 'lazy';
+    slot.innerHTML = '';
+    slot.appendChild(f);
+    liveLoaded[kind] = true;
+    selectTab(kind, false);
+    var sec = $('surfaces-sec');
+    if (sec && sec.scrollIntoView) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  function bindSurfaces() {
+    // 预览面板「载入实况」按钮 + 树里四面入口（data-surface-live）
+    document.addEventListener('click', function (e) {
+      var t = e.target.closest ? e.target.closest('[data-live],[data-surface-live]') : null;
+      if (!t) return;
+      e.preventDefault();
+      loadLive(t.getAttribute('data-live') || t.getAttribute('data-surface-live'));
+    });
+    // 「新窗打开」兜底链接：href 依 ONLINE 口径运行时绑定
+    Array.prototype.forEach.call(document.querySelectorAll('[data-open]'), function (a) {
+      var k = a.getAttribute('data-open');
+      if (k === 'console') k = 'cons';
+      a.setAttribute('href', surfaceHref(k));
+    });
+  }
+
   /* ---------------- 事件绑定 ---------------- */
   function bind() {
     window.addEventListener('hashchange', apply);
+    bindSurfaces();
 
     $('q-form').addEventListener('submit', function (e) {
       e.preventDefault();

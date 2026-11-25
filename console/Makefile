@@ -21,9 +21,11 @@ dataset-check:
 	python3 tools/scripts/build_dataset.py --check
 	python3 tools/scripts/validate_dataset.py
 
-# 可抓取的静态站点：节点页 / 主题页 / sitemap / JSON-LD（产物 site/，Pages 用）
+# 可抓取的静态站点：节点页 / 叶子学习页（C6，需 .venv 的 markdown）/ 主题页 / sitemap / JSON-LD
+VENV_PAGES := $(wildcard ../.venv/bin/python)
+PAGES_PY := $(if $(VENV_PAGES),../.venv/bin/python,python3)
 pages:
-	python3 tools/scripts/build_pages.py
+	$(PAGES_PY) tools/scripts/build_pages.py
 
 # 贡献队列：核验台账 / 薄弱节点 / 低密度主题（产物 docs/good-first-issues.md）
 issues:

@@ -7,14 +7,20 @@
 
 产出（默认 site/）：
   index.html                          首页：统计 + 五层 + 主题
-  nodes/<layer>/<node>/index.html     节点页（拆解卡 / 六层解释 / 深度拆解 / 证据）
+  nodes/<layer>/<node>/index.html     节点页（拆解卡 / 六层解释 / 深度拆解 / 证据 / 学习页）
+  pages/<layer>/<node>/<页>.html      叶子学习页（C6：五层目录下的 md 内容页，≈300 页）
   topics/<topic>/index.html           主题页（线索列表）
   chronicle.html                      大事记
   console/                            交互式工作台副本（file:// 与 Pages 均可用）
   style.css / sitemap.xml / robots.txt / 404.html
 
+叶子页链接三路改写：
+  命中站内叶子页 → 站内相对链接；磁盘存在（wiki/ 等）→ GitHub blob（ai-guru-database）；
+  其余（http、锚点、缺失）→ 原样交给 markdown。
+
 用法：
-  python3 tools/scripts/build_pages.py [--site-url https://.../] [--out-dir site]
+  ../.venv/bin/python tools/scripts/build_pages.py [--site-url .../] [--out-dir site]
+  （叶子页 md→HTML 依赖 .venv 的 markdown 库）
 """
 
 from __future__ import annotations
@@ -24,6 +30,7 @@ import html
 import json
 import re
 import shutil
+import sys
 from pathlib import Path
 from urllib.parse import quote
 
@@ -31,7 +38,14 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
 CONSOLE = ROOT / "console"
 REPO_URL = "https://github.com/ai-guru-global/ai-guru-console"
-DEFAULT_SITE_URL = "https://ai-guru-global.github.io/ai-guru-console/"
+WIKI_REPO_URL = "https://github.com/ai-guru-global/ai-guru-database"
+# 生产实际挂载点（五面同源，2026-11-19 起）；旧 ai-guru-console Pages 已是另一站点，勿指向
+DEFAULT_SITE_URL = "https://ai-guru-global.github.io/ai-guru-database/portal/surfaces/site/"
+
+FM_RE = re.compile(r"\A---\s*\n(.*?)\n---\s*\n", re.S)
+H1_RE = re.compile(r"^#\s+(.+)$", re.M)
+WIKILINK_RE = re.compile(r"!?\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|([^\]]+))?\]\]")
+MDLINK_RE = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)]+)\)")
 
 
 def load(name: str):
@@ -206,7 +220,7 @@ def match_evidence(node: dict, clue_items: list[dict], event_items: list[dict]):
 
 def build_node(node: dict, layer: dict, chain: dict, explain: dict, deep: dict,
                clue_items: list[dict], event_items: list[dict], site_url: str,
-               version: str) -> str:
+               version: str, leaf_lists: dict[str, list[dict]] | None = None) -> str:
     node_id = node["id"]
     path = f"nodes/{layer['key']}/{node_id}/index.html"
     ex = explain.get("items", {}).get(node_id) or {}
@@ -315,6 +329,14 @@ def build_node(node: dict, layer: dict, chain: dict, explain: dict, deep: dict,
                 )
     related_html = f'<ul class="related">{"".join(rel_links)}</ul>' if rel_links else ""
 
+    # 学习页（C6）：该节点下的叶子内容页
+    learn_html = ""
+    for d in (leaf_lists or {}).get(node_id, []):
+        learn_html += (
+            f'<li><a href="{rel(3)}{d["url_rel"]}">{esc(d["title"])}</a></li>'
+        )
+    learn_html = f'<ul class="node-list">{learn_html}</ul>' if learn_html else ""
+
     body = f"""
 <nav class="crumbs"><a href="{rel(3)}index.html">产业链</a> / <a href="{rel(3)}index.html#layers">{esc(layer["key"])} {esc(layer["name"])}</a> / {esc(node["name"])}</nav>
 <article class="node">
@@ -332,6 +354,7 @@ def build_node(node: dict, layer: dict, chain: dict, explain: dict, deep: dict,
   {section("行业与企业版图", industries_html, "industries")}
   {section("深度拆解", deep_html, "deep")}
   {section("证据", evidence_html, "evidence")}
+  {section("学习页", learn_html, "learn")}
   {section("关联节点", related_html, "related")}
   <p class="citation">引用：AI GURU 工作台（ai-guru-console），<code>ai-guru:{esc(node["uid"])}</code>，{esc(version)}。</p>
 </article>
@@ -387,6 +410,173 @@ def build_topic(topic: dict, clue_items: list[dict], site_url: str) -> str:
         f'{topic["name"]} · AI GURU Industry Graph',
         topic.get("def", "")[:160],
         body, depth=2, canonical=url_for(site_url, path),
+    )
+
+
+# ---------------------------------------------------------------- 叶子学习页（C6）
+def _norm(s: str) -> str:
+    return re.sub(r"\s+", "", s or "")
+
+
+def leaf_title(md: Path, fallback: str) -> str:
+    try:
+        text = md.read_text(encoding="utf-8")
+    except (UnicodeDecodeError, OSError):
+        return fallback
+    m = FM_RE.match(text)
+    fm, body = (m.group(1), text[m.end():]) if m else ("", text)
+    for key in ("title", "name_zh"):
+        km = re.search(rf"^{key}:\s*[\"']?(.+?)[\"']?\s*$", fm, re.M)
+        if km:
+            return km.group(1).strip().strip("\"'")
+    h = H1_RE.search(body)
+    return h.group(1).strip() if h else fallback
+
+
+def scan_leaf_docs(chain: dict) -> list[dict]:
+    """五层目录下的 md 内容页 → 站点 pages/ 产出清单。
+
+    目录映射：NN-层目录剥前缀 ↔ chain layer.name；NN-节点目录剥前缀 ↔ node.name
+    （去空白比较）。_index.md 即节点学习总览，落 pages/<L>/<nid>/index.html。
+    """
+    layer_by_name = {_norm(ly["name"]): ly for ly in chain["layers"]}
+    out: list[dict] = []
+    # 注意 ROOT=console/（内容根）；CONSOLE=console/console/（SPA 副本目录），勿混用
+    for layer_dir in sorted(ROOT.glob("0[1-5]-*")):
+        if not layer_dir.is_dir():
+            continue
+        ly = layer_by_name.get(_norm(layer_dir.name.split("-", 1)[1]))
+        if not ly:
+            continue
+        for node_dir in sorted(layer_dir.glob("[0-9][0-9]-*")):
+            node = next((n for n in ly["nodes"]
+                         if _norm(n["name"]) == _norm(node_dir.name.split("-", 1)[1])), None)
+            if not node:
+                continue
+            for md in sorted(node_dir.glob("*.md")):
+                is_index = md.stem == "_index"
+                raw_rel = (f"pages/{ly['key']}/{node['id']}/"
+                           + ("index.html" if is_index else md.stem + ".html"))
+                out.append({
+                    "src": md, "layer": ly, "node": node,
+                    "stem": "_index" if is_index else md.stem,
+                    "raw_rel": raw_rel,
+                    "url_rel": "/".join(quote(s) for s in raw_rel.split("/")),
+                    "title": leaf_title(md, node["name"] if is_index else md.stem),
+                })
+    return out
+
+
+def _protect_code(text: str) -> tuple[str, list[str]]:
+    stash: list[str] = []
+
+    def stash_fn(m: re.Match) -> str:
+        stash.append(m.group(0))
+        return f"\x00{len(stash) - 1}\x00"
+
+    text = re.sub(r"```.*?```", stash_fn, text, flags=re.S)
+    text = re.sub(r"`[^`\n]+`", stash_fn, text)
+    return text, stash
+
+
+def md_to_site_html(text: str, src_dir: Path, leaf_by_stem: dict[str, str],
+                    leaf_by_src: dict[str, str]) -> str:
+    """叶子页 md → HTML；链接三路改写（代码块先保护）。
+
+    wikilink/相对 md 链接 → 站内叶子页（命中）· GitHub blob（磁盘存在）· 纯文本（缺失）。
+    """
+    from urllib.parse import unquote
+    import markdown
+
+    repo_root = CONSOLE.parent
+    text, stash = _protect_code(text)
+
+    def disk_blob(target: str) -> str:
+        t = target.replace("\\", "/").lstrip("/")
+        cands = [t, t + ".md", f"wiki/{t}", f"wiki/{t}.md",
+                 f"console/{t}", f"console/{t}.md"]
+        for c in cands:
+            if (repo_root / c).is_file():
+                return c
+        return ""
+
+    def wl_repl(m: re.Match) -> str:
+        target = m.group(1).strip()
+        label = (m.group(2) or target).strip()
+        stem = Path(target.replace("\\", "/")).stem
+        if stem in leaf_by_stem:
+            return f'<a href="{rel(3)}{leaf_by_stem[stem]}">{esc(label)}</a>'
+        blob = disk_blob(target)
+        if blob:
+            return f'<a href="{WIKI_REPO_URL}/blob/main/{quote(blob)}">{esc(label)}</a>'
+        return f'<span title="未解析：{esc(target)}">{esc(label)}</span>'
+
+    text = WIKILINK_RE.sub(wl_repl, text)
+
+    def ml_repl(m: re.Match) -> str:
+        label, target = m.group(1), m.group(2).strip()
+        if target.startswith(("http://", "https://", "mailto:", "#")):
+            return m.group(0)
+        path_part = unquote(target.split("#", 1)[0].strip())
+        if not path_part:
+            return m.group(0)
+        # 三级解析梯子：节点目录相对 → 层目录相对 → 内容根相对（存量 md 三种写法都有）
+        abs_p = None
+        for base in (src_dir, src_dir.parent, ROOT):
+            cand = (base / path_part).resolve()
+            if cand.is_file():
+                abs_p = cand
+                break
+        if abs_p is None:
+            return m.group(0)
+        hit = leaf_by_src.get(abs_p.as_posix())
+        if hit:
+            return f'<a href="{rel(3)}{hit}">{esc(label)}</a>'
+        try:
+            repo_rel = abs_p.relative_to(repo_root).as_posix()
+        except ValueError:
+            return m.group(0)
+        return f'<a href="{WIKI_REPO_URL}/blob/main/{quote(repo_rel)}">{esc(label)}</a>'
+
+    text = MDLINK_RE.sub(ml_repl, text)
+    text = re.sub(r"\x00(\d+)\x00", lambda m: stash[int(m.group(1))], text)
+    return markdown.markdown(
+        text, extensions=["tables", "fenced_code"], output_format="html5",
+    )
+
+
+def build_leaf(doc: dict, content_html: str, site_url: str) -> str:
+    src_repo_rel = "console/" + doc["src"].relative_to(ROOT).as_posix()
+    # _index 总览页标题=节点名，面包屑去重避免「X / X」
+    crumb_tail = "" if doc["title"] == doc["node"]["name"] else f' / {esc(doc["title"])}'
+    body = f"""
+<nav class="crumbs"><a href="{rel(3)}index.html">首页</a> / <a href="{rel(3)}index.html#layers">{esc(doc["layer"]["name"])}</a> / <a href="{rel(3)}nodes/{quote(doc["layer"]["key"])}/{quote(doc["node"]["id"])}/index.html">{esc(doc["node"]["name"])}</a>{crumb_tail}</nav>
+<article class="leaf">
+  <p class="kicker">{esc(doc["layer"]["key"])} · {esc(doc["node"]["name"])}</p>
+  <h1>{esc(doc["title"])}</h1>
+  <div class="md-body">
+{content_html}
+  </div>
+  <p class="cta"><a class="btn" href="{rel(3)}console/index.html">在拆解台中打开</a>
+  <a class="btn ghost" href="{WIKI_REPO_URL}/blob/main/{quote(src_repo_rel)}">查看源文件</a></p>
+  <p class="citation">引用：AI GURU 知识库（ai-guru-database），<code>{esc(src_repo_rel)}</code>，数据 CC BY-SA 4.0。</p>
+</article>
+"""
+    jsonld = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": doc["title"],
+        "url": url_for(site_url, doc["url_rel"]),
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "AI GURU Industry Graph",
+            "url": url_for(site_url, "index.html"),
+        },
+    }
+    return page(
+        f'{doc["title"]} · AI GURU Industry Graph',
+        doc["title"],
+        body, depth=3, canonical=url_for(site_url, doc["url_rel"]), jsonld=jsonld,
     )
 
 
@@ -463,6 +653,14 @@ th{background:#f4f2ec;font-weight:600;white-space:nowrap}
 .chronicle .date{font-variant-numeric:tabular-nums;color:var(--ink3);margin-right:10px}
 .chronicle .cat{font-size:12px;color:var(--ink3);margin-left:8px}
 .chronicle p{margin:4px 0 0;color:var(--ink2);font-size:14px}
+.md-body{max-width:820px}
+.md-body h1{font-size:26px;margin:26px 0 12px}
+.md-body h2{font-size:21px;margin:30px 0 10px}
+.md-body img{max-width:100%}
+.md-body pre{background:#f4f2ec;padding:12px 14px;border-radius:8px;overflow-x:auto;font-size:13px;line-height:1.55}
+.md-body code{font-size:.92em}
+.md-body blockquote{border-left:3px solid var(--line);margin:12px 0;padding:2px 14px;color:var(--ink2)}
+.md-body blockquote p{margin:4px 0}
 .site-footer{max-width:1080px;margin:0 auto;padding:24px 20px 48px;border-top:1px solid var(--line);color:var(--ink3);font-size:13px}
 code{font-family:ui-monospace,Menlo,monospace;font-size:.92em;background:#f1efe8;padding:1px 5px;border-radius:4px}
 @media(max-width:720px){table{display:block;overflow-x:auto}.node-list{columns:1}main{padding-top:24px}}
@@ -520,16 +718,51 @@ def main() -> None:
 
     paths = ["index.html", "chronicle.html"]
 
+    # 叶子学习页清单（C6）：先扫描，节点页的「学习页」区要挂这些链接
+    leaves = scan_leaf_docs(chain)
+    leaf_lists: dict[str, list[dict]] = {}
+    for d in leaves:
+        leaf_lists.setdefault(d["node"]["id"], []).append(d)
+
     # 节点页
     for layer in chain["layers"]:
         for node in layer["nodes"]:
             p = out / "nodes" / layer["key"] / node["id"] / "index.html"
             p.parent.mkdir(parents=True, exist_ok=True)
             p.write_text(
-                build_node(node, layer, chain, explain, deep, clues["items"], chronicle["items"], args.site_url, version),
+                build_node(node, layer, chain, explain, deep, clues["items"], chronicle["items"],
+                           args.site_url, version, leaf_lists),
                 encoding="utf-8",
             )
             paths.append(f"nodes/{layer['key']}/{node['id']}/index.html")
+
+    # 叶子学习页（C6）：md → HTML，依赖 .venv 的 markdown 库
+    if leaves:
+        try:
+            import markdown  # noqa: F401
+        except ImportError:
+            print("✗ 缺 markdown 库：请用 ../.venv/bin/python 运行 build_pages.py"
+                  "（叶子学习页未产出）", file=sys.stderr)
+            sys.exit(2)
+        leaf_by_stem: dict[str, str] = {}
+        leaf_by_src: dict[str, str] = {}
+        for d in leaves:
+            leaf_by_stem.setdefault(d["stem"], d["url_rel"])
+            leaf_by_src.setdefault(d["src"].resolve().as_posix(), d["url_rel"])
+        for d in leaves:
+            try:
+                text = d["src"].read_text(encoding="utf-8")
+            except (UnicodeDecodeError, OSError):
+                continue
+            m = FM_RE.match(text)
+            body_md = text[m.end():] if m else text
+            content_html = md_to_site_html(
+                body_md, d["src"].parent, leaf_by_stem, leaf_by_src,
+            )
+            dest = out / d["raw_rel"]
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            dest.write_text(build_leaf(d, content_html, args.site_url), encoding="utf-8")
+            paths.append(d["url_rel"])
 
     # 主题页
     for t in topics["items"]:
@@ -556,7 +789,7 @@ def main() -> None:
         encoding="utf-8",
     )
 
-    print(f"✓ site/ 已生成：{len(chain['layers'])*0 + chain['nodeCount']} 节点页 + "
+    print(f"✓ site/ 已生成：{chain['nodeCount']} 节点页 + {len(leaves)} 叶子学习页 + "
           f"{topics['count']} 主题页 + 首页 / 大事记 / sitemap（{len(paths)} 个可索引 URL）")
 
 

@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""wiki 健康门禁 v2.2：全文 ratchet + 变更文件零容忍。
+"""wiki 健康门禁 v2.3：全文 ratchet + 变更文件零容忍 + 三区分级 + 导入批次。
 
-全文模式（默认）——四项指标相对基线只许下降、不许上升：
+全文模式（默认）——八项指标相对基线只许下降、不许上升：
 1. wikilink 断链数     —— 口径：check_wikilinks.py（路径 / basename / 目录三级解析；
-                           aliases 解析待 P0-2）
-2. 孤立页数（无入链）  —— 扫描范围内无任何 wikilink 入链的 .md（排除 README / index 类导航文件）
+                           aliases 兜底解析已纳入；带路径别名命中单列计数见 ISS-111）
+2. 孤立页数（无入链）  —— 无任何 wikilink / md 链接入链的 .md（排除 README / index 导航页）
 3. frontmatter 不完整数 —— 缺 title / category / tags / summary / created / updated / tier / name_zh 之一
 4. 中英间距违规数      —— 口径：fix_spacing.py 差分（修复前后文本不一致即违规）
+5. staging frontmatter / 6. staging 间距 —— staging 区仅格式检查，独立棘轮（P0-3）
+7. md 断链数 / 8. md 根相对裸写数 —— md 内部链接进门禁（P0-2B，口径同 check_links.py）
 
 变更模式（--changed-only）——只检查新增 / 修改的 wiki .md，零容忍：
 - frontmatter 8 字段齐全
@@ -47,7 +49,8 @@ BASELINE_PATH = CONTENT / '治理' / '_meta' / 'link-health-baseline.json'
 BATCH_DIR = CONTENT / '治理' / '_meta' / 'import-batches'
 BATCH_METRICS = ('broken_instances', 'orphan_count', 'frontmatter_incomplete',
                  'spacing_violations', 'staging_frontmatter_incomplete',
-                 'staging_spacing_violations')
+                 'staging_spacing_violations', 'md_broken',
+                 'md_root_relative_bare')
 CHECKER = ROOT / 'code' / '工具' / 'check_wikilinks.py'
 SPACER = ROOT / 'code' / '工具' / 'fix_spacing.py'
 NAV_BASES = {'readme', 'readme_en', 'index', 'readme_for_dummy'}
@@ -55,6 +58,9 @@ REQUIRED_FIELDS = ('title', 'category', 'tags', 'summary',
                    'created', 'updated', 'tier', 'name_zh')
 FRONTMATTER = re.compile(r'\A---\s*\n(.*?)\n---', re.S)
 FIELD = re.compile(r'^(\w[\w-]*):', re.M)
+# P0-2B：md 内部链接进门禁。口径与 check_links.py 一致（源文件目录解析、
+# '/' 开头 vault 根、根相对裸写单列）；正则暂与 check_links 重复，待 P2-1 单一 resolver 并库
+MD_LINK = re.compile(r'\[([^\]]*)\]\(([^)]+)\)')
 
 
 class GitError(RuntimeError):
@@ -115,8 +121,13 @@ def resolve_target(t, rel_index, name_index, alias_index, dirs, alias_candidates
     return None, True, None
 
 
-def inspect_text(text, chk, fix_spacing, rel_index, name_index, alias_index, dirs):
-    """检查单个页面。全文扫描与 --changed-only 共用，保证口径零漂移。"""
+def inspect_text(text, chk, fix_spacing, rel_index, name_index, alias_index, dirs,
+                 rel):
+    """检查单个页面。全文扫描与 --changed-only 共用，保证口径零漂移。
+
+    P0-2B：wikilink 之外同口径扫描 md 内部链接——resolved 并入孤立页入链
+    统计（P1-4）；真断链入 md_missing；根相对裸写单列 md_root_bare。
+    """
     m = FRONTMATTER.match(text)
     fields = set(FIELD.findall(m.group(1))) if m else set()
     fm_missing = [f for f in REQUIRED_FIELDS if f not in fields]
@@ -137,9 +148,38 @@ def inspect_text(text, chk, fix_spacing, rel_index, name_index, alias_index, dir
             alias_hits.append({'target': t, 'scope': alias_scope})
         if is_broken:
             broken.append({'target': t, 'category': chk['classify'](t)})
+    md_missing, md_root_bare = [], []
+    content_root = Path(chk['CONTENT'])
+    src_dir = (content_root / rel).parent
+    posix_dir = str(Path(rel.replace('\\', '/')).parent)
+    for mm in MD_LINK.finditer(plain):
+        target = mm.group(2).strip().partition('#')[0]
+        if target.startswith(('http://', 'https://', 'mailto:', 'ftp://', '#')):
+            continue
+        if not target.endswith('.md'):
+            continue
+        link_count += 1
+        if target.startswith('/'):
+            root_hit = content_root / target.lstrip('/')
+            if root_hit.is_file():
+                resolved.append(target.lstrip('/')[:-3])
+            else:
+                md_missing.append({'target': target})
+            continue
+        src_hit = Path(os.path.normpath(src_dir / target))
+        if src_hit.is_file():
+            # 孤立页入链口径：wiki 相对路径去 .md（与 wikilink resolved 同构）
+            resolved.append(os.path.normpath(
+                posix_dir.replace('\\', '/') + '/' + target)[:-3])
+            continue
+        if (content_root / target).is_file():
+            md_root_bare.append({'target': target})
+        else:
+            md_missing.append({'target': target})
     return {'fm_missing': fm_missing, 'spacing_ok': spacing_ok,
             'resolved': resolved, 'broken': broken, 'alias_hits': alias_hits,
-            'link_count': link_count}
+            'link_count': link_count, 'md_missing': md_missing,
+            'md_root_bare': md_root_bare}
 
 
 def scan(chk, spacer) -> dict:
@@ -156,6 +196,7 @@ def scan(chk, spacer) -> dict:
     broken, inlinked = [], set()
     fm_incomplete, spacing_bad = [], []
     staging_fm, staging_spacing = [], []
+    md_missing, md_root_bare = [], []
     alias_hits = {'bare': 0, 'path': 0}
     total_links = 0
     for rel in scan_mds:
@@ -163,7 +204,7 @@ def scan(chk, spacer) -> dict:
             continue
         text = (Path(chk['CONTENT']) / rel).read_text(encoding='utf-8', errors='ignore')
         info = inspect_text(text, chk, fix_spacing, rel_index, name_index,
-                            alias_index, dirs)
+                            alias_index, dirs, rel)
         if info['fm_missing']:
             fm_incomplete.append(rel)
         if not info['spacing_ok']:
@@ -174,6 +215,8 @@ def scan(chk, spacer) -> dict:
         total_links += info['link_count']
         for item in info['broken']:
             broken.append({'source': rel, **item})
+        md_missing.extend({'source': rel, **item} for item in info['md_missing'])
+        md_root_bare.extend({'source': rel, **item} for item in info['md_root_bare'])
     orphans = [rel for rel in scan_mds
                if rel[:-3] not in inlinked and not is_nav_page(rel)]
     for rel in all_mds:
@@ -181,7 +224,7 @@ def scan(chk, spacer) -> dict:
             continue
         text = (Path(chk['CONTENT']) / rel).read_text(encoding='utf-8', errors='ignore')
         info = inspect_text(text, chk, fix_spacing, rel_index, name_index,
-                            alias_index, dirs)
+                            alias_index, dirs, rel)
         if info['fm_missing']:
             staging_fm.append(rel)
         if not info['spacing_ok']:
@@ -190,7 +233,8 @@ def scan(chk, spacer) -> dict:
             'spacing_bad': spacing_bad, 'alias_hits': alias_hits,
             'total_links': total_links,
             'staging_fm_incomplete': staging_fm,
-            'staging_spacing_bad': staging_spacing}
+            'staging_spacing_bad': staging_spacing,
+            'md_missing': md_missing, 'md_root_bare': md_root_bare}
 
 
 def load_active_batches(batch_dir=None, today=None):
@@ -332,7 +376,7 @@ def run_changed_only(args, chk, spacer) -> int:
             print(f'⚠️  {rel}（无法读取，已跳过）')
             continue
         info = inspect_text(text, chk, fix_spacing, rel_index, name_index,
-                            alias_index, dirs)
+                            alias_index, dirs, rel)
         problems = []
         if zone == 'archive':
             print(f'⏭️  {rel}（archive 冻结区，不参与门禁）')
@@ -345,6 +389,12 @@ def run_changed_only(args, chk, spacer) -> int:
         if zone == 'published':
             for item in info['broken']:
                 problems.append(f'断链: [[{item["target"]}]]（{item["category"]}）')
+            for item in info['md_missing']:
+                problems.append(f'md 断链: {item["target"]}（渲染站/Obsidian 内 404）')
+            for item in info['md_root_bare']:
+                problems.append(
+                    f'根相对裸写链接: {item["target"]}'
+                    f'（ISS-110，实为 404——改用 ./ 或 ../ 开头的显式相对路径）')
         if problems:
             failed += 1
             print(f'❌ {rel}（{zone} 区：仅格式检查）' if zone == 'staging' else f'❌ {rel}')
@@ -399,6 +449,8 @@ def main():
         'spacing_violations': len(result['spacing_bad']),
         'staging_frontmatter_incomplete': len(result['staging_fm_incomplete']),
         'staging_spacing_violations': len(result['staging_spacing_bad']),
+        'md_broken': len(result['md_missing']),
+        'md_root_relative_bare': len(result['md_root_bare']),
     }
     total = result['total_links']
 
@@ -407,11 +459,17 @@ def main():
              'frontmatter_incomplete': 'frontmatter 缺失',
              'spacing_violations': '中英间距',
              'staging_frontmatter_incomplete': 'staging frontmatter 缺失',
-             'staging_spacing_violations': 'staging 中英间距'}
+             'staging_spacing_violations': 'staging 中英间距',
+             'md_broken': 'md 断链',
+             'md_root_relative_bare': 'md 根相对裸写'}
     examples = {'frontmatter_incomplete': result['fm_incomplete'],
                 'spacing_violations': result['spacing_bad'],
                 'staging_frontmatter_incomplete': result['staging_fm_incomplete'],
-                'staging_spacing_violations': result['staging_spacing_bad']}
+                'staging_spacing_violations': result['staging_spacing_bad'],
+                'md_broken': [f"{b['source']} → {b['target']}"
+                              for b in result['md_missing'][:5]],
+                'md_root_relative_bare': [f"{b['source']} → {b['target']}"
+                                          for b in result['md_root_bare'][:5]]}
     batch_deltas, active_batches, expired_batches = load_active_batches()
     if active_batches:
         print(f"ℹ️ 生效导入批次：{'、'.join(active_batches)}（额度已并入通过线，不抬高基线）")

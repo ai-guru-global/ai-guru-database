@@ -1,12 +1,14 @@
 {
-  "broken_instances": 326,
-  "unique_targets": 127,
-  "total_links": 27844,
-  "updated": "2026-11-24",
+  "broken_instances": 325,
+  "unique_targets": 126,
+  "total_links": 31897,
+  "updated": "2026-11-25",
   "note": "wikilink 断链门禁基线（P2-6）。由 link_gate.py 维护：门禁只允许各项数值下降，不允许上升。修复更多断链后运行 python3 工具/link_gate.py --update-baseline 收紧基线。 2026-10-22 fix_spacing.py 上游已增加 wikilink 目标保护（链接目标内不再做间距处理），原『wikilink 目标含中文』边界类违规一次性出清，间距基线由 1679 收紧至 1057。 2026-11-18 机构深度研究整库 wikilink 化 + fix_spacing 清理 + 三处 frontmatter 补齐后收紧：断链 1467→1438、孤立 746→734、间距 1057→1047（frontmatter 持平 767）。 2026-11-18 孤立页口径修正：README/INDEX 类导航页此前因未去掉 .md 扩展名被误计（441 个），修正后孤立页 734→294；同批次接入 --changed-only 变更文件零容忍模式。 2026-11-18 P0-2 alias 解析：frontmatter aliases 兜底 1112 次（裸别名 141 / 带路径 971），断链 1438→326（唯一目标 495→127）、孤立 294→257；check_wikilinks.py 与 link_gate.py 共用同一 alias 解析口径。",
   "orphan_count": 257,
   "frontmatter_incomplete": 767,
   "spacing_violations": 1046,
   "staging_frontmatter_incomplete": 7,
-  "staging_spacing_violations": 6
+  "staging_spacing_violations": 6,
+  "md_broken": 45,
+  "md_root_relative_bare": 11
 }

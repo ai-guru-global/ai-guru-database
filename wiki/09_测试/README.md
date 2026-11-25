@@ -24,8 +24,8 @@ name_zh: "测试与评估"
 |------|------|----------|
 | [AI_Test_Framework_2026](./01_测试基础/01_AI测试框架2026.md) | AI 测试框架全栈指南 | QA、开发者 |
 | [AI-Testing-in-nutshell](./01_测试基础/02_AI测试简明指南.md) | AI 测试速查：核心概念快速掌握 | 快速入门 |
-| [Contract_Testing](09_测试/01_测试基础/04_Contract_测试.md) | LLM 契约测试：输入输出规范验证 | 开发者、QA |
-| [Test_Data_Management](09_测试/01_测试基础/08_测试数据管理.md) | 测试数据管理：合成数据、边界案例 | 数据工程师 |
+| [Contract_Testing](./01_测试基础/04_Contract_测试.md) | LLM 契约测试：输入输出规范验证 | 开发者、QA |
+| [Test_Data_Management](./01_测试基础/08_测试数据管理.md) | 测试数据管理：合成数据、边界案例 | 数据工程师 |
 
 ## Deep Dive 文档
 
@@ -34,9 +34,9 @@ name_zh: "测试与评估"
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
 | [Promptfoo Deep Dive](./02_测试框架/05_Promptfoo_深入分析.md) | Prompt 测试框架：批量测试、版本对比 | 开发者、Prompt 工程师 |
-| [RAGAS Deep Dive](09_测试/02_测试框架/06_RAGAS_深入分析.md) | RAG 评估框架：答案质量、召回率 | RAG 开发者 |
+| [RAGAS Deep Dive](./02_测试框架/06_RAGAS_深入分析.md) | RAG 评估框架：答案质量、召回率 | RAG 开发者 |
 | [DeepEval Deep Dive](./02_测试框架/01_DeepEval_深入分析.md) | LLM 评估框架：单元测试、集成测试 | 开发者、QA |
-| [Agent 评估深度解析](09_测试/03_Agent评估/01_Agent评估深入分析.md) | Agent 系统评估方法论、基准、LLM-as-Judge、成本约束 | Agent 开发者、QA |
+| [Agent 评估深度解析](./03_Agent评估/01_Agent评估深入分析.md) | Agent 系统评估方法论、基准、LLM-as-Judge、成本约束 | Agent 开发者、QA |
 
 ### 安全测试
 
@@ -49,13 +49,13 @@ name_zh: "测试与评估"
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [Weights & Biases Deep Dive](09_测试/02_测试框架/09_Weights_Biases_深入分析.md) | 实验追踪与可视化 | 研究者、工程师 |
+| [Weights & Biases Deep Dive](./02_测试框架/09_Weights_Biases_深入分析.md) | 实验追踪与可视化 | 研究者、工程师 |
 
 ### 在线评估
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AI 系统 A/B 测试](09_测试/04_在线测试/01_AB测试AI系统.md) | 实验设计、流量分配、统计分析、AI 特殊考量 | 产品经理、工程师 |
+| [AI 系统 A/B 测试](./04_在线测试/01_AB测试AI系统.md) | 实验设计、流量分配、统计分析、AI 特殊考量 | 产品经理、工程师 |
 
 ## 测试类型
 

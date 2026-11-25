@@ -135,7 +135,7 @@ flowchart TB
 3. **训练成本极高**: 每一步 GPU 时间价值数千美元，需要收敛效率最高的优化器。
 4. **Warmup 兼容性**: Adam 与 learning rate warmup 配合更好，SGD 需要更精细的调度。
 
-> 参见 [Distributed Training 2026](07_模型训练/04_分布式训练/03_分布式训练_2026.md) 了解大规模训练中优化器状态如何跨 GPU 分片。
+> 参见 [Distributed Training 2026](../04_分布式训练/03_分布式训练_2026.md) 了解大规模训练中优化器状态如何跨 GPU 分片。
 
 ---
 
@@ -315,7 +315,7 @@ class Adam8bit:
 | 8-bit Adam | 14 GB | ~42 GB |
 | + 混合精度 (BF16 params) | 14 GB | ~28 GB |
 
-> 参见 [Mixed Precision Training](07_模型训练/03_训练优化/04_Mixed_精确度_训练.md) 了解 BF16/FP16 参数如何与优化器配合使用。
+> 参见 [Mixed Precision Training](./04_Mixed_精确度_训练.md) 了解 BF16/FP16 参数如何与优化器配合使用。
 
 ### 2.4 SOAP: Shampoo 的低秩近似
 
@@ -548,7 +548,7 @@ Muon 在多个实验中展示了更好的 **loss per token** 效率：
 | 7B | AdamW | 150 | 2.15 | baseline |
 | 7B | Muon | 150 | 2.05 | -4.7% |
 
-> 参见 [Scaling Laws and Training Dynamics](07_模型训练/03_训练优化/06_扩展定律_and_训练_Dynamics.md) 了解 token efficiency 如何影响 scaling law 预测。
+> 参见 [Scaling Laws and Training Dynamics](./06_扩展定律_and_训练_Dynamics.md) 了解 token efficiency 如何影响 scaling law 预测。
 
 ---
 
@@ -1218,8 +1218,8 @@ class Muon(torch.optim.Optimizer):
 | Shampoo | TPU 原生 | 有限 | Kronecker 因子需分布式 |
 | Sophia | 需自定义 | ZeRO-1/2 | HVP 需额外 backward |
 
-> 参见 [Distributed Training 2026](07_模型训练/04_分布式训练/03_分布式训练_2026.md) 中 FSDP 和 DeepSpeed ZeRO 如何分片优化器状态。
-> 参见 [LLM Architectures](05_大模型/04_LLM架构/05_LLM架构.md) 了解不同 Transformer 组件（Attention、FFN、LayerNorm）对优化器的差异化需求。
+> 参见 [Distributed Training 2026](../04_分布式训练/03_分布式训练_2026.md) 中 FSDP 和 DeepSpeed ZeRO 如何分片优化器状态。
+> 参见 [LLM Architectures](../../05_大模型/04_LLM架构/05_LLM架构.md) 了解不同 Transformer 组件（Attention、FFN、LayerNorm）对优化器的差异化需求。
 
 ---
 
@@ -1240,13 +1240,13 @@ class Muon(torch.optim.Optimizer):
 
 ## 相关文档
 
-- [Distributed Training 2026](07_模型训练/04_分布式训练/03_分布式训练_2026.md) — FSDP、DeepSpeed、优化器状态分片
-- [Mixed Precision Training](07_模型训练/03_训练优化/04_Mixed_精确度_训练.md) — BF16/FP16 与优化器的配合
-- [Training Optimization 2026](07_模型训练/03_训练优化/07_训练_优化_2026.md) — FlashAttention、梯度检查点等全栈优化
-- [Training Monitoring 2026](07_模型训练/07_训练监控/05_训练_监控_2026.md) — 训练监控与实验追踪
-- [Scaling Laws and Training Dynamics](07_模型训练/03_训练优化/06_扩展定律_and_训练_Dynamics.md) — 训练动态与 scaling law
-- [LLM Architectures](05_大模型/04_LLM架构/05_LLM架构.md) — Transformer 架构与优化器的关系
-- [Optimization 基础](03_深度学习/03_优化方法/02_优化.md) — 深度学习优化基础：梯度下降、凸优化、Loss Landscape
+- [Distributed Training 2026](../04_分布式训练/03_分布式训练_2026.md) — FSDP、DeepSpeed、优化器状态分片
+- [Mixed Precision Training](./04_Mixed_精确度_训练.md) — BF16/FP16 与优化器的配合
+- [Training Optimization 2026](./07_训练_优化_2026.md) — FlashAttention、梯度检查点等全栈优化
+- [Training Monitoring 2026](../07_训练监控/05_训练_监控_2026.md) — 训练监控与实验追踪
+- [Scaling Laws and Training Dynamics](./06_扩展定律_and_训练_Dynamics.md) — 训练动态与 scaling law
+- [LLM Architectures](../../05_大模型/04_LLM架构/05_LLM架构.md) — Transformer 架构与优化器的关系
+- [Optimization 基础](../../03_深度学习/03_优化方法/02_优化.md) — 深度学习优化基础：梯度下降、凸优化、Loss Landscape
 
 ---
 

@@ -18,11 +18,11 @@ name_zh: "Spring AI 系统架构设计"
 
 > 中文简称：Spring AI 系统架构设计
 
-> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md)。
+> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../../01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md)。
 >
 > **一句话理解**: Spring AI 架构是 Java 企业级 AI 应用的设计蓝图 —— 用 Spring 的方式将 LLM、向量存储、RAG Pipeline 和 Agent 编排整合到统一的企业架构中。
 
-> **相关文档**: [AI 系统架构全景图](./03_AI_系统_架构_2026.md) | [Spring AI 深度解析](01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md) | [多租户架构](./09_Multi_Tenant_架构.md) | [高可用设计](./06_高可用_2026.md)
+> **相关文档**: [AI 系统架构全景图](./03_AI_系统_架构_2026.md) | [Spring AI 深度解析](../../01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md) | [多租户架构](./09_Multi_Tenant_架构.md) | [高可用设计](./06_高可用_2026.md)
 
 ---
 

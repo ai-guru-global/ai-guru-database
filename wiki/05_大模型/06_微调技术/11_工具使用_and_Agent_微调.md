@@ -55,8 +55,8 @@ name_zh: "Tool Use 与 Agent 微调"
 
 - [PEFT 参数高效微调](./09_PEFT_2026.md) — LoRA/QLoRA 等参数高效方法，Tool-Use 微调常用
 - [微调技术总览](./03_微调技术.md) — SFT/RLHF/DPO 等微调基础
-- [GRPO 与新对齐方法](07_模型训练/06_对齐训练/02_GRPO_and_新型_对齐_Methods.md) — Agent RL 训练中使用的 GRPO 算法详解
-- [Agentic 评估指南](08_模型评估/02_基准测试/01_Agentic_基准测试_指南.md) — BFCL、τ-bench、AgentBench 等 Agent 评估方法
+- [GRPO 与新对齐方法](../../07_模型训练/06_对齐训练/02_GRPO_and_新型_对齐_Methods.md) — Agent RL 训练中使用的 GRPO 算法详解
+- [Agentic 评估指南](../../08_模型评估/02_基准测试/01_Agentic_基准测试_指南.md) — BFCL、τ-bench、AgentBench 等 Agent 评估方法
 
 ---
 
@@ -910,7 +910,7 @@ class AgentEnvironment:
         return -1.0
 ```
 
-关于 GRPO 算法的详细实现，参见 [GRPO 与新对齐方法](07_模型训练/06_对齐训练/02_GRPO_and_新型_对齐_Methods.md)。
+关于 GRPO 算法的详细实现，参见 [GRPO 与新对齐方法](../../07_模型训练/06_对齐训练/02_GRPO_and_新型_对齐_Methods.md)。
 
 ---
 

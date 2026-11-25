@@ -196,7 +196,7 @@ name_zh: "AI Guru 知识库路线图"
 - **质量改进**: 修复错误、优化格式
 - **建议反馈**: 提交 Issue、参与讨论
 
-详见 [贡献指南](治理/CONTRIBUTING.md)
+详见 [贡献指南](./CONTRIBUTING.md)
 
 ---
 

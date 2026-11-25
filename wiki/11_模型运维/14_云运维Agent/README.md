@@ -43,7 +43,7 @@ name_zh: "云运维 Agent"
 ## 与其他章节的关联
 
 ### 前置知识
-- [Agent 生产](15_智能体/README.md) — Agent 架构、Harness 工程
+- [Agent 生产](../../15_智能体/README.md) — Agent 架构、Harness 工程
 - 架构基础设施 — 高可用、容量规划
 - AI Ops — 可观测性、混沌工程
 

@@ -227,7 +227,7 @@ class RedTeamHarness:
         return sum(r["success"] for r in results) / len(results)
 ```
 
-> **行业数据**: 2026 年主流模型未经防御时 Jailbreak 成功率可达 40-88%；加多层防御后可降至 5% 以下。详见 [AI Safety RedTeaming](17_伦理安全/04_AI安全与红队/02_AI安全_RedTeaming.md)。
+> **行业数据**: 2026 年主流模型未经防御时 Jailbreak 成功率可达 40-88%；加多层防御后可降至 5% 以下。详见 [AI Safety RedTeaming](../04_AI安全与红队/02_AI安全_RedTeaming.md)。
 
 ---
 
@@ -350,7 +350,7 @@ text = "John Smith 的邮箱是 john@example.com, 电话 138-0013-8000"
 # 输出: [{"type": "PERSON", ...}, {"type": "EMAIL", ...}, {"type": "PHONE", ...}]
 ```
 
-> **深入阅读**: 详见 [Privacy Preserving AI](17_伦理安全/10_隐私保护AI/02_隐私保护AI.md) 与 [Federated Learning](17_伦理安全/11_联邦学习/01_联邦_学习_深入分析.md)。
+> **深入阅读**: 详见 [Privacy Preserving AI](../10_隐私保护AI/02_隐私保护AI.md) 与 [Federated Learning](../11_联邦学习/01_联邦_学习_深入分析.md)。
 
 ---
 
@@ -451,7 +451,7 @@ flowchart TB
     └── 紧急停止机制 (Kill Switch)
 ```
 
-> **延伸阅读**: [AI 治理与合规 2026](17_伦理安全/03_AI治理/01_AI治理合规2026.md)。
+> **延伸阅读**: [AI 治理与合规 2026](../03_AI治理/01_AI治理合规2026.md)。
 
 ---
 
@@ -529,7 +529,7 @@ def activation_patching(model, clean_input, corrupted_input, target_layer):
     └── 通用"为什么"问答
 ```
 
-> **深入阅读**: [Mechanistic Interpretability](17_伦理安全/05_机制可解释性/02_机制可解释性.md)。
+> **深入阅读**: [Mechanistic Interpretability](../05_机制可解释性/02_机制可解释性.md)。
 
 ---
 
@@ -591,7 +591,7 @@ class SafetyEvalHarness:
         )
 ```
 
-> **延伸阅读**: [Safety Evaluation Framework](17_伦理安全/04_AI安全与红队/05_安全评估_框架.md)。
+> **延伸阅读**: [Safety Evaluation Framework](../04_AI安全与红队/05_安全评估_框架.md)。
 
 ---
 
@@ -653,24 +653,24 @@ AI 伦理与安全 10 条底线:
 ## 相关主题 (Cross References)
 
 ### 本章节深度文档
-- [Value Alignment (价值对齐)](17_伦理安全/02_价值对齐/04_Value_对齐.md) — RLHF/DPO/CAI 完整技术细节
-- [AI Safety & Red Teaming](17_伦理安全/04_AI安全与红队/02_AI安全_RedTeaming.md) — 红队方法论大全
-- [Mechanistic Interpretability](17_伦理安全/05_机制可解释性/02_机制可解释性.md) — 电路追踪与特征分解
-- [Privacy Preserving AI](17_伦理安全/10_隐私保护AI/02_隐私保护AI.md) — 差分隐私与联邦学习
-- [Safety Evaluation Framework](17_伦理安全/04_AI安全与红队/05_安全评估_框架.md) — 评测基准与 Pipeline
-- [AI Governance & Compliance 2026](17_伦理安全/03_AI治理/01_AI治理合规2026.md) — 全球法规详解
-- [AI Security 2026](17_伦理安全/07_AI安全2026/01_AI安全2026.md) — OWASP LLM Top 10 与 Agentic 安全
-- [AI Supply Chain Security](17_伦理安全/08_AI供应链安全/01_AI_AI供应链安全.md) — 数据投毒与后门检测
-- [Deepfake Security](17_伦理安全/09_深度伪造安全/02_深度fake_安全.md) — 深度伪造检测
-- [Federated Learning](17_伦理安全/11_联邦学习/01_联邦_学习_深入分析.md) — 联邦学习深度解读
+- [Value Alignment (价值对齐)](../02_价值对齐/04_Value_对齐.md) — RLHF/DPO/CAI 完整技术细节
+- [AI Safety & Red Teaming](../04_AI安全与红队/02_AI安全_RedTeaming.md) — 红队方法论大全
+- [Mechanistic Interpretability](../05_机制可解释性/02_机制可解释性.md) — 电路追踪与特征分解
+- [Privacy Preserving AI](../10_隐私保护AI/02_隐私保护AI.md) — 差分隐私与联邦学习
+- [Safety Evaluation Framework](../04_AI安全与红队/05_安全评估_框架.md) — 评测基准与 Pipeline
+- [AI Governance & Compliance 2026](../03_AI治理/01_AI治理合规2026.md) — 全球法规详解
+- [AI Security 2026](../07_AI安全2026/01_AI安全2026.md) — OWASP LLM Top 10 与 Agentic 安全
+- [AI Supply Chain Security](../08_AI供应链安全/01_AI_AI供应链安全.md) — 数据投毒与后门检测
+- [Deepfake Security](../09_深度伪造安全/02_深度fake_安全.md) — 深度伪造检测
+- [Federated Learning](../11_联邦学习/01_联邦_学习_深入分析.md) — 联邦学习深度解读
 
 ### 跨章节关联
-- [LLM 架构](05_大模型/04_LLM架构/10_LLM_基础_简明指南.md) — 理解被对齐的对象
+- [LLM 架构](../../05_大模型/04_LLM架构/10_LLM_基础_简明指南.md) — 理解被对齐的对象
 - [微调技术](../05_大模型/06_微调技术/) — SFT 是对齐的第一步
-- [深度强化学习](06_强化学习/README.md) — PPO 是 RLHF 的核心算法
-- [Prompt Engineering](05_大模型/07_提示工程/17_Prompt_工程_简明指南.md) — 理解 Prompt Injection 攻击面
-- [AI Agent](15_智能体/01_Agent基础/11_Agent_简明指南.md) — Agentic AI 安全是新前线
-- [Model Evaluation](08_模型评估/01_评估基础/02_评估_简明指南.md) — 评测方法论基础
+- [深度强化学习](../../06_强化学习/README.md) — PPO 是 RLHF 的核心算法
+- [Prompt Engineering](../../05_大模型/07_提示工程/17_Prompt_工程_简明指南.md) — 理解 Prompt Injection 攻击面
+- [AI Agent](../../15_智能体/01_Agent基础/11_Agent_简明指南.md) — Agentic AI 安全是新前线
+- [Model Evaluation](../../08_模型评估/01_评估基础/02_评估_简明指南.md) — 评测方法论基础
 
 ### 同系列速览
 - [本章节 README](README.md) — 章节导航

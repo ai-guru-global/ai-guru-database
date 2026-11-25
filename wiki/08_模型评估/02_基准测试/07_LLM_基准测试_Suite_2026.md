@@ -16,7 +16,7 @@ name_zh: "LLM Benchmark Suite 2026 — 大语言模型评测基准全览"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # LLM Benchmark Suite 2026 — 大语言模型评测基准全览
 
@@ -800,7 +800,7 @@ SWE-bench 是目前最贴近真实软件工程的代码评测基准。
 | Claude 3.5 Sonnet + Agent | ~49% | ~72% | 2024-10 |
 | o3 + SWE-Agent | — | ~76% | 2025-01 |
 
-> **相关文档**: 关于代码生成模型的详细评测，请参阅 [Global_LLM_Ecosystem/README.md](05_大模型/13_全球LLM生态/README.md)。
+> **相关文档**: 关于代码生成模型的详细评测，请参阅 [Global_LLM_Ecosystem/README.md](../../05_大模型/13_全球LLM生态/README.md)。
 
 ---
 
@@ -1518,8 +1518,8 @@ settings:
 | 长上下文评测 | [08_Long_上下文_评估.md](./08_Long_上下文_评估.md) | Needle-in-Haystack, RULER, LongBench 等长窗口专项评测 |
 | 多模态评测 | [09_多模态_评估_基准测试.md](./09_多模态_评估_基准测试.md) | MMMU, MathVista, ChartQA 等视觉+语言基准 |
 | LLM-as-Judge | [03_LLM_as_Judge_深入分析.md](../04_评估工具/03_LLM_as_Judge_深入分析.md) | GPT-4 评委、Pairwise Comparison、评委偏差分析 |
-| 全球 LLM 生态 | [Global_LLM_Ecosystem/README.md](05_大模型/13_全球LLM生态/README.md) | GPT-4, Claude, Gemini 等模型的全面对比 |
-| 中国 LLM 生态 | [Chinese_LLM_Ecosystem/README.md](05_大模型/14_中国LLM生态/README.md) | 通义千问、DeepSeek、GLM 等中国模型评测 |
+| 全球 LLM 生态 | [Global_LLM_Ecosystem/README.md](../../05_大模型/13_全球LLM生态/README.md) | GPT-4, Claude, Gemini 等模型的全面对比 |
+| 中国 LLM 生态 | [Chinese_LLM_Ecosystem/README.md](../../05_大模型/14_中国LLM生态/README.md) | 通义千问、DeepSeek、GLM 等中国模型评测 |
 
 ---
 

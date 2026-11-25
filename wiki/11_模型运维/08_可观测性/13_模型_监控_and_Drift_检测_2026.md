@@ -274,10 +274,10 @@ writer.write(file=profile.view())
 
 ### 项目内导航
 
-- [MLOps Pipeline](11_模型运维/01_MLOps基础/05_MLOps_流水线.md) — MLOps 整体架构与成熟度模型
-- [AI Observability Guide](11_模型运维/08_可观测性/03_AI_可观测性_指南.md) — 基础设施与推理层面的实时监控
-- [Model Evaluation](08_模型评估/01_评估基础/06_模型评估.md) — 静态评估与基准测试方法
-- [LLMOps 2026 Best Practices](11_模型运维/10_LLMOps_大模型运维/04_LLM_生产_流水线_2026.md) — 生成式 AI 专属运维实践
+- [MLOps Pipeline](../01_MLOps基础/05_MLOps_流水线.md) — MLOps 整体架构与成熟度模型
+- [AI Observability Guide](./03_AI_可观测性_指南.md) — 基础设施与推理层面的实时监控
+- [Model Evaluation](../../08_模型评估/01_评估基础/06_模型评估.md) — 静态评估与基准测试方法
+- [LLMOps 2026 Best Practices](../10_LLMOps_大模型运维/04_LLM_生产_流水线_2026.md) — 生成式 AI 专属运维实践
 
 ### 关键工具链
 

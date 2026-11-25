@@ -14,11 +14,11 @@ name_zh: "Java Cloud SDK AI 集成指南"
 
 > 中文简称：Java Cloud SDK AI 集成指南
 
-> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md)。
+> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../../01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md)。
 >
 > **一句话理解**: 用 Java SDK 接入 AWS Bedrock、Azure AI、Google Vertex AI、国内云平台 AI 服务 —— 在 Spring Boot 中统一管理多云 AI 调用，实现企业级多云 AI 基础设施。
 
-> **相关文档**: [Cloud Ops Agent](./01_云_产品_Ops_2026.md) | [Spring AI 深度解析](01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md) | [AI Gateway 概述](12_架构基建/11_AI网关/01_AI网关_2026.md) | [Java 生态 AI 概览](01_数学基础/11_Java生态与AI/02_Java生态与AI_概览.md)
+> **相关文档**: [Cloud Ops Agent](./01_云_产品_Ops_2026.md) | [Spring AI 深度解析](../../01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md) | [AI Gateway 概述](../../12_架构基建/11_AI网关/01_AI网关_2026.md) | [Java 生态 AI 概览](../../01_数学基础/11_Java生态与AI/02_Java生态与AI_概览.md)
 
 ---
 

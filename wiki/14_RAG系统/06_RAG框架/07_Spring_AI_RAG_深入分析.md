@@ -18,11 +18,11 @@ name_zh: "Spring AI RAG 深度解析"
 
 > 中文简称：Spring AI RAG 深度解析
 
-> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md)。
+> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../../01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md)。
 >
 > **一句话理解**: Spring AI RAG 是用 Spring 的方式构建检索增强生成系统 —— 从文档加载、分块策略、向量存储到检索增强的完整 Pipeline，让 Java 企业应用拥有知识库问答能力。
 
-> **相关文档**: [Spring AI 深度解析](01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md) | [Spring AI 架构设计](12_架构基建/02_架构概览/Spring_AI_Architecture) | [Milvus 深度解析](14_RAG系统/03_向量数据库/03_Milvus_深入分析.md) | [RAG 高级专题](14_RAG系统/04_高级RAG/12_RAG_高级_2026.md) | [RAG 基础入门](14_RAG系统/README.md)
+> **相关文档**: [Spring AI 深度解析](../../01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md) | [Spring AI 架构设计](12_架构基建/02_架构概览/Spring_AI_Architecture) | [Milvus 深度解析](../03_向量数据库/03_Milvus_深入分析.md) | [RAG 高级专题](../04_高级RAG/12_RAG_高级_2026.md) | [RAG 基础入门](../README.md)
 
 ---
 

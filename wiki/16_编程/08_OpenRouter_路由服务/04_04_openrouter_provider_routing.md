@@ -407,7 +407,7 @@ OpenRouter 还有一些自动路由行为：
 |------|------|
 | [03 - 模型与 Provider 生态](./03_03_openrouter_models_providers.md) | Provider 与模型元数据 |
 | [05 - API 参考](./05_05_openrouter_api_reference.md) | provider 参数详解 |
-| [08 - Prompt Caching](16_编程/08_OpenRouter_路由服务/08_08_openrouter_prompt_caching_optimization.md) | Sticky Routing 与缓存亲和 |
+| [08 - Prompt Caching](./08_08_openrouter_prompt_caching_optimization.md) | Sticky Routing 与缓存亲和 |
 | [11 - 安全与隐私](./11_11_openrouter_security_privacy.md) | ZDR 与数据治理路由 |
 
 ---

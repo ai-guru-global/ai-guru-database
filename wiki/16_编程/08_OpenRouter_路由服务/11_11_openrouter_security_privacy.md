@@ -19,7 +19,7 @@ name_zh: "安全、隐私与数据治理"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 title: 安全、隐私与数据治理
 description: '# 安全、隐私与数据治理'
@@ -324,7 +324,7 @@ DELETE /api/v1/keys/{key_id}
 | 文档 | 关系 |
 |------|------|
 | [04 - 智能路由](./04_04_openrouter_provider_routing.md) | ZDR 与 data_collection 路由参数 |
-| [08 - Prompt Caching](16_编程/08_OpenRouter_路由服务/08_08_openrouter_prompt_caching_optimization.md) | BYOK 与成本控制 |
+| [08 - Prompt Caching](./08_08_openrouter_prompt_caching_optimization.md) | BYOK 与成本控制 |
 | [12 - 企业级实践](./12_12_openrouter_enterprise_advanced.md) | Provisioning Keys 与 Key 管理 |
 | [02 - 快速接入](./02_02_openrouter_quickstart_setup.md) | API Key 创建与配置 |
 

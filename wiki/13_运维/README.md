@@ -50,7 +50,7 @@ name_zh: "运维与可观测性"
 | [GPU_OOM_Troubleshooting_Guide](./02_SRE与可靠性/11_GPU_OOM_故障排查_指南.md) | 区分四类 GPU OOM 并给出修复阶梯 | AI 训练/推理 SRE |
 | [LLM_Inference_Slow_Unavailable_Runbook](./02_SRE与可靠性/19_LLM推理_Slow_Unavailable_操作手册.md) | LLM 推理延迟/不可用分层排障 | 推理 SRE |
 | [LLM_Inference_SLO_Guide](./02_SRE与可靠性/18_LLM推理_SLO_指南.md) | LLM 推理 SLO、SLI、错误预算与发布门控 | SRE |
-| [LLM_Inference_Observability_Stack](13_运维/06_可观测性/02_LLM推理_可观测性_Stack.md) | TTFT/TPOT/KV Cache 指标与 Prometheus/Grafana | 可观测性工程师 |
+| [LLM_Inference_Observability_Stack](./06_可观测性/02_LLM推理_可观测性_Stack.md) | TTFT/TPOT/KV Cache 指标与 Prometheus/Grafana | 可观测性工程师 |
 
 ## 事故响应 (Incident Response)
 
@@ -82,7 +82,7 @@ name_zh: "运维与可观测性"
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AI 系统混沌工程](13_运维/02_SRE与可靠性/07_AI混沌工程_系统.md) | AI 平台故障注入实验设计与工具 | 可靠性工程师 |
+| [AI 系统混沌工程](./02_SRE与可靠性/07_AI混沌工程_系统.md) | AI 平台故障注入实验设计与工具 | 可靠性工程师 |
 | [Chaos_Engineering_AI](./02_SRE与可靠性/06_Chaos_工程_AI.md) | AI 系统混沌工程：故障注入、韧性测试 | 可靠性工程师 |
 
 ## 成本治理
@@ -99,7 +99,7 @@ name_zh: "运维与可观测性"
 |------|------|----------|
 | [Prometheus + Grafana Deep Dive](../11_模型运维/08_可观测性/15_Prometheus_Grafana_深入分析.md) | AI 系统监控与可视化基座：GPU/推理/训练指标 | SRE、平台工程师 |
 | [Guardrails Deep Dive](./02_SRE与可靠性/13_Guardrails_深入分析.md) | LLM 输入/输出安全护栏 | 安全工程师 |
-| [PromptLayer Deep Dive](11_模型运维/08_可观测性/16_PromptLayer_深入分析.md) | Prompt 版本管理与追踪 | Prompt 工程师 |
+| [PromptLayer Deep Dive](../11_模型运维/08_可观测性/16_PromptLayer_深入分析.md) | Prompt 版本管理与追踪 | Prompt 工程师 |
 
 > 其余工具深度解析（DVC/LakeFS/Feast/MLflow/ClearML/Kubeflow/Prefect/LangSmith/Helicone/Phoenix/Braintrust + 3 篇 Observability + CI_CD_Pipeline + LLM_Production_Pipeline）已迁入 [[11_模型运维/README]]。
 
@@ -109,11 +109,11 @@ name_zh: "运维与可观测性"
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AI Stack 生产工具链总览](12_架构基建/03_AI技术栈/09_AI技术栈_生产_工具链.md) | AI Stack 工具全景与生命周期 | 所有 AI Stack 用户 |
-| [AI Stack 容器与运行时](12_架构基建/03_AI技术栈/01_AI技术栈_容器_Runtime_指南.md) | nerdctl / crictl / ctr / docker / podman | SRE、平台工程师 |
-| [AI Stack GPU 监控](12_架构基建/03_AI技术栈/04_AI技术栈_GPU_监控_指南.md) | nvidia-smi / ppu-smi / rocm-smi / pmon | 运维、SRE |
-| [AI Stack K8s 编排](12_架构基建/03_AI技术栈/06_AI技术栈_K8s_Operations_指南.md) | kubectl / helm 排障与包管理 | K8s 工程师 |
-| [AI Stack 专属工具](12_架构基建/README.md) | stackops / aioController | AI Stack 运维 |
+| [AI Stack 生产工具链总览](../12_架构基建/03_AI技术栈/09_AI技术栈_生产_工具链.md) | AI Stack 工具全景与生命周期 | 所有 AI Stack 用户 |
+| [AI Stack 容器与运行时](../12_架构基建/03_AI技术栈/01_AI技术栈_容器_Runtime_指南.md) | nerdctl / crictl / ctr / docker / podman | SRE、平台工程师 |
+| [AI Stack GPU 监控](../12_架构基建/03_AI技术栈/04_AI技术栈_GPU_监控_指南.md) | nvidia-smi / ppu-smi / rocm-smi / pmon | 运维、SRE |
+| [AI Stack K8s 编排](../12_架构基建/03_AI技术栈/06_AI技术栈_K8s_Operations_指南.md) | kubectl / helm 排障与包管理 | K8s 工程师 |
+| [AI Stack 专属工具](../12_架构基建/README.md) | stackops / aioController | AI Stack 运维 |
 
 ---
 

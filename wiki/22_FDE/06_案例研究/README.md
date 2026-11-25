@@ -9,9 +9,9 @@
 
 | 文件 | 内容 |
 |---|---|
-| [Palantir案例详解](22_FDE/06_案例研究/01_Palantir案例详解.md) | FDE 鼻祖的 20 余年实践（含 CIA/空客/NHS 争议） |
-| [OpenAI FDE实践](22_FDE/06_案例研究/02_OpenAI_FDE实践.md) | Deployment Company（2026.5.11）的运作模式 |
-| [DeployCo案例](22_FDE/06_案例研究/03_DeployCo案例.md) | OpenAI DeployCo + Anthropic-Blackstone-Goldman 模型公司下场做交付 |
+| [Palantir案例详解](./01_Palantir案例详解.md) | FDE 鼻祖的 20 余年实践（含 CIA/空客/NHS 争议） |
+| [OpenAI FDE实践](./02_OpenAI_FDE实践.md) | Deployment Company（2026.5.11）的运作模式 |
+| [DeployCo案例](./03_DeployCo案例.md) | OpenAI DeployCo + Anthropic-Blackstone-Goldman 模型公司下场做交付 |
 | Anthropic金融FDE | 高盛/黑石合作案例分析（规划中） |
 | 国内FDE案例集 | 中国本土 FDE 落地实践（规划中） |
 | 政企AI落地标杆 | 成功与失败案例深度复盘（规划中） |

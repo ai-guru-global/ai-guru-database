@@ -22,18 +22,18 @@ name_zh: "RAG高级实践 2026"
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
-| [12_RAG_高级_2026.md](14_RAG系统/04_高级RAG/12_RAG_高级_2026.md) | 混合检索、重排序、Agentic RAG | 进阶学习 |
-| [Haystack Deep Dive](14_RAG系统/06_RAG框架/03_Haystack_深入分析.md) | 模块化 RAG 框架：Pipeline 架构、80+ 组件、评估工具 | 开发者、架构师 |
-| [LlamaIndex Deep Dive](14_RAG系统/06_RAG框架/06_LlamaIndex_深入分析.md) | 数据连接框架：100+ 数据源、高级检索、评估工具 | 开发者、数据工程师 |
-| [Dify Deep Dive](14_RAG系统/06_RAG框架/01_Dify_深入分析.md) | 开源 LLM 应用平台：RAG+Agent+工作流、零代码 | 产品经理、开发者 |
-| [LangFlow Deep Dive](14_RAG系统/06_RAG框架/05_LangFlow_深入分析.md) | LangChain 可视化 IDE：拖拽构建 Pipeline | 快速原型、可视化 |
-| [Flowise Deep Dive](14_RAG系统/06_RAG框架/02_Flowise_深入分析.md) | 低代码 Chatflow 平台：极简体验 | 非技术用户、快速原型 |
-| [Chroma Deep Dive](14_RAG系统/03_向量数据库/01_Chroma_深入分析.md) | 轻量级向量数据库：零配置、本地优先、LLM 入门 | 原型开发、学习 |
-| [Qdrant Deep Dive](14_RAG系统/03_向量数据库/04_Qdrant_深入分析.md) | 高性能向量数据库：混合检索、生产级性能 | 生产环境 |
-| [Milvus Deep Dive](14_RAG系统/03_向量数据库/03_Milvus_深入分析.md) | 超大规模向量数据库：万亿向量、分布式、云原生 | 超大规模 |
-| [Typesense Deep Dive](14_RAG系统/03_向量数据库/06_Typesense_深入分析.md) | 极速矢量搜索：毫秒级响应、模糊匹配 | 搜索优先 |
-| [Weaviate Deep Dive](14_RAG系统/03_向量数据库/07_Weaviate_深入分析.md) | 混合检索向量数据库：GraphQL、原生多模态 | 多模态、生产级 |
-| [Sentence Transformers Deep Dive](14_RAG系统/02_嵌入技术/06_Sentence_Transformers_深入分析.md) | 开源 Embedding 模型：多语言支持、100+ 模型 | RAG、语义搜索 |
+| [12_RAG_高级_2026.md](./12_RAG_高级_2026.md) | 混合检索、重排序、Agentic RAG | 进阶学习 |
+| [Haystack Deep Dive](../06_RAG框架/03_Haystack_深入分析.md) | 模块化 RAG 框架：Pipeline 架构、80+ 组件、评估工具 | 开发者、架构师 |
+| [LlamaIndex Deep Dive](../06_RAG框架/06_LlamaIndex_深入分析.md) | 数据连接框架：100+ 数据源、高级检索、评估工具 | 开发者、数据工程师 |
+| [Dify Deep Dive](../06_RAG框架/01_Dify_深入分析.md) | 开源 LLM 应用平台：RAG+Agent+工作流、零代码 | 产品经理、开发者 |
+| [LangFlow Deep Dive](../06_RAG框架/05_LangFlow_深入分析.md) | LangChain 可视化 IDE：拖拽构建 Pipeline | 快速原型、可视化 |
+| [Flowise Deep Dive](../06_RAG框架/02_Flowise_深入分析.md) | 低代码 Chatflow 平台：极简体验 | 非技术用户、快速原型 |
+| [Chroma Deep Dive](../03_向量数据库/01_Chroma_深入分析.md) | 轻量级向量数据库：零配置、本地优先、LLM 入门 | 原型开发、学习 |
+| [Qdrant Deep Dive](../03_向量数据库/04_Qdrant_深入分析.md) | 高性能向量数据库：混合检索、生产级性能 | 生产环境 |
+| [Milvus Deep Dive](../03_向量数据库/03_Milvus_深入分析.md) | 超大规模向量数据库：万亿向量、分布式、云原生 | 超大规模 |
+| [Typesense Deep Dive](../03_向量数据库/06_Typesense_深入分析.md) | 极速矢量搜索：毫秒级响应、模糊匹配 | 搜索优先 |
+| [Weaviate Deep Dive](../03_向量数据库/07_Weaviate_深入分析.md) | 混合检索向量数据库：GraphQL、原生多模态 | 多模态、生产级 |
+| [Sentence Transformers Deep Dive](../02_嵌入技术/06_Sentence_Transformers_深入分析.md) | 开源 Embedding 模型：多语言支持、100+ 模型 | RAG、语义搜索 |
 
 ## 框架选型
 

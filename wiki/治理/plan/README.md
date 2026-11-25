@@ -25,8 +25,8 @@ name_zh: "项目规划"
 
 | 文档 | 内容 | 更新频率 |
 |------|------|--------|
-| [Project Comprehensive Evaluation 2026](治理/Project_Comprehensive_Evaluation_2026.md) | 项目全面评估报告（角色视角） | 季度 |
-| [Project Structure Evaluation 2026](治理/Project_Structure_Evaluation_2026.md) | 项目结构评估报告（数据驱动） | 季度 |
+| [Project Comprehensive Evaluation 2026](../Project_Comprehensive_Evaluation_2026.md) | 项目全面评估报告（角色视角） | 季度 |
+| [Project Structure Evaluation 2026](../Project_Structure_Evaluation_2026.md) | 项目结构评估报告（数据驱动） | 季度 |
 | [[治理/plan/Task_List_P0_2026_10|P0 任务清单 2026-10]]（进行中） | 体检 P0 深度专题执行清单（Deep Research / Computer Use / Agent 记忆） | 专题完成时 |
 | [[治理/plan/Task_List_P1_2026_10|P1 任务清单 2026-10]]（进行中） | 体检 P1 专题执行清单（算力基建 / 具身 VLA / 视频生成） | 专题完成时 |
 
@@ -74,7 +74,7 @@ name_zh: "项目规划"
 
 ## 与其他章节的关联
 
-- [90_Learn](90_学习/README.md) — 学习路径规划
+- [90_Learn](../../90_学习/README.md) — 学习路径规划
 - [治理/Import_Guide](../Import_Guide.md) — 项目导入指南
 - [治理/Document_Templates](../Document_Templates.md) — 文档模板规范
 

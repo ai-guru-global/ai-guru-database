@@ -70,35 +70,35 @@ name_zh: "AI 编程与 LLM 网关专题 — OpenRouter & OpenCode"
 
 | 序号 | 文档 | 内容概要 | 适用角色 | 阅读耗时 |
 |:---:|------|---------|---------|---------|
-| 01 | [OpenRouter 概述与核心架构](16_编程/08_OpenRouter_路由服务/01_01_openrouter_overview_architecture.md) | 项目定位、核心能力矩阵、统一网关架构、与竞品对比 | 所有工程师 | 25min |
-| 02 | [快速接入与环境配置](16_编程/08_OpenRouter_路由服务/02_02_openrouter_quickstart_setup.md) | SDK 安装、API Key 配置、首次请求、OpenAI SDK 兼容 | 所有工程师 | 15min |
-| 03 | [模型与 Provider 生态](16_编程/08_OpenRouter_路由服务/03_03_openrouter_models_providers.md) | 400+ 模型矩阵、模型元数据 API、模型变体、定价体系 | AI 工程师、架构师 | 25min |
-| 04 | [智能路由与 Provider 选择](16_编程/08_OpenRouter_路由服务/04_04_openrouter_provider_routing.md) | 负载均衡、Provider 排序、性能阈值、Model Fallback、Auto Router | 架构师、SRE | 30min |
-| 05 | [API 参考与请求/响应规范](16_编程/08_OpenRouter_路由服务/05_05_openrouter_api_reference.md) | 完整请求 Schema、响应格式、参数详解、Error Handling | 研发工程师 | 30min |
-| 06 | [Structured Outputs 与 Tool Calling](16_编程/08_OpenRouter_路由服务/06_06_openrouter_structured_outputs_tools.md) | JSON Schema 约束、Tool/Function Calling、Response Healing | 研发工程师 | 20min |
-| 07 | [插件体系与 Web Search](16_编程/08_OpenRouter_路由服务/07_07_openrouter_plugins_web_search.md) | Web 搜索插件、File Parser、Context Compression、引擎选择 | 研发工程师 | 25min |
-| 08 | [Prompt Caching 与成本优化](16_编程/08_OpenRouter_路由服务/08_08_openrouter_prompt_caching_optimization.md) | Provider 级缓存策略、Sticky Routing、TTL 配置、成本分析 | 架构师、AI 工程师 | 25min |
-| 09 | [框架集成与生态系统](16_编程/08_OpenRouter_路由服务/09_09_openrouter_frameworks_integrations.md) | OpenAI SDK、Vercel AI、LangChain、LlamaIndex、Aider/Cline | 研发工程师 | 20min |
-| 10 | [流式传输与多模态输入](16_编程/08_OpenRouter_路由服务/10_10_openrouter_streaming_multimedia.md) | SSE Streaming、Stream Cancellation、Image/PDF/Audio 输入 | 研发工程师 | 20min |
-| 11 | [安全、隐私与数据治理](16_编程/08_OpenRouter_路由服务/11_11_openrouter_security_privacy.md) | 数据收集策略、Zero Data Retention、EU 合规、BYOK、API Key 管理 | 安全工程师、架构师 | 25min |
-| 12 | [企业级高级实践](16_编程/08_OpenRouter_路由服务/12_12_openrouter_enterprise_advanced.md) | Provisioning Keys、Credits 管理、Rate Limits、App Attribution、最佳实践 | SRE、平台工程师 | 30min |
+| 01 | [OpenRouter 概述与核心架构](../08_OpenRouter_路由服务/01_01_openrouter_overview_architecture.md) | 项目定位、核心能力矩阵、统一网关架构、与竞品对比 | 所有工程师 | 25min |
+| 02 | [快速接入与环境配置](../08_OpenRouter_路由服务/02_02_openrouter_quickstart_setup.md) | SDK 安装、API Key 配置、首次请求、OpenAI SDK 兼容 | 所有工程师 | 15min |
+| 03 | [模型与 Provider 生态](../08_OpenRouter_路由服务/03_03_openrouter_models_providers.md) | 400+ 模型矩阵、模型元数据 API、模型变体、定价体系 | AI 工程师、架构师 | 25min |
+| 04 | [智能路由与 Provider 选择](../08_OpenRouter_路由服务/04_04_openrouter_provider_routing.md) | 负载均衡、Provider 排序、性能阈值、Model Fallback、Auto Router | 架构师、SRE | 30min |
+| 05 | [API 参考与请求/响应规范](../08_OpenRouter_路由服务/05_05_openrouter_api_reference.md) | 完整请求 Schema、响应格式、参数详解、Error Handling | 研发工程师 | 30min |
+| 06 | [Structured Outputs 与 Tool Calling](../08_OpenRouter_路由服务/06_06_openrouter_structured_outputs_tools.md) | JSON Schema 约束、Tool/Function Calling、Response Healing | 研发工程师 | 20min |
+| 07 | [插件体系与 Web Search](../08_OpenRouter_路由服务/07_07_openrouter_plugins_web_search.md) | Web 搜索插件、File Parser、Context Compression、引擎选择 | 研发工程师 | 25min |
+| 08 | [Prompt Caching 与成本优化](../08_OpenRouter_路由服务/08_08_openrouter_prompt_caching_optimization.md) | Provider 级缓存策略、Sticky Routing、TTL 配置、成本分析 | 架构师、AI 工程师 | 25min |
+| 09 | [框架集成与生态系统](../08_OpenRouter_路由服务/09_09_openrouter_frameworks_integrations.md) | OpenAI SDK、Vercel AI、LangChain、LlamaIndex、Aider/Cline | 研发工程师 | 20min |
+| 10 | [流式传输与多模态输入](../08_OpenRouter_路由服务/10_10_openrouter_streaming_multimedia.md) | SSE Streaming、Stream Cancellation、Image/PDF/Audio 输入 | 研发工程师 | 20min |
+| 11 | [安全、隐私与数据治理](../08_OpenRouter_路由服务/11_11_openrouter_security_privacy.md) | 数据收集策略、Zero Data Retention、EU 合规、BYOK、API Key 管理 | 安全工程师、架构师 | 25min |
+| 12 | [企业级高级实践](../08_OpenRouter_路由服务/12_12_openrouter_enterprise_advanced.md) | Provisioning Keys、Credits 管理、Rate Limits、App Attribution、最佳实践 | SRE、平台工程师 | 30min |
 
 ### OpenCode 系列 (21-32)
 
 | 序号 | 文档 | 内容概要 | 适用角色 | 阅读耗时 |
 |:---:|------|---------|---------|---------|
-| 21 | [OpenCode 概述与核心架构](16_编程/07_OpenCode_开源编程/01_21_opencode_overview_architecture.md) | 项目定位、核心能力、系统架构、与竞品对比 | 所有工程师 | 25min |
-| 22 | [安装与快速开始](16_编程/07_OpenCode_开源编程/02_22_opencode_installation_quickstart.md) | 多平台安装、配置初始化、首次使用、Hello World | 所有工程师 | 15min |
-| 23 | [Provider 与模型配置](16_编程/07_OpenCode_开源编程/03_23_opencode_providers_models.md) | 75+ Provider 支持、API Key 配置、模型选择、本地模型 | AI 工程师 | 20min |
-| 24 | [Agent 系统架构](16_编程/07_OpenCode_开源编程/04_24_opencode_agents_system.md) | Agent 模式、多 Agent 协作、上下文管理、记忆系统 | 研发工程师 | 30min |
-| 25 | [工具与权限管理](16_编程/07_OpenCode_开源编程/05_25_opencode_tools_permissions.md) | 内置工具、权限控制、确认模式、安全策略 | 研发工程师 | 25min |
-| 26 | [MCP 集成指南](16_编程/07_OpenCode_开源编程/06_26_opencode_mcp_integration.md) | MCP 协议、Servers 配置、Stdio/SSE 传输、工具发现 | 研发工程师 | 30min |
-| 27 | [LSP 与代码格式化](16_编程/07_OpenCode_开源编程/07_27_opencode_lsp_formatters.md) | LSP 支持、Diagnostics、Formatter 配置、代码修复 | 研发工程师 | 20min |
-| 28 | [Skills 与自定义命令](16_编程/07_OpenCode_开源编程/08_28_opencode_skills_commands.md) | 内置 Skills、自定义 Skill 开发、命令系统、快捷键 | 研发工程师 | 25min |
-| 29 | [TUI 界面与定制](16_编程/07_OpenCode_开源编程/09_29_opencode_tui_customization.md) | 终端界面、主题配置、布局定制、交互模式 | 所有工程师 | 20min |
-| 30 | [Server 模式与 API](16_编程/07_OpenCode_开源编程/10_30_opencode_server_api.md) | HTTP Server、WebSocket、API 端点、远程连接 | 架构师、SRE | 25min |
-| 31 | [GitHub 自动化](16_编程/07_OpenCode_开源编程/11_31_opencode_github_automation.md) | PR 创建、Issue 管理、代码审查、CI/CD 集成 | 研发工程师 | 25min |
-| 32 | [高级主题与最佳实践](16_编程/07_OpenCode_开源编程/12_32_opencode_advanced_topics.md) | 性能优化、调试技巧、故障排查、企业部署 | 架构师、SRE | 30min |
+| 21 | [OpenCode 概述与核心架构](../07_OpenCode_开源编程/01_21_opencode_overview_architecture.md) | 项目定位、核心能力、系统架构、与竞品对比 | 所有工程师 | 25min |
+| 22 | [安装与快速开始](../07_OpenCode_开源编程/02_22_opencode_installation_quickstart.md) | 多平台安装、配置初始化、首次使用、Hello World | 所有工程师 | 15min |
+| 23 | [Provider 与模型配置](../07_OpenCode_开源编程/03_23_opencode_providers_models.md) | 75+ Provider 支持、API Key 配置、模型选择、本地模型 | AI 工程师 | 20min |
+| 24 | [Agent 系统架构](../07_OpenCode_开源编程/04_24_opencode_agents_system.md) | Agent 模式、多 Agent 协作、上下文管理、记忆系统 | 研发工程师 | 30min |
+| 25 | [工具与权限管理](../07_OpenCode_开源编程/05_25_opencode_tools_permissions.md) | 内置工具、权限控制、确认模式、安全策略 | 研发工程师 | 25min |
+| 26 | [MCP 集成指南](../07_OpenCode_开源编程/06_26_opencode_mcp_integration.md) | MCP 协议、Servers 配置、Stdio/SSE 传输、工具发现 | 研发工程师 | 30min |
+| 27 | [LSP 与代码格式化](../07_OpenCode_开源编程/07_27_opencode_lsp_formatters.md) | LSP 支持、Diagnostics、Formatter 配置、代码修复 | 研发工程师 | 20min |
+| 28 | [Skills 与自定义命令](../07_OpenCode_开源编程/08_28_opencode_skills_commands.md) | 内置 Skills、自定义 Skill 开发、命令系统、快捷键 | 研发工程师 | 25min |
+| 29 | [TUI 界面与定制](../07_OpenCode_开源编程/09_29_opencode_tui_customization.md) | 终端界面、主题配置、布局定制、交互模式 | 所有工程师 | 20min |
+| 30 | [Server 模式与 API](../07_OpenCode_开源编程/10_30_opencode_server_api.md) | HTTP Server、WebSocket、API 端点、远程连接 | 架构师、SRE | 25min |
+| 31 | [GitHub 自动化](../07_OpenCode_开源编程/11_31_opencode_github_automation.md) | PR 创建、Issue 管理、代码审查、CI/CD 集成 | 研发工程师 | 25min |
+| 32 | [高级主题与最佳实践](../07_OpenCode_开源编程/12_32_opencode_advanced_topics.md) | 性能优化、调试技巧、故障排查、企业部署 | 架构师、SRE | 30min |
 
 ---
 
@@ -157,16 +157,16 @@ graph TB
 ## 快速入口
 
 **初学者 / 新手上路**：
-1. [01 - 概述与架构](16_编程/08_OpenRouter_路由服务/01_01_openrouter_overview_architecture.md) → [02 - 快速接入](16_编程/08_OpenRouter_路由服务/02_02_openrouter_quickstart_setup.md) → [03 - 模型与 Provider](16_编程/08_OpenRouter_路由服务/03_03_openrouter_models_providers.md)
+1. [01 - 概述与架构](../08_OpenRouter_路由服务/01_01_openrouter_overview_architecture.md) → [02 - 快速接入](../08_OpenRouter_路由服务/02_02_openrouter_quickstart_setup.md) → [03 - 模型与 Provider](../08_OpenRouter_路由服务/03_03_openrouter_models_providers.md)
 
 **AI 应用工程师**：
-1. [05 - API 参考](16_编程/08_OpenRouter_路由服务/05_05_openrouter_api_reference.md) → [06 - Structured Outputs](16_编程/08_OpenRouter_路由服务/06_06_openrouter_structured_outputs_tools.md) → [07 - 插件与 Web Search](16_编程/08_OpenRouter_路由服务/07_07_openrouter_plugins_web_search.md) → [10 - 流式与多模态](16_编程/08_OpenRouter_路由服务/10_10_openrouter_streaming_multimedia.md)
+1. [05 - API 参考](../08_OpenRouter_路由服务/05_05_openrouter_api_reference.md) → [06 - Structured Outputs](../08_OpenRouter_路由服务/06_06_openrouter_structured_outputs_tools.md) → [07 - 插件与 Web Search](../08_OpenRouter_路由服务/07_07_openrouter_plugins_web_search.md) → [10 - 流式与多模态](../08_OpenRouter_路由服务/10_10_openrouter_streaming_multimedia.md)
 
 **架构师 / SRE**：
-1. [04 - 智能路由](16_编程/08_OpenRouter_路由服务/04_04_openrouter_provider_routing.md) → [08 - Prompt Caching](16_编程/08_OpenRouter_路由服务/08_08_openrouter_prompt_caching_optimization.md) → [11 - 安全隐私](16_编程/08_OpenRouter_路由服务/11_11_openrouter_security_privacy.md) → [12 - 企业高级](16_编程/08_OpenRouter_路由服务/12_12_openrouter_enterprise_advanced.md)
+1. [04 - 智能路由](../08_OpenRouter_路由服务/04_04_openrouter_provider_routing.md) → [08 - Prompt Caching](../08_OpenRouter_路由服务/08_08_openrouter_prompt_caching_optimization.md) → [11 - 安全隐私](../08_OpenRouter_路由服务/11_11_openrouter_security_privacy.md) → [12 - 企业高级](../08_OpenRouter_路由服务/12_12_openrouter_enterprise_advanced.md)
 
 **框架集成开发者**：
-1. [09 - 框架集成](16_编程/08_OpenRouter_路由服务/09_09_openrouter_frameworks_integrations.md) → [06 - Tool Calling](16_编程/08_OpenRouter_路由服务/06_06_openrouter_structured_outputs_tools.md) → [07 - Web Search](16_编程/08_OpenRouter_路由服务/07_07_openrouter_plugins_web_search.md)
+1. [09 - 框架集成](../08_OpenRouter_路由服务/09_09_openrouter_frameworks_integrations.md) → [06 - Tool Calling](../08_OpenRouter_路由服务/06_06_openrouter_structured_outputs_tools.md) → [07 - Web Search](../08_OpenRouter_路由服务/07_07_openrouter_plugins_web_search.md)
 
 ---
 

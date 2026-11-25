@@ -613,12 +613,12 @@ flowchart TB
 
 | 相关论文 | 关系 | 详见 |
 |---------|------|------|
-| Kaplan et al. Scaling Laws | Chinchilla 修正了其结论 | [05_扩展定律_深入分析.md](20_论文精读/03_规模扩展/05_扩展定律_深入分析.md) |
-| GPT-3 | 使用了 Kaplan 路线（欠训练） | [02_GPT3_深入分析.md](20_论文精读/03_规模扩展/02_GPT3_深入分析.md) |
-| LLaMA | 首个大规模遵循 Chinchilla 的开源模型 | [04_LLaMA_深入分析.md](20_论文精读/02_模型架构/04_LLaMA_深入分析.md) |
-| DeepSeek-V3 | 在 MoE 架构中隐含遵循 Chinchilla 精神 | [01_深度Seek_V3_Technical_报告.md](20_论文精读/09_前沿探索/01_深度Seek_V3_Technical_报告.md) |
-| Scaling Laws 与训练动力学 | 系统性综述 | [../07_模型训练/06_扩展定律_and_训练_Dynamics.md](07_模型训练/03_训练优化/06_扩展定律_and_训练_Dynamics.md) |
-| MoE 深度解读 | MoE 模型的 Scaling 特殊性 | [06_混合专家_深入分析.md](20_论文精读/02_模型架构/06_混合专家_深入分析.md) |
+| Kaplan et al. Scaling Laws | Chinchilla 修正了其结论 | [05_扩展定律_深入分析.md](./05_扩展定律_深入分析.md) |
+| GPT-3 | 使用了 Kaplan 路线（欠训练） | [02_GPT3_深入分析.md](./02_GPT3_深入分析.md) |
+| LLaMA | 首个大规模遵循 Chinchilla 的开源模型 | [04_LLaMA_深入分析.md](../02_模型架构/04_LLaMA_深入分析.md) |
+| DeepSeek-V3 | 在 MoE 架构中隐含遵循 Chinchilla 精神 | [01_深度Seek_V3_Technical_报告.md](../09_前沿探索/01_深度Seek_V3_Technical_报告.md) |
+| Scaling Laws 与训练动力学 | 系统性综述 | [../07_模型训练/06_扩展定律_and_训练_Dynamics.md](../../07_模型训练/03_训练优化/06_扩展定律_and_训练_Dynamics.md) |
+| MoE 深度解读 | MoE 模型的 Scaling 特殊性 | [06_混合专家_深入分析.md](../02_模型架构/06_混合专家_深入分析.md) |
 
 ---
 

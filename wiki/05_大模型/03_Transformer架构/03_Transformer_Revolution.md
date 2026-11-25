@@ -438,8 +438,8 @@ Transformer 的计算复杂度为 $O(n^2 d)$,内存复杂度为 $O(n^2)$,在长�
 ## 7. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [深度学习基础](03_深度学习/02_神经网络核心/09_神经网络核心.md): 反向传播、优化器
-- [注意力机制](05_大模型/03_Transformer架构/03_Transformer_Revolution.md): Seq2Seq Attention
+- [深度学习基础](../../03_深度学习/02_神经网络核心/09_神经网络核心.md): 反向传播、优化器
+- [注意力机制](./03_Transformer_Revolution.md): Seq2Seq Attention
 
 ### 后续推荐
 - [大语言模型架构](../04_LLM架构/05_LLM架构.md): GPT/BERT/T5 详解
@@ -448,8 +448,8 @@ Transformer 的计算复杂度为 $O(n^2 d)$,内存复杂度为 $O(n^2)$,在长�
 - [提示工程](../07_提示工程/16_Prompt工程.md): Few-shot, CoT
 
 ### 跨领域应用
-- [Vision Transformer](04_计算机视觉/01_CV基础/05_ViT_深入分析.md): Transformer 在 CV 的应用
-- [多模态模型](04_计算机视觉/08_多模态视觉/03_多模态视觉.md): CLIP, Flamingo
+- [Vision Transformer](../../04_计算机视觉/01_CV基础/05_ViT_深入分析.md): Transformer 在 CV 的应用
+- [多模态模型](../../04_计算机视觉/08_多模态视觉/03_多模态视觉.md): CLIP, Flamingo
 
 ---
 

@@ -16,7 +16,7 @@ name_zh: "AI 智能体"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # AI 智能体 (AI Agents)
 
@@ -1617,7 +1617,7 @@ async def list_tools():
 | MCP | 97M+ | OpenAI, Google, Microsoft, AWS |
 | A2A | 25M+ | Google + 50+合作伙伴 |
 
-**参考**: [Agent Protocols 2026深度解析](15_智能体/01_Agent基础/07_Agent_协议_2026.md)
+**参考**: [Agent Protocols 2026深度解析](./07_Agent_协议_2026.md)
 
 ## 9. Agent 基础设施架构 (2026)
 
@@ -1933,19 +1933,19 @@ jobs:
 ## 10. 与其他主题的关联 (Connections)
 
 ### 10.1 前置知识
-- **大语言模型**: [LLM架构](05_大模型/04_LLM架构/05_LLM架构.md) —— Agent 的"大脑"
-- **提示工程**: [Prompt Engineering](05_大模型/07_提示工程/16_Prompt工程.md) —— 设计 Agent 的系统提示
-- **强化学习**: [RL Foundations](06_强化学习/01_强化学习基础/03_RL基础.md) —— Agent 的决策理论基础
-- **深度强化学习**: [Deep RL](06_强化学习/README.md) —— RLHF 训练 Agent
+- **大语言模型**: [LLM架构](../../05_大模型/04_LLM架构/05_LLM架构.md) —— Agent 的"大脑"
+- **提示工程**: [Prompt Engineering](../../05_大模型/07_提示工程/16_Prompt工程.md) —— 设计 Agent 的系统提示
+- **强化学习**: [RL Foundations](../../06_强化学习/01_强化学习基础/03_RL基础.md) —— Agent 的决策理论基础
+- **深度强化学习**: [Deep RL](../../06_强化学习/README.md) —— RLHF 训练 Agent
 
 ### 10.2 相关技术
 - **RAG**: [检索增强生成] —— Agent 的记忆系统基础
-- **Fine-tuning**: [Fine-tuning Techniques](05_大模型/06_微调技术/03_微调技术.md) —— 定制化 Agent 能力
-- **多模态**: [Multimodal Vision](04_计算机视觉/08_多模态视觉/03_多模态视觉.md) —— 视觉感知能力
+- **Fine-tuning**: [Fine-tuning Techniques](../../05_大模型/06_微调技术/03_微调技术.md) —— 定制化 Agent 能力
+- **多模态**: [Multimodal Vision](../../04_计算机视觉/08_多模态视觉/03_多模态视觉.md) —— 视觉感知能力
 
 ### 10.3 应用领域
-- **软件工程**: [Deployment & Inference](10_部署推理/01_部署基础/03_部署推理.md)
-- **MLOps**: [MLOps Pipeline](11_模型运维/01_MLOps基础/05_MLOps_流水线.md) —— Agent 在 CI/CD 中的应用
+- **软件工程**: [Deployment & Inference](../../10_部署推理/01_部署基础/03_部署推理.md)
+- **MLOps**: [MLOps Pipeline](../../11_模型运维/01_MLOps基础/05_MLOps_流水线.md) —— Agent 在 CI/CD 中的应用
 
 ## 12. 面试高频问题 (Interview FAQs)
 

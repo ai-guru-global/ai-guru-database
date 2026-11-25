@@ -22,11 +22,11 @@ name_zh: "模型评估"
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
-| [Model Evaluation](08_模型评估/01_评估基础/06_模型评估.md) | 分类/回归/排序指标、LLM 评估基准、统计显著性 | 系统学习 |
-| [Model Evaluation for Dummy](08_模型评估/README.md) | 评估概念的简化版解释 | 初学者 |
-| [Evaluation-in-nutshell](08_模型评估/01_评估基础/02_评估_简明指南.md) | 模型评估速成指南 | 快速入门 |
-| [Evaluation Automation 2026](08_模型评估/05_自动化评估/02_评估_自动化_2026.md) | CI/CD 中的自动评估流水线 | 进阶 |
-| [Online Evaluation](08_模型评估/04_评估工具/07_在线_评估.md) | A/B 测试、影子流量、金丝雀发布 | 进阶 |
+| [Model Evaluation](./01_评估基础/06_模型评估.md) | 分类/回归/排序指标、LLM 评估基准、统计显著性 | 系统学习 |
+| [Model Evaluation for Dummy](./README.md) | 评估概念的简化版解释 | 初学者 |
+| [Evaluation-in-nutshell](./01_评估基础/02_评估_简明指南.md) | 模型评估速成指南 | 快速入门 |
+| [Evaluation Automation 2026](./05_自动化评估/02_评估_自动化_2026.md) | CI/CD 中的自动评估流水线 | 进阶 |
+| [Online Evaluation](./04_评估工具/07_在线_评估.md) | A/B 测试、影子流量、金丝雀发布 | 进阶 |
 | [LLM-as-Judge 深度解析](./04_评估工具/03_LLM_as_Judge_深入分析.md) | 单点评分、成对比较、Rubric 评估、偏差缓解 | 进阶 |
 | [Multimodal Evaluation Benchmarks](./02_基准测试/09_多模态_评估_基准测试.md) | MMMU/MathVista/DocVQA/POPE 等视觉评测 | 进阶 |
 | [Long Context Evaluation](./02_基准测试/08_Long_上下文_评估.md) | 128K+ 长上下文模型评估方法 | 进阶 |
@@ -37,8 +37,8 @@ name_zh: "模型评估"
 | [OpenCompass Deep Dive](./04_评估工具/08_OpenCompass_深入分析.md) | 上海 AI Lab 一站式评测平台：中文/多模态/CompassRank | 进阶 |
 | Fairness Evaluation | 公平性评估入门 | 初学者 |
 | LLM 评估与测试大白话 | BBH、Arena、红队测试、CI 集成评估、A/B 测试框架大白话 | 初学者 |
-| [**LLM 评估方法论 2026**](08_模型评估/03_LLM评估/03_LLM评估_2026.md) | 自动化基准、人工评估、LLM-as-Judge、评估流水线 | 所有从业者 |
-| [**RAG 评估深度解析**](08_模型评估/03_LLM评估/05_RAG评估_深入分析.md) | 检索/生成评估、RAGAS/Ares/TruLens、LLM-as-Judge 偏见控制、A/B 测试 | RAG 开发者 |
+| [**LLM 评估方法论 2026**](./03_LLM评估/03_LLM评估_2026.md) | 自动化基准、人工评估、LLM-as-Judge、评估流水线 | 所有从业者 |
+| [**RAG 评估深度解析**](./03_LLM评估/05_RAG评估_深入分析.md) | 检索/生成评估、RAGAS/Ares/TruLens、LLM-as-Judge 偏见控制、A/B 测试 | RAG 开发者 |
 | [A/B 测试方案模板](./05_自动化评估/01_AB测试模板.md) | 标准化 ML 模型 A/B 测试方案模板 | 算法 / 产品 |
 | [模型评估报告模板](./05_自动化评估/03_评估_报告_模板.md) | 标准化模型评估报告模板 | 算法工程师 |
 
@@ -47,8 +47,8 @@ name_zh: "模型评估"
 ## 学习路径
 
 - **快速入门** → 待补充：02_评估_简明指南.md
-- **系统学习** → [Model Evaluation](08_模型评估/01_评估基础/06_模型评估.md)（涵盖分类、回归、生成任务指标）
-- **简化版** → [Model Evaluation for Dummy](08_模型评估/README.md)
+- **系统学习** → [Model Evaluation](./01_评估基础/06_模型评估.md)（涵盖分类、回归、生成任务指标）
+- **简化版** → [Model Evaluation for Dummy](./README.md)
 
 ---
 
@@ -56,21 +56,21 @@ name_zh: "模型评估"
 
 ### 前置知识
 - [机器学习](../02_机器学习/README.md) — 偏差-方差权衡、过拟合概念
-- [概率统计](01_数学基础/03_概率统计/02_概率统计.md) — 统计检验、置信区间
+- [概率统计](../01_数学基础/03_概率统计/02_概率统计.md) — 统计检验、置信区间
 - [模型训练](../07_模型训练/) — 训练过程与评估的关系
 
 ### 进阶方向
 - [MLOps 流水线](../11_模型运维/) — 评估自动化和持续监控
 - [测试](../09_测试/README.md) — AI 系统测试框架
 - [AI Ops](../13_运维/README.md) — 模型性能监控与告警
-- [价值对齐](17_伦理安全/02_价值对齐/04_Value_对齐.md) — 公平性评估
+- [价值对齐](../17_伦理安全/02_价值对齐/04_Value_对齐.md) — 公平性评估
 
 ---
 
 ## 规划中的内容
 
-- [x] ✅ [Evaluation Automation 2026](08_模型评估/05_自动化评估/02_评估_自动化_2026.md) — CI/CD 自动评估流程
-- [x] ✅ [Online Evaluation](08_模型评估/04_评估工具/07_在线_评估.md) — A/B 测试、影子流量、金丝雀发布
+- [x] ✅ [Evaluation Automation 2026](./05_自动化评估/02_评估_自动化_2026.md) — CI/CD 自动评估流程
+- [x] ✅ [Online Evaluation](./04_评估工具/07_在线_评估.md) — A/B 测试、影子流量、金丝雀发布
 - [x] ✅ [LLM-as-Judge 深度解析](./04_评估工具/03_LLM_as_Judge_深入分析.md) — LLM 评委评估方法论
 - [ ] 领域特定评估（医疗/金融/法律场景评估规范）
 - [ ] 评估数据集构建（高质量评估集的采集与维护）

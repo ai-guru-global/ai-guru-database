@@ -15,7 +15,7 @@ name_zh: "MLOps 速成指南"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # MLOps 速成指南
 
@@ -364,10 +364,10 @@ flowchart TB
 |------|------|
 | 完整架构 | [05_MLOps_流水线.md](./05_MLOps_流水线.md) |
 | 入门指南 | MLOps_Pipeline_for_dummy.md |
-| 部署推理 | [../Deployment_Inference/06_推理_简明指南.md](10_部署推理/01_部署基础/06_推理_简明指南.md) |
-| AI Ops | [../AI_Ops/01_AI运维2026.md](13_运维/01_AIOps基础/01_AI运维2026.md) |
-| SRE 实践 | [../AI_Ops/22_SRE_for_AI_系统.md](13_运维/02_SRE与可靠性/22_SRE_for_AI_系统.md) |
-| 成本优化 | [../01_AI_成本优化_2026.md](12_架构基建/02_架构概览/01_AI_成本优化_2026.md) |
+| 部署推理 | [../Deployment_Inference/06_推理_简明指南.md](../../10_部署推理/01_部署基础/06_推理_简明指南.md) |
+| AI Ops | [../AI_Ops/01_AI运维2026.md](../../13_运维/01_AIOps基础/01_AI运维2026.md) |
+| SRE 实践 | [../AI_Ops/22_SRE_for_AI_系统.md](../../13_运维/02_SRE与可靠性/22_SRE_for_AI_系统.md) |
+| 成本优化 | [../01_AI_成本优化_2026.md](../../12_架构基建/02_架构概览/01_AI_成本优化_2026.md) |
 
 ---
 

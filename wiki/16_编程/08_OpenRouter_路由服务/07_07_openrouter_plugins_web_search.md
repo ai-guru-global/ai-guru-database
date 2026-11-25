@@ -362,7 +362,7 @@ PDF 和其他文件可通过 URL 或 Base64 编码发送，File Parser 自动提
 |------|------|
 | [06 - Structured Outputs](./06_06_openrouter_structured_outputs_tools.md) | Response Healing 与工具调用 |
 | [05 - API 参考](./05_05_openrouter_api_reference.md) | plugins 请求参数详解 |
-| [08 - Prompt Caching](16_编程/08_OpenRouter_路由服务/08_08_openrouter_prompt_caching_optimization.md) | 成本优化策略 |
+| [08 - Prompt Caching](./08_08_openrouter_prompt_caching_optimization.md) | 成本优化策略 |
 | [10 - 流式传输](./10_10_openrouter_streaming_multimedia.md) | 插件与流式的配合 |
 
 ---

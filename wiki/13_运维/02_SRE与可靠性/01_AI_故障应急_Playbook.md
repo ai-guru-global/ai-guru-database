@@ -16,7 +16,7 @@ name_zh: "AI 系统事故响应手册"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # AI 系统事故响应手册
 
@@ -731,10 +731,10 @@ MTTR_DISTRIBUTION = {
 ## 🔗 相关主题
 
 - [SRE for AI Systems](./22_SRE_for_AI_系统.md) — SLI/SLO 设计与错误预算
-- [AI Ops 2026](13_运维/01_AIOps基础/01_AI运维2026.md) — 智能运维完整体系
-- [Cloud Ops 2026](11_模型运维/14_云运维Agent/01_云_产品_Ops_2026.md) — 云产品运维 Agent
-- [部署与推理](10_部署推理/01_部署基础/06_推理_简明指南.md) — 推理优化
-- [AI 测试](09_测试/01_测试基础/02_AI测试简明指南.md) — AI 测试体系
+- [AI Ops 2026](../01_AIOps基础/01_AI运维2026.md) — 智能运维完整体系
+- [Cloud Ops 2026](../../11_模型运维/14_云运维Agent/01_云_产品_Ops_2026.md) — 云产品运维 Agent
+- [部署与推理](../../10_部署推理/01_部署基础/06_推理_简明指南.md) — 推理优化
+- [AI 测试](../../09_测试/01_测试基础/02_AI测试简明指南.md) — AI 测试体系
 
 > 📅 **最后更新**：2026-04-11 | **方法论**：PagerDuty Incident Response + Google SRE + AI 生产实践
 

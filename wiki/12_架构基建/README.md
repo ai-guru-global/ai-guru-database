@@ -27,12 +27,12 @@ name_zh: "架构与基础设施"
 | [Token 工厂 2026](./02_架构概览/11_Token_工厂_2026.md) | 从 IDC 到智能量产：液冷/RDMA、K8s 推理组件栈、KServe+vLLM 落地四步 | 基础设施工程师、平台负责人 |
 | [Capacity Planning 2026](./02_架构概览/05_Capacity_Planning_2026.md) | QPS/并发模型、GPU 显存估算、成本预测 | 架构师、SRE |
 | [AI SRE Runbook](../13_运维/02_SRE与可靠性/03_AI_SRE_操作手册.md) | AI 系统 SLO/SLI、GPU 容量规划、事故响应、模型回滚、灾备 | AI SRE、平台负责人 |
-| [High Availability 2026](12_架构基建/02_架构概览/06_高可用_2026.md) | 多活架构、故障转移、灾备演练 | 运维工程师 |
-| [AI Cost Optimization 2026](12_架构基建/02_架构概览/01_AI_成本优化_2026.md) | 模型量化、缓存策略、批处理优化 | 成本敏感型团队 |
+| [High Availability 2026](./02_架构概览/06_高可用_2026.md) | 多活架构、故障转移、灾备演练 | 运维工程师 |
+| [AI Cost Optimization 2026](./02_架构概览/01_AI_成本优化_2026.md) | 模型量化、缓存策略、批处理优化 | 成本敏感型团队 |
 | [Edge AI 2026](./07_硬件与算力/07_边缘_AI_2026.md) | 边缘部署、模型压缩、端侧推理 | 移动端/IoT 开发者 |
 | [Multi Tenant Architecture](./02_架构概览/09_Multi_Tenant_架构.md) | 租户隔离、资源配额、计费计量 | SaaS 架构师 |
 | [Spring AI Architecture](./02_架构概览/10_Spring_AI_架构.md) | Spring AI 企业级架构设计 | Java 生态开发者 |
-| [AI Stack Deep Dive](12_架构基建/03_AI技术栈/02_AI技术栈_深入分析.md) | 阿里云 AI Stack 软硬一体推理一体机（V2.14.0） | 政企 IT 决策者、基础设施工程师 |
+| [AI Stack Deep Dive](./03_AI技术栈/02_AI技术栈_深入分析.md) | 阿里云 AI Stack 软硬一体推理一体机（V2.14.0） | 政企 IT 决策者、基础设施工程师 |
 | [Future AI Hardware 2026](./07_硬件与算力/08_未来_Computing_硬件_2026.md) | 前沿硬件：硅光子技术、LPU、NPU 霸权、生物计算 | 架构师、前瞻研究 |
 | CDI Deep Dive | 容器设备接口标准：GPU/国产加速器如何统一接入 K8s 容器 | 基础设施工程师、平台 SRE |
 | CDI 小白版 | 用「酒店入住单」「万能插头」比喻讲懂 CDI | 初学者、非基础设施背景 |
@@ -48,10 +48,10 @@ name_zh: "架构与基础设施"
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
-| [Kubernetes 核心组件深度解析](12_架构基建/04_Kubernetes核心/01_Kubernetes核心_Components_深入分析.md) | 控制平面与节点组件原理、交互链路、故障排查 | K8s 工程师、SRE |
-| [Kubernetes 网络深度解析](12_架构基建/04_Kubernetes核心/02_Kubernetes_网络_深入分析.md) | CNI、Service、DNS、Ingress、NetworkPolicy 与排障 | 网络工程师、SRE |
-| [Kubernetes 存储深度解析](12_架构基建/04_Kubernetes核心/04_Kubernetes_存储_深入分析.md) | PV/PVC/StorageClass、CSI、StatefulSet 与分布式存储 | 存储工程师、SRE |
-| [Kubernetes 可观测性栈](12_架构基建/04_Kubernetes核心/03_Kubernetes_可观测性_Stack.md) | Metrics/Logs/Traces 三支柱与阿里云专有云集成 | 可观测性工程师 |
+| [Kubernetes 核心组件深度解析](./04_Kubernetes核心/01_Kubernetes核心_Components_深入分析.md) | 控制平面与节点组件原理、交互链路、故障排查 | K8s 工程师、SRE |
+| [Kubernetes 网络深度解析](./04_Kubernetes核心/02_Kubernetes_网络_深入分析.md) | CNI、Service、DNS、Ingress、NetworkPolicy 与排障 | 网络工程师、SRE |
+| [Kubernetes 存储深度解析](./04_Kubernetes核心/04_Kubernetes_存储_深入分析.md) | PV/PVC/StorageClass、CSI、StatefulSet 与分布式存储 | 存储工程师、SRE |
+| [Kubernetes 可观测性栈](./04_Kubernetes核心/03_Kubernetes_可观测性_Stack.md) | Metrics/Logs/Traces 三支柱与阿里云专有云集成 | 可观测性工程师 |
 | [阿里云专有云 K8s 上下文](./06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文.md) | ACK 专有版/敏捷版、天基、ASCM、飞天底座映射 | 专有云运维、工单处理 |
 
 ### 阿里云 AI 平台
@@ -66,14 +66,14 @@ name_zh: "架构与基础设施"
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
-| [AI Stack 生产工具链总览](12_架构基建/03_AI技术栈/09_AI技术栈_生产_工具链.md) | 工具全景速查、生命周期流程图、按角色索引 | 所有 AI Stack 用户 |
-| [容器与运行时](12_架构基建/03_AI技术栈/01_AI技术栈_容器_Runtime_指南.md) | nerdctl / crictl / ctr / docker / podman 选型与命令 | SRE、平台工程师 |
-| [GPU 监控](12_架构基建/03_AI技术栈/04_AI技术栈_GPU_监控_指南.md) | nvidia-smi / ppu-smi / rocm-smi / pmon 监控与排障 | 运维、性能工程师 |
-| [模型下载与管理](12_架构基建/03_AI技术栈/08_AI技术栈_模型_Management_指南.md) | huggingface-cli / modelscope / git-lfs 下载与组织 | 模型工程师 |
-| [推理服务](12_架构基建/03_AI技术栈/05_AI技术栈_推理_服务_指南.md) | vLLM / SGLang / Ollama / llama-server 启动与运维 | 推理工程师 |
-| [训练启动器](12_架构基建/03_AI技术栈/10_AI技术栈_训练_发布ers_指南.md) | torchrun / accelerate / deepspeed / swift 分布式训练 | 训练工程师 |
-| [K8s 编排](12_架构基建/03_AI技术栈/06_AI技术栈_K8s_Operations_指南.md) | kubectl / helm 日常排障与包管理 | K8s 工程师 |
-| [AI Stack 专属工具](12_架构基建/README.md) | stackops / aioController 运维与生命周期 | AI Stack 运维 |
+| [AI Stack 生产工具链总览](./03_AI技术栈/09_AI技术栈_生产_工具链.md) | 工具全景速查、生命周期流程图、按角色索引 | 所有 AI Stack 用户 |
+| [容器与运行时](./03_AI技术栈/01_AI技术栈_容器_Runtime_指南.md) | nerdctl / crictl / ctr / docker / podman 选型与命令 | SRE、平台工程师 |
+| [GPU 监控](./03_AI技术栈/04_AI技术栈_GPU_监控_指南.md) | nvidia-smi / ppu-smi / rocm-smi / pmon 监控与排障 | 运维、性能工程师 |
+| [模型下载与管理](./03_AI技术栈/08_AI技术栈_模型_Management_指南.md) | huggingface-cli / modelscope / git-lfs 下载与组织 | 模型工程师 |
+| [推理服务](./03_AI技术栈/05_AI技术栈_推理_服务_指南.md) | vLLM / SGLang / Ollama / llama-server 启动与运维 | 推理工程师 |
+| [训练启动器](./03_AI技术栈/10_AI技术栈_训练_发布ers_指南.md) | torchrun / accelerate / deepspeed / swift 分布式训练 | 训练工程师 |
+| [K8s 编排](./03_AI技术栈/06_AI技术栈_K8s_Operations_指南.md) | kubectl / helm 日常排障与包管理 | K8s 工程师 |
+| [AI Stack 专属工具](./README.md) | stackops / aioController 运维与生命周期 | AI Stack 运维 |
 | [AI Stack MLOps 参考架构](./03_AI技术栈/07_AI技术栈_MLOps_参考_架构.md) | AI Stack + MLflow + ACK 私有化 MLOps 流水线 | 平台架构师 |
 
 ### AI 基础设施（领域知识）
@@ -142,11 +142,11 @@ name_zh: "架构与基础设施"
 ## 学习路径
 
 - **架构概览** → [AI System Architecture 2026](./02_架构概览/03_AI_系统_架构_2026.md)（1-2 小时）
-- **容量规划** → [Capacity Planning 2026](./02_架构概览/05_Capacity_Planning_2026.md) + [AI Cost Optimization 2026](12_架构基建/02_架构概览/01_AI_成本优化_2026.md)
-- **高可用设计** → [High Availability 2026](12_架构基建/02_架构概览/06_高可用_2026.md) + [Multi Tenant Architecture](./02_架构概览/09_Multi_Tenant_架构.md)
+- **容量规划** → [Capacity Planning 2026](./02_架构概览/05_Capacity_Planning_2026.md) + [AI Cost Optimization 2026](./02_架构概览/01_AI_成本优化_2026.md)
+- **高可用设计** → [High Availability 2026](./02_架构概览/06_高可用_2026.md) + [Multi Tenant Architecture](./02_架构概览/09_Multi_Tenant_架构.md)
 - **边缘场景** → [Edge AI 2026](./07_硬件与算力/07_边缘_AI_2026.md)
 - **Java 生态** → [Spring AI Architecture](./02_架构概览/10_Spring_AI_架构.md)
-- **私有化 AI 一体机** → [AI Stack Deep Dive](12_架构基建/03_AI技术栈/02_AI技术栈_深入分析.md) → [AI Stack 生产工具链总览](12_架构基建/03_AI技术栈/09_AI技术栈_生产_工具链.md)
+- **私有化 AI 一体机** → [AI Stack Deep Dive](./03_AI技术栈/02_AI技术栈_深入分析.md) → [AI Stack 生产工具链总览](./03_AI技术栈/09_AI技术栈_生产_工具链.md)
 - **异构设备接入** → CDI Deep Dive（GPU/昇腾/寒武纪统一容器化）
 - **GPU 硬件级切分** → [MIG Deep Dive](./07_硬件与算力/11_MIG_深入分析.md)（A100/H100/PPU 多租户强隔离）+ [HAMi Deep Dive](./03_AI技术栈/11_HAMi_深入分析.md)（软件超卖）
 - **GPU 共享与池化** → [HAMi Deep Dive](./03_AI技术栈/11_HAMi_深入分析.md) → [HAMi 运维指南](./03_AI技术栈/12_HAMi_Operation_指南.md)
@@ -158,7 +158,7 @@ name_zh: "架构与基础设施"
 
 ### 前置知识
 - [深度学习](../03_深度学习/README.md) — 理解模型计算特性
-- [部署推理](10_部署推理/README.md) — 推理优化是架构设计的基础
+- [部署推理](../10_部署推理/README.md) — 推理优化是架构设计的基础
 - [RAG 系统](../14_RAG系统/README.md) — 检索系统的架构考量
 
 ### 进阶方向

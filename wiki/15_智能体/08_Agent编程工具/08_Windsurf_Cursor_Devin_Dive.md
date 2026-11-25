@@ -446,7 +446,7 @@ Agentic Coding 工具发展趋势
 
 ## 相关资源
 
-- [Claude Code](16_编程/05_开发工具/02_Claude_Code_深入分析.md)
+- [Claude Code](../../16_编程/05_开发工具/02_Claude_Code_深入分析.md)
 - OpenCode
 - [Cursor 官网](https://cursor.sh)
 - [Windsurf 官网](https://codeium.com/windsurf)

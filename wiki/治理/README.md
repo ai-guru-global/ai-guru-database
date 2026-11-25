@@ -141,7 +141,7 @@ flowchart LR
 | [cheatsheet-rag-systems](./cheatsheets/cheatsheet-rag-systems.md) | RAG 系统构建 |
 | [cheatsheet-security-defense](./cheatsheets/cheatsheet-security-defense.md) | 安全与防御 |
 
-详见: [cheatsheets/索引.md](22_FDE/索引.md)
+详见: [cheatsheets/索引.md](../22_FDE/索引.md)
 
 ---
 
@@ -182,7 +182,7 @@ flowchart LR
 |------|------|
 | [治理/hot.md](./hot.md) | **最近新增与高价值页面**——记录最新的内容更新、概念卡片和大白话专题页，是了解"最近发生了什么"的入口 |
 | [治理/ROADMAP.md](./ROADMAP.md) | **项目路线图**——年度/季度规划、愿景、任务状态跟踪 |
-| [索引.md](22_FDE/索引.md) | 治理目录的自动生成索引页 |
+| [索引.md](../22_FDE/索引.md) | 治理目录的自动生成索引页 |
 | [log.md](./log.md) | 项目变更日志，记录重大结构和内容变动 |
 
 ### 规范与约定类
@@ -192,7 +192,7 @@ flowchart LR
 | [AGENTS.md](./AGENTS.md) | **AI Agent 协作指令**——所有 AI agent 在本仓库工作时的统一规则，含生产安全风险评估规范（最高优先级） |
 | [Import_Guide.md](./Import_Guide.md) | **导入指南**——如何将外部资源导入知识库的标准化流程 |
 | [Document_Templates.md](./Document_Templates.md) | **文档模板规范**——各类文档的标准格式模板（速查表、概念页、for_dummy 等） |
-| [治理/CONTRIBUTING.md](治理/CONTRIBUTING.md) | **贡献指南**——如何 Fork、创建分支、提交 PR |
+| [治理/CONTRIBUTING.md](./CONTRIBUTING.md) | **贡献指南**——如何 Fork、创建分支、提交 PR |
 | [Production_Safety_Policy.md](./Production_Safety_Policy.md) | **生产安全策略**——生产环境操作的安全规范 |
 | [_directory-conventions.md](./_meta/_directory-conventions.md) | **目录结构规范**——知识库目录命名和组织约定 |
 | [治理/KNOWN_ISSUES.md](./KNOWN_ISSUES.md) | **已知问题**——当前存在的已知问题和待修复项 |
@@ -202,7 +202,7 @@ flowchart LR
 
 ## _meta 元文件说明
 
-> **📁 位置变更**: 所有 `_` 开头的元文件已归组到 [_meta/](22_FDE/索引.md) 子目录。详见 [_meta/索引.md](22_FDE/索引.md)。
+> **📁 位置变更**: 所有 `_` 开头的元文件已归组到 [_meta/](../22_FDE/索引.md) 子目录。详见 [_meta/索引.md](../22_FDE/索引.md)。
 
 以 `_` 开头的文件是**自动生成或半自动维护的元文件**，记录知识库的健康状态、审计结果和评估报告。它们不面向终端读者，而是面向项目维护者和 AI 工具链。所有元文件统一存放在 [`_meta/`](22_FDE/索引.md) 子目录下。
 
@@ -300,7 +300,7 @@ flowchart LR
 
 如果你想添加或修改内容：
 
-1. 阅读 [治理/CONTRIBUTING.md](治理/CONTRIBUTING.md) 了解贡献流程
+1. 阅读 [治理/CONTRIBUTING.md](./CONTRIBUTING.md) 了解贡献流程
 2. 参考 [Document_Templates.md](./Document_Templates.md) 使用标准模板
 3. 遵循 [Import_Guide.md](./Import_Guide.md) 的导入流程
 4. 遵守 [AGENTS.md](./AGENTS.md) 中的协作规则（特别是生产安全规范）
@@ -319,7 +319,7 @@ flowchart LR
 
 如果你需要快速查阅某个技术领域：
 
-1. 进入 [cheatsheets/](22_FDE/索引.md) 选择对应速查表
+1. 进入 [cheatsheets/](../22_FDE/索引.md) 选择对应速查表
 2. 在 [notes/AI_Full_Stack_Concepts.md](./notes/AI_Full_Stack_Concepts.md) 中搜索术语
 3. 在 [notes/AI_Concept_Knowledge_Graph.md](./notes/AI_Concept_Knowledge_Graph.md) 中探索概念关系
 
@@ -417,7 +417,7 @@ flowchart LR
 
 欢迎为 AI Guru 知识库贡献内容！请遵循以下流程：
 
-1. **阅读规范**: [治理/CONTRIBUTING.md](治理/CONTRIBUTING.md) → [AGENTS.md](./AGENTS.md) → [Document_Templates.md](./Document_Templates.md)
+1. **阅读规范**: [治理/CONTRIBUTING.md](./CONTRIBUTING.md) → [AGENTS.md](./AGENTS.md) → [Document_Templates.md](./Document_Templates.md)
 2. **Fork 仓库**: 创建你的 feature 分支
 3. **遵循模板**: 使用 [Document_Templates.md](./Document_Templates.md) 中的标准模板
 4. **导入流程**: 新增外部资源时遵循 [Import_Guide.md](./Import_Guide.md)

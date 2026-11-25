@@ -16,17 +16,17 @@ name_zh: "Java AI 测试实践"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Java AI 测试实践
 
 > 中文简称：Java AI 测试实践
 
-> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md)。
+> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../../01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md)。
 >
 > **一句话理解**: 用 JUnit 5、Spring Boot Test、TestContainers 构建 Java AI 应用的完整测试体系 —— 从单元测试到集成测试，从 Prompt 测试到 RAG 评估，确保 Spring AI 应用的质量和可靠性。
 
-> **相关文档**: [AI 测试框架](../01_测试基础/01_AI测试框架2026.md) | [DeepEval 深度解析](./01_DeepEval_深入分析.md) | [Spring AI 深度解析](01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md) | [Java 生态 AI 概览](01_数学基础/11_Java生态与AI/02_Java生态与AI_概览.md)
+> **相关文档**: [AI 测试框架](../01_测试基础/01_AI测试框架2026.md) | [DeepEval 深度解析](./01_DeepEval_深入分析.md) | [Spring AI 深度解析](../../01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md) | [Java 生态 AI 概览](../../01_数学基础/11_Java生态与AI/02_Java生态与AI_概览.md)
 
 ---
 

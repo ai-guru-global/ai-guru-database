@@ -16,17 +16,17 @@ name_zh: "JVM AI 部署与推理"
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # JVM AI 部署与推理
 
 > 中文简称：JVM AI 部署与推理
 
-> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md)。
+> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../../01_数学基础/11_Java生态与AI/03_Spring_AI_深入分析.md)。
 >
 > **一句话理解**: JVM 平台的 AI 推理部署 —— 从 Spring Boot 容器化到 GraalVM Native Image，从本地模型推理到 Kubernetes 弹性伸缩，覆盖 Java AI 应用的完整部署生命周期。
 
-> **相关文档**: [部署与推理概述](10_部署推理/01_部署基础/03_部署推理.md) | [Spring AI 架构设计](12_架构基建/02_架构概览/Spring_AI_Architecture) | [高可用设计](12_架构基建/02_架构概览/06_高可用_2026.md) | [Java 生态 AI 概览](01_数学基础/11_Java生态与AI/02_Java生态与AI_概览.md)
+> **相关文档**: [部署与推理概述](../01_部署基础/03_部署推理.md) | [Spring AI 架构设计](12_架构基建/02_架构概览/Spring_AI_Architecture) | [高可用设计](../../12_架构基建/02_架构概览/06_高可用_2026.md) | [Java 生态 AI 概览](../../01_数学基础/11_Java生态与AI/02_Java生态与AI_概览.md)
 
 ---
 

@@ -26,7 +26,7 @@ name_zh: "Agent 生产部署"
 
 | 文档 | 主题 |
 |------|------|
-| [**AI Agent 全景概览**](15_智能体/01_Agent基础/05_Agent_概览.md) | Agent 架构、设计模式、框架选型、生产部署、2026 趋势 |
+| [**AI Agent 全景概览**](./01_Agent基础/05_Agent_概览.md) | Agent 架构、设计模式、框架选型、生产部署、2026 趋势 |
 | [Agent_Foundations](./01_Agent基础/) | 理论、协议、状态管理、路线图 |
 | [Agent_Frameworks](./02_Agent框架/) | LangChain / AutoGen / LangGraph / AgentScope / SmolAgents / agno |
 | [Agent_Protocols](./16_Agent协议/) | MCP / A2A / UCP 协议栈、A2A 深度解析 |
@@ -72,81 +72,81 @@ name_zh: "Agent 生产部署"
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AI Agents](15_智能体/01_Agent基础/16_AI_Agent.md) | Agent 全景综述：架构、推理、记忆、工具使用 | 全角色 |
-| [Agent-in-nutshell](15_智能体/01_Agent基础/11_Agent_简明指南.md) | Agent 速成指南 | 入门 |
-| [Agent Protocols 2026](15_智能体/01_Agent基础/07_Agent_协议_2026.md) | MCP、A2A、UCP 协议规范 | 架构师、开发者 |
-| [Agent Protocols Comparison](15_智能体/01_Agent基础/08_Agent_协议_对比_2026.md) | Agent 协议对比分析 | 选型参考 |
-| [Agent Protocols Detail](15_智能体/01_Agent基础/09_Agent_协议_Detail.md) | Agent 协议详解 | 架构师 |
-| [MCP Implementation Guide](15_智能体/07_Agent评估/Implementation/04_Implementation_指南.md) | MCP 协议实现指南 | 开发者 |
-| [Agent State Management](15_智能体/01_Agent基础/10_Agent_State_Management.md) | Agent 状态管理 | 架构师、开发者 |
-| [Agent Observability 2026](15_智能体/01_Agent基础/04_Agent_可观测性_2026.md) | Agent 可观测性 | SRE、运维 |
-| [ADK Selection & Implementation](15_智能体/01_Agent基础/01_ADK_选型_and_实现_2026.md) | ADK 选型与跨协议实战 | 开发者 |
-| [Agent Future Roadmap](15_智能体/01_Agent基础/03_Agent_未来_路线图_2026_2030.md) | Agent 2026-2030 路线图 | 前瞻研究 |
+| [AI Agents](./01_Agent基础/16_AI_Agent.md) | Agent 全景综述：架构、推理、记忆、工具使用 | 全角色 |
+| [Agent-in-nutshell](./01_Agent基础/11_Agent_简明指南.md) | Agent 速成指南 | 入门 |
+| [Agent Protocols 2026](./01_Agent基础/07_Agent_协议_2026.md) | MCP、A2A、UCP 协议规范 | 架构师、开发者 |
+| [Agent Protocols Comparison](./01_Agent基础/08_Agent_协议_对比_2026.md) | Agent 协议对比分析 | 选型参考 |
+| [Agent Protocols Detail](./01_Agent基础/09_Agent_协议_Detail.md) | Agent 协议详解 | 架构师 |
+| [MCP Implementation Guide](./07_Agent评估/Implementation/04_Implementation_指南.md) | MCP 协议实现指南 | 开发者 |
+| [Agent State Management](./01_Agent基础/10_Agent_State_Management.md) | Agent 状态管理 | 架构师、开发者 |
+| [Agent Observability 2026](./01_Agent基础/04_Agent_可观测性_2026.md) | Agent 可观测性 | SRE、运维 |
+| [ADK Selection & Implementation](./01_Agent基础/01_ADK_选型_and_实现_2026.md) | ADK 选型与跨协议实战 | 开发者 |
+| [Agent Future Roadmap](./01_Agent基础/03_Agent_未来_路线图_2026_2030.md) | Agent 2026-2030 路线图 | 前瞻研究 |
 
 ### Agent Harness 工程
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
 | [Agent Harness README](./04_Agent脚手架/) | Harness 专题入口与角色指南 | 全角色 |
-| [The Anatomy of an Agent Harness](15_智能体/04_Agent脚手架/13_The_Anatomy_of_an_Agent_脚手架.md) | LangChain 博客：Harness 工程定义与核心组件 | 设计师、架构师 |
-| [Agent Harness 技术架构 2026](15_智能体/04_Agent脚手架/01_Agent_脚手架_架构_2026.md) | 技术架构、配置参数、性能指标、兼容性矩阵 | 全角色 |
-| [Agent 安全与评估大白话](15_智能体/README.md) | 工具调用安全、Agent 评估基准大白话 | 初学者 |
+| [The Anatomy of an Agent Harness](./04_Agent脚手架/13_The_Anatomy_of_an_Agent_脚手架.md) | LangChain 博客：Harness 工程定义与核心组件 | 设计师、架构师 |
+| [Agent Harness 技术架构 2026](./04_Agent脚手架/01_Agent_脚手架_架构_2026.md) | 技术架构、配置参数、性能指标、兼容性矩阵 | 全角色 |
+| [Agent 安全与评估大白话](./README.md) | 工具调用安全、Agent 评估基准大白话 | 初学者 |
 
 ### Agentic Coding 工具
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [Agentic Coding Tools Overview](15_智能体/08_Agent编程工具/01_Agent编程_工具_概览.md) | AI Agent 全景图 (20+ 工具汇总) | 入门、选型 |
-| [Claude Code Deep Dive](16_编程/05_开发工具/02_Claude_Code_深入分析.md) | Anthropic 官方 Agent 编程 CLI | 开发者、评估师 |
-| [OpenCode Deep Dive](15_智能体/README.md) | 自主执行式 AI 编程 Agent | 开发者、评估师 |
-| [Windsurf / Cursor / Devin](15_智能体/08_Agent编程工具/08_Windsurf_Cursor_Devin_Dive.md) | CLI 工具全景对比 | 选型参考 |
-| [International Agentic Tools](15_智能体/08_Agent编程工具/06_International_Agentic_工具.md) | 国际工具 (Aider/Continue/CodeRabbit/Cody) | 开发者、选型 |
+| [Agentic Coding Tools Overview](./08_Agent编程工具/01_Agent编程_工具_概览.md) | AI Agent 全景图 (20+ 工具汇总) | 入门、选型 |
+| [Claude Code Deep Dive](../16_编程/05_开发工具/02_Claude_Code_深入分析.md) | Anthropic 官方 Agent 编程 CLI | 开发者、评估师 |
+| [OpenCode Deep Dive](./README.md) | 自主执行式 AI 编程 Agent | 开发者、评估师 |
+| [Windsurf / Cursor / Devin](./08_Agent编程工具/08_Windsurf_Cursor_Devin_Dive.md) | CLI 工具全景对比 | 选型参考 |
+| [International Agentic Tools](./08_Agent编程工具/06_International_Agentic_工具.md) | 国际工具 (Aider/Continue/CodeRabbit/Cody) | 开发者、选型 |
 
 ### Agent 开发框架
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [LangChain Deep Dive](15_智能体/02_Agent框架/10_LangChain_深入分析.md) | 最流行的 LLM 应用开发框架：Chain/Agent/Tool/RAG | 开发者 |
-| [LangChain Agents Deep Dive](15_智能体/02_Agent框架/09_LangChain_Agent_深入分析.md) | LangChain Agent 设计与工具调用 | 开发者 |
-| [AutoGen Deep Dive](15_智能体/02_Agent框架/05_AutoGen_深入分析.md) | 微软多 Agent 对话框架：群聊、代码执行 | 开发者、架构师 |
-| [AutoGen / CrewAI / LangGraph](15_智能体/02_Agent框架/04_AutoGen_CrewAI_LangGraph_Dive.md) | 多 Agent 框架对比 | 开发者、架构师 |
-| [Agentic UI/UX Design 2026](15_智能体/03_Agent工作流/01_Agentic_UI_UX_设计_2026.md) | Canvas 模式、Artifacts 设计、Human-in-the-Loop 交互 | 设计师、产品经理 |
-| [Agentic Workflow Design Patterns 2026](15_智能体/03_Agent工作流/02_Agentic_工作流_设计_模式_2026.md) | 路由、并行、编排者-执行者、评估者-优化者、蜂群模式 | 架构师、开发者 |
-| [AgentScope Deep Dive](15_智能体/02_Agent框架/02_AgentScope_深入分析.md) | 阿里巴巴多智能体平台 | 开发者、架构师 |
-| [AutoGPT Deep Dive](15_智能体/02_Agent框架/06_AutoGPT_深入分析.md) | 自主任务执行 Agent | 开发者、探索者 |
-| [SmolAgents Deep Dive](15_智能体/02_Agent框架/12_SmolAgent_深入分析.md) | HuggingFace 轻量级框架 | HF 生态用户 |
-| [agno Deep Dive](15_智能体/02_Agent框架/03_Agno_深入分析.md) | 现代化 Agent 框架：知识+记忆内置 | 快速构建生产级 Agent |
+| [LangChain Deep Dive](./02_Agent框架/10_LangChain_深入分析.md) | 最流行的 LLM 应用开发框架：Chain/Agent/Tool/RAG | 开发者 |
+| [LangChain Agents Deep Dive](./02_Agent框架/09_LangChain_Agent_深入分析.md) | LangChain Agent 设计与工具调用 | 开发者 |
+| [AutoGen Deep Dive](./02_Agent框架/05_AutoGen_深入分析.md) | 微软多 Agent 对话框架：群聊、代码执行 | 开发者、架构师 |
+| [AutoGen / CrewAI / LangGraph](./02_Agent框架/04_AutoGen_CrewAI_LangGraph_Dive.md) | 多 Agent 框架对比 | 开发者、架构师 |
+| [Agentic UI/UX Design 2026](./03_Agent工作流/01_Agentic_UI_UX_设计_2026.md) | Canvas 模式、Artifacts 设计、Human-in-the-Loop 交互 | 设计师、产品经理 |
+| [Agentic Workflow Design Patterns 2026](./03_Agent工作流/02_Agentic_工作流_设计_模式_2026.md) | 路由、并行、编排者-执行者、评估者-优化者、蜂群模式 | 架构师、开发者 |
+| [AgentScope Deep Dive](./02_Agent框架/02_AgentScope_深入分析.md) | 阿里巴巴多智能体平台 | 开发者、架构师 |
+| [AutoGPT Deep Dive](./02_Agent框架/06_AutoGPT_深入分析.md) | 自主任务执行 Agent | 开发者、探索者 |
+| [SmolAgents Deep Dive](./02_Agent框架/12_SmolAgent_深入分析.md) | HuggingFace 轻量级框架 | HF 生态用户 |
+| [agno Deep Dive](./02_Agent框架/03_Agno_深入分析.md) | 现代化 Agent 框架：知识+记忆内置 | 快速构建生产级 Agent |
 
 ### Agent 平台与部署
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [Dify / Coze / LocalAI](15_智能体/09_Agent平台/01_Dify_Coze_MLServe_Dive.md) | Agent 平台对比 | 产品经理、架构师 |
-| [OpenRouter Deep Dive](15_智能体/09_Agent平台/03_OpenRouter_深入分析.md) | 统一模型网关与智能路由 | 架构师、开发者 |
-| [PromptFlow Deep Dive](15_智能体/09_Agent平台/04_PromptFlow_深入分析.md) | 微软工作流编排与评估 | 开发者、企业用户 |
-| [Agent 生产环境部署 Runbook](15_智能体/01_Agent基础/06_Agent_生产_部署_操作手册.md) | Agent 系统上线生产环境的完整 Runbook | Agent 平台工程师、AI 应用架构师 |
+| [Dify / Coze / LocalAI](./09_Agent平台/01_Dify_Coze_MLServe_Dive.md) | Agent 平台对比 | 产品经理、架构师 |
+| [OpenRouter Deep Dive](./09_Agent平台/03_OpenRouter_深入分析.md) | 统一模型网关与智能路由 | 架构师、开发者 |
+| [PromptFlow Deep Dive](./09_Agent平台/04_PromptFlow_深入分析.md) | 微软工作流编排与评估 | 开发者、企业用户 |
+| [Agent 生产环境部署 Runbook](./01_Agent基础/06_Agent_生产_部署_操作手册.md) | Agent 系统上线生产环境的完整 Runbook | Agent 平台工程师、AI 应用架构师 |
 
 ### 记忆与基础设施
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [Agent Memory Systems 2026](15_智能体/06_记忆基础设施/01_Agent_Memory_系统_2026.md) | AI Agent 记忆系统架构 | 架构师、开发者 |
-| [RAG Memory Infrastructure Tools](15_智能体/06_记忆基础设施/04_RAG_记忆基础设施_工具.md) | RAG/记忆/基础设施全栈 | 架构师、开发者 |
+| [Agent Memory Systems 2026](./06_记忆基础设施/01_Agent_Memory_系统_2026.md) | AI Agent 记忆系统架构 | 架构师、开发者 |
+| [RAG Memory Infrastructure Tools](./06_记忆基础设施/04_RAG_记忆基础设施_工具.md) | RAG/记忆/基础设施全栈 | 架构师、开发者 |
 
 ### 企业级 Agent
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [Agent Production 2026](15_智能体/10_企业级Agent/03_Agent_生产_2026.md) | Agent 生产部署最佳实践 | 架构师、SRE |
-| [Hermes Agent Deep Dive](15_智能体/10_企业级Agent/05_Hermes_Agent_深入分析.md) | 企业级 Agent 运行时 | 架构师、安全工程师 |
+| [Agent Production 2026](./10_企业级Agent/03_Agent_生产_2026.md) | Agent 生产部署最佳实践 | 架构师、SRE |
+| [Hermes Agent Deep Dive](./10_企业级Agent/05_Hermes_Agent_深入分析.md) | 企业级 Agent 运行时 | 架构师、安全工程师 |
 
 ### 国内 AI Agent 生态
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [国内 AI Agent 产品](15_智能体/12_中国Agent生态/02_Domestic_AI_Agent_产品_CN.md) | 通义千问/Kimi/智谱/豆包等 | 产品经理、选型 |
-| [国内开源 Agent 项目](15_智能体/12_中国Agent生态/01_Chinese_OpenSource_Agent_项目.md) | ChatDev/XAgent/MetaGPT/SWE-agent | 开发者、选型 |
-| [CoPaw Deep Dive](15_智能体/11_OpenClaw生态/01_CoPaw_深入分析.md) | 阿里开源个人 AI 助手 | 开发者、参考 |
+| [国内 AI Agent 产品](./12_中国Agent生态/02_Domestic_AI_Agent_产品_CN.md) | 通义千问/Kimi/智谱/豆包等 | 产品经理、选型 |
+| [国内开源 Agent 项目](./12_中国Agent生态/01_Chinese_OpenSource_Agent_项目.md) | ChatDev/XAgent/MetaGPT/SWE-agent | 开发者、选型 |
+| [CoPaw Deep Dive](./11_OpenClaw生态/01_CoPaw_深入分析.md) | 阿里开源个人 AI 助手 | 开发者、参考 |
 
 ---
 
@@ -173,7 +173,7 @@ name_zh: "Agent 生产部署"
 - **Kubernetes部署**: HPA自动扩缩容、PDB保证可用性
 - **服务网格**: Istio/Linkerd实现流量管理、可观测性
 - **模型路由**: 基于任务复杂度智能路由到不同模型
-- **推理引擎选型**: 参考 [LLM 推理引擎选型指南](10_部署推理/02_推理引擎/17_LLM_推理引擎_选型_指南.md) | [vLLM](10_部署推理/02_推理引擎/29_vLLM_深入分析.md) | [SGLang](10_部署推理/02_推理引擎/23_SGLang_深入分析.md) | [Groq](10_部署推理/02_推理引擎/07_Groq_深入分析.md)
+- **推理引擎选型**: 参考 [LLM 推理引擎选型指南](../10_部署推理/02_推理引擎/17_LLM_推理引擎_选型_指南.md) | [vLLM](../10_部署推理/02_推理引擎/29_vLLM_深入分析.md) | [SGLang](../10_部署推理/02_推理引擎/23_SGLang_深入分析.md) | [Groq](../10_部署推理/02_推理引擎/07_Groq_深入分析.md)
 
 ### 状态管理
 
@@ -208,7 +208,7 @@ L4: 持久化知识 → SQL/NoSQL
 - [RAG系统](../14_RAG系统/) -- RAG 系统专题
 - [AI运维](../13_运维/) -- AI 系统运维
 - [部署推理](../10_部署推理/) -- 推理引擎（vLLM, SGLang, Groq）
-- [LLM 推理引擎选型指南](10_部署推理/02_推理引擎/17_LLM_推理引擎_选型_指南.md) -- Agent 后端推理引擎选型
+- [LLM 推理引擎选型指南](../10_部署推理/02_推理引擎/17_LLM_推理引擎_选型_指南.md) -- Agent 后端推理引擎选型
 
 ---
 

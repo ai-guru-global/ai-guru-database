@@ -666,15 +666,15 @@ print(f"Calibration: {calibration_error(y_true, y_prob, sensitive_attr):.3f}")
 
 ### 前置知识
 
-- [强化学习基础](06_强化学习/01_强化学习基础/03_RL基础.md) - 理解 RLHF 中的 RL 算法
-- [Transformer 架构](05_大模型/03_Transformer架构/03_Transformer_Revolution.md) - LLM 基础
-- [监督学习](02_机器学习/02_监督学习/03_监督学习.md) - SFT 阶段原理
+- [强化学习基础](../../06_强化学习/01_强化学习基础/03_RL基础.md) - 理解 RLHF 中的 RL 算法
+- [Transformer 架构](../../05_大模型/03_Transformer架构/03_Transformer_Revolution.md) - LLM 基础
+- [监督学习](../../02_机器学习/02_监督学习/03_监督学习.md) - SFT 阶段原理
 
 ### 进阶推荐
 
-- [AI 安全与红队](17_伦理安全/04_AI安全与红队/02_AI安全_RedTeaming.md) - 对齐的验证与测试
-- [Prompt 工程](05_大模型/07_提示工程/16_Prompt工程.md) - 通过 Prompt 实现对齐
-- [模型评估](08_模型评估/01_评估基础/06_模型评估.md) - 对齐效果评估
+- [AI 安全与红队](../04_AI安全与红队/02_AI安全_RedTeaming.md) - 对齐的验证与测试
+- [Prompt 工程](../../05_大模型/07_提示工程/16_Prompt工程.md) - 通过 Prompt 实现对齐
+- [模型评估](../../08_模型评估/01_评估基础/06_模型评估.md) - 对齐效果评估
 
 ## 8. 面试高频问题 (Interview FAQs)
 

@@ -623,7 +623,7 @@ if __name__ == "__main__":
 - [提示工程](../07_提示工程/16_Prompt工程.md): Few-shot, Chain-of-Thought
 
 ### 跨领域应用
-- [多模态模型](04_计算机视觉/08_多模态视觉/03_多模态视觉.md): CLIP, Flamingo, GPT-4V
+- [多模态模型](../../04_计算机视觉/08_多模态视觉/03_多模态视觉.md): CLIP, Flamingo, GPT-4V
 
 ---
 

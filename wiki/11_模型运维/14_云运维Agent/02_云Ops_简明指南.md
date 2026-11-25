@@ -205,10 +205,10 @@ flowchart TB
 |------|------|
 | 完整架构 | [01_云_产品_Ops_2026.md](./01_云_产品_Ops_2026.md) |
 | 入门指南 | Cloud_Product_Ops_for_dummy.md |
-| Agent Harness | [15_Ops_Agent_脚手架_2026.md](15_智能体/07_Agent评估/15_Ops_Agent_脚手架_2026.md) |
-| SRE 实践 | [../AI_Ops/22_SRE_for_AI_系统.md](13_运维/02_SRE与可靠性/22_SRE_for_AI_系统.md) |
-| 事故响应 | [../AI_Ops/01_AI_故障应急_Playbook.md](13_运维/02_SRE与可靠性/01_AI_故障应急_Playbook.md) |
-| 可观测性 | [../AI_Ops/03_AI_可观测性_指南.md](11_模型运维/08_可观测性/03_AI_可观测性_指南.md) |
+| Agent Harness | [15_Ops_Agent_脚手架_2026.md](../../15_智能体/07_Agent评估/15_Ops_Agent_脚手架_2026.md) |
+| SRE 实践 | [../AI_Ops/22_SRE_for_AI_系统.md](../../13_运维/02_SRE与可靠性/22_SRE_for_AI_系统.md) |
+| 事故响应 | [../AI_Ops/01_AI_故障应急_Playbook.md](../../13_运维/02_SRE与可靠性/01_AI_故障应急_Playbook.md) |
+| 可观测性 | [../AI_Ops/03_AI_可观测性_指南.md](../08_可观测性/03_AI_可观测性_指南.md) |
 
 ---
 

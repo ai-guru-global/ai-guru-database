@@ -628,9 +628,9 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 - [03_微调技术.md](./03_微调技术.md) — 微调技术小白版
 - [09_PEFT_2026.md](./09_PEFT_2026.md) — PEFT 2026 完全指南
-- [02_微调_策略.md](05_大模型/06_微调技术/02_微调_策略.md) — 微调策略完全指南
-- [05_TRL_RLHF_DPO_指南.md](07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南.md) — TRL 实战：RLHF 与 DPO
-- [02_GRPO_and_新型_对齐_Methods.md](07_模型训练/06_对齐训练/02_GRPO_and_新型_对齐_Methods.md) — GRPO 与新一代对齐方法
+- [02_微调_策略.md](./02_微调_策略.md) — 微调策略完全指南
+- [05_TRL_RLHF_DPO_指南.md](../../07_模型训练/06_对齐训练/05_TRL_RLHF_DPO_指南.md) — TRL 实战：RLHF 与 DPO
+- [02_GRPO_and_新型_对齐_Methods.md](../../07_模型训练/06_对齐训练/02_GRPO_and_新型_对齐_Methods.md) — GRPO 与新一代对齐方法
 
 ### 关键论文
 

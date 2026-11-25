@@ -936,8 +936,8 @@ print(plate)
 ### 相关文档
 
 - [3D 计算机视觉](../05_三维视觉/02_三维视觉.md)
-- [计算机视觉概述](04_计算机视觉/01_CV基础/04_CV_简明指南.md)
-- [部署推理 2026](10_部署推理/01_部署基础/02_部署推理_2026.md)
+- [计算机视觉概述](../01_CV基础/04_CV_简明指南.md)
+- [部署推理 2026](../../10_部署推理/01_部署基础/02_部署推理_2026.md)
 - [PaddleOCR 官方文档](https://github.com/PaddlePaddle/PaddleOCR)
 - [Tesseract 官方文档](https://github.com/tesseract-ocr/tesseract)
 

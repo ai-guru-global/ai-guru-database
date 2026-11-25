@@ -327,7 +327,7 @@ Chinchilla 论文直接改变了 LLM 训练的设计范式：
 3. **DeepSeek**: DeepSeek-V2/V3 的 MoE 设计也参考了 scaling laws
 4. **成本节省**: 相同 compute 下，compute-optimal 模型可比 under-trained 模型好 **数个百分点** 的 loss
 
-详细案例分析见 [LLaMA Deep Dive](20_论文精读/02_模型架构/04_LLaMA_深入分析.md)。
+详细案例分析见 [LLaMA Deep Dive](../../20_论文精读/02_模型架构/04_LLaMA_深入分析.md)。
 
 ---
 
@@ -522,7 +522,7 @@ Lee et al. (2022) 系统研究了去重对 LLM 训练的影响：
 2. **Domain weights 是关键超参**: 不同领域（代码、数学、网页、书籍）的比例直接决定下游能力
 3. **可复现的 data curation pipeline**: 开源了完整的 DCLM baseline
 
-> **与 Distributed Training 的关联**: 数据 quality 和 deduplication 的 preprocessing 通常需要大量存储和 I/O，这在 [分布式训练](07_模型训练/04_分布式训练/03_分布式训练_2026.md) 中是一个重要的工程考量。
+> **与 Distributed Training 的关联**: 数据 quality 和 deduplication 的 preprocessing 通常需要大量存储和 I/O，这在 [分布式训练](../04_分布式训练/03_分布式训练_2026.md) 中是一个重要的工程考量。
 
 ---
 
@@ -1040,7 +1040,7 @@ flowchart LR
 - **DeepSeek-V3**: 671B total, 37B active (top-8/256), 训练成本 ~$5.5M
 - **Mixtral 8x7B**: 46.7B total, 12.9B active, 性能接近 dense 13B
 
-详见 [Mixture of Experts Deep Dive](20_论文精读/02_模型架构/06_混合专家_深入分析.md)。
+详见 [Mixture of Experts Deep Dive](../../20_论文精读/02_模型架构/06_混合专家_深入分析.md)。
 
 ### 10.3 Agent Scaling
 
@@ -1149,10 +1149,10 @@ flowchart TB
 
 ### 相关文档
 
-- [分布式训练 (Distributed Training 2026)](07_模型训练/04_分布式训练/03_分布式训练_2026.md) — 大规模训练的分布式实现
-- [混合精度训练 (Mixed Precision Training)](07_模型训练/03_训练优化/04_Mixed_精确度_训练.md) — 训练效率优化的基础
-- [LLM 架构 (LLM Architectures)](05_大模型/04_LLM架构/05_LLM架构.md) — 理解 N, D 如何映射到模型结构
-- [LLaMA 论文解读 (LLaMA Deep Dive)](20_论文精读/02_模型架构/04_LLaMA_深入分析.md) — Chinchilla scaling laws 的经典实践案例
+- [分布式训练 (Distributed Training 2026)](../04_分布式训练/03_分布式训练_2026.md) — 大规模训练的分布式实现
+- [混合精度训练 (Mixed Precision Training)](./04_Mixed_精确度_训练.md) — 训练效率优化的基础
+- [LLM 架构 (LLM Architectures)](../../05_大模型/04_LLM架构/05_LLM架构.md) — 理解 N, D 如何映射到模型结构
+- [LLaMA 论文解读 (LLaMA Deep Dive)](../../20_论文精读/02_模型架构/04_LLaMA_深入分析.md) — Chinchilla scaling laws 的经典实践案例
 
 ---
 

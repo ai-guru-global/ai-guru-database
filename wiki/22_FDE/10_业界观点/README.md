@@ -8,7 +8,7 @@
 
 | 文件 | 内容 |
 |---|---|
-| [硅谷FDE观点](22_FDE/10_业界观点/01_硅谷FDE观点.md) | Palantir/OpenAI/Anthropic 领导层观点 |
+| [硅谷FDE观点](./01_硅谷FDE观点.md) | Palantir/OpenAI/Anthropic 领导层观点 |
 | 国内FDE观点 | 中国 AI 公司创始人和实践者视角 |
 | 创业者视角 | FDE 创业公司创始人的经验与教训 |
 | 投资人视角 | VC 如何看待 FDE 赛道的投资机会 |

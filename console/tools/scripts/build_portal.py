@@ -15,7 +15,8 @@ index 头额外字段：shardSplit = 被二级再分的章名单；app.js shardO
 
 记录字段（P2 前端按此约定消费）：
   t 标题 · p 仓库相对路径 · s 面（发布站/拆解台/文档站/前端应用/数据集）
-  d 更新日期 · x 摘要（frontmatter summary 或首段，≤200 字） · k kind（doc/entity）
+  d 更新日期 · x 摘要（frontmatter summary 优先；否则取正文首段，剥「>」引用前缀、
+    跳过「中文简称：」复读段，≤300 字） · k kind（doc/entity）
 
 打分（P2 JS 必须与此一致）：
   q 按空白切分为 tokens，全部命中才计分（AND）；
@@ -87,10 +88,18 @@ def first_paragraph(body: str) -> str:
         p = para.strip()
         if not p or p.startswith("#") or p.startswith("---") or p.startswith("```"):
             continue
+        # 引用块剥前缀参与摘要：「一句话理解」有检索价值要保留；
+        # 「中文简称：」与标题重复算噪声，跳过找下一段（否则大量 x 字段沦为标题复读）
+        if p.startswith(">"):
+            stripped = "\n".join(line.lstrip().lstrip(">").strip()
+                                 for line in p.splitlines())
+            if stripped.startswith("中文简称："):
+                continue
+            p = stripped
         p = MD_NOISE_RE.sub("", p)
         p = re.sub(r"\s+", " ", p).strip()
         if len(p) >= 8:
-            return p[:200]
+            return p[:300]
     return ""
 
 

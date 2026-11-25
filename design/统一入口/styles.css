@@ -98,6 +98,11 @@ h1 label { cursor: pointer; }
 
 /* 检索状态行 */
 .status { font-size: var(--text-sm); color: var(--color-ink-2); }
+/* C5：摘要上限提到 300 字后，阅读视图导语钳 3 行防墙式文本 */
+#r-lede {
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;
+  overflow: hidden;
+}
 .status .measured { font-family: var(--font-outlier); font-variant-numeric: tabular-nums slashed-zero; color: var(--color-ink); }
 
 /* 跨面结果表 */

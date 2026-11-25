@@ -6,6 +6,10 @@ updated: 2026-10-14
 sources: []
 name_zh: "全球大模型生态"
 name_en: "Global LLM Ecosystem"
+category: 05-nlp-llms-global-eco
+tags: ["llm-ecosystem", "openai", "index"]
+summary: "全球 LLM 生态子域索引：OpenAI/Anthropic/Google/Meta/Mistral 等厂商深度分析入口。"
+tier: supporting
 ---
 
 # Global LLM Ecosystem
@@ -65,8 +69,8 @@ name_en: "Global LLM Ecosystem"
 
 ## 相关概念
 
-- [[05_大模型/14_中国LLM生态|中国 LLM 生态]]
-- [[05_大模型/12_LLM产品|LLM 产品]]
+- [[05_大模型/14_中国LLM生态/README|中国 LLM 生态]]
+- [[05_大模型/12_LLM产品/README|LLM 产品]]
 - [[概念/llm-architectures|LLM 架构]]
 
 ## 统计
@@ -170,9 +174,9 @@ name_en: "Global LLM Ecosystem"
 
 ## 相关域
 
-- [[05_大模型/14_中国LLM生态|中国 LLM 生态]] — 国内大模型厂商
-- [[05_大模型/04_LLM架构|LLM 架构]] — 技术架构详解
-- [[05_大模型/12_LLM产品|LLM 产品]] — 产品概览
+- [[05_大模型/14_中国LLM生态/README|中国 LLM 生态]] — 国内大模型厂商
+- [[05_大模型/04_LLM架构/README|LLM 架构]] — 技术架构详解
+- [[05_大模型/12_LLM产品/README|LLM 产品]] — 产品概览
 - [[10_部署推理/README|部署推理]] — 模型部署技术
 
 ---

@@ -31,7 +31,7 @@ name_zh: "AI 智能体实战"
 
 > 中文简称：AI 智能体实战
 
-> **一句话理解**: Manning 出品的 AI Agent 实战指南（第2版），从 Agent 基本概念讲到工具调用、记忆、规划与多 Agent 协作，配套 LangChain / AutoGen / CrewAI 三大主流框架的完整代码示例，是 2024-2026 年 Agent 工程入门到进阶的首选实战书。
+> **一句话理解**: Manning 出品的 AI Agent 实战指南（第 2 版），从 Agent 基本概念讲到工具调用、记忆、规划与多 Agent 协作，配套 LangChain / AutoGen / CrewAI 三大主流框架的完整代码示例，是 2024-2026 年 Agent 工程入门到进阶的首选实战书。
 
 ## 书籍概述
 
@@ -43,9 +43,9 @@ name_zh: "AI 智能体实战"
 
 | 属性 | 说明 |
 |------|------|
-| **书名** | AI Agents in Action（第2版） |
+| **书名** | AI Agents in Action（第 2 版） |
 | **作者** | Micheal Lanham |
-| **出版社** | Manning（2024，第2版） |
+| **出版社** | Manning（2024，第 2 版） |
 | **页数** | 约 350 页 |
 | **难度** | ⭐⭐☆（入门→中级） |
 | **代码语言** | Python（LangChain / AutoGen / CrewAI） |
@@ -72,10 +72,10 @@ name_zh: "AI 智能体实战"
 
 - **Agent 定义**: 能自主感知环境、做出决策、执行行动的 AI 系统，区别于被动应答的聊天机器人
 - **Agent 的四大支柱**:
-  - 大脑（LLM）— 推理与决策核心
-  - 感知（Perception）— 接收用户输入与环境状态
-  - 行动（Action）— 通过工具调用影响外部世界
-  - 记忆（Memory）— 跨步骤、跨会话的状态保持
+ - 大脑（LLM）— 推理与决策核心
+ - 感知（Perception）— 接收用户输入与环境状态
+ - 行动（Action）— 通过工具调用影响外部世界
+ - 记忆（Memory）— 跨步骤、跨会话的状态保持
 - **Agent vs Chatbot 的本质区别**: ChatBot 是"一问一答"，Agent 是"目标驱动、多步骤、可纠错"的闭环
 
 ### Ch 3: 工具调用（Tool Use / Function Calling）
@@ -83,18 +83,18 @@ name_zh: "AI 智能体实战"
 - **Function Calling 机制**: LLM 按规范格式输出工具调用请求，系统执行后返回结果
 - **工具定义模式**: JSON Schema 描述工具的名称、参数、返回值
 - **实战模式**:
-  - 搜索工具（Web Search、Wikipedia）
-  - 计算工具（Python REPL、计算器）
-  - 数据工具（SQL 查询、文件读写）
-  - API 工具（天气、地图、第三方服务）
+ - 搜索工具（Web Search、Wikipedia）
+ - 计算工具（Python REPL、计算器）
+ - 数据工具（SQL 查询、文件读写）
+ - API 工具（天气、地图、第三方服务）
 - **工具选择策略**: 让 LLM 自己判断何时调用哪个工具，而非硬编码
 
 ### Ch 4: 记忆系统（Memory）
 
 - **短期记忆（Working Memory）**: 当前对话上下文，受 Token 窗口限制
 - **长期记忆（Long-term Memory）**:
-  - 向量存储 + 语义检索（基于 Embedding 的召回）
-  - 摘要压缩（对历史对话做总结以节省 Token）
+ - 向量存储 + 语义检索（基于 Embedding 的召回）
+ - 摘要压缩（对历史对话做总结以节省 Token）
 - **记忆管理策略**: 写入、检索、遗忘、更新的生命周期
 - **与 RAG 的关系**: Agent 长期记忆本质上是"个性化 RAG"（详见 [[14_RAG系统/01_RAG基础/07_RAG_系统]]）
 
@@ -117,9 +117,9 @@ name_zh: "AI 智能体实战"
 
 - **为什么需要多 Agent**: 单 Agent 上下文易爆炸、专业分工更高效、可并行
 - **协作模式**:
-  - **层级式（Hierarchical）**: 一个 Manager Agent 调度多个 Worker Agent
-  - **对等式（Peer-to-Peer）**: Agent 间平等对话协商
-  - **流水线式（Pipeline）**: Agent A → Agent B → Agent C 串行处理
+ - **层级式（Hierarchical）**: 一个 Manager Agent 调度多个 Worker Agent
+ - **对等式（Peer-to-Peer）**: Agent 间平等对话协商
+ - **流水线式（Pipeline）**: Agent A → Agent B → Agent C 串行处理
 - **框架对比**:
 
 | 框架 | 特点 | 适用场景 |
@@ -132,9 +132,9 @@ name_zh: "AI 智能体实战"
 
 - **Agent 可靠性挑战**: 错误累积、不可预测性、工具调用失败、无限循环
 - **护栏（Guardrails）**:
-  - 输入护栏：过滤恶意/越狱输入
-  - 输出护栏：审查 Agent 输出合规性
-  - 工具护栏：限制工具调用权限与频率
+ - 输入护栏：过滤恶意/越狱输入
+ - 输出护栏：审查 Agent 输出合规性
+ - 工具护栏：限制工具调用权限与频率
 - **评估维度**: 任务完成率、步骤效率、成本、安全性
 - **断点与人工介入**: Human-in-the-loop 机制
 
@@ -263,8 +263,8 @@ Action: reply(列出 5 个航班供用户选择)
 | Ch 4 记忆 | 短期/长期记忆 | [[14_RAG系统/01_RAG基础/07_RAG_系统]] | 记忆即个性化 RAG |
 | Ch 5 ReAct | 规划模式 | [[05_大模型/07_提示工程/16_Prompt工程]] | ReAct 提示模式 |
 | Ch 7 多 Agent | CrewAI/AutoGen | [[90_学习/05_参考资料/books/13_build_multi_agent_system]] | 多 Agent 架构 |
-| Ch 8 护栏 | Guardrails | [[17_伦理安全/04_AI安全与红队]] | 安全与护栏 |
-| Ch 9 部署 | 可观测性 | [[10_部署推理/]] | 生产化部署 |
+| Ch 8 护栏 | Guardrails | [[17_伦理安全/04_AI安全与红队/README]] | 安全与护栏 |
+| Ch 9 部署 | 可观测性 | [[10_部署推理/README]] | 生产化部署 |
 
 ## 适合人群
 
@@ -320,7 +320,7 @@ Action: reply(列出 5 个航班供用户选择)
 
 - **框架覆盖广**: 同时覆盖三大主流框架，便于横向比较选型
 - **从入门到多 Agent 完整路径**: 递进式结构，适合零基础
-- **第2版更新及时**: 纳入了 2024 年 Agent 工程最新实践
+- **第 2 版更新及时**: 纳入了 2024 年 Agent 工程最新实践
 - **代码可运行**: 每章配套 GitHub 代码，可复现
 
 ### 局限
@@ -353,9 +353,9 @@ Action: reply(列出 5 个航班供用户选择)
 |------|---------|-----------|---------|
 | 框架使用 | 充分 | 同 | 本书 + 官方文档 |
 | 评估体系 | 基础 | 系统化（RAPS 模型） | [[90_学习/01_概念认知/05_stage3_engineering]] |
-| 可观测性 | 基础 | Traces/Metrics/Logs 全套 | [[10_部署推理/]] |
+| 可观测性 | 基础 | Traces/Metrics/Logs 全套 | [[10_部署推理/README]] |
 | 成本控制 | 提及 | 模型路由 + 缓存 + 量化 | [[90_学习/05_参考资料/books/15_ai_engineering_huyen]] |
-| 安全护栏 | 基础 | 输入/输出/工具三层护栏 | [[17_伦理安全/]] |
+| 安全护栏 | 基础 | 输入/输出/工具三层护栏 | [[17_伦理安全/README]] |
 | 协议标准化 | 未覆盖 | MCP/A2A/UCP | 社区文档 |
 | 多 Agent 架构 | 基础 | 系统设计级 | [[90_学习/05_参考资料/books/13_build_multi_agent_system]] |
 
@@ -366,4 +366,4 @@ Action: reply(列出 5 个航班供用户选择)
 - [[05_大模型/07_提示工程/16_Prompt工程]] — ReAct / Plan-and-Execute 提示模式
 - [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图 2026]] — Agent 在整体路线中的位置
 
-> **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[15_智能体/]] | [[工具/]] | [[14_RAG系统/]] | [[10_部署推理/]]
+> **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[15_智能体/README]] | 工具/ | [[14_RAG系统/README]] | [[10_部署推理/README]]

@@ -17,7 +17,7 @@ sources: []
 
 name_zh: "开源模型与Hugging Face"
 ---
-> 中文简称：开源模型与Hugging Face
+> 中文简称：开源模型与 Hugging Face
 
 ## 学习目标
 
@@ -25,14 +25,14 @@ name_zh: "开源模型与Hugging Face"
 
 - 了解开源模型的定义、分类和争议
 - 理解使用开源模型的三大核心优势
-- 探索Hugging Face和Azure AI Studio上可用的主流开源模型
+- 探索 Hugging Face 和 Azure AI Studio 上可用的主流开源模型
 - 掌握选择适合的开源模型的策略和方法
 
 ## 本课前置知识
 
-如果你想了解专有模型与开源模型的比较，请参阅课程中的"探索和比较不同的LLM"章节。本课还将涉及微调主题，更详细的解释可以在"微调LLM"课程中找到。
+如果你想了解专有模型与开源模型的比较，请参阅课程中的"探索和比较不同的 LLM"章节。本课还将涉及微调主题，更详细的解释可以在"微调 LLM"课程中找到。
 
-## 引言：开源LLM的世界
+## 引言：开源 LLM 的世界
 
 开源大型语言模型（LLM）的世界令人兴奋且不断发展。本课旨在深入介绍开源模型，帮助你理解这一生态系统的全貌，并能够为自己的项目选择合适的开源模型。
 
@@ -40,11 +40,11 @@ name_zh: "开源模型与Hugging Face"
 
 ### 软件开源的定义
 
-开源软件在各个领域的技术发展中发挥了关键作用。开源倡议组织（OSI）定义了[软件开源的10条标准](https://web.archive.org/web/20241126001143/https://opensource.org/osd?WT.mc_id=academic-105485-koreyst)，核心要求是源代码必须在OSI批准的许可证下公开共享。
+开源软件在各个领域的技术发展中发挥了关键作用。开源倡议组织（OSI）定义了[软件开源的10条标准](https://web.archive.org/web/20241126001143/https://opensource.org/osd?WT.mc_id=academic-105485-koreyst)，核心要求是源代码必须在 OSI 批准的许可证下公开共享。
 
 ### LLM"开源"的定义争议
 
-虽然LLM的开发与软件开发有相似之处，但过程并不完全相同。这在社区中引发了关于LLM开源定义的广泛讨论。
+虽然 LLM 的开发与软件开发有相似之处，但过程并不完全相同。这在社区中引发了关于 LLM 开源定义的广泛讨论。
 
 要符合传统开源定义，模型应公开以下信息：
 
@@ -85,24 +85,24 @@ name_zh: "开源模型与Hugging Face"
 
 ### 优势二：成本效益
 
-使用和部署开源模型的每个token成本远低于专有模型。
+使用和部署开源模型的每个 token 成本远低于专有模型。
 
 **成本对比**：
 
-以Artificial Analysis的数据为例，开源模型与专有模型在成本上有显著差异：
+以 Artificial Analysis 的数据为例，开源模型与专有模型在成本上有显著差异：
 
-- 专有模型（如GPT-4）：每百万token成本较高
-- 开源模型（如Llama 2、Mistral）：每百万token成本显著更低
+- 专有模型（如 GPT-4）：每百万 token 成本较高
+- 开源模型（如 Llama 2、Mistral）：每百万 token 成本显著更低
 - 自部署开源模型：成本主要来自计算资源，可以进一步优化
 
 **成本考量因素**：
 
-- 推理成本（每个token的费用）
+- 推理成本（每个 token 的费用）
 - 基础设施成本（GPU、存储、网络）
 - 维护成本（更新、监控、优化）
 - 人力成本（开发、运维团队）
 
-在构建生成式AI应用时，应根据你的用例权衡性能与价格。
+在构建生成式 AI 应用时，应根据你的用例权衡性能与价格。
 
 ### 优势三：灵活性
 
@@ -121,25 +121,25 @@ name_zh: "开源模型与Hugging Face"
 
 ### Llama 2（Meta）
 
-[Llama 2](https://huggingface.co/meta-llama?WT.mc_id=academic-105485-koreyst)是由Meta开发的开源模型，针对聊天应用优化。
+[Llama 2](https://huggingface.co/meta-llama?WT.mc_id=academic-105485-koreyst)是由 Meta 开发的开源模型，针对聊天应用优化。
 
 #### 核心特点
 
 - **优化方向**：针对对话场景优化
 - **微调方法**：包含大量对话和人类反馈（RLHF）
 - **输出特点**：生成更符合人类预期的结果，提升用户体验
-- **参数规模**：提供7B、13B、70B等多种参数规模
+- **参数规模**：提供 7B、13B、70B 等多种参数规模
 
 #### 为什么对话优化重要
 
-通过大量对话数据和人类反馈的微调，Llama 2能够：
+通过大量对话数据和人类反馈的微调，Llama 2 能够：
 
 - 理解多轮对话的上下文
 - 生成更自然、连贯的回答
 - 更好地遵循指令
 - 减少有害或不恰当的输出
 
-#### Llama 2的微调版本
+#### Llama 2 的微调版本
 
 | 版本 | 方向 | 说明 |
 |------|------|------|
@@ -158,7 +158,7 @@ name_zh: "开源模型与Hugging Face"
 
 #### 专家混合（MoE）架构详解
 
-MoE架构的工作方式：
+MoE 架构的工作方式：
 
 1. 输入数据首先经过一个**路由器（Router）**
 2. 路由器决定将输入分配给哪些**专家（Expert）**
@@ -171,7 +171,7 @@ MoE架构的工作方式：
 - **模型容量**：总体参数量大，但单次推理只激活一部分
 - **专业能力**：每个专家可以专注于特定类型的任务
 
-#### Mistral的微调版本
+#### Mistral 的微调版本
 
 | 版本 | 方向 | 说明 |
 |------|------|------|
@@ -180,21 +180,21 @@ MoE架构的工作方式：
 
 ### Falcon
 
-[Falcon](https://huggingface.co/tiiuae?WT.mc_id=academic-105485-koreyst)是由技术创新研究院（TII）创建的LLM。
+[Falcon](https://huggingface.co/tiiuae?WT.mc_id=academic-105485-koreyst)是由技术创新研究院（TII）创建的 LLM。
 
 #### 核心特点
 
-- **参数规模**：Falcon-40B拥有400亿参数
-- **性能表现**：优于GPT-3且计算资源消耗更低
-- **关键算法**：FlashAttention算法和多查询注意力机制
+- **参数规模**：Falcon-40B 拥有 400 亿参数
+- **性能表现**：优于 GPT-3 且计算资源消耗更低
+- **关键算法**：FlashAttention 算法和多查询注意力机制
 - **效率优势**：减少了推理时的内存需求，推理时间缩短
 
-#### FlashAttention算法
+#### FlashAttention 算法
 
-FlashAttention是一种高效的注意力计算方法：
+FlashAttention 是一种高效的注意力计算方法：
 
 - 减少了内存访问次数
-- 降低了GPU内存使用
+- 降低了 GPU 内存使用
 - 加速了注意力计算过程
 - 特别适合长序列处理
 
@@ -207,7 +207,7 @@ FlashAttention是一种高效的注意力计算方法：
 - 推理速度更快
 - 内存占用更少
 
-#### Falcon的微调版本
+#### Falcon 的微调版本
 
 | 版本 | 方向 | 说明 |
 |------|------|------|
@@ -222,7 +222,7 @@ FlashAttention是一种高效的注意力计算方法：
 
 #### 策略一：按任务筛选
 
-使用Azure AI Studio的**按任务筛选**功能：
+使用 Azure AI Studio 的**按任务筛选**功能：
 
 - 了解模型训练的任务类型
 - 根据你的需求匹配模型能力
@@ -230,7 +230,7 @@ FlashAttention是一种高效的注意力计算方法：
 
 #### 策略二：参考排行榜
 
-Hugging Face维护了LLM排行榜，展示基于特定指标的最佳模型：
+Hugging Face 维护了 LLM 排行榜，展示基于特定指标的最佳模型：
 
 - 综合性能排行
 - 特定任务排行（代码、数学、推理等）
@@ -240,7 +240,7 @@ Hugging Face维护了LLM排行榜，展示基于特定指标的最佳模型：
 
 [Artificial Analysis](https://artificialanalysis.ai/?WT.mc_id=academic-105485-koreyst)提供了跨模型的质量和成本对比：
 
-- 质量vs成本权衡分析
+- 质量 vs 成本权衡分析
 - 延迟对比
 - 吞吐量对比
 
@@ -258,14 +258,14 @@ Hugging Face维护了LLM排行榜，展示基于特定指标的最佳模型：
 
 - 在评估数据集上测试多个候选模型
 - 收集用户反馈
-- 进行A/B测试
+- 进行 A/B 测试
 
 ### 模型选择决策矩阵
 
 | 考量因素 | 权重 | 评估方法 |
 |----------|------|----------|
 | 性能质量 | 高 | 基准测试 + 人工评估 |
-| 成本 | 高 | 每token成本计算 |
+| 成本 | 高 | 每 token 成本计算 |
 | 延迟 | 中 | 实际推理时间测试 |
 | 定制能力 | 中 | 模型架构和许可证检查 |
 | 社区支持 | 中 | GitHub stars、文档质量 |
@@ -278,19 +278,19 @@ Hugging Face维护了LLM排行榜，展示基于特定指标的最佳模型：
 
 **优势**：
 - 完全数据隐私
-- 无API调用费用
+- 无 API 调用费用
 - 可定制硬件配置
 
 **挑战**：
-- 需要GPU资源
+- 需要 GPU 资源
 - 运维成本
 - 扩展性管理
 
 ### 云端部署
 
-Azure AI Foundry提供了便捷的云端部署选项：
+Azure AI Foundry 提供了便捷的云端部署选项：
 
-[Azure AI Foundry模型目录](https://ai.azure.com?WT.mc_id=academic-105485-koreyst)包含Hugging Face模型合集，可以直接使用。
+[Azure AI Foundry模型目录](https://ai.azure.com?WT.mc_id=academic-105485-koreyst)包含 Hugging Face 模型合集，可以直接使用。
 
 **优势**：
 - 快速启动
@@ -307,21 +307,21 @@ Azure AI Foundry提供了便捷的云端部署选项：
 
 ## 六、开源模型生态工具
 
-### Hugging Face平台
+### Hugging Face 平台
 
-Hugging Face是开源AI模型的核心平台：
+Hugging Face 是开源 AI 模型的核心平台：
 
 - **模型仓库**：数十万个开源模型
 - **数据集**：丰富的训练和评估数据集
 - **Spaces**：在线演示和原型
-- **Transformers库**：统一的模型加载和使用接口
+- **Transformers 库**：统一的模型加载和使用接口
 - **Inference API**：快速测试模型输出
 
-### Azure AI Studio集成
+### Azure AI Studio 集成
 
-Azure AI Studio与Hugging Face深度集成：
+Azure AI Studio 与 Hugging Face 深度集成：
 
-- 直接浏览和部署Hugging Face模型
+- 直接浏览和部署 Hugging Face 模型
 - 无需自行管理基础设施
 - 企业级安全性和合规性
 
@@ -329,20 +329,20 @@ Azure AI Studio与Hugging Face深度集成：
 
 ### 实践任务
 
-1. 访问Azure AI Foundry模型目录，浏览不同的开源模型
-2. 在Hugging Face上探索LLM排行榜，了解不同模型的性能排名
+1. 访问 Azure AI Foundry 模型目录，浏览不同的开源模型
+2. 在 Hugging Face 上探索 LLM 排行榜，了解不同模型的性能排名
 3. 选择一个开源模型，尝试使用它完成一个简单的任务
 4. 比较至少两个开源模型在相同任务上的表现
 
 ### 进阶挑战
 
-- 使用Hugging Face Transformers库加载和运行一个开源模型
+- 使用 Hugging Face Transformers 库加载和运行一个开源模型
 - 为特定任务评估开源模型与专有模型的性能差异
-- 尝试使用LoRA对开源模型进行轻量级微调
+- 尝试使用 LoRA 对开源模型进行轻量级微调
 
 ## 知识检查
 
-**问题**：Mistral模型采用的专家混合（MoE）架构的核心优势是什么？
+**问题**：Mistral 模型采用的专家混合（MoE）架构的核心优势是什么？
 
 1. 所有参数同时参与每次推理，确保最高质量输出
 2. 根据输入动态选择特定专家模型参与计算，大幅提高计算效率
@@ -352,21 +352,21 @@ Azure AI Studio与Hugging Face深度集成：
 
 **解析**：
 
-MoE架构通过路由器将输入分配给最合适的专家模型，只有被选中的专家参与计算，因此总体参数量大但单次推理只激活一部分，兼顾了模型容量和计算效率。选项1描述的是传统密集模型的工作方式，选项3描述的是单一模型而非MoE架构。
+MoE 架构通过路由器将输入分配给最合适的专家模型，只有被选中的专家参与计算，因此总体参数量大但单次推理只激活一部分，兼顾了模型容量和计算效率。选项 1 描述的是传统密集模型的工作方式，选项 3 描述的是单一模型而非 MoE 架构。
 
 ## 扩展阅读
 
 - [[90_学习/03_课程资源/microsoft/01_microsoft_genai_for_beginners]] - 课程总览
-- [[05_大模型/04_LLM架构/05_LLM架构]] - LLM架构详解
-- [[05_大模型/06_微调技术]] - 微调技术
-- [[05_大模型/13_全球LLM生态/README]] - 全球LLM生态
-- [[15_智能体/14_GenAI课程/05_GenAI_L17_AI_Agent]] - AI代理
+- [[05_大模型/04_LLM架构/05_LLM架构]] - LLM 架构详解
+- [[05_大模型/06_微调技术/README]] - 微调技术
+- [[05_大模型/13_全球LLM生态/README]] - 全球 LLM 生态
+- [[15_智能体/14_GenAI课程/05_GenAI_L17_AI_Agent]] - AI 代理
 
 ### 中国开源大模型生态
 
 中国开源大模型在 Hugging Face 生态中占据重要位置，以下是值得关注的代表：
 
-- [[05_大模型/14_中国LLM生态/README]] — 中国大模型生态全景（15家厂商）
+- [[05_大模型/14_中国LLM生态/README]] — 中国大模型生态全景（15 家厂商）
 - [[05_大模型/14_中国LLM生态/25_DeepSeek_架构_2026]] — DeepSeek（MLA+MoE，HuggingFace 下载量 1000 万+）
 - [[05_大模型/14_中国LLM生态/19_Qwen_深入分析]] — 通义千问 Qwen（全尺寸开源，0.5B~72B）
 - [[05_大模型/14_中国LLM生态/09_GLM_Zhipu_深入分析]] — 智谱 GLM（ChatGLM 系列开源先驱）

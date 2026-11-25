@@ -6,6 +6,10 @@ updated: 2026-07-21
 sources: []
 name_zh: "大模型产品"
 name_en: "LLM Products"
+category: 05-nlp-llms-llm-products
+tags: ["llm-products", "chatgpt", "index"]
+summary: "LLM 产品子域索引：主流 AI 助手、结构化输出工具与 Token Plan 套餐拆解。"
+tier: supporting
 ---
 
 # LLM Products
@@ -76,8 +80,8 @@ LLM 产品概览索引，覆盖主流 AI 助手、结构化输出工具和 AI �
 
 ## 相关概念
 
-- [[05_大模型/13_全球LLM生态|全球 LLM 生态]]
-- [[05_大模型/07_提示工程|提示词工程]]
+- [[05_大模型/13_全球LLM生态/README|全球 LLM 生态]]
+- [[05_大模型/07_提示工程/README|提示词工程]]
 - [[概念/LLM/structured-output|结构化输出]]
 
 ## 统计

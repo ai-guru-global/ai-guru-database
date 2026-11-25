@@ -34,8 +34,8 @@ name_zh: "Safetensors 与 Hub 治理：下一代模型存储与分发标准"
 ## 1. 再见，Pickle！Safetensors 崛起
 
 早期，PyTorch 模型保存为 `pytorch_model.bin` 或 `.pt`，底层使用的是 Python 的内置 `pickle` 模块。
-*   **致命漏洞**：Pickle 允许序列化任意 Python 对象，甚至可以包含可执行代码。这意味着，当你 `torch.load("malicious.bin")` 时，黑客预埋的代码就会静默执行（例如窃取你的 SSH 密钥、加密你的硬盘）。
-*   **Safetensors 的诞生**：由 Hugging Face 使用 Rust 语言开发，专门用于存储张量（Tensors）。它是一个绝对安全、去掉了可执行代码设计的纯数据格式，后缀为 `.safetensors`。
+* **致命漏洞**：Pickle 允许序列化任意 Python 对象，甚至可以包含可执行代码。这意味着，当你 `torch.load("malicious.bin")` 时，黑客预埋的代码就会静默执行（例如窃取你的 SSH 密钥、加密你的硬盘）。
+* **Safetensors 的诞生**：由 Hugging Face 使用 Rust 语言开发，专门用于存储张量（Tensors）。它是一个绝对安全、去掉了可执行代码设计的纯数据格式，后缀为 `.safetensors`。
 
 ---
 
@@ -167,7 +167,7 @@ for m in models:
 ## 相关阅读
 - [[12_架构基建/02_架构概览/02_AI_基础设施_2026]]
 - [[11_模型运维/04_实验追踪/09_模型_注册中心_and_Cards_深入分析]]
-- [[17_伦理安全/07_AI安全2026]]
+- [[17_伦理安全/07_AI安全2026/README]]
 
 ## Related
 

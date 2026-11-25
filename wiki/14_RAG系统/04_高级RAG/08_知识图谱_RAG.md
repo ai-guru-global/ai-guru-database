@@ -137,7 +137,7 @@ async def extract_entities(llm, text):
 | Neo4j | 原生图 | 最成熟/社区大 | 十亿节点 | Cypher |
 | Amazon Neptune | 托管 | AWS 集成 | 百亿 | Gremlin/SPARQL |
 | TigerGraph | 原生图 | 高性能/分布式 | 百亿+ | GSQL |
-| FalkorDB | Redis图 | 超低延迟 | 百万 | Cypher |
+| FalkorDB | Redis 图 | 超低延迟 | 百万 | Cypher |
 | NetworkX | 内存图 | 简单/研究 | 十万 | Python |
 | pgvector+图 | 混合 | PostgreSQL 扩展 | 百万 | SQL |
 
@@ -168,8 +168,8 @@ GRAPH_RAG_BEST_PRACTICES = {
 
 ## 6. 交叉引用
 
-- [[14_RAG系统/|RAG 系统]]
+- [[14_RAG系统/README|RAG 系统]]
 - [[14_RAG系统/README.md|分块策略]]
 - [[概念/RAG/hybrid-search|混合检索]]
 - [[概念/RAG/rag-patterns|RAG 模式]]
-- [[15_智能体/|智能体 (Agentic RAG)]]
+- [[15_智能体/README|智能体 (Agentic RAG)]]

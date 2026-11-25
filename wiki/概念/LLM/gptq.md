@@ -36,17 +36,17 @@ name_zh: "GPT 训练后量化"
 
 - **提出**：Frantar et al., 2022-10（论文 "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers"）
 - **核心思想**：
-  - **逐层量化** + **二阶优化**（基于 Hessian 矩阵）
-  - 每个权重量化时考虑对其他权重的补偿
-  - 显著优于简单 round-to-nearest 量化
+ - **逐层量化** + **二阶优化**（基于 Hessian 矩阵）
+ - 每个权重量化时考虑对其他权重的补偿
+ - 显著优于简单 round-to-nearest 量化
 - **优势**：
-  - INT4 量化下保持高精度（接近 FP16）
-  - 一次量化，可重复使用
-  - 已被广泛支持（vLLM、TGI、TensorRT-LLM）
+ - INT4 量化下保持高精度（接近 FP16）
+ - 一次量化，可重复使用
+ - 已被广泛支持（vLLM、TGI、TensorRT-LLM）
 - **劣势**：
-  - 校准数据需求（典型 128 个样本）
-  - 量化过程较慢（逐层优化）
-  - AWQ 出现后部分场景被替代
+ - 校准数据需求（典型 128 个样本）
+ - 量化过程较慢（逐层优化）
+ - AWQ 出现后部分场景被替代
 
 ## 一句话解释
 
@@ -150,7 +150,7 @@ llm = LLM(model="qwen2.5-7b-gptq", quantization="gptq")
 - [[概念/awq]] — AWQ（GPTQ 主要替代）
 - [[概念/quantization]] — 量化总览
 - [[概念/model-compression]] — 模型压缩
-- [[10_部署推理/04_模型量化]] — 量化章节- [[概念/pruning]] — 剪枝
+- [[10_部署推理/04_模型量化/README]] — 量化章节- [[概念/pruning]] — 剪枝
 
 ---
 

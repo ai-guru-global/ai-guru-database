@@ -40,9 +40,9 @@ name_zh: "模型剪枝"
 - **核心思想**：神经网络多数权重对最终输出贡献微小，**移除后可显著减少计算量而不损失精度**。
 - **核心假设**（Lottery Ticket Hypothesis）：大网络中存在"中奖子网络"，可独立训练到原性能。
 - **三种粒度**：
-  - **Unstructured（非结构化）**：移除单个权重 → 稀疏权重
-  - **Structured（结构化）**：移除整个神经元 / 通道 / 层 → 小密集模型
-  - **Semi-structured**：2:4 sparsity（NVIDIA 优化）
+ - **Unstructured（非结构化）**：移除单个权重 → 稀疏权重
+ - **Structured（结构化）**：移除整个神经元 / 通道 / 层 → 小密集模型
+ - **Semi-structured**：2:4 sparsity（NVIDIA 优化）
 - **LLM 时代重点**：结构化剪枝（兼容 GPU 推理）
 
 ## 一句话解释
@@ -156,7 +156,7 @@ modifier.apply(model)
 - [[概念/quantization]] — 量化
 - [[概念/awq]] / [[概念/gptq]] / [[概念/nf4]] — 量化方法
 - [[概念/knowledge-distillation]] — 知识蒸馏
-- [[10_部署推理/04_模型量化]] — 量化章节
+- [[10_部署推理/04_模型量化/README]] — 量化章节
 - [[07_模型训练/05_模型压缩/README]] — 压缩章节
 
 ---

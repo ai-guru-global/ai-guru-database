@@ -351,19 +351,19 @@ Musk 在 2026 年的影响呈现为三条平行颠覆线：
 ### Musk 2026 金句
 
 1. **"Grok is the only model that will tell you the truth, even when it's uncomfortable."**
-   *"Grok 是唯一会告诉你真相的模型，即使真相令人不适。"* — Grok 4 发布
+ *"Grok 是唯一会告诉你真相的模型，即使真相令人不适。"* — Grok 4 发布
 
 2. **"Optimus will be worth more than the entire car business combined."**
-   *"Optimus 的价值将超过整个汽车业务的总和。"* — Tesla 股东大会
+ *"Optimus 的价值将超过整个汽车业务的总和。"* — Tesla 股东大会
 
 3. **"I both fear AI and believe we must lead in it."**
-   *"我既害怕 AI，又相信我们必须领先。"* — Lex Fridman Podcast
+ *"我既害怕 AI，又相信我们必须领先。"* — Lex Fridman Podcast
 
 4. **"DOGE will save Americans trillions by making government as efficient as a startup."**
-   *"DOGE 将通过让政府像创业公司一样高效，为美国人省下数万亿。"* — DOGE 启动
+ *"DOGE 将通过让政府像创业公司一样高效，为美国人省下数万亿。"* — DOGE 启动
 
 5. **"The worst outcome is for the wrong people to build AGI first."**
-   *"最坏的结果是错误的人先造出 AGI。"*
+ *"最坏的结果是错误的人先造出 AGI。"*
 
 ### 关键数据
 
@@ -460,8 +460,8 @@ Musk 同时管理 6+ 公司引发精力分散质疑：
 ### 技术与基础设施
 
 - [[05_大模型/13_全球LLM生态/index|xAI]] -- xAI 模型技术全景
-- [[05_大模型/08_推理模型]] -- 推理模型路线
-- [[10_部署推理/05_硬件与算力]] -- Colossus 算力基建
+- [[05_大模型/08_推理模型/README]] -- 推理模型路线
+- [[10_部署推理/05_硬件与算力/README]] -- Colossus 算力基建
 - [[00_入门/04_伦理与未来/03_AI未来趋势]] -- 具身智能与 AGI 讨论
 - [[17_伦理安全/README]] -- AI 治理与监管
 - [[00_入门/AI_Ethics_Society]] -- AI 伦理与社会影响

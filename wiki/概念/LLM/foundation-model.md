@@ -39,13 +39,13 @@ name_zh: "基础模型"
 
 - **定义**：在大规模数据上预训练、可通过微调或 Prompt 适配多种下游任务的通用大模型
 - **核心特征**：
-  - **大规模参数**（数十亿到数万亿）
-  - **大规模预训练数据**（TB 级文本/图像/视频）
-  - **涌现能力**（规模超过阈值后出现）
-  - **下游可适配**（SFT / RLHF / Prompt）
+ - **大规模参数**（数十亿到数万亿）
+ - **大规模预训练数据**（TB 级文本/图像/视频）
+ - **涌现能力**（规模超过阈值后出现）
+ - **下游可适配**（SFT / RLHF / Prompt）
 - **代表模型**（2026）：
-  - 闭源：GPT-5、Claude Opus 4.8、Gemini 3 Ultra
-  - 开源：Llama 4、DeepSeek-V3、Qwen3、Mixtral
+ - 闭源：GPT-5、Claude Opus 4.8、Gemini 3 Ultra
+ - 开源：Llama 4、DeepSeek-V3、Qwen3、Mixtral
 
 ## 模型层次关系
 
@@ -196,7 +196,7 @@ print(results.summary())  # 各维度得分 + 成本分析
 - [[概念/LLM/llmops|LLMOps]]
 - [[概念/LLM/large-language-model|大语言模型]]
 - [[12_架构基建/06_云厂商/AWS/01_AWS_Bedrock_深入分析|AWS Bedrock 深度解析]]
-- [[05_大模型/06_微调技术|微调技术]]
+- [[05_大模型/06_微调技术/README|微调技术]]
 - [[08_模型评估/02_基准测试/index|基准测试深度解析]]
 - [[概念/LLM/llm-benchmarks|LLM Benchmarks]]
 - [[概念/LLM/llm-production-pipeline|LLM 生产管线]]

@@ -34,19 +34,19 @@ name_zh: "LLM 推理引擎"
 
 - **定义**：专门优化 LLM 推理（Prefill + Decode）的服务系统，区别于通用 HuggingFace Transformers。
 - **核心优化技术**：
-  - **PagedAttention**：KV Cache 分页管理（vLLM）
-  - **连续批处理（Continuous Batching）**：动态插入/移除请求
-  - **推测解码（Speculative Decoding）**：draft model + verify
-  - **KV Cache 优化**：GQA / MLA / 共享 prefix
-  - **量化**：INT4 / INT8 / FP8
-  - **Flash Attention**：IO 感知的精确注意力
+ - **PagedAttention**：KV Cache 分页管理（vLLM）
+ - **连续批处理（Continuous Batching）**：动态插入/移除请求
+ - **推测解码（Speculative Decoding）**：draft model + verify
+ - **KV Cache 优化**：GQA / MLA / 共享 prefix
+ - **量化**：INT4 / INT8 / FP8
+ - **Flash Attention**：IO 感知的精确注意力
 - **核心能力**：
-  - OpenAI 兼容 API
-  - 流式输出（SSE）
-  - 动态批处理
-  - 多 GPU 张量并行
-  - 多 LoRA 热切换
-  - Function Calling
+ - OpenAI 兼容 API
+ - 流式输出（SSE）
+ - 动态批处理
+ - 多 GPU 张量并行
+ - 多 LoRA 热切换
+ - Function Calling
 
 ## 一句话解释
 
@@ -192,8 +192,8 @@ name_zh: "LLM 推理引擎"
 - [[概念/LLM/tensorrt-llm|TensorRT-LLM]]
 - [[概念/LLM/llm-inference-checklist|推理上线检查清单]]
 - [[概念/LLM/llm-inference-cost-optimization|推理成本优化]]
-- [[10_部署推理/02_推理引擎|推理引擎专题]]
-- [[10_部署推理/03_推理优化|推理性能优化]]
+- [[10_部署推理/02_推理引擎/README|推理引擎专题]]
+- [[10_部署推理/03_推理优化/README|推理性能优化]]
 
 ## 性能基准参考 (7B 模型, H100)
 

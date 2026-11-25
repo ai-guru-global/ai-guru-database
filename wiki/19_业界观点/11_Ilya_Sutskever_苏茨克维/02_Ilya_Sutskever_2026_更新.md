@@ -348,16 +348,16 @@ Sutskever 的离职+SSI 的成功对 OpenAI 内部文化产生微妙影响：
 ### Sutskever 2026 金句
 
 1. **"Build safe superintelligence, by which we mean a system that is provably aligned with human values."**
-   *"构建安全的超级智能，意指一个可证明与人类价值对齐的系统。"*
+ *"构建安全的超级智能，意指一个可证明与人类价值对齐的系统。"*
 
 2. **"When you optimize for engagement and revenue, you make compromises on safety."**
-   *"当你为参与度和收入优化时，你会在安全上妥协。"*
+ *"当你为参与度和收入优化时，你会在安全上妥协。"*
 
 3. **"Pre-training scaling alone won't get us to AGI."**
-   *"单纯靠预训练扩展无法带我们到达 AGI。"*
+ *"单纯靠预训练扩展无法带我们到达 AGI。"*
 
 4. **"Alignment is the most important unsolved problem in AI."**
-   *"对齐是 AI 领域最重要的未解难题。"*
+ *"对齐是 AI 领域最重要的未解难题。"*
 
 ### 关键数据
 
@@ -443,7 +443,7 @@ Sutskever 在 2023 年 11 月 OpenAI 董事会事件中的角色仍被讨论：
 ### 技术与理论
 
 - [[05_大模型/13_全球LLM生态/09_OpenAI_深入分析]] -- GPT 系列技术路线
-- [[05_大模型/08_推理模型]] -- 推理模型与对齐
+- [[05_大模型/08_推理模型/README]] -- 推理模型与对齐
 - [[17_伦理安全/README]] -- AI 安全与对齐
 - [[00_入门/04_伦理与未来/03_AI未来趋势]] -- AGI 时间线
 - [[00_入门/AI_Ethics_Society]] -- AI 伦理与社会

@@ -42,9 +42,9 @@ name_zh: "机器学习实战"
 
 | 属性 | 说明 |
 |------|------|
-| **书名** | Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow（第3版） |
+| **书名** | Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow（第 3 版） |
 | **作者** | Aurélien Géron |
-| **出版社** | O'Reilly（2022，第3版） |
+| **出版社** | O'Reilly（2022，第 3 版） |
 | **页数** | 约 1000 页 |
 | **难度** | ⭐⭐☆（入门→中级） |
 | **代码语言** | Python（Scikit-Learn / Keras / TensorFlow） |
@@ -60,7 +60,7 @@ name_zh: "机器学习实战"
 - **而是**讲"ML/DL 全景 + 端到端工程"的实战圣经
 
 在知识库的书籍谱系中，本书处于基础核心位置：
-- 是 [[03_深度学习/]] 和 [[02_机器学习/]] 的**首选入门配套**
+- 是 [[03_深度学习/README]] 和 [[02_机器学习/README]] 的**首选入门配套**
 - 上承 [[90_学习/05_参考资料/books/01_why_machines_learn]]（数学科普，建立直觉）
 - 平行 [[90_学习/05_参考资料/books/09_dl_with_python_chollet]]（Chollet 的 DL 入门，偏 Keras/哲学）
 - 是 [[90_学习/05_参考资料/books/03_nlp_with_transformers]]、[[90_学习/05_参考资料/books/14_build_llm_from_scratch_raschka]] 的**前置基础**
@@ -176,9 +176,9 @@ Géron 用更通俗的方式讲解同一架构，适合作为论文的前置阅�
 
 - **ML 定义**: 让机器从数据中学习规律，而非人工编程
 - **ML 系统分类**:
-  - 监督/无监督/半监督/强化
-  - 在线学习 vs 批量学习
-  - 基于实例 vs 基于模型
+ - 监督/无监督/半监督/强化
+ - 在线学习 vs 批量学习
+ - 基于实例 vs 基于模型
 - **ML 项目的主要挑战**: 数据量不足、质量差、不具代表性、特征无关、过拟合/欠拟合
 
 #### Ch 2: 端到端机器学习项目
@@ -198,10 +198,10 @@ Géron 用更通俗的方式讲解同一架构，适合作为论文的前置阅�
 - **MNIST 手写数字**: ML 的"Hello World"
 - **二分类器训练**: SGDClassifier
 - **性能度量**:
-  - 交叉熵 / 准确率的陷阱（不平衡数据）
-  - 混淆矩阵（Confusion Matrix）
-  - 精确率（Precision）vs 召回率（Recall）的权衡
-  - Precision/Recall 曲线、ROC 曲线、AUC
+ - 交叉熵 / 准确率的陷阱（不平衡数据）
+ - 混淆矩阵（Confusion Matrix）
+ - 精确率（Precision）vs 召回率（Recall）的权衡
+ - Precision/Recall 曲线、ROC 曲线、AUC
 - **多分类**: OvO / OvR 策略
 - **多标签与多输出分类**
 
@@ -209,8 +209,8 @@ Géron 用更通俗的方式讲解同一架构，适合作为论文的前置阅�
 
 - **线性回归**: 正规方程 vs 梯度下降
 - **梯度下降详解**:
-  - Batch / Stochastic / Mini-batch GD
-  - 学习率的影响（学习曲线诊断）
+ - Batch / Stochastic / Mini-batch GD
+ - 学习率的影响（学习曲线诊断）
 - **逻辑回归**: 作为分类器的原理、决策边界
 - **Softmax 回归**: 多分类
 
@@ -239,8 +239,8 @@ Géron 用更通俗的方式讲解同一架构，适合作为论文的前置阅�
 
 - **维度灾难**: 高维空间反直觉
 - **降维方法**:
-  - PCA（主成分分析）— 方差最大化
-  - Kernel PCA、LLE、t-SNE、UMAP
+ - PCA（主成分分析）— 方差最大化
+ - Kernel PCA、LLE、t-SNE、UMAP
 - **应用**: 可视化、加速训练、压缩
 
 #### Ch 9: 无监督学习
@@ -300,7 +300,7 @@ Géron 用更通俗的方式讲解同一架构，适合作为论文的前置阅�
 - **词嵌入**: Word2Vec 思想、Embedding 层
 - **编码器-解码器架构**: Seq2Seq
 - **Attention 机制**: Bahdanau / Luong Attention
-- **Transformer 架构**: **第3版新增章节**，Self-Attention、位置编码
+- **Transformer 架构**: **第 3 版新增章节**，Self-Attention、位置编码
 
 #### Ch 17: 表示学习与自动编码器
 
@@ -374,16 +374,16 @@ Transformer = 完全基于 Attention，抛弃 RNN
 
 | 本书章节 | 本书概念 | 知识库主题 | 关联说明 |
 |----------|----------|------------|----------|
-| Part 1 全部 | 经典 ML | [[02_机器学习/]] | ML 基础全集 |
-| Ch 2 端到端项目 | ML 流程 | [[02_机器学习/]] | 工程方法论 |
-| Ch 3 分类 | 评估指标 | [[08_模型评估/]] | 分类评估 |
-| Ch 4-5 训练/SVM | 优化 | [[01_数学基础/]] | 数学基础 |
-| Ch 6-7 树/集成 | 树模型 | [[02_机器学习/]] | 经典算法 |
-| Ch 10-11 神经网络 | DL 基础 | [[03_深度学习/]] | 神经网络核心 |
-| Ch 14 CNN | 卷积网络 | [[04_计算机视觉/]] | CV 基础 |
-| Ch 15-16 RNN/Transformer | 序列模型 | [[05_大模型/01_LLM基础]] | 序列处理 |
+| Part 1 全部 | 经典 ML | [[02_机器学习/README]] | ML 基础全集 |
+| Ch 2 端到端项目 | ML 流程 | [[02_机器学习/README]] | 工程方法论 |
+| Ch 3 分类 | 评估指标 | [[08_模型评估/README]] | 分类评估 |
+| Ch 4-5 训练/SVM | 优化 | [[01_数学基础/README]] | 数学基础 |
+| Ch 6-7 树/集成 | 树模型 | [[02_机器学习/README]] | 经典算法 |
+| Ch 10-11 神经网络 | DL 基础 | [[03_深度学习/README]] | 神经网络核心 |
+| Ch 14 CNN | 卷积网络 | [[04_计算机视觉/README]] | CV 基础 |
+| Ch 15-16 RNN/Transformer | 序列模型 | [[05_大模型/01_LLM基础/README]] | 序列处理 |
 | Ch 16 Transformer | Attention | [[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading]] | 架构源头 |
-| Ch 19 部署 | TF Serving | [[10_部署推理/]] | 模型部署 |
+| Ch 19 部署 | TF Serving | [[10_部署推理/README]] | 模型部署 |
 
 ## 适合人群
 
@@ -443,7 +443,7 @@ Transformer = 完全基于 Attention，抛弃 RNN
 
 - **代码完整可运行**: 每章配套 GitHub Notebook，即拷即跑
 - **端到端项目驱动**: Ch 2 的房价项目是 ML 工程方法论的最佳示范
-- **第3版更新及时**: 新增 Transformer/Attention 章节，衔接现代 LLM
+- **第 3 版更新及时**: 新增 Transformer/Attention 章节，衔接现代 LLM
 - **插图丰富**: 概念可视化到位，降低理解门槛
 - **覆盖最广**: 1000 页涵盖从线性回归到强化学习的完整图谱
 
@@ -461,8 +461,8 @@ Transformer = 完全基于 Attention，抛弃 RNN
 - [[90_学习/05_参考资料/books/01_why_machines_learn|Why Machines Learn]] — 数学科普
 - [[90_学习/05_参考资料/books/03_nlp_with_transformers|NLP with Transformers]] — Transformer 应用进阶
 - [[90_学习/05_参考资料/books/14_build_llm_from_scratch_raschka|Build LLM From Scratch]] — LLM 底层实现
-- [[02_机器学习/]] — 知识库 ML 章节
-- [[03_深度学习/]] — 知识库 DL 章节
+- [[02_机器学习/README]] — 知识库 ML 章节
+- [[03_深度学习/README]] — 知识库 DL 章节
 - [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图 2026]]
 
-> **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[02_机器学习/]] | [[03_深度学习/]] | [[08_模型评估/]] | [[01_数学基础/]]
+> **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[02_机器学习/README]] | [[03_深度学习/README]] | [[08_模型评估/README]] | [[01_数学基础/README]]

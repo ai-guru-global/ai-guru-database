@@ -66,9 +66,9 @@ name_zh: "从零构建推理模型"
 - **范式转变**: 传统 LLM 是"预测下一个 Token"，推理模型是"先思考再回答"
 - **System 1 vs System 2**: 快思考（直觉式补全）与慢思考（ deliberate 推理）
 - **推理模型的核心特征**:
-  - 长思维链（Chain of Thought 可达数千 Token）
-  - 自我纠错与回溯
-  - 在数学/代码/逻辑任务上的质的飞跃
+ - 长思维链（Chain of Thought 可达数千 Token）
+ - 自我纠错与回溯
+ - 在数学/代码/逻辑任务上的质的飞跃
 - **里程碑事件**: OpenAI o1 → o3、DeepSeek-R1、QwQ、Gemini Flash Thinking
 - **推理 vs 传统 CoT Prompting**: 训练时内化 vs 推理时提示
 
@@ -76,10 +76,10 @@ name_zh: "从零构建推理模型"
 
 - **CoT 的起源**: Wei et al. 2022 论文的"Let's think step by step"
 - **CoT 变体**:
-  - Zero-shot CoT（无需示例）
-  - Few-shot CoT（提供推理示例）
-  - Self-Consistency（多路径采样 + 投票）
-  - Tree of Thoughts（树状搜索）
+ - Zero-shot CoT（无需示例）
+ - Few-shot CoT（提供推理示例）
+ - Self-Consistency（多路径采样 + 投票）
+ - Tree of Thoughts（树状搜索）
 - **显式 vs 隐式推理**: 外显文本 CoT vs 模型内部隐式计算
 - **CoT 数据构造**: 如何为 RL 训练准备高质量的推理轨迹（Reasoning Traces）
 - **关键洞察**: 推理模型的 CoT 不是"被提示出来的"，而是"被训练出来的"
@@ -87,16 +87,16 @@ name_zh: "从零构建推理模型"
 #### Ch 3: 强化学习入门（for LLM）
 
 - **RL 核心概念在 LLM 中的映射**:
-  - Agent = LLM
-  - Action = 生成下一个 Token
-  - State = 当前上下文（Prompt + 已生成内容）
-  - Reward = 最终答案正确性 / 过程质量
-  - Policy = 模型参数
+ - Agent = LLM
+ - Action = 生成下一个 Token
+ - State = 当前上下文（Prompt + 已生成内容）
+ - Reward = 最终答案正确性 / 过程质量
+ - Policy = 模型参数
 - **RLHF 回顾**: InstructGPT 的三阶段流程（SFT → RM → PPO）
 - **推理场景的特殊性**:
-  - 奖励稀疏（只有最终答案才知道对错）
-  - 序列极长（推理链可达 8K-32K Token）
-  - 探索空间巨大
+ - 奖励稀疏（只有最终答案才知道对错）
+ - 序列极长（推理链可达 8K-32K Token）
+ - 探索空间巨大
 - **从 RLHF 到 Reasoning RL**: 为什么传统 RLHF 不足以训练推理能力
 
 ### Part 2 — 推理导向的 RL 算法
@@ -104,24 +104,24 @@ name_zh: "从零构建推理模型"
 #### Ch 4: PPO 与策略优化
 
 - **PPO（Proximal Policy Optimization）原理**:
-  - 策略梯度与重要性采样
-  - Clip 机制防止策略更新过大
-  - Value Function 与 Advantage 估计
+ - 策略梯度与重要性采样
+ - Clip 机制防止策略更新过大
+ - Value Function 与 Advantage 估计
 - **PPO 在 LLM 中的实现**:
-  - Actor-Critic 架构（Policy Model + Value Model）
-  - KL 散度约束（防止偏离 SFT 模型太远）
-  - 显存优化（4 个模型同时在 GPU 上的挑战）
+ - Actor-Critic 架构（Policy Model + Value Model）
+ - KL 散度约束（防止偏离 SFT 模型太远）
+ - 显存优化（4 个模型同时在 GPU 上的挑战）
 - **PPO 的局限**:
-  - 训练不稳定、超参敏感
-  - 显存开销大（需额外的 Critic 和 Reference 模型）
-  - 长序列下的信用分配（Credit Assignment）困难
+ - 训练不稳定、超参敏感
+ - 显存开销大（需额外的 Critic 和 Reference 模型）
+ - 长序列下的信用分配（Credit Assignment）困难
 
 #### Ch 5: GRPO 与新一代推理 RL 算法
 
 - **GRPO（Group Relative Policy Optimization）**:
-  - DeepSeek-R1 引入的核心算法
-  - 核心思想：同一 Prompt 采样一组（Group）回答，用组内相对排名替代 Value Model
-  - 优势：去掉 Critic 模型，显存减半；训练更稳定
+ - DeepSeek-R1 引入的核心算法
+ - 核心思想：同一 Prompt 采样一组（Group）回答，用组内相对排名替代 Value Model
+ - 优势：去掉 Critic 模型，显存减半；训练更稳定
 - **GRPO 数学公式**:
 
 ```
@@ -132,26 +132,26 @@ name_zh: "从零构建推理模型"
 ```
 
 - **其他推理 RL 算法**:
-  - REINFORCE++（简化版策略梯度）
-  - RLOO（REINFORCE Leave-One-Out）
-  - DAPO（Dynamic Sampling + Clip Higher）
+ - REINFORCE++（简化版策略梯度）
+ - RLOO（REINFORCE Leave-One-Out）
+ - DAPO（Dynamic Sampling + Clip Higher）
 - **算法选择指南**: 按模型规模、计算预算、任务类型选择
 
 #### Ch 6: 奖励建模
 
 - **结果奖励模型（ORM, Outcome Reward Model）**:
-  - 只看最终答案是否正确
-  - 适用于有明确答案的任务（数学、代码）
-  - 规则式奖励（正则匹配、代码执行）vs 模型式奖励
+ - 只看最终答案是否正确
+ - 适用于有明确答案的任务（数学、代码）
+ - 规则式奖励（正则匹配、代码执行）vs 模型式奖励
 - **过程奖励模型（PRM, Process Reward Model）**:
-  - 对推理链的每一步打分
-  - 更精细的信用分配
-  - 标注成本高（需要逐步标注）
-  - 代表工作：Math-Shepherd、OpenAI PRM800K
+ - 对推理链的每一步打分
+ - 更精细的信用分配
+ - 标注成本高（需要逐步标注）
+ - 代表工作：Math-Shepherd、OpenAI PRM800K
 - **混合奖励策略**:
-  - 格式奖励（Format Reward）：确保输出结构正确
-  - 正确性奖励：最终答案验证
-  - 过程奖励：推理步骤质量
+ - 格式奖励（Format Reward）：确保输出结构正确
+ - 正确性奖励：最终答案验证
+ - 过程奖励：推理步骤质量
 - **奖励黑客（Reward Hacking）**: 模型学会"骗过"奖励模型的策略与防范
 
 ### Part 3 — 训练实践
@@ -159,69 +159,69 @@ name_zh: "从零构建推理模型"
 #### Ch 7: 数据工程 for 推理训练
 
 - **推理训练数据的特殊性**:
-  - 需要"问题 + 高质量推理轨迹"对
-  - 数据质量 >> 数据数量（DeepSeek-R1-Zero 仅用少量数据）
+ - 需要"问题 + 高质量推理轨迹"对
+ - 数据质量 >> 数据数量（DeepSeek-R1-Zero 仅用少量数据）
 - **数据来源**:
-  - 数学数据集（GSM8K、MATH、AIME）
-  - 代码数据集（CodeContests、TACO）
-  - 逻辑推理数据集
-  - 合成数据（用强模型生成推理轨迹）
+ - 数学数据集（GSM8K、MATH、AIME）
+ - 代码数据集（CodeContests、TACO）
+ - 逻辑推理数据集
+ - 合成数据（用强模型生成推理轨迹）
 - **数据过滤与质量控制**:
-  - 难度过滤（太简单/太难的样本都不利于训练）
-  - 推理轨迹质量验证（答案正确性 + 推理合理性）
-  - 去重与多样性保证
+ - 难度过滤（太简单/太难的样本都不利于训练）
+ - 推理轨迹质量验证（答案正确性 + 推理合理性）
+ - 去重与多样性保证
 - **课程学习（Curriculum Learning）**: 从易到难的训练策略
 
 #### Ch 8: 训练管道搭建
 
 - **训练阶段设计**:
-  - 阶段 1: 冷启动 SFT（少量高质量推理轨迹）
-  - 阶段 2: 推理导向 RL（GRPO/PPO）
-  - 阶段 3: 通用能力对齐（防止推理训练损害通用能力）
+ - 阶段 1: 冷启动 SFT（少量高质量推理轨迹）
+ - 阶段 2: 推理导向 RL（GRPO/PPO）
+ - 阶段 3: 通用能力对齐（防止推理训练损害通用能力）
 - **工程实现**:
-  - 框架选择：TRL（Hugging Face）、OpenRLHF、veRL
-  - 分布式训练：DeepSpeed ZeRO、FSDP
-  - 采样与训练的异步流水线
+ - 框架选择：TRL（Hugging Face）、OpenRLHF、veRL
+ - 分布式训练：DeepSpeed ZeRO、FSDP
+ - 采样与训练的异步流水线
 - **超参数调优**:
-  - 学习率（通常 1e-6 ~ 5e-6，远小于预训练）
-  - KL 系数 β（控制偏离程度）
-  - 采样温度（影响探索程度）
-  - Group Size（GRPO 的 G 值，通常 8-64）
+ - 学习率（通常 1e-6 ~ 5e-6，远小于预训练）
+ - KL 系数 β（控制偏离程度）
+ - 采样温度（影响探索程度）
+ - Group Size（GRPO 的 G 值，通常 8-64）
 - **训练监控**: 奖励曲线、KL 散度、输出长度变化、正确率
 
 #### Ch 9: 推理评估
 
 - **推理基准测试**:
-  - 数学：GSM8K、MATH、AIME 2024/2025、AMC
-  - 代码：LiveCodeBench、CodeForces、SWE-bench
-  - 逻辑：ARC-AGI、GPQA Diamond
-  - 综合推理：MMLU-Pro、BBH
+ - 数学：GSM8K、MATH、AIME 2024/2025、AMC
+ - 代码：LiveCodeBench、CodeForces、SWE-bench
+ - 逻辑：ARC-AGI、GPQA Diamond
+ - 综合推理：MMLU-Pro、BBH
 - **评估指标**:
-  - Pass@1（单次正确率）
-  - Pass@K（K 次采样至少一次正确）
-  - 推理效率（Token 数 vs 正确率）
+ - Pass@1（单次正确率）
+ - Pass@K（K 次采样至少一次正确）
+ - 推理效率（Token 数 vs 正确率）
 - **推理质量评估**:
-  - 推理链的逻辑连贯性
-  - 自我纠错的有效性
-  - 是否存在"跳步"或"幻觉推理"
+ - 推理链的逻辑连贯性
+ - 自我纠错的有效性
+ - 是否存在"跳步"或"幻觉推理"
 - **评估陷阱**:
-  - 数据污染（Benchmark 数据泄露到训练集）
-  - 过拟合特定推理模式
-  - 长输出评估的成本与偏差
+ - 数据污染（Benchmark 数据泄露到训练集）
+ - 过拟合特定推理模式
+ - 长输出评估的成本与偏差
 
 ### Part 4 — 部署与优化
 
 #### Ch 10: 推理模型部署
 
 - **推理模型的特殊挑战**:
-  - 输出极长（思维链 + 最终答案，可达 16K+ Token）
-  - 延迟显著增加（用户需等待"思考"完成）
-  - 成本倍增（Output Token 是主要成本）
+ - 输出极长（思维链 + 最终答案，可达 16K+ Token）
+ - 延迟显著增加（用户需等待"思考"完成）
+ - 成本倍增（Output Token 是主要成本）
 - **优化策略**:
-  - 思维链截断/摘要（在质量与延迟间权衡）
-  - 流式输出思维链（让用户看到"思考过程"）
-  - 思考预算控制（限制最大推理 Token 数）
-  - 推测解码在长输出场景的应用
+ - 思维链截断/摘要（在质量与延迟间权衡）
+ - 流式输出思维链（让用户看到"思考过程"）
+ - 思考预算控制（限制最大推理 Token 数）
+ - 推测解码在长输出场景的应用
 - **分离式部署**: 思考阶段用大模型，简单回答用小模型
 - **用户体验设计**: 思考指示器、渐进式展示、可中断推理
 
@@ -290,12 +290,12 @@ ri = R(q, oi)                                      # 奖励函数
 | 本书章节 | 知识库主题 | 关联说明 |
 |----------|------------|----------|
 | Ch 1-2 CoT 与推理范式 | [[05_大模型/07_提示工程/16_Prompt工程]] | CoT 提示技术 |
-| Ch 3 RL 基础 | [[06_强化学习/]] | RL 核心概念 |
-| Ch 4-5 PPO/GRPO | [[07_模型训练/]] | 后训练方法 |
-| Ch 6 奖励建模 | [[07_模型训练/]] | RLHF 奖励设计 |
-| Ch 7 数据工程 | [[02_机器学习/]] | 训练数据构建 |
-| Ch 9 评估 | [[08_模型评估/]] | 推理能力评估 |
-| Ch 10 部署 | [[10_部署推理/]] | 长输出推理优化 |
+| Ch 3 RL 基础 | [[06_强化学习/README]] | RL 核心概念 |
+| Ch 4-5 PPO/GRPO | [[07_模型训练/README]] | 后训练方法 |
+| Ch 6 奖励建模 | [[07_模型训练/README]] | RLHF 奖励设计 |
+| Ch 7 数据工程 | [[02_机器学习/README]] | 训练数据构建 |
+| Ch 9 评估 | [[08_模型评估/README]] | 推理能力评估 |
+| Ch 10 部署 | [[10_部署推理/README]] | 长输出推理优化 |
 
 ### 与相关书籍的关系
 
@@ -403,8 +403,8 @@ ri = R(q, oi)                                      # 奖励函数
 
 - [[90_学习/05_参考资料/books/14_build_llm_from_scratch_raschka|Build LLM from Scratch]] — 前置阅读
 - [[90_学习/05_参考资料/books/11_deep_learning_goodfellow|Deep Learning (花书)]] — 数学基础
-- [[06_强化学习/]] — RL 知识库章节
-- [[07_模型训练/]] — 训练方法知识库章节
+- [[06_强化学习/README]] — RL 知识库章节
+- [[07_模型训练/README]] — 训练方法知识库章节
 - [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图 2026]]
 
-> **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[06_强化学习/]] | [[07_模型训练/]] | [[08_模型评估/]]
+> **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[06_强化学习/README]] | [[07_模型训练/README]] | [[08_模型评估/README]]

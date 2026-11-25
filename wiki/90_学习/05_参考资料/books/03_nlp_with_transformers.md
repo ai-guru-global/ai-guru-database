@@ -69,7 +69,7 @@ name_zh: "Transformers 自然语言处理"
 在知识库的书籍谱系中：
 - 上承 [[90_学习/05_参考资料/books/07_hands_on_ml_geron]]（ML/DL 基础）
 - 平行 [[90_学习/05_参考资料/books/08_hands_on_llms_alammar]]（图解式概念）、[[90_学习/05_参考资料/books/14_build_llm_from_scratch_raschka]]（底层实现）
-- 是 [[05_大模型/01_LLM基础]] 的**应用层配套**
+- 是 [[05_大模型/01_LLM基础/README]] 的**应用层配套**
 
 ## 核心内容
 
@@ -192,10 +192,10 @@ tokenizer.train_from_iterator(text_iterator, trainer)
 - **Transformer 革命**: 从 RNN/CNN 主导到 Attention 一统天下
 - **迁移学习（Transfer Learning）**: 预训练 + 微调范式
 - **Hugging Face 生态**:
-  - `transformers`: 模型库（10万+ 模型）
-  - `datasets`: 数据集库
-  - `tokenizers`: 高效分词器（Rust 实现）
-  - **Hub**: 模型/数据集共享平台
+ - `transformers`: 模型库（10 万+ 模型）
+ - `datasets`: 数据集库
+ - `tokenizers`: 高效分词器（Rust 实现）
+ - **Hub**: 模型/数据集共享平台
 - **Transformer 三大架构族**:
 
 | 架构族 | 代表 | 特点 | 典型任务 |
@@ -208,9 +208,9 @@ tokenizer.train_from_iterator(text_iterator, trainer)
 
 - **任务**: 情感分析、主题分类
 - **用 BERT 微调**:
-  - 加载预训练模型（`AutoModelForSequenceClassification`）
-  - Tokenization（`AutoTokenizer`）
-  - `Trainer` API 训练
+ - 加载预训练模型（`AutoModelForSequenceClassification`）
+ - Tokenization（`AutoTokenizer`）
+ - `Trainer` API 训练
 - **Dataset 加载与预处理**: `load_dataset`、`map`、动态 Padding
 - **评估**: Accuracy、F1、`evaluate` 库
 - **隐患分析**: 虚假相关性、数据泄露
@@ -220,49 +220,49 @@ tokenizer.train_from_iterator(text_iterator, trainer)
 本章是全书理论核心，深入剖析 Transformer 内部：
 
 - **Transformer Encoder 详解**:
-  - Embedding 层（Token + Position）
-  - Multi-Head Self-Attention 实现
-  - Feed Forward Network
-  - Add & Norm（残差 + LayerNorm）
+ - Embedding 层（Token + Position）
+ - Multi-Head Self-Attention 实现
+ - Feed Forward Network
+ - Add & Norm（残差 + LayerNorm）
 - **三种注意力机制**:
-  - Bidirectional（BERT）: 全部 Token 互相可见
-  - Causal/Masked（GPT）: 只能看到左侧
-  - Cross-Attention（编码器-解码器）: 解码器关注编码器输出
+ - Bidirectional（BERT）: 全部 Token 互相可见
+ - Causal/Masked（GPT）: 只能看到左侧
+ - Cross-Attention（编码器-解码器）: 解码器关注编码器输出
 - **解码策略**: Greedy、Beam Search、Sampling、Top-k/Top-p
 
 ### Ch 4: 多语种命名实体识别（NER）
 
 - **任务**: 从文本识别实体（人名、地名、组织）
 - **序列标注 vs Token 分类**:
-  - 子词对齐问题（一个词被切成多个子词）
-  - 标签对齐策略
+ - 子词对齐问题（一个词被切成多个子词）
+ - 标签对齐策略
 - **使用 XLM-RoBERTa**: 多语态预训练模型
 - **评估**: Token 级别的 Precision/Recall/F1
 
 ### Ch 5: 文本生成
 
 - **GPT 类模型生成**:
-  - Greedy vs Beam Search vs Sampling
-  - Temperature、Top-k、Top-p 参数调节
+ - Greedy vs Beam Search vs Sampling
+ - Temperature、Top-k、Top-p 参数调节
 - **生成质量控制**:
-  - n-gram 重复惩罚（No Repeat N-gram）
-  - 长度惩罚
+ - n-gram 重复惩罚（No Repeat N-gram）
+ - 长度惩罚
 - **评估生成质量**: BLEU、ROUGE、困惑度（Perplexity）
 
 ### Ch 6: 文本摘要与翻译（Seq2Seq）
 
 - **任务**: 长文本 → 短摘要；源语言 → 目标语言
 - **使用 T5 / BART**:
-  - Encoder-Decoder 架构
-  - 文本到文本（Text-to-Text）统一范式
+ - Encoder-Decoder 架构
+ - 文本到文本（Text-to-Text）统一范式
 - **摘要评估**: ROUGE（Recall-Oriented Understudy for Gisting Evaluation）
 - **翻译评估**: BLEU（n-gram 匹配）
 
 ### Ch 7: 问答系统
 
 - **抽取式问答（Extractive QA）**:
-  - 给定上下文 + 问题，从上下文中抽取答案片段
-  - 使用 BERT 的 Start/End 分类头
+ - 给定上下文 + 问题，从上下文中抽取答案片段
+ - 使用 BERT 的 Start/End 分类头
 - **SQuAD 数据集**: QA 基准
 - **评估**: Exact Match (EM)、F1
 
@@ -271,9 +271,9 @@ tokenizer.train_from_iterator(text_iterator, trainer)
 本章聚焦模型压缩与加速：
 
 - **知识蒸馏（Distillation）**:
-  - 大模型（Teacher）→ 小模型（Student）
-  - 软标签 + 硬标签联合训练
-  - DistilBERT: 比 BERT 小 40%、快 60%
+ - 大模型（Teacher）→ 小模型（Student）
+ - 软标签 + 硬标签联合训练
+ - DistilBERT: 比 BERT 小 40%、快 60%
 - **量化（Quantization）**: INT8 推理
 - **剪枝（Pruning）**: 去除不重要的权重
 - **ONNX 导出**: 跨框架部署加速
@@ -281,18 +281,18 @@ tokenizer.train_from_iterator(text_iterator, trainer)
 ### Ch 9: 处理少量标注数据
 
 - **数据增强（Data Augmentation）**:
-  - 回译（Translate-Retrieve）
-  - 同义词替换、随机插入/删除
+ - 回译（Translate-Retrieve）
+ - 同义词替换、随机插入/删除
 - **半监督学习**:
-  - 伪标签（Self-Training）
-  - ULMFiT 思想
+ - 伪标签（Self-Training）
+ - ULMFiT 思想
 - **少样本学习（Few-Shot）**: 提示工程的早期形态
 
 ### Ch 10: 训练 Transformer 从零开始
 
 - **何时需要从头训练**:
-  - 领域差异大（如代码、医疗、古文）
-  - 语言未被覆盖（小语种）
+ - 领域差异大（如代码、医疗、古文）
+ - 语言未被覆盖（小语种）
 - **Tokenizer 训练**: 用 `tokenizers` 库训练 BPE
 - **数据集准备**: 大规模语料清洗
 - **训练配置**: 分布式训练、混合精度
@@ -351,16 +351,16 @@ Student（小模型，如 DistilBERT）
 
 | 本书章节 | 本书概念 | 知识库主题 | 关联说明 |
 |----------|----------|------------|----------|
-| Ch 1 Transformer 概览 | 三大架构族 | [[05_大模型/01_LLM基础]] | LLM 基础 |
+| Ch 1 Transformer 概览 | 三大架构族 | [[05_大模型/01_LLM基础/README]] | LLM 基础 |
 | Ch 2 分类 | BERT 微调 | [[05_大模型/06_微调技术/04_GenAI_L18_微调_LLMs]] | 微调实战 |
-| Ch 3 剖析 | Attention 实现 | [[03_深度学习/]] | 架构原理 |
-| Ch 4 NER | 序列标注 | [[02_机器学习/]] | 标注任务 |
+| Ch 3 剖析 | Attention 实现 | [[03_深度学习/README]] | 架构原理 |
+| Ch 4 NER | 序列标注 | [[02_机器学习/README]] | 标注任务 |
 | Ch 5 生成 | 采样策略 | [[05_大模型/07_提示工程/16_Prompt工程]] | 解码控制 |
-| Ch 6 摘要/翻译 | Seq2Seq | [[05_大模型/01_LLM基础]] | 生成任务 |
+| Ch 6 摘要/翻译 | Seq2Seq | [[05_大模型/01_LLM基础/README]] | 生成任务 |
 | Ch 7 问答 | 抽取式 QA | [[14_RAG系统/01_RAG基础/07_RAG_系统]] | QA 衔接 RAG |
-| Ch 8 高效化 | 蒸馏/量化 | [[10_部署推理/]] | 模型压缩 |
-| Ch 9 少样本 | 数据增强 | [[02_机器学习/]] | 数据策略 |
-| Ch 10 从头训练 | 预训练 | [[07_模型训练/]] | 训练流程 |
+| Ch 8 高效化 | 蒸馏/量化 | [[10_部署推理/README]] | 模型压缩 |
+| Ch 9 少样本 | 数据增强 | [[02_机器学习/README]] | 数据策略 |
+| Ch 10 从头训练 | 预训练 | [[07_模型训练/README]] | 训练流程 |
 
 ## 适合人群
 
@@ -439,7 +439,7 @@ Student（小模型，如 DistilBERT）
 - [[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading|Attention 论文导读]] — 架构源头
 - [[90_学习/05_参考资料/Papers/03_BERT_Reading|BERT 论文导读]] — 编码器代表
 - [[90_学习/05_参考资料/Papers/02_GPT3_Reading|GPT-3 论文导读]] — 解码器代表
-- [[05_大模型/01_LLM基础]] — 知识库 LLM 基础
+- [[05_大模型/01_LLM基础/README]] — 知识库 LLM 基础
 - [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图 2026]]
 
-> **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[05_大模型/01_LLM基础]] | [[03_深度学习/]] | [[10_部署推理/]] | [[90_学习/05_参考资料/Projects/01_papers_with_code]]
+> **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[05_大模型/01_LLM基础/README]] | [[03_深度学习/README]] | [[10_部署推理/README]] | [[90_学习/05_参考资料/Projects/01_papers_with_code]]

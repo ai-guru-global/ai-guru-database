@@ -6,6 +6,10 @@ updated: 2026-07-21
 sources: []
 name_zh: "大模型"
 name_en: "NLP & LLMs"
+category: 05-nlp-llms
+tags: ["llm", "large-language-models", "index"]
+summary: "大模型主章总目录：LLM 基础到微调、推理模型、多模态与产品生态的十六个子域入口页。"
+tier: supporting
 ---
 
 # NLP Llms
@@ -51,7 +55,7 @@ name_en: "NLP & LLMs"
 - [[05_大模型/13_全球LLM生态/02_GenAI_L16_开源模型_and_Hugging_Face|Genai L16 Open Source Models And Hugging Face]]
 - [[05_大模型/04_LLM架构/04_LLM_架构_Evolution|LLM Architecture Evolution]]
 - [[05_大模型/01_LLM基础/04_LLM_入门|LLM For Beginners]]
-- [[05_大模型/01_LLM基础|LLM Fundamentals]]
+- [[05_大模型/01_LLM基础/README|LLM Fundamentals]]
 - [[10_部署推理/03_推理优化/02_LLM推理_深入分析|LLM Inference Deep Dive]]
 - [[10_部署推理/01_部署基础/07_LLM_生产_部署_操作手册|LLM Production Deployment Runbook]]
 - [[07_模型训练/01_训练基础/03_LLM_训练_深入分析|LLM Training Deep Dive]]
@@ -61,7 +65,7 @@ name_en: "NLP & LLMs"
 - [[05_大模型/15_约束生成/03_Structured_输出_指南|Structured Output Guide]]
 - [[05_大模型/03_Transformer架构/04_Transformer_架构详解|Transformer Architecture]]
 - [[05_大模型/03_Transformer架构/04_Transformer_架构详解|Transformer Deep Dive]]
-- [[05_大模型/Transformer_Training_vs_Inference|Transformer Training Vs Inference]]
+- [[05_大模型/03_Transformer架构/07_Transformer_训练推理应用|Transformer Training Vs Inference]]
 
 ## 子域统计
 
@@ -79,7 +83,7 @@ name_en: "NLP & LLMs"
 | Edge_LLM | 2 | 端侧部署 |
 | Speech_Audio_AI | 1 | 语音音频 |
 | LLM_Data_Engineering | 1 | 数据工程 |
-| Transformer_Architecture | 7 | Transformer架构 |
+| Transformer_Architecture | 7 | Transformer 架构 |
 | Constrained_Generation | 2 | 约束生成 |
 | Kimi_K3 | 1 | Kimi K3 技术报告 |
 

@@ -153,7 +153,7 @@ def fixmatch_loss(model, x_labeled, y_labeled, x_unlabeled,
 |------|------|----------|-------------------|
 | Π-Model | 2017 | 两次 Dropout 一致性 | ~78% |
 | Mean Teacher | 2017 | EMA 教师模型 | ~80% |
-| MixMatch | 2019 |  holistic 半监督 | ~89% |
+| MixMatch | 2019 | holistic 半监督 | ~89% |
 | ReMixMatch | 2020 | 分布对齐 + 增强 | ~95% |
 | FixMatch | 2020 | 弱→强 + 阈值筛选 | ~95% |
 | FlexMatch | 2021 | 自适应阈值 | ~96% |
@@ -303,6 +303,6 @@ def llm_pseudo_labeling(texts, model="gpt-4o", few_shot_examples=None):
 
 - [[概念/Math/supervised-learning|监督学习]]
 - [[概念/Math/unsupervised-learning|无监督学习]]
-- [[03_深度学习/06_自监督学习/|自监督学习]]
-- [[05_大模型/06_微调技术/|微调技术]] — 少样本学习
+- [[03_深度学习/06_自监督学习/README|自监督学习]]
+- [[05_大模型/06_微调技术/README|微调技术]] — 少样本学习
 - [[08_模型评估/02_基准测试/index|评估数据集]] — 标注质量

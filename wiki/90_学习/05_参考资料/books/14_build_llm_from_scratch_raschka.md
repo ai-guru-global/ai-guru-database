@@ -63,7 +63,7 @@ name_zh: "从零构建大语言模型"
 在知识库的书籍谱系中：
 - 上承 [[90_学习/05_参考资料/books/03_nlp_with_transformers]]（高层抽象的 Transformer 应用）
 - 平行 [[90_学习/05_参考资料/books/08_hands_on_llms_alammar]]（图解式 LLM 教程，互补）
-- 是 [[05_大模型/01_LLM基础]] 的**深度实践配套**
+- 是 [[05_大模型/01_LLM基础/README]] 的**深度实践配套**
 
 ## 核心内容
 
@@ -200,16 +200,16 @@ loss = -sum(log(model(input)[i, target[i]]) for i in range(seq_len))
 ### Ch 2: 处理文本数据
 
 - **分词（Tokenization）**:
-  - 词级 vs 字符级 vs 子词（Subword）的权衡
-  - **Byte-Pair Encoding (BPE)**: GPT 系列使用的分词算法
-    - 从字符级开始，迭代合并最高频的相邻对
-    - 词表构建、特殊 Token（`<|endoftext|>`）
+ - 词级 vs 字符级 vs 子词（Subword）的权衡
+ - **Byte-Pair Encoding (BPE)**: GPT 系列使用的分词算法
+ - 从字符级开始，迭代合并最高频的相邻对
+ - 词表构建、特殊 Token（`<|endoftext|>`）
 - **滑动窗口数据集（Sliding Window）**:
-  - 把长文本切成 `(input, target)` 对
-  - `input` = 前 N 个 Token，`target` = 下一个 Token（自回归目标）
+ - 把长文本切成 `(input, target)` 对
+ - `input` = 前 N 个 Token，`target` = 下一个 Token（自回归目标）
 - **Token Embedding**:
-  - 将 Token ID 映射为稠密向量（Embedding 矩阵）
-  - **位置嵌入（Positional Embedding）**: 编码 Token 的位置信息
+ - 将 Token ID 映射为稠密向量（Embedding 矩阵）
+ - **位置嵌入（Positional Embedding）**: 编码 Token 的位置信息
 - **数据加载器**: PyTorch Dataset / DataLoader 的封装
 
 ### Ch 3: 编码注意力机制（Attention）
@@ -217,16 +217,16 @@ loss = -sum(log(model(input)[i, target[i]]) for i in range(seq_len))
 本章是全书的核心难点，Raschka 采用"三层递进"讲法：
 
 - **第一层: 简化版自注意力**:
-  - 用点积衡量 Token 间相关性
-  - Attention 权重 = softmax(Q·K^T / √d)
-  - 输出 = 权重 × Value 的加权和
+ - 用点积衡量 Token 间相关性
+ - Attention 权重 = softmax(Q·K^T / √d)
+ - 输出 = 权重 × Value 的加权和
 - **第二层: 可训练的自注意力**:
-  - 引入 Q/K/V 三个可学习投影矩阵
-  - 因果掩码（Causal Mask）: 防止看到未来 Token
+ - 引入 Q/K/V 三个可学习投影矩阵
+ - 因果掩码（Causal Mask）: 防止看到未来 Token
 - **第三层: 多头注意力（Multi-Head Attention）**:
-  - 多组 Q/K/V 并行计算
-  - 拼接后线性投影
-  - 为什么多头有效：不同头关注不同类型关系
+ - 多组 Q/K/V 并行计算
+ - 拼接后线性投影
+ - 为什么多头有效：不同头关注不同类型关系
 
 ```python
 # Raschka 的多头注意力核心（简化示意）
@@ -240,13 +240,13 @@ class MultiHeadAttention(nn.Module):
 ### Ch 4: 从零实现 GPT 模型
 
 - **组件实现**:
-  - **LayerNorm**: 逐位置归一化，稳定训练
-  - **GELU**: 比 ReLU 更平滑的激活函数
-  - **Feed Forward Network (FFN)**: 两层 MLP，扩展维度 4 倍
-  - **残差连接（Residual Connection）**: 缓解梯度消失
-  - **Transformer Block**: LayerNorm → Attention → 残差 → LayerNorm → FFN → 残差
+ - **LayerNorm**: 逐位置归一化，稳定训练
+ - **GELU**: 比 ReLU 更平滑的激活函数
+ - **Feed Forward Network (FFN)**: 两层 MLP，扩展维度 4 倍
+ - **残差连接（Residual Connection）**: 缓解梯度消失
+ - **Transformer Block**: LayerNorm → Attention → 残差 → LayerNorm → FFN → 残差
 - **完整 GPT 架构**:
-  - Embedding 层 → N × Transformer Block → LayerNorm → Linear Head
+ - Embedding 层 → N × Transformer Block → LayerNorm → Linear Head
 - **模型规模**: 实现的是 GPT-2 small（124M 参数），可扩展到 medium/large
 
 ### Ch 5: 在无标注数据上预训练
@@ -254,7 +254,7 @@ class MultiHeadAttention(nn.Module):
 - **训练数据**: 使用公开文本语料（如 The Verdict 短文 / OpenWebText 子集）
 - **损失函数**: 交叉熵损失（预测下一个 Token 的概率分布）
 - **训练循环**:
-  - 前向传播 → 计算 Loss → 反向传播 → 优化器更新（AdamW）
+ - 前向传播 → 计算 Loss → 反向传播 → 优化器更新（AdamW）
 - **学习率调度**: Warmup + Cosine Decay
 - **训练监控**: Loss 曲线、生成样本质量的人工观察
 - **加载 GPT-2 预训练权重**: 把 OpenAI 发布的 GPT-2 权重加载到自己的实现中，验证正确性
@@ -263,8 +263,8 @@ class MultiHeadAttention(nn.Module):
 
 - **任务**: 情感分类（如垃圾邮件检测）
 - **微调策略**:
-  - 冻结大部分层，只训练最后的分类头
-  - 用最后一个 Token 的输出作为整句表示
+ - 冻结大部分层，只训练最后的分类头
+ - 用最后一个 Token 的输出作为整句表示
 - **与全量微调的权衡**: 计算成本 vs 准确率
 
 ### Ch 7: 微调用于指令跟随（Instruction Fine-tuning）
@@ -331,11 +331,11 @@ GPT-2 small (124M):
 
 | 本书章节 | 本书概念 | 知识库主题 | 关联说明 |
 |----------|----------|------------|----------|
-| Ch 1 LLM 概览 | GPT 发展史 | [[05_大模型/01_LLM基础]] | LLM 基础 |
-| Ch 2 文本处理 | BPE 分词 | [[05_大模型/01_LLM基础]] | Tokenizer |
-| Ch 3 注意力 | Self/Multi-Head Attention | [[03_深度学习/]] | 注意力机制 |
-| Ch 4 GPT 实现 | Transformer Block | [[05_大模型/01_LLM基础]] | 架构实现 |
-| Ch 5 预训练 | 训练循环、损失 | [[07_模型训练/]] | 预训练流程 |
+| Ch 1 LLM 概览 | GPT 发展史 | [[05_大模型/01_LLM基础/README]] | LLM 基础 |
+| Ch 2 文本处理 | BPE 分词 | [[05_大模型/01_LLM基础/README]] | Tokenizer |
+| Ch 3 注意力 | Self/Multi-Head Attention | [[03_深度学习/README]] | 注意力机制 |
+| Ch 4 GPT 实现 | Transformer Block | [[05_大模型/01_LLM基础/README]] | 架构实现 |
+| Ch 5 预训练 | 训练循环、损失 | [[07_模型训练/README]] | 预训练流程 |
 | Ch 6-7 微调 | SFT 分类/指令 | [[05_大模型/06_微调技术/04_GenAI_L18_微调_LLMs]] | 微调技术 |
 | 全书 | 从零实现 | [[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading]] | Transformer 论文导读 |
 
@@ -435,8 +435,8 @@ GPT-2 small (124M):
 - [[90_学习/05_参考资料/books/08_hands_on_llms_alammar|Hands-On LLMs]] — 图解式概念互补
 - [[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading|Attention Is All You Need 导读]] — 架构源头
 - [[90_学习/05_参考资料/Papers/02_GPT3_Reading|GPT-3 论文导读]] — 规模化方向
-- [[05_大模型/01_LLM基础]] — 知识库 LLM 基础章节
-- [[03_深度学习/]] — 神经网络基础
+- [[05_大模型/01_LLM基础/README]] — 知识库 LLM 基础章节
+- [[03_深度学习/README]] — 神经网络基础
 - [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图 2026]]
 
-> **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[05_大模型/01_LLM基础]] | [[03_深度学习/]] | [[90_学习/05_参考资料/Projects/01_papers_with_code]]
+> **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[05_大模型/01_LLM基础/README]] | [[03_深度学习/README]] | [[90_学习/05_参考资料/Projects/01_papers_with_code]]

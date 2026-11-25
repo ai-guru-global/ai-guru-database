@@ -8,6 +8,7 @@ tier: core
 summary: "LLM 评测全栈速查：从通用基准（MMLU/MT-Bench）到领域评测（事实性/安全性/Agent）、LLM-as-Judge 范式、生产级回归测试流水线。"
 sources: []
 name_zh: "LLM 评测速查表"
+category: meta
 ---
 
 # LLM 评测速查表
@@ -15,7 +16,7 @@ name_zh: "LLM 评测速查表"
 > 中文简称：LLM 评测速查表
 
 > **核心洞察**：2026 年 LLM 评测已从单一基准（MMLU）演进到**多维评测矩阵**：通用能力 + 领域能力 + 安全 + 偏见 + Agent + RAG + 生产稳定性。没有"一站式评测"，只有"评测矩阵"。
-> 详见 [[08_模型评估]] · [[11_模型运维/13_运维评估/03_LLM评估_流水线]] · [[概念/LLM/llm-safety]] · [[08_模型评估/04_评估工具/04_LLM_as_Judge_指南]]
+> 详见 [[08_模型评估/README]] · [[11_模型运维/13_运维评估/03_LLM评估_流水线]] · [[概念/LLM/llm-safety]] · [[08_模型评估/04_评估工具/04_LLM_as_Judge_指南]]
 
 ## 评测维度全景
 
@@ -38,7 +39,7 @@ name_zh: "LLM 评测速查表"
 
 ### 综合能力
 
-| 基准 | 内容 | 规模 | 当前 SOTA（2026中） |
+| 基准 | 内容 | 规模 | 当前 SOTA（2026 中） |
 |------|------|------|------------------|
 | **MMLU** | 57 学科知识 | 14K 题 | Claude Opus 4.8: 92.1% / GPT-5: 91.8% |
 | **MMLU-Pro** | MMLU 强化版 | 12K 题 | Claude Opus 4.8: 88.6% |
@@ -314,4 +315,4 @@ jobs:
 
 ---
 
-**参见**：[[08_模型评估]] · [[11_模型运维/13_运维评估/03_LLM评估_流水线]] · [[08_模型评估/04_评估工具/04_LLM_as_Judge_指南]] · [[概念/LLM/llm-safety]] · [[Regression_Testing_LLM_Deep_Dive]] · [[08_模型评估/02_基准测试/02_benchmark_evaluation]]
+**参见**：[[08_模型评估/README]] · [[11_模型运维/13_运维评估/03_LLM评估_流水线]] · [[08_模型评估/04_评估工具/04_LLM_as_Judge_指南]] · [[概念/LLM/llm-safety]] · [[Regression_Testing_LLM_Deep_Dive]] · [[08_模型评估/02_基准测试/02_benchmark_evaluation]]

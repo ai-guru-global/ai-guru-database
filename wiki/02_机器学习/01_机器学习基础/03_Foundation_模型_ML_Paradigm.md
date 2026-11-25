@@ -11,23 +11,24 @@ tags:
   - test-time-compute
 summary: "从task-specific模型到Foundation Model的范式转变，涵盖预训练+微调范式、In-Context Learning、Scaling Laws、涌现能力的数学分析，以及2026年推理时计算与测试时训练的前沿进展。"
 created: 2026-07-19
-updated: 2026-07-19
+updated: 2026-11-25
 name_zh: "基础模型作为ML范式转变"
+tier: supporting
 ---
 
-# 基础模型作为ML范式转变
+# 基础模型作为 ML 范式转变
 
-> 中文简称：基础模型作为ML范式转变
+> 中文简称：基础模型作为 ML 范式转变
 
 ## 概述
 
-Foundation Model（基础模型）代表了[[02_机器学习]]领域自统计学习理论以来最深刻的范式转变。传统ML pipeline围绕"一个任务、一个模型、一套标注数据"构建，而Foundation Model通过大规模预训练获取通用表征，再通过少量适配完成下游任务。这不仅是工程实践的变化，更是学习理论、优化范式和偏差-方差权衡的根本性重构。
+Foundation Model（基础模型）代表了[[02_机器学习/README]]领域自统计学习理论以来最深刻的范式转变。传统 ML pipeline 围绕"一个任务、一个模型、一套标注数据"构建，而 Foundation Model 通过大规模预训练获取通用表征，再通过少量适配完成下游任务。这不仅是工程实践的变化，更是学习理论、优化范式和偏差-方差权衡的根本性重构。
 
 ### 范式对比
 
-| 维度 | 传统ML | Foundation Model |
+| 维度 | 传统 ML | Foundation Model |
 |------|--------|-----------------|
-| 数据需求 | 每任务数千~数万标注样本 | 预训练需TB级无标注数据，微调仅需数十~数百样本 |
+| 数据需求 | 每任务数千~数万标注样本 | 预训练需 TB 级无标注数据，微调仅需数十~数百样本 |
 | 模型生命周期 | 训练→部署→废弃 | 预训练→适配→持续更新 |
 | 泛化来源 | 归纳偏置 + 正则化 | 规模 + 数据多样性 + 架构通用性 |
 | 任务适配 | 特征工程 + 模型选择 | Prompt / Adapter / LoRA |
@@ -35,9 +36,9 @@ Foundation Model（基础模型）代表了[[02_机器学习]]领域自统计学
 
 ### 为什么是"范式转变"
 
-Thomas Kuhn意义上的范式转变需要满足：
-1. **反常积累**：传统方法在NLP、CV等领域的边际收益递减
-2. **新范式出现**：GPT-3证明单一模型可处理数百任务
+Thomas Kuhn 意义上的范式转变需要满足：
+1. **反常积累**：传统方法在 NLP、CV 等领域的边际收益递减
+2. **新范式出现**：GPT-3 证明单一模型可处理数百任务
 3. **不可通约性**：评估标准、工程流程、人才需求全面改变
 
 ---
@@ -138,11 +139,11 @@ $$L(N, D, C) = \left(\frac{N_c}{N}\right)^{\alpha_N} + \left(\frac{D_c}{D}\right
 
 其中：
 - $N$：模型参数量
-- $D$：训练数据token数
+- $D$：训练数据 token 数
 - $C \approx 6ND$：计算预算（FLOPs）
 - $L_\infty$：不可约损失（数据熵）
 
-**Chinchilla最优比例**：
+**Chinchilla 最优比例**：
 
 $$N_{\text{opt}} \propto C^{0.5}, \quad D_{\text{opt}} \propto C^{0.5}$$
 
@@ -164,17 +165,17 @@ $$\text{Acc}(N) \gg \text{random} \quad \forall N \geq N^*$$
 | 指令跟随 | ~60B | MT-Bench |
 | 复杂推理 | ~100B | MATH, ARC-Challenge |
 
-**2024-2026修正观点**：
+**2024-2026 修正观点**：
 
-Schaeffer et al. (2023) 指出涌现可能是评估指标选择的artifact。使用连续指标（如token-level accuracy）替代离散指标（如exact match）后，性能提升变为平滑曲线。但2025-2026的研究表明，在组合推理和长链规划任务中，真正的相变仍然存在。
+Schaeffer et al. (2023) 指出涌现可能是评估指标选择的 artifact。使用连续指标（如 token-level accuracy）替代离散指标（如 exact match）后，性能提升变为平滑曲线。但 2025-2026 的研究表明，在组合推理和长链规划任务中，真正的相变仍然存在。
 
-### Scaling Laws的2026扩展
+### Scaling Laws 的 2026 扩展
 
 **推理时计算 (Inference-time Compute)**：
 
 $$\text{Performance} = f(N, D, C_{\text{train}}, C_{\text{test}})$$
 
-传统Scaling Law只考虑训练计算 $C_{\text{train}}$，2026范式加入测试时计算 $C_{\text{test}}$：
+传统 Scaling Law 只考虑训练计算 $C_{\text{train}}$，2026 范式加入测试时计算 $C_{\text{test}}$：
 
 $$C_{\text{test}} = \text{tokens\_generated} \times \text{model\_flops\_per\_token}$$
 
@@ -254,15 +255,15 @@ $$\theta_t = \theta_{t-1} - \eta \nabla_\theta \mathcal{L}_{\text{reconstruct}}(
 
 ### 基准评估体系
 
-| 基准 | 评估维度 | 传统ML | Foundation Model |
+| 基准 | 评估维度 | 传统 ML | Foundation Model |
 |------|----------|--------|-----------------|
 | MMLU | 知识广度 | N/A | 5-shot accuracy |
 | HumanEval | 代码生成 | 专用模型~30% | 零样本~70%+ |
-| GSM8K | 数学推理 | 专用pipeline | CoT prompting |
-| MTEB | 表征质量 | 任务专用embedding | 通用embedding |
+| GSM8K | 数学推理 | 专用 pipeline | CoT prompting |
+| MTEB | 表征质量 | 任务专用 embedding | 通用 embedding |
 | MT-Bench | 指令跟随 | N/A | 多轮对话评分 |
 
-### Scaling实验数据
+### Scaling 实验数据
 
 ```
 Model Size    | MMLU (5-shot) | HumanEval (0-shot) | GSM8K (CoT)
@@ -280,11 +281,11 @@ Model Size    | MMLU (5-shot) | HumanEval (0-shot) | GSM8K (CoT)
 
 | 方法 | 可训练参数 | 显存需求 | 下游性能(相对全量微调) |
 |------|-----------|----------|----------------------|
-| Full Fine-tuning | 100% | 4x模型大小 | 100% |
-| LoRA (r=16) | 0.1-1% | 1.2x模型大小 | 95-99% |
-| Adapter | 1-5% | 1.3x模型大小 | 93-97% |
-| Prompt Tuning | <0.01% | 1.0x模型大小 | 85-95% |
-| BitFit | <0.1% | 1.1x模型大小 | 90-96% |
+| Full Fine-tuning | 100% | 4x 模型大小 | 100% |
+| LoRA (r=16) | 0.1-1% | 1.2x 模型大小 | 95-99% |
+| Adapter | 1-5% | 1.3x 模型大小 | 93-97% |
+| Prompt Tuning | <0.01% | 1.0x 模型大小 | 85-95% |
+| BitFit | <0.1% | 1.1x 模型大小 | 90-96% |
 
 ---
 
@@ -416,33 +417,33 @@ class TestTimeTraining:
 
 ## 对比表
 
-### 传统ML vs Foundation Model：全维度对比
+### 传统 ML vs Foundation Model：全维度对比
 
-| 维度 | 传统ML (XGBoost/SVM/MLP) | Foundation Model |
+| 维度 | 传统 ML (XGBoost/SVM/MLP) | Foundation Model |
 |------|--------------------------|-----------------|
-| 训练数据 | 每任务1K-100K标注样本 | 预训练1T+ tokens无标注 |
-| 训练时间 | 分钟~小时 | 数周~数月（数千GPU） |
+| 训练数据 | 每任务 1K-100K 标注样本 | 预训练 1T+ tokens 无标注 |
+| 训练时间 | 分钟~小时 | 数周~数月（数千 GPU） |
 | 训练成本 | $10-$1000 | $1M-$100M+ |
 | 适配新任务 | 重新收集数据+训练 | Prompt/LoRA（分钟级） |
 | 模型大小 | KB~MB | GB~TB |
 | 推理延迟 | μs~ms | 10ms~数秒 |
 | 可解释性 | 较高（特征重要性） | 较低（需专门工具） |
-| 部署复杂度 | 低 | 高（需GPU集群） |
-| 数据隐私 | 可本地训练 | 通常需API调用 |
+| 部署复杂度 | 低 | 高（需 GPU 集群） |
+| 数据隐私 | 可本地训练 | 通常需 API 调用 |
 | 适用场景 | 结构化数据、小数据 | 非结构化数据、通用任务 |
 
 ### 预训练范式对比
 
 | 范式 | 代表模型 | 预训练目标 | 适配方式 | 适用领域 |
 |------|----------|-----------|----------|----------|
-| CLM | GPT系列, LLaMA | 下一token预测 | Prompt/LoRA | NLP, 代码, 推理 |
-| MLM | BERT, RoBERTa | 掩码token预测 | 分类头微调 | 理解任务 |
-| Encoder-Decoder | T5, BART | Span corruption | Seq2seq微调 | 生成+理解 |
+| CLM | GPT 系列, LLaMA | 下一 token 预测 | Prompt/LoRA | NLP, 代码, 推理 |
+| MLM | BERT, RoBERTa | 掩码 token 预测 | 分类头微调 | 理解任务 |
+| Encoder-Decoder | T5, BART | Span corruption | Seq2seq 微调 | 生成+理解 |
 | 对比学习 | CLIP, SimCLR | 正负样本对比 | 线性探测 | 多模态, 检索 |
 | 扩散模型 | Stable Diffusion | 去噪 | Text guidance | 图像生成 |
 | 自监督 | MAE, DINO | 重建/蒸馏 | 线性探测 | 视觉表征 |
 
-### Scaling Law参数对比
+### Scaling Law 参数对比
 
 | 研究 | 模型范围 | 数据范围 | 关键发现 |
 |------|----------|----------|----------|
@@ -483,15 +484,15 @@ Foundation Model Pipeline:
 
 ---
 
-## 2026前沿
+## 2026 前沿
 
 ### 推理时计算 (Inference-time Compute)
 
-2026年的核心范式转变：不再仅通过增大模型提升性能，而是通过增加推理时计算量。
+2026 年的核心范式转变：不再仅通过增大模型提升性能，而是通过增加推理时计算量。
 
 **方法谱系**：
 
-1. **Chain-of-Thought (CoT)**：线性增加推理token
+1. **Chain-of-Thought (CoT)**：线性增加推理 token
 2. **Tree-of-Thought (ToT)**：搜索推理树
 3. **MCTS + LLM**：蒙特卡洛树搜索引导推理
 4. **Self-Consistency**：多路径采样+投票
@@ -505,9 +506,9 @@ $$\text{Performance} = g(C_{\text{train}}) + h(C_{\text{test}})$$
 
 ### 测试时训练 (Test-Time Training)
 
-**TTT作为新架构组件**：
+**TTT 作为新架构组件**：
 
-将RNN/Transformer的固定权重替换为动态适配：
+将 RNN/Transformer 的固定权重替换为动态适配：
 
 $$h_t = f_{\theta_t}(x_t), \quad \theta_t = \theta_{t-1} - \eta \nabla_\theta \mathcal{L}_{\text{aux}}(\theta_{t-1}; x_{1:t})$$
 
@@ -518,22 +519,22 @@ $$h_t = f_{\theta_t}(x_t), \quad \theta_t = \theta_{t-1} - \eta \nabla_\theta \m
 
 ### 小模型+大推理 vs 大模型+少推理
 
-2026年的关键权衡：
+2026 年的关键权衡：
 
-| 策略 | 代表 | 总FLOPs | 延迟 | 适用场景 |
+| 策略 | 代表 | 总 FLOPs | 延迟 | 适用场景 |
 |------|------|---------|------|----------|
-| 大模型直接回答 | GPT-4级 | 1x | 低 | 简单任务 |
+| 大模型直接回答 | GPT-4 级 | 1x | 低 | 简单任务 |
 | 小模型+CoT | 7B+长推理 | 2-5x | 中 | 中等推理 |
 | 小模型+搜索 | 7B+MCTS | 10-100x | 高 | 复杂规划 |
 | 蒸馏推理链 | 大→小 | 训练高，推理低 | 低 | 部署优化 |
 
-### 多模态Foundation Model
+### 多模态 Foundation Model
 
-2026年趋势：统一架构处理文本、图像、音频、视频、3D、代码：
+2026 年趋势：统一架构处理文本、图像、音频、视频、3D、代码：
 
 $$p(x_1^{\text{text}}, x_2^{\text{image}}, x_3^{\text{audio}}, ...) = \prod_t p(x_t | x_{<t})$$
 
-所有模态tokenize后统一自回归建模。
+所有模态 tokenize 后统一自回归建模。
 
 ---
 
@@ -571,32 +572,32 @@ $$\min_{\phi} I(X; \phi(X)) - \beta \cdot I(\phi(X); Y)$$
 
 ## 实践建议
 
-### 何时选择Foundation Model vs 传统ML
+### 何时选择 Foundation Model vs 传统 ML
 
 | 场景特征 | 推荐方案 | 理由 |
 |----------|----------|------|
-| 标注数据 < 100条 | Foundation Model (零/少样本) | 传统ML无法训练 |
+| 标注数据 < 100 条 | Foundation Model (零/少样本) | 传统 ML 无法训练 |
 | 结构化表格 + 10K+样本 | XGBoost/LightGBM | 效率与精度兼顾 |
 | 非结构化数据（文本/图像） | Foundation Model | 表征能力碾压 |
-| 延迟要求 < 1ms | 传统ML/蒸馏小模型 | FM推理太慢 |
+| 延迟要求 < 1ms | 传统 ML/蒸馏小模型 | FM 推理太慢 |
 | 多任务统一系统 | Foundation Model | 一模型多任务 |
-| 强可解释性要求 | 传统ML + SHAP | FM可解释性弱 |
-| 数据隐私极严格 | 本地小模型/联邦学习 | 无法调用云端API |
+| 强可解释性要求 | 传统 ML + SHAP | FM 可解释性弱 |
+| 数据隐私极严格 | 本地小模型/联邦学习 | 无法调用云端 API |
 
 ### 迁移路径建议
 
-1. **评估阶段**：用零样本/少样本快速验证FM在目标任务上的baseline
-2. **对比阶段**：与现有传统ML pipeline做A/B对比
-3. **适配阶段**：根据数据量选择Prompt Tuning / LoRA / 全量微调
+1. **评估阶段**：用零样本/少样本快速验证 FM 在目标任务上的 baseline
+2. **对比阶段**：与现有传统 ML pipeline 做 A/B 对比
+3. **适配阶段**：根据数据量选择 Prompt Tuning / LoRA / 全量微调
 4. **部署阶段**：量化(INT8/INT4) + 推测解码 + 缓存策略
-5. **监控阶段**：建立LLM评估体系（自动评估 + 人工抽检）
+5. **监控阶段**：建立 LLM 评估体系（自动评估 + 人工抽检）
 
 ### 成本估算参考
 
-- 零样本API调用：$0.01-0.10/千次请求
-- LoRA微调(7B模型)：$50-200（云GPU数小时）
-- 全量预训练(7B模型)：$100K-500K（数千GPU小时）
-- 推理部署(7B模型)：$500-2000/月（单GPU实例）
+- 零样本 API 调用：$0.01-0.10/千次请求
+- LoRA 微调(7B 模型)：$50-200（云 GPU 数小时）
+- 全量预训练(7B 模型)：$100K-500K（数千 GPU 小时）
+- 推理部署(7B 模型)：$500-2000/月（单 GPU 实例）
 
 ---
 
@@ -609,7 +610,7 @@ $$\min_{\phi} I(X; \phi(X)) - \beta \cdot I(\phi(X); Y)$$
 - Test_Time_Training - 测试时训练架构
 - [[概念/LLM/cot-react-reasoning-prompt|Chain_of_Thought]] - 推理时计算的核心方法
 - Bias_Variance_Tradeoff - 经典偏差-方差权衡
-- [[Transfer_Learning]] - 迁移学习理论基础
+- [[03_深度学习/09_高级专题/09_迁移学习|Transfer Learning（迁移学习）]] - 迁移学习理论基础
 - Double_Descent - 双重下降现象
 - Multimodal_Foundation_Models - 多模态基础模型
 - ML_Engineering_Practices - ML工程实践

@@ -41,9 +41,9 @@ name_zh: "Python 深度学习"
 
 | 属性 | 说明 |
 |------|------|
-| **书名** | Deep Learning with Python（第2版） |
+| **书名** | Deep Learning with Python（第 2 版） |
 | **作者** | François Chollet |
-| **出版社** | Manning（2021，第2版） |
+| **出版社** | Manning（2021，第 2 版） |
 | **页数** | 约 500 页 |
 | **难度** | ⭐⭐☆（入门→中级） |
 | **代码语言** | Python（Keras / TensorFlow） |
@@ -81,9 +81,9 @@ name_zh: "Python 深度学习"
 - **张量（Tensor）**: 数据的容器（标量、向量、矩阵、高维张量）
 - **张量运算**: 逐元素运算、点积、广播
 - **梯度与反向传播**:
-  - 导数与梯度的直觉
-  - 链式法则
-  - 自动微分
+ - 导数与梯度的直觉
+ - 链式法则
+ - 自动微分
 - **优化器**: SGD、RMSprop、Adam 的基本思想
 - **关键认知**: 神经网络 = 张量运算 + 梯度优化
 
@@ -102,17 +102,17 @@ name_zh: "Python 深度学习"
 - **ML 工作流**: 问题定义 → 数据准备 → 建模 → 评估 → 迭代
 - **评估方法**: 训练/验证/测试集划分、K 折交叉验证
 - **过拟合与欠拟合**:
-  - 过拟合的识别与对策
-  - 正则化（L1/L2、Dropout）
+ - 过拟合的识别与对策
+ - 正则化（L1/L2、Dropout）
 - **特征工程**: 传统 ML 与深度学习的特征处理差异
 - **超参数调优**: 系统化的搜索策略
 
 #### Ch 5: 深度学习 for 计算机视觉
 
 - **卷积神经网络（CNN）**:
-  - 卷积操作的直觉（局部特征提取）
-  - 池化（Pooling）：降维与平移不变性
-  - 特征图（Feature Map）与感受野
+ - 卷积操作的直觉（局部特征提取）
+ - 池化（Pooling）：降维与平移不变性
+ - 特征图（Feature Map）与感受野
 - **实战**: 图像分类（从 MNIST 到 CIFAR-10）
 - **数据增强**: 旋转、翻转、裁剪扩充数据集
 - **迁移学习**: 用预训练模型（如 VGG、ResNet）解决小数据问题
@@ -121,11 +121,11 @@ name_zh: "Python 深度学习"
 #### Ch 6: 深度学习 for 文本与序列
 
 - **文本处理基础**:
-  - 分词（Tokenization）
-  - 词向量（Word Embedding）：Word2Vec、GloVe
+ - 分词（Tokenization）
+ - 词向量（Word Embedding）：Word2Vec、GloVe
 - **序列模型**:
-  - RNN（循环神经网络）
-  - LSTM / GRU（处理长序列）
+ - RNN（循环神经网络）
+ - LSTM / GRU（处理长序列）
 - **实战**: 文本分类、情感分析
 - **序列到序列**: 机器翻译的基本架构
 - **从 RNN 到注意力**: 为 Transformer 铺垫
@@ -136,9 +136,9 @@ name_zh: "Python 深度学习"
 
 - **Keras 函数式 API**: 构建复杂网络结构（多输入、多输出、残差连接）
 - **回调（Callbacks）**:
-  - EarlyStopping（早停）
-  - ModelCheckpoint（模型保存）
-  - ReduceLROnPlateau（学习率调整）
+ - EarlyStopping（早停）
+ - ModelCheckpoint（模型保存）
+ - ReduceLROnPlateau（学习率调整）
 - **TensorBoard**: 训练过程可视化
 - **超参数优化**: Keras Tuner
 - **模型工程原则**: 可复现性、实验管理
@@ -147,24 +147,24 @@ name_zh: "Python 深度学习"
 
 - **生成模型概览**: 从判别到生成
 - **变分自编码器（VAE）**:
-  - 编码器-解码器架构
-  - 潜在空间（Latent Space）
-  - 重参数化技巧
+ - 编码器-解码器架构
+ - 潜在空间（Latent Space）
+ - 重参数化技巧
 - **生成对抗网络（GAN）**:
-  - 生成器 vs 判别器的博弈
-  - 训练的不稳定性
-  - 实战：图像生成
+ - 生成器 vs 判别器的博弈
+ - 训练的不稳定性
+ - 实战：图像生成
 - **生成模型的应用**: 图像合成、风格迁移
 
 #### Ch 9: 高级架构（Transformer）
 
 - **注意力机制（Attention）**:
-  - 注意力的动机（解决长序列问题）
-  - 自注意力（Self-Attention）
+ - 注意力的动机（解决长序列问题）
+ - 自注意力（Self-Attention）
 - **Transformer 架构**:
-  - 多头注意力（Multi-Head Attention）
-  - 位置编码（Positional Encoding）
-  - 编码器-解码器结构
+ - 多头注意力（Multi-Head Attention）
+ - 位置编码（Positional Encoding）
+ - 编码器-解码器结构
 - **实战**: 用 Transformer 做文本分类、序列到序列任务
 - **Transformer 的意义**: 现代 LLM 的基石
 
@@ -173,22 +173,22 @@ name_zh: "Python 深度学习"
 #### Ch 10-11: 模型部署与工程
 
 - **模型部署**:
-  - 保存与加载模型
-  - TensorFlow Serving
-  - TensorFlow Lite（移动端）
-  - TensorFlow.js（浏览器）
+ - 保存与加载模型
+ - TensorFlow Serving
+ - TensorFlow Lite（移动端）
+ - TensorFlow.js（浏览器）
 - **性能优化**: 量化、剪枝
 - **生产化考量**: 延迟、吞吐、监控
 
 #### Ch 12-14: 深度学习的原则与未来
 
 - **模型工程原则**:
-  - 端到端学习 vs 模块化
-  - 归纳偏置（Inductive Bias）的重要性
+ - 端到端学习 vs 模块化
+ - 归纳偏置（Inductive Bias）的重要性
 - **深度学习的局限**:
-  - 数据效率低
-  - 缺乏真正的推理与抽象
-  - 可解释性挑战
+ - 数据效率低
+ - 缺乏真正的推理与抽象
+ - 可解释性挑战
 - **未来方向**: 少样本学习、神经符号 AI、通用智能
 - **作者的思考**: 从 ARC 基准看"真正的智能"
 
@@ -266,13 +266,13 @@ GAN:           min_G max_D [E log D(x) + E log(1 - D(G(z)))]
 
 | 本书章节 | 知识库主题 | 关联说明 |
 |----------|------------|----------|
-| Ch 2-3 神经网络基础 | [[03_深度学习/]] | 张量、反向传播 |
-| Ch 4 机器学习基础 | [[02_机器学习/]] | ML 工作流、过拟合 |
-| Ch 5 计算机视觉 | [[04_计算机视觉/]] | CNN、迁移学习 |
-| Ch 6 文本与序列 | [[05_大模型/01_LLM基础]] | 词向量、RNN |
-| Ch 8 生成模型 | [[05_大模型/]] | VAE、GAN |
-| Ch 9 Transformer | [[05_大模型/]] | 注意力机制 |
-| Ch 10-11 部署 | [[10_部署推理/]] | 模型部署 |
+| Ch 2-3 神经网络基础 | [[03_深度学习/README]] | 张量、反向传播 |
+| Ch 4 机器学习基础 | [[02_机器学习/README]] | ML 工作流、过拟合 |
+| Ch 5 计算机视觉 | [[04_计算机视觉/README]] | CNN、迁移学习 |
+| Ch 6 文本与序列 | [[05_大模型/01_LLM基础/README]] | 词向量、RNN |
+| Ch 8 生成模型 | [[05_大模型/README]] | VAE、GAN |
+| Ch 9 Transformer | [[05_大模型/README]] | 注意力机制 |
+| Ch 10-11 部署 | [[10_部署推理/README]] | 模型部署 |
 
 ### 与相关书籍的关系
 
@@ -314,7 +314,7 @@ GAN:           min_G max_D [E log D(x) + E log(1 - D(G(z)))]
 - **代码简洁**: Keras 高层 API，几行代码构建网络
 - **作者视角独到**: 强调工程思维与最佳实践
 - **覆盖全面**: 从基础到 Transformer、GAN
-- **第2版更新**: 加入 Transformer、注意力机制等现代内容
+- **第 2 版更新**: 加入 Transformer、注意力机制等现代内容
 
 ### 局限
 
@@ -359,7 +359,7 @@ GAN:           min_G max_D [E log D(x) + E log(1 - D(G(z)))]
 2. **改一个变量观察效果**: 如改层数、改激活函数，建立直觉
 3. **换自己的数据集**: 把方法迁移到真实问题
 4. **记录实验**: 用 TensorBoard 或笔记本记录每次实验
-5. **写总结**: 把学到的沉淀到 [[03_深度学习/]] 知识库
+5. **写总结**: 把学到的沉淀到 [[03_深度学习/README]] 知识库
 
 ## Keras 核心 API 速查
 
@@ -417,8 +417,8 @@ model = keras.models.load_model('my_model.keras')
 - [[90_学习/05_参考资料/books/11_deep_learning_goodfellow|Deep Learning (花书)]] — 理论深入
 - [[90_学习/05_参考资料/books/07_hands_on_ml_geron|Hands-On ML]] — 更全面的 ML/DL 实战
 - [[90_学习/05_参考资料/books/03_nlp_with_transformers|NLP with Transformers]] — Transformer 深入
-- [[03_深度学习/]] — 知识库深度学习章节
-- [[04_计算机视觉/]] — 计算机视觉专题
+- [[03_深度学习/README]] — 知识库深度学习章节
+- [[04_计算机视觉/README]] — 计算机视觉专题
 - [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图 2026]]
 
-> **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[03_深度学习/]] | [[05_大模型/]] | [[04_计算机视觉/]]
+> **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[03_深度学习/README]] | [[05_大模型/README]] | [[04_计算机视觉/README]]

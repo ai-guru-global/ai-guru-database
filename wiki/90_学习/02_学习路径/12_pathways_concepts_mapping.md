@@ -65,7 +65,7 @@ name_zh: "学习路径 ↔ 概念交叉映射"
 | 阶段 | 深度 | 重点概念 | 推荐资源 |
 |------|------|---------|---------|
 | Stage 0 | 掌握 | AI 能力边界、工具生态 | [[90_学习/05_参考资料/books/15_ai_engineering_huyen|AI Engineering]] Ch 1 |
-| Stage 1 | 掌握 | 训练vs推理、评估指标 | [[90_学习/05_参考资料/books/07_hands_on_ml_geron|Hands-On ML]] Ch 1-3 |
+| Stage 1 | 掌握 | 训练 vs 推理、评估指标 | [[90_学习/05_参考资料/books/07_hands_on_ml_geron|Hands-On ML]] Ch 1-3 |
 | Stage 2 | **精通** | Transformer、LLM、预训练/微调、Attention | [[90_学习/05_参考资料/books/14_build_llm_from_scratch_raschka|Build LLM]]、[[90_学习/05_参考资料/books/08_hands_on_llms_alammar|Hands-On LLMs]]、[[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading|Transformer 论文]] |
 | Stage 3 | **精通** | RAG、向量库、Prompt、Agent、Tool Use、部署 | [[90_学习/05_参考资料/books/15_ai_engineering_huyen|AI Engineering]]、[[90_学习/05_参考资料/books/16_ai_agents_in_action|AI Agents]]、[[90_学习/05_参考资料/books/02_prompt_engineering_for_llms|Prompt Engineering]] |
 | Stage 4 | 掌握 | 多模态、Agent 进阶、Scaling Law | [[90_学习/05_参考资料/Papers/02_GPT3_Reading|GPT-3]]、[[90_学习/05_参考资料/books/12_build_reasoning_model|Reasoning Model]] |
@@ -104,7 +104,7 @@ name_zh: "学习路径 ↔ 概念交叉映射"
 | 阶段 | 深度 | 重点概念 | 推荐资源 |
 |------|------|---------|---------|
 | Stage 0 | 掌握 | AI 能力边界 | 通识资料 |
-| Stage 1 | 掌握 | 训练vs推理、评估 | [[90_学习/05_参考资料/books/07_hands_on_ml_geron|Hands-On ML]] Ch 2 |
+| Stage 1 | 掌握 | 训练 vs 推理、评估 | [[90_学习/05_参考资料/books/07_hands_on_ml_geron|Hands-On ML]] Ch 2 |
 | Stage 2 | 了解 | 神经网络/Transformer 基础 | [[90_学习/05_参考资料/books/08_hands_on_llms_alammar|Hands-On LLMs]] |
 | Stage 3 | **精通** | 部署推理、MLOps、AI Gateway、工作流编排、评估 | [[90_学习/05_参考资料/books/10_designing_ml_systems_huyen|Designing ML Systems]]、[[90_学习/05_参考资料/books/04_llms_in_production|LLMs in Production]] |
 | Stage 4 | 了解 | AI 基础设施 2026 | [[90_学习/01_概念认知/06_stage4_frontier]] |
@@ -143,7 +143,7 @@ name_zh: "学习路径 ↔ 概念交叉映射"
 | 阶段 | 深度 | 重点概念 | 推荐资源 |
 |------|------|---------|---------|
 | Stage 0 | 掌握 | AI 能力边界、工具生态、伦理 | [[90_学习/05_参考资料/books/01_why_machines_learn|Why Machines Learn]] |
-| Stage 1 | 了解 | 训练vs推理、评估指标 | 通识资料 |
+| Stage 1 | 了解 | 训练 vs 推理、评估指标 | 通识资料 |
 | Stage 2 | 了解 | LLM、Transformer（概念级） | [[90_学习/05_参考资料/books/08_hands_on_llms_alammar|Hands-On LLMs]]（图解） |
 | Stage 3 | 了解 | RAG、Agent、评估（产品视角） | [[90_学习/05_参考资料/books/15_ai_engineering_huyen|AI Engineering]]（选读） |
 | Stage 4 | 了解 | 多模态、AGI 路径 | [[90_学习/01_概念认知/06_stage4_frontier]] |
@@ -168,15 +168,15 @@ name_zh: "学习路径 ↔ 概念交叉映射"
 
 | 核心概念 | 最相关角色 | 知识库章节 |
 |---------|-----------|-----------|
-| Transformer/Attention | LLM 工程师、NLP、研究员 | [[05_大模型/01_LLM基础]]、[[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading]] |
+| Transformer/Attention | LLM 工程师、NLP、研究员 | [[05_大模型/01_LLM基础/README]]、[[90_学习/05_参考资料/Papers/04_注意力_Is_All_You_Need_Reading]] |
 | RAG | LLM 工程师、NLP、MLOps | [[14_RAG系统/01_RAG基础/07_RAG_系统]] |
-| AI Agent | LLM 工程师、PM | [[15_智能体/]] |
-| 部署推理 | MLOps、LLM 工程师 | [[10_部署推理/]] |
-| 评估指标 | ML 实践者、MLOps、PM | [[08_模型评估/]] |
-| CNN/视觉 | CV 工程师 | [[04_计算机视觉/]] |
-| MLOps | MLOps、ML 实践者 | [[11_模型运维/]] |
+| AI Agent | LLM 工程师、PM | [[15_智能体/README]] |
+| 部署推理 | MLOps、LLM 工程师 | [[10_部署推理/README]] |
+| 评估指标 | ML 实践者、MLOps、PM | [[08_模型评估/README]] |
+| CNN/视觉 | CV 工程师 | [[04_计算机视觉/README]] |
+| MLOps | MLOps、ML 实践者 | [[11_模型运维/README]] |
 | Scaling Law | 研究员、LLM 工程师 | [[90_学习/05_参考资料/Papers/02_GPT3_Reading]] |
-| AI Safety | 研究员、PM | [[17_伦理安全/]] |
+| AI Safety | 研究员、PM | [[17_伦理安全/README]] |
 | 职业化/领导力 | 所有高级角色 | [[90_学习/01_概念认知/07_stage5_professional]] |
 
 ---
@@ -237,8 +237,8 @@ graph TD
 - [[90_学习/README.md|书籍参考]] — 书籍库
 - [[90_学习/05_参考资料/Projects/01_papers_with_code|论文导读]] — 论文库
 - [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图 2026]]
-- [[05_大模型/]] — 大模型章节
-- [[03_深度学习/]] — 深度学习章节
-- [[15_智能体/]] — Agent 章节
+- [[05_大模型/README]] — 大模型章节
+- [[03_深度学习/README]] — 深度学习章节
+- [[15_智能体/README]] — Agent 章节
 
 > **关联**: → [[90_学习/concepts/index|概念分阶]] | [[90_学习/pathways/index|学习路径]] | [[90_学习/guides/index|学习指南]] | [[90_学习/README.md|书籍]] | [[90_学习/05_参考资料/Projects/01_papers_with_code|论文]]

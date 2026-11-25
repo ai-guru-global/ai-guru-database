@@ -74,7 +74,7 @@ name_zh: "图解大模型实战"
 在知识库的书籍谱系中：
 - 上承 [[90_学习/05_参考资料/books/07_hands_on_ml_geron]]（ML/DL 基础）
 - 平行 [[90_学习/05_参考资料/books/03_nlp_with_transformers]]（HF 生态应用）、[[90_学习/05_参考资料/books/14_build_llm_from_scratch_raschka]]（底层实现）
-- 是 [[05_大模型/01_LLM基础]] 的**最佳入门配套**
+- 是 [[05_大模型/01_LLM基础/README]] 的**最佳入门配套**
 
 ## 核心内容
 
@@ -199,25 +199,25 @@ Grootendorst 自己开发的 BERTopic 是本章核心：
 本章是全书基石，图解 Token 与向量化全流程：
 
 - **Tokenization**:
-  - 词/字符/子词分词的权衡
-  - BPE（Byte-Pair Encoding）的图解原理
-  - Token 数量与成本的关系
+ - 词/字符/子词分词的权衡
+ - BPE（Byte-Pair Encoding）的图解原理
+ - Token 数量与成本的关系
 - **Token Embedding**:
-  - 把 Token ID 映射为稠密向量（词嵌入矩阵）
-  - 向量空间的几何意义：语义相近 → 向量相近
+ - 把 Token ID 映射为稠密向量（词嵌入矩阵）
+ - 向量空间的几何意义：语义相近 → 向量相近
 - **位置嵌入（Positional Embedding）**:
-  - 绝对位置 vs 相对位置
-  - 为什么 Transformer 需要显式位置信息
+ - 绝对位置 vs 相对位置
+ - 为什么 Transformer 需要显式位置信息
 
 ### Ch 3: Looking Inside Transformer LLMs
 
 图解 Transformer 内部结构，是全书最精华章节：
 
 - **Self-Attention 可视化**:
-  - Q/K/V 矩阵的角色
-  - 注意力权重的热力图解读
+ - Q/K/V 矩阵的角色
+ - 注意力权重的热力图解读
 - **多头注意力（Multi-Head Attention）**:
-  - 不同头关注不同模式（语法、语义、共指等）
+ - 不同头关注不同模式（语法、语义、共指等）
 - **前馈网络（FFN）与残差连接**
 - **LayerNorm 的作用**
 - **完整数据流**: 输入 → Embedding → N×(Attention + FFN) → 输出
@@ -233,7 +233,7 @@ Grootendorst 自己开发的 BERTopic 是本章核心：
 
 - **主题模型演进**: LDA → 基于 Embedding 的聚类
 - **BERTopic**: Grootendorst 自己开发的主题建模库
-  - Embedding → 降维（UMAP）→ 聚类（HDBSCAN）→ 主题表示（c-TF-IDF）
+ - Embedding → 降维（UMAP）→ 聚类（HDBSCAN）→ 主题表示（c-TF-IDF）
 - **应用**: 文档分组、趋势发现、用户反馈分析
 
 ### Ch 6: Prompt Engineering
@@ -241,41 +241,41 @@ Grootendorst 自己开发的 BERTopic 是本章核心：
 - **提示工程基础**: Zero-shot、Few-shot、CoT
 - **结构化提示**: System Prompt、角色设定、输出格式约束
 - **高级技巧**:
-  - Self-Consistency（多次采样取多数）
-  - Chain-of-Thought（让模型展示推理过程）
-  - ReAct（推理 + 行动）
+ - Self-Consistency（多次采样取多数）
+ - Chain-of-Thought（让模型展示推理过程）
+ - ReAct（推理 + 行动）
 - 详见 [[05_大模型/07_提示工程/16_Prompt工程]]
 
 ### Ch 7: Advanced Text Generation Techniques
 
 - **采样策略**:
-  - Greedy vs Beam Search vs Sampling
-  - Temperature、Top-k、Top-p（Nucleus Sampling）的图解
+ - Greedy vs Beam Search vs Sampling
+ - Temperature、Top-k、Top-p（Nucleus Sampling）的图解
 - **结构化生成**: JSON Mode、Grammar 约束
 - **Logit 处理**: Logits Processor 自定义生成逻辑
 
 ### Ch 8: Semantic Search and RAG
 
 - **语义搜索 vs 关键词搜索**:
-  - BM25（关键词）的局限
-  - Embedding 相似度（语义）的优势
+ - BM25（关键词）的局限
+ - Embedding 相似度（语义）的优势
 - **RAG（检索增强生成）**:
-  - 索引（Embedding + 向量库）→ 检索 → 拼接上下文 → 生成
-  - Chunking 策略、Reranking
+ - 索引（Embedding + 向量库）→ 检索 → 拼接上下文 → 生成
+ - Chunking 策略、Reranking
 - 详见 [[14_RAG系统/01_RAG基础/07_RAG_系统]]
 
 ### Ch 9: Multimodal Large Language Models
 
 - **CLIP**: 连接图像和文本的统一表示空间
-  - 对比学习：图像和描述文本对齐
+ - 对比学习：图像和描述文本对齐
 - **多模态架构**: 视觉编码器 + LLM + 跨模态投影
 - **应用**: 图像描述、视觉问答、图文检索
 
 ### Ch 10: Creating Text Embedding Models
 
 - **嵌入模型训练**:
-  - 监督微调（用标注对）
-  - 对比学习（SimCSE、Sentence-BERT）
+ - 监督微调（用标注对）
+ - 对比学习（SimCSE、Sentence-BERT）
 - **数据增强**: 困难负样本挖掘
 - **评估**: MTEB（Massive Text Embedding Benchmark）
 - **模型选择**: text-embedding-3、bge、e5
@@ -283,18 +283,18 @@ Grootendorst 自己开发的 BERTopic 是本章核心：
 ### Ch 11: Fine-tuning Representation Models for Classification
 
 - **BERT 微调**:
-  - 冻结 vs 全量微调
-  - 分类头设计
+ - 冻结 vs 全量微调
+ - 分类头设计
 - **PEFT 技术**:
-  - LoRA 的图解原理
-  - Adapter Tuning
+ - LoRA 的图解原理
+ - Adapter Tuning
 - **训练技巧**: 学习率、Warmup、早停
 
 ### Ch 12: Fine-tuning Generation Models
 
 - **指令微调（Instruction Tuning）**:
-  - 数据格式: Alpaca / ShareGPT
-  - 训练 GPT 类模型跟随指令
+ - 数据格式: Alpaca / ShareGPT
+ - 训练 GPT 类模型跟随指令
 - **QLoRA**: 4-bit 量化 + LoRA，降低显存需求
 - **评估**: 生成质量的人工与自动评估
 
@@ -349,13 +349,13 @@ Grootendorst 自己开发的 BERTopic 是本章核心：
 
 | 本书章节 | 本书概念 | 知识库主题 | 关联说明 |
 |----------|----------|------------|----------|
-| Ch 1-2 基础 | Token/Embedding | [[05_大模型/01_LLM基础]] | LLM 基础概念 |
-| Ch 3 内部机制 | Attention/Transformer | [[03_深度学习/]] | 注意力与架构 |
-| Ch 4-5 分类/聚类 | 表示学习 | [[02_机器学习/]] | 文本分析应用 |
+| Ch 1-2 基础 | Token/Embedding | [[05_大模型/01_LLM基础/README]] | LLM 基础概念 |
+| Ch 3 内部机制 | Attention/Transformer | [[03_深度学习/README]] | 注意力与架构 |
+| Ch 4-5 分类/聚类 | 表示学习 | [[02_机器学习/README]] | 文本分析应用 |
 | Ch 6-7 提示/生成 | Prompt/采样 | [[05_大模型/07_提示工程/16_Prompt工程]] | 提示与解码 |
 | Ch 8 搜索/RAG | 语义检索 | [[14_RAG系统/01_RAG基础/07_RAG_系统]] | RAG 系统 |
-| Ch 9 多模态 | CLIP/VLM | [[04_计算机视觉/]] | 多模态 |
-| Ch 10 嵌入模型 | Embedding 训练 | [[05_大模型/01_LLM基础]] | 嵌入模型 |
+| Ch 9 多模态 | CLIP/VLM | [[04_计算机视觉/README]] | 多模态 |
+| Ch 10 嵌入模型 | Embedding 训练 | [[05_大模型/01_LLM基础/README]] | 嵌入模型 |
 | Ch 11-12 微调 | LoRA/QLoRA/SFT | [[05_大模型/06_微调技术/04_GenAI_L18_微调_LLMs]] | 微调技术 |
 
 ## 适合人群
@@ -381,7 +381,7 @@ Grootendorst 自己开发的 BERTopic 是本章核心：
 | **方法论** | 图解 + Notebook | HF 库应用 | 从零实现 |
 | **可视化** | 最强（300 图） | 中 | 少 |
 | **代码深度** | 中（API 级） | 中（API 级） | 深（逐行） |
-| **覆盖广度** | 最广（12章） | 中（NLP 为主） | 窄（仅 GPT） |
+| **覆盖广度** | 最广（12 章） | 中（NLP 为主） | 窄（仅 GPT） |
 | **适合** | 建立直觉 + 广度 | NLP 应用 | 深挖实现 |
 
 三者最佳组合: 本书建直觉 → [[90_学习/05_参考资料/books/03_nlp_with_transformers]] 学 HF 应用 → [[90_学习/05_参考资料/books/14_build_llm_from_scratch_raschka]] 深挖底层。
@@ -429,9 +429,9 @@ Grootendorst 自己开发的 BERTopic 是本章核心：
 - [[90_学习/05_参考资料/books/03_nlp_with_transformers|NLP with Transformers]] — HF 生态深入
 - [[90_学习/05_参考资料/books/14_build_llm_from_scratch_raschka|Build LLM From Scratch]] — 底层实现互补
 - [[90_学习/05_参考资料/books/07_hands_on_ml_geron|Hands-On ML]] — ML/DL 基础
-- [[05_大模型/01_LLM基础]] — 知识库 LLM 基础
+- [[05_大模型/01_LLM基础/README]] — 知识库 LLM 基础
 - [[05_大模型/07_提示工程/16_Prompt工程]] — 提示工程总览
 - [[14_RAG系统/01_RAG基础/07_RAG_系统]] — RAG 系统专题
 - [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图 2026]]
 
-> **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[05_大模型/01_LLM基础]] | [[03_深度学习/]] | [[14_RAG系统/]] | [[04_计算机视觉/]]
+> **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[05_大模型/01_LLM基础/README]] | [[03_深度学习/README]] | [[14_RAG系统/README]] | [[04_计算机视觉/README]]

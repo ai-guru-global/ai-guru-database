@@ -73,8 +73,8 @@ name_zh: "AI 工程"
 - **范式转变**: 从传统 ML（自己训练模型）到基础模型时代（调用预训练模型）
 - **AI Engineering 的定义**: 基于基础模型构建可靠、可扩展、经济的应用的工程学科
 - **AI 工程师 vs ML 工程师**:
-  - ML 工程师：关注数据、特征、训练
-  - AI 工程师：关注模型选型、提示、RAG、Agent、评估、推理优化
+ - ML 工程师：关注数据、特征、训练
+ - AI 工程师：关注模型选型、提示、RAG、Agent、评估、推理优化
 - **基础模型带来的新挑战**: 不确定性、成本、延迟、安全、评估难
 - **全书路线图**: 从理解模型到构建生产系统的完整旅程
 
@@ -82,42 +82,42 @@ name_zh: "AI 工程"
 
 - **架构基础**: Transformer、注意力机制、位置编码
 - **训练范式**:
-  - 预训练（Pretraining）：海量无标注数据
-  - 后训练（Post-training）：SFT + RLHF/DPO 对齐
+ - 预训练（Pretraining）：海量无标注数据
+ - 后训练（Post-training）：SFT + RLHF/DPO 对齐
 - **能力与边界**:
-  - 涌现能力（Emergent Abilities）
-  - 上下文学习（In-Context Learning）
-  - 幻觉（Hallucination）的根源
+ - 涌现能力（Emergent Abilities）
+ - 上下文学习（In-Context Learning）
+ - 幻觉（Hallucination）的根源
 - **模型选型**:
-  - 开源 vs 闭源
-  - 模型规模与能力的权衡
-  - 多模态模型（文本、图像、音频）
+ - 开源 vs 闭源
+ - 模型规模与能力的权衡
+ - 多模态模型（文本、图像、音频）
 - **关键认知**: 理解模型"能做什么"和"不能做什么"是工程设计的起点
 
 #### Ch 3: 推理优化
 
 - **采样策略**:
-  - Temperature、Top-p、Top-k 的工程含义
-  - 不同任务的采样参数选择
+ - Temperature、Top-p、Top-k 的工程含义
+ - 不同任务的采样参数选择
 - **量化（Quantization）**:
-  - INT8/INT4/FP8 量化
-  - 量化对质量的影响评估
+ - INT8/INT4/FP8 量化
+ - 量化对质量的影响评估
 - **推测解码（Speculative Decoding）**:
-  - 小模型草稿 + 大模型验证
-  - 加速原理与适用场景
+ - 小模型草稿 + 大模型验证
+ - 加速原理与适用场景
 - **KV Cache 优化**:
-  - KV Cache 的作用与显存占用
-  - PagedAttention、Prefix Caching
+ - KV Cache 的作用与显存占用
+ - PagedAttention、Prefix Caching
 - **延迟指标**: TTFT、TPS、E2E Latency 的优化
 
 #### Ch 4: 模型推理基础设施
 
 - **GPU 与硬件**:
-  - GPU 架构基础（H100、A100、消费级卡）
-  - 显存带宽与计算瓶颈
+ - GPU 架构基础（H100、A100、消费级卡）
+ - 显存带宽与计算瓶颈
 - **推理引擎**:
-  - vLLM、TensorRT-LLM、TGI 对比
-  - Continuous Batching 的原理
+ - vLLM、TensorRT-LLM、TGI 对比
+ - Continuous Batching 的原理
 - **批处理策略**: 动态批处理、优先级队列
 - **部署模式**: 云 API、托管推理、自建推理的选型
 - **成本-性能权衡**: 不同基础设施方案的经济性分析
@@ -128,9 +128,9 @@ name_zh: "AI 工程"
 
 - **提示工程基础**: 零样本、少样本、CoT（详见 [[90_学习/05_参考资料/books/02_prompt_engineering_for_llms]]）
 - **上下文工程（Context Engineering）**:
-  - 比"提示工程"更广义的概念
-  - 管理模型在每次调用时"看到"的全部信息
-  - 上下文的组装、压缩、优先级排序
+ - 比"提示工程"更广义的概念
+ - 管理模型在每次调用时"看到"的全部信息
+ - 上下文的组装、压缩、优先级排序
 - **结构化输出**: JSON Mode、Function Calling、Schema 约束
 - **提示的版本管理与测试**: 工程化管理提示资产
 - **上下文窗口管理**: 长上下文的利用与陷阱
@@ -138,36 +138,36 @@ name_zh: "AI 工程"
 #### Ch 6: RAG（检索增强生成）
 
 - **RAG 架构**:
-  - 索引（Indexing）→ 检索（Retrieval）→ 生成（Generation）
-  - 详见 [[14_RAG系统/01_RAG基础/07_RAG_系统]]
+ - 索引（Indexing）→ 检索（Retrieval）→ 生成（Generation）
+ - 详见 [[14_RAG系统/01_RAG基础/07_RAG_系统]]
 - **分块策略（Chunking）**:
-  - 固定大小 vs 语义分块
-  - 重叠与边界处理
+ - 固定大小 vs 语义分块
+ - 重叠与边界处理
 - **检索优化**:
-  - 向量检索 vs 关键词检索 vs 混合检索
-  - 重排序（Reranking）
-  - 查询改写（Query Rewriting）
+ - 向量检索 vs 关键词检索 vs 混合检索
+ - 重排序（Reranking）
+ - 查询改写（Query Rewriting）
 - **高级 RAG**:
-  - 多跳检索
-  - Agentic RAG（Agent 驱动的检索）
-  - GraphRAG（图结构检索）
+ - 多跳检索
+ - Agentic RAG（Agent 驱动的检索）
+ - GraphRAG（图结构检索）
 - **RAG 评估**: 检索质量 + 生成质量的双重评估
 
 #### Ch 7: 微调与适配
 
 - **何时需要微调**:
-  - 提示工程无法满足时的选择
-  - 微调 vs RAG vs 提示的决策树
+ - 提示工程无法满足时的选择
+ - 微调 vs RAG vs 提示的决策树
 - **参数高效微调（PEFT）**:
-  - LoRA / QLoRA 的原理与实践
-  - Adapter、Prefix Tuning
+ - LoRA / QLoRA 的原理与实践
+ - Adapter、Prefix Tuning
 - **微调数据准备**: 高质量数据 >> 数量
 - **全量微调 vs PEFT**: 成本与效果的权衡
 - **微调的陷阱**: 过拟合、灾难性遗忘、能力退化
 
 #### Ch 8: AI 智能体（Agent）与工具调用
 
-- **Agent 基础**: 感知-思考-行动循环（详见 [[15_智能体/]]）
+- **Agent 基础**: 感知-思考-行动循环（详见 [[15_智能体/README]]）
 - **工具调用（Function Calling）**: 让 LLM 使用外部工具
 - **规划与推理**: ReAct、Plan-and-Execute
 - **记忆系统**: 短期记忆 + 长期记忆
@@ -178,10 +178,10 @@ name_zh: "AI 工程"
 
 - **评估的核心难题**: LLM 输出的开放性使评估极其困难
 - **评估方法**:
-  - 基于规则（正则、Schema 校验）
-  - 基于参考答案（语义相似度）
-  - LLM-as-a-Judge（用强模型评估）
-  - 人工评估（黄金标准但昂贵）
+ - 基于规则（正则、Schema 校验）
+ - 基于参考答案（语义相似度）
+ - LLM-as-a-Judge（用强模型评估）
+ - 人工评估（黄金标准但昂贵）
 - **评估维度**: 准确性、相关性、安全性、格式合规
 - **评估集构建**: 黄金集、对抗集、真实流量采样
 - **持续评估**: 集成到 CI/CD 的质量门禁
@@ -189,13 +189,13 @@ name_zh: "AI 工程"
 #### Ch 10: 安全、护栏与对齐
 
 - **威胁模型**:
-  - Prompt Injection（直接/间接）
-  - 越狱（Jailbreak）
-  - 数据泄露
+ - Prompt Injection（直接/间接）
+ - 越狱（Jailbreak）
+ - 数据泄露
 - **护栏（Guardrails）**:
-  - 输入护栏：过滤恶意输入
-  - 输出护栏：审查模型输出
-  - 工具调用护栏：权限控制
+ - 输入护栏：过滤恶意输入
+ - 输出护栏：审查模型输出
+ - 工具调用护栏：权限控制
 - **对齐（Alignment）**: 让模型行为符合人类意图
 - **红队测试**: 主动发现安全漏洞
 - **合规**: EU AI Act、数据隐私法规
@@ -281,15 +281,15 @@ MRR (Mean Reciprocal Rank) = 1/第一个相关结果的排名
 
 | 本书章节 | 知识库主题 | 关联说明 |
 |----------|------------|----------|
-| Ch 1-2 基础模型 | [[05_大模型/01_LLM基础]] | 模型原理与选型 |
-| Ch 3-4 推理优化 | [[10_部署推理/]] | 量化、推测解码、推理引擎 |
+| Ch 1-2 基础模型 | [[05_大模型/01_LLM基础/README]] | 模型原理与选型 |
+| Ch 3-4 推理优化 | [[10_部署推理/README]] | 量化、推测解码、推理引擎 |
 | Ch 5 提示/上下文工程 | [[05_大模型/07_提示工程/16_Prompt工程]] | 提示技术 |
 | Ch 6 RAG | [[14_RAG系统/01_RAG基础/07_RAG_系统]] | 检索增强生成 |
 | Ch 7 微调 | [[05_大模型/06_微调技术/04_GenAI_L18_微调_LLMs]] | LoRA/PEFT |
-| Ch 8 Agent | [[15_智能体/]] | Agent 与工具调用 |
-| Ch 9 评估 | [[08_模型评估/]] | LLM 评估方法 |
-| Ch 10 安全 | [[17_伦理安全/]] | 护栏与对齐 |
-| Ch 11 架构 | [[12_架构基建/]] | 系统架构与生产化 |
+| Ch 8 Agent | [[15_智能体/README]] | Agent 与工具调用 |
+| Ch 9 评估 | [[08_模型评估/README]] | LLM 评估方法 |
+| Ch 10 安全 | [[17_伦理安全/README]] | 护栏与对齐 |
+| Ch 11 架构 | [[12_架构基建/README]] | 系统架构与生产化 |
 
 ### 与相关书籍的关系
 
@@ -401,9 +401,9 @@ MRR (Mean Reciprocal Rank) = 1/第一个相关结果的排名
 - [[90_学习/05_参考资料/books/10_designing_ml_systems_huyen|Designing ML Systems]] — 前置阅读（系统设计思维）
 - [[90_学习/05_参考资料/books/05_llm_engineers_handbook|LLM Engineer's Handbook]] — 配套（工程实现）
 - [[90_学习/05_参考资料/books/04_llms_in_production|LLMs in Production]] — 配套（生产运维）
-- [[05_大模型/]] — 知识库大模型章节
+- [[05_大模型/README]] — 知识库大模型章节
 - [[14_RAG系统/01_RAG基础/07_RAG_系统]] — RAG 系统专题
-- [[15_智能体/]] — Agent 专题
+- [[15_智能体/README]] — Agent 专题
 - [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图 2026]]
 
-> **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[05_大模型/]] | [[14_RAG系统/]] | [[15_智能体/]] | [[10_部署推理/]]
+> **关联**: → [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]] | [[05_大模型/README]] | [[14_RAG系统/README]] | [[15_智能体/README]] | [[10_部署推理/README]]

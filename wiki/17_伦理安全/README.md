@@ -167,8 +167,8 @@ name_zh: "08 AI 伦理、安全与对齐"
 - [[治理/ai-ethics-future|Ai Ethics Future]]
 - [[17_伦理安全/04_AI安全与红队/05_安全评估_框架|AI 安全评测框架]] — 安全评测基准与红队测试方法论
 
-- [[AI_Ethics_Safety_Future|AI 伦理、安全与未来]]
-- [[Agent_Security_Ethics_AGI|智能体安全、价值对齐与 AGI 路径]]
+- [[17_伦理安全/01_伦理基础/04_ai_ethics_future|AI 伦理、安全与未来]]
+- [[17_伦理安全/06_系统安全/02_Agent_安全_伦理_AGI|智能体安全、价值对齐与 AGI 路径]]
 
 ## 新增页面
 

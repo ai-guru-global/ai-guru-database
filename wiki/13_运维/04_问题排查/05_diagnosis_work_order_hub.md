@@ -11,6 +11,9 @@ aliases:
 sources: []
 
 name_zh: "工单智能体远程诊断知识枢纽"
+category: misc
+summary: "工单智能体远程诊断知识枢纽 相关主题页面：定义、要点与延伸阅读。"
+updated: 2026-11-25
 ---
 # 工单智能体远程诊断知识枢纽
 
@@ -85,7 +88,7 @@ name_zh: "工单智能体远程诊断知识枢纽"
 | [[07_模型训练/07_训练监控/02_LLM_微调_岗位_Failure_操作手册_on_K8s]] | LLM 微调失败（NaN/OOM/数据格式） |
 | [[10_部署推理/01_部署基础/08_模型_Hot_Reload_and_回滚_操作手册]] | 模型热加载/回滚 |
 | [[HAMi_Troubleshooting_Guide]] | HAMi GPU 虚拟化排障 |
-| [[K8s_AI_Troubleshooting_Cheat_Sheet]] | AI 工作负载排障速查表 |
+| [[13_运维/02_SRE与可靠性/17_K8s_AI_故障排查_Cheat_Sheet]] | AI 工作负载排障速查表 |
 
 ---
 
@@ -108,5 +111,5 @@ name_zh: "工单智能体远程诊断知识枢纽"
 - [[13_运维/04_问题排查/01_diagnosis_gpu_ai_workload_failure]] — GPU/AI 工作负载诊断决策树
 - [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文]] — 专有云 K8s 上下文
 - [[13_运维/04_问题排查/07_Kubernetes_故障排查_Playbook]] — K8s 排障手册
-- [[K8s_AI_Troubleshooting_Cheat_Sheet]] — 排障速查表
-- [[Cloud_Product_Ops_2026]] — 云产品运维 Agent 体系
+- [[13_运维/02_SRE与可靠性/17_K8s_AI_故障排查_Cheat_Sheet]] — 排障速查表
+- [[11_模型运维/14_云运维Agent/01_云_产品_Ops_2026]] — 云产品运维 Agent 体系

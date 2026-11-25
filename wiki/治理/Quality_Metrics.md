@@ -4,7 +4,7 @@ category: 07-governance
 tags: ["quality-metrics", "coverage", "consistency", "freshness", "audit"]
 summary: "知识库质量度量体系：覆盖率、一致性、时效性、交叉引用密度、内容深度指标定义与自动化审计方法。"
 created: 2026-07-21
-updated: 2026-09-04
+updated: 2026-11-25
 tier: supporting
 sources: []
 
@@ -14,7 +14,7 @@ name_zh: "质量度量"
 
 > 中文简称：质量度量
 
-> **口径声明（2026-09-04）**: 全库规模统计以 `工具/eval_scan_2026_07.py` 为唯一事实源（2,826 文件 / 90.07 万行 / 32.7 MB）；wikilink 与断链以 `工具/check_wikilinks.py` 严口径为准；门禁三项基线（断链 / 孤立页 / frontmatter 完整性）记录于 `治理/_meta/link-health-baseline.json`，由 `工具/link_gate.py` 维护，只降不升。
+> **口径声明（2026-11-25 更新）**: 全库规模统计以 `工具/count_words.py` 为准（3,385 文件 / 2,043.6 万字，2026-11-25 实测）；wikilink 断链以 `工具/check_wikilinks.py`（link_gate 复用口径）为准，md 内部链接口径见 `工具/check_links.py`；**门禁十一项基线**（wikilink 断链 / 孤立页 / frontmatter 完整性 / 中英间距 / staging frontmatter / staging 间距 / md 断链 / md 根相对裸写 / frontmatter 值违规 / 歧义裸名链接 / 正文契约）记录于 `治理/_meta/link-health-baseline.json`，由 `工具/link_gate.py` 维护，只降不升（2026-11-25 实测：101 / 184 / 715 / 895 / 7 / 6 / 43 / 0 / 83 / 0 / 4,955）；Q1 末 targets（frontmatter ≤300、孤立 ≤400、断链率 ≤2%）见同文件 targets 块。目录级债务分布见 `工具/debt_report.py` 周报。
 
 ## 1. 质量维度
 

@@ -12,6 +12,9 @@ aliases:
 sources: []
 
 name_zh: "AI 工作负载 GPU 故障远程诊断决策树"
+category: misc
+summary: "AI 工作负载 GPU 故障远程诊断决策树 相关主题页面：定义、要点与延伸阅读。"
+updated: 2026-11-25
 ---
 # AI 工作负载 GPU 故障远程诊断决策树
 
@@ -69,10 +72,10 @@ name_zh: "AI 工作负载 GPU 故障远程诊断决策树"
 1. 让用户执行 `nvidia-smi`（在 GPU Pod 内或节点上）
 2. 确认显存占用 vs 显存总量
 3. 如果显存确实不足：
-   - 减小 batch size（最直接）
-   - 启用 [[概念/gradient-checkpointing]]（用计算换显存）
-   - 减小模型精度（FP16 → INT8）
-   - 使用 LoRA/QLoRA 减少可训练参数
+ - 减小 batch size（最直接）
+ - 启用 [[概念/gradient-checkpointing]]（用计算换显存）
+ - 减小模型精度（FP16 → INT8）
+ - 使用 LoRA/QLoRA 减少可训练参数
 4. 如果是 HAMi 环境且显存看起来够但报 OOM → 参见 §9
 
 参见 [[13_运维/02_SRE与可靠性/11_GPU_OOM_故障排查_指南]]、[[概念/gpu-oom]]、[[概念/gradient-checkpointing]]。
@@ -351,7 +354,7 @@ name_zh: "AI 工作负载 GPU 故障远程诊断决策树"
 - [[07_模型训练/07_训练监控/02_LLM_微调_岗位_Failure_操作手册_on_K8s]] — LLM 微调失败 Runbook
 - [[10_部署推理/01_部署基础/08_模型_Hot_Reload_and_回滚_操作手册]] — 模型热加载/回滚 Runbook
 - [[HAMi_Troubleshooting_Guide]] — HAMi 排障指南
-- [[K8s_AI_Troubleshooting_Cheat_Sheet]] — AI 工作负载排障速查表
+- [[13_运维/02_SRE与可靠性/17_K8s_AI_故障排查_Cheat_Sheet]] — AI 工作负载排障速查表
 - [[13_运维/02_SRE与可靠性/18_LLM推理_SLO_指南]] — LLM 推理 SLO 指南
 - [[10_部署推理/05_硬件与算力/02_Ascend_NPU_推理_指南]] — 昇腾 NPU 推理指南
 - [[13_运维/04_问题排查/03_diagnosis_k8s_pod_failure]] — Pod 故障诊断决策树

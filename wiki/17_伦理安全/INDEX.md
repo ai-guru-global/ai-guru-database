@@ -6,6 +6,10 @@ updated: 2026-07-02
 sources: []
 name_zh: "伦理安全"
 name_en: "Ethics & Safety"
+category: misc
+tags: ["伦理安全", "knowledge-page"]
+summary: "伦理安全 相关主题页面：定义、要点与延伸阅读。"
+tier: supporting
 ---
 
 # Ethics Safety
@@ -28,9 +32,9 @@ This page indexes the contents of `伦理安全`.
 ## Files
 
 - [[17_伦理安全/06_系统安全/01_Agent_RAG_安全|Agent RAG Security]]
-- [[17_伦理安全/Agent_Security_Ethics_AGI|Agent Security Ethics AGI]]
+- [[17_伦理安全/06_系统安全/02_Agent_安全_伦理_AGI|Agent Security Ethics AGI]]
 - [[17_伦理安全/01_伦理基础/04_ai_ethics_future|AI Ethics And Future For Beginners]]
-- [[17_伦理安全/AI_Ethics_Safety_Future|AI Ethics Safety Future]]
+- [[17_伦理安全/01_伦理基础/04_ai_ethics_future|AI Ethics Safety Future]]
 - [[17_伦理安全/03_AI治理/01_AI治理合规2026|AI Governance Compliance 2026]]
 - [[17_伦理安全/04_AI安全与红队/01_AI_红队测试_指南|AI Red Teaming Guide]]
 - [[17_伦理安全/03_AI治理/03_AI监管工程2026|AI Regulatory Engineering 2026]]

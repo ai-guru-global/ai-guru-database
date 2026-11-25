@@ -7,6 +7,9 @@ sources: []
 tags: [visualization, index, navigation]
 name_zh: "可视化"
 name_en: "Visualization"
+category: misc
+summary: "可视化 相关主题页面：定义、要点与延伸阅读。"
+tier: supporting
 ---
 
 # 可视化（Visualization）
@@ -77,14 +80,14 @@ AI 可视化知识体系（Visualization Knowledge Base）涵盖训练监控（t
 |------|------|----------|
 | [[94_可视化/System_Viz/AI_System_Dashboard|AI System Dashboard]] | 监控/告警/运维仪表盘 | 平台工程师 |
 | [[94_可视化/System_Viz/Inference_Serving_Visualization|Inference Serving Visualization]] | 推理服务可视化 | 推理工程师 |
-| [[94_可视化/System_Viz/Knowledge_Graph_Visualization|Knowledge Graph Visualization]] | 知识图谱布局与交互 | 图谱工程师 |
+| [[94_可视化/04_系统可视化/04_知识图谱_可视化|Knowledge Graph Visualization]] | 知识图谱布局与交互 | 图谱工程师 |
 | [[94_可视化/04_系统可视化/05_模型_架构_Viz|Model Architecture Viz]] | 模型架构可视化 | 架构师 / 研究员 |
 
 ### 最佳实践（Best Practices）
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[94_可视化/Best_Practices/Data_Visualization_Best_Practices|Data Visualization Best Practices]] | 图表选择/配色/标注 | 全体实践者 |
+| [[94_可视化/01_最佳实践/01_数据_可视化_最佳实践|Data Visualization Best Practices]] | 图表选择/配色/标注 | 全体实践者 |
 | [[94_可视化/01_最佳实践/02_数据_Viz_最佳实践.md|Data Viz Best Practices]] | 数据可视化最佳实践（深度版） | 数据分析师 |
 
 ---
@@ -143,7 +146,7 @@ flowchart LR
 | 陷阱 | 表现 | 正确做法 | 关联 |
 |------|------|----------|------|
 | 截断 y 轴 | 夸大差异 | 柱状图 y 轴从 0 起 | [[94_可视化/01_最佳实践/02_数据_Viz_最佳实践.md|最佳实践]] |
-| 用饼图比微小占比 | 难以辨别 | 改用条形图 | [[94_可视化/Best_Practices/Data_Visualization_Best_Practices|图表选择]] |
+| 用饼图比微小占比 | 难以辨别 | 改用条形图 | [[94_可视化/01_最佳实践/01_数据_可视化_最佳实践|图表选择]] |
 | 颜色过多/红绿混用 | 色盲不友好 | 限 5 色+色盲安全调色板 | [[94_可视化/01_最佳实践/02_数据_Viz_最佳实践.md|配色]] |
 | 训练曲线只看最终值 | 误判收敛 | 看趋势+方差+学习率 | [[94_可视化/02_训练可视化/06_训练_Curves_分析.md|曲线分析]] |
 | t-SNE 误解为距离 | 过度解读簇间距 | 结合局部/全局+多随机种子 | [[94_可视化/03_评估可视化/03_降维可视化.md|降维]] |

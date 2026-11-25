@@ -14,19 +14,20 @@ summary: "从ML算法视角深入联邦学习：FedAvg/FedProx/SCAFFOLD的完整
 created: 2026-07-19
 updated: 2026-07-19
 name_zh: "联邦学习"
+tier: supporting
 ---
 
-# 联邦学习 (ML算法视角)
+# 联邦学习 (ML 算法视角)
 
 > 中文简称：联邦学习
 
 ## 概述
 
-联邦学习 (Federated Learning, FL) 是一种分布式机器学习范式，允许多个参与方在不共享原始数据的前提下协作训练模型。与传统的集中式训练不同，FL将计算推向数据所在地，仅交换模型更新（梯度或参数），从根本上解决数据隐私、数据孤岛和通信带宽问题。
+联邦学习 (Federated Learning, FL) 是一种分布式机器学习范式，允许多个参与方在不共享原始数据的前提下协作训练模型。与传统的集中式训练不同，FL 将计算推向数据所在地，仅交换模型更新（梯度或参数），从根本上解决数据隐私、数据孤岛和通信带宽问题。
 
 ### 核心动机
 
-$$\text{传统ML}: \quad \text{数据} \rightarrow \text{中心服务器} \rightarrow \text{训练模型}$$
+$$\text{传统 ML}: \quad \text{数据} \rightarrow \text{中心服务器} \rightarrow \text{训练模型}$$
 $$\text{联邦学习}: \quad \text{模型} \rightarrow \text{各数据方} \rightarrow \text{聚合更新}$$
 
 ### 联邦学习分类
@@ -153,7 +154,7 @@ For each round t = 0, 1, 2, ...:
 $$w^{t+1} = \sum_{k \in S^t} \frac{n_k}{n_{S^t}} w_k^{t,E}$$
 
 **特殊情况**：
-- $E=1, C=1$（全部参与，单步本地更新）：退化为标准SGD
+- $E=1, C=1$（全部参与，单步本地更新）：退化为标准 SGD
 - $E=\infty$（本地训练至收敛）：退化为独立训练+平均
 
 **收敛保证**（IID, 凸）：
@@ -181,7 +182,7 @@ $$w_k^{t,e} = w_k^{t,e-1} - \eta_l \left(\nabla F_k(w_k^{t,e-1}) + \mu_p(w_k^{t,
 $$\frac{1}{T}\sum_{t=0}^{T-1}\mathbb{E}\|\nabla F(w^t)\|^2 \leq \mathcal{O}\left(\frac{F(w^0)-F^*}{\eta T} + \eta L\sigma^2 + \frac{\eta^2 L^2 \zeta^2}{\mu_p}\right)$$
 
 **$\mu_p$ 的选择**：
-- $\mu_p = 0$：退化为FedAvg
+- $\mu_p = 0$：退化为 FedAvg
 - $\mu_p \rightarrow \infty$：本地更新被完全抑制
 - 实践推荐：$\mu_p \in [0.001, 1.0]$，通过验证集调优
 
@@ -243,11 +244,11 @@ $$\frac{1}{T}\sum_{t=0}^{T-1}\mathbb{E}\|\nabla F(w^t)\|^2 \leq \mathcal{O}\left
 
 | 算法 | 本地更新 | 服务器聚合 | 异构性处理 | 通信轮次 |
 |------|----------|-----------|-----------|----------|
-| FedAvg | $E$步SGD | 加权平均 | 无 | 基准 |
-| FedProx | $E$步SGD+近端项 | 加权平均 | 近端约束 | ~FedAvg |
-| SCAFFOLD | $E$步修正SGD | 平均+控制变量 | 控制变量 | <FedAvg |
-| FedNova | $E$步SGD | 归一化平均 | 归一化 | ~FedAvg |
-| MOON | $E$步SGD+对比损失 | 加权平均 | 表征对齐 | ~FedAvg |
+| FedAvg | $E$步 SGD | 加权平均 | 无 | 基准 |
+| FedProx | $E$步 SGD+近端项 | 加权平均 | 近端约束 | ~FedAvg |
+| SCAFFOLD | $E$步修正 SGD | 平均+控制变量 | 控制变量 | <FedAvg |
+| FedNova | $E$步 SGD | 归一化平均 | 归一化 | ~FedAvg |
+| MOON | $E$步 SGD+对比损失 | 加权平均 | 表征对齐 | ~FedAvg |
 
 ---
 
@@ -318,25 +319,25 @@ $$\text{通信量} = n_{\text{public}} \times C \quad \text{(公开数据量 × 
 
 ## 异构性 (Non-IID) 挑战
 
-### Non-IID的形式化
+### Non-IID 的形式化
 
 **标签分布偏斜 (Label Skew)**：
 
 $$p_k(y) \neq p_{k'}(y) \quad \text{for } k \neq k'$$
 
-极端情况：每个客户端只有部分类别（如客户端1只有数字0-3，客户端2只有4-9）。
+极端情况：每个客户端只有部分类别（如客户端 1 只有数字 0-3，客户端 2 只有 4-9）。
 
 **特征分布偏斜 (Feature Skew)**：
 
 $$p_k(x|y) \neq p_{k'}(x|y)$$
 
-例如：不同医院的CT设备导致图像特征分布不同。
+例如：不同医院的 CT 设备导致图像特征分布不同。
 
 **数量偏斜 (Quantity Skew)**：
 
 $$n_k \gg n_{k'} \quad \text{for some } k, k'$$
 
-### Non-IID的影响分析
+### Non-IID 的影响分析
 
 **梯度方向分歧**：
 
@@ -438,7 +439,7 @@ $$\epsilon_{\text{total}} \leq \sqrt{2T \ln(1/\delta)} \cdot q \cdot \sigma^{-1}
 
 ### 标准实验设置
 
-| 数据集 | 客户端数 | Non-IID方式 | 评估指标 |
+| 数据集 | 客户端数 | Non-IID 方式 | 评估指标 |
 |--------|----------|-------------|----------|
 | MNIST | 100 | Dirichlet(α=0.5) | Accuracy |
 | CIFAR-10 | 100 | Dirichlet(α=0.1) | Accuracy |
@@ -461,19 +462,19 @@ MOON       | ~250              | 80.3%          | 250×model
 
 ### 大规模实践数据
 
-**Google Gboard键盘**：
+**Google Gboard 键盘**：
 - 参与设备：数百万台手机
 - 模型大小：~4MB（量化后）
-- 训练轮次：每日1轮
+- 训练轮次：每日 1 轮
 - 隐私：DP (ε=8) + Secure Aggregation
-- 效果：下一词预测准确率提升24%
+- 效果：下一词预测准确率提升 24%
 
 **医疗联邦学习 (NVIDIA FLARE)**：
 - 参与机构：20+医院
 - 数据：不出医院
 - 模型：3D U-Net (脑肿瘤分割)
-- 效果：接近集中式训练（Dice差<2%）
-- 训练时间：2天（vs 集中式需数据汇聚数周）
+- 效果：接近集中式训练（Dice 差<2%）
+- 训练时间：2 天（vs 集中式需数据汇聚数周）
 
 ---
 
@@ -790,19 +791,19 @@ def create_non_iid_splits(dataset, n_clients, alpha=0.1):
 | 数据位置 | 全部汇聚到中心 | 留在各客户端 |
 | 隐私风险 | 高（数据集中） | 低（仅交换模型） |
 | 通信需求 | 一次性数据传输 | 持续多轮通信 |
-| 计算分布 | 中心GPU集群 | 边缘设备分布式 |
-| 数据异构 | 可统一预处理 | 需处理Non-IID |
-| 收敛速度 | 快（标准SGD） | 慢（通信瓶颈+异构） |
-| 最终精度 | 基准（最优） | 通常低1-5% |
-| 合规性 | 可能违反数据法规 | 满足GDPR等要求 |
+| 计算分布 | 中心 GPU 集群 | 边缘设备分布式 |
+| 数据异构 | 可统一预处理 | 需处理 Non-IID |
+| 收敛速度 | 快（标准 SGD） | 慢（通信瓶颈+异构） |
+| 最终精度 | 基准（最优） | 通常低 1-5% |
+| 合规性 | 可能违反数据法规 | 满足 GDPR 等要求 |
 | 适用场景 | 数据可汇聚 | 数据不可/不应汇聚 |
 | 系统复杂度 | 低 | 高（异步/掉线/异构） |
 
-### FL框架对比 (2026)
+### FL 框架对比 (2026)
 
 | 框架 | 维护方 | 语言 | 特点 | 适用规模 |
 |------|--------|------|------|----------|
-| Flower | Flower Labs | Python | 轻量、框架无关 | 1-10000客户端 |
+| Flower | Flower Labs | Python | 轻量、框架无关 | 1-10000 客户端 |
 | FedML | FedML Inc. | Python | 全栈、云原生 | 大规模 |
 | NVIDIA FLARE | NVIDIA | Python | 医疗优化 | 中规模 |
 | PySyft | OpenMined | Python | 隐私计算集成 | 中规模 |
@@ -892,12 +893,12 @@ $$\alpha_k^t = \frac{1}{1 + \lambda_{\text{stale}} \cdot (t - \tau_k)}$$
 - [[02_机器学习/01_机器学习基础/13_Tabular_Foundation_模型_2026]] - 表格基础模型（联邦表格学习）
 - [[概念/Safety/privacy-preserving-ai|Differential_Privacy]] - 差分隐私理论
 - Distributed_Optimization - 分布式优化基础
-- SGD_Variants - SGD及其变体
-- Communication_Efficient_ML - 通信高效ML
+- SGD_Variants - SGD 及其变体
+- Communication_Efficient_ML - 通信高效 ML
 - Privacy_Preserving_ML - 隐私保护机器学习
 - Edge_ML - 边缘机器学习
-- [[Transfer_Learning]] - 迁移学习
+- [[03_深度学习/09_高级专题/09_迁移学习]] - 迁移学习
 - Multi_Task_Learning - 多任务学习
 - Bias_Variance_Tradeoff - 偏差-方差权衡
-- [[治理/cheatsheets/cheatsheet-ml-algorithms]] - ML算法速查
+- [[治理/cheatsheets/cheatsheet-ml-algorithms]] - ML 算法速查
 - [[概念/Math/supervised-learning]] - 监督学习基础

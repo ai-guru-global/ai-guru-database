@@ -140,7 +140,7 @@ DeepSeek-V3 的 MTP 在训练时增加辅助预测头，推理时天然作为 dr
 - [[概念/LLM/mtp|Multi-Token Prediction]]
 - [[概念/Inference/kv-cache|KV Cache]]
 - [[10_部署推理/03_推理优化/12_Speculative_Decoding_高级_2026|投机解码高级技术]]
-- [[05_大模型/02_序列模型/Text_Generation_Decoding_Strategies|文本生成解码策略]]
+- [[概念/LLM/decoding-strategies|文本生成解码策略]]
 
 ## 2026 推测解码生态
 

@@ -64,18 +64,18 @@ name_zh: "云运维 Agent"
 - [[_projects/Cloud_Ops_Agent/docs/operations/index|云产品运维 Agent 运维指南 (Operations)]]
 - [[_projects/Cloud_Ops_Agent/docs/product/index|云产品运维 Agent 产品管理指南 (Product Management)]]
 - [[_projects/Cloud_Ops_Agent/README|云运维 Agent (Cloud Ops Agent)]]
-- [[_projects/Cloud_Ops_Agent/Mobile_AI_Ops_Design|Mobile AI Ops: 基于 Google Edge Gallery 的手拍即运维产品设计]]
+- [[11_模型运维/14_云运维Agent/05_移动端_AI_Ops_设计|Mobile AI Ops: 基于 Google Edge Gallery 的手拍即运维产品设计]]
 - [[15_智能体/07_Agent评估/Cloud_Agent_Evaluation/README|18 云运维 Agent — 小白版 ☁️]]
-- [[_projects/Cloud_Ops_Agent/Cloud_Product_Ops_2026|Cloud Product Ops 2026: 云产品运维 Agent 体系]]
+- [[11_模型运维/14_云运维Agent/01_云_产品_Ops_2026|Cloud Product Ops 2026: 云产品运维 Agent 体系]]
 
 - [[概念/ai-architecture]] — AI 系统架构
 - [[概念/model-deployment]] — 模型部署
 - [[_projects/Cloud_Ops_Agent/docs/index]] — Cloud Ops Agent 知识库首页
 
 - [[_projects/Cloud_Ops_Agent/README|云运维 Agent (Cloud Ops Agent)]]
-- [[_projects/Cloud_Ops_Agent/Mobile_AI_Ops_Design|Mobile AI Ops: 基于 Google Edge Gallery 的手拍即运维产品设计]]
+- [[11_模型运维/14_云运维Agent/05_移动端_AI_Ops_设计|Mobile AI Ops: 基于 Google Edge Gallery 的手拍即运维产品设计]]
 - [[15_智能体/07_Agent评估/Cloud_Agent_Evaluation/README|18 云运维 Agent — 小白版 ☁️]]
-- [[_projects/Cloud_Ops_Agent/Cloud_Product_Ops_2026|Cloud Product Ops 2026: 云产品运维 Agent 体系]]
+- [[11_模型运维/14_云运维Agent/01_云_产品_Ops_2026|Cloud Product Ops 2026: 云产品运维 Agent 体系]]
 
 - [[_projects/Cloud_Ops_Agent/docs/product/index|云产品运维 Agent 产品管理指南 (Product Management)]]
 
@@ -85,7 +85,7 @@ name_zh: "云运维 Agent"
 
 - [[13_运维/04_问题排查/05_diagnosis_work_order_hub]] — 工单智能体远程诊断知识枢纽（Pod/网络/存储/GPU 四大决策树）
 
-## MLOps核心流程对比
+## MLOps 核心流程对比
 
 | 阶段 | 关键活动 | 工具链 | 质量指标 |
 |------|----------|--------|----------|
@@ -94,17 +94,17 @@ name_zh: "云运维 Agent"
 | 模型评估 | 离线评估/对比实验/偏差检测 | Great Expectations/Evidently | 准确率/公平性指标 |
 | 模型部署 | 容器化/服务化/灰度发布 | K8s/Seldon/vLLM | 延迟/吞吐/可用性 |
 | 模型监控 | 漂移检测/性能退化/告警 | Prometheus/Evidently/Grafana | 漂移分数/告警准确率 |
-| 模型迭代 | A/B测试/自动重训/版本回滚 | Argo/Kubeflow/MLflow | 迭代周期/线上指标 |
+| 模型迭代 | A/B 测试/自动重训/版本回滚 | Argo/Kubeflow/MLflow | 迭代周期/线上指标 |
 
 ## 运维关键指标体系
 
 | 指标类别 | 具体指标 | 目标值 | 监控频率 |
 |----------|----------|--------|----------|
 | 可用性 | 服务可用率 | >99.9% | 实时 |
-| 性能 | P99推理延迟 | <2s | 实时 |
-| 质量 | 模型准确率 | >基线5% | 每日 |
+| 性能 | P99 推理延迟 | <2s | 实时 |
+| 质量 | 模型准确率 | >基线 5% | 每日 |
 | 漂移 | 数据/概念漂移分数 | <阈值 | 每小时 |
-| 成本 | GPU利用率/每请求成本 | >80%利用率 | 每日 |
+| 成本 | GPU 利用率/每请求成本 | >80% 利用率 | 每日 |
 | 安全 | 对抗攻击检测率 | >95% | 实时 |
 
 ## 常见运维问题与解决方案
@@ -113,29 +113,29 @@ name_zh: "云运维 Agent"
 |------|------|----------|----------|
 | 模型性能退化 | 数据分布漂移 | 触发重训/回滚 | 漂移监控+自动告警 |
 | 推理延迟飙升 | 流量突增/资源不足 | 自动扩容+限流 | 容量规划+压测 |
-| GPU OOM | 批处理过大/显存泄漏 | 减小batch/重启 | 显存监控+限制 |
-| 数据管道中断 | 上游变更/格式错误 | Schema验证+告警 | 契约测试+版本化 |
-| 模型版本混乱 | 缺乏版本管理 | MLflow统一注册 | 强制版本化流程 |
+| GPU OOM | 批处理过大/显存泄漏 | 减小 batch/重启 | 显存监控+限制 |
+| 数据管道中断 | 上游变更/格式错误 | Schema 验证+告警 | 契约测试+版本化 |
+| 模型版本混乱 | 缺乏版本管理 | MLflow 统一注册 | 强制版本化流程 |
 
 ## 模型生命周期管理
 
 | 阶段 | 状态 | 关键操作 | 负责人 |
 |------|------|----------|--------|
-| 开发 | Staging | 训练+评估+注册 | ML工程师 |
-| 验证 | Validating | 集成测试+性能测试 | QA+ML工程师 |
-| 发布 | Released | 灰度发布+监控 | MLOps工程师 |
+| 开发 | Staging | 训练+评估+注册 | ML 工程师 |
+| 验证 | Validating | 集成测试+性能测试 | QA+ML 工程师 |
+| 发布 | Released | 灰度发布+监控 | MLOps 工程师 |
 | 运行 | Active | 监控+维护+告警 | SRE+MLOps |
-| 退役 | Archived | 流量切换+归档 | MLOps工程师 |
+| 退役 | Archived | 流量切换+归档 | MLOps 工程师 |
 
 ## 自动化运维实践
 
 | 实践 | 实现方式 | 收益 |
 |------|----------|------|
-| CI/CD for ML | 自动化训练-评估-部署流水线 | 迭代速度提升5x |
+| CI/CD for ML | 自动化训练-评估-部署流水线 | 迭代速度提升 5x |
 | 自动重训 | 漂移触发+定时触发 | 模型始终保持最新 |
-| 自动扩缩容 | HPA基于QPS/GPU利用率 | 成本优化30-50% |
+| 自动扩缩容 | HPA 基于 QPS/GPU 利用率 | 成本优化 30-50% |
 | 自动回滚 | 指标异常自动切回旧版本 | 故障恢复<5min |
-| 自动告警 | 多级告警+智能降噪 | 减少误报80% |
+| 自动告警 | 多级告警+智能降噪 | 减少误报 80% |
 
 ## 术语速查表
 
@@ -155,7 +155,7 @@ name_zh: "云运维 Agent"
 ## 检查清单
 
 - [ ] 模型版本管理和注册中心已建立
-- [ ] 自动化CI/CD流水线已配置
+- [ ] 自动化 CI/CD 流水线已配置
 - [ ] 模型监控和漂移检测已部署
 - [ ] 自动扩缩容策略已配置
 - [ ] 告警规则和响应流程已定义
@@ -170,28 +170,28 @@ name_zh: "云运维 Agent"
 | L1 手工 | 手动部署和监控 | 基础脚本 | 人工操作为主 |
 | L2 自动化 | 流水线自动化 | CI/CD+监控 | 一键部署+告警 |
 | L3 标准化 | 统一平台和规范 | 平台化+标准化 | 自助服务+SLA |
-| L4 智能化 | AI驱动运维 | AIOps+自愈 | 自动诊断+修复 |
+| L4 智能化 | AI 驱动运维 | AIOps+自愈 | 自动诊断+修复 |
 | L5 自治 | 全自动化运维 | 自治系统 | 无人值守运行 |
 
 ## 成本优化策略
 
 | 策略 | 实现方式 | 节省比例 | 适用场景 |
 |------|----------|----------|----------|
-| 模型量化 | INT8/INT4量化 | 50-75%算力 | 推理服务 |
-| 动态批处理 | 根据负载调整batch | 30-40%资源 | 在线推理 |
-| 弹性伸缩 | 基于负载自动扩缩 | 40-60%闲时 | 波动流量 |
-| 模型蒸馏 | 大模型教小模型 | 70-90%算力 | 延迟敏感场景 |
-| 混合部署 | 云端+边缘协同 | 30-50%带宽 | 地理分布用户 |
-| 资源复用 | 多模型共享GPU | 20-30%硬件 | 多模型服务 |
+| 模型量化 | INT8/INT4 量化 | 50-75% 算力 | 推理服务 |
+| 动态批处理 | 根据负载调整 batch | 30-40% 资源 | 在线推理 |
+| 弹性伸缩 | 基于负载自动扩缩 | 40-60% 闲时 | 波动流量 |
+| 模型蒸馏 | 大模型教小模型 | 70-90% 算力 | 延迟敏感场景 |
+| 混合部署 | 云端+边缘协同 | 30-50% 带宽 | 地理分布用户 |
+| 资源复用 | 多模型共享 GPU | 20-30% 硬件 | 多模型服务 |
 
 ## 故障响应流程
 
 | 阶段 | 时间目标 | 关键动作 | 负责人 |
 |------|----------|----------|--------|
 | 检测 | <1min | 自动告警触发 | 监控系统 |
-| 响应 | <5min | 确认+初步诊断 | 值班SRE |
+| 响应 | <5min | 确认+初步诊断 | 值班 SRE |
 | 缓解 | <15min | 回滚/扩容/限流 | SRE+MLOps |
-| 修复 | <1h | 根因分析+修复 | ML工程师 |
+| 修复 | <1h | 根因分析+修复 | ML 工程师 |
 | 复盘 | <24h | 事后分析+改进 | 全团队 |
 
 ## 安全运维要点
@@ -217,9 +217,9 @@ name_zh: "云运维 Agent"
 
 ## 快速自检清单
 
-- [ ] 运维成熟度已达到L3以上
+- [ ] 运维成熟度已达到 L3 以上
 - [ ] 成本优化策略已实施
 - [ ] 故障响应流程已演练
 - [ ] 安全防护措施已覆盖
-- [ ] 文档和Runbook已完善
+- [ ] 文档和 Runbook 已完善
 - [ ] 团队技能持续提升

@@ -70,7 +70,7 @@ log P(y_1, ..., y_t) = sum_{i=1}^{t} log P(y_i | y_1, ..., y_{i-1})
 
 **第 2 步**：
 
-扩展 A：`AA(0.25)`、`AB(0.15)`、`AC(0.10)`  
+扩展 A：`AA(0.25)`、`AB(0.15)`、`AC(0.10)` 
 扩展 B：`BA(0.18)`、`BB(0.08)`、`BC(0.04)`
 
 保留 top-2：`AA`、`AB`
@@ -198,6 +198,6 @@ Beam Search (k=1) = Greedy Decoding
 - [[概念/LLM/greedy-decoding|贪婪解码]]
 - [[概念/LLM/sampling-decoding|采样解码]]
 - [[概念/LLM/top-p-sampling|Top-p 采样]]
-- [[05_大模型/02_序列模型/Text_Generation_Decoding_Strategies|解码策略]]
+- [[概念/LLM/decoding-strategies|解码策略]]
 
 > ℹ️ 现代 LLM 应用中，采样策略 (Top-p/Top-k) 比 Beam Search 更常用，Beam Search 主要用于翻译/摘要等确定性任务。

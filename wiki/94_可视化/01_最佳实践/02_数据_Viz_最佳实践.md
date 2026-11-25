@@ -52,7 +52,7 @@ name_zh: "数据可视化最佳实践深度解析"
 
 ### 1.2 本篇定位
 
-本篇是可视化最佳实践的**深度版**，与 [[94_可视化/Best_Practices/Data_Visualization_Best_Practices|速查版]] 互补，提供更完整的方法论、反模式与实现指引。
+本篇是可视化最佳实践的**深度版**，与 [[94_可视化/01_最佳实践/01_数据_可视化_最佳实践|速查版]] 互补，提供更完整的方法论、反模式与实现指引。
 
 ---
 
@@ -446,7 +446,7 @@ plt.show()
 
 - [[94_可视化/index|可视化首页]]
 - [[94_可视化/Best_Practices/index|Best Practices]]
-- [[94_可视化/Best_Practices/Data_Visualization_Best_Practices|数据可视化最佳实践（速查）]]
+- [[94_可视化/01_最佳实践/01_数据_可视化_最佳实践|数据可视化最佳实践（速查）]]
 - [[94_可视化/README.md|Visualization for dummy]]
 - [[94_可视化/Training_Viz/index|Training Viz]]
 - [[94_可视化/Evaluation_Viz/index|Evaluation Viz]]

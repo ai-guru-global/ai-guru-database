@@ -230,8 +230,8 @@ curl http://localhost:8000/metrics | grep -E "throughput|cache|batch"
 - [[概念/kv-cache]] -- KV Cache（两者共同管理的对象）
 - [[概念/dynamic-batch-scheduling]] -- 动态批调度
 - [[概念/model-deployment]] -- 模型部署全景
-- [[治理/kv-cache-paged-attention]] -- KV Cache x PagedAttention
-- [[治理/kv-cache-inference-optimization]] -- KV Cache x 推理优化
+- [[10_部署推理/03_推理优化/07_kv_cache_paged_attention]] -- KV Cache x PagedAttention
+- [[10_部署推理/03_推理优化/06_kv_cache_inference_optimization]] -- KV Cache x 推理优化
 - [[治理/serving-deployment]] -- 模型服务 x 模型部署
 - [[10_部署推理/02_推理引擎/29_vLLM_深入分析]] -- vLLM（两者首发组合实现）
 - [[10_部署推理/02_推理引擎/23_SGLang_深入分析]] -- SGLang（零开销调度 + 两者协同）

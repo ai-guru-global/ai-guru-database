@@ -115,6 +115,6 @@ name_zh: "LLM 推理 SLO 实践指南"
 - [[概念/sli|SLI]]
 - [[概念/error-budget|Error Budget]]
 - [[13_运维/02_SRE与可靠性/SLO_Error_Budget_AI_Deep_Dive|SLO 与错误预算]]
-- [[11_模型运维/LLM_Inference_Observability_Stack|LLM 推理可观测性栈]]
+- [[11_模型运维/08_可观测性/08_LLM_可观测性_2026|LLM 推理可观测性栈]]
 
 - [[13_运维/README|AI 运维与可观测性 (AI Ops)]]

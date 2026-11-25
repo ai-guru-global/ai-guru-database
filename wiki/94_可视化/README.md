@@ -72,8 +72,8 @@ python -m http.server 8080
 - [[94_可视化/README|94 Visualization — 小白版 📊]]
 - [[94_可视化/Model_Interpretability_Visualization|模型可解释性可视化]]
 
-- [[前端应用/atlas/README]] — AI Guru Knowledge Atlas（D3） (共享: charts, dashboards, data-viz, visualization)
-- [[前端应用/atlas/docs/performance]] — 性能审计报告（Lighthouse） (共享: charts, dashboards, data-viz, visualization)
+- `code/前端应用/atlas/docs/performance.md` — AI Guru Knowledge Atlas（D3） (共享: charts, dashboards, data-viz, visualization)
+- `code/前端应用/atlas/docs/performance.md` — 性能审计报告（Lighthouse） (共享: charts, dashboards, data-viz, visualization)
 - [[94_可视化/02_训练可视化/07_训练_监控_可视化.md|Training_Monitoring_Visualization]]
 - [[94_可视化/README.md|Visualization_for_dummy]]
 - [[94_可视化/04_系统可视化/01_AI_系统_仪表盘.md|AI_System_Dashboard]]

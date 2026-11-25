@@ -234,5 +234,5 @@ curl http://localhost:8000/metrics | grep vllm_cache
 - [[10_部署推理/02_推理引擎/29_vLLM_深入分析]] -- vLLM（PagedAttention 首发实现）
 - [[10_部署推理/02_推理引擎/23_SGLang_深入分析]] -- SGLang（RadixAttention 的内存管理）
 - [[10_部署推理/03_推理优化/05_KV_Cache_深入分析]] -- KV Cache 深度研究
-- [[治理/paged-attention-continuous-batching]] -- PagedAttention x Continuous Batching
-- [[治理/kv-cache-inference-optimization]] -- KV Cache x 推理优化
+- [[10_部署推理/03_推理优化/08_paged_attention_continuous_batching]] -- PagedAttention x Continuous Batching
+- [[10_部署推理/03_推理优化/06_kv_cache_inference_optimization]] -- KV Cache x 推理优化

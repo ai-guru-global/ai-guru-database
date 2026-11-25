@@ -281,8 +281,8 @@ flowchart TB
 
 
 
-- [[Data_Pipeline_for_ML|ML 数据流水线]]
-- [[Feature_Store_Fundamentals|特征平台基础]]
+- [[11_模型运维/02_数据工程/01_数据_流水线_for_ML|ML 数据流水线]]
+- [[11_模型运维/03_特征存储/02_特征存储_基础|特征平台基础]]
 - [[概念/Inference/model-serving|模型服务模式 (Model Serving Patterns)]]
 - [[11_模型运维/05_流程编排/01_Annotation_流水线|标注流水线 (Annotation Pipeline)]]
 - [[Tutorial_LLMOps_End_to_End|LLMOps 端到端教程：Langfuse + Promptfoo + Ragas + LiteLLM]]

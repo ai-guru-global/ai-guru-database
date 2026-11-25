@@ -6,6 +6,10 @@ updated: 2026-07-10
 sources: []
 name_zh: "概念图谱"
 name_en: "Concept Graph"
+category: misc
+tags: ["概念图谱", "knowledge-page"]
+summary: "概念图谱 相关主题页面：定义、要点与延伸阅读。"
+tier: supporting
 ---
 
 # Concepts
@@ -19,16 +23,16 @@ This page indexes the contents of `概念`. Total: 700+ files across 12 subdomai
 | 子域 | 文件数 | 说明 |
 |------|------|------|
 | [[概念/General/index|概念/General 域索引]] | 151 | 已建 12 个逻辑语义子域导航 (2026-07) |
-| [[概念/LLM/]] | 118 | 大语言模型架构、训练、对齐 |
-| [[概念/K8s/]] | 106 | Kubernetes 与云原生 AI 基础设施 |
-| [[概念/Training/]] | 61 | 模型训练、分布式训练、优化 |
-| [[概念/Inference/]] | 43 | 推理引擎、服务化、优化 |
-| [[概念/RAG/]] | 41 | 检索增强生成、向量数据库 |
-| [[概念/Agent/]] | 39 | AI 智能体、工具调用、多智能体 |
-| [[概念/GPU/]] | 34 | GPU 硬件、CUDA、集群管理 |
-| [[概念/MLOps/]] | 28 | ML 运维、CI/CD、监控 |
-| [[概念/Math/]] | 22 | 数学基础、优化理论 |
-| [[概念/Vision/]] | 28 | 计算机视觉、多模态 |
+| [[概念/LLM/README]] | 118 | 大语言模型架构、训练、对齐 |
+| [[概念/K8s/README]] | 106 | Kubernetes 与云原生 AI 基础设施 |
+| [[概念/Training/README]] | 61 | 模型训练、分布式训练、优化 |
+| [[概念/Inference/README]] | 43 | 推理引擎、服务化、优化 |
+| [[概念/RAG/README]] | 41 | 检索增强生成、向量数据库 |
+| [[概念/Agent/README]] | 39 | AI 智能体、工具调用、多智能体 |
+| [[概念/GPU/README]] | 34 | GPU 硬件、CUDA、集群管理 |
+| [[概念/MLOps/README]] | 28 | ML 运维、CI/CD、监控 |
+| [[概念/Math/README]] | 22 | 数学基础、优化理论 |
+| [[概念/Vision/README]] | 28 | 计算机视觉、多模态 |
 | [[概念/Safety/README|Safety 域索引]] | 26 | AI 安全、对齐、伦理、治理 |
 
 ## Files (General subdomain)

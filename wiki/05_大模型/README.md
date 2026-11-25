@@ -165,7 +165,7 @@ flowchart LR
 - [[05_大模型/09_多模态模型/README|多模态模型目录]]
 - [[05_大模型/07_提示工程/README|提示词工程与结构化输出 (Prompt Engineering & Structured Output)]]
 - [[05_大模型/08_推理模型/README|推理模型目录]]
-- [[Transformer_Training_vs_Inference|Transformer 在大模型训练与推理中的应用]]
+- [[05_大模型/03_Transformer架构/07_Transformer_训练推理应用|Transformer 在大模型训练与推理中的应用]]
 
 ## 本期新增
 

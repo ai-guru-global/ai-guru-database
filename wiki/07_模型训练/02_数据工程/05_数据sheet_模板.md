@@ -163,7 +163,7 @@ name_zh: "数据集文档模板"
 
 - [[治理/Document_Templates]]: 文档模板规范
 - [[Data_Quality_Management]]: 数据质量管理
-- [[AI_Ethics_Safety_Future]]: AI 伦理与安全
+- [[17_伦理安全/01_伦理基础/04_ai_ethics_future]]: AI 伦理与安全
 
 ---
 

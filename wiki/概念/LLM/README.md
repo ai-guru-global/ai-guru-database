@@ -1,0 +1,29 @@
+---
+title: 概念/LLM 域索引 (大语言模型)
+type: index
+created: 2026-11-25
+updated: 2026-11-25
+sources: []
+tags: [concept-index, llm]
+name_zh: "大语言模型"
+name_en: "LLM"
+category: misc
+summary: "大语言模型 相关主题页面：定义、要点与延伸阅读。"
+tier: supporting
+---
+
+# 概念/LLM 域索引 (大语言模型)
+
+> 中文简称：大语言模型 ｜ English Name: LLM
+
+> **一句话理解**: 本页是 大语言模型 域的概念卡片总索引，聚合全部卡片的一跳导航。
+
+本域收录 LLM 核心概念相关概念卡片，共 120 张，按字母序列出如下。
+
+## 卡片全集 (120)
+
+[[概念/LLM/agent-benchmarks|agent-benchmarks]] · [[概念/LLM/alibi|alibi]] · [[概念/LLM/attention-variants|attention-variants]] · [[概念/LLM/autoregressive-generation|autoregressive-generation]] · [[概念/LLM/beam-search|beam-search]] · [[概念/LLM/chinchilla-scaling-laws|chinchilla-scaling-laws]] · [[概念/LLM/chinese-llm-others|chinese-llm-others]] · [[概念/LLM/claude-series|claude-series]] · [[概念/LLM/constitutional-ai|constitutional-ai]] · [[概念/LLM/context-engineering|context-engineering]] · [[概念/LLM/context-window|context-window]] · [[概念/LLM/cot-react-reasoning-prompt|cot-react-reasoning-prompt]] · [[概念/LLM/cross-encoder|cross-encoder]] · [[概念/LLM/decoding-strategies|decoding-strategies]] · [[概念/LLM/decoding-strategies-decision-tree|decoding-strategies-decision-tree]] · [[概念/LLM/deepseek-models|deepseek-models]] · [[概念/LLM/deepseek-series|deepseek-series]] · [[概念/LLM/diffusion-llm|diffusion-llm]] · [[概念/LLM/doubao-series|doubao-series]] · [[概念/LLM/eagle|eagle]] · [[概念/LLM/edge-llm|edge-llm]] · [[概念/LLM/emergent-abilities|emergent-abilities]] · [[概念/LLM/exllama|exllama]] · [[概念/LLM/flash-attention-kernels|flash-attention-kernels]] · [[概念/LLM/foundation-model|foundation-model]] · [[概念/LLM/gemini|gemini]] · [[概念/LLM/gemma-series|gemma-series]] · [[概念/LLM/glm-4-5-series|glm-4-5-series]] · [[概念/LLM/gpt-series-evolution|gpt-series-evolution]] · [[概念/LLM/gptcache|gptcache]] · [[概念/LLM/gptq|gptq]] · [[概念/LLM/greedy-decoding|greedy-decoding]] · [[概念/LLM/grouped-query-attention|grouped-query-attention]] · [[概念/LLM/how-llm-answers-plain|how-llm-answers-plain]] · [[概念/LLM/hunyuan-series|hunyuan-series]] · [[概念/LLM/internlm-3-series|internlm-3-series]] · [[概念/LLM/kv-cache|kv-cache]] · [[概念/LLM/kv-cache-compression|kv-cache-compression]] · [[概念/LLM/kv-cache-plain|kv-cache-plain]] · [[概念/LLM/large-language-model|large-language-model]] · [[概念/LLM/litellm|litellm]] · [[概念/LLM/llama-box|llama-box]] · [[概念/LLM/llama-cpp|llama-cpp]] · [[概念/LLM/llama-index|llama-index]] · [[概念/LLM/llama-series|llama-series]] · [[概念/LLM/llamaindex|llamaindex]] · [[概念/LLM/llamaindex-cloud|llamaindex-cloud]] · [[概念/LLM/llm-architectures|llm-architectures]] · [[概念/LLM/llm-arena|llm-arena]] · [[概念/LLM/llm-as-judge|llm-as-judge]] · [[概念/LLM/llm-benchmarks|llm-benchmarks]] · [[概念/LLM/llm-benchmarks-deep-dive|llm-benchmarks-deep-dive]] · [[概念/LLM/llm-data-engineering|llm-data-engineering]] · [[概念/LLM/llm-guard|llm-guard]] · [[概念/LLM/llm-inference-checklist|llm-inference-checklist]] · [[概念/LLM/llm-inference-cost-optimization|llm-inference-cost-optimization]] · [[概念/LLM/llm-inference-engine|llm-inference-engine]] · [[概念/LLM/llm-infrastructure|llm-infrastructure]] · [[概念/LLM/llm-papers-courses-index|llm-papers-courses-index]] · [[概念/LLM/llm-production-deployment|llm-production-deployment]] · [[概念/LLM/llm-production-pipeline|llm-production-pipeline]] · [[概念/LLM/llm-quantization|llm-quantization]] · [[概念/LLM/llm-safety|llm-safety]] · [[概念/LLM/llm-training-checklist|llm-training-checklist]] · [[概念/LLM/llm-training-inference-key-concepts|llm-training-inference-key-concepts]] · [[概念/LLM/llmops|llmops]] · [[概念/LLM/long-context-llm|long-context-llm]] · [[概念/LLM/long-context-models|long-context-models]] · [[概念/LLM/long-context-vs-rag|long-context-vs-rag]] · [[概念/LLM/mamba|mamba]] · [[概念/LLM/mamba-2-ssm|mamba-2-ssm]] · [[概念/LLM/medusa|medusa]] · [[概念/LLM/mistral-series|mistral-series]] · [[概念/LLM/mtp|mtp]] · [[概念/LLM/multi-head-latent-attention|multi-head-latent-attention]] · [[概念/LLM/multimodal-llm|multimodal-llm]] · [[概念/LLM/next-token-prediction|next-token-prediction]] · [[概念/LLM/nsa-sparse-attention|nsa-sparse-attention]] · [[概念/LLM/ollama|ollama]] · [[概念/LLM/paged-attention|paged-attention]] · [[概念/LLM/phi-series|phi-series]] · [[概念/LLM/prm-process-reward-model|prm-process-reward-model]] · [[概念/LLM/prompt-debt|prompt-debt]] · [[概念/LLM/prompt-engineering|prompt-engineering]] · [[概念/LLM/prompt-injection|prompt-injection]] · [[概念/LLM/promptfoo|promptfoo]] · [[概念/LLM/promptlayer|promptlayer]] · [[概念/LLM/qwen-series|qwen-series]] · [[概念/LLM/qwen3-pro|qwen3-pro]] · [[概念/LLM/radix-attention|radix-attention]] · [[概念/LLM/reasoning-models|reasoning-models]] · [[概念/LLM/recursive-reasoning-models|recursive-reasoning-models]] · [[概念/LLM/repetition-penalty|repetition-penalty]] · [[概念/LLM/retnet|retnet]] · [[概念/LLM/rlvr|rlvr]] · [[概念/LLM/rope|rope]] · [[概念/LLM/sampling-decoding|sampling-decoding]] · [[概念/LLM/self-rewarding|self-rewarding]] · [[概念/LLM/sequence-models|sequence-models]] · [[概念/LLM/small-language-models|small-language-models]] · [[概念/LLM/speculative-decoding|speculative-decoding]] · [[概念/LLM/state-space-models|state-space-models]] · [[概念/LLM/stepfun-series|stepfun-series]] · [[概念/LLM/structured-output|structured-output]] · [[概念/LLM/temperature-scaling|temperature-scaling]] · [[概念/LLM/tensorrt-llm|tensorrt-llm]] · [[概念/LLM/tensorrt-llm-practical|tensorrt-llm-practical]] · [[概念/LLM/test-time-compute|test-time-compute]] · [[概念/LLM/token-plain|token-plain]] · [[概念/LLM/tokenization|tokenization]] · [[概念/LLM/top-k-sampling|top-k-sampling]] · [[概念/LLM/top-p-sampling|top-p-sampling]] · [[概念/LLM/transformer-architecture|transformer-architecture]] · [[概念/LLM/transformer-architecture-plain|transformer-architecture-plain]] · [[概念/LLM/transformer-layer|transformer-layer]] · [[概念/LLM/transformers-js|transformers-js]] · [[概念/LLM/vllm|vllm]] · [[概念/LLM/vllm-practical|vllm-practical]] · [[概念/LLM/vllm-tp-attention|vllm-tp-attention]] · [[概念/LLM/yi-series|yi-series]]
+
+---
+
+*Last updated: 2026-11-25*

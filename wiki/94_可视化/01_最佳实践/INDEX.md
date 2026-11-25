@@ -7,6 +7,9 @@ sources: []
 tags: [best-practices, index, navigation]
 name_zh: "最佳实践"
 name_en: "Best Practices"
+category: misc
+summary: "最佳实践 相关主题页面：定义、要点与延伸阅读。"
+tier: supporting
 ---
 
 # 可视化最佳实践（Best Practices）
@@ -35,7 +38,7 @@ name_en: "Best Practices"
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[94_可视化/Best_Practices/Data_Visualization_Best_Practices|Data Visualization Best Practices]] | 图表选择、配色与标注原则 | 全体实践者 / 数据分析师 |
+| [[94_可视化/01_最佳实践/01_数据_可视化_最佳实践|Data Visualization Best Practices]] | 图表选择、配色与标注原则 | 全体实践者 / 数据分析师 |
 | [[94_可视化/01_最佳实践/02_数据_Viz_最佳实践.md|Data Viz Best Practices]] | 数据可视化最佳实践（深度版） | 数据分析师 / 数据故事讲述者 |
 | [[94_可视化/README.md|Visualization for dummy]] | 工具选择与常见陷阱 | 初学者 / 数据可视化学习者 |
 

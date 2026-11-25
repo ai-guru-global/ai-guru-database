@@ -11,6 +11,9 @@ aliases:
 sources: []
 
 name_zh: "K8s Pod 故障远程诊断决策树"
+category: misc
+summary: "K8s Pod 故障远程诊断决策树 相关主题页面：定义、要点与延伸阅读。"
+updated: 2026-11-25
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -194,7 +197,7 @@ OOMKilled (Exit 137)
 
 - [[13_运维/04_问题排查/07_Kubernetes_故障排查_Playbook]] — K8s 排障完整手册
 - [[12_架构基建/04_Kubernetes核心/01_Kubernetes核心_Components_深入分析]] — K8s 核心组件深度解析
-- [[K8s_AI_Troubleshooting_Cheat_Sheet]] — AI 工作负载排障速查表
+- [[13_运维/02_SRE与可靠性/17_K8s_AI_故障排查_Cheat_Sheet]] — AI 工作负载排障速查表
 - [[13_运维/02_SRE与可靠性/11_GPU_OOM_故障排查_指南]] — GPU OOM 专项排障
 - [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/03_阿里云_专有云_K8s_上下文]] — 专有云 K8s 上下文
 - [[概念/pod]] — Pod 概念

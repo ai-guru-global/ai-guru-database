@@ -261,7 +261,7 @@ Transformer
 
 如需一篇涵盖训练、推理、解码策略、优化技术的完整综合文档，请参阅：
 
-- [[05_大模型/Transformer_Training_vs_Inference|Transformer 在大模型训练与推理中的应用（全面版）]]
+- [[05_大模型/03_Transformer架构/07_Transformer_训练推理应用|Transformer 在大模型训练与推理中的应用（全面版）]]
 
 ---
 

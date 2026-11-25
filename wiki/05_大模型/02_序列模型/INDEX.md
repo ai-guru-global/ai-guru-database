@@ -7,6 +7,9 @@ sources: []
 tags: [auto-index]
 name_zh: "序列模型"
 name_en: "Sequence Models"
+category: misc
+summary: "序列模型 相关主题页面：定义、要点与延伸阅读。"
+tier: supporting
 ---
 
 # Sequence Models
@@ -30,7 +33,7 @@ name_en: "Sequence Models"
 |------|------|----------|
 | [[05_大模型/02_序列模型/02_序列模型|Sequence Models]] | Sequence models knowledge system: RNN, LSTM, GRU to Transformer | NLP engineers / ML researchers |
 | [[05_大模型/02_序列模型/02_序列模型|Sequence Models for dummy]] | Sequence models beginner guide: from word embeddings to attention | beginners / NLP learners |
-| [[05_大模型/02_序列模型/Text_Generation_Decoding_Strategies|Text Generation Decoding Strategies]] | Text generation decoding strategies: greedy, beam search, top-k and top-p sampling | LLM engineers / NLP practitioners |
+| [[概念/LLM/decoding-strategies|Text Generation Decoding Strategies]] | Text generation decoding strategies: greedy, beam search, top-k and top-p sampling | LLM engineers / NLP practitioners |
 
 ## 核心概念速查
 

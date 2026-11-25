@@ -5,6 +5,11 @@ status: complete
 last_updated: 2026-07-02
 sources: []
 name_zh: "事故复盘模板"
+category: misc
+summary: "事故复盘模板 相关主题页面：定义、要点与延伸阅读。"
+created: 2026-11-25
+updated: 2026-11-25
+tier: supporting
 ---
 
 # AI Incident Post-Mortem Template
@@ -228,7 +233,7 @@ Action Items:
 
 ## Related Topics
 
-- [[AI_Incident_Response_Framework]]: Incident response process
+- [[13_运维/03_故障应急/02_Incident_Management]]: Incident response process
 - [[13_运维/02_SRE与可靠性/22_SRE_for_AI_系统]]: SRE practices for AI
 - [[13_运维/02_SRE与可靠性/18_LLM推理_SLO_指南]]: SLO definition
 - [[概念/MLOps/observability]]: Monitoring and alerting

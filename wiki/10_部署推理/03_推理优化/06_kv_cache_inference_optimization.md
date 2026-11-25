@@ -272,8 +272,8 @@ PD 分离架构数据流:
 - [[概念/prefix-caching]] -- 前缀缓存（复用共享 prompt prefix）
 - [[概念/kv-cache-compression]] -- KV Cache 压缩
 - [[概念/multi-head-latent-attention]] -- MLA（架构层 KV Cache 压缩）
-- [[治理/kv-cache-paged-attention]] -- KV Cache x PagedAttention
-- [[治理/paged-attention-continuous-batching]] -- PagedAttention x Continuous Batching
+- [[10_部署推理/03_推理优化/07_kv_cache_paged_attention]] -- KV Cache x PagedAttention
+- [[10_部署推理/03_推理优化/08_paged_attention_continuous_batching]] -- PagedAttention x Continuous Batching
 - [[治理/serving-deployment]] -- 模型服务 x 模型部署
 - [[10_部署推理/02_推理引擎/29_vLLM_深入分析]] -- vLLM 深度解析
 - [[10_部署推理/02_推理引擎/23_SGLang_深入分析]] -- SGLang 深度解析

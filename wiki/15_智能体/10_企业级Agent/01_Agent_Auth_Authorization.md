@@ -5,6 +5,11 @@ status: complete
 last_updated: 2026-07-02
 sources: []
 name_zh: "智能体认证与授权"
+category: misc
+summary: "智能体认证与授权 相关主题页面：定义、要点与延伸阅读。"
+created: 2026-11-25
+updated: 2026-11-25
+tier: supporting
 ---
 
 # Agent Authentication & Authorization
@@ -400,7 +405,7 @@ class AgentAuditLogger:
 
 ## Related Topics
 
-- [[Agent_Security_Ethics_AGI]]: Agent security overview
+- [[17_伦理安全/06_系统安全/02_Agent_安全_伦理_AGI]]: Agent security overview
 - [[17_伦理安全/06_系统安全/05_LLM_安全_完整_指南]]: LLM security
 - [[17_伦理安全/04_AI安全与红队/03_Guardrails_生产_指南]]: Safety guardrails
 - [[17_伦理安全/03_AI治理/01_AI治理合规2026]]: Governance framework

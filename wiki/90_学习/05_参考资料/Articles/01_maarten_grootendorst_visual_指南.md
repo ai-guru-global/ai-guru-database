@@ -34,7 +34,7 @@ name_zh: "Maarten Grootendorst 图解 AI 系列"
 | [Visual Guide to Reasoning LLMs](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-reasoning-llms) | 推理模型图解 |
 | [Visual Guide to Mixture of Experts](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts) | MoE 架构图解 |
 
-> **关联**: -> [[05_大模型/README|NLP/LLM]] | [[概念/Agent|Agent 生产]] | [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]]
+> **关联**: -> [[05_大模型/README|NLP/LLM]] | [[概念/Agent/README|Agent 生产]] | [[90_学习/04_实践指南/02_AI工程路线图2026|AI 工程路线图]]
 
 ## 核心知识框架
 

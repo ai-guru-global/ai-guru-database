@@ -168,7 +168,7 @@ flowchart TD
 ## 延伸阅读
 
 - [[概念/llm-training-inference-key-concepts|LLM 训练与推理关键概念索引]]
-- [[05_大模型/Transformer_Training_vs_Inference|Transformer 在大模型训练与推理中的 应用]]
+- [[05_大模型/03_Transformer架构/07_Transformer_训练推理应用|Transformer 在大模型训练与推理中的 应用]]
 
 ---
 

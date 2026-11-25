@@ -197,13 +197,13 @@ name_zh: "架构与基础设施"
 - [[12_架构基建/11_AI网关/03_AI网关_README|AI Gateway]]
 - [[概念/Inference/ai-gateway-2|14 AI Gateway — 小白版 🚪]]
 - [[12_架构基建/03_AI技术栈/02_AI技术栈_深入分析|阿里云 AI Stack: 企业级软硬一体 AI 推理平台]]
-- [[AI_Stack_MLOps_Reference_Architecture|AI Stack + MLflow + ACK 私有化 MLOps 参考架构]]
+- [[12_架构基建/03_AI技术栈/07_AI技术栈_MLOps_参考_架构|AI Stack + MLflow + ACK 私有化 MLOps 参考架构]]
 - [[12_架构基建/03_AI技术栈/14_Safetensors_Hub_Management|Safetensors 与 Hub 治理：下一代模型存储与分发标准]]
 - [[12_架构基建/06_云厂商/Alibaba_Cloud/专有云/04_阿里云_PAI_深入分析|阿里云 PAI 深度解析]]
 - [[12_架构基建/README.md|CDI 容器设备接口 - 小白版]]
 - [[概念/K8s/kubernetes|Kubernetes 可观测性栈]]
 - [[12_架构基建/08_网络/06_RDMA_and_RoCE_for_AI|RDMA 与 RoCE 在 AI 集群中的应用]]
-- [[Container_and_Supply_Chain_Security_for_AI|容器与供应链安全 for AI]]
+- [[12_架构基建/10_安全/02_容器_and_AI供应链安全_for_AI|容器与供应链安全 for AI]]
 - [[12_架构基建/09_存储/01_AI_存储_模式|AI 存储模式]]
 
 ## 工单诊断入口

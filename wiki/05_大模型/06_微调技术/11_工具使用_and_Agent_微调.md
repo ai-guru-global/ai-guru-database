@@ -1503,7 +1503,7 @@ Tool-Use 和 Agent 微调是 LLM 从"能说"到"能做"的关键跨越。核心�
 6. **评估**使用 BFCL (function calling) 和 τ-bench (agent) 等专业基准
 7. **MCP** 是工具集成的未来标准，值得提前布局
 
-> 更多评估方法详见 [Agentic 评估指南](08_模型评估/02_基准测试/01_Agentic_基准测试_指南.md)，PEFT 方法详见 [PEFT 参数高效微调](./09_PEFT_2026.md)。
+> 更多评估方法详见 [Agentic 评估指南](../../08_模型评估/02_基准测试/01_Agentic_基准测试_指南.md)，PEFT 方法详见 [PEFT 参数高效微调](./09_PEFT_2026.md)。
 
 ---
 

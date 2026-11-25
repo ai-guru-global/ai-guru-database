@@ -4,7 +4,7 @@ category: 94-visualization
 tags: ["visualization", "charts", "dashboards", "data-viz"]
 summary: "> **一句话理解**: 本章节提供 AI Guru 知识库的交互式可视化界面，将 22 个章节、500+ 文档的知识网络以图谱形式呈现，支持直观浏览和探索。"
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-11-25
 tier: supporting
 sources: []
 
@@ -20,12 +20,10 @@ name_zh: "知识图谱可视化"
 
 ## 本章内容
 
-| 文件 | 说明 |
+| 内容 | 说明 |
 |------|------|
-| `index.html` | 交互式知识图谱主页面（44KB，独立运行） |
-| `data.json` | 图谱数据：节点（章节/文档）与边（引用关系） |
-| `favicon.svg` | 站点图标 |
-| `atlas/` | 图谱资源文件（217MB，包含渲染所需的纹理与数据） |
+| `01_最佳实践/` ～ `04_系统可视化/` | 可视化主题文档（4 个子目录，本章节的学习内容） |
+| 交互式知识图谱工具 | 已迁至 `.code-up/visualization/`（构建产物区）：`index.html` + `data.json` + `favicon.svg`；图谱纹理资源在 `code/前端应用/atlas/` |
 
 ---
 
@@ -33,12 +31,12 @@ name_zh: "知识图谱可视化"
 
 ### 本地启动
 ```bash
-cd 94_Visualization
+cd .code-up/visualization
 python -m http.server 8080
 # 浏览器访问 http://localhost:8080
 ```
 
-或直接双击 `index.html` 在浏览器中打开（部分功能可能需要本地服务器）。
+或直接双击 `.code-up/visualization/index.html` 在浏览器中打开（部分功能可能需要本地服务器）。
 
 ### 功能特性
 - **节点浏览** — 点击章节节点查看包含的文档列表
@@ -50,7 +48,7 @@ python -m http.server 8080
 
 ## 数据更新
 
-当新增或调整章节结构时，需要同步更新 `data.json`：
+当新增或调整章节结构时，需要同步更新 `.code-up/visualization/data.json`：
 
 1. 修改 `data.json` 中的节点列表（`nodes` 数组）
 2. 更新边关系（`links` 数组）

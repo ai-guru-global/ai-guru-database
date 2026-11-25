@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Guru 知识图谱</title>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml" sizes="any">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#080c14;--panel:#0d1219;--border:rgba(255,255,255,0.06);--accent:#63b3ed;--gold:#ffd700;--text:#d0d8e8;--muted:#5a6a80;--dim:#2a3444}
+body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);overflow:hidden;height:100vh;display:flex}
+
+#sidebar{width:300px;min-width:300px;height:100vh;background:var(--panel);border-right:1px solid var(--border);display:flex;flex-direction:column;z-index:100;overflow-y:auto;overflow-x:hidden}
+#sidebar::-webkit-scrollbar{width:4px}
+#sidebar::-webkit-scrollbar-thumb{background:var(--dim);border-radius:2px}
+
+.sb-section{padding:16px 20px;border-bottom:1px solid var(--border)}
+.sb-section h3{font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:10px}
+.sb-section h4{font-size:13px;font-weight:600;color:var(--text);margin-bottom:6px}
+
+#search-input{width:100%;background:rgba(255,255,255,0.04);border:1px solid var(--border);color:var(--text);padding:8px 12px;border-radius:8px;font-size:13px;outline:none;transition:border-color .2s}
+#search-input::placeholder{color:var(--dim)}
+#search-input:focus{border-color:rgba(99,179,237,0.4)}
+
+#node-info{min-height:120px}
+#node-info .ni-empty{color:var(--muted);font-size:12px;line-height:1.6}
+#node-info .ni-title{font-size:16px;font-weight:700;color:#fff;margin-bottom:4px}
+#node-info .ni-desc{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:8px}
+#node-info .ni-diff{font-size:12px;color:var(--accent);margin-bottom:10px}
+#node-info .ni-connections{display:flex;flex-direction:column;gap:4px}
+#node-info .ni-conn{font-size:11px;color:var(--muted);padding:4px 8px;background:rgba(255,255,255,0.03);border-radius:4px;cursor:pointer;transition:background .15s}
+#node-info .ni-conn:hover{background:rgba(99,179,237,0.1);color:var(--text)}
+#node-info .ni-conn .conn-type{font-size:9px;padding:1px 5px;border-radius:3px;margin-right:6px;font-weight:600}
+.conn-contains{background:rgba(255,255,255,0.08);color:#aaa}
+.conn-prerequisite{background:rgba(246,173,85,0.15);color:#f6ad55}
+.conn-application{background:rgba(252,129,129,0.15);color:#fc8181}
+.conn-related{background:rgba(183,148,244,0.15);color:#b794f4}
+.conn-learning_path{background:rgba(104,211,145,0.15);color:#68d391}
+
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.stat-card{background:rgba(255,255,255,0.02);border:1px solid var(--border);border-radius:8px;padding:10px 12px}
+.stat-card .sc-val{font-size:18px;font-weight:700;color:var(--accent)}
+.stat-card .sc-label{font-size:10px;color:var(--muted);margin-top:2px}
+
+.filter-btns{display:flex;flex-wrap:wrap;gap:6px}
+.filter-btn{background:rgba(255,255,255,0.04);border:1px solid var(--border);color:var(--muted);padding:4px 10px;border-radius:6px;font-size:11px;cursor:pointer;transition:all .2s}
+.filter-btn:hover{background:rgba(255,255,255,0.08);color:var(--text)}
+.filter-btn.active{background:rgba(99,179,237,0.12);border-color:rgba(99,179,237,0.3);color:var(--accent)}
+
+.legend-list{display:flex;flex-direction:column;gap:6px}
+.legend-row{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted)}
+.legend-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.legend-line{width:18px;height:2px;border-radius:1px;flex-shrink:0}
+
+#main{flex:1;position:relative;overflow:hidden}
+svg{display:block}
+
+.node-g{cursor:pointer}
+.node-g circle{transition:r .3s,opacity .3s}
+.link-line{stroke-linecap:round;transition:opacity .3s,stroke-width .3s}
+.label-text{pointer-events:none;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif}
+.label-bg{pointer-events:none;fill:rgba(8,12,20,0.75);rx:3;ry:3}
+</style>
+</head>
+<body>
+
+<div id="sidebar">
+  <div class="sb-section">
+    <h3>搜索</h3>
+    <input type="text" id="search-input" placeholder="输入关键词搜索节点..." />
+  </div>
+  <div class="sb-section" id="node-info">
+    <h3>节点详情</h3>
+    <div class="ni-empty">点击或悬停节点查看详情</div>
+  </div>
+  <div class="sb-section">
+    <h3>数据概览</h3>
+    <div class="stat-grid">
+      <div class="stat-card"><div class="sc-val" id="s-nodes">-</div><div class="sc-label">节点</div></div>
+      <div class="stat-card"><div class="sc-val" id="s-links">-</div><div class="sc-label">连接</div></div>
+      <div class="stat-card"><div class="sc-val">13</div><div class="sc-label">章节</div></div>
+      <div class="stat-card"><div class="sc-val">290+</div><div class="sc-label">文档</div></div>
+    </div>
+  </div>
+  <div class="sb-section">
+    <h3>关系筛选</h3>
+    <div class="filter-btns" id="filter-btns"></div>
+  </div>
+  <div class="sb-section">
+    <h3>图例</h3>
+    <div class="legend-list">
+      <div class="legend-row"><div class="legend-dot" style="background:#ffd700"></div>知识库根节点</div>
+      <div class="legend-row"><div class="legend-dot" style="background:#63b3ed"></div>章节 (Level 1)</div>
+      <div class="legend-row"><div class="legend-dot" style="background:#a0aec0"></div>主题 (Level 2)</div>
+      <div class="legend-row"><div class="legend-dot" style="background:#636e7f"></div>子话题 (Level 3)</div>
+      <div class="legend-row"><div class="legend-dot" style="background:#68d391"></div>学习路径</div>
+      <div style="height:4px"></div>
+      <div class="legend-row"><div class="legend-line" style="background:rgba(160,174,192,0.3)"></div>层级</div>
+      <div class="legend-row"><div class="legend-line" style="background:#f6ad55"></div>前置依赖</div>
+      <div class="legend-row"><div class="legend-line" style="background:#fc8181"></div>应用</div>
+      <div class="legend-row"><div class="legend-line" style="background:#b794f4"></div>关联</div>
+      <div class="legend-row"><div class="legend-line" style="background:#68d391"></div>学习路径</div>
+    </div>
+  </div>
+  <div class="sb-section" style="border-bottom:none">
+    <h3>操作提示</h3>
+    <div style="font-size:11px;color:var(--muted);line-height:1.8">
+      <div>🖱 悬停节点 → 预览关联</div>
+      <div>🖱 点击节点 → 锁定聚焦</div>
+      <div>🖱 点击空白 → 回到中心</div>
+      <div>🖱 滚轮缩放 / 拖拽平移</div>
+      <div>🖱 拖拽节点 → 调整位置</div>
+    </div>
+  </div>
+</div>
+
+<div id="main">
+  <svg id="graph"></svg>
+</div>
+
+<script>
+var GRAPH_DATA={"nodes":[{"id":"root","label":"AI Guru 知识库","group":"root","level":0,"description":"260万+字 · 290+文档 · 13大章节 · 完整AI知识体系"},{"id":"00","label":"AI 简介","group":"chapter","level":1,"description":"通识导入：基础概念、技术全景、历史、工具、伦理","difficulty":"⭐"},{"id":"01","label":"基础理论","group":"chapter","level":1,"description":"数学与计算机：线代、概率、数据结构、分布式","difficulty":"⭐⭐"},{"id":"02","label":"经典ML","group":"chapter","level":1,"description":"监督/无监督学习、特征工程","difficulty":"⭐⭐"},{"id":"03","label":"深度学习","group":"chapter","level":1,"description":"神经网络核心、优化、世界模型","difficulty":"⭐⭐⭐"},{"id":"04","label":"NLP与大模型","group":"chapter","level":1,"description":"Transformer、GPT、LoRA、RLHF、Prompt","difficulty":"⭐⭐⭐⭐"},{"id":"05","label":"计算机视觉","group":"chapter","level":1,"description":"CNN、YOLO、Diffusion、视频生成","difficulty":"⭐⭐⭐"},{"id":"06","label":"RL与Agent","group":"chapter","level":1,"description":"RL基础、DQN/PPO、AI Agent、具身智能","difficulty":"⭐⭐⭐⭐"},{"id":"07","label":"AI工程化","group":"chapter","level":1,"description":"生产部署：vLLM、RAG、MLOps、Agent生产","difficulty":"⭐⭐⭐⭐"},{"id":"08","label":"伦理与安全","group":"chapter","level":1,"description":"价值对齐、红队测试、AI安全、隐私","difficulty":"⭐⭐⭐"},{"id":"09","label":"业界观点","group":"chapter","level":1,"description":"21位AI领袖演讲与观点","difficulty":"⭐⭐"},{"id":"10","label":"必读论文","group":"chapter","level":1,"description":"经典文献：Transformer、GPT、BERT","difficulty":"⭐⭐⭐⭐"},{"id":"11","label":"面试与岗位","group":"chapter","level":1,"description":"21个AI岗位面试指南","difficulty":"⭐⭐"},{"id":"12","label":"Agent评估","group":"chapter","level":1,"description":"Agent评测、基准、红队测试","difficulty":"⭐⭐⭐"},{"id":"13","label":"行业应用","group":"chapter","level":1,"description":"医疗/金融/制造/零售等10大行业","difficulty":"⭐⭐"},{"id":"learn","label":"学习路径","group":"meta","level":1,"description":"系统化学习路径与里程碑"},{"id":"web","label":"Web前端","group":"meta","level":1,"description":"React + Vite + TypeScript 知识库前端"},{"id":"notes","label":"知识笔记","group":"meta","level":1,"description":"概念图谱、全栈概念、知识库"},
+
+{"id":"00-fund","label":"AI基础概念","group":"topic","level":2},{"id":"00-hist","label":"AI历史时间线","group":"topic","level":2},{"id":"00-tools","label":"AI工具实践","group":"topic","level":2},{"id":"00-ethics","label":"AI伦理社会","group":"topic","level":2},{"id":"00-fut","label":"AI未来趋势","group":"topic","level":2},{"id":"00-gloss","label":"AI术语表","group":"topic","level":2},
+{"id":"00-fund-d1","label":"AI定义与类型","group":"detail","level":3},{"id":"00-fund-d2","label":"弱/强/超级AI","group":"detail","level":3},{"id":"00-hist-d1","label":"4次AI浪潮","group":"detail","level":3},{"id":"00-hist-d2","label":"1950-2026里程碑","group":"detail","level":3},{"id":"00-tools-d1","label":"ChatGPT/Claude","group":"detail","level":3},{"id":"00-tools-d2","label":"Cursor/Devin","group":"detail","level":3},
+
+{"id":"01-la","label":"线性代数","group":"topic","level":2},{"id":"01-ps","label":"概率统计","group":"topic","level":2},{"id":"01-dsa","label":"数据结构算法","group":"topic","level":2},{"id":"01-ds","label":"分布式系统","group":"topic","level":2},{"id":"01-hw","label":"AI硬件 2026","group":"topic","level":2},
+{"id":"01-la-d1","label":"向量与矩阵","group":"detail","level":3},{"id":"01-la-d2","label":"特征值/SVD","group":"detail","level":3},{"id":"01-ps-d1","label":"贝叶斯/分布","group":"detail","level":3},{"id":"01-ps-d2","label":"假设检验","group":"detail","level":3},{"id":"01-dsa-d1","label":"排序/图算法","group":"detail","level":3},{"id":"01-ds-d1","label":"CAP/共识算法","group":"detail","level":3},{"id":"01-hw-d1","label":"H100/B200 GPU","group":"detail","level":3},{"id":"01-hw-d2","label":"TPU/NPU选型","group":"detail","level":3},
+
+{"id":"02-sup","label":"监督学习","group":"topic","level":2},{"id":"02-unsup","label":"无监督学习","group":"topic","level":2},{"id":"02-fe","label":"特征工程","group":"topic","level":2},
+{"id":"02-sup-d1","label":"线性回归/决策树","group":"detail","level":3},{"id":"02-sup-d2","label":"XGBoost/随机森林","group":"detail","level":3},{"id":"02-unsup-d1","label":"K-Means聚类","group":"detail","level":3},{"id":"02-unsup-d2","label":"PCA降维","group":"detail","level":3},{"id":"02-fe-d1","label":"特征选择/编码","group":"detail","level":3},
+
+{"id":"03-nn","label":"神经网络核心","group":"topic","level":2},{"id":"03-opt","label":"优化技术","group":"topic","level":2},{"id":"03-ssm","label":"状态空间模型","group":"topic","level":2},{"id":"03-wm","label":"世界模型 JEPA","group":"topic","level":2},
+{"id":"03-nn-d1","label":"MLP/反向传播","group":"detail","level":3},{"id":"03-nn-d2","label":"激活函数","group":"detail","level":3},{"id":"03-opt-d1","label":"SGD/Adam","group":"detail","level":3},{"id":"03-opt-d2","label":"学习率调度","group":"detail","level":3},{"id":"03-ssm-d1","label":"Mamba/S4","group":"detail","level":3},{"id":"03-wm-d1","label":"JEPA/V-JEPA","group":"detail","level":3},{"id":"03-wm-d2","label":"LeCun AGI路径","group":"detail","level":3},
+
+{"id":"04-tf","label":"Transformer","group":"topic","level":2},{"id":"04-llm","label":"LLM架构 2026","group":"topic","level":2},{"id":"04-ft","label":"微调技术","group":"topic","level":2},{"id":"04-peft","label":"PEFT 2026","group":"topic","level":2},{"id":"04-pe","label":"Prompt工程","group":"topic","level":2},{"id":"04-seq","label":"序列模型","group":"topic","level":2},{"id":"04-lc","label":"长上下文模型","group":"topic","level":2},{"id":"04-rs","label":"推理模型","group":"topic","level":2},{"id":"04-mm","label":"多模态架构","group":"topic","level":2},
+{"id":"04-tf-d1","label":"Self-Attention","group":"detail","level":3},{"id":"04-tf-d2","label":"位置编码/MHA","group":"detail","level":3},{"id":"04-llm-d1","label":"GPT-5.2/Claude 4.5","group":"detail","level":3},{"id":"04-llm-d2","label":"MoE/稀疏架构","group":"detail","level":3},{"id":"04-ft-d1","label":"SFT/RLHF/DPO","group":"detail","level":3},{"id":"04-peft-d1","label":"LoRA/QLoRA/DoRA","group":"detail","level":3},{"id":"04-pe-d1","label":"CoT/Few-shot","group":"detail","level":3},{"id":"04-pe-d2","label":"系统提示设计","group":"detail","level":3},{"id":"04-seq-d1","label":"RNN/LSTM","group":"detail","level":3},{"id":"04-lc-d1","label":"100K+上下文","group":"detail","level":3},{"id":"04-rs-d1","label":"o3/DeepSeek-R1","group":"detail","level":3},{"id":"04-mm-d1","label":"GPT-5/CLIP","group":"detail","level":3},
+
+{"id":"05-ic","label":"图像分类检测","group":"topic","level":2},{"id":"05-seg","label":"分割技术","group":"topic","level":2},{"id":"05-gen","label":"生成模型","group":"topic","level":2},{"id":"05-mv","label":"多模态视觉","group":"topic","level":2},{"id":"05-vid","label":"视频生成 2026","group":"topic","level":2},
+{"id":"05-ic-d1","label":"CNN/YOLO","group":"detail","level":3},{"id":"05-ic-d2","label":"ResNet/ViT","group":"detail","level":3},{"id":"05-seg-d1","label":"语义/实例分割","group":"detail","level":3},{"id":"05-seg-d2","label":"SAM模型","group":"detail","level":3},{"id":"05-gen-d1","label":"GAN/VAE","group":"detail","level":3},{"id":"05-gen-d2","label":"Diffusion Model","group":"detail","level":3},{"id":"05-vid-d1","label":"Veo3/Kling 3.0","group":"detail","level":3},{"id":"05-mv-d1","label":"视觉语言模型","group":"detail","level":3},
+
+{"id":"06-rl","label":"RL基础","group":"topic","level":2},{"id":"06-drl","label":"深度强化学习","group":"topic","level":2},{"id":"06-ag","label":"AI智能体","group":"topic","level":2},{"id":"06-ap","label":"Agent协议 2026","group":"topic","level":2},{"id":"06-rob","label":"具身智能","group":"topic","level":2},{"id":"06-vla","label":"VLA模型","group":"topic","level":2},
+{"id":"06-rl-d1","label":"MDP/Q-Learning","group":"detail","level":3},{"id":"06-drl-d1","label":"DQN/PPO/SAC","group":"detail","level":3},{"id":"06-ag-d1","label":"ReAct/Tool Use","group":"detail","level":3},{"id":"06-ag-d2","label":"Function Calling","group":"detail","level":3},{"id":"06-ap-d1","label":"MCP/A2A/UCP","group":"detail","level":3},{"id":"06-rob-d1","label":"人形机器人","group":"detail","level":3},{"id":"06-vla-d1","label":"VLA架构","group":"detail","level":3},
+
+{"id":"07-dep","label":"部署与推理","group":"topic","level":2},{"id":"07-rag","label":"RAG系统","group":"topic","level":2},{"id":"07-raga","label":"RAG高级 2026","group":"topic","level":2},{"id":"07-ml","label":"MLOps流水线","group":"topic","level":2},{"id":"07-ev","label":"模型评估","group":"topic","level":2},{"id":"07-ap2","label":"Agent生产部署","group":"topic","level":2},{"id":"07-gw","label":"AI Gateway","group":"topic","level":2},{"id":"07-ao","label":"AIOps","group":"topic","level":2},{"id":"07-inf","label":"AI基础设施","group":"topic","level":2},{"id":"07-cd","label":"AI编程助手","group":"topic","level":2},{"id":"07-co","label":"云产品运维","group":"topic","level":2},{"id":"07-oc","label":"OpenClaw生态","group":"topic","level":2},{"id":"07-vb","label":"Vibe Coding","group":"topic","level":2},{"id":"07-ed","label":"Edge AI","group":"topic","level":2},{"id":"07-mem","label":"Agent记忆系统","group":"topic","level":2},
+{"id":"07-dep-d1","label":"vLLM/TensorRT","group":"detail","level":3},{"id":"07-dep-d2","label":"INT8/INT4量化","group":"detail","level":3},{"id":"07-rag-d1","label":"向量数据库","group":"detail","level":3},{"id":"07-rag-d2","label":"混合检索/Chunking","group":"detail","level":3},{"id":"07-raga-d1","label":"Agentic RAG","group":"detail","level":3},{"id":"07-raga-d2","label":"GraphRAG","group":"detail","level":3},{"id":"07-ml-d1","label":"CI/CD/实验追踪","group":"detail","level":3},{"id":"07-ev-d1","label":"BLEU/ROUGE","group":"detail","level":3},{"id":"07-ev-d2","label":"LLM-as-Judge","group":"detail","level":3},{"id":"07-ap2-d1","label":"K8s/监控","group":"detail","level":3},{"id":"07-ap2-d2","label":"LangGraph/CrewAI","group":"detail","level":3},{"id":"07-cd-d1","label":"Cursor/Devin","group":"detail","level":3},{"id":"07-cd-d2","label":"Claude Code","group":"detail","level":3},{"id":"07-inf-d1","label":"SGLang/vLLM","group":"detail","level":3},
+
+{"id":"08-va","label":"价值对齐","group":"topic","level":2},{"id":"08-rt","label":"红队测试","group":"topic","level":2},{"id":"08-sec","label":"AI安全 2026","group":"topic","level":2},{"id":"08-pp","label":"隐私保护AI","group":"topic","level":2},{"id":"08-df","label":"Deepfake安全","group":"topic","level":2},{"id":"08-mi","label":"可解释性","group":"topic","level":2},{"id":"08-sc","label":"供应链安全","group":"topic","level":2},{"id":"08-gov","label":"AI治理合规","group":"topic","level":2},
+{"id":"08-va-d1","label":"Constitutional AI","group":"detail","level":3},{"id":"08-rt-d1","label":"Prompt注入/越狱","group":"detail","level":3},{"id":"08-sec-d1","label":"OWASP LLM","group":"detail","level":3},{"id":"08-pp-d1","label":"联邦学习","group":"detail","level":3},{"id":"08-pp-d2","label":"差分隐私","group":"detail","level":3},{"id":"08-df-d1","label":"深度伪造检测","group":"detail","level":3},{"id":"08-mi-d1","label":"探针/稀疏自编码器","group":"detail","level":3},
+
+{"id":"12-bn","label":"基准评测","group":"topic","level":2},{"id":"12-mt","label":"评估指标","group":"topic","level":2},{"id":"12-ah","label":"Agent Harness","group":"topic","level":2},{"id":"12-art","label":"Agent红队","group":"topic","level":2},{"id":"12-mae","label":"多Agent评估","group":"topic","level":2},{"id":"12-cae","label":"云Agent评测","group":"topic","level":2},
+{"id":"12-bn-d1","label":"SWE-bench/WebArena","group":"detail","level":3},{"id":"12-mt-d1","label":"成功率/Latency","group":"detail","level":3},{"id":"12-ah-d1","label":"测试套件框架","group":"detail","level":3},
+
+{"id":"13-hp","label":"AI医疗","group":"topic","level":2},{"id":"13-fi","label":"AI金融","group":"topic","level":2},{"id":"13-mf","label":"AI制造","group":"topic","level":2},{"id":"13-ad","label":"自动驾驶","group":"topic","level":2},{"id":"13-ed","label":"AI教育","group":"topic","level":2},{"id":"13-rt","label":"AI零售电商","group":"topic","level":2},{"id":"13-ag","label":"AI农业","group":"topic","level":2},{"id":"13-en","label":"AI能源气候","group":"topic","level":2},{"id":"13-cm","label":"AI内容媒体","group":"topic","level":2},{"id":"13-lg","label":"AI法律政务","group":"topic","level":2},
+
+{"id":"lb","label":"零基础入门","group":"meta","level":2},{"id":"lm","label":"ML实践者","group":"meta","level":2},{"id":"ll","label":"LLM工程师","group":"meta","level":2},{"id":"lr","label":"AI研究员","group":"meta","level":2},{"id":"lp","label":"产品经理","group":"meta","level":2}
+],
+"links":[
+{"source":"root","target":"00","type":"contains"},{"source":"root","target":"01","type":"contains"},{"source":"root","target":"02","type":"contains"},{"source":"root","target":"03","type":"contains"},{"source":"root","target":"04","type":"contains"},{"source":"root","target":"05","type":"contains"},{"source":"root","target":"06","type":"contains"},{"source":"root","target":"07","type":"contains"},{"source":"root","target":"08","type":"contains"},{"source":"root","target":"09","type":"contains"},{"source":"root","target":"10","type":"contains"},{"source":"root","target":"11","type":"contains"},{"source":"root","target":"12","type":"contains"},{"source":"root","target":"13","type":"contains"},{"source":"root","target":"learn","type":"contains"},{"source":"root","target":"web","type":"contains"},{"source":"root","target":"notes","type":"contains"},
+{"source":"00","target":"00-fund","type":"contains"},{"source":"00","target":"00-hist","type":"contains"},{"source":"00","target":"00-tools","type":"contains"},{"source":"00","target":"00-ethics","type":"contains"},{"source":"00","target":"00-fut","type":"contains"},{"source":"00","target":"00-gloss","type":"contains"},
+{"source":"00-fund","target":"00-fund-d1","type":"contains"},{"source":"00-fund","target":"00-fund-d2","type":"contains"},{"source":"00-hist","target":"00-hist-d1","type":"contains"},{"source":"00-hist","target":"00-hist-d2","type":"contains"},{"source":"00-tools","target":"00-tools-d1","type":"contains"},{"source":"00-tools","target":"00-tools-d2","type":"contains"},
+{"source":"01","target":"01-la","type":"contains"},{"source":"01","target":"01-ps","type":"contains"},{"source":"01","target":"01-dsa","type":"contains"},{"source":"01","target":"01-ds","type":"contains"},{"source":"01","target":"01-hw","type":"contains"},
+{"source":"01-la","target":"01-la-d1","type":"contains"},{"source":"01-la","target":"01-la-d2","type":"contains"},{"source":"01-ps","target":"01-ps-d1","type":"contains"},{"source":"01-ps","target":"01-ps-d2","type":"contains"},{"source":"01-dsa","target":"01-dsa-d1","type":"contains"},{"source":"01-ds","target":"01-ds-d1","type":"contains"},{"source":"01-hw","target":"01-hw-d1","type":"contains"},{"source":"01-hw","target":"01-hw-d2","type":"contains"},
+{"source":"02","target":"02-sup","type":"contains"},{"source":"02","target":"02-unsup","type":"contains"},{"source":"02","target":"02-fe","type":"contains"},
+{"source":"02-sup","target":"02-sup-d1","type":"contains"},{"source":"02-sup","target":"02-sup-d2","type":"contains"},{"source":"02-unsup","target":"02-unsup-d1","type":"contains"},{"source":"02-unsup","target":"02-unsup-d2","type":"contains"},{"source":"02-fe","target":"02-fe-d1","type":"contains"},
+{"source":"03","target":"03-nn","type":"contains"},{"source":"03","target":"03-opt","type":"contains"},{"source":"03","target":"03-ssm","type":"contains"},{"source":"03","target":"03-wm","type":"contains"},
+{"source":"03-nn","target":"03-nn-d1","type":"contains"},{"source":"03-nn","target":"03-nn-d2","type":"contains"},{"source":"03-opt","target":"03-opt-d1","type":"contains"},{"source":"03-opt","target":"03-opt-d2","type":"contains"},{"source":"03-ssm","target":"03-ssm-d1","type":"contains"},{"source":"03-wm","target":"03-wm-d1","type":"contains"},{"source":"03-wm","target":"03-wm-d2","type":"contains"},
+{"source":"04","target":"04-tf","type":"contains"},{"source":"04","target":"04-llm","type":"contains"},{"source":"04","target":"04-ft","type":"contains"},{"source":"04","target":"04-peft","type":"contains"},{"source":"04","target":"04-pe","type":"contains"},{"source":"04","target":"04-seq","type":"contains"},{"source":"04","target":"04-lc","type":"contains"},{"source":"04","target":"04-rs","type":"contains"},{"source":"04","target":"04-mm","type":"contains"},
+{"source":"04-tf","target":"04-tf-d1","type":"contains"},{"source":"04-tf","target":"04-tf-d2","type":"contains"},{"source":"04-llm","target":"04-llm-d1","type":"contains"},{"source":"04-llm","target":"04-llm-d2","type":"contains"},{"source":"04-ft","target":"04-ft-d1","type":"contains"},{"source":"04-peft","target":"04-peft-d1","type":"contains"},{"source":"04-pe","target":"04-pe-d1","type":"contains"},{"source":"04-pe","target":"04-pe-d2","type":"contains"},{"source":"04-seq","target":"04-seq-d1","type":"contains"},{"source":"04-lc","target":"04-lc-d1","type":"contains"},{"source":"04-rs","target":"04-rs-d1","type":"contains"},{"source":"04-mm","target":"04-mm-d1","type":"contains"},
+{"source":"05","target":"05-ic","type":"contains"},{"source":"05","target":"05-seg","type":"contains"},{"source":"05","target":"05-gen","type":"contains"},{"source":"05","target":"05-mv","type":"contains"},{"source":"05","target":"05-vid","type":"contains"},
+{"source":"05-ic","target":"05-ic-d1","type":"contains"},{"source":"05-ic","target":"05-ic-d2","type":"contains"},{"source":"05-seg","target":"05-seg-d1","type":"contains"},{"source":"05-seg","target":"05-seg-d2","type":"contains"},{"source":"05-gen","target":"05-gen-d1","type":"contains"},{"source":"05-gen","target":"05-gen-d2","type":"contains"},{"source":"05-vid","target":"05-vid-d1","type":"contains"},{"source":"05-mv","target":"05-mv-d1","type":"contains"},
+{"source":"06","target":"06-rl","type":"contains"},{"source":"06","target":"06-drl","type":"contains"},{"source":"06","target":"06-ag","type":"contains"},{"source":"06","target":"06-ap","type":"contains"},{"source":"06","target":"06-rob","type":"contains"},{"source":"06","target":"06-vla","type":"contains"},
+{"source":"06-rl","target":"06-rl-d1","type":"contains"},{"source":"06-drl","target":"06-drl-d1","type":"contains"},{"source":"06-ag","target":"06-ag-d1","type":"contains"},{"source":"06-ag","target":"06-ag-d2","type":"contains"},{"source":"06-ap","target":"06-ap-d1","type":"contains"},{"source":"06-rob","target":"06-rob-d1","type":"contains"},{"source":"06-vla","target":"06-vla-d1","type":"contains"},
+{"source":"07","target":"07-dep","type":"contains"},{"source":"07","target":"07-rag","type":"contains"},{"source":"07","target":"07-raga","type":"contains"},{"source":"07","target":"07-ml","type":"contains"},{"source":"07","target":"07-ev","type":"contains"},{"source":"07","target":"07-ap2","type":"contains"},{"source":"07","target":"07-gw","type":"contains"},{"source":"07","target":"07-ao","type":"contains"},{"source":"07","target":"07-inf","type":"contains"},{"source":"07","target":"07-cd","type":"contains"},{"source":"07","target":"07-co","type":"contains"},{"source":"07","target":"07-oc","type":"contains"},{"source":"07","target":"07-vb","type":"contains"},{"source":"07","target":"07-ed","type":"contains"},{"source":"07","target":"07-mem","type":"contains"},
+{"source":"07-dep","target":"07-dep-d1","type":"contains"},{"source":"07-dep","target":"07-dep-d2","type":"contains"},{"source":"07-rag","target":"07-rag-d1","type":"contains"},{"source":"07-rag","target":"07-rag-d2","type":"contains"},{"source":"07-raga","target":"07-raga-d1","type":"contains"},{"source":"07-raga","target":"07-raga-d2","type":"contains"},{"source":"07-ml","target":"07-ml-d1","type":"contains"},{"source":"07-ev","target":"07-ev-d1","type":"contains"},{"source":"07-ev","target":"07-ev-d2","type":"contains"},{"source":"07-ap2","target":"07-ap2-d1","type":"contains"},{"source":"07-ap2","target":"07-ap2-d2","type":"contains"},{"source":"07-cd","target":"07-cd-d1","type":"contains"},{"source":"07-cd","target":"07-cd-d2","type":"contains"},{"source":"07-inf","target":"07-inf-d1","type":"contains"},
+{"source":"08","target":"08-va","type":"contains"},{"source":"08","target":"08-rt","type":"contains"},{"source":"08","target":"08-sec","type":"contains"},{"source":"08","target":"08-pp","type":"contains"},{"source":"08","target":"08-df","type":"contains"},{"source":"08","target":"08-mi","type":"contains"},{"source":"08","target":"08-sc","type":"contains"},{"source":"08","target":"08-gov","type":"contains"},
+{"source":"08-va","target":"08-va-d1","type":"contains"},{"source":"08-rt","target":"08-rt-d1","type":"contains"},{"source":"08-sec","target":"08-sec-d1","type":"contains"},{"source":"08-pp","target":"08-pp-d1","type":"contains"},{"source":"08-pp","target":"08-pp-d2","type":"contains"},{"source":"08-df","target":"08-df-d1","type":"contains"},{"source":"08-mi","target":"08-mi-d1","type":"contains"},
+{"source":"12","target":"12-bn","type":"contains"},{"source":"12","target":"12-mt","type":"contains"},{"source":"12","target":"12-ah","type":"contains"},{"source":"12","target":"12-art","type":"contains"},{"source":"12","target":"12-mae","type":"contains"},{"source":"12","target":"12-cae","type":"contains"},
+{"source":"12-bn","target":"12-bn-d1","type":"contains"},{"source":"12-mt","target":"12-mt-d1","type":"contains"},{"source":"12-ah","target":"12-ah-d1","type":"contains"},
+{"source":"13","target":"13-hp","type":"contains"},{"source":"13","target":"13-fi","type":"contains"},{"source":"13","target":"13-mf","type":"contains"},{"source":"13","target":"13-ad","type":"contains"},{"source":"13","target":"13-ed","type":"contains"},{"source":"13","target":"13-rt","type":"contains"},{"source":"13","target":"13-ag","type":"contains"},{"source":"13","target":"13-en","type":"contains"},{"source":"13","target":"13-cm","type":"contains"},{"source":"13","target":"13-lg","type":"contains"},
+{"source":"learn","target":"lb","type":"contains"},{"source":"learn","target":"lm","type":"contains"},{"source":"learn","target":"ll","type":"contains"},{"source":"learn","target":"lr","type":"contains"},{"source":"learn","target":"lp","type":"contains"},
+
+{"source":"01-la","target":"03-nn","type":"prerequisite","label":"数学基础"},{"source":"01-ps","target":"02-sup","type":"prerequisite","label":"概率基础"},{"source":"01-dsa","target":"01-ds","type":"prerequisite","label":"算法基础"},{"source":"02-sup","target":"03-nn","type":"prerequisite","label":"ML基础"},{"source":"02-unsup","target":"05-gen","type":"prerequisite","label":"聚类/降维"},{"source":"03-nn","target":"04-tf","type":"prerequisite","label":"神经网络"},{"source":"03-nn","target":"05-ic","type":"prerequisite","label":"CNN基础"},{"source":"03-nn","target":"06-drl","type":"prerequisite","label":"深度网络"},{"source":"04-tf","target":"04-llm","type":"prerequisite","label":"注意力机制"},{"source":"04-tf","target":"04-ft","type":"prerequisite","label":"模型架构"},{"source":"04-ft","target":"04-peft","type":"prerequisite","label":"微调方法"},{"source":"04-pe","target":"04-rs","type":"related","label":"CoT推理"},{"source":"04-llm","target":"07-rag","type":"application","label":"LLM应用"},{"source":"04-llm","target":"07-ap2","type":"application","label":"Agent构建"},{"source":"04-llm","target":"07-cd","type":"application","label":"编程助手"},{"source":"06-ag","target":"07-ap2","type":"application","label":"生产化"},{"source":"06-ag","target":"12-ah","type":"application","label":"Agent评测"},{"source":"06-ag","target":"06-ap","type":"related","label":"通信协议"},{"source":"06-rob","target":"06-vla","type":"prerequisite","label":"机器人基础"},{"source":"07-rag","target":"07-raga","type":"prerequisite","label":"RAG进阶"},{"source":"07-rag","target":"07-mem","type":"related","label":"记忆系统"},{"source":"07-dep","target":"07-ml","type":"application","label":"部署流水线"},{"source":"07-dep","target":"07-gw","type":"application","label":"网关部署"},{"source":"07-ev","target":"12-mt","type":"related","label":"评估标准"},{"source":"08-rt","target":"12-art","type":"related","label":"安全评测"},{"source":"08-sec","target":"08-df","type":"related","label":"安全威胁"},{"source":"05-gen","target":"05-vid","type":"prerequisite","label":"生成基础"},{"source":"05-gen","target":"08-df","type":"related","label":"生成安全"},{"source":"04-mm","target":"05-mv","type":"related","label":"多模态"},{"source":"03-wm","target":"06-rob","type":"related","label":"世界理解"},{"source":"07-inf","target":"01-hw","type":"related","label":"硬件选型"},{"source":"00-ethics","target":"08-va","type":"prerequisite","label":"伦理基础"},
+{"source":"lb","target":"00","type":"learning_path"},{"source":"lm","target":"02","type":"learning_path"},{"source":"lm","target":"03","type":"learning_path"},{"source":"ll","target":"04","type":"learning_path"},{"source":"ll","target":"07","type":"learning_path"},{"source":"lr","target":"03","type":"learning_path"},{"source":"lr","target":"04","type":"learning_path"},{"source":"lr","target":"10","type":"learning_path"},{"source":"lp","target":"13","type":"learning_path"},{"source":"lp","target":"09","type":"learning_path"}
+]};
+</script>
+
+<script>
+function initGraph(){
+  var data=GRAPH_DATA;
+  var main=document.getElementById('main');
+  var W=main.clientWidth,H=main.clientHeight;
+  var svg=d3.select('#graph').attr('width',W).attr('height',H);
+  var g=svg.append('g');
+  var zoom=d3.zoom().scaleExtent([0.08,5]).on('zoom',function(e){g.attr('transform',e.transform)});
+  svg.call(zoom);
+
+  var colors={root:'#ffd700',chapter:'#63b3ed',topic:'#8a9ab5',detail:'#4a5568',meta:'#68d391'};
+  var linkColors={contains:'rgba(100,120,150,0.2)',prerequisite:'#f6ad55',application:'#fc8181',related:'#b794f4',learning_path:'#68d391'};
+  var linkW={contains:1,prerequisite:1.8,application:1.5,related:1.2,learning_path:1.4};
+  var linkDash={contains:null,prerequisite:'6,3',application:'4,4',related:'2,4',learning_path:'8,4'};
+  var radii={0:24,1:11,2:5.5,3:3};
+  var fontSizes={0:14,1:9.5,2:7.5,3:6.5};
+
+  document.getElementById('s-nodes').textContent=data.nodes.length;
+  document.getElementById('s-links').textContent=data.links.length;
+
+  var nMap={};data.nodes.forEach(function(n){nMap[n.id]=n});
+
+  var linkG=g.append('g');
+  var nodeG=g.append('g');
+  var lblG=g.append('g');
+
+  var activeTypes=new Set(['contains','prerequisite','application','related','learning_path']);
+  var focusedId='root';
+
+  function vis(l){return data.links.filter(function(x){return activeTypes.has(x.type)})}
+  function visIds(){var s=new Set();vis().forEach(function(l){s.add(lid(l));s.add(tid(l))});if(activeTypes.has('contains'))data.nodes.forEach(function(n){s.add(n.id)});return s}
+  function lid(l){return typeof l.source==='object'?l.source.id:l.source}
+  function tid(l){return typeof l.target==='object'?l.target.id:l.target}
+  function connected(id){var s=new Set([id]);data.links.forEach(function(l){if(lid(l)===id)s.add(tid(l));if(tid(l)===id)s.add(lid(l))});return s}
+
+  var angleMap={};
+  var chapters=data.nodes.filter(function(n){return n.level===1&&n.group==='chapter'});
+  chapters.forEach(function(c,i){angleMap[c.id]=(i/chapters.length)*2*Math.PI-Math.PI/2});
+
+  function initPos(n){
+    var cx=W/2,cy=H/2;
+    if(n.level===0)return{x:cx,y:cy};
+    if(n.level===1){
+      var a=angleMap[n.id]||0;var r=180;
+      if(n.group==='meta')r=130;
+      return{x:cx+r*Math.cos(a),y:cy+r*Math.sin(a)}
+    }
+    if(n.level===2){
+      var p=nMap[n.parent||'root'];if(!p)return{x:cx,y:cy};
+      var pa=angleMap[p.id]||Math.random()*Math.PI*2;var r2=100;
+      return{x:(p.x||cx)+r2*Math.cos(pa+(Math.random()-0.5)*1.2),y:(p.y||cy)+r2*Math.sin(pa+(Math.random()-0.5)*1.2)}
+    }
+    if(n.level===3){
+      var p2=nMap[n.parent||'root'];if(!p2)return{x:cx,y:cy};
+      return{x:(p2.x||cx)+(Math.random()-0.5)*80,y:(p2.y||cy)+(Math.random()-0.5)*80}
+    }
+    return{x:cx,y:cy}
+  }
+  data.nodes.forEach(function(n){var p=initPos(n);n.x=p.x;n.y=p.y});
+
+  var sim=d3.forceSimulation(data.nodes)
+    .force('link',d3.forceLink(data.links).id(function(d){return d.id}).distance(function(d){
+      if(d.type!=='contains')return 150;
+      var sl=typeof d.source==='object'?d.source.level:0;
+      var tl=typeof d.target==='object'?d.target.level:0;
+      if(sl===0)return 200;if(sl===1&&tl===2)return 70;if(sl===2)return 45;return 90
+    }).strength(function(d){return d.type==='contains'?0.7:0.2}))
+    .force('charge',d3.forceManyBody().strength(function(d){return[-1200,-500,-120,-60][d.level]||-60}))
+    .force('collision',d3.forceCollide().radius(function(d){return[50,26,14,9][d.level]||10}).strength(0.9))
+    .force('center',d3.forceCenter(W/2,H/2).strength(0.03))
+    .force('x',d3.forceX(W/2).strength(0.015))
+    .force('y',d3.forceY(H/2).strength(0.015))
+    .alphaDecay(0.015).velocityDecay(0.35);
+
+  var linkEl,nodeEl,lblEl;
+
+  function render(){
+    var vl=vis(),vi=visIds(),vn=data.nodes.filter(function(n){return vi.has(n.id)});
+    linkEl=linkG.selectAll('.link-line').data(vl,function(d){return lid(d)+'-'+tid(d)+'-'+d.type});
+    linkEl.exit().remove();
+    linkEl=linkEl.enter().append('line').attr('class','link-line')
+      .attr('stroke',function(d){return linkColors[d.type]}).attr('stroke-width',function(d){return linkW[d.type]})
+      .attr('stroke-dasharray',function(d){return linkDash[d.type]}).attr('opacity',0.01).merge(linkEl);
+
+    nodeEl=nodeG.selectAll('.node-g').data(vn,function(d){return d.id});
+    nodeEl.exit().remove();
+    var ne=nodeEl.enter().append('g').attr('class','node-g')
+      .call(d3.drag().on('start',ds).on('drag',dd).on('end',de))
+      .on('mouseover',hov).on('mouseout',hout).on('click',clk);
+    ne.append('circle').attr('class','nc')
+      .attr('r',function(d){return radii[d.level]}).attr('fill',function(d){return colors[d.group]||colors.detail})
+      .attr('stroke',function(d){return d.level===0?'#fff':'rgba(255,255,255,0.1)'}).attr('stroke-width',function(d){return d.level===0?2.5:0.5});
+    ne.append('text').attr('class','nt label-text').attr('text-anchor','middle')
+      .attr('dy',function(d){return radii[d.level]+fontSizes[d.level]+2}).attr('font-size',function(d){return fontSizes[d.level]})
+      .attr('font-weight',function(d){return d.level<=1?600:400}).attr('fill',function(d){return d.level===0?'#fff':d.level===1?'#b8c4d8':'#7a8a9e'})
+      .text(function(d){return d.label}).attr('opacity',0.01);
+    nodeEl=ne.merge(nodeEl);
+
+    sim.nodes(vn);sim.force('link').links(vl);sim.alpha(0.8).restart();
+    sim.on('tick',function(){
+      linkEl.attr('x1',function(d){return d.source.x}).attr('y1',function(d){return d.source.y}).attr('x2',function(d){return d.target.x}).attr('y2',function(d){return d.target.y});
+      nodeEl.attr('transform',function(d){return'translate('+d.x+','+d.y+')'});
+    });
+    setTimeout(function(){applyFocus(focusedId)},500);
+  }
+
+  function ds(e,d){if(!e.active)sim.alphaTarget(0.3).restart();d.fx=d.x;d.fy=d.y}
+  function dd(e,d){d.fx=e.x;d.fy=e.y}
+  function de(e,d){if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null}
+
+  function applyFocus(fid){
+    var conn=connected(fid);
+    var focusLevel=nMap[fid]?nMap[fid].level:0;
+    var showLevel3=(focusLevel>=1||fid==='root');
+
+    nodeEl.transition().duration(350)
+      .attr('opacity',function(n){
+        if(!showLevel3&&n.level===3)return 0;
+        return conn.has(n.id)?1:0.06;
+      });
+    nodeEl.select('.nc').transition().duration(350)
+      .attr('r',function(n){
+        if(n.id===fid)return radii[n.level]*1.5;
+        return conn.has(n.id)?radii[n.level]:radii[n.level]*0.6;
+      });
+
+    nodeEl.select('.nt').transition().duration(350)
+      .attr('opacity',function(n){
+        if(n.level===3&&!showLevel3)return 0;
+        if(n.id===fid)return 1;
+        if(conn.has(n.id)){
+          if(n.level<=1)return 1;if(n.level===2)return 0.85;if(n.level===3)return 0.7;return 1;
+        }
+        return n.level<=1?0.08:0;
+      })
+      .attr('fill',function(n){
+        if(n.id===fid)return'#fff';
+        return conn.has(n.id)?(n.level===1?'#b8c4d8':n.level===2?'#8a9ab5':'#6a7a8e'):'#333';
+      });
+
+    linkEl.transition().duration(350)
+      .attr('opacity',function(l){return(lid(l)===fid||tid(l)===fid)?0.8:0.01})
+      .attr('stroke-width',function(l){return(lid(l)===fid||tid(l)===fid)?linkW[l.type]*1.8:linkW[l.type]*0.2});
+  }
+
+  function updateInfo(d){
+    var box=document.getElementById('node-info');
+    if(!d){box.innerHTML='<h3>节点详情</h3><div class="ni-empty">点击或悬停节点查看详情</div>';return}
+    var conns=[];
+    data.links.forEach(function(l){
+      var s=lid(l),t=tid(l);
+      if(s===d.id)conns.push({id:t,type:l.type,label:nMap[t]?nMap[t].label:t,dir:'→'});
+      if(t===d.id)conns.push({id:s,type:l.type,label:nMap[s]?nMap[s].label:s,dir:'←'});
+    });
+    var h='<h3>节点详情</h3><div class="ni-title">'+d.label+'</div>';
+    if(d.description)h+='<div class="ni-desc">'+d.description+'</div>';
+    if(d.difficulty)h+='<div class="ni-diff">难度 '+d.difficulty+'</div>';
+    h+='<h4>关联节点 ('+conns.length+')</h4><div class="ni-connections">';
+    conns.slice(0,20).forEach(function(c){
+      h+='<div class="ni-conn" data-id="'+c.id+'"><span class="conn-type conn-'+c.type+'">'+c.type.replace('_',' ')+'</span>'+c.dir+' '+c.label+'</div>';
+    });
+    if(conns.length>20)h+='<div class="ni-conn" style="color:var(--muted)">...还有 '+(conns.length-20)+' 个</div>';
+    h+='</div>';
+    box.innerHTML=h;
+    box.querySelectorAll('.ni-conn[data-id]').forEach(function(el){
+      el.addEventListener('click',function(){
+        var nid=el.getAttribute('data-id');
+        focusedId=nid;applyFocus(nid);updateInfo(nMap[nid]);
+      });
+    });
+  }
+
+  var hoveredId=null;
+  function hov(e,d){
+    hoveredId=d.id;
+    applyFocus(d.id);
+    updateInfo(d);
+  }
+  function hout(){
+    hoveredId=null;
+    applyFocus(focusedId);
+  }
+  function clk(e,d){
+    e.stopPropagation();
+    focusedId=d.id;
+    applyFocus(focusedId);
+    updateInfo(d);
+  }
+  svg.on('click',function(){focusedId='root';applyFocus('root');updateInfo(null)});
+
+  render();
+
+  var fb={contains:'层级',prerequisite:'前置',application:'应用',related:'关联',learning_path:'学习路径'};
+  var fbCont=document.getElementById('filter-btns');
+  Object.keys(fb).forEach(function(t){
+    var b=document.createElement('button');b.className='filter-btn active';b.textContent=fb[t];
+    b.addEventListener('click',function(){
+      if(activeTypes.has(t)){activeTypes.delete(t);b.classList.remove('active')}
+      else{activeTypes.add(t);b.classList.add('active')}
+      render();
+    });
+    fbCont.appendChild(b);
+  });
+  var rb=document.createElement('button');rb.className='filter-btn';rb.textContent='重置视图';
+  rb.addEventListener('click',function(){
+    svg.transition().duration(500).call(zoom.transform,d3.zoomIdentity);
+    focusedId='root';applyFocus('root');updateInfo(null);
+  });
+  fbCont.appendChild(rb);
+
+  document.getElementById('search-input').addEventListener('input',function(){
+    var q=this.value.trim().toLowerCase();
+    if(!q){applyFocus(focusedId);return}
+    nodeEl.transition().duration(200).attr('opacity',function(n){
+      var m=n.label.toLowerCase().includes(q)||(n.description||'').toLowerCase().includes(q);
+      return m?1:0.03;
+    });
+    nodeEl.select('.nt').transition().duration(200).attr('opacity',function(n){
+      return n.label.toLowerCase().includes(q)?1:0;
+    });
+    linkEl.transition().duration(200).attr('opacity',function(l){
+      var sl=l.source.label&&l.source.label.toLowerCase().includes(q);
+      var tl=l.target.label&&l.target.label.toLowerCase().includes(q);
+      return(sl||tl)?0.7:0.005;
+    });
+  });
+
+  window.addEventListener('resize',function(){
+    W=main.clientWidth;H=main.clientHeight;
+    svg.attr('width',W).attr('height',H);
+    sim.force('center',d3.forceCenter(W/2,H/2));
+    sim.alpha(0.3).restart();
+  });
+}
+
+function loadD3(){
+  var s=document.createElement('script');s.src='https://d3js.org/d3.v7.min.js';
+  s.onload=function(){initGraph()};
+  s.onerror=function(){document.getElementById('main').innerHTML='<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#fc8181;font-size:14px">D3.js 加载失败，请检查网络</div>'};
+  document.head.appendChild(s);
+}
+if(typeof d3!=='undefined')initGraph();else loadD3();
+</script>
+</body>
+</html>

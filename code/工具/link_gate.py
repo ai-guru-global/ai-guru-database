@@ -475,8 +475,11 @@ def main():
         print(f"ℹ️ 生效导入批次：{'、'.join(active_batches)}（额度已并入通过线，不抬高基线）")
     if expired_batches:
         print(f"⌛ 过期批次（不计额度）：{'、'.join(expired_batches)}——债务须回补或收紧基线")
+    baseline_old = baseline
     failed, baseline, adopted_keys = evaluate_metrics(current, baseline, batch_deltas)
     adopted = bool(adopted_keys)
+    tightened = any(k in baseline_old and baseline[k] < baseline_old[k]
+                    for k in baseline)
     for key, cur in current.items():
         base = baseline.get(key, cur)
         if key in adopted_keys:
@@ -490,7 +493,9 @@ def main():
     if hits['bare'] or hits['path']:
         print(f"ℹ️ aliases 兜底解析：{hits['bare'] + hits['path']} 次"
               f"（裸别名 {hits['bare']} / 带路径 {hits['path']}）")
-    if not failed and (adopted or args.update_baseline):
+    if not failed and (adopted or args.update_baseline or tightened):
+        # P1-2：改善即落盘（棘轮降了就记下来，不再等显式 --update-baseline）；
+        # evaluate_metrics 只会降不会升，targets 等人工字段原样保留
         baseline['unique_targets'] = len({b['target'] for b in result['broken']})
         baseline['total_links'] = total
         baseline['updated'] = date.today().isoformat()

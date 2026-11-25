@@ -1,0 +1,50 @@
+name: Baseline Convergence
+
+# P1-2：月度基线自动收敛。--update-baseline 只会收紧（棘轮只降不升）；
+# 指标无改善时基线无 diff，不产生 PR；有改善时自动开 PR 供人工合入。
+on:
+  schedule:
+    - cron: '0 3 1 * *'  # 每月 1 日 03:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  tighten-baseline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 收紧基线
+        run: python3 code/工具/link_gate.py --update-baseline
+
+      - name: 检测基线 diff
+        id: diff
+        run: |
+          if git diff --quiet -- wiki/治理/_meta/link-health-baseline.json; then
+            echo "changed=no" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=yes" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 无改善即止
+        if: steps.diff.outputs.changed == 'no'
+        run: echo '指标无改善，基线无 diff，不开 PR'
+
+      - name: 开收敛 PR
+        if: steps.diff.outputs.changed == 'yes'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/baseline-convergence
+          delete-branch: true
+          title: 'chore(gate): 月度基线自动收紧'
+          body: |
+            由 `link_gate.py --update-baseline` 自动生成：本期各项指标较基线改善，
+            棘轮收紧落盘。基线只降不升，targets 字段不受影响。
+          commit-message: 'chore(gate): 月度基线自动收紧（baseline convergence）'

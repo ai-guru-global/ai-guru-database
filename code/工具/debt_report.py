@@ -19,10 +19,11 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 BASELINE_PATH = ROOT / 'wiki' / '治理' / '_meta' / 'link-health-baseline.json'
 
 METRICS = ('broken', 'orphans', 'fm_incomplete', 'spacing_bad',
-           'md_missing', 'md_root_bare')
+           'md_missing', 'md_root_bare', 'fm_value')
 METRIC_LABEL = {'broken': 'wikilink断链', 'orphans': '孤立页',
                 'fm_incomplete': 'frontmatter缺失', 'spacing_bad': '间距违规',
-                'md_missing': 'md断链', 'md_root_bare': 'md根相对裸写'}
+                'md_missing': 'md断链', 'md_root_bare': 'md根相对裸写',
+                'fm_value': 'fm值违规'}
 
 
 def top_dir(rel: str) -> str:

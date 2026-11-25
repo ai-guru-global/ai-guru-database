@@ -50,7 +50,7 @@ BATCH_DIR = CONTENT / '治理' / '_meta' / 'import-batches'
 BATCH_METRICS = ('broken_instances', 'orphan_count', 'frontmatter_incomplete',
                  'spacing_violations', 'staging_frontmatter_incomplete',
                  'staging_spacing_violations', 'md_broken',
-                 'md_root_relative_bare')
+                 'md_root_relative_bare', 'fm_value_violations')
 CHECKER = ROOT / 'code' / '工具' / 'check_wikilinks.py'
 SPACER = ROOT / 'code' / '工具' / 'fix_spacing.py'
 NAV_BASES = {'readme', 'readme_en', 'index', 'readme_for_dummy'}
@@ -58,6 +58,11 @@ REQUIRED_FIELDS = ('title', 'category', 'tags', 'summary',
                    'created', 'updated', 'tier', 'name_zh')
 FRONTMATTER = re.compile(r'\A---\s*\n(.*?)\n---', re.S)
 FIELD = re.compile(r'^(\w[\w-]*):', re.M)
+# P1-3：frontmatter 值校验。category 不设值校验（全库 523 种类，需先做分类
+# 收敛）；updated 与 git 修改时间比对暂缓（多会话并行下噪音大）
+TIER_VALUES = ('core', 'supporting', 'peripheral')
+ISO_DATE = re.compile(r'^\d{4}-\d{2}-\d{2}$')
+ISO_DATETIME = re.compile(r'^\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}')
 # P0-2B：md 内部链接进门禁。口径与 check_links.py 一致（源文件目录解析、
 # '/' 开头 vault 根、根相对裸写单列）；正则暂与 check_links 重复，待 P2-1 单一 resolver 并库
 MD_LINK = re.compile(r'\[([^\]]*)\]\(([^)]+)\)')
@@ -121,6 +126,74 @@ def resolve_target(t, rel_index, name_index, alias_index, dirs, alias_candidates
     return None, True, None
 
 
+def validate_fm_values(text: str) -> list:
+    """P1-3：frontmatter 值校验（只查已有键的值；缺键由 fm_incomplete 口径计）。
+
+    规则：tier ∈ core/supporting/peripheral；created/updated 为 YYYY-MM-DD
+    或 ISO 8601 datetime（取日期部分比较），created ≤ updated；tags 须为
+    列表形态（行内 [..] 或块列表）；name_zh 与正文「中文简称」一致（两者
+    均存在时才比对，正文缺失属 P1-5 正文契约口径）。
+    """
+    problems = []
+    m = FRONTMATTER.match(text)
+    if not m:
+        return problems
+    fm = m.group(1)
+
+    def val(key):
+        mm = re.search(rf'^{key}:[ \t]*(.*)$', fm, re.M)
+        return mm.group(1).strip().strip('"\'') if mm else None
+
+    tier = val('tier')
+    if tier and tier not in TIER_VALUES:
+        problems.append(f'tier 值非法: {tier}（须 core/supporting/peripheral）')
+
+    dates = {}
+    for key in ('created', 'updated'):
+        v = val(key)
+        if not v:
+            continue
+        if ISO_DATE.match(v):
+            dates[key] = v
+        elif ISO_DATETIME.match(v):
+            dates[key] = v[:10]
+        else:
+            problems.append(f'{key} 非合法日期: {v}（须 YYYY-MM-DD 或 ISO 8601）')
+    if 'created' in dates and 'updated' in dates and dates['created'] > dates['updated']:
+        problems.append(f'created({dates["created"]}) 晚于 updated({dates["updated"]})')
+
+    tags_raw = val('tags')
+    if tags_raw and not tags_raw.startswith('[') \
+            and not re.search(r'^tags:[ \t]*$', fm, re.M):
+        problems.append('tags 非列表形态')
+
+    name_zh = val('name_zh')
+    if name_zh:
+        bm = re.search(r'>\s*中文简称[：:]\s*([^\n]+)', text)
+        if bm:
+            body_name = bm.group(1).strip()
+            # 惯例容忍：正文块可带「｜ English …」后缀；CJK-Latin 间距差异
+            # （03_RLHF 与对齐 vs 03_RLHF与对齐）不计违规
+            body_core = re.split(r'[｜|]', body_name)[0].strip()
+            norm = lambda s: re.sub(r'\s+', '', s)
+            if norm(body_core) != norm(name_zh):
+                problems.append(
+                    f'name_zh({name_zh}) 与正文中文简称({body_name}) 不一致')
+    return problems
+
+
+def read_head_text(rel: str):
+    """读 HEAD 版本的 wiki/<rel>（changed-only 净新增判定用）；读不到返回 None。"""
+    try:
+        proc = subprocess.run(['git', 'show', f'HEAD:wiki/{rel}'], cwd=ROOT,
+                              stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    except Exception:
+        return None
+    if proc.returncode != 0:
+        return None
+    return proc.stdout.decode('utf-8', errors='ignore')
+
+
 def inspect_text(text, chk, fix_spacing, rel_index, name_index, alias_index, dirs,
                  rel):
     """检查单个页面。全文扫描与 --changed-only 共用，保证口径零漂移。
@@ -179,7 +252,8 @@ def inspect_text(text, chk, fix_spacing, rel_index, name_index, alias_index, dir
     return {'fm_missing': fm_missing, 'spacing_ok': spacing_ok,
             'resolved': resolved, 'broken': broken, 'alias_hits': alias_hits,
             'link_count': link_count, 'md_missing': md_missing,
-            'md_root_bare': md_root_bare}
+            'md_root_bare': md_root_bare,
+            'fm_value_problems': validate_fm_values(text)}
 
 
 def scan(chk, spacer) -> dict:
@@ -197,6 +271,7 @@ def scan(chk, spacer) -> dict:
     fm_incomplete, spacing_bad = [], []
     staging_fm, staging_spacing = [], []
     md_missing, md_root_bare = [], []
+    fm_value = []
     alias_hits = {'bare': 0, 'path': 0}
     total_links = 0
     for rel in scan_mds:
@@ -217,6 +292,8 @@ def scan(chk, spacer) -> dict:
             broken.append({'source': rel, **item})
         md_missing.extend({'source': rel, **item} for item in info['md_missing'])
         md_root_bare.extend({'source': rel, **item} for item in info['md_root_bare'])
+        for p in info['fm_value_problems']:
+            fm_value.append({'source': rel, 'problem': p})
     orphans = [rel for rel in scan_mds
                if rel[:-3] not in inlinked and not is_nav_page(rel)]
     for rel in all_mds:
@@ -234,7 +311,8 @@ def scan(chk, spacer) -> dict:
             'total_links': total_links,
             'staging_fm_incomplete': staging_fm,
             'staging_spacing_bad': staging_spacing,
-            'md_missing': md_missing, 'md_root_bare': md_root_bare}
+            'md_missing': md_missing, 'md_root_bare': md_root_bare,
+            'fm_value': fm_value}
 
 
 def load_active_batches(batch_dir=None, today=None):
@@ -395,6 +473,17 @@ def run_changed_only(args, chk, spacer) -> int:
                 problems.append(
                     f'根相对裸写链接: {item["target"]}'
                     f'（ISS-110，实为 404——改用 ./ 或 ../ 开头的显式相对路径）')
+            # P1-3 值校验：净新增阻断，存量只提示（棘轮口径，避免改文件即须
+            # 清历史债的摩擦；全文模式以 fm_value_violations 独立棘轮收敛存量）
+            old_value = set()
+            old_text = read_head_text(rel)
+            if old_text is not None:
+                old_value = set(validate_fm_values(old_text))
+            for p in info['fm_value_problems']:
+                if p in old_value:
+                    print(f'   ⚠️  {rel}（存量值违规，不阻断）: {p}')
+                else:
+                    problems.append(f'frontmatter 值违规: {p}')
         if problems:
             failed += 1
             print(f'❌ {rel}（{zone} 区：仅格式检查）' if zone == 'staging' else f'❌ {rel}')
@@ -451,6 +540,7 @@ def main():
         'staging_spacing_violations': len(result['staging_spacing_bad']),
         'md_broken': len(result['md_missing']),
         'md_root_relative_bare': len(result['md_root_bare']),
+        'fm_value_violations': len(result['fm_value']),
     }
     total = result['total_links']
 
@@ -461,7 +551,8 @@ def main():
              'staging_frontmatter_incomplete': 'staging frontmatter 缺失',
              'staging_spacing_violations': 'staging 中英间距',
              'md_broken': 'md 断链',
-             'md_root_relative_bare': 'md 根相对裸写'}
+             'md_root_relative_bare': 'md 根相对裸写',
+             'fm_value_violations': 'frontmatter 值违规'}
     examples = {'frontmatter_incomplete': result['fm_incomplete'],
                 'spacing_violations': result['spacing_bad'],
                 'staging_frontmatter_incomplete': result['staging_fm_incomplete'],
@@ -469,7 +560,9 @@ def main():
                 'md_broken': [f"{b['source']} → {b['target']}"
                               for b in result['md_missing'][:5]],
                 'md_root_relative_bare': [f"{b['source']} → {b['target']}"
-                                          for b in result['md_root_bare'][:5]]}
+                                          for b in result['md_root_bare'][:5]],
+                'fm_value_violations': [f"{b['source']}: {b['problem']}"
+                                        for b in result['fm_value'][:5]]}
     batch_deltas, active_batches, expired_batches = load_active_batches()
     if active_batches:
         print(f"ℹ️ 生效导入批次：{'、'.join(active_batches)}（额度已并入通过线，不抬高基线）")
@@ -478,7 +571,11 @@ def main():
     baseline_old = baseline
     failed, baseline, adopted_keys = evaluate_metrics(current, baseline, batch_deltas)
     adopted = bool(adopted_keys)
-    tightened = any(k in baseline_old and baseline[k] < baseline_old[k]
+    # targets 等人工/结构字段非数值，跳过比较（dict 间 < 会 TypeError）
+    tightened = any(k in baseline_old
+                    and isinstance(baseline[k], (int, float))
+                    and isinstance(baseline_old[k], (int, float))
+                    and baseline[k] < baseline_old[k]
                     for k in baseline)
     for key, cur in current.items():
         base = baseline.get(key, cur)

@@ -189,6 +189,7 @@ flowchart TB
 - [[概念/Agent/self-evolving-agents]] — 自进化智能体（RSI 的工程前奏，L1-L4 谱系）
 - [[概念/Safety/superintelligence]] — 超级智能（ASI 实体化叙事与 RSI 绑定关系）
 - [[概念/Safety/sandbagging]] — 藏拙（RSI 时代的评估可信度问题）
+- [[17_伦理安全/02_价值对齐/03_RSI_治理与准备_2026]] — RSI 治理与准备（章内操作落点：治理栈+自查清单）
 - [[00_入门/02_技术概览/07_新概念雷达_2026Q3Q4]] — 2026 Q3-Q4 新概念雷达（本卡更新记录）
 
 *Last updated: 2026-11-25*

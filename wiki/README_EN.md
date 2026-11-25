@@ -578,7 +578,7 @@ Features:
 - Responsive design
 - Agent evaluation dashboard integration
 
-[View Frontend Details →](./前端应用/README.md)
+[View Frontend Details →](../code/前端应用/README.md)
 
 ---
 

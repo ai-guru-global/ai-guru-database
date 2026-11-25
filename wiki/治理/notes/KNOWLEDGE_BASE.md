@@ -122,7 +122,7 @@ Complete AI general education for universities - **10 textbooks, 8 labs, 16-week
 | Learning Resources | Courses, books, platforms, career paths | 2h |
 | + Glossary + Cases + Labs | 100+ terms, 6 cases, 8 experiments | - |
 
-**[View Full Curriculum →](00_入门/README.md)**
+**[View Full Curriculum →](../../00_入门/README.md)**
 
 ### ⚡ In-Nutshell Guides (速成路径)
 
@@ -183,19 +183,19 @@ Cutting-edge content updated for 2026:
 
 | Report | Key Topics |
 |--------|-----------|
-| **[LLM Architectures 2026](概念/LLM/llm-architectures.md)** | GPT-5.2, Claude 4.5, Gemini 3, Llama 4, Reasoning models |
-| **[AI Hardware 2026](01_数学基础/README.md)** | H100 vs H200 vs B200, MI300X, GPU selection guide |
-| **[PEFT 2026](05_大模型/06_微调技术/09_PEFT_2026.md)** | LoRA/QLoRA/DoRA/rsLoRA, single-GPU 70B fine-tuning |
-| **[RAG Advanced 2026](14_RAG系统/README.md)** | Hybrid retrieval + RRF, Agentic RAG, 60%→90% accuracy |
-| **[AI Coding Assistants 2026](16_编程/05_开发工具/01_AI_编程_Assistants_2026.md)** | Cursor (72% acc), Claude Code, Windsurf, Devin comparison |
-| **[Vibe Coding Methodology 2026](16_编程/README.md)** | DGRV loop, prompt engineering, quality system, production practices |
-| **[Embodied AI 2026](06_强化学习/05_机器人与具身智能/01_Embodied_AI_2026.md)** | VLA models (RT-2, π0, GR00T), humanoid robotics market |
-| **[World Models 2026](03_深度学习/README.md)** | JEPA/V-JEPA 2.1/LeJEPA, Yann LeCun's AGI path |
-| **[AI Video Generation 2026](04_计算机视觉/README.md)** | Veo3, Kling 3.0, Seedance, post-Sora landscape |
-| **[AI Security 2026](17_伦理安全/README.md)** | OWASP LLM Top 10 + ASI framework, Agent security |
-| **[Agent Production](15_智能体/README.md)** | K8s architecture, monitoring, CI/CD, cost control |
-| **[Agent Protocols 2026](15_智能体/README.md)** | MCP/A2A/UCP stack, protocol testing framework |
-| **[AI Infrastructure 2026](12_架构基建/README.md)** | SGLang 16k tok/s vs vLLM, AI Gateway, LLMOps caching |
+| **[LLM Architectures 2026](../../概念/LLM/llm-architectures.md)** | GPT-5.2, Claude 4.5, Gemini 3, Llama 4, Reasoning models |
+| **[AI Hardware 2026](../../01_数学基础/README.md)** | H100 vs H200 vs B200, MI300X, GPU selection guide |
+| **[PEFT 2026](../../05_大模型/06_微调技术/09_PEFT_2026.md)** | LoRA/QLoRA/DoRA/rsLoRA, single-GPU 70B fine-tuning |
+| **[RAG Advanced 2026](../../14_RAG系统/README.md)** | Hybrid retrieval + RRF, Agentic RAG, 60%→90% accuracy |
+| **[AI Coding Assistants 2026](../../16_编程/05_开发工具/01_AI_编程_Assistants_2026.md)** | Cursor (72% acc), Claude Code, Windsurf, Devin comparison |
+| **[Vibe Coding Methodology 2026](../../16_编程/README.md)** | DGRV loop, prompt engineering, quality system, production practices |
+| **[Embodied AI 2026](../../06_强化学习/05_机器人与具身智能/01_Embodied_AI_2026.md)** | VLA models (RT-2, π0, GR00T), humanoid robotics market |
+| **[World Models 2026](../../03_深度学习/README.md)** | JEPA/V-JEPA 2.1/LeJEPA, Yann LeCun's AGI path |
+| **[AI Video Generation 2026](../../04_计算机视觉/README.md)** | Veo3, Kling 3.0, Seedance, post-Sora landscape |
+| **[AI Security 2026](../../17_伦理安全/README.md)** | OWASP LLM Top 10 + ASI framework, Agent security |
+| **[Agent Production](../../15_智能体/README.md)** | K8s architecture, monitoring, CI/CD, cost control |
+| **[Agent Protocols 2026](../../15_智能体/README.md)** | MCP/A2A/UCP stack, protocol testing framework |
+| **[AI Infrastructure 2026](../../12_架构基建/README.md)** | SGLang 16k tok/s vs vLLM, AI Gateway, LLMOps caching |
 
 ---
 
@@ -213,7 +213,7 @@ web/
 └── 🎨 Tailwind CSS + shadcn/ui
 ```
 
-**[View Frontend README →](前端应用/README.md)**
+**[View Frontend README →](../../../code/前端应用/README.md)**
 
 ---
 
@@ -263,7 +263,7 @@ git commit -m "feat: add new guide on X"
 git push origin feature/your-feature
 ```
 
-**[Full Contributing Guide →](治理/CONTRIBUTING.md)**
+**[Full Contributing Guide →](../CONTRIBUTING.md)**
 
 ---
 

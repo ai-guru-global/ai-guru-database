@@ -265,6 +265,7 @@ flowchart LR
 | [Project_Structure_Evaluation_2026.md](./Project_Structure_Evaluation_2026.md) | 2026 年项目结构评估（数据驱动） |
 | [AI_Basics_Gap_Analysis.md](./AI_Basics_Gap_Analysis.md) | AI 基础缺口分析 |
 | [Content_Gap_Analysis_Encyclopedia_2026.md](./Content_Gap_Analysis_Encyclopedia_2026.md) | 百科全书级缺口分析 |
+| [Repo_Aggregation_Gate_Assessment_2026.md](./Repo_Aggregation_Gate_Assessment_2026.md) | 仓库聚合与门禁评估（A1~A8 聚合蓝本 + P0 改造清单，2026-11-18） |
 
 ---
 

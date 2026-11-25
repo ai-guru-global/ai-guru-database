@@ -19,8 +19,8 @@ and are **not** duplicated here. Read both before doing any write operation.
 ## What this repository is
 
 This is the **AI Guru knowledge base** (`ai-guru-database`) — an Obsidian wiki,
-**not** a traditional application codebase. The content is ~2,100 Markdown files
-(~19.6M characters), primarily in **Chinese**, covering the full AI stack from math
+**not** a traditional application codebase. The content is ~3,400 Markdown files
+(~20.4M characters), primarily in **Chinese**, covering the full AI stack from math
 fundamentals to production LLM/Agent deployment.
 
 There are three distinct working surfaces:
@@ -86,9 +86,13 @@ These are the everyday tools. Most have no dependencies beyond the stdlib.
 
 | Command | Purpose |
 |---------|---------|
+| `python3 code/工具/link_gate.py` | **Wiki health gate** (11 ratchet metrics; `--changed-only --staged/--base` for pre-commit/CI, `--update-baseline` to tighten). |
 | `python3 code/工具/count_words.py` | Total doc/character statistics (powers the README badges). |
 | `python3 code/工具/check_links.py [--strict] [--json out.json]` | Broken-link check across md-links + wikilinks. `--strict` flags directory-level wikilinks. |
 | `python3 code/工具/check_wikilinks.py` | Wikilink-specific broken-link classification (missing_concept / stale_path / dir_reference). |
+| `python3 code/工具/debt_report.py` | Per-directory debt report (weekly, mirrors the gate metrics + targets progress). |
+| `python3 code/工具/dup_basename_report.py` | Duplicate-basename ambiguity report (content vs nav groups). |
+| `python3 code/工具/fix_root_relative_links.py` | Rewrite root-relative bare md links to explicit relative paths (dry-run default; `--write` to apply). |
 | `python3 code/工具/wiki_health.py` | Orphan pages, tier distribution, backlink density, missing-tier report. |
 | `python3 code/工具/orphan_scan_2026_07.py` | Precise orphan scan (3-level link resolution: full path → basename → dir). |
 | `python3 code/工具/eval_scan_2026_07.py` | Full corpus evaluation: chapter stats, coverage, wikilinks, orphans. |
@@ -156,11 +160,11 @@ name_zh: "中文短名"           # REQUIRED — Chinese short name
 ---
 ```
 
-- **`name_zh` is mandatory** (present on 2,742 pages). Immediately after the `# H1`,
+- **`name_zh` is mandatory** (present on 3,167 pages). Immediately after the `# H1`,
  repeat it as a blockquote: `> 中文简称：<name_zh>`. This bilingual naming contract
  is how the wiki disambiguates pages.
-- **`tier`** drives wiki health/lifecycle tooling. Distribution: `supporting` (~4050),
- `core` (~1520), `peripheral` (~260). Use `core` for hub/foundational pages,
+- **`tier`** drives wiki health/lifecycle tooling. Distribution: `supporting` (~1960),
+ `core` (~715), `peripheral` (~90). Use `core` for hub/foundational pages,
  `supporting` for normal content, `peripheral` for low-priority.
 - **`updated`** must be bumped whenever you edit a page (review gate checks this).
 
@@ -222,8 +226,10 @@ Full detail: [`wiki/治理/Document_Templates.md`](wiki/治理/Document_Template
 ## Gotchas & non-obvious behavior
 
 1. **Pre-commit hook blocks sync duplicates.** `.githooks/pre-commit` rejects files
-   matching iCloud/editor-sync junk (`* 2.md`, `*conflicted copy*`, `*.copy.md`).
-   Install once: `git config core.hooksPath .githooks`. Bypass with `--no-verify`
+   matching iCloud/editor-sync junk (`* 2.md`, `*conflicted copy*`, `*.copy.md`),
+   then runs the wiki gate (`link_gate --changed-only --staged`, 11-metric
+   zero-tolerance). Install once: `bash scripts/setup-hooks.sh`
+   (= `git config core.hooksPath .githooks`). Bypass with `--no-verify`
    only if genuinely needed.
 
 2. **"只增不减" (only-add-don't-delete) governance principle.** Per

@@ -16,6 +16,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install pytest（requirements-dev）
+        run: python3 -m pip install -r code/工具/requirements-dev.txt
+
       - name: pytest（工具回归测试）
         run: python3 -m pytest code/工具/tests -q
 

@@ -18,5 +18,6 @@
     "orphan_count": 400,
     "broken_rate_pct": 2.0
   },
-  "fm_value_violations": 83
+  "fm_value_violations": 83,
+  "ambiguous_basename_links": 0
 }

@@ -50,7 +50,8 @@ BATCH_DIR = CONTENT / '治理' / '_meta' / 'import-batches'
 BATCH_METRICS = ('broken_instances', 'orphan_count', 'frontmatter_incomplete',
                  'spacing_violations', 'staging_frontmatter_incomplete',
                  'staging_spacing_violations', 'md_broken',
-                 'md_root_relative_bare', 'fm_value_violations')
+                 'md_root_relative_bare', 'fm_value_violations',
+                 'ambiguous_basename_links')
 CHECKER = ROOT / 'code' / '工具' / 'check_wikilinks.py'
 SPACER = ROOT / 'code' / '工具' / 'fix_spacing.py'
 NAV_BASES = {'readme', 'readme_en', 'index', 'readme_for_dummy'}
@@ -107,23 +108,25 @@ def is_nav_page(rel: str) -> bool:
 
 
 def resolve_target(t, rel_index, name_index, alias_index, dirs, alias_candidates):
-    """返回 (resolved, broken, alias_scope)。
+    """返回 (resolved, broken, alias_scope, ambiguous)。
 
     resolved 仅用于入链统计；目录引用与磁盘上真实存在的非 md 文件视为合法，
     但不计入入链（与原有全文口径一致）。alias_scope 为 None / 'bare' / 'path'。
+    ambiguous：basename 兜底命中且该 basename 存在多个同名文件——裸名取排序
+    第一仅是兜底，changed-only 要求新链接用全路径（P1-4）。
     """
     if t in rel_index:
-        return t, False, None
+        return t, False, None, False
     basename = os.path.basename(t).lower()
     if basename in name_index:
-        return name_index[basename][0], False, None
+        return name_index[basename][0], False, None, len(name_index[basename]) > 1
     bare = t.rstrip('/')
     if bare in dirs or exists_exact(bare):
-        return None, False, None
+        return None, False, None, False
     aliases = alias_candidates(t, alias_index)
     if aliases:
-        return aliases[0], False, 'path' if '/' in t else 'bare'
-    return None, True, None
+        return aliases[0], False, 'path' if '/' in t else 'bare', False
+    return None, True, None, False
 
 
 def validate_fm_values(text: str) -> list:
@@ -207,21 +210,25 @@ def inspect_text(text, chk, fix_spacing, rel_index, name_index, alias_index, dir
     spacing_ok = fix_spacing(text) == text
     plain = chk['INLINE_CODE'].sub('', chk['FENCED_CODE'].sub('', text))
     resolved, broken, alias_hits, link_count = [], [], [], 0
+    ambiguous = []
     for raw in chk['WIKILINK'].findall(plain):
         t = chk['normalize_target'](raw)
         if not t or t.startswith('http'):
             continue
         link_count += 1
-        target, is_broken, alias_scope = resolve_target(
+        target, is_broken, alias_scope, is_ambiguous = resolve_target(
             t, rel_index, name_index, alias_index, dirs,
             chk['alias_candidates'])
         if target:
             resolved.append(target)
         if alias_scope:
             alias_hits.append({'target': t, 'scope': alias_scope})
+        if is_ambiguous:
+            ambiguous.append({'target': t})
         if is_broken:
             broken.append({'target': t, 'category': chk['classify'](t)})
     md_missing, md_root_bare = [], []
+    ambiguous = []
     content_root = Path(chk['CONTENT'])
     src_dir = (content_root / rel).parent
     posix_dir = str(Path(rel.replace('\\', '/')).parent)
@@ -252,7 +259,7 @@ def inspect_text(text, chk, fix_spacing, rel_index, name_index, alias_index, dir
     return {'fm_missing': fm_missing, 'spacing_ok': spacing_ok,
             'resolved': resolved, 'broken': broken, 'alias_hits': alias_hits,
             'link_count': link_count, 'md_missing': md_missing,
-            'md_root_bare': md_root_bare,
+            'md_root_bare': md_root_bare, 'ambiguous': ambiguous,
             'fm_value_problems': validate_fm_values(text)}
 
 
@@ -271,7 +278,7 @@ def scan(chk, spacer) -> dict:
     fm_incomplete, spacing_bad = [], []
     staging_fm, staging_spacing = [], []
     md_missing, md_root_bare = [], []
-    fm_value = []
+    fm_value, ambiguous = [], []
     alias_hits = {'bare': 0, 'path': 0}
     total_links = 0
     for rel in scan_mds:
@@ -294,6 +301,7 @@ def scan(chk, spacer) -> dict:
         md_root_bare.extend({'source': rel, **item} for item in info['md_root_bare'])
         for p in info['fm_value_problems']:
             fm_value.append({'source': rel, 'problem': p})
+        ambiguous.extend({'source': rel, **item} for item in info['ambiguous'])
     orphans = [rel for rel in scan_mds
                if rel[:-3] not in inlinked and not is_nav_page(rel)]
     for rel in all_mds:
@@ -312,7 +320,7 @@ def scan(chk, spacer) -> dict:
             'staging_fm_incomplete': staging_fm,
             'staging_spacing_bad': staging_spacing,
             'md_missing': md_missing, 'md_root_bare': md_root_bare,
-            'fm_value': fm_value}
+            'fm_value': fm_value, 'ambiguous': ambiguous}
 
 
 def load_active_batches(batch_dir=None, today=None):
@@ -473,17 +481,27 @@ def run_changed_only(args, chk, spacer) -> int:
                 problems.append(
                     f'根相对裸写链接: {item["target"]}'
                     f'（ISS-110，实为 404——改用 ./ 或 ../ 开头的显式相对路径）')
-            # P1-3 值校验：净新增阻断，存量只提示（棘轮口径，避免改文件即须
-            # 清历史债的摩擦；全文模式以 fm_value_violations 独立棘轮收敛存量）
-            old_value = set()
+            # P1-3/P1-4 值校验与歧义裸名：净新增阻断，存量只提示（棘轮口径，
+            # 避免改文件即须清历史债；全文模式以独立棘轮指标收敛存量）
+            old_value, old_amb = set(), set()
             old_text = read_head_text(rel)
             if old_text is not None:
-                old_value = set(validate_fm_values(old_text))
+                old_info = inspect_text(old_text, chk, fix_spacing, rel_index,
+                                        name_index, alias_index, dirs, rel)
+                old_value = set(old_info['fm_value_problems'])
+                old_amb = {a['target'] for a in old_info['ambiguous']}
             for p in info['fm_value_problems']:
                 if p in old_value:
                     print(f'   ⚠️  {rel}（存量值违规，不阻断）: {p}')
                 else:
                     problems.append(f'frontmatter 值违规: {p}')
+            for a in info['ambiguous']:
+                if a['target'] in old_amb:
+                    print(f'   ⚠️  {rel}（存量歧义裸名，不阻断）: [[{a["target"]}]]')
+                else:
+                    problems.append(
+                        f'歧义裸名链接: [[{a["target"]}]]——该 basename 有多个'
+                        f'同名文件，新链接须用全路径（P1-4）')
         if problems:
             failed += 1
             print(f'❌ {rel}（{zone} 区：仅格式检查）' if zone == 'staging' else f'❌ {rel}')
@@ -541,6 +559,7 @@ def main():
         'md_broken': len(result['md_missing']),
         'md_root_relative_bare': len(result['md_root_bare']),
         'fm_value_violations': len(result['fm_value']),
+        'ambiguous_basename_links': len(result['ambiguous']),
     }
     total = result['total_links']
 
@@ -552,7 +571,8 @@ def main():
              'staging_spacing_violations': 'staging 中英间距',
              'md_broken': 'md 断链',
              'md_root_relative_bare': 'md 根相对裸写',
-             'fm_value_violations': 'frontmatter 值违规'}
+             'fm_value_violations': 'frontmatter 值违规',
+             'ambiguous_basename_links': '歧义裸名链接'}
     examples = {'frontmatter_incomplete': result['fm_incomplete'],
                 'spacing_violations': result['spacing_bad'],
                 'staging_frontmatter_incomplete': result['staging_fm_incomplete'],
@@ -562,7 +582,9 @@ def main():
                 'md_root_relative_bare': [f"{b['source']} → {b['target']}"
                                           for b in result['md_root_bare'][:5]],
                 'fm_value_violations': [f"{b['source']}: {b['problem']}"
-                                        for b in result['fm_value'][:5]]}
+                                        for b in result['fm_value'][:5]],
+                'ambiguous_basename_links': [f"{b['source']}: [[{b['target']}]]"
+                                             for b in result['ambiguous'][:5]]}
     batch_deltas, active_batches, expired_batches = load_active_batches()
     if active_batches:
         print(f"ℹ️ 生效导入批次：{'、'.join(active_batches)}（额度已并入通过线，不抬高基线）")

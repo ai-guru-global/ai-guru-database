@@ -45,14 +45,20 @@ def explicit_relative(target: Path, source_dir: Path) -> str:
 def rewrite_text(text: str, source_path: Path) -> tuple[str, int, list]:
     """返回 (新文本, 改写条数, 样例[(旧目标, 新目标)])。
 
-    代码块/行内代码保护与 link_gate 同口径：正则配对 + 等长 NUL 掩码
-    （逐行围栏跟踪会被不平衡 ``` 文件带偏，漏掉围栏后的真实链接）。
-    frontmatter 不掩码：summary/description 内的 md 链接同样渲染为链接，
-    与 link_gate 口径一致（91230fdcc 批次曾漏改 frontmatter 内 6 条）。
+    代码块/行内代码保护与 link_gate 同口径：正则配对 + 等长掩码，**掩码区
+    必须还原**（历史事故：曾返回掩码文本，NUL 直落写盘造成 22k NUL 腐蚀，
+    752a2850f 回退修复）。frontmatter 不掩码：summary/description 内的
+    md 链接同样渲染为链接，与 link_gate 口径一致。
     """
     source_dir = source_path.parent
-    masked = cw.FENCED_CODE.sub(lambda m: '\x00' * len(m.group()), text)
-    masked = cw.INLINE_CODE.sub(lambda m: '\x00' * len(m.group()), masked)
+    protected = []
+
+    def mask(m):
+        protected.append(m.group())
+        return '\x00' * len(m.group())
+
+    masked = cw.FENCED_CODE.sub(mask, text)
+    masked = cw.INLINE_CODE.sub(mask, masked)
 
     n, samples = 0, []
 
@@ -64,8 +70,10 @@ def rewrite_text(text: str, source_path: Path) -> tuple[str, int, list]:
             target, _, anchor = target.partition('#')
             anchor = '#' + anchor
         if target.startswith(('http://', 'https://', 'mailto:',
-                              'ftp://', '#', '/', './', '../')):
+                              'ftp://', '#', '/', '../')):
             return mm.group(0)
+        # './' 开头不再跳过：门禁对它同样做根回退检查（ISS-110 回归批次
+        # 曾出现 './90_学习/…' 形态的根相对裸写），源目录命中即不动
         if not target.endswith('.md'):
             return mm.group(0)
         src_rel = Path(os.path.normpath(source_dir / target))
@@ -82,6 +90,13 @@ def rewrite_text(text: str, source_path: Path) -> tuple[str, int, list]:
         return f'[{display}]({new_target}{anchor})'
 
     new_body = MD_LINK.sub(sub, masked)
+    # 按出现顺序还原等长 NUL 掩码区（sub 不改变区域相对顺序，逐段首个命中即对位）
+    for orig in protected:
+        run = '\x00' * len(orig)
+        idx = new_body.find(run)
+        assert idx != -1, '掩码区还原错位：输出中出现孤立 NUL 段'
+        new_body = new_body[:idx] + orig + new_body[idx + len(run):]
+    assert '\x00' not in new_body, '输出残留 NUL——掩码还原不完整，拒绝写盘'
     return new_body, n, samples
 
 

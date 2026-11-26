@@ -95,6 +95,9 @@ WIKILINK = re.compile(r'\[\[([^\]]+?)\]\]')
 CHAPTER_PREFIX = re.compile(r'^(\d{2}_|概念/|治理/|90_|94_)')
 FENCED_CODE = re.compile(r'```.*?```', re.S)
 INLINE_CODE = re.compile(r'`[^`\n]+`')
+# P1-7 后继：改写类脚本的保护掩码用单遍交替正则——两段式（先围栏后行内）
+# 会让行内配对伸进围栏 NUL 区产生重叠 run，掩码还原必崩（README.md 实证）
+CODE_URL_MASK = re.compile(r'```.*?```|`[^`\n]+`|https?://\S+', re.S)
 FRONTMATTER = re.compile(r'\A---\s*\n(.*?)\n---', re.S)
 
 

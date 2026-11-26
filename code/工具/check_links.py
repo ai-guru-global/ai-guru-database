@@ -21,6 +21,10 @@ import json
 import collections
 from pathlib import Path
 
+# P2-1：md 链接分类单一事实源（与 link_gate.py 共用 link_resolver）
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import link_resolver as lr  # noqa: E402
+
 
 EXCLUDE_DIRS = {'.git', '.venv', 'node_modules', '.claude', '.qoder', '.qwen',
                 '.comade', '.crush', '.pytest_cache', '__pycache__', 'Web',
@@ -306,19 +310,11 @@ def find_all_links(base, strict=False):
             if not link_path.endswith('.md'):
                 continue
             total_mdlinks += 1
-            # md 链接解析（ISS-109 修复）：'/' 开头保留 vault 根语义；其余一律
-            # 先按源文件目录解析（标准 Markdown / Obsidian 语义）。源目录不存在
-            # 而 vault 根存在时，单列 root_relative_bare——这类"根相对裸写"链接
-            # 在 mkdocs 渲染站与 Obsidian 内实为 404，旧口径从根解析导致漏报；
-            # 计入断链但独立成类，便于批量改写收敛。
-            category = None
-            if link_path.startswith('/'):
-                target_full = Path(base) / link_path.lstrip('/')
-            else:
-                target_full = Path(os.path.normpath(os.path.join(os.path.dirname(f), link_path)))
-                if not target_full.is_file() and (Path(base) / link_path).is_file():
-                    category = 'root_relative_bare'
-            if not target_full.is_file():
+            # md 链接解析：单一事实源 link_resolver（ISS-109 定版语义——
+            # '/' 根绝对、其余源文件目录、根相对裸写单列 root_relative_bare）
+            category, _resolved = lr.classify_md_link(link_path,
+                                                      os.path.dirname(f), base)
+            if category != 'ok':
                 category = category or classify_target(link_path)
                 broken.append({
                     'source': rel,

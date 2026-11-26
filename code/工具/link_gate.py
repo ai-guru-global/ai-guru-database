@@ -40,6 +40,10 @@ import sys
 from datetime import date
 from pathlib import Path
 
+# P2-1：md 链接分类单一事实源（与 check_links.py 共用 link_resolver）
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import link_resolver as lr  # noqa: E402
+
 # 仓库根：code/工具/<本文件> → 上溯三级；内容根为 wiki/
 ROOT = Path(__file__).resolve().parent.parent.parent
 CONTENT = ROOT / 'wiki'
@@ -51,7 +55,8 @@ BATCH_METRICS = ('broken_instances', 'orphan_count', 'frontmatter_incomplete',
                  'spacing_violations', 'staging_frontmatter_incomplete',
                  'staging_spacing_violations', 'md_broken',
                  'md_root_relative_bare', 'fm_value_violations',
-                 'ambiguous_basename_links', 'body_contract_violations')
+                 'ambiguous_basename_links', 'body_contract_violations',
+                 'path_alias_hits')
 CHECKER = ROOT / 'code' / '工具' / 'check_wikilinks.py'
 SPACER = ROOT / 'code' / '工具' / 'fix_spacing.py'
 NAV_BASES = {'readme', 'readme_en', 'index', 'readme_for_dummy'}
@@ -255,7 +260,6 @@ def inspect_text(text, chk, fix_spacing, rel_index, name_index, alias_index, dir
     ambiguous = []
     content_root = Path(chk['CONTENT'])
     src_dir = (content_root / rel).parent
-    posix_dir = str(Path(rel.replace('\\', '/')).parent)
     for mm in MD_LINK.finditer(plain):
         target = mm.group(2).strip().partition('#')[0]
         if target.startswith(('http://', 'https://', 'mailto:', 'ftp://', '#')):
@@ -263,20 +267,13 @@ def inspect_text(text, chk, fix_spacing, rel_index, name_index, alias_index, dir
         if not target.endswith('.md'):
             continue
         link_count += 1
-        if target.startswith('/'):
-            root_hit = content_root / target.lstrip('/')
-            if root_hit.is_file():
-                resolved.append(target.lstrip('/')[:-3])
-            else:
-                md_missing.append({'target': target})
-            continue
-        src_hit = Path(os.path.normpath(src_dir / target))
-        if src_hit.is_file():
-            # 孤立页入链口径：wiki 相对路径去 .md（与 wikilink resolved 同构）
-            resolved.append(os.path.normpath(
-                posix_dir.replace('\\', '/') + '/' + target)[:-3])
-            continue
-        if (content_root / target).is_file():
+        # P2-1：分类单一事实源 link_resolver（'/' 根绝对、其余源目录优先、
+        # 根相对裸写单列）；孤立页入链口径：wiki 相对路径去 .md
+        category, resolved_abs = lr.classify_md_link(target, src_dir, content_root)
+        if category == 'ok':
+            resolved.append(
+                os.path.relpath(resolved_abs, content_root)[:-3].replace(os.sep, '/'))
+        elif category == 'root_relative_bare':
             md_root_bare.append({'target': target})
         else:
             md_missing.append({'target': target})
@@ -594,6 +591,7 @@ def main():
         'fm_value_violations': len(result['fm_value']),
         'ambiguous_basename_links': len(result['ambiguous']),
         'body_contract_violations': len(result['contract']),
+        'path_alias_hits': result['alias_hits']['path'],
     }
     total = result['total_links']
 
@@ -607,7 +605,8 @@ def main():
              'md_root_relative_bare': 'md 根相对裸写',
              'fm_value_violations': 'frontmatter 值违规',
              'ambiguous_basename_links': '歧义裸名链接',
-             'body_contract_violations': '正文契约'}
+             'body_contract_violations': '正文契约',
+             'path_alias_hits': 'path_alias 命中'}
     examples = {'frontmatter_incomplete': result['fm_incomplete'],
                 'spacing_violations': result['spacing_bad'],
                 'staging_frontmatter_incomplete': result['staging_fm_incomplete'],
